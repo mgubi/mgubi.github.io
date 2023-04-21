@@ -17,6 +17,6 @@ Structure of the repository:
 
  * The `docs/`directory hosts the HTML code for the website together with all the necessary resources which have to be served (fonts, css styles, etc...).
 
-To automatically regenerate all the web pages see the [update-website.scm](./update-website.scm) script.
+To automatically regenerate all the web pages see the [update-website](./update-website) script.
 
 
