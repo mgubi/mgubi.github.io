@@ -3,7 +3,7 @@
 
 This repository contains the sources for my personal web pages, a general container of material I want to share with a wider public. 
 
-## How does it works?
+## How does it work?
 
 All the HTML code is automatically generated from a collection of interlinked  [TeXmacs](http://www.texmacs.org) documents which are the primary source of content. Since TeXmacs itself takes care of the conversion there is no need for an external static site generator like `Jekyll` or `Hugo`. 
 
