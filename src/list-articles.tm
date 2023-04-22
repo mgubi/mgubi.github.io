@@ -12,8 +12,79 @@
 
   <hrule>
 
+  <notes-entry|lectures-stochastic-analysis-ss16.tm|Stochastic Analysis|This
+  file provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:34:46 2023 UTC>
+
+  <notes-entry|lectures-stochastic-analysis-ss17.tm|Stochastic Analysis|This
+  file provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:34:03 2023 UTC>
+
+  <notes-entry|lectures-markov-processes-ws17-18.tm|Markov Processes|This
+  file provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:33:26 2023 UTC>
+
+  <notes-entry|lectures-stochastic-processes-ss19.tm|Stochastic
+  Processes|This file provides a template for typical notes/articles. You can
+  use the tag <src-macro|notes-abstract> to provide a small summary of the
+  content, as exemplified by this very text.|Sat Apr 22 15:32:34 2023 UTC>
+
+  <notes-entry|seminar-large-deviations-ws19-20.tm|Large Deviations|This file
+  provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:31:50 2023 UTC>
+
+  <notes-entry|lectures-foundations-stochastic-analysis-ws19-20.tm|Foundations
+  in Stochastic Analysis|This file provides a template for typical
+  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
+  small summary of the content, as exemplified by this very text.|Sat Apr 22
+  15:31:05 2023 UTC>
+
+  <notes-entry|seminar-feynman-integrals-ss20.tm|The mathematics
+  of<nbsp>Feynman path integrals|This file provides a template for typical
+  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
+  small summary of the content, as exemplified by this very text.|Sat Apr 22
+  15:30:18 2023 UTC>
+
+  <notes-entry|lectures-stochastic-analysis-ss20.tm|Stochastic Analysis|This
+  file provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:29:31 2023 UTC>
+
+  <notes-entry|lectures-intro-probability-ws20-21.tm|Template article|This
+  file provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:28:45 2023 UTC>
+
+  <notes-entry|seminar-renormalization-group-ws20-21.tm|Nonperturbative
+  Renormalization|This file provides a template for typical notes/articles.
+  You can use the tag <src-macro|notes-abstract> to provide a small summary
+  of the content, as exemplified by this very text.|Sat Apr 22 15:27:51 2023
+  UTC>
+
+  <notes-entry|seminar-statistical-mechanics-ss21.tm|Hauptseminar
+  Stochastik:<nbsp>Statistische Mechanik von Gittersystemen (SS21)|This file
+  provides a template for typical notes/articles. You can use the tag
+  <src-macro|notes-abstract> to provide a small summary of the content, as
+  exemplified by this very text.|Sat Apr 22 15:26:54 2023 UTC>
+
+  <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic
+  Processes<nbsp>|This file provides a template for typical notes/articles.
+  You can use the tag <src-macro|notes-abstract> to provide a small summary
+  of the content, as exemplified by this very text.|Sat Apr 22 15:25:44 2023
+  UTC>
+
   <notes-entry|people.tm|People|Members of my research group along the years.
-  Updated September 2022.|Sat Apr 22 15:13:47 2023 UTC>
+  Updated September 2022.|Sat Apr 22 15:15:45 2023 UTC>
+
+  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 15:15:45 2023 UTC>
+
+  <notes-entry|list-articles.tm|List of all the articles|A list of all the
+  articles in the website, ordered by the most recent modification time.|Sat
+  Apr 22 15:15:45 2023 UTC>
 
   <notes-entry|teaching.tm|Teaching|My teaching.|Sat Apr 22 14:22:19 2023
   UTC>
@@ -27,8 +98,6 @@
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat Apr 22 14:22:19 2023 UTC>
-
-  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 14:22:19 2023 UTC>
 
   <notes-entry|lectures-stochastic-analysis-ss22.tm|Stochastic Analysis|A
   course developing applications<nbsp>of stochastic calculus to the study of
@@ -65,10 +134,6 @@
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
   writing.|Sat Apr 22 00:21:40 2023 UTC>
-
-  <notes-entry|list-articles.tm|List of all the articles|A list of all the
-  articles in the website, ordered by the most recent modification time.|Sat
-  Apr 22 00:21:40 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to

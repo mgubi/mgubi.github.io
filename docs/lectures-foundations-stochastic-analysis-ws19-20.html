@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>mgubi</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="../resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="../resources/blog-icon.png" rel="icon"></link>
+    <script src="../resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="../resources/notes-base.js" language="javascript" defer></script>
+  </head>
+  <body>
+    <div class="toggle" style="display: none">
+      <p>
+        
+      </p>
+    </div>
+    <div class="notes-header">
+      <p>
+        <a href="./main.html">[main]</a><em class="notes-header-name">mg webpages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">Foundations in Stochastic Analysis<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      This file provides a template for typical notes/articles. You can use
+      the tag <font color="blue"><class style="font-family: sans-serif">notes-abstract</class></font> to
+      provide a small summary of the content, as exemplified by this very
+      text.
+    </div>
+    <h1 id="auto-2">V3F2/F4F1 - Grundz&uuml;ge der Stochastischen Analysis /
+    Foundations in Stochastic Analysis <span style="margin-left: 1em"></span></h1>
+    <h3 id="auto-3">WS 2019/2020<span style="margin-left: 1em"></span></h3>
+    <p>
+      Tuesday 14.00-16.00 <a href="https://basis.uni-bonn.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;moduleCall=webInfo&amp;publishConfFile=webInfoRaum&amp;publishSubDir=raum&amp;keep=y&amp;purge=y&amp;raum.rgid=460">We10 / Kleiner H&ouml;rsaal</a> and Friday
+      10.00-12.00 <a href="https://basis.uni-bonn.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;moduleCall=webInfo&amp;publishConfFile=webInfoRaum&amp;publishSubDir=raum&amp;keep=y&amp;purge=y&amp;raum.rgid=994">CP1-HSZ / H&ouml;rsaal 7</a>
+    </p>
+    <h3 id="auto-4">Tutorials<span style="margin-left: 1em"></span></h3>
+    <p>
+      Exercise sheets will be posted here on Thursday and redactions collected
+      on the next Thursday before 4pm unless specified otherwise. They will be
+      the subject of the tutorials taking place the week after the collection
+      of the redactions. Is possile to work in groups at most of two students.
+      Tutorials will start the week of October 14th. Please see on BASIS for
+      tutorial  schedule.
+    </p>
+    <h2 id="auto-5">Exam<span style="margin-left: 1em"></span></h2>
+    <p>
+      The exam is oral. First exam session February 4-6 2020. Second exam
+      session March 25-27 2020.
+    </p>
+    <p>
+      A list of possible topics for the oral exam (non-exhaustive, but
+      representative) (<a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/Lista-domande.pdf">pdf</a>)
+    </p>
+    <h2 id="auto-6">Description<span style="margin-left: 1em"></span></h2>
+    <p>
+      The course is an introduction to stochastic calculus in continuous time
+      and to the theory of stochastic differential equations.  
+    </p>
+    <p>
+      Contents
+    </p>
+    <ul>
+      <li>
+        <p>
+          Brownian motion and continuous time martingales, stopping times.
+        </p>
+      </li>
+      <li>
+        <p>
+          Stochastic calculus wrt. a continuous martingale, Ito's formula,
+          Girsanov's theorem
+        </p>
+      </li>
+      <li>
+        <p>
+          Stochastic differential equations, weak and strong solutions
+        </p>
+      </li>
+      <li>
+        <p>
+          Link with PDE theory, Feynman-Kac formula
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-7">Prerequisites<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          Basic measure theory, Construction of stochastic processes
+          (Daniell-Kolmogorov theorem)
+        </p>
+      </li>
+      <li>
+        <p>
+          Conditional expectation, Martingales and stopping times in discrete
+          time (revised at the beginning  of the course)
+        </p>
+      </li>
+      <li>
+        <p>
+          Suggested references: D. Williams: Probability with martingales,
+          Lecture notes for the course &ldquo;Stochastic processes&rdquo; SS19
+          (<a href="/abteilung-gubinelli/teaching/stochastic-processes-ss19">link</a>)
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-8">Recommended literature<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          Lecture notes of A. Bovier &ldquo;Stochastic processes&rdquo; and
+          &ldquo;Introduction to stochastic analysis&quot;
+        </p>
+      </li>
+      <li>
+        <p>
+          Philip Protter, Stochastic Integration and Differential Equations. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Ioannis Karatzas and Steven E. Shreve. Brownian motion and
+          stochastic calculus.
+        </p>
+      </li>
+      <li>
+        <p>
+          Timo Sepp&auml;l&auml;inen: Basics of Stochastic Analysis. (<a href="http://www.math.wisc.edu/~seppalai/courses/735/notes2014.pdf">pdf</a>)
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-9">Lecture Notes<span style="margin-left: 1em"></span></h2>
+    <p>
+      We will follow mainly the lectures notes of Prof. Bovier WS17/18 course
+      (<a href="https://www.dropbox.com/s/1r0ys3xij2fb4ys/stochana.pdf?dl=0">pdf</a>). Detailed notes of the material presented in the
+      lectures will be posted here:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-note-1.pdf">Note 1</a>: Brownian motion (20191019, v1.0)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-note-2.pdf">Note 2</a>: SDEs, strong/weak solutions, Tanaka's formula
+          (20191229, v1.0)
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-10">Problem sheets<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-0.pdf">Sheet 0</a> (solved during the tutorial, not to be done
+          beforehand)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-1.pdf">Sheet 1</a> (due Thursday October 17th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-2.pdf">Sheet 2</a> (due Thursday October 24th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-3.pdf">Sheet 3</a> (due Thursday October 31st)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-4.pdf">Sheet 4</a> (due Thursday November 7th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-5.pdf">Sheet 5</a> (due Thursday November 14th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-6.pdf">Sheet 6</a> (due Thursday November 21th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-7.pdf">Sheet 7</a> (due Thursday December 5th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-8.pdf">Sheet 8</a> (due Thursday December 12th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-9.pdf">Sheet 9</a> (due Thursday December 19th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-10.pdf">Sheet 10</a> (due Thursday January 9th)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-11.pdf">Sheet 11</a> (due Thursday January 16th) (revised version
+          10/01/2020 due to a typo)
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-12.pdf">Sheet 12</a> (due Thursday January 24th) (revised version
+          18/01/2020 due to a duplicate exercise)
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-11">Course Journal<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          (8/10) Introduction to the course (only 1h)
+        </p>
+      </li>
+      <li>
+        <p>
+          (11/10) Brownian motion, definition. Gaussian aspects.
+        </p>
+      </li>
+      <li>
+        <p>
+          (15/10) Brownian motion as a Markov process and a martingale.
+          Martingale problem for the BM.
+        </p>
+      </li>
+      <li>
+        <p>
+          (18/10) Levy's construction of Brownian motion, Haar and Schauder
+          functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          (22/10) Completion of the existence proof for BM. Review of
+          definitions and main results on discrete time martingales
+          (convergence theorems, Doob's inequalities, backwards martingales)
+        </p>
+      </li>
+      <li>
+        <p>
+          (25/10) Cadlag functions. Regularization. Cadlag martingales,
+          examples: Brownian motion and Poisson process.
+        </p>
+      </li>
+      <li>
+        <p>
+          (29/10) Construction of the Poisson point process. Poisson counting
+          process, Poisson compound  process. Doob's regularisation Theorem.
+        </p>
+      </li>
+      <li>
+        <p>
+          (1/11) [holiday]
+        </p>
+      </li>
+      <li>
+        <p>
+          (5/11) Right continuous filtrations and usual setting, modification
+          and indistinguishable processes, Doob regularization theorem for
+          supermartingales, convergence theorems for cadlag supermartingales,
+          maximum inequality for cadlag submartingales and Doob inequality for
+          cadlag martingales. [F. de Vecchi]
+        </p>
+      </li>
+      <li>
+        <p>
+          (8/11) Construction of Brownian motion using Doob regularization
+          theorem, Holder regularity of Brownian motion, uniform convergence
+          of quadratic variation, unboundedness of linear variation of
+          Brownian motion. [F. de Vecchi]
+        </p>
+      </li>
+      <li>
+        <p>
+          (12/11) Stopping times, pre-T sigma-algebra. Hitting and entrance
+          times. Doob's optional sampling theorem in continuous time.
+        </p>
+      </li>
+      <li>
+        <p>
+          (15/11) Starting stochastic integration. (following Chapt 3 of
+          Bovier) Riemman-Stiljes integrals.
+        </p>
+      </li>
+      <li>
+        <p>
+          (19/11) Quadratic variation for continuous martingales.
+        </p>
+      </li>
+      <li>
+        <p>
+          (22/11) [cancelled]
+        </p>
+      </li>
+      <li>
+        <p>
+          (26/11) Integration of simple processes agains a continuous
+          martingale. Ito isometry. Stochastic integral.
+        </p>
+      </li>
+      <li>
+        <p>
+          (29/11) Ito's formula
+        </p>
+      </li>
+      <li>
+        <p>
+          (3/12) Multidimensional Ito's formula, Cross-variation, Levy's
+          caracterisation of Brownian motion.  [F. de Vecchi]
+        </p>
+      </li>
+      <li>
+        <p>
+          (6/12) Martingale measure for Black and Scholes model, stochastic
+          exponential, Girsanov theorem (with proof), Novikov condition
+          (without proof) and applications.  [F. de Vecchi] 
+        </p>
+      </li>
+      <li>
+        <p>
+          (10/12) Stochastic differential equations: strong and weak solution.
+          Basic statement about existence of solutions with Lipshitz
+          coefficients.
+        </p>
+      </li>
+      <li>
+        <p>
+          (13/12) SDEs with locally Lipshitz coefficients. Explosion. Some
+          examples.
+        </p>
+      </li>
+      <li>
+        <p>
+          (17/12) Path-wise uniqueness/uniqueness in law. Tanaka's example.
+          Tanaka's formula and local time of a semi-martingale. 
+        </p>
+      </li>
+      <li>
+        <p>
+          (20/12) Reflected Brownian motion. Construction of weak solutions
+          via Girsanov's transformation.
+        </p>
+      </li>
+      <li>
+        <p>
+          (7/1)  Uniqueness in law via Girsanov transform.
+        </p>
+      </li>
+      <li>
+        <p>
+          (10/1) Conditioning of Brownian motion. Brownian bridge and its SDE.
+        </p>
+      </li>
+      <li>
+        <p>
+          (14/1) Brownian motion conditioned to be positive and the Bessel
+          process.
+        </p>
+      </li>
+      <li>
+        <p>
+          (17/1) [cancelled]
+        </p>
+      </li>
+      <li>
+        <p>
+          (21/1) SDEs &amp; PDEs. Probabilistic representation for the
+          Dirichlet problem. Regularity of harmonic functions. 
+        </p>
+      </li>
+      <li>
+        <p>
+          (24/1) Regular points of the boundary of a domain and boundary
+          condition for the Dirichlet problem. Existence of solution to the
+          Dirichlet problem. Sufficient condition for regularity of a boundary
+          point.
+        </p>
+      </li>
+      <li>
+        <p>
+          (28/1)
+        </p>
+      </li>
+      <li>
+        <p>
+          (31/1)
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
