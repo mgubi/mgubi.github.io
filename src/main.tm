@@ -9,6 +9,32 @@
 
   \;
 
+  <\small>
+    <\quotation>
+      <\em>
+        What is a businessman? Someone who does business? Not quite. It is
+        someone who sees opportunities for doing business when others might
+        miss them. A mathematician is someone who sees opportunities for
+        doing mathematics.
+
+        Ian Stewart, ``Letters to a Young Mathematician"
+      </em>
+
+      <\em>
+        I have made this letter longer than usual because I lack the time to
+        make it shorter.
+
+        Blaise Pascal
+      </em>
+
+      <em|Le mot ``random'' vient d'un terme de vènerie français : randon
+      désigne la course erratique du cerf qui zigzague en essayant d'échapper
+      aux chiens. Le mot a aussi donné \S randonnée \T en français.>
+    </quotation>
+  </small>
+
+  \;
+
   <hlink|Curriculum vitae|./curriculum-vitae.tm>
 
   Research
@@ -79,6 +105,8 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
+    <associate|c1713|<tuple|?|?>>
+    <associate|c2006|<tuple|?|?>>
   </collection>
 </references>
 
