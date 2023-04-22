@@ -18,6 +18,17 @@
 
   \;
 
+  <with|font-series|bold|Blogs or other interesting places on the internet>
+
+  <hlink|Ivan Tikhonovs's blog|http://brokestream.com/index.html> \U nice
+  minimal webpage design, Web server in 58 lines of C, Forth Lisp SmallTalk
+  mix in Python.
+
+  <hlink|Lisp in small pieces on modern Schemes|https://github.com/appleby/Lisp-In-Small-Pieces>
+  \<cdot\> Femtolisp \<cdot\> Meta II \<cdot\> S7
+
+  \ \ \ 
+
   \;
 </body>
 
@@ -31,6 +42,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?|template.tm>>
+    <associate|auto-2|<tuple|?|?|template.tm>>
   </collection>
 </references>
 

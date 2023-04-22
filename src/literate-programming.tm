@@ -94,7 +94,8 @@
   discussion in the <hlink|c2 wiki|http://wiki.c2.com/?LiterateProgramming>
   or in the <hlink|Wikipedia page|https://en.wikipedia.org/wiki/Literate_programming>
   or in the <hlink|literateprogramming.com|http://www.literateprogramming.com>
-  website. All the discussion I've found collapse the idea of literate
+  and <hlink|softpanorama.org|https://softpanorama.org/SE/literate_programming.shtml>
+  websites. All the discussion I've found collapse the idea of literate
   document towards a single programming language. LP implemetations are
   usually also targeted to a single language with few exceptions (e.g.
   <hlink|<name|Noweb>|https://www.cs.tufts.edu/~nr/noweb/>). However, as the

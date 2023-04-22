@@ -19,7 +19,7 @@
 
   <hlink|Template|template.tm>
 
-  \;
+  The <hlink|list|./list-articles.tm> of all the articles in this website
 
   \;
 
