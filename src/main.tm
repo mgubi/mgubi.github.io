@@ -37,9 +37,9 @@
 
   <hlink|Curriculum vitae|./curriculum-vitae.tm>
 
-  Research
+  <hlink|Publications|publications.tm>
 
-  Teaching
+  <hlink|Teaching|teaching.tm>
 
   <hlink|Programming|./programming.tm>
 
@@ -105,8 +105,6 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
-    <associate|c1713|<tuple|?|?>>
-    <associate|c2006|<tuple|?|?>>
   </collection>
 </references>
 
