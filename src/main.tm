@@ -35,9 +35,15 @@
 
   \;
 
+  google scholar (<hlink|url|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>)
+  arXiv (<hlink|url|http://arxiv.org/a/gubinelli_m_1>) orcid
+  (<hlink|url|http://orcid.org/0000-0002-4014-2949>)
+
+  \;
+
   <hlink|Curriculum vitae|./curriculum-vitae.tm>
 
-  <hlink|Publications|publications.tm>
+  <hlink|Publications|publications.tm> \<cdot\> <hlink|Slides|slides.tm>
 
   <hlink|Teaching|teaching.tm>
 
