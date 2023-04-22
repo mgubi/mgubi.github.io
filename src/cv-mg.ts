@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|source>
 
@@ -50,7 +50,7 @@
 
   \;
 
-  <assign|timeline-hsep|<macro|4fn>>
+  <assign|timeline-hsep|<macro|6fn>>
 
   <assign|timeline-hspace|<macro|1fn>>
 

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|source>
 
@@ -50,15 +50,13 @@
 
   \;
 
-  <assign|timeline-hsep|<macro|4fn>>
+  <assign|timeline-hsep|<macro|6fn>>
 
   <assign|timeline-hspace|<macro|1fn>>
 
   <assign|timeline-hsep-line|<macro|4fn>>
 
   <assign|timeline-vsep|<macro|0.05fn>>
-
-  <assign|par-left|<timeline-hsep>>
 
   <assign|aligned-timeline|<macro|name|<style-with|src-compact|none|<vspace*|<timeline-vsep>><with|par-first|<minus|<timeline-hsep>>|<yes-indent>><resize|<arg|name>|<minus|1r|<minus|<timeline-hsep>|<timeline-hspace>>>||<plus|1r|<plus|<timeline-hspace>|0.0fn>>|>>>>
 
@@ -72,7 +70,7 @@
 
   <assign|cv-subsection|<macro|title|<with|font-shape|italic|font-series|light|<arg|title>><no-break-here><vspace|0.4em><new-line>>>
 
-  <assign|cv-body|<macro|body|<arg|body>>>
+  <assign|cv-body|<macro|body|<with|font-size|0.8|par-left|<timeline-hsep>|<arg|body>>>>
 
   \;
 

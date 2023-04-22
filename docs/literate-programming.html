@@ -10,17 +10,12 @@
     <script src="../resources/notes-base.js" language="javascript" defer></script>
   </head>
   <body>
-    <div class="toggle" style="display: none">
-      <p>
-        
-      </p>
-    </div>
     <div class="notes-header">
       <p>
         <a href="./main.html">[main]</a><em class="notes-header-name">mg webpages</em>
       </p>
     </div>
-    <h1 id="auto-1">Literate programming<span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-1">On Literate Programming<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Where I gather reflections on literate programming, TeXmacs, programming
       languages and writing.
@@ -29,6 +24,210 @@
       
     </p>
     <p>
+      Literate programming was invented by Knuth to provide a literary work
+      which would <i>explain</i> (unroll / bring before our eyes) a computer
+      program by telling a story about it. It's about following a thread where
+      a plot is gradually unveiled made of chunks of the actual code of the
+      program in question. Until the full scheme is revealed and, by
+      backtracking from chunk to chunk a special utility program can
+      reconstitute the enteriety of the code to be then given to the computer,
+      for execution or compilation. A monologue that occasionally becomes a
+      dialogue. 
+    </p>
+    <p>
+      I've seen many times examples of literate programs. The most famous is
+      the TeX program itself, which take life as a narration in the homonimous
+      book &ldquo;TeX the program&rdquo; (<a href="https://ctan.org/tex-archive/info/knuth-pdf">here</a> for a the full
+      collection of PDF files and <a href="http://mirrors.ctan.org/info/knuth-pdf/tex/tex.pdf">here</a> for the literate <class
+      style="font-variant: small-caps">Cweb</class> sources for TeX). Some of them, especially the short
+      ones, are quite unimpressive. Look <a href="https://literateprograms.org/literateprograms_welcome.html">here</a> for a whole Wiki of
+      literate programs to get an idea.
+    </p>
+    <p>
+      Apart from TeX (and Metafont) other large programs are maintained as
+      literate works: <a href="http://www.axiom-developer.org">Axiom</a>, <a href="https://pbr-book.org">Physically based rendering
+      algorithms</a>, the <a href="https://drh.github.io/lcc/"><tt class="verbatim">lcc</tt></a> retargetable ANSI C
+      compiler, the &ldquo;Lisp In Small Pieces&rdquo; book (<a href="https://doi.org/10.1017/CBO9781139172974">10.1017/CBO9781139172974</a>)
+      and <a href="https://github.com/daly/literateclojure">Clojure in Small Pieces</a> (see also <a href="https://github.com/robleyhall/clojure-small-pieces">here</a> for
+      more context on this last book)
+    </p>
+    <h3 id="auto-2">Literate programs are human-specific super-languages<span style="margin-left: 1em"></span></h3>
+    <p>
+      However my brain &ldquo;clicked&rdquo; only when I discovered <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt
+      class="verbatim">peg.md</tt></a> by <a href="https://github.com/kragen">K. J. Sitaker</a>. It is a small
+      MarkDown document that gives a literate implementation of <i>parsing
+      expression grammars</i> (PEGs) together with a meta compiler implemented
+      in Javascript. What I found remarkable is the expressivity of the
+      literate style, even when reduced to the essence of some tricks in a
+      markdown text file. <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt class="verbatim">peg.md</tt></a> contains the
+      code of various versions of the Javascript PEG compiler, and a PEG
+      meta-compiler written in itself, and the Makefile which extracts from
+      the literate document a bootstrapping Javascript PEG compiler and use it
+      to compile the PEG metacircular description of the PEG compiler
+      progressively in two versions with larger set of features. Another
+      Markdown file <a href="https://github.com/kragen/peg-bootstrap/blob/master/handaxeweb.md"><tt class="verbatim">handaxeweb.md</tt></a> is the literate
+      implementation of the Lua script which extracts the program files from
+      the Markdown documetns. 
+    </p>
+    <p>
+      This made me realize that expressivity of the literate style is both
+      towards humans, and towards the machine. A single literate
+      <i>document</i> can contain the code of various programs, maybe even
+      written in different languages, which are gathered together and made
+      speak to each other in ways in which is not possible in standard
+      programming, where each program lives in a separate file while, usually,
+      certain parts of a program here have their <i>raison d'&ecirc;tre</i> in
+      other parts of another program there. Think of HTML/Javascript/CSS plus
+      maybe some code in C++ compiled to Webasm and which has to interact with
+      Javascript.
+    </p>
+    <p>
+      In this sense literate programming moves away from usual file-based
+      programming in a direction completely orthogonal to what <a href="https://github.com/dbanay/Smalltalk">Smalltalk</a>,
+      <a href="https://pharo.org">Squeak/Pharo</a>, <a href="https://newspeaklanguage.org">NewSpeak</a>, <a href="https://www.unison-lang.org">Unison</a> or
+      some image-based Lisp system does (e.g. <a href="https://interlisp.org">Interlisp/Medley</a>).
+      In these systems everything is programmed in a single language: the
+      living program is its own documentation and the narrative thread is
+      provided by the user's interactive exploration of the hyperlinked web of
+      &ldquo;materialized code&rdquo;. 
+    </p>
+    <p>
+      A literate document is, instead, an heterodox medium where policies can
+      be put in place to make different languages coexist, including natural
+      language, and where a thread is provided by the writer (or maybe better
+      the &ldquo;editor&rdquo; or &ldquo;director&rdquo;) which supervise and
+      coordinate the various voices in order to provide a coherent and
+      synesthetic intellectual experience to the reader, while still being
+      able to distill automatically the various &ldquo;voices&rdquo; into
+      different files for the use in a computer system. 
+    </p>
+    <p>
+      It seems that characteristic of LP is not usually considered, see the
+      discussion in the <a href="http://wiki.c2.com/?LiterateProgramming">c2 wiki</a> or in the <a href="https://en.wikipedia.org/wiki/Literate_programming">Wikipedia
+      page</a> or in the <a href="http://www.literateprogramming.com">literateprogramming.com</a> website. All the
+      discussion I've found collapse the idea of literate document towards a
+      single programming language. LP implemetations are usually also targeted
+      to a single language with few exceptions (e.g. <a href="https://www.cs.tufts.edu/~nr/noweb/"><class style="font-variant: small-caps">Noweb</class></a>).
+      However, as the <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt class="verbatim">peg.md</tt></a> example masterfully
+      shows, the liberating power of LP is in its complete malleability in
+      providing <b>metacircular description of complex computer systems</b>.
+    </p>
+    <p>
+      So while certain languages implement domain-specific sub-languages in
+      order to better model domain-specific (human) knowledge, literate
+      programs are then (human) <b>domain-specific super-languages</b>.
+    </p>
+    <p>
+      An important aspect of LP has to do with learning, understanding and
+      communicating. As Tim Daly (the maintainer of Axiom) points out in this
+      <a href="https://www.youtube.com/watch?v=Av0PQDVTP4A">talk</a> (&ldquo;LP in the large&rdquo;), big open source
+      systems, <i>need</i> literate programming to thrive and survive. Writing
+      is the technology which allows us to transmit knowledge through time and
+      space. Literate programs explain the &ldquo;why&rdquo; some code exists
+      or is modelled in some way instead of another, and also points out
+      logical links among different zones of the code, which may not be
+      materialized via the specific programming language in use. 
+    </p>
+    <p>
+      While TeX was born as a literate program, <class style="font-variant: small-caps">Axiom</class>
+      <i>became</i> (or want to be one, see this <a href="https://lists.nongnu.org/archive/html/axiom-developer/2023-03/msg00003.html">message</a> of Daly
+      in the <tt class="verbatim">axiom-developer</tt> mailing list) one because Daly
+      felt the need to document the valuable millions lines of code costituing
+      the program and implemeting sophisticate algorithms for computer
+      algebra. So LP programming has also a role of <b>explanation and
+      exploration device</b>, which allows open&ndash;source developer
+      communities to consolidate and gather the knowledge acquired by studying
+      and traversing exogenous codebases. Daly advocated this pedagogical use
+      of LP with &ldquo;<a href="https://github.com/robleyhall/clojure-small-pieces">Clojure in Small Pieces</a>&rdquo; and <a
+      href="https://github.com/robleyhall/clojure-small-pieces/blob/master/README.md">says</a>:
+    </p>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 77.321376014376px; margin-right: 77.321376014376px">
+      <p>
+        Since I'm studying the details of the inner workings of Clojure this
+        seemed to be the right time to experiment with a literate form. I have
+        put together the beginnings of a Clojure in Small Pieces book.
+      </p>
+    </div>
+    <h3 id="auto-3">Literate programming in TeXmacs<span style="margin-left: 1em"></span></h3>
+    <p>
+      TeXmacs as a LP tools has many advantages over more classical solutions.
+      First of all, there is no need of &ldquo;tangling&rdquo;, a TeXmacs
+      document is &ldquo;alive&rdquo; and does not need to be compiled. Also a
+      TeXmacs document is active, because can invoke Scheme scripts or other
+      plugins which provide then interactive features and in particular can
+      contain its very own &ldquo;tangling&rdquo; code, possibly modified and
+      customized for the specific kind of document at hand. TeXmacs literate
+      coding is self-contained and self-expandable and targeted to human
+      fruition even more thaks to the user-centered design of the TeXmacs
+      document system and user interface.
+    </p>
+    <h3 id="auto-4">A Literate TeXmacs?<span style="margin-left: 1em"></span></h3>
+    <p>
+      <a href="http://www.texmacs.org">TeXmacs</a> is also a large computer system. Not a single
+      program, but a web of interconnected programs writted in multiple
+      languages: C++, Scheme, TeXmacs macro language for the styles and the
+      packages and small DSLs for specific tasks (e.g. description of virtual
+      glyphs, UI, etc..). All these pieces have to work together quite tightly
+      for the system to work property. Especially so because TeXmacs user
+      interface (written mostly in Scheme) is tightly intergrated both with
+      the typesetter (written mostly in C++) and with the various typesetting
+      macros and style packages (written in the TeXmacs macro language).
+      Moreover it depends on various external libraries which have to be
+      integrated via the usual wodoo of Makefiles and system specific
+      configurations. And this without considering that export to HTML and
+      LaTeX also means that we need some support files written in CSS,
+      Javascript or LaTeX, which again have to be carefully coordinated with
+      the exporting routines. Another complexity layer then come from the fact
+      that the plugins which allow TeXmacs to communicate with the external
+      world are written in a variety of languages, and despite the wire
+      protocol allows a shallow coordination, they have to be also maintaned
+      alongside the main sources.
+    </p>
+    <p>
+      I've tried to motivate that crucial aspects of LP are two:
+    </p>
+    <ul>
+      <li>
+        <p>
+          a metacircular description of complex computer systems via a (human)
+          domain&ndash;specific super-language
+        </p>
+      </li>
+      <li>
+        <p>
+          an explanation and exploration device
+        </p>
+      </li>
+    </ul>
+    <p>
+      These aspects in my view fit perfectly with the above description of
+      TeXmacs. We need a tool which allow the community to obtain a shared
+      understanding of the various sources in their interrelation and of the
+      principles, design decisions and specific tradeoffs present in the
+      codebase. TeXmacs itself is a document preparation system, so a literate
+      development of TeXmacs can be metacircular in a very tight way: one can
+      envisage that the TeXmacs system can be described by a TeXmacs literate
+      document comprising all the various sources codes in a unique
+      &ldquo;book&rdquo; which tells the story (or a story) of the program. In
+      this vision there are no other source files than a web of hyperlinked
+      TeXmacs documents. A Scheme script can extract the usual arborescence of
+      OS files to be feed to the various compilers or to be assembled in
+      runtime resources. The build process can be described alongside the
+      system specific changes which can be even implemented in more flexible
+      ways because the parametrization of the code is not in full control of
+      the LP scripts. This will reduce the need for complex build systems, at
+      the price of having available a bootstrapping avenue in the form of some
+      cross-platform support or small Scheme interpreter which can
+      &ldquo;weave&rdquo; the relevant sources to compile a first runnable
+      version of TeXmacs.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
       
     </p>
     <p>
@@ -38,16 +237,7 @@
       
     </p>
     <p>
-      <hr></hr>
-    </p>
-    <p>
-      <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-      in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum.
+      
     </p>
   </body>
 </html>

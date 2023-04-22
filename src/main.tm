@@ -15,7 +15,7 @@
 
   Teaching
 
-  Programming
+  <hlink|Programming|./programming.tm>
 
   <hlink|Template|template.tm>
 

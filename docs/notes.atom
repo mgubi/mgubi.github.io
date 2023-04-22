@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-04-21T15:05:47Z</updated>
+  <updated>2023-04-21T23:56:07Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,47 +12,56 @@
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
   <entry>
-    <title>Massimiliano Gubinelli</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-04-21T15:05:42Z</id>
-    <updated>2023-04-21T15:05:42Z</updated>
-    <published>2023-04-21T15:05:43Z</published>
-    <summary>Curriculum Vitæ  September 2022.</summary>
-  </entry>
-  <entry>
-    <title>List of all the articles</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/list-articles.html"/>
-    <id>texmacs.github.io/notes/list-articles.tm:2023-04-21T14:57:56Z</id>
-    <updated>2023-04-21T14:57:56Z</updated>
-    <published>2023-04-21T14:58:00Z</published>
-    <summary>A list of all the articles in the website, ordered by the most
-    recent modification time.</summary>
-  </entry>
-  <entry>
-    <title>(no title)</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/main.html"/>
-    <id>texmacs.github.io/notes/main.tm:2023-04-21T14:37:48Z</id>
-    <updated>2023-04-21T14:37:48Z</updated>
-    <published>2023-04-21T14:37:52Z</published>
-  </entry>
-  <entry>
-    <title>Literate programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
-    <id>texmacs.github.io/notes/literate-programming.tm:2023-04-21T13:32:07Z</id>
-    <updated>2023-04-21T13:32:07Z</updated>
-    <published>2023-04-21T13:37:21Z</published>
-    <summary><concat>Where I gather reflections on literate programming,
-    <TeXmacs/>, programming languages and writing.</concat></summary>
+    <title>Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/programming.html"/>
+    <id>texmacs.github.io/notes/programming.tm:2023-04-21T23:55:27Z</id>
+    <updated>2023-04-21T23:55:27Z</updated>
+    <published>2023-04-21T23:55:30Z</published>
+    <summary><concat>Content related to computer languages, programming,
+    <TeXmacs/>.</concat></summary>
   </entry>
   <entry>
     <title>Template article</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/template.html"/>
-    <id>texmacs.github.io/notes/template.tm:2023-04-21T10:52:47Z</id>
-    <updated>2023-04-21T10:52:47Z</updated>
-    <published>2023-04-21T10:52:50Z</published>
+    <id>texmacs.github.io/notes/template.tm:2023-04-21T15:36:12Z</id>
+    <updated>2023-04-21T15:36:12Z</updated>
+    <published>2023-04-21T23:53:45Z</published>
     <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <markup>notes-abstract</markup> to provide a small
-    summary of the content, as exemplified by this very
+    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
+    small summary of the content, as exemplified by this very
     text.</concat></summary>
+  </entry>
+  <entry>
+    <title>(no title)</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/main.html"/>
+    <id>texmacs.github.io/notes/main.tm:2023-04-21T15:36:12Z</id>
+    <updated>2023-04-21T15:36:12Z</updated>
+    <published>2023-04-21T23:49:19Z</published>
+  </entry>
+  <entry>
+    <title>On Literate Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
+    <id>texmacs.github.io/notes/literate-programming.tm:2023-04-21T15:36:12Z</id>
+    <updated>2023-04-21T15:36:12Z</updated>
+    <published>2023-04-21T23:46:05Z</published>
+    <summary><concat>Where I gather reflections on literate programming,
+    <TeXmacs/>, programming languages and writing.</concat></summary>
+  </entry>
+  <entry>
+    <title>List of all the articles</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/list-articles.html"/>
+    <id>texmacs.github.io/notes/list-articles.tm:2023-04-21T15:36:12Z</id>
+    <updated>2023-04-21T15:36:12Z</updated>
+    <published>2023-04-21T23:46:24Z</published>
+    <summary>A list of all the articles in the website, ordered by the most
+    recent modification time.</summary>
+  </entry>
+  <entry>
+    <title>Massimiliano Gubinelli</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-04-21T15:36:12Z</id>
+    <updated>2023-04-21T15:36:12Z</updated>
+    <published>2023-04-21T22:50:06Z</published>
+    <summary>Curriculum Vitæ  April 2023</summary>
   </entry>
 </feed>
