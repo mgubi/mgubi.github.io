@@ -11,7 +11,7 @@
 
   <chapter*|Massimiliano Gubinelli>
 
-  <notes-abstract|Curriculum Vitæ \U April 2023>
+  <notes-abstract|An analytic curriculum vitæ, last updated in April 2023>
 
   \;
 
@@ -375,9 +375,9 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Massimiliano
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Massimiliano
       Gubinelli> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <no-break><pageref|auto-1><vspace|1fn>
     </associate>
   </collection>
 </auxiliary>
