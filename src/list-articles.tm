@@ -12,6 +12,17 @@
 
   <hrule>
 
+  <notes-entry|slides.tm|Slides|This file provides a template for typical
+  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
+  small summary of the content, as exemplified by this very text.|Sat Apr 22
+  15:54:53 2023 UTC>
+
+  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 15:54:53 2023 UTC>
+
+  <notes-entry|list-articles.tm|List of all the articles|A list of all the
+  articles in the website, ordered by the most recent modification time.|Sat
+  Apr 22 15:42:11 2023 UTC>
+
   <notes-entry|seminar-statistical-mechanics-ss21.tm|Hauptseminar
   Stochastik:<nbsp>Statistische Mechanik von Gittersystemen (SS21)|This file
   provides a template for typical notes/articles. You can use the tag
@@ -37,12 +48,6 @@
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat Apr 22 15:37:16 2023 UTC>
-
-  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 15:37:16 2023 UTC>
-
-  <notes-entry|list-articles.tm|List of all the articles|A list of all the
-  articles in the website, ordered by the most recent modification time.|Sat
-  Apr 22 15:37:16 2023 UTC>
 
   <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic
   Processes<nbsp>|This file provides a template for typical notes/articles.
