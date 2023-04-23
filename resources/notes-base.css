@@ -102,17 +102,21 @@ body {
     text-align: justify;
     line-height: 1.25;
     border: 0px;
-    padding: 50px;
+    padding: 80px;
     margin: auto;
     margin-bottom: 0px;
     margin-top: 0px;
-    max-width: 600px;
-    width: 70%; 
+    width: 30em; 
 }
 
 .tmdoc-body {
     padding: 0px;
     margin: 0px 0px;
+}
+
+.mg-title {
+    letter-spacing: -0.03em;
+    font-family: 'Linux Biolinum', sans-serif;
 }
 
 .wave-image img {

@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-04-23T18:47:10Z</updated>
+  <updated>2023-04-23T20:52:22Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -14,16 +14,16 @@
   <entry>
     <title>(no title)</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/main.html"/>
-    <id>texmacs.github.io/notes/main.tm:2023-04-23T12:06:42Z</id>
-    <updated>2023-04-23T12:06:42Z</updated>
-    <published>2023-04-23T18:47:07Z</published>
+    <id>texmacs.github.io/notes/main.tm:2023-04-23T18:47:51Z</id>
+    <updated>2023-04-23T18:47:51Z</updated>
+    <published>2023-04-23T20:44:45Z</published>
   </entry>
   <entry>
     <title>List of all the articles</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/list-articles.html"/>
-    <id>texmacs.github.io/notes/list-articles.tm:2023-04-23T12:06:42Z</id>
-    <updated>2023-04-23T12:06:42Z</updated>
-    <published>2023-04-23T18:46:58Z</published>
+    <id>texmacs.github.io/notes/list-articles.tm:2023-04-23T18:47:51Z</id>
+    <updated>2023-04-23T18:47:51Z</updated>
+    <published>2023-04-23T20:47:57Z</published>
     <summary>A list of all the articles in the website, ordered by the most
     recent modification time.</summary>
   </entry>
@@ -105,7 +105,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/programming.html"/>
     <id>texmacs.github.io/notes/programming.tm:2023-04-22T15:37:16Z</id>
     <updated>2023-04-22T15:37:16Z</updated>
-    <published>2023-04-22T15:50:13Z</published>
+    <published>2023-04-23T20:52:20Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
   </entry>

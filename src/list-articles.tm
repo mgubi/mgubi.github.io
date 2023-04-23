@@ -12,11 +12,11 @@
 
   <hrule>
 
-  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 12:06:42 2023 UTC>
+  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 18:47:51 2023 UTC>
 
   <notes-entry|list-articles.tm|List of all the articles|A list of all the
   articles in the website, ordered by the most recent modification time.|Sun
-  Apr 23 12:06:42 2023 UTC>
+  Apr 23 18:47:51 2023 UTC>
 
   <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
   curriculum vitæ, last updated in April 2023|Sun Apr 23 12:06:42 2023 UTC>
