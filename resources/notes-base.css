@@ -90,11 +90,11 @@
 ******************************************************************************/
 
 html {
-    background-color: rgb(238, 219, 188);
+    background-color: #e2e9e7;
 }
 
 body {
-    background-color: rgb(255, 244, 227);;
+    background-color: #fafafa;
     color: rgb(43, 33, 3);
     font-size: 16px;
      font-family: 'Linux Libertine', serif;
@@ -182,12 +182,12 @@ td {
 }
 
 a:link, a:visited {
-    color: #805020;
+    color: #3f5b52;
     text-decoration: none;
 }
 
 a:active, a:focus, a:hover {
-    color: #D0343F;
+    color: #567b70;
     text-decoration: underline;
 }
 
@@ -678,7 +678,8 @@ code {
 
 .tmweb-code {
     font-size: 90%;
-    background-color: #E0E0FF;
+    color: #567b70;
+    background-color: #eee;
     border-width: 1px;
     border-color: #4040C0;
     border-style: solid;
@@ -705,7 +706,7 @@ code {
 }
 
 .tmweb-markup {
-    color: blue;
+    color: #4040C0;
     font-family: 'Linux Biolinum', sans-serif;
 }
 
