@@ -104,15 +104,15 @@ body {
     border: 0px;
     padding: 50px;
     margin: auto;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     max-width: 600px;
     width: 70%; 
 }
 
 .tmdoc-body {
     padding: 0px;
-    margin: 0px 5em;
+    margin: 0px 0px;
 }
 
 .wave-image img {
@@ -121,6 +121,7 @@ body {
 }
 
 h1 {
+    font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
     font-size: 1.4em;
     margin-top: 1em;
@@ -129,6 +130,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 1em;
@@ -136,6 +138,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
     font-size: 1em;
     margin-top: 1em;
@@ -143,6 +146,7 @@ h3 {
 }
 
 h4, h5, h6 {
+    font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
     font-size: 1em;
     margin-top: 0.5em;
@@ -156,9 +160,9 @@ div {
 
 p, center {
     margin: 0px;
-        padding: 0px;
-    padding-bottom: 0.35em;
-    padding-top: 0.35em;
+    padding: 0px;
+    padding-bottom: 0.17em;
+    padding-top: 0.17em;
 }
 
 ul, ol, dl, di {
@@ -226,7 +230,6 @@ a:active, a:focus, a:hover {
 .tmweb-header {
     margin: 0px -5em;
 
-    background-color: white;
     background-image: url("../images/sigma-224.svg"),
                       url("../images/uniform-224.png");
     background-position: bottom, top;
@@ -345,7 +348,6 @@ a:active, a:focus, a:hover {
 .tmweb-footer {
     margin: 0px -5em;
 
-    background-color: white;
     background-image: url("../images/sigma-224-rev.svg"),
                       url("../images/uniform-224.png");
     background-position: top, bottom;
@@ -735,14 +737,15 @@ code {
 .tmweb-cv-body p {
     font-size: 11pt;
     margin-left: 85px;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .tmweb-cv-section p {
     font-family: 'Linux Biolinum', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
 }
 
 .tmweb-cv-subsection {
