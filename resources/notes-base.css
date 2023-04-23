@@ -25,12 +25,6 @@
 * Font setup
 ******************************************************************************/
 
-/*
-@import url('https://fonts.googleapis.com/css?family=Barlow');
-@import url('https://fonts.googleapis.com/css?family=PS+Sans');
-@import url('https://fonts.googleapis.com/css?family=Belleza');
-*/
-
 
 @font-face {
     font-family: 'Linux Libertine';
@@ -90,22 +84,20 @@
     font-style: italic;
 }
 
+
 /******************************************************************************
 * Main text properties
 ******************************************************************************/
 
 html {
-    background-color: #AAAAAA;
+    background-color: rgb(238, 219, 188);
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: rgb(255, 244, 227);;
+    color: rgb(43, 33, 3);
     font-size: 16px;
-    font-family: 'Linux Libertine', 'Optima';
-    /* font-family: Optima; */
-    /* font-family: Barlow; */
-    /* font-family: 'PT Sans', sans-serif; */
+     font-family: 'Linux Libertine', serif;
     text-align: justify;
     line-height: 1.25;
     border: 0px;
@@ -113,7 +105,7 @@ body {
     margin: auto;
     margin-bottom: 80px;
     margin-top: 80px;
-    max-width: 700px;
+    max-width: 600px;
     width: 70%; 
 }
 
@@ -749,14 +741,21 @@ code {
 * CV specific
 ******************************************************************************/
 
-.tmweb-cv-section {
-    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.425rem;
-    font-weight: 300;
+.tmweb-cv-body p {
+    font-size: 11pt;
+    margin-left: 85px;
+    line-height: 1.1;
+}
+
+.tmweb-cv-section p {
+    font-family: 'Linux Biolinum', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1em;
 }
 
 .tmweb-cv-subsection {
-    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Linux Biolinum', sans-serif;
     font-weight: 300;
     margin-left: 85px;
 }
@@ -776,14 +775,10 @@ code {
     float: left;
     width: 85px;
     margin-right: 8px!important;
-    margin-inline-start: -95px;
+    margin-inline-start: -100px;
+    padding-top: 0.2em;
     text-align: right;
-    font-size: 7pt;
-    font-family: Open Sans, Helvetica Neue, Helvetica Arial, sans-serif;
+    font-size: 8pt;
+    font-family: 'Linux Biolinum', sans-serif;
 } 
     
-.tmweb-cv-body p {
-    font-size: 10pt;
-    margin-left: 85px;
-    line-height: 1;
-}

@@ -16,20 +16,6 @@
   \;
 
   <\cv-body>
-    <timeline|email><hlink|gubinelli@maths.ox.ac.uk|mailto:gubinelli@maths.ox.ac.uk>
-
-    <timeline|website><hlink|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
-
-    <timeline|orcid><hlink|0000-0002-4014-2949|http://orcid.org/0000-0002-4014-2949>
-
-    \;
-
-    Born 8 October 1974 in Matelica, Italy
-
-    Italian, single, two kids
-
-    \;
-
     <\cv-section>
       Appointments
     </cv-section>

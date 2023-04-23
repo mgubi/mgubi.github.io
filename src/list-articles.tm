@@ -12,19 +12,19 @@
 
   <hrule>
 
-  <notes-entry|events.tm|Events|I travel around to meet other
-  mathematicians.|Sat Apr 22 21:34:34 2023 UTC>
+  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 21:39:59 2023 UTC>
 
   <notes-entry|list-articles.tm|List of all the articles|A list of all the
   articles in the website, ordered by the most recent modification time.|Sat
-  Apr 22 15:55:19 2023 UTC>
+  Apr 22 21:39:59 2023 UTC>
+
+  <notes-entry|events.tm|Events|I travel around to meet other
+  mathematicians.|Sat Apr 22 21:39:59 2023 UTC>
 
   <notes-entry|slides.tm|Slides|This file provides a template for typical
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
   small summary of the content, as exemplified by this very text.|Sat Apr 22
   15:54:53 2023 UTC>
-
-  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 15:54:53 2023 UTC>
 
   <notes-entry|seminar-statistical-mechanics-ss21.tm|Hauptseminar
   Stochastik:<nbsp>Statistische Mechanik von Gittersystemen (SS21)|This file
