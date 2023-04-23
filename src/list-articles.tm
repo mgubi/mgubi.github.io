@@ -12,11 +12,14 @@
 
   <hrule>
 
-  <notes-entry|main.tm|(no title)|(no abstract)|Sat Apr 22 21:39:59 2023 UTC>
+  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 12:06:42 2023 UTC>
 
   <notes-entry|list-articles.tm|List of all the articles|A list of all the
-  articles in the website, ordered by the most recent modification time.|Sat
-  Apr 22 21:39:59 2023 UTC>
+  articles in the website, ordered by the most recent modification time.|Sun
+  Apr 23 12:06:42 2023 UTC>
+
+  <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
+  curriculum vitæ, last updated in April 2023|Sun Apr 23 12:06:42 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
   mathematicians.|Sat Apr 22 21:39:59 2023 UTC>
@@ -135,9 +138,6 @@
   models<nbsp>via the connection with probability theory given by the
   Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Sat
   Apr 22 14:22:19 2023 UTC>
-
-  <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
-  curriculum vitæ, last updated in April 2023|Sat Apr 22 13:37:29 2023 UTC>
 
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
