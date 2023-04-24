@@ -97,12 +97,14 @@ html {
 body {
     background-color: #fafafa;
     color: rgb(43, 33, 3);
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     font-family: 'Linux Libertine', serif;
     text-align: left;
     line-height: 1.25;
     border: 0px;
-    padding: 80px;
+    padding: 4em;
+    padding-left: 6em;
+    padding-right: 6em;
     margin: auto;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -133,7 +135,7 @@ h1 {
     font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
 }
@@ -229,6 +231,7 @@ a:active, a:focus, a:hover {
 .notes-abstract {
     font-size: 80%;
     font-style: italic;
+    margin-bottom: 4em;
 }
 
 
@@ -744,7 +747,7 @@ code {
 ******************************************************************************/
 
 .tmweb-cv-body p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 85px;
     line-height: 1.2;
 }
@@ -781,7 +784,7 @@ code {
     margin-inline-start: -100px;
     padding-top: 0.2em;
     text-align: right;
-    font-size: 8pt;
+    font-size: 0.6rem;
     font-family: 'Linux Biolinum', sans-serif;
 } 
     
