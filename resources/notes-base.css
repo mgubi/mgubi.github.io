@@ -97,7 +97,7 @@ html {
 body {
     background-color: #fafafa;
     color: rgb(43, 33, 3);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-family: 'Linux Libertine', serif;
     text-align: justify;
     line-height: 1.25;
@@ -115,19 +115,24 @@ body {
 }
 
 .mg-title {
+    padding-top: 8em;
     letter-spacing: -0.03em;
     font-family: 'Linux Biolinum', sans-serif;
 }
 
+.wave-image  {
+    width: 5.5rem;
+    float: right;
+}
+
 .wave-image img {
     width: 5rem;
-    float: right;
 }
 
 h1 {
     font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.6rem;
     margin-top: 1em;
     margin-bottom: 2em;
     text-align: center;
@@ -136,7 +141,7 @@ h1 {
 h2 {
     font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -144,7 +149,7 @@ h2 {
 h3 {
     font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -152,7 +157,7 @@ h3 {
 h4, h5, h6 {
     font-family: 'Linux Biolinum', sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 0.5em;
     margin-bottom: 0em;
 }
@@ -264,7 +269,7 @@ a:active, a:focus, a:hover {
 .tmweb-title {
     height: 60px;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 
 .tmweb-top-menu {
@@ -739,7 +744,7 @@ code {
 ******************************************************************************/
 
 .tmweb-cv-body p {
-    font-size: 11pt;
+    font-size: 1rem;
     margin-left: 85px;
     line-height: 1.2;
 }
