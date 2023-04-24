@@ -12,11 +12,14 @@
 
   <hrule>
 
-  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 18:47:51 2023 UTC>
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
+
+  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 20:57:12 2023 UTC>
 
   <notes-entry|list-articles.tm|List of all the articles|A list of all the
   articles in the website, ordered by the most recent modification time.|Sun
-  Apr 23 18:47:51 2023 UTC>
+  Apr 23 20:57:12 2023 UTC>
 
   <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
   curriculum vitæ, last updated in April 2023|Sun Apr 23 12:06:42 2023 UTC>
@@ -51,9 +54,6 @@
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
   small summary of the content, as exemplified by this very text.|Sat Apr 22
   15:37:16 2023 UTC>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Sat Apr 22 15:37:16 2023 UTC>
 
   <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic
   Processes<nbsp>|This file provides a template for typical notes/articles.

@@ -15,15 +15,15 @@
   Literate programming was invented by Knuth to provide a literary work which
   would <with|font-shape|italic|explain> (unroll / bring before our eyes) a
   computer program by telling a story about it. It's about following a thread
-  where a plot is gradually unveiled made of chunks of the actual code of the
-  program in question. Until the full scheme is revealed and, by backtracking
-  from chunk to chunk a special utility program can reconstitute the
-  enteriety of the code to be then given to the computer, for execution or
-  compilation. A monologue that occasionally becomes a dialogue.\ 
+  where a plot, made of chunks of the actual code of the program in question,
+  is gradually unveiled. Collecting chunk after chunk, a special utility
+  program can reconstitute the enteriety of the code to be then given back to
+  the computer, for execution or compilation. A monologue that occasionally
+  becomes a dialogue.\ 
 
-  I've seen many times examples of literate programs. The most famous is the
-  <TeX> program itself, which take life as a narration in the homonimous book
-  \P<TeX> the program\Q (<hlink|here|https://ctan.org/tex-archive/info/knuth-pdf>
+  I've encountered many times examples of literate programs. The most famous
+  is the <TeX> program itself, which take life as a narration in the
+  homonimous book \P<TeX> the program\Q (<hlink|here|https://ctan.org/tex-archive/info/knuth-pdf>
   for a the full collection of PDF files and
   <hlink|here|http://mirrors.ctan.org/info/knuth-pdf/tex/tex.pdf> for the
   literate <name|Cweb> sources for <TeX>). Some of them, especially the short
@@ -31,25 +31,27 @@
   for a whole Wiki of literate programs to get an idea.
 
   Apart from <TeX> (and Metafont) other large programs are maintained as
-  literate works: <hlink|Axiom|http://www.axiom-developer.org>,
-  <hlink|Physically based rendering algorithms|https://pbr-book.org>, the
+  literate works: <hlink|Axiom|http://www.axiom-developer.org>, the book
+  <hlink|\PPhysically based rendering\Q|https://pbr-book.org>, the
   <hlink|<verbatim|lcc>|https://drh.github.io/lcc/> retargetable ANSI C
-  compiler, the \PLisp In Small Pieces\Q book
-  (<hlink|10.1017/CBO9781139172974|https://doi.org/10.1017/CBO9781139172974>)
-  and <hlink|Clojure in Small Pieces|https://github.com/daly/literateclojure>
+  compiler, <hlink|\PLisp In Small Pieces\Q|https://doi.org/10.1017/CBO9781139172974>
+  and <hlink|\PClojure in Small Pieces\Q|https://github.com/daly/literateclojure>
   (see also <hlink|here|https://github.com/robleyhall/clojure-small-pieces>
-  for more context on this last book)
+  for context on this last book).
 
   <subsection*|Literate programs are human-specific super-languages>
 
-  However my brain \Pclicked\Q only when I discovered
+  However my brain \Pclicked\Q when I discovered
   <hlink|<verbatim|peg.md>|https://github.com/kragen/peg-bootstrap/blob/master/peg.md>
   by <hlink|K. J. Sitaker|https://github.com/kragen>. It is a small MarkDown
   document that gives a literate implementation of
   <with|font-shape|italic|parsing expression grammars> (PEGs) together with a
   meta compiler implemented in Javascript. What I found remarkable is the
-  expressivity of the literate style, even when reduced to the essence of
-  some tricks in a markdown text file. <hlink|<verbatim|peg.md>|https://github.com/kragen/peg-bootstrap/blob/master/peg.md>
+  expressivity of the literate style to convey
+  <with|font-shape|italic|complex interactions> among different computer
+  idioms and dense representations of ideas, even when reduced to the essence
+  of some tricks in a markdown text file. The text file
+  <hlink|<verbatim|peg.md>|https://github.com/kragen/peg-bootstrap/blob/master/peg.md>
   contains the code of various versions of the Javascript PEG compiler, and a
   PEG meta-compiler written in itself, and the Makefile which extracts from
   the literate document a bootstrapping Javascript PEG compiler and use it to
@@ -57,18 +59,18 @@
   in two versions with larger set of features. Another Markdown file
   <hlink|<verbatim|handaxeweb.md>|https://github.com/kragen/peg-bootstrap/blob/master/handaxeweb.md>
   is the literate implementation of the Lua script which extracts the program
-  files from the Markdown documetns.\ 
+  files from the Markdown documents.\ 
 
-  This made me realize that expressivity of the literate style is both
-  towards humans, and towards the machine. A single literate
-  <with|font-shape|italic|document> can contain the code of various programs,
+  This made me realize that the expressivity of the literate style is both
+  towards humans and towards the machine. A single literate
+  <with|font-shape|italic|document> contains the code of various programs,
   maybe even written in different languages, which are gathered together and
   made speak to each other in ways in which is not possible in standard
-  programming, where each program lives in a separate file while, usually,
-  certain parts of a program here have their <with|font-shape|italic|raison
-  d'être> in other parts of another program there. Think of
-  HTML/Javascript/CSS plus maybe some code in C++ compiled to Webasm and
-  which has to interact with Javascript.
+  programming environments, where each program lives in a separate file
+  while, usually, certain parts of a program here have their
+  <with|font-shape|italic|raison d'être> in other parts of another program
+  there. Think of HTML/Javascript/CSS plus maybe some code in C++ compiled to
+  Webasm and which has to interact with Javascript.
 
   In this sense literate programming moves away from usual file-based
   programming in a direction completely orthogonal to what
@@ -84,42 +86,35 @@
   A literate document is, instead, an heterodox medium where policies can be
   put in place to make different languages coexist, including natural
   language, and where a thread is provided by the writer (or maybe better the
-  \Peditor\Q or \Pdirector\Q) which supervise and coordinate the various
-  voices in order to provide a coherent and synesthetic intellectual
-  experience to the reader, while still being able to distill automatically
-  the various \Pvoices\Q into different files for the use in a computer
-  system.\ 
+  \Peditor\Q or \Pdirector\Q) who supervise and coordinate the various voices
+  in order to provide a coherent and synesthetic intellectual experience to
+  the reader, while still being able to distill automatically the various
+  \Pvoices\Q into different files for the use in a computer system.
 
-  It seems that characteristic of LP is not usually considered, see the
-  discussion in the <hlink|c2 wiki|http://wiki.c2.com/?LiterateProgramming>
-  or in the <hlink|Wikipedia page|https://en.wikipedia.org/wiki/Literate_programming>
-  or in the <hlink|literateprogramming.com|http://www.literateprogramming.com>
-  and <hlink|softpanorama.org|https://softpanorama.org/SE/literate_programming.shtml>
-  websites. All the discussion I've found collapse the idea of literate
-  document towards a single programming language. LP implemetations are
-  usually also targeted to a single language with few exceptions (e.g.
-  <hlink|<name|Noweb>|https://www.cs.tufts.edu/~nr/noweb/>). However, as the
-  <hlink|<verbatim|peg.md>|https://github.com/kragen/peg-bootstrap/blob/master/peg.md>
-  example masterfully shows, the liberating power of LP is in its complete
-  malleability in providing <with|font-series|bold|metacircular description
-  of complex computer systems>.
+  It seems that this characteristic of LP is not usually valued or even
+  considered, see the discussion in the <hlink|c2
+  wiki|http://wiki.c2.com/?LiterateProgramming> or in the <hlink|Wikipedia
+  page|https://en.wikipedia.org/wiki/Literate_programming> or in the
+  <hlink|literateprogramming.com|http://www.literateprogramming.com> and
+  <hlink|softpanorama.org|https://softpanorama.org/SE/literate_programming.shtml>
+  websites. All these expositions collapse the idea of literate document
+  towards a single programming language. LP implemetations are usually also
+  targeted to a single language with few exceptions (e.g.
+  <hlink|<name|Noweb>|https://www.cs.tufts.edu/~nr/noweb/>) in which case the
+  stress is towards the universality more than towards the openess of the
+  system. However, as the <hlink|<verbatim|peg.md>|https://github.com/kragen/peg-bootstrap/blob/master/peg.md>
+  example, in its minimality, masterfully shows, the liberating power of LP
+  is in its complete malleability in providing
+  <with|font-series|bold|metacircular description of complex computer
+  systems>.
 
   So while certain languages implement domain-specific sub-languages in order
-  to better model domain-specific (human) knowledge, literate programs are
-  then (human) <with|font-series|bold|domain-specific super-languages>.
-
-  An important aspect of LP has to do with learning, understanding and
-  communicating. As Tim Daly (the maintainer of Axiom) points out in this
-  <hlink|talk|https://www.youtube.com/watch?v=Av0PQDVTP4A> (\PLP in the
-  large\Q), big open source systems, <with|font-shape|italic|need> literate
-  programming to thrive and survive. Writing is the technology which allows
-  us to transmit knowledge through time and space. Literate programs explain
-  the \Pwhy\Q some code exists or is modelled in some way instead of another,
-  and also points out logical links among different zones of the code, which
-  may not be materialized via the specific programming language in use.\ 
+  to better model domain-specific (human) knowledge (see e.g. the
+  languge-oriented programming of Racket), literate programs are then (human)
+  <with|font-series|bold|domain-specific super-languages>.
 
   While <TeX> was born as a literate program, <name|Axiom>
-  <with|font-shape|italic|became> (or want to be one, see this
+  <with|font-shape|italic|is becoming> (or better, want to, see this
   <hlink|message|https://lists.nongnu.org/archive/html/axiom-developer/2023-03/msg00003.html>
   of Daly in the <verbatim|axiom-developer> mailing list) one because Daly
   felt the need to document the valuable millions lines of code costituing
@@ -136,6 +131,17 @@
     seemed to be the right time to experiment with a literate form. I have
     put together the beginnings of a Clojure in Small Pieces book.
   </quotation>
+
+  As Daly again points out in the talk <hlink|\PLP in the
+  large\Q|https://www.youtube.com/watch?v=Av0PQDVTP4A>, big open source
+  systems <with|font-shape|italic|need> literate programming to thrive and
+  survive through time. Writing is the technology which allows us to transmit
+  knowledge across time and space. Literate programs contains also the
+  \Pwhy\Q some code exists or is modelled in some way instead of another, and
+  also point out logical links among different parts of the code, which may
+  not be materialized via the specific programming language in use.
+
+  <todo|Talk about <verbatim|org.mode>>
 
   <subsection*|Literate programming in TeXmacs>
 
@@ -171,7 +177,7 @@
   allows a shallow coordination, they have to be also maintaned alongside the
   main sources.
 
-  I've tried to motivate that crucial aspects of LP are two:
+  As I've tried to explain above, the crucial features I see in LP are two:
 
   <\itemize>
     <item>a metacircular description of complex computer systems via a
@@ -180,29 +186,44 @@
     <item>an explanation and exploration device
   </itemize>
 
-  These aspects in my view fit perfectly with the above description of
-  <TeXmacs>. We need a tool which allow the community to obtain a shared
-  understanding of the various sources in their interrelation and of the
-  principles, design decisions and specific tradeoffs present in the
-  codebase. <TeXmacs> itself is a document preparation system, so a literate
-  development of <TeXmacs> can be metacircular in a very tight way: one can
-  envisage that the <TeXmacs> system can be described by a <TeXmacs> literate
-  document comprising all the various sources codes in a unique \Pbook\Q
-  which tells the story (or a story) of the program. In this vision there are
-  no other source files than a web of hyperlinked <TeXmacs> documents. A
-  Scheme script can extract the usual arborescence of OS files to be feed to
-  the various compilers or to be assembled in runtime resources. The build
-  process can be described alongside the system specific changes which can be
-  even implemented in more flexible ways because the parametrization of the
-  code is not in full control of the LP scripts. This will reduce the need
-  for complex build systems, at the price of having available a bootstrapping
-  avenue in the form of some cross-platform support or small Scheme
-  interpreter which can \Pweave\Q the relevant sources to compile a first
-  runnable version of <TeXmacs>.
+  They fit perfectly with the above description of <TeXmacs>. We need a tool
+  which allow the community to obtain a shared understanding of the various
+  sources in their interrelation and of the principles, design decisions and
+  specific tradeoffs present in the codebase. <TeXmacs> itself is a document
+  preparation system, so a literate development of <TeXmacs> can be
+  metacircular in a very tight way: one can envisage that the <TeXmacs>
+  system can be described by a <TeXmacs> literate document comprising all the
+  various sources codes in a unique \Pbook\Q which tells the story (or a
+  story) of the program. In this vision there are no other source files than
+  a web of hyperlinked <TeXmacs> documents. A Scheme script can extract the
+  usual arborescence of OS files to be feed to the various compilers or to be
+  assembled in runtime resources. The build process can be described
+  alongside the system specific changes which can be even implemented in more
+  flexible ways because the parametrization of the code is not in full
+  control of the LP scripts. This will reduce the need for complex build
+  systems, at the price of having available a bootstrapping avenue in the
+  form of some cross-platform support or small Scheme interpreter which can
+  \Pweave\Q the relevant sources to compile a first runnable version of
+  <TeXmacs>.
 
   \;
 
-  \;
+  <with|color|dark red|<\wide-tabular>
+    <tformat|<cwith|1|1|1|1|cell-background|pastel
+    red>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lborder|5ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<table|<row|<\cell>
+      <with|font-series|bold|TODO:> other relevant aspects
+
+      <\itemize>
+        <item><hlink|<verbatim|org.mode>|https://orgmode.org>\ 
+
+        <item><hlink|Design principles behind
+        Smalltalk|https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html>
+        / <hlink|Newspeak|https://newspeaklanguage.org/index.html>
+
+        <item>
+      </itemize>
+    </cell>>>>
+  </wide-tabular>>
 
   \ 
 

@@ -40,9 +40,9 @@
 
   <vspace|3em>
 
-  (<hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>)
-  (<hlink|arXiv|http://arxiv.org/a/gubinelli_m_1>)
-  (<hlink|ORCID|http://orcid.org/0000-0002-4014-2949>)
+  <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
+  \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
+  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
 
   <hlink|Curriculum vitae|./curriculum-vitae.tm> \<cdot\>
   <hlink|Publications|publications.tm> \<cdot\> <hlink|Slides|slides.tm>
@@ -50,10 +50,12 @@
 
   <hlink|Programming|./programming.tm>
 
-  a <hlink|list|./list-articles.tm> of all the articles & a
-  <hlink|template|template.tm> for new pages
-
   \;
+
+  <\small>
+    a <hlink|list|./list-articles.tm> of all the articles & a
+    <hlink|template|template.tm> for new pages
+  </small>
 </body>
 
 <\initial>
