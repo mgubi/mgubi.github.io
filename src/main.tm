@@ -12,7 +12,7 @@
   <html-div-class|mg-title|<huge|<with|font-series|bold|Massimiliano
   Gubinelli>>>\ 
 
-  <with|font-shape|italic|personal web pages> [work in progress!]<vspace|1em>
+  <with|font-shape|italic|personal web pages> [work in progress!]<vspace|3em>
 
   <\very-small>
     <\quotation>
@@ -48,9 +48,7 @@
   <hlink|Publications|publications.tm> \<cdot\> <hlink|Slides|slides.tm>
   \<cdot\> <hlink|Events|events.tm> \<cdot\> <hlink|Teaching|teaching.tm>
 
-  <hlink|Programming|./programming.tm>
-
-  \;
+  <hlink|Programming|./programming.tm><vspace|1em>
 
   <\small>
     a <hlink|list|./list-articles.tm> of all the articles & a

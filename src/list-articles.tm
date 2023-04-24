@@ -12,14 +12,18 @@
 
   <hrule>
 
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
+  <notes-entry|main.tm|(no title)|(no abstract)|Mon Apr 24 16:21:43 2023 UTC>
 
-  <notes-entry|main.tm|(no title)|(no abstract)|Sun Apr 23 20:57:12 2023 UTC>
+  <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
+  reflections on literate programming, <TeXmacs>, programming languages and
+  writing.|Mon Apr 24 16:21:43 2023 UTC>
 
   <notes-entry|list-articles.tm|List of all the articles|A list of all the
-  articles in the website, ordered by the most recent modification time.|Sun
-  Apr 23 20:57:12 2023 UTC>
+  articles in the website, ordered by the most recent modification time.|Mon
+  Apr 24 16:21:43 2023 UTC>
+
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
 
   <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
   curriculum vitæ, last updated in April 2023|Sun Apr 23 12:06:42 2023 UTC>
@@ -138,10 +142,6 @@
   models<nbsp>via the connection with probability theory given by the
   Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Sat
   Apr 22 14:22:19 2023 UTC>
-
-  <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
-  reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|Sat Apr 22 00:21:40 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to
