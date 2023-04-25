@@ -50,8 +50,12 @@
         `(,gdate ,cdate 
             ,(url->string (url-delta (url-append dir "./") furl)) 
             ,title ,abs)))
+  (filter 
+    (lambda (furl)
+        (let* ((fname (url->string (url-delta (url-append dir "./") furl)))) 
+           (not (or (equal? fname "main.tm") (eq? fname "main.tm") (equal? fname "list-articles.tm")))))
     (url->list (url-expand 
-            (url-complete (url-append dir (url-wildcard "*.tm")) "fr")))))
+            (url-complete (url-append dir (url-wildcard "*.tm")) "fr"))))))
 
 (define (make-article-list-entry mdate cdate file title abs)
     `(notes-entry ,file 
