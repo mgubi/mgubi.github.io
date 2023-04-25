@@ -218,9 +218,11 @@
 
         <item><hlink|Design principles behind
         Smalltalk|https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html>
+        / \ <hlink|Early history of Smalltalk|http://worrydream.com/EarlyHistoryOfSmalltalk/>
         / <hlink|Newspeak|https://newspeaklanguage.org/index.html>
 
-        <item>
+        <item>Comment about V. Bret's \PLearnable programming\Q
+        [<hlink|URL|http://worrydream.com/#!/LearnableProgramming>]\ 
       </itemize>
     </cell>>>>
   </wide-tabular>>
