@@ -12,15 +12,15 @@
 
   <hrule>
 
-  <notes-entry|list-articles.tm|List of all the articles|A list of all the
-  articles in the website, ordered by the most recent modification time.|Tue
-  Apr 25 21:25:07 2023 UTC>
-
-  <notes-entry|main.tm|(no title)|(no abstract)|Tue Apr 25 08:29:19 2023 UTC>
-
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|Mon Apr 24 16:21:43 2023 UTC>
+  writing.|Tue Apr 25 22:00:19 2023 UTC>
+
+  <notes-entry|list-articles.tm|List of all the articles|A list of all the
+  articles in the website, ordered by the most recent modification time.|Tue
+  Apr 25 21:25:32 2023 UTC>
+
+  <notes-entry|main.tm|(no title)|(no abstract)|Tue Apr 25 08:29:19 2023 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
