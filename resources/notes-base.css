@@ -91,16 +91,16 @@
 
 html {
     background-color: #e2e9e7;
-    font-size: 1.6vw;
+    font-size: 18px;
 }
 
 body {
     background-color: #fafafa;
     color: rgb(43, 33, 3);
-    font-size: 0.9rem;
     font-family: 'Linux Libertine', serif;
     text-align: left;
     line-height: 1.25;
+    font-size: 1rem;
     border: 0px;
     padding: 4em;
     padding-left: 6em;
