@@ -52,8 +52,9 @@
             ,title ,abs)))
   (filter 
     (lambda (furl)
-        (let* ((fname (url->string (url-delta (url-append dir "./") furl)))) 
-           (not (or (equal? fname "main.tm") (eq? fname "main.tm") (equal? fname "list-articles.tm")))))
+        (let ((fname (url->string (url-delta (url-append dir "./") furl)))) 
+          (not (or (equal? fname "main.tm") 
+                   (equal? fname "list-articles.tm")))))
     (url->list (url-expand 
             (url-complete (url-append dir (url-wildcard "*.tm")) "fr"))))))
 
