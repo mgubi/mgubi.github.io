@@ -8,6 +8,7 @@
     <link href="../resources/blog-icon.png" rel="icon"></link>
     <script src="../resources/highlight.pack.js" language="javascript" defer></script>
     <script src="../resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
   </head>
   <body>
     <div class="toggle" style="display: none">
@@ -20,8 +21,8 @@
         <a href="./main.html">[main]</a><em class="notes-header-name">mg webpages</em>
       </p>
     </div>
-    <h1 id="auto-1">Stochastic quantization of the Euclidean <img src="lectures-sq-ws20-21-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258954em; vertical-align: -0.18534435261708em; height: 1.08165289256198em"></img>
-    quantum field theory<span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-1">Stochastic quantization of the Euclidean \(\Phi^4_3\) quantum
+    field theory<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       An introduction to stochastic quantisation. Course delivered in the
       context of the graduate school of the University of Milan in February
@@ -41,7 +42,7 @@
     </p>
     <p>
       The goal of Euclidean quantum field theory (see, e.g. [4,2]) is to build
-      probability measures on the space of distributions on <img src="lectures-sq-ws20-21-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129478em; margin-top: -0.0188209366391184em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>
+      probability measures on the space of distributions on \(\mathbb{R}^n\)
       satisfying properties such as Euclidean invariance, reflection
       positivity and non-triviality, that allows to recover an interacting
       relativistic quantum field satisfying Wightman axioms. Stochastic
@@ -53,18 +54,17 @@
     <p>
       In this course we will learn about the stochastic quantization of the
       Euclidean quantum field theory of a scalar boson with quartic
-      interaction on <img src="lectures-sq-ws20-21-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.906446280991736em"></img> and its main properties. We
-      follow the proof in [3] which builds the <img src="lectures-sq-ws20-21-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258954em; vertical-align: -0.18534435261708em; height: 1.08165289256198em"></img> measure
-      as the limit of the invariant measure of a finite dimensional system of
-      stochastic differential equations. The proof proposed uses several
-      analytic and probabilistic techniques, such as white noise analysis,
-      weighted Besov spaces on lattice and paraproducts, which find also
-      applications in other problems arising in the study of deterministic and
-      stochastic singular differential equations. All these tools and ideas
-      will be gradually introduced and explained during the lectures. The
-      course is as much as possible self-contained and requires as
-      prerequisite only basic knowledge of stochastic and functional analysis.
-      
+      interaction on \(\mathbb{R}^3\) and its main properties. We follow the
+      proof in [3] which builds the \(\Phi^4_3\) measure as the limit of the
+      invariant measure of a finite dimensional system of stochastic
+      differential equations. The proof proposed uses several analytic and
+      probabilistic techniques, such as white noise analysis, weighted Besov
+      spaces on lattice and paraproducts, which find also applications in
+      other problems arising in the study of deterministic and stochastic
+      singular differential equations. All these tools and ideas will be
+      gradually introduced and explained during the lectures. The course is as
+      much as possible self-contained and requires as prerequisite only basic
+      knowledge of stochastic and functional analysis. 
     </p>
     <h3 id="auto-2">Outline<span style="margin-left: 1em"></span></h3>
     <ul>
@@ -88,9 +88,9 @@
       </li>
       <li>
         <p>
-          The local structure of the <img src="lectures-sq-ws20-21-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258954em; vertical-align: -0.18534435261708em; height: 1.08165289256198em"></img> dynamics,
-          expansion, paracontrolled analysis. Local solutions of the
-          renormalized equation.
+          The local structure of the \(\Phi^4_3\) dynamics, expansion,
+          paracontrolled analysis. Local solutions of the renormalized
+          equation.
         </p>
       </li>
       <li>
@@ -119,13 +119,13 @@
     </p>
     <p>
       <strong>[3] </strong> M. Gubinelli and M. Hofmanov&aacute;. A PDE
-      construction of the euclidean <img src="lectures-sq-ws20-21-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258954em; vertical-align: -0.18534435261708em; height: 1.08165289256198em"></img> quantum field
-      theory. <em>ArXiv preprint arXiv:1810.01700</em>, 2018.
+      construction of the euclidean \(\Phi^4_3\) quantum field theory.
+      <em>ArXiv preprint arXiv:1810.01700</em>, 2018.
     </p>
     <p>
-      <strong>[4] </strong> Barry Simon. <em>The <img src="lectures-sq-ws20-21-4.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0225234159779614em; margin-right: -0.0225674931129478em; margin-top: 0em; vertical-align: -0.248198347107438em; height: 0.959118457300275em"></img>
-      Euclidean (quantum) field theory</em>. Princeton University Press,
-      Princeton, N.J., 1974. Princeton Series in Physics.
+      <strong>[4] </strong> Barry Simon. <em>The \(P (\phi)_2\) Euclidean
+      (quantum) field theory</em>. Princeton University Press, Princeton,
+      N.J., 1974. Princeton Series in Physics.
     </p>
     <h2 id="auto-4">Extended lecture notes<span style="margin-left: 1em"></span></h2>
     <ul>
@@ -136,8 +136,7 @@
       </li>
       <li>
         <p>
-          Second part: stochastic quantization of <img src="lectures-sq-ws20-21-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258954em; vertical-align: -0.18534435261708em; height: 1.08165289256198em"></img> (<a
-          href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-notes-2.pdf">notes</a>)
+          Second part: stochastic quantization of \(\Phi^4_3\) (<a href="https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-notes-2.pdf">notes</a>)
         </p>
       </li>
     </ul>

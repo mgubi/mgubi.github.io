@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-04-25T22:18:49Z</updated>
+  <updated>2023-04-30T16:57:43Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,48 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>Teaching</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
+    <id>texmacs.github.io/notes/teaching.tm:2023-04-30T16:57:37Z</id>
+    <updated>2023-04-30T16:57:37Z</updated>
+    <published>2023-04-28T15:31:29Z</published>
+    <summary>Things I have taught.</summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
+    <id>texmacs.github.io/notes/publications.tm:2023-04-30T16:57:37Z</id>
+    <updated>2023-04-30T16:57:37Z</updated>
+    <published>2023-04-28T15:49:17Z</published>
+    <summary>What my collaborators, students and me have written  last
+    updated October 2020.</summary>
+  </entry>
+  <entry>
+    <title>Presentations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/presentations.html"/>
+    <id>texmacs.github.io/notes/presentations.tm:2023-04-30T16:57:37Z</id>
+    <updated>2023-04-30T16:57:37Z</updated>
+    <published>2023-04-28T14:45:25Z</published>
+    <summary>Things I have saied in various places.</summary>
+  </entry>
+  <entry>
+    <title>People</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/people.html"/>
+    <id>texmacs.github.io/notes/people.tm:2023-04-30T16:57:37Z</id>
+    <updated>2023-04-30T16:57:37Z</updated>
+    <published>2023-04-28T15:31:05Z</published>
+    <summary>Present & past members of my research group  updated September
+    2022.</summary>
+  </entry>
+  <entry>
+    <title>CV</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-04-30T16:57:37Z</id>
+    <updated>2023-04-30T16:57:37Z</updated>
+    <published>2023-04-30T15:26:38Z</published>
+    <summary>Some facts about me  last updated April 2023</summary>
+  </entry>
   <entry>
     <title>On Literate Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
@@ -28,14 +70,6 @@
     <published>2023-04-23T20:52:20Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
-  </entry>
-  <entry>
-    <title>Massimiliano Gubinelli</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-04-23T12:06:42Z</id>
-    <updated>2023-04-23T12:06:42Z</updated>
-    <published>2023-04-23T11:54:48Z</published>
-    <summary>An analytic curriculum vitæ, last updated in April 2023</summary>
   </entry>
   <entry>
     <title>Events</title>
@@ -191,23 +225,6 @@
     text.</concat></summary>
   </entry>
   <entry>
-    <title>People</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/people.html"/>
-    <id>texmacs.github.io/notes/people.tm:2023-04-22T15:15:45Z</id>
-    <updated>2023-04-22T15:15:45Z</updated>
-    <published>2023-04-22T20:30:14Z</published>
-    <summary>Members of my research group along the years. Updated September
-    2022.</summary>
-  </entry>
-  <entry>
-    <title>Teaching</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
-    <id>texmacs.github.io/notes/teaching.tm:2023-04-22T14:22:19Z</id>
-    <updated>2023-04-22T14:22:19Z</updated>
-    <published>2023-04-22T20:30:17Z</published>
-    <summary>My teaching.</summary>
-  </entry>
-  <entry>
     <title>Seminar on rough paths</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-rough-paths-ss22.html"/>
     <id>texmacs.github.io/notes/seminar-rough-paths-ss22.tm:2023-04-22T14:22:19Z</id>
@@ -215,14 +232,6 @@
     <published>2023-04-22T20:30:16Z</published>
     <summary>An introductory master seminar on Rough path theory, which has
     taken place in Bonn in the Summer Semester 2022.</summary>
-  </entry>
-  <entry>
-    <title>Publication list</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
-    <id>texmacs.github.io/notes/publications.tm:2023-04-22T14:22:19Z</id>
-    <updated>2023-04-22T14:22:19Z</updated>
-    <published>2023-04-22T20:30:15Z</published>
-    <summary>My publication list, updated October 2020.</summary>
   </entry>
   <entry>
     <title>Stochastic Analysis</title>
