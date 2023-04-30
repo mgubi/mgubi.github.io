@@ -12,9 +12,9 @@
   <html-div-class|mg-title|<huge|<with|font-series|bold|Massimiliano
   Gubinelli>>>\ 
 
-  <with|font-shape|italic|personal web pages> [work in progress!]<vspace|3em>
+  <with|font-shape|italic|personal web pages><vspace|3em>
 
-  <\very-small>
+  <\small>
     <\quotation>
       What is a businessman? Someone who does business? Not quite. It is
       someone who sees opportunities for doing business when others might
@@ -36,7 +36,7 @@
       la course erratique du cerf qui zigzague en essayant d'échapper aux
       chiens. Le mot a aussi donné \S randonnée \T en français.
     </quotation>
-  </very-small>
+  </small>
 
   <vspace|3em>
 
@@ -45,8 +45,9 @@
   <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
 
   <hlink|Curriculum vitae|./curriculum-vitae.tm> \<cdot\>
-  <hlink|Publications|publications.tm> \<cdot\> <hlink|Slides|slides.tm>
-  \<cdot\> <hlink|Events|events.tm> \<cdot\> <hlink|Teaching|teaching.tm>
+  <hlink|Publications|publications.tm> \<cdot\>
+  <hlink|Presentations|presentations.tm> \<cdot\> <hlink|Events|events.tm>
+  \<cdot\> <hlink|People|people.tm> \<cdot\> <hlink|Teaching|teaching.tm>
 
   <hlink|Programming|./programming.tm><vspace|1em>
 

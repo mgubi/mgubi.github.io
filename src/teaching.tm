@@ -11,7 +11,7 @@
 
   <chapter*|Teaching>
 
-  <notes-abstract|My teaching.>
+  <notes-abstract|Things I have taught.>
 
   \;
 
@@ -101,18 +101,26 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Teaching>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|Current lecture courses and seminars
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Old lecture courses and seminars in Bonn
+      (2015\U2022) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
     </associate>
   </collection>
 </auxiliary>

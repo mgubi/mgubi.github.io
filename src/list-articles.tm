@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|presentations.tm|Presentations|Things I have saied in various
+  places.|Fri Apr 28 14:45:22 2023 UTC>
+
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
   writing.|Tue Apr 25 22:00:19 2023 UTC>
@@ -19,8 +22,8 @@
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
 
-  <notes-entry|curriculum-vitae.tm|Massimiliano Gubinelli|An analytic
-  curriculum vitæ, last updated in April 2023|Sun Apr 23 12:06:42 2023 UTC>
+  <notes-entry|curriculum-vitae.tm|CV|Some facts about me \U last updated
+  April 2023|Sun Apr 23 12:06:42 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
   mathematicians.|Sat Apr 22 21:39:59 2023 UTC>
@@ -95,18 +98,19 @@
   small summary of the content, as exemplified by this very text.|Sat Apr 22
   15:37:16 2023 UTC>
 
-  <notes-entry|people.tm|People|Members of my research group along the years.
-  Updated September 2022.|Sat Apr 22 15:15:45 2023 UTC>
+  <notes-entry|people.tm|People|Present & past members of my research group
+  \U updated September 2022.|Sat Apr 22 15:15:45 2023 UTC>
 
-  <notes-entry|teaching.tm|Teaching|My teaching.|Sat Apr 22 14:22:19 2023
-  UTC>
+  <notes-entry|teaching.tm|Teaching|Things I have taught.|Sat Apr 22 14:22:19
+  2023 UTC>
 
   <notes-entry|seminar-rough-paths-ss22.tm|Seminar on rough paths|An
   introductory master seminar on Rough path theory, which has taken place in
   Bonn in the Summer Semester 2022.|Sat Apr 22 14:22:19 2023 UTC>
 
-  <notes-entry|publications.tm|Publication list|My publication list, updated
-  October 2020.|Sat Apr 22 14:22:19 2023 UTC>
+  <notes-entry|publications.tm|Publications|What my collaborators, students
+  and me have written \U last updated October 2020.|Sat Apr 22 14:22:19 2023
+  UTC>
 
   <notes-entry|lectures-stochastic-analysis-ss22.tm|Stochastic Analysis|A
   course developing applications<nbsp>of stochastic calculus to the study of

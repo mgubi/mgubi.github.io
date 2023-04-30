@@ -9,11 +9,9 @@
 
   <notes-header>
 
-  <chapter*|Massimiliano Gubinelli>
+  <chapter*|CV>
 
-  <notes-abstract|An analytic curriculum vitæ, last updated in April 2023>
-
-  \;
+  <notes-abstract|Some facts about me \U last updated April 2023>
 
   <\cv-body>
     <\cv-section>
@@ -93,100 +91,6 @@
     <timeline|2009-2014>Director of the first year of Master MMD \S
     Mathématiques pour la Modelisation et Decision \T at Université
     Paris\UDauphine \U <comment|<math|\<sim\>140> students/year>
-
-    <\cv-section>
-      Selected publications
-    </cv-section>
-
-    with H.<nbsp>Koch and T.<nbsp>Oh. <newblock>Paracontrolled approach to
-    the three-dimensional stochastic nonlinear wave equation with quadratic
-    nonlinearity. <newblock><with|font-shape|italic|Journal European
-    Mathematical Society>, 2022. <newblock>To appear.
-    <hlink|arXiv:1811.07808|http://arxiv.org/abs/1811.07808>
-
-    with M.<nbsp>Hofmanová. <newblock>A PDE Construction of the Euclidean
-    <math|\<Phi\><rsup|4><rsub|3>> Quantum Field Theory.
-    <newblock><with|font-shape|italic|Communications in Mathematical
-    Physics>, apr 2021. <newblock><hlink|10.1007/s00220-021-04022-0|https://link.springer.com/10.1007/s00220-021-04022-0>
-
-    with L.<nbsp>Galeati. <newblock>Noiseless regularisation by noise.
-    <newblock><with|font-shape|italic|Revista Matemática Iberoamericana>, jul
-    2021. <newblock><hlink|10.4171/RMI/1280|https://doi.org/10.4171/RMI/1280>
-
-    with N.<nbsp>Perkowski. <newblock>The infinitesimal generator of the
-    stochastic Burgers equation. <newblock><with|font-shape|italic|Probability
-    Theory and Related Fields>, aug 2020.
-    <newblock><hlink|10.1007/s00440-020-00996-5|https://doi.org/10.1007/s00440-020-00996-5>
-
-    with N.<nbsp>Barashkov. <newblock>A variational method for
-    <math|\<Phi\><rsup|4><rsub|3>>. <newblock><with|font-shape|italic|Duke
-    Mathematical Journal>, 169(17):3339\U3415, nov 2020.
-    <hlink|10.1215/00127094-2020-0029|http://dx.doi.org/10.1215/00127094-2020-0029>
-
-    with P.<nbsp>Imkeller and N.<nbsp>Perkowski. <newblock>Paracontrolled
-    distributions and singular PDEs. <newblock><with|font-shape|italic|Forum
-    of Mathematics. Pi>, 3:0, 2015. <newblock><hlink|10.1017/fmp.2015.2|http://dx.doi.org/10.1017/fmp.2015.2>
-
-    with F.<nbsp>Flandoli and E.<nbsp>Priola. <newblock>Well-posedness of the
-    transport equation by stochastic perturbation.
-    <newblock><with|font-shape|italic|Inventiones Mathematicae>,
-    180(1):1\U53, 2010. <newblock><hlink|10.1007/s00222-009-0224-4|http://dx.doi.org/10.1007/s00222-009-0224-4>
-
-    <newblock>Ramification of rough paths.
-    <newblock><with|font-shape|italic|Journal of Differential Equations>,
-    248(4):693\U721, 2010. <hlink|10.1016/j.jde.2009.11.015|http://dx.doi.org/10.1016/j.jde.2009.11.015>
-
-    <newblock>Controlling rough paths. <newblock><with|font-shape|italic|Journal
-    of Functional Analysis>, 216(1):86\U140, 2004.
-    <hlink|10.1016/j.jfa.2004.01.002|<newblock>http://dx.doi.org/10.1016/j.jfa.2004.01.002>
-
-    <\cv-section>
-      Supervision of graduate students and postdoctoral fellows
-    </cv-section>
-
-    <cv-subsection|Postdocs><timeline|2021\U><name|Luca Fresta> (Zürich),
-    <name|Paolo Rinaldi> (Bonn)
-
-    <timeline|2018\U2022><name|Francesco<nbsp>de Vecchi> (Bonn) \U
-    <comment|Now Assistant Professor at the University of Pavia>
-
-    <timeline|2019\U2020><name|Luigi Borasi> (Bonn)
-
-    <timeline|2016\U2019><name|Baris Ugurcan> (Bonn) \U <comment|Now postdoc
-    in Wuppertal with Barbara Rüdiger>
-
-    <timeline|2013\U2014><name|Nicolas Perkowski> (Dauphine) \U <comment|Now
-    full professor in Freie Universität Berlin>
-
-    \;
-
-    <cv-subsection|Doctoral students><timeline|2018\U><name|Mattia Turra>
-    (Universität Bonn)
-
-    <timeline|2018\U2022><name|Lucio Galeati> (Universität Bonn) \U
-    <comment|Now postdoc in at EPFL Losanne in the group of Maria Colombo>
-
-    <timeline|2016\U2021><name|Nikolay Barashkov> (Universität Bonn) \U \PA
-    variational approach to Gibbs measures on function spaces\Q
-    \U<comment|Now postdoc in Helsinki with Antti Kupiainen>
-
-    <timeline|2015\U2020><name|Immanuel Zachhuber> (Universität Bonn) \U
-    \PHyperbolic and dispersive singular stochastic PDEs\Q \U <comment|Now
-    postdoc in Berlin with Nicolas Perkowski>
-
-    <timeline|2014-2018><name|Marco Furlan><nbsp>(Université Paris\UDauphine)
-    \U \PControlled structures for partial differential equations\Q \U
-    <comment|Now works in the finance sector>
-
-    <timeline|2011\U2014><name|Remi Catellier> (Université Paris\UDauphine)
-    \U \PPerturbations irrégulières et systèmes différentiels rugueux\Q
-    (Irregular perturbations and rough differential systems) \U <comment|Now
-    Assistant Professor (Maître de Conferences) at Université de Nice in
-    France>
-
-    <timeline|2010\U2013><name|Khalil Chouk><nbsp>(Université
-    Paris\UDauphine) \U \PTrois chemins controlées\Q (Three controlled paths)
-    \U <comment|Now works in the finance sector>
 
     <\cv-section>
       Grants
@@ -346,6 +250,7 @@
 
 <\initial>
   <\collection>
+    <associate|font-base-size|12>
     <associate|page-medium|papyrus>
     <associate|page-screen-margin|true>
     <associate|preamble|false>
@@ -361,8 +266,8 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Massimiliano
-      Gubinelli> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|CV>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
     </associate>
   </collection>
