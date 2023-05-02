@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Tue May \ 2 22:18:40 2023 UTC>
+
   <notes-entry|teaching.tm|Teaching|Things I have taught.|Sun Apr 30 16:57:37
   2023 UTC>
 
@@ -31,9 +34,6 @@
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
   writing.|Tue Apr 25 22:00:19 2023 UTC>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Sun Apr 23 20:57:12 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
   mathematicians.|Sat Apr 22 21:39:59 2023 UTC>
