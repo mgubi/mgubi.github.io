@@ -93,6 +93,10 @@
   <hlink|Matthew Butterick's Practical Typography|https://practicaltypography.com>
 
   <hlink|Nicolas P. Rougier's blog|https://www.labri.fr/perso/nrougier/resume.html>
+
+  <hlink|Build your own Lisp|https://buildyourownlisp.com/contents> /
+  <hlink|Daniel Holden's website|https://theorangeduck.com/page/all> /
+  <hlink|Peter Norvig's website|https://norvig.com>
 </body>
 
 <\initial>
