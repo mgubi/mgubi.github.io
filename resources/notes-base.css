@@ -93,27 +93,30 @@
     --main-family: 'Source Serif Pro', serif;
     --title-family: 'Source Sans Pro', sans-serif;
     --tt-family: 'Source Code Pro', monospace;
+    --color-title: rgb(154, 39, 39);
 }
 
 html {
-    background-color: rgb(78, 111, 121);
+    yy-background-color: rgb(79, 98, 105);
+    background-color: rgb(197, 203, 205);
+    xx-background-color: rgb(232, 231, 219);
     font-size: 18px;
 }
 
 body {
     background-color: #fffeee;
-    color: rgb(61, 66, 65);
+    color: rgb(41, 34, 34);
     font-family: var(--main-family);
     text-align: left;
     line-height: 1.4;
     font-size: 0.95rem;
     border: 0px;
-    padding: 4em;
-    padding-left: 7em;
-    padding-right: 7em;
+    padding: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
     margin: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0em;
+    margin-top: 0em;
     width: 650px; 
 }
 
@@ -141,12 +144,13 @@ h1 {
     font-family: var(--title-family);
     font-weight: bold;
     font-size: 1.6rem;
-    margin-top: 3em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
 h2 {
+    color: var(--color-title);
     font-family: var(--title-family);
     font-weight: bold;
     font-size: 1.2rem;
@@ -155,6 +159,7 @@ h2 {
 }
 
 h3 {
+    color: var(--color-title);
     font-family: var(--title-family);
     font-weight: bold;
     font-size: 1rem;
@@ -163,6 +168,7 @@ h3 {
 }
 
 h4, h5, h6 {
+    color: var(--color-title);
     font-family: var(--title-family);
     font-weight: bold;
     font-size: 1rem;
@@ -209,12 +215,12 @@ td {
 }
 
 a:link, a:visited {
-    color: #3f5b52;
+    color: #5b7077;
     text-decoration: none;
 }
 
 a:active, a:focus, a:hover {
-    color: #567b70;
+    color: #bb0000;
     text-decoration: underline;
 }
 
@@ -235,9 +241,9 @@ a:active, a:focus, a:hover {
 }
 
 .notes-abstract {
-    font-size: 80%;
+    font-size: 90%;
     font-style: italic;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 
@@ -758,6 +764,7 @@ code {
 }
 
 .tmweb-cv-section p {
+    color: var(--color-title);
     font-family: var(--title-family);
     font-size: 1.1rem;
     font-weight: 600;
@@ -778,7 +785,7 @@ code {
     margin-inline-start: -95px;
     width: 80px;
     height: 1px;
-    background-color: #212529;
+    background-color: var(--color-title);
     background-position: 0 100%;
     }
     
