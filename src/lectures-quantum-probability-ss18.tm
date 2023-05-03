@@ -1,6 +1,6 @@
 <TeXmacs|2.1.1>
 
-<style|notes>
+<style|<tuple|notes|compact-list>>
 
 <\body>
   <\hide-preamble>
@@ -15,13 +15,7 @@
   quantum stochastic calculus, seen as non-commutative generalisation of
   probability theory. Course delivered in Bonn in Summer Semester 2018.>
 
-  \;
-
-  <section*|V5F3 - Advanced Topics in Stochastic Analysis>
-
-  <chapter*|Quantum probability and quantum stochastic calculus>
-
-  <subsection*|SS 2018<nbsp>>
+  <subsection*|V5F3 - Advanced Topics in Stochastic Analysis \U SS 2018>
 
   <with|font-series|bold|Schedule.><nbsp>Tuesday 16-18, SemR 1.007 and
   Thursday 10-12, Zeichensaal.<nbsp>
@@ -37,14 +31,10 @@
   algebra of continuous/measurable functions on a probability space with a
   C*/von Neumann algebra endowed with a suitable positive linear functional.
 
-  <nbsp>
-
   Basic understanding of functional analysis and probability theory is
   required. We will follow mainly the lecture notes of Meyer and Biane which
   are meant to be understandable by probabilist with no specific training in
   functional analysis.
-
-  <nbsp>
 
   For an overview of the main ideas in quantum probability refer to the
   introductory exposition of Streater:
@@ -195,32 +185,46 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-12|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-13|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-14|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-15|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-16|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-17|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|?|?|template.tm>>
-    <associate|auto-5|<tuple|?|?|template.tm>>
-    <associate|auto-6|<tuple|?|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|?|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Quantum
+      probability and quantum stochastic calculus>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|V5F3 - Advanced Topics in Stochastic
+      Analysis \U SS 2018 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Topics <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Basic literature
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|Additional literature
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|Notes <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|Journal
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
     </associate>
   </collection>
 </auxiliary>

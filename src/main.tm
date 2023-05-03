@@ -14,12 +14,12 @@
 
   I'm a mathematician, currently Wallis professor of mathematics at the
   University of Oxford. Previously I held positions in Bonn, Paris and Pisa.
-  I work in the field of stochastic analysis: my interests lie at the
+  I work in the field of stochastic analysis. My interests lie at the
   intersection of analysis, probability and mathematical physics. I like to
   think about the random functions which appear in many physical theories,
   including quantum mechanics and quantum field theory. I have a PhD in
   theoretical physics and at some point I worked in an experimental
-  laboratory. I run.\ 
+  laboratory. I run. \ 
 
   <vspace|1em>
 
@@ -36,7 +36,8 @@
 
   <\small>
     a <hlink|list|./list-articles.tm> of all the articles & a
-    <hlink|template|template.tm> for new pages
+    <hlink|template|template.tm> for new pages \<cdot\> this website had been
+    created with <hlink|<TeXmacs>|http://www.texmacs.org>
   </small>
 
   <vspace|1em>

@@ -1,6 +1,6 @@
 <TeXmacs|2.1.1>
 
-<style|notes>
+<style|<tuple|notes|compact-list>>
 
 <\body>
   <\hide-preamble>
@@ -11,18 +11,14 @@
 
   <chapter*|Stochastic Analysis>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
+  <notes-abstract|A course developing applications<nbsp>of stochastic
+  calculus to the study of continuous time stochastic processes. Course
+  delivered in Bonn in the Summer Semester 2017.>
 
-  \;
+  <subsection*|V4F1 - Summer semester 2017>
 
-  <subsection*|V4F1 - Summer semester 2017<nbsp>>
-
-  <nbsp>
-
-  Thursday 16.15-18.00 and Thursday 12.15-14.00, Kleiner Hï¿½rsaal, Wegelerstr.
-  10<nbsp>
+  Thursday 16.15-18.00 and Thursday 12.15-14.00, Kleiner Hï¿½rsaal,
+  Wegelerstr. 10<nbsp>
 
   <with|font-series|bold|Exercise sheets>: Immanuel Zachhuber
 
@@ -51,25 +47,23 @@
   for material not covered by Prof. Eberle's lecture notes will be posted
   here:
 
-  <\itemize>
-    <item>Note 1 : Stochastic differential equations :
-    existence,<nbsp>uniqueness and martingale problems.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>)
-    [version 1.1, posted<nbsp>24/5/2016]
+  <item>Note 1 : Stochastic differential equations :
+  existence,<nbsp>uniqueness and martingale problems.
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>) [version
+  1.1, posted<nbsp>24/5/2016]
 
-    <item>Note 2 : Girsanov transform, Doob's h-transform.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
-    1.1, posted 24/5/2016]
+  <item>Note 2 : Girsanov transform, Doob's h-transform.
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
+  1.1, posted 24/5/2016]
 
-    <item>Note 3 : Brownian martingale representation theorem, Entropy and
-    Girsanov transform, Bouï¿½-Dupuis formula, Large deviations.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>)
-    [version 1.3, posted 16/6/2016]
+  <item>Note 3 : Brownian martingale representation theorem, Entropy and
+  Girsanov transform, Boué-Dupuis formula, Large deviations.
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>) [version
+  1.3, posted 16/6/2016]
 
-    <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito
-    formula. (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>)
-    [version 1.1, posted 29/6/2016]
-  </itemize>
+  <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito formula.
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>) [version
+  1.1, posted 29/6/2016]
 
   <subsection*|Further References>
 
@@ -179,9 +173,9 @@
     <item>Lecture 20/6 : Proof of the MRT. Variational properties of Girsanov
     transform. Relative entropy.
 
-    <item>Lecture 22/6 : Follmer's drift, Bouï¿½-Dupuis theorem.<nbsp>
+    <item>Lecture 22/6 : Follmer's drift, Boué-Dupuis theorem.<nbsp>
 
-    <item>Lecture 27/6 : Applications of<nbsp>Bouï¿½-Dupuis : concentration of
+    <item>Lecture 27/6 : Applications of<nbsp>Boué-Dupuis : concentration of
     measure, large deviations.
 
     <item>Lecture 29/6 : (done the 27/6)
@@ -213,25 +207,24 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|<rigid|\<ast\>>>>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|tochastic
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Stochastic
       Analysis> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
       <with|par-left|<quote|1tab>|V4F1 - Summer semester 2017
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 

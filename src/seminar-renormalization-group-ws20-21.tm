@@ -9,15 +9,14 @@
 
   <notes-header>
 
-  <chapter*|Nonperturbative Renormalization>
+  <chapter*|Seminar: Nonperturbative Renormalization>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
+  <notes-abstract|An introduction to the continuous renormalization group via
+  a Grassmann model. Took place in WS 2020\U2021.>
 
   <subsection*|S4F3<nbsp>- Graduate Seminar on Applied Probability \U WS2021>
 
-  <em|Massimiliano Gubinelli<nbsp>>
+  <em|Massimiliano Gubinelli>
 
   <strong|Preliminary meeting: January 28nd, 16. Via Zoom.>
 
@@ -131,8 +130,8 @@
     Nuclear Physics B 231, no. 2 (January 1984): 269\U95,
     <hlink|https://doi.org/10.1016/0550-3213(84)90287-6|https://doi.org/10.1016/0550-3213(84)90287-6>.
 
-    <item>David C. Brydges, Roberto Fern�ndez, Functional Integrals and Their
-    Applications, 1993.
+    <item>David C. Brydges, Roberto Fern�ndez, Functional Integrals and
+    Their Applications, 1993.
   </itemize>
 </body>
 
@@ -145,22 +144,42 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Nonperturbative
+      Renormalization> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|S4F3 <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>-
+      Graduate Seminar on Applied Probability \U WS2021
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Material
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Topics of the various talks and speakers
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>| <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|Complementary literature
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
     </associate>
   </collection>
 </auxiliary>

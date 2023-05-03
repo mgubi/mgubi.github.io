@@ -1,6 +1,6 @@
 <TeXmacs|2.1.1>
 
-<style|notes>
+<style|<tuple|notes|compact-list>>
 
 <\body>
   <\hide-preamble>
@@ -12,16 +12,10 @@
   <chapter*|Stochastic Analysis>
 
   <notes-abstract|A course developing applications<nbsp>of stochastic
-  calculus to the study of continuous time stochastic processe. Course
+  calculus to the study of continuous time stochastic processes. Course
   delivered in Bonn in the Summer Semester 2022.>
 
-  \;
-
   <section*|V4F1 - Summer semester 2022>
-
-  \;
-
-  V4F1 -<nbsp>SS22
 
   <strong|Schedule:> Tuesday 16.00-18.00 (c.t.) and Thursday 12.00-14.00
   (c.t.), Kleiner H�rsaal, Wegelerstr. 10. <nbsp>(In presence)
@@ -204,8 +198,8 @@
     theorem.<nbsp>the Markovian proof.
 
     <item>Lecture 19 (21/6)<nbsp>Entropy on the Wiener
-    space,<nbsp>Bou�-Dupuis formula.<nbsp>Application to<nbsp>Gaussian tails
-    of Lipschitz functionals.<nbsp>Proof of<nbsp>Bou�-Dupuis formula.
+    space,<nbsp>Bou�-Dupuis formula.<nbsp>Application to<nbsp>Gaussian
+    tails of Lipschitz functionals.<nbsp>Proof of<nbsp>Bou�-Dupuis formula.
 
     <item>23/6 and 28/6 :<nbsp>lectures canceled
 
@@ -230,24 +224,52 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Stochastic
+      Analysis> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|V4F1
+      - Summer semester 2022> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|Topics of course
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Prerequisites
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|Lecture Notes
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|Further References
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|Problem sheets
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
+
+      <with|par-left|<quote|1tab>|Course Journal
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
     </associate>
   </collection>
 </auxiliary>

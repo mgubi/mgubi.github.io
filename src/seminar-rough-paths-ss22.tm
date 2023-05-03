@@ -14,11 +14,7 @@
   <notes-abstract|An introductory master seminar on Rough path theory, which
   has taken place in Bonn in the Summer Semester 2022.>
 
-  \;
-
   <subsection*|S4F2 - Graduate Seminar on Stochastic Analysis \U SS22>
-
-  <chapter*|Rough Paths>
 
   <em|Massimiliano Gubinelli, Francesco de Vecchi>
 
@@ -101,14 +97,14 @@
     <item>Friz, Peter K., and Martin Hairer.<nbsp><em|A Course on Rough
     Paths: With an Introduction to Regularity Structures>. Springer, 2014.
 
-    <item>Deya, Aur�lien, Massimiliano Gubinelli, Martina Hofmanov�, and Samy
-    Tindel. \POne-Dimensional Reflected Rough Differential Equations.\Q
+    <item>Deya, Aur�lien, Massimiliano Gubinelli, Martina Hofmanov�, and
+    Samy Tindel. \POne-Dimensional Reflected Rough Differential Equations.\Q
     Stochastic Processes and Their Applications 129, no. 9 (September 1,
     2019): 3261\U81.<nbsp><hlink|https://doi.org/10.1016/j.spa.2018.09.007|https://doi.org/10.1016/j.spa.2018.09.007>.
 
     <item>Bailleul, Ismael, and Massimiliano Gubinelli. \PUnbounded Rough
-    Drivers.\Q Annales de La Facult� Des Sciences de Toulouse Math�matiques
-    26, no. 4 (2017): 795\U830.<nbsp><hlink|https://doi.org/10.5802/afst.1553|https://doi.org/10.5802/afst.1553>.
+    Drivers.\Q Annales de La Facult� Des Sciences de Toulouse
+    Math�matiques 26, no. 4 (2017): 795\U830.<nbsp><hlink|https://doi.org/10.5802/afst.1553|https://doi.org/10.5802/afst.1553>.
 
     <item>Gubinelli, Massimiliano. \PRamification of Rough Paths.\Q Journal
     of Differential Equations 248, no. 4 (2010):
@@ -148,20 +144,36 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|?|?|template.tm>>
-    <associate|auto-5|<tuple|13|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|13|?>>
+    <associate|auto-5|<tuple|13|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Seminar
+      on rough paths> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|S4F2 - Graduate Seminar on Stochastic
+      Analysis \U SS22 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Rough
+      Paths> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|1fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Calendar>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Reference
+      Material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

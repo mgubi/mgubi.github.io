@@ -42,7 +42,7 @@
     <item>Course: Stochastic quantization of Euclidean quantum
     field<nbsp>theories (WS2021) (<hlink|link|lectures-sq-ws20-21.tm>)
 
-    <item>Course: Einfï¿½rung in die Wahrscheinlichkeitstheorie
+    <item>Course: Einfürung in die Wahrscheinlichkeitstheorie
     (WS2021)<nbsp>(<hlink|link|lectures-intro-probability-ws20-21.tm>)
 
     <item>Course:<nbsp>Functional Integration and Quantum Mechanics (SS20)
@@ -88,8 +88,6 @@
     <item>Course:<nbsp>Rough paths and Controlled paths
     (WS15/16)<nbsp>(<hlink|link|lectures-rough-paths-ws15-16.tm>)
   </itemize>
-
-  <next-line>
 </body>
 
 <\initial>

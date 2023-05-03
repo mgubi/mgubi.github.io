@@ -1,6 +1,6 @@
 <TeXmacs|2.1.1>
 
-<style|notes>
+<style|<tuple|notes|compact-list>>
 
 <\body>
   <\hide-preamble>
@@ -11,16 +11,14 @@
 
   <chapter*|Stochastic Analysis>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
-
-  <section*|Stochastic Analysis SS2020>
+  <notes-abstract|A course developing applications<nbsp>of stochastic
+  calculus to the study of continuous time stochastic processes. Course
+  delivered in Bonn in the Summer Semester 2020.>
 
   <subsection*|V4F1 - Summer semester 2020>
 
   <strong|Schedule:> Tuesday 12.15-14.00 and Thursday 12.15-14.00, (Kleiner
-  Hï¿½rsaal, Wegelerstr. 10) <nbsp>Online until further notice
+  Hörsaal, Wegelerstr. 10) <nbsp>Online until further notice
 
   <strong|Tutorial classes:><nbsp>Daria Frolova (Wednesday<nbsp>16-18, SemR
   1.007),<nbsp>Min Liu<nbsp>(Monday 16-18, SemR 1.007)<nbsp>Online until
@@ -134,7 +132,7 @@
     [<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-2.pdf>]
 
     <item>Lecture 3 (28/4) A theorem of Cherny<nbsp>about Uniqueness of the
-    joint law (X,B) for a weak solution and the ``dual'' Yadama-Watanabe
+    joint law (X,B) for a weak solution and the \Pdual\Q Yadama-Watanabe
     theorem, proof (to be finished) [<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-3.pdf>]
 
     <item>Lecure 4 (30/4) End of the proof of Cherny's theorem. Uniqueness in
@@ -169,12 +167,12 @@
     domain<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-12.pdf>]
 
     <item>Lecture 13<nbsp>(2/6) (not recorded)<nbsp>Novikov condition, change
-    of drift in SDEs<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-13.pdf>]<nbsp>
+    of drift in SDEs<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-13.pdf>]
 
     <item>Lecture 14<nbsp>(4/6)<nbsp>Uniqueness in law via Girsanov's
     theorem, path integral formula, sampling of diffusions via the path
     integral, representation of the semigroup of a reversible diffusion with
-    additive noise<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-14.pdf>]<nbsp>
+    additive noise<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-14.pdf>]
 
     <item>Lecture 15 (9/6) Ito-Tanaka formula and<nbsp>local
     times.<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-15.pdf>]
@@ -191,12 +189,12 @@
     theorem.<nbsp>the Markovian proof.<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-18.pdf>]
 
     <item>Lecture 19 (25/6)<nbsp>Entropy on the Wiener
-    space,<nbsp>Bouï¿½-Dupuis formula.<nbsp>[<hlink|scrip../store/iamli/stochastic-analysis-ss20/sa-ss20-script-19.pdf>]
+    space,<nbsp>Boué\UDupuis formula.<nbsp>[<hlink|script|../store/iamli/stochastic-analysis-ss20/sa-ss20-script-19.pdf>]
 
-    <item>Lecture 20 (30/6) Proof of<nbsp>Bouï¿½-Dupuis formula. Application
+    <item>Lecture 20 (30/6) Proof of<nbsp>Boué\UDupuis formula. Application
     to<nbsp>Gaussian tails of Lipschitz functionals.<nbsp><nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-20.pdf>]
 
-    <item>Lecture 21<nbsp>(2/7) Large deviations / Laplace principle for
+    <item>Lecture 21<nbsp>(2/7) Large deviations & Laplace principle for
     families of Brownian functionals.<nbsp>[<hlink|script|../store/iam/stochastic-analysis-ss20/sa-ss20-script-21.pdf>]
 
     <item>Lecture 22<nbsp>(7/7) Complete the proof of the Laplace principle.
@@ -227,12 +225,11 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
@@ -243,38 +240,34 @@
       Analysis> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Stochastic
-      Analysis SS2020> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.5fn>
-
       <with|par-left|<quote|1tab>|V4F1 - Summer semester 2020
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3>>
+      <no-break><pageref|auto-2>>
 
       <with|par-left|<quote|1tab>|Topics of course
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4>>
+      <no-break><pageref|auto-3>>
 
       <with|par-left|<quote|1tab>|Prerequisites
       <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5>>
+      <no-break><pageref|auto-4>>
 
       <with|par-left|<quote|1tab>|Lecture Notes
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6>>
+      <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|1tab>|Further References
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
+      <no-break><pageref|auto-6>>
 
       <with|par-left|<quote|1tab>|Problem sheets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
+      <no-break><pageref|auto-7>>
 
       <with|par-left|<quote|1tab>|Course Journal
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9>>
+      <no-break><pageref|auto-8>>
     </associate>
   </collection>
 </auxiliary>

@@ -11,13 +11,11 @@
 
   <chapter*|Stochastic Processes>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
+  <notes-abstract|An introduction to various classes of stochastic processes,
+  namely families of random variables indexed by a discrete or continuous
+  parameter (time or space). The course took place in Boon in SS 2019.>
 
-  <chapter*|V3F1<nbsp>Stochastic Processes<nbsp>>
-
-  <subsection*|SS 2019<nbsp>>
+  <with|font-series|bold|V3F1<nbsp>Stochastic Processes<nbsp>SS 2019>
 
   Tuesday 8.30-10.00<nbsp>and Friday<nbsp>8.30-10.00, Kleine H�rsaal,
   Wegelerstr. 10.<nbsp>
@@ -139,8 +137,6 @@
     Brownian motion and some of its properties (by F. de Vecchi, v1.0,
     11/7/19)
   </itemize>
-
-  <subsection*|<nbsp>>
 
   <subsection*|Further References>
 
@@ -274,8 +270,8 @@
 
     <item>Lecture 5/7:<nbsp> (by F. de Vecchi)<nbsp>L�vy construction of
     Brownian motion (second part). Non-differentiability of Brownian motion.
-    H�lder continuity of Brownian motion. Brownian motion as limit of random
-    walks: finite dimensional marginals convergence.
+    H�lder continuity of Brownian motion. Brownian motion as limit of
+    random walks: finite dimensional marginals convergence.
 
     <item>Lecture 9/7: pre-exam
 
@@ -301,12 +297,12 @@
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-6|<tuple|3|?>>
     <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-8|<tuple|3|?>>
+    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
@@ -314,9 +310,56 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Stochastic
+      Processes> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
+
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|V3F1
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>Stochastic
+      Processes <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|SS 2019
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Tutorials
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|Exam <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|Description
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|Prerequisites
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
+
+      <with|par-left|<quote|1tab>|Lecture Notes
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
+
+      <with|par-left|<quote|1tab>| <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|1tab>|Further References
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1tab>|Problem sheets
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|Course Journal
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12>>
     </associate>
   </collection>
 </auxiliary>

@@ -105,7 +105,7 @@
     Planck's constant, quantum particle<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-8.pdf>]
 
     <item>Lecture 9 (19/5) (not recorded) Heisenberg indetermination
-    principle, Schrï¿½dinger-Robertson inequality, canonical commutation
+    principle, Schrödinger-Robertson inequality, canonical commutation
     relations (CCR),<nbsp>impossibility to realise the CCR with bounded
     operators,<nbsp>probabilistic phenomena in non-commutative algebras,
     construction of discrete systems of<nbsp><nbsp>complementary observables
@@ -126,11 +126,11 @@
 
     <item>Lecture 13<nbsp>(2/6) Weyl algebra, Heisenberg<nbsp>group and von
     Neumann theorem on the uniqueness of irreducible<nbsp>regular
-    representations of Weyl algebra in finite dimensions, Schrï¿½dinger
+    representations of Weyl algebra in finite dimensions, Schrödinger
     representation, irreducibility<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-13.pdf>]
 
     <item>Lecture 14<nbsp>(3/6) Determination of the vacuum in the
-    Schrï¿½dinger representation. Gaussian representation of Weyl relations.
+    Schrödinger representation. Gaussian representation of Weyl relations.
     Reducible representations.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-14.pdf>]
 
     <item>Lecture 15<nbsp>(9/6) An example of reducible representation,
@@ -186,22 +186,46 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|?|?|template.tm>>
-    <associate|auto-5|<tuple|?|?|template.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|?|?>>
+    <associate|auto-5|<tuple|?|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Functional
+      Integration and Quantum Mechanics> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|V5F5 <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>-
+      Summer semester 2020 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Topics of course
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Prerequisites
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|References
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|Lecture Notes
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|Course Journal
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
     </associate>
   </collection>
 </auxiliary>
