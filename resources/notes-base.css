@@ -98,13 +98,13 @@
 
 html {
     yy-background-color: rgb(79, 98, 105);
-    background-color: rgb(197, 203, 205);
+    background-color: #f9f9f9;
     xx-background-color: rgb(232, 231, 219);
     font-size: 18px;
 }
 
 body {
-    background-color: #fffeee;
+    background-color:  #f9f9f9;
     color: rgb(41, 34, 34);
     font-family: var(--main-family);
     text-align: left;
@@ -126,7 +126,7 @@ body {
 }
 
 .mg-title {
-    padding-top: 8em;
+    padding-top: 2em;
     letter-spacing: -0.03em;
 font-family: var(--title-family);
 }

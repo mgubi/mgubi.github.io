@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|presentations.tm|Presentations|Things I have said in various
+  places.|Tue May \ 2 22:26:37 2023 UTC>
+
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Tue May \ 2 22:18:40 2023 UTC>
 
@@ -21,9 +24,6 @@
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated October 2020.|Sun Apr 30 16:57:37 2023
   UTC>
-
-  <notes-entry|presentations.tm|Presentations|Things I have saied in various
-  places.|Sun Apr 30 16:57:37 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sun Apr 30 16:57:37 2023 UTC>
