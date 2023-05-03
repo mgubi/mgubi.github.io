@@ -18,7 +18,7 @@
   <chapter*|S2F2 - Hauptseminar Stochastische Prozesse und Stochastische
   Analysis>
 
-  <chapter*|Groÿen Abweichungen /<nbsp>Large Deviations>
+  <chapter*|Groï¿½en Abweichungen /<nbsp>Large Deviations>
 
   <subsection*|<strong|WS 2019/2020>>
 
@@ -26,7 +26,7 @@
 
   <strong|Zeit und Ort:<nbsp>Mittwoch 10-12<nbsp>SR 0.008>
 
-  Die Theorie der groÿen Abweichungen behandelt in systematischen Weise die
+  Die Theorie der groï¿½en Abweichungen behandelt in systematischen Weise die
   Berechnung von Wahrscheinlichkeiten \Pexponentiell unwahrscheinlicher\Q
   Ereignisse.<nbsp>Diese Theorie ist zu einem der wichtigsten Instrumente der
   Wahrscheinlichkeitstheorie geworden und erlaubt die Behandlung zahlreicher
@@ -35,7 +35,7 @@
   kennenlernen.<nbsp>Grundlage bildet das Buch ``A Weak Convergence Approach
   to the Theory of Large Deviations", von Dupuis, Paul, and Richard S. Ellis.
 
-  <strong|Vorkenntnisse.><nbsp>Mindestens Einführung in die W-Theorie, ein
+  <strong|Vorkenntnisse.><nbsp>Mindestens Einfï¿½hrung in die W-Theorie, ein
   bisschen auch noch Stochastische Prozesse
 
   The theory of large deviations systematically deals with the calculation of
@@ -54,7 +54,7 @@
     Wiley Series in Probability and Statistics: Probability and Statistics.
     John Wiley & Sons, Inc., New York.<nbsp><hlink|https://doi.org/10.1002/9781118165904.|https://doi.org/10.1002/9781118165904.>
 
-    <item>Presentation of the seminar<nbsp>(<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-large-deviations-ws1920/presentation.pdf>)
+    <item>Presentation of the seminar<nbsp>(<hlink|slides|../store/iam/seminar-large-deviations-ws1920/presentation.pdf>)
   </itemize>
 
   <subsection*|Tentative planning>
@@ -81,7 +81,7 @@
 
     <item>(11/12) Upper bound and rate function (3.3) [Luigi Borasi]
 
-    <item>(18/12) Statement of the theorem and proof + Cramérs theorem +
+    <item>(18/12) Statement of the theorem and proof + Cramï¿½rs theorem +
     comments (3.4-3.5-3.6)<nbsp>
 
     <item>(8/1) Random walk model, rep formula + compactness (5.2-5.3)

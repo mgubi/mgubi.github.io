@@ -1,0 +1,155 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,amsmath}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\assign}{:=}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 7}}}
+
+\ }}
+
+
+{\scriptsize{Version 2, 2020.06.10. Tutorial classes: Mon June 15th 16--18 \
+(Zoom) Min Liu \textbar  Wed June 17th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than \tmtextbf{8pm Friday June 12th}. Use this
+sheet for your solutions and write them under the corresponding exercise. Fill
+out your names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3+3+3+4] Let $X$ a solution of the SDE in $\mathbb{R}^n$
+  \begin{equation}
+    \mathd X_t = b (X_t) \mathd t + \mathd B_t, \label{eq:sde}
+  \end{equation}
+  with a vectorfield $b : \mathbb{R}^n \rightarrow \mathbb{R}^n$ measurable
+  and with linear growth.
+  \begin{enumeratealpha}
+    \item Prove that for all $T > 0$, almost surely
+    \[ A (T) = \int_0^T | b (X_s) |^2 \mathd s < \infty, \]
+    and therefore the process is unique in law.
+    
+    \item Find a (deterministic) increasing function $f : \mathbb{R}_+
+    \rightarrow \mathbb{R}_+$ such that, almost surely
+    \[ \sup_{T \geqslant 0} \frac{A (T)}{f (T)} < \infty . \]
+    [Hint: find a constant $C$ such that $\sup_{T \geqslant 0} \frac{A (T)}{f
+    (T)} \leqslant \sum_{n \geqslant 0} \frac{C A (n)}{f (n)} < \infty$ a.s.]
+    
+    \item Use Girsanov's transform to prove that the process is Markov when
+    $b$ is a bounded vectorfield.
+    
+    \item (Bonus) Try to extend the proof of the Markov property for $b$ of
+    linear growth.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 5] Let $\mathcal{C}^n = C (\mathbb{R}_+, \mathbb{R}^n)$ with the Borel
+  $\sigma$-field and $\mathbb{W}_x$ the law of the Brownian motion starting at
+  $x$. Let $X$ the unique solution of the SDE~{\eqref{eq:sde}} with $b = -
+  \nabla V$ and $V$ a positive $C^2$ function such that
+  \[ | \nabla V (x) |^2 - \Delta V (x) \geqslant - L \qquad x \in \mathbb{R}^n
+     . \]
+  Use the path-integral formula
+  \[ \mathbb{E}_x (f (X_T)) = \int_{\mathcal{C}^n} f (\omega_T) \exp \left( V
+     (\omega_0) - V (\omega_T) - \frac{1}{2} \int_0^T (| \nabla V (\omega_s)
+     |^2 - \Delta V (\omega_s)) \mathd s \right) \mathbb{W}_x (\mathd \omega)
+  \]
+  to show that for any two bounded functions $f, g$ and under appropriate
+  conditions on $V$:
+  \[ \int (P_T f) (x) g (x) e^{- 2 V (x)} \mathd x = \int f (x) (P_T g) (x)
+     e^{- 2 V (x)} \mathd x \]
+  which shows that $P_T$ is symmetric wrt. the measure $e^{- 2 V (x)} \mathd
+  x$ and taking $g = 1$ show that $e^{- 2 V (x)} \mathd x$ properly normalized
+  is an invariant measure for the SDE
+  \[ \mathd X_t = - \nabla V (X_t) \mathd t + \mathd B_t, \]
+  meaning that if $X_0$ is taken with probability distribution $\propto e^{- 2
+  V (x)} \mathd x$ then
+  \[ \mathbb{E} [f (X_0)] =\mathbb{E} [f (X_T)], \]
+  for all $T \geqslant 0$.
+  
+  [Hint: let $\mathbb{W}_{x, y}$ the conditional law of the Brownian motion
+  $\omega$ to have $\omega_T = y$, i.e. the Brownian bridge. Prove that the
+  under $\mathbb{W}_{x, y}$ the process $\tilde{\omega}_t = \omega_{T - t}$
+  has law $\mathbb{W}_{y, x}$ and use the path integral]
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3+3] Prove a Fubini theorem for stochastic integrals. Let $(\Lambda,
+  \mathcal{A})$ be a measure space and $(\Omega, \mathcal{F},
+  \mathcal{F}_{\bullet}, \mathbb{P})$ a filtered probability space.
+  \begin{enumeratealpha}
+    \item Let $(X_n)_n$ a sequence of functions $X_n : \Omega \times \Lambda
+    \rightarrow \mathbb{R}$ which are $\mathcal{F} \otimes \mathcal{A}$
+    measurable (product $\sigma$-field) and such that $(X_n (\cdot,
+    \lambda))_n$ converges in probability for any fixed $\lambda \in \Lambda$.
+    Prove that there exists an $\mathcal{F} \otimes \mathcal{A}$ measurable
+    function $X : \Omega \times \Lambda \rightarrow \mathbb{R}$ for which $X_n
+    (\cdot, \lambda) \xrightarrow[\mathbb{P}]{} X (\cdot, \lambda)$ for any
+    $\lambda \in \Lambda$. [Hint: here the difficulty is the measurability of
+    the limit $X$, consider the sequence $n_k (\lambda)$ defined by $n_0
+    (\lambda) = 1$ and
+    \[ n_{k + 1} (\lambda) = \inf \{ m > n_k (\lambda) : \sup_{p, q \geqslant
+       m} \mathbb{P} [| X_p (\cdot, \lambda) - X_q (\cdot, \lambda) | > 2^{-
+       k}] \leqslant 2^{- k} \} \]
+    and prove that $\lim_k X_{n_k (\lambda)} (\cdot, \lambda)$ exists a.s. and
+    conclude]
+    
+    \item Let $H : \Lambda \times \mathbb{R}_{\geqslant 0} \times \Omega
+    \rightarrow R$ be a bounded function which is measurable w.r.t.
+    $\mathcal{A} \otimes \mathcal{P}$ where $\mathcal{P}$ is the predictable
+    $\sigma$-field on $\mathbb{R}_{\geqslant 0} \times \Omega$. \ Let $M$ be a
+    continuous martingale on $(\Omega, \mathcal{F}, \mathcal{F}_{\bullet},
+    \mathbb{P})$. Prove that there exists a function $J : \Lambda \times
+    \Omega \rightarrow \mathbb{R}$ measurable for $\mathcal{A} \otimes
+    \mathcal{F}_T$ which is a version of the stochastic process $\lambda
+    \mapsto J (\lambda) \assign \int_0^T H (\lambda, s) \mathd M_s$ and for
+    which it holds
+    \[ \int_{\Lambda} J (\lambda) m (\mathd \lambda) = \int_0^T \left[
+       \int_{\Lambda} H (\lambda, s, \cdot) m (\mathd \lambda)  \right] \mathd
+       M_s, \qquad a.s. \]
+    for any bounded measure $m$ on $(\Lambda, \mathcal{A})$. Hint: prove that
+    \[ \mathbb{E} \left[ \left( \int_0^T \left[ \int_{\Lambda} H (\lambda, s,
+       \cdot) m (\mathd \lambda)  \right] \mathd M_s - \int_{\Lambda} J
+       (\lambda) m (\mathd \lambda) \right)^2 \right] = 0. \]
+    
+  \end{enumeratealpha}
+  \tmtextit{[Taken from Revuz-Yor, Chap. 4]}
+\end{exercise}
+
+\hrulefill
+
+\
+
+\end{document}

@@ -74,14 +74,14 @@
 
   <subsection*|Bibliography>
 
-  <strong|[1] > P. H. Damgaard and H. Hüffel, editors. <em|Stochastic
+  <strong|[1] > P. H. Damgaard and H. Hï¿½ffel, editors. <em|Stochastic
   quantization>. World Scientific Publishing Co., Inc., Teaneck, NJ, 1988.
 
   <strong|[2] > James Glimm and Arthur Jaffe. <em|Quantum physics>.
   Springer-Verlag, New York, Second edition, 1987. A functional integral
   point of view.
 
-  <strong|[3] > M. Gubinelli and M. Hofmanová. A PDE construction of the
+  <strong|[3] > M. Gubinelli and M. Hofmanovï¿½. A PDE construction of the
   euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum field theory. <em|ArXiv
   preprint arXiv:1810.01700>, 2018.
 
@@ -92,51 +92,51 @@
   <section*|Extended lecture notes>
 
   <\itemize>
-    <item>First part: from QM to QFT (<hlink|notes|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-notes-1.pdf>)
+    <item>First part: from QM to QFT (<hlink|notes|../store/iam/sq-lectures-milan/sq-notes-1.pdf>)
 
     <item>Second part: stochastic quantization of
-    <math|\<Phi\><rsup|4><rsub|3>> (<hlink|notes|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-notes-2.pdf>)
+    <math|\<Phi\><rsup|4><rsub|3>> (<hlink|notes|../store/iam/sq-lectures-milan/sq-notes-2.pdf>)
   </itemize>
 
   <section*|Journal and scripts of the lectures>
 
   <\itemize>
     <item>Monday <nbsp> 15/2, 10-12 : Lecture 1. Introduction. Quantum
-    Mechanics. GNS representation.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-1.pdf>)
+    Mechanics. GNS representation.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-1.pdf>)
 
     <item>Monday <nbsp> 15/2, 14-16<nbsp>: Lecture 2. Wightman functions.
     Schwinger functions.<nbsp>Gaussian and Markovian RP
-    processes.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-2.pdf>)
+    processes.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-2.pdf>)
 
     <item>Tuesday <nbsp>16/2, 10-12<nbsp>: Lecture 3. OU process,
     reconstruction of QM.<nbsp>Perturbations of RP
-    processes.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-3.pdf>)
+    processes.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-3.pdf>)
 
     <item>Tuesday <nbsp>16/2, 14-16<nbsp>: Lecture 4. RP perturbation of
-    Markov processes. Euclidean QFT. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-4.pdf>)<nbsp>
+    Markov processes. Euclidean QFT. (<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-4.pdf>)<nbsp>
 
     <item>Thursday 18/2, 10-12<nbsp>: Lecture 5. Interactions.
     Problems.<nbsp>Stochastic quantization in finite
-    dimension.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-5.pdf>)<nbsp>
+    dimension.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-5.pdf>)<nbsp>
 
     <item>Thursday 18/2, 14-16<nbsp>: Lecture 6.<nbsp>Langevin dynamics.
-    Estimates. Infinite volume limit.<nbsp><nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-6.pdf>)
+    Estimates. Infinite volume limit.<nbsp><nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-6.pdf>)
 
     <item>Monday <nbsp> 22/2, 10-12 : Lecture 7. Small scale limit.
     Divergences and renormalization. Besov spaces and
     paraproducts.<nbsp>Apriori estimates in two
-    dimensions.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-7.pdf>)
+    dimensions.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-7.pdf>)
 
     <item>Monday <nbsp> 22/2, 14-16<nbsp>: Lecture 8. Tightness in two
     dimensions.<nbsp>Estimates in three dimensions. Paracontrolled
-    expansion.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-8.pdf>)
+    expansion.<nbsp>(<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-8.pdf>)
 
     <item>Thursday 25/2, 10-12<nbsp>: Lecture 9. The second renormalization,
-    commutator lemmas. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-9.pdf>)
+    commutator lemmas. (<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-9.pdf>)
 
     <item>Thursday 25/2, 14-16<nbsp>: Lecture 10. Tightness in three
     dimensions and infinite volume limit.<nbsp>Some properties of
-    the<nbsp>measure.<nbsp> (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/sq-lectures-milan/sq-ws2021-script-10.pdf>)
+    the<nbsp>measure.<nbsp> (<hlink|script|../store/iam/sq-lectures-milan/sq-ws2021-script-10.pdf>)
   </itemize>
 
   <nbsp>

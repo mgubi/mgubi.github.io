@@ -82,24 +82,24 @@
   <subsection*|Notes>
 
   <\itemize>
-    <item>Sheet 1 (week 10/4-14/4) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-1.pdf>)
+    <item>Sheet 1 (week 10/4-14/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-1.pdf>)
 
-    <item>Sheet 2 (week 17/4-19/4) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-2.pdf>)<nbsp>
+    <item>Sheet 2 (week 17/4-19/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-2.pdf>)<nbsp>
 
-    <item>Sheet 3 (week 24/4-26/4) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-3.pdf>)
+    <item>Sheet 3 (week 24/4-26/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-3.pdf>)
 
-    <item>Sheet 4 (week 8/5) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-4.pdf>)
+    <item>Sheet 4 (week 8/5) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-4.pdf>)
 
-    <item>Sheet 5 (week 15/5-17/5) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-5.pdf>)
+    <item>Sheet 5 (week 15/5-17/5) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-5.pdf>)
 
     <item>Sheet 6 (weeks 29/5 and 5/6-7/6)
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-6.pdf>)
+    (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>)
 
-    <item>Sheet 7 (week 12/6-14/6) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-7.pdf>)
+    <item>Sheet 7 (week 12/6-14/6) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-7.pdf>)
 
-    <item>Sheet 8 (week 19/6-21/6) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-8.pdf>)
+    <item>Sheet 8 (week 19/6-21/6) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-8.pdf>)
 
-    <item>Sheet 9 (week 3/7-5/7) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/quantum-probability-ss18/qp-sheet-9.pdf>)
+    <item>Sheet 9 (week 3/7-5/7) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-9.pdf>)
   </itemize>
 
   <subsection*|Journal>
@@ -153,7 +153,7 @@
     lines in Hilbert space.
 
     <item>12/6 - End of the proof of the Stone-von Neumann theorem.
-    Schrödinger model of a Weyl pair. <nbsp>
+    Schrï¿½dinger model of a Weyl pair. <nbsp>
 
     <item>14/6 - Alternative proof of the Stone-von Neumann theorem.
     Reducible actions of a Weyl pair. Some consequences.<nbsp>

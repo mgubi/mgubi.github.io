@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,amsmath}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 6}}}
+
+\ }}
+
+
+{\scriptsize{Version 1, 2020.06.1. Tutorial classes: Mon June 8th 16--18 \
+(Zoom) Min Liu \textbar  Wed June 10th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than \tmtextbf{8pm Friday June 5th}. Use this
+sheet for your solutions and write them under the corresponding exercise. Fill
+out your names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2+2]\tmtextbf{(Brownian motion writes your name)} Prove that a
+  Brownian motion in $\mathbb{R}^2$ will write your name (in cursive script,
+  without dotted 'i's or crossed 't's). Let $B$ be a two dimensional Brownian
+  motion on $[0, 1]$ and observe that $X^{(a, b)}_t = (b - a)^{1 / 2} (B_{a +
+  (b - a) t} - B_a)$ \ for $t \in [0, 1]$ has the same law as $B$. Let $g :
+  [0, 1] \rightarrow \mathbb{R}^2$ a smooth parametrization of your name. Let
+  us agree that the Brownian motion $X^{(a, b)}$ spells your name (to
+  precision $\varepsilon > 0$) if
+  \begin{equation}
+    \sup_{t \in (0, 1)} | X^{(a, b)}_t - g (t) | \leqslant \varepsilon .
+    \label{eq:2}
+  \end{equation}
+  \begin{enumeratealpha}
+    \item For $k \in \mathbb{N}$ let $A_k$ be the event that {\eqref{eq:2}}
+    holds for $a = 2^{- k - 1}$ and $b = 2^{- k}$. Check that the events
+    $(A_k)_{k \in \mathbb{N}}$ are independent and $\mathbb{P} (A_k)
+    =\mathbb{P} (A_0)$ for all $k \geqslant 0$. Conclude that if $\mathbb{P}
+    (A_0) > 0$ then \ infinitely many of the $A_k$s will occur almost surely.
+    \
+    
+    \item Show that
+    \begin{equation}
+      \mathbb{P} [\sup_{t \in (0, 1)} | B_t | \leqslant \varepsilon] > 0.
+      \label{eq:3}
+    \end{equation}
+    \item Using~{\eqref{eq:3}} and Girsanov's transform to show that
+    $\mathbb{P} (A_0) > 0$ (Hint: construct a measure $\mathbb{Q}$ so that
+    $B_t - g (t)$ is a Brownian motion)
+    
+    \item Prove that a similar result holds for $g$ only continuous.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3] Let $(X, \mathbb{P})$ be a solution of the martingale problem with
+  drift $b$ and diffusion $\sigma$. Generalise appropriately the Girsanov
+  transform to construct a measure $\mathbb{Q}$ under which the process $X$
+  solves a martingale problem with a different drift. For simplicity, assume
+  that all the necessary integrability conditions are satisfied. (What takes
+  the place of the Brownian motion?)
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3+3+3] Given smooth, bounded functions $A : \mathbb{R}^d \rightarrow
+  \mathbb{R}^d$, $V : \mathbb{R}^d \rightarrow \mathbb{R}$. Consider the
+  operator $H (A)$ on $L^2 (\mathbb{R}^d)$ given by
+  \[ H (A) = - \frac{1}{2} | \nabla - i A (x) |^2 + V (x) \]
+  We will assume that this operator is self--adjoint (with suitable domain),
+  bounded from below and with discrete spectrum. We will denote $E_0 (A)$ its
+  smaller eigenvalue which we will assume simple (i.e. of multiplicity one).
+  Let $\psi$ the complex valued solution to
+  \[ \partial_t \psi (t, x) = - H (A) \psi (t, x), \qquad \psi_{} (0, x) =
+     \psi_0 (x), \]
+  which we will assume to exist, to be once differentiable in $t$ and twice in
+  $x$ and be bounded with bounded derivatives.
+  \begin{enumeratealpha}
+    \item Find a suitable functions $B, C : \mathbb{R}^d \rightarrow
+    \mathbb{C}$ with which we can give the following Feynman--Kac
+    representation for $\psi$:
+    \[ \psi (t, x) =\mathbb{E}_x \left\{ \psi_0 (X_t) \exp \left[ \int_0^t B
+       (X_s) \mathd X_s + \int_0^t C (X_s) \mathd s \right] \right\} \]
+    where under $\mathbb{E}_x$ the process $X$ is a $d$-dimensional Brownian
+    motion starting at $x \in \mathbb{R}^d$.
+    
+    \item Prove that the lowest eigenvector of $H_A$ is strictly positive
+    everywhere.
+    
+    \item Use the above representation to prove the \tmtextit{diamagnetic
+    inequality}
+    \[ E_0 (A) \geqslant E_0 (0) . \]
+    {\small{\tmtextit{[Hint: take $\psi_0 (x) = 1$ and argue that $\psi (t, x)
+    \simeq c e^{- E_0 t} \varphi (x) + o_t (1)$ where $H \varphi = E_0 (A)
+    \varphi$ and conclude]}}}
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\
+
+\end{document}

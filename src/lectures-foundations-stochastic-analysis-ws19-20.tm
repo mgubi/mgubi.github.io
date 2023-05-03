@@ -15,14 +15,14 @@
   You can use the tag <src-macro|notes-abstract> to provide a small summary
   of the content, as exemplified by this very text.>
 
-  <chapter*|V3F2/F4F1 - Grundzüge der Stochastischen Analysis / Foundations
+  <chapter*|V3F2/F4F1 - Grundzï¿½ge der Stochastischen Analysis / Foundations
   in Stochastic Analysis<nbsp>>
 
   <subsection*|WS 2019/2020>
 
   Tuesday 14.00-16.00<nbsp><hlink|We10<nbsp>/ Kleiner
-  Hörsaal|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=460><nbsp>and
-  Friday 10.00-12.00<nbsp><hlink|CP1-HSZ<nbsp>/ Hörsaal
+  Hï¿½rsaal|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=460><nbsp>and
+  Friday 10.00-12.00<nbsp><hlink|CP1-HSZ<nbsp>/ Hï¿½rsaal
   7|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=994>
 
   <subsection*|Tutorials>
@@ -40,7 +40,7 @@
   session March 25-27 2020.
 
   A list of possible topics for the oral exam (non-exhaustive, but
-  representative) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/Lista-domande.pdf>)
+  representative) (<hlink|pdf|../store/iam/found-stoch-anal-ws1920/Lista-domande.pdf>)
 
   <section*|Description>
 
@@ -86,7 +86,7 @@
     <item>Ioannis Karatzas and Steven E. Shreve. Brownian motion and
     stochastic calculus.
 
-    <item>Timo Seppäläinen: Basics of Stochastic Analysis.
+    <item>Timo Seppï¿½lï¿½inen: Basics of Stochastic Analysis.
     (<hlink|pdf|http://www.math.wisc.edu/~seppalai/courses/735/notes2014.pdf>)
   </itemize>
 
@@ -97,53 +97,53 @@
   notes of the material presented in the lectures<nbsp>will be posted here:
 
   <\itemize>
-    <item><hlink|Note 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-note-1.pdf>:
+    <item><hlink|Note 1|../store/iam/found-stoch-anal-ws1920/fsa-note-1.pdf>:
     Brownian motion (20191019, v1.0)
 
-    <item><hlink|Note 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-note-2.pdf>:
+    <item><hlink|Note 2|../store/iam/found-stoch-anal-ws1920/fsa-note-2.pdf>:
     SDEs, strong/weak solutions, Tanaka's formula (20191229, v1.0)
   </itemize>
 
   <section*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 0|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-0.pdf>
+    <item><hlink|Sheet 0|../store/iam/found-stoch-anal-ws1920/fsa-sheet-0.pdf>
     (solved during the tutorial, not to be done beforehand)
 
-    <item><hlink|Sheet 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-1.pdf>
+    <item><hlink|Sheet 1|../store/iam/found-stoch-anal-ws1920/fsa-sheet-1.pdf>
     (due Thursday October 17th)
 
-    <item><hlink|Sheet 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-2.pdf>
+    <item><hlink|Sheet 2|../store/iam/found-stoch-anal-ws1920/fsa-sheet-2.pdf>
     (due Thursday October 24th)
 
-    <item><hlink|Sheet 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-3.pdf>
+    <item><hlink|Sheet 3|../store/iam/found-stoch-anal-ws1920/fsa-sheet-3.pdf>
     (due<nbsp>Thursday October 31st)
 
-    <item><hlink|Sheet 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-4.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 4|../store/iam/found-stoch-anal-ws1920/fsa-sheet-4.pdf><nbsp>(due<nbsp>Thursday
     November 7th)
 
-    <item><hlink|Sheet 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-5.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 5|../store/iam/found-stoch-anal-ws1920/fsa-sheet-5.pdf><nbsp>(due<nbsp>Thursday
     November 14th)
 
-    <item><hlink|Sheet 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-6.pdf>
+    <item><hlink|Sheet 6|../store/iam/found-stoch-anal-ws1920/fsa-sheet-6.pdf>
     (due<nbsp>Thursday November 21th)
 
-    <item><hlink|Sheet 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-7.pdf>
+    <item><hlink|Sheet 7|../store/iam/found-stoch-anal-ws1920/fsa-sheet-7.pdf>
     (due<nbsp>Thursday December<nbsp>5th)
 
-    <item><hlink|Sheet 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-8.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 8|../store/iam/found-stoch-anal-ws1920/fsa-sheet-8.pdf><nbsp>(due<nbsp>Thursday
     December 12th)
 
-    <item><hlink|Sheet 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-9.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 9|../store/iam/found-stoch-anal-ws1920/fsa-sheet-9.pdf><nbsp>(due<nbsp>Thursday
     December 19th)
 
-    <item><hlink|Sheet 10|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-10.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 10|../store/iam/found-stoch-anal-ws1920/fsa-sheet-10.pdf><nbsp>(due<nbsp>Thursday
     January 9th)
 
-    <item><hlink|Sheet 11|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-11.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 11|../store/iam/found-stoch-anal-ws1920/fsa-sheet-11.pdf><nbsp>(due<nbsp>Thursday
     January 16th) (revised version 10/01/2020 due to a typo)
 
-    <item><hlink|Sheet 12|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/found-stoch-anal-ws1920/fsa-sheet-12.pdf><nbsp>(due<nbsp>Thursday
+    <item><hlink|Sheet 12|../store/iam/found-stoch-anal-ws1920/fsa-sheet-12.pdf><nbsp>(due<nbsp>Thursday
     January 24th)<nbsp>(revised version 18/01/2020 due to a duplicate
     exercise)
   </itemize>

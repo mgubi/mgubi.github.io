@@ -37,7 +37,7 @@
     <item><strong|Mid september.><nbsp>Oral exam, probably online.
 
     <item>Example questions for the oral exam
-    (<hlink|PDF|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/oral-exam-info_01.pdf>)
+    (<hlink|PDF|../store/iam/stochastic-processes-ss21/oral-exam-info_01.pdf>)
   </itemize>
 
   <subsection*|Description>
@@ -57,7 +57,7 @@
     <item>Brownian motion: construction and sample path properties
   </itemize>
 
-  The course is a follow-up of ``Einführung in die
+  The course is a follow-up of ``Einfï¿½hrung in die
   Wahrscheinlichkeitstheorie\Q and a prerequisite to \PIntroduction to
   Stochastic Analysis"<nbsp>
 
@@ -67,7 +67,7 @@
   in:
 
   <\enumerate>
-    <item>M. Gubinelli: Einführung in die Wahrscheinlichkeitstheorie,
+    <item>M. Gubinelli: Einfï¿½hrung in die Wahrscheinlichkeitstheorie,
     WiSe<nbsp>2020/21 (<hlink|link|/abteilung-gubinelli/einf-wahrscheinlichkeitstheorie-ws2021>)
 
     <item>R. Durrett: Probability: Theory & Examples, Chapters 1 and 2
@@ -81,32 +81,32 @@
   SS2019:<nbsp>
 
   <\itemize>
-    <item><hlink|Note 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-1.pdf>:
+    <item><hlink|Note 1|../store/iam/stochastic-processes-ss19/sp-note-1.pdf>:
     Review of Measure spaces, Integration theory<nbsp>(v1.1, 10/4/19)
 
-    <item><hlink|Note 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-2.pdf>:
+    <item><hlink|Note 2|../store/iam/stochastic-processes-ss19/sp-note-2.pdf>:
     Conditional expectations (v1.0, 15/4/19)
 
-    <item><hlink|Note 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-3.pdf>:
+    <item><hlink|Note 3|../store/iam/stochastic-processes-ss19/sp-note-3.pdf>:
     Martingales (v1.1, 2/5/19)
 
-    <item><hlink|Note 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-4.pdf>:
+    <item><hlink|Note 4|../store/iam/stochastic-processes-ss19/sp-note-4.pdf>:
     Asymptotic behavior of martingales (v1.1, 3/5/19)
 
-    <item><hlink|Note 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-5.pdf>:
+    <item><hlink|Note 5|../store/iam/stochastic-processes-ss19/sp-note-5.pdf>:
     Closed martingales (v1.0, 13/5/19)
 
-    <item><hlink|Note 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-6.pdf>:
+    <item><hlink|Note 6|../store/iam/stochastic-processes-ss19/sp-note-6.pdf>:
     Martingale CLT and some applications of martingales (Kolmogorov's LLN,
     Kakutani's theorem, Radon-Nikodym theorem) (v1.1, 4/6/219)
 
-    <item><hlink|Note 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-7.pdf>:
+    <item><hlink|Note 7|../store/iam/stochastic-processes-ss19/sp-note-7.pdf>:
     Optimal stopping problems (v1.0, 3/6/19)
 
-    <item><hlink|Note 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-8.pdf>:
+    <item><hlink|Note 8|../store/iam/stochastic-processes-ss19/sp-note-8.pdf>:
     Markov chains (v1.1, 18/6/19)
 
-    <item><hlink|Note 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-note-9.pdf>:
+    <item><hlink|Note 9|../store/iam/stochastic-processes-ss21/sp-note-9.pdf>:
     Discrete chains, Doob's h-transform (v1.1, 21/7/16,<nbsp><strong|updated
     version>)
   </itemize>
@@ -129,95 +129,95 @@
 
   <\itemize>
     <item>Lecture 13/4<nbsp>: Overview of the course.
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-1.pdf>)
+    (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-1.pdf>)
 
     <item>Lecture 16/4<nbsp>:<nbsp>Review of measures spaces, Random
-    variables, Dynkin's,<nbsp>Monotone class and<nbsp>Carathéodory extension
-    theorems.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-2.pdf>)
+    variables, Dynkin's,<nbsp>Monotone class and<nbsp>Carathï¿½odory extension
+    theorems.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-2.pdf>)
 
     <item>Lecture 20/4: Integration. Lp spaces, completeness.<nbsp>Product
     measures and integrals, Fubini-Tonelli.<nbsp> Uniform integrability
-    (statements).<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-3.pdf>)
+    (statements).<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-3.pdf>)
 
     <item>Lecture 23/4: Uniform integrability (proofs).<nbsp>Conditional
-    expectations: motivation.<nbsp><nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-4.pdf>)
+    expectations: motivation.<nbsp><nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-4.pdf>)
 
     <item>Lecture 27/4: Definition and uniqueness<nbsp>of conditional
-    expectations, examples.<nbsp><nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-5.pdf>)
+    expectations, examples.<nbsp><nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-5.pdf>)
 
     <item>Lecture 30/4: <nbsp>Existence of conditional expectation via
-    orthogonal projection in L^2. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-6.pdf>)
+    orthogonal projection in L^2. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-6.pdf>)
 
     <item>Lecture 4/5:<nbsp>Review of basic properties of conditional
     expectations, relation with independence, some examples. Proof of some
     properties of conditional expecations under independence
-    assumptions.<nbsp> (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-7.pdf>)
+    assumptions.<nbsp> (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-7.pdf>)
 
     <item>Lecture 7/5:<nbsp>Regular conditional
     probabilities.<nbsp>Filtrations, adapted and previsible processes,
-    stopping times. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-8.pdf>)
+    stopping times. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-8.pdf>)
 
     <item>Lecture 11/5:<nbsp><nbsp>Sigma-algebra of a stopping
     time,<nbsp>Wald's identity for sums of independent random
-    variables.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-9.pdf>)
+    variables.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-9.pdf>)
 
     <item>Lecture 14/5: Martingales, some properties, Doob's decomposition.
-    Quadratic variation.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-10-v2.pdf><nbsp>,v.2)
+    Quadratic variation.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-10-v2.pdf><nbsp>,v.2)
 
     <item>Lecture 18/5: Martingale transform,<nbsp>Doob's<nbsp>optional
     sampling theorem, martingale property at stopping
-    times.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-11.pdf>)
+    times.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-11.pdf>)
 
     <item>Lecture 21/5:<nbsp>Asymptotics of martingales, martingale
-    convergence theorem. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-12.pdf>)
+    convergence theorem. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-12.pdf>)
 
     <item>Lecture 1/6: Closed martingales. Square-integrable
-    martingales.<nbsp>Doob's maximal and L<rsup|p><nbsp>inequalities.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-13.pdf>)
+    martingales.<nbsp>Doob's maximal and L<rsup|p><nbsp>inequalities.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-13.pdf>)
 
     <item>Lecture 4/6: Martingales closed in L<rsup|p><nbsp>and UI
     martingales. Optional stopping for closed martingales.
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-14.pdf>)
+    (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-14.pdf>)
 
     <item>Lecture 8/6:<nbsp>The tail sigma algebra and Kolmogorov's 0/1 law.
     Backwards martingales. Kolmogorov's law of large numbers.
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-15.pdf>)
+    (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-15.pdf>)
 
     <item>Lecture 11/6:<nbsp>Kakutani's theorem.
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-16.pdf>)
+    (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-16.pdf>)
 
     <item>Lecture 15/6: Radon-Nikodym theorem.
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-17.pdf>)
+    (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-17.pdf>)
 
     <item>Lecture 18/6: Optimal stopping problems.<nbsp>Value process,
     Snell's envelope and existence and characterisation of<nbsp>optimal
-    stopping times. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-18.pdf>)<nbsp>
+    stopping times. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-18.pdf>)<nbsp>
 
     <item>Lecture 22/6: Markovian optimal stopping problems.<nbsp>Solution
     of<nbsp>Moser's problem. Random recurrences and the Markov property.
-    <nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-19.pdf>)<nbsp>
+    <nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-19.pdf>)<nbsp>
 
     <item>Lecture 25/6: Markov processes. Transition kernel, some examples,
-    general markov property. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-20.pdf>)
+    general markov property. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-20.pdf>)
 
     <item>Lecture 29/6: Law of a Markov chain.<nbsp>Canonical space. Strong
-    Markov property. (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-21.pdf>)
+    Markov property. (<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-21.pdf>)
 
     <item>Lecture 2/7: Martingale problems, relation with potential analysis,
-    maximum principe.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-22.pdf>)
+    maximum principe.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-22.pdf>)
 
     <item>Lecture 6/7: Discrete chains, transience and
-    recurrence.<nbsp><nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-23.pdf>)
+    recurrence.<nbsp><nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-23.pdf>)
 
     <item>Lecture 9/7:<nbsp>Computations of some probabilistic quantities via
     linear<nbsp>equations involving the generator. Doob's
-    h-transform.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-24.pdf>)
+    h-transform.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-24.pdf>)
 
     <item>Lecture 13/7: An application of the h-transform to conditioning of
     Markov chains. Invariant measures, existence and
-    uniqueness.<nbsp><nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-25.pdf>)
+    uniqueness.<nbsp><nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-25.pdf>)
 
     <item>Lecture 16/7: Conclusion of the discussion of invariant
-    measures.<nbsp>Question session.<nbsp>(<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss21/sp-ss21-script-26.pdf>)
+    measures.<nbsp>Question session.<nbsp>(<hlink|script|../store/iam/stochastic-processes-ss21/sp-ss21-script-26.pdf>)
   </itemize>
 
   <nbsp>

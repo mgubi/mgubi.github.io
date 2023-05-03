@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amsmath,amssymb,enumerate,theorem}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+\newenvironment{enumerateroman}{\begin{enumerate}[i.] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 1}}}
+
+\ }}
+
+
+{\scriptsize{Version 2. Tutorial classes: Mon May 4th 16--18 \ (Zoom) Min Liu
+\textbar  Wed May 7th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 4pm Thursday April 30th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 4+2] \tmtextbf{(Martingale problem)} Let $b : \mathbb{R}^n_{}
+  \rightarrow \mathbb{R}^n$, $\sigma : \mathbb{R}^n \rightarrow \mathbb{R}^{n
+  \times n}$ locally bounded coefficients. Let $a (x) = \sigma (x) \sigma
+  (x)^T \in \mathbb{R}^{n \times n}$ and for all $f \in C^2 (\mathbb{R}^n)$
+  let
+  \[ \mathcal{L}f (x) = b (x) \cdot \nabla f (x) + \frac{1}{2} \tmop{Tr} [a
+     (x) \nabla^2 f (x)], \qquad x \in \mathbb{R}^n \]
+  where $\nabla^2 f (x)$ is the $\mathbb{R}^{n \times n}$ matrix of second
+  derivatives of $f$.
+  \begin{enumeratealpha}
+    \item Prove that the following conditions are equivalent
+    \begin{enumerateroman}
+      \item For any $f \in C^2 (\mathbb{R}^d)$, the process $M^f_t = f (X_t) -
+      f (X_0) - \int_0^t \mathcal{L}f (X_s) \mathd s$ is a local martingale.
+      
+      \item For any $v \in \mathbb{R}^d$, the process $M^v_t = v \cdot X_t - v
+      \cdot X_0 - \int_0^t v \cdot b (X_s) \mathd s$ is a local martingale
+      with quadratic variation
+      \[ [M^v]_t = \int_0^t v \cdot a (X_s) v \mathd s. \]
+      \item For any $v \in \mathbb{R}^d$ the process
+      \[ Z^v_t = \exp \left( M^v_t - \frac{1}{2} \int_0^t v \cdot a (X_s) v
+         \mathd s \right) \]
+      is a local martingale. 
+    \end{enumerateroman}
+    \tmtextit{[Hint: use the fact that linear combinations of exponentials are
+    dense in $C^2$ w.r.t. uniform convergence on compacts for the functions
+    and its first two derivatives (assumed wihtout proof)]}
+    
+    \item Show that any of conditions a,b,c imply that
+    \[ (f (X_t) / f (X_0)) \exp \left( - \int_0^t \frac{\mathcal{L}f}{f} (X_s)
+       \mathd s \right) \]
+    is a local martingale for every stricly positive $C^2$ function $f$.
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2] Let $(B_t)_{t \geqslant 0}$ be a one dimensional Brownian
+  motion. Find the SDEs satisfied by the following processes: (for all $t
+  \geqslant 0$)
+  \begin{enumeratealpha}
+    \item $X_t = B_t / (1 + t)$,
+    
+    \item $X_t = \sin (B_t)$
+    
+    \item $(X_t, Y_t) = (a \cos (B_t), b \sin (B_t))$ where $a, b \in
+    \mathbb{R}$ with $a b \neq 0$
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2+2] \tmtextbf{(Variation of constants)} Consider the nonlinear SDE
+  \[ \mathd X_t = f (t, X_t) \mathd t + c (t) X_t \mathd B_t, \qquad X_0 = x,
+  \]
+  where $f : \mathbb{R}_+ \times \mathbb{R} \rightarrow \mathbb{R}$ and $c :
+  \mathbb{R}_+ \rightarrow \mathbb{R}$ are continuous deterministic functions.
+  \begin{enumeratealpha}
+    \item Find an explicit solution $Z_t$ in the case $f = 0$ and $Z_0 = 1$.
+    
+    \item Use the Ansatz $X_t = C_t Z_t$ to show that $X$ solves the SDE
+    provided $C$ solves an ODE with random coefficients.
+    
+    \item Apply this method to solve the SDE
+    \[ \mathd X_t = X_t^{- 1} \mathd t + \alpha X_t \mathd B_t, \qquad X_0 =
+       x \]
+    where $\alpha$ is a constant.
+    
+    \item Apply the method to study the solution of the SDE
+    \[ \mathd X_t = X_t^{\gamma} \mathd t + \alpha X_t \mathd B_t, \qquad X_0
+       = x > 0 \]
+    where $\alpha$ and $\gamma$ are constants. For which values of $\gamma$ do
+    we get explosion ,i.e. the solution tends to $+ \infty$ for finite time?
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\
+
+\end{document}

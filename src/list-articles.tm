@@ -12,6 +12,12 @@
 
   <hrule>
 
+  <notes-entry|lectures-qmfi-ss20.tm|Functional Integration and Quantum
+  Mechanics|An introduction to the study of Quantum Mechanical
+  models<nbsp>via the connection with probability theory given by the
+  Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Wed
+  May \ 3 21:33:01 2023 UTC>
+
   <notes-entry|presentations.tm|Presentations|Things I have said in various
   places.|Tue May \ 2 22:26:37 2023 UTC>
 
@@ -134,12 +140,6 @@
   probability and quantum stochastic calculus, seen as non-commutative
   generalisation of probability theory. Course delivered in Bonn in Summer
   Semester 2018.|Sat Apr 22 14:22:19 2023 UTC>
-
-  <notes-entry|lectures-qmfi-ss2022.tm|Functional Integration and Quantum
-  Mechanics|An introduction to the study of Quantum Mechanical
-  models<nbsp>via the connection with probability theory given by the
-  Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Sat
-  Apr 22 14:22:19 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to

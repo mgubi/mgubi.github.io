@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,bbm}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 9}}}
+
+\ }}
+
+
+{\scriptsize{Version 1, 2020.06.19. Tutorial classes: Mon June 29th 16--18 \
+(Zoom) Min Liu \textbar  Wed July 1st 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 8pm Friday June 26th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 4] Prove that if $B$ is a Brownian motion, then we have the relation
+  $L^{| B |, 0}_t = 2 L^{B, 0}_t$ where $L^{X, a}_t$ denotes the local time in
+  $a \in \mathbb{R}$ of the semimartingale $X$.
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+4] Let $y : \mathbb{R}_+ \rightarrow \mathbb{R}$ be a continuous
+  function and let
+  \[ a (t) = \sup_{s \in [0, t]} (y (s))_- = \sup_{s \in [0, t]} (- y (s) \vee
+     0), \qquad z (t) = y (t) + a (t) . \]
+  \begin{enumeratealpha}
+    \item Prove that $a, z$ are continuous functions and $a$ is
+    non-decreasing.
+    
+    \item Prove that $a$ is of bounded variation and that $\int_0^{\infty}
+    \mathbbm{1}_{z_s > 0} \mathd a_s = 0$. (Hint: use the fact that $\mathd
+    a_s$ is a Borel measure).
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  \label{ex:bdg}[Pts 2+2+2] Prove (the upper bound of)
+  Burkholder--Davis--Gundy inequality. Let $M$ be a continuous local
+  martingale (with $M_0 = 0$). For any $p \geqslant 2$ we have
+  \[ \mathbb{E} [\sup_{t \leqslant T} | M_t |^p] \leqslant C_p \mathbb{E}
+     [([M]_T^{p / 2})] \]
+  where $C_p$ is a universal constant depending only on $p$.
+  \begin{enumeratealpha}
+    \item Assume that the martingale $M$ is bounded. Use It{\^o} formula on $t
+    \mapsto (\varepsilon + | M_t |^2)^{p / 2}$ to prove that
+    \[ \mathbb{E} [\sup_{t \leqslant T} | M_t |^p] \leqslant \int_0^T
+       \mathbb{E} [| M_t |^{p - 2} \mathd [M]_t] . \]
+    (why we need $\varepsilon > 0$?)
+    
+    \item Use H{\"o}lder's and Doob's inequality to conclude.
+    
+    \item Remove the assumption of boundedness.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2] Let us continue with the setting of Exercise~\ref{ex:bdg} and
+  prove now a complementary lower bound when $p \geqslant 4$, that is
+  \[ \mathbb{E} [([M]_T^{p / 2})] \leqslant C_p \mathbb{E} [\sup_{t \leqslant
+     T} | M_t |^p] . \]
+  where again $C_p$ is a universal constant depending only on $p$ (not the
+  same as that of the upper bound).
+  \begin{enumeratealpha}
+    \item Use the relation
+    \[ [M]_T = M^2_T - 2 \int_0^T M_s \mathd M_s \]
+    to estimate $\mathbb{E} [([M]_T^{p / 2})]$ and then use the BDG upper
+    bound for the stochastic integral.
+    
+    \item Prove that if we let $N_T = \int_0^T M_s \mathd M_s$ then for any
+    $\varepsilon > 0$ there exists $\lambda_{\varepsilon} > 0$ such that
+    \[ [N]_T^{1 / 2} \leqslant \lambda_{\varepsilon} \sup_{t \leqslant T} |
+       M_t | + \varepsilon [M]_T \]
+    \item Conclude by choosing $\varepsilon$ small enough.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\
+
+\end{document}

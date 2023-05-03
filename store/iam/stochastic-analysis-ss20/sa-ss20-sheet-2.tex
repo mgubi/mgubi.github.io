@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,amsmath}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 2}}}
+
+\ }}
+
+
+{\scriptsize{Version 2. Tutorial classes: Mon May 11th 16--18 \ (Zoom) Min Liu
+\textbar  Wed May 13th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 4pm Thursday May 7th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+3+2] Let $(B_t)_{t \geqslant 0}$ be a one dimensional Brownian
+  motion.
+  \begin{enumeratealpha}
+    \item Define the process
+    \[ X_t = a (t) \left( x_0 + \int_0^t b (s) \mathd B_s \right) \]
+    where $a, b : \mathbb{R}_+ \rightarrow \mathbb{R}$ are differentiable
+    functions with $a (0) = 1$ and $a (t) > 0$. Compute the SDE satisfied by
+    this process.
+    
+    \item Use (a) to find an explicit solution for the SDEs in
+    eqns.{\eqref{eq:sde1}}, {\eqref{eq:sde2}}, {\eqref{eq:sde3}}:
+    \begin{equation}
+      \left\{\begin{array}{lll}
+        \mathd X_t & = & - \alpha X_t \mathd t + \sigma \mathd B_t \qquad t
+        \in [0, T]\\
+        X_0 & = & x_0
+      \end{array}\right. \label{eq:sde1}
+    \end{equation}
+    where $\alpha, \sigma, T$ are positive constants.
+    \begin{equation}
+      \left\{\begin{array}{lll}
+        \mathd X_t & = & - \frac{X_t}{1 - t} \mathd t + \mathd B_t \qquad t
+        \in [0, 1)\\
+        X_0 & = & 0
+      \end{array}\right. \label{eq:sde2}
+    \end{equation}
+    \begin{equation}
+      \left\{\begin{array}{lll}
+        \mathd X_t & = & t X_t \mathd t + e^{t^2 / 2} \mathd B_t \qquad t \in
+        [0, T]\\
+        X_0 & = & 1
+      \end{array}\right. \label{eq:sde3}
+    \end{equation}
+    \item Are the solutions of the SDEs in (b) strong and pathwise unique?
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\begin{exercise}
+  [Pts 2+2+2] Let $(B_t)_{t \geqslant 0}$ be a one dimensional Brownian
+  motion.
+  \begin{enumeratealpha}
+    \item Given $f \in C (\mathbb{R}_+)$, prove that $X_t = \int_0^t f (s)
+    \mathd B_s$ is a Gaussian random variable with mean $0$ and variance
+    $\int_0^t f (u)^2 \mathd u$ for all\quad$t \geqslant 0$.
+    
+    \item The Ornstein--Uhlenbeck process $(X_t)_{t \geqslant 0}$ is defined
+    as the solution to the SDE
+    \begin{equation}
+      \left\{\begin{array}{lll}
+        \mathd X_t & = & (- \alpha X_t + \beta) \mathd t + \sigma \mathd B_t
+        \qquad t \geqslant 0\\
+        X_0 & = & x_0
+      \end{array}\right. \label{eq:sde-ou}
+    \end{equation}
+    where $\alpha, \sigma$ are positive constant and $\beta, x_0 \in
+    \mathbb{R}$. Find the explicit solution to the SDE~{\eqref{eq:sde-ou}}.
+    
+    \item Prove that $X_t$ converges in distribution as $t \rightarrow \infty$
+    to a Gaussian random variable with mean $\beta / \alpha$ and variance
+    $\sigma^2 / 2 \alpha$.
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\begin{exercise}
+  [Pts 3+2+2] Let $(B_t)_{t \geqslant 0}$ be a 2-dimensional Brownian motion
+  and $X$ a two-dimensional stochastic process solution to the SDE
+  \begin{equation}
+    \left\{\begin{array}{lll}
+      \mathd X_t & = & A X_t \mathd t + \mathd B_t \qquad t \geqslant 0\\
+      X_0 & = & \xi
+    \end{array}\right. \label{eq:sde-ou-twodim}
+  \end{equation}
+  where $\xi$ is a random variable in $\mathbb{R}^2$ independent of $B$ and
+  \[ A = \left(\begin{array}{cc}
+       \alpha & 1\\
+       0 & \alpha
+     \end{array}\right) \]
+  with $\alpha \in \mathbb{R}$.
+  \begin{enumeratealpha}
+    \item Let $\phi (t)$ be a $2 \times 2$ matrix that satisfies the ODE
+    \[ \dot{\phi} (t) = A \phi (t), \qquad \phi (0) =\mathbb{I}_2 \]
+    where $\mathbb{I}_2$ is the $2 \times 2$ identity matrix. Show that $\phi
+    (t) = e^{A t} = \sum_{n \geqslant 0} A^n \frac{t^n}{n!}$ and calculate
+    $\phi (t)$ explicitly. Find $\phi (t)^{- 1}$ (inverse matrix).
+    
+    \item Verify that
+    \[ X_t = \phi (t) \left( \xi + \int_0^t \phi (s)^{- 1} \mathd B_s \right)
+    \]
+    solves the SDE~{\eqref{eq:sde-ou-twodim}}.
+    
+    \item Calculate the explicit solution of~{\eqref{eq:sde-ou-twodim}}.
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\
+
+\end{document}

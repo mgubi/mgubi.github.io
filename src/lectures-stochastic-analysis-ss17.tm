@@ -21,7 +21,7 @@
 
   <nbsp>
 
-  Thursday 16.15-18.00 and Thursday 12.15-14.00, Kleiner Hörsaal, Wegelerstr.
+  Thursday 16.15-18.00 and Thursday 12.15-14.00, Kleiner Hï¿½rsaal, Wegelerstr.
   10<nbsp>
 
   <with|font-series|bold|Exercise sheets>: Immanuel Zachhuber
@@ -54,20 +54,20 @@
   <\itemize>
     <item>Note 1 : Stochastic differential equations :
     existence,<nbsp>uniqueness and martingale problems.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-1.pdf>)
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>)
     [version 1.1, posted<nbsp>24/5/2016]
 
     <item>Note 2 : Girsanov transform, Doob's h-transform.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
     1.1, posted 24/5/2016]
 
     <item>Note 3 : Brownian martingale representation theorem, Entropy and
-    Girsanov transform, Boué-Dupuis formula, Large deviations.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-3.pdf>)
+    Girsanov transform, Bouï¿½-Dupuis formula, Large deviations.
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>)
     [version 1.3, posted 16/6/2016]
 
     <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito
-    formula. (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-4.pdf>)
+    formula. (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>)
     [version 1.1, posted 29/6/2016]
   </itemize>
 
@@ -85,35 +85,35 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-1.pdf><nbsp>(due
+    <item><hlink|Sheet 1|../store/iam/stochastic-analysis-ss17/sa-sheet-1.pdf><nbsp>(due
     on<nbsp>tuesday<nbsp>2/5)
 
-    <item><hlink|Sheet 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-2.pdf>
+    <item><hlink|Sheet 2|../store/iam/stochastic-analysis-ss17/sa-sheet-2.pdf>
     (due on<nbsp>tuesday<nbsp>9/5)
 
-    <item><hlink|Sheet 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-3.pdf><nbsp>(due
+    <item><hlink|Sheet 3|../store/iam/stochastic-analysis-ss17/sa-sheet-3.pdf><nbsp>(due
     on<nbsp>tuesday<nbsp>16/5)
 
-    <item><hlink|Sheet 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-4.pdf><nbsp>(due
+    <item><hlink|Sheet 4|../store/iam/stochastic-analysis-ss17/sa-sheet-4.pdf><nbsp>(due
     on tuesday 23/5)
 
-    <item><hlink|Sheet 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-5.pdf>
+    <item><hlink|Sheet 5|../store/iam/stochastic-analysis-ss17/sa-sheet-5.pdf>
     (due on tuesday 13/6)
 
-    <item><hlink|Sheet 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-6.pdf>
+    <item><hlink|Sheet 6|../store/iam/stochastic-analysis-ss17/sa-sheet-6.pdf>
     (due on thursday 22/6, based on the paper
     <hlink|here|https://projecteuclid.org/euclid.bj/1165269151>)
 
-    <item><hlink|Sheet 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-7.pdf>
+    <item><hlink|Sheet 7|../store/iam/stochastic-analysis-ss17/sa-sheet-7.pdf>
     (due on tuesday 27/6)
 
-    <item><hlink|Sheet 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-8.pdf>
+    <item><hlink|Sheet 8|../store/iam/stochastic-analysis-ss17/sa-sheet-8.pdf>
     (due on tuesday 4/7)
 
-    <item><hlink|Sheet 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-9.pdf><nbsp>(due
+    <item><hlink|Sheet 9|../store/iam/stochastic-analysis-ss17/sa-sheet-9.pdf><nbsp>(due
     on tuesday 11/7)
 
-    <item><hlink|Sheet 10|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss17/sa-sheet-10.pdf>
+    <item><hlink|Sheet 10|../store/iam/stochastic-analysis-ss17/sa-sheet-10.pdf>
     (due on tuesday 18/7)
   </itemize>
 
@@ -179,9 +179,9 @@
     <item>Lecture 20/6 : Proof of the MRT. Variational properties of Girsanov
     transform. Relative entropy.
 
-    <item>Lecture 22/6 : Follmer's drift, Boué-Dupuis theorem.<nbsp>
+    <item>Lecture 22/6 : Follmer's drift, Bouï¿½-Dupuis theorem.<nbsp>
 
-    <item>Lecture 27/6 : Applications of<nbsp>Boué-Dupuis : concentration of
+    <item>Lecture 27/6 : Applications of<nbsp>Bouï¿½-Dupuis : concentration of
     measure, large deviations.
 
     <item>Lecture 29/6 : (done the 27/6)

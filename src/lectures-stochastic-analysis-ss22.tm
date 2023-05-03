@@ -24,7 +24,7 @@
   V4F1 -<nbsp>SS22
 
   <strong|Schedule:> Tuesday 16.00-18.00 (c.t.) and Thursday 12.00-14.00
-  (c.t.), Kleiner Hörsaal, Wegelerstr. 10. <nbsp>(In presence)
+  (c.t.), Kleiner Hï¿½rsaal, Wegelerstr. 10. <nbsp>(In presence)
 
   <strong|Tutorial classes:><nbsp>Wed 8-10 SemR 0.007, Wed 12-14<nbsp>SemR
   0.007.<nbsp><nbsp>(In presence)
@@ -33,7 +33,7 @@
   have reached at least half of the total number of points in the exercise
   sheets.
 
-  Sample exam questions from the SS20 (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss20/sa-ss20-questions.pdf>).
+  Sample exam questions from the SS20 (<hlink|pdf|../store/iam/stochastic-analysis-ss20/sa-ss20-questions.pdf>).
   They are an indication of the kind of questions asked in the exam. Still to
   be updated according to the content we will cover this year.
 
@@ -58,7 +58,7 @@
   and my course ``Foundations of Stochastic Analysis'' from the WS19/20
   (<hlink|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>) or
   the course ``Foundations of Stochastic Analysis"<nbsp>of Dr. De Vecchi in
-  WS21/22 [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/Foundations_in_Stochastic_Analysis.pdf>]
+  WS21/22 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Foundations_in_Stochastic_Analysis.pdf>]
 
   <subsection*|Lecture Notes>
 
@@ -73,13 +73,13 @@
 
   <\itemize>
     <item>Note 1 -<nbsp>Stochastic differential equations<nbsp>- version 1 -
-    2022.5.3 [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-note-1.pdf>]
+    2022.5.3 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-1.pdf>]
 
     <item>Note 2 - SDE techniques - version 2<nbsp>-
-    2022.5.20<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-note-2.pdf>]
+    2022.5.20<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-2.pdf>]
 
     <item>Note 3<nbsp>- The martingale representation theorem and
-    applications<nbsp>- version 3<nbsp>- 2022.7.7<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-note-3.pdf>]
+    applications<nbsp>- version 3<nbsp>- 2022.7.7<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-3.pdf>]
   </itemize>
 
   Recordings of the lectures of SS20 are available on the eCampus page of the
@@ -102,42 +102,42 @@
 
   <\itemize>
     <item>Sheet 0 (discussed in the tutorial)
-    [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-0.pdf>]
+    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-0.pdf>]
     (related material: the paper of Yamada-Watanabe
-    [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/Yamada_and_Watanabe_-_1971_-_On_the_uniqueness_of_solutions_of_stochastic_diffe.pdf>],<nbsp>Cherny
-    [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/Cherny_-_2002_-_On_the_Uniqueness_in_Law_and_the_Pathwise_Uniquene.pdf>]
-    and a note on Osgood's condition [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/osgood-condition.pdf>])
+    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Yamada_and_Watanabe_-_1971_-_On_the_uniqueness_of_solutions_of_stochastic_diffe.pdf>],<nbsp>Cherny
+    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Cherny_-_2002_-_On_the_Uniqueness_in_Law_and_the_Pathwise_Uniquene.pdf>]
+    and a note on Osgood's condition [<hlink|pdf|../store/iam/stochastic-analysis-ss22/osgood-condition.pdf>])
 
-    <item>Sheet 1 [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-1.pdf>]
+    <item>Sheet 1 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-1.pdf>]
     (to be handed in April 14th)
 
-    <item>Sheet 2 [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-2.pdf>]
+    <item>Sheet 2 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-2.pdf>]
     (to be handed in April 21st)
 
-    <item>Sheet 3 [<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-3.pdf>]
+    <item>Sheet 3 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-3.pdf>]
     (to be handled in April 28th)
 
-    <item>Sheet 4<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-4.pdf>]
+    <item>Sheet 4<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-4.pdf>]
     (to be handled in May 5th)
 
-    <item>Sheet 5<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-5.pdf>]
+    <item>Sheet 5<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-5.pdf>]
     (to be handled in May 12th)
 
-    <item>Sheet 6<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-6.pdf>]
+    <item>Sheet 6<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-6.pdf>]
     (to be handled in May 19th)
 
-    <item>Sheet 7<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-7.pdf>]
+    <item>Sheet 7<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-7.pdf>]
     (to be handled in May 27th, no lecture May 26th)
 
-    <item>Sheet 8<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-8.pdf>]
+    <item>Sheet 8<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-8.pdf>]
     (to be handled in June 2nd)
 
     <item>(No tutorials the week of June 22nd)
 
-    <item>Sheet 9<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-9.pdf>]
+    <item>Sheet 9<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-9.pdf>]
     (to be handled in June 23rd)
 
-    <item>Sheet 10<nbsp>[<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss22/sa-ss22-sheet-10.pdf>]
+    <item>Sheet 10<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-10.pdf>]
     (to be handled in June 30th, this is the last exercise sheet)
   </itemize>
 
@@ -204,12 +204,12 @@
     theorem.<nbsp>the Markovian proof.
 
     <item>Lecture 19 (21/6)<nbsp>Entropy on the Wiener
-    space,<nbsp>Boué-Dupuis formula.<nbsp>Application to<nbsp>Gaussian tails
-    of Lipschitz functionals.<nbsp>Proof of<nbsp>Boué-Dupuis formula.
+    space,<nbsp>Bouï¿½-Dupuis formula.<nbsp>Application to<nbsp>Gaussian tails
+    of Lipschitz functionals.<nbsp>Proof of<nbsp>Bouï¿½-Dupuis formula.
 
     <item>23/6 and 28/6 :<nbsp>lectures canceled
 
-    <item>Lecture 20 (30/6) Conclusing of the proof of<nbsp>Boué-Dupuis
+    <item>Lecture 20 (30/6) Conclusing of the proof of<nbsp>Bouï¿½-Dupuis
     formula.<nbsp>Large deviations / Laplace principle for families of
     Brownian functionals.
 

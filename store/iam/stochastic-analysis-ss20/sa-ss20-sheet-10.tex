@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amsmath,amssymb,enumerate,theorem}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\assign}{:=}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 10}}}
+
+\ }}
+
+
+{\scriptsize{Version 1, 2020.06.29. Tutorial classes: Mon July 6th 16--18 \
+(Zoom) Min Liu \textbar  Wed July 8th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 8pm Friday July 3rd. Use this sheet for your
+solutions and write them under the corresponding exercise. Fill out your names
+below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+Let $(\Omega \assign C (\mathbb{R}_{\geqslant 0} ; \mathbb{R}), \mathcal{F},
+\mathcal{F}_{\bullet}, \mathbb{P})$ the one dimensional Wiener space and $X$
+the canonical process.
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2+2+2] Find a predictable process $F$ such that
+  \[ \Phi =\mathbb{E} [\Phi] + \int_0^{\infty} F_s \mathd X_s \text{} \]
+  when $\Phi \in L^2 (\Omega, \mathcal{F}_T, \mathbb{P})$ is each of the
+  following r.v. (with $T > 0$ fixed)
+  \[ X_T^2, \quad e^{X_T}, \quad \int_0^T X_t \mathd t, \quad X_T^3, \quad
+     \sin (X_T) . \]
+  (One possible approach: for any $\Phi$ try to find a martingale $(M_t)_t$
+  such that $M_T = \Phi$, and then apply Ito formula).
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}[Pts 2+2+2]
+  \label{ex:dens} We want to prove that the linear span of r.v. of
+  the form
+  \[ E (h) = \cos \left( \int h_s \mathd X_s \right) \exp \left( \frac{1}{2}
+     \int h_s^2 \mathd s \right), \quad F (h) = \sin \left( \int h_s \mathd
+     X_s \right) \exp \left( \frac{1}{2} \int h_s^2 \mathd s \right), \qquad h
+     \in L^2 (\mathbb{R}_{\geqslant 0}), \]
+  is dense in $L^2 (\Omega, \mathcal{F}, \mathbb{P})$ ($h$ is a deterministic
+  function and the integrals are over $\mathbb{R}_{\geqslant 0}$).
+  \begin{enumeratealpha}
+    \item Show that if $G \in L^2 (\Omega, \mathcal{F}, \mathbb{P})$ is
+    orthogonal to all $\{ E (h), F (h) : h \in L^2 (\mathbb{R}) \}$, then in
+    particular
+    \[ \mathbb{E} [G \exp (i \lambda_1 B_{t_1} + \cdots + i \lambda_n
+       B_{t_n})] = 0 \]
+    for all $\lambda_1, \ldots, \lambda_n \in \mathbb{R}$ and $t_1, \cdots,
+    t_n \geqslant 0$.
+    
+    \item Deduce from this that $G$ is orthogonal to all functions of the from
+    $\phi (B_{t_1}, \ldots, B_{t_n})$ with $\phi \in C_0^{\infty}$. [Hint: use
+    Fourier transform]
+    
+    \item Conclude.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 4+4] Use the class of functions introduced in Exercise~\ref{ex:dens} to
+  reprove the Brownian martingale representation theorem.
+  \begin{enumeratealpha}
+    \item Determine the martingale representation for functions $\Phi$ of the
+    from
+    \[ \Phi = \sum_i (a_i E (h_i) + b_i F (h_i)) \]
+    where $a_i, b_i \in \mathbb{R}$, $h_i \in L^2 (\mathbb{R}_{\geqslant 0})$
+    and the sum is finite.
+    
+    \item Use the density of such functions to approximate an arbitrary
+    element $\Phi \in L^2$ and conclude.
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\
+
+\end{document}

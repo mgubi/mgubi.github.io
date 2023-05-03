@@ -21,11 +21,11 @@
 
   <nbsp>
 
-  Wednesday 12.15-14.00 and Thursday 12.15-14.00, Kleiner Hörsaal,
+  Wednesday 12.15-14.00 and Thursday 12.15-14.00, Kleiner Hï¿½rsaal,
   Wegelerstr. 10<nbsp>
 
   Some lectures will also be held on Tuesday 16.00-18.00, <nbsp>Kleiner
-  Hörsaal, Wegelerstr. 10.<nbsp>
+  Hï¿½rsaal, Wegelerstr. 10.<nbsp>
 
   Remark (16/6/16): Next lectures are 29/6, 30/6, 5/7, 6/7, 12/7, 13/7, 14/7,
   20/7, 21/7. <nbsp>
@@ -37,9 +37,9 @@
   September 2016.
 
   <with|font-series|bold|NEW:><nbsp>Exam Schedule:
-  (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-exam-schedule.pdf>)
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-exam-schedule.pdf>)
   [updated 14/7/2016] Sample exam questions
-  (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-questions.pdf>)
+  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-questions.pdf>)
 
   <nbsp>
 
@@ -66,20 +66,20 @@
   <\itemize>
     <item>Note 1 : Stochastic differential equations :
     existence,<nbsp>uniqueness and martingale problems.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-1.pdf>)
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>)
     [version 1.1, posted<nbsp>24/5/2016]
 
     <item>Note 2 : Girsanov transform, Doob's h-transform.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
     1.1, posted 24/5/2016]
 
     <item>Note 3 : Brownian martingale representation theorem, Entropy and
-    Girsanov transform, Boué-Dupuis formula, Large deviations.
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-3.pdf>)
+    Girsanov transform, Bouï¿½-Dupuis formula, Large deviations.
+    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>)
     [version 1.3, posted 16/6/2016]
 
     <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito
-    formula. (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-note-4.pdf>)
+    formula. (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>)
     [version 1.1, posted 29/6/2016]
   </itemize>
 
@@ -97,35 +97,35 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-1.pdf>
+    <item><hlink|Sheet 1|../store/iam/stochastic-analysis-ss16/sa-sheet-1.pdf>
     (due on thursday<nbsp>21/4, collected during the lecture)
 
-    <item><hlink|Sheet 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-2.pdf><nbsp>(revised
+    <item><hlink|Sheet 2|../store/iam/stochastic-analysis-ss16/sa-sheet-2.pdf><nbsp>(revised
     version of 25/4/16,<nbsp>due on thursday 28/4, collected during the
     lecture)
 
-    <item><hlink|Sheet 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-3.pdf><nbsp>(due
+    <item><hlink|Sheet 3|../store/iam/stochastic-analysis-ss16/sa-sheet-3.pdf><nbsp>(due
     Mon May 9th, collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-4.pdf><nbsp>(due
+    <item><hlink|Sheet 4|../store/iam/stochastic-analysis-ss16/sa-sheet-4.pdf><nbsp>(due
     Mon May 23rd, collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-5.pdf><nbsp>(due
+    <item><hlink|Sheet 5|../store/iam/stochastic-analysis-ss16/sa-sheet-5.pdf><nbsp>(due
     Mon May 30th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-6.pdf><nbsp>(due
+    <item><hlink|Sheet 6|../store/iam/stochastic-analysis-ss16/sa-sheet-6.pdf><nbsp>(due
     Mon Jun<nbsp>6th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-7.pdf><nbsp>(due
+    <item><hlink|Sheet 7|../store/iam/stochastic-analysis-ss16/sa-sheet-7.pdf><nbsp>(due
     Mon Jun 13th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-8.pdf><nbsp>(due
+    <item><hlink|Sheet 8|../store/iam/stochastic-analysis-ss16/sa-sheet-8.pdf><nbsp>(due
     Mon Jun 20th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-9.pdf>
+    <item><hlink|Sheet 9|../store/iam/stochastic-analysis-ss16/sa-sheet-9.pdf>
     (due Mon Jul 11th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 10|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-analysis-ss16/sa-sheet-10.pdf><nbsp>(due
+    <item><hlink|Sheet 10|../store/iam/stochastic-analysis-ss16/sa-sheet-10.pdf><nbsp>(due
     Mon Jul 18th,<nbsp>collected at the beginning of the tutorial)
   </itemize>
 
@@ -169,16 +169,16 @@
 
     <item>Lecture 2/6 : The martingale representation theorem.
 
-    <item>Lecture 8/6 : Entropy and Girsanov transform. Föllmer's drift. The
-    Boué-Dupuis formula.<nbsp>
+    <item>Lecture 8/6 : Entropy and Girsanov transform. Fï¿½llmer's drift. The
+    Bouï¿½-Dupuis formula.<nbsp>
 
-    <item>Lecture 9/6 : proof of the Boué-Dupuis formula, exponential
+    <item>Lecture 9/6 : proof of the Bouï¿½-Dupuis formula, exponential
     integrability of Lipshitz functionals over the Wiener space.
 
     <item>Lecture 14/6 : large deviations over the Wiener space, Laplace
     principle, small noise diffusions.
 
-    <item>Lecture 15/6 : Proof of the Laplace principle via Boué-Dupuis
+    <item>Lecture 15/6 : Proof of the Laplace principle via Bouï¿½-Dupuis
     formula for a general class of Wiener functionals.
 
     <item>Lecture 16/6 : Regularity of processes.<nbsp>Garcia-Rodemich-Rumsey
@@ -194,7 +194,7 @@
 
     <item>Lecture 6/7 :<nbsp>Differentiability of the stochastic flow.
 
-    <item>Lecture 12/7 : Stratonovich's integral and relation with Itô
+    <item>Lecture 12/7 : Stratonovich's integral and relation with Itï¿½
     integral.
 
     <item>Lecture 13/7 : Brownian motion on hypersurfaces

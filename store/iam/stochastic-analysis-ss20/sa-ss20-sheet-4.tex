@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,amsmath}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\assign}{:=}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 4}}}
+
+\ }}
+
+
+{\scriptsize{Version 1, 2020.05.12. Tutorial classes: Mon May 25th 16--18 \
+(Zoom) Min Liu \textbar  Wed May 27th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 4pm Thursday May 21th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2] \tmtextbf{(Brownian motion on the unit sphere)} Let $Y_t = B_t / |
+  B_t |$ where $B$ is a Brownian motion in $\mathbb{R}^n$ and $n > 2$. Prove
+  that the time--changed process
+  \[ Z_a = Y_{T_a}, \qquad T = A^{- 1}, \qquad A_t = \int_0^t | B_s |^{- 2}_{}
+     \mathd s, \]
+  is a diffusion taking values in the unit sphere $S^{n - 1} = \{ x \in
+  \mathbb{R}^n : | x | = 1 \}$ with generator
+  \[ \mathcal{L}f (x) = \frac{1}{2} \left( \Delta f (x) - \sum_{i, j} x_i x_j
+     \frac{\partial^2 f}{\partial x_i \partial x_j} (x) \right) - \frac{n -
+     1}{2} \sum_i x_i \frac{\partial f}{\partial x_i} (x), \qquad x \in S^{n -
+     1} . \]
+  where $\Delta$ is the Laplacian in $\mathbb{R}^n$ and where diffusion here
+  means continuous time process solving the martingale problem for this
+  generator.
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2+1+1] \tmtextbf{(Polar points of Brownian motion for $d \geqslant
+  2$)} Let $(X, Y)$ be a Brownian motion on $\mathbb{R}^2$ starting at $(0,
+  0)$. Let
+  \[ (M_t, N_t) \assign e^{X_t} (\cos (Y_t), \sin (Y_t)) . \]
+  We will assume without proof that
+  \[ \int_0^{\infty} e^{2 X_s} \mathd s = + \infty, \qquad a.s. \]
+  \begin{enumeratealpha}
+    \item Prove that $(M, N)$ is a Brownian motion on $\mathbb{R}^2$ changed
+    of time (starting from where?) ;
+    
+    \item Compute the Euclidean norm $| (M_t, N_t) |$ of the vector $(M_t,
+    N_t)$ and deduce that a Brownian motion $B$ in $\mathbb{R}^2$ never visit
+    the point $(- 1, 0)$, that is
+    \[ \mathbb{P} (\exists t > 0 : B (t) = (- 1, 0)) = 0. \]
+    \item Conclude that $B$ never visit any given point $x \neq (0, 0)$.
+    
+    \item Use the Markov property to deduce from (c) that $\mathbb{P} (\exists
+    t > 0 : B (t) = (0, 0)) = 0.$ [Hint: consider $\mathbb{P} (\exists t
+    \geqslant 1 / n : B (t) = (0, 0))$ as $n \rightarrow 0$.]
+    
+    \item Prove that a Brownian motion in $\mathbb{R}^d$ with $d > 2$ does not
+    visit any given point $x \in \mathbb{R}^d$.
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\
+
+\begin{exercise}
+  [Pts 2+2+2+1+1] \tmtextbf{(Transience of Brownian motion in $d \geqslant
+  3$)} Let $X$ be a Brownian motion in $\mathbb{R}^3$ starting from $a \in
+  \mathbb{R}^3 \neq 0$. We say that a process $Y$ is transient if $| Y_t |
+  \rightarrow \infty$ as $t \rightarrow \infty$ almost surely.
+  \begin{enumeratealpha}
+    \item Prove that the process $M_t = 1 / | X_t |$ is a positive local
+    martingale.
+    
+    \item Prove that $M_{\infty} = \lim_{t \rightarrow \infty} M_t$ exists
+    almost surely.
+    
+    \item Compute $\mathbb{E} [M_t]$ and deduce that $M_{\infty} = 0$. This
+    implies that $X$ is transient.
+    
+    \item Show that whatever the starting point is, $X$ is always transient.
+    
+    \item Prove that a Brownian motion in $\mathbb{R}^d$ with $d \geqslant 3$
+    is transient.
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2] \tmtextbf{(Conformal invariance of Brownian motion)}\tmtextbf{} Let
+  $f : \mathbb{C} \rightarrow \mathbb{C}$ be an holomorphic function and $Z =
+  X + i Y$ be a planar Brownian motion (with the identification of
+  $\mathbb{C}$ with $\mathbb{R}^2$). Prove that the process $M_t = f (Z_t)$ is
+  a continuous local martingale with values in $\mathbb{C}$. Deduce that it is
+  a complex Brownian motion changed of time. This property is called conformal
+  invariance of Brownian motion. 
+\end{exercise}
+
+\
+
+\hrulefill
+
+\
+
+\end{document}

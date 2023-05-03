@@ -55,19 +55,19 @@
 
   <\enumerate>
     <item>20/5 \U Shi* \U Chap. 2 - Space of Rough Paths
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/The_Space_of_Rough_Paths__1_.pdf>)
+    (<hlink|handout|../store/iam/seminar-rp-ss22/The_Space_of_Rough_Paths__1_.pdf>)
 
     <item>27/5 -<nbsp>Rinaldi \U Chap. 3 \U BM as rough path
-    (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/BM-as-RP.pdf>)
+    (<hlink|slides|../store/iam/seminar-rp-ss22/BM-as-RP.pdf>)
 
     <item>27/5 - Meyer \U Chap. 4 \U Integ. against RP
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/Integration_wrt_RP.pdf>)
+    (<hlink|handout|../store/iam/seminar-rp-ss22/Integration_wrt_RP.pdf>)
 
     <item>3/6<nbsp>- De Vecchi \U Chap 5. \U Stoch int & Ito formula: Chap 6.
     \U Doob-Meyer for RP
 
     <item>3/6 - Fresta \U Chap 7. \U Controlled rough path
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/Operations_CRP.pdf>)
+    (<hlink|handout|../store/iam/seminar-rp-ss22/Operations_CRP.pdf>)
 
     <item>17/6 -<nbsp>Ravot Licheri* \U Sewing Lemma & Young DE (from CGZ,
     Chap 1 and Chap 2) (cfr. with Chap 8 of FH)
@@ -77,11 +77,11 @@
 
     <item>24/6 -<nbsp>Song \U Chap 9. Link with Stochastic analysis
     (Wong-Zakai, Support theorem, large deviations)
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/Notes.pdf>)
+    (<hlink|handout|../store/iam/seminar-rp-ss22/Notes.pdf>)
 
     <item>24/6 - Liu \U Chap 10+ Chap 11 : Gaussian rough paths +
-    integrability of norms (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/GRP_handout.pdf>)
-    (<hlink|notes|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/GRP_notes.pdf>)
+    integrability of norms (<hlink|handout|../store/iam/seminar-rp-ss22/GRP_handout.pdf>)
+    (<hlink|notes|../store/iam/seminar-rp-ss22/GRP_notes.pdf>)
 
     <item>1/7 - <strong|CANCELED / NO SEMINAR THIS WEEK><nbsp>-
     Martini<nbsp>\U Chap 12: SPDEs : Feynman-Kac + flow transformation +
@@ -92,7 +92,7 @@
     <item>15/7 - Brennecke \U unbounded rough drivers (paper)
 
     <item>15/7 - Galeati \U<nbsp>reflected rough DE (paper)
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rp-ss22/Handout_-_Reflected_RDEs.pdf>)
+    (<hlink|handout|../store/iam/seminar-rp-ss22/Handout_-_Reflected_RDEs.pdf>)
   </enumerate>
 
   <section*|Reference Material>
@@ -101,13 +101,13 @@
     <item>Friz, Peter K., and Martin Hairer.<nbsp><em|A Course on Rough
     Paths: With an Introduction to Regularity Structures>. Springer, 2014.
 
-    <item>Deya, Aurélien, Massimiliano Gubinelli, Martina Hofmanová, and Samy
+    <item>Deya, Aurï¿½lien, Massimiliano Gubinelli, Martina Hofmanovï¿½, and Samy
     Tindel. \POne-Dimensional Reflected Rough Differential Equations.\Q
     Stochastic Processes and Their Applications 129, no. 9 (September 1,
     2019): 3261\U81.<nbsp><hlink|https://doi.org/10.1016/j.spa.2018.09.007|https://doi.org/10.1016/j.spa.2018.09.007>.
 
     <item>Bailleul, Ismael, and Massimiliano Gubinelli. \PUnbounded Rough
-    Drivers.\Q Annales de La Faculté Des Sciences de Toulouse Mathématiques
+    Drivers.\Q Annales de La Facultï¿½ Des Sciences de Toulouse Mathï¿½matiques
     26, no. 4 (2017): 795\U830.<nbsp><hlink|https://doi.org/10.5802/afst.1553|https://doi.org/10.5802/afst.1553>.
 
     <item>Gubinelli, Massimiliano. \PRamification of Rough Paths.\Q Journal
@@ -115,7 +115,7 @@
     693\U721.<nbsp><hlink|https://doi.org/10.1016/j.jde.2009.11.015|https://doi.org/10.1016/j.jde.2009.11.015>.
 
     <item>Hairer, Martin, and David Kelly. \PGeometric versus Non-Geometric
-    Rough Paths.\Q Annales de l'Institut Henri Poincaré, Probabilités et
+    Rough Paths.\Q Annales de l'Institut Henri Poincarï¿½, Probabilitï¿½s et
     Statistiques 51, no. 1 (February 2015):
     207\U51.<nbsp><hlink|https://doi.org/10.1214/13-AIHP564|https://doi.org/10.1214/13-AIHP564>.
 

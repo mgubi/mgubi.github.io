@@ -34,16 +34,16 @@
   <strong|Zeit:<nbsp>Do.<nbsp>14-16 (oder Fr. 14-16)>
 
   Statistische Mechanik zielt darauf, das Verhalten makroskopischer Objekte
-  ausgehend von einer mikroskopischen Beschreibung zu erklären. In dem
+  ausgehend von einer mikroskopischen Beschreibung zu erklï¿½ren. In dem
   Seminar wollen wir die wichtigsten Grundlagen
   dieses<nbsp>Bereichs<nbsp>berarbeiten und auch einige interessante
-  Anwendungen kennenlernen.<nbsp>Es soll in dieser Seminar, hauptsächlich dem
+  Anwendungen kennenlernen.<nbsp>Es soll in dieser Seminar, hauptsï¿½chlich dem
   Buch von S. Friedli und Y. Velenik folgend (siehe unten), um eine
-  mathematische Einführung in die klassische Theorie von
+  mathematische Einfï¿½hrung in die klassische Theorie von
   Gleichgewichtsystemen anhand des (technisch einfacheren Falls) von
   Gittermodellen gehen.<nbsp>
 
-  <strong|Vorkenntnisse.><nbsp>Mindestens Einführung in die W-Theorie.
+  <strong|Vorkenntnisse.><nbsp>Mindestens Einfï¿½hrung in die W-Theorie.
 
   Statistical mechanics aims to explain the behavior of macroscopic objects
   on the basis of a microscopic description.<nbsp>In the seminar we want to
@@ -67,47 +67,47 @@
 
   <\enumerate>
     <item>Introduction [Gubinelli, 22.4.2021]
-    (<hlink|script|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/seminar-stat-mech-lecture-intro.pdf>)
+    (<hlink|script|../store/iam/seminar-stat-mech-ss21/seminar-stat-mech-lecture-intro.pdf>)
 
     <item>The Curie\UWeiss Model<nbsp>[Carolin Eschenauer, 29.4.2021]
-    (<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Handzettel_Curie_Weiss_Modell.pdf>)
+    (<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handzettel_Curie_Weiss_Modell.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/KTsvSyM0fWi9yjD>) (ipython
-    <hlink|notebook1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Vortrag_Teil_1.ipynb>,
-    <hlink|notebook2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Vortrag_Teil_2.ipynb>)
+    <hlink|notebook1|../store/iam/seminar-stat-mech-ss21/Vortrag_Teil_1.ipynb>,
+    <hlink|notebook2|../store/iam/seminar-stat-mech-ss21/Vortrag_Teil_2.ipynb>)
 
-    <item>The Ising Model I [Daniela Söllheim,
-    6.5.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Handout_Isingmodell_Teil1.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/OypF0BDHcsCJFVh>)
+    <item>The Ising Model I [Daniela Sï¿½llheim,
+    6.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout_Isingmodell_Teil1.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/OypF0BDHcsCJFVh>)
 
     <item>The Ising Model II<nbsp><nbsp>[Carlotta Gerstein,
-    14.5.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Handout-Gerstein.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/GFNluDMG9DMkwri>)
+    14.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout-Gerstein.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/GFNluDMG9DMkwri>)
 
     <item>Liquid-Vapor Equilibrium<nbsp>[Julius Pan,
-    20.5.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/LVE-Julius_Pan.pdf>)
+    20.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/LVE-Julius_Pan.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/yvTA4wMTtQaBEsT>)
 
-    <item>Cluster Expansion [Paul Opfer, 10.6.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Cluster_Expansion_Handout.pdf>)
+    <item>Cluster Expansion [Paul Opfer, 10.6.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Cluster_Expansion_Handout.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/3ezJhsD0oJfD05R>)
 
     <item>Infinite-Volume Gibbs Measures I <nbsp>[Moritz Berg,
-    11.6.2021]<nbsp><nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Hauptseminar_Handout_Moriitz_Berg.pdf>)<nbsp>(<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Hauptseminar_Praesentation_Moritz_Berg.pdf>)
+    11.6.2021]<nbsp><nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Hauptseminar_Handout_Moriitz_Berg.pdf>)<nbsp>(<hlink|slides|../store/iam/seminar-stat-mech-ss21/Hauptseminar_Praesentation_Moritz_Berg.pdf>)
 
     <item>Infinite-Volume Gibbs Measures II [Ben
-    Breitinger,<nbsp>17.6.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/handout-short-breitinger.pdf>)<nbsp>(<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Breitinger-Gibbs-part2.pdf>)
+    Breitinger,<nbsp>17.6.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/handout-short-breitinger.pdf>)<nbsp>(<hlink|slides|../store/iam/seminar-stat-mech-ss21/Breitinger-Gibbs-part2.pdf>)
 
     <item>Infinite-Volume Gibbs Measures III [Anne
-    Weiÿ,<nbsp>1.7.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
+    Weiï¿½,<nbsp>1.7.2021]<nbsp>(<hlink|handou../store/iamli/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<hlink|slide../store/iamli/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
 
     <item>Pirogov\USinai theory [Jakob Kellermann,
-    2.7.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/HS_Stochastik_PST_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/wDf8cIxgV097xxQ>)
+    2.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/HS_Stochastik_PST_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/wDf8cIxgV097xxQ>)
 
     <item>The Gaussian Free Field on \<bbb-Z\>^d [Dario Welz,
-    8.7.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/GFF_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Pf9hbGofFB0nf0L>)
+    8.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/GFF_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Pf9hbGofFB0nf0L>)
 
     <item>Models with Continuous Symmetry [Philipp Ligtenberg,
-    15.7.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Models_with_Continuous_Symmetry-Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Wkg2RX3bhiaccEd>)
+    15.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Models_with_Continuous_Symmetry-Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Wkg2RX3bhiaccEd>)
 
     <item>Reflection Positivity [Antoina Westphal,
-    22.7.2021]<nbsp>(<hlink|handout|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-stat-mech-ss21/Handout_Reflection_Positivity.pdf>)
+    22.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout_Reflection_Positivity.pdf>)
   </enumerate>
 
   \;

@@ -19,7 +19,7 @@
 
   <subsection*|SS 2019<nbsp>>
 
-  Tuesday 8.30-10.00<nbsp>and Friday<nbsp>8.30-10.00, Kleine Hörsaal,
+  Tuesday 8.30-10.00<nbsp>and Friday<nbsp>8.30-10.00, Kleine Hï¿½rsaal,
   Wegelerstr. 10.<nbsp>
 
   <subsection*|Tutorials>
@@ -55,10 +55,10 @@
 
   <\itemize>
     <item><strong|Samstag<nbsp>27.7.2019.> From 9am to 11am in
-    the<nbsp>Groÿer Hörsaal, Wegelerstraÿe 10.
+    the<nbsp>Groï¿½er Hï¿½rsaal, Wegelerstraï¿½e 10.
 
     <item><strong|Donnerstag 19.9.2019.> From 9am to 11am in the<nbsp>Kleiner
-    Hörsaal, Wegelerstraÿe 10.
+    Hï¿½rsaal, Wegelerstraï¿½e 10.
   </itemize>
 
   <subsection*|Description>
@@ -78,7 +78,7 @@
     <item>Brownian motion: construction and sample path properties
   </itemize>
 
-  The course is a follow-up of ``Einführung in die
+  The course is a follow-up of ``Einfï¿½hrung in die
   Wahrscheinlichkeitstheorie\Q and a prerequisite to \PIntroduction to
   Stochastic Analysis"<nbsp>
 
@@ -92,7 +92,7 @@
 
     <item>D. Williams: Probability with martingales, Part A and C
 
-    <item>A. Eberle: Einführung in die Wahrscheinlichkeitstheorie, Lecture
+    <item>A. Eberle: Einfï¿½hrung in die Wahrscheinlichkeitstheorie, Lecture
     notes WT 2017/18, see <hlink|wt.iam.uni-bonn.de/eberle/skripten/|http://wt.iam.uni-bonn.de/eberle/skripten/>
   </enumerate>
 
@@ -103,39 +103,39 @@
   notes of the material presented in the lectures<nbsp>will be posted here:
 
   <\itemize>
-    <item><hlink|Note 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-1.pdf>:
+    <item><hlink|Note 1|../store/iam/stochastic-processes-ss19/sp-note-1.pdf>:
     Review of Measure spaces, Integration theory<nbsp>(v1.1, 10/4/19)
 
-    <item><hlink|Note 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-2.pdf>:
+    <item><hlink|Note 2|../store/iam/stochastic-processes-ss19/sp-note-2.pdf>:
     Conditional expectations (v1.0, 15/4/19)
 
-    <item><hlink|Note 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-3.pdf>:
+    <item><hlink|Note 3|../store/iam/stochastic-processes-ss19/sp-note-3.pdf>:
     Martingales (v1.1, 2/5/19)
 
-    <item><hlink|Note 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-4.pdf>:
+    <item><hlink|Note 4|../store/iam/stochastic-processes-ss19/sp-note-4.pdf>:
     Asymptotic behavior of martingales (v1.1, 3/5/19)
 
-    <item><hlink|Note 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-5.pdf>:
+    <item><hlink|Note 5|../store/iam/stochastic-processes-ss19/sp-note-5.pdf>:
     Closed martingales (v1.0, 13/5/19)
 
-    <item><hlink|Note 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-6.pdf>:
+    <item><hlink|Note 6|../store/iam/stochastic-processes-ss19/sp-note-6.pdf>:
     Martingale CLT and some applications of martingales (Kolmogorov's LLN,
     Kakutani's theorem, Radon-Nikodym theorem) (v1.1, 4/6/219)
 
-    <item><hlink|Note 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-7.pdf>:
+    <item><hlink|Note 7|../store/iam/stochastic-processes-ss19/sp-note-7.pdf>:
     Optimal stopping problems (v1.0, 3/6/19)
 
-    <item><hlink|Note 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-8.pdf>:
+    <item><hlink|Note 8|../store/iam/stochastic-processes-ss19/sp-note-8.pdf>:
     Markov chains (v1.1, 18/6/19)
 
-    <item><hlink|Note 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-9.pdf>:
+    <item><hlink|Note 9|../store/iam/stochastic-processes-ss19/sp-note-9.pdf>:
     Discrete chains, Doob's h-transform (v1.0, 19/6/19)
 
-    <item><hlink|Note 10|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-10.pdf>:
+    <item><hlink|Note 10|../store/iam/stochastic-processes-ss19/sp-note-10.pdf>:
     Construction of stochastic processes. Daniell-Kolmogorov theorem (v1.0,
     11/7/19)
 
-    <item><hlink|Note 11|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-note-11.pdf>:
+    <item><hlink|Note 11|../store/iam/stochastic-processes-ss19/sp-note-11.pdf>:
     Brownian motion and some of its properties (by F. de Vecchi, v1.0,
     11/7/19)
   </itemize>
@@ -153,40 +153,40 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-1.pdf>
+    <item><hlink|Sheet 1|../store/iam/stochastic-processes-ss19/sp-sheet-1.pdf>
     (due before 4pm on<nbsp>11/4, revised version 9/4)
 
-    <item><hlink|Sheet 2|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-2.pdf>
+    <item><hlink|Sheet 2|../store/iam/stochastic-processes-ss19/sp-sheet-2.pdf>
     (due before 4pm on 18/4)
 
-    <item><hlink|Sheet 3|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-3.pdf><nbsp>(due
+    <item><hlink|Sheet 3|../store/iam/stochastic-processes-ss19/sp-sheet-3.pdf><nbsp>(due
     before 4pm on 25/4)
 
-    <item><hlink|Sheet 4|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-4.pdf>
+    <item><hlink|Sheet 4|../store/iam/stochastic-processes-ss19/sp-sheet-4.pdf>
     (due before <nbsp>4pm on 2/5)
 
-    <item><hlink|Sheet 5|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-5.pdf>
+    <item><hlink|Sheet 5|../store/iam/stochastic-processes-ss19/sp-sheet-5.pdf>
     (due before 4pm on 9/5)
 
-    <item><hlink|Sheet 6|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-6.pdf><nbsp>(due
+    <item><hlink|Sheet 6|../store/iam/stochastic-processes-ss19/sp-sheet-6.pdf><nbsp>(due
     before 4pm on 16/5)
 
-    <item><hlink|Sheet 7|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-7.pdf><nbsp>(due
+    <item><hlink|Sheet 7|../store/iam/stochastic-processes-ss19/sp-sheet-7.pdf><nbsp>(due
     before 4pm on 23/5)
 
-    <item><hlink|Sheet 8|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-8.pdf><nbsp>(due
+    <item><hlink|Sheet 8|../store/iam/stochastic-processes-ss19/sp-sheet-8.pdf><nbsp>(due
     before noon on 31/5)
 
-    <item><hlink|Sheet 9|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-9.pdf>
+    <item><hlink|Sheet 9|../store/iam/stochastic-processes-ss19/sp-sheet-9.pdf>
     (due before 4pm on 6/6) (revised 4/6/19 to correct some typos)
 
-    <item><hlink|Sheet 10|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-10.pdf><nbsp>(due
+    <item><hlink|Sheet 10|../store/iam/stochastic-processes-ss19/sp-sheet-10.pdf><nbsp>(due
     before noon<nbsp>on 21/6)
 
-    <item><hlink|Sheet 11|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-11.pdf><nbsp>(due
+    <item><hlink|Sheet 11|../store/iam/stochastic-processes-ss19/sp-sheet-11.pdf><nbsp>(due
     before 4pm on 27/6)
 
-    <item><hlink|Sheet 12|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/stochastic-processes-ss19/sp-sheet-12.pdf><nbsp>(due
+    <item><hlink|Sheet 12|../store/iam/stochastic-processes-ss19/sp-sheet-12.pdf><nbsp>(due
     before 4pm on 4/7)
   </itemize>
 
@@ -194,7 +194,7 @@
 
   <\itemize>
     <item>Lecture 2/4<nbsp>: Overview of the course. Review of measures
-    spaces, Carathéodory extension theorem.
+    spaces, Carathï¿½odory extension theorem.
 
     <item>Lecture 5/4<nbsp>: Random variables and integration. Uniform
     integrability.
@@ -269,12 +269,12 @@
 
     <item>Lecture 2/7: (by F. de Vecchi)<nbsp>Definition of Brownian motion
     and equivalent characterizations as Markov process and as Gaussian
-    process. Haar functions and Lévy contsruction of Brownian motion (first
+    process. Haar functions and Lï¿½vy contsruction of Brownian motion (first
     part).
 
-    <item>Lecture 5/7:<nbsp> (by F. de Vecchi)<nbsp>Lévy construction of
+    <item>Lecture 5/7:<nbsp> (by F. de Vecchi)<nbsp>Lï¿½vy construction of
     Brownian motion (second part). Non-differentiability of Brownian motion.
-    Hölder continuity of Brownian motion. Brownian motion as limit of random
+    Hï¿½lder continuity of Brownian motion. Brownian motion as limit of random
     walks: finite dimensional marginals convergence.
 
     <item>Lecture 9/7: pre-exam

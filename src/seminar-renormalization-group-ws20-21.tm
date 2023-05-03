@@ -50,7 +50,7 @@
 
   <\itemize>
     <item>Notes from the organization seminar
-    (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/overview.pdf>)
+    (<hlink|pdf|../store/iam/seminar-rg-ws2021/overview.pdf>)
 
     <item>The history of the paper (<hlink|link|https://sites.google.com/site/slavarychkov/home>,
     skim down in the ``What's new'' section)
@@ -61,7 +61,7 @@
     <item>Useful lecture notes on the Grassmann formalism in RG
     (<hlink|link|https://www.math.ubc.ca/~feldman/papers/aisen-all.pdf>)
     ``Fermionic Functional Integrals and the Renormalization Group'' by
-    Feldman,<nbsp>Knörrer and<nbsp>Trubowitz.
+    Feldman,<nbsp>Knï¿½rrer and<nbsp>Trubowitz.
   </itemize>
 
   <subsection*|Topics of the various talks and speakers>
@@ -74,28 +74,28 @@
 
     <item>8/4 10h00 - Various representation for the fermionic expectations
     (Appendix D / Book) -<nbsp>Massimiliano Gubinelli
-    (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/talk-rg-apr-2021.pdf>)
+    (<hlink|slides|../store/iam/seminar-rg-ws2021/talk-rg-apr-2021.pdf>)
 
     <item>8/4 15h00 - Finite volume representation and infinite volume limit
-    (Appendix H) <nbsp>Chunqiu Song (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/RG-_Chunqiu_Song.pdf>)
+    (Appendix H) <nbsp>Chunqiu Song (<hlink|slides|../store/iam/seminar-rg-ws2021/RG-_Chunqiu_Song.pdf>)
 
     <item>9/4 10h00 - Renomalization map in the trimmed representation and
     fixed point equation (Sect 5.4, 5.5, Appendix C)<nbsp>Introduce the
     Banach space \<cal-B\> for effective actions -<nbsp>Margherita Disertori
-    (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/RG-trimmed-representation.pdf>)
+    (<hlink|slides|../store/iam/seminar-rg-ws2021/RG-trimmed-representation.pdf>)
 
     <item>9/4 15h00 - Norm bounds (Sect 5.6 / Appendix E) (needs Appendix D).
     Control of \<cal-R\>_\<gamma\>:\<cal-B\>\<rightarrow\>\<cal-B\> <nbsp>-
-    Francesco de Vecchi (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/renormalization-bounds-devecchi.pdf>)
+    Francesco de Vecchi (<hlink|slides|../store/iam/seminar-rg-ws2021/renormalization-bounds-devecchi.pdf>)
 
     <item>12/4 10h00 - Construction of the fixed point (Section 6)
     -<nbsp>Luca Fresta (<hlink|slides|https://uni-bonn.sciebo.de/s/oYjKYdUnUoYMRAp>)
 
     <item>13/4 10h00 - Proof of the key lemma (Section 7) -<nbsp>Mattia Turra
-    (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/Key-Lemma-turra.pdf>)
+    (<hlink|slides|../store/iam/seminar-rg-ws2021/Key-Lemma-turra.pdf>)
 
     <item>15/4 10h00 - The RG in classical<nbsp>PDE theory -- Lucio Galeati
-    (<hlink|slides|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/seminar-rg-ws2021/galeati-without-breaks.pdf>)
+    (<hlink|slides|../store/iam/seminar-rg-ws2021/galeati-without-breaks.pdf>)
   </itemize>
 
   <subsection*|<nbsp>>
@@ -131,7 +131,7 @@
     Nuclear Physics B 231, no. 2 (January 1984): 269\U95,
     <hlink|https://doi.org/10.1016/0550-3213(84)90287-6|https://doi.org/10.1016/0550-3213(84)90287-6>.
 
-    <item>David C. Brydges, Roberto Fernández, Functional Integrals and Their
+    <item>David C. Brydges, Roberto Fernï¿½ndez, Functional Integrals and Their
     Applications, 1993.
   </itemize>
 </body>

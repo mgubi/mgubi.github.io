@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amsmath,amssymb,enumerate,theorem}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\tmem}[1]{{\em #1\/}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 5}}}
+
+\ }}
+
+
+{\scriptsize{Version 1, 2020.05.22. Tutorial classes: Mon June 1st 16--18 \
+(Zoom) Min Liu \textbar  Wed June 3rd 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 4pm Thursday May 28th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+2] \tmtextbf{(Passage time to a sloping line) }Let $X$ be a
+  one--dimensional Brownian motion with $X_0 = 0$ and let $a > 0$, $b \in
+  \mathbb{R}$.
+  \begin{enumeratealpha}
+    \item Let $T_L = \inf \{ t \geqslant 0 : X_t = a + bt \}$ denote the first
+    passage time to the line $y = a + bt$. Show that
+    \begin{equation}
+      \mathbb{P} (T_L \leqslant t) =\mathbb{E} [e^{- bX_t - b^2 t / 2}
+      \mathbb{I}_{T_a \leqslant t}], \label{eq:1}
+    \end{equation}
+    where $T_a = \inf \{ t \geqslant 0 : X_t = a \}$ is the first passage time
+    to level $a$.
+    
+    \item Recall that, by the reflection principle, the law of $T_a$ is
+    absolutely continuous with density
+    \[ f_{T_a} (t) = at^{- 3 / 2} \varphi \left( a / \sqrt{t} \right)
+       \mathbb{I}_{(0, \infty)} (t), \]
+    where $\varphi$ is the standard normal density. Deduce that the law of
+    $T_L$ is absolutely continuous with density
+    \[ f_{T_L} (t) = at^{- 3 / 2} \varphi \left( (a + bt) / \sqrt{t} \right)
+       \mathbb{I}_{(0, \infty)} (t) . \]
+    {\tmem{[Hint: in~{\eqref{eq:1}} take the conditional expectation w.r.t.
+    $\mathcal{F}_{T_a}$]}}.
+    
+    \item Show that, for $b > 0$,
+    \[ \mathbb{E} [e^{- bX_t} \max_{s \leqslant t} (X_s)] \simeq \frac{e^{b^2
+       t / 2}}{2 b}, \quad \text{and} \quad \mathbb{E} [e^{bX_t} \max_{s
+       \leqslant t} (X_s)] \simeq b \tmop{te}^{b^2 t / 2}, \qquad \text{as $t
+       \rightarrow \infty$} . \]
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 2+2+3] \tmtextbf{(Brownian Bridge)} Let $X$ be a $d$--dimensional
+  Brownian motion with $X_0 = 0$.
+  \begin{enumeratealpha}
+    \item Show that, for any $y \in \mathbb{R}^d$, the process
+    \[ X^y_t = X_t - t (X_1 - y) \qquad t \in [0, 1] \]
+    is independent of $X_1$.
+    
+    \item Let $\mu_y$ denote the law of $X^y$ on $C ([0, 1] ; \mathbb{R}^d)$.
+    Show that $y \mapsto \mu_y$ is a regular version of the conditional
+    distribution of $X$ given $X_1 = y$.
+    
+    \item Compute the SDE satisfied by the canonical process $Y$ under the
+    probability measure $\mu_y$ on the space $C ([0, 1] ; \mathbb{R}^d)$.
+    (Hint: use Doob's $h$-transform argument from the lectures)
+  \end{enumeratealpha}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3] Let $M$ be a positive continuous supermartingale such that
+  $\mathbb{E} [M_0] < \infty$. Let $M_{\infty} = \lim_{t \rightarrow \infty}
+  M_t$. Show that if $\mathbb{E} [M_{\infty}] =\mathbb{E} [M_0]$ then $M$ is a
+  martingale and $\mathbb{E} [M_{\infty} |\mathcal{F}_t] = M_t$.
+  \tmtextit{[Hint: prove that $\mathbb{E} [M_{\infty} |\mathcal{F}_t]
+  \leqslant M_t$ and that $\mathbb{E} [M_t] =\mathbb{E} [M_0]$ and conclude.]}
+\end{exercise}
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 4] Prove directly that the $h$-transform gives a transformation of
+  martingale problems from the one with drift $b$ and diffusion $\sigma$ to
+  another with same diffusion coefficient $\sigma$ but different drift
+  $\tilde{b}$.
+\end{exercise}
+
+\hrulefill
+
+\
+
+\end{document}

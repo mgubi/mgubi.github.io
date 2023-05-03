@@ -12,6 +12,35 @@
 
   <with|font-shape|italic|personal web pages><vspace|3em>
 
+  I'm a mathematician, currently Wallis professor of mathematics at the
+  University of Oxford. Previously I held positions in Bonn, Paris and Pisa.
+  I work in the field of stochastic analysis: my interests lie at the
+  intersection of analysis, probability and mathematical physics. I like to
+  think about the random functions which appear in many physical theories,
+  including quantum mechanics and quantum field theory. I have a PhD in
+  theoretical physics and at some point I worked in an experimental
+  laboratory. I run.\ 
+
+  <vspace|1em>
+
+  <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
+  \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
+  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
+
+  <hlink|curriculum vitae|./curriculum-vitae.tm> \<cdot\>
+  <hlink|publications|publications.tm> \<cdot\>
+  <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
+  \<cdot\> <hlink|people|people.tm> \<cdot\> <hlink|teaching|teaching.tm>
+
+  <hlink|programming|./programming.tm><vspace|1em>
+
+  <\small>
+    a <hlink|list|./list-articles.tm> of all the articles & a
+    <hlink|template|template.tm> for new pages
+  </small>
+
+  <vspace|1em>
+
   <\smaller>
     <\with|font-shape|italic>
       <\quotation>
@@ -39,23 +68,9 @@
     </with>
   </smaller>
 
-  <vspace|3em>
+  \;
 
-  <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
-  \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
-  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
-
-  <hlink|curriculum vitae|./curriculum-vitae.tm> \<cdot\>
-  <hlink|publications|publications.tm> \<cdot\>
-  <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
-  \<cdot\> <hlink|people|people.tm> \<cdot\> <hlink|teaching|teaching.tm>
-
-  <hlink|programming|./programming.tm><vspace|1em>
-
-  <\small>
-    a <hlink|list|./list-articles.tm> of all the articles & a
-    <hlink|template|template.tm> for new pages
-  </small>
+  \;
 </body>
 
 <\initial>

@@ -1,0 +1,160 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{geometry,amssymb,enumerate,theorem,amsmath}
+\geometry{a4paper, bottom=20mm, top=20mm}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\TeXmacs}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\kern-.1em\lower.5ex\hbox{\textsc{m\kern-.05ema\kern-.125emc\kern-.05ems}}}
+\newcommand{\mathd}{\mathrm{d}}
+\newcommand{\tmem}[1]{{\em #1\/}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\newcommand{\renderexercise}[2]{{\paddednormal{0.5fn}{0.5fn}{{\exercisename{#1{\exercisesep}}}#2}}}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}{\small{\tmtextbf{Institute for Applied Mathematics
+-- SS2020}}}\hspace{4cm}\hbox{}
+
+{\small{Massimiliano Gubinelli}}
+
+\
+
+
+{\center{{\LARGE{\tmtextbf{V4F1 Stochastic Analysis -- Problem Sheet 3}}}
+
+\ }}
+
+
+{\scriptsize{Version 2, 2020.05.07. Tutorial classes: Mon May 18th 16--18 \
+(Zoom) Min Liu \textbar  Wed May 20th 16--18 (Zoom) Daria Frolova.
+
+Solutions in groups of 2 (at most). To be handled in {\LaTeX} or {\TeXmacs}
+format via eCampus not later than 4pm Thursday May 14th. Use this sheet for
+your solutions and write them under the corresponding exercise. Fill out your
+names below.
+
+\ }}
+
+\tmtextbf{Names: XXXXXXXXXXXX/YYYYYYYYYYYYYY}
+
+\
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3] \tmtextbf{(Constant quadratic variation)} Let $M$ be a continuous
+  local martingale and $S \leqslant T$ two stopping times. Prove that $[M]_T =
+  [M]_S < \infty$ a.s implies $M_t = M_S$ for all $t \in [S, T]$ a.s. .
+  \tmtextit{[Hint: consider the continuous local martingale $N_t = \int_0^t
+  \mathbb{I}_{] S, T]} (s) \mathd M_s$}].
+\end{exercise}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3+3]\tmtextbf{(Feynman--Kac formula for Ito diffusions)}
+  \begin{enumeratealpha}
+    \item Consider the solution $X$ of the SDE in $\mathbb{R}^n$
+    \[ \mathd X_t = b (t, X_t) \mathd t + \sigma (t, X_t) \mathd B_t, \qquad
+       X_0 = x, \]
+    where $B$ is a $d$-dimensional Brownian motion and $b : \mathbb{R}^n_{}
+    \rightarrow \mathbb{R}^n$, $\sigma : \mathbb{R}^n \rightarrow
+    \mathbb{R}^{n \times d}$ locally bounded continuous coefficients. Let
+    $\mathcal{L}$ be the associated infinitesimal generator. Fix $t > 0$ and
+    assume that $\varphi : \mathbb{R}^n \rightarrow \mathbb{R}$ and $V : [0,
+    t] \times \mathbb{R}^n \rightarrow \mathbb{R}_{\geqslant 0}$ are
+    continuous functions. Show that any bounded $C^{1, 2}$ solution $u : [0,
+    t] \times \mathbb{R}^n \rightarrow \mathbb{R}$ of the equation
+    \[ \begin{array}{rcl}
+         \frac{\partial}{\partial s} u (s, x) & = & \mathcal{L}u (s, x) - V
+         (s, x) u (s, x), \qquad (s, x) \in (0, t] \times \mathbb{R}^n,\\
+         u (0, x) & = & \varphi (x),
+       \end{array} \]
+    has the stochastic representation
+    \[ u (t, x) =\mathbb{E} \left[ \varphi (X_t) \exp \left( - \int_0^t V (t -
+       s, X_s) \mathd s \right) \right] . \]
+    In particular, there is at most only one solution of the PDE.
+    
+    \tmtextit{[Hint: show that $M_r = \exp \left( - \int_0^r V (t - s, X_s)
+    \mathd s \right) u (t - r, X_r)$ is a local martingale]}.
+    
+    \item The price of a security is modeled by a geometric Brownian motion
+    $X$ with parameters $\alpha, \sigma > 0$:
+    \[ \mathd X_t = \alpha X_t \mathd t + \sigma X_t \mathd B_t, \qquad X_0 =
+       x > 0. \]
+    At price $y$ we have a running cost of $V (y)$ per unit time. The total
+    cost up to time $t$ is then
+    \[ A_t = \int_0^t V (X_s) \mathd s. \]
+    Suppose that $u$ is a bounded solution to the PDE
+    \[ \begin{array}{rcl}
+         \frac{\partial}{\partial s} u (s, x) & = & \mathcal{L}u (s, x) -
+         \beta V (x) u (s, x), \qquad (s, x) \in (0, t] \times
+         \mathbb{R}_{\geqslant 0},\\
+         u (0, x) & = & 1,
+       \end{array} \]
+    where $\mathcal{L}$ is the generator of $X$. Show that the Laplace
+    transform of $A_t$ is given by
+    \[ \mathbb{E} [e^{- \beta A_t}] = u (t, x) . \]
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\begin{exercise}
+  [Pts 3+3+3+2] \tmtextbf{(Continuous Branching Process)} Consider a family of
+  diffusions $(X_t (x))_{t > 0, x > 0}$ satisfying the SDE
+  \[ \mathd X_t (x) = \alpha X_t (x) \mathd t + \sqrt{\beta X_t (x)} \mathd
+     B_t, \qquad X_0 (x) = x, \]
+  where $\alpha \in \mathbb{R}, \beta \in \mathbb{R}_{> 0}$. Existence of
+  strong solutions to this equation follows from the Yamada--Watanabe theorem.
+  Let $(\tilde{X}, \tilde{B})$ be an independent copy of $(X, B)$ and let $Y_t
+  (x, y) = X_t (x) + \tilde{X}_t (y)$ for $t > 0, x > 0, y > 0$.
+  \begin{enumeratealpha}
+    \item \tmtextit{(Branching)} Compute the SDE satisfied by $Y$ and prove
+    that $(Y (x, y))_{t \geqslant 0}$ has the same law of $(X_t (x + y))_{t
+    \geqslant 0}$. \tmtextit{[Hint: use martingale caracterization of weak
+    solutions and pathwise uniqueness]}
+    
+    \item \tmtextit{(Duality)} Show that this implies that there exists a
+    function $u : \mathbb{R}_{\geqslant 0} \times \mathbb{R}_{> 0} \rightarrow
+    \mathbb{R}_{\geqslant 0}$ such that
+    \begin{equation}
+      \mathbb{E} [e^{- \lambda X_t (x)}] = e^{- xu (t, \lambda)}, \qquad x \in
+      \mathbb{R}_{> 0} \label{eq:duality}
+    \end{equation}
+    if we assume that the map $x \mapsto \mathbb{E} [e^{- \lambda X_t (x)}]$
+    is continuous.
+    
+    \item Assume that $u : \mathbb{R}_{\geqslant 0} \times \mathbb{R}_{> 0}
+    \rightarrow \mathbb{R}_{\geqslant 0}$ is differentiable with respect to
+    its first parameter. Apply Ito formula to $s \mapsto G_s = e^{- u (t - s,
+    \lambda) X_s (x)}$ and determine which differential equation $u$ should
+    satisfy in order for $G$ to be a local martingale. Prove that in this case
+    eq.~{\eqref{eq:duality}} is satisfied (in particular, if a solution of the
+    equation exists then it is unique).
+    
+    \item {\tmem{(Extinction probability)}} Find the explicit solution $u$ for
+    the differential equation and using eq.~{\eqref{eq:duality}} prove that if
+    $\alpha = 0$ then
+    \[ \mathbb{P} (X_t (x) = 0) = e^{- 2 x / (\beta t)}, \qquad x, t > 0. \]
+  \end{enumeratealpha}
+\end{exercise}
+
+\
+
+\hrulefill
+
+\
+
+\end{document}

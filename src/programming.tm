@@ -37,7 +37,7 @@
     <item>A mind map of TeXmacs (<hlink|link|https://www.mindomo.com/mindmap/b207992c90c046bdbe4053cbdf88b5d5>)
 
     <item>A presentation I gave on TeXmacs and on GNU Guile scheme as its
-    extension language (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/texmacs/talk-texmacs-guile-strasbourg-june-2019.pdf>,<nbsp><hlink|tm|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/texmacs/talk-texmacs-guile-strasbourg-june-2019.tm>)
+    extension language (<hlink|pdf|../store/iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.pdf>,<nbsp><hlink|tm|../store/iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.tm>)
 
     <item>Youtube channel (<hlink|link|https://www.youtube.com/channel/UCLaZZkOj3GPYFu9pVsEbthg>)
 

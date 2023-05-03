@@ -23,59 +23,59 @@
 
   <\itemize>
     <item>Course: Stochastic Analysis (SS22)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-analysis-ss22>)
+    (<hlink|link|lectures-stochastic-analysis-ss22.tm>)
 
     <item>Master seminar: Rough paths (SS22)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/seminar-rough-paths-ss22>)
+    (<hlink|link|seminar-rough-paths-ss22.tm>)
 
     <item>WS21/22 Sabbatical
 
     <item>Course:<nbsp>Stochastic Processes (SS21)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-processes-ss19-1>)
+    (<hlink|link|lectures-stochastic-processes-ss21.tm>)
 
     <item>Hauptseminar Stochastik:<nbsp>Statistische Mechanik von
-    Gittersystemen (SS21) (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/statistical-mechanics>)
+    Gittersystemen (SS21) (<hlink|link|seminar-statistical-mechanics-ss21.tm>)
 
     <item>Master seminar: Nonperturbative renormalization group (WS2021)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/seminar-exact-rg-ws2021>)
+    (<hlink|link|seminar-renormalization-group-ws20-21.tm>)
 
     <item>Course: Stochastic quantization of Euclidean quantum
-    field<nbsp>theories (WS2021) (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/sq-lectures-milan-ws2021>)<nbsp>
+    field<nbsp>theories (WS2021) (<hlink|link|lectures-sq-ws20-21.tm>)
 
-    <item>Course: Einfürung in die Wahrscheinlichkeitstheorie
-    (WS2021)<nbsp>(<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/einf-wahrscheinlichkeitstheorie-ws2021>)
+    <item>Course: Einfï¿½rung in die Wahrscheinlichkeitstheorie
+    (WS2021)<nbsp>(<hlink|link|lectures-intro-probability-ws20-21.tm>)
 
     <item>Course:<nbsp>Functional Integration and Quantum Mechanics (SS20)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/functional-integration-and-qm-ss20>)
+    (<hlink|link|lectures-qmfi-ss20.tm>)
 
     <item>Course: Stochastic Analysis (SS20)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-analysis-ss20>)
+    (<hlink|link|lectures-stochastic-analysis-ss20.tm>)
 
-    <item>Bachelor thesis topics (SS20) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/bachelor-topics-ss20.pdf>)
+    <item>Bachelor thesis topics (SS20) (<hlink|pdf|../store/iam/bachelor-topics-ss20.pdf>)
 
     <item>Master seminar: The mathematics of Feynman integral (SS20)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/seminar-feynman-integrals-ss20>)
+    (<hlink|link|seminar-feynman-integrals-ss20.tm>)
 
     <item>Course: Foundations of Stochastic Analysis (WS1920)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>)
+    (<hlink|link|lectures-foundations-stochastic-analysis-ws19-20.tm>)
 
     <item>Bachelor Seminar: Large Deviations (WS1920)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/seminar-large-deviations-ws1920>)
+    (<hlink|link|seminar-large-deviations-ws19-20.tm>)
 
     <item>Course: Stochastic Processes (SS19)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-processes-ss19>)
+    (<hlink|link|lectures-stochastic-processes-ss19.tm>)
 
-    <item>Bachelor thesis topics (SS19) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/bachelor-topics-ss19.pdf>)
+    <item>Bachelor thesis topics (SS19) (<hlink|pdf|../store/iam/bachelor-topics-ss19.pdf>)
 
-    <item>Bachelor thesis topics (SS18) (<hlink|pdf|https://www.iam.uni-bonn.de/fileadmin/user_upload/gubinelli/bachelor-topics-ss18.pdf>)
+    <item>Bachelor thesis topics (SS18) (<hlink|pdf|../store/iam/bachelor-topics-ss18.pdf>)
 
     <item>Course: Quantum probability and quantum stochastic calculus (SS18)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/quantum-probability-ss18>)
+    (<hlink|link|lectures-quantum-probability-ss18.tm>)
 
-    <item>Course:<nbsp>Markov Processes (WS17/18)<nbsp>(<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/markov-processes-ws1718>)
+    <item>Course:<nbsp>Markov Processes (WS17/18)<nbsp>(<hlink|link|lectures-markov-processes-ws17-18.tm>)
 
     <item>Course:<nbsp>Stochastic Analysis
-    (SS17)<nbsp>(<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-analysis-ss17>)
+    (SS17)<nbsp>(<hlink|link|lectures-stochastic-analysis-ss17.tm>)
 
     <item>Course:<nbsp>Rough paths and Controlled paths (WS16/17)
 
@@ -83,10 +83,10 @@
     (SS16)<nbsp>(<hlink|link|http://www.math.uni-bonn.de/people/thiele/workshop18/>)
 
     <item>Course:<nbsp>Stochastic Analysis (SS16)
-    (<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/stochastic-analysis-ss16>)
+    (<hlink|link|lectures-stochastic-analysis-ss16.tm>)
 
     <item>Course:<nbsp>Rough paths and Controlled paths
-    (WS15/16)<nbsp>(<hlink|link|https://www.iam.uni-bonn.de/abteilung-gubinelli/teaching/rough-paths-controlled-paths-ws1516>)
+    (WS15/16)<nbsp>(<hlink|link|lectures-rough-paths-ws15-16.tm>)
   </itemize>
 
   <next-line>
