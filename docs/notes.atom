@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-03T22:14:00Z</updated>
+  <updated>2023-05-03T22:15:07Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -14,10 +14,112 @@
   <entry>
     <title>Teaching</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
-    <id>texmacs.github.io/notes/teaching.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
+    <id>texmacs.github.io/notes/teaching.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
     <published>2023-05-03T22:05:50Z</published>
     <summary>Things I have taught.</summary>
+  </entry>
+  <entry>
+    <title>Seminar on rough paths</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-rough-paths-ss22.html"/>
+    <id>texmacs.github.io/notes/seminar-rough-paths-ss22.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:08:07Z</published>
+    <summary>An introductory master seminar on Rough path theory, which has
+    taken place in Bonn in the Summer Semester 2022.</summary>
+  </entry>
+  <entry>
+    <title>Seminar: Nonperturbative Renormalization</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-renormalization-group-ws20-21.html"/>
+    <id>texmacs.github.io/notes/seminar-renormalization-group-ws20-21.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:09:54Z</published>
+    <summary>An introduction to the continuous renormalization group via a
+    Grassmann model. Took place in WS 20202021.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-processes-ss19.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-processes-ss19.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:12:51Z</published>
+    <summary>An introduction to various classes of stochastic processes,
+    namely families of random variables indexed by a discrete or continuous
+    parameter (time or space). The course took place in Boon in SS
+    2019.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss22.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss22.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:07:43Z</published>
+    <summary><concat>A course developing applications<nbsp/>of stochastic
+    calculus to the study of continuous time stochastic processes. Course
+    delivered in Bonn in the Summer Semester 2022.</concat></summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss20.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss20.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:10:44Z</published>
+    <summary><concat>A course developing applications<nbsp/>of stochastic
+    calculus to the study of continuous time stochastic processes. Course
+    delivered in Bonn in the Summer Semester 2020.</concat></summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss17.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss17.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:11:39Z</published>
+    <summary><concat>A course developing applications<nbsp/>of stochastic
+    calculus to the study of continuous time stochastic processes. Course
+    delivered in Bonn in the Summer Semester 2017.</concat></summary>
+  </entry>
+  <entry>
+    <title>Rough paths and controlled paths</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-rough-paths-ws15-16.html"/>
+    <id>texmacs.github.io/notes/lectures-rough-paths-ws15-16.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:07:05Z</published>
+    <summary><notes-abstract>An introduction to the theory of rough paths,
+    controlled paths and to recent developments in the analysis of singular
+    SPDEs. Course delivered in Bonn in Winter Semester
+    2015/2016.</notes-abstract></summary>
+  </entry>
+  <entry>
+    <title>Quantum probability and quantum stochastic calculus</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-quantum-probability-ss18.html"/>
+    <id>texmacs.github.io/notes/lectures-quantum-probability-ss18.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:13:45Z</published>
+    <summary>An introduction to the area of quantum probability and quantum
+    stochastic calculus, seen as non-commutative generalisation of probability
+    theory. Course delivered in Bonn in Summer Semester 2018.</summary>
+  </entry>
+  <entry>
+    <title>Functional Integration and Quantum Mechanics</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-qmfi-ss20.html"/>
+    <id>texmacs.github.io/notes/lectures-qmfi-ss20.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:05:11Z</published>
+    <summary><concat>An introduction to the study of Quantum Mechanical
+    models<nbsp/>via the connection with probability theory given by the
+    Euclidean approach. Course delivered in Bonn in Summer Semester
+    2020.</concat></summary>
+  </entry>
+  <entry>
+    <title>Template article</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-intro-probability-ws20-21.html"/>
+    <id>texmacs.github.io/notes/lectures-intro-probability-ws20-21.tm:2023-05-03T22:15:01Z</id>
+    <updated>2023-05-03T22:15:01Z</updated>
+    <published>2023-05-03T22:04:20Z</published>
+    <summary><concat>This file provides a template for typical notes/articles.
+    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
+    small summary of the content, as exemplified by this very
+    text.</concat></summary>
   </entry>
   <entry>
     <title><concat>Hauptseminar Stochastik:<nbsp/>Statistische Mechanik von
@@ -30,24 +132,6 @@
     You can use the tag <src-macro>notes-abstract</src-macro> to provide a
     small summary of the content, as exemplified by this very
     text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Seminar on rough paths</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-rough-paths-ss22.html"/>
-    <id>texmacs.github.io/notes/seminar-rough-paths-ss22.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:08:07Z</published>
-    <summary>An introductory master seminar on Rough path theory, which has
-    taken place in Bonn in the Summer Semester 2022.</summary>
-  </entry>
-  <entry>
-    <title>Seminar: Nonperturbative Renormalization</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-renormalization-group-ws20-21.html"/>
-    <id>texmacs.github.io/notes/seminar-renormalization-group-ws20-21.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:09:54Z</published>
-    <summary>An introduction to the continuous renormalization group via a
-    Grassmann model. Took place in WS 20202021.</summary>
   </entry>
   <entry>
     <title>Large Deviations</title>
@@ -81,47 +165,6 @@
     text.</concat></summary>
   </entry>
   <entry>
-    <title>Stochastic Processes</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-processes-ss19.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-processes-ss19.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:12:51Z</published>
-    <summary>An introduction to various classes of stochastic processes,
-    namely families of random variables indexed by a discrete or continuous
-    parameter (time or space). The course took place in Boon in SS
-    2019.</summary>
-  </entry>
-  <entry>
-    <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss22.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss22.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:07:43Z</published>
-    <summary><concat>A course developing applications<nbsp/>of stochastic
-    calculus to the study of continuous time stochastic processes. Course
-    delivered in Bonn in the Summer Semester 2022.</concat></summary>
-  </entry>
-  <entry>
-    <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss20.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss20.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:10:44Z</published>
-    <summary><concat>A course developing applications<nbsp/>of stochastic
-    calculus to the study of continuous time stochastic processes. Course
-    delivered in Bonn in the Summer Semester 2020.</concat></summary>
-  </entry>
-  <entry>
-    <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss17.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss17.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:11:39Z</published>
-    <summary><concat>A course developing applications<nbsp/>of stochastic
-    calculus to the study of continuous time stochastic processes. Course
-    delivered in Bonn in the Summer Semester 2017.</concat></summary>
-  </entry>
-  <entry>
     <title>Stochastic Analysis</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss16.html"/>
     <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss16.tm:2023-05-03T21:42:11Z</id>
@@ -145,43 +188,11 @@
     2021.</summary>
   </entry>
   <entry>
-    <title>Quantum probability and quantum stochastic calculus</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-quantum-probability-ss18.html"/>
-    <id>texmacs.github.io/notes/lectures-quantum-probability-ss18.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:13:45Z</published>
-    <summary>An introduction to the area of quantum probability and quantum
-    stochastic calculus, seen as non-commutative generalisation of probability
-    theory. Course delivered in Bonn in Summer Semester 2018.</summary>
-  </entry>
-  <entry>
-    <title>Functional Integration and Quantum Mechanics</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-qmfi-ss20.html"/>
-    <id>texmacs.github.io/notes/lectures-qmfi-ss20.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:05:11Z</published>
-    <summary><concat>An introduction to the study of Quantum Mechanical
-    models<nbsp/>via the connection with probability theory given by the
-    Euclidean approach. Course delivered in Bonn in Summer Semester
-    2020.</concat></summary>
-  </entry>
-  <entry>
     <title>Markov Processes</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-markov-processes-ws17-18.html"/>
     <id>texmacs.github.io/notes/lectures-markov-processes-ws17-18.tm:2023-05-03T21:42:11Z</id>
     <updated>2023-05-03T21:42:11Z</updated>
     <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Template article</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-intro-probability-ws20-21.html"/>
-    <id>texmacs.github.io/notes/lectures-intro-probability-ws20-21.tm:2023-05-03T21:42:11Z</id>
-    <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T22:04:20Z</published>
     <summary><concat>This file provides a template for typical notes/articles.
     You can use the tag <src-macro>notes-abstract</src-macro> to provide a
     small summary of the content, as exemplified by this very
@@ -271,17 +282,6 @@
     You can use the tag <src-macro>notes-abstract</src-macro> to provide a
     small summary of the content, as exemplified by this very
     text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Rough paths and controlled paths</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-rough-paths-ws15-16.html"/>
-    <id>texmacs.github.io/notes/lectures-rough-paths-ws15-16.tm:2023-04-22T14:22:19Z</id>
-    <updated>2023-04-22T14:22:19Z</updated>
-    <published>2023-05-03T22:07:05Z</published>
-    <summary><notes-abstract>An introduction to the theory of rough paths,
-    controlled paths and to recent developments in the analysis of singular
-    SPDEs. Course delivered in Bonn in Winter Semester
-    2015/2016.</notes-abstract></summary>
   </entry>
   <entry>
     <title>Template article</title>
