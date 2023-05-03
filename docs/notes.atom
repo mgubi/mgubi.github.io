@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-03T22:15:07Z</updated>
+  <updated>2023-05-03T22:26:30Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -122,16 +122,13 @@
     text.</concat></summary>
   </entry>
   <entry>
-    <title><concat>Hauptseminar Stochastik:<nbsp/>Statistische Mechanik von
-    Gittersystemen (SS21)</concat></title>
+    <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-statistical-mechanics-ss21.html"/>
     <id>texmacs.github.io/notes/seminar-statistical-mechanics-ss21.tm:2023-05-03T21:42:11Z</id>
     <updated>2023-05-03T21:42:11Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
+    <published>2023-05-03T22:26:24Z</published>
+    <summary>This is a seminar on statistical mechanics held in Bonn in SS
+    2021 for the Bachelor degree in Mathematics.</summary>
   </entry>
   <entry>
     <title>Large Deviations</title>

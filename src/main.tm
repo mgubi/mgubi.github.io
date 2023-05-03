@@ -10,7 +10,7 @@
   <html-div-class|mg-title|<huge|<with|font-series|bold|Massimiliano
   Gubinelli>>>\ 
 
-  <with|font-shape|italic|personal web pages><vspace|3em>
+  <with|font-shape|italic|personal webpages><vspace|3em>
 
   I'm a mathematician, currently Wallis professor of mathematics at the
   University of Oxford. Previously I held positions in Bonn, Paris and Pisa.
@@ -36,8 +36,8 @@
 
   <\small>
     a <hlink|list|./list-articles.tm> of all the articles & a
-    <hlink|template|template.tm> for new pages \<cdot\> this website had been
-    created with <hlink|<TeXmacs>|http://www.texmacs.org>
+    <hlink|template|template.tm> for new pages \<cdot\> these webpages have
+    been created with <hlink|<TeXmacs>|http://www.texmacs.org>
   </small>
 
   <vspace|1em>

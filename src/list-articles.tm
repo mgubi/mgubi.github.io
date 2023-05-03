@@ -68,11 +68,10 @@
   <src-macro|notes-abstract> to provide a small summary of the content, as
   exemplified by this very text.|Wed May \ 3 22:15:01 2023 UTC>
 
-  <notes-entry|seminar-statistical-mechanics-ss21.tm|Hauptseminar
-  Stochastik:<nbsp>Statistische Mechanik von Gittersystemen (SS21)|This file
-  provides a template for typical notes/articles. You can use the tag
-  <src-macro|notes-abstract> to provide a small summary of the content, as
-  exemplified by this very text.|Wed May \ 3 21:42:11 2023 UTC>
+  <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
+  of lattice systems|This is a seminar on statistical mechanics held in Bonn
+  in SS 2021 for the Bachelor degree in Mathematics.|Wed May \ 3 21:42:11
+  2023 UTC>
 
   <notes-entry|seminar-large-deviations-ws19-20.tm|Large Deviations|This file
   provides a template for typical notes/articles. You can use the tag
