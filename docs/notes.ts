@@ -22,6 +22,8 @@
 
   <use-package|generic|html-font-size|libertine-font>
 
+  <assign|tmhtml-nbsp|<specific|html|&nbsp;>>
+
   <\active*>
     <\src-comment>
       Style parameters.
@@ -96,11 +98,11 @@
 
   <assign|hlink-tm|<macro|body|target|<hlink|<arg|body>|<merge|<arg|target>|.tm>>>>
 
-  <assign|notes-header-name|mg webpages>
+  <assign|notes-header-name|mg\|pages>
 
   <assign|notes-header-image|<image|../resources/texmacs-blog-transparent.png|20pt|||>>
 
-  <assign|notes-header-links|<macro|<hlink|[main]|./main.tm>>>
+  <assign|notes-header-links|<macro|[<hlink|main|./main.tm>]>>
 
   <assign|notes-header-table|<\macro|body>
     <\wide-tabular>

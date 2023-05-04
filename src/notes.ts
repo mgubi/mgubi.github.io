@@ -96,11 +96,11 @@
 
   <assign|hlink-tm|<macro|body|target|<hlink|<arg|body>|<merge|<arg|target>|.tm>>>>
 
-  <assign|notes-header-name|mg webpages>
+  <assign|notes-header-name|mg\|pages>
 
   <assign|notes-header-image|<image|../resources/texmacs-blog-transparent.png|20pt|||>>
 
-  <assign|notes-header-links|<macro|<hlink|[main]|./main.tm>>>
+  <assign|notes-header-links|<macro|[<hlink|main|./main.tm>]>>
 
   <assign|notes-header-table|<\macro|body>
     <\wide-tabular>
@@ -149,6 +149,13 @@
       Other customizations
     </src-comment>
   </active*>
+
+  We want to force export of non-breaking spaces which otherwise would have
+  been removed by exec_html
+
+  <assign|tmhtml-nbsp|<specific|html|&nbsp;>>
+
+  \;
 
   <assign|tmhtml-render-code|<macro|body|<html-div-class|tmweb-code|<arg|body>>>>
 

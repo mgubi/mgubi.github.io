@@ -13,11 +13,7 @@
 
   <notes-abstract|Things I have taught.>
 
-  \;
-
   <subsection*|Current lecture courses and seminars>
-
-  \;
 
   <subsection*|Old lecture courses and seminars in Bonn (2015\U2022)>
 
