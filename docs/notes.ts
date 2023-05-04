@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|source>
 
@@ -21,8 +21,6 @@
   </active*>
 
   <use-package|generic|html-font-size|libertine-font>
-
-  <assign|tmhtml-nbsp|<specific|html|&nbsp;>>
 
   <\active*>
     <\src-comment>
@@ -152,6 +150,13 @@
     </src-comment>
   </active*>
 
+  We want to force export of non-breaking spaces which otherwise would have
+  been removed by exec_html
+
+  <assign|tmhtml-nbsp|<specific|html|&nbsp;>>
+
+  \;
+
   <assign|tmhtml-render-code|<macro|body|<html-div-class|tmweb-code|<arg|body>>>>
 
   <assign|tmhtml-pseudo-code|<macro|body|<html-div-class|tmweb-code|<arg|body>>>>
@@ -174,7 +179,17 @@
 
   <assign|tmhtml-scm|<macro|body|<html-class|scheme|<with|mode|prog|prog-language|scheme|font-family|rm|<arg|body>>>>>
 
-  \;
+  <assign|tmhtml-bib-year-section|<\macro|year>
+    <html-div-class|tmweb-bib-year|<arg|year>>
+  </macro>>
+
+  <assign|xx-tmhtml-render-bibitem|<macro|text|<item|<arg|text>>>>
+
+  <assign|xx-tmhtml-render-bibliography|<\macro|name|body>
+    <principal-section*|<arg|name>>
+
+    <style-with|src-compact|all|<style-with|src-compact|all|<arg|body>>>
+  </macro>>
 </body>
 
 <initial|<\collection>

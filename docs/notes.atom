@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-04T14:55:06Z</updated>
+  <updated>2023-05-04T22:04:01Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,6 +12,14 @@
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
   <entry>
+    <title>Teaching</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
+    <id>texmacs.github.io/notes/teaching.tm:2023-05-04T14:59:13Z</id>
+    <updated>2023-05-04T14:59:13Z</updated>
+    <published>2023-05-03T22:37:55Z</published>
+    <summary>Things I have taught.</summary>
+  </entry>
+  <entry>
     <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-statistical-mechanics-ss21.html"/>
     <id>texmacs.github.io/notes/seminar-statistical-mechanics-ss21.tm:2023-05-03T22:26:52Z</id>
@@ -19,14 +27,6 @@
     <published>2023-05-03T22:26:24Z</published>
     <summary>This is a seminar on statistical mechanics held in Bonn in SS
     2021 for the Bachelor degree in Mathematics.</summary>
-  </entry>
-  <entry>
-    <title>Teaching</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
-    <id>texmacs.github.io/notes/teaching.tm:2023-05-03T22:15:01Z</id>
-    <updated>2023-05-03T22:15:01Z</updated>
-    <published>2023-05-03T22:37:55Z</published>
-    <summary>Things I have taught.</summary>
   </entry>
   <entry>
     <title>Seminar on rough paths</title>
@@ -219,9 +219,9 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
     <id>texmacs.github.io/notes/publications.tm:2023-04-30T16:57:37Z</id>
     <updated>2023-04-30T16:57:37Z</updated>
-    <published>2023-04-28T15:49:17Z</published>
+    <published>2023-05-04T22:03:14Z</published>
     <summary>What my collaborators, students and me have written  last
-    updated October 2020.</summary>
+    updated April 2021.</summary>
   </entry>
   <entry>
     <title>People</title>
@@ -237,8 +237,17 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
     <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-04-30T16:57:37Z</id>
     <updated>2023-04-30T16:57:37Z</updated>
-    <published>2023-04-30T15:26:38Z</published>
+    <published>2023-05-04T22:03:59Z</published>
     <summary>Some facts about me  last updated April 2023</summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/old-publications.html"/>
+    <id>texmacs.github.io/notes/old-publications.tm:2023-04-28T15:49:14Z</id>
+    <updated>2023-04-28T15:49:14Z</updated>
+    <published>2023-05-04T21:27:14Z</published>
+    <summary>What my collaborators, students and me have written  last
+    updated October 2020.</summary>
   </entry>
   <entry>
     <title>On Literate Programming</title>

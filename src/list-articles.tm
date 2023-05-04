@@ -12,13 +12,13 @@
 
   <hrule>
 
+  <notes-entry|teaching.tm|Teaching|Things I have taught.|Thu May \ 4
+  14:59:13 2023 UTC>
+
   <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
   of lattice systems|This is a seminar on statistical mechanics held in Bonn
   in SS 2021 for the Bachelor degree in Mathematics.|Wed May \ 3 22:26:52
   2023 UTC>
-
-  <notes-entry|teaching.tm|Teaching|Things I have taught.|Wed May \ 3
-  22:15:01 2023 UTC>
 
   <notes-entry|seminar-rough-paths-ss22.tm|Seminar on rough paths|An
   introductory master seminar on Rough path theory, which has taken place in
@@ -113,7 +113,7 @@
   places.|Tue May \ 2 22:26:37 2023 UTC>
 
   <notes-entry|publications.tm|Publications|What my collaborators, students
-  and me have written \U last updated October 2020.|Sun Apr 30 16:57:37 2023
+  and me have written \U last updated April 2021.|Sun Apr 30 16:57:37 2023
   UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
@@ -121,6 +121,10 @@
 
   <notes-entry|curriculum-vitae.tm|CV|Some facts about me \U last updated
   April 2023|Sun Apr 30 16:57:37 2023 UTC>
+
+  <notes-entry|old-publications.tm|Publications|What my collaborators,
+  students and me have written \U last updated October 2020.|Fri Apr 28
+  15:49:14 2023 UTC>
 
   <notes-entry|literate-programming.tm|On Literate Programming|Where I gather
   reflections on literate programming, <TeXmacs>, programming languages and
