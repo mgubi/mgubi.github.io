@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -31,6 +31,8 @@
     <timeline|2021\U2015>Professeur chargé de cours (part\Utime) \U Ecole
     Polytechnique, Saclay
 
+    <timeline|2013\U2018>Junior member, Institut Universitaire de France
+
     <timeline|2012\U2015>Professeur des Universités (1st class) \U Centre de
     Recherche en Mathématiques de la Decision, Université Paris\UDauphine
 
@@ -59,9 +61,7 @@
       Fellowships and awards
     </cv-section>
 
-    <timeline|2013\U2018>Junior member, Institut Universitaire de France\ 
-
-    <timeline|2008\U2013>Prime d'encadrement doctorale et de recherche (PEDR)
+    <with|font-shape|italic|none>
 
     <\cv-section>
       Institutional responsibilities

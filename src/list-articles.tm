@@ -12,6 +12,10 @@
 
   <hrule>
 
+  <notes-entry|literate-programming.tm|On Literate Programming|Some
+  reflections on literate programming, <TeXmacs>, programming languages and
+  writing.|Thu May \ 4 22:14:45 2023 UTC>
+
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Thu May
   \ 4 22:12:59 2023 UTC>
 
@@ -128,10 +132,6 @@
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sun Apr 30 16:57:37 2023 UTC>
-
-  <notes-entry|literate-programming.tm|On Literate Programming|Some
-  reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|Tue Apr 25 22:00:19 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
   mathematicians.|Sat Apr 22 21:39:59 2023 UTC>
