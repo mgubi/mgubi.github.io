@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
@@ -13,10 +13,6 @@
 
   <notes-abstract|Content related to computer languages, programming,
   <TeXmacs>.>
-
-  <section*|Writings>
-
-  <hlink|On literate programming|./literate-programming.tm>
 
   <section*|GNU <TeXmacs>>
 
@@ -110,7 +106,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>

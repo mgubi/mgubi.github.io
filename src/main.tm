@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|html-font-size>>
 
@@ -33,7 +33,8 @@
   <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
   \<cdot\> <hlink|people|people.tm> \<cdot\> <hlink|teaching|teaching.tm>
 
-  <hlink|programming|./programming.tm><vspace|1em>
+  <hlink|programming|./programming.tm> \<cdot\>
+  <hlink|writings|writings.tm><vspace|1em>
 
   <\small>
     a <hlink|list|./list-articles.tm> of all the articles & a
