@@ -13,7 +13,10 @@
   <hrule>
 
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Thu May
-  \ 4 22:10:16 2023 UTC>
+  \ 4 22:12:59 2023 UTC>
+
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Thu May \ 4 22:12:59 2023 UTC>
 
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated April 2021.|Thu May \ 4 22:08:04 2023
@@ -91,9 +94,6 @@
   provides a template for typical notes/articles. You can use the tag
   <src-macro|notes-abstract> to provide a small summary of the content, as
   exemplified by this very text.|Wed May \ 3 21:42:11 2023 UTC>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Wed May \ 3 21:42:11 2023 UTC>
 
   <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic
   Processes<nbsp>|This file provides a template for typical notes/articles.
