@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|source>
 
@@ -179,7 +179,17 @@
 
   <assign|tmhtml-scm|<macro|body|<html-class|scheme|<with|mode|prog|prog-language|scheme|font-family|rm|<arg|body>>>>>
 
-  \;
+  <assign|tmhtml-bib-year-section|<\macro|year>
+    <html-div-class|tmweb-bib-year|<arg|year>>
+  </macro>>
+
+  <assign|xx-tmhtml-render-bibitem|<macro|text|<item|<arg|text>>>>
+
+  <assign|xx-tmhtml-render-bibliography|<\macro|name|body>
+    <principal-section*|<arg|name>>
+
+    <style-with|src-compact|all|<style-with|src-compact|all|<arg|body>>>
+  </macro>>
 </body>
 
 <initial|<\collection>
