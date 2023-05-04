@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
@@ -7,8 +7,8 @@
 
   <chapter*|On Literate Programming>
 
-  <notes-abstract|Where I gather reflections on literate programming,
-  <TeXmacs>, programming languages and writing.>
+  <notes-abstract|Some reflections on literate programming, <TeXmacs>,
+  programming languages and writing.>
 
   \;
 
