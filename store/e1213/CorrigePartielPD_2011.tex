@@ -1,0 +1,187 @@
+\documentclass[a4, 12pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\topmargin =-60pt
+\textwidth = 480pt
+\textheight = 690pt
+\oddsidemargin =-20pt
+\footskip = 20pt
+
+
+\def\BBone{{\bf 1}}
+%\usepackage[applemac]{inputenc} 
+\newcommand{\p}{probabilit\'e\ }
+
+\providecommand{\prob}{\mathop{\mathbb P{}}\nolimits}
+\providecommand{\E}{\mathop{\mathrm{E}{}}\nolimits}
+\renewcommand{\P}{\mathop{\mathrm{P}{}}\nolimits}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\E}{\mathop{\mathbb E{}}\nolimits}
+\providecommand{\prob}{\mathop{\mathbb P{}}\nolimits}
+\providecommand{\drm}{\mathrm{d}}
+\providecommand{\e}{\mathrm{e}}
+
+
+\usepackage[english,francais]{babel}%
+%\pagestyle{empty}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\noindent Processus Discrets (2011-2012)
+
+
+\bigskip
+
+\vspace{1cm}
+
+
+
+
+\centerline{\textbf{Corrigé du partiel du 17 Novembre 2011.}}
+
+
+%\bigskip
+
+%\centerline{\textit{Dans les trois exercices ci-dessous, il est sous-entendu qu'on travaille sur un espace de probabilité $(\Omega,\mathcal A, \mathbb P).$}}
+
+\bigskip
+\noindent{\bf Exercice 1.} a)
+On a pour toute fonction test $g$
+\[ \E g (X) =  g (t) \prob ( X=t ) +\E ( g(X) \mathbf{1}_{ X < t }  ) . \]  
+Soit $f$ une fonction bornée. Remarquons que sur l'événement $\{X<t\}$, on a $Z=X$ donc
+\[
+\begin{split}
+\E ( Z f ( X ) ) & = \E ( Z f (X) \mathbf{1}_{X = t} ) + \E ( Z f(X ) \mathbf{1}_{X< t} ) \\
+&  =  \E ( Z \mathbf{1}_{X= t} ) f(t) + \E ( X f(X) \mathbf{1}_{ X < t } )    \\
+& = \E ( Z \mid X= t ) f(t)  \prob ( X = t )  + \E ( X f(X) \mathbf{1}_{ X < t }  ) =  \E ( h(X) f (X)  ) .
+\end{split}
+\]
+où $h$ est la fonction définie sur $[0,t]$ par $h(x) = x$ si $x< t$ et 
+\[
+h(t) = \E ( Z \mid X=t ) = \E ( Z \mid Z >t ) = \frac{ \int_t^{+\infty} z \e^{-z} \ \drm z }{ \prob ( Z >t ) } = t+1.
+\]
+Par définition de l'espérance conditionnelle on a alors
+\[
+\E ( Z \mid X ) = h(X) = X \mathbf{1}_{X<t} + (t+1) \mathbf{1}_{X=t} . 
+\]
+De même
+\[
+\begin{split}
+\E ( Z f ( Y ) ) & = \E ( Z f (Y) \mathbf{1}_{Y = t} ) + \E ( Z f(X ) \mathbf{1}_{Y > t} ) \\
+&  =  \E ( Z \mathbf{1}_{Y= t} ) f(t) + \E ( Y f(Y) \mathbf{1}_{ Y > t } )    \\
+& = \E ( Z \mid Y= t ) f(t)  \prob ( Y = t )  + \E ( Y f(Y) \mathbf{1}_{ Y > t }  ) =  \E ( k(Y) f (Y)  ) .
+\end{split}
+\]
+où $k$ est la fonction définie sur $[t,+\infty]$ par $h(x) = x$ si $x>t$ et 
+\[
+k(t) = \E ( Z \mid Y=t ) = \E ( Z \mid Z < t ) = 
+\frac{ \int_0^{t} z \e^{-z} \ \drm z }{ \int_0^{t} \e^{-z} \ \drm z } = 1 - \frac{  t  \e^{-t}  }{ 1 - \e^{-t} }.
+\]
+Du coup
+\[
+\E ( Z \mid Y ) = k(Y) = \bigl(  1 - \frac{  t  \e^{-t}  }{ 1 - \e^{-t} } \bigr) \mathbf{1}_{Y=t} + Y \mathbf{1}_{Y>t} .
+\]
+b)
+Soit $f$ une fonction test
+\[ \E f (XY)  = \int_0^1 \int_0^1 f(xy) \ \drm x \drm y = \int_0^1 \int_0^x f(z) \frac{1}{x} \ \drm z \drm x = \int_0^1 f(z) (-\ln ( z) ) \ \drm z .
+\]
+Donc $Z = XY$ a pour densité $z \mapsto -\ln(z)$ sur $]0,1[$. De plus
+\[
+\E ( X f ( Z ) ) = \int_0^1 \int_0^x  f(z) \ \drm z \drm x = \int_0^1 (1-z) f(z) \  \drm z = \E ( g(Z) f(Z) )
+\]
+où $g$ est la fonction définie sur $]0,1[$ par $g (z) = (z-1) / \ln(z)$. Par définition de l'espérance conditionnelle
+on a
+\[ 
+\E ( X \mid Z  )  =  g(Z ) =  \frac{Z-1}{\ln(Z)} . 
+\]
+Le problème est symétrique en $X,Y$, donc $\E ( Y \mid Z )= \E ( X \mid Z)$.   
+
+
+\vspace{1cm}
+\noindent{\bf Exercice 2.} Voir cours.
+\bigskip
+
+\vspace{1cm}
+
+\noindent{\bf Exercice 3.} 
+a) Pour $n\in\N$, on considère la variable $Z=X_{n-1}-E(X_n|\mathcal{F}_{n-1})$. Comme $(X_n)_{n\geq 0}$ est une surmartingale, $Z\geq 0$ p.s. Par ailleurs, 
+\begin{equation*}
+E(Z)=E(X_{n-1})-E(E(X_n|\mathcal{F}_{n-1}))=E(X_{n-1})-E(X_{n})=0
+\end{equation*}
+On a montré que $Z$ est une variable positive p.s. d'espérance nulle donc $Z$ est nulle p.s.\\
+b) C'est une conséquence de c)\\
+c)  Comme $(M_n)_{n\geq 0}$ est une surmartingale, $(M_n)_{n\geq 0}$ est adapté et intégrable. De plus pour $n\geq 1$:
+\begin{align*}
+E(\Delta M_n|\mathcal{F}_{n-1})&=E(\Delta XY_n - \Delta X_n \Delta Y_n | \mathcal{F}_{n-1})\\
+	&=-2 X_{n-1}Y_{n-1}+E(X_{n-1}Y_n|\mathcal{F}_{n-1})+E(Y_{n-1}X_n|\mathcal{F}_{n-1})\\
+	&=0
+\end{align*}
+d)Voir cours.\\
+e) Puisque $(X_n)_{n\geq 0}$ est une $(\mathcal{F}_n)_{n\geq 0}$-martingale, $(X_n)_{n\geq 0}$ est adapté par rapport à $(\mathcal{F}_n)_{n\geq 0}$, on en déduit $\mathcal{G}_n \subset \mathcal{F}_n$ pour tout $n\in\N$. Le processus $(X_n)_{n\geq 0}$ est clairement intégrable et adapté par rapport à $(\mathcal{G}_n)_{n\geq 0}$. De plus pour tout $n\geq 0$ et tout $A\in \mathcal{G}_n$, $A$ appartient aussi à $ \mathcal{F}_n$ et on a donc $E(X_n 1_A)=E(X_{n-1}1_A)$ d'où $E(X_n|\mathcal{G}_{n-1})=X_{n-1}$.\\
+Soit $T$ un temps d'arrêt pour $(\mathcal{G}_n)_{n\geq 0}$, et $n\in\N$ alors $\{T=n\}\in \mathcal{G}_n$ d'où $\{T=n\}\in \mathcal{F}_n$. On en déduit que $T$ est aussi un temps d'arrêt pour $(\mathcal{F}_n)_{n\geq 0}$.
+
+\bigskip
+
+\vspace{1cm}
+\noindent{\bf Exercice 4.}
+1. Comme $X$ est adapté on a $Y_n = \max ( X_1 , \dotsc , X_n ) \hat\in \mathcal F_n$ pour tout $n$, et donc 
+$\{ X_n \geq Y_{n-1}\} \in \mathcal F_n$ pour tout $n\geq 1$. Par suite
+\[ 
+\{ T \leq n \} = \{ X_1 \geq Y_0\} \cup \dotsb \cup \{ X_n \geq Y_{n-1}  \} 
+\]
+est encore dans la tribu $\mathcal F_n$. Ceci montre que $T$ est un temps d'arrêt.
+\\
+Si $T = n$ alors $Y_{n-1}\leq X_n$ et donc $Y_n = \max ( Y_{n-1} , X_n ) = X_n$. Par conséquent
+\[
+\mathbf{1}_{T < \infty} ( X_T - Y_T ) = \sum_{n=1}^\infty \mathbf{1}_{T=n} ( X_n  - Y_n ) = 0 ,
+\]
+ce qu'il fallait démontrer. 
+\\
+2. 
+Pour $k$ entre $0$ et $n$ on a $\{ T = k \} \in \mathcal F_k \subset \mathcal F_n$ puisque $T$ est un temps d'arrêt, et de même $\{S= n-k\} \in \mathcal F_{n-k} \subset \mathcal F_n$. Comme $\mathcal F_n$ est stable par intersection et réunion (finies), on obtient
+\[
+\{ T+S  = n \} = \bigcup_{k=0}^n \{ T=k \} \cap \{ S = n-k\} \in \mathcal F_n
+\]
+ce qui montre que $T$ est un temps d'arrêt. 
+\\
+3. Par définition de l'infimum, on a
+\[
+ \{ T \leq n \} = \bigcup_{k\geq 0} \{ T_k \leq n \} ,
+ \]
+ et cet événement est dans $\mathcal F_n$ puisque chacun des $T_k$ est un temps d'arrêt. 
+ Donc $T$ est un temps d'arrêt.
+ \\
+ 4.
+En utilisant $\{T=n\}\in\mathcal F_n$ et la propriété de sur-martingale on a
+\[ \E ( X_{T+k} \mathbf{1}_{T=n} )  = \E \bigl(  \E ( X_{n+k} \mid \mathcal F_n )  \mathbf{1}_{ T=n } )
+ \leq \E ( X_n  \mathbf{1}_{T=n} ) = 0 . \]
+De plus $\prob( T < +\infty ) =1$, donc
+ \[ 
+ \E ( X_{T+k} ) = \sum_{n=0}^\infty \E ( X_{T+k} \mathbf{1}_{T=n} ) \leq 0 .
+ \]
+Comme $X_{T+k}$ est une variable positive on obtient $X_{T+k} = 0$, presque sûrement.
+
+
+\bigskip
+
+\vspace{1cm}
+\noindent{\bf Exercice 5.} a) Le processus $(M_n)_{n\geq 0}$ est une martingale et $(H_n)_{n\geq 0}$ est prévisible dont $(X_n)_{n\geq 0}=((H\cdot X)_n)_{n\geq 0}$ est une martingale (cf. cours). On vérifie ensuite facilement grâce aux hypothèses que pour tout $n\geq 0$, $X_n$ est borné (mais attention, cette borne dépend de n!), et on en déduit que  $(X_n)_{n\geq 0}$ est de carré intégrable.\\
+
+b) On commence par remarquer que pour tout $k>l\geq 0$,
+\begin{equation*}
+E(H_k\Delta M_kH_l\Delta M_l)=E(E(H_k\Delta M_kH_l\Delta M_l|\mathcal{F}_{k-1})).
+\end{equation*}
+Or $(H_k)_{k\geq 0}$ est prévisible donc $H_k$ et $H_l$ sont mesurables par rapport à $\mathcal{F}_{k-1}$ (et $\Delta M_l$ aussi car $(M_n)_{n\geq 0}$ est adapté). On obtient donc,
+\begin{equation*}
+E(H_k\Delta M_kH_l\Delta M_l)=E(H_kH_l\Delta M_lE(\Delta M_k|\mathcal{F}_{k-1}))=0.
+\end{equation*}
+On en déduit que pour tout $n\in\N$
+\begin{equation*}
+E(X_n^2)=\sum_{k=1}^nE(H_k^2\Delta M_k^2)\leq \sum_{k=1}^n \frac{1}{k^2}4K^2\leq  12 K^2.
+\end{equation*}
+On en déduit que $(X_n)_{n\geq 0}$ est une martingale bornée dans $L^2$, elle converge donc p.s. et dans $L^2$.
+
+
+\end{document}

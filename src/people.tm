@@ -70,6 +70,8 @@
 
   <subsection*|Master students>
 
+  <with|font-series|bold|Bonn>
+
   <\itemize>
     <item>Jan Nöller
 
@@ -107,6 +109,64 @@
     <item>Nikolay Barashkov \PRadiative transport limit of the random
     Schrödinger equation\Q SS2017
   </itemize>
+
+  <with|font-series|bold|Dauphine> (Mémoires de M2)
+
+  Année 2008/2009
+
+  <\itemize>
+    <item>Cheikh Ahmet Diaham (Université Paris-Dauphine), Cubature sur un
+    espace de Wiener et applications
+
+    <item>Brahim Ahmedou (Université Paris-Dauphine), Equations
+    différentielles stochastiques rétrogrades et applications à la finance
+
+    <item>Oumar Aly Badar Sy (Université Paris-Dauphine), Formule Feynman Kac
+    et applications<nbsp>
+  </itemize>
+
+  Année 2009/2010
+
+  <\itemize>
+    <item>Arezki Ait Mimoune (Université Paris-Dauphine), Analyse booléenne:
+    sensibilité au bruit et applications<nbsp>
+
+    <item>Khalil Chouk (Université Paris 6), Solutions rugueuses pour
+    l'équations de Korteweg-de Vries
+
+    <item>Stébastien Chouckroun (ENS Cachan), Equation d'Euler avec donnée
+    initiale aléatoire
+  </itemize>
+
+  Année 2010/2011
+
+  <\itemize>
+    <item>Remi Catellier (ENS Cachan), Unicité des solutions pour les EDS
+
+    <item>Ahmed Cheikh Sidiya (Université Paris-Dauphine), Cascades
+    Stochastiques et l'équation de Navier-Stokes
+  </itemize>
+
+  Année 2011/2012
+
+  <\itemize>
+    <item>Alexander Rauber (Université Paris-Dauphine), Analyse des fonctions
+    booléennes et le théorème ``Majority is the stablest"<nbsp>
+
+    <item>Ziad Metheni (Université Paris-Dauphine), Correspondances entre les
+    EDP et la theorie des jeux. Etude du Laplacien infini et du jeu
+    ``Tug-of-War"
+
+    <item>Qun Wang (Université Paris-Dauphine), A deterministic Norris-type
+    estimate for fBm via Rough Path Approach
+
+    <item>Soleimane Ndoye (Université Paris-Dauphine), Couverture et
+    arbitrage dans ne structure non-probabiliste
+  </itemize>
+
+  \;
+
+  <next-line>
 </body>
 
 <\initial>
@@ -122,11 +182,6 @@
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-5|<tuple|?|?>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
@@ -137,37 +192,17 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Current
-      members> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.5fn>
-
       <with|par-left|<quote|1tab>|Postdocs
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Doctoral students
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|1tab>|Doctoral students
+      <with|par-left|<quote|1tab>|Master students
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
-
-      <with|par-left|<quote|1tab>|Master students
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5>>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Former
-      members> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
-
-      <with|par-left|<quote|1tab>|Postdocs
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
-
-      <with|par-left|<quote|1tab>|Doctoral students
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
-
-      <with|par-left|<quote|1tab>|Master students
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9>>
     </associate>
   </collection>
 </auxiliary>

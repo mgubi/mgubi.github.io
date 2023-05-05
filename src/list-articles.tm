@@ -12,6 +12,40 @@
 
   <hrule>
 
+  <notes-entry|teaching-dauphine-08-09.tm|Enseignements 2008/2009|Lectures
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:33:23
+  2023 UTC>
+
+  <notes-entry|teaching-dauphine-09-10.tm|Enseignements 2009/2010|Lectures
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:33:07
+  2023 UTC>
+
+  <notes-entry|teaching-dauphine-10-11.tm|Enseignements 2010/2011|Lectures
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:32:57
+  2023 UTC>
+
+  <notes-entry|teaching-dauphine-11-12.tm|Enseignements 2011/2012|Lectures
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:32:46
+  2023 UTC>
+
+  <notes-entry|teaching-dauphine-12-13.tm|Enseignements 2012/2013|Lectures
+  delivered at Paris Dauphine, academic year 2012\U2013.|Fri May \ 5 17:32:16
+  2023 UTC>
+
+  <notes-entry|teaching-dauphine-14-15.tm|Enseignements 2014/2015|Lectures
+  delivered at Paris Dauphine, academic year 2014\U2015.|Fri May \ 5 17:31:46
+  2023 UTC>
+
+  <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Fri May \ 5
+  11:47:34 2023 UTC>
+
+  <notes-entry|publications.tm|Publications|What my collaborators, students
+  and me have written \U last updated April 2021.|Fri May \ 5 11:47:34 2023
+  UTC>
+
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Fri May \ 5 11:47:34 2023 UTC>
+
   <notes-entry|curriculum-vitae.tm|CV|Some facts about me \U last updated
   April 2023|Thu May \ 4 22:27:16 2023 UTC>
 
@@ -25,16 +59,9 @@
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Thu May \ 4 22:12:59 2023 UTC>
 
-  <notes-entry|publications.tm|Publications|What my collaborators, students
-  and me have written \U last updated April 2021.|Thu May \ 4 22:08:04 2023
-  UTC>
-
   <notes-entry|old-publications.tm|Publications|What my collaborators,
   students and me have written \U last updated October 2020.|Thu May \ 4
   22:08:04 2023 UTC>
-
-  <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Thu May \ 4
-  14:59:13 2023 UTC>
 
   <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
   of lattice systems|This is a seminar on statistical mechanics held in Bonn
@@ -126,9 +153,6 @@
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
   small summary of the content, as exemplified by this very text.|Wed May \ 3
   21:42:11 2023 UTC>
-
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Tue May \ 2 22:26:37 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sun Apr 30 16:57:37 2023 UTC>

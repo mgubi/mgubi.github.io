@@ -1,0 +1,168 @@
+%!TEX encoding =  IsoLatin
+\documentclass[a4paper,10pt]{article}
+\usepackage[noheadfoot,bottom=1cm,top=2cm,left=3cm,right=3cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an 
+\usepackage{amsfonts,amsmath}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\vs}{\vspace{0.25cm}}
+%\renewcommand{\vss}{\vspace{0.25cm}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\RR}{\mathbb{R}}
+\renewcommand{\P}{\mathbb{P}}
+
+\newcommand{\Pto}{\stackrel{P}{\longrightarrow}}
+\newcommand{\Lto}{\stackrel{\cal L}{\longrightarrow}}
+\newcommand{\Leq}{\stackrel{\cal L}{=}}
+\newcommand{\PSto}{\stackrel{p.s.}{\longrightarrow}}
+%\makeatletter
+%\let\accent@spacefactor\relax
+%\makeatother
+
+\newcounter{exo}
+\setcounter{exo}{1}
+
+\newcommand{\exercise}{{\vspace{0.4cm}\noindent\textbf{Exercice \theexo .\hspace{1em}}\addtocounter{exo}{1}}}
+\pagestyle{empty}
+
+\begin{document}
+
+ \renewcommand{\labelenumi}{\alph{enumi})}
+ 
+\hrule
+%\parindent 0cm
+\vspace{0.2cm}
+\noindent Université Paris Dauphine \hfill Ann\'ee 2009
+
+\noindent Département MIDO \hfill
+DU 2 - Statistiques 
+
+\vspace{0.2cm}\hrule
+
+\vspace{0.2cm}
+
+\begin{center}
+{\Large \bf \vs Partiel 2009}
+\end{center}
+
+\vspace{0.2cm}
+
+{\small
+\noindent [Durée deux heures. Aucun document n'est autorisé. Les  exercices sont indépendants. Seule les réponses soigneusement justifiées seront prises en compte. ]
+}
+
+\vspace{0.2cm}
+
+
+\exercise  Soit $(X,Y)$ un couple aléatoire à valeurs dans $\RR^2$ admettant une densité $$
+f_{(X,Y)}(x,y)=\begin{cases} C & \text{si $\max(|x|,|y|)\le 2$}\\ 0 & \text{sinon}\end{cases}
+$$ 
+
+\begin{enumerate}
+\item
+Déterminer $C$.
+\item $X$ et $Y$ sont-elles indépendantes?
+\item Calculer la loi de la v.a. $X+Y$.
+\end{enumerate}
+
+
+
+\exercise Soit $(X,Y)$ le vecteur gaussien centré de matrice de covariance 
+$$
+\left(
+\begin{array}{cc}1 & 1 \\ 1 & 4\end{array}\right)
+$$
+Soit $Z=Y-\alpha X$.
+
+\begin{enumerate}
+%\item Calculer $\P(2 X \ge 2 + 3Y)$ en termes de la fonction de repartition $\Phi$ de la loi gaussienne standard (centrée et reduite).
+\item Quelle est la loi de $Z$? Pr\'eciser ses param\`etres.
+\item D\'eterminer $\alpha$ tel que $X$ et $Z$ soient ind\'ependantes.
+\item Calculer le coefficient de corr\'elation entre $X$ et $Y$.
+\item Calculer le coefficient de corr\'elation entre $X^2$ et $Y^2$.
+
+%\item Montrer qu'il n'existent pas des réels $\beta,\gamma,\rho$ tels que $\beta X + \gamma Y = \rho$.
+%\item Calculer $\E[e^{Z}]$ pour $\alpha=2$.
+\end{enumerate}
+
+\exercise Soient $X \sim \mathcal{N}(0,1)$, et $K$ une v.a. discrete telle que 
+$$\P(K=-1)=\P(K=1)=1/2$$
+et $K$ est ind\'ependante de $X$.  On consi\`ere $Y=K X$. 
+
+\begin{enumerate}
+\item Calculer $\E(Y), \text{Var}(Y)$ et $\text{Cov}(X, Y)$.
+\item Calculer la fonction de répartition de $Y$ et en d\'eduire que $Y \sim \mathcal{N}(0,1)$.
+\item Montrer (par un argument simple) que le vecteur $(X,Y)$ n'est pas gaussien.
+\end{enumerate}
+
+
+
+\exercise Soit $U_1, ..., U_n$ une suite i.i.d. $\sim \mathcal{U}[0,1]$. On pose $X_n = \min_{1\le k \le n} U_k$ et $Y_n = n X_n$.
+\begin{enumerate}
+\item Calculer la fonction de r\'epartition de $X_n$ et sa densit\'e. Identifier la loi de $X_n$.
+\item Donner la fonction de r\'epartition de $Y_n$.
+\item Montrer que $(Y_n)_{n \ge 1}$ converge en loi en pr\'ecisant cette loi limite.
+
+\end{enumerate}
+
+
+\exercise Soit $(X_n)_{n \ge 1}$ une suite de v.a. telle que $X_n \sim \chi^2_n$ (une loi Khi-Deux de $n$ de degr\'es de libert\'e).
+
+\medskip
+
+\begin{enumerate}
+\item Rappeler la d\'efinition d'une variable al\'eatoire $\sim \chi^2_m, m \in \mathbb N^*$. 
+\item Pour $n \ge 1$, calculer $\E(X_n)$ et $\textrm{Var}(X_n)$.
+\item Montrer que $X_n/n$ converge presque sûrement en pr\'ecisant le th\'eor\`eme utilis\'e et identifier la limite.
+\item Montrer que $X_n/\sqrt{n}-\sqrt{n}$ converge en loi en pr\'ecisant le th\'eor\`eme utilis\'e et identifier la limite.
+\end{enumerate}
+
+\end{document}
+
+
+\exercise  Soit $(X,Y)$ un couple aléatoire à valeurs dans $\RR^2$ admettant une densité $$
+f_{(X,Y)}(x,y)=\begin{cases} C & \text{si $|x|^2+|y|^2 \le 1$}\\ 0 & \text{sinon}\end{cases}
+$$ 
+
+\begin{enumerate}
+\item
+Déterminer $C$.
+\item Montrer que $X,Y$ ne sont pas indépendantes.
+\item Calculer $\P(X+Y\le 0)$ et $\P(X\ge 0, Y\ge 0)$.
+\item Calculer $\text{Var}(X|Y) = \E[(X-\E[X|Y])^2|Y]$. 
+\item Soient $(R,\Theta)$ tels que $R\ge 0$, $\Theta\in[0,2\pi)$ et  $X=R \sin(\Theta)$, $Y= R \cos(\Theta)$. Montrer que $R,\Theta$ sont indépendantes et calculer leurs lois marginales.
+\end{enumerate}
+
+
+
+\exercise
+Soit $(X,Y)$ un vecteur aléatoire dans $\RR^2$ tel que $X \sim\mathcal{N}(1,1)$ et la loi conditionelle de $Y$ sachant $X=x$ est $\mathcal{N}(3x,4)$. 
+
+\begin{enumerate}
+\item Calculer la moyenne et la matrice de variance/covariance du couple $(X,Y)$. 
+\item Donner la densité du couple $(X,Y)$.
+\item Montrer que $Y$ est une gaussienne.
+\item Montrer que $(X,Y)$ est un vecteur gaussien.
+\item Montrer que la loi conditionelle de $X$ sachant $Y=y$ est gaussienne.
+\end{enumerate}
+
+
+\exercise Soit $(X,Y)$ un vecteur aléatoire gaussien dans $\RR^2$ centré et de matrice de covariance l'indentité $I_2$. Soit $(Z,Q)$ le vecteur aléatoire defini par $Z=(X+Y)/2$ et $Q=(X-Y)/2$. On pose
+$$
+U = \frac{1}{2} (X-Z)^2 + \frac{1}{2} (Y-Z)^2
+$$
+ 
+
+\begin{enumerate}
+\item Calculer la fonction caractéristique du vecteur $(Z,Q)$ et montrer qu'il est un vecteur gaussien.
+\item Montrer que $Z,Q$ sont indépendantes.
+\item Calculer $\E[ U ]$ et $\text{Var}(U)$.
+\item Montrer que $Z$ et $U$ sont indépendantes.
+\item Donner la loi de $U$.
+\end{enumerate}
+
+\end{document}
+

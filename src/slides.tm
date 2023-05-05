@@ -18,51 +18,51 @@
   \;
 
   \ Applications of controlled paths \ \ \ from a talk given at Nice in
-  February 2013. (<hlink|pdf|paperi/talk-nice-2013.pdf>) \ 
+  February 2013. (<hlink|pdf|../store/paperi/talk-nice-2013.pdf>) \ 
 
   \ Applications of controlled paths \ \ \ from a talk given at Oxford in
-  September 2012. (<hlink|pdf|paperi/talk-oxford-2012.pdf>) \ 
+  September 2012. (<hlink|pdf|../store/paperi/talk-oxford-2012.pdf>) \ 
 
   \ Controlled paths and regularization in (S)PDEs \ \ \ from a talk given at
-  Cergy-Pontoise in January 2012. (<hlink|pdf|paperi/talk-cergy-2012.pdf>) \ 
+  Cergy-Pontoise in January 2012. (<hlink|pdf|../store/paperi/talk-cergy-2012.pdf>) \ 
 
   \ Regularization by oscillations \ \ \ from a talk given at the Conference
   '' Evolution Equations: Randomness and Asymptotics", Bad Herrenalb
-  (Germany), October 12nd, 2011. (<hlink|pdf|paperi/talk-bad-herrenalb-2011.pdf>)
+  (Germany), October 12nd, 2011. (<hlink|pdf|../store/paperi/talk-bad-herrenalb-2011.pdf>)
   \ 
 
   \ Regularization by oscillations \ \ \ from a talk given at the Seventh
   Seminar on Stochastic Analysis, Random Fields and Applications, Ascona
-  (Switzerland), May 23 - 27, 2011. (<hlink|pdf|paperi/talk-ascona-2011.pdf>)
+  (Switzerland), May 23 - 27, 2011. (<hlink|pdf|../store/paperi/talk-ascona-2011.pdf>)
   \ 
 
   \ Rough paths in Spain \ \ from a talk given at the COCO 2010 final
-  conference, Madrid. 22nd June 2010. (<hlink|pdf|paperi/talk-madrid-2010.pdf>)\ 
+  conference, Madrid. 22nd June 2010. (<hlink|pdf|../store/paperi/talk-madrid-2010.pdf>)\ 
 
   \ Some infinite dimensional rough paths \ \ from a talk given at the
   Stochastic Analysis Seminar, Oxford-Man Institute, Oxford. 22nd February
-  2010. (<hlink|pdf|paperi/talk-oxford-2010.pdf>)\ 
+  2010. (<hlink|pdf|../store/paperi/talk-oxford-2010.pdf>)\ 
 
   \ Some infinite dimensional rough paths \ \ from a talk given at the
   Minisimposium on Rough Path Theory, 5th European Congress of Mathematics,
-  Amsterdam, July 2008. (<hlink|pdf|paperi/talk-amsterdam.pdf>)\ 
+  Amsterdam, July 2008. (<hlink|pdf|../store/paperi/talk-amsterdam.pdf>)\ 
 
   \ Stochastic transport equation and non-lipshitz SDEs \ \ from a talk given
   at the seminar on Random Problems in PDEs and large systems, CMAP-CMLS,
-  Ecole Polytechnique, Palaiseau. (<hlink|pdf|paperi/talk-X.pdf>)\ 
+  Ecole Polytechnique, Palaiseau. (<hlink|pdf|../store/paperi/talk-X.pdf>)\ 
 
   \ Trees, rough integrals and differential equations \ \ from a talk given
   at the Conference on Combinatorics and Physics, March 19-23, 2007.
   Max-Plack Institure for Mathematics, Bonn.
-  (<hlink|pdf|paperi/talk-bonn-2007.pdf>)\ 
+  (<hlink|pdf|../store/paperi/talk-bonn-2007.pdf>)\ 
 
   \ Explorations on rough paths \ \ from a talk given at the Fifth Seminar on
   Stochastic Analysis, Random Fields and Applications, Ascona (Switzerland),
-  May 30 - June 3, 2005. (<hlink|pdf|paperi/conference-ascona-2005-short.pdf>)\ 
+  May 30 - June 3, 2005. (<hlink|pdf|../store/paperi/conference-ascona-2005-short.pdf>)\ 
 
   \ Rough evolution equations \ \ from a talk given at the Mathematical
   Departement of the University of Warwick (UK), Oct. 24th, 2005.
-  (<hlink|pdf|paperi/talk-warwick-2005.pdf>)\ 
+  (<hlink|pdf|../store/paperi/talk-warwick-2005.pdf>)\ 
 </body>
 
 <\initial>
