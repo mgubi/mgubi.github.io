@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-05T22:47:42Z</updated>
+  <updated>2023-05-05T22:49:52Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -14,16 +14,16 @@
   <entry>
     <title>Teaching</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
-    <id>texmacs.github.io/notes/teaching.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:40:52Z</published>
     <summary>Things I teach & have taught.</summary>
   </entry>
   <entry>
     <title>Enseignements 2014/2015</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-14-15.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-14-15.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-14-15.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:38:16Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20142015.</summary>
@@ -31,8 +31,8 @@
   <entry>
     <title>Enseignements 2012/2013</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-12-13.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-12-13.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-12-13.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:37:22Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20122013.</summary>
@@ -40,8 +40,8 @@
   <entry>
     <title>Enseignements 2011/2012</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-11-12.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-11-12.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-11-12.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:33:08Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20102011.</summary>
@@ -49,8 +49,8 @@
   <entry>
     <title>Enseignements 2010/2011</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-10-11.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-10-11.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-10-11.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:30:43Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20102011.</summary>
@@ -58,8 +58,8 @@
   <entry>
     <title>Enseignements 2009/2010</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-09-10.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-09-10.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-09-10.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:27:55Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20102011.</summary>
@@ -67,11 +67,29 @@
   <entry>
     <title>Enseignements 2008/2009</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching-dauphine-08-09.html"/>
-    <id>texmacs.github.io/notes/teaching-dauphine-08-09.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
+    <id>texmacs.github.io/notes/teaching-dauphine-08-09.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
     <published>2023-05-05T21:27:33Z</published>
     <summary>Lectures delivered at Paris Dauphine, academic year
     20102011.</summary>
+  </entry>
+  <entry>
+    <title>People</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/people.html"/>
+    <id>texmacs.github.io/notes/people.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
+    <published>2023-05-05T22:29:33Z</published>
+    <summary>Present & past members of my research group  updated September
+    2022.</summary>
+  </entry>
+  <entry>
+    <title>Vita</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-05T22:49:42Z</id>
+    <updated>2023-05-05T22:49:42Z</updated>
+    <published>2023-05-05T22:47:12Z</published>
+    <summary><document>Some facts about me  last updated April
+    2023.</document></summary>
   </entry>
   <entry>
     <title>Slides</title>
@@ -93,15 +111,6 @@
     <summary>The things I have said in various places.</summary>
   </entry>
   <entry>
-    <title>People</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/people.html"/>
-    <id>texmacs.github.io/notes/people.tm:2023-05-05T17:37:55Z</id>
-    <updated>2023-05-05T17:37:55Z</updated>
-    <published>2023-05-05T22:29:33Z</published>
-    <summary>Present & past members of my research group  updated September
-    2022.</summary>
-  </entry>
-  <entry>
     <title>Publications</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
     <id>texmacs.github.io/notes/publications.tm:2023-05-05T11:47:34Z</id>
@@ -109,15 +118,6 @@
     <published>2023-05-05T11:28:01Z</published>
     <summary>What my collaborators, students and me have written  last
     updated April 2021.</summary>
-  </entry>
-  <entry>
-    <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-04T22:27:16Z</id>
-    <updated>2023-05-04T22:27:16Z</updated>
-    <published>2023-05-05T22:47:12Z</published>
-    <summary><document>Some facts about me  last updated April
-    2023.</document></summary>
   </entry>
   <entry>
     <title>On Literate Programming</title>

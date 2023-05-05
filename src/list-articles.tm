@@ -13,31 +13,38 @@
   <hrule>
 
   <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Fri May \ 5
-  17:37:55 2023 UTC>
+  22:49:42 2023 UTC>
 
   <notes-entry|teaching-dauphine-14-15.tm|Enseignements 2014/2015|Lectures
-  delivered at Paris Dauphine, academic year 2014\U2015.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2014\U2015.|Fri May \ 5 22:49:42
   2023 UTC>
 
   <notes-entry|teaching-dauphine-12-13.tm|Enseignements 2012/2013|Lectures
-  delivered at Paris Dauphine, academic year 2012\U2013.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2012\U2013.|Fri May \ 5 22:49:42
   2023 UTC>
 
   <notes-entry|teaching-dauphine-11-12.tm|Enseignements 2011/2012|Lectures
-  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 22:49:42
   2023 UTC>
 
   <notes-entry|teaching-dauphine-10-11.tm|Enseignements 2010/2011|Lectures
-  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 22:49:42
   2023 UTC>
 
   <notes-entry|teaching-dauphine-09-10.tm|Enseignements 2009/2010|Lectures
-  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 22:49:42
   2023 UTC>
 
   <notes-entry|teaching-dauphine-08-09.tm|Enseignements 2008/2009|Lectures
-  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 17:37:55
+  delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 22:49:42
   2023 UTC>
+
+  <notes-entry|people.tm|People|Present & past members of my research group
+  \U updated September 2022.|Fri May \ 5 22:49:42 2023 UTC>
+
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Some facts about me \U last updated April 2023.
+  </notes-entry|Fri May \ 5 22:49:42 2023 UTC>
 
   <notes-entry|slides.tm|Slides|This file provides a template for typical
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
@@ -47,16 +54,9 @@
   <notes-entry|presentations.tm|Presentations|The things I have said in
   various places.|Fri May \ 5 17:37:55 2023 UTC>
 
-  <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Fri May \ 5 17:37:55 2023 UTC>
-
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated April 2021.|Fri May \ 5 11:47:34 2023
   UTC>
-
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Some facts about me \U last updated April 2023.
-  </notes-entry|Thu May \ 4 22:27:16 2023 UTC>
 
   <notes-entry|literate-programming.tm|On Literate Programming|Some
   reflections on literate programming, <TeXmacs>, programming languages and
