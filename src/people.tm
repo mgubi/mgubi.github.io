@@ -1,6 +1,6 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
-<style|notes>
+<style|<tuple|notes|cv-mg>>
 
 <\body>
   <\hide-preamble>
@@ -15,6 +15,13 @@
   September 2022.>
 
   <subsection*|Postdocs>
+
+  Luca Fresta (2021\U)
+
+  Paolo Rinaldi (2021\U)
+
+  <hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
+  (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.
 
   <\itemize>
     <item>Luca Fresta (2021\U)
@@ -129,10 +136,10 @@
 
   <\itemize>
     <item>Arezki Ait Mimoune (Université Paris-Dauphine), Analyse booléenne:
-    sensibilité au bruit et applications<nbsp>
+    sensibilité au bruit et applications
 
     <item>Khalil Chouk (Université Paris 6), Solutions rugueuses pour
-    l'équations de Korteweg-de Vries
+    l'équations de Korteweg\Ude<nbsp>Vries
 
     <item>Stébastien Chouckroun (ENS Cachan), Equation d'Euler avec donnée
     initiale aléatoire
@@ -151,11 +158,11 @@
 
   <\itemize>
     <item>Alexander Rauber (Université Paris-Dauphine), Analyse des fonctions
-    booléennes et le théorème ``Majority is the stablest"<nbsp>
+    booléennes et le théorème \PMajority is the stablest\Q<nbsp>
 
     <item>Ziad Metheni (Université Paris-Dauphine), Correspondances entre les
     EDP et la theorie des jeux. Etude du Laplacien infini et du jeu
-    ``Tug-of-War"
+    \PTug-of-War\Q
 
     <item>Qun Wang (Université Paris-Dauphine), A deterministic Norris-type
     estimate for fBm via Rough Path Approach
@@ -163,10 +170,6 @@
     <item>Soleimane Ndoye (Université Paris-Dauphine), Couverture et
     arbitrage dans ne structure non-probabiliste
   </itemize>
-
-  \;
-
-  <next-line>
 </body>
 
 <\initial>

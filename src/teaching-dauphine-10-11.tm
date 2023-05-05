@@ -14,7 +14,7 @@
   <notes-abstract|Lectures delivered at Paris Dauphine, academic year
   2010\U2011.>
 
-  <with|font-series|bold|Enseignements 2010/2011>
+  <with|font-series|bold|Année 2010/2011>
 
   <\itemize>
     <item><hlink|Analyse des fonctions booléennes (M2 EDPMAD/TSI)|#bf>
@@ -31,17 +31,17 @@
 
   <with|font-series|bold|Descriptive du cours>
 
-  Une fonction booléenne est une fonction f:{-1,1}<rsup|n> \<rightarrow\>
-  {-1,1}. Les fonction booléennes apparaissent souvent dans des situations
-  variées: en mathématiques (théorie des graphes, percolation), en
-  informatique théorique (algorithmes de classification, théorie de la
-  complexité algorithmique, optimisation combinatoire), sciences sociales et
-  économie (choix sociale, systèmes de vote). Ce cours est une introduction à
-  l'analyse de ce type de fonctions et aux résultats (parfois étonnants) qui
-  en résultent. On donnera des applications à la théorie du choix sociale:
-  quelles sont les propriétés des systèmes de vote, le paradoxe de Condorcet,
-  le théorème de Arrow, le théorème de Kahn-Kalai-Linial, la sensibilité au
-  bruit et les phénomènes de ``chaos".
+  Une fonction booléenne est une fonction <math|f:{-1,1}<rsup|n>
+  \<rightarrow\> {-1,1}>. Les fonction booléennes apparaissent souvent dans
+  des situations variées: en mathématiques (théorie des graphes,
+  percolation), en informatique théorique (algorithmes de classification,
+  théorie de la complexité algorithmique, optimisation combinatoire),
+  sciences sociales et économie (choix sociale, systèmes de vote). Ce cours
+  est une introduction à l'analyse de ce type de fonctions et aux résultats
+  (parfois étonnants) qui en résultent. On donnera des applications à la
+  théorie du choix sociale: quelles sont les propriétés des systèmes de vote,
+  le paradoxe de Condorcet, le théorème de Arrow, le théorème de
+  Kahn-Kalai-Linial, la sensibilité au bruit et les phénomènes de ``chaos".
 
   <with|font-series|bold|Mots clefs:> analyse de Fourier des fonctions
   booléennes, sensibilité aux bruit, phénomènes de seuil, influence,
@@ -135,20 +135,20 @@
 
   <\enumerate>
     <item>Lecture 1. Introduction. Social choice theory. Fourier analysis.
-    BLR ad FKN theorems. (<hlink|PDF|../store/e1011/abf1.pdf>) []
+    BLR ad FKN theorems. (<hlink|PDF|../store/e1011/abf1.pdf>)
 
     <item>Lecture 2. Hypercontractivity. A first look to majority.
     Influences. KKL and Friedgut theorems. Influential coalitions.
-    (<hlink|PDF|../store/e1011/abf2.pdf>) []
+    (<hlink|PDF|../store/e1011/abf2.pdf>)
 
     <item>Lecture 3. Noise sensitivity and social chaos.
-    (<hlink|PDF|../store/e1011/abf3.pdf>) []
+    (<hlink|PDF|../store/e1011/abf3.pdf>)
   </enumerate>
 
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien)|../e0910/index.html#pd>
+    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-09-10.tm#pd>)
 
     <item>Chargés de TD: Joseph Lehec et François Simenhaus.
   </itemize>
@@ -238,41 +238,42 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Espérance conditionnelle (<hlink|PDF|../store/e1011/pd1.pdf>) []
+    <item>Poly 1. Espérance conditionnelle
+    (<hlink|PDF|../store/e1011/pd1.pdf>)
 
     <item>Poly 2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1011/pd2.pdf>) []
+    (<hlink|PDF|../store/e1011/pd2.pdf>)
 
     <item>Poly 3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1011/pd3.pdf>) []
+    (<hlink|PDF|../store/e1011/pd3.pdf>)
 
-    <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1011/pd4.pdf>) []
+    <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1011/pd4.pdf>)
 
-    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1011/pd-td1.pdf>) []
+    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1011/pd-td1.pdf>)
 
     <item>TD2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1011/pd-td2.pdf>) []
+    (<hlink|PDF|../store/e1011/pd-td2.pdf>)
 
     <item>TD3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1011/pd-td3.pdf>) []
+    (<hlink|PDF|../store/e1011/pd-td3.pdf>)
 
-    <item>TD4. Chaînes de Markov (<hlink|PDF|../store/e1011/pd-td4.pdf>) []
+    <item>TD4. Chaînes de Markov (<hlink|PDF|../store/e1011/pd-td4.pdf>)
 
-    <item>TD5. Chaînes de Markov (II) (<hlink|PDF|../store/e1011/pd-td5.pdf>) []
+    <item>TD5. Chaînes de Markov (II) (<hlink|PDF|../store/e1011/pd-td5.pdf>)
 
-    <item>Partiel (<hlink|PDF|../store/e1011/pd-partiel-1011.pdf>) []
+    <item>Partiel (<hlink|PDF|../store/e1011/pd-partiel-1011.pdf>)
 
-    <item>Corrigé Partiel (<hlink|PDF|../store/e1011/pd-partiel-1011-corrige.pdf>) []
+    <item>Corrigé Partiel (<hlink|PDF|../store/e1011/pd-partiel-1011-corrige.pdf>)
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e1011/md-controle2004.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1011/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<hlink|PDF|../store/e1011/md-controle2004.pdf>).
+    Rattrapage (<hlink|PDF|../store/e1011/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e1011/proc-controle0106.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1011/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<hlink|PDF|../store/e1011/proc-controle0106.pdf>).
+    Rattrapage (<hlink|PDF|../store/e1011/proc-controle0906Rectif.pdf>).
 
     <item>2006/2007. Partiel (<hlink|PDF|../store/e1011/PartielProcDiscrets0607.pdf>).
     Examen (<hlink|PDF|../store/e1011/proc-controle0107.pdf>). Rattrapage
@@ -284,21 +285,17 @@
 
     <item>2008/2009. Examen (<hlink|PDF|../store/e1011/proc-controle0109.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1011/pd-partiel-0910.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1011/pd-partiel-corrige-0910.pdf>). Examen
-    (<hlink|PDF|../store/e1011/pd-examen-0910.pdf>). Rattrapage
+    <item>2009/2010. Partiel (<hlink|PDF|../store/e1011/pd-partiel-0910.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1011/pd-partiel-corrige-0910.pdf>).
+    Examen (<hlink|PDF|../store/e1011/pd-examen-0910.pdf>). Rattrapage
     (<hlink|PDF|../store/e1011/pd-rattrapage-0910.pdf>).
   </enumerate>
-
-  <with|font-series|bold|Communications>
-
-  <itemize|>
 
   <label|ccm><subsubsection*|Contrôle des chaines de Markov (M1 MMD -
   parcours MAMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien)|../e0910/index.html#ccm>
+    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-09-10.tm#ccm>)
 
     <item>Chargé de TD: Jimmy Lamboley.
   </itemize>
@@ -381,20 +378,24 @@
 
   <\enumerate>
     <item>Poly 1. Compléments sur l'espérance conditionnelle
-    (<hlink|PDF|../store/e1011/ccm1.pdf>) []
+    (<hlink|PDF|../store/e1011/ccm1.pdf>)
 
-    <item>Poly 2. Arrêt optimal en horizon fini. (<hlink|PDF|../store/e1011/ccm2.pdf>) []
+    <item>Poly 2. Arrêt optimal en horizon fini.
+    (<hlink|PDF|../store/e1011/ccm2.pdf>)
 
-    <item>Poly 4. Chaînes de Markov contrôlées. (<hlink|PDF|../store/e1011/ccm4.pdf>) []
+    <item>Poly 4. Chaînes de Markov contrôlées.
+    (<hlink|PDF|../store/e1011/ccm4.pdf>)
 
     <item>TD1. Compléments sur l'espérance conditionnelle.
-    (<hlink|PDF|../store/e1011/ccm-td1.pdf>) []
+    (<hlink|PDF|../store/e1011/ccm-td1.pdf>)
 
-    <item>TD2. Arrêt optimal en horizon fini. (<hlink|PDF|../store/e1011/ccm-td2.pdf>) []
+    <item>TD2. Arrêt optimal en horizon fini.
+    (<hlink|PDF|../store/e1011/ccm-td2.pdf>)
 
-    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1011/ccm-td3.pdf>) []
+    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1011/ccm-td3.pdf>)
 
-    <item>TD4. Chaînes de Markov contrôlées. (<hlink|PDF|../store/e1011/ccm-td4.pdf>) []
+    <item>TD4. Chaînes de Markov contrôlées.
+    (<hlink|PDF|../store/e1011/ccm-td4.pdf>)
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
@@ -403,20 +404,16 @@
     <item>2008/2009. Examen (<hlink|PDF|../store/e1011/examen-control-chaines-2009.pdf>).
     Rattrapage (<hlink|PDF|../store/e1011/rattrapage-control-chaines-2009.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1011/ccm-partiel-0910.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1011/ccm-partiel-corrige-0910.pdf>). Examen
-    (<hlink|PDF|../store/e1011/ccm-examen-0910.pdf>). Rattrapage
+    <item>2009/2010. Partiel (<hlink|PDF|../store/e1011/ccm-partiel-0910.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1011/ccm-partiel-corrige-0910.pdf>).
+    Examen (<hlink|PDF|../store/e1011/ccm-examen-0910.pdf>). Rattrapage
     (<hlink|PDF|../store/e1011/ccm-rattrapage-0910.pdf>).
   </enumerate>
-
-  <with|font-series|bold|Communications>
-
-  <itemize|>
 
   <label|stat><subsubsection*|Statistique (DU2 Eco IGD Math/Eco Mat/Info)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien)|../e0910/index.html#stat>
+    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-09-10.tm#stat>)
 
     <item>Chargés de TD: Anne-Marie Boussion (TD1). Massimiliano Gubinelli
     (TD2) Vincent Rivoirard (TD3). Denis Pasquignon (TD4). Benjamin Benoudis
@@ -500,40 +497,37 @@
 
   <\enumerate>
     <item>Poly 1. Vecteurs aléatoires, espérance conditionnelle, régression.
-    (<hlink|PDF|../store/e1011/stat1.pdf>) []
+    (<hlink|PDF|../store/e1011/stat1.pdf>)
 
     <item>Poly 2. Matrice de covariance. Fonction caractéristique. Vecteurs
-    Gaussiens. (<hlink|PDF|../store/e1011/stat2.pdf>) []
+    Gaussiens. (<hlink|PDF|../store/e1011/stat2.pdf>)
 
     <item>Poly 3. Convergence des variables aléatoires. Loi des grandes
-    nombres et théorème centrale limite. (<hlink|PDF|../store/e1011/stat3.pdf>) []
+    nombres et théorème centrale limite. (<hlink|PDF|../store/e1011/stat3.pdf>)
 
-    <item>Poly 4. Estimation ponctuelle. (<hlink|PDF|../store/e1011/stat4.pdf>) []
+    <item>Poly 4. Estimation ponctuelle. (<hlink|PDF|../store/e1011/stat4.pdf>)
 
-    <item>Poly 5. Intervalles de confiance. (<hlink|PDF|../store/e1011/stat5.pdf>) []
+    <item>Poly 5. Intervalles de confiance.
+    (<hlink|PDF|../store/e1011/stat5.pdf>)
   </enumerate>
 
   <with|font-series|bold|Feuilles de TD et sujets>
 
   <\enumerate>
     <item>TD1: Intégrales doubles et couples de variables aléatoires.
-    (<hlink|PDF|../store/e1011/stat-td1.pdf>) []
+    (<hlink|PDF|../store/e1011/stat-td1.pdf>)
 
     <item>TD2: Vecteurs aléatoires, vecteurs Gaussiens et loi Gamma et
-    Khi-deux. (<hlink|PDF|../store/e1011/stat-td2.pdf>) []
+    Khi-deux. (<hlink|PDF|../store/e1011/stat-td2.pdf>)
 
-    <item>TD3: Vecteurs Gaussiens. (<hlink|PDF|../store/e1011/stat-td3.pdf>) []
+    <item>TD3: Vecteurs Gaussiens. (<hlink|PDF|../store/e1011/stat-td3.pdf>)
 
-    <item>TD4: Convergence en loi. (<hlink|PDF|../store/e1011/stat-td4.pdf>) []
+    <item>TD4: Convergence en loi. (<hlink|PDF|../store/e1011/stat-td4.pdf>)
 
-    <item>TD5: Estimation ponctuelle. (<hlink|PDF|../store/e1011/stat-td5.pdf>) []
+    <item>TD5: Estimation ponctuelle. (<hlink|PDF|../store/e1011/stat-td5.pdf>)
 
-    <item>TD6: Intervalles de confiance. (<hlink|PDF|../store/e1011/stat-td6.pdf>) []
+    <item>TD6: Intervalles de confiance. (<hlink|PDF|../store/e1011/stat-td6.pdf>)
   </enumerate>
-
-  <with|font-series|bold|Communications>
-
-  <itemize|>
 </body>
 
 <\initial>
@@ -565,7 +559,7 @@
       <no-break><pageref|auto-1><vspace|1fn>
 
       <with|par-left|<quote|2tab>|Analysis of Boolean functions [Analyse des
-      fonctions boolï¿½ennes] (M2 EDPMAD/TSI)
+      fonctions booléennes] (M2 EDPMAD/TSI)
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
@@ -573,7 +567,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|2tab>|Contrï¿½le des chaines de Markov (M1 MMD -
+      <with|par-left|<quote|2tab>|Contrôle des chaines de Markov (M1 MMD -
       parcours MAMD) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -9,9 +9,11 @@
 
   <notes-header>
 
-  <chapter*|CV>
+  <chapter*|Vita>
 
-  <notes-abstract|Some facts about me \U last updated April 2023>
+  <\notes-abstract>
+    Some facts about me \U last updated April 2023.
+  </notes-abstract>
 
   <\cv-body>
     <\cv-section>
@@ -50,7 +52,7 @@
     </cv-section>
 
     <timeline|2003>PhD in Theoretical Physics, Università di Pisa, Italy \U
-    <comment|Advisor: Sergio Caracciolo (Scuola Normale Superiore)>
+    <comment|Advisor: Sergio Caracciolo (Scuola Normale Superiore)>\ 
 
     <timeline|1998>Diploma di Laurea (Master) in Physics, Università di Pisa
 
@@ -119,6 +121,24 @@
     <euro>150.000 \U <comment|Co-PI (<hlink|website|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
 
     <\cv-section>
+      Miscellanea
+    </cv-section>
+
+    <timeline|2006>Invited professor \ (1 month) in the Probability group at
+    the Institut E.<nbsp>Cartan, University of Nancy 1, France
+
+    <timeline|2003>CNRS fellowship at Laboratoire d'Analyse, Géometrie et
+    Applications UMR 7539, Institut Galilée, Université Paris 13, France \U
+    under the supervision of Prof.<nbsp>F.<nbsp>Russo
+
+    <timeline|2001>Postdoc fellowship (3 months) at ETH, Zürich \U under the
+    supervision of Prof.<nbsp>A.<nbsp>S. Sznitman.
+
+    <timeline|1996>INFN summer studentship (2 months) in high-energy
+    experimental particle physics at Fermilab \U under the supervision of
+    Prof. M.<nbsp>Atac
+
+    <\cv-section>
       Editorial and reviewing activities
     </cv-section>
 
@@ -136,8 +156,6 @@
     <timeline|2015\U2017>Associate editor for Discrete and Continuous
     Dynamical Systems \U A
 
-    \;
-
     <timeline|2011-2014>Member of the Evaluation Group for Mathematics and
     Statistics for NSERC/CRSNG, Canada
 
@@ -147,7 +165,53 @@
     Referee for ERC, ANR, DFG and various others research agencies
 
     <\cv-section>
-      Main invited presentations (last ten years)
+      Organization of international conferences
+    </cv-section>
+
+    <timeline|2024>MSRI Summer Graduate School \PStochastic quantisation\Q,
+    Berkley
+
+    <timeline|2020>Workshop \PNew Directions in Rough Path Theory\Q,
+    Oberwolfach
+
+    <timeline|2019>Coordinator of the Junior trimester program \PRandomness,
+    PDEs and Nonlinear Fluctuations\Q at the Hausdorff Institute for
+    Mathematics, Bonn
+
+    Workshop \PLarge scale description of random fields: interfaces between
+    PDE and RG approaches\Q, Inhomogeneous Random Systems, Institute Henry
+    Poincaré, Paris
+
+    <timeline|2018>Program \PScaling Limits, rough paths, quantum field
+    theory\Q at the Newtown Institute, Cambridge
+
+    <timeline|2017>Fields medal symposium in honor of M.<nbsp>Hairer, Toronto
+
+    <timeline|2016>CIME Summer school "Singular random dynamics", Cetraro,
+    Italy
+
+    Workshop "Rough Paths, Regularity Structures and Related Topics"
+    Mathematisches Forschungsinstitut Oberwolfach
+
+    <timeline|2015>Workshop "Stochastic Systems Simulation and Control 2015",
+    ICMS \U Edinburgh
+
+    <timeline|2013>Workshop \PRough Paths: Theory and Applications\Q, IPAM \U
+    UCLA
+
+    <timeline|2012>Workshop \PRough Paths and PDEs\Q, Oberwolfach
+
+    <timeline|2010>Workshop \PRough paths in interaction\Q, Juin 2010.
+    Institut Henry Poincaré, Paris, France
+
+    Workshop \PRough paths and SPDEs\Q, April \ 2010. Newton Institute,
+    Cambdrige, UK
+
+    <timeline|2006>Workshop \PStochastic Fluid Mechanics and SPDEs\Q, Julliet
+    2006. Centro Ennio De Giorgi, Pisa, Italy
+
+    <\cv-section>
+      Main invited presentations
     </cv-section>
 
     <timeline|2022>Conference \PQuantum many body system and interacting
@@ -204,47 +268,8 @@
 
     <timeline|2012>Minicourses at Marseille, Berlin and Rome
 
-    <\cv-section>
-      Organization of international conferences \ (last ten years)
-    </cv-section>
-
-    <timeline|2024>MSRI Summer Graduate School \PStochastic quantisation\Q,
-    Berkley
-
-    <timeline|2020>Workshop \PNew Directions in Rough Path Theory\Q,
-    Oberwolfach
-
-    <timeline|2019>Coordinator of the Junior trimester program \PRandomness,
-    PDEs and Nonlinear Fluctuations\Q at the Hausdorff Institute for
-    Mathematics, Bonn
-
-    Workshop \PLarge scale description of random fields: interfaces between
-    PDE and RG approaches\Q, Inhomogeneous Random Systems, Institute Henry
-    Poincaré, Paris
-
-    <timeline|2018>Program \PScaling Limits, rough paths, quantum field
-    theory\Q at the Newtown Institute, Cambridge
-
-    <timeline|2017>Fields medal symposium in honor of M.<nbsp>Hairer, Toronto
-
-    <timeline|2016>CIME Summer school "Singular random dynamics", Cetraro,
-    Italy
-
-    Workshop "Rough Paths, Regularity Structures and Related Topics"
-    Mathematisches Forschungsinstitut Oberwolfach
-
-    <timeline|2015>Workshop "Stochastic Systems Simulation and Control 2015",
-    ICMS \U Edinburgh
-
-    <timeline|2013>Workshop \PRough Paths: Theory and Applications\Q, IPAM \U
-    UCLA
-
-    <timeline|2012>Workshop \PRough Paths and PDEs\Q, Oberwolfach
-
-    <timeline|2010>Workshops at Institut Henry Poincaré, Paris and Newton
-    Institute, Cambridge
-
-    \;
+    <timeline|2009>Minicourse on rough paths, CMLS, Ecole Polytechnique,
+    Palaiseau
   </cv-body>
 </body>
 
@@ -266,7 +291,7 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|CV>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Vita>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
     </associate>

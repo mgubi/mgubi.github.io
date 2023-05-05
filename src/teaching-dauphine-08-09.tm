@@ -14,7 +14,7 @@
   <notes-abstract|Lectures delivered at Paris Dauphine, academic year
   2010\U2011.>
 
-  <with|font-series|bold|Enseignements 2008/2009>
+  <with|font-series|bold|Année 2008/2009>
 
   <\itemize>
     <item><hlink|Analyse des EDS (M2 EDPMAD/TSI)|#eds>
@@ -28,7 +28,7 @@
 
   <label|eds><subsubsection*|Analyse des EDS>
 
-  Cours: 6/1, 13/1, 20/1, 27/1, 3/2, 10/2, 17/2<next-line>
+  Cours: 6/1, 13/1, 20/1, 27/1, 3/2, 10/2, 17/2
 
   <with|font-series|bold|Notes de cours>
 
@@ -137,10 +137,12 @@
     [1/4/2009]
 
     <item>Partiel 2009 (<hlink|PDF|../store/e0809/partiel-control-chaines-2009.pdf>),
-    Corrigé (<hlink|PDF|../store/e0809/corrige-partiel-control-2009.pdf>) [7/4/2009]
+    Corrigé (<hlink|PDF|../store/e0809/corrige-partiel-control-2009.pdf>)
+    [7/4/2009]
 
-    <item>Arrêt optimale en horizon infini (<hlink|PDF|../store/e0809/regular-stopping.pdf>)
-    [mis à jour le 22/5/2009]
+    <item>Arrêt optimale en horizon infini
+    (<hlink|PDF|../store/e0809/regular-stopping.pdf>) [mis à jour le
+    22/5/2009]
 
     <item>TD3 (en vu de l'examen) (<hlink|PDF|../store/e0809/pre-examen-2009.pdf>)
     [25/5/2009]
@@ -235,13 +237,14 @@
     (<hlink|PDF|../store/e0809/stat-3.pdf>) [mis à jour le 27/4/2009]
 
     <item>Poly 4. Estimation ponctuelle, elements de theorie de
-    l'information. (<hlink|PDF|../store/e0809/stat-4.pdf>) [mis à jour le 13/5/2009]
+    l'information. (<hlink|PDF|../store/e0809/stat-4.pdf>) [mis à jour le
+    13/5/2009]
 
-    <item>Poly 5. Intervalles de confiance. (<hlink|PDF|../store/e0809/stat-5.pdf>) [mis à
-    jour le 29/5/2009]
+    <item>Poly 5. Intervalles de confiance.
+    (<hlink|PDF|../store/e0809/stat-5.pdf>) [mis à jour le 29/5/2009]
 
-    <item>Poly 6. Theorie des test. (<hlink|PDF|../store/e0809/stat-6.pdf>) [mis à jour le
-    5/6/2009]
+    <item>Poly 6. Theorie des test. (<hlink|PDF|../store/e0809/stat-6.pdf>)
+    [mis à jour le 5/6/2009]
   </enumerate>
 
   <with|font-series|bold|Feuilles de TD et sujets>
@@ -250,7 +253,8 @@
     <item>TD1: Intégrales doubles et couples de variables aléatoires.
     (<hlink|PDF|../store/e0809/TD1Stat2009.pdf>)
 
-    <item>TD2: Lois Normale, Gamma, Beta. (<hlink|PDF|../store/e0809/TD2Stat2009.pdf>)
+    <item>TD2: Lois Normale, Gamma, Beta.
+    (<hlink|PDF|../store/e0809/TD2Stat2009.pdf>)
 
     <item>TD3: Convergence de variables aléatoires.
     (<hlink|PDF|../store/e0809/TD3Stat2009.pdf>)
@@ -342,7 +346,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
-      <with|par-left|<quote|2tab>|C?ntrole des chaines de Markov
+      <with|par-left|<quote|2tab>|Côntrole des chaines de Markov
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 

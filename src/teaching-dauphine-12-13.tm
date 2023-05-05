@@ -14,7 +14,7 @@
   <notes-abstract|Lectures delivered at Paris Dauphine, academic year
   2012\U2013.>
 
-  <with|font-series|bold|Enseignements 2012/2013>
+  <with|font-series|bold|Année 2012/2013>
 
   <\itemize>
     <item><hlink|Introduction à la theorie des chemins rugueux (M2
@@ -30,26 +30,18 @@
 
   <with|font-series|bold|Descriptive du cours>
 
-  \;
-
   <with|font-series|bold|Bibliographie et liens (en anglais)>
-
-  <itemize|<item>>
 
   <with|font-series|bold|Journal>
 
-  <enumerate|>
-
   <with|font-series|bold|Course material (in english)>
-
-  <enumerate|>
 
   <with|font-series|bold|Journal>
 
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien)|../e1112/index.html#pd>
+    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-11-12.tm#pd>)
 
     <item>Chargés de TD: Joseph Lehec et François Simenhaus.
   </itemize>
@@ -76,7 +68,7 @@
     <item>M. Benaïm, N. El Karoui. <em| Promenade aleéatoire>, Editions Ecole
     Polytechnique, 2005.
 
-    <item>J.R.Norris. <em| Markov chains>, Cambridge University Press, 1997
+    <item>J.R.Norris. <em|Markov chains>, Cambridge University Press, 1997
 
     <item>P. Baldi, L. Mazliak, P. Priouret, <em| Martingales et chaînes de
     Markov (Exercices corrigés) >, Hermann
@@ -137,7 +129,8 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Espérance conditionnelle (<hlink|PDF|../store/e1213/pd1.pdf>) []
+    <item>Poly 1. Espérance conditionnelle
+    (<hlink|PDF|../store/e1213/pd1.pdf>) []
 
     <item>Poly 2. Martingales, stratégies et arrêt optionnel
     (<hlink|PDF|../store/e1213/pd2.pdf>) []
@@ -147,7 +140,8 @@
 
     <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1213/pd4.pdf>) []
 
-    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1213/pd-td1.pdf>) []
+    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1213/pd-td1.pdf>)
+    []
 
     <item>TD2. Martingales, stratégies et arrêt optionnel
     (<hlink|PDF|../store/e1213/pd-td2.pdf>) []
@@ -161,11 +155,11 @@
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e1213/md-controle2004.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<hlink|PDF|../store/e1213/md-controle2004.pdf>).
+    Rattrapage (<hlink|PDF|../store/e1213/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e1213/proc-controle0106.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<hlink|PDF|../store/e1213/proc-controle0106.pdf>).
+    Rattrapage (<hlink|PDF|../store/e1213/proc-controle0906Rectif.pdf>).
 
     <item>2006/2007. Partiel (<hlink|PDF|../store/e1213/PartielProcDiscrets0607.pdf>).
     Examen (<hlink|PDF|../store/e1213/proc-controle0107.pdf>). Rattrapage
@@ -177,31 +171,27 @@
 
     <item>2008/2009. Examen (<hlink|PDF|../store/e1213/proc-controle0109.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/pd-partiel-0910.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1213/pd-partiel-corrige-0910.pdf>). Examen
-    (<hlink|PDF|../store/e1213/pd-examen-0910.pdf>). Rattrapage
+    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/pd-partiel-0910.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-corrige-0910.pdf>).
+    Examen (<hlink|PDF|../store/e1213/pd-examen-0910.pdf>). Rattrapage
     (<hlink|PDF|../store/e1213/pd-rattrapage-0910.pdf>).
 
-    <item>2010/2011. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011-corrige.pdf>). Examen
-    (<hlink|PDF|../store/e1213/pd-examen-1011.pdf>). Rattrapage
+    <item>2010/2011. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011-corrige.pdf>).
+    Examen (<hlink|PDF|../store/e1213/pd-examen-1011.pdf>). Rattrapage
     (<hlink|PDF|../store/e1213/pd-rattrapage-1011.pdf>).
 
-    <item>2011/2012. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112-corrige.pdf>). Examen
-    (<hlink|PDF|../store/e1213/pd-examen-1112.pdf>). Rattrapage
+    <item>2011/2012. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112-corrige.pdf>).
+    Examen (<hlink|PDF|../store/e1213/pd-examen-1112.pdf>). Rattrapage
     (<hlink|PDF|../store/e1213/pd-rattrapage-1112.pdf>).
   </enumerate>
-
-  <with|font-series|bold|Communications>
-
-  <itemize|>
 
   <label|ccm><subsubsection*|Contrôle des chaines de Markov (M1 MMD - majeure
   Math approfondie)>
 
   <itemize|<item>Cours de l'année dernière
-  (<hlink|Lien)|../e1112/index.html#ccm>>
+  (<hlink|Lien|teaching-dauphine-11-12.tm#ccm>)>
 
   <with|font-series|bold|Programme>
 
@@ -238,28 +228,29 @@
     Academic Press, 1983.
   </itemize>
 
-  <with|font-series|bold|Journal>
-
-  <enumerate|>
-
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
     <item>Poly 1. Compléments sur l'espérance conditionnelle
     (<hlink|PDF|../store/e1213/ccm1.pdf>) []
 
-    <item>Poly 3. Arrêt optimal en horizon fini. (<hlink|PDF|../store/e1213/ccm3.pdf>) []
+    <item>Poly 3. Arrêt optimal en horizon fini.
+    (<hlink|PDF|../store/e1213/ccm3.pdf>) []
 
-    <item>Poly 4. Chaînes de Markov controlées. (<hlink|PDF|../store/e1213/ccm4.pdf>) []
+    <item>Poly 4. Chaînes de Markov controlées.
+    (<hlink|PDF|../store/e1213/ccm4.pdf>) []
 
     <item>TD1. Compléments sur l'espérance conditionnelle.
     (<hlink|PDF|../store/e1213/ccm-td1.pdf>) []
 
-    <item>TD2. Arrêt optimal en horizon fini. (<hlink|PDF|../store/e1213/ccm-td2.pdf>) []
+    <item>TD2. Arrêt optimal en horizon fini.
+    (<hlink|PDF|../store/e1213/ccm-td2.pdf>) []
 
-    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1213/ccm-td3.pdf>) []
+    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1213/ccm-td3.pdf>)
+    []
 
-    <item>TD4. Chaînes de Markov controlées. (<hlink|PDF|../store/e1213/ccm-td4.pdf>) []
+    <item>TD4. Chaînes de Markov controlées.
+    (<hlink|PDF|../store/e1213/ccm-td4.pdf>) []
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
@@ -268,15 +259,11 @@
     <item>2008/2009. Examen (<hlink|PDF|../store/e1213/examen-control-chaines-2009.pdf>).
     Rattrapage (<hlink|PDF|../store/e1213/rattrapage-control-chaines-2009.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/ccm-partiel-0910.pdf>). Corrigé
-    Partiel (<hlink|PDF|../store/e1213/ccm-partiel-corrige-0910.pdf>). Examen
-    (<hlink|PDF|../store/e1213/ccm-examen-0910.pdf>). Rattrapage
+    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/ccm-partiel-0910.pdf>).
+    Corrigé Partiel (<hlink|PDF|../store/e1213/ccm-partiel-corrige-0910.pdf>).
+    Examen (<hlink|PDF|../store/e1213/ccm-examen-0910.pdf>). Rattrapage
     (<hlink|PDF|../store/e1213/ccm-rattrapage-0910.pdf>).
   </enumerate>
-
-  <with|font-series|bold|Communications>
-
-  <itemize|>
 </body>
 
 <\initial>
@@ -305,7 +292,7 @@
       2012/2013> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <with|par-left|<quote|2tab>|Introduction ï¿½ la theorie des chemins
+      <with|par-left|<quote|2tab>|Introduction à la theorie des chemins
       rugueux (M2 EDPMAD,TSI,MASEF) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
@@ -313,7 +300,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|2tab>|Contrï¿½le des chaines de Markov (M1 MMD -
+      <with|par-left|<quote|2tab>|Contrôle des chaines de Markov (M1 MMD -
       majeure Math approfondie) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
     </associate>

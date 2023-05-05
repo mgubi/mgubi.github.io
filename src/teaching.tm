@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
@@ -97,85 +97,84 @@
   <subsection*|Past lecture courses and seminars in Paris Dauphine
   (2008\U2015)>
 
-  <hlink|Annï¿½e 2014/201../store00/e1314/>
+  Année 2014/2015
 
   <itemize|<item><hlink|Processus discrets (M1
-  MMD)|../store/e1415/index.html#pd>>
+  MMD)|teaching-dauphine-14-15.tm#pd>>
 
-  <hlink|Annï¿½e 2013/201../store00/e1314/>
+  Année 2013/2014
 
-  <itemize|<item><hlink|Processus discrets (M1
-  MMD)|../store/e1314/index.html#pd>>
+  <itemize|<item>Processus discrets (M1 MMD)>
 
-  <hlink|Annï¿½e 2012/201../store00/e1213/>
+  Année 2012/2013
 
   <\itemize>
-    <item><hlink|Introduction ï¿½ la theorie des chemins rugueux (M2
-    EDPMAD,TSI,MASEF)|../store/e1213/index.html#rp>
+    <item><hlink|Introduction à la theorie des chemins rugueux (M2
+    EDPMAD,TSI,MASEF)|teaching-dauphine-12-13.tm#rp>
 
-    <item><hlink|Processus discrets (M1 MMD)|../store/e1213/index.html#pd>
+    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-12-13.tm#pd>
 
-    <item><hlink|Contrï¿½le des chaï¿½nes de Markov (M1
-    MMD)|../store/e1213/index.html#ccm>
+    <item><hlink|Contrôle des chaînes de Markov (M1
+    MMD)|teaching-dauphine-12-13.tm#ccm>
   </itemize>
 
-  <hlink|Annï¿½e 2011/201../store00/e1112/>
+  Année 2011/2012
 
   <\itemize>
-    <item><hlink|Elï¿½ments de mathï¿½matiques des dï¿½cisions collectives (M2
-    EDPMAD,TSI,MASEF)|../store/e1112/index.html#mdc>
+    <item><hlink|Eléments de mathématiques des décisions collectives (M2
+    EDPMAD,TSI,MASEF)|teaching-dauphine-11-12.tm#mdc>
 
-    <item><hlink|Processus discrets (M1 MMD)|../store/e1112/index.html#pd>
+    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-11-12.tm#pd>
 
-    <item><hlink|Contrï¿½le des chaï¿½nes de Markov (M1
-    MMD)|../store/e1112/index.html#ccm>
+    <item><hlink|Contrôle des chaînes de Markov (M1
+    MMD)|teaching-dauphine-11-12.tm#ccm>
 
-    <item><hlink|Processus de Poisson et mï¿½thodes actuariels (M1
-    MMD)|../store/e1112/index.html#pp>
+    <item><hlink|Processus de Poisson et méthodes actuariels (M1
+    MMD)|teaching-dauphine-11-12.tm#pp>
   </itemize>
 
-  <hlink|Annï¿½e 2010/201../store00/e1011/>
+  Année 2010/2011
 
   <\itemize>
-    <item><hlink|Analyse des fonctions boolï¿½ennes (M2
-    EDPMAD/TSI)|../store/e1011/index.html#bf>
+    <item><hlink|Analyse des fonctions booléennes (M2
+    EDPMAD/TSI)|teaching-dauphine-10-11.tm#bf>
 
-    <item><hlink|Processus discrets (M1 MMD)|../store/e1011/index.html#pd>
+    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-10-11.tm#pd>
 
-    <item><hlink|Contrï¿½le des chaï¿½nes de Markov (M1
-    MMD)|../store/e1011/index.html#ccm>
+    <item><hlink|Contrôle des chaînes de Markov (M1
+    MMD)|teaching-dauphine-10-11.tm#ccm>
 
     <item><hlink|Statistique (DU2 Eco IGD Math/Eco
-    Mat/Info)|../store/e1011/index.html#stat>
+    Mat/Info)|teaching-dauphine-10-11.tm#stat>
   </itemize>
 
-  <hlink|Annï¿½e 2009/201../store00/e0910/>
+  Année 2009/2010
 
   <\itemize>
-    <item><hlink|Processus discrets (M1 MMD)|../store/e0910/index.html#pd>
+    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-09-10.tm#pd>
 
-    <item><hlink|Contrï¿½le des chaï¿½nes de Markov (M1
-    MMD)|../store/e0910/index.html#ccm>
+    <item><hlink|Contrôle des chaînes de Markov (M1
+    MMD)|teaching-dauphine-09-10.tm#ccm>
 
-    <item><hlink|Grandes dï¿½viations (M2 EDPMAD/TSI../store00/e0910/index.html#gd>
+    <item><hlink|Grandes déviations (M2 EDPMAD/TSI)|teaching-dauphine-09-10.tm#gd>
 
     <item><hlink|Statistique (DU2 Eco IGD Math/Eco
-    Mat/Info)|../store/e0910/index.html#stat>
+    Mat/Info)|teaching-dauphine-09-10.tm#stat>
   </itemize>
 
-  <hlink|Annï¿½e 2008/200../store00/e0809/>
+  Année 2008/2009
 
   <\itemize>
-    <item><hlink|Analyse des EDS (M2 EDPMAD/TSI)|../store/e0809/index.html#eds>
+    <item><hlink|Analyse des EDS (M2 EDPMAD/TSI)|teaching-dauphine-08-09.tm#eds>
 
-    <item><hlink|Contrï¿½le des chaï¿½nes de Markov (M1
-    MMD)|../store/e0809/index.html#ccm>
+    <item><hlink|Contrôle des chaînes de Markov (M1
+    MMD)|teaching-dauphine-08-09.tm#ccm>
 
     <item><hlink|Statistique (DU2 Eco IGD Math/Eco
-    Mat/Info)|../store/e0809/index.html#stat>
+    Mat/Info)|teaching-dauphine-08-09.tm#stat>
 
     <item><hlink|TD d'Evaluation des actif contingents (M1
-    MMD)|../store/e0809/index.html#eac>
+    MMD)|teaching-dauphine-08-09.tm#eac>
   </itemize>
 
   <subsection*|Past lecture courses and seminars in Paris XI (2006\U2008)>
@@ -198,6 +197,7 @@
     <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
@@ -212,17 +212,25 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
-      <with|par-left|<quote|1tab>|Old lecture courses and seminars in Oxford
+      <with|par-left|<quote|1tab>|Past lecture courses and seminars in Oxford
       (2022\U) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|1tab>|Old lecture courses and seminars in Bonn
+      <with|par-left|<quote|1tab>|Past lecture courses and seminars in Bonn
       (2015\U2022) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
-      <with|par-left|<quote|1tab>|Old lecture courses and seminars in Paris
-      (2006\U2008) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|Past lecture courses and seminars in Paris
+      Dauphine (2008\U2015) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|2tab>|Enseignement
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|Past lecture courses and seminars in Paris
+      XI (2006\U2008) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
     </associate>
   </collection>
 </auxiliary>
