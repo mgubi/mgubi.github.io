@@ -11,7 +11,7 @@
 
   <chapter*|Presentations>
 
-  <notes-abstract|Things I have said in various places.>
+  <notes-abstract|The things I have said in various places.>
 
   \;
 

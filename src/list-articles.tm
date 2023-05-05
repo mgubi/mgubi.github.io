@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|curriculum-vitae.tm|CV|Some facts about me \U last updated
+  April 2023|Thu May \ 4 22:27:16 2023 UTC>
+
   <notes-entry|literate-programming.tm|On Literate Programming|Some
   reflections on literate programming, <TeXmacs>, programming languages and
   writing.|Thu May \ 4 22:14:45 2023 UTC>
@@ -30,10 +33,7 @@
   students and me have written \U last updated October 2020.|Thu May \ 4
   22:08:04 2023 UTC>
 
-  <notes-entry|curriculum-vitae.tm|CV|Some facts about me \U last updated
-  April 2023|Thu May \ 4 22:08:04 2023 UTC>
-
-  <notes-entry|teaching.tm|Teaching|Things I have taught.|Thu May \ 4
+  <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Thu May \ 4
   14:59:13 2023 UTC>
 
   <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
@@ -127,8 +127,8 @@
   small summary of the content, as exemplified by this very text.|Wed May \ 3
   21:42:11 2023 UTC>
 
-  <notes-entry|presentations.tm|Presentations|Things I have said in various
-  places.|Tue May \ 2 22:26:37 2023 UTC>
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Tue May \ 2 22:26:37 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sun Apr 30 16:57:37 2023 UTC>

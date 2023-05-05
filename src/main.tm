@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|html-font-size>>
 
@@ -14,7 +14,7 @@
 
   <with|font-shape|italic|personal pages><vspace|3em>
 
-  <I>'m a mathematician, currently Wallis Professor of mathematics at the
+  <I>'m a mathematician, currently the Wallis Professor of mathematics at the
   University of Oxford. Previously <value|I><nbsp>held positions in Bonn,
   Paris and Pisa. <value|I><nbsp>work in the field of stochastic analysis. My
   interests lie at the intersection of analysis, probability and mathematical
@@ -26,15 +26,19 @@
 
   <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
   \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
-  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
+  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>\ 
+
+  <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
+  at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
   <hlink|curriculum vitae|./curriculum-vitae.tm> \<cdot\>
   <hlink|publications|publications.tm> \<cdot\>
   <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
   \<cdot\> <hlink|people|people.tm> \<cdot\> <hlink|teaching|teaching.tm>
 
-  <hlink|programming|./programming.tm> \<cdot\>
-  <hlink|writings|writings.tm><vspace|1em>
+  <hlink|programming|./programming.tm> \<cdot\> <hlink|writings|writings.tm>
+
+  <vspace|1em>
 
   <\small>
     a <hlink|list|./list-articles.tm> of all the articles & a
@@ -70,10 +74,6 @@
       </quotation>
     </with>
   </smaller>
-
-  \;
-
-  \;
 </body>
 
 <\initial>

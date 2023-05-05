@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-04T22:26:31Z</updated>
+  <updated>2023-05-05T11:46:39Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,14 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>CV</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-04T22:27:16Z</id>
+    <updated>2023-05-04T22:27:16Z</updated>
+    <published>2023-05-05T11:37:27Z</published>
+    <summary>Some facts about me  last updated April 2023</summary>
+  </entry>
   <entry>
     <title>On Literate Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
@@ -42,7 +50,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
     <id>texmacs.github.io/notes/publications.tm:2023-05-04T22:08:04Z</id>
     <updated>2023-05-04T22:08:04Z</updated>
-    <published>2023-05-04T22:03:14Z</published>
+    <published>2023-05-05T11:28:01Z</published>
     <summary>What my collaborators, students and me have written  last
     updated April 2021.</summary>
   </entry>
@@ -56,20 +64,12 @@
     updated October 2020.</summary>
   </entry>
   <entry>
-    <title>CV</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-04T22:08:04Z</id>
-    <updated>2023-05-04T22:08:04Z</updated>
-    <published>2023-05-04T22:26:22Z</published>
-    <summary>Some facts about me  last updated April 2023</summary>
-  </entry>
-  <entry>
     <title>Teaching</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
     <id>texmacs.github.io/notes/teaching.tm:2023-05-04T14:59:13Z</id>
     <updated>2023-05-04T14:59:13Z</updated>
-    <published>2023-05-03T22:37:55Z</published>
-    <summary>Things I have taught.</summary>
+    <published>2023-05-05T11:44:33Z</published>
+    <summary>Things I teach & have taught.</summary>
   </entry>
   <entry>
     <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
@@ -254,8 +254,8 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/presentations.html"/>
     <id>texmacs.github.io/notes/presentations.tm:2023-05-02T22:26:37Z</id>
     <updated>2023-05-02T22:26:37Z</updated>
-    <published>2023-05-02T22:25:38Z</published>
-    <summary>Things I have said in various places.</summary>
+    <published>2023-05-05T11:37:47Z</published>
+    <summary>The things I have said in various places.</summary>
   </entry>
   <entry>
     <title>People</title>

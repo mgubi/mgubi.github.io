@@ -11,9 +11,18 @@
 
   <chapter*|Teaching>
 
-  <notes-abstract|Things I have taught.>
+  <notes-abstract|Things I teach & have taught.>
 
   <subsection*|Current lecture courses and seminars>
+
+  \;
+
+  <subsection*|Old lecture courses and seminars in Oxford (2022\U)>
+
+  <\itemize>
+    <item>C8.1 Stochastic Differential Equations (MT22)
+    [<hlink|url|https://courses.maths.ox.ac.uk/course/view.php?id=699>]
+  </itemize>
 
   <subsection*|Old lecture courses and seminars in Bonn (2015\U2022)>
 
@@ -84,6 +93,14 @@
     <item>Course:<nbsp>Rough paths and Controlled paths
     (WS15/16)<nbsp>(<hlink|link|lectures-rough-paths-ws15-16.tm>)
   </itemize>
+
+  <subsection*|Old lecture courses and seminars in Paris (2006\U2008)>
+
+  <\itemize>
+    <item><todo|(TODO)>
+  </itemize>
+
+  \;
 </body>
 
 <\initial>
@@ -98,6 +115,8 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
