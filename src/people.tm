@@ -19,7 +19,7 @@
   <\itemize>
     <item>Luca Fresta (2021\U)
 
-    <item>Paolo Rinaldi (2021\U)
+    <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net> (2021\U)
 
     <item><hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
     (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.\ 
@@ -29,45 +29,58 @@
     <item>Baris Evren Ugurcan (2016\U2019)<nbsp>Now at Bergische Universität
     Wuppertal.
 
-    <item>Nicolas Perkowski (2013\U2014)<nbsp>Now full professor at Freie
-    Universität Berlin.
+    <item><hlink|Nicolas Perkowski|https://www.mi.fu-berlin.de/math/groups/stoch/members/Professors/perkowski.html>
+    (2013\U2014)<nbsp>Now full professor at Freie Universität Berlin.
   </itemize>
 
   <subsection*|Doctoral students>
 
   <\itemize>
-    <item>Vishnu Sanjay (2023\U)
+    <item><hlink|Vishnu Sanjay|https://www.gssi.it/people/students/students-maths/item/15652-sanjay-vishnu>
+    (2023\U) (co-supervision with S.<nbsp>Olla at GSSI)
 
-    <item>Min Chul Lee (2023\U)
+    <item><hlink|Min Chul Lee|https://www.maths.ox.ac.uk/people/min.lee>
+    (2023\U)
 
-    <item>Sarah-Jean Meyer (2023\U)
+    <item><hlink|Sarah-Jean Meyer|https://www.maths.ox.ac.uk/people/sarah-jean.meyer>
+    (2023\U)
 
-    <item>Mattia Turra (2018\U2023) \PInfinitesimal analysis of singular
-    stochastic partial differential equations\Q
+    <item><hlink|Mattia Turra|https://www.linkedin.com/in/mattiaturra/?locale=en_US>
+    (2018\U2023) \PInfinitesimal analysis of singular stochastic partial
+    differential equations\Q
 
     <item><hlink|Lucio Galeati|https://sites.google.com/view/lucio-galeati-math/home>
     (2018\U2022) \PPathwise methods in regularisation by noise\Q
     (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10089>)
     Now postdoc in at EPFL Losanne in the group of Maria Colombo
 
-    <item>Nikolay Barashkov (2017\U2021) \PA variational approach to Gibbs
-    measures on function spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>).
+    <item><hlink|Nikolay Barashkov|https://scholar.google.com/citations?user=idXMb28AAAAJ&hl=en>
+    (2017\U2021) \PA variational approach to Gibbs measures on function
+    spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>).
     Now postdoc in Helsinki with A. Kupiainen
 
-    <item>Immanuel Zachhuber (2016\U2020) \PHyperbolic and dispersive
-    singular stochastic PDEs\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9225>).<nbsp>Now
+    <item><hlink|Immanuel Zachhuber|https://www.mi.fu-berlin.de/math/groups/stoch/members/PostDoc/zachhuber.html>
+    (2016\U2020) \PHyperbolic and dispersive singular stochastic PDEs\Q
+    (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9225>).<nbsp>Now
     postdoc in Berlin with N. Perkowski
 
-    <item>Marco Furlan (2014\U2018) \PControlled structures for partial
-    differential equations\Q, Dauphine University, Paris.<nbsp>Now working in
-    the finance sector in Germany
+    <item><hlink|Marco Furlan|https://www.linkedin.com/in/mrcfurlan/>
+    (2014\U2018) \PStructures contrôlées pour les équations aux dérivées
+    partielles\Q (<hlink|url|https://www.theses.fr/2018PSLED008>), Dauphine
+    University, Paris.<nbsp>Now working in the finance sector in Germany
 
-    <item>Remi Catellier (2011\U2014) \PPerturbations irrégulières et
-    systèmes différentiels rugueux\Q, Dauphine University, Paris.<nbsp>Now
-    Maître de Conferences at Université de Nice, Sophia Antipolis
+    <item><hlink|Remi Catellier|https://sites.google.com/view/rmicatellier/home>
+    (2011\U2014) \PPerturbations irrégulières et systèmes différentiels
+    rugueux\Q (<hlink|url|https://www.theses.fr/2014PA090032>), Dauphine
+    University, Paris.<nbsp>Now Maître de Conferences at Université de Nice,
+    Sophia Antipolis
 
-    <item>Khalil Chouk (2010\U2013) \PTrois chemins contrôlés\Q, Dauphine
-    University, Paris.<nbsp>Now working in the finance sector in UK
+    <item><hlink|Khalil Chouk|https://www.linkedin.com/in/khalil-chouk-9178931a/>
+    (2010\U2013) \PTrois chemins contrôlés\Q
+    (<hlink|url|https://www.theses.fr/2014PA090002>), Dauphine University,
+    Paris. Thesis funded by AXA Research.
+    (<hlink|url|https://axa-research.org/en/project/khalil-chouk>).<nbsp>Now
+    working in the finance sector in UK
   </itemize>
 
   <subsection*|Master students in Bonn>
@@ -188,6 +201,7 @@
     <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 

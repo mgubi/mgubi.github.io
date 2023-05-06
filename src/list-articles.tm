@@ -13,7 +13,7 @@
   <hrule>
 
   <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Sat May \ 6 14:52:00 2023 UTC>
+  \U updated September 2022.|Sat May \ 6 15:04:09 2023 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Some facts about me \U last updated April 2023.
