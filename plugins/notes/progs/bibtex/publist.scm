@@ -3,7 +3,7 @@
 ;;
 ;; MODULE      : publist.scm
 ;; DESCRIPTION : publist bibliography style for curricula et caetera
-;; COPYRIGHT   : (C) 2021  Massimiliano Gubinelli
+;; COPYRIGHT   : (C) 2023  Massimiliano Gubinelli
 ;;
 ;; This software falls under the GNU general public license version 3 or later.
 ;; It comes WITHOUT ANY WARRANTY WHATSOEVER. For details, see the file LICENSE
@@ -14,7 +14,7 @@
 (texmacs-module (bibtex publist)
   (:use (bibtex bib-utils) (bibtex abbrv)))
 
-(display "loading(bibtex publist)\n")
+(display "Loading (bibtex publist)\n")
 
 (bib-define-style "publist" "plain")
 

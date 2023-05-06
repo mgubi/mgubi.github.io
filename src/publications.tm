@@ -6,26 +6,238 @@
   <\hide-preamble>
     \;
 
-    \;
+    <\with-bib|bib-preprints>
+      <nocite|cannizzaroGaussianFluctuationsStochastic2023>
 
-    <with-bib|bib-papers|<nocite|gubinelliInfinitesimalGeneratorStochastic2020|gubinelliParacontrolledApproachThreedimensional2023|gubinelliGlobalDynamicsTwodimensional2022|devecchiNoteSupersymmetryStochastic2021|GH21|barashkov2020variational|galeatiNoiselessRegularisationNoise2021|Albeverio2020grassmannian|albeverioEllipticStochasticQuantization2019|albeverioEllipticStochasticQuantization2020|bailleulUnboundedRoughDrivers2017|barashkov2021phi43|beckStochasticODEsStochastic2019|berselliGlobalEvolutionVortex2007|bessaihEvolutionRandomVortex2005|brzezniakGlobalSolutionsRandom2013|caracciolo2004reply|caraccioloCommentDynamicBehavior2004|caraccioloCriticalBehaviorTwoDimensional2005|caraccioloFiniteSizeCorrelationLength2001|caraccioloFiniteSizeCriticalBehavior2001|caraccioloFinitesizeScalingDriven2004|caraccioloReplyCommentTransverse2004|caraccioloShapeDependenceFinitesize2003a|caraccioloTransverseFluctuactionsDriven2003|caraccioloTransverseFluctuationsDriven2003|caravennaLargeScaleBehavior2010|caravennaNumericalApproachCopolymers2006|catellierAveragingIrregularCurves2016|choukNonlinearPDEsModulated2015|devecchiNoteSupersymmetryStochastic2019|deya2016priori|deyaNonlinearRoughHeat2012|deyaOnedimensionalReflectedRough2019|deyaPrioriEstimatesRough2019|diehlKardarParisiZhang2017|flandoliDoesNoiseImprove2010|flandoliEfficientRareEvents2002|flandoliFlowDiffeomorphismsSDEs2010|flandoliFullWellposednessPoint2011|flandoliGibbsEnsembleVortex2002|flandoliRegularityStochasticCurrents2009|flandoliRelationStochasticIntegration2002|flandoliRemarksK41Scaling2005|flandoliRemarksStochasticTransport2012|flandoliRigorousRemarksScaling2008|flandoliStatisticsVortexFilament2005|flandoliStochasticCurrents2005|flandoliWellposednessTransportEquation2010|furlan2019weak|furlanParacontrolledQuasilinearSPDEs2016|furlanParacontrolledQuasilinearSPDEs2019|furlanWeakUniversalityClass2019|gubinelli2019lectures|gubinelli2020hyperviscous|gubinelliAbstractIntegrationCombinatorics2011|gubinelliControllingRoughPaths2004|gubinelliEnergySolutionsKPZ2018|gubinelliFiniteSizeScalingNonEquilibrium2002|gubinelliFourierAnalyticApproach2016|gubinelliFourierApproachPathwise2016|gubinelliGibbsMeasuresBrownian2009|gubinelliGibbsMeasuresSelfinteracting2006|gubinelliGlobalSolutionsElliptic2019|gubinelliHairerQuastelUniversalityResult2016|gubinelliInfinitesimalGeneratorStochastic2020|gubinelliIntroductionSingularSPDEs2018|gubinelliKPZReloaded2017|gubinelliMeasurementRateCapabilities1998|gubinelliPanoramaSingularSPDEs2018|gubinelliParacontrolledDistributionsSingular2015|gubinelliProbabilisticApproachStochastic2018|gubinelliRamificationRoughPaths2010|gubinelliRegularizationNoiseStochastic2013|gubinelliRenormalizationTwodimensionalStochastic2018|gubinelliRootedTrees3D2006|gubinelliRoughEvolutionEquations2010|gubinelliRoughSolutionsPeriodic2012|gubinelliSemilinearEvolutionEquations2019|gubinelliUltravioletRenormalizationNelson2014|gubinelliYoungIntegralsSPDEs2006|lejayYoungIntegralsSPDEs2004>>
+      <nocite|galeatiMixingGenericRough2021>
 
-    \;
+      <nocite|barashkov2021variational>
+
+      <nocite|devecchiStochasticAnalysisSubcritical2022>
+
+      <nocite|devecchiSingularIntegrationParts2022>
+
+      <nocite|gubinelliStochasticQuantisationFractional2023>
+
+      <nocite|galeatiNoiselessRegularisationNoise2020>
+
+      <nocite|galeatiPrevalenceRhoIrregularity2020>
+    </with-bib>
+
+    <\with-bib|bib-papers>
+      <nocite|gubinelliInfinitesimalGeneratorStochastic2020>
+
+      <nocite|gubinelliParacontrolledApproachThreedimensional2023>
+
+      <nocite|gubinelliGlobalDynamicsTwodimensional2022>
+
+      <nocite|devecchiNoteSupersymmetryStochastic2021>
+
+      <nocite|GH21>
+
+      <nocite|barashkov2020variational>
+
+      <nocite|galeatiNoiselessRegularisationNoise2021>
+
+      <nocite|Albeverio2020grassmannian>
+
+      <nocite|albeverioEllipticStochasticQuantization2019>
+
+      <nocite|albeverioEllipticStochasticQuantization2020>
+
+      <nocite|bailleulUnboundedRoughDrivers2017>
+
+      <nocite|barashkov2021phi43>
+
+      <nocite|beckStochasticODEsStochastic2019>
+
+      <nocite|berselliGlobalEvolutionVortex2007>
+
+      <nocite|bessaihEvolutionRandomVortex2005>
+
+      <nocite|brzezniakGlobalSolutionsRandom2013>
+
+      <nocite|caracciolo2004reply>
+
+      <nocite|caraccioloCommentDynamicBehavior2004>
+
+      <nocite|caraccioloCriticalBehaviorTwoDimensional2005>
+
+      <nocite|caraccioloFiniteSizeCorrelationLength2001>
+
+      <nocite|caraccioloFiniteSizeCriticalBehavior2001>
+
+      <nocite|caraccioloFinitesizeScalingDriven2004>
+
+      <nocite|caraccioloReplyCommentTransverse2004>
+
+      <nocite|caraccioloShapeDependenceFinitesize2003a>
+
+      <nocite|caraccioloTransverseFluctuactionsDriven2003>
+
+      <nocite|caraccioloTransverseFluctuationsDriven2003>
+
+      <nocite|caravennaLargeScaleBehavior2010>
+
+      <nocite|caravennaNumericalApproachCopolymers2006>
+
+      <nocite|catellierAveragingIrregularCurves2016>
+
+      <nocite|choukNonlinearPDEsModulated2015>
+
+      <nocite|devecchiNoteSupersymmetryStochastic2019>
+
+      <nocite|deya2016priori>
+
+      <nocite|deyaNonlinearRoughHeat2012>
+
+      <nocite|deyaOnedimensionalReflectedRough2019>
+
+      <nocite|deyaPrioriEstimatesRough2019>
+
+      <nocite|diehlKardarParisiZhang2017>
+
+      <nocite|flandoliDoesNoiseImprove2010>
+
+      <nocite|flandoliEfficientRareEvents2002>
+
+      <nocite|flandoliFlowDiffeomorphismsSDEs2010>
+
+      <nocite|flandoliFullWellposednessPoint2011>
+
+      <nocite|flandoliGibbsEnsembleVortex2002>
+
+      <nocite|flandoliRegularityStochasticCurrents2009>
+
+      <nocite|flandoliRelationStochasticIntegration2002>
+
+      <nocite|flandoliRemarksK41Scaling2005>
+
+      <nocite|flandoliRemarksStochasticTransport2012>
+
+      <nocite|flandoliRigorousRemarksScaling2008>
+
+      <nocite|flandoliStatisticsVortexFilament2005>
+
+      <nocite|flandoliStochasticCurrents2005>
+
+      <nocite|flandoliWellposednessTransportEquation2010>
+
+      <nocite|furlan2019weak>
+
+      <nocite|furlanParacontrolledQuasilinearSPDEs2016>
+
+      <nocite|furlanParacontrolledQuasilinearSPDEs2019>
+
+      <nocite|furlanWeakUniversalityClass2019>
+
+      <nocite|gubinelli2019lectures>
+
+      <nocite|gubinelli2020hyperviscous>
+
+      <nocite|gubinelliAbstractIntegrationCombinatorics2011>
+
+      <nocite|gubinelliControllingRoughPaths2004>
+
+      <nocite|gubinelliEnergySolutionsKPZ2018>
+
+      <nocite|gubinelliFiniteSizeScalingNonEquilibrium2002>
+
+      <nocite|gubinelliFourierAnalyticApproach2016>
+
+      <nocite|gubinelliFourierApproachPathwise2016>
+
+      <nocite|gubinelliGibbsMeasuresBrownian2009>
+
+      <nocite|gubinelliGibbsMeasuresSelfinteracting2006>
+
+      <nocite|gubinelliGlobalSolutionsElliptic2019>
+
+      <nocite|gubinelliHairerQuastelUniversalityResult2016>
+
+      <nocite|gubinelliInfinitesimalGeneratorStochastic2020>
+
+      <nocite|gubinelliIntroductionSingularSPDEs2018>
+
+      <nocite|gubinelliKPZReloaded2017>
+
+      <nocite|gubinelliMeasurementRateCapabilities1998>
+
+      <nocite|gubinelliPanoramaSingularSPDEs2018>
+
+      <nocite|gubinelliParacontrolledDistributionsSingular2015>
+
+      <nocite|gubinelliProbabilisticApproachStochastic2018>
+
+      <nocite|gubinelliRamificationRoughPaths2010>
+
+      <nocite|gubinelliRegularizationNoiseStochastic2013>
+
+      <nocite|gubinelliRenormalizationTwodimensionalStochastic2018>
+
+      <nocite|gubinelliRootedTrees3D2006>
+
+      <nocite|gubinelliRoughEvolutionEquations2010>
+
+      <nocite|gubinelliRoughSolutionsPeriodic2012>
+
+      <nocite|gubinelliSemilinearEvolutionEquations2019>
+
+      <nocite|gubinelliUltravioletRenormalizationNelson2014>
+
+      <nocite|gubinelliYoungIntegralsSPDEs2006>
+
+      <nocite|lejayYoungIntegralsSPDEs2004>
+    </with-bib>
 
     <\with-bib|bib-edited-books>
-      <nocite|cassNewDirectionsRough2021|cassRoughPathsRegularity2016|crisanRoughPathsPDEs2012|gubinelliSingularRandomDynamics2019>
+      <nocite|cassNewDirectionsRough2021>
+
+      <nocite|cassRoughPathsRegularity2016>
+
+      <nocite|crisanRoughPathsPDEs2012>
+
+      <nocite|gubinelliSingularRandomDynamics2019>
     </with-bib>
 
-    <\with-bib|bib-preprints>
-      <nocite|cannizzaroGaussianFluctuationsStochastic2023|galeatiMixingGenericRough2021|barashkov2021variational|devecchiStochasticAnalysisSubcritical2022|devecchiSingularIntegrationParts2022|gubinelliStochasticQuantisationFractional2023|galeatiNoiselessRegularisationNoise2020|galeatiPrevalenceRhoIrregularity2020>
+    <\with-bib|bib-monographs>
+      <nocite|gubinelliFiniteSizeScalingNonEquilibrium2002>
+
+      <nocite|gubinelliLecturesSingularStochastic2015>
     </with-bib>
 
-    <with-bib|bib-monographs|<nocite|gubinelliFiniteSizeScalingNonEquilibrium2002|gubinelliLecturesSingularStochastic2015>>
+    <\with-bib|bib-unpublished>
+      <nocite|choukNonlinearPDEsModulated2014>
 
-    <with-bib|bib-unpublished|<nocite|choukNonlinearPDEsModulated2014|choukRoughSheets2014|flandoliRelationStochasticIntegration2002|gubinelliControlledViscositySolutions2014>>
+      <nocite|choukRoughSheets2014>
+
+      <nocite|flandoliRelationStochasticIntegration2002>
+
+      <nocite|gubinelliControlledViscositySolutions2014>
+    </with-bib>
 
     <\with-bib|bib-procs>
-      <nocite|gubinelliGNUTEXMACSScientific2014|vanderhoevenGNUTEXMACSScientific2013|flandoliEfficientRareEvents2002|giordanoBridgeMonteCarloNovel2005|giordanoEfficiencyBridgeMonte2006|giordanoEfficientEstimationGaussian2004|giordanoEfficientSimulationOverflow2009|giordanoEstimationRareEvents2006|giordanoRareEventsGaussian2007|amorena2002sull|amorenaControlloDiagnosticaDi2003>
+      <nocite|gubinelliGNUTEXMACSScientific2014>
+
+      <nocite|vanderhoevenGNUTEXMACSScientific2013>
+
+      <nocite|flandoliEfficientRareEvents2002>
+
+      <nocite|giordanoBridgeMonteCarloNovel2005>
+
+      <nocite|giordanoEfficiencyBridgeMonte2006>
+
+      <nocite|giordanoEfficientEstimationGaussian2004>
+
+      <nocite|giordanoEfficientSimulationOverflow2009>
+
+      <nocite|giordanoEstimationRareEvents2006>
+
+      <nocite|giordanoRareEventsGaussian2007>
+
+      <nocite|amorena2002sull>
+
+      <nocite|amorenaControlloDiagnosticaDi2003>
     </with-bib>
 
     \;
@@ -298,7 +510,9 @@
       result at stationarity. <newblock><localize|In
       ><with|font-shape|italic|Stochastic Analysis on Large Scale Interacting
       Systems>, RIMS Kôkyûroku Bessatsu, B59, <localize|pages >101\U115. Res.
-      Inst. Math. Sci. (RIMS), Kyoto, 2016.<newblock> <newblock>
+      Inst. Math. Sci. (RIMS), Kyoto, 2016.
+      <newblock><slink|<enumerate|<code*|http://hdl.handle.net/2433/243596>>>.<newblock>
+      <newblock>
 
       <bibitem*|32><label|bib-papers-gubinelliFourierApproachPathwise2016>M.<nbsp>Gubinelli,
       P.<nbsp>Imkeller<localize|, and >N.<nbsp>Perkowski. <newblock>A Fourier
@@ -6840,12 +7054,20 @@
         <db-field|langid|english>
       </db-entry>
 
-      <\db-entry|+2Nyd0o0i1ZWtVtr3|incollection|gubinelliHairerQuastelUniversalityResult2016>
+      <\db-entry|+QALE0vs1aC6bOyP|incollection|gubinelliHairerQuastelUniversalityResult2016>
         <db-field|contributor|mgubi>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1618054346>
+        <db-field|newer|+2Nyd0o0i1ZWtVtr3>
+
+        <db-field|newer|+1ozaTT4BkTzDq5H>
+
+        <db-field|newer|+18N9Lh7ndW8zXlG>
+
+        <db-field|newer|+18N9Lh7ndW8zXlG>
+
+        <db-field|date|1638005731>
       <|db-entry>
         <db-field|author|Massimiliano <name|Gubinelli><name-sep>Nicolas
         <name|Perkowski>>
@@ -6864,6 +7086,8 @@
 
         <db-field|series|RIMS Kôkyûroku Bessatsu, B59>
 
+        <db-field|note|<slink|<enumerate|<code*|http://hdl.handle.net/2433/243596>>>>
+
         <db-field|mrnumber|3675927>
       </db-entry>
 
@@ -6873,6 +7097,8 @@
         <db-field|modus|imported>
 
         <db-field|date|1681512053>
+
+        <db-field|newer|+1ozaTT4BkTzDq5L>
       <|db-entry>
         <db-field|author|Massimiliano <name|Gubinelli><name-sep>Nicolas
         <name|Perkowski>>
@@ -7044,6 +7270,8 @@
         <db-field|modus|imported>
 
         <db-field|date|1681512053>
+
+        <db-field|newer|+1ozaTT4BkTzDq5R>
       <|db-entry>
         <db-field|author|Massimiliano <name|Gubinelli><name-sep>Nicolas
         <name|Perkowski>>
