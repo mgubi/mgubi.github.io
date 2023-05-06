@@ -11,18 +11,15 @@
 
   <chapter*|Foundations in Stochastic Analysis>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
+  <notes-abstract|A course delivered in Bonn in the winter semester
+  2019/2020.>
 
-  <chapter*|V3F2/F4F1 - Grundzï¿½ge der Stochastischen Analysis / Foundations
-  in Stochastic Analysis<nbsp>>
-
-  <subsection*|WS 2019/2020>
+  <with|font-series|bold|V3F2/F4F1 \U Grundzüge der Stochastischen Analysis
+  \U WS 2019/2020>
 
   Tuesday 14.00-16.00<nbsp><hlink|We10<nbsp>/ Kleiner
-  Hï¿½rsaal|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=460><nbsp>and
-  Friday 10.00-12.00<nbsp><hlink|CP1-HSZ<nbsp>/ Hï¿½rsaal
+  Hörsaal|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=460><nbsp>and
+  Friday 10.00-12.00<nbsp><hlink|CP1-HSZ<nbsp>/ Hörsaal
   7|https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&purge=y&raum.rgid=994>
 
   <subsection*|Tutorials>
@@ -32,7 +29,7 @@
   subject of the tutorials taking place<nbsp>the<nbsp>week after the
   collection of the redactions. Is possile to work in groups at most of two
   students. Tutorials will start the week of October 14th. Please see on
-  BASIS for tutorial <nbsp>schedule.
+  BASIS for tutorial schedule.
 
   <section*|Exam>
 
@@ -70,15 +67,15 @@
     time (revised at the beginning <nbsp>of the course)
 
     <item>Suggested references:<nbsp>D. Williams: Probability with
-    martingales, Lecture notes for the course ``Stochastic processes'' SS19
-    (<hlink|link|/abteilung-gubinelli/teaching/stochastic-processes-ss19>)
+    martingales, Lecture notes for the course \PStochastic processes\Q SS19
+    (<hlink|link|lectures-stochastic-processes-ss19.tm>)
   </itemize>
 
   <section*|Recommended literature>
 
   <\itemize>
-    <item>Lecture notes of A. Bovier ``Stochastic processes'' and
-    ``Introduction to stochastic analysis"
+    <item>Lecture notes of A. Bovier \PStochastic processes'\Q and
+    \PIntroduction to stochastic analysis\Q
 
     <item>Philip Protter, Stochastic Integration and Differential
     Equations.<nbsp>
@@ -86,7 +83,7 @@
     <item>Ioannis Karatzas and Steven E. Shreve. Brownian motion and
     stochastic calculus.
 
-    <item>Timo Seppï¿½lï¿½inen: Basics of Stochastic Analysis.
+    <item>Timo Seppäläinen: Basics of Stochastic Analysis.
     (<hlink|pdf|http://www.math.wisc.edu/~seppalai/courses/735/notes2014.pdf>)
   </itemize>
 
@@ -253,25 +250,67 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
-    <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-10|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-11|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
     <associate|auto-4|<tuple|?|?>>
-    <associate|auto-5|<tuple|?|?>>
-    <associate|auto-6|<tuple|?|?>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-8|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-9|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Template
-      article> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Foundations
+      in Stochastic Analysis> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
+
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|V3F2/F4F1
+      - Grundzï¿½ge der Stochastischen Analysis / Foundations in Stochastic
+      Analysis <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|WS 2019/2020
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Tutorials
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Exam>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Description>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Prerequisites>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Recommended
+      literature> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Lecture
+      Notes> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Problem
+      sheets> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Course
+      Journal> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

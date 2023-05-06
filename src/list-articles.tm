@@ -12,6 +12,40 @@
 
   <hrule>
 
+  <notes-entry|lectures-intro-probability-ws20-21.tm|Introduction to
+  probability|A bachelor course delivered online (due to the pandemic) in
+  Bonn in the winter semester 2020/2021. In German.|Sat May \ 6 18:26:04 2023
+  UTC>
+
+  <notes-entry|lectures-markov-processes-ws17-18.tm|Markov Processes|A course
+  delivered in Bonn in the winter semester 2017/2018.|Sat May \ 6 18:24:41
+  2023 UTC>
+
+  <notes-entry|lectures-stochastic-analysis-ss16.tm|Stochastic Analysis|A
+  course delivered in Bonn in the summer semester 2016.|Sat May \ 6 18:23:52
+  2023 UTC>
+
+  <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic Processes|A
+  course delivered in Bonn in the summer semester 2021, via Zoom due to the
+  pandemic.|Sat May \ 6 18:22:21 2023 UTC>
+
+  <notes-entry|seminar-large-deviations-ws19-20.tm|Large Deviations|This
+  bachelor seminar took place in Bonn in the winter semester 2019/2020.|Sat
+  May \ 6 18:21:34 2023 UTC>
+
+  <notes-entry|lectures-foundations-stochastic-analysis-ws19-20.tm|Foundations
+  in Stochastic Analysis|A course delivered in Bonn in the winter semester
+  2019/2020.|Sat May \ 6 18:20:07 2023 UTC>
+
+  <notes-entry|seminar-feynman-integrals-ss20.tm|The mathematics
+  of<nbsp>Feynman path integrals|A master seminar whici took place in Bonn in
+  the summer semester 2020.|Sat May \ 6 18:17:14 2023 UTC>
+
+  <notes-entry|lectures-rough-paths-ws15-16.tm|Rough paths and controlled
+  paths|An introduction to the theory of rough paths, controlled paths and to
+  recent developments in the analysis of singular SPDEs. Course delivered in
+  Bonn in Winter Semester 2015/2016.|Sat May \ 6 18:16:10 2023 UTC>
+
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Sat May
   \ 6 18:12:11 2023 UTC>
 
@@ -59,11 +93,6 @@
   delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 21:27:29
   2023 UTC>
 
-  <notes-entry|slides.tm|Slides|This file provides a template for typical
-  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
-  small summary of the content, as exemplified by this very text.|Fri May \ 5
-  16:58:05 2023 UTC>
-
   <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
   of lattice systems|This is a seminar on statistical mechanics held in Bonn
   in SS 2021 for the Bachelor degree in Mathematics.|Wed May \ 3 22:26:21
@@ -105,44 +134,11 @@
   continuous time stochastic processes. Course delivered in Bonn in the
   Summer Semester 2022.|Wed May \ 3 22:07:41 2023 UTC>
 
-  <notes-entry|lectures-rough-paths-ws15-16.tm|Rough paths and controlled
-  paths|<notes-abstract|An introduction to the theory of rough paths,
-  controlled paths and to recent developments in the analysis of singular
-  SPDEs. Course delivered in Bonn in Winter Semester 2015/2016.>|Wed May \ 3
-  22:07:01 2023 UTC>
-
   <notes-entry|lectures-qmfi-ss20.tm|Functional Integration and Quantum
   Mechanics|An introduction to the study of Quantum Mechanical
   models<nbsp>via the connection with probability theory given by the
   Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Wed
   May \ 3 22:05:09 2023 UTC>
-
-  <notes-entry|lectures-intro-probability-ws20-21.tm|Template article|This
-  file provides a template for typical notes/articles. You can use the tag
-  <src-macro|notes-abstract> to provide a small summary of the content, as
-  exemplified by this very text.|Wed May \ 3 22:04:18 2023 UTC>
-
-  <notes-entry|lectures-foundations-stochastic-analysis-ws19-20.tm|Foundations
-  in Stochastic Analysis|This file provides a template for typical
-  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
-  small summary of the content, as exemplified by this very text.|Wed May \ 3
-  21:33:03 2023 UTC>
-
-  <notes-entry|seminar-large-deviations-ws19-20.tm|Large Deviations|This file
-  provides a template for typical notes/articles. You can use the tag
-  <src-macro|notes-abstract> to provide a small summary of the content, as
-  exemplified by this very text.|Wed May \ 3 21:33:01 2023 UTC>
-
-  <notes-entry|lectures-stochastic-processes-ss21.tm|Stochastic
-  Processes<nbsp>|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.|Wed May \ 3 21:33:01 2023
-  UTC>
-
-  <notes-entry|lectures-stochastic-analysis-ss16.tm|Stochastic Analysis|This
-  file provides a template for typical notes/articles. You can use the tag
-  <src-macro|notes-abstract> to provide a small summary of the content, as
-  exemplified by this very text.|Wed May \ 3 21:33:01 2023 UTC>
 
   <notes-entry|lectures-sq-ws20-21.tm|Stochastic quantization of the
   Euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum field theory|An
@@ -150,23 +146,12 @@
   the graduate school of the University of Milan in February 2021.|Wed May
   \ 3 21:33:01 2023 UTC>
 
-  <notes-entry|lectures-markov-processes-ws17-18.tm|Markov Processes|This
-  file provides a template for typical notes/articles. You can use the tag
-  <src-macro|notes-abstract> to provide a small summary of the content, as
-  exemplified by this very text.|Wed May \ 3 21:33:01 2023 UTC>
-
   <notes-entry|old-publications.tm|Publications|What my collaborators,
   students and me have written \U last updated October 2020.|Fri Apr 28
   15:49:14 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
   mathematicians.|Sat Apr 22 21:34:34 2023 UTC>
-
-  <notes-entry|seminar-feynman-integrals-ss20.tm|The mathematics
-  of<nbsp>Feynman path integrals|This file provides a template for typical
-  notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
-  small summary of the content, as exemplified by this very text.|Sat Apr 22
-  15:30:18 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to

@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-06T18:12:26Z</updated>
+  <updated>2023-05-06T18:26:47Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,79 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>Introduction to probability</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-intro-probability-ws20-21.html"/>
+    <id>texmacs.github.io/notes/lectures-intro-probability-ws20-21.tm:2023-05-06T18:26:04Z</id>
+    <updated>2023-05-06T18:26:04Z</updated>
+    <published>2023-05-06T18:26:06Z</published>
+    <summary>A bachelor course delivered online (due to the pandemic) in Bonn
+    in the winter semester 2020/2021. In German.</summary>
+  </entry>
+  <entry>
+    <title>Markov Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-markov-processes-ws17-18.html"/>
+    <id>texmacs.github.io/notes/lectures-markov-processes-ws17-18.tm:2023-05-06T18:24:41Z</id>
+    <updated>2023-05-06T18:24:41Z</updated>
+    <published>2023-05-06T18:24:44Z</published>
+    <summary>A course delivered in Bonn in the winter semester
+    2017/2018.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss16.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss16.tm:2023-05-06T18:23:52Z</id>
+    <updated>2023-05-06T18:23:52Z</updated>
+    <published>2023-05-06T18:23:54Z</published>
+    <summary>A course delivered in Bonn in the summer semester 2016.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-processes-ss21.html"/>
+    <id>texmacs.github.io/notes/lectures-stochastic-processes-ss21.tm:2023-05-06T18:22:21Z</id>
+    <updated>2023-05-06T18:22:21Z</updated>
+    <published>2023-05-06T18:22:23Z</published>
+    <summary>A course delivered in Bonn in the summer semester 2021, via Zoom
+    due to the pandemic.</summary>
+  </entry>
+  <entry>
+    <title>Large Deviations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-large-deviations-ws19-20.html"/>
+    <id>texmacs.github.io/notes/seminar-large-deviations-ws19-20.tm:2023-05-06T18:21:34Z</id>
+    <updated>2023-05-06T18:21:34Z</updated>
+    <published>2023-05-06T18:21:34Z</published>
+    <summary>This bachelor seminar took place in Bonn in the winter semester
+    2019/2020.</summary>
+  </entry>
+  <entry>
+    <title>Foundations in Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-foundations-stochastic-analysis-ws19-20.html"/>
+    <id>texmacs.github.io/notes/lectures-foundations-stochastic-analysis-ws19-20.tm:2023-05-06T18:20:07Z</id>
+    <updated>2023-05-06T18:20:07Z</updated>
+    <published>2023-05-06T18:20:09Z</published>
+    <summary>A course delivered in Bonn in the winter semester
+    2019/2020.</summary>
+  </entry>
+  <entry>
+    <title><concat>The mathematics of<nbsp/>Feynman path
+    integrals</concat></title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-feynman-integrals-ss20.html"/>
+    <id>texmacs.github.io/notes/seminar-feynman-integrals-ss20.tm:2023-05-06T18:17:14Z</id>
+    <updated>2023-05-06T18:17:14Z</updated>
+    <published>2023-05-06T18:17:16Z</published>
+    <summary>A master seminar whici took place in Bonn in the summer semester
+    2020.</summary>
+  </entry>
+  <entry>
+    <title>Rough paths and controlled paths</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-rough-paths-ws15-16.html"/>
+    <id>texmacs.github.io/notes/lectures-rough-paths-ws15-16.tm:2023-05-06T18:16:10Z</id>
+    <updated>2023-05-06T18:16:10Z</updated>
+    <published>2023-05-06T18:16:13Z</published>
+    <summary>An introduction to the theory of rough paths, controlled paths
+    and to recent developments in the analysis of singular SPDEs. Course
+    delivered in Bonn in Winter Semester 2015/2016.</summary>
+  </entry>
   <entry>
     <title>Writings</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/writings.html"/>
@@ -126,17 +199,6 @@
     20102011.</summary>
   </entry>
   <entry>
-    <title>Slides</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/slides.html"/>
-    <id>texmacs.github.io/notes/slides.tm:2023-05-05T16:58:05Z</id>
-    <updated>2023-05-05T16:58:05Z</updated>
-    <published>2023-05-05T16:58:08Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
     <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-statistical-mechanics-ss21.html"/>
     <id>texmacs.github.io/notes/seminar-statistical-mechanics-ss21.tm:2023-05-03T22:26:21Z</id>
@@ -215,17 +277,6 @@
     delivered in Bonn in the Summer Semester 2022.</concat></summary>
   </entry>
   <entry>
-    <title>Rough paths and controlled paths</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-rough-paths-ws15-16.html"/>
-    <id>texmacs.github.io/notes/lectures-rough-paths-ws15-16.tm:2023-05-03T22:07:01Z</id>
-    <updated>2023-05-03T22:07:01Z</updated>
-    <published>2023-05-03T22:07:05Z</published>
-    <summary><notes-abstract>An introduction to the theory of rough paths,
-    controlled paths and to recent developments in the analysis of singular
-    SPDEs. Course delivered in Bonn in Winter Semester
-    2015/2016.</notes-abstract></summary>
-  </entry>
-  <entry>
     <title>Functional Integration and Quantum Mechanics</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-qmfi-ss20.html"/>
     <id>texmacs.github.io/notes/lectures-qmfi-ss20.tm:2023-05-03T22:05:09Z</id>
@@ -235,61 +286,6 @@
     models<nbsp/>via the connection with probability theory given by the
     Euclidean approach. Course delivered in Bonn in Summer Semester
     2020.</concat></summary>
-  </entry>
-  <entry>
-    <title>Template article</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-intro-probability-ws20-21.html"/>
-    <id>texmacs.github.io/notes/lectures-intro-probability-ws20-21.tm:2023-05-03T22:04:18Z</id>
-    <updated>2023-05-03T22:04:18Z</updated>
-    <published>2023-05-03T22:04:20Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Foundations in Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-foundations-stochastic-analysis-ws19-20.html"/>
-    <id>texmacs.github.io/notes/lectures-foundations-stochastic-analysis-ws19-20.tm:2023-05-03T21:33:03Z</id>
-    <updated>2023-05-03T21:33:03Z</updated>
-    <published>2023-05-03T21:33:06Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Large Deviations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-large-deviations-ws19-20.html"/>
-    <id>texmacs.github.io/notes/seminar-large-deviations-ws19-20.tm:2023-05-03T21:33:01Z</id>
-    <updated>2023-05-03T21:33:01Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
-    <title><concat>Stochastic Processes<nbsp/></concat></title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-processes-ss21.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-processes-ss21.tm:2023-05-03T21:33:01Z</id>
-    <updated>2023-05-03T21:33:01Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
-  </entry>
-  <entry>
-    <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-stochastic-analysis-ss16.html"/>
-    <id>texmacs.github.io/notes/lectures-stochastic-analysis-ss16.tm:2023-05-03T21:33:01Z</id>
-    <updated>2023-05-03T21:33:01Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
   </entry>
   <entry>
     <title><concat>Stochastic quantization of the Euclidean
@@ -302,17 +298,6 @@
     <summary>An introduction to stochastic quantisation. Course delivered in
     the context of the graduate school of the University of Milan in February
     2021.</summary>
-  </entry>
-  <entry>
-    <title>Markov Processes</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-markov-processes-ws17-18.html"/>
-    <id>texmacs.github.io/notes/lectures-markov-processes-ws17-18.tm:2023-05-03T21:33:01Z</id>
-    <updated>2023-05-03T21:33:01Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
   </entry>
   <entry>
     <title>Publications</title>
@@ -330,18 +315,6 @@
     <updated>2023-04-22T21:34:34Z</updated>
     <published>2023-04-22T21:34:37Z</published>
     <summary>I travel around to meet other mathematicians.</summary>
-  </entry>
-  <entry>
-    <title><concat>The mathematics of<nbsp/>Feynman path
-    integrals</concat></title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/seminar-feynman-integrals-ss20.html"/>
-    <id>texmacs.github.io/notes/seminar-feynman-integrals-ss20.tm:2023-04-22T15:30:18Z</id>
-    <updated>2023-04-22T15:30:18Z</updated>
-    <published>2023-04-22T20:30:15Z</published>
-    <summary><concat>This file provides a template for typical notes/articles.
-    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
-    small summary of the content, as exemplified by this very
-    text.</concat></summary>
   </entry>
   <entry>
     <title>Template article</title>

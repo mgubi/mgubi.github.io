@@ -11,15 +11,9 @@
 
   <chapter*|Stochastic Analysis>
 
-  <notes-abstract|This file provides a template for typical notes/articles.
-  You can use the tag <src-macro|notes-abstract> to provide a small summary
-  of the content, as exemplified by this very text.>
+  <notes-abstract|A course delivered in Bonn in the summer semester 2016.>
 
-  \;
-
-  <subsection*|V4F1 - Summer semester 2016<nbsp>>
-
-  <nbsp>
+  <with|font-series|bold|V4F1 - Summer semester 2016>
 
   Wednesday 12.15-14.00 and Thursday 12.15-14.00, Kleiner Hï¿½rsaal,
   Wegelerstr. 10<nbsp>
@@ -40,8 +34,6 @@
   (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-exam-schedule.pdf>)
   [updated 14/7/2016] Sample exam questions
   (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-questions.pdf>)
-
-  <nbsp>
 
   <subsection*|Topics>
 
@@ -74,7 +66,7 @@
     1.1, posted 24/5/2016]
 
     <item>Note 3 : Brownian martingale representation theorem, Entropy and
-    Girsanov transform, Bouï¿½-Dupuis formula, Large deviations.
+    Girsanov transform, Boué-Dupuis formula, Large deviations.
     (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>)
     [version 1.3, posted 16/6/2016]
 
@@ -169,16 +161,16 @@
 
     <item>Lecture 2/6 : The martingale representation theorem.
 
-    <item>Lecture 8/6 : Entropy and Girsanov transform. Fï¿½llmer's drift. The
-    Bouï¿½-Dupuis formula.<nbsp>
+    <item>Lecture 8/6 : Entropy and Girsanov transform. Föllmer's drift. The
+    Boué\UDupuis formula.<nbsp>
 
-    <item>Lecture 9/6 : proof of the Bouï¿½-Dupuis formula, exponential
+    <item>Lecture 9/6 : proof of the Boué-Dupuis formula, exponential
     integrability of Lipshitz functionals over the Wiener space.
 
     <item>Lecture 14/6 : large deviations over the Wiener space, Laplace
     principle, small noise diffusions.
 
-    <item>Lecture 15/6 : Proof of the Laplace principle via Bouï¿½-Dupuis
+    <item>Lecture 15/6 : Proof of the Laplace principle via Boué-Dupuis
     formula for a general class of Wiener functionals.
 
     <item>Lecture 16/6 : Regularity of processes.<nbsp>Garcia-Rodemich-Rumsey
@@ -218,50 +210,52 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|?|?|template.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-7|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-8|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|tochastic
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Stochastic
       Analysis> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <with|par-left|<quote|1tab>|V4F1 - Summer semester 2017
+      <with|par-left|<quote|1tab>|V4F1 - Summer semester 2016
       <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
+      <with|par-left|<quote|1tab>|Topics <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
       <with|par-left|<quote|1tab>|Prerequisites
       <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3>>
+      <no-break><pageref|auto-4>>
 
       <with|par-left|<quote|1tab>|Lecture Notes
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4>>
+      <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|1tab>|Further References
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5>>
+      <no-break><pageref|auto-6>>
 
       <with|par-left|<quote|1tab>|Problem sheets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6>>
+      <no-break><pageref|auto-7>>
 
       <with|par-left|<quote|1tab>|Course Journal
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
+      <no-break><pageref|auto-8>>
     </associate>
   </collection>
 </auxiliary>

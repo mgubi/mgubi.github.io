@@ -11,9 +11,9 @@
 
   <chapter*|Rough paths and controlled paths>
 
-  <notes-abstract|<notes-abstract|An introduction to the theory of rough
-  paths, controlled paths and to recent developments in the analysis of
-  singular SPDEs. Course delivered in Bonn in Winter Semester 2015/2016.>>
+  <notes-abstract|An introduction to the theory of rough paths, controlled
+  paths and to recent developments in the analysis of singular SPDEs. Course
+  delivered in Bonn in Winter Semester 2015/2016.>
 
   \;
 
@@ -130,11 +130,11 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|c1709|<tuple|?|?>>
-    <associate|c1755|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|c1755|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|content|<tuple|?|?>>
   </collection>
 </references>
