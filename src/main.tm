@@ -45,9 +45,12 @@
   <vspace|1em>
 
   <\small>
-    a <hlink|list|./list-articles.tm> of all the articles & a
-    <hlink|template|template.tm> for new pages \<cdot\> these pages have been
-    created with <hlink|<TeXmacs>|http://www.texmacs.org>
+    a <hlink|list|./list-articles.tm> of all the articles \<cdot\> a
+    <hlink|template|template.tm> for new pages \<cdot\> an
+    <hlink|Atom|notes.atom> feed
+
+    these pages have been created with <hlink|<TeXmacs>|http://www.texmacs.org>
+    and are hosted at <hlink|github|https://github.com/mgubi/webpages>
   </small>
 
   <vspace|1em>
