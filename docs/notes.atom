@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-05T22:49:52Z</updated>
+  <updated>2023-05-06T09:14:58Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -115,7 +115,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
     <id>texmacs.github.io/notes/publications.tm:2023-05-05T11:47:34Z</id>
     <updated>2023-05-05T11:47:34Z</updated>
-    <published>2023-05-05T11:28:01Z</published>
+    <published>2023-05-06T09:14:56Z</published>
     <summary>What my collaborators, students and me have written  last
     updated April 2021.</summary>
   </entry>

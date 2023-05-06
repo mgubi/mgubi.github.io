@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|publist>>
 
@@ -44,43 +44,46 @@
       and >P.<nbsp>Rinaldi. <newblock>Stochastic quantisation of the
       fractional <math|\<Phi\><rsup|4><rsub|3>> model in the full subcritical
       regime. <newblock>mar 2023.<newblock>
+      <newblock><hlink|10.48550/arXiv.2303.18112|https://doi.org/10.48550/arXiv.2303.18112>
 
       <bibitem*|2><label|bib-preprints-cannizzaroGaussianFluctuationsStochastic2023>G.<nbsp>Cannizzaro,
       M.<nbsp>Gubinelli<localize|, and >F.<nbsp>Toninelli. <newblock>Gaussian
       Fluctuations for the stochastic Burgers equation in dimension
       <math|d\<geqslant\>2>. <newblock>apr 2023.<newblock>
+      <newblock><hlink|10.48550/arXiv.2304.05730|https://doi.org/10.48550/arXiv.2304.05730>
 
       <bibitem*|3><bib-year-section|2022><label|bib-preprints-devecchiSingularIntegrationParts2022>F.<nbsp>C.<nbsp>De
       Vecchi, M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Turra. <newblock>A
       singular integration by parts formula for the exponential Euclidean QFT
       on the plane. <newblock>dec 2022.<newblock>
+      <newblock><hlink|10.48550/arXiv.2212.05584|https://doi.org/10.48550/arXiv.2212.05584>
 
       <bibitem*|4><label|bib-preprints-devecchiStochasticAnalysisSubcritical2022>F.<nbsp>C.<nbsp>De
       Vecchi, L.<nbsp>Fresta<localize|, and >M.<nbsp>Gubinelli. <newblock>A
       stochastic analysis of subcritical Euclidean fermionic field theories.
-      <newblock>oct 2022.<newblock>
+      <newblock>oct 2022.<newblock> <newblock><hlink|10.48550/arXiv.2210.15047|https://doi.org/10.48550/arXiv.2210.15047>
 
       <bibitem*|5><bib-year-section|2021><label|bib-preprints-galeatiMixingGenericRough2021>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Mixing for generic rough shear flows.
       <newblock><with|font-shape|italic|ArXiv:2107.12115 [math]>, jul
-      2021.<newblock>
+      2021.<newblock> <newblock><hlink|10.48550/arXiv.2107.12115|https://doi.org/10.48550/arXiv.2107.12115>
 
       <bibitem*|6><label|bib-preprints-barashkov2021variational>N.<nbsp>Barashkov<localize|
       and >M.<nbsp>Gubinelli. <newblock>On the variational method for
       euclidean quantum fields in infinite volume.
       <newblock><with|font-shape|italic|ArXiv>, arXiv:2112.05562,
-      2021.<newblock>
+      2021.<newblock> <newblock>
 
       <bibitem*|7><bib-year-section|2020><label|bib-preprints-galeatiPrevalenceRhoIrregularity2020>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Prevalence of
       <math|\<rho\>>-irregularity and related properties.
-      <newblock><with|font-shape|italic|ArXiv:2004.00872 [math]>, apr 2020.
-      <newblock><slink|http://arxiv.org/abs/2004.00872>.<newblock>
+      <newblock><with|font-shape|italic|ArXiv:2004.00872 [math]>, apr
+      2020.<newblock> <newblock><hlink|10.48550/arXiv.2004.00872|https://doi.org/10.48550/arXiv.2004.00872>
 
       <bibitem*|8><label|bib-preprints-galeatiNoiselessRegularisationNoise2020>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Noiseless regularisation by noise.
       <newblock><with|font-shape|italic|ArXiv:2003.14264 [math]>, mar
-      2020.<newblock>
+      2020.<newblock> <newblock><hlink|10.48550/arXiv.2003.14264|https://doi.org/10.48550/arXiv.2003.14264>
     </bib-list>
   </bibliography*>
 
@@ -91,31 +94,33 @@
       approach to the three-dimensional stochastic nonlinear wave equation
       with quadratic nonlinearity. <newblock><with|font-shape|italic|Journal
       of the European Mathematical Society>, jan 2023.<newblock>
+      <newblock><hlink|10.4171/jems/1294|https://doi.org/10.4171/jems/1294>
 
       <bibitem*|2><bib-year-section|2022><label|bib-papers-gubinelliGlobalDynamicsTwodimensional2022>M.<nbsp>Gubinelli,
       H.<nbsp>Koch, T.<nbsp>Oh<localize|, and >L.<nbsp>Tolomeo.
       <newblock>Global Dynamics for the Two-dimensional Stochastic Nonlinear
       Wave Equations. <newblock><with|font-shape|italic|International
       Mathematics Research Notices>, 2022(21):16954\U16999, oct
-      2022.<newblock>
+      2022.<newblock> <newblock><hlink|10.1093/imrn/rnab084|https://doi.org/10.1093/imrn/rnab084>
 
       <bibitem*|3><label|bib-papers-Albeverio2020grassmannian>S.<nbsp>Albeverio,
       L.<nbsp>Borasi, F.<nbsp>C.<nbsp>De Vecchi<localize|, and
       >M.<nbsp>Gubinelli. <newblock>Grassmannian stochastic analysis and the
       stochastic quantization of Euclidean fermions.
       <newblock><with|font-shape|italic|Probab. Theory Related Fields>,
-      183(3-4):909\U995, 2022.<newblock>
+      183(3-4):909\U995, 2022.<newblock> <newblock><hlink|10.1007/s00440-022-01136-x|https://doi.org/10.1007/s00440-022-01136-x>
 
       <bibitem*|4><bib-year-section|2021><label|bib-papers-GH21>M.<nbsp>Gubinelli<localize|
       and >M.<nbsp>Hofmanová. <newblock>A PDE construction of the Euclidean
       <math|\<Phi\><rsup|4><rsub|3> >quantum field theory.
       <newblock><with|font-shape|italic|Communications in Mathematical
       Physics>, 384(1):1\U75, 2021.<newblock>
+      <newblock><hlink|10.1007/s00220-021-04022-0|https://doi.org/10.1007/s00220-021-04022-0>
 
       <bibitem*|5><label|bib-papers-galeatiNoiselessRegularisationNoise2021>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Noiseless regularisation by noise.
       <newblock><with|font-shape|italic|Revista Matemática Iberoamericana>,
-      jul 2021.<newblock>
+      jul 2021.<newblock> <newblock><hlink|10.4171/RMI/1280|https://doi.org/10.4171/RMI/1280>
 
       <bibitem*|6><label|bib-papers-devecchiNoteSupersymmetryStochastic2021>F.<nbsp>C.<nbsp>De
       Vecchi<localize| and >M.<nbsp>Gubinelli. <newblock>A Note on
@@ -126,98 +131,109 @@
       and Invariance in Stochastic Dynamics>, Springer Proceedings in
       Mathematics & Statistics, <localize|pages >71\U87. Cham, 2021. Springer
       International Publishing.<newblock>
+      <newblock><hlink|10.1007/978-3-030-87432-2<rsub|5>|https://doi.org/10.1007/978-3-030-87432-2<rsub|5>>
 
       <bibitem*|7><label|bib-papers-barashkov2021phi43>N.<nbsp>Barashkov<localize|
       and >M.<nbsp>Gubinelli. <newblock>The <math|\<phi\><rsup|4><rsub|3>>
       measure via Girsanov's theorem. <newblock><with|font-shape|italic|Electronic
       Journal of Probability>, 26:1\U29, 2021.<newblock>
+      <newblock><hlink|10.1214/21-EJP635|https://doi.org/10.1214/21-EJP635>
 
       <bibitem*|8><bib-year-section|2020><label|bib-papers-gubinelliInfinitesimalGeneratorStochastic2020>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>The infinitesimal generator of the
       stochastic Burgers equation. <newblock><with|font-shape|italic|Probability
       Theory and Related Fields>, aug 2020.<newblock>
+      <newblock><hlink|10.1007/s00440-020-00996-5|https://doi.org/10.1007/s00440-020-00996-5>
 
       <bibitem*|9><label|bib-papers-gubinelli2020hyperviscous>M.<nbsp>Gubinelli<localize|
       and >M.<nbsp>Turra. <newblock>Hyperviscous stochastic Navier\UStokes
       equations with white noise invariant measure.
       <newblock><with|font-shape|italic|Stochastics and Dynamics>,
-      <localize|page >2040005, 2020.<newblock>
+      <localize|page >2040005, 2020.<newblock> <newblock>
 
       <bibitem*|10><label|bib-papers-barashkov2020variational>N.<nbsp>Barashkov<localize|
       and >M.<nbsp>Gubinelli. <newblock>A variational method for
       <math|\<phi\><rsup|4><rsub|3>>. <newblock><with|font-shape|italic|Duke
       Mathematical Journal>, 169(17):3339\U3415, 2020.<newblock>
+      <newblock><hlink|10.1215/00127094-2020-0029|https://doi.org/10.1215/00127094-2020-0029>
 
       <bibitem*|11><label|bib-papers-albeverioEllipticStochasticQuantization2020>S.<nbsp>Albeverio,
-      F.<nbsp>C.<nbsp>D.<nbsp>Vecchi<localize|, and >M.<nbsp>Gubinelli.
+      F.<nbsp>C.<nbsp>De Vecchi<localize|, and >M.<nbsp>Gubinelli.
       <newblock>Elliptic stochastic quantization.
       <newblock><with|font-shape|italic|Annals of Probability>,
       48(4):1693\U1741, jul 2020.<newblock>
+      <newblock><hlink|10.1214/19-AOP1404|https://doi.org/10.1214/19-AOP1404>
 
       <bibitem*|12><bib-year-section|2019><label|bib-papers-gubinelliGlobalSolutionsElliptic2019>M.<nbsp>Gubinelli<localize|
       and >M.<nbsp>Hofmanová. <newblock>Global Solutions to Elliptic and
       Parabolic <math|\<Phi\><rsup|4>> Models in Euclidean Space.
       <newblock><with|font-shape|italic|Communications in Mathematical
       Physics>, 368(3):1201\U1266, jun 2019.<newblock>
+      <newblock><hlink|10.1007/s00220-019-03398-4|https://doi.org/10.1007/s00220-019-03398-4>
 
       <bibitem*|13><label|bib-papers-gubinelli2019lectures>M.<nbsp>Gubinelli.
       <newblock>Lectures on energy solutions for the stationary KPZ equation.
       <newblock><localize|In ><with|font-shape|italic|Singular Random
       Dynamics>, <localize|pages >11\U74. Springer, 2019.<newblock>
+      <newblock>
 
       <bibitem*|14><label|bib-papers-gubinelliSemilinearEvolutionEquations2019>M.<nbsp>Gubinelli,
       B.<nbsp>Ugurcan<localize|, and >I.<nbsp>Zachhuber. <newblock>Semilinear
       evolution equations for the Anderson Hamiltonian in two and three
       dimensions. <newblock><with|font-shape|italic|Stochastics and Partial
       Differential Equations: Analysis and Computations>, may 2019.<newblock>
+      <newblock><hlink|10.1007/s40072-019-00143-9|https://doi.org/10.1007/s40072-019-00143-9>
 
       <bibitem*|15><label|bib-papers-furlan2019weak>M.<nbsp>Furlan<localize|
       and >M.<nbsp>Gubinelli. <newblock>Weak universality for a class of 3d
       stochastic reaction\Udiffusion models.
       <newblock><with|font-shape|italic|Probability Theory and Related
-      Fields>, 173(3-4):1099\U1164, 2019.<newblock>
+      Fields>, 173(3-4):1099\U1164, 2019.<newblock> <newblock>
 
       <bibitem*|16><label|bib-papers-furlanParacontrolledQuasilinearSPDEs2019>M.<nbsp>Furlan<localize|
       and >M.<nbsp>Gubinelli. <newblock>Paracontrolled quasilinear SPDEs.
       <newblock><with|font-shape|italic|The Annals of Probability>,
-      47(2):1096\U1135, 2019.<newblock>
+      47(2):1096\U1135, 2019.<newblock> <newblock><hlink|10.1214/18-AOP1280|https://doi.org/10.1214/18-AOP1280>
 
       <bibitem*|17><label|bib-papers-furlanWeakUniversalityClass2019>M.<nbsp>Furlan<localize|
       and >M.<nbsp>Gubinelli. <newblock>Weak universality for a class of 3d
       stochastic reaction-diffusion models.
       <newblock><with|font-shape|italic|Probability Theory and Related
       Fields>, 173(3-4):1099\U1164, 2019.<newblock>
+      <newblock><hlink|10.1007/s00440-018-0849-6|https://doi.org/10.1007/s00440-018-0849-6>
 
       <bibitem*|18><label|bib-papers-deyaOnedimensionalReflectedRough2019>A.<nbsp>Deya,
       M.<nbsp>Gubinelli, M.<nbsp>Hofmanová<localize|, and >S.<nbsp>Tindel.
       <newblock>One-dimensional reflected rough differential equations.
       <newblock><with|font-shape|italic|Stochastic Processes and their
       Applications>, 129(9):3261\U3281, sep 2019.<newblock>
+      <newblock><hlink|10.1016/j.spa.2018.09.007|https://doi.org/10.1016/j.spa.2018.09.007>
 
       <bibitem*|19><label|bib-papers-deyaPrioriEstimatesRough2019>A.<nbsp>Deya,
       M.<nbsp>Gubinelli, M.<nbsp>Hofmanová<localize|, and >S.<nbsp>Tindel.
       <newblock>A priori estimates for rough PDEs with application to rough
       conservation laws. <newblock><with|font-shape|italic|Journal of
       Functional Analysis>, 276(12):3577\U3645, jun 2019.<newblock>
+      <newblock><hlink|10.1016/j.jfa.2019.03.008|https://doi.org/10.1016/j.jfa.2019.03.008>
 
       <bibitem*|20><label|bib-papers-devecchiNoteSupersymmetryStochastic2019>F.<nbsp>C.<nbsp>De
       Vecchi<localize| and >M.<nbsp>Gubinelli. <newblock>A note on
       supersymmetry and stochastic differential equations.
       <newblock><with|font-shape|italic|ArXiv:1912.04830 [math-ph]>, dec
-      2019.<newblock>
+      2019.<newblock> <newblock><hlink|10.48550/arXiv.1912.04830|https://doi.org/10.48550/arXiv.1912.04830>
 
       <bibitem*|21><label|bib-papers-beckStochasticODEsStochastic2019>L.<nbsp>Beck,
       F.<nbsp>Flandoli, M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Maurelli.
       <newblock>Stochastic ODEs and stochastic linear PDEs with critical
       drift: regularity, duality and uniqueness.
       <newblock><with|font-shape|italic|Electronic Journal of Probability>,
-      24, 2019.<newblock>
+      24, 2019.<newblock> <newblock><hlink|10.1214/19-EJP379|https://doi.org/10.1214/19-EJP379>
 
       <bibitem*|22><label|bib-papers-albeverioEllipticStochasticQuantization2019>S.<nbsp>Albeverio,
       F.<nbsp>C.<nbsp>De Vecchi<localize|, and >M.<nbsp>Gubinelli.
       <newblock>The elliptic stochastic quantization of some two dimensional
       Euclidean QFTs. <newblock><with|font-shape|italic|ArXiv:1906.11187
-      [math-ph]>, jun 2019.<newblock>
+      [math-ph]>, jun 2019.<newblock> <newblock><hlink|10.48550/arXiv.1906.11187|https://doi.org/10.48550/arXiv.1906.11187>
 
       <bibitem*|23><bib-year-section|2018><label|bib-papers-gubinelliProbabilisticApproachStochastic2018>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>Probabilistic Approach to the
@@ -227,12 +243,13 @@
       <with|font-shape|italic|Stochastic Partial Differential Equations and
       Related Fields>, Springer Proceedings in Mathematics & Statistics,
       <localize|pages >515\U527. Springer International Publishing,
-      2018.<newblock>
+      2018.<newblock> <newblock>
 
       <bibitem*|24><label|bib-papers-gubinelliEnergySolutionsKPZ2018>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>Energy solutions of KPZ are unique.
       <newblock><with|font-shape|italic|Journal of the American Mathematical
       Society>, 31(2):427\U471, 2018.<newblock>
+      <newblock><hlink|10.1090/jams/889|https://doi.org/10.1090/jams/889>
 
       <bibitem*|25><label|bib-papers-gubinelliIntroductionSingularSPDEs2018>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>An Introduction to Singular SPDEs.
@@ -242,140 +259,149 @@
       <with|font-shape|italic|Stochastic Partial Differential Equations and
       Related Fields>, Springer Proceedings in Mathematics & Statistics,
       <localize|pages >69\U99. Springer International Publishing,
-      2018.<newblock>
+      2018.<newblock> <newblock>
 
       <bibitem*|26><label|bib-papers-gubinelliRenormalizationTwodimensionalStochastic2018>M.<nbsp>Gubinelli,
       H.<nbsp>Koch<localize|, and >T.<nbsp>Oh. <newblock>Renormalization of
       the two-dimensional stochastic nonlinear wave equations.
       <newblock><with|font-shape|italic|Transactions of the American
       Mathematical Society>, <localize|page >1, 2018.<newblock>
+      <newblock><hlink|10.1090/tran/7452|https://doi.org/10.1090/tran/7452>
 
       <bibitem*|27><label|bib-papers-gubinelliPanoramaSingularSPDEs2018>M.<nbsp>Gubinelli.
       <newblock>A panorama of singular SPDEs. <newblock><localize|In
       ><with|font-shape|italic|Proc. Int. Cong. of Math>,
       <localize|volume><nbsp>2, <localize|pages >2277\U2304. 2018.<newblock>
+      <newblock>
 
       <bibitem*|28><bib-year-section|2017><label|bib-papers-gubinelliKPZReloaded2017>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>KPZ Reloaded.
       <newblock><with|font-shape|italic|Communications in Mathematical
       Physics>, 349(1):165\U269, jan 2017.<newblock>
+      <newblock><hlink|10.1007/s00220-016-2788-3|https://doi.org/10.1007/s00220-016-2788-3>
 
       <bibitem*|29><label|bib-papers-diehlKardarParisiZhang2017>J.<nbsp>Diehl,
       M.<nbsp>Gubinelli<localize|, and >N.<nbsp>Perkowski. <newblock>The
-      Kardar<textendash|Parisi><textendash|Zhang Equation> as Scaling Limit
-      of Weakly Asymmetric Interacting Brownian Motions.
-      <newblock><with|font-shape|italic|Communications in Mathematical
-      Physics>, 354(2):549\U589, sep 2017.<newblock>
+      Kardar\UParisi\UZhang Equation as Scaling Limit of Weakly Asymmetric
+      Interacting Brownian Motions. <newblock><with|font-shape|italic|Communications
+      in Mathematical Physics>, 354(2):549\U589, sep 2017.<newblock>
+      <newblock><hlink|10.1007/s00220-017-2918-6|https://doi.org/10.1007/s00220-017-2918-6>
 
       <bibitem*|30><label|bib-papers-bailleulUnboundedRoughDrivers2017>I.<nbsp>Bailleul<localize|
       and >M.<nbsp>Gubinelli. <newblock>Unbounded rough drivers.
       <newblock><with|font-shape|italic|Annales de la faculté des sciences de
       Toulouse Mathématiques>, 26(4):795\U830, 2017.<newblock>
+      <newblock><hlink|10.5802/afst.1553|https://doi.org/10.5802/afst.1553>
 
       <bibitem*|31><bib-year-section|2016><label|bib-papers-gubinelliHairerQuastelUniversalityResult2016>M.<nbsp>Gubinelli<localize|
       and >N.<nbsp>Perkowski. <newblock>The Hairer-Quastel universality
       result at stationarity. <newblock><localize|In
       ><with|font-shape|italic|Stochastic Analysis on Large Scale Interacting
       Systems>, RIMS Kôkyûroku Bessatsu, B59, <localize|pages >101\U115. Res.
-      Inst. Math. Sci. (RIMS), Kyoto, 2016.<newblock>
+      Inst. Math. Sci. (RIMS), Kyoto, 2016.<newblock> <newblock>
 
       <bibitem*|32><label|bib-papers-gubinelliFourierApproachPathwise2016>M.<nbsp>Gubinelli,
       P.<nbsp>Imkeller<localize|, and >N.<nbsp>Perkowski. <newblock>A Fourier
       approach to pathwise stochastic integration.
       <newblock><with|font-shape|italic|Electronic Journal of Probability>,
-      21(paper no. 2):37, 2016.<newblock>
+      21(paper no. 2):37, 2016.<newblock> <newblock>
 
       <bibitem*|33><label|bib-papers-gubinelliFourierAnalyticApproach2016>M.<nbsp>Gubinelli,
       P.<nbsp>Imkeller<localize|, and >N.<nbsp>Perkowski. <newblock>A Fourier
       analytic approach to pathwise stochastic integration.
       <newblock><with|font-shape|italic|Electronic Journal of Probability>,
-      21:0, 2016.<newblock>
+      21:0, 2016.<newblock> <newblock><hlink|10.1214/16-EJP3868|https://doi.org/10.1214/16-EJP3868>
 
       <bibitem*|34><label|bib-papers-furlanParacontrolledQuasilinearSPDEs2016>M.<nbsp>Furlan<localize|
       and >M.<nbsp>Gubinelli. <newblock>Paracontrolled quasilinear SPDEs.
       <newblock><with|font-shape|italic|ArXiv:1610.07886 [math]>, oct
-      2016.<newblock>
+      2016.<newblock> <newblock><hlink|10.48550/arXiv.1610.07886|https://doi.org/10.48550/arXiv.1610.07886>
 
       <bibitem*|35><label|bib-papers-deya2016priori>A.<nbsp>Deya,
       M.<nbsp>Gubinelli, M.<nbsp>Hofmanová<localize|, and >S.<nbsp>Tindel.
       <newblock>A priori estimates for rough PDEs with application to rough
       conservation laws. <newblock><with|font-shape|italic|ArXiv preprint
-      arXiv:1604.00437>, 2016.<newblock>
+      arXiv:1604.00437>, 2016.<newblock> <newblock><hlink|10.48550/arXiv.1604.00437|https://doi.org/10.48550/arXiv.1604.00437>
 
       <bibitem*|36><label|bib-papers-catellierAveragingIrregularCurves2016>R.<nbsp>Catellier<localize|
       and >M.<nbsp>Gubinelli. <newblock>Averaging along irregular curves and
       regularisation of ODEs. <newblock><with|font-shape|italic|Stochastic
       Processes and their Applications>, 126(8):2323\U2366, aug
-      2016.<newblock>
+      2016.<newblock> <newblock><hlink|10.1016/j.spa.2016.02.002|https://doi.org/10.1016/j.spa.2016.02.002>
 
       <bibitem*|37><bib-year-section|2015><label|bib-papers-gubinelliParacontrolledDistributionsSingular2015>M.<nbsp>Gubinelli,
       P.<nbsp>Imkeller<localize|, and >N.<nbsp>Perkowski.
       <newblock>Paracontrolled distributions and singular PDEs.
       <newblock><with|font-shape|italic|Forum of Mathematics. Pi>, 3:0,
-      2015.<newblock>
+      2015.<newblock> <newblock><hlink|10.1017/fmp.2015.2|https://doi.org/10.1017/fmp.2015.2>
 
       <bibitem*|38><label|bib-papers-choukNonlinearPDEsModulated2015>K.<nbsp>Chouk<localize|
       and >M.<nbsp>Gubinelli. <newblock>Nonlinear PDEs with Modulated
       Dispersion I: Nonlinear Schrödinger Equations.
       <newblock><with|font-shape|italic|Communications in Partial
-      Differential Equations>, 40(11):2047\U2081, 2015.<newblock>
+      Differential Equations>, 40(11):2047\U2081, 2015.<newblock> <newblock>
 
       <bibitem*|39><bib-year-section|2014><label|bib-papers-gubinelliUltravioletRenormalizationNelson2014>M.<nbsp>Gubinelli,
       F.<nbsp>Hiroshima<localize|, and >J.<nbsp>Lörinczi.
       <newblock>Ultraviolet renormalization of the Nelson Hamiltonian through
       functional integration. <newblock><with|font-shape|italic|Journal of
       Functional Analysis>, 267(9):3125\U3153, nov 2014.<newblock>
+      <newblock><hlink|10.1016/j.jfa.2014.08.002|https://doi.org/10.1016/j.jfa.2014.08.002>
 
       <bibitem*|40><bib-year-section|2013><label|bib-papers-gubinelliRegularizationNoiseStochastic2013>M.<nbsp>Gubinelli<localize|
       and >M.<nbsp>Jara. <newblock>Regularization by noise and stochastic
       Burgers equations. <newblock><with|font-shape|italic|Stochastic Partial
       Differential Equations. Analysis and Computations>, 1(2):325\U350,
-      2013.<newblock>
+      2013.<newblock> <newblock><hlink|10.1007/s40072-013-0011-5|https://doi.org/10.1007/s40072-013-0011-5>
 
       <bibitem*|41><label|bib-papers-brzezniakGlobalSolutionsRandom2013>Z.<nbsp>Brze¹niak,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Neklyudov. <newblock>Global
       solutions of the random vortex filament equation.
       <newblock><with|font-shape|italic|Nonlinearity>, 26(9):2499\U2514,
-      2013.<newblock>
+      2013.<newblock> <newblock><hlink|10.1088/0951-7715/26/9/2499|https://doi.org/10.1088/0951-7715/26/9/2499>
 
       <bibitem*|42><bib-year-section|2012><label|bib-papers-gubinelliRoughSolutionsPeriodic2012>M.<nbsp>Gubinelli.
       <newblock>Rough solutions for the periodic Korteweg-de Vries equation.
       <newblock><with|font-shape|italic|Communications on Pure and Applied
       Analysis>, 11(2):709\U733, 2012.<newblock>
+      <newblock><hlink|10.3934/cpaa.2012.11.709|https://doi.org/10.3934/cpaa.2012.11.709>
 
       <bibitem*|43><label|bib-papers-flandoliRemarksStochasticTransport2012>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >E.<nbsp>Priola. <newblock>Remarks on
       the stochastic transport equation with Hölder drift.
       <newblock><with|font-shape|italic|Rendiconti del Seminario Matematico.
       Università e Politecnico Torino>, 70(1):53\U73, 2012.<newblock>
+      <newblock>
 
       <bibitem*|44><label|bib-papers-deyaNonlinearRoughHeat2012>A.<nbsp>Deya,
       M.<nbsp>Gubinelli<localize|, and >S.<nbsp>Tindel. <newblock>Non-linear
       rough heat equations. <newblock><with|font-shape|italic|Probability
       Theory and Related Fields>, 153(1-2):97\U147, 2012.<newblock>
+      <newblock><hlink|10.1007/s00440-011-0341-z|https://doi.org/10.1007/s00440-011-0341-z>
 
       <bibitem*|45><bib-year-section|2011><label|bib-papers-gubinelliAbstractIntegrationCombinatorics2011>M.<nbsp>Gubinelli.
       <newblock>Abstract integration, combinatorics of trees and differential
       equations. <newblock><localize|In ><with|font-shape|italic|Combinatorics
       and Physics>, <localize|volume> 539<localize| of
       ><with|font-shape|italic|Contemp. Math.>, <localize|pages >135\U151.
-      Amer. Math. Soc., Providence, RI, 2011.<newblock>
+      Amer. Math. Soc., Providence, RI, 2011.<newblock> <newblock>
 
       <bibitem*|46><label|bib-papers-flandoliFullWellposednessPoint2011>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >E.<nbsp>Priola. <newblock>Full
       well-posedness of point vortex dynamics corresponding to stochastic 2D
       Euler equations. <newblock><with|font-shape|italic|Stochastic Processes
       and their Applications>, 121(7):1445\U1463, 2011.<newblock>
+      <newblock><hlink|10.1016/j.spa.2011.03.004|https://doi.org/10.1016/j.spa.2011.03.004>
 
       <bibitem*|47><bib-year-section|2010><label|bib-papers-gubinelliRoughEvolutionEquations2010>M.<nbsp>Gubinelli<localize|
       and >S.<nbsp>Tindel. <newblock>Rough evolution equations.
       <newblock><with|font-shape|italic|The Annals of Probability>,
-      38(1):1\U75, 2010.<newblock>
+      38(1):1\U75, 2010.<newblock> <newblock><hlink|10.1214/08-AOP437|https://doi.org/10.1214/08-AOP437>
 
       <bibitem*|48><label|bib-papers-gubinelliRamificationRoughPaths2010>M.<nbsp>Gubinelli.
       <newblock>Ramification of rough paths.
       <newblock><with|font-shape|italic|Journal of Differential Equations>,
-      248(4):693\U721, 2010.<newblock>
+      248(4):693\U721, 2010.<newblock> <newblock><hlink|10.1016/j.jde.2009.11.015|https://doi.org/10.1016/j.jde.2009.11.015>
 
       <bibitem*|49><label|bib-papers-flandoliDoesNoiseImprove2010>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >E.<nbsp>Priola. <newblock>Does noise
@@ -384,30 +410,33 @@
       Differential Equations and Applications>,
       <localize|volume><nbsp>25<localize| of ><with|font-shape|italic|Quad.
       Mat.>, <localize|pages >139\U155. Dept. Math., Seconda Univ. Napoli,
-      Caserta, 2010.<newblock>
+      Caserta, 2010.<newblock> <newblock>
 
       <bibitem*|50><label|bib-papers-flandoliWellposednessTransportEquation2010>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >E.<nbsp>Priola.
       <newblock>Well-posedness of the transport equation by stochastic
       perturbation. <newblock><with|font-shape|italic|Inventiones
       Mathematicae>, 180(1):1\U53, 2010.<newblock>
+      <newblock><hlink|10.1007/s00222-009-0224-4|https://doi.org/10.1007/s00222-009-0224-4>
 
       <bibitem*|51><label|bib-papers-flandoliFlowDiffeomorphismsSDEs2010>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >E.<nbsp>Priola. <newblock>Flow of
       diffeomorphisms for SDEs with unbounded Hölder continuous drift.
       <newblock><with|font-shape|italic|Bulletin des Sciences Mathématiques>,
-      134(4):405\U422, 2010.<newblock>
+      134(4):405\U422, 2010.<newblock> <newblock><hlink|10.1016/j.bulsci.2010.02.003|https://doi.org/10.1016/j.bulsci.2010.02.003>
 
       <bibitem*|52><label|bib-papers-caravennaLargeScaleBehavior2010>F.<nbsp>Caravenna,
       G.<nbsp>Giacomin<localize|, and >M.<nbsp>Gubinelli. <newblock>Large
       scale behavior of semiflexible heteropolymers.
       <newblock><with|font-shape|italic|Annales de l'Institut Henri Poincaré
       Probabilités et Statistiques>, 46(1):97\U118, 2010.<newblock>
+      <newblock><hlink|10.1214/08-AIHP310|https://doi.org/10.1214/08-AIHP310>
 
       <bibitem*|53><bib-year-section|2009><label|bib-papers-gubinelliGibbsMeasuresBrownian2009>M.<nbsp>Gubinelli<localize|
       and >J.<nbsp>Lörinczi. <newblock>Gibbs measures on Brownian currents.
       <newblock><with|font-shape|italic|Communications on Pure and Applied
       Mathematics>, 62(1):1\U56, 2009.<newblock>
+      <newblock><hlink|10.1002/cpa.20260|https://doi.org/10.1002/cpa.20260>
 
       <bibitem*|54><label|bib-papers-flandoliRegularityStochasticCurrents2009>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli<localize|, and >F.<nbsp>Russo. <newblock>On the
@@ -415,141 +444,150 @@
       applications to a turbulence model.
       <newblock><with|font-shape|italic|Annales de l'Institut Henri Poincaré
       Probabilités et Statistiques>, 45(2):545\U576, 2009.<newblock>
+      <newblock><hlink|10.1214/08-AIHP174|https://doi.org/10.1214/08-AIHP174>
 
       <bibitem*|55><bib-year-section|2008><label|bib-papers-flandoliRigorousRemarksScaling2008>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli, M.<nbsp>Hairer<localize|, and >M.<nbsp>Romito.
       <newblock>Rigorous remarks about scaling laws in turbulent fluids.
       <newblock><with|font-shape|italic|Communications in Mathematical
       Physics>, 278(1):1\U29, 2008.<newblock>
+      <newblock><hlink|10.1007/s00220-007-0398-9|https://doi.org/10.1007/s00220-007-0398-9>
 
       <bibitem*|56><bib-year-section|2007><label|bib-papers-berselliGlobalEvolutionVortex2007>L.<nbsp>C.<nbsp>Berselli<localize|
       and >M.<nbsp>Gubinelli. <newblock>On the global evolution of vortex
       filaments, blobs, and small loops in 3D ideal flows.
       <newblock><with|font-shape|italic|Communications in Mathematical
       Physics>, 269(3):693\U713, 2007.<newblock>
+      <newblock><hlink|10.1007/s00220-006-0142-x|https://doi.org/10.1007/s00220-006-0142-x>
 
       <bibitem*|57><bib-year-section|2006><label|bib-papers-gubinelliYoungIntegralsSPDEs2006>M.<nbsp>Gubinelli,
       A.<nbsp>Lejay<localize|, and >S.<nbsp>Tindel. <newblock>Young integrals
       and SPDEs. <newblock><with|font-shape|italic|Potential Analysis>,
-      25(4):307\U326, 2006.<newblock>
+      25(4):307\U326, 2006.<newblock> <newblock><hlink|10.1007/s11118-006-9013-5|https://doi.org/10.1007/s11118-006-9013-5>
 
       <bibitem*|58><label|bib-papers-gubinelliRootedTrees3D2006>M.<nbsp>Gubinelli.
       <newblock>Rooted trees for 3D Navier-Stokes equation.
       <newblock><with|font-shape|italic|Dynamics of Partial Differential
       Equations>, 3(2):161\U172, 2006.<newblock>
+      <newblock><hlink|10.4310/DPDE.2006.v3.n2.a3|https://doi.org/10.4310/DPDE.2006.v3.n2.a3>
 
       <bibitem*|59><label|bib-papers-gubinelliGibbsMeasuresSelfinteracting2006>M.<nbsp>Gubinelli.
       <newblock>Gibbs measures for self-interacting Wiener paths.
       <newblock><with|font-shape|italic|Markov Processes and Related Fields>,
-      12(4):747\U766, 2006.<newblock>
+      12(4):747\U766, 2006.<newblock> <newblock>
 
       <bibitem*|60><label|bib-papers-caravennaNumericalApproachCopolymers2006>F.<nbsp>Caravenna,
       G.<nbsp>Giacomin<localize|, and >M.<nbsp>Gubinelli. <newblock>A
       numerical approach to copolymers at selective interfaces.
       <newblock><with|font-shape|italic|Journal of Statistical Physics>,
-      122(4):799\U832, 2006.<newblock>
+      122(4):799\U832, 2006.<newblock> <newblock><hlink|10.1007/s10955-005-8081-z|https://doi.org/10.1007/s10955-005-8081-z>
 
       <bibitem*|61><bib-year-section|2005><label|bib-papers-flandoliStochasticCurrents2005>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli, M.<nbsp>Giaquinta<localize|, and
       >V.<nbsp>M.<nbsp>Tortorelli. <newblock>Stochastic currents.
       <newblock><with|font-shape|italic|Stochastic Processes and their
       Applications>, 115(9):1583\U1601, 2005.<newblock>
+      <newblock><hlink|10.1016/j.spa.2005.04.007|https://doi.org/10.1016/j.spa.2005.04.007>
 
       <bibitem*|62><label|bib-papers-flandoliStatisticsVortexFilament2005>F.<nbsp>Flandoli<localize|
       and >M.<nbsp>Gubinelli. <newblock>Statistics of a vortex filament
       model. <newblock><with|font-shape|italic|Electronic Journal of
       Probability>, 10:0, 2005.<newblock>
+      <newblock><hlink|10.1214/EJP.v10-267|https://doi.org/10.1214/EJP.v10-267>
 
       <bibitem*|63><label|bib-papers-flandoliRemarksK41Scaling2005>F.<nbsp>Flandoli,
       M.<nbsp>Gubinelli, M.<nbsp>Hairer<localize|, and >M.<nbsp>Romito.
       <newblock>Remarks on the K41 scaling law in turbulent fluids.
       <newblock><with|font-shape|italic|Arxiv preprint math-ph/0507044>,
-      2005.<newblock>
+      2005.<newblock> <newblock><hlink|10.48550/arXiv.math-ph/0507044|https://doi.org/10.48550/arXiv.math-ph/0507044>
 
       <bibitem*|64><label|bib-papers-caraccioloCriticalBehaviorTwoDimensional2005>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Critical Behavior of the Two-Dimensional Randomly Driven
       Lattice Gas. <newblock><with|font-shape|italic|Phys. Rev E>, 72,
-      2005.<newblock>
+      2005.<newblock> <newblock>
 
       <bibitem*|65><label|bib-papers-bessaihEvolutionRandomVortex2005>H.<nbsp>Bessaih,
       M.<nbsp>Gubinelli<localize|, and >F.<nbsp>Russo. <newblock>The
       evolution of a random vortex filament.
       <newblock><with|font-shape|italic|The Annals of Probability>,
-      33(5):1825\U1855, 2005.<newblock>
+      33(5):1825\U1855, 2005.<newblock> <newblock><hlink|10.1214/009117905000000323|https://doi.org/10.1214/009117905000000323>
 
       <bibitem*|66><bib-year-section|2004><label|bib-papers-lejayYoungIntegralsSPDEs2004>A.<nbsp>Lejay,
       M.<nbsp>Gubinelli<localize|, and >S.<nbsp>Tindel. <newblock>Young
       integrals and SPDEs. <newblock><with|font-shape|italic|Arxiv preprint
-      math/0407294>, 2004.<newblock>
+      math/0407294>, 2004.<newblock> <newblock><hlink|10.48550/arXiv.math/0407294|https://doi.org/10.48550/arXiv.math/0407294>
 
       <bibitem*|67><label|bib-papers-gubinelliControllingRoughPaths2004>M.<nbsp>Gubinelli.
       <newblock>Controlling rough paths. <newblock><with|font-shape|italic|Journal
       of Functional Analysis>, 216(1):86\U140, 2004.<newblock>
+      <newblock><hlink|10.1016/j.jfa.2004.01.002|https://doi.org/10.1016/j.jfa.2004.01.002>
 
       <bibitem*|68><label|bib-papers-caraccioloReplyCommentTransverse2004>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Reply to: \PComment on: `Transverse fluctuations in the
-      driven lattice gas'\\\\,\Q [J. Phys. A \\\\bf 37 (2004), no. 33,
-      8189\U8191; \\\\refcno 2091946] by E. V. Albano.
-      <newblock><with|font-shape|italic|Journal of Physics. A. Mathematical
-      and General>, 37(33):8193\U8195, 2004.
-      <newblock><slink|http://dx.doi.org/10.1088/0305-4470/37/33/N02>.<newblock>
+      driven lattice gas'<nbsp>\Q [J. Phys. A 37 (2004), no. 33, 8189\U8191]
+      by E. V. Albano. <newblock><with|font-shape|italic|Journal of Physics.
+      A. Mathematical and General>, 37(33):8193\U8195, 2004.<newblock>
+      <newblock><hlink|10.1088/0305-4470/37/33/N02|https://doi.org/10.1088/0305-4470/37/33/N02>
 
       <bibitem*|69><label|bib-papers-caracciolo2004reply>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>REPLY TO COMMENT: Reply to the 'Comment on 'Transverse
       fluctuations in the driven lattice gas\Q.
       <newblock><with|font-shape|italic|Journal of Physics A Mathematical
-      General>, 37:8193\U8195, 2004.<newblock>
+      General>, 37:8193\U8195, 2004.<newblock> <newblock>
 
       <bibitem*|70><label|bib-papers-caraccioloFinitesizeScalingDriven2004>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Finite-size scaling in the driven lattice gas.
       <newblock><with|font-shape|italic|Journal of statistical physics>,
-      115(1-2):281\U322, 2004.<newblock>
+      115(1-2):281\U322, 2004.<newblock> <newblock><hlink|10.1023/B:JOSS.0000019824.34397.1d|https://doi.org/10.1023/B:JOSS.0000019824.34397.1d>
 
       <bibitem*|71><label|bib-papers-caraccioloCommentDynamicBehavior2004>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Comment on \PDynamic Behavior of Anisotropic Nonequilibrium
       Driving Lattice Gases''. <newblock><with|font-shape|italic|Physical
-      review letters>, 92(2):29601, 2004.<newblock>
+      review letters>, 92(2):29601, 2004.<newblock> <newblock>
 
       <bibitem*|72><bib-year-section|2003><label|bib-papers-caraccioloTransverseFluctuationsDriven2003>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Transverse fluctuations in the driven lattice gas.
       <newblock><with|font-shape|italic|Journal of Physics. A. Mathematical
       and General>, 36(21):0, 2003.<newblock>
+      <newblock><hlink|10.1088/0305-4470/36/21/101|https://doi.org/10.1088/0305-4470/36/21/101>
 
       <bibitem*|73><label|bib-papers-caraccioloShapeDependenceFinitesize2003a>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Shape dependence of the finite-size scaling limit in a
-      strongly anisotropic $o (\\\\infty)$ model.
+      strongly anisotropic $o (\\\\\\\\infty)$ model.
       <newblock><with|font-shape|italic|European Physical Journal B>,
-      34:205\U217, 2003.<newblock>
+      34:205\U217, 2003.<newblock> <newblock><hlink|10.1140/epjb/e2003-00213-5|https://doi.org/10.1140/epjb/e2003-00213-5>
 
       <bibitem*|74><label|bib-papers-caraccioloTransverseFluctuactionsDriven2003>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Transverse fluctuactions in the driven lattice gas.
       <newblock><with|font-shape|italic|JOURNAL OF PHYSICS. A, MATHEMATICAL
       AND GENERAL>, 36:0, 2003.<newblock>
+      <newblock><hlink|10.1088/0305-4470/36/21/101|https://doi.org/10.1088/0305-4470/36/21/101>
 
       <bibitem*|75><bib-year-section|2002><label|bib-papers-gubinelliFiniteSizeScalingNonEquilibrium2002>M.<nbsp>Gubinelli.
       <newblock><with|font-shape|italic|Finite-Size Scaling in
       Non-Equilibrium Critical Phenomena>. <newblock><localize|PhD thesis>,
-      Ph. D. thesis, Universitá degli Studi, Pisa, 2002.<newblock>
+      Ph. D. thesis, Universitá degli Studi, Pisa, 2002.<newblock> <newblock>
 
       <bibitem*|76><label|bib-papers-flandoliGibbsEnsembleVortex2002>F.<nbsp>Flandoli<localize|
       and >M.<nbsp>Gubinelli. <newblock>The Gibbs ensemble of a vortex
       filament. <newblock><with|font-shape|italic|Probability Theory and
       Related Fields>, 122(3):317\U340, 2002.<newblock>
+      <newblock><hlink|10.1007/s004400100163|https://doi.org/10.1007/s004400100163>
 
       <bibitem*|77><label|bib-papers-flandoliRelationStochasticIntegration2002>F.<nbsp>Flandoli,
       M.<nbsp>Giaquinta, M.<nbsp>Gubinelli<localize|, and
       >V.<nbsp>M.<nbsp>Tortorelli. <newblock>On a relation between stochastic
       integration and geometric measure theory.
       <newblock><with|font-shape|italic|Arxiv preprint math/0211458>,
-      2002.<newblock>
+      2002.<newblock> <newblock><hlink|10.48550/arXiv.math/0211458|https://doi.org/10.48550/arXiv.math/0211458>
 
       <bibitem*|78><label|bib-papers-flandoliEfficientRareEvents2002>F.<nbsp>Flandoli,
       S.<nbsp>Giordano, M.<nbsp>Gubinelli, G.<nbsp>Orlando,
@@ -557,25 +595,25 @@
       Rare Events Simulation of Gaussian Processes.
       <newblock><with|font-shape|italic|\<#418\>\<#43D\>\<#444\>\<#43E\>\<#440\>\<#43C\>\<#430\>\<#446\>\<#438\>\<#43E\>\<#43D\>\<#43D\>\<#44B\>\<#435\>
       \<#43F\>\<#440\>\<#43E\>\<#446\>\<#435\>\<#441\>\<#441\>\<#44B\>>,
-      2(2), 2002.<newblock>
+      2(2), 2002.<newblock> <newblock>
 
       <bibitem*|79><bib-year-section|2001><label|bib-papers-caraccioloFiniteSizeCriticalBehavior2001>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Finite-Size Critical Behavior of the Driven Lattice Gas.
       <newblock><with|font-shape|italic|Arxiv preprint cond-mat/0106221>,
-      2001.<newblock>
+      2001.<newblock> <newblock><hlink|10.48550/arXiv.cond-mat/0106221|https://doi.org/10.48550/arXiv.cond-mat/0106221>
 
       <bibitem*|80><label|bib-papers-caraccioloFiniteSizeCorrelationLength2001>S.<nbsp>Caracciolo,
       A.<nbsp>Gambassi, M.<nbsp>Gubinelli<localize|, and >A.<nbsp>Pelissetto.
       <newblock>Finite-Size Correlation Length and Violations of Finite-Size
       Scaling. <newblock><with|font-shape|italic|Eur. Phys. J. B>, 20,
-      2001.<newblock>
+      2001.<newblock> <newblock>
 
       <bibitem*|81><bib-year-section|1998><label|bib-papers-gubinelliMeasurementRateCapabilities1998>M.<nbsp>Gubinelli,
       M.<nbsp>Sorel, O.<nbsp>Tonet, M.<nbsp>Atac, M.<nbsp>Mishina<localize|,
       and >J.<nbsp>Valles. <newblock>Measurement of the rate capabilities of
       SSPMs. <newblock><with|font-shape|italic|Nucl. Instr. and Meth. A>,
-      1998.<newblock>
+      1998.<newblock> <newblock>
     </bib-list>
   </bibliography*>
 
@@ -586,12 +624,12 @@
       Singular Stochastic PDEs>, <localize|volume><nbsp>29<localize| of
       ><with|font-shape|italic|Ensaios Matemáticos [Mathematical Surveys]>.
       <newblock>Sociedade Brasileira de Matemática, Rio de Janeiro,
-      2015.<newblock>
+      2015.<newblock> <newblock>
 
       <bibitem*|2><bib-year-section|2002><label|bib-monographs-gubinelliFiniteSizeScalingNonEquilibrium2002>M.<nbsp>Gubinelli.
       <newblock><with|font-shape|italic|Finite-Size Scaling in
       Non-Equilibrium Critical Phenomena>. <newblock><localize|PhD thesis>,
-      Ph. D. thesis, Universitá degli Studi, Pisa, 2002.<newblock>
+      Ph. D. thesis, Universitá degli Studi, Pisa, 2002.<newblock> <newblock>
     </bib-list>
   </bibliography*>
 
@@ -602,19 +640,20 @@
       <newblock>GNU TEXMACS: towards a Scientific Office Suite.
       <newblock><localize|In ><with|font-shape|italic|International Congress
       on Mathematical Software>, <localize|pages >562\U569. Springer Berlin
-      Heidelberg, 2014.<newblock>
+      Heidelberg, 2014.<newblock> <newblock>
 
       <bibitem*|2><bib-year-section|2013><label|bib-procs-vanderhoevenGNUTEXMACSScientific2013>J.<nbsp>Van
       Der Hoeven, A.<nbsp>Grozin, M.<nbsp>Gubinelli, G.<nbsp>Lecerf,
       F.<nbsp>Poulain<localize|, and >D.<nbsp>Raux. <newblock>GNU TEXMACS: a
       scientific editing platform. <newblock><with|font-shape|italic|ACM
       Communications in Computer Algebra>, 47(1/2):59\U61, 2013.<newblock>
+      <newblock>
 
       <bibitem*|3><bib-year-section|2009><label|bib-procs-giordanoEfficientSimulationOverflow2009>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Efficient
       Simulation of Overflow Probability for Gaussian Processes.
       <newblock><localize|In ><with|font-shape|italic|CCM 2009>.
-      2009.<newblock>
+      2009.<newblock> <newblock>
 
       <bibitem*|4><bib-year-section|2007><label|bib-procs-giordanoRareEventsGaussian2007>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Rare events
@@ -622,31 +661,32 @@
       Monte-Carlo and importance sampling. <newblock><localize|In
       ><with|font-shape|italic|International Conference on Next Generation
       Wired/Wireless Networking>, <localize|volume> 4712, <localize|pages
-      >269\U280. Springer Berlin Heidelberg, 2007.<newblock>
+      >269\U280. Springer Berlin Heidelberg, 2007.<newblock> <newblock>
 
       <bibitem*|5><bib-year-section|2006><label|bib-procs-giordanoEstimationRareEvents2006>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Estimation
       of Rare Events in Gaussian Processes using Bridges.
       <newblock><localize|In ><with|font-shape|italic|RESIM 2006>,
-      <localize|pages >182\U183. 2006.<newblock>
+      <localize|pages >182\U183. 2006.<newblock> <newblock>
 
       <bibitem*|6><label|bib-procs-giordanoEfficiencyBridgeMonte2006>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Efficiency
       of the Bridge Monte Carlo method for Rare Events of Gaussian Processes.
       <newblock><localize|In ><with|font-shape|italic|PTAP 2006>,
-      <localize|pages >83\U85. 2006.<newblock>
+      <localize|pages >83\U85. 2006.<newblock> <newblock>
 
       <bibitem*|7><bib-year-section|2005><label|bib-procs-giordanoBridgeMonteCarloNovel2005>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Bridge
       Monte-Carlo: a novel approach to rare events of Gaussian processes.
       <newblock><localize|In ><with|font-shape|italic|Proceedings of the
       Fifth Workshop on Simulation, St. Petersburg>. 2005.<newblock>
+      <newblock>
 
       <bibitem*|8><bib-year-section|2004><label|bib-procs-giordanoEfficientEstimationGaussian2004>S.<nbsp>Giordano,
       M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Pagano. <newblock>Efficient
       estimation of Gaussian Overflow probabilities without Importance
       Sampling. <newblock><localize|In ><with|font-shape|italic|RESIM COP
-      04>, <localize|volume><nbsp>1. 2004.<newblock>
+      04>, <localize|volume><nbsp>1. 2004.<newblock> <newblock>
 
       <bibitem*|9><bib-year-section|2003><label|bib-procs-amorenaControlloDiagnosticaDi2003>M.<nbsp>Amorena,
       M.<nbsp>Barsanti, M.<nbsp>Gubinelli, F.<nbsp>Guzzo, E.<nbsp>Manfredi,
@@ -654,6 +694,7 @@
       diagnostica di un sistema di prova ingranaggi per applicazioni
       aeronautiche. <newblock><localize|In ><with|font-shape|italic|Atti Del
       XXXII Congresso AIAS, Salerno>, <localize|pages >3\U6. 2003.<newblock>
+      <newblock>
 
       <bibitem*|10><bib-year-section|2002><label|bib-procs-flandoliEfficientRareEvents2002>F.<nbsp>Flandoli,
       S.<nbsp>Giordano, M.<nbsp>Gubinelli, G.<nbsp>Orlando,
@@ -661,13 +702,13 @@
       Rare Events Simulation of Gaussian Processes.
       <newblock><with|font-shape|italic|\<#418\>\<#43D\>\<#444\>\<#43E\>\<#440\>\<#43C\>\<#430\>\<#446\>\<#438\>\<#43E\>\<#43D\>\<#43D\>\<#44B\>\<#435\>
       \<#43F\>\<#440\>\<#43E\>\<#446\>\<#435\>\<#441\>\<#441\>\<#44B\>>,
-      2(2), 2002.<newblock>
+      2(2), 2002.<newblock> <newblock>
 
       <bibitem*|11><label|bib-procs-amorena2002sull>M.<nbsp>Amorena,
       M.<nbsp>Barsanti, M.<nbsp>Gubinelli, E.<nbsp>Manfredi,
       I.<nbsp>Moretto<localize|, and >M.<nbsp>Vitali.
       <newblock>Sull'impostazione di programmi di prove per ingranaggi.
-      <newblock>2002.<newblock>
+      <newblock>2002.<newblock> <newblock>
     </bib-list>
   </bibliography*>
 
@@ -678,23 +719,25 @@
       <newblock>New Directions in Rough Path Theory.
       <newblock><with|font-shape|italic|Oberwolfach Reports>,
       17(4):1955\U2019, sep 2021.<newblock>
+      <newblock><hlink|10.4171/OWR/2020/40|https://doi.org/10.4171/OWR/2020/40>
 
       <bibitem*|2><bib-year-section|2019><label|bib-edited-books-gubinelliSingularRandomDynamics2019>M.<nbsp>Gubinelli,
       T.<nbsp>Souganidis<localize|, and >N.<nbsp>Tzvetkov.
       <newblock><with|font-shape|italic|Singular Random Dynamics : Cetraro,
       Italy 2016>. <newblock>C.I.M.E. Foundation Subseries. Springer
       International Publishing, 2019.<newblock>
+      <newblock><hlink|10.1007/978-3-030-29545-5|https://doi.org/10.1007/978-3-030-29545-5>
 
       <bibitem*|3><bib-year-section|2016><label|bib-edited-books-cassRoughPathsRegularity2016>T.<nbsp>R.<nbsp>Cass,
       P.<nbsp>K.<nbsp>Friz<localize|, and >M.<nbsp>Gubinelli. <newblock>Rough
       Paths, Regularity Structures and Related Topics.
       <newblock><with|font-shape|italic|Oberwolfach Reports>,
-      13(2):1319\U1406, 2016.<newblock>
+      13(2):1319\U1406, 2016.<newblock> <newblock>
 
       <bibitem*|4><bib-year-section|2012><label|bib-edited-books-crisanRoughPathsPDEs2012>D.<nbsp>Crisan,
       P.<nbsp>K.<nbsp>Friz<localize|, and >M.<nbsp>Gubinelli. <newblock>Rough
       Paths and PDEs. <newblock><with|font-shape|italic|Oberwolfach Reports>,
-      9(3):2493\U2540, 2012.<newblock>
+      9(3):2493\U2540, 2012.<newblock> <newblock>
     </bib-list>
   </bibliography*>
 
@@ -704,25 +747,25 @@
       S.<nbsp>Tindel<localize|, and >I.<nbsp>Torrecilla. <newblock>Controlled
       viscosity solutions of fully nonlinear rough PDEs.
       <newblock><with|font-shape|italic|ArXiv:1403.2832 [math]>, mar
-      2014.<newblock>
+      2014.<newblock> <newblock><hlink|10.48550/arXiv.1403.2832|https://doi.org/10.48550/arXiv.1403.2832>
 
       <bibitem*|2><label|bib-unpublished-choukRoughSheets2014>K.<nbsp>Chouk<localize|
       and >M.<nbsp>Gubinelli. <newblock>Rough sheets.
       <newblock><with|font-shape|italic|ArXiv:1406.7748 [math]>, jun
-      2014.<newblock>
+      2014.<newblock> <newblock><hlink|10.48550/arXiv.1406.7748|https://doi.org/10.48550/arXiv.1406.7748>
 
       <bibitem*|3><label|bib-unpublished-choukNonlinearPDEsModulated2014>K.<nbsp>Chouk<localize|
       and >M.<nbsp>Gubinelli. <newblock>Nonlinear PDEs with modulated
       dispersion II: Korteweg\Ude Vries equation.
-      <newblock><with|font-shape|italic|ArXiv:1406.7675 [math]>, jun 2014.
-      <newblock><slink|http://arxiv.org/abs/1406.7675>.<newblock>
+      <newblock><with|font-shape|italic|ArXiv:1406.7675 [math]>, jun
+      2014.<newblock> <newblock><hlink|10.48550/arXiv.1406.7675|https://doi.org/10.48550/arXiv.1406.7675>
 
       <bibitem*|4><bib-year-section|2002><label|bib-unpublished-flandoliRelationStochasticIntegration2002>F.<nbsp>Flandoli,
       M.<nbsp>Giaquinta, M.<nbsp>Gubinelli<localize|, and
       >V.<nbsp>M.<nbsp>Tortorelli. <newblock>On a relation between stochastic
       integration and geometric measure theory.
       <newblock><with|font-shape|italic|Arxiv preprint math/0211458>,
-      2002.<newblock>
+      2002.<newblock> <newblock><hlink|10.48550/arXiv.math/0211458|https://doi.org/10.48550/arXiv.math/0211458>
     </bib-list>
   </bibliography*>
 </body>
@@ -4932,12 +4975,14 @@
         <db-field|url|<slink|https://doi.org/10.1007/s00440-022-01136-x>>
       </db-entry>
 
-      <\db-entry|+2IYrABOMnOWx5EK|article|albeverioEllipticStochasticQuantization2019>
+      <\db-entry|+2Q1WpM1mVMXb|article|albeverioEllipticStochasticQuantization2019>
         <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1681512052>
+        <db-field|newer|+2IYrABOMnOWx5EK>
+
+        <db-field|date|1683363091>
       <|db-entry>
         <db-field|author|Sergio <name|Albeverio><name-sep>Francesco C.
         <name|De Vecchi><name-sep>Massimiliano <name|Gubinelli>>
@@ -4958,29 +5003,30 @@
         <db-field|urldate|2019-08-02>
 
         <db-field|abstract|We study a class of elliptic SPDEs with additive
-        Gaussian noise on $\\mathbb{R}<math|<wide|<text|2>|^>> \\times M$,
-        with $M$ a $d$-dimensional manifold equipped with a positive Radon
-        measure, and a real-valued non linearity given by the derivative of a
-        smooth potential $V$, convex at infinity and growing at most
-        exponentially. For quite general coefficients and a suitable
+        Gaussian noise on $\\\\mathbb{R}<math|<wide|<text|2>|^>> \\\\times
+        M$, with $M$ a $d$-dimensional manifold equipped with a positive
+        Radon measure, and a real-valued non linearity given by the
+        derivative of a smooth potential $V$, convex at infinity and growing
+        at most exponentially. For quite general coefficients and a suitable
         regularity of the noise we obtain, via the dimensional reduction
         principle discussed in our previous paper on the topic, the identity
         between the law of the solution to the SPDE evaluated at the origin
         with a Gibbs type measure on the abstract Wiener space
         $L<math|<wide|<text|2>|^>> (M)$. The results are then applied to the
         elliptic stochastic quantization equation for the scalar field with
-        polynomial interaction over $\\mathbb{T}<math|<wide|<text|2>|^>>$,
+        polynomial interaction over $\\\\mathbb{T}<math|<wide|<text|2>|^>>$,
         and with exponential interaction over
-        $\\mathbb{R}<math|<wide|<text|2>|^>>$ (known also as H{\\o}egh-Krohn
-        or Liouville model in the literature). In particular for the
-        exponential interaction case, the existence and uniqueness properties
-        of solutions to the elliptic equation over
-        $\\mathbb{R}<math|<wide|<text|{>|^>>2 + 2}$ is derived as well as the
-        dimensional reduction for all values of the "charge parameter"
-        $\\sigma = \\frac{\\alpha}{2\\sqrt{\\pi}} <math|\<less\>> \\sqrt{8
-        \\pi}$ for which the model has an Euclidean invariant measure (hence
-        also permitting to get the corresponding relativistic invariant model
-        on the two dimensional Minkowski space).>
+        $\\\\mathbb{R}<math|<wide|<text|2>|^>>$ (known also as
+        H{\\\\o}egh-Krohn or Liouville model in the literature). In
+        particular for the exponential interaction case, the existence and
+        uniqueness properties of solutions to the elliptic equation over
+        $\\\\mathbb{R}<math|<wide|<text|{>|^>>2 + 2}$ is derived as well as
+        the dimensional reduction for all values of the \\"charge
+        parameter\\" $\\\\sigma = \\\\frac{\\\\alpha}{2\\\\sqrt{\\\\pi}}
+        <math|\<less\>> \\\\sqrt{8 \\\\pi}$ for which the model has an
+        Euclidean invariant measure (hence also permitting to get the
+        corresponding relativistic invariant model on the two dimensional
+        Minkowski space).>
 
         <db-field|archiveprefix|arxiv>
 
@@ -4991,23 +5037,27 @@
         d.pdf;/Users/mgubi/Zotero/storage/I2Z2KM3B/1906.html>
       </db-entry>
 
-      <\db-entry|+2az56N3025wAJk2M|article|albeverioEllipticStochasticQuantization2020>
+      <\db-entry|+2Q1WpM1mVMXd|article|albeverioEllipticStochasticQuantization2020>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
-        <db-field|date|1673638226>
+        <db-field|newer|+1xPRwpgb1F4ocl6S>
 
-        <db-field|newer|+sOFEgcGU5i8zR0>
+        <db-field|newer|+2Nyd0o0i1ZWtVtpl>
 
-        <db-field|newer|+2IYrABOMnOWx5EL>
+        <db-field|newer|+1xPRwpgb1F4ocl6R>
 
-        <db-field|newer|+eU5M06jDREAibR>
+        <db-field|newer|+1xPRwpgb1F4ocl3I>
 
-        <db-field|newer|+DHqE2AlfKv>
+        <db-field|newer|+1xPRwpgb1F4ocl6R>
+
+        <db-field|newer|+1xPRwpgb1F4ocl3I>
+
+        <db-field|date|1683363091>
       <|db-entry>
-        <db-field|author|Sergio <name|Albeverio><name-sep>Francesco C. De
-        <name|Vecchi><name-sep>Massimiliano <name|Gubinelli>>
+        <db-field|author|Sergio <name|Albeverio><name-sep>Francesco C.
+        <name|De Vecchi><name-sep>Massimiliano <name|Gubinelli>>
 
         <db-field|title|Elliptic stochastic quantization>
 
@@ -5029,16 +5079,18 @@
 
         <db-field|doi|10.1214/19-AOP1404>
 
+        <db-field|urldate|2020-10-05>
+
         <db-field|abstract|We prove an explicit formula for the law in zero
         of the solution of a class of elliptic SPDE in
-        <math|\<bbb-R\>>2R2\\\\ mathbb{R}<math|<wide|<text|{>|^>>2}. This
+        <math|\<bbb-R\>>2R2\\\\\\\\ mathbb{R}<math|<wide|<text|{>|^>>2}. This
         formula is the simplest instance of dimensional reduction, discovered
         in the physics literature by Parisi and Sourlas (Phys. Rev. Lett. 43
         (1979) 744<textendash>745), which links the law of an elliptic SPDE
         in d+2d+2d+2 dimension with a Gibbs measure in ddd dimensions. This
         phenomenon is similar to the relation between a
-        <math|\<bbb-R\>>d+1Rd+1\\\\ mathbb{R}<math|<wide|<text|{>|^>>d+1}
-        dimensional parabolic SPDE and its <math|\<bbb-R\>>dRd\\\\
+        <math|\<bbb-R\>>d+1Rd+1\\\\\\\\ mathbb{R}<math|<wide|<text|{>|^>>d+1}
+        dimensional parabolic SPDE and its <math|\<bbb-R\>>dRd\\\\\\\\
         mathbb{R}<math|<wide|<text|{>|^>>d} dimensional invariant measure. As
         such, dimensional reduction of elliptic SPDEs can be considered a
         sort of elliptic stochastic quantisation procedure in the sense of
@@ -5131,12 +5183,14 @@
         Bernoulli Society>
       </db-entry>
 
-      <\db-entry|+2IYrABOMnOWx5Ed|article|beckStochasticODEsStochastic2019>
+      <\db-entry|+2Q1WpM1mVMXl|article|beckStochasticODEsStochastic2019>
         <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1681512053>
+        <db-field|newer|+2IYrABOMnOWx5Ed>
+
+        <db-field|date|1683363092>
       <|db-entry>
         <db-field|author|Lisa <name|Beck><name-sep>Franco
         <name|Flandoli><name-sep>Massimiliano <name|Gubinelli><name-sep>Mario
@@ -5180,9 +5234,9 @@
         transport equations and certain well-posedness results for the
         associated stochastic differential equation (sDE) (roughly speaking,
         existence and uniqueness of flows and their
-        C<math|\<alpha\>>C<math|\<alpha\>>C<math|<wide|<text|{>|^>>\\ alpha }
-        regularity, strong uniqueness for the sDE when the initial datum has
-        diffuse law). Finally, we show two types of examples: on the one
+        C<math|\<alpha\>>C<math|\<alpha\>>C<math|<wide|<text|{>|^>>\\\\ alpha
+        } regularity, strong uniqueness for the sDE when the initial datum
+        has diffuse law). Finally, we show two types of examples: on the one
         hand, we present well-posed sDEs, when the corresponding ODEs are
         ill-posed, and on the other hand, we give a counterexample in the
         supercritical case.>
@@ -5438,14 +5492,18 @@
         <db-field|doi|10.1023/B:JOSS.0000019824.34397.1d>
       </db-entry>
 
-      <\db-entry|+19wFa9FSCJvDbPE|article|caraccioloReplyCommentTransverse2004>
+      <\db-entry|+2Q1WpM1mVMYM|article|caraccioloReplyCommentTransverse2004>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
-        <db-field|date|1683233992>
+        <db-field|date|1683363395>
+
+        <db-field|newer|+19wFa9FSCJvDbPE>
 
         <db-field|newer|+2IYrABOMnOWx5Eo>
+
+        <db-field|newer|+19wFa9FSCJvDbPG>
 
         <db-field|newer|+2Nyd0o0i1ZWtVtq7>
       <|db-entry>
@@ -5454,8 +5512,8 @@
         <name|Gubinelli><name-sep>Andrea <name|Pelissetto>>
 
         <db-field|title|Reply to: \PComment on: `Transverse fluctuations in
-        the driven lattice gas'\\\\,\Q [J. Phys. A \\\\bf 37 (2004), no. 33,
-        8189\U8191; \\\\refcno 2091946] by E. V. Albano>
+        the driven lattice gas'<nbsp>\Q [J. Phys. A 37 (2004), no. 33,
+        8189\U8191] by E. V. Albano>
 
         <db-field|journal|Journal of Physics. A. Mathematical and General>
 
@@ -5467,8 +5525,6 @@
 
         <db-field|pages|8193\U8195>
 
-        <db-field|note|<slink|http://dx.doi.org/10.1088/0305-4470/37/33/N02>>
-
         <db-field|issn|0305-4470>
 
         <db-field|doi|10.1088/0305-4470/37/33/N02>
@@ -5476,21 +5532,23 @@
         <db-field|mrnumber|2091947>
       </db-entry>
 
-      <\db-entry|+19wFa9FSCJvDbPF|article|caraccioloShapeDependenceFinitesize2003a>
+      <\db-entry|+2Q1WpM1mVMXr|article|caraccioloShapeDependenceFinitesize2003a>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
+        <db-field|newer|+19wFa9FSCJvDbPF>
+
         <db-field|newer|+2IYrABOMnOWx5Ep>
 
-        <db-field|date|1683233992>
+        <db-field|date|1683363093>
       <|db-entry>
         <db-field|author|Sergio <name|Caracciolo><name-sep>Andrea
         <name|Gambassi><name-sep>Massimiliano
         <name|Gubinelli><name-sep>Andrea <name|Pelissetto>>
 
         <db-field|title|Shape dependence of the finite-size scaling limit in
-        a strongly anisotropic $o (\\\\infty)$ model>
+        a strongly anisotropic $o (\\\\\\\\infty)$ model>
 
         <db-field|journal|European Physical Journal B>
 
@@ -5904,19 +5962,22 @@
         application.pdf;/Users/mgubi/Zotero/storage/XF4AR2SI/S0022123619300989.html>
       </db-entry>
 
-      <\db-entry|+2IYrABOMnOWx5FK|article|diehlKardarParisiZhang2017>
+      <\db-entry|+z066q1b2PLC01Lh|article|diehlKardarParisiZhang2017>
         <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1681512053>
+        <db-field|newer|+z066q1b2PLC01Lg>
+
+        <db-field|newer|+2IYrABOMnOWx5FK>
+
+        <db-field|date|1683286143>
       <|db-entry>
         <db-field|author|Joscha <name|Diehl><name-sep>Massimiliano
         <name|Gubinelli><name-sep>Nicolas <name|Perkowski>>
 
-        <db-field|title|The Kardar<textendash|Parisi><textendash|Zhang
-        Equation> as Scaling Limit of Weakly Asymmetric Interacting Brownian
-        Motions>
+        <db-field|title|The Kardar\UParisi\UZhang Equation as Scaling Limit
+        of Weakly Asymmetric Interacting Brownian Motions>
 
         <db-field|journal|Communications in Mathematical Physics>
 
@@ -5940,12 +6001,6 @@
 
         <db-field|keywords|Mathematical Physics,Mathematics - Analysis of
         PDEs,Mathematics - Probability>
-
-        <db-field|file|/Users/mgubi/Zotero/storage/4C5Q9AVQ/Diehl et al. -
-        2016 - The Kardar-Parisi-Zhang equation as scaling limit
-        .pdf;/Users/mgubi/Zotero/storage/7J686VJN/1606.html;/Users/mgubi/Zotero/storage/KBNGA6IT/Diehl
-        et al. - 2017 - The Kardar\UParisi\UZhang Equation as Scaling Limit
-        .html;/Users/mgubi/Zotero/storage/ZYS6P6C7/publdoc.html>
       </db-entry>
 
       <\db-entry|+2IYrABOMnOWx5FR|incollection|flandoliDoesNoiseImprove2010>
@@ -7377,14 +7432,16 @@
       </db-entry>
     </associate>
     <\associate|bib-preprints-bibliography>
-      <\db-entry|+19wFa9FSCJvDbPK|misc|cannizzaroGaussianFluctuationsStochastic2023>
+      <\db-entry|+2Q1WpM1mVMXp|misc|cannizzaroGaussianFluctuationsStochastic2023>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
+        <db-field|newer|+19wFa9FSCJvDbPK>
+
         <db-field|newer|+19wFa9FSCJvDbPC>
 
-        <db-field|date|1683234271>
+        <db-field|date|1683363093>
       <|db-entry>
         <db-field|author|Giuseppe <name|Cannizzaro><name-sep>Massimiliano
         <name|Gubinelli><name-sep>Fabio <name|Toninelli>>
@@ -7416,11 +7473,11 @@
         this purpose, we focus on a $d$-dimensional generalization of the
         Stochastic Burgers equation (SBE) introduced in [H. van Beijeren, R.
         Kutner and H. Spohn, Excess noise for driven diffusive systems, PRL,
-        1985]. In both the critical $d=2$ and super-critical $d\\\\geq 3$
+        1985]. In both the critical $d=2$ and super-critical $d\\\\\\\\geq 3$
         cases, we show that the scaling limit of (the regularised) SBE is
         given by a stochastic heat equation with non-trivially renormalised
         coefficient, introducing a set of tools that we expect to be
-        applicable more widely. For $d\\\\ge3$ the scaling adopted is the
+        applicable more widely. For $d\\\\\\\\ge3$ the scaling adopted is the
         classical diffusive one, while in $d=2$ it is the weak coupling
         scaling which corresponds to tuning down the strength of the
         interaction in a scale-dependent way.>
@@ -7435,14 +7492,16 @@
         e.pdf;/Users/mgubi/Zotero/storage/ER8J4TFN/2304.html>
       </db-entry>
 
-      <\db-entry|+19wFa9FSCJvDbPQ|article|galeatiMixingGenericRough2021>
+      <\db-entry|+2Q1WpM1mVMY8|article|galeatiMixingGenericRough2021>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
+        <db-field|newer|+19wFa9FSCJvDbPQ>
+
         <db-field|newer|+2IYrABOMnOWx5Fk>
 
-        <db-field|date|1683234412>
+        <db-field|date|1683363095>
       <|db-entry>
         <db-field|author|Lucio <name|Galeati><name-sep>Massimiliano
         <name|Gubinelli>>
@@ -7465,17 +7524,18 @@
         passive scalars driven by $generic$ rough shear flows. Genericity is
         here understood in the sense of prevalence and (ir)regularity is
         measured in the Besov-Nikolskii scale
-        $B<math|<wide|<text|{>|^>>\\\\alpha}_{1, \\\\infty}$, $\\\\alpha
-        \\\\in (0, 1)$. We provide upper and lower bounds, showing that in
-        general inviscid mixing in $H<math|<wide|<text|{>|^>>1/2}$ holds
-        sharply with rate $r(t) \\\\sim t<math|<wide|<text|{>|^>>1/(2
-        \\\\alpha)}$, while enhanced dissipation holds with rate $r(\\\\nu)
-        \\\\sim \\\\nu<math|<wide|<text|{>|^>>\\\\alpha / (\\\\alpha+2)}$.
-        Our results in the inviscid mixing case rely on the concept of
-        $\\\\rho$-irregularity, first introduced by Catellier and Gubinelli
-        (Stoc. Proc. Appl. 126, 2016) and provide some new insights compared
-        to the behavior predicted by Colombo, Coti Zelati and Widmayer
-        (arXiv:2009.12268, 2020).>
+        $B<math|<wide|<text|{>|^>>\\\\\\\\alpha}_{1, \\\\\\\\infty}$,
+        $\\\\\\\\alpha \\\\\\\\in (0, 1)$. We provide upper and lower bounds,
+        showing that in general inviscid mixing in
+        $H<math|<wide|<text|{>|^>>1/2}$ holds sharply with rate $r(t)
+        \\\\\\\\sim t<math|<wide|<text|{>|^>>1/(2 \\\\\\\\alpha)}$, while
+        enhanced dissipation holds with rate $r(\\\\\\\\nu) \\\\\\\\sim
+        \\\\\\\\nu<math|<wide|<text|{>|^>>\\\\\\\\alpha /
+        (\\\\\\\\alpha+2)}$. Our results in the inviscid mixing case rely on
+        the concept of $\\\\\\\\rho$-irregularity, first introduced by
+        Catellier and Gubinelli (Stoc. Proc. Appl. 126, 2016) and provide
+        some new insights compared to the behavior predicted by Colombo, Coti
+        Zelati and Widmayer (arXiv:2009.12268, 2020).>
 
         <db-field|archiveprefix|arxiv>
 
@@ -7561,14 +7621,18 @@
         <db-field|keywords|Mathematical Physics,Mathematics - Probability>
       </db-entry>
 
-      <\db-entry|+2czoekmq1KA21mZw|misc|devecchiSingularIntegrationParts2022>
+      <\db-entry|+2Q1WpM1mVMY2|misc|devecchiSingularIntegrationParts2022>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
-        <db-field|newer|+2czoekmq1KA21mZr>
+        <db-field|date|1683363094>
 
-        <db-field|date|1681823980>
+        <db-field|newer|+2czoekmq1KA21mZw>
+
+        <db-field|newer|+1xPRwpgb1F4ocl4B>
+
+        <db-field|newer|+2czoekmq1KA21mZr>
       <|db-entry>
         <db-field|author|Francesco C. <name|De Vecchi><name-sep>Massimiliano
         <name|Gubinelli><name-sep>Mattia <name|Turra>>
@@ -7664,12 +7728,14 @@
         PDEs,Mathematics - Probability>
       </db-entry>
 
-      <\db-entry|+2IYrABOMnOWx5Fl|article|galeatiNoiselessRegularisationNoise2020>
+      <\db-entry|+2Q1WpM1mVMY9|article|galeatiNoiselessRegularisationNoise2020>
         <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1681512053>
+        <db-field|newer|+2IYrABOMnOWx5Fl>
+
+        <db-field|date|1683363095>
       <|db-entry>
         <db-field|author|Lucio <name|Galeati><name-sep>Massimiliano
         <name|Gubinelli>>
@@ -7696,7 +7762,7 @@
         statistical properties of the perturbation. The main result is that a
         generic continuous perturbation renders the Cauchy problem well-posed
         for arbitrarily irregular vector fields. Therefore we establish
-        regularisation by noise "without probability".>
+        regularisation by noise \\"without probability\\".>
 
         <db-field|archiveprefix|arxiv>
 
@@ -7709,18 +7775,32 @@
         noise.pdf;/Users/mgubi/Zotero/storage/L5Y7ZGF2/2003.html>
       </db-entry>
 
-      <\db-entry|+19wFa9FSCJvDbPR|article|galeatiPrevalenceRhoIrregularity2020>
+      <\db-entry|+2Q1WpM1mVMYO|article|galeatiPrevalenceRhoIrregularity2020>
         <db-field|contributor|root>
 
         <db-field|modus|manual>
 
-        <db-field|date|1683234412>
+        <db-field|newer|+2Q1WpM1mVMYB>
+
+        <db-field|newer|+19wFa9FSCJvDbPR>
 
         <db-field|newer|+2IYrABOMnOWx5Fn>
 
         <db-field|newer|+2Nyd0o0i1ZWtVtrb>
 
         <db-field|newer|+2Nyd0o0i1ZWtVtqi>
+
+        <db-field|newer|+2IYrABOMnOWx5Fn>
+
+        <db-field|newer|+2Nyd0o0i1ZWtVtrb>
+
+        <db-field|newer|+2Nyd0o0i1ZWtVtqi>
+
+        <db-field|newer|+2Nyd0o0i1ZWtVtrb>
+
+        <db-field|newer|+2Nyd0o0i1ZWtVtqi>
+
+        <db-field|date|1683363526>
       <|db-entry>
         <db-field|author|Lucio <name|Galeati><name-sep>Massimiliano
         <name|Gubinelli>>
@@ -7734,20 +7814,19 @@
 
         <db-field|month|apr>
 
-        <db-field|note|<slink|http://arxiv.org/abs/2004.00872>>
-
-        <db-field|abstract|We show that generic H\\\\\\"older continuous
-        functions are $\\\\rho$-irregular. The property of
-        $\\\\rho$-irregularity has been first introduced by Catellier and
+        <db-field|abstract|We show that generic H\\\\\\\\\\\\\\"older
+        continuous functions are $\\\\\\\\rho$-irregular. The property of
+        $\\\\\\\\rho$-irregularity has been first introduced by Catellier and
         Gubinelli (Stoc. Proc. Appl. 126, 2016) and plays a key role in the
         study of well-posedness for some classes of perturbed ODEs and PDEs.
         Genericity here is understood in the sense of prevalence. As a
         consequence we obtain several results on regularisation by noise
-        \\"without probability\\", i.e. without committing to specific
-        assumptions on the statistical properties of the perturbations. We
-        also establish useful criteria for stochastic processes to be
-        $\\\\rho$-irregular and study in detail the geometric and analytic
-        properties of $\\\\rho$-irregular functions.>
+        \\\\\\"without probability\\\\\\", i.e. without committing to
+        specific assumptions on the statistical properties of the
+        perturbations. We also establish useful criteria for stochastic
+        processes to be $\\\\\\\\rho$-irregular and study in detail the
+        geometric and analytic properties of $\\\\\\\\rho$-irregular
+        functions.>
 
         <db-field|archiveprefix|arXiv>
 
@@ -8024,12 +8103,14 @@
       </db-entry>
     </associate>
     <\associate|bib-unpublished-bibliography>
-      <\db-entry|+2Nyd0o0i1ZWtVtqF|article|choukNonlinearPDEsModulated2014>
-        <db-field|contributor|mgubi>
+      <\db-entry|+2Q1WpM1mVMYK|article|choukNonlinearPDEsModulated2014>
+        <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1618054346>
+        <db-field|newer|+2Nyd0o0i1ZWtVtqF>
+
+        <db-field|date|1683363225>
       <|db-entry>
         <db-field|author|K. <name|Chouk><name-sep>M. <name|Gubinelli>>
 
@@ -8041,8 +8122,6 @@
         <db-field|year|2014>
 
         <db-field|month|jun>
-
-        <db-field|note|<slink|http://arxiv.org/abs/1406.7675>>
 
         <db-field|shorttitle|Nonlinear PDEs with Modulated Dispersion II>
 

@@ -146,6 +146,93 @@
 
   <\active*>
     <\src-comment>
+      Framing of code (BEGIN)
+    </src-comment>
+  </active*>
+
+  \;
+
+  <use-package|framed-program>
+
+  <\active*>
+    <\src-comment>
+      Additional style parameters.
+    </src-comment>
+  </active*>
+
+  \;
+
+  <assign|intro-color|pastel yellow>
+
+  <assign|body-color|pastel blue>
+
+  <assign|frame-color|dark grey>
+
+  <\active*>
+    <\src-comment>
+      Framed fragments.
+    </src-comment>
+  </active*>
+
+  <assign|framed-table|<macro|body|<with|color|<value|frame-color>|<tformat|<twith|table-width|1par>|<cwith|1|-1|1|-1|cell-hyphen|t>|<cwith|1|-1|1|-1|cell-bsep|1spc>|<cwith|1|-1|1|-1|cell-tsep|1spc>|<cwith|1|-1|1|-1|cell-background|<value|body-color>>|<cwith|1|-1|1|-1|cell-lborder|0.5ln>|<cwith|1|-1|1|-1|cell-rborder|0.5ln>|<cwith|1|-1|1|-1|cell-bborder|0.5ln>|<cwith|1|-1|1|-1|cell-tborder|0.5ln>|<arg|body>>>>>
+
+  <assign|framed-fragment|<macro|body|<surround||<no-indent*>|<framed-table|<tformat|<table|<row|<\cell>
+    <with|color|black|<arg|body>>
+  </cell>>>>>>>>
+
+  <assign|framed-fragment*|<\macro|body>
+    <framed-table|<tformat|<twith|table-width|0.45par>|<table|<row|<\cell>
+      <with|color|black|<arg|body>>
+    </cell>>>>>
+  </macro>>
+
+  <\active*>
+    <\src-comment>
+      Fragments of <TeXmacs> code.
+    </src-comment>
+  </active*>
+
+  <assign|tm-fragment|<\macro|body>
+    <pseudo-code|<arg|body>>
+  </macro>>
+
+  <\active*>
+    <\src-comment>
+      Fragments of scheme code.
+    </src-comment>
+  </active*>
+
+  <assign|scm-verb|<macro|body|<with|prog-language|verbatim|<arg|body>>>>
+
+  <assign|scm-arg|<macro|body|<with|prog-font-shape|italic|<scm|<scm-verb|<arg|body>>>>>>
+
+  <assign|scm-args|<macro|body|<with|prog-font-shape|italic|<scm|<scm-verb|<arg|body>>>><rsup|*>>>
+
+  <assign|scm-opt-arg|<macro|body|<with|color|dark
+  grey|[<style-with|<scm-arg|<arg|body>>>]>>>
+
+  <\active*>
+    <\src-comment>
+      Framing of code (END)
+    </src-comment>
+  </active*>
+
+  <assign|pseudo-code|<\macro|body>
+    <\small>
+      <\surround||<no-indent*>>
+        <\framed-quoted>
+          <\with|par-first|0fn|par-par-sep|0fn|item-hsep|<macro|1.5fn>>
+            <\framed-code>
+              <arg|body>
+            </framed-code>
+          </with>
+        </framed-quoted>
+      </surround>
+    </small>
+  </macro>>
+
+  <\active*>
+    <\src-comment>
       Other customizations
     </src-comment>
   </active*>

@@ -29,6 +29,25 @@
             (tmconcat f '(nbsp))
             (tmconcat f " ")))))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; format hyperlink
+;; (prefers, in order: DOI, archive data, url)
+ 
+(tm-define (bib-format-hlink x)
+  (cond 
+    ((not (bib-empty? x "doi")) 
+      `((hlink ,(bib-format-field x "doi") (concat "https://doi.org/" ,(bib-format-field x "doi")))))
+    ((not (bib-empty? x "archiveprefix"))
+      (with url  `(concat ,(bib-format-field x "eprint") 
+                      ,(if (bib-empty? x "version")  "" `(concat "v" ,(bib-format-field x "version"))))
+        (if (or (== (bib-field  x "archiveprefix") "arXiv") (== (bib-field  x "archiveprefix") "arxiv"))
+          `((hlink (concat "10.48550/arXiv." ,url) (concat "https://doi.org/10.48550/arXiv." ,url )))
+    	  	`((hlink (concat ,(bib-format-field-preserve-case x "archiveprefix") ":" ,url) ,url)))))
+    ((not (bib-empty? x "url"))
+			 `((concat ,(bib-format-field x "url") ;;(bib-field x "url") returns <slink|url>, so that is a link
+					  " accessed " 
+					 ,(bib-format-field x "urldate"))))
+    (else '())))      
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; descending order by year
@@ -47,18 +66,23 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; sectioning depending on the publication year
 
+(define (format-entry n x)
+  (append (bib-format-entry n x)
+    '(" " (newblock)) (bib-format-hlink x)))
+
 (define (format-entries-sub n y x)
   (if (and (list? x) (nnull? x))
       (let ((y2 (bib-field (car x) "year")))
         (if (== y2 y)
-          (cons (bib-format-entry n (car x)) (format-entries-sub (+ n 1) y (cdr x)))
-                (format-entries n x)))
-  `()))
+          (cons (format-entry n (car x)) (format-entries-sub (+ n 1) y (cdr x)))
+          (format-entries n x)))
+      `()))
 
 (define (format-entries n x)
   (if (and (list? x) (nnull? x))
-    (let ((y (bib-field (car x) "year")) (z (bib-format-entry n (car x))))
-      (cons `(concat ,(cons (car z) (cons (cadr z) (cons `(bib-year-section ,y) (cddr z))))) (format-entries-sub (+ n 1) y (cdr x))))
+    (let ((y (bib-field (car x) "year")) (z (format-entry n (car x))))
+      (cons `(concat ,(cons (car z) (cons (cadr z) (cons `(bib-year-section ,y) (cddr z))))) 
+             (format-entries-sub (+ n 1) y (cdr x))))
     `()))
 
 (tm-define (bib-process-publist prefix style t)
