@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|people.tm|People|Present & past members of my research group
+  \U updated September 2022.|Sat May \ 6 14:52:00 2023 UTC>
+
   <\notes-entry|curriculum-vitae.tm|Vita>
     Some facts about me \U last updated April 2023.
   </notes-entry|Sat May \ 6 11:19:26 2023 UTC>
@@ -26,9 +29,6 @@
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated April 2021.|Sat May \ 6 09:53:26 2023
   UTC>
-
-  <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Fri May \ 5 22:29:31 2023 UTC>
 
   <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Fri May \ 5
   21:40:50 2023 UTC>

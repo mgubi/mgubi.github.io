@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -15,13 +15,6 @@
   September 2022.>
 
   <subsection*|Postdocs>
-
-  Luca Fresta (2021\U)
-
-  Paolo Rinaldi (2021\U)
-
-  <hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
-  (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.
 
   <\itemize>
     <item>Luca Fresta (2021\U)
@@ -49,51 +42,59 @@
 
     <item>Sarah-Jean Meyer (2023\U)
 
-    <item>Mattia Turra (2018\U2023)\ 
+    <item>Mattia Turra (2018\U2023) \PInfinitesimal analysis of singular
+    stochastic partial differential equations\Q
 
-    <item><hlink|Lucio Galeati|/users/galeati/home> (2018\U2022) Now postdoc
-    in at EPFL Losanne in the group of Maria Colombo
+    <item><hlink|Lucio Galeati|https://sites.google.com/view/lucio-galeati-math/home>
+    (2018\U2022) \PPathwise methods in regularisation by noise\Q
+    (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10089>)
+    Now postdoc in at EPFL Losanne in the group of Maria Colombo
 
-    <item>Nikolay Barashkov (2017\U2021) Thesis \PA variational approach to
-    Gibbs measures on function spaces\Q.<nbsp>Now postdoc in Helsinki with A.
-    Kupiainen.
+    <item>Nikolay Barashkov (2017\U2021) \PA variational approach to Gibbs
+    measures on function spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>).
+    Now postdoc in Helsinki with A. Kupiainen
 
-    <item>Immanuel Zachhuber (2016\U2020) Thesis \PHyperbolic and dispersive
-    singular stochastic PDEs\Q.<nbsp>Now postdoc in Berlin with N.
-    Perkowski.<nbsp>
+    <item>Immanuel Zachhuber (2016\U2020) \PHyperbolic and dispersive
+    singular stochastic PDEs\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9225>).<nbsp>Now
+    postdoc in Berlin with N. Perkowski
 
-    <item>Marco Furlan (2014\U2018) Thesis \PControlled structures for
-    partial differential equations\Q, Dauphine University, Paris.<nbsp>Now
-    working in the finance sector, Germany.
+    <item>Marco Furlan (2014\U2018) \PControlled structures for partial
+    differential equations\Q, Dauphine University, Paris.<nbsp>Now working in
+    the finance sector in Germany
 
-    <item>Remi Catellier (2011\U2014) Thesis<nbsp>\PPerturbations
-    irrégulières et systèmes différentiels rugueux\Q, Dauphine University,
-    Paris.<nbsp>Now Maître de Conferences at Université de Nice, Sophia
-    Antipolis.
+    <item>Remi Catellier (2011\U2014) \PPerturbations irrégulières et
+    systèmes différentiels rugueux\Q, Dauphine University, Paris.<nbsp>Now
+    Maître de Conferences at Université de Nice, Sophia Antipolis
 
-    <item>Khalil Chouk (2010\U2013) Thesis<nbsp>\PTrois chemins contrôlés\Q,
-    Dauphine University, Paris.<nbsp>Now postdoc in Edinburgh with T. Oh.
+    <item>Khalil Chouk (2010\U2013) \PTrois chemins contrôlés\Q, Dauphine
+    University, Paris.<nbsp>Now working in the finance sector in UK
   </itemize>
 
-  <subsection*|Master students>
-
-  <with|font-series|bold|Bonn>
+  <subsection*|Master students in Bonn>
 
   <\itemize>
-    <item>Jan Nöller
+    <item>Chiunqiu Song \PStochastic Quantisation of Abelian Higgs Model\Q
+    SS2022 (<hlink|slides|../store/master-thesis-seminar-song.pdf>)
 
-    <item>Panagiotis Zografos
+    <item>Sarah-Jean Meyer \PA Stochastic Control Perspective on Euclidean
+    Quantum Field Theories\Q (<hlink|pdf|../store/master-thesis-meyer.pdf>)
+    SS2022 (<hlink|slides|../store/master-thesis-seminar-meyer.pdf>)
 
-    <item>Chiunqiu Song
+    <item>Keixang Wang \PGlobal Solutions and Stationary Measure for
+    Stochastic Cubic Nonlinear Wave Equation\Q SS2022
 
-    <item>Sarah-Jean Meyer
+    <item>Jan Nöller \PRandomness and Symmetry in Quantum Control\Q
+    WS2021/2022 (<hlink|pdf|../store/master-thesis-noeller.pdf>)
 
-    <item>Keixang Wang
+    <item>Panagiotis Zografos \PTopics in Non-commutative Probability\Q
+    WS2021/2022 (<hlink|pdf|../store/master-thesis-zografos.pdf>)
 
     <item>Adrian Martini \PThe Killed Mollified Super Brownian Motion and
-    Paracontrolled Wild Sums\Q SS2020
+    Paracontrolled Wild Sums\Q (<hlink|pdf|../store/master-thesis-martini.pdf>)
+    SS2020
 
-    <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q SS2020
+    <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q
+    (<hlink|pdf|../store/master-thesis-orenday.pdf>) SS2020
 
     <item>Lukas Meier \PThe true self-repelling motion'' SS2019
 
@@ -114,10 +115,11 @@
     WS2017/18
 
     <item>Nikolay Barashkov \PRadiative transport limit of the random
-    Schrödinger equation\Q SS2017
+    Schrödinger equation\Q (<hlink|pdf|../store/master-thesis-barashkov.pdf>)
+    SS2017
   </itemize>
 
-  <with|font-series|bold|Dauphine> (Mémoires de M2)
+  <subsection*|Master students in Paris\UDauphine>
 
   Année 2008/2009
 
@@ -183,8 +185,9 @@
   <\collection>
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
@@ -203,9 +206,13 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|1tab>|Master students
+      <with|par-left|<quote|1tab>|Master students in Bonn
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|Master students in Paris\UDauphine
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
     </associate>
   </collection>
 </auxiliary>

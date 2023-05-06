@@ -94,6 +94,7 @@
     --title-family: 'Source Sans Pro', sans-serif;
     --tt-family: 'Source Code Pro', monospace;
     --color-title: rgb(154, 39, 39);
+    --color-text: rgb(41, 34, 34);
 }
 
 html {
@@ -105,7 +106,7 @@ html {
 
 body {
     background-color:  #f9f9f9;
-    color: rgb(41, 34, 34);
+    color: var(--color-text);
     font-family: var(--main-family);
     text-align: left;
     line-height: 1.4;
@@ -193,11 +194,18 @@ ul, ol, dl, di {
     margin-bottom: 0px;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
+    padding-inline-start: 1em;
+    color: var(--color-title);
+    list-style: square;
 }
 
 ul > p, ol > p, dl > p, di > p {
     padding-bottom: 0.1em;
     padding-top: 0.1em;
+}
+
+li p {
+    color: var(--color-text);
 }
 
 table {

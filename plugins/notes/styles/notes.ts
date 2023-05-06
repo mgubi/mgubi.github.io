@@ -44,6 +44,28 @@
 
   <assign|html-extra-javascript-src|<tuple|../resources/highlight.pack.js|../resources/notes-base.js>>
 
+  \;
+
+  <\active*>
+    <\src-comment>
+      Itemize customization
+    </src-comment>
+  </active*>
+
+  <assign|item-hsep|<macro|1.0fn>>
+
+  <assign|item-vsep|<macro|0.0fn>>
+
+  <assign|aligned-item|<macro|name|<style-with|src-compact|none|<vspace*|<item-vsep>><with|par-first|<minus|<item-hsep>>|<yes-indent>><resize|<arg|name>|<minus|1r|<minus|<item-hsep>|0.0fn>>||<plus|1r|0.0fn>|>>>>
+
+  <assign|item-1|<macro|<active*|<math|>><shift|<tiny|\<#25C6\>>||0.1em>>>
+
+  <assign|item-2|<macro|<active*|<with|mode|math|<rigid|\<circ\>>>>>>
+
+  <assign|item-3|<macro|<active*|<with|mode|math|<rigid|->>>>>
+
+  <assign|item-4|<macro|<active*|<with|mode|math|<rigid|.>>>>>
+
   <active*|<\src-comment>
     Typewriter font.
   </src-comment>>
