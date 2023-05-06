@@ -28,7 +28,7 @@
   \<cdot\> <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \<cdot\>
   <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
 
-  <hlink|@mgubi@twitter|https://twitter.com/maxgubi> \<cdot\>
+  <hlink|@maxgubi@twitter|https://twitter.com/maxgubi> \<cdot\>
   <hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi> \<cdot\>
   <hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/>
 
