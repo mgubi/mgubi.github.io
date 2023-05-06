@@ -12,7 +12,7 @@
   <chapter*|Vita>
 
   <\notes-abstract>
-    Some facts about me \U last updated April 2023.
+    Things that happened to me, professionally \U last updated May 2023.
   </notes-abstract>
 
   <\cv-body>
@@ -30,8 +30,8 @@
 
     Hausdorff Chair \U Hausdorff Center for Mathematics, Bonn
 
-    <timeline|2021\U2015>Professeur chargé de cours (part\Utime) \U Ecole
-    Polytechnique, Saclay
+    <timeline|2021\U2015>Professeur chargé de cours (part\Utime) \U Centre de
+    Mathématiques Appliquées, Ecole Polytechnique, Saclay
 
     <timeline|2013\U2018>Junior member, Institut Universitaire de France
 
@@ -41,7 +41,7 @@
     <timeline|2008\U2012>Professeur des Universités (2nd class) \U Centre de
     Recherche en Mathématiques de la Decision, Université Paris\UDauphine
 
-    <timeline|2006\U2008>Maître de conférences \U \ Département de
+    <timeline|2006\U2008>Maître de Conférences \U \ Département de
     Mathématiques, Université Paris\USud
 
     <timeline|2001\U2006>Ricercatore (Assistant Professor) \U Institute for
@@ -76,8 +76,8 @@
     Center for Mathematics
 
     <timeline|2018\U2022>Managing director (Geschäftsführender Direktor) of
-    the Institute of Applied Mathematics, Universität Bonn. Deputy head
-    during 2017\U2018
+    the Institute of Applied Mathematics, Universität Bonn. Deputy head in
+    the period 2017\U2018
 
     <timeline|2017\U2022>Member of the Junior Fellow search committee of the
     Hausdorff Center for Mathematics \U <small|<comment|Each year approx. 200
@@ -90,8 +90,8 @@
     <timeline|2010\U2015>Elected member of Conseil des Études et de la vie
     Etudiante de l'Université Paris\UDauphine
 
-    <timeline|2009-2014>Director of the first year of Master MMD \S
-    Mathématiques pour la Modelisation et Decision \T at Université
+    <timeline|2009-2014>Director of the first year of Master MMD
+    \SMathématiques pour la Modelisation et Decision\T at the Université
     Paris\UDauphine \U <comment|<math|\<sim\>140> students/year>
 
     <\cv-section>
@@ -127,16 +127,18 @@
     <timeline|2006>Invited professor \ (1 month) in the Probability group at
     the Institut E.<nbsp>Cartan, University of Nancy 1, France
 
-    <timeline|2003>CNRS fellowship at Laboratoire d'Analyse, Géometrie et
+    <timeline|2003>CNRS (French National Center for Scientific Research)
+    postdoctoral fellowship at Laboratoire d'Analyse, Géometrie et
     Applications UMR 7539, Institut Galilée, Université Paris 13, France \U
     under the supervision of Prof.<nbsp>F.<nbsp>Russo
 
-    <timeline|2001>Postdoc fellowship (3 months) at ETH, Zürich \U under the
-    supervision of Prof.<nbsp>A.<nbsp>S. Sznitman.
+    <timeline|2001>Postdoctoral fellowship (3 months) at ETH (Federal
+    Polytechnical School), Zürich \U under the supervision of
+    Prof.<nbsp>A.<nbsp>S. Sznitman.
 
-    <timeline|1996>INFN summer studentship (2 months) in high-energy
-    experimental particle physics at Fermilab \U under the supervision of
-    Prof. M.<nbsp>Atac
+    <timeline|1996>INFN (Italian's National Institute for Nuclear Physics)
+    summer studentship (2 months) in high-energy experimental particle
+    physics at Fermilab \U under the supervision of Prof. M.<nbsp>Atac
 
     <\cv-section>
       Editorial and reviewing activities

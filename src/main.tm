@@ -15,18 +15,18 @@
   <with|font-shape|italic|personal pages><vspace|3em>
 
   <I>'m a mathematician, currently the Wallis Professor of mathematics at the
-  University of Oxford. Previously <value|I><nbsp>held positions in Bonn,
-  Paris and Pisa. <value|I><nbsp>work in the field of stochastic analysis. My
-  interests lie at the intersection of analysis, probability and mathematical
-  physics. <value|I><nbsp>like to think about the random functions which
-  appear in many physical theories, including quantum mechanics and quantum
-  field theory. <value|I><nbsp>have a PhD in theoretical physics and at some
-  point <value|I> worked in an experimental laboratory.
-  <value|I><nbsp>run.<vspace|1em>
+  University of Oxford and fellow of St.<nbsp>Anne's College. Previously
+  <value|I><nbsp>held positions in Bonn, Paris and Pisa. <value|I><nbsp>work
+  in the field of stochastic analysis. My interests lie at the intersection
+  of analysis, probability and mathematical physics. <value|I><nbsp>like to
+  think about the random functions which appear in many physical theories,
+  including quantum mechanics and quantum field theory. <value|I><nbsp>have a
+  PhD in theoretical physics and at some point <value|I> worked in an
+  experimental laboratory. <value|I><nbsp>run.<vspace|1em>
 
   <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
-  \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
-  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>\ 
+  \<cdot\> <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \<cdot\>
+  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
 
   <hlink|@mgubi@twitter|https://twitter.com/maxgubi> \<cdot\>
   <hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi> \<cdot\>
@@ -45,9 +45,9 @@
   <vspace|1em>
 
   <\small>
-    a <hlink|list|./list-articles.tm> of all the articles \<cdot\> a
-    <hlink|template|template.tm> for new pages \<cdot\> an
-    <hlink|Atom|notes.atom> feed
+    a <hlink|list|./list-articles.tm> of all the articles \<cdot\> an
+    <hlink|Atom|notes.atom> feed \<cdot\> a <hlink|template|template.tm> for
+    new pages
 
     these pages have been created with <hlink|<TeXmacs>|http://www.texmacs.org>
     and are hosted at <hlink|github|https://github.com/mgubi/webpages>

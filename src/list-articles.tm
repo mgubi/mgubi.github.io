@@ -12,6 +12,19 @@
 
   <hrule>
 
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Things that happened to me, professionally \U last updated May 2023.
+  </notes-entry|Sat May \ 6 22:51:33 2023 UTC>
+
+  <notes-entry|lectures-sq-ws20-21.tm|Stochastic quantization of the
+  Euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum field theory|An
+  introduction to stochastic quantisation. A course that I delivered in the
+  context of the graduate school of the University of Milan in February
+  2021.|Sat May \ 6 22:45:07 2023 UTC>
+
+  <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Sat May \ 6
+  22:44:08 2023 UTC>
+
   <notes-entry|lectures-intro-probability-ws20-21.tm|Introduction to
   probability|A bachelor course delivered online (due to the pandemic) in
   Bonn in the winter semester 2020/2021. In German.|Sat May \ 6 18:26:04 2023
@@ -55,19 +68,12 @@
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sat May \ 6 15:04:09 2023 UTC>
 
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Some facts about me \U last updated April 2023.
-  </notes-entry|Sat May \ 6 11:19:26 2023 UTC>
-
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May \ 6 10:19:05 2023 UTC>
 
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated April 2021.|Sat May \ 6 09:53:26 2023
   UTC>
-
-  <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Fri May \ 5
-  21:40:50 2023 UTC>
 
   <notes-entry|teaching-dauphine-14-15.tm|Enseignements 2014/2015|Lectures
   delivered at Paris Dauphine, academic year 2014\U2015.|Fri May \ 5 21:38:13
@@ -139,12 +145,6 @@
   models<nbsp>via the connection with probability theory given by the
   Euclidean approach. Course delivered in Bonn in Summer Semester 2020.|Wed
   May \ 3 22:05:09 2023 UTC>
-
-  <notes-entry|lectures-sq-ws20-21.tm|Stochastic quantization of the
-  Euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum field theory|An
-  introduction to stochastic quantisation. Course delivered in the context of
-  the graduate school of the University of Milan in February 2021.|Wed May
-  \ 3 21:33:01 2023 UTC>
 
   <notes-entry|old-publications.tm|Publications|What my collaborators,
   students and me have written \U last updated October 2020.|Fri Apr 28

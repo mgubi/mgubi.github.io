@@ -12,21 +12,19 @@
   <chapter*|Stochastic quantization of the Euclidean
   <math|\<Phi\><rsup|4><rsub|3>> quantum field theory>
 
-  <notes-abstract|An introduction to stochastic quantisation. Course
+  <notes-abstract|An introduction to stochastic quantisation. A course that I
   delivered in the context of the graduate school of the University of Milan
   in February 2021.>
 
   <em|Lectures organised in the context of the graduate school of the
   University of Milan.>
 
-  <strong|Lecturer.> Massimiliano Gubinelli
-
   <strong|Schedule.> February 15, 16, 18, 22, 25. 10\U12 and 14\U16. Online
   via Zoom. (Meeting ID: 946 4276 2037 /<nbsp>Passcode: 954150)
   (<hlink|link|https://uni-bonn.zoom.us/j/94642762037?pwd=MG80cW92T29PMWw3dDQ3aEdsY2lsdz09>)
 
-  The goal of Euclidean quantum field theory (see, e.g. [4,2]) is to build
-  probability measures on the space of distributions on
+  The goal of Euclidean quantum field theory (see, e.g.<nbsp>[4,2]) is to
+  build probability measures on the space of distributions on
   <math|\<bbb-R\><rsup|n>> satisfying properties such as Euclidean
   invariance, reflection positivity and non-triviality, that allows to
   recover an interacting relativistic quantum field satisfying Wightman
@@ -81,7 +79,7 @@
   Springer-Verlag, New York, Second edition, 1987. A functional integral
   point of view.
 
-  <strong|[3] > M. Gubinelli and M. Hofmanovï¿½. A PDE construction of the
+  <strong|[3] > M. Gubinelli and M. Hofmanová. A PDE construction of the
   euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum field theory. <em|ArXiv
   preprint arXiv:1810.01700>, 2018.
 
@@ -151,21 +149,37 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|template.tm>>
-    <associate|auto-2|<tuple|?|?|template.tm>>
-    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-shape|<quote|small-caps>|Stochastic
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Stochastic
       quantization of the Euclidean <with|mode|<quote|math>|\<Phi\><rsup|4><rsub|3>>
       quantum field theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <pageref|auto-1><vspace|0.5fn>
+      <no-break><pageref|auto-1><vspace|1fn>
+
+      <with|par-left|<quote|1tab>|Outline
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Bibliography
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Extended
+      lecture notes> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Journal
+      and scripts of the lectures> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

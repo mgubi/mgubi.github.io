@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-06T18:48:16Z</updated>
+  <updated>2023-05-06T22:51:51Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,35 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>Vita</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-06T22:51:33Z</id>
+    <updated>2023-05-06T22:51:33Z</updated>
+    <published>2023-05-06T22:51:34Z</published>
+    <summary><document>Things that happened to me, professionally  last
+    updated May 2023.</document></summary>
+  </entry>
+  <entry>
+    <title><concat>Stochastic quantization of the Euclidean
+    <math><concat><Phi><rsup>4</rsup><rsub>3</rsub></concat></math> quantum
+    field theory</concat></title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-sq-ws20-21.html"/>
+    <id>texmacs.github.io/notes/lectures-sq-ws20-21.tm:2023-05-06T22:45:07Z</id>
+    <updated>2023-05-06T22:45:07Z</updated>
+    <published>2023-05-06T22:45:09Z</published>
+    <summary>An introduction to stochastic quantisation. A course that I
+    delivered in the context of the graduate school of the University of Milan
+    in February 2021.</summary>
+  </entry>
+  <entry>
+    <title>Teaching</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
+    <id>texmacs.github.io/notes/teaching.tm:2023-05-06T22:44:08Z</id>
+    <updated>2023-05-06T22:44:08Z</updated>
+    <published>2023-05-06T22:44:11Z</published>
+    <summary>Things I teach & have taught.</summary>
+  </entry>
   <entry>
     <title>Introduction to probability</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-intro-probability-ws20-21.html"/>
@@ -110,15 +139,6 @@
     2022.</summary>
   </entry>
   <entry>
-    <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-06T11:19:26Z</id>
-    <updated>2023-05-06T11:19:26Z</updated>
-    <published>2023-05-06T11:19:28Z</published>
-    <summary><document>Some facts about me  last updated April
-    2023.</document></summary>
-  </entry>
-  <entry>
     <title>Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/programming.html"/>
     <id>texmacs.github.io/notes/programming.tm:2023-05-06T10:19:05Z</id>
@@ -135,14 +155,6 @@
     <published>2023-05-06T09:53:29Z</published>
     <summary>What my collaborators, students and me have written  last
     updated April 2021.</summary>
-  </entry>
-  <entry>
-    <title>Teaching</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
-    <id>texmacs.github.io/notes/teaching.tm:2023-05-05T21:40:50Z</id>
-    <updated>2023-05-05T21:40:50Z</updated>
-    <published>2023-05-05T21:40:52Z</published>
-    <summary>Things I teach & have taught.</summary>
   </entry>
   <entry>
     <title>Enseignements 2014/2015</title>
@@ -286,18 +298,6 @@
     models<nbsp/>via the connection with probability theory given by the
     Euclidean approach. Course delivered in Bonn in Summer Semester
     2020.</concat></summary>
-  </entry>
-  <entry>
-    <title><concat>Stochastic quantization of the Euclidean
-    <math><concat><Phi><rsup>4</rsup><rsub>3</rsub></concat></math> quantum
-    field theory</concat></title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/lectures-sq-ws20-21.html"/>
-    <id>texmacs.github.io/notes/lectures-sq-ws20-21.tm:2023-05-03T21:33:01Z</id>
-    <updated>2023-05-03T21:33:01Z</updated>
-    <published>2023-05-03T21:33:05Z</published>
-    <summary>An introduction to stochastic quantisation. Course delivered in
-    the context of the graduate school of the University of Milan in February
-    2021.</summary>
   </entry>
   <entry>
     <title>Publications</title>
