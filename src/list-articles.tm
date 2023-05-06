@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|writings.tm|Writings|This page gathers some writings.|Sat May
+  \ 6 18:12:11 2023 UTC>
+
   <notes-entry|presentations.tm|Presentations|The things I have said in
   various places.|Sat May \ 6 16:16:43 2023 UTC>
 
@@ -21,10 +24,6 @@
   <\notes-entry|curriculum-vitae.tm|Vita>
     Some facts about me \U last updated April 2023.
   </notes-entry|Sat May \ 6 11:19:26 2023 UTC>
-
-  <notes-entry|literate-programming.tm|On Literate Programming|Some
-  reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|Sat May \ 6 10:21:47 2023 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May \ 6 10:19:05 2023 UTC>
@@ -64,9 +63,6 @@
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
   small summary of the content, as exemplified by this very text.|Fri May \ 5
   16:58:05 2023 UTC>
-
-  <notes-entry|writings.tm|Writings|This page gathers some writings.|Thu May
-  \ 4 22:10:16 2023 UTC>
 
   <notes-entry|seminar-statistical-mechanics-ss21.tm| Statistical mechanics
   of lattice systems|This is a seminar on statistical mechanics held in Bonn
