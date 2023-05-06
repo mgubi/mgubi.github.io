@@ -28,6 +28,10 @@
   \| <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \|
   <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>\ 
 
+  <hlink|@mgubi@twitter|https://twitter.com/maxgubi> \<cdot\>
+  <hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi> \<cdot\>
+  <hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/>
+
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 

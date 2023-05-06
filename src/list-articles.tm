@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Sat May \ 6 16:16:43 2023 UTC>
+
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sat May \ 6 15:04:09 2023 UTC>
 
@@ -56,9 +59,6 @@
   <notes-entry|teaching-dauphine-08-09.tm|Enseignements 2008/2009|Lectures
   delivered at Paris Dauphine, academic year 2010\U2011.|Fri May \ 5 21:27:29
   2023 UTC>
-
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Fri May \ 5 16:58:06 2023 UTC>
 
   <notes-entry|slides.tm|Slides|This file provides a template for typical
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a

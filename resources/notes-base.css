@@ -194,14 +194,17 @@ ul, ol, dl, di {
     margin-bottom: 0px;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
-    padding-inline-start: 1em;
-    color: var(--color-title);
-    list-style: square;
 }
 
 ul > p, ol > p, dl > p, di > p {
     padding-bottom: 0.1em;
     padding-top: 0.1em;
+}
+
+ul {
+    color: var(--color-title);
+    list-style: square;
+    padding-inline-start: 1em;
 }
 
 li p {
