@@ -12,6 +12,10 @@
 
   <hrule>
 
+  <notes-entry|literate-programming.tm|On Literate Programming|Some
+  reflections on literate programming, <TeXmacs>, programming languages and
+  writing.|Sat May \ 6 10:21:47 2023 UTC>
+
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May \ 6 10:19:05 2023 UTC>
 
@@ -60,10 +64,6 @@
   notes/articles. You can use the tag <src-macro|notes-abstract> to provide a
   small summary of the content, as exemplified by this very text.|Fri May \ 5
   16:58:05 2023 UTC>
-
-  <notes-entry|literate-programming.tm|On Literate Programming|Some
-  reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|Thu May \ 4 22:14:00 2023 UTC>
 
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Thu May
   \ 4 22:10:16 2023 UTC>

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|notes>
 
@@ -10,7 +10,28 @@
   <notes-abstract|Some reflections on literate programming, <TeXmacs>,
   programming languages and writing.>
 
-  \;
+  <with|color|dark red|<\wide-tabular>
+    <tformat|<cwith|1|1|1|1|cell-background|pastel
+    red>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lborder|5ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<table|<row|<\cell>
+      <with|font-series|bold|Warning:> work in progress
+
+      <with|font-series|bold|TODO:>
+
+      other relevant aspects
+
+      <\itemize>
+        <item><hlink|<verbatim|org.mode>|https://orgmode.org>\ 
+
+        <item><hlink|Design principles behind
+        Smalltalk|https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html>
+        / \ <hlink|Early history of Smalltalk|http://worrydream.com/EarlyHistoryOfSmalltalk/>
+        / <hlink|Newspeak|https://newspeaklanguage.org/index.html>
+
+        <item>Comment about V. Bret's \PLearnable programming\Q
+        [<hlink|URL|http://worrydream.com/#!/LearnableProgramming>]\ 
+      </itemize>
+    </cell>>>>
+  </wide-tabular>>
 
   Literate programming was invented by Knuth to provide a literary work which
   would <with|font-shape|italic|explain> (unroll / bring before our eyes) a
@@ -206,27 +227,6 @@
   \Pweave\Q the relevant sources to compile a first runnable version of
   <TeXmacs>.
 
-  \;
-
-  <with|color|dark red|<\wide-tabular>
-    <tformat|<cwith|1|1|1|1|cell-background|pastel
-    red>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lborder|5ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<table|<row|<\cell>
-      <with|font-series|bold|TODO:> other relevant aspects
-
-      <\itemize>
-        <item><hlink|<verbatim|org.mode>|https://orgmode.org>\ 
-
-        <item><hlink|Design principles behind
-        Smalltalk|https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html>
-        / \ <hlink|Early history of Smalltalk|http://worrydream.com/EarlyHistoryOfSmalltalk/>
-        / <hlink|Newspeak|https://newspeaklanguage.org/index.html>
-
-        <item>Comment about V. Bret's \PLearnable programming\Q
-        [<hlink|URL|http://worrydream.com/#!/LearnableProgramming>]\ 
-      </itemize>
-    </cell>>>>
-  </wide-tabular>>
-
   \ 
 
   \;
@@ -246,9 +246,9 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
-    <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
+    <associate|auto-2|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 

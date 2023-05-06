@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-06T10:19:09Z</updated>
+  <updated>2023-05-06T10:22:00Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,11 +12,20 @@
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
   <entry>
+    <title>On Literate Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
+    <id>texmacs.github.io/notes/literate-programming.tm:2023-05-06T10:21:47Z</id>
+    <updated>2023-05-06T10:21:47Z</updated>
+    <published>2023-05-06T10:21:49Z</published>
+    <summary><concat>Some reflections on literate programming, <TeXmacs/>,
+    programming languages and writing.</concat></summary>
+  </entry>
+  <entry>
     <title>Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/programming.html"/>
     <id>texmacs.github.io/notes/programming.tm:2023-05-06T10:19:05Z</id>
     <updated>2023-05-06T10:19:05Z</updated>
-    <published>2023-05-06T10:19:05Z</published>
+    <published>2023-05-06T10:19:09Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
   </entry>
@@ -127,15 +136,6 @@
     You can use the tag <src-macro>notes-abstract</src-macro> to provide a
     small summary of the content, as exemplified by this very
     text.</concat></summary>
-  </entry>
-  <entry>
-    <title>On Literate Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/literate-programming.html"/>
-    <id>texmacs.github.io/notes/literate-programming.tm:2023-05-04T22:14:00Z</id>
-    <updated>2023-05-04T22:14:00Z</updated>
-    <published>2023-05-04T22:14:03Z</published>
-    <summary><concat>Some reflections on literate programming, <TeXmacs/>,
-    programming languages and writing.</concat></summary>
   </entry>
   <entry>
     <title>Writings</title>
