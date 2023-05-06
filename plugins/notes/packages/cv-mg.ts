@@ -19,8 +19,6 @@
 
   <assign|comment|<macro|body|<with|font-shape|italic|font-size|0.8|<arg|body>>>>
 
-  \;
-
   <assign|cv-title|<\macro|body>
     <\with|par-sep|0.0fn>
       <arg|body>
@@ -73,10 +71,6 @@
   <assign|cv-body|<macro|body|<with|font-size|0.8|par-left|<timeline-hsep>|<arg|body>>>>
 
   \;
-
-  \;
-
-  <assign|html-title|Curriculum Vitae>
 
   <assign|tmhtml-timeline|<macro|text|<html-class|tmweb-cv-timeline|<arg|text>>>>
 

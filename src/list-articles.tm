@@ -12,6 +12,10 @@
 
   <hrule>
 
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Some facts about me \U last updated April 2023.
+  </notes-entry|Sat May \ 6 11:19:26 2023 UTC>
+
   <notes-entry|literate-programming.tm|On Literate Programming|Some
   reflections on literate programming, <TeXmacs>, programming languages and
   writing.|Sat May \ 6 10:21:47 2023 UTC>
@@ -22,10 +26,6 @@
   <notes-entry|publications.tm|Publications|What my collaborators, students
   and me have written \U last updated April 2021.|Sat May \ 6 09:53:26 2023
   UTC>
-
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Some facts about me \U last updated April 2023.
-  </notes-entry|Fri May \ 5 22:47:09 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Fri May \ 5 22:29:31 2023 UTC>

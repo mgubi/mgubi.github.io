@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|source>
 
@@ -36,11 +36,11 @@
 
   \;
 
-  <assign|html-title|mgubi>
+  <assign|html-title|Massimiliano<nbsp>Gubinelli>
+
+  <assign|html-head-favicon|../resources/favicon-32x32.png>
 
   <assign|html-css|../resources/notes-base.css>
-
-  <inactive|<assign|html-head-favicon|../resources/blog-icon.png>>
 
   <assign|html-extra-javascript-src|<tuple|../resources/highlight.pack.js|../resources/notes-base.js>>
 
