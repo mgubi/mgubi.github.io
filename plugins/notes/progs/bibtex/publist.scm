@@ -45,8 +45,7 @@
     	  	`((hlink (concat ,(bib-format-field-preserve-case x "archiveprefix") ":" ,url) ,url)))))
     ((not (bib-empty? x "url"))
 			 `((concat ,(bib-format-field x "url") ;;(bib-field x "url") returns <slink|url>, so that is a link
-					  " accessed " 
-					 ,(bib-format-field x "urldate"))))
+					  ,@(if (bib-empty?  x "urldate") '() `(" accessed " ,(bib-format-field x "urldate"))))))
     (else '())))      
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

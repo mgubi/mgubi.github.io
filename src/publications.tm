@@ -506,13 +506,12 @@
       <newblock><hlink|10.5802/afst.1553|https://doi.org/10.5802/afst.1553>
 
       <bibitem*|31><bib-year-section|2016><label|bib-papers-gubinelliHairerQuastelUniversalityResult2016>M.<nbsp>Gubinelli<localize|
-      and >N.<nbsp>Perkowski. <newblock>The Hairer-Quastel universality
+      and >N.<nbsp>Perkowski. <newblock>The Hairer\UQuastel universality
       result at stationarity. <newblock><localize|In
       ><with|font-shape|italic|Stochastic Analysis on Large Scale Interacting
       Systems>, RIMS Kôkyûroku Bessatsu, B59, <localize|pages >101\U115. Res.
-      Inst. Math. Sci. (RIMS), Kyoto, 2016.
-      <newblock><slink|<enumerate|<code*|http://hdl.handle.net/2433/243596>>>.<newblock>
-      <newblock>
+      Inst. Math. Sci. (RIMS), Kyoto, 2016.<newblock>
+      <newblock><slink|http://hdl.handle.net/2433/243596>
 
       <bibitem*|32><label|bib-papers-gubinelliFourierApproachPathwise2016>M.<nbsp>Gubinelli,
       P.<nbsp>Imkeller<localize|, and >N.<nbsp>Perkowski. <newblock>A Fourier
@@ -7054,10 +7053,16 @@
         <db-field|langid|english>
       </db-entry>
 
-      <\db-entry|+QALE0vs1aC6bOyP|incollection|gubinelliHairerQuastelUniversalityResult2016>
-        <db-field|contributor|mgubi>
+      <\db-entry|+Nh9b8aU4CJe5ml|incollection|gubinelliHairerQuastelUniversalityResult2016>
+        <db-field|contributor|root>
 
         <db-field|modus|manual>
+
+        <db-field|newer|+Nh9b8aU4CJe5mk>
+
+        <db-field|newer|+Nh9b8aU4CJe5mj>
+
+        <db-field|newer|+QALE0vs1aC6bOyP>
 
         <db-field|newer|+2Nyd0o0i1ZWtVtr3>
 
@@ -7065,14 +7070,32 @@
 
         <db-field|newer|+18N9Lh7ndW8zXlG>
 
+        <db-field|newer|+QALE0vs1aC6bOyP>
+
+        <db-field|newer|+2Nyd0o0i1ZWtVtr3>
+
+        <db-field|newer|+1ozaTT4BkTzDq5H>
+
         <db-field|newer|+18N9Lh7ndW8zXlG>
 
-        <db-field|date|1638005731>
+        <db-field|newer|+2Nyd0o0i1ZWtVtr3>
+
+        <db-field|newer|+1ozaTT4BkTzDq5H>
+
+        <db-field|newer|+18N9Lh7ndW8zXlG>
+
+        <db-field|newer|+1ozaTT4BkTzDq5H>
+
+        <db-field|newer|+18N9Lh7ndW8zXlG>
+
+        <db-field|newer|+18N9Lh7ndW8zXlG>
+
+        <db-field|date|1683452673>
       <|db-entry>
         <db-field|author|Massimiliano <name|Gubinelli><name-sep>Nicolas
         <name|Perkowski>>
 
-        <db-field|title|The Hairer-Quastel universality result at
+        <db-field|title|The Hairer\UQuastel universality result at
         stationarity>
 
         <db-field|booktitle|Stochastic Analysis on Large Scale Interacting
@@ -7086,7 +7109,7 @@
 
         <db-field|series|RIMS Kôkyûroku Bessatsu, B59>
 
-        <db-field|note|<slink|<enumerate|<code*|http://hdl.handle.net/2433/243596>>>>
+        <db-field|url|<slink|http://hdl.handle.net/2433/243596>>
 
         <db-field|mrnumber|3675927>
       </db-entry>
