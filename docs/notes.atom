@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-07T09:50:45Z</updated>
+  <updated>2023-05-07T22:49:20Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,24 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>Vita</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
+    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-07T22:45:42Z</id>
+    <updated>2023-05-07T22:45:42Z</updated>
+    <published>2023-05-07T22:45:42Z</published>
+    <summary><document>Things that happened to me, professionally  last
+    updated May 2023.</document></summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
+    <id>texmacs.github.io/notes/publications.tm:2023-05-07T09:53:49Z</id>
+    <updated>2023-05-07T09:53:49Z</updated>
+    <published>2023-05-07T09:50:14Z</published>
+    <summary>What my collaborators, students and me have written  last
+    updated April 2021.</summary>
+  </entry>
   <entry>
     <title>Teaching</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/teaching.html"/>
@@ -30,15 +48,6 @@
     <summary>An introduction to stochastic quantisation. A course that I
     delivered in the context of the graduate school of the University of Milan
     in February 2021.</summary>
-  </entry>
-  <entry>
-    <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
-    <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-06T22:53:08Z</id>
-    <updated>2023-05-06T22:53:08Z</updated>
-    <published>2023-05-06T22:51:34Z</published>
-    <summary><document>Things that happened to me, professionally  last
-    updated May 2023.</document></summary>
   </entry>
   <entry>
     <title>Large Deviations</title>
@@ -146,15 +155,6 @@
     <published>2023-05-06T10:19:09Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
-  </entry>
-  <entry>
-    <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
-    <id>texmacs.github.io/notes/publications.tm:2023-05-06T09:53:54Z</id>
-    <updated>2023-05-06T09:53:54Z</updated>
-    <published>2023-05-07T09:50:14Z</published>
-    <summary>What my collaborators, students and me have written  last
-    updated April 2021.</summary>
   </entry>
   <entry>
     <title>Enseignements 2014/2015</title>

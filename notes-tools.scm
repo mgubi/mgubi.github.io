@@ -1,8 +1,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; MODULE      : notes-tools.scm
-;; DESCRIPTION : Tools to maintain the "Notes on TeXmacs" website
-;; COPYRIGHT   : (C) 2020 Massimiliano Gubinelli
+;; DESCRIPTION : Tools to maintain a static website
+;; COPYRIGHT   : (C) 2023 Massimiliano Gubinelli
 ;;
 ;; This software falls under the GNU general public license version 3 or later.
 ;; It comes WITHOUT ANY WARRANTY WHATSOEVER. For details, see the file LICENSE
@@ -24,18 +24,19 @@
 
 ;; git does not preserve modification time for files so we need to retrieve it from the 
 ;; commit log. Note we need the "author time", not the "commit time" (in git parlance)
-;; However there is a problem: if the file is not yet commited we get a wrong answer
-;; so we have to commit our modification and *then* generate the digest. 
-;; This requires two commits... However one can just ignore this problem.
+;; However there is a problem: if the file is not yet commited we get a wrong answer.
+;; To avoid this we will use the filesystem modification time if newer.
 ;;
 ;; If the file is not in the git log then we get the date from the filesystem.
 
 (define (git-date fname)
- (let* ((port (open-input-pipe (string-append "git log --pretty=%at " fname " | head -1")))
-                 (str  (read-line port)))
-            (if (and (equal? 0 (close-pipe port)) (not (eof-object? str)))
-                (string->number str)
-                (stat:mtime (stat fname)))))
+  (let* ((port  (open-input-pipe (string-append "git log -1 --pretty=%at " fname )))
+         (str   (read-line port))
+         (fdate (stat:mtime (stat fname)))       
+         (gdate (if (and (equal? 0 (close-pipe port)) (not (eof-object? str)))
+                    (string->number str)
+                    fdate)))
+  (if (> fdate gdate ) fdate gdate)))
 
 (define (collect-articles dir)
   (map 
@@ -67,13 +68,12 @@
 ;;(car (collect-articles "/Users/mgubi/t/git-notes/src"))
 
 (define (make-article-list dir)
-    (let* (
-        (material (sort 
-            (collect-articles dir) 
-            (lambda (x y) (>= (car x) (car y)))))
-        (material2 (filter 
-            (lambda (x) (not (member (second x) '("list-articles.tm" "main.tm")))) 
-            material)))
+    (let* ((material (sort 
+             (collect-articles dir) 
+             (lambda (x y) (>= (car x) (car y)))))
+           (material2 (filter 
+             (lambda (x) (not (member (second x) '("list-articles.tm" "main.tm")))) 
+             material)))
     material2))
 
 (define (output-article-list-doc articles)
@@ -129,10 +129,10 @@
     (display* "Source dir :" (src-dir) "\n")
     (display* "Dest dir   :" (dest-dir) "\n")
     (let ((articles (make-article-list (src-dir))))
-        (display* "* Making article list\n")
-        (output-article-list-doc articles)
-        (display* "* Making article feed\n")
-        (output-article-feed articles))
+         (display* "* Making article list\n")
+         (output-article-list-doc articles)
+         (display* "* Making article feed\n")
+         (output-article-feed articles))
     (display* "* Updating website\n")
     (if update? 
         (begin
@@ -144,5 +144,5 @@
     (display* "Done."))
 
 (define (notes-update) (notes-run #t))
-(define (notes-build) (notes-run #f))
+(define (notes-build)  (notes-run #f))
 

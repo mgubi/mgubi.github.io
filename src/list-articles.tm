@@ -12,6 +12,14 @@
 
   <hrule>
 
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Things that happened to me, professionally \U last updated May 2023.
+  </notes-entry|Sun May \ 7 22:45:42 2023 UTC>
+
+  <notes-entry|publications.tm|Publications|What my collaborators, students
+  and me have written \U last updated April 2021.|Sun May \ 7 09:53:49 2023
+  UTC>
+
   <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Sat May \ 6
   22:53:08 2023 UTC>
 
@@ -20,10 +28,6 @@
   introduction to stochastic quantisation. A course that I delivered in the
   context of the graduate school of the University of Milan in February
   2021.|Sat May \ 6 22:53:08 2023 UTC>
-
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Things that happened to me, professionally \U last updated May 2023.
-  </notes-entry|Sat May \ 6 22:53:08 2023 UTC>
 
   <notes-entry|seminar-large-deviations-ws19-20.tm|Large Deviations|This
   bachelor seminar took place in Bonn in the winter semester 2019/2020.|Sat
@@ -70,10 +74,6 @@
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May \ 6 10:20:27 2023 UTC>
-
-  <notes-entry|publications.tm|Publications|What my collaborators, students
-  and me have written \U last updated April 2021.|Sat May \ 6 09:53:54 2023
-  UTC>
 
   <notes-entry|teaching-dauphine-14-15.tm|Enseignements 2014/2015|Lectures
   delivered at Paris Dauphine, academic year 2014\U2015.|Fri May \ 5 22:49:42
