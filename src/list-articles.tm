@@ -12,8 +12,11 @@
 
   <hrule>
 
+  <notes-entry|people.tm|People|Present & past members of my research group
+  \U updated September 2022.|Mon May \ 8 22:48:54 2023 UTC>
+
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Mon May \ 8 21:36:23 2023 UTC>
+  last updated May 2023.|Mon May \ 8 21:55:50 2023 UTC>
 
   <notes-entry|presentations.tm|Presentations|The things I have said in
   various places.|Mon May \ 8 11:52:11 2023 UTC>
@@ -72,9 +75,6 @@
 
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Sat May
   \ 6 18:12:11 2023 UTC>
-
-  <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Sat May \ 6 15:04:09 2023 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May \ 6 10:19:05 2023 UTC>

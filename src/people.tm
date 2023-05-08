@@ -75,11 +75,15 @@
     University, Paris.<nbsp>Now Maître de Conferences at Université de Nice,
     Sophia Antipolis
 
+    <item><hlink|Romain Allez|https://www.linkedin.com/in/romain-allez-41a44697/>
+    (2010\U2013) \PChaos multiplicatif Gaussien, matrices aléatoires et
+    applications\Q (<hlink|url|https://www.theses.fr/2012PA090046>), Dauphine
+    University, Paris. Now working in the finance sector in France
+
     <item><hlink|Khalil Chouk|https://www.linkedin.com/in/khalil-chouk-9178931a/>
     (2010\U2013) \PTrois chemins contrôlés\Q
     (<hlink|url|https://www.theses.fr/2014PA090002>), Dauphine University,
-    Paris. Thesis funded by AXA Research.
-    (<hlink|url|https://axa-research.org/en/project/khalil-chouk>).<nbsp>Now
+    Paris. Thesis funded by AXA Research<nbsp>(<hlink|url|https://axa-research.org/en/project/khalil-chouk>).<nbsp>Now
     working in the finance sector in UK
   </itemize>
 
