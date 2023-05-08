@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-07T22:49:20Z</updated>
+  <updated>2023-05-08T11:52:23Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,6 +12,33 @@
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
   <entry>
+    <title>Presentations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/presentations.html"/>
+    <id>texmacs.github.io/notes/presentations.tm:2023-05-08T11:52:11Z</id>
+    <updated>2023-05-08T11:52:11Z</updated>
+    <published>2023-05-08T11:52:12Z</published>
+    <summary>The things I have said in various places.</summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
+    <id>texmacs.github.io/notes/publications.tm:2023-05-08T10:47:00Z</id>
+    <updated>2023-05-08T10:47:00Z</updated>
+    <published>2023-05-08T10:47:03Z</published>
+    <summary xml:space="preserve">Papers I have co-authored   last updated May 2023.</summary>
+  </entry>
+  <entry>
+    <title>Template article</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/research.html"/>
+    <id>texmacs.github.io/notes/research.tm:2023-05-08T08:51:34Z</id>
+    <updated>2023-05-08T08:51:34Z</updated>
+    <published>2023-05-08T08:51:36Z</published>
+    <summary><concat>This file provides a template for typical notes/articles.
+    You can use the tag <src-macro>notes-abstract</src-macro> to provide a
+    small summary of the content, as exemplified by this very
+    text.</concat></summary>
+  </entry>
+  <entry>
     <title>Vita</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/curriculum-vitae.html"/>
     <id>texmacs.github.io/notes/curriculum-vitae.tm:2023-05-07T22:45:42Z</id>
@@ -19,15 +46,6 @@
     <published>2023-05-07T22:45:42Z</published>
     <summary><document>Things that happened to me, professionally  last
     updated May 2023.</document></summary>
-  </entry>
-  <entry>
-    <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/publications.html"/>
-    <id>texmacs.github.io/notes/publications.tm:2023-05-07T09:53:49Z</id>
-    <updated>2023-05-07T09:53:49Z</updated>
-    <published>2023-05-07T09:50:14Z</published>
-    <summary>What my collaborators, students and me have written  last
-    updated April 2021.</summary>
   </entry>
   <entry>
     <title>Teaching</title>
@@ -129,14 +147,6 @@
     <updated>2023-05-06T18:13:13Z</updated>
     <published>2023-05-06T18:12:13Z</published>
     <summary>This page gathers some writings.</summary>
-  </entry>
-  <entry>
-    <title>Presentations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/presentations.html"/>
-    <id>texmacs.github.io/notes/presentations.tm:2023-05-06T16:17:49Z</id>
-    <updated>2023-05-06T16:17:49Z</updated>
-    <published>2023-05-06T16:16:46Z</published>
-    <summary>The things I have said in various places.</summary>
   </entry>
   <entry>
     <title>People</title>

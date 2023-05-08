@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|publist>>
 
@@ -247,8 +247,7 @@
 
   <chapter*|Publications>
 
-  <notes-abstract|What my collaborators, students and me have written \U last
-  updated April 2021.>
+  <notes-abstract|Papers I have co-authored \ \U last updated May 2023.>
 
   <\bibliography*|bib-preprints|tm-publist||Preprints>
     <\bib-list|8>

@@ -12,13 +12,20 @@
 
   <hrule>
 
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Mon May \ 8 11:52:11 2023 UTC>
+
+  <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
+  last updated May 2023.|Mon May \ 8 10:47:00 2023 UTC>
+
+  <notes-entry|research.tm|Template article|This file provides a template for
+  typical notes/articles. You can use the tag <src-macro|notes-abstract> to
+  provide a small summary of the content, as exemplified by this very
+  text.|Mon May \ 8 08:51:34 2023 UTC>
+
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2023.
   </notes-entry|Sun May \ 7 22:45:42 2023 UTC>
-
-  <notes-entry|publications.tm|Publications|What my collaborators, students
-  and me have written \U last updated April 2021.|Sun May \ 7 09:53:49 2023
-  UTC>
 
   <notes-entry|teaching.tm|Teaching|Things I teach & have taught.|Sat May \ 6
   22:53:08 2023 UTC>
@@ -65,9 +72,6 @@
 
   <notes-entry|writings.tm|Writings|This page gathers some writings.|Sat May
   \ 6 18:13:13 2023 UTC>
-
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Sat May \ 6 16:17:49 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Sat May \ 6 15:04:54 2023 UTC>

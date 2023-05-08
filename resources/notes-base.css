@@ -9,7 +9,15 @@
 * in the root directory or <http://www.gnu.org/licenses/gpl-3.0.html>.
 ******************************************************************************/
 
+/******************************************************************************
+* Font setup
+******************************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+/******************************************************************************
+* Code syntax highlight
+******************************************************************************/
 
 /*@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css');*/
 @import url('./highlight-github.css');
@@ -19,70 +27,6 @@
     overflow-x: auto;
     padding: 0.5em;
     background-color: initial ;
-}
-
-  
-/******************************************************************************
-* Font setup
-******************************************************************************/
-
-
-@font-face {
-    font-family: 'Linux Libertine';
-    src: url("./fonts/LinLibertine_R.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Linux Libertine';
-    src: url("./fonts/LinLibertine_RI.otf") format("opentype");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Linux Libertine';
-    src: url("./fonts/LinLibertine_RB.otf") format("opentype");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Linux Biolinum';
-    src: url("./fonts/LinBiolinum_R.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Linux Biolinum';
-    src: url("./fonts/LinBiolinum_RI.otf") format("opentype");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Linux Biolinum';
-    src: url("./fonts/LinBiolinum_RB.otf") format("opentype");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    src: url("./fonts/LiberationMono-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    src: url("./fonts/LiberationMono-Bold.ttf") format("truetype");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    src: url("./fonts/LiberationMono-Italic.ttf") format("truetype");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    src: url("./fonts/LiberationMono-BoldItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
 }
 
 /******************************************************************************
