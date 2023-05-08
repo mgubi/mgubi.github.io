@@ -12,11 +12,11 @@
 
   <hrule>
 
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Mon May \ 8 11:52:11 2023 UTC>
-
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Mon May \ 8 10:47:00 2023 UTC>
+  last updated May 2023.|Mon May \ 8 14:03:42 2023 UTC>
+
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Mon May \ 8 14:03:42 2023 UTC>
 
   <notes-entry|research.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to
