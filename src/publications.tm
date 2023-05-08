@@ -5756,6 +5756,36 @@
         <db-field|doi|10.1088/0305-4470/36/21/101>
       </db-entry>
 
+      <\db-entry|+2IYrABOMnOWx5Er|article|caraccioloTransverseFluctuationsDriven2003>
+        <db-field|contributor|root>
+
+        <db-field|modus|imported>
+
+        <db-field|date|1681512053>
+      <|db-entry>
+        <db-field|author|Sergio <name|Caracciolo><name-sep>Andrea
+        <name|Gambassi><name-sep>Massimiliano
+        <name|Gubinelli><name-sep>Andrea <name|Pelissetto>>
+
+        <db-field|title|Transverse fluctuations in the driven lattice gas>
+
+        <db-field|journal|Journal of Physics. A. Mathematical and General>
+
+        <db-field|year|2003>
+
+        <db-field|volume|36>
+
+        <db-field|number|21>
+
+        <db-field|pages|0>
+
+        <db-field|issn|0305-4470>
+
+        <db-field|doi|10.1088/0305-4470/36/21/101>
+
+        <db-field|mrnumber|1985486>
+      </db-entry>
+
       <\db-entry|+2IYrABOMnOWx5Es|article|caravennaLargeScaleBehavior2010>
         <db-field|contributor|root>
 
@@ -7409,36 +7439,6 @@
         <db-field|doi|10.1007/s11118-006-9013-5>
 
         <db-field|mrnumber|2255351 (2007k:60182)>
-      </db-entry>
-
-      <\db-entry|+2IYrABOMnOWx5Er|article|caraccioloTransverseFluctuationsDriven2003>
-        <db-field|contributor|root>
-
-        <db-field|modus|imported>
-
-        <db-field|date|1681512053>
-      <|db-entry>
-        <db-field|author|Sergio <name|Caracciolo><name-sep>Andrea
-        <name|Gambassi><name-sep>Massimiliano
-        <name|Gubinelli><name-sep>Andrea <name|Pelissetto>>
-
-        <db-field|title|Transverse fluctuations in the driven lattice gas>
-
-        <db-field|journal|Journal of Physics. A. Mathematical and General>
-
-        <db-field|year|2003>
-
-        <db-field|volume|36>
-
-        <db-field|number|21>
-
-        <db-field|pages|0>
-
-        <db-field|issn|0305-4470>
-
-        <db-field|doi|10.1088/0305-4470/36/21/101>
-
-        <db-field|mrnumber|1985486>
       </db-entry>
     </associate>
     <\associate|bib-preprints-bibliography>
