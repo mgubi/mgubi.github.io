@@ -91,7 +91,8 @@
 
   <\itemize>
     <item>Chiunqiu Song \PStochastic Quantisation of Abelian Higgs Model\Q
-    SS2022 (<hlink|slides|../store/master-thesis-seminar-song.pdf>)
+    (<hlink|pdf|../store/master-thesis-song.pdf>) SS2022
+    \ (<hlink|slides|../store/master-thesis-seminar-song.pdf>)
 
     <item>Sarah-Jean Meyer \PA Stochastic Control Perspective on Euclidean
     Quantum Field Theories\Q (<hlink|pdf|../store/master-thesis-meyer.pdf>)
@@ -205,7 +206,6 @@
     <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
