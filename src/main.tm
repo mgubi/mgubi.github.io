@@ -36,7 +36,7 @@
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
   <hlink|vita|./curriculum-vitae.tm> \<cdot\> <hlink|research|research.tm>
-  \<cdot\> <hlink|teaching|teaching.tm> \<cdot\>
+  \<cdot\> <hlink|teaching|teaching/teaching.tm> \<cdot\>
   <hlink|programming|./programming.tm> \<cdot\> <hlink|writings|writings.tm>
 
   <vspace|1em>
