@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; September 28th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20180928 Hara
+    </p>
+    <font style="font-size: 250.0%"><b><p>
+      No-Go theorems in \(\Phi^4_d\) for \(d \geqslant 4\)
+    </p></b></font>
+    <h2 id="auto-3">1<span style="margin-left: 1em"></span>Introduction<span style="margin-left: 1em"></span></h2>
+    <p>
+      Relevant literature:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Aizenmann, CMP 86 (1982)
+        </p>
+      </li>
+      <li>
+        <p>
+          Fr&ouml;hlich, Nucl.Phys. B200 (1982) 281
+        </p>
+      </li>
+      <li>
+        <p>
+          Sokal AIHP 37 (1982) 317 [very interesting paper]
+        </p>
+      </li>
+      <li>
+        <p>
+          Book &ldquo;Random walks, Critical phenomena and triviality in
+          QFT&rdquo; by Fernandez, Fr&ouml;lich, Sokal.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Triviality will be discussed in the context of lattice regularization.
+      Let \(\varepsilon\) be the lattice spacing. We are going to let
+      \(\varepsilon \rightarrow 0\) and try to get a continuum QFT on
+      \(\mathbb{R}^d\). There are two scales, the continuum distance and that
+      on the lattice, this last is naturally measure in terms of lattice
+      spacings. We write \(x \in \mathbb{Z}^d\) for the lattice variable and
+      \(\tilde{x} \in \mathbb{R}^d\) the continuum variable. The connection
+      between the two variables is \(x = [\tilde{x} / \varepsilon]\) where
+      \([\cdot]\) is some way to get the integer part of a vector in
+      \(\mathbb{R}^d\). 
+    </p>
+    <p>
+      Consider a field \(\varphi : \Lambda \rightarrow \mathbb{R}\) one
+      component model and \(\Lambda\) is a finite portion of \(\mathbb{Z}^d\).
+      \(\varphi = (\varphi_x)_{x \in \mathbb{Z}^d}\) and define
+    </p>
+    <center>
+      \(\displaystyle \langle F (\varphi) \rangle_{\Lambda, \varepsilon} =
+      \frac{1}{Z_{\Lambda}}
+\int \rho_{\Lambda} (\varphi) F (\varphi) \left[
+      \prod_{x \in \Lambda}
+\mathrm{d} \varphi_x \right], \qquad\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle \rho_{\Lambda, \varepsilon} (\varphi) = e^{- H_{\Lambda,
+      \varepsilon}
+(\varphi)} = \exp \left( - \frac{1}{4} J_{\varepsilon}
+      \sum_{| x - y | = 1} |
+\varphi_x - \varphi_y |^2 -
+      \frac{\mu_{\varepsilon}}{2} \sum_{x \in \Lambda}
+\varphi_x^2 -
+      \frac{\lambda_{\varepsilon}}{4!} \sum_{x \in \Lambda}
+\varphi_x^4
+      \right)\)
+    </center>
+    <p>
+      where \(J_{\varepsilon} \geqslant 0\), \(\lambda_{\varepsilon} \geqslant
+      0\) and \(\mu_{\varepsilon} \in \mathbb{R}\). We also define \(\langle
+      \cdots \rangle_{\mathbb{Z}^d} = \lim_{\Lambda \nearrow
+      \mathbb{Z}^d}
+\langle \cdots \rangle_{\Lambda}\). Typical observable are
+      of the form of \(n\)-point functions: \(\langle \varphi_{x_1}
+      \varphi_{x_2} \cdots \varphi_{x_n}
+\rangle_{\mathbb{Z}^d}\). And we
+      define also
+    </p>
+    <center>
+      \(\displaystyle S (\tilde{x}_1, \ldots, \tilde{x}_n) = \lim_{\varepsilon
+      \rightarrow 0}
+\langle \varphi_{[\tilde{x}_1 / \varepsilon]}
+      \varphi_{[\tilde{x}_2 /
+\varepsilon]} \cdots \varphi_{[\tilde{x}_n /
+      \varepsilon]}
+\rangle_{\mathbb{Z}^d, \varepsilon},\)
+    </center>
+    <p>
+      maybe along a subsequence \((\varepsilon_n)_n\). The lattice spin system
+      is reflection positive, etc.. and therefore the limiting system of
+      correlation functions \(S\) is expected to satisfy all the
+      Osterwalder&ndash;Schrader axioms (except maybe for rotation
+      invariance). 
+    </p>
+    <p>
+      We would like to choose the parameter in such a way to get an
+      interesting continuum limit (non&ndash;Gaussian). The triviality problem
+      is to understand if this is possible at all. 
+    </p>
+    <p>
+      The correlations functions has to behave in nice ways. For example the
+      two point function has to behave well and decay fast enough but on
+      macroscopic scales. So we need to adjust the parameters in such a way
+      that the spin system approach a critical point where correlation lenght
+      diverges (this will allow to keep it finite on macroscopic scales). 
+    </p>
+    <p>
+      <b>Belief:</b> is not possible to arrange things so to obtain a
+      non-trivial limit for the spin system when \(d \geqslant 4\): any
+      adjustement of \(J_{\varepsilon}, \mu_{\varepsilon} {,}
+      \lambda_{\varepsilon}\) will <i>not</i> lead to non-Gaussian continuum
+      limit.  
+    </p>
+    <p>
+      We restrict our considerations to subset of parameters which remains in
+      the <i>high&ndash;temperature region</i> (this includes the neighborhood
+      of the phase transition point).
+    </p>
+    <p>
+      Triviality for lattice regularisation has been <i>proven</i> for \(d >
+      4\) via correlation inequalities. For \(d = 4\) the situation is
+      strange. We can exclude a lot of possibilities but there is still a gap
+      and the question is still open. 
+    </p>
+    <h2 id="auto-4">2<span style="margin-left: 1em"></span>Proof of triviality in \(d > 4\)<span style="margin-left: 1em"></span></h2>
+    <p>
+      Ingredients:
+    </p>
+    <ol>
+      <li>
+        <p>
+          Infrared bounds (reflection positivity)
+        </p>
+      </li>
+      <li>
+        <p>
+          Aizenmann&ndash;Fr&ouml;hlich inequalities
+        </p>
+      </li>
+    </ol>
+    <p>
+      (a) Infrared bounds:
+    </p>
+    <center>
+      \(\displaystyle G (x - y) = \langle \varphi_x \varphi_y
+      \rangle_{\varepsilon} \leqslant
+\frac{C_d}{J_{\varepsilon}}  \frac{1}{(1
+      + | x - y |)^{d - 2}} .\)
+    </center>
+    <p>
+      This is a real space version of the Fourier space bounds \(0 \leqslant
+      \hat{G} (p) \lesssim | p |^{- 2}\).
+    </p>
+    <center>
+      \(\displaystyle S_2 (\tilde{x}, \tilde{y}) \approx \langle
+      \varphi_{[\tilde{x} / \varepsilon]}
+\varphi_{[\tilde{y} / \varepsilon]}
+      \rangle_{\varepsilon} \lesssim
+\frac{\varepsilon^{d -
+      2}}{J_{\varepsilon}}  \frac{1}{| \tilde{x} - \tilde{y}
+|^{d - 2}} .\)
+    </center>
+    <p>
+      so we need to require that this is nontrivial since all the correlation
+      functions can be bounded by products of \(2\)-pt functions (by
+      correlation inequalitites). This means that
+    </p>
+    <center>
+      \(\displaystyle J_{\varepsilon} \lesssim O (\varepsilon^{d - 2}) .\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">1</class>. </strong>The kinetic energy
+      gives an hint for the factor \(\varepsilon^{d - 2}\) if we try to
+      approximate it with the continuum one. Indeed
+    </p>
+    <p style="margin-bottom: 1em">
+      <center>
+        \(\displaystyle J_{\varepsilon} \sum_{| x - y | = 1} | \varphi_x -
+        \varphi_y |^2 =
+J_{\varepsilon} \varepsilon^{2 - d} \left[
+        \varepsilon^d \sum_{| x - y | = 1}
+\left| \frac{\varphi_x -
+        \varphi_y}{\varepsilon} \right|^2 \right] \approx
+J_{\varepsilon}
+        \varepsilon^{2 - d} \int \mathrm{d} x | \nabla \varphi (x) |^2
+.\)
+      </center>
+    </p>
+    <p>
+      (b) The cumulant
+    </p>
+    <center>
+      \(\displaystyle U_4 (x_1, x_2, x_3, x_4) := \langle \varphi_{x_1}
+      \varphi_{x_2} \varphi_{x_3}
+\varphi_{x_4} \rangle - \langle
+      \varphi_{x_1} \varphi_{x_2} \rangle \langle
+\varphi_{x_3} \varphi_{x_4}
+      \rangle - \langle \varphi_{x_1} \varphi_{x_3}
+\rangle \langle
+      \varphi_{x_2} \varphi_{x_4} \rangle - \langle
+      \varphi_{x_1}
+\varphi_{x_4} \rangle \langle \varphi_{x_2} \varphi_{x_3}
+      \rangle\)
+    </center>
+    <p>
+      is bounded by
+    </p>
+    <center>
+      \(\displaystyle 0 \underbrace{\leqslant}_{\text{Lebowitz}} - U_4 (x_1,
+      x_2, x_3, x_4)
+\underbrace{\leqslant}_{\text{Aizenmann--Frölich}} C
+      J_{\varepsilon}^2 \sum_{t
+\in \mathbb{Z}^d} \langle \varphi_{x_1}
+      \varphi_t \rangle \langle
+\varphi_{x_2} \varphi_t \rangle \langle
+      \varphi_{x_3} \varphi_t \rangle
+\langle \varphi_{x_4} \varphi_t \rangle
+      + \text{(correction terms)}\)
+    </center>
+    <p>
+      The corrections terms are not relevant in the critical regime. So we are
+      going to neglect them.
+    </p>
+    <p>
+      Triviality follows: If 
+    </p>
+    <center>
+      \(\displaystyle \tilde{U}_{4, \text{cont}} (\tilde{x}_1, \tilde{x}_2,
+      \tilde{x}_3,
+\tilde{x}_4) = \lim_{\varepsilon \rightarrow 0}
+      \underbrace{U_4
+([\widetilde{x_1} / \varepsilon], [\widetilde{x_2} /
+      \varepsilon],
+[\widetilde{x_3} / \varepsilon], [\widetilde{x_4}
+      /
+\varepsilon])}_{\tilde{U}_{4, \varepsilon} (\tilde{x}_1,
+      \tilde{x}_2,
+\tilde{x}_3, \tilde{x}_4)} = 0\)
+    </center>
+    <p>
+      then higher order cumulants \(U_n\) are also zero (this is a classical
+      result). So we can restrict considerations to the \(4\)-pt functions. 
+    </p>
+    <p>
+      Let us restict to the massive case, namely when
+    </p>
+    <center>
+      \(\displaystyle S_2 (\tilde{x}, \tilde{y}) \approx e^{- m_p | \tilde{x}
+      - \tilde{y} |}\)
+    </center>
+    <p>
+      for some \(m_p > 0\). Let us consider the renormalized adimensional
+      coupling constant. Introduce
+    </p>
+    <center>
+      \(\displaystyle \bar{U}_4 := - \sum_{x_1, x_2, x_2} U_{4, \varepsilon}
+      (0, x_1, x_2, x_3)\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle \chi_{\varepsilon} := \sum_x \langle \varphi_0 \varphi_x
+      \rangle_{\varepsilon}\)
+    </center>
+    <p>
+      and let
+    </p>
+    <center>
+      \(\displaystyle g_{\text{ren}, \varepsilon} := \frac{| \bar{U}_4
+      |}{\xi_{\varepsilon}^d
+\chi_{\varepsilon}^2} \approx (m_p)^d \frac{\int
+      \mathrm{d} \tilde{x}_1 \int
+\mathrm{d} \tilde{x}_2 \int \mathrm{d}
+      \tilde{x}_3 \tilde{U}_{4, \varepsilon}
+(0, \tilde{x}_1, \tilde{x}_2,
+      \tilde{x}_3)}{\left( \int \mathrm{d} \tilde{x}
+S_2 (0, \tilde{x})
+      \right)^2}\)
+    </center>
+    <p>
+      here \(\xi_{\varepsilon}\) is the lattice correlation lenght. By
+      Aizenmann&ndash;Fr&ouml;lich inequality
+    </p>
+    <center>
+      \(\displaystyle g_{\text{ren}, \varepsilon} \lesssim
+      \frac{J_{\varepsilon}^2
+\chi^4_{\varepsilon}}{\xi^d_{\varepsilon}
+      \chi_{\varepsilon}^2} \approx
+\frac{J_{\varepsilon}^2
+      \chi^2_{\varepsilon}}{\xi^d_{\varepsilon}} .\)
+    </center>
+    <p>
+      Using reflection positivity/infrared bounds and spectral representation
+      one can establish that
+    </p>
+    <center>
+      \(\displaystyle J_{\varepsilon} \chi_{\varepsilon} \lesssim
+      (\xi_{\varepsilon})^2\)
+    </center>
+    <p>
+      (see Sokal's paper). Plugging this into our bound for \(g_{\text{ren},
+      \varepsilon}\) we get
+    </p>
+    <center>
+      \(\displaystyle g_{\text{ren}, \varepsilon} \lesssim
+      \xi_{\varepsilon}^{4 - d}\)
+    </center>
+    <p>
+      But for the continuum limit we must have \(\xi_{\varepsilon} \rightarrow
+      \infty\) since \(\xi_{\varepsilon}\) is measured in lattice spacing
+      units.
+    </p>
+    <p>
+      This concludes the proof of triviality when \(d > 4\).
+    </p>
+    <p>
+      When \(d = 4\) we need to look at different arguments. Recall AF
+      inequality:
+    </p>
+    <center>
+      \(\displaystyle - U_4 (x_1, x_2, x_3, x_4) \leqslant C J_{\varepsilon}^2
+      \sum_{t \in
+\mathbb{Z}^d} \langle \varphi_{x_1} \varphi_t \rangle
+      \langle \varphi_{x_2}
+\varphi_t \rangle \langle \varphi_{x_3} \varphi_t
+      \rangle \langle
+\varphi_{x_4} \varphi_t \rangle + \cdots\)
+    </center>
+    <p>
+      An improvement of this inequality looks like this:
+    </p>
+    <center>
+      \(\displaystyle \)
+    </center>
+    <center>
+      \(\displaystyle - U_4 (x_1, x_2, x_3, x_4) \leqslant C J_{\varepsilon}^2
+      \sum_{u, v \in
+\mathbb{Z}^d} \langle \varphi_{x_1} \varphi_v \rangle
+      \langle \varphi_{x_2}
+\varphi_v \rangle J_{u, v} \langle \varphi_u
+      \varphi_v ; \varphi_{x_3}
+\varphi_{x_4} \rangle .\)
+    </center>
+    <p>
+      In our particular case we have to take \(J_{u, v} = J_{\varepsilon}
+      \mathbb{I}_{| u - v | = 1}\). (otherwise the inequality is rather
+      general). 
+    </p>
+    <p>
+      Using this we have, in \(d = 4\):
+    </p>
+    <center>
+      \(\displaystyle g_{\text{ren}, \varepsilon} \leqslant O (J^2)
+      \frac{1}{\xi^4} \frac{\partial
+\chi}{\partial J} \lesssim
+      \frac{1}{\chi^2} \frac{\partial \chi}{\partial J}\)
+    </center>
+    <p>
+      It is widely believed that in \(d = 4\) \(\chi \sim (J_c - J)^{- 1} |
+      \log (J_c - J) |^{1 / 3}\) near the critical point and this says that
+      \(\left| \frac{\partial \chi}{\partial J} \right|\) goes to zero
+      logarithmically which would suggest also triviality in \(d = 4\).
+    </p>
+    <h2 id="auto-5">3<span style="margin-left: 1em"></span>RG picture<span style="margin-left: 1em"></span></h2>
+    <p>
+      Block spin transformation: we group lattice points in blocks of side
+      \(L\). Define block spins
+    </p>
+    <center>
+      \(\displaystyle \varphi'_x = L^{- \ast} \sum_{| L x - y | \leqslant 1 /
+      2} \varphi_y\)
+    </center>
+    <p>
+      if \(\varphi \sim \rho_{\Lambda} = e^{- H_{\Lambda}}\) then we want to
+      consider the marginal law of \(\varphi'\) and repeat the transformation
+      to track the law of large scale fluctuations. 
+    </p>
+    <p>
+      From the lattice of size \(\varepsilon\) we do \(n\) block spin
+      transformation to obtain a lattice of size \(\varepsilon L^n \approx
+      1\). Let \(\rho'_{\Lambda}\) the distribution of \(\varphi'\) and
+      \(\rho^{(n)}\) the law of the \(n\)-th iterated block spin variable
+      \(\varphi^{(n)}\) (with \(\varphi^{(1)} = \varphi'\)).
+    </p>
+    <p>
+      <img src="srq-seminar-20180928-hara-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129447em; margin-top: 0em; vertical-align: -5.3308650137741em; height: 10.6617300275482em"></img>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      If we have this kind of structure then we are in a very nice situation
+      where one can iterate infinitely many times the RG transformation and
+      have a control of a non&ndash;gaussian theory sitting on the critical
+      line. (non-perturbative regime is the red part)
+    </p>
+    <p>
+      In \(d = 4\) the situation is different since the gaussian FP is
+      attractive in all directions but in the \(\varphi^2\) so in order to
+      construct a non&ndash;trivial limit we need to start much away from the
+      fixpoint, well into the non&ndash;perturbative regime.
+    </p>
+    <p>
+      [Missing some remarks I didn't had time to write down here]
+    </p>
+    <p>
+      Hara, Hatori, Watanabe, CMP (2001). Start from Ising model (\(\lambda =
+      \infty\) with interaction \(\lambda (\varphi^2 - S^2)^2\)) in the
+      hierarchical approximation and using a computer assisted proof one can
+      see that the Gaussian fixpoint attracts the original interaction (it
+      needs \(\approx 100\) iterations to get perturbative)
+    </p>
+    <p>
+      Is seems implausible to have a fixpoint which is very far from the
+      Gaussian fixpoint and in the perturbative region is clear that there is
+      no possibility to have a non-gaussian limit point for the lattice
+      models.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

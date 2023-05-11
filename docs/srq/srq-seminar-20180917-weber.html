@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; September 17th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar, 20180917. Weber.
+    </p>
+    <p>
+      <b>Stochastic dynamics.</b> Summary.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Connection between field theory, measures \(e^{- V}\), &amp; SPDEs
+        </p>
+      </li>
+      <li>
+        <p>
+          Scaling of SPDEs, subcriticality
+        </p>
+      </li>
+      <li>
+        <p>
+          Function spaces
+        </p>
+      </li>
+    </ol>
+    <h2 id="auto-3">1<span style="margin-left: 1em"></span>Langevin dynamics<span style="margin-left: 1em"></span></h2>
+    <p>
+      \(V : \mathbb{R}^d \rightarrow \mathbb{R}_+\) sufficient growth,
+      \(C^{\infty}\). Measure \(\mu = e^{- V (x)} \mathrm{d} x / Z\) on
+      \(\mathbb{R}^d\). How to sample from this measure? 
+    </p>
+    <ul>
+      <li>
+        <p>
+          MCMC (Markov chain Monte Carlo): find a good Markov chain on
+          \(\mathbb{R}^d\) which has \(\mu\) as an invariant measure.
+        </p>
+      </li>
+      <li>
+        <p>
+          Run it for a while and hope that reaches stationarity
+        </p>
+      </li>
+    </ul>
+    <p>
+      One possible dynamics: <i>Langevin SDE</i>.
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} x_t = - \nabla V (x_t) \mathrm{d} t +
+      \sqrt{2} \mathrm{d} w_t,
+\quad t \geqslant 0.\)
+    </center>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>This SDE defines a
+      reversible Markov process for \(\mu\). </i>
+    </p>
+    <p>
+      This means that if \(x_0 \sim \mu\) and \(\mu \bot w\) then \((x_t)_{t
+      \in [0, 1]}\) has the same law as \((x_{1 - t})_{t \in [0, 1]}\) (the
+      same process run backwards from \(t = 1\)). In particular \(x_1\) has
+      the same law as \(x_0\), that is \(\mu\). The measure \(\mu\) is
+      therefore invariant under this Markovian evolution.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Check detailed balance condition. Namely check
+      that the generator \(\mathcal{L}\) of the SDE is symmetric wrt. \(\mu\).
+      
+    </p>
+    <center>
+      \(\displaystyle \int f (x) \mathcal{L}g (x) \mu (\mathrm{d} x) = \int
+      \mathcal{L}f (x) g (x)
+\mu (\mathrm{d} x)\)
+    </center>
+    <p>
+      with \(\mathcal{L}= \Delta - \nabla V \cdot \nabla\). Explicitly (assume
+      \(Z = 1\))
+    </p>
+    <center>
+      \(\displaystyle \int f (x) \mathcal{L}g (x) \mu (\mathrm{d} x) = \int f
+      (x) \Delta g (x) e^{-
+V (x)} \mathrm{d} x - \int f (x) \nabla V \cdot
+      \nabla g (x) e^{- V (x)}
+\mathrm{d} x\)
+    </center>
+    <p>
+      (integrating by parts the Laplacian)
+    </p>
+    <center>
+      \(\displaystyle = \int \nabla g (x) \cdot \nabla [f (x) e^{- V (x)}]
+      \mathrm{d} x - \int f (x)
+\nabla V \cdot \nabla g (x) e^{- V (x)}
+      \mathrm{d} x = \int (\nabla g (x)
+\cdot \nabla f (x)) e^{- V (x)}
+      \mathrm{d} x\)
+    </center>
+    <p style="margin-bottom: 1em">
+      which is symmetric in \(f, g\) and we can undo the same computation on
+      the \(f\) side. <span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      This computation remains valid for modifications of the SDE of the form
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} x_t = - AA^t \nabla V (x_t) \mathrm{d} t +
+      \sqrt{2} A \mathrm{d}
+w_t, \quad t \geqslant 0.\)
+    </center>
+    <p>
+      where \(A \in \mathcal{L} (\mathbb{R}^m ; \mathbb{R}^d)\) for any \(m
+      \geqslant d\). By choosing appropriately \(A\) we can generate both
+      Glauber and Kawasaki dynamics. 
+    </p>
+    <p>
+      Both gradient and Brownian motion are defined wrt. a quadratic form. For
+      BM we mean that if \(v, w \in \mathbb{R}^d\) there is a quadratic form
+      \(Q\) associated to the covariance of the Brownian motion as:
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} (B_t \cdot v) (B_s \cdot w) = (t \wedge s) Q
+      (v, w) .\)
+    </center>
+    <p>
+      <b>Aim:</b> understand the ultraviolet problem from the construction of
+      \(\phi^4\). Consider a lattice with spacing \(N^{- 1}\)
+    </p>
+    <center>
+      \(\displaystyle \Lambda_N = (N^{- 1} \mathbb{Z}/\mathbb{Z})^d,\)
+    </center>
+    <p>
+      and a scalar field \(\phi : \Lambda_N \rightarrow \mathbb{R}\) with
+      potential
+    </p>
+    <center>
+      \(\displaystyle V_N (\phi) = \frac{1}{N^d} \sum_{x \in \Lambda_N} \left[
+      F (\phi (x)) +
+\underbrace{\frac{1}{2} | \nabla \phi (x)
+      |^2}_{\frac{N^2}{2} \sum_{x \sim y}
+| \phi (x) - \phi (y) |^2}
+      \right],\)
+    </center>
+    <p>
+      with \(F\) is nice and sufficiently growning. 
+    </p>
+    <p>
+      Let us compute the Langevin (gradient) dynamics. 
+    </p>
+    <p>
+      We have to fix a scalar product and we start with the \(L^2
+      (\Lambda_N)\) scalar product
+    </p>
+    <center>
+      \(\displaystyle \langle \psi, \varphi \rangle_{L^2} = \frac{1}{N^d}
+      \sum_{x \in \Lambda_N}
+\psi (x) \varphi (x)\)
+    </center>
+    <p>
+      The gradient \(\nabla V\) has the form
+    </p>
+    <center>
+      \(\displaystyle \left. \frac{\mathrm{d}}{\mathrm{d} \varepsilon}
+      \right|_{\varepsilon = 0} V_N
+(\phi + \varepsilon e) = \frac{1}{N^d}
+      \sum_{x \in \Lambda_N} F' (\phi (x)) e
+(x) + \frac{1}{N^d} \sum_{x \in
+      \Lambda_N} \nabla \phi (x) \cdot \nabla e (x) \)
+    </center>
+    <p>
+      and an integration by parts gives
+    </p>
+    <center>
+      \(\displaystyle = \langle F' (\phi) - \Delta \phi, e \rangle_{L^2}\)
+    </center>
+    <p>
+      so can identify the gradient \(\nabla V\) with the l.h.s. of this scalar
+      product and let
+    </p>
+    <center>
+      \(\displaystyle \nabla V (\phi) (x) = F' (\phi (x)) - \Delta \phi (x)
+      .\)
+    </center>
+    <p>
+      Form of the noise: we want a noise \(W_t\) such that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\langle W_t, \psi_1 \rangle_{L^2} \langle
+      W_t, \psi_2
+\rangle_{L^2}] = (t \wedge s) \langle \psi_1, \psi_2
+      \rangle_{L^2}\)
+    </center>
+    <center>
+      \(\displaystyle =\mathbb{E} \left[ \frac{1}{N^d} \sum_{x_1 \in
+      \Lambda_N} \psi_1 (x_1) W_t
+(x_1) \frac{1}{N^d} \sum_{x_2 \in \Lambda_N}
+      \psi (x_2) W_s (x_2) \right] = (t
+\wedge s) \frac{1}{N^d} \sum_{x \in
+      \Lambda_N} \psi_1 (x) \psi_2 (x)\)
+    </center>
+    <p>
+      so we need to take
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathbb{E} [W_t (x_1) W_s (x_2)] =
+        (t \wedge s) N^d \delta_{x_1, x_2} .\)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      This suggests that the limiting equation as \(N \rightarrow \infty\)
+      should be
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \phi_t = (\Delta \phi - F' (\phi)) \mathrm{d}
+      t + \sqrt{2}
+\mathrm{d} W_t\)
+    </center>
+    <p>
+      where \((W_t)_t\) is a Brownian motion with covariance
+      &ldquo;\(\mathbb{E} [W_t (x) W_t (y)] = \delta_{\mathbb{T}^d} (x -
+      y)\)&rdquo;. This dynamics is usually called: Allen&ndash;Cahn, or
+      Glauber or Model A. 
+    </p>
+    <p>
+      Another possible choice is to consider a Kawasaki&ndash;like dynamics
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \phi_t = (- \Delta) (\Delta \phi - F' (\phi))
+      \mathrm{d} t +
+\sqrt{2} (- \Delta)^{1 / 2} \mathrm{d} W_t\)
+    </center>
+    <p>
+      which is called the Cahn&ndash;Hillard equation (or Kawasaki, or Model
+      B). It is an equation which preserves the averages and can be cast in
+      (stochastic) conservation law form. 
+    </p>
+    <p>
+      <i>Reversibility:</i> heavily used in stochastic quantisation
+      (Albeverio, Roeckner) to understand solutions in \(2 d\). More recent
+      techniques for dealing with singular equations (regularity structures
+      and company) ignore reversibility. E.g.
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \phi_t = (\Delta \phi - f (\phi)) \mathrm{d}
+      t + \sqrt{2}
+\mathrm{d} W_t, \qquad \phi : \Lambda \rightarrow
+      \mathbb{R}^2\)
+    </center>
+    <p>
+      and \(f\) does not need to be a gradient, e.g. a polynomial with some
+      coercivity properties.
+    </p>
+    <p>
+      (Jona&ndash;Lasinio, S&eacute;neor have analysed non-gradient
+      perturbations of gradient dynamics using Girsanov formula). 
+    </p>
+    <h2 id="auto-4">2<span style="margin-left: 1em"></span>Scaling<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-5">2.1<span style="margin-left: 1em"></span>Scaling of white noise<span style="margin-left: 1em"></span></h3>
+    <p>
+      White noise \(\xi\) want to be defined as the Gaussian process with
+      covariance given by Dirac&ndash;\(\delta\). It makes sense to take it as
+      a random distribution in \(\mathcal{D}' (\mathbb{R}_+ \times
+      \mathbb{R}^d)\) with covariance
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathbb{E} [\xi (\eta)^2] = \| \eta
+        \|_{L^2 (\mathbb{R}_+ \times
+\mathbb{R}^d)}, \qquad \eta \in
+        \mathcal{D} (\mathbb{R}_+ \times \mathbb{R}^d)
+. \)</td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <p>
+      Realization: On \(\mathbb{R}_+\) take \((B_t)_{t \geqslant 0}\) be a
+      Brownian motion, define \(\xi (\eta) = \int_{\mathbb{R}_+} \eta (t)
+      \mathrm{d} B_t\) and then &nbsp;(<a href="#eq:cov-xi">2</a>) is just Ito<sup class="wide">&macr;</sup>
+      isometry. 
+    </p>
+    <p>
+      On \(\mathbb{T}^d\) define \(\xi\) via Fourier series
+    </p>
+    <center>
+      \(\displaystyle \xi (x) = \sum_{k \in \mathbb{Z}^d} e^{i k \cdot x}
+      G_k\)
+    </center>
+    <p>
+      where \((G_k)_{k \in \mathbb{Z}^d}\) are centered Gaussian, complex
+      valued with \(G_k = (G^1_k + i G^2_k) / \sqrt{2}\) with \(G^i_k \in
+      \mathbb{R}\) and \(G^1, G^2 \sim \mathcal{N} (0, 1)\) and independent up
+      to \(G_k = G_{- k}^{\ast}\) and the structure of the covariance follows
+      from independence. 
+    </p>
+    <p>
+      Cylindrical Brownian can be seen as a superposition of independent
+      Brownian motions in different Fourier modes. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Scaling for Brownian motion: \(\lambda^{- 1 / 2} B_{\lambda t} \sim
+      B_t\). Define \(\xi (\alpha t, \beta x) = \xi_{\alpha, \beta}\) via
+      \(\xi_{\alpha, \beta} (\eta) = \xi (S_{\alpha, \beta} \eta)\) where
+    </p>
+    <center>
+      \(\displaystyle S_{\alpha, \beta} \eta (t, x) = \alpha^{- 1} \beta^{- d}
+      \eta (t / \alpha, x /
+\beta)\)
+    </center>
+    <p>
+      where this scaling preserves the \(L^1\) norm of the test function. 
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\xi_{\alpha, \beta} (\eta)^2] =\mathbb{E}
+      [\xi (S_{\alpha, \beta}
+\eta)^2] = \| S_{\alpha, \beta} \eta \|_{L^2}^2
+      = \int_{\mathbb{R}_+ \times
+\mathbb{R}^d} | \alpha^{- 1} \beta^{- d}
+      \eta (t / \alpha, x / \beta) |^2
+\mathrm{d} t \mathrm{d} x = \alpha^{-
+      1} \beta^{- d} \| \eta \|_{L^2}^2\)
+    </center>
+    <p>
+      so
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Corollary <class style="font-style: normal">2</class>. </strong><i>For all \(\alpha,
+      \beta > 0\),</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \alpha^{1 / 2} \beta^{d / 2} \xi_{\alpha, \beta} \sim
+        \xi .\)
+      </center></i>
+    </p>
+    <p>
+      Informally
+    </p>
+    <center>
+      \(\displaystyle \alpha^{1 / 2} \beta^{d / 2} \xi (\alpha t, \beta x)
+      \xequal{\text{law}} \xi
+(t, x) .\)
+    </center>
+    <h3 id="auto-6">2.2<span style="margin-left: 1em"></span>Scaling for SPDEs, linear case<span style="margin-left: 1em"></span></h3>
+    <p>
+      Let us start from linear equations
+    </p>
+    <center>
+      \(\displaystyle (\partial_t - \Delta) Z = \xi .\)
+    </center>
+    <p>
+      Rescale \(\hat{Z} (t, x) := \lambda^{\delta} Z (\lambda^{\alpha} t,
+      \lambda^{\beta} x)\). \(\hat{\xi} (t, x) := \lambda^{(\alpha + d \beta)
+      / 2} \xi (\lambda^{\alpha} t,
+\lambda^{\beta} x)\) and \(\hat{\xi} \sim
+      \xi\). Now
+    </p>
+    <center>
+      \(\displaystyle \partial_t \hat{Z} (t, x) = \lambda^{\delta}
+      \lambda^{\alpha} Z
+(\lambda^{\alpha} t, \lambda^{\beta} x), \qquad
+      \Delta \hat{Z} (t, x) =
+\lambda^{\delta} \lambda^{2 \beta} Z
+      (\lambda^{\alpha} t, \lambda^{\beta} x) .\)
+    </center>
+    <p>
+      So we need to take \(\alpha = 2 \beta\) and \((\alpha + d \beta) / 2 =
+      \alpha + \delta\) so \(\alpha = 2 \beta\) and \(\delta = (d \beta -
+      \alpha) / 2 = \beta (d - 2) / 2\). Therefore
+    </p>
+    <center>
+      \(\displaystyle \lambda^{- (d / 2 - 1)} Z (\lambda^2 t, \lambda x)
+      \xequal{\text{law}} Z (t,
+x) .\)
+    </center>
+    <p>
+      The exponent in the prefactor &ldquo;hints&rdquo; to the regularity of
+      the random field \(Z\). 
+    </p>
+    <h3 id="auto-7">2.3<span style="margin-left: 1em"></span>Scaling for SPDEs, nonlinear equations<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      If we are interested in the \(\phi^4\) theory, that is the case where
+      \(V (\phi) = \frac{1}{4} \int \phi (x)^4 + \frac{1}{2} | \nabla \phi (x)
+      |^2\) then the equation is
+    </p>
+    <center>
+      \(\displaystyle (\partial_t - \Delta) \phi = - \phi^3 + \xi .\)
+    </center>
+    <p>
+      Perform rescaling \(\hat{\phi} (t, x) = \lambda^{(d / 2 - 1)} \phi
+      (\lambda^2 t, \lambda x)\), the one suggested by the linear equation.
+      Then the equation in the new variables reads
+    </p>
+    <center>
+      \(\displaystyle (\partial_t - \Delta) \hat{\phi} = - \lambda^{4 - d}
+      \hat{\phi}^3 + \hat{\xi}
+.\)
+    </center>
+    <ul>
+      <li>
+        <p>
+          \(d = 1, 2, 3\): subcritical regime
+        </p>
+      </li>
+      <li>
+        <p>
+          \(d = 4\): critical regime
+        </p>
+      </li>
+      <li>
+        <p>
+          \(d > 4\): supercritical
+        </p>
+      </li>
+    </ul>
+    <p>
+      For the UV problem, we need to think about \(\lambda\) being smaller and
+      smaller (why?) and this makes the non-linear term small in this regime.
+      So for \(d < 4\) we are expecting that in small scales \((\lambda
+      \rightarrow 0)\) we are expecting that the stochastic heat equation (the
+      linear equation behaviour) dominates. 
+    </p>
+    <p>
+      <i>Idea:</i> We try to build a perturbative expansion, on small scales,
+      around the linear theory.  At some point one can stop and analyse the
+      remainder with PDE methods. 
+    </p>
+    <p>
+      In regularity structure there exists results which allow to constuct and
+      solve for small times a large class of equations in the subcritical
+      regime.
+    </p>
+    <p>
+      For \(\phi^4\) the long time and large space problem is well understood
+      by now. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

@@ -12,19 +12,17 @@
 
   <hrule>
 
+  <notes-entry|research.tm|Research|Mathematics.|Thu May 11 21:02:19 2023
+  UTC>
+
   <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Thu May 11 18:46:58 2023 UTC>
+  \U updated September 2022.|Thu May 11 18:48:16 2023 UTC>
 
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
   last updated May 2023.|Mon May \ 8 21:58:39 2023 UTC>
 
   <notes-entry|presentations.tm|Presentations|The things I have said in
   various places.|Mon May \ 8 14:03:42 2023 UTC>
-
-  <notes-entry|research.tm|Template article|This file provides a template for
-  typical notes/articles. You can use the tag <src-macro|notes-abstract> to
-  provide a small summary of the content, as exemplified by this very
-  text.|Mon May \ 8 08:51:34 2023 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2023.

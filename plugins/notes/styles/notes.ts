@@ -22,6 +22,8 @@
 
   <use-package|generic|html-font-size|libertine-font>
 
+  <use-package|notes-meta>
+
   <\active*>
     <\src-comment>
       Style parameters.
@@ -122,7 +124,9 @@
 
   <assign|notes-header-image|<image|/webpages/resources/texmacs-blog-transparent.png|20pt|||>>
 
-  <assign|notes-header-links|<macro|[<hlink|main|./main.tm>]>>
+  <if|<provides|notes-main-dir>||<assign|notes-main-dir|.>>
+
+  <assign|notes-header-links|<macro|[<hlink|main|<merge|<notes-main-dir>|/main.tm>>]>>
 
   <assign|notes-header-table|<\macro|body>
     <\wide-tabular>

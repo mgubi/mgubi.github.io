@@ -35,11 +35,8 @@
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
-  <hlink|vita|./curriculum-vitae.tm> \<cdot\>
-  <hlink|publications|publications.tm> \<cdot\>
-  <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
-  \<cdot\> <hlink|people|people.tm> \<cdot\> <hlink|teaching|teaching.tm>
-
+  <hlink|vita|./curriculum-vitae.tm> \<cdot\> <hlink|research|research.tm>
+  \<cdot\> <hlink|teaching|teaching.tm> \<cdot\>
   <hlink|programming|./programming.tm> \<cdot\> <hlink|writings|writings.tm>
 
   <vspace|1em>

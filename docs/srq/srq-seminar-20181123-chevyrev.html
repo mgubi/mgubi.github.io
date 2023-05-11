@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; November 23th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      SRQ 20181123 Chevyrev
+    </p>
+    <p>
+      <b>Two-dimensional Yang&ndash;Mills measure as a random
+      distribution.</b>
+    </p>
+    <p>
+      YM measure is a stochastic objects indexed by sufficient regular loops. 
+    </p>
+    <p>
+      Today: how to make sense of this object as a random distribution. 
+    </p>
+    <p>
+      Identify \(\mathbb{T}^2\) with \([0, 1]^2\). Let
+    </p>
+    <center>
+      \(\displaystyle \chi := \{ \ell \subset \mathbb{T}^2 : \ell = \{ x + c
+      e_{\mu} : c \in [0,
+\lambda] \}, x \in \mathbb{T}^2, \lambda \in [0, 1],
+      \mu \in \{ 1, 2 \} \}\)
+    </center>
+    <p>
+      the space of line segments. For \(\ell \in \chi\) we let \(| \ell | =
+      \lambda\) and the direction of \(\ell\) is \(\mu\). Two line segments
+      \(\ell, \bar{\ell} \in \chi\) are parallel if \(\pi_{\mu} (\ell) =
+      \pi_{\mu} (\bar{\ell})\) for \(\mu = 1\) or \(\mu = 2\). Here
+      \(\pi_{\mu} : \mathbb{T}^2 \rightarrow [0, 1]\) is the projection on the
+      \(\mu\)-th coordinate. The distance between two parallel segments is
+      denoted by \(d (\ell, \bar{\ell})\).
+    </p>
+    <p>
+      We fix a compact connected Lie group \(G\) with Lie algebra
+      \(\mathfrak{g}\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Definition <class style="font-style: normal">1</class>. </strong><i>For \(\alpha \in
+      [0, 1]\), let \(\Omega_{\alpha}^1\) denote the closure of bounded
+      measurable \(\mathfrak{g}\)&ndash;valued one&ndash;forms under the
+      norm</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle | A |_{\alpha} := \sup_{| \ell | > 0} \frac{| A (\ell)
+        |}{| \ell |^{\alpha}} +
+\sup_{\ell \| \bar{\ell}} \frac{| A (\ell) - A
+        (\bar{\ell}) |}{d (\ell,
+\bar{\ell})^{\alpha / 2} | \ell |^{\alpha /
+        2}}\)
+      </center></i>
+    </p>
+    <p>
+      <i>where for \(A \in \Omega_{\alpha}^1\) we write </i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle A = \sum_{\mu = 1}^2 A_{\mu} \mathrm{d} x_{\mu},
+        \qquad A_{\mu} : \mathbb{T}^2
+\rightarrow \mathfrak{g}\)
+      </center></i>
+    </p>
+    <p>
+      <i>and</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle A (\ell) := \sum_{\mu = 1}^2 \int_0^1 A_{\mu} (x +
+        \lambda t e_{\mu}) \lambda
+\mathrm{d} t.\)
+      </center></i>
+    </p>
+    <p>
+      Note that \(| A (\ell) | \leqslant | A |_{\infty} | \ell |\). Moreover
+      \(A (\ell) - A (\bar{\ell})\) is associated to the holonomy of a loop
+      made by \(\ell, \bar{\ell}\) (and the orthogonal segments) and we expect
+      by Brownian behaviour of the holonomy that the fluctuations of \(| A
+      (\ell) - A (\bar{\ell}) |^2\) are of the size of the area of the loop,
+      which is \(d (\ell, \bar{\ell}) | \ell |\). As usual we can take any
+      \(\alpha < 1\) to account for the loss given by controlling the pathwise
+      behaviour. 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">2</class>. </strong>If \(\alpha \in (1 / 2,
+      1]\) then \(\ell_A : [0, 1] \rightarrow \mathfrak{g}\)
+    </p>
+    <center>
+      \(\displaystyle \ell_A (t) := \int_0^t A_{\mu} (x + s \lambda e_{\mu})
+      \lambda \mathrm{d} s\)
+    </center>
+    <p>
+      satisfies
+    </p>
+    <center>
+      \(\displaystyle | \ell_A |_{\alpha \text{-Höl}} \leqslant | \ell
+      |^{\alpha} | A |_{\alpha} .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      In particular \(\operatorname{hol} (A, \gamma)\) for \(\gamma\) an axis
+      path is well&ndash;defined for \(A \in \Omega^1_{\alpha}\) by Young
+      integration. Here \(\operatorname{hol} (A, \gamma)\) is the development
+      of \(\ell_A\) from the Lie algebra \(\mathfrak{g}\) to the Lie group
+      \(G\) by solving an ODE which makes sense here by Young integration. 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3</class>. </strong><i>Suppose \(G\) is
+      either abelian or simply connected. For all \(\alpha \in (1 / 2, 1)\)
+      there exists (and its definitely not unique) a
+      \(\Omega^1_{\alpha}\)&ndash;valued r.v. \(A\) such that for all axis
+      loops \(\gamma_1, \ldots, \gamma_n\), representation \(\varphi : G
+      \rightarrow \operatorname{Mat}_{m \times m}\),</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle (\operatorname{Tr} [\varphi \operatorname{hol} (A,
+        \gamma_1)], \ldots
+\operatorname{Tr} [\varphi \operatorname{hol} (A,
+        \gamma_n)])\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>have the same joint distribution as under the YM measure.</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">4</class>. </strong>(motivation)
+      \(\Omega^1_{\alpha}\) embeds into \(\mathcal{C}^{\alpha - 1} = B^{\alpha
+      - 1}_{\infty, \infty}\) (but the reverse in not true). One can use \(A
+      \in \Omega^1_{\alpha}\) as initial condition of an SPDE in order to
+      perform the stochastic quantisation of the YM measure.
+    </p>
+    <p>
+      The method of proof of the theorem is to take lattice approximations and
+      fix a gauge by choosing the Landau gauge. Some preliminary notations:
+    </p>
+    <ul>
+      <li>
+        <p>
+          The lattice will be \(\Lambda_N := \{ 0, 2^{- N}, \ldots, 1 - 2^{-
+          N} \}^2\).
+        </p>
+      </li>
+      <li>
+        <p>
+          \(B_N\) is the set of bonds of \(\Lambda_N\) which are of the form
+          \((x, x \pm 2^{- N} e_{\mu})\).
+        </p>
+      </li>
+      <li>
+        <p>
+          \(\Omega^{1, (N)}\) is the set of all \(A : B_N \rightarrow
+          \mathfrak{g}\) such that \(A (x, y) = - A (y, x)\).
+        </p>
+      </li>
+      <li>
+        <p>
+          \(\mathfrak{A}^{(N)}\) is the set of all \(U : B_N \rightarrow G\)
+          such that \(U (x, y) = U (y, x)^{- 1}\).
+        </p>
+      </li>
+      <li>
+        <p>
+          And finally \(\mathfrak{G}^{(N)}\) is the set of all \(g : \Lambda_N
+          \rightarrow G\).  This acts on \(\mathfrak{A}^{(N)}\) by
+        </p>
+        <center>
+          \(\displaystyle g.U (x, y) = U^g (x, y) := g (x) U (x, y) g (y)^{-
+          1} .\)
+        </center>
+      </li>
+    </ul>
+    <p>
+      \(\mathfrak{A}^{(N)}\) is the space where the discrete Yang&ndash;Mills
+      measure \(U^{(N)}\) lives. Our goal is to show that
+    </p>
+    <center>
+      \(\displaystyle (| U^{(N), g} |_{\alpha}^{(N)})_{N \geqslant 0}\)
+    </center>
+    <p>
+      is a tight sequence by appropriately choosing a sequence of gauge
+      transformation \(g = g_N (U^{(N)})\).
+    </p>
+    <p>
+      I'm going to look for a gauge invariant quantity on \(U^{(N)}\) which
+      can help to control the \(| \cdot |_{\alpha}\) norm after a gauge
+      transformation. 
+    </p>
+    <p>
+      Let \(r \subset \Lambda_N\) be a rectange of size \(2^{- N} \times k
+      2^{- N}\) or  \(k 2^{- N} \times 2^{- N}\), \(k \in \{ 1, \ldots, 2^N -
+      1 \}\). For \(U \in \mathfrak{A}^{(N)}\) we define \(U (\partial r) \in
+      G\) as ordered product along the bonds of \(\partial r\) (say we start
+      from the bottom left corner of \(r\) and we proceed clockwise).
+    </p>
+    <p>
+      Define a sequence of subrectangles \(r_1 \subset r_2 \subset \cdots
+      \subset r_k = r\) by increasing slowly the size and we define \(X = (X_i
+      \in \mathfrak{g})_{i = 0, \ldots, k}\) (antidevelopment of \(U\) along
+      \(r\)) by 
+    </p>
+    <center>
+      \(\displaystyle X_0 = 0, \qquad X_{i + 1} = X_i + \log (U (\partial
+      r_i)^{- 1} U (\partial
+r_{i + 1})),\)
+    </center>
+    <p>
+      where \(\log : G \rightarrow \mathfrak{g}\) is the left&ndash;inverse of
+      the exponential map \(\exp : \mathfrak{g} \rightarrow G\) satisfying
+      \(\exp (\log x) = x\). (we choose a, non unique, version of this map).
+      We assume that it is the canonical log in the neighborhood of the
+      identity. It is not globally continuous, but is a diffeo near the
+      identity.
+    </p>
+    <p>
+      For some \(q \geqslant 1\) we have
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle | X |_{q \text{-var}} \leqslant C |
+        r |^{\alpha / 2}, \)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle | \log (U (\partial r)) | \leqslant
+        C | r |^{\alpha / 2} \)</td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <p>
+      where \(| r | = k 2^{- 2 N}\) is the area of \(r\) and \(| X |_{q
+      \text{-var}}\) is the \(q\)&ndash;variation of \(X\), namely
+    </p>
+    <center>
+      \(\displaystyle | X |_{q \text{-var}} := \sup_{\{ t_i \}} \left[ \sum_i
+      | X_{t_{i + 1}} -
+X_{t_i} |^q \right]^{1 / q}\)
+    </center>
+    <p>
+      where the sup runs over all the partitions of \(\{ 1, \ldots, k \}\).
+    </p>
+    <p>
+      Fix \(N_1 \geqslant 1\) and \(U \in \mathfrak{A}^{(N_1)}\). Note that
+      \(U\) defines an element of \(\mathfrak{A}^{(N)}\) for all \(N \leqslant
+      N_1\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">5</class>. </strong><i><a id="th:landau"></a>(Landau)
+      Suppose there exists \(\alpha \in (2 / 3, 1)\), \(C \geqslant 0\), \(N_0
+      \leqslant N_1\) \(q \in [1, (1 - \alpha)^{- 1})\) such that&nbsp;(<a
+      href="#eq:star">1</a>) holds for all \(r \in \Lambda_N\), \(N \in \{ N_0, \ldots,
+      N_1 \}\) and</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle C 2^{- N_0 \alpha} + \max_{(x, y) \in B_{N_0}} | \log
+        U (x, y) | \leqslant a\)
+      </center></i>
+    </p>
+    <p>
+      <i>where \(a\) depends only on \(G\) (and \(a = \infty\) if \(G\) is
+      Abelian). Then for \(\bar{\alpha} < \alpha\), there exists \(K > 0\),
+      not depending on \(N_1\) (!) and \(g \in G^{(N_1)}\) so that, for \(A :=
+      \log U^g\) we have </i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \sup_{\ell \in \chi^{(N_1)}} \frac{| A (\ell) |}{|
+        \ell |^{\bar{\alpha}}} +
+\sup_{\ell \| \bar{\ell}} \frac{| A (\ell) -
+        A (\bar{\ell}) |}{| \ell
+|^{\bar{\alpha} / 2} d (\ell,
+        \bar{\ell})^{\bar{\alpha} / 2}} \leqslant K.\)
+      </center></i>
+    </p>
+    <p>
+      (here we use a Landau type gauge)
+    </p>
+    <p>
+      In order to control the large gauge fields we need to use a different
+      gauges (an axial type one): 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">6</class>. </strong><i>(Axial) If
+      eq.&nbsp;\((\hyperref[eq:star-2]{2})\) holds for all rectanges in
+      \(\mathcal{A}^{(M)}\) and \(G\) is simply connected, then there exists
+      \(K\) not depending on \(M\) and \(g \in G^{(M)}\) such that </i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \max_{(x, y) \in B_M} | \log U^g (x, y) | \leqslant K
+        2^{- M \alpha / 2} .\)
+      </center></i>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Idea of proof of Theorem&nbsp;<a href="#th:landau">5</a>.
+    </p>
+    <p>
+      <img src="srq-seminar-20181123-chevyrev-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129465em; margin-top: 0em; vertical-align: -3.99823691460055em; height: 7.9964738292011em"></img> 
+    </p>
+    <p>
+      Consider a box \(B\) in \(\mathbb{R}^3\) and \(A \in \Omega^1_{\infty}\)
+      on \(B\), \(A = \sum_{\mu} A_{\mu} \mathrm{d} x_{\mu}\) \(\sum_{\mu}
+      \partial_{\mu} A_{\mu} = 0\) (Landau condition) and on \(\partial_{\mu}
+      B\) it satisfies \(\sum_{\nu \neq \mu} \partial_{\nu} A_{\nu} = 0\) then
+      we can recover \(A\) from the curvature
+    </p>
+    <center>
+      \(\displaystyle F_{\mu, \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu}
+      A_{\mu} + [A_{\mu},
+A_{\nu}] .\)
+    </center>
+    <p>
+      Here \(\partial_{\mu} B\) is the component of the boundary orthogonal to
+      \(e_{\mu}\). Then inside \(B\) we have
+    </p>
+    <center>
+      \(\displaystyle \sum_{\nu} \partial_{\nu} F_{\mu, \nu} = \Delta A_{\mu}
+      + \sum_{\nu}
+[\partial_{\nu} A_{\mu}, A_{\nu}] .\)
+    </center>
+    <p>
+      The conditions on the faces implies \(\partial_{\mu} A_{\mu} = 0\) on
+      \(\partial_{\mu} B\). If I know \(A\) on the complement of \(\partial_1
+      B\) in \(\partial B\) then I can recover approximatively \(A_1\) inside
+      by letting 
+    </p>
+    <center>
+      \(\displaystyle A_{\mu} (x) =\mathbb{E} \left[ A_{\mu} (W_{\tau}) +
+      \int_0^{\tau} \sum_{\nu}
+F_{\nu \mu} (W_s) \mathrm{d} s \right]\)
+    </center>
+    <p>
+      where \(W\) is a Brownian motion starting in \(x\) and conditioned to
+      exit \(\partial B\) at \(\partial B\backslash \partial_{\mu} B\) at the
+      random time \(\tau\). So if I know \(A\) on the boundary then I can
+      control \(A\) inside. We can implement this in discrete and produce
+      refined version of the field in finer and fined grids.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

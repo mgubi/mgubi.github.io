@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 12th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20181012 Toninelli
+    </p>
+    <p>
+      <b>Interacting dimer models (lecture 3)</b>
+    </p>
+    <p>
+      Partition function
+    </p>
+    <center>
+      \(\displaystyle Z_{\Lambda, \lambda} = e^{W_{\Lambda, \lambda}
+      (\underline{0})},\)
+    </center>
+    <center>
+      \(\displaystyle e^{W_{\Lambda, \lambda} (A)} = \sum_M \left[ \prod_{e
+      \in M} t_e \right]
+e^{\lambda W (M) + \sum_e A_e \mathbb{I}_{e \in
+      M}},\)
+    </center>
+    <p>
+      where \(A = \{ A_e \}_{e \in \text{edges of $\Lambda$}}\) is a source
+      variable to generate the multi&ndash;edge correlations.
+    </p>
+    <p>
+      Grassmann representation
+    </p>
+    <center>
+      \(\displaystyle e^{W_{\Lambda, \lambda = 0} (A)} = \int \mathrm{D} \psi
+      e^{S_A (\psi)}, \qquad
+S_A (\psi) = - \sum_{\text{edges $e$}} E_e
+      e^{A_e}\)
+    </center>
+    <p>
+      with \(E_e = \psi^+_x \psi^-_y \mathcal{K} (e)\) for an edge \(e = (b_x,
+      w_y)\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">1</class>. </strong><i>For the
+      interaction</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle W (M) = \sum_{\text{even faces $f$}}
+        \left(
+\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
+  \hline
+  f\\
+
+        \hline
+\end{array}$}}}
+        +\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
+  f
+\end{array}$}}}
+        \right)\)
+      </center></i>
+    </p>
+    <p>
+      <i>we have</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle e^{W_{\Lambda, \lambda} (A)} = \int \mathrm{D} \psi
+        e^{S_A (\psi) + \alpha
+\sum_{\gamma} \prod_{e \in \gamma} E_e
+        e^{A_e}},\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>where \(\alpha = e^{\lambda} - 1\). </i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>For simplicity let us fix \(A = \underline{0}\).
+      
+    </p>
+    <center>
+      \(\displaystyle Z_{\Lambda, \lambda} = \sum_{\text{matchings $M$}} p
+      (M)
+\underbrace{\prod_{\text{even $f$}} \left( 1 +
+      \alpha
+\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
+ 
+      f
+\end{array}$}}} \right) \left( 1 +
+      \alpha
+\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
+  \hline
+  f\\
+ 
+      \hline
+\end{array}$}}} \right)}_{\prod_{\gamma = \{ e, e' \}} (1 +
+      \alpha
+\mathbb{I}_{e \in M} \mathbb{I}_{e' \in M})}\)
+    </center>
+    <p>
+      expanding the product we obtain
+    </p>
+    <center>
+      \(\displaystyle = \sum_{\text{matchings $M$}} p (M) \sum_{n \geqslant 0}
+      \sum_{\{ \gamma_1,
+\ldots, \gamma_n \}} \xi (\gamma_1) \cdots \xi
+      (\gamma_n)\)
+    </center>
+    <p>
+      where \(\xi (\gamma) = \alpha \mathbb{I}_{e \in M} \mathbb{I}_{e' \in
+      M}\) for \(\gamma = \{ e, e' \}\). The various \(\gamma\)s do not shar
+      edges even if they can share vertices (this do not cause problems). All
+      these terms are of the type
+    </p>
+    <center>
+      \(\displaystyle \sum_M p (M) \mathbb{I}_{e_1 \in M} \cdots
+      \mathbb{I}_{e_{2 n} \in M} .\)
+    </center>
+    <p>
+      These expressions can be obtained by the generating function as
+    </p>
+    <center>
+      \(\displaystyle =  \partial_{A_1} \ldots \partial_{A_n} e^{W_{\Lambda,
+      \lambda = 0} (A)} |_{A
+= 0},\)
+    </center>
+    <p>
+      and since we have already an expression for this we get
+    </p>
+    <center>
+      \(\displaystyle = \int \mathrm{D} \psi e^{S_{A = 0} (\psi)} E_{e_1}
+      \cdots E_{e_{2 n}},\)
+    </center>
+    <p style="margin-bottom: 1em">
+      now we have just to resum to obtain the formula in the statement.<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Quasi&ndash;particle fields</b>
+    </p>
+    <p>
+      A naive expansion of the partition functions in powers of \(\alpha\) is
+      divergent, so the point is to have a clever way to resum the naive
+      expansion in a suitable way. 
+    </p>
+    <p>
+      We are going to make a change of variables for the Grassmann fields
+      introducing <i>quasi&ndash;particle fields</i>
+    </p>
+    <center>
+      \(\displaystyle g (x, y) =\mathcal{E}_0 (\psi^-_x \psi^+_y) = \int
+      \frac{\mathrm{d} p}{(2
+\pi)^2}  \frac{e^{i p \cdot (x - y)}}{\mu (p)}
+      (\chi^+ (p) + \chi^- (p)) =:
+g_+ (x, y) + (- 1)^{x - y} g_- (x, y)\)
+    </center>
+    <p>
+      where \(\chi^{\pm}\) are functions concentrated near the singularities,
+      \(\chi^+\) around \((0, 0)\) and \(\chi^-\) is around \((\pi, \pi)\) and
+      they form a partition of unity: \(\chi^+ (p) + \chi^- (p) = 1\). Then
+    </p>
+    <center>
+      \(\displaystyle g_{\omega} (x, y) \approx \frac{1}{\phi_{\omega} (x, y)}
+      \qquad \text{for $| x
+- y | \rightarrow \infty$}\)
+    </center>
+    <p>
+      where \(\phi_+ (x) = ((- i - 1) x_1 + (i + 1) x_2)\) and \(\phi_- (x) =
+      - \phi_+^{\ast} (x)\). 
+    </p>
+    <p>
+      In terms of fields this splitting can be interpreted as \(\psi^{\pm}_{x,
+      \pm} = \psi^{\pm}_{x, +} + (- 1)^{(x_1 + x_2)} \psi^{\pm}_{x,
+-}\) and
+      we use the addition principle for Grassmann variables. If
+      \(\mathcal{E}_g\) is an expectation for a field \(\psi\) which satisfies
+      the Wick rule for propagator \(g\) and we split \(g = g_1 + g_2\) then
+      we can split \(\psi = \psi_1 + \psi_2\) such that the first has
+      propagator \(g_1\), and \(\psi_2\) with propagator \(g_2\) and the mixed
+      propagator is \(0\). 
+    </p>
+    <center>
+      \(\displaystyle \mathcal{E}_g (f (\psi))
+      =\mathcal{E}_{\text{\scriptsize{$\left(
+\begin{array}{ll}
+  g_1 & 0\\
+ 
+      0 & g_2
+\end{array} \right)$}}} (f (\psi_1 + \psi_2)) .\)
+    </center>
+    <p>
+      This is analogous to the same property for Gaussians. You can verify the
+      identity with \(f (\psi)\) being a product of two. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Suppose we want to compute the partition function
+    </p>
+    <center>
+      \(\displaystyle \log Z_{\Lambda, \lambda} = \log \int \mathrm{D} \psi
+      e^{S (\psi) + \alpha V
+(\psi)},\)
+    </center>
+    <p>
+      with \(V (\psi) = \sum_{\gamma = (e, e')} E_e E_{e'}\) and \(\psi = \{
+      \psi^+_x, \psi^-_x \}_{x \in \Lambda} = \{ \psi^+_{x,
+      \omega},
+\psi^-_{x, \omega} \}_{x \in \Lambda, \omega = \pm}\) and
+      \(\alpha = e^{\lambda - 1}\). By Taylor expansion (without worrying
+      about convergence) one gets:
+    </p>
+    <center>
+      \(\displaystyle \log \frac{Z_{\Lambda, \lambda}}{Z_{\Lambda, 0}} =
+      \sum_{n \geqslant 1}
+\frac{1}{n!} \alpha^n \mathcal{E}_0 (\underbrace{V
+      ; V ; \cdots ;
+V}_{\text{$n$ times}}),\)
+    </center>
+    <p>
+      where 
+    </p>
+    <center>
+      \(\displaystyle \mathcal{E}_0 (\underbrace{V ; V ; \cdots ;
+      V}_{\text{$n$ times}}) = 
+\partial_{\lambda}^n \log \mathcal{E}_0
+      (e^{\lambda V}) |_{\lambda = 0} .\)
+    </center>
+    <p>
+      <i>Fact</i>: \(\mathcal{E}_0 (V ; \cdots ; V)\) is computed by
+      performing contractions in Wick's rule for which all the blocks relating
+      to different \(V\)'s form a connected set of blocks. (i.e. one consider
+      the graph where edges are the Wick contractions and vertices are the set
+      of fields belonging to the same \(V\)).
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">2</class>. </strong>As long as the volume
+      is finite all these expressions are well&ndash;defined and the expansion
+      is convergent. Indeed at some point fields start repeating and they give
+      zero. So the series is just a finite polynomial. And for \(| \alpha |
+      \ll 1\) one can take the log and everything is ok.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3</class>. </strong>Single terms of this
+      series can give problems as \(\Lambda \rightarrow \infty\). Then there
+      is the problem of the convergence of the series. 
+    </p>
+    <p>
+      For graphs of the form
+    </p>
+    <center>
+      \(\displaystyle
+      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741637150728cm,height=8.92450478814115cm]{image-1.pdf}}}
+=
+      | \Lambda | \int \frac{\mathrm{d} p}{(2 \pi)^2} \left[ \frac{1}{\mu
+      (p)}
+\right]^n f (p)^n\)
+    </center>
+    <p>
+      and \(f (p) \approx 1\) so there are singularities in the denominator as
+      \(n\) is not small. Here \(f (p)\) is the contribution from the subgraph
+    </p>
+    <center>
+      \(\displaystyle f (p)
+      =
+\text{\raisebox{-0.5\height}{\includegraphics[width=14.8741637150728cm,height=8.92450478814115cm]{image-1.pdf}}}\)
+    </center>
+    <p>
+      The idea is to break the propagator in dyadic pieces to localize the
+      scale of the fluctuations and analyse better the behaviour near the
+      singularity:
+    </p>
+    <center>
+      \(\displaystyle g_+ (x) = \int \frac{\mathrm{d} p}{(2 \pi)^2} \frac{e^{i
+      p \cdot x}}{\mu (p)}
+\chi_+ (p)\)
+    </center>
+    <p>
+      Let \(\chi_h (p) = \chi (2^{- h} p)\) and write
+    </p>
+    <center>
+      \(\displaystyle \chi_+ (p) = \underbrace{\chi_+ (p) - \chi_{- 1}
+      (p)}_{f_0 (p)} +
+\underbrace{\chi_{- 1} (p) - \chi_{- 2} (p)}_{f_1 (p)}
+      + \underbrace{\chi_{-
+2} (p) - \chi_{- 3} (p)}_{f_2 (p)} + \cdots +
+      \chi_{h_L} (p)\)
+    </center>
+    <p>
+      where \(f_h\) is concentrated on disks where \(| p | \approx 2^h\) and
+      \(h \leqslant 0\). \(h_L = - \log_2 (L)\). We have now
+    </p>
+    <center>
+      \(\displaystyle g_+ (x) = \sum_{h_L + 1}^0 g_+^{(h)} (x) +
+      g_+^{(\leqslant h_L)} (x)\)
+    </center>
+    <p>
+      and for fixed \(h\) each \(g_+^{(h)} (x)\) decay very fast since they
+      are Fourier transforms of nice functions. 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">4</class>. </strong><i>For \(h
+      \leqslant 0\), </i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle | g_+^{(h)} (x) | \leqslant C 2^h e^{- \sqrt{2^h | x
+        |}} .\)
+      </center></i>
+    </p>
+    <p>
+      <b>Multi&ndash;scale expansion</b>
+    </p>
+    <p>
+      According to this decomposition of the propagator we have a multiscale
+      expansion of the fermionic fields as:
+    </p>
+    <center>
+      \(\displaystyle \psi^{\pm}_{x, \omega} = \sum_{h = h_L}^0 \psi^{\pm,
+      (h)}_{x, \omega} .\)
+    </center>
+    <center>
+      \(\displaystyle Z =\mathcal{E} (e^{\alpha V (\psi)}) =\mathcal{E}
+      (e^{\alpha V (\psi^{(0)} +
+\psi^{(- 1)} + \psi^{(- 2)} + \cdots)}) 
+      =\mathcal{E}_{h_L} \cdots
+\mathcal{E}_0 \left( e^{\alpha V (\psi^{(0)} +
+      \psi^{(- 1)} + \psi^{(- 2)} +
+\cdots + \psi^{(h_L)})} \right)\)
+    </center>
+    <p>
+      so we start by integrating out the scale \(\psi^{(0)}\) and going
+      forward. If we let \(V^{(0)} = V\) and recursively \(V^{(- 1)}\) as the
+      result of the integration
+    </p>
+    <center>
+      \(\displaystyle e^{\alpha V^{(- 1)} (\psi^{(- 1)} + \psi^{(- 2)} +
+      \cdots + \psi^{(h_L)})} :=
+\mathcal{E}_0 \left( e^{\alpha V (\psi^{(0)}
+      + \psi^{(- 1)} + \psi^{(- 2)} +
+\cdots + \psi^{(h_L)})} \right)\)
+    </center>
+    <p>
+      obtaining the formula
+    </p>
+    <center>
+      \(\displaystyle V^{(- 1)} (\psi^{(\leqslant - 1)}) = \sum_n
+      \frac{\alpha^n}{n!} \mathcal{E}_0
+(V^{(0)} (\psi^{(0)} +
+      \psi^{(\leqslant - 1)}) ; \cdots ; V^{(0)} (\psi^{(0)}
++
+      \psi^{(\leqslant - 1)})) .\)
+    </center>
+    <p>
+      Going on to expand and introducing proper notations to label the results
+      of the integrations as polynomials in the remaning variables one
+      obtains:
+    </p>
+    <center>
+      \(\displaystyle V^{(- 1)} (\psi^{(\leqslant - 1)}) = \sum_{n \geqslant
+      1} \frac{\alpha^n}{n!}
+\sum_{\tau \in \mathcal{T}^{(- 1)}_n}
+      \sum_{P_{v_0} = \varnothing}
+\mathcal{E}_0 (\psi^{(0)} (P_{v_1}) ;
+      \cdots ; \psi^{(0)} (P_{v_n}))\)
+    </center>
+    <center>
+      \(\displaystyle + \sum_{n \geqslant 1} \frac{\alpha^n}{n!} \sum_{\tau
+      \in \mathcal{T}^{(-
+1)}_n} \sum_{P_{v_0} \neq \varnothing} \mathcal{E}_0
+      (\psi^{(0)} (P_{v_1}
+\backslash Q_{v_1}) ; \cdots ; \psi^{(0)} (P_{v_n}
+      \backslash Q_{v_n}))
+[\psi^{(\leqslant - 1)} (Q_{v_1}) \cdots
+      \psi^{(\leqslant - 1)} (Q_{v_n})]\)
+    </center>
+    <p>
+      \(P_{v_k}\) is the collection of indexes of the fields appearing in the
+      \(k\)-the leaf of the vertex  \(v\)<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+      style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>
+    </p>
+    <p>
+      [but this part I didn't managed to follow<span style="margin-left: 0.16665em"></span>.<span
+      style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

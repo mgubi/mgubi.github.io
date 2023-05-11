@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; December 7th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      SRQ Seminar &ndash; Kotecky 20181207
+    </p>
+    <p>
+      <b>Astract framework for nonperturbative renormalization</b>
+    </p>
+    <p>
+      Kotecky, Preiss (1979) Ceck Jour of Phys. B
+    </p>
+    <p>
+      (cited by Vershik, Russian Math Surevys 72:2)
+    </p>
+    <p>
+      All is based on the notion of projective (inverse) limits. 
+    </p>
+    <p>
+      <b>Topological spaces</b>
+    </p>
+    <p>
+      An example, for topologicaly spaces. \(X\) is a top space, \(\phi\) a
+      morphism (a continuous map). Directed poset \(I\) (i.e. partially
+      ordered set). 
+    </p>
+    <p>
+      A projective system: a collection of spaces \((X_{\alpha})_{\alpha \in
+      I}\) with morphisms whenever \(\alpha < \beta < \gamma\) which do: 
+    </p>
+    <center>
+      \(\displaystyle X_{\alpha} \xleftarrow{\Phi_{\alpha, \beta}} X_{\beta}
+      \xleftarrow{\Phi_{\beta
+\gamma}} X_{\gamma}\)
+    </center>
+    <p>
+      and \(\Phi_{\alpha, \beta} \circ \Phi_{\beta, \gamma} = \Phi_{\alpha,
+      \gamma}\). 
+    </p>
+    <p>
+      A projective limit is a topological space \(X\) with projections
+      \((\pi_{\alpha})_{\alpha \in I}\) such that 
+    </p>
+    <center>
+      \(\displaystyle
+      \raisebox{-0.458829513494106\height}{\includegraphics[width=2.52308802308802cm,height=2.19218155581792cm]{image-1.pdf}}\)
+    </center>
+    <p>
+      and whenever there you have another pair \((Y,
+      (\vartheta_{\alpha})_{\alpha})\) satisfying the same property one has a
+      unique map \(\phi : Y \rightarrow X\) such that \(\vartheta_{\beta} =
+      \phi \circ \pi_{\beta}\). 
+    </p>
+    <p>
+      \(X\) is made of sequences \(x = (x_{\alpha})_{\alpha}\) such that when
+      \(\alpha \leqslant \beta\) one has \(x_{\alpha} = \phi_{\alpha, \beta}
+      (x_{\beta})\) and is unique up to isomorphisms. 
+    </p>
+    <p>
+      <b>Measurable spaces</b>
+    </p>
+    <p>
+      To make sense of projective limit for measurable spaces is an old story.
+      (Frolik, Rao, in the '70)
+    </p>
+    <p>
+      Consider a measurable space \((X, \mathcal{F})\) with points in
+      \(\mathcal{F}\), i.e. for all \(x \in X\) we have \(\{ x \} \in
+      \mathcal{F}\). Introduce the set of \(\sigma\)&ndash;additive, finite,
+      measures \(M (X)\) on \((X, \mathcal{F})\) and \(\mathcal{B} (X)\) the
+      set of measurable bounded functions. 
+    </p>
+    <p>
+      Morphisms \(\phi : M (X) \rightarrow M (Y)\) with the properties: (i)
+      linear, non-negative, contractive (\(\phi (\mu) (Y) \leqslant \mu (X)\))
+      (ii) continuous wrt the weak topologies. 
+    </p>
+    <p>
+      Then the projective limit exists (by the results cited above)
+    </p>
+    <center>
+      \(\displaystyle (X, \pi_{\alpha}) = \lim_{\leftarrow} (X_{\alpha},
+      \phi_{\alpha, \beta})\)
+    </center>
+    <p>
+      and \(\pi_{\alpha} (\mu) \in M (X_{\alpha})\) for \(\mu \in M (X)\).  
+    </p>
+    <p>
+      Take a non-empty \(Y\) and let \(\vartheta_{\alpha} (\rho) = \rho (Y)
+      \mu_{\alpha}\) so we have the commutative diagram above and there exists
+      \(\phi : \rho \mapsto \mu\). 
+    </p>
+    <p>
+      <b>Gibbs measures</b>
+    </p>
+    <p>
+      \(S\) spin space, \(\Omega = \Pi_{x \in \mathbb{Z}^d} S\),
+      \(\Omega_{\Lambda} = \Pi_{x \in \Lambda} S\), consider the Gibbs measure
+    </p>
+    <center>
+      \(\displaystyle \nu_{\lambda}^W (u) = \frac{e^{- \beta H_{\Lambda}
+      (u|w)}}{\sum_{v \in
+\Omega_{\Lambda}} e^{- \beta H_{\Lambda} (v|w)}} .\)
+    </center>
+    <p>
+      To get all the Gibbs mesures we consider a sequence of volumes and
+      measures on the boundary conditions \((\Lambda_n, \mu_n \in M
+      (\Omega_{\Lambda^c}))\) and consider
+    </p>
+    <center>
+      \(\displaystyle \mu = \lim_{n \rightarrow \infty}
+      \int_{\Omega_{\Lambda^c_n}}
+\underbrace{\left(
+      \nu_{\Lambda_n}^{w_{\Lambda_n^c}}
+      \otimes_{\Lambda_n}
+\delta_{w_{\Lambda_n^c}} \right)}_{Q_{\Lambda_n} (w,
+      \mathrm{d} u)} \mathrm{d}
+\mu_n (w_{\Lambda_n^c})\)
+    </center>
+    <p>
+      The kernels \(Q_{\Lambda_n}\) are the specification. They are
+      compatible: \(Q_{\Lambda} = Q_{\Lambda} Q_V\) whenever \(V \subset
+      \Lambda\), i.e.
+    </p>
+    <center>
+      \(\displaystyle Q_{\Lambda} (w, f) = Q_{\Lambda} (w, Q_V (\cdot, f)) .\)
+    </center>
+    <p>
+      DLR says that a Gibbs state satisfies \(\mu = \mu Q_{\Lambda}\) for any
+      \(\Lambda\).
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      \(\displaystyle \Omega_{V^c} \xleftarrow[P_{V, \Lambda}]{}
+      \Omega_{\Lambda^c}\)
+    </center>
+    <p>
+      Take the measure \(\mu_{\Lambda}\) and construct
+    </p>
+    <center>
+      \(\displaystyle \int_{\Omega_{\Lambda^c}} \left(
+      \nu_{\Lambda}^{w_{\Lambda_n^c}}
+\otimes_{\Lambda} \delta_{w_{\Lambda^c}}
+      \right) \mathrm{d} \mu_n
+(w_{\Lambda^c})\)
+    </center>
+    <p>
+      and then forget the part inside of \(V\). So we take the marginal on
+      \(V^c\) getting a mesure
+    </p>
+    <center>
+      \(\displaystyle P_{V, \Lambda} \mu_{\Lambda} = \int_{\Omega_V}
+      \int_{\Omega_{\Lambda^c}}
+\left( \nu_{\Lambda}^{w_{\Lambda_n^c}}
+      \otimes_{\Lambda}
+\delta_{w_{\Lambda^c}} \right) \mathrm{d} \mu_n
+      (w_{\Lambda^c}) \in M
+(\Omega_{V^c}) .\)
+    </center>
+    <p>
+      The set of Gibbs states is the projective limit of this system. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>QFT</b>
+    </p>
+    <p>
+      Consider now a finite volume approximation of \(\phi^4_d\) on a lattice
+      with spacing \(\delta\) and size \(\delta L\). 
+    </p>
+    <p>
+      The aim is to construct a measure in \(Y =\mathcal{S}' (\mathbb{R}^d)\).
+      Denote \(\alpha = (\delta, L)\) and consider the spaces \(Y_{\alpha}\)
+      for the finite dimensional approximations. We have morphisms
+    </p>
+    <center>
+      \(\displaystyle T_{\alpha} : Y_{\alpha} \rightarrow Y\)
+    </center>
+    <p>
+      which allow to think all the approximation living in the same space. 
+    </p>
+    <center>
+      \(\displaystyle \nu_{\alpha}^{(Z, m, \lambda)} = \frac{1}{Z} e^{- \left[
+      \sum_{x \sim y} Z
+\delta^{d - 2} (\varphi_x - \varphi_y)^2 + m \sum_x
+      \delta^d \varphi_x^2 +
+\sum_x \delta^d \varphi_x^4 \right]} \prod_x
+      \mathrm{d} \varphi_x .\)
+    </center>
+    <p>
+      The usual task is to take the limit of the sequence
+      \(\nu_{\alpha}^{(Z_{\alpha}, m_{\alpha}, \lambda_{\alpha})}\) for any
+      possible sequences of parameters \((Z_{\alpha}, m_{\alpha},
+      \lambda_{\alpha})\). I do not put restrictions on these parameters. 
+    </p>
+    <p>
+      I say that the theory is renormalizable if the set of possible limits is
+      a finite dimensional manifold.
+    </p>
+    <p>
+      We consider as spaces
+    </p>
+    <center>
+      \(\displaystyle Y_{\alpha} = \{ (Z, m, \lambda) \in \mathbb{R}^3 \}\)
+    </center>
+    <p>
+      and as morphisms (with \(\mu \in M (Y_{\alpha})\)) into probabilities in
+      \(Y =\mathcal{S}' (\mathbb{R}^d)\) with
+    </p>
+    <center>
+      \(\displaystyle T_{\alpha} \mu = \int \nu_{\alpha}^{(Z, m, \lambda)}
+      \mathrm{d} \mu (Z, m,
+\lambda) .\)
+    </center>
+    <p>
+      \(T_{\alpha}\) is the unique morphism extending \((Z, m, \lambda)
+      \mapsto \nu_{\alpha}^{(Z, m, \lambda)}\) on \(Y =\mathcal{S}'
+      (\mathbb{R}^d)\).
+    </p>
+    <p>
+      In the Gibbs situtation, the mappings \(T_{\alpha}\) are given by the
+      integrals \(\int (\nu \otimes \delta) \mathrm{d} \mu\) as measures on
+      \(\Omega\) and (i) \(\phi_{\alpha, \beta} = P_{V, \Lambda}\) and the
+      projective limit \((X, \pi_{\Lambda})\), (ii) \(T_{\alpha}
+      (\phi_{\alpha} (\mu))\) converges once \(\mu\) is a prob on \(X\) (by
+      the DLR condition it actually do not depends on \(\alpha\)) and we can
+      introduce the mapping \(T : M (X) \ni \mu \mapsto (T_{\alpha}
+      (\phi_{\alpha} (\mu)))_{\alpha}\), (iii) the set of Gibbs states is
+      simply \(\{ T \mu : \mu \in M (X) \}\).
+    </p>
+    <p>
+      Let's go back to field theory. Recall that \(Y_{\alpha} = \{ (Z, m,
+      \lambda) \} \subseteq \mathbb{R}^3\) and \(\phi_{\alpha, \beta}\) is a
+      mapping between \(M (Y_{\beta})\) into \(M (Y_{\alpha})\). We need to
+      consider only sequences \((\alpha_n)_n\) where \(\alpha_{n + 1}\) is a
+      refinement of \(\alpha_n\). 
+    </p>
+    <center>
+      \(\displaystyle \phi_{\alpha_n \alpha_{n + 1}} : \delta_y \in M
+      (Y_{\alpha_{n + 1}})
+\rightarrow \mu \in (Y_{\alpha_n})\)
+    </center>
+    <p>
+      where the distance of \(\delta_y\) and \(\mu\) is minimal (as measures
+      on \(\mathcal{S}' (\mathbb{R}^d)\)), i.e. \(T_{\alpha_n} \mu\) and
+      \(T_{\alpha_{n + 1}} (\delta_y)\) have minimal distance.
+    </p>
+    <p>
+      It seems then that (i) and (ii) should be doable. And (iii) is totally
+      unclear how to do.
+    </p>
+  </body>
+</html>

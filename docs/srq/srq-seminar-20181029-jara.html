@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 29th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      SRQ Seminar notes 20181029 Jara
+    </p>
+    <p>
+      <b>Entropy approach to fluctuations of interacting particle systems</b>
+    </p>
+    <p>
+      Reader can refer to the paper &ldquo;Non-Equilibrium fluctuations of
+      interacting particle systems&rdquo; (written jointly with Octavio
+      Menezes, on the arXiv).
+    </p>
+    <p>
+      Continuous time, finite state (state space \(\Omega\)), Markov chain
+      \((x_t)_{t \geqslant 0}\).
+    </p>
+    <center>
+      \(\displaystyle \textit{Generator:} \quad \quad L f (x) = \sum_y r (x,
+      y) (f (y) - f (x)),
+\qquad x \in \Omega .\)
+    </center>
+    <p>
+      \(\bar{\nu}\) a (probability) reference measure \(\bar{\nu} (x) > 0\)
+      for all \(x \in \Omega\). \((\mu_t)_{t \geqslant 0}\) trajectory of
+      (probability) reference measures,
+    </p>
+    <center>
+      \(\displaystyle \psi_t (x) := \frac{\mu_t (x)}{\bar{\nu} (x)}, \quad
+      \text{density of $\mu_t$
+wrt. $\bar{\nu}$} .\)
+    </center>
+    <center>
+      \(\displaystyle f_t (x) := \frac{\mathbb{P} (x_t = x)}{\mu_t (x)}, \quad
+      \text{density of the
+law of $x_t$ wrt. $\bar{\nu}$} .\)
+    </center>
+    <center>
+      \(\displaystyle \textit{Carré du champ:} \quad \quad \Gamma f (x) :=
+      \sum_y r (x, y) (f (y) -
+f (x))^2 .\)
+    </center>
+    <p>
+      \(L_t^{\ast}\) adjoint of \(L\) wrt. \(\mu_t\).
+    </p>
+    <center>
+      \(\displaystyle H (t) := \int f_t \log f_t \mathrm{d} \mu_t, \qquad
+      \textit{relative entropy}
+.\)
+    </center>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em">
+      <font color="black"><div class="ornament" style="background-color:;border-radius:15px;display:block;">
+        <p style="margin-top: 1em">
+          <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(Yau's
+          inequality)</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle H' (t) \leqslant - \int \Gamma \sqrt{f_t}
+            \mathrm{d} \mu_t + \int (L^{\ast}_t
+\mathbb{1}- \partial_t \log
+            \psi_t) f_t \mathrm{d} \mu_t .\)
+          </center></i>
+        </p>
+      </div></font>
+    </div>
+    <p>
+      
+    </p>
+    <p>
+      Note that \(L^{\ast}_t \mathbb{1}- \partial_t \log \psi_t = 0\) iff the
+      sequence \(\mu_t\) solves the Fokker&ndash;Planck equation, it measures
+      how far our reference measures \((\mu_t)_t\) are to be the actual law of
+      our Markov process. 
+    </p>
+    <p>
+      This is a very general inequality. For diffusions this inequality is an
+      identity.
+    </p>
+    <p>
+      Yau's idea for hydrodynamic limit is to guess a good \((\mu_t)_t\) for
+      which \(L^{\ast}_t \mathbb{1}- \partial_t \log \psi_t\) is
+      &ldquo;small&rdquo;.
+    </p>
+    <p>
+      A new inequality. Take a function \(V : [0, T] \times \Omega \rightarrow
+      \mathbb{R}\) and consider
+    </p>
+    <center>
+      \(\displaystyle \int_0^T V_t (x_t) \mathrm{d} t\)
+    </center>
+    <p>
+      which is an additive functional of the Markov chain. We call it also an
+      &ldquo;observable&rdquo;. We are interested in the behaviour of the
+      integral for large \(T\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i></i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \log \mathbb{E}^{\mu_0} \left[ \exp \left( \int_0^T
+        V_t (x_t) \mathrm{d} t
+\right) \right] \leqslant \int_0^T \sup_f
+        \left[ - \int \Gamma \sqrt{f}
+\mathrm{d} \mu_t + \int \left( V_t +
+        \frac{1}{2} (L^{\ast}_t \mathbb{1}-
+\partial_t \log \psi_t) \right) f
+        \mathrm{d} \mu_t \right] \mathrm{d} t,\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>where the supremum is over any density \(f\) for \(\mu_t\). </i>
+    </p>
+    <p>
+      Interesting fact is that the structure of the r.h.s. is similar to the
+      structure of Yau's inequality. 
+    </p>
+    <p>
+      If you know how to bound integrals of arbitrary functions like \(\int
+      (L^{\ast}_t \mathbb{1}- \partial_t \log \psi_t) f_t \mathrm{d} \mu_t\)
+      in terms of \(\int \Gamma \sqrt{f} \mathrm{d} \mu_t\) then this can be
+      applied also to the exponential moments for observables.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Two examples to which to apply these inequalities:
+    </p>
+    <ol>
+      <li>
+        <p>
+          Exclusion process with boundary conditions. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Mean&ndash;field spin systems, in particular
+          (Ben-Hamou&ndash;Peres): we have particles on \(\mathbb{Z}\) at rate
+          \(1\) we choose a site \(x\) and a site \(y\) and we change the
+          content \(\sigma (x)\) to \(\sigma (x) + \sigma (y)\) modulo \(2\).
+        </p>
+      </li>
+    </ol>
+    <p>
+      <b>Mean-field spin system</b>
+    </p>
+    <p>
+      (work in progress with F. Hern&aacute;ndez (Bogot&aacute;))
+    </p>
+    <center>
+      \(\displaystyle \Omega_N = \{ 0, 1 \}^N\)
+    </center>
+    <center>
+      \(\displaystyle \eta \in \Omega_N, \quad x \in \Lambda_n = \{ 1, \ldots,
+      N \} ; \quad \eta^x =
+\eta + \delta_x  \text{(mod $2$)}\)
+    </center>
+    <p>
+      Function \(F : \Omega \rightarrow [0, \infty]\) smooth, generator:
+    </p>
+    <center>
+      \(\displaystyle L f (\eta) = \sum_x F \left( \frac{1}{N} \sum_{y \neq x}
+      \eta_y \right) (f
+(\eta^x) - f (\eta)) .\)
+    </center>
+    <p>
+      The measure \(\bar{\nu} = \otimes_x \operatorname{Bernoulli} (1 / 2)\)
+      is invariant for this system (by detailed balance). A natural question
+      is to describe the convergence of this model to equilibrium.
+    </p>
+    <p>
+      Ben-Hamou&ndash;Peres consider the case \(F (u) = u\). We focus now on
+      this example:
+    </p>
+    <center>
+      \(\displaystyle L f (\eta) = \frac{1}{N} \sum_{x \neq y} \eta_y (f
+      (\eta^x) - f (\eta)) .\)
+    </center>
+    <p>
+      The Bernoulli measure is not ergodic, there is another ergodic component
+      where every site is empty. So we consider the state space where we have
+      at least one particle. There the dynamics is well defined. 
+    </p>
+    <p>
+      Let \((\eta^N (t))_{t \geqslant 0}\) chain generated by \(L\), we take
+      \(\eta^N (0)\) with at least one particle. Define the distance to
+      equilibrium:
+    </p>
+    <center>
+      \(\displaystyle d_N (t) = \| \operatorname{Law} (\eta^N (t)) -
+      \bar{\nu}
+\|_{\operatorname{TV}} .\)
+    </center>
+    <p>
+      Ben-Hamou&ndash;Peres prove a cutoff phenomenon.
+    </p>
+    <p>
+      <img src="srq-seminar-20181029-jara-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129518em; margin-top: 0em; vertical-align: -7.19704683195592em; height: 14.3940936639118em"></img> 
+    </p>
+    <p>
+      We will prove that there exists a function \(G\) looking like the green
+      curve such that:
+    </p>
+    <center>
+      \(\displaystyle \lim_{N \rightarrow \infty} d_N
+      (t^N_{\operatorname{mix}} + b) = G (b) .\)
+    </center>
+    <p>
+      Ideas:
+    </p>
+    <center>
+      \(\displaystyle \pi^N_t = \frac{1}{N} \sum_x \eta^N_x (t)\)
+    </center>
+    <p>
+      a) If \(\pi^N_0 \rightarrow x_0 > 0\) then
+    </p>
+    <center>
+      \(\displaystyle \pi^N_t \rightarrow \varphi_t\)
+    </center>
+    <p>
+      where
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \dot{\varphi}_t = \varphi_t
+      (1 - 2 \varphi_t) =: - V' (\varphi_t)\\
+  \varphi_0 = x_0
+\end{array}
+      \right.\)
+    </center>
+    <p>
+      This is the law of large numbers. 
+    </p>
+    <p>
+      b) If in addition
+    </p>
+    <center>
+      \(\displaystyle \sqrt{N} (\pi^N_0 - x_0) \rightarrow y_0\)
+    </center>
+    <p>
+      then we have a CLT:
+    </p>
+    <center>
+      \(\displaystyle \sqrt{N} (\pi^N_t - \varphi_t) \rightarrow \xi_t\)
+    </center>
+    <p>
+      where
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \mathrm{d} \xi_t = - V''
+      (\varphi_t) \xi_t \mathrm{d} t + \sqrt{\varphi_t}
+  \mathrm{d} B_t\\
+ 
+      \xi_0 = y_0
+\end{array} \right.\)
+    </center>
+    <p>
+      These two results tell us that the number of particles is well
+      approximated by the Gaussian with mean \(N \varphi_t\) and variance \(N
+      \xi_t^2\).
+    </p>
+    <center>
+      \(\displaystyle \sigma_t^2 := \mathbb{E} [\xi_t^2] \xrightarrow[t
+      \rightarrow \infty]{}
+\frac{1}{4} .\)
+    </center>
+    <p>
+      In general if \(F (0) \neq 0\) then 
+    </p>
+    <center>
+      \(\displaystyle t^N_{\operatorname{mix}} = \frac{1}{2 F (1 / 2)} \log
+      N.\)
+    </center>
+    <p>
+      If \(F (0) = 0\) and \(F' (0) \neq 0\) then
+    </p>
+    <center>
+      \(\displaystyle t^N_{\operatorname{mix}} = \left( \frac{1}{F' (0)} +
+      \frac{1}{2 F (1 / 2)}
+\right) \log N.\)
+    </center>
+    <p>
+      Let us take
+    </p>
+    <center>
+      \(\displaystyle \mu_t := \otimes_x \operatorname{Bern} (\varphi_t) .\)
+    </center>
+    <p>
+      If we compute 
+    </p>
+    <center>
+      \(\displaystyle L^{\ast}_t \mathbb{1}- \partial_t \log \psi_t = \frac{(1
+      - 2 \varphi_t)}{N}
+\sum_{x \neq y} \omega_x \omega_y + \text{l.o.t.}\)
+    </center>
+    <center>
+      \(\displaystyle \omega_x = \frac{\eta_x - \varphi_t}{\varphi_t (1 -
+      \varphi_t)}\)
+    </center>
+    <p>
+      l.o.t.\(=\) lower order terms, lots of terms. At this point Yau's
+      inequality already tells us something meaningful. Note that by CLT
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{N} \sum_{x \neq y} \omega_x \omega_y \approx
+      \frac{(\pi_t^N -
+\varphi_t)^2}{N}\)
+    </center>
+    <p>
+      should be approx. Gaussian, actually is the square of a subGaussian (the
+      square exponential moments exists) random variable under \(\mu_t\). And
+      since \(\mu_t\) is explicit we have
+    </p>
+    <center>
+      \(\displaystyle \int e^{\theta \frac{(\pi_t^N - \varphi_t)^2}{N}}
+      \mathrm{d} \mu_t \leqslant
+e^{c \theta^2}\)
+    </center>
+    <p>
+      for small \(\theta\). Now
+    </p>
+    <center>
+      \(\displaystyle \int (L^{\ast}_t \mathbb{1}- \partial_t \log \psi_t) f_t
+      \mathrm{d} \mu_t
+\leqslant \frac{1}{\gamma} \left[ H (t) + \log \int
+      e^{\frac{\gamma}{N}
+(\pi_t^N - \varphi_t)^2} \mathrm{d} \mu_t \right]\)
+    </center>
+    <p>
+      and \((1 - 2 \varphi_t) \lesssim e^{- t}\).
+    </p>
+    <center>
+      \(\displaystyle H (t) \leqslant H (t_0) f (t_0)\)
+    </center>
+    <p>
+      where \(f (t) \rightarrow 0\) as \(t \rightarrow \infty\).
+    </p>
+    <p>
+      If \(\operatorname{Law} (\eta^N (t_0))\) is close to \(\mu_{t_0}\) (in
+      relative entropy), then \(\operatorname{Law} (\eta^N (t))\) is close to
+      \(\mu_t\) for all \(t \geqslant t_0\) uniformly in \(N\).   
+    </p>
+    <p>
+      The CLT tells us something about the distribution of
+      \(\operatorname{Law} (\eta^N (t_0))\). In particular it tells us that if
+      we have convergence in law then there is a coupling which converge in
+      probability. The same is true for two different sequences of random
+      variables which can be coupled to remain at small distance.  
+    </p>
+    <p>
+      \(\pi^N_{t_0}\) is at distance \(\varepsilon / N^{1 / 2}\) of
+      \(\operatorname{Binom} (N, \varphi_{t_0})\) if \(t_0\) is large. 
+    </p>
+    <p>
+      We use entropy twice: one for large time to be close to product measure
+      forever, and the other to prove that strating from deterministic we are,
+      after small time, near a product measure.
+    </p>
+    <p>
+      [I could not follow the final part of this discussion]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      \(\displaystyle \)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

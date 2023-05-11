@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/webpages/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/webpages/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/webpages/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/webpages/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./srq-intro.html">srq</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 17th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20181017 Giuliani
+    </p>
+    <p>
+      <b>Interacting dimers models (5/6)</b>
+    </p>
+    <p>
+      We recall some notations about the multiscale decomposition of the
+      partition function
+    </p>
+    <center>
+      \(\displaystyle Z_{L, \lambda} (A) = \int \mathrm{D} \psi e^{- \sum_e
+      E_e e^{A_e} + V (\psi,
+A)} .\)
+    </center>
+    <p>
+      The free propagator is
+    </p>
+    <center>
+      \(\displaystyle g (x, y) = \int \frac{\mathrm{d} k}{(2 \pi)^2}
+      \frac{e^{i k \cdot (x -
+y)}}{\mu (k)} .\)
+    </center>
+    <p>
+      We have a finite \(L\) is an IR cutoff and momenta are away from zero:
+      \(| \delta k | \geqslant \pi / L\). Recall that
+    </p>
+    <center>
+      \(\displaystyle \mu (k) = 1 + ie^{ik_1} - e^{i (k_1 + k_2)} - i e^{i
+      k_2}\)
+    </center>
+    <p>
+      with Fermi points \(\mu (k) = 0\) iff \(k = p^+ = (0, 0)\) or \(k = p^-
+      = (\pi, \pi)\). There
+    </p>
+    <center>
+      \(\displaystyle \mu (k + p^{\omega}) \approx (- i - \omega) k_1 + (- i +
+      \omega) k_2, \qquad
+\omega = \pm 1.\)
+    </center>
+    <p>
+      We rewrote
+    </p>
+    <center>
+      \(\displaystyle g (x, y) = \sum_{\omega = \pm 1} e^{- i p^{\omega} (x -
+      y)}
+g_{\omega}^{(\leqslant 0)} (x, y)\)
+    </center>
+    <p>
+      where
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant 0)} (x, y) = \int
+      \frac{\mathrm{d} k}{(2 \pi)^2}
+\frac{e^{i k \cdot (x - y)}}{\mu (k)}
+      \underbrace{\chi (k)}_{\approx
+\mathbb{I} (| k | \lesssim \pi)}\)
+    </center>
+    <p>
+      and used the addition principle to rewrite the objects of interest
+      splitted over scales
+    </p>
+    <center>
+      \(\displaystyle \frac{Z_{\lambda}}{Z_0} = \int P_{\leqslant 0}
+      (\mathrm{d}
+\psi_{\omega}^{(\leqslant 0)}) e^{V^{(0)} (\psi^{(\leqslant
+      0)}_{\omega})} =
+\int P_{\leqslant - 1} (\mathrm{d} \psi^{(\leqslant -
+      1)}) \underbrace{\int
+P_0 (\mathrm{d} \psi^{(0)}) e^{V^{(0)} (\psi^{(0)}
+      + \psi^{(\leqslant -
+1)})}}_{=: \exp [L^2 E^{(- 1)} + V^{(- 1)}
+      (\psi^{(\leqslant - 1)})]}\)
+    </center>
+    <p>
+      where we have
+    </p>
+    <center>
+      \(\displaystyle \psi^{(\leqslant 0), \pm}_{x, w} = \psi^{(\leqslant -
+      1), \pm}_{x, w} +
+\psi^{(0), \pm}_{x, w}\)
+    </center>
+    <p>
+      with propagators
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(0)} (x, y) = \int \frac{\mathrm{d} k}{(2
+      \pi)^2} \frac{e^{i k
+\cdot (x - y)}}{\mu (k)} \underbrace{(\chi (k) -
+      \chi (2 k))}_{f_0 (k)}
+\approx C e^{- c | x - y |^{1 / 2}}\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant - 1)} (x, y) = \int
+      \frac{\mathrm{d} k}{(2 \pi)^2}
+\frac{e^{i k \cdot (x - y)}}{\mu (k)}
+      \chi (2 k) \approx 2^{- 1}
+g_{\omega}^{(\leqslant 0)} (2^{- 1} x, 2^{-
+      1} y) .\)
+    </center>
+    <p>
+      The first is nicely decaying and the second is approximatively a
+      rescaling of the original.
+    </p>
+    <p>
+      In the last lecture we described the effect of the integration of the
+      \(\psi^{(0)}\) fields. 
+    </p>
+    <center>
+      \(\displaystyle L^2 E^{(- 1)} + V^{(- 1)} (\psi^{(\leqslant - 1)}) =
+      \sum_{n \geqslant 1}
+\frac{1}{n!} \mathcal{E}_0 (\underbrace{V^{(0)}
+      (\psi^{(0)} + \psi^{(\leqslant
+- 1)}) ; \cdots ; V^{(0)} (\psi^{(0)} +
+      \psi^{(\leqslant - 1)})}_{
+\text{$n$-times}})\)
+    </center>
+    <center>
+      \(\displaystyle = L^2 E^{(- 1)} + \sum_{\ell \geqslant 2, \text{$\ell$
+      even}} \psi^+_{x_1,
+\omega_1} \psi^-_{x_2, \omega_2} \cdots
+      \psi^+_{x_{\ell - 1}, \omega_{\ell -
+1}} \psi^-_{x_{\ell},
+      \omega_{\ell}} W^{(- 1)}_{\ell, \underline{\omega}}
+(x_1, \ldots,
+      x_{\ell})\)
+    </center>
+    <p>
+      where we have the formula
+    </p>
+    <center>
+      \(\displaystyle W^{(- 1)}_{\ell, \underline{\omega}} (\underline{x}) =
+      \sum_{n \geqslant
+      1}
+\frac{1}{n!}
+\sum_{\text{\scriptsize{$\underbrace{Q_1}_{\text{\scriptsize{$\begin{array}{c}
+
+      \text{external}\\
+  \text{lines}
+\end{array}$}}} \subset P_1, \ldots,
+      Q_n \subset P_n$}}}^{(1, \ldots, \ell)}
+\sigma_{\underline{P},
+      \underline{Q}}
+\sum_{\text{\scriptsize{$\begin{array}{c}
+  \underline{x}
+      (P_1), \ldots, \underline{x} (P_n)\\
+  \underline{\omega} (P_1), \ldots,
+      \underline{\omega} (P_n)
+\end{array}$}}}^{(\underline{x},
+      \underline{\omega})} \mathcal{E}_0 (\Psi_{P_1
+\backslash Q_1} ; \cdots ;
+      \Psi_{P_n \backslash Q_n}) \left[ \prod_{j = 1}^n v
+(\underline{x}
+      (P_j)) \right]\)
+    </center>
+    <p>
+      where we introduce fields monomials \(\Psi_P\) such that, for example,
+      the following formula for the initial interaction holds:
+    </p>
+    <center>
+      \(\displaystyle V^{(0)} (\psi) = - 2 \alpha \sum_x \psi^+_x \psi^-_x
+      \psi^+_{x + e_2}
+\psi^-_{x - e_1} =: \sum_{\underline{x} (P),
+      \underline{\omega} (P)}
+v_{\underline{\omega} (P)} (\underline{x} (P))
+      \underbrace{\Psi_P}_{\prod_{f
+\in P} \psi^{\varepsilon (f)}_{x (f),
+      \omega (f)}} .\)
+    </center>
+    <p>
+      In this notation \(Q_i\) denotes the &ldquo;external&rdquo; lines, with
+      the constraint that the number of externals lines are \(\ell\) (this is
+      indicated by the index in the summations). And we have constraints on
+      the internal lines because they have to corresponds to external lines
+      with positions and \(\omega\) indexes given and this is denoted but the
+      upper index \((\underline{x}, \underline{\omega})\) in the summations. 
+    </p>
+    <p>
+      We used the \(\operatorname{BBFKAR}\) formula:
+    </p>
+    <center>
+      \(\displaystyle \mathcal{E}_0 (\Psi_{P_1 \backslash Q_1} ; \cdots ;
+      \Psi_{P_n \backslash Q_n})
+= \sum_{\text{$T$ spanning trees}} \sigma_T
+      \prod_{\ell \in T} g^{(0)}_{\ell}
+\int \mu_T (\mathrm{d} \underline{t})
+      [\{ \det (g^{(0)} (\underline{t}, x_i,
+x_{i'})) \}_{i, i' = 1, \ldots,
+      N}]\)
+    </center>
+    <center>
+      \(\displaystyle
+      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741637150728cm,height=8.92450478814115cm]{image-1.pdf}}}\)
+    </center>
+    <p>
+      where \(T\) are spanning trees of the graph of the vertices making the
+      connected expectation, each of them with \(| P_i \backslash Q_i |\)
+      contracted legs graphically &ldquo;exiting&rdquo; from the \(i\)-th
+      vertices and \(N\) is the number of propagators outside the spanning
+      tree, namely
+    </p>
+    <center>
+      \(\displaystyle N = \frac{(4 n - \ell)}{2} - (n - 1) .\)
+    </center>
+    <p>
+      Here \(\underline{t}\) are interpolation parameters such that
+      \(\underline{t} = \{ t_{j, j'} \in [0, 1] : 1 \leqslant j, j' \leqslant
+      n \}\) and
+    </p>
+    <center>
+      \(\displaystyle g^{(0)}_{\omega} (\underline{t} ; x_i, x_{i'}) = t_{j,
+      j'} g^{(0)}_{\omega}
+(x_i, x_{i'}) .\)
+    </center>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| W^{(- 1)}_{\ell, \underline{\omega}}
+      \|_{L^1} = \frac{1}{L^2}
+\sum_{x_1, \ldots, x_{\ell}} | W^{(- 1)}_{\ell,
+      \underline{\omega}}
+(\underline{x}) |\)
+    </center>
+    <center>
+      \(\displaystyle \leqslant \sum_{n \geqslant 1} \frac{1}{n!} C^n | \alpha
+      |^n \times
+\underbrace{n!}_{\text{sum on the spanning trees}} \times \|
+      g^{(0)}_{\omega}
+\|^n_{L^1} \times \underbrace{\|
+      g^{(0)}_{\omega}
+\|_{L^{\infty}}^N}_{\text{\scriptsize{$\begin{array}{c}
+
+      \text{not quite, here some}\\
+  \text{details are hiding}
+\end{array}
+      \text{}$}}}\)
+    </center>
+    <p>
+      The bound on the determinant has to be done via a Gram representation as
+      a scalar product of two vectors (more on that by David tomorrow).
+    </p>
+    <p>
+      We can also allow an exponential weight in the \(L^1\) norm by using the
+      exponential decay for the propagators in the spanning tree.
+    </p>
+    <p>
+      Now we proceed by integrating out the \((- 1)\) layer. 
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant - 1)} (x, y) =
+      g_{\omega}^{(\leqslant - 2)} (x, y) +
+g_{\omega}^{(- 1)} (x, y)\)
+    </center>
+    <p>
+      where
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(- 1)} (x, y) := \int \frac{\mathrm{d} k}{(2
+      \pi)^2} \frac{e^{i k
+\cdot (x - y)}}{\mu (k)} \underbrace{[\chi (2 k) -
+      \chi (2^2 k)]}_{f_{- 1}
+(k)} .\)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      In order to do the resummations we need to classify them. For the moment
+      we go on with the multiscale procedure without resummations and we will
+      fix it later when we have shown the basic procedure. 
+    </p>
+    <p>
+      Now we have for the potential \(V^{(- 2)}\) the following expressions
+      for the kernels:
+    </p>
+    <center>
+      \(\displaystyle W^{(- 2)}_{\ell, \underline{\omega}} (\underline{x}) =
+      \sum_{s \geqslant 1}
+\frac{1}{s!} \sum_{P_1, \ldots, P_s} \sum_{Q_1
+      \subset P_1, \ldots, Q_s
+\subset P_s}^{(P_1, \ldots, P_s)}
+      \sigma_{\underline{P},
+      \underline{Q}}
+\sum_{\text{\scriptsize{$\begin{array}{c}
+  \underline{x}
+      (P_1), \ldots, \underline{x} (P_s)\\
+  \underline{\omega} (P_1), \ldots,
+      \underline{\omega} (P_s)
+\end{array}$}}}^{(\underline{x},
+      \underline{\omega})}\)
+    </center>
+    <center>
+      \(\displaystyle \times \mathcal{E}_{- 1} (\Psi_{P_1 \backslash Q_1} ;
+      \cdots ; \Psi_{P_s
+\backslash Q_s}) \left[ \prod_{j = 1}^s W^{(- 1)}_{|
+      P_j |, \underline{\omega}
+(P_j)} (\underline{x} (P_j)) \right]\)
+    </center>
+    <p>
+      where each of the \(W^{(- 1)}_{| P_j |, \underline{\omega} (P_j)}
+      (\underline{x} (P_j))\) is given by a similar expression on the previous
+      scale. 
+    </p>
+    <p>
+      This recursive structure of kernels inside kernels is graphically
+      represented as
+    </p>
+    <center>
+      \(\displaystyle W^{(- 2)}_{\ell, \underline{\omega}} (\underline{x}) =
+      \sum_{s \geqslant 1}
+\sum_{s_1, \ldots, s_s \geqslant
+      1}
+\raisebox{-0.5\height}{\includegraphics[width=14.8909550045914cm,height=8.92450478814115cm]{image-1.pdf}}\)
+    </center>
+    <p>
+      where the hollow dots represent the kernels at the level of \(V^{(0)}\)
+      and the two layers, the two layers of integrations. So we can give a
+      bounds of the kernels as
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| W^{(- 2)}_{\ell, \underline{\omega}}
+      \|_{L^1} \leqslant
+\sum_{n \geqslant 1}
+      \sum_{\text{\scriptsize{$\begin{array}{c}
+  \text{trees $\tau$ with}\\
+ 
+      \text{$n$ endpoints}
+\end{array}$}}}^{(\ell)}\)
+    </center>
+    <center>
+      \(\displaystyle \times \frac{C^{s_{v_0}} C^{s_{v_1} + \cdots +
+      s_{v_{s_{v_0}}}}}{s_{v_0} !
+\cdots s_{v_n} !} (s_{v_0} !) \|
+      g_{\omega}^{(- 1)} \|^{s_{v_0} - 1}_{L^1} \|
+g_{\omega}^{(- 1)}
+      \|_{L^{\infty}}^{\frac{| P_{v_1} | + \cdots + \left|
+P_{v_{s_{v_0}}}
+      \right| - | P_{v_0} |}{2} - (s_{v_0} - 1)}\)
+    </center>
+    <center>
+      \(\displaystyle \times \prod_{j = 1}^{s_{v_0}} \left[ \left\|
+      g_{\omega}^{(- 1)}
+{\right\|_{L^1}^{s_{v_j} - 1}}  \| g_{\omega}^{(- 1)}
+      \|_{L^{\infty}}^{\frac{4
+s_{v_{s_j}} - | P_{v_j} |}{2} - (s_{v_j} - 1)}
+      (s_{v_j} !) \right]\)
+    </center>
+    <p>
+      where we sum over trees \(\tau\) with \(n = s_1 + \cdots + s_s\)
+      endpoints.
+    </p>
+    <p>
+      Now, in general for \(h \leqslant 0\) we have
+    </p>
+    <center>
+      \(\displaystyle \frac{Z_{\lambda}}{Z_0} = e^{L^2 E^{(h)}} \int
+      P_{\leqslant h} (\mathrm{d}
+\psi^{(\leqslant h)}) e^{V^{(h)}
+      (\psi^{(\leqslant h)}_{\omega})}\)
+    </center>
+    <p>
+      where \(V^{(h)}\) has kernels
+    </p>
+    <center>
+      \(\displaystyle \| W^{(h)}_{\ell, \underline{\omega}} (\underline{x})
+      \|_{L^1} \leqslant
+\sum_{n \geqslant 1} \sum_{\text{trees with $n$
+      endpoints}} \sum_{\{ P_v \} :
+| P_{v_0} | = \ell} \times\)
+    </center>
+    <center>
+      \(\displaystyle \times \prod_{v \text{ not e.p.}} \left[ C^{s_v} \|
+      g_{\omega}^{(h_v)} \|^{s_v
+- 1}_{L^1} \| g_{\omega}^{(h_v)}
+      \|_{L^{\infty}}^{\frac{\sum_{i = 1}^{s_v} |
+P_{v_i} | - | P_v |}{2} -
+      (s_v - 1)} \right]\)
+    </center>
+    <p>
+      and now since
+    </p>
+    <center>
+      \(\displaystyle \| g_{\omega}^{(h_v)} \|_{L^1} \approx 2^{- h}, \qquad
+      \| g_{\omega}^{(h_v)}
+\|_{L^{\infty}} \approx 2^h\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| W^{(h)}_{\ell, \underline{\omega}}
+      (\underline{x}) \|_{L^1}
+\leqslant \sum_{n \geqslant 1} | \alpha |^n
+      \sum_{\tau \in J_{h, n}} \prod_{v
+\text{ not e.p.}} \left[ C^{s_v} 2^{-
+      (h_v - h + h) (s_v - 1)} 2^{(h_v - h +
+h) \frac{\sum_{i = 1}^{s_v} |
+      P_{v_i} | - | P_v |}{2} - (s_v - 1)} \right]\)
+    </center>
+    <center>
+      \(\displaystyle \leqslant \sum_{n \geqslant 1} | \alpha |^n \sum_{\tau
+      \in J_{h, n}} 2^{h
+\sum_{v \geqslant v_0} \left[ - 2 (s_v - 1) +
+      \frac{1}{2} \sum_{i = 1}^{s_v} |
+P_{v_i} | - \frac{1}{2} | P_v |
+      \right]}\)
+    </center>
+    <center>
+      \(\displaystyle \times \prod_{v \text{ not e.p.}} C^{s_v} \left[ C^{s_v}
+      2^{- (h_v - h) (s_v -
+1)} 2^{(h_v - h) \frac{\sum_{i = 1}^{s_v} |
+      P_{v_i} | - | P_v |}{2} - (s_v -
+1)} \right]\)
+    </center>
+    <p>
+      and now
+    </p>
+    <center>
+      \(\displaystyle 2^{h \sum_{v \geqslant v_0} \left[ - 2 (s_v - 1) +
+      \frac{1}{2} \sum_{i =
+1}^{s_v} | P_{v_i} | - \frac{1}{2} | P_v |
+      \right]} = 2^{h \left[ - 2 (n - 1)
++ \frac{4 n - \ell}{2} \right]} =
+      2^{h (2 - \ell / 2)}\)
+    </center>
+    <p>
+      and the fact that \(n\) drops out is the signal that the theory is just
+      renormalizable (but not super renormalizable). 
+    </p>
+    <p>
+      This computation signals that \((2 - \ell / 2)\) is the scaling
+      dimension of \(W^{(h)}_{\ell}\). We have now
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| W^{(h)}_{\ell, \underline{\omega}}
+      (\underline{x}) \|_{L^1}
+\leqslant 2^{h (2 - \ell / 2)} \sum_{n
+      \geqslant 1} | \alpha |^n \sum_{\tau
+\in J_{h, n}}\)
+    </center>
+    <center>
+      \(\displaystyle \times \prod_{v \text{ not e.p.}} \left[ C^{s_v} 2^{-
+      (h_v - h) (s_v - 1)}
+2^{(h_v - h) \frac{\sum_{i = 1}^{s_v} | P_{v_i} | -
+      | P_v |}{2} - (s_v - 1)}
+\right]\)
+    </center>
+    <p>
+      We now rewrite the scale jumps along the path \([v_0, v]\) on the tree
+      to \(v\) as:
+    </p>
+    <center>
+      \(\displaystyle h_v - h = \sum_{v_0 \leqslant w \leqslant v} (h_w -
+      h_{w'})\)
+    </center>
+    <p>
+      where \(w'\) is the parent of \(w\) along this path.  So we have
+    </p>
+    <center>
+      \(\displaystyle \sum_{v \geqslant v_0} (s_v - 1) (h_v - h) = \sum_{v
+      \geqslant v_0} \sum_{v_0
+\leqslant w \leqslant v} (h_w - h_{w'}) (s_v -
+      1) = \sum_{w \geqslant v_0}
+(h_w - h_{w'}) \sum_{v \geqslant w} (s_v -
+      1)\)
+    </center>
+    <center>
+      \(\displaystyle = {\sum_{w \geqslant v_0}}  (h_w - h_{w'})
+      (\underbrace{n_w}_{\# \text{of e.p.
+following $w$ on $\tau$}} - 1)\)
+    </center>
+    <p>
+      and reasoning in this way we obtain
+    </p>
+    <center>
+      \(\displaystyle \prod_{\text{$w$ not e.p.}} 2^{(h_w - h_{w'}) \left[
+      \left( - 2 (n_w - 1) +
+\frac{4 n_w - | P_w |}{2} \right) \right]} =
+      \prod_{\text{$v$ not e.p.}}
+2^{(h_v - h_{v'}) (2 - | P_v | / 2)}\)
+    </center>
+    <p>
+      and therefore using
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| W^{(h)}_{\ell, \underline{\omega}}
+      (\underline{x}) \|_{L^1}
+\leqslant 2^{h (2 - \ell / 2)} \sum_{n
+      \geqslant 1} C^n | \alpha |^n
+\sum_{\tau \in J_{h, n}} \prod_{\text{$v$
+      not e.p.}} 2^{\overbrace{(h_v -
+h_{v'})}^{> 0} \left( 2 - \frac{1}{2} |
+      P_v | \right)}\)
+    </center>
+    <p>
+      From this formula we see that we loose memory of all the \(v\) for which
+      \(2 - | P_v | / 2 < 0\). We have \(2 - | P_v | / 2 = 0\) for \(| P_v | =
+      4\) and \(2 - | P_v | / 2 = 1\) for \(| P_v | = 2\). So all \(v\) such
+      that \(| P_v | \geqslant 6\) we are fine: we can resum the expression
+      above and get a uniform bound. But we have terms with effective vertices
+      for which \(| P_v | = 2, 4\) then we have problems if we need to
+      iterated the formula many times. 
+    </p>
+    <p>
+      How we cure this we will see next time.
+    </p>
+  </body>
+</html>
