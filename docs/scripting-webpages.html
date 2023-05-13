@@ -1,0 +1,1701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="toggle" style="display: none">
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+    </div>
+    <div class="notes-header">
+      <p>
+        [<a href="./main.html">main</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">Scripting webpages<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      This note records a workflow to fix some problems with the links in the
+      website. It can be used as a tutorial in TeXmacs scripting. I show how
+      to batch-modify pages. Written May 13th 2013.
+    </div>
+    <p>
+      
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 100%; padding-left: 0em; padding-right: 0em; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; background-color: #ff000055"><p>
+          You can run the scripts in this page, pay attention however that
+          they will <b>modify</b> your filesystem, so be careful.
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      This document refers to the state of the repository checked out at
+      commit
+    </p>
+    <p>
+      <code>dad6b1358b44534c0f6b0d3eb2e721cf04f440c1</code>. 
+    </p>
+    <p>
+      The goal is to change certain hyperlinks to use a user-defined macro
+      instead, this will make easier in the future to customize the rendering
+      or the location of the linked files.
+    </p>
+    <h2 id="auto-2">Batch-modify pages<span style="margin-left: 1em"></span></h2>
+    <p>
+      We need to set up the base directory first.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(setenv &quot;NOTES&quot; (url-&gt;system (url-append (url-head (current-buffer)) &quot;..&quot;)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(getenv &quot;NOTES&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              &quot;/Users/mgubi/Library/CloudStorage/Dropbox/Safe/webpages&quot;
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Here we read and write a file to check that all is ok.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(tree-export t  (url-&gt;system &quot;$NOTES/test.tm&quot;)  &quot;texmacs&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #f
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(system &quot;diff $NOTES/test.tm $NOTES/src/main.tm&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              0
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <p>
+      All good (<code>0</code> means success): we can read and write TeXmacs
+      files. Let's give a look to at all hyperlinks in the file, for example.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* hlink))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;
+              &lt;tree
+              &lt;hlink|arXiv|http://arxiv.org/a/gubinelli_m_1&gt;&gt;
+              &lt;tree
+              &lt;hlink|ORCID|http://orcid.org/0000-0002-4014-2949&gt;&gt;
+              &lt;tree
+              &lt;hlink|@maxgubi@twitter|https://twitter.com/maxgubi&gt;&gt;
+              &lt;tree
+              &lt;hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi&gt;&gt;
+              &lt;tree
+              &lt;hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/&gt;&gt;
+              &lt;tree &lt;hlink|my institutional
+              page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli&gt;&gt;
+              &lt;tree &lt;hlink|Mathematical
+              Institute|https://www.maths.ox.ac.uk&gt;&gt; &lt;tree
+              &lt;hlink|vita|./curriculum-vitae.tm&gt;&gt; &lt;tree
+              &lt;hlink|research|research.tm&gt;&gt; &lt;tree
+              &lt;hlink|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;hlink|programming|./programming.tm&gt;&gt; &lt;tree
+              &lt;hlink|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;hlink|list|./list-articles.tm&gt;&gt; &lt;tree
+              &lt;hlink|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;hlink|template|template.tm&gt;&gt; &lt;tree
+              &lt;hlink|&lt;TeXmacs&gt;|http://www.texmacs.org&gt;&gt;
+              &lt;tree
+              &lt;hlink|github|https://github.com/mgubi/webpages&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      We want to replace all the <code>hlink</code> tags with
+      <code>notes-link</code> tags, so that we will be able to customize them
+      afterwards. <code>select</code> returns a list of tree which should
+      remember their positions on the document tree, so we can try to  just
+      modify them in place, one after the other. Let's try with the first:
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define h (car (select t '(:* hlink))))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list h)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      I put in a list the tree otherwise TeXmacs will try to typeset it. Let's
+      now change the label of this tree.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list (tree-assign-node! h 'notes-link))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-link))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      It worked! Now the documents' first <code>hlink</code> has been changes
+      in <code>notes-link</code>. I can now proceed and change all the others.
+      
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(map (lambda (h) (tree-assign-node! h 'notes-link)) (select t '(:* hlink)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree
+              &lt;notes-link|arXiv|http://arxiv.org/a/gubinelli_m_1&gt;&gt;
+              &lt;tree
+              &lt;notes-link|ORCID|http://orcid.org/0000-0002-4014-2949&gt;&gt;
+              &lt;tree
+              &lt;notes-link|@maxgubi@twitter|https://twitter.com/maxgubi&gt;&gt;
+              &lt;tree
+              &lt;notes-link|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi&gt;&gt;
+              &lt;tree
+              &lt;notes-link|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/&gt;&gt;
+              &lt;tree &lt;notes-link|my institutional
+              page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli&gt;&gt;
+              &lt;tree &lt;notes-link|Mathematical
+              Institute|https://www.maths.ox.ac.uk&gt;&gt; &lt;tree
+              &lt;notes-link|vita|./curriculum-vitae.tm&gt;&gt; &lt;tree
+              &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|./programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|./list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt; &lt;tree
+              &lt;notes-link|&lt;TeXmacs&gt;|http://www.texmacs.org&gt;&gt;
+              &lt;tree
+              &lt;notes-link|github|https://github.com/mgubi/webpages&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      And check that there are indeed no more <code>hlink</code> in the
+      document
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* hlink))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              ()
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Let's save the result in a new file.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(tree-export t (url-&gt;system &quot;$NOTES/test.tm&quot;)  &quot;texmacs&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #f
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      I would like to be more selective and change only the internal links,
+      i.e. those which do not start with <code>http://</code> or
+      <code>https://</code>. So let's start again. <code>tree-ref</code>
+      extracts the subtrees of a given tree.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define l (select t '(:* hlink)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list (car l))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list (tree-ref (car l) 0))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree google scholar&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list (tree-ref (car l) 1))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree
+              http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(tree-atomic? (tree-ref (car l) 1))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #t
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(tree-&gt;string (tree-ref (car l) 1))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              &quot;http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&quot;
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Atomic trees are strings, so I need to check if it atomic and then check
+      if it starts with <code>http://</code>
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(string-starts? (tree-&gt;string (tree-ref (car l) 1)) &quot;http://&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #t
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Which ideed it does. I can now fileter all the similar trees and change
+      only those.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define l1 (filter (lambda (h) 
+   (not (and (tree-atomic? (tree-ref h 1))
+       (or  (string-starts? (tree-&gt;string (tree-ref h 1))
+                           &quot;http://&quot;)  
+        (string-starts? (tree-&gt;string (tree-ref h 1))
+                        &quot;https://&quot;)))))
+      l))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+l1</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|vita|./curriculum-vitae.tm&gt;&gt; &lt;tree
+              &lt;hlink|research|research.tm&gt;&gt; &lt;tree
+              &lt;hlink|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;hlink|programming|./programming.tm&gt;&gt; &lt;tree
+              &lt;hlink|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;hlink|list|./list-articles.tm&gt;&gt; &lt;tree
+              &lt;hlink|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;hlink|template|template.tm&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(map (lambda (h) (tree-assign-node! h 'notes-link)) l1)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|vita|./curriculum-vitae.tm&gt;&gt;
+              &lt;tree &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|./programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|./list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      I would like also to normalize the filenames to avoid <code>./</code>
+      since it is redundant. Note that now <code>l1</code> has changed.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+l1</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|vita|./curriculum-vitae.tm&gt;&gt;
+              &lt;tree &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|./programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|./list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      So I can iterate again and change the second child to drop
+      <code>./</code> whenever needed. To do this we use
+      <code>tree-set!</code> which replaces in place a given tree relative to
+      a base tree.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(map (lambda (h)
+       (if (and (tree-atomic? (tree-ref h 1)) 
+                (string-starts? (tree-&gt;string (tree-ref h 1))
+                                &quot;./&quot;))
+            (tree-set! h 1 (string-drop 
+                            (tree-&gt;string (tree-ref h 1)) 2))))
+      (select t '(:* notes-link)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree curriculum-vitae.tm&gt; #&lt;unspecified&gt;
+              #&lt;unspecified&gt; &lt;tree programming.tm&gt;
+              #&lt;unspecified&gt; &lt;tree list-articles.tm&gt;
+              #&lt;unspecified&gt; #&lt;unspecified&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+l1</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|vita|curriculum-vitae.tm&gt;&gt;
+              &lt;tree &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Let's check that this actually modified the document.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-link))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-link|vita|curriculum-vitae.tm&gt;&gt;
+              &lt;tree &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Yes, it did. 
+    </p>
+    <p>
+      We wrap now all the process in a function which operate on a given tree.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define (handle-links t) (let* 
+  ((l (select t '(:* hlink)))
+  (l1 (filter (lambda (h) 
+   (not (and (tree-atomic? (tree-ref h 1))
+       (or  (string-starts? (tree-&gt;string (tree-ref h 1))
+                           &quot;http://&quot;)  
+        (string-starts? (tree-&gt;string (tree-ref h 1))
+                        &quot;https://&quot;)))))
+      l)))
+  (map (lambda (h)
+       (tree-assign-node! h 'notes-link)
+       (if (and (tree-atomic? (tree-ref h 1)) 
+                (string-starts? (tree-&gt;string (tree-ref h 1))
+                                &quot;./&quot;))
+           (tree-set! h 1 (string-drop 
+                            (tree-&gt;string (tree-ref h 1)) 2))))
+      l1)
+  ))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      And check that it actually works as expected.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(handle-links t)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree curriculum-vitae.tm&gt; #&lt;unspecified&gt;
+              #&lt;unspecified&gt; &lt;tree programming.tm&gt;
+              #&lt;unspecified&gt; &lt;tree list-articles.tm&gt;
+              #&lt;unspecified&gt; #&lt;unspecified&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* (:or hlink notes-link)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|google
+              scholar|http://scholar.google.ca/citations?hl=en&amp;user=D4PR4LYAAAAJ&amp;view_op=list_works&amp;pagesize=100&gt;&gt;
+              &lt;tree
+              &lt;hlink|arXiv|http://arxiv.org/a/gubinelli_m_1&gt;&gt;
+              &lt;tree
+              &lt;hlink|ORCID|http://orcid.org/0000-0002-4014-2949&gt;&gt;
+              &lt;tree
+              &lt;hlink|@maxgubi@twitter|https://twitter.com/maxgubi&gt;&gt;
+              &lt;tree
+              &lt;hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi&gt;&gt;
+              &lt;tree
+              &lt;hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/&gt;&gt;
+              &lt;tree &lt;hlink|my institutional
+              page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli&gt;&gt;
+              &lt;tree &lt;hlink|Mathematical
+              Institute|https://www.maths.ox.ac.uk&gt;&gt; &lt;tree
+              &lt;notes-link|vita|curriculum-vitae.tm&gt;&gt; &lt;tree
+              &lt;notes-link|research|research.tm&gt;&gt; &lt;tree
+              &lt;notes-link|teaching|teaching/teaching.tm&gt;&gt; &lt;tree
+              &lt;notes-link|programming|programming.tm&gt;&gt; &lt;tree
+              &lt;notes-link|writings|writings.tm&gt;&gt; &lt;tree
+              &lt;notes-link|list|list-articles.tm&gt;&gt; &lt;tree
+              &lt;notes-link|Atom|notes.atom&gt;&gt; &lt;tree
+              &lt;notes-link|template|template.tm&gt;&gt; &lt;tree
+              &lt;hlink|&lt;TeXmacs&gt;|http://www.texmacs.org&gt;&gt;
+              &lt;tree
+              &lt;hlink|github|https://github.com/mgubi/webpages&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Which it does.
+    </p>
+    <h3 id="auto-3">Improving references to stored files<span style="margin-left: 1em"></span></h3>
+    <p>
+      We want to perform also another batch change, and replace all the links
+      into the store with a new tag <tt class="verbatim">notes-store</tt>. 
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/people.tm&quot;) &quot;texmacs&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define l (filter (lambda (h) (string-contains?  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) (select t '(:* hlink)))))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+l</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;hlink|pdf|../store/master-thesis-song.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|slides|../store/master-thesis-seminar-song.pdf&gt;&gt;
+              &lt;tree &lt;hlink|pdf|../store/master-thesis-meyer.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|slides|../store/master-thesis-seminar-meyer.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|pdf|../store/master-thesis-noeller.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|pdf|../store/master-thesis-zografos.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|pdf|../store/master-thesis-martini.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|pdf|../store/master-thesis-orenday.pdf&gt;&gt;
+              &lt;tree
+              &lt;hlink|pdf|../store/master-thesis-barashkov.pdf&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <p>
+      We check that an hyperlink has <tt class="verbatim">store/</tt> as sublink and we
+      preform the substitions in this case.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(string-contains &quot;../store/master-thesis-barashkov.pdf&quot; &quot;store/&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              3
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(string-drop &quot;../store/master-thesis-barashkov.pdf&quot; 9)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              &quot;master-thesis-barashkov.pdf&quot;
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(for-each (lambda (h) 
+     (tree-assign-node! h 'notes-store) 
+     (let* ((s (tree-&gt;string (tree-ref h 1)))
+            (s1 (string-drop s 
+                             (+ 6 (string-contains s &quot;store/&quot;)))))
+       (tree-set! h 1 s1))) 
+          l)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+l</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-store|pdf|master-thesis-song.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|slides|master-thesis-seminar-song.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-meyer.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|slides|master-thesis-seminar-meyer.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-noeller.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-zografos.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-martini.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-orenday.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|pdf|master-thesis-barashkov.pdf&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <p>
+      Ok. We wrap all the process in an handy function. (which has to be
+      applied after <tt class="verbatim">handle-links</tt>)
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define (handle-notes-store t)
+  (with l (filter (lambda (h) (string-contains?  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) (select t '(:* notes-link)))
+(for-each (lambda (h) 
+     (tree-assign-node! h 'notes-store) 
+     (let* ((s (tree-&gt;string (tree-ref h 1)))
+            (s1 (string-drop s 
+                             (+ 6 (string-contains s &quot;store/&quot;)))))
+       (tree-set! h 1 s1)
+            )) 
+          l)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+ (handle-links t)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (#&lt;unspecified&gt; #&lt;unspecified&gt; #&lt;unspecified&gt;
+              #&lt;unspecified&gt; #&lt;unspecified&gt; #&lt;unspecified&gt;
+              #&lt;unspecified&gt; #&lt;unspecified&gt; #&lt;unspecified&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+ (handle-notes-store t)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-store))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;tree &lt;notes-store|pdf|master-thesis-song.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|slides|master-thesis-seminar-song.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-meyer.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|slides|master-thesis-seminar-meyer.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-noeller.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-zografos.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-martini.pdf&gt;&gt;
+              &lt;tree &lt;notes-store|pdf|master-thesis-orenday.pdf&gt;&gt;
+              &lt;tree
+              &lt;notes-store|pdf|master-thesis-barashkov.pdf&gt;&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      All good.
+    </p>
+    <h3 id="auto-4">Putting all together<span style="margin-left: 1em"></span></h3>
+    <p>
+      Now we aim to batch-process all the files in a given directory. We
+      gather all the files in the <tt class="verbatim">$NOTES/src</tt> directory,
+      removing the prefix to make easier later manipulations.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define u1 (url-append (url-append &quot;$NOTES/src&quot; (url-any))  &quot;*.tm&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+u1</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              &lt;url
+              /Users/mgubi/Library/CloudStorage/Dropbox/Safe/webpages/src/{**}/*.tm&gt;
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define files (url-&gt;list (url-delta &quot;$NOTES/src/dummy&quot; 
+                (url-expand (url-complete u1 &quot;fr&quot;)))))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(list-take files 5)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (&lt;url curriculum-vitae.tm&gt; &lt;url events.tm&gt; &lt;url
+              list-articles.tm&gt; &lt;url main.tm&gt; &lt;url
+              old-publications.tm&gt;)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(url-directory? (url-append (url-append &quot;$NOTES/src&quot; (car files)) (url-parent)))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #t
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(url-head (car files))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              &lt;url .&gt;
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Now we want to create a similar arborescence as the one in <tt class="verbatim">$NOTES/src</tt>.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define (make-dir-tree url)
+  (when (!= url (system-&gt;url &quot;$NOTES/src2&quot;)) 
+      (make-dir-tree (url-expand (url-append url (url-parent))))
+      (when (not (url-exists? url))     
+        (system-mkdir url)
+        (system-1 &quot;chmod a+x&quot; url))))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define dirs (ahash-set-&gt;list (list-&gt;ahash-set (map (lambda (f) (url-head (url-append &quot;$NOTES/src2&quot; f))) files))))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(for-each make-dir-tree dirs)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      This created the right arborescence. We are ready now to convert each
+      file in <tt class="verbatim">files</tt>.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(define (proc-file url)
+  (define t (tree-import (url-&gt;system 
+                          (url-append &quot;$NOTES/src&quot; url))  &quot;texmacs&quot;))
+  (handle-links t) (handle-notes-store t)
+  (tree-export t (url-&gt;system 
+                  (url-append &quot;$NOTES/src2&quot; url))  &quot;texmacs&quot;))</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(proc-file &quot;main.tm&quot;)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              #f
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      After these checks, we are ready to process all the files at once.
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(map proc-file files)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="text-indent: 0em">
+      <p>
+        <tt class="verbatim"><div align="justify">
+          <div class="ornament" style="background-color:#fff0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-radius:0px;padding-top:0.5em;padding-bottom:0.5em;display:block;">
+            <p>
+              (#f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f
+              #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f
+              #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f
+              #f)
+            </p>
+          </div>
+        </div></tt>
+      </p>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+system-move</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      Ok. After checking that there are no problems, we can copy the modified
+      files from <tt class="verbatim">src2</tt> to <tt class="verbatim">src</tt>. 
+    </p>
+    <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+(for-each (lambda (url) 
+      (system-move (url-append &quot;$NOTES/src2&quot; url) 
+                   (url-append &quot;$NOTES/src&quot; url))) 
+          files)</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
+</pre></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
