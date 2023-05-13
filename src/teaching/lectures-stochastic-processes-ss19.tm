@@ -101,39 +101,39 @@
   notes of the material presented in the lectures<nbsp>will be posted here:
 
   <\itemize>
-    <item><hlink|Note 1|../store/iam/stochastic-processes-ss19/sp-note-1.pdf>:
+    <item><notes-store|Note 1|iam/stochastic-processes-ss19/sp-note-1.pdf>:
     Review of Measure spaces, Integration theory<nbsp>(v1.1, 10/4/19)
 
-    <item><hlink|Note 2|../store/iam/stochastic-processes-ss19/sp-note-2.pdf>:
+    <item><notes-store|Note 2|iam/stochastic-processes-ss19/sp-note-2.pdf>:
     Conditional expectations (v1.0, 15/4/19)
 
-    <item><hlink|Note 3|../store/iam/stochastic-processes-ss19/sp-note-3.pdf>:
+    <item><notes-store|Note 3|iam/stochastic-processes-ss19/sp-note-3.pdf>:
     Martingales (v1.1, 2/5/19)
 
-    <item><hlink|Note 4|../store/iam/stochastic-processes-ss19/sp-note-4.pdf>:
+    <item><notes-store|Note 4|iam/stochastic-processes-ss19/sp-note-4.pdf>:
     Asymptotic behavior of martingales (v1.1, 3/5/19)
 
-    <item><hlink|Note 5|../store/iam/stochastic-processes-ss19/sp-note-5.pdf>:
+    <item><notes-store|Note 5|iam/stochastic-processes-ss19/sp-note-5.pdf>:
     Closed martingales (v1.0, 13/5/19)
 
-    <item><hlink|Note 6|../store/iam/stochastic-processes-ss19/sp-note-6.pdf>:
+    <item><notes-store|Note 6|iam/stochastic-processes-ss19/sp-note-6.pdf>:
     Martingale CLT and some applications of martingales (Kolmogorov's LLN,
     Kakutani's theorem, Radon-Nikodym theorem) (v1.1, 4/6/219)
 
-    <item><hlink|Note 7|../store/iam/stochastic-processes-ss19/sp-note-7.pdf>:
+    <item><notes-store|Note 7|iam/stochastic-processes-ss19/sp-note-7.pdf>:
     Optimal stopping problems (v1.0, 3/6/19)
 
-    <item><hlink|Note 8|../store/iam/stochastic-processes-ss19/sp-note-8.pdf>:
+    <item><notes-store|Note 8|iam/stochastic-processes-ss19/sp-note-8.pdf>:
     Markov chains (v1.1, 18/6/19)
 
-    <item><hlink|Note 9|../store/iam/stochastic-processes-ss19/sp-note-9.pdf>:
+    <item><notes-store|Note 9|iam/stochastic-processes-ss19/sp-note-9.pdf>:
     Discrete chains, Doob's h-transform (v1.0, 19/6/19)
 
-    <item><hlink|Note 10|../store/iam/stochastic-processes-ss19/sp-note-10.pdf>:
+    <item><notes-store|Note 10|iam/stochastic-processes-ss19/sp-note-10.pdf>:
     Construction of stochastic processes. Daniell-Kolmogorov theorem (v1.0,
     11/7/19)
 
-    <item><hlink|Note 11|../store/iam/stochastic-processes-ss19/sp-note-11.pdf>:
+    <item><notes-store|Note 11|iam/stochastic-processes-ss19/sp-note-11.pdf>:
     Brownian motion and some of its properties (by F. de Vecchi, v1.0,
     11/7/19)
   </itemize>
@@ -149,40 +149,40 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|../store/iam/stochastic-processes-ss19/sp-sheet-1.pdf>
+    <item><notes-store|Sheet 1|iam/stochastic-processes-ss19/sp-sheet-1.pdf>
     (due before 4pm on<nbsp>11/4, revised version 9/4)
 
-    <item><hlink|Sheet 2|../store/iam/stochastic-processes-ss19/sp-sheet-2.pdf>
+    <item><notes-store|Sheet 2|iam/stochastic-processes-ss19/sp-sheet-2.pdf>
     (due before 4pm on 18/4)
 
-    <item><hlink|Sheet 3|../store/iam/stochastic-processes-ss19/sp-sheet-3.pdf><nbsp>(due
+    <item><notes-store|Sheet 3|iam/stochastic-processes-ss19/sp-sheet-3.pdf><nbsp>(due
     before 4pm on 25/4)
 
-    <item><hlink|Sheet 4|../store/iam/stochastic-processes-ss19/sp-sheet-4.pdf>
+    <item><notes-store|Sheet 4|iam/stochastic-processes-ss19/sp-sheet-4.pdf>
     (due before <nbsp>4pm on 2/5)
 
-    <item><hlink|Sheet 5|../store/iam/stochastic-processes-ss19/sp-sheet-5.pdf>
+    <item><notes-store|Sheet 5|iam/stochastic-processes-ss19/sp-sheet-5.pdf>
     (due before 4pm on 9/5)
 
-    <item><hlink|Sheet 6|../store/iam/stochastic-processes-ss19/sp-sheet-6.pdf><nbsp>(due
+    <item><notes-store|Sheet 6|iam/stochastic-processes-ss19/sp-sheet-6.pdf><nbsp>(due
     before 4pm on 16/5)
 
-    <item><hlink|Sheet 7|../store/iam/stochastic-processes-ss19/sp-sheet-7.pdf><nbsp>(due
+    <item><notes-store|Sheet 7|iam/stochastic-processes-ss19/sp-sheet-7.pdf><nbsp>(due
     before 4pm on 23/5)
 
-    <item><hlink|Sheet 8|../store/iam/stochastic-processes-ss19/sp-sheet-8.pdf><nbsp>(due
+    <item><notes-store|Sheet 8|iam/stochastic-processes-ss19/sp-sheet-8.pdf><nbsp>(due
     before noon on 31/5)
 
-    <item><hlink|Sheet 9|../store/iam/stochastic-processes-ss19/sp-sheet-9.pdf>
+    <item><notes-store|Sheet 9|iam/stochastic-processes-ss19/sp-sheet-9.pdf>
     (due before 4pm on 6/6) (revised 4/6/19 to correct some typos)
 
-    <item><hlink|Sheet 10|../store/iam/stochastic-processes-ss19/sp-sheet-10.pdf><nbsp>(due
+    <item><notes-store|Sheet 10|iam/stochastic-processes-ss19/sp-sheet-10.pdf><nbsp>(due
     before noon<nbsp>on 21/6)
 
-    <item><hlink|Sheet 11|../store/iam/stochastic-processes-ss19/sp-sheet-11.pdf><nbsp>(due
+    <item><notes-store|Sheet 11|iam/stochastic-processes-ss19/sp-sheet-11.pdf><nbsp>(due
     before 4pm on 27/6)
 
-    <item><hlink|Sheet 12|../store/iam/stochastic-processes-ss19/sp-sheet-12.pdf><nbsp>(due
+    <item><notes-store|Sheet 12|iam/stochastic-processes-ss19/sp-sheet-12.pdf><nbsp>(due
     before 4pm on 4/7)
   </itemize>
 

@@ -17,12 +17,12 @@
   <with|font-series|bold|Année 2012/2013>
 
   <\itemize>
-    <item><hlink|Introduction à la theorie des chemins rugueux (M2
+    <item><notes-link|Introduction à la theorie des chemins rugueux (M2
     EDPMAD,TSI,MASEF)|#rp>
 
-    <item><hlink|Processus discrets (M1 MMD)|#pd>
+    <item><notes-link|Processus discrets (M1 MMD)|#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
+    <item><notes-link|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
   </itemize>
 
   <label|rp><subsubsection*|Introduction à la theorie des chemins rugueux (M2
@@ -41,7 +41,7 @@
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-11-12.tm#pd>)
+    <item>Cours de l'année dernière (<notes-link|Lien|teaching-dauphine-11-12.tm#pd>)
 
     <item>Chargés de TD: Joseph Lehec et François Simenhaus.
   </itemize>
@@ -129,69 +129,69 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Espérance conditionnelle
-    (<hlink|PDF|../store/e1213/pd1.pdf>) []
+    <item>Poly 1. Espérance conditionnelle (<notes-store|PDF|e1213/pd1.pdf>)
+    []
 
     <item>Poly 2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1213/pd2.pdf>) []
+    (<notes-store|PDF|e1213/pd2.pdf>) []
 
     <item>Poly 3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1213/pd3.pdf>) []
+    (<notes-store|PDF|e1213/pd3.pdf>) []
 
-    <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1213/pd4.pdf>) []
+    <item>Poly 4. Chaînes de Markov (<notes-store|PDF|e1213/pd4.pdf>) []
 
-    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1213/pd-td1.pdf>)
+    <item>TD1. Espérance conditionnelle. (<notes-store|PDF|e1213/pd-td1.pdf>)
     []
 
     <item>TD2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1213/pd-td2.pdf>) []
+    (<notes-store|PDF|e1213/pd-td2.pdf>) []
 
     <item>TD3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1213/pd-td3.pdf>) []
+    (<notes-store|PDF|e1213/pd-td3.pdf>) []
 
-    <item>TD4. Chaînes de Markov (<hlink|PDF|../store/e1213/pd-td4.pdf>) []
+    <item>TD4. Chaînes de Markov (<notes-store|PDF|e1213/pd-td4.pdf>) []
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e1213/md-controle2004.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1213/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<notes-store|PDF|e1213/md-controle2004.pdf>).
+    Rattrapage (<notes-store|PDF|e1213/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e1213/proc-controle0106.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1213/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<notes-store|PDF|e1213/proc-controle0106.pdf>).
+    Rattrapage (<notes-store|PDF|e1213/proc-controle0906Rectif.pdf>).
 
-    <item>2006/2007. Partiel (<hlink|PDF|../store/e1213/PartielProcDiscrets0607.pdf>).
-    Examen (<hlink|PDF|../store/e1213/proc-controle0107.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/proc-controle0907.pdf>).
+    <item>2006/2007. Partiel (<notes-store|PDF|e1213/PartielProcDiscrets0607.pdf>).
+    Examen (<notes-store|PDF|e1213/proc-controle0107.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/proc-controle0907.pdf>).
 
-    <item>2007/2008. Partiel (<hlink|PDF|../store/e1213/PartielProcDiscrets0708.pdf>).
-    Examen (<hlink|PDF|../store/e1213/proc-controle0108.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/proc-controle0908.pdf>).
+    <item>2007/2008. Partiel (<notes-store|PDF|e1213/PartielProcDiscrets0708.pdf>).
+    Examen (<notes-store|PDF|e1213/proc-controle0108.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/proc-controle0908.pdf>).
 
-    <item>2008/2009. Examen (<hlink|PDF|../store/e1213/proc-controle0109.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e1213/proc-controle0109.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/pd-partiel-0910.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-corrige-0910.pdf>).
-    Examen (<hlink|PDF|../store/e1213/pd-examen-0910.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/pd-rattrapage-0910.pdf>).
+    <item>2009/2010. Partiel (<notes-store|PDF|e1213/pd-partiel-0910.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1213/pd-partiel-corrige-0910.pdf>).
+    Examen (<notes-store|PDF|e1213/pd-examen-0910.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/pd-rattrapage-0910.pdf>).
 
-    <item>2010/2011. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-1011-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1213/pd-examen-1011.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/pd-rattrapage-1011.pdf>).
+    <item>2010/2011. Partiel (<notes-store|PDF|e1213/pd-partiel-1011.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1213/pd-partiel-1011-corrige.pdf>).
+    Examen (<notes-store|PDF|e1213/pd-examen-1011.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/pd-rattrapage-1011.pdf>).
 
-    <item>2011/2012. Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1213/pd-partiel-1112-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1213/pd-examen-1112.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/pd-rattrapage-1112.pdf>).
+    <item>2011/2012. Partiel (<notes-store|PDF|e1213/pd-partiel-1112.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1213/pd-partiel-1112-corrige.pdf>).
+    Examen (<notes-store|PDF|e1213/pd-examen-1112.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/pd-rattrapage-1112.pdf>).
   </enumerate>
 
   <label|ccm><subsubsection*|Contrôle des chaines de Markov (M1 MMD - majeure
   Math approfondie)>
 
   <itemize|<item>Cours de l'année dernière
-  (<hlink|Lien|teaching-dauphine-11-12.tm#ccm>)>
+  (<notes-link|Lien|teaching-dauphine-11-12.tm#ccm>)>
 
   <with|font-series|bold|Programme>
 
@@ -232,37 +232,37 @@
 
   <\enumerate>
     <item>Poly 1. Compléments sur l'espérance conditionnelle
-    (<hlink|PDF|../store/e1213/ccm1.pdf>) []
+    (<notes-store|PDF|e1213/ccm1.pdf>) []
 
     <item>Poly 3. Arrêt optimal en horizon fini.
-    (<hlink|PDF|../store/e1213/ccm3.pdf>) []
+    (<notes-store|PDF|e1213/ccm3.pdf>) []
 
     <item>Poly 4. Chaînes de Markov controlées.
-    (<hlink|PDF|../store/e1213/ccm4.pdf>) []
+    (<notes-store|PDF|e1213/ccm4.pdf>) []
 
     <item>TD1. Compléments sur l'espérance conditionnelle.
-    (<hlink|PDF|../store/e1213/ccm-td1.pdf>) []
+    (<notes-store|PDF|e1213/ccm-td1.pdf>) []
 
     <item>TD2. Arrêt optimal en horizon fini.
-    (<hlink|PDF|../store/e1213/ccm-td2.pdf>) []
+    (<notes-store|PDF|e1213/ccm-td2.pdf>) []
 
-    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1213/ccm-td3.pdf>)
+    <item>TD3. Integrabilité uniforme. (<notes-store|PDF|e1213/ccm-td3.pdf>)
     []
 
     <item>TD4. Chaînes de Markov controlées.
-    (<hlink|PDF|../store/e1213/ccm-td4.pdf>) []
+    (<notes-store|PDF|e1213/ccm-td4.pdf>) []
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2008/2009. Examen (<hlink|PDF|../store/e1213/examen-control-chaines-2009.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1213/rattrapage-control-chaines-2009.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e1213/examen-control-chaines-2009.pdf>).
+    Rattrapage (<notes-store|PDF|e1213/rattrapage-control-chaines-2009.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1213/ccm-partiel-0910.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1213/ccm-partiel-corrige-0910.pdf>).
-    Examen (<hlink|PDF|../store/e1213/ccm-examen-0910.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1213/ccm-rattrapage-0910.pdf>).
+    <item>2009/2010. Partiel (<notes-store|PDF|e1213/ccm-partiel-0910.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1213/ccm-partiel-corrige-0910.pdf>).
+    Examen (<notes-store|PDF|e1213/ccm-examen-0910.pdf>). Rattrapage
+    (<notes-store|PDF|e1213/ccm-rattrapage-0910.pdf>).
   </enumerate>
 </body>
 

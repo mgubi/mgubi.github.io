@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|source>
 
@@ -24,6 +24,14 @@
 
   <\active*>
     <\src-comment>
+      Fix for typewriter font
+    </src-comment>
+  </active*>
+
+  <assign|font|typewriter=roman,Linux Libertine>\ 
+
+  <\active*>
+    <\src-comment>
       Style parameters.
     </src-comment>
   </active*>
@@ -43,8 +51,6 @@
   <assign|html-css|/resources/notes-base.css>
 
   <assign|html-extra-javascript-src|<tuple|/resources/highlight.pack.js|/resources/notes-base.js>>
-
-  \;
 
   <\active*>
     <\src-comment>
@@ -117,6 +123,10 @@
   </active*>
 
   <assign|hlink-tm|<macro|body|target|<hlink|<arg|body>|<merge|<arg|target>|.tm>>>>
+
+  <assign|notes-link|<macro|body|target|<hlink|<arg|body>|<arg|target>>>>
+
+  <assign|notes-store|<macro|body|target|<hlink|<arg|body>|<merge|<notes-main-dir>|/../store/|<arg|target>>>>>
 
   <assign|notes-header-name|mg\|pages>
 

@@ -49,7 +49,7 @@
     Wiley Series in Probability and Statistics: Probability and Statistics.
     John Wiley & Sons, Inc., New York.<nbsp><hlink|https://doi.org/10.1002/9781118165904.|https://doi.org/10.1002/9781118165904.>
 
-    <item>Presentation of the seminar<nbsp>(<hlink|slides|../store/iam/seminar-large-deviations-ws1920/presentation.pdf>)
+    <item>Presentation of the seminar<nbsp>(<notes-store|slides|iam/seminar-large-deviations-ws1920/presentation.pdf>)
   </itemize>
 
   <subsection*|Tentative planning>

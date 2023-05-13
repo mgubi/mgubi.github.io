@@ -21,8 +21,8 @@
   und Ort>>|<cell|Dienstags, 14-16, Freitags,
   10-12<nbsp>>>|<row|<cell|<nbsp>>|<cell|Die Vorlesung via Zoom
   stattfinden>>|<row|<cell|<strong|Beginn>>|<cell|30. Oktober
-  2020>>|<row|<cell|<strong|Vorlesung>>|<cell|<hlink|Massimiliano
-  Gubinelli|/stochastic-pde/home>>>|<row|<cell|<strong|Übungen>>|<cell|<hlink|Luis
+  2020>>|<row|<cell|<strong|Vorlesung>>|<cell|<notes-link|Massimiliano
+  Gubinelli|/stochastic-pde/home>>>|<row|<cell|<strong|Übungen>>|<cell|<notes-link|Luis
   Aniello la Rocca|#>>>|<row|<cell|<strong|Prüfung>>|<cell|9/2, 13/3>>>>>
 
   <strong|Achtung (2.11.2020): Alle die Tutorials online
@@ -150,61 +150,61 @@
 
     <item>30.10 \|<nbsp>V2 \|<nbsp>Einleitung,<nbsp>Ereignisse,<nbsp>Kolmogorov'sche
     Axiom, \<sigma\>-Algebras, Erzeugte \<sigma\>-Algebra
-    (<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-2.pdf>)
+    (<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-2.pdf>)
 
     <item>3.11 \| V3 \|<nbsp>Wahrscheinlichkeit-maÿe/-raum,<nbsp>\<sigma\>-Additivität,<nbsp>W-keit
     auf endlichen<nbsp>Mengen, Borel'sche \<sigma\>-Algebra, existenz
-    nich-Borel'sche Mengen (<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-3.pdf>)
+    nich-Borel'sche Mengen (<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-3.pdf>)
 
     <item>6.11 \| V4 \| Dynkin-Systeme, Inhalt, Prëmaÿ, Eindeutigkeit
     und<nbsp>Erweiterung von Maÿe,<nbsp>W-maüe auf \<bbb-R\>,
-    Verteilungsfunktion. (<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-4.pdf>)
+    Verteilungsfunktion. (<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-4.pdf>)
 
     <item>10.11 \| V5 \|<nbsp>Messbarkeit, Zufallsvariablen,
     Integration,<nbsp>Monotone Konvergenz
-    (<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-5.pdf>)
+    (<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-5.pdf>)
 
     <item>13.11 \|<nbsp>V6 \|<nbsp>Fatou'sche Lemma,
     Gegenbeispiele,<nbsp>Dominierte Kovergenz,<nbsp>Abbildung von Massen.
-    (<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-6.pdf>)
+    (<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-6.pdf>)
 
     <item>17.11 \|<nbsp>V7 \|<nbsp>Beispiele von Zufallsvariablen, Absolut
     stetige Verteilungen (bzg. Lebesgue),<nbsp>Bedingte
-    W-keit<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-7.pdf>)
+    W-keit<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-7.pdf>)
 
     <item>20.11 \| V8 \|<nbsp>Unabhüngige Zufallsvariablen,
-    Produktrüume<nbsp>(<hlink|Handzettel|../store/iamli/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<hlink|Skript|../store/iamli/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
+    Produktrüume<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
 
     <item>24.11<nbsp>\| V9<nbsp>\| Zufallsvektoren, Fubini\UTonelli,
-    Fubini\ULebesgue<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-9.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-9.pdf>)
+    Fubini\ULebesgue<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-9.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-9.pdf>)
 
     <item>27.11<nbsp>\| V10<nbsp>\|<nbsp>Unendliche Produkte, Summe
-    unabhüngiger Zufallsvariablen<nbsp>(<hlink|Handzettel|../store/iamli/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<hlink|Skript|../store/iamli/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
+    unabhüngiger Zufallsvariablen<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
 
     <item>1.12<nbsp>\| V11<nbsp>\|<nbsp>Die Irrfahrt, das
-    Arcussinusgesetz<nbsp> (<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-11.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-11.pdf>)
+    Arcussinusgesetz<nbsp> (<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-11.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-11.pdf>)
 
     <item>4.12<nbsp>\| V12<nbsp>\|<nbsp><nbsp>Asymptotischer
     Ergebnis,<nbsp>Konvergenzbegriffe, Konvergenz von
-    Verteilungsfunktionen<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-12.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-12.pdf>)
+    Verteilungsfunktionen<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-12.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-12.pdf>)
 
     <item>8.12<nbsp>\| V13<nbsp>\|<nbsp><nbsp>Konvergez, von Zufallsvariablen
     (im Verteilung, im W-keit), <nbsp>Satz de Moivre\ULaplace, Konvergenz in
-    <math|L<rsup|p>>, Markov Ungleichung<nbsp><nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-13.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-13.pdf>)<nbsp>
+    <math|L<rsup|p>>, Markov Ungleichung<nbsp><nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-13.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-13.pdf>)<nbsp>
 
     <item>11.12<nbsp>\| V14<nbsp>\|<nbsp>Fast-sichere Konvergenz,
     Borel\UCantelli Lemmata, Verbindungen zwischen den verschiedenen
-    Konvergenzbegriffen.<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-14.pdf>)<nbsp>
+    Konvergenzbegriffen.<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-14.pdf>)<nbsp>
 
     <item>15.12<nbsp>\| V15<nbsp>\| StarkesGesetz der groÿen
-    Zahlen<nbsp>Momenten, Markov und Tchebichev<nbsp>Ungleichungen.<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-15.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-15.pdf>)<nbsp>
+    Zahlen<nbsp>Momenten, Markov und Tchebichev<nbsp>Ungleichungen.<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-15.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-15.pdf>)<nbsp>
 
     <item>18.12<nbsp>\| V16<nbsp>\|<nbsp>Schwaches Gesetz der groüen Zahlen,
-    Kolmogorov'che Ungleichung.<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-16.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-16.pdf>)
+    Kolmogorov'che Ungleichung.<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-16.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-16.pdf>)
 
     <item>22.12<nbsp>\| V17<nbsp>\|<nbsp>Beweis des
     starken<nbsp>Gesetzes<nbsp>der groÿen Zahlen, Jensen's Ungleichung. Groÿe
-    Abweichungen von GGZ.<nbsp><nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-17.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-17.pdf>)
+    Abweichungen von GGZ.<nbsp><nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-17.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-17.pdf>)
 
     <item><em|Weihnachtspause>
 
@@ -213,28 +213,28 @@
 
     <item>12.1<nbsp>\| V18<nbsp>\|<nbsp>Groÿe Abweichungen
     (Ende).<nbsp>Charakteristische Funktionen,
-    Eigenschaften.<nbsp><nbsp><nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-18.pdf>)
-    <nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-18.pdf>)
+    Eigenschaften.<nbsp><nbsp><nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-18.pdf>)
+    <nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-18.pdf>)
 
     <item>15.1<nbsp>\| V19<nbsp>\| Eindeutigkeit der Verteilung mit
-    gegebener<nbsp>Charakteristischer<nbsp>Funktion.<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-19.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-19.pdf>)
+    gegebener<nbsp>Charakteristischer<nbsp>Funktion.<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-19.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-19.pdf>)
 
     <item>19.1<nbsp>\| V20<nbsp>\| Box-Müller
     Methode.<nbsp>Transformationssatz von
-    Integralen.<nbsp><nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-20.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-20.pdf>)
+    Integralen.<nbsp><nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-20.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-20.pdf>)
 
     <item>22.1<nbsp>\| V21<nbsp>\|<nbsp>Der Zentrale Grenzwertsatz.<nbsp>CLT
-    unter Lindenberg Bedingungen.<nbsp>(<hlink|Handzettel|../store/iam/einf-wahr-ws2021/wt-ws2120-handzettel-21.pdf>)<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-21.pdf>)
+    unter Lindenberg Bedingungen.<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-21.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-21.pdf>)
 
     <item>26.1<nbsp>\| V22<nbsp>\|<nbsp> Stabile
-    Verteilungen.<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-22.pdf>)
+    Verteilungen.<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-22.pdf>)
 
     <item>29.1<nbsp>\| V23<nbsp>\|<nbsp>Anwendungen in der Statistik.
-    Schützer, Konsistenz, Erwartungstreu Sch.<nbsp><nbsp>(<hlink|Skript|../store/iamli/einf-wahr-ws2021/wt-ws2120-script-23.pdf>)
+    Schützer, Konsistenz, Erwartungstreu Sch.<nbsp><nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-23.pdf>)
 
     <item>2.2<nbsp>\| V24<nbsp>\|<nbsp>Probeklausur.
 
-    <item>5.2<nbsp>\| V25<nbsp>\|<nbsp>Wiederholung.<nbsp>(<hlink|Skript|../store/iam/einf-wahr-ws2021/wt-ws2120-script-widerholung.pdf>)
+    <item>5.2<nbsp>\| V25<nbsp>\|<nbsp>Wiederholung.<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-widerholung.pdf>)
 
     <item>9.2<nbsp>\| V26<nbsp>\| <nbsp>(Online)<nbsp><strong|Prüfung!
     (Anfang: 2:00 pm!)>

@@ -58,7 +58,7 @@
 
     <item><newblock>Controlling rough paths.
     <newblock><with|font-shape|italic|Journal of Functional Analysis>,
-    216(1):86\U140, 2004. <hlink|10.1016/j.jfa.2004.01.002|<newblock>http://dx.doi.org/10.1016/j.jfa.2004.01.002>
+    216(1):86\U140, 2004. <notes-link|10.1016/j.jfa.2004.01.002|<newblock>http://dx.doi.org/10.1016/j.jfa.2004.01.002>
   </itemize>
 
   <subsection*|Preprints>

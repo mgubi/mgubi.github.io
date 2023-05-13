@@ -49,20 +49,20 @@
 
   <item>Note 1 : Stochastic differential equations :
   existence,<nbsp>uniqueness and martingale problems.
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>) [version
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-1.pdf>) [version
   1.1, posted<nbsp>24/5/2016]
 
   <item>Note 2 : Girsanov transform, Doob's h-transform.
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
   1.1, posted 24/5/2016]
 
   <item>Note 3 : Brownian martingale representation theorem, Entropy and
   Girsanov transform, Boué-Dupuis formula, Large deviations.
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>) [version
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-3.pdf>) [version
   1.3, posted 16/6/2016]
 
   <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito formula.
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>) [version
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-4.pdf>) [version
   1.1, posted 29/6/2016]
 
   <subsection*|Further References>
@@ -79,35 +79,35 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|../store/iam/stochastic-analysis-ss17/sa-sheet-1.pdf><nbsp>(due
+    <item><notes-store|Sheet 1|iam/stochastic-analysis-ss17/sa-sheet-1.pdf><nbsp>(due
     on<nbsp>tuesday<nbsp>2/5)
 
-    <item><hlink|Sheet 2|../store/iam/stochastic-analysis-ss17/sa-sheet-2.pdf>
+    <item><notes-store|Sheet 2|iam/stochastic-analysis-ss17/sa-sheet-2.pdf>
     (due on<nbsp>tuesday<nbsp>9/5)
 
-    <item><hlink|Sheet 3|../store/iam/stochastic-analysis-ss17/sa-sheet-3.pdf><nbsp>(due
+    <item><notes-store|Sheet 3|iam/stochastic-analysis-ss17/sa-sheet-3.pdf><nbsp>(due
     on<nbsp>tuesday<nbsp>16/5)
 
-    <item><hlink|Sheet 4|../store/iam/stochastic-analysis-ss17/sa-sheet-4.pdf><nbsp>(due
+    <item><notes-store|Sheet 4|iam/stochastic-analysis-ss17/sa-sheet-4.pdf><nbsp>(due
     on tuesday 23/5)
 
-    <item><hlink|Sheet 5|../store/iam/stochastic-analysis-ss17/sa-sheet-5.pdf>
+    <item><notes-store|Sheet 5|iam/stochastic-analysis-ss17/sa-sheet-5.pdf>
     (due on tuesday 13/6)
 
-    <item><hlink|Sheet 6|../store/iam/stochastic-analysis-ss17/sa-sheet-6.pdf>
+    <item><notes-store|Sheet 6|iam/stochastic-analysis-ss17/sa-sheet-6.pdf>
     (due on thursday 22/6, based on the paper
     <hlink|here|https://projecteuclid.org/euclid.bj/1165269151>)
 
-    <item><hlink|Sheet 7|../store/iam/stochastic-analysis-ss17/sa-sheet-7.pdf>
+    <item><notes-store|Sheet 7|iam/stochastic-analysis-ss17/sa-sheet-7.pdf>
     (due on tuesday 27/6)
 
-    <item><hlink|Sheet 8|../store/iam/stochastic-analysis-ss17/sa-sheet-8.pdf>
+    <item><notes-store|Sheet 8|iam/stochastic-analysis-ss17/sa-sheet-8.pdf>
     (due on tuesday 4/7)
 
-    <item><hlink|Sheet 9|../store/iam/stochastic-analysis-ss17/sa-sheet-9.pdf><nbsp>(due
+    <item><notes-store|Sheet 9|iam/stochastic-analysis-ss17/sa-sheet-9.pdf><nbsp>(due
     on tuesday 11/7)
 
-    <item><hlink|Sheet 10|../store/iam/stochastic-analysis-ss17/sa-sheet-10.pdf>
+    <item><notes-store|Sheet 10|iam/stochastic-analysis-ss17/sa-sheet-10.pdf>
     (due on tuesday 18/7)
   </itemize>
 

@@ -51,19 +51,19 @@
 
   <\enumerate>
     <item>20/5 \U Shi* \U Chap. 2 - Space of Rough Paths
-    (<hlink|handout|../store/iam/seminar-rp-ss22/The_Space_of_Rough_Paths__1_.pdf>)
+    (<notes-store|handout|iam/seminar-rp-ss22/The_Space_of_Rough_Paths__1_.pdf>)
 
     <item>27/5 -<nbsp>Rinaldi \U Chap. 3 \U BM as rough path
-    (<hlink|slides|../store/iam/seminar-rp-ss22/BM-as-RP.pdf>)
+    (<notes-store|slides|iam/seminar-rp-ss22/BM-as-RP.pdf>)
 
     <item>27/5 - Meyer \U Chap. 4 \U Integ. against RP
-    (<hlink|handout|../store/iam/seminar-rp-ss22/Integration_wrt_RP.pdf>)
+    (<notes-store|handout|iam/seminar-rp-ss22/Integration_wrt_RP.pdf>)
 
     <item>3/6<nbsp>- De Vecchi \U Chap 5. \U Stoch int & Ito formula: Chap 6.
     \U Doob-Meyer for RP
 
     <item>3/6 - Fresta \U Chap 7. \U Controlled rough path
-    (<hlink|handout|../store/iam/seminar-rp-ss22/Operations_CRP.pdf>)
+    (<notes-store|handout|iam/seminar-rp-ss22/Operations_CRP.pdf>)
 
     <item>17/6 -<nbsp>Ravot Licheri* \U Sewing Lemma & Young DE (from CGZ,
     Chap 1 and Chap 2) (cfr. with Chap 8 of FH)
@@ -73,11 +73,11 @@
 
     <item>24/6 -<nbsp>Song \U Chap 9. Link with Stochastic analysis
     (Wong-Zakai, Support theorem, large deviations)
-    (<hlink|handout|../store/iam/seminar-rp-ss22/Notes.pdf>)
+    (<notes-store|handout|iam/seminar-rp-ss22/Notes.pdf>)
 
     <item>24/6 - Liu \U Chap 10+ Chap 11 : Gaussian rough paths +
-    integrability of norms (<hlink|handout|../store/iam/seminar-rp-ss22/GRP_handout.pdf>)
-    (<hlink|notes|../store/iam/seminar-rp-ss22/GRP_notes.pdf>)
+    integrability of norms (<notes-store|handout|iam/seminar-rp-ss22/GRP_handout.pdf>)
+    (<notes-store|notes|iam/seminar-rp-ss22/GRP_notes.pdf>)
 
     <item>1/7 - <strong|CANCELED / NO SEMINAR THIS WEEK><nbsp>-
     Martini<nbsp>\U Chap 12: SPDEs : Feynman-Kac + flow transformation +
@@ -88,7 +88,7 @@
     <item>15/7 - Brennecke \U unbounded rough drivers (paper)
 
     <item>15/7 - Galeati \U<nbsp>reflected rough DE (paper)
-    (<hlink|handout|../store/iam/seminar-rp-ss22/Handout_-_Reflected_RDEs.pdf>)
+    (<notes-store|handout|iam/seminar-rp-ss22/Handout_-_Reflected_RDEs.pdf>)
   </enumerate>
 
   <section*|Reference Material>
@@ -123,7 +123,7 @@
 
   <\itemize>
     <item>An advanced topics course on rough paths
-    (<hlink|link|/abteilung-gubinelli/teaching/rough-paths-controlled-paths-ws1516>)<nbsp>
+    (<notes-link|link|/abteilung-gubinelli/teaching/rough-paths-controlled-paths-ws1516>)<nbsp>
 
     <item>The wikipedia page on rough paths
     (<hlink|link|https://en.wikipedia.org/wiki/Rough_path>)

@@ -40,7 +40,7 @@
 
   Basic knowledge of continuous time stocastic processes and some stochastic
   calculus, e.g. see<nbsp>my course ``Foundations of Stochastic Analysis''
-  from the WS19/20 (<hlink|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>).
+  from the WS19/20 (<notes-link|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>).
   No previous knowledge of Quantum Mechanics will be assumed.<nbsp>
 
   <subsection*|References>
@@ -63,7 +63,7 @@
   Lecture notes will be posted here as the course develops.
 
   <\itemize>
-    <item>Note 1 (version 1, 2020.5.5) [<hlink|pdf|../store/iam/functional-integration-ss20/fiqm-ss20-note-1.pdf>]
+    <item>Note 1 (version 1, 2020.5.5) [<notes-store|pdf|iam/functional-integration-ss20/fiqm-ss20-note-1.pdf>]
   </itemize>
 
   <subsection*|Course Journal>
@@ -71,109 +71,109 @@
   <\itemize>
     <item>Lecture 1 (21/4) Introduction, plan of the lectures. Introductio to
     QM: Stern-Gerlach experiment and quantum phenomena
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-1.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-1.pdf>]
 
     <item>Lecture 2 (22/4) Mathematical model of a physical
     system.<nbsp>Operational definition and properties of observables and
     states. Duality, algebraic structure. C*-algebras. Example of the
     description of a classical mechanical system.
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-2.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-2.pdf>]
 
     <item>Lecture 3 (28/4) C*-algebras, definition and first properties,
     spectrum of an element, spectral radius. multiplicative functionals.
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-3.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-3.pdf>]
 
     <item>Lecture 4 (29/4) Abelian Banach algebras, maximal ideals and
     multiplicative functionals, Gelfand transform, Gelfand-Naimark theorem on
     the structure of commutative C* algebras, functional calculus
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-4.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-4.pdf>]
 
     <item>Lecture 5<nbsp>(5/5) Properties of positive elements, positive
-    linear functionals (states) [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-5.pdf>]<nbsp>
+    linear functionals (states) [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-5.pdf>]<nbsp>
 
     <item>Lecture 6 (6/5) a remark on continuous functionals,<nbsp>GNS
     representation, representations of non-commutative C*-algebras, the
-    non-commutative GN theorem. [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-6.pdf>]
+    non-commutative GN theorem. [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-6.pdf>]
 
     <item>Lecture 7 (12/5) irreducible representations and pure states, pure
     state of abelian algebras are multiplicative, probabilistic
-    interpretation.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-7.pdf>]
+    interpretation.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-7.pdf>]
 
     <item>Lecture 8<nbsp>(13/5) folium of a representation, Fell's theorem
     and physical interpretation, necessity of non-commutativity to describe
     quantum phenomenology, Heisenberg's indetermination principle and
-    Planck's constant, quantum particle<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-8.pdf>]
+    Planck's constant, quantum particle<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-8.pdf>]
 
     <item>Lecture 9 (19/5) (not recorded) Heisenberg indetermination
     principle, Schrödinger-Robertson inequality, canonical commutation
     relations (CCR),<nbsp>impossibility to realise the CCR with bounded
     operators,<nbsp>probabilistic phenomena in non-commutative algebras,
     construction of discrete systems of<nbsp><nbsp>complementary observables
-    (to be continued)<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-9.pdf>]
+    (to be continued)<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-9.pdf>]
 
     <item>Lecture 10 (20/5)<nbsp>Conclusion of the construction of a system
     with two discrete complementary observables. Description of its pure
     states.<nbsp>An example of factorized system. Pauli matrices.<nbsp>
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-10.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-10.pdf>]
 
     <item>Lecture 11<nbsp>(26/5) Canonical commutation relations<nbsp>as
     limits of discrete ones.<nbsp><nbsp>Weyl algebra,
     Baker-Campbell-Hausdorff formula and relation with Heisenberg's
-    commutation relations.<nbsp> [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-11.pdf>]
+    commutation relations.<nbsp> [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-11.pdf>]
 
     <item>Lecture 12 (27/5) Observables as *-homomorphism and unitary
-    representations of R on Hilbert space.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-12.pdf>]
+    representations of R on Hilbert space.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-12.pdf>]
 
     <item>Lecture 13<nbsp>(2/6) Weyl algebra, Heisenberg<nbsp>group and von
     Neumann theorem on the uniqueness of irreducible<nbsp>regular
     representations of Weyl algebra in finite dimensions, Schrödinger
-    representation, irreducibility<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-13.pdf>]
+    representation, irreducibility<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-13.pdf>]
 
     <item>Lecture 14<nbsp>(3/6) Determination of the vacuum in the
     Schrödinger representation. Gaussian representation of Weyl relations.
-    Reducible representations.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-14.pdf>]
+    Reducible representations.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-14.pdf>]
 
     <item>Lecture 15<nbsp>(9/6) An example of reducible representation,
-    dynamics of a canonical pair<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-15.pdf>]
+    dynamics of a canonical pair<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-15.pdf>]
 
     <item>Lecture 16 (10/6) Dynamics of a quantum
-    system<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-16.pdf>]
+    system<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-16.pdf>]
 
     <item>Lecture 17 (16/6) Unitary representation of weakly continuous
-    automorphism on an invariant state<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-17.pdf>]
+    automorphism on an invariant state<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-17.pdf>]
 
     <item>Lecture 18 (17/6) Semigroups and *-homomorphism, Bernstein theorem
-    on totally monotone functions<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-18.pdf>]
+    on totally monotone functions<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-18.pdf>]
 
     <item>Lecture 19<nbsp>(23/6) Link between unitary groups and self-adjoint
-    semigroups. Energy operator.<nbsp> [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-19.pdf>]
+    semigroups. Energy operator.<nbsp> [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-19.pdf>]
 
     <item>Lecture 20 (24/6) Positive energy condition.<nbsp>Link between
     unitary groups and self-adjoint semigroups continued. Ground states and
-    Wightman functions.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-20.pdf>]
+    Wightman functions.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-20.pdf>]
 
     <item>Lecture 21 (30/6) Axioms for Wightman
-    functions.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-21.pdf>]
+    functions.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-21.pdf>]
 
     <item>Lecture 22<nbsp>(1/7) Axioms for Schwinger functions and the
-    reconstruction theorem.<nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-22.pdf>]
+    reconstruction theorem.<nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-22.pdf>]
 
     <item>Lecture 23<nbsp>(7/7) Completion of the proof of the reconstruction
     theorem. Reflection positivity for Gaussian processes.
-    [<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-23.pdf>]
+    [<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-23.pdf>]
 
     <item>Lecture 24<nbsp>(8/7) Reflection positivity for the
     Ornstein-Uhlenbeck<nbsp>process.<nbsp>Explicit<nbsp>identification of the
     reconstruced Hilbert space as a probabilistic object, OU semigroup,
-    generator, harmonic oscillator.<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-24.pdf>]
+    generator, harmonic oscillator.<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-24.pdf>]
 
     <item>Lecture 25 (14/7) More general setting for the reconstruction
     theorem. Nelson's positivity and stochastic processes. Reflection
-    positivity for Gaussian processes<nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-25.pdf>]
+    positivity for Gaussian processes<nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-25.pdf>]
 
     <item>Lecture 26<nbsp>(15/7) Reflection positivity for Markov processes
     and construction or reflection positive processes via
-    SDEs<nbsp><nbsp><nbsp>[<hlink|script|../store/iam/functional-integration-ss20/fiqm-ss20-script-26.pdf>]
+    SDEs<nbsp><nbsp><nbsp>[<notes-store|script|iam/functional-integration-ss20/fiqm-ss20-script-26.pdf>]
   </itemize>
 </body>
 

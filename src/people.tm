@@ -91,28 +91,28 @@
 
   <\itemize>
     <item>Chiunqiu Song \PStochastic Quantisation of Abelian Higgs Model\Q
-    (<hlink|pdf|../store/master-thesis-song.pdf>) SS2022
-    \ (<hlink|slides|../store/master-thesis-seminar-song.pdf>)
+    (<notes-store|pdf|master-thesis-song.pdf>) SS2022
+    \ (<notes-store|slides|master-thesis-seminar-song.pdf>)
 
     <item>Sarah-Jean Meyer \PA Stochastic Control Perspective on Euclidean
-    Quantum Field Theories\Q (<hlink|pdf|../store/master-thesis-meyer.pdf>)
-    SS2022 (<hlink|slides|../store/master-thesis-seminar-meyer.pdf>)
+    Quantum Field Theories\Q (<notes-store|pdf|master-thesis-meyer.pdf>)
+    SS2022 (<notes-store|slides|master-thesis-seminar-meyer.pdf>)
 
     <item>Keixang Wang \PGlobal Solutions and Stationary Measure for
     Stochastic Cubic Nonlinear Wave Equation\Q SS2022
 
     <item>Jan Nöller \PRandomness and Symmetry in Quantum Control\Q
-    WS2021/2022 (<hlink|pdf|../store/master-thesis-noeller.pdf>)
+    WS2021/2022 (<notes-store|pdf|master-thesis-noeller.pdf>)
 
     <item>Panagiotis Zografos \PTopics in Non-commutative Probability\Q
-    WS2021/2022 (<hlink|pdf|../store/master-thesis-zografos.pdf>)
+    WS2021/2022 (<notes-store|pdf|master-thesis-zografos.pdf>)
 
     <item>Adrian Martini \PThe Killed Mollified Super Brownian Motion and
-    Paracontrolled Wild Sums\Q (<hlink|pdf|../store/master-thesis-martini.pdf>)
+    Paracontrolled Wild Sums\Q (<notes-store|pdf|master-thesis-martini.pdf>)
     SS2020
 
     <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q
-    (<hlink|pdf|../store/master-thesis-orenday.pdf>) SS2020
+    (<notes-store|pdf|master-thesis-orenday.pdf>) SS2020
 
     <item>Lukas Meier \PThe true self-repelling motion'' SS2019
 
@@ -133,7 +133,7 @@
     WS2017/18
 
     <item>Nikolay Barashkov \PRadiative transport limit of the random
-    Schrödinger equation\Q (<hlink|pdf|../store/master-thesis-barashkov.pdf>)
+    Schrödinger equation\Q (<notes-store|pdf|master-thesis-barashkov.pdf>)
     SS2017
   </itemize>
 

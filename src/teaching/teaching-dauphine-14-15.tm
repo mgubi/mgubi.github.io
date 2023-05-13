@@ -16,12 +16,12 @@
 
   <with|font-series|bold|Année 2014/2015>
 
-  <itemize|<item><hlink|Processus discrets (M1 MMD)|#pd>>
+  <itemize|<item><notes-link|Processus discrets (M1 MMD)|#pd>>
 
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-11-12.tm#pd>)
+    <item>Cours de l'année dernière (<notes-link|Lien|teaching-dauphine-11-12.tm#pd>)
 
     <item>Chargés de TD: Jean-Maxime Le Cousin, Camille Pagnard, Julien
     Poisat.
@@ -42,7 +42,7 @@
 
   <\itemize>
     <item>Le cours de Thierry Bodineau à l'Ecole Polytechnique MAP 432
-    ``Promenade aléatoire'' (<hlink|PDF|../store/e1415/http://www.cmap.polytechnique.fr/~bodineau/map432.pdf>)
+    ``Promenade aléatoire'' (<notes-store|PDF|e1415/http://www.cmap.polytechnique.fr/~bodineau/map432.pdf>)
 
     <item>P. Baldi, L. Mazliak, P. Priouret, <em| Martingales et chaînes de
     Markov (Exercices corrigés) >, Hermann
@@ -120,83 +120,82 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Espérance conditionnelle
-    (<hlink|PDF|../store/e1415/pd1.pdf>) []
+    <item>Poly 1. Espérance conditionnelle (<notes-store|PDF|e1415/pd1.pdf>)
+    []
 
     <item>Poly 2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1415/pd2.pdf>) []
+    (<notes-store|PDF|e1415/pd2.pdf>) []
 
     <item>Poly 3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1415/pd3.pdf>) []
+    (<notes-store|PDF|e1415/pd3.pdf>) []
 
-    <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1415/pd4.pdf>) []
+    <item>Poly 4. Chaînes de Markov (<notes-store|PDF|e1415/pd4.pdf>) []
 
-    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1415/pd-td1.pdf>)
+    <item>TD1. Espérance conditionnelle. (<notes-store|PDF|e1415/pd-td1.pdf>)
     []
 
     <item>TD2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1415/pd-td2.pdf>) []
+    (<notes-store|PDF|e1415/pd-td2.pdf>) []
 
     <item>TD3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1415/pd-td3.pdf>) []
+    (<notes-store|PDF|e1415/pd-td3.pdf>) []
 
-    <item>TD4. Chaînes de Markov (<hlink|PDF|../store/e1415/pd-td4.pdf>) []
+    <item>TD4. Chaînes de Markov (<notes-store|PDF|e1415/pd-td4.pdf>) []
 
-    <item>TD5. Chaînes de Markov (II) (<hlink|PDF|../store/e1415/pd-td5.pdf>)
-    []
+    <item>TD5. Chaînes de Markov (II) (<notes-store|PDF|e1415/pd-td5.pdf>) []
 
-    <item>Elements de correction : TD1 (<hlink|PDF|../store/e1415/td1_corrige.pdf>),
-    TD2 (<hlink|PDF|../store/e1415/td2_corrige.pdf>) TD3
-    (<hlink|PDF|../store/e1415/td3_corrige.pdf>) TD4
-    (<hlink|PDF|../store/e1415/td4_corrige.pdf>) TD5
-    (<hlink|PDF|../store/e1415/td5_corrige.pdf>) [redigées par Jean-Maxime Le
+    <item>Elements de correction : TD1 (<notes-store|PDF|e1415/td1_corrige.pdf>),
+    TD2 (<notes-store|PDF|e1415/td2_corrige.pdf>) TD3
+    (<notes-store|PDF|e1415/td3_corrige.pdf>) TD4
+    (<notes-store|PDF|e1415/td4_corrige.pdf>) TD5
+    (<notes-store|PDF|e1415/td5_corrige.pdf>) [redigées par Jean-Maxime Le
     Cousin, Camille Pagnard, Julien Poisat]
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e1415/../e1213/md-controle2004.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<notes-store|PDF|e1415/../e1213/md-controle2004.pdf>).
+    Rattrapage (<notes-store|PDF|e1415/../e1213/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e1415/../e1213/proc-controle0106.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<notes-store|PDF|e1415/../e1213/proc-controle0106.pdf>).
+    Rattrapage (<notes-store|PDF|e1415/../e1213/proc-controle0906Rectif.pdf>).
 
-    <item>2006/2007. Partiel (<hlink|PDF|../store/e1415/../e1213/PartielProcDiscrets0607.pdf>).
-    Examen (<hlink|PDF|../store/e1415/../e1213/proc-controle0107.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/proc-controle0907.pdf>).
+    <item>2006/2007. Partiel (<notes-store|PDF|e1415/../e1213/PartielProcDiscrets0607.pdf>).
+    Examen (<notes-store|PDF|e1415/../e1213/proc-controle0107.pdf>).
+    Rattrapage (<notes-store|PDF|e1415/../e1213/proc-controle0907.pdf>).
 
-    <item>2007/2008. Partiel (<hlink|PDF|../store/e1415/../e1213/PartielProcDiscrets0708.pdf>).
-    Examen (<hlink|PDF|../store/e1415/../e1213/proc-controle0108.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/proc-controle0908.pdf>).
+    <item>2007/2008. Partiel (<notes-store|PDF|e1415/../e1213/PartielProcDiscrets0708.pdf>).
+    Examen (<notes-store|PDF|e1415/../e1213/proc-controle0108.pdf>).
+    Rattrapage (<notes-store|PDF|e1415/../e1213/proc-controle0908.pdf>).
 
-    <item>2008/2009. Examen (<hlink|PDF|../store/e1415/../e1213/proc-controle0109.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e1415/../e1213/proc-controle0109.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-0910.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-corrige-0910.pdf>).
-    Examen (<hlink|PDF|../store/e1415/../e1213/pd-examen-0910.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/pd-rattrapage-0910.pdf>).
+    <item>2009/2010. Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-0910.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-corrige-0910.pdf>).
+    Examen (<notes-store|PDF|e1415/../e1213/pd-examen-0910.pdf>). Rattrapage
+    (<notes-store|PDF|e1415/../e1213/pd-rattrapage-0910.pdf>).
 
-    <item>2010/2011. Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-1011.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-1011-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1415/../e1213/pd-examen-1011.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/pd-rattrapage-1011.pdf>).
+    <item>2010/2011. Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-1011.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-1011-corrige.pdf>).
+    Examen (<notes-store|PDF|e1415/../e1213/pd-examen-1011.pdf>). Rattrapage
+    (<notes-store|PDF|e1415/../e1213/pd-rattrapage-1011.pdf>).
 
-    <item>2011/2012. Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-1112.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1415/../e1213/pd-partiel-1112-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1415/../e1213/pd-examen-1112.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/../e1213/pd-rattrapage-1112.pdf>).
+    <item>2011/2012. Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-1112.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1415/../e1213/pd-partiel-1112-corrige.pdf>).
+    Examen (<notes-store|PDF|e1415/../e1213/pd-examen-1112.pdf>). Rattrapage
+    (<notes-store|PDF|e1415/../e1213/pd-rattrapage-1112.pdf>).
 
     <item>2012/2013. Partiel (non disponible). Corrigé Partiel (non
-    disponible). Examen (<hlink|PDF|../store/e1415/pd-examen-1213.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1415/pd-rattrapage-1213.pdf>).
+    disponible). Examen (<notes-store|PDF|e1415/pd-examen-1213.pdf>).
+    Rattrapage (<notes-store|PDF|e1415/pd-rattrapage-1213.pdf>).
 
-    <item>2013/2014. Partiel (<hlink|PDF|../store/e1415/pd-partiel-1314.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1415/pd-partiel-1314-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1415/pd-examen-1314.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1415/pd-rattrapage-1314.pdf>).
+    <item>2013/2014. Partiel (<notes-store|PDF|e1415/pd-partiel-1314.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1415/pd-partiel-1314-corrige.pdf>).
+    Examen (<notes-store|PDF|e1415/pd-examen-1314.pdf>). Rattrapage
+    (<notes-store|PDF|e1415/pd-rattrapage-1314.pdf>).
 
-    <item>2013/2014. Partiel (<hlink|PDF|../store/e1415/pd-partiel-1415.pdf>).
+    <item>2013/2014. Partiel (<notes-store|PDF|e1415/pd-partiel-1415.pdf>).
   </enumerate>
 
   <itemize|>

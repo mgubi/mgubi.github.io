@@ -28,59 +28,59 @@
 
   <\itemize>
     <item>Course: Stochastic Analysis (SS22)
-    (<hlink|link|lectures-stochastic-analysis-ss22.tm>)
+    (<notes-link|link|lectures-stochastic-analysis-ss22.tm>)
 
     <item>Master seminar: Rough paths (SS22)
-    (<hlink|link|seminar-rough-paths-ss22.tm>)
+    (<notes-link|link|seminar-rough-paths-ss22.tm>)
 
     <item>WS21/22 Sabbatical
 
     <item>Course:<nbsp>Stochastic Processes (SS21)
-    (<hlink|link|lectures-stochastic-processes-ss21.tm>)
+    (<notes-link|link|lectures-stochastic-processes-ss21.tm>)
 
     <item>Hauptseminar Stochastik:<nbsp>Statistische Mechanik von
-    Gittersystemen (SS21) (<hlink|link|seminar-statistical-mechanics-ss21.tm>)
+    Gittersystemen (SS21) (<notes-link|link|seminar-statistical-mechanics-ss21.tm>)
 
     <item>Master seminar: Nonperturbative renormalization group (WS2021)
-    (<hlink|link|seminar-renormalization-group-ws20-21.tm>)
+    (<notes-link|link|seminar-renormalization-group-ws20-21.tm>)
 
     <item>Course: Stochastic quantization of Euclidean quantum
-    field<nbsp>theories (WS2021) (<hlink|link|lectures-sq-ws20-21.tm>)
+    field<nbsp>theories (WS2021) (<notes-link|link|lectures-sq-ws20-21.tm>)
 
     <item>Course: Einfürung in die Wahrscheinlichkeitstheorie
-    (WS2021)<nbsp>(<hlink|link|lectures-intro-probability-ws20-21.tm>)
+    (WS2021)<nbsp>(<notes-link|link|lectures-intro-probability-ws20-21.tm>)
 
     <item>Course:<nbsp>Functional Integration and Quantum Mechanics (SS20)
-    (<hlink|link|lectures-qmfi-ss20.tm>)
+    (<notes-link|link|lectures-qmfi-ss20.tm>)
 
     <item>Course: Stochastic Analysis (SS20)
-    (<hlink|link|lectures-stochastic-analysis-ss20.tm>)
+    (<notes-link|link|lectures-stochastic-analysis-ss20.tm>)
 
-    <item>Bachelor thesis topics (SS20) (<hlink|pdf|../store/iam/bachelor-topics-ss20.pdf>)
+    <item>Bachelor thesis topics (SS20) (<notes-store|pdf|iam/bachelor-topics-ss20.pdf>)
 
     <item>Master seminar: The mathematics of Feynman integral (SS20)
-    (<hlink|link|seminar-feynman-integrals-ss20.tm>)
+    (<notes-link|link|seminar-feynman-integrals-ss20.tm>)
 
     <item>Course: Foundations of Stochastic Analysis (WS1920)
-    (<hlink|link|lectures-foundations-stochastic-analysis-ws19-20.tm>)
+    (<notes-link|link|lectures-foundations-stochastic-analysis-ws19-20.tm>)
 
     <item>Bachelor Seminar: Large Deviations (WS1920)
-    (<hlink|link|seminar-large-deviations-ws19-20.tm>)
+    (<notes-link|link|seminar-large-deviations-ws19-20.tm>)
 
     <item>Course: Stochastic Processes (SS19)
-    (<hlink|link|lectures-stochastic-processes-ss19.tm>)
+    (<notes-link|link|lectures-stochastic-processes-ss19.tm>)
 
-    <item>Bachelor thesis topics (SS19) (<hlink|pdf|../store/iam/bachelor-topics-ss19.pdf>)
+    <item>Bachelor thesis topics (SS19) (<notes-store|pdf|iam/bachelor-topics-ss19.pdf>)
 
-    <item>Bachelor thesis topics (SS18) (<hlink|pdf|../store/iam/bachelor-topics-ss18.pdf>)
+    <item>Bachelor thesis topics (SS18) (<notes-store|pdf|iam/bachelor-topics-ss18.pdf>)
 
     <item>Course: Quantum probability and quantum stochastic calculus (SS18)
-    (<hlink|link|lectures-quantum-probability-ss18.tm>)
+    (<notes-link|link|lectures-quantum-probability-ss18.tm>)
 
-    <item>Course:<nbsp>Markov Processes (WS17/18)<nbsp>(<hlink|link|lectures-markov-processes-ws17-18.tm>)
+    <item>Course:<nbsp>Markov Processes (WS17/18)<nbsp>(<notes-link|link|lectures-markov-processes-ws17-18.tm>)
 
     <item>Course:<nbsp>Stochastic Analysis
-    (SS17)<nbsp>(<hlink|link|lectures-stochastic-analysis-ss17.tm>)
+    (SS17)<nbsp>(<notes-link|link|lectures-stochastic-analysis-ss17.tm>)
 
     <item>Course:<nbsp>Rough paths and Controlled paths (WS16/17)
 
@@ -88,10 +88,10 @@
     (SS16)<nbsp>(<hlink|link|http://www.math.uni-bonn.de/people/thiele/workshop18/>)
 
     <item>Course:<nbsp>Stochastic Analysis (SS16)
-    (<hlink|link|lectures-stochastic-analysis-ss16.tm>)
+    (<notes-link|link|lectures-stochastic-analysis-ss16.tm>)
 
     <item>Course:<nbsp>Rough paths and Controlled paths
-    (WS15/16)<nbsp>(<hlink|link|lectures-rough-paths-ws15-16.tm>)
+    (WS15/16)<nbsp>(<notes-link|link|lectures-rough-paths-ws15-16.tm>)
   </itemize>
 
   <subsection*|Past lecture courses and seminars in Paris Dauphine
@@ -99,7 +99,7 @@
 
   Année 2014/2015
 
-  <itemize|<item><hlink|Processus discrets (M1
+  <itemize|<item><notes-link|Processus discrets (M1
   MMD)|teaching-dauphine-14-15.tm#pd>>
 
   Année 2013/2014
@@ -109,71 +109,77 @@
   Année 2012/2013
 
   <\itemize>
-    <item><hlink|Introduction à la theorie des chemins rugueux (M2
+    <item><notes-link|Introduction à la theorie des chemins rugueux (M2
     EDPMAD,TSI,MASEF)|teaching-dauphine-12-13.tm#rp>
 
-    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-12-13.tm#pd>
+    <item><notes-link|Processus discrets (M1
+    MMD)|teaching-dauphine-12-13.tm#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1
+    <item><notes-link|Contrôle des chaînes de Markov (M1
     MMD)|teaching-dauphine-12-13.tm#ccm>
   </itemize>
 
   Année 2011/2012
 
   <\itemize>
-    <item><hlink|Eléments de mathématiques des décisions collectives (M2
+    <item><notes-link|Eléments de mathématiques des décisions collectives (M2
     EDPMAD,TSI,MASEF)|teaching-dauphine-11-12.tm#mdc>
 
-    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-11-12.tm#pd>
+    <item><notes-link|Processus discrets (M1
+    MMD)|teaching-dauphine-11-12.tm#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1
+    <item><notes-link|Contrôle des chaînes de Markov (M1
     MMD)|teaching-dauphine-11-12.tm#ccm>
 
-    <item><hlink|Processus de Poisson et méthodes actuariels (M1
+    <item><notes-link|Processus de Poisson et méthodes actuariels (M1
     MMD)|teaching-dauphine-11-12.tm#pp>
   </itemize>
 
   Année 2010/2011
 
   <\itemize>
-    <item><hlink|Analyse des fonctions booléennes (M2
+    <item><notes-link|Analyse des fonctions booléennes (M2
     EDPMAD/TSI)|teaching-dauphine-10-11.tm#bf>
 
-    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-10-11.tm#pd>
+    <item><notes-link|Processus discrets (M1
+    MMD)|teaching-dauphine-10-11.tm#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1
+    <item><notes-link|Contrôle des chaînes de Markov (M1
     MMD)|teaching-dauphine-10-11.tm#ccm>
 
-    <item><hlink|Statistique (DU2 Eco IGD Math/Eco
+    <item><notes-link|Statistique (DU2 Eco IGD Math/Eco
     Mat/Info)|teaching-dauphine-10-11.tm#stat>
   </itemize>
 
   Année 2009/2010
 
   <\itemize>
-    <item><hlink|Processus discrets (M1 MMD)|teaching-dauphine-09-10.tm#pd>
+    <item><notes-link|Processus discrets (M1
+    MMD)|teaching-dauphine-09-10.tm#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1
+    <item><notes-link|Contrôle des chaînes de Markov (M1
     MMD)|teaching-dauphine-09-10.tm#ccm>
 
-    <item><hlink|Grandes déviations (M2 EDPMAD/TSI)|teaching-dauphine-09-10.tm#gd>
+    <item><notes-link|Grandes déviations (M2
+    EDPMAD/TSI)|teaching-dauphine-09-10.tm#gd>
 
-    <item><hlink|Statistique (DU2 Eco IGD Math/Eco
+    <item><notes-link|Statistique (DU2 Eco IGD Math/Eco
     Mat/Info)|teaching-dauphine-09-10.tm#stat>
   </itemize>
 
   Année 2008/2009
 
   <\itemize>
-    <item><hlink|Analyse des EDS (M2 EDPMAD/TSI)|teaching-dauphine-08-09.tm#eds>
+    <item><notes-link|Analyse des EDS (M2
+    EDPMAD/TSI)|teaching-dauphine-08-09.tm#eds>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1
+    <item><notes-link|Contrôle des chaînes de Markov (M1
     MMD)|teaching-dauphine-08-09.tm#ccm>
 
-    <item><hlink|Statistique (DU2 Eco IGD Math/Eco
+    <item><notes-link|Statistique (DU2 Eco IGD Math/Eco
     Mat/Info)|teaching-dauphine-08-09.tm#stat>
 
-    <item><hlink|TD d'Evaluation des actif contingents (M1
+    <item><notes-link|TD d'Evaluation des actif contingents (M1
     MMD)|teaching-dauphine-08-09.tm#eac>
   </itemize>
 

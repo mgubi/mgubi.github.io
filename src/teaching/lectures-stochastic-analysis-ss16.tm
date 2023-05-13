@@ -24,16 +24,16 @@
   Remark (16/6/16): Next lectures are 29/6, 30/6, 5/7, 6/7, 12/7, 13/7, 14/7,
   20/7, 21/7. <nbsp>
 
-  <with|font-series|bold|Tutorial classes>: <hlink|Philipp
+  <with|font-series|bold|Tutorial classes>: <notes-link|Philipp
   Boos|#><nbsp>/<nbsp>Monday 16-18, SemR 0.008
 
   <with|font-series|bold|Exam:><nbsp>Oral.<nbsp>1-3 August 2016 / 21-23
   September 2016.
 
   <with|font-series|bold|NEW:><nbsp>Exam Schedule:
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-exam-schedule.pdf>)
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-exam-schedule.pdf>)
   [updated 14/7/2016] Sample exam questions
-  (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-questions.pdf>)
+  (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-questions.pdf>)
 
   <subsection*|Topics>
 
@@ -58,20 +58,20 @@
   <\itemize>
     <item>Note 1 : Stochastic differential equations :
     existence,<nbsp>uniqueness and martingale problems.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-1.pdf>)
-    [version 1.1, posted<nbsp>24/5/2016]
+    (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-1.pdf>) [version
+    1.1, posted<nbsp>24/5/2016]
 
     <item>Note 2 : Girsanov transform, Doob's h-transform.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
+    (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-2.pdf>)<nbsp>[version
     1.1, posted 24/5/2016]
 
     <item>Note 3 : Brownian martingale representation theorem, Entropy and
     Girsanov transform, Boué-Dupuis formula, Large deviations.
-    (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-3.pdf>)
-    [version 1.3, posted 16/6/2016]
+    (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-3.pdf>) [version
+    1.3, posted 16/6/2016]
 
     <item>Note 4 : Kolmogorov theorem, Stochastic flows, Backward Ito
-    formula. (<hlink|pdf|../store/iam/stochastic-analysis-ss16/sa-note-4.pdf>)
+    formula. (<notes-store|pdf|iam/stochastic-analysis-ss16/sa-note-4.pdf>)
     [version 1.1, posted 29/6/2016]
   </itemize>
 
@@ -89,35 +89,35 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|../store/iam/stochastic-analysis-ss16/sa-sheet-1.pdf>
+    <item><notes-store|Sheet 1|iam/stochastic-analysis-ss16/sa-sheet-1.pdf>
     (due on thursday<nbsp>21/4, collected during the lecture)
 
-    <item><hlink|Sheet 2|../store/iam/stochastic-analysis-ss16/sa-sheet-2.pdf><nbsp>(revised
+    <item><notes-store|Sheet 2|iam/stochastic-analysis-ss16/sa-sheet-2.pdf><nbsp>(revised
     version of 25/4/16,<nbsp>due on thursday 28/4, collected during the
     lecture)
 
-    <item><hlink|Sheet 3|../store/iam/stochastic-analysis-ss16/sa-sheet-3.pdf><nbsp>(due
+    <item><notes-store|Sheet 3|iam/stochastic-analysis-ss16/sa-sheet-3.pdf><nbsp>(due
     Mon May 9th, collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 4|../store/iam/stochastic-analysis-ss16/sa-sheet-4.pdf><nbsp>(due
+    <item><notes-store|Sheet 4|iam/stochastic-analysis-ss16/sa-sheet-4.pdf><nbsp>(due
     Mon May 23rd, collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 5|../store/iam/stochastic-analysis-ss16/sa-sheet-5.pdf><nbsp>(due
+    <item><notes-store|Sheet 5|iam/stochastic-analysis-ss16/sa-sheet-5.pdf><nbsp>(due
     Mon May 30th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 6|../store/iam/stochastic-analysis-ss16/sa-sheet-6.pdf><nbsp>(due
+    <item><notes-store|Sheet 6|iam/stochastic-analysis-ss16/sa-sheet-6.pdf><nbsp>(due
     Mon Jun<nbsp>6th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 7|../store/iam/stochastic-analysis-ss16/sa-sheet-7.pdf><nbsp>(due
+    <item><notes-store|Sheet 7|iam/stochastic-analysis-ss16/sa-sheet-7.pdf><nbsp>(due
     Mon Jun 13th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 8|../store/iam/stochastic-analysis-ss16/sa-sheet-8.pdf><nbsp>(due
+    <item><notes-store|Sheet 8|iam/stochastic-analysis-ss16/sa-sheet-8.pdf><nbsp>(due
     Mon Jun 20th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 9|../store/iam/stochastic-analysis-ss16/sa-sheet-9.pdf>
+    <item><notes-store|Sheet 9|iam/stochastic-analysis-ss16/sa-sheet-9.pdf>
     (due Mon Jul 11th,<nbsp>collected at the beginning of the tutorial)
 
-    <item><hlink|Sheet 10|../store/iam/stochastic-analysis-ss16/sa-sheet-10.pdf><nbsp>(due
+    <item><notes-store|Sheet 10|iam/stochastic-analysis-ss16/sa-sheet-10.pdf><nbsp>(due
     Mon Jul 18th,<nbsp>collected at the beginning of the tutorial)
   </itemize>
 

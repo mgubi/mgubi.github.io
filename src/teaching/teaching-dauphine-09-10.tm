@@ -17,13 +17,13 @@
   <with|font-series|bold|Année 2009/2010>
 
   <\itemize>
-    <item><hlink|Processus discrets (M1 MMD)|#pd>
+    <item><notes-link|Processus discrets (M1 MMD)|#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
+    <item><notes-link|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
 
-    <item><hlink|Grandes deviations (M2 EDPMAD/TSI)|#gd>
+    <item><notes-link|Grandes deviations (M2 EDPMAD/TSI)|#gd>
 
-    <item><hlink|Statistique (DU2 Eco IGD Math/Eco Mat/Info)|#stat>
+    <item><notes-link|Statistique (DU2 Eco IGD Math/Eco Mat/Info)|#stat>
   </itemize>
 
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
@@ -112,56 +112,55 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Esperance conditionelle
-    (<hlink|PDF|../store/e0910/pd1.pdf>)\ 
+    <item>Poly 1. Esperance conditionelle (<notes-store|PDF|e0910/pd1.pdf>)\ 
 
-    <item>Poly 2. Chaînes de Markov (<hlink|PDF|../store/e0910/pd2.pdf>)\ 
+    <item>Poly 2. Chaînes de Markov (<notes-store|PDF|e0910/pd2.pdf>)\ 
 
     <item>Poly 3. Théoremes limites pour les chaînes de Markov
-    (<hlink|PDF|../store/e0910/pd3.pdf>)\ 
+    (<notes-store|PDF|e0910/pd3.pdf>)\ 
 
-    <item>Poly 4. Martingales (<hlink|PDF|../store/e0910/pd4.pdf>)\ 
+    <item>Poly 4. Martingales (<notes-store|PDF|e0910/pd4.pdf>)\ 
 
-    <item>TD1. Esperance conditionelle. (<hlink|PDF|../store/e0910/pd-td1.pdf>)\ 
+    <item>TD1. Esperance conditionelle. (<notes-store|PDF|e0910/pd-td1.pdf>)\ 
 
-    <item>TD2. Chaînes de Markov I. (<hlink|PDF|../store/e0910/pd-td2.pdf>)\ 
+    <item>TD2. Chaînes de Markov I. (<notes-store|PDF|e0910/pd-td2.pdf>)\ 
 
-    <item>TD3. Chaînes de Markov II. (<hlink|PDF|../store/e0910/pd-td3.pdf>)\ 
+    <item>TD3. Chaînes de Markov II. (<notes-store|PDF|e0910/pd-td3.pdf>)\ 
 
-    <item>TD4. Chaînes de Markov III. (<hlink|PDF|../store/e0910/pd-td4.pdf>)\ 
+    <item>TD4. Chaînes de Markov III. (<notes-store|PDF|e0910/pd-td4.pdf>)\ 
 
-    <item>TD5. Chaînes de Markov IV. (<hlink|PDF|../store/e0910/pd-td5.pdf>)\ 
+    <item>TD5. Chaînes de Markov IV. (<notes-store|PDF|e0910/pd-td5.pdf>)\ 
 
     <item>Exercice sur le couplage des chaînes de Markov
-    (<hlink|PDF|../store/e0910/couplage.pdf>)\ 
+    (<notes-store|PDF|e0910/couplage.pdf>)\ 
 
-    <item>TD6. Martingales. (<hlink|PDF|../store/e0910/pd-td6.pdf>)\ 
+    <item>TD6. Martingales. (<notes-store|PDF|e0910/pd-td6.pdf>)\ 
 
-    <item>Exercices en vue du partiel. (<hlink|PDF|../store/e0910/pd-prepartiel-0910.pdf>)\ 
+    <item>Exercices en vue du partiel. (<notes-store|PDF|e0910/pd-prepartiel-0910.pdf>)\ 
 
     <item>Solutions des exercices en vue du partiel.
-    (<hlink|PDF|../store/e0910/pd-prepartiel-0910-solutions.pdf>)\ 
+    (<notes-store|PDF|e0910/pd-prepartiel-0910-solutions.pdf>)\ 
 
-    <item>Corrigé TD3 (<hlink|PDF|../store/e0910/pd-td3-solutions.pdf>)\ 
+    <item>Corrigé TD3 (<notes-store|PDF|e0910/pd-td3-solutions.pdf>)\ 
 
-    <item>Corrigé TD4 (<hlink|PDF|../store/e0910/pd-td4-corrige.pdf>)\ 
+    <item>Corrigé TD4 (<notes-store|PDF|e0910/pd-td4-corrige.pdf>)\ 
 
-    <item>Corrigé TD5 (<hlink|PDF|../store/e0910/pd-td5-corrige.pdf>)\ 
+    <item>Corrigé TD5 (<notes-store|PDF|e0910/pd-td5-corrige.pdf>)\ 
 
-    <item>Corrigé TD6 (<hlink|PDF|../store/e0910/pd-td6-corrige.pdf>)\ 
+    <item>Corrigé TD6 (<notes-store|PDF|e0910/pd-td6-corrige.pdf>)\ 
 
-    <item>Sujet du Partiel (<hlink|PDF|../store/e0910/pd-partiel-0910.pdf>)\ 
+    <item>Sujet du Partiel (<notes-store|PDF|e0910/pd-partiel-0910.pdf>)\ 
 
-    <item>Corrigé du Partiel (<hlink|PDF|../store/e0910/pd-partiel-corrige-0910.pdf>)\ 
+    <item>Corrigé du Partiel (<notes-store|PDF|e0910/pd-partiel-corrige-0910.pdf>)\ 
 
-    <item>Exercices en vue de l'examen (<hlink|PDF|../store/e0910/pd-preexamen-0910.pdf>)\ 
+    <item>Exercices en vue de l'examen (<notes-store|PDF|e0910/pd-preexamen-0910.pdf>)\ 
 
     <item>Solutions des exercices en vue de l'examen.
-    (<hlink|PDF|../store/e0910/pd-preexamen-corrige-0910.pdf>)\ 
+    (<notes-store|PDF|e0910/pd-preexamen-corrige-0910.pdf>)\ 
 
-    <item>Examen 2009/2010. (<hlink|PDF|../store/e0910/pd-examen-0910.pdf>)\ 
+    <item>Examen 2009/2010. (<notes-store|PDF|e0910/pd-examen-0910.pdf>)\ 
 
-    <item>Corrigé Examen 2009/2010. (<hlink|PDF|../store/e0910/pd-examen-corrige-0910.pdf>)
+    <item>Corrigé Examen 2009/2010. (<notes-store|PDF|e0910/pd-examen-corrige-0910.pdf>)
   </enumerate>
 
   <with|font-series|bold|Comunications>
@@ -179,21 +178,21 @@
   <with|font-series|bold|Sujets des années precedentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e0910/md-controle2004.pdf>).
-    Rattrapage (<hlink|PDF|../store/e0910/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<notes-store|PDF|e0910/md-controle2004.pdf>).
+    Rattrapage (<notes-store|PDF|e0910/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e0910/proc-controle0106.pdf>).
-    Rattrapage (<hlink|PDF|../store/e0910/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<notes-store|PDF|e0910/proc-controle0106.pdf>).
+    Rattrapage (<notes-store|PDF|e0910/proc-controle0906Rectif.pdf>).
 
-    <item>2006/2007. Partiel (<hlink|PDF|../store/e0910/PartielProcDiscrets0607.pdf>).
-    Examen (<hlink|PDF|../store/e0910/proc-controle0107.pdf>). Rattrapage
-    (<hlink|PDF|../store/e0910/proc-controle0907.pdf>).
+    <item>2006/2007. Partiel (<notes-store|PDF|e0910/PartielProcDiscrets0607.pdf>).
+    Examen (<notes-store|PDF|e0910/proc-controle0107.pdf>). Rattrapage
+    (<notes-store|PDF|e0910/proc-controle0907.pdf>).
 
-    <item>2007/2008. Partiel (<hlink|PDF|../store/e0910/PartielProcDiscrets0708.pdf>).
-    Examen (<hlink|PDF|../store/e0910/proc-controle0108.pdf>). Rattrapage
-    (<hlink|PDF|../store/e0910/proc-controle0908.pdf>).
+    <item>2007/2008. Partiel (<notes-store|PDF|e0910/PartielProcDiscrets0708.pdf>).
+    Examen (<notes-store|PDF|e0910/proc-controle0108.pdf>). Rattrapage
+    (<notes-store|PDF|e0910/proc-controle0908.pdf>).
 
-    <item>2008/2009. Examen (<hlink|PDF|../store/e0910/proc-controle0109.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e0910/proc-controle0109.pdf>).
   </enumerate>
 
   <label|ccm><subsubsection*|Côntrole des chaines de Markov (M1 MMD -
@@ -276,36 +275,36 @@
 
   <\enumerate>
     <item>Poly 1. Complements sur l'esperance conditionnelle.
-    (<hlink|PDF|../store/e0910/ccm1.pdf>)\ 
+    (<notes-store|PDF|e0910/ccm1.pdf>)\ 
 
     <item>Poly 2. Temps d'arrêt, identité de Wald et propriété de Markov
-    forte. (<hlink|PDF|../store/e0910/ccm2.pdf>)\ 
+    forte. (<notes-store|PDF|e0910/ccm2.pdf>)\ 
 
     <item>Poly 3. Chaînes de Markov contrôlées.
-    (<hlink|PDF|../store/e0910/ccm3.pdf>)\ 
+    (<notes-store|PDF|e0910/ccm3.pdf>)\ 
 
-    <item>Poly 4. Arrêt optimal. (<hlink|PDF|../store/e0910/ccm4.pdf>)\ 
+    <item>Poly 4. Arrêt optimal. (<notes-store|PDF|e0910/ccm4.pdf>)\ 
 
-    <item>TD1. Esperance conditionelle. (<hlink|PDF|../store/e0910/ccm-td1.pdf>)\ 
+    <item>TD1. Esperance conditionelle. (<notes-store|PDF|e0910/ccm-td1.pdf>)\ 
 
     <item>TD2. Temps d'arrêt et propriété de Markov forte.
-    (<hlink|PDF|../store/e0910/ccm-td2.pdf>)\ 
+    (<notes-store|PDF|e0910/ccm-td2.pdf>)\ 
 
     <item>TD3. Chaînes de Markov contrôlées.
-    (<hlink|PDF|../store/e0910/ccm-td3.pdf>)\ 
+    (<notes-store|PDF|e0910/ccm-td3.pdf>)\ 
 
     <item>TD4. Chaînes de Markov contrôlées (II).
-    (<hlink|PDF|../store/e0910/ccm-td4.pdf>)\ 
+    (<notes-store|PDF|e0910/ccm-td4.pdf>)\ 
 
-    <item>TD5. Arrêt optimal. (<hlink|PDF|../store/e0910/ccm-td5.pdf>)\ 
+    <item>TD5. Arrêt optimal. (<notes-store|PDF|e0910/ccm-td5.pdf>)\ 
 
-    <item>Corrigé TD5. (<hlink|PDF|../store/e0910/ccm-td5-corrige.pdf>)\ 
+    <item>Corrigé TD5. (<notes-store|PDF|e0910/ccm-td5-corrige.pdf>)\ 
 
-    <item>Sujet du Partiel (<hlink|PDF|../store/e0910/ccm-partiel-0910.pdf>)\ 
+    <item>Sujet du Partiel (<notes-store|PDF|e0910/ccm-partiel-0910.pdf>)\ 
 
-    <item>Corrigé du Partiel (<hlink|PDF|../store/e0910/ccm-partiel-corrige-0910.pdf>)\ 
+    <item>Corrigé du Partiel (<notes-store|PDF|e0910/ccm-partiel-corrige-0910.pdf>)\ 
 
-    <item>Exercices en vue de l'examen (<hlink|PDF|../store/e0910/ccm-preexamen-0910.pdf>)
+    <item>Exercices en vue de l'examen (<notes-store|PDF|e0910/ccm-preexamen-0910.pdf>)
   </enumerate>
 
   <with|font-series|bold|Comunications>
@@ -362,11 +361,11 @@
     <item>La page web de J.A. Bucklew (<hlink|URL|http://homepages.cae.wisc.edu/~bucklew/publication.htm>)
 
     <item>Le cours de A. Puhalskii sur les GD
-    (<hlink|PDF|../store/e0910/http://www-math.cudenver.edu/~puhalski/ld/course_1.pdf>)
+    (<notes-store|PDF|e0910/http://www-math.cudenver.edu/~puhalski/ld/course_1.pdf>)
 
     <item>Quelques preuves du théorème de Riesz-Markov
-    (<hlink|PDF|../store/e0910/http://www.math.ubc.ca/~feldman/m511/rieszmarkov.pdf>)
-    (<hlink|PDF|../store/e0910/http://www.imsc.res.in/~sunder/rrt1.pdf>).
+    (<notes-store|PDF|e0910/http://www.math.ubc.ca/~feldman/m511/rieszmarkov.pdf>)
+    (<notes-store|PDF|e0910/http://www.imsc.res.in/~sunder/rrt1.pdf>).
   </itemize>
 
   <with|font-series|bold|Journal>
@@ -400,32 +399,32 @@
 
   <\enumerate>
     <item>Poly 1. Théoreme de Cramér sur R et application.
-    (<hlink|PDF|../store/e0910/ld1.pdf>)\ 
+    (<notes-store|PDF|e0910/ld1.pdf>)\ 
 
     <item>Poly 2. Preliminaires topologiques.
-    (<hlink|PDF|../store/e0910/ld2.pdf>)\ 
+    (<notes-store|PDF|e0910/ld2.pdf>)\ 
 
     <item>Poly 3. Principes des grandes deviations.
-    (<hlink|PDF|../store/e0910/ld3.pdf>)\ 
+    (<notes-store|PDF|e0910/ld3.pdf>)\ 
 
     <item>Poly 4. Théoreme de Sanov et applications.
-    (<hlink|PDF|../store/e0910/ld4.pdf>)\ 
+    (<notes-store|PDF|e0910/ld4.pdf>)\ 
   </enumerate>
 
   <with|font-series|bold|Exams (en anglais)>
 
-  Remarques sur l'examen (<hlink|PDF|../store/e0910/exam-remarks.pdf>)\ 
+  Remarques sur l'examen (<notes-store|PDF|e0910/exam-remarks.pdf>)\ 
 
   <\enumerate>
-    <item>Text 1. Random walks I (<hlink|PDF|../store/e0910/exam1.pdf>)\ 
+    <item>Text 1. Random walks I (<notes-store|PDF|e0910/exam1.pdf>)\ 
 
-    <item>Text 2. Random walks II (<hlink|PDF|../store/e0910/exam2.pdf>)\ 
+    <item>Text 2. Random walks II (<notes-store|PDF|e0910/exam2.pdf>)\ 
 
-    <item>Text 3. Curie-Weiss model (<hlink|PDF|../store/e0910/exam3.pdf>)\ 
+    <item>Text 3. Curie-Weiss model (<notes-store|PDF|e0910/exam3.pdf>)\ 
 
-    <item>Text 4. Brownian motion (<hlink|PDF|../store/e0910/exam4.pdf>)\ 
+    <item>Text 4. Brownian motion (<notes-store|PDF|e0910/exam4.pdf>)\ 
 
-    <item>Text 5. Gibbsian conditioning (<hlink|PDF|../store/e0910/exam5.pdf>)
+    <item>Text 5. Gibbsian conditioning (<notes-store|PDF|e0910/exam5.pdf>)
   </enumerate>
 
   <with|font-series|bold|Comunications>
@@ -435,7 +434,7 @@
   <label|stat><subsubsection*|Statistique (DU2 Eco IGD Math/Eco Mat/Info)>
 
   <\itemize>
-    <item>Cours de l'année derniere (<hlink|Lien|teaching-dauphine-08-09.tm#stat>)
+    <item>Cours de l'année derniere (<notes-link|Lien|teaching-dauphine-08-09.tm#stat>)
 
     <item>Chargées de TD: Paola Siri (TD1). Fadoua Balabdaoui-Mohr (TD2,TD3).
     Massimiliano Gubinelli (TD4). Milton Jara (TD5). Anne-Marie Boussion
@@ -517,47 +516,47 @@
 
   <\enumerate>
     <item>Poly 1. Rappels et vecteurs aleatoires.
-    (<hlink|PDF|../store/e0910/stat1.pdf>)
+    (<notes-store|PDF|e0910/stat1.pdf>)
 
     <item>Poly 2. Fonction caractéristique et vecteurs Gaussiens.
-    (<hlink|PDF|../store/e0910/stat2.pdf>)
+    (<notes-store|PDF|e0910/stat2.pdf>)
 
     <item>Poly 3. Convergence des variables aléatoires. Loi des grandes
-    nombres et théorème centrale limite. (<hlink|PDF|../store/e0910/stat3.pdf>)
+    nombres et théorème centrale limite. (<notes-store|PDF|e0910/stat3.pdf>)
 
-    <item>Poly 4. Estimation ponctuelle. (<hlink|PDF|../store/e0910/stat4.pdf>)
+    <item>Poly 4. Estimation ponctuelle. (<notes-store|PDF|e0910/stat4.pdf>)
 
     <item>Poly 5. Intervalles de confiance.
-    (<hlink|PDF|../store/e0910/stat5.pdf>)
+    (<notes-store|PDF|e0910/stat5.pdf>)
   </enumerate>
 
   <with|font-series|bold|Feuilles de TD et sujets>
 
   <\enumerate>
     <item>TD1: Intégrales doubles et couples de variables aléatoires.
-    (<hlink|PDF|../store/e0910/stat-td1.pdf>)
+    (<notes-store|PDF|e0910/stat-td1.pdf>)
 
     <item>TD1s: Supplement sur les intégrales doubles.
-    (<hlink|PDF|../store/e0910/stat-td1-supp.pdf>)
+    (<notes-store|PDF|e0910/stat-td1-supp.pdf>)
 
     <item>TD2: Vecteurs aléatoires, vecteurs Gaussiens et loi Gamma et
-    Khi-deux. (<hlink|PDF|../store/e0910/stat-td2.pdf>)
+    Khi-deux. (<notes-store|PDF|e0910/stat-td2.pdf>)
 
-    <item>TD3: Vecteurs Gaussiens. (<hlink|PDF|../store/e0910/stat-td3.pdf>)
+    <item>TD3: Vecteurs Gaussiens. (<notes-store|PDF|e0910/stat-td3.pdf>)
 
-    <item>TD4: Convergence en loi. (<hlink|PDF|../store/e0910/stat-td4.pdf>)
+    <item>TD4: Convergence en loi. (<notes-store|PDF|e0910/stat-td4.pdf>)
 
-    <item>Pre-Contrôle continu 1. (<hlink|PDF|../store/e0910/stat-cc1-2010-v1.pdf>)
+    <item>Pre-Contrôle continu 1. (<notes-store|PDF|e0910/stat-cc1-2010-v1.pdf>)
 
-    <item>Premier Contrôle continu. (<hlink|PDF|../store/e0910/stat-cc1-2010-bis.pdf>)
+    <item>Premier Contrôle continu. (<notes-store|PDF|e0910/stat-cc1-2010-bis.pdf>)
 
-    <item>Partiel. (<hlink|PDF|../store/e0910/stat-partiel-0910.pdf>)
+    <item>Partiel. (<notes-store|PDF|e0910/stat-partiel-0910.pdf>)
 
-    <item>TD5: Estimation ponctuelle. (<hlink|PDF|../store/e0910/stat-td5.pdf>)
+    <item>TD5: Estimation ponctuelle. (<notes-store|PDF|e0910/stat-td5.pdf>)
 
-    <item>TD6: Intervalles de confiance. (<hlink|PDF|../store/e0910/stat-td6.pdf>)
+    <item>TD6: Intervalles de confiance. (<notes-store|PDF|e0910/stat-td6.pdf>)
 
-    <item>Deuxieme Contrôle continu. (<hlink|PDF|../store/e0910/stat-cc2-2010.pdf>)
+    <item>Deuxieme Contrôle continu. (<notes-store|PDF|e0910/stat-cc2-2010.pdf>)
   </enumerate>
 
   <itemize|>

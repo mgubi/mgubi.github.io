@@ -57,47 +57,47 @@
 
   <\enumerate>
     <item>Introduction [Gubinelli, 22.4.2021]
-    (<hlink|script|../store/iam/seminar-stat-mech-ss21/seminar-stat-mech-lecture-intro.pdf>)
+    (<notes-store|script|iam/seminar-stat-mech-ss21/seminar-stat-mech-lecture-intro.pdf>)
 
     <item>The Curie\UWeiss Model<nbsp>[Carolin Eschenauer, 29.4.2021]
-    (<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handzettel_Curie_Weiss_Modell.pdf>)
+    (<notes-store|handout|iam/seminar-stat-mech-ss21/Handzettel_Curie_Weiss_Modell.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/KTsvSyM0fWi9yjD>) (ipython
-    <hlink|notebook1|../store/iam/seminar-stat-mech-ss21/Vortrag_Teil_1.ipynb>,
-    <hlink|notebook2|../store/iam/seminar-stat-mech-ss21/Vortrag_Teil_2.ipynb>)
+    <notes-store|notebook1|iam/seminar-stat-mech-ss21/Vortrag_Teil_1.ipynb>,
+    <notes-store|notebook2|iam/seminar-stat-mech-ss21/Vortrag_Teil_2.ipynb>)
 
     <item>The Ising Model I [Daniela Söllheim,
-    6.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout_Isingmodell_Teil1.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/OypF0BDHcsCJFVh>)
+    6.5.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Handout_Isingmodell_Teil1.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/OypF0BDHcsCJFVh>)
 
     <item>The Ising Model II<nbsp><nbsp>[Carlotta Gerstein,
-    14.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout-Gerstein.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/GFNluDMG9DMkwri>)
+    14.5.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Handout-Gerstein.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/GFNluDMG9DMkwri>)
 
     <item>Liquid-Vapor Equilibrium<nbsp>[Julius Pan,
-    20.5.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/LVE-Julius_Pan.pdf>)
+    20.5.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/LVE-Julius_Pan.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/yvTA4wMTtQaBEsT>)
 
-    <item>Cluster Expansion [Paul Opfer, 10.6.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Cluster_Expansion_Handout.pdf>)
+    <item>Cluster Expansion [Paul Opfer, 10.6.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Cluster_Expansion_Handout.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/3ezJhsD0oJfD05R>)
 
     <item>Infinite-Volume Gibbs Measures I <nbsp>[Moritz Berg,
-    11.6.2021]<nbsp><nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Hauptseminar_Handout_Moriitz_Berg.pdf>)<nbsp>(<hlink|slides|../store/iam/seminar-stat-mech-ss21/Hauptseminar_Praesentation_Moritz_Berg.pdf>)
+    11.6.2021]<nbsp><nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Hauptseminar_Handout_Moriitz_Berg.pdf>)<nbsp>(<notes-store|slides|iam/seminar-stat-mech-ss21/Hauptseminar_Praesentation_Moritz_Berg.pdf>)
 
     <item>Infinite-Volume Gibbs Measures II [Ben
-    Breitinger,<nbsp>17.6.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/handout-short-breitinger.pdf>)<nbsp>(<hlink|slides|../store/iam/seminar-stat-mech-ss21/Breitinger-Gibbs-part2.pdf>)
+    Breitinger,<nbsp>17.6.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/handout-short-breitinger.pdf>)<nbsp>(<notes-store|slides|iam/seminar-stat-mech-ss21/Breitinger-Gibbs-part2.pdf>)
 
     <item>Infinite-Volume Gibbs Measures III [Anne
-    Weiÿ,<nbsp>1.7.2021]<nbsp>(<hlink|handout|../store/iamli/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<hlink|slides|../store/iamli/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
+    Weiÿ,<nbsp>1.7.2021]<nbsp>(<notes-store|handout|iamli/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<notes-store|slides|iamli/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
 
     <item>Pirogov\USinai theory [Jakob Kellermann,
-    2.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/HS_Stochastik_PST_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/wDf8cIxgV097xxQ>)
+    2.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/HS_Stochastik_PST_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/wDf8cIxgV097xxQ>)
 
     <item>The Gaussian Free Field on <math|\<bbb-Z\><rsup|d>> [Dario Welz,
-    8.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/GFF_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Pf9hbGofFB0nf0L>)
+    8.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/GFF_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Pf9hbGofFB0nf0L>)
 
     <item>Models with Continuous Symmetry [Philipp Ligtenberg,
-    15.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Models_with_Continuous_Symmetry-Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Wkg2RX3bhiaccEd>)
+    15.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Models_with_Continuous_Symmetry-Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/Wkg2RX3bhiaccEd>)
 
     <item>Reflection Positivity [Antoina Westphal,
-    22.7.2021]<nbsp>(<hlink|handout|../store/iam/seminar-stat-mech-ss21/Handout_Reflection_Positivity.pdf>)
+    22.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Handout_Reflection_Positivity.pdf>)
   </enumerate>
 
   \;

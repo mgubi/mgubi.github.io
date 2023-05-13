@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|compact-list|notes-meta>>
 
@@ -72,24 +72,24 @@
   <subsection*|Notes>
 
   <\itemize>
-    <item>Sheet 1 (week 10/4-14/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-1.pdf>)
+    <item>Sheet 1 (week 10/4-14/4) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-1.pdf>)
 
-    <item>Sheet 2 (week 17/4-19/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-2.pdf>)<nbsp>
+    <item>Sheet 2 (week 17/4-19/4) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-2.pdf>)
 
-    <item>Sheet 3 (week 24/4-26/4) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-3.pdf>)
+    <item>Sheet 3 (week 24/4-26/4) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-3.pdf>)
 
-    <item>Sheet 4 (week 8/5) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-4.pdf>)
+    <item>Sheet 4 (week 8/5) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-4.pdf>)
 
-    <item>Sheet 5 (week 15/5-17/5) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-5.pdf>)
+    <item>Sheet 5 (week 15/5-17/5) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-5.pdf>)
 
     <item>Sheet 6 (weeks 29/5 and 5/6-7/6)
-    (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>)
+    (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-6.pdf>)
 
-    <item>Sheet 7 (week 12/6-14/6) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-7.pdf>)
+    <item>Sheet 7 (week 12/6-14/6) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-7.pdf>)
 
-    <item>Sheet 8 (week 19/6-21/6) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-8.pdf>)
+    <item>Sheet 8 (week 19/6-21/6) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-8.pdf>)
 
-    <item>Sheet 9 (week 3/7-5/7) (<hlink|pdf|../store/iam/quantum-probability-ss18/qp-sheet-9.pdf>)
+    <item>Sheet 9 (week 3/7-5/7) (<notes-store|pdf|iam/quantum-probability-ss18/qp-sheet-9.pdf>)
   </itemize>
 
   <subsection*|Journal>

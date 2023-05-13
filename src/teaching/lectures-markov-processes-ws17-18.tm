@@ -50,11 +50,11 @@
   Some notes for the lectures will be posted here:
 
   <\itemize>
-    <item><hlink|Note 1|../store/iam/markov-processes-ws1718/mp-note-1.pdf> :
+    <item><notes-store|Note 1|iam/markov-processes-ws1718/mp-note-1.pdf> :
     Introduction, examples, the canonical setup and the strong Markov
     property. (pdf) [version 1.1, posted<nbsp>24/10/2017]
 
-    <item><hlink|Note 2|../store/iam/markov-processes-ws1718/mp-note-2.pdf><nbsp>:
+    <item><notes-store|Note 2|iam/markov-processes-ws1718/mp-note-2.pdf><nbsp>:
     Martingale connection, recurrence of discrete Markov chains,
     Forster-Lyapounov criteria for recurrence. [version 1, posted 2/11/2017]
   </itemize>
@@ -72,37 +72,37 @@
   <subsection*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 1|../store/iam/markov-processes-ws1718/mp-sheet-1.pdf>
+    <item><notes-store|Sheet 1|iam/markov-processes-ws1718/mp-sheet-1.pdf>
     (due on thursday 2/11)
 
-    <item><hlink|Sheet 2|../store/iam/markov-processes-ws1718/mp-sheet-2.pdf><nbsp>(due
+    <item><notes-store|Sheet 2|iam/markov-processes-ws1718/mp-sheet-2.pdf><nbsp>(due
     on tuesday 7/11)
 
-    <item><hlink|Sheet 3|../store/iam/markov-processes-ws1718/mp-sheet-3.pdf>
+    <item><notes-store|Sheet 3|iam/markov-processes-ws1718/mp-sheet-3.pdf>
     (due on tuesday 14/11)
 
-    <item><hlink|Sheet 4|../store/iam/markov-processes-ws1718/mp-sheet-4.pdf><nbsp>(due
+    <item><notes-store|Sheet 4|iam/markov-processes-ws1718/mp-sheet-4.pdf><nbsp>(due
     on tuesday 21/11)
 
-    <item><hlink|Sheet<nbsp>5|../store/iam/markov-processes-ws1718/mp-sheet-5.pdf><nbsp>(due
+    <item><notes-store|Sheet<nbsp>5|iam/markov-processes-ws1718/mp-sheet-5.pdf><nbsp>(due
     on tuesday 28/11)
 
-    <item><hlink|Sheet 6|../store/iam/markov-processes-ws1718/mp-sheet-6.pdf><nbsp>(due
+    <item><notes-store|Sheet 6|iam/markov-processes-ws1718/mp-sheet-6.pdf><nbsp>(due
     on tuesday 5/12)
 
-    <item><hlink|Sheet 7|../store/iam/markov-processes-ws1718/mp-sheet-7.pdf>
+    <item><notes-store|Sheet 7|iam/markov-processes-ws1718/mp-sheet-7.pdf>
     (due on tuesday 12/12)
 
-    <item><hlink|Sheet 8|../store/iam/markov-processes-ws1718/mp-sheet-8.pdf>
+    <item><notes-store|Sheet 8|iam/markov-processes-ws1718/mp-sheet-8.pdf>
     (due on tuesday 19/12)
 
-    <item><hlink|Sheet 9|../store/iam/markov-processes-ws1718/mp-sheet-9.pdf><nbsp>(due
+    <item><notes-store|Sheet 9|iam/markov-processes-ws1718/mp-sheet-9.pdf><nbsp>(due
     on tuesday 9/1)
 
-    <item><hlink|Sheet 10|../store/iam/markov-processes-ws1718/mp-sheet-10.pdf><nbsp>(due
+    <item><notes-store|Sheet 10|iam/markov-processes-ws1718/mp-sheet-10.pdf><nbsp>(due
     on tuesday 16/1)
 
-    <item><hlink|Sheet 11|../store/iam/markov-processes-ws1718/mp-sheet-11.pdf><nbsp>(due
+    <item><notes-store|Sheet 11|iam/markov-processes-ws1718/mp-sheet-11.pdf><nbsp>(due
     on tuesday 23/1)
   </itemize>
 

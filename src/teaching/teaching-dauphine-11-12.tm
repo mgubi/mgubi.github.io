@@ -17,14 +17,15 @@
   <with|font-series|bold|Année 2011/2012>
 
   <\itemize>
-    <item><hlink|Eléments de mathématiques des décisions collectives (M2
+    <item><notes-link|Eléments de mathématiques des décisions collectives (M2
     EDPMAD,TSI,MASEF)|#mdc>
 
-    <item><hlink|Processus discrets (M1 MMD)|#pd>
+    <item><notes-link|Processus discrets (M1 MMD)|#pd>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
+    <item><notes-link|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
 
-    <item><hlink|Processus de Poisson et méthodes actuariels (M1 MMD)|#pp>
+    <item><notes-link|Processus de Poisson et méthodes actuariels (M1
+    MMD)|#pp>
   </itemize>
 
   <label|mdc><subsubsection*|Eléments de mathématiques des décisions
@@ -54,7 +55,7 @@
 
   <\itemize>
     <item>Le cours de l'année dernière \PAnalyse des fonctions booléennes\Q
-    (<hlink|link|../e1011/#abf>)
+    (<notes-link|link|../e1011/#abf>)
 
     <item>Paradoxe de Condorcet (<hlink|wp|http://fr.wikipedia.org/wiki/Paradoxe_de_Condorcet>),
     Théorème de Arrow (<hlink|wp|http://fr.wikipedia.org/wiki/ThÃ©orÃ¨me_d%27impossibilitÃ©_d%27Arrow>),
@@ -77,31 +78,31 @@
     <item>G. Kalai and S. Safra. Threshold Phenomena and Influence, in:
     Computational Complexity and Statistical Physics, A.G. Percus, G. Istrate
     and C. Moore, eds. (Oxford University Press, New York, 2006), pp. 25-60.
-    (<hlink|PDF|../store/e1112/http://www.ma.huji.ac.il/~kalai/ML.pdf>)
+    (<notes-store|PDF|e1112/http://www.ma.huji.ac.il/~kalai/ML.pdf>)
 
     <item>G. Kalai, A Fourier-Theoretic Perspective for the Condorcet Paradox
     and Arrow's theorem, Adv. in Appl. Math. 29(2002), 412-426.
-    (<hlink|PDF|../store/e1112/http://www.ma.huji.ac.il/~kalai/arr.pdf>)
+    (<notes-store|PDF|e1112/http://www.ma.huji.ac.il/~kalai/arr.pdf>)
 
     <item>G. Kalai, Social Indeterminacy, Econometrica, 72 (2004), 1565-1581.
-    (<hlink|PDF|../store/e1112/http://www.ma.huji.ac.il/~kalai/SI.pdf>)
+    (<notes-store|PDF|e1112/http://www.ma.huji.ac.il/~kalai/SI.pdf>)
 
     <item>G. Kalai, Noise sensitivity and chaos in social choice theory.
     Discussion Paper Series dp399, Center for Rationality and Interactive
     Decision Theory, Hebrew University, Jerusalem.
-    (<hlink|PDF|../store/e1112/http://www.ma.huji.ac.il/~kalai/CHAOS.pdf>)
+    (<notes-store|PDF|e1112/http://www.ma.huji.ac.il/~kalai/CHAOS.pdf>)
 
     <item>O'Donnell, R. 2008. Some topics in analysis of boolean functions.
     In Proceedings of the 40th Annual ACM Symposium on theory of Computing
     (Victoria, British Columbia, Canada, May 17 - 20, 2008). STOC '08. ACM,
     New York, NY, 569-578. (<hlink|doi|http://doi.acm.org/10.1145/1374376.1374458>)
-    (<hlink|PDF|../store/e1112/http://www.cs.cmu.edu/~odonnell/papers/analysis-survey.pdf>)
+    (<notes-store|PDF|e1112/http://www.cs.cmu.edu/~odonnell/papers/analysis-survey.pdf>)
 
     <item>E. Friedgut, G. Kalai, N. Nisan, Elections Can be Manipulated Often
-    (<hlink|PDF|../store/e1112/http://www.ratio.huji.ac.il/dp_files/dp481.pdf>)
+    (<notes-store|PDF|e1112/http://www.ratio.huji.ac.il/dp_files/dp481.pdf>)
 
     <item>\PHypercontractivity and its applications\Q, a survey by Punya
-    Biswal (<hlink|PDF|../store/e1112/http://cdn.bitbucket.org/punya/hypercontractivity-survey/downloads/Quals.pdf>)
+    Biswal (<notes-store|PDF|e1112/http://cdn.bitbucket.org/punya/hypercontractivity-survey/downloads/Quals.pdf>)
 
     <item>TCS math blog (<hlink|link|http://tcsmath.wordpress.com/>)
 
@@ -134,13 +135,13 @@
 
   <\enumerate>
     <item>Part 1. Introduction. Social choice theory. Fourier analysis. BLR
-    ad FKN theorems. (<hlink|PDF|../store/e1112/abf1.pdf>)
+    ad FKN theorems. (<notes-store|PDF|e1112/abf1.pdf>)
 
     <item>Part 2. Hypercontractivity. A first look to majority. Influences.
     KKL and Friedgut theorems. Influential coalitions.
-    (<hlink|PDF|../store/e1112/abf2.pdf>)
+    (<notes-store|PDF|e1112/abf2.pdf>)
 
-    <item>Exam questions. (<hlink|PDF|../store/e1112/abf-exam.pdf>)
+    <item>Exam questions. (<notes-store|PDF|e1112/abf-exam.pdf>)
   </enumerate>
 
   <with|font-series|bold|Journal>
@@ -150,7 +151,7 @@
   <label|pd><subsubsection*|Processus discrets (M1 MMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-10-11.tm#pd>)
+    <item>Cours de l'année dernière (<notes-link|Lien|teaching-dauphine-10-11.tm#pd>)
 
     <item>Chargés de TD: Joseph Lehec et François Simenhaus.
   </itemize>
@@ -239,68 +240,67 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Espérance conditionnelle
-    (<hlink|PDF|../store/e1112/pd1.pdf>)
+    <item>Poly 1. Espérance conditionnelle (<notes-store|PDF|e1112/pd1.pdf>)
 
     <item>Poly 2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1112/pd2.pdf>)
+    (<notes-store|PDF|e1112/pd2.pdf>)
 
     <item>Poly 3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1112/pd3.pdf>)
+    (<notes-store|PDF|e1112/pd3.pdf>)
 
-    <item>Poly 4. Chaînes de Markov (<hlink|PDF|../store/e1112/pd4.pdf>)
+    <item>Poly 4. Chaînes de Markov (<notes-store|PDF|e1112/pd4.pdf>)
 
-    <item>TD1. Espérance conditionnelle. (<hlink|PDF|../store/e1112/pd-td1.pdf>)
+    <item>TD1. Espérance conditionnelle. (<notes-store|PDF|e1112/pd-td1.pdf>)
 
     <item>TD2. Martingales, stratégies et arrêt optionnel
-    (<hlink|PDF|../store/e1112/pd-td2.pdf>)
+    (<notes-store|PDF|e1112/pd-td2.pdf>)
 
     <item>TD3. Comportement asymptotique des martingales
-    (<hlink|PDF|../store/e1112/pd-td3.pdf>)
+    (<notes-store|PDF|e1112/pd-td3.pdf>)
 
-    <item>TD4. Chaînes de Markov (<hlink|PDF|../store/e1112/pd-td4.pdf>)
+    <item>TD4. Chaînes de Markov (<notes-store|PDF|e1112/pd-td4.pdf>)
 
-    <item>TD5. Chaînes de Markov (II) (<hlink|PDF|../store/e1112/pd-td5.pdf>)
+    <item>TD5. Chaînes de Markov (II) (<notes-store|PDF|e1112/pd-td5.pdf>)
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2004/2004. Examen (<hlink|PDF|../store/e1112/md-controle2004.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1112/md-controle-sett2005.pdf>).
+    <item>2004/2004. Examen (<notes-store|PDF|e1112/md-controle2004.pdf>).
+    Rattrapage (<notes-store|PDF|e1112/md-controle-sett2005.pdf>).
 
-    <item>2005/2006. Examen (<hlink|PDF|../store/e1112/proc-controle0106.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1112/proc-controle0906Rectif.pdf>).
+    <item>2005/2006. Examen (<notes-store|PDF|e1112/proc-controle0106.pdf>).
+    Rattrapage (<notes-store|PDF|e1112/proc-controle0906Rectif.pdf>).
 
-    <item>2006/2007. Partiel (<hlink|PDF|../store/e1112/PartielProcDiscrets0607.pdf>).
-    Examen (<hlink|PDF|../store/e1112/proc-controle0107.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1112/proc-controle0907.pdf>).
+    <item>2006/2007. Partiel (<notes-store|PDF|e1112/PartielProcDiscrets0607.pdf>).
+    Examen (<notes-store|PDF|e1112/proc-controle0107.pdf>). Rattrapage
+    (<notes-store|PDF|e1112/proc-controle0907.pdf>).
 
-    <item>2007/2008. Partiel (<hlink|PDF|../store/e1112/PartielProcDiscrets0708.pdf>).
-    Examen (<hlink|PDF|../store/e1112/proc-controle0108.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1112/proc-controle0908.pdf>).
+    <item>2007/2008. Partiel (<notes-store|PDF|e1112/PartielProcDiscrets0708.pdf>).
+    Examen (<notes-store|PDF|e1112/proc-controle0108.pdf>). Rattrapage
+    (<notes-store|PDF|e1112/proc-controle0908.pdf>).
 
-    <item>2008/2009. Examen (<hlink|PDF|../store/e1112/proc-controle0109.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e1112/proc-controle0109.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1112/pd-partiel-0910.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1112/pd-partiel-corrige-0910.pdf>).
-    Examen (<hlink|PDF|../store/e1112/pd-examen-0910.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1112/pd-rattrapage-0910.pdf>).
+    <item>2009/2010. Partiel (<notes-store|PDF|e1112/pd-partiel-0910.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1112/pd-partiel-corrige-0910.pdf>).
+    Examen (<notes-store|PDF|e1112/pd-examen-0910.pdf>). Rattrapage
+    (<notes-store|PDF|e1112/pd-rattrapage-0910.pdf>).
 
-    <item>2010/2011. Partiel (<hlink|PDF|../store/e1112/pd-partiel-1011.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1112/pd-partiel-1011-corrige.pdf>).
-    Examen (<hlink|PDF|../store/e1112/pd-examen-1011.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1112/pd-rattrapage-1011.pdf>).
+    <item>2010/2011. Partiel (<notes-store|PDF|e1112/pd-partiel-1011.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1112/pd-partiel-1011-corrige.pdf>).
+    Examen (<notes-store|PDF|e1112/pd-examen-1011.pdf>). Rattrapage
+    (<notes-store|PDF|e1112/pd-rattrapage-1011.pdf>).
 
-    <item>2011/2012. Partiel (<hlink|PDF|../store/e1112/pd-partiel-1112.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1112/pd-partiel-1112-corrige.pdf>).
+    <item>2011/2012. Partiel (<notes-store|PDF|e1112/pd-partiel-1112.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1112/pd-partiel-1112-corrige.pdf>).
   </enumerate>
 
   <label|ccm><subsubsection*|Contrôle des chaines de Markov (M1 MMD -
   parcours MAMD)>
 
   <\itemize>
-    <item>Cours de l'année dernière (<hlink|Lien|teaching-dauphine-10-11.tm#ccm>)
+    <item>Cours de l'année dernière (<notes-link|Lien|teaching-dauphine-10-11.tm#ccm>)
 
     <item>Chargé de TD: Jimmy Lamboley.
   </itemize>
@@ -383,36 +383,36 @@
 
   <\enumerate>
     <item>Poly 1. Compléments sur l'espérance conditionnelle
-    (<hlink|PDF|../store/e1112/ccm1.pdf>)
+    (<notes-store|PDF|e1112/ccm1.pdf>)
 
     <item>Poly 2. Arrêt optimal en horizon fini.
-    (<hlink|PDF|../store/e1112/ccm2.pdf>)
+    (<notes-store|PDF|e1112/ccm2.pdf>)
 
     <item>Poly 4. Chaînes de Markov controlées.
-    (<hlink|PDF|../store/e1112/ccm4.pdf>)
+    (<notes-store|PDF|e1112/ccm4.pdf>)
 
     <item>TD1. Compléments sur l'espérance conditionnelle.
-    (<hlink|PDF|../store/e1112/ccm-td1.pdf>)
+    (<notes-store|PDF|e1112/ccm-td1.pdf>)
 
     <item>TD2. Arrêt optimal en horizon fini.
-    (<hlink|PDF|../store/e1112/ccm-td2.pdf>)
+    (<notes-store|PDF|e1112/ccm-td2.pdf>)
 
-    <item>TD3. Integrabilité uniforme. (<hlink|PDF|../store/e1112/ccm-td3.pdf>)
+    <item>TD3. Integrabilité uniforme. (<notes-store|PDF|e1112/ccm-td3.pdf>)
 
     <item>TD4. Chaînes de Markov controlées.
-    (<hlink|PDF|../store/e1112/ccm-td4.pdf>)
+    (<notes-store|PDF|e1112/ccm-td4.pdf>)
   </enumerate>
 
   <with|font-series|bold|Sujets des années précédentes>
 
   <\enumerate>
-    <item>2008/2009. Examen (<hlink|PDF|../store/e1112/examen-control-chaines-2009.pdf>).
-    Rattrapage (<hlink|PDF|../store/e1112/rattrapage-control-chaines-2009.pdf>).
+    <item>2008/2009. Examen (<notes-store|PDF|e1112/examen-control-chaines-2009.pdf>).
+    Rattrapage (<notes-store|PDF|e1112/rattrapage-control-chaines-2009.pdf>).
 
-    <item>2009/2010. Partiel (<hlink|PDF|../store/e1112/ccm-partiel-0910.pdf>).
-    Corrigé Partiel (<hlink|PDF|../store/e1112/ccm-partiel-corrige-0910.pdf>).
-    Examen (<hlink|PDF|../store/e1112/ccm-examen-0910.pdf>). Rattrapage
-    (<hlink|PDF|../store/e1112/ccm-rattrapage-0910.pdf>).
+    <item>2009/2010. Partiel (<notes-store|PDF|e1112/ccm-partiel-0910.pdf>).
+    Corrigé Partiel (<notes-store|PDF|e1112/ccm-partiel-corrige-0910.pdf>).
+    Examen (<notes-store|PDF|e1112/ccm-examen-0910.pdf>). Rattrapage
+    (<notes-store|PDF|e1112/ccm-rattrapage-0910.pdf>).
   </enumerate>
 
   <itemize|>
@@ -477,23 +477,23 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Poly 1. Processus de Poisson (<hlink|PDF|../store/e1112/pp-1.pdf>)
+    <item>Poly 1. Processus de Poisson (<notes-store|PDF|e1112/pp-1.pdf>)
 
-    <item>Poly 4. Théorie de la ruine (<hlink|PDF|../store/e1112/pp-4.pdf>)
+    <item>Poly 4. Théorie de la ruine (<notes-store|PDF|e1112/pp-4.pdf>)
 
-    <item>TD1. Processus de Poisson (<hlink|PDF|../store/e1112/pp-td1.pdf>)
+    <item>TD1. Processus de Poisson (<notes-store|PDF|e1112/pp-td1.pdf>)
 
     <item>TD2. Mélange de Processus de Poisson. Etude de la charge sinistrale
-    totale à temps fixe. (<hlink|PDF|../store/e1112/pp-td2.pdf>)
+    totale à temps fixe. (<notes-store|PDF|e1112/pp-td2.pdf>)
 
     <item>TD3. Processus de Poisson composés, processus de renouvellement.
-    (<hlink|PDF|../store/e1112/pp-td3.pdf>)
+    (<notes-store|PDF|e1112/pp-td3.pdf>)
 
-    <item>TD4. Théorie de la ruine (<hlink|PDF|../store/e1112/pp-td4.pdf>)
+    <item>TD4. Théorie de la ruine (<notes-store|PDF|e1112/pp-td4.pdf>)
 
-    <item>Partiel 2010/2011 (<hlink|PDF|../store/e1112/pp-partiel-1011.pdf>)
+    <item>Partiel 2010/2011 (<notes-store|PDF|e1112/pp-partiel-1011.pdf>)
 
-    <item>Examen 2010/2011 (<hlink|PDF|../store/e1112/pp-examen-1011.pdf>)
+    <item>Examen 2010/2011 (<notes-store|PDF|e1112/pp-examen-1011.pdf>)
   </enumerate>
 </body>
 

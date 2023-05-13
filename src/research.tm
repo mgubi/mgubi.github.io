@@ -15,14 +15,14 @@
 
   \;
 
-  <hlink|publications|publications.tm> \<cdot\>
-  <hlink|presentations|presentations.tm> \<cdot\> <hlink|events|events.tm>
-  \<cdot\> <hlink|people|people.tm>
+  <notes-link|publications|publications.tm> \<cdot\>
+  <notes-link|presentations|presentations.tm> \<cdot\>
+  <notes-link|events|events.tm> \<cdot\> <notes-link|people|people.tm>
 
   <subsection*|Other material>
 
-  <hlink|Notes|./srq/srq-intro.tm> for the seminar held during the <hlink|SRQ
-  \U Scaling limits, rough paths, quantum field
+  <notes-link|Notes|srq/srq-intro.tm> for the seminar held during the
+  <hlink|SRQ \U Scaling limits, rough paths, quantum field
   theory|https://www.newton.ac.uk/event/srq/> research period in 2018 at the
   Newton Institute, Cambrige.
 </body>

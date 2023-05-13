@@ -33,7 +33,7 @@
 
   A review paper<nbsp>(<hlink|pdf|https://hal.archives-ouvertes.fr/file/index/docid/687490/filename/issac12.pdf>)
   about the <TeXmacs> project<nbsp>and its intended goals, circa 2013. A
-  presentation<nbsp>(<hlink|pdf|../store/iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.pdf>,<nbsp><hlink|tm|../store/iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.tm>)
+  presentation<nbsp>(<notes-store|pdf|iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.pdf>,<nbsp><notes-store|tm|iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.tm>)
   I gave on <TeXmacs> and on GNU Guile scheme as its extension language.
 
   The <TeXmacs> community has a <hlink|forum|http://forum.texmacs.cn/>, a

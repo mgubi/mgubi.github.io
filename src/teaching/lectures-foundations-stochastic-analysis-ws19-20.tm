@@ -37,7 +37,7 @@
   session March 25-27 2020.
 
   A list of possible topics for the oral exam (non-exhaustive, but
-  representative) (<hlink|pdf|../store/iam/found-stoch-anal-ws1920/Lista-domande.pdf>)
+  representative) (<notes-store|pdf|iam/found-stoch-anal-ws1920/Lista-domande.pdf>)
 
   <section*|Description>
 
@@ -68,7 +68,7 @@
 
     <item>Suggested references:<nbsp>D. Williams: Probability with
     martingales, Lecture notes for the course \PStochastic processes\Q SS19
-    (<hlink|link|lectures-stochastic-processes-ss19.tm>)
+    (<notes-link|link|lectures-stochastic-processes-ss19.tm>)
   </itemize>
 
   <section*|Recommended literature>
@@ -94,53 +94,53 @@
   notes of the material presented in the lectures<nbsp>will be posted here:
 
   <\itemize>
-    <item><hlink|Note 1|../store/iam/found-stoch-anal-ws1920/fsa-note-1.pdf>:
+    <item><notes-store|Note 1|iam/found-stoch-anal-ws1920/fsa-note-1.pdf>:
     Brownian motion (20191019, v1.0)
 
-    <item><hlink|Note 2|../store/iam/found-stoch-anal-ws1920/fsa-note-2.pdf>:
+    <item><notes-store|Note 2|iam/found-stoch-anal-ws1920/fsa-note-2.pdf>:
     SDEs, strong/weak solutions, Tanaka's formula (20191229, v1.0)
   </itemize>
 
   <section*|Problem sheets>
 
   <\itemize>
-    <item><hlink|Sheet 0|../store/iam/found-stoch-anal-ws1920/fsa-sheet-0.pdf>
+    <item><notes-store|Sheet 0|iam/found-stoch-anal-ws1920/fsa-sheet-0.pdf>
     (solved during the tutorial, not to be done beforehand)
 
-    <item><hlink|Sheet 1|../store/iam/found-stoch-anal-ws1920/fsa-sheet-1.pdf>
+    <item><notes-store|Sheet 1|iam/found-stoch-anal-ws1920/fsa-sheet-1.pdf>
     (due Thursday October 17th)
 
-    <item><hlink|Sheet 2|../store/iam/found-stoch-anal-ws1920/fsa-sheet-2.pdf>
+    <item><notes-store|Sheet 2|iam/found-stoch-anal-ws1920/fsa-sheet-2.pdf>
     (due Thursday October 24th)
 
-    <item><hlink|Sheet 3|../store/iam/found-stoch-anal-ws1920/fsa-sheet-3.pdf>
+    <item><notes-store|Sheet 3|iam/found-stoch-anal-ws1920/fsa-sheet-3.pdf>
     (due<nbsp>Thursday October 31st)
 
-    <item><hlink|Sheet 4|../store/iam/found-stoch-anal-ws1920/fsa-sheet-4.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 4|iam/found-stoch-anal-ws1920/fsa-sheet-4.pdf><nbsp>(due<nbsp>Thursday
     November 7th)
 
-    <item><hlink|Sheet 5|../store/iam/found-stoch-anal-ws1920/fsa-sheet-5.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 5|iam/found-stoch-anal-ws1920/fsa-sheet-5.pdf><nbsp>(due<nbsp>Thursday
     November 14th)
 
-    <item><hlink|Sheet 6|../store/iam/found-stoch-anal-ws1920/fsa-sheet-6.pdf>
+    <item><notes-store|Sheet 6|iam/found-stoch-anal-ws1920/fsa-sheet-6.pdf>
     (due<nbsp>Thursday November 21th)
 
-    <item><hlink|Sheet 7|../store/iam/found-stoch-anal-ws1920/fsa-sheet-7.pdf>
+    <item><notes-store|Sheet 7|iam/found-stoch-anal-ws1920/fsa-sheet-7.pdf>
     (due<nbsp>Thursday December<nbsp>5th)
 
-    <item><hlink|Sheet 8|../store/iam/found-stoch-anal-ws1920/fsa-sheet-8.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 8|iam/found-stoch-anal-ws1920/fsa-sheet-8.pdf><nbsp>(due<nbsp>Thursday
     December 12th)
 
-    <item><hlink|Sheet 9|../store/iam/found-stoch-anal-ws1920/fsa-sheet-9.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 9|iam/found-stoch-anal-ws1920/fsa-sheet-9.pdf><nbsp>(due<nbsp>Thursday
     December 19th)
 
-    <item><hlink|Sheet 10|../store/iam/found-stoch-anal-ws1920/fsa-sheet-10.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 10|iam/found-stoch-anal-ws1920/fsa-sheet-10.pdf><nbsp>(due<nbsp>Thursday
     January 9th)
 
-    <item><hlink|Sheet 11|../store/iam/found-stoch-anal-ws1920/fsa-sheet-11.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 11|iam/found-stoch-anal-ws1920/fsa-sheet-11.pdf><nbsp>(due<nbsp>Thursday
     January 16th) (revised version 10/01/2020 due to a typo)
 
-    <item><hlink|Sheet 12|../store/iam/found-stoch-anal-ws1920/fsa-sheet-12.pdf><nbsp>(due<nbsp>Thursday
+    <item><notes-store|Sheet 12|iam/found-stoch-anal-ws1920/fsa-sheet-12.pdf><nbsp>(due<nbsp>Thursday
     January 24th)<nbsp>(revised version 18/01/2020 due to a duplicate
     exercise)
   </itemize>

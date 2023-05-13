@@ -17,13 +17,13 @@
   <with|font-series|bold|Année 2008/2009>
 
   <\itemize>
-    <item><hlink|Analyse des EDS (M2 EDPMAD/TSI)|#eds>
+    <item><notes-link|Analyse des EDS (M2 EDPMAD/TSI)|#eds>
 
-    <item><hlink|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
+    <item><notes-link|Contrôle des chaînes de Markov (M1 MMD)|#ccm>
 
-    <item><hlink|Statistique (DU2 Eco IGD Math/Eco Mat/Info)|#stat>
+    <item><notes-link|Statistique (DU2 Eco IGD Math/Eco Mat/Info)|#stat>
 
-    <item><hlink|TD d'Evaluation des actif contingents (M1 MMD)|#eac>
+    <item><notes-link|TD d'Evaluation des actif contingents (M1 MMD)|#eac>
   </itemize>
 
   <label|eds><subsubsection*|Analyse des EDS>
@@ -33,16 +33,16 @@
   <with|font-series|bold|Notes de cours>
 
   Regularité des solutions des EDS, flots stochastiques. (6/1, 13/1)
-  <hlink|PDF|../store/e0809/m2-flots.pdf>
+  <notes-store|PDF|e0809/m2-flots.pdf>
 
   Semigroupe engendrée par l'EDS et representation des solutions des EDP
   paraboliques. Formule de Bismut-Elworthy-Li. Mesures invariantes.
   Convergence à l'equilibre pour les diffusions gradientes.(20/1, 27/1)
-  <hlink|PDF|../store/e0809/m2-diff.pdf>
+  <notes-store|PDF|e0809/m2-diff.pdf>
 
   Grandes deviations. Théorème de Schilder et EDS avec bruit petit.
   Estimation du temps de sorti d'un piége de potentiel. (3/2,10/2)
-  <hlink|PDF|../store/e0809/m2-gd.pdf>
+  <notes-store|PDF|e0809/m2-gd.pdf>
 
   Schemas numeriques pour les EDS. Convergence faible et forte du schema
   d'Euler. (17/2)
@@ -78,7 +78,7 @@
   <\enumerate>
     <item>Boué, Michelle; Dupuis, Paul; A variational representation for
     certain functionals of Brownian motion. Ann. Probab. 26 (1998),
-    1641--1659. (MR1675051) (<hlink|PDF|../store/e0809/dupuis-boue.pdf>)
+    1641--1659. (MR1675051) (<notes-store|PDF|e0809/dupuis-boue.pdf>)
 
     <item>F. Flandoli, M. Gubinelli, E. Priola. Well-posedness of the
     transport equation by stochastic perturbation. Prépublication. (2008)
@@ -86,25 +86,25 @@
 
     <item>R. Carmona. Regularity Properties of Schödinger and Dirichlet
     Semigroups. Jour. Func. Anal. 33 (1979), 256--296.
-    (<hlink|PDF|../store/e0809/carmona-semigroups.pdf>)
+    (<notes-store|PDF|e0809/carmona-semigroups.pdf>)
 
     <item>M. Hairer and A. Ohashi. Ergodic theory for SDEs with extrinsic
     memory. Ann. Prob. 35 (2007), 1950--1977
-    (<hlink|PDF|../store/e0809/http://www.hairer.org/papers/memory.pdf>).
+    (<notes-store|PDF|e0809/http://www.hairer.org/papers/memory.pdf>).
 
     <item>S. Fang, P. Imkeller, T. Zhang. Global flows for stochastic
     differential equations without global lipshitz conditions.
     (<hlink|arXiv|http://fr.arxiv.org/abs/math/0703791>)
 
     <item>F. Bolley. Quantitative concentration inequalities on sample space
-    for mean field interactions. (<hlink|PDF|../store/e0809/http://www.ceremade.dauphine.fr/~bolley/paths.pdf>)
+    for mean field interactions. (<notes-store|PDF|e0809/http://www.ceremade.dauphine.fr/~bolley/paths.pdf>)
 
     <item>M. Gradinaru, S. Herrmann and B. Roynette. A Singular large
-    deviations phenomenon. (<hlink|PDF|../store/e0809/http://archive.numdam.org/ARCHIVE/AIHPB/AIHPB_2001__37_5/AIHPB_2001__37_5_555_0/AIHPB_2001__37_5_555_0.pdf>)
+    deviations phenomenon. (<notes-store|PDF|e0809/http://archive.numdam.org/ARCHIVE/AIHPB/AIHPB_2001__37_5/AIHPB_2001__37_5_555_0/AIHPB_2001__37_5_555_0.pdf>)
 
     <item>I. Gyongy, N. Krylov. Existence of strong solutions for Ito's
     stochastic equations via approximations. PTRF 105 (1996) 143-158.
-    (<hlink|PDF|../store/e0809/gyongy-krylov.pdf>)
+    (<notes-store|PDF|e0809/gyongy-krylov.pdf>)
 
     <item>A. Davie. Uniqueness of solutions of stochastic differential
     equations. (<hlink|arXiv|http://fr.arxiv.org/abs/0709.4147>)
@@ -128,29 +128,28 @@
   <with|font-series|bold|Notes de cours et TDs>
 
   <\enumerate>
-    <item>Arrêt optimale en horizon fini (<hlink|PDF|../store/e0809/optimal-stopping.pdf>)
+    <item>Arrêt optimale en horizon fini (<notes-store|PDF|e0809/optimal-stopping.pdf>)
     [mis à jour le 20/3/2009]
 
-    <item>TD1 (<hlink|PDF|../store/e0809/td1-control.pdf>) [13/2/2009]
+    <item>TD1 (<notes-store|PDF|e0809/td1-control.pdf>) [13/2/2009]
 
-    <item>TD2 (en vu du partiel) (<hlink|PDF|../store/e0809/prepartiel-control.pdf>)
+    <item>TD2 (en vu du partiel) (<notes-store|PDF|e0809/prepartiel-control.pdf>)
     [1/4/2009]
 
-    <item>Partiel 2009 (<hlink|PDF|../store/e0809/partiel-control-chaines-2009.pdf>),
-    Corrigé (<hlink|PDF|../store/e0809/corrige-partiel-control-2009.pdf>)
+    <item>Partiel 2009 (<notes-store|PDF|e0809/partiel-control-chaines-2009.pdf>),
+    Corrigé (<notes-store|PDF|e0809/corrige-partiel-control-2009.pdf>)
     [7/4/2009]
 
     <item>Arrêt optimale en horizon infini
-    (<hlink|PDF|../store/e0809/regular-stopping.pdf>) [mis à jour le
-    22/5/2009]
+    (<notes-store|PDF|e0809/regular-stopping.pdf>) [mis à jour le 22/5/2009]
 
-    <item>TD3 (en vu de l'examen) (<hlink|PDF|../store/e0809/pre-examen-2009.pdf>)
+    <item>TD3 (en vu de l'examen) (<notes-store|PDF|e0809/pre-examen-2009.pdf>)
     [25/5/2009]
 
-    <item>Examen 2009 (<hlink|PDF|../store/e0809/examen-control-chaines-2009.pdf>)
+    <item>Examen 2009 (<notes-store|PDF|e0809/examen-control-chaines-2009.pdf>)
     [4/6/2009]
 
-    <item>Rattrapage 2009 (<hlink|PDF|../store/e0809/rattrapage-control-chaines-2009.pdf>)
+    <item>Rattrapage 2009 (<notes-store|PDF|e0809/rattrapage-control-chaines-2009.pdf>)
     [1/9/2009]
   </enumerate>
 
@@ -227,61 +226,61 @@
   <with|font-series|bold|Cours>
 
   <\enumerate>
-    <item>Poly 1. Rappels et vecteurs aleatoires.(<hlink|PDF|../store/e0809/stat-1.pdf>)
+    <item>Poly 1. Rappels et vecteurs aleatoires.(<notes-store|PDF|e0809/stat-1.pdf>)
     [mis à jour le 2/3/2009]
 
     <item>Poly 2. Vecteurs Gaussiens. Lois Gamma, Beta, Khi-deux, Student.
-    (<hlink|PDF|../store/e0809/stat-2.pdf>) [mis à jour le 16/3/2009]
+    (<notes-store|PDF|e0809/stat-2.pdf>) [mis à jour le 16/3/2009]
 
     <item>Poly 3. Convergence des v.a. Lois des grandes nombres. TCL.
-    (<hlink|PDF|../store/e0809/stat-3.pdf>) [mis à jour le 27/4/2009]
+    (<notes-store|PDF|e0809/stat-3.pdf>) [mis à jour le 27/4/2009]
 
     <item>Poly 4. Estimation ponctuelle, elements de theorie de
-    l'information. (<hlink|PDF|../store/e0809/stat-4.pdf>) [mis à jour le
+    l'information. (<notes-store|PDF|e0809/stat-4.pdf>) [mis à jour le
     13/5/2009]
 
     <item>Poly 5. Intervalles de confiance.
-    (<hlink|PDF|../store/e0809/stat-5.pdf>) [mis à jour le 29/5/2009]
+    (<notes-store|PDF|e0809/stat-5.pdf>) [mis à jour le 29/5/2009]
 
-    <item>Poly 6. Theorie des test. (<hlink|PDF|../store/e0809/stat-6.pdf>)
-    [mis à jour le 5/6/2009]
+    <item>Poly 6. Theorie des test. (<notes-store|PDF|e0809/stat-6.pdf>) [mis
+    à jour le 5/6/2009]
   </enumerate>
 
   <with|font-series|bold|Feuilles de TD et sujets>
 
   <\enumerate>
     <item>TD1: Intégrales doubles et couples de variables aléatoires.
-    (<hlink|PDF|../store/e0809/TD1Stat2009.pdf>)
+    (<notes-store|PDF|e0809/TD1Stat2009.pdf>)
 
     <item>TD2: Lois Normale, Gamma, Beta.
-    (<hlink|PDF|../store/e0809/TD2Stat2009.pdf>)
+    (<notes-store|PDF|e0809/TD2Stat2009.pdf>)
 
     <item>TD3: Convergence de variables aléatoires.
-    (<hlink|PDF|../store/e0809/TD3Stat2009.pdf>)
+    (<notes-store|PDF|e0809/TD3Stat2009.pdf>)
 
-    <item>TD3bis: Exos en vu du partiel. (<hlink|PDF|../store/e0809/TD3BISStat2009.pdf>)
+    <item>TD3bis: Exos en vu du partiel. (<notes-store|PDF|e0809/TD3BISStat2009.pdf>)
 
-    <item>Corrigé contrôle continu 1. (<hlink|PDF|../store/e0809/corrige-cc-1-2009.pdf>)
+    <item>Corrigé contrôle continu 1. (<notes-store|PDF|e0809/corrige-cc-1-2009.pdf>)
 
-    <item>Partiel. (<hlink|PDF|../store/e0809/stat-partiel-2009.pdf>)
+    <item>Partiel. (<notes-store|PDF|e0809/stat-partiel-2009.pdf>)
 
-    <item>TD4: Estimation poctuelle. (<hlink|PDF|../store/e0809/TD4Stat2009.pdf>)
+    <item>TD4: Estimation poctuelle. (<notes-store|PDF|e0809/TD4Stat2009.pdf>)
 
-    <item>TD5: Intervalles de confiance. (<hlink|PDF|../store/e0809/TD5Stat2009.pdf>)
+    <item>TD5: Intervalles de confiance. (<notes-store|PDF|e0809/TD5Stat2009.pdf>)
 
     <item>Avant-première du deuxième contrôle continu.
-    (<hlink|PDF|../store/e0809/stat-cc-2-2009-anteprime.pdf>)
+    (<notes-store|PDF|e0809/stat-cc-2-2009-anteprime.pdf>)
 
     <item>TD6: Tests et theorie de l'information.
-    (<hlink|PDF|../store/e0809/TD6Stat2009.pdf>)
+    (<notes-store|PDF|e0809/TD6Stat2009.pdf>)
 
-    <item>Corrigé du partiel. (<hlink|PDF|../store/e0809/correction_partiel.pdf>)
+    <item>Corrigé du partiel. (<notes-store|PDF|e0809/correction_partiel.pdf>)
 
-    <item>Textes du Contrôle Continu 2. (<hlink|PDF|../store/e0809/stat-cc-2-2009-public.pdf>)
+    <item>Textes du Contrôle Continu 2. (<notes-store|PDF|e0809/stat-cc-2-2009-public.pdf>)
 
-    <item>Examen 2009 (<hlink|PDF|../store/e0809/stat-examen-2009.pdf>)
+    <item>Examen 2009 (<notes-store|PDF|e0809/stat-examen-2009.pdf>)
 
-    <item>Rattrapage 2009 (<hlink|PDF|../store/e0809/stat-rattrapage-2009.pdf>)
+    <item>Rattrapage 2009 (<notes-store|PDF|e0809/stat-rattrapage-2009.pdf>)
   </enumerate>
 
   <with|font-series|bold|Comunications>
@@ -301,16 +300,16 @@
 
   <label|eac><subsubsection*|TD d'Evaluation des actif contingents>
 
-  <with|font-series|bold|Feuilles de TD> (<hlink|PDF|../store/e0809/TDs_M1_Arbitrage.pdf>)
+  <with|font-series|bold|Feuilles de TD> (<notes-store|PDF|e0809/TDs_M1_Arbitrage.pdf>)
 
   <with|font-series|bold|Corrigés de TD>
 
   <\enumerate>
-    <item>Exercices 2,3. (<hlink|PDF|../store/e0809/eaf-corrige-td1.pdf>)
+    <item>Exercices 2,3. (<notes-store|PDF|e0809/eaf-corrige-td1.pdf>)
 
-    <item>Exercices 44,46,48. (<hlink|PDF|../store/e0809/eaf-corrige-bs.pdf>)
+    <item>Exercices 44,46,48. (<notes-store|PDF|e0809/eaf-corrige-bs.pdf>)
 
-    <item>Exercices 50,51,52. (<hlink|PDF|../store/e0809/eaf-corrige-taux.pdf>)
+    <item>Exercices 50,51,52. (<notes-store|PDF|e0809/eaf-corrige-taux.pdf>)
   </enumerate>
 </body>
 

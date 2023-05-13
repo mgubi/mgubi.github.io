@@ -27,7 +27,7 @@
   have reached at least half of the total number of points in the exercise
   sheets.
 
-  Sample exam questions from the SS20 (<hlink|pdf|../store/iam/stochastic-analysis-ss20/sa-ss20-questions.pdf>).
+  Sample exam questions from the SS20 (<notes-store|pdf|iam/stochastic-analysis-ss20/sa-ss20-questions.pdf>).
   They are an indication of the kind of questions asked in the exam. Still to
   be updated according to the content we will cover this year.
 
@@ -50,15 +50,15 @@
   lecture notes on ``Introduction to Stochastic Analysis''
   (<hlink|pdf|https://wt.iam.uni-bonn.de/fileadmin/WT/Inhalt/people/Andreas_Eberle/StoAn1011/StoAnSkriptneu.pdf>)
   and my course ``Foundations of Stochastic Analysis'' from the WS19/20
-  (<hlink|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>) or
-  the course ``Foundations of Stochastic Analysis"<nbsp>of Dr. De Vecchi in
-  WS21/22 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Foundations_in_Stochastic_Analysis.pdf>]
+  (<notes-link|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>)
+  or the course ``Foundations of Stochastic Analysis"<nbsp>of Dr. De Vecchi
+  in WS21/22 [<notes-store|pdf|iam/stochastic-analysis-ss22/Foundations_in_Stochastic_Analysis.pdf>]
 
   <subsection*|Lecture Notes>
 
   I will post here below the notes for the lectures. For the initial part of
   the course we will follow closely the Stochastic Analysis course I gave in
-  SS20 (<hlink|link|/abteilung-gubinelli/teaching/stochastic-analysis-ss20>).
+  SS20 (<notes-link|link|/abteilung-gubinelli/teaching/stochastic-analysis-ss20>).
   Other useful material are<nbsp>Prof. Eberle's lecture notes for Stochastic
   Analysis SS16 (<hlink|pdf|https://wt.iam.uni-bonn.de/fileadmin/WT/Inhalt/people/Andreas_Eberle/StoAn15/StochasticAnalysis2015.pdf>)
   (in particular Chapters 2,3 but excluding processes with jumps). However
@@ -67,13 +67,13 @@
 
   <\itemize>
     <item>Note 1 -<nbsp>Stochastic differential equations<nbsp>- version 1 -
-    2022.5.3 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-1.pdf>]
+    2022.5.3 [<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-note-1.pdf>]
 
     <item>Note 2 - SDE techniques - version 2<nbsp>-
-    2022.5.20<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-2.pdf>]
+    2022.5.20<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-note-2.pdf>]
 
     <item>Note 3<nbsp>- The martingale representation theorem and
-    applications<nbsp>- version 3<nbsp>- 2022.7.7<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-note-3.pdf>]
+    applications<nbsp>- version 3<nbsp>- 2022.7.7<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-note-3.pdf>]
   </itemize>
 
   Recordings of the lectures of SS20 are available on the eCampus page of the
@@ -96,42 +96,42 @@
 
   <\itemize>
     <item>Sheet 0 (discussed in the tutorial)
-    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-0.pdf>]
+    [<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-0.pdf>]
     (related material: the paper of Yamada-Watanabe
-    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Yamada_and_Watanabe_-_1971_-_On_the_uniqueness_of_solutions_of_stochastic_diffe.pdf>],<nbsp>Cherny
-    [<hlink|pdf|../store/iam/stochastic-analysis-ss22/Cherny_-_2002_-_On_the_Uniqueness_in_Law_and_the_Pathwise_Uniquene.pdf>]
-    and a note on Osgood's condition [<hlink|pdf|../store/iam/stochastic-analysis-ss22/osgood-condition.pdf>])
+    [<notes-store|pdf|iam/stochastic-analysis-ss22/Yamada_and_Watanabe_-_1971_-_On_the_uniqueness_of_solutions_of_stochastic_diffe.pdf>],<nbsp>Cherny
+    [<notes-store|pdf|iam/stochastic-analysis-ss22/Cherny_-_2002_-_On_the_Uniqueness_in_Law_and_the_Pathwise_Uniquene.pdf>]
+    and a note on Osgood's condition [<notes-store|pdf|iam/stochastic-analysis-ss22/osgood-condition.pdf>])
 
-    <item>Sheet 1 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-1.pdf>]
+    <item>Sheet 1 [<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-1.pdf>]
     (to be handed in April 14th)
 
-    <item>Sheet 2 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-2.pdf>]
+    <item>Sheet 2 [<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-2.pdf>]
     (to be handed in April 21st)
 
-    <item>Sheet 3 [<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-3.pdf>]
+    <item>Sheet 3 [<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-3.pdf>]
     (to be handled in April 28th)
 
-    <item>Sheet 4<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-4.pdf>]
+    <item>Sheet 4<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-4.pdf>]
     (to be handled in May 5th)
 
-    <item>Sheet 5<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-5.pdf>]
+    <item>Sheet 5<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-5.pdf>]
     (to be handled in May 12th)
 
-    <item>Sheet 6<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-6.pdf>]
+    <item>Sheet 6<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-6.pdf>]
     (to be handled in May 19th)
 
-    <item>Sheet 7<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-7.pdf>]
+    <item>Sheet 7<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-7.pdf>]
     (to be handled in May 27th, no lecture May 26th)
 
-    <item>Sheet 8<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-8.pdf>]
+    <item>Sheet 8<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-8.pdf>]
     (to be handled in June 2nd)
 
     <item>(No tutorials the week of June 22nd)
 
-    <item>Sheet 9<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-9.pdf>]
+    <item>Sheet 9<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-9.pdf>]
     (to be handled in June 23rd)
 
-    <item>Sheet 10<nbsp>[<hlink|pdf|../store/iam/stochastic-analysis-ss22/sa-ss22-sheet-10.pdf>]
+    <item>Sheet 10<nbsp>[<notes-store|pdf|iam/stochastic-analysis-ss22/sa-ss22-sheet-10.pdf>]
     (to be handled in June 30th, this is the last exercise sheet)
   </itemize>
 

@@ -35,16 +35,18 @@
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
-  <hlink|vita|./curriculum-vitae.tm> \<cdot\> <hlink|research|research.tm>
-  \<cdot\> <hlink|teaching|teaching/teaching.tm> \<cdot\>
-  <hlink|programming|./programming.tm> \<cdot\> <hlink|writings|writings.tm>
+  <notes-link|vita|curriculum-vitae.tm> \<cdot\>
+  <notes-link|research|research.tm> \<cdot\>
+  <notes-link|teaching|teaching/teaching.tm> \<cdot\>
+  <notes-link|programming|programming.tm> \<cdot\>
+  <notes-link|writings|writings.tm>
 
   <vspace|1em>
 
   <\small>
-    a <hlink|list|./list-articles.tm> of all the articles \<cdot\> an
-    <hlink|Atom|notes.atom> feed \<cdot\> a <hlink|template|template.tm> for
-    new pages
+    a <notes-link|list|list-articles.tm> of all the articles \<cdot\> an
+    <notes-link|Atom|notes.atom> feed \<cdot\> a
+    <notes-link|template|template.tm> for new pages
 
     these pages have been created with <hlink|<TeXmacs>|http://www.texmacs.org>
     and are hosted at <hlink|github|https://github.com/mgubi/webpages>

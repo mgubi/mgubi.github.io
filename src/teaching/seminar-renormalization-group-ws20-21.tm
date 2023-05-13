@@ -49,7 +49,7 @@
 
   <\itemize>
     <item>Notes from the organization seminar
-    (<hlink|pdf|../store/iam/seminar-rg-ws2021/overview.pdf>)
+    (<notes-store|pdf|iam/seminar-rg-ws2021/overview.pdf>)
 
     <item>The history of the paper (<hlink|link|https://sites.google.com/site/slavarychkov/home>,
     skim down in the ``What's new'' section)
@@ -73,28 +73,28 @@
 
     <item>8/4 10h00 - Various representation for the fermionic expectations
     (Appendix D / Book) -<nbsp>Massimiliano Gubinelli
-    (<hlink|slides|../store/iam/seminar-rg-ws2021/talk-rg-apr-2021.pdf>)
+    (<notes-store|slides|iam/seminar-rg-ws2021/talk-rg-apr-2021.pdf>)
 
     <item>8/4 15h00 - Finite volume representation and infinite volume limit
-    (Appendix H) <nbsp>Chunqiu Song (<hlink|slides|../store/iam/seminar-rg-ws2021/RG-_Chunqiu_Song.pdf>)
+    (Appendix H) <nbsp>Chunqiu Song (<notes-store|slides|iam/seminar-rg-ws2021/RG-_Chunqiu_Song.pdf>)
 
     <item>9/4 10h00 - Renomalization map in the trimmed representation and
     fixed point equation (Sect 5.4, 5.5, Appendix C)<nbsp>Introduce the
     Banach space \<cal-B\> for effective actions -<nbsp>Margherita Disertori
-    (<hlink|slides|../store/iam/seminar-rg-ws2021/RG-trimmed-representation.pdf>)
+    (<notes-store|slides|iam/seminar-rg-ws2021/RG-trimmed-representation.pdf>)
 
     <item>9/4 15h00 - Norm bounds (Sect 5.6 / Appendix E) (needs Appendix D).
     Control of \<cal-R\>_\<gamma\>:\<cal-B\>\<rightarrow\>\<cal-B\> <nbsp>-
-    Francesco de Vecchi (<hlink|slides|../store/iam/seminar-rg-ws2021/renormalization-bounds-devecchi.pdf>)
+    Francesco de Vecchi (<notes-store|slides|iam/seminar-rg-ws2021/renormalization-bounds-devecchi.pdf>)
 
     <item>12/4 10h00 - Construction of the fixed point (Section 6)
     -<nbsp>Luca Fresta (<hlink|slides|https://uni-bonn.sciebo.de/s/oYjKYdUnUoYMRAp>)
 
     <item>13/4 10h00 - Proof of the key lemma (Section 7) -<nbsp>Mattia Turra
-    (<hlink|slides|../store/iam/seminar-rg-ws2021/Key-Lemma-turra.pdf>)
+    (<notes-store|slides|iam/seminar-rg-ws2021/Key-Lemma-turra.pdf>)
 
     <item>15/4 10h00 - The RG in classical<nbsp>PDE theory -- Lucio Galeati
-    (<hlink|slides|../store/iam/seminar-rg-ws2021/galeati-without-breaks.pdf>)
+    (<notes-store|slides|iam/seminar-rg-ws2021/galeati-without-breaks.pdf>)
   </itemize>
 
   <subsection*|<nbsp>>

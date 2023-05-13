@@ -41,99 +41,99 @@
   <\itemize>
     <item>September 10th \<cdot\> D.<nbsp>Brydges, \PReflection Positivity
     which plays an important role in QFT and statistical mechanics\Q
-    (<hlink|notes|srq-seminar-20180910-brydges.tm>)
+    (<notes-link|notes|srq-seminar-20180910-brydges.tm>)
 
     <item>September 14th \<cdot\> D.<nbsp>Brydges, \PChessboard estimates and
-    their role in the 1976\Q (<hlink|notes|srq-seminar-20180914-brydges.tm>)
+    their role in the 1976\Q (<notes-link|notes|srq-seminar-20180914-brydges.tm>)
 
     <item>September 17th \<cdot\> H.<nbsp>Weber, \PRenormalisation in QFT,
     statistical mechanics and stochastic PDE's\Q
-    (<hlink|notes|srq-seminar-20180917-weber.tm>)
+    (<notes-link|notes|srq-seminar-20180917-weber.tm>)
 
     <item>September 21st \<cdot\> H.<nbsp>Weber, \PRenormalisation in QFT,
     statistical mechanics and stochastic PDE's\Q (no notes)
 
     <item>September 24th \<cdot\> A.<nbsp>Chandra,
-    (<hlink|notes|srq-seminar-20180924-chandra.tm>)
+    (<notes-link|notes|srq-seminar-20180924-chandra.tm>)
 
     <item>September 27th \<cdot\> P.<nbsp>Friz, \PRough paths\Q
-    (<hlink|notes|srq-seminar-20180927-friz.tm>)
+    (<notes-link|notes|srq-seminar-20180927-friz.tm>)
 
     <item>September 28th \<cdot\> T.<nbsp>Hara, \PWhy Yang-Mills: a review of
     no-go results for <math|\<varphi\><rsup|4><rsub|4>>\Q
-    (<hlink|notes|srq-seminar-20180928-hara.tm>)
+    (<notes-link|notes|srq-seminar-20180928-hara.tm>)
 
     <item>October 1st \<cdot\> T.<nbsp>Levy, \P2-dimensional Yang-Mills
     theory and the Makeenko-Migdal equations (I)\Q
-    (<hlink|notes|srq-seminar-20181001-levy.tm>)
+    (<notes-link|notes|srq-seminar-20181001-levy.tm>)
 
     <item>October 3rd \<cdot\> T.<nbsp>Levy, \P2-dimensional Yang-Mills
     theory and the Makeenko-Migdal equations (II)\Q
-    (<hlink|notes|srq-seminar-20181003-levy.tm>)
+    (<notes-link|notes|srq-seminar-20181003-levy.tm>)
 
     <item>October 5th \<cdot\> H.<nbsp>Weber, \PLocal estimates for reaction
     diffusion equations with applications
     to<nbsp><math|\<Phi\><rsup|4><rsub|3>>\Q
-    (<hlink|notes|srq-seminar-20181005-weber.tm>)
+    (<notes-link|notes|srq-seminar-20181005-weber.tm>)
 
     <item>October 8th \<cdot\> F.<nbsp>Toninelli, \PLecture 1 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181008-toninelli.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181008-toninelli.tm>)
 
     <item>October 10th \<cdot\> F.<nbsp>Toninelli, \PLecture 2 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181010-toninelli.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181010-toninelli.tm>)
 
     <item>October 12th \<cdot\> F.<nbsp>Toninelli, \PLecture 3 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181012-toninelli.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181012-toninelli.tm>)
 
     <item>October 15th \<cdot\> A.<nbsp>Giuliani, \PLecture 4 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181015-giuliani.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181015-giuliani.tm>)
 
     <item>October 17th \<cdot\> A.<nbsp>Giuliani, \PLecture 5 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181017-giuliani.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181017-giuliani.tm>)
 
     <item>October 19th \<cdot\> A.<nbsp>Giuliani, \PLecture 6 - The
-    interacting dimer model\Q (<hlink|notes|srq-seminar-20181019-giuliani.tm>)
+    interacting dimer model\Q (<notes-link|notes|srq-seminar-20181019-giuliani.tm>)
 
     <item>October 29th \<cdot\> M.<nbsp>Jara, \PNon-equilibrium fluctuations
     of interacting particle systems, lecture 1\Q
-    (<hlink|notes|srq-seminar-20181029-jara.tm>)
+    (<notes-link|notes|srq-seminar-20181029-jara.tm>)
 
     <item>October 31th \<cdot\> M.<nbsp>Jara, \PNon-equilibrium fluctuations
     of interacting particle systems, lecture 2\Q (no notes)
 
     <item>November 2nd \<cdot\> G.<nbsp>Jona\ULasinio, \PTowards a
     non-equilibrium thermodynamics: the role of large fluctuations\Q
-    (<hlink|notes|srq-seminar-20181102-jona.tm>)
+    (<notes-link|notes|srq-seminar-20181102-jona.tm>)
 
     <item>November 9th \<cdot\> D.<nbsp>Brydges, \PThe Higgs Mechanism\Q
-    (<hlink|notes|srq-seminar-20181109-brydges.tm>)
+    (<notes-link|notes|srq-seminar-20181109-brydges.tm>)
 
     <item>November 12th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
-    Renormalisation Group\Q (<hlink|notes|srq-seminar-20181112-mitter.tm>)
+    Renormalisation Group\Q (<notes-link|notes|srq-seminar-20181112-mitter.tm>)
 
     <item>November 14th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
     Renormalisation Group\Q (no notes)
 
     <item>November 16th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
-    Renormalisation Group\Q (<hlink|partial
+    Renormalisation Group\Q (<notes-link|partial
     notes|srq-seminar-20181116-mitter-partial.tm>) (slides)
 
     <item>November 21st \<cdot\> T.<nbsp>Levy, \PThe partition function of
     the 2-dimensional Yang\VMills model\Q
-    (<hlink|notes|srq-seminar-20181121-levy.tm>)
+    (<notes-link|notes|srq-seminar-20181121-levy.tm>)
 
     <item>November 23rd \<cdot\> I.<nbsp>Chevyrev, \PYang-Mills measure on
     the two-dimensional torus as a random distribution\Q
-    (<hlink|notes|srq-seminar-20181123-chevyrev.tm>)
+    (<notes-link|notes|srq-seminar-20181123-chevyrev.tm>)
 
     <item>December 3rd \<cdot\> T.<nbsp>Helmut, \PIsomorphism theorems,
-    random walks, and spin systems\Q (<hlink|notes|srq-seminar-20181203-helmut.tm>)
+    random walks, and spin systems\Q (<notes-link|notes|srq-seminar-20181203-helmut.tm>)
 
     <item>December 5th \<cdot\> A.<nbsp>Chandra, \PStochastic quantization of
-    Yang Mills\Q (<hlink|notes|srq-seminar-20181205-chandra.tm>)
+    Yang Mills\Q (<notes-link|notes|srq-seminar-20181205-chandra.tm>)
 
     <item>December 7th \<cdot\> R.<nbsp>Kotecky, \PAn abstract framework for
-    a non-perturbative renormalisation\Q (<hlink|notes|srq-seminar-20181207-kotecky.tm>)
+    a non-perturbative renormalisation\Q (<notes-link|notes|srq-seminar-20181207-kotecky.tm>)
   </itemize>
 
   \;
