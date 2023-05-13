@@ -21,14 +21,30 @@
 
   <chapter*|Scripting webpages>
 
-  <notes-abstract|This note records various scripting workflows on the
-  website. It can be used as a tutorial in <TeXmacs> scripting. I show how to
-  batch-modify pages. >
+  <notes-abstract|This note records a workflow to fix some problems with the
+  links in the website. It can be used as a tutorial in <TeXmacs> scripting.
+  I show how to batch-modify pages. Written May 13th 2013.>
+
+  \;
+
+  <\wide-tabular>
+    <tformat|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-background|#faa>|<table|<row|<\cell>
+      You can run the scripts in this page, pay attention however that they
+      will <with|font-series|bold|modify> your filesystem, so be careful.
+    </cell>>>>
+  </wide-tabular>
+
+  \;
+
+  This document refers to the state of the repository checked out at commit
+
+  \ <code*|dad6b1358b44534c0f6b0d3eb2e721cf04f440c1>.\ 
+
+  The goal is to change certain hyperlinks to use a user-defined macro
+  instead, this will make easier in the future to customize the rendering or
+  the location of the linked files.
 
   <section*|Batch-modify pages>
-
-  How to modify the notes. The following works with this repository checked
-  out at commit <code*|dad6b1358b44534c0f6b0d3eb2e721cf04f440c1>.\ 
 
   We need to set up the base directory first.
 
