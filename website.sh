@@ -1,10 +1,18 @@
-export LC_ALL=POSIX
-# sets the locale to POSIX for the rest of the process, so that the
+#!/bin/zsh
+# build or update the website
+# pass 'build' or 'update' as first argument
+# 'update' is default
+
+# we set the locale to POSIX for the rest of the process, so that the
 # format of the date will be uniform for all contributors, with name
 # of days in English.
 
-# Calling this script from the shell as ./update-website does not
-# result in changing the value of LC_ALL in the calling shell
+op=${1:='update'}
+tm_path=$HOME/t/svn-src/TeXmacs
+cmd='(begin (display* "$LC_ALL :" (getenv "LC_ALL") "\n" "$PWD    :" (getenv "PWD") "\n") \
+            (load (url->unix "$PWD/notes-tools.scm")) \
+            (notes-'$op') \
+            (quit))'
 
-TEXMACS_PATH=$HOME/t/svn-src/TeXmacs $HOME/t/svn-src/TeXmacs/bin/texmacs.bin \
--x '(begin (load (url->unix "$PWD/notes-tools.scm")) (notes-update) (quit))'
+echo "I'm going to perform : "$op
+LC_ALL=POSIX TEXMACS_PATH=$tm_path $tm_path/bin/texmacs.bin -x $cmd
