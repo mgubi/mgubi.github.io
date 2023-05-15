@@ -1,20 +1,10 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
 <\body>
   <\hide-preamble>
-    <use-package|framed-session>
-
-    <assign|input-border|0>
-
-    <assign|input-color|#f0f0f0>
-
-    <assign|ornament-corner|30%>
-
-    <assign|scheme-input-color|#aaf>
-
-    <assign|scheme-prompt-color|dark red>
+    \;
   </hide-preamble>
 
   <notes-header>
@@ -24,8 +14,6 @@
   <notes-abstract|This note records a workflow to fix some problems with the
   links in the website. It can be used as a tutorial in <TeXmacs> scripting.
   I show how to batch-modify pages. Written May 13th 2013.>
-
-  \;
 
   <\wide-tabular>
     <tformat|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-background|#faa>|<table|<row|<\cell>

@@ -101,6 +101,22 @@
   <assign|mmx|<macro|body|<with|mode|prog|prog-language|mathemagix|<tt-prog-font|<arg|body>>>>>
 
   <active*|<\src-comment>
+    Framed sessions setup
+  </src-comment>>
+
+  <use-package|framed-session>
+
+  <assign|input-border|0>
+
+  <assign|input-color|#f0f0f0>
+
+  <assign|ornament-corner|30%>
+
+  <assign|scheme-input-color|#aaf>
+
+  <assign|scheme-prompt-color|dark red>
+
+  <active*|<\src-comment>
     Hacks for the typewriter font in plug-in sessions.
   </src-comment>>
 
@@ -115,6 +131,12 @@
   <assign|output|<macro|body|<with|mode|prog|font-family|rm|<tt-session-font|<style-with|src-compact|none|<compound|<style-with|src-compact|none|<if|<provides|<merge|<value|prog-language>|-output>>|<merge|<value|prog-language>|-output>|generic-output>>|<arg|body>>>>>>>
 
   <assign|script-input|<macro|language|session|in|out|<tt-session-font|<style-with|src-compact|none|<compound|<style-with|src-compact|none|<if|<provides|<merge|<arg|language>|-script-input>>|<merge|<arg|language>|-script-input>|generic-script-input>>|<arg|language>|<arg|session>|<arg|in>|<arg|out>>>>>>
+
+  \;
+
+  Remove justify from session output formatting
+
+  \ <assign|generic-output*|<macro|body|<with|par-mode|left|par-flexibility|2.0|par-hyphen|normal|math-display|true|math-frac-limit|<value|session-frac-limit>|math-table-limit|<value|session-table-limit>|<ornament-indent|<value|session-left-indent>|<value|session-right-indent>|<value|output-vpadding>|<value|output-vpadding>|<with|par-sep|<value|session-par-sep>|par-ver-sep|<value|session-par-ver-sep>|<arg|body>>>>>>
 
   <\active*>
     <\src-comment>
