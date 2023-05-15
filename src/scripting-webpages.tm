@@ -792,7 +792,9 @@
 
       \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
 
-      \ \ (handle-links t) (handle-notes-store t)
+      \ \ (handle-links t)
+
+      \ \ (handle-notes-store t)
 
       \ \ (tree-export t (url-\<gtr\>system\ 
 

@@ -1702,7 +1702,8 @@ Scheme] </pre></font></td>
   (define t (tree-import (url-&gt;system 
                           (url-append &quot;$NOTES/src&quot; url))  
                          &quot;texmacs&quot;))
-  (handle-links t) (handle-notes-store t)
+  (handle-links t)
+  (handle-notes-store t)
   (tree-export t (url-&gt;system 
                   (url-append &quot;$NOTES/src2&quot; url)) 
                &quot;texmacs&quot;))</pre>
