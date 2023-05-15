@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|source>
 
@@ -41,6 +41,8 @@
   <assign|font-base-size|11>
 
   <assign|page-medium|papyrus>
+
+  <assign|par-mode|left>
 
   \;
 
