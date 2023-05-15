@@ -110,13 +110,15 @@
 
     <item>November 12th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
     Renormalisation Group\Q (<notes-link|notes|srq-seminar-20181112-mitter.tm>)
+    (<notes-store|slides|mitter-lectures-newton-srq.pdf>)
 
     <item>November 14th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
-    Renormalisation Group\Q (no notes)
+    Renormalisation Group\Q (no notes) (<notes-store|slides|mitter-lectures-newton-srq.pdf>)
 
     <item>November 16th \<cdot\> P.K.<nbsp>Mitter, \PIntroduction to the
     Renormalisation Group\Q (<notes-link|partial
-    notes|srq-seminar-20181116-mitter-partial.tm>) (slides)
+    notes|srq-seminar-20181116-mitter-partial.tm>)
+    (<notes-store|slides|mitter-lectures-newton-srq.pdf>)\ 
 
     <item>November 21st \<cdot\> T.<nbsp>Levy, \PThe partition function of
     the 2-dimensional Yang\VMills model\Q

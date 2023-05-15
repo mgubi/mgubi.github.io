@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|notes>
 
@@ -50,8 +50,9 @@
 
   <\session|scheme|default>
     <\input|Scheme] >
-      (setenv "NOTES" (url-\<gtr\>system (url-append (url-head
-      (current-buffer)) "..")))
+      (setenv "NOTES" (url-\<gtr\>system\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ (url-append (url-head (current-buffer)) "..")))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -69,8 +70,9 @@
 
   <\session|scheme|default>
     <\input|Scheme] >
-      (define t (tree-import (url-\<gtr\>system "$NOTES/src/main.tm")
-      "texmacs"))
+      (define t (tree-import\ 
+
+      \ \ \ \ \ \ \ \ (url-\<gtr\>system "$NOTES/src/main.tm") "texmacs"))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -172,8 +174,9 @@
 
   <\session|scheme|default>
     <\unfolded-io|Scheme] >
-      (map (lambda (h) (tree-assign-node! h 'notes-link)) (select t '(:*
-      hlink)))
+      (map (lambda (h) (tree-assign-node! h 'notes-link))\ 
+
+      \ \ \ \ (select t '(:* hlink)))
     <|unfolded-io>
       (\<less\>tree \<less\>notes-link\|arXiv\|http://arxiv.org/a/gubinelli_m_1\<gtr\>\<gtr\>
       \<less\>tree \<less\>notes-link\|ORCID\|http://orcid.org/0000-0002-4014-2949\<gtr\>\<gtr\>
@@ -219,7 +222,9 @@
 
   <\session|scheme|default>
     <\unfolded-io|Scheme] >
-      (tree-export t (url-\<gtr\>system "$NOTES/test.tm") \ "texmacs")
+      (tree-export t (url-\<gtr\>system "$NOTES/test.tm")
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs")
     <|unfolded-io>
       #f
     </unfolded-io>
@@ -236,7 +241,8 @@
   <\session|scheme|default>
     <\input|Scheme] >
       (define t (tree-import (url-\<gtr\>system "$NOTES/src/main.tm")
-      "texmacs"))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
     </input>
 
     <\input|Scheme] >
@@ -284,7 +290,9 @@
 
   <\session|scheme|default>
     <\unfolded-io|Scheme] >
-      (string-starts? (tree-\<gtr\>string (tree-ref (car l) 1)) "http://")
+      (string-starts? (tree-\<gtr\>string (tree-ref (car l) 1))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "http://")
     <|unfolded-io>
       #t
     </unfolded-io>
@@ -485,7 +493,8 @@
   <\session|scheme|default>
     <\input|Scheme] >
       (define t (tree-import (url-\<gtr\>system "$NOTES/src/main.tm")
-      "texmacs"))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -538,12 +547,19 @@
   <\session|scheme|default>
     <\input|Scheme] >
       (define t (tree-import (url-\<gtr\>system "$NOTES/src/people.tm")
-      "texmacs"))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
     </input>
 
     <\input|Scheme] >
-      (define l (filter (lambda (h) (string-contains? \ (tree-\<gtr\>string
-      (tree-ref h 1)) "store/")) (select t '(:* hlink)))))
+      (define l (filter (lambda (h)\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ (string-contains? \ (tree-\<gtr\>string
+      (tree-ref h 1))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "store/"))\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (select t '(:* hlink)))))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -586,8 +602,8 @@
 
       \ \ \ \ \ \ \ \ \ \ \ \ (s1 (string-drop s\ 
 
-      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (+ 6
-      (string-contains s "store/")))))
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (+ 6 (string-contains s
+      "store/")))))
 
       \ \ \ \ \ \ \ (tree-set! h 1 s1)))\ 
 
@@ -616,8 +632,12 @@
     <\input|Scheme] >
       (define (handle-notes-store t)
 
-      \ \ (with l (filter (lambda (h) (string-contains? \ (tree-\<gtr\>string
-      (tree-ref h 1)) "store/")) (select t '(:* notes-link)))
+      \ \ (with l (filter (lambda (h) (string-contains? \ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (tree-\<gtr\>string (tree-ref h 1))
+      "store/"))\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (select t '(:* notes-link)))
 
       (for-each (lambda (h)\ 
 
@@ -627,14 +647,12 @@
 
       \ \ \ \ \ \ \ \ \ \ \ \ (s1 (string-drop s\ 
 
-      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (+ 6
-      (string-contains s "store/")))))
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (+ 6 (string-contains s
+      "store/")))))
 
-      \ \ \ \ \ \ \ (tree-set! h 1 s1)
+      \ \ \ \ \ \ \ (tree-set! h 1 s1)))
 
-      \ \ \ \ \ \ \ \ \ \ \ \ ))\ 
-
-      \ \ \ \ \ \ \ \ \ \ l)))
+      \ \ \ \ l)))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -680,7 +698,12 @@
 
   <\session|scheme|default>
     <\input|Scheme] >
-      (define u1 (url-append (url-append "$NOTES/src" (url-any)) \ "*.tm"))
+      (define u1 (url-append (url-append "$NOTES/src"\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-any))
+      \ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "*.tm"))
     </input>
 
     <\unfolded-io|Scheme] >
@@ -704,8 +727,12 @@
     </unfolded-io>
 
     <\unfolded-io|Scheme] >
-      (url-directory? (url-append (url-append "$NOTES/src" (car files))
-      (url-parent)))
+      (url-directory? (url-append (url-append "$NOTES/src"\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (car
+      files))\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-parent)))
     <|unfolded-io>
       #t
     </unfolded-io>
@@ -730,7 +757,10 @@
 
       \ \ (when (!= url (system-\<gtr\>url "$NOTES/src2"))\ 
 
-      \ \ \ \ \ \ (make-dir-tree (url-expand (url-append url (url-parent))))
+      \ \ \ \ \ \ (make-dir-tree (url-expand\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-append url
+      (url-parent))))
 
       \ \ \ \ \ \ (when (not (url-exists? url)) \ \ \ \ 
 
@@ -740,8 +770,14 @@
     </input>
 
     <\input|Scheme] >
-      (define dirs (ahash-set-\<gtr\>list (list-\<gtr\>ahash-set (map (lambda
-      (f) (url-head (url-append "$NOTES/src2" f))) files))))
+      (define dirs (ahash-set-\<gtr\>list (list-\<gtr\>ahash-set\ 
+
+      \ \ \ \ \ \ \ \ \ \ (map (lambda (f) (url-head\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-append
+      "$NOTES/src2" f)))
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ files))))
     </input>
 
     <\input|Scheme] >
@@ -763,14 +799,17 @@
       \ \ (define t (tree-import (url-\<gtr\>system\ 
 
       \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-append
-      "$NOTES/src" url)) \ "texmacs"))
+      "$NOTES/src" url)) \ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
 
       \ \ (handle-links t) (handle-notes-store t)
 
       \ \ (tree-export t (url-\<gtr\>system\ 
 
-      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-append "$NOTES/src2" url))
-      \ "texmacs"))
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (url-append "$NOTES/src2" url))\ 
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "texmacs"))
     </input>
 
     <\unfolded-io|Scheme] >

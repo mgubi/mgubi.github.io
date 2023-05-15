@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <head>
     <title>Massimiliano Gubinelli</title>
-    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
     <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
     <link href="/resources/favicon-32x32.png" rel="icon"></link>
     <script src="/resources/highlight.pack.js" language="javascript" defer></script>
@@ -78,7 +78,8 @@
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(setenv &quot;NOTES&quot; (url-&gt;system (url-append (url-head (current-buffer)) &quot;..&quot;)))</pre></td>
+(setenv &quot;NOTES&quot; (url-&gt;system 
+           (url-append (url-head (current-buffer)) &quot;..&quot;)))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -126,7 +127,8 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+(define t (tree-import 
+        (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -369,7 +371,8 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
 Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(map (lambda (h) (tree-assign-node! h 'notes-link)) (select t '(:* hlink)))</pre></td>
+(map (lambda (h) (tree-assign-node! h 'notes-link)) 
+    (select t '(:* hlink)))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -468,7 +471,8 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
 Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(tree-export t (url-&gt;system &quot;$NOTES/test.tm&quot;)  &quot;texmacs&quot;)</pre></td>
+(tree-export t (url-&gt;system &quot;$NOTES/test.tm&quot;)
+             &quot;texmacs&quot;)</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -507,7 +511,8 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;)
+                       &quot;texmacs&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -662,7 +667,8 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
 Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(string-starts? (tree-&gt;string (tree-ref (car l) 1)) &quot;http://&quot;)</pre></td>
+(string-starts? (tree-&gt;string (tree-ref (car l) 1))
+                &quot;http://&quot;)</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -992,7 +998,8 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre></td>
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;)
+                       &quot;texmacs&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1097,7 +1104,8 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define t (tree-import (url-&gt;system &quot;$NOTES/src/people.tm&quot;) &quot;texmacs&quot;))</pre></td>
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/people.tm&quot;)
+                       &quot;texmacs&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1108,7 +1116,10 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define l (filter (lambda (h) (string-contains?  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) (select t '(:* hlink)))))</pre></td>
+(define l (filter (lambda (h) 
+              (string-contains?  (tree-&gt;string (tree-ref h 1))
+                                 &quot;store/&quot;)) 
+                (select t '(:* hlink)))))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1211,7 +1222,7 @@ Scheme] </pre></font></td>
      (tree-assign-node! h 'notes-store) 
      (let* ((s (tree-&gt;string (tree-ref h 1)))
             (s1 (string-drop s 
-                             (+ 6 (string-contains s &quot;store/&quot;)))))
+                    (+ 6 (string-contains s &quot;store/&quot;)))))
        (tree-set! h 1 s1))) 
           l)</pre></td>
           </tr></tbody>
@@ -1263,15 +1274,16 @@ l</pre></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
 (define (handle-notes-store t)
-  (with l (filter (lambda (h) (string-contains?  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) (select t '(:* notes-link)))
+  (with l (filter (lambda (h) (string-contains?  
+                  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) 
+                (select t '(:* notes-link)))
 (for-each (lambda (h) 
      (tree-assign-node! h 'notes-store) 
      (let* ((s (tree-&gt;string (tree-ref h 1)))
             (s1 (string-drop s 
-                             (+ 6 (string-contains s &quot;store/&quot;)))))
-       (tree-set! h 1 s1)
-            )) 
-          l)))</pre></td>
+                  (+ 6 (string-contains s &quot;store/&quot;)))))
+       (tree-set! h 1 s1)))
+    l)))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1372,7 +1384,9 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define u1 (url-append (url-append &quot;$NOTES/src&quot; (url-any))  &quot;*.tm&quot;))</pre></td>
+(define u1 (url-append (url-append &quot;$NOTES/src&quot; 
+                                   (url-any))  
+                      &quot;*.tm&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1445,7 +1459,9 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
 Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(url-directory? (url-append (url-append &quot;$NOTES/src&quot; (car files)) (url-parent)))</pre></td>
+(url-directory? (url-append (url-append &quot;$NOTES/src&quot; 
+                                    (car files)) 
+                         (url-parent)))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1506,7 +1522,8 @@ Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
 (define (make-dir-tree url)
   (when (!= url (system-&gt;url &quot;$NOTES/src2&quot;)) 
-      (make-dir-tree (url-expand (url-append url (url-parent))))
+      (make-dir-tree (url-expand 
+                      (url-append url (url-parent))))
       (when (not (url-exists? url))     
         (system-mkdir url)
         (system-1 &quot;chmod a+x&quot; url))))</pre></td>
@@ -1520,7 +1537,10 @@ Scheme] </pre></font></td>
           <tbody><tr>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
-(define dirs (ahash-set-&gt;list (list-&gt;ahash-set (map (lambda (f) (url-head (url-append &quot;$NOTES/src2&quot; f))) files))))</pre></td>
+(define dirs (ahash-set-&gt;list (list-&gt;ahash-set 
+          (map (lambda (f) (url-head 
+                          (url-append &quot;$NOTES/src2&quot; f)))
+               files))))</pre></td>
           </tr></tbody>
         </table>
       </div>
@@ -1559,10 +1579,12 @@ Scheme] </pre></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><pre class="verbatim" xml:space="preserve">
 (define (proc-file url)
   (define t (tree-import (url-&gt;system 
-                          (url-append &quot;$NOTES/src&quot; url))  &quot;texmacs&quot;))
+                          (url-append &quot;$NOTES/src&quot; url))  
+                         &quot;texmacs&quot;))
   (handle-links t) (handle-notes-store t)
   (tree-export t (url-&gt;system 
-                  (url-append &quot;$NOTES/src2&quot; url))  &quot;texmacs&quot;))</pre></td>
+                  (url-append &quot;$NOTES/src2&quot; url)) 
+               &quot;texmacs&quot;))</pre></td>
           </tr></tbody>
         </table>
       </div>
