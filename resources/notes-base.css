@@ -649,6 +649,9 @@ code {
 
 .tmweb-code {
     font-size: 90%;
+}
+.tmweb-code-xx {
+    font-size: 90%;
     color: #567b70;
     background-color: #eee;
     border-width: 1px;

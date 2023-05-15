@@ -73,34 +73,6 @@
   <assign|item-4|<macro|<active*|<with|mode|math|<rigid|.>>>>>
 
   <active*|<\src-comment>
-    Typewriter font.
-  </src-comment>>
-
-  <assign|tt-font-base|<macro|x|<with|font|roman|font-family|tt|magnification|<times|<value|magnification>|1.06>|<arg|x>>>>
-
-  <assign|tt-font|<macro|x|<tt-font-base|<arg|x>>>>
-
-  <assign|tt-prog-font|<macro|x|<tt-font-base|<arg|x>>>>
-
-  <assign|tt-session-font|<macro|x|<with|font|typewriter=roman,pagella|<arg|x>>>>
-
-  \;
-
-  <assign|verbatim|<macro|body|<with|language|verbatim|<tt-font|<arg|body>>>>>
-
-  <assign|shell|<macro|body|<with|mode|prog|prog-language|shell|<tt-prog-font|<arg|body>>>>>
-
-  <assign|scm|<macro|body|<with|mode|prog|prog-language|scheme|<tt-prog-font|<arg|body>>>>>
-
-  <assign|cpp|<macro|body|<with|mode|prog|prog-language|cpp|<tt-prog-font|<arg|body>>>>>
-
-  <assign|python|<macro|body|<with|mode|prog|prog-language|python|<tt-prog-font|<arg|body>>>>>
-
-  <assign|scilab|<macro|body|<with|mode|prog|prog-language|scilab|<tt-prog-font|<arg|body>>>>>
-
-  <assign|mmx|<macro|body|<with|mode|prog|prog-language|mathemagix|<tt-prog-font|<arg|body>>>>>
-
-  <active*|<\src-comment>
     Framed sessions setup
   </src-comment>>
 
@@ -116,27 +88,33 @@
 
   <assign|scheme-prompt-color|dark red>
 
-  <active*|<\src-comment>
-    Hacks for the typewriter font in plug-in sessions.
-  </src-comment>>
-
-  <assign|scheme-input|<\macro|prompt|body>
-    <\with|generic-prompt-color|<value|scheme-prompt-color>|generic-input-color|<value|scheme-input-color>>
-      <tt-font|<generic-input|<arg|prompt>|<arg|body>>>
-    </with>
-  </macro>>
-
-  <assign|input|<macro|prompt|body|<with|mode|prog|font-family|rm|<tt-session-font|<style-with|src-compact|none|<compound|<style-with|src-compact|none|<if|<provides|<merge|<value|prog-language>|-input>>|<merge|<value|prog-language>|-input>|generic-input>>|<arg|prompt>|<arg|body>>>>>>>
-
-  <assign|output|<macro|body|<with|mode|prog|font-family|rm|<tt-session-font|<style-with|src-compact|none|<compound|<style-with|src-compact|none|<if|<provides|<merge|<value|prog-language>|-output>>|<merge|<value|prog-language>|-output>|generic-output>>|<arg|body>>>>>>>
-
-  <assign|script-input|<macro|language|session|in|out|<tt-session-font|<style-with|src-compact|none|<compound|<style-with|src-compact|none|<if|<provides|<merge|<arg|language>|-script-input>>|<merge|<arg|language>|-script-input>|generic-script-input>>|<arg|language>|<arg|session>|<arg|in>|<arg|out>>>>>>
-
-  \;
+  <assign|hl-code|<macro|body|<arg|body>>>
 
   Remove justify from session output formatting
 
   \ <assign|generic-output*|<macro|body|<with|par-mode|left|par-flexibility|2.0|par-hyphen|normal|math-display|true|math-frac-limit|<value|session-frac-limit>|math-table-limit|<value|session-table-limit>|<ornament-indent|<value|session-left-indent>|<value|session-right-indent>|<value|output-vpadding>|<value|output-vpadding>|<with|par-sep|<value|session-par-sep>|par-ver-sep|<value|session-par-ver-sep>|<arg|body>>>>>>
+
+  \ <assign|generic-input|<\macro|prompt|body>
+    <\with-input-deco>
+      <\with|ornament-hpadding|<tuple|<value|session-left-indent>|<value|session-right-indent>>>
+        <\ornament>
+          <\ornament-render-body>
+            <surround||<right-flush>|<tabbed*|<tformat|<table|<row|<cell|<id-function|<with|color|<value|generic-prompt-color>|<arg|prompt>>>>|<\cell>
+              <\with|par-sep|<value|session-par-sep>|par-ver-sep|<value|session-par-ver-sep>|math-display|true>
+                <hl-code|<arg|body>>
+              </with>
+            </cell>>>>>>
+          </ornament-render-body>
+        </ornament>
+      </with>
+    </with-input-deco>
+  </macro>>
+
+  \;
+
+  <assign|tmhtml-hl-code|<macro|body|<html-div-class|tmweb-code|<arg|body>>>>
+
+  \;
 
   <\active*>
     <\src-comment>

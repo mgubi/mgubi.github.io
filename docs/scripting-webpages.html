@@ -30,8 +30,8 @@
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 100%; padding-left: 0em; padding-right: 0em; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; background-color: #ff000055"><p>
-          You can run the scripts in this page, pay attention however that
-          they will <b>modify</b> your filesystem, so be careful.
+          You can run the scripts in this page. However, pay attention that
+          some of them will <b>modify</b> your filesystem, so be careful.
         </p></td>
       </tr></tbody>
     </table>
@@ -55,35 +55,32 @@
       We need to set up the base directory first.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (setenv &quot;NOTES&quot; (url-&gt;system 
-              </p><p>
-                (url-append (url-head (current-buffer))
-                &quot;..&quot;)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(setenv &quot;NOTES&quot; (url-&gt;system 
+           (url-append (url-head (current-buffer)) &quot;..&quot;)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (getenv &quot;NOTES&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(getenv &quot;NOTES&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -97,53 +94,48 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Here we read and write a file to check that all is ok.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define t (tree-import 
-              </p><p>
-                (url-&gt;system &quot;$NOTES/src/main.tm&quot;)
-                &quot;texmacs&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define t (tree-import 
+        (url-&gt;system &quot;$NOTES/src/main.tm&quot;) &quot;texmacs&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (tree-export t  (url-&gt;system &quot;$NOTES/test.tm&quot;) 
-                &quot;texmacs&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(tree-export t  (url-&gt;system &quot;$NOTES/test.tm&quot;)  &quot;texmacs&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -157,18 +149,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (system &quot;diff $NOTES/test.tm $NOTES/src/main.tm&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(system &quot;diff $NOTES/test.tm $NOTES/src/main.tm&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
       <p>
@@ -186,18 +178,18 @@
       files. Let's give a look to at all hyperlinks in the file, for example.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* hlink))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* hlink))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -237,18 +229,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       We want to replace all the <code>hlink</code> tags with
@@ -258,32 +249,31 @@
       modify them in place, one after the other. Let's try with the first:
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define h (car (select t '(:* hlink))))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define h (car (select t '(:* hlink))))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list h)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list h)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -298,36 +288,35 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       I put in a list the tree otherwise TeXmacs will try to typeset it. Let's
       now change the label of this tree.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list (tree-assign-node! h 'notes-link))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list (tree-assign-node! h 'notes-link))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -342,18 +331,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* notes-link))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-link))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -368,18 +357,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       It worked! Now the documents' first <code>hlink</code> has been changes
@@ -387,20 +375,19 @@
       
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (map (lambda (h) (tree-assign-node! h 'notes-link)) 
-              </p><p>
-                (select t '(:* hlink)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(map (lambda (h) (tree-assign-node! h 'notes-link)) 
+    (select t '(:* hlink)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -438,36 +425,35 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       And check that there are indeed no more <code>hlink</code> in the
       document
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* hlink))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* hlink))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -481,37 +467,35 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Let's save the result in a new file.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (tree-export t (url-&gt;system &quot;$NOTES/test.tm&quot;)
-              </p><p>
-                &quot;texmacs&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(tree-export t (url-&gt;system &quot;$NOTES/test.tm&quot;)
+             &quot;texmacs&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -525,18 +509,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       I would like to be more selective and change only the internal links,
@@ -545,49 +528,45 @@
       extracts the subtrees of a given tree.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define t (tree-import (url-&gt;system
-                &quot;$NOTES/src/main.tm&quot;)
-              </p><p>
-                &quot;texmacs&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;)
+                       &quot;texmacs&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define l (select t '(:* hlink)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define l (select t '(:* hlink)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list (car l))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list (car l))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -602,18 +581,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list (tree-ref (car l) 0))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list (tree-ref (car l) 0))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -627,18 +606,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list (tree-ref (car l) 1))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list (tree-ref (car l) 1))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -653,18 +632,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (tree-atomic? (tree-ref (car l) 1))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(tree-atomic? (tree-ref (car l) 1))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -678,18 +657,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (tree-&gt;string (tree-ref (car l) 1))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(tree-&gt;string (tree-ref (car l) 1))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -703,38 +682,36 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Atomic trees are strings, so I need to check if it atomic and then check
       if it starts with <code>http://</code>
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (string-starts? (tree-&gt;string (tree-ref (car l) 1))
-              </p><p>
-                &quot;http://&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(string-starts? (tree-&gt;string (tree-ref (car l) 1))
+                &quot;http://&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -748,62 +725,54 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Which ideed it does. I can now fileter all the similar trees and change
       only those.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define l1 (filter (lambda (h) 
-              </p><p>
-                (not (and (tree-atomic? (tree-ref h 1))
-              </p><p>
-                (or  (string-starts? (tree-&gt;string (tree-ref h 1))
-              </p><p>
-                &quot;http://&quot;)  
-              </p><p>
-                (string-starts? (tree-&gt;string (tree-ref h 1))
-              </p><p>
-                &quot;https://&quot;)))))
-              </p><p>
-                l))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define l1 (filter (lambda (h) 
+   (not (and (tree-atomic? (tree-ref h 1))
+       (or  (string-starts? (tree-&gt;string (tree-ref h 1))
+                           &quot;http://&quot;)  
+        (string-starts? (tree-&gt;string (tree-ref h 1))
+                        &quot;https://&quot;)))))
+      l))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                l1
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+l1</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -824,18 +793,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (map (lambda (h) (tree-assign-node! h 'notes-link)) l1)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(map (lambda (h) (tree-assign-node! h 'notes-link)) l1)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -856,36 +825,35 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       I would like also to normalize the filenames to avoid <code>./</code>
       since it is redundant. Note that now <code>l1</code> has changed.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                l1
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+l1</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -906,18 +874,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       So I can iterate again and change the second child to drop
@@ -926,32 +893,24 @@
       a base tree.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (map (lambda (h)
-              </p><p>
-                (if (and (tree-atomic? (tree-ref h 1)) 
-              </p><p>
-                (string-starts? (tree-&gt;string (tree-ref h
-                1))
-              </p><p>
-                &quot;./&quot;))
-              </p><p>
-                (tree-set! h 1 (string-drop 
-              </p><p>
-                (tree-&gt;string (tree-ref h 1))
-                2))))
-              </p><p>
-                (select t '(:* notes-link)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(map (lambda (h)
+       (if (and (tree-atomic? (tree-ref h 1)) 
+                (string-starts? (tree-&gt;string (tree-ref h 1))
+                                &quot;./&quot;))
+            (tree-set! h 1 (string-drop 
+                            (tree-&gt;string (tree-ref h 1)) 2))))
+      (select t '(:* notes-link)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -968,18 +927,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                l1
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+l1</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1000,35 +959,34 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Let's check that this actually modified the document.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* notes-link))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-link))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1049,18 +1007,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Yes, it did. 
@@ -1069,88 +1026,65 @@
       We wrap now all the process in a function which operate on a given tree.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define (handle-links t) (let* 
-              </p><p>
-                ((l (select t '(:* hlink)))
-              </p><p>
-                (l1 (filter (lambda (h) 
-              </p><p>
-                (not (and (tree-atomic? (tree-ref h 1))
-              </p><p>
-                (or  (string-starts? (tree-&gt;string (tree-ref h 1))
-              </p><p>
-                &quot;http://&quot;)  
-              </p><p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define (handle-links t) (let* 
+  ((l (select t '(:* hlink)))
+  (l1 (filter (lambda (h) 
+   (not (and (tree-atomic? (tree-ref h 1))
+       (or  (string-starts? (tree-&gt;string (tree-ref h 1))
+                           &quot;http://&quot;)  
+        (string-starts? (tree-&gt;string (tree-ref h 1))
+                        &quot;https://&quot;)))))
+      l)))
+  (map (lambda (h)
+       (tree-assign-node! h 'notes-link)
+       (if (and (tree-atomic? (tree-ref h 1)) 
                 (string-starts? (tree-&gt;string (tree-ref h 1))
-              </p><p>
-                &quot;https://&quot;)))))
-              </p><p>
-                l)))
-              </p><p>
-                (map (lambda (h)
-              </p><p>
-                (tree-assign-node! h 'notes-link)
-              </p><p>
-                (if (and (tree-atomic? (tree-ref h 1)) 
-              </p><p>
-                (string-starts? (tree-&gt;string (tree-ref h
-                1))
-              </p><p>
-                &quot;./&quot;))
-              </p><p>
-                (tree-set! h 1 (string-drop 
-              </p><p>
-                (tree-&gt;string (tree-ref h 1))
-                2))))
-              </p><p>
-                l1)
-              </p><p>
-                ))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+                                &quot;./&quot;))
+           (tree-set! h 1 (string-drop 
+                            (tree-&gt;string (tree-ref h 1)) 2))))
+      l1)
+  ))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       And check that it actually works as expected.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define t (tree-import (url-&gt;system
-                &quot;$NOTES/src/main.tm&quot;)
-              </p><p>
-                &quot;texmacs&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/main.tm&quot;)
+                       &quot;texmacs&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (handle-links t)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(handle-links t)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1167,18 +1101,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* (:or hlink notes-link)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* (:or hlink notes-link)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1218,18 +1152,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Which it does.
@@ -1240,56 +1173,48 @@
       into the store with a new tag <tt class="verbatim">notes-store</tt>. 
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define t (tree-import (url-&gt;system
-                &quot;$NOTES/src/people.tm&quot;)
-              </p><p>
-                &quot;texmacs&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define t (tree-import (url-&gt;system &quot;$NOTES/src/people.tm&quot;)
+                       &quot;texmacs&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define l (filter (lambda (h) 
-              </p><p>
-                (string-contains?  (tree-&gt;string (tree-ref h
-                1))
-              </p><p>
-                &quot;store/&quot;)) 
-              </p><p>
-                (select t '(:* hlink)))))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define l (filter (lambda (h) 
+              (string-contains?  (tree-&gt;string (tree-ref h 1))
+                                 &quot;store/&quot;)) 
+                (select t '(:* hlink)))))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                l
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+l</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
       <p>
@@ -1322,20 +1247,18 @@
       preform the substitions in this case.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (string-contains
-                &quot;../store/master-thesis-barashkov.pdf&quot;
-                &quot;store/&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(string-contains &quot;../store/master-thesis-barashkov.pdf&quot; &quot;store/&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1349,19 +1272,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (string-drop &quot;../store/master-thesis-barashkov.pdf&quot;
-                9)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(string-drop &quot;../store/master-thesis-barashkov.pdf&quot; 9)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1375,45 +1297,37 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (for-each (lambda (h) 
-              </p><p>
-                (tree-assign-node! h 'notes-store) 
-              </p><p>
-                (let* ((s (tree-&gt;string (tree-ref h 1)))
-              </p><p>
-                (s1 (string-drop s 
-              </p><p>
-                (+ 6 (string-contains s
-                &quot;store/&quot;)))))
-              </p><p>
-                (tree-set! h 1 s1))) 
-              </p><p>
-                l)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(for-each (lambda (h) 
+     (tree-assign-node! h 'notes-store) 
+     (let* ((s (tree-&gt;string (tree-ref h 1)))
+            (s1 (string-drop s 
+                    (+ 6 (string-contains s &quot;store/&quot;)))))
+       (tree-set! h 1 s1))) 
+          l)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                l
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+l</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
       <p>
@@ -1442,54 +1356,41 @@
       applied after <tt class="verbatim">handle-links</tt>)
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define (handle-notes-store t)
-              </p><p>
-                (with l (filter (lambda (h) (string-contains?  
-              </p><p>
-                (tree-&gt;string (tree-ref h 1))
-                &quot;store/&quot;)) 
-              </p><p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define (handle-notes-store t)
+  (with l (filter (lambda (h) (string-contains?  
+                  (tree-&gt;string (tree-ref h 1)) &quot;store/&quot;)) 
                 (select t '(:* notes-link)))
-              </p><p>
-                (for-each (lambda (h) 
-              </p><p>
-                (tree-assign-node! h 'notes-store) 
-              </p><p>
-                (let* ((s (tree-&gt;string (tree-ref h 1)))
-              </p><p>
-                (s1 (string-drop s 
-              </p><p>
-                (+ 6 (string-contains s
-                &quot;store/&quot;)))))
-              </p><p>
-                (tree-set! h 1 s1)))
-              </p><p>
-                l)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+(for-each (lambda (h) 
+     (tree-assign-node! h 'notes-store) 
+     (let* ((s (tree-&gt;string (tree-ref h 1)))
+            (s1 (string-drop s 
+                  (+ 6 (string-contains s &quot;store/&quot;)))))
+       (tree-set! h 1 s1)))
+    l)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (handle-links t)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+ (handle-links t)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1505,32 +1406,31 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (handle-notes-store t)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+ (handle-notes-store t)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (select t '(:* notes-store))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(select t '(:* notes-store))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1555,18 +1455,17 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       All good.
@@ -1578,36 +1477,33 @@
       removing the prefix to make easier later manipulations.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define u1 (url-append (url-append &quot;$NOTES/src&quot; 
-              </p><p>
-                (url-any))  
-              </p><p>
-                &quot;*.tm&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define u1 (url-append (url-append &quot;$NOTES/src&quot; 
+                                   (url-any))  
+                      &quot;*.tm&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                u1
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+u1</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1622,36 +1518,32 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define files (url-&gt;list (url-delta
-                &quot;$NOTES/src/dummy&quot; 
-              </p><p>
-                (url-expand (url-complete u1
-                &quot;fr&quot;)))))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define files (url-&gt;list (url-delta &quot;$NOTES/src/dummy&quot; 
+                (url-expand (url-complete u1 &quot;fr&quot;)))))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (list-take files 5)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(list-take files 5)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1667,23 +1559,20 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (url-directory? (url-append (url-append &quot;$NOTES/src&quot;
-                
-              </p><p>
-                (car files)) 
-              </p><p>
-                (url-parent)))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(url-directory? (url-append (url-append &quot;$NOTES/src&quot; 
+                                    (car files)) 
+                         (url-parent)))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1697,18 +1586,18 @@
       </p>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (url-head (car files))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(url-head (car files))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1722,143 +1611,119 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Now we want to create a similar arborescence as the one in <tt class="verbatim">$NOTES/src</tt>.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define (make-dir-tree url)
-              </p><p>
-                (when (!= url (system-&gt;url &quot;$NOTES/src2&quot;)) 
-              </p><p>
-                (make-dir-tree (url-expand 
-              </p><p>
-                (url-append url (url-parent))))
-              </p><p>
-                (when (not (url-exists? url))     
-              </p><p>
-                (system-mkdir url)
-              </p><p>
-                (system-1 &quot;chmod a+x&quot; url))))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define (make-dir-tree url)
+  (when (!= url (system-&gt;url &quot;$NOTES/src2&quot;)) 
+      (make-dir-tree (url-expand 
+                      (url-append url (url-parent))))
+      (when (not (url-exists? url))     
+        (system-mkdir url)
+        (system-1 &quot;chmod a+x&quot; url))))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define dirs (ahash-set-&gt;list (list-&gt;ahash-set 
-              </p><p>
-                (map (lambda (f) (url-head 
-              </p><p>
-                (url-append &quot;$NOTES/src2&quot;
-                f)))
-              </p><p>
-                files))))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define dirs (ahash-set-&gt;list (list-&gt;ahash-set 
+          (map (lambda (f) (url-head 
+                          (url-append &quot;$NOTES/src2&quot; f)))
+               files))))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (for-each make-dir-tree dirs)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(for-each make-dir-tree dirs)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       This created the right arborescence. We are ready now to convert each
       file in <tt class="verbatim">files</tt>.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (define (proc-file url)
-              </p><p>
-                (define t (tree-import (url-&gt;system 
-              </p><p>
-                (url-append &quot;$NOTES/src&quot;
-                url))  
-              </p><p>
-                &quot;texmacs&quot;))
-              </p><p>
-                (handle-links t) (handle-notes-store t)
-              </p><p>
-                (tree-export t (url-&gt;system 
-              </p><p>
-                (url-append &quot;$NOTES/src2&quot; url)) 
-              </p><p>
-                &quot;texmacs&quot;))
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(define (proc-file url)
+  (define t (tree-import (url-&gt;system 
+                          (url-append &quot;$NOTES/src&quot; url))  
+                         &quot;texmacs&quot;))
+  (handle-links t) (handle-notes-store t)
+  (tree-export t (url-&gt;system 
+                  (url-append &quot;$NOTES/src2&quot; url)) 
+               &quot;texmacs&quot;))</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (proc-file &quot;main.tm&quot;)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(proc-file &quot;main.tm&quot;)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1872,35 +1737,34 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       After these checks, we are ready to process all the files at once.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (map proc-file files)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><pre class="verbatim" xml:space="preserve">
+Scheme] </pre></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(map proc-file files)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="text-indent: 0em">
       <p>
@@ -1917,56 +1781,50 @@
       </p>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                system-move
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+system-move</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       Ok. After checking that there are no problems, we can copy the modified
       files from <tt class="verbatim">src2</tt> to <tt class="verbatim">src</tt>. 
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                (for-each (lambda (url) 
-              </p><p>
-                (system-move (url-append &quot;$NOTES/src2&quot; url) 
-              </p><p>
-                (url-append &quot;$NOTES/src&quot; url))) 
-              </p><p>
-                files)
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+(for-each (lambda (url) 
+      (system-move (url-append &quot;$NOTES/src2&quot; url) 
+                   (url-append &quot;$NOTES/src&quot; url))) 
+          files)</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <div class="compact-block" style="margin-bottom: 0.5em; text-indent: 0em">
-      <p>
-        <tt class="verbatim"><class style="font-family: Times New Roman"><tt><div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
-          <table style="width: 100%">
-            <tbody><tr>
-              <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000">Scheme] </font></td>
-              <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><p>
-                
-              </p></td>
-            </tr></tbody>
-          </table>
-        </div></tt></class></tt>
-      </p>
+      <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
+            <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
+              <pre class="verbatim" xml:space="preserve">
+</pre>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
     </div>
     <p>
       

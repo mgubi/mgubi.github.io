@@ -14,6 +14,6 @@
 
 document.addEventListener('DOMContentLoaded',
   function(event) {
-    document.querySelectorAll('pre').forEach(function(block){ 
+    document.querySelectorAll('.tmweb-code').forEach(function(block){ 
           hljs.highlightBlock(block); }); });
           

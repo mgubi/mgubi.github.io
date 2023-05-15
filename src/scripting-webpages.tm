@@ -17,8 +17,9 @@
 
   <\wide-tabular>
     <tformat|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-background|#faa>|<table|<row|<\cell>
-      You can run the scripts in this page, pay attention however that they
-      will <with|font-series|bold|modify> your filesystem, so be careful.
+      You can run the scripts in this page. However, pay attention that some
+      of them will <with|font-series|bold|modify> your filesystem, so be
+      careful.
     </cell>>>>
   </wide-tabular>
 
