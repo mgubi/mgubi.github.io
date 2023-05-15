@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
@@ -15,9 +15,7 @@
 
   \;
 
-  <with|font-shape|italic|(so far, nothing to see<text-dots>)>
-
-  \;
+  <notes-link|Scripting webpages|scripting-webpages.tm> (May 13th 2023)
 
   \;
 </body>
@@ -32,6 +30,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
   </collection>
 </references>
 

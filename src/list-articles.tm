@@ -12,13 +12,13 @@
 
   <hrule>
 
+  <notes-entry|writings.tm|Writings|This page gathers some writings.|Mon 15
+  May 16:48:33 2023 UTC>
+
   <notes-entry|scripting-webpages.tm|Scripting webpages|This note records a
   workflow to fix some problems with the links in the website. It can be used
   as a tutorial in <TeXmacs> scripting. I show how to batch-modify pages.
   Written May 13th 2013.|Mon 15 May 16:36:11 2023 UTC>
-
-  <notes-entry|writings.tm|Writings|This page gathers some writings.|Sat 13
-  May 16:52:46 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to
