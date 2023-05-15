@@ -13,21 +13,24 @@
 
   <notes-abstract|This note records a workflow to fix some problems with the
   links in the website. It can be used as a tutorial in <TeXmacs> scripting.
-  I show how to batch-modify pages. Written May 13th 2013.>
+  I show how to batch-modify pages. Written May 13th 2023.>
 
   <\wide-tabular>
     <tformat|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-background|#faa>|<table|<row|<\cell>
       You can run the scripts in this page. However, pay attention that some
-      of them will <with|font-series|bold|modify> your filesystem, so be
-      careful.
+      of them will <with|font-series|bold|modify> your filesystem: towards
+      the end we use the <code*|system> procedure & friends to overwrite
+      files in the <code*|src/> subdirectory. Be careful.
     </cell>>>>
   </wide-tabular>
 
   \;
 
-  This document refers to the state of the repository checked out at commit
+  This document refers to the state of the
+  <hlink|mgubi.github.io|https://github.com/mgubi/mgubi.github.io> repository
+  checked out at commit
 
-  \ <code*|dad6b1358b44534c0f6b0d3eb2e721cf04f440c1>.\ 
+  <hlink|<code*|dad6b1358b44534c0f6b0d3eb2e721cf04f440c1>|https://github.com/mgubi/mgubi.github.io/tree/dad6b1358b44534c0f6b0d3eb2e721cf04f440c1>.
 
   The goal is to change certain hyperlinks to use a user-defined macro
   instead, this will make easier in the future to customize the rendering or
@@ -274,8 +277,8 @@
     </input>
   </session>
 
-  Atomic trees are strings, so I need to check if it atomic and then check if
-  it starts with <code*|http://>
+  Atomic trees are strings: I need to check if it atomic and then check if it
+  starts with <code*|http://>.
 
   <\session|scheme|default>
     <\unfolded-io|Scheme] >
@@ -291,8 +294,8 @@
     </input>
   </session>
 
-  Which ideed it does. I can now fileter all the similar trees and change
-  only those.
+  Which ideed it does. I can now filter all the similar trees and change only
+  those.
 
   <\session|scheme|default>
     <\input|Scheme] >
@@ -431,9 +434,8 @@
     </input>
   </session>
 
-  Yes, it did.\ 
-
-  We wrap now all the process in a function which operate on a given tree.
+  Yes, it did. We wrap now all the process in a function which operate on a
+  given tree.
 
   <\session|scheme|default>
     <\input|Scheme] >
@@ -655,7 +657,7 @@
     </unfolded-io>
 
     <\input|Scheme] >
-      \ (handle-notes-store t)
+      (handle-notes-store t)
     </input>
 
     <\unfolded-io|Scheme] >
@@ -826,7 +828,7 @@
     </unfolded-io>
 
     <\input|Scheme] >
-      system-move
+      \;
     </input>
   </session>
 
@@ -849,7 +851,7 @@
     </input>
   </session>
 
-  \ 
+  \ And we are done.\ 
 
   \;
 

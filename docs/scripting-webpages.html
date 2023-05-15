@@ -25,13 +25,15 @@
     <div class="notes-abstract">
       This note records a workflow to fix some problems with the links in the
       website. It can be used as a tutorial in TeXmacs scripting. I show how
-      to batch-modify pages. Written May 13th 2013.
+      to batch-modify pages. Written May 13th 2023.
     </div>
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 100%; padding-left: 0em; padding-right: 0em; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; background-color: #ff000055"><p>
           You can run the scripts in this page. However, pay attention that
-          some of them will <b>modify</b> your filesystem, so be careful.
+          some of them will <b>modify</b> your filesystem: towards the end we
+          use the <code>system</code> procedure &amp; friends to overwrite
+          files in the <code>src/</code> subdirectory. Be careful.
         </p></td>
       </tr></tbody>
     </table>
@@ -39,11 +41,11 @@
       
     </p>
     <p>
-      This document refers to the state of the repository checked out at
-      commit
+      This document refers to the state of the <a href="https://github.com/mgubi/mgubi.github.io">mgubi.github.io</a>
+      repository checked out at commit
     </p>
     <p>
-      <code>dad6b1358b44534c0f6b0d3eb2e721cf04f440c1</code>. 
+      <a href="https://github.com/mgubi/mgubi.github.io/tree/dad6b1358b44534c0f6b0d3eb2e721cf04f440c1"><code>dad6b1358b44534c0f6b0d3eb2e721cf04f440c1</code></a>.
     </p>
     <p>
       The goal is to change certain hyperlinks to use a user-defined macro
@@ -695,8 +697,8 @@ Scheme] </pre></font></td>
       </div>
     </div>
     <p>
-      Atomic trees are strings, so I need to check if it atomic and then check
-      if it starts with <code>http://</code>
+      Atomic trees are strings: I need to check if it atomic and then check if
+      it starts with <code>http://</code>.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
       <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
@@ -738,7 +740,7 @@ Scheme] </pre></font></td>
       </div>
     </div>
     <p>
-      Which ideed it does. I can now fileter all the similar trees and change
+      Which ideed it does. I can now filter all the similar trees and change
       only those.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; text-indent: 0em">
@@ -1020,10 +1022,8 @@ Scheme] </pre></font></td>
       </div>
     </div>
     <p>
-      Yes, it did. 
-    </p>
-    <p>
-      We wrap now all the process in a function which operate on a given tree.
+      Yes, it did. We wrap now all the process in a function which operate on
+      a given tree.
     </p>
     <div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 0em">
       <div class="ornament" style="background-color:#f0f0f0;border-width:0px;padding-left:0.5em;padding-right:0.5em;border-left-color:#dfdfdf;border-top-color:grey;border-radius:0px;;display:block;">
@@ -1412,7 +1412,7 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
               <pre class="verbatim" xml:space="preserve">
- (handle-notes-store t)</pre>
+(handle-notes-store t)</pre>
             </div></td>
           </tr></tbody>
         </table>
@@ -1788,7 +1788,7 @@ Scheme] </pre></font></td>
             <td style="text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><font color="#800000"><tt class="verbatim">Scheme] </tt></font></td>
             <td style="width: 100%; text-align: left; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em"><div class="tmweb-code">
               <pre class="verbatim" xml:space="preserve">
-system-move</pre>
+</pre>
             </div></td>
           </tr></tbody>
         </table>
@@ -1828,7 +1828,7 @@ system-move</pre>
       </div>
     </div>
     <p>
-      
+      And we are done. 
     </p>
     <p>
       
