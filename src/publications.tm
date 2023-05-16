@@ -21,8 +21,6 @@
 
       <nocite|gubinelliStochasticQuantisationFractional2023>
 
-      <nocite|galeatiNoiselessRegularisationNoise2020>
-
       <nocite|galeatiPrevalenceRhoIrregularity2020>
     </with-bib>
 
@@ -236,7 +234,7 @@
   <notes-abstract|Papers I have co-authored \ \U last updated May 2023.>
 
   <\bibliography*|bib-preprints|tm-publist||Preprints>
-    <\bib-list|9>
+    <\bib-list|8>
       <bibitem*|1><bib-year-section|2023><label|bib-preprints-gubinelliStochasticQuantisationFractional2023>M.<nbsp>Gubinelli<localize|
       and >P.<nbsp>Rinaldi. <newblock>Stochastic quantisation of the
       fractional <math|\<Phi\><rsup|4><rsub|3>> model in the full subcritical
@@ -282,11 +280,6 @@
       <math|\<rho\>>-irregularity and related properties.
       <newblock><with|font-shape|italic|ArXiv:2004.00872 [math]>, apr
       2020.<newblock> <newblock><hlink|10.48550/arXiv.2004.00872|https://doi.org/10.48550/arXiv.2004.00872>
-
-      <bibitem*|9><label|bib-preprints-galeatiNoiselessRegularisationNoise2020>L.<nbsp>Galeati<localize|
-      and >M.<nbsp>Gubinelli. <newblock>Noiseless regularisation by noise.
-      <newblock><with|font-shape|italic|ArXiv:2003.14264 [math]>, mar
-      2020.<newblock> <newblock><hlink|10.48550/arXiv.2003.14264|https://doi.org/10.48550/arXiv.2003.14264>
     </bib-list>
   </bibliography*>
 
@@ -7799,53 +7792,6 @@
         PDEs,Mathematics - Probability>
       </db-entry>
 
-      <\db-entry|+2Q1WpM1mVMY9|article|galeatiNoiselessRegularisationNoise2020>
-        <db-field|contributor|root>
-
-        <db-field|modus|manual>
-
-        <db-field|newer|+2IYrABOMnOWx5Fl>
-
-        <db-field|date|1683363095>
-      <|db-entry>
-        <db-field|author|Lucio <name|Galeati><name-sep>Massimiliano
-        <name|Gubinelli>>
-
-        <db-field|title|Noiseless regularisation by noise>
-
-        <db-field|journal|arXiv:2003.14264 [math]>
-
-        <db-field|year|2020>
-
-        <db-field|month|mar>
-
-        <db-field|eprint|2003.14264>
-
-        <db-field|primaryclass|math>
-
-        <db-field|urldate|2020-10-05>
-
-        <db-field|abstract|We analyse the effect of a generic continuous
-        additive perturbation to the well-posedness of ordinary differential
-        equations. Genericity here is understood in the sense of prevalence.
-        This allows us to discuss these problems in a setting where we do not
-        have to commit ourselves to any restrictive assumption on the
-        statistical properties of the perturbation. The main result is that a
-        generic continuous perturbation renders the Cauchy problem well-posed
-        for arbitrarily irregular vector fields. Therefore we establish
-        regularisation by noise \\"without probability\\".>
-
-        <db-field|archiveprefix|arxiv>
-
-        <db-field|keywords|60H50 (Primary) 37C20 (Secondary),Mathematics -
-        Analysis of PDEs,Mathematics - Classical Analysis and
-        ODEs,Mathematics - Probability>
-
-        <db-field|file|/Users/mgubi/Zotero/storage/HLK5T9FS/Galeati and
-        Gubinelli - 2020 - Noiseless regularisation by
-        noise.pdf;/Users/mgubi/Zotero/storage/L5Y7ZGF2/2003.html>
-      </db-entry>
-
       <\db-entry|+2Q1WpM1mVMYO|article|galeatiPrevalenceRhoIrregularity2020>
         <db-field|contributor|root>
 
@@ -8363,7 +8309,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
-    <associate|auto-3|<tuple|9|5>>
+    <associate|auto-3|<tuple|8|5>>
     <associate|auto-4|<tuple|71|5>>
     <associate|auto-5|<tuple|2|6>>
     <associate|auto-6|<tuple|11|6>>
@@ -8451,7 +8397,6 @@
     <associate|bib-preprints-devecchiSingularIntegrationParts2022|<tuple|4|?>>
     <associate|bib-preprints-devecchiStochasticAnalysisSubcritical2022|<tuple|5|?>>
     <associate|bib-preprints-galeatiMixingGenericRough2021|<tuple|6|?>>
-    <associate|bib-preprints-galeatiNoiselessRegularisationNoise2020|<tuple|9|?>>
     <associate|bib-preprints-galeatiPrevalenceRhoIrregularity2020|<tuple|8|?>>
     <associate|bib-preprints-gubinelliStochasticQuantisationFractional2023|<tuple|1|?>>
     <associate|bib-procs-amorena2002sull|<tuple|11|?>>
@@ -8650,8 +8595,6 @@
       devecchiSingularIntegrationParts2022
 
       gubinelliStochasticQuantisationFractional2023
-
-      galeatiNoiselessRegularisationNoise2020
 
       galeatiPrevalenceRhoIrregularity2020
     </associate>

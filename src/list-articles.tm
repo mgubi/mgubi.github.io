@@ -12,11 +12,11 @@
 
   <hrule>
 
-  <notes-entry|research.tm|Research|Mathematics.|Tue May 16 22:08:28 2023
-  UTC>
-
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Tue May 16 22:06:59 2023 UTC>
+  last updated May 2023.|Tue May 16 22:13:15 2023 UTC>
+
+  <notes-entry|research.tm|Research|Mathematics.|Tue May 16 22:10:04 2023
+  UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May 13 17:05:11 2023 UTC>
