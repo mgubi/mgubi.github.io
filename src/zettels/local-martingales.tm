@@ -1,6 +1,6 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
-<style|notes>
+<style|<tuple|notes|notes-meta>>
 
 <\body>
   <\hide-preamble>
@@ -238,8 +238,8 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|../src/template.tm>>
-    <associate|eq:counter|<tuple|1|?|../src/template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|eq:counter|<tuple|1|?>>
   </collection>
 </references>
 

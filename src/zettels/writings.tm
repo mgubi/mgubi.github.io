@@ -1,6 +1,6 @@
 <TeXmacs|2.1.2>
 
-<style|notes>
+<style|<tuple|notes|notes-meta>>
 
 <\body>
   <\hide-preamble>
@@ -17,6 +17,11 @@
 
   <notes-link|Scripting webpages|scripting-webpages.tm> (May 13th 2023)
 
+  <hlink|When a local martingale is a martingale?|local-martingales.tm> (May
+  15th 2023)
+
+  \;
+
   \;
 </body>
 
@@ -30,7 +35,6 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
-    <associate|auto-2|<tuple|?|?>>
   </collection>
 </references>
 

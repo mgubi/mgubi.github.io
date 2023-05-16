@@ -12,14 +12,6 @@
 
   <hrule>
 
-  <notes-entry|scripting-webpages.tm|Scripting webpages|This note records a
-  workflow to fix some problems with the links in the website. It can be used
-  as a tutorial in <TeXmacs> scripting. I show how to batch-modify pages.
-  Written May 13th 2023.|Mon 15 May 21:30:26 2023 UTC>
-
-  <notes-entry|writings.tm|Writings|This page gathers some writings.|Mon 15
-  May 16:48:33 2023 UTC>
-
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat 13 May 16:52:44 2023 UTC>
 

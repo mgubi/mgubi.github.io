@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.2" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="toggle" style="display: none">
+      <p>
+        
+      </p>
+    </div>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./writings.html">writings</a>]<em class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">When a local martingale is a martingale?<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Last week we had a discussion in class about <i>continuous local
+      martingales</i>. My experience is that it is a confusing aspect in
+      learning stochastic calculus. I record here some aspects of that
+      discussion. May 15th 2023.
+    </div>
+    <p>
+      A continuous local martingale \((M_t)_{t \geqslant 0}\) is a continuous
+      adapted stochastic process in a filtered probability space \((\Omega,
+      \mathcal{F}, \mathbb{P}, (\mathcal{F}_t)_{t \geqslant 0})\), for which
+      there exists a sequence of stopping times \((\tau_n)_{n \geqslant 0}\)
+      with \(\tau_n \rightarrow + \infty\) that make the stopped processes
+      \((M^{\tau_n}_t)_{t \geqslant 0}\) <i>true</i> martingales, that is
+      \(M^{\tau_n}_t \in L^1\) for all \(t \geqslant 0\) and \(\mathbb{E}
+      [M^{\tau_n}_t |\mathcal{F}_s] = M^{\tau_n}_s\) for all \(t \geqslant s\)
+      (the martingale property). Local martingales do not have predetermined
+      integrability properties, as their name suggest: they are <i>locally</i>
+      martingales, where &ldquo;locally&rdquo; here refers to some part of the
+      probability space. Intuitively, the stopping times \(\tau_n\) are there
+      to avoid that the local martingale becomes too large and fails to be
+      integrable enough to continue to satisfy the martingale property. The
+      important point is that these local approximations become better and
+      better as \(n \rightarrow \infty\) since in this case \(\tau_n
+      \rightarrow \infty\) and therefore the stopped process \(M^{\tau_n}_t =
+      M_{\tau_n \wedge t}\) coincides our original process \(M_t\) for \(t \in
+      [0, \tau_n]\), an interval that becomes larger and larger as \(n
+      \rightarrow \infty\). Note indeed that there is no issue in taking the
+      sequence \((\tau_n)_{n \geqslant 0}\) increasing (one can always do so).
+    </p>
+    <p>
+      Now the interesting question is: when a local martingale \((M_t)_{t
+      \geqslant 0}\) is a (true) martingale? This question revolves around the
+      problem of establishing the necessary \(L^1\) integrability and the
+      martingale property. Since it is already clear that \(M_t^{\tau_n}
+      \rightarrow M_t\) almost surely as \(n \rightarrow \infty\) for each
+      fixed \(t \geqslant 0\), we can ensure both these properties hold
+      provided we have uniform integrability of the family \((M_t^{\tau_n})_{n
+      \geqslant 0}\) for each \(t \geqslant 0\) (note that we do not require
+      any uniform integrability (UI) in \(t\), but this will be not so simple
+      in the following). Indeed assume this is true, then UI implies
+      integrability and UI + almost sure convergence implies \(L^1\)
+      convergence, so we have that
+    </p>
+    <center>
+      \(\displaystyle \| M_s -\mathbb{E} [M_t |\mathcal{F}_s] \|_{L^1} = \|
+      M_s - M_s^{\tau_n}
+-\mathbb{E} [M_t - M^{\tau_n}_t |\mathcal{F}_s]
+      \|_{L^1}\)
+    </center>
+    <center>
+      \(\displaystyle \leqslant \| M_s - M_s^{\tau_n} \|_{L^1} + \| \mathbb{E}
+      [M_t - M^{\tau_n}_t
+|\mathcal{F}_s] \| \leqslant \| M_s - M_s^{\tau_n}
+      \|_{L^1} + \| M_t -
+M_t^{\tau_n} \|_{L^1} \rightarrow 0\)
+    </center>
+    <p>
+      as \(n \rightarrow \infty\) which implies \(\| M_s -\mathbb{E} [M_t
+      |\mathcal{F}_s] \|_{L^1} = 0\). \(M\) is a true martingale. Given that,
+      how we determine if for all \(t \geqslant 0\), \((M_t^{\tau_n})_{n
+      \geqslant 0}\) is UI? 
+    </p>
+    <p>
+      Maybe surprisingly, it is not enough that the family \((M_t)_{t
+      \geqslant 0}\) is UI. Let's produce a counterexample. Take \((B_t)_{t
+      \geqslant 0}\) to be the three dimensional standard Brownian motion. By
+      the properties of Brownian motion we know that \(\mathbb{P} (\exists t >
+      0 : B_t = 0) = 0\), i.e. the process \((B_t)_{t \geqslant 0}\) will
+      never touch the origin, almost surely. Then we can set \(M_t := | B_{t +
+      1} |^{- 1}\) without problems since the function \(f (x) := | x |^{-
+      1}\) is well defined when \(x \neq 0\). Observe moreover that \(\Delta f
+      (x) = 0\) for \(x \neq 0\), so \(f\) is harmonic outside the origin
+      (this depends on the fact that we work in \(\mathbb{R}^3\)) and
+      therefore \(M_t = f (B_{t + 1})\) is a local martingale:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle M_t = f (B_{t + 1}) = f (B_1) +
+        \int_0^t \nabla f (B_{s + 1}) \cdot \mathrm{d}
+B_{s + 1}, \qquad
+        \nabla f (x) = - \frac{x}{| x |^3}, \qquad x \neq 0. \)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      Note also that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [| M_t |^2] =\mathbb{E} [| B_{t + 1} |^{- 2}]
+      = \int_{\mathbb{R}^3}
+\frac{e^{- x^2 / 2 (t + 1)}}{[2 \pi (t + 1)]^{3 /
+      2}} \frac{\mathrm{d} x}{| x
+|^2} = \frac{1}{t + 1} \int_{\mathbb{R}^3}
+      \frac{e^{- x^2 / 2}}{(2 \pi)^{3 /
+2}} \frac{\mathrm{d} x}{| x |^2}
+      \leqslant \frac{C}{t + 1}\)
+    </center>
+    <p>
+      since \(| x |^{- 2}\) is integrable near the origin in \(\mathbb{R}^3\)
+      and the integral over all \(x\) above is finite. This implies that
+      \(\sup_{t \geqslant 0} \mathbb{E} [| M_t |^2] < \infty\) and therefore
+      that \((M_t)_{t \geqslant 0}\) is a continuous positive UI local
+      martingale. Now, note also that the three dimensional Brownian motion is
+      transient, that it it will eventually leave any bounded forever, and in
+      particular \(B_t \rightarrow \infty\) as \(t \rightarrow \infty\) a.s..
+      As a consequence \(M_t \rightarrow 0\) as \(t \rightarrow \infty\)
+      almost surely. 
+    </p>
+    <p>
+      Then \((M_t)_{t \in [0, \infty)}\) <b>cannot</b> be a martingale,
+      because if it were, by Doob's martingale convergence theorem it would
+      converge almost surely as \(t \rightarrow \infty\) and by UI it would
+      also converge in \(L^1\) and therefore it would satisfy \(M_t
+      =\mathbb{E} [M_{\infty} |\mathcal{F}_t]\) but we know that \(M_{\infty}
+      = 0\) so this is a contradiction.
+    </p>
+    <p>
+      Where is the problem? well, the problem must lie in the fact that
+      \((M_t)_{t \geqslant 0}\), despite being UI for each fixed \(t\) is not
+      so uniformly in the time variable. And this become a problem since the
+      time is continuous:  there is a difficulty in controlling the
+      fluctuations of the process for all the possible values of the time
+      parameter. This is a quite vague statement, which tries to render the
+      core of the difficulty. To appreciate it it could be useful to consider
+      what we really need, i.e. the uniform integrability of the family
+      \((M_{t \wedge \tau_n})_{n \geqslant 0}\) and not of \((M)_{t \geqslant
+      0}\), the crucial difference is that in the first case we have a family
+      of (essentially arbitrary) random times \((t \wedge \tau_n)_{n \geqslant
+      0}\), while the times \((t)_{t \geqslant 0}\) are deterministic in the
+      second case, so the uniform integrability of the first family is more
+      <i>difficult</i> than the second. The random times could pick large
+      fluctuations of the process \((M_t)_{t \geqslant 0}\) by choosing (not
+      so) appropriately the time, i.e. looking at the &ldquo;wrong&rdquo;
+      times. 
+    </p>
+    <p>
+      To avoid this we need to ensure that fluctuations (jointly in \(t \in
+      [0, T]\) and \(\omega \in \Omega\)) of \((M_t)_{t \geqslant 0}\) are
+      under control, that is we need to control the large values of the
+      process: \(M^{\ast}_t := \sup_{s \in [0, t]} | M_s |\): if we know that
+      \(M^{\ast}_t\) is UI for each fixed \(t\) then since \(| M^{\tau_n}_t |
+      \leqslant M^{\ast}_t\) we know also that \((M_{t \wedge \tau_n})_{n
+      \geqslant 0}\) is UI and we are done.
+    </p>
+    <p>
+      This information could be directly available to us, by specific
+      properties of \((M_t)_{t \geqslant 0}\) (e.g. it is a process taking
+      values in a bounded set) or we need other ways to control its maximum.
+      For example via the quadratic variation. However we cannot apply Doob's
+      maximal inequality directly to \(M\) since it is only a local
+      martingale. We have to work with \(M^{\tau_n}\), and then deduce that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [| \sup_{s \in [0, t]} | M_s^{\tau_n} | |^p]
+      \leqslant \left(
+\frac{p}{p - 1} \right)^p \mathbb{E} [| M_t^{\tau_n}
+      |^p]\)
+    </center>
+    <p>
+      for all \(p > 1\). Then, then BDG inequality (or It&ocirc; isometry when
+      \(p = 2\)) implies that  
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [| \sup_{s \in [0, t]} | M_s^{\tau_n} | |^p]
+      \lesssim \mathbb{E}
+[\langle M^{\tau_n} \rangle_t^{p / 2}]\)
+    </center>
+    <p>
+      and now we can exploit the crucial property that \(t \mapsto \langle M
+      \rangle_t\) is an <i>non-decreasing</i> process to get rid of the random
+      time \(\tau_n\), since
+    </p>
+    <center>
+      \(\displaystyle \langle M^{\tau_n} \rangle_t = \langle M \rangle_{t
+      \wedge \tau_n} \leqslant
+\langle M \rangle_t,\)
+    </center>
+    <p>
+      and obtain
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [| \sup_n | M_t^{\tau_n} | |^p] \leqslant
+      \mathbb{E} [| \sup_{s \in
+[0, t]} | M_t^{\tau_n} | |^p] \lesssim
+      \mathbb{E} [\langle M \rangle_t^{p /
+2}],\)
+    </center>
+    <p>
+      which implies that, provided we can prove that  \(\mathbb{E} [\langle M
+      \rangle_t^{p / 2}] < \infty\) for \(p > 1\), then we have also that
+      \(\sup_n | M_t^{\tau_n} | \in L^p\) and therefore that
+      \((M_t^{\tau_n})_{n \geqslant 0}\) is UI. Usually a finite \(L^1\)
+      estimate for the quadratic variation up to any finite time \(T\) is
+      available and this will settle the question of the
+      &ldquo;martingality&rdquo; of \(M\) for any finite interval \([0, T]\)
+      in the positive. In particular if \(\langle M \rangle_{\infty} \in L^{p
+      / 2}\) then \((M_t)_{t \geqslant 0}\) is an \(L^p\)-martingale in \([0,
+      \infty]\).
+    </p>
+    <p>
+      If we go back to the process&nbsp;(<a href="#eq:counter">1</a>) we see that
+    </p>
+    <center>
+      \(\displaystyle \langle M \rangle_t = \int_0^t | \nabla f (B_{s + 1})
+      |^2 \mathrm{d} s, \qquad
+| \nabla f (x) |^2 = \frac{1}{| x |^4},\)
+    </center>
+    <p>
+      and one finds, e.g. that (by Fubini's theorem)
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\langle M \rangle_t] =\mathbb{E} \int_0^t |
+      B_{s + 1} |^{- 4}
+\mathrm{d} s = \int_0^t \mathbb{E} | B_{s + 1} |^{- 4}
+      \mathrm{d} s\)
+    </center>
+    <p>
+      but now
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} | B_{s + 1} |^{- 4} = \int_{\mathbb{R}^3}
+      \frac{e^{- x^2 / 2 (s +
+1)}}{[2 \pi (s + 1)]^{3 / 2}} \frac{\mathrm{d}
+      x}{| x |^4} = \frac{1}{(s +
+1)^2} \int_{\mathbb{R}^3} \frac{e^{- x^2 /
+      2}}{(2 \pi)^{3 / 2}}
+\frac{\mathrm{d} x}{| x |^4} = + \infty\)
+    </center>
+    <p>
+      since \(| x |^{- 4}\) is not integrable near the origin in
+      \(\mathbb{R}^3\), so \(\langle M \rangle_t \not{\in} L^1\). Actually we
+      know that \(\langle M \rangle_{\infty} \not{\in} L^{p / 2}\) for any \(p
+      > 1\) since otherwise \((M_t)_{t \in [0, \infty]}\) would be an \(L^p\)
+      martingale, which we already know to be false.
+    </p>
+    <p>
+      The conclusion of this discussion is that it is not enough to be able to
+      compute the size of the fluctuations of a local martingale for
+      <i>fixed</i> times in order to establish the martingale property. One
+      need some control on the time-dependence of these fluctuations, either
+      in the form of a bound on the maximum of the process or in the form of
+      some integrability of its quadratic variation (which by Doob's
+      inequality then controls the size of the maximum).
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

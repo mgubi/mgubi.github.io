@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://texmacs.github.io/notes"/>
   <link rel="self" type="application/atom+xml" href="http://texmacs.github.io/notes/docs/notes.atom"/>
-  <updated>2023-05-15T21:30:57Z</updated>
+  <updated>2023-05-16T13:11:26Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,25 +11,6 @@
   <id>texmacs.github.io/notes,2020,1</id>
   <icon>http://texmacs.github.io/notes/misc/blog-icon.ico</icon>
   <logo>http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png</logo>
-  <entry>
-    <title>Scripting webpages</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/scripting-webpages.html"/>
-    <id>texmacs.github.io/notes/scripting-webpages.tm:2023-05-15T21:30:26Z</id>
-    <updated>2023-05-15T21:30:26Z</updated>
-    <published>2023-05-15T21:30:28Z</published>
-    <summary><concat>This note records a workflow to fix some problems with
-    the links in the website. It can be used as a tutorial in <TeXmacs/>
-    scripting. I show how to batch-modify pages. Written May 13th
-    2023.</concat></summary>
-  </entry>
-  <entry>
-    <title>Writings</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/writings.html"/>
-    <id>texmacs.github.io/notes/writings.tm:2023-05-15T16:48:33Z</id>
-    <updated>2023-05-15T16:48:33Z</updated>
-    <published>2023-05-15T18:37:20Z</published>
-    <summary>This page gathers some writings.</summary>
-  </entry>
   <entry>
     <title>Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://texmacs.github.io/notes/docs/programming.html"/>
