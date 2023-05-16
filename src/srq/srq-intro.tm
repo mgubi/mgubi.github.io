@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -79,6 +79,9 @@
     <item>October 8th \<cdot\> F.<nbsp>Toninelli, \PLecture 1 - The
     interacting dimer model\Q (<notes-link|notes|srq-seminar-20181008-toninelli.tm>)
 
+    <item>October 9th \<cdot\> B. Toth, talk at the Probability seminar of
+    the Mathematics Department (<notes-link|notes|prob-seminar-20181009-toth.tm>)
+
     <item>October 10th \<cdot\> F.<nbsp>Toninelli, \PLecture 2 - The
     interacting dimer model\Q (<notes-link|notes|srq-seminar-20181010-toninelli.tm>)
 
@@ -137,6 +140,8 @@
     <item>December 7th \<cdot\> R.<nbsp>Kotecky, \PAn abstract framework for
     a non-perturbative renormalisation\Q (<notes-link|notes|srq-seminar-20181207-kotecky.tm>)
   </itemize>
+
+  \;
 
   \;
 

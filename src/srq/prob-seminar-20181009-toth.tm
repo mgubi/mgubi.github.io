@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|old-dots|old-lengths|notes-meta>>
 
@@ -17,8 +17,8 @@
   <with|font-series|bold|Invariance principle for the random Lorenz Gas
   (beyond the Boltzmann\UGrad Gallavotti\USpohn limit)>
 
-  <with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|1cm|<tuple|0.5gw|0.5gh>>|gr-geometry|<tuple|geometry|0.733335par|0.400002par|center>|gr-point-size|10ln|gr-point-style|round|gr-arrow-end|\<gtr\>|gr-dash-style|11100|<graphics||<point|-4.58864|1.56838>|<point|-2.56158|2.13894>|<point|-3.32736|-0.518736>|<point|-0.219209|1.2981>|<point|-0.084072|-0.0382491>|<point|-1.09007|-1.61485>|<point|1.89794|-1.11934>|<point|3.57966|1.28309>|<point|1.7628|2.33414>|<point|1.61265|0.307101>|<with|point-size|10ln|point-style|round|<point|-4.58864|1.56838>>|<with|point-size|10ln|point-style|round|<point|-2.56158|2.13894>>|<with|point-size|10ln|point-style|round|<point|-3.32736|-0.518736>>|<with|point-size|10ln|point-style|round|<point|-0.219209|1.2981>>|<with|point-size|10ln|point-style|round|<point|-0.084072|-0.0382491>>|<with|point-size|10ln|point-style|round|<point|-1.09007|-1.61485>>|<with|point-size|10ln|point-style|round|<point|1.61265|0.307101>>|<with|point-size|10ln|point-style|round|<point|1.7628|2.33414>>|<with|point-size|10ln|point-style|round|<point|3.57966|1.28309>>|<with|point-size|10ln|point-style|round|<point|1.89794|-1.11934>>|<math-at|P
-  P P<around*|(|\<lambda\>|)>|<point|-4.70874|-2.12538>>|<math-at|r=radius|<point|-4.4535|1.193>>|<with|arrow-end|\<gtr\>|dash-style|11100|<line|<point|-4.70874|0.292086>|<point|-3.38741897076333|-0.293507739118931>|<point|-2.47149093795476|1.97377298584469>|<point|-0.369361026590819|1.17798319883582>|<point|0.036049742029369|0.156948670459055>|<point|1.74778409842572|2.16897076332848>|<point|4.22531088768356|-0.458675089297526>>>>>
+  <center|<with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|1cm|<tuple|0.5gw|0.5gh>>|gr-geometry|<tuple|geometry|0.733335par|0.400002par|center>|gr-point-size|10ln|gr-point-style|round|gr-arrow-end|\<gtr\>|gr-dash-style|11100|<graphics||<point|-4.58864|1.56838>|<point|-2.56158|2.13894>|<point|-3.32736|-0.518736>|<point|-0.219209|1.2981>|<point|-0.084072|-0.0382491>|<point|-1.09007|-1.61485>|<point|1.89794|-1.11934>|<point|3.57966|1.28309>|<point|1.7628|2.33414>|<point|1.61265|0.307101>|<with|point-size|10ln|point-style|round|<point|-4.58864|1.56838>>|<with|point-size|10ln|point-style|round|<point|-2.56158|2.13894>>|<with|point-size|10ln|point-style|round|<point|-3.32736|-0.518736>>|<with|point-size|10ln|point-style|round|<point|-0.219209|1.2981>>|<with|point-size|10ln|point-style|round|<point|-0.084072|-0.0382491>>|<with|point-size|10ln|point-style|round|<point|-1.09007|-1.61485>>|<with|point-size|10ln|point-style|round|<point|1.61265|0.307101>>|<with|point-size|10ln|point-style|round|<point|1.7628|2.33414>>|<with|point-size|10ln|point-style|round|<point|3.57966|1.28309>>|<with|point-size|10ln|point-style|round|<point|1.89794|-1.11934>>|<math-at|P
+  P P<around*|(|\<lambda\>|)>|<point|-4.70874|-2.12538>>|<math-at|r=radius|<point|-4.4535|1.193>>|<with|arrow-end|\<gtr\>|dash-style|11100|<line|<point|-4.70874|0.292086>|<point|-3.38741897076333|-0.293507739118931>|<point|-2.47149093795476|1.97377298584469>|<point|-0.369361026590819|1.17798319883582>|<point|0.036049742029369|0.156948670459055>|<point|1.74778409842572|2.16897076332848>|<point|4.22531088768356|-0.458675089297526>>>>>>
 
   The scatterers are placed by a Poisson point process of intensity
   <math|\<lambda\>> and the initial velocity is random, then the particle
@@ -143,19 +143,17 @@
   <\proposition>
     \;
 
-    <\equation*>
-      \<bbb-P\><around*|(|<around*|{|<text|after <math|k> scattering events I
-      hit the <math|2r> neightborhood of the inital point, for
-      <math|Y>>|}>|)>
-    </equation*>
-
-    <\equation*>
-      =\<bbb-P\><around*|(|<tabular|<tformat|<table|<row|<cell|<text|<with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|0.420434cm|<tuple|0.569993gw|0.490001gh>>|gr-geometry|<tuple|geometry|0.160007par|0.10667par|center>|gr-color|blue|gr-point-size|10ln|gr-arrow-end|\<gtr\>|gr-dash-style|10|magnify|0.42044820699257|<graphics||<with|color|blue|<line|<point|-2.40693|0.0947711>|<point|-1.34085196454557|1.31100343960841>|<point|0.115623759756582|1.13082087577722>|<point|1.00152136525996|0.319999338536844>>>|<with|color|blue|dash-style|10|<line|<point|1.00152|0.319999>|<point|0.596110596639767|-1.04638510384972>>>|<with|color|blue|<line|<point|0.596111|-1.04639>|<point|-0.785272522820479|-1.25659809498611>|<point|-2.09161264717555|-1.00133946289192>|<point|-2.40693|0.0947711>>>|<with|color|blue|<math-at|1|<point|-2.30181432067734|-1.31666233231909>>>|<with|color|blue|<math-at|2|<point|-0.875364|-1.57192>>>|<with|color|blue|<math-at|3|<point|0.821339|-1.2566>>>|<with|color|blue|<math-at|k|<point|-2.76729880672047|0.184862234157957>>>|<with|color|blue|<math-at|k-1|<point|-1.55106|1.53623>>>|<with|color|blue|<math-at|k-2|<point|0.265776|1.40109>>>|<with|color|blue|<math-at|k-3|<point|1.33186|0.38006>>>|<with|color|yellow|point-size|10ln|<point|-2.42104|0.0222582>>|<with|color|blue|arrow-end|\<gtr\>|dash-style|10|<line|<point|-1.25076|0.0196951>|<point|-1.17568461436698|-0.190517925651541>|<point|-0.980470300304273|-0.385715703135335>|<point|-0.454937822463289|-0.325654848524937>|<point|-0.439922608810689|0.0647407064426512>|<point|-0.499983463421087|0.304984124884244>|<point|-0.815302950125678|0.335014552189443>>>>>>>>>>>|)>\<leqslant\>C<rsub|k><choice|<tformat|<table|<row|<cell|r<rsup|k>>|<cell|1\<leqslant\>k\<leqslant\>d-2>>|<row|<cell|r<rsup|d-1><around*|\||log
-      r|\|>>|<cell|k=d-1>>|<row|<cell|r<rsup|d>>|<cell|k\<geqslant\>d>>>>>
-    </equation*>
+    <\wide-tabular>
+      <tformat|<cwith|1|-1|1|1|cell-halign|c>|<table|<row|<\cell>
+        <math|\<bbb-P\><around*|(|<around*|{|<text|after <math|k> scattering
+        events I hit the <math|2r> neightborhood of the inital point, for
+        <math|Y>>|}>|)>>
+      </cell>>|<row|<\cell>
+        <with|gr-mode|<tuple|edit|text-at>|gr-frame|<tuple|scale|1cm|<tuple|0.549995gw|0.260023gh>>|gr-geometry|<tuple|geometry|0.50002par|0.120019par|center>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|<graphics||<text-at|<math|=\<bbb-P\><around*|(|<text|<with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|0.420434cm|<tuple|0.569993gw|0.490001gh>>|gr-geometry|<tuple|geometry|0.160007par|0.10667par|center>|gr-color|blue|gr-point-size|10ln|gr-arrow-end|\<gtr\>|gr-dash-style|10|magnify|0.42044820699257|<graphics||<with|color|blue|<line|<point|-2.40693|0.0947711>|<point|-1.34085196454557|1.31100343960841>|<point|0.115623759756582|1.13082087577722>|<point|1.00152136525996|0.319999338536844>>>|<with|color|blue|dash-style|10|<line|<point|1.00152|0.319999>|<point|0.596110596639767|-1.04638510384972>>>|<with|color|blue|<line|<point|0.596111|-1.04639>|<point|-0.785272522820479|-1.25659809498611>|<point|-2.09161264717555|-1.00133946289192>|<point|-2.40693|0.0947711>>>|<with|color|blue|<math-at|1|<point|-2.30181432067734|-1.31666233231909>>>|<with|color|blue|<math-at|2|<point|-0.875364|-1.57192>>>|<with|color|blue|<math-at|3|<point|0.821339|-1.2566>>>|<with|color|blue|<math-at|k|<point|-2.76729880672047|0.184862234157957>>>|<with|color|blue|<math-at|k-1|<point|-1.55106|1.53623>>>|<with|color|blue|<math-at|k-2|<point|0.265776|1.40109>>>|<with|color|blue|<math-at|k-3|<point|1.33186|0.38006>>>|<with|color|yellow|point-size|10ln|<point|-2.42104|0.0222582>>|<with|color|blue|arrow-end|\<gtr\>|dash-style|10|<line|<point|-1.25076|0.0196951>|<point|-1.17568461436698|-0.190517925651541>|<point|-0.980470300304273|-0.385715703135335>|<point|-0.454937822463289|-0.325654848524937>|<point|-0.439922608810689|0.0647407064426512>|<point|-0.499983463421087|0.304984124884244>|<point|-0.815302950125678|0.335014552189443>>>>>>|)>\<leqslant\>C<rsub|k><choice|<tformat|<table|<row|<cell|r<rsup|k>>|<cell|1\<leqslant\>k\<leqslant\>d-2>>|<row|<cell|r<rsup|d-1><around*|\||log
+        r|\|>>|<cell|k=d-1>>|<row|<cell|r<rsup|d>>|<cell|k\<geqslant\>d>>>>>>|<point|-3.8|0.3>>>>
+      </cell>>>>
+    </wide-tabular>
   </proposition>
-
-  \;
 
   Up to time of order <math|r<rsup|-1>> you do not see recollisions. The blue
   and red trajectories will be the same. (this give a very simple proof of
@@ -209,14 +207,14 @@
   probability that <math|Z\<neq\>X> (prob of order <math|r>, so we have them
   together up to times of order <math|r<rsup|\<varepsilon\>-1>>).\ 
 
-  <with|gr-mode|<tuple|edit|point>|gr-frame|<tuple|scale|1cm|<tuple|0.5gw|0.5gh>>|gr-geometry|<tuple|geometry|0.866668par|0.400002par|center>|gr-color|dark
+  <center|<with|gr-mode|<tuple|edit|point>|gr-frame|<tuple|scale|1cm|<tuple|0.5gw|0.5gh>>|gr-geometry|<tuple|geometry|0.866668par|0.400002par|center>|gr-color|dark
   cyan|gr-snap|<tuple>|gr-point-style|round|gr-point-size|10ln|<graphics||<with|color|blue|<line|<point|-5.40845|-0.937161>|<point|-1.45945230850642|2.36618600343961>|<point|1.4084534991401|0.0988887418970763>|<point|-1.72972615425321|-1.43266305066808>|<point|2.72980883714777|-1.71795211006747>|<point|1.2733165762667|-2.19845548352957>>>|<with|color|dark
   cyan|<line|<point|-5.28833|-1.05728>|<point|-1.44443709485382|2.20101865326101>|<point|1.1982405080037|0.113903955549676>|<point|-1.77477179521101|-1.35758698240508>|<point|2.59467191427437|-1.59783040084667>|<point|1.2282709353089|-2.07831723772986>|<point|2.72980883714777|-1.85308903294087>|<point|1.3183622172245|-2.34860762005556>|<point|3.24032610133616|-2.84410967059135>>>|<with|color|blue|<line|<point|1.27332|-2.19846>|<point|-0.903889403360233|-2.91918573885435>>>|<with|color|dark
   cyan|point-size|10ln|point-style|round|<point|-1.45945|2.59141>>|<with|color|dark
   cyan|point-size|10ln|point-style|round|<point|1.67874|0.0688583>>|<with|color|dark
   cyan|point-size|10ln|point-style|round|<point|-1.93992|-1.44768>>|<with|color|dark
   cyan|point-size|10ln|point-style|round|<point|2.92501|-1.64288>>|<with|color|dark
-  cyan|point-size|10ln|point-style|round|<point|1.01806|-2.25852>>>>
+  cyan|point-size|10ln|point-style|round|<point|1.01806|-2.25852>>>>>
 
   \;
 
@@ -252,11 +250,11 @@
     \<lambda\>=Uniform<around*|(|S<rsup|d-1>|)>\<otimes\>Leb\<otimes\>Uniform<around*|(|S<rsup|d-1>|)>
   </equation*>
 
-  <with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|1cm|<tuple|0.589991gw|0.29002gh>>|gr-geometry|<tuple|geometry|0.513335par|0.220004par|center>|gr-arrow-end|\<gtr\>|<graphics||<with|color|dark
+  <center|<with|gr-mode|<tuple|edit|line>|gr-frame|<tuple|scale|1cm|<tuple|0.589991gw|0.29002gh>>|gr-geometry|<tuple|geometry|0.513335par|0.220004par|center>|gr-arrow-end|\<gtr\>|<graphics||<with|color|dark
   green|<line|<point|-4.30632|1.82308>|<point|2.48055298319884|1.76301428760418>|<point|-0.117078978700886|-0.699480751422146>|<point|-2.42942188120122|2.12337941526657>>>|<with|color|dark
   green|<math-at|u|<point|2.73582577589628|1.23554228469374>>>|<with|color|dark
   green|<math-at|v|<point|-1.25822358843762|-0.626372286678132>>>|<with|color|dark
-  green|<math-at|\<xi\>|<point|1.32441385368435|0.199464472006879>>>|<with|arrow-end|\<gtr\>|<line|<point|2.61825|1.50498>|<point|2.22531088768356|1.08537835692552>>>|<with|arrow-end|\<gtr\>|<line|<point|-0.672642|-0.611341>|<point|-1.13811350707766|-0.115838735282445>>>>>
+  green|<math-at|\<xi\>|<point|1.32441385368435|0.199464472006879>>>|<with|arrow-end|\<gtr\>|<line|<point|2.61825|1.50498>|<point|2.22531088768356|1.08537835692552>>>|<with|arrow-end|\<gtr\>|<line|<point|-0.672642|-0.611341>|<point|-1.13811350707766|-0.115838735282445>>>>>>
 
   <\equation*>
     <around*|{|<around*|(|u,x,v|)>:<text|recollision
