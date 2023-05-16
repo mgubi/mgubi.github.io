@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2023-05-16T22:06:28Z</updated>
+  <updated>2023-05-16T22:10:00Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -14,16 +14,16 @@
   <entry>
     <title>Research</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/research.html"/>
-    <id>mgubi.github.io/research.tm:2023-05-16T22:05:51Z</id>
-    <updated>2023-05-16T22:05:51Z</updated>
-    <published>2023-05-16T22:05:55Z</published>
+    <id>mgubi.github.io/research.tm:2023-05-16T22:08:28Z</id>
+    <updated>2023-05-16T22:08:28Z</updated>
+    <published>2023-05-16T22:08:31Z</published>
     <summary>Mathematics.</summary>
   </entry>
   <entry>
     <title>Publications</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/publications.html"/>
-    <id>mgubi.github.io/publications.tm:2023-05-16T21:56:44Z</id>
-    <updated>2023-05-16T21:56:44Z</updated>
+    <id>mgubi.github.io/publications.tm:2023-05-16T22:06:59Z</id>
+    <updated>2023-05-16T22:06:59Z</updated>
     <published>2023-05-16T21:56:49Z</published>
     <summary xml:space="preserve">Papers I have co-authored   last updated May 2023.</summary>
   </entry>
