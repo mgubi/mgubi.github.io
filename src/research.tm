@@ -20,11 +20,11 @@
   <notes-link|events|events.tm> \<cdot\> <notes-link|people|people.tm><vspace|2fn>
 
   My current main area of research is stochastic analysis in particular in
-  connection with problems of constructive quantum field theory. The main
-  focus is to develop tools and concepts which are suitable to describe and
-  analyse the pathwise behaviour of quantum or random fields, including their
+  connection with problems of constructive quantum field theory. The focus is
+  to develop tools and concepts which are suitable to describe and analyse
+  the pathwise behaviour of quantum or random fields, including their
   description via partial differential equations and renormalization group
-  ideas. More broadly speaking I'm interested in problems of statistical
+  ideas. More broadly speaking, I'm interested in problems of statistical
   mechanics of multiscale systems, analysis of PDEs with random terms and
   homogenisation theory, mathematical quantum mechanics, path-integral
   formalisms, non-commutative probability and non-commutative geometry. I've
