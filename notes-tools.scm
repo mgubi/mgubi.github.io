@@ -16,11 +16,15 @@
 (use-modules (ice-9 rdelim)) ;; for read-line
 
 ;; TODO:
-;; * avoid to use absolute paths
 ;; * improve conversion of strings (spurious <concat> elements in atom output)
 
-(define (src-dir) (url->string (url-expand "$PWD/src")))
-(define (dest-dir) (url->string (url-expand "$PWD/docs")))
+(define notes-url "http://mgubi.github.io/")
+
+(if (not (getenv "NOTES")) 
+  (setenv "NOTES" (getenv "PWD")))
+
+(define src-dir (url->string (url-expand "$NOTES/src")))
+(define dest-dir (url->string (url-expand "$NOTES/docs")))
 
 ;; git does not preserve modification time for files so we need to retrieve it from the 
 ;; commit log. Note we need the "author time", not the "commit time" (in git parlance)
@@ -30,12 +34,13 @@
 ;; If the file is not in the git log then we get the date from the filesystem.
 
 (define (git-date fname)
-  (let* ((port  (open-input-pipe (string-append "git log -1 --pretty=%at " fname )))
+  (let* ((port  (open-input-pipe (string-append "cd $NOTES; git log -1 --pretty=%at " fname )))
          (str   (read-line port))
          (fdate (stat:mtime (stat fname)))       
          (gdate (if (and (equal? 0 (close-pipe port)) (not (eof-object? str)))
                     (string->number str)
                     fdate)))
+  (display* (string-append "cd $NOTES; git log -1 --pretty=%at " fname "\n"))                  
   (if (> fdate gdate ) fdate gdate)))
 
 (define (collect-articles dir)
@@ -89,16 +94,16 @@
                 ,@(map (lambda (entry) (apply make-article-list-entry entry)) 
                         articles)
                 (hrule))))) 
-        (string-append (src-dir) "/list-articles.tm") "texmacs"))
+        (string-append src-dir "/list-articles.tm") "texmacs"))
 
 (define (make-atom-entry mdate cdate file title abs)
     `(entry 
         (!document 
             (title ,(if (null? title) "(no title)" (car title)))
             (link (@ (rel "alternate") (type "text/html") (hreflang "en") (href 
-                ,(string-append "http://texmacs.github.io/notes/docs/" 
+                ,(string-append notes-url "docs/" 
                                 (string-drop-right file 3) ".html" ))))
-            (id ,(string-append "texmacs.github.io/notes/" file ":" 
+            (id ,(string-append "mgubi.github.io/" file ":" 
                                 (strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime mdate "UTC"))))
             (updated   ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime mdate "UTC")))
             (published ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime cdate "UTC")))
@@ -112,23 +117,23 @@
             (feed (@ (xmlns "http://www.w3.org/2005/Atom") (xml:lang "en")) (!document
                 (title "Notes on TeXmacs")
                 (link (@ (rel "alternate") (type "text/html") 
-                         (href "http://texmacs.github.io/notes")))
+                         (href ,notes-url)))
                 (link (@ (rel "self") (type "application/atom+xml") 
-                         (href "http://texmacs.github.io/notes/docs/notes.atom")))
+                         (href ,(string-append notes-url "docs/notes.atom"))))
                 (updated ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (gmtime (current-time))))
                 (author (!document
                     (name "The TeXmacs organisation")
                     (uri "http://www.texmacs.org")))
-                (id "texmacs.github.io/notes,2020,1")
-                (icon "http://texmacs.github.io/notes/misc/blog-icon.ico")
-                (logo "http://texmacs.github.io/notes/misc/texmacs-blog-transparent.png")
+                (id "mgubi.github.io/notes,2023,1")
+                (icon ,(string-append notes-url "misc/blog-icon.ico"))
+                (logo ,(string-append notes-url "misc/texmacs-blog-transparent.png"))
                 ,@(map (lambda (entry) (apply make-atom-entry entry)) articles))))))
-        (string-append (dest-dir) "/notes.atom")))
+        (string-append dest-dir "/notes.atom")))
 
 (define (notes-run update?)
-    (display* "Source dir :" (src-dir) "\n")
-    (display* "Dest dir   :" (dest-dir) "\n")
-    (let ((articles (make-article-list (src-dir))))
+    (display* "Source dir :" src-dir "\n")
+    (display* "Dest dir   :" dest-dir "\n")
+    (let ((articles (make-article-list src-dir)))
          (display* "* Making article list\n")
          (output-article-list-doc articles)
          (display* "* Making article feed\n")
@@ -137,10 +142,10 @@
     (if update? 
         (begin
             (display* "* Updating website\n")
-            (tmweb-update-dir (src-dir) (dest-dir)))
+            (tmweb-update-dir src-dir dest-dir))
         (begin 
             (display* "* Building website\n")
-            (tmweb-convert-dir (src-dir) (dest-dir))))
+            (tmweb-convert-dir src-dir dest-dir)))
     (display* "Done."))
 
 (define (notes-update) (notes-run #t))

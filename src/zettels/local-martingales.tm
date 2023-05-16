@@ -31,7 +31,7 @@
   they are <with|font-shape|italic|locally> martingales, where \Plocally\Q
   here refers to some part of the probability space. Intuitively, the
   stopping times <math|\<tau\><rsub|n>> are there to avoid that the local
-  martingale becomes too large and fails to be integrable enough to continue
+  martingale becomes too large and fail to be integrable enough to continue
   to satisfy the martingale property. The important point is that these local
   approximations become better and better as <math|n\<rightarrow\>\<infty\>>
   since in this case <math|\<tau\><rsub|n>\<rightarrow\>\<infty\>> and
@@ -211,8 +211,8 @@
   </equation*>
 
   since <math|<around*|\||x|\|><rsup|-4>> is not integrable near the origin
-  in <math|\<bbb-R\><rsup|3>>, so <math|<around*|\<langle\>|M|\<rangle\>><rsub|t><neg|\<in\>>L<rsup|1>>.
-  Actually we know that <math|<around*|\<langle\>|M|\<rangle\>><rsub|\<infty\>><neg|\<in\>>L<rsup|p/2>>
+  in <math|\<bbb-R\><rsup|3>>, so <math|<around*|\<langle\>|M|\<rangle\>><rsub|t>\<nin\>L<rsup|1>>.
+  Actually we know that <math|<around*|\<langle\>|M|\<rangle\>><rsub|\<infty\>>\<nin\>L<rsup|p/2>>
   for any <math|p\<gtr\>1> since otherwise
   <math|<around*|(|M<rsub|t>|)><rsub|t\<in\><around*|[|0,\<infty\>|]>>> would
   be an <math|L<rsup|p>> martingale, which we already know to be false.

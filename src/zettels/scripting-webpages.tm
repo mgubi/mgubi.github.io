@@ -11,9 +11,9 @@
 
   <chapter*|Scripting webpages>
 
-  <notes-abstract|This note records a workflow to fix some problems with the
+  <notes-abstract|I record here a workflow to fix some problems with the
   links in the website. It can be used as a tutorial in <TeXmacs> scripting.
-  I show how to batch-modify pages. Written May 13th 2023.>
+  The goal is to batch-modify pages. Written May 13th, 2023.>
 
   <\wide-tabular>
     <tformat|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-background|#faa>|<table|<row|<\cell>
