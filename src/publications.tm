@@ -7,6 +7,8 @@
     \;
 
     <\with-bib|bib-preprints>
+      <nocite|devecchiNoncommutativepSpaces2023>
+
       <nocite|cannizzaroGaussianFluctuationsStochastic2023>
 
       <nocite|galeatiMixingGenericRough2021>
@@ -234,48 +236,54 @@
   <notes-abstract|Papers I have co-authored \ \U last updated May 2023.>
 
   <\bibliography*|bib-preprints|tm-publist||Preprints>
-    <\bib-list|8>
+    <\bib-list|9>
       <bibitem*|1><bib-year-section|2023><label|bib-preprints-gubinelliStochasticQuantisationFractional2023>M.<nbsp>Gubinelli<localize|
       and >P.<nbsp>Rinaldi. <newblock>Stochastic quantisation of the
       fractional <math|\<Phi\><rsup|4><rsub|3>> model in the full subcritical
       regime. <newblock>mar 2023.<newblock>
       <newblock><hlink|10.48550/arXiv.2303.18112|https://doi.org/10.48550/arXiv.2303.18112>
 
-      <bibitem*|2><label|bib-preprints-cannizzaroGaussianFluctuationsStochastic2023>G.<nbsp>Cannizzaro,
+      <bibitem*|2><label|bib-preprints-devecchiNoncommutativepSpaces2023>F.<nbsp>C.<nbsp>De
+      Vecchi, L.<nbsp>Fresta, M.<nbsp>Gordina<localize|, and
+      >M.<nbsp>Gubinelli. <newblock>Non-commutative <math|L<rsup|p>> spaces
+      and Grassmann stochastic analysis. <newblock>may 2023.<newblock>
+      <newblock><hlink|10.48550/arXiv.2305.08497|https://doi.org/10.48550/arXiv.2305.08497>
+
+      <bibitem*|3><label|bib-preprints-cannizzaroGaussianFluctuationsStochastic2023>G.<nbsp>Cannizzaro,
       M.<nbsp>Gubinelli<localize|, and >F.<nbsp>Toninelli. <newblock>Gaussian
       Fluctuations for the stochastic Burgers equation in dimension
       <math|d\<geqslant\>2>. <newblock>apr 2023.<newblock>
       <newblock><hlink|10.48550/arXiv.2304.05730|https://doi.org/10.48550/arXiv.2304.05730>
 
-      <bibitem*|3><bib-year-section|2022><label|bib-preprints-devecchiSingularIntegrationParts2022>F.<nbsp>C.<nbsp>De
+      <bibitem*|4><bib-year-section|2022><label|bib-preprints-devecchiSingularIntegrationParts2022>F.<nbsp>C.<nbsp>De
       Vecchi, M.<nbsp>Gubinelli<localize|, and >M.<nbsp>Turra. <newblock>A
       singular integration by parts formula for the exponential Euclidean QFT
       on the plane. <newblock>dec 2022.<newblock>
       <newblock><hlink|10.48550/arXiv.2212.05584|https://doi.org/10.48550/arXiv.2212.05584>
 
-      <bibitem*|4><label|bib-preprints-devecchiStochasticAnalysisSubcritical2022>F.<nbsp>C.<nbsp>De
+      <bibitem*|5><label|bib-preprints-devecchiStochasticAnalysisSubcritical2022>F.<nbsp>C.<nbsp>De
       Vecchi, L.<nbsp>Fresta<localize|, and >M.<nbsp>Gubinelli. <newblock>A
       stochastic analysis of subcritical Euclidean fermionic field theories.
       <newblock>oct 2022.<newblock> <newblock><hlink|10.48550/arXiv.2210.15047|https://doi.org/10.48550/arXiv.2210.15047>
 
-      <bibitem*|5><bib-year-section|2021><label|bib-preprints-galeatiMixingGenericRough2021>L.<nbsp>Galeati<localize|
+      <bibitem*|6><bib-year-section|2021><label|bib-preprints-galeatiMixingGenericRough2021>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Mixing for generic rough shear flows.
       <newblock><with|font-shape|italic|ArXiv:2107.12115 [math]>, jul
       2021.<newblock> <newblock><hlink|10.48550/arXiv.2107.12115|https://doi.org/10.48550/arXiv.2107.12115>
 
-      <bibitem*|6><label|bib-preprints-barashkov2021variational>N.<nbsp>Barashkov<localize|
+      <bibitem*|7><label|bib-preprints-barashkov2021variational>N.<nbsp>Barashkov<localize|
       and >M.<nbsp>Gubinelli. <newblock>On the variational method for
       euclidean quantum fields in infinite volume.
       <newblock><with|font-shape|italic|ArXiv>, arXiv:2112.05562,
       2021.<newblock> <newblock>
 
-      <bibitem*|7><bib-year-section|2020><label|bib-preprints-galeatiPrevalenceRhoIrregularity2020>L.<nbsp>Galeati<localize|
+      <bibitem*|8><bib-year-section|2020><label|bib-preprints-galeatiPrevalenceRhoIrregularity2020>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Prevalence of
       <math|\<rho\>>-irregularity and related properties.
       <newblock><with|font-shape|italic|ArXiv:2004.00872 [math]>, apr
       2020.<newblock> <newblock><hlink|10.48550/arXiv.2004.00872|https://doi.org/10.48550/arXiv.2004.00872>
 
-      <bibitem*|8><label|bib-preprints-galeatiNoiselessRegularisationNoise2020>L.<nbsp>Galeati<localize|
+      <bibitem*|9><label|bib-preprints-galeatiNoiselessRegularisationNoise2020>L.<nbsp>Galeati<localize|
       and >M.<nbsp>Gubinelli. <newblock>Noiseless regularisation by noise.
       <newblock><with|font-shape|italic|ArXiv:2003.14264 [math]>, mar
       2020.<newblock> <newblock><hlink|10.48550/arXiv.2003.14264|https://doi.org/10.48550/arXiv.2003.14264>
@@ -5097,16 +5105,18 @@
         <db-field|langid|english>
       </db-entry>
 
-      <\db-entry|+PZiR2YAVRDDqm4|article|Albeverio2020grassmannian>
+      <\db-entry|+2HWUmaITuql2CZs|article|Albeverio2020grassmannian>
         <db-field|contributor|root>
 
-        <db-field|modus|imported>
+        <db-field|modus|manual>
 
-        <db-field|date|1680719269>
+        <db-field|newer|+PZiR2YAVRDDqm4>
+
+        <db-field|date|1683272848>
       <|db-entry>
-        <db-field|author|Sergio <name|Albeverio><name-sep>Luigi
-        <name|Borasi><name-sep>Francesco C. <name|De
-        Vecchi><name-sep>Massimiliano <name|Gubinelli>>
+        <db-field|author|S. <name|Albeverio><name-sep>L.
+        <name|Borasi><name-sep>F. C. <name|De Vecchi><name-sep>M.
+        <name|Gubinelli>>
 
         <db-field|title|Grassmannian stochastic analysis and the stochastic
         quantization of Euclidean fermions>
@@ -7442,6 +7452,57 @@
       </db-entry>
     </associate>
     <\associate|bib-preprints-bibliography>
+      <\db-entry|+KEL5g59WWR8AWQ|misc|devecchiNoncommutativepSpaces2023>
+        <db-field|contributor|root>
+
+        <db-field|modus|manual>
+
+        <db-field|newer|+KEL5g59WWR8AWP>
+
+        <db-field|date|1684274144>
+      <|db-entry>
+        <db-field|author|Francesco C. <name|De Vecchi><name-sep>Luca
+        <name|Fresta><name-sep>Maria <name|Gordina><name-sep>Massimiliano
+        <name|Gubinelli>>
+
+        <db-field|title|Non-commutative <math|L<rsup|p>> spaces and Grassmann
+        stochastic analysis>
+
+        <db-field|month|may>
+
+        <db-field|year|2023>
+
+        <db-field|number|arXiv:2305.08497>
+
+        <db-field|eprint|2305.08497>
+
+        <db-field|primaryclass|math-ph>
+
+        <db-field|publisher|arXiv>
+
+        <db-field|doi|10.48550/arXiv.2305.08497>
+
+        <db-field|urldate|2023-05-16>
+
+        <db-field|abstract|We introduce a theory of non-commutative
+        <math|L<rsup|p>> spaces suitable for non-commutative probability in a
+        non-tracial setting and use it to develop stochastic analysis of
+        Grassmann-valued processes, including martingale inequalities,
+        stochastic integrals with respect to Grassmann Itô processes,
+        Girsanov's formula and a weak formulation of Grassmann SDEs. We apply
+        this new setting to the construction of several unbounded random
+        variables including a Grassmann analog of the
+        <math|\<Phi\><rsup|4><rsub|2>> Euclidean QFT in a bounded region and
+        weak solution to singular SPDEs in the spirit of the early work of
+        Jona-Lasinio and Mitter on the stochastic quantisation of
+        <math|\<Phi\><rsup|4><rsub|2>>.>
+
+        <db-field|archiveprefix|arxiv>
+
+        <db-field|keywords|Mathematical Physics,Mathematics - Operator
+        Algebras,Mathematics - Probability>
+      </db-entry>
+
       <\db-entry|+2Q1WpM1mVMXp|misc|cannizzaroGaussianFluctuationsStochastic2023>
         <db-field|contributor|root>
 
@@ -8302,7 +8363,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
-    <associate|auto-3|<tuple|8|5>>
+    <associate|auto-3|<tuple|9|5>>
     <associate|auto-4|<tuple|71|5>>
     <associate|auto-5|<tuple|2|6>>
     <associate|auto-6|<tuple|11|6>>
@@ -8384,13 +8445,14 @@
     <associate|bib-papers-gubinelliSemilinearEvolutionEquations2019|<tuple|15|?>>
     <associate|bib-papers-gubinelliUltravioletRenormalizationNelson2014|<tuple|34|?>>
     <associate|bib-papers-gubinelliYoungIntegralsSPDEs2006|<tuple|52|?>>
-    <associate|bib-preprints-barashkov2021variational|<tuple|6|?>>
-    <associate|bib-preprints-cannizzaroGaussianFluctuationsStochastic2023|<tuple|2|?>>
-    <associate|bib-preprints-devecchiSingularIntegrationParts2022|<tuple|3|?>>
-    <associate|bib-preprints-devecchiStochasticAnalysisSubcritical2022|<tuple|4|?>>
-    <associate|bib-preprints-galeatiMixingGenericRough2021|<tuple|5|?>>
-    <associate|bib-preprints-galeatiNoiselessRegularisationNoise2020|<tuple|8|?>>
-    <associate|bib-preprints-galeatiPrevalenceRhoIrregularity2020|<tuple|7|?>>
+    <associate|bib-preprints-barashkov2021variational|<tuple|7|?>>
+    <associate|bib-preprints-cannizzaroGaussianFluctuationsStochastic2023|<tuple|3|?>>
+    <associate|bib-preprints-devecchiNoncommutativepSpaces2023|<tuple|2|?>>
+    <associate|bib-preprints-devecchiSingularIntegrationParts2022|<tuple|4|?>>
+    <associate|bib-preprints-devecchiStochasticAnalysisSubcritical2022|<tuple|5|?>>
+    <associate|bib-preprints-galeatiMixingGenericRough2021|<tuple|6|?>>
+    <associate|bib-preprints-galeatiNoiselessRegularisationNoise2020|<tuple|9|?>>
+    <associate|bib-preprints-galeatiPrevalenceRhoIrregularity2020|<tuple|8|?>>
     <associate|bib-preprints-gubinelliStochasticQuantisationFractional2023|<tuple|1|?>>
     <associate|bib-procs-amorena2002sull|<tuple|11|?>>
     <associate|bib-procs-amorenaControlloDiagnosticaDi2003|<tuple|9|?>>
@@ -8575,6 +8637,8 @@
       gubinelliYoungIntegralsSPDEs2006
     </associate>
     <\associate|bib-preprints>
+      devecchiNoncommutativepSpaces2023
+
       cannizzaroGaussianFluctuationsStochastic2023
 
       galeatiMixingGenericRough2021
