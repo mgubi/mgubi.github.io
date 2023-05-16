@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|html-font-size>>
 
@@ -39,7 +39,7 @@
   <notes-link|research|research.tm> \<cdot\>
   <notes-link|teaching|teaching/teaching.tm> \<cdot\>
   <notes-link|programming|programming.tm> \<cdot\>
-  <notes-link|writings|writings.tm>
+  <notes-link|writings|zettels/writings.tm>
 
   <vspace|1em>
 
