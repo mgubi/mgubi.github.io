@@ -73,10 +73,10 @@
       </quotation>
 
       <\quotation>
-        Le mot \Srandom\T vient d'un terme de vï¿½nerie franï¿½ais : randon
-        dï¿½signe la course erratique du cerf qui zigzague en essayant
-        d'ï¿½chapper aux chiens. Le mot a aussi donnï¿½ \Srandonnï¿½e\T en
-        franï¿½ais.
+        <french|Le mot \Srandom\T vient d'un terme de vénerie français :
+        randon désigne la course erratique du cerf qui zigzague en essayant
+        d'échapper aux chiens. Le mot a aussi donné \Srandonné\T en
+        français.>
       </quotation>
     </with>
   </smaller>
