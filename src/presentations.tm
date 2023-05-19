@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|notes>
 
@@ -49,11 +49,14 @@
 
   <section*|Slides>
 
+  New directions & open problems in stochastic analysis \U Center for
+  Mathematical Physics Colloquium. Leipzig. May 19th 2023
+  (<notes-store|pdf|talk-leipzig-openprobs-2023.pdf>)
+
   What is stochastic quantisation? (and why I should care?) \U Informal
-  stochastic analysis seminar . Oxford . May 2nd, 2023
+  stochastic analysis seminar. Oxford. May 2nd, 2023
   \ (<notes-store|pdf|talk-oxford-informalseminar-sq-2023.pdf>) PDEs & Math.
-  Physics seminar . ETH . April 27th, 2023
-  \ (<notes-store|pdf|talk-zurich-sq-2023.pdf>)\ 
+  Physics seminar. ETH. April 27th, 2023 \ (<notes-store|pdf|talk-zurich-sq-2023.pdf>)\ 
 
   Stochastic quantisation of the fractional <math|\<Phi\><rsup|4><rsub|3>>
   Euclidan QFT in the full subcritical regime \U Probability seminar . Oxford

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -39,15 +39,12 @@
     <item><hlink|Vishnu Sanjay|https://www.gssi.it/people/students/students-maths/item/15652-sanjay-vishnu>
     (2023\U) (co-supervision with S.<nbsp>Olla at GSSI)
 
-    <item><hlink|Min Chul Lee|https://www.maths.ox.ac.uk/people/min.lee>
-    (2023\U)
-
     <item><hlink|Sarah-Jean Meyer|https://www.maths.ox.ac.uk/people/sarah-jean.meyer>
     (2023\U)
 
     <item><hlink|Mattia Turra|https://www.linkedin.com/in/mattiaturra/?locale=en_US>
     (2018\U2023) \PInfinitesimal analysis of singular stochastic partial
-    differential equations\Q
+    differential equations\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10830>)
 
     <item><hlink|Lucio Galeati|https://sites.google.com/view/lucio-galeati-math/home>
     (2018\U2022) \PPathwise methods in regularisation by noise\Q

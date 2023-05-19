@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -171,37 +171,44 @@
     </cv-section>
 
     <timeline|2024>MSRI Summer Graduate School \PStochastic quantisation\Q,
-    Berkley
+    Berkley (<hlink|url|https://www.msri.org/summer_schools/1038>)
+
+    <timeline|2023>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach
+    (<hlink|url|https://www.mfo.de/occasion/2351/www_view>)
 
     <timeline|2020>Workshop \PNew Directions in Rough Path Theory\Q,
-    Oberwolfach
+    Oberwolfach (<hlink|url|https://publications.mfo.de/handle/mfo/3855>)
 
     <timeline|2019>Coordinator of the Junior trimester program \PRandomness,
     PDEs and Nonlinear Fluctuations\Q at the Hausdorff Institute for
-    Mathematics, Bonn
+    Mathematics, Bonn (<hlink|url|https://www.him.uni-bonn.de/programs/past-programs/past-junior-trimester-programs/randomness-pdes-fluctuations-2019/description/>)
 
     Workshop \PLarge scale description of random fields: interfaces between
     PDE and RG approaches\Q, Inhomogeneous Random Systems, Institute Henry
-    Poincaré, Paris
+    Poincaré, Paris (<hlink|url|https://irs.math.cnrs.fr/2019/>)
 
     <timeline|2018>Program \PScaling Limits, rough paths, quantum field
     theory\Q at the Newtown Institute, Cambridge
+    (<notes-link|link|srq/srq-intro.tm>)
 
     <timeline|2017>Fields medal symposium in honor of M.<nbsp>Hairer, Toronto
+    (<hlink|url|http://www.fields.utoronto.ca/activities/17-18/fieldsmedalsym>)
 
     <timeline|2016>CIME Summer school "Singular random dynamics", Cetraro,
-    Italy
+    Italy (<hlink|url|https://php.math.unifi.it/users/cime/Courses/2016/course.php?codice=20162>)
 
     Workshop "Rough Paths, Regularity Structures and Related Topics"
     Mathematisches Forschungsinstitut Oberwolfach
+    (<hlink|url|https://publications.mfo.de/handle/mfo/3528>)
 
     <timeline|2015>Workshop "Stochastic Systems Simulation and Control 2015",
     ICMS \U Edinburgh
 
     <timeline|2013>Workshop \PRough Paths: Theory and Applications\Q, IPAM \U
-    UCLA
+    UCLA (<hlink|url|http://www.ipam.ucla.edu/programs/workshops/rough-paths-theory-and-applications/>)
 
     <timeline|2012>Workshop \PRough Paths and PDEs\Q, Oberwolfach
+    (<hlink|url|https://publications.mfo.de/handle/mfo/3311>)
 
     <timeline|2010>Workshop \PRough paths in interaction\Q, Juin 2010.
     Institut Henry Poincaré, Paris, France
@@ -215,6 +222,10 @@
     <\cv-section>
       Main invited presentations
     </cv-section>
+
+    <timeline|2023>Minicourse at the CIME summer school \PStatistical
+    Mechanics and Stochastic PDEs\Q, Cetraro
+    (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde?authuser=0>)
 
     <timeline|2022>Conference \PQuantum many body system and interacting
     particles, in honor of Hebert Spohn\Q, \ Münster
@@ -287,6 +298,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|3>>
+    <associate|auto-2|<tuple|?|?>>
   </collection>
 </references>
 
