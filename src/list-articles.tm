@@ -12,18 +12,18 @@
 
   <hrule>
 
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Things that happened to me, professionally \U last updated May 2023.
-  </notes-entry|Fri 19 May 16:50:33 2023 UTC>
-
-  <notes-entry|events.tm|Events|I travel around to meet other
-  mathematicians.|Fri 19 May 16:44:18 2023 UTC>
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Fri 19 May 16:52:40 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Fri 19 May 16:33:17 2023 UTC>
+  \U updated September 2022.|Fri 19 May 16:52:40 2023 UTC>
 
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Fri 19 May 16:32:00 2023 UTC>
+  <notes-entry|events.tm|Events|I travel around to meet other
+  mathematicians.|Fri 19 May 16:52:40 2023 UTC>
+
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Things that happened to me, professionally \U last updated May 2023.
+  </notes-entry|Fri 19 May 16:52:40 2023 UTC>
 
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
   last updated May 2023.|Tue 16 May 22:13:34 2023 UTC>
