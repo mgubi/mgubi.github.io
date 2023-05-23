@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2023-05-19T16:52:49Z</updated>
+  <updated>2023-05-23T20:34:28Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -11,6 +11,22 @@
   <id>mgubi.github.io/notes,2023,1</id>
   <icon>http://mgubi.github.io/misc/blog-icon.ico</icon>
   <logo>http://mgubi.github.io/misc/texmacs-blog-transparent.png</logo>
+  <entry>
+    <title>Research</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/research.html"/>
+    <id>mgubi.github.io/research.tm:2023-05-23T20:34:14Z</id>
+    <updated>2023-05-23T20:34:14Z</updated>
+    <published>2023-05-23T20:34:18Z</published>
+    <summary>Mathematics.</summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/publications.html"/>
+    <id>mgubi.github.io/publications.tm:2023-05-23T20:32:25Z</id>
+    <updated>2023-05-23T20:32:25Z</updated>
+    <published>2023-05-23T20:32:28Z</published>
+    <summary xml:space="preserve">Papers I have co-authored   last updated May 2023.</summary>
+  </entry>
   <entry>
     <title>Presentations</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/presentations.html"/>
@@ -44,22 +60,6 @@
     <published>2023-05-19T16:50:35Z</published>
     <summary><document>Things that happened to me, professionally  last
     updated May 2023.</document></summary>
-  </entry>
-  <entry>
-    <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/publications.html"/>
-    <id>mgubi.github.io/publications.tm:2023-05-16T22:13:34Z</id>
-    <updated>2023-05-16T22:13:34Z</updated>
-    <published>2023-05-16T22:13:19Z</published>
-    <summary xml:space="preserve">Papers I have co-authored   last updated May 2023.</summary>
-  </entry>
-  <entry>
-    <title>Research</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/research.html"/>
-    <id>mgubi.github.io/research.tm:2023-05-16T22:10:04Z</id>
-    <updated>2023-05-16T22:10:04Z</updated>
-    <published>2023-05-16T22:08:31Z</published>
-    <summary>Mathematics.</summary>
   </entry>
   <entry>
     <title>Programming</title>

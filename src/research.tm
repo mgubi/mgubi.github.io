@@ -82,7 +82,12 @@
   <notes-link|Notes|srq/srq-intro.tm> for the seminar held during the
   <hlink|SRQ \U Scaling limits, rough paths, quantum field
   theory|https://www.newton.ac.uk/event/srq/> research period in 2018 at the
-  Newton Institute, Cambrige.
+  Newton Institute, Cambrige
+
+  My PhD thesis \PFinite-size scaling in non-equilibirum critical phenomena\Q
+  (University of Pisa, 2002) (<notes-store|pdf|phd-thesis-gubinelli.pdf>)
+
+  \;
 
   \;
 </body>
@@ -99,7 +104,6 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
@@ -110,9 +114,13 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <with|par-left|<quote|1tab>|Other material
+      <with|par-left|<quote|1tab>|Selected publications
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Other material
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
     </associate>
   </collection>
 </auxiliary>

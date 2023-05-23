@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|notes>
 
@@ -12,36 +12,36 @@
 
   <hrule>
 
+  <notes-entry|research.tm|Research|Mathematics.|Tue May 23 20:34:14 2023
+  UTC>
+
+  <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
+  last updated May 2023.|Tue May 23 20:32:25 2023 UTC>
+
   <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Fri 19 May 16:52:40 2023 UTC>
+  various places.|Fri May 19 16:52:40 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
-  \U updated September 2022.|Fri 19 May 16:52:40 2023 UTC>
+  \U updated September 2022.|Fri May 19 16:52:40 2023 UTC>
 
   <notes-entry|events.tm|Events|I travel around to meet other
-  mathematicians.|Fri 19 May 16:52:40 2023 UTC>
+  mathematicians.|Fri May 19 16:52:40 2023 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2023.
-  </notes-entry|Fri 19 May 16:52:40 2023 UTC>
-
-  <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Tue 16 May 22:13:34 2023 UTC>
-
-  <notes-entry|research.tm|Research|Mathematics.|Tue 16 May 22:10:04 2023
-  UTC>
+  </notes-entry|Fri May 19 16:52:40 2023 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Sat 13 May 17:05:11 2023 UTC>
+  languages, programming, <TeXmacs>.|Sat May 13 17:05:11 2023 UTC>
 
   <notes-entry|old-publications.tm|Publications|What my collaborators,
-  students and me have written \U last updated October 2020.|Sat 13 May
+  students and me have written \U last updated October 2020.|Sat May 13
   17:05:11 2023 UTC>
 
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to
   provide a small summary of the content, as exemplified by this very
-  text.|Sat 13 May 16:50:36 2023 UTC>
+  text.|Sat May 13 16:50:36 2023 UTC>
 
   <hrule>
 </body>
