@@ -13,9 +13,9 @@
   <hrule>
 
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Thu May 25 19:18:12 2023 UTC>
+  last updated May 2023.|Wed May 31 09:14:43 2023 UTC>
 
-  <notes-entry|research.tm|Research|Mathematics.|Tue May 23 20:35:27 2023
+  <notes-entry|research.tm|Research|Mathematics.|Wed May 31 09:13:54 2023
   UTC>
 
   <notes-entry|presentations.tm|Presentations|The things I have said in

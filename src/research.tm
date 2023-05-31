@@ -19,7 +19,7 @@
   <notes-link|presentations|presentations.tm> \<cdot\>
   <notes-link|events|events.tm> \<cdot\> <notes-link|people|people.tm><vspace|2fn>
 
-  My current main area of research is stochastic analysis in particular in
+  My current main area of research is stochastic analysis, specifically in
   connection with problems of constructive quantum field theory. The focus is
   to develop tools and concepts which are suitable to describe and analyse
   the pathwise behaviour of quantum or random fields, including their
