@@ -12,14 +12,14 @@
 
   <hrule>
 
-  <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Wed May 31 09:14:43 2023 UTC>
+  <notes-entry|presentations.tm|Presentations|The things I have said in
+  various places.|Thu Jun 15 12:53:13 2023 UTC>
 
-  <notes-entry|research.tm|Research|Mathematics.|Wed May 31 09:13:54 2023
+  <notes-entry|research.tm|Research|Mathematics.|Wed May 31 09:16:08 2023
   UTC>
 
-  <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Fri May 19 16:52:40 2023 UTC>
+  <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
+  last updated May 2023.|Wed May 31 09:14:43 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Fri May 19 16:52:40 2023 UTC>

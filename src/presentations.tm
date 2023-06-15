@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|notes>
 
@@ -67,7 +67,7 @@
   December 20th, 2022 \ (<notes-store|pdf|talk-iamp-2022.pdf>)\ 
 
   Towards stochastic quantisation of Euclidean Fermions \U \PQuantum many
-  body system and interacting particles\Q . Mï¿½nster . June 2022
+  body system and interacting particles\Q . Münster . June 2022
   (<notes-store|pdf|talk-muenster-grassmann-2022.pdf>)\ 
 
   Variational approaches for Euclidean quantum field theory \U Oberseminar
@@ -89,9 +89,9 @@
   (<notes-store|pdf|oops-sq-lecture-2.pdf>) Lecture 3
   (<notes-store|pdf|oops-sq-lecture-3.pdf>)\ 
 
-  A variational method for Euclidean quantum fields \U Lï¿½vy lecture
-  \<cdot\> World Congress in Probability and Statistics (WC2020) \<cdot\>
-  Seul, July 20th 2021 (<notes-store|pdf|talk-wcps-2021.pdf>)\ 
+  A variational method for Euclidean quantum fields \U Lévy lecture \<cdot\>
+  World Congress in Probability and Statistics (WC2020) \<cdot\> Seul, July
+  20th 2021 (<notes-store|pdf|talk-wcps-2021.pdf>)\ 
 
   Bounds for Fermionic expectations \U Seminar Non-perturbative RG,
   Bonn/Online, April 8th, 2021 (<notes-store|pdf|talk-rg-apr-2021.pdf>)\ 
@@ -118,7 +118,7 @@
   (<notes-store|pdf|talk-grassmann-aap-jan-2021.pdf>)\ 
 
   Two stochastic methods for <math|\<Phi\><rsup|4><rsub|3>> Seminar on
-  Stochastic Processes \U Zï¿½rich, 2019/2/2020
+  Stochastic Processes \U Zürich, 2019/2/2020
   (<notes-store|pdf|talk-eth-feb-2019.pdf>)\ 
 
   Weak universality, stochastic quantisation and singular SPDEs ETHZ \U June
@@ -129,8 +129,7 @@
   \ (<notes-store|pdf|talk-pisa-2019.pdf>)\ 
 
   A PDE construction of <math|\<Phi\><rsup|4><rsub|3>> \U Forum de physique
-  statistique ï¿½ l'ENS, Paris, 2019.2.26
-  (<notes-store|pdf|talk-ens-feb-2019.pdf>)\ 
+  statistique à l'ENS, Paris, 2019.2.26 (<notes-store|pdf|talk-ens-feb-2019.pdf>)\ 
 
   A panorama of Singular SPDEs \U ICM 2018, Rio de Janeiro.
   (<notes-store|pdf|talk-icm-gubinelli-2018.pdf>)\ 
@@ -235,7 +234,7 @@
   Palaiseau (<notes-store|pdf|paperi/talk-X.pdf>)\ 
 
   Trees, rough integrals and differential equations \U Conference on
-  Combinatorics and Physics, Max-Plack Institure for Mathematics, Bonn,March
+  Combinatorics and Physics, Max-Plack Institure for Mathematics, Bonn, March
   19-23, 2007 (<notes-store|pdf|paperi/talk-bonn-2007.pdf>)\ 
 
   Explorations on rough paths \U Fifth Seminar on Stochastic Analysis, Random
@@ -258,7 +257,6 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
   </collection>
 </references>
 
