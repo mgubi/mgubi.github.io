@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2023-06-15T12:54:01Z</updated>
+  <updated>2023-06-20T16:01:09Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,10 +12,18 @@
   <icon>http://mgubi.github.io/misc/blog-icon.ico</icon>
   <logo>http://mgubi.github.io/misc/texmacs-blog-transparent.png</logo>
   <entry>
+    <title>Events</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/events.html"/>
+    <id>mgubi.github.io/events.tm:2023-06-20T16:00:27Z</id>
+    <updated>2023-06-20T16:00:27Z</updated>
+    <published>2023-06-20T16:00:31Z</published>
+    <summary>I travel around to meet other mathematicians.</summary>
+  </entry>
+  <entry>
     <title>Presentations</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/presentations.html"/>
-    <id>mgubi.github.io/presentations.tm:2023-06-15T12:53:13Z</id>
-    <updated>2023-06-15T12:53:13Z</updated>
+    <id>mgubi.github.io/presentations.tm:2023-06-15T12:55:09Z</id>
+    <updated>2023-06-15T12:55:09Z</updated>
     <published>2023-06-15T12:53:15Z</published>
     <summary>The things I have said in various places.</summary>
   </entry>
@@ -43,14 +51,6 @@
     <published>2023-05-19T16:33:19Z</published>
     <summary>Present & past members of my research group  updated September
     2022.</summary>
-  </entry>
-  <entry>
-    <title>Events</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/events.html"/>
-    <id>mgubi.github.io/events.tm:2023-05-19T16:52:40Z</id>
-    <updated>2023-05-19T16:52:40Z</updated>
-    <published>2023-05-19T16:44:21Z</published>
-    <summary>I travel around to meet other mathematicians.</summary>
   </entry>
   <entry>
     <title>Vita</title>

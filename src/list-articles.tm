@@ -12,8 +12,11 @@
 
   <hrule>
 
+  <notes-entry|events.tm|Events|I travel around to meet other
+  mathematicians.|Tue Jun 20 16:00:27 2023 UTC>
+
   <notes-entry|presentations.tm|Presentations|The things I have said in
-  various places.|Thu Jun 15 12:53:13 2023 UTC>
+  various places.|Thu Jun 15 12:55:09 2023 UTC>
 
   <notes-entry|research.tm|Research|Mathematics.|Wed May 31 09:16:08 2023
   UTC>
@@ -23,9 +26,6 @@
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Fri May 19 16:52:40 2023 UTC>
-
-  <notes-entry|events.tm|Events|I travel around to meet other
-  mathematicians.|Fri May 19 16:52:40 2023 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2023.

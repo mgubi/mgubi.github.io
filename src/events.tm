@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|notes>
 
@@ -16,8 +16,6 @@
   <subsection*|Forthcoming events><itemize|>
 
   <\itemize>
-    <item>NEMSA workshop, Warwick June 6/7, Warwick [talk]
-
     <item>43rd Conference on Stochastic Processes and their Applications,
     Lisbon, July 2023 [talk]
 
@@ -37,10 +35,14 @@
   <subsection*|Past events>
 
   <\itemize>
+    <item>NEMSA workshop, Warwick, June 6/7 2023
+    (<hlink|url|https://www.maths.dur.ac.uk/PiNE/NEMSAS/North-East%20and%20Midlands%20Stochastic%20Analysis.html>)
+    [talk]
+
     <item>Center for Mathematical Physics Colloquium, May 19th 2023, Leipzig
     (<hlink|url|https://cmp-leipzig.de>) (<notes-store|slides|talk-leipzig-openprobs-2023.pdf>)
 
-    <item><todo|update<text-dots>>
+    <item><todo|to be updated <text-dots>>
 
     <item>Workshop \PNew Directions in Rough Path Theory\Q, Oberwolfach
     (<hlink|url|https://publications.mfo.de/handle/mfo/3855>)
