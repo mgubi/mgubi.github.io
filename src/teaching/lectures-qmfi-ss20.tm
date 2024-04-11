@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -40,7 +40,7 @@
 
   Basic knowledge of continuous time stocastic processes and some stochastic
   calculus, e.g. see<nbsp>my course ``Foundations of Stochastic Analysis''
-  from the WS19/20 (<notes-link|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>).
+  from the WS19/20 (<notes-link|link|./lectures-foundations-stochastic-analysis-ws19-20.tm>).
   No previous knowledge of Quantum Mechanics will be assumed.<nbsp>
 
   <subsection*|References>

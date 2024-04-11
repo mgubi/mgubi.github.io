@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|compact-list|notes-meta>>
 
@@ -49,8 +49,7 @@
 
   <\itemize>
     <item>Meyer, Paul A. <with|font-shape|italic|Quantum Probability for
-    Probabilists>. 2nd edition. Berlin\<#202F\>; New York: Springer,
-    1995.<nbsp>
+    Probabilists>. 2nd edition. Berlin; New York: Springer, 1995.<nbsp>
 
     <item>Biane, Philippe. \PCalcul Stochastique Non-Commutatif.\Q In
     <with|font-shape|italic|Lectures on Probability Theory>, edited by Pierre

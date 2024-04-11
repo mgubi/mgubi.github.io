@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|notes>
 
@@ -13,7 +13,7 @@
   <hrule>
 
   <notes-entry|events.tm|Events|I travel around to meet other
-  mathematicians.|Tue Jun 20 16:00:27 2023 UTC>
+  mathematicians.|Tue Jun 20 16:01:29 2023 UTC>
 
   <notes-entry|presentations.tm|Presentations|The things I have said in
   various places.|Thu Jun 15 12:55:09 2023 UTC>
@@ -22,7 +22,7 @@
   UTC>
 
   <notes-entry|publications.tm|Publications|Papers I have co-authored \ \U
-  last updated May 2023.|Wed May 31 09:14:43 2023 UTC>
+  last updated May 2023.|Thu May 25 19:18:38 2023 UTC>
 
   <notes-entry|people.tm|People|Present & past members of my research group
   \U updated September 2022.|Fri May 19 16:52:40 2023 UTC>

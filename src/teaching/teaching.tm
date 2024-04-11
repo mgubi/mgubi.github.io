@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -15,7 +15,11 @@
 
   <subsection*|Current lecture courses and seminars>
 
-  \;
+  <\itemize>
+    <item>Elements of Mathematical Quantum Mechanics \U <hlink|TCC
+    course|https://www.maths.ox.ac.uk/groups/tcc/tcc-current-courses> (TT22)
+    (<notes-link|link|lectures-tcc-emqm-tt24.tm>)
+  </itemize>
 
   <subsection*|Past lecture courses and seminars in Oxford (2022\U)>
 
@@ -199,7 +203,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
