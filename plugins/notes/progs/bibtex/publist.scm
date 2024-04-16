@@ -58,6 +58,7 @@
     (string-append (if (bib-null? year) "0000" year) "    " lplain)))
 
 (tm-define (bib-sorted-entries l)
+  (:mode bib-publist?)
   (reverse (former l)))
 
 ;; TODO : Add an option to reverse the ordering
