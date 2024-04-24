@@ -76,16 +76,24 @@
   positivity for Markov processes and construction or reflection positive
   processes via SDEs.
 
-  <subsection*|References>
+  <subsection*|Basic references>
 
   <\itemize>
     <item>Strocchi, F.<nbsp><em|An Introduction to the Mathematical Structure
     of Quantum Mechanics: A Short Course for Mathematicians>. 2 edition. New
     Jersey: World Scientific Publishing Company, 2008.
 
+    <item>I.<nbsp>E.<nbsp>Segal. <newblock>Postulates for General Quantum
+    Mechanics. <newblock><with|font-shape|italic|The Annals of Mathematics>,
+    48(4):930, oct 1947.<newblock>
+
     <item>Segal, E. E., and George Whitelaw Mackey.<nbsp><em|Mathematical
     Problems of Relativistic Physics>. Providence, RI: American Mathematical
     Society, 1963.
+
+    <item>Rudolf Haag. <newblock><with|font-shape|italic|Local Quantum
+    Physics: Fields, Particles, Algebras>. <newblock>Texts and Monographs in
+    Physics. Springer, 2nd rev. and enl. ed<localize| edition>, 1996.
 
     <item>Meyer, Paul A.<nbsp><em|Quantum Probability for Probabilists>.
     Springer, 1995.
@@ -93,8 +101,69 @@
     <item>The material I will present has already been used to deliver the
     course \PFunctional Integration and Quantum Mechanics\Q in Bonn in SS2020
     [<notes-link|link|./lectures-qmfi-ss20.tm>] were you can find scripts and
-    resources useful to peek on the specific contents of this year's course.\ 
+    resources useful to peek on the specific contents of this year's course.
   </itemize>
+
+  <subsection*|Notes>
+
+  <\itemize>
+    <item>Note 1 (version 1, 23/4/24) [<notes-store|pdf|oxford/ht2024/emqm-note-1.pdf>]
+  </itemize>
+
+  <subsection*|Journal>
+
+  <\itemize>
+    <item><with|font-series|bold|Week 1 \|> (24.4.24) The Stern\UGerlach
+    experiment. Axiomatization of the measurement process: observable, states
+    and their duality. The C* algebraic setting, basic definition, C*
+    condition, spectrum of an element. [<notes-store|script|oxford/ht2024/emqm-lecture-1.pdf>]
+  </itemize>
+
+  <subsection*|(Very) tentative program>
+
+  <\itemize>
+    <item><with|font-series|bold|Week 2 \|> (1.5.24) The C* algebraic setting
+    (continued) : positive elements, states, Gelfand\UNaimark\USegal
+    representation and the Gelfand\UNaimark theorem, pure states and
+    irreducible representations, folium of a representation, Fell's theorem,
+    the quantum world.
+
+    <item><with|font-series|bold|Week 3 \|> (8.5.24) Heisenberg
+    indetermination principle, Schrödinger-Robertson inequality, canonical
+    commutation relations (CCR), probabilistic phenomena in non-commutative
+    algebras, construction of discrete systems of complementary observables.
+    Canonical commutation relations<nbsp>as limits of discrete
+    ones.<nbsp><nbsp>Weyl algebra, Baker-Campbell-Hausdorff formula and
+    relation with Heisenberg's commutation relations.
+
+    <item><with|font-series|bold|Week 4 \|> (15.5.24) Weyl algebra,
+    Heisenberg<nbsp>group and von Neumann theorem on the uniqueness of
+    irreducible<nbsp>regular representations of Weyl algebra in finite
+    dimensions, Schrödinger representation, irreducibility. Determination of
+    the vacuum in the Schrödinger representation. Gaussian representation of
+    Weyl relations. Reducible representations.
+
+    <item><with|font-series|bold|Week 5 \|> (22.5.24) Dynamics of a quantum
+    system: unitary representation of weakly continuous automorphism on an
+    invariant state
+
+    <item><with|font-series|bold|Week 6 \|> (29.5.24) Semigroups and
+    *-homomorphism, Bernstein theorem on totally monotone functions. Link
+    between unitary groups and self-adjoint semigroups. Energy operator.
+    Positive energy condition.<nbsp>Link between unitary groups and
+    self-adjoint semigroups continued. Ground states and Wightman functions.
+
+    <item><with|font-series|bold|Week 7 \|> (5.6.24) Axioms for Schwinger
+    functions and the reconstruction theorem. Reflection positivity for
+    Gaussian processes.
+
+    <item><with|font-series|bold|Week 8 \|> (19.6.24) [Warning: no lecture on
+    June 12th!] Nelson's positivity and stochastic processes. Reflection
+    positivity for Markov processes and construction or reflection positive
+    processes via SDEs.
+  </itemize>
+
+  \;
 
   \;
 
@@ -110,8 +179,11 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|?|../template.tm>>
-    <associate|auto-2|<tuple|?|?|../template.tm>>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|?|?>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-5|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 
@@ -125,6 +197,13 @@
       <with|par-left|<quote|1tab>|References
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|Notes <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|Journal
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
     </associate>
   </collection>
 </auxiliary>
