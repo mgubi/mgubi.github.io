@@ -117,16 +117,20 @@
     experiment. Axiomatization of the measurement process: observable, states
     and their duality. The C* algebraic setting, basic definition, C*
     condition, spectrum of an element. [<notes-store|script|oxford/ht2024/emqm-lecture-1.pdf>]
+
+    <item><with|font-series|bold|Week 2 \|> (1.5.24) The C* algebraic setting
+    (continued) : spectral theory of commutative Banach algebras, Gelfand
+    transform, positive elements, states.
+    [<notes-store|script|oxford/ht2024/emqm-lecture-2.pdf>]
   </itemize>
 
   <subsection*|(Very) tentative program>
 
   <\itemize>
-    <item><with|font-series|bold|Week 2 \|> (1.5.24) The C* algebraic setting
-    (continued) : positive elements, states, Gelfand\UNaimark\USegal
-    representation and the Gelfand\UNaimark theorem, pure states and
-    irreducible representations, folium of a representation, Fell's theorem,
-    the quantum world.
+    <item><with|font-series|bold|(leftovers from Week 2)>
+    Gelfand\UNaimark\USegal representation and the Gelfand\UNaimark theorem,
+    pure states and irreducible representations, folium of a representation,
+    Fell's theorem, the quantum world.
 
     <item><with|font-series|bold|Week 3 \|> (8.5.24) Heisenberg
     indetermination principle, Schrödinger-Robertson inequality, canonical
@@ -194,7 +198,7 @@
       of Mathematical Quantum Mechanics> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|1fn>
 
-      <with|par-left|<quote|1tab>|References
+      <with|par-left|<quote|1tab>|Basic references
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
@@ -204,6 +208,10 @@
       <with|par-left|<quote|1tab>|Journal
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|(Very) tentative program
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
     </associate>
   </collection>
 </auxiliary>
