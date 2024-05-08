@@ -122,23 +122,24 @@
     (continued) : spectral theory of commutative Banach algebras, Gelfand
     transform, positive elements, states.
     [<notes-store|script|oxford/ht2024/emqm-lecture-2.pdf>]
+
+    <item><with|font-series|bold|Week 3 \|> (8.5.24) (only 1h)
+    Gelfand\UNaimark\USegal representation and the Gelfand\UNaimark theorem.
+    [<notes-store|script|oxford/ht2024/emqm-lecture-3.pdf>]
   </itemize>
 
   <subsection*|(Very) tentative program>
 
   <\itemize>
-    <item><with|font-series|bold|(leftovers from Week 2)>
-    Gelfand\UNaimark\USegal representation and the Gelfand\UNaimark theorem,
-    pure states and irreducible representations, folium of a representation,
-    Fell's theorem, the quantum world.
-
-    <item><with|font-series|bold|Week 3 \|> (8.5.24) Heisenberg
-    indetermination principle, Schrödinger-Robertson inequality, canonical
-    commutation relations (CCR), probabilistic phenomena in non-commutative
-    algebras, construction of discrete systems of complementary observables.
-    Canonical commutation relations<nbsp>as limits of discrete
-    ones.<nbsp><nbsp>Weyl algebra, Baker-Campbell-Hausdorff formula and
-    relation with Heisenberg's commutation relations.
+    <item><with|font-series|bold|(leftovers from Week 3)> pure states and
+    irreducible representations, folium of a representation, Fell's theorem,
+    the quantum world. Heisenberg indetermination principle,
+    Schrödinger-Robertson inequality, canonical commutation relations (CCR),
+    probabilistic phenomena in non-commutative algebras, construction of
+    discrete systems of complementary observables. Canonical commutation
+    relations as limits of discrete ones. Weyl algebra,
+    Baker-Campbell-Hausdorff formula and relation with Heisenberg's
+    commutation relations.
 
     <item><with|font-series|bold|Week 4 \|> (15.5.24) Weyl algebra,
     Heisenberg<nbsp>group and von Neumann theorem on the uniqueness of
