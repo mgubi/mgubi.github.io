@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -126,43 +126,41 @@
     <item><with|font-series|bold|Week 3 \|> (8.5.24) (only 1h)
     Gelfand\UNaimark\USegal representation and the Gelfand\UNaimark theorem.
     [<notes-store|script|oxford/ht2024/emqm-lecture-3.pdf>]
+
+    <item><with|font-series|bold|Week 4 \|> (15.5.24) Pure states and
+    irreducible representations. Folium of a representation, Fell's theorem,
+    the quantum world. Heisenberg indetermination principle,
+    Schrödinger-Robertson inequality, canonical commutation relations (CCR),
+    probabilistic phenomena in non-commutative algebras
+    [<notes-store|script|oxford/ht2024/emqm-lecture-4.pdf>]
   </itemize>
 
   <subsection*|(Very) tentative program>
 
   <\itemize>
-    <item><with|font-series|bold|(leftovers from Week 3)> pure states and
-    irreducible representations, folium of a representation, Fell's theorem,
-    the quantum world. Heisenberg indetermination principle,
-    Schrödinger-Robertson inequality, canonical commutation relations (CCR),
-    probabilistic phenomena in non-commutative algebras, construction of
+    <item><with|font-series|bold|Week 5 \|> (22.5.24) Construction of
     discrete systems of complementary observables. Canonical commutation
     relations as limits of discrete ones. Weyl algebra,
     Baker-Campbell-Hausdorff formula and relation with Heisenberg's
-    commutation relations.
-
-    <item><with|font-series|bold|Week 4 \|> (15.5.24) Weyl algebra,
-    Heisenberg<nbsp>group and von Neumann theorem on the uniqueness of
+    commutation relations. Von Neumann theorem on the uniqueness of
     irreducible<nbsp>regular representations of Weyl algebra in finite
-    dimensions, Schrödinger representation, irreducibility. Determination of
-    the vacuum in the Schrödinger representation. Gaussian representation of
-    Weyl relations. Reducible representations.
+    dimensions, Schrödinger representation, irreducibility.\ 
 
-    <item><with|font-series|bold|Week 5 \|> (22.5.24) Dynamics of a quantum
-    system: unitary representation of weakly continuous automorphism on an
-    invariant state
+    <item><with|font-series|bold|Week 6 \|> (29.5.24) Determination of the
+    vacuum in the Schrödinger representation. Gaussian representation of Weyl
+    relations. Reducible representations. Dynamics of a quantum system:
+    unitary representation of weakly continuous automorphism on an invariant
+    state
 
-    <item><with|font-series|bold|Week 6 \|> (29.5.24) Semigroups and
+    <item><with|font-series|bold|Week 7 \|> (5.6.24) Semigroups and
     *-homomorphism, Bernstein theorem on totally monotone functions. Link
     between unitary groups and self-adjoint semigroups. Energy operator.
     Positive energy condition.<nbsp>Link between unitary groups and
     self-adjoint semigroups continued. Ground states and Wightman functions.
+    Axioms for Schwinger functions and the reconstruction theorem. Reflection
+    positivity for Gaussian processes.
 
-    <item><with|font-series|bold|Week 7 \|> (5.6.24) Axioms for Schwinger
-    functions and the reconstruction theorem. Reflection positivity for
-    Gaussian processes.
-
-    <item><with|font-series|bold|Week 8 \|> (19.6.24) [Warning: no lecture on
+    <item><with|font-series|bold|Week 9 \|> (19.6.24) [Warning: no lecture on
     June 12th!] Nelson's positivity and stochastic processes. Reflection
     positivity for Markov processes and construction or reflection positive
     processes via SDEs.
