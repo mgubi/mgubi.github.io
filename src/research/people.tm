@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|cv-mg|notes-meta>>
 
@@ -20,7 +20,7 @@
     <item>Luca Fresta (2021\U)
 
     <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net>
-    (2021\U2024)<nbsp>Now assistant professor at Università di Pavia,
+    (2021\U2024)<nbsp>Now assistant professor at Università di Pavia.
 
     <item><hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
     (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.\ 
