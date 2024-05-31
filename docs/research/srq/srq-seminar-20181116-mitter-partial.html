@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; November 16th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      SRQ Seminar 20181116 Mitter (partial transcript)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Fixpoint argument</b>
+    </p>
+    <p>
+      We have two recursions
+    </p>
+    <p>
+      \(\gamma < 1\), \(u_k = (\tilde{g}_k, \tilde{\mu}_k)\)
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \tilde{g}_{k + 1} = \gamma
+      \tilde{g}_k - \tilde{\xi} (u_k)\\
+  \mu_{k + 1} = L^{\alpha} \mu_k +
+      \rho (u_k)
+\end{array} \right.\)
+    </center>
+    <p>
+      Solving these equations we have (solve \(\tilde{g}\) forward and \(\mu\)
+      backward)
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \tilde{g}_k = \gamma^k
+      \tilde{g}_0 - \sum_{j < k} \gamma^{j - k} \tilde{\xi}
+  (u_j)\\
+  \mu_k
+      = L^{- \alpha (N - k)} \mu_N + \sum_{k \leqslant j < N} L^{- \alpha (j
+ 
+      - k)} \rho (u_j)
+\end{array} \right.\)
+    </center>
+    <p>
+      We are solving with the condition that coupling constant are bounded. So
+      we can take the limit \(N \mathop{\rightarrow}\limits \infty\) and
+      obtain
+    </p>
+    <center>
+      \(\displaystyle \mu_k = \sum_{k \leqslant j < \infty} L^{- \alpha (j -
+      k)} \rho (u_j) .\)
+    </center>
+    <p>
+      We consider now the <i>whole</i> trajectory \(v = (u_k, k \geqslant 0)\)
+      and the two equations have the form
+    </p>
+    <center>
+      \(\displaystyle v = F_{\tilde{g}_0} (v)\)
+    </center>
+    <p>
+      where the \(\tilde{g}_0\) in the recursion is considered an external
+      parameter.
+    </p>
+    <p>
+      So we get a fixpoint problem in the space of trajectories with norm \(\|
+      v \| = \sup_k | u_k |\). Solution is \(v_{\ast}\) and at the end we
+      obtain a map \(\tilde{g}_0 \rightarrow \mu_0 = \mu_0 (\tilde{g}_0)\). 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

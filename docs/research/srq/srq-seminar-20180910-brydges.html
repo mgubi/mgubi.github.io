@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="toggle" style="display: none">
+      <p>
+        
+      </p>
+    </div>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; September 10th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      Brydges' lecture on Monday September 10th, 2018. <tt class="verbatim">&lt;db5d@math.ubc.ca&gt;</tt>
+    </p>
+    <h2 id="auto-3">Axioms of Euclidean quantum field theory (EQFT)<span style="margin-left: 1em"></span></h2>
+    <p>
+      I will follow the book [<a href="#bib-GJ87">GJ87</a>]. An EQFT is a probability
+      Borel measure \(\mu\) on \(\mathcal{D}' (\mathbb{R}^d)\) whose Fourier
+      transform
+    </p>
+    <center>
+      \(\displaystyle S (f) = \int_{\mathcal{D}'} e^{i \phi (f)} d \mu, \qquad
+      \text{for } f \in
+C_0^{\infty} (\mathbb{R}^d),\)
+    </center>
+    <p>
+      satisfies
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>Analyticity.</i> \(S \left( \sum_{i = 1}^n z_k f_k \right)\) is
+          entire in \((z_1, \ldots, z_n) \in \mathbb{C}^n\) for all \(f_i \in
+          C_0^{\infty} (\mathbb{R}^d)\), \(i = 1, \ldots, n\). This implies
+          existence of the Laplace transform and exponential moments.
+        </p>
+      </li>
+      <li>
+        <p>
+          <i>Euclidean invariance.</i> The Euclidean group is the set of all
+          continuous bijections of \(\mathbb{R}^d\) to itself which preserve
+          Euclidean distance. It contains rotations, translations and
+          reflections and these generate the group (hard to prove). The
+          measure is invariant under all the group. In particular translations
+          in the <i>time</i> direction: \(T_s f (y, x_0) = f (y, x_0 - s)\)
+          where \((x_0, x_1, \ldots, x_{d - 1}) = (x_0 \in \mathbb{R}, y \in
+          \mathbb{R}^{d - 1})
+\in \mathbb{R}^d\) and reflection: \(\theta f
+          (y, x_0) = f (t, - x_0)\).
+        </p>
+      </li>
+      <li>
+        <p>
+          <i>O.S. (reflection) positivity.</i>
+        </p>
+        <center>
+          \(\displaystyle \mathcal{A} := \{ \text{(complex) span of $e^{\phi
+          (f_1)}, \ldots, e^{\phi
+(f_n)}$ for all $n$ and all } f_i \in
+          C_0^{\infty} \} .\)
+        </center>
+        <p>
+          Then \(\mu\) is OS/reflection positive if
+        </p>
+        <center>
+          \(\displaystyle \int (\theta \bar{F}) F \mathrm{d} \mu \geqslant
+          0,\)
+        </center>
+        <p>
+          for all \(F \in \mathcal{A}_+\) where \(\mathcal{A}_+\) is the above
+          span constructed only with \(f_i \in C_0^{\infty}\) with support in
+          \(\mathbb{R}_+^d = \{(x_0, \ldots, x_{d - 1}) \in \mathbb{R}^d : x_0
+          > 0\}\). This is the axiom which decides the direction of time.
+        </p>
+      </li>
+      <li>
+        <p>
+          <i>Ergodicity.</i> If \(F \in L^1 (\mu)\) then, pointwise almost
+          surely (\(\mu\))
+        </p>
+        <center>
+          \(\displaystyle \frac{1}{t}  \int_0^t T_s F \rightarrow \int F
+          \mathrm{d} \mu .\)
+        </center>
+        <p>
+          (This corresponds to uniqueness of the vacuum in relativistic QFT.)
+        </p>
+      </li>
+      <li>
+        <p>
+          <i>Regularity</i>. with \(p \in [1, 2]\),
+        </p>
+        <center>
+          \(\displaystyle |S (f) | \leqslant e^{c (\|f\|_{L^1} +\|f\|_{L^p})}
+          .\)
+        </center>
+      </li>
+    </ul>
+    <p>
+      These are the axioms for the simplest kind of EQFT which is called
+      <em>scalar bosonic</em> EQFT. There are more complicated vector-valued
+      bosonic theories with similar axioms. Also there are fermionic theories,
+      which are not measures. These will be discussed later. The terminology
+      <em>O.S. positivity</em> honours [<a href="#bib-OsterwalderSchrader73">OS73</a>] and [<a href="#bib-OsterwalderSchrader75">OS75</a>]
+      where this concept was introduced.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">1</class>. </strong>For any \(F \in L^2
+      (\mu)\),  \(\| \theta F\|_{L^2} = \|F\|_{L^2}\) because \(\mu\) is
+      Euclidean invariant.
+    </p>
+    <p>
+      Euclidean invariance and reflection positivity turn out to be difficult
+      to achieve simultaneously. We are about to see that OS positivity
+      enables us to construct a Hilbert space and a semigroup. The Hilbert
+      space connects us to physics by being the Hilbert space of states of a
+      quantum mechanics.
+    </p>
+    <h3 id="auto-4">1<span style="margin-left: 1em"></span>Reconstruction of quantum mechanics<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      For \(A, B \in \overline{\mathcal{A}_+}\) (closure in \(L^2 (\mu)\)),
+      two inner products can be defined:
+    </p>
+    <center>
+      \(\displaystyle (A, B)_{L^2 (\mu)} := \int \overline{A (\phi)} B (\phi)
+      \mu (\mathrm{d} \phi)
+.\)
+    </center>
+    <center>
+      \(\displaystyle (A, B)_{\mathcal{H}} := \int \overline{\theta A (\phi)}
+      B (\phi) \mu
+(\mathrm{d} \phi) .\)
+    </center>
+    <p>
+      Actually, we will later see that the second definition does not satisfy
+      the requirement that \((A, A)_{\mathcal{H}} > 0\) for \(A \neq 0\) so we
+      define \(\mathcal{N}= \{A \in \overline{\mathcal{A}_+} : (A,
+      A)_{\mathcal{H}} = 0\}\) and then \(\mathcal{H} :=
+      \overline{\mathcal{A}_+} \setminus \mathcal{N}\) is a Hilbert space.
+      Define a semigroup \(P_t : \mathcal{H} \rightarrow \mathcal{H}\) by: for
+      all \(t \geqslant 0\) and \(A, B \in \mathcal{H}\),
+    </p>
+    <center>
+      \(\displaystyle (A, P_t B)_{\mathcal{H}} = (\theta (A), T_t B)_{L^2
+      (\mu)} .\)
+    </center>
+    <p>
+      This makes sense since \(T_t B \in \mathcal{H}\) if \(B \in
+      \mathcal{H}\) and \(t \geqslant 0\). On the left hand side \(A, B\)
+      represent equivalence classes, but we omit this from our notation and
+      omit the check that our definitions are consistent equality modulo
+      \(\mathcal{N}\). This is done carefully in [<a href="#bib-GJ87">GJ87</a>].
+    </p>
+    <p>
+      Claims:
+    </p>
+    <ul>
+      <li>
+        <p>
+          \(P_t\) is self&ndash;adjoint. To prove this we use unitarity of
+          time translation for the \(L^2 (\mu)\) scalar product to get
+        </p>
+        <center>
+          \(\displaystyle (A, P_t B)_{\mathcal{H}} = (\theta A, T_t B)_{L^2
+          (\mu)} = (T_{- t} \theta A,
+B)_{L^2 (\mu)} = (\theta T_t A, B)_{L^2
+          (\mu)} = (P_t A, B)_{\mathcal{H}} .\)
+        </center>
+      </li>
+      <li>
+        <p>
+          \(P_t\) is contractive. By self&ndash;adjointness
+        </p>
+        <center>
+          \(\displaystyle \|P_t A\|_{\mathcal{H}} = (P_t A, P_t
+          A)_{\mathcal{H}}^{1 / 2} = (A, P_{2 t}
+A)_{\mathcal{H}}^{1 / 2}
+          \leqslant \|A\|_{\mathcal{H}}^{1 / 2}  \|P_{2
+          t}
+A\|_{\mathcal{H}}^{1 / 2}\)
+        </center>
+        <p>
+          and by applying the same bound to the right hand side with \(t\)
+          replaced by \(2 t\) etc. we get
+        </p>
+        <center>
+          \(\displaystyle \|P_t A\|_{\mathcal{H}} \leqslant
+          \|A\|_{\mathcal{H}}^{1 / 2 + 1 / 4}  \|P_{4
+t} A\|_{\mathcal{H}}^{1
+          / 4} \leqslant \cdots \leqslant \|A\|_{\mathcal{H}}^{1
+/ 2 + \cdots
+          + 1 / 2^n}  \|P_{2^n t} A\|_{\mathcal{H}}^{1 / 2^n}\)
+        </center>
+        <p>
+          but \(\|P_{2^n t} A\|_{\mathcal{H}}^{1 / 2^n} \leqslant \|T_{2^n t}
+          A\|_{L^2}^{1 /
+2^n} = \|A\|_{L^2}^{1 / 2^n} \rightarrow 1\) as \(n
+          \rightarrow \infty\). Therefore taking the \(n \rightarrow \infty\)
+          we conclude that \(\|P_t A\|_{\mathcal{H}} \leqslant
+          \|A\|_{\mathcal{H}}\).
+        </p>
+      </li>
+      <li>
+        <p>
+          \((P_t)_{t \geqslant 0}\) is strongly continuous. Namely \(\|P_t A -
+          A\|_{\mathcal{H}} \rightarrow 0\) as \(t \rightarrow 0\). (The same
+          technology applies, see [<a href="#bib-GJ87">GJ87</a>])
+        </p>
+      </li>
+    </ul>
+    <p>
+      Therefore the Hille&ndash;Yoshida theorem ensures the existence of an
+      operator \(H\) on \(\mathcal{H}\) which is self-adjoint (since \(P_t\)
+      is self&ndash;adjoint), (unbounded), \(\sigma (H) \in [0, \infty)\) and
+      \(P_t = e^{- tH}\). By the spectral theorem for self-adjoint operators
+      we can also define the unitary group \(U_t = e^{- itH}\). \(U_t\) is the
+      time evolution on \(\mathcal{H}\) of QM. In [<a href="#bib-GJ87">GJ87</a>] this is
+      just part of the construction of a relativistic invariant quantum field
+      theory that satisfies the Wightman axioms, but we will not pursue this.
+      This was the original achievement of [<a href="#bib-OsterwalderSchrader73">OS73</a>] and [<a href="#bib-OsterwalderSchrader75">OS75</a>].
+    </p>
+    <h3 id="auto-5">2<span style="margin-left: 1em"></span>An example<span style="margin-left: 1em"></span></h3>
+    <p>
+      Take a lattice with \(5\) points \(\{1, \ldots, 5\} \subseteq
+      \mathbb{Z}\). Define \(\theta\) as reflection on the middle point. We
+      consider random variables \(\phi_1, \ldots, \phi_5\) and the measure
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu (\phi) = \frac{1}{Z} e^{- \frac{1}{2} 
+      \sum_{i = 0}^5 (\phi_{i
++ 1} - \phi_i)^2}  \prod_{i = 1}^5 \rho
+      (\mathrm{d} \phi_i)\)
+    </center>
+    <p>
+      where we assume \(\phi_0 = \phi_6 = 0\) and where \(\rho\) is a finite
+      measure. An example is \(\rho = \delta_{+ 1} + \delta_{- 1}\), which
+      gives the Ising model in \(d = 1\) with five points.
+    </p>
+    <p>
+      What is the meaning of \(\mathcal{N}\)? We have \(\mathcal{A}_+ = \{A
+      (\phi) = A (\phi_3, \phi_4, \phi_5)\}\). Let \((\iota A) (\phi_3)
+      =\mathbb{E}_{\mu} (A| \phi_3)\). This maps \(\overline{\mathcal{A}_+}\)
+      into the subspace of \(L^2 (\mu)\) of r.v. measurable wrt \(\phi_3\).
+      For \(A, B \in \mathcal{A}_+\)
+    </p>
+    <center>
+      \(\displaystyle (A, B)_{\mathcal{H}} =\mathbb{E}_{\mu}  (\theta
+      (\bar{A}) B) =\mathbb{E}_{\mu}
+[\mathbb{E}_{\mu} ((\theta \bar{A}) B|
+      \phi_3)]\)
+    </center>
+    <center>
+      \(\displaystyle =\mathbb{E}_{\mu}  [\mathbb{E}_{\mu} (\theta \bar{A} |
+      \phi_3)\mathbb{E}_{\mu}
+(B| \phi_3)] =\mathbb{E}_{\mu}  \left[
+      \overline{(\iota A) (\phi_3)}
+\hspace{0.17em} \iota B (\phi_3) \right]\)
+    </center>
+    <p>
+      This shows that \(\mu\) is reflection positive and that \(\mathcal{N}=
+      \left\{ A \in \mathcal{A}_+ | \iota A = 0 \hspace{0.17em}
+      \mu
+\text{--a.s.} \right\}\) is the kernel of \(\iota\) so
+    </p>
+    <center>
+      \(\displaystyle \overline{\mathcal{A}_+} \setminus \mathcal{N} \simeq
+      \{F (\phi_3) \in L^2
+(\mu)\} .\)
+    </center>
+    <p>
+      So \(\mathcal{N}\) is a quite big space which reduces
+      \(\overline{\mathcal{A}_+}\) to a space of functions of one variable.
+    </p>
+    <p>
+      OS positive measures are very special. They were studied in detail in
+      [<a href="#bib-FILS78">FILS78</a>]. For example the fractional Laplacian (energy of
+      the form \((\phi, (- \Delta)^{1 / 2} \phi)\)) is OS positive, but not
+      energies of the form \((\Delta \phi, \Delta \phi)\) (elasticity
+      equation). For lattice models one can have OS positivity for reflections
+      through hyperplanes that pass through lattice points or for reflections
+      through hyperplanes that pass between lattice points. I think that
+      \((\phi, (- \Delta)^{1 / 2} \phi)\)) only has OS positivity for the
+      latter.
+    </p>
+    <p>
+      <b>Problem:</b> For the Ising model, consider the weak limit of \(\mu\)
+      as the number of points go to infinity (start by assuming it exists).
+    </p>
+    <ol>
+      <li>
+        <p>
+          Find \(\mathcal{H}\), \(P_t : \mathcal{H} \rightarrow \mathcal{H}\)
+          with \(t = 0, 1, 2, \ldots\)
+        </p>
+      </li>
+      <li>
+        <p>
+          Determine how \(\int \phi_0 \phi_n \mathrm{d} \mu\) decays as \(n
+          \rightarrow \infty\).
+        </p>
+      </li>
+    </ol>
+    <p>
+      This is a \(\mathbb{Z}\)-QFT (invariant under the automorphisms of
+      \(\mathbb{Z}\)).
+    </p>
+    <h2 id="auto-6">Bibliography<span style="margin-left: 1em"></span></h2>
+    <div class="compact-block" style="text-indent: 0em">
+      <font style="font-size: 84.0%"><dl>
+        <p>
+          <dt>
+            <strong>[OS75]  </strong>
+          </dt>
+          <dd>
+            <p>
+              <a id="bib-OsterwalderSchrader75"></a>Konrad Osterwalder and Robert Schrader. Axioms for
+              Euclidean Green's functions. II. <i>Commun. Math. Phys.</i>,
+              42:281&ndash;305, 1975. With an appendix by Stephen Summers.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            <strong>[OS73]  </strong>
+          </dt>
+          <dd>
+            <p>
+              <a id="bib-OsterwalderSchrader73"></a>Konrad Osterwalder and Robert Schrader. Axioms for
+              Euclidean Green's functions. <i>Commun. Math. Phys.</i>,
+              31:83&ndash;112, 1973.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            <strong>[GJ87]  </strong>
+          </dt>
+          <dd>
+            <p>
+              <a id="bib-GJ87"></a>J.&nbsp;Glimm and A.&nbsp;Jaffe. <i>Quantum Physics,
+              A Functional Integral Point of View</i>. Springer, Berlin, 2nd
+              edition, 1987.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            <strong>[FILS78]  </strong>
+          </dt>
+          <dd>
+            <p>
+              <a id="bib-FILS78"></a>J.&nbsp;Fr&ouml;hlich, R.&nbsp;Israel,
+              E.H.&nbsp;Lieb, and B.&nbsp;Simon. Phase transitions and
+              reflection positivity. I. General theory and long range lattice
+              models. <i>Commun. Math. Phys.</i>, <b>62</b>:1&ndash;34, 1978.
+            </p>
+          </dd>
+        </p>
+      </dl></font>
+    </div>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

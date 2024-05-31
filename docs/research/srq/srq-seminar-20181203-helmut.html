@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; December 3rd, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      SRQ Seminar 20181203 Tyler Helmut
+    </p>
+    <p>
+      <b>Random walks, spin systems, isomorphisms theorems</b>
+    </p>
+    <p>
+      (joint work with R. Bauerschmidt and A. Swan)
+    </p>
+    <h3 id="auto-3">1<span style="margin-left: 1em"></span>Classic theorem: the
+    Brydges&ndash;Fr&ouml;hlich&ndash;Spencer-Dynkin isomorphism<span style="margin-left: 1em"></span></h3>
+    <p>
+      \(\Lambda\) finite set of vertices (i.e. the vertices of a finite box in
+      \(\mathbb{Z}^d\)) \(\{ \beta_{i, j} \}_{i, j}\) edge weights,
+      \(\beta_{i, j} = \beta_{j, i} \geqslant 0\) and \(\beta_{i, j} > 0\)
+      means that there is an edge between \(i\) and \(j\).
+    </p>
+    <p>
+      \(\mathbb{R}^2\)-valued Gaussian free field (GFF): measure on \(\varphi
+      \in (\mathbb{R}^2)^{\Lambda}\) \(\varphi = (\varphi_i)_{i \in \Lambda}\)
+      \(\varphi_i = (x_i, y_i)\). 
+    </p>
+    <center>
+      \(\displaystyle \langle g (\varphi) \rangle_{\beta, \Lambda, m^2} =
+      \langle g (\varphi)
+\rangle \propto \int_{(\mathbb{R}^2)^{\Lambda}} g
+      (\varphi) e^{- \sum_{i, j}
+\beta_{i, j} | \varphi_i - \varphi_j |^2 -
+      \frac{1}{2} \sum_i m^2 | \varphi_i
+|^2} \mathrm{d} \varphi,\)
+    </center>
+    <p>
+      \(m^2 > 0\) for convergence (translation symmetry needs to be broken). 
+    </p>
+    <p>
+      Laplacian: \((\Delta_{\beta} f) (i) := \sum_{j \in \Lambda} \beta_{i, j}
+      (f (j) - f (i))\). Calculate
+    </p>
+    <center>
+      \(\displaystyle H_{\beta} (\varphi) = \frac{1}{2} \sum_{i, j} \beta_{i,
+      j} | \varphi_i -
+\varphi_j |^2 = \sum_i \varphi_i (- \Delta_{\beta}
+      \varphi)_i .\)
+    </center>
+    <p>
+      Random walk: \(X_t\) is a continuous time random walk with jump rates
+      \((\beta_{i, j})_{i, j}\) meaning that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} [X_{t + \delta t} = j|X_t = i] = \beta_{i, j}
+      \delta t + o (\delta
+t)\)
+    </center>
+    <p>
+      The random walk has a local time \(L_t (i) = \int_0^t \mathbb{I}_{X_s =
+      i} \mathrm{d} s\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(BFS-Dynkin) If \(g
+      : [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) has rapid decay,
+      then</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \int_{(\mathbb{R}^2)^{\Lambda}} \mathrm{d} \varphi
+        e^{- H_{\beta} (\varphi)} g
+\left( \frac{1}{2} \varphi^2 \right) x_i
+        x_j = \int_{(\mathbb{R}^2)^{\Lambda}}
+\mathrm{d} \varphi e^{-
+        H_{\beta} (\varphi)} \mathbb{E}_i \left[ g \left(
+\frac{1}{2}
+        \varphi^2 + L_t \right) \mathbb{I}_{X_t = j} \right] .\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">2</class>. </strong>The expectation is
+      unnormalized. A more familiar version comes from taking
+    </p>
+    <center>
+      \(\displaystyle g \left( \frac{1}{2} \varphi^2 \right) = \exp \left( -
+      \frac{m^2}{2} \sum_i
+\varphi_i^2 \right) f \left( \frac{1}{2} \varphi^2
+      \right)\)
+    </center>
+    <p>
+      and normalizing the measure to get
+    </p>
+    <center>
+      \(\displaystyle \left\langle x_i x_j f \left( \frac{1}{2} \varphi^2
+      \right)
+\right\rangle_{m^2} = \left\langle \int_0^{\infty} e^{- m^2 t}
+      \mathbb{E}_i
+\left[ \mathbb{I}_{X_t = j} f \left( \frac{1}{2} \varphi^2
+      + L_t \right)
+\right] \mathrm{d} t \right\rangle_{m^2} .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      This last formula is the Dynkin formulation of this
+      &ldquo;isomorphism&rdquo; because can be interpreted as an identity in
+      law.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3</class>. </strong>Following ideas from
+      Disertori's talk we can replace the GFF with a supersymmetric GFF and
+      get
+    </p>
+    <center>
+      \(\displaystyle \left\langle x_i x_j f \left( \frac{1}{2} \Phi^2
+      \right)
+\right\rangle^{\text{SUSY}} = \int_0^{\infty} e^{- m^2 t}
+      \mathbb{E}_i
+[\mathbb{I}_{X_t = j} f (L_t)] \mathrm{d} t\)
+    </center>
+    <p style="margin-bottom: 1em">
+      where the SUSY \(\)GFF \(\Phi\) has a two additional fermionic
+      components.
+    </p>
+    <p>
+      A conceptual proof of the isomorphism follows (otherwise just compute
+      Laplace transforms explicitly). \(X_t\) is looked at as a marginal of
+      the process \((X_t, L_t)_t\) with generator
+    </p>
+    <center>
+      \(\displaystyle (\mathcal{L}g) (i, \ell) = (\Delta_{\beta} g) (i, \ell)
+      +
+\dfrac{\partial}{\partial_{\ell_i}} g (i, \ell) .\)
+    </center>
+    <p>
+      Using Lemma&nbsp;<a href="#lemma:key">4</a> below, we can choose \(g_t (i, \ell)
+      =\mathbb{E}_{i, \ell} (\mathbb{I}_{X_t = j} g (L_t))\) and we can
+      compute that
+    </p>
+    <center>
+      \(\displaystyle \partial_t g_t =\mathcal{L}g_t .\)
+    </center>
+    <p>
+      By integrating we get
+    </p>
+    <center>
+      \(\displaystyle \mathbb{I}_{i = j} = \int_0^{\infty} \mathcal{L}g_t
+      \left( i, \frac{1}{2}
+\varphi^2 \right) \mathrm{d} t\)
+    </center>
+    <p>
+      and we plug into the Lemma to get the theorem, indeed
+    </p>
+    <center>
+      \(\displaystyle \int \mathrm{d} \varphi e^{- H_{\beta} (\varphi)} x_i
+      x_j g \left( L_t +
+\frac{1}{2} \varphi^2 \right) = - \sum_j
+      \int_0^{\infty} \int \mathrm{d}
+\varphi e^{- H_{\beta} (\varphi)} x_i
+      x_j (\mathcal{L}g_t) \left( j,
+\frac{1}{2} \varphi^2 \right) \mathrm{d}
+      t\)
+    </center>
+    <center>
+      \(\displaystyle = \int_0^{\infty} \int \mathrm{d} \varphi e^{- H_{\beta}
+      (\varphi)} g_t \left(
+i, \frac{1}{2} \varphi^2 \right) \mathrm{d} t =
+      \int_0^{\infty} \int
+\mathrm{d} \varphi e^{- H_{\beta} (\varphi)}
+      \mathbb{E}_{i, \frac{1}{2}
+\varphi^2} (\mathbb{I}_{X_t = j} g (L_t))
+      \mathrm{d} t\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">4</class>. </strong><i><a id="lemma:key"></a>\(g :
+      \Lambda \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) with rapid
+      decay. </i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle - \sum_j \int \mathrm{d} \varphi e^{- H_{\beta}
+        (\varphi)} x_i x_j
+(\mathcal{L}g) \left( j, \frac{1}{2} \varphi^2
+        \right) = \int \mathrm{d}
+\varphi e^{- H_{\beta} (\varphi)} g \left(
+        i, \frac{1}{2} \varphi^2 \right)\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Integration by parts. \(T_i = \partial /
+      \partial_{x_i}\). Let \([f] := \int_{(\mathbb{R}^2)^{\Lambda}}
+      \mathrm{d} \varphi e^{- H_{\beta}
+(\varphi)} f (\varphi)\). Then if
+      \(f\) has decay \([T_i f] = 0\) and \([(T_i f) g] = [f T_i^{\ast} g]\)
+      with
+    </p>
+    <center>
+      \(\displaystyle T_i^{\ast} g (\varphi) = - (T_i g) (\varphi) + (T_i
+      H_{\beta}) (\varphi) g
+(\varphi) .\)
+    </center>
+    <p>
+      By a summation by parts one check direcly that
+    </p>
+    <center>
+      \(\displaystyle \sum_j (T_j^{\ast} g) \left( j, \frac{1}{2} \varphi^2
+      \right) = \sum_j x_j
+(\mathcal{L}g) \left( j, \frac{1}{2} \varphi^2
+      \right) .\)
+    </center>
+    <p>
+      Indeed
+    </p>
+    <center>
+      \(\displaystyle \frac{\partial}{\partial x_i} g \left( j, \frac{1}{2}
+      \varphi^2 \right) =
+\frac{\partial}{\partial \ell_i} g \left( j,
+      \frac{1}{2} \varphi^2 \right)
+\frac{\partial}{\partial x_i} \left(
+      \frac{1}{2} \varphi^2 \right) = x_i
+\frac{\partial}{\partial \ell_i} g
+      \left( j, \frac{1}{2} \varphi^2 \right) .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      And this allows to conclude.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-4">2<span style="margin-left: 1em"></span>Applications<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-5"></a>
+      </div>
+      <h5>\(\Phi^4_d\).<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Take \(g (\psi) = \exp \left( - \lambda \frac{1}{4} \psi^2 - \beta
+        \frac{1}{2} \psi
+\right)\), then
+      </div>
+    </p>
+    <center>
+      \(\displaystyle \int_{(\mathbb{R}^2)^{\Lambda}} \mathrm{d} \varphi e^{-
+      H_{\beta} (\varphi) -
+\lambda \sum_i | \varphi_i |^4 - \beta \sum_i |
+      \varphi_i |^2} x_i x_j
+=\mathbb{E}_i [F (L_t) \mathbb{I}_{X_t = j}]\)
+    </center>
+    <p>
+      where \(F (L_t)\) is a \(\varphi^4\) partition function depending on the
+      local time of the random walk:
+    </p>
+    <center>
+      \(\displaystyle F (L_t) = \int_{(\mathbb{R}^2)^{\Lambda}} e^{- H_{\beta}
+      (\varphi) -
+\frac{\lambda}{4} \sum_i (| \varphi_i |^2 + 2 L_t (i))^2 -
+      \frac{\beta}{2}
+\sum_i (| \varphi_i |^2 + 2 L_t (i))} \mathrm{d} \varphi
+      .\)
+    </center>
+    <h3 id="auto-6">3<span style="margin-left: 1em"></span>Vertex reinforced jump process.<span style="margin-left: 1em"></span></h3>
+    <p>
+      VRJP is a Markov process on \(\Lambda\) with generator (for \((X_t,
+      L_t)\))
+    </p>
+    <center>
+      \(\displaystyle \mathcal{L} (i, \ell) = \sum_j \beta_{i, j} (1 + \ell_t
+      (i)) (g (i, \ell) - g
+(i, \ell)) + \frac{\partial}{\partial \ell_i} g
+      (i, \ell) .\)
+    </center>
+    <p>
+      so
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (X_{t + \delta t} = j|X_t = i) = \beta_{i, j}
+      (1 + L_t (i)) + o
+(\delta t) .\)
+    </center>
+    <p>
+      Discovery due to Sabot-Tarres: VRJP is related to the
+      \(\mathbb{H}^{2|2}\) sigma model (a supersymmetric targe space with two
+      bosonic and two fermionic degrees of freedom).
+    </p>
+    <p>
+      Let us introduce the \(\mathbb{H}^2\) model, the (purely bosonic)
+      hyperbolic plane:
+    </p>
+    <center>
+      \(\displaystyle \mathbb{H}^2 = \{ \varphi = (x, y, z) | \varphi \cdot
+      \varphi := x^2 + y^2 -
+z^2 = - 1 ; z \geqslant 1 \} .\)
+    </center>
+    <p>
+      So this is the (hyper)hyperboloid with positive \(z\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Definition <class style="font-style: normal">5</class>. </strong><i>(of
+      \(\mathbb{H}^2\) spin model). We proceed like for the GFF by replacing
+      the Euclidean inner product with the Minkowski inner product, i.e.:
+      \(\varphi_i \varphi_j = x_i x_j + y_i y_j - z_i z_j\). We replace the
+      Lebesgue measure with \(\mathrm{d} \varphi_i \rightarrow \frac{1}{z_i}
+      \mathrm{d} \varphi_i\) and \(m^2 \varphi^2 \rightarrow h (z_i - 1)\)
+      with \(h > 0\). Therefore we write</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \langle f (\varphi) \rangle^{\mathbb{H}^2}_{\Lambda,
+        \beta, h} :=
+\int_{(\mathbb{H}^2)^{\Lambda}} e^{- \frac{1}{2} \sum_{i,
+        j} \beta_{i, j} |
+\varphi_i - \varphi_j |^2_{\mathbb{H}^2} - \sum_i h
+        (z_i - 1)} f (\varphi)
+\prod_i \frac{\mathrm{d} \varphi_i}{z_i} .\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">6</class>. </strong><i>(BHS) \(g : \Lambda
+      \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) smooth and
+      bounded</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \langle x_i x_j g (z - 1)
+        \rangle^{\mathbb{H}^2}_{\Lambda, \beta, h} =
+\left\langle z_i
+        \int_0^{\infty} \mathrm{d} t\mathbb{E}_{i, z - 1}
+[\mathbb{I}_{X_t =
+        j} g (L_t) e^{- h t}] \right\rangle_{\Lambda, \beta,
+h}^{\mathbb{H}^2}
+        .\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">7</class>. </strong>There is a
+      \(\mathbb{H}^{2|2}\) variant which reads
+    </p>
+    <center>
+      \(\displaystyle \langle x_i x_j g (z - 1)
+      \rangle^{\mathbb{H}^{2|2}}_{\Lambda, \beta, h} =
+\int_0^{\infty}
+      \mathrm{d} t\mathbb{E}_{i, 0} [\mathbb{I}_{X_t = j} g (L_t)
+e^{- h t}]
+      .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      Therefore the correlation structure of the \(\mathbb{H}^{2|2}\) model is
+      encoded in the VRJP.
+    </p>
+    <p>
+      An application:
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">8</class>. </strong><i>(BHS) For any
+      \((\beta_{i, j})_{i, j}\) that is translation invariant and finite range
+      on \(\mathbb{Z}^2\). Then the VRJP is recurrent, meaning that</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \mathbb{E}_{0, 0} L_{\infty} (0) = \infty .\)
+      </center></i>
+    </p>
+    <p>
+      The proof goes via the Mermin&ndash;Wagner theorem for the
+      \(\mathbb{H}^{2|2}\) model by taking \(g = 1\) in the above theorem and
+      then taking the infinite volume limit and the \(h \rightarrow 0\) limit.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

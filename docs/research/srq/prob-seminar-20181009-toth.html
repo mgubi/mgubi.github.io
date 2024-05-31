@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 9th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series (actually this particular talk was
+      delivered in the Probability seminar at Cambridge)
+    </div>
+    <p>
+      Probability seminar 20181009 Balint Toth
+    </p>
+    <p>
+      (joint work with Chris Lutsko)
+    </p>
+    <p>
+      <b>Invariance principle for the random Lorenz Gas (beyond the
+      Boltzmann&ndash;Grad Gallavotti&ndash;Spohn limit)</b>
+    </p>
+    <center>
+      <img src="prob-seminar-20181009-toth-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -7.99638567493113em; height: 15.9927713498623em"></img>
+    </center>
+    <p>
+      The scatterers are placed by a Poisson point process of intensity
+      \(\lambda\) and the initial velocity is random, then the particle
+      performs a Newtonian motion with perfect collisions.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      If \(\rho\) is the density of scatterers and \(\rho r^d\) is smaller
+      than a critical value then the particle is not trapped (by percolation
+      arguments). Then makes sense to talk about asymptotics of the particle
+      in this random enviroment. If \(X^{\rho, r} (t)\) is the position of the
+      particle we can consider
+    </p>
+    <center>
+      \(\displaystyle t \in [0, 1] \mapsto \frac{X^{\rho, r} (T
+      t)}{\sqrt{T}}\)
+    </center>
+    <p>
+      and ask if this converges to a Brownian motion as \(T \rightarrow
+      \infty\). BIG QUESTION, for which we do not have answer.
+    </p>
+    <p>
+      <b>Boltzmann&ndash;Grad limit</b>
+    </p>
+    <p>
+      If \(r \rightarrow 0\) and \(\rho \rightarrow \infty\) in such a way
+      that \(r^{d - 1} \rho = 1\) then the first free flight is exponential,
+      and also the following ones. A theorem due to Gallavotti and then Spohn
+      (in the 70-s), says that
+    </p>
+    <center>
+      \(\displaystyle (t \in [0, T] \mapsto X^{\rho, r} (t)) \xRightarrow{d}
+      (t \in [0, T] \mapsto Y
+(t))\)
+    </center>
+    <p>
+      where \(Y\) is the flight process which is obtained by ballistic motions
+      of exponential duration, \(\xi_j \sim \operatorname{Exp} (1)\) and iid.
+      And if we call \((u_i \in S^{d - 1})_{i \geqslant 0}\) the (unit)
+      velocities, they follow a Markov chain whose transition kernel is given
+      by a differential cross&ndash;section. It happens that in \(d = 3\) this
+      Markov chain is given by iid variables uniformly distributed in \(S^{d -
+      1}\). 
+    </p>
+    <p>
+      Take a second diffusive limit of this process. It is a triviality that
+      it converges to a Brownian motion. (This is true in any dimensions):
+    </p>
+    <center>
+      \(\displaystyle (t \in [0, 1] \mapsto T^{- 1 / 2} Y (T t))
+      \xRightarrow{d} (t \in [0, 1]
+\mapsto W_{\sigma} (t)) .\)
+    </center>
+    <p>
+      <b>Question:</b> can we mix the two things? \(\)Namely, take \(r
+      \rightarrow 0\), \(\rho \rightarrow \infty\), \(r^{d - 1} \rho
+      \rightarrow \operatorname{const}\) and \(T (r) \rightarrow \infty\) as
+      \(r \rightarrow 0\) and ask about \(T^{- 1 / 2} X^{\rho, r} (T t)\)?
+      Difficulties are recollisions (beyond the BG limit). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>\(d = 3\), \(T (r)
+      \approx r^{- 2 + \varepsilon}\) as \(r \rightarrow 0\), then</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle (t \mapsto T^{- 1 / 2} X^{\rho, r} (T t))
+        \xRightarrow{d} (t \in [0, 1]
+\mapsto W_{\sigma} (t)) .\)
+      </center></i>
+    </p>
+    <p>
+      The variance \(\sigma^2\) is the same as that obtained with a double
+      limit procedure. 
+    </p>
+    <p>
+      What should be true is that as long as \(T (r) \rightarrow \infty\) the
+      theorem should be true. But currently it is unproven. It is unlikely
+      that \(\sigma\) changes in these more demanding limits. 
+    </p>
+    <p>
+      The proof does not work in \(d = 2\) (recurrence of random walk +
+      another reason). However with longer proof it extends to \(d \geqslant
+      3\) [and (maybe) for longer scales \(T (r) \approx r^{\alpha}\)].
+    </p>
+    <p>
+      Gallavotti&ndash;Spohn result is annealed. A paper by Boldrighini, Sinai
+      et al. they do the same result with quenched noise (fixed scatterers).
+      Do not understand that paper.
+    </p>
+    <p>
+      Here the result is annealed. 
+    </p>
+    <p>
+      We couple the following two processes: \(V^{\rho, r} (t) =
+      \dot{X}^{\rho, r} (t)\) and \(U (t) = \dot{Y} (t)\). Recollision occours
+      rarely.
+    </p>
+    <p>
+      \(V^{\rho, r} (t)\) and \(U (t)\) mismatch with frequency \(r\) (and
+      time intervals \(r^{- 1}\)). When a bad event occours one is able to
+      recouple the processes in times \(O (1)\). If this is the case, then
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} \max_{0 \leqslant t \leqslant 1} \left|
+      \frac{X^{\rho, r}
+(Tt)}{T^{1 / 2}} - \frac{Y^{\rho, r} (Tt)}{T^{1 / 2}}
+      \right| \leqslant
+\mathbb{E} \frac{1}{T^{1 / 2}} \int_0^T | V^{\rho, r}
+      (s) - U (s) | \mathrm{d}
+s \approx T^{- 1 / 2} (Tr) \ll 1\)
+    </center>
+    <p>
+      and this holds exacly when \(T (r) \approx r^{- 2 + \varepsilon}\). 
+    </p>
+    <p>
+      A better bound can be obtained if we can control the fluctuations of the
+      time integral of the velocities then I can gain a \(T^{1 / 2}\) and
+      obtain more general convergence statement. 
+    </p>
+    <p>
+      <b>The coupling</b>
+    </p>
+    <p>
+      For an annealed result one can explore the environment instead of
+      drawing it at once. \((X (t))_t\) is an exploration process which
+      expects the scatteres to come at exponential rates. 
+    </p>
+    <p>
+      <img src="prob-seminar-20181009-toth-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129447em; margin-top: 0em; vertical-align: -7.99638567493113em; height: 15.9927713498623em"></img>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I place the scatterers trying to follow the blue process when I'm
+      allowed (since I'm in empty territory). When I'm not I do not do
+      anything, and wait for the next opportunity which will come after \(O
+      (1)\) time interval, at this point I recouple the speed processes.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">2</class>. </strong><i></i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 100%; padding-left: 0em; padding-right: 0em; text-align: center"><p>
+            \(\mathbb{P} (\{ \text{after $k$ scattering events I hit the $2 r$
+            neightborhood
+of the inital point, for $Y$} \})\)
+          </p></td>
+        </tr><tr>
+          <td style="width: 100%; padding-left: 0em; padding-right: 0em; text-align: center"><p>
+            <img src="prob-seminar-20181009-toth-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -2.39929476584022em; height: 4.79858953168044em"></img>
+          </p></td>
+        </tr></tbody>
+      </table></i>
+    </div>
+    <p>
+      Up to time of order \(r^{- 1}\) you do not see recollisions. The blue
+      and red trajectories will be the same. (this give a very simple proof of
+      Gallavotti&ndash;Spohn result). And this gives also the theorem for this
+      time scale. 
+    </p>
+    <p>
+      Beyond times of order \(r^{- d}\) one see very complicated scattering
+      events.
+    </p>
+    <p>
+      Shadows scatterings (the not allowed ones). Define a stopping time
+      \(\tilde{\sigma}^{\ast}\): time of (virtual) recollision of the blue
+      object (as if there were scatterer placed at the scattering points).
+      \(\hat{\sigma}^{\ast}\) first time of a (virtual) shadow scattering for
+      the blue object, then
+    </p>
+    <center>
+      \(\displaystyle \tilde{\sigma}^{\ast} \xequal{d} \hat{\sigma}^{\ast}\)
+    </center>
+    <p>
+      by time reversal (!!).
+    </p>
+    <p>
+      Let \(\tilde{\sigma}\) be the time of the first simple recollision
+      (immediate, with the last scatterer, for the blue scatterer). By
+      definition \(\tilde{\sigma}^{\ast} < \tilde{\sigma}\). \(\hat{\sigma}\)
+      has the first shadowed simple recollision, then \(\hat{\sigma}^{\ast}
+      \leqslant \hat{\sigma}\). Then \(\sigma^{\ast} = \tilde{\sigma}^{\ast}
+      \wedge \hat{\sigma}^{\ast}\) is the first decoupling time, and let
+      \(\sigma = \tilde{\sigma} \wedge \hat{\sigma}\), then from the
+      proposition
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (\sigma < r^{- 1 + \varepsilon}) \lesssim
+      r^{\varepsilon},\)
+    </center>
+    <p>
+      and it follows that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (\sigma^{\ast} < \sigma) \lesssim r^{1 -
+      \varepsilon} .\)
+    </center>
+    <p>
+      Complex patterns of recollision do not occours before the simple
+      patterns before time-scales \(r^{\varepsilon - 1}\).
+    </p>
+    <p>
+      How to go further? We couple \(Y (t)\) with \(Z (t)\) which is the same
+      sort of coupling for the physical process disregarding complex
+      recollision patterns (immediate). Consider \(t \in [0, \theta]\) where
+      \(\theta = \sigma +\operatorname{Exp} (1)\). It happens with small
+      probability that \(Z \neq X\) (prob of order \(r\), so we have them
+      together up to times of order \(r^{\varepsilon - 1}\)). 
+    </p>
+    <center>
+      <img src="prob-seminar-20181009-toth-4.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129447em; margin-top: 0em; vertical-align: -7.99638567493113em; height: 15.9927713498623em"></img>
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      There are dynamical facts to be taken into account be we can concatenate
+      iid copies of \((Y, Z)\) (in the velocities). We have to prove that up
+      to order \(r^{- 1}\), concatenating legs, the following happens:
+    </p>
+    <ol>
+      <li>
+        <p>
+          each \(Z_j \equiv X_j\) (within the leg);
+        </p>
+      </li>
+      <li>
+        <p>
+          at the concatenation points \(Z\) is free (it can take new
+          instructions);
+        </p>
+      </li>
+      <li>
+        <p>
+          different legs do not interact.
+        </p>
+      </li>
+    </ol>
+    <p>
+      If this is true then I'm done. The non&ndash;interaction part is
+      essentially a Wiener sausage estimate. For b), we consider the
+      probability space of double collisions:
+    </p>
+    <center>
+      \(\displaystyle \mathcal{D}= S^{d - 1} \times \mathbb{R}_+ \times S^{d -
+      1}\)
+    </center>
+    <p>
+      with probability
+    </p>
+    <center>
+      \(\displaystyle \mu =\operatorname{Uniform} (S^{d - 1}) \otimes
+      \operatorname{Exp} (1) \otimes
+\operatorname{Uniform} (S^{d - 1})\)
+    </center>
+    <center>
+      \(\displaystyle \lambda =\operatorname{Uniform} (S^{d - 1}) \otimes
+      \operatorname{Leb} \otimes
+\operatorname{Uniform} (S^{d - 1})\)
+    </center>
+    <center>
+      <img src="prob-seminar-20181009-toth-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -4.39806060606061em; height: 8.79612121212121em"></img>
+    </center>
+    <center>
+      \(\displaystyle \{ (u, x, v) : \text{recollision occours} \} =:
+      \mathcal{R} \subseteq
+\mathcal{D}\)
+    </center>
+    <p>
+      <i>Fact:</i> the Lebesgue measure of \(\mathcal{R}\) is infinite if \(d
+      = 2\) and finite if \(d \geqslant 3\). Because going farther the
+      recollision angle shrinks and shrinks faster in high dimensions. 
+    </p>
+    <p>
+      This means that the blown&ndash;up conditional probability of
+      recollision is finite, and as a consequence the time spent in a trap is
+      of order \(1\). Therefore after exponential time I'm far away from the
+      trap&hellip;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

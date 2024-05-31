@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 15th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20181015 Giuliani
+    </p>
+    <p>
+      <b>Interacting dimers models (4/6)</b>
+    </p>
+    <p>
+      Recall the geometric setting of our problem:
+    </p>
+    <center>
+      \(\displaystyle
+      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}\)
+    </center>
+    <p>
+      and the expression of the partition function for the interacting model:
+    </p>
+    <center>
+      \(\displaystyle Z_{L, \lambda} (A) = \sum_{M \in \mathcal{M}_L} \left(
+      \prod_{e \in M} t_e
+e^{A_e} \right) e^{\lambda W (M)} = \int \mathrm{D}
+      \psi e^{- \sum_e E_e
+e^{A_e} + V (\psi, A)}\)
+    </center>
+    <p>
+      with \(E_{(x, y)} = K_{r (x, y)} \psi^+_x \psi^-_y\) and \(e = (b_x,
+      w_y)\). Edges are of four types and
+    </p>
+    <center>
+      \(\displaystyle K_r = \left\{ \begin{array}{lll}
+  t_1 & \text{for} & r
+      = 1\\
+  i t_2 &  & r = 2\\
+  - t_3 &  & r = 3\\
+  - i t_4 &  & r =
+      4
+\end{array} \right.
+      \qquad
+\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+    </center>
+    <p>
+      We will specialize to the case \(t_i = 1\) for \(i = 1, 2, 3, 4\) and
+      interaction
+    </p>
+    <center>
+      \(\displaystyle W (M) = \sum_{\text{even faces
+      $f$}}
+\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
+  \hline
+  f\\
+ 
+      \hline
+\end{array}$}}}
+      +\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
+  f
+\end{array}$}}}
+      \qquad
+      \qquad
+\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+    </center>
+    <p>
+      (dimer representation of the \(6\)-vertex model).
+    </p>
+    <center>
+      \(\displaystyle Z_{\lambda} = \int \mathrm{D} \psi e^{- (\psi^+,
+      \mathcal{K} \psi^-) + \alpha
+\sum_{\text{even $f$}} (E_{e_1 (f)} E_{e_3
+      (f)} + E_{e_2 (f)} E_{e_4 (f)})}\)
+    </center>
+    <center>
+      \(\displaystyle = \int \mathrm{D} \psi e^{- (\psi^+, \mathcal{K} \psi^-)
+      - 2 \alpha \sum_x
+\psi^+_x \psi^-_x \psi^+_{x + e_2} \psi^-_{x - e_1}}\)
+    </center>
+    <p>
+      where \(\alpha = e^{\lambda} - 1\). This special interaction is solvable
+      by Bethe Ansatz (but not by bosonization, at finite lattice). The
+      variable \(x\) runs over the lattice of black sites (for example). 
+    </p>
+    <p>
+      We introduce a reference free fermionic measure 
+    </p>
+    <center>
+      \(\displaystyle P (\mathrm{D} \psi) = \frac{e^{- (\psi^+, \mathcal{K}
+      \psi^-)}}{\int
+\mathrm{D} \psi e^{- (\psi^+, \mathcal{K} \psi^-)}}
+      \mathrm{D} \psi\)
+    </center>
+    <p>
+      and write
+    </p>
+    <center>
+      \(\displaystyle \frac{Z_{\lambda}}{Z_0} = \int e^{- 2 \alpha \sum_x
+      \psi^+_x \psi^-_x
+\psi^+_{x + e_2} \psi^-_{x - e_1}} P (\mathrm{D} \psi)
+      .\)
+    </center>
+    <p>
+      We have fermionic correlations
+    </p>
+    <center>
+      \(\displaystyle g (x, y) = \int \psi^-_x \psi^+_y P (\mathrm{D} \psi)
+      =\mathcal{K}^{- 1} (x,
+y) = \int \frac{\mathrm{d} k}{(2 \pi)^2}
+      \frac{e^{- i k \cdot (x - y)}}{\mu
+(k)}\)
+    </center>
+    <p>
+      with \(\mu (k) = 1 + i e^{i k_1} - e^{i (k_1 + k_2)} - i e^{i k_2}\) and
+      the fermionic Wick's rule (recall \(\{ \psi^{\pm}_x, \psi^{\pm}_y \} =
+      0\)):
+    </p>
+    <center>
+      \(\displaystyle \int \psi^-_{x_1} \psi^+_{y_1} \cdots \psi^-_{x_n}
+      \psi^+_{y_n} P (\mathrm{D}
+\psi) = \det [(g (x_i, y_j))_{i, j = 1,
+      \ldots, n}] .\)
+    </center>
+    <p>
+      The points \(p^+ = (0, 0)\) and \(p^- = (\pi, \pi)\) are the only zeros
+      of \(\mu\) and \(\mu (k')\):
+    </p>
+    <center>
+      \(\displaystyle \mu (0, 0) = \mu (\pi, \pi) = 0\)
+    </center>
+    <p>
+      and 
+    </p>
+    <center>
+      \(\displaystyle \mu (p^{\omega} + k) = (- i - \omega) k_1 + (- i +
+      \omega) k_2 = - i (k_1 +
+k_2) + \omega (k_2 - k_1) .\)
+    </center>
+    <p>
+      Due to the simple pole singularities we have (modulo oscillating
+      factors)
+    </p>
+    <center>
+      \(\displaystyle g (x, y) \sim \frac{1}{\text{distance}} \qquad \text{as
+      $| x - y | \rightarrow
+\infty$} .\)
+    </center>
+    <p>
+      The formal power series for \(Z_{\lambda} / Z_0\) is affected by
+      infrared singularies due to this very slow decay of the propagator. 
+    </p>
+    <p>
+      Let us compute the pressure of the model (by expanding the log in
+      connected correlation functions)
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \log \frac{Z_{\lambda}}{Z_0} =
+      \frac{1}{L^2} \sum_{x_1, \ldots,
+x_n} \frac{\alpha^n}{n!} \mathcal{E}
+      \left(
+\raisebox{-0.5\height}{\includegraphics[width=4.27244031221304cm,height=1.28915781188508cm]{image-1.pdf}}
+\right)\)
+    </center>
+    <p>
+      Contributions of the form
+    </p>
+    <center>
+      \(\displaystyle
+      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
+=
+      \int \frac{\mathrm{d} p}{(2 \pi)^2} \left[ \frac{f (p)}{\mu (p)}
+      \right]^n\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle f (p) = \int \frac{\mathrm{d} k \mathrm{d} q}{(2 \pi)^4}
+      \frac{e^{i (q_1 +
+q_2 + 2 k_2 + p_1 - p_2)}}{\mu (k) \mu (q) m (k + q -
+      p)}\)
+    </center>
+    <p>
+      and one cannot control the above contributions in the large volume limit
+      (i.e. when the sums in Fourier space are converging to an integral).
+    </p>
+    <p>
+      With some patience we can prove (exercise)
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle f (0) = 0. \)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      Namely we have <b>cancellations</b>. Therefore \(f (p) \approx p
+      \partial_p f (p)\) for \(p\) small. Note that \(\partial_p f (p)\) is
+      divergent as \(p \rightarrow 0\) so we cannot naively take the Taylor
+      expansion in \(0\):
+    </p>
+    <center>
+      \(\displaystyle \partial_p f (p) \approx \int \frac{\mathrm{d} k
+      \mathrm{d} q}{(2 \pi)^4} 
+\frac{1}{| k |  | q |  | k + q |^2} \approx
+      \log \operatorname{divergent}
+\approx \log | p | .\)
+    </center>
+    <p>
+      Therefore a more precise estimate gives
+    </p>
+    <center>
+      \(\displaystyle
+      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
+\approx
+      \int \frac{\mathrm{d} p}{(2 \pi)^2} (\log p)^n \approx C^n n!\)
+    </center>
+    <p>
+      so each contribution is finite thanks to the cancellation&nbsp;(<a href="#eq:cancellation">1</a>)
+      but the overall sum \(\sum_{n \geqslant 1}\) of these diagrams is still
+      divergent.
+    </p>
+    <p>
+      What we can say is that, by resumming these contributions we get
+    </p>
+    <center>
+      \(\displaystyle \sum_{n \geqslant 1} \alpha^{2
+      n}
+\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
+\approx
+      \sum_n \alpha^{2 n} \int \frac{\mathrm{d} p}{(2 \pi)^2} (C \log p)^n
+      =
+\int \mathrm{d} p \frac{\alpha^2 C \log p}{1 - \alpha^2 \log
+      p}
+\underbrace{\leqslant}_{\text{if $C > 0$!!}} C \alpha^2 \int
+      \mathrm{d} p
+(\log p) \leqslant C' \alpha^2\)
+    </center>
+    <p>
+      which is finite. And indeed it happens that \(C > 0\) by computations.
+      However we have in general \(| \alpha^2 \log (p) | \gg 1\). Moreover we
+      have to consider the renormalization of the two point function which
+      gives a critical exponent
+    </p>
+    <center>
+      \(\displaystyle g_{\operatorname{int}} (p)
+      =
+\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
+\approx
+      \frac{1}{p^{1 + c \lambda^2}}\)
+    </center>
+    <p>
+      The logs are a signal that something serious is happening.
+    </p>
+    <p>
+      At the end we will obtain, as stated,  
+    </p>
+    <center>
+      \(\displaystyle \langle \mathbb{I}_e, \mathbb{I}_{e'} \rangle_{\lambda}
+      \approx \frac{A
+(\lambda)}{2 \pi^2} \operatorname{Re} \left( \frac{e^{i
+      \frac{\pi}{2} (r +
+r')}}{((- i + 1) x_1 - (- i - 1) x_2)^2} \right) + (-
+      1)^{x + y}
+\frac{\overbrace{B_{r, r'} (\lambda)}^{1 + o (\lambda)}}{2
+      \pi^2} \frac{1}{| x
+- y |^{2 \nu (\lambda)}} + \cdots\)
+    </center>
+    <p>
+      and moreover \(A (\lambda) = \nu (\lambda)\). There are two vertex
+      functions (one with same \(\omega\) indexes and the other with
+      different) and one has only a change of critical exponents in the one of
+      the two. To prove this claim one requires to set up different layers of
+      proof in which one refines the description of this correlation function:
+      first one prove existence of critical exponents and then one clarifies
+      the above structure. 
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; padding-left: 0em; vertical-align: top"><p>
+          There are other divergences which cannot be resummed. For example
+          things like a chain of sausages on the right, which are rendered
+          finite by additional cancellations.
+        </p></td>
+        <td style="width: 50%; padding-right: 0em"><p>
+          \(\raisebox{-0.5\height}{\includegraphics[width=5.95811196379378cm,height=2.97486225895317cm]{image-1.pdf}}\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      In order to make the above argument rigurous one regularize the theory
+      and perform the resummations in each given scale, in a multiscale
+      fashion in order to avoid right away the divergent behaviour. 
+    </p>
+    <p>
+      I want to define a sequence of cut-off theories. We need to exclude sets
+      of momenta in the vicinity of the two zeros \(p^{\omega}\). We introduce
+      a partition of unity to localize around the two zeros and choose a
+      smooth function \(\chi\) so that
+    </p>
+    <center>
+      \(\displaystyle \chi (p^+ + k') + \chi (p^- + k') = 1, \qquad \forall
+      k'\)
+    </center>
+    <p>
+      and write
+    </p>
+    <center>
+      \(\displaystyle g (x, y) = \int \frac{\mathrm{d} k}{(2 \pi)^2}
+      \frac{e^{- i k \cdot (x -
+y)}}{\mu (k)} = \sum_{\omega = \pm 1} e^{- i
+      p^{\omega} \cdot (x - y)}
+\underbrace{\int \frac{\mathrm{d} k}{(2
+      \pi)^2} \frac{e^{- i k \cdot (x -
+y)}}{\mu (k + p^{\omega})} \chi
+      (k)}_{=: g_{\omega}^{(\leqslant 0)} (x, y)}\)
+    </center>
+    <p>
+      and observe that \(\mu (k + p^{\omega}) \approx (- i + \omega) k_1 + (-
+      i - \omega) k_2\). Note that
+    </p>
+    <center>
+      \(\displaystyle e^{- i p^+ \cdot (x - y)} = 1, \quad e^{- i p^- \cdot (x
+      - y)} = (- 1)^{x - y}
+.\)
+    </center>
+    <p>
+      Now we start to decompose the two propagators in scales:
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant 0)} (x, y) = \int
+      \frac{\mathrm{d} k}{(2 \pi)^2}
+\frac{e^{- i k \cdot (x - y)}}{\mu (k +
+      p^{\omega})} \underbrace{\chi (k) -
+\chi (2 k)}_{f_0 (k)} + \chi (2 k) =
+      g_{\omega}^{(0)} (x, y) +
+g_{\omega}^{(\leqslant - 1)} (x, y) .\)
+    </center>
+    <p>
+      We have \(g_{\omega}^{(0)} (x, y) \approx C e^{- c | x - y |^{1 / 2}}\)
+      i.e. it decays on scale one very rapidly. The contribution
+      \(g_{\omega}^{(\leqslant - 1)} (x, y)\) is given by
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant - 1)} (x, y) = \int
+      \frac{\mathrm{d} k}{(2 \pi)^2}
+\frac{e^{- i k \cdot (x - y)}}{\mu (k +
+      p^{\omega})} \chi (2 k)\)
+    </center>
+    <p>
+      and up to terms which are very small this is essentially given by a
+      rescaling of the original propagator \(g_{\omega}^{(\leqslant 0)}\):
+    </p>
+    <center>
+      \(\displaystyle g_{\omega}^{(\leqslant - 1)} (x, y) \approx 2^{- 1}
+      g_{\omega}^{(\leqslant 0)}
+(2^{- 1} x, 2^{- 1} y) .\)
+    </center>
+    <p>
+      We use now the addition principle for Grassmann integrals we can replace
+      the fermionic fields by a sum of &ldquo;independent&rdquo; fields and
+      write
+    </p>
+    <center>
+      \(\displaystyle \int P (\mathrm{D} \psi) e^{V (\psi)} = \int
+      P_{\leqslant 0} (\mathrm{D}
+\psi^{\leqslant 0}_{\omega}) e^{V^{(0)}
+      (\psi^{\leqslant 0}_{\omega})} = \int
+P_{\leqslant - 1} (\mathrm{D}
+      \psi^{\leqslant - 1}_{\omega}) \int P_0
+(\mathrm{D} \psi^0_{\omega})
+      e^{V^{(0)} (\psi^0_{\omega} + \psi^{\leqslant -
+1}_{\omega})}\)
+    </center>
+    <p>
+      where \(V (\psi) = - 2 \alpha \sum_x \psi^+_x \psi^-_x \psi^+_{x + e_2}
+      \psi^-_{x -
+e_1}\) and
+    </p>
+    <center>
+      \(\displaystyle \int P_0 (\mathrm{D} \psi^0_{\omega}) \psi^-_{x, \omega}
+      \psi^+_{y, \omega'} =
+\delta_{\omega, \omega'} g^{(0)}_{\omega} (x, y)\)
+    </center>
+    <p>
+      and similarly for the measure \(P_{\leqslant - 1} (\mathrm{D}
+      \psi^{\leqslant - 1}_{\omega})\).
+    </p>
+    <p>
+      We define now (omitting from now on to write explicity the \(\omega\)
+      dependence)
+    </p>
+    <center>
+      \(\displaystyle e^{L^2 E^{(- 1)} + V^{(- 1)} (\psi)} := \int P_0
+      (\mathrm{D} \psi^0)
+e^{V^{(0)} (\psi^0 + \psi)} .\)
+    </center>
+    <p>
+      This can be computed as follows
+    </p>
+    <center>
+      \(\displaystyle L^2 E^{(- 1)} + V^{(- 1)} (\psi) = \sum_{n \geqslant 1}
+      \mathcal{E}_0
+\underbrace{(V^{(0)} (\psi^0 + \psi) ; \cdots ; V^{(0)}
+      (\psi^0 +
+\psi))}_{\text{$n$ times}}\)
+    </center>
+    <center>
+      \(\displaystyle = \sum_{n \geqslant 1} \frac{1}{n!} (- 2 \alpha)^n
+      \sum_{x_1, ., \ldots, x_n}
+\sum_{\omega_1, ., \ldots, \omega_n}
+      \mathcal{E}_0
+      \left(
+\raisebox{-0.5\height}{\includegraphics[width=4.9665404040404cm,height=1.48745572609209cm]{image-1.pdf}}
+\right)\)
+    </center>
+    <p>
+      where each propagator arises with \(\omega\) indexes and where each leg
+      corresponds either to \(\psi^0\) or \(\psi\) and when it corresponds to
+      \(\psi^0\) it has to be joined to other \(\psi^0\) legs using the
+      \(g^{(0)}\) propagator in such a way that the resulting graph has to be
+      connected. 
+    </p>
+    <p>
+      At the end of the day we get that \(V^{(- 1)}\) has the general form
+    </p>
+    <center>
+      \(\displaystyle V^{(- 1)} = \sum_{\ell \geqslant 2, \text{$\ell$ even}}
+      \psi^+_{x_1, \omega_1}
+\psi^-_{x_2, \omega_2} \cdots \psi^+_{x_{\ell -
+      1}, \omega_{\ell - 1}}
+\psi^-_{x_{\ell}, \omega_{\ell}} \mathcal{W}^{(-
+      1)}_{\underline{\omega}}
+(x_1, \ldots, x_{\ell})\)
+    </center>
+    <p>
+      where \(\mathcal{W}^{(- 1)}_{\underline{\omega}} (x_1, \ldots,
+      x_{\ell})\) is the sum over all diagrams with given external legs. We
+      want to show that these kernels are well defined and essentially local. 
+      
+    </p>
+    <p>
+      Let us consider the \(L^1\) of this kernel (later on we will argue that
+      the estimate works for exponentially weighted \(L^1\) norms). The norm
+      is normalized by \(1 / L^2\). 
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| \mathcal{W}^{(-
+      1)}_{\underline{\omega}} (x_1, \ldots,
+x_{\ell}) \|_{L^1_{x_1, \ldots,
+      x_{\ell}}} \leqslant \sum_{n \geqslant 1}
+\frac{1}{n!} | \alpha |^n C^n
+      \sum (\cdots)\)
+    </center>
+    <p>
+      where the sum is over all the ways of contracting s.t. the contraction
+      is connected. In any such contraction I select a minimal spanning tree
+      (set of lines which is enough to make the vertices connected), other
+      this tree there will be other lines. I can bound the contributions
+      outside the spanning tree by the \(L^{\infty}\) norm of them. 
+    </p>
+    <center>
+      \(\displaystyle \leqslant \sum_{n \geqslant 1} \frac{1}{n!} | \alpha |^n
+      C^n \sum \|
+g^{(0)}_{\omega} \|_{L^{\infty}}^{\# \text{lines outside
+      spanning tree}} \|
+g^{(0)}_{\omega} \|_{L^1}^{n - 1}\)
+    </center>
+    <center>
+      \(\displaystyle \leqslant \sum_{n \geqslant 1} \frac{1}{n!} | \alpha |^n
+      C^n \underbrace{\sum
+\| g^{(0)}_{\omega} \|_{L^{\infty}}^{\frac{4 n -
+      \ell}{2} - (n - 1)} \|
+g^{(0)}_{\omega} \|_{L^1}^{n - 1}}_{C^n (n!)^2}\)
+    </center>
+    <p>
+      since we have \(4 n / 2\) total lines and \(\ell / 2\) external lines
+      and \(n - 1\) lines on the spanning tree. The bound for the sum over
+      graphs is naively given by \(C^n (n!)^2\) which do not use the fermionic
+      nature of the problem and is known to be optimal for bosonic theories.
+      This makes the overall series only Borel summable. 
+    </p>
+    <p>
+      In order to use the fermionic character of the graphs we try to sum in
+      two steps: first on the spanning tree and then the rest (which is
+      represented by a determinant)
+    </p>
+    <center>
+      \(\displaystyle \mathcal{W}^{(- 1)}_{\underline{\omega}} (x_1, \ldots,
+      x_{\ell}) =
+\sum_{\text{ways of contracting}} \text{Val}
+      (\text{contraction})\)
+    </center>
+    <center>
+      \(\displaystyle = \sum_{\text{minimal contractions $T$}} \left[
+      \prod_{\ell \in T}
+g^{(0)}_{\ell} \right] \underbrace{\det [(g^0 (x_i,
+      y_j))_{i, j}]}_{\|
+g^{(0)}_{\omega} \|_{L^{\infty}}^{\dim} \approx
+      (\max
+\operatorname{eigenvalue})^{\dim}}\)
+    </center>
+    <p>
+      since the determinant can be bounded by the maximal eigenvalue raised to
+      the dimension of the matrix. Therefore we gain a factorial in the above
+      estimate and we obtain that the potentials \(\mathcal{W}^{(-
+      1)}_{\underline{\omega}} (x_1, \ldots, x_{\ell})\) are analytic in the
+      coupling constant \(\alpha\) since:
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{L^2} \| \mathcal{W}^{(-
+      1)}_{\underline{\omega}} (x_1, \ldots,
+x_{\ell}) \|_{L^1_{x_1, \ldots,
+      x_{\ell}}} \leqslant \sum_{n \geqslant 1}
+\frac{1}{n!} | \alpha |^n (C^n
+      n!) = \sum_{n \geqslant 1} | \alpha |^n C^n .\)
+    </center>
+    <p>
+      The above considerations to bound the determinant is slightly wrong. A
+      precise version of this argument uses the BBFKAR formula which uses some
+      interpolations to get things right. If \(\Psi_{\rho}\) are Grassmann
+      monomials of the type
+    </p>
+    <center>
+      \(\displaystyle \Psi_{\rho} = \prod_{f \in \rho} \psi^{\varepsilon
+      (f)}_{x (f), \omega (f)}\)
+    </center>
+    <p>
+      then
+    </p>
+    <center>
+      \(\displaystyle \mathcal{E}_0 (\Psi_{\rho_1} ; \ldots ; \Psi_{\rho_n}) =
+      \sum_T \sigma_T
+\prod_{\ell \in L} g^{(0)}_{\ell} \int \mu (d
+      \underline{t}) \det [(g^{(0)}
+(\underline{t} ; x_i, y_{i'}))_{i, i'}]
+      s\)
+    </center>
+    <p>
+      with \(\sigma_T = \pm 1\), \(\underline{t} \in \mathcal{T}= \{ t_{j, j'}
+      \in (0, 1) : 1 \leqslant j, j'
+\leqslant n \}\) and \(\mu\) is a
+      probability measure on \(\mathcal{T}\) and
+    </p>
+    <center>
+      \(\displaystyle g^{(0)}_{\omega} (\underline{t} ; x_i, y_{i'}) {= t_{j,
+      j'}}  g^{(0)}_{\omega}
+(x_i, y_{i'}) .\)
+    </center>
+    <p>
+      And this expression can be bounded rigorously as before. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      <b>A computation using the two point correlations.</b> (Toninelli)
+    </p>
+    <p>
+      From the two point function to the logarithmic behaviour of the variance
+      of the height function.
+    </p>
+    <p>
+      The two point function is given by
+    </p>
+    <center>
+      \(\displaystyle \langle \mathbb{I}_e, \mathbb{I}_{e'} \rangle_{\lambda}
+      \approx \frac{A
+(\lambda)}{2 \pi^2} \frac{K_r K_{r'}}{\phi_+ (x - x')^2}
+      + c.c. + (- 1)^{x +
+y} \frac{B_{r, r'} (\lambda)}{2 \pi^2} \frac{1}{|
+      \phi_+ (x - x') |^{2 \nu}} +
+O \left( \frac{1}{| x - x' |^3} \right)\)
+    </center>
+    <p>
+      and the expression of the height function between faces \(f\) and \(f'\)
+      is given by
+    </p>
+    <center>
+      \(\displaystyle h (f) - h (f') = \sum_{e \in C_{f \rightarrow f'}}
+      \sigma_e \left(
+\mathbb{I}_{e \in M} - \frac{1}{4} \right)\)
+    </center>
+    <p>
+      so
+    </p>
+    <center>
+      \(\displaystyle \operatorname{Var} (h (f) - h (f')) = \sum_{e, e' \in
+      C_{f \rightarrow f'}}
+\sigma_e \sigma_{e'} \langle \mathbb{I}_e,
+      \mathbb{I}_{e'} \rangle_{\lambda} .\)
+    </center>
+    <p>
+      However we are not forced to use the same path for the two copies so
+      rewrite the variance as
+    </p>
+    <center>
+      \(\displaystyle \operatorname{Var} (h (f) - h (f')) = \sum_{e \in C_{f
+      \rightarrow f'}}
+\sum_{e' \in C'_{f \rightarrow f'}} \sigma_e
+      \sigma_{e'} \langle \mathbb{I}_e,
+\mathbb{I}_{e'} \rangle_{\lambda}\)
+    </center>
+    <p>
+      where the two paths are as separated as possible, while having a
+      reasonable lenght. Now note that the error term \(O (1 / | \text{dist}
+      |^3)\) in \(\langle \mathbb{I}_e, \mathbb{I}_{e'} \rangle_{\lambda}\)
+      gives \(O (1)\) in the computation of the variance. So we keep only the
+      asymptotic part in the correlation. The oscillating part gives also a
+      contribution of \(O (1)\) since the oscillation produces enough
+      cancellation to have better decay and then it behaves like the error
+      tem. 
+    </p>
+    <p>
+      We can now go from \(f\) to \(f'\) by elementary steps moving in
+      directions \(e_1\) and \(e_2\) alternatively. Going in direction \(e_2\)
+      we can cross an edge of type \(1\) and type 4, and in direction \(e_1\)
+      we have to cross an edge of type 3 and 4. So
+    </p>
+    <center>
+      \(\displaystyle = \frac{A (\lambda)}{2 \pi^2} \sum_{\text{steps in $C$}}
+      \sum_{\text{steps in
+$C'$}} \frac{(K_1 + K_2) (K_3 + K_4)}{\phi_+ (x -
+      x')^2} + c.c. + \cdots\)
+    </center>
+    <p>
+      and \((K_1 + K_2) = i \Delta_2 \phi_+\) and \(\)\((K_3 + K_4) = i
+      \Delta_1 \phi_+\) so
+    </p>
+    <center>
+      \(\displaystyle = \frac{A (\lambda)}{2 \pi^2} \sum_{\text{steps in $C$}}
+      \sum_{\text{steps in
+$C'$}} \frac{\Delta \phi_+ \Delta \phi_+'}{\phi_+
+      (x - x')^2} + c.c. + \cdots\)
+    </center>
+    <center>
+      \(\displaystyle \approx \frac{A (\lambda)}{2 \pi^2} \operatorname{Re}
+      \left[ \int_{\phi_+
+(f)}^{\phi_+ (f')} \frac{\mathrm{d} z \mathrm{d}
+      z'}{(z - z')^2} \right] + O
+(1)\)
+    </center>
+    <p>
+      which gives the log. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

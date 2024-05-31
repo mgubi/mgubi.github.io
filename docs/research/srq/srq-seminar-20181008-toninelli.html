@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; October 8th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20181008 Toninelli
+    </p>
+    <p>
+      <b></b>Giuliani, Mastropietro, Toninelli (AIHP P&amp;S 2015, J. Stat.
+      2017, + forthcoming)
+    </p>
+    <p>
+      <b>Interacting dimer model</b>
+    </p>
+    <p>
+      A perturbation of an integrable model, solved via renormalization group
+      techniques.
+    </p>
+    <p>
+      Today: the model, the results and some discussion.
+    </p>
+    <p>
+      <b>The model</b>
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; padding-left: 0em"><p>
+          <img src="srq-seminar-20181008-toninelli-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -5.33196694214876em; height: 10.6639338842975em"></img>
+        </p></td>
+        <td style="width: 50%; padding-right: 0em; vertical-align: top"><p>
+          Planar bipartite graph \(G = (V, E)\). A <i>dimer configuration</i>
+          (perfect matching). A subset \(M \subseteq E\) of edges of \(G\)
+          such that every vertex of the graph is contained by exaclty one
+          edge. For us \(G \subseteq \mathbb{Z}^2\) with periodic boundary
+          conditions of period \(L\). \(G\) is a weidghted graph: for every
+          edge there is a weight \((t_e > 0)_{e \in E}\). \(4\) weights types
+          for each type of edge (different directions, different initial and
+          final colors)
+        </p><center>
+          \(\displaystyle \pi_{G, t} (M) \propto \prod_{e \in M} t_e\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; padding-left: 0em; vertical-align: top"><p>
+          For us \(\Lambda =\mathbb{T}_L\) with periodicity \(L\) in both
+          directions \(e_1, e_2\): (\(2 L^2\) vertices)
+        </p><p>
+          <i>Height function.</i> For any configuration we can associate an
+          integer valued functions on the faces (vertices of the dual lattice
+          \(G^{\ast}\)). For any face \(\eta \in G^{\ast}\) we let \(\eta_M :
+          \text{\{faces\}} \longrightarrow \mathbb{N}\)
+        </p><center>
+          \(\displaystyle h_M (\eta') - h_M (\eta) = \sum_{e : C_{\eta
+          \rightarrow \eta'}} \sigma_e
+\left( 1_{e \in M} - \frac{1}{4}
+          \right)\)
+        </center></td>
+        <td style="width: 50%; padding-right: 0em"><p>
+          <img src="srq-seminar-20181008-toninelli-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: -9.33031404958678em; height: 18.6606280991736em"></img>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; padding-left: 0em; vertical-align: top"><p>
+          where \(\sigma_e \in \{ \pm 1 \}\) is taken according to the rule
+          shown on the right.
+        </p><p>
+          This definition of \(\eta\) does not depends on the path chosen to
+          go from \(\eta\) to \(\eta'\) and we choose arbitrarily \(h_M
+          (\hat{\eta}) = 0\) for a fixed face \(\hat{\eta}\).
+        </p><p style="margin-top: 1em; margin-bottom: 1em">
+          <strong>Remark <class style="font-style: normal">1</class>. </strong>on the torus
+          \(\mathbb{T}_L\) the height function is not well defined. 
+        </p></td>
+        <td style="width: 50%; padding-right: 0em"><p>
+          <img src="srq-seminar-20181008-toninelli-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -5.33130578512397em; height: 10.6626115702479em"></img>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      A few results on the non-interacting dimer model. 
+    </p>
+    <ul>
+      <li>
+        <p>
+          Let \(\Pi_{L, \underline{t}}\) the measure on \(\mathbb{T}_L\). It
+          has a limit as \(L \rightarrow \infty\) \(\Pi_{\underline{t}}\) with
+          an explicit and <i>determinantal</i> description (Kasteleyn theory).
+          
+        </p>
+      </li>
+      <li>
+        <p>
+          The free energe \(F (\underline{t}) = \lim_{L \rightarrow \infty}
+          L^{- 1} \log Z_L\) exists and it is explicit. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Comments on the weights \(\underline{t}\):
+        </p>
+        <ol>
+          <li>
+            <p>
+              one can multiply all the weights by the same factor and this
+              gives the same model. Therefore on can take \(t_4 = 1\) w.l.o.g.
+              
+            </p>
+          </li>
+          <li>
+            <p>
+              they are chemical potentials fixing the density of the four type
+              of edges: \(\rho_1, \rho_2, \rho_3, \rho_4\). Namely \(\rho_j =
+              \Pi_{\underline{t}} (e \in M)\), where \(e\) is a fixed edge of
+              type \(i\).
+            </p>
+          </li>
+          <li>
+            <p>
+              they fix the global slope of the height function: If we let
+            </p>
+            <center>
+              \(\displaystyle \Pi_{\underline{t}} [h_M (\eta + e_i) - h_M
+              (\eta)] =: s_i, \qquad i \in \{ 1,
+2 \},\)
+            </center>
+            <p>
+              then \(s_i = s_i (\underline{t})\). (Remark: suppose \(t_1 = t_3
+              = t_h\) and \(t_2 = t_4 = t_v = 1\), then by symmetry \(s_1 =
+              s_2 = 0\).)
+            </p>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <p>
+      Correlations. For the moment take \(\underline{t} = (1, 1, 1, 1)\). Then
+      we have a polynomial decay of correlations for the two point function:
+    </p>
+    <center>
+      \(\displaystyle \pi (A ; B) \approx (\operatorname{dist} (A, B))^{- 2}
+      .\)
+    </center>
+    <p>
+      We consider a complex function \(K\) of types of edges such that \(K (e)
+      = t_1, t_2 (i), t_3 (- 1), t_4 (- i)\) for edges of type \(1, 2, 3, 4\)
+      respectively and we let \(K_i\) the value of \(K (e)\) for an edge of
+      type \(i = 1, 2, 3, 4\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \Pi (\{ e_1, \ldots, e_n \} \in M) = \left[ \prod_{j =
+        1}^n K (e_j) \right]
+\det [\mathcal{K}^{- 1} (w_k, b_{\ell})]_{k, \ell
+        = 1, \ldots, n} .\)
+      </center></i>
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; padding-left: 0em; vertical-align: top"><p>
+          where \(w_k, b_k\) are the white and black vertices of the \(k\)-th
+          edge. Our coordinate system is chosen such that a black vertex of
+          coordinates \((x_1, x_2)\) then the right adjacent vertex is also at
+          coordinates \((x_1, x_2)\).
+        </p></td>
+        <td style="width: 50%; padding-right: 0em"><p>
+          <img src="srq-seminar-20181008-toninelli-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -5.33130578512397em; height: 10.6626115702479em"></img>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      The matrix \(\mathcal{K}^{- 1}\) is given by
+    </p>
+    <center>
+      \(\displaystyle \mathcal{K}^{- 1} (x, y) = \int_{[- \pi, \pi]^2}
+      \frac{\mathrm{d} p}{(2
+\pi)^2} \frac{e^{- ip (x - y)}}{\mu (p)}\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle \mu (p) = K_1 + K_2 e^{i p_1} + K_3 e^{i (p_1 + p_2)} +
+      K_4 e^{i p_2} .\)
+    </center>
+    <p>
+      Comment: We can consider a matrix \(\mathcal{K}\)
+    </p>
+    <center>
+      \(\displaystyle \mathcal{K} (b, w) = \left\{ \begin{array}{lll}
+  0 &  &
+      \text{if $w \nsim b$}\\
+  K_j &  & \text{if $b \sim w$ and $(b, w)$ is
+      an edge of type $j = 1, 2, 3,
+  4$.}
+\end{array} \right.\)
+    </center>
+    <p>
+      Therefore the result of the theorem can be also written
+    </p>
+    <center>
+      \(\displaystyle \Pi (\{ e_1, \ldots, e_n \} \in M) = \left[ \prod_{j =
+      1}^n K (b_j, w_j)
+\right] \det [\mathcal{K}^{- 1} (w_k, b_{\ell})]_{k,
+      \ell = 1, \ldots, n} .\)
+    </center>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 90.0%"><strong>Exercise <class style="font-style: normal">1</class>. </strong>if
+        \(\underline{t} = (1, 1, 1, 1)\) then \(\mu (p)\) vanishes only at
+        \(p^+ = (0, 0)\) and \(p^- = (\pi, \pi)\) and they are simple zeros
+        (the derivatives are not zero there).</font>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3</class>. </strong>All what we will say
+      later holds under the assumption that \(\mu\) has only two simple zeros.
+      In particular when \(\underline{t} = (1, 1, 1, 1)\).
+    </p>
+    <center>
+      \(\displaystyle \mathcal{K}^{- 1} (x, y) \cong \frac{1}{2 \pi}
+      \sum_{\omega = \pm 1}
+\frac{e^{- i p^{\omega} (x - y)}}{\phi_{\omega} (x
+      - y)},\)
+    </center>
+    <p>
+      where
+    </p>
+    <center>
+      \(\displaystyle \phi_{\omega} (x) = \omega (\beta_{\omega} x_1 -
+      \alpha_{\omega} x_2),\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle \alpha_{\omega} = \partial_{p_1} \mu (p^{\omega}) = - i
+      - \omega, \quad
+\beta_{\omega} = \partial_{p_2} \mu (p^{\omega}) = - i +
+      \omega,\)
+    </center>
+    <p>
+      are the derivatives at the poles.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Corollary <class style="font-style: normal">4</class>. </strong><i>(edge-edge
+      correlation) Take \(e_1\) of type \(r_1\) and at \(x\) and \(e_2\) of
+      type \(r_2\) and at \(y\), then</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \Pi (e_1 ; e_2) = \Pi (\{ e_1, e_2 \} \in M) - \Pi (\{
+        e_1 \} \in M) \Pi (\{
+e_2 \} \in M) =\)
+      </center></i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \propto \det [(\mathcal{K}^{- 1} (w_m, b_n))_{m, n =
+        1, 2}] - \det
+[(\mathcal{K}^{- 1} (w_m, b_n))_{m, n = 1}] \det
+        [(\mathcal{K}^{- 1} (w_m,
+b_n))_{m, n = 2}]\)
+      </center></i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle = - K (e_1) K (e_2) \mathcal{K}^{- 1} (w_1, b_2)
+        \mathcal{K}^{- 1} (w_2, b_1)\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \cong_{| x - y | \rightarrow \infty} \frac{1}{2 \pi^2}
+        \operatorname{Re}
+\left[ \frac{K_{r_1} K_{r_2}}{\phi_+ (x - y)^2}
+        \right] + \frac{(- 1)^{x_1 +
+x_2 - (y_1 + y_2)}}{4 \pi^2} 
+        \cfrac{\overbrace{C_{r_1 r_2}}^{K_{r_1}^{\ast}
+K_{r_2} + K_{r_1}
+        K^{\ast}_{r_2}}}{| \phi_+ (x - y) |^2} + O
+        \left(
+\frac{1}{\operatorname{dist} (x, y)^3} \right) .\)
+      </center></i>
+    </p>
+    <p>
+      Note that \(| \phi_+ (x - y) |\) behaves like a distance between in \(x,
+      y\) since \(\alpha_{\omega}, \beta_{\omega}\) are not colinear in the
+      complext plane. 
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Height function and the GFF for the non&ndash;interacting model</b>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Let \(\Delta_{\eta, \eta'} = h (\eta) - h (\eta')\):
+        </p>
+        <center>
+          \(\displaystyle \frac{\operatorname{Var}_{\Pi_{\underline{t}}}
+          (\Delta_{\eta, \eta'})}{\log |
+\eta - \eta' |} \xrightarrow[| \eta -
+          \eta' | \rightarrow \infty]{}
+\frac{1}{\pi^2},\)
+        </center>
+        <p>
+          independently of \(\underline{t}\) (in the region where \(\mu\) has
+          two simple zeros, liquid phase). 
+        </p>
+      </li>
+      <li>
+        <p>
+          The \(n\)-th cumulant of the differences in height \(\Delta_{\eta,
+          \eta'}\) satisfies
+        </p>
+        <center>
+          \(\displaystyle \underbrace{\Pi_{\underline{t}} (\Delta_{\eta,
+          \eta'} ; n)}_{= 
+\partial_{\mu}^n \log \Pi_{\underline{t}} (e^{\mu
+          \Delta_{\eta, \eta'}})
+|_{\mu = 0}} =_{| \eta - \eta' | \rightarrow
+          \infty} O (1)\)
+        </center>
+        <p>
+          so the rescaled limit of \(\Delta_{\eta, \eta'}\) is Gaussian,
+          namely \(\Delta_{\eta, \eta'} /
+          (\operatorname{Var}_{\Pi_{\underline{t}}}
+(\Delta_{\eta, \eta'}))^{1
+          / 2} \rightarrow \mathcal{N} (0, 1)\).
+        </p>
+      </li>
+      <li>
+        <p>
+          Take \(\varphi\) a \(C^{\infty}\) with compact support on
+          \(\mathbb{R}^2\) with average \(0\). Consider the rescaled height
+          function \(h_{\varepsilon}\) given by
+        </p>
+        <center>
+          \(\displaystyle h_{\varepsilon} (\varphi) = \varepsilon^2
+          \sum_{\eta} h (\eta) \varphi (\eta
+\varepsilon),\)
+        </center>
+        <p>
+          then
+        </p>
+        <center>
+          \(\displaystyle h_{\varepsilon} (\varphi) \xrightarrow{d}
+          \mathcal{N} \left( 0,
+\int_{\mathbb{R}^2 \times \mathbb{R}^2}
+          \mathrm{d} x \mathrm{d} x' \varphi (x)
+\varphi (x') g (x - x')
+          \right),\)
+        </center>
+        <p>
+          with \(g (x) = - \frac{1}{2 \pi^2} \log | \phi_+ (x) | \approx
+          \frac{1}{2 \pi^2} \log
+\frac{1}{| x |}\). So \(h_{\varepsilon}\)
+          converges to a log correlated Gaussian random field. 
+        </p>
+      </li>
+    </ul>
+    <p>
+      <b>The interacting dimer model</b>
+    </p>
+    <p>
+      In the non&ndash;interacting the weight of a configuration \(w (M)
+      \propto \prod_{e \in M} t_e\). In the interacting case we take \(\lambda
+      \in \mathbb{R}\) small and
+    </p>
+    <center>
+      \(\displaystyle w (M) \propto \prod_{e \in M} t_e e^{\lambda W (M)}\)
+    </center>
+    <p>
+      where \(\)
+    </p>
+    <center>
+      \(\displaystyle W (M) = \sum_{x \in \Lambda} f (\tau_x M)\)
+    </center>
+    <p>
+      where \(\tau_x M\) is the configuration \(M\) translated by \(x \in
+      \mathbb{Z}^2\). Examples:
+    </p>
+    <p>
+      Model 1:
+    </p>
+    <center>
+      \(\displaystyle W (M) = \sum_{\text{face $\eta$ of $\Lambda$
+      }}
+\mathbb{I}_{\text{\scriptsize{$\left( \begin{array}{|l|}
+ 
+      \eta
+\end{array} \operatorname{or} \begin{array}{l}
+  \hline
+  \eta\\
+ 
+      \hline
+\end{array} \right)$}}}\)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      Model 2:
+    </p>
+    <center>
+      \(\displaystyle f (M) = f
+      \left(
+\text{\raisebox{-0.5\height}{\includegraphics[width=1.1984126984127cm,height=1.09082710219074cm]{image-1.pdf}}}
+\right)
+      =\mathbb{I}_{e_1, e_2} +\mathbb{I}_{e_3, e_4}\)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      Remark: model 2 is equivalent to the \(6\)&ndash;vertex model with
+      weights all \(1\) except for one configuration with weight \(2
+      e^{\lambda}\).
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

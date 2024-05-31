@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./srq-intro.html">srq</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <p>
+      <a id="auto-1"></a>
+    </p>
+    <h1><span style="margin-left: 1em"></span></h1>
+    <h1 id="auto-2">SRQ seminar &ndash; September 27th, 2018<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      Notes from a talk in the SRQ series.
+    </div>
+    <p>
+      INI Seminar 20180927. Peter Friz
+    </p>
+    <p>
+      <b>Rough Paths</b>
+    </p>
+    <p>
+      References: Lyons '98 (rough path theory born), Gubinelli '04
+      (controlled paths), F&ndash;Victoir '10 [CUP] (geometric rough paths),
+      Gubinelli '10 (branched rough paths), Hairer '14 (regularity
+      structures), Friz&ndash;Hairer '14 [Springer] (rough paths + regularity
+      structures)
+    </p>
+    <p>
+      <b>Example.</b>
+    </p>
+    <p>
+      \(u = u (t)\)
+    </p>
+    <center>
+      \(\displaystyle \partial_t u = - u^3 + \xi, \qquad u (0) = 0.\)
+    </center>
+    <p>
+      think about \(\xi = \dot{W} \in C^{- 1 / 2 -}\). Picard iteration:
+    </p>
+    <center>
+      \(\displaystyle u^{(1)} = \int_0^{\cdot} \xi =\mathcal{X}^1,\)
+    </center>
+    <center>
+      \(\displaystyle u^{(2)} = \int_0^{\cdot} (- X^3 + \xi) = -\mathcal{X}^2
+      +\mathcal{X}^1,\)
+    </center>
+    <p>
+      so
+    </p>
+    <center>
+      \(\displaystyle u =\mathcal{X}^1 -\mathcal{X}^2 + \cdots \in C^{1 / 2
+      -}\)
+    </center>
+    <p>
+      Fun modification. Take \(\xi \in \partial_t^3 W_t \in C^{- 5 / 2 -}\) so
+      it is has the same regularity of space&ndash;time white noise in three
+      dimensions and take
+    </p>
+    <center>
+      \(\displaystyle \partial_t^2 u = - u^3 + \xi, \qquad u (0) = 0.\)
+    </center>
+    <p>
+      Now the algebra of the above Picard iteration does not change. But power
+      counting gives now
+    </p>
+    <center>
+      \(\displaystyle u =\mathcal{X}^1 -\mathcal{X}^2 + \cdots \in C^{- 1 / 2
+      -} .\)
+    </center>
+    <p>
+      <b>Another example.</b>
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} Y = f (Y) \mathrm{d} W \qquad (+ f_0 (Y)
+      \mathrm{d} t)\)
+    </center>
+    <center>
+      \(\displaystyle Y^{(1)} = y_0 + \int f (y_0) \mathrm{d} W = y_0 + f
+      (y_0) \mathbb{X}^{\bullet}\)
+    </center>
+    <center>
+      \(\displaystyle Y^{(2)} = y_0 + \int f (y_0 + f (y_0) \mathbb{X}^1)
+      \mathrm{d} W = y_0 + f
+(y_0) X + \int f' (y_0) f (y_0) \mathbb{X}^1
+      \mathrm{d} W + \cdots\)
+    </center>
+    <center>
+      \(\displaystyle = y_0 + f (y_0) X + (f' f) (y_0) \underbrace{\int
+      \mathbb{X}^1 \mathrm{d}
+W}_{\mathbb{X}^{[\bullet]}} + \cdots\)
+    </center>
+    <p>
+      One more step
+    </p>
+    <center>
+      \(\displaystyle Y^{(3)} = y_0 + \int f (y_0 + f (y_0)
+      \mathbb{X}^{\bullet} + (f' f) (y_0)
+\mathbb{X}^{[\bullet]} + \cdots)
+      \mathrm{d} W\)
+    </center>
+    <center>
+      \(\displaystyle = y_0 + f (y_0) \mathbb{X}^{\bullet} + (f' f) (y_0)
+      \mathbb{X}^{[\bullet]} +
+\frac{1}{2} f'' (y_0) f (y_0) f (y_0)
+      \underbrace{\int \mathbb{X}^1
+\mathbb{X}^1 \mathrm{d}
+      W}_{\mathbb{X}^{[\bullet \bullet]}} + f' (y_0) f'
+(y_0) f (y_0)
+      \underbrace{\int \mathbb{X}^2 \mathrm{d}
+W}_{\mathbb{X}^{[[\bullet]]}} +
+      \cdots\)
+    </center>
+    <p>
+      [keywords: Butcher series, branched rough paths]
+    </p>
+    <p>
+      Note that
+    </p>
+    <center>
+      \(\displaystyle X^{[[\bullet]]} = \int \int \int \mathrm{d} W \mathrm{d}
+      W \mathrm{d} W,\)
+    </center>
+    <p>
+      where integral is over the simplex. On the other hand
+    </p>
+    <center>
+      \(\displaystyle X^{[\bullet \bullet]} = \int \left( \int \mathrm{d} W
+      \right)^2 \mathrm{d} W.\)
+    </center>
+    <p>
+      Multidimensional signals: add indexes everywhere:
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      \(\displaystyle Y^i = y_0^i + f^i_{\alpha} (y_0)
+      \mathbb{X}^{\bullet_{\alpha}} + (f^i_{\alpha
+; j} f^j_{\beta}) (y_0)
+      \mathbb{X}^{[\bullet_{\beta}]_{\alpha}} + \frac{1}{2}
+f^i_{\alpha ; j,
+      k} f^j_{\beta} f^k_{\gamma} (y_0)
+\mathbb{X}^{[\bullet_{\beta}
+      \bullet_{\gamma}]_{\alpha}} + f^i_{\alpha ; j}
+f^j_{\beta ; k}
+      f^k_{\gamma} (y_0)
+\mathbb{X}^{[[\bullet_{\gamma}]_{\beta}]_{\alpha}} +
+      \cdots\)
+    </center>
+    <p>
+      These expansions are very much related to numerical analysis of
+      stochastic differential equations. Truncation at level of
+      \(\mathbb{X}^{[\bullet]}\) gives the so-called Milstein scheme.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>Given deterministic
+      objects \(\mathbb{W} := (\mathbb{W}^{\bullet}, \mathbb{W}^{[\bullet]})
+      \in C^{\alpha}
+\times ?\) with \(\alpha \in ?\) where we can think
+      of</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \mathbb{W}^{[\bullet]}_{s, t} = \iint_{s < u < v < t}
+        \mathrm{d} W_v
+\mathrm{d} W_u\)
+      </center></i>
+    </p>
+    <p>
+      <i>but which are required only to satisfy the natural algebraic
+      properties of iterated integrals wrt to joining adjacent integration
+      regions (Chen's relation) and that are &ldquo;analytically good
+      enough&rdquo;, namely \(| \mathbb{W}^{\bullet}_{s, t} | \lesssim | t - s
+      |^{\alpha}\) and \(| \mathbb{W}^{[\bullet]}_{s, t} | \lesssim | t - s
+      |^{2 \alpha}\) for some \(\alpha \in (1 / 3, 1 / 2)\). </i>
+    </p>
+    <p>
+      <i>Then, there is a robust theory of the differential equation</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle \mathrm{d} Y = f (Y) \mathrm{d} W.
+          \)</td>
+          <td align="right">(1)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p>
+      This means: there exists a unique solution to&nbsp;(<a href="#eq:rde">1</a>)
+      driven by \((\mathbb{W}^{\bullet}, \mathbb{W}^{[\bullet]})\) such that
+      there is a good local understanding of such a solution, namely of any
+      small interval \([s, t]\) we have
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle Y_t - Y_s = f (Y_s)
+        \mathbb{W}^{\bullet}_{s, t} + (f' f) (Y_s)
+\mathbb{W}^{[\bullet]}_{s,
+        t} + \underbrace{O (| t - s |^{3 \alpha})}_{\approx
+o (| t - s |),
+        \text{since $3 \alpha > 1$}} . \)</td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <p>
+      This already implies that \(Y_t\) is a limit of modified
+      Riemann&ndash;Stiljes sums. 
+    </p>
+    <p>
+      Actually we can take&nbsp;(<a href="#eq:exp">2</a>) as a <i>definition</i> for
+      the rough differential equation&nbsp;(<a href="#eq:rde">1</a>). This approach is
+      due to Davie. Then there is a corresponding existence and uniqueness
+      theorem. 
+    </p>
+    <p>
+      <b>Rough integral.</b>
+    </p>
+    <p>
+      There exists also a more intrinsic point of view of this equation by
+      introducing a notion of <i>rough integration</i>. We can then look at
+      the differential equation as a fixpoint problem via rough integration.
+      In general we would like to understand an integral of the form
+    </p>
+    <center>
+      \(\displaystyle I (Z) = \int Z \mathrm{d} \mathbb{W}\)
+    </center>
+    <p>
+      where the notation stands to denote that the value of this integral will
+      depend on the full given of the stochastic data \(\mathbb{W} :=
+      (\mathbb{W}^{\bullet}, \mathbb{W}^{[\bullet]})\). For example we want to
+      integrate \(Z = g (W)\). The natural definition looks like modified
+      Riemann sums of the following type
+    </p>
+    <center>
+      \(\displaystyle I (Z) = \int Z \mathrm{d} \mathbb{W} \simeq \sum Z_s
+      \mathbb{W}^{\bullet}_{s,
+t} + \sum Z_s' \mathbb{W}^{[\bullet]}_{s, t}\)
+    </center>
+    <p>
+      where in the case \(Z = g (W)\) we need to take \(Z' = g' (W)\) but in
+      general \(Z'\) is just a new function for which we are looking abstract
+      conditions which ensure the convergence of the Riemann sums. 
+    </p>
+    <p>
+      Some considerations lead to the condition
+    </p>
+    <center>
+      \(\displaystyle \Delta Z_{s, t} = Z_t - Z_s = Z'_s
+      \mathbb{W}^{\bullet}_{s, t} +
+\underbrace{R_{s, t}}_{O (| t - s |^{2
+      \alpha})} .\)
+    </center>
+    <p>
+      This structural assumption (together with the additional requirement
+      \(Z' \in C^{\alpha}\)) ensure the existence of the limit of Riemann
+      sums. The set of such pairs \((Z, Z')\) is a linear space called space
+      of <i>controlled rough paths</i>. Note that the space of rough paths
+      forms a <i>non-linear</i> (algebraic) manifold. We write \((Z, Z') \in
+      \mathcal{D}_{\mathbb{W}}^{2 \alpha}\) to denote that the space depends
+      on \(\mathbb{W}\). 
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i>The rough integral
+      construction of controlled paths as defined right now, works. Namely, as
+      limit of modified Riemann sums, the rough integral exists and comes with
+      a good local description:</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle I (Z)_t - I (Z)_s = Z_s \mathbb{W}^{\bullet}_{s, t} +
+        Z'_s
+\mathbb{W}^{[\bullet]}_{s, t} + O (| t - s |^{3 \alpha}) .\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>The integral is continuous wrt. \((Z, Z')\) and \(\mathbb{W}\). </i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3</class>. </strong>Taking the
+      distributional derivative of \(\int \operatorname{Zd}\mathbb{W}\) we
+      effectively constructed the product \(Z \dot{W}\), which classicaly
+      makes no sense since the product is not well defined on \(C^{\alpha}
+      \times C^{\alpha - 1}\) when \(\alpha < 1 / 2\). All we are saying is
+      that, provided we have a meaningful definition of \(W \dot{W}\) we can
+      extend it to build the product \(Z \dot{W}\) for all controlled paths
+      \((Z, Z') \in \mathcal{D}_{\mathbb{W}}^{2 \alpha}\).
+    </p>
+    <p>
+      <b>Link with probability.</b>
+    </p>
+    <p>
+      At this stage there is no probability involved in these considerations.
+      This construction is consistent with Ito or Stratonovich integrations.
+      Namely, if I'm in a setting where both integrals (rough/stochastic)
+      exists I can make them agree. 
+    </p>
+    <p>
+      Precisely. We need for \(W\) to be a Brownian motion (or a
+      semi&ndash;martingale) and \(Z\) to be adapted (note: anticipating stoch
+      calculus is trivial with rough paths). 
+    </p>
+    <p>
+      Examples. Take \(i = 1, 2\),
+    </p>
+    <center>
+      \(\displaystyle \hat{W}_t^i = \int_0^t | t - s |^{H - 1 / 2} \mathrm{d}
+      W_s^i\)
+    </center>
+    <p>
+      with \(H \in (0, 1 / 2]\). Then \(\hat{W}^i \in C^{H -}\). Consider two
+      IID copies \(\hat{W} = (\hat{W}^1, \hat{W}^2)\) (2d fractional Brownian
+      motion like process). We can constuct a rough path \(\hat{\mathbb{W}}\)
+      over \(\hat{W}\) as long as \(H > 1 / 4\). Take moreover \(H > 1 / 3\)
+      so the above theory applies. Now \(\int f (\hat{W}) \mathrm{d}
+      \hat{\mathbb{W}}\) can be constructed as a rough integral. 
+    </p>
+    <p>
+      However if I consider \(\int f (\hat{W}) \mathrm{d} W\) there is no way
+      of constructing it as a rough integral over \(\mathbb{W}\) when \(H < 1
+      / 2\). The right thing to do is to be able to define \(\int \hat{W}
+      \mathrm{d} W\) and a full rough path over the pair \((W, \hat{W})\)
+      which will contain also the mixed product \(\int \hat{W} \mathrm{d} W\).
+      But if the regularity is bad then we will need also
+    </p>
+    <center>
+      \(\displaystyle \int (\hat{W})^2 \mathrm{d} W, \int (\hat{W})^3
+      \mathrm{d} W, \cdots\)
+    </center>
+    <p>
+      and so on. In this very simple example regularization of the integral
+      \(\int f (\hat{W}) \mathrm{d} W\) will not converge, in particular
+    </p>
+    <center>
+      \(\displaystyle \int \hat{W}^{\varepsilon} \mathrm{d} W^{\varepsilon}\)
+    </center>
+    <p>
+      will not converge and has to be renormalized by removing a diverging
+      correction when \(H < 1 / 2\). Namely the Ito&ndash;Stratonovich
+      correction in this setting is infinite.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Tweaking the second level of a rough path.</b>
+    </p>
+    <p>
+      \(\mathbb{W} := (\mathbb{W}^{\bullet}, \mathbb{W}^{[\bullet]})\). Take
+      \(\tilde{\mathbb{W}} :=
+      (\tilde{\mathbb{W}}^{\bullet},
+\tilde{\mathbb{W}}^{[\bullet]})\) where
+      \(\tilde{\mathbb{W}}^{\bullet} =\mathbb{W}^{\bullet}\) and 
+      \(\tilde{\mathbb{W}}^{[\bullet]} =\mathbb{W}^{[\bullet]} + \Gamma\)
+      where \(\Gamma \in C^1\). Then if we solve
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} Y = F (Y) \mathrm{d} \tilde{\mathbb{W}} + f_0
+      (Y) \mathrm{d} t\)
+    </center>
+    <p>
+      we have that \(Y\) is also a solution to 
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} Y = F (Y) \mathrm{d} \mathbb{W}+ f_0 (Y)
+      \mathrm{d} t + F' F (Y)
+\mathrm{d} \Gamma .\)
+    </center>
+    <center>
+      \(\displaystyle \begin{array}{lccc}
+  & \{ f_0, f \} \times \mathbb{W} &
+      \xrightarrow[\operatorname{RDE}]{} & (Y,
+  f (Y)) \in
+      \operatorname{cRP}\\
+  &
+ 
+      {\mbox{\rotatebox[origin=c]{90}{$\longrightarrow$}}}_{\operatorname{lift}}
+      &
+  & {\mbox{\rotatebox[origin=c]{-90}{$\longrightarrow$}}}\\
+  & \{
+      f_0, f \} \times W & \xrightarrow[\operatorname{ODE}]{} &
+      Y
+\end{array}\)
+    </center>
+    <p>
+      Changing the lift \(\mathbb{W}\) into \(\tilde{\mathbb{W}}\) can be
+      reabsorbed into a change in the data:
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{lccc}
+  & \{ f_0, f \} \times
+      {\tilde{\mathbb{W}}} &
+  \xrightarrow[\operatorname{RDE}]{} & (Y, f (Y))
+      \in \operatorname{cRP}\\
+  &
+ 
+      {\mbox{\rotatebox[origin=c]{90}{$\longrightarrow$}}}_{\operatorname{lift}}
+      &
+  & \\
+  & {\{ f_0 + f' f, f \}} \times W &
+      \xrightarrow[\operatorname{ODE}]{} & Y
+\end{array}\)
+    </center>
+    <p>
+      Relation with regularity structures
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{lcl}
+  \textbf{Rough Paths} &  &
+      \textbf{Regularity structure}\\
+  &  & \\
+  \text{Chen} &
+      \longleftrightarrow & \text{Structure group}\\
+  \text{RP} &
+      \longleftrightarrow & \text{model}\\
+  \text{cRP} & \longleftrightarrow
+      & \text{modelled distributions}\\
+  \text{rough integral} &
+      \longleftrightarrow & \text{reconstruction}\\
+  & \text{continuity} &
+      \\
+  \text{RP higher order translation} & \longleftrightarrow &
+ 
+      \text{renormalization}
+\end{array}\)
+    </center>
+    <p>
+      Renormalization of RP is treated in the recent paper:
+      Bruned&ndash;Chevyrev&ndash;Friz&ndash;Preiss.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      \(\displaystyle \)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
