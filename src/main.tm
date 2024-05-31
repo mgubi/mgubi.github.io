@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|html-font-size>>
 
@@ -36,7 +36,7 @@
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
   <notes-link|vita|curriculum-vitae.tm> \<cdot\>
-  <notes-link|research|research.tm> \<cdot\>
+  <notes-link|research|research/research.tm> \<cdot\>
   <notes-link|teaching|teaching/teaching.tm> \<cdot\>
   <notes-link|programming|programming.tm> \<cdot\>
   <notes-link|writings|zettels/writings.tm>

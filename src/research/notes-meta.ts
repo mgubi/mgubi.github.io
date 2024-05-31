@@ -5,10 +5,10 @@
 <\body>
   <assign|notes-main-dir|..>
 
-  <assign|notes-meta-name|srq>
+  <assign|notes-meta-name|research>
 
   <assign|notes-header-links|<macro|[<hlink|main|<merge|<notes-main-dir>|/main.tm>>]
-  [<hlink|srq|./srq-intro.tm>]>>
+  [<hlink|research|./research.tm>]>>
 
   \;
 </body>

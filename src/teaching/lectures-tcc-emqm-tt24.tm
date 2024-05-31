@@ -131,20 +131,21 @@
     irreducible representations. Folium of a representation, Fell's theorem,
     the quantum world. Heisenberg indetermination principle,
     Schrödinger-Robertson inequality, canonical commutation relations (CCR),
-    probabilistic phenomena in non-commutative algebras
+    probabilistic phenomena in non-commutative algebras.
     [<notes-store|script|oxford/ht2024/emqm-lecture-4.pdf>]
 
     <item><with|font-series|bold|Week 5 \|> (22.5.24) Construction of
     discrete systems of complementary observables. Canonical commutation
     relations as limits of discrete ones. Weyl algebra,
     Baker-Campbell-Hausdorff formula and relation with Heisenberg's
-    commutation relations.\ 
+    commutation relations. [<notes-store|script|oxford/ht2024/emqm-lecture-5.pdf>]
 
     <item><with|font-series|bold|Week 6 \|> (29.5.24) Von Neumann theorem on
     the uniqueness of irreducible<nbsp>regular representations of Weyl
     algebra in finite dimensions, Schrödinger representation, irreducibility.
     Determination of the vacuum in the Schrödinger representation. Gaussian
     representation of Weyl relations. Reducible representations.
+    [<notes-store|script|oxford/ht2024/emqm-lecture-6.pdf>]
   </itemize>
 
   <subsection*|(Very) tentative program>

@@ -1,6 +1,6 @@
 <TeXmacs|2.1.1>
 
-<style|<tuple|notes|publist>>
+<style|<tuple|notes|publist|notes-meta>>
 
 <\body>
   <\hide-preamble>

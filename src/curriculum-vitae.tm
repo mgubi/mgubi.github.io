@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -12,7 +12,7 @@
   <chapter*|Vita>
 
   <\notes-abstract>
-    Things that happened to me, professionally \U last updated May 2023.
+    Things that happened to me, professionally \U last updated May 2024
   </notes-abstract>
 
   <\cv-body>
@@ -144,7 +144,10 @@
       Editorial and reviewing activities
     </cv-section>
 
-    <timeline|2017\U>Associate editor of Annals of the Institute Henry
+    <timeline|2024\U>Associate editor of Communication in Mathematical
+    Physics
+
+    <timeline|2017\U2023>Associate editor of Annals of the Institute Henry
     Lebesgue
 
     <timeline|2016\U2021>Associate editor of Annals of Applied Probability
@@ -170,8 +173,16 @@
       Organization of international conferences
     </cv-section>
 
-    <timeline|2024>MSRI Summer Graduate School \PStochastic quantisation\Q,
-    Berkley (<hlink|url|https://www.msri.org/summer_schools/1038>)
+    <timeline|2024>Research Program \PRandom paths to QFT: New probabilistic
+    approaches to field theory\Q at the Simons Center for Geometry and
+    Physics, Stony Brook (<hlink|url|https://scgp.stonybrook.edu/archives/42621>)
+
+    MSRI Summer Graduate School \PStochastic quantisation\Q, Berkley
+    (<hlink|url|https://www.msri.org/summer_schools/1038>)
+
+    Research Program \PNew developments and challenges in Stochastic Partial
+    Differential Equations\Q at the Bernoulli Center in Lausanne
+    (<hlink|url|https://bernoulli.epfl.ch/programs/new-developments-and-challenges-in-stochastic-partial-differential-equations/>)
 
     <timeline|2023>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach
     (<hlink|url|https://www.mfo.de/occasion/2351/www_view>)
@@ -222,6 +233,10 @@
     <\cv-section>
       Main invited presentations
     </cv-section>
+
+    <timeline|2024>Plenary speaker \P4th<nbsp>Italian Meeting
+    on<nbsp>Probability and Mathematical Statistics\Q, Roma
+    (<hlink|url|https://probabilityrome2024.it>)
 
     <timeline|2023>Minicourse at the CIME summer school \PStatistical
     Mechanics and Stochastic PDEs\Q, Cetraro
