@@ -99,16 +99,20 @@
   <subsection*|Master students in Oxford>
 
   <\itemize>
-    <item>Daniel Bisbillow \PStochastic wave-packet reduction models and
-    connections between them\Q TT2024.
+    <item>Daniel Bilsborrow \PStochastic wave-packet reduction models and
+    connections between them\Q TT2024.\ 
+
+    <item>Andrea Pitrone \PFlow approach for the stochastic Burgers
+    equation\Q, Msater in Matematica, Università di Pisa 2024.
+    (<notes-store|pdf|master-thesis-pitrone.pdf>)\ 
   </itemize>
 
   <subsection*|Master students in Bonn>
 
   <\itemize>
     <item>Chiunqiu Song \PStochastic Quantisation of Abelian Higgs Model\Q
-    (<notes-store|pdf|master-thesis-song.pdf>) SS2022
-    \ (<notes-store|slides|master-thesis-seminar-song.pdf>)
+    SS2022 (<notes-store|pdf|master-thesis-song.pdf>)
+    (<notes-store|slides|master-thesis-seminar-song.pdf>)
 
     <item>Sarah-Jean Meyer \PA Stochastic Control Perspective on Euclidean
     Quantum Field Theories\Q (<notes-store|pdf|master-thesis-meyer.pdf>)
@@ -124,16 +128,16 @@
     WS2021/2022 (<notes-store|pdf|master-thesis-zografos.pdf>)
 
     <item>Adrian Martini \PThe Killed Mollified Super Brownian Motion and
-    Paracontrolled Wild Sums\Q (<notes-store|pdf|master-thesis-martini.pdf>)
-    SS2020
+    Paracontrolled Wild Sums\Q \ SS2020 (<notes-store|pdf|master-thesis-martini.pdf>)
 
-    <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q
-    (<notes-store|pdf|master-thesis-orenday.pdf>) SS2020
+    <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q SS2020
+    (<notes-store|pdf|master-thesis-orenday.pdf>)
 
     <item>Lukas Meier \PThe true self-repelling motion'' SS2019
 
     <item>Alexander Braun \POn the distribution of Scattering Coefficients in
     the context of image processing\Q SS2019
+    (<notes-store|pdf|master-thesis-braun.pdf>)
 
     <item>Johannes Levermann \PComputation of complex integrals via
     Monte-Carlo methods\Q WS2018/19
@@ -142,11 +146,13 @@
     SS2018
 
     <item>Anno Kurth \PAnalysis of Singular Stochastic PDE\Q SS2018
+    (<notes-store|pdf|master-thesis-kurth.pdf>)
 
-    <item>Stefania Mutsana \PTopics on Mean Field Games theory\Q<nbsp>SS2018
+    <item>Stefania Moutsana \PTopics on Mean Field Games theory\Q<nbsp>SS2018
+    \ (<notes-store|pdf|master-thesis-moutsana.pdf>)
 
     <item>Jonas Jansen \PRenormalization group methods for Stochastic PDEs\Q
-    WS2017/18
+    WS2017/18 (<notes-store|pdf|master-thesis-jansen.pdf>)
 
     <item>Nikolay Barashkov \PRadiative transport limit of the random
     Schrödinger equation\Q (<notes-store|pdf|master-thesis-barashkov.pdf>)
@@ -155,7 +161,7 @@
 
   <subsection*|Master students in Paris\UDauphine>
 
-  Année 2008/2009
+  <with|font-shape|italic|Année 2008/2009>
 
   <\itemize>
     <item>Cheikh Ahmet Diaham (Université Paris-Dauphine), Cubature sur un
@@ -168,7 +174,7 @@
     et applications<nbsp>
   </itemize>
 
-  Année 2009/2010
+  <with|font-shape|italic|Année 2009/2010>
 
   <\itemize>
     <item>Arezki Ait Mimoune (Université Paris-Dauphine), Analyse booléenne:
@@ -181,7 +187,7 @@
     initiale aléatoire
   </itemize>
 
-  Année 2010/2011
+  <with|font-shape|italic|Année 2010/2011>
 
   <\itemize>
     <item>Remi Catellier (ENS Cachan), Unicité des solutions pour les EDS
@@ -190,7 +196,7 @@
     Stochastiques et l'équation de Navier-Stokes
   </itemize>
 
-  Année 2011/2012
+  <with|font-shape|italic|Année 2011/2012>
 
   <\itemize>
     <item>Alexander Rauber (Université Paris-Dauphine), Analyse des fonctions
