@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -108,6 +108,8 @@
 
   <\itemize>
     <item>Note 1 (version 1, 23/4/24) [<notes-store|pdf|oxford/ht2024/emqm-note-1.pdf>]
+
+    <item>Note 2 (version 1, 5/6/24) [<notes-store|pdf|oxford/ht2024/emqm-note-2.pdf>]
   </itemize>
 
   <subsection*|Journal>
