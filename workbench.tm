@@ -107,9 +107,7 @@
     <|unfolded-io>
       On branch main
 
-      Your branch is ahead of 'origin/main' by 1 commit.
-
-      \ \ (use "git push" to publish your local commits)
+      Your branch is up to date with 'origin/main'.
 
       \;
 
@@ -117,226 +115,70 @@
 
       \ \ (use "git restore --staged \<file\>..." to unstage)
 
-      \ \ \ \ \ \ \ \ modified: \ \ docs/list-articles.html
-
-      \ \ \ \ \ \ \ \ modified: \ \ docs/notes.atom
-
-      \ \ \ \ \ \ \ \ modified: \ \ docs/research/people.html
-
-      \ \ \ \ \ \ \ \ modified: \ \ src/list-articles.tm
+      \ \ \ \ \ \ \ \ modified: \ \ workbench.tm
 
       \;
     </unfolded-io>
 
     <\input|Shell] >
-      \;
+      git add -u .
     </input>
 
     <\unfolded-io|Shell] >
-      git commit -m"Update website"
+      git commit -m"Update workbench"
     <|unfolded-io>
-      [main 152377f] Update website
+      [main 855a445] Update workbench
 
-      \ 4 files changed, 32 insertions(+), 23 deletions(-)
+      \ 1 file changed, 272 insertions(+)
     </unfolded-io>
 
     <\unfolded-io|Shell] >
       git push origin
     <|unfolded-io>
-      Enumerating objects: 33, done.
+      Enumerating objects: 5, done.
 
-      Counting objects: \ \ 3% (1/33)
+      Counting objects: \ 20% (1/5)
 
-      Counting objects: \ \ 6% (2/33)
+      Counting objects: \ 40% (2/5)
 
-      Counting objects: \ \ 9% (3/33)
+      Counting objects: \ 60% (3/5)
 
-      Counting objects: \ 12% (4/33)
+      Counting objects: \ 80% (4/5)
 
-      Counting objects: \ 15% (5/33)
+      Counting objects: 100% (5/5)
 
-      Counting objects: \ 18% (6/33)
-
-      Counting objects: \ 21% (7/33)
-
-      Counting objects: \ 24% (8/33)
-
-      Counting objects: \ 27% (9/33)
-
-      Counting objects: \ 30% (10/33)
-
-      Counting objects: \ 33% (11/33)
-
-      Counting objects: \ 36% (12/33)
-
-      Counting objects: \ 39% (13/33)
-
-      Counting objects: \ 42% (14/33)
-
-      Counting objects: \ 45% (15/33)
-
-      Counting objects: \ 48% (16/33)
-
-      Counting objects: \ 51% (17/33)
-
-      Counting objects: \ 54% (18/33)
-
-      Counting objects: \ 57% (19/33)
-
-      Counting objects: \ 60% (20/33)
-
-      Counting objects: \ 63% (21/33)
-
-      Counting objects: \ 66% (22/33)
-
-      Counting objects: \ 69% (23/33)
-
-      Counting objects: \ 72% (24/33)
-
-      Counting objects: \ 75% (25/33)
-
-      Counting objects: \ 78% (26/33)
-
-      Counting objects: \ 81% (27/33)
-
-      Counting objects: \ 84% (28/33)
-
-      Counting objects: \ 87% (29/33)
-
-      Counting objects: \ 90% (30/33)
-
-      Counting objects: \ 93% (31/33)
-
-      Counting objects: \ 96% (32/33)
-
-      Counting objects: 100% (33/33)
-
-      Counting objects: 100% (33/33), done.
+      Counting objects: 100% (5/5), done.
 
       Delta compression using up to 8 threads
 
-      Compressing objects: \ \ 5% (1/20)
+      Compressing objects: \ 33% (1/3)
 
-      Compressing objects: \ 10% (2/20)
+      Compressing objects: \ 66% (2/3)
 
-      Compressing objects: \ 15% (3/20)
+      Compressing objects: 100% (3/3)
 
-      Compressing objects: \ 20% (4/20)
+      Compressing objects: 100% (3/3), done.
 
-      Compressing objects: \ 25% (5/20)
+      Writing objects: \ 33% (1/3)
 
-      Compressing objects: \ 30% (6/20)
+      Writing objects: \ 66% (2/3)
 
-      Compressing objects: \ 35% (7/20)
+      Writing objects: 100% (3/3)
 
-      Compressing objects: \ 40% (8/20)
+      Writing objects: 100% (3/3), 2.55 KiB \| 2.55 MiB/s, done.
 
-      Compressing objects: \ 45% (9/20)
+      Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 
-      Compressing objects: \ 50% (10/20)
+      remote: Resolving deltas: \ \ 0% (0/1) \ \ \ \ \ \ \ 
 
-      Compressing objects: \ 55% (11/20)
+      remote: Resolving deltas: 100% (1/1) \ \ \ \ \ \ \ 
 
-      Compressing objects: \ 60% (12/20)
-
-      Compressing objects: \ 65% (13/20)
-
-      Compressing objects: \ 70% (14/20)
-
-      Compressing objects: \ 75% (15/20)
-
-      Compressing objects: \ 80% (16/20)
-
-      Compressing objects: \ 85% (17/20)
-
-      Compressing objects: \ 90% (18/20)
-
-      Compressing objects: \ 95% (19/20)
-
-      Compressing objects: 100% (20/20)
-
-      Compressing objects: 100% (20/20), done.
-
-      Writing objects: \ \ 4% (1/21)
-
-      Writing objects: \ \ 9% (2/21)
-
-      Writing objects: \ 14% (3/21)
-
-      Writing objects: \ 19% (4/21)
-
-      Writing objects: \ 23% (5/21)
-
-      Writing objects: \ 28% (6/21)
-
-      Writing objects: \ 33% (7/21)
-
-      Writing objects: \ 38% (8/21)
-
-      Writing objects: \ 42% (9/21)
-
-      Writing objects: \ 47% (10/21)
-
-      Writing objects: \ 52% (11/21)
-
-      Writing objects: \ 57% (12/21)
-
-      Writing objects: \ 61% (13/21)
-
-      Writing objects: \ 66% (14/21)
-
-      Writing objects: \ 71% (15/21)
-
-      Writing objects: \ 76% (16/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: \ 80% (17/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: \ 85% (18/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: \ 90% (19/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: \ 95% (20/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: 100% (21/21), 1.29 MiB \| 1.87 MiB/s
-
-      Writing objects: 100% (21/21), 2.60 MiB \| 2.76 MiB/s, done.
-
-      Total 21 (delta 13), reused 0 (delta 0), pack-reused 0
-
-      remote: Resolving deltas: \ \ 0% (0/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ \ 7% (1/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 15% (2/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 23% (3/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 30% (4/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 38% (5/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 46% (6/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 53% (7/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 61% (8/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 69% (9/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 76% (10/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 84% (11/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: \ 92% (12/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: 100% (13/13) \ \ \ \ \ \ \ 
-
-      remote: Resolving deltas: 100% (13/13), completed with 11 local
-      objects. \ \ \ \ \ \ \ 
+      remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+      \ \ \ \ \ \ \ 
 
       To github.com:mgubi/mgubi.github.io.git
 
-      \ \ \ 748ba5a..152377f \ main -\<gtr\> main
+      \ \ \ 152377f..855a445 \ main -\<gtr\> main
     </unfolded-io>
 
     <\input|Shell] >

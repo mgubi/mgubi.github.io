@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2024-05-31T17:44:47Z</updated>
+  <updated>2024-06-04T23:48:10Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -16,7 +16,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/curriculum-vitae.html"/>
     <id>mgubi.github.io/curriculum-vitae.tm:2024-05-31T09:25:16Z</id>
     <updated>2024-05-31T09:25:16Z</updated>
-    <published>2024-05-31T09:24:08Z</published>
+    <published>2024-05-31T09:28:45Z</published>
     <summary><document>Things that happened to me, professionally  last
     updated May 2024</document></summary>
   </entry>
@@ -25,7 +25,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/programming.html"/>
     <id>mgubi.github.io/programming.tm:2023-05-13T17:05:11Z</id>
     <updated>2023-05-13T17:05:11Z</updated>
-    <published>2023-05-13T17:01:41Z</published>
+    <published>2023-05-13T17:23:05Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
   </entry>
@@ -34,7 +34,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/old-publications.html"/>
     <id>mgubi.github.io/old-publications.tm:2023-05-13T17:05:11Z</id>
     <updated>2023-05-13T17:05:11Z</updated>
-    <published>2024-02-14T11:23:23Z</published>
+    <published>2023-05-13T17:23:07Z</published>
     <summary>What my collaborators, students and me have written  last
     updated October 2020.</summary>
   </entry>
@@ -43,7 +43,7 @@
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/template.html"/>
     <id>mgubi.github.io/template.tm:2023-05-13T16:50:36Z</id>
     <updated>2023-05-13T16:50:36Z</updated>
-    <published>2024-02-14T11:10:28Z</published>
+    <published>2024-04-11T10:18:16Z</published>
     <summary><concat>This file provides a template for typical notes/articles.
     You can use the tag <src-macro>notes-abstract</src-macro> to provide a
     small summary of the content, as exemplified by this very
