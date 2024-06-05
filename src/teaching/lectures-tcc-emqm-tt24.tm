@@ -148,24 +148,24 @@
     Determination of the vacuum in the Schrödinger representation. Gaussian
     representation of Weyl relations. Reducible representations.
     [<notes-store|script|oxford/ht2024/emqm-lecture-6.pdf>]
+
+    <item><with|font-series|bold|Week 7 \|> (5.6.24) Dynamics of a quantum
+    system: unitary representation of weakly continuous automorphism on an
+    invariant state semigroups and *-homomorphism, Bernstein theorem on
+    totally monotone functions. Link between unitary groups and self-adjoint
+    semigroups. Energy operator. Positive energy condition.
+    [<notes-store|script|oxford/ht2024/emqm-lecture-7.pdf>]
   </itemize>
 
   <subsection*|(Very) tentative program>
 
   <\itemize>
-    <item><with|font-series|bold|Week 7 \|> (5.6.24) Dynamics of a quantum
-    system: unitary representation of weakly continuous automorphism on an
-    invariant state Semigroups and *-homomorphism, Bernstein theorem on
-    totally monotone functions. Link between unitary groups and self-adjoint
-    semigroups. Energy operator. Positive energy condition.<nbsp>Link between
-    unitary groups and self-adjoint semigroups continued. Ground states and
-    Wightman functions. Axioms for Schwinger functions and the reconstruction
-    theorem. Reflection positivity for Gaussian processes.
-
-    <item><with|font-series|bold|Week 9 \|> (19.6.24) [Warning: no lecture on
-    June 12th!] Nelson's positivity and stochastic processes. Reflection
-    positivity for Markov processes and construction or reflection positive
-    processes via SDEs.
+    <item><with|font-series|bold|Week 9 \|> (26.6.24) [Warning: no lecture on
+    June 12th nor June 19th!] Ground states and Wightman functions. Axioms
+    for Schwinger functions and the reconstruction theorem. Reflection
+    positivity for Gaussian processes. Nelson's positivity and stochastic
+    processes. Reflection positivity for Markov processes and construction or
+    reflection positive processes via SDEs.
   </itemize>
 
   \;
