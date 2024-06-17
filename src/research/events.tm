@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -16,33 +16,51 @@
   <subsection*|Forthcoming events><itemize|>
 
   <\itemize>
-    <item>43rd Conference on Stochastic Processes and their Applications,
-    Lisbon, July 2023 [talk]
+    <item>SLMath Program \PRecent Trends in Stochastic Partial Differential
+    Equations\Q, Berkeley, August 18th, 2025<nbsp>-<nbsp>December 19th, 2025
+    (<hlink|url|https://www.slmath.org/programs/380>) [organization]
 
-    <item>CIME summer school \PStatistical Mechanics and Stochastic PDEs\Q,
-    Cetraro, September 2023 (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde?authuser=0>)
-    [lectures]
+    <item>Simons Center for Geometry and Physics \U Research program \PRandom
+    paths to QFT: New probabilistic approaches to field theory\Q,
+    Stony-Brook, October 14 \UNovember 22, 2024
+    (<hlink|url|https://scgp.stonybrook.edu/archives/42621>) [organization]
 
-    <item>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach, December
-    2023 (<hlink|url|https://www.mfo.de/occasion/2351/www_view>)
-    [organization]
+    <item>Bernoulli research program \PNew developments and challenges in
+    Stochastic Partial Differential Equations\Q, Lausanne, June\UAugust 2024
+    (<hlink|url|https://sites.google.com/view/spde-bernoulli>) [organization]
 
-    <item>MSRI Summer Graduate School \PStochastic quantisation\Q, Berkley,
-    July 2024 (<hlink|url|https://www.msri.org/summer_schools/1038>)
+    <item>SLMath Summer Graduate School \PStochastic quantisation\Q,
+    Berkeley, July 2024 (<hlink|url|https://www.msri.org/summer_schools/1038>)
     [organization/lectures]
   </itemize>
 
   <subsection*|Past events>
 
   <\itemize>
+    <item>4th Italian Meeting on Probability and Mathematical Statistics,
+    Rome, June 10th\U14th, 2024 \ (<notes-store|slides|talk-roma-probability-2024.pdf>)
+
+    <item>43rd Conference on Stochastic Processes and their Applications,
+    Lisbon, July 2023 (<notes-store|slides|talk-lisbon-spa-2023.pdf>)
+
+    <item>CIME summer school \PStatistical Mechanics and Stochastic PDEs\Q,
+    Cetraro, September 2023 (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde?authuser=0>)
+    \ (<notes-store|slides|talk-cetraro-2023.pdf>)
+
+    <item>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach, December
+    2023 (<hlink|url|https://www.mfo.de/occasion/2351/www_view>)
+    [organization]
+
+    <item>NEMSA worksop, Oxford, September 2023
+    (<notes-store|program|nemsa-workshop-oxford-september-2023-public.pdf>)
+    [organization]
+
     <item>NEMSA workshop, Warwick, June 6/7 2023
     (<hlink|url|https://www.maths.dur.ac.uk/PiNE/NEMSAS/North-East%20and%20Midlands%20Stochastic%20Analysis.html>)
-    [talk]
+    (<notes-store|slides|talk-warwick-flow-2023.pdf>)
 
     <item>Center for Mathematical Physics Colloquium, May 19th 2023, Leipzig
     (<hlink|url|https://cmp-leipzig.de>) (<notes-store|slides|talk-leipzig-openprobs-2023.pdf>)
-
-    <item><todo|to be updated <text-dots>>
 
     <item>Workshop \PNew Directions in Rough Path Theory\Q, Oberwolfach
     (<hlink|url|https://publications.mfo.de/handle/mfo/3855>)
@@ -77,7 +95,7 @@
 
     <item>Hausdorff school \PRecent Development in Singular Stochastic
     PDEs\Q.<nbsp>February 20 - 24 2017. Bonn, Germany.
-    (<hlink|url|http://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/wwwhcmuni-bonndehsfasim0/stochastic-pde-2017/>)<nbsp>
+    (<hlink|url|http://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/wwwhcmuni-bonndehsfasim0/stochastic-pde-2017/>)
 
     <item>IAM summer school \PParaproducts and Analysis of Rough Paths\Q
     September 11 - 16, 2016, Kopp, Germany.<nbsp>(<hlink|url|http://www.math.uni-bonn.de/people/thiele/workshop18/>)
