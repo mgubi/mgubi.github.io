@@ -155,20 +155,15 @@
     totally monotone functions. Link between unitary groups and self-adjoint
     semigroups. Energy operator. Positive energy condition.
     [<notes-store|script|oxford/ht2024/emqm-lecture-7.pdf>]
+
+    <item><with|font-series|bold|Week \P8\Q \|> (26.6.24) [Warning: no
+    lecture on June 12th nor June 19th!] Ground states and Wightman
+    functions. Axioms for Schwinger functions and the reconstruction theorem.
+    Reflection positivity for Gaussian processes. Nelson's positivity and
+    stochastic processes. [Not covered Reflection positivity for Markov
+    processes and construction or reflection positive processes via SDEs].
+    [<notes-store|script|oxford/ht2024/emqm-lecture-8.pdf>]
   </itemize>
-
-  <subsection*|(Very) tentative program>
-
-  <\itemize>
-    <item><with|font-series|bold|Week 9 \|> (26.6.24) [Warning: no lecture on
-    June 12th nor June 19th!] Ground states and Wightman functions. Axioms
-    for Schwinger functions and the reconstruction theorem. Reflection
-    positivity for Gaussian processes. Nelson's positivity and stochastic
-    processes. Reflection positivity for Markov processes and construction or
-    reflection positive processes via SDEs.
-  </itemize>
-
-  \;
 
   \;
 
