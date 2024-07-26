@@ -302,7 +302,11 @@
   \ 
 
   <\equation*>
-    <frac|\<mathd\>|\<mathd\>t><around*|[|V|]><rsub|t>=<big|sum><rsub|k><around*|[|\<sigma\><rsub|k><around*|(|X<rsup|x><rsub|t>|)>-\<sigma\><rsub|k><around*|(|X<rsup|y><rsub|t>|)>|]><around*|[|\<sigma\><rsub|k><around*|(|X<rsup|x><rsub|t>|)>-\<sigma\><rsub|k><around*|(|X<rsup|y><rsub|t>|)>|]>=2Q<around*|(|0|)>-2Q<around*|(|X<rsup|x><rsub|t>-X<rsup|y><rsub|t>|)>=2Q<around*|(|0|)>-2Q<around*|(|V<rsub|t>|)>
+    <frac|\<mathd\>|\<mathd\>t><around*|[|V|]><rsub|t>=<big|sum><rsub|k><around*|[|\<sigma\><rsub|k><around*|(|X<rsup|x><rsub|t>|)>-\<sigma\><rsub|k><around*|(|X<rsup|y><rsub|t>|)>|]><around*|[|\<sigma\><rsub|k><around*|(|X<rsup|x><rsub|t>|)>-\<sigma\><rsub|k><around*|(|X<rsup|y><rsub|t>|)>|]>
+  </equation*>
+
+  <\equation*>
+    =2Q<around*|(|0|)>-2Q<around*|(|X<rsup|x><rsub|t>-X<rsup|y><rsub|t>|)>=2Q<around*|(|0|)>-2Q<around*|(|V<rsub|t>|)>
   </equation*>
 
   so <math|V> satisfies in law the following SDE:
@@ -326,7 +330,7 @@
 
   <hrule>
 
-  Maurelli \| Regularisation by noise \| Lecture 3 \| Thursday July 25,
+  Maurelli \| Regularisation by noise \| Lecture 2 \| Thursday July 25,
   11:00\U12:30\ 
 
   Recall the setting:
@@ -593,7 +597,7 @@
     \<mathd\>\<theta\>+u\<cdot\>\<nabla\>\<theta\>+\<nabla\>\<theta\>\<circ\>\<mathd\>W=0,<space|2em>u=K\<ast\>\<theta\>.
   </equation*>
 
-  <\theorem>
+  <\theorem*>
     (Coghi-Maurelli 2023+) Existence of <math|<wide|H|\<dot\>><rsup|-1>>
     solutions. For <math|\<alpha\>\<in\><around*|(|0,1|)>> and
     <math|\<omega\><rsub|0>\<in\><wide|H|\<dot\>><rsup|-1>> then there exists
@@ -603,12 +607,12 @@
     <\equation*>
       \<theta\>\<in\>L<rsup|2><rsub|t,\<omega\>><around*|(|<wide|H|\<dot\>><rsup|-\<alpha\>><rsub|x>|)>.
     </equation*>
-  </theorem>
+  </theorem*>
 
   There is an anomalous regularisation of the solutions which live for almost
   every time and almost surely in <math|<wide|H|\<dot\>><rsup|-\<alpha\>><rsub|x>>.
 
-  <\theorem>
+  <\theorem*>
     (Coghi-Maurelli 2023+) Uniqueness in <math|L<rsup|p>>. For
     <math|\<theta\>\<in\>L<rsup|p>\<cap\>L<rsup|1>\<cap\><wide|H|\<dot\>><rsup|-1>>
     and\ 
@@ -619,9 +623,308 @@
 
     then there is pathwise uniqueness (and strong existence) in
     <math|L<rsup|\<infty\>><rsub|t,\<omega\>><around*|(|L<rsup|p><rsub|x>\<cap\>L<rsup|1><rsub|x>|)>\<cap\>L<rsup|\<infty\>><rsub|t>L<rsup|2><rsub|\<omega\>><wide|H|\<dot\>><rsup|-1><rsub|x>\<cap\>L<rsup|2><rsub|t,\<omega\>><around*|(|<wide|H|\<dot\>><rsup|-\<alpha\>>|)>>.
-  </theorem>
+  </theorem*>
 
   <hrule> [end of second lecture]
+
+  Maurelli \| Regularisation by noise \| Lecture 3 \| Friday July 26,
+  9:00\U10:30
+
+  <with|font-series|bold|V. Reg. by nonsmooth Kraichnan nois for 2d Euler>
+
+  Recall the equation
+
+  <\equation>
+    \<mathd\>\<theta\>+u\<cdot\>\<nabla\>\<theta\>+\<nabla\>\<theta\>\<circ\>\<mathd\>W=0,<space|2em>u=K\<ast\>\<theta\>.<label|eq:eu-plus-kr>
+  </equation>
+
+  with a Kraichnan isotropic noise of index
+  <math|\<alpha\>\<in\><around*|(|0,1|)>>. Let's talk about motivations for
+  the noise:
+
+  <\itemize>
+    <item>Preserves the transport nature of the equation
+
+    <item>Can be viewed as a representation of small scale behaviour of a
+    turbulent fluid
+
+    <item>Why <math|\<alpha\>\<in\><around*|(|0,1|)>?> The equation has
+    problems when the mass concentrates, and the splitting nature of the
+    noise gives an hope that it could improve the behaviour of the equation
+    by preventing mass concentration.
+
+    <item>Physicist predict is that <math|\<alpha\>=2/3>, since in this case
+    we reproduce Obukov theory of scalar turbulence in <math|d=2>.
+    Unfortunately uniqueness result that we have of Euler+Kraichnan does not
+    hold for this value of the exponent.
+  </itemize>
+
+  Lagrangian counterpart of the SPDE:
+
+  <\equation*>
+    \<mathd\>X<rsup|x><rsub|t>=<big|int>K<around*|(|X<rsup|x><rsub|t>-X<rsup|y><rsub|t>|)>\<omega\><rsub|0><around*|(|\<mathd\>y|)>\<mathd\>t+\<circ\>\<mathd\>W<around*|(|t,X<rsup|x><rsub|t>|)>
+  </equation*>
+
+  if we add just a constant (or smooth) noise <math|+\<mathd\>B>, we can
+  remove it via a Galileian transformation and should not have hope to
+  regularise the equation. In order to hope to have some regularisation we
+  need some noise which has a substantial effect when
+  <math|<around*|\||X<rsup|x><rsub|t>-X<rsup|y><rsub|t>|\|>\<ll\>1> which is
+  the region where the Biot\USavart kernel is singular.
+
+  <\equation*>
+    <around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-s>><rsup|2>\<assign\><big|int><around*|\||n|\|><rsup|-2s><around*|\||<wide|\<theta\>|^><around*|(|n|)>|\|>\<mathd\>n
+  </equation*>
+
+  <\definition*>
+    <math|\<theta\>> is an <math|<wide|H|\<dot\>><rsup|-1>> solution to the
+    equation<nbsp><eqref|eq:eu-plus-kr>, there exists a
+    <math|<around*|(|\<cal-F\><rsub|t>|)><rsub|t>>-progressively measurable
+    <math|\<theta\>\<in\>L<rsup|\<infty\>><rsub|t><around*|(|<wide|H|\<dot\>><rsup|-1><rsub|x>|)>\<cap\>C<rsub|t><around*|(|H<rsub|x><rsup|-4>|)>>
+    <math|\<bbb-P\>-a.s.> and
+
+    <\equation*>
+      \<theta\><rsub|t>=\<theta\><rsub|0>-<big|int><rsub|0><rsup|t><wide*|<around*|(|K\<ast\>\<theta\><rsub|r>|)>\<cdot\>\<nabla\>\<theta\><rsub|r>|\<wide-underbrace\>><rsub|=curl
+      div <around*|(|u<rsub|r> u<rsub|r><rsup|\<Tau\>>|)>>\<mathd\>r-<big|int><rsub|0><rsup|t>\<nabla\>\<omega\><rsub|r>\<cdot\>\<mathd\>W<rsub|r>+<big|int><rsub|0><rsup|t><frac|c|2>\<Delta\>\<theta\><rsub|r>\<mathd\>r.
+    </equation*>
+  </definition*>
+
+  The basic results we would like to discuss are the following about
+  existence and uniqueness
+
+  <\theorem>
+    <label|th:existence><math|<around*|(|\<exists\>|)>>
+    <math|\<alpha\>\<in\><around*|(|0,1|)>>,
+    <math|\<theta\><rsub|0>\<in\><wide|H|\<dot\>><rsup|-1>> then
+    <math|\<exists\>\<theta\>> <math|<wide|H|\<dot\>><rsup|-1>> solution to
+    the equation<nbsp><eqref|eq:eu-plus-kr> such that
+
+    <\equation*>
+      \<theta\>\<in\>L<rsup|2><rsub|x,t><around*|(|<wide|H|\<dot\>><rsup|-\<alpha\>><rsub|x>|)>.
+    </equation*>
+  </theorem>
+
+  <\theorem>
+    <label|th:uniqueness><math|<around*|(|!|)>> <math|> For
+    <math|\<theta\>\<in\>L<rsup|p>\<cap\>L<rsup|1>\<cap\><wide|H|\<dot\>><rsup|-1>>
+    and\ 
+
+    <\equation*>
+      <frac|3|2>\<less\>p\<less\>\<infty\>,<space|2em>0\<vee\><around*|(|<frac|2|p>-1|)>\<less\>\<alpha\>\<less\><frac|1|2>\<wedge\><around*|(|1-<frac|1|p>|)>
+    </equation*>
+
+    then there exists a unique strong solution in
+    <math|L<rsup|\<infty\>><rsub|t,\<omega\>><around*|(|L<rsup|p><rsub|x>\<cap\>L<rsup|1><rsub|x>|)>>.
+  </theorem>
+
+  Galeati\ULuo (2023+) weak uniqueness for log-Euler 2d via Girsanov's
+  theorem (a nice paper)
+
+  Let's discuss the proofs now.
+
+  <with|font-series|bold|Step 1. Anomalous regularisation in negative Sobolev
+  for Kraichnan> \ 
+
+  Consider
+
+  <\equation*>
+    \<mathd\>\<mu\>+div<around*|(|\<mu\> \<mathd\>W|)>=<frac|c|2>\<Delta\>\<mu\>,<space|2em>on
+    <around*|[|0,T|]>\<times\>\<bbb-R\><rsup|2>
+  </equation*>
+
+  <with|font-shape|italic|Idea:> particle splitting brings anomalous
+  regularisation in negative Sobolev spaces. Formally, two particular
+  <math|X<rsup|x>> and <math|X<rsup|y>> if <math|x\<rightarrow\>y> we still
+  have that <math|X<rsup|x><rsub|t>\<neq\>X<rsup|y><rsub|t>> for positive
+  times, and it is reasonable to expect that
+  <math|<around*|\||X<rsup|x><rsub|t>-X<rsup|y><rsub|t><rsup|>|\|><rsup|-1>>
+  should get smaller on average, and so gain integrability in space.
+
+  This can be verified by using the explicit SDE satisfied by
+  <math|<around*|\||X<rsup|x><rsub|t>-X<rsup|y><rsub|t><rsup|>|\|>>. In the
+  Eulerian picture
+
+  <\equation*>
+    <big|int><big|int>\<varphi\><around*|(|x-y|)>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>=<big|int><big|int>\<varphi\><around*|(|X<rsup|x><rsub|t>-X<rsup|y><rsub|t>|)>\<mu\><rsub|0><around*|(|\<mathd\>x|)>\<mu\><rsub|0><around*|(|\<mathd\>y|)>
+  </equation*>
+
+  and we take <math|\<varphi\><around*|(|x-y|)>=log
+  <around*|\||x-y|\|><rsup|-1>=G<around*|(|x-y|)>>. Applying Ito formula:
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|<left|[|2>|<around*|<left|\<langle\>|1>|G\<ast\>\<mu\>,\<mu\>|<right|\<rangle\>|1>>|<right|]|2>>=\<bbb-E\><around*|[|<around*|\<langle\>|Tr<around*|[|Q<around*|(|0|)>\<mathD\><rsup|2>\<mu\>|]>,G\<ast\>\<mu\>|\<rangle\>>|]>+\<bbb-E\><around*|[|<big|sum><rsub|k><around*|\<langle\>|\<sigma\><rsub|k>\<cdot\>\<nabla\>\<mu\>\<comma\>G\<ast\><around*|(|\<sigma\><rsub|k>\<cdot\>\<nabla\>\<mu\>|)>|\<rangle\>>|]>
+  </equation*>
+
+  <\equation*>
+    =\<bbb-E\><around*|[|<around*|\<langle\>|Tr<around*|[|Q<around*|(|0|)>\<mathD\><rsup|2>\<mu\>|]>,G\<ast\>\<mu\>|\<rangle\>>|]>+\<bbb-E\><around*|[|<big|sum><rsub|k><around*|\<langle\>|div<around*|(|\<sigma\><rsub|k>
+    \<mu\>|)>\<comma\>G\<ast\><around*|(|\<sigma\><rsub|k>\<cdot\>\<nabla\>\<mu\>|)>|\<rangle\>>|]>
+  </equation*>
+
+  <\equation*>
+    =\<bbb-E\><around*|[|<around*|\<langle\>|Tr<around*|[|Q<around*|(|0|)>\<mathD\><rsup|2>\<mu\>|]>,G\<ast\>\<mu\>|\<rangle\>>|]>-\<bbb-E\><around*|<left|[|-1>|<around*|<left|\<langle\>|-1>|<around*|<left|(|-2>|<around*|<left|(|-3>|<big|sum><rsub|k>\<sigma\><rsub|k>\<sigma\><rsub|k><rsup|\<Tau\>>|<right|)|-3>>\<mathD\><rsup|2>G|<right|)|-2>>\<ast\>\<mu\>,\<mu\>|<right|\<rangle\>|-1>>|<right|]|-1>>
+  </equation*>
+
+  <\equation*>
+    =\<bbb-E\><big|int><big|int>Tr<around*|[|<around*|(|Q<around*|(|0|)>-Q<around*|(|x-y|)>|)>\<mathD\><rsup|2>G<around*|(|x-y|)>|]>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>
+  </equation*>
+
+  Now
+
+  <\equation*>
+    \<nabla\>G<around*|(|x|)>=-<frac|x|<around*|\||x|\|><rsup|2>>,<space|2em>\<nabla\><rsup|2>G<around*|(|x|)>=-<frac|1|<around*|\||x|\|><rsup|2>><around*|(|-\<bbb-I\>+<frac|2
+    x x<rsup|T>|<around*|\||x|\|><rsup|2>>|)>,
+  </equation*>
+
+  and
+
+  <\equation*>
+    Q<around*|(|0|)>-Q<around*|(|x|)>\<approx\>\<beta\><rsub|L><around*|\||x|\|><rsup|2\<alpha\>><frac|x
+    x<rsup|T>|<around*|\||x|\|><rsup|2>>+\<beta\><rsub|N><around*|\||x|\|><rsup|2\<alpha\>><around*|(|\<bbb-I\>-<frac|x
+    x<rsup|T>|<around*|\||x|\|><rsup|2>>|)>,<space|2em>\<beta\><rsub|N>=<around*|(|1+2\<alpha\>|)>\<beta\><rsub|L>\<gtr\>\<beta\><rsub|N>
+  </equation*>
+
+  <\equation*>
+    Tr<around*|[|<around*|(|Q<around*|(|0|)>-Q<around*|(|x|)>|)>\<mathD\><rsup|2>G<around*|(|x|)>|]>=<frac|1|<around*|\||x|\|><rsup|2>><around*|(|\<beta\><rsub|L><around*|\||x|\|><rsup|2\<alpha\>>-\<beta\><rsub|N><around*|\||x|\|><rsup|2\<alpha\>>|)>+O<around*|(|<around*|\||x|\|><rsup|2\<alpha\>-2>|)>
+  </equation*>
+
+  <\equation*>
+    =<wide*|<around*|(|\<beta\><rsub|L>-\<beta\><rsub|N>|)>|\<wide-underbrace\>><rsub|\<less\>0
+    <around*|(|!|)>><around*|\||x|\|><rsup|-2+2\<alpha\>>+O<around*|(|<around*|\||x|\|><rsup|-2>|)>
+  </equation*>
+
+  with a negative sign! Therefore
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|<left|[|2>|<big|int><big|int>log
+    <around*|(|<around*|\||x-y|\|><rsup|-1>|)>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>|<right|]|2>>=-C
+    \<bbb-E\><big|int><big|int> <around*|\||x-y|\|><rsup|2\<alpha\>-2>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>+<text|l.o.t.>
+  </equation*>
+
+  Note that
+
+  <\equation*>
+    <big|int><big|int>log <around*|(|<around*|\||x-y|\|><rsup|-1>|)>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>=<around*|\<langle\>|\<mu\>,<around*|(|-\<Delta\>|)><rsup|-1>\<mu\>|\<rangle\>>=<around*|\<\|\|\>|\<mu\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>
+  </equation*>
+
+  and
+
+  <\equation*>
+    <big|int><big|int> <around*|\||x-y|\|><rsup|2\<alpha\>-2>\<mu\><rsub|t><around*|(|\<mathd\>x|)>\<mu\><rsub|t><around*|(|\<mathd\>y|)>=<around*|\<langle\>|\<mu\>,<around*|(|-\<Delta\>|)><rsup|-\<alpha\>>\<mu\>|\<rangle\>>=<around*|\<\|\|\>|\<mu\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>
+  </equation*>
+
+  from which we have a gain of <math|1-\<alpha\>> regularity since
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\> <around*|\<\|\|\>|\<mu\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>=-C\<bbb-E\>
+    <around*|\<\|\|\>|\<mu\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>+<text|l.o.t.>
+  </equation*>
+
+  <with|font-series|bold|Step 2. Anomalous regularisation for
+  Euler+Kraichnan>\ 
+
+  Wanted regularisation for the full equation. The idea is that the
+  non-linear drift preserves the <math|<wide|H|\<dot\>><rsup|-1>> norm.\ 
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|[|<around*|\<langle\>|\<theta\>,G\<ast\>\<theta\>|\<rangle\>>|]>=-\<bbb-E\><around*|<left|[|-2>|<wide*|<around*|\<langle\>|u\<cdot\>\<nabla\>\<theta\>,G\<ast\>\<theta\>|\<rangle\>>|\<wide-underbrace\>><rsub|=0>|<right|]|-2>><wide*|-c
+    \<bbb-E\><around*|[|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>|]>+<text|l.o.t.>|\<wide-underbrace\>><rsub|<text|terms
+    from the noise>>
+  </equation*>
+
+  so
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|[|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>|]>=-c\<bbb-E\><around*|[|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>|]>+<text|l.o.t.>
+  </equation*>
+
+  See also recent paper of Coti-Zelati, Drival, Gwalani (2024).
+
+  <with|font-series|bold|Step 3. Uniqueness>
+
+  Take <math|\<theta\><rsup|1>,\<theta\><rsup|2>> for E+K, let
+  <math|\<theta\>=\<theta\><rsup|1>-\<theta\><rsup|2>>, then
+
+  <\equation*>
+    \<mathd\>\<theta\>=<around*|(|K\<ast\>\<theta\><rsup|1>|)>\<nabla\>\<theta\>+<around*|(|K\<ast\>\<theta\>|)>\<nabla\>\<theta\><rsup|2>+\<nabla\>\<theta\>\<mathd\>W=<frac|c|2>\<Delta\>\<theta\>.
+  </equation*>
+
+  Idea: get the <math|<wide|H|\<dot\>><rsup|-\<alpha\>>> norm from the noise,
+  for the drift use conservation of <math|<wide|H|\<dot\>><rsup|-1>>,
+  conservation of <math|L<rsup|p>> and control with
+  <math|<wide|H|\<dot\>><rsup|-\<alpha\>>>.
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|<left|[|3>|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>|<right|]|3>>=-C\<bbb-E\><around*|<left|[|3>|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>|<right|]|3>>-2\<bbb-E\><around*|[|<around*|\<langle\>|G\<ast\>\<theta\>,<around*|(|K\<ast\>\<theta\><rsup|1>|)>\<nabla\>\<theta\>|\<rangle\>>|]>-2\<bbb-E\><around*|[|<around*|\<langle\>|G\<ast\>\<theta\>,<around*|(|K\<ast\>\<theta\>|)>\<nabla\>\<theta\><rsup|2>|\<rangle\>>|]>+<text|l.o.t.>
+  </equation*>
+
+  the conservation of <math|<wide|H|\<dot\>><rsup|-1>> norm we have
+  <math|<around*|\<langle\>|G\<ast\>\<theta\>,<around*|(|K\<ast\>\<theta\>|)>\<nabla\>\<theta\><rsup|2>|\<rangle\>>=0>,
+  while the other trilinar term needs some control (actually we do not care
+  much since we can anyway bound it).
+
+  <\equation*>
+    <around*|\||<around*|\<langle\>|G\<ast\>\<theta\>,<around*|(|K\<ast\>\<theta\><rsup|1>|)>\<nabla\>\<theta\>|\<rangle\>>|\|>=<around*|<left|\||-2>|<around*|<left|\<langle\>|-3>|<wide*|<around*|(|K\<ast\>\<theta\><rsup|1>|)>\<nabla\>G\<ast\>\<theta\>|\<wide-underbrace\>><rsub|<wide|H|\<dot\>><rsup|\<alpha\>>>,<wide*|\<theta\>|\<wide-underbrace\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>>|<right|\<rangle\>|-3>>|<right|\||-2>>
+  </equation*>
+
+  and using the inequality <math|<around*|\<\|\|\>|f g
+  |\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|\<alpha\>>>\<lesssim\><around*|\<\|\|\>|f|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|2\<alpha\>>><around*|\<\|\|\>|g|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|1-\<alpha\>>>>
+  if <math|\<alpha\>\<less\>1/2> we have, by apriori estimates and if
+  <math|\<alpha\>\<leqslant\>1-1/p,\<alpha\>\<less\>1/2>:
+
+  <\equation*>
+    \<lesssim\><around*|\<\|\|\>|<around*|(|K\<ast\>\<theta\><rsup|1>|)>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|2\<alpha\>>><wide*|<around*|\<\|\|\>|\<nabla\>G\<ast\>\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|1-\<alpha\>>>|\<wide-underbrace\>><rsub|\<lesssim\><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>>><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>>\<lesssim\><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2><around*|\<\|\|\>|\<theta\><rsup|1>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|2\<alpha\>-1>>\<lesssim\><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2><around*|\<\|\|\>|\<theta\><rsup|1>|\<\|\|\>><rsub|L<rsup|P>\<cap\>L<rsup|1>><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2><around*|\<\|\|\>|\<theta\><rsub|0>|\<\|\|\>><rsub|L<rsup|P>\<cap\>L<rsup|1>>
+  </equation*>
+
+  however if <math|\<alpha\>\<less\>1-1/p> we can play with usual tricks and
+  interpolation to obtain a slightly better bound and close the estimate via
+  Young's inequality and obtain
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|[|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>|]>+c\<bbb-E\><around*|[|<around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>|]>\<lesssim\>\<varepsilon\><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-\<alpha\>>><rsup|2>+C<rsub|\<varepsilon\>><around*|\<\|\|\>|\<theta\><rsup|1>|\<\|\|\>><rsub|L<rsup|P>\<cap\>L<rsup|1>><rsup|2><around*|\<\|\|\>|\<theta\>|\<\|\|\>><rsub|<wide|H|\<dot\>><rsup|-1>><rsup|2>
+  </equation*>
+
+  which gives uniqueness.
+
+  In the last 15 minutes we will talk about other topics. The problem in
+  Euler is to control the non-linear term, apriori estimates give easily
+  compactness of smooth approximations in <math|L<rsup|2>>. With Kraichnan we
+  get estimates in <math|<wide|H|\<dot\>><rsup|1-\<alpha\>>> which gives
+  strong compactness in <math|L<rsup|2>> and we can pass to the limit easily
+  in the equation.
+
+  <\theorem*>
+    (Galeati\UGrotto\UMaurelli, 2024+) Linear Kraichnan with
+    <math|\<alpha\>\<in\><around*|(|0,1|)>>
+
+    <\equation*>
+      \<partial\><rsub|t>\<mu\>+div<around*|(|\<mu\>\<circ\>\<mathd\>W|)>=0,
+    </equation*>
+
+    then, for all <math|s\<in\><around*|(|0,d/2|)>>,
+
+    <\equation*>
+      <frac|\<mathd\>|\<mathd\>t>\<bbb-E\><around*|<left|[|3>|<around*|<left|\<\|\|\>|1>|\<mu\>|<right|\<\|\|\>|1>><rsub|<wide|H|\<dot\>><rsup|-s>><rsup|2>|<right|]|3>>=-C
+      \<bbb-E\><around*|<left|[|3>|<around*|<left|\<\|\|\>|1>|\<mu\>|<right|\<\|\|\>|1>><rsub|<wide|H|\<dot\>><rsup|-s+1-\<alpha\>>><rsup|2>|<right|]|3>>+<text|l.o.t.>
+    </equation*>
+  </theorem*>
+
+  <\theorem*>
+    (Jian\ULuo, 2024+ & Bagnara\UGaleati\UM. 2024+) Consider generalized SQG,
+    the strong uniqueness for solutions in <math|L<rsup|p>\<cap\>L<rsup|1>>
+    with <math|p\<geqslant\>2>.
+  </theorem*>
+
+  \;
+
+  \ 
+
+  \ 
+
+  \;
+
+  \;
+
+  \;
 
   \;
 </body>
@@ -635,11 +938,19 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|?>>
-    <associate|auto-10|<tuple|?|?>>
-    <associate|auto-13|<tuple|?|?>>
-    <associate|auto-2|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
+    <associate|eq:eu-plus-kr|<tuple|2|?>>
     <associate|eq:sol-ode|<tuple|1|?>>
-    <associate|h.glldji6qxv1|<tuple|?|?>>
+    <associate|th:existence|<tuple|1|?>>
+    <associate|th:uniqueness|<tuple|2|?>>
   </collection>
 </references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|Maurelli
+      - Regularisation by noise> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|1fn>
+    </associate>
+  </collection>
+</auxiliary>
