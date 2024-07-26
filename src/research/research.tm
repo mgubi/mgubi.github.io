@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -79,7 +79,12 @@
 
   <subsection*|Other material>
 
-  <notes-link|Notes|srq/srq-intro.tm> for the seminar held during the
+  <notes-link|Notes|bernoulli/bernoulli-intro.tm> from the lectures of the
+  2nd workshop (<hlink|URL|https://sites.google.com/view/spde-bernoulli/workshop-2>)
+  of the Program \PNew developments and challenges in Stochastic Partial
+  Differential Equations\Q at the Bernoulli Center, EPFL, Lausanne\ 
+
+  <notes-link|Notes|srq/srq-intro.tm> from the seminar held during the
   <hlink|SRQ \U Scaling limits, rough paths, quantum field
   theory|https://www.newton.ac.uk/event/srq/> research period in 2018 at the
   Newton Institute, Cambrige
