@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./bernoulli-intro.html">bernoulli</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">Otto - A continuity argument in regularity structures<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      The lectures of Felix Otto at the second workshop of the Bernoulli
+      Center Program &ldquo;New developments and challenges in Stochastic
+      Partial Differential Equations&rdquo; 
+    </div>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      <b>Otto | A cont. arg. in regularity structures | Lecture 1 | Tuesday
+      July 22, 9:00&ndash;10:30</b>
+    </p>
+    <p>
+      Plan: 1) Setup (informal ~ formal), definition of solutions; 2) A priori
+      estimates on solutions; 3) Continuity argument to construct solutions.
+    </p>
+    <p>
+      <b>1. Definition of solutions</b>
+    </p>
+    <p>
+      <span class="underline">1.1 Parametrization of solution manifold (informal)</span>
+    </p>
+    <p>
+      To fix ideas consider an equation in the form
+    </p>
+    <center>
+      \(\displaystyle L \varphi = \xi + a (\varphi)\)
+    </center>
+    <p>
+      on \(\mathbb{R}^{1 + d} \in (y_0, y_1, \ldots, y_d)\) where \(L\) is a
+      constant coefficients operator, maybe the heat operator \(L =
+      \tfrac{\partial}{\partial y_0} - \tfrac{\partial^2}{\partial y_1^2}
+      -
+\cdots - \tfrac{\partial^2}{\partial y_1^2}\) but it is not crucial
+      and \(\xi\) is some distributional/analytic, and \(a (\varphi)\) is an
+      analytic polynomial. We decide that we will solve the equation up to an
+      analytic function \(q\):
+    </p>
+    <center>
+      \(\displaystyle L \varphi = \xi + a (\varphi) + q\)
+    </center>
+    <p>
+      this is not crazy since \(\xi\) and \(q\) are pretty much disjoint
+      contributions. For \(a = 0\) the solution manifold
+    </p>
+    <center>
+      \(\displaystyle \{ \varphi | L \varphi = \xi + \text{analytic} | \}\)
+    </center>
+    <p>
+      is an affine space over linear space of \(\{ p \shortmid L p
+      \text{analytic} \} = \{ p \text{analytic} \}\). Pick a \(\Pi_0\) s.t.
+      \(L \Pi_0 = \xi = \Pi_0^-\) then the map \(p \mapsto \Pi_0 + p\) is a
+      parametrization of the solution manifold at \(a = 0\). 
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-otto-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: -6.39715702479339em; height: 12.7943140495868em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          <b>Goal</b>: Extend this parametrization to neighborhood of \(a =
+          0\) in \(a\)-space in form of two maps \(\Pi [a, p], \Pi^- [a, p]\)
+          such that
+        </p><center>
+          \(\displaystyle L \Pi = \Pi^- + \text{analytic}\)
+        </center><p>
+          and
+        </p><center>
+          \(\displaystyle \Pi^- = a (\Pi) + \Pi_0\)
+        </center><p>
+          and s.t.
+        </p><center>
+          \(\displaystyle \Pi [a = 0, p] = \Pi_0 + p\)
+        </center><p>
+          and
+        </p><center>
+          \(\displaystyle \Pi^- [a = 0, p] = \Pi_0^-
+          \qquad
+(\operatorname{polynomial}\operatorname{sector})\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      The condition \(\Pi^- = a (\Pi) + \Pi_0\) is not robust, and we will
+      eventually replace it (in the last lecture). 
+    </p>
+    <p>
+      Try implicit function argument. Let \(\delta \Pi^{(-)}\) denote the
+      directional derivative of \(\Pi^{(-)}\) in directions of \(\delta a\) at
+      \(a = 0\). 
+    </p>
+    <center>
+      \(\displaystyle L \delta \Pi = L \delta \Pi^- + \text{analytic} \qquad
+      \text{and} \qquad
+\delta \Pi^- = \delta a (\Pi_0 + p)\)
+    </center>
+    <p>
+      but this PDE leaves \(\delta \Pi\) underdetermined up to an analytic
+      function.
+    </p>
+    <p>
+      Attempts to restrict the construction: 
+    </p>
+    <p>
+      &ndash; translation invariance: \(\varphi (z + \cdot) = \hat{\varphi}\)
+      and \(\xi (z + \cdot) = \hat{\xi}\) then \((\hat{\varphi}, \hat{\xi})\)
+      is also a solution. Then we could try to impose covariance at the level
+      of \(\Pi^{(-)}\), \(\Pi^{(-)} [a, p (z + \cdot)] = \hat{\Pi}^{(-)} [a,
+      p] (z + \cdot)\) but this fails! Indeed look at \(d = 0\), \(\mathrm{d}
+      \Pi_0 / \mathrm{d} x_0 = \Pi^-_0\) and think to \(\Pi^-\) as white noise
+      and \(\Pi\) as Brownian motion and there is no way to impose this
+      covariance.
+    </p>
+    <p>
+      &ndash; rescaling invariance: for \(r \in (0, \infty)\), let \(R y =
+      (r^2 y_0, r y_1, \ldots, r y_d)\) is made s.t. \(L \{ y \mapsto \varphi
+      (R y) \} = r^2 (L \varphi) (R \cdot)\), so if we rescale \(\varphi (R
+      \cdot) = r^{\alpha} \hat{\varphi}\) and \(\xi (R \cdot) = r^{\alpha - 2}
+      \hat{\xi}\) and \(a (r^{\alpha} \cdot) = r^{\alpha - 2} \hat{a}\) then
+      \((\hat{a}, \hat{\varphi}, \hat{\xi})\) is again a solution. We can now
+      try to impose that the parametrization of the solution manifold is
+      covariant wrt. the scaling:
+    </p>
+    <center>
+      \(\displaystyle r^{\alpha} \Pi [a (r^{\alpha} \cdot), p (R \cdot)] =
+      \hat{\Pi} [r^{\alpha - 2}
+a, r^{\alpha} p] (R \cdot),\)
+    </center>
+    <center>
+      \(\displaystyle r^{\alpha - 2} \Pi^- [a (r^{\alpha} \cdot), p (R \cdot)]
+      = \hat{\Pi}^-
+[r^{\alpha - 2} a, r^{\alpha} p] (R \cdot),\)
+    </center>
+    <p>
+      and this works! and fixrs the degree of non-uniqueness. 
+    </p>
+    <p>
+      Range of \(\alpha\)? We want to be in the singular setting so \(\alpha <
+      0\), but we want also to be super-renormalizable, so we want \(a
+      (\varphi) = r^{\alpha - 2}  \hat{a} (r^{- \alpha} \varphi) \rightarrow
+      0\) as \(r \searrow 0\) so the l.h.s. \(O (r^{\alpha - 2 - K \alpha})\)
+      <font color="#800000">[to finish]</font> and this will give the condition
+      \(\alpha > \cdots\).
+    </p>
+    <p>
+      <span class="underline">1.2. Centered model \((\Pi, \Gamma)\) (informal)</span>
+    </p>
+    <p>
+      No natural origin for space&ndash;time. \(\Pi^{(-)}_x\) for every origin
+      = &ldquo;base-point&rdquo; \(x\). We recover covariance wrt.
+      translations:
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-otto-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><center>
+          \(\displaystyle \Pi_x^{(-)} [a, p (z + \cdot)] = \Pi_{x + z}^{(-)}
+          [a, p] (z + \cdot) .\)
+        </center><p>
+          By construction, there exists
+        </p><center>
+          \(\displaystyle (a, p) \mapsto \Gamma [a, p] \in (\tilde{a},
+          \tilde{p}) \text{-space}\)
+        </center><p>
+          such that
+        </p><center>
+          \(\displaystyle \Pi_x \circ \Gamma_{x, x'} = \Pi_{x'}\)
+        </center><p>
+          and
+        </p><center>
+          \(\displaystyle \Gamma [a, p] = (a, \underbrace{\Gamma'
+          [a,
+p]}_{\text{\scriptsize{$\begin{array}{c}
+ 
+          \operatorname{space}-\operatorname{time}\\
+ 
+          \operatorname{analytic}\\
+ 
+          \operatorname{functions}
+\end{array}$}}})\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      Covariance properties:
+    </p>
+    <center>
+      \(\displaystyle \Gamma'_{x, x'} [a, p (z + \cdot)] = \hat{\Gamma}'_{z +
+      x, z + x'} [a, p],
+\qquad\)
+    </center>
+    <center>
+      \(\displaystyle r^{\alpha} \Gamma_{x, 0}' [a (r^{\alpha} \cdot), p (R
+      \cdot)] = \Gamma'_{R x,
+0} [r^{\alpha - 2} a, r^{\alpha} p] .\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Remark. </strong>
+    </p>
+    <p>
+      &mdash; The big difference with RS is that we are more parcimonious on
+      the parametrization of the objects, we reduce to the solution manifold
+      and have the right amount of counterterms, the price to pay is that we
+      are not able to formulate a linear fixpoint problem and we will use a
+      continuity argument to handle the non-linear setting.
+    </p>
+    <p>
+      &mdash; There is no single canonical parametrization of the solution
+      manifold, we have charts (caused by the choice of base-point) and
+      transition maps given by the \(\Gamma\)s. 
+    </p>
+    <p style="margin-bottom: 1em">
+      &mdash; We parametrize the rough manifold of solutions with analytic
+      function (exploiting the property that they are indeed solutions).
+    </p>
+    <p>
+      <span class="underline">1.3 Algebraization (informal to formal)</span>
+    </p>
+    <p>
+      Recall informal: 
+    </p>
+    <center>
+      \(\displaystyle \text{analytic } \ni (a, p) \mapsto \Pi^{(-)} [a, p] \in
+      \text{rough}\)
+    </center>
+    <p>
+      Power-series Ansatz:
+    </p>
+    <center>
+      \(\displaystyle \Pi_x^{(-)} [a, p] = \sum_{\beta} \Pi_{x \beta}^{(-)}
+      \prod_{k \in
+\mathbb{N}_0} \left( \frac{1}{k!} \frac{\mathrm{d}^k
+      a}{\mathrm{d} \varphi^k}
+(0) \right)^{\beta (k)} \prod_{h \in
+      \mathbb{N}_0^{1 + d}} \left(
+\underbrace{\frac{1}{n!} \frac{\mathrm{d}^n
+      p}{\mathrm{d} y^n} (x)}_{z_n [p (x
++ \cdot)]} \right)^{\beta (n)}\)
+    </center>
+    <center>
+      \(\displaystyle z_n [p] := \frac{1}{n!} \frac{\mathrm{d}^n p}{\mathrm{d}
+      y^n} (0), \qquad n =
+(n_0, n_1, \ldots, n_d) \in \mathbb{N}_0^{1 + d}\)
+    </center>
+    <p>
+      and \(\beta\) is a multi-index on index set \(\mathbb{N}_0 \sqcup
+      \mathbb{N}_0^{1 + d}\) and \(\left( z^{\beta} := \prod_k z_k^{\beta (k)}
+      \prod_n z_n^{\beta (n)} \right)
+[a, p]\). 
+    </p>
+    <p>
+      we may construct these coefficients \(\Pi_{x \hspace{1em} \beta} \in
+      \mathcal{S}' (\mathbb{R}^{1 + d})\). We put them in a single object as a
+      formal power-series:
+    </p>
+    <center>
+      \(\displaystyle \Pi_x \in \mathcal{S}' (\mathbb{R}^{1 + d}) [[(z_k),
+      (z_n)]] .\)
+    </center>
+    <p>
+      Polynomial sector: there are three classes of multi-indeces: 1) the
+      polynomial ones, 
+    </p>
+    <center>
+      \(\displaystyle T^{\operatorname{pol}} := \{ \delta_n \shortmid n \in
+      \mathbb{N}_0^{1 + d} \},
+\qquad T^- := \{ 0 \} \cup \{ \beta \shortmid
+      \beta (k) \neq 0 \text{for some
+$k \in \mathbb{N}_0$} \}, \qquad T :=
+      T^{\operatorname{pol}} \cup T^-\)
+    </center>
+    <p>
+      and by construction in 1.1, (i.e. \(\Pi^- [a = 0, p] = \Pi^-_0\) and
+      \(\Pi [a = 0, p] = \Pi_0 + p\)) we find
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{lll}
+  \Pi^-_{x \beta} = 0, &  &
+      \text{unless $\beta \in T^-$},\\
+  \Pi_{x \beta} = 0, &  & \text{unless
+      $\beta \in T$},\\
+  \Pi_{x \delta_n} = (\cdot - x)^n . &  &
+      
+\end{array}\)
+    </center>
+    <p>
+      Recall 1.2 informally: 
+    </p>
+    <center>
+      \(\displaystyle \text{analytic } \ni (a, p) \mapsto \Gamma_{x, x'} [a,
+      p] \in \text{analytic}\)
+    </center>
+    <p>
+      We make a power-series Ansatz
+    </p>
+    <center>
+      \(\displaystyle z^{\gamma} [\Gamma_{x, x'} [a, p]] = \sum_{\beta}
+      (\Gamma_{x,
+x'}^{\star})^{\gamma}_{\beta} z^{\beta} [a, p]\)
+    </center>
+    <p>
+      i.e. \(\Gamma_{x, x'}^{\star}\) is an algebra automorphism in the formal
+      power series in the variables \(((z_k), (z_n))\) with coefficient in
+      \(\mathbb{R}\):
+    </p>
+    <center>
+      \(\displaystyle \Gamma_{x, x'}^{\star} \in
+      \widetilde{\operatorname{Alg}} (\mathbb{R} [[z_k,
+z_n]])\)
+    </center>
+    <center>
+      \(\displaystyle \Gamma_{x, x'}^{\star} (\pi \pi') = \Gamma_{x,
+      x'}^{\star} (\pi) \Gamma_{x,
+x'}^{\star} (\pi')\)
+    </center>
+    <p>
+      By definition in 1.2. we get the axioms of regularity structures&rdquo;
+    </p>
+    <center>
+      \(\displaystyle \Pi_x^{(-)} = \Gamma_{x, x'} \Pi_{x'}^{(-)}\)
+    </center>
+    <p>
+      and this makes sense since \(\Pi_{x'}^{(-)} \in \mathcal{S}' [[z_k,
+      z_n]]\) and \(\Gamma_{x, x'} \in \operatorname{End} (\mathbb{R} [[z_k,
+      z_n]])\). The property \(\Gamma_{x, x'} [a, p] = (a, \ast)\) translates
+      to the fact that \(\Gamma_{x, x'}^{\star} =\operatorname{id}\) on
+      \(\mathbb{R} [[z_k]]\) and the scaling covariance translate to
+    </p>
+    <center>
+      \(\displaystyle r^{| \beta |} \Pi^-_{\beta} = \hat{\Pi}_{\beta} (R
+      \cdot), \qquad r^{| \beta |
+- 2} \Pi^-_{\beta} = \hat{\Pi}_{\beta}^- (R
+      \cdot), \qquad r^{| \beta | - |
+\gamma |} (\Gamma_{x,
+      0}^{\star})^{\gamma}_{\beta} = (\Gamma_{R
+      x,
+0}^{\star})^{\gamma}_{\beta} .\)
+    </center>
+    <p>
+      with homogeneity
+    </p>
+    <center>
+      \(\displaystyle | \beta | - \alpha = - \underbrace{(\alpha -
+      2)}_{\text{scaling of $a$}}
+\sum_k \beta (k) +
+      \underbrace{(\alpha)}_{\text{scaling of $\varphi$}} \sum_k
+k \beta (k) -
+      \underbrace{(\alpha)}_{\text{scaling of $p$}} \sum_n \beta (n)
+      +
+\underbrace{(1)}_{\text{scaling of $y$}} \sum_n | n | \beta (n)\)
+    </center>
+    <p>
+      with  \(| n | = 2 n_0 + n_1 + \cdots + n_d\).
+    </p>
+    <p>
+      Recall what \(\hat{\Pi}\) is. We rescale the solution and the
+      parametrization of the solution manifold, and its coordinates
+    </p>
+    <center>
+      \(\displaystyle \varphi (R \cdot) = r^{\alpha} \hat{\varphi}, \quad \xi
+      (R \cdot) = r^{\alpha
+- 2} \hat{\xi}, \quad a (r^{\alpha} \cdot) =
+      r^{\alpha - 2} \hat{a},\)
+    </center>
+    <center>
+      \(\displaystyle r^{\alpha} \Pi [a (r^{\alpha} \cdot), p (R \cdot)] =
+      \hat{\Pi} [r^{\alpha - 2}
+a, r^{\alpha} p] (R \cdot)\)
+    </center>
+    <center>
+      \(\displaystyle r^{| \beta |} \Pi_{\beta} = \hat{\Pi}_{\beta} (R
+      \cdot)\)
+    </center>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em">
+      <font color="black"><div class="ornament" style="background-color:;display:block;">
+        <p>
+          LOTT: We may construct \(\Pi_x \in \mathcal{S}' [[z_k, z_n]]\),
+          \(\Gamma_{x, x'}^{\star} \in \operatorname{Aut} (\mathbb{R} [[z_n,
+          z_k]])\) such that
+        </p>
+        <center>
+          \(\displaystyle \Pi_{x, \beta, \gamma} (x) = O (r^{| \beta |}),
+          \qquad \Pi_{x, \beta,
+\gamma}^- (x) = O (r^{| \beta | - 2}), \qquad
+          (\Gamma_{x,
+x'}^{\star})^{\gamma}_{\beta} = O (| x' - x |^{| \beta |
+          - | \gamma |}) .\)
+        </center>
+      </div></font>
+    </div>
+    <p>
+      <span class="underline"><p>
+        1.4. Notion of solution (informal to formal)
+      </p></span>
+    </p>
+    <center>
+      \(\displaystyle \varphi = \text{solution for some fixed nonlinearity
+      $a$}\)
+    </center>
+    <center>
+      \(\displaystyle = \Pi [a, p] \qquad \text{for some $p$ with $L \Pi [a,
+      p] = \Pi^- [a, p]$},\)
+    </center>
+    <p>
+      point in \((a, p)\)-space which can be identified wth Dirac measures,
+      which is nothing more than a multiplicative linear functionals on
+      functions \(\pi\) on \((a, p)\) space. So it is convenient to think
+      about this as an algebra homomorphism (character) of the algebra
+      \(\mathbb{R} [[z_k, z_n]]\), i.e. \(\operatorname{Alg} (\mathbb{R}
+      [[z_k, z_n]], \mathbb{R})\) and this is for us a modelled distribution. 
+    </p>
+    <p>
+      <hr></hr> [end of the first lecture]
+    </p>
+    <p>
+      <b>Otto | Solution theory for singular SPDE | Lecture 2 | Tuesday July
+      22, 14:15&ndash;15:45</b>
+    </p>
+    <p>
+      Recall our setting:
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-otto-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><center>
+          \(\displaystyle \{ \varphi \shortmid L \varphi = a (\varphi) + \xi +
+          \text{analytic} \}\)
+        </center><center>
+          \(\displaystyle \varphi = \Pi_x [a, p], \qquad a (\varphi) + \xi =
+          \Pi_x^- [a, p], \qquad
+\Gamma_{x, x'}\)
+        </center><center>
+          \(\displaystyle \Pi_x \in \mathcal{S}' [[z_k, z_n]], \qquad
+          \Gamma^{\star}_{x, x'} \in
+\operatorname{Alg} (\mathbb{R} [[z_k,
+          z_n]])\)
+        </center><p>
+          plus additional covariance properties of these objects.
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      <span class="underline">1.4 Notion of solution (informal to formal)</span>
+    </p>
+    <p>
+      Fix a non-linearity \(a\). 
+    </p>
+    <p>
+      Then \(\varphi = \Pi [a, p]\) for some \(p\) with \(L \Pi [a, p] = \Pi^-
+      [a, p]\) \(\sim\) this is a point in \((a, p)\)-space \(=\) Dirac
+      measure on \((a, p)\)-space \(=\) multiplicative functional on the space
+      of functions on \((a, p)\)-space \(=\) an element \(f\) of the set of
+      algebra homomorphism from \(\mathbb{R} [z_k, z_n]\) to \(\mathbb{R}\),
+      i.e. \((f. \pi \pi') = (f. \pi) (f. \pi')\), \(f. 1 = 1\).
+    </p>
+    <p>
+      Recall that \(\mathbb{R} [z_k, z_n]\) is the space of polynomials, which
+      in the dual picture give more freedom in \(\operatorname{Alg}
+      (\mathbb{R} [z_k, z_n], \mathbb{R})\).
+    </p>
+    <p>
+      Ansatz: let's fix a base point \(x\) and let \(f_x \in
+      \operatorname{Alg} (\mathbb{R} [z_k, z_n], \mathbb{R})\)
+    </p>
+    <center>
+      \(\displaystyle \frac{1}{k!} \frac{\mathrm{d}^k a}{d \varphi^k} (0) =
+      f_x .z_k, \qquad \varphi
+= \underbrace{f_x}_{\in (\mathbb{R} [z_k,
+      z_n])^{\star}} .
+\underbrace{\Pi_x}_{\in \mathcal{S}' [[z_k, z_n]]}\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle \varphi^- = f_x . \Pi_x^-, \qquad \text{satisfies}
+      \qquad L \varphi =
+\varphi^-\)
+    </center>
+    <p>
+      Could have taken a different base point \(x'\) and
+    </p>
+    <center>
+      \(\displaystyle \varphi = f_{x'} . \Pi_{x'} = f_x . \Gamma_{x, x'}
+      \Pi_{x'} .\)
+    </center>
+    <p>
+      We should think of \(f = (f_x)_x\) satisfying the covariance property
+    </p>
+    <center>
+      \(\displaystyle f_{x'} = f_x . \Gamma_{x, x'} .\)
+    </center>
+    <p>
+      This is the space of &ldquo;modelled distributions&rdquo;. But there is
+      a mistmatch also here between \(\mathbb{R} [z_k, z_n] \) and
+      \(\mathbb{R} [[z_k, z_n]]\). We need a truncation to make these two
+      structures compatible. Fix \(\kappa > 2\) and consider
+    </p>
+    <center>
+      \(\displaystyle Q : \mathbb{R} [[z_k, z_n]] \rightarrow \mathbb{R} [z_k,
+      z_n]\)
+    </center>
+    <p>
+      defined as
+    </p>
+    <center>
+      \(\displaystyle Q z^{\beta} = \left\{ \begin{array}{lll}
+  z^{\beta}, &
+      \qquad & \text{if $| \beta | < \kappa$},\\
+  0, &  & \text{otherwise}
+      .
+\end{array} \right.\)
+    </center>
+    <p>
+      Definition of a solution. A solution is a family \(f\) satisfying three
+      conditions:
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em; background-color: #a0a0a0; border-right: 0px solid; border-left: 0px solid"><p>
+          <font color="white">1.</font>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em; border-left: 0px solid; border-right: 0px solid"><p>
+          \(f = \{ f_x \in \operatorname{Alg} (R [z_k, z_n], \mathbb{R})
+          \}_x\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      and
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em; background-color: #a0a0a0; border-right: 0px solid; border-left: 0px solid"><p>
+          <font color="white">2.</font>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em; border-left: 0px solid; border-right: 0px solid"><p>
+          \(f_x .z_k = \frac{1}{k!}  \frac{\mathrm{d}^k a}{d \varphi^k} (0),
+          \qquad
+(f_{x'} - f_x . \Gamma_{x, x'})^{\gamma} = O (| x - x'
+          |^{\kappa - | \gamma
+|})\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      As a consequence of this condition and of the estimates of
+      \(\Pi^{(-)}_x\) we have
+    </p>
+    <center>
+      \(\displaystyle (f_{x'} .Q \Pi_x - f_x .Q \Pi_x)_r (x') = O (\max_{|
+      \gamma | < \kappa} (| x'
+- x |^{\kappa - | \gamma |} + r^{| \gamma
+      |}))\)
+    </center>
+    <center>
+      \(\displaystyle (f_{x'} .Q \Pi_x^- - f_x .Q \Pi_x^-)_r (x') = O (\max_{|
+      \gamma | < \kappa} (|
+x' - x |^{\kappa - | \gamma |} + r^{| \gamma | -
+      2}))\)
+    </center>
+    <p>
+      and by reconstruction there exists unique (!) functions \(\varphi,
+      \varphi^- \in \mathcal{S}'\) such that
+    </p>
+    <center>
+      \(\displaystyle (\varphi - f_x .Q \Pi_x)_r (x) = O (r^{\kappa}), \qquad
+      (\varphi^- - f_x .Q
+\Pi^-_x)_r (x) = O (r^{\kappa - 2}),\)
+    </center>
+    <p>
+      now, for some \(\psi \in \mathcal{S}\):
+    </p>
+    <center>
+      \(\displaystyle \xi_r (x) = (\xi, r^{- D} \psi (R^{- 1} (x + \cdot))),
+      \qquad R^{- 1} y =
+(r^{- 2} y_0, r^{- 1} y_1, \ldots, r^{- 1} y_d),\)
+    </center>
+    <p>
+      and \(D = 2 + d\) is the effective dimension. And moreover we impose:
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em; background-color: #a0a0a0; border-right: 0px solid; border-left: 0px solid"><p>
+          <font color="white">3.</font>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; text-align: center; border-top: 0.5px solid; border-bottom: 0.5px solid; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em; border-left: 0px solid; border-right: 0px solid"><p>
+          \(L \varphi = \varphi^-\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      <b>2. Apriori estimates of \(f\)</b>
+    </p>
+    <p>
+      <span class="underline">2.1 Overview</span>
+    </p>
+    <p>
+      Fix \(\kappa > 2\) and \(\kappa \not{\in} \mathbb{N}\). Introduce norms
+    </p>
+    <center>
+      \(\displaystyle M := \max_{| \gamma | < \kappa} \sup_{x, x'}  \frac{|
+      (f_{x'} - f_x Q
+\Gamma_{x, x'})^{\gamma} |}{| x' - x |^{\kappa - |
+      \gamma |}}, \qquad M^- :=
+\max_{| \gamma | < \kappa, \marked{\gamma \in
+      T^-}} \sup_{x, x'}  \frac{|
+(f_{x'} - f_x Q \Gamma_{x, x'})^{\gamma}
+      |}{| x' - x |^{\kappa - | \gamma |}},\)
+    </center>
+    <center>
+      \(\displaystyle M^{\operatorname{pol}} := \max_{| \gamma | < \kappa,
+      \marked{\gamma \in
+T^{\operatorname{pol}}}} \sup_{x, x'}  \frac{|
+      (f_{x'} - f_x Q \Gamma_{x,
+x'})^{\gamma} |}{| x' - x |^{\kappa - |
+      \gamma |}},\)
+    </center>
+    <p>
+      where recall that
+    </p>
+    <center>
+      \(\displaystyle T^{\operatorname{pol}} := \{ \delta_n \shortmid n \in
+      \mathbb{N}_0^{1 + d} \},
+\qquad T^- := \{ 0 \} \cup \{ \beta \shortmid
+      \beta (k) \neq 0 \text{for some
+$k \in \mathbb{N}_0$} \}, \qquad T :=
+      T^{\operatorname{pol}} \cup T^-\)
+    </center>
+    <p>
+      and by construction in 1.1, (i.e. \(\Pi^- [a = 0, p] = \Pi^-_0\) and
+      \(\Pi [a = 0, p] = \Pi_0 + p\)) we find
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{lll}
+  \Pi^-_{x \beta} = 0, &  &
+      \text{unless $\beta \in T^-$},\\
+  \Pi_{x \beta} = 0, &  & \text{unless
+      $\beta \in T$},\\
+  \Pi_{x \delta_n} = (\cdot - x)^n . &  &
+      
+\end{array}\)
+    </center>
+    <center>
+      \(\displaystyle R := \sup_{\psi \in \mathcal{B}} \sup_{\gamma, x} 
+      \frac{| (\varphi - f_x .Q
+\Pi_x)_r (x) |}{r^{\kappa}}, \qquad R^- :=
+      \sup_{\psi \in \mathcal{B}}
+\sup_{\gamma, x}  \frac{| (\varphi^- - f_x
+      .Q \Pi^-_x)_r (x) |}{r^{\kappa -
+2}}\)
+    </center>
+    <p>
+      with \(\mathcal{B}\) a bounded set of Schwarz functions.
+    </p>
+    <p>
+      Auxiliary norms:
+    </p>
+    <center>
+      \(\displaystyle \| f \| = \max_{| n | < \kappa} \sup_x  | f_x .z_n |,
+      \qquad \lambda = \max_{k
+\leqslant K} \sup_x  | f_x .z_k | = \max_{k
+      \leqslant K} \left| \frac{1}{k!}
+\frac{\mathrm{d}^k a}{\mathrm{d}
+      \varphi^k} (0) \right| \ll 1.\)
+    </center>
+    <p>
+      We can think to \(M\) as a \(C^{\kappa}\)-norm while to \(\| f \|\) as a
+      \(C^{\lfloor k \rfloor}\)-norm, so slightly weaker. But these numbers
+      refer to non-linear objects. 
+    </p>
+    <p>
+      Four tasks: 
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; border-right: 1px solid; border-bottom: 1px solid; padding-left: 1em; padding-right: 1em; padding-bottom: 1em; padding-top: 1em; border-left: 1px solid; border-top: 1px solid"><p>
+          1) Algebraic continuity argument: we can estimate \(M\) by
+          \(M^{\operatorname{pol}}\) by a straighforward argument to get:
+        </p><center>
+          \(\displaystyle M \lesssim_{\Gamma} C (\| f \|)
+          (M^{\operatorname{pol}} + 1),\)
+        </center><center>
+          \(\displaystyle M^- \lesssim_{\Gamma} \lambda (M + C (\| f \|))\)
+        </center></td>
+        <td style="width: 50%; border-right: 1px solid; border-bottom: 1px solid; padding-left: 1em; padding-right: 1em; padding-bottom: 1em; padding-top: 1em; border-top: 1px solid"><p>
+          2) Reconstruction: 
+        </p><center>
+          \(\displaystyle R^- \lesssim_{\Pi} M^-\)
+        </center></td>
+      </tr><tr>
+        <td style="width: 50%; border-right: 1px solid; border-bottom: 1px solid; padding-left: 1em; padding-right: 1em; padding-bottom: 1em; padding-top: 1em; border-left: 1px solid"><p>
+          3) Integration:
+        </p><center>
+          \(\displaystyle R \lesssim R^- \qquad \left( \kappa \not{\in}
+          \mathbb{N} \right)\)
+        </center></td>
+        <td style="width: 50%; border-right: 1px solid; border-bottom: 1px solid; padding-left: 1em; padding-right: 1em; padding-bottom: 1em; padding-top: 1em"><p>
+          4) Three point argument
+        </p><center>
+          \(\displaystyle M^{\operatorname{pol}} \lesssim_{\Gamma} M^- + R\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      All together these give
+    </p>
+    <center>
+      \(\displaystyle M \lesssim_{\Pi, \Gamma} C (\| f \|) (\lambda M + 1)\)
+    </center>
+    <p>
+      which looks quite good and useful, by taking \(\lambda\) small. To beat
+      \((\| f \|)\) we need an interpolation argument. Estimate \(\| f \|\) as
+      follows
+    </p>
+    <center>
+      \(\displaystyle \| f \| \leqslant \varepsilon M + C_{\varepsilon}
+      (\sup_x | f_x .z_0 |)\)
+    </center>
+    <p>
+      but the real problem comes from the term \(C (\| f \|) \ast 1\) in the
+      estimate for \(M\), this cannot be beaten easily.
+    </p>
+    <p>
+      We need a second round of estimates. Fix
+    </p>
+    <center>
+      \(\displaystyle \tilde{\kappa} = \inf \{ | \beta | \shortmid | \beta | >
+      0 \} \in (0, 1)\)
+    </center>
+    <p>
+      define \(\tilde{M}, \tilde{M}^-, \tilde{M}^{\operatorname{pol}},
+      \tilde{R}, \tilde{R}^-\) with similar expressions as before.
+    </p>
+    <p>
+      Then \(\tilde{M}^-\) related to \(\gamma \in T^-\) with \(| \gamma | <
+      \tilde{\kappa}\) are of the form \(\gamma (n) = 0\) for all \(n\)
+      because \(\Gamma^{\star}_{x, x'}, f_x\) are &ldquo;trivial&rdquo; on
+      \(z_k\)'s and \(\tilde{M}^- = 0\).
+    </p>
+    <center>
+      \(\displaystyle \tilde{M} = \tilde{M}^{\operatorname{pol}} = \sup_{x,
+      x'} \frac{| f_{x'} .z_0
+- f_x .z_0 |}{| x' - x |^{\tilde{\kappa}}} =:
+      [f.z_0]_{\tilde{\kappa}}\)
+    </center>
+    <p>
+      and the three steps above are:
+    </p>
+    <p>
+      Algebraic
+    </p>
+    <center>
+      \(\displaystyle \tilde{R}^- \lesssim_{\Gamma} \tilde{R} + C (\| f \|)
+      \lambda + \sup_{x, r
+\geqslant 1} \frac{| \varphi^-_r (x)
+      |}{r^{\tilde{\kappa} - 2}}\)
+    </center>
+    <p>
+      Integration
+    </p>
+    <center>
+      \(\displaystyle \tilde{R} \leqslant \tilde{R}^-\)
+    </center>
+    <p>
+      three point argument
+    </p>
+    <center>
+      \(\displaystyle \tilde{M}^{\operatorname{pol}} \lesssim_{\Pi}
+      \tilde{R}\)
+    </center>
+    <p>
+      and all combined produce
+    </p>
+    <center>
+      \(\displaystyle [f.z_0]_{\tilde{\kappa}} = \tilde{M} \lesssim C (\| f
+      \|)  \marked{\lambda} 
+(M + 1) + \sup_{x, r \geqslant 1} \frac{|
+      \varphi^-_r (x) |}{r^{\tilde{\kappa}
+- 2}}\)
+    </center>
+    <p>
+      and by periodic boundary conditions we have
+    </p>
+    <center>
+      \(\displaystyle \| f.z_0 \| \lesssim [f.z_0]_{\tilde{\kappa}}\)
+    </center>
+    <p>
+      and we can close the loop with a small constant \(\lambda\) in front of
+      everything.
+    </p>
+    <p>
+      Let's go to some analytic estimates, e.g. for the algebraic argument
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma. </strong><i>a) For some \(\tilde{\kappa} < \kappa\)</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle M^- \lesssim \lambda \tilde{M}\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Consider \(\gamma \in T^- = \{ 0 \} \cup \{
+      \gamma \shortmid \exists k, \gamma (k) \neq 0
+\}\). If \(\gamma = 0\)
+    </p>
+    <center>
+      \(\displaystyle (f_{x'} - f_x .Q \Gamma^{\star}_{x, x'})^0 = f_{x'} .1 -
+      f_x .Q
+\Gamma^{\star}_{x, x'} 1 = 0,\)
+    </center>
+    <p>
+      Now if \(\gamma (k) \neq 0\) for some \(k\) we write \(\gamma = \delta_k
+      + \tilde{\gamma}\) and define a new \(\tilde{\kappa}\) by \(\kappa = (|
+      \delta_k | - \alpha) + \tilde{\kappa}\) so that \(| \tilde{\gamma} | <
+      \tilde{\kappa}\) and now with \(z^{\gamma} = z_k z^{\tilde{\gamma}}\)
+      and use the properties of \(\Gamma^{\star}_{x, x'}\) to have
+    </p>
+    <center>
+      \(\displaystyle (f_{x'} - f_x .Q \Gamma^{\star}_{x, x'})^{\gamma} =
+      f_{x'} .z^{\gamma} - f_x
+.Q \Gamma^{\star}_{x, x'} z^{\gamma} = f_{x'}
+      .z^{\gamma} - f_x .Q
+(\Gamma^{\star}_{x, x'} z_k)  (\Gamma^{\star}_{x,
+      x'} z^{\tilde{\gamma}})\)
+    </center>
+    <center>
+      \(\displaystyle = f_{x'} . (z_k z^{\tilde{\gamma}}) - f_x .
+      \underbrace{(\Gamma^{\star}_{x,
+x'} z_k)}_{z_k}  \tilde{Q}
+      (\Gamma^{\star}_{x, x'} z^{\tilde{\gamma}}) =
+f_{x'} .z_k f_{x'}
+      .z^{\tilde{\gamma}} - f_x . z_k f_x . \tilde{Q}
+(\Gamma^{\star}_{x, x'}
+      z^{\tilde{\gamma}})\)
+    </center>
+    <center>
+      \(\displaystyle = (f_{x'} .z_k) (f_{x'} .z^{\tilde{\gamma}} - f_x .
+      \tilde{Q}
+(\Gamma^{\star}_{x, x'} z^{\tilde{\gamma}})) =
+      \underbrace{\frac{\mathrm{d}^k
+a}{\mathrm{d} \varphi^k} (0)}_{\lesssim
+      \lambda} (f_{x'} .z^{\tilde{\gamma}} -
+f_x . \tilde{Q}
+      (\Gamma^{\star}_{x, x'} z^{\tilde{\gamma}}))\)
+    </center>
+    <center>
+      \(\displaystyle \lesssim \lambda \tilde{M} | x' - x |^{\tilde{\kappa} -
+      | \tilde{\gamma} |}
+\lesssim \lambda \tilde{M} | x' - x |^{\kappa - |
+      \gamma |} .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      <span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      <hr></hr>[end of second lecture]
+    </p>
+    <p>
+      <b>Otto | Solution theory for singular SPDEs | Lecture 3 | Wednesday
+      July 24, 11:00&ndash;12:30</b>
+    </p>
+    <p>
+      All we have already said in a picture:
+    </p>
+    <font style="font-size: 50.0%"><table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em"><p>
+          <b>solution manifold \(\{ \varphi \}\)</b>
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          <b>param. via \((a, p)\)-space</b>
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          <b>model </b>
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          <b>modelled distr</b>
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em"><p>
+          <b>apriori estimates</b>
+        </p></td>
+      </tr><tr>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em"><p>
+          
+        </p><p>
+          \(\{ \varphi | L \varphi = a (\varphi) + \xi + \text{analytic} \}\)
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><center>
+          \(\displaystyle \varphi \in \Pi [a, p]\)
+        </center><center>
+          \(\displaystyle a (\varphi) + \xi = \Pi^- [a, p]\)
+        </center><p>
+          (non robust)
+        </p><center>
+          \(\displaystyle L \Pi [a, p] = \Pi^- [a, p]\)
+        </center><center>
+          \(\displaystyle + \text{analytic}\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(\Pi, \Pi^- \in \mathcal{S}' [[z_k, z_n]]\)
+        </p><p>
+          \(\Pi [a, p] = \sum_{\beta} \Pi_{\beta} z^{\beta} [a, p]\)
+        </p><p>
+          \(z^{\beta} = \Pi_{k \in \mathbb{N}_0} z_k^{\beta (k)} \Pi_{n
+          \in
+\mathbb{N}_0^{1 + d}} z_n^{\beta (n)}\)
+        </p><center>
+          \(\displaystyle z_k [a] = \frac{1}{k!} \frac{\mathrm{d}^k a}{d
+          \varphi^k} (0)\)
+        </center><center>
+          \(\displaystyle z_n [p] = \frac{1}{n!} \frac{\mathrm{d}^n
+          p}{\operatorname{dy}^n} (0)\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(f \in \operatorname{Alg} (\mathbb{R} [z_k, z_n], \mathbb{R})\)
+        </p><center>
+          \(\displaystyle \varphi \approx f. \Pi \rightsquigarrow R\)
+        </center><center>
+          \(\displaystyle \varphi^- \approx f. \Pi^- \rightsquigarrow R^-\)
+        </center><p>
+          and
+        </p><center>
+          \(\displaystyle L \varphi = \varphi^-\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em"><p>
+          Reconstruction
+        </p><center>
+          \(\displaystyle R^- \lesssim_{\Pi} M^-\)
+        </center><p>
+          Integration
+        </p><center>
+          \(\displaystyle R \lesssim R^-\)
+        </center><p>
+          3pt argument
+        </p><center>
+          \(\displaystyle M^{\operatorname{pol}} \lesssim_{\Pi} M^- + R\)
+        </center><p>
+          Algebraic argument
+        </p><center>
+          \(\displaystyle M \lesssim M^{\operatorname{pol}} + 1\)
+        </center><center>
+          \(\displaystyle M^- \lesssim \lambda (M + 1)\)
+        </center></td>
+      </tr><tr>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em"><center>
+          \(\displaystyle \)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><center>
+          \(\displaystyle \Pi [a = 0, p] = \Pi_0 + p\)
+        </center><center>
+          \(\displaystyle \Pi^- [a, p] = \Pi^-_0\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(\Pi_{\beta} = 0\) unless \(\beta \in T\)
+        </p><p>
+          \(\Pi_{\delta_n (y)} = y^n\) for \(\delta_n =
+          T^{\operatorname{pol}}\)
+        </p><p>
+          \(\Pi_{\beta}^- = 0\)
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em"><p>
+          
+        </p></td>
+      </tr><tr>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em"><p>
+          \(\varphi (R \cdot) = r^{\alpha} \hat{\varphi}\)
+        </p><p>
+          \(\xi (R \cdot) = r^{\alpha - 2} \hat{\xi}\)
+        </p><p>
+          \(a (r^{\alpha} \cdot) = r^{\alpha - 2} \hat{a}\)
+        </p><p>
+          singular: \(\varphi \rightarrow \infty\) at fixed \(\hat{\varphi}\)
+        </p><p>
+          super-rinorm \(\Leftrightarrow\)
+        </p><center>
+          \(\displaystyle \alpha \kappa - (\alpha - 2) > 0\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><center>
+          \(\displaystyle r^{\alpha} \Pi [a (r^{\alpha} \cdot), p (R \cdot)] =
+          \hat{\Pi} [r^{\alpha - 2}
+a, r^{\alpha} p] (R \cdot)\)
+        </center><center>
+          \(\displaystyle r^{\alpha - 2} \Pi^- [a (r^{\alpha} \cdot), p (R
+          \cdot)] = \hat{\Pi}^-
+[r^{\alpha - 2} a, r^{\alpha} p] (R \cdot)\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(r^{| \beta |} \Pi_{\beta} = \hat{\Pi}_{\beta} (R \cdot)\)
+        </p><p>
+          \(| \beta | - \alpha = \sum_{k \leqslant K} (\alpha k - (\alpha -
+          2)) \beta (k)
++ \sum_n (| n | - \alpha) \beta (n)\)
+        </p><p>
+          as motivation for
+        </p><center>
+          \(\displaystyle \Pi_{\beta r} (x) = O (r^{| \beta |})\)
+        </center><center>
+          \(\displaystyle \Pi_{\beta r}^- (x) = O (r^{| \beta | - 2})\)
+        </center></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          
+        </p><p>
+          
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em"><p>
+          
+        </p></td>
+      </tr><tr>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-left: 0em"><p>
+          
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(\Gamma_{x, x'}\) in \((a, p)\)-space to itself
+        </p><center>
+          \(\displaystyle \Pi_x = \Pi_{x'} \circ \Gamma_{x, x'}\)
+        </center><center>
+          \(\displaystyle \Gamma_{x, x'} [a, p] = (a, \Gamma_{x, x'} [a, p])\)
+        </center><p>
+          \(r^{\alpha} {}^{\backprime} \Gamma_{x 0} [a (r^{\alpha} \cdot), p
+          (R \cdot)] =
+\hat{\Gamma}_{R x, 0}' [r^{\alpha - 2} a, r^{\alpha}
+          p]\)
+        </p><p>
+          
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(\Gamma^{\alpha}_{x, x'} \in \operatorname{Alg} (\mathbb{R} [[z_k,
+          z_n]])\)
+        </p><center>
+          \(\displaystyle \Pi^{(-)}_x = \Gamma_{x, x'} \Pi^{(-)}_x\)
+        </center><p>
+          \(\Gamma^{\star}_{x x'} =\operatorname{id}\) on \(\mathbb{R}
+          [[z_k]]\)
+        </p><p>
+          
+        </p><p>
+          \(r^{| \beta | - | \gamma |} (\Gamma^{\star}_{x
+          0})_{\beta}^{\gamma} =
+(\Gamma^{\star}_{R x 0})_{\beta}^{\gamma}\)
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
+          \(f_x \in \operatorname{Alg} (\mathbb{R} [z_k, z_n], \mathbb{R})\)
+        </p><center>
+          \(\displaystyle f_x \approx f_{x'} \Gamma^{\star}_{x x'}
+          \rightsquigarrow M = \left\{
+\begin{array}{l}
+ 
+          M^{\operatorname{pol}}\\
+  M^-
+\end{array} \right.\)
+        </center><center>
+          \(\displaystyle (\Gamma^{\star}_{x 0})^{\gamma}_{\beta} = O (| x' -
+          x |^{| \beta | - | \gamma
+|})\)
+        </center><p>
+          \(f_x .z_k = \frac{1}{k!} \frac{\mathrm{d}^k a}{d \varphi^k} (0)\)
+        </p></td>
+        <td style="width: 20%; border-top: 0.5px solid; border-bottom: 0.5px solid; border-left: 0.5px solid; border-right: 0.5px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 0em"><p>
+          
+        </p></td>
+      </tr></tbody>
+    </table></font>
+    <p>
+      
+    </p>
+    <p>
+      <b>3. Existence via a continuity argument</b>
+    </p>
+    <p>
+      Specify to \(a (\varphi) = \varphi^3\). Naively gives \(L \varphi =
+      \varphi^3 + \xi\), but this has to be renormalized.
+    </p>
+    <center>
+      \(\displaystyle L \varphi = \lambda \varphi^3 + h^{\rho} [\lambda]
+      \varphi + \xi_{\rho}\)
+    </center>
+    <p>
+      On the level of the model
+    </p>
+    <center>
+      \(\displaystyle \Pi \in \mathcal{S}' [[z_k, z_n]] \rightsquigarrow
+      \Pi^{(\rho)} \in C^{\kappa}
+[[z_k, z_n]]\)
+    </center>
+    <p>
+      which is an algebra. 
+    </p>
+    <p>
+      Scaling property is destroyed by the regularisation, we replace it by
+      saying
+    </p>
+    <center>
+      \(\displaystyle (\Pi^{(\rho)})^- = z_3 (\Pi^{(\rho)})^3 + C^{(\rho)}
+      \Pi^{(\rho)} + \xi_{\rho}
+\mathbb{1}\)
+    </center>
+    <center>
+      \(\displaystyle h^{\rho} [\lambda] = \sum_k \lambda^k C_k^{(\rho)}\)
+    </center>
+    <p>
+      We drop the superscript \(\rho\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma. </strong><i>(consistency) If \(\varphi \in C^{\kappa}\)
+      satisfies</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle L \varphi = \lambda \varphi^3 + h \varphi + \xi_{\rho}
+        =: \varphi^-\)
+      </center></i>
+    </p>
+    <p>
+      <i>then there exists a unique \(f = \{ f_x \in \operatorname{Alg}
+      (\mathbb{R} [z_k, z_n], \mathbb{R}) \}_x\) such that</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle M = \max_{| \gamma | < \kappa} \sup_{x, x'}  \frac{|
+        (f_{x'} - f_x Q
+\Gamma^{\star}_{x, x'})^{\gamma} |}{| x' - x |^{\kappa
+        - | \gamma |}} < \infty\)
+      </center></i>
+    </p>
+    <p>
+      <i>and</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle R = \sup_{\psi \in \mathcal{B}} \sup_{x, r} \frac{|
+        (\varphi - f_x .Q \Pi_x)_r
+(x) |}{r^{\kappa}} < \infty, \qquad R^- =
+        \sup_{\psi \in \mathcal{B}} \sup_{x,
+r} \frac{| (\varphi^- - f_x .Q
+        \Pi_x^-)_r (x) |}{r^{\kappa - 2}} < \infty\)
+      </center></i>
+    </p>
+    <p>
+      Classical result. Exists \(\varphi \in C^{\kappa}\) of \(L \varphi =
+      \lambda \varphi^3 + h \varphi + \xi_{\rho}\) plus boundary conditions,
+      and it is unique if it is not too large for \(| \lambda | \ll_{\rho}
+      1\). The bounds are not uniform in \(\rho\).
+    </p>
+    <p>
+      Strategy: monitor  \(\dot{\varphi} = \frac{\mathrm{d}
+      \varphi}{\mathrm{d} \lambda}\) and it satisfies
+    </p>
+    <center>
+      \(\displaystyle L \dot{\varphi} = (3 \lambda \varphi^2 + h)
+      \dot{\varphi} + \varphi^3\)
+    </center>
+    <p>
+      and establish solvability of
+    </p>
+    <center>
+      \(\displaystyle L_{\varphi} \dot{\varphi} = [L - (3 \lambda \varphi^2 +
+      h)] \dot{\varphi} =
+\zeta \in C^{\kappa - 2}\)
+    </center>
+    <p>
+      uniformly in \(| \lambda | \ll_{\Pi, \Gamma} 1\) then we are done, by a
+      continuity argument. 
+    </p>
+    <p>
+      Need a robust formulation of \(L_{\varphi}  \dot{\varphi} = \zeta\).
+    </p>
+    <center>
+      \(\displaystyle f \in \operatorname{Alg} (\mathbb{R} [z_k, z_n],
+      \mathbb{R})\)
+    </center>
+    <center>
+      \(\displaystyle \dot{f} \in T_f \operatorname{Alg} (\mathbb{R} [z_k,
+      z_n], \mathbb{R})\)
+    </center>
+    <p>
+      means that \(\dot{f}\) is a derivation:
+    </p>
+    <center>
+      \(\displaystyle \dot{f} . (\pi \pi') = (\dot{f} . \pi) (f. \pi') + (f.
+      \pi) (\dot{f} . \pi'),
+\qquad \dot{f} .1 = 0.\)
+    </center>
+    <p>
+      We then construct associated norms \(\dot{M}, \dot{R}, \ldots\)
+    </p>
+    <p>
+      Consider \(\dot{f} \in T_f \operatorname{Alg} (\mathbb{R} [z_k, z_n],
+      \mathbb{R})\) with
+    </p>
+    <center>
+      \(\displaystyle \dot{M} = \max_{| \gamma | < \kappa} \sup_{x, x'} 
+      \frac{| (\dot{f}_{x'} -
+\dot{f}_x Q \Gamma^{\star}_{x, x'})^{\gamma}
+      |}{| x' - x |^{\kappa - | \gamma
+|}} < \infty,\)
+    </center>
+    <p>
+      and by reconstruction
+    </p>
+    <center>
+      \(\displaystyle \dot{R} = \sup_{\psi \in \mathcal{B}} \sup_{x, r}
+      \frac{| (\dot{\varphi} -
+\dot{f}_x .Q \Pi_x)_r (x) |}{r^{\kappa}}
+      \lesssim_{\Pi} \dot{M},\)
+    </center>
+    <center>
+      \(\displaystyle \dot{R}^- = \sup_{\psi \in \mathcal{B}} \sup_{x, r}
+      \frac{| (\dot{\varphi}^- -
+\dot{f}_x .Q \Pi_x^-)_r (x) |}{r^{\kappa -
+      2}} \lesssim_{\Pi} \dot{M}\)
+    </center>
+    <p>
+      we encode
+    </p>
+    <center>
+      \(\displaystyle L_{\varphi} \dot{\varphi} = \zeta\)
+    </center>
+    <p>
+      by
+    </p>
+    <center>
+      \(\displaystyle L \dot{\varphi} = \dot{\varphi}^- + \zeta .\)
+    </center>
+    <p>
+      Task: estimate \(M\) (norm of \(f\)) in terms of \([\zeta]_{\kappa -
+      2}\). This will require again the four arguments, but nothing more. 
+    </p>
+    <p>
+      As in 2 we obtain apriori estimates in the linearized problem by running
+      through the four tasks: 
+    </p>
+    <p>
+      1) Algebraic argument (via the algebraic structure of the model
+      distribution as the derivative of a coherent model distribution)
+    </p>
+    <center>
+      \(\displaystyle \dot{M} \lesssim C (M, \| f \|)
+      (\dot{M}^{\operatorname{pol}} + \| \dot{f} \|)\)
+    </center>
+    <p>
+      2) 3pt argument:
+    </p>
+    <center>
+      \(\displaystyle \dot{M}^{\operatorname{pol}} \lesssim_{\Pi } \dot{M}^- +
+      \dot{R}\)
+    </center>
+    <p>
+      3) Integration
+    </p>
+    <center>
+      \(\displaystyle \dot{R} \lesssim R + [\zeta]_{\kappa - 2}\)
+    </center>
+    <p>
+      4) Reconstruction
+    </p>
+    <center>
+      \(\displaystyle \dot{R}^- \lesssim_{\Pi} \dot{M}^-\)
+    </center>
+    <p>
+      5) Algebraic argument
+    </p>
+    <center>
+      \(\displaystyle \dot{M}^- \lesssim_{\Gamma} C (M, \| f \|) \lambda
+      (\dot{M} + \| \dot{f} \|)\)
+    </center>
+    <p>
+      and putting all together:
+    </p>
+    <center>
+      \(\displaystyle \dot{M} \lesssim_{\Pi, \Gamma} C (M, \| f \|) (\lambda
+      \dot{M} + \| \dot{f} \|
++ [\zeta]_{\kappa - 2})\)
+    </center>
+    <p>
+      and \(\lambda \dot{M}\) can be absorbed, while \(\| \dot{f} \|\) can be
+      interpolated using the argument of the previous lecture, to obtain for
+      \(\lambda\) small depending only on \(\| \Pi, \Gamma \|\),
+    </p>
+    <center>
+      \(\displaystyle \dot{M} \lesssim [\zeta]_{\kappa - 2}\)
+    </center>
+    <p>
+      which allows to close the continuity argument only with the condition
+      \(| \lambda | \ll 1 / \| \Pi, \Gamma \|\) which is stable for the
+      passage to the limit.
+    </p>
+    <p>
+      <hr></hr>[end of third lecture]
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

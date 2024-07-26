@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./bernoulli-intro.html">bernoulli</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">Maurelli - Regularisation by noise<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      The lectures of Mario Maurelli at the second workshop of the Bernoulli
+      Center Program &ldquo;New developments and challenges in Stochastic
+      Partial Differential Equations&rdquo; 
+    </div>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      Maurelli | Regularisation by noise | Lecture 1 | Monday July 22,
+      9:00&ndash;10:30 
+    </p>
+    <p>
+      Joint work with Bagnara, Galeati.
+    </p>
+    <p>
+      <b>I. Introduction</b>
+    </p>
+    <p>
+      Regularisation by noise (RbN): possibly ill-posed ODE/PDE becomes
+      well-posed or gains regularity by addition of a suitable noise.
+    </p>
+    <p>
+      Motivations: 1) surprising phenomenon (things become better adding
+      noise); 2) noise may model disorder at small scales; 3) better
+      understanding of properties of noise. 
+    </p>
+    <p>
+      Main aim: show regularisation effect for 2d Euler with unbounded
+      vorticity by non-smooth Kraichnan noise.
+    </p>
+    <p>
+      Plan: (today) II. Regularisation by noise, for ODE/linear PDEs; III.
+      Kraichnan noise; (Lecture 2) IV. 2d Euler equation; V. Regularisation by
+      noise of 2D Euler; (Lecture 3) VI. Further properties and results on
+      reg. by Kraichnan.
+    </p>
+    <p>
+      <b>II. RbN for ODEs and linear PDEs</b>.
+    </p>
+    <p>
+      <span class="underline">1. ODEs</span>
+    </p>
+    <p>
+      ODE on \([0, T] \times \mathbb{R}^d\):
+    </p>
+    <center>
+      \(\displaystyle \dot{X} (t) = b (t, X (t)), X (0) = x_0 .\)
+    </center>
+    <p>
+      Counterexample for non-Lipshitz \(b\):
+    </p>
+    <center>
+      \(\displaystyle b (x) = | x |^{\alpha} \frac{x}{| x |} \mathbb{1}_{| x |
+      \neq 0}, \qquad
+\alpha < 1, \qquad x_0 = 0.\)
+    </center>
+    <p>
+      with multiple solutions:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle X (t) = c_{\alpha} (t - t_0)^{1 / (1
+        - \alpha)} \mathbb{1}_{t > t_0} v, \qquad
+v \in \mathbb{S}^{d - 1},
+        \qquad \forall t_0 \in [0, \infty] . \)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      SDE on \([0, T] \times \mathbb{R}^d\):
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} X_t = b (t, X_t) \mathrm{d} t + \mathrm{d}
+      W_t, \qquad X_0 = x_0\)
+    </center>
+    <p>
+      where \(b : [0, T] \times \mathbb{R}^d \rightarrow \mathbb{R}^d\) given,
+      \(W\) \(d\)-dim Bronwian motion. 
+    </p>
+    <p>
+      Literature: Zwokin '74, Veretennikov '80, Krylov-R&ouml;ckner 2005,
+      Flandoli&ndash;Gubinelli&ndash;Priola 2010, Catellier&ndash;Gubinelli
+      2016.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem. </strong><i>(Krylov-R&ouml;ckner) \(b \in L^q_t L^p_x\)
+      \(p, q \in (2, + \infty)\) \(2 / q + d / p < 1\) imples strong existence
+      and pathwise uniqueness for all \(x_0 \in \mathbb{R}^d\).</i>
+    </p>
+    <p>
+      Under the same conditions, there exists also a stochastic flow of
+      homeomeorphisms. \((t, x_0) \mapsto X_t^{x_0, \omega}\), i.e. a
+      modification of this map which is a flow of homeomorphisms for
+      \(\mathbb{P}\)-a.e. \(\omega \in \Omega\).
+    </p>
+    <p>
+      Intuition on the mechanism of regularisation: the noise is &ldquo;much
+      stronger&rdquo; than the drift. An heuristic computation:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} X_t = | X_t |^{\alpha} \frac{X_t}{| X_t |}
+      \mathrm{d} t +
+\mathrm{d} W_t, \qquad X_0 = 0.\)
+    </center>
+    <p>
+      Drift contribution is given by&nbsp;(<a href="#eq:sol-ode">1</a>), i.e. \(\mathrm{d}
+      Y_t = | Y_t |^{\alpha} \frac{Y_t}{| Y_t |} \mathrm{d} t\) so \(| Y_t |
+      \lesssim t^{1 / (1 - \alpha)}\) while \(| W_t | \approx t^{1 / 2}\) so
+    </p>
+    <center>
+      \(\displaystyle | Y_t | \ll | W_t | \Leftrightarrow (1 - \alpha)^{- 1} >
+      1 / 2,
+\Leftrightarrow \alpha > - 1 \Leftrightarrow | x |^{\alpha}
+      \frac{x}{| x |}
+\in L^p\)
+    </center>
+    <p>
+      with \(p > d\) (the Krylov-R&ouml;ckner condition)
+    </p>
+    <p>
+      <span class="underline">2. Stochastic continuity/transport equations</span>
+    </p>
+    <p>
+      Deterministic case (formally). Consider the ODE
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \dot{X}^{x_0}_t = b (t,
+      X^{x_0}_t)\\
+  \dot{X}^{x_0}_0 = x_0
+\end{array} \right.\)
+    </center>
+    <p>
+      with a corresponding flow of homeo/diffeomorphisms \((t, x) \mapsto
+      X_t^x\).
+    </p>
+    <p>
+      Continuity equation (\(\operatorname{div}b = 0\)) :
+    </p>
+    <center>
+      \(\displaystyle \partial_t \mu +\operatorname{div} (b \mu) = 0 \qquad
+      \text{on $[0, T] \times
+\mathbb{R}^d$}\)
+    </center>
+    <p>
+      \(\mu = \mu (t, x)\), with \(\mu (t, x) \mathrm{d} x = \mu (t,
+      \mathrm{d} x)\). Equation for the evolution of the mass associated with
+      the ODE given an initial mass \(\mu_0\). The mass \(\mu (t)\) at time
+      \(t\) will be given by \(\mu (t) = (X_t)_{\#} \mu_0\) where \(X_t :
+      \mathbb{R}^d \rightarrow \mathbb{R}^d\) is the map sending initial
+      conditions to the position of particles at time \(t\). 
+    </p>
+    <p>
+      For all test functions \(\varphi \in C^{\infty}_c\), by the chain rule
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mu_t (\varphi) =
+      \frac{\mathrm{d}}{\mathrm{d}
+t} \mu_0 (\varphi \circ X_t) = \mu_0 ((b
+      (t, \cdot) \nabla \varphi) \circ X_t)
+= \mu_t (b (t, \cdot) \nabla
+      \varphi)\)
+    </center>
+    <p>
+      which is the distributional form of the continuity equation.
+    </p>
+    <p>
+      Transport equation:
+    </p>
+    <center>
+      \(\displaystyle \partial_t \theta + b \cdot \nabla \theta = 0,\)
+    </center>
+    <p>
+      the evolution of a passive scalar advected with the ODE. This is
+      equivalent to the continuity equation in the case where
+      \(\operatorname{div}b = 0\). Note that \(\theta\) is constant along the
+      characteristics: \(\theta (t, X^x_t) = \theta (0, x)\) for all \(t
+      \geqslant 0\). 
+    </p>
+    <p>
+      Stochastic case: 
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \mathrm{d} X_t^x = b (t, X^x)
+      \mathrm{d} t + \sum_a \sigma_a (t, X^x)
+  \mathrm{d} W_t^a, \qquad t
+      \geqslant 0\\
+  X_0^x = x
+\end{array} \right.\)
+    </center>
+    <p>
+      For amost all \(\omega \in \Omega\), \(X_t : \mathbb{R}^d \rightarrow
+      \mathbb{R}^d\), it gives rise to a stochastic flow of homeo/diffeos:
+      random evolution of particles. Letting \(\mu (t) = (X_t)_{\#} \mu_0\) we
+      get the <i>stochastic continuity equation</i>:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu +\operatorname{div} (b \mu) \mathrm{d} t
+      + \sum_a
+\operatorname{div} (\sigma_a \mu) \circ \mathrm{d} W^a = 0,
+      \qquad \mu = \mu
+(t, x, \omega)\)
+    </center>
+    <p>
+      it expresses the random evolution of mass \(\mu_t^{\omega}\) associated
+      with the SDE. Analogously we have the <i>stochastic transport
+      equation</i>:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \theta + b \cdot \nabla \theta \mathrm{d} t +
+      \sum_a \sigma_a \cdot
+\nabla \theta \circ \mathrm{d} W^a = 0,\)
+    </center>
+    <p>
+      expressing the random evolution of a passive scalar. 
+    </p>
+    <p>
+      How do we prove these properties: test with test function and Ito
+      formula for the Stratonovich integration (which is a first order
+      expression), there is a corresponding Ito form of the equations but it
+      involves second derivatives of the solution.
+    </p>
+    <p>
+      3. RbN for linear stochastic transport equation
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \theta + b \cdot \nabla \theta \mathrm{d} t +
+      \sum_{a = 1}^d
+\nabla_a \theta \circ \mathrm{d} W^a = 0,\)
+    </center>
+    <p>
+      where \(W\) is a \(d\)-dimensional Brownian motion.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem. </strong><i>(Flandoli&ndash;Gubinelli&ndash;Priola
+      2010) \(b \in L^{\infty}_t (C^{0 +}_{x, \operatorname{bounded}})\),
+      \(\operatorname{div}b \in L^{2 +}_{t, x}\) then there exists strong and
+      pathwise unique transport equation in \(L^{\infty}_{t, x}\) for all
+      \(\theta_0 \in L^{\infty}_x\).</i>
+    </p>
+    <p>
+      The strategy of proof uses the diffeomorphic flow of characteristics.
+      Uniqueness follows from the relation \(\theta (t, X^x_t) = \theta (0,
+      x)\). 
+    </p>
+    <p>
+      <b>III. Non-smooth Kraichnan model of passive scalars</b>
+    </p>
+    <p>
+      <span class="underline">1. Isotropic structure of noise</span>
+    </p>
+    <p>
+      \(\dot{W}\) random velocity on \([0, T] \times \mathbb{R}^d\) field:
+      Gaussian, centered, white in time and isotropic (i.e. translation and
+      rotation invariant) in space and divergence free:
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\dot{W} (t, x) \dot{W} (s, y)] = \delta (t -
+      s) Q (x, y),\)
+    </center>
+    <p>
+      where the covariance is translation invariant:
+    </p>
+    <center>
+      \(\displaystyle Q (x, y) = Q (x - y)\)
+    </center>
+    <p>
+      with Fourier transform
+    </p>
+    <center>
+      \(\displaystyle \hat{Q} (\xi) = \langle \xi \rangle^{- d - 2 \alpha}
+      \underbrace{\left(
+\mathbb{I}- \frac{\xi \xi^T}{| \xi |^2}
+      \right)}_{\text{Leray projection
+giving div$\dot{V}$=0}}\)
+    </center>
+    <p>
+      with \(\langle \xi \rangle = (1 + | \xi |^2)^{1 / 2}\) and \(\alpha \in
+      (0, 1)\) (non-smooth regime). Fact: \(Q\) satisfies:
+    </p>
+    <center>
+      \(\displaystyle Q (G z) = G Q (z) G^T\)
+    </center>
+    <p>
+      for all \(G \in O (d)\). This implies that the law of \(\dot{W} (t, x)\)
+      is translation invariant and invariant under orthogonal transformation.
+    </p>
+    <p>
+      Structure of \(Q\): due to the symmetries, it decomposes into parallel
+      and orthogonal tensors (to \(x\)).
+    </p>
+    <center>
+      \(\displaystyle Q (x) = Q_L (x) \frac{x x^T}{| x |^2} + Q_N (x) \left(
+      \mathbb{I}+ \frac{x
+x^T}{| x |^2} \right),\)
+    </center>
+    <p>
+      with scalar quantities \(Q_L (x) = Q_L (| x |) = Q_{i i} (| x | e_i)\),
+      the logitudinal component and \(Q_N (x) = Q_N (| x |) = Q_{i i} (| x |
+      e_j)\) (with \(i \neq j\)), the orthogonal component (see the book of
+      Baxendale&ndash;Harris).
+    </p>
+    <p>
+      <span class="underline">2. Kraichnan passive scalar model</span>
+    </p>
+    <p>
+      Model of stochastic transport/continuity equation with no-drift and
+      noise \(W\)
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu +\operatorname{div} (\mu \circ \mathrm{d}
+      W) = 0\)
+    </center>
+    <p>
+      on \([0, T] \times \mathbb{R}^d\) with \(d \geqslant 2\). We can
+      represent the noise as an infinite series of Brownian contributions:
+    </p>
+    <center>
+      \(\displaystyle W (t, x) = \sum_{k = 1}^{\infty} \sigma_k (x) \mathrm{d}
+      B^k_t,\)
+    </center>
+    <p>
+      with \((B^k)_k\) i.i.d. Brownian motions and \((\sigma_k (x))_k\)
+      appropriate vector fields. In this case we have
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu + \sum_{k = 1}^{\infty}
+      \operatorname{div} (\sigma_k \mu) \circ
+\mathrm{d} B^k = 0.\)
+    </center>
+    <p>
+      Lagrangian viewpoint: SDE
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \mathrm{d} X_t^x = \sum_k
+      \sigma_k (t, X^x) \circ \mathrm{d} B_t^k = \circ
+  \mathrm{d} W (t,
+      X^x_t) \xequal[\operatorname{div}W = 0]{} \mathrm{d} W (t,
+  X^x_t),
+      \qquad t \geqslant 0,\\
+  X_0^x = x.
+\end{array} \right.\)
+    </center>
+    <p>
+      Feature of this model (rigorously for \(\alpha > 1\) where \(\dot{W}\)
+      is \(C^1\) in space). Using the divergence
+    </p>
+    <p>
+      1. The one point motion \(X^x_t\) is actually just a \(d\)-dimensional
+      Brownian motion. \((X^x_t)_t\) is a martingale and
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} [X^x]_t = \sum_k
+      \sigma_k (X^x_t) \sigma_k
+(X^x_t) = Q (0) = c\mathbb{I}.\)
+    </center>
+    <p>
+      2. The two point motion (Baxendale&ndash;Harris in the smooth case).
+      Closed SDE for the difference \(V = X^x - X^y\) of two points. \(V\) is
+      a martingale and
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} [V]_t = \sum_k [\sigma_k
+      (X^x_t) - \sigma_k
+(X^y_t)] [\sigma_k (X^x_t) - \sigma_k (X^y_t)] = 2 Q
+      (0) - 2 Q (X^x_t - X^y_t)
+= 2 Q (0) - 2 Q (V_t)\)
+    </center>
+    <p>
+      so \(V\) satisfies in law the following SDE:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} V = g (V) \mathrm{d} B\)
+    </center>
+    <p>
+      where \(B\) is a \(d\)-dimensional Brownian motion and \(g :
+      \mathbb{R}^d \rightarrow \mathbb{R}^d \times \mathbb{R}^d\) such that
+      \(g (x)^2 = 2 Q (0) - 2 Q (x)\), and
+    </p>
+    <center>
+      \(\displaystyle g (x) = [2 (Q_L (0) - Q_L (| x |))]^{1 / 2} \frac{x
+      x^T}{| x |^2} + [2 (Q_N
+(0) - Q_N (| x |))]^{1 / 2} \left( \mathbb{I}-
+      \frac{x x^T}{| x |^2} \right)\)
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      Maurelli | Regularisation by noise | Lecture 3 | Thursday July 25,
+      11:00&ndash;12:30 
+    </p>
+    <p>
+      Recall the setting:
+    </p>
+    <p>
+      <b>Noise</b>
+    </p>
+    <p>
+      Gaussian, divergence free, centered
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\dot{W} (t, x) \dot{W} (s, y)] = \delta (t -
+      s) Q (x - y)\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle \hat{Q} (n) = \langle n \rangle^{- d - 2 \alpha} \left(
+      \mathbb{I}- \frac{n
+n^T}{| n |^2} \right), \qquad W (t, x) = \sum_k
+      \sigma_k (x) W^k (t)\)
+    </center>
+    <p>
+      \(\alpha > 1\) the noise is \(C^1\) in space, and \(\alpha \in (0, 1)\)
+      where the noise is \(C^{\alpha -}\) in space. Isotropic structure
+    </p>
+    <center>
+      \(\displaystyle Q (x) \quad = \quad \underbrace{Q_L (| x |) \frac{x
+      x^T}{| x
+|^2}}_{\text{longitudinal component}} \quad + \quad
+      \underbrace{Q_N (| x |)
+\left( \mathbb{I}- \frac{x x^T}{| x |^2}
+      \right)}_{\text{normal component}}\)
+    </center>
+    <p>
+      <b>Kraichnan model of passive scalar</b>
+    </p>
+    <p>
+      (Kraichnan 1968)
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu +\operatorname{div} (\mu \circ \mathrm{d}
+      W) = 0,\)
+    </center>
+    <p>
+      with noise \(W\) as above. 
+    </p>
+    <p>
+      Lagrangian viewpoint: (formally since the vectorfields are not
+      necessarily smooth)
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} X^x_t = \circ \mathrm{d} W_t (t, X^x_t) =
+      \sum_k \sigma_k (X^x_t)
+\circ \mathrm{d} W^k_t, \qquad X^x_t = x.\)
+    </center>
+    <p>
+      And \(\mu\) represent the motion of the mass of an ensemble of particle
+      following this dynamics. 
+    </p>
+    <center>
+      \(\displaystyle \mu^{\omega}_t (x) \mathrm{d} x = \mu^{\omega}_t
+      (\mathrm{d} x) =
+(X^{\omega}_t)_{\#} \mu_0 .\)
+    </center>
+    <p>
+      Closed equation for \(V = X^x - X^y\), in law (in Ito sense)
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} V = \sqrt{2} (Q (0) - Q (V))^{1 / 2}
+      \mathrm{d} B\)
+    </center>
+    <p>
+      where \(B\) is a \(d\)-dimensional BM. Closed \(1 d\) SDE for the
+      distance \(| V | = | X^x - X^y |\), by Ito formula
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} | V | = \frac{V}{| V |} \sqrt{2}  (Q (0) - Q
+      (V))^{1 / 2}
+\mathrm{d} B + \frac{d - 1}{| V |} (Q_N (0) - Q_N (| V |))
+      \mathrm{d} t\)
+    </center>
+    <center>
+      \(\displaystyle d [| V |]_t = \frac{V}{| V |} g (V) g (V)^T \frac{V^T}{|
+      V |} \mathrm{d} t = 2
+(Q_L (0) - Q_L (| V |)) \mathrm{d} t\)
+    </center>
+    <p>
+      so in the end we have that \(| V |\) is a one dimensional diffusion with
+      generator \(A\) and satisfying the SDE:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} | V | = \sqrt{(2 (Q_L (0) - Q_L (| V |)))}
+      \mathrm{d} \tilde{B} +
+\frac{d - 1}{| V |} (Q_N (0) - Q_N (| V |))
+      \mathrm{d} t.\)
+    </center>
+    <p>
+      Eulerian counterpart of this computation: we have
+    </p>
+    <center>
+      \(\displaystyle \int \int \varphi (| X^x_t - X^y_t |) \mu_0 (\mathrm{d}
+      x) \mu_0 (\mathrm{d}
+y) = \int \int \varphi (| x - y |) \mu_t
+      (\mathrm{d} x) \mu_t (\mathrm{d} y)\)
+    </center>
+    <p>
+      and therefore
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \int \int \varphi (| x - y |) \mu_t
+      (\mathrm{d} x) \mu_t
+(\mathrm{d} y) = \int \int A \varphi (| x - y |)
+      \mu_t (\mathrm{d} x) \mu_t
+(\mathrm{d} y) \mathrm{d} t + \mathrm{d}
+      \text{(local martingale)} .\)
+    </center>
+    <p>
+      <b>III. Nonsmooth Kraichnan model \((\alpha \in (0, 1))\)</b>
+    </p>
+    <p>
+      Form of \(Q\). As a consequence of the formula
+    </p>
+    <center>
+      \(\displaystyle \hat{Q} (n) = \langle n \rangle^{- d - 2 \alpha} \left(
+      \mathbb{I}- \frac{n
+n^T}{| n |^2} \right)\)
+    </center>
+    <p>
+      we have (see e.g. Le&nbsp;Jan&ndash;Raimond 2002)
+    </p>
+    <center>
+      \(\displaystyle Q_L (0) - Q_L (| x |) = \beta_L | x |^{2 \alpha} + O_{|
+      x | \ll 1} (| x |^2)\)
+    </center>
+    <center>
+      \(\displaystyle Q_N (0) - Q_N (| x |) = \beta_N | x |^{2 \alpha} + O_{|
+      x | \ll 1} (| x |^2)\)
+    </center>
+    <p>
+      We have \(\beta_L, \beta_N\) and we have
+    </p>
+    <center>
+      \(\displaystyle \beta_N = \left( 1 + \frac{2 \alpha}{d - 1} \right)
+      \beta_L\)
+    </center>
+    <p>
+      by the divergence free condition.
+    </p>
+    <p>
+      Main features of the non-smooth Kraichnan model.
+    </p>
+    <p>
+      <span class="underline">1) Spontaneous stochasticity / particle splitting
+      (Bernard&ndash;Gawedzi&ndash;Kupiainen 1998)</span>
+    </p>
+    <p>
+      In the self-similar case, i.e. forgetting the full form of \(Q\) and
+      keeping only the leading term. Heuristically, if we start \(\mu_0 =
+      \delta_x\) in the smooth case we have \(\mu_t = \delta_{X^x_t}\),
+      however in the non-smooth case \(\mu_t\) becomes diffuse immediately for
+      \(t > 0\). Unexpected for a continuity equation. &ldquo;Formal
+      proof&rdquo;: 
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} | V | = (d - 1) \beta_N | V |^{2 \alpha - 1}
+      \mathrm{d} t + \sqrt{2
+\beta_L | V |^{2 \alpha}} \mathrm{d} B_t\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle \delta | V |^{1 - 2 \alpha} = (1 - \alpha) (d - 1 +
+      \alpha) \beta_L \frac{1}{|
+V |^{1 - \alpha}} \mathrm{d} t + (1 - \alpha)
+      \sqrt{2 \beta_L} \mathrm{d} B_t\)
+    </center>
+    <p>
+      and this is a Bessel process of dimension \(d / (1 - \alpha) > 2\).
+      Therefore if \(V_0 = 0\) then \(V_t > 0\) for all \(t > 0\) (i.e. there
+      exists a solution which exits from \(0\)).
+    </p>
+    <p>
+      <span class="underline">2) Wellposedness of the Eulerian model (from Le
+      Jan&ndash;Raimond 2002)</span>
+    </p>
+    <p>
+      Let's transform the equation in Ito form
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu +\operatorname{div} (\mu \mathrm{d} W) =
+      \frac{c}{2} \Delta \mu
+\mathrm{d} t\)
+    </center>
+    <p>
+      with \(c I = Q (0)\).
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem. </strong><i>(LJ-R) There exists a unique solution
+      adapted to the Brownian filtration in the class \(L^{\infty}_{t, \omega}
+      L_x^2\).</i>
+    </p>
+    <p>
+      The proof goes via Wiener chaos decomposition, proving that the various
+      projections are well-posed. 
+    </p>
+    <p>
+      Let's make connection with the two-point motion.
+    </p>
+    <p>
+      Define \((X^x, X^y)\) as a weak solution to the two-point motion
+      equation which is well defined as long as \(x \neq y\). Then
+    </p>
+    <center>
+      \(\displaystyle \int \int \operatorname{Law} ((X^x, X^y) |W) \mu_0
+      (\mathrm{d} x) \mu_0
+(\mathrm{d} y) = (\mu_t \otimes \mu_t)\)
+    </center>
+    <p>
+      and the SDE for \(| V | = | X^x - X^y |\) holds rigorously and in
+      particular there is spontaneous stochasticity.
+    </p>
+    <p>
+      There exists a unique selection of mass evolution which exhibiths
+      splitting.
+    </p>
+    <p>
+      <span class="underline">3) Anomalous regularisation of the two-point motion \((X^x,
+      X^y)\)</span>
+    </p>
+    <p>
+      Eyink&ndash;Xin (1996+), Hakulinen 2003 : regularisation properties for
+      the two-point motion.
+    </p>
+    <p>
+      <span class="underline">4) Anomalous dissipation of the \(L^2\)-norm</span>
+    </p>
+    <p>
+      qualitative Eyink&ndash;Drivas 2017, quantitative Rowan 2023+.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>IV. 2d Euler Equation</b>
+    </p>
+    <p>
+      1. Deterministic
+    </p>
+    <center>
+      \(\displaystyle \left\{ \begin{array}{l}
+  \partial_t \theta + u \cdot
+      \nabla \theta = 0\\
+  u = K \ast \theta
+\end{array} \right.\)
+    </center>
+    <p>
+      with vorticity field \(\theta : [0, T] \times \mathbb{R}^2 \rightarrow
+      \mathbb{R}\), velocity field \(u : [0, T] \times \mathbb{R}^2
+      \rightarrow \mathbb{R}^2\), \(\theta =\operatorname{curl}u
+      \Leftrightarrow u = K \ast \theta\),
+    </p>
+    <center>
+      \(\displaystyle K (x) = \frac{x^{\perp}}{| x |^2} = \nabla^{\perp} G
+      (x), \qquad G (x) = -
+\log | x | .\)
+    </center>
+    <p>
+      Features: transport/continuity equation with divergence-free velocity
+      field; non-linear, non-local; singular for &ldquo;mass
+      concentration&rdquo;, \(K\) is singular in \(0\);
+    </p>
+    <center>
+      \(\displaystyle \theta \in L^p, p \in (1, \infty) \Rightarrow G \ast
+      \theta \in W^{2, p}
+\Rightarrow u \in W^{1, p} .\)
+    </center>
+    <p>
+      Formally conserved quantities: 1) \(L^p\) norms of \(\theta\). \(p = 2\)
+      this is the enstrophy. 2) the \(\dot{H}^{- 1}\) norm of \(\theta\), i.e.
+      \(L^2\) norm of \(u\):
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \| \theta
+      \|^2_{\dot{H}^{- 1}} =
+\frac{\mathrm{d}}{\mathrm{d} t} \langle \theta, G
+      \ast \theta \rangle = 2 \int
+\theta (\nabla^{\perp} G \ast \theta) \cdot
+      (\nabla G \ast \theta) \mathrm{d}
+x = 0.\)
+    </center>
+    <p>
+      Results: 
+    </p>
+    <ul>
+      <li>
+        <p>
+          \(\theta_0 \in L^{\infty} \Rightarrow \exists ! \theta \in
+          L^{\infty}_{t, x}\) (Yudovich). However to model vorticity
+          concentrated configurations (vortex-sheets, etc&hellip;) we would
+          like to free ourselves from the boundedness condition.
+        </p>
+      </li>
+      <li>
+        <p>
+          For \(\theta_0 \in L^p\), \(p \in (1, + \infty)\). We have existence
+          (Di Perna&ndash;Majda 1987, and maybe Kato&ndash;Ponce) via
+          compactness arguments. What is not know is uniqueness. The are
+          counterexamples for forced Euler equation (Vishik 2018+) and other
+          via convex integration on the torus. Overall is believed that there
+          should not be uniqueness for these initial condition.
+        </p>
+      </li>
+      <li>
+        <p>
+          For \(\theta_0 \in \dot{H}^{- 1}\) existence? Wiedemann 2011 via
+          convex integration.
+        </p>
+      </li>
+      <li>
+        <p>
+          For \(\theta_0 \in \dot{H}^{- 1}\) and positive measure existence
+          has been established by Delort 1991.
+        </p>
+      </li>
+    </ul>
+    <p>
+      
+    </p>
+    <p>
+      <b>V. Regularisation by nonsmooth Kraichnan noise for 2d Euler</b>
+    </p>
+    <p>
+      We consider 2d Euler + non-smooth Kraichnan isotropic noise \(W\) of
+      index \(\alpha \in (0, 1)\):
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \theta + u \cdot \nabla \theta + \nabla
+      \theta \circ \mathrm{d} W =
+0, \qquad u = K \ast \theta .\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(Coghi-Maurelli
+      2023+) Existence of \(\dot{H}^{- 1}\) solutions. For \(\alpha \in (0,
+      1)\) and \(\omega_0 \in \dot{H}^{- 1}\) then there exists
+      probabilistically weak solutions \(\theta \in L^{\infty}_t \dot{H}^{-
+      1}_x \cap C_t (H^{- 4})\) \(\mathbb{P}- a.s\) satisfying in addition</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \theta \in L^2_{t, \omega} (\dot{H}^{- \alpha}_x) .\)
+      </center></i>
+    </p>
+    <p>
+      There is an anomalous regularisation of the solutions which live for
+      almost every time and almost surely in \(\dot{H}^{- \alpha}_x\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i>(Coghi-Maurelli
+      2023+) Uniqueness in \(L^p\). For \(\theta \in L^p \cap L^1 \cap
+      \dot{H}^{- 1}\) and </i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
+        \frac{2}{p} - 1 \right) <
+\alpha < \frac{1}{2} \wedge \left( 1 -
+        \frac{1}{p} \right)\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>then there is pathwise uniqueness (and strong existence) in
+      \(L^{\infty}_{t, \omega} (L^p_x \cap L^1_x) \cap L^{\infty}_t
+      L^2_{\omega}
+\dot{H}^{- 1}_x \cap L^2_{t, \omega} (\dot{H}^{-
+      \alpha})\).</i>
+    </p>
+    <p>
+      <hr></hr> [end of second lecture]
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>

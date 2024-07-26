@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Massimiliano Gubinelli</title>
+    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="/resources/favicon-32x32.png" rel="icon"></link>
+    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="/resources/notes-base.js" language="javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../../main.html">main</a>] [<a href="../research.html">research</a>] [<a href="./bernoulli-intro.html">bernoulli</a>]<em
+        class="notes-header-name">mg|pages</em>
+      </p>
+    </div>
+    <h1 id="auto-1">Shen - Stochastic quantisation<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      The lectures of Hao Shen at the second workshop of the Bernoulli Center
+      Program &ldquo;New developments and challenges in Stochastic Partial
+      Differential Equations&rdquo; 
+    </div>
+    <p>
+      <hr></hr>
+    </p>
+    <p>
+      <b>Shen | Stochastic quantisation | Lecture 1 | Monday July 22,
+      11:00&ndash;12:30</b>
+    </p>
+    <p>
+      Stochastic quantisation of Yang&ndash;Mills in 2D
+    </p>
+    <p>
+      We will use the dynamics to study the measure . Symmetry, Observables
+      which satisfy symmetry . use observables to characterize dynamics .
+      interesting interactions with geometry (Riemmannian and sub-Riemmanian
+      geometry, topology, Lie group theory)
+    </p>
+    <p>
+      We will focus mostly with recent paper with Chevyrev (2023) and older
+      papers with Chandra, Chevyrev, Hairer (2020). 
+    </p>
+    <p>
+      <b>Plan.</b> Lecture 1: YM, Lattice YM, main results. Lecture 2 : from
+      lattive to continuum. Lecture 3: invariant measure (TBC).
+    </p>
+    <p>
+      <b>Setup.</b> Compact \(G\) Lie group \(\subseteq U (N)\).
+      \(\mathfrak{g}\) Lie algebra (skew&ndash;hermitian matrices).
+      Exponential map \(\mathfrak{g} \rightarrow G\). Lie algebra is the
+      tangent space of the Lie group at the identity.
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em; text-align: center"><p>
+          <img src="bernoulli-w2-lectures-shen-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          YM model: \(A = \sum_{i = 1}^d A_i \mathrm{d} x_i\), \(A_i (x) \in
+          \mathfrak{g}\), 
+        </p><center>
+          \(\displaystyle S (A) = \int_{\mathbb{T}^2} | F (A) |^2 \mathrm{d} x
+          = \sum_{i, j}
+\int_{\mathbb{T}^2} | F_{i j} (A) |^2 \mathrm{d} x\)
+        </center><p>
+          and
+        </p><center>
+          \(\displaystyle F_{i j} (A) = \partial_i A_j - \partial_j A_i +
+          [A_i, A_j] .\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      We fixed a scalar product \(\langle, \rangle\) on \(\mathfrak{g}\). On
+      the matrix representation it is just \(\operatorname{Tr} (A^{\ast} B)\).
+    </p>
+    <p>
+      <b>Gauge symmetry.</b> given a function \(g : \mathbb{T}^2 \rightarrow
+      G\), we define the transformation
+    </p>
+    <center>
+      \(\displaystyle A \mapsto A^g = g A g^{- 1} - \mathrm{d} g g^{- 1},\)
+    </center>
+    <p>
+      and it turns out that \(S (A) = S (A^g)\) (e.g. by explicit
+      computation). Orbits for the group action
+    </p>
+    <center>
+      \(\displaystyle \{ A \} = \{ A^g : g \in (\mathbb{T}^2 \rightarrow G) \}
+      .\)
+    </center>
+    <p>
+      <b>Stochastic quantisation.</b> SPDE: we are looking at the (stochastic)
+      gradient flow of the equation with potential \(S (A)\)
+    </p>
+    <center>
+      \(\displaystyle \partial_t A = - \frac{1}{2} \nabla S (A) + \xi = -
+      \mathrm{d}^{\star}_A F (A)
++ \xi\)
+    </center>
+    <p>
+      where \(\xi = (\xi_1, \ldots, \xi_d)\) is a Lie-algebra valued
+      white-noise. This equation is not parabolic due to the gauge symmetry of
+      \(S (A)\): the linear part is not the Laplacian. In geometric terms the
+      Laplacian is \(\Delta = - \mathrm{d}^{\star} \mathrm{d} - \mathrm{d}
+      \mathrm{d}^{\star}\) byt the linear part of the equation is \(-
+      \mathrm{d}^{\star} \mathrm{d}\) so misses \(\mathrm{d}
+      \mathrm{d}^{\star}\). More explicitly
+    </p>
+    <center>
+      \(\displaystyle - \mathrm{d}^{\star} \mathrm{d} A_i = \sum_j \partial_i
+      \partial_j A_i -
+\partial_j^2 A_i\)
+    </center>
+    <p>
+      (some weird second order operator). Actually what we want is the
+      dynamics on the orbits of the group action, so we are free to add vector
+      fields which are parallele to the orbits and obtain an SPDE of the form
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em; text-align: center"><p>
+          <img src="bernoulli-w2-lectures-shen-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><center>
+          \(\displaystyle \partial_t A_i = \Delta A_i + [A_j, (2 \partial_j
+          A_i) - \partial_i A_j +
+[A_j, A_i]] + \xi_i\)
+        </center><p>
+          and we will use the shorthand notation
+        </p><center>
+          \(\displaystyle \partial_t A = \Delta A + A \partial A + A^3 + \xi\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      <b>Holonomy.</b> from any smooth curve \(\ell : [0, T] \rightarrow
+      \mathbb{T}^2\) we define \(y : [0, T] \rightarrow G\) starting with \(y
+      (0) =\operatorname{id}\) and following the ODE:
+    </p>
+    <p>
+      
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em; text-align: center"><p>
+          <img src="bernoulli-w2-lectures-shen-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><center>
+          \(\displaystyle \mathrm{d} y (s) = y (s) \underbrace{\langle A (\ell
+          (s)), \mathrm{d} \ell (s)
+\rangle}_{\mathrm{d} \gamma}\)
+        </center><center>
+          \(\displaystyle \operatorname{hol} (A, \ell) = y (1) \in G\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      If \(\ell (0) = \ell (1) = x \in \mathbb{T}^2\) then, under gauge
+      transformation, the holonomy changes by conjugation:
+    </p>
+    <center>
+      \(\displaystyle \operatorname{hol} (A^g, \ell) = g (x)
+      \operatorname{hol} (A^g, \ell) g (x)^{-
+1} .\)
+    </center>
+    <p>
+      Taking a trace (or any class function) we obtain a gauge-invariant
+      observable, usually called <span class="underline">Wilson loop</span>:
+    </p>
+    <center>
+      \(\displaystyle W (A, \ell) := \operatorname{Tr} (\operatorname{hol}
+      (A^g, \ell)), \qquad W
+(A^g, \ell) = W (A, \ell) .\)
+    </center>
+    <p>
+      <b>Dynamics.</b> In order to define the dynamics we need to renormalize
+      the equation and remove singularities:
+    </p>
+    <center>
+      \(\displaystyle \partial_t A = \Delta A + A \partial A + A^3 +
+      \xi_{\varepsilon} +
+C_{\varepsilon} A\)
+    </center>
+    <p>
+      the solutions of this SPDE live usually in \(C^{0 -}\) (in two
+      dimensions). However there is a problem in define the Wilson loops since
+      we cannot integrate a distribution on a line, i.e. \(\operatorname{hol}
+      (A, \ell)\) is not well defined on \(C^{0 -}\) fields \(A\). 
+    </p>
+    <p>
+      In the paper [CCHS], taking \(\alpha = 1^-\) it is defined a space
+      \(\Omega_{\alpha}^1\)<span style="margin-left: 1em"></span>such that \(C^0 \subset
+      \Omega_{\alpha}^1 \subset C^{\alpha - 1}\) such that the solution of the
+      SPDE lives on this space and there is a notion of gauge equivalence
+      \(\sim\) on \(\Omega_{\alpha}^1\).  
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em; text-align: center"><p>
+          <img src="bernoulli-w2-lectures-shen-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.86402203856749em; height: 11.728044077135em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p style="margin-top: 1em; margin-bottom: 1em">
+          <strong>Theorem. </strong><i>There exists a choice of the
+          renormalization constants \((C_{\varepsilon})_{\varepsilon}\) such
+          that the projection \(X_t\) of \(A_t\) to \(\Omega_{\alpha}^1 /
+          \sim\) is well defined in the limit \(\varepsilon \rightarrow 0\)
+          and local dynamics on gauge orbits exists.</i>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      <b>The 2d YM measure.</b> A generic connection is given by \((A_1,
+      A_2)\). It is possible to apply a gauge transformation such that any
+      connection is gauge equivalnent to one of the form \((0, \tilde{A}_2)\).
+      
+    </p>
+    <p>
+      Consider \(\mathcal{L}= \{ \text{loops in $\mathbb{T}^2$} \}\). The
+      holonomy gives an injective map \(\)
+    </p>
+    <center>
+      \(\displaystyle (\Omega_{\alpha}^1 / \sim) \hookrightarrow \{
+      \mathcal{L} \rightarrow G \} /
+G.\)
+    </center>
+    <p>
+      Injectivity is given by an argument like the following (in the abelian
+      version): if \(\int_{\ell} A = \int_{\ell} A'\) for any loop \(\ell\)
+      then \(A = A' + \nabla f\). Take a line \(\ell (x)\) from \(0\) to \(x\)
+      and \(f (x) = \int_{\ell} A - \int_{\ell} A'\) and by choosing the line
+      parallel to the coordinate axis at \(x\), one can recover the
+      derivatives of \(f\).
+    </p>
+    <p>
+      A lot of papers on 2d YM: Gross / Driver / Levy (2006) / Park, Pfeffer /
+      Sheffield, Yu (2023). The discuss a system of random holonomies, i.e. a
+      probability measure on \(\{ \mathcal{L} \rightarrow G \} / G\). This
+      model is integrable, i.e. the marginals are given by explicit
+      expressions. 
+    </p>
+    <p>
+      In the case of \(U (N)\):
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E}W
+      \left(
+\raisebox{-0.5\height}{\includegraphics[width=1.00009838646202cm,height=0.991669946215401cm]{image-1.pdf}}
+\right)
+      = e^{- s / 2}, \qquad \mathbb{E}W
+      \left(
+\raisebox{-0.5\height}{\includegraphics[width=1.00009838646202cm,height=0.991669946215401cm]{image-2.pdf}}
+\right)
+      = ? ? ?\)
+    </center>
+    <center>
+      \(\displaystyle \mathbb{E}W
+      \left(
+\raisebox{-0.5\height}{\includegraphics[width=1.39672701036337cm,height=1.18998425816608cm]{image-1.pdf}}
+\right)
+      = e^{- \frac{2 t + s}{2} \left( \cosh \frac{t}{N} + N \sinh
+      \left(
+\frac{t}{N} \right) \right)}\)
+    </center>
+    <p>
+      In general, the explicit formula of the density of a graph with \(F\)
+      faces and \(\ell\) edges is given in term of the group elements
+      associated to the edges as
+    </p>
+    <center>
+      \(\displaystyle \prod_F P_{| F |} (\operatorname{hol}_F)
+      \prod_{\ell}
+\operatorname{Haar}_{\ell}\)
+    </center>
+    <p>
+      where \(P\) is the heat kernel.
+    </p>
+    <p>
+      Questions: 1) has \(\mu\) full support on \(\Omega_{\alpha}^1 / \sim\)?
+      2) Is \(\mu\) the unique invariant measure of \((X_t)_t\) (reversible)?
+    </p>
+    <p>
+      These questions are addressed in a work with Chevyrev [CS]. 
+    </p>
+    <p>
+      <b>Lattice YM.</b> 
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-shen-5.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.19781818181818em; height: 10.3956363636364em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          Lattice \(\mathbb{L}\) with plaquettes: \(p = x_1 x_2 x_3 x_4\)
+        </p><center>
+          \(\displaystyle U (\partial p) = U (x_1, x_2) U (x_2, x_3) U (x_3,
+          x_4) U (x_4, x_1)\)
+        </center><center>
+          \(\displaystyle S (U) = \sum_p s (U (\partial p))\)
+        </center><p>
+          where \(s : G \rightarrow \mathbb{R}\) is such that \(s (x) = s
+          (x^{- 1})\) and \(s (x) = s (y x y^{- 1})\) (e.g. \(s (x)
+          =\operatorname{Re}\operatorname{Tr}x\). 
+        </p><p>
+          gauge transformation : \(U^g (x, y) = g (x) U (x, y) g (y)\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      The measure \(\mu\) is defined on \(G^{\mathbb{L}}\):
+    </p>
+    <center>
+      \(\displaystyle \mu (\mathrm{d} U) \sim e^{- S (U)}
+      \underbrace{\mathrm{d} U}_{\text{Haar
+measure}}\)
+    </center>
+    <p>
+      Remark: writing \(U (x, y) = \exp (\varepsilon A (x , y))\) we have, by
+      the Baker&ndash;Campbell&ndash;Hausdorff formula:
+    </p>
+    <center>
+      \(\displaystyle U (\partial p) = \exp (\varepsilon A (x_1, x_2)) \cdots
+      \exp (\varepsilon A
+(x_4, x_1))\)
+    </center>
+    <center>
+      \(\displaystyle = \exp (\varepsilon (A (x_1, x_2) + \cdots + A (x_4,
+      x_1)) + \varepsilon^2 ([A
+(x_1, x_2), A (x_2, x_3)] + \cdots))\)
+    </center>
+    <center>
+      \(\displaystyle = \exp (\varepsilon^2 F (A) + O (\varepsilon^3))\)
+    </center>
+    <p>
+      since \(A (x_1, x_2) \approx \varepsilon \nabla A \cdot (x_2 - x_1)\).
+    </p>
+    <p>
+      <hr></hr> [end first lecture]
+    </p>
+    <p>
+      <b>Shen | Stochastic quantisation | Lecture 2 | Wednesday July 24,
+      9:00&ndash;10:30</b>
+    </p>
+    <p>
+      Recall the setting
+    </p>
+    <center>
+      \(\displaystyle S (A) = \int_{\mathbb{T}^2} | F (A) |^2 \mathrm{d} x,
+      \qquad F_{i j} (A) =
+\partial_i A_j - \partial_j A_i + [A_i, A_j]\)
+    </center>
+    <center>
+      \(\displaystyle A \mapsto A^g = g A g^{- 1} + \mathrm{d} g g^{- 1}\)
+    </center>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \partial_t A = - \frac{1}{2} \nabla
+        S (A) - \mathrm{d}_A \mathrm{d}^{\star} A
++ C A + \xi \)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      which has this (vague) structure
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-shen-6.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: top; padding-right: 0em"><center>
+          \(\displaystyle \partial_t A = \Delta A + A \partial A + A^3 + C A\)
+        </center><p>
+          and in [CCSHS] there is a choice of a (finite) constant \(C\) such
+          that the solution is gauge covariant so that the dynamics is
+          well-defined (in three dimensions the constant is diverging but
+          there is a finite shift so that in some way this also applies). The
+          presence of a non-gauge invariant counterterm is due to the
+          regularisation of the noise which breaks the gauge invariance in
+          first place.
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      <b>Lattice YM</b>
+    </p>
+    <p>
+      Recall the setting of the previous lecture
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-shen-7.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.19781818181818em; height: 10.3956363636364em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          Lattice \(\mathbb{L}\) with plaquettes: \(p = x_1 x_2 x_3 x_4\)
+        </p><center>
+          \(\displaystyle U (\partial p) = U (x_1, x_2) U (x_2, x_3) U (x_3,
+          x_4) U (x_4, x_1)\)
+        </center><center>
+          \(\displaystyle S (U) = \sum_p s (U (\partial p))\)
+        </center><p>
+          where \(s : G \rightarrow \mathbb{R}\) is such that \(s (x) = s
+          (x^{- 1})\) and \(s (x) = s (y x y^{- 1})\). 
+        </p><p>
+          gauge transformation : \(U^g (x, y) = g (x) U (x, y) g (y)\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      The measure is defined via
+    </p>
+    <center>
+      \(\displaystyle e^{- S (U)} \mathrm{d} U\)
+    </center>
+    <p>
+      where \(\mathrm{d} U\) is the Haar measure on \(G^{\mathbb{L}}\).
+    </p>
+    <p>
+      For large class of functions \(s\) the lattice models all converge to
+      the same continuum limit (in terms of correlations of Wilson loops). The
+      function \(s\) measure how far \(U\) is from the identity. 
+    </p>
+    <p>
+      Examples: the Wilson action is defined via
+    </p>
+    <center>
+      \(\displaystyle s (x) = \varepsilon^{d - 4}
+      \operatorname{Re}\operatorname{Tr} (\mathbb{1}- x)
+. \qquad
+      \text{(Wilson)}\)
+    </center>
+    <p>
+      If \(G =\operatorname{SO} (N)\) we can write more explicitly the
+      dynamics: for edge \(e\) we have four plaquettes \(p\) adjiacent to it
+      (we write \(p > e\))
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} U_e = \sum_{p > e} U_e (U_p - U_p^{- 1})
+      \mathrm{d} t - \frac{N -
+1}{4} U_e \mathrm{d} t + U_e \mathrm{d} B_e\)
+    </center>
+    <p>
+      this dynamics can be used to prove mass gap (via log-Sobolev) at large
+      temperature and also large \(N\) limit.
+    </p>
+    <p>
+      Another choice of action is given by the Villain action:
+    </p>
+    <center>
+      \(\displaystyle s (x) = \log e^{\frac{\varepsilon^{4 - d}}{4} \Delta}
+      (x) \qquad
+\text{(Villain)}\)
+    </center>
+    <p>
+      where \(e^{t \Delta}\) is the heat kernel on the Lie group \(G\).
+    </p>
+    <p>
+      Manton action: 
+    </p>
+    <center>
+      \(\displaystyle s (x) = \varepsilon^{d - 4} d_G^2 (x, \operatorname{id})
+      = \varepsilon^{d - 4}
+| \log x |_{\mathfrak{g}}^2\)
+    </center>
+    <p>
+      where \(d_G (x, y)\) is the Riemmanian distance on the Lie group \(G\),
+      and \(\log x \in \mathfrak{g}\) is the corresponding element in the Lie
+      algebra given by the exponential map.
+    </p>
+    <p>
+      We will assume that our action belong to a class for which
+    </p>
+    <center>
+      \(\displaystyle s (x) = \varepsilon^{d - 4} d_G^2 (x, \operatorname{id})
+      + R_{\varepsilon} (x)\)
+    </center>
+    <p>
+      where \(R_{\varepsilon}\) is a remainder term. Let us check this
+      condition for the examples above. Varadhan formula gives
+    </p>
+    <center>
+      \(\displaystyle e^{\frac{t}{4} \Delta} (x) = e^{- | \log x
+      |_{\mathfrak{g}}^2 / t + (\cdots)}\)
+    </center>
+    <p>
+      for small \(t\). Similar argument holds for Wilson action, writing \(x =
+      e^{\log x}\) and performing a Taylor expansion.
+    </p>
+    <p>
+      The Langevin dynamics looks like
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} U = - \frac{1}{2} \nabla S (U) \mathrm{d} t +
+      \mathrm{d}_U
+\mathrm{d}^{\star}  U + U \circ \mathrm{d} W\)
+    </center>
+    <p>
+      and lives on the space \(\mathcal{Q}= \prod_{\text{edges}} G\),
+      \(\mathfrak{q}= \oplus_{\operatorname{edges}} \, \mathfrak{g}\). Here:
+      the gradient \(\nabla\) is the one on the Lie group \(\mathcal{Q}\).
+      Note that if \(\mathcal{B}\) is the Brownian motion on \(\mathcal{Q}\),
+      standard facts is that it satisfies an SDE:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mathcal{B}=\mathcal{B} \circ \mathrm{d} W\)
+    </center>
+    <p>
+      where \(\circ\) is Stratonovich and \(W\) is a Brownian motion on the
+      Lie algebra \(\mathfrak{q}\). Therefore the formula for \(U\) is a
+      Brownian motion on \(\mathcal{Q}\) with an additional gradient drift.
+    </p>
+    <p>
+      For all \(A \in \mathfrak{q}\), if \(f : \mathcal{Q} \rightarrow
+      \mathbb{R}\) we define the Lie derivative
+    </p>
+    <center>
+      \(\displaystyle \mathrm{D} f_U (A) = \left.
+      \dfrac{\mathrm{d}}{\mathrm{d} \alpha}
+\right|_{\alpha = 0} f (U
+      e^{\alpha A}), \qquad U \in \mathcal{Q}, A \in
+\mathfrak{q},\)
+    </center>
+    <p>
+      and define \(\nabla\) via
+    </p>
+    <center>
+      \(\displaystyle \langle \nabla S (U), X \rangle_{T_U \mathcal{Q}} =
+      \mathrm{D} S_U (X) .\)
+    </center>
+    <p>
+      Note also that the term \(\mathrm{d}_U \mathrm{d}^{\star}  U\) flows
+      parallel to the gauge orbits. We also rescale the lattice so that the
+      spacing is of size \(\varepsilon\):
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(Universality of
+      dynamics) Let \(A = A (\bar{C})\) the solution of the continuum
+      dynamics&nbsp;(<a href="#eq:dyn-c">1</a>), then as \(\varepsilon \rightarrow
+      0\),</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \lim_{\varepsilon \rightarrow 0} \| \log
+        U_{\varepsilon} - A \| = 0\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>if \(t \ll 1\) and the initial conditions converge in appropriate
+      sense. The norm \(\| \ast \|\) is the norm on \(\Omega_{\alpha}^1\) we
+      introduced in the last lecture.</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark. </strong>We will see: \(A_{\varepsilon} := \log
+      U_{\varepsilon}\) satisfies
+    </p>
+    <center>
+      \(\displaystyle \partial_t A_{\varepsilon} = \Delta A_{\varepsilon} +
+      A_{\varepsilon} \partial
+A_{\varepsilon} + A_{\varepsilon}^3 +
+      \xi_{\varepsilon} + \text{``errors''}\)
+    </center>
+    <p style="margin-bottom: 1em">
+      and we are not allowed to &ldquo;renormalized&rdquo; the discrete
+      models, so we need to show that all the error terms contribute to the
+      renormalization constant \(\bar{C}\) adding up precisely to give a gauge
+      covariant dynamics.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i>(Uniqueness of
+      gauge covariant renormalization) Write \(A (C, a)\) for the solution
+      with renormalization constant \(C\) and initial condition \(a\). If \(C
+      \neq \bar{C}\) then there exists a loop \(\ell : [0, 1] \rightarrow
+      \mathbb{T}^2\) and a gauge transformation \(g\) and initial condition
+      \(a\) such that</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle | \mathbb{E}W (A_t (C, a), \ell) -\mathbb{E}W (A_t (C,
+        a^g), \ell) | \gtrsim
+t^2\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>for small \(t \ll 1\). </i>
+    </p>
+    <p>
+      One need a quantitative control to exclude effects from blow-up of
+      solutions. The loop is the non-contractible loop which winds around the
+      torus.
+    </p>
+    <p>
+      The space \(\Omega_{\alpha}^1 / \sim\) is defined modulo
+      \(\alpha\)-H&ouml;lder gauge transformations, recall that
+      \(\Omega^1_{\alpha} \subseteq C^{\alpha - 1}\) and \(0 < \alpha < 1\).
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem <class style="font-style: normal">3</class>. </strong><i>(Uniqueness of
+      measure) (1) There exists a unique measure \(\mu\) on
+      \(\Omega_{\alpha}^1 / \sim\) whose holonomies coincide with those of the
+      exact solution. (2) \(\mu\) is the unique invariant measure of the
+      process \(X_t = \{ A_t \}\) on gauge orbits. (3) \(\mu\) has full
+      support on \(\Omega_{\alpha}^1 / \sim\).</i>
+    </p>
+    <p>
+      A previous paper of Chevyrev proves essentially part 1) of the theorem
+      where he uses a rough version of Uhlenbeck compactness plus the
+      integrability of the 2d YM measure.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Corollary <class style="font-style: normal">4</class>. </strong><i>Universality of
+      YM measure.</i>
+    </p>
+    <p>
+      To show this we show tightness of the discrete YM measure, the
+      uniqueness is argued via the continuum dynamics.
+    </p>
+    <p>
+      Uhlenbeck compactness rouhgly says that
+    </p>
+    <center>
+      \(\displaystyle \| A \|_{W^{1, p}} \lesssim \| F (A) \|_{L^p} .\)
+    </center>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          Ideally this would follows from regularity theory for PDEs, but
+          gauge covariance of \(F (A)\) prevents this, the idea is to look at
+          \(A\) for which \(\mathrm{d}^{\star} A = 0 \Leftrightarrow
+          \operatorname{div}A = 0\), this will provide the additional
+          constraint to obtain regularity.
+        </p><p>
+          The gauge fixing is however quite subtle, due to ambiguity of gauge
+          fixing (Gribov) or that no representatives satisfy the gauge fixing.
+          This therefore cannot be done globally, one can do it locally around
+          any fixed \(A\). Chevyrev used two different gauge fixing at
+          different scales to obtain a similar result in the rough case.
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          <img src="bernoulli-w2-lectures-shen-8.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      In part 2) of the theorem we use Bourgain's argument to globalize the
+      dynamics. Let's explain the general idea without specifically referring
+      to YM dynamics. We have some approximate global dynamics
+      \(X_{\varepsilon}\) which has an invariant measure \(\mu_{\varepsilon}\)
+      and we want to show a bound on the existence time which is uniform as
+      \(\varepsilon \rightarrow 0\). We want to make the probability
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (\sup_{t \in [0, 1]}  \| X_{\varepsilon} (t)
+      \| > L)\)
+    </center>
+    <p>
+      as small as possible uniformly in \(\varepsilon\), in particular
+      \(\leqslant L^{n - p}\) for \(p > n\).
+    </p>
+    <p>
+      We consider the interval \([0, 1]\) and cut into \(k\) pieces of size
+      \(1 / k\).  By PDE argument if \(\| X_{\varepsilon} (0) \| < L\) then we
+      have \(\sup_{t \in [0, 1 / k]}  \| X_{\varepsilon} (t) \| \lesssim L\)
+      for \(k \approx 2 / L^n\) for some large \(n\). Using assumed moment
+      bounds on the invariant measure plus Markov inequality gives probability
+      bounds, and imply that \(\mathbb{P} (\| X (0) \| > L) \leqslant L^{-
+      p}\) for the initial condition and with \(p > n\). By stationarity of
+      \(X_{\varepsilon}\) and invariance of \(\mu_{\varepsilon}\), decomposing
+      the sup we have clearly
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (\sup_{t \in [0, 1]}  \| X_{\varepsilon} (t)
+      \| > L) \leqslant
+k\mathbb{P} (\sup_{t \in [0, 1 / k]}  \|
+      X_{\varepsilon} (t) \| > L) \lesssim
+L^{n - p} .\)
+    </center>
+    <p>
+      <hr></hr> [end of second lecture]
+    </p>
+    <p>
+      <b>Shen | Stochastic quantisation | Lecture 3 | Thursday July 25,
+      9:00&ndash;10:30</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <img class="image" src="bernoulli-w2-lectures-shen-9.jpg" width="100%"></img>
+    </p>
+    <p>
+      Today we will scketch the proof of the convergence from lattice to
+      continuum and of the uniqueness of the renormalization constant which
+      achieves gauge covariance. 
+    </p>
+    <p>
+      <img src="bernoulli-w2-lectures-shen-10.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.53038016528926em; height: 13.0607603305785em"></img>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Sketch of proof that there is no blowup for all \(x \in
+      \Omega^1_{\alpha} / \sim\) 
+    </p>
+    <p>
+      \(T_x\): existence time for solution starting from \(x\), \(\mu\)-a.e.
+      \(x\) \(\mathbb{P} (T_x = + \infty) \mathop{=}\limits 1\). Strong
+      Feller: \(\forall g\) bounded &amp; measurable, \(P_t g\) is continuous
+      with \(P_t g (x) =\mathbb{E}_x [g (X_t)]\). \(\forall t\) \(x \mapsto
+      \mathbb{P} (t < T_x) =\mathbb{E} [\mathbb{1}_{| X_t | < \infty}]\) is a
+      continuous map by strong Feller. Full support means that we cannot find
+      an open set which is not charged by the measure. So we can find a
+      sequence \((x_n)_n\) in the support of \(\mu\), i.e. \(\mathbb{P}
+      (T_{x_n} = + \infty) = 1\) and such that \(x_n \rightarrow x\) and the
+      continuit of the map \(x \mapsto \mathbb{P} (t < T_x)\) give that
+      \(\mathbb{P} (t < T_x) = 1\) for all \(x \in \Omega^1_{\alpha} / \sim\).
+    </p>
+    <p>
+      Sketch of proof of convergence from discrete to continuum
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} U = - \frac{1}{2} \nabla S (U) - \mathrm{d}_U
+      \mathrm{d}^{\star} U
++ U \circ \mathrm{d} B\)
+    </center>
+    <center>
+      \(\displaystyle \partial_t = \Delta A + A \partial A + A^3 + C A + \xi\)
+    </center>
+    <p>
+      with \(U = e^{\varepsilon A}\).
+    </p>
+    <p>
+      We need some Riemmanian geometry. Recall that \(\mathfrak{g}
+      \xrightarrow{\exp} G\), \(\mathfrak{q} \xrightarrow{\exp} Q =
+      \prod_{\operatorname{edges}} G\).
+    </p>
+    <center>
+      <img src="bernoulli-w2-lectures-shen-11.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em"></img>
+    </center>
+    <p>
+      Using the exponential map we pullback the Riemmanian metric from \(Q\)
+      to the Lie algebra. 
+    </p>
+    <center>
+      \(\displaystyle g_A (B, C) = \langle \exp_{\star} B, \exp_{\star} C
+      \rangle_{e^A}\)
+    </center>
+    <p>
+      Curve \(A (t)\), s.t. \(\left. \frac{\mathrm{d}}{\mathrm{d} \tau}
+      \right|_{\tau = 0} A (\tau) = B\), 
+    </p>
+    <center>
+      \(\displaystyle \left. \frac{\mathrm{d}}{\mathrm{d} \tau} \right|_{\tau
+      = 0} \exp A (\tau) =
+\exp A (\tau) \Phi (A (\tau))
+      \frac{\mathrm{d}}{\mathrm{d} \tau} A (\tau)\)
+    </center>
+    <p>
+      with \(\Phi (A) = \frac{1 -
+      e^{-\operatorname{ad}_A}}{\operatorname{ad}_A}\), with
+      \(\operatorname{ad}_A : B \in \mathfrak{q} \mapsto [A, B] \in
+      \mathfrak{q}\). By the invariance of the inner product we have
+    </p>
+    <center>
+      \(\displaystyle g_A (B, C) = \langle e^A \Phi (A) B, e^A \Phi (A) C
+      \rangle_{e^A} = \langle
+\Phi (A) B, \Phi (A) C
+      \rangle_{\operatorname{id}} = \langle \Phi (A) B, \Phi
+(A) C
+      \rangle_{\mathfrak{q}} .\)
+    </center>
+    <p>
+      This is the Riemmanian metric on the Lie algebra \(\mathfrak{q}\) as
+      chart over a neighborhood of the identity in \(Q\). We now pullback \(S
+      (U)\):
+    </p>
+    <center>
+      \(\displaystyle S (U) = \frac{1}{8} \sum_p | \log U (\partial p)
+      |^2_{\mathfrak{g}} +
+R_{\varepsilon},\)
+    </center>
+    <center>
+      \(\displaystyle = \frac{1}{8} \sum_p \underbrace{| \log e^A (\partial
+      p)
+|^2_{\mathfrak{g}}}_{f_p (A)} + R_{\varepsilon},\)
+    </center>
+    <p>
+      How to compute \(\nabla f_p (A)\). By definition and Leibnitz:
+    </p>
+    <center>
+      \(\displaystyle g_A (\nabla f_p (A), B) = \mathrm{D}_B f_p (A) = 2
+      \langle \log e^A (\partial
+p), \mathrm{D}_B \log e^A (\partial p)
+      \rangle\)
+    </center>
+    <p>
+      on the other hand
+    </p>
+    <center>
+      \(\displaystyle g_A (\nabla f_p (A), B) = \langle \Phi (A) \nabla f_p
+      (A), \Phi (A) B \rangle\)
+    </center>
+    <p>
+      and by identification one can expand the gradient and obtain the terms
+      of the continuum equation.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Sketch of proof that only \(C = \bar{C}\) gives gauge invariance. 
+    </p>
+    <p>
+      Let's do the Abelian case, with the equation
+    </p>
+    <center>
+      \(\displaystyle \partial_t A = \Delta A + C A + \xi\)
+    </center>
+    <p>
+      and if \(C = 0\) then gauge convariance otherwise not. \(A_0 \sim
+      \bar{A}_0\) \(B = A - \mathrm{d} g g^{- 1} = A - \mathrm{d} f\), \(g =
+      e^f\). Take \(\partial_t f = \Delta f\), then we show that \(B\)
+      satisfies the same equation as \(A\),
+    </p>
+    <center>
+      \(\displaystyle \partial_t B = \partial_t A - \mathrm{d} \partial_t f =
+      \Delta A + C A + \xi -
+\mathrm{d} \Delta f = - \mathrm{d}
+      \mathrm{d}^{\star} A - \mathrm{d}^{\star}
+\mathrm{d} A + \xi + C A +
+      \mathrm{d} \mathrm{d}^{\star} \mathrm{d} f = -
+\mathrm{d}
+      \mathrm{d}^{\star} B - \mathrm{d}^{\star} \mathrm{d} A + \xi + C A\)
+    </center>
+    <p>
+      and since \(\mathrm{d} B = \mathrm{d} A - \mathrm{d} \mathrm{d} f =
+      \mathrm{d} A\), so if \(C = 0\) we have that \(B\) satisfies the same
+      equation as \(A\). 
+    </p>
+    <p>
+      To prove that when \(C \neq 0\) the configurations are not gauge
+      equivalent we compute a loop integral:
+    </p>
+    <center>
+      \(\displaystyle e^{i \int_{\ell} A}\)
+    </center>
+    <p>
+      which is gauge invariant since \(\int_{\ell} \mathrm{d} g g^{- 1} \in 2
+      \pi \mathbb{Z}\). Take \(A (0) = 2 \pi i \mathrm{d} x_1\) and \(\bar{A}
+      (0) = 0\) and evolve the two configurations. The initial conditions are
+      gauge equivalente since \(A (0) = \bar{A} (0) - \mathrm{d} g g^{- 1}\)
+      with \(g (x_1, x_2) = e^{- 2 \pi i x_1}\). Solving the two equations we
+      have:
+    </p>
+    <center>
+      \(\displaystyle A (t) = \bar{A} (t) + e^{t C} (2 \pi i \mathrm{d} x_1)\)
+    </center>
+    <p>
+      and \(\mathbb{E}e^{i \int_{\ell} A (t)} \neq e^{i \int_{\ell} \bar{A}
+      (t)}\) since the two sides differ by \(e^{\int_{\ell} e^{t C} 2 \pi
+      \iota i \mathrm{d} x_1}\) and we can choose \(\ell\) (winding around the
+      torus once) in such a way that
+    </p>
+    <center>
+      \(\displaystyle e^{\int_{\ell} e^{t C} 2 \pi \iota i \mathrm{d} x_1} =
+      e^{e^{t C} 2 \pi \iota
+i}\)
+    </center>
+    <p>
+      and for \(t > 0\) this is not \(= 1\) while at \(t = 0\) it is 1.
+    </p>
+    <p>
+      <hr></hr> [end of the third lecture]
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
