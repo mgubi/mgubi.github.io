@@ -388,9 +388,10 @@ x^T}{| x |^2} \right),\)
     <center>
       \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} [V]_t = \sum_k [\sigma_k
       (X^x_t) - \sigma_k
-(X^y_t)] [\sigma_k (X^x_t) - \sigma_k (X^y_t)] = 2 Q
-      (0) - 2 Q (X^x_t - X^y_t)
-= 2 Q (0) - 2 Q (V_t)\)
+(X^y_t)] [\sigma_k (X^x_t) - \sigma_k (X^y_t)]\)
+    </center>
+    <center>
+      \(\displaystyle = 2 Q (0) - 2 Q (X^x_t - X^y_t) = 2 Q (0) - 2 Q (V_t)\)
     </center>
     <p>
       so \(V\) satisfies in law the following SDE:
@@ -416,7 +417,7 @@ x^T}{| x |^2} \right),\)
       <hr></hr>
     </p>
     <p>
-      Maurelli | Regularisation by noise | Lecture 3 | Thursday July 25,
+      Maurelli | Regularisation by noise | Lecture 2 | Thursday July 25,
       11:00&ndash;12:30 
     </p>
     <p>
@@ -762,11 +763,11 @@ x = 0.\)
 0, \qquad u = K \ast \theta .\)
     </center>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(Coghi-Maurelli
-      2023+) Existence of \(\dot{H}^{- 1}\) solutions. For \(\alpha \in (0,
-      1)\) and \(\omega_0 \in \dot{H}^{- 1}\) then there exists
-      probabilistically weak solutions \(\theta \in L^{\infty}_t \dot{H}^{-
-      1}_x \cap C_t (H^{- 4})\) \(\mathbb{P}- a.s\) satisfying in addition</i>
+      <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Existence of
+      \(\dot{H}^{- 1}\) solutions. For \(\alpha \in (0, 1)\) and \(\omega_0
+      \in \dot{H}^{- 1}\) then there exists probabilistically weak solutions
+      \(\theta \in L^{\infty}_t \dot{H}^{- 1}_x \cap C_t (H^{- 4})\)
+      \(\mathbb{P}- a.s\) satisfying in addition</i>
     </p>
     <p style="margin-bottom: 1em">
       <i><center>
@@ -778,9 +779,8 @@ x = 0.\)
       almost every time and almost surely in \(\dot{H}^{- \alpha}_x\).
     </p>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i>(Coghi-Maurelli
-      2023+) Uniqueness in \(L^p\). For \(\theta \in L^p \cap L^1 \cap
-      \dot{H}^{- 1}\) and </i>
+      <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Uniqueness in
+      \(L^p\). For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
     </p>
     <p>
       <i><center>
@@ -799,6 +799,436 @@ x = 0.\)
     </p>
     <p>
       <hr></hr> [end of second lecture]
+    </p>
+    <p>
+      Maurelli | Regularisation by noise | Lecture 3 | Friday July 26,
+      9:00&ndash;10:30
+    </p>
+    <p>
+      <b>V. Reg. by nonsmooth Kraichnan nois for 2d Euler</b>
+    </p>
+    <p>
+      Recall the equation
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathrm{d} \theta + u \cdot \nabla
+        \theta + \nabla \theta \circ \mathrm{d} W =
+0, \qquad u = K \ast
+        \theta . \)</td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <p>
+      with a Kraichnan isotropic noise of index \(\alpha \in (0, 1)\). Let's
+      talk about motivations for the noise:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Preserves the transport nature of the equation
+        </p>
+      </li>
+      <li>
+        <p>
+          Can be viewed as a representation of small scale behaviour of a
+          turbulent fluid
+        </p>
+      </li>
+      <li>
+        <p>
+          Why \(\alpha \in (0, 1) ?\) The equation has problems when the mass
+          concentrates, and the splitting nature of the noise gives an hope
+          that it could improve the behaviour of the equation by preventing
+          mass concentration.
+        </p>
+      </li>
+      <li>
+        <p>
+          Physicist predict is that \(\alpha = 2 / 3\), since in this case we
+          reproduce Obukov theory of scalar turbulence in \(d = 2\).
+          Unfortunately uniqueness result that we have of Euler+Kraichnan does
+          not hold for this value of the exponent.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Lagrangian counterpart of the SPDE:
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} X^x_t = \int K (X^x_t - X^y_t) \omega_0
+      (\mathrm{d} y) \mathrm{d} t
++ \circ \mathrm{d} W (t, X^x_t)\)
+    </center>
+    <p>
+      if we add just a constant (or smooth) noise \(+ \mathrm{d} B\), we can
+      remove it via a Galileian transformation and should not have hope to
+      regularise the equation. In order to hope to have some regularisation we
+      need some noise which has a substantial effect when \(| X^x_t - X^y_t |
+      \ll 1\) which is the region where the Biot&ndash;Savart kernel is
+      singular.
+    </p>
+    <center>
+      \(\displaystyle \| \theta \|_{\dot{H}^{- s}}^2 := \int | n |^{- 2 s} |
+      \hat{\theta} (n) |
+\mathrm{d} n\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Definition. </strong><i>\(\theta\) is an \(\dot{H}^{- 1}\)
+      solution to the equation&nbsp;(<a href="#eq:eu-plus-kr">2</a>), there exists a
+      \((\mathcal{F}_t)_t\)-progressively measurable \(\theta \in L^{\infty}_t
+      (\dot{H}^{- 1}_x) \cap C_t (H_x^{- 4})\) \(\mathbb{P}- a.s.\) and</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \theta_t = \theta_0 - \int_0^t \underbrace{(K \ast
+        \theta_r) \cdot
+        \nabla
+\theta_r}_{=\operatorname{curl}\operatorname{div} (u_r
+        u_r^{\mathrm{T}})}
+\mathrm{d} r - \int_0^t \nabla \omega_r \cdot
+        \mathrm{d} W_r + \int_0^t
+\frac{c}{2} \Delta \theta_r \mathrm{d} r.\)
+      </center></i>
+    </p>
+    <p>
+      The basic results we would like to discuss are the following about
+      existence and uniqueness
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i><a id="th:existence"></a>\((\exists)\)
+      \(\alpha \in (0, 1)\), \(\theta_0 \in \dot{H}^{- 1}\) then \(\exists
+      \theta\) \(\dot{H}^{- 1}\) solution to the equation&nbsp;(<a href="#eq:eu-plus-kr">2</a>)
+      such that</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \theta \in L^2_{x, t} (\dot{H}^{- \alpha}_x) .\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">2</class>. </strong><i><a id="th:uniqueness"></a>\((!)\)
+      \(\) For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
+        \frac{2}{p} - 1 \right) <
+\alpha < \frac{1}{2} \wedge \left( 1 -
+        \frac{1}{p} \right)\)
+      </center></i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i>then there exists a unique strong solution in \(L^{\infty}_{t,
+      \omega} (L^p_x \cap L^1_x)\).</i>
+    </p>
+    <p>
+      Galeati&ndash;Luo (2023+) weak uniqueness for log-Euler 2d via
+      Girsanov's theorem (a nice paper)
+    </p>
+    <p>
+      Let's discuss the proofs now.
+    </p>
+    <p>
+      <b>Step 1. Anomalous regularisation in negative Sobolev for
+      Kraichnan</b>  
+    </p>
+    <p>
+      Consider
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \mu +\operatorname{div} (\mu \mathrm{d} W) =
+      \frac{c}{2} \Delta
+\mu, \qquad \operatorname{on} [0, T] \times
+      \mathbb{R}^2\)
+    </center>
+    <p>
+      <i>Idea:</i> particle splitting brings anomalous regularisation in
+      negative Sobolev spaces. Formally, two particular \(X^x\) and \(X^y\) if
+      \(x \rightarrow y\) we still have that \(X^x_t \neq X^y_t\) for positive
+      times, and it is reasonable to expect that \(\left| X^x_t {- X^y_t} 
+      \right|^{- 1}\) should get smaller on average, and so gain integrability
+      in space.
+    </p>
+    <p>
+      This can be verified by using the explicit SDE satisfied by \(\left|
+      X^x_t {- X^y_t}  \right|\). In the Eulerian picture
+    </p>
+    <center>
+      \(\displaystyle \int \int \varphi (x - y) \mu_t (\mathrm{d} x) \mu_t
+      (\mathrm{d} y) = \int
+\int \varphi (X^x_t - X^y_t) \mu_0 (\mathrm{d} x)
+      \mu_0 (\mathrm{d} y)\)
+    </center>
+    <p>
+      and we take \(\varphi (x - y) = \log | x - y |^{- 1} = G (x - y)\).
+      Applying Ito formula:
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\langle G
+      \ast \mu, \mu \rangle]
+=\mathbb{E} [\langle \operatorname{Tr} [Q (0)
+      \mathrm{D}^2 \mu], G \ast \mu
+\rangle] +\mathbb{E} \left[ \sum_k \langle
+      \sigma_k \cdot \nabla \mu {,} G
+\ast (\sigma_k \cdot \nabla \mu) \rangle
+      \right]\)
+    </center>
+    <center>
+      \(\displaystyle =\mathbb{E} [\langle \operatorname{Tr} [Q (0)
+      \mathrm{D}^2 \mu], G \ast \mu
+\rangle] +\mathbb{E} \left[ \sum_k \langle
+      \operatorname{div} (\sigma_k \mu)
+{,} G \ast (\sigma_k \cdot \nabla \mu)
+      \rangle \right]\)
+    </center>
+    <center>
+      \(\displaystyle =\mathbb{E} [\langle \operatorname{Tr} [Q (0)
+      \mathrm{D}^2 \mu], G \ast \mu
+\rangle] -\mathbb{E} \left[ \left\langle
+      \left( \left( \sum_k \sigma_k
+\sigma_k^{\mathrm{T}} \right) \mathrm{D}^2
+      G \right) \ast \mu, \mu
+\right\rangle \right]\)
+    </center>
+    <center>
+      \(\displaystyle =\mathbb{E} \int \int \operatorname{Tr} [(Q (0) - Q (x -
+      y)) \mathrm{D}^2 G (x
+- y)] \mu_t (\mathrm{d} x) \mu_t (\mathrm{d} y)\)
+    </center>
+    <p>
+      Now
+    </p>
+    <center>
+      \(\displaystyle \nabla G (x) = - \frac{x}{| x |^2}, \qquad \nabla^2 G
+      (x) = - \frac{1}{| x
+|^2} \left( -\mathbb{I}+ \frac{2 x x^T}{| x |^2}
+      \right),\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle Q (0) - Q (x) \approx \beta_L | x |^{2 \alpha} \frac{x
+      x^T}{| x |^2} + \beta_N
+| x |^{2 \alpha} \left( \mathbb{I}- \frac{x
+      x^T}{| x |^2} \right), \qquad
+\beta_N = (1 + 2 \alpha) \beta_L >
+      \beta_N\)
+    </center>
+    <center>
+      \(\displaystyle \operatorname{Tr} [(Q (0) - Q (x)) \mathrm{D}^2 G (x)] =
+      \frac{1}{| x |^2}
+(\beta_L | x |^{2 \alpha} - \beta_N | x |^{2 \alpha})
+      + O (| x |^{2 \alpha -
+2})\)
+    </center>
+    <center>
+      \(\displaystyle = \underbrace{(\beta_L - \beta_N)}_{< 0 (!)} | x |^{- 2
+      + 2 \alpha} + O (| x
+|^{- 2})\)
+    </center>
+    <p>
+      with a negative sign! Therefore
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} \left[ \int
+      \int \log (| x - y |^{-
+1}) \mu_t (\mathrm{d} x) \mu_t (\mathrm{d} y)
+      \right] = - C\mathbb{E} \int
+\int  | x - y |^{2 \alpha - 2} \mu_t
+      (\mathrm{d} x) \mu_t (\mathrm{d} y) +
+\text{l.o.t.}\)
+    </center>
+    <p>
+      Note that
+    </p>
+    <center>
+      \(\displaystyle \int \int \log (| x - y |^{- 1}) \mu_t (\mathrm{d} x)
+      \mu_t (\mathrm{d} y) =
+\langle \mu, (- \Delta)^{- 1} \mu \rangle = \|
+      \mu \|_{\dot{H}^{- 1}}^2\)
+    </center>
+    <p>
+      and
+    </p>
+    <center>
+      \(\displaystyle \int \int  | x - y |^{2 \alpha - 2} \mu_t (\mathrm{d} x)
+      \mu_t (\mathrm{d} y)
+= \langle \mu, (- \Delta)^{- \alpha} \mu \rangle =
+      \| \mu \|_{\dot{H}^{-
+\alpha}}^2\)
+    </center>
+    <p>
+      from which we have a gain of \(1 - \alpha\) regularity since
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} \| \mu
+      \|_{\dot{H}^{- 1}}^2 = -
+C\mathbb{E} \| \mu \|_{\dot{H}^{- \alpha}}^2 +
+      \text{l.o.t.}\)
+    </center>
+    <p>
+      <b>Step 2. Anomalous regularisation for Euler+Kraichnan</b> 
+    </p>
+    <p>
+      Wanted regularisation for the full equation. The idea is that the
+      non-linear drift preserves the \(\dot{H}^{- 1}\) norm. 
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\langle
+      \theta, G \ast \theta
+\rangle] = -\mathbb{E} [\underbrace{\langle u
+      \cdot \nabla \theta, G \ast
+\theta \rangle}_{= 0}] \underbrace{-
+      c\mathbb{E} [\| \theta \|_{\dot{H}^{-
+\alpha}}^2] +
+      \text{l.o.t.}}_{\text{terms from the noise}}\)
+    </center>
+    <p>
+      so
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \theta
+      \|_{\dot{H}^{- 1}}^2] =
+- c\mathbb{E} [\| \theta \|_{\dot{H}^{-
+      \alpha}}^2] + \text{l.o.t.}\)
+    </center>
+    <p>
+      See also recent paper of Coti-Zelati, Drival, Gwalani (2024).
+    </p>
+    <p>
+      <b>Step 3. Uniqueness</b>
+    </p>
+    <p>
+      Take \(\theta^1, \theta^2\) for E+K, let \(\theta = \theta^1 -
+      \theta^2\), then
+    </p>
+    <center>
+      \(\displaystyle \mathrm{d} \theta = (K \ast \theta^1) \nabla \theta + (K
+      \ast \theta) \nabla
+\theta^2 + \nabla \theta \mathrm{d} W = \frac{c}{2}
+      \Delta \theta .\)
+    </center>
+    <p>
+      Idea: get the \(\dot{H}^{- \alpha}\) norm from the noise, for the drift
+      use conservation of \(\dot{H}^{- 1}\), conservation of \(L^p\) and
+      control with \(\dot{H}^{- \alpha}\).
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \theta
+      \|_{\dot{H}^{- 1}}^2] =
+- C\mathbb{E} [\| \theta \|_{\dot{H}^{-
+      \alpha}}^2] - 2\mathbb{E} [\langle G
+\ast \theta, (K \ast \theta^1)
+      \nabla \theta \rangle] - 2\mathbb{E} [\langle G
+\ast \theta, (K \ast
+      \theta) \nabla \theta^2 \rangle] + \text{l.o.t.}\)
+    </center>
+    <p>
+      the conservation of \(\dot{H}^{- 1}\) norm we have \(\langle G \ast
+      \theta, (K \ast \theta) \nabla \theta^2 \rangle = 0\), while the other
+      trilinar term needs some control (actually we do not care much since we
+      can anyway bound it).
+    </p>
+    <center>
+      \(\displaystyle | \langle G \ast \theta, (K \ast \theta^1) \nabla \theta
+      \rangle | = | \langle
+\underbrace{(K \ast \theta^1) \nabla G \ast
+      \theta}_{\dot{H}^{\alpha}},
+\underbrace{\theta}_{\dot{H}^{- \alpha}}
+      \rangle |\)
+    </center>
+    <p>
+      and using the inequality \(\| f g \|_{\dot{H}^{\alpha}} \lesssim \| f
+      \|_{\dot{H}^{2 \alpha}} \| g
+\|_{\dot{H}^{1 - \alpha}}\) if \(\alpha < 1
+      / 2\) we have, by apriori estimates and if \(\alpha \leqslant 1 - 1 / p,
+      \alpha < 1 / 2\):
+    </p>
+    <center>
+      \(\displaystyle \lesssim \| (K \ast \theta^1) \|_{\dot{H}^{2 \alpha}}
+      \underbrace{\| \nabla G
+\ast \theta \|_{\dot{H}^{1 - \alpha}}}_{\lesssim
+      \| \theta \|_{\dot{H}^{-
+\alpha}}} \| \theta \|_{\dot{H}^{- \alpha}}
+      \lesssim \| \theta \|_{\dot{H}^{-
+\alpha}}^2 \| \theta^1 \|_{\dot{H}^{2
+      \alpha - 1}} \lesssim \| \theta
+\|_{\dot{H}^{- \alpha}}^2 \| \theta^1
+      \|_{L^P \cap L^1} \| \theta
+\|_{\dot{H}^{- \alpha}}^2 \| \theta_0
+      \|_{L^P \cap L^1}\)
+    </center>
+    <p>
+      however if \(\alpha < 1 - 1 / p\) we can play with usual tricks and
+      interpolation to obtain a slightly better bound and close the estimate
+      via Young's inequality and obtain
+    </p>
+    <center>
+      \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \theta
+      \|_{\dot{H}^{- 1}}^2] +
+c\mathbb{E} [\| \theta \|_{\dot{H}^{-
+      \alpha}}^2] \lesssim \varepsilon \|
+\theta \|_{\dot{H}^{- \alpha}}^2 +
+      C_{\varepsilon} \| \theta^1 \|_{L^P \cap
+L^1}^2 \| \theta \|_{\dot{H}^{-
+      1}}^2\)
+    </center>
+    <p>
+      which gives uniqueness.
+    </p>
+    <p>
+      In the last 15 minutes we will talk about other topics. The problem in
+      Euler is to control the non-linear term, apriori estimates give easily
+      compactness of smooth approximations in \(L^2\). With Kraichnan we get
+      estimates in \(\dot{H}^{1 - \alpha}\) which gives strong compactness in
+      \(L^2\) and we can pass to the limit easily in the equation.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem. </strong><i>(Galeati&ndash;Grotto&ndash;Maurelli,
+      2024+) Linear Kraichnan with \(\alpha \in (0, 1)\)</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \partial_t \mu +\operatorname{div} (\mu \circ
+        \mathrm{d} W) = 0,\)
+      </center></i>
+    </p>
+    <p>
+      <i>then, for all \(s \in (0, d / 2)\),</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \mu
+        \|_{\dot{H}^{- s}}^2] = -
+C\mathbb{E} [\| \mu \|_{\dot{H}^{- s + 1 -
+        \alpha}}^2] + \text{l.o.t.}\)
+      </center></i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Theorem. </strong><i>(Jian&ndash;Luo, 2024+ &amp;
+      Bagnara&ndash;Galeati&ndash;M. 2024+) Consider generalized SQG, the
+      strong uniqueness for solutions in \(L^p \cap L^1\) with \(p \geqslant
+      2\).</i>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
     </p>
     <p>
       

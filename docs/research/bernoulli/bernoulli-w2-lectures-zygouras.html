@@ -1002,6 +1002,429 @@ q_{n_2 - n'_1} (x_2 - x_1') \Theta^N
       <hr></hr> [end of second lecture]
     </p>
     <p>
+      Zygouras | Critical SPDEs | Lecture 3 | Friday July 26,
+      11:00&ndash;12:30
+    </p>
+    <p>
+      Various topics to discuss today.
+    </p>
+    <p>
+      <b>0.1/4 Moments of SHE</b>
+    </p>
+    <p>
+      The \(h\)-moment of the SHE is related to the \(\delta\)-Bose gas. In 
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [(u_{\varepsilon}^{\beta_{\varepsilon}})^h]
+      =\mathbb{E}^{\otimes h}
+\left[ e^{\beta_{\varepsilon} \sum_{1 \leqslant
+      j \leqslant n} \int_0^t
+\delta_0^{(\varepsilon)} (B_i (s) - B_j (s))
+      \mathrm{d} s} \right]\)
+    </center>
+    <p>
+      with \(h\) independent copies of Brownian motion. This is related to the
+      following Schr&ouml;dinger operator
+    </p>
+    <center>
+      \(\displaystyle - \Delta + \beta_{\varepsilon} \sum_{1 \leqslant j
+      \leqslant n}
+\delta_0^{(\varepsilon)} (x_i - x_j), \qquad \text{on
+      $(\mathbb{R}^2)^h$}\)
+    </center>
+    <p>
+      Some history: In 1993 Albeverio&ndash;Brezniak&ndash;Dabrowski  (\(h =
+      2\)), 1994 Dell'Antonio&ndash;Figari&ndash;Teta consider general \(h\)
+      and define self-adjoint extensions \(\beta_{\varepsilon} = 2 \pi / (\log
+      1 / \varepsilon)\), 1997 Bertini&ndash;Cancrini use these two results to
+      control the second moment of the SHE, in 2004 Dimock&ndash;Rajeev,
+      Rajeev, conjecture about the growth of the ground state \(\lambda_0 \sim
+      e^{e^h}\). This would give a too fast growth of the moments to
+      characterize the distribution.
+    </p>
+    <p>
+      Question: can we prove this growth?
+    </p>
+    <p>
+      SHE, with Caravenna and Sun, we studied \(h = 3\) (CSZ'17), in 2020
+      Gu&ndash;Quastel&ndash;Tsai used the functional analytic results to
+      establish that
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [(u^{\operatorname{crit}}_{\varepsilon}
+      (\varphi))^h] < \infty,
+\qquad \varphi \in L^2 (\mathbb{R}^2),\)
+    </center>
+    <p>
+      and derived expressions of these moments which coincide with \(h = 3\).
+      In CSZ'23 we generlise of the critical Hardy&ndash;Sobolev inequalities
+      of Dell'Antonio&ndash;Figari&ndash;Teta.
+    </p>
+    <p>
+      The picture below represent the structure of the interaction in the
+      computation of the moments:
+    </p>
+    <p>
+      <img class="image" src="bernoulli-w2-lectures-zygouras-7.jpg" width="100%"></img>
+    </p>
+    <p>
+      and this also hints to the fact that the SHF is not a Gaussian
+      multiplicative chaos.
+    </p>
+    <p>
+      <b>1. Subcritical 2d KPZ</b>
+    </p>
+    <center>
+      \(\displaystyle \sqrt{\log 1 / \varepsilon} \int_{\mathbb{R}^2} (\log
+      u^{\varepsilon} (t, x)
+-\mathbb{E} [\cdots]) \phi (x) \mathrm{d} x
+      \rightarrow \operatorname{EW}
+(\hat{\beta})\)
+    </center>
+    <p>
+      for \(\hat{\beta} < 1\). 
+    </p>
+    <p>
+      In the discrete polymer model
+    </p>
+    <center>
+      \(\displaystyle \sqrt{\log N} \frac{1}{N} \sum_{x \in \mathbb{Z}^2} \phi
+      \left(
+\frac{x}{\sqrt{N}} \right) (\log Z_N^{\beta_N} (x) -\mathbb{E}
+      [\cdots])
+\rightarrow \operatorname{EW} (\hat{\beta})\)
+    </center>
+    <p>
+      Below the critical temperature fluctuations are generated in a small
+      window around the starting point of size \(N^{\alpha}\) with \(\alpha
+      \ll 1\). 
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
+          <img src="bernoulli-w2-lectures-zygouras-8.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -8.52956473829201em; height: 17.059129476584em"></img>
+        </p></td>
+        <td style="width: 50%; vertical-align: top; padding-right: 0em"><center>
+          \(\displaystyle Z^{\beta_N}_N (x) = Z^{\beta_N, A}_N (x) +
+          \hat{Z}^{\beta_N, A}_N (x)\)
+        </center><p>
+          where \(Z^{\beta_N, A}_N (x)\) consider only the chaos expansion
+          that sample point in the box of size \((N^{\alpha}, N^{\alpha /
+          2})\) and \(\hat{Z}^{\beta_N, A}_N (x)\) is the complement of this
+          contribution. Then
+        </p><center>
+          \(\displaystyle \log Z^{\beta_N}_N (x) = \log Z^{\beta_N, A}_N (x) +
+          \log \left( 1 +
+\frac{\hat{Z}^{\beta_N, A}_N (x)}{Z^{\beta_N, A}_N
+          (x)} \right)\)
+        </center><center>
+          \(\displaystyle \approx \log Z^{\beta_N, A}_N (x) +
+          \frac{\hat{Z}^{\beta_N, A}_N
+(x)}{Z^{\beta_N, A}_N (x)}\)
+        </center></td>
+      </tr></tbody>
+    </table>
+    <p>
+      Now the contribution \(\log Z^{\beta_N, A}_N (x)\) is decorrelated from
+      \(\log Z^{\beta_N, A}_N (y)\) if \(x - y \approx \sqrt{N}\) and if we
+      want to consider fluctuations this contribution cancels out. Moreover
+    </p>
+    <center>
+      \(\displaystyle \hat{Z}^{\beta_N, A}_N (x) \approx Z^{\beta_N, A}_N (x)
+      Z^{\beta_N, A'}_N (x')\)
+    </center>
+    <p>
+      since when we jump out of the box we most likely will jump very far away
+      and this will look like having a contribution from the box and another
+      \(Z^{\beta_N, A'}_N (x')\) from a very far box \(A'\), which then gives
+    </p>
+    <center>
+      \(\displaystyle \log Z^{\beta_N}_N (x) \approx \frac{\hat{Z}^{\beta_N,
+      A}_N (x)}{Z^{\beta_N,
+A}_N (x)} \approx \frac{Z^{\beta_N, A}_N (x)
+      Z^{\beta_N, A'}_N
+(x')}{Z^{\beta_N, A}_N (x)} \approx Z^{\beta_N, A'}_N
+      (x')\)
+    </center>
+    <p>
+      and we end up with a linear contribution to the log.
+    </p>
+    <p>
+      <b>2. Allen&ndash;Cahn</b> (Gabriel&ndash;Rosati&ndash;Z)
+    </p>
+    <center>
+      \(\displaystyle \partial_t u = \Delta u + u - u^3, \qquad x \in
+      \mathbb{R}^2, t > 0\)
+    </center>
+    <center>
+      \(\displaystyle u (0, x) = \frac{\lambda}{\sqrt{\log 1 / \varepsilon}}
+      \xi_{\varepsilon} (x)\)
+    </center>
+    <p style="margin-top: 1em">
+      <strong>Theorem. </strong><i>(GRZ)</i>
+    </p>
+    <p>
+      <i><center>
+        \(\displaystyle \sqrt{\log 1 / \varepsilon} u_{\varepsilon} (t, x) -
+        \lambda \sigma_{\lambda}
+P_t \ast \xi (x) \xrightarrow{L^2 (\Omega)}
+        0\)
+      </center></i>
+    </p>
+    <p>
+      <i>where</i>
+    </p>
+    <p style="margin-bottom: 1em">
+      <i><center>
+        \(\displaystyle \left\{ \begin{array}{lll}
+  \dot{\sigma} = -
+        \frac{3}{2 \pi} \sigma^3 &  & \lambda > 0,\\
+  \sigma (0) = 1. &  &
+        
+\end{array} \right.\)
+      </center></i>
+    </p>
+    <p>
+      Let's recall Butcher's series
+    </p>
+    <center>
+      \(\displaystyle \dot{x} = h (x), \qquad x (0) = x_0\)
+    </center>
+    <p>
+      there are trees generated by the Taylor expansion of the solution to the
+      ODE around \(t = 0\),
+    </p>
+    <center>
+      \(\displaystyle x (t) = \sum_{\text{$\tau$ tree}} \frac{h^{(\tau)}
+      (x_0)}{\tau !s (\tau)} t^{|
+\tau |}\)
+    </center>
+    <p>
+      Tree \(\tau = [\tau_1, \ldots, \tau_n]\) is defined recursively by
+      grafting subtrees \(\tau_1, \ldots, \tau_n\) to a root. Then
+    </p>
+    <center>
+      \(\displaystyle \tau ! := | \tau | (\tau_1 ! \cdots \tau_n !), \qquad
+      h^{(\tau)} (x_0) =
+h^{(k)} (x_0) \prod_{j = 1}^k h^{(\tau_j)} (x_0) .\)
+    </center>
+    <p>
+      From a comment by Otto, if we consider
+    </p>
+    <center>
+      \(\displaystyle \partial_t v_{\varepsilon} = \Delta v_{\varepsilon} -
+      3\mathbb{E}
+[v_{\varepsilon}^2] v_{\varepsilon}\)
+    </center>
+    <p>
+      then asymptotically we have
+    </p>
+    <center>
+      \(\displaystyle \sqrt{\log 1 / \varepsilon}  (v_{\varepsilon} (t, x) -
+      \lambda
+\sigma_{\lambda} P_t \ast \xi (x)) \xrightarrow{L^2 (\Omega)}
+      0.\)
+    </center>
+    <p>
+      It would be nice to find a closer link between \(u_{\varepsilon}\) and
+      \(v_{\varepsilon}\).
+    </p>
+    <p>
+      Main structure of proof 
+    </p>
+    <center>
+      \(\displaystyle u (t, x) = P_t \ast \lambda_{\varepsilon}
+      \zeta_{\varepsilon} (x) - \int_0^t
+P_{t - s} \ast u (t - s, \cdot)^3 (x)
+      \mathrm{d} s\)
+    </center>
+    <center>
+      \(\displaystyle = X - \int_0^t P_{t - s} \ast (X - (\cdots))^3\)
+    </center>
+    <p>
+      so we have a recursive structure which produces a sum over all ternary
+      trees
+    </p>
+    <center>
+      \(\displaystyle u = \sum_{\tau} X^{(\tau)}\)
+    </center>
+    <p>
+      Let's look at one example:
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
+          \(\raisebox{-8.45945410085255e-4\height}{\includegraphics[width=7.44546930342385cm,height=4.96228518955792cm]{image-1.pdf}}\)
+        </p></td>
+        <td style="width: 50%; vertical-align: top; padding-right: 0em; vertical-align: middle"><p>
+          where the dots are contributions from the initial condition which
+          then have to be paired via Wick's rule. For every small loop we get
+          an \(\lambda_{\varepsilon}^2 \approx \log 1 / \varepsilon\). One
+          proposition is that is we match different branches of the tree we
+          get lower order contributions. While the small loops have a
+          logarthmic blowup which is compensated exactly
+          \(\lambda_{\varepsilon}^2\), while long matching give only lower
+          order blowup of order \(\log^{1 / 2} 1 / \varepsilon\) which then is
+          killed by the \(\lambda_{\varepsilon}^2\) factors.
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: middle; padding-left: 0em"><p>
+          So out of all the matchings there is only one type which remains and
+          which have a hierarchical structure, as depicted on the right.
+        </p><p>
+          It remains only a unmatched leg which will give a Gaussian
+          contribution.
+        </p><p>
+          The simple (&ldquo;short&rdquo;) loop at vertex \(4\) will give a
+          contribution of the type \(\lambda_{\varepsilon}^2 g_{2 (s_4 +
+          \varepsilon^2)} (0)\), removing it and then removing the small loop
+          at vertex 3, and then at vertex 2, <span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+          style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>
+        </p></td>
+        <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
+          \(\raisebox{-7.05059351675893e-4\height}{\includegraphics[width=7.44546930342385cm,height=5.95385674931129cm]{image-1.pdf}}\)
+        </p></td>
+      </tr></tbody>
+    </table>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
+          \(\raisebox{-8.45945410085255e-4\height}{\includegraphics[width=7.44546930342385cm,height=4.96228518955792cm]{image-1.pdf}}\)
+        </p></td>
+        <td style="width: 50%; vertical-align: top; padding-right: 0em"><p>
+          <span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+          style="margin-left: 0.16665em"></span> and we will obtain a tree structure of the loop
+          removal, ordered according to the corresponding time parameters
+          \(s_1 < s_2\), \(s_2 < s_4\), \(s_1 < s_3\). 
+        </p><p>
+          This gives rise to the Butcher series for the ODE describing the
+          constant in front of the limiting noise.
+        </p><p>
+          
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      
+    </p>
+    <p>
+      The lectures ends with some open questions.
+    </p>
+    <p>
+      <b>Open questions about the critical 2d SHF</b>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Axiomatic characterisation?
+        </p>
+      </li>
+      <li>
+        <p>
+          Universality?
+        </p>
+      </li>
+      <li>
+        <p>
+          Relations to GMS, LQV, etc<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+          style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>
+        </p>
+      </li>
+      <li>
+        <p>
+          Fine properies of the measure, e.g. fractal dimension, structure of
+          the support
+        </p>
+      </li>
+      <li>
+        <p>
+          Moment asymptotics &ndash; Delta Bose&ndash;gas
+        </p>
+      </li>
+      <li>
+        <p>
+          Renormalization of 1-point function
+        </p>
+      </li>
+      <li>
+        <p>
+          The critical 2d SHF as a &ldquo;noise&rdquo;
+        </p>
+      </li>
+    </ul>
+    <p>
+      <b>Open questions about sub-critical SHE &amp; KPZ</b>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Structure of maxima of \(\sqrt{\log 1 / \varepsilon} u_{\varepsilon}
+          (t, x)\), links to log-correlated fields.
+        </p>
+      </li>
+      <li>
+        <p>
+          Does
+        </p>
+        <center>
+          \(\displaystyle \exp \left[ \sqrt{\log 1 / \varepsilon} \log
+          u_{\varepsilon} (t, x) \right]
+\longrightarrow \text{GMC} ?\)
+        </center>
+        <p>
+          (Cosco&ndash;Zeitouni)
+        </p>
+      </li>
+    </ul>
+    <p>
+      <b>Open questions about critical SPDEs</b>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Graft singular, sub-critical SPDE methods with critical structures.
+        </p>
+      </li>
+      <li>
+        <p>
+          Critical KPZ? 
+        </p>
+      </li>
+    </ul>
+    <p>
+      <img class="image" src="bernoulli-w2-lectures-zygouras-9.jpg" width="100%"></img>
+    </p>
+    <p>
+      <hr></hr>[end of third lecture]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
       
     </p>
     <p>
