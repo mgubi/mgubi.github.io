@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -12,7 +12,7 @@
   <chapter*|Vita>
 
   <\notes-abstract>
-    Things that happened to me, professionally \U last updated May 2024
+    Things that happened to me, professionally \U last updated November 2024
   </notes-abstract>
 
   <\cv-body>
@@ -63,7 +63,8 @@
       Fellowships and awards
     </cv-section>
 
-    <with|font-shape|italic|none>
+    <timeline|2013\U2015>Junior member of the Institut Universitaire de
+    France
 
     <\cv-section>
       Institutional responsibilities
@@ -98,6 +99,9 @@
       Grants
     </cv-section>
 
+    <timeline|2024\U2029>ERC/UKRI Advanced Grant \PStochastic analysis of
+    quantum fields\Q (<euro>2.48M)
+
     <timeline|2019\U2022>Cluster of excellence \PHausdorff Center for
     Mathematics\Q \U <comment|Co-leader of Research Area B1 \PProbabilistic
     modeling and singular stochastic dynamics\Q
@@ -109,16 +113,16 @@
     SPDEs\Q (<hlink|URL|https://sfb1060.iam.uni-bonn.de>)>
 
     <timeline|2019\U2021>German Research Foundation Grant \PInvariant
-    measures for SPDEs and Asymptotics\Q \ \U <euro>150.000 \U <comment|Co-PI
+    measures for SPDEs and Asymptotics\Q \ \U <euro>150k \U <comment|Co-PI
     together with S.<nbsp>Albeverio (Bonn) [DFG-407748683]>
 
     <timeline|2009\U2012>French National Research Agency Project Blanc ANR
-    ECRU \PExplorations on rough paths\Q \U <euro>160.000 \U
+    ECRU \PExplorations on rough paths\Q \U <euro>160k \U
     <comment|Coordinator of the project comprising 7 PIs>
 
     <timeline|2009\U2012>French National Research Agency Projet Jeunes
     Chercheurs ANR MAGIX \PMathématiques, Algèbre, Géométrie Exactes\Q \U
-    <euro>150.000 \U <comment|Co-PI (<hlink|website|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
+    <euro>150k \U <comment|Co-PI (<hlink|website|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
 
     <\cv-section>
       Miscellanea
@@ -141,8 +145,11 @@
     physics at Fermilab \U under the supervision of Prof. M.<nbsp>Atac
 
     <\cv-section>
-      Editorial and reviewing activities
+      Editorial and other scientific activities
     </cv-section>
+
+    <timeline|2024\U>Member of the Scientific Advisory Committee of the
+    Simons Center for Geometry and Physics at Stony Brook
 
     <timeline|2024\U>Associate editor of Communication in Mathematical
     Physics
@@ -173,6 +180,13 @@
       Organization of international conferences
     </cv-section>
 
+    <timeline|2025>Simons Laufer Mathematical Sciences Institute Research
+    Program on \PRecent Trends in Stochastic Partial Differential
+    Equations\Q, Berkley (<hlink|url|https://www.slmath.org/programs/380>)
+
+    Swissmap workshop \PStochastic Equations and Stochastic Dynamics\Q, Les
+    Diablerets (<hlink|url|https://swissmaprs.ch/events/stochastic-equations-and-stochastic-dynamics/>)
+
     <timeline|2024>Research Program \PRandom paths to QFT: New probabilistic
     approaches to field theory\Q at the Simons Center for Geometry and
     Physics, Stony Brook (<hlink|url|https://scgp.stonybrook.edu/archives/42621>)
@@ -181,7 +195,7 @@
     (<hlink|url|https://www.msri.org/summer_schools/1038>)
 
     Research Program \PNew developments and challenges in Stochastic Partial
-    Differential Equations\Q at the Bernoulli Center in Lausanne
+    Differential Equations\Q at the Bernoulli Center, EPFL Lausanne
     (<hlink|url|https://bernoulli.epfl.ch/programs/new-developments-and-challenges-in-stochastic-partial-differential-equations/>)
 
     <timeline|2023>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach
@@ -233,6 +247,9 @@
     <\cv-section>
       Main invited presentations
     </cv-section>
+
+    <timeline|2024>Lecturer at the 53rd Probability Summer School at
+    Saint-Flour (<hlink|url|https://lmbp.uca.fr/stflour/>)
 
     <timeline|2024>Plenary speaker \P4th<nbsp>Italian Meeting
     on<nbsp>Probability and Mathematical Statistics\Q, Roma

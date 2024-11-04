@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -15,10 +15,12 @@
 
   \;
 
-  <notes-link|Scripting webpages|scripting-webpages.tm> (May 13th 2023)
+  <hlink|Literate programming|literate-programming.tm> (November 4th 2024)
 
   <hlink|When a local martingale is a martingale?|local-martingales.tm> (May
   15th 2023)
+
+  <notes-link|Scripting webpages|scripting-webpages.tm> (May 13th 2023)
 
   \;
 

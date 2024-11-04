@@ -11,13 +11,13 @@
 
   <chapter*|People>
 
-  <notes-abstract|Present & past members of my research group \U updated May
-  2024.>
+  <notes-abstract|Present & past members of my research group \U updated
+  September 2024.>
 
   <subsection*|Postdocs>
 
   <\itemize>
-    <item>Luca Fresta (2021\U)
+    <item>Luca Fresta (2021\U2024)<nbsp>Now postdoc in Rome.
 
     <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net>
     (2021\U2024)<nbsp>Now assistant professor at Università di Pavia.
@@ -25,10 +25,10 @@
     <item><hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
     (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.\ 
 
-    <item>Luigi Borasi (2019\U2021)
+    <item>Luigi Borasi (2019\U2021)<nbsp>Now postdoc in Milan.
 
-    <item>Baris Evren Ugurcan (2016\U2019)<nbsp>Now at Bergische Universität
-    Wuppertal.
+    <item>Baris Evren Ugurcan (2016\U2019)<nbsp>Now postdoc at Bergische
+    Universität Wuppertal.
 
     <item><hlink|Nicolas Perkowski|https://www.mi.fu-berlin.de/math/groups/stoch/members/Professors/perkowski.html>
     (2013\U2014)<nbsp>Now full professor at Freie Universität Berlin.
@@ -37,19 +37,21 @@
   <subsection*|Doctoral students>
 
   <\itemize>
-    <item>Andrea Pitrone (2025\U)
+    <item>Da Li (2024\U)
+
+    <item>Andrea Pitrone (2024\U)
 
     <item><hlink|Peter Paulovics|https://www.maths.ox.ac.uk/people/peter.paulovics>
-    (2024\U)
+    (2023\U)
 
     <item><hlink|Jaka Pelaic|https://www.maths.ox.ac.uk/people/jaka.pelaic>
-    (2024\U)
+    (2023\U)
 
     <item><hlink|Vishnu Sanjay|https://www.gssi.it/people/students/students-maths/item/15652-sanjay-vishnu>
-    (2023\U) (co-supervision with S.<nbsp>Olla at GSSI)
+    (2022\U) (co-supervision with S.<nbsp>Olla at GSSI)
 
     <item><hlink|Sarah-Jean Meyer|https://www.maths.ox.ac.uk/people/sarah-jean.meyer>
-    (2023\U)
+    (2022\U)
 
     <item><hlink|Mattia Turra|https://www.linkedin.com/in/mattiaturra/?locale=en_US>
     (2018\U2023) \PInfinitesimal analysis of singular stochastic partial
