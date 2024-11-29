@@ -56,38 +56,39 @@
     (2022\U)
 
     <item><hlink|Mattia Turra|https://www.linkedin.com/in/mattiaturra/?locale=en_US>
-    (2018\U2023) \PInfinitesimal analysis of singular stochastic partial
-    differential equations\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10830>),
+    (2018\U2023) \ \<cdot\> \PInfinitesimal analysis of singular stochastic
+    partial differential equations\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10830>),
     University of Bonn. Now working in the private sector.
 
     <item><hlink|Lucio Galeati|https://sites.google.com/view/lucio-galeati-math/home>
-    (2018\U2022) \PPathwise methods in regularisation by noise\Q
+    (2018\U2022) \ \<cdot\> \PPathwise methods in regularisation by noise\Q
     (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10089>),
     University of Bonn. Postdoc in at EPFL Losanne in the group of
     M.<nbsp>Colombo until 2024. Now tenure track Researcher (Ricertatore RTT)
     in Probability at the University of L'Aquila.
 
     <item><hlink|Nikolay Barashkov|https://scholar.google.com/citations?user=idXMb28AAAAJ&hl=en>
-    (2017\U2021) \PA variational approach to Gibbs measures on function
-    spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>),
+    (2017\U2021) \ \<cdot\> \PA variational approach to Gibbs measures on
+    function spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>),
     University of Bon. Postdoc in Helsinki with A.<nbsp>Kupiainen until 2024.
     Now Junior Group Leader at MPI Leipzig.
 
     <item><hlink|Immanuel Zachhuber|https://www.mi.fu-berlin.de/math/groups/stoch/members/PostDoc/zachhuber.html>
-    (2016\U2020) \PHyperbolic and dispersive singular stochastic PDEs\Q
-    (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9225>).<nbsp>Now
+    (2016\U2020) \ \<cdot\> \PHyperbolic and dispersive singular stochastic
+    PDEs\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9225>).<nbsp>Now
     postdoc in Berlin with N.<nbsp>Perkowski.
 
     <item><hlink|Marco Furlan|https://www.linkedin.com/in/mrcfurlan/>
-    (2014\U2018) \PStructures contrôlées pour les équations aux dérivées
-    partielles\Q (<hlink|url|https://www.theses.fr/2018PSLED008>), Dauphine
-    University, Paris.<nbsp>Now working in the finance sector in Germany
+    (2014\U2018) \ \<cdot\> \PStructures contrôlées pour les équations aux
+    dérivées partielles\Q (<hlink|url|https://www.theses.fr/2018PSLED008>),
+    Dauphine University, Paris.<nbsp>Now working in the finance sector in
+    Germany
 
     <item><hlink|Remi Catellier|https://sites.google.com/view/rmicatellier/home>
-    (2011\U2014) \PPerturbations irrégulières et systèmes différentiels
-    rugueux\Q (<hlink|url|https://www.theses.fr/2014PA090032>), Dauphine
-    University, Paris.<nbsp>Now Maître de Conferences at Université de Nice,
-    Sophia Antipolis.
+    (2011\U2014) \ \<cdot\> \PPerturbations irrégulières et systèmes
+    différentiels rugueux\Q (<hlink|url|https://www.theses.fr/2014PA090032>),
+    Dauphine University, Paris.<nbsp>Now Maître de Conferences at Université
+    de Nice, Sophia Antipolis.
 
     <item><hlink|Romain Allez|https://www.linkedin.com/in/romain-allez-41a44697/>
     (2010\U2013) \PChaos multiplicatif Gaussien, matrices aléatoires et

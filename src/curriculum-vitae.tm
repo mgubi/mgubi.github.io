@@ -99,13 +99,14 @@
       Grants
     </cv-section>
 
-    <timeline|2024\U2029>ERC/UKRI Advanced Grant \PStochastic analysis of
-    quantum fields\Q (<euro>2.48M)
+    <timeline|2025\U2030>UKRI Frontier Research grant \PStochastic analysis
+    of quantum fields\Q (5 years, ¿2.15M) \U <comment|ex ERC Advanced Grant,
+    covered by Guarantee funding from UKRI \U Grant ref EP/Z534328/1>
 
     <timeline|2019\U2022>Cluster of excellence \PHausdorff Center for
     Mathematics\Q \U <comment|Co-leader of Research Area B1 \PProbabilistic
     modeling and singular stochastic dynamics\Q
-    (<hlink|URL|https://www.hcm.uni-bonn.de>)>
+    (<hlink|url|https://www.hcm.uni-bonn.de>)>
 
     <timeline|2017\U2022>Collaborative Research Center 1060 \PThe mathematics
     of emergent effects\Q \U <comment|Principal investigator of project B9
@@ -122,7 +123,7 @@
 
     <timeline|2009\U2012>French National Research Agency Projet Jeunes
     Chercheurs ANR MAGIX \PMathématiques, Algèbre, Géométrie Exactes\Q \U
-    <euro>150k \U <comment|Co-PI (<hlink|website|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
+    <euro>150k \U <comment|Co-PI (<hlink|url|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
 
     <\cv-section>
       Miscellanea
@@ -150,6 +151,7 @@
 
     <timeline|2024\U>Member of the Scientific Advisory Committee of the
     Simons Center for Geometry and Physics at Stony Brook
+    (<hlink|url|https://scgp.stonybrook.edu>)
 
     <timeline|2024\U>Associate editor of Communication in Mathematical
     Physics
@@ -182,7 +184,7 @@
 
     <timeline|2025>Simons Laufer Mathematical Sciences Institute Research
     Program on \PRecent Trends in Stochastic Partial Differential
-    Equations\Q, Berkley (<hlink|url|https://www.slmath.org/programs/380>)
+    Equations\Q, Berkley USA (<hlink|url|https://www.slmath.org/programs/380>)
 
     Swissmap workshop \PStochastic Equations and Stochastic Dynamics\Q, Les
     Diablerets (<hlink|url|https://swissmaprs.ch/events/stochastic-equations-and-stochastic-dynamics/>)
@@ -330,7 +332,6 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|3>>
-    <associate|auto-2|<tuple|?|?>>
   </collection>
 </references>
 
