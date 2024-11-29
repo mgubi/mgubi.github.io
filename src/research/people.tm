@@ -12,34 +12,36 @@
   <chapter*|People>
 
   <notes-abstract|Present & past members of my research group \U updated
-  September 2024.>
+  November 2024.>
 
   <subsection*|Postdocs>
 
   <\itemize>
-    <item>Luca Fresta (2021\U2024)<nbsp>Now postdoc in Rome.
+    <item><hlink|Luca Fresta|https://www.iam.uni-bonn.de/users/fresta/home>
+    (2021\U2024) \<cdot\> Now postdoc in Rome.
 
-    <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net>
-    (2021\U2024)<nbsp>Now assistant professor at Università di Pavia.
+    <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net> (2021\U2024)
+    \<cdot\> Now assistant professor at Università di Pavia.
 
     <item><hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
-    (2018\U2022)<nbsp>Now assistant professor at Università di Pavia.\ 
+    (2018\U2022) \<cdot\> Now assistant professor at Università di Pavia.\ 
 
-    <item>Luigi Borasi (2019\U2021)<nbsp>Now postdoc in Milan.
+    <item>Luigi Borasi (2019\U2021) \<cdot\> Now postdoc in Milan.
 
-    <item>Baris Evren Ugurcan (2016\U2019)<nbsp>Now postdoc at Bergische
+    <item>Baris Evren Ugurcan (2016\U2019) \<cdot\> Now postdoc at Bergische
     Universität Wuppertal.
 
     <item><hlink|Nicolas Perkowski|https://www.mi.fu-berlin.de/math/groups/stoch/members/Professors/perkowski.html>
-    (2013\U2014)<nbsp>Now full professor at Freie Universität Berlin.
+    (2013\U2014) \<cdot\> Now full professor at Freie Universität Berlin.
   </itemize>
 
   <subsection*|Doctoral students>
 
   <\itemize>
-    <item>Da Li (2024\U)
+    <item><hlink|Da Li|https://www.maths.ox.ac.uk/people/da.li> (2024\U)
 
-    <item>Andrea Pitrone (2024\U)
+    <item><hlink|Andrea Pitrone|https://www.maths.ox.ac.uk/people/andrea.pitrone>
+    (2024\U)
 
     <item><hlink|Peter Paulovics|https://www.maths.ox.ac.uk/people/peter.paulovics>
     (2023\U)
@@ -61,8 +63,9 @@
     <item><hlink|Lucio Galeati|https://sites.google.com/view/lucio-galeati-math/home>
     (2018\U2022) \PPathwise methods in regularisation by noise\Q
     (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/10089>),
-    University of Bonn. Now postdoc in at EPFL Losanne in the group of
-    M.<nbsp>Colombo.
+    University of Bonn. Postdoc in at EPFL Losanne in the group of
+    M.<nbsp>Colombo until 2024. Now tenure track Researcher (Ricertatore RTT)
+    in Probability at the University of L'Aquila.
 
     <item><hlink|Nikolay Barashkov|https://scholar.google.com/citations?user=idXMb28AAAAJ&hl=en>
     (2017\U2021) \PA variational approach to Gibbs measures on function
@@ -101,63 +104,66 @@
   <subsection*|Master students in Oxford>
 
   <\itemize>
-    <item>Daniel Bilsborrow \PStochastic wave-packet reduction models and
-    connections between them\Q TT2024.\ 
+    <item>Daniel Bilsborrow \<cdot\> \PStochastic wave-packet reduction
+    models and connections between them\Q, MSc in Mathematical and
+    Theoretical Physics, Oxford University, TT<nbsp>2024.
+    (<notes-store|pdf|master-thesis-bilsborrow.pdf>)\ 
 
-    <item>Andrea Pitrone \PFlow approach for the stochastic Burgers
-    equation\Q, Msater in Matematica, Università di Pisa 2024.
+    <item>Andrea Pitrone \<cdot\> \PFlow approach for the stochastic Burgers
+    equation\Q, Master in Matematica, Università di Pisa 2024.
     (<notes-store|pdf|master-thesis-pitrone.pdf>)\ 
   </itemize>
 
   <subsection*|Master students in Bonn>
 
   <\itemize>
-    <item>Chiunqiu Song \PStochastic Quantisation of Abelian Higgs Model\Q
-    SS2022 (<notes-store|pdf|master-thesis-song.pdf>)
+    <item>Chiunqiu Song \<cdot\> \PStochastic Quantisation of Abelian Higgs
+    Model\Q SS2022 (<notes-store|pdf|master-thesis-song.pdf>)
     (<notes-store|slides|master-thesis-seminar-song.pdf>)
 
-    <item>Sarah-Jean Meyer \PA Stochastic Control Perspective on Euclidean
-    Quantum Field Theories\Q (<notes-store|pdf|master-thesis-meyer.pdf>)
+    <item>Sarah-Jean Meyer \<cdot\> \PA Stochastic Control Perspective on
+    Euclidean Quantum Field Theories\Q (<notes-store|pdf|master-thesis-meyer.pdf>)
     SS2022 (<notes-store|slides|master-thesis-seminar-meyer.pdf>)
 
-    <item>Keixang Wang \PGlobal Solutions and Stationary Measure for
+    <item>Keixang Wang \<cdot\> \PGlobal Solutions and Stationary Measure for
     Stochastic Cubic Nonlinear Wave Equation\Q SS2022
 
-    <item>Jan Nöller \PRandomness and Symmetry in Quantum Control\Q
+    <item>Jan Nöller \<cdot\> \PRandomness and Symmetry in Quantum Control\Q
     WS2021/2022 (<notes-store|pdf|master-thesis-noeller.pdf>)
 
-    <item>Panagiotis Zografos \PTopics in Non-commutative Probability\Q
-    WS2021/2022 (<notes-store|pdf|master-thesis-zografos.pdf>)
+    <item>Panagiotis Zografos \<cdot\> \PTopics in Non-commutative
+    Probability\Q WS2021/2022 (<notes-store|pdf|master-thesis-zografos.pdf>)
 
-    <item>Adrian Martini \PThe Killed Mollified Super Brownian Motion and
-    Paracontrolled Wild Sums\Q \ SS2020 (<notes-store|pdf|master-thesis-martini.pdf>)
+    <item>Adrian Martini \<cdot\> \PThe Killed Mollified Super Brownian
+    Motion and Paracontrolled Wild Sums\Q \ SS2020
+    (<notes-store|pdf|master-thesis-martini.pdf>)
 
-    <item>Jacob Orenday Lares \PTopics in Quantum Probability\Q SS2020
-    (<notes-store|pdf|master-thesis-orenday.pdf>)
+    <item>Jacob Orenday Lares \<cdot\> \PTopics in Quantum Probability\Q
+    SS2020 (<notes-store|pdf|master-thesis-orenday.pdf>)
 
-    <item>Lukas Meier \PThe true self-repelling motion'' SS2019
+    <item>Lukas Meier \<cdot\> \PThe true self-repelling motion'' SS2019
 
-    <item>Alexander Braun \POn the distribution of Scattering Coefficients in
-    the context of image processing\Q SS2019
+    <item>Alexander Braun \<cdot\> \POn the distribution of Scattering
+    Coefficients in the context of image processing\Q SS2019
     (<notes-store|pdf|master-thesis-braun.pdf>)
 
-    <item>Johannes Levermann \PComputation of complex integrals via
+    <item>Johannes Levermann \<cdot\> \PComputation of complex integrals via
     Monte-Carlo methods\Q WS2018/19
 
-    <item>Saskia Zatzkowski \PAsymptotics of the Polaron Path Measure\Q
-    SS2018
+    <item>Saskia Zatzkowski \<cdot\> \PAsymptotics of the Polaron Path
+    Measure\Q SS2018
 
-    <item>Anno Kurth \PAnalysis of Singular Stochastic PDE\Q SS2018
+    <item>Anno Kurth \<cdot\> \PAnalysis of Singular Stochastic PDE\Q SS2018
     (<notes-store|pdf|master-thesis-kurth.pdf>)
 
-    <item>Stefania Moutsana \PTopics on Mean Field Games theory\Q<nbsp>SS2018
-    \ (<notes-store|pdf|master-thesis-moutsana.pdf>)
+    <item>Stefania Moutsana \<cdot\> \PTopics on Mean Field Games
+    theory\Q<nbsp>SS2018 \ (<notes-store|pdf|master-thesis-moutsana.pdf>)
 
-    <item>Jonas Jansen \PRenormalization group methods for Stochastic PDEs\Q
-    WS2017/18 (<notes-store|pdf|master-thesis-jansen.pdf>)
+    <item>Jonas Jansen \<cdot\> \PRenormalization group methods for
+    Stochastic PDEs\Q WS2017/18 (<notes-store|pdf|master-thesis-jansen.pdf>)
 
-    <item>Nikolay Barashkov \PRadiative transport limit of the random
-    Schrödinger equation\Q (<notes-store|pdf|master-thesis-barashkov.pdf>)
+    <item>Nikolay Barashkov \<cdot\> \PRadiative transport limit of the
+    random Schrödinger equation\Q (<notes-store|pdf|master-thesis-barashkov.pdf>)
     SS2017
   </itemize>
 
