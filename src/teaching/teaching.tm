@@ -16,14 +16,22 @@
   <subsection*|Current lecture courses and seminars>
 
   <\itemize>
-    <item>Elements of Mathematical Quantum Mechanics \U <hlink|TCC
-    course|https://www.maths.ox.ac.uk/groups/tcc/tcc-current-courses> (TT22)
-    (<notes-link|link|lectures-tcc-emqm-tt24.tm>)
+    <item>...
   </itemize>
 
   <subsection*|Past lecture courses and seminars in Oxford (2022\U)>
 
   <\itemize>
+    <item>C8.1 Stochastic Differential Equations (MT24)
+    [<hlink|url|https://courses.maths.ox.ac.uk/course/view.php?id=5558>]
+
+    <item>Elements of Mathematical Quantum Mechanics \U <hlink|TCC
+    course|https://www.maths.ox.ac.uk/groups/tcc/tcc-current-courses> (TT24)
+    (<notes-link|link|lectures-tcc-emqm-tt24.tm>)
+
+    <item>C8.1 Stochastic Differential Equations (MT23)
+    [<hlink|url|https://courses.maths.ox.ac.uk/course/view.php?id=5019>]
+
     <item>C8.1 Stochastic Differential Equations (MT22)
     [<hlink|url|https://courses.maths.ox.ac.uk/course/view.php?id=699>]
   </itemize>

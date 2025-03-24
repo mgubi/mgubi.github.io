@@ -101,7 +101,8 @@
 
     <timeline|2025\U2030>UKRI Frontier Research grant \PStochastic analysis
     of quantum fields\Q (5 years, ¿2.15M) \U <comment|ex ERC Advanced Grant,
-    covered by Guarantee funding from UKRI \U Grant ref EP/Z534328/1>
+    covered by Guarantee funding from UKRI \U Grant ref EP/Z534328/1
+    (<hlink|url|https://gtr.ukri.org/projects?ref=EP%2FZ534328%2F1#/tabOverview>)>\ 
 
     <timeline|2019\U2022>Cluster of excellence \PHausdorff Center for
     Mathematics\Q \U <comment|Co-leader of Research Area B1 \PProbabilistic

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|<tuple|notes|german|notes-meta>>
 
@@ -172,14 +172,14 @@
     stetige Verteilungen (bzg. Lebesgue),<nbsp>Bedingte
     W-keit<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-7.pdf>)
 
-    <item>20.11 \| V8 \|<nbsp>Unabhüngige Zufallsvariablen,
-    Produktrüume<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
+    <item>20.11 \| V8 \|<nbsp>Unabhängige Zufallsvariablen,
+    Produkträume<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
 
     <item>24.11<nbsp>\| V9<nbsp>\| Zufallsvektoren, Fubini\UTonelli,
     Fubini\ULebesgue<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-9.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-9.pdf>)
 
     <item>27.11<nbsp>\| V10<nbsp>\|<nbsp>Unendliche Produkte, Summe
-    unabhüngiger Zufallsvariablen<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
+    unabhängiger Zufallsvariablen<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
 
     <item>1.12<nbsp>\| V11<nbsp>\|<nbsp>Die Irrfahrt, das
     Arcussinusgesetz<nbsp> (<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-11.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-11.pdf>)

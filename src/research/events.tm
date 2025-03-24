@@ -13,13 +13,39 @@
 
   <notes-abstract|I travel around to meet other mathematicians.>
 
+  Last updated in March 2025
+
   <subsection*|Forthcoming events><itemize|>
 
   <\itemize>
+    <item>CDT Random systems' Spring School 2025 at the SNS Pisa
+    (<hlink|url|https://www.randomsystems-cdt.ac.uk/event/spring-school-2025>)
+    [organization]
+
+    <item>Minicourse at GSSI Intensive Trimester on Particles, Fluids and
+    Patterns, L'Aquila, May 2025 (<hlink|url|https://trimester2025.math.gssi.it>)
+
+    <item>RIMS Kyoto, June 2025
+
+    <item>Minicourse in Pavia, June 2025
+
+    <item>Developments in the Mathematical Sciences - DIMS 2025 Leipzig, June
+    2025 (<hlink|url|https://www.mis.mpg.de/events/series/developments-in-the-mathematical-sciences-dims-2025>)
+
+    <item>St. Flour Summer School, July 2025
+    (<hlink|url|https://lmbp.uca.fr/stflour/>)
+
     <item>SLMath Program \PRecent Trends in Stochastic Partial Differential
     Equations\Q, Berkeley, August 18th, 2025<nbsp>-<nbsp>December 19th, 2025
     (<hlink|url|https://www.slmath.org/programs/380>) [organization]
 
+    <item>RIMS research project ``The mathematical roads to QFT'', Kyoto,
+    April 2026
+  </itemize>
+
+  <subsection*|Past events>
+
+  <\itemize>
     <item>Simons Center for Geometry and Physics \U Research program \PRandom
     paths to QFT: New probabilistic approaches to field theory\Q,
     Stony-Brook, October 14 \UNovember 22, 2024
@@ -32,11 +58,7 @@
     <item>SLMath Summer Graduate School \PStochastic quantisation\Q,
     Berkeley, July 2024 (<hlink|url|https://www.msri.org/summer_schools/1038>)
     [organization/lectures]
-  </itemize>
 
-  <subsection*|Past events>
-
-  <\itemize>
     <item>4th Italian Meeting on Probability and Mathematical Statistics,
     Rome, June 10th\U14th, 2024 \ (<notes-store|slides|talk-roma-probability-2024.pdf>)
 
@@ -117,6 +139,7 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
+    <associate|auto-4|<tuple|<with|mode|<quote|math>|><shift|<with|font-size|<quote|0.595>|\<#25C6\>>||0.1em>|?>>
   </collection>
 </references>
 

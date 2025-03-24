@@ -14,7 +14,7 @@
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated November 2024
-  </notes-entry|Fri Nov 29 12:14:11 2024 UTC>
+  </notes-entry|Thu Jan 30 16:52:03 2025 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Sat May 13 17:05:11 2023 UTC>
