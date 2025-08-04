@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|notes>
 
@@ -53,6 +53,10 @@
   master branch tracks the official svn repository and there are several
   development branches.
 
+  \;
+
+  <notes-link|TeXmacs workshop|texmacs-workshop.tm>
+
   <section*|Blogs & other interesting places on the internet>
 
   <hlink|Ivan Tikhonovs's blog|http://brokestream.com/index.html> \U nice
@@ -90,9 +94,6 @@
     <associate|auto-1|<tuple|?|?>>
     <associate|auto-2|<tuple|?|?>>
     <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
   </collection>
 </references>
 
