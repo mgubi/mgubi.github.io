@@ -59,12 +59,225 @@
     <|unfolded-io>
       Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 
-      ::1 - - [31/May/2024 10:58:42] "GET /docs/main.html HTTP/1.1" 304 -
+      ::1 - - [04/Aug/2025 10:56:14] "GET / HTTP/1.1" 200 -
 
-      ::1 - - [31/May/2024 10:58:42] "GET
-      /docs/main-1.main-1.csm_random-wave_a3688e46a6.png HTTP/1.1" 304 -
+      ::1 - - [04/Aug/2025 10:56:14] "GET /docs/main.html HTTP/1.1" 200 -
 
-      <script-interrupted>
+      ::1 - - [04/Aug/2025 10:56:14] "GET /resources/notes-base.css HTTP/1.1"
+      200 -
+
+      ::1 - - [04/Aug/2025 10:56:14] "GET /resources/highlight.pack.js
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:14] "GET /resources/notes-base.js HTTP/1.1"
+      200 -
+
+      ::1 - - [04/Aug/2025 10:56:14] "GET /resources/highlight-github.css
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:14] "GET /docs/main-1.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:14] "GET /docs/main-2.jpeg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:15] "GET /resources/favicon-32x32.png
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella-1.jpg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella-2.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella-4.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:56:34] "GET /docs/marella-5.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:57:32] "GET /docs/main.html HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 10:57:32] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 10:57:32] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 10:59:52] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 10:59:52] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 10:59:52] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 10:59:53] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella.html HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella-5.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella-4.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:00:54] "GET /docs/marella-3.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella-4.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella-5.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:47] "GET /docs/marella-3.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:01:48] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:01:49] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:15] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:16] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella-5.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella-4.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:02:34] "GET /docs/marella-3.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:02:35] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /resources/notes-base.css HTTP/1.1"
+      200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /resources/highlight.pack.js
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /resources/notes-base.js HTTP/1.1"
+      200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella-1.jpg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /resources/highlight-github.css
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella-2.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella-4.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /docs/marella-5.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:39] "GET /resources/favicon-32x32.png
+      HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:40] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:02:41] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella-1.jpg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella-5.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella-2.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:12] "GET /docs/marella-4.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:13] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:13] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:13] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:13] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:14] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:14] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:14] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:14] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:32] "GET /docs/marella.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:32] "GET /docs/marella-3.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:05:33] "GET /docs/marella-1.jpg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:05:33] "GET /docs/marella-2.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:06:09] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:06:09] "GET /docs/main-1.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:06:09] "GET /docs/main-2.jpeg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:06:13] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:06:36] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:10:38] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:10:38] "GET /docs/main-1.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:10:38] "GET /docs/main-2.jpeg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:17] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:17] "GET /docs/main-1.png HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:17] "GET /docs/main-2.jpeg HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:19] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:31] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:31] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:31] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:32] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:34] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:34] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:34] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:35] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:36] "GET /docs/main.html HTTP/1.1" 200 -
+
+      ::1 - - [04/Aug/2025 11:11:36] "GET /docs/main-2.jpeg HTTP/1.1" 304 -
+
+      ::1 - - [04/Aug/2025 11:11:36] "GET /docs/main-1.png HTTP/1.1" 304 -
+
+      <script-busy>
     </unfolded-io>
 
     <\unfolded-io|Shell] >

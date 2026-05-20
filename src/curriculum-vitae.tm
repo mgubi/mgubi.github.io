@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|notes|cv-mg>>
 
@@ -12,7 +12,7 @@
   <chapter*|Vita>
 
   <\notes-abstract>
-    Things that happened to me, professionally \U last updated November 2024
+    Things that happened to me, professionally \U last updated May 2026
   </notes-abstract>
 
   <\cv-body>
@@ -63,6 +63,12 @@
       Fellowships and awards
     </cv-section>
 
+    <timeline|2026>Medal for Mathematics of the Italian National Academy of
+    Sciences (Accademia dei XL)
+
+    <timeline|2018>Invited sectional speaker ICM (jointly between Probability
+    and PDEs)
+
     <timeline|2013\U2015>Junior member of the Institut Universitaire de
     France
 
@@ -99,6 +105,9 @@
       Grants
     </cv-section>
 
+    <timeline|2025-2029>Simons Collaboration Grant \PProbabilistic paths to
+    QFT\Q \V $558K \U <comment|(<hlink|url|https://probabilistic-qft.org/>)>
+
     <timeline|2025\U2030>UKRI Frontier Research grant \PStochastic analysis
     of quantum fields\Q (5 years, ¿2.15M) \U <comment|ex ERC Advanced Grant,
     covered by Guarantee funding from UKRI \U Grant ref EP/Z534328/1
@@ -112,23 +121,26 @@
     <timeline|2017\U2022>Collaborative Research Center 1060 \PThe mathematics
     of emergent effects\Q \U <comment|Principal investigator of project B9
     \PLarge scale modeling of non-linear microscopic dynamics via singular
-    SPDEs\Q (<hlink|URL|https://sfb1060.iam.uni-bonn.de>)>
+    SPDEs\Q (<hlink|url|https://sfb1060.iam.uni-bonn.de>)>
 
     <timeline|2019\U2021>German Research Foundation Grant \PInvariant
-    measures for SPDEs and Asymptotics\Q \ \U <euro>150k \U <comment|Co-PI
+    measures for SPDEs and Asymptotics\Q \ \U <euro>150K \U <comment|Co-PI
     together with S.<nbsp>Albeverio (Bonn) [DFG-407748683]>
 
     <timeline|2009\U2012>French National Research Agency Project Blanc ANR
-    ECRU \PExplorations on rough paths\Q \U <euro>160k \U
+    ECRU \PExplorations on rough paths\Q \U <euro>160K \U
     <comment|Coordinator of the project comprising 7 PIs>
 
     <timeline|2009\U2012>French National Research Agency Projet Jeunes
     Chercheurs ANR MAGIX \PMathématiques, Algèbre, Géométrie Exactes\Q \U
-    <euro>150k \U <comment|Co-PI (<hlink|url|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
+    <euro>150K \U <comment|Co-PI (<hlink|url|http://magix.lix.polytechnique.fr/magix/home/home.en.html>)>
 
     <\cv-section>
       Miscellanea
     </cv-section>
+
+    <timeline|2025>Invited professor \ (1 month) at the Department of
+    Mathematics of the University of Turin, Italy
 
     <timeline|2006>Invited professor \ (1 month) in the Probability group at
     the Institut E.<nbsp>Cartan, University of Nancy 1, France
@@ -149,6 +161,8 @@
     <\cv-section>
       Editorial and other scientific activities
     </cv-section>
+
+    <timeline|2025\U>Associate editor of Journal of Functional Analysis
 
     <timeline|2024\U>Member of the Scientific Advisory Committee of the
     Simons Center for Geometry and Physics at Stony Brook
@@ -174,7 +188,7 @@
     <timeline|2011-2014>Member of the Evaluation Group for Mathematics and
     Statistics for NSERC/CRSNG, Canada
 
-    <timeline|2016\U2017>Member of Evaluations Groups for the National
+    <timeline|2016\U2026>Member of Evaluations Groups for the National
     Science Foundation, USA
 
     Referee for ERC, ANR, DFG and various others research agencies
@@ -251,7 +265,7 @@
       Main invited presentations
     </cv-section>
 
-    <timeline|2024>Lecturer at the 53rd Probability Summer School at
+    <timeline|2025>Lecturer at the 53rd Probability Summer School at
     Saint-Flour (<hlink|url|https://lmbp.uca.fr/stflour/>)
 
     <timeline|2024>Plenary speaker \P4th<nbsp>Italian Meeting

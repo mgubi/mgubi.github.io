@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|notes|cv-mg|notes-meta>>
 
@@ -16,8 +16,16 @@
 
   <subsection*|Postdocs>
 
+  \;
+
   <\itemize>
-    <item><hlink|Luca Fresta|https://www.iam.uni-bonn.de/users/fresta/home>
+    <item><hlink|Andreas Koller|https://www.maths.ox.ac.uk/people/andreas.koller>
+    (2025\U)
+
+    <item><hlink|Martin Peev|https://www.maths.ox.ac.uk/people/martin.peev>
+    (2025\U)
+
+    <item><hlink|Luca Fresta|https://luca-fresta.github.io/index.html>
     (2021\U2024) \<cdot\> Now postdoc in Rome.
 
     <item><hlink|Paolo Rinaldi|https://www.paolorinaldi.net> (2021\U2024)
@@ -26,10 +34,12 @@
     <item><hlink|Francesco Carlo De Vecchi|https://matematica.unipv.it/elenco/francesco-de-vecchi/>
     (2018\U2022) \<cdot\> Now assistant professor at Università di Pavia.\ 
 
-    <item>Luigi Borasi (2019\U2021) \<cdot\> Now postdoc in Milan.
+    <item><hlink|Luigi Borasi|https://dpdq.net> (2019\U2021) \<cdot\> Now
+    postdoc in Milan.
 
-    <item>Baris Evren Ugurcan (2016\U2019) \<cdot\> Now postdoc at Bergische
-    Universität Wuppertal.
+    <item><hlink|Baris Evren Ugurcan|https://www.cbs.mpg.de/person/ugurcan/2482>
+    (2016\U2019) \<cdot\> Now postdoc at Max Planck Institute for Human
+    Cognitive and Brain Sciences in Leipzig.
 
     <item><hlink|Nicolas Perkowski|https://www.mi.fu-berlin.de/math/groups/stoch/members/Professors/perkowski.html>
     (2013\U2014) \<cdot\> Now full professor at Freie Universität Berlin.
@@ -38,6 +48,11 @@
   <subsection*|Doctoral students>
 
   <\itemize>
+    <item><hlink|Mothibi Mathiva|https://www.maths.ox.ac.uk/people/mothibi.mathivha>
+    (2025\U)
+
+    <item>Giacomo La Scala (2025\U)
+
     <item><hlink|Da Li|https://www.maths.ox.ac.uk/people/da.li> (2024\U)
 
     <item><hlink|Andrea Pitrone|https://www.maths.ox.ac.uk/people/andrea.pitrone>
@@ -49,11 +64,12 @@
     <item><hlink|Jaka Pelaic|https://www.maths.ox.ac.uk/people/jaka.pelaic>
     (2023\U)
 
-    <item><hlink|Vishnu Sanjay|https://www.gssi.it/people/students/students-maths/item/15652-sanjay-vishnu>
-    (2022\U) (co-supervision with S.<nbsp>Olla at GSSI)
-
     <item><hlink|Sarah-Jean Meyer|https://www.maths.ox.ac.uk/people/sarah-jean.meyer>
     (2022\U)
+
+    <item><hlink|Vishnu Sanjay|https://www.gssi.it/people/students/students-maths/item/15652-sanjay-vishnu>
+    (2022\U2026) \<cdot\> \POn the weak coupling limit of the periodic
+    quantum Lorentz gas\Q (co-supervision with S.<nbsp>Olla at GSSI)
 
     <item><hlink|Mattia Turra|https://www.linkedin.com/in/mattiaturra/?locale=en_US>
     (2018\U2023) \ \<cdot\> \PInfinitesimal analysis of singular stochastic
@@ -70,8 +86,8 @@
     <item><hlink|Nikolay Barashkov|https://scholar.google.com/citations?user=idXMb28AAAAJ&hl=en>
     (2017\U2021) \ \<cdot\> \PA variational approach to Gibbs measures on
     function spaces\Q (<hlink|url|https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/9684>),
-    University of Bon. Postdoc in Helsinki with A.<nbsp>Kupiainen until 2024.
-    Now Junior Group Leader at MPI Leipzig.
+    University of Bonn. Postdoc in Helsinki with A.<nbsp>Kupiainen until
+    2024. Now Junior Group Leader at MPI Leipzig.
 
     <item><hlink|Immanuel Zachhuber|https://www.mi.fu-berlin.de/math/groups/stoch/members/PostDoc/zachhuber.html>
     (2016\U2020) \ \<cdot\> \PHyperbolic and dispersive singular stochastic

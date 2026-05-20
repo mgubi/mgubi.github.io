@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|notes>
 
@@ -12,19 +12,16 @@
 
   <hrule>
 
-  <notes-entry|marella.tm|Marella|Marella is a novel I wrote and rewrote
-  several times in the last twenty years. It is written in Italian, so this
-  page is also not translated.|Mon Aug \ 4 10:05:02 2025 UTC>
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Things that happened to me, professionally \U last updated May 2026
+  </notes-entry|Wed May 20 09:27:14 2026 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Thu Jul 24 11:13:30 2025 UTC>
+  languages, programming, <TeXmacs>.|Wed Aug 27 08:30:47 2025 UTC>
 
-  <notes-entry|texmacs-workshop.tm|TeXmacs workshop 2025|This was created
-  during the TeXmacs workshop 2025|Thu Jul 24 11:10:13 2025 UTC>
-
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Things that happened to me, professionally \U last updated November 2024
-  </notes-entry|Mon Mar 24 16:34:44 2025 UTC>
+  <notes-entry|marella.tm|Marella|Marella is a novel I wrote and rewrote
+  several times in the last twenty years. It is written in Italian, so this
+  page is also not translated.|Mon Aug \ 4 10:17:39 2025 UTC>
 
   <notes-entry|old-publications.tm|Publications|What my collaborators,
   students and me have written \U last updated October 2020.|Sat May 13

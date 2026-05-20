@@ -55,7 +55,7 @@
 
   \;
 
-  <notes-link|TeXmacs workshop|texmacs-workshop.tm>
+  <notes-link|TeXmacs workshop 2025|texmacs-workshop.tm>
 
   <section*|Blogs & other interesting places on the internet>
 
@@ -80,6 +80,8 @@
   <hlink|Build your own Lisp|https://buildyourownlisp.com/contents> /
   <hlink|Daniel Holden's website|https://theorangeduck.com/page/all> /
   <hlink|Peter Norvig's website|https://norvig.com>
+
+  \;
 </body>
 
 <\initial>

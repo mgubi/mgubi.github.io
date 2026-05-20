@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|notes|notes-meta>>
 
@@ -33,6 +33,18 @@
   <subsection*|Selected publications>
 
   <\itemize>
+    <item>with F.<nbsp>De Vecchi, L.<nbsp>Fresta and M.<nbsp>Gordina.
+    <newblock>Non-commutative <math|L<rsup|p>> spaces and Grassmann
+    stochastic analysis. <newblock><with|font-shape|italic|Probability Theory
+    and Related Fields>, may 2025.<newblock>
+    <newblock><hlink|10.1007/s00440-025-01379-4|https://doi.org/10.1007/s00440-025-01379-4>
+
+    <item>with G.<nbsp>Cannizzaro and F.<nbsp>Toninelli. <newblock>Gaussian
+    Fluctuations for the Stochastic Burgers Equation in Dimension
+    <math|d\<geqslant\>2>. <newblock><with|font-shape|italic|Communications
+    in Mathematical Physics>, 405(4):89, apr 2024.<newblock>
+    <newblock><hlink|10.1007/s00220-024-04966-z|https://doi.org/10.1007/s00220-024-04966-z>
+
     <item>with H.<nbsp>Koch and T.<nbsp>Oh. <newblock>Paracontrolled approach
     to the three-dimensional stochastic nonlinear wave equation with
     quadratic nonlinearity. <newblock><newblock><with|font-shape|italic|Journal
