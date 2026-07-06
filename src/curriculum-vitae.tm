@@ -66,6 +66,9 @@
     <timeline|2026>Medal for Mathematics of the Italian National Academy of
     Sciences (Accademia dei XL)
 
+    <timeline|2023>Medallion Award & lecture of the Institute of Mathematical
+    Statistics (<hlink|url|https://imstat.org/ims-special-lectures/>)
+
     <timeline|2018>Invited sectional speaker ICM (jointly between Probability
     and PDEs)
 
@@ -275,6 +278,10 @@
     <timeline|2023>Minicourse at the CIME summer school \PStatistical
     Mechanics and Stochastic PDEs\Q, Cetraro
     (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde?authuser=0>)
+
+    Medallion lecture at the 43rd Conference on Stochastic Processes and
+    their Applications (SPA) in Lisbon, Portugal
+    (<hlink|url|https://www.spa2023.org>)\ 
 
     <timeline|2022>Conference \PQuantum many body system and interacting
     particles, in honor of Hebert Spohn\Q, \ Münster
