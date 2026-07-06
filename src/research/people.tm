@@ -121,6 +121,10 @@
   <subsection*|Master students in Oxford>
 
   <\itemize>
+    <item>Ivan Larin \<cdot\> \PLefschetz Thimbles and Complex Langevin
+    Approaches to the Sign Problem in Numerical QFT\Q, MSc in Mathematical
+    and Theoretical Physics, Oxford University, TT<nbsp>2026.\ 
+
     <item>Daniel Bilsborrow \<cdot\> \PStochastic wave-packet reduction
     models and connections between them\Q, MSc in Mathematical and
     Theoretical Physics, Oxford University, TT<nbsp>2024.
