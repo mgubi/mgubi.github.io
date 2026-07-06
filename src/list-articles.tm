@@ -12,12 +12,12 @@
 
   <hrule>
 
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Wed May 20 15:40:20 2026 UTC>
+
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2026
-  </notes-entry|Wed May 20 09:27:14 2026 UTC>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Wed Aug 27 08:30:47 2025 UTC>
+  </notes-entry|Wed May 20 15:40:20 2026 UTC>
 
   <notes-entry|marella.tm|Marella|Marella is a novel I wrote and rewrote
   several times in the last twenty years. It is written in Italian, so this

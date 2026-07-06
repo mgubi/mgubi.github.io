@@ -3,7 +3,7 @@
   <title>Notes on TeXmacs</title>
   <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-05-20T15:39:17Z</updated>
+  <updated>2026-07-06T16:25:02Z</updated>
   <author>
     <name>The TeXmacs organisation</name>
     <uri>http://www.texmacs.org</uri>
@@ -12,22 +12,22 @@
   <icon>http://mgubi.github.io/misc/blog-icon.ico</icon>
   <logo>http://mgubi.github.io/misc/texmacs-blog-transparent.png</logo>
   <entry>
-    <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/curriculum-vitae.html"/>
-    <id>mgubi.github.io/curriculum-vitae.tm:2026-05-20T09:27:14Z</id>
-    <updated>2026-05-20T09:27:14Z</updated>
-    <published>2026-05-20T09:27:15Z</published>
-    <summary><document>Things that happened to me, professionally  last
-    updated May 2026</document></summary>
-  </entry>
-  <entry>
     <title>Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/programming.html"/>
-    <id>mgubi.github.io/programming.tm:2025-08-27T08:30:47Z</id>
-    <updated>2025-08-27T08:30:47Z</updated>
+    <id>mgubi.github.io/programming.tm:2026-05-20T15:40:20Z</id>
+    <updated>2026-05-20T15:40:20Z</updated>
     <published>2026-03-24T11:12:52Z</published>
     <summary><concat>Content related to computer languages, programming,
     <TeXmacs/>.</concat></summary>
+  </entry>
+  <entry>
+    <title>Vita</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/curriculum-vitae.html"/>
+    <id>mgubi.github.io/curriculum-vitae.tm:2026-05-20T15:40:20Z</id>
+    <updated>2026-05-20T15:40:20Z</updated>
+    <published>2026-05-20T09:27:15Z</published>
+    <summary><document>Things that happened to me, professionally  last
+    updated May 2026</document></summary>
   </entry>
   <entry>
     <title>Marella</title>

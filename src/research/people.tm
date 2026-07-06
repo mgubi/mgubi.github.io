@@ -156,7 +156,7 @@
     (<notes-store|pdf|master-thesis-martini.pdf>)
 
     <item>Jacob Orenday Lares \<cdot\> \PTopics in Quantum Probability\Q
-    SS2020 (<notes-store|pdf|master-thesis-orenday.pdf>)
+    SS2020
 
     <item>Lukas Meier \<cdot\> \PThe true self-repelling motion'' SS2019
 
