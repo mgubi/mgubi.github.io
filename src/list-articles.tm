@@ -12,15 +12,72 @@
 
   <hrule>
 
-  <notes-entry|research/events.tm|Events|I travel around to meet other
-  mathematicians.|Fri Sep 18 23:02:07 2026 UTC>
+  <notes-entry|teaching/seminar-rough-paths-ss22.tm|Seminar on rough paths|An
+  introductory master seminar on Rough path theory, which has taken place in
+  Bonn in the Summer Semester 2022.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-11-12.tm|Enseignements
+  2011/2012|Lectures delivered at Paris Dauphine, academic year
+  2011\U2012.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-12-13.tm|Enseignements
+  2012/2013|Lectures delivered at Paris Dauphine, academic year
+  2012\U2013.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/seminar-statistical-mechanics-ss21.tm| Statistical
+  mechanics of lattice systems|This is a seminar on statistical mechanics
+  held in Bonn in SS 2021 for the Bachelor degree in Mathematics.|Fri Sep 18
+  23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-08-09.tm|Enseignements
+  2008/2009|Lectures delivered at Paris Dauphine, academic year
+  2008\U2009.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/lectures-stochastic-analysis-ss20.tm|Stochastic
+  Analysis|A course developing applications<nbsp>of stochastic calculus to
+  the study of continuous time stochastic processes. Course delivered in Bonn
+  in the Summer Semester 2020.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/seminar-renormalization-group-ws20-21.tm|Seminar:
+  Nonperturbative Renormalization|An introduction to the continuous
+  renormalization group via a Grassmann model. Took place in WS
+  2020\U2021.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-10-11.tm|Enseignements
+  2010/2011|Lectures delivered at Paris Dauphine, academic year
+  2010\U2011.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have
+  taught.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-14-15.tm|Enseignements
+  2014/2015|Lectures delivered at Paris Dauphine, academic year
+  2014\U2015.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/lectures-stochastic-analysis-ss22.tm|Stochastic
+  Analysis|A course developing applications<nbsp>of stochastic calculus to
+  the study of continuous time stochastic processes. Course delivered in Bonn
+  in the Summer Semester 2022.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/teaching-dauphine-09-10.tm|Enseignements
+  2009/2010|Lectures delivered at Paris Dauphine, academic year
+  2009\U2010.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/lectures-stochastic-processes-ss21.tm|Stochastic
+  Processes|A course delivered in Bonn in the summer semester 2021, via Zoom
+  due to the pandemic.|Fri Sep 18 23:12:07 2026 UTC>
+
+  <notes-entry|teaching/lectures-intro-probability-ws20-21.tm|Introduction to
+  probability|A bachelor course delivered online (due to the pandemic) in
+  Bonn in the winter semester 2020/2021. In German.|Fri Sep 18 23:12:07 2026
+  UTC>
+
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|Fri Sep 18 23:12:07 2026 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
-  </notes-entry|Fri Sep 18 22:43:17 2026 UTC>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated September 2026.|Fri Sep 18 22:43:17 2026 UTC>
+  </notes-entry|Fri Sep 18 23:12:07 2026 UTC>
 
   <notes-entry|research/srq/srq-intro.tm|SRQ \U Scaling limits, rough paths,
   quantum field theory|From September 3rd 2018 to December 21st 2018,
@@ -28,76 +85,19 @@
   H.<nbsp>Weber and L.<nbsp>Zambotti we organized a research period at the
   Netwon Institute in Cambridge to bring together people working in
   stochastic PDEs and people working around questions of stastistical
-  mechanics and quantum field theory.|Fri Sep 18 21:09:10 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-11-12.tm|Enseignements
-  2011/2012|Lectures delivered at Paris Dauphine, academic year
-  2011\U2012.|Fri Sep 18 21:06:15 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-08-09.tm|Enseignements
-  2008/2009|Lectures delivered at Paris Dauphine, academic year
-  2008\U2009.|Fri Sep 18 21:06:15 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-09-10.tm|Enseignements
-  2009/2010|Lectures delivered at Paris Dauphine, academic year
-  2009\U2010.|Fri Sep 18 21:06:15 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-12-13.tm|Enseignements
-  2012/2013|Lectures delivered at Paris Dauphine, academic year
-  2012\U2013.|Fri Sep 18 20:57:01 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-10-11.tm|Enseignements
-  2010/2011|Lectures delivered at Paris Dauphine, academic year
-  2010\U2011.|Fri Sep 18 20:57:01 2026 UTC>
-
-  <notes-entry|teaching/teaching-dauphine-14-15.tm|Enseignements
-  2014/2015|Lectures delivered at Paris Dauphine, academic year
-  2014\U2015.|Fri Sep 18 20:57:01 2026 UTC>
+  mechanics and quantum field theory.|Fri Sep 18 23:12:07 2026 UTC>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|Fri Sep 18 20:57:01 2026 UTC>
+  in various places.|Fri Sep 18 23:12:07 2026 UTC>
 
-  <notes-entry|teaching/seminar-rough-paths-ss22.tm|Seminar on rough paths|An
-  introductory master seminar on Rough path theory, which has taken place in
-  Bonn in the Summer Semester 2022.|Fri Sep 18 20:57:00 2026 UTC>
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated September 2026.|Fri Sep 18 23:12:07 2026 UTC>
 
-  <notes-entry|teaching/seminar-statistical-mechanics-ss21.tm| Statistical
-  mechanics of lattice systems|This is a seminar on statistical mechanics
-  held in Bonn in SS 2021 for the Bachelor degree in Mathematics.|Fri Sep 18
-  20:57:00 2026 UTC>
-
-  <notes-entry|teaching/lectures-stochastic-analysis-ss20.tm|Stochastic
-  Analysis|A course developing applications<nbsp>of stochastic calculus to
-  the study of continuous time stochastic processes. Course delivered in Bonn
-  in the Summer Semester 2020.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|teaching/seminar-renormalization-group-ws20-21.tm|Seminar:
-  Nonperturbative Renormalization|An introduction to the continuous
-  renormalization group via a Grassmann model. Took place in WS
-  2020\U2021.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have
-  taught.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|teaching/lectures-stochastic-analysis-ss22.tm|Stochastic
-  Analysis|A course developing applications<nbsp>of stochastic calculus to
-  the study of continuous time stochastic processes. Course delivered in Bonn
-  in the Summer Semester 2022.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|teaching/lectures-stochastic-processes-ss21.tm|Stochastic
-  Processes|A course delivered in Bonn in the summer semester 2021, via Zoom
-  due to the pandemic.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|teaching/lectures-intro-probability-ws20-21.tm|Introduction to
-  probability|A bachelor course delivered online (due to the pandemic) in
-  Bonn in the winter semester 2020/2021. In German.|Fri Sep 18 20:57:00 2026
-  UTC>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|Fri Sep 18 20:57:00 2026 UTC>
-
-  <notes-entry|research/research.tm|Research|Mathematics.|Fri Sep 18 20:57:00
+  <notes-entry|research/research.tm|Research|Mathematics.|Fri Sep 18 23:12:07
   2026 UTC>
+
+  <notes-entry|research/events.tm|Events|I travel around to meet other
+  mathematicians.|Fri Sep 18 23:12:07 2026 UTC>
 
   <notes-entry|research/people.tm|People|Present & past members of my
   research group \U updated November 2024.|Mon Jul \ 6 16:54:07 2026 UTC>
