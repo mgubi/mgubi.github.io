@@ -12,7 +12,7 @@
   <chapter*|Enseignements 2009/2010>
 
   <notes-abstract|Lectures delivered at Paris Dauphine, academic year
-  2010\U2011.>
+  2009\U2010.>
 
   <with|font-series|bold|Année 2009/2010>
 
@@ -361,11 +361,11 @@
     <item>La page web de J.A. Bucklew (<hlink|URL|http://homepages.cae.wisc.edu/~bucklew/publication.htm>)
 
     <item>Le cours de A. Puhalskii sur les GD
-    (<notes-store|PDF|e0910/http://www-math.cudenver.edu/~puhalski/ld/course_1.pdf>)
+    (<hlink|PDF|http://www-math.cudenver.edu/~puhalski/ld/course_1.pdf>)
 
     <item>Quelques preuves du théorème de Riesz-Markov
-    (<notes-store|PDF|e0910/http://www.math.ubc.ca/~feldman/m511/rieszmarkov.pdf>)
-    (<notes-store|PDF|e0910/http://www.imsc.res.in/~sunder/rrt1.pdf>).
+    (<hlink|PDF|http://www.math.ubc.ca/~feldman/m511/rieszmarkov.pdf>)
+    (<hlink|PDF|http://www.imsc.res.in/~sunder/rrt1.pdf>).
   </itemize>
 
   <with|font-series|bold|Journal>

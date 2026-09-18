@@ -99,9 +99,9 @@
   <notes-link|Notes|srq/srq-intro.tm> from the seminar held during the
   <hlink|SRQ \U Scaling limits, rough paths, quantum field
   theory|https://www.newton.ac.uk/event/srq/> research period in 2018 at the
-  Newton Institute, Cambrige
+  Newton Institute, Cambridge
 
-  My PhD thesis \PFinite-size scaling in non-equilibirum critical phenomena\Q
+  My PhD thesis \PFinite-size scaling in non-equilibrium critical phenomena\Q
   (University of Pisa, 2002) (<notes-store|pdf|phd-thesis-gubinelli.pdf>)
 
   \;

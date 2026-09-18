@@ -72,31 +72,31 @@
     <item>G. Kalai and S. Safra. Threshold Phenomena and Influence, in:
     Computational Complexity and Statistical Physics, A.G. Percus, G. Istrate
     and C. Moore, eds. (Oxford University Press, New York, 2006), pp. 25-60.
-    (<notes-store|PDF|e1011/http://www.ma.huji.ac.il/~kalai/ML.pdf>)
+    (<hlink|PDF|http://www.ma.huji.ac.il/~kalai/ML.pdf>)
 
     <item>G. Kalai, A Fourier-Theoretic Perspective for the Condorcet Paradox
     and Arrow's theorem, Adv. in Appl. Math. 29(2002), 412-426.
-    (<notes-store|PDF|e1011/http://www.ma.huji.ac.il/~kalai/arr.pdf>)
+    (<hlink|PDF|http://www.ma.huji.ac.il/~kalai/arr.pdf>)
 
     <item>G. Kalai, Social Indeterminacy, Econometrica, 72 (2004), 1565-1581.
-    (<notes-store|PDF|e1011/http://www.ma.huji.ac.il/~kalai/SI.pdf>)
+    (<hlink|PDF|http://www.ma.huji.ac.il/~kalai/SI.pdf>)
 
     <item>G. Kalai, Noise sensitivity and chaos in social choice theory.
     Discussion Paper Series dp399, Center for Rationality and Interactive
     Decision Theory, Hebrew University, Jerusalem.
-    (<notes-store|PDF|e1011/http://www.ma.huji.ac.il/~kalai/CHAOS.pdf>)
+    (<hlink|PDF|http://www.ma.huji.ac.il/~kalai/CHAOS.pdf>)
 
     <item>O'Donnell, R. 2008. Some topics in analysis of boolean functions.
     In Proceedings of the 40th Annual ACM Symposium on theory of Computing
     (Victoria, British Columbia, Canada, May 17 - 20, 2008). STOC '08. ACM,
     New York, NY, 569-578. (<hlink|doi|http://doi.acm.org/10.1145/1374376.1374458>)
-    (<notes-store|PDF|e1011/http://www.cs.cmu.edu/~odonnell/papers/analysis-survey.pdf>)
+    (<hlink|PDF|http://www.cs.cmu.edu/~odonnell/papers/analysis-survey.pdf>)
 
     <item>E. Friedgut, G. Kalai, N. Nisan, Elections Can be Manipulated Often
-    (<notes-store|PDF|e1011/http://www.ratio.huji.ac.il/dp_files/dp481.pdf>)
+    (<hlink|PDF|http://www.ratio.huji.ac.il/dp_files/dp481.pdf>)
 
     <item>"Hypercontractivity and its applications", a survey by Punya Biswal
-    (<notes-store|PDF|e1011/http://cdn.bitbucket.org/punya/hypercontractivity-survey/downloads/Quals.pdf>)
+    (<hlink|PDF|http://cdn.bitbucket.org/punya/hypercontractivity-survey/downloads/Quals.pdf>)
 
     <item>TCS math blog (<hlink|link|http://tcsmath.wordpress.com/>)
 

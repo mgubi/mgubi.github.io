@@ -37,12 +37,12 @@
   editing platform. Some time ago I wrote a <notes-link|short
   novel|marella.tm> in Italian.<vspace|1em>
 
-  <hlink|google scholar|http://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
-  \<cdot\> <hlink|arXiv|http://arxiv.org/a/gubinelli_m_1> \<cdot\>
-  <hlink|ORCID|http://orcid.org/0000-0002-4014-2949>
+  <hlink|google scholar|https://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
+  \<cdot\> <hlink|arXiv|https://arxiv.org/a/gubinelli_m_1> \<cdot\>
+  <hlink|ORCID|https://orcid.org/0000-0002-4014-2949>
 
   <hlink|@maxgubi@twitter|https://twitter.com/maxgubi> \<cdot\>
-  <hlink|@maxgubi@mathstdon.xyz|https://mathstodon.xyz/@maxgubi> \<cdot\>
+  <hlink|@maxgubi@mathstodon.xyz|https://mathstodon.xyz/@maxgubi> \<cdot\>
   <hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/>
 
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
@@ -63,7 +63,7 @@
     <notes-link|template|template.tm> for new pages
 
     these pages have been created with <hlink|<TeXmacs>|http://www.texmacs.org>
-    and are hosted at <hlink|github|https://github.com/mgubi/webpages>
+    and are hosted at <hlink|github|https://github.com/mgubi/mgubi.github.io>
   </small>
 
   <vspace|1em>

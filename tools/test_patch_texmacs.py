@@ -71,6 +71,19 @@ class PatchTexmacsTests(unittest.TestCase):
             self.assertEqual((old_size, new_size), (len(original), len(original) + 5))
             self.assertEqual(path.read_bytes(), original)
 
+    def test_raw_mode_accepts_legacy_text_file(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "legacy.bib"
+            path.write_bytes(b"title = {Fluctuactions}\n")
+
+            patch_file(
+                path,
+                [Operation(b"Fluctuactions", b"Fluctuations")],
+                require_texmacs_header=False,
+            )
+
+            self.assertEqual(path.read_bytes(), b"title = {Fluctuations}\n")
+
     def test_rejects_non_byte_unicode(self) -> None:
         with self.assertRaisesRegex(PatchError, r"U\+03C0"):
             operations_from_json('[{"old": "pi", "new": "π"}]')

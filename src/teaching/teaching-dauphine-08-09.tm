@@ -12,7 +12,7 @@
   <chapter*|Enseignements 2008/2009>
 
   <notes-abstract|Lectures delivered at Paris Dauphine, academic year
-  2010\U2011.>
+  2008\U2009.>
 
   <with|font-series|bold|Année 2008/2009>
 
@@ -90,17 +90,17 @@
 
     <item>M. Hairer and A. Ohashi. Ergodic theory for SDEs with extrinsic
     memory. Ann. Prob. 35 (2007), 1950--1977
-    (<notes-store|PDF|e0809/http://www.hairer.org/papers/memory.pdf>).
+    (<hlink|PDF|http://www.hairer.org/papers/memory.pdf>).
 
     <item>S. Fang, P. Imkeller, T. Zhang. Global flows for stochastic
     differential equations without global lipshitz conditions.
     (<hlink|arXiv|http://fr.arxiv.org/abs/math/0703791>)
 
     <item>F. Bolley. Quantitative concentration inequalities on sample space
-    for mean field interactions. (<notes-store|PDF|e0809/http://www.ceremade.dauphine.fr/~bolley/paths.pdf>)
+    for mean field interactions. (<hlink|PDF|http://www.ceremade.dauphine.fr/~bolley/paths.pdf>)
 
     <item>M. Gradinaru, S. Herrmann and B. Roynette. A Singular large
-    deviations phenomenon. (<notes-store|PDF|e0809/http://archive.numdam.org/ARCHIVE/AIHPB/AIHPB_2001__37_5/AIHPB_2001__37_5_555_0/AIHPB_2001__37_5_555_0.pdf>)
+    deviations phenomenon. (<hlink|PDF|http://archive.numdam.org/ARCHIVE/AIHPB/AIHPB_2001__37_5/AIHPB_2001__37_5_555_0/AIHPB_2001__37_5_555_0.pdf>)
 
     <item>I. Gyongy, N. Krylov. Existence of strong solutions for Ito's
     stochastic equations via approximations. PTRF 105 (1996) 143-158.

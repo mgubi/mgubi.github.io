@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta content="TeXmacs 2.1.2" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>When a local martingale is a martingale? — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Last week we had a discussion in class about continuous local martingales . My experience is that it is a confusing aspect in learning stochastic calculus. I record here some aspects of that discussion. May 15th 2023.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/zettels/local-martingales.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="toggle" style="display: none">
       <p>
-        
+
       </p>
     </div>
     <div class="notes-header">
@@ -65,24 +69,24 @@
       integrability and UI + almost sure convergence implies \(L^1\)
       convergence, so we have that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \| M_s -\mathbb{E} [M_t |\mathcal{F}_s] \|_{L^1} = \|
       M_s - M_s^{\tau_n}
 -\mathbb{E} [M_t - M^{\tau_n}_t |\mathcal{F}_s]
       \|_{L^1}\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \leqslant \| M_s - M_s^{\tau_n} \|_{L^1} + \| \mathbb{E}
       [M_t - M^{\tau_n}_t
 |\mathcal{F}_s] \| \leqslant \| M_s - M_s^{\tau_n}
       \|_{L^1} + \| M_t -
 M_t^{\tau_n} \|_{L^1} \rightarrow 0\)
-    </center>
+    </div>
     <p>
       as \(n \rightarrow \infty\) which implies \(\| M_s -\mathbb{E} [M_t
       |\mathcal{F}_s] \|_{L^1} = 0\). \(M\) is a true martingale. Given that,
       how we determine if for all \(t \geqslant 0\), \((M_t^{\tau_n})_{n
-      \geqslant 0}\) is UI? 
+      \geqslant 0}\) is UI?
     </p>
     <p>
       Maybe surprisingly, it is not enough that the family \((M_t)_{t
@@ -109,7 +113,7 @@ B_{s + 1}, \qquad
     <p>
       Note also that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [| M_t |^2] =\mathbb{E} [| B_{t + 1} |^{- 2}]
       = \int_{\mathbb{R}^3}
 \frac{e^{- x^2 / 2 (t + 1)}}{[2 \pi (t + 1)]^{3 /
@@ -118,7 +122,7 @@ B_{s + 1}, \qquad
       \frac{e^{- x^2 / 2}}{(2 \pi)^{3 /
 2}} \frac{\mathrm{d} x}{| x |^2}
       \leqslant \frac{C}{t + 1}\)
-    </center>
+    </div>
     <p>
       since \(| x |^{- 2}\) is integrable near the origin in \(\mathbb{R}^3\)
       and the integral over all \(x\) above is finite. This implies that
@@ -128,7 +132,7 @@ B_{s + 1}, \qquad
       transient, that it it will eventually leave any bounded forever, and in
       particular \(B_t \rightarrow \infty\) as \(t \rightarrow \infty\) a.s..
       As a consequence \(M_t \rightarrow 0\) as \(t \rightarrow \infty\)
-      almost surely. 
+      almost surely.
     </p>
     <p>
       Then \((M_t)_{t \in [0, \infty)}\) <b>cannot</b> be a martingale,
@@ -155,7 +159,7 @@ B_{s + 1}, \qquad
       <i>difficult</i> than the second. The random times could pick large
       fluctuations of the process \((M_t)_{t \geqslant 0}\) by choosing (not
       so) appropriately the time, i.e. looking at the &ldquo;wrong&rdquo;
-      times. 
+      times.
     </p>
     <p>
       To avoid this we need to ensure that fluctuations (jointly in \(t \in
@@ -174,41 +178,41 @@ B_{s + 1}, \qquad
       maximal inequality directly to \(M\) since it is only a local
       martingale. We have to work with \(M^{\tau_n}\), and then deduce that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [| \sup_{s \in [0, t]} | M_s^{\tau_n} | |^p]
       \leqslant \left(
 \frac{p}{p - 1} \right)^p \mathbb{E} [| M_t^{\tau_n}
       |^p]\)
-    </center>
+    </div>
     <p>
       for all \(p > 1\). Then, then BDG inequality (or It&ocirc; isometry when
-      \(p = 2\)) implies that  
+      \(p = 2\)) implies that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [| \sup_{s \in [0, t]} | M_s^{\tau_n} | |^p]
       \lesssim \mathbb{E}
 [\langle M^{\tau_n} \rangle_t^{p / 2}]\)
-    </center>
+    </div>
     <p>
       and now we can exploit the crucial property that \(t \mapsto \langle M
       \rangle_t\) is an <i>non-decreasing</i> process to get rid of the random
       time \(\tau_n\), since
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \langle M^{\tau_n} \rangle_t = \langle M \rangle_{t
       \wedge \tau_n} \leqslant
 \langle M \rangle_t,\)
-    </center>
+    </div>
     <p>
       and obtain
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [| \sup_n | M_t^{\tau_n} | |^p] \leqslant
       \mathbb{E} [| \sup_{s \in
 [0, t]} | M_t^{\tau_n} | |^p] \lesssim
       \mathbb{E} [\langle M \rangle_t^{p /
 2}],\)
-    </center>
+    </div>
     <p>
       which implies that, provided we can prove that  \(\mathbb{E} [\langle M
       \rangle_t^{p / 2}] < \infty\) for \(p > 1\), then we have also that
@@ -222,26 +226,27 @@ B_{s + 1}, \qquad
       \infty]\).
     </p>
     <p>
-      If we go back to the process&nbsp;(<a href="#eq:counter">1</a>) we see that
+      If we go back to the process&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>
+      we see that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \langle M \rangle_t = \int_0^t | \nabla f (B_{s + 1})
       |^2 \mathrm{d} s, \qquad
 | \nabla f (x) |^2 = \frac{1}{| x |^4},\)
-    </center>
+    </div>
     <p>
       and one finds, e.g. that (by Fubini's theorem)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [\langle M \rangle_t] =\mathbb{E} \int_0^t |
       B_{s + 1} |^{- 4}
 \mathrm{d} s = \int_0^t \mathbb{E} | B_{s + 1} |^{- 4}
       \mathrm{d} s\)
-    </center>
+    </div>
     <p>
       but now
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} | B_{s + 1} |^{- 4} = \int_{\mathbb{R}^3}
       \frac{e^{- x^2 / 2 (s +
 1)}}{[2 \pi (s + 1)]^{3 / 2}} \frac{\mathrm{d}
@@ -249,7 +254,7 @@ B_{s + 1}, \qquad
 1)^2} \int_{\mathbb{R}^3} \frac{e^{- x^2 /
       2}}{(2 \pi)^{3 / 2}}
 \frac{\mathrm{d} x}{| x |^4} = + \infty\)
-    </center>
+    </div>
     <p>
       since \(| x |^{- 4}\) is not integrable near the origin in
       \(\mathbb{R}^3\), so \(\langle M \rangle_t \not\in L^1\). Actually we
@@ -267,7 +272,7 @@ B_{s + 1}, \qquad
       inequality then controls the size of the maximum).
     </p>
     <p>
-      
+
     </p>
   </body>
 </html>

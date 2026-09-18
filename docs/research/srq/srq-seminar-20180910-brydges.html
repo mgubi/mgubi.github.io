@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta content="TeXmacs 2.1.1" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>SRQ seminar – September 10th, 2018 — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes from a talk in the SRQ series.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180910-brydges.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="toggle" style="display: none">
       <p>
-        
+
       </p>
     </div>
     <div class="notes-header">
@@ -25,13 +29,13 @@
     <p>
       <a id="auto-1"></a>
     </p>
-    <h1><span style="margin-left: 1em"></span></h1>
+
     <h1 id="auto-2">SRQ seminar &ndash; September 10th, 2018<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Notes from a talk in the SRQ series.
     </div>
     <p>
-      Brydges' lecture on Monday September 10th, 2018. <tt class="verbatim">&lt;db5d@math.ubc.ca&gt;</tt>
+      Brydges' lecture on Monday September 10th, 2018. <code class="verbatim">&lt;db5d@math.ubc.ca&gt;</code>
     </p>
     <h2 id="auto-3">Axioms of Euclidean quantum field theory (EQFT)<span style="margin-left: 1em"></span></h2>
     <p>
@@ -39,11 +43,11 @@
       Borel measure \(\mu\) on \(\mathcal{D}' (\mathbb{R}^d)\) whose Fourier
       transform
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle S (f) = \int_{\mathcal{D}'} e^{i \phi (f)} d \mu, \qquad
       \text{for } f \in
 C_0^{\infty} (\mathbb{R}^d),\)
-    </center>
+    </div>
     <p>
       satisfies
     </p>
@@ -74,19 +78,19 @@ C_0^{\infty} (\mathbb{R}^d),\)
         <p>
           <i>O.S. (reflection) positivity.</i>
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \mathcal{A} := \{ \text{(complex) span of $e^{\phi
           (f_1)}, \ldots, e^{\phi
 (f_n)}$ for all $n$ and all } f_i \in
           C_0^{\infty} \} .\)
-        </center>
+        </div>
         <p>
           Then \(\mu\) is OS/reflection positive if
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \int (\theta \bar{F}) F \mathrm{d} \mu \geqslant
           0,\)
-        </center>
+        </div>
         <p>
           for all \(F \in \mathcal{A}_+\) where \(\mathcal{A}_+\) is the above
           span constructed only with \(f_i \in C_0^{\infty}\) with support in
@@ -99,10 +103,10 @@ C_0^{\infty} (\mathbb{R}^d),\)
           <i>Ergodicity.</i> If \(F \in L^1 (\mu)\) then, pointwise almost
           surely (\(\mu\))
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \frac{1}{t}  \int_0^t T_s F \rightarrow \int F
           \mathrm{d} \mu .\)
-        </center>
+        </div>
         <p>
           (This corresponds to uniqueness of the vacuum in relativistic QFT.)
         </p>
@@ -111,10 +115,10 @@ C_0^{\infty} (\mathbb{R}^d),\)
         <p>
           <i>Regularity</i>. with \(p \in [1, 2]\),
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle |S (f) | \leqslant e^{c (\|f\|_{L^1} +\|f\|_{L^p})}
           .\)
-        </center>
+        </div>
       </li>
     </ul>
     <p>
@@ -126,7 +130,7 @@ C_0^{\infty} (\mathbb{R}^d),\)
       where this concept was introduced.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">1</class>. </strong>For any \(F \in L^2
+      <strong>Remark <span style="font-style: normal">1</span>. </strong>For any \(F \in L^2
       (\mu)\),  \(\| \theta F\|_{L^2} = \|F\|_{L^2}\) because \(\mu\) is
       Euclidean invariant.
     </p>
@@ -143,16 +147,16 @@ C_0^{\infty} (\mathbb{R}^d),\)
       For \(A, B \in \overline{\mathcal{A}_+}\) (closure in \(L^2 (\mu)\)),
       two inner products can be defined:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle (A, B)_{L^2 (\mu)} := \int \overline{A (\phi)} B (\phi)
       \mu (\mathrm{d} \phi)
 .\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle (A, B)_{\mathcal{H}} := \int \overline{\theta A (\phi)}
       B (\phi) \mu
 (\mathrm{d} \phi) .\)
-    </center>
+    </div>
     <p>
       Actually, we will later see that the second definition does not satisfy
       the requirement that \((A, A)_{\mathcal{H}} > 0\) for \(A \neq 0\) so we
@@ -162,10 +166,10 @@ C_0^{\infty} (\mathbb{R}^d),\)
       Define a semigroup \(P_t : \mathcal{H} \rightarrow \mathcal{H}\) by: for
       all \(t \geqslant 0\) and \(A, B \in \mathcal{H}\),
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle (A, P_t B)_{\mathcal{H}} = (\theta (A), T_t B)_{L^2
       (\mu)} .\)
-    </center>
+    </div>
     <p>
       This makes sense since \(T_t B \in \mathcal{H}\) if \(B \in
       \mathcal{H}\) and \(t \geqslant 0\). On the left hand side \(A, B\)
@@ -182,37 +186,37 @@ C_0^{\infty} (\mathbb{R}^d),\)
           \(P_t\) is self&ndash;adjoint. To prove this we use unitarity of
           time translation for the \(L^2 (\mu)\) scalar product to get
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle (A, P_t B)_{\mathcal{H}} = (\theta A, T_t B)_{L^2
           (\mu)} = (T_{- t} \theta A,
 B)_{L^2 (\mu)} = (\theta T_t A, B)_{L^2
           (\mu)} = (P_t A, B)_{\mathcal{H}} .\)
-        </center>
+        </div>
       </li>
       <li>
         <p>
           \(P_t\) is contractive. By self&ndash;adjointness
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \|P_t A\|_{\mathcal{H}} = (P_t A, P_t
           A)_{\mathcal{H}}^{1 / 2} = (A, P_{2 t}
 A)_{\mathcal{H}}^{1 / 2}
           \leqslant \|A\|_{\mathcal{H}}^{1 / 2}  \|P_{2
           t}
 A\|_{\mathcal{H}}^{1 / 2}\)
-        </center>
+        </div>
         <p>
           and by applying the same bound to the right hand side with \(t\)
           replaced by \(2 t\) etc. we get
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \|P_t A\|_{\mathcal{H}} \leqslant
           \|A\|_{\mathcal{H}}^{1 / 2 + 1 / 4}  \|P_{4
 t} A\|_{\mathcal{H}}^{1
           / 4} \leqslant \cdots \leqslant \|A\|_{\mathcal{H}}^{1
 / 2 + \cdots
           + 1 / 2^n}  \|P_{2^n t} A\|_{\mathcal{H}}^{1 / 2^n}\)
-        </center>
+        </div>
         <p>
           but \(\|P_{2^n t} A\|_{\mathcal{H}}^{1 / 2^n} \leqslant \|T_{2^n t}
           A\|_{L^2}^{1 /
@@ -247,12 +251,12 @@ t} A\|_{\mathcal{H}}^{1
       \mathbb{Z}\). Define \(\theta\) as reflection on the middle point. We
       consider random variables \(\phi_1, \ldots, \phi_5\) and the measure
     </p>
-    <center>
-      \(\displaystyle \mathrm{d} \mu (\phi) = \frac{1}{Z} e^{- \frac{1}{2} 
+    <div class="center">
+      \(\displaystyle \mathrm{d} \mu (\phi) = \frac{1}{Z} e^{- \frac{1}{2}
       \sum_{i = 0}^5 (\phi_{i
 + 1} - \phi_i)^2}  \prod_{i = 1}^5 \rho
       (\mathrm{d} \phi_i)\)
-    </center>
+    </div>
     <p>
       where we assume \(\phi_0 = \phi_6 = 0\) and where \(\rho\) is a finite
       measure. An example is \(\rho = \delta_{+ 1} + \delta_{- 1}\), which
@@ -265,30 +269,30 @@ t} A\|_{\mathcal{H}}^{1
       into the subspace of \(L^2 (\mu)\) of r.v. measurable wrt \(\phi_3\).
       For \(A, B \in \mathcal{A}_+\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle (A, B)_{\mathcal{H}} =\mathbb{E}_{\mu}  (\theta
       (\bar{A}) B) =\mathbb{E}_{\mu}
 [\mathbb{E}_{\mu} ((\theta \bar{A}) B|
       \phi_3)]\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle =\mathbb{E}_{\mu}  [\mathbb{E}_{\mu} (\theta \bar{A} |
       \phi_3)\mathbb{E}_{\mu}
 (B| \phi_3)] =\mathbb{E}_{\mu}  \left[
       \overline{(\iota A) (\phi_3)}
 \hspace{0.17em} \iota B (\phi_3) \right]\)
-    </center>
+    </div>
     <p>
       This shows that \(\mu\) is reflection positive and that \(\mathcal{N}=
       \left\{ A \in \mathcal{A}_+ | \iota A = 0 \hspace{0.17em}
       \mu
 \text{--a.s.} \right\}\) is the kernel of \(\iota\) so
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \overline{\mathcal{A}_+} \setminus \mathcal{N} \simeq
       \{F (\phi_3) \in L^2
 (\mu)\} .\)
-    </center>
+    </div>
     <p>
       So \(\mathcal{N}\) is a quite big space which reduces
       \(\overline{\mathcal{A}_+}\) to a space of functions of one variable.
@@ -328,7 +332,7 @@ t} A\|_{\mathcal{H}}^{1
     </p>
     <h2 id="auto-6">Bibliography<span style="margin-left: 1em"></span></h2>
     <div class="compact-block" style="text-indent: 0em">
-      <font style="font-size: 84.0%"><dl>
+      <div style="font-size: 84.0%"><dl>
         <p>
           <dt>
             <strong>[OS75]  </strong>
@@ -378,13 +382,11 @@ t} A\|_{\mathcal{H}}^{1
             </p>
           </dd>
         </p>
-      </dl></font>
+      </dl></div>
     </div>
+    <hr>
     <p>
-      <hr></hr>
-    </p>
-    <p>
-      
+
     </p>
   </body>
 </html>

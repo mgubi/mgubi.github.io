@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta content="TeXmacs 2.1.1" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>SRQ seminar – October 1st, 2018 — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes from a talk in the SRQ series.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181001-levy.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="notes-header">
@@ -20,7 +24,7 @@
     <p>
       <a id="auto-1"></a>
     </p>
-    <h1><span style="margin-left: 1em"></span></h1>
+
     <h1 id="auto-2">SRQ seminar &ndash; October 1st, 2018<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Notes from a talk in the SRQ series.
@@ -33,12 +37,12 @@
       (I)</b>
     </p>
     <p>
-      Goal today: characterize the \(2 d\) Yang&ndash;Mills theory. 
+      Goal today: characterize the \(2 d\) Yang&ndash;Mills theory.
     </p>
     <p>
       Yang&ndash;Mills theory is an example of gauge theory, these were
       introduced in particle physics to describe interactions between
-      elementary particles. 
+      elementary particles.
     </p>
     <p>
       Interactions are modelled via connections in principal bundle (gauge
@@ -47,10 +51,10 @@
     </p>
     <p>
       Maybe better to talk about Quantum \(2 d\) Yang&ndash;Mills theory to
-      make a difference with the &ldquo;classical&rdquo; field theory. 
+      make a difference with the &ldquo;classical&rdquo; field theory.
     </p>
     <p>
-      
+
     </p>
     <p>
       <b>Classical Yang&ndash;Mills theory.</b>
@@ -64,7 +68,7 @@
           <i>A manifold.</i> To describe the space&ndash;time (Riemannian,
           Lorenzian). An example is \(\mathbb{R}^4\) with metric \(\mathrm{d}
           t^2 - \mathrm{d} x^2 - \mathrm{d} y^2 - \mathrm{d} z^2\). Another is
-          a compact Riemanian surface  \(M\).  
+          a compact Riemanian surface  \(M\).
         </p>
       </li>
       <li>
@@ -78,10 +82,10 @@
           \(N \times N\) skew&ndash;Hermitian matrices. Scalar product on the
           Lie algebra \(\mathfrak{u} (N)\) which is taken to be:
         </p>
-        <center>
+        <div class="center">
           \(\displaystyle \langle X, Y \rangle = N\operatorname{Tr} (X^{\ast}
           Y) .\)
-        </center>
+        </div>
       </li>
       <li>
         <p>
@@ -101,7 +105,7 @@
       .\) \(P_x, P_y \cong G\) take a path \(\gamma\) from \(x\) to \(y\) and
       to each of those paths associate a map from \(P_x\) to \(P_y\). A
       connection \(\omega \in \mathcal{A} (P)\) produces parallel transports
-      (is equivalent), by describing it in an infinitesimal way. 
+      (is equivalent), by describing it in an infinitesimal way.
     </p>
     <p>
       <i>Holonomies.</i> A loop \(\ell\) based at a point \(x \in M\). Given a
@@ -111,7 +115,7 @@
       denoted \(H_{\ell} (\omega) = g\). A connection is described by the set
       of all holonomies. Technically a connection is a differential form on
       \(P\) which <i>locally</i> can be seen as a differential 1-form on \(M\)
-      with values on the Lie algebra \(\mathfrak{g}\).  
+      with values on the Lie algebra \(\mathfrak{g}\).
     </p>
     <p>
       <i>Curvature of \(\omega\)</i>. \(\Omega = \mathrm{d} \omega +
@@ -124,77 +128,77 @@
       \(H_{\ell_{\varepsilon}} (\omega)\) we obtain something which looks like
       \(H_{\ell_{\varepsilon}} (\omega) = \exp (\varepsilon^2 \Omega (X, Y)) +
       o
-(\varepsilon^2)\).  
+(\varepsilon^2)\).
     </p>
     <p>
       Curvature is a local measure of non&ndash;triviality of the holonomy.
     </p>
     <p>
       <i>Yang&ndash;Mills functional.</i> Make \(M\) Riemannian and compact
-      and smooth connections \(\mathcal{A} (P)\) on \(P\). 
+      and smooth connections \(\mathcal{A} (P)\) on \(P\).
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle S : \mathcal{A} (P) \longrightarrow [0, + \infty]\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle S (\omega) = \frac{1}{2} \int_M \langle \Omega \wedge
       (\star \Omega) \rangle\)
-    </center>
+    </div>
     <p>
       where \(\star \Omega\) is the Hodge dual of \(\Omega\).
     </p>
     <p>
-      
+
     </p>
     <p>
       In local coordinates we have \(\omega = A_1 \mathrm{d} x_1 + \cdots +
       A_n \mathrm{d} x_n\) with \(A_1, \ldots, A_n\) matrix valued functions.
       And
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \Omega = \sum_{1 \leqslant i < j \leqslant n} (-
       \partial_j A_i + \partial_i
 A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
       \mathrm{d} x_j\)
-    </center>
+    </div>
     <p>
       and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle S (\omega) = \frac{1}{2} \int_M \sum_{1 \leqslant i < j
       \leqslant n} \| -
 \partial_j A_i + \partial_i A_j + [A_i, A_j]
       \|^2_{\mathfrak{g}} \mathrm{d} x
 = \frac{1}{2} \| \Omega \|_{L^2}^2\)
-    </center>
+    </div>
     <p>
       where \(\| X \|^2_{\mathfrak{g}} = N\operatorname{Tr} (X^{\ast} X)\).
       Classical Yang&ndash;Mills theory is the study of this functional on
       this space
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle (M, G, P) \qquad S : \mathcal{A} (P) \rightarrow [0, +
       \infty] .\)
-    </center>
+    </div>
     <p>
       The gauge group acts on \(\mathcal{A} (P)\) in a way that preserves the
       Yang&ndash;Mills functional, so we have really \(S :\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle S : \mathcal{A} (P) /\mathcal{J} (P) \rightarrow [0, +
       \infty] .\)
-    </center>
+    </div>
     <p>
       The quotient \(\mathcal{A} (P) /\mathcal{J} (P)\) is always infinite
       dimensional when the dimension of \(M\) is at least \(2\). Interesting
       questions are about the geometry of the space \(\mathcal{A} (P)
-      /\mathcal{J} (P)\). 
+      /\mathcal{J} (P)\).
     </p>
     <p>
       The critical points of \(S\) are called Yang&ndash;Mills connections.
-      Moreover \(\mathcal{M} (M, G, P) = S^{- 1} (0) /\mathcal{J} (P)\)<tt
-      class="verbatim"></tt>: moduli space of flat connection: a finite dimensional
-      object which very rich geometrical structure. 
+      Moreover \(\mathcal{M} (M, G, P) = S^{- 1} (0) /\mathcal{J} (P)\)<code
+      class="verbatim"></code>: moduli space of flat connection: a finite dimensional
+      object which very rich geometrical structure.
     </p>
     <p>
       Note: Hodge operator from \(2\)-forms to \(d - 2\) forms. When \(d = 4\)
@@ -205,24 +209,24 @@ A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
       surfaces which gives the same area they define the same YM functional.
     </p>
     <p>
-      
+
     </p>
     <p>
-      <b>Yang&ndash;Mills measure.</b> 
+      <b>Yang&ndash;Mills measure.</b>
     </p>
     <p>
       We want to make sense of the measure
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathrm{d} \mu (\omega) = \frac{1}{Z} e^{- S (\omega)}
       \mathcal{D} \omega\)
-    </center>
+    </div>
     <p>
       as a probability measure on \(\mathcal{A} (P)\). We want to integrate
       special functions: Wilson's loops. Take loops on the manifold \(M\):
       \(\ell_1, \ldots, \ell_n\) and we want to compute
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \int_{\mathcal{A} (P)} \frac{1}{N} \operatorname{Tr}
       [H_{\ell_1} (\omega)]
 \cdots \frac{1}{N} \operatorname{Tr} [H_{\ell_n}
@@ -231,7 +235,7 @@ A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
       \operatorname{Tr} (H_{\ell_1}) \cdots
 \frac{1}{N} \operatorname{Tr}
       (H_{\ell_n}) \right] .\)
-    </center>
+    </div>
     <p>
       \(H_{\ell} : \mathcal{A} (P) \ni \omega \mapsto H_{\ell} (\omega) \in
       G\) is a matrix valued random variable for which we want to describe the
@@ -247,33 +251,33 @@ A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
     <p>
       Therefore \(\operatorname{Tr} [H_{\ell}^2] =\operatorname{Tr} [H_{\ell
       \ell}]\). So the Wilson-loops traces give access to the whole
-      distribution of the random matrices \((H_{\ell})_{\ell}\). 
+      distribution of the random matrices \((H_{\ell})_{\ell}\).
     </p>
     <p>
       When \(d = 2\) there exists an &ldquo;honest&rdquo; process
       \((H_{\ell})_{\ell}\) which has the right to be called the
-      Yang&ndash;Mills measure. 
+      Yang&ndash;Mills measure.
     </p>
     <p>
       The YM functional is a generalization of the Lagrangian of
       electromagnetism. A short story: Between 1700 and 1864 a lot has been
       done to understand electromagnetism, culminating in Maxwell's equations:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \begin{array}{lllll}
-  \operatorname{div} \vec{E} & = &
-      \rho &  & \text{Gauss--Poisson (1810)}\\
+  \operatorname{div} \vec{E} &amp; = &amp;
+      \rho &amp;  &amp; \text{Gauss--Poisson (1810)}\\
   \operatorname{curl} \vec{E} +
-      \partial_t \vec{B} & = & 0 &  & \text{Faraday
+      \partial_t \vec{B} &amp; = &amp; 0 &amp;  &amp; \text{Faraday
   (1830)}\\
- 
-      \operatorname{div} \vec{B} & = & 0 &  & \text{Thomson (lord Kelvin)}\\
- 
-      \operatorname{curl} \vec{B} - \partial_t \vec{E} & = & \vec{j} &  &
- 
-      \text{�rsted--Amp�re/Maxwell (1821)}
+
+      \operatorname{div} \vec{B} &amp; = &amp; 0 &amp;  &amp; \text{Thomson (lord Kelvin)}\\
+
+      \operatorname{curl} \vec{B} - \partial_t \vec{E} &amp; = &amp; \vec{j} &amp;  &amp;
+
+      \text{Ørsted--Ampère/Maxwell (1821)}
 \end{array}\)
-    </center>
+    </div>
     <p>
       This is actually not an equation for vector fields.
     </p>
@@ -281,30 +285,30 @@ A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
       Minkowski realized that if one work on \(\mathbb{R}^4\) with Minkowski
       metric things simplified. If we introduce a \(2\)-form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle F = B_x \mathrm{d} y \wedge \mathrm{d} z + \cdots - E_x
       \mathrm{d} t \wedge
 \mathrm{d} x - \cdots \text{}\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle J = \rho \mathrm{d} x \wedge \mathrm{d} y \wedge
       \mathrm{d} z + \cdots - j_x
 \mathrm{d} t \wedge \mathrm{d} y \wedge
       \mathrm{d} z - \cdots\)
-    </center>
+    </div>
     <p>
       and then Maxwell's equations have the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left\{ \begin{array}{l}
   \begin{array}{lll}
-   
-      \mathrm{d} F & = & 0\\
-    \mathrm{d} \star F & = & J
- 
+
+      \mathrm{d} F &amp; = &amp; 0\\
+    \mathrm{d} \star F &amp; = &amp; J
+
       \end{array}
 \end{array} \right.\)
-    </center>
+    </div>
     <p>
       At least locally then \(F = \mathrm{d} A\). \(F\) is the strenght field
       and \(A\) is the gauge field. \(A\) is defined modulo transformations of
@@ -312,70 +316,70 @@ A_j + [A_i, A_j]) \mathrm{d} x_i \wedge
       \mathbb{R}^4 \rightarrow \mathbb{R}\). Lagrangian for the above
       equations is
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathcal{L} (A) = \frac{1}{2} F \wedge \star F + A
       \wedge J.\)
-    </center>
+    </div>
     <p>
       From the electromagnetic Lagrangian to the YM measure one follows
-      Feynman prescription for the path integral in its Euclidean version. 
+      Feynman prescription for the path integral in its Euclidean version.
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      <img src="srq-seminar-20181001-levy-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0em; margin-right: -0.0225674931129447em; margin-top: 0em; vertical-align: -5.3308650137741em; height: 10.6617300275482em"></img>
+      <img src="srq-seminar-20181001-levy-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em" alt="Figure from SRQ seminar – October 1st, 2018" decoding="async" loading="lazy">
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
   </body>
 </html>

@@ -13,12 +13,6 @@
 
   <notes-abstract|Things I teach & have taught.>
 
-  <subsection*|Current lecture courses and seminars>
-
-  <\itemize>
-    <item>...
-  </itemize>
-
   <subsection*|Past lecture courses and seminars in Oxford (2022\U)>
 
   <\itemize>

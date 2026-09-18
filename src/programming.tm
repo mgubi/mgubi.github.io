@@ -55,8 +55,6 @@
 
   \;
 
-  <notes-link|TeXmacs workshop 2025|texmacs-workshop.tm>
-
   <section*|Blogs & other interesting places on the internet>
 
   <hlink|Ivan Tikhonovs's blog|http://brokestream.com/index.html> \U nice

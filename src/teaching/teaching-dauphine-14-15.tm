@@ -42,7 +42,7 @@
 
   <\itemize>
     <item>Le cours de Thierry Bodineau à l'Ecole Polytechnique MAP 432
-    ``Promenade aléatoire'' (<notes-store|PDF|e1415/http://www.cmap.polytechnique.fr/~bodineau/map432.pdf>)
+    ``Promenade aléatoire'' (<hlink|PDF|http://www.cmap.polytechnique.fr/~bodineau/map432.pdf>)
 
     <item>P. Baldi, L. Mazliak, P. Priouret, <em| Martingales et chaînes de
     Markov (Exercices corrigés) >, Hermann
@@ -195,7 +195,7 @@
     Examen (<notes-store|PDF|e1415/pd-examen-1314.pdf>). Rattrapage
     (<notes-store|PDF|e1415/pd-rattrapage-1314.pdf>).
 
-    <item>2013/2014. Partiel (<notes-store|PDF|e1415/pd-partiel-1415.pdf>).
+    <item>2014/2015. Partiel (PDF unavailable).
   </enumerate>
 
   <itemize|>

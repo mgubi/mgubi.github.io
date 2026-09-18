@@ -56,13 +56,58 @@ body {
     line-height: 1.5;
     font-size: 0.95rem;
     border: 0px;
-    padding: 3em;
-    padding-left: 4em;
-    padding-right: 4em;
+    box-sizing: border-box;
+    padding: 3em 4em;
     margin: auto;
     margin-bottom: 0em;
     margin-top: 0em;
-    width: 650px; 
+    width: 100%;
+    max-width: 650px;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+pre, code {
+    overflow-wrap: anywhere;
+}
+
+pre, .hljs {
+    overflow-x: auto;
+}
+
+table {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.unavailable-link {
+    color: #68777c;
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-title);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 799px) {
+    body {
+        padding: 1.5em 1.25em;
+    }
+
+    .mg-title {
+        padding-top: 1em;
+    }
 }
 
 .tmdoc-body {
@@ -73,7 +118,27 @@ body {
 .mg-title {
     padding-top: 2em;
     letter-spacing: -0.03em;
-font-family: var(--title-family);
+    font-family: var(--title-family);
+    font-size: 2rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 799px) {
+    .mg-title {
+        padding-top: 0.5em;
+    }
+}
+
+.block-italic {
+    font-style: italic;
+}
+
+.block-bold {
+    font-weight: bold;
+}
+
+.block-monospace {
+    font-family: var(--tt-family);
 }
 
 .wave-image  {

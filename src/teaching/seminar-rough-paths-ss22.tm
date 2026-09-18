@@ -123,7 +123,7 @@
 
   <\itemize>
     <item>An advanced topics course on rough paths
-    (<notes-link|link|/abteilung-gubinelli/teaching/rough-paths-controlled-paths-ws1516>)<nbsp>
+    (<notes-link|link|lectures-rough-paths-ws15-16.tm>)<nbsp>
 
     <item>The wikipedia page on rough paths
     (<hlink|link|https://en.wikipedia.org/wiki/Rough_path>)

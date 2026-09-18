@@ -65,7 +65,7 @@
 
   <\enumerate>
     <item>M. Gubinelli: Einf�hrung in die Wahrscheinlichkeitstheorie,
-    WiSe<nbsp>2020/21 (<notes-link|link|/abteilung-gubinelli/einf-wahrscheinlichkeitstheorie-ws2021>)
+    WiSe<nbsp>2020/21 (<notes-link|link|lectures-intro-probability-ws20-21.tm>)
 
     <item>R. Durrett: Probability: Theory & Examples, Chapters 1 and 2
 

@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>On Literate Programming — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Some reflections on literate programming, TeXmacs, programming languages and writing.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/zettels/literate-programming.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="notes-header">
@@ -24,10 +28,10 @@
     <p>
       [November 4th 2024. Version 1]
     </p>
-    <font color="#800000"><table style="width: 100%">
+    <div style="color: #800000"><table style="width: 100%">
       <tbody><tr>
         <td style="width: 100%; padding-left: 0em; padding-right: 0em; background-color: #ff000020; border-top: 0px solid; border-bottom: 0px solid; border-left: 5px solid; border-right: 0px solid; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-top: 0.5em"><p>
-          <b>Warning:</b> work in progress. 
+          <b>Warning:</b> work in progress.
         </p><p>
           <b>TODO:</b>
         </p><p>
@@ -35,7 +39,7 @@
         </p><ul>
           <li>
             <p>
-              <a href="https://orgmode.org"><tt class="verbatim">org.mode</tt></a> 
+              <a href="https://orgmode.org"><code class="verbatim">org.mode</code></a>
             </p>
           </li>
           <li>
@@ -47,12 +51,12 @@
           <li>
             <p>
               Comment about V. Bret's &ldquo;Learnable programming&rdquo; [<a
-              href="http://worrydream.com/#!/LearnableProgramming">URL</a>] 
+              href="http://worrydream.com/#!/LearnableProgramming">URL</a>]
             </p>
           </li>
         </ul></td>
       </tr></tbody>
-    </table></font>
+    </table></div>
     <p>
       Literate programming was invented by Knuth to provide a literary work
       which would <i>explain</i> (unroll / open wide in front of us) a
@@ -61,43 +65,43 @@
       is gradually unveiled. Collecting chunk after chunk, a special utility
       program can reconstitute the entirety of the code to be then given back
       to the computer, for execution or compilation. A monologue that
-      occasionally becomes a dialogue. 
+      occasionally becomes a dialogue.
     </p>
     <p>
       I've encountered many times examples of literate programs. The most
       famous is the TeX program itself, which take life as a narration in the
       homonymous book &ldquo;TeX the program&rdquo; (<a href="https://ctan.org/tex-archive/info/knuth-pdf">here</a> for a
       the full collection of PDF files and <a href="http://mirrors.ctan.org/info/knuth-pdf/tex/tex.pdf">here</a> for the literate
-      <class style="font-variant: small-caps">Cweb</class> sources for TeX). Some of them, especially
+      <span style="font-variant: small-caps">Cweb</span> sources for TeX). Some of them, especially
       the short ones, are quite unimpressive. Look <a href="https://literateprograms.org/literateprograms_welcome.html">here</a> for a
       whole Wiki of literate programs to get an idea.
     </p>
     <p>
       Apart from TeX (and Metafont) other large programs are maintained as
       literate works: <a href="http://www.axiom-developer.org">Axiom</a>, the book <a href="https://pbr-book.org">&ldquo;Physically
-      based rendering&rdquo;</a>, the <a href="https://drh.github.io/lcc/"><tt class="verbatim">lcc</tt></a>
+      based rendering&rdquo;</a>, the <a href="https://drh.github.io/lcc/"><code class="verbatim">lcc</code></a>
       retargetable ANSI C compiler, <a href="https://doi.org/10.1017/CBO9781139172974">&ldquo;Lisp In Small
       Pieces&rdquo;</a> and <a href="https://github.com/daly/literateclojure">&ldquo;Clojure in Small Pieces&rdquo;</a>
       (see also <a href="https://github.com/robleyhall/clojure-small-pieces">here</a> for context on this last book).
     </p>
     <h3 id="auto-2">Literate programs are human-specific super-languages<span style="margin-left: 1em"></span></h3>
     <p>
-      However my brain &ldquo;clicked&rdquo; when I discovered <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt
-      class="verbatim">peg.md</tt></a> by <a href="https://github.com/kragen">K. J. Sitaker</a>. It is a small
+      However my brain &ldquo;clicked&rdquo; when I discovered <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><code
+      class="verbatim">peg.md</code></a> by <a href="https://github.com/kragen">K. J. Sitaker</a>. It is a small
       MarkDown document that gives a literate implementation of <i>parsing
       expression grammars</i> (PEGs) together with a meta compiler implemented
       in Javascript. What I found remarkable is the expressivity of the
       literate style to convey <i>complex interactions</i> among different
       computer idioms and dense representations of ideas, even when reduced to
       the essence of some tricks in a markdown text file. The text file <a
-      href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt class="verbatim">peg.md</tt></a> contains the code of various versions
+      href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><code class="verbatim">peg.md</code></a> contains the code of various versions
       of the Javascript PEG compiler, and a PEG meta-compiler written in
       itself, and the Makefile which extracts from the literate document a
       bootstrapping Javascript PEG compiler and use it to compile the PEG
       metacircular description of the PEG compiler progressively in two
-      versions with larger set of features. Another Markdown file <a href="https://github.com/kragen/peg-bootstrap/blob/master/handaxeweb.md"><tt
-      class="verbatim">handaxeweb.md</tt></a> is the literate implementation of the Lua
-      script which extracts the program files from the Markdown documents. 
+      versions with larger set of features. Another Markdown file <a href="https://github.com/kragen/peg-bootstrap/blob/master/handaxeweb.md"><code
+      class="verbatim">handaxeweb.md</code></a> is the literate implementation of the Lua
+      script which extracts the program files from the Markdown documents.
     </p>
     <p>
       This made me realize that the expressivity of the literate style is both
@@ -119,7 +123,7 @@
       In these systems everything is programmed in a single language: the
       living program is its own documentation and the narrative thread is
       provided by the user's interactive exploration of the hyperlinked web of
-      &ldquo;materialized code&rdquo;. 
+      &ldquo;materialized code&rdquo;.
     </p>
     <p>
       A literate document is, instead, an heterodox medium where policies can
@@ -138,9 +142,9 @@
       and <a href="https://softpanorama.org/SE/literate_programming.shtml">softpanorama.org</a> websites. All these expositions
       collapse the idea of literate document towards a single programming
       language. LP implementations are usually also targeted to a single
-      language with few exceptions (e.g. <a href="https://www.cs.tufts.edu/~nr/noweb/"><class style="font-variant: small-caps">Noweb</class></a>)
+      language with few exceptions (e.g. <a href="https://www.cs.tufts.edu/~nr/noweb/"><span style="font-variant: small-caps">Noweb</span></a>)
       in which case the stress is towards the universality more than towards
-      the openness of the system. However, as the <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><tt class="verbatim">peg.md</tt></a>
+      the openness of the system. However, as the <a href="https://github.com/kragen/peg-bootstrap/blob/master/peg.md"><code class="verbatim">peg.md</code></a>
       example, in its minimality, masterfully shows, the liberating power of
       LP is in its complete malleability in providing <b>metacircular
       description of complex computer systems</b>.
@@ -152,9 +156,9 @@
       (human) <b>domain-specific super-languages</b>.
     </p>
     <p>
-      While TeX was born as a literate program, <class style="font-variant: small-caps">Axiom</class>
+      While TeX was born as a literate program, <span style="font-variant: small-caps">Axiom</span>
       <i>is becoming</i> (or better, want to, see this <a href="https://lists.nongnu.org/archive/html/axiom-developer/2023-03/msg00003.html">message</a> of
-      Daly in the <tt class="verbatim">axiom-developer</tt> mailing list) one because
+      Daly in the <code class="verbatim">axiom-developer</code> mailing list) one because
       Daly felt the need to document the valuable millions lines of code
       constituting the program and implementing sophisticate algorithms for
       computer algebra. So LP programming has also a role of <b>explanation
@@ -182,7 +186,7 @@
       via the specific programming language in use.
     </p>
     <p>
-      <font color="#800000">[Talk about <tt class="verbatim">org.mode</tt>]</font>
+      <span style="color: #800000">[Talk about <code class="verbatim">org.mode</code>]</span>
     </p>
     <h3 id="auto-3">Literate programming in TeXmacs<span style="margin-left: 1em"></span></h3>
     <p>
@@ -259,19 +263,19 @@
       version of TeXmacs.
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
   </body>
 </html>

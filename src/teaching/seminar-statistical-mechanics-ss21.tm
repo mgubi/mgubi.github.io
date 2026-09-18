@@ -62,8 +62,8 @@
     <item>The Curie\UWeiss Model<nbsp>[Carolin Eschenauer, 29.4.2021]
     (<notes-store|handout|iam/seminar-stat-mech-ss21/Handzettel_Curie_Weiss_Modell.pdf>)
     (<hlink|slides|https://uni-bonn.sciebo.de/s/KTsvSyM0fWi9yjD>) (ipython
-    <notes-store|notebook1|iam/seminar-stat-mech-ss21/Vortrag_Teil_1.ipynb>,
-    <notes-store|notebook2|iam/seminar-stat-mech-ss21/Vortrag_Teil_2.ipynb>)
+    <notes-store|notebook1|iam/seminar-stat-mech-ss21/Vortrag_Teil_1.html>,
+    <notes-store|notebook2|iam/seminar-stat-mech-ss21/Vortrag_Teil_2.html>)
 
     <item>The Ising Model I [Daniela Söllheim,
     6.5.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/Handout_Isingmodell_Teil1.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/OypF0BDHcsCJFVh>)
@@ -85,7 +85,7 @@
     Breitinger,<nbsp>17.6.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/handout-short-breitinger.pdf>)<nbsp>(<notes-store|slides|iam/seminar-stat-mech-ss21/Breitinger-Gibbs-part2.pdf>)
 
     <item>Infinite-Volume Gibbs Measures III [Anne
-    Weiÿ,<nbsp>1.7.2021]<nbsp>(<notes-store|handout|iamli/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<notes-store|slides|iamli/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
+    Weiÿ,<nbsp>1.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/handout-weiss.pdf>)<nbsp>(<notes-store|slides|iam/seminar-stat-mech-ss21/extremal_gibbs_presentation.pdf>)
 
     <item>Pirogov\USinai theory [Jakob Kellermann,
     2.7.2021]<nbsp>(<notes-store|handout|iam/seminar-stat-mech-ss21/HS_Stochastik_PST_Handout.pdf>)<nbsp>(<hlink|slides|https://uni-bonn.sciebo.de/s/wDf8cIxgV097xxQ>)

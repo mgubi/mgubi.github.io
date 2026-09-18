@@ -64,3 +64,5 @@ if ! grep -qx 'done' "$build_marker"; then
     echo "Close other TeXmacs instances and retry, or check its startup output." >&2
     exit 1
 fi
+
+python3 "$repo_root/tools/postprocess_site.py"

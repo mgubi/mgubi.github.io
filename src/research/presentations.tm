@@ -72,8 +72,7 @@
 
   Variational approaches for Euclidean quantum field theory \U Oberseminar
   Mathematische Stochastik \| Online \| Munster, May 18th, 2021 \U Part1
-  (<notes-store|pdf|talk-munster-may-2021-part-1.pdf>), \ Part 2
-  (<notes-store|pdf|talk-munster-may-2021-part-2.pdf>), Part 3
+  (<notes-store|pdf|talk-munster-may-2021-part-1.pdf>), \ Part 2 (unavailable), Part 3
   (<notes-store|pdf|talk-munster-may-2021-part-3.pdf>)
 
   What is stochastic quantisation? \U MIT probability seminar, May 2022

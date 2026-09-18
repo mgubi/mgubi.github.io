@@ -9,8 +9,8 @@
 
   <notes-header>
 
-  <chapter*|<chapter*|SRQ \U Scaling limits, rough paths, quantum field
-  theory>>
+  <chapter*|SRQ \U Scaling limits, rough paths, quantum field
+  theory>
 
   <notes-abstract|From September 3rd 2018 to December 21st 2018, together
   with D.<nbsp>Brydges, A.<nbsp>Giuliani, A.<nbsp>Kupiainen, H.<nbsp>Weber

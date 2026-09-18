@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>SRQ seminar – October 19th, 2018 — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes from a talk in the SRQ series.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181019-giuliani.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="notes-header">
@@ -20,7 +24,7 @@
     <p>
       <a id="auto-1"></a>
     </p>
-    <h1><span style="margin-left: 1em"></span></h1>
+
     <h1 id="auto-2">SRQ seminar &ndash; October 19th, 2018<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Notes from a talk in the SRQ series.
@@ -34,7 +38,7 @@
     <p>
       Summary
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{Z_{\lambda}}{Z_0} = \int P_{\leqslant 0}
       (\mathrm{d} \psi^{(\leqslant
 0)}) e^{V^{(0)} (\psi^{(\leqslant
@@ -42,56 +46,56 @@
 P_{\leqslant h} (\mathrm{d}
       \psi^{(\leqslant h)}) e^{V^{(h)} (\psi^{(\leqslant
 h)})}\)
-    </center>
+    </div>
     <p>
       here \(\psi^{(\leqslant 0)} = \{ \psi^{(\leqslant 0), \pm}_{x, \omega}
       \}_{x \in
 \Lambda, \omega = \pm 1}\) with
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle V^{(0)} = \sum_{\underline{x} (P), \underline{\omega}
       (P)}
 v_{\underline{\omega} (P)} (\underline{x} (P))
       \underbrace{\Psi_P}_{\prod_{f
 \in P} \psi^{\varepsilon (f)}_{x (f),
       \omega (f)}}\)
-    </center>
+    </div>
     <p>
       where \(P\) are sets of four indexes which represent the origina quartic
       interaction. The propagator is given by
     </p>
     <p>
-      
+
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle g_{\omega}^{(\leqslant 0)} (x, y) = \int
       \frac{\mathrm{d} k}{(2 \pi)^2}
 \frac{e^{i k \cdot (x - y)}}{\mu (k +
       p^{\omega})} \chi (k)\)
-    </center>
+    </div>
     <p>
       with \(p^+ = (0, 0)\) and \(p^- = (\pi, \pi)\) the Fermi points. And we
       decomposed it in a multiscale fashion as
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle g_{\omega}^{(\leqslant 0)} (x, y) = \sum_{h < h'
       \leqslant 0}
 g_{\omega}^{(h')} (x, y) + g_{\omega}^{(\leqslant h)} (x,
       y)\)
-    </center>
+    </div>
     <p>
       and the effective potential at scale \(h \leqslant 0\) is represented as
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle V^{(h)} (\psi) = \sum_P \sum_{\underline{x} (P),
       \underline{\omega} (P)} W_{|
 P |, \underline{\omega} (P)}^{(h)}
       (\underline{x} (P)) \Psi_P\)
-    </center>
+    </div>
     <p>
       with kernels \(W^{(h)}\) estimated by
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{1}{L^2} \| W^{(h)}_{\ell, \underline{\omega}}
       \|_{L^1} \leqslant 2^{h (2
 - \ell / 2)} \sum_{n \geqslant 1} C^n |
@@ -100,61 +104,61 @@ P |, \underline{\omega} (P)}^{(h)}
       \ell} \prod_{\text{$v$ branching point}}
 2^{(h_v - h_{v'}) \overbrace{(2
       - | P_v | / 2)}^{\text{scaling dimension}}}\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle
       \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
-    </center>
+    </div>
     <p>
       The sum restricted to \(P_v\)-s such that \(| P_v | \geqslant 6\) is
-      exponentially converging. 
+      exponentially converging.
     </p>
     <p>
       We have problems with vertices \(| P_v | = 2\) and \(| P_v | = 4\):
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle
       \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}\)
-    </center>
+    </div>
     <p>
       Let us start with the two legs vertices.
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{x, y, \omega} \psi^{(\leqslant h_{v'}), +}_{x,
       \omega} W_{2,
 \omega}^{(h_{v'})} (x, y) \psi^{(\leqslant h_{v'}), -}_{y,
       \omega}\)
-    </center>
+    </div>
     <p>
       we decompose the kernel into a local and remainder parts:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle W_{2, \omega}^{(h_{v'})} =\mathcal{L}W_{2,
       \omega}^{(h_{v'})}
 +\mathcal{R}W_{2, \omega}^{(h_{v'})}\)
-    </center>
+    </div>
     <p>
       where
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathcal{L}W_{2, \omega}^{(h_{v'})} (x, y) :=
       \underbrace{\sum_{y'} W_{2,
 \omega}^{(h_{v'})} (x, y')}_{ \hat{W}_{2,
       \omega}^{(h_{v'})} (k) |_{k = 0}}
 \delta_{x, y}\)
-    </center>
+    </div>
     <p>
       Thanks to lattice symmetries (reflections and discrete rotations) we
       have the cancellation
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{y'} W_{2, \omega}^{(h_{v'})} (x, y') = 0.\)
-    </center>
+    </div>
     <p>
       So the local part of the two point kernel is zero and the rest is better
       behaved, indeed it gives the following expression
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{x, y, \omega} \psi^{(\leqslant h_{v'}), +}_{x,
       \omega} \mathcal{R}W_{2,
 \omega}^{(h_{v'})} (x, y) \psi^{(\leqslant
@@ -164,8 +168,8 @@ y, \omega} \psi^{(\leqslant h_{v'}),
 (x, y) [\psi^{(\leqslant
       h_{v'}), -}_{y, \omega} - \psi^{(\leqslant h_{v'}),
 -}_{x, \omega}]\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \approx \sum_{x, y, \omega} \psi^{(\leqslant h_{v'}),
       +}_{x, \omega} W_{2,
 \omega}^{(h_{v'})} (x, y) \underbrace{(y - x)
@@ -173,55 +177,55 @@ y, \omega} \psi^{(\leqslant h_{v'}),
 \underbrace{\partial \psi^{(\leqslant h_{v'}), -}_{x,
       \omega}}_{\propto
 2^{h_{v'}} \psi^{(\leqslant h_{v'}), -}_{x, \omega}}\)
-    </center>
+    </div>
     <p>
       so we can estimate this as
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \approx 2^{- (h_v - h_{v'})} \sum_{x, y, \omega}
       \psi^{(\leqslant h_{v'}),
 +}_{x, \omega} O (W_{2, \omega}^{(h_{v'})} (x,
       y)) \psi^{(\leqslant h_{v'}),
 -}_{x, \omega}\)
-    </center>
+    </div>
     <p>
-      which has better behaviour of the original vertex function. 
+      which has better behaviour of the original vertex function.
     </p>
     <p>
       We refine the local part
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \psi^-_y \rightarrow \psi^-_x + (y - x) \partial
       \psi^-_x\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \sum_{x, y, \omega} \psi^+_{x, \omega} (y - x) \cdot
       \partial \psi^-_x W_{2,
 \omega} (x, y) = \sum_{x, \omega} \psi^+_{x,
       \omega} (\zeta_{\omega}^{(h)}
 \cdot \partial) \psi^-_{x, \omega}\)
-    </center>
+    </div>
     <p>
       where \(\) in Fourier variables and due to lattice symmetries
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle - i \zeta_{\omega}^{(h)} \cdot k = -
       \underbrace{\zeta_h}_{\in \mathbb{R}}
 D_{\omega} (k)\)
-    </center>
+    </div>
     <p>
       where \(D_{\omega} (k) = (- i - \omega) k_1 + (- i - \omega) k_2\). So
       this can be absorbed into the propagator
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mu (k) = D_w (k) + O (k^2),\)
-    </center>
+    </div>
     <p>
       Note that \(\zeta_h = O (\lambda^2)\). This will produce after a
       multiplicative recursion to a critical exponents for the correlation
       fuctions. We now remain only with a rest of the type
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{x, y, \omega} \psi^{(\leqslant h_{v'}), +}_{x,
       \omega} \mathcal{R}W_{2,
 \omega}^{(h_{v'})} (x, y) \psi^{(\leqslant
@@ -231,14 +235,14 @@ D_{\omega} (k)\)
 \omega} O (W_{2,
       \omega}^{(h_{v'})} (x, y)) \psi^{(\leqslant h_{v'}), -}_{x,
 \omega}\)
-    </center>
+    </div>
     <p>
-      which is now decaying. 
+      which is now decaying.
     </p>
     <p>
       What about the quartic terms with \(| P_v | = 4\)? They are of the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{\text{\scriptsize{$\begin{array}{c}
   x_1, \ldots
       x_4\\
@@ -251,89 +255,89 @@ h_{v'}), -}_{x_2, \omega_2}
       -}_{x_4, \omega_4} W_{4,
 \underline{\omega}}^{(h_{v'})} (x_1, \ldots,
       x_4)\)
-    </center>
+    </div>
     <p>
       The local part is now
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \psi^{(\leqslant h_{v'}), +}_{x_1, \omega_1}
       \psi^{(\leqslant h_{v'}),
 -}_{x_1, \omega_2} \psi^{(\leqslant h_{v'}),
       +}_{x_1, \omega_3}
 \psi^{(\leqslant h_{v'}), -}_{x_1, \omega_4}\)
-    </center>
+    </div>
     <p>
       and up to permutation we remain only with (by symmetries, of the
       lattice)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \psi^{(\leqslant h_{v'}), +}_{x_1, +} \psi^{(\leqslant
       h_{v'}), -}_{x_1, +}
 \psi^{(\leqslant h_{v'}), +}_{x_1, -}
       \psi^{(\leqslant h_{v'}), -}_{x_1, -}\)
-    </center>
+    </div>
     <p>
       The remainder comes with an additional factor
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle 2^{- (h_v - h_{v'})}\)
-    </center>
+    </div>
     <p>
       which makes the remainder irrelevant. We have to live with the
       &ldquo;dangerous&rdquo; local terms
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \lambda_{h_{v'}} \sum_{x_1} \psi^{(\leqslant h_{v'}),
       +}_{x_1, +}
 \psi^{(\leqslant h_{v'}), -}_{x_1, +} \psi^{(\leqslant
       h_{v'}), +}_{x_1, -}
 \psi^{(\leqslant h_{v'}), -}_{x_1, -}\)
-    </center>
+    </div>
     <p>
       which cannot be reabsorbed effectively here
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \lambda_h :=  4 \sum_{x_2, x_3, x_4} W_{4,
       \underline{\omega}}^{(h)} (x_1,
 \ldots, x_4) \in \mathbb{R}\)
-    </center>
+    </div>
     <p>
-      which is real by lattice symmetries. 
+      which is real by lattice symmetries.
     </p>
     <p>
       We have now to modify the multiscale expansion in order to take into
-      account the absorption of these relevant and dangerous contributions. 
+      account the absorption of these relevant and dangerous contributions.
     </p>
     <p>
       The outcome of this procedure can be rewritten in the following way. We
       have a modified multiscale expansion.
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle Z_{\lambda} = e^{L^2 E^{(h)}} \int P_{\leqslant h, Z_h}
       (\mathrm{d}
 \psi^{(\leqslant h)}) e^{V^{(h)} (Z_h^{1 / 2}
       \psi^{(\leqslant h)})}\)
-    </center>
+    </div>
     <p>
       where \(P_{\leqslant h, Z_h}\) has a propagator: with \(r_{\omega} (k) =
       \mu (k + p^{\omega}) - D_{\omega} (k) = O (k^2)\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{g_{\omega}^{(\leqslant h)} (x, y)}{Z_h} = \int
       \frac{\mathrm{d} k}{(2
 \pi)^2} \frac{e^{i k \cdot (x - y)}}{Z_h
       D_{\omega} (k) + r_{\varepsilon} (k)}
 \chi (2^h k)\)
-    </center>
+    </div>
     <p>
       and the interaction has the structure
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle V^{(h)} (\psi) = \lambda_h \sum_{x_1} \psi^+_{x_1, +}
       \psi^-_{x_1, +}
 \psi^+_{x_1, -} \psi^-_{x_1, -} +\mathcal{R}V^{(h)}
       (\psi)\)
-    </center>
+    </div>
     <p>
       where \(\mathcal{R}V^{(h)} (\psi)\) includes all the terms with \(\ell
       \geqslant 6\) and the second order remainder for \(\ell = 2\) and the
@@ -345,31 +349,31 @@ h_{v'}), -}_{x_2, \omega_2}
     <p>
       In particular if we write
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathcal{R}V^{(h)} (\psi) = \sum_P \sum_{\underline{x}
       (P), \underline{\omega}
 (P)} \mathcal{R}W_{| P |, \underline{\omega}
       (P)}^{(h)} (\underline{x} (P))
 \Psi_P\)
-    </center>
+    </div>
     <p>
-      
+
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{1}{L^2} \| \mathcal{R}W^{(h)}_{\ell,
       \underline{\omega}} \|_{L^1}
 \leqslant 2^{h (2 - \ell / 2)} \sum_{n
       \geqslant 1} C^n | \alpha |^n
 \sum_{\tau \in J_{h, n}} \times\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \times \sum_{\{ P_v \} : | P_{v_0} | = \ell}
       \prod_{\text{$v$ branching
 point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       P_v |}{2} + c \lambda^2 | P_v | -
 \beta (P_v) \right)} \times \prod_{v
       \text{e.p.}} | \lambda_{h_{v'}} |\)
-    </center>
+    </div>
     <p>
       where now we consider all trees and not only those ending at scale
       \((0)\) and for them consider the contribution of \(\lambda_{h'}\) from
@@ -378,22 +382,22 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
     <p>
       Where
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \beta (P_v) = \left\{ \begin{array}{ll}
-  - 2 & \text{if
+  - 2 &amp; \text{if
       $| P_v | = 2$}\\
-  - 1 & \text{if $| P_v | = 4$}\\
-  0 &
+  - 1 &amp; \text{if $| P_v | = 4$}\\
+  0 &amp;
       \operatorname{otherwise}
 \end{array} \right.\)
-    </center>
+    </div>
     <p>
       and the factors \(c \lambda^2 | P_v |\) are coming from the wave
       function renormalization if we assume that the following bound is true
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{Z_{h - 1}}{Z_h} \leqslant 2^{c \lambda_0^2}\)
-    </center>
+    </div>
     <p>
       and the sum make sense if \(| \lambda_h |\) remains small at all scales
       in such a way that \(| \lambda_h | \leqslant C | \lambda_0 |\).
@@ -404,28 +408,28 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       vertex we apply an \(\mathcal{R}\) operator and at the first vertex an
       \(\mathcal{L}\) operator. So we have an expression of the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \lambda_h = \lambda_{h + 1} + \underbrace{\sum
       \text{[trees with $n \geqslant
 2$ endpoints]}}_{\beta_h (\lambda_{h +
       1}, \lambda_{h + 2}, \ldots)}\)
-    </center>
+    </div>
     <p>
       and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{Z_{h - 1}}{Z_h} = 1 + \zeta_h\)
-    </center>
+    </div>
     <p>
       and \(\zeta_h\) admits a similar representation as a convergent series
       of trees, namely \(\zeta_h = \beta^Z_h (\lambda_{h + 1}, \lambda_{h +
-      2}, \ldots)\) with a similar beta function as for \(\lambda\). 
+      2}, \ldots)\) with a similar beta function as for \(\lambda\).
     </p>
     <p>
       We have to compute the \(\beta\) functions. At lowest order in
       \(\lambda_h\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \beta_h
       =
 \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
@@ -433,54 +437,54 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       \cdots \approx \text{} c_h \lambda^2_h = [c_{- \infty} + O
       (2^h)]
 \lambda^2_h\)
-    </center>
+    </div>
     <p>
       and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \beta^Z_h
       \approx
 \text{$\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}$}
 +
       \cdots\)
-    </center>
+    </div>
     <p>
       Carefully performing the computation we see that the first diagram is
       given by
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle
       \text{$\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}$}
 \approx
       \sum_y g^{(h)}_+ (x, y) (g^{(h)}_- (x, y) + g^{(h)}_- (y, x))\)
-    </center>
+    </div>
     <p>
       but \(g^{(h)}_- (x, y)\) is (approximatively) odd so the two terms
       cancels and give a lower order contribution
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \approx \sum_y 2^h \cdot 2^h \cdot e^{- 2^h | x - y |}
       \approx 2^{2 h} \cdot
 2^{- 2 h} \approx 1\)
-    </center>
+    </div>
     <p>
       and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left| \sum_{\text{ways of
       pairing}}
 \raisebox{-0.5\height}{\includegraphics[width=2.98329889807163cm,height=1.98327430145612cm]{image-1.pdf}}
 \right|
       \leqslant C 2^h | \lambda_h |^2\)
-    </center>
+    </div>
     <p>
       so we get a recursion of the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \lambda_{h - 1} = \lambda_h + c \lambda_h^2 2^h
       \Rightarrow \lambda_h =
 \lambda_0 (1 + O (\lambda_0))\)
-    </center>
+    </div>
     <p>
       thanks to this cancellation. What about higher orders? How to see these
       cancellations???
@@ -488,12 +492,12 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
     <p>
       If we could prove that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle | \beta^{\lambda}_h | \leqslant C | \lambda_h  |^2 2^h\)
-    </center>
+    </div>
     <p>
       then we would be happy (asymptotic cancellations in the \(\beta\)
-      function). 
+      function).
     </p>
     <p>
       In order to have this key result at all orders we are going to follow
@@ -501,12 +505,12 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
     </p>
     <p>
       The really dangerous part is the one associated to the homogeneous part
-      of the propagator. 
+      of the propagator.
     </p>
     <p>
       At each scale let us decompose
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{g_{\omega}^{(h)} (x, y)}{Z_h} = \overbrace{\int
       \frac{\mathrm{d} k}{(2
 \pi)^2} \frac{e^{i k \cdot (x - y)}}{Z_h
@@ -515,16 +519,16 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       y) = \text{relativistic/Dirac propagator}}
 + \frac{g^{(h)}_S (x,
       y)}{Z_h}\)
-    </center>
+    </div>
     <p>
       with \(| g^{(h)}_s (x, y) | \lesssim 2^{2 h} e^{- 2^h | x - y |}\) the
       subdominant part of the propagator. And decompose the \(\beta\) function
       as
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \beta^{\lambda}_h = \beta^{\lambda}_{h, R} +
       \beta^{\lambda}_{h, S},\)
-    </center>
+    </div>
     <p>
       and \(| \beta^{\lambda}_{h, S} | \leqslant C | \lambda_h |^2 2^h\)
       thanks to the better behaviour of the propagator (since there is a least
@@ -533,35 +537,35 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       \(\beta^{\lambda}_{h, R}\) is the same \(\beta\) function which one
       obtains with the multi scale procedure for the model
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \int P_{Z, R}^{(\leqslant N)} (\mathcal{D} \psi) e^{V
       (Z^{1 / 2} \psi)},\)
-    </center>
+    </div>
     <p>
       where \(P_{Z, R}^{(\leqslant N)}\) is the reference measure associated
-      to 
+      to
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{g^{(\leqslant N)} (x, y)}{Z} = \frac{1}{Z}
       \int_{\mathbb{R}^2}
 \frac{\mathrm{d} k}{(2 \pi)^2} \frac{e^{i k \cdot (x
       - y)}}{D_{\omega} (k)}
 \chi (2^N k),\)
-    </center>
+    </div>
     <p>
       (eventually \(N \rightarrow \infty\)). Here we are in the continuum and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle V (\psi) = \lambda_{\infty} \int \mathrm{d} x \mathrm{d}
       y \psi^+_{x, +}
 \psi^-_{x, +} v (x - y) \psi^+_{x, -} \psi^-_{x, -},\)
-    </center>
+    </div>
     <p>
       where \(v\) is \(C^{\infty}_0\) potential, rotationally invariant, and
       \(\hat{v} (0) = 0\). (We need other cutoffs and then use the tree
       expansion to control this theory and then remove them). The \(\beta\)
       function of this theory coincides in the infrared regime to our
-      \(\beta_R^{\lambda}\). 
+      \(\beta_R^{\lambda}\).
     </p>
     <p>
       This model is exactly solvable. (if the IR cutoff is chosen and removed
@@ -569,15 +573,15 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
     </p>
     <p>
       To solve it we can use bosonization. Or purely in fermionic variables
-      (cf. Benfatto and Mastropietro) using Ward identities. 
+      (cf. Benfatto and Mastropietro) using Ward identities.
     </p>
     <p>
       From the solution we have exact formula for correlations which gives in
       particular the vanishing of the \(\beta\) function and density-density
       correlations which give fine asymptotics for the dimer-dimer
-      correlations (which were our final goal). 
+      correlations (which were our final goal).
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \langle \mathbb{I}_e ; \mathbb{I}_{e'} \rangle = A
       \sum_{\omega} \langle
 \psi^+_{x, \omega} \psi^-_{x, \omega} ; \psi^+_{y,
@@ -588,54 +592,54 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       \psi^+_{y, \omega} \psi^-_{y, -
 \omega} \rangle_{\operatorname{Lutt}} +
       O \left( \frac{1}{| x - y |^3} \right)\)
-    </center>
+    </div>
     <p>
       All the infrared behaviour is the same modulo lower order contributions.
-      
+
     </p>
     <p>
       To prove the Haldane relation \(A = \nu\) then we have to recognize that
       the lattice theory has a Ward identity (which is that at each site you
       have an exiting dimer) which can be used to put in relation prefactors
-      in correlations. 
+      in correlations.
     </p>
     <p>
-      
+
     </p>
     <p>
       On the Luttinger model:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle P_{Z, R}^{(\leqslant N)} (\mathrm{D} \psi) \propto
       \mathrm{D} \psi e^{-
 \sum_{x, \omega} (\hat{\psi}^+_{k, \omega}, \chi^{-
       1} (2^N k) D_{\omega}  (k)
 \hat{\psi}^-_{k, \omega})}\)
-    </center>
+    </div>
     <p>
       the free action take the form (neglecting the cutoff)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{\omega} \int \mathrm{d} x (\psi^+_{k, \omega}
       \underbrace{[(1 - i
 \omega) \partial_1 + (1 + i \omega) \partial_2]}_{=:
       \partial_{\omega}}
 \hat{\psi}^-_{k, \omega})\)
-    </center>
+    </div>
     <p>
       and the model is covariant under local chiral transformation
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \psi^{\pm}_{x, \omega} \rightarrow e^{\pm i
       \alpha_{\omega} (x)}
 \psi^{\pm}_{x. \omega}\)
-    </center>
+    </div>
     <p>
       Indeed the interaction is locally gauge invariant, the measure also and
       the action is covariant and the transformation generates some
       correction:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{\omega} \int \mathrm{d} x (\psi^+_{k, \omega}
       \partial_{\omega}
 \hat{\psi}^-_{k, \omega}) \longrightarrow
@@ -646,26 +650,26 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       \partial_{\omega} \alpha_{\omega} (x))
 \psi^+_{k, \omega}
       \hat{\psi}^-_{k, \omega})\)
-    </center>
+    </div>
     <p>
       and we can introduce an external field and differentiate wrt.
       \(\alpha_{\omega} (x)\) and set it to zero to get identities among
-      correlation functions. 
+      correlation functions.
     </p>
     <p>
       We get the following kind of identities:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle ZD_{\omega}
       (p)
 \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
 =
 \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-2.pdf}}\)
-    </center>
+    </div>
     <p>
       Where the diagram on the left corresponds to the expression:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle
       \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
 =
@@ -673,21 +677,21 @@ point}} 2^{(h_v - h_{v'}) \left( 2 - \frac{|
       \hat{\psi}^-_{k',
 \omega} ; \hat{\psi}^-_{k, \omega} \hat{\psi}^+_{k +
       p, \omega} \rangle\)
-    </center>
+    </div>
     <p>
       And then also
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle Z D_{\omega} (p) \int \mathrm{d} k' \langle
       \hat{\psi}^+_{k' + p, - \omega}
 \hat{\psi}^-_{k', - \omega} ;
       \hat{\psi}^-_{k, \omega} \hat{\psi}^+_{k + p,
 \omega} \rangle = 0\)
-    </center>
+    </div>
     <p>
       On the other hand Dyson&ndash;Schwinger equations gives
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \langle \hat{\psi}^+_{k, \omega} \hat{\psi}^-_{k,
       \omega} \rangle = (Z
 D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
@@ -697,7 +701,7 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
 \hat{\psi}^-_{k', \omega} ;
       \hat{\psi}^-_{k, \omega} \hat{\psi}^+_{k + p,
 \omega} \rangle\)
-    </center>
+    </div>
     <p>
       However there are corrections due to \(\chi^{- 1}\) to the local gauge
       invariance and we will have corrections to the vanishing of the r.h.s.
@@ -708,7 +712,7 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
       UV regularization which in \(N\). There will be an error term in the
       Ward identity which once produced tend to stay there and that we have to
       control. The correction proportional to \((\chi^{- 1} - 1)\) is
-      marginal. 
+      marginal.
     </p>
     <p>
       We can work out the multiscale construction of this theory, including
@@ -717,7 +721,7 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
       irrelevant in the UV and compute them explicitly to obtain a remarkable
       identity of the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle Z \left[ D_{\omega}
       (p)
 \raisebox{-0.5\height}{\includegraphics[width=3.0824642529188cm,height=2.47909287682015cm]{image-1.pdf}}
@@ -727,16 +731,16 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
 \raisebox{-0.5\height}{\includegraphics[width=3.37996031746032cm,height=1.88414994096812cm]{image-2.pdf}}
 \right]
       =\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle
       =
 \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
-    </center>
+    </div>
     <p>
       and a second equation of the form
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle Z \left[ D_{- \omega}
       (p)
 \raisebox{-0.5\height}{\includegraphics[width=3.0824642529188cm,height=2.47909287682015cm]{image-1.pdf}}
@@ -746,12 +750,12 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
 \raisebox{-0.500002431823819\height}{\includegraphics[width=3.08249704840614cm,height=1.68574544142726cm]{image-2.pdf}}
 \right]
       = 0\)
-    </center>
+    </div>
     <p>
       Then [I didnt' followed the discussion] we get that the asymptotics of
       the propagator is given by
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle G_{\omega, R} (x) = \langle \psi^-_{x, \omega}
       \psi^+_{y, \omega}
 \rangle_{\text{Lutt,$\lambda_{\infty}$}} = \langle
@@ -759,11 +763,11 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
 \psi^+_{y, \omega} \rangle_{\text{Lutt,0}} \times
       e^{- \lambda_{\infty} \Delta
 (x)}\)
-    </center>
+    </div>
     <p>
       and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \Delta (x) = \int \frac{\mathrm{d} p}{(2 \pi)^2}
       \frac{e^{- i px}}{D_{\omega}
 (p)} \frac{(\hat{v} (p))^2 \left( -
@@ -774,7 +778,7 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
       \frac{\lambda_{\infty}}{8 \pi}
 \frac{1}{1 - \left(
       \frac{\lambda_{\infty}}{8 \pi} \right)^2} \log | x |\)
-    </center>
+    </div>
     <p>
       and also other asymptotics of the correlations follows from the
       symmetry.
@@ -783,13 +787,13 @@ D_{\omega} (k))^{- 1} + (Z D_{\omega} (k))^{- 1} (Z
       In order to compare to the lattice theory we have to tune the bare
       parameters of this model in order to match the behaviours in the IR and
       then the exact relations in this models for the critical exponents give
-      the same relations of the lattice model. 
+      the same relations of the lattice model.
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
   </body>
 </html>

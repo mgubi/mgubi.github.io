@@ -90,6 +90,11 @@ The JSON format is:
 ]
 ```
 
+The legacy bibliography is also 8-bit encoded. When `apply_patch` cannot
+decode it, use the same transactional helper with `--raw`, still validating
+with `--dry-run` first. Reserve this mode for known legacy text files; native
+TeXmacs files should retain the default header check.
+
 Patch strings are byte notation, not Unicode-to-Cork conversion:
 
 - U+0000 through U+00FF map directly to bytes 0x00 through 0xFF. In JSON,

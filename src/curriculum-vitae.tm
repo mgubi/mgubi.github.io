@@ -12,7 +12,7 @@
   <chapter*|Vita>
 
   <\notes-abstract>
-    Things that happened to me, professionally \U last updated May 2026
+    Things that happened to me, professionally \U last updated September 2026
   </notes-abstract>
 
   <\cv-body>
@@ -30,16 +30,16 @@
 
     Hausdorff Chair \U Hausdorff Center for Mathematics, Bonn
 
-    <timeline|2021\U2015>Professeur chargé de cours (part\Utime) \U Centre de
-    Mathématiques Appliquées, Ecole Polytechnique, Saclay
+    <timeline|2015\U2021>Professeur chargé de cours (part\Utime) \U Centre de
+    Mathématiques Appliquées, École Polytechnique, Saclay
 
     <timeline|2013\U2018>Junior member, Institut Universitaire de France
 
     <timeline|2012\U2015>Professeur des Universités (1st class) \U Centre de
-    Recherche en Mathématiques de la Decision, Université Paris\UDauphine
+    Recherche en Mathématiques de la Décision, Université Paris\UDauphine
 
     <timeline|2008\U2012>Professeur des Universités (2nd class) \U Centre de
-    Recherche en Mathématiques de la Decision, Université Paris\UDauphine
+    Recherche en Mathématiques de la Décision, Université Paris\UDauphine
 
     <timeline|2006\U2008>Maître de Conférences \U \ Département de
     Mathématiques, Université Paris\USud
@@ -72,7 +72,7 @@
     <timeline|2018>Invited sectional speaker ICM (jointly between Probability
     and PDEs)
 
-    <timeline|2013\U2015>Junior member of the Institut Universitaire de
+    <timeline|2013\U2018>Junior member of the Institut Universitaire de
     France
 
     <\cv-section>
@@ -91,17 +91,17 @@
 
     <timeline|2017\U2022>Member of the Junior Fellow search committee of the
     Hausdorff Center for Mathematics \U <small|<comment|Each year approx. 200
-    applications for 3-4 offers>>
+    applications for 3\U4 offers>>
 
     <timeline|2010\U2015>Director of the doctoral program in Mathematics,
     Université Paris\UDauphine \U <small|<comment|<math|\<sim\>40> PhD
     students>>
 
     <timeline|2010\U2015>Elected member of Conseil des Études et de la vie
-    Etudiante de l'Université Paris\UDauphine
+    étudiante de l'Université Paris\UDauphine
 
-    <timeline|2009-2014>Director of the first year of Master MMD
-    \SMathématiques pour la Modelisation et Decision\T at the Université
+    <timeline|2009\U2014>Director of the first year of Master MMD
+    \SMathématiques pour la Modélisation et Décision\T at the Université
     Paris\UDauphine \U <comment|<math|\<sim\>140> students/year>
 
     <\cv-section>
@@ -142,22 +142,21 @@
       Miscellanea
     </cv-section>
 
-    <timeline|2025>Invited professor \ (1 month) at the Department of
+    <timeline|2025>Invited professor (1 month) at the Department of
     Mathematics of the University of Turin, Italy
 
-    <timeline|2006>Invited professor \ (1 month) in the Probability group at
+    <timeline|2006>Invited professor (1 month) in the Probability group at
     the Institut E.<nbsp>Cartan, University of Nancy 1, France
 
     <timeline|2003>CNRS (French National Center for Scientific Research)
-    postdoctoral fellowship at Laboratoire d'Analyse, Géometrie et
+    postdoctoral fellowship at Laboratoire d'Analyse, Géométrie et
     Applications UMR 7539, Institut Galilée, Université Paris 13, France \U
     under the supervision of Prof.<nbsp>F.<nbsp>Russo
 
-    <timeline|2001>Postdoctoral fellowship (3 months) at ETH (Federal
-    Polytechnical School), Zürich \U under the supervision of
+    <timeline|2001>Postdoctoral fellowship (3 months) at ETH (Swiss Federal Institute of Technology), Zürich \U under the supervision of
     Prof.<nbsp>A.<nbsp>S. Sznitman.
 
-    <timeline|1996>INFN (Italian's National Institute for Nuclear Physics)
+    <timeline|1996>INFN (Italian National Institute for Nuclear Physics)
     summer studentship (2 months) in high-energy experimental particle
     physics at Fermilab \U under the supervision of Prof. M.<nbsp>Atac
 
@@ -171,11 +170,10 @@
     Simons Center for Geometry and Physics at Stony Brook
     (<hlink|url|https://scgp.stonybrook.edu>)
 
-    <timeline|2024\U>Associate editor of Communication in Mathematical
+    <timeline|2024\U>Associate editor of Communications in Mathematical
     Physics
 
-    <timeline|2017\U2023>Associate editor of Annals of the Institute Henry
-    Lebesgue
+    <timeline|2017\U2023>Associate editor of Annales Henri Lebesgue
 
     <timeline|2016\U2021>Associate editor of Annals of Applied Probability
 
@@ -191,27 +189,27 @@
     <timeline|2011-2014>Member of the Evaluation Group for Mathematics and
     Statistics for NSERC/CRSNG, Canada
 
-    <timeline|2016\U2026>Member of Evaluations Groups for the National
+    <timeline|2016\U2026>Member of Evaluation Groups for the National
     Science Foundation, USA
 
-    Referee for ERC, ANR, DFG and various others research agencies
+    Referee for ERC, ANR, DFG and various other research agencies
 
     <\cv-section>
-      Organization of international conferences
+      Organisation of international conferences
     </cv-section>
 
     <timeline|2025>Simons Laufer Mathematical Sciences Institute Research
     Program on \PRecent Trends in Stochastic Partial Differential
-    Equations\Q, Berkley USA (<hlink|url|https://www.slmath.org/programs/380>)
+    Equations\Q, Berkeley, USA (<hlink|url|https://www.slmath.org/programs/380>)
 
-    Swissmap workshop \PStochastic Equations and Stochastic Dynamics\Q, Les
+    SwissMAP workshop \PStochastic Equations and Stochastic Dynamics\Q, Les
     Diablerets (<hlink|url|https://swissmaprs.ch/events/stochastic-equations-and-stochastic-dynamics/>)
 
     <timeline|2024>Research Program \PRandom paths to QFT: New probabilistic
     approaches to field theory\Q at the Simons Center for Geometry and
     Physics, Stony Brook (<hlink|url|https://scgp.stonybrook.edu/archives/42621>)
 
-    MSRI Summer Graduate School \PStochastic quantisation\Q, Berkley
+    MSRI Summer Graduate School \PStochastic quantisation\Q, Berkeley
     (<hlink|url|https://www.msri.org/summer_schools/1038>)
 
     Research Program \PNew developments and challenges in Stochastic Partial
@@ -229,17 +227,17 @@
     Mathematics, Bonn (<hlink|url|https://www.him.uni-bonn.de/programs/past-programs/past-junior-trimester-programs/randomness-pdes-fluctuations-2019/description/>)
 
     Workshop \PLarge scale description of random fields: interfaces between
-    PDE and RG approaches\Q, Inhomogeneous Random Systems, Institute Henry
+    PDE and RG approaches\Q, Inhomogeneous Random Systems, Institut Henri
     Poincaré, Paris (<hlink|url|https://irs.math.cnrs.fr/2019/>)
 
     <timeline|2018>Program \PScaling Limits, rough paths, quantum field
-    theory\Q at the Newtown Institute, Cambridge
-    (<notes-link|link|srq/srq-intro.tm>)
+    theory\Q at the Newton Institute, Cambridge
+    (<notes-link|link|research/srq/srq-intro.tm>)
 
-    <timeline|2017>Fields medal symposium in honor of M.<nbsp>Hairer, Toronto
+    <timeline|2017>Fields Medal Symposium in honour of M.<nbsp>Hairer, Toronto
     (<hlink|url|http://www.fields.utoronto.ca/activities/17-18/fieldsmedalsym>)
 
-    <timeline|2016>CIME Summer school "Singular random dynamics", Cetraro,
+    <timeline|2016>CIME Summer School "Singular random dynamics", Cetraro,
     Italy (<hlink|url|https://php.math.unifi.it/users/cime/Courses/2016/course.php?codice=20162>)
 
     Workshop "Rough Paths, Regularity Structures and Related Topics"
@@ -255,13 +253,13 @@
     <timeline|2012>Workshop \PRough Paths and PDEs\Q, Oberwolfach
     (<hlink|url|https://publications.mfo.de/handle/mfo/3311>)
 
-    <timeline|2010>Workshop \PRough paths in interaction\Q, Juin 2010.
-    Institut Henry Poincaré, Paris, France
+    <timeline|2010>Workshop \PRough paths in interaction\Q, June 2010.
+    Institut Henri Poincaré, Paris, France
 
-    Workshop \PRough paths and SPDEs\Q, April \ 2010. Newton Institute,
-    Cambdrige, UK
+    Workshop \PRough paths and SPDEs\Q, April 2010. Newton Institute,
+    Cambridge, UK
 
-    <timeline|2006>Workshop \PStochastic Fluid Mechanics and SPDEs\Q, Julliet
+    <timeline|2006>Workshop \PStochastic Fluid Mechanics and SPDEs\Q, July
     2006. Centro Ennio De Giorgi, Pisa, Italy
 
     <\cv-section>
@@ -283,8 +281,8 @@
     their Applications (SPA) in Lisbon, Portugal
     (<hlink|url|https://www.spa2023.org>)\ 
 
-    <timeline|2022>Conference \PQuantum many body system and interacting
-    particles, in honor of Hebert Spohn\Q, \ Münster
+    <timeline|2022>Conference \PQuantum many-body systems and interacting
+    particles, in honour of Herbert Spohn\Q, \ Münster
 
     <timeline|2021>Conference \PSeminal Interactions between Mathematics and
     Physics. II\Q, Accademia Nazionale dei Lincei, Rome
@@ -305,16 +303,16 @@
     sessions>
 
     Conference \PNew Directions in Stochastic Analysis: Rough Paths, SPDEs
-    and Related Topics, At the occasion of Professor Terry Lyons' 65th
+    and Related Topics, on the occasion of Professor Terry Lyons' 65th
     Birthday\Q, Berlin
 
-    Forum de Physique de l'École Normale Superieure, Paris
+    Forum de Physique de l'École Normale Supérieure, Paris
 
     Seminar on Stochastic Processes, Zürich
 
     <timeline|2018>Mathematical Colloquium, Bielefeld
 
-    <timeline|2017>Fields medal symposium in honor of M.<nbsp>Hairer, Toronto
+    <timeline|2017>Fields Medal Symposium in honour of M.<nbsp>Hairer, Toronto
     \U <comment|A talk and an additional 6h workshop for students>
 
     Charles River Lecture, Boston
@@ -322,7 +320,7 @@
     Kac seminar, Utrecht
 
     Minicourse at the Hausdorff school \PRecent Development in Singular
-    Stochastic PDEs\Q Bonn
+    Stochastic PDEs\Q, Bonn
 
     <timeline|2016>Minicourse at the CIME-EMS summer school \PSingular random
     dynamics\Q, Cetraro
@@ -337,7 +335,7 @@
 
     <timeline|2012>Minicourses at Marseille, Berlin and Rome
 
-    <timeline|2009>Minicourse on rough paths, CMLS, Ecole Polytechnique,
+    <timeline|2009>Minicourse on rough paths, CMLS, École Polytechnique,
     Palaiseau
   </cv-body>
 </body>

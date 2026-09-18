@@ -1,37 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Notes on TeXmacs</title>
-  <link rel="alternate" type="text/html" href="http://mgubi.github.io/"/>
-  <link rel="self" type="application/atom+xml" href="http://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-07-06T17:01:45Z</updated>
+  <title>Massimiliano Gubinelli - updates</title>
+  <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
+  <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
+  <updated>2026-09-18T23:02:07Z</updated>
   <author>
-    <name>The TeXmacs organisation</name>
-    <uri>http://www.texmacs.org</uri>
+    <name>Massimiliano Gubinelli</name>
+    <uri>https://mgubi.github.io/</uri>
   </author>
-  <id>mgubi.github.io/notes,2023,1</id>
-  <icon>http://mgubi.github.io/misc/blog-icon.ico</icon>
-  <logo>http://mgubi.github.io/misc/texmacs-blog-transparent.png</logo>
+  <id>https://mgubi.github.io/docs/notes.atom</id>
+  <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
+  <entry>
+    <title>Events</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/events.html"/>
+    <id>tag:mgubi.github.io,2023:research/events.tm</id>
+    <updated>2026-09-18T23:02:07Z</updated>
+    <published>2023-04-22T21:39:59Z</published>
+    <summary>I travel around to meet other mathematicians.</summary>
+  </entry>
   <entry>
     <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/curriculum-vitae.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/curriculum-vitae.html"/>
     <id>tag:mgubi.github.io,2023:curriculum-vitae.tm</id>
-    <updated>2026-07-06T17:01:45Z</updated>
+    <updated>2026-09-18T22:43:17Z</updated>
     <published>2023-04-21T15:36:12Z</published>
-    <summary>Things that happened to me, professionally – last updated May
-    2026</summary>
+    <summary>Things that happened to me, professionally – last updated
+    September 2026</summary>
+  </entry>
+  <entry>
+    <title>Publications</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/publications.html"/>
+    <id>tag:mgubi.github.io,2023:research/publications.tm</id>
+    <updated>2026-09-18T22:43:17Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary xml:space="preserve">Papers I have co-authored  – last updated September 2026.</summary>
+  </entry>
+  <entry>
+    <title>SRQ – Scaling limits, rough paths, quantum field theory</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-intro.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-intro.tm</id>
+    <updated>2026-09-18T21:09:10Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>From September 3rd 2018 to December 21st 2018, together with
+    D.Brydges, A.Giuliani, A.Kupiainen, H.Weber and L.Zambotti we organized a
+    research period at the Netwon Institute in Cambridge to bring together
+    people working in stochastic PDEs and people working around questions of
+    stastistical mechanics and quantum field theory.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2011/2012</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-11-12.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-11-12.tm</id>
+    <updated>2026-09-18T21:06:15Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2011–2012.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2008/2009</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-08-09.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-08-09.tm</id>
+    <updated>2026-09-18T21:06:15Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2008–2009.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2009/2010</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-09-10.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-09-10.tm</id>
+    <updated>2026-09-18T21:06:15Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2009–2010.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2012/2013</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-12-13.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-12-13.tm</id>
+    <updated>2026-09-18T20:57:01Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2012–2013.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2010/2011</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-10-11.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-10-11.tm</id>
+    <updated>2026-09-18T20:57:01Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2010–2011.</summary>
+  </entry>
+  <entry>
+    <title>Enseignements 2014/2015</title>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-14-15.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-14-15.tm</id>
+    <updated>2026-09-18T20:57:01Z</updated>
+    <published>2023-05-05T17:37:55Z</published>
+    <summary>Lectures delivered at Paris Dauphine, academic year
+    2014–2015.</summary>
+  </entry>
+  <entry>
+    <title>Presentations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/presentations.html"/>
+    <id>tag:mgubi.github.io,2023:research/presentations.tm</id>
+    <updated>2026-09-18T20:57:01Z</updated>
+    <published>2023-04-30T16:57:37Z</published>
+    <summary>The things I have said in various places.</summary>
+  </entry>
+  <entry>
+    <title>Seminar on rough paths</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-rough-paths-ss22.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/seminar-rough-paths-ss22.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>An introductory master seminar on Rough path theory, which has
+    taken place in Bonn in the Summer Semester 2022.</summary>
+  </entry>
+  <entry>
+    <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-statistical-mechanics-ss21.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/seminar-statistical-mechanics-ss21.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>This is a seminar on statistical mechanics held in Bonn in SS
+    2021 for the Bachelor degree in Mathematics.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss20.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss20.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course developing applicationsof stochastic calculus to the
+    study of continuous time stochastic processes. Course delivered in Bonn in
+    the Summer Semester 2020.</summary>
+  </entry>
+  <entry>
+    <title>Seminar: Nonperturbative Renormalization</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-renormalization-group-ws20-21.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/seminar-renormalization-group-ws20-21.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>An introduction to the continuous renormalization group via a
+    Grassmann model. Took place in WS 2020–2021.</summary>
+  </entry>
+  <entry>
+    <title>Teaching</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/teaching.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/teaching.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>Things I teach &amp; have taught.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss22.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss22.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>A course developing applicationsof stochastic calculus to the
+    study of continuous time stochastic processes. Course delivered in Bonn in
+    the Summer Semester 2022.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-processes-ss21.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-processes-ss21.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course delivered in Bonn in the summer semester 2021, via Zoom
+    due to the pandemic.</summary>
+  </entry>
+  <entry>
+    <title>Introduction to probability</title>
+    <link rel="alternate" type="text/html" hreflang="de" href="https://mgubi.github.io/docs/teaching/lectures-intro-probability-ws20-21.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-intro-probability-ws20-21.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A bachelor course delivered online (due to the pandemic) in Bonn
+    in the winter semester 2020/2021. In German.</summary>
   </entry>
   <entry>
     <title>Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/programming.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/programming.html"/>
     <id>tag:mgubi.github.io,2023:programming.tm</id>
-    <updated>2026-05-20T15:40:20Z</updated>
+    <updated>2026-09-18T20:57:00Z</updated>
     <published>2023-04-22T00:04:30Z</published>
     <summary>Content related to computer languages, programming,
     TeXmacs.</summary>
   </entry>
   <entry>
+    <title>Research</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/research.html"/>
+    <id>tag:mgubi.github.io,2023:research/research.tm</id>
+    <updated>2026-09-18T20:57:00Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Mathematics.</summary>
+  </entry>
+  <entry>
+    <title>People</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/people.html"/>
+    <id>tag:mgubi.github.io,2023:research/people.tm</id>
+    <updated>2026-07-06T16:54:07Z</updated>
+    <published>2023-04-22T15:15:45Z</published>
+    <summary>Present &amp; past members of my research group – updated
+    November 2024.</summary>
+  </entry>
+  <entry>
     <title>Marella</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/marella.html"/>
+    <link rel="alternate" type="text/html" hreflang="it" href="https://mgubi.github.io/docs/marella.html"/>
     <id>tag:mgubi.github.io,2023:marella.tm</id>
     <updated>2025-08-04T10:17:39Z</updated>
     <published>2025-08-04T10:17:39Z</published>
@@ -40,8 +219,328 @@
     translated.</summary>
   </entry>
   <entry>
+    <title>Writings</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/writings.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
+    <updated>2024-11-04T22:54:53Z</updated>
+    <published>2023-05-04T22:12:59Z</published>
+    <summary>This page gathers some writings.</summary>
+  </entry>
+  <entry>
+    <title>On Literate Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/literate-programming.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/literate-programming.tm</id>
+    <updated>2024-11-04T22:54:53Z</updated>
+    <published>2024-11-04T22:54:53Z</published>
+    <summary>Some reflections on literate programming, TeXmacs, programming
+    languages and writing.</summary>
+  </entry>
+  <entry>
+    <title>Maurelli - Regularisation by noise</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-maurelli.html"/>
+    <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-maurelli.tm</id>
+    <updated>2024-07-26T10:45:05Z</updated>
+    <published>2024-07-26T00:25:09Z</published>
+    <summary xml:space="preserve">The lectures of Mario Maurelli at the second workshop of the Bernoulli Center Program “New developments and challenges in Stochastic Partial Differential Equations” </summary>
+  </entry>
+  <entry>
+    <title>Zygouras - Critical SPDEs</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-zygouras.html"/>
+    <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-zygouras.tm</id>
+    <updated>2024-07-26T10:45:05Z</updated>
+    <published>2023-05-06T16:17:49Z</published>
+    <summary>The lectures of Nikolaos Zygouras at the second workshop of the
+    Bernoulli Center Program “New developments and challenges in Stochastic
+    Partial Differential Equations”</summary>
+  </entry>
+  <entry>
+    <title>Shen - Stochastic quantisation</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-shen.html"/>
+    <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-shen.tm</id>
+    <updated>2024-07-26T00:25:09Z</updated>
+    <published>2024-07-26T00:25:09Z</published>
+    <summary xml:space="preserve">The lectures of Hao Shen at the second workshop of the Bernoulli Center Program “New developments and challenges in Stochastic Partial Differential Equations” </summary>
+  </entry>
+  <entry>
+    <title>New developments and challenges inStochastic Partial Differential
+    Equations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-intro.html"/>
+    <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-intro.tm</id>
+    <updated>2024-07-26T00:25:09Z</updated>
+    <published>2024-07-26T00:25:09Z</published>
+    <summary>I collect here the notes for some of the courses at the Bernoulli
+    Center Program on SPDEs held in summer 2024.</summary>
+  </entry>
+  <entry>
+    <title>Otto - A continuity argument in regularity structures</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-otto.html"/>
+    <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-otto.tm</id>
+    <updated>2024-07-26T00:25:09Z</updated>
+    <published>2024-07-26T00:25:09Z</published>
+    <summary xml:space="preserve">The lectures of Felix Otto at the second workshop of the Bernoulli Center Program “New developments and challenges in Stochastic Partial Differential Equations” </summary>
+  </entry>
+  <entry>
+    <title>Elements of Mathematical Quantum Mechanics</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-tcc-emqm-tt24.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-tcc-emqm-tt24.tm</id>
+    <updated>2024-06-26T11:58:16Z</updated>
+    <published>2024-04-11T11:08:36Z</published>
+    <summary>These lectures are delivered in the context of the TCC course
+    offer of HT 2024.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 17th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181017-giuliani.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181017-giuliani.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 24th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180924-chandra.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180924-chandra.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – December 3rd, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181203-helmut.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181203-helmut.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – December 7th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181207-kotecky.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181207-kotecky.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 23th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181123-chevyrev.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181123-chevyrev.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 10th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180910-brydges.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180910-brydges.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 8th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181010-toninelli.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181010-toninelli.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 21th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181121-levy.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181121-levy.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 16th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181116-mitter-partial.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181116-mitter-partial.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 5st, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181005-weber.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181005-weber.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 2nd, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181102-jona.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181102-jona.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 8th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181008-toninelli.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181008-toninelli.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 9th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181109-brydges.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181109-brydges.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 9th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/prob-seminar-20181009-toth.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/prob-seminar-20181009-toth.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series (actually this particular
+    talk was delivered in the Probability seminar at Cambridge)</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 17th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180917-weber.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180917-weber.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 3rd, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181003-levy.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181003-levy.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 14th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180914-brydges.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180914-brydges.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – November 12th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181112-mitter.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181112-mitter.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 12th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181012-toninelli.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181012-toninelli.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 1st, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181001-levy.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181001-levy.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – December 5th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181205-chandra.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181205-chandra.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 15th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181015-giuliani.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181015-giuliani.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 29th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181029-jara.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181029-jara.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 28th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180928-hara.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180928-hara.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – October 19th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181019-giuliani.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181019-giuliani.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>SRQ seminar – September 27th, 2018</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180927-friz.html"/>
+    <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180927-friz.tm</id>
+    <updated>2024-05-31T09:25:16Z</updated>
+    <published>2023-05-11T21:05:30Z</published>
+    <summary>Notes from a talk in the SRQ series.</summary>
+  </entry>
+  <entry>
+    <title>Functional Integration and Quantum Mechanics</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-qmfi-ss20.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-qmfi-ss20.tm</id>
+    <updated>2024-04-11T11:08:36Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>An introduction to the study of Quantum Mechanical modelsvia the
+    connection with probability theory given by the Euclidean approach. Course
+    delivered in Bonn in Summer Semester 2020.</summary>
+  </entry>
+  <entry>
+    <title>Quantum probability and quantum stochastic calculus</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-quantum-probability-ss18.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-quantum-probability-ss18.tm</id>
+    <updated>2024-04-11T11:08:36Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>An introduction to the area of quantum probability and quantum
+    stochastic calculus, seen as non-commutative generalisation of probability
+    theory. Course delivered in Bonn in Summer Semester 2018.</summary>
+  </entry>
+  <entry>
+    <title>When a local martingale is a martingale?</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/local-martingales.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/local-martingales.tm</id>
+    <updated>2023-05-16T20:24:05Z</updated>
+    <published>2023-05-15T23:08:08Z</published>
+    <summary>Last week we had a discussion in class about continuous local
+    martingales. My experience is that it is a confusing aspect in learning
+    stochastic calculus. I record here some aspects of that discussion. May
+    15th 2023.</summary>
+  </entry>
+  <entry>
+    <title>Scripting webpages</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/scripting-webpages.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/scripting-webpages.tm</id>
+    <updated>2023-05-16T20:24:05Z</updated>
+    <published>2023-05-13T17:05:11Z</published>
+    <summary>I record here a workflow to fix some problems with the links in
+    the website. It can be used as a tutorial in TeXmacs scripting. The goal
+    is to batch-modify pages. Written May 13th, 2023.</summary>
+  </entry>
+  <entry>
     <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/old-publications.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/old-publications.html"/>
     <id>tag:mgubi.github.io,2023:old-publications.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -49,8 +548,94 @@
     updated October 2020.</summary>
   </entry>
   <entry>
+    <title>Stochastic Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-processes-ss19.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-processes-ss19.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>An introduction to various classes of stochastic processes,
+    namely families of random variables indexed by a discrete or continuous
+    parameter (time or space). The course took place in Boon in SS
+    2019.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss17.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss17.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course developing applicationsof stochastic calculus to the
+    study of continuous time stochastic processes. Course delivered in Bonn in
+    the Summer Semester 2017.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss16.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss16.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course delivered in Bonn in the summer semester 2016.</summary>
+  </entry>
+  <entry>
+    <title>Markov Processes</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-markov-processes-ws17-18.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-markov-processes-ws17-18.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course delivered in Bonn in the winter semester
+    2017/2018.</summary>
+  </entry>
+  <entry>
+    <title>Stochastic quantization of the Euclidean Φ^4_3 quantum field
+    theory</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-sq-ws20-21.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-sq-ws20-21.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>An introduction to stochastic quantisation. A course that I
+    delivered in the context of the graduate school of the University of Milan
+    in February 2021.</summary>
+  </entry>
+  <entry>
+    <title>Foundations in Stochastic Analysis</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-foundations-stochastic-analysis-ws19-20.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-foundations-stochastic-analysis-ws19-20.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A course delivered in Bonn in the winter semester
+    2019/2020.</summary>
+  </entry>
+  <entry>
+    <title>Large Deviations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-large-deviations-ws19-20.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/seminar-large-deviations-ws19-20.tm</id>
+    <updated>2023-05-13T17:05:11Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>This bachelor seminar took place in Bonn in the winter semester
+    2019/2020.</summary>
+  </entry>
+  <entry>
+    <title>The mathematics ofFeynman path integrals</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-feynman-integrals-ss20.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/seminar-feynman-integrals-ss20.tm</id>
+    <updated>2023-05-11T21:57:07Z</updated>
+    <published>2023-04-22T15:37:16Z</published>
+    <summary>A master seminar whici took place in Bonn in the summer semester
+    2020.</summary>
+  </entry>
+  <entry>
+    <title>Rough paths and controlled paths</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-rough-paths-ws15-16.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-rough-paths-ws15-16.tm</id>
+    <updated>2023-05-11T21:57:07Z</updated>
+    <published>2023-04-22T14:22:19Z</published>
+    <summary>An introduction to the theory of rough paths, controlled paths
+    and to recent developments in the analysis of singular SPDEs. Course
+    delivered in Bonn in Winter Semester 2015/2016.</summary>
+  </entry>
+  <entry>
     <title>Template article</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="http://mgubi.github.io/docs/template.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/template.html"/>
     <id>tag:mgubi.github.io,2023:template.tm</id>
     <updated>2023-04-22T00:04:30Z</updated>
     <published>2023-04-21T15:36:12Z</published>

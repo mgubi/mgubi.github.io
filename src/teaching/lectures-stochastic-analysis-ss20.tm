@@ -62,12 +62,12 @@
   lecture notes on ``Introduction to Stochastic Analysis''
   (<hlink|pdf|https://wt.iam.uni-bonn.de/fileadmin/WT/Inhalt/people/Andreas_Eberle/StoAn1011/StoAnSkriptneu.pdf>)
   and my course ``Foundations of Stochastic Analysis'' from the WS19/20
-  (<notes-link|link|/abteilung-gubinelli/teaching/found-stoch-analysis-ws1920>)
+  (<notes-link|link|lectures-foundations-stochastic-analysis-ws19-20.tm>)
 
   <subsection*|Lecture Notes>
 
   The first part of the course will be based on my the notes for<nbsp>the
-  SS17 (<notes-link|link|/abteilung-gubinelli/teaching/stochastic-analysis-ss17>)<nbsp>and
+  SS17 (<notes-link|link|lectures-stochastic-analysis-ss17.tm>)<nbsp>and
   Prof. Eberle's lecture notes for Stochastic Analysis SS16
   (<hlink|pdf|https://wt.iam.uni-bonn.de/fileadmin/WT/Inhalt/people/Andreas_Eberle/StoAn15/StochasticAnalysis2015.pdf>)
   (in particular Chapters 2,3 but excluding processes with jumps). The
@@ -189,7 +189,7 @@
     theorem.<nbsp>the Markovian proof.<nbsp>[<notes-store|script|iam/stochastic-analysis-ss20/sa-ss20-script-18.pdf>]
 
     <item>Lecture 19 (25/6)<nbsp>Entropy on the Wiener
-    space,<nbsp>Boué\UDupuis formula.<nbsp>[<notes-store|script|iamli/stochastic-analysis-ss20/sa-ss20-script-19.pdf>]
+    space,<nbsp>Boué\UDupuis formula.<nbsp>[<notes-store|script|iam/stochastic-analysis-ss20/sa-ss20-script-19.pdf>]
 
     <item>Lecture 20 (30/6) Proof of<nbsp>Boué\UDupuis formula. Application
     to<nbsp>Gaussian tails of Lipschitz functionals.<nbsp><nbsp>[<notes-store|script|iam/stochastic-analysis-ss20/sa-ss20-script-20.pdf>]

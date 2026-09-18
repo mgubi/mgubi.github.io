@@ -95,6 +95,38 @@ class FeedDateTests(unittest.TestCase):
         header = self.feed.split("<entry>", 1)[0]
         self.assertEqual(field(header, "updated"), max(entry_dates))
 
+    def test_feed_covers_every_publishable_source_page(self) -> None:
+        expected = {
+            path.relative_to(ROOT / "src").as_posix()
+            for path in (ROOT / "src").rglob("*.tm")
+            if path.name not in {"main.tm", "list-articles.tm"}
+        }
+        actual = {field(entry, "id").split(":", 2)[-1] for entry in self.entries}
+        self.assertEqual(actual, expected)
+
+    def test_feed_identity_and_links_are_absolute_https_urls(self) -> None:
+        root = ElementTree.fromstring(self.feed)
+        namespace = {"atom": "http://www.w3.org/2005/Atom"}
+        self.assertEqual(root.findtext("atom:id", namespaces=namespace), "https://mgubi.github.io/docs/notes.atom")
+        self.assertEqual(root.findtext("atom:author/atom:name", namespaces=namespace), "Massimiliano Gubinelli")
+        for link in root.findall(".//atom:link", namespace):
+            self.assertTrue(link.attrib["href"].startswith("https://"))
+
+    def test_entry_languages_match_the_pages(self) -> None:
+        for entry in self.entries:
+            link = re.search(r'<link[^>]+hreflang="([^"]+)"[^>]+href="([^"]+)"', entry)
+            self.assertIsNotNone(link)
+            language, href = link.groups()
+            path = urlparse(href).path.removeprefix("/docs/")
+            expected = "en"
+            if path == "marella.html":
+                expected = "it"
+            elif path.startswith("teaching/teaching-dauphine-"):
+                expected = "fr"
+            elif path == "teaching/lectures-intro-probability-ws20-21.html":
+                expected = "de"
+            self.assertEqual(language, expected, path)
+
 
 if __name__ == "__main__":
     unittest.main()

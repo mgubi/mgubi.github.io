@@ -111,7 +111,7 @@
     <hlink|https://doi.org/10.1103/RevModPhys.55.583|https://doi.org/10.1103/RevModPhys.55.583>.
 
     <item>P.K.Mitter:The Exact Renormalization Group, Encyclopedia in
-    Mathematical Physics, Elsevier 2006, <hlink|http://arXiv:math-ph/0505008|http://http://arXiv:math-ph/0505008>
+    Mathematical Physics, Elsevier 2006, <hlink|arXiv:math-ph/0505008|https://arxiv.org/abs/math-ph/0505008>
 
     <item><nbsp>Bertrand Delamotte, `An Introduction to the Nonperturbative
     Renormalization Group', ArXiv:Cond-Mat/0702365, 15 February 2007,

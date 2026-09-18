@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta content="TeXmacs 2.1.1" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>SRQ seminar – September 14th, 2018 — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes from a talk in the SRQ series.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180914-brydges.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="toggle" style="display: none">
       <p>
-        
+
       </p>
     </div>
     <div class="notes-header">
@@ -25,7 +29,7 @@
     <p>
       <a id="auto-1"></a>
     </p>
-    <h1><span style="margin-left: 1em"></span></h1>
+
     <h1 id="auto-2">SRQ seminar &ndash; September 14th, 2018<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Notes from a talk in the SRQ series.
@@ -39,16 +43,16 @@
       which are measurable w.r.t. fields supported in two adjacent regions
       which are mapped on each other via \(\theta\). Then we write graphically
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \begin{array}{|l|l|}
   \hline
-  A & B\\
- 
+  A &amp; B\\
+
       \hline
 \end{array} := \int \overline{A (\phi)} B (\phi) \mu (\mathrm{d}
       \phi) =
 \langle \theta A, B \rangle_{\mathcal{H}}\)
-    </center>
+    </div>
     <p>
       The drawing on the left emphasises the geometric relative location of
       the supports of the various functions: \(A\) is measurable with respect
@@ -58,11 +62,11 @@
       \rangle_{\mathcal{H}} = \langle \theta A, B \rangle_{L^2 (\mu)}\). By
       the Cauchy&ndash;Schwartz inequality we have
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left| \begin{array}{|l|l|}
   \hline
-  A & B\\
- 
+  A &amp; B\\
+
       \hline
 \end{array} \right| = | \langle \theta A, B \rangle_{\mathcal{H}}
       | \leqslant
@@ -71,50 +75,50 @@
 \rangle_{\mathcal{H}}^{1 / 2} = \left( \hspace{0.17em}
       \begin{array}{|l|l|}
   \hline
-  A & \theta A\\
+  A &amp; \theta A\\
   \hline
 \end{array}
       \hspace{0.17em} \right)^{1 / 2} \left(
       \hspace{0.17em}
 \begin{array}{|l|l|}
   \hline
-  \theta B & B\\
- 
+  \theta B &amp; B\\
+
       \hline
 \end{array} \hspace{0.17em} \right)^{1 / 2} .\)
-    </center>
+    </div>
     <p>
       since \(\theta A\) is supported in the right square. With two
       reflections \(\theta_1, \theta_2\) about orthogonal hyperplanes one can
       use Cauchy&ndash;Schwartz twice to obtain
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \begin{array}{rl}
-  & \left| \begin{array}{|l|l|}
-   
+  &amp; \left| \begin{array}{|l|l|}
+
       \hline
-    A & B\\
+    A &amp; B\\
     \hline
-    D & C\\
+    D &amp; C\\
     \hline
   \end{array}
       \right| \leqslant\\
-  & \left( \hspace{0.27em} \begin{array}{|l|l|}
-   
+  &amp; \left( \hspace{0.27em} \begin{array}{|l|l|}
+
       \hline
-    A & \theta_1 A\\
+    A &amp; \theta_1 A\\
     \hline
-    \theta_2 A & \theta_1
+    \theta_2 A &amp; \theta_1
       \theta_2 A\\
     \hline
   \end{array} \hspace{0.27em} \right)^{1 / 4}
       \left( \hspace{0.27em}
   \hspace{0.17em} \begin{array}{|l|l|}
-   
+
       \hline
-    \theta_1 B & B\\
+    \theta_1 B &amp; B\\
     \hline
-    \theta_2 \theta_1 B &
+    \theta_2 \theta_1 B &amp;
       \theta_2 B\\
     \hline
   \end{array} \hspace{0.27em} \right)^{1 / 4}
@@ -122,24 +126,24 @@
   \begin{array}{|l|l|}
     \hline
     \theta_1 D
-      & \theta_1 \theta_2 D\\
+      &amp; \theta_1 \theta_2 D\\
     \hline
-    D & \theta_1 D\\
+    D &amp; \theta_1 D\\
     \hline
- 
+
       \end{array} \hspace{0.27em} \right)^{1 / 4} \left( \hspace{0.27em}
- 
+
       \begin{array}{|l|l|}
     \hline
-    \theta_1 \theta_2 C & \theta_2 C\\
- 
+    \theta_1 \theta_2 C &amp; \theta_2 C\\
+
       \hline
-    \theta_1 C & C\\
+    \theta_1 C &amp; C\\
     \hline
   \end{array} \hspace{0.27em}
-      \right)^{1 / 4} . \hspace{3cm}   \text{(1)} 
+      \right)^{1 / 4} . \hspace{3cm}   \text{(1)}
 \end{array}\)
-    </center>
+    </div>
     <p>
       In order to realise the above example consider the \(\mathbb{Z}_4\)
       invariant graph with four vertices \(\{a, b, c, d\}\) and edges \(\{ab,
@@ -147,11 +151,11 @@
       \(b\) and \(d\) to \(c\) and \(\theta_2\) that maps \(a\) and \(b\) to
       \(d\) and \(c\). The \(\mathbb{Z}_4\) invariant measure
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mu (d \phi) = \exp \left[ - \frac{1}{2}  \sum_{xy}
       (\phi_x - \phi_y)^2
 \right]  \prod_x \rho (d \phi_x) .\)
-    </center>
+    </div>
     <p>
       has the required reflection positivity and we can apply the above
       estimate with \(A\) be a function of \(\phi_a\), \(B\) a function of
@@ -168,7 +172,7 @@
     <table width="100%">
       <tr>
         <td width="100%" align="center">\(\displaystyle \int_{\mathbb{R}^{\Lambda}} e^{-
-        \frac{1}{2}  (\nabla \phi, \nabla \phi)} 
+        \frac{1}{2}  (\nabla \phi, \nabla \phi)}
 \prod_{x \in \Lambda} A_x
         (\phi_x) \mathrm{d} \phi_x \leqslant \prod_{y \in
 \Lambda} \left(
@@ -182,17 +186,17 @@
     </table>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <font style="font-size: 90.0%"><strong>Problem <class style="font-style: normal">1</class>. </strong>(1)
-        Verify this. (2) Does (<a href="#eq:chessboard">2</a>) hold if \(N\) is odd and all
-        \(A_x\) are positive?</font>
+        <span style="font-size: 90.0%"><strong>Problem <span style="font-style: normal">1</span>. </strong>(1)
+        Verify this. (2) Does <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> hold if
+        \(N\) is odd and all \(A_x\) are positive?</span>
       </p>
     </div>
     <p>
       The estimate of this example was first proved in [<a href="#bib-FSS76">FSS76</a>].
-      As (<a href="#eq:chessboard0">1</a>) suggests, it can be generalised to allow functions
-      that depend on many fields or continuum fields in place of the single
-      field functions \(A_x\) . Such generalisations were developed in detail
-      in [<a href="#bib-FILS78">FILS78</a>].
+      As <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span> suggests, it can be
+      generalised to allow functions that depend on many fields or continuum
+      fields in place of the single field functions \(A_x\) . Such
+      generalisations were developed in detail in [<a href="#bib-FILS78">FILS78</a>].
     </p>
     <h2 id="auto-4">2<span style="margin-left: 1em"></span>Infrared bounds<span style="margin-left: 1em"></span></h2>
     <p>
@@ -203,39 +207,40 @@
       \(n > 2\). For \(n = 2\) there are other easy proofs. See for example
       [<a href="#bib-KK86">KK86</a>]. Since the proof below relies on O.S. positivity it
       is a very delicate proof: if for example we make the left hand side of
-      (<a href="#eq:chessboard">2</a>) more ferromagnetic by adding ferromagnetic
-      next-to-nearest neighbour interaction then the above proof no longer
-      applies. Yet one would expect that making the model more ferromagnetic
-      would increase only its tendency to correlate the direction of all its
-      spins. In a sequence of papers that starts with [<a href="#bib-Bal95">Ba&#x0142;95</a>]
-      Balaban has developed a low temperature renormalisation group expansion
-      that is not delicate and gives detailed information.
+      <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> more ferromagnetic by adding
+      ferromagnetic next-to-nearest neighbour interaction then the above proof
+      no longer applies. Yet one would expect that making the model more
+      ferromagnetic would increase only its tendency to correlate the
+      direction of all its spins. In a sequence of papers that starts with [<a
+      href="#bib-Bal95">Ba&#x0142;95</a>] Balaban has developed a low temperature
+      renormalisation group expansion that is not delicate and gives detailed
+      information.
     </p>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>(IR bounds) Take
+      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(IR bounds) Take
       \(A \in C_0^{\infty} (\mathbb{R})\). Define</i>
     </p>
     <p>
-      <i><center>
-        \(\displaystyle \langle F \rangle_A := Z_A^{- 1} 
+      <div class="block-italic"><div class="center">
+        \(\displaystyle \langle F \rangle_A := Z_A^{- 1}
         \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2}
 (\nabla \phi, \nabla
         \phi)} F (\phi)  \prod_{x \in \Lambda} A (\phi_x)
 \mathrm{d} \phi_x\)
-      </center></i>
+      </div></div>
     </p>
     <p>
       <i>then for \(g : \Lambda \rightarrow \mathbb{R}\)</i>
     </p>
-    <i><table width="100%">
+    <div class="block-italic"><table width="100%">
       <tr>
         <td width="100%" align="center">\(\displaystyle \langle e^{- (\nabla \phi, \nabla
-        g)} \rangle_A \leqslant e^{\frac{1}{2} 
+        g)} \rangle_A \leqslant e^{\frac{1}{2}
 (\nabla g, \nabla g)} .
         \)</td>
         <td align="right">(3)</td>
       </tr>
-    </table></i>
+    </table></div>
     <p style="margin-bottom: 1em">
       <i>(a Gaussian upper bound).</i>
     </p>
@@ -243,61 +248,61 @@
       <strong>Proof. </strong>Complete the square in \(\langle e^{- (\nabla
       \phi, \nabla g)} \rangle_A\):
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2}  (\nabla
       \phi, \nabla \phi) -
 (\nabla \phi, \nabla g)}  \prod_{x \in \Lambda} A
       (\phi_x) \mathrm{d} \phi_x =
-e^{\frac{1}{2}  (\nabla g, \nabla g)} 
+e^{\frac{1}{2}  (\nabla g, \nabla g)}
       \int_{\mathbb{R}^{\Lambda}} e^{-
 \frac{1}{2}  (\nabla \phi + \nabla g,
       \nabla \phi + \nabla g)}  \prod_{x \in
 \Lambda} A (\phi_x) \mathrm{d}
       \phi_x\)
-    </center>
+    </div>
     <p>
       now translate \(\phi_x \rightarrow \phi_x - g_x\) to get
     </p>
-    <center>
-      \(\displaystyle = e^{\frac{1}{2}  (\nabla g, \nabla g)} 
+    <div class="center">
+      \(\displaystyle = e^{\frac{1}{2}  (\nabla g, \nabla g)}
       \int_{\mathbb{R}^{\Lambda}} e^{-
 \frac{1}{2}  (\nabla \phi, \nabla
       \phi)}  \prod_{x \in \Lambda} A (\phi_x -
 g_x) \mathrm{d} \phi_x\)
-    </center>
+    </div>
     <p>
-      and use chessboard estimate&nbsp;(<a href="#eq:chessboard">2</a>) to bound the integral
-      as
+      and use chessboard estimate&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span>
+      to bound the integral as
     </p>
-    <center>
-      \(\displaystyle \leqslant e^{\frac{1}{2}  (\nabla g, \nabla g)} 
+    <div class="center">
+      \(\displaystyle \leqslant e^{\frac{1}{2}  (\nabla g, \nabla g)}
       \prod_{y \in \Lambda} \left(
 \int_{\mathbb{R}^{\Lambda}} e^{-
-      \frac{1}{2} (\nabla \phi, \nabla \phi)} 
+      \frac{1}{2} (\nabla \phi, \nabla \phi)}
 \prod_{x \in \Lambda} A (\phi_x
       - g_y) \mathrm{d} \phi_x \right)^{1 / |
 \Lambda |} .\)
-    </center>
+    </div>
     <p>
       Translate back in the integral \(\phi_x \rightarrow \phi_x + g_y\) which
       does not changes the energy of the configuration because \(g_y\) is
       <em>constant</em> in \(x\):
     </p>
-    <center>
-      \(\displaystyle \leqslant e^{\frac{1}{2}  (\nabla g, \nabla g)} 
+    <div class="center">
+      \(\displaystyle \leqslant e^{\frac{1}{2}  (\nabla g, \nabla g)}
       \prod_{y \in \Lambda} \left(
 \int_{\mathbb{R}^{\Lambda}} e^{-
-      \frac{1}{2} (\nabla \phi, \nabla \phi)} 
+      \frac{1}{2} (\nabla \phi, \nabla \phi)}
 \prod_{x \in \Lambda} A
       (\phi_x) \mathrm{d} \phi_x \right)^{1 / | \Lambda |} =
-e^{\frac{1}{2} 
+e^{\frac{1}{2}
       (\nabla g, \nabla g)} Z_A .\)
-    </center>
+    </div>
     <p style="margin-bottom: 1em">
       Divide both sides by \(Z\) and this finishes the proof.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <font style="font-size: 90.0%"><strong>Problem <class style="font-style: normal">2</class>. </strong><ol>
+      <div style="font-size: 90.0%"><strong>Problem <span style="font-style: normal">2</span>. </strong><ol>
         <li>
           <p>
             Generalise the IR bound to allow \(\phi : \Lambda \rightarrow
@@ -314,73 +319,72 @@ e^{\frac{1}{2}
             (\phi) = a (| \phi |)\). The \(O (n)\) sigma model is the special
             choice
           </p>
-          <center>
+          <div class="center">
             \(\displaystyle A (\phi_x) \mathrm{d} \phi_x \rightarrow
             \sigma_{S_R^{n - 1}}  (\mathrm{d}
 \phi_x)\)
-          </center>
+          </div>
           <p>
             where \(\sigma_{S^{n - 1}}\) is the surface measure on the sphere
             \(S_R^{n - 1} = \{|x| = R\} \subseteq \mathbb{R}^n\). For example,
             when \(n = 1\) we have the Ising model.
           </p>
         </li>
-      </ol></font>
+      </ol></div>
     </div>
     <p>
       The IR bound implies:
     </p>
     <p style="margin-top: 1em">
-      <strong>Corollary <class style="font-style: normal">2</class>. </strong><i>For \(g\)
+      <strong>Corollary <span style="font-style: normal">2</span>. </strong><i>For \(g\)
       orthonal to constants we have</i>
     </p>
     <p style="margin-bottom: 1em">
-      <i><center>
+      <div class="block-italic"><div class="center">
         \(\displaystyle \langle \phi (g)^2 \rangle_A \leqslant (g, (-
         \Delta)^{- 1} g) .\)
-      </center></i>
+      </div></div>
     </p>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>Replace \(g\) with \(tg\) in&nbsp;(<a href="#eq:ir-bound">3</a>)
-      and take \(t \rightarrow 0\) to get
+      <strong>Proof. </strong>Replace \(g\) with \(tg\) in&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">3</span>)</span> and take \(t \rightarrow 0\) to get
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle 1 + t \langle (\nabla \phi, \nabla g) \rangle_A +
       \frac{1}{2} t^2 \langle
 (\nabla \phi, \nabla g)^2 \rangle_A + \cdots
-      \leqslant 1 + \frac{t^2}{2} 
+      \leqslant 1 + \frac{t^2}{2}
 (\nabla g, \nabla g) + \cdots\)
-    </center>
+    </div>
     <p>
       which implies \(\langle (\nabla \phi, \nabla g) \rangle_A = 0\) and
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \langle (\phi, \Delta g)^2 \rangle_A \leqslant (\nabla
       g, \nabla g)\)
-    </center>
+    </div>
     <p>
       so replacing \(g \rightarrow (- \Delta)^{- 1} g\) we have
     </p>
     <p style="margin-bottom: 1em">
-      <center>
+      <div class="center">
         \(\displaystyle \langle (\phi, g)^2 \rangle_A \leqslant (g, (-
         \Delta)^{- 1} g) .\)
-      </center>
+      </div>
       <span style="margin-left: 1em"></span>
       \(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3</class>. </strong><i><a id="thm:LRO"></a>Let \(d
+      <strong>Theorem <span style="font-style: normal">3</span>. </strong><i><a id="thm:LRO"></a>Let \(d
       > 2\). The \(\infty\) volume limit of the \(O (n)\) sigma model has long
       range order (LRO) in the sense that for \(R \gg 1\) (radius) we have</i>
     </p>
     <p style="margin-bottom: 1em">
-      <i><center>
+      <div class="block-italic"><div class="center">
         \(\displaystyle \liminf_{| \Lambda | \rightarrow \infty} \left\langle
         \left| \frac{1}{|
 \Lambda |}  \sum_{x \in \Lambda} \phi_x \right|^2
         \right\rangle_{\Lambda} > 0.\)
-      </center></i>
+      </div></div>
     </p>
     <p>
       This bound implies that for \(R\) large no infinite volume limit measure
@@ -400,30 +404,30 @@ e^{\frac{1}{2}
       <strong>Proof. </strong>The infinite volume limit through torii of size
       \(N\) with \(N \rightarrow \infty\). Consider
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle e_k (x) := \frac{1}{\sqrt{| \Lambda |}} e^{ik \cdot x},
       \qquad k \in
 \Lambda^{\ast} = \{ k : e^{ik \cdot x}  \text{ is periodic
       of period } N \}\)
-    </center>
+    </div>
     <p>
       which is an orthonormal basis of \(\ell^2 (\Lambda)\). Write
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle R^2 = \frac{1}{| \Lambda |}  \sum_{x, y \in \Lambda}
       \langle \phi_x \cdot
 \phi_y \rangle_{\Lambda} \delta_{x, y} = \frac{1}{|
       \Lambda |}  \sum_{k \in
 \Lambda^{\ast}} \langle \phi (e_{- k}) \cdot
       \phi (e_k) \rangle_{\Lambda}\)
-    </center>
+    </div>
     <p>
-      where \(\phi (e_k) = \sum_x \phi_x e_k (x) = | \Lambda |^{- 1 / 2} 
+      where \(\phi (e_k) = \sum_x \phi_x e_k (x) = | \Lambda |^{- 1 / 2}
       \sum_x \phi_x \cos
 (k \cdot x) + i | \Lambda |^{- 1 / 2}  \sum_x \phi_x
       \sin (k \cdot x)\) so
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle R^2 = \frac{1}{| \Lambda |}  \sum_{k \in \Lambda^{\ast}}
       (\langle \phi
 (\operatorname{Re}(e_k)) \cdot \phi
@@ -432,8 +436,8 @@ e^{\frac{1}{2}
       (\operatorname{Im}(e_k)) \cdot \phi
       (\operatorname{Im}(e_k))
 \rangle_{\Lambda})\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \leqslant \underbrace{\frac{1}{| \Lambda |}  \sum_{k \in
       \Lambda^{\ast}, k
 \neq 0} (e_k, (- \Delta)^{- 1} e_k)}_{\simeq (2
@@ -443,18 +447,18 @@ e^{\frac{1}{2}
 2} \infty .} +
       \underbrace{\frac{1}{| \Lambda |} \langle | \phi (e_0)
       |^2
-\rangle_{\Lambda}}_{= \left\langle \left| \frac{1}{| \Lambda |} 
+\rangle_{\Lambda}}_{= \left\langle \left| \frac{1}{| \Lambda |}
       \sum_{x \in
 \Lambda} \phi_x \right|^2 \right\rangle_{\Lambda}}\)
-    </center>
+    </div>
     <p>
       Therefore for all \(C > 0\) there exists \(R\) such that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left\langle \left| \frac{1}{| \Lambda |}  \sum_{x \in
       \Lambda} \phi_x
 \right|^2 \right\rangle_{\Lambda} \geqslant C\)
-    </center>
+    </div>
     <p style="margin-bottom: 1em">
       uniformly in \(\Lambda\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -463,12 +467,12 @@ e^{\frac{1}{2}
       decompose into ergodic components parametrized by the overall direction
       of the spin field).
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \)
-    </center>
+    </div>
     <h2 id="auto-5">Bibliography<span style="margin-left: 1em"></span></h2>
     <div class="compact-block" style="text-indent: 0em">
-      <font style="font-size: 84.0%"><dl>
+      <div style="font-size: 84.0%"><dl>
         <p>
           <dt>
             <strong>[KK86]  </strong>
@@ -519,7 +523,7 @@ e^{\frac{1}{2}
             </p>
           </dd>
         </p>
-      </dl></font>
+      </dl></div>
     </div>
   </body>
 </html>

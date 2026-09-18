@@ -13,39 +13,77 @@
 
   <notes-abstract|I travel around to meet other mathematicians.>
 
-  Last updated in March 2025
+  Last updated in September 2026
 
-  <subsection*|Forthcoming events><itemize|>
+  <subsection*|Forthcoming events>
 
   <\itemize>
-    <item>CDT Random systems' Spring School 2025 at the SNS Pisa
-    (<hlink|url|https://www.randomsystems-cdt.ac.uk/event/spring-school-2025>)
-    [organization]
+    <item>Conference \PNonlinear systems with noise\Q, Münster,
+    September 21\U25, 2026
+    (<hlink|url|https://www.uni-muenster.de/MathematicsMuenster/events/2026/nonlinear-systems.shtml>)
+    [talk]
 
-    <item>Minicourse at GSSI Intensive Trimester on Particles, Fluids and
-    Patterns, L'Aquila, May 2025 (<hlink|url|https://trimester2025.math.gssi.it>)
+    <item>Probability and Stochastic Analysis Trimester Programme, Workshop
+    1, SISSA, Trieste, September 28\UOctober 2, 2026
+    (<hlink|url|https://sites.google.com/view/probsissa/workshop-1>) [talk]
 
-    <item>RIMS Kyoto, June 2025
+    <item>PhD course \PA constructive introduction to quantum field
+    theory\Q, SISSA, Trieste, October 26\UNovember 6, 2026
+    (<hlink|url|https://www.math.sissa.it/course/phd-course/constructive-introduction-quantum-field-theory/index.html>)
+    [course]
 
-    <item>Minicourse in Pavia, June 2025
-
-    <item>Developments in the Mathematical Sciences - DIMS 2025 Leipzig, June
-    2025 (<hlink|url|https://www.mis.mpg.de/events/series/developments-in-the-mathematical-sciences-dims-2025>)
-
-    <item>St. Flour Summer School, July 2025
-    (<hlink|url|https://lmbp.uca.fr/stflour/>)
-
-    <item>SLMath Program \PRecent Trends in Stochastic Partial Differential
-    Equations\Q, Berkeley, August 18th, 2025<nbsp>-<nbsp>December 19th, 2025
-    (<hlink|url|https://www.slmath.org/programs/380>) [organization]
-
-    <item>RIMS research project ``The mathematical roads to QFT'', Kyoto,
-    April 2026
+    <item>Workshop \PStochastic Analysis at Les Diablerets\Q, Les
+    Diablerets, Switzerland, January 24\U29, 2027
+    (<hlink|url|https://swissmaprs.ch/events/stochastic-analysis-at-les-diablerets/>)
+    [organization with Xue-Mei Li]
   </itemize>
 
   <subsection*|Past events>
 
   <\itemize>
+    <item>Workshop on Formal Verification for Stochastic Analysis and
+    Quantitative Finance, London, September 11, 2026
+    (<hlink|url|https://www.logosresearch.ai/workshop/>) [talk]
+
+    <item>13th International Conference on the Exact Renormalization Group,
+    Brighton, September 1\U5, 2026
+    (<hlink|url|https://indico.global/event/16125/>) [talk]
+
+    <item>RIMS Spring Workshop \PThe Mathematical Roads to Quantum Field
+    Theory\Q, Kyoto, April 13\U17, 2026
+    (<hlink|url|https://sites.google.com/view/rims-2026-mrqft/events>)
+    [course]
+
+    <item>SLMath program \PRecent Trends in Stochastic Partial Differential
+    Equations\Q, Berkeley, August 18\UDecember 19, 2025
+    (<hlink|url|https://www.slmath.org/programs/380>) [organization]
+
+    <item>Workshop \PMechanization and Mathematical Research\Q, Lorentz
+    Center, Leiden, September 15\U19, 2025
+    (<hlink|url|https://www.lorentzcenter.nl/mechanization-and-mathematical-research.html>)
+    [talk]
+
+    <item>53rd Probability Summer School, Saint-Flour, July 2025
+    (<hlink|url|https://lmbp.uca.fr/stflour/stflour2025.pdf>) [lectures]
+
+    <item>Developments in the Mathematical Sciences \U DIMS 2025, Leipzig,
+    June 16\U18, 2025
+    (<hlink|url|https://www.mis.mpg.de/events/series/developments-in-the-mathematical-sciences-dims-2025>)
+    [talk]
+
+    <item>Minicourse in Pavia, June 2025
+
+    <item>RIMS Kyoto, June 2025
+
+    <item>Minicourse at the GSSI Intensive Trimester \PParticles, Fluids and
+    Patterns: Analytical and Computational Challenges\Q, L'Aquila, May 2025
+    (<hlink|url|https://trimester2025.math.gssi.it>)
+
+    <item>Mathematics of Random Systems CDT Spring School, Scuola Normale
+    Superiore, Pisa, March 31\UApril 2, 2025
+    (<hlink|url|https://www.randomsystems-cdt.ac.uk/event/spring-school-2025>)
+    [organization]
+
     <item>Simons Center for Geometry and Physics \U Research program \PRandom
     paths to QFT: New probabilistic approaches to field theory\Q,
     Stony-Brook, October 14 \UNovember 22, 2024
@@ -56,7 +94,7 @@
     (<hlink|url|https://sites.google.com/view/spde-bernoulli>) [organization]
 
     <item>SLMath Summer Graduate School \PStochastic quantisation\Q,
-    Berkeley, July 2024 (<hlink|url|https://www.msri.org/summer_schools/1038>)
+    Berkeley, July 2024 (<hlink|url|https://www.slmath.org/summer-schools/1038>)
     [organization/lectures]
 
     <item>4th Italian Meeting on Probability and Mathematical Statistics,
@@ -66,14 +104,14 @@
     Lisbon, July 2023 (<notes-store|slides|talk-lisbon-spa-2023.pdf>)
 
     <item>CIME summer school \PStatistical Mechanics and Stochastic PDEs\Q,
-    Cetraro, September 2023 (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde?authuser=0>)
+    Cetraro, September 2023 (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde>)
     \ (<notes-store|slides|talk-cetraro-2023.pdf>)
 
     <item>Arbeitsgemeinschaft: QFT and Stochastic PDEs, Oberwolfach, December
-    2023 (<hlink|url|https://www.mfo.de/occasion/2351/www_view>)
+    2023 (<hlink|url|https://publications.mfo.de/handle/mfo/4106>)
     [organization]
 
-    <item>NEMSA worksop, Oxford, September 2023
+    <item>NEMSA workshop, Oxford, September 2023
     (<notes-store|program|nemsa-workshop-oxford-september-2023-public.pdf>)
     [organization]
 
@@ -82,48 +120,48 @@
     (<notes-store|slides|talk-warwick-flow-2023.pdf>)
 
     <item>Center for Mathematical Physics Colloquium, May 19th 2023, Leipzig
-    (<hlink|url|https://cmp-leipzig.de>) (<notes-store|slides|talk-leipzig-openprobs-2023.pdf>)
+    (<hlink|url|https://cmp-leipzig.de/pict/cmp-leipzig_poster_gubinelli.pdf>) (<notes-store|slides|talk-leipzig-openprobs-2023.pdf>)
 
     <item>Workshop \PNew Directions in Rough Path Theory\Q, Oberwolfach
     (<hlink|url|https://publications.mfo.de/handle/mfo/3855>)
 
     <item>Paths between Probability, PDEs, and Physics: Conference 2019, 1-5
     July 2019, Imperial College<nbsp>London
-    (<hlink|url|https://www.imperial.ac.uk/probability-pdes-physics-conference-2019/>)
+    (<hlink|url|https://www.imperial.ac.uk/events/97140/paths-between-probability-pdes-and-physics-conference-2019/>)
 
-    <item>Stochastic Processes and Application, Northwestern University, July
-    2019 (<hlink|url|https://sites.math.northwestern.edu/SPA2019/SPA2019.html>)
+    <item>Stochastic Processes and Applications, Northwestern University, July
+    2019 (<hlink|url|https://imstat.org/meetings-calendar/2019-stochastic-processes-and-their-applications/>)
 
     <item>Recent Trends in Stochastic Analysis and SPDEs,<nbsp>18-20 July
     2019, Università di Pisa (<hlink|url|https://sites.google.com/view/spdespisa/>)
 
     <item>HIM<nbsp>Junior Trimester Program \PRandomness PDEs and Nonlinear
     fluctuations\Q, September-December 2019,
-    Bonn.<nbsp>(<hlink|url|https://www.him.uni-bonn.de/programs/future-programs/future-junior-trimester-programs/randomness-pdes-fluctuations-2019/description/>)
+    Bonn.<nbsp>(<hlink|url|https://www.mathematics.uni-bonn.de/him/programs/past/tp_2019_09>)
 
     <item>CIRM Conference \PRandom Partial Differential Equations\Q, April
-    23-27, 2019, Marseille. (<hlink|url|https://conferences.cirm-math.fr/1955.html>)
+    23-26, 2019, Marseille. (<hlink|url|https://conferences.cirm-math.fr/1955.html>)
 
-    <item>IRS 2019, January 2019, Paris. (<hlink|url|http://irs.math.cnrs.fr/2019/>)
+    <item>IRS 2019, January 2019, Paris. (<hlink|url|https://irs.math.cnrs.fr/2019/>)
 
     <item>INI program \PSRQ:<nbsp>Scaling limits, rough paths, quantum field
     theory\Q, September-December 2018, Cambridge.
-    (<hlink|url|https://www.newton.ac.uk/event/srq>)
+    (<hlink|url|https://www.newton.ac.uk/event/srq/>)
 
     <item>ICM, July 2018. Rio de Janeiro, Brasil.
 
     <item>Kac seminar, February 3, 2017. Utrecht, Netherlands.
-    (<hlink|url|http://www.win.tue.nl/markkac/current/february.htm>)
+    (<hlink|url|https://www.mark-kac-seminar.nl/2016-2017/february.htm>)
 
     <item>Hausdorff school \PRecent Development in Singular Stochastic
     PDEs\Q.<nbsp>February 20 - 24 2017. Bonn, Germany.
-    (<hlink|url|http://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/wwwhcmuni-bonndehsfasim0/stochastic-pde-2017/>)
+    (<hlink|url|https://www.mathematics.uni-bonn.de/hsm-school/programs/schools/hsm-special-topic-schools/hs_2017_02_20>)
 
     <item>IAM summer school \PParaproducts and Analysis of Rough Paths\Q
-    September 11 - 16, 2016, Kopp, Germany.<nbsp>(<hlink|url|http://www.math.uni-bonn.de/people/thiele/workshop18/>)
+    September 11 - 16, 2016, Kopp, Germany.<nbsp>(<hlink|url|https://www.math.uni-bonn.de/people/thiele/workshop18/>)
 
     <item>CIME summer school <nbsp>\PSingular Random Dynamics\Q.<nbsp>August
-    22 - 26, 2016. Cetraro, Italy. (<hlink|url|http://php.math.unifi.it/users/cime/Courses/2016/course.php?codice=20162>)
+    22 - 26, 2016. Cetraro, Italy. (<hlink|url|https://link.springer.com/book/10.1007/978-3-030-29545-5>)
   </itemize>
 </body>
 

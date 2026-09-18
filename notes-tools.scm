@@ -18,7 +18,7 @@
 ;; TODO:
 ;; * improve conversion of strings (spurious <concat> elements in atom output)
 
-(define notes-url "http://mgubi.github.io/")
+(define notes-url "https://mgubi.github.io/")
 
 (if (not (getenv "NOTES")) 
   (setenv "NOTES" (getenv "PWD")))
@@ -81,7 +81,7 @@
                (repo-file (string-append "src/" file))
                (dates (article-dates fname repo-file))
                (doc (tmfile-extract (tree-import fname "texmacs") 'body))
-               (title (select doc '(:* chapter* :%1)))
+               (title (nonempty-selection (select doc '(:* chapter* :%1))))
                (abs (select doc '(:* notes-abstract :%1))))
           `(,(car dates) ,(second dates) ,file ,title ,abs)))
   (filter 
@@ -89,8 +89,9 @@
         (let ((fname (url->string (url-delta (url-append dir "./") furl)))) 
           (not (or (equal? fname "main.tm") 
                    (equal? fname "list-articles.tm")))))
-    (url->list (url-expand 
-            (url-complete (url-append dir (url-wildcard "*.tm")) "fr"))))))
+    (map system->url
+         (command-lines "find" (url->system dir) "-type" "f"
+                        "-name" "*.tm" "-print")))))
 
 (define (make-article-list-entry mdate cdate file title abs)
     `(notes-entry ,file 
@@ -104,15 +105,35 @@
   (sort (collect-articles dir)
         (lambda (x y) (>= (car x) (car y)))))
 
+(define (article-language file)
+  (cond ((equal? file "marella.tm") "it")
+        ((string-starts? file "teaching/teaching-dauphine-") "fr")
+        ((equal? file "teaching/lectures-intro-probability-ws20-21.tm") "de")
+        (else "en")))
+
 (define (feed-text selection fallback)
   (if (null? selection)
       fallback
       (let ((content (car selection)))
-        (cork->utf8
-          (if (string? content)
-              content
-              (convert (stree->tree content) "texmacs-tree" "verbatim-snippet"
-                       (cons "texmacs->verbatim:encoding" "cork")))))))
+        (xml-escape
+          (cork->utf8
+            (if (string? content)
+                content
+                (convert (stree->tree content) "texmacs-tree" "verbatim-snippet"
+                         (cons "texmacs->verbatim:encoding" "cork"))))))))
+
+(define (xml-escape text)
+  (string-replace
+    (string-replace
+      (string-replace text "&" "&amp;")
+      "<" "&lt;")
+    ">" "&gt;"))
+
+(define (nonempty-selection selection)
+  (filter (lambda (content)
+            (not (equal? "" (string-trim-both
+                               (feed-text (list content) "")))))
+          selection))
 
 (define (output-article-list-doc articles)
     (tree-export (tm->tree 
@@ -133,7 +154,7 @@
     `(entry 
         (!document 
             (title ,(feed-text title "(no title)"))
-            (link (@ (rel "alternate") (type "text/html") (hreflang "en") (href 
+            (link (@ (rel "alternate") (type "text/html") (hreflang ,(article-language file)) (href
                 ,(string-append notes-url "docs/" 
                                 (string-drop-right file 3) ".html" ))))
             (id ,(string-append "tag:mgubi.github.io,2023:" file))
@@ -150,18 +171,17 @@
         `(*TOP* (!document 
             (*PI* xml "version=\"1.0\" encoding=\"utf-8\"") 
             (feed (@ (xmlns "http://www.w3.org/2005/Atom") (xml:lang "en")) (!document
-                (title "Notes on TeXmacs")
+                (title "Massimiliano Gubinelli - updates")
                 (link (@ (rel "alternate") (type "text/html") 
                          (href ,notes-url)))
                 (link (@ (rel "self") (type "application/atom+xml") 
                          (href ,(string-append notes-url "docs/notes.atom"))))
                 (updated ,(strftime "%Y-%m-%dT%H:%M:%SZ" (gmtime feed-date)))
                 (author (!document
-                    (name "The TeXmacs organisation")
-                    (uri "http://www.texmacs.org")))
-                (id "mgubi.github.io/notes,2023,1")
-                (icon ,(string-append notes-url "misc/blog-icon.ico"))
-                (logo ,(string-append notes-url "misc/texmacs-blog-transparent.png"))
+                    (name "Massimiliano Gubinelli")
+                    (uri ,notes-url)))
+                (id ,(string-append notes-url "docs/notes.atom"))
+                (icon ,(string-append notes-url "resources/favicon-32x32.png"))
                 ,@(map (lambda (entry) (apply make-atom-entry entry)) articles))))))
         (string-append dest-dir "/notes.atom"))))
 

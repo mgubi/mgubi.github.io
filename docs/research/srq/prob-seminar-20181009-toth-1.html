@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Massimiliano Gubinelli</title>
-    <meta charset="utf-8" content="TeXmacs 2.1.4" name="generator"></meta>
-    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet"></link>
-    <link href="/resources/favicon-32x32.png" rel="icon"></link>
-    <script src="/resources/highlight.pack.js" language="javascript" defer></script>
-    <script src="/resources/notes-base.js" language="javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" language="javascript"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>SRQ seminar – October 3rd, 2018 — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes from a talk in the SRQ series.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/research/srq/prob-seminar-20181009-toth-1.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
   <body>
     <div class="notes-header">
@@ -20,7 +24,7 @@
     <p>
       <a id="auto-1"></a>
     </p>
-    <h1><span style="margin-left: 1em"></span></h1>
+
     <h1 id="auto-2">SRQ seminar &ndash; October 3rd, 2018<span style="margin-left: 1em"></span></h1>
     <div class="notes-abstract">
       Notes from a talk in the SRQ series.
@@ -33,53 +37,53 @@
     </p>
     <p>
       \(\Sigma\) a compact surface or \(\mathbb{R}^2\). We need areas, so we
-      consider a volume form on \(\Sigma\). <img src="prob-seminar-20181009-toth-1-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em"></img>
+      consider a volume form on \(\Sigma\). <img src="prob-seminar-20181009-toth-1-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </p>
     <p>
       \(G\) a compact Lie group, connected. \(\mathfrak{g}\) a Lie algebra
       with scalar product \(\langle \cdot, \cdot \rangle\). Example \(G = U
       (N), \mathfrak{g}=\mathfrak{u} (N)\) and \(\langle X, Y \rangle =
       N\operatorname{Tr} (X^{\ast} Y)\). \(\mathcal{A}\) connections on the
-      principal bundle \(P \approx \Omega \times G\). 
+      principal bundle \(P \approx \Omega \times G\).
     </p>
     <p>
       \(L (\Sigma)\): continuous loops on \(\Sigma\) with finite length, up to
-      re-param. (finite lenght is a diffeo invariant notion). 
+      re-param. (finite lenght is a diffeo invariant notion).
     </p>
     <p>
       We want to describe a collection of \(G\)&ndash;valued random variables
       \((H_{\ell})_{\ell \in L (\Sigma)}\) such that their distribution is
       heuristically given by
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathcal{A} \longrightarrow \text{Fun} (L (\Sigma), G)\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \omega \longmapsto (\ell \mapsto H_{\ell} (\omega))\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle d \mu (\omega) = \frac{1}{Z} e^{- S (\omega)}
       \mathcal{D} \omega, \qquad S
 (\omega) := \frac{1}{2} \| \Omega
       \|_{L^2}^2 .\)
-    </center>
+    </div>
     <p>
       This is a probability measure on (\(\mathfrak{g}\)&ndash;valued)
       \(1\)-forms on the manifold \(\Sigma\) which is invariant under certain
-      transformations. 
+      transformations.
     </p>
     <p>
-      <b>Multiplicativity</b> 
+      <b>Multiplicativity</b>
     </p>
     <p>
       If \(\ell_1, \ell_2\) are two loops based on the same point then we must
       have
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle H_{\ell_1 \ell_2} = H_{\ell_2} H_{\ell_1}, \qquad
       H_{\ell_1^{- 1}} = H^{-
 1}_{\ell}, \qquad \text{a.s.}\)
-    </center>
+    </div>
     <p>
       where \(\ell_1 \ell_2\) is the concatenation of the two loops and
       \(\ell^{- 1}\) is the loop run in opposite sense.
@@ -87,7 +91,7 @@
     <p>
       The curvature \(\Omega\) of the random connection is distributed like
       white noise. Since curvature controls the infinitesimal holonomies we
-      should expect this to show up in \(H_{\ell}\). 
+      should expect this to show up in \(H_{\ell}\).
     </p>
     <p>
       We imagine: \((H_{\ell})_{\ell}\) is Brownian motion/bridge on \(G\)
@@ -114,59 +118,59 @@
       \cdots e_n^{\varepsilon_n}\): \(e_k \in \mathbb{E}\) and \(\varepsilon_k
       \in \{ \pm 1 \}\) an orientation. Then we consider the discrete holonomy
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle h_c : G^{\mathbb{E}} \rightarrow G, \quad g \mapsto
       g^{\varepsilon_n}_{e_n}
 \cdots g^{\varepsilon_1}_{e_1} .\)
-    </center>
+    </div>
     <p>
       This is a discrete version of a connection. There is a natural
       probability measure on  \(\mathcal{C}_{\mathbb{G}}\) by taking the
       product measure of Haar measure on \(G\). To make it more interesting we
       take the heat kernel on \(G\):
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle p : \mathbb{R}_+^{\ast} \times G \rightarrow
       \mathbb{R}_+^{\ast}\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle p : (t, x) \mapsto p_t (x)\)
-    </center>
+    </div>
     <p>
       fundamental solution of the heat equation
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left\{ \begin{array}{ll}
   \left( \partial_t -
-      \frac{1}{2} \Delta \right) p (t, x) = 0 & \\
+      \frac{1}{2} \Delta \right) p (t, x) = 0 &amp; \\
   p_t (x) \mathrm{d} x
-      \rightarrow \delta_1, & \text{as $t \downarrow 0$}
+      \rightarrow \delta_1, &amp; \text{as $t \downarrow 0$}
 \end{array} \right.\)
-    </center>
+    </div>
     <p>
       It satisfies
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle p_t (x) = p_t (yxy^{- 1}) = p_t (x^{- 1}), \qquad x, y
       \in G, t \geqslant 0.\)
-    </center>
+    </div>
     <p>
       <b>Sengupta's formula</b> (Migdal, Witten, Driver)
     </p>
     <p>
-      <img src="prob-seminar-20181009-toth-1-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em"></img>
+      <img src="prob-seminar-20181009-toth-1-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathrm{d} \mu^{\mathbb{G}} (g) = \frac{1}{Z} \left[
       \prod_{F \in \mathbb{F}}
 p_{\operatorname{area} (F)} (h_{\partial F}
       (g)) \right] [\otimes_{e \in
 \mathbb{E}} \mathrm{d} g_e]\)
-    </center>
+    </div>
     <p>
       This expression has the advantage that it gives a consistent family of
-      probability measures, namely it is <i>invariant under subdivisions</i>. 
-      
+      probability measures, namely it is <i>invariant under subdivisions</i>.
+
     </p>
     <p>
       Consider two graphs, \(\mathbb{G}_2\) finer than \(\mathbb{G}_1\). We
@@ -177,7 +181,7 @@ p_{\operatorname{area} (F)} (h_{\partial F}
       in this figure:
     </p>
     <p>
-      <img src="prob-seminar-20181009-toth-1-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em"></img>
+      <img src="prob-seminar-20181009-toth-1-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </p>
     <p>
       Here \(e \in \mathbb{E}_2 \backslash\mathbb{E}_1\). Now \(h_{\partial
@@ -186,7 +190,7 @@ p_{\operatorname{area} (F)} (h_{\partial F}
       a_2^{- 1} a_1 a_6 a_5 a_4\). The convolution of the heat&ndash;kernel
       allows for the following computation
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \int p_{\operatorname{area} (F_1)} (h_{\partial F_1}
       (g))
 p_{\operatorname{area} (F_2)} (h_{\partial F_2} (g)) \mathrm{d} e
@@ -195,13 +199,13 @@ p_{\operatorname{area} (F_1) +\operatorname{area} (F_2)} (a_3 a_2^{-
       1} a_1
 a_6 a_5 a_4) = p_{\operatorname{area} (F)} (h_{\partial F} (g))
       .\)
-    </center>
+    </div>
     <p>
       This is the reason to use the heat kernel in the definition of
       \(\mu^{\mathbb{G}}\).
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem <class style="font-style: normal">1</class>. </strong><i>There is a unique
+      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>There is a unique
       family of r.v. \((H_{\ell})_{\ell \in L (\Sigma)}\) of \(G\)-valued
       r.v.s, unique in distribution, which is consistent with the lattice
       theory and stochastically continuous.</i>
@@ -213,15 +217,15 @@ a_6 a_5 a_4) = p_{\operatorname{area} (F)} (h_{\partial F} (g))
       holonomy process.
     </p>
     <p style="margin-top: 1em">
-      <strong>Example <class style="font-style: normal">2</class>. </strong>\(\Sigma
+      <strong>Example <span style="font-style: normal">2</span>. </strong>\(\Sigma
       =\mathbb{R}^2\). Two loops \(\ell_1, \ell_2\) with disjoint areas of
       size \(t_1\) and \(t_2\), then
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [f (H_{\ell_1}, H_{\ell_2})] = \int_{G^2} f
       (g_1, g_2) p_{t_1}
 (g_1) p_{t_2} (g_2) \mathrm{d} g_1 \mathrm{d} g_2\)
-    </center>
+    </div>
     <p>
       so \(H_{\ell_1}, H_{\ell_2}\) are independent and distributed like the
       Brownian motion on \(G\) at time \(t_1\) and \(t_2\). If the two loops
@@ -230,28 +234,28 @@ a_6 a_5 a_4) = p_{\operatorname{area} (F)} (h_{\partial F} (g))
       b\), \(\ell_2 = b c\) and now
     </p>
     <p style="margin-bottom: 1em">
-      <center>
+      <div class="center">
         \(\displaystyle \mathbb{E} [f (H_{\ell_1}, H_{\ell_2})] =\mathbb{E} [f
         (H_b H_a, H_b H_c)] =
 \int_{G^3} f (g_2 g_1, g_3 g_2) p_{s_1} (g_1)
         p_{s_2} (g_2) p_{s_3} (g_3)
 \frac{\mathrm{d} g_1 \mathrm{d} g_2
         \mathrm{d} g_3}{Z} .\)
-      </center>
+      </div>
     </p>
     <p style="margin-top: 1em">
-      <strong>Example <class style="font-style: normal">3</class>. </strong>\(\Sigma = S^2\) with
+      <strong>Example <span style="font-style: normal">3</span>. </strong>\(\Sigma = S^2\) with
       area \(T\). Two loops \(\ell_1, \ell_2\) with disjoint areas of size
       \(t_1\) and \(t_2\). Then outside there is third face of area \(T - t_1
       - t_2\). In this case Sengupta's formula gives:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [f (H_{\ell_1}, H_{\ell_2})] = \int_{G^2} f
       (g_1, g_2) p_{t_1}
 (g_1) p_{t_2} (g_2) p_{T - t_1 - t_2} (g_2^{- 1}
       g_1^{- 1}) \frac{\mathrm{d}
 g_1 \mathrm{d} g_2}{Z_T},\)
-    </center>
+    </div>
     <p style="margin-bottom: 1em">
       with \(Z_T = p_T (1)\). So now \((H_{\ell_1}, H_{\ell_2}) \xequal{d}
       (X_{t_1}, X_{t_1}^{- 1} X_{t_2})\) where \((X_t)_{t \in [0, T]}\) is a
@@ -263,25 +267,25 @@ g_1 \mathrm{d} g_2}{Z_T},\)
     <p>
       We consider expectations of Wilson's loops:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [\operatorname{Tr} (H_{\ell_1}) \cdots
       \operatorname{Tr}
 (H_{\ell_n})]\)
-    </center>
+    </div>
     <p>
       We are going to do some simple computations of numbers of this kind
       which reveal some combinatorical phenomena which will
-      &ldquo;resurface&rdquo; also in MM equations. 
+      &ldquo;resurface&rdquo; also in MM equations.
     </p>
     <p>
       Take \(G = U (N)\). \(\langle X, Y \rangle = N\operatorname{Tr}
       (X^{\ast} Y)\). \(\ell\) a loop of area \(t\) on \(\mathbb{R}^2\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [\operatorname{tr} (H_{\ell}^n)] =\mathbb{E}
       [\operatorname{tr}
 (U_t^n)]\)
-    </center>
+    </div>
     <p>
       where \((U_t)_t\) is the Brownian motion on \(U (N)\). We use the
       notation \(\operatorname{tr} (M) =\operatorname{Tr} (M) / N\)
@@ -291,72 +295,72 @@ g_1 \mathrm{d} g_2}{Z_T},\)
       The BM on \(U (N)\) is given by an SDE. Take a linear Brownian motion
       \((K_t)_t\) on \(\mathfrak{u} (N)\) such that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [\langle X, K_t \rangle \langle Y, K_s
       \rangle] = (s \wedge t)
 \langle X, Y \rangle .\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \left\{ \begin{array}{lll}
-  \mathrm{d} U_t & = & U_t
+  \mathrm{d} U_t &amp; = &amp; U_t
       \mathrm{d} K_t - \frac{1}{2} U_t \mathrm{d} t\\
-  U_0 & = &
+  U_0 &amp; = &amp;
       \mathbb{I}
 \end{array} \right.\)
-    </center>
+    </div>
     <p>
       Given this we can compute
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathrm{d}_t \mathbb{E} [\operatorname{tr} (U_t)] = -
       \frac{1}{2} \mathbb{E}
 [\operatorname{tr} (U_t)] \mathrm{d} t, \qquad
       \mathbb{E} [\operatorname{tr}
 (U_0)] = 1\)
-    </center>
+    </div>
     <p>
       so
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathbb{E} [\operatorname{tr} (U_t)] = e^{- t / 2} .\)
-    </center>
+    </div>
     <p>
       Let us try to compute
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathrm{d}_t \mathbb{E} [\operatorname{tr} (U_t^2)] =
       -\mathbb{E}
 [\operatorname{tr} (U_t^2)] \mathrm{d} t +\mathbb{E}
       [\operatorname{tr} (U_t
 \mathrm{d} K_t U_t \mathrm{d} K_t)]\)
-    </center>
+    </div>
     <p>
       In order to compute \(\mathbb{E} [\operatorname{tr} (U_t \mathrm{d} K_t
       U_t \mathrm{d} K_t)]\) we take an ONB \((X_k)_{k = 1, \ldots, N^2}\) of
       \(\mathfrak{u} (N)\) and we say that \(\mathrm{d} K_t = \sum_{k =
       1}^{N^2} X_k \mathrm{d} B^{(k)}_t\). We therefore conclude that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \operatorname{tr} (U_t \mathrm{d} K_t U_t \mathrm{d}
       K_t) = \sum_{k = 1}^{N^2}
 \operatorname{tr} (U_t X_k U_t X_k) \mathrm{d}
       t.\)
-    </center>
-    <center>
+    </div>
+    <div class="center">
       \(\displaystyle \)
-    </center>
+    </div>
     <p>
       We use now the following identity
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{k = 1}^{N^2} \operatorname{tr}
       (\operatorname{AX}_k B X_k) =
 -\operatorname{tr} (A) \operatorname{tr}
       (B)\)
-    </center>
+    </div>
     <p>
       which is proven by proving first that it does not depend on the basis
-      and then using your preferred basis to do the computation. 
+      and then using your preferred basis to do the computation.
     </p>
     <table width="100%">
       <tr>
@@ -373,23 +377,23 @@ g_1 \mathrm{d} g_2}{Z_T},\)
       We are now going to evaluate with similar method \(\mathbb{E}
       [\operatorname{tr} (U_t)^2] .\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \mathrm{d} \mathbb{E} [\operatorname{tr} (U_t)^2] =
       -\mathbb{E}
 [\operatorname{tr} (U_t)^2] \mathrm{d} t +\mathbb{E}
       [\operatorname{tr} (U_t
 \mathrm{d} K_t) \operatorname{tr} (U_t
       \mathrm{d} K_t)]\)
-    </center>
+    </div>
     <p>
       and now use that
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \sum_{k = 1}^{N^2} \operatorname{tr}
       (\operatorname{AX}_k) \operatorname{tr}
 (B X_k) = - \frac{1}{N^2}
       \operatorname{tr} (A B)\)
-    </center>
+    </div>
     <p>
       which gives a second equation:
     </p>
@@ -405,39 +409,39 @@ g_1 \mathrm{d} g_2}{Z_T},\)
       </tr>
     </table>
     <p>
-      and (<a href="#eq:s1">1</a>)&nbsp;(<a href="#eq:s2">2</a>) form a system of ODEs which
+      and (<span class="unavailable-link" title="Referenced material is not currently available">1</span>)&nbsp;(<span class="unavailable-link" title="Referenced material is not currently available">2</span>) form a system of ODEs which
       can be solved to give:
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left\{ \begin{array}{lll}
   \mathbb{E}
-      [\operatorname{tr} (U_t^2)] & = & e^{- t} \left( \cosh
+      [\operatorname{tr} (U_t^2)] &amp; = &amp; e^{- t} \left( \cosh
   \frac{t}{N} - N
       \sinh \frac{t}{N} \right) \longrightarrow e^{- t} (1 - t)\\
   \mathbb{E}
-      [\operatorname{tr} (U_t)^2] & = & e^{- t} \left( \cosh
+      [\operatorname{tr} (U_t)^2] &amp; = &amp; e^{- t} \left( \cosh
   \frac{t}{N} -
       \frac{1}{N} \sinh \frac{t}{N} \right) \longrightarrow e^{-
       t}
 \end{array} \right. \text{when $t \rightarrow \infty$} .\)
-    </center>
+    </div>
     <p>
       These relations express connections between unitary Brownian motions and
       the combinatorics of permutations and random walks in the symmetric
-      group. 
+      group.
     </p>
     <p>
       Take \(n \geqslant 1\) and a permutation \(\sigma \in S_n\) cycle
       lenghts \(n_1, \ldots, n_r\)
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle m_{\sigma} (U) =\operatorname{tr} (U^{n_1}) \cdots
       \operatorname{tr} (U^{n_r})\)
-    </center>
+    </div>
     <p>
       Then I claim that we have
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [m_{\sigma}
       (U_t)] = - \frac{n}{2}
 \mathbb{E} [m_{\sigma} (U_t)] -
@@ -453,7 +457,7 @@ g_1 \mathrm{d} g_2}{Z_T},\)
   i \not{\sim}_{\sigma} j
 \end{array}$}}}
       \mathbb{E} [m_{(i j) \sigma} (U_t)]\)
-    </center>
+    </div>
     <p>
       where \(i \sim_{\sigma} j\) indicate when \(i, j\) are in the same cycle
       of \(\sigma\). Therefore, in principle, one can solve this huge family
@@ -461,38 +465,38 @@ g_1 \mathrm{d} g_2}{Z_T},\)
       the following theorem:
     </p>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">4</class>. </strong><i>(Biane 1995)</i>
+      <strong>Theorem <span style="font-style: normal">4</span>. </strong><i>(Biane 1995)</i>
     </p>
     <p style="margin-bottom: 1em">
-      <i><center>
+      <div class="block-italic"><div class="center">
         \(\displaystyle \mathbb{E} [\operatorname{tr} (U^n_t)] \xrightarrow[N
         \rightarrow \infty]{}
 e^{- n t / 2} \sum_{k = 0}^{n - 1} \frac{(-
         t)^k}{k!} n^{k - 1} \binom{n}{k +
 1} .\)
-      </center></i>
+      </div></div>
     </p>
     <p>
       Another theorem says:
     </p>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">5</class>. </strong><i>(Levy) YM holonomy
+      <strong>Theorem <span style="font-style: normal">5</span>. </strong><i>(Levy) YM holonomy
       process on \(\mathbb{R}^2\) with group \(U (N)\). For any loop \(\ell
       \in L (\Sigma)\)</i>
     </p>
     <p>
-      <i><center>
+      <div class="block-italic"><div class="center">
         \(\displaystyle \mathbb{E} [\operatorname{tr} (H_{\ell})]
         \xrightarrow[N \rightarrow \infty]{}
 \phi  (\ell) \in [- 1, 1],\)
-      </center></i>
+      </div></div>
     </p>
     <p style="margin-bottom: 1em">
-      <i><center>
+      <div class="block-italic"><div class="center">
         \(\displaystyle \operatorname{Var} (\operatorname{tr} (H_{\ell})) = O
         \left( \frac{1}{N^2}
 \right) .\)
-      </center></i>
+      </div></div>
     </p>
     <p>
       <b>Makeenko&ndash;Migdal equation</b>
@@ -501,9 +505,9 @@ e^{- n t / 2} \sum_{k = 0}^{n - 1} \frac{(-
       This last theorem gives a sort of law of large numbers in which it plays
       a role the function
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \phi : L (\Sigma) \rightarrow [- 1, 1] .\)
-    </center>
+    </div>
     <p>
       The MM equations give informations about \(\phi\). Take a loop \(\ell\),
       we want to compute \(\phi (\ell) .\) It depends on the combinatorial
@@ -514,97 +518,97 @@ e^{- n t / 2} \sum_{k = 0}^{n - 1} \frac{(-
       loop. Look at an intersection
     </p>
     <p>
-      <img src="prob-seminar-20181009-toth-1-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em"></img>
+      <img src="prob-seminar-20181009-toth-1-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.33090909090909em; height: 10.6618181818182em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \left( \frac{\mathrm{d}}{\mathrm{d} t_1} -
       \frac{\mathrm{d}}{\mathrm{d} t_2} +
 \frac{\mathrm{d}}{\mathrm{d} t_3} -
       \frac{\mathrm{d}}{\mathrm{d} t_4} \right)
 \phi (\ell) = \phi (\ell')
       \phi (\ell'')\)
-    </center>
+    </div>
     <p>
       Where \(\ell', \ell''\) are the loops obtained by removing the
       intersection as shown in the picture. The MM equations are known to be
       true on the plane and on the sphere and the finite \(N\) version are
-      also known on certain surfaces (which?). 
+      also known on certain surfaces (which?).
     </p>
     <p>
       The value of \(\phi\) on a simple loop is \(\phi (\ell) = e^{- t / 2}\).
       Loops with one intersection point and disjoint areas give
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \phi
       \left(
 \raisebox{-0.5\height}{\includegraphics[width=3.9748458612095cm,height=3.96645021645022cm]{image-1.pdf}}
 \right)
       = e^{- t_1 / 2} e^{- t_2 / 2}\)
-    </center>
+    </div>
     <p>
       A loop with on intersection point and one area inside the other (large
       area \(s\) and small area \(t\)). Call the value of
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \phi
       \left(
 \raisebox{-0.5\height}{\includegraphics[width=3.9748458612095cm,height=3.96645021645022cm]{image-1.pdf}}
 \right)
       = f (s, t) .\)
-    </center>
+    </div>
     <p>
       Then
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle 2 \frac{\mathrm{d}}{\mathrm{d} s} -
       \frac{\mathrm{d}}{\mathrm{d} t} f (s, t) =
 \phi (\ell') \phi (\ell'') =
       e^{- (s + t) / 2} e^{- t / 2}\)
-    </center>
+    </div>
     <p>
       When we change the area of the unbounded face we get
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} s} f = - \frac{1}{2} f\)
-    </center>
+    </div>
     <p>
       so we can solve and obtain
     </p>
-    <center>
+    <div class="center">
       \(\displaystyle f (s, t) = e^{- s / 2 - t} (1 - t)\)
-    </center>
+    </div>
     <p>
-      which give the limiting value we found before. 
+      which give the limiting value we found before.
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
     <p>
-      
+
     </p>
   </body>
 </html>

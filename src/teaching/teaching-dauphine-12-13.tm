@@ -235,7 +235,7 @@
     (<notes-store|PDF|e1213/ccm1.pdf>) []
 
     <item>Poly 3. Arrêt optimal en horizon fini.
-    (<notes-store|PDF|e1213/ccm3.pdf>) []
+    (PDF unavailable)
 
     <item>Poly 4. Chaînes de Markov controlées.
     (<notes-store|PDF|e1213/ccm4.pdf>) []

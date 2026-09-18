@@ -162,6 +162,7 @@ def patch_file(
     *,
     dry_run: bool = False,
     backup_suffix: str | None = None,
+    require_texmacs_header: bool = True,
 ) -> tuple[Path, int, int, int]:
     try:
         target = path.resolve(strict=True)
@@ -174,7 +175,7 @@ def patch_file(
         original = target.read_bytes()
     except OSError as error:
         raise PatchError(f"could not read {path}: {error}") from error
-    if not original.startswith(b"<TeXmacs|"):
+    if require_texmacs_header and not original.startswith(b"<TeXmacs|"):
         raise PatchError(f"file does not have a native TeXmacs header: {path}")
 
     changed, replacements = apply_operations(original, operations)
@@ -252,6 +253,11 @@ def make_parser() -> argparse.ArgumentParser:
         "--dry-run", action="store_true", help="validate without writing"
     )
     parser.add_argument(
+        "--raw",
+        action="store_true",
+        help="allow another legacy 8-bit text file without a TeXmacs header",
+    )
+    parser.add_argument(
         "--backup",
         nargs="?",
         const=".bak",
@@ -284,6 +290,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             operations,
             dry_run=arguments.dry_run,
             backup_suffix=arguments.backup,
+            require_texmacs_header=not arguments.raw,
         )
     except PatchError as error:
         parser.exit(2, f"error: {error}\n")

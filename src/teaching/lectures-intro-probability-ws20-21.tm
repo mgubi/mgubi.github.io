@@ -21,9 +21,9 @@
   und Ort>>|<cell|Dienstags, 14-16, Freitags,
   10-12<nbsp>>>|<row|<cell|<nbsp>>|<cell|Die Vorlesung via Zoom
   stattfinden>>|<row|<cell|<strong|Beginn>>|<cell|30. Oktober
-  2020>>|<row|<cell|<strong|Vorlesung>>|<cell|<notes-link|Massimiliano
-  Gubinelli|/stochastic-pde/home>>>|<row|<cell|<strong|Übungen>>|<cell|<notes-link|Luis
-  Aniello la Rocca|#>>>|<row|<cell|<strong|Prüfung>>|<cell|9/2, 13/3>>>>>
+  2020>>|<row|<cell|<strong|Vorlesung>>|<cell|Massimiliano
+  Gubinelli>>|<row|<cell|<strong|Übungen>>|<cell|Luis
+  Aniello la Rocca>>|<row|<cell|<strong|Prüfung>>|<cell|9/2, 13/3>>>>>
 
   <strong|Achtung (2.11.2020): Alle die Tutorials online
   stattfinden!><nbsp><strong|<nbsp>>
@@ -173,13 +173,13 @@
     W-keit<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-7.pdf>)
 
     <item>20.11 \| V8 \|<nbsp>Unabhängige Zufallsvariablen,
-    Produkträume<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
+    Produkträume<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-8.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-8.pdf>)
 
     <item>24.11<nbsp>\| V9<nbsp>\| Zufallsvektoren, Fubini\UTonelli,
     Fubini\ULebesgue<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-9.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-9.pdf>)
 
     <item>27.11<nbsp>\| V10<nbsp>\|<nbsp>Unendliche Produkte, Summe
-    unabhängiger Zufallsvariablen<nbsp>(<notes-store|Handzettel|iamli/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
+    unabhängiger Zufallsvariablen<nbsp>(<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-10.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-10.pdf>)
 
     <item>1.12<nbsp>\| V11<nbsp>\|<nbsp>Die Irrfahrt, das
     Arcussinusgesetz<nbsp> (<notes-store|Handzettel|iam/einf-wahr-ws2021/wt-ws2120-handzettel-11.pdf>)<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-11.pdf>)
@@ -230,7 +230,7 @@
     Verteilungen.<nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-22.pdf>)
 
     <item>29.1<nbsp>\| V23<nbsp>\|<nbsp>Anwendungen in der Statistik.
-    Schützer, Konsistenz, Erwartungstreu Sch.<nbsp><nbsp>(<notes-store|Skript|iamli/einf-wahr-ws2021/wt-ws2120-script-23.pdf>)
+    Schützer, Konsistenz, Erwartungstreu Sch.<nbsp><nbsp>(<notes-store|Skript|iam/einf-wahr-ws2021/wt-ws2120-script-23.pdf>)
 
     <item>2.2<nbsp>\| V24<nbsp>\|<nbsp>Probeklausur.
 
