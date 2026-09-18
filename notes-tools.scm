@@ -12,7 +12,7 @@
 
 ;;(texmacs-module (notes-tools))
 
-(use-modules (ice-9 popen)) ;; for open-input-pipe
+(use-modules (ice-9 popen)) ;; for open-pipe*
 (use-modules (ice-9 rdelim)) ;; for read-line
 
 ;; TODO:
@@ -26,36 +26,64 @@
 (define src-dir (url->string (url-expand "$NOTES/src")))
 (define dest-dir (url->string (url-expand "$NOTES/docs")))
 
-;; git does not preserve modification time for files so we need to retrieve it from the 
-;; commit log. Note we need the "author time", not the "commit time" (in git parlance)
-;; However there is a problem: if the file is not yet commited we get a wrong answer.
-;; To avoid this we will use the filesystem modification time if newer.
-;;
-;; If the file is not in the git log then we get the date from the filesystem.
+;; Filesystem mtimes are not historical metadata: a checkout, copy, or restore
+;; can make an unchanged page appear newer than its last content change.  Use
+;; Git's author dates for clean tracked pages.  Only consult the filesystem for
+;; a genuinely dirty or untracked page, and use the first Git author date as
+;; the publication date instead of Unix ctime (which is metadata-change time,
+;; not creation time).
 
-(define (git-date fname)
-  (let* ((port  (open-input-pipe (string-append "cd $NOTES; git log -1 --pretty=%at " fname )))
-         (str   (read-line port))
-         (fdate (stat:mtime (stat fname)))       
-         (gdate (if (and (equal? 0 (close-pipe port)) (not (eof-object? str)))
-                    (string->number str)
-                    fdate)))
-  (display* (string-append "cd $NOTES; git log -1 --pretty=%at " fname "\n"))                  
-  (if (> fdate gdate ) fdate gdate)))
+(define (read-lines port)
+  (let loop ((lines '()))
+    (let ((line (read-line port)))
+      (if (eof-object? line)
+          (reverse lines)
+          (loop (cons line lines))))))
+
+(define (command-lines program . args)
+  (let* ((port (apply open-pipe* (append (list OPEN_READ program) args)))
+         (lines (read-lines port))
+         (status (close-pipe port)))
+    (if (equal? status 0) lines '())))
+
+(define (git-lines . args)
+  (apply command-lines
+         (append (list "git" "-C" (getenv "NOTES")) args)))
+
+(define (numeric-lines lines)
+  (filter number? (map string->number lines)))
+
+(define (git-dirty? repo-file)
+  (not (null? (git-lines "status" "--porcelain=v1"
+                         "--untracked-files=normal" "--" repo-file))))
+
+(define (article-dates fname repo-file)
+  (let* ((fdate (stat:mtime (stat fname)))
+         (history (numeric-lines
+                    (git-lines "log" "--follow" "--format=%at"
+                               "--" repo-file))))
+    (if (null? history)
+        ;; Git may be unavailable, or this may be a new untracked page.
+        `(,fdate ,fdate)
+        (let* ((last-committed (car history))
+               (first-committed (apply min history))
+               (updated (if (git-dirty? repo-file)
+                            (max fdate last-committed)
+                            last-committed)))
+          `(,updated ,first-committed)))))
 
 (define (collect-articles dir)
-  (map 
-    (lambda (furl)       
+  (map
+    (lambda (furl)
         (let* ((fname (url->system furl))
-            (doc (tmfile-extract (tree-import fname "texmacs") 'body))
-            (title (select doc '(:* chapter* :%1)))  
-            (abs (select doc '(:* notes-abstract :%1)))
-            (mdate (stat:mtime (stat fname))) ;; not used
-            (gdate (git-date fname)) 
-            (cdate (stat:ctime (stat fname)))) ;; not used
-        `(,gdate ,cdate 
-            ,(url->string (url-delta (url-append dir "./") furl)) 
-            ,title ,abs)))
+               (file (url->string
+                       (url-delta (url-append dir "./") furl)))
+               (repo-file (string-append "src/" file))
+               (dates (article-dates fname repo-file))
+               (doc (tmfile-extract (tree-import fname "texmacs") 'body))
+               (title (select doc '(:* chapter* :%1)))
+               (abs (select doc '(:* notes-abstract :%1))))
+          `(,(car dates) ,(second dates) ,file ,title ,abs)))
   (filter 
     (lambda (furl)
         (let ((fname (url->string (url-delta (url-append dir "./") furl)))) 
@@ -73,13 +101,18 @@
 ;;(car (collect-articles "/Users/mgubi/t/git-notes/src"))
 
 (define (make-article-list dir)
-    (let* ((material (sort 
-             (collect-articles dir) 
-             (lambda (x y) (>= (car x) (car y)))))
-           (material2 (filter 
-             (lambda (x) (not (member (second x) '("list-articles.tm" "main.tm")))) 
-             material)))
-    material2))
+  (sort (collect-articles dir)
+        (lambda (x y) (>= (car x) (car y)))))
+
+(define (feed-text selection fallback)
+  (if (null? selection)
+      fallback
+      (let ((content (car selection)))
+        (cork->utf8
+          (if (string? content)
+              content
+              (convert (stree->tree content) "texmacs-tree" "verbatim-snippet"
+                       (cons "texmacs->verbatim:encoding" "cork")))))))
 
 (define (output-article-list-doc articles)
     (tree-export (tm->tree 
@@ -99,19 +132,21 @@
 (define (make-atom-entry mdate cdate file title abs)
     `(entry 
         (!document 
-            (title ,(if (null? title) "(no title)" (car title)))
+            (title ,(feed-text title "(no title)"))
             (link (@ (rel "alternate") (type "text/html") (hreflang "en") (href 
                 ,(string-append notes-url "docs/" 
                                 (string-drop-right file 3) ".html" ))))
-            (id ,(string-append "mgubi.github.io/" file ":" 
-                                (strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime mdate "UTC"))))
-            (updated   ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime mdate "UTC")))
-            (published ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (localtime cdate "UTC")))
-            ,@(if (null? abs) '() `((summary ,(car abs)))) 
+            (id ,(string-append "tag:mgubi.github.io,2023:" file))
+            (updated   ,(strftime "%Y-%m-%dT%H:%M:%SZ" (gmtime mdate)))
+            (published ,(strftime "%Y-%m-%dT%H:%M:%SZ" (gmtime cdate)))
+            ,@(if (null? abs) '() `((summary ,(feed-text abs ""))))
             )))
 
 (define (output-article-feed articles)
-    (string-save (serialize-tmml
+    (let ((feed-date (if (null? articles)
+                         (current-time)
+                         (apply max (map car articles)))))
+      (string-save (serialize-tmml
         `(*TOP* (!document 
             (*PI* xml "version=\"1.0\" encoding=\"utf-8\"") 
             (feed (@ (xmlns "http://www.w3.org/2005/Atom") (xml:lang "en")) (!document
@@ -120,7 +155,7 @@
                          (href ,notes-url)))
                 (link (@ (rel "self") (type "application/atom+xml") 
                          (href ,(string-append notes-url "docs/notes.atom"))))
-                (updated ,(strftime "%Y-%m-%dT%H:%M:%SZ"  (gmtime (current-time))))
+                (updated ,(strftime "%Y-%m-%dT%H:%M:%SZ" (gmtime feed-date)))
                 (author (!document
                     (name "The TeXmacs organisation")
                     (uri "http://www.texmacs.org")))
@@ -128,7 +163,7 @@
                 (icon ,(string-append notes-url "misc/blog-icon.ico"))
                 (logo ,(string-append notes-url "misc/texmacs-blog-transparent.png"))
                 ,@(map (lambda (entry) (apply make-atom-entry entry)) articles))))))
-        (string-append dest-dir "/notes.atom")))
+        (string-append dest-dir "/notes.atom"))))
 
 (define (notes-run update?)
     (display* "Source dir :" src-dir "\n")
@@ -150,4 +185,3 @@
 
 (define (notes-update) (notes-run #t))
 (define (notes-build)  (notes-run #f))
-

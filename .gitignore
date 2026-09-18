@@ -1,1 +1,8 @@
+.DS_Store
 **/.DS_Store
+__pycache__/
+/fonts/
+/system/
+/tmp/
+/users/
+*.bak

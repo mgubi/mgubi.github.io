@@ -14,7 +14,7 @@
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated May 2026
-  </notes-entry|Mon Jul \ 6 17:01:24 2026 UTC>
+  </notes-entry|Mon Jul \ 6 17:01:45 2026 UTC>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Wed May 20 15:40:20 2026 UTC>
@@ -30,7 +30,7 @@
   <notes-entry|template.tm|Template article|This file provides a template for
   typical notes/articles. You can use the tag <src-macro|notes-abstract> to
   provide a small summary of the content, as exemplified by this very
-  text.|Sat May 13 16:50:36 2023 UTC>
+  text.|Sat Apr 22 00:04:30 2023 UTC>
 
   <hrule>
 </body>
