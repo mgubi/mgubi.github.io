@@ -97,7 +97,7 @@
     `(notes-entry ,file 
         ,(if (null? title) "(no title)" (car title))
         ,(if (null? abs) "(no abstract)" (car abs))
-        ,(strftime "%c %Z"  (localtime mdate "UTC"))))
+        ,(strftime "%d %b %Y" (localtime mdate "UTC"))))
 
 ;;(car (collect-articles "/Users/mgubi/t/git-notes/src"))
 

@@ -180,6 +180,14 @@
 
   <assign|tmhtml-notes-entry-abstract|<macro|abs|<compound|html-div-class|tmweb-entry-abstract|<arg|abs>>>>
 
+  <assign|tmhtml-notes-entry|<\macro|file|title|abs|date>
+    <\html-div-class|tmweb-entry>
+      <html-div-class|tmweb-entry-heading|<html-class|tmweb-entry-title|<hlink|<arg|title>|<arg|file>>><notes-entry-date|<arg|date>>>
+
+      <notes-entry-abstract|<arg|abs>>
+    </html-div-class>
+  </macro>>
+
   <\active*>
     <\src-comment>
       Framing of code (BEGIN)
