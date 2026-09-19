@@ -3,7 +3,7 @@
   <title>Massimiliano Gubinelli - updates</title>
   <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-09-19T00:16:57Z</updated>
+  <updated>2026-09-19T17:14:18Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
     <uri>https://mgubi.github.io/</uri>
@@ -11,10 +11,18 @@
   <id>https://mgubi.github.io/docs/notes.atom</id>
   <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
   <entry>
+    <title>Presentations</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/presentations.html"/>
+    <id>tag:mgubi.github.io,2023:research/presentations.tm</id>
+    <updated>2026-09-19T17:14:18Z</updated>
+    <published>2023-04-30T16:57:37Z</published>
+    <summary>The things I have said in various places.</summary>
+  </entry>
+  <entry>
     <title>Vita</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/curriculum-vitae.html"/>
     <id>tag:mgubi.github.io,2023:curriculum-vitae.tm</id>
-    <updated>2026-09-19T00:16:57Z</updated>
+    <updated>2026-09-19T00:19:04Z</updated>
     <published>2023-04-21T15:36:12Z</published>
     <summary>Things that happened to me, professionally – last updated
     September 2026</summary>
@@ -23,7 +31,7 @@
     <title>Research</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/research.html"/>
     <id>tag:mgubi.github.io,2023:research/research.tm</id>
-    <updated>2026-09-19T00:08:37Z</updated>
+    <updated>2026-09-19T00:19:04Z</updated>
     <published>2023-05-11T21:05:30Z</published>
     <summary>Mathematics.</summary>
   </entry>
@@ -174,14 +182,6 @@
     research period at the Netwon Institute in Cambridge to bring together
     people working in stochastic PDEs and people working around questions of
     stastistical mechanics and quantum field theory.</summary>
-  </entry>
-  <entry>
-    <title>Presentations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/presentations.html"/>
-    <id>tag:mgubi.github.io,2023:research/presentations.tm</id>
-    <updated>2026-09-18T23:12:07Z</updated>
-    <published>2023-04-30T16:57:37Z</published>
-    <summary>The things I have said in various places.</summary>
   </entry>
   <entry>
     <title>Publications</title>

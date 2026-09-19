@@ -12,11 +12,14 @@
 
   <hrule>
 
+  <notes-entry|research/presentations.tm|Presentations|The things I have said
+  in various places.|Sat Sep 19 17:14:18 2026 UTC>
+
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
-  </notes-entry|Sat Sep 19 00:16:57 2026 UTC>
+  </notes-entry|Sat Sep 19 00:19:04 2026 UTC>
 
-  <notes-entry|research/research.tm|Research|Mathematics.|Sat Sep 19 00:08:37
+  <notes-entry|research/research.tm|Research|Mathematics.|Sat Sep 19 00:19:04
   2026 UTC>
 
   <notes-entry|teaching/seminar-rough-paths-ss22.tm|Seminar on rough paths|An
@@ -89,9 +92,6 @@
   Netwon Institute in Cambridge to bring together people working in
   stochastic PDEs and people working around questions of stastistical
   mechanics and quantum field theory.|Fri Sep 18 23:12:07 2026 UTC>
-
-  <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|Fri Sep 18 23:12:07 2026 UTC>
 
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated September 2026.|Fri Sep 18 23:12:07 2026 UTC>
