@@ -83,13 +83,16 @@
         I have made this letter longer than usual because I lack the time to
         make it shorter.
 
-        \V Blaise Pascal
+        <french|Je n'ai fait celle-ci plus longue que parce que je n'ai pas eu
+        le loisir de la faire plus courte.>
+
+        \V Blaise Pascal, \PProvincial Letters\Q, Letter XVI (1656)
       </quotation>
 
       <\quotation>
         <french|Le mot \Srandom\T vient d'un terme de vénerie français :
         randon désigne la course erratique du cerf qui zigzague en essayant
-        d'échapper aux chiens. Le mot a aussi donné \Srandonné\T en
+        d'échapper aux chiens. Le mot a aussi donné \Srandonnée\T en
         français.>
       </quotation>
 
@@ -99,13 +102,14 @@
         advantage of surprise. An incomparable tactical advantage in any
         insurrection.
 
-        \V J. Berger, \PFrom A. to X.\Q
+        \V John Berger, \PFrom A to X\Q
       </quotation>
 
       <\quotation>
-        the poem begins not where the knife enters but where the blade twists.
+        the poem begins not where the knife enters<next-line>but where the blade twists.
 
-        \V Hanif Abdurraqib, \PThe Prestige\Q
+        \V Hanif Abdurraqib, \PThe Prestige\Q, in \PA Fortune for Your
+        Disaster\Q
       </quotation>
     </with>
   </smaller>

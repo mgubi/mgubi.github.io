@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated September 2026.|19 Sep 2026>
+
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|19 Sep 2026>
 
@@ -90,9 +93,6 @@
   Netwon Institute in Cambridge to bring together people working in
   stochastic PDEs and people working around questions of stastistical
   mechanics and quantum field theory.|18 Sep 2026>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated September 2026.|18 Sep 2026>
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|18 Sep 2026>
