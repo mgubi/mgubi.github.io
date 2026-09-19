@@ -16,7 +16,7 @@
   </center>
 
   <\with|par-mode|right>
-    <small|(drawing by D.<nbsp>Gubinelli)>
+    <small|mathematician at work (drawing by D.<nbsp>Gubinelli)>
   </with>
 
   <html-div-class|mg-title|<huge|<with|font-series|bold|Massimiliano
@@ -91,6 +91,21 @@
         randon désigne la course erratique du cerf qui zigzague en essayant
         d'échapper aux chiens. Le mot a aussi donné \Srandonné\T en
         français.>
+      </quotation>
+
+      <\quotation>
+        What I admired about Fernando was his capacity to persuade people to
+        be honest with themselves, for when this happens they gain the
+        advantage of surprise. An incomparable tactical advantage in any
+        insurrection.
+
+        \V J. Berger, \PFrom A. to X.\Q
+      </quotation>
+
+      <\quotation>
+        the poem begins not where the knife enters but where the blade twists.
+
+        \V Hanif Abdurraqib, \PThe Prestige\Q
       </quotation>
     </with>
   </smaller>

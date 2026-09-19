@@ -13,7 +13,7 @@
   <hrule>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|Sat Sep 19 17:14:18 2026 UTC>
+  in various places.|Sat Sep 19 17:17:41 2026 UTC>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
