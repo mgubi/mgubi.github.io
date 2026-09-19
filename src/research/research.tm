@@ -19,16 +19,29 @@
   <notes-link|presentations|presentations.tm> \<cdot\>
   <notes-link|events|events.tm> \<cdot\> <notes-link|people|people.tm><vspace|2fn>
 
-  My current main area of research is stochastic analysis, specifically in
-  connection with problems of constructive quantum field theory. The focus is
-  to develop tools and concepts which are suitable to describe and analyse
-  the pathwise behaviour of quantum or random fields, including their
-  description via partial differential equations and renormalization group
-  ideas. More broadly speaking, I'm interested in problems of statistical
-  mechanics of multiscale systems, analysis of PDEs with random terms and
-  homogenisation theory, mathematical quantum mechanics, path-integral
-  formalisms, non-commutative probability and non-commutative geometry. I've
-  also some side interests in formalisation of mathematics.
+  My main area of research is stochastic analysis, especially in connection
+  with questions in constructive quantum field theory. I develop tools and
+  concepts to describe and analyse the pathwise behaviour of random and
+  quantum fields, including formulations based on partial differential
+  equations and renormalisation-group ideas. I introduced controlled rough
+  paths and developed branched rough paths, and later co-developed
+  paracontrolled calculus for singular stochastic PDEs. These ideas have found
+  applications to KPZ-type equations, regularisation by noise, stochastic
+  quantisation and Euclidean quantum field theory. Much of my recent work
+  concerns stochastic quantisation and variational methods for the
+  construction and analysis of Euclidean fields. This research is currently supported
+  by the UKRI Frontier Research grant
+  <hlink|StochFields|https://gtr.ukri.org/projects?ref=EP%2FZ534328%2F1#/tabOverview>
+  (\PStochastic Analysis of Quantum Fields\Q) and by the Simons Collaboration
+  <hlink|\PProbabilistic Paths to QFT\Q|https://probabilistic-qft.org/>.
+
+  More broadly, I am interested in the statistical mechanics of multiscale
+  systems, PDEs involving randomness and homogenisation theory, mathematical
+  quantum mechanics, path-integral formalisms, non-commutative probability
+  and non-commutative geometry. I also have a side interest in the
+  formalisation of mathematics. A common theme is how randomness can be used
+  both as an analytic tool and as a framework for constructing and
+  understanding quantum fields.
 
   <subsection*|Selected publications>
 

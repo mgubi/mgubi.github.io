@@ -142,6 +142,13 @@
       Miscellanea
     </cv-section>
 
+    <timeline|2026>Invited professor (1 month) at the Department of
+    Mathematics of the University of Turin, Italy
+
+    Invited professor at the International School for Advanced Studies
+    (SISSA), Trieste, Italy \U <hlink|\PA constructive introduction to
+    quantum field theory\Q|https://math.sissa.it/course/phd-course/constructive-introduction-quantum-field-theory/index.html>
+
     <timeline|2025>Invited professor (1 month) at the Department of
     Mathematics of the University of Turin, Italy
 
@@ -197,6 +204,10 @@
     <\cv-section>
       Organisation of international conferences
     </cv-section>
+
+    <timeline|2027>SwissMAP workshop \PStochastic Analysis at Les
+    Diablerets\Q, Les Diablerets
+    (<hlink|url|https://swissmaprs.ch/events/stochastic-analysis-at-les-diablerets/>)
 
     <timeline|2025>Simons Laufer Mathematical Sciences Institute Research
     Program on \PRecent Trends in Stochastic Partial Differential

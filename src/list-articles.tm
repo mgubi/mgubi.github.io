@@ -12,6 +12,13 @@
 
   <hrule>
 
+  <\notes-entry|curriculum-vitae.tm|Vita>
+    Things that happened to me, professionally \U last updated September 2026
+  </notes-entry|Sat Sep 19 00:16:57 2026 UTC>
+
+  <notes-entry|research/research.tm|Research|Mathematics.|Sat Sep 19 00:08:37
+  2026 UTC>
+
   <notes-entry|teaching/seminar-rough-paths-ss22.tm|Seminar on rough paths|An
   introductory master seminar on Rough path theory, which has taken place in
   Bonn in the Summer Semester 2022.|Fri Sep 18 23:12:07 2026 UTC>
@@ -75,10 +82,6 @@
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|Fri Sep 18 23:12:07 2026 UTC>
 
-  <\notes-entry|curriculum-vitae.tm|Vita>
-    Things that happened to me, professionally \U last updated September 2026
-  </notes-entry|Fri Sep 18 23:12:07 2026 UTC>
-
   <notes-entry|research/srq/srq-intro.tm|SRQ \U Scaling limits, rough paths,
   quantum field theory|From September 3rd 2018 to December 21st 2018,
   together with D.<nbsp>Brydges, A.<nbsp>Giuliani, A.<nbsp>Kupiainen,
@@ -92,9 +95,6 @@
 
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated September 2026.|Fri Sep 18 23:12:07 2026 UTC>
-
-  <notes-entry|research/research.tm|Research|Mathematics.|Fri Sep 18 23:12:07
-  2026 UTC>
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|Fri Sep 18 23:12:07 2026 UTC>
