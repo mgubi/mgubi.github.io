@@ -43,6 +43,7 @@ ALT_TEXT = {
     "marella-5.png": "Table of contents of Marella",
     "programming-1.png": "TeXmacs document editing interface",
     "programming-2.png": "TeXmacs presentation interface",
+    "texmacs-vue-in-browser.png": "TeXmacs Vue running in a web browser",
 }
 FALLBACK_BYTES = {0xD8: "Ø", 0xE8: "è", 0xE9: "é", 0xF6: "ö"}
 
@@ -180,6 +181,14 @@ def modernize_images(text: str, title: str, relative: str) -> str:
             tag = tag[:-1] + f' loading="{loading}">'
         if relative == "main.html" and basename == "main-2.jpeg" and "fetchpriority=" not in tag:
             tag = tag[:-1] + ' fetchpriority="high">'
+        if relative == "programming.html" and basename in {
+            "programming-1.png",
+            "programming-2.png",
+        }:
+            # TeXmacs sometimes exports an image width as a computed height.
+            # Keep this introductory pair equally sized and side by side.
+            tag = re.sub(r'\s+(?:class|style|width|height)="[^"]*"', "", tag, flags=re.I)
+            tag = tag[:-1] + ' class="image" width="45%">'
         return tag
 
     return IMAGE.sub(replace, text)
