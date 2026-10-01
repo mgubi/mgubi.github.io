@@ -61,6 +61,12 @@
 
   <subsection*|2026>
 
+  Stochastic observables: A framework for singular fields \U
+  <hlink|Workshop 1 of the Probability and Stochastic Analysis Trimester
+  Programme|https://sites.google.com/view/probsissa/workshop-1>, SISSA,
+  Trieste, September 28--October 2, 2026
+  (<notes-store|slides (PDF)|talk-stochastic-observables-2026.pdf>)
+
   Stochastic observables and Wilson\UItô diffusions \U Sussex, 2026
   (<notes-store|slides (PDF)|stochastic-observables-wilson-ito-sussex-beamer.pdf>)\ 
 

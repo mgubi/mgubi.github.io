@@ -12,11 +12,11 @@
 
   <hrule>
 
+  <notes-entry|research/presentations.tm|Presentations|The things I have said
+  in various places.|01 Oct 2026>
+
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated September 2026.|19 Sep 2026>
-
-  <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|19 Sep 2026>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
