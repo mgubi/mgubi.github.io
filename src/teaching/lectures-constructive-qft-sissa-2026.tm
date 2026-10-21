@@ -43,11 +43,13 @@
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
     free field. Construction on the torus and Euclidean space; reflection
-    positivity and the free relativistic field; Wick products; Gaussian
+    positivity and the free relativistic field; Nelson's Markov property
+    and Symanzik's Brownian-path representation; Wick products; Gaussian
     integration by parts and the Dyson--Schwinger equation; parabolic and
     elliptic stochastic quantisation.
     [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L2.pdf>]
     [<notes-store|script (PDF)|sissa/2026/cqft_notes_L2.pdf>]
+    Slides and script revised 22 October 2026.
   </itemize>
 
   <subsection*|Provisional lecture plans>
