@@ -3,7 +3,7 @@
   <title>Massimiliano Gubinelli - updates</title>
   <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-10-21T22:23:36Z</updated>
+  <updated>2026-10-21T23:44:55Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
     <uri>https://mgubi.github.io/</uri>
@@ -11,11 +11,21 @@
   <id>https://mgubi.github.io/docs/notes.atom</id>
   <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
   <entry>
+    <title>On Literate Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/literate-programming.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/literate-programming.tm</id>
+    <updated>2026-10-21T23:44:55Z</updated>
+    <published>2024-11-04T22:54:53Z</published>
+    <summary>How literate documents can explain the relationships between
+    programming languages, with a Scheme/C++ example and a proposal for the
+    development of TeXmacs.</summary>
+  </entry>
+  <entry>
     <title>A constructive introduction to quantum field theory</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
-    <updated>2026-10-21T22:23:36Z</updated>
-    <published>2026-10-21T15:16:53Z</published>
+    <updated>2026-10-21T22:31:45Z</updated>
+    <published>2026-10-21T15:27:44Z</published>
     <summary>Lectures at SISSA, Trieste, 20 October--6 November 2026, as part
     of the Probability and Stochastic Analysis Trimester Programme.</summary>
   </entry>
@@ -23,15 +33,24 @@
     <title>Writings</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/writings.html"/>
     <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
-    <updated>2026-10-21T20:42:55Z</updated>
+    <updated>2026-10-21T20:55:14Z</updated>
     <published>2023-05-04T22:12:59Z</published>
     <summary>This page gathers some writings.</summary>
+  </entry>
+  <entry>
+    <title>Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/programming.html"/>
+    <id>tag:mgubi.github.io,2023:programming.tm</id>
+    <updated>2026-10-21T20:55:14Z</updated>
+    <published>2023-04-22T00:04:30Z</published>
+    <summary>Content related to computer languages, programming,
+    TeXmacs.</summary>
   </entry>
   <entry>
     <title>Publications</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/publications.html"/>
     <id>tag:mgubi.github.io,2023:research/publications.tm</id>
-    <updated>2026-10-21T20:36:59Z</updated>
+    <updated>2026-10-21T20:55:14Z</updated>
     <published>2023-04-22T14:22:19Z</published>
     <summary xml:space="preserve">Papers I have co-authored  – last updated October 2026.</summary>
   </entry>
@@ -39,24 +58,15 @@
     <title>Events</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/events.html"/>
     <id>tag:mgubi.github.io,2023:research/events.tm</id>
-    <updated>2026-10-21T20:36:59Z</updated>
+    <updated>2026-10-21T20:55:14Z</updated>
     <published>2023-04-22T21:39:59Z</published>
     <summary>I travel around to meet other mathematicians.</summary>
-  </entry>
-  <entry>
-    <title>Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/programming.html"/>
-    <id>tag:mgubi.github.io,2023:programming.tm</id>
-    <updated>2026-10-21T20:14:48Z</updated>
-    <published>2023-04-22T00:04:30Z</published>
-    <summary>Content related to computer languages, programming,
-    TeXmacs.</summary>
   </entry>
   <entry>
     <title>Teaching</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/teaching.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching.tm</id>
-    <updated>2026-10-21T14:48:49Z</updated>
+    <updated>2026-10-21T15:27:44Z</updated>
     <published>2023-04-22T14:22:19Z</published>
     <summary>Things I teach &amp; have taught.</summary>
   </entry>
@@ -64,7 +74,7 @@
     <title>Presentations</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/presentations.html"/>
     <id>tag:mgubi.github.io,2023:research/presentations.tm</id>
-    <updated>2026-10-01T18:49:26Z</updated>
+    <updated>2026-10-01T18:55:13Z</updated>
     <published>2023-04-30T16:57:37Z</published>
     <summary>The things I have said in various places.</summary>
   </entry>
@@ -234,15 +244,6 @@
     <summary>Marella is a novel I wrote and rewrote several times in the last
     twenty years. It is written in Italian, so this page is also not
     translated.</summary>
-  </entry>
-  <entry>
-    <title>On Literate Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/literate-programming.html"/>
-    <id>tag:mgubi.github.io,2023:zettels/literate-programming.tm</id>
-    <updated>2024-11-04T22:54:53Z</updated>
-    <published>2024-11-04T22:54:53Z</published>
-    <summary>Some reflections on literate programming, TeXmacs, programming
-    languages and writing.</summary>
   </entry>
   <entry>
     <title>Maurelli - Regularisation by noise</title>

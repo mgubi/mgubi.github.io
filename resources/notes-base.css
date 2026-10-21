@@ -697,6 +697,8 @@ a:active, a:focus, a:hover {
 .right-tab {
     text-align: right;
     margin-top: -1.2em;
+    /* Keep empty chunk navigation from collapsing the title row. */
+    min-height: 1.2em;
 }
 
 tt, .verbatim {

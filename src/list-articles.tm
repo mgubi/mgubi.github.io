@@ -12,6 +12,11 @@
 
   <hrule>
 
+  <notes-entry|zettels/literate-programming.tm|On Literate Programming|How
+  literate documents can explain the relationships between programming
+  languages, with a Scheme/C++ example and a proposal for the development of
+  <TeXmacs>.|21 Oct 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
@@ -20,14 +25,14 @@
   <notes-entry|zettels/writings.tm|Writings|This page gathers some
   writings.|21 Oct 2026>
 
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|21 Oct 2026>
+
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated October 2026.|21 Oct 2026>
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|21 Oct 2026>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|21 Oct 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|21
   Oct 2026>
@@ -111,10 +116,6 @@
   <notes-entry|marella.tm|Marella|Marella is a novel I wrote and rewrote
   several times in the last twenty years. It is written in Italian, so this
   page is also not translated.|04 Aug 2025>
-
-  <notes-entry|zettels/literate-programming.tm|On Literate Programming|Some
-  reflections on literate programming, <TeXmacs>, programming languages and
-  writing.|04 Nov 2024>
 
   <notes-entry|research/bernoulli/bernoulli-w2-lectures-maurelli.tm|Maurelli
   - Regularisation by noise|The lectures of Mario Maurelli at the second

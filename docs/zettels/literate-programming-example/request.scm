@@ -1,0 +1,5 @@
+(define (write-request n)
+  (display "square ")
+  (display n)
+  (newline))
+(write-request 7)
