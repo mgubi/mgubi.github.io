@@ -13,6 +13,15 @@
 
   <notes-abstract|Things I teach & have taught.>
 
+  <subsection*|Current lecture courses (2026)>
+
+  <\itemize>
+    <item><notes-link|A constructive introduction to quantum field
+    theory|lectures-constructive-qft-sissa-2026.tm> \U SISSA,
+    20 October--6 November 2026. Part of the <hlink|Probability and
+    Stochastic Analysis Trimester Programme|https://sites.google.com/view/probsissa>.
+  </itemize>
+
   <subsection*|Past lecture courses and seminars in Oxford (2022\U)>
 
   <\itemize>

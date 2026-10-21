@@ -12,6 +12,14 @@
 
   <hrule>
 
+  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
+  constructive introduction to quantum field theory|Lectures at SISSA,
+  Trieste, 20 October--6 November 2026, as part of the Probability and
+  Stochastic Analysis Trimester Programme.|21 Oct 2026>
+
+  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|21
+  Oct 2026>
+
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|01 Oct 2026>
 
@@ -58,9 +66,6 @@
   <notes-entry|teaching/teaching-dauphine-10-11.tm|Enseignements
   2010/2011|Lectures delivered at Paris Dauphine, academic year
   2010\U2011.|18 Sep 2026>
-
-  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|18
-  Sep 2026>
 
   <notes-entry|teaching/teaching-dauphine-14-15.tm|Enseignements
   2014/2015|Lectures delivered at Paris Dauphine, academic year
