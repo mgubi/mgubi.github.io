@@ -13,7 +13,15 @@
 
   <notes-abstract|This page gathers some writings.>
 
-  \;
+  <\quotation>
+    <em|Scrivere è sempre nascondere qualcosa in modo che venga poi scoperto.>
+
+    <em|Writing always means hiding something in such a way that it then
+    is discovered.>
+
+    \V <hlink|Italo Calvino|https://pure.uva.nl/ws/files/87904489/9789004472365_BP000011.pdf>,
+    <em|Se una notte d'inverno un viaggiatore>
+  </quotation>
 
   <hlink|Literate programming|literate-programming.tm> (November 4th 2024)
 

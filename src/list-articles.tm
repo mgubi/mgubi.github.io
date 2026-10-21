@@ -12,8 +12,17 @@
 
   <hrule>
 
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|21 Oct 2026>
+
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated October 2026.|21 Oct 2026>
+
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|21 Oct 2026>
+
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|21 Oct 2026>
 
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
@@ -25,9 +34,6 @@
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|01 Oct 2026>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated September 2026.|19 Sep 2026>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
@@ -91,9 +97,6 @@
   probability|A bachelor course delivered online (due to the pandemic) in
   Bonn in the winter semester 2020/2021. In German.|18 Sep 2026>
 
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|18 Sep 2026>
-
   <notes-entry|research/srq/srq-intro.tm|SRQ \U Scaling limits, rough paths,
   quantum field theory|From September 3rd 2018 to December 21st 2018,
   together with D.<nbsp>Brydges, A.<nbsp>Giuliani, A.<nbsp>Kupiainen,
@@ -108,9 +111,6 @@
   <notes-entry|marella.tm|Marella|Marella is a novel I wrote and rewrote
   several times in the last twenty years. It is written in Italian, so this
   page is also not translated.|04 Aug 2025>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|04 Nov 2024>
 
   <notes-entry|zettels/literate-programming.tm|On Literate Programming|Some
   reflections on literate programming, <TeXmacs>, programming languages and

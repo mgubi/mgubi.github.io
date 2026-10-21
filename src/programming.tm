@@ -14,6 +14,13 @@
   <notes-abstract|Content related to computer languages, programming,
   <TeXmacs>.>
 
+  <\quotation>
+    <em|There are only two hard things in Computer Science: cache
+    invalidation and naming things.>
+
+    \V <hlink|Phil Karlton|https://martinfowler.com/bliki/TwoHardThings.html>
+  </quotation>
+
   <section*|GNU <TeXmacs>>
 
   <hlink|GNU TeXmacs|http://www.texmacs.org/><nbsp>is a document preparation
@@ -54,33 +61,93 @@
   tracks the official SVN repository and there are several development
   branches.
 
-  One of these experiments is <hlink|TeXmacs Vue|https://github.com/mgubi/texmacs/tree/wip_wasm_vue>, a WebAssembly port of <TeXmacs> which runs directly in the browser. You can <hlink|try the web application|https://mgubi.github.io/texmacs/> without installing the program.
+  <subsection*|TeXmacs Upsilon>
+
+  My current development work comes together in <hlink|TeXmacs
+  Upsilon|https://mgubi.github.io/texmacs/>, an experimental version of GNU
+  <TeXmacs> combining new features with the upstream code. It supersedes
+  the earlier TeXmacs Vue project; Vue continues as one of its graphical
+  interfaces, alongside Qt and the native Cocoa interface for macOS.
+
+  Upsilon brings OpenType mathematics, faster Scheme interpreters,
+  incremental typesetting, Git integration, Zotero and CSL bibliographies,
+  code editing with tree-sitter and language servers, and AI sessions.
+  The same codebase also runs in the browser through WebAssembly.
+
+  The <hlink|project website|https://mgubi.github.io/texmacs/> offers
+  experimental builds for macOS, Linux and Windows, a
+  <hlink|browser application|https://mgubi.github.io/texmacs/texmacs.html>,
+  a <hlink|feature tour|https://mgubi.github.io/texmacs/features.html> and
+  <hlink|recent changes|https://mgubi.github.io/texmacs/changes.html>.
+  These are continuously tested development builds. The sources are on
+  <hlink|upsilon_texmacs|https://github.com/mgubi/texmacs/tree/upsilon_texmacs>;
+  problems can be reported in the <hlink|project issue
+  tracker|https://github.com/mgubi/texmacs/issues>.
 
   <\center>
-    <hlink|<image|../resources/texmacs-vue-in-browser.png|0.9par|||>|https://mgubi.github.io/texmacs/>
+    <hlink|<image|../resources/texmacs-upsilon.png|0.9par|||>|https://mgubi.github.io/texmacs/features.html>
   </center>
 
   <\with|par-mode|center>
-    <small|<hlink|TeXmacs Vue in the browser|https://mgubi.github.io/texmacs/> (<hlink|source code|https://github.com/mgubi/texmacs/tree/wip_wasm_vue>).>
+    <small|TeXmacs Upsilon: OpenType mathematics in Libertinus Math,
+    using the Vue interface. <hlink|More
+    screenshots|https://mgubi.github.io/texmacs/features.html>.>
   </with>
 
-  <subsection*|Ongoing <TeXmacs> projects>
+  <subsection*|Ongoing <TeXmacs> subprojects>
+
+  As of October 2026, the following lines of work are integrated in
+  Upsilon. Most retain separate branches so that they can be developed
+  and proposed upstream independently.
 
   <\itemize>
-    <item><hlink|TeXmacs Vue and the WebAssembly port|https://github.com/mgubi/texmacs/tree/wip_wasm_vue> (<verbatim|wip_wasm_vue>): the new Vue interface and a browser build of <TeXmacs>.
+    <item><hlink|Interfaces|https://github.com/mgubi/texmacs/tree/wip_other_guis>
+    and <hlink|icons|https://github.com/mgubi/texmacs/tree/wip_icons>:
+    native Cocoa and Vue interfaces, GPU rendering, themes and icon sets.
 
-    <item><hlink|Vau|https://github.com/mgubi/vau>: an experiment in extracting a minimal <TeXmacs> typesetting core for reading and rendering <TeXmacs> documents, while exploring possible refactorings.
+    <item><hlink|OpenType mathematics|https://github.com/mgubi/texmacs/tree/wip_opentype>,
+    <hlink|additional fonts|https://mgubi.github.io/texmacs/features.html#font-design>
+    and <hlink|font design|https://mgubi.github.io/texmacs/features.html#font-design>:
+    mathematical font layout, matching text families and font selection.
 
-    <item><hlink|Alternative graphical interfaces|https://github.com/mgubi/texmacs/tree/wip_other_guis> (<verbatim|wip_other_guis>): ongoing work on the native Cocoa interface for macOS and on the SDL and Vue interfaces.
+    <item><hlink|s7|https://github.com/mgubi/texmacs/tree/upsilon_texmacs/src/docs/s7> and
+    <hlink|femtolisp|https://github.com/mgubi/texmacs/tree/wip_other_schemes>:
+    alternative Scheme runtimes, with s7 now the default in Upsilon.
 
-    <item><hlink|New icons|https://github.com/mgubi/texmacs/tree/wip_icons> (<verbatim|wip_icons>): a redesigned icon set for the application.
+    <item><hlink|Git integration|https://github.com/mgubi/texmacs/tree/wip_git>:
+    document history, revision comparisons and structured three-way merges.
 
-    <item><hlink|OpenType support|https://github.com/mgubi/texmacs/tree/wip_opentype> (<verbatim|wip_opentype>): support for OpenType text and mathematical fonts.
+    <item><hlink|Zotero|https://github.com/mgubi/texmacs/tree/wip_zotero> and
+    <hlink|CSL|https://github.com/mgubi/texmacs/tree/wip_csl>:
+    live reference libraries, citation completion and bibliography styles.
 
-    <item><hlink|s7 Scheme support|https://github.com/mgubi/texmacs/tree/wip_s7> (<verbatim|wip_s7>): integration of the <hlink|s7 Scheme interpreter|https://ccrma.stanford.edu/software/snd/snd/s7.html> as an alternative Scheme runtime.
+    <item><hlink|Markdown|https://github.com/mgubi/texmacs/tree/markdown-converter>
+    and <hlink|office converters|https://github.com/mgubi/texmacs/tree/office-converter>:
+    import and export for Markdown, Word and OpenDocument.
 
-    <item><hlink|Experimental macOS DMG|https://github.com/mgubi/texmacs/actions/workflows/macos-ns.yml?query=branch%3Ans_ci>: a universal Cocoa build for Apple silicon and Intel, generated by the CI workflow on the <verbatim|ns_ci> branch. The DMG can be downloaded from the latest successful run.
+    <item><hlink|Program code|https://github.com/mgubi/texmacs/tree/wip_code>:
+    tree-sitter syntax analysis and language-server support in source files
+    and code blocks within documents.
+
+    <item><hlink|AI sessions|https://github.com/mgubi/texmacs/tree/ai-sessions-port>:
+    conversations with local and hosted models inside a document.
+
+    <item><hlink|WebAssembly port|https://github.com/mgubi/texmacs/tree/upsilon_texmacs/src/docs/wasm>:
+    editing, PDF export and in-browser computational plug-ins. Development
+    now takes place directly in Upsilon; the old browser branch is retired.
+
+    <item><hlink|Fixes, performance and tests|https://github.com/mgubi/texmacs/tree/wip_fixes>:
+    incremental typesetting, conversion and editing fixes, and regression
+    testing across platforms.
   </itemize>
+
+  The <hlink|open-work list|https://github.com/mgubi/texmacs/blob/upsilon_texmacs/src/docs/TODO.md>
+  tracks remaining tasks, including renderer and PDF-export consistency,
+  CSL edge cases and testing across interfaces and platforms.
+
+  A related experiment is <hlink|Vau|https://github.com/mgubi/vau>:
+  extracting a minimal <TeXmacs> typesetting core for reading and rendering
+  documents, while exploring possible refactorings.
 
   \;
 

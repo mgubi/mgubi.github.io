@@ -39,6 +39,15 @@
     axioms.
     [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L1.pdf>]
     [<notes-store|script (PDF)|sissa/2026/cqft_notes_L1.pdf>]
+    Slides and script revised 21 October 2026.
+
+    <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
+    free field. Construction on the torus and Euclidean space; reflection
+    positivity and the free relativistic field; Wick products; Gaussian
+    integration by parts and the Dyson--Schwinger equation; parabolic and
+    elliptic stochastic quantisation.
+    [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L2.pdf>]
+    [<notes-store|script (PDF)|sissa/2026/cqft_notes_L2.pdf>]
   </itemize>
 
   <subsection*|Provisional lecture plans>
@@ -47,12 +56,6 @@
   progresses.
 
   <\itemize>
-    <item><with|font-series|bold|Lecture 2: The Gaussian free field.>
-    Construction on the torus and Euclidean space; reflection positivity
-    and the free relativistic field; Wick products; Gaussian integration
-    by parts and the Dyson--Schwinger equation; parabolic and elliptic
-    stochastic quantisation.
-
     <item><with|font-series|bold|Lecture 3: Stochastic observables, the
     Polchinski flow and forward--backward equations.> Decomposition of the
     field by resolution and stochastic observables; effective potentials
@@ -61,6 +64,9 @@
     flow. Further topics, time permitting: products of observables,
     perturbation theory and counterterms, and Dyson--Schwinger equations
     at every scale.
+
+    <item><with|font-series|bold|Lectures 4--6: An FBSDE construction of
+    <math|\<phi\><rsup|4><rsub|3>> on the torus.>
   </itemize>
 
   <subsection*|Schedule>

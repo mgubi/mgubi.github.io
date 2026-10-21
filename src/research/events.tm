@@ -13,6 +13,17 @@
 
   <notes-abstract|I travel around to meet other mathematicians.>
 
+  <\quotation>
+    <em|D'una città non godi le sette o le settantasette meraviglie, ma la
+    risposta che dà a una tua domanda.>
+
+    <em|What you enjoy in a city is not its seven or seventy-seven wonders,
+    but the answer it gives to a question of yours.>
+
+    \V <hlink|Italo Calvino|https://grandimagazziniculturali.it/2020/10/piu-desideri-e-meno-paure-come-mattoni-delle-nostre-citta/>,
+    <em|Le città invisibili>
+  </quotation>
+
   Last updated in October 2026
 
   <subsection*|Current and forthcoming events>
@@ -26,6 +37,11 @@
     theory\Q, SISSA, Trieste, October 20\UNovember 6, 2026
     (<notes-link|course page|../teaching/lectures-constructive-qft-sissa-2026.tm>)
     [course]
+
+    <item>Conference \PDeterministic and Stochastic Evolution Equations\Q,
+    Scuola Normale Superiore, Pisa, October 26\U28, 2026
+    (<hlink|conference page|https://www.sns.it/en/node/1197122>)
+    [participation]
 
     <item>Workshop \PStochastic Analysis at Les Diablerets\Q, Les
     Diablerets, Switzerland, January 24\U29, 2027
@@ -49,9 +65,10 @@
     Quantitative Finance, London, September 11, 2026
     (<hlink|url|https://www.logosresearch.ai/workshop/>) [talk]
 
-    <item>13th International Conference on the Exact Renormalization Group,
-    Brighton, September 1\U5, 2026
-    (<hlink|url|https://indico.global/event/16125/>) [talk]
+    <item>13th International Conference on the Exact Renormalization Group
+    (ERG2026), University of Sussex, Brighton, September 1\U5, 2026
+    (<hlink|conference page|https://indico.global/event/16125/>).
+    Talk: \PStochastic observables and constructive RG\Q. [talk]
 
     <item>RIMS Spring Workshop \PThe Mathematical Roads to Quantum Field
     Theory\Q, Kyoto, April 13\U17, 2026
