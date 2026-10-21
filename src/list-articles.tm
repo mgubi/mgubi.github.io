@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|research/events.tm|Events|I travel around to meet other
+  mathematicians.|21 Oct 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
@@ -98,9 +101,6 @@
   Netwon Institute in Cambridge to bring together people working in
   stochastic PDEs and people working around questions of stastistical
   mechanics and quantum field theory.|18 Sep 2026>
-
-  <notes-entry|research/events.tm|Events|I travel around to meet other
-  mathematicians.|18 Sep 2026>
 
   <notes-entry|research/people.tm|People|Present & past members of my
   research group \U updated November 2024.|06 Jul 2026>

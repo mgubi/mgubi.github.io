@@ -13,23 +13,18 @@
 
   <notes-abstract|I travel around to meet other mathematicians.>
 
-  Last updated in September 2026
+  Last updated in October 2026
 
-  <subsection*|Forthcoming events>
+  <subsection*|Current and forthcoming events>
 
   <\itemize>
-    <item>Conference \PNonlinear systems with noise\Q, Münster,
-    September 21\U25, 2026
-    (<hlink|url|https://www.uni-muenster.de/MathematicsMuenster/events/2026/nonlinear-systems.shtml>)
-    [talk]
-
-    <item>Probability and Stochastic Analysis Trimester Programme, Workshop
-    1, SISSA, Trieste, September 28\UOctober 2, 2026
-    (<hlink|url|https://sites.google.com/view/probsissa/workshop-1>) [talk]
+    <item>Visiting professor at SISSA, Trieste, October 19\UNovember 14,
+    2026, as part of the <hlink|Probability and Stochastic Analysis
+    Trimester Programme|https://sites.google.com/view/probsissa>.
 
     <item>PhD course \PA constructive introduction to quantum field
-    theory\Q, SISSA, Trieste, October 26\UNovember 6, 2026
-    (<hlink|url|https://www.math.sissa.it/course/phd-course/constructive-introduction-quantum-field-theory/index.html>)
+    theory\Q, SISSA, Trieste, October 20\UNovember 6, 2026
+    (<notes-link|course page|../teaching/lectures-constructive-qft-sissa-2026.tm>)
     [course]
 
     <item>Workshop \PStochastic Analysis at Les Diablerets\Q, Les
@@ -41,6 +36,15 @@
   <subsection*|Past events>
 
   <\itemize>
+    <item>Probability and Stochastic Analysis Trimester Programme, Workshop
+    1, SISSA, Trieste, September 28\UOctober 2, 2026
+    (<hlink|url|https://sites.google.com/view/probsissa/workshop-1>) [talk]
+
+    <item>Conference \PNonlinear systems with noise\Q, Münster,
+    September 21\U25, 2026
+    (<hlink|url|https://www.uni-muenster.de/MathematicsMuenster/events/2026/nonlinear-systems.shtml>)
+    [talk]
+
     <item>Workshop on Formal Verification for Stochastic Analysis and
     Quantitative Finance, London, September 11, 2026
     (<hlink|url|https://www.logosresearch.ai/workshop/>) [talk]
