@@ -50,6 +50,16 @@
     [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L2.pdf>]
     [<notes-store|script (PDF)|sissa/2026/cqft_notes_L2.pdf>]
     Slides and script revised 22 October 2026.
+
+    <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
+    observables, the Polchinski flow and forward--backward equations.
+    Decomposition of the field by resolution; stochastic observables and
+    effective potentials; the Polchinski equation and FBSDEs; the Wetterich
+    equation and the variational structure of the flow. Additional material
+    covers products of observables, perturbation theory, counterterms and
+    Dyson--Schwinger equations at every scale.
+    [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L3.pdf>]
+    [<notes-store|draft script (PDF)|sissa/2026/cqft_notes_L3.pdf>]
   </itemize>
 
   <subsection*|Provisional lecture plans>
@@ -58,15 +68,6 @@
   progresses.
 
   <\itemize>
-    <item><with|font-series|bold|Lecture 3: Stochastic observables, the
-    Polchinski flow and forward--backward equations.> Decomposition of the
-    field by resolution and stochastic observables; effective potentials
-    and the Polchinski equation; forward--backward stochastic differential
-    equations; the Wetterich equation and the variational structure of the
-    flow. Further topics, time permitting: products of observables,
-    perturbation theory and counterterms, and Dyson--Schwinger equations
-    at every scale.
-
     <item><with|font-series|bold|Lectures 4--6: An FBSDE construction of
     <math|\<phi\><rsup|4><rsub|3>> on the torus.>
   </itemize>

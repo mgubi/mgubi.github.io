@@ -3,13 +3,22 @@
   <title>Massimiliano Gubinelli - updates</title>
   <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-10-21T23:44:55Z</updated>
+  <updated>2026-10-22T16:32:43Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
     <uri>https://mgubi.github.io/</uri>
   </author>
   <id>https://mgubi.github.io/docs/notes.atom</id>
   <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
+  <entry>
+    <title>A constructive introduction to quantum field theory</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
+    <updated>2026-10-22T16:32:43Z</updated>
+    <published>2026-10-21T15:27:44Z</published>
+    <summary>Lectures at SISSA, Trieste, 20 October--6 November 2026, as part
+    of the Probability and Stochastic Analysis Trimester Programme.</summary>
+  </entry>
   <entry>
     <title>On Literate Programming</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/literate-programming.html"/>
@@ -19,15 +28,6 @@
     <summary>How literate documents can explain the relationships between
     programming languages, with a Scheme/C++ example and a proposal for the
     development of TeXmacs.</summary>
-  </entry>
-  <entry>
-    <title>A constructive introduction to quantum field theory</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
-    <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
-    <updated>2026-10-21T22:31:45Z</updated>
-    <published>2026-10-21T15:27:44Z</published>
-    <summary>Lectures at SISSA, Trieste, 20 October--6 November 2026, as part
-    of the Probability and Stochastic Analysis Trimester Programme.</summary>
   </entry>
   <entry>
     <title>Writings</title>
