@@ -12,6 +12,11 @@
 
   <hrule>
 
+  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
+  constructive introduction to quantum field theory|Lectures at SISSA,
+  Trieste, 20 October--6 November 2026, as part of the Probability and
+  Stochastic Analysis Trimester Programme.|23 Oct 2026>
+
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>
     This companion proves the foundations used in the post: spectral
@@ -40,11 +45,6 @@
 
   <notes-entry|zettels/writings.tm|Writings|This page gathers some
   writings.|23 Oct 2026>
-
-  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
-  constructive introduction to quantum field theory|Lectures at SISSA,
-  Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|22 Oct 2026>
 
   <notes-entry|zettels/literate-programming.tm|On Literate Programming|How
   literate documents can explain the relationships between programming
