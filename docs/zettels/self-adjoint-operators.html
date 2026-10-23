@@ -771,14 +771,16 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       says nothing about the second convergence. On a core, the action of a
       closed operator determines its entire graph, hence the operator itself.
     </p>
-    <p>
-      <b>Core criterion.</b> If \(A\) is self-adjoint, then \(D_0\) is a core
-      precisely when \((A - z) D_0\) is dense in \(H\), for one (and hence
-      every) nonreal \(z\). Indeed \(A - z\) is an isomorphism from its
-      graph-norm domain onto \(H\), with inverse the bounded resolvent.
-      Equivalently, the symmetric restriction to \(D_0\) is essentially
-      self-adjoint and its closure is \(A\).
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <b>Core criterion.</b> If \(A\) is self-adjoint, then \(D_0\) is a
+        core precisely when \((A - z) D_0\) is dense in \(H\), for one (and
+        hence every) nonreal \(z\). Indeed \(A - z\) is an isomorphism from
+        its graph-norm domain onto \(H\), with inverse the bounded resolvent.
+        Equivalently, the symmetric restriction to \(D_0\) is essentially
+        self-adjoint and its closure is \(A\).
+      </p>
+    </div>
     <p>
       The functional calculus supplies a canonical example:
     </p>
@@ -861,13 +863,34 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     </p>
     <h3 id="auto-13">Optional example: what can go wrong at infinity<span style="margin-left: 1em"></span></h3>
     <p>
-      Choose a free ultrafilter on the positive integers and assign to \(f \in
-      C_b (\mathbb{R})\) the ultrafilter limit of \(f (n)\). This is a unital
-      multiplicative functional, but it annihilates \(C_0 (\mathbb{R})\). It
-      cannot be integration against a probability measure on \(\mathbb{R}\).
-      The same formula on \(B_b\) gives value zero to every \(1_{[- n, n]}\)
-      although these functions increase pointwise to 1. In the language of
-      compactifications it is an evaluation at infinity.
+      An ordinary limit already shows the issue, provided we restrict the
+      class of functions on which we take it. Let \(\mathcal{A}_+\) be the
+      algebra of bounded Borel functions on \(\mathbb{R}\) that have a limit
+      at \(+ \infty\), and set
+    </p>
+    <div class="center">
+      \(\displaystyle L (f) = \lim_{x \rightarrow + \infty} f (x), \qquad f
+      \in \mathcal{A}_+ .\)
+    </div>
+    <p>
+      Ordinary limits preserve sums, products and complex conjugates, so \(L\)
+      is a unital \(\ast\)-homomorphism. It vanishes on \(C_0 (\mathbb{R})\),
+      but \(L (1) = 1\). It cannot be integration against a probability
+      measure on \(\mathbb{R}\): for every fixed \(n\), \(\chi_n = 1_{[- n,
+      n]}\) belongs to \(\mathcal{A}_+\) and has \(L (\chi_n) = 0\), although
+      \(\chi_n \uparrow 1\). A probability measure would give integrals
+      increasing to one.
+    </p>
+    <p>
+      There are two limits here, and their order matters. We first send \(x\)
+      to infinity with the interval fixed: eventually the point \(x\) lies
+      outside it. Increasing the interval afterwards still gives zero. This is
+      the simplest picture of mass escaping to infinity. The functional is
+      defined on \(\mathcal{A}_+\), not on all bounded Borel functions;
+      assigning zero whenever a limit fails to exist would destroy linearity.
+      The example already shows why preserving algebraic operations and the
+      constant one does not by itself guarantee the continuity required of an
+      observable.
     </p>
     <h2 id="auto-14"><a id="sec:bounded-descriptions"></a>6. Small families which remember the whole
     observable<span style="margin-left: 1em"></span></h2>

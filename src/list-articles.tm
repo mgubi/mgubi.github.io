@@ -12,9 +12,6 @@
 
   <hrule>
 
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated October 2026.|23 Oct 2026>
-
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>
     This companion proves the foundations used in the post: spectral
@@ -23,9 +20,6 @@
     arguments follow the spectral construction because their proofs use it;
     the final section identifies the equivalent tests for convergence.
   </notes-entry|23 Oct 2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|23 Oct 2026>
 
   <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
   we talk about unbounded self-adjoint operators?>
@@ -40,6 +34,12 @@
     analysis for those who, like me, have struggled with the usual
     presentations of this subject.
   </notes-entry|23 Oct 2026>
+
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated October 2026.|23 Oct 2026>
+
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|23 Oct 2026>
 
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
