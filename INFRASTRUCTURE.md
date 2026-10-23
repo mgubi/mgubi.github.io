@@ -99,7 +99,9 @@ This file implements the publication-list bibliography style. It extends the
 standard TeXmacs bibliography machinery to:
 
 - abbreviate first names;
-- prefer a DOI link, then an archive identifier, then a URL;
+- prefer a DOI link, retaining a separate arXiv link alongside a journal DOI;
+- avoid duplicating an arXiv DOI with a second link to the same preprint,
+  and fall back to an archive identifier or URL when no DOI is available;
 - render arXiv identifiers through their DOI form;
 - sort entries in descending year order;
 - insert a visible year marker when the year changes;
@@ -176,6 +178,13 @@ The current publications page also contains TeXmacs' embedded bibliography
 data and rendered bibliography blocks. When publication data changes, keep the
 canonical TeXmacs source, its bibliography data, and the exported page
 consistent.
+
+The same bibliographic key may occur in the general attachment and in a
+section-specific attachment. Synchronize all matching embedded records from
+the BibTeX database before regenerating the lists. Preserve embedded-only
+records absent from the legacy database. Acceptance notes and edition details
+belong in the records, so a rebuild retains them without manual edits to the
+formatted lists.
 
 Files linked as downloads belong under `store/`. They are published material,
 but are not traversed as website pages by `notes-tools.scm`.

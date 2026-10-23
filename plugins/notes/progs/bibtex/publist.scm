@@ -31,12 +31,31 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; format hyperlink
-;; (prefers, in order: DOI, archive data, url)
+;; Prefer DOI, then archive data, then url.  With a journal DOI, retain
+;; a separate arXiv link; an arXiv DOI already supplies that link.
  
 (tm-define (bib-format-hlink x)
   (cond 
-    ((not (bib-empty? x "doi")) 
-      `((hlink ,(bib-format-field x "doi") (concat "https://doi.org/" ,(bib-format-field x "doi")))))
+    ((not (bib-empty? x "doi"))
+      (let* ((doi (bib-field x "doi"))
+             (arxiv? (and (not (bib-empty? x "eprint"))
+                          (or (and (not (bib-empty? x "archiveprefix"))
+                                   (== (string-downcase (bib-field x "archiveprefix")) "arxiv"))
+                              (and (not (bib-empty? x "eprinttype"))
+                                   (== (string-downcase (bib-field x "eprinttype")) "arxiv")))))
+             (extra? (and arxiv?
+                          (not (string-starts? (string-downcase doi)
+                                               "10.48550/arxiv."))))
+             (identifier `(concat ,(bib-format-field x "eprint")
+                                  ,(if (bib-empty? x "version") ""
+                                       `(concat "v" ,(bib-format-field x "version"))))))
+        (append
+          `((hlink ,(bib-format-field x "doi")
+                   (concat "https://doi.org/" ,(bib-format-field x "doi"))))
+          (if extra?
+              `(". " (hlink (concat "arXiv:" ,identifier)
+                            (concat "https://arxiv.org/abs/" ,identifier)))
+              '()))))
     ((not (bib-empty? x "archiveprefix"))
       (with url  `(concat ,(bib-format-field x "eprint") 
                       ,(if (bib-empty? x "version")  "" `(concat "v" ,(bib-format-field x "version"))))
