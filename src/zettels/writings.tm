@@ -23,6 +23,11 @@
     <em|Se una notte d'inverno un viaggiatore>
   </quotation>
 
+  <notes-link|What do we talk about when we talk about unbounded self-adjoint
+  operators?|self-adjoint-operators.tm> (October 23, 2026)
+
+  <notes-link|Proofs and complements|self-adjoint-operators-proofs.tm>.
+
   <hlink|Literate programming|literate-programming.tm> (November 4th 2024)
 
   <hlink|When a local martingale is a martingale?|local-martingales.tm> (May

@@ -1,8 +1,10 @@
 <TeXmacs|2.1.4>
 
-<style|notes>
+<style|<tuple|notes|notes-meta>>
 
 <\body>
+  <notes-header>
+
   <chapter*|Proofs and complements: the basic idea>
 
   <with|font-shape|italic|Observables <math|\<cdot\>> Companion I. October 23, 2026.>

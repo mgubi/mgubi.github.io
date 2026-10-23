@@ -1,8 +1,10 @@
 <TeXmacs|2.1.4>
 
-<style|notes>
+<style|<tuple|notes|notes-meta>>
 
 <\body>
+  <notes-header>
+
   <chapter*|What do we talk about when we talk about unbounded self-adjoint
   operators?>
 
@@ -62,9 +64,9 @@
   <math|H>.
 
   I used this viewpoint in my <hlink|2018 quantum probability notes, Sheet
-  6|../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>, especially
+  6|../../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>, especially
   Section<nbsp>1, and in <hlink|the 2024 quantum mechanics notes, Note
-  2|../store/oxford/ht2024/emqm-note-2.pdf>, Sections 4 and 7. In this post I
+  2|../../store/oxford/ht2024/emqm-note-2.pdf>, Sections 4 and 7. In this post I
   want to develop the dictionary between bounded functions, spectral measures
   and self-adjoint coordinate operators, then explain why strong resolvent
   convergence is a natural way to compare real observables.
@@ -1288,22 +1290,22 @@
   <\itemize>
     <item>M. Gubinelli, <em|Quantum probability and quantum stochastic
     calculus> (Bonn, 2018), <hlink|Sheet 6, Section<nbsp>1, pp.
-    1\U6|../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>. The three
+    1\U6|../../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>. The three
     descriptions of a quantum random variable, Fourier reconstruction, the
     generator domain, and the Cayley transform. See also <hlink|Sheet 4,
-    Section<nbsp>2|../store/iam/quantum-probability-ss18/qp-sheet-4.pdf> and
-    <hlink|Sheet 5|../store/iam/quantum-probability-ss18/qp-sheet-5.pdf> for
+    Section<nbsp>2|../../store/iam/quantum-probability-ss18/qp-sheet-4.pdf> and
+    <hlink|Sheet 5|../../store/iam/quantum-probability-ss18/qp-sheet-5.pdf> for
     spin central limits, quasi-characteristic functions and the construction
     of the limiting Gaussian unitaries. <notes-link|Course
-    page|teaching/lectures-quantum-probability-ss18.tm>.
+    page|../teaching/lectures-quantum-probability-ss18.tm>.
 
     <item>M. Gubinelli, <em|Elements of Mathematical Quantum Mechanics>
-    (2024), <hlink|Note 2|../store/oxford/ht2024/emqm-note-2.pdf>,
+    (2024), <hlink|Note 2|../../store/oxford/ht2024/emqm-note-2.pdf>,
     Section<nbsp>4, pp. 9\U11, and Section<nbsp>7, pp. 23\U33; <hlink|Lecture
-    5, pp. 5\U8|../store/oxford/ht2024/emqm-lecture-5.pdf> and <hlink|Lecture
-    7|../store/oxford/ht2024/emqm-lecture-7.pdf>. Homomorphisms as
+    5, pp. 5\U8|../../store/oxford/ht2024/emqm-lecture-5.pdf> and <hlink|Lecture
+    7|../../store/oxford/ht2024/emqm-lecture-7.pdf>. Homomorphisms as
     observables, Bochner and Bernstein reconstruction, and positive-energy
-    evolution. <notes-link|Course page|teaching/lectures-tcc-emqm-tt24.tm>.
+    evolution. <notes-link|Course page|../teaching/lectures-tcc-emqm-tt24.tm>.
 
     <item>M. Reed and B. Simon, <em|Methods of Modern Mathematical Physics,
     I: Functional Analysis>, revised and enlarged edition, Academic Press,

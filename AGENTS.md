@@ -168,3 +168,109 @@ diff-check warnings without reformatting native files wholesale. Commit both
 canonical sources and the generated output required by GitHub Pages, but do
 not include TeXmacs runtime directories, Python caches, backups, or other
 scratch files.
+
+## Mathematical markup and presentation
+
+TeXmacs formulas are structured trees, not strings of mathematical glyphs.
+Apply these conventions when authoring or revising mathematical material,
+including drafts and proof companions:
+
+- Enclose paired delimiters in a single `around` (fixed size) or `around*`
+  (automatically sized) environment. Do not type independent opening and
+  closing symbols around an expression. For example, write
+  `<around*|(|A-z|)>`, `D<around*|(|A|)>`, and
+  `<around*|\<langle\>|u,A*v|\<rangle\>>`.
+- Preserve TeXmacs' explicit sizing when present: `left` and `right` nodes
+  belong in the boundary arguments of the same enclosing environment, as in
+  `<around*|<left|\||2>|\<mu\><rsub|u,v><around*|(|B|)>|<right|\||2>><rsup|2>`.
+  Do not flatten these nodes into separate symbols or insert another pair
+  of delimiters around them.
+- Distinguish absolute values from norms. A norm can be written
+  `<around*|\<\|\|\>|u|\<\|\|\>><rsup|2>`, or, with explicit sizing,
+  `<around*|<left|\<\|\|\>|1>|u|<right|\<\|\|\>|1>><rsup|2>`.
+  The exponent applies to the entire enclosed expression. Check grouping,
+  especially in identities involving several squared norms.
+- Keep legitimate asymmetric delimiters: half-open intervals, Dirac bras
+  and kets, and restrictions or evaluations with an invisible boundary.
+  For example, `<around*|.|A|\|><rsub|D>` is a restriction. A conditional
+  or set-builder bar is an interior separator, not an unmatched absolute
+  value. Never repair such notation by blindly pairing all vertical bars.
+- Use native structural markup for fractions, roots, subscripts,
+  superscripts and large operators. Use TeXmacs symbol spellings rather
+  than pasted Unicode mathematics or LaTeX commands. Put prose within a
+  formula in a `text` environment and operator names in upright math text,
+  following the surrounding notation.
+- Preserve the author's mathematical conventions (including which argument
+  of an inner product is linear). A delimiter audit must check the scope
+  and meaning of each expression, not merely whether tags balance.
+- Use theorem environments for numbered results and `notes-theorem` for
+  deliberately unnumbered statement panels. The shared style provides red
+  horizontal rules and 0.5em padding; keep proof text outside the panel.
+  Preserve labels and cross-references when restructuring statements.
+- Keep typography in shared styles. The native document uses the `Source
+  Pro` font master (Source Serif Pro for body text and Source Sans Pro for
+  headings), with 10pt body text. HTML sizing remains independently
+  controlled by the website stylesheet. Do not replace the shared master
+  with an individual font face that breaks TeXmacs family selection.
+
+After changing formulas, inspect the native source and exported mathematics.
+Check nested delimiters, norms, scripts, fractions and line breaks in HTML
+and a representative native PDF. Confirm that export succeeds without
+silently dropping or regrouping part of an expression. Draft previews are
+regenerated under `tmp/sao-preview/`; published pages follow the `src/` to
+`docs/` workflow above.
+
+## Publishing blog articles
+
+Blog articles belong to the Writings branch. A request to publish an article
+includes preparing its canonical source, exporting, committing the relevant
+files and pushing the website update. Ordinary editing or preview requests do
+not authorize publication.
+
+1. Start from the latest reviewed draft, including any edits saved by the
+   author in TeXmacs. Copy the native bytes into `src/zettels/<slug>.tm`;
+   this becomes the canonical published source. Keep unpublished drafts and
+   later articles out of the publication commit. Publish a proof companion
+   alongside its article as `src/zettels/<slug>-proofs.tm` when requested.
+2. Use the branch's existing `notes-meta` package, following nearby articles:
+   `<style|<tuple|notes|notes-meta>>` and `<notes-header>` before the title.
+   This supplies navigation back to Writings and the main page. Keep the
+   reviewed title, abstract and personal voice; remove draft labels and set
+   the publication date. Use a `notes-abstract` for the companion's summary
+   so the article index and feed have useful descriptions.
+3. Put article-specific assets beside the source in
+   `src/zettels/<slug>-assets/`. Check every relative path after moving out
+   of `drafts/`: links to shared downloads normally need `../../store/`,
+   links to teaching pages need `../teaching/`, and links between the article
+   and companion remain local. Use `notes-link` for native page links.
+   Preserve the TeXmacs byte encoding using the editing helper above.
+4. Add the article to `src/zettels/writings.tm`, normally with the newest
+   article first, using its reviewed title and publication date. Include a
+   clear link to the proof companion. The automatic all-articles index and
+   Atom feed are additional discovery routes; they do not replace this
+   manual Writings entry.
+5. Build the site with `./website.sh build` after substantive changes, or
+   `./website.sh update` for a small listing correction. Confirm the article,
+   companion and assets appear under `docs/zettels/`. Regenerate
+   `src/list-articles.tm`, `docs/list-articles.html`, `docs/notes.atom` and
+   `sitemap.xml` through the build. Do not hand-edit these generated indexes.
+6. If a page is moved or retired, remove its exact obsolete generated files
+   and update incoming links, the index, feed and sitemap. Do not create
+   redirects unless the user explicitly requests them. Never publish a
+   second full copy at the old path.
+7. Run the repository tests, inspect native and generated diffs, and verify
+   local links, anchors, downloads, diagrams, fonts and mathematics. Check
+   the Writings navigation and both directions of the article/companion
+   link. Inspect rendered output. No draft labels, private paths or links
+   to unpublished material should enter the public pages. Check stable
+   publication/update dates against Git history after committing sources.
+8. Inspect the working tree and stage only the requested publication and
+   its required assets, styles and generated discovery files. Preserve
+   unrelated local changes. Verify the remote branch has not advanced,
+   commit, and push to the configured GitHub Pages branch. Do not force-push.
+   If sources are committed before the final build, a second commit may
+   contain the generated output; this keeps feed dates consistent with Git.
+9. Wait for GitHub Pages to report a successful deployment of the pushed
+   commit. Verify the live `/docs/zettels/<slug>.html` pages, the Writings
+   entry, companion links and essential assets. Report the public links and
+   distinguish successful local preparation from a confirmed live deployment.
