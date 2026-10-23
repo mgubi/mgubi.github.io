@@ -355,11 +355,34 @@
   space, is identical. A unital Borel homomorphism with bounded pointwise
   weak continuity produces countably additive scalar measures by testing
   increasing unions of sets; multiplicativity upgrades its weak continuity to
-  strong continuity by the last displayed identity. Without that continuity,
-  evaluation of <math|f<around|(|n|)>> along a free ultrafilter is a
-  multiplicative state annihilating <math|C<rsub|0><around|(|\<bbb-R\>|)>>:
-  continuous cutoffs then all have value zero although they increase to one.
-  This proves the regularity warning in the post.
+  strong continuity by the last displayed identity.
+
+  For the elementary warning in the post, take
+  <math|\<cal-A\><rsub|+>> to consist of the bounded Borel functions having
+  an ordinary limit at <math|+\<infty\>>. The rules for limits show that
+  this is a unital <math|\<ast\>>-subalgebra of
+  <math|B<rsub|b><around*|(|\<bbb-R\>|)>> and that
+  <math|L<around*|(|f|)>=lim<rsub|x\<rightarrow\>+\<infty\>>f<around*|(|x|)>>
+  is linear, multiplicative and preserves conjugation. Also
+  <math|L<around*|(|1|)>=1> and <math|L<around*|(|f|)>=0> for every
+  <math|f\<in\>C<rsub|0><around*|(|\<bbb-R\>|)>>. Each
+  <math|\<chi\><rsub|n>=1<rsub|<around*|[|-n,n|]>>> lies in this algebra
+  and has limit zero at infinity, while
+  <math|\<chi\><rsub|n>\<uparrow\>1> pointwise. Thus
+  <math|L<around*|(|\<chi\><rsub|n>|)>=0> does not converge to
+  <math|L<around*|(|1|)>=1>. If a probability measure represented
+  <math|L> on this algebra, continuity from below would give
+  <math|\<mu\><around*|(|\<bbb-R\>|)>=lim<rsub|n\<rightarrow\>\<infty\>>\<mu\><around*|(|<around*|[|-n,n|]>|)>=0>,
+  contradicting total mass one. This example concerns the smaller algebra
+  <math|\<cal-A\><rsub|+>>, not a functional defined on all of
+  <math|B<rsub|b>>.
+
+  One cannot extend this formula by assigning zero to functions without a
+  limit. Indeed <math|f<around*|(|x|)>=cos<around*|(|\<pi\>x|)>> and
+  <math|g=1-f> are bounded continuous functions without limits at
+  <math|+\<infty\>>, whereas <math|f+g=1>. The proposed rule would give
+  <math|L<around*|(|f|)>+L<around*|(|g|)>=0> and
+  <math|L<around*|(|f+g|)>=1>, violating additivity.
 
   <section|The unbounded spectral theorem, with domains><label|sec:spectral>
 

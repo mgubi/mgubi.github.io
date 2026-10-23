@@ -10,14 +10,15 @@
 
   <\notes-abstract>
     This post begins a series in which I collect several results around the
-    notion of an observable, using it as an organizing principle for the theory
-    of unbounded self-adjoint operators. An observable can be understood through
-    the bounded functions we apply to it. Starting with Hermitian matrices and
-    random variables, we develop this viewpoint through spectral measures,
-    resolvents and unitary groups, and see why strong resolvent convergence is
-    a natural way to compare observables. The results are standard. The post
-    is mostly an invitation to functional analysis for those who, like me,
-    have struggled with the usual presentations of this subject.
+    notion of an observable, using it as an organizing principle for the
+    theory of unbounded self-adjoint operators. An observable can be
+    understood through the bounded functions we apply to it. Starting with
+    Hermitian matrices and random variables, we develop this viewpoint
+    through spectral measures, resolvents and unitary groups, and see why
+    strong resolvent convergence is a natural way to compare observables. The
+    results are standard. The post is mostly an invitation to functional
+    analysis for those who, like me, have struggled with the usual
+    presentations of this subject.
   </notes-abstract>
 
   <with|font-shape|italic|October 23, 2026.>
@@ -66,10 +67,10 @@
   I used this viewpoint in my <hlink|2018 quantum probability notes, Sheet
   6|../../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>, especially
   Section<nbsp>1, and in <hlink|the 2024 quantum mechanics notes, Note
-  2|../../store/oxford/ht2024/emqm-note-2.pdf>, Sections 4 and 7. In this post I
-  want to develop the dictionary between bounded functions, spectral measures
-  and self-adjoint coordinate operators, then explain why strong resolvent
-  convergence is a natural way to compare real observables.
+  2|../../store/oxford/ht2024/emqm-note-2.pdf>, Sections 4 and 7. In this
+  post I want to develop the dictionary between bounded functions, spectral
+  measures and self-adjoint coordinate operators, then explain why strong
+  resolvent convergence is a natural way to compare real observables.
 
   Familiarity with Hilbert spaces, bounded operators and measure theory
   should suffice. I have in mind students and readers who, like me, would
@@ -703,12 +704,15 @@
   nothing about the second convergence. On a core, the action of a closed
   operator determines its entire graph, hence the operator itself.
 
-  <with|font-series|bold|Core criterion.> If <math|A> is self-adjoint, then
-  <math|D<rsub|0>> is a core precisely when <math|<around*|(|A-z|)>D<rsub|0>>
-  is dense in <math|H>, for one (and hence every) nonreal <math|z>. Indeed
-  <math|A-z> is an isomorphism from its graph-norm domain onto <math|H>, with
-  inverse the bounded resolvent. Equivalently, the symmetric restriction to
-  <math|D<rsub|0>> is essentially self-adjoint and its closure is <math|A>.
+  <\notes-theorem>
+    <with|font-series|bold|Core criterion.> If <math|A> is self-adjoint, then
+    <math|D<rsub|0>> is a core precisely when
+    <math|<around*|(|A-z|)>D<rsub|0>> is dense in <math|H>, for one (and
+    hence every) nonreal <math|z>. Indeed <math|A-z> is an isomorphism from
+    its graph-norm domain onto <math|H>, with inverse the bounded resolvent.
+    Equivalently, the symmetric restriction to <math|D<rsub|0>> is
+    essentially self-adjoint and its closure is <math|A>.
+  </notes-theorem>
 
   The functional calculus supplies a canonical example:
 
@@ -721,7 +725,7 @@
   tend to zero because
 
   <\equation*>
-    <around*|\<\|\|\>|u-u<rsub|n>|\<\|\|\>><rsub|A><rsup|2>
+    <around*|<left|\<\|\|\>|1>|u-u<rsub|n>|<right|\<\|\|\>|1>><rsub|A><rsup|2>
     =<big|int><rsub|<around*|\||x|\|>\<gtr\>n><around*|(|1+x<rsup|2>|)>
     \<mu\><rsub|u><around*|(|\<mathd\>x|)>\<rightarrow\>0.
   </equation*>
@@ -791,15 +795,35 @@
 
   <subsection*|Optional example: what can go wrong at infinity>
 
-  Choose a free ultrafilter on the positive integers and assign to
-  <math|f\<in\>C<rsub|b><around*|(|\<bbb-R\>|)>> the ultrafilter limit of
-  <math|f<around*|(|n|)>>. This is a unital multiplicative functional, but it
-  annihilates <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. It cannot be
-  integration against a probability measure on <math|\<bbb-R\>>. The same
-  formula on <math|B<rsub|b>> gives value zero to every
-  <math|1<rsub|<around*|[|-n,n|]>>> although these functions increase
-  pointwise to 1. In the language of compactifications it is an evaluation at
-  infinity.
+  An ordinary limit already shows the issue, provided we restrict the class
+  of functions on which we take it. Let <math|\<cal-A\><rsub|+>> be the
+  algebra of bounded Borel functions on <math|\<bbb-R\>> that have a limit
+  at <math|+\<infty\>>, and set
+
+  <\equation*>
+    L<around*|(|f|)>=lim<rsub|x\<rightarrow\>+\<infty\>>f<around*|(|x|)>,
+    <space|2em>f\<in\>\<cal-A\><rsub|+>.
+  </equation*>
+
+  Ordinary limits preserve sums, products and complex conjugates, so
+  <math|L> is a unital <math|\<ast\>>-homomorphism. It vanishes on
+  <math|C<rsub|0><around*|(|\<bbb-R\>|)>>, but
+  <math|L<around*|(|1|)>=1>. It cannot be integration against a probability
+  measure on <math|\<bbb-R\>>: for every fixed <math|n>,
+  <math|\<chi\><rsub|n>=1<rsub|<around*|[|-n,n|]>>> belongs to
+  <math|\<cal-A\><rsub|+>> and has <math|L<around*|(|\<chi\><rsub|n>|)>=0>,
+  although <math|\<chi\><rsub|n>\<uparrow\>1>. A probability measure would
+  give integrals increasing to one.
+
+  There are two limits here, and their order matters. We first send
+  <math|x> to infinity with the interval fixed: eventually the point
+  <math|x> lies outside it. Increasing the interval afterwards still gives
+  zero. This is the simplest picture of mass escaping to infinity. The
+  functional is defined on <math|\<cal-A\><rsub|+>>, not on all bounded
+  Borel functions; assigning zero whenever a limit fails to exist would
+  destroy linearity. The example already shows why preserving algebraic
+  operations and the constant one does not by itself guarantee the
+  continuity required of an observable.
 
   <section*|6. Small families which remember the whole
   observable><label|sec:bounded-descriptions>
@@ -1293,19 +1317,20 @@
     1\U6|../../store/iam/quantum-probability-ss18/qp-sheet-6.pdf>. The three
     descriptions of a quantum random variable, Fourier reconstruction, the
     generator domain, and the Cayley transform. See also <hlink|Sheet 4,
-    Section<nbsp>2|../../store/iam/quantum-probability-ss18/qp-sheet-4.pdf> and
-    <hlink|Sheet 5|../../store/iam/quantum-probability-ss18/qp-sheet-5.pdf> for
-    spin central limits, quasi-characteristic functions and the construction
-    of the limiting Gaussian unitaries. <notes-link|Course
+    Section<nbsp>2|../../store/iam/quantum-probability-ss18/qp-sheet-4.pdf>
+    and <hlink|Sheet 5|../../store/iam/quantum-probability-ss18/qp-sheet-5.pdf>
+    for spin central limits, quasi-characteristic functions and the
+    construction of the limiting Gaussian unitaries. <notes-link|Course
     page|../teaching/lectures-quantum-probability-ss18.tm>.
 
     <item>M. Gubinelli, <em|Elements of Mathematical Quantum Mechanics>
     (2024), <hlink|Note 2|../../store/oxford/ht2024/emqm-note-2.pdf>,
     Section<nbsp>4, pp. 9\U11, and Section<nbsp>7, pp. 23\U33; <hlink|Lecture
-    5, pp. 5\U8|../../store/oxford/ht2024/emqm-lecture-5.pdf> and <hlink|Lecture
-    7|../../store/oxford/ht2024/emqm-lecture-7.pdf>. Homomorphisms as
-    observables, Bochner and Bernstein reconstruction, and positive-energy
-    evolution. <notes-link|Course page|../teaching/lectures-tcc-emqm-tt24.tm>.
+    5, pp. 5\U8|../../store/oxford/ht2024/emqm-lecture-5.pdf> and
+    <hlink|Lecture 7|../../store/oxford/ht2024/emqm-lecture-7.pdf>.
+    Homomorphisms as observables, Bochner and Bernstein reconstruction, and
+    positive-energy evolution. <notes-link|Course
+    page|../teaching/lectures-tcc-emqm-tt24.tm>.
 
     <item>M. Reed and B. Simon, <em|Methods of Modern Mathematical Physics,
     I: Functional Analysis>, revised and enlarged edition, Academic Press,
