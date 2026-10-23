@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <style|source>
 
@@ -24,11 +24,13 @@
 
   <\active*>
     <\src-comment>
-      Fix for typewriter font
+      Website fonts. TeXmacs uses Source Pro as the shared master for Source
+      Serif Pro (roman) and Source Sans Pro (sans serif).
     </src-comment>
   </active*>
 
-  <assign|font|typewriter=roman,Linux Libertine>\ 
+  <assign|font|mathlarge=TeX Gyre Pagella,typewriter=Source Code
+  Pro,Source Pro>
 
   <\active*>
     <\src-comment>
@@ -38,7 +40,33 @@
 
   <assign|full-screen-mode|false>
 
-  <assign|font-base-size|11>
+  <assign|font-base-size|10>
+
+  <assign|notes-title-color|#9a2727>
+
+  <assign|notes-text-color|#292222>
+
+  <assign|notes-background-color|#f9f9f9>
+
+  <assign|color|<value|notes-text-color>>
+
+  <assign|bg-color|<value|notes-background-color>>
+
+  <assign|locus-color|#5b7077>
+
+  <assign|visited-color|#9a2727>
+
+  <assign|par-line-sep|0.2fn>
+
+  <assign|par-sep|0.5fn>
+
+  <assign|notes-heading|<macro|body|<with|font|Source Pro|font-family|ss|font-series|bold|color|<value|notes-title-color>|<arg|body>>>>
+
+  <assign|sectional-normal-bold|<macro|name|<style-with|src-compact|none|<sectional-normal|<notes-heading|<arg|name>>>>>>
+
+  <assign|sectional-centered-bold|<macro|name|<style-with|src-compact|none|<sectional-centered|<notes-heading|<arg|name>>>>>>
+
+  <assign|sectional-short-bold|<macro|name|<style-with|src-compact|none|<sectional-short|<notes-heading|<arg|name>>>>>>
 
   <assign|page-medium|papyrus>
 
@@ -154,7 +182,27 @@
 
   <assign|tmhtml-notes-header-xxx|<macro|<html-div-class|notes-header|<notes-header-image><space|2pt><notes-header-links><html-div-class|notes-header-name|<notes-header-name>>>>>
 
-  <assign|notes-abstract|<macro|body|<small|<arg|body>>>>
+  <assign|notes-theorem|<\macro|body>
+    <\padded>
+      <\with|color|<value|notes-title-color>>
+        <\wide-tabular>
+          <tformat|<twith|table-width|1par>|<twith|table-hyphen|y>|<cwith|1|1|1|1|cell-hyphen|t>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-tborder|0.5ln>|<cwith|1|1|1|1|cell-bborder|0.5ln>|<cwith|1|1|1|1|cell-lsep|0.5em>|<cwith|1|1|1|1|cell-rsep|0.5em>|<cwith|1|1|1|1|cell-tsep|0.5em>|<cwith|1|1|1|1|cell-bsep|0.5em>|<table|<row|<\cell>
+            <with|color|<value|notes-text-color>|<arg|body>>
+          </cell>>>>
+        </wide-tabular>
+      </with>
+    </padded>
+  </macro>>
+
+  <assign|tmhtml-notes-theorem|<macro|body|<html-div-class|notes-theorem|<arg|body>>>>
+
+  <assign|render-theorem|<\macro|which|body>
+    <\notes-theorem>
+      <surround|<theorem-name|<arg|which><theorem-sep>>|<yes-indent*>|<with|font-shape|italic|<arg|body>>>
+    </notes-theorem>
+  </macro>>
+
+  <assign|notes-abstract|<macro|body|<with|font-shape|italic|<arg|body>>>>
 
   <assign|tmhtml-notes-abstract|<\macro|body>
     <style-with|src-compact|all|<html-div-class|notes-abstract|<arg|body>>>

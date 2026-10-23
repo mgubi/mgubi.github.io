@@ -32,6 +32,7 @@ fi
 
 cmd='(begin (display* "$LC_ALL :" (getenv "LC_ALL") "\n" "$PWD    :" (getenv "PWD") "\n") \
             (load (url->unix "$PWD/notes-tools.scm")) \
+            (font-database-extend-local (url-append (getenv "PWD") "resources/fonts/source")) \
             (style-clear-cache) \
             (notes-'$op') \
             (string-save "done" (getenv "NOTES_BUILD_MARKER")))'

@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Proofs and complements: the basic idea — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This companion proves the foundations used in the post: spectral reconstruction, domains, cores, resolvents, scalar inversion, unitary groups, Cayley transforms and convergence of observables. The pullback arguments follow the spectral construction because their proofs use it; the final section iden">
+    <link rel="canonical" href="https://mgubi.github.io/docs/self-adjoint-operators-proofs.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+  </head>
+  <body>
+    <h1 id="auto-1">Proofs and complements: the basic idea<span style="margin-left: 1em"></span></h1>
+    <p>
+      <i>Observables \(\cdot\) Companion I. October 23, 2026.</i>
+    </p>
+    <p>
+      Companion to <a href="self-adjoint-operators.html">the introductory post</a>.
+    </p>
+    <div class="notes-abstract">
+      <p>
+        This companion proves the foundations used in the post: spectral
+        reconstruction, domains, cores, resolvents, scalar inversion, unitary
+        groups, Cayley transforms and convergence of observables. The pullback
+        arguments follow the spectral construction because their proofs use
+        it; the final section identifies the equivalent tests for convergence.
+      </p>
+    </div>
+    <p>
+      Each operator includes its domain. Inner products are conjugate-linear
+      in the first argument and linear in the second. Section and theorem
+      numbers are local to this companion; references to another companion
+      name its part explicitly.
+    </p>
+    <p>
+      The background is that of a first graduate course: completeness and
+      orthogonal projection in Hilbert spaces, the closed graph and uniform
+      boundedness theorems, Hahn&ndash;Banach, Banach&ndash;Alaoglu, the
+      bicommutant theorem, elementary Banach-algebra spectral theory, the
+      Radon&ndash;Nikodym and Carath&eacute;odory extension theorems, Fubini
+      and dominated convergence, and Fourier analysis and Sobolev spaces on
+      Euclidean domains. We spell out the spectral, extension and perturbation
+      arguments instead of treating the unbounded spectral theorem as an
+      unexplained prerequisite. When an analytic lemma is needed for the more
+      advanced examples, it is stated where it is used. Historical remarks and
+      descriptions of research programmes in the post are not additional
+      mathematical hypotheses.
+    </p>
+    <p>
+      <b>Contents.</b>
+    </p>
+    <ol>
+      <li>
+        <p>
+          <a href="#sec:prelim">Domains, adjoints and positive functionals</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:bounded">Bounded commutative algebras and their spectral
+          measures</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:spectral">The unbounded spectral theorem, with domains</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:core">Cores and resolvent coordinates</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:transforms">Cauchy inversion and cyclic observables</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:stone">Unitary groups and Fourier reconstruction</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:cayley">The Cayley correspondence</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:probability">Random variables and pullbacks</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:convergence">Convergence of observables and resolvent tests</a>
+        </p>
+      </li>
+    </ol>
+    <h2 id="auto-2"><a id="sec:prelim"></a>1<span style="margin-left: 1em"></span>Domains, adjoints and positive
+    functionals<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Lemma <span style="font-style: normal">1</span>. </strong><i>[Adjoints and the
+        two-range criterion]<a id="lem:range"></a> For a densely defined operator \(S\),
+        its adjoint is closed and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \text{Ran} (S - z)^{\perp} = \ker (S^{\ast} -
+          \bar{z}) .\)
+        </div></div>
+      </p>
+      <p>
+        <i>A densely defined symmetric operator is closable. If it is closed,
+        the ranges of \(S \pm i\) are closed. A densely defined symmetric
+        operator is self-adjoint if and only if both \(S - i\) and \(S + i\)
+        are onto.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The definition of \(S^{\ast} v = w\) is
+      \(\langle Su, v \rangle = \langle u, w \rangle\) for every \(u \in D
+      (S)\). Passing to limits in this identity proves closedness of
+      \(S^{\ast}\); applying it with \(w = \bar{z} v\) gives the
+      orthogonal-complement identity. If \(S\) is symmetric, \(D (S) \subset D
+      (S^{\ast})\), so \(D (S^{\ast})\) is dense. A sequence \(u_n \to 0\)
+      with \(Su_n \to v\) satisfies \(\langle v, w \rangle = 0\) for every \(w
+      \in D (S^{\ast})\), hence \(v = 0\). Its graph closure is therefore an
+      operator graph.
+    </p>
+    <p>
+      For symmetric \(S\) and \(z = x + iy\), expanding the norm gives
+    </p>
+    <div class="center">
+      \(\displaystyle \|(S - z) u\|^2 = \|(S - x) u\|^2 + y^2  \|u\|^2 .\)
+    </div>
+    <p>
+      If \(S\) is closed and \((S - z) u_n\) converges with \(y \ne 0\), this
+      identity makes \(u_n\) Cauchy; \(Su_n = (S - z) u_n + zu_n\) also
+      converges. Closedness gives a limit in the range. If \(S = S^{\ast}\),
+      the orthogonal-complement identity and the same estimate show that this
+      closed range is dense, hence all of \(H\).
+    </p>
+    <p style="margin-bottom: 1em">
+      Conversely suppose both ranges at \(\pm i\) are all of \(H\). Given \(v
+      \in D (S^{\ast})\), solve \((S - i) u = (S^{\ast} - i) v\). Then \(v - u
+      \in \ker (S^{\ast} - i) = \text{Ran} (S + i)^{\perp} = 0\). Thus \(D
+      (S^{\ast}) \subset D (S)\), and equality of operators follows. This
+      argument does not presume that \(S\) is closed; self-adjointness proves
+      it.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">2</span>.
+        </strong><i>[Riesz&ndash;Markov on the real line]<a id="prop:riesz"></a> A bounded
+        positive functional \(\ell\) on \(C_0 (\mathbb{R})\) is integration
+        against a unique finite Radon measure \(\mu\), and \(\mu (\mathbb{R})
+        = \| \ell \|\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Here are the measure-construction details. For
+      open \(G\) set
+    </p>
+    <div class="center">
+      \(\displaystyle m (G) = \sup \{\ell (f) : f \in C_c (\mathbb{R}), 0 \le
+      f \le 1, \text{supp} f
+\subset G\}, \qquad \mu^{\ast} (A) = \inf_{G
+      \supset A, G \text{open}} m (G) .\)
+    </div>
+    <p>
+      All these numbers lie in \([0, \| \ell \|]\). Monotonicity is immediate.
+      If \(G \subset \bigcup_j G_j\) and \(f\) is an admissible test for
+      \(G\), its compact support has a finite subcover. A continuous partition
+      of unity for that finite cover decomposes \(f = \sum_j f_j\) with \(0
+      \le f_j \le 1\) and support in \(G_j\). Hence \(\ell (f) \le \sum_j m
+      (G_j)\), proving countable subadditivity for open sets and then for
+      \(\mu^{\ast}\) by outer approximation. If \(G_1, G_2\) are disjoint open
+      sets, admissible tests add without exceeding one; taking suprema gives
+      \(m (G_1 \cup G_2) \ge m (G_1) + m (G_2)\). For sets at positive
+      distance, disjoint open neighbourhoods inside any prescribed open cover
+      give the same inequality for \(\mu^{\ast}\). Thus \(\mu^{\ast}\) is a
+      metric outer measure. Carath&eacute;odory's theorem makes all Borel sets
+      measurable; write \(\mu\) for the restriction. Since \(m\) is monotone
+      and \(G\) itself is an allowed outer approximation, \(\mu (G) = m (G)\).
+    </p>
+    <p>
+      We verify the integral identity, rather than assuming it in the
+      construction. Let \(f \ge 0\) be continuous with compact support, and
+      partition its range into intervals of length \(h\). For each positive
+      level \(jh\), the open set \(G_j = \{f > jh\}\) has mass \(\sup \ell
+      (g)\) over compactly supported \(0 \le g \le 1_{G_j}\). Choose finitely
+      many such \(g_j\) with \(\ell (g_j)\) arbitrarily close to \(\mu
+      (G_j)\). Since \(h \sum_{j \ge 1} g_j \le f\), positivity yields
+    </p>
+    <div class="center">
+      \(\displaystyle h \sum_{j \ge 1} \mu (f > jh) \le \ell (f) .\)
+    </div>
+    <p>
+      For the reverse inequality choose a compactly supported cutoff \(\chi\)
+      equal to one on \(\text{supp} f\) and continuous functions \(h_j\) equal
+      to one on \(\{f \ge jh\}\), supported in \(\{f > (j - 1) h\}\), for \(j
+      \ge 2\). Then \(f \le 2 h \chi + h \sum_{j \ge 2} h_j\) and
+    </p>
+    <div class="center">
+      \(\displaystyle \ell (f) \le 2 h \| \ell \| + h \sum_{j \ge 2} \mu (f >
+      (j - 1) h) .\)
+    </div>
+    <p>
+      The upper and lower sums converge, as \(h \downarrow 0\), to
+      \(\int_0^{\infty} \mu (f > t)  \hspace{0.17em} dt = \int f
+      \hspace{0.17em} d \mu\). This proves the identity on nonnegative
+      \(C_c\), hence on all of \(C_c\) by linearity. Uniform approximation by
+      compactly supported cutoffs extends it to \(C_0\).
+    </p>
+    <p style="margin-bottom: 1em">
+      Every open set is an increasing union of compact subsets, for example
+      \(\{x \in [- n, n] : \text{dist} (x, G^c) \ge 1 / n\}\). Countable
+      continuity gives inner regularity on open sets. Outer regularity is
+      built into \(\mu^{\ast}\); finiteness and passage to complements give
+      inner regularity on every Borel set. The measure is Radon. Continuous
+      cutoffs increasing to one give \(\mu (\mathbb{R}) \le \| \ell \|\),
+      while \(| \ell (f) | \le \mu (\mathbb{R}) \|f\|_{\infty}\) gives the
+      reverse inequality. Finally any Radon measure representing \(\ell\) has
+      the displayed formula for its mass on open sets, by compact
+      approximation and continuous cutoffs, so is unique.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The same proof works on a second-countable locally compact Hausdorff
+      space: use a compact exhaustion and finite partitions of unity. We will
+      use that version for manifolds. We also use the elementary consequence
+      that finite Borel measures on such a space are Radon. One proof is to
+      check inner and outer approximation first on open sets using a countable
+      relatively compact base; the sets with both approximation properties
+      form a sigma-algebra, since the measure is finite.
+    </p>
+    <h2 id="auto-3"><a id="sec:bounded"></a>2<span style="margin-left: 1em"></span>Bounded commutative algebras and
+    their spectral measures<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">3</span>. </strong><i>[Gelfand
+        representation and the bounded normal calculus]<a id="thm:gelfand"></a> A
+        commutative unital \(C^{\ast}\)-algebra \(\mathcal{A}\) is canonically
+        isometrically \(\ast\)-isomorphic to \(C (K)\), where \(K\) is its
+        compact space of characters. In particular a bounded normal operator
+        \(T\) has a unique continuous calculus on its compact spectrum,
+        sending the coordinate function to \(T\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Characters have norm one: \(\chi (1) = 1\) and
+      \(\chi (a)\) belongs to the spectrum of \(a\), so \(| \chi (a) | \le
+      \|a\|\). The character equations define a weak-star closed subset of the
+      unit ball of \(\mathcal{A}^{\ast}\); weak-star compactness therefore
+      makes \(K\) compact. Maximal ideals in a unital commutative Banach
+      algebra are closed: a proper ideal cannot contain an element within
+      distance less than one of the identity, since that element is
+      invertible. The quotient by a maximal ideal is a complex Banach division
+      algebra and is \(\mathbb{C}\) by the Gelfand&ndash;Mazur theorem. Thus
+      every spectral value of \(a\) equals \(\chi (a)\) for a character: apply
+      this to a maximal ideal containing \(a - \lambda 1\).
+    </p>
+    <p>
+      For self-adjoint \(a\) the spectrum is real, and hence \(\chi (a^{\ast})
+      = \overline{\chi (a)}\) by splitting an arbitrary \(a\) into its real
+      and imaginary self-adjoint parts. The \(C^{\ast}\)-identity and the
+      spectral-radius formula give \(r (a) = \|a\|\) for normal \(a\):
+      repeated squaring gives \(\|a^{2^n} \| = \|a\|^{2^n}\). All elements of
+      a commutative \(C^{\ast}\)-algebra are normal, so the Gelfand map \(a
+      \mapsto \hat{a}\), \(\hat{a} (\chi) = \chi (a)\), is isometric. Its
+      image is closed, self-adjoint, contains the constants and separates
+      characters. The complex Stone&ndash;Weierstrass theorem makes it all of
+      \(C (K)\).
+    </p>
+    <p>
+      For completeness, the approximation step in that theorem follows from
+      its real version. The closure of a real separating algebra containing
+      constants is a lattice: uniform polynomial approximation to \(|t|\) on
+      bounded intervals gives \(|f|\), and hence maxima and minima. Given \(f
+      \in C (K, \mathbb{R})\) and \(\varepsilon > 0\), separation and affine
+      rescaling give, for each pair \(x, y\), an algebra element agreeing with
+      \(f\) at \(x, y\). For fixed \(x\), finitely many neighbourhoods of
+      \(y\) cover \(K\); the minimum of their chosen functions is below \(f +
+      \varepsilon\) everywhere and agrees with \(f\) at \(x\). Finitely many
+      neighbourhoods of \(x\) then cover \(K\); their maximum lies between \(f
+      - \varepsilon\) and \(f + \varepsilon\). This proves density.
+      Complexification proves the version just used.
+    </p>
+    <p style="margin-bottom: 1em">
+      Apply the representation to \(C^{\ast}  (I, T)\). Its characters are
+      determined by \(\chi (T)\), because polynomials in \(T, T^{\ast}\) are
+      dense, and their range is the spectrum of \(T\). Spectral permanence for
+      a unital \(C^{\ast}\)-subalgebra identifies this with the operator
+      spectrum; it follows, for instance, by constructing inverses through
+      continuous approximation to \(1 / t\) for positive elements bounded away
+      from zero. This yields the asserted calculus and its uniqueness.<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The locally compact Stone&ndash;Weierstrass theorem follows by adjoining
+      constants on the one-point compactification: a self-adjoint subalgebra
+      of \(C_0 (X)\) which separates points and vanishes at no point is dense.
+      A \(\ast\)-homomorphism of \(C^{\ast}\)-algebras is contractive, since
+      it preserves positivity in unitizations and \(a^{\ast} a \le \|a\|^2
+      I\); taking norms of the image proves the assertion.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">4</span>. </strong><i>[Representations
+        give projection-valued measures]<a id="thm:pvm"></a> Let \(\Phi : C_0
+        (\mathbb{R}) \to B (H)\) be a nondegenerate \(\ast\)-homomorphism.
+        There is a unique projection-valued measure \(E\) with \(E
+        (\mathbb{R}) = I\) and \(\Phi (f) = \int f \hspace{0.17em} dE\). The
+        extension to bounded Borel functions is multiplicative, preserves
+        adjoints, and satisfies bounded pointwise strong convergence.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>For \(u \in H\), positivity and contractivity
+      make \(f \mapsto \langle u, \Phi (f) u \rangle\) a bounded positive
+      functional. Proposition&nbsp;<a href="#prop:riesz">2</a> gives \(\mu_u\). The
+      parallelogram and complex polarization identities pass to measures by
+      uniqueness. Thus
+    </p>
+    <div class="center">
+      \(\displaystyle \mu_{u, v} = \tfrac{1}{4} (\mu_{u + v} - \mu_{u - v} - i
+      \mu_{u + iv} + i
+\mu_{u - iv})\)
+    </div>
+    <p>
+      is conjugate-linear in \(u\), linear in \(v\), and represents \(\langle
+      u, \Phi (f) v \rangle\). For every Borel set \(B\), positivity of
+      \(\mu_{u + tv} (B)\) for complex \(t\) gives \(| \mu_{u, v} (B) |^2 \le
+      \mu_u (B) \mu_v (B)\).
+    </p>
+    <p>
+      If \(0 \le \chi_n \le 1\) are compactly supported cutoffs increasing to
+      one, then \(\Phi (\chi_n) \Phi (g) v \to \Phi (g) v\) by uniform
+      convergence of \(\chi_n g\) to \(g\). Nondegeneracy and the uniform norm
+      bound extend this to every vector. Consequently \(\mu_u (\mathbb{R}) =
+      \|u\|^2\) and the sesquilinear form \(\mu_{u, v} (B)\) defines a
+      positive contraction \(E (B)\). More generally integration of a bounded
+      Borel \(f\) defines an operator \(\Psi (f)\) of norm at most
+      \(\|f\|_{\infty}\): for simple \(f = \sum c_j 1_{B_j}\) on disjoint
+      sets, Cauchy&ndash;Schwarz over the partition bounds \(| \sum c_j
+      \mu_{u, v} (B_j) |\) by \(\|f\|_{\infty} \|u\| \|v\|\); uniform simple
+      approximation proves the general assertion.
+    </p>
+    <p>
+      We justify multiplication before using any projection property. For \(g
+      \in C_0\) and any \(u, v\), uniqueness of the representing measures for
+      \(f \mapsto \langle u, \Phi (f) \Phi (g) v \rangle\) gives
+    </p>
+    <div class="center">
+      \(\displaystyle \mu_{u, \Phi (g) v} (B) = \int_B g \hspace{0.17em} d
+      \mu_{u, v} .\)
+    </div>
+    <p>
+      Hence \(\Psi (f) \Phi (g) = \Psi (fg)\) for bounded Borel \(f\). The
+      class of bounded Borel \(g\) for which this identity holds for every
+      bounded Borel \(f\) contains \(C_0\) and constants and is closed under
+      uniformly bounded pointwise limits: both sides converge weakly by
+      dominated convergence of scalar measures. The functional monotone-class
+      theorem, applied to the algebra \(C_0 +\mathbb{C}1\) generating the
+      Borel sets, gives all bounded Borel \(g\). Thus \(\Psi (f) \Psi (g) =
+      \Psi (fg)\); the adjoint identity follows directly from polarization. In
+      particular \(E (B)^2 = E (B) = E (B)^{\ast}\).
+    </p>
+    <p>
+      Disjoint projections are orthogonal. If \(B = \bigcup B_j\) disjointly,
+      scalar countable additivity and orthogonality show \(E (B) u = \sum_j E
+      (B_j) u\) in norm. Finally
+    </p>
+    <div class="center">
+      \(\displaystyle \| \Psi (f_n - f) u\|^2 = \int |f_n - f|^2
+      \hspace{0.17em} d \mu_u
+\longrightarrow 0\)
+    </div>
+    <p style="margin-bottom: 1em">
+      under bounded pointwise convergence. Uniqueness follows from scalar
+      Riesz&ndash;Markov on \(C_0\) and the same monotone-class argument. This
+      proves every assertion without presupposing that the initially
+      constructed positive operators \(E (B)\) were projections.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The proof for a compact spectrum, or for a second-countable locally
+      compact space, is identical. A unital Borel homomorphism with bounded
+      pointwise weak continuity produces countably additive scalar measures by
+      testing increasing unions of sets; multiplicativity upgrades its weak
+      continuity to strong continuity by the last displayed identity. Without
+      that continuity, evaluation of \(f (n)\) along a free ultrafilter is a
+      multiplicative state annihilating \(C_0 (\mathbb{R})\): continuous
+      cutoffs then all have value zero although they increase to one. This
+      proves the regularity warning in the post.
+    </p>
+    <h2 id="auto-4"><a id="sec:spectral"></a>3<span style="margin-left: 1em"></span>The unbounded spectral theorem,
+    with domains<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">5</span>. </strong><i>[Spectral
+        integrals and the observable correspondence]<a id="thm:unbounded"></a> For a
+        normalized projection-valued measure \(E\) on \(\mathbb{R}\) and a
+        real Borel function \(g\), define</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle D (g (E)) = \Biggl\{ u : \int | g |^2
+          \hspace{0.17em} d \mu_u < \infty
+\Biggr\}, \qquad g (E) u = \lim_{n
+          \to \infty}  \int g 1_{\{|g| \le n\}}
+\hspace{0.17em} dE
+          \hspace{0.17em} u.\)
+        </div></div>
+      </p>
+      <p>
+        <i>This is a self-adjoint operator. Taking \(g (x) = x\) establishes a
+        bijection between normalized spectral measures, nondegenerate
+        representations of \(C_0 (\mathbb{R})\), and self-adjoint
+        operators.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The truncations are Cauchy precisely when the
+      indicated integral is finite, because the squared norm of their
+      difference is the integral of the squared difference of their
+      multipliers. The projections \(1_{\{|g| \le n\}} (E)\) increase strongly
+      to \(I\), so the domain is dense. Truncation and passage to limits give
+      symmetry. For \(z \not\in \mathbb{R}\), the bounded multiplier \((g -
+      z)^{- 1}\) maps \(H\) into \(D (g (E))\), since \(|g / (g - z) |\) is
+      bounded. Multiplication of truncated integrals followed by norm
+      convergence gives
+    </p>
+    <div class="center">
+      \(\displaystyle (g (E) - z)  \hspace{0.17em} (g - z)^{- 1} (E) = I,
+      \qquad (g - z)^{- 1} (E)
+(g (E) - z) u = u \quad (u \in D (g (E))) .\)
+    </div>
+    <p>
+      Both nonreal ranges are therefore onto. Lemma&nbsp;<a href="#lem:range">1</a> proves
+      self-adjointness, including closedness.
+    </p>
+    <p>
+      Conversely let \(A = A^{\ast}\). Its bounded resolvent exists by
+      Lemma&nbsp;<a href="#lem:range">1</a>. Define
+    </p>
+    <div class="center">
+      \(\displaystyle V = (A - i)  (A + i)^{- 1} = I - 2 i (A + i)^{- 1} .\)
+    </div>
+    <p>
+      For \(h = (A + i) u\) the norm identity in that lemma gives \(\|Vh\| =
+      \|h\|\); surjectivity of \(A - i\) makes \(V\) unitary. Also \(\ker (I -
+      V) = 0\). Apply the bounded normal calculus of Theorem&nbsp;<a href="#thm:gelfand">3</a>
+      and Theorem&nbsp;<a href="#thm:pvm">4</a> on the circle to obtain its spectral
+      measure \(F\). Since \(F (\{1\}) H = \ker (I - V) = 0\), the inverse
+      Cayley function
+    </p>
+    <div class="center">
+      \(\displaystyle a (\zeta) = i \frac{1 + \zeta}{1 - \zeta}  \quad (\zeta
+      \ne 1)\)
+    </div>
+    <p>
+      defines a real spectral integral \(B = a (F)\). Its resolvent at \(- i\)
+      is \((I - V) / (2 i) = (A + i)^{- 1}\). Equality of these injective
+      operators gives equality of ranges, hence \(D (B) = D (A)\), and
+      inversion on that range gives \(B = A\). Push \(F\) forward under \(a\)
+      to obtain \(E\) on the line. Its continuous calculus is nondegenerate by
+      dominated convergence of cutoffs.
+    </p>
+    <p style="margin-bottom: 1em">
+      These constructions are inverse. Indeed the Cayley transform of \(\int x
+      \hspace{0.17em} dE\) is \(\int (x - i) / (x + i)  \hspace{0.17em} dE\),
+      whose bounded normal calculus is unique. Thus its circle spectral
+      measure, and then \(E\), are unique. Theorem&nbsp;<a href="#thm:pvm">4</a>
+      identifies the equivalent representation of \(C_0\). This also proves
+      uniqueness of the bounded Borel extension, rather than adding it as an
+      assumption.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">6</span>. </strong><i>[Spectrum,
+        support and boundedness] For \(A = \int x \hspace{0.17em} dE\), the
+        support of \(E\) is \(\sigma (A)\). For every bounded Borel function
+        \(f\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \|f (A)\| = \text{ess sup}_E | f | .\)
+        </div></div>
+      </p>
+      <p>
+        <i>Consequently \(\ker \Phi_A\) consists of the continuous functions
+        vanishing on \(\sigma (A)\), and \(A\) is bounded exactly when \(E\)
+        is supported in a bounded interval.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>The upper norm estimate follows from \(\|f (A)
+      u\|^2 = \int |f|^2 d \mu_u\). If \(E (\{|f| > c\}) \ne 0\), choose a
+      unit vector in that range; its image has norm at least \(c\). This
+      proves the norm formula. A real \(\lambda\) outside the support has a
+      neighbourhood with zero projection, so \((x - \lambda)^{- 1}\) is
+      bounded on the support and gives a bounded inverse of \(A - \lambda\).
+      If every neighbourhood of \(\lambda\) has nonzero projection, unit
+      vectors \(u_n \in E ((\lambda - 1 / n, \lambda + 1 / n)) H\) belong to
+      \(D (A)\) and satisfy \(\|(A - \lambda) u_n \| \le 1 / n\). No bounded
+      inverse can exist. The support is therefore the spectrum. The remaining
+      assertions follow by applying the norm formula to continuous functions
+      and to coordinate truncations.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-5"><a id="sec:core"></a>4<span style="margin-left: 1em"></span>Cores and resolvent
+    coordinates<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">7</span>. </strong><i>[Graph norms
+        and cores] If \(A = A^{\ast}\) and \(z \not\in \mathbb{R}\), \(A - z :
+        D (A) \to H\) is a continuous bijection for the graph norm, with
+        continuous inverse. Thus a linear subspace \(D_0 \subset D (A)\) is a
+        core if and only if \((A - z) D_0\) is dense. The union of the bounded
+        spectral subspaces \(E ([- n, n]) H\) is a core for \(A\) and for
+        every power of \(A\) on its domain.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The graph norm is \(\|u\|_A = (\|u\|^2
+      +\|Au\|^2)^{1 / 2}\). We have \(\|(A - z) u\| \le \|Au\| + |z| \|u\|\).
+      Conversely \(\|u\| \le | \text{Im} z|^{- 1}  \|(A - z) u\|\) and
+      \(\|Au\| \le \|(A - z) u\| + |z| \|u\|\). These estimates and
+      surjectivity prove the isomorphism and the density criterion. For \(u
+      \in D (A)\),
+    </p>
+    <div class="center">
+      \(\displaystyle \|u - E ([- n, n]) u\|_A^2 = \int_{|x| > n} (1 + x^2)
+      \hspace{0.17em} d \mu_u
+\to 0.\)
+    </div>
+    <p style="margin-bottom: 1em">
+      Replace \(x^2\) by \(x^{2 k}\) for \(A^k\). A restriction to a core has
+      closure \(A\). Conversely an essentially self-adjoint restriction of
+      \(A\) has self-adjoint closure contained in \(A\), and self-adjoint
+      operators have no proper symmetric extensions; therefore that closure
+      equals \(A\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">8</span>. </strong><i>[A single
+        resolvent and the resolvent identities] At every nonreal \(z\), \(R_A
+        (z) = (A - z)^{- 1}\) is bounded with norm at most \(| \text{Im} z
+        |^{- 1}\), and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle D (A) = \text{Ran} R_A (z), \quad A = z + R_A (z)^{-
+          1}, \quad R_A (z)^{\ast}
+= R_A (\bar{z}), \quad R_A (z) - R_A (w) =
+          (z - w) R_A (z) R_A (w) .\)
+        </div></div>
+      </p>
+      <p>
+        <i>The nonunital \(\ast\)-algebra generated by \(r_z (x) = (x - z)^{-
+        1}\) is uniformly dense in \(C_0 (\mathbb{R})\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>The norm bound and range statements were proved
+      above. The adjoint and difference formulas follow by applying the
+      bounded calculus to the corresponding scalar identities; thus no
+      unbounded product is being manipulated. The function \(r_z\) never
+      vanishes and separates points. Its conjugate is included in the
+      generated algebra, so the locally compact Stone&ndash;Weierstrass
+      theorem applies. Equality of one resolvent identifies the domain by its
+      range and the action by its inverse, even without using the density
+      assertion.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-6"><a id="sec:transforms"></a>5<span style="margin-left: 1em"></span>Cauchy inversion and cyclic
+    observables<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">9</span>. </strong><i>[Stieltjes
+        inversion and its qualifications] For a finite positive measure
+        \(\mu\), put \(m (z) = \int (x - z)^{- 1} d \mu (x)\). This is
+        holomorphic off the real line, has nonnegative imaginary part above
+        the line, and determines \(\mu\). More precisely \(\pi^{- 1} \text{Im}
+        m (s + i \varepsilon)  \hspace{0.17em} ds\) converges weakly to
+        \(\mu\) against every bounded continuous function. Moreover, for \(a <
+        b\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \lim_{\varepsilon \downarrow 0}  \frac{1}{\pi}
+          \int_a^b \text{Im} m (s + i
+\varepsilon)  \hspace{0.17em} ds = \mu
+          ((a, b)) + \tfrac{1}{2} \mu (\{a, b\}),
+\quad \lim_{\varepsilon
+          \downarrow 0} \varepsilon \text{Im} m (a + i
+\varepsilon) = \mu
+          (\{a\}),\)
+        </div></div>
+      </p>
+      <p>
+        <i>and \(- iy \hspace{0.17em} m (iy) \to \mu (\mathbb{R})\) as \(y \to
+        \infty\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>On a compact subset off the real line, the
+      integrand and all its complex derivatives are uniformly bounded by
+      constants integrable against the finite measure. Differentiation under
+      the integral proves holomorphy. Its imaginary part is \(\int \varepsilon
+      / ((x - s)^2 + \varepsilon^2)  \hspace{0.17em} d \mu (x)\). The kernel
+      \(P_{\varepsilon} (t) = \varepsilon / (\pi (t^2 + \varepsilon^2))\) has
+      integral one. For each fixed \(x\) and bounded continuous \(f\), split
+      \(\int P_{\varepsilon} (t)  (f (x + t) - f (x)) dt\) at \(|t| =
+      \delta\); continuity controls the inner part and \(\int_{|t| > \delta}
+      P_{\varepsilon} \to 0\) the outer part. Thus \(P_{\varepsilon} \ast f
+      (x) \to f (x)\), bounded by \(\|f\|_{\infty}\). Fubini and dominated
+      convergence give weak convergence and hence uniqueness by
+      Riesz&ndash;Markov.
+    </p>
+    <p style="margin-bottom: 1em">
+      Integrating the kernel over \((a, b)\) gives the difference of two
+      arctangents divided by \(\pi\). Its limit is the indicator of the
+      interval with value \(1 / 2\) at either endpoint. It is bounded between
+      zero and one, so dominated convergence proves the first formula. For the
+      atom formula the integrand is \(\varepsilon^2 / ((x - a)^2 +
+      \varepsilon^2)\), bounded by one and tending to \(1_{\{a\}}\). Finally
+      \(- iy / (x - iy) \to 1\) with modulus at most one, proving the mass
+      formula.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The boundary density assertion in the post is stronger than weak
+      inversion but follows from measure differentiation. Write \(\mu = f
+      \hspace{0.17em} dx + \mu_s\). At almost every \(s\), \(s\) is a Lebesgue
+      point of \(f\) and \(\mu_s ((s - r, s + r)) / (2 r) \to 0\). For a
+      positive measure \(\nu\) with this last density zero, split its Poisson
+      integral into dyadic annuli \(2^k \varepsilon \le |x - s| < 2^{k + 1}
+      \varepsilon\). Inside a fixed radius \(\delta\), the bound \(\nu ((s -
+      r, s + r)) \le \eta r\) makes the sum at most a constant times \(\eta
+      \sum_{k \ge 0} 2^{- k}\). The part outside \(\delta\) is at most
+      \(\varepsilon \nu (\mathbb{R}) / (\pi \delta^2)\). First let
+      \(\varepsilon \downarrow 0\), then \(\eta \downarrow 0\). The same
+      estimate applied to \(|f (x) - f (s) | dx\) near a Lebesgue point shows
+      \(P_{\varepsilon} \ast f (s) \to f (s)\). Thus the boundary density is
+      \(f\) almost everywhere, and loses \(\mu_s\) unless weak inversion is
+      retained.
+    </p>
+    <p>
+      For \(\mu = (\delta_{- 1} + \delta_1) / 2\), direct addition gives \(m
+      (z) = z / (1 - z^2)\) and \(m (2 i) = m (i / 2) = 2 i / 5\). This shows
+      that injectivity of the transform on measures is not injectivity of the
+      function \(z \mapsto m (z)\). If \(u\) is cyclic for \(A\), the map \(f
+      \mapsto f (A) u\) is an isometry from \(C_0\) with its \(L^2 (\mu_u)\)
+      norm onto a dense subspace of \(H\). Since \(C_c\) is dense in \(L^2
+      (\mu_u)\), it extends to a unitary intertwining multiplication by \(x\)
+      and \(A\), including their domains by truncation. This proves the cyclic
+      classification claimed in the post.
+    </p>
+    <h2 id="auto-7"><a id="sec:stone"></a>6<span style="margin-left: 1em"></span>Unitary groups and Fourier
+    reconstruction<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">10</span>. </strong><i>[Stone,
+        including the generator domain]<a id="thm:stone"></a> Every weakly continuous
+        unitary group \(U (t)\) has a unique self-adjoint generator \(A\),
+        with \(U (t) = e^{itA}\). Its domain is precisely the set on which
+        \((U (t) u - u) / t\) converges in norm, and that limit is
+        \(iAu\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The identity \(\|(U (t) - I) u\|^2 = 2 \| u \|^2
+      - 2 \text{Re} \langle u, U (t) u \rangle\) upgrades weak continuity at
+      zero to strong continuity there, and the group law extends it to all
+      times. Define \(B\) by the strong derivative at zero. For \(\varphi \in
+      C_c^{\infty} (\mathbb{R})\), the Bochner integral \(u_{\varphi} = \int
+      \varphi (t) U (t) u \hspace{0.17em} dt\) belongs to \(D (B)\), because
+      translation of the integrand gives \(Bu_{\varphi} = - \int \varphi' (t)
+      U (t) u \hspace{0.17em} dt\). Approximate identities give \(u_{\varphi}
+      \to u\), so \(D (B)\) is dense.
+    </p>
+    <p>
+      The group leaves \(D (B)\) invariant and \(BU (t) u = U (t) Bu\).
+      Consequently
+    </p>
+    <div class="center">
+      \(\displaystyle U (t) u - u = \int_0^t U (s) Bu \hspace{0.17em} ds \quad
+      (u \in D (B)) .\)
+    </div>
+    <p>
+      If \(u_n \to u\) and \(Bu_n \to v\), passage to the limit in this
+      identity gives \(U (t) u - u = \int_0^t U (s) vds\). Dividing by \(t\)
+      and letting \(t \to 0\) shows \(u \in D (B)\) and \(Bu = v\). Thus \(B\)
+      is closed. Differentiating \(\langle U (t) u, U (t) v \rangle\) gives
+      \(\langle Bu, v \rangle + \langle u, Bv \rangle = 0\); \(A = - iB\) is
+      symmetric.
+    </p>
+    <p>
+      For \(\lambda > 0\), put \(R_+ u = \int_0^{\infty} e^{- \lambda t} U (t)
+      u \hspace{0.17em} dt\). A change of variable in \(U (h) R_+ u\) shows
+      that \(R_+ u \in D (B)\) and \(BR_+ u = \lambda R_+ u - u\). For example
+      the difference quotient of the exponential factor tends to \(\lambda R_+
+      u\), and the missing interval at the origin contributes \(- u\).
+      Replacing \(U (t)\) by \(U (- t)\) gives a right inverse for \(\lambda +
+      B\). Thus \(A \pm i \lambda\) are onto. The proof of Lemma&nbsp;<a href="#lem:range">1</a>,
+      with \(1\) replaced by \(\lambda\), makes \(A\) self-adjoint.
+    </p>
+    <p style="margin-bottom: 1em">
+      The spectral calculus constructs \(e^{itA}\) with derivative \(iA\) on
+      \(D (A)\). For \(u \in D (A)\), both groups preserve the domain and
+      commute with \(A\); differentiating \(U (- t) e^{itA} u\) gives zero.
+      Its value is therefore \(u\). Density extends equality to every vector.
+      Conversely, for a spectral group and \(u \in D (A)\), dominated
+      convergence with \(| (e^{itx} - 1) / t| \le |x|\) proves the derivative
+      assertion. If the difference quotients converge, their norms remain
+      bounded; Fatou applied to their squared spectral multipliers gives
+      \(\int x^2 d \mu_u < \infty\). This proves the converse domain inclusion
+      and uniqueness.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">11</span>. </strong><i>[Bochner's
+        theorem, and the route used in the post] A continuous
+        positive-definite function \(F\) on \(\mathbb{R}\) is the Fourier
+        transform of a unique finite positive measure, of mass \(F (0)\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>On finite linear combinations of symbols
+      \([t]\), set \(\langle [s], [t] \rangle = F (t - s)\). Positive
+      definiteness makes this a positive semidefinite form. Quotient its null
+      space and complete. Translation \([s] \mapsto [s + t]\) preserves the
+      form, defines a unitary group, and is strongly continuous: first check
+      \(\|[s + t] - [s]\|^2 = 2 F (0) - 2 \text{Re} F (t)\), then finite sums
+      and density. Apply Stone's theorem and its spectral measure to the
+      vector \([0]\). This gives \(F (t) = \int e^{itx} d \mu (x)\) and the
+      mass assertion.
+    </p>
+    <p style="margin-bottom: 1em">
+      For uniqueness, if a finite complex measure has zero Fourier transform,
+      Fourier inversion and Fubini give zero integral against every
+      \(C_c^{\infty}\) function. Uniform density in \(C_0\) and uniqueness in
+      Riesz&ndash;Markov give the zero measure. This also justifies the
+      Fourier reconstruction of the calculus described in the post: \(\int g
+      (t) U (t) dt\) has multiplier \(\int g (t) e^{itx} dt\) for \(g \in
+      L^1\), and inverse Fourier transforms of smooth compactly supported
+      functions give a uniformly dense class in \(C_0\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The Laplace representation \(R_A (i) u = i \int_0^{\infty} e^{- t} e^{-
+      itA} u \hspace{0.17em} dt\) follows by integrating the scalar
+      exponential and then using Fubini against the spectral measure. The
+      integral is norm-convergent on each vector. Finite sums of \(e^{itx}\)
+      close in supremum norm to the almost periodic functions, by definition;
+      their closure is not \(C_b\). A single value \(e^{iA}\) does not
+      identify \(A\), since replacing a scalar eigenvalue by that eigenvalue
+      plus \(2 \pi\) preserves it.
+    </p>
+    <h2 id="auto-8"><a id="sec:cayley"></a>7<span style="margin-left: 1em"></span>The Cayley correspondence<span
+    style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">12</span>. </strong><i>[Cayley
+        correspondence] The map \(A \mapsto V = (A - i)  (A + i)^{- 1}\) is a
+        bijection between self-adjoint operators and unitaries with \(\ker (I
+        - V) = 0\). Its inverse has domain \(\text{Ran} (I - V)\) and action
+        \(A (I - V) h = i (I + V) h\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The forward direction was established in
+      Theorem&nbsp;<a href="#thm:unbounded">5</a>. Conversely a unitary \(V\) with no fixed
+      vector has \(\overline{\text{Ran} (I - V)} = \ker (I - V^{\ast})^{\perp}
+      = H\). Injectivity of \(I - V\) makes the proposed action well-defined.
+      Expanding inner products and using \(V^{\ast} V = I\) proves symmetry.
+      Directly
+    </p>
+    <div class="center">
+      \(\displaystyle (A + i)  (I - V) h = 2 ih, \qquad (A - i)  (I - V) h = 2
+      iVh.\)
+    </div>
+    <p style="margin-bottom: 1em">
+      Both ranges are onto, so the two-range criterion proves
+      self-adjointness. These identities also recover \(V\) and prove that the
+      two assignments are inverse. The scalar map sends \(0\) to \(- 1\),
+      \(1\) to \(- i\), \(- 1\) to \(i\), and the two ends of the real line to
+      the missing point \(1\); its inverse is \(i (1 + \zeta) / (1 - \zeta)\).
+      If \(1\) lies in the spectrum of \(V\), it need not be an eigenvalue;
+      the inverse can therefore be unbounded while still densely defined. This
+      is exactly the geometry illustrated in the post.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-9"><a id="sec:probability"></a>8<span style="margin-left: 1em"></span>Random variables and
+    pullbacks<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">13</span>.
+        </strong><i>[Multiplication observables] Let \(X : \Omega \to
+        \mathbb{R}\) be measurable and finite almost everywhere. On \(H = L^2
+        (\Omega, \mathbb{P})\), multiplication by \(f \circ X\) defines a
+        nondegenerate \(\ast\)-homomorphism \(j_X : C_0  (\mathbb{R}) \to B
+        (H)\). Its spectral measure is \(E_X  (B) u = 1_{X^{- 1}  (B)} u\).
+        The associated self-adjoint operator is multiplication by \(X\) on the
+        maximal domain</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle D (A_X) = \left\{ u \in H : \int | X |^2  | u |^2
+          \mathrm{d} \mathbb{P}<
+\infty \right\} .\)
+        </div></div>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Pointwise addition, multiplication and
+      conjugation establish the homomorphism laws; \(\|j_X (f)\| \leqslant
+      \|f\|_{\infty}\). Choose \(0 \leqslant \chi_n \leqslant 1\) in \(C_c
+      (\mathbb{R})\), equal to one on \([- n, n]\). Since \(X\) is finite
+      almost everywhere, dominated convergence gives \(\chi_n  (X) u \to u\)
+      for every \(u \in H\). The indicator formula gives orthogonal
+      projections, \(E_X  (\mathbb{R}) = I\), and countable additivity in the
+      strong operator topology: for disjoint sets, the remainder of a finite
+      union acts as multiplication by an indicator decreasing pointwise to
+      zero, so dominated convergence applies again. Direct integration gives
+      \(\langle u, j_X (f) u \rangle = \int f \mathrm{d} \mu_u\) with \(\mu_u
+      (B) = \int_{X^{- 1}  (B)} |u|^2 \mathrm{d} \mathbb{P}\).
+    </p>
+    <p style="margin-bottom: 1em">
+      The stated domain makes \(A_X\) well defined and symmetric. It is dense
+      because \(1_{|X| \leqslant n} u \to u\) for every \(u \in H\). To prove
+      self-adjointness, let \(v \in D (A_X^{\ast})\) and write \(w =
+      A_X^{\ast} v\). Testing the adjoint identity on arbitrary functions
+      supported where \(|X| \leqslant n\) yields \(1_{|X| \leqslant n} w = X
+      1_{|X| \leqslant n} v\). As \(n \to \infty\), these equalities imply \(w
+      =\operatorname{Xv}\) almost everywhere. Since \(w \in H\), the maximal
+      domain condition holds for \(v\), so \(D (A_X^{\ast}) \subseteq D
+      (A_X)\). Symmetry gives the reverse inclusion.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      In the example \(X (t) = 1 / t\) on \((0, 1)\), the domain condition is
+      \(\int_0^1 |u (t) |^2 t^{- 2} \mathrm{d} t < \infty\). It excludes \(u =
+      1\). An eigenvector with eigenvalue \(\lambda\) would vanish outside
+      \(\{t : 1 / t = \lambda\}\), a null set, so it is zero. The substitution
+      \(x = 1 / t\) gives \(X_{\ast} \mathbb{P}= 1_{(1, \infty)} x^{- 2}
+      \mathrm{d} x\).
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">14</span>.
+        </strong><i>[Manifold-valued variables and the direction of maps] For
+        a measurable map \(X : \Omega \to M\) into a second-countable
+        Hausdorff manifold, \(f \mapsto f \circ X\) is a unital
+        \(\ast\)-homomorphism on bounded Borel functions, with nondegenerate
+        restriction to \(C_0 (M)\) acting on \(L^2  (\Omega, \mathbb{P})\).
+        Its expected value is integration against the Radon law \(X_{\ast}
+        \mathbb{P}\). The homomorphism determines \(X\) up to almost sure
+        equality.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>All algebra identities are pointwise and remain
+      true modulo null sets. Compactly supported cutoffs \(\chi_n \uparrow 1\)
+      give \(\chi_n (X) u \to u\) by dominated convergence in \(L^2\), proving
+      nondegeneracy. The pushforward identity follows first for indicators,
+      then simple functions and bounded pointwise approximation. Finiteness
+      and second countability make the Borel probability law Radon by the
+      regularity argument after Proposition&nbsp;<a href="#prop:riesz">2</a>. A countable
+      base and compact cutoffs give a countable family of continuous functions
+      separating points. If two pullbacks agree, remove the countable union of
+      null exceptional sets for this family. Outside it, all separating values
+      agree, so the maps agree. This proves determination of the random
+      variable, as distinct from its law.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-10"><a id="sec:convergence"></a>9<span style="margin-left: 1em"></span>Convergence of observables and
+    resolvent tests<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">15</span>. </strong><i>[Equivalent
+        bounded tests for convergence]<a id="thm:convergence"></a> Let \(A_n, A\) be
+        self-adjoint on one Hilbert space. Strong convergence of \((A_n -
+        z)^{- 1}\) to \((A - z)^{- 1}\) at one nonreal \(z\) is equivalent to
+        that convergence at all nonreal \(z\), to strong convergence of \(f
+        (A_n)\) to \(f (A)\) for every \(f \in C_0 (\mathbb{R})\), and to
+        strong convergence of \(e^{itA_n}\) to \(e^{itA}\) for every real
+        \(t\). These conditions are also equivalent to weak convergence of the
+        spectral probability laws \(\mu_u^{A_n}\) to \(\mu_u^A\) for every
+        unit vector \(u\). They also imply strong convergence of \(f (A_n)\)
+        to \(f (A)\) for every \(f \in C_b (\mathbb{R})\). The unitary
+        convergence is uniform on compact time intervals, on each vector. For
+        nonnegative operators the same holds for heat semigroups on compact
+        subsets of \([0, \infty)\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Write \(R_n = R_{A_n} (z)\) and \(R = R_A (z)\).
+      Strong convergence and the common bound imply \(R_n^{\ast} \to
+      R^{\ast}\) weakly. These resolvents are normal, so \(\|R_n^{\ast} u\| =
+      \|R_n u\| \to \|Ru\| = \|R^{\ast} u\|\). Weak convergence together with
+      convergence of norms in a Hilbert space is strong convergence. Products
+      of uniformly bounded strongly convergent operators converge strongly, by
+      adding and subtracting one mixed product. Thus every polynomial without
+      constant term in \(R_n, R_n^{\ast}\) converges. Density of the resolvent
+      algebra in \(C_0\) and contractivity extend this to all \(C_0\) tests,
+      in particular all other resolvents.
+    </p>
+    <p>
+      For \(f \in C_b\), fix \(u\) and choose \(0 \le \chi \le 1\) in \(C_c\)
+      with \(\|(I - \chi (A)) u\| < \varepsilon\). Strong convergence of
+      \(\chi (A_n)\) makes the corresponding tail for \(A_n\) less than \(2
+      \varepsilon\) eventually. Since the factors from the same calculus
+      commute,
+    </p>
+    <div class="center">
+      \(\displaystyle \| (f (A_n) - f (A)) u \| \leqslant \| ((f \chi) (A_n) -
+      (f \chi) (A)) u \| +
+3 \| f \|_{\infty} \varepsilon .\)
+    </div>
+    <p>
+      The first term tends to zero. This proves the bounded continuous
+      assertion, hence pointwise unitary convergence. For \(|t| \le T\), the
+      functions \(x \mapsto e^{itx} \chi (x)\) form a compact subset of
+      \(C_0\) in supremum norm. A finite uniform net and contractivity make
+      their convergence uniform in \(t\); the same tails bound the remaining
+      error. With common nonnegative spectrum, use the compact family \(e^{-
+      tx} \chi (x)\) on \([0, \infty)\), \(0 \le t \le T\), to prove the heat
+      assertion.
+    </p>
+    <p>
+      Conversely pointwise strong convergence of the unitary groups permits
+      dominated convergence in \(R_{A_n} (i) u = i \int_0^{\infty} e^{- t}
+      e^{- itA_n} u \hspace{0.17em} dt\). This proves equivalence of the
+      resolvent and unitary conditions.
+    </p>
+    <p>
+      Strong convergence for every \(f \in C_b\) gives weak convergence of
+      each vector's spectral law by taking the diagonal matrix coefficient.
+      Conversely suppose the probability laws converge weakly for every unit
+      vector. By rescaling, the corresponding finite spectral measures
+      converge against bounded continuous functions for every vector. Fix \(f
+      \in C_b\). Polarization of \(\langle u, f (A_n) u \rangle\) shows
+      convergence of \(\langle v, f (A_n) u \rangle\) for every \(u, v\). Thus
+      \(f (A_n) u\) converges weakly to \(f (A) u\). Multiplicativity and
+      preservation of adjoints give
+    </p>
+    <div class="center">
+      \(\displaystyle \| f (A_n) u \|^2 = \langle u, (| f |^2) (A_n) u \rangle
+      \rightarrow \langle
+u, (| f |^2) (A) u \rangle = \| f (A) u \|^2,\)
+    </div>
+    <p style="margin-bottom: 1em">
+      because \(| f |^2 \in C_b\). The Hilbert-space identity for the squared
+      distance now proves strong convergence. This establishes the equivalence
+      with convergence of laws in all vector states.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The Cayley description gives the same topology. Put \(V_n = I - 2
+      iR_{A_n} (- i)\) and \(V = I - 2 iR_A (- i)\). Strong convergence of
+      these unitaries is equivalent to convergence of the resolvents at \(-
+      i\), and hence to the preceding conditions. This equivalence is on the
+      space of Cayley unitaries with \(\ker (I - V) = \{ 0 \}\); a strong
+      limit of such unitaries may leave that space, as the escaping-mass
+      example below shows.
+    </p>
+    <p>
+      Convergence is stable under finite ordered products of bounded
+      continuous tests, even when the observables within a product do not
+      commute. Indeed, if \(T_n \rightarrow T\) and \(S_n \rightarrow S\)
+      strongly and \(\sup_n \| T_n \| < \infty\), write
+    </p>
+    <div class="center">
+      \(\displaystyle (T_n S_n - TS) u = T_n  (S_n - S) u + (T_n - T) Su.\)
+    </div>
+    <p>
+      Each term tends to zero; induction handles any finite product. The
+      spectral bound \(\| f (A_n) \| \leqslant \| f \|_{\infty}\) supplies the
+      needed uniform bounds.
+    </p>
+    <h3 id="auto-11">Bounded approximations and the role of a core<span style="margin-left: 1em"></span></h3>
+    <p>
+      For the clipping functions \(b_n (x) = \max (- n, \min (x, n))\), the
+      bounded Borel calculus gives a bounded self-adjoint \(A_n = b_n (A)\) of
+      norm at most \(n\). The substitution rule makes \(f (A_n) = (f \circ
+      b_n) (A)\) for bounded continuous \(f\). Its spectral norm identity is
+    </p>
+    <div class="center">
+      \(\displaystyle \| (f (A_n) - f (A)) u \|^2 = \int | f (b_n (x)) - f (x)
+      |^2 d \mu_u^A (x) .\)
+    </div>
+    <p>
+      The integrand tends pointwise to zero and is bounded by \(4 \| f
+      \|_{\infty}^2\), integrable against the finite measure. This proves
+      strong resolvent convergence to \(A\). If \(u \in D (A)\), apply the
+      unbounded spectral norm identity to \(b_n (x) - x\). Its squared modulus
+      is bounded by \(x^2\), integrable for precisely such \(u\), and tends to
+      zero. Hence \(A_n u \rightarrow Au\) on that domain.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">16</span>. </strong><i>[The core
+        convergence criterion] Let \(A_n, A\) be self-adjoint on one Hilbert
+        space. If \(D_0\) is a core for \(A\), \(D_0 \subset D (A_n)\) and
+        \(A_n u \to Au\) there, then \(A_n \to A\) in strong resolvent
+        sense.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>For \(f = (A - z) u\) with \(u \in D_0\), the
+      resolvent equation gives
+    </p>
+    <div class="center">
+      \(\displaystyle R_{A_n} (z) f - R_A (z) f = R_{A_n} (z)  (A - A_n) u \to
+      0.\)
+    </div>
+    <p style="margin-bottom: 1em">
+      The core criterion makes these \(f\) dense, and the uniform resolvent
+      bound extends convergence to all \(H\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The same algebra approximation proves norm convergence of every bounded
+      test from \(C_0\) under norm resolvent convergence. The extension to
+      \(C_b\) need not hold in norm: on \(L^2 (\mathbb{R})\) take \(A = Q\),
+      \(A_n = Q + 1 / n\). Their resolvents converge in norm by the resolvent
+      identity, whereas \(f (x) = e^{ix^2}\) gives \(\|f (A_n) - f (A)\| =
+      2\), because \(2 x / n + 1 / n^2\) takes every real value. If an
+      interval has zero limiting spectral projection at each finite endpoint,
+      approximate its indicator from above and below by bounded continuous
+      functions with transitions near those endpoints. Tightness of each
+      vector's spectral laws, furnished by the cutoff argument, deals with
+      unbounded ends. The scalar integrals converge; polarization gives weak
+      convergence of the projections, and convergence of \(\|E_n (I) u\|^2 =
+      \langle u, E_n (I) u \rangle\) gives strong convergence. The example
+      \(A_n = n^{- 1} I\), \(A = 0\), and \(I = (- \infty, 0]\) shows the need
+      for the endpoint condition.
+    </p>
+    <p>
+      For \(A_n = nI\), all nonreal resolvents converge in norm to zero, which
+      is not an injective operator with dense range and hence is not a
+      resolvent on nonzero \(H\). A proposed self-adjoint limit cannot be
+      omitted from the theorem. For \(A_n = n^2 P_n\) on \(\ell^2\), bounded
+      continuous tests satisfy \((f (A_n) - f (0)) u = (f (n^2) - f (0)) u_n
+      e_n \to 0\) for every \(u\). Nevertheless the unit vector \(u_n = c /
+      n\), with \(c^{- 2} = \sum n^{- 2}\), has \(\langle u, A_n u \rangle =
+      c^2\). This proves the moment warning. For \(A \ge 0\), the bounded
+      approximations \(A_N = AE ([0, N])\) agree with \(A\) eventually on each
+      bounded spectral subspace. The core criterion applies, proving the
+      assertion about bounded spectral approximations.
+    </p>
+    <h2 id="auto-12"><a id="sec:references"></a>10<span style="margin-left: 1em"></span>References and further
+    reading<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          M. Reed and B. Simon, <i>Methods of Modern Mathematical Physics, I:
+          Functional Analysis</i>, revised edition, Academic Press, 1980; and
+          <i>II: Fourier Analysis, Self-Adjointness</i>, 1975. Volume I
+          develops spectral theory and convergence; Volume II, Theorems
+          X.37&ndash;X.38, treats Nelson and Faris&ndash;Lavine. <a href="https://www.sciencedirect.com/book/9780125850018/methods-of-modern-mathematical-physics">Volume
+          I</a>; <a href="https://scholars.duke.edu/publication/1163833">Volume II bibliographic record</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          G. Teschl, <i>Mathematical Methods in Quantum Mechanics</i>, second
+          edition, AMS, 2014. A complementary textbook treatment of domains,
+          spectral measures, extensions and perturbations. Section 6.6 treats
+          strong and norm resolvent convergence, bounded continuous tests, the
+          core criterion and spectral projections. <a href="https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/">Author's text and
+          book page</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          E. A. Carlen, <i>Functional Analysis</i>, 2017, Section 7.2. For
+          Riesz&ndash;Markov, measure regularity and the distinction between
+          compact and locally compact formulations. <a href="https://sites.math.rutgers.edu/~carlen/502S17/Analysis2017.pdf">Lecture
+          notes</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          J. van Neerven, <em>Functional Analysis</em>, Cambridge University
+          Press, 2022. Chapters 9&ndash;10 treat bounded and unbounded normal
+          operators; Chapter 15 connects states and observables. <a href="https://doi.org/10.1017/9781009232487.012">Chapter
+          10</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          C. Bordenave, <em>Lecture notes on random matrix theory</em>, 11
+          January 2019, Lecture 3, especially Lemma 3.2. <a href="https://www.i2m.univ-amu.fr/perso/charles.bordenave/teaching">Author's
+          notes page</a>. Cauchy&ndash;Stieltjes inversion, recovery of atoms,
+          and weak convergence.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Return to <a href="self-adjoint-operators.html">the post</a>.
+    </p>
+  </body>
+</html>

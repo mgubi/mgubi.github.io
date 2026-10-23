@@ -13,14 +13,109 @@
 * Font setup
 ******************************************************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('./highlight-github.css');
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
 
 /******************************************************************************
 * Code syntax highlight
 ******************************************************************************/
 
 /*@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css');*/
-@import url('./highlight-github.css');
 
 .hljs {
     display: block;
@@ -151,6 +246,7 @@ table {
 }
 
 h1 {
+    color: var(--color-title);
     font-family: var(--title-family);
     font-weight: bold;
     font-size: 1.6rem;
@@ -258,6 +354,22 @@ a:active, a:focus, a:hover {
 
 .notes-header-name {
     float: right;
+}
+
+.notes-theorem {
+    border-top: 1px solid var(--color-title);
+    border-bottom: 1px solid var(--color-title);
+    padding: 0.5em;
+    margin: 1em 0;
+    break-inside: avoid;
+}
+
+.notes-theorem > :first-child {
+    margin-top: 0;
+}
+
+.notes-theorem > :last-child {
+    margin-bottom: 0;
 }
 
 .notes-abstract {

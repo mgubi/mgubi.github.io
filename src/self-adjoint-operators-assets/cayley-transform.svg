@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="510" viewBox="0 0 1100 510" role="img" aria-labelledby="title desc">
+<title id="title">Cayley transform from the real line to the unit circle</title>
+<desc id="desc">The map c(t)=(t-i)/(t+i) sends minus one to i, zero to minus one, and one to minus i. Both ends of the real line approach the excluded point one. On the circle the direction of increasing t is counterclockwise.</desc>
+<rect width="1100" height="510" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#667078"/></marker></defs>
+<text x="550" y="42" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="24" text-anchor="middle" font-weight="bold">The real line, with both ends meeting at one missing point</text>
+<text x="265" y="118" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="22" text-anchor="middle" font-weight="normal">Real parameter t</text>
+<text x="790" y="85" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="23" text-anchor="middle" font-weight="normal">c(t) = (t − i) / (t + i)</text>
+<line x1="60" y1="258" x2="470" y2="258" stroke="#667078" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="68" y1="258" x2="55" y2="258" stroke="#667078" stroke-width="1.6" marker-end="url(#arrow)"/>
+<circle cx="115.000" cy="258.000" r="5" stroke="#256c9e" stroke-width="2" fill="#256c9e"/>
+<text x="115" y="291" fill="#256c9e" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="middle" font-weight="normal">−2</text>
+<circle cx="190.000" cy="258.000" r="5" stroke="#397fb5" stroke-width="2" fill="#397fb5"/>
+<text x="190" y="291" fill="#397fb5" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="middle" font-weight="normal">−1</text>
+<circle cx="265.000" cy="258.000" r="5" stroke="#7e4e85" stroke-width="2" fill="#7e4e85"/>
+<text x="265" y="291" fill="#7e4e85" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="middle" font-weight="normal">0</text>
+<circle cx="340.000" cy="258.000" r="5" stroke="#b96627" stroke-width="2" fill="#b96627"/>
+<text x="340" y="291" fill="#b96627" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="middle" font-weight="normal">1</text>
+<circle cx="415.000" cy="258.000" r="5" stroke="#9e441f" stroke-width="2" fill="#9e441f"/>
+<text x="415" y="291" fill="#9e441f" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="middle" font-weight="normal">2</text>
+<text x="65" y="292" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="19" text-anchor="middle" font-weight="normal">−∞</text>
+<text x="467" y="292" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="19" text-anchor="middle" font-weight="normal">+∞</text>
+<line x1="160" y1="218" x2="370" y2="218" stroke="#667078" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="265" y="203" fill="#596168" font-family="Georgia,Times New Roman,serif" font-size="17" text-anchor="middle" font-weight="normal">increasing t</text>
+<text x="265" y="363" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="19" text-anchor="middle" font-weight="normal">c(−1) = i;   c(0) = −1;   c(1) = −i</text>
+<text x="265" y="399" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="19" text-anchor="middle" font-weight="normal">lim c(t) = 1 as t → −∞ or +∞</text>
+<line x1="507" y1="257" x2="568" y2="257" stroke="#667078" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="538" y="236" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="24" text-anchor="middle" font-weight="normal">c</text>
+<line x1="622" y1="262" x2="962" y2="262" stroke="#c7cdd1" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="790" y1="421" x2="790" y2="103" stroke="#c7cdd1" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="976" y="268" fill="#69737c" font-family="Georgia,Times New Roman,serif" font-size="15" text-anchor="middle" font-weight="normal">Re</text>
+<text x="807" y="106" fill="#69737c" font-family="Georgia,Times New Roman,serif" font-size="15" text-anchor="middle" font-weight="normal">Im</text>
+<circle cx="790" cy="262" r="132" fill="none" stroke="#405969" stroke-width="2.2"/>
+<circle cx="869.200" cy="156.400" r="5.5" stroke="#256c9e" stroke-width="2" fill="#256c9e"/>
+<text x="881.2" y="146.39999999999998" fill="#256c9e" font-family="Georgia,Times New Roman,serif" font-size="17" text-anchor="start" font-weight="normal">t = −2</text>
+<circle cx="790.000" cy="130.000" r="5.5" stroke="#397fb5" stroke-width="2" fill="#397fb5"/>
+<text x="769.0" y="120.0" fill="#397fb5" font-family="Georgia,Times New Roman,serif" font-size="18" text-anchor="end" font-weight="normal">i  (t = −1)</text>
+<circle cx="658.000" cy="262.000" r="5.5" stroke="#7e4e85" stroke-width="2" fill="#7e4e85"/>
+<text x="645.0" y="268.0" fill="#7e4e85" font-family="Georgia,Times New Roman,serif" font-size="20" text-anchor="end" font-weight="normal">−1</text>
+<text x="645.0" y="291.0" fill="#7e4e85" font-family="Georgia,Times New Roman,serif" font-size="17" text-anchor="end" font-weight="normal">t = 0</text>
+<circle cx="790.000" cy="394.000" r="5.5" stroke="#b96627" stroke-width="2" fill="#b96627"/>
+<text x="771.0" y="421.0" fill="#b96627" font-family="Georgia,Times New Roman,serif" font-size="18" text-anchor="end" font-weight="normal">−i  (t = 1)</text>
+<circle cx="869.200" cy="367.600" r="5.5" stroke="#9e441f" stroke-width="2" fill="#9e441f"/>
+<text x="881.2" y="390.6" fill="#9e441f" font-family="Georgia,Times New Roman,serif" font-size="17" text-anchor="start" font-weight="normal">t = 2</text>
+<path d="M898.128,186.288 A132,132 0 0 0 859.949,150.058" fill="none" stroke="#667078" stroke-width="1.6" marker-end="url(#arrow)"/>
+<circle cx="922.000" cy="262.000" r="7" stroke="#354854" stroke-width="2" fill="white"/>
+<line x1="931" y1="264" x2="1010" y2="302" stroke="#69737c" stroke-width="1"/>
+<text x="1025" y="324" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="22" text-anchor="middle" font-weight="normal">1</text>
+<text x="1025" y="348" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="17" text-anchor="middle" font-weight="normal">excluded</text>
+<text x="1025" y="371" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="18" text-anchor="middle" font-weight="normal">t → ±∞</text>
+<text x="790" y="453" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="18" text-anchor="middle" font-weight="normal">Re c(t) = (t² − 1)/(t² + 1)</text>
+<text x="790" y="481" fill="#252b31" font-family="Georgia,Times New Roman,serif" font-size="18" text-anchor="middle" font-weight="normal">Im c(t) = −2t/(t² + 1)</text>
+</svg>
