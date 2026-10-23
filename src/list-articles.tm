@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated October 2026.|23 Oct 2026>
+
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>
     This companion proves the foundations used in the post: spectral
@@ -50,9 +53,6 @@
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|21 Oct 2026>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated October 2026.|21 Oct 2026>
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|21 Oct 2026>
