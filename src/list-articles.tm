@@ -12,8 +12,8 @@
 
   <hrule>
 
-  <\notes-entry|self-adjoint-operators-proofs.tm|Proofs and complements: the
-  basic idea>
+  <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
+  complements: the basic idea>
     This companion proves the foundations used in the post: spectral
     reconstruction, domains, cores, resolvents, scalar inversion, unitary
     groups, Cayley transforms and convergence of observables. The pullback
@@ -21,8 +21,11 @@
     the final section identifies the equivalent tests for convergence.
   </notes-entry|23 Oct 2026>
 
-  <\notes-entry|self-adjoint-operators.tm|What do we talk about when we talk
-  about unbounded self-adjoint operators?>
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|23 Oct 2026>
+
+  <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
+  we talk about unbounded self-adjoint operators?>
     This post begins a series in which I collect several results around the
     notion of an observable, using it as an organizing principle for the
     theory of unbounded self-adjoint operators. An observable can be
@@ -44,9 +47,6 @@
   literate documents can explain the relationships between programming
   languages, with a Scheme/C++ example and a proposal for the development of
   <TeXmacs>.|21 Oct 2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|21 Oct 2026>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|21 Oct 2026>
