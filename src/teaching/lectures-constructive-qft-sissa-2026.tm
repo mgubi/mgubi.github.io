@@ -60,7 +60,7 @@
     Dyson--Schwinger equations at every scale.
     [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L3.pdf>]
     [<notes-store|draft script (PDF)|sissa/2026/cqft_notes_L3.pdf>]
-    Slides and script revised 23 October 2026.
+    Slides and script revised 24 October 2026.
   </itemize>
 
   <subsection*|Provisional lecture plans>
