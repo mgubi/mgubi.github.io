@@ -12,8 +12,8 @@
     This post begins a series in which I collect several results around the
     notion of an observable, using it as an organizing principle for the
     theory of unbounded self-adjoint operators. An observable can be
-    understood through the bounded functions we apply to it. Starting with
-    Hermitian matrices and random variables, we develop this viewpoint
+    understood through the bounded functions applied to it. Starting with
+    Hermitian matrices and random variables, I develop this viewpoint
     through spectral measures, resolvents and unitary groups, and see why
     strong resolvent convergence is a natural way to compare observables. The
     results are standard. The post is mostly an invitation to functional
@@ -53,7 +53,7 @@
   The spectral analysis of matrices gives a familiar starting point. Bounded
   functions of the spectral values continue to make sense even when those
   values become arbitrarily large. Recovering the original, possibly
-  unbounded operator is a further step. We will see where that step imposes a
+  unbounded operator is a further step. I will explain where that step imposes a
   condition on the vectors, and how the domain enters the construction.
 
   The organizing object here is the <em|observable>. Its bounded functional
@@ -144,7 +144,7 @@
     =max<rsub|1\<leqslant\>j\<leqslant\>r><around*|\||f<around*|(|\<lambda\><rsub|j>|)>|\|>.
   </equation*>
 
-  We can therefore regard <math|M> as <with|font-shape|italic|a rule for
+  I can therefore regard <math|M> as <with|font-shape|italic|a rule for
   turning scalar functions into matrices>, respecting their algebraic
   operations. Such a rule is called a <math|\<ast\>>-homomorphism. The
   original matrix is recovered by choosing the coordinate function
@@ -169,7 +169,7 @@
     <space|2em><around*|\<langle\>|u,f<around*|(|M|)>u|\<rangle\>>=<big|int>f\<mathd\>\<mu\><rsub|u>.
   </equation*>
 
-  We use inner products linear in the second argument. The last identity is
+  I use inner products linear in the second argument. The last identity is
   simply the orthogonal decomposition of <math|u> written as an integral
   against a finite atomic measure.\ 
 
@@ -198,14 +198,14 @@
   hold. All the bounded questions about these spectral values are therefore
   represented by bounded operators on the whole space. The coordinate
   function <math|f<around*|(|x|)>=x>, however, is no longer bounded on the
-  spectral values. We will return to it in
+  spectral values. I will return to it in
   <hlink|Section<nbsp>4|#sec:spectral>. For now, the bounded calculus is
-  already available, before we decide on which vectors that coordinate can
+  already available, before deciding on which vectors that coordinate can
   act.
 
   <section*|2. Real observables><label|sec:calculus>
 
-  The matrix example suggests the description we want to keep:
+  The matrix example suggests the description I want to keep:
 
   <\quote-env>
     <with|font-shape|italic|A <strong|real observable> is a consistent way of
@@ -214,7 +214,7 @@
   </quote-env>
 
   Let <math|H> be a complex Hilbert space, with inner product linear in the
-  second argument. We write <math|B<around*|(|H|)>> for the algebra of
+  second argument. I write <math|B<around*|(|H|)>> for the algebra of
   everywhere defined bounded linear operators on <math|H>. Write
   <math|C<rsub|0><around*|(|\<bbb-R\>|)>> for the complex continuous
   functions vanishing at infinity, with the supremum norm and involution
@@ -223,14 +223,14 @@
   the bounded Borel functions form <math|B<rsub|b><around*|(|\<bbb-R\>|)>>.
   These are different algebras.
 
-  The structure we want to retain is a linear map
+  The structure I want to retain is a linear map
 
   <\equation*>
     \<Phi\>:C<rsub|0><around*|(|\<bbb-R\>|)>\<rightarrow\>B<around*|(|H|)>,
     <space|2em>f\<mapsto\>\<Phi\><around*|(|f|)>.
   </equation*>
 
-  We require it to preserve products and adjoints, just as in the matrix
+  I require it to preserve products and adjoints, just as in the matrix
   calculation:
 
   <\equation*>
@@ -250,7 +250,7 @@
   still preserves products and adjoints. Every nonnegative function in this
   enlarged algebra has its square root there, so its image is a positive
   operator. Apply this to <math|M<rsup|2>-<around*|\||f|\|><rsup|2>>, where
-  <math|M=<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>. We obtain
+  <math|M=<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>. This gives
 
   <\equation*>
     M<rsup|2>I-\<Phi\><around*|(|f|)><rsup|\<ast\>>\<Phi\><around*|(|f|)>\<geqslant\>0,
@@ -259,9 +259,9 @@
   which gives the claimed norm bound on applying it to each vector.
 
   The constant function 1 does not belong to
-  <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. We therefore cannot express
-  normalization simply as <math|\<Phi\><around*|(|1|)>=I> within our starting
-  algebra. Instead we require <em|nondegeneracy>: the linear span of
+  <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. I therefore cannot express
+  normalization simply as <math|\<Phi\><around*|(|1|)>=I> within this starting
+  algebra. Instead I require <em|nondegeneracy>: the linear span of
   <math|\<Phi\><around*|(|C<rsub|0>|)>H> is dense in <math|H>. Equivalently,
   for continuous compactly supported cutoffs
   <math|0\<leqslant\>\<chi\><rsub|n>\<leqslant\>1> increasing to 1,
@@ -298,12 +298,12 @@
   condition that no part of the Hilbert space is left invisible by the
   calculus.
 
-  We deliberately start with <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. Its
+  I deliberately start with <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. Its
   functions are bounded, and positive functionals on this algebra have a
   direct measure-theoretic interpretation. The coordinate function
   <math|x\<mapsto\>x> is absent. Recovering it, together with its proper
   domain, will be the outcome of the construction rather than an assumption
-  at the outset. Before carrying out that construction, let us see how this
+  at the outset. Before carrying out that construction, I will show how this
   language already describes familiar random variables through their bounded
   tests.
 
@@ -372,7 +372,7 @@
   Thus its law has density <math|x<rsup|-2>1<rsub|<around*|(|1,\<infty\>|)>><around*|(|x|)>>.
   The density jumps at <math|x=1>, but the law has no atoms and needs no list
   of eigenvalues. This is the concrete model for the general construction in
-  <hlink|Section<nbsp>4|#sec:spectral>: there we start only from an abstract
+  <hlink|Section<nbsp>4|#sec:spectral>: there I start only from an abstract
   homomorphism, recover its projections and vector laws, and then reconstruct
   the possibly unbounded coordinate with its domain.
 
@@ -388,7 +388,7 @@
     <space|2em>j<rsub|X><around*|(|f|)>=f\<circ\>X.
   </equation*>
 
-  Thus we describe the random point by all its bounded scalar tests. No
+  Thus the random point is described by all its bounded scalar tests. No
   chart, embedding or preferred coordinate is needed. On
   <math|L<rsup|2><around*|(|\<Omega\>,\<bbb-P\>|)>>, its restriction to
   <math|C<rsub|0><around*|(|M|)>> is nondegenerate: compactly supported
@@ -432,9 +432,10 @@
 
   These examples give the abstract definition a concrete purpose: a calculus
   records how all bounded questions about an observable are answered. In
-  classical probability we take expectations; in the matrix example we pair
-  the resulting operators with a unit vector. We next construct the spectral
-  measure behind these scalar laws and recover the unbounded coordinate.
+  classical probability, this means taking expectations; in the matrix
+  example, it means pairing the resulting operators with a unit vector.
+  I will next construct the spectral measure behind these scalar laws and
+  recover the unbounded coordinate.
 
   <section*|4. From Riesz\UMarkov to spectral measures and
   domains><label|sec:spectral>
@@ -477,7 +478,7 @@
   For a matrix, eigenspace projections gave the scalar laws. In the
   multiplication example of Section<nbsp>3, inverse images under <math|X>
   gave both the projections and the laws, without eigenvectors. For an
-  abstract calculus neither description is initially available: we obtain the
+  abstract calculus neither description is initially available: I obtain the
   vector laws first and then recover the projections. Given <math|u\<in\>H>,
   consider
 
@@ -561,7 +562,7 @@
 
   This formula need not produce a vector in the Hilbert space. The sequence
   <math|u<rsub|n>=1/n> is square summable, but its proposed image
-  <math|<around*|(|1,1,1,\<ldots\>|)>> is not. We must therefore specify the
+  <math|<around*|(|1,1,1,\<ldots\>|)>> is not. It is therefore necessary to specify the
   vectors for which the output remains square summable:
 
   <\equation*>
@@ -593,14 +594,14 @@
   The integral means the norm limit of its bounded spectral truncations. The
   integrability condition says exactly when these truncations converge. Since
   <math|E<around*|(|<around*|[|-n,n|]>|)>u\<rightarrow\>u>, the domain is
-  dense. We have now obtained an operator together with its domain from the
+  dense. I have now obtained an operator together with its domain from the
   bounded calculus.
 
   <subsection*|What self-adjointness means once a domain is present>
 
   For a matrix, being Hermitian is just the equality with its conjugate
   transpose. With a proper domain, the same idea has an additional question:
-  does the adjoint act on exactly the same vectors? We can now state the
+  does the adjoint act on exactly the same vectors? I can now state the
   definitions with that question in view.
 
   A densely defined operator consists of both a linear subspace
@@ -620,7 +621,7 @@
 
   An operator is <em|closed> if its graph is closed in <math|H\<oplus\>H>:
   whenever <math|u<rsub|n>\<rightarrow\>u> and <math|A
-  u<rsub|n>\<rightarrow\>v>, we have <math|u\<in\>D<around*|(|A|)>> and
+  u<rsub|n>\<rightarrow\>v>, then <math|u\<in\>D<around*|(|A|)>> and
   <math|A u=v>. It is <em|closable> if the closure of its graph is again an
   operator graph. Every symmetric operator is closable; it is <em|essentially
   self-adjoint> when that closure is self-adjoint. These distinctions will
@@ -651,9 +652,9 @@
   spectral theorem gives its circle-valued spectral measure; pulling it back
   by the inverse Cayley map gives the real spectral measure and recovers the
   original domain. The Cayley transform in <hlink|Section<nbsp>7|#sec:cayley>
-  makes that route explicit. The two constructions are inverse. We can now
+  makes that route explicit. The two constructions are inverse. I can now
   write <math|\<Phi\>=\<Phi\><rsub|A>> and
-  <math|\<Phi\><around*|(|f|)>=f<around*|(|A|)>>. We have recovered the
+  <math|\<Phi\><around*|(|f|)>=f<around*|(|A|)>>. I have recovered the
   unbounded operator without treating its domain as an arbitrary extra
   choice.
 
@@ -683,7 +684,7 @@
   Their domains record the integrability of the chosen function, rather than
   a new set of rules for each construction.
 
-  <subsection*|Cores: how much of the domain must we know?>
+  <subsection*|Cores: how much of the domain is needed?>
 
   A large domain is often described through a smaller space of convenient
   vectors. For a closed operator <math|A>, a linear subspace
@@ -771,8 +772,7 @@
   Regularity, total mass and countable additivity play different roles.
   Riesz\UMarkov already makes the scalar measures obtained from
   <math|C<rsub|0>> Radon. Nondegeneracy gives them the full mass prescribed
-  by the vector norm. If we begin instead with bounded Borel functions, we
-  must impose a continuity condition to exclude merely finitely additive
+  by the vector norm. Starting instead with bounded Borel functions requires imposing a continuity condition to exclude merely finitely additive
   data. The choice of starting algebra determines which of these properties
   still needs to be checked.
 
@@ -795,8 +795,8 @@
 
   <subsection*|Optional example: what can go wrong at infinity>
 
-  An ordinary limit already shows the issue, provided we restrict the class
-  of functions on which we take it. Let <math|\<cal-A\><rsub|+>> be the
+  An ordinary limit already shows the issue, provided the limit is taken only
+  on a suitable class of functions. Let <math|\<cal-A\><rsub|+>> be the
   algebra of bounded Borel functions on <math|\<bbb-R\>> that have a limit
   at <math|+\<infty\>>, and set
 
@@ -815,7 +815,7 @@
   although <math|\<chi\><rsub|n>\<uparrow\>1>. A probability measure would
   give integrals increasing to one.
 
-  There are two limits here, and their order matters. We first send
+  There are two limits here, and their order matters. First send
   <math|x> to infinity with the interval fixed: eventually the point
   <math|x> lies outside it. Increasing the interval afterwards still gives
   zero. This is the simplest picture of mass escaping to infinity. The
@@ -852,13 +852,13 @@
     coordinates).><label|thm:resolvents> A self-adjoint operator is uniquely
     determined by <math|R<rsub|A><around*|(|z|)>> at any one nonreal point.
     The <math|\<ast\>>-algebra generated by <math|r<rsub|z>> is uniformly
-    dense in <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. Here we take the
+    dense in <math|C<rsub|0><around*|(|\<bbb-R\>|)>>. Here the intended algebra is the
     nonunital algebra, including complex conjugates.
   </notes-theorem>
 
   <em|Proof sketch.> The function <math|r<rsub|z>> separates real points and
   never vanishes, so the locally compact Stone\UWeierstrass theorem applies.
-  More directly we let <math|D<around*|(|A|)>=Ran R<rsub|A><around*|(|z|)>>
+  More directly, set <math|D<around*|(|A|)>=Ran R<rsub|A><around*|(|z|)>>
   and <math|A=z I+R<rsub|A><around*|(|z|)><rsup|-1>> on this range. The
   inverse is usually unbounded; forgetting the range would forget the domain.
 
@@ -969,7 +969,7 @@
   <math|u\<oplus\>0> leaves this scalar transform unchanged, whatever the
   self-adjoint operator <math|B> on the extra space may be.
 
-  If that generated subspace is all of <math|H>, we call <math|u>
+  If that generated subspace is all of <math|H>, <math|u> is called
   <em|cyclic>. The identity <math|<around*|\<langle\>|f<around*|(|A|)>u,g<around*|(|A|)>u|\<rangle\>>=<big|int><wide|f|\<bar\>>g\<mathd\>\<mu\><rsub|u>>
   then makes <math|f<around*|(|A|)>u\<mapsto\>f> an isometry, with functions
   identified modulo equality almost everywhere. Density on both sides extends
@@ -1092,8 +1092,8 @@
   elementary algebra on its stated domain.
 
   Notice the distinction between <math|1\<notin\>\<sigma\><around*|(|V|)>>
-  and <math|E<rsub|V><around*|(|<around*|{|1|}>|)>=0>. We require only the
-  latter. An unbounded <math|A> corresponds to a <math|V> whose spectrum
+  and <math|E<rsub|V><around*|(|<around*|{|1|}>|)>=0>. Only the
+  latter is required. An unbounded <math|A> corresponds to a <math|V> whose spectrum
   accumulates at 1, without an eigenvector there. Its bounded transform has
   not removed the unboundedness; it has encoded it in how the spectral
   measure approaches the missing point.
@@ -1107,11 +1107,11 @@
   <section*|8. Convergence of observables: why strong resolvents are
   natural><label|sec:convergence>
 
-  Once observables are our starting point, their convergence has a natural
+  Once observables are the starting point, their convergence has a natural
   meaning. Fix a Hilbert space <math|H> and describe the observables by
   nondegenerate <math|\<ast\>>-homomorphisms
   <math|\<Phi\><rsub|n>,\<Phi\>:C<rsub|0><around*|(|\<bbb-R\>|)>\<rightarrow\>B<around*|(|H|)>>.
-  We ask that every bounded continuous test vanishing at infinity converge on
+  I ask that every bounded continuous test vanishing at infinity converge on
   every vector:
 
   <\equation*>
@@ -1122,7 +1122,7 @@
   This is pointwise strong convergence of the homomorphisms. It compares
   observables through operations already defined on the whole Hilbert space.
   Their coordinate operators may have different domains, as happens when
-  boundary conditions or potentials change. We need not identify a common
+  boundary conditions or potentials change. There is no need to identify a common
   domain before asking whether the observables converge.
 
   The resolvents are a small family of these bounded tests, and they
@@ -1297,7 +1297,7 @@
   tests. Moment estimates are what prevent those tails from contributing an
   uncontrolled amount to an unbounded quantity.
 
-  The distinction is useful in practice: convergence of observables tells us
+  The distinction is useful in practice: convergence of observables ensures
   that bounded continuous questions have stable answers; estimates on
   spectral tails are needed for energies and other unbounded quantities. See
   <hlink|Teschl, Section<nbsp>6.6|https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/>
@@ -1451,7 +1451,7 @@
       is present <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
 
-      <with|par-left|<quote|1tab>|Cores: how much of the domain must we know?
+      <with|par-left|<quote|1tab>|Cores: how much of the domain is needed?
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>
 

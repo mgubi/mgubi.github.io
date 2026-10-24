@@ -10,7 +10,7 @@
     <script src="/resources/notes-base.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This post begins a series in which I collect several results around the notion of an observable, using it as an organizing principle for the theory of unbounded self-adjoint operators. An observable can be understood through the bounded functions we apply to it. Starting with Hermitian matrices and ">
+    <meta name="description" content="This post begins a series in which I collect several results around the notion of an observable, using it as an organizing principle for the theory of unbounded self-adjoint operators. An observable can be understood through the bounded functions applied to it. Starting with Hermitian matrices and r">
     <link rel="canonical" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators.html">
     <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
   </head>
@@ -27,8 +27,8 @@
         This post begins a series in which I collect several results around
         the notion of an observable, using it as an organizing principle for
         the theory of unbounded self-adjoint operators. An observable can be
-        understood through the bounded functions we apply to it. Starting with
-        Hermitian matrices and random variables, we develop this viewpoint
+        understood through the bounded functions applied to it. Starting with
+        Hermitian matrices and random variables, I develop this viewpoint
         through spectral measures, resolvents and unitary groups, and see why
         strong resolvent convergence is a natural way to compare observables.
         The results are standard. The post is mostly an invitation to
@@ -77,7 +77,7 @@
       The spectral analysis of matrices gives a familiar starting point.
       Bounded functions of the spectral values continue to make sense even
       when those values become arbitrarily large. Recovering the original,
-      possibly unbounded operator is a further step. We will see where that
+      possibly unbounded operator is a further step. I will explain where that
       step imposes a condition on the vectors, and how the domain enters the
       construction.
     </p>
@@ -193,7 +193,7 @@ P_k = 0 \text{ if } j \neq k.\)
       (\lambda_j) | .\)
     </div>
     <p>
-      We can therefore regard \(M\) as <i>a rule for turning scalar functions
+      I can therefore regard \(M\) as <i>a rule for turning scalar functions
       into matrices</i>, respecting their algebraic operations. Such a rule is
       called a \(\ast\)-homomorphism. The original matrix is recovered by
       choosing the coordinate function \(f (x) = x\).
@@ -217,8 +217,8 @@ P_k = 0 \text{ if } j \neq k.\)
       \mathrm{d} \mu_u .\)
     </div>
     <p>
-      We use inner products linear in the second argument. The last identity
-      is simply the orthogonal decomposition of \(u\) written as an integral
+      I use inner products linear in the second argument. The last identity is
+      simply the orthogonal decomposition of \(u\) written as an integral
       against a finite atomic measure.
     </p>
     <p>
@@ -247,15 +247,15 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       hold. All the bounded questions about these spectral values are
       therefore represented by bounded operators on the whole space. The
       coordinate function \(f (x) = x\), however, is no longer bounded on the
-      spectral values. We will return to it in <a href="#sec:spectral">Section&nbsp;4</a>.
-      For now, the bounded calculus is already available, before we decide on
-      which vectors that coordinate can act.
+      spectral values. I will return to it in <a href="#sec:spectral">Section&nbsp;4</a>. For
+      now, the bounded calculus is already available, before deciding on which
+      vectors that coordinate can act.
     </p>
     <h2 id="auto-3"><a id="sec:calculus"></a>2. Real observables<span style="margin-left: 1em"></span></h2>
     <p>
-      The matrix example suggests the description we want to keep:
+      The matrix example suggests the description I want to keep:
     </p>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 70.291740657624px; margin-right: 70.291740657624px">
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 77.321376014376px; margin-right: 77.321376014376px">
       <div style="text-indent: 0em">
         <p>
           <i>A <strong>real observable</strong> is a consistent way of turning
@@ -266,22 +266,22 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     </div>
     <p>
       Let \(H\) be a complex Hilbert space, with inner product linear in the
-      second argument. We write \(B (H)\) for the algebra of everywhere
-      defined bounded linear operators on \(H\). Write \(C_0 (\mathbb{R})\)
-      for the complex continuous functions vanishing at infinity, with the
-      supremum norm and involution \(f^{\ast} (x) = \overline{f (x)}\). The
-      bounded continuous functions form \(C_b (\mathbb{R})\); the bounded
-      Borel functions form \(B_b (\mathbb{R})\). These are different algebras.
+      second argument. I write \(B (H)\) for the algebra of everywhere defined
+      bounded linear operators on \(H\). Write \(C_0 (\mathbb{R})\) for the
+      complex continuous functions vanishing at infinity, with the supremum
+      norm and involution \(f^{\ast} (x) = \overline{f (x)}\). The bounded
+      continuous functions form \(C_b (\mathbb{R})\); the bounded Borel
+      functions form \(B_b (\mathbb{R})\). These are different algebras.
     </p>
     <p>
-      The structure we want to retain is a linear map
+      The structure I want to retain is a linear map
     </p>
     <div class="center">
       \(\displaystyle \Phi : C_0 (\mathbb{R}) \rightarrow B (H), \qquad f
       \mapsto \Phi (f) .\)
     </div>
     <p>
-      We require it to preserve products and adjoints, just as in the matrix
+      I require it to preserve products and adjoints, just as in the matrix
       calculation:
     </p>
     <div class="center">
@@ -300,8 +300,8 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       map by \(\tilde{\Phi} (f + c) = \Phi (f) + c I\). It still preserves
       products and adjoints. Every nonnegative function in this enlarged
       algebra has its square root there, so its image is a positive operator.
-      Apply this to \(M^2 - | f |^2\), where \(M = \| f \|_{\infty}\). We
-      obtain
+      Apply this to \(M^2 - | f |^2\), where \(M = \| f \|_{\infty}\). This
+      gives
     </p>
     <div class="center">
       \(\displaystyle M^2 I - \Phi (f)^{\ast} \Phi (f) \geqslant 0,\)
@@ -310,9 +310,9 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       which gives the claimed norm bound on applying it to each vector.
     </p>
     <p>
-      The constant function 1 does not belong to \(C_0 (\mathbb{R})\). We
+      The constant function 1 does not belong to \(C_0 (\mathbb{R})\). I
       therefore cannot express normalization simply as \(\Phi (1) = I\) within
-      our starting algebra. Instead we require <em>nondegeneracy</em>: the
+      this starting algebra. Instead I require <em>nondegeneracy</em>: the
       linear span of \(\Phi (C_0) H\) is dense in \(H\). Equivalently, for
       continuous compactly supported cutoffs \(0 \leqslant \chi_n \leqslant
       1\) increasing to 1,
@@ -351,12 +351,12 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       the calculus.
     </p>
     <p>
-      We deliberately start with \(C_0 (\mathbb{R})\). Its functions are
+      I deliberately start with \(C_0 (\mathbb{R})\). Its functions are
       bounded, and positive functionals on this algebra have a direct
       measure-theoretic interpretation. The coordinate function \(x \mapsto
       x\) is absent. Recovering it, together with its proper domain, will be
       the outcome of the construction rather than an assumption at the outset.
-      Before carrying out that construction, let us see how this language
+      Before carrying out that construction, I will show how this language
       already describes familiar random variables through their bounded tests.
     </p>
     <h2 id="auto-4"><a id="sec:probability"></a>3. Random variables as observables<span style="margin-left: 1em"></span></h2>
@@ -427,7 +427,7 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       Thus its law has density \(x^{- 2} 1_{(1, \infty)} (x)\). The density
       jumps at \(x = 1\), but the law has no atoms and needs no list of
       eigenvalues. This is the concrete model for the general construction in
-      <a href="#sec:spectral">Section&nbsp;4</a>: there we start only from an abstract
+      <a href="#sec:spectral">Section&nbsp;4</a>: there I start only from an abstract
       homomorphism, recover its projections and vector laws, and then
       reconstruct the possibly unbounded coordinate with its domain.
     </p>
@@ -444,7 +444,7 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
 \circ X.\)
     </div>
     <p>
-      Thus we describe the random point by all its bounded scalar tests. No
+      Thus the random point is described by all its bounded scalar tests. No
       chart, embedding or preferred coordinate is needed. On \(L^2 (\Omega,
       \mathbb{P})\), its restriction to \(C_0 (M)\) is nondegenerate:
       compactly supported cutoffs \(\chi_n \uparrow 1\) satisfy \(\chi_n (X) u
@@ -490,10 +490,10 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     <p>
       These examples give the abstract definition a concrete purpose: a
       calculus records how all bounded questions about an observable are
-      answered. In classical probability we take expectations; in the matrix
-      example we pair the resulting operators with a unit vector. We next
-      construct the spectral measure behind these scalar laws and recover the
-      unbounded coordinate.
+      answered. In classical probability, this means taking expectations; in
+      the matrix example, it means pairing the resulting operators with a unit
+      vector. I will next construct the spectral measure behind these scalar
+      laws and recover the unbounded coordinate.
     </p>
     <h2 id="auto-6"><a id="sec:spectral"></a>4. From Riesz&ndash;Markov to spectral measures and
     domains<span style="margin-left: 1em"></span></h2>
@@ -541,7 +541,7 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       For a matrix, eigenspace projections gave the scalar laws. In the
       multiplication example of Section&nbsp;3, inverse images under \(X\)
       gave both the projections and the laws, without eigenvectors. For an
-      abstract calculus neither description is initially available: we obtain
+      abstract calculus neither description is initially available: I obtain
       the vector laws first and then recover the projections. Given \(u \in
       H\), consider
     </p>
@@ -624,8 +624,8 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     <p>
       This formula need not produce a vector in the Hilbert space. The
       sequence \(u_n = 1 / n\) is square summable, but its proposed image
-      \((1, 1, 1, \ldots)\) is not. We must therefore specify the vectors for
-      which the output remains square summable:
+      \((1, 1, 1, \ldots)\) is not. It is therefore necessary to specify the
+      vectors for which the output remains square summable:
     </p>
     <div class="center">
       \(\displaystyle D (N) = \left\{ u \in \ell^2 (\mathbb{N}) : \sum_{n
@@ -659,15 +659,15 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     <p>
       The integral means the norm limit of its bounded spectral truncations.
       The integrability condition says exactly when these truncations
-      converge. Since \(E ([- n, n]) u \rightarrow u\), the domain is dense.
-      We have now obtained an operator together with its domain from the
-      bounded calculus.
+      converge. Since \(E ([- n, n]) u \rightarrow u\), the domain is dense. I
+      have now obtained an operator together with its domain from the bounded
+      calculus.
     </p>
     <h3 id="auto-9">What self-adjointness means once a domain is present<span style="margin-left: 1em"></span></h3>
     <p>
       For a matrix, being Hermitian is just the equality with its conjugate
       transpose. With a proper domain, the same idea has an additional
-      question: does the adjoint act on exactly the same vectors? We can now
+      question: does the adjoint act on exactly the same vectors? I can now
       state the definitions with that question in view.
     </p>
     <p>
@@ -686,10 +686,10 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     </p>
     <p>
       An operator is <em>closed</em> if its graph is closed in \(H \oplus H\):
-      whenever \(u_n \rightarrow u\) and \(A u_n \rightarrow v\), we have \(u
-      \in D (A)\) and \(A u = v\). It is <em>closable</em> if the closure of
-      its graph is again an operator graph. Every symmetric operator is
-      closable; it is <em>essentially self-adjoint</em> when that closure is
+      whenever \(u_n \rightarrow u\) and \(A u_n \rightarrow v\), then \(u \in
+      D (A)\) and \(A u = v\). It is <em>closable</em> if the closure of its
+      graph is again an operator graph. Every symmetric operator is closable;
+      it is <em>essentially self-adjoint</em> when that closure is
       self-adjoint. These distinctions will recur in the examples.
     </p>
     <div class="notes-theorem">
@@ -719,8 +719,8 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       theorem gives its circle-valued spectral measure; pulling it back by the
       inverse Cayley map gives the real spectral measure and recovers the
       original domain. The Cayley transform in <a href="#sec:cayley">Section&nbsp;7</a>
-      makes that route explicit. The two constructions are inverse. We can now
-      write \(\Phi = \Phi_A\) and \(\Phi (f) = f (A)\). We have recovered the
+      makes that route explicit. The two constructions are inverse. I can now
+      write \(\Phi = \Phi_A\) and \(\Phi (f) = f (A)\). I have recovered the
       unbounded operator without treating its domain as an arbitrary extra
       choice.
     </p>
@@ -754,7 +754,7 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       pattern. Their domains record the integrability of the chosen function,
       rather than a new set of rules for each construction.
     </p>
-    <h3 id="auto-10">Cores: how much of the domain must we know?<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-10">Cores: how much of the domain is needed?<span style="margin-left: 1em"></span></h3>
     <p>
       A large domain is often described through a smaller space of convenient
       vectors. For a closed operator \(A\), a linear subspace \(D_0 \subseteq
@@ -838,10 +838,10 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       Regularity, total mass and countable additivity play different roles.
       Riesz&ndash;Markov already makes the scalar measures obtained from
       \(C_0\) Radon. Nondegeneracy gives them the full mass prescribed by the
-      vector norm. If we begin instead with bounded Borel functions, we must
-      impose a continuity condition to exclude merely finitely additive data.
-      The choice of starting algebra determines which of these properties
-      still needs to be checked.
+      vector norm. Starting instead with bounded Borel functions requires
+      imposing a continuity condition to exclude merely finitely additive
+      data. The choice of starting algebra determines which of these
+      properties still needs to be checked.
     </p>
     <p>
       A convenient precise requirement on a unital Borel \(\ast\)-homomorphism
@@ -863,8 +863,8 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
     </p>
     <h3 id="auto-13">Optional example: what can go wrong at infinity<span style="margin-left: 1em"></span></h3>
     <p>
-      An ordinary limit already shows the issue, provided we restrict the
-      class of functions on which we take it. Let \(\mathcal{A}_+\) be the
+      An ordinary limit already shows the issue, provided the limit is taken
+      only on a suitable class of functions. Let \(\mathcal{A}_+\) be the
       algebra of bounded Borel functions on \(\mathbb{R}\) that have a limit
       at \(+ \infty\), and set
     </p>
@@ -882,8 +882,8 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
       increasing to one.
     </p>
     <p>
-      There are two limits here, and their order matters. We first send \(x\)
-      to infinity with the interval fixed: eventually the point \(x\) lies
+      There are two limits here, and their order matters. First send \(x\) to
+      infinity with the interval fixed: eventually the point \(x\) lies
       outside it. Increasing the interval afterwards still gives zero. This is
       the simplest picture of mass escaping to infinity. The functional is
       defined on \(\mathcal{A}_+\), not on all bounded Borel functions;
@@ -918,16 +918,16 @@ f (n) |^2 | u_n |^2 \leqslant \| f \|_{\infty}^2
         <b>Theorem 2 (resolvent coordinates).</b><a id="thm:resolvents"></a> A self-adjoint
         operator is uniquely determined by \(R_A (z)\) at any one nonreal
         point. The \(\ast\)-algebra generated by \(r_z\) is uniformly dense in
-        \(C_0 (\mathbb{R})\). Here we take the nonunital algebra, including
-        complex conjugates.
+        \(C_0 (\mathbb{R})\). Here the intended algebra is the nonunital
+        algebra, including complex conjugates.
       </p>
     </div>
     <p>
       <em>Proof sketch.</em> The function \(r_z\) separates real points and
       never vanishes, so the locally compact Stone&ndash;Weierstrass theorem
-      applies. More directly we let \(D (A) =\operatorname{Ran}R_A (z)\) and
-      \(A = z I + R_A (z)^{- 1}\) on this range. The inverse is usually
-      unbounded; forgetting the range would forget the domain.
+      applies. More directly, set \(D (A) =\operatorname{Ran}R_A (z)\) and \(A
+      = z I + R_A (z)^{- 1}\) on this range. The inverse is usually unbounded;
+      forgetting the range would forget the domain.
     </p>
     <p>
       The familiar identities are identities between bounded operators:
@@ -1043,7 +1043,7 @@ z^2}, \quad m_{\mu} (2 i) = m_{\mu} (i / 2) =
       the self-adjoint operator \(B\) on the extra space may be.
     </p>
     <p>
-      If that generated subspace is all of \(H\), we call \(u\)
+      If that generated subspace is all of \(H\), \(u\) is called
       <em>cyclic</em>. The identity \(\langle f (A) u, g (A) u \rangle = \int
       \bar{f} g \mathrm{d} \mu_u\) then makes \(f (A) u \mapsto f\) an
       isometry, with functions identified modulo equality almost everywhere.
@@ -1168,10 +1168,10 @@ z^2}, \quad m_{\mu} (2 i) = m_{\mu} (i / 2) =
     </p>
     <p>
       Notice the distinction between \(1 \notin \sigma (V)\) and \(E_V (\{ 1
-      \}) = 0\). We require only the latter. An unbounded \(A\) corresponds to
-      a \(V\) whose spectrum accumulates at 1, without an eigenvector there.
-      Its bounded transform has not removed the unboundedness; it has encoded
-      it in how the spectral measure approaches the missing point.
+      \}) = 0\). Only the latter is required. An unbounded \(A\) corresponds
+      to a \(V\) whose spectrum accumulates at 1, without an eigenvector
+      there. Its bounded transform has not removed the unboundedness; it has
+      encoded it in how the spectral measure approaches the missing point.
     </p>
     <p>
       In particular, having no eigenvector at 1 does not make \(I - V\)
@@ -1183,10 +1183,10 @@ z^2}, \quad m_{\mu} (2 i) = m_{\mu} (i / 2) =
     <h2 id="auto-20"><a id="sec:convergence"></a>8. Convergence of observables: why strong resolvents
     are natural<span style="margin-left: 1em"></span></h2>
     <p>
-      Once observables are our starting point, their convergence has a natural
+      Once observables are the starting point, their convergence has a natural
       meaning. Fix a Hilbert space \(H\) and describe the observables by
       nondegenerate \(\ast\)-homomorphisms \(\Phi_n, \Phi : C_0 (\mathbb{R})
-      \rightarrow B (H)\). We ask that every bounded continuous test vanishing
+      \rightarrow B (H)\). I ask that every bounded continuous test vanishing
       at infinity converge on every vector:
     </p>
     <div class="center">
@@ -1198,8 +1198,8 @@ z^2}, \quad m_{\mu} (2 i) = m_{\mu} (i / 2) =
       This is pointwise strong convergence of the homomorphisms. It compares
       observables through operations already defined on the whole Hilbert
       space. Their coordinate operators may have different domains, as happens
-      when boundary conditions or potentials change. We need not identify a
-      common domain before asking whether the observables converge.
+      when boundary conditions or potentials change. There is no need to
+      identify a common domain before asking whether the observables converge.
     </p>
     <p>
       The resolvents are a small family of these bounded tests, and they
@@ -1385,11 +1385,11 @@ z^2}, \quad m_{\mu} (2 i) = m_{\mu} (i / 2) =
       uncontrolled amount to an unbounded quantity.
     </p>
     <p>
-      The distinction is useful in practice: convergence of observables tells
-      us that bounded continuous questions have stable answers; estimates on
-      spectral tails are needed for energies and other unbounded quantities.
-      See <a href="https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/">Teschl, Section&nbsp;6.6</a> for resolvent convergence and
-      its spectral consequences.
+      The distinction is useful in practice: convergence of observables
+      ensures that bounded continuous questions have stable answers; estimates
+      on spectral tails are needed for energies and other unbounded
+      quantities. See <a href="https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/">Teschl, Section&nbsp;6.6</a> for resolvent
+      convergence and its spectral consequences.
     </p>
     <p>
       This completes the basic description of a real observable, including how

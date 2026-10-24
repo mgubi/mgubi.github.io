@@ -38,16 +38,20 @@
   notes, research papers, presentations or<nbsp>to take notes in seminars.
   Also this website is completely written and managed with <TeXmacs>.
 
+  I have also created and maintain several related community projects,
+  including <hlink|Notes on TeXmacs|https://texmacs.github.io/notes/docs/main.html>,
+  a blog about <TeXmacs>, and
+  <hlink|tm-forge|https://github.com/texmacs/tm-forge>, a repository of
+  user-contributed documents, styles, plugins and examples.
+
   A review paper<nbsp>(<hlink|pdf|https://hal.archives-ouvertes.fr/file/index/docid/687490/filename/issac12.pdf>)
   about the <TeXmacs> project<nbsp>and its intended goals, circa 2013. A
   presentation<nbsp>(<notes-store|pdf|iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.pdf>,<nbsp><notes-store|tm|iam/texmacs/talk-texmacs-guile-strasbourg-june-2019.tm>)
   I gave on <TeXmacs> and on GNU Guile scheme as its extension language.
 
   The <TeXmacs> community has a <hlink|forum|http://forum.texmacs.cn/>, a
-  Gitter <hlink|chatroom|https://gitter.im/texmacs/Lobby>, a
-  <hlink|blog|https://texmacs.github.io/notes/docs/main.html> and a git
-  repository for <hlink|user code|https://github.com/texmacs/tm-forge>. Some
-  videos are hosted in our a <hlink|youtube
+  Gitter <hlink|chatroom|https://gitter.im/texmacs/Lobby> and a
+  <hlink|youtube
   channel|https://www.youtube.com/channel/UCLaZZkOj3GPYFu9pVsEbthg>, there is
   a <hlink|youtube playlist|https://www.youtube.com/playlist?list=PLjXdYclFpynD0ufg_pp-5MT5-X-57Okvs>
   with some videos showing everyday use of the program. videos of advanced
