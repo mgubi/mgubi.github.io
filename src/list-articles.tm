@@ -12,6 +12,23 @@
 
   <hrule>
 
+  <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
+  we talk about unbounded self-adjoint operators?>
+    This post begins a series in which I collect several results around the
+    notion of an observable, using it as an organizing principle for the
+    theory of unbounded self-adjoint operators. An observable can be
+    understood through the bounded functions applied to it. Starting with
+    Hermitian matrices and random variables, I develop this viewpoint through
+    spectral measures, resolvents and unitary groups, and see why strong
+    resolvent convergence is a natural way to compare observables. The
+    results are standard. The post is mostly an invitation to functional
+    analysis for those who, like me, have struggled with the usual
+    presentations of this subject.
+  </notes-entry|24 Oct 2026>
+
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|24 Oct 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
@@ -26,20 +43,6 @@
     the final section identifies the equivalent tests for convergence.
   </notes-entry|23 Oct 2026>
 
-  <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
-  we talk about unbounded self-adjoint operators?>
-    This post begins a series in which I collect several results around the
-    notion of an observable, using it as an organizing principle for the
-    theory of unbounded self-adjoint operators. An observable can be
-    understood through the bounded functions we apply to it. Starting with
-    Hermitian matrices and random variables, we develop this viewpoint
-    through spectral measures, resolvents and unitary groups, and see why
-    strong resolvent convergence is a natural way to compare observables. The
-    results are standard. The post is mostly an invitation to functional
-    analysis for those who, like me, have struggled with the usual
-    presentations of this subject.
-  </notes-entry|23 Oct 2026>
-
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated October 2026.|23 Oct 2026>
 
@@ -50,9 +53,6 @@
   literate documents can explain the relationships between programming
   languages, with a Scheme/C++ example and a proposal for the development of
   <TeXmacs>.|21 Oct 2026>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|21 Oct 2026>
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|21 Oct 2026>
