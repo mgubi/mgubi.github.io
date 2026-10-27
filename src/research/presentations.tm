@@ -13,7 +13,10 @@
 
   <notes-abstract|The things I have said in various places.>
 
-  <section*|Video recordings>
+  <hlink|Video recordings|#sec:videos> \<cdot\>
+  <hlink|Slides|#sec:slides>
+
+  <section*|Video recordings><label|sec:videos>
 
   <subsection*|2022>
 
@@ -57,9 +60,15 @@
   Pathwise regularisation by noise in PDEs, CIRM, August 2015
   (<hlink|watch recording|https://www.youtube.com/watch?v=Fmzdp1FkfzQ>)
 
-  <section*|Slides>
+  <section*|Slides><label|sec:slides>
 
   <subsection*|2026>
+
+  Stochastic observables and the forward\Ubackward flow of a Euclidean
+  field \U <hlink|Deterministic and Stochastic Evolution
+  Equations|https://indico.sns.it/event/149/>, Scuola Normale Superiore,
+  Pisa, October 27, 2026
+  (<notes-store|slides (PDF)|talk-pisa-observables-fbsde-2026.pdf>)
 
   Stochastic observables: A framework for singular fields \U
   <hlink|Workshop 1 of the Probability and Stochastic Analysis Trimester
