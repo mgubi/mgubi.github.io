@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|research/presentations.tm|Presentations|The things I have said
+  in various places.|27 Oct 2026>
+
   <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
   we talk about unbounded self-adjoint operators?>
     This post begins a series in which I collect several results around the
@@ -59,9 +62,6 @@
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|21
   Oct 2026>
-
-  <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|01 Oct 2026>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
