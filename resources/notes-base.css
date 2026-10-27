@@ -13,7 +13,8 @@
 * Font setup
 ******************************************************************************/
 
-@import url('./highlight-github.css');
+@import url('./highlight-github.css?v=20261027');
+@import url('./theme.css');
 
 @font-face {
     font-family: 'Source Serif Pro';
@@ -132,19 +133,15 @@
     --main-family: 'Source Serif Pro', serif;
     --title-family: 'Source Sans Pro', sans-serif;
     --tt-family: 'Source Code Pro', monospace;
-    --color-title: rgb(154, 39, 39);
-    --color-text: rgb(41, 34, 34);
 }
 
 html {
-    yy-background-color: rgb(79, 98, 105);
-    background-color: #f9f9f9;
-    xx-background-color: rgb(232, 231, 219);
+    background-color: var(--color-background);
     font-size: 18px;
 }
 
 body {
-    background-color:  #f9f9f9;
+    background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--main-family);
     text-align: left;
@@ -163,6 +160,7 @@ body {
 img {
     max-width: 100%;
     height: auto !important;
+    background-color: var(--image-background);
 }
 
 pre, code {
@@ -185,7 +183,7 @@ table {
 }
 
 .unavailable-link {
-    color: #68777c;
+    color: var(--color-muted);
     text-decoration: underline dotted;
     cursor: help;
 }
@@ -327,7 +325,7 @@ td {
 }
 
 a:link, a:visited {
-    color: #5b7077;
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -828,9 +826,9 @@ code {
 .tmweb-code-xx {
     font-size: 90%;
     color: #567b70;
-    background-color: #eee;
+    background-color: var(--color-surface);
     border-width: 1px;
-    border-color: #4040C0;
+    border-color: var(--code-blue);
     border-style: solid;
     padding: 0.3em 0.6em;
     margin: 0.5em 0em;
@@ -843,7 +841,7 @@ code {
 
 .tmweb-key {
     font-size: 84%;
-    background-color: #E0D0C0;
+    background-color: var(--color-surface);
     box-shadow: 0.1em 0.1em #506080;
     padding: 0.05em 0.1em;
     margin: 0em 0.05em;
@@ -855,13 +853,13 @@ code {
 }
 
 .tmweb-markup {
-    color: #4040C0;
+    color: var(--code-blue);
     font-family: var(--title-family);
 }
 
 
 .tmweb-entry {
-    border-top: 1px solid rgba(79, 98, 105, 0.22);
+    border-top: 1px solid var(--color-border);
     padding: 1.05rem 0 0.95rem;
 }
 
@@ -885,7 +883,7 @@ code {
 }
 
 .tmweb-entry-date {
-    color: #68777c;
+    color: var(--color-muted);
     flex: 0 0 auto;
     font-family: var(--title-family);
     font-size: 0.68rem;
@@ -895,7 +893,7 @@ code {
 }
 
 .tmweb-entry-abstract {
-    color: darkslategrey;
+    color: var(--color-secondary);
     display: block;
     font-size: 0.82rem;
     line-height: 1.45;

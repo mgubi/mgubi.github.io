@@ -1,0 +1,160 @@
+/* Shared colour palettes. System preference also works without JavaScript. */
+:root {
+    color-scheme: light;
+    --color-background: #f9f9f9;
+    --color-text: #292222;
+    --color-title: #9a2727;
+    --color-link: #5b7077;
+    --color-muted: #68777c;
+    --color-secondary: #2f4f4f;
+    --color-border: #cbd1d3;
+    --color-surface: #eee;
+    --image-background: transparent;
+    --code-comment: #686850;
+    --code-number: #008080;
+    --code-string: #d14;
+    --code-title: #900;
+    --code-type: #458;
+    --code-blue: #000080;
+    --code-green: #00751d;
+    --code-purple: #990073;
+    --code-builtin: #006b8f;
+    --code-deletion: #fdd;
+    --code-addition: #dfd;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-background: #191b1e;
+    --color-text: #e6e2df;
+    --color-title: #ed9992;
+    --color-link: #a5c9d6;
+    --color-muted: #a7afb4;
+    --color-secondary: #c0c8ca;
+    --color-border: #454b51;
+    --color-surface: #292d32;
+    --image-background: #fff;
+    --code-comment: #adb6a1;
+    --code-number: #8ed6cf;
+    --code-string: #ffa6bb;
+    --code-title: #f5a2a2;
+    --code-type: #b5c7f2;
+    --code-blue: #a9c2ff;
+    --code-green: #9edba8;
+    --code-purple: #e5b1e6;
+    --code-builtin: #8ed6ee;
+    --code-deletion: #542c35;
+    --code-addition: #254630;
+  }
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-background: #191b1e;
+    --color-text: #e6e2df;
+    --color-title: #ed9992;
+    --color-link: #a5c9d6;
+    --color-muted: #a7afb4;
+    --color-secondary: #c0c8ca;
+    --color-border: #454b51;
+    --color-surface: #292d32;
+    --image-background: #fff;
+    --code-comment: #adb6a1;
+    --code-number: #8ed6cf;
+    --code-string: #ffa6bb;
+    --code-title: #f5a2a2;
+    --code-type: #b5c7f2;
+    --code-blue: #a9c2ff;
+    --code-green: #9edba8;
+    --code-purple: #e5b1e6;
+    --code-builtin: #8ed6ee;
+    --code-deletion: #542c35;
+    --code-addition: #254630;
+}
+
+.theme-control {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5em;
+    color: var(--color-muted);
+}
+
+.theme-control label {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+/* A half-lit circle represents the light, dark and automatic themes. */
+.theme-control label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    background: linear-gradient(90deg, currentColor 50%, transparent 50%);
+}
+
+.theme-control select {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    font-family: var(--title-family);
+}
+
+.theme-control:hover label {
+    color: var(--color-text);
+    background: var(--color-surface);
+}
+
+.theme-control:focus-within label {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+}
+
+/* Keep paper output light, regardless of the saved screen preference. */
+@media print {
+  :root, :root[data-theme] {
+    color-scheme: light !important;
+    --color-background: #f9f9f9 !important;
+    --color-text: #292222 !important;
+    --color-title: #9a2727 !important;
+    --color-link: #5b7077 !important;
+    --color-muted: #68777c !important;
+    --color-secondary: #2f4f4f !important;
+    --color-border: #cbd1d3 !important;
+    --color-surface: #eee !important;
+    --image-background: transparent !important;
+    --code-comment: #686850 !important;
+    --code-number: #008080 !important;
+    --code-string: #d14 !important;
+    --code-title: #900 !important;
+    --code-type: #458 !important;
+    --code-blue: #000080 !important;
+    --code-green: #00751d !important;
+    --code-purple: #990073 !important;
+    --code-builtin: #006b8f !important;
+    --code-deletion: #fdd !important;
+    --code-addition: #dfd !important;
+  }
+  .theme-control { display: none !important; }
+}
+
+/* TeXmacs also emits fixed colours in older code examples and panels. */
+.ornament[style*="background-color:#f0f0f0"] {
+    background-color: var(--color-surface) !important;
+}
+[style*="color: #800000"] { color: var(--color-title) !important; }
+[style*="color: #292222"], [style*="color: #404050"] {
+    color: var(--color-text) !important;
+}
+[style*="color: blue"] { color: var(--code-blue) !important; }
