@@ -100,6 +100,7 @@ class FeedDateTests(unittest.TestCase):
             path.relative_to(ROOT / "src").as_posix()
             for path in (ROOT / "src").rglob("*.tm")
             if path.name not in {"main.tm", "list-articles.tm"}
+            and path.parent != ROOT / 'src' / 'teaching' / 'sissa-2026'
         }
         actual = {field(entry, "id").split(":", 2)[-1] for entry in self.entries}
         self.assertEqual(actual, expected)

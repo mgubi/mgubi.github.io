@@ -1,0 +1,2023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 2 (slides) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
+    <link href="cqft-slides.css" type="text/css" rel="stylesheet">
+    <script src="cqft-slides.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 2 (slides), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_slides_L2.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+    <link rel="stylesheet" href="/resources/sissa-materials.css">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 2 (slides)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <div class="toggle" style="display: block">
+      <div align="left">
+        <p style="margin-top: 0.8cm">
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+          <font style="font-size: 210.0%"><b><font color="#800000">A Constructive Introduction to Quantum
+          Field Theory</font></b></font>
+        </p>
+        <p style="margin-bottom: 0.2cm">
+
+        </p>
+        <p>
+          <font style="font-size: 130.0%">The Gaussian free field</font>
+        </p>
+        <p style="margin-bottom: 0.65cm">
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+          <font style="font-size: 84.1%">Massimiliano Gubinelli | University of Oxford</font>
+        </p>
+        <p>
+          <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 2 &mdash; notes:
+          &sect;3</font></font>
+        </p>
+        <p>
+
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Where we are
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <b>Last time.</b> Positivity of the energy <font color="#620000">\(\Rightarrow\)</font>
+        imaginary time; vacuum expectations are moments of <font color="#620000">\(\mu
+        (\mathrm{d} \varphi)  \hspace{0.17em} \backprime\backprime =
+        "
+\hspace{0.17em} Z^{- 1} \mathrm{e}^{- \int [\frac{1}{2} | \nabla
+        \varphi |^2 +
+\frac{1}{2} m^2 \varphi^2 + V (\varphi)]} \mathcal{D}
+        \varphi\)</font>; relativistic QFTs <font color="#620000">\(\leftrightarrow\)</font>
+        measures on <font color="#620000">\(\mathcal{S}' (\mathbb{R}^d)\)</font>
+        satisfying the OS axioms.
+      </p>
+      <p>
+        <b>Today.</b> The Gaussian part, rigorously.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Construction on <font color="#620000">\(\mathbb{T}^d\)</font> and <font
+            color="#620000">\(\mathbb{R}^d\)</font>; regularity.
+          </p>
+        </li>
+        <li>
+          <p>
+            Reflection positivity; the free field;
+            K&auml;ll&eacute;n&ndash;Lehmann again.
+          </p>
+        </li>
+        <li>
+          <p>
+            Local operators: Wick powers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Gaussian integration by parts: the Dyson&ndash;Schwinger (DS)
+            equation.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>DS characterises the GFF.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>The GFF is the stationary marginal of parabolic and
+            elliptic stochastic quantisation.</strong>
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Definition and
+        construction</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Setting and definition
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\mathcal{M}=\mathbb{T}^d_L = (\mathbb{R}/
+        L\mathbb{Z})^d\)</font> or <font color="#620000">\(\mathbb{R}^d\)</font>;<span
+        style="margin-left: 1em"></span><font color="#620000">\(\mathcal{S} (\mathcal{M})\)</font>
+        smooth, resp. Schwartz, functions;<span style="margin-left: 1em"></span><font color="#620000">\(\mathcal{S}'
+        (\mathcal{M})\)</font> with the cylinder (<font color="#620000">\(=\)</font>
+        Borel) <font color="#620000">\(\sigma\)</font>-algebra.
+      </p>
+      <center>
+        \(\displaystyle A := m^2 - \Delta, \qquad C := A^{- 1}, \qquad m >
+        0.\)
+      </center>
+      <p>
+        <font color="#620000">\(A\)</font>, <font color="#620000">\(C\)</font> are continuous
+        bijections of <font color="#620000">\(\mathcal{S} (\mathcal{M})\)</font>
+        (Fourier multipliers <font color="#620000">\((|k|^2 + m^2)^{\pm 1}\)</font>),
+        and <font color="#620000">\(\|C\|_{L^2 \to L^2} \leq m^{- 2}\)</font>.
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Definition.
+        </strong></font></font><i>The <strong>Gaussian free field</strong>
+        <font color="#620000">\(\mu_m\)</font> is the centred Gaussian measure on <font
+        color="#620000">\(\mathcal{S}' (\mathcal{M})\)</font> with</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          \(\displaystyle \int \varphi (f) \varphi (g)  \hspace{0.17em} \mu_m
+          (\mathrm{d} \varphi) =
+\langle f, Cg \rangle, \qquad \text{i.e.}
+          \qquad \int \mathrm{e}^{\mathrm{i}
+\varphi (f)} \mu_m (\mathrm{d}
+          \varphi) = \mathrm{e}^{- \frac{1}{2}  \langle
+f, Cf \rangle} .\)
+        </center></i>
+      </p>
+      <p>
+        Formally <font color="#620000">\(\mu_m (\mathrm{d} \varphi)
+        \backprime\backprime = "Z^{- 1} \mathrm{e}^{-
+\frac{1}{2}  \langle
+        \varphi, A \varphi \rangle} \mathcal{D} \varphi\)</font>: the Gaussian
+        part of the Euclidean action.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The Green function
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <font color="#620000">\(C\)</font> has kernel <font color="#620000">\(G\)</font>:
+          </p><center>
+            \(\displaystyle G_m (x) = \int \frac{\mathrm{e}^{\mathrm{i} k
+            \cdot x}}{|k|^2 + m^2}
+\frac{\mathrm{d} k}{(2 \pi)^d}\)
+          </center><p>
+            on <font color="#620000">\(\mathbb{R}^d\)</font>, and <font color="#620000">\(\sum_{n
+            \in \mathbb{Z}^d} G_m  (x + nL)\)</font> on <font color="#620000">\(\mathbb{T}^d_L\)</font>.
+          </p><ul>
+            <li>
+              <p>
+                <font color="#620000">\(d = 1\)</font>: <font color="#620000">\(G_m (x) =
+                \mathrm{e}^{- m |x|} / (2 m)\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(d = 2\)</font>: <font color="#620000">\(G_m (x) \sim
+                \frac{1}{2 \pi} \log \frac{1}{|x|}\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(d \geq 3\)</font>: <font color="#620000">\(G_m (x) \sim
+                \frac{\Gamma (d / 2 - 1)}{4 \pi^{d / 2}} |x|^{2 - d}\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Decay <font color="#620000">\(\approx \mathrm{e}^{- m |x|}\)</font> at
+                infinity.
+              </p>
+            </li>
+          </ul><p>
+            <strong>Singular on the diagonal for <font color="#620000">\(d \geq
+            2\)</font></strong>: the field is not a function.
+          </p></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p style="margin-top: 2pt">
+            <img class="image" src="cqft_slides_L2-1.png" width="35%" alt="Figure from Constructive quantum field theory — Lecture 2 (slides)" decoding="async" loading="lazy"><br /> A sample of the massive GFF
+            on <font color="#620000">\(\mathbb{T}^2\)</font> (<font color="#620000">\(m =
+            4\)</font>, <font color="#620000">\(512^2\)</font> Fourier modes).
+          </p></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Existence on the torus
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i>Let <font color="#620000">\((e_n)\)</font> be a real
+        orthonormal basis of eigenfunctions of <font color="#620000">\(-
+        \Delta\)</font> on <font color="#620000">\(\mathbb{T}^d_L\)</font>, <font
+        color="#620000">\(- \Delta e_n = \kappa_n e_n\)</font>, <font color="#620000">\(\lambda_n
+        = m^2 + \kappa_n\)</font>, and <font color="#620000">\((g_n)\)</font> i.i.d.
+        <font color="#620000">\(N (0, 1)\)</font>. For <font color="#620000">\(s > \frac{d}{2} -
+        1\)</font>,</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \varphi = \sum_n \lambda_n^{- 1 / 2} g_n
+          \hspace{0.17em} e_n\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>converges a.s. and in <font color="#620000">\(L^2 (\mathbb{P}; H^{-
+        s})\)</font>, and <font color="#620000">\(\text{Law} (\varphi) =
+        \mu_m\)</font>.</i>
+      </p>
+      <p>
+        <b>Proof.</b>
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \| \varphi \|^2_{H^{- s}} = \sum_n
+        \frac{1}{(1 + \kappa_n)^s
+\lambda_n} \asymp \sum_{k \in \mathbb{Z}^d}
+        (1 + |k|^2)^{- s - 1} < \infty
+\Longleftrightarrow 2 s + 2 > d.\)
+      </center>
+      <p>
+        <font color="#620000">\(L^2\)</font>-bounded <font color="#620000">\(H^{-
+        s}\)</font>-valued martingale <font color="#620000">\(\Rightarrow\)</font>
+        convergence. And <font color="#620000">\(\varphi (f) = \sum_n \lambda_n^{- 1 /
+        2} g_n  \langle e_n, f \rangle\)</font> is Gaussian with variance
+        <font color="#620000">\(\sum_n \lambda_n^{- 1}  \langle e_n, f \rangle^2 =
+        \langle f, Cf \rangle\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Existence on <font color="#620000">\(\mathbb{R}^d\)</font> and regularity
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>Bochner&ndash;Minlos</strong>
+        </p>
+        <p>
+          <font color="#620000">\(\Psi : \mathcal{S} (\mathbb{R}^d) \to
+          \mathbb{C}\)</font> continuous, positive definite, <font color="#620000">\(\Psi
+          (0) = 1\)</font> <font color="#620000">\(\Rightarrow\)</font> there is a
+          unique probability measure on <font color="#620000">\(\mathcal{S}'
+          (\mathbb{R}^d)\)</font> with characteristic functional <font color="#620000">\(\Psi\)</font>.
+        </p>
+      </div>
+      <p>
+        For <font color="#620000">\(\Psi (f) = \mathrm{e}^{- \frac{1}{2}  \langle f, Cf
+        \rangle}\)</font>: continuity from <font color="#620000">\(\langle f, Cf
+        \rangle \leq m^{- 2} \|f\|_{L^2}^2\)</font>; positive definiteness
+        from <font color="#620000">\(\Psi (f_j - f_k) = a_j a_k \mathrm{e}^{\langle
+        f_j, Cf_k \rangle}\)</font> and the Schur product theorem.
+      </p>
+      <p>
+        <b>Regularity</b> (sharp, Exercise 3.3):
+      </p>
+      <p>
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(d = 1\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(d = 2\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(d = 3\)</font></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">stationary OU process</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\(H^{- \kappa}\)</font>, <font color="#620000">\(\forall
+            \kappa > 0\)</font>; not a function</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\(H^{- 1 / 2 - \kappa}\)</font></td>
+          </tr></tbody>
+        </table>
+      </p>
+      <p>
+        The Cameron&ndash;Martin space <font color="#620000">\(H^1\)</font> (finite
+        action) has <strong>measure zero</strong>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Reflection positivity and the free
+        field</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Reflection positivity
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\mathcal{M}=\mathbb{R} \times N\)</font>, <font color="#620000">\(N
+        =\mathbb{R}^{d - 1}\)</font> or <font color="#620000">\(\mathbb{T}^{d -
+        1}_L\)</font>; <font color="#620000">\(\Theta (\tau, \textbf{x}) = (- \tau,
+        \textbf{x})\)</font>; <font color="#620000">\(A = - \partial_{\tau}^2 +
+        B\)</font>, <font color="#620000">\(B = m^2 - \Delta_N\)</font>, <font color="#620000">\(\omega
+        = B^{1 / 2}\)</font>.
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Proposition.
+        </strong></font></font><i>(a) <font color="#620000">\(C (\tau, \tau') =
+        \mathrm{e}^{- | \tau - \tau' | \omega} (2 \omega)^{- 1}\)</font>
+        (operator-valued kernel).<br />(b) If <font color="#620000">\(\text{supp} f
+        \subset \{\tau > 0\}\)</font>:</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \langle \Theta f, Cf \rangle = \left| (2 \omega)^{-
+          1 / 2} \int_0^{\infty}
+\mathrm{e}^{- \tau \omega} f (\tau, \cdot
+          \left) \hspace{0.17em} \mathrm{d}
+\tau \right|^2_{L^2 (N)} \geq 0.
+          \right.\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>(c) <font color="#620000">\(\mu_m\)</font> on <font color="#620000">\(\mathbb{R}^d\)</font>
+        satisfies OS0&ndash;OS4.</i>
+      </p>
+      <p>
+        <b>Proof.</b> (a) <font color="#620000">\(\int \mathrm{e}^{\mathrm{i} kt} (k^2
+        + w^2)^{- 1}  \frac{\mathrm{d} k}{2 \pi}
+= \frac{\mathrm{e}^{- w
+        |t|}}{2 w}\)</font> and spectral calculus. (b) For <font color="#620000">\(\tau
+        < 0 < \tau'\)</font>, <font color="#620000">\(| \tau - \tau' | = | \tau | +
+        \tau'\)</font>: the kernel factorises. (c) OS3: <font color="#620000">\(\hat{\mu}
+        (f_i - \Theta f_j) = a_i a_j \mathrm{e}^{\langle \Theta f_i,
+        Cf_j
+\rangle}\)</font>; Schur.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The free field, reconstructed
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            OS reconstruction of <font color="#620000">\(\mu_m\)</font> gives the
+            <strong>free field of mass <font color="#620000">\(m\)</font></strong>:
+            Fock space over <font color="#620000">\(L^2 (N)\)</font>, <font color="#620000">\(H
+            = \mathrm{d} \Gamma (\omega)\)</font> (Nelson's free Markov
+            field).
+          </p>
+        </li>
+        <li>
+          <p>
+            The <strong>time-zero field</strong> <font color="#620000">\(\varphi (0,
+            \cdot)\)</font> exists and is Gaussian with covariance <font
+            color="#620000">\((2 \omega)^{- 1}\)</font>: the ground state measure <font
+            color="#620000">\(\Omega_0^2 \mathcal{D} \varphi\)</font> of the free
+            Hamiltonian in the Schr&ouml;dinger representation.
+          </p>
+        </li>
+        <li>
+          <p>
+            The GFF is the continuum limit of the lattice spin system of
+            Lecture 1 with <font color="#620000">\(V = 0\)</font> (Exercise 3.14).
+          </p>
+        </li>
+        <li>
+          <p>
+            Markov property (Nelson): rooted in the <strong>locality of <font
+            color="#620000">\(A\)</font></strong>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Nelson's Markov property
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Markov</strong> for <font color="#620000">\(\Lambda\)</font>:
+            inside and outside are conditionally independent given the field
+            near <font color="#620000">\(\partial \Lambda\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>The GFF is Markov for every open <font color="#620000">\(\Lambda\)</font></strong>
+            (Nelson 1973): <font color="#620000">\(\mathbb{E} [\varphi (f)
+            \hspace{0.17em} | \hspace{0.17em} \text{outside}] =
+\varphi (\Pi
+            f)\)</font>, and <font color="#620000">\(\Pi f = Au\)</font> is supported
+            on <font color="#620000">\(\partial \Lambda\)</font> <em>because <font
+            color="#620000">\(A = m^2 - \Delta\)</font> is local</em>. Given the
+            outside: harmonic extension <font color="#620000">\(+\)</font> independent
+            Dirichlet GFF (next slide).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Markov <font color="#620000">\(+\)</font> sharp <font color="#620000">\(\Sigma_0\)</font>
+            <font color="#620000">\(\Rightarrow\)</font> RP:</strong> with <font color="#620000">\(\Sigma_0\)</font>
+            the time-zero field, <font color="#620000">\(\mu\)</font> <font color="#620000">\(\Theta\)</font>-invariant,
+            <font color="#620000">\(\Theta\)</font> trivial on <font color="#620000">\(\Sigma_0\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \mathbb{E} [\overline{\Theta F} F] =\mathbb{E}
+            \left[ |\mathbb{E}[F
+\hspace{0.17em} | \hspace{0.17em} \Sigma_0]
+            |^2 \right] \geq 0, \qquad
+\mathbb{E}[U_t \hspace{0.17em} \cdot
+            \hspace{0.17em} | \hspace{0.17em}
+\Sigma_0] = \mathrm{e}^{- tH}
+            \text{on } L^2 (\Sigma_0) .\)
+          </center>
+          <p style="margin-top: -4pt">
+            Nelson's reconstruction (1973), before Osterwalder&ndash;Schrader.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Relevance:</strong> preserved by local perturbations <font
+            color="#620000">\(\mathrm{e}^{- \int_{\Lambda} V}\)</font> <font color="#620000">\(\Rightarrow\)</font>
+            <font color="#620000">\(P (\varphi)_2\)</font> as classical statistical
+            mechanics (Guerra&ndash;Rosen&ndash;Simon). Not stable under
+            limits; OS use RP instead: not comparable (generalised free fields
+            are RP, not Markov; the <font color="#620000">\(P^{- 1}\)</font> field is
+            Markov, not RP), but closed under weak limits.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The Markov property in a picture
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 2pt">
+        <img class="image" src="cqft_slides_L2-2.png" width="86%" alt="Figure from Constructive quantum field theory — Lecture 2 (slides)" decoding="async" loading="lazy"><br /> Lattice GFF, <font color="#620000">\(m^2
+        \approx 10^{- 3}\)</font>, <font color="#620000">\(\Lambda\)</font> a disc.
+        Inside <font color="#620000">\(\Lambda\)</font>,
+      </p>
+      <center>
+        \(\displaystyle \varphi = h + \psi, \qquad (m^2 - \Delta) h = 0
+        \text{in } \Lambda, \quad h =
+\varphi \text{on } \partial \Lambda,\)
+      </center>
+      <p>
+        <font color="#620000">\(h =\mathbb{E} [\varphi \hspace{0.17em} |
+        \hspace{0.17em} \text{outside}]\)</font> depends only on the field
+        <strong>at the boundary</strong>; <font color="#620000">\(\psi\)</font> is a
+        Dirichlet GFF, <strong>independent of the outside</strong>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Symanzik: fields and Brownian paths
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            Symanzik (1966, 1969): QFT through Schwinger functions as moments
+            of a classical Markov field &mdash; the Euclidean programme.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Paths:</strong> <font color="#620000">\(C (x, y) = \int_0^{\infty}
+            \mathrm{e}^{- m^2 t} p_t (x, y) \hspace{0.17em}
+\mathrm{d}
+            t\)</font> is the Green function of a killed Brownian motion. For
+            <font color="#620000">\(\mathrm{e}^{- \int V} \mu_m\)</font>: a gas of
+            paths and loops interacting through local times; for <font color="#620000">\(\varphi^4\)</font>,
+            intersections are penalised (lattice:
+            Brydges&ndash;Fr&ouml;hlich&ndash;Spencer 1982; triviality for
+            <font color="#620000">\(d > 4\)</font>).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Loop soups</strong> (Lawler&ndash;Werner 2004): Poisson
+            cloud of Brownian loops of intensity <font color="#620000">\(\alpha\)</font>;
+            on a graph <font color="#620000">\(\mathbb{E} \hspace{0.17em} \mathrm{e}^{-
+            \langle \chi, L \rangle} = \det (1 +
+C \chi)^{- \alpha}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Le Jan's isomorphism:</strong> for <font color="#620000">\(\alpha =
+            \frac{1}{2}\)</font> the occupation field is <font color="#620000">\(\frac{1}{2}
+            \varphi^2\)</font>; in <font color="#620000">\(d = 2, 3\)</font> the
+            renormalised one is <font color="#620000">\(\frac{1}{2} :
+            \varphi^2\)</font>:.
+          </p>
+        </li>
+        <li>
+          <p>
+            Lupu 2016: loop clusters <font color="#620000">\(=\)</font> sign clusters
+            of the cable-graph GFF. Werner 2016: spatial Markov property of
+            loop soups. Qian&ndash;Werner 2019. Survey: Werner&ndash;Powell.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Euclidean K&auml;ll&eacute;n&ndash;Lehmann
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Wick rotation of <font color="#620000">\(W_2^{(M)}\)</font>: <font color="#620000">\(\int
+        \mathrm{d} \Omega_M (\textbf{p}) \hspace{0.17em} \mathrm{e}^{-
+        \omega_M
+(\textbf{p}) | \tau | + \mathrm{i} \textbf{p} \cdot
+        \textbf{x}} = G_M  (\tau,
+\textbf{x})\)</font>. Hence for any theory
+        satisfying the axioms
+      </p>
+      <center>
+        \(\displaystyle S_2 (x) = v^2 + \int_{[0, \infty)} \rho (\mathrm{d}
+        M^2)  \hspace{0.17em} G_M
+(x), \qquad \hat{S}_2^T (k) = \int
+        \frac{\rho (\mathrm{d} M^2)}{|k|^2 + M^2} .\)
+      </center>
+      <p>
+        The GFF is <font color="#620000">\(\rho = \delta_{m^2}\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Short distances.</strong> <font color="#620000">\(G_M\)</font>
+            decreases in <font color="#620000">\(M\)</font> and <font color="#620000">\(G_M /
+            G_m \to 1\)</font> at <font color="#620000">\(0\)</font> (<font color="#620000">\(d
+            \geq 2\)</font>), so <font color="#620000">\(\liminf_{x \to 0} S_2^T (x) /
+            G_m (x) \geq \rho ([0, \infty)) > 0\)</font>: never less singular
+            than free. Scale invariance <font color="#620000">\(\Rightarrow\)</font>
+            unitarity bound <font color="#620000">\(\Delta \geq \frac{d -
+            2}{2}\)</font> (Exercise 3.2).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Long distances.</strong> <font color="#620000">\(\text{supp} \rho
+            \subset [m_0^2, \infty)\)</font> <font color="#620000">\(\Leftrightarrow\)</font>
+            decay at least like <font color="#620000">\(\mathrm{e}^{- m_0
+            |x|}\)</font>: mass gap <font color="#620000">\(=\)</font> clustering.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Two masses: a positive but nonlocal theory
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\rho = c_1^2 \delta_{m_1^2} + c_2^2
+        \delta_{m_2^2}\)</font>, <font color="#620000">\(0 < m_1 < m_2\)</font>:<span
+        style="margin-left: 1em"></span><font color="#620000">\(C_{\rho} = c_1^2  (m_1^2 - \Delta)^{- 1}
+        + c_2^2  (m_2^2 - \Delta)^{- 1}\)</font>, the law of <font color="#620000">\(c_1
+        \varphi_1 + c_2 \varphi_2\)</font> (independent GFFs). RP for each
+        term <font color="#620000">\(\Rightarrow\)</font> OS axioms.
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>It reconstructs to two free species</strong>
+        </p>
+        <p>
+          <font color="#620000">\(\mathcal{H}= \Gamma (\mathfrak{h}_{m_1}) \otimes
+          \Gamma (\mathfrak{h}_{m_2})\)</font>,<span style="margin-left: 1em"></span><font
+          color="#620000">\(\varphi = c_1 \varphi_{m_1} \otimes \mathbb{1} + c_2
+          \hspace{0.17em}
+\mathbb{1} \otimes \varphi_{m_2}\)</font>,<span
+          style="margin-left: 1em"></span><font color="#620000">\(W_2 = c_1^2 W_2^{(m_1)} + c_2^2
+          W_2^{(m_2)}\)</font>.<br />Two kinds of free particles, created by
+          the same field; no scattering (truncated <font color="#620000">\(W_{n \geq 3}
+          = 0\)</font>).
+        </p>
+      </div>
+      <p>
+        <b>What is lost:</b>
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\((\Box + m_1^2)  (\Box + m_2^2) \varphi =
+            0\)</font>, but no Klein&ndash;Gordon equation; <font color="#620000">\((\varphi
+            (0), \pi (0))\)</font> are not complete Cauchy data.
+          </p>
+        </li>
+        <li>
+          <p>
+            DS: <font color="#620000">\(\mathbb{E} [D_h F] =\mathbb{E} [F \varphi
+            (C_{\rho}^{- 1} h)]\)</font> with <font color="#620000">\(C_{\rho}^{- 1} =
+            \dfrac{(m_1^2 - \Delta)  (m_2^2 - \Delta)}{c_1^2  (m_2^2 -
+\Delta)
+            + c_2^2  (m_1^2 - \Delta)}\)</font> <strong>nonlocal</strong>;
+            <font color="#620000">\(\varphi\)</font> is not Markov.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Positivity versus locality
+      </div>
+      <p>
+
+      </p>
+      <p>
+        The <strong>local</strong> fourth-order action <font color="#620000">\(\frac{1}{2}
+        \langle \varphi, (m_1^2 - \Delta) (m_2^2 - \Delta)
+        \varphi
+\rangle\)</font> gives a Markov field with
+      </p>
+      <center>
+        \(\displaystyle \frac{1}{(|k|^2 + m_1^2)  (|k|^2 + m_2^2)} =
+        \frac{1}{m_2^2 - m_1^2}  \left(
+\frac{1}{|k|^2 + m_1^2} -
+        \frac{1}{|k|^2 + m_2^2} \right),\)
+      </center>
+      <p>
+        so <font color="#620000">\(\rho = (\delta_{m_1^2} - \delta_{m_2^2}) / (m_2^2 -
+        m_1^2)\)</font> has a <strong>negative weight</strong>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            By Euclidean K&auml;ll&eacute;n&ndash;Lehmann it is <strong>not
+            reflection positive</strong>: the mass <font color="#620000">\(m_2\)</font>
+            is a ghost of negative norm (Pais&ndash;Uhlenbeck,
+            Lee&ndash;Wick).
+          </p>
+        </li>
+        <li>
+          <p>
+            Same for any <font color="#620000">\(1 / \hat{C} =\)</font> polynomial of
+            degree <font color="#620000">\(\geq 2\)</font>: <font color="#620000">\(s
+            \hspace{0.17em} \hat{C} (s) \to 0\)</font>, while <font color="#620000">\(s
+            \int \frac{\rho (\mathrm{d} M^2)}{s + M^2} \uparrow \rho ([0,
+            \infty))\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>Moral</strong>
+        </p>
+        <p>
+          For Gaussian fields, <em>positivity</em> (OS) and <em>locality</em>
+          of the Euclidean field equation (<font color="#620000">\(C^{- 1}\)</font> a
+          differential operator) together single out the free field:
+          covariance <font color="#620000">\(c (m^2 - \Delta)^{- 1}\)</font> (or white
+          noise).
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Is the nonlocal theory physical?
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>In Minkowski space, yes:</strong> all Wightman axioms
+            hold, including locality (W3); positive energy, unique vacuum. Two
+            free species: trivial and redundant, not inconsistent.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>&ldquo;Nonlocal&rdquo; is Euclidean:</strong> no Markov
+            property <font color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(\varphi\)</font>
+            alone is not a complete set of local degrees of freedom (no Cauchy
+            problem, no Lagrangian in <font color="#620000">\(\varphi\)</font> only).
+            Cure: the pair <font color="#620000">\((\varphi_1, \varphi_2)\)</font> is
+            local and Markov.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Continuous <font color="#620000">\(\rho\)</font></strong> (a
+            continuum of free species) is unphysical: no dynamical law of
+            finite order, and too many localised states.
+            Buchholz&ndash;Wichmann nuclearity (cf. Haag&ndash;Swieca) needs
+            <font color="#620000">\(\sum_i n_i \mathrm{e}^{- \beta m_i} <
+            \infty\)</font>: no sensible thermodynamics.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Interacting theories</strong> also have a continuum in
+            <font color="#620000">\(\rho\)</font>, but produced by a <em>local</em>
+            interaction: the Euclidean field equation of <font color="#620000">\(\Phi^4_2\)</font>,
+            with <font color="#620000">\((m^2 - \Delta) \varphi + 4 \lambda :
+            \varphi^3\)</font>: in the DS equation, is local.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Local operators: Wick
+        products</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Hermite polynomials
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Interactions <font color="#620000">\(\int V (\varphi (x)) \mathrm{d} x\)</font>
+        need local functions of <font color="#620000">\(\varphi (x)\)</font>:
+        regularise, subtract, remove the regularisation.
+      </p>
+      <center>
+        \(\displaystyle \mathrm{e}^{ta - ct^2 / 2} = \sum_{n \geq 0}
+        \frac{t^n}{n!} H_n (a ; c) :
+\qquad H_2 = a^2 - c, H_3 = a^3 - 3 ca,
+        H_4 = a^4 - 6 ca^2 + 3 c^2 .\)
+      </center>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Lemma.
+        </strong></font></font><i><font color="#620000">\((X, Y)\)</font> centred
+        Gaussian, <font color="#620000">\(\mathbb{E}X^2 = a\)</font>, <font color="#620000">\(\mathbb{E}Y^2
+        = b\)</font>:</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          \(\displaystyle \mathbb{E} [H_n (X ; a) H_k (Y ; b)] = \delta_{nk}
+          \hspace{0.17em} n!
+\hspace{0.17em} (\mathbb{E}[XY])^n .\)
+        </center></i>
+      </p>
+      <p>
+        <b>Proof.</b> <font color="#620000">\(\mathbb{E} [\mathrm{e}^{sX - s^2 a / 2}
+        \mathrm{e}^{tY - t^2 b / 2}] =
+\mathrm{e}^{st \hspace{0.17em}
+        \mathbb{E} [XY]}\)</font>; compare coefficients of <font color="#620000">\(s^n
+        t^k\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Wick powers
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Mollifier <font color="#620000">\(\eta_{\varepsilon}\)</font>, <font color="#620000">\(\varphi_{\varepsilon}
+        = \eta_{\varepsilon} \ast \varphi\)</font>, <font color="#620000">\(G_{\varepsilon,
+        \delta} = \eta_{\varepsilon} \ast \eta_{\delta} \ast G\)</font>, <font
+        color="#620000">\(c_{\varepsilon} = G_{\varepsilon, \varepsilon} (0)\)</font>,
+      </p>
+      <center>
+        \(\displaystyle : \varphi^n_{\varepsilon} : (x) := H_n
+        (\varphi_{\varepsilon} (x) ;
+c_{\varepsilon}), \qquad :
+        \varphi^n_{\varepsilon} : (f) = \int f
+\hspace{0.17em} :
+        \varphi_{\varepsilon}^n : .\)
+      </center>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i>If <font color="#620000">\(n (d - 2) < d\)</font>
+        (all <font color="#620000">\(n\)</font> in <font color="#620000">\(d = 2\)</font>; <font
+        color="#620000">\(n \leq 2\)</font> in <font color="#620000">\(d = 3\)</font>), then
+        <font color="#620000">\(: \varphi^n : (f) = \lim_{\varepsilon \to 0} :
+        \varphi_{\varepsilon}^n : (f)\)</font> exists in <font color="#620000">\(L^2
+        (\mu_m)\)</font>, is independent of <font color="#620000">\(\eta\)</font>,
+        and</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \mathbb{E} [: \varphi^n : (f) : \varphi^k : (g)] =
+          \delta_{nk}
+\hspace{0.17em} n! \iint f (x) G (x - y)^n g (y)
+          \hspace{0.17em} \mathrm{d} x
+\hspace{0.17em} \mathrm{d} y.\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>If <font color="#620000">\(n (d - 2) \geq d\)</font> and <font color="#620000">\(0
+        \leq f \mathrel{\not\equiv} 0\)</font>: <font color="#620000">\(\mathbb{E}[:
+        \varphi_{\varepsilon}^n : (f)^2] \to \infty\)</font>.</i>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Proof
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <b>1. Uniform bound.</b> <font color="#620000">\(K (z) = 1 + \log_+
+        \frac{1}{|z|}\)</font> (<font color="#620000">\(d = 2\)</font>), <font color="#620000">\(1
+        + |z|^{2 - d}\)</font> (<font color="#620000">\(d \geq 3\)</font>). With <font
+        color="#620000">\(r = \max (\varepsilon, \delta)\)</font>:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(|z| \geq 4 r\)</font>:  <font color="#620000">\(G_{\varepsilon,
+            \delta} (z) \leq \sup_{|w| \geq |z| / 2} G (w) \leq CK
+            (z)\)</font>;
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(|z| < 4 r\)</font>:  <font color="#620000">\(G_{\varepsilon,
+            \delta} (z) \leq \| \eta \|_{\infty} r^{- d}  \int_{B (0, 6
+r)} G
+            \leq C \frac{1}{|B (0, 6 r) |}  \int_{B (0, 6 r)} K \leq CK (r)
+            \leq C'
+K (z)\)</font>.
+          </p>
+        </li>
+      </ul>
+      <p>
+        <b>2. Convergence.</b> By the lemma,
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} [(: \varphi_{\varepsilon}^n : (f) - :
+        \varphi_{\delta}^n : (f))^2]
+= n! \iint f (x) f (y)
+        (G^n_{\varepsilon, \varepsilon} - 2 G^n_{\varepsilon,
+\delta} +
+        G^n_{\delta, \delta})  (x - y) \to 0\)
+      </center>
+      <p>
+        by dominated convergence: <font color="#620000">\(K^n \in L^1_{\text{loc}}
+        \Longleftrightarrow n (d - 2) < d\)</font>.
+      </p>
+      <p>
+        <b>3. Divergence.</b> Otherwise <font color="#620000">\(G^n \gtrsim |z|^{- n (d
+        - 2)} \not\in L^1_{\text{loc}}\)</font>; Fatou.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Remarks
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Renormalisation:</strong> <font color="#620000">\(\varphi_{\varepsilon}
+            (x)^n\)</font> has no limit; subtracting <font color="#620000">\(c_{\varepsilon}
+            \to \infty\)</font> (via <font color="#620000">\(H_n\)</font>) is the
+            simplest counterterm. A different mollifier changes <font color="#620000">\(:
+            \varphi^n\)</font>: by lower Wick powers with <em>finite</em>
+            coefficients (Exercise 3.4).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Chaos:</strong> <font color="#620000">\(: \varphi^n : (f)\)</font>
+            lies in the <font color="#620000">\(n\)</font>-th Wiener chaos; <font
+            color="#620000">\(L^2 (\mu_m) \simeq\)</font> Fock space over <font color="#620000">\(H^{-
+            1} (\mathcal{M})\)</font>. Hypercontractivity <font color="#620000">\(\|X\|_{L^p}
+            \leq (p - 1)^{n / 2} \|X\|_{L^2}\)</font> gives convergence in all
+            <font color="#620000">\(L^p\)</font> (and in <font color="#620000">\(\mathcal{C}^{-
+            \kappa}\)</font> for <font color="#620000">\(d = 2\)</font>).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Towards <font color="#620000">\(\Phi^4_2\)</font>:</strong> on
+            <font color="#620000">\(\mathbb{T}^2\)</font>, <font color="#620000">\(\int :
+            \varphi^4 : \in \bigcap_p L^p\)</font> and (Nelson) <font color="#620000">\(\mathrm{e}^{-
+            \lambda \int : \varphi^4 :} \in L^1 (\mu_m)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Other local operators:</strong> <font color="#620000">\(\partial^{\alpha}
+            \varphi\)</font>; in <font color="#620000">\(d = 2\)</font> the Wick
+            exponentials <font color="#620000">\(: \mathrm{e}^{\mathrm{i} \beta
+            \varphi}\)</font>:, in <font color="#620000">\(L^2\)</font> iff <font
+            color="#620000">\(\beta^2 < 4 \pi\)</font> (sine-Gordon; Exercise 3.6).
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">The Dyson&ndash;Schwinger
+        equation</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Beyond <font color="#620000">\(L^2\)</font>: Wick powers do not exist
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            If <font color="#620000">\(n (d - 2) \geq d\)</font>: <font color="#620000">\(\mathbb{E}[:
+            \varphi_{\varepsilon}^n : (f)^2] \to \infty\)</font>. Worse: there
+            is <strong>no random distribution</strong> at all, in any topology
+            or on any space. Albeverio&ndash;Liang 2007: <font color="#620000">\(:
+            \varphi^2 : (f)\)</font>, <font color="#620000">\(f > 0\)</font>, in <font
+            color="#620000">\(d = 4\)</font> (and <font color="#620000">\(d \geq 5\)</font>) is
+            a Hida distribution, not a random variable.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Proof.</strong> <font color="#620000">\(X_{\varepsilon} = :
+            \varphi_{\varepsilon}^n : (f) \in \mathcal{H}_n\)</font>, <font
+            color="#620000">\(\sigma_{\varepsilon} = \|X_{\varepsilon} \|_2 \to
+            \infty\)</font>, <font color="#620000">\(\mathbb{E}X_{\varepsilon}^4 \leq
+            9^n \sigma_{\varepsilon}^4\)</font>. Paley&ndash;Zygmund, <font
+            color="#620000">\(\mathbb{P} (Z > \theta \mathbb{E}Z) \geq (1 - \theta)^2
+            (\mathbb{E}Z)^2
+/\mathbb{E}Z^2\)</font>, with <font color="#620000">\(Z =
+            X_{\varepsilon}^2\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \mathbb{P} \left( |X_{\varepsilon} | >
+            \tfrac{1}{2} \sigma_{\varepsilon}
+\right) \geq \tfrac{9}{16}
+            \hspace{0.17em} 9^{- n} \quad \Rightarrow \quad
+\text{not
+            tight.}\)
+          </center>
+        </li>
+        <li>
+          <p>
+            <strong>Bounded chaos: the law is controlled by <font color="#620000">\(\sigma
+            = \|X\|_2\)</font>.</strong> Upper tails <font color="#620000">\(\|X\|_p
+            \leq (p - 1)^{n / 2} \sigma\)</font> (hypercontractivity); <font
+            color="#620000">\(\mathbb{P} (|X| > \frac{1}{2} \sigma) \geq c_n\)</font>
+            (Paley&ndash;Zygmund); <font color="#620000">\(\mathbb{P} (|X| \leq t
+            \sigma) \leq Cnt^{1 / n}\)</font> (Carbery&ndash;Wright). So:
+            tight <font color="#620000">\(\Leftrightarrow\)</font> bounded in <font
+            color="#620000">\(L^2\)</font>; in probability <font color="#620000">\(\Leftrightarrow\)</font>
+            in <font color="#620000">\(L^2\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Renormalising by <font color="#620000">\(\sigma_{\varepsilon}^{-
+            1}\)</font> typically gives Gaussian limits (fourth moment
+            theorem; Albeverio&ndash;Zhou 1996): the <font color="#620000">\(n\)</font>-th
+            power is lost.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Gaussian integration by parts
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Cylinder functions <font color="#620000">\(\mathcal{F}C^{\infty}_b \ni F
+        (\varphi) = g (\varphi (f_1), \ldots, \varphi
+(f_n))\)</font>, <font
+        color="#620000">\(g \in C^{\infty}_b\)</font>:
+      </p>
+      <center>
+        \(\displaystyle D_h F (\varphi) = \frac{\mathrm{d}}{\mathrm{d} t} F
+        (\varphi + th) |_{t = 0} =
+\sum_i \partial_i g (\ldots) \langle f_i, h
+        \rangle = \langle DF, h \rangle,
+\qquad DF (x) = \frac{\delta
+        F}{\delta \varphi (x)} .\)
+      </center>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Lemma.
+        </strong></font></font><i><font color="#620000">\((Y, X_1, \ldots,
+        X_n)\)</font> centred Gaussian:<span style="margin-left: 1em"></span><font color="#620000">\(\mathbb{E}
+        [Y \hspace{0.17em} g (X)] = \sum_i \mathbb{E} [YX_i]
+\hspace{0.17em}
+        \mathbb{E} [\partial_i g (X)]\)</font>.</i>
+      </p>
+      <p>
+        <b>Proof.</b> For <font color="#620000">\(g = \mathrm{e}^{\mathrm{i} \langle u,
+        \cdot \rangle}\)</font>: <font color="#620000">\(\mathbb{E} [Y
+        \mathrm{e}^{\mathrm{i} \langle u, X \rangle}] = -
+        \mathrm{i}
+\partial_{\theta} \mathbb{E} [\mathrm{e}^{\mathrm{i} \theta
+        Y + \mathrm{i}
+\langle u, X \rangle}] |_{\theta = 0} = \mathrm{i}
+        \sum_i u_i \mathbb{E}
+[YX_i] \mathbb{E} [\mathrm{e}^{\mathrm{i}
+        \langle u, X \rangle}]\)</font>; then Fourier inversion and
+        approximation.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The Dyson&ndash;Schwinger equation
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Proposition.
+        </strong></font></font><i>For all <font color="#620000">\(F \in
+        \mathcal{F}C^{\infty}_b\)</font>, <font color="#620000">\(h \in \mathcal{S}
+        (\mathcal{M})\)</font>:</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          \(\displaystyle \mathbb{E}_{\mu_m}  [D_h F] =\mathbb{E}_{\mu_m}
+          \left[ F \hspace{0.17em}
+\varphi (Ah) \right], \qquad
+          \text{formally} \qquad \mathbb{E} \left[
+\frac{\delta F}{\delta
+          \varphi (x)} \right] =\mathbb{E} \left[ F
+\hspace{0.17em} (m^2 -
+          \Delta) \varphi (x) \right] .\)
+        </center></i>
+      </p>
+      <p>
+        <b>Proof.</b> <font color="#620000">\(\mathbb{E} [\varphi (Ah) \varphi (f_i)] =
+        \langle Ah, Cf_i \rangle = \langle
+h, f_i \rangle\)</font>; apply the
+        lemma.
+      </p>
+      <p>
+        With <font color="#620000">\(F = \varphi (f_2) \cdots \varphi (f_n)\)</font>
+        one gets the hierarchy
+      </p>
+      <center>
+        \(\displaystyle (m^2 - \Delta_{x_1}) S_n (x_1, \ldots, x_n) = \sum_{j
+        = 2}^n \delta (x_1 -
+x_j)  \hspace{0.17em} S_{n - 2} (\ldots
+        \widehat{x_j} \ldots),\)
+      </center>
+      <p>
+        which with <font color="#620000">\(S_0 = 1\)</font>, <font color="#620000">\(S_1 =
+        0\)</font> gives Wick's theorem (Exercise 3.7).
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        DS <font color="#620000">\(=\)</font> Euclidean field equation
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            Minkowski: <font color="#620000">\((\Box + m^2) \varphi = 0\)</font> and
+            CCR.<span style="margin-left: 1em"></span>Euclidean: <font color="#620000">\((- \Delta + m^2)
+            \varphi\)</font> &ldquo;<font color="#620000">\(=\)</font>&rdquo; <font
+            color="#620000">\(\delta / \delta \varphi\)</font> inside expectations; the
+            contact terms come from the CCR (time ordering).
+          </p>
+        </li>
+        <li>
+          <p>
+            For a formal Gibbs measure <font color="#620000">\(\mu_V \propto
+            \mathrm{e}^{- \int V (\varphi)} \mu_m\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \mathbb{E}_{\mu_V}  [D_h F] =\mathbb{E}_{\mu_V}
+            \left[ F \hspace{0.17em}
+((m^2 - \Delta) \varphi + V' (\varphi))
+            (h) \right],\)
+          </center>
+          <p>
+            the Euclidean version of <font color="#620000">\((\Box + m^2) \varphi + V'
+            (\varphi) = 0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(V' (\varphi)\)</font> must be a well-defined local
+            operator: <font color="#620000">\(\Phi^4_2\)</font>: <font color="#620000">\(V' = 4
+            \lambda : \varphi^3\)</font>:; field equation for <font color="#620000">\(P
+            (\varphi)_2\)</font>: Dimock&ndash;Glimm 1974,
+            Albeverio&ndash;R&ouml;ckner 1991. For <font color="#620000">\(\Phi^4_3\)</font>
+            the renormalised field equation goes back to
+            Feldman&ndash;R&#x0105;czka 1977; renormalised cubic term as a
+            random distribution: Gubinelli&ndash;Hofmanov&aacute; 2021.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Defining <font color="#620000">\(V' (\varphi)\)</font>: point splitting and the
+        OPE
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\varphi^3 (x)\)</font>: product at one point.
+            <strong>Point splitting</strong>: regular part of <font color="#620000">\(\varphi
+            (y_1) \varphi (y_2) \varphi (y_3)\)</font> as <font color="#620000">\(y_i
+            \to x\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Under the GFF (Wick):
+          </p>
+          <center>
+            \(\displaystyle \varphi (y_1) \varphi (y_2) \varphi (y_3) = :
+            \varphi (y_1) \varphi (y_2)
+\varphi (y_3) : + \sum_{i < j} G (y_i
+            - y_j)  \hspace{0.17em} \varphi (y_k)\)
+          </center>
+          <p style="margin-top: -3pt">
+            regular part <font color="#620000">\(\to : \varphi^3 : (x)\)</font>;
+            mollified: <font color="#620000">\(: \varphi^3 := \lim_{\varepsilon}
+            (\varphi_{\varepsilon}^3 - 3
+            c_{\varepsilon}
+\varphi_{\varepsilon})\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>OPE</strong> (Wilson 1969, Zimmermann 1973): products at
+            nearby points <font color="#620000">\(=\)</font> local operators <font
+            color="#620000">\(\times\)</font> singular coefficients; composite operator
+            <font color="#620000">\(=\)</font> regular part. Field equation <font
+            color="#620000">\((\Box + m^2) \varphi = - 4 \lambda N
+            [\varphi^3]\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The coefficients are those of the <strong>interacting</strong>
+            theory. <font color="#620000">\(\Phi^4_2\)</font>: Gaussian subtraction
+            suffices (Schrader 1974). <font color="#620000">\(\Phi^4_3\)</font>: an
+            extra <font color="#620000">\(\delta_{\varepsilon}
+            \varphi_{\varepsilon}\)</font>, <font color="#620000">\(\delta_{\varepsilon}
+            \sim \lambda \log (1 / \varepsilon)\)</font>: <font color="#620000">\(4
+            \lambda \delta_{\varepsilon}\)</font> is the sunset mass
+            counterterm (Gubinelli&ndash;Hofmanov&aacute; 2021).
+          </p>
+        </li>
+        <li>
+          <p>
+            Lecture 3: OPE of stochastic observables, explicit at every scale.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        DS characterises the GFF
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i>Let <font color="#620000">\(\nu\)</font> be a
+        probability measure on <font color="#620000">\(\mathcal{S}'
+        (\mathcal{M})\)</font> with <font color="#620000">\(\varphi (f) \in L^1
+        (\nu)\)</font> for all <font color="#620000">\(f\)</font> and</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \mathbb{E}_{\nu}  [D_h F] =\mathbb{E}_{\nu}  [F
+          \hspace{0.17em} \varphi (Ah)]
+\qquad \forall F \in
+          \mathcal{F}C^{\infty}_b, h \in \mathcal{S} (\mathcal{M})
+.\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>Then <font color="#620000">\(\nu = \mu_m\)</font>.</i>
+      </p>
+      <p>
+        <b>Proof.</b> Fix <font color="#620000">\(f\)</font>, take <font color="#620000">\(h =
+        Cf \in \mathcal{S} (\mathcal{M})\)</font> and <font color="#620000">\(F_s =
+        \mathrm{e}^{\mathrm{i} s \varphi (f)}\)</font>, so <font color="#620000">\(D_h
+        F_s = \mathrm{i} s \langle f, Cf \rangle F_s\)</font>. With <font
+        color="#620000">\(\chi (s) =\mathbb{E}_{\nu} F_s\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \mathrm{i} s \langle f, Cf \rangle \chi (s)
+        =\mathbb{E}_{\nu} [\varphi (f)
+\mathrm{e}^{\mathrm{i} s \varphi (f)}]
+        = - \mathrm{i} \chi' (s) \quad
+\Longrightarrow \quad \chi (s) =
+        \mathrm{e}^{- \frac{s^2}{2}  \langle f, Cf
+\rangle} .\)
+      </center>
+      <p>
+        So <font color="#620000">\(\hat{\nu} (f) = \mathrm{e}^{- \frac{1}{2}  \langle
+        f, Cf \rangle}\)</font> for all <font color="#620000">\(f\)</font>; linearity
+        of <font color="#620000">\(f \mapsto \varphi (f)\)</font> and
+        Cram&eacute;r&ndash;Wold give all finite-dimensional laws.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Remarks
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            The integrability assumption is exactly what is needed for DS to
+            make sense: <font color="#620000">\(\varphi (Ah)\)</font> ranges over all
+            <font color="#620000">\(\varphi (g)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            DS for characteristic functions is a <strong>first-order linear
+            ODE</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(m = 0\)</font> on the torus: <em>no</em>
+            probability measure solves DS (take <font color="#620000">\(h =
+            1\)</font>); work modulo constants (Exercise 3.9).
+          </p>
+        </li>
+        <li>
+          <p>
+            Finite dimensions: DS says <font color="#620000">\(\nabla (\mathrm{e}^S
+            \nu) = 0\)</font>, so uniqueness is easy for any <font color="#620000">\(S\)</font>
+            (Exercise 3.8).
+          </p>
+        </li>
+        <li>
+          <p>
+            Interacting theories: DS is a singular nonlinear relation;
+            uniqueness is hard and largely open. Results for the exponential
+            model in <font color="#620000">\(d = 2\)</font>: De
+            Vecchi&ndash;Gubinelli&ndash;Turra.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Parabolic stochastic
+        quantisation</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Langevin dynamics (Parisi&ndash;Wu 1981)
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Finite dimensions: <font color="#620000">\(\mathrm{d} X_t = - \nabla S (X_t)
+        \mathrm{d} t + \sqrt{2} \hspace{0.17em}
+\mathrm{d} B_t\)</font> has
+        generator <font color="#620000">\(\mathcal{L}= \Delta - \nabla S \cdot
+        \nabla\)</font> and
+      </p>
+      <center>
+        \(\displaystyle \mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot
+        (\nabla \mathrm{e}^{- S} +
+\mathrm{e}^{- S} \nabla S) = 0 :\)
+      </center>
+      <p>
+        the Gibbs measure <font color="#620000">\(\mathrm{e}^{- S} \mathrm{d} x /
+        Z\)</font> is invariant.
+      </p>
+      <p>
+        Apply this to the Euclidean action, with a fictitious
+        <strong>stochastic time</strong> <font color="#620000">\(t\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \partial_t \Phi = - (m^2 - \Delta) \Phi - V' (\Phi) +
+        \sqrt{2}
+\hspace{0.17em} \xi \qquad \text{on } \mathbb{R}_+ \times
+        \mathcal{M},\)
+      </center>
+      <p>
+        <font color="#620000">\(\xi\)</font> space-time white noise: <font color="#620000">\(\mathbb{E}
+        [\xi (u) \xi (v)] = \langle u, v \rangle_{L^2  (\mathbb{R}
+        \times
+\mathcal{M})}\)</font>.
+      </p>
+      <p>
+        For <font color="#620000">\(V = 0\)</font>: the stochastic heat equation
+        (infinite-dimensional OU process).
+      </p>
+      <p>
+        History: Parisi&ndash;Wu 1981 (gauge theories without gauge fixing);
+        physics review Damgaard&ndash;H&uuml;ffel 1987&ndash;88; first
+        mathematical construction for <font color="#620000">\(P (\varphi)_2\)</font> on
+        <font color="#620000">\(\mathbb{T}^2\)</font>: Jona-Lasinio&ndash;Mitter 1985.
+        Review: Gubinelli, <em>Encyclopedia of Mathematical Physics</em> 2025.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        DS <font color="#620000">\(\Rightarrow\)</font> invariance
+      </div>
+      <p>
+
+      </p>
+      <p>
+        It&ocirc;'s formula: for <font color="#620000">\(F = g (\varphi (f_1), \ldots,
+        \varphi (f_n))\)</font> the generator is
+      </p>
+      <center>
+        \(\displaystyle \mathcal{L}F (\varphi) = \sum_{i, j} \langle f_i, f_j
+        \rangle  \hspace{0.17em}
+\partial_{ij} g (\ldots) - \sum_i \varphi
+        (Af_i)  \hspace{0.17em} \partial_i g
+(\ldots) .\)
+      </center>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Proposition.
+        </strong></font></font><i><font color="#620000">\(\mathbb{E}_{\mu_m}  [G
+        \hspace{0.17em} \mathcal{L}F] = -\mathbb{E}_{\mu_m}
+[\langle DG, DF
+        \rangle_{L^2 (\mathcal{M})}]\)</font> for <font color="#620000">\(F, G \in
+        \mathcal{F}C^{\infty}_b\)</font>; in particular <font color="#620000">\(\mathbb{E}_{\mu_m}
+        [\mathcal{L}F] = 0\)</font>.</i>
+      </p>
+      <p>
+        <b>Proof.</b> Apply DS to <font color="#620000">\(k \hspace{0.17em} \partial_i
+        g\)</font> with <font color="#620000">\(h = f_i\)</font> and sum over <font
+        color="#620000">\(i\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g
+        \hspace{0.17em} \varphi
+(Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle
+        \mathbb{E} \left[ \partial_j k
+\hspace{0.17em} \partial_i g + k
+        \hspace{0.17em} \partial_{ij} g \right] .
+\qquad\)
+      </center>
+      <p>
+        <strong>Static (DS) and dynamic (Langevin) characterisations are two
+        faces of the same integration by parts.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The stationary solution
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i>For <font color="#620000">\(t \in
+        \mathbb{R}\)</font>, <font color="#620000">\(f \in \mathcal{S}
+        (\mathcal{M})\)</font> let <font color="#620000">\(\Phi_t (f) = \sqrt{2}
+        \hspace{0.17em} \xi (K_{t, f})\)</font>,  <font color="#620000">\(K_{t, f} (r,
+        x) = \mathbb{1}_{r < t} (\mathrm{e}^{- (t - r) A} f) (x)\)</font>.</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><ol>
+          <li>
+            <p>
+              <font color="#620000">\(\mathbb{E} [\Phi_t (f) \Phi_s (g)] = \langle f,
+              \mathrm{e}^{- |t - s|A} Cg
+\rangle\)</font>: stationary, and
+              <font color="#620000">\(\text{Law} (\Phi_t) = \mu_m\)</font> for every
+              <font color="#620000">\(t\)</font>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <font color="#620000">\(\Phi\)</font> is a mild and weak solution: for
+              <font color="#620000">\(s < t\)</font>, <font color="#620000">\(\Phi_t (h) =
+              \Phi_s (h) - \int_s^t \Phi_r  (Ah) \mathrm{d} r + \sqrt{2}
+
+\hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)\)</font>.
+            </p>
+          </li>
+          <li>
+            <p>
+              From any initial datum <font color="#620000">\(\Psi_0 \in \mathcal{S}'
+              (\mathcal{M})\)</font> independent of <font color="#620000">\(\xi\)</font>:
+              <font color="#620000">\(\mathbb{E} \hspace{0.17em} \mathrm{e}^{\mathrm{i}
+              \Psi_t (f)} \to
+\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
+              \rangle}\)</font>. Hence <font color="#620000">\(\mu_m\)</font> is the
+              <strong>unique invariant measure</strong>.
+            </p>
+          </li>
+        </ol></i>
+      </div>
+      <p>
+        <b>Proof of (a).</b> <font color="#620000">\(\langle K_{t, f}, K_{s, g} \rangle
+        = \int_{- \infty}^{t \wedge s} \langle f,
+\mathrm{e}^{- (t + s - 2 r)
+        A} g \rangle \mathrm{d} r = \langle f,
+\mathrm{e}^{- |t - s|A} (2
+        A)^{- 1} g \rangle\)</font>; an <font color="#620000">\(\mathcal{S}'\)</font>-valued
+        version exists by It&ocirc;&ndash;Nawata/Mitoma regularisation.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Proof of (b), (c)
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <b>(a), on <font color="#620000">\(\mathbb{T}^d\)</font>.</b> The modes <font
+        color="#620000">\(\Phi_t (e_n)\)</font> are independent stationary OU processes
+        <font color="#620000">\(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
+        \mathrm{d} B\)</font> with variance <font color="#620000">\(\lambda_n^{-
+        1}\)</font>.
+      </p>
+      <p>
+        <b>(b)</b> Mild form from the semigroup identity <font color="#620000">\(K_{t,
+        h} = K_{s, \mathrm{e}^{- (t - s) A} h} + \mathbb{1}_{(s,
+        t)}
+\mathrm{e}^{- (t - \cdot) A} h\)</font>; weak form by stochastic
+        Fubini (Exercise 3.12).
+      </p>
+      <p>
+        <b>(c)</b> By independence,
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \hspace{0.17em} \mathrm{e}^{\mathrm{i}
+        \Psi_t (f)} =\mathbb{E}
+[\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{-
+        tA} f)}] \hspace{0.17em}
+\mathrm{e}^{- \frac{1}{2}  \langle f, (1 -
+        \mathrm{e}^{- 2 tA}) Cf \rangle} .\)
+      </center>
+      <p>
+        For <font color="#620000">\(m > 0\)</font>, <font color="#620000">\(\mathrm{e}^{- tA} f
+        \to 0\)</font> in <font color="#620000">\(\mathcal{S} (\mathcal{M})\)</font>,
+        so <font color="#620000">\(\Psi_0 (\mathrm{e}^{- tA} f) \to 0\)</font> a.s. If
+        <font color="#620000">\(\Psi_0 \sim \mu_m\)</font> the product is exactly <font
+        color="#620000">\(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\)</font>
+        (invariance); an invariant <font color="#620000">\(\nu\)</font> must have the
+        same characteristic functional.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Comments
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            As a field on <font color="#620000">\(\mathbb{R} \times
+            \mathcal{M}\)</font>, the stationary solution has covariance <font
+            color="#620000">\(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
+            \partial_t^2 +
+A^2)^{- 1}\)</font>; its equal-time slice is <font
+            color="#620000">\(2 \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}
+            \frac{\mathrm{d} \theta}{2 \pi} =
+A^{- 1}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The stochastic time <font color="#620000">\(t\)</font> has nothing to do
+            with the Euclidean time <font color="#620000">\(\tau\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Interacting case: a <strong>singular SPDE</strong>.
+          </p>
+          <ul>
+            <li>
+              <p>
+                <font color="#620000">\(\Phi^4_2\)</font>: Da Prato&ndash;Debussche
+                2003 (also Jona-Lasinio&ndash;Mitter,
+                Albeverio&ndash;R&ouml;ckner).
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(\Phi^4_3\)</font>: Hairer 2014;
+                Gubinelli&ndash;Imkeller&ndash;Perkowski 2015;
+                Catellier&ndash;Chouk 2018.
+              </p>
+            </li>
+            <li>
+              <p>
+                Global bounds: Mourrat&ndash;Weber 2017;
+                Gubinelli&ndash;Hofmanov&aacute; 2019; construction of
+                Euclidean <font color="#620000">\(\Phi^4_3\)</font> via the dynamics:
+                Gubinelli&ndash;Hofmanov&aacute; 2021.
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Elliptic stochastic
+        quantisation</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 2</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Dimensional reduction (Parisi&ndash;Sourlas 1979)
+      </div>
+      <p>
+
+      </p>
+      <p>
+        The elliptic SPDE in <font color="#620000">\(d + 2\)</font> dimensions
+      </p>
+      <center>
+        \(\displaystyle (m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi
+        + V' (\Psi) = \zeta,
+\qquad \zeta \text{white noise on } \mathbb{R}^2
+        \times \mathcal{M},\)
+      </center>
+      <p>
+        is related to the <font color="#620000">\(d\)</font>-dimensional Gibbs measure:
+        formally
+      </p>
+      <center>
+        \(\displaystyle \text{Law} \left( \Psi (z, \cdot)) \propto \exp \left(
+        - 4 \pi \left[
+\tfrac{1}{2} \langle \varphi, A \varphi \rangle + \int
+        V (\varphi) \right]
+\right) \mathcal{D} \varphi . \right.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            Mechanism: a hidden <strong>supersymmetry</strong>
+            (Parisi&ndash;Sourlas; Klein&ndash;Landau&ndash;Perez 1984).
+          </p>
+        </li>
+        <li>
+          <p>
+            Rigorous nonlinear results: <font color="#620000">\(d = 0\)</font>
+            (Albeverio&ndash;De Vecchi&ndash;Gubinelli 2020); polynomial on
+            <font color="#620000">\(\mathbb{T}^2\)</font> and exponential on <font
+            color="#620000">\(\mathbb{R}^2\)</font> (ADG 2021); elliptic <font color="#620000">\(\Phi^4\)</font>
+            in 4 and 5 dimensions (Gubinelli&ndash;Hofmanov&aacute; 2019).
+          </p>
+        </li>
+        <li>
+          <p>
+            For <font color="#620000">\(V = 0\)</font> it is elementary, and it
+            explains the <font color="#620000">\(4 \pi\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The linear case
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i>Let <font color="#620000">\(\textsf{L} = m^2 -
+        \Delta_{\mathbb{R}^2 \times \mathcal{M}} = -
+\Delta_{\mathbb{R}^2} +
+        A\)</font> and <font color="#620000">\(\zeta\)</font> white noise on <font
+        color="#620000">\(\mathbb{R}^2 \times \mathcal{M}\)</font>.</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><ol>
+          <li>
+            <p>
+              <font color="#620000">\(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
+              \zeta\)</font> has a unique tempered solution <font color="#620000">\(\Psi
+              (u) = \sqrt{4 \pi}  \hspace{0.17em} \zeta (\textsf{L}^{- 1}
+              u)\)</font>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <font color="#620000">\(K_{z, f} = \textsf{L}^{- 1} (\delta_z \otimes f)
+              \in L^2\)</font>, continuous in <font color="#620000">\(z\)</font>; <font
+              color="#620000">\(\Psi (z, f) = \sqrt{4 \pi}  \hspace{0.17em} \zeta
+              (K_{z, f})\)</font> is the section of <font color="#620000">\(\Psi\)</font>
+              at <font color="#620000">\(z\)</font>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <font color="#620000">\(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle f,
+              Cg \rangle\)</font>: every section has law <font color="#620000">\(\mu_m\)</font>,
+              and <font color="#620000">\((\Psi (z, \cdot))_{z \in
+              \mathbb{R}^2}\)</font> is stationary and isotropic.
+            </p>
+          </li>
+        </ol></i>
+      </div>
+      <p>
+        <b>Uniqueness:</b> <font color="#620000">\(\textsf{L}\)</font> maps <font
+        color="#620000">\(\mathcal{S}\)</font> onto <font color="#620000">\(\mathcal{S}\)</font>,
+        so <font color="#620000">\(D (\textsf{L} u) = 0\)</font> <font color="#620000">\(\forall
+        u\)</font> forces <font color="#620000">\(D = 0\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Proof: where <font color="#620000">\(4 \pi\)</font> comes from
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Fourier transform in <font color="#620000">\(z\)</font> only: <font color="#620000">\(\widehat{K_{z,
+        f}} (q) = \mathrm{e}^{- \mathrm{i} q \cdot z} (|q|^2 + A)^{-
+        1}
+f\)</font>. By Plancherel and the spectral theorem,
+      </p>
+      <center>
+        \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \left\langle f,
+        \left[
+\int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2} (|q|^2 +
+        A)^{- 2} \right] g
+\right\rangle = \frac{1}{4 \pi}  \langle f, A^{- 1}
+        g \rangle,\)
+      </center>
+      <p>
+        since
+      </p>
+      <center>
+        \(\displaystyle \int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2}
+        \frac{1}{(|q|^2 + a)^2} =
+\frac{1}{2 \pi}  \int_0^{\infty} \frac{r
+        \hspace{0.17em} \mathrm{d} r}{(r^2 +
+a)^2} = \frac{1}{4 \pi a} .\)
+      </center>
+      <p>
+        Multiply by <font color="#620000">\(4 \pi\)</font>. Stationarity and isotropy:
+        the covariance <font color="#620000">\(4 \pi \int \mathrm{e}^{\mathrm{i} q
+        \cdot (z - z')} \langle f, (|q|^2 + A)^{-
+2} g \rangle
+        \frac{\mathrm{d} q}{(2 \pi)^2}\)</font> depends only on <font color="#620000">\(|z
+        - z' |\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Slices of Gaussian fields
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Field on <font color="#620000">\(\mathbb{R}^k \times \mathcal{M}\)</font> with
+        covariance <font color="#620000">\((- \Delta_{\mathbb{R}^k} + A)^{-
+        p}\)</font>; its slice <font color="#620000">\(\{0\} \times
+        \mathcal{M}\)</font> has covariance
+      </p>
+      <center>
+        \(\displaystyle c_{k, p}  \hspace{0.17em} A^{k / 2 - p}, \qquad c_{k,
+        p} = \frac{\Gamma (p -
+\frac{k}{2})}{(4 \pi)^{k / 2} \Gamma (p)} .\)
+      </center>
+      <p>
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\((k, p)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">slice covariance</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">interpretation</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((1, 1)\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\frac{1}{2} A^{- 1 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle">time-zero field, <font color="#620000">\((2 \omega)^{-
+            1}\)</font></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((2, 2)\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((4 \pi)^{- 1} A^{- 1}\)</font></td>
+            <td style="text-align: center; vertical-align: middle">elliptic stochastic quantisation</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">parabolic</td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(2 (- \partial_t^2 + A^2)^{- 1} \to A^{-
+            1}\)</font></td>
+            <td style="text-align: center; vertical-align: middle">Langevin dynamics</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\((1, 2)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\(\propto A^{- 3 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">not a GFF (e.g. codim-1 slices of the elliptic
+            field)</td>
+          </tr></tbody>
+        </table>
+      </p>
+      <p>
+        The GFF arises iff <font color="#620000">\(p = 1 + \frac{k}{2}\)</font>. For
+        <font color="#620000">\(\mathcal{M}=\mathbb{R}^d\)</font>, every
+        codimension-two slice of the elliptic field is a GFF.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Outlook
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <b>Next lecture</b>
+      </p>
+      <ul>
+        <li>
+          <p>
+            Lecture 3: the GFF along a scale parameter; stochastic
+            observables; Polchinski equation and its FBSDE; Wetterich
+            equation; variational structure.
+          </p>
+        </li>
+        <li>
+          <p>
+            Later lectures (not yet settled): probably a construction of <font
+            color="#620000">\(\Phi^4_3\)</font> on the torus via the FBSDE.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>The pattern</strong>
+        </p>
+        <p>
+          Gaussian measure <font color="#620000">\(\xrightarrow{\text{local
+          perturbation}}\)</font> renormalised DS equation / scale dynamics
+          <font color="#620000">\(\xrightarrow{\text{estimates}}\)</font> Euclidean QFT
+          <font color="#620000">\(\xrightarrow{\text{OS}}\)</font> relativistic QFT.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Exercises and reading
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <b>Exercises</b> (numbering of the notes)
+          </p><ul>
+            <li>
+              <p>
+                3.2 Unitarity bound.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.3 Regularity is sharp.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.6 Wick exponentials, <font color="#620000">\(\beta^2 < 4
+                \pi\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.7 Wick's theorem from DS.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.8 DS in finite dimensions.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.10 Infinitesimal invariance characterises <font color="#620000">\(\mu_m\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.13 Slices of Gaussian fields.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.15 Computer experiments.
+              </p>
+            </li>
+            <li>
+              <p>
+                3.16 Two masses: positivity vs. locality.
+              </p>
+            </li>
+          </ul></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p>
+            <b>Reading</b>
+          </p><ul>
+            <li>
+              <p>
+                Sheffield, <em>GFF for mathematicians</em>, PTRF 2007.
+              </p>
+            </li>
+            <li>
+              <p>
+                Janson, <em>Gaussian Hilbert Spaces</em>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Glimm&ndash;Jaffe; Simon, <font color="#620000">\(P
+                (\varphi)_2\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Da Prato&ndash;Zabczyk, <em>Stochastic Equations in Infinite
+                Dimensions</em>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Albeverio&ndash;De Vecchi&ndash;Gubinelli, <em>Elliptic
+                stochastic quantization</em>, AoP 2020.
+              </p>
+            </li>
+          </ul></td>
+        </tr></tbody>
+      </table>
+    </div>
+  </body>
+</html>

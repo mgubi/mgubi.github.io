@@ -1,0 +1,2944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 2 (notes) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
+    <link href="cqft-notes.css" type="text/css" rel="stylesheet">
+    <script src="cqft-notes.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 2 (notes), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_notes_L2.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+    <link rel="stylesheet" href="/resources/sissa-materials.css">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 2 (notes)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>A Constructive Introduction to Quantum
+            Field Theory</strong></font></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 129.7%"><strong>Lecture 2: The Gaussian free
+            field</strong></font></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+          <table class="title-block">
+            <tr>
+              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        <class style="font-variant: small-caps">by M. Gubinelli</class>
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        Mathematical Institute, University of Oxford
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i>SISSA, October 2026</i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <div style="margin-top: 2em; margin-bottom: 0.5em; margin-left: 60px; margin-right: 60px">
+      <p style="margin-bottom: 0.5em">
+        <font style="font-size: 84.1%"><strong>Abstract</strong></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
+      <p>
+        <font style="font-size: 84.1%">We study the first example of a Euclidean field theory:
+        the Gaussian free field (GFF) on the torus \(\mathbb{T}^d\) and on
+        \(\mathbb{R}^d\). We construct it, prove reflection positivity and
+        recover the free relativistic field, discuss the Euclidean
+        K&auml;ll&eacute;n&ndash;Lehmann representation, and define its local
+        (Wick) operators. We prove that the Dyson&ndash;Schwinger equation
+        characterises the GFF among probability measures on distributions, and
+        that the GFF is the stationary one-time (resp. one-point) marginal of
+        the parabolic (resp. elliptic) stochastic quantisation equation.
+        Exercises are collected at the end. These notes follow the slides of
+        Lecture 2.</font>
+      </p>
+    </div>
+    <div class="cqft-toc">
+      <div class="cqft-toc-title">
+        Contents
+      </div>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">1</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>3<span style="margin-left: 1em"></span>The Gaussian free field</b> <span style="margin-left: 5mm"></span>
+        <a href="#auto-2">2</a>
+      </p>
+      <p>
+        3.1<span style="margin-left: 1em"></span>Definition and construction <span style="margin-left: 5mm"></span>
+        <a href="#auto-3">2</a>
+      </p>
+      <p>
+        3.2<span style="margin-left: 1em"></span>Reflection positivity and the free field <span
+        style="margin-left: 5mm"></span> <a href="#auto-5">3</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Example: two masses. <span style="margin-left: 5mm"></span> <a href="#auto-7">6</a></font>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Is the nonlocal theory physical? <span style="margin-left: 5mm"></span> <a
+        href="#auto-8">7</a></font>
+      </p>
+      <p>
+        3.3<span style="margin-left: 1em"></span>Local operators: Wick products <span style="margin-left: 5mm"></span>
+        <a href="#auto-9">8</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Beyond \(L^2\): no random distribution. <span style="margin-left: 5mm"></span>
+        <a href="#auto-10">9</a></font>
+      </p>
+      <p>
+        3.4<span style="margin-left: 1em"></span>Gaussian integration by parts and the
+        Dyson&ndash;Schwinger equation <span style="margin-left: 5mm"></span> <a href="#auto-11">10</a>
+      </p>
+      <p>
+        3.5<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
+        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-12">12</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Langevin dynamics. <span style="margin-left: 5mm"></span> <a href="#auto-13">12</a></font>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">History. <span style="margin-left: 5mm"></span> <a href="#auto-14">12</a></font>
+      </p>
+      <p>
+        3.6<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
+        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-16">14</a>
+      </p>
+      <p>
+        3.7<span style="margin-left: 1em"></span>Outlook <span style="margin-left: 5mm"></span> <a href="#auto-17">15</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-18">15</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>References and further reading</b> <span style="margin-left: 5mm"></span> <a href="#auto-19">17</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Guide. <span style="margin-left: 5mm"></span> <a href="#auto-20">17</a></font>
+      </p>
+    </div>
+    <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
+    <p>
+      In Lecture 1 we saw that, after the passage to imaginary time, a
+      relativistic quantum field is encoded in a probability measure on
+      distributions satisfying the Osterwalder&ndash;Schrader axioms, formally
+      \(\mu (\mathrm{d} \varphi) \propto \exp (- \int [\frac{1}{2} | \nabla
+      \varphi
+|^2 + \frac{1}{2} m^2 \varphi^2 + V (\varphi)]) \mathcal{D}
+      \varphi\) (Eq. <a href="cqft_notes_L1.html#eq:path-integral">(2.13)</a>). In this lecture we treat its
+      Gaussian part rigorously. Conventions are those of Lecture 1. Sections,
+      equations and exercises keep the numbering of the notes, so that
+      &sect;1&ndash;2 refer to the notes of Lecture 1.
+    </p>
+    <h2 id="auto-2"><a id="sec:gff"></a>3<span style="margin-left: 1em"></span>The Gaussian free field<span
+    style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3">3.1<span style="margin-left: 1em"></span>Definition and construction<span style="margin-left: 1em"></span></h3>
+    <p>
+      Throughout, \(\mathcal{M}\) is either the torus \(\mathbb{T}^d_L =
+      (\mathbb{R}/ L\mathbb{Z})^d\) or \(\mathbb{R}^d\), \(d \geq 1\). We
+      write \(\mathcal{S} (\mathcal{M})\) for \(C^{\infty} (\mathbb{T}^d_L)\),
+      resp. the Schwartz space, and \(\mathcal{S}' (\mathcal{M})\) for its
+      dual. We equip \(\mathcal{S}' (\mathcal{M})\) with the
+      \(\sigma\)-algebra generated by the maps \(\varphi \mapsto \varphi
+      (f)\); it coincides with the Borel \(\sigma\)-algebra [<a href="#bib-GV64">GV64</a>,
+      <a href="#bib-Bog98">Bog98</a>]. Test functions are real unless stated otherwise.
+      Let \(m > 0\) and
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle A := m^2 - \Delta, \qquad C := A^{-
+        1} .\)</td>
+        <td align="right">(3.1)</td>
+      </tr>
+    </table>
+    <p>
+      \(C\) is a positive bounded operator on \(L^2 (\mathcal{M})\) with
+      \(\|C\| \leq m^{- 2}\). Both \(A\) and \(C\) are continuous bijections
+      of \(\mathcal{S} (\mathcal{M})\), being Fourier multipliers by \((|k|^2
+      + m^2)^{\pm 1}\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Definition <class style="font-style: normal">3.1</class>. </strong><i><a id="def:gff"></a>The
+      <em>(massive) Gaussian free field</em> on \(\mathcal{M}\) is the centred
+      Gaussian probability measure \(\mu = \mu_m\) on \(\mathcal{S}'
+      (\mathcal{M})\) with covariance \(C\):</i>
+    </p>
+    <i><a id="eq:gff-cov"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \int \varphi (f) \varphi (g)
+        \hspace{0.17em} \mu (\mathrm{d} \varphi) =
+\langle f, Cg \rangle =
+        \iint f (x) G (x, y) g (y) \hspace{0.17em} \mathrm{d}
+x
+        \hspace{0.17em} \mathrm{d} y,\)</td>
+        <td align="right">(3.2)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>equivalently \(\int \mathrm{e}^{\mathrm{i} \varphi (f)} \mu
+      (\mathrm{d} \varphi) =
+\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
+      \rangle}\) for all \(f \in \mathcal{S} (\mathcal{M})\). Here \(G\) is
+      the Green function of \(A\). On \(\mathbb{R}^d\), \(G (x, y) = G_m  (x -
+      y)\) with \(G_m (x) = \int \frac{\mathrm{e}^{\mathrm{i} k \cdot
+      x}}{|k|^2 + m^2}
+\frac{\mathrm{d} k}{(2 \pi)^d}\). On
+      \(\mathbb{T}^d_L\), \(G (x, y) = \sum_{n \in \mathbb{Z}^d} G_m  (x - y +
+      nL)\) (method of images).</i>
+    </p>
+    <p>
+      Formally \(\mu_m (\mathrm{d} \varphi) \backprime\backprime = "Z^{- 1}
+      \mathrm{e}^{-
+\frac{1}{2}  \langle \varphi, A \varphi \rangle}
+      \mathcal{D} \varphi\), the Gaussian part of <a href="cqft_notes_L1.html#eq:path-integral">(2.13)</a>. The
+      Green function satisfies (Exercise <a href="#ex:green">3.1</a>): \(G_m (x) \sim
+      \frac{1}{2 \pi} \log \frac{1}{|x|}\) as \(x \to 0\) if \(d = 2\); \(G_m
+      (x) \sim \frac{\Gamma (d / 2 - 1)}{4 \pi^{d / 2}} |x|^{2 - d}\) if \(d
+      \geq 3\); \(G_m (x) = \mathrm{e}^{- m |x|} / (2 m)\) if \(d = 1\); and
+      \(G_m\) decays like \(|x|^{- (d - 1) / 2} \mathrm{e}^{- m |x|}\) at
+      infinity. Uniqueness of \(\mu_m\) is clear, since a probability measure
+      on \(\mathcal{S}' (\mathcal{M})\) is determined by its characteristic
+      functional.
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><center>
+            <img class="image" src="cqft_notes_L2-1.png" width="38%" alt="Figure from Constructive quantum field theory — Lecture 2 (notes)" decoding="async" loading="lazy"> <img src="cqft_notes_L2-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 18.5563415977961em" alt="Figure from Constructive quantum field theory — Lecture 2 (notes)" decoding="async" loading="lazy"><a id="fig:gff"></a>
+          </center></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 84.1%"><p>
+              <b>Figure 3.1. </b><a id="auto-4"></a>Left: a sample of the massive GFF
+              on \(\mathbb{T}^2\) (\(m = 4\), Fourier cutoff \(512^2\), zero
+              mode removed). It is not a function: refining the cutoff adds
+              fluctuations at all scales. Right: the Green function \(G_m\) in
+              \(d = 1, 2, 3\): bounded, logarithmic and \(|x|^{- 1}\)
+              singularities at the origin, and exponential decay at infinity.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3.2</class>. </strong><i><class style="font-style: normal"><strong>(Existence
+      and regularity) </strong></class><a id="thm:existence"></a> (a) Let
+      \(\mathcal{M}=\mathbb{T}^d_L\), let \((e_n)_{n \geq 0}\) be a real
+      orthonormal basis of \(L^2 (\mathbb{T}^d_L)\) of eigenfunctions of \(-
+      \Delta\), \(- \Delta e_n = \kappa_n e_n\), \(\lambda_n := m^2 +
+      \kappa_n\), and let \((g_n)\) be i.i.d. \(N (0, 1)\). For every \(s >
+      \frac{d}{2} - 1\) the series</i>
+    </p>
+    <i><a id="eq:series"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \varphi = \sum_{n \geq 0}
+        \lambda_n^{- 1 / 2} g_n  \hspace{0.17em} e_n\)</td>
+        <td align="right">(3.3)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>converges a.s. and in \(L^2 (\mathbb{P}; H^{- s} (\mathbb{T}^d_L))\),
+      and its law is \(\mu_m\). In particular \(\mu_m (H^{- s}) = 1\) for \(s
+      > \frac{d}{2} - 1\). (b) On \(\mathbb{R}^d\), \(\mu_m\) exists by the
+      Bochner&ndash;Minlos theorem.</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>(a) With \(\| \varphi \|_{H^{- s}}^2 = \sum_n (1
+      + \kappa_n)^{- s}  \langle e_n, \varphi
+\rangle^2\),
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} \| \varphi \|^2_{H^{- s}} = \sum_n
+      \frac{1}{(1 + \kappa_n)^s
+\lambda_n} \asymp \sum_{k \in \mathbb{Z}^d} (1
+      + |k|^2)^{- s - 1} < \infty
+\Longleftrightarrow 2 s + 2 > d.\)
+    </center>
+    <p>
+      The partial sums form an \(L^2\)-bounded martingale with values in the
+      Hilbert space \(H^{- s}\), so they converge a.s. and in \(L^2\). For \(f
+      \in \mathcal{S} (\mathcal{M})\), \(\varphi (f) = \sum_n \lambda_n^{- 1 /
+      2} g_n  \langle e_n, f \rangle\) is centred Gaussian with variance
+      \(\sum_n \lambda_n^{- 1}  \langle e_n, f \rangle^2 = \langle f, Cf
+      \rangle\).
+    </p>
+    <p style="margin-bottom: 1em">
+      (b) Bochner&ndash;Minlos [<a href="#bib-GV64">GV64</a>, <a href="#bib-GJ87">GJ87</a>]: if
+      \(\Psi : \mathcal{S} (\mathbb{R}^d) \to \mathbb{C}\) is continuous,
+      positive definite and \(\Psi (0) = 1\), there is a unique probability
+      measure on \(\mathcal{S}' (\mathbb{R}^d)\) with characteristic
+      functional \(\Psi\). For \(\Psi (f) = \mathrm{e}^{- \frac{1}{2}  \langle
+      f, Cf \rangle}\), continuity follows from \(\langle f, Cf \rangle \leq
+      m^{- 2} \|f\|_{L^2}^2\). For positive definiteness, write \(\Psi (f_j -
+      f_k) = a_j a_k \mathrm{e}^{Q_{jk}}\) with \(a_j = \mathrm{e}^{-
+      \frac{1}{2} Q_{jj}}\) and \(Q_{jk} = \langle f_j, Cf_k \rangle\)
+      positive semidefinite. Then \((\mathrm{e}^{Q_{jk}})\) is positive
+      semidefinite by the Schur product theorem.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3.3</class>. </strong>The
+      Cameron&ndash;Martin space of \(\mu_m\) is \(H^1 (\mathcal{M})\) with
+      norm \(\langle h, Ah \rangle^{1 / 2}\): the fields of finite action. It
+      has measure zero, and typical samples are much rougher (Exercise <a
+      href="#ex:regularity">3.3</a>). In \(d = 1\) the GFF on \(\mathbb{R}\) is the stationary
+      Ornstein&ndash;Uhlenbeck process. In \(d = 2\) it lies in \(H^{-
+      \kappa}\) for every \(\kappa > 0\) but is not a function. In \(d = 3\)
+      it lies in \(H^{- 1 / 2 - \kappa}\). On \(\mathbb{R}^d\) the samples
+      live in weighted Sobolev spaces.
+    </p>
+    <h3 id="auto-5">3.2<span style="margin-left: 1em"></span>Reflection positivity and the free
+    field<span style="margin-left: 1em"></span></h3>
+    <p>
+      Let \(\mathcal{M}=\mathbb{R} \times N\) with \(N =\mathbb{R}^{d - 1}\)
+      or \(\mathbb{T}^{d - 1}_L\), points \((\tau, \textbf{x})\), \(\Theta
+      (\tau, \textbf{x}) = (- \tau, \textbf{x})\). Then \(A = -
+      \partial_{\tau}^2 + B\) with \(B := m^2 - \Delta_N\) on \(L^2 (N)\), and
+      we set \(\omega := B^{1 / 2} \geq m\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">3.4</class>. </strong><i><a id="prop:RP"></a>(a)
+      As an operator-valued kernel in the time variables, \(C (\tau, \tau') =
+      \mathrm{e}^{- | \tau - \tau' | \omega} (2 \omega)^{- 1}\). (b) For \(f
+      \in \mathcal{S} (\mathcal{M})\) with \(\text{supp} f \subset \{\tau >
+      0\}\),</i>
+    </p>
+    <i><a id="eq:RP"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \langle \Theta f, Cf \rangle =
+        \left| (2 \omega)^{- 1 / 2} \int_0^{\infty}
+\mathrm{e}^{- \tau \omega}
+        f (\tau, \cdot \left) \hspace{0.17em} \mathrm{d}
+\tau \right|^2_{L^2
+        (N)} \geq 0. \right.\)</td>
+        <td align="right">(3.4)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>(c) \(\mu_m\) on \(\mathbb{R}^d\) satisfies (OS0)&ndash;(OS4).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>(a) follows from the partial Fourier transform
+      in \(\tau\), the spectral theorem for \(B\), and the scalar identity
+      \(\int_{\mathbb{R}} \mathrm{e}^{\mathrm{i} kt} (k^2 + w^2)^{- 1}
+
+\frac{\mathrm{d} k}{2 \pi} = \mathrm{e}^{- w |t|} / (2 w)\), \(w > 0\).
+      (b) Since \(\Theta f\) is supported in \(\{\tau < 0\}\),
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{rl}
+  \langle \Theta f, Cf \rangle & =
+      \iint_{\tau < 0 < \tau'} \langle f (-
+  \tau), \mathrm{e}^{- (\tau' -
+      \tau) \omega} (2 \omega)^{- 1} f (\tau')
+  \rangle \hspace{0.17em}
+      \mathrm{d} \tau \hspace{0.17em} \mathrm{d} \tau'\\
+  & = \int_0^{\infty}
+      \hspace{-0.17em} \hspace{-0.17em} \hspace{-0.17em}
+  \int_0^{\infty}
+      \langle \mathrm{e}^{- s \omega} f (s), (2 \omega)^{- 1}
+  \mathrm{e}^{-
+      \tau' \omega} f (\tau') \rangle \hspace{0.17em} \mathrm{d} s
+
+      \hspace{0.17em} \mathrm{d} \tau',
+\end{array}\)
+    </center>
+    <p style="margin-bottom: 1em">
+      which is <class style="font-style: normal">(<a href="#eq:RP">3.4</a>)</class>. (c) (OS0)&ndash;(OS2)
+      and (OS4) follow from the explicit form of \(\hat{\mu} (f)\) and the
+      decay of \(G_m\). For (OS3), \(C\) commutes with \(\Theta\), so
+      \(\hat{\mu}  (f_i - \Theta f_j) = a_i a_j \mathrm{e}^{\langle \Theta
+      f_i, Cf_j
+\rangle}\) with \(a_i = \mathrm{e}^{- \frac{1}{2}  \langle
+      f_i, Cf_i \rangle}\). The matrix \((\langle \Theta f_i, Cf_j
+      \rangle)_{ij}\) is positive semidefinite by (b), hence so is its
+      entrywise exponential (Schur).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><center>
+            <img src="cqft_notes_L2-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 11.3777630853994em" alt="Figure from Constructive quantum field theory — Lecture 2 (notes)" decoding="async" loading="lazy"><a id="fig:RP"></a>
+          </center></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 84.1%"><p>
+              <b>Figure 3.2. </b><a id="auto-6"></a>Reflection positivity (Proposition
+              <a href="#prop:RP">3.4</a>). For \(f\) supported in \(\{\tau > 0\}\) the
+              covariance between \(f\) and its mirror image factorises through
+              the time-zero plane: \(\langle \Theta f, Cf \rangle = \|(2
+              \omega)^{- 1 / 2}  \int_0^{\infty}
+\mathrm{e}^{- \tau \omega} f
+              (\tau) \mathrm{d} \tau \|^2 \geq 0\).
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p>
+      By the OS reconstruction theorem the GFF yields a Wightman theory, the
+      free field of mass \(m\) of Section <a href="cqft_notes_L1.html#sec:distrib">1.3</a>. Concretely, the
+      reconstructed Hilbert space is the Fock space over \(L^2 (N)\) with \(H
+      = \mathrm{d} \Gamma (\omega)\) (Nelson's free Markov field [<a href="#bib-Nel73a">Nel73a</a>,
+      <a href="#bib-Nel73b">Nel73b</a>]). The time-zero restriction of the GFF is Gaussian
+      with covariance \((2 \omega)^{- 1}\), the ground state measure of the
+      free Hamiltonian in the Schr&ouml;dinger representation (Exercise <a
+      href="#ex:slices">3.13</a>). The GFF is also the continuum limit of the lattice
+      model <a href="cqft_notes_L1.html#eq:spin-system">(2.12)</a> with \(V = 0\) (for \(d = 2\); in general
+      \(d\) see Exercise <a href="cqft_notes_L1.html#ex:lattice-action">2.3</a> and Exercise <a href="#ex:lattice-gff">3.14</a>).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3.5</class>. </strong><class style="font-style: normal"><strong>(Nelson's
+      Markov property) </strong></class><a id="rem:markov"></a> For \(U \subset
+      \mathbb{R}^d\) open let \(\Sigma_U\) be the \(\sigma\)-algebra generated
+      by the \(\varphi (f)\) with \(\text{supp} f \subset U\), and for \(K\)
+      closed let \(\Sigma_K = \bigcap_{U \supset K} \Sigma_U\) (the
+      <em>germ</em> \(\sigma\)-algebra of \(K\)). A random field is
+      <em>Markov</em> for an open set \(\Lambda\) if
+      \(\Sigma_{\bar{\Lambda}}\) and \(\Sigma_{\Lambda^c}\) are conditionally
+      independent given \(\Sigma_{\partial \Lambda}\): the field inside and
+      the field outside interact only through the field near the boundary.
+    </p>
+    <p>
+      (i) <em>The GFF is Markov for every open \(\Lambda\)</em> [<a href="#bib-Nel73a">Nel73a</a>].
+      For the GFF, \(\Sigma_K\) is generated by the \(\varphi (g)\) with \(g
+      \in H^{- 1}\) supported in \(K\) [<a href="#bib-Nel73a">Nel73a</a>]. In Gaussian
+      terms, conditional expectations are then orthogonal projections in the
+      Hilbert space of the \(\varphi (f)\), with \(\mathbb{E} [\varphi (f)
+      \varphi (g)] = \langle f, Cg \rangle\): \(\mathbb{E} [\varphi (f)
+      \hspace{0.17em} | \hspace{0.17em} \Sigma_{\Lambda^c}]
+= \varphi (\Pi
+      f)\), where \(\Pi\) projects \(H^{- 1}\) onto the distributions
+      supported in \(\Lambda^c\). Let \(\text{supp} f \subset \Lambda\) and
+      \(u = C \Pi f\). Orthogonality gives \(u = Cf\) on the interior of
+      \(\Lambda^c\), hence \(Au = f = 0\) there, while \(Au = \Pi f = 0\) in
+      \(\Lambda\). So \(\Pi f = Au\) is supported on \(\partial \Lambda\):
+      this is where the <em>locality</em> of \(A = m^2 - \Delta\) enters.
+      Equivalently, given the outside, the field in \(\Lambda\) is the
+      \(A\)-harmonic extension of its boundary values plus an independent GFF
+      with Dirichlet conditions on \(\partial \Lambda\) (the domain Markov
+      property of [<a href="#bib-She07">She07</a>]). The generalised free fields of the
+      two-mass example below are not Markov, because their \(C^{- 1}\) is
+      nonlocal.
+    </p>
+    <p>
+      (ii) <em>For a \(\Theta\)-invariant field, Markov with a sharp time-zero
+      \(\sigma\)-algebra implies reflection positivity.</em> Take \(\Lambda =
+      \{\tau > 0\}\) and let \(\Sigma_0\) be the germ \(\sigma\)-algebra of
+      \(\{\tau = 0\}\). For the GFF it is generated by the time-zero field
+      (<em>sharp</em> Markov property), so \(\Theta\) acts trivially on it. If
+      \(F\) is \(\Sigma_{\{\tau \geq 0\}}\)-measurable, then \(\Theta F\) is
+      \(\Sigma_{\{\tau \leq 0\}}\)-measurable and \(\mathbb{E} [\Theta F
+      \hspace{0.17em} | \hspace{0.17em} \Sigma_0] =\mathbb{E}
+[F
+      \hspace{0.17em} | \hspace{0.17em} \Sigma_0]\), so the Markov property
+      gives
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} \left[ \overline{\Theta F}  \hspace{0.17em} F
+      \right] =\mathbb{E}
+\left[ \overline{\mathbb{E}[\Theta F \hspace{0.17em}
+      | \hspace{0.17em}
+\Sigma_0]} \hspace{0.17em} \mathbb{E}[F
+      \hspace{0.17em} | \hspace{0.17em}
+\Sigma_0] \right] =\mathbb{E} \left[
+      |\mathbb{E}[F \hspace{0.17em} |
+\hspace{0.17em} \Sigma_0] |^2 \right]
+      \geq 0.\)
+    </center>
+    <p>
+      Sharpness is essential: the fourth-order field with covariance \(P^{-
+      1}\) in the discussion of positivity versus locality below is Markov but
+      not reflection positive, because its \(\Sigma_0\) also contains
+      \(\partial_{\tau} \varphi\), which \(\Theta\) reverses. Moreover \(P_t
+      =\mathbb{E}[\hspace{0.17em} U_t \hspace{0.17em} \cdot \hspace{0.17em}
+      |
+\hspace{0.17em} \Sigma_0]\), with \(U_t\) the time translation, is a
+      semigroup on \(L^2 (\Sigma_0)\): by the Markov property for \(\{\tau >
+      t\}\), \(P_t P_s = P_{t + s}\). It is self-adjoint (by
+      \(\Theta\)-invariance), positive (\(P_t = P_{t / 2}^2\)), contractive
+      and strongly continuous, so \(P_t = \mathrm{e}^{- tH}\), and the
+      physical Hilbert space is \(L^2\) of the time-zero field, i.e. the
+      Schr&ouml;dinger representation. This is Nelson's reconstruction of
+      quantum fields from Euclidean invariant Markov fields [<a href="#bib-Nel73b">Nel73b</a>],
+      which preceded the Osterwalder&ndash;Schrader axioms, and it underlies
+      the Feynman&ndash;Kac&ndash;Nelson formula (Proposition <a href="cqft_notes_L1.html#prop:FK">2.3</a>).
+    </p>
+    <p style="margin-bottom: 1em">
+      (iii) <em>Relevance.</em> A local perturbation \(\mathrm{e}^{-
+      \int_{\Lambda} V (\varphi)}\) of \(\mu_m\) factorises over regions and
+      preserves the Markov property. This makes the \(P (\varphi)_2\) measures
+      in finite volume Markov fields, and it gives the classical statistical
+      mechanics picture of [<a href="#bib-GRS75">GRS75</a>]: conditional distributions
+      given the outside, DLR equations, correlation inequalities. The Markov
+      property is not stable under weak limits, however, and is hard to
+      establish directly for infinite-volume or renormalised theories.
+      Osterwalder and Schrader replaced it by reflection positivity, which
+      neither implies nor is implied by the Markov property (generalised free
+      fields are reflection positive but not Markov, the \(P^{- 1}\) field is
+      Markov but not reflection positive), but is preserved under weak limits.
+      See [<a href="#bib-Sim74">Sim74</a>, <a href="#bib-GJ87">GJ87</a>, <a href="#bib-Gue06">Gue06</a>] for
+      more.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3.6</class>. </strong><class style="font-style: normal"><strong>(Symanzik,
+      Brownian paths and loop soups) </strong></class><a id="rem:symanzik"></a> The
+      Euclidean programme goes back to Symanzik [<a href="#bib-Sym66">Sym66</a>, <a href="#bib-Sym69">Sym69</a>],
+      who proposed to study QFT through its Schwinger functions, viewed as the
+      moments of a classical (formally, Markov) random field, before Nelson
+      and Osterwalder&ndash;Schrader made this rigorous. In [<a href="#bib-Sym69">Sym69</a>]
+      he also introduced a representation of the field in terms of Brownian
+      paths. Since
+    </p>
+    <center>
+      \(\displaystyle C (x, y) = \int_0^{\infty} \mathrm{e}^{- m^2 t}
+      \hspace{0.17em} p_t (x, y)
+\hspace{0.17em} \mathrm{d} t,\)
+    </center>
+    <p>
+      with \(p_t\) the heat kernel of \(\Delta\), the two-point function of
+      the GFF is the Green function of a Brownian motion (with generator
+      \(\Delta\)) killed at rate \(m^2\). For \(\mathrm{e}^{- \int V
+      (\varphi)} \mu_m\), the correlations become averages over a gas of
+      Brownian paths and loops with an interaction that depends on their local
+      times. For \(\varphi^4\) the interaction penalises intersections. On the
+      lattice this is the random walk representation of Brydges, Fr&ouml;hlich
+      and Spencer [<a href="#bib-BFS82">BFS82</a>], the basis of one of the proofs of
+      triviality of \(\varphi^4_d\) for \(d > 4\). Heuristically, the
+      interaction becomes ineffective in the continuum for \(d \geq 4\)
+      because two independent Brownian paths do not intersect there.
+    </p>
+    <p style="margin-bottom: 1em">
+      The modern continuum version is the <em>Brownian loop soup</em> of
+      Lawler and Werner [<a href="#bib-LW04">LW04</a>], a Poisson process of unrooted
+      Brownian loops with intensity \(\alpha\) times the loop measure. On a
+      finite graph the occupation field \(L\) of the random-walk loop soup
+      satisfies \(\mathbb{E} [\mathrm{e}^{- \langle \chi, L \rangle}] = \det
+      (1 + C \chi)^{-
+\alpha}\), while \(\mathbb{E} [\mathrm{e}^{- \frac{1}{2}
+      \langle \chi, \varphi^2 \rangle}] = \det
+(1 + C \chi)^{- 1 / 2}\). So
+      for \(\alpha = \frac{1}{2}\), \(L\) has the law of \(\frac{1}{2}
+      \varphi^2\): this is <em>Le Jan's isomorphism</em> [<a href="#bib-LJ10">LJ10</a>,
+      <a href="#bib-LJ11">LJ11</a>], a loop version of Dynkin's isomorphism [<a href="#bib-Dyn84">Dyn84</a>].
+      In the continuum, in \(d = 2, 3\), the renormalised occupation field of
+      the soup corresponds to \(\frac{1}{2} : \varphi^2\):, the Wick square of
+      Section <a href="#sec:wick">3.3</a>. Lupu [<a href="#bib-Lup16">Lup16</a>] showed that on the
+      cable graph the clusters of the \(\alpha = \frac{1}{2}\) soup are
+      exactly the sign clusters of the GFF, which is recovered from the soup
+      by tossing independent signs. Qian and Werner [<a href="#bib-QW19">QW19</a>]
+      decomposed the clusters of the two-dimensional continuum soup, and
+      Werner [<a href="#bib-Wer16">Wer16</a>] proved a spatial Markov property for loop
+      soups that parallels Nelson's Markov property of the GFF. For a survey
+      see [<a href="#bib-WP21">WP21</a>].
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3.7</class>. </strong><class style="font-style: normal"><strong>(Euclidean
+      K&auml;ll&eacute;n&ndash;Lehmann representation) </strong></class><a id="rem:KL-euclid"></a>
+      The computation in Proposition <a href="#prop:RP">3.4</a>(a) says that \(\int
+      \mathrm{d} \Omega_M (\textbf{p}) \hspace{0.17em} \mathrm{e}^{-
+      \omega_M
+(\textbf{p}) | \tau | + \mathrm{i} \textbf{p} \cdot \textbf{x}}
+      = G_M  (\tau,
+\textbf{x})\): the Wick rotation of the free two-point
+      function \(W_2^{(M)}\) is the Green function \(G_M\) of \(M^2 -
+      \Delta\). Rotating <a href="cqft_notes_L1.html#eq:KL">(1.4)</a> term by term, the Schwinger
+      two-point function of any theory satisfying the Wightman (or OS) axioms
+      is
+    </p>
+    <a id="eq:KL-euclid"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle S_2 (x) = v^2 + \int_{[0, \infty)}
+        \rho (\mathrm{d} M^2)  \hspace{0.17em} G_M
+(x), \qquad x \neq 0,
+        \qquad \text{i.e.} \qquad \hat{S}_2^T (k) = \int_{[0,
+\infty)}
+        \frac{\rho (\mathrm{d} M^2)}{|k|^2 + M^2},\)</td>
+        <td align="right">(3.5)</td>
+      </tr>
+    </table>
+    <p>
+      a Stieltjes transform in \(|k|^2\). (The Fourier form holds up to
+      contact terms, i.e. a polynomial in \(|k|^2\) invisible at \(x \neq 0\),
+      and provided \(\int \rho (\mathrm{d} M^2)  (1 + M^2)^{- 1} < \infty\);
+      otherwise subtractions are needed.) The GFF is the case \(\rho =
+      \delta_{m^2}\). Three consequences follow.
+    </p>
+    <p>
+      (i) <em>Short distances.</em> \(G_M (x)\) is decreasing in \(M\), and
+      for \(d \geq 2\) we have \(G_M (x) / G_m (x) \to 1\) as \(x \to 0\), for
+      every \(M\). Hence, for every \(K\), \(S^T_2 (x) \geq \rho ([0, K^2])
+      \hspace{0.17em} G_K (x)\), and, if \(\rho \neq 0\),
+    </p>
+    <center>
+      \(\displaystyle \liminf_{x \to 0}  \frac{S_2^T (x)}{G_m (x)} \geq \rho
+      ([0, \infty)) \in (0,
+\infty] .\)
+    </center>
+    <p>
+      The two-point function of any nontrivial theory is at least as singular
+      as the free one. In particular a scalar field cannot have scaling
+      dimension below the free value \(\frac{d - 2}{2}\) (the <em>unitarity
+      bound</em>, Exercise <a href="#ex:KL-euclid">3.2</a>).
+    </p>
+    <p>
+      (ii) <em>Long distances.</em> If \(\text{supp} \rho \subset [m_0^2,
+      \infty)\), then \(S_2^T (x)\) decays at least like \(\mathrm{e}^{- m_0
+      |x|}\), up to subexponential factors, and exactly at this rate if
+      \(m_0^2 = \inf \text{supp} \rho\). Conversely, exponential decay at rate
+      \(m_0\) forces \(\text{supp} \rho \subset [m_0^2, \infty)\). So a gap in
+      the spectral measure of \(\varphi\) is the same as exponential decay of
+      \(S_2^T\); a mass gap of \(H\) corresponds to exponential clustering of
+      all truncated correlations (compare Exercise <a href="cqft_notes_L1.html#ex:vacuum">2.6</a>).
+    </p>
+    <p style="margin-bottom: 1em">
+      (iii) <em>Generalised free fields.</em> For any positive measure
+      \(\rho\) on \((0, \infty)\) with \(\int \rho (\mathrm{d} M^2)  (1 +
+      M^2)^{- 1} < \infty\) and \(\int \rho (\mathrm{d} M^2) M^{- 2} <
+      \infty\), the Gaussian measure on \(\mathcal{S}' (\mathbb{R}^d)\) with
+      covariance \(C_{\rho} = \int \rho (\mathrm{d} M^2)  (M^2 - \Delta)^{-
+      1}\) satisfies the OS axioms: \(\hat{C}_{\rho} \leq \hat{C}_{\rho} (0) =
+      \int \rho (\mathrm{d} M^2) M^{- 2}\) is bounded, which gives (OS1) with
+      \(p = 2\), and reflection positivity follows from Proposition <a href="#prop:RP">3.4</a>
+      for each mass \(M > 0\) and \(\rho \geq 0\). (If only the first
+      condition holds, the measure may still exist and satisfy the other
+      axioms, but (OS1) in the form of Lecture 1 can fail: for the massless
+      field in \(d \geq 3\), \(f = \mathrm{i} g\) with \(g \geq 0\) supported
+      in a ball of radius \(R\) gives \(| \hat{\mu} (f) | =
+      \mathrm{e}^{\frac{1}{2}  \langle g, Cg \rangle}\) with \(\langle g, Cg
+      \rangle \sim R^{d + 2}\).) It reconstructs the generalised free field of
+      Exercise <a href="cqft_notes_L1.html#ex:gen-free">1.6</a>. Its Dyson&ndash;Schwinger equation
+      \(\mathbb{E} [D_h F] =\mathbb{E} [F \varphi (C_{\rho}^{- 1} h)]\) still
+      characterises it: under mild conditions on \(\rho\) (e.g. \(\rho\)
+      finite with a mass gap), \(C_{\rho}\) is a bijection of \(\mathcal{S}
+      (\mathbb{R}^d)\), which is all the proof of Theorem <a href="#thm:DS-unique">3.16</a>
+      uses. However \(C_{\rho}^{- 1}\) is <em>nonlocal</em> unless \(\rho\) is
+      a single atom, as the following example shows.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-7"></a>
+      </div>
+      <h5>Example: two masses.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Let \(0 < m_1 < m_2\), \(c_1, c_2 > 0\), and
+      </div>
+    </p>
+    <center>
+      \(\displaystyle \rho = c_1^2  \hspace{0.17em} \delta_{m_1^2} + c_2^2
+      \hspace{0.17em}
+\delta_{m_2^2}, \qquad C_{\rho} = c_1^2  (m_1^2 -
+      \Delta)^{- 1} + c_2^2
+(m_2^2 - \Delta)^{- 1} .\)
+    </center>
+    <p>
+      <em>Euclidean theory.</em> The Gaussian measure \(\mu_{\rho}\) with
+      covariance \(C_{\rho}\) is the law of \(c_1 \varphi_1 + c_2 \varphi_2\),
+      where \(\varphi_1, \varphi_2\) are independent GFFs on \(\mathbb{R}^d\)
+      of masses \(m_1, m_2\). It satisfies (OS0)&ndash;(OS4); reflection
+      positivity follows from Proposition <a href="#prop:RP">3.4</a> applied to each
+      term.
+    </p>
+    <p>
+      <em>The Minkowski theory.</em> Since a Wightman theory is determined up
+      to unitary equivalence by its Wightman functions, which are in turn
+      determined by the Schwinger functions, \(\mu_{\rho}\) reconstructs to
+      exactly the following theory. Let \(\mathfrak{h}_m = L^2 (\mathbb{R}^{d
+      - 1}, \mathrm{d} \Omega_m)\) be the one-particle space of mass \(m\) and
+      spin \(0\), carrying the irreducible positive-energy representation
+      \(u_m\) of \(\mathcal{P}^{\uparrow}_+\). Then
+    </p>
+    <center>
+      \(\displaystyle \mathcal{H}= \Gamma (\mathfrak{h}_{m_1} \oplus
+      \mathfrak{h}_{m_2}) \simeq
+\Gamma (\mathfrak{h}_{m_1}) \otimes \Gamma
+      (\mathfrak{h}_{m_2}), \qquad U =
+\Gamma (u_{m_1} \oplus u_{m_2}), \qquad
+      \Omega = \Omega_1 \otimes \Omega_2,\)
+    </center>
+    <center>
+      \(\displaystyle \varphi (x) = c_1  \hspace{0.17em} \varphi_{m_1} (x)
+      \otimes \mathbb{1} + c_2
+\hspace{0.17em} \mathbb{1} \otimes
+      \varphi_{m_2} (x),\)
+    </center>
+    <p>
+      with \(\varphi_m\) the free field <a href="cqft_notes_L1.html#eq:free-field">(1.2)</a> of mass \(m\). The
+      Wightman functions are given by Wick's theorem with \(W_2 = c_1^2
+      W_2^{(m_1)} + c_2^2 W_2^{(m_2)}\), and all truncated functions of order
+      \(\geq 3\) vanish. Physically, these are <em>two species of free scalar
+      particles</em>, of masses \(m_1\) and \(m_2\), both created from the
+      vacuum by the same field: \(\varphi (f) \Omega = c_1 a_1^{\ast}
+      (\tilde{f} |_{H^+_{m_1}}) \Omega + c_2
+a_2^{\ast} (\tilde{f}
+      |_{H^+_{m_2}}) \Omega\). They do not scatter. The mass spectrum consists
+      of the two shells \(m_1\), \(m_2\) and of the multi-particle continuum
+      from \(2 m_1\). If \(m_2 > 2 m_1\), the second shell lies inside the
+      two-particle continuum, but the heavy particle is stable because there
+      is no interaction. This is the generalised free field of Exercise <a
+      href="cqft_notes_L1.html#ex:gen-free">1.6</a>.
+    </p>
+    <p>
+      <em>What is lost.</em> (1) There is no field equation of second order:
+      \((\Box + m_1^2)  (\Box + m_2^2) \varphi = 0\), but \(\varphi\) solves
+      no Klein&ndash;Gordon equation. The time-zero fields \(\varphi (0,
+      \cdot)\), \(\pi (0, \cdot)\) satisfy \([\varphi (0, \textbf{x}), \pi (0,
+      \textbf{y})] = \mathrm{i} (c_1^2 + c_2^2)
+\delta (\textbf{x} -
+      \textbf{y})\), which is canonical iff \(c_1^2 + c_2^2 = 1\) (the sum
+      rule of Exercise <a href="cqft_notes_L1.html#ex:sum-rule">1.5</a>). Even when they are canonical, they
+      are not a complete set of Cauchy data: \(\varphi (t, \cdot)\) depends on
+      \(c_1 \varphi_{m_1}  (0, \cdot)\) and \(c_2 \varphi_{m_2}  (0, \cdot)\)
+      separately, not only on their sum. (2) In Euclidean terms, the DS
+      equation \(\mathbb{E} [D_h F] =\mathbb{E} [F \varphi (C_{\rho}^{- 1}
+      h)]\) involves the nonlocal operator
+    </p>
+    <center>
+      \(\displaystyle C_{\rho}^{- 1} = PR^{- 1}, \qquad P := (m_1^2 - \Delta)
+      (m_2^2 - \Delta),
+\qquad R := c_1^2  (m_2^2 - \Delta) + c_2^2  (m_1^2 -
+      \Delta) .\)
+    </center>
+    <p>
+      Replacing \(h\) by \(Rh\) gives the equivalent local identity
+      \(\mathbb{E} [D_{Rh} F] =\mathbb{E} [F \varphi (Ph)]\): a fourth-order
+      Euclidean field equation whose contact term is itself differentiated,
+      the Euclidean form of \((\Box + m_1^2)  (\Box + m_2^2) \varphi = 0\).
+      Correspondingly, \(\varphi\) has no Markov property: for stationary
+      Gaussian fields with a rational spectral density, such as
+      \(\hat{C}_{\rho} = \hat{R} / \hat{P}\), the Markov property holds iff
+      the inverse covariance is a differential operator, i.e. iff \(1 /
+      \hat{C}\) is a polynomial [<a href="#bib-Roz82">Roz82</a>], which is not the case
+      here. The pair \((\varphi_1, \varphi_2)\) is Markov, but its sum is not:
+      this is the Euclidean counterpart of (1).
+    </p>
+    <p>
+      <em>Positivity versus locality.</em> Conversely, the local fourth-order
+      action \(\frac{1}{2}  \langle \varphi, P \varphi \rangle\) defines a
+      Markov Gaussian field with covariance
+    </p>
+    <center>
+      \(\displaystyle P^{- 1} = \frac{(m_1^2 - \Delta)^{- 1} - (m_2^2 -
+      \Delta)^{- 1}}{m_2^2 -
+m_1^2}, \qquad \text{i.e.} \qquad \rho =
+      \frac{\delta_{m_1^2} -
+\delta_{m_2^2}}{m_2^2 - m_1^2},\)
+    </center>
+    <p>
+      with a <em>negative</em> weight at \(m_2^2\). By <class style="font-style: normal">(<a href="#eq:KL-euclid">3.5</a>)</class>
+      and the uniqueness of the Stieltjes transform it is not reflection
+      positive (Exercise <a href="#ex:two-masses">3.16</a>). It reconstructs at best a theory
+      with an indefinite metric, in which the particle of mass \(m_2\) is a
+      ghost of negative norm [<a href="#bib-PU50">PU50</a>, <a href="#bib-LW69">LW69</a>]. More
+      generally, call the Euclidean field equation <em>local</em> if \(C^{-
+      1}\) is a differential operator, i.e. \(\hat{C} = 1 / p (|k|^2)\) with
+      \(p\) a polynomial; local field equations give Markov fields, and for
+      rational spectral densities the converse holds [<a href="#bib-Roz82">Roz82</a>]. The
+      Fourier transform of a covariance satisfying the OS axioms is \(q
+      (|k|^2) + \int \rho (\mathrm{d} M^2)  (|k|^2 + M^2)^{- 1}\), with \(\rho
+      \geq 0\) and \(q\) a polynomial coming from contact terms invisible to
+      \(\rho\). If \(\deg p \geq 1\), then \(q = 0\), since \(1 / p (s) \to
+      0\) and the Stieltjes term tends to \(0\) as \(s \to \infty\). Moreover
+      \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\) increases to \(\rho
+      ([0, \infty))\) as \(s \to \infty\), while \(s / p (s) \to 0\) if \(\deg
+      p \geq 2\); hence \(\rho = 0\), a contradiction. If \(\deg p = 0\),
+      \(\hat{C}\) is constant. So a centred Gaussian measure satisfying the OS
+      axioms has a local Euclidean field equation iff its covariance is \(c
+      (M^2 - \Delta)^{- 1}\) with \(M > 0\), or a multiple of the identity
+      (white noise, whose reconstructed Hilbert space is \(\mathbb{C}
+      \Omega\)). Note that it is the covariance, not \(\rho\), that matters:
+      \(a \mathbb{1} + c (m^2 - \Delta)^{- 1}\) with \(a > 0\) is reflection
+      positive and has \(\rho = c \delta_{m^2}\), but its field equation is
+      nonlocal. <em>Positivity and locality of the Euclidean field equation
+      together single out the free field</em> (up to the trivial white noise);
+      locality is also behind Nelson's Markov property of the GFF [<a href="#bib-Nel73a">Nel73a</a>].
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-8"></a>
+      </div>
+      <h5>Is the nonlocal theory physical?<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        In Minkowski space the two-mass theory is a perfectly good one. It
+        satisfies all the Wightman axioms, including locality (W3): \([\varphi
+        (x), \varphi (y)]\) is a sum of free-field commutators and vanishes at
+        spacelike separation. The energy is positive and the vacuum unique. It
+        is trivial (no interaction) and redundant, but not inconsistent.
+        &ldquo;Nonlocal&rdquo; refers only to the Euclidean field equation for
+        \(\varphi\) alone, equivalently (for rational spectral densities, as
+        here) to the absence of the Markov property. On the Minkowski side
+        this means that \(\varphi\) alone is not a complete set of local
+        degrees of freedom. Its time-zero data do not determine its evolution,
+        and there is no Lagrangian or Hamiltonian written in terms of
+        \(\varphi\) only. The cure is to enlarge the field content: the pair
+        \((\varphi_1, \varphi_2)\) has a local action and is Markov, and
+        \(\varphi\) is a linear combination of its components.
+      </div>
+    </p>
+    <p>
+      Generalised free fields become genuinely unphysical when \(\rho\) has a
+      continuous part, i.e. (heuristically) infinitely many free species with
+      masses in a bounded interval. With finitely many masses, \(\varphi\)
+      solves a hyperbolic equation of finite order, and the fields in an
+      arbitrarily thin time slice generate all the observables: the
+      <em>time-slice axiom</em>, or primitive causality [<a href="#bib-Haa96">Haa96</a>,
+      &sect;II.1]. With a continuum of masses there is no dynamical law of
+      finite order, and this property is not expected to hold. More
+      decisively, the theory violates the phase-space requirements that
+      express &ldquo;finitely many degrees of freedom per unit volume of phase
+      space&rdquo;, namely the compactness criterion of Haag and Swieca [<a
+      href="#bib-HSw65">HSw65</a>] and its sharpening, the nuclearity condition of
+      Buchholz and Wichmann [<a href="#bib-BW86">BW86</a>]. For a system of free fields
+      the nuclearity condition holds iff \(\sum_i n_i \mathrm{e}^{- \beta m_i}
+      < \infty\) for all \(\beta > 0\), where \(n_i\) is the multiplicity of
+      the mass \(m_i\) [<a href="#bib-Haa96">Haa96</a>, &sect;V.5], and this fails when
+      infinitely many species have masses in a bounded interval. Since the
+      nuclearity index of a bounded region plays the role of its partition
+      function, the theory has no sensible thermodynamics. This does not
+      affect interacting theories, whose spectral measure also has a
+      continuous part, the multi-particle continuum. There the continuum is
+      produced by a <em>local</em> interaction, and the Euclidean field
+      equation remains local, e.g. \(\mathbb{E} [D_h F] =\mathbb{E}[F ((m^2 -
+      \Delta) \varphi + 4 \lambda :
+\varphi^3 :) (h)]\) for \(\Phi^4_2\),
+      although the inverse two-point function is nonlocal. Thus, for a single
+      field: positive and nonlocal means an incomplete description, which is
+      unphysical for continuous \(\rho\); local and not positive means ghosts;
+      local, positive and with a nontrivial continuum in \(\rho\) requires
+      interactions.
+    </p>
+    <h3 id="auto-9"><a id="sec:wick"></a>3.3<span style="margin-left: 1em"></span>Local operators: Wick
+    products<span style="margin-left: 1em"></span></h3>
+    <p>
+      Interactions \(\int V (\varphi (x)) \mathrm{d} x\) and nonlinear field
+      equations require local functions of \(\varphi (x)\), but \(\varphi\) is
+      not a function for \(d \geq 2\). We regularise, subtract, and remove the
+      regularisation. The subtraction is encoded in Hermite polynomials with
+      variance \(c \geq 0\),
+    </p>
+    <a id="eq:hermite"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathrm{e}^{ta - ct^2 / 2} = \sum_{n
+        \geq 0} \frac{t^n}{n!} H_n (a ; c),
+\qquad H_2 = a^2 - c, \quad H_3 =
+        a^3 - 3 ca, \quad H_4 = a^4 - 6 ca^2 + 3 c^2
+.\)</td>
+        <td align="right">(3.6)</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Lemma <class style="font-style: normal">3.8</class>. </strong><i><a id="lem:hermite"></a>If \((X,
+      Y)\) is a centred Gaussian vector with \(\mathbb{E}X^2 = a\) and
+      \(\mathbb{E}Y^2 = b\), then \(\mathbb{E} [H_n (X ; a) H_k (Y ; b)] =
+      \delta_{nk}  \hspace{0.17em} n!
+\hspace{0.17em}
+      (\mathbb{E}[XY])^n\).</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>\(\mathbb{E} [\mathrm{e}^{sX - s^2 a / 2}
+      \mathrm{e}^{tY - t^2 b / 2}] =
+\mathrm{e}^{\frac{1}{2} \mathbb{E} (sX +
+      tY)^2 - \frac{1}{2} s^2 a -
+\frac{1}{2} t^2 b} =
+      \mathrm{e}^{st\mathbb{E} [XY]}\). Expand both sides in powers of \(s,
+      t\) using <class style="font-style: normal">(<a href="#eq:hermite">3.6</a>)</class> (the exchange of sum
+      and expectation is justified by Gaussian integrability) and compare
+      coefficients.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      Fix an even mollifier \(0 \leq \eta \in C^{\infty}_c (B (0, 1))\) with
+      \(\int \eta = 1\), \(\eta_{\varepsilon} = \varepsilon^{- d} \eta (\cdot
+      / \varepsilon)\) (periodised on the torus), and let
+      \(\varphi_{\varepsilon} = \eta_{\varepsilon} \ast \varphi\), a smooth
+      function. Then \(\mathbb{E} [\varphi_{\varepsilon} (x) \varphi_{\delta}
+      (y)] = G_{\varepsilon,
+\delta}  (x - y)\) with \(G_{\varepsilon, \delta}
+      = \eta_{\varepsilon} \ast \eta_{\delta} \ast G\). Set \(c_{\varepsilon}
+      = G_{\varepsilon, \varepsilon} (0)\) and
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle : \varphi_{\varepsilon}^n : (x) :=
+        H_n (\varphi_{\varepsilon} (x) ;
+c_{\varepsilon}), \qquad :
+        \varphi_{\varepsilon}^n : (f) := \int f (x) :
+\varphi_{\varepsilon}^n
+        : (x) \hspace{0.17em} \mathrm{d} x.\)</td>
+        <td align="right">(3.7)</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3.9</class>. </strong><i><class style="font-style: normal"><strong>(Wick
+      powers) </strong></class><a id="thm:wick"></a> Let \(n \geq 1\) with \(n (d - 2) <
+      d\), i.e. every \(n\) if \(d \leq 2\), \(n \leq 2\) if \(d = 3\), \(n =
+      1\) if \(d \geq 4\). Then for every \(f \in \mathcal{S} (\mathcal{M})\),
+      \(: \varphi^n : (f) := \lim_{\varepsilon \to 0} :
+      \varphi^n_{\varepsilon} : (f)\) exists in \(L^2 (\mu_m)\), is
+      independent of \(\eta\), and</i>
+    </p>
+    <i><a id="eq:wick-cov"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathbb{E} [: \varphi^n : (f) :
+        \varphi^k : (g)] = \delta_{nk}
+\hspace{0.17em} n! \iint f (x) G (x -
+        y)^n g (y) \hspace{0.17em} \mathrm{d} x
+\hspace{0.17em} \mathrm{d}
+        y.\)</td>
+        <td align="right">(3.8)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>If instead \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
+      0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \to
+      \infty\).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong><em>Step 1: a uniform bound.</em> Let \(K (z) =
+      1 + \log_+ (1 / |z|)\) if \(d = 2\), \(K (z) = 1 + |z|^{2 - d}\) if \(d
+      \geq 3\), \(K \equiv 1\) if \(d = 1\). Then \(0 < G \leq C_0 K\), and we
+      claim \(G_{\varepsilon, \delta} \leq CK\) uniformly in \(\varepsilon,
+      \delta \in (0, 1]\). Let \(r = \max (\varepsilon, \delta)\). Then
+      \(\text{supp} (\eta_{\varepsilon} \ast \eta_{\delta}) \subset B (0, 2
+      r)\), \(\int \eta_{\varepsilon} \ast \eta_{\delta} = 1\) and \(\|
+      \eta_{\varepsilon} \ast \eta_{\delta} \|_{\infty} \leq r^{- d} \|
+      \eta
+\|_{\infty}\). If \(|z| \geq 4 r\), then \(G_{\varepsilon, \delta}
+      (z) \leq \sup_{|w| \geq |z| / 2} G (w) \leq C_0 K (z /
+2) \leq CK (z)\).
+      If \(|z| < 4 r\), then
+    </p>
+    <center>
+      \(\displaystyle G_{\varepsilon, \delta} (z) \leq \| \eta \|_{\infty}
+      \hspace{0.17em} r^{- d}
+\int_{B (0, 6 r)} G \leq C \frac{1}{|B (0, 6 r)
+      |}  \int_{B (0, 6 r)} K \leq
+CK (r) \leq C' K (z) .\)
+    </center>
+    <p>
+      <em>Step 2: convergence.</em> By Lemma <a href="#lem:hermite">3.8</a> and Fubini,
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [: \varphi_{\varepsilon}^n : (f) :
+      \varphi_{\delta}^k : (g)] =
+\delta_{nk}  \hspace{0.17em} n! \iint f (x)
+      g (y)  \hspace{0.17em}
+G_{\varepsilon, \delta}  (x - y)^n
+      \hspace{0.17em} \mathrm{d} x
+\hspace{0.17em} \mathrm{d} y.\)
+    </center>
+    <p style="margin-bottom: 1em">
+      As \(\varepsilon, \delta \to 0\), \(G_{\varepsilon, \delta} (z) \to G
+      (z)\) for \(z \neq 0\). Moreover \(K^n \in L^1_{\text{loc}}\) iff \(n (d
+      - 2) < d\), and \(K\) is bounded on \(\{|z| \geq 1\}\). Since \(f, g \in
+      L^1 \cap L^{\infty}\), dominated convergence gives \(\mathbb{E} [(:
+      \varphi_{\varepsilon}^n : (f) - : \varphi_{\delta}^n : (f))^2]
+= n!
+      \iint ff \hspace{0.17em} (G^n_{\varepsilon, \varepsilon} -
+      2
+G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
+      sequence is Cauchy in \(L^2\). The limit covariance is <class style="font-style: normal">(<a href="#eq:wick-cov">3.8</a>)</class>. Running the same computation with two different
+      mollifiers shows independence of \(\eta\). <em>Step 3: divergence.</em>
+      If \(n (d - 2) \geq d\), then \(G^n \geq c |z|^{- n (d - 2)}\) is not
+      locally integrable, and Fatou's lemma gives \(\liminf \mathbb{E}[:
+      \varphi_{\varepsilon}^n : (f)^2] \geq n! \iint ffG^n =
+\infty\).<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3.10</class>. </strong>(i) The subtraction
+      of \(c_{\varepsilon} \to \infty\) is the simplest instance of
+      renormalisation: \(\varphi_{\varepsilon} (x)^n\) itself has no limit
+      when \(d \geq 2\). (ii) The variables \(: \varphi^n : (f)\) belong to
+      the \(n\)-th Wiener chaos, and \(L^2 (\mu_m) \simeq \bigoplus_n
+      \mathcal{H}_n\) is the symmetric Fock space over \(H^{- 1}
+      (\mathcal{M})\) [<a href="#bib-Jan97">Jan97</a>]. By Nelson's hypercontractivity,
+      \(\|X\|_{L^p} \leq (p - 1)^{n / 2} \|X\|_{L^2}\) for \(X \in
+      \mathcal{H}_n\), so the convergence holds in every \(L^p\). A
+      Kolmogorov-type argument gives convergence in \(C^{- \kappa}\) for \(d =
+      2\). (iii) In \(d = 2\) on \(\mathbb{T}^2\), the interaction \(\int :
+      \varphi^4 : \mathrm{d} x\) lies in every \(L^p (\mu_m)\), and Nelson's
+      estimate gives \(\mathrm{e}^{- \lambda \int : \varphi^4 :} \in L^1
+      (\mu_m)\) [<a href="#bib-Nel66">Nel66</a>, <a href="#bib-Sim74">Sim74</a>, <a href="#bib-GJ87">GJ87</a>].
+      This defines the \(\Phi^4_2\) measure on the torus. (iv) Other local
+      operators: derivatives \(\partial^{\alpha} \varphi\), and in \(d = 2\)
+      the Wick exponentials \(: \mathrm{e}^{\mathrm{i} \beta \varphi}\): for
+      \(\beta^2 < 4 \pi\) (in \(L^2\), Exercise <a href="#ex:wickexp">3.6</a>), relevant
+      for the sine-Gordon model, and the real exponentials \(:
+      \mathrm{e}^{\alpha \varphi}\): of the H&oslash;egh-Krohn model.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-10"></a>
+      </div>
+      <h5>Beyond \(L^2\): no random distribution.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        When \(n (d - 2) \geq d\) the divergence in Theorem <a href="#thm:wick">3.9</a>
+        is not an artefact of the \(L^2\) norm: no other topology, and no
+        other choice of probability space, can rescue the limit. Albeverio and
+        Liang [<a href="#bib-AL07">AL07</a>] showed this for the Wick square in \(d =
+        4\), and remarked that the argument extends to \(d \geq 5\): \(:
+        \varphi^2 : (f)\) is well defined as a Hida distribution, i.e. as a
+        generalised functional of white noise, but for \(f > 0\) the
+        characteristic functions of its Fourier-cutoff approximations do not
+        converge to a characteristic function (the natural candidate
+        vanishes), so it is not a random variable. For \(d \leq 3\), instead,
+        it is a random variable, and an infinitely divisible one. The
+        following argument is independent and covers all Wick powers.
+      </div>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proposition <class style="font-style: normal">3.11</class>. </strong><i><a id="prop:no-wick"></a>Let
+      \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv} 0\). Then the
+      family \((: \varphi_{\varepsilon}^n : (f))_{\varepsilon \in (0, 1]}\) is
+      not tight. In particular there is no random distribution \(\Psi\), on
+      any probability space, such that \(: \varphi_{\varepsilon_k}^n : \to
+      \Psi\) in law in \(\mathcal{S}'\) along some sequence \(\varepsilon_k
+      \to 0\).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Let \(X_{\varepsilon} = :
+      \varphi_{\varepsilon}^n : (f) \in \mathcal{H}_n\) and
+      \(\sigma_{\varepsilon}^2 =\mathbb{E}X_{\varepsilon}^2\), so that
+      \(\sigma_{\varepsilon} \to \infty\) by Theorem <a href="#thm:wick">3.9</a>. The
+      <em>Paley&ndash;Zygmund inequality</em> [<a href="#bib-PZ32">PZ32</a>] states that
+      for \(Z \geq 0\) with \(\mathbb{E}Z^2 < \infty\) and \(\theta \in [0,
+      1]\),
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} (Z > \theta \hspace{0.17em} \mathbb{E}Z) \geq
+      (1 - \theta)^2
+\frac{(\mathbb{E}Z)^2}{\mathbb{E}Z^2} .\)
+    </center>
+    <p>
+      (Proof: \(\mathbb{E}Z \leq \theta \mathbb{E}Z +\mathbb{E} [Z
+      \mathbb{1}_{Z > \theta
+\mathbb{E}Z}] \leq \theta \mathbb{E}Z +
+      (\mathbb{E}Z^2)^{1 / 2} \mathbb{P} (Z
+> \theta \mathbb{E}Z)^{1 / 2}\) by
+      Cauchy&ndash;Schwarz.) Apply it to \(Z = X_{\varepsilon}^2\) with
+      \(\theta = \frac{1}{4}\). Hypercontractivity with \(p = 4\) gives
+      \(\mathbb{E}X_{\varepsilon}^4 \leq 9^n \sigma_{\varepsilon}^4\), so
+    </p>
+    <center>
+      \(\displaystyle \mathbb{P} \left( |X_{\varepsilon} | > \tfrac{1}{2}
+      \sigma_{\varepsilon}
+\right) \geq \tfrac{9}{16} \hspace{0.17em} 9^{- n}
+      = : c_n > 0.\)
+    </center>
+    <p style="margin-bottom: 1em">
+      Given \(R > 0\), for \(\varepsilon\) small enough \(\frac{1}{2}
+      \sigma_{\varepsilon} > R\) and hence \(\mathbb{P} (|X_{\varepsilon} | >
+      R) \geq c_n\): the family is not tight. If \(: \varphi_{\varepsilon_k}^n
+      : \to \Psi\) in law in \(\mathcal{S}'\), then \(X_{\varepsilon_k} \to
+      \Psi (f)\) in law, and a sequence converging in law is tight, a
+      contradiction.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3.12</class>. </strong><class style="font-style: normal"><strong>(The
+      law of a bounded chaos is controlled by its \(L^2\) norm)
+      </strong></class><a id="rem:chaos-norms"></a>Let \(X\) be in the bounded chaos
+      \(\bigoplus_{k \leq n} \mathcal{H}_k\), e.g. a polynomial of degree
+      \(\leq n\) in finitely many Gaussian variables. Three inequalities
+      control its law in terms of \(\sigma = \|X\|_{L^2}\) alone, with
+      constants that depend only on \(n\):
+    </p>
+    <ul>
+      <li>
+        <p>
+          <em>upper tails</em> (hypercontractivity [<a href="#bib-Jan97">Jan97</a>]):
+          \(\|X\|_{L^p} \leq (p - 1)^{n / 2} \sigma\), hence \(\mathbb{P} (|X|
+          > t \sigma) \leq \exp (- c \hspace{0.17em} t^{2 / n})\) for \(t \geq
+          t_0\);
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>no escape to zero</em> (Paley&ndash;Zygmund): \(\mathbb{P} (|X|
+          > \frac{1}{2} \sigma) \geq c_n > 0\);
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>anti-concentration</em> (Carbery&ndash;Wright [<a href="#bib-CW01">CW01</a>]):
+          \(\mathbb{P} (|X| \leq t \sigma) \leq C \hspace{0.17em} n
+          \hspace{0.17em} t^{1 /
+n}\) for \(t > 0\).
+        </p>
+      </li>
+    </ul>
+    <p>
+      Consequently, for sequences in a fixed bounded chaos, tightness is
+      equivalent to boundedness in \(L^2\), and convergence in probability is
+      equivalent to convergence in \(L^2\) (and in every \(L^p\)): apply the
+      Paley&ndash;Zygmund bound to \(X_k - X_l\). So for Wick powers there is
+      a sharp dichotomy: either convergence in \(L^2\), or not even tightness.
+      Nontrivial limits of the divergent objects require a change of
+      normalisation: \(\sigma_{\varepsilon}^{- 1} : \varphi_{\varepsilon}^n\):
+      is bounded in \(L^2\), and typically converges in law to a
+      <em>Gaussian</em> white noise, which retains no information on the
+      \(n\)-th power. The fourth moment theorem [<a href="#bib-NP05">NP05</a>]
+      characterises such Gaussian limits within a fixed chaos, and a central
+      limit theorem of this kind for the lattice \(: \varphi^4\): in \(d \geq
+      3\) is proved in [<a href="#bib-AZ96">AZ96</a>]. In particular, in \(d \geq 4\) no
+      Wick power with \(n \geq 2\) exists as a random distribution, so under
+      the GFF the interaction \(\int : \varphi^4\): cannot even be written
+      down.
+    </p>
+    <p style="margin-bottom: 1em">
+      <em>Acknowledgement.</em> I thank Ilya Chevyrev and Emilio Ferrucci for
+      discussions clarifying this point.
+    </p>
+    <h3 id="auto-11">3.4<span style="margin-left: 1em"></span>Gaussian integration by parts and the
+    Dyson&ndash;Schwinger equation<span style="margin-left: 1em"></span></h3>
+    <p>
+      Let \(\mathcal{F}C^{\infty}_b\) be the space of cylinder functions \(F
+      (\varphi) = g (\varphi (f_1), \ldots, \varphi (f_n))\) with \(g \in
+      C^{\infty}_b (\mathbb{R}^n)\) and \(f_i \in \mathcal{S} (\mathcal{M})\).
+      For \(h \in \mathcal{S} (\mathcal{M})\) define
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle D_h F (\varphi) :=
+        \frac{\mathrm{d}}{\mathrm{d} t} F (\varphi + th) |_{t = 0}
+= \sum_i
+        \partial_i g (\varphi (f_1), \ldots, \varphi (f_n)) \langle f_i,
+        h
+\rangle = \langle DF (\varphi), h \rangle,\)</td>
+        <td align="right">(3.9)</td>
+      </tr>
+    </table>
+    <p>
+      with \(DF = \sum_i \partial_i g (\ldots) f_i\), formally \(DF (x) =
+      \delta F / \delta \varphi (x)\).
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Lemma <class style="font-style: normal">3.13</class>. </strong><i><class style="font-style: normal"><strong>(Gaussian
+      integration by parts) </strong></class><a id="lem:gibp"></a> If \((Y, X_1, \ldots,
+      X_n)\) is a centred Gaussian vector and \(g \in C^{\infty}_b
+      (\mathbb{R}^n)\), then \(\mathbb{E} [Yg (X)] = \sum_i \mathbb{E} [YX_i]
+      \hspace{0.17em} \mathbb{E}
+[\partial_i g (X)]\).</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>For \(g = \mathrm{e}^{\mathrm{i} \langle u,
+      \cdot \rangle}\): \(\mathbb{E} [Y \mathrm{e}^{\mathrm{i} \langle u, X
+      \rangle}] = - \mathrm{i}
+\frac{\mathrm{d}}{\mathrm{d} \theta} \mathbb{E}
+      [\mathrm{e}^{\mathrm{i} \theta
+Y + \mathrm{i} \langle u, X \rangle}]
+      |_{\theta = 0} = \mathrm{i} \sum_i u_i
+\mathbb{E} [YX_i] \mathbb{E}
+      [\mathrm{e}^{\mathrm{i} \langle u, X \rangle}]\), which is the claim.
+      The general case follows by Fourier inversion for \(g \in \mathcal{S}
+      (\mathbb{R}^n)\) and then by approximation.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">3.14</class>. </strong><i><class
+      style="font-style: normal"><strong>(Dyson&ndash;Schwinger equation for the GFF)
+      </strong></class><a id="prop:DS"></a> For all \(F \in \mathcal{F}C^{\infty}_b\)
+      and \(h \in \mathcal{S} (\mathcal{M})\),</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><a id="eq:DS"></a><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\mu_m}  [D_h F]
+          =\mathbb{E}_{\mu_m}  \left[ F \hspace{0.17em}
+\varphi (Ah) \right],
+          \qquad \text{formally} \quad \mathbb{E} \left[
+\frac{\delta
+          F}{\delta \varphi (x)} \right] =\mathbb{E} \left[ F
+\hspace{0.17em}
+          (m^2 - \Delta) \varphi (x) \right] .\)</td>
+          <td align="right">(3.10)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>Under \(\mu_m\), \((\varphi (Ah), \varphi (f_1),
+      \ldots, \varphi (f_n))\) is centred Gaussian with \(\mathbb{E} [\varphi
+      (Ah) \varphi (f_i)] = \langle Ah, Cf_i \rangle = \langle
+h, f_i
+      \rangle\). Apply Lemma <a href="#lem:gibp">3.13</a>.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Remark <class style="font-style: normal">3.15</class>. </strong><class style="font-style: normal"><strong>(DS
+      \(=\) Euclidean field equation) </strong></class><a id="rem:DS"></a> (i)
+      Choosing \(F = \varphi (f_2) \cdots \varphi (f_n)\) (allowed by
+      approximation, since all moments are finite) gives the hierarchy for the
+      Schwinger functions \(S_n (x_1, \ldots, x_n) =\mathbb{E} [\varphi (x_1)
+      \cdots \varphi (x_n)]\):
+    </p>
+    <a id="eq:DS-hierarchy"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle (m^2 - \Delta_{x_1}) S_n (x_1,
+        \ldots, x_n) = \sum_{j = 2}^n \delta (x_1 -
+x_j)  \hspace{0.17em} S_{n
+        - 2} (x_2, \ldots, \widehat{x_j}, \ldots, x_n),\)</td>
+        <td align="right">(3.11)</td>
+      </tr>
+    </table>
+    <p>
+      which together with \(S_0 = 1\), \(S_1 = 0\) determines all moments
+      (Wick's theorem, Exercise <a href="#ex:wick-thm">3.7</a>). Compare with <a href="cqft_notes_L1.html#eq:KG">(1.5)</a>:
+      in imaginary time, \(\Box + m^2\) becomes \(- \Delta + m^2\), and the
+      contact terms on the right come from the CCR, i.e. from time ordering.
+      (ii) For a formal Gibbs measure \(\mu_V \propto \mathrm{e}^{- \int V
+      (\varphi)} \mu_m\) the same computation gives
+    </p>
+    <a id="eq:DS-V"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\mu_V}  [D_h F]
+        =\mathbb{E}_{\mu_V}  \left[ F \hspace{0.17em}
+((m^2 - \Delta) \varphi
+        + V' (\varphi)) (h) \right],\)</td>
+        <td align="right">(3.12)</td>
+      </tr>
+    </table>
+    <p>
+      the Euclidean counterpart of the nonlinear field equation <a href="cqft_notes_L1.html#eq:NLKG">(1.9)</a>
+      (here \(V = \lambda \varphi^4\), so the \(\lambda\) of <a href="cqft_notes_L1.html#eq:NLKG">(1.9)</a>
+      equals \(4 \lambda\) here). Here \(V' (\varphi)\) must be a well-defined
+      local operator: for \(\Phi^4_2\), \(V' = 4 \lambda : \varphi^3\):, and
+      the Euclidean field equation for \(P (\varphi)_2\) measures was proved
+      by Dimock and Glimm [<a href="#bib-DG74">DG74</a>]; see also the Dirichlet form
+      approach of Albeverio and R&ouml;ckner [<a href="#bib-AR91">AR91</a>]. For
+      \(\Phi^4_3\) the renormalised (relativistic) field equation, and with it
+      the DS equations, were first derived by Feldman and R&#x0105;czka [<a
+      href="#bib-FR77">FR77</a>], using the constructions of Glimm, Jaffe, Feldman and
+      Osterwalder. The renormalised cubic term is not a random variable under
+      the \(\Phi^4_3\) measure [<a href="#bib-ALZ06">ALZ06</a>]; a description of it as a
+      random distribution, and a proof of <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class>
+      for all \(\lambda > 0\) in infinite volume, are given in [<a href="#bib-GH21">GH21</a>].
+    </p>
+    <p>
+      (iii) <em>Point splitting and the operator product expansion.</em> The
+      nonlinear term in <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class> is a product
+      of distributions at the same point, and the natural way to define it is
+      by point splitting: \(\varphi^3 (x)\) is the regular part of \(\varphi
+      (y_1) \varphi (y_2) \varphi (y_3)\) as \(y_i \to x\). Under the GFF, the
+      Wick decomposition of products (the multi-point version of Section <a
+      href="#sec:wick">3.3</a>, with \(: \varphi (y_1) \varphi (y_2) \varphi (y_3)\): the
+      product minus all its contractions) gives
+    </p>
+    <center>
+      \(\displaystyle \begin{array}{rl}
+  \varphi (y_1) \varphi (y_2) \varphi
+      (y_3) & = : \varphi (y_1) \varphi (y_2)
+  \varphi (y_3) :\\
+  & \quad +
+      G (y_1 - y_2) \varphi (y_3) + G (y_1 - y_3) \varphi (y_2) + G
+  (y_2 -
+      y_3) \varphi (y_1),
+\end{array}\)
+    </center>
+    <p style="margin-bottom: 1em">
+      and the first term tends to \(: \varphi^3 : (x)\). This is the beginning
+      of an <em>operator product expansion</em> (OPE): a product of fields at
+      nearby points is a sum of local operators at \(x\) with coefficients
+      that are singular as the points merge, and the composite operator is
+      what remains after the singular terms are subtracted. With a mollifier
+      the same subtraction reads \(: \varphi^3 := \lim_{\varepsilon}
+      (\varphi_{\varepsilon}^3 - 3 c_{\varepsilon}
+\varphi_{\varepsilon})\),
+      \(c_{\varepsilon} =\mathbb{E} \varphi_{\varepsilon} (0)^2\). For
+      \(\Phi^4_2\) in finite volume the measure is absolutely continuous with
+      respect to the GFF and the Gaussian subtraction suffices. In an
+      interacting theory, however, the OPE coefficients are those of the
+      interacting measure. For \(\Phi^4_3\) the cube needs an additional
+      subtraction \(\delta_{\varepsilon} \varphi_{\varepsilon}\), with
+      \(\delta_{\varepsilon}\) of order \(\lambda \log (1 / \varepsilon)\), so
+      that \(4 \lambda \delta_{\varepsilon} \sim \lambda^2 \log (1 /
+      \varepsilon)\) is the second-order (sunset) mass counterterm, i.e. the
+      counterterm of the action reappears as an OPE coefficient of the
+      interacting theory. Composite operators defined by the OPE are Wilson's
+      short-distance expansion [<a href="#bib-Wil69">Wil69</a>] and Zimmermann's normal
+      products [<a href="#bib-Zim73">Zim73</a>], in terms of which the field equation of
+      perturbative \(\varphi^4\) reads \((\Box + m^2) \varphi = - 4 \lambda N
+      [\varphi^3]\). Constructively, local products and field equations for
+      \(P (\varphi)_2\) were obtained by point splitting by Schrader [<a href="#bib-Sch74">Sch74</a>];
+      the renormalised cube of [<a href="#bib-GH21">GH21</a>] is approximated in the
+      spirit of the OPE; convergence of the OPE in perturbation theory is
+      proved in [<a href="#bib-HK12">HK12</a>]. Lecture 3 describes the OPE at the level
+      of stochastic observables, where the singular coefficients are explicit
+      at every scale.
+    </p>
+    <p>
+      The DS equation is not only satisfied by the GFF; it characterises it.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3.16</class>. </strong><i><class style="font-style: normal"><strong>(DS
+      characterises the GFF) </strong></class><a id="thm:DS-unique"></a> Let \(\nu\) be a
+      probability measure on \(\mathcal{S}' (\mathcal{M})\) such that
+      \(\varphi (f) \in L^1 (\nu)\) for all \(f \in \mathcal{S}
+      (\mathcal{M})\) and</i>
+    </p>
+    <i><a id="eq:DS-nu"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\nu}  [D_h F]
+        =\mathbb{E}_{\nu}  [F \hspace{0.17em} \varphi (Ah)]
+\qquad \text{for
+        all } F \in \mathcal{F}C^{\infty}_b, h \in \mathcal{S}
+(\mathcal{M})
+        .\)</td>
+        <td align="right">(3.13)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>Then \(\nu = \mu_m\).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Fix a real \(f \in \mathcal{S} (\mathcal{M})\)
+      and let \(h = Cf \in \mathcal{S} (\mathcal{M})\), so that \(Ah = f\).
+      For \(s \in \mathbb{R}\) apply <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
+      to the real and imaginary parts of \(F_s (\varphi) =
+      \mathrm{e}^{\mathrm{i} s \varphi (f)}\), which belong to
+      \(\mathcal{F}C^{\infty}_b\), using \(D_h F_s = \mathrm{i} s \langle f,
+      Cf \rangle F_s\). With \(\chi (s) := \mathbb{E}_{\nu} [F_s]\) this gives
+    </p>
+    <center>
+      \(\displaystyle \mathrm{i} s \langle f, Cf \rangle  \hspace{0.17em} \chi
+      (s) =\mathbb{E}_{\nu}
+\left[ \varphi (f) \hspace{0.17em}
+      \mathrm{e}^{\mathrm{i} s \varphi (f)}
+\right] = - \mathrm{i} \chi'
+      (s),\)
+    </center>
+    <p style="margin-bottom: 1em">
+      where we used \(\varphi (f) \in L^1 (\nu)\) to differentiate under the
+      expectation. Hence \(\chi' (s) = - s \langle f, Cf \rangle \chi (s)\)
+      with \(\chi (0) = 1\), so \(\chi (s) = \mathrm{e}^{- \frac{s^2}{2}
+      \langle f, Cf \rangle}\). Taking \(s = 1\): \(\int
+      \mathrm{e}^{\mathrm{i} \varphi (f)} \mathrm{d} \nu =
+      \mathrm{e}^{-
+\frac{1}{2}  \langle f, Cf \rangle}\) for every \(f\).
+      Since \(\sum_j u_j \varphi (f_j) = \varphi (\sum_j u_j f_j)\), this
+      determines the characteristic function of every vector \((\varphi (f_1),
+      \ldots, \varphi (f_k))\), hence all finite-dimensional distributions,
+      hence \(\nu\) on the cylinder \(\sigma\)-algebra. So \(\nu =
+      \mu_m\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3.17</class>. </strong>The integrability
+      assumption is the minimal one needed for <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
+      to make sense, since \(\varphi (Ah)\) ranges over all \(\varphi (g)\),
+      \(g \in \mathcal{S} (\mathcal{M})\). Only test functions \(F =
+      \mathrm{e}^{\mathrm{i} s \varphi (f)}\) were used: DS turns into a
+      first-order linear ODE for the characteristic function. For \(m = 0\) on
+      the torus no probability measure solves <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
+      (Exercise <a href="#ex:massless">3.9</a>). For interacting theories, <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class> is a singular nonlinear relation, and uniqueness
+      of its solutions is a hard and largely open problem. In finite
+      dimensions it is easy (Exercise <a href="#ex:DS-finite">3.8</a>). For a result in this
+      direction for the exponential interaction in \(d = 2\) see [<a href="#bib-DGT22">DGT22</a>].
+    </p>
+    <h3 id="auto-12">3.5<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
+    stochastic quantisation<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-13"></a>
+      </div>
+      <h5>Langevin dynamics.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        If \(S : \mathbb{R}^N \to \mathbb{R}\) is smooth with \(\mathrm{e}^{-
+        S} \in L^1\), the diffusion \(\mathrm{d} X_t = - \nabla S (X_t)
+        \mathrm{d} t + \sqrt{2} \hspace{0.17em}
+\mathrm{d} B_t\) has generator
+        \(\mathcal{L}= \Delta - \nabla S \cdot \nabla\), and
+        \(\mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot (\nabla
+        \mathrm{e}^{- S} +
+\mathrm{e}^{- S} \nabla S) = 0\): the Gibbs measure
+        \(\mathrm{e}^{- S (x)} \mathrm{d} x / Z\) is invariant. Parisi and Wu
+        [<a href="#bib-PW81">PW81</a>] proposed to apply this to the Euclidean action,
+        introducing a fictitious &ldquo;stochastic time&rdquo; \(t\):
+      </div>
+    </p>
+    <a id="eq:SQE"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \partial_t \Phi = - (m^2 - \Delta)
+        \Phi - V' (\Phi) + \sqrt{2}
+\hspace{0.17em} \xi \qquad \text{on }
+        \mathbb{R}_+ \times \mathcal{M},\)</td>
+        <td align="right">(3.14)</td>
+      </tr>
+    </table>
+    <p>
+      with \(\xi\) space-time white noise. This is <em>(parabolic) stochastic
+      quantisation</em>. For \(V = 0\) it is the stochastic heat equation, an
+      infinite-dimensional Ornstein&ndash;Uhlenbeck process.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-14"></a>
+      </div>
+      <h5>History.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Parisi and Wu [<a href="#bib-PW81">PW81</a>] introduced stochastic quantisation
+        to do perturbation theory for gauge theories without gauge fixing. The
+        physics literature of the 1980s is reviewed by Damgaard and
+        H&uuml;ffel [<a href="#bib-DH87">DH87</a>], whose reprint volume [<a href="#bib-DH88">DH88</a>]
+        collects the original papers. Jona-Lasinio and Mitter [<a href="#bib-JLM85">JLM85</a>]
+        gave the first mathematical construction of the dynamics for \(P
+        (\varphi)_2\) on the torus, where the Wick-ordered interaction makes
+        <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> a singular SPDE. They used
+        Girsanov's theorem for a variant of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class>
+        in which the drift is smoothed by \((1 - \Delta)^{- \varepsilon}\) and
+        the noise has covariance \((1 - \Delta)^{- \varepsilon}\) (a slightly
+        coloured noise), which still has the \(P (\varphi)_2\) measure as
+        invariant measure. A recent review of the mathematical theory is [<a
+        href="#bib-Gub25">Gub25</a>].
+      </div>
+    </p>
+    <p>
+      Space-time white noise on \(\mathbb{R} \times \mathcal{M}\) is a centred
+      Gaussian family \((\xi (u))_{u \in L^2  (\mathbb{R} \times
+      \mathcal{M})}\) with \(\mathbb{E} [\xi (u) \xi (v)] = \langle u, v
+      \rangle\), formally \(\mathbb{E} [\xi (t, x) \xi (s, y)] = \delta (t -
+      s) \delta (x - y)\). Let \(W_t (h) = \xi (\mathbb{1}_{[0, t]} \otimes
+      h)\), \(t \geq 0\), a cylindrical Brownian motion. For a (weak) solution
+      \(\Phi\) of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> with \(V = 0\) and
+      \(F = g (\varphi (f_1), \ldots, \varphi (f_n)) \in
+      \mathcal{F}C^{\infty}_b\), It&ocirc;'s formula shows that \(F (\Phi_t) -
+      \int_0^t \mathcal{L}F (\Phi_r) \mathrm{d} r\) is a martingale, with
+    </p>
+    <a id="eq:generator"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \mathcal{L}F (\varphi) = \sum_{i, j}
+        \langle f_i, f_j \rangle
+\hspace{0.17em} \partial_{ij} g (\ldots) -
+        \sum_i \varphi (Af_i)
+\hspace{0.17em} \partial_i g (\ldots) .\)</td>
+        <td align="right">(3.15)</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proposition <class style="font-style: normal">3.18</class>. </strong><i><class
+      style="font-style: normal"><strong>(DS \(\Rightarrow\) invariance) </strong></class><a id="prop:inf-inv"></a>
+      For \(F, G \in \mathcal{F}C^{\infty}_b\): \(\mathbb{E}_{\mu_m}  [G
+      \hspace{0.17em} \mathcal{L}F] = -\mathbb{E}_{\mu_m}
+[\langle DG, DF
+      \rangle_{L^2 (\mathcal{M})}]\). In particular \(\mathbb{E}_{\mu_m}
+      [\mathcal{L}F] = 0\).</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>We may assume \(F = g (\varphi (f_1), \ldots)\)
+      and \(G = k (\varphi (f_1), \ldots)\) with the same \(f_i\). Apply
+      <class style="font-style: normal">(<a href="#eq:DS">3.10</a>)</class> to the cylinder function \(k
+      \hspace{0.17em} \partial_i g\) with \(h = f_i\) and sum over \(i\):
+      \(\sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g \hspace{0.17em}
+      \varphi
+(Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle \mathbb{E}
+      [\partial_j k
+\hspace{0.17em} \partial_i g + k \hspace{0.17em}
+      \partial_{ij} g]\). Insert this into \(\mathbb{E}
+      [G\mathcal{L}F]\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      So the static characterisation (DS) and the dynamic one (invariance
+      under the Langevin flow) are two faces of the same integration by parts
+      formula.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3.19</class>. </strong><i><class style="font-style: normal"><strong>(Parabolic
+      stochastic quantisation of the GFF) </strong></class><a id="thm:parabolic"></a> Let
+      \(\xi\) be space-time white noise on \(\mathbb{R} \times \mathcal{M}\).
+      For \(t \in \mathbb{R}\) and \(f \in \mathcal{S} (\mathcal{M})\)
+      define</i>
+    </p>
+    <i><a id="eq:stat-sol"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \Phi_t (f) := \sqrt{2}
+        \hspace{0.17em} \xi (K_{t, f}), \qquad K_{t, f} (r,
+x) :=
+        \mathbb{1}_{\{r < t\}} (\mathrm{e}^{- (t - r) A} f) (x) .\)</td>
+        <td align="right">(3.16)</td>
+      </tr>
+    </table></i>
+    <div style="margin-bottom: 1em">
+      <i><ol>
+        <li>
+          <p>
+            \(\Phi\) is a centred Gaussian process with \(\mathbb{E} [\Phi_t
+            (f) \Phi_s (g)] = \langle f, \mathrm{e}^{- |t - s|A} Cg
+\rangle\).
+            In particular \((\Phi_t)_{t \in \mathbb{R}}\) is stationary and,
+            for every \(t\), \(\Phi_t\) has a version with values in
+            \(\mathcal{S}' (\mathcal{M})\) whose law is \(\mu_m\).
+          </p>
+        </li>
+        <li>
+          <p>
+            \(\Phi\) is a mild and weak solution of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class>
+            with \(V = 0\): for \(s < t\) and \(h \in \mathcal{S}
+            (\mathcal{M})\),
+          </p>
+          <center>
+            \(\displaystyle \begin{array}{c}
+  \Phi_t (h) = \Phi_s
+            (\mathrm{e}^{- (t - s) A} h) + \sqrt{2}  \hspace{0.17em}
+  \xi
+            \left( \mathbb{1}_{(s, t)} (r) \hspace{0.17em} \mathrm{e}^{- (t -
+            r) A}
+  h \right),\\
+  \Phi_t (h) = \Phi_s (h) - \int_s^t \Phi_r
+            (Ah) \hspace{0.17em} \mathrm{d} r
+  + \sqrt{2}  \hspace{0.17em}
+            \xi (\mathbb{1}_{(s, t)} \otimes h) .
+\end{array}\)
+          </center>
+        </li>
+        <li>
+          <p>
+            Let \(\Psi_0\) be an \(\mathcal{S}' (\mathcal{M})\)-valued random
+            variable independent of \(\xi\), and let \(\Psi\) be the mild
+            solution started from \(\Psi_0\),
+          </p>
+          <center>
+            \(\displaystyle \Psi_t (f) = \Psi_0 (\mathrm{e}^{- tA} f) +
+            \sqrt{2}  \hspace{0.17em} \xi
+\left( \mathbb{1}_{(0, t)} (r)
+            \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
+\right), \qquad t \geq
+            0.\)
+          </center>
+          <p>
+            Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
+            \mathrm{e}^{- \frac{1}{2}
+\langle f, Cf \rangle}\) as \(t \to
+            \infty\) for every \(f \in \mathcal{S} (\mathcal{M})\). Moreover
+            \(\mu_m\) is invariant (\(\Psi_0 \sim \mu_m\) implies \(\Psi_t
+            \sim \mu_m\) for all \(t\)), and it is the unique invariant
+            probability measure of the dynamics.
+          </p>
+        </li>
+      </ol></i>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>(a) Since \(A\) is self-adjoint and commutes
+      with \(\mathrm{e}^{- uA}\),
+    </p>
+    <center>
+      \(\displaystyle \langle K_{t, f}, K_{s, g} \rangle = \int_{- \infty}^{t
+      \wedge s} \langle f,
+\mathrm{e}^{- (t + s - 2 r) A} g \rangle \mathrm{d}
+      r = \langle f,
+\mathrm{e}^{- |t - s|A} (2 A)^{- 1} g \rangle .\)
+    </center>
+    <p>
+      In particular \(K_{t, f} \in L^2  (\mathbb{R} \times \mathcal{M})\), and
+      multiplying by \(2\) gives the covariance. Stationarity follows. For
+      fixed \(t\), \(f \mapsto \Phi_t (f)\) is linear and \(\mathbb{E} [\Phi_t
+      (f)^2] = \langle f, Cf \rangle \leq m^{- 2} \|f\|_{L^2}^2\), so it is
+      continuous from \(\mathcal{S} (\mathcal{M})\) to \(L^2 (\mathbb{P})\).
+      By the regularisation theorem for random linear functionals on nuclear
+      spaces (It&ocirc;&ndash;Nawata, Mitoma) it has an \(\mathcal{S}'
+      (\mathcal{M})\)-valued version, which is centred Gaussian with
+      covariance \(C\), i.e. has law \(\mu_m\). On the torus one can see this
+      directly: the coordinates \(\Phi_t (e_n)\) are independent stationary OU
+      processes \(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
+      \mathrm{d} B\) with variance \(\lambda_n^{- 1}\), and <class style="font-style: normal">(<a href="#eq:series">3.3</a>)</class> applies.
+    </p>
+    <p>
+      (b) The mild formula is the identity \(K_{t, h} = K_{s, \mathrm{e}^{- (t
+      - s) A} h} + \mathbb{1}_{(s, t)} (r)
+\mathrm{e}^{- (t - r) A} h\)
+      together with the linearity of \(\xi\). The weak formulation follows
+      from the mild one by a stochastic Fubini argument (Exercise <a href="#ex:weak">3.12</a>).
+    </p>
+    <p>
+      (c) Since \(\Psi_0\) is independent of \(\xi\),
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}]
+      =\mathbb{E}
+[\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{- tA} f)}]
+      \hspace{0.17em}
+\mathrm{e}^{- \frac{1}{2}  \langle f, (1 - \mathrm{e}^{-
+      2 tA}) Cf \rangle} .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      For \(m > 0\), \(\mathrm{e}^{- tA} f \to 0\) in \(\mathcal{S}
+      (\mathcal{M})\) as \(t \to \infty\), so \(\Psi_0 (\mathrm{e}^{- tA} f)
+      \to 0\) a.s. because \(\Psi_0 \in \mathcal{S}' (\mathcal{M})\). By
+      dominated convergence the first factor tends to \(1\), while the second
+      tends to \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\). If
+      \(\Psi_0 \sim \mu_m\), the first factor equals \(\mathrm{e}^{-
+      \frac{1}{2}  \langle f, \mathrm{e}^{- 2 tA} Cf \rangle}\) and the
+      product is exactly \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
+      \rangle}\), which proves invariance. If \(\nu\) is invariant, start from
+      \(\Psi_0 \sim \nu\): then \(\text{Law} (\Psi_t) = \nu\) for all \(t\),
+      so the characteristic functional of \(\nu\) equals that of \(\mu_m\),
+      and \(\nu = \mu_m\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><center>
+            <img src="cqft_notes_L2-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.1999779614325em" alt="Figure from Constructive quantum field theory — Lecture 2 (notes)" decoding="async" loading="lazy"><a id="fig:she"></a>
+          </center></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 84.1%"><p>
+              <b>Figure 3.3. </b><a id="auto-15"></a>Parabolic stochastic quantisation
+              of the GFF on a circle of length \(8\), \(m = 1\), started from
+              \(\Phi_0 = 0\). Left: a sample of the solution. Right: each
+              Fourier mode is an Ornstein&ndash;Uhlenbeck process, whose
+              variance relaxes to \(\lambda_k^{- 1}\) at rate \(2 \lambda_k\)
+              (Theorem <a href="#thm:parabolic">3.19</a>(c)). Dots: Monte Carlo estimates with
+              \(4000\) samples.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3.20</class>. </strong>As a Gaussian field
+      on \(\mathbb{R} \times \mathcal{M}\), the stationary solution has
+      covariance \(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
+      \partial_t^2 +
+A^2)^{- 1}\), and its equal-time slice has covariance \(2
+      \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}  \frac{\mathrm{d} \theta}{2
+      \pi} =
+A^{- 1}\). The stochastic time \(t\) is unrelated to the
+      Euclidean time \(\tau\). For interacting theories, <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> is a singular SPDE. It was solved by Da Prato
+      and Debussche for \(\Phi^4_2\) [<a href="#bib-DPD03">DPD03</a>] (see also [<a href="#bib-JLM85">JLM85</a>,
+      <a href="#bib-AR91">AR91</a>]), and for \(\Phi^4_3\) using regularity structures
+      and paracontrolled calculus [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a
+      href="#bib-CC18">CC18</a>]. Global-in-time bounds [<a href="#bib-MW17">MW17</a>, <a href="#bib-GH19">GH19</a>]
+      then allow constructing the Euclidean \(\Phi^4_3\) theory as the
+      invariant measure of the dynamics [<a href="#bib-GH21">GH21</a>].
+    </p>
+    <h3 id="auto-16">3.6<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
+    stochastic quantisation<span style="margin-left: 1em"></span></h3>
+    <p>
+      Parisi and Sourlas [<a href="#bib-PS79">PS79</a>] discovered that the elliptic SPDE
+      in \(d + 2\) dimensions
+    </p>
+    <a id="eq:ESQ"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle (m^2 - \Delta_{\mathbb{R}^2 \times
+        \mathcal{M}}) \Psi + V' (\Psi) = \zeta,
+\qquad \zeta \text{white noise
+        on } \mathbb{R}^2 \times \mathcal{M},\)</td>
+        <td align="right">(3.17)</td>
+      </tr>
+    </table>
+    <p>
+      is related to the \(d\)-dimensional Gibbs measure: formally, the law of
+      \(\Psi (z, \cdot)\), \(z \in \mathbb{R}^2\), is \(\propto \exp \left( -
+      4 \pi \left[ \tfrac{1}{2} \langle \varphi, A \varphi
+\rangle + \int V
+      (\varphi) \right] \right) \mathcal{D} \varphi\) (<em>dimensional
+      reduction</em>). The underlying mechanism is a hidden supersymmetry [<a
+      href="#bib-PS79">PS79</a>, <a href="#bib-KLP84">KLP84</a>]. In [<a href="#bib-KLP84">KLP84</a>] the
+      dimensional reduction of the supersymmetric representation is proved
+      rigorously, but not the supersymmetric representation of the solution of
+      the SPDE; the full nonlinear statement was proved for \(d = 0\) in [<a
+      href="#bib-ADG20">ADG20</a>] and for some two-dimensional models (polynomial
+      interactions on \(\mathbb{T}^2\), exponential interactions on
+      \(\mathbb{R}^2\)) in [<a href="#bib-ADG21">ADG21</a>]; elliptic \(\Phi^4\) equations
+      in \(4\) and \(5\) dimensions are solved in [<a href="#bib-GH19">GH19</a>]. For \(V
+      = 0\) the statement is elementary, and it explains the factor \(4 \pi\).
+      We normalise the noise so that the slice is exactly \(\mu_m\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">3.21</class>. </strong><i><class style="font-style: normal"><strong>(Elliptic
+      stochastic quantisation of the GFF) </strong></class><a id="thm:elliptic"></a> Let
+      \(\zeta\) be white noise on \(\mathbb{R}^2 \times \mathcal{M}\) (an
+      \(\mathcal{S}'  (\mathbb{R}^2 \times \mathcal{M})\)-valued Gaussian
+      variable with \(\mathbb{E} [\zeta (u) \zeta (v)] = \langle u, v
+      \rangle\)) and \(\textsf{L} := m^2 - \Delta_{\mathbb{R}^2 \times
+      \mathcal{M}} = -
+\Delta_{\mathbb{R}^2} + A\).</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><ol>
+        <li>
+          <p>
+            The equation \(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
+            \zeta\) has a unique \(\mathcal{S}'  (\mathbb{R}^2 \times
+            \mathcal{M})\)-valued solution, \(\Psi (u) = \sqrt{4 \pi}
+            \hspace{0.17em} \zeta (\textsf{L}^{- 1} u)\).
+          </p>
+        </li>
+        <li>
+          <p>
+            For \(z \in \mathbb{R}^2\) and \(f \in \mathcal{S} (\mathcal{M})\)
+            the function \(K_{z, f} := \textsf{L}^{- 1} (\delta_z \otimes f)\)
+            lies in \(L^2  (\mathbb{R}^2 \times \mathcal{M})\), and \(z
+            \mapsto K_{z, f}\) is continuous. The Wiener integrals \(\Psi (z,
+            f) := \sqrt{4 \pi}  \hspace{0.17em} \zeta (K_{z, f})\) satisfy
+            \(\Psi (v \otimes f) = \int_{\mathbb{R}^2} v (z) \Psi (z, f)
+            \hspace{0.17em}
+\mathrm{d} z\) a.s. for \(v \in \mathcal{S}
+            (\mathbb{R}^2)\).
+          </p>
+        </li>
+        <li>
+          <p>
+            For all \(z \in \mathbb{R}^2\) and \(f, g \in \mathcal{S}
+            (\mathcal{M})\), \(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle
+            f, Cg \rangle\). Hence \(\Psi (z, \cdot)\) has an \(\mathcal{S}'
+            (\mathcal{M})\)-valued version with law \(\mu_m\), and the field
+            \((\Psi (z, \cdot))_{z \in \mathbb{R}^2}\) is stationary and
+            isotropic in \(z\).
+          </p>
+        </li>
+      </ol></i>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>(a) \(\textsf{L}\) is a continuous bijection of
+      \(\mathcal{S} (\mathbb{R}^2 \times \mathcal{M})\), so \(\Psi (u) :=
+      \sqrt{4 \pi} \zeta (\textsf{L}^{- 1} u)\) defines an
+      \(\mathcal{S}'\)-valued variable with \(\Psi (\textsf{L} u) = \sqrt{4
+      \pi} \zeta (u)\). If \(D \in \mathcal{S}'\) satisfies \(D (\textsf{L} u)
+      = 0\) for all \(u \in \mathcal{S}\), then \(D = 0\) since \(\textsf{L}\)
+      is onto: the solution is unique.
+    </p>
+    <p>
+      (b), (c) Take the Fourier transform in \(z\) only, with measure
+      \(\mathrm{d} q / (2 \pi)^2\). The transform of \(K_{z, f}\) is the \(L^2
+      (\mathcal{M})\)-valued function \(q \mapsto \mathrm{e}^{- \mathrm{i} q
+      \cdot z} (|q|^2 + A)^{- 1} f\). By Plancherel, the spectral theorem for
+      \(A\) and Tonelli,
+    </p>
+    <center>
+      \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \int_{\mathbb{R}^2}
+      \langle f, (|q|^2 +
+A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2 \pi)^2} =
+      \left\langle f, \left[
+\int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2
+      \pi)^2} (|q|^2 + A)^{- 2} \right] g
+\right\rangle = \frac{1}{4 \pi}
+      \langle f, A^{- 1} g \rangle,\)
+    </center>
+    <p>
+      using the scalar identity
+    </p>
+    <a id="eq:4pi"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \int_{\mathbb{R}^2} \frac{\mathrm{d}
+        q}{(2 \pi)^2}  \frac{1}{(|q|^2 + a)^2} =
+\frac{1}{2 \pi}
+        \int_0^{\infty} \frac{r \hspace{0.17em} \mathrm{d} r}{(r^2 +
+a)^2} =
+        \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
+        <td align="right">(3.18)</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 1em">
+      In particular \(K_{z, f} \in L^2\), and its continuity in \(z\) follows
+      by dominated convergence. Since the transform of \(\int v (z) K_{z, f}
+      \mathrm{d} z\) is \(\hat{v} (q)  (|q|^2 + A)^{- 1} f\), the Bochner
+      integral \(\int v (z) K_{z, f} \mathrm{d} z\) equals \(\textsf{L}^{- 1}
+      (v \otimes f)\). The Wiener integral \(\zeta\) is an isometry \(L^2 \to
+      L^2 (\mathbb{P})\) and commutes with Bochner integrals, which gives (b).
+      Multiplying by \(4 \pi\) gives the covariance in (c). The \(\mathcal{S}'
+      (\mathcal{M})\)-valued version is obtained as in Theorem <a href="#thm:parabolic">3.19</a>.
+      Stationarity and isotropy hold because \(\mathbb{E} [\Psi (z, f) \Psi
+      (z', g)] = 4 \pi \int \mathrm{e}^{\mathrm{i} q
+\cdot (z - z')} \langle
+      f, (|q|^2 + A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2
+\pi)^2}\) depends
+      only on \(|z - z' |\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">3.22</class>. </strong><class style="font-style: normal"><strong>(Slices
+      of Gaussian fields) </strong></class>Both stochastic quantisations
+      exhibit the GFF as a <em>slice</em> of a Gaussian field in higher
+      dimension. For the field on \(\mathbb{R}^k \times \mathcal{M}\) with
+      covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\), the slice \(\{0\}
+      \times \mathcal{M}\) has covariance \(c_{k, p} A^{k / 2 - p}\) with
+      \(c_{k, p} = \Gamma (p - \frac{k}{2}) / ((4 \pi)^{k / 2} \Gamma (p))\)
+      (Exercise <a href="#ex:slices">3.13</a>). The GFF arises iff \(p = 1 + k / 2\):
+      \((k, p) = (2, 2)\) is elliptic SQ, while \((k, p) = (1, 1)\) gives
+      instead the time-zero field \((2 \omega)^{- 1}\) of Proposition <a href="#prop:RP">3.4</a>.
+      When \(\mathcal{M}=\mathbb{R}^d\), the elliptic field \(\Psi\) is
+      Euclidean invariant in \(\mathbb{R}^{d + 2}\), and its restriction to
+      <em>every</em> codimension-two affine subspace is a GFF.
+    </p>
+    <h3 id="auto-17">3.7<span style="margin-left: 1em"></span>Outlook<span style="margin-left: 1em"></span></h3>
+    <p>
+      In Lecture 3 we decompose the GFF along a scale parameter: the field at
+      resolution \(t\) is a Gaussian martingale, whose terminal value is the
+      GFF. Interactions are then introduced through the Polchinski equation
+      for the effective potential, and through its probabilistic form, a
+      forward&ndash;backward stochastic differential equation for the field at
+      increasing resolution. These tools can be used to construct \(\Phi^4_2\)
+      and \(\Phi^4_3\). On \(\mathbb{T}^2\) the Wick-ordered interaction
+      \(\lambda \int : \varphi^4 : \mathrm{d} x\) suffices, and the measure
+      satisfies the renormalised DS equation <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class>.
+      In \(d = 3\) Wick ordering no longer suffices.
+    </p>
+    <h3 id="auto-18">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.1</class>.
+        </strong><class style="font-style: normal"><strong>(Green functions) </strong></class><a
+        id="ex:green"></a> (a) Using \(G_m = \int_0^{\infty} \mathrm{e}^{- m^2 t} p_t
+        \hspace{0.17em} \mathrm{d} t\), with \(p_t\) the heat kernel, show
+        that \(G_m (x) = (2 \pi)^{- d / 2}  (m / |x|)^{d / 2 - 1} K_{d / 2 -
+        1} (m|x|)\), and derive the asymptotics stated after Definition <a
+        href="#def:gff">3.1</a>. (b) Check \(G_m (x) = \mathrm{e}^{- m |x|} / (2 m)\)
+        for \(d = 1\) and \(G_m (x) = \mathrm{e}^{- m |x|} / (4 \pi |x|)\) for
+        \(d = 3\). (c) Show that on \(\mathbb{T}^d_L\) the difference \(G -
+        G_m\) is smooth near the diagonal.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.2</class>.
+        </strong><class style="font-style: normal"><strong>(Euclidean
+        K&auml;ll&eacute;n&ndash;Lehmann and the unitarity bound)
+        </strong></class><a id="ex:KL-euclid"></a> (a) Show that</font>
+      </p>
+    </div>
+    <div style="margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><center>
+          \(\displaystyle \int \mathrm{d} \Omega_M (\textbf{p})
+          \hspace{0.17em} \mathrm{e}^{- \omega_M
+(\textbf{p}) | \tau | +
+          \mathrm{i} \textbf{p} \cdot \textbf{x}} = G_M  (\tau,
+\textbf{x}),\)
+        </center></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%">and derive <class style="font-style: normal">(<a href="#eq:KL-euclid">3.5</a>)</class> from
+        <a href="cqft_notes_L1.html#eq:KL">(1.4)</a>. (b) Show that \(G_M (x)\) is decreasing in \(M\)
+        and, for \(d \geq 2\), that \(G_M (x) / G_m (x) \to 1\) as \(x \to
+        0\). Prove the lower bound in Remark <a href="#rem:KL-euclid">3.7</a>(i). (c) Let \(d
+        \geq 3\) and suppose \(S_2^T (x) = |x|^{- 2 \Delta_{\varphi}}\) (a
+        scale invariant theory; the scaling dimension \(\Delta_{\varphi}\) is
+        not the Laplacian). Using \(G_M (x) = M^{d - 2} G_1  (Mx)\), show that
+        \(\rho (\mathrm{d} M^2) = c \hspace{0.17em} (M^2)^{\Delta_{\varphi} -
+        d / 2}
+\mathrm{d} M^2\) reproduces \(S_2^T\) for some \(c > 0\), for
+        \(\frac{d - 2}{2} < \Delta_{\varphi} < \frac{d}{2}\), and that this is
+        a locally finite measure iff \(\Delta_{\varphi} > \frac{d - 2}{2}\)
+        (for \(\Delta_{\varphi} \geq \frac{d}{2}\), \(S_2^T\) is not locally
+        integrable). Using uniqueness of the Stieltjes transform, deduce the
+        unitarity bound \(\Delta_{\varphi} \geq \frac{d - 2}{2}\), with
+        equality iff \(\rho \propto \delta_0\), the massless free
+        field.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.3</class>.
+        </strong><class style="font-style: normal"><strong>(Regularity is sharp)
+        </strong></class><a id="ex:regularity"></a> (a) For \(a_n \geq 0\) and \((g_n)\)
+        i.i.d. \(N (0, 1)\), show that \(\mathbb{E} \hspace{0.17em}
+        \mathrm{e}^{- \sum_n a_n g_n^2} = \prod_n (1 + 2
+a_n)^{- 1 / 2}\).
+        Deduce that \(\sum_n a_n g_n^2 < \infty\) a.s. iff \(\sum_n a_n <
+        \infty\). (b) Conclude that \(\mu_m (H^{- s} (\mathbb{T}^d_L)) = 1\)
+        iff \(s > \frac{d}{2} - 1\). In particular \(\mu_m (L^2) = 0\) for \(d
+        \geq 2\), and the Cameron&ndash;Martin space \(H^1\) is \(\mu_m\)-null
+        in every dimension. (c<sup>\(\star\)</sup>) Using hypercontractivity
+        and a Kolmogorov argument, show that \(\varphi \in C^{1 - d / 2 -
+        \kappa}\) a.s. for every \(\kappa > 0\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.4</class>.
+        </strong><class style="font-style: normal"><strong>(Hermite calculus and change of
+        renormalisation) </strong></class>(a) Show that \(H_n (a ; c) =
+        \sum_{k \leq n / 2} \frac{n!}{k! \hspace{0.17em} (n - 2 k) !}
+\left(
+        - \frac{c}{2} \right)^k a^{n - 2 k}\), \(\partial_a H_n = nH_{n - 1}\)
+        and \(aH_n = H_{n + 1} + ncH_{n - 1}\). (b) Show that \(H_n (a + b ; c
+        + c') = \sum_k \binom{n}{k} H_k (a ; c) H_{n - k} (b ; c')\). (c) Show
+        that \(H_n (a ; c') = \sum_k \binom{n}{2 k} (2 k - 1) !!
+        \hspace{0.17em} (c - c')^k
+H_{n - 2 k} (a ; c)\). Interpret this as
+        the effect of changing the mollifier on \(: \varphi^n\):: Wick powers
+        are defined up to lower order Wick powers with <em>finite</em>
+        coefficients.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.5</class>.
+        </strong><class style="font-style: normal"><strong>(Wick powers: details)
+        </strong></class>(a) Show that \(c_{\varepsilon} = \frac{1}{2 \pi}
+        \log \frac{1}{\varepsilon} + O (1)\) for \(d = 2\) and
+        \(c_{\varepsilon} \asymp \varepsilon^{2 - d}\) for \(d \geq 3\). (b)
+        In \(d = 3\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^3 :
+        (f)^2] \asymp \log
+\frac{1}{\varepsilon}\) for \(0 \leq f
+        \mathrel{\not\equiv} 0\): the cube is borderline divergent. (c) In \(d
+        = 4\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^2 : (f)^2]
+        \asymp \log
+\frac{1}{\varepsilon}\) as well.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.6</class>.
+        </strong><class style="font-style: normal"><strong>(Wick exponentials) </strong></class><a
+        id="ex:wickexp"></a> In \(d = 2\) let \(: \mathrm{e}^{\mathrm{i} \beta
+        \varphi_{\varepsilon}} : (x) :=
+\mathrm{e}^{\beta^2 c_{\varepsilon} /
+        2} \mathrm{e}^{\mathrm{i} \beta
+\varphi_{\varepsilon} (x)}\). Show
+        that</font>
+      </p>
+    </div>
+    <div style="margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><center>
+          \(\displaystyle \mathbb{E} \left[ : \mathrm{e}^{\mathrm{i} \beta
+          \varphi_{\varepsilon}} : (x)
+\hspace{0.17em} \overline{:
+          \mathrm{e}^{\mathrm{i} \beta \varphi_{\delta}} :
+(y)} \right] =
+          \mathrm{e}^{\beta^2 G_{\varepsilon, \delta}  (x - y)},\)
+        </center></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%">and deduce that \(: \mathrm{e}^{\mathrm{i} \beta
+        \varphi_{\varepsilon}} : (f)\) converges in \(L^2 (\mu_m)\) for every
+        \(f\) if \(\beta^2 < 4 \pi\), while its second moment diverges for \(0
+        \leq f \mathrel{\not\equiv} 0\) if \(\beta^2 \geq 4 \pi\). What
+        changes for the real exponential \(: \mathrm{e}^{\alpha \varphi}\):?
+        (Gaussian multiplicative chaos exists in \(L^1\) for \(\alpha^2 < 8
+        \pi\), see [<a href="#bib-BP25">BP25</a>].)</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.7</class>.
+        </strong><class style="font-style: normal"><strong>(Wick's theorem from DS)
+        </strong></class><a id="ex:wick-thm"></a> (a) Complete the proof of Lemma <a href="#lem:gibp">3.13</a>.
+        (b) Derive <class style="font-style: normal">(<a href="#eq:DS-hierarchy">3.11</a>)</class> from <class
+        style="font-style: normal">(<a href="#eq:DS">3.10</a>)</class>, justifying the use of polynomial
+        \(F\). (c) Deduce Isserlis&ndash;Wick: \(S_{2 n + 1} = 0\) and \(S_{2
+        n} (x_1, \ldots, x_{2 n}) = \sum_{\text{pairings } P} \prod_{\{i, j\}
+        \in
+P} G (x_i - x_j)\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.8</class>.
+        </strong><class style="font-style: normal"><strong>(DS in finite dimensions)
+        </strong></class><a id="ex:DS-finite"></a> Let \(S (x) = \frac{1}{2}  \langle x, Qx
+        \rangle + V (x)\) on \(\mathbb{R}^N\), with \(Q > 0\) and \(V\) smooth
+        with \(\mathrm{e}^{- V}\) bounded, and \(\mu_V (\mathrm{d} x) = Z^{-
+        1} \mathrm{e}^{- S (x)} \mathrm{d} x\). (a) Show that
+        \(\mathbb{E}_{\mu_V}  [\partial_h F] =\mathbb{E}_{\mu_V}  [F \langle
+        \nabla S, h
+\rangle]\) for \(F \in C^{\infty}_c\). (b) Let \(\nu\) be
+        a probability measure with \(\nabla S \in L^1 (\nu)\) satisfying the
+        same identity. Show that \(\nu = \mu_V\). <em>Hint:</em> the identity
+        says that the distribution \(\mathrm{e}^S \nu\) has zero gradient. (c)
+        Why does this argument fail in infinite dimensions? What replaces it
+        in Theorem <a href="#thm:DS-unique">3.16</a>?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.9</class>.
+        </strong><class style="font-style: normal"><strong>(The massless case) </strong></class><a
+        id="ex:massless"></a> (a) Show that for \(m = 0\) on \(\mathbb{T}^d\) no
+        probability measure on \(\mathcal{S}' (\mathbb{T}^d)\) satisfies
+        <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class> with \(A = - \Delta\).
+        <em>Hint:</em> take \(h = 1\). (b) Show that the massless GFF exists
+        on the quotient \(\mathcal{S}' (\mathbb{T}^d) /\mathbb{R}\) (test
+        functions with \(\int f = 0\)), and characterise it by DS there. (c)
+        On \(\mathbb{R}^2\), show that \(\langle f, (- \Delta)^{- 1} f \rangle
+        < \infty\) iff \(\hat{f} (0) = 0\): the infrared problem of the
+        two-dimensional massless field.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.10</class>.
+        </strong><class style="font-style: normal"><strong>(Infinitesimal invariance characterises
+        \(\mu_m\)) </strong></class>On \(\mathbb{T}^d_L\), let \(\nu\) be a
+        probability measure on \(\mathcal{S}' (\mathbb{T}^d_L)\) with
+        \(\varphi (f) \in L^1 (\nu)\) and \(\mathbb{E}_{\nu}  [\mathcal{L}F] =
+        0\) for all \(F \in \mathcal{F}C^{\infty}_b\). Show that \(\nu =
+        \mu_m\). <em>Hint:</em> for \(f = \sum_{n \leq N} a_n e_n\) and \(\psi
+        (a) =\mathbb{E}_{\nu} \mathrm{e}^{\mathrm{i} \varphi (f)}\), show
+        \(\sum_n \lambda_n a_n \partial_{a_n} \psi = - |a|^2 \psi\), and
+        differentiate \(s \mapsto \psi (\mathrm{e}^{sD} a) \exp (\frac{1}{2}
+        \sum_n a_n^2
+\mathrm{e}^{2 \lambda_n s} / \lambda_n)\), where \(D =
+        \text{diag} (\lambda_n)\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.11</class>.
+        </strong><class style="font-style: normal"><strong>(Reversibility) </strong></class>Use
+        Proposition <a href="#prop:inf-inv">3.18</a> to show that \(\mathcal{L}\) is
+        symmetric in \(L^2 (\mu_m)\). Deduce, and check directly from the
+        covariance in Theorem <a href="#thm:parabolic">3.19</a>(a), that the stationary
+        solution is time reversible: \((\Phi_{- t})_{t \in \mathbb{R}}\) and
+        \((\Phi_t)_{t \in \mathbb{R}}\) have the same law.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.12</class>.
+        </strong><class style="font-style: normal"><strong>(Mild implies weak) </strong></class><a
+        id="ex:weak"></a> Prove the weak formulation in Theorem <a href="#thm:parabolic">3.19</a>(b).
+        Show that, as a random distribution on \(\mathbb{R} \times
+        \mathcal{M}\), the stationary solution has covariance operator \(2 (-
+        \partial_t^2 + A^2)^{- 1}\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.13</class>.
+        </strong><class style="font-style: normal"><strong>(Slices of Gaussian fields)
+        </strong></class><a id="ex:slices"></a> Let \(k \geq 1\), \(p > k / 2\), and let
+        \(\Psi\) be the centred Gaussian field on \(\mathbb{R}^k \times
+        \mathcal{M}\) with covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\).
+        (a) Show that \(\Psi (0, \cdot)\) is well defined with covariance
+        \(c_{k, p} A^{k / 2 - p}\), \(c_{k, p} = \Gamma (p - \frac{k}{2}) /
+        ((4 \pi)^{k / 2} \Gamma (p))\). (b) For \((k, p) = (1, 1)\) and
+        \(\mathcal{M}= N\), show that the time-zero field of the GFF on
+        \(\mathbb{R} \times N\) is the ground state measure \(\Omega_0
+        (\varphi)^2 \mathcal{D} \varphi\) of the free Hamiltonian, i.e.
+        Gaussian with covariance \((2 \omega)^{- 1}\) (compare Exercise <a
+        href="cqft_notes_L1.html#ex:OU">2.2</a>). (c) Show that the restriction of the elliptic field of
+        Theorem <a href="#thm:elliptic">3.21</a> to a codimension-<em>one</em> slice
+        \(\mathbb{R} \times \mathcal{M}\) has covariance proportional to \((-
+        \partial^2 + A)^{- 3 / 2}\), so it is not a GFF. (d) Show that
+        \(\mathbb{E} [\Psi (z, f) \Psi (0, g)] = \langle f, |z|A^{- 1 / 2} K_1
+        (|z|A^{1
+/ 2}) g \rangle\) in Theorem <a href="#thm:elliptic">3.21</a>, and recover
+        \(\langle f, Cg \rangle\) as \(z \to 0\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.14</class>.
+        </strong><class style="font-style: normal"><strong>(Lattice approximation)
+        </strong></class><a id="ex:lattice-gff"></a> Let \(\mu_{\varepsilon}\) be the centred
+        Gaussian measure on \(\mathbb{R}^{(\varepsilon \mathbb{Z}/
+        L\mathbb{Z})^d}\) with covariance \((m^2 - \Delta_{\varepsilon})^{-
+        1}\) (with respect to \(\varepsilon^d  \sum_u\)), embedded in
+        \(\mathcal{S}' (\mathbb{T}^d_L)\) via \(\varphi (f) = \varepsilon^d
+        \sum_u \varphi_u f (u)\). Show that \(\mu_{\varepsilon} \to \mu_m\)
+        weakly. Relate \(\mu_{\varepsilon}\) to <a href="cqft_notes_L1.html#eq:spin-system">(2.12)</a> with \(V =
+        0\) (for \(d = 2\); in general \(d\) see Exercise <a href="cqft_notes_L1.html#ex:lattice-action">2.3</a>).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.15</class>.
+        </strong><class style="font-style: normal"><strong>(Computer experiments)
+        </strong></class>(a) Sample the lattice GFF of Exercise <a href="#ex:lattice-gff">3.14</a>
+        on \(\mathbb{T}^2\) with \(\varepsilon = 1 / N\) (i.e. on
+        \((\mathbb{Z}/ N\mathbb{Z})^2\) with mass \(m / N\) in lattice units)
+        by FFT, for \(N = 64, 256, 1024\), and check that the empirical
+        variance of \(\varphi_u\) grows like \(\frac{1}{2 \pi} \log N\). (b)
+        Implement an explicit Euler scheme for the lattice version of <class
+        style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> with \(V = 0\) (mind the stability
+        constraint \(\Delta t \lesssim \varepsilon^2\)), and check that the
+        variance of the \(k\)-th Fourier mode relaxes to \(\lambda_k^{- 1}\)
+        at rate \(2 \lambda_k\), with \(\lambda_k\) the eigenvalues of \(m^2 -
+        \Delta_{\varepsilon}\). (c) Add \(V' (\varphi) = 4 \lambda (\varphi^3
+        - 3 c_{\varepsilon} \varphi)\), i.e. \(V = \lambda : \varphi^4\):, and
+        observe that the solutions have a nontrivial limit as \(N \to
+        \infty\), while without the counterterm \(- 12 \lambda c_{\varepsilon}
+        \varphi\) they converge to zero [<a href="#bib-HRW12">HRW12</a>].</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.16</class>.
+        </strong><class style="font-style: normal"><strong>(Two masses) </strong></class><a id="ex:two-masses"></a>
+        In the setting of the example after Remark <a href="#rem:KL-euclid">3.7</a>: (a) Show
+        that \(\mu_{\rho}\) satisfies (OS0)&ndash;(OS4), and that the theory
+        described there has Schwinger functions equal to the moments of
+        \(\mu_{\rho}\). (b) Show that \([\varphi (0, \textbf{x}), \partial_t
+        \varphi (0, \textbf{y})] = \mathrm{i}
+(c_1^2 + c_2^2) \delta
+        (\textbf{x} - \textbf{y})\), and that \(\varphi (t, \cdot)\) is not a
+        linear function of \(\varphi (0, \cdot)\) and \(\partial_t \varphi (0,
+        \cdot)\). (c) Verify \(\mathbb{E} [D_{Rh} F] =\mathbb{E} [F \varphi
+        (Ph)]\). (d) For a single spatial Fourier mode \(\textbf{p}\) (on a
+        torus, say, with real test functions \(f (\tau, \textbf{x}) = g (\tau)
+        \cos (\textbf{p} \cdot \textbf{x})\)), with \(\omega_i^2 = |
+        \textbf{p} |^2 + m_i^2\), show that the time kernel of \(P^{- 1}\) is
+        \((\mathrm{e}^{- \omega_1 | \tau |} / 2 \omega_1 - \mathrm{e}^{-
+        \omega_2 | \tau
+|} / 2 \omega_2) / (m_2^2 - m_1^2)\), and find \(f\)
+        supported in \(\{\tau > 0\}\) with \(\langle \Theta f, P^{- 1} f
+        \rangle < 0\). <em>Hint:</em> choose \(g\) with \(\int_0^{\infty}
+        \mathrm{e}^{- \omega_1 \tau} g (\tau) \mathrm{d} \tau = 0\). (e) Let
+        \(p\) be a real polynomial of degree \(\geq 2\), positive on \([0,
+        \infty)\). Show that \(1 / p (|k|^2)\) is not of the form \(\int \rho
+        (\mathrm{d} M^2)  (|k|^2 + M^2)^{- 1}\) with \(\rho \geq 0\).
+        <em>Hint:</em> \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\)
+        increases to \(\rho ([0, \infty))\) as \(s \to \infty\) (monotone
+        convergence), while \(s / p (s) \to 0\).</font>
+      </p>
+    </div>
+    <h2 id="auto-19">References and further reading<span style="margin-left: 1em"></span></h2>
+    <p>
+      <div style="display: inline">
+        <a id="auto-20"></a>
+      </div>
+      <h5>Guide.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        <em>Gaussian fields and Wick calculus:</em> [<a href="#bib-GV64">GV64</a>, <a
+        href="#bib-Bog98">Bog98</a>, <a href="#bib-Jan97">Jan97</a>, <a href="#bib-She07">She07</a>, <a href="#bib-LSSW16">LSSW16</a>,
+        <a href="#bib-BP25">BP25</a>]. <em>Nonexistence of Wick powers beyond \(L^2\) and
+        chaos inequalities:</em> [<a href="#bib-AL07">AL07</a>, <a href="#bib-PZ32">PZ32</a>, <a
+        href="#bib-CW01">CW01</a>, <a href="#bib-NP05">NP05</a>, <a href="#bib-AZ96">AZ96</a>]. <em>Euclidean
+        free field and Markov property:</em> [<a href="#bib-Sym66">Sym66</a>, <a href="#bib-Sym69">Sym69</a>,
+        <a href="#bib-Nel73a">Nel73a</a>, <a href="#bib-Nel73b">Nel73b</a>, <a href="#bib-GRS75">GRS75</a>, <a href="#bib-GJ87">GJ87</a>,
+        <a href="#bib-Sim74">Sim74</a>, <a href="#bib-Gue06">Gue06</a>]. <em>Path and loop
+        representations:</em> [<a href="#bib-Sym69">Sym69</a>, <a href="#bib-BFS82">BFS82</a>, <a
+        href="#bib-Dyn84">Dyn84</a>, <a href="#bib-LW04">LW04</a>, <a href="#bib-LJ10">LJ10</a>, <a href="#bib-LJ11">LJ11</a>,
+        <a href="#bib-Lup16">Lup16</a>, <a href="#bib-Wer16">Wer16</a>, <a href="#bib-QW19">QW19</a>, <a href="#bib-WP21">WP21</a>].
+        <em>Stochastic quantisation:</em> reviews [<a href="#bib-DH87">DH87</a>, <a href="#bib-DH88">DH88</a>,
+        <a href="#bib-Gub25">Gub25</a>]; parabolic [<a href="#bib-PW81">PW81</a>, <a href="#bib-JLM85">JLM85</a>,
+        <a href="#bib-AR91">AR91</a>, <a href="#bib-DPD03">DPD03</a>, <a href="#bib-DPZ14">DPZ14</a>]; singular
+        SPDEs [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a href="#bib-CC18">CC18</a>, <a
+        href="#bib-MW17">MW17</a>, <a href="#bib-HRW12">HRW12</a>]; construction of \(\Phi^4_3\) via
+        dynamics and variational methods [<a href="#bib-GH21">GH21</a>, <a href="#bib-BG20">BG20</a>];
+        Euclidean field equations and DS equations for \(P (\varphi)_2\) [<a
+        href="#bib-DG74">DG74</a>, <a href="#bib-AR91">AR91</a>], for \(\Phi^4_3\) [<a href="#bib-FR77">FR77</a>,
+        <a href="#bib-ALZ06">ALZ06</a>, <a href="#bib-GH21">GH21</a>], and for the exponential model
+        in \(d = 2\) [<a href="#bib-DGT22">DGT22</a>]; operator product expansion and
+        composite operators [<a href="#bib-Wil69">Wil69</a>, <a href="#bib-Zim73">Zim73</a>, <a href="#bib-Sch74">Sch74</a>,
+        <a href="#bib-HK12">HK12</a>]; elliptic stochastic quantisation and dimensional
+        reduction [<a href="#bib-PS79">PS79</a>, <a href="#bib-KLP84">KLP84</a>, <a href="#bib-ADG20">ADG20</a>,
+        <a href="#bib-ADG21">ADG21</a>, <a href="#bib-GH19">GH19</a>].
+      </div>
+    </p>
+    <p>
+
+    </p>
+    <dl>
+      <p>
+        <dt>
+          <strong>[ADG20]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-ADG20"></a>S. Albeverio, F.<span style="margin-left: 0.17em"></span>C. De Vecchi, M.
+            Gubinelli. Elliptic stochastic quantization. <em>Ann. Probab.</em>
+            48 (2020), 1693&ndash;1741.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[ADG21]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-ADG21"></a>S. Albeverio, F.<span style="margin-left: 0.17em"></span>C. De Vecchi, M.
+            Gubinelli. The elliptic stochastic quantization of some two
+            dimensional Euclidean QFTs. <em>Ann. Inst. Henri Poincar&eacute;
+            Probab. Stat.</em> 57 (2021), 2372&ndash;2414.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[AL07]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-AL07"></a>S. Albeverio, S. Liang. A note on the renormalized
+            square of free quantum fields in space-time dimension \(d \geq
+            4\). <em>Bull. Sci. Math.</em> 131 (2007), 1&ndash;11.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[ALZ06]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-ALZ06"></a>S. Albeverio, S. Liang, B. Zegarlinski. Remark on the
+            integration by parts formula for the \(\varphi^4_3\)-quantum field
+            model. <em>Infin. Dimens. Anal. Quantum Probab. Relat. Top.</em> 9
+            (2006), 149&ndash;154.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[AR91]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-AR91"></a>S. Albeverio, M. R&ouml;ckner. Stochastic differential
+            equations in infinite dimensions: solutions via Dirichlet forms.
+            <em>Probab. Theory Related Fields</em> 89 (1991), 347&ndash;386.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[AZ96]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-AZ96"></a>S. Albeverio, X.<span style="margin-left: 0.17em"></span>Y. Zhou. A central
+            limit theorem for the fourth Wick power of the free lattice field.
+            <em>Comm. Math. Phys.</em> 181 (1996), 1&ndash;10.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BFS82]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BFS82"></a>D. Brydges, J. Fr&ouml;hlich, T. Spencer. The random
+            walk representation of classical spin systems and correlation
+            inequalities. <em>Comm. Math. Phys.</em> 83 (1982), 123&ndash;150.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BG20]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BG20"></a>N. Barashkov, M. Gubinelli. A variational method for
+            \(\Phi^4_3\). <em>Duke Math. J.</em> 169 (2020), 3339&ndash;3415.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Bog98]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Bog98"></a>V.<span style="margin-left: 0.17em"></span>I. Bogachev. <em>Gaussian
+            Measures</em>. Amer. Math. Soc., 1998.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BP25]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BP25"></a>N. Berestycki, E. Powell. <em>Gaussian Free Field and
+            Liouville Quantum Gravity</em>. Cambridge University Press, 2025.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BW86]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BW86"></a>D. Buchholz, E.<span style="margin-left: 0.17em"></span>H. Wichmann. Causal
+            independence and the energy-level density of states in local
+            quantum field theory. <em>Comm. Math. Phys.</em> 106 (1986),
+            321&ndash;344.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[CC18]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-CC18"></a>R. Catellier, K. Chouk. Paracontrolled distributions
+            and the 3-dimensional stochastic quantization equation. <em>Ann.
+            Probab.</em> 46 (2018), 2621&ndash;2679.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[CW01]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-CW01"></a>A. Carbery, J. Wright. Distributional and \(L^q\) norm
+            inequalities for polynomials over convex bodies in
+            \(\mathbb{R}^n\). <em>Math. Res. Lett.</em> 8 (2001),
+            233&ndash;248.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DG74]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DG74"></a>J. Dimock, J. Glimm. Measures on Schwartz distribution
+            space and applications to \(P (\varphi)_2\) field theories.
+            <em>Adv. Math.</em> 12 (1974), 58&ndash;83.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DGT22]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DGT22"></a>F.<span style="margin-left: 0.17em"></span>C. De Vecchi, M. Gubinelli, M.
+            Turra. A singular integration by parts formula for the exponential
+            Euclidean QFT on the plane. Preprint, arXiv:2212.05584.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DH87]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DH87"></a>P.<span style="margin-left: 0.17em"></span>H. Damgaard, H. H&uuml;ffel.
+            Stochastic quantization. <em>Phys. Rep.</em> 152 (1987),
+            227&ndash;398.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DH88]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DH88"></a>P.<span style="margin-left: 0.17em"></span>H. Damgaard, H. H&uuml;ffel
+            (eds.). <em>Stochastic Quantization</em>. World Scientific, 1988.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DPD03]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DPD03"></a>G. Da Prato, A. Debussche. Strong solutions to the
+            stochastic quantization equations. <em>Ann. Probab.</em> 31
+            (2003), 1900&ndash;1916.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DPZ14]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DPZ14"></a>G. Da Prato, J. Zabczyk. <em>Stochastic Equations in
+            Infinite Dimensions</em>, 2nd ed. Cambridge University Press,
+            2014.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Dyn84]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Dyn84"></a>E.<span style="margin-left: 0.17em"></span>B. Dynkin. Gaussian and
+            non-Gaussian random fields associated with Markov processes.
+            <em>J. Funct. Anal.</em> 55 (1984), 344&ndash;376.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[FR77]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-FR77"></a>J.<span style="margin-left: 0.17em"></span>S. Feldman, R. R&#x0105;czka. The
+            relativistic field equation of the \(\lambda \varphi^4_3\) quantum
+            field theory. <em>Ann. Physics</em> 108 (1977), 212&ndash;229.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GH19]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GH19"></a>M. Gubinelli, M. Hofmanov&aacute;. Global solutions to
+            elliptic and parabolic \(\Phi^4\) models in Euclidean space.
+            <em>Comm. Math. Phys.</em> 368 (2019), 1201&ndash;1266.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GH21]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GH21"></a>M. Gubinelli, M. Hofmanov&aacute;. A PDE construction
+            of the Euclidean \(\Phi^4_3\) quantum field theory. <em>Comm.
+            Math. Phys.</em> 384 (2021), 1&ndash;75.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GIP15]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GIP15"></a>M. Gubinelli, P. Imkeller, N. Perkowski. Paracontrolled
+            distributions and singular PDEs. <em>Forum Math. Pi</em> 3 (2015),
+            e6.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GJ87]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GJ87"></a>J. Glimm, A. Jaffe. <em>Quantum Physics: A Functional
+            Integral Point of View</em>, 2nd ed. Springer, 1987.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GRS75]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GRS75"></a>F. Guerra, L. Rosen, B. Simon. The \(P (\varphi)_2\)
+            Euclidean quantum field theory as classical statistical mechanics.
+            I, II. <em>Ann. of Math.</em> 101 (1975), 111&ndash;189 and
+            191&ndash;259.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Gub25]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Gub25"></a>M. Gubinelli. Stochastic quantisation. In
+            <em>Encyclopedia of Mathematical Physics</em>, 2nd ed., Academic
+            Press, 2025, 648&ndash;667.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Gue06]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Gue06"></a>F. Guerra. Euclidean field theory. In <em>Encyclopedia
+            of Mathematical Physics</em>, vol. 2, Academic Press, 2006,
+            256&ndash;265.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GV64]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GV64"></a>I.<span style="margin-left: 0.17em"></span>M. Gel'fand, N.<span style="margin-left: 0.17em"></span>Ya.
+            Vilenkin. <em>Generalized Functions, Vol. 4: Applications of
+            Harmonic Analysis</em>. Academic Press, 1964.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Haa96]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Haa96"></a>R. Haag. <em>Local Quantum Physics</em>, 2nd ed.
+            Springer, 1996.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Hai14]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Hai14"></a>M. Hairer. A theory of regularity structures.
+            <em>Invent. Math.</em> 198 (2014), 269&ndash;504.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[HK12]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-HK12"></a>S. Hollands, C. Kopper. The operator product expansion
+            converges in perturbative field theory. <em>Comm. Math. Phys.</em>
+            313 (2012), 257&ndash;290.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[HRW12]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-HRW12"></a>M. Hairer, M.<span style="margin-left: 0.17em"></span>D. Ryser, H. Weber.
+            Triviality of the 2D stochastic Allen&ndash;Cahn equation.
+            <em>Electron. J. Probab.</em> 17 (2012), no. 39.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[HSw65]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-HSw65"></a>R. Haag, J.<span style="margin-left: 0.17em"></span>A. Swieca. When does a
+            quantum field theory describe particles? <em>Comm. Math.
+            Phys.</em> 1 (1965), 308&ndash;320.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Jan97]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Jan97"></a>S. Janson. <em>Gaussian Hilbert Spaces</em>. Cambridge
+            University Press, 1997.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[JLM85]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-JLM85"></a>G. Jona-Lasinio, P.<span style="margin-left: 0.17em"></span>K. Mitter. On
+            the stochastic quantization of field theory. <em>Comm. Math.
+            Phys.</em> 101 (1985), 409&ndash;436.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[KLP84]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-KLP84"></a>A. Klein, L.<span style="margin-left: 0.17em"></span>J. Landau, J.<span
+            style="margin-left: 0.17em"></span>F. Perez. Supersymmetry and the Parisi&ndash;Sourlas
+            dimensional reduction: a rigorous proof. <em>Comm. Math.
+            Phys.</em> 94 (1984), 459&ndash;482.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[LJ10]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-LJ10"></a>Y. Le Jan. Markov loops and renormalization. <em>Ann.
+            Probab.</em> 38 (2010), 1280&ndash;1319.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[LJ11]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-LJ11"></a>Y. Le Jan. <em>Markov Paths, Loops and Fields</em>.
+            Lecture Notes in Math. 2026, Springer, 2011.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[LSSW16]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-LSSW16"></a>A. Lodhia, S. Sheffield, X. Sun, S.<span style="margin-left: 0.17em"></span>S.
+            Watson. Fractional Gaussian fields: a survey. <em>Probab.
+            Surveys</em> 13 (2016), 1&ndash;56.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Lup16]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Lup16"></a>T. Lupu. From loop clusters and random interlacements
+            to the free field. <em>Ann. Probab.</em> 44 (2016),
+            2117&ndash;2146.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[LW04]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-LW04"></a>G.<span style="margin-left: 0.17em"></span>F. Lawler, W. Werner. The
+            Brownian loop soup. <em>Probab. Theory Related Fields</em> 128
+            (2004), 565&ndash;588.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[LW69]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-LW69"></a>T.<span style="margin-left: 0.17em"></span>D. Lee, G.<span style="margin-left: 0.17em"></span>C.
+            Wick. Negative metric and the unitarity of the \(S\)-matrix.
+            <em>Nuclear Phys. B</em> 9 (1969), 209&ndash;243.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[MW17]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-MW17"></a>J.-C. Mourrat, H. Weber. The dynamic \(\Phi^4_3\) model
+            comes down from infinity. <em>Comm. Math. Phys.</em> 356 (2017),
+            673&ndash;753.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Nel66]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Nel66"></a>E. Nelson. A quartic interaction in two dimensions. In
+            <em>Mathematical Theory of Elementary Particles</em>, MIT Press,
+            1966, 69&ndash;73.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Nel73a]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Nel73a"></a>E. Nelson. The free Markoff field. <em>J. Funct.
+            Anal.</em> 12 (1973), 211&ndash;227.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Nel73b]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Nel73b"></a>E. Nelson. Construction of quantum fields from Markoff
+            fields. <em>J. Funct. Anal.</em> 12 (1973), 97&ndash;112.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[NP05]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-NP05"></a>D. Nualart, G. Peccati. Central limit theorems for
+            sequences of multiple stochastic integrals. <em>Ann. Probab.</em>
+            33 (2005), 177&ndash;193.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PS79]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PS79"></a>G. Parisi, N. Sourlas. Random magnetic fields,
+            supersymmetry, and negative dimensions. <em>Phys. Rev. Lett.</em>
+            43 (1979), 744&ndash;745.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PU50]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PU50"></a>A. Pais, G.<span style="margin-left: 0.17em"></span>E. Uhlenbeck. On field
+            theories with non-localized action. <em>Phys. Rev.</em> 79 (1950),
+            145&ndash;165.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PW81]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PW81"></a>G. Parisi, Y.-S. Wu. Perturbation theory without gauge
+            fixing. <em>Sci. Sinica</em> 24 (1981), 483&ndash;496.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PZ32]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PZ32"></a>R.<span style="margin-left: 0.17em"></span>E.<span style="margin-left: 0.17em"></span>A.<span
+            style="margin-left: 0.17em"></span>C. Paley, A. Zygmund. A note on analytic functions
+            in the unit circle. <em>Proc. Cambridge Philos. Soc.</em> 28
+            (1932), 266&ndash;272.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[QW19]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-QW19"></a>W. Qian, W. Werner. Decomposition of Brownian loop-soup
+            clusters. <em>J. Eur. Math. Soc.</em> 21 (2019), 3225&ndash;3253.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Roz82]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Roz82"></a>Yu.<span style="margin-left: 0.17em"></span>A. Rozanov. <em>Markov Random
+            Fields</em>. Springer, 1982.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Sch74]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Sch74"></a>R. Schrader. Local operator products and field
+            equations in \(P (\varphi)_2\) theories. <em>Fortschr. Phys.</em>
+            22 (1974), 611&ndash;631.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[She07]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-She07"></a>S. Sheffield. Gaussian free fields for mathematicians.
+            <em>Probab. Theory Related Fields</em> 139 (2007), 521&ndash;541.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Sim74]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Sim74"></a>B. Simon. <em>The \(P (\varphi)_2\) Euclidean (Quantum)
+            Field Theory</em>. Princeton University Press, 1974.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Sym66]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Sym66"></a>K. Symanzik. Euclidean quantum field theory. I.
+            Equations for a scalar model. <em>J. Math. Phys.</em> 7 (1966),
+            510&ndash;525.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Sym69]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Sym69"></a>K. Symanzik. Euclidean quantum field theory. In
+            <em>Local Quantum Theory</em> (R. Jost, ed.), Proc. Int. School of
+            Physics &ldquo;Enrico Fermi&rdquo; 45, Academic Press, 1969,
+            152&ndash;226.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Wer16]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Wer16"></a>W. Werner. On the spatial Markov property of soups of
+            unoriented and oriented loops. In <em>S&eacute;minaire de
+            Probabilit&eacute;s XLVIII</em>, Lecture Notes in Math. 2168,
+            Springer, 2016, 481&ndash;503.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Wil69]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Wil69"></a>K.<span style="margin-left: 0.17em"></span>G. Wilson. Non-Lagrangian models
+            of current algebra. <em>Phys. Rev.</em> 179 (1969),
+            1499&ndash;1512.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[WP21]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-WP21"></a>W. Werner, E. Powell. <em>Lecture Notes on the Gaussian
+            Free Field</em>. Cours Sp&eacute;cialis&eacute;s 28, Soc. Math.
+            France, 2021; arXiv:2004.04720.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Zim73]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Zim73"></a>W. Zimmermann. Normal products and the short distance
+            expansion in the perturbation theory of renormalizable
+            interactions. <em>Ann. Physics</em> 77 (1973), 570&ndash;601.
+          </p>
+        </dd>
+      </p>
+    </dl>
+  </body>
+</html>

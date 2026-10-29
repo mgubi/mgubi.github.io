@@ -279,9 +279,55 @@ def modernize_markup(text: str) -> str:
     return re.sub(r"[ \t]+(?=\n)", "", text)
 
 
+def restore_course_equation_anchors(text: str, source: Path) -> str:
+    """MathJax export drops labels inside equations but retains their numbers.
+
+    Recover anchors from native reference metadata, preferring the freshly
+    exported link text for local references. Never rewrite equation content.
+    """
+    labels = dict(re.findall(rb'<associate\|(eq:[^|<>]+)\|<tuple\|([\d.]+)\|', source.read_bytes()))
+    labels = {key.decode('ascii'): value.decode('ascii') for key, value in labels.items()}
+    for match in ANCHOR.finditer(text):
+        href = HREF.search(match['attrs'])
+        number = plain_text(match['body'])
+        if href and href[1].startswith('#eq:') and re.fullmatch(r'\d+(?:\.\d+)*', number):
+            labels[unescape(href[1][1:])] = number
+    existing = set(re.findall(r'\bid="([^"]+)"', text))
+    by_number: dict[str, list[str]] = {}
+    for label, number in labels.items():
+        if label not in existing:
+            by_number.setdefault(number, []).append(label)
+
+    def restore(match: re.Match[str]) -> str:
+        table = match[0]
+        number = re.search(r'<td\b[^>]*align="right"[^>]*>\s*\(([\d.]+)\)\s*</td>', table)
+        if not number:
+            return table
+        anchors = ''.join(f'<a id="{escape_attribute(label)}"></a>' for label in by_number.pop(number[1], []))
+        return anchors + table
+
+    return re.sub(r'<table\b[^>]*>.*?</table>', restore, text, flags=re.S)
+
+
 def initial_transform(path: Path) -> str:
     relative = path.relative_to(DOCS).as_posix()
     text = decode_export(path.read_bytes(), path)
+    material = re.fullmatch(r'teaching/sissa-2026/cqft_(notes_L|slides_L|lecture)([1-6])\.html', relative)
+    if material:
+        # Preserve TeXmacs' standalone presentation/TOC structure. In
+        # particular, legacy font wrappers are used by the supplied TOC CSS.
+        kind = 'slides' if material[1] == 'slides_L' else 'notes'
+        title = f'Constructive quantum field theory — Lecture {material[2]} ({kind})'
+        text = restore_course_equation_anchors(text, ROOT / 'src' / Path(relative).with_suffix('.tm'))
+        text = re.sub(r'\s*<link rel="stylesheet" href="/resources/sissa-materials.css">', '', text)
+        text = modernize_head(text, relative, title)
+        text = modernize_images(text, title, relative)
+        if 'href="/resources/sissa-materials.css"' not in text:
+            text = text.replace('  </head>', '    <link rel="stylesheet" href="/resources/sissa-materials.css">\n  </head>', 1)
+        if 'class="cqft-page-title"' not in text:
+            text = text.replace('<body>', '<body>\n    <h1 class="cqft-page-title">' + escape_attribute(title) + '</h1>\n    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>', 1)
+        text = re.sub(r'</(?:meta|link|img)>', '', text)
+        return re.sub(r'[ \t]+(?=\n)', '', text)
     title = page_title(text, relative)
     text = modernize_head(text, relative, title)
     text = modernize_images(text, title, relative)

@@ -15,6 +15,27 @@
 (use-modules (ice-9 popen)) ;; for open-pipe*
 (use-modules (ice-9 rdelim)) ;; for read-line
 
+(use-modules (doc tmweb))
+
+;; The SISSA materials have their own reading/presentation styles and use
+;; MathJax, like the author's standalone exports. Keep this choice local to
+;; these documents instead of changing the export of the rest of the site.
+(tm-define (tmweb-convert-file tm-file html-file)
+  (:require (string-occurs? "/sissa-2026/" (url->system tm-file)))
+  (let ((saved-mathjax (get-preference "texmacs->html:mathjax"))
+        (saved-mathml (get-preference "texmacs->html:mathml")))
+    (dynamic-wind
+      (lambda ()
+        (set-preference "texmacs->html:mathjax" "on")
+        (set-preference "texmacs->html:mathml" "off"))
+      (lambda ()
+        (with-aux tm-file
+          (set! current-save-target html-file)
+          (export-buffer-main (current-buffer) html-file "html" (list :overwrite))))
+      (lambda ()
+        (set-preference "texmacs->html:mathjax" saved-mathjax)
+        (set-preference "texmacs->html:mathml" saved-mathml)))))
+
 ;; TODO:
 ;; * improve conversion of strings (spurious <concat> elements in atom output)
 
@@ -88,7 +109,9 @@
     (lambda (furl)
         (let ((fname (url->string (url-delta (url-append dir "./") furl)))) 
           (not (or (equal? fname "main.tm") 
-                   (equal? fname "list-articles.tm")))))
+                   (equal? fname "list-articles.tm")
+                   ;; Course supplements are linked from their course page.
+                   (string-starts? fname "teaching/sissa-2026/")))))
     (map system->url
          (command-lines "find" (url->system dir) "-type" "f"
                         "-name" "*.tm" "-print")))))

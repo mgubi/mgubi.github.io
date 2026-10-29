@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 5 (notes) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
+    <link href="cqft-notes.css" type="text/css" rel="stylesheet">
+    <script src="cqft-notes.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 5 (notes), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_lecture5.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+    <link rel="stylesheet" href="/resources/sissa-materials.css">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 5 (notes)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>A Constructive Introduction to Quantum
+            Field Theory</strong></font></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 129.7%"><strong>Lecture 5: \(\Phi^4_3\) on the torus II.
+            A priori estimates for the forward&ndash;backward
+            system</strong></font></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+          <table class="title-block">
+            <tr>
+              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        <class style="font-variant: small-caps">by M. Gubinelli</class>
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        Mathematical Institute, University of Oxford
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i>November 2026 <class style="font-family: Times New Roman">&mdash;</class>
+            <em>draft</em></i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <div style="margin-top: 2em; margin-bottom: 0.5em; margin-left: 60px; margin-right: 60px">
+      <p style="margin-bottom: 0.5em">
+        <font style="font-size: 84.1%"><strong>Abstract</strong></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
+      <p>
+        <font style="font-size: 84.1%">We prove the central estimate of the construction:
+        bounds, uniform in the lattice, on the error \(Z\) of the approximate
+        forecast and on the time the forecast spends at large fields. The two
+        halves of the FBSDE of Lecture 4 give two inequalities, neither of
+        which closes alone. The forward equation, rewritten as a cubic
+        elliptic equation with memory, is coercive: a convex threshold test
+        bounds the weighted large-field action by Gaussian tails and by the
+        backward energy. The backward equation is linear in \(Z\): a
+        conditional representation formula bounds the backward energy by an
+        integrable bounded-field source, a boundary term, and a <em>small</em>
+        multiple of the large-field action. The small coefficient is \(C
+        \gamma^2 / q_0\), independent of the lattice and of the moment order,
+        so one choice of \(q_0\) closes the loop. The clipping error of
+        Lecture 4 is controlled exactly in this way. We give complete proofs
+        in the scalar (one-site) model, where all the mechanisms are visible
+        with explicit constants, and indicate the changes needed on the
+        lattice.</font>
+      </p>
+    </div>
+    <div class="cqft-toc">
+      <div class="cqft-toc-title">
+        Contents
+      </div>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">2</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">How a priori estimates for FBSDEs are usually obtained.
+        <span style="margin-left: 5mm"></span> <a href="#auto-2">2</a></font>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>14<span style="margin-left: 1em"></span>The energies</b> <span style="margin-left: 5mm"></span> <a
+        href="#auto-3">2</a>
+      </p>
+      <p>
+        14.1<span style="margin-left: 1em"></span>Moments at fixed cutoff <span style="margin-left: 5mm"></span>
+        <a href="#auto-4">2</a>
+      </p>
+      <p>
+        14.2<span style="margin-left: 1em"></span>Subtracting the Gaussian part <span style="margin-left: 5mm"></span>
+        <a href="#auto-5">3</a>
+      </p>
+      <p>
+        14.3<span style="margin-left: 1em"></span>Thresholds and energies <span style="margin-left: 5mm"></span>
+        <a href="#auto-6">3</a>
+      </p>
+      <p>
+        14.4<span style="margin-left: 1em"></span>Two Hardy inequalities <span style="margin-left: 5mm"></span> <a
+        href="#auto-7">4</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-8">4</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>15<span style="margin-left: 1em"></span>Forward coercivity</b> <span style="margin-left: 5mm"></span>
+        <a href="#auto-9">4</a>
+      </p>
+      <p>
+        15.1<span style="margin-left: 1em"></span>The scalar model <span style="margin-left: 5mm"></span> <a href="#auto-10">4</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">What the scalar lemma says. <span style="margin-left: 5mm"></span> <a href="#auto-11">6</a></font>
+      </p>
+      <p>
+        15.2<span style="margin-left: 1em"></span>The lattice version <span style="margin-left: 5mm"></span> <a
+        href="#auto-12">6</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-13">7</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>16<span style="margin-left: 1em"></span>Backward feedback and closure</b> <span
+        style="margin-left: 5mm"></span> <a href="#auto-14">7</a>
+      </p>
+      <p>
+        16.1<span style="margin-left: 1em"></span>The backward representation <span style="margin-left: 5mm"></span>
+        <a href="#auto-15">7</a>
+      </p>
+      <p>
+        16.2<span style="margin-left: 1em"></span>Three contributions <span style="margin-left: 5mm"></span> <a
+        href="#auto-16">7</a>
+      </p>
+      <p>
+        16.3<span style="margin-left: 1em"></span>Closing the loop <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a>
+      </p>
+      <p>
+        16.4<span style="margin-left: 1em"></span>Consequences <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-19">9</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-20">9</a>
+      </p>
+    </div>
+    <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
+    <p>
+      At the end of Lecture 4 we had, at each lattice cutoff \(N\), the exact
+      system (Theorem <a href="cqft_lecture4.html#thm:YZ">11.6</a>)
+    </p>
+    <a id="eq:YZ"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \
+
+\begin{equationsbase}
+
+        \mathrm{d} Y_q & = [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q
+        (Y_q)
+  \hspace{0.17em} \mathrm{d} W_q,\\
+  \mathrm{d} Z_q & = - [b_q
+        (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + \Xi_q
+  \hspace{0.17em}
+        \mathrm{d} W_q,
+\end{equationsbase}
+
+\qquad Y_{q_0} = Z_{q_0} =
+        0,\)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      where \(Y\) is the approximate forecast built from the explicit action
+      \(\bar{\Gamma}_q\), \(Z = \psi - Y\) is its error, and \(\psi = Y + Z\)
+      is the exact forecast, a martingale. The inputs from Lecture 4 are:
+    </p>
+    <ol>
+      <li>
+        <p>
+          <em>Global coercivity</em> (Lemma <a href="cqft_lecture4.html#lem:resolvent">13.1</a>): \(H_q (y)\) is
+          comparable to \((K_q + \gamma y^2)^{- 1}\) and \(\|H_q (y)\|_{p \to
+          p} \le (1 + \varepsilon_q) / q\), \(\varepsilon_q = C (g_q +
+          g_q^2)\).
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>The source</em> (Proposition <a href="cqft_lecture4.html#prop:source">13.2</a>): \(b =
+          b^{\text{b}} + b^{\text{l}}\) with \(\|b^{\text{b}}_q \|_{\infty}
+          \le C \gamma^{7 / 2} q^{- 5 / 2}\) and \(\|b^{\text{l}}_q (y)\|_2^2
+          \le C \gamma^4 q^{- 5} \|t_q (y)\|_6^6\), where \(t_q (y) = y
+          \mathbb{1}_{|y| > r_q}\).
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>The coordinate equation</em> <a href="cqft_lecture4.html#eq:coordinate">(13.5)</a>: \(K_q  (Y_q +
+          \varrho_q (Y_q)) + \frac{\gamma}{3} Y_q^3 = K_q \Phi_q = P_q\), with
+          a small Lipschitz correction, \(\|D \varrho_q \|_{p \to p} \le
+          \varepsilon_q\).
+        </p>
+      </li>
+    </ol>
+    <p>
+      The goal is to show that \(Z\) is small and that \(Y\) rarely visits
+      large fields, <em>uniformly in \(N\)</em>. This is UV stability. Neither
+      equation can be estimated alone: the forward equation contains \(Z\),
+      and the source of the backward equation is controlled by the large
+      fields of \(Y\).
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-2"></a>
+      </div>
+      <h5>How a priori estimates for FBSDEs are usually obtained.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        For an FBSDE with Lipschitz coefficients one estimates \(\mathbb{E}
+        \|Z_q \|^2\) by It&ocirc;'s formula and Gronwall, and closes either on
+        a short time interval or under a monotonicity condition [<a href="#bib-MY99">MY99</a>].
+        Here the time interval is infinite, the coefficients are not uniformly
+        Lipschitz in the relevant norms, and the coupling is not small in a
+        Lipschitz sense. What we have instead is structure:
+      </div>
+    </p>
+    <ul>
+      <li>
+        <p>
+          the backward equation is <em>linear</em> in \(Z\), given \(Y\), so
+          it can be solved by a conditional representation formula with an
+          explicit propagator;
+        </p>
+      </li>
+      <li>
+        <p>
+          the forward equation is, after subtracting the Gaussian part, a
+          cubic <em>elliptic</em> equation at each resolution, which is
+          coercive and can be estimated pathwise;
+        </p>
+      </li>
+      <li>
+        <p>
+          the two estimates are linked through two weighted energies whose
+          weights are matched.
+        </p>
+      </li>
+    </ul>
+    <p>
+
+    </p>
+    <h2 id="auto-3"><a id="sec:energies"></a>14<span style="margin-left: 1em"></span>The energies<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-4">14.1<span style="margin-left: 1em"></span>Moments at fixed cutoff<span style="margin-left: 1em"></span></h3>
+    <p>
+      All estimates below are first proved on a finite interval \([q_0, T]\)
+      and at fixed \(N\). There, everything is finite.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Lemma <class style="font-style: normal">14.1</class>. </strong><i><class style="font-style: normal"><strong>(Preliminary
+      moments) </strong></class><a id="lem:pre"></a> At fixed \(N\) and \(T\), the
+      maxima over \([q_0, T]\) of \(P, Y, \psi, Z\) have all moments, and so
+      does \(\int_{q_0}^T (\| \text{Cov}_q \|_{\text{HS}}^2 +\| \Xi_q
+      \|_{\text{HS}}^2)
+\mathrm{d} q\). Consequently the energies \(E_T\),
+      \(J_T\) and \(G_T\) defined below have all moments at fixed \(N,
+      T\).</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>\(P\) has all maximal moments, since \(\nu_N\)
+      has all moments. Global convexity, \(D^2  \bar{\Psi}_q \ge cq\) and \(D
+      \bar{\Psi}_q (0) = 0\), gives \(\|Y_q \| \le C \|P_q \| / q\). Doob's
+      inequality for the martingale \(\psi_q =\mathbb{E}_q \Phi_{\infty}\)
+      gives its maximal moments, and \(Z = \psi - Y\). For the integrands,
+      \(\| \text{Cov}_q \|_{\text{HS}} \le \text{TrCov}_q \le \mathbb{E}_q
+      \|
+\Phi_{\infty} \|^2\), and \(\|H_q (Y_q)\|_{\text{HS}} \le C
+      \sqrt{\dim H_N} / q\). The energies involve, besides \(Y\) and \(Z\),
+      the Gaussian field \(X\) and \(\varrho_q (Y_q)\); finite-dimensional
+      norm equivalence, \(\| \varrho_q (y)\| \le \varepsilon_q \|y\|\) and
+      Gaussian moments of \(X\) give their moments.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      These constants depend on \(N\) and \(T\). They are used only to justify
+      the absorptions below, never in the final bounds.
+    </p>
+    <h3 id="auto-5">14.2<span style="margin-left: 1em"></span>Subtracting the Gaussian part<span style="margin-left: 1em"></span></h3>
+    <p>
+      The Gaussian part of the forecast is the free field at resolution \(q\)
+      driven by the <em>same</em> innovation,
+    </p>
+    <a id="eq:X"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle X_q := \int_{q_0}^q C_s
+        \hspace{0.17em} \mathrm{d} W_s, \qquad \text{Law}
+(X_q) = \mu^{Q_q}
+        .\)</td>
+        <td align="right">(14.1)</td>
+      </tr>
+    </table>
+    <p>
+      This is the formula <a href="cqft_lecture3.html#eq:scale-GFF">(4.3)</a> of Lecture 3, but \(W\) is the
+      innovation of the interacting problem; \(X\) is a Gaussian process under
+      the interacting measure. Since \(\mathrm{d} (K_q X_q) = X_q
+      \hspace{0.17em} \mathrm{d} q + \mathrm{d} W_q\),
+    </p>
+    <a id="eq:KX"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle K_q X_q = W_q + \int_{q_0}^q X_s
+        \hspace{0.17em} \mathrm{d} s.\)</td>
+        <td align="right">(14.2)</td>
+      </tr>
+    </table>
+    <p>
+      On the other hand \(P_q = W_q + \int_{q_0}^q \psi_s \mathrm{d} s = W_q +
+      \int_{q_0}^q (Y_s + Z_s)
+\mathrm{d} s\). Insert this into the coordinate
+      equation (C) and subtract <class style="font-style: normal">(<a href="#eq:KX">14.2</a>)</class>.
+      With
+    </p>
+    <a id="eq:Vsharp"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle V_q := Y_q + \varrho_q (Y_q) - X_q,
+        \qquad F^Z_q := \int_{q_0}^q Z_s
+\hspace{0.17em} \mathrm{d} s,\)</td>
+        <td align="right">(14.3)</td>
+      </tr>
+    </table>
+    <p>
+      the noise \(W\) cancels (\(V_q\) is not to be confused with the
+      potentials \(V_t\), \(V_N\) of Lectures 3&ndash;4) and we obtain the
+      identity
+    </p>
+    <a id="eq:volterra"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle K_q V_q + \frac{\gamma}{3} Y_q^3 =
+        \int_{q_0}^q V_s \hspace{0.17em}
+\mathrm{d} s - \int_{q_0}^q \varrho_s
+        (Y_s) \hspace{0.17em} \mathrm{d} s +
+F^Z_q, \qquad Y_q = V_q + X_q -
+        \varrho_q (Y_q) .\)</td>
+        <td align="right">(14.4)</td>
+      </tr>
+    </table>
+    <p>
+      This is the equation we estimate. At each \(q\) it is the cubic elliptic
+      equation \((q - \Delta) V + \frac{\gamma}{3}  (V + X - \varrho)^3 = f\),
+      a nonlinear Helmholtz equation in which the Gaussian field \(X\) enters,
+      up to the small correction \(\varrho\), only as a shift inside the cube,
+      and the right side has a memory. Three remarks:
+    </p>
+    <ul>
+      <li>
+        <p>
+          the memory term has <em>coefficient one</em>: \(\int_{q_0}^q V_s
+          \mathrm{d} s\) is of the same size as the mass term \(qV_q\). It
+          cannot be treated as a forcing; it involves \(V\) itself, and the
+          estimate must absorb it;
+        </p>
+      </li>
+      <li>
+        <p>
+          the only trace of the backward equation is \(F^Z = \int Z\);
+        </p>
+      </li>
+      <li>
+        <p>
+          the identity is pathwise: no expectation has been taken.
+        </p>
+      </li>
+    </ul>
+    <h3 id="auto-6">14.3<span style="margin-left: 1em"></span>Thresholds and energies<span style="margin-left: 1em"></span></h3>
+    <p>
+      Define the signed excess of \(V\) over three quarters of the threshold,
+      the large-field part of \(Y\), and the large Gaussian values,
+    </p>
+    <a id="eq:thresholds"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle w_q = \text{sgn} (V_q)  \left( |V_q
+        | - \tfrac{3}{4} r_q \right)_+, \qquad
+t_q = Y_q  \mathbb{1}_{|Y_q | >
+        r_q}, \qquad \xi_q = X_q  \mathbb{1}_{|X_q | >
+r_q / 32},\)</td>
+        <td align="right">(14.5)</td>
+      </tr>
+    </table>
+    <p>
+      all pointwise in space, with \(r_q = (q / \gamma)^{1 / 2}\). The three
+      random energies are
+    </p>
+    <a id="eq:energies"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \
+
+\begin{equationsbase}
+  E_T & =
+        \frac{1}{\gamma}  \int_{q_0}^T q^{1 / 2} \|Z_q \|_2^2
+
+        \hspace{0.17em} \mathrm{d} q &  & \text{(backward energy)},\\
+  J_T &
+        = \int_{q_0}^T q^{- 3 / 2}  [q\|w_q \|_4^4 + \gamma \|w_q \|_6^6 +
+
+        \gamma \|t_q \|_6^6] \mathrm{d} q &  & \text{(large-field action)},\\
+
+        G_T & = \int_{q_0}^T [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3 /
+        2} \|
+  \xi_q \|_6^6] \mathrm{d} q &  & \text{(Gaussian tails)}
+        .
+\end{equationsbase}\)</td>
+        <td align="right">(14.6)</td>
+      </tr>
+    </table>
+    <p>
+      Only <em>thresholded</em> sixth powers are integrated over all scales:
+      \(\mathbb{E} \|X_q \|_6^6 \approx q^{3 / 2}\) for \(2 q_0 \le q \lesssim
+      N^2\), so the unthresholded Gaussian contribution to \(J\) would grow
+      like \(\gamma N^2\), not uniformly in \(N\). The weights are matched to
+      each other and to the source bounds:
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <font style="font-size: 84.0%"><table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">quantity</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">weight</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">reason</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">\(\|Z_q \|_2^2\)</td>
+            <td style="text-align: center; vertical-align: middle">\(q^{1 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle">Hardy: \(\int q^{- 3 / 2} \|F^Z \|^2 \le 16 \int q^{1 /
+            2} \|Z\|^2\)</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">\(\gamma \|t_q \|_6^6\)</td>
+            <td style="text-align: center; vertical-align: middle">\(q^{- 3 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle">source: \(q^{7 / 2} \|b^{\text{l}} \|^2 \le C \gamma^3
+            \cdot \gamma q^{- 3 / 2}
+\|t\|_6^6\)</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">\(\|b^{\text{l}}_q \|_2^2\)</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">\(q^{7 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">backward propagator \(s / q\) and \(\int_q^{\infty}
+            s^{- 3 / 2} \mathrm{d} s = 2 q^{- 1 / 2}\)</td>
+          </tr></tbody>
+        </table></font>
+      </p>
+    </center>
+    <h3 id="auto-7">14.4<span style="margin-left: 1em"></span>Two Hardy inequalities<span style="margin-left: 1em"></span></h3>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">14.2</class>. </strong><i><class style="font-style: normal"><strong>(Hardy)
+      </strong></class><a id="lem:hardy"></a> For \(f\) on \([q_0, \infty)\) with values
+      in a Banach space, extended by zero to \((0, q_0)\),</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><a id="eq:hardy"></a><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle \left| q^{- 1}  \int_0^q f_s
+          \hspace{0.17em} \mathrm{d} s \right|_{L^4 (q^{-
+1 / 2} \mathrm{d}
+          q)} \le \frac{8}{7} \|f\|_{L^4 (q^{- 1 / 2} \mathrm{d} q)},
+\qquad
+          \int_0^{\infty} q^{- 3 / 2} \left| \int_0^q f_s
+          \hspace{0.17em}
+\mathrm{d} s \right|^2 \mathrm{d} q \le 16
+          \int_0^{\infty} q^{1 / 2} \|f_q
+\|^2 \mathrm{d} q.\)</td>
+          <td align="right">(14.7)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>Write \(q^{- 1}  \int_0^q f_s \mathrm{d} s =
+      \int_0^1 f_{q \theta} \mathrm{d} \theta\) and apply Minkowski's
+      inequality. For the first bound, the substitution \(u = q \theta\) gives
+      \(\|f_{\cdot \theta} \|_{L^4 (q^{- 1 / 2} \mathrm{d} q)} = \theta^{- 1 /
+      8}
+\|f\|_{L^4 (q^{- 1 / 2} \mathrm{d} q)}\), and \(\int_0^1 \theta^{- 1
+      / 8} \mathrm{d} \theta = \frac{8}{7}\). For the second, the left side is
+      \(\|q^{- 1}  \int_0^q f\|^2_{L^2 (q^{1 / 2} \mathrm{d} q)}\),
+      \(\|f_{\cdot \theta} \|_{L^2 (q^{1 / 2} \mathrm{d} q)} = \theta^{- 3 /
+      4}
+\|f\|_{L^2 (q^{1 / 2} \mathrm{d} q)}\), and \((\int_0^1 \theta^{- 3 /
+      4} \mathrm{d} \theta)^2 = 16\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The first inequality will estimate the memory term of <class style="font-style: normal">(<a href="#eq:volterra">14.4</a>)</class>. Its constant \(\frac{8}{7}\) is <em>larger</em>
+      than one. Coercivity from the mass term alone, which has coefficient
+      one, would therefore not absorb the memory. The missing margin will come
+      from the cubic term: at large fields it adds \(\frac{1}{4} q |w|^4\) to
+      the mass, and \(1 + \frac{1}{4} - \frac{8}{7} = \frac{3}{28} > 0\).
+    </p>
+    <h3 id="auto-8">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.1</class>.
+        </strong><class style="font-style: normal"><strong>(Matched weights)
+        </strong></class>Check the three weights in the table. Show that the
+        forward estimate needs a weight at least \(q^{1 / 2}\) on \(\|Z\|^2\):
+        test the second Hardy inequality with weight \(q^{1 / 2 - \sigma}\),
+        \(\sigma > 0\), on \(f = \mathbb{1}_{[a, 2 a]}\), \(a \to \infty\).
+        Show that the backward estimate of Section <a href="#sec:backward">16</a> also holds
+        with weight \(q^{1 / 2 + \sigma}\) for \(0 < \sigma < \frac{1}{2}\).
+        Which term breaks at \(\sigma = \frac{1}{2}\), and how does the
+        feedback coefficient depend on \(\sigma\)?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.2</class>.
+        </strong><class style="font-style: normal"><strong>(Gaussian sixth powers)
+        </strong></class>Show that \(\mathbb{E} \|X_q \|_6^6 = 15 \left(
+        \int_{q_0}^q a_2 \right)^3 \le Cq^{3 / 2}\), and that it is \(\ge
+        cq^{3 / 2}\) for \(2 q_0 \le q \le N^2\). Show that \(\mathbb{E} \|
+        \xi_q \|_6^6 \le Cq^{3 / 2} \exp (- c \sqrt{q} / \gamma)\).</font>
+      </p>
+    </div>
+    <h2 id="auto-9"><a id="sec:forward"></a>15<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-10">15.1<span style="margin-left: 1em"></span>The scalar model<span style="margin-left: 1em"></span></h3>
+    <p>
+      On one site the Laplacian disappears. We also drop the small Lipschitz
+      correction \(\varrho\) (restored in Proposition <a href="#prop:forward">15.3</a>) and
+      allow an arbitrary continuous \(X\), thinking of one site of the
+      lattice, where \(\text{Var} X_q \approx \sqrt{q}\). Then <class style="font-style: normal">(<a href="#eq:volterra">14.4</a>)</class> becomes a scalar equation with memory. All the
+      mechanisms of the forward estimate are already present, and the
+      constants can be checked by hand.
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">15.1</class>. </strong><i><class style="font-style: normal"><strong>(Scalar
+      forward coercivity) </strong></class><a id="lem:scalar-forward"></a> Let \(\gamma > 0\),
+      \(q_0 < T\), let \(X, f : [q_0, T] \to \mathbb{R}\) be continuous, and
+      let \(v\) be continuous and solve</i>
+    </p>
+    <i><a id="eq:scalar"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle qv_q + \frac{\gamma}{3}  (v_q +
+        X_q)^3 = \int_{q_0}^q v_s \hspace{0.17em}
+\mathrm{d} s + f_q, \qquad q
+        \in [q_0, T] .\)</td>
+        <td align="right">(15.1)</td>
+      </tr>
+    </table></i>
+    <p>
+      <i>Define \(r_q\), \(w_q\), \(\xi_q\) as in <class style="font-style: normal">(<a href="#eq:thresholds">14.5</a>)</class>,
+      with \(V = v\). Then</i>
+    </p>
+    <i><a id="eq:scalar-forward"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \frac{3}{28}  \int_{q_0}^T q^{- 1 /
+        2} w_q^4 \hspace{0.17em} \mathrm{d} q +
+\frac{\gamma}{16}
+        \int_{q_0}^T q^{- 3 / 2} w_q^6 \hspace{0.17em} \mathrm{d} q
+\le
+        \frac{4225}{6} \gamma \int_{q_0}^T q^{- 3 / 2} \xi_q^6
+        \hspace{0.17em}
+\mathrm{d} q + \frac{12}{\gamma}  \int_{q_0}^T q^{- 3
+        / 2} f_q^2
+\hspace{0.17em} \mathrm{d} q.\)</td>
+        <td align="right">(15.2)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>Moreover the large-field part \(t_q = (v_q + X_q)  \mathbb{1}_{|v_q +
+      X_q | > r_q}\) satisfies \(|t_q | \le \frac{32}{7}  (|w_q | + | \xi_q
+      |)\).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong><em>Step 1: test with \(w^3\).</em> Multiply
+      <class style="font-style: normal">(<a href="#eq:scalar">15.1</a>)</class> by \(w_q^3\). We estimate the
+      four terms where \(w_q \ne 0\); there \(|v_q | = |w_q | + \frac{3}{4}
+      r_q\) and \(v_q, w_q\) have the same sign.
+    </p>
+    <p>
+      <em>Mass.</em> \(qv_q w_q^3 = q|w_q |^4 + \frac{3}{4} qr_q |w_q |^3\).
+    </p>
+    <p>
+      <em>Cube.</em> \(|X_q | \le \frac{r_q}{32} + | \xi_q |\), so
+      \(\text{sgn} (w_q)  (v_q + X_q) \ge |w_q | + \frac{23}{32} r_q - | \xi_q
+      | \ge
+|w_q | + \frac{11}{16} r_q - | \xi_q |\) (we give up
+      \(\frac{1}{32} r_q\) to leave room, on the lattice, for the shift \(\|
+      \varrho^0_q \|_{\infty} \le \varepsilon_q r_q\), \(\varepsilon_q \le
+      \frac{1}{32}\)). Since the cube is increasing (also if the right side is
+      negative),
+    </p>
+    <center>
+      \(\displaystyle \frac{\gamma}{3} w_q^3  (v_q + X_q)^3 \ge
+      \frac{\gamma}{3} |w_q |^3  \left(
+|w_q | + \frac{11}{16} r_q - | \xi_q |
+      \right)^3 \ge \frac{\gamma}{12} w_q^6 +
+\frac{q}{4} w_q^4 -
+      \frac{4225}{6} \gamma \xi_q^6,\)
+    </center>
+    <p>
+      by the elementary inequality <class style="font-style: normal">(<a href="#eq:elementary">15.3</a>)</class>
+      below and \(\gamma r_q^2 = q\). <em>This is the large-field coercivity:
+      at large fields the cube adds a sixth power and a quarter of the
+      mass.</em>
+    </p>
+    <p>
+      <em>Memory.</em> Since \(|v_s - w_s | \le \frac{3}{4} r_s\) and
+      \(\int_{q_0}^q r_s \mathrm{d} s \le \frac{2}{3} qr_q\),
+    </p>
+    <center>
+      \(\displaystyle w_q^3  \int_{q_0}^q v_s \hspace{0.17em} \mathrm{d} s \le
+      \frac{3}{4} \cdot
+\frac{2}{3}  \hspace{0.17em} qr_q |w_q |^3 + w_q^3
+      \int_{q_0}^q w_s
+\hspace{0.17em} \mathrm{d} s.\)
+    </center>
+    <p>
+      The first term, \(\frac{1}{2} qr_q |w_q |^3\), is absorbed by the second
+      mass term \(\frac{3}{4} qr_q |w_q |^3\); the leftover \(\frac{1}{4} qr_q
+      |w_q |^3 \ge 0\) is dropped here, and is used on the lattice to absorb
+      the memory of \(\varrho^0\).
+    </p>
+    <p>
+      <em>Forcing.</em> By Young's inequality \(w_q^3 f_q \le
+      \frac{\gamma}{48} w_q^6 + \frac{12}{\gamma} f_q^2\).
+    </p>
+    <p>
+      <em>Step 2: integrate.</em> Collecting, at every \(q\),
+    </p>
+    <center>
+      \(\displaystyle \frac{5}{4} q \hspace{0.17em} w_q^4 + \left(
+      \frac{\gamma}{12} -
+\frac{\gamma}{48} \right) w_q^6 \le w_q^3
+      \int_{q_0}^q w_s \hspace{0.17em}
+\mathrm{d} s + \frac{4225}{6} \gamma
+      \xi_q^6 + \frac{12}{\gamma} f_q^2 .\)
+    </center>
+    <p>
+      Multiply by \(q^{- 3 / 2}\) and integrate over \([q_0, T]\). With \(A =
+      \int_{q_0}^T q^{- 1 / 2} w_q^4 \mathrm{d} q\), H&ouml;lder and the first
+      Hardy inequality (with \(w\) extended by zero outside \([q_0, T]\)) give
+    </p>
+    <center>
+      \(\displaystyle \int_{q_0}^T q^{- 1 / 2} |w_q |^3  \left| q^{- 1}
+      \int_{q_0}^q w_s
+\hspace{0.17em} \mathrm{d} s \right| \mathrm{d} q \le
+      A^{3 / 4} \cdot
+\frac{8}{7} A^{1 / 4} = \frac{8}{7} A.\)
+    </center>
+    <p style="margin-bottom: 1em">
+      Since \(\frac{5}{4} - \frac{8}{7} = \frac{3}{28}\), <class style="font-style: normal">(<a href="#eq:scalar-forward">15.2</a>)</class> follows. For the last claim, \(|v + X| \le |w| +
+      \frac{3}{4} r + \frac{r}{32} + | \xi |\), so on \(\{|v + X| > r\}\) we
+      have \(\frac{7}{32}  |v + X| \le |v + X| - \frac{25}{32} r \le |w| + |
+      \xi |\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">15.2</class>. </strong><i><class style="font-style: normal"><strong>(Two
+      elementary inequalities) </strong></class>For \(x, \rho \ge 0\), \((x -
+      \rho)^3 \ge \frac{3}{4} x^3 - 65 \rho^3\). For \(u, \rho, r \ge 0\),</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><a id="eq:elementary"></a><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle \frac{1}{3} u^3  \left( u +
+          \frac{11}{16} r - \rho \right)^3 \ge \frac{1}{12}
+u^6 + \frac{1}{4}
+          r^2 u^4 - \frac{4225}{6} \rho^6 .\)</td>
+          <td align="right">(15.3)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>\(\frac{1}{4} x^3 + 64 \rho^3 - 3 x^2 \rho =
+      \frac{1}{4}  (x - 8 \rho)^2  (x + 4
+\rho) \ge 0\), so \((x - \rho)^3 \ge
+      x^3 - 3 x^2 \rho - \rho^3 \ge \frac{3}{4} x^3 - 65 \rho^3\). Apply it
+      with \(x = u + \frac{11}{16} r\): \(\frac{1}{3} u^3  (x - \rho)^3 \ge
+      \frac{1}{4} u^3 x^3 - \frac{65}{3} u^3
+\rho^3\), and \(u^3 x^3 \ge u^6 +
+      3 (\frac{11}{16})^2 r^2 u^4\) with \(\frac{3}{4} (\frac{11}{16})^2 =
+      \frac{363}{1024} > \frac{1}{4}\). Finally \(\frac{65}{3} u^3 \rho^3 \le
+      \frac{1}{6} u^6 + \frac{4225}{6} \rho^6\), since \(\frac{1}{6}  (u^3 -
+      65 \rho^3)^2 \ge 0\), and \(\frac{1}{4} - \frac{1}{6} =
+      \frac{1}{12}\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-11"></a>
+      </div>
+      <h5>What the scalar lemma says.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The excess of the forecast over the threshold is controlled by two
+        things only: how often the <em>Gaussian</em> field is large, which is
+        a known quantity (the Gaussian-tail functional \(G_T\), with \(\|G_T
+        \|_{L^p} \le C \gamma^3 p^5\) independently of \(N\)), exponentially
+        small at large \(q\), and the <em>backward</em> forcing \(f\). The
+        memory term, although of the same size as the mass term, is absorbed
+        thanks to the extra quartic damping supplied by the cube at large
+        fields. There is no smallness in the coupling: the estimate is uniform
+        in \(\gamma\) once the threshold scales like \(r_q = (q / \gamma)^{1 /
+        2}\). And it is pathwise.
+      </div>
+    </p>
+    <h3 id="auto-12">15.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">15.3</class>. </strong><i><class
+      style="font-style: normal"><strong>(Forward coercivity [<a href="#bib-FBSDE26">FBSDE26</a>])
+      </strong></class><a id="prop:forward"></a> For \(q_0\) large (depending on
+      \(\gamma\)), at every cutoff \(N\) and every \(T\), pathwise,</i>
+    </p>
+    <i><a id="eq:forward"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle J_T \le C \hspace{0.17em} (G_T +
+        E_T), \qquad \|G_T \|_{L^p (\mathbb{P})} \le
+C \gamma^3 p^5  \quad (p
+        \ge 1),\)</td>
+        <td align="right">(15.4)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proof: the changes from the scalar case. </strong>Test <class
+      style="font-style: normal">(<a href="#eq:volterra">14.4</a>)</class> with \(w_q^3\) in \(L^2 (\Lambda_N)\)
+      and proceed as in Lemma <a href="#lem:scalar-forward">15.1</a>, with H&ouml;lder's inequality
+      in space as well as in scale. Three new terms appear.
+    </p>
+    <p>
+      <em>The Laplacian.</em> \(\langle w^3, - \Delta_N V \rangle \ge 0\).
+      Indeed \(w^3 = \phi' (V)\) for the convex function \(\phi (v) =
+      \frac{1}{4}  (|v| - \frac{3}{4} r)_+^4\), and for any nondecreasing
+      \(\phi'\),
+    </p>
+    <center>
+      \(\displaystyle \langle \phi' (V), - \Delta_N V \rangle = N^{- 1}
+      \sum_{x \sim x'} (\phi' (V
+(x)) - \phi' (V (x')))  (V (x) - V (x')) \ge
+      0,\)
+    </center>
+    <p>
+      summing over unordered nearest-neighbour pairs. So the elliptic term
+      only helps.
+    </p>
+    <p>
+      <em>The coordinate correction.</em> Split \(\varrho_q (y) = \varrho^0_q
+      + \varrho^1_q\) according to \(|y| \le r_q\) or not (writing \(\varrho_q
+      (y) = \textsf{L}_q (y) y\) with \(\textsf{L}\) the averaged derivative).
+      Then \(\| \varrho^0_q \|_{\infty} \le \varepsilon_q r_q\) shifts the
+      threshold by a small amount, and \(\| \varrho^1_q \|_j \le \varepsilon_q
+      \|t_q \|_j\), \(j = 4, 6\). If \(\varepsilon_q \le \frac{1}{32}\), then
+      \(|Y| \le |w| + \frac{13}{16} r_q + | \xi | + | \varrho^1 |\); on
+      \(\{|Y| > r_q \}\) this gives \(\frac{3}{16} |Y| \le |w| + | \xi | + |
+      \varrho^1 |\), so \(\|t_q \|_j \le \frac{16}{3} (\|w_q \|_j +\| \xi_q
+      \|_j + \varepsilon_q \|t_q
+\|_j)\), and for small \(\varepsilon\)
+    </p>
+    <center>
+      \(\displaystyle \|t_q \|_j \le C (\|w_q \|_j +\| \xi_q \|_j), \qquad \|
+      \varrho^1_q \|_j \le C
+\varepsilon_q  (\|w_q \|_j +\| \xi_q \|_j) .\)
+    </center>
+    <p>
+      This also supplies the \(t\) part of \(J_T\). These are
+      <em>operator</em> bounds: \(\varrho\) is nonlocal, but small in every
+      \(L^p\). In the cube the error is \(\rho = | \xi | + | \varrho^1 |\),
+      and the cube error \(\frac{4225}{6} \gamma \| \rho \|_6^6\) is at most
+      \(C \gamma (\| \xi_q \|_6^6 + \varepsilon_q^6 \|w_q \|_6^6)\): the \(w\)
+      part is absorbed for small \(\varepsilon\), the \(\xi\) part goes into
+      \(G_T\). The memory of \(\varrho^0\) costs at most \(\frac{2}{3} (\sup_s
+      \varepsilon_s)  \hspace{0.17em} qr_q \|w_q \|_3^3\) and is absorbed by
+      the spare \(\frac{1}{4} qr_q \|w_q \|_3^3\) when \(\sup_s \varepsilon_s
+      < \frac{3}{8}\) (automatic, since \(\varepsilon \le \frac{1}{32}\)); the
+      memory of \(\varrho^1\) costs \(C \sup_q \varepsilon_q  \hspace{0.17em}
+      (A + G_T)\), with \(A = \int_{q_0}^T q^{- 1 / 2} \|w_q \|_4^4 \mathrm{d}
+      q\), by H&ouml;lder, Hardy and Young, and is absorbed by the spare
+      \(\frac{3}{28}\) if \(C \sup_q \varepsilon_q < \frac{3}{56}\); the
+      subtraction is legitimate because \(A < \infty\) pathwise at fixed \(N,
+      T\), by continuity on \([q_0, T]\). All are deterministic smallness
+      conditions on \(g_{q_0}\), independent of \(p\).
+    </p>
+    <p>
+      <em>The backward forcing.</em> \(| \langle w^3, F^Z \rangle | \le
+      \frac{\gamma}{48} \|w\|_6^6 +
+\frac{12}{\gamma} \|F^Z \|_2^2\), and by
+      the second Hardy inequality \(\gamma^{- 1}  \int q^{- 3 / 2} \|F^Z_q
+      \|_2^2 \mathrm{d} q \le 16
+\hspace{0.17em} E_T\).
+    </p>
+    <p>
+      <em>Gaussian tails.</em> \(X_q (x)\) is centred Gaussian with variance
+      \(\int_{q_0}^q a_2 \le C \sqrt{q}\), while the threshold is \(r_q / 32 =
+      \frac{1}{32}  (q / \gamma)^{1 / 2}\). By Minkowski's inequality in \(x\)
+      and translation invariance of \(\text{Law} (X_q)\), \(| \| \xi_q \|_j^j
+      |_{L^p (\mathbb{P})} \le | | \xi_q (0) |^j |_{L^p
+(\mathbb{P})}\), and
+      by H&ouml;lder, for \(j = 4, 6\),
+    </p>
+    <center>
+      \(\displaystyle | \| \xi_q \|_j^j |_{L^p (\mathbb{P})} \le
+      (\mathbb{E}|X_q (0) |^{2
+jp})^{\frac{1}{2 p}} \mathbb{P} (|X_q (0) | >
+      r_q / 32)^{\frac{1}{2 p}} \le
+C_j p^{j / 2} q^{j / 4} \mathrm{e}^{- c
+      \sqrt{q} / (p \gamma)},\)
+    </center>
+    <p style="margin-bottom: 1em">
+      and integrating in \(q\) with \(u = \sqrt{q} / (p \gamma)\) gives
+      \(\|G_T \|_p \le C \gamma^3 p^5\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      No information on the interacting field has been used, apart from the
+      equation itself: the Gaussian tails are tails of the free field \(X\),
+      which is Gaussian under the interacting measure because it is built from
+      the innovation.
+    </p>
+    <h3 id="auto-13">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.1</class>.
+        </strong><class style="font-style: normal"><strong>(Without the cube)
+        </strong></class>Replace \(\frac{\gamma}{3}  (v + X)^3\) by \(0\) in
+        <class style="font-style: normal">(<a href="#eq:scalar">15.1</a>)</class>, and show that the argument
+        fails: find \(v\) solving \(qv_q = \int_{q_0}^q v_s \mathrm{d} s +
+        f_q\) on \([q_0, \infty)\) with \(\int q^{- 1 / 2} v^4 = \infty\) for
+        \(f\) with \(\int q^{- 3 / 2} f^2 < \infty\) (try \(v\) constant).
+        Testing with \(v^3\) gives \((1 - \frac{8}{7})  \int q^{- 1 / 2} v^4
+        \le \ldots\), which is empty. What replaces the missing margin, and
+        the missing \(w^6\) term that absorbs the forcing, when the cube is
+        present?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.2</class>.
+        </strong><class style="font-style: normal"><strong>(Discrete convexity)
+        </strong></class>Prove that \(\langle \phi' (u), - \Delta_N u \rangle
+        \ge 0\) for every convex \(\phi \in C^1\) and \(u \in H_N\), and that
+        equality holds iff \(\phi' (u (x)) = \phi' (u (x'))\) on every edge
+        \(x \sim x'\) with \(u (x) \ne u (x')\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.3</class>.
+        </strong><class style="font-style: normal"><strong>(Simulation) </strong></class>Solve
+        <class style="font-style: normal">(<a href="#eq:scalar">15.1</a>)</class> numerically with \(X\) a
+        scalar Brownian motion run with clock \(\int_{q_0}^q s^{- 1 / 2}
+        \mathrm{d} s\) (the three-dimensional bubble \(a_2 (s) \approx s^{- 1
+        / 2}\)), e.g. \(\gamma = 1\), \(q_0 = 1\), \(T = 10^4\). With \(f =
+        0\) the solution typically stays below the threshold (it can cross
+        briefly at small \(q\), where \(|X_q |\) is comparable to \(r_q\)), so
+        the left side is zero or small; the right side does not, because at
+        these parameters \(g_{q_0} = 1\) is not small and \(|X_q | > r_q /
+        32\) on most scales. Add a forcing pulse \(f_q = \kappa
+        \hspace{0.17em} qr_q  \mathbb{1}_{[a, 2 a]} (q)\) with \(\kappa\) of
+        order one, so that \(v\) crosses \(\frac{3}{4} r_q\). Compare the left
+        side of <class style="font-style: normal">(<a href="#eq:scalar-forward">15.2</a>)</class> with its \(f\)-term
+        and its \(\xi\)-term separately, as functions of \(\kappa\) and \(a\);
+        then decrease \(\gamma\) (e.g. \(\gamma = 10^{- 2}\)) and observe the
+        \(\xi\)-term becoming negligible at large \(q\).</font>
+      </p>
+    </div>
+    <h2 id="auto-14"><a id="sec:backward"></a>16<span style="margin-left: 1em"></span>Backward feedback and
+    closure<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-15">16.1<span style="margin-left: 1em"></span>The backward representation<span style="margin-left: 1em"></span></h3>
+    <p>
+      The backward equation in <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class> is
+      linear in \(Z\). Its propagator is the adapted operator solution of
+    </p>
+    <a id="eq:propagator"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \partial_s  \mathscr{P}_{q, s} =
+        \mathscr{P}_{q, s} H_s (Y_s), \qquad
+\mathscr{P}_{q, q} = I, \qquad s
+        \ge q.\)</td>
+        <td align="right">(16.1)</td>
+      </tr>
+    </table>
+    <p>
+      By (A), \(\| \mathscr{P}_{q, s} \|_{2 \to 2} \le \exp \int_q^s \frac{1
+      +
+\varepsilon_u}{u} \mathrm{d} u \le L_0  \hspace{0.17em} \frac{s}{q}\),
+      with \(L_0 = \exp (\int_{q_0}^{\infty} \varepsilon_u  \frac{\mathrm{d}
+      u}{u}) \le
+\exp (C (g_{q_0} + g_{q_0}^2))\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Lemma <class style="font-style: normal">16.1</class>. </strong><i><class style="font-style: normal"><strong>(Conditional
+      representation) </strong></class><a id="lem:representation"></a> For \(q_0 \le q \le T\), at
+      fixed \(N\),</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><a id="eq:representation"></a><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle Z_q =\mathbb{E}_q  \left[
+          \mathscr{P}_{q, T} Z_T + \int_q^T \mathscr{P}_{q,
+s}
+          \hspace{0.17em} b_s (Y_s) \hspace{0.17em} \mathrm{d} s \right]
+          .\)</td>
+          <td align="right">(16.2)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>By the product rule and <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class>,
+      \(\mathrm{d}_s (\mathscr{P}_{q, s} Z_s) = \mathscr{P}_{q, s} H_s Z_s
+      \mathrm{d}
+s - \mathscr{P}_{q, s}  (b_s + H_s Z_s) \mathrm{d} s +
+      \mathscr{P}_{q, s}
+\Xi_s \mathrm{d} W_s = - \mathscr{P}_{q, s} b_s
+      \mathrm{d} s + \mathscr{P}_{q,
+s} \Xi_s \mathrm{d} W_s\). The stochastic
+      integral is a true martingale by Lemma <a href="#lem:pre">14.1</a> and the
+      deterministic bound on \(\mathscr{P}\). Integrate from \(q\) to \(T\)
+      and take \(\mathbb{E}_q\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      So \(Z\) is the expected source accumulated on the unresolved scales,
+      transported back to \(q\), plus the boundary error. This is the
+      conditional-expectation form of a backward equation, as in \(F_t
+      =\mathbb{E}_t [F_T]\) for the force (Theorem <a href="cqft_lecture3.html#thm:fbsde">5.4</a>); here the
+      source is the defect.
+    </p>
+    <h3 id="auto-16">16.2<span style="margin-left: 1em"></span>Three contributions<span style="margin-left: 1em"></span></h3>
+    <p>
+      Split \(Z = Z^{\text{t}} + Z^{\text{b}} + Z^{\text{l}}\) according to
+      the terminal term and the two parts of the source. We estimate each in
+      the scalar manner: norms of the propagator times norms of the source.
+    </p>
+    <p>
+      <em>Bounded fields.</em> By (B),
+    </p>
+    <center>
+      \(\displaystyle \|Z^{\text{b}}_q \|_2 \le \int_q^{\infty} L_0
+      \frac{s}{q}  \hspace{0.17em} C
+\gamma^{7 / 2} s^{- 5 / 2}
+      \hspace{0.17em} \mathrm{d} s = 2 L_0 C \gamma^{7 /
+2} q^{- 3 / 2},
+      \qquad \frac{1}{\gamma}  \int_{q_0}^{\infty} q^{1 / 2}
+\|Z^{\text{b}}_q
+      \|_2^2 \hspace{0.17em} \mathrm{d} q \le C \gamma^6 q_0^{- 3 /
+2} .\)
+    </center>
+    <p>
+      This is where the two correction steps of Lecture 4 are used: with one
+      step the source would be \(O (s^{- 2})\) and the first integral would
+      diverge logarithmically.
+    </p>
+    <p>
+      <em>Boundary.</em> \(q \|Z^{\text{t}}_q \|_2 \le L_0  \hspace{0.17em}
+      \mathbb{E}_q  \|TZ_T \|_2\), so, with \(\delta_{N, T, p} := \|TZ_T
+      \|^2_{L^{2 p}  (\mathbb{P}; L^2)}\),
+    </p>
+    <center>
+      \(\displaystyle \left| \frac{1}{\gamma}  \int_{q_0}^T q^{1 / 2}
+      \|Z^{\text{t}}_q \|_2^2
+\mathrm{d} q \right|_{L^p (\mathbb{P})} \le
+      \frac{L_0^2}{\gamma}
+\int_{q_0}^{\infty} q^{- 3 / 2} \mathrm{d} q
+      \hspace{0.27em} \delta_{N, T, p}
+= \frac{2 L_0^2}{\gamma q_0^{1 / 2}}
+      \hspace{0.17em} \delta_{N, T, p} .\)
+    </center>
+    <p>
+      At fixed \(N\), \(\delta_{N, T, p} \to 0\) as \(T \to \infty\) (Lemma <a
+      href="cqft_lecture6.html#lem:terminal">17.1</a>).
+    </p>
+    <p>
+      <em>Large fields.</em> Let \(A^{\text{l}} := \int_{q_0}^T s^{7 / 2}
+      \|b^{\text{l}}_s (Y_s)\|_2^2 \mathrm{d}
+s \le C \gamma^4  \int s^{- 3 /
+      2} \|t_s \|_6^6 \le C \gamma^3 J_T\) by (B). By Cauchy&ndash;Schwarz in
+      \(s\),
+    </p>
+    <center>
+      \(\displaystyle \|Z^{\text{l}}_q \|_2 \le \frac{L_0}{q}  \hspace{0.17em}
+      \mathbb{E}_q
+\int_q^T s \|b^{\text{l}}_s \|_2 \mathrm{d} s \le
+      \frac{L_0}{q} \left(
+\int_q^{\infty} s^{- 3 / 2} \mathrm{d} s \right)^{1
+      / 2} \mathbb{E}_q
+[(A^{\text{l}})^{1 / 2}],\)
+    </center>
+    <p>
+      so that, by Jensen's inequality, \(\|Z^{\text{l}}_q \|_2^2 \le 2 L_0^2
+      q^{- 5 / 2}  \hspace{0.17em} \mathbb{E}_q
+A^{\text{l}}\). Integrating,
+      and using that \(\mathbb{E}_q\) is a contraction on \(L^p
+      (\mathbb{P})\),
+    </p>
+    <center>
+      \(\displaystyle \left| \frac{1}{\gamma}  \int_{q_0}^T q^{1 / 2}
+      \|Z^{\text{l}}_q \|_2^2
+\mathrm{d} q \right|_{L^p} \le \frac{2
+      L_0^2}{\gamma}  \int_{q_0}^{\infty}
+q^{- 2} \mathrm{d} q \hspace{0.17em}
+      \|A^{\text{l}} \|_{L^p} \le \frac{C
+\gamma^2}{q_0} \hspace{0.17em} \|J_T
+      \|_{L^p} .\)
+    </center>
+    <p>
+      <em>This is how the clipping error is controlled.</em> The large-field
+      source \(b^{\text{l}}\) is not small; but its squared \(L^2\) norm is
+      controlled by the sixth power of the large-field part,
+      \(\|b^{\text{l}}_q \|_2^2 \le C \gamma^4 q^{- 5} \|t_q \|_6^6\) (B), and
+      after transport by the propagator and integration with the energy weight
+      it contributes to the backward energy only through \(J_T\), with the
+      small factor \(\gamma^2 / q_0\).
+    </p>
+    <p style="margin-top: 1em">
+      <strong>Proposition <class style="font-style: normal">16.2</class>. </strong><i><class
+      style="font-style: normal"><strong>(Backward feedback) </strong></class><a id="prop:backward"></a> At every
+      cutoff,</i>
+    </p>
+    <i><a id="eq:backward"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \|E_T \|_{L^p} \le C \gamma^6 q_0^{-
+        3 / 2} + C \gamma^{- 1} q_0^{- 1 / 2}
+\hspace{0.17em} \delta_{N, T,
+        p} + C \gamma^2 q_0^{- 1} \|J_T \|_{L^p},\)</td>
+        <td align="right">(16.3)</td>
+      </tr>
+    </table></i>
+    <p style="margin-bottom: 1em">
+      <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>\(\|Z\|^2 \le 3 (\|Z^{\text{t}} \|^2
+      +\|Z^{\text{b}} \|^2 +\|Z^{\text{l}} \|^2)\) and the three estimates
+      above.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-17">16.3<span style="margin-left: 1em"></span>Closing the loop<span style="margin-left: 1em"></span></h3>
+    <p style="margin-top: 1em">
+      <strong>Theorem <class style="font-style: normal">16.3</class>. </strong><i><class style="font-style: normal"><strong>(Cutoff-uniform
+      energy estimate) </strong></class><a id="thm:energy"></a> There is \(q_0\),
+      depending only on \(\gamma\), such that for every \(N\), \(T\) and \(p
+      \ge 1\),</i>
+    </p>
+    <div style="margin-bottom: 1em">
+      <i><a id="eq:energy"></a><table width="100%">
+        <tr>
+          <td width="100%" align="center">\(\displaystyle \|E_T \|_{L^p} + \|J_T \|_{L^p}
+          \le C_{\gamma}  (1 + p^5 + \delta_{N, T, p})
+.\)</td>
+          <td align="right">(16.4)</td>
+        </tr>
+      </table></i>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Let \(x = \|E_T \|_p\) and \(y = \|J_T \|_p\).
+      By Propositions <a href="#prop:forward">15.3</a> and <a href="#prop:backward">16.2</a>,
+    </p>
+    <center>
+      \(\displaystyle y \le A_0  \hspace{0.17em} (C \gamma^3 p^5 + x), \qquad
+      x \le B_0 + B_1
+\delta_{N, T, p} + \eta \hspace{0.17em} y, \qquad \eta =
+      \frac{C
+\gamma^2}{q_0},\)
+    </center>
+    <p style="margin-bottom: 1em">
+      with \(A_0, B_0, B_1\) and the constant in \(\eta\) independent of \(N,
+      T, p\), and bounded for all \(q_0\) beyond the thresholds already
+      required. Choose \(q_0\) such that also \(A_0 \eta \le \frac{1}{2}\).
+      Then \(y \le A_0  (C \gamma^3 p^5 + B_0 + B_1 \delta_{N, T, p}) +
+      \frac{1}{2} y\). Since \(y < \infty\) by Lemma <a href="#lem:pre">14.1</a>, it can
+      be absorbed, and \(x\) follows.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The structure of the argument is the point:
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <img src="cqft_lecture5-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 4.79559228650138em" alt="Figure from Constructive quantum field theory — Lecture 5 (notes)" decoding="async" loading="lazy">
+      </p>
+    </center>
+    <p>
+      Forward coercivity estimates the large fields using the backward energy;
+      the backward representation returns that energy with a small
+      coefficient. Neither half closes on its own. The smallness is in the
+      <em>feedback</em>, \(\gamma^2 / q_0\), not in the coupling of either
+      equation, and it is independent of the moment order, so a single \(q_0\)
+      closes the loop for every \(p\). The growth \(p^5\) is then inherited
+      from the Gaussian tails \(G_T\), and gives stretched exponential moments
+      \(\mathbb{E} \exp \{c (E_{\infty} + J_{\infty})^{1 / 5} \} < \infty\)
+      once the boundary term is removed. Note that \(\gamma^2 / q_0 =
+      g_{q_0}^2\).
+    </p>
+    <h3 id="auto-18">16.4<span style="margin-left: 1em"></span>Consequences<span style="margin-left: 1em"></span></h3>
+    <p>
+      The boundary term \(\delta_{N, T, p}\) is removed in Lecture 6, at each
+      fixed \(N\), by letting \(T \to \infty\). Assuming this for the moment,
+      we obtain
+    </p>
+    <a id="eq:uv-stability"></a><table width="100%">
+      <tr>
+        <td width="100%" align="center">\(\displaystyle \sup_N \|E^N_{\infty} \|_{L^p} +
+        \sup_N \|J^N_{\infty} \|_{L^p} \le
+C_{\gamma}  (1 + p^5), \qquad
+        \sup_N \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma}
+q^{- 5 / 2} .\)</td>
+        <td align="right">(16.5)</td>
+      </tr>
+    </table>
+    <p>
+      The second bound follows from the representation formula on \([q,
+      \infty)\): the three contributions are, up to the factor \(3\), \(O
+      (q^{- 3})\), \(0\) and, by the computation above, \(2 L_0^2 q^{- 5 / 2}
+      \mathbb{E}A^{\text{l}}\). So the approximate forecast differs from the
+      exact one by \(O (q^{- 5 / 4})\) in \(L^2  (\mathbb{P}; L^2)\) (root
+      mean square), uniformly in the lattice. Since \(\|H_q \| \le C / q\),
+      the coupling term \(H_q Z_q\) in the forward equation is \(O (q^{- 9 /
+      4})\) in \(L^2  (\mathbb{P}; L^2)\), integrable in \(q\): the forward
+      equation is, up to an integrable drift, the explicit SDE \(\mathrm{d} Y
+      = b (Y) \mathrm{d} q + H (Y) \mathrm{d} W\).
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remark <class style="font-style: normal">16.4</class>. </strong><class style="font-style: normal"><strong>(Comparison
+      with the variational method) </strong></class>In the
+      Bou&eacute;&ndash;Dupuis approach (Theorem <a href="cqft_lecture3.html#thm:BD">7.1</a>) one
+      estimates a drift \(u\) which is the costate up to \(\dot{Q}^{1 / 2}\),
+      and the renormalisation is a change of variables \(u = - 4 \lambda
+      \dot{Q}^{1 / 2} : X^3 : + r\) (in the normalisation \(\lambda \int :
+      \varphi^4\): of Lecture 3) [<a href="#bib-BG20">BG20</a>]. Here the explicit action
+      \(\bar{\Gamma}\) plays the role of all such changes of variables at
+      once, in the forecast coordinate, and \(Z\) plays the role of the
+      remainder \(r\). The coercivity of the quartic term is used in both, but
+      here it is used <em>pathwise in the forward equation</em>, while the
+      remainder is estimated in expectation through the backward equation.
+    </p>
+    <h3 id="auto-19">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.1</class>.
+        </strong><class style="font-style: normal"><strong>(The scalar backward estimate)
+        </strong></class>On one site, with \(H_q (y) = (q + \gamma y^2)^{-
+        1}\), show that</font>
+      </p>
+    </div>
+    <div style="margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><center>
+          \(\displaystyle \mathscr{P}_{q, s} = \frac{s}{q} \exp \left( -
+          \int_q^s \frac{\gamma Y_u^2}{u
+(u + \gamma Y_u^2)} \mathrm{d} u
+          \right) \le \frac{s}{q} .\)
+        </center></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%">In which sense do large fields make the backward equation
+        more contractive? Redo the three estimates of Section <a href="#sec:backward">16</a>
+        on one site.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.2</class>.
+        </strong><class style="font-style: normal"><strong>(Absorption needs finiteness)
+        </strong></class>Give an example of nonnegative numbers \(x, y\)
+        (possibly infinite) with \(y \le 1 + x\), \(x \le 1 + \frac{1}{2} y\)
+        and \(y = \infty\). Where is Lemma <a href="#lem:pre">14.1</a> used in the proof
+        of Theorem <a href="#thm:energy">16.3</a>?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.3</class>.
+        </strong><class style="font-style: normal"><strong>(Moment growth) </strong></class>From
+        \(\|E_{\infty} + J_{\infty} \|_p \le C (1 + p^5)\) for all \(p \ge
+        1\), deduce \(\mathbb{E} \exp \{c (E_{\infty} + J_{\infty})^{1 / 5} \}
+        < \infty\) for small \(c\).</font>
+      </p>
+    </div>
+    <h2 id="auto-20">References<span style="margin-left: 1em"></span></h2>
+    <dl>
+      <p>
+        <dt>
+          <strong>[BG20]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BG20"></a>N. Barashkov, M. Gubinelli. A variational method for
+            \(\Phi^4_3\). <em>Duke Math. J.</em> 169 (2020), 3339&ndash;3415.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[FBSDE26]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-FBSDE26"></a>M. Gubinelli. The massive \(\Phi^4_3\) field through
+            forward&ndash;backward equations. Course notes, October 2026.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[MY99]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-MY99"></a>J. Ma, J. Yong. <em>Forward-Backward Stochastic
+            Differential Equations and their Applications</em>. Lecture Notes
+            in Math. 1702, Springer, 1999.
+          </p>
+        </dd>
+      </p>
+    </dl>
+  </body>
+</html>

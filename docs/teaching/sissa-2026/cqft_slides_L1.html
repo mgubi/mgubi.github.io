@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 1 (slides) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
+    <link href="cqft-slides.css" type="text/css" rel="stylesheet">
+    <script src="cqft-slides.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 1 (slides), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_slides_L1.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+    <link rel="stylesheet" href="/resources/sissa-materials.css">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 1 (slides)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <div class="toggle" style="display: block">
+      <div align="left">
+        <p style="margin-top: 0.8cm">
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+          <font style="font-size: 210.0%"><b><font color="#800000">A Constructive Introduction to Quantum
+          Field Theory</font></b></font>
+        </p>
+        <p style="margin-bottom: 0.2cm">
+
+        </p>
+        <p>
+          <font style="font-size: 130.0%">Relativistic quantum fields and imaginary time</font>
+        </p>
+        <p style="margin-bottom: 0.65cm">
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+          <font style="font-size: 84.1%">Massimiliano Gubinelli | University of Oxford</font>
+        </p>
+        <p>
+          <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 1 &mdash; notes:
+          &sect;1&ndash;&sect;2</font></font>
+        </p>
+        <p>
+
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        What is constructive QFT?
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Goal:</strong> construct, with full rigour,
+            <em>interacting</em> relativistic quantum fields, i.e. models
+            satisfying axioms encoding quantum mechanics, special relativity
+            and causality.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Status:</strong>
+          </p>
+          <ul>
+            <li>
+              <p>
+                <font color="#620000">\(d = 2\)</font>: <font color="#620000">\(P
+                (\varphi)_2\)</font>, Yukawa<sub><font color="#620000">\(2\)</font></sub>,
+                sine-Gordon, &hellip;
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(d = 3\)</font>: <font color="#620000">\(\Phi^4_3\)</font>,
+                &hellip;
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(d = 4\)</font>: no interacting example;
+                critical lattice <font color="#620000">\(\varphi^4_4\)</font> has
+                Gaussian scaling limits (Aizenman&ndash;Duminil-Copin 2021).
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>Lesson of the late 1960s&ndash;70s:</strong> work in
+            <em>imaginary time</em>. A QFT becomes a probability measure on
+            <font color="#620000">\(\mathcal{S}' (\mathbb{R}^d)\)</font>, which looks
+            like the continuum limit of a classical spin system at a critical
+            point.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Modern tools</strong> (this course): stochastic
+            quantisation, singular SPDEs, variational methods; RG and cluster
+            expansions as complements.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Plan of the lecture
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <b>Part I. Minkowski picture</b>
+          </p><ol>
+            <li>
+              <p>
+                Wightman axioms
+              </p>
+            </li>
+            <li>
+              <p>
+                Why operator-valued distributions
+              </p>
+            </li>
+            <li>
+              <p>
+                K&auml;ll&eacute;n&ndash;Lehmann representation
+              </p>
+            </li>
+            <li>
+              <p>
+                The quantum wave equation
+              </p>
+            </li>
+          </ol></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p>
+            <b>Part II. Imaginary time</b>
+          </p><ol>
+            <p>
+
+            </p>
+            <li>
+              <p>
+                A lattice Hamiltonian on a circle
+              </p>
+            </li>
+            <li>
+              <p>
+                Positivity of energy <font color="#620000">\(\Rightarrow\)</font> Wick
+                rotation
+              </p>
+            </li>
+            <li>
+              <p>
+                Feynman&ndash;Kac: quantum <font color="#620000">\(\to\)</font>
+                classical
+              </p>
+            </li>
+            <li>
+              <p>
+                Statistical mechanics and criticality
+              </p>
+            </li>
+            <li>
+              <p>
+                Osterwalder&ndash;Schrader axioms
+              </p>
+            </li>
+          </ol></td>
+        </tr></tbody>
+      </table>
+      <p>
+        Conventions: <font color="#620000">\(\hbar = c = 1\)</font>, spacetime
+        dimension <font color="#620000">\(d = 1 + s\)</font>, <font color="#620000">\(\langle f,
+        g \rangle = \int \bar{f} g\)</font>, <font color="#620000">\(\hat{f} (k) = \int
+        \mathrm{e}^{- \mathrm{i} k \cdot x} f (x) \mathrm{d} x\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Relativistic quantum
+        fields</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 1</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Kinematics
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><ul>
+            <li>
+              <p>
+                Minkowski space <font color="#620000">\(\mathbb{R}^{1, s}\)</font>,
+                <font color="#620000">\(x = (x^0, \textbf{x})\)</font>, <font color="#620000">\(x
+                \cdot y = x^0 y^0 - \textbf{x} \cdot \textbf{y}\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(x, y\)</font> <strong>spacelike
+                separated</strong> if <font color="#620000">\((x - y)^2 < 0\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Forward cone <font color="#620000">\(V_{\hspace{-0.17em} +} = \{p : p^0
+                > | \textbf{p} |\}\)</font>, closure <font color="#620000">\(\bar{V}_{\hspace{-0.17em}
+                +}\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Restricted Lorentz group <font color="#620000">\(\mathcal{L}^{\uparrow}_+\)</font>;
+                Poincar&eacute; group <font color="#620000">\(\mathcal{P}^{\uparrow}_+
+                =\mathbb{R}^d \rtimes \mathcal{L}^{\uparrow}_+\)</font> acting
+                by <font color="#620000">\(x \mapsto \Lambda x + a\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Wigner: a relativistic quantum system carries a (projective)
+                unitary representation of <font color="#620000">\(\mathcal{P}^{\uparrow}_+\)</font>.
+              </p>
+            </li>
+          </ul></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><center>
+            <img src="cqft_slides_L1-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 22.9684848484848em" alt="Figure from Constructive quantum field theory — Lecture 1 (slides)" decoding="async" loading="lazy">
+          </center></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Wightman axioms (I)
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>(W0) Relativistic quantum theory</strong>
+        </p>
+        <p>
+          Separable Hilbert space <font color="#620000">\(\mathcal{H}\)</font>;
+          strongly continuous unitary representation <font color="#620000">\(U\)</font>
+          of <font color="#620000">\(\mathcal{P}^{\uparrow}_+\)</font>; <font color="#620000">\(U
+          (a, \mathbb{1}) = \mathrm{e}^{\mathrm{i} P \cdot a}\)</font>, <font
+          color="#620000">\(H = P^0\)</font>.<br /><em>Spectrum condition:</em> <font
+          color="#620000">\(\text{spec} (P) \subset \bar{V}_{\hspace{-0.17em}
+          +}\)</font>, so <font color="#620000">\(H \geq | \textbf{P} | \geq
+          0\)</font>.<br /><em>Vacuum:</em> unique (up to phase) unit vector
+          <font color="#620000">\(\Omega\)</font> with <font color="#620000">\(U (a, \mathbb{1})
+          \Omega = \Omega\)</font>.
+        </p>
+      </div>
+      <div class="slide-block">
+        <p>
+          <strong>(W1) Fields</strong>
+        </p>
+        <p>
+          Dense <font color="#620000">\(\mathcal{D} \ni \Omega\)</font>; for <font
+          color="#620000">\(f \in \mathcal{S} (\mathbb{R}^d)\)</font> an operator <font
+          color="#620000">\(\varphi (f)\)</font> on <font color="#620000">\(\mathcal{D}\)</font>,
+          <font color="#620000">\(\varphi (f) \mathcal{D} \subset \mathcal{D}\)</font>,
+          <font color="#620000">\(U\mathcal{D} \subset \mathcal{D}\)</font>; <font
+          color="#620000">\(f \mapsto \langle \chi, \varphi (f) \psi \rangle\)</font>
+          tempered; <font color="#620000">\(\langle \chi, \varphi (f) \psi \rangle =
+          \langle \varphi (\bar{f}) \chi, \psi
+\rangle\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Wightman axioms (II)
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>(W2) Covariance, (W3) Locality, (W4) Cyclicity</strong>
+        </p>
+        <p>
+          <font color="#620000">\(U (a, \Lambda) \varphi (f) U (a, \Lambda)^{- 1} =
+          \varphi (f \circ (a,
+\Lambda)^{- 1})\)</font>;<span style="margin-left: 1em"></span><font
+          color="#620000">\([\varphi (f), \varphi (g)] = 0\)</font> if supports are
+          spacelike separated;<span style="margin-left: 1em"></span>polynomials in <font color="#620000">\(\varphi\)</font>
+          applied to <font color="#620000">\(\Omega\)</font> are dense.
+        </p>
+      </div>
+      <p>
+        Formally <font color="#620000">\(\varphi (f) = \int \varphi (x) f (x)
+        \mathrm{d} x\)</font>, <font color="#620000">\(\varphi (x^0, \textbf{x}) =
+        \mathrm{e}^{\mathrm{i} Hx^0} \varphi (0,
+\textbf{x}) \mathrm{e}^{-
+        \mathrm{i} Hx^0}\)</font>.
+      </p>
+      <p>
+        <b>Wightman functions</b> <font color="#620000">\(W_n (f_1, \ldots, f_n) =
+        \langle \Omega, \varphi (f_1) \cdots \varphi (f_n)
+\Omega \rangle \in
+        \mathcal{S}' (\mathbb{R}^{dn})\)</font>:
+      </p>
+      <ul>
+        <li>
+          <p>
+            positivity <font color="#620000">\(\sum_{j, k} W_{j + k}  (g_j^{\ast}
+            \otimes g_k) \geq 0\)</font>;<span style="margin-left: 1em"></span>Poincar&eacute;
+            invariance;
+          </p>
+        </li>
+        <li>
+          <p>
+            spectral condition: Fourier support in <font color="#620000">\(\bar{V}_{\hspace{-0.17em}
+            +}^{\hspace{0.17em} n - 1}\)</font> (difference variables);
+          </p>
+        </li>
+        <li>
+          <p>
+            locality; cluster property <font color="#620000">\(\Leftrightarrow\)</font>
+            unique vacuum.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Reconstruction
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Wightman
+        reconstruction; Streater&ndash;Wightman 1964)
+        </strong></font></font></class>A sequence <font color="#620000">\((W_n)\)</font>
+        of tempered distributions with <font color="#620000">\(W_0 = 1\)</font>
+        satisfying positivity, invariance, spectral condition and locality is
+        the sequence of Wightman functions of a Wightman theory, unique up to
+        unitary equivalence.</i>
+      </p>
+      <ul>
+        <li>
+          <p>
+            To construct a QFT it suffices to construct its Wightman
+            functions.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Difficulty:</strong> positivity involves all <font color="#620000">\(W_n\)</font>
+            at once and refers to real time, while what we can construct lives
+            in imaginary time.
+          </p>
+        </li>
+        <li>
+          <p>
+            The Euclidean approach replaces it by <strong>reflection
+            positivity</strong>, checkable on lattice approximations and
+            stable under limits.
+          </p>
+        </li>
+        <li>
+          <p>
+            The axioms say nothing about dynamics: no Lagrangian; the
+            interaction is hidden in the higher <font color="#620000">\(W_n\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The free field
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\omega (\textbf{p}) = (| \textbf{p} |^2 + m^2)^{1 /
+        2}\)</font>,<span style="margin-left: 1em"></span><font color="#620000">\(\mathrm{d} \Omega_m
+        (\textbf{p}) = \dfrac{\mathrm{d} \textbf{p}}{(2 \pi)^s
+
+\hspace{0.17em} 2 \omega (\textbf{p})}\)</font> (invariant measure on
+        <font color="#620000">\(H_m^+ = \{p^2 = m^2, p^0 > 0\}\)</font>), Fock space
+        over <font color="#620000">\(L^2 (\mathrm{d} \Omega_m)\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \varphi (x) = \int \mathrm{d} \Omega_m (\textbf{p})
+        [a (\textbf{p})
+\mathrm{e}^{- \mathrm{i} p \cdot x} + a^{\ast}
+        (\textbf{p})
+\mathrm{e}^{\mathrm{i} p \cdot x}]_{p^0 = \omega
+        (\textbf{p})},\)
+      </center>
+      <p>
+        with <font color="#620000">\([a (\textbf{p}), a^{\ast} (\textbf{q})] = (2
+        \pi)^s 2 \omega (\textbf{p})
+\hspace{0.17em} \delta (\textbf{p} -
+        \textbf{q})\)</font>, <font color="#620000">\(a (\textbf{p}) \Omega =
+        0\)</font>. Then
+      </p>
+      <center>
+        \(\displaystyle W_2  (x - y) = \int \mathrm{d} \Omega_m (\textbf{p})
+        \hspace{0.17em}
+\mathrm{e}^{- \mathrm{i} p \cdot (x - y)}, \qquad \|
+        \varphi (f) \Omega \|^2 =
+\int \mathrm{d} \Omega_m | \tilde{f} |^2 <
+        \infty,\)
+      </center>
+      <p>
+        but
+      </p>
+      <center>
+        \(\displaystyle \| \varphi (x) \Omega \|^2 = W_2 (0) = \int \mathrm{d}
+        \Omega_m = + \infty
+\qquad (s \geq 1) .\)
+      </center>
+      <p>
+        UV divergence: logarithmic for <font color="#620000">\(s = 1\)</font>,
+        power-like for <font color="#620000">\(s \geq 2\)</font>. <strong>Not an
+        artefact of the free field.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        No fields at a point
+      </div>
+      <p>
+
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Proposition.
+        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Wightman
+        1964) </strong></font></font></class>Assume (W0)&ndash;(W2) and <font
+        color="#620000">\(\varphi (f) \Omega = \int f (x) U (x, \mathbb{1}) \psi
+        \hspace{0.17em}
+\mathrm{d} x\)</font> for some <font color="#620000">\(\psi \in
+        \mathcal{H}\)</font> (&ldquo;<font color="#620000">\(\varphi (0) \Omega =
+        \psi\)</font> exists&rdquo;). Then <font color="#620000">\(\psi \in \mathbb{C}
+        \Omega\)</font>, hence <font color="#620000">\(\varphi (f) \Omega = c
+        \hspace{0.17em} (\int f)  \hspace{0.17em} \Omega\)</font>.</i>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Lemma. </strong></font></font><i>For
+        <font color="#620000">\(d \geq 2\)</font>, a <em>finite</em> <font color="#620000">\(\mathcal{L}^{\uparrow}_+\)</font>-invariant
+        measure on <font color="#620000">\(\bar{V}_{\hspace{-0.17em} +}\)</font> is
+        <font color="#620000">\(c \hspace{0.17em} \delta_0\)</font>.</i>
+      </p>
+      <ul>
+        <li>
+          <p>
+            Combined with locality and Reeh&ndash;Schlieder: <font color="#620000">\(\varphi\)</font>
+            is a multiple of <font color="#620000">\(\mathbb{1}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Quantum fields are <strong>operator-valued distributions</strong>:
+            nonlinear expressions in <font color="#620000">\(\varphi (x)\)</font> need
+            a definition <font color="#620000">\(\Rightarrow\)</font> renormalisation.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Proofs
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <b>Lemma.</b> A boost of rapidity <font color="#620000">\(\theta\)</font> acts
+        as <font color="#620000">\(p^0 \pm p^1 \mapsto \mathrm{e}^{\pm \theta} (p^0 \pm
+        p^1)\)</font>. The sets
+      </p>
+      <center>
+        \(\displaystyle S_j^{\pm} = \{p \in \bar{V}_{\hspace{-0.17em} +} : 2^j
+        \leq p^0 \pm p^1 < 2^{j
++ 1} \}, \qquad j \in \mathbb{Z},\)
+      </center>
+      <p>
+        are mapped to each other by the boost with <font color="#620000">\(\mathrm{e}^{\theta}
+        = 2\)</font>; they are disjoint and cover <font color="#620000">\(\bar{V}_{\hspace{-0.17em}
+        +} \setminus \{0\}\)</font>. Invariance and finiteness force <font
+        color="#620000">\(\mu (S^{\pm}_j) = 0\)</font>.
+      </p>
+      <p>
+        <b>Proposition.</b>
+      </p>
+      <ol>
+        <li>
+          <p>
+            Covariance gives <font color="#620000">\(\int f (x) U (\Lambda x)  (U (0,
+            \Lambda) \psi - \psi) \mathrm{d} x = 0\)</font> for all <font
+            color="#620000">\(f\)</font>, so <font color="#620000">\(U (0, \Lambda) \psi =
+            \psi\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The spectral measure <font color="#620000">\(\mu\)</font> of <font color="#620000">\(\psi\)</font>
+            for translations is finite, supported in <font color="#620000">\(\bar{V}_{\hspace{-0.17em}
+            +}\)</font> and Lorentz invariant, so <font color="#620000">\(\mu = \| \psi
+            \|^2 \delta_0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Hence <font color="#620000">\(U (a) \psi = \psi\)</font> for all <font
+            color="#620000">\(a\)</font>, and <font color="#620000">\(\psi \in \mathbb{C}
+            \Omega\)</font> by uniqueness of the vacuum.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The K&auml;ll&eacute;n&ndash;Lehmann representation
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Let <font color="#620000">\(W_2^{(M)}\)</font> be the free two-point function
+        of mass <font color="#620000">\(M \geq 0\)</font> and <font color="#620000">\(\langle
+        \Omega, \varphi (f) \Omega \rangle = v \int f\)</font>.
+      </p>
+      <p style="margin-top: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(K&auml;ll&eacute;n
+        1952, Lehmann 1954) </strong></font></font></class>Under
+        (W0)&ndash;(W2) there is a positive, polynomially bounded measure
+        <font color="#620000">\(\rho\)</font> on <font color="#620000">\([0, \infty)\)</font>
+        (the <strong>spectral measure</strong> of the field) such that</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle W_2  (x - y) = v^2 + \int_{[0, \infty)} \rho
+          (\mathrm{d} M^2)  \hspace{0.17em}
+W_2^{(M)}  (x - y) .\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>(<font color="#620000">\(\rho (\{0\}) = 0\)</font> if <font color="#620000">\(d =
+        2\)</font>.)</i>
+      </p>
+      <p>
+        <b>Sketch.</b> <font color="#620000">\(\psi_f = \varphi (f) \Omega - v (\int f)
+        \Omega\)</font> gives <font color="#620000">\(W_2 - v^2\)</font> of positive
+        type <font color="#620000">\(\Rightarrow\)</font> (Bochner&ndash;Schwartz)
+        Fourier transform of a positive measure <font color="#620000">\(\mu\)</font>,
+        supported in <font color="#620000">\(\bar{V}_{\hspace{-0.17em} +}\)</font>,
+        <font color="#620000">\(\mu (\{0\}) = 0\)</font>, Lorentz invariant. Orbits are
+        the hyperboloids <font color="#620000">\(H_M^+\)</font> (and the cone for <font
+        color="#620000">\(M = 0\)</font>), each with a unique invariant measure <font
+        color="#620000">\(\mathrm{d} \Omega_M\)</font>. Disintegrate along <font color="#620000">\(M\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Reading the spectrum off <font color="#620000">\(\rho\)</font>
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Free field:</strong> <font color="#620000">\(\rho =
+            \delta_{m^2}\)</font>. Conversely <font color="#620000">\(\rho =
+            \delta_{m^2}\)</font>, <font color="#620000">\(m > 0\)</font>, forces <font
+            color="#620000">\(\varphi - v\)</font> to be free, by locality
+            (Jost&ndash;Schroer).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Generalised free fields</strong> <font color="#620000">\(\varphi =
+            \sum_i c_i \varphi_{M_i}\)</font> have <font color="#620000">\(\rho =
+            \sum_i c_i^2 \delta_{M_i^2}\)</font> and no interaction: <font
+            color="#620000">\(\rho \neq \delta_{m^2}\)</font> is necessary, not
+            sufficient.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Particles:</strong> an isolated atom <font color="#620000">\(Z
+            \delta_{m^2}\)</font> is a particle of mass <font color="#620000">\(m\)</font>;
+            multi-particle continuum from <font color="#620000">\((2 m)^2\)</font> (or
+            <font color="#620000">\((3 m)^2\)</font> with <font color="#620000">\(\varphi
+            \mapsto - \varphi\)</font> symmetry). Weakly coupled <font color="#620000">\(P
+            (\varphi)_2\)</font>: Glimm&ndash;Jaffe&ndash;Spencer 1974.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>No point fields again:</strong> <font color="#620000">\(W_2^T (0) =
+            \int \rho (\mathrm{d} M^2)  \int \mathrm{d} \Omega_M =
+            \infty\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Canonical fields:</strong> CCR at sharp times <font color="#620000">\(\Rightarrow\)</font>
+            <font color="#620000">\(\int \rho = 1\)</font>, so <font color="#620000">\(Z \leq
+            1\)</font>. In <font color="#620000">\(d = 4\)</font> perturbatively <font
+            color="#620000">\(\int \rho = \infty\)</font> (wave-function
+            renormalisation).
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The quantum wave equation
+      </div>
+      <p>
+
+      </p>
+      <p>
+        The free field solves, as an operator-valued distribution,
+      </p>
+      <center>
+        \(\displaystyle (\Box + m^2) \varphi = 0, \qquad \Box = \partial_t^2 -
+        \Delta_{\textbf{x}},\)
+      </center>
+      <p>
+        and its sharp-time fields <font color="#620000">\(\varphi (t, g)\)</font>,
+        <font color="#620000">\(\pi (t, g)\)</font>, <font color="#620000">\(\pi = \partial_t
+        \varphi\)</font>, satisfy the CCR
+      </p>
+      <center>
+        \(\displaystyle [\varphi (t, \textbf{x}), \pi (t, \textbf{y})] =
+        \mathrm{i} \hspace{0.17em}
+\delta (\textbf{x} - \textbf{y}), \qquad
+        [\varphi, \varphi] = [\pi, \pi] = 0.\)
+      </center>
+      <div class="slide-block">
+        <p>
+          <strong>Picture</strong>
+        </p>
+        <p>
+          A <em>linear wave equation with quantum initial data</em> <font
+          color="#620000">\((\varphi (0, \cdot), \pi (0, \cdot))\)</font>,
+          &ldquo;distributed&rdquo; according to the vacuum.
+        </p>
+      </div>
+      <p>
+        Interacting version: <font color="#620000">\((\Box + m^2) \varphi + \lambda
+        \varphi^3 = 0\)</font> together with the CCR.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The free field on a circle
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(s = 1\)</font>, space <font color="#620000">\(\mathbb{T}_L
+        =\mathbb{R}/ L\mathbb{Z}\)</font>, momenta <font color="#620000">\(k \in
+        \frac{2 \pi}{L} \mathbb{Z}\)</font>, <font color="#620000">\(\omega_k = (k^2 +
+        m^2)^{1 / 2}\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \varphi (0, x) = \sum_k \frac{a_k
+        \mathrm{e}^{\mathrm{i} kx} + a_k^{\ast}
+\mathrm{e}^{- \mathrm{i}
+        kx}}{\sqrt{2 L \omega_k}}, \qquad [a_k,
+a^{\ast}_{k'}] = \delta_{kk'},
+        \qquad H_0 = \sum_k \omega_k a_k^{\ast} a_k .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            An infinite family of independent harmonic oscillators, one per
+            mode.
+          </p>
+        </li>
+        <li>
+          <p>
+            With a UV cutoff <font color="#620000">\(|k| \leq R\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \langle \Omega, \varphi_R (0, x)^2 \Omega \rangle
+            = \sum_{|k| \leq R}
+\frac{1}{2 L \omega_k} = \frac{1}{2 \pi} \log
+            \frac{R}{m} + O (1) \to \infty .\)
+          </center>
+        </li>
+        <li>
+          <p>
+            Wick ordering <font color="#620000">\(: \varphi_R^2 := \varphi_R^2 -
+            \langle \Omega, \varphi_R^2 \Omega \rangle\)</font> removes
+            exactly this divergence (Exercise 1.7).
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Interactions: three problems
+      </div>
+      <p>
+
+      </p>
+      <ol>
+        <li>
+          <p>
+            <strong>Products of distributions.</strong> <font color="#620000">\(\varphi
+            (x)^3\)</font> is meaningless and must be renormalised: Wick
+            ordering suffices in <font color="#620000">\(d = 2\)</font>; more
+            counterterms in <font color="#620000">\(d = 3\)</font>; triviality in <font
+            color="#620000">\(d = 4\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Haag's theorem.</strong> In infinite volume the
+            interacting field at fixed time is not unitarily equivalent to the
+            free one: there is no interaction picture.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Semiboundedness.</strong> Even on <font color="#620000">\(\mathbb{T}_L\)</font>,
+            <font color="#620000">\(H = H_0 + \lambda \int : \varphi (0, x)^4 :
+            \mathrm{d} x\)</font> is positive plus unbounded below. Nelson
+            1966: bounded below (hypercontractivity). Volume cutoff removed by
+            Glimm&ndash;Jaffe; Wightman axioms for weak coupling <font color="#620000">\(P
+            (\varphi)_2\)</font> by Glimm&ndash;Jaffe&ndash;Spencer 1974.
+          </p>
+        </li>
+      </ol>
+      <p>
+        The Euclidean approach (Symanzik, Nelson, Osterwalder&ndash;Schrader,
+        Guerra&ndash;Rosen&ndash;Simon) simplifies this enormously.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">From real to imaginary
+        time</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 1</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        A lattice Hamiltonian on the circle
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Lattice <font color="#620000">\(\Lambda_{\varepsilon} = \varepsilon \mathbb{Z}/
+        L\mathbb{Z}\)</font>, <font color="#620000">\(N = L / \varepsilon\)</font>
+        sites, <font color="#620000">\(\mathcal{H}_{\varepsilon} = L^2
+        (\mathbb{R}^{\Lambda_{\varepsilon}},
+\mathrm{d} \varphi)\)</font>,
+        <font color="#620000">\(\varphi_x\)</font> multiplication, <font color="#620000">\(\pi_x
+        = - \mathrm{i} \varepsilon^{- 1} \partial_{\varphi_x}\)</font>, so
+        <font color="#620000">\([\varphi_x, \pi_y] = \mathrm{i} \varepsilon^{- 1}
+        \mathbb{1}_{x = y}\)</font>.
+      </p>
+      <center>
+        \(\displaystyle H_{\varepsilon} = \sum_x \varepsilon \left[
+        \tfrac{1}{2} \pi_x^2 +
+\tfrac{1}{2} (\nabla_{\varepsilon} \varphi)_x^2
+        + \tfrac{1}{2} m^2 \varphi_x^2
++ V (\varphi_x) \right] = - \frac{1}{2
+        \varepsilon} \Delta_{\mathbb{R}^N} +
+U_{\varepsilon} (\varphi) .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            Heisenberg fields solve the <strong>lattice wave equation</strong>
+          </p>
+          <center>
+            \(\displaystyle \partial_t^2 \varphi_x = (\Delta_{\varepsilon}
+            \varphi)_x - m^2 \varphi_x - V'
+(\varphi_x)\)
+          </center>
+          <p>
+            &mdash; the quantum wave equation, now rigorous.
+          </p>
+        </li>
+        <li>
+          <p>
+            Schr&ouml;dinger operator with confining potential: self-adjoint,
+            compact resolvent, <font color="#620000">\(\mathrm{e}^{-
+            tH_{\varepsilon}}\)</font> trace class with positive kernel.
+          </p>
+        </li>
+        <li>
+          <p>
+            Perron&ndash;Frobenius: simple ground state <font color="#620000">\(\Omega_{\varepsilon}
+            > 0\)</font>, energy <font color="#620000">\(E_0\)</font>.<span style="margin-left: 1em"></span>
+            <font color="#620000">\(\bar{H} := H_{\varepsilon} - E_0 \geq 0\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Positivity of the energy <font color="#620000">\(\Rightarrow\)</font> Wick
+        rotation
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            For bounded <font color="#620000">\(F_j\)</font> and <font color="#620000">\(F_j (t)
+            = \mathrm{e}^{\mathrm{i} tH} F_j \mathrm{e}^{- \mathrm{i}
+            tH}\)</font>:
+          </p><center>
+            \(\displaystyle W (t_1, \ldots, t_n) = \langle
+            \Omega_{\varepsilon}, F_1 \mathrm{e}^{-
+\mathrm{i} (t_1 - t_2)
+            \bar{H}} F_2 \cdots F_n \Omega_{\varepsilon} \rangle .\)
+          </center><p style="margin-top: 1em">
+            <font color="#800000"><font color="#800000"><strong>Proposition.
+            </strong></font></font><i><font color="#620000">\(W\)</font> extends
+            analytically to <font color="#620000">\(\text{Im} (t_j - t_{j + 1}) <
+            0\)</font>. At <font color="#620000">\(t_j = - \mathrm{i} \tau_j\)</font>,
+            <font color="#620000">\(\tau_1 \geq \ldots \geq \tau_n\)</font>, it gives
+            the <strong>Schwinger functions</strong></i>
+          </p><p>
+            <i><center>
+              \(\displaystyle S (\tau_1, \ldots, \tau_n) = \langle
+              \Omega_{\varepsilon}, F_1 \mathrm{e}^{-
+(\tau_1 - \tau_2)
+              \bar{H}} F_2 \cdots F_n \Omega_{\varepsilon} \rangle,\)
+            </center></i>
+          </p><p style="margin-bottom: 1em">
+            <i>which determine <font color="#620000">\(W\)</font>.</i>
+          </p></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><center>
+            <img src="cqft_slides_L1-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 17.0605791245791em" alt="Figure from Constructive quantum field theory — Lecture 1 (slides)" decoding="async" loading="lazy">
+          </center></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Where positivity of the energy is used
+      </div>
+      <p>
+
+      </p>
+      <ol>
+        <li>
+          <p>
+            <b>Analyticity.</b> <font color="#620000">\(\mathrm{e}^{- \mathrm{i} \zeta
+            \bar{H}} = \int \mathrm{e}^{- \mathrm{i} \zeta
+\lambda} \mathrm{d}
+            E (\lambda)\)</font> is a contraction for <font color="#620000">\(\text{Im}
+            \zeta \leq 0\)</font>, since <font color="#620000">\(\lambda \geq
+            0\)</font>: analytic in the interior, continuous up to the
+            boundary.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Uniqueness.</b> An analytic function on the half plane
+            vanishing on <font color="#620000">\(- \mathrm{i} \mathbb{R}_+\)</font>
+            vanishes; iterate variable by variable.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Semigroup.</b> <font color="#620000">\(\mathrm{e}^{- \tau
+            \bar{H}}\)</font> is a contraction semigroup, which can be
+            represented as a path integral (Feynman&ndash;Kac).
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Projection onto the vacuum.</b> <font color="#620000">\(\mathrm{e}^{- T
+            \bar{H}} \to | \Omega \rangle \langle \Omega |\)</font> as <font
+            color="#620000">\(T \to \infty\)</font>.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Relativistic version: Wightman functions are boundary values of
+        functions analytic in the forward tube; Lorentz covariance extends
+        them to all non-coincident Euclidean points (Schwinger functions are
+        <em>symmetric</em> and <em>Euclidean invariant</em>).
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Discretising imaginary time
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Kinetic semigroup: <font color="#620000">\(\mathrm{e}^{\frac{\delta}{2
+        \varepsilon} \Delta} (\varphi, \varphi') = (2 \pi
+\delta /
+        \varepsilon)^{- N / 2} \exp \left( - \frac{\varepsilon}{2 \delta}
+        |
+\varphi - \varphi' |^2 \right)\)</font>.
+      </p>
+      <p>
+        <b>Transfer matrix</b> (symmetric Trotter step):
+      </p>
+      <center>
+        \(\displaystyle T_{\delta} = \mathrm{e}^{- \delta U / 2}
+        \mathrm{e}^{\frac{\delta}{2
+\varepsilon} \Delta} \mathrm{e}^{- \delta
+        U / 2}, \qquad T_{\delta}  (\varphi,
+\varphi') \propto \exp \left( -
+        \frac{\varepsilon}{2 \delta}  \sum_x
+(\varphi_x - \varphi_x')^2 -
+        \frac{\delta}{2}  (U (\varphi) + U (\varphi'))
+\right),\)
+      </center>
+      <p>
+        and <font color="#620000">\(T_{\delta}^{\lfloor \tau / \delta \rfloor} \to
+        \mathrm{e}^{- \tau
+H_{\varepsilon}}\)</font> (Trotter).
+      </p>
+      <p>
+        Space-time lattice <font color="#620000">\(\Lambda = (\delta \mathbb{Z}/
+        T\mathbb{Z}) \times (\varepsilon \mathbb{Z}/
+L\mathbb{Z})\)</font>,
+        <font color="#620000">\(T = J \delta\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \text{Tr} (T_{\delta}^J) \propto \int \mathrm{e}^{-
+        S_{\delta, \varepsilon}
+(\varphi)} \prod_{u \in \Lambda} \mathrm{d}
+        \varphi_u,\)
+      </center>
+      <center>
+        \(\displaystyle S_{\delta, \varepsilon} (\varphi) = \sum_{(\tau, x)}
+        \varepsilon \delta \left[
+\tfrac{1}{2} (\partial^{\delta}_{\tau}
+        \varphi)^2 + \tfrac{1}{2}
+(\nabla_{\varepsilon} \varphi)^2 +
+        \tfrac{1}{2} m^2 \varphi^2 + V (\varphi)
+\right] .\)
+      </center>
+      <p>
+        <strong>The Minkowski metric has become Euclidean.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Feynman&ndash;Kac&ndash;Nelson
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Lattice Gibbs measure <font color="#620000">\(\mu^{T, L}_{\delta, \varepsilon}
+        (\mathrm{d} \varphi) = Z^{- 1} \mathrm{e}^{-
+S_{\delta, \varepsilon}
+        (\varphi)} \prod_u \mathrm{d} \varphi_u\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \frac{\text{Tr} (F_1 T_{\delta}^{k_1} F_2 \cdots
+        F_n
+T_{\delta}^{k_n})}{\text{Tr} (T_{\delta}^J)} = \int F_1
+        (\varphi_{\tau_1})
+\cdots F_n (\varphi_{\tau_n})  \hspace{0.17em}
+        \mu^{T, L}_{\delta,
+\varepsilon} (\mathrm{d} \varphi) .\)
+      </center>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Proposition.
+        </strong></font></font><i><center>
+          \(\displaystyle \langle \Omega_{\varepsilon}, F_1 \mathrm{e}^{-
+          (\tau_1 - \tau_2) \bar{H}} F_2
+\cdots F_n \Omega_{\varepsilon}
+          \rangle = \lim_{T \to \infty} \lim_{\delta \to
+0}  \int F_1
+          (\varphi_{\tau_1}) \cdots F_n (\varphi_{\tau_n})
+          \hspace{0.17em}
+\mathrm{d} \mu^{T, L}_{\delta, \varepsilon} .\)
+        </center></i>
+      </p>
+      <p>
+        <b>Sketch.</b> Gaussian factor <font color="#620000">\(=\)</font> Brownian
+        loops with diffusion <font color="#620000">\(\varepsilon^{- 1}\)</font>; <font
+        color="#620000">\(\delta \sum_{\tau} U (\varphi_{\tau})\)</font> is a Riemann
+        sum for <font color="#620000">\(\int_0^T U (\omega_{\tau}) \mathrm{d}
+        \tau\)</font>; then <font color="#620000">\(T \to \infty\)</font> uses the
+        spectral gap.
+      </p>
+      <p>
+        <strong>Vacuum expectations in imaginary time are moments of a
+        classical probability measure.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Example: one oscillator and the Ornstein&ndash;Uhlenbeck process
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <font color="#620000">\(H = - \frac{1}{2} \partial_q^2 + \frac{1}{2} m^2
+            q^2\)</font>,<span style="margin-left: 1em"></span><font color="#620000">\(\Omega (q) \propto
+            \mathrm{e}^{- mq^2 / 2}\)</font>,<span style="margin-left: 1em"></span><font color="#620000">\(E_0
+            = \frac{m}{2}\)</font>.
+          </p><ul>
+            <li>
+              <p>
+                Ground-state transform: <font color="#620000">\(\Omega^{- 1}  \bar{H}
+                \hspace{0.17em} \Omega = - \tfrac{1}{2} \partial_q^2 +
+mq
+                \partial_q\)</font>, minus the generator of <font color="#620000">\(\mathrm{d}
+                X = - mX \mathrm{d} t + \mathrm{d} B\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Schwinger function <font color="#620000">\(\langle \Omega, q
+                \hspace{0.17em} \mathrm{e}^{- \tau \bar{H}} q
+\hspace{0.17em}
+                \Omega \rangle = \dfrac{\mathrm{e}^{- m \tau}}{2 m}\)</font>.
+              </p>
+            </li>
+            <li>
+              <p>
+                This is <font color="#620000">\((- \partial_{\tau}^2 + m^2)^{-
+                1}\)</font>: the <strong>GFF in <font color="#620000">\(d =
+                1\)</font></strong>.
+              </p>
+            </li>
+          </ul></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p style="margin-top: 2pt">
+            <img class="image" src="cqft_slides_L1-3.png" width="46%" alt="Figure from Constructive quantum field theory — Lecture 1 (slides)" decoding="async" loading="lazy"><br /> A sample of the stationary OU
+            process, <font color="#620000">\(m = 1\)</font>.
+          </p></td>
+        </tr></tbody>
+      </table>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070">Notes, Exercise 2.2</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The space-time lattice
+      </div>
+      <p>
+
+      </p>
+      <center>
+        <img src="cqft_slides_L1-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 21.1832457912458em" alt="Figure from Constructive quantum field theory — Lecture 1 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        Rows are quantum configurations at fixed imaginary time; the transfer
+        matrix connects consecutive rows. As <font color="#620000">\(T \to
+        \infty\)</font>, the rows form a stationary Markov process whose
+        one-time marginal is <font color="#620000">\(\Omega_{\varepsilon} (\varphi)^2
+        \mathrm{d} \varphi\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Classical statistical mechanics
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Isotropic lattice <font color="#620000">\(\delta = \varepsilon\)</font>:
+      </p>
+      <center>
+        \(\displaystyle S_{\varepsilon} (\varphi) = \sum_{\langle u, v
+        \rangle} \tfrac{1}{2}
+(\varphi_u - \varphi_v)^2 + \varepsilon^2
+        \sum_u \left[ \tfrac{1}{2} m^2
+\varphi_u^2 + V (\varphi_u) \right] .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\mu_{\varepsilon} \propto \prod_{\langle u, v
+            \rangle} \mathrm{e}^{-
+\frac{1}{2}  (\varphi_u - \varphi_v)^2}
+            \prod_u \nu_{\varepsilon} (\mathrm{d}
+\varphi_u)\)</font>, <span
+            style="margin-left: 1em"></span> <font color="#620000">\(\nu_{\varepsilon} (\mathrm{d} a) =
+            \mathrm{e}^{- \varepsilon^2  (\frac{1}{2}
+m^2 a^2 + V (a))}
+            \mathrm{d} a\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            A <strong>ferromagnetic nearest-neighbour spin system</strong>
+            with unbounded spins: short-range classical statistical mechanics.
+          </p>
+        </li>
+        <li>
+          <p>
+            In dimension <font color="#620000">\(d\)</font>: <font color="#620000">\(\varepsilon^{d
+            - 2}  \sum_{\langle u, v \rangle}\)</font> and <font color="#620000">\(\varepsilon^d
+            \sum_u\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Nearest-neighbour <font color="#620000">\(\Rightarrow\)</font>
+            <strong>reflection positive</strong>: the Euclidean shadow of
+            <font color="#620000">\(\mathrm{e}^{- \varepsilon H} \geq 0\)</font>.
+            Conversely, RP <font color="#620000">\(\Rightarrow\)</font> Hilbert space
+            and <font color="#620000">\(H \geq 0\)</font> (Exercises 2.5, 2.7).
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        A dictionary
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Quantum (real time)</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Euclidean field theory</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Statistical mechanics</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">Hilbert space positivity, <font color="#620000">\(H \geq
+            0\)</font></td>
+            <td style="text-align: center; vertical-align: middle">reflection positivity</td>
+            <td style="text-align: center; vertical-align: middle">RP of n.n. interactions</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\mathrm{e}^{- \varepsilon
+            H}\)</font></td>
+            <td style="text-align: center; vertical-align: middle">time translation by <font color="#620000">\(\varepsilon\)</font></td>
+            <td style="text-align: center; vertical-align: middle">transfer matrix</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">vacuum <font color="#620000">\(\Omega\)</font></td>
+            <td style="text-align: center; vertical-align: middle">infinite-volume measure</td>
+            <td style="text-align: center; vertical-align: middle">infinite-volume Gibbs state</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">inverse temperature <font color="#620000">\(\beta\)</font></td>
+            <td style="text-align: center; vertical-align: middle">length of the time circle</td>
+            <td style="text-align: center; vertical-align: middle">&mdash;</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">mass gap <font color="#620000">\(E_1 - E_0\)</font></td>
+            <td style="text-align: center; vertical-align: middle">exponential decay</td>
+            <td style="text-align: center; vertical-align: middle">inverse correlation length</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">continuum limit</td>
+            <td style="text-align: center; vertical-align: middle">UV cutoff <font color="#620000">\(\varepsilon \to
+            0\)</font></td>
+            <td style="text-align: center; vertical-align: middle">critical point, scaling limit</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">renormalisation</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">counterterms</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">tuning to criticality</td>
+          </tr></tbody>
+        </table>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Continuum limit <font color="#620000">\(=\)</font> critical point
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            In lattice units the mass is <font color="#620000">\(\varepsilon m \to
+            0\)</font>: correlation length <font color="#620000">\(\xi \approx
+            (\varepsilon m)^{- 1} \to \infty\)</font> lattice spacings.
+          </p>
+        </li>
+        <li>
+          <p>
+            Continuum QFT <font color="#620000">\(=\)</font> <strong>scaling limit of
+            short-range spin systems approaching criticality</strong>
+            (Wilson). Conversely, RP critical models with nontrivial scaling
+            limits give candidate QFTs.
+          </p>
+        </li>
+        <li>
+          <p>
+            Griffiths&ndash;Simon: <font color="#620000">\(\varphi^4\)</font> spins as
+            limits of normalised sums of ferromagnetically coupled Ising
+            spins; critical 4D Ising and <font color="#620000">\(\varphi^4_4\)</font>
+            have Gaussian scaling limits (ADC 2021).
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>Renormalisation already appears</strong>
+        </p>
+        <p>
+          For <font color="#620000">\(V = \lambda a^4\)</font> and fixed <font color="#620000">\((m,
+          \lambda)\)</font> the limit is trivial: <font color="#620000">\(c_{\varepsilon}
+          =\mathbb{E} [\varphi_u^2] = \frac{1}{2 \pi}
+          \log
+\frac{1}{\varepsilon m} + O (1) \to \infty\)</font>. Take <font
+          color="#620000">\(V_{\varepsilon} (a) = \lambda (a^4 - 6 c_{\varepsilon}
+          a^2)\)</font>, i.e. <font color="#620000">\(\lambda : a^4\)</font>: up to a
+          constant. Enough in <font color="#620000">\(d = 2\)</font>; not in <font
+          color="#620000">\(d = 3\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Path integrals
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Formally, as <font color="#620000">\(\varepsilon \to 0\)</font> and <font
+        color="#620000">\(L, T \to \infty\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \mu (\mathrm{d} \varphi) \backprime\backprime = "Z^{-
+        1} \exp \left( -
+\int_{\mathbb{R}^d} \left[ \tfrac{1}{2} | \nabla
+        \varphi |^2 + \tfrac{1}{2}
+m^2 \varphi^2 + V (\varphi) \right]
+        \mathrm{d} x \right) \mathcal{D} \varphi .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            Neither <font color="#620000">\(\mathcal{D} \varphi\)</font> nor the action
+            make sense: typical <font color="#620000">\(\varphi\)</font> are
+            distributions.
+          </p>
+        </li>
+        <li>
+          <p>
+            The Gaussian part defines the <strong>Gaussian free field</strong>
+            <font color="#620000">\(\mu_m\)</font> (next lecture).
+          </p>
+        </li>
+        <li>
+          <p>
+            Then <font color="#620000">\(\mu \propto \mathrm{e}^{- \int V_{\text{ren}}
+            (\varphi)} \mu_m\)</font>: meaningful in finite volume for <font
+            color="#620000">\(d = 2\)</font> (and, with more work, <font color="#620000">\(d =
+            3\)</font>).
+          </p>
+        </li>
+      </ul>
+      <p>
+        <b>Question.</b> Which measures on <font color="#620000">\(\mathcal{S}'
+        (\mathbb{R}^d)\)</font> correspond to relativistic QFTs?
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Osterwalder&ndash;Schrader axioms
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\hat{\mu} (f) = \int \mathrm{e}^{\mathrm{i} \varphi
+        (f)} \mu (\mathrm{d}
+\varphi)\)</font>,<span style="margin-left: 1em"></span><font
+        color="#620000">\(\Theta (\tau, \textbf{x}) = (- \tau, \textbf{x})\)</font>.
+      </p>
+      <dl>
+        <p>
+          <dt>
+            OS0
+          </dt>
+          <dd>
+            <p>
+              <em>Analyticity:</em> <font color="#620000">\(z \mapsto \hat{\mu} (\sum_j
+              z_j f_j)\)</font> entire.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            OS1
+          </dt>
+          <dd>
+            <p>
+              <em>Regularity:</em> <font color="#620000">\(| \hat{\mu} (f) | \leq \exp
+              (c (\|f\|_{L^1} +\|f\|^p_{L^p}))\)</font>, <font color="#620000">\(p \in
+              [1, 2]\)</font>, complex <font color="#620000">\(f\)</font>.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            OS2
+          </dt>
+          <dd>
+            <p>
+              <em>Euclidean invariance.</em>
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            OS3
+          </dt>
+          <dd>
+            <p>
+              <em>Reflection positivity:</em> for real <font color="#620000">\(f_i\)</font>
+              supported in <font color="#620000">\(\{\tau > 0\}\)</font>, <font color="#620000">\((\hat{\mu}
+              (f_i - \Theta f_j))_{ij} \geq 0\)</font>.
+            </p>
+          </dd>
+        </p>
+        <p>
+          <dt>
+            OS4
+          </dt>
+          <dd>
+            <p>
+              <em>Ergodicity</em> under time translations.
+            </p>
+          </dd>
+        </p>
+      </dl>
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <font color="#800000"><font color="#800000"><strong>Theorem.
+        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Osterwalder&ndash;Schrader
+        1973/75) </strong></font></font></class>OS0&ndash;OS3 <font color="#620000">\(\Rightarrow\)</font>
+        the moments of <font color="#620000">\(\mu\)</font> are the Schwinger functions
+        of a unique Wightman theory; OS4 <font color="#620000">\(\Leftrightarrow\)</font>
+        unique vacuum.</i>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Reconstruction: the idea
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\mathcal{E}_+ =\)</font> functions of <font color="#620000">\(\varphi
+            |_{\{\tau > 0\}}\)</font>, with <font color="#620000">\((F, G)
+            =\mathbb{E}_{\mu} [\overline{\Theta F} \hspace{0.17em} G] \geq
+            0\)</font> by OS3.
+          </p>
+        </li>
+        <li>
+          <p>
+            Quotient by null vectors and complete: physical Hilbert space
+            <font color="#620000">\(\mathcal{H}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Time translations by <font color="#620000">\(t \geq 0\)</font> preserve
+            <font color="#620000">\(\mathcal{E}_+\)</font> and descend to a
+            self-adjoint contraction semigroup <font color="#620000">\(\mathrm{e}^{-
+            tH}\)</font>: <strong>positivity of the energy is recovered from
+            reflection positivity</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Vacuum <font color="#620000">\(=\)</font> class of <font color="#620000">\(1\)</font>;
+            analytic continuation <font color="#620000">\(\tau \to \mathrm{i}
+            t\)</font> gives the Wightman functions.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>The Euclidean strategy</strong>
+        </p>
+        <p>
+          (1) regularise (lattice, torus); (2) renormalise; (3) uniform
+          estimates, remove cutoffs; (4) verify OS axioms (RP survives limits,
+          Euclidean invariance recovered, regularity, clustering); (5) prove
+          non-Gaussianity.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Exercises and reading
+      </div>
+      <p>
+
+      </p>
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <b>Exercises</b> (numbering of the notes)
+          </p><ul>
+            <li>
+              <p>
+                1.3 Which restrictions of the free field make sense?
+              </p>
+            </li>
+            <li>
+              <p>
+                1.5&ndash;1.6 Canonical sum rule; generalised free fields.
+              </p>
+            </li>
+            <li>
+              <p>
+                2.2 Harmonic oscillator and Ornstein&ndash;Uhlenbeck.
+              </p>
+            </li>
+            <li>
+              <p>
+                2.4 Correlation length and criticality.
+              </p>
+            </li>
+            <li>
+              <p>
+                2.5, 2.7 Reflection positivity on the lattice; toy OS
+                reconstruction.
+              </p>
+            </li>
+          </ul></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p>
+            <b>Reading</b>
+          </p><ul>
+            <li>
+              <p>
+                Streater&ndash;Wightman, <em>PCT, Spin and Statistics, and All
+                That</em>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Glimm&ndash;Jaffe, <em>Quantum Physics</em>, Euclidean
+                chapters.
+              </p>
+            </li>
+            <li>
+              <p>
+                Simon, <em>Functional Integration and Quantum Physics</em>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Osterwalder&ndash;Schrader, CMP 31 (1973), 42 (1975).
+              </p>
+            </li>
+          </ul></td>
+        </tr></tbody>
+      </table>
+      <p>
+        <b>Next lecture:</b> the Gaussian free field.
+      </p>
+    </div>
+  </body>
+</html>

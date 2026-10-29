@@ -66,6 +66,30 @@ publication date. A modified or untracked page temporarily uses its filesystem
 modification time. Rebuilding without content changes therefore leaves feed
 dates stable.
 
+## SISSA 2026 course materials
+
+`src/teaching/sissa-2026/` holds the native notes and slides, their two TeXmacs
+style packages, and the author's HTML CSS, scripts and icon. The normal build
+exports these sources to `docs/teaching/sissa-2026/`, with MathJax enabled only
+for this course. Images are regenerated from the embedded TeXmacs assets.
+The postprocessor preserves the standalone contents panel and slide structure,
+and adds metadata, course navigation and the website theme control.
+It also restores equation anchors omitted by TeXmacs' MathJax export, using
+the document's reference metadata and rendered equation numbers; cross-links
+between lectures are checked before publication.
+
+Copy revised native files byte for byte into this source folder. Use a full
+build after changing either style package; incremental export tracks document
+timestamps, not style dependencies. Do not copy hand-exported HTML over the
+generated pages. The author's standalone exports can be used for comparison.
+
+PDFs are supplied exports, stored as `store/sissa/2026/cqft_notes_LN.pdf` and
+`cqft_slides_LN.pdf`; the website build does not regenerate them. For lectures
+3–6 the native notes are named `cqft_lectureN.tm`, and the supplied slide PDFs
+have the suffix `-print.pdf`. Keep the course page links and revision dates in
+sync. The individual supplements are discoverable through the course page and
+sitemap; only the course page is listed in the article index and Atom feed.
+
 ## Editing safely
 
 Read [AGENTS.md](AGENTS.md) before making changes. Treat `src/` as the source of

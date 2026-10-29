@@ -37,9 +37,11 @@
     of energy and continuation to imaginary time; the Feynman--Kac
     representation, lattice spin systems and the Osterwalder--Schrader
     axioms.
-    [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L1.pdf>]
-    [<notes-store|script (PDF)|sissa/2026/cqft_notes_L1.pdf>]
-    Slides and script revised 21 October 2026.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L1.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_notes_L1.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L1.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L1.tm>].
+    Revised 29 October 2026.
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
     free field. Construction on the torus and Euclidean space; reflection
@@ -47,9 +49,11 @@
     and Symanzik's Brownian-path representation; Wick products; Gaussian
     integration by parts and the Dyson--Schwinger equation; parabolic and
     elliptic stochastic quantisation.
-    [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L2.pdf>]
-    [<notes-store|script (PDF)|sissa/2026/cqft_notes_L2.pdf>]
-    Slides and script revised 22 October 2026.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L2.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>].
+    Revised 29 October 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
     observables, the Polchinski flow and forward--backward equations.
@@ -58,20 +62,41 @@
     equation and the variational structure of the flow. Additional material
     covers products of observables, perturbation theory, counterterms and
     Dyson--Schwinger equations at every scale.
-    [<notes-store|slides (PDF)|sissa/2026/cqft_slides_L3.pdf>]
-    [<notes-store|draft script (PDF)|sissa/2026/cqft_notes_L3.pdf>]
-    Slides and script revised 24 October 2026.
+    Draft notes: [<notes-store|PDF|sissa/2026/cqft_notes_L3.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>].
+    Revised 29 October 2026.
   </itemize>
 
-  <subsection*|Provisional lecture plans>
+  <subsection*|Provisional materials for Lectures 4--6>
 
-  The following plans are provisional and may be adjusted as the course
-  progresses.
+  An FBSDE construction of <math|\<phi\><rsup|4><rsub|3>> on the torus.
+  These materials may be adjusted as the course progresses.
 
   <\itemize>
-    <item><with|font-series|bold|Lectures 4--6: An FBSDE construction of
-    <math|\<phi\><rsup|4><rsub|3>> on the torus.>
+    <item><with|font-series|bold|Lecture 4>: The Wetterich FBSDE, two renormalisations and the large-field problem.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>].
+
+    <item><with|font-series|bold|Lecture 5>: A priori estimates for the forward--backward system.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>].
+
+    <item><with|font-series|bold|Lecture 6>: UV stability, compactness and the limiting FBSDE.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>].
+
   </itemize>
+
+  Materials revised 29 October 2026. In the HTML slides, use the arrow
+  keys or click to navigate; press <verbatim|o> for an overview.
 
   <subsection*|Schedule>
 
