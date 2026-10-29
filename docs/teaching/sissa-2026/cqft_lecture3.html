@@ -35,13 +35,13 @@
     <link href="cqft-icon.svg" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
+    <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
     <script src="cqft-notes.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 3 (notes), on the personal website of Massimiliano Gubinelli.">
     <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_lecture3.html">
     <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
-    <link rel="stylesheet" href="/resources/sissa-materials.css">
   </head>
   <body>
     <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 3 (notes)</h1>
@@ -752,13 +752,16 @@ t + \dot{Q}_t^{1 / 2}
 \rangle\). By Girsanov's theorem,
       \(W^{\mathbb{P}}_t = W_t + \int_0^t \dot{Q}_s^{1 / 2} DV_s (X_s)
       \mathrm{d} s\) is a \(\mathbb{P}\)-Brownian motion, which is <class
-      style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>. Differentiating <class style="font-style: normal">(<a href="#eq:Vt">5.3</a>)</class> gives \(DV_t (\phi) = \mu_t^{\phi}  (DV_T)\),
+      style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>. Differentiating <class style="font-style: normal">(<a
+      href="#eq:Vt">5.3</a>)</class> gives \(DV_t (\phi) = \mu_t^{\phi}  (DV_T)\),
       which is the second identity. Alternatively, It&ocirc;'s formula for
-      \(DV_t (\Phi_t)\), together with the derivative of <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>, shows that its drift vanishes. Here one uses
+      \(DV_t (\Phi_t)\), together with the derivative of <class style="font-style: normal">(<a
+      href="#eq:polchinski">5.6</a>)</class>, shows that its drift vanishes. Here one uses
       that \(D^2 V_t\) is symmetric.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      Read as an equation for an unknown pair \((\Phi, F)\), <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class> is a <em>forward&ndash;backward</em> system [<a
+      Read as an equation for an unknown pair \((\Phi, F)\), <class style="font-style: normal">(<a
+      href="#eq:fbsde">5.7</a>)</class> is a <em>forward&ndash;backward</em> system [<a
       href="#bib-MY99">MY99</a>]. The field is driven forward in resolution by a force
       that is determined backward, as the conditional expectation of a
       functional of the terminal field:
@@ -851,7 +854,8 @@ c_T)\)
               t}\), \(T = 5\), \(V_T (x) = \frac{1}{2} x^4 - \frac{3}{2}
               x^2\). Left: the effective force \(F_t = - V_t'\) is almost
               linear at low resolution and develops the double-well structure
-              as \(t \to T\). Centre: paths of the FBSDE <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>, which split between the two wells
+              as \(t \to T\). Centre: paths of the FBSDE <class style="font-style: normal">(<a
+              href="#eq:fbsde">5.7</a>)</class>, which split between the two wells
               (stochastic localisation). Right: histogram of \(\Phi_T\) (\(2
               \cdot 10^4\) paths) against the density of \(\nu_T\).
             </p></font>
@@ -905,7 +909,8 @@ c_T)\)
       <h5>Tangent observables.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         Let \(V_T^{\theta}\) depend on a coupling \(\theta\), and let \(U_t
-        := \partial_{\theta} V_t^{\theta}\). Differentiating <class style="font-style: normal">(<a href="#eq:Vt">5.3</a>)</class> gives \(U_t (\Phi_t) =\mathbb{E}^{\theta}_t
+        := \partial_{\theta} V_t^{\theta}\). Differentiating <class style="font-style: normal">(<a
+        href="#eq:Vt">5.3</a>)</class> gives \(U_t (\Phi_t) =\mathbb{E}^{\theta}_t
         [\partial_{\theta} V_T^{\theta} (\Phi_T)]\), an observable, and
       </div>
     </p>
@@ -973,7 +978,8 @@ D^2 F_t), \qquad F_T = -
         \langle \varphi, \varphi \rangle\), \(\kappa > 0\). (a) Show that
         \(V_t (\varphi) = \frac{1}{2}  \langle \varphi, \kappa (1 + \kappa
         Q_{T, t})^{-
-1} \varphi \rangle + \text{const}\) solves <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>. (b) Show that \(\nu_T\) is Gaussian with
+1} \varphi \rangle + \text{const}\) solves <class style="font-style: normal">(<a
+        href="#eq:polchinski">5.6</a>)</class>. (b) Show that \(\nu_T\) is Gaussian with
         covariance \((Q_T^{- 1} + \kappa)^{- 1}\): for \(Q_T \to (m^2 -
         \Delta)^{- 1}\) this is the GFF of mass \((m^2 + \kappa)^{1 / 2}\).
         (c) Write <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class> explicitly. It is a
@@ -1011,7 +1017,8 @@ D^2 F_t), \qquad F_T = -
     <h2 id="auto-20"><a id="sec:wetterich"></a>6<span style="margin-left: 1em"></span>The FBSDE in force coordinates:
     the Wetterich equation<span style="margin-left: 1em"></span></h2>
     <p>
-      In this section the forward&ndash;backward system <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class> is the primary object. We look for the
+      In this section the forward&ndash;backward system <class style="font-style: normal">(<a
+      href="#eq:fbsde-system">5.8</a>)</class> is the primary object. We look for the
       coordinates in which it is simplest. They remove the predictable part of
       the forward dynamics, and they integrate exactly the bilinear (tree)
       part of the force flow <class style="font-style: normal">(<a href="#eq:burgers">5.12</a>)</class>. In the
@@ -1081,7 +1088,8 @@ W)\) has
       The drift \(\dot{Q}_t F_t\) of the state is predictable, and the costate
       is a martingale. Hence the drift that remains to be accumulated on \([t,
       T]\) is predicted, at resolution \(t\), by transporting the current
-      state with the current costate along the free flow <class style="font-style: normal">(<a href="#eq:shear">6.1</a>)</class>.
+      state with the current costate along the free flow <class style="font-style: normal">(<a
+      href="#eq:shear">6.1</a>)</class>.
     </p>
     <p style="margin-top: 1em">
       <strong>Proposition <class style="font-style: normal">6.1</class>. </strong><i><class style="font-style: normal"><strong>(The
@@ -1133,7 +1141,8 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
     </table>
     <p>
       a martingale, minus the drift still expected on the unresolved scales,
-      which vanishes at \(t = T\). The noise of \(\psi\) in <class style="font-style: normal">(<a href="#eq:psi-noise">6.3</a>)</class> has two sources: the fresh fluctuation of the
+      which vanishes at \(t = T\). The noise of \(\psi\) in <class style="font-style: normal">(<a
+      href="#eq:psi-noise">6.3</a>)</class> has two sources: the fresh fluctuation of the
       shell, \(\dot{Q}_t^{1 / 2} \mathrm{d} W_t\), and the revision of the
       forecast of the remaining drift, \(S_t \hspace{0.17em} \mathrm{d} F_t\).
       The coupling between the forward and the backward equations, which was
@@ -1180,7 +1189,8 @@ H_t (\psi) S_t^{- 1}\).
     <p style="margin-top: 1em">
       <strong>Theorem <class style="font-style: normal">6.2</class>. </strong><i><class style="font-style: normal"><strong>(FBSDE
       in force coordinates) </strong></class><a id="thm:transformed"></a> <class style="font-style: normal">(formal)</class>
-      In the coordinates \((\psi, \mathscr{F})\), the system <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class> becomes</i>
+      In the coordinates \((\psi, \mathscr{F})\), the system <class style="font-style: normal">(<a
+      href="#eq:fbsde-system">5.8</a>)</class> becomes</i>
     </p>
     <i><a id="eq:transformed-fbsde"></a><table width="100%">
       <tr>
@@ -1239,7 +1249,8 @@ H_t^{\ast} .\)
       the randomness of the noise and of the force revisions, and the
       nonlinearity has moved into the field dependence of \(\mathcal{C}_t\).
       None of this uses a gradient structure or a Gaussian convolution:
-      Theorem <a href="#thm:transformed">6.2</a> holds for any FBSDE of the form <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class> with a Markov martingale force, gradient or not,
+      Theorem <a href="#thm:transformed">6.2</a> holds for any FBSDE of the form <class style="font-style: normal">(<a
+      href="#eq:fbsde-system">5.8</a>)</class> with a Markov martingale force, gradient or not,
       for which the coordinate change is invertible. For a general terminal
       force \(F_T =\mathfrak{f} (\Phi_T)\), replace \(DV_T\) by
       \(-\mathfrak{f}\) in <class style="font-style: normal">(<a href="#eq:transformed-fbsde">6.7</a>)</class> and <class
@@ -1366,7 +1377,8 @@ H_t^{\ast} .\)
       whose optimality conditions \(x = \psi + S_t D \Gamma_t (\psi)\), \(DV_t
       (x) = D \Gamma_t (\psi)\) are <class style="font-style: normal">(<a href="#eq:coord">6.5</a>)</class>.
       It is well defined by the same convexity: up to the change of variable
-      \(j = S_t^{- 1} x\), it is a Legendre transform. We use <class style="font-style: normal">(<a href="#eq:moreau">6.11</a>)</class> to fix the additive constant in \(\Gamma_t\).
+      \(j = S_t^{- 1} x\), it is a Legendre transform. We use <class style="font-style: normal">(<a
+      href="#eq:moreau">6.11</a>)</class> to fix the additive constant in \(\Gamma_t\).
       Figure <a href="#fig:shear">6.2</a> shows the construction in zero dimensions.
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
@@ -1453,7 +1465,8 @@ V_T (\psi)\)
       up to a function of \(t\) alone. That this function is \(- \frac{1}{2}
       \text{Tr} (\dot{\mathscr{R}}_t S_t)\) with the normalisation <class
       style="font-style: normal">(<a href="#eq:moreau">6.11</a>)</class> follows from the Polchinski equation
-      by the envelope theorem (Exercise <a href="#ex:envelope">6.5</a>). For <class style="font-style: normal">(<a href="#eq:wetterich">6.13</a>)</class>, note that \(D^2 \Gamma^{\text{EAA}}_t +
+      by the envelope theorem (Exercise <a href="#ex:envelope">6.5</a>). For <class style="font-style: normal">(<a
+      href="#eq:wetterich">6.13</a>)</class>, note that \(D^2 \Gamma^{\text{EAA}}_t +
       \mathscr{R}_t = D^2 \Gamma_t + S_t^{- 1}\). For the endpoints: \(S_T =
       0\); and at \(t = 0\), \(S_0 = Q_T\), so <class style="font-style: normal">(<a href="#eq:moreau">6.11</a>)</class>
       identifies \(\frac{1}{2}  \langle x, Q_T^{- 1} x \rangle - V_0 (x)\), up
@@ -1612,7 +1625,8 @@ S_t^{- 1} (y - x)
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">6.1</class>.
         </strong><class style="font-style: normal"><strong>(Stochastic maximum principle)
-        </strong></class><a id="ex:pontryagin"></a> (a) For the control problem <class style="font-style: normal">(<a href="#eq:BD">7.1</a>)</class>, perturb an optimal control \(u \to u +
+        </strong></class><a id="ex:pontryagin"></a> (a) For the control problem <class style="font-style: normal">(<a
+        href="#eq:BD">7.1</a>)</class>, perturb an optimal control \(u \to u +
         \varepsilon v\) and show that \(p_t := \mathbb{E}_t  [- DV_T
         (X^u_T)]\) satisfies \(u_t = \dot{Q}_t^{1 / 2} p_t\). Identify \(p\)
         with the force \(F\) of <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>. (b)
@@ -1627,7 +1641,8 @@ S_t^{- 1} (y - x)
         id="ex:characteristics"></a> (a) Show that the transport equation \(\partial_t F + DF
         [\dot{Q} F] = 0\) is solved by \(F_t (x) = F_T (y)\), \(y = x + S_t
         F_T (y)\), and that its characteristics are the trajectories of <class
-        style="font-style: normal">(<a href="#eq:shear">6.1</a>)</class>. (b) Verify that <class style="font-style: normal">(<a href="#eq:hopf-lax">6.16</a>)</class> solves \(\partial_t V = \frac{1}{2}  \langle
+        style="font-style: normal">(<a href="#eq:shear">6.1</a>)</class>. (b) Verify that <class style="font-style: normal">(<a
+        href="#eq:hopf-lax">6.16</a>)</class> solves \(\partial_t V = \frac{1}{2}  \langle
         DV, \dot{Q} DV \rangle\), and that it is the limit \(\hbar \to 0\) of
         \(- \hbar \log \int \mathrm{e}^{- V_T  (x + \zeta) / \hbar} \mu^{\hbar
         S_t}
@@ -1664,7 +1679,8 @@ S_t^{- 1} (y - x)
         Differentiate <class style="font-style: normal">(<a href="#eq:moreau">6.11</a>)</class> in \(t\) at
         fixed \(x\) (envelope theorem), and use <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>
         to show that the quadratic terms cancel and \(\partial_t \Gamma_t = -
-        \frac{1}{2} \text{Tr} (\dot{Q}_t D^2 V_t)\). Deduce <class style="font-style: normal">(<a href="#eq:wetterich-Gamma">6.12</a>)</class> with the stated constant.</font>
+        \frac{1}{2} \text{Tr} (\dot{Q}_t D^2 V_t)\). Deduce <class style="font-style: normal">(<a
+        href="#eq:wetterich-Gamma">6.12</a>)</class> with the stated constant.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1673,7 +1689,8 @@ S_t^{- 1} (y - x)
         </strong><class style="font-style: normal"><strong>(Gaussian check) </strong></class>For
         \(V_T (\varphi) = \frac{\kappa}{2}  \langle \varphi, \varphi
         \rangle\), show that \(\Gamma_t (\psi) = \frac{\kappa}{2}  \langle
-        \psi, \psi \rangle + \text{const}\), and solve the FBSDE <class style="font-style: normal">(<a href="#eq:transformed-fbsde">6.7</a>)</class> explicitly. Compare with Exercise <a href="#ex:quadratic">5.1</a>.</font>
+        \psi, \psi \rangle + \text{const}\), and solve the FBSDE <class style="font-style: normal">(<a
+        href="#eq:transformed-fbsde">6.7</a>)</class> explicitly. Compare with Exercise <a href="#ex:quadratic">5.1</a>.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1928,7 +1945,8 @@ X^u := X + I (u),\)
           \(\mathcal{W}_T^{(L)} (f)\) in <class style="font-style: normal">(<a href="#eq:generating">7.4</a>)</class>
           is a difference of two extensive infima, and it stays bounded as \(L
           \to \infty\). Its variational characterisation, through the
-          infinite-volume Euler&ndash;Lagrange equation <class style="font-style: normal">(<a href="#eq:fbsde-inf">7.5</a>)</class>, is the basis of the infinite-volume analysis
+          infinite-volume Euler&ndash;Lagrange equation <class style="font-style: normal">(<a
+          href="#eq:fbsde-inf">7.5</a>)</class>, is the basis of the infinite-volume analysis
           of \(\Phi^4_2\) and \(\exp (\Phi)_2\) in [<a href="#bib-BG24">BG24</a>].
         </p>
       </li>
@@ -1945,7 +1963,8 @@ X^u := X + I (u),\)
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">7.1</class>.
         </strong><class style="font-style: normal"><strong>(Optimal drift) </strong></class>(a)
-        Derive <class style="font-style: normal">(<a href="#eq:EL">7.3</a>)</class> from <class style="font-style: normal">(<a href="#eq:BD">7.1</a>)</class>, and check that the optimal \(u\) is a
+        Derive <class style="font-style: normal">(<a href="#eq:EL">7.3</a>)</class> from <class style="font-style: normal">(<a
+        href="#eq:BD">7.1</a>)</class>, and check that the optimal \(u\) is a
         martingale up to the factor \(\dot{Q}^{1 / 2}\). (b) For the quadratic
         interaction of Exercise <a href="#ex:quadratic">5.1</a>, compute the optimal drift
         and the value <class style="font-style: normal">(<a href="#eq:BD">7.1</a>)</class>
@@ -2630,7 +2649,8 @@ F_t\). The drift cancels,
       \(Q_t k = J_t h\), and recall \(F_t = - DV_t (\Phi_t)\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      Formally letting \(T \to \infty\), \(K \to A\), and <class style="font-style: normal">(<a href="#eq:eta">10.1</a>)</class> becomes an exact identity between observables at
+      Formally letting \(T \to \infty\), \(K \to A\), and <class style="font-style: normal">(<a
+      href="#eq:eta">10.1</a>)</class> becomes an exact identity between observables at
       every resolution:
     </p>
     <a id="eq:field-eq-scale"></a><table width="100%">

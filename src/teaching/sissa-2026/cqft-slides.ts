@@ -69,7 +69,7 @@
     </src-comment>
   </active*>
 
-  <assign|html-extra-css|<tuple|https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap|cqft-slides.css>>
+  <assign|html-extra-css|<tuple|https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap|cqft-slides.css|/resources/sissa-materials.css>>
 
   <assign|html-extra-javascript-src|<tuple|cqft-slides.js>>
 

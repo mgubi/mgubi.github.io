@@ -74,9 +74,10 @@ exports these sources to `docs/teaching/sissa-2026/`, with MathJax enabled only
 for this course. Images are regenerated from the embedded TeXmacs assets.
 The postprocessor preserves the standalone contents panel and slide structure,
 and adds metadata, course navigation and the website theme control.
-It also restores equation anchors omitted by TeXmacs' MathJax export, using
-the document's reference metadata and rendered equation numbers; cross-links
-between lectures are checked before publication.
+The supplied style packages include the website stylesheet directly. A narrow
+post-processing repair restores equation anchors omitted by TeXmacs' MathJax
+export, using native reference metadata and rendered equation numbers. It
+does not change equation content. Cross-links are checked before publication.
 
 Copy revised native files byte for byte into this source folder. Use a full
 build after changing either style package; incremental export tracks document

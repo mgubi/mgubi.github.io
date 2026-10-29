@@ -319,11 +319,8 @@ def initial_transform(path: Path) -> str:
         kind = 'slides' if material[1] == 'slides_L' else 'notes'
         title = f'Constructive quantum field theory — Lecture {material[2]} ({kind})'
         text = restore_course_equation_anchors(text, ROOT / 'src' / Path(relative).with_suffix('.tm'))
-        text = re.sub(r'\s*<link rel="stylesheet" href="/resources/sissa-materials.css">', '', text)
         text = modernize_head(text, relative, title)
         text = modernize_images(text, title, relative)
-        if 'href="/resources/sissa-materials.css"' not in text:
-            text = text.replace('  </head>', '    <link rel="stylesheet" href="/resources/sissa-materials.css">\n  </head>', 1)
         if 'class="cqft-page-title"' not in text:
             text = text.replace('<body>', '<body>\n    <h1 class="cqft-page-title">' + escape_attribute(title) + '</h1>\n    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>', 1)
         text = re.sub(r'</(?:meta|link|img)>', '', text)

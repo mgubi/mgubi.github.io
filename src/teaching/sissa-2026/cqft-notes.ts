@@ -21,7 +21,7 @@
     </src-comment>
   </active*>
 
-  <assign|html-extra-css|<tuple|https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap|cqft-notes.css>>
+  <assign|html-extra-css|<tuple|https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap|cqft-notes.css|/resources/sissa-materials.css>>
 
   <assign|html-extra-javascript-src|<tuple|cqft-notes.js>>
 
