@@ -12,6 +12,11 @@
 
   <hrule>
 
+  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
+  constructive introduction to quantum field theory|Lectures at SISSA,
+  Trieste, 20 October--6 November 2026, as part of the Probability and
+  Stochastic Analysis Trimester Programme.|29 Oct 2026>
+
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|27 Oct 2026>
 
@@ -31,11 +36,6 @@
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|24 Oct 2026>
-
-  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
-  constructive introduction to quantum field theory|Lectures at SISSA,
-  Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|24 Oct 2026>
 
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>
