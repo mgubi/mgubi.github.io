@@ -12,14 +12,22 @@
 
   <hrule>
 
+  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
+  Oct 2026>
+
+  <notes-entry|teaching/lectures-euclidean-fields-st-flour-2025.tm|A
+  stochastic analysis perspective on Euclidean fields|Lectures at the 53rd
+  Saint-Flour Probability Summer School, 30 June--12 July 2025: lecture notes
+  and recordings.|30 Oct 2026>
+
+  <notes-entry|research/events.tm|Events|I travel around to meet other
+  mathematicians.|30 Oct 2026>
+
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|30 Oct 2026>
 
   <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
   October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>
-
-  <notes-entry|research/events.tm|Events|I travel around to meet other
-  mathematicians.|30 Oct 2026>
 
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
@@ -62,9 +70,6 @@
   literate documents can explain the relationships between programming
   languages, with a Scheme/C++ example and a proposal for the development of
   <TeXmacs>.|21 Oct 2026>
-
-  <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|21
-  Oct 2026>
 
   <\notes-entry|curriculum-vitae.tm|Vita>
     Things that happened to me, professionally \U last updated September 2026
