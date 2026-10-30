@@ -126,21 +126,29 @@
     <no-break><pageref|auto-33>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Lecture 3. Stochastic
-    observables, the Polchinski flow and FBSDEs
+    quantisation and stochastic observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-34>>>
 
+    <with|par-left|3tab|<with|font-size|0.92|Lecture 4. The Polchinski flow
+    and forward\Ubackward equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-35>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|Lectures 5\U7.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-36>>>
+
     <with|par-left|3tab|<with|font-size|0.92|Homework and projects.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>>
+    <no-break><pageref|auto-37>>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References and
     further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36><vspace|0.5fn>
+    <no-break><pageref|auto-38><vspace|0.5fn>
 
     <with|par-left|3tab|<with|font-size|0.92|Guide.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37>>>
+    <no-break><pageref|auto-39>>>
   </table-of-contents>
 
   <section*|Introduction>
@@ -173,7 +181,7 @@
   Osterwalder\USchrader axioms. Lecture 2
   (Section<nbsp><hlink|3|cqft_notes_L2.tm#sec:gff> of its notes) studies the
   first example, the Gaussian free field. Section<nbsp><reference|app:plan>
-  outlines the first three lectures of the course.
+  outlines the plan of the course (seven lectures).
 
   <paragraph|Conventions.> <math|\<hbar\>=c=1>. Spacetime dimension is
   <math|d=1+s>, <math|s\<geq\>1> the number of space dimensions. Inner
@@ -1629,12 +1637,13 @@
 
   <section|The course><label|app:plan>
 
-  These notes cover the first of six two-hour lectures given at SISSA,
+  These notes cover the first of seven two-hour lectures given at SISSA,
   Trieste, in October\UNovember 2026, for graduate students in analysis,
-  probability or mathematical physics. Lectures 1\U3 have their own notes;
-  the content of Lectures 4\U6 is not yet settled. They will probably be
-  devoted to a construction of <math|\<Phi\><rsup|4><rsub|3>> on the torus
-  via the FBSDE of Lecture 3.
+  probability or mathematical physics. Each lecture has its own notes.
+  Lectures 1\U4 develop the general framework; Lectures 5\U7 give a
+  construction of <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE
+  of Lecture 4. Lectures 1\U3 were delivered in October 2026; Lectures 4\U7
+  are provisional, and Lecture 7 will not be delivered in class.
 
   <paragraph|Prerequisites.> Measure-theoretic probability and Itô calculus;
   the spectral theorem for self-adjoint operators; distributions and Fourier
@@ -1646,19 +1655,21 @@
   field: the Polchinski equation, its probabilistic form as a
   forward\Ubackward stochastic differential equation (FBSDE) for the field at
   increasing resolution, and the associated variational problem. Stochastic
-  quantisation, cluster expansions and correlation inequalities appear as
+  quantisation (Lecture 3) gives a first dynamical description of the free
+  field; cluster expansions and correlation inequalities appear as
   complementary approaches.
 
-  <big-table|<with|par-mode|center|font-size|0.84|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<table|<row|<cell|>|<cell|Lecture>|<cell|Main
+  <big-table|<with|par-mode|center|font-size|0.84|<tabular*|<tformat|<cwith|1|-1|2|2|cell-width|0.3par>|<cwith|1|-1|2|2|cell-hmode|exact>|<cwith|1|-1|2|2|cell-hyphen|t>|<cwith|1|-1|3|3|cell-width|0.55par>|<cwith|1|-1|3|3|cell-hmode|exact>|<cwith|1|-1|3|3|cell-hyphen|t>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<table|<row|<cell|>|<cell|Lecture>|<cell|Main
   results>>|<row|<cell|1>|<cell|Relativistic quantum fields and imaginary
   time>|<cell|No fields at a point; Källén\ULehmann; Wick rotation;
   Feynman\UKac; OS axioms>>|<row|<cell|2>|<cell|The Gaussian free
   field>|<cell|Construction; reflection positivity; Wick powers; DS
-  characterisation; parabolic and elliptic
-  SQ>>|<row|<cell|3>|<cell|Stochastic observables, the Polchinski flow and
-  FBSDEs>|<cell|Polchinski equation and FBSDE; force coordinates and the
-  Wetterich equation; Boué\UDupuis formula>>>>><label|tab:course>>|Lectures
-  1\U3.>
+  characterisation>>|<row|<cell|3>|<cell|Stochastic quantisation and
+  stochastic observables>|<cell|Parabolic and elliptic SQ; scale
+  decomposition; stochastic observables; products and
+  OPE>>|<row|<cell|4>|<cell|The Polchinski flow and FBSDEs>|<cell|Polchinski
+  equation and FBSDE; force coordinates and the Wetterich equation;
+  Boué\UDupuis formula>>>>><label|tab:course>>|Lectures 1\U4.>
 
   <paragraph|Lecture 1. Relativistic quantum fields and imaginary time>
   (Sections<nbsp><reference|sec:wightman> and <reference|sec:euclid>).
@@ -1677,39 +1688,53 @@
   (Section<nbsp><hlink|3|cqft_notes_L2.tm#sec:gff>). Construction on
   <math|\<bbb-T\><rsup|d>> and <math|\<bbb-R\><rsup|d>>; reflection
   positivity and the free Markov field; Euclidean Källén\ULehmann; Wick
-  powers; Gaussian integration by parts; DS characterisation; parabolic and
-  elliptic stochastic quantisation. <em|Proofs in class:>
-  Theorem<nbsp><hlink|3.2|cqft_notes_L2.tm#thm:existence>,
+  powers; Gaussian integration by parts; DS characterisation. <em|Proofs in
+  class:> Theorem<nbsp><hlink|3.2|cqft_notes_L2.tm#thm:existence>,
   Proposition<nbsp><hlink|3.4|cqft_notes_L2.tm#prop:RP>,
   Theorem<nbsp><hlink|3.9|cqft_notes_L2.tm#thm:wick>,
-  Theorem<nbsp><hlink|3.16|cqft_notes_L2.tm#thm:DS-unique>,
-  Theorem<nbsp><hlink|3.19|cqft_notes_L2.tm#thm:parabolic>,
-  Theorem<nbsp><hlink|3.21|cqft_notes_L2.tm#thm:elliptic>. <em|Exercises:>
+  Theorem<nbsp><hlink|3.16|cqft_notes_L2.tm#thm:DS-unique>. <em|Exercises:>
   Exercises<nbsp><hlink|3.3|cqft_notes_L2.tm#ex:regularity>,
   <hlink|3.6|cqft_notes_L2.tm#ex:wickexp>,
   <hlink|3.7|cqft_notes_L2.tm#ex:wick-thm>,
-  <hlink|3.8|cqft_notes_L2.tm#ex:DS-finite>,
-  <hlink|3.2|cqft_notes_L2.tm#ex:KL-euclid> and
-  <hlink|3.13|cqft_notes_L2.tm#ex:slices>. <em|Reading:>
-  <cite|She07|Jan97|DPZ14|ADG20>.
+  <hlink|3.8|cqft_notes_L2.tm#ex:DS-finite> and
+  <hlink|3.2|cqft_notes_L2.tm#ex:KL-euclid>. <em|Reading:>
+  <cite|She07|Jan97>.
 
-  <paragraph|Lecture 3. Stochastic observables, the Polchinski flow and
-  FBSDEs> (separate notes). Scale decomposition of the GFF and stochastic
-  observables; effective potentials and the Polchinski equation; the
+  <paragraph|Lecture 3. Stochastic quantisation and stochastic observables>
+  (separate notes). Parabolic and elliptic stochastic quantisation of the
+  GFF; scale decomposition of the GFF and stochastic observables; Wick powers
+  as observables in every dimension and the operator product expansion.
+  <em|Proofs in class:> Theorem<nbsp><hlink|4.2|cqft_lecture3.tm#thm:parabolic>,
+  Theorem<nbsp><hlink|4.4|cqft_lecture3.tm#thm:elliptic>. <em|Exercises:>
+  Exercises<nbsp><hlink|4.1|cqft_lecture3.tm#ex:invariance>,
+  <hlink|4.4|cqft_lecture3.tm#ex:slices>,
+  <hlink|5.1|cqft_lecture3.tm#ex:scale-GFF>,
+  <hlink|5.3|cqft_lecture3.tm#ex:brownian-obs> and
+  <hlink|6.2|cqft_lecture3.tm#ex:wick-product>. <em|Reading:>
+  <cite|DPZ14|ADG20|BCG26>.
+
+  <paragraph|Lecture 4. The Polchinski flow and forward\Ubackward equations>
+  (separate notes). Effective potentials and the Polchinski equation; the
   Polchinski process as an FBSDE whose force is a martingale; the FBSDE in
   force coordinates, where the transport term is integrated exactly, and the
   Wetterich equation for the effective average action; the Boué\UDupuis
   formula, with the Polchinski equation as its Hamilton\UJacobi\UBellman
-  equation, in finite and infinite volume. Additional material: Wick powers
-  as observables in every dimension and the operator product expansion;
-  perturbation theory and counterterms; Dyson\USchwinger equations at every
-  scale. <em|Reading:> <cite|Pol84|BBD24|BD98|BG20|BCG26>.
+  equation, in finite and infinite volume. Additional material: perturbation
+  theory and counterterms; Dyson\USchwinger equations at every scale.
+  <em|Reading:> <cite|Pol84|BBD24|BD98|BG20>.
+
+  <paragraph|Lectures 5\U7.> Construction of <math|\<Phi\><rsup|4><rsub|3>>
+  on the torus (separate notes). The Wetterich FBSDE, two renormalisations
+  and the large-field problem (Lecture 5); a priori estimates for the
+  forward\Ubackward system (Lecture 6); UV stability, compactness and the
+  limiting FBSDE (Lecture 7, not delivered in class). <em|Reading:>
+  <cite|BG20|BCG26>.
 
   <paragraph|Homework and projects.> Problem sets can be drawn from the
   exercises at the end of each section. The computer experiments of
   Section<nbsp><hlink|3|cqft_notes_L2.tm#sec:gff> (lattice GFF, lattice
   stochastic quantisation) and the zero-dimensional Polchinski process of
-  Lecture 3 can be extended to interacting models and are suitable as small
+  Lecture 4 can be extended to interacting models and are suitable as small
   projects. Possible reading projects: the Griffiths\USimon construction
   <cite|GS73>; dimensional reduction <cite|KLP84|ADG20>; the Euclidean
   approach to the particle structure of <math|P<around|(|\<varphi\>|)><rsub|2>>
@@ -1949,46 +1974,48 @@
 
 <\references>
   <\collection>
-    <associate|app:plan|<tuple|3|16>>
+    <associate|app:plan|<tuple|3|15>>
     <associate|auto-1|<tuple|?|2>>
     <associate|auto-10|<tuple|1.4|6>>
     <associate|auto-11|<tuple|1.2|7>>
     <associate|auto-12|<tuple|1.5|7>>
-    <associate|auto-13|<tuple|1|8>>
+    <associate|auto-13|<tuple|1|7>>
     <associate|auto-14|<tuple|2|8>>
     <associate|auto-15|<tuple|iii|8>>
     <associate|auto-16|<tuple|2|9>>
     <associate|auto-17|<tuple|2.1|9>>
-    <associate|auto-18|<tuple|2.2|10>>
+    <associate|auto-18|<tuple|2.2|9>>
     <associate|auto-19|<tuple|2.1|10>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|2.3|11>>
-    <associate|auto-21|<tuple|2.2|12>>
-    <associate|auto-22|<tuple|2.4|12>>
+    <associate|auto-20|<tuple|2.3|10>>
+    <associate|auto-21|<tuple|2.2|11>>
+    <associate|auto-22|<tuple|2.4|11>>
     <associate|auto-23|<tuple|2.3|12>>
-    <associate|auto-24|<tuple|2.1|13>>
+    <associate|auto-24|<tuple|2.1|12>>
     <associate|auto-25|<tuple|2.5|13>>
-    <associate|auto-26|<tuple|1|15>>
-    <associate|auto-27|<tuple|1|15>>
-    <associate|auto-28|<tuple|3|16>>
-    <associate|auto-29|<tuple|1|16>>
+    <associate|auto-26|<tuple|1|14>>
+    <associate|auto-27|<tuple|1|14>>
+    <associate|auto-28|<tuple|3|15>>
+    <associate|auto-29|<tuple|1|15>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-30|<tuple|2|16>>
-    <associate|auto-31|<tuple|3.1|16>>
+    <associate|auto-30|<tuple|2|15>>
+    <associate|auto-31|<tuple|3.1|15>>
     <associate|auto-32|<tuple|3|16>>
     <associate|auto-33|<tuple|4|16>>
     <associate|auto-34|<tuple|5|16>>
     <associate|auto-35|<tuple|6|16>>
-    <associate|auto-36|<tuple|6|17>>
-    <associate|auto-37|<tuple|7|17>>
+    <associate|auto-36|<tuple|7|16>>
+    <associate|auto-37|<tuple|8|16>>
+    <associate|auto-38|<tuple|8|16>>
+    <associate|auto-39|<tuple|9|16>>
     <associate|auto-4|<tuple|1|2>>
     <associate|auto-5|<tuple|1.1|2>>
     <associate|auto-6|<tuple|1.1|2>>
     <associate|auto-7|<tuple|1.2|3>>
     <associate|auto-8|<tuple|1.3|5>>
     <associate|auto-9|<tuple|1|5>>
-    <associate|bib-ADC21|<tuple|ADC21|17>>
-    <associate|bib-ADG20|<tuple|ADG20|17>>
+    <associate|bib-ADC21|<tuple|ADC21|16>>
+    <associate|bib-ADG20|<tuple|ADG20|16>>
     <associate|bib-AHR62|<tuple|AHR62|17>>
     <associate|bib-BBD24|<tuple|BBD24|17>>
     <associate|bib-BBS19|<tuple|BBS19|17>>
@@ -2008,14 +2035,14 @@
     <associate|bib-GJS75|<tuple|GJS75|17>>
     <associate|bib-GRS75|<tuple|GRS75|17>>
     <associate|bib-GS73|<tuple|GS73|17>>
-    <associate|bib-HK64|<tuple|HK64|18>>
-    <associate|bib-Haa96|<tuple|Haa96|18>>
-    <associate|bib-Jaf00|<tuple|Jaf00|18>>
-    <associate|bib-Jan97|<tuple|Jan97|18>>
-    <associate|bib-KLP84|<tuple|KLP84|18>>
-    <associate|bib-Kal52|<tuple|Kal52|18>>
-    <associate|bib-Leh54|<tuple|Leh54|18>>
-    <associate|bib-Nel66|<tuple|Nel66|18>>
+    <associate|bib-HK64|<tuple|HK64|17>>
+    <associate|bib-Haa96|<tuple|Haa96|17>>
+    <associate|bib-Jaf00|<tuple|Jaf00|17>>
+    <associate|bib-Jan97|<tuple|Jan97|17>>
+    <associate|bib-KLP84|<tuple|KLP84|17>>
+    <associate|bib-Kal52|<tuple|Kal52|17>>
+    <associate|bib-Leh54|<tuple|Leh54|17>>
+    <associate|bib-Nel66|<tuple|Nel66|17>>
     <associate|bib-Nel73a|<tuple|Nel73a|18>>
     <associate|bib-Nel73b|<tuple|Nel73b|18>>
     <associate|bib-OS73|<tuple|OS73|18>>
@@ -2036,7 +2063,7 @@
     <associate|bib-Wal94|<tuple|Wal94|18>>
     <associate|bib-Wig64|<tuple|Wig64|18>>
     <associate|def:wightman|<tuple|1.1|3>>
-    <associate|eq:CCR|<tuple|1.6|8>>
+    <associate|eq:CCR|<tuple|1.6|7>>
     <associate|eq:FK|<tuple|2.11|11>>
     <associate|eq:FK-lattice|<tuple|2.10|11>>
     <associate|eq:Hlat|<tuple|2.1|9>>
@@ -2044,42 +2071,42 @@
     <associate|eq:KL|<tuple|1.4|6>>
     <associate|eq:NLKG|<tuple|1.9|8>>
     <associate|eq:W2|<tuple|1.3|5>>
-    <associate|eq:Wlat|<tuple|2.4|10>>
+    <associate|eq:Wlat|<tuple|2.4|9>>
     <associate|eq:free-field|<tuple|1.2|5>>
-    <associate|eq:lattice-action|<tuple|2.8|11>>
+    <associate|eq:lattice-action|<tuple|2.8|10>>
     <associate|eq:lattice-measure|<tuple|2.9|11>>
     <associate|eq:latticewave|<tuple|2.2|9>>
     <associate|eq:logdiv|<tuple|1.8|8>>
-    <associate|eq:modes|<tuple|1.7|8>>
+    <associate|eq:modes|<tuple|1.7|7>>
     <associate|eq:path-integral|<tuple|2.13|13>>
-    <associate|eq:schwinger|<tuple|2.5|10>>
-    <associate|eq:spin-system|<tuple|2.12|12>>
-    <associate|eq:transfer|<tuple|2.6|11>>
-    <associate|ex:OU|<tuple|2.2|15>>
+    <associate|eq:schwinger|<tuple|2.5|9>>
+    <associate|eq:spin-system|<tuple|2.12|11>>
+    <associate|eq:transfer|<tuple|2.6|10>>
+    <associate|ex:OU|<tuple|2.2|14>>
     <associate|ex:RP-lattice|<tuple|2.5|15>>
     <associate|ex:W2|<tuple|1.1|8>>
-    <associate|ex:analytic|<tuple|1.4|9>>
+    <associate|ex:analytic|<tuple|1.4|8>>
     <associate|ex:clustering|<tuple|2.8|15>>
-    <associate|ex:corrlength|<tuple|2.4|15>>
+    <associate|ex:corrlength|<tuple|2.4|14>>
     <associate|ex:gen-free|<tuple|1.6|9>>
-    <associate|ex:heisenberg|<tuple|2.1|15>>
-    <associate|ex:lattice-action|<tuple|2.3|15>>
-    <associate|ex:restrictions|<tuple|1.3|9>>
-    <associate|ex:sum-rule|<tuple|1.5|9>>
+    <associate|ex:heisenberg|<tuple|2.1|14>>
+    <associate|ex:lattice-action|<tuple|2.3|14>>
+    <associate|ex:restrictions|<tuple|1.3|8>>
+    <associate|ex:sum-rule|<tuple|1.5|8>>
     <associate|ex:toyOS|<tuple|2.7|15>>
     <associate|ex:vacuum|<tuple|2.6|15>>
     <associate|fig:KL|<tuple|1.2|7>>
     <associate|fig:cone|<tuple|1.1|2>>
     <associate|fig:lattice|<tuple|2.3|12>>
-    <associate|fig:ou|<tuple|2.2|12>>
+    <associate|fig:ou|<tuple|2.2|11>>
     <associate|fig:wick-rotation|<tuple|2.1|10>>
-    <associate|lem:finite-inv|<tuple|1.7|6>>
+    <associate|lem:finite-inv|<tuple|1.7|5>>
     <associate|prop:FK|<tuple|2.3|11>>
-    <associate|prop:nopoint|<tuple|1.6|6>>
-    <associate|prop:wick-rot|<tuple|2.1|10>>
+    <associate|prop:nopoint|<tuple|1.6|5>>
+    <associate|prop:wick-rot|<tuple|2.1|9>>
     <associate|rem:KL|<tuple|1.10|7>>
-    <associate|rem:clustering|<tuple|2.7|14>>
-    <associate|rem:hadamard|<tuple|1.5|5>>
+    <associate|rem:clustering|<tuple|2.7|13>>
+    <associate|rem:hadamard|<tuple|1.5|4>>
     <associate|rem:minimal|<tuple|1.3|4>>
     <associate|rem:nets|<tuple|1.4|4>>
     <associate|sec:KL|<tuple|1.4|6>>
@@ -2087,8 +2114,8 @@
     <associate|sec:euclid|<tuple|2|9>>
     <associate|sec:qwe|<tuple|1.5|7>>
     <associate|sec:wightman|<tuple|1|2>>
-    <associate|tab:course|<tuple|3.1|16>>
-    <associate|tab:dictionary|<tuple|2.1|13>>
+    <associate|tab:course|<tuple|3.1|15>>
+    <associate|tab:dictionary|<tuple|2.1|12>>
     <associate|thm:KL|<tuple|1.9|6>>
   </collection>
 </references>
@@ -2224,11 +2251,15 @@
 
       ADG20
 
+      BCG26
+
       Pol84
 
       BBD24
 
       BD98
+
+      BG20
 
       BG20
 
@@ -2350,7 +2381,7 @@
       between the three pictures.>|<pageref|auto-24>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|3.1>||Lectures
-      1\U3.>|<pageref|auto-31>>
+      1\U4.>|<pageref|auto-31>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -2459,21 +2490,30 @@
       <no-break><pageref|auto-33>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lecture 3.
-      Stochastic observables, the Polchinski flow and FBSDEs
+      Stochastic quantisation and stochastic observables
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-34>>>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lecture 4. The
+      Polchinski flow and forward\Ubackward equations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-35>>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lectures 5\U7.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-36>>>
+
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Homework and
       projects. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35>>>
+      <no-break><pageref|auto-37>>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References
       and further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36><vspace|0.5fn>
+      <no-break><pageref|auto-38><vspace|0.5fn>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Guide.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37>>>
+      <no-break><pageref|auto-39>>>
     </associate>
   </collection>
 </auxiliary>

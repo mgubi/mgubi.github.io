@@ -22,7 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 2 \V notes: Ÿ3>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture 2 \V notes:
+      Lecture 2, Ÿ3>>
 
       \;
     </with>
@@ -52,9 +53,6 @@
       equation.
 
       <item><strong|DS characterises the GFF.>
-
-      <item><strong|The GFF is the stationary marginal of parabolic and
-      elliptic stochastic quantisation.>
     </enumerate>
   </hidden>|<\hidden>
     <vspace*|2.5cm>
@@ -253,7 +251,7 @@
       Hamiltonian in the Schrödinger representation.
 
       <item>The GFF is the continuum limit of the lattice spin system of
-      Lecture 1 with <math|V=0> (Exercise 3.14).
+      Lecture 1 with <math|V=0> (Exercise 3.10).
 
       <item>Markov property (Nelson): rooted in the <strong|locality of
       <math|A>>.
@@ -802,278 +800,6 @@
       in <math|d=2>: De Vecchi\UGubinelli\UTurra.
     </itemize>
   </hidden>|<\hidden>
-    <vspace*|2.5cm>
-
-    \;
-
-    <with|font-size|1.6|font-series|bold|color|dark red|Parabolic stochastic
-    quantisation>
-
-    <vspace|0.3cm>
-
-    <with|color|dark grey|Lecture 2>
-
-    \;
-  </hidden>|<\hidden>
-    <mytitle|Langevin dynamics (Parisi\UWu 1981)>
-
-    \;
-
-    Finite dimensions: <math|\<mathd\>X<rsub|t>=-\<nabla\>*S<around|(|X<rsub|t>|)>\<mathd\>t+<sqrt|2><space|0.17em>\<mathd\>B<rsub|t>>
-    has generator <math|\<cal-L\>=\<Delta\>-\<nabla\>*S\<cdot\>\<nabla\>> and
-
-    <\equation*>
-      \<cal-L\><rsup|\<ast\>>\<mathe\><rsup|-S>=\<nabla\>\<cdot\><around*|(|\<nabla\>\<mathe\><rsup|-S>+\<mathe\><rsup|-S>\<nabla\>*S|)>=0:
-    </equation*>
-
-    the Gibbs measure <math|\<mathe\><rsup|-S>\<mathd\>x/Z> is invariant.
-
-    Apply this to the Euclidean action, with a fictitious <strong|stochastic
-    time> <math|t>:
-
-    <\equation*>
-      \<partial\><rsub|t>*\<Phi\>=-<around|(|m<rsup|2>-\<Delta\>|)>*\<Phi\>-V<rprime|'><around|(|\<Phi\>|)>+<sqrt|2>*<space|0.17em>\<xi\>*<space|2em><text|on
-      >\<bbb-R\><rsub|+>\<times\>\<cal-M\>,
-    </equation*>
-
-    <math|\<xi\>> space-time white noise:
-    <math|\<bbb-E\>*<around|[|\<xi\><around|(|u|)>*\<xi\><around|(|v|)>|]>=<around|\<langle\>|u,v|\<rangle\>><rsub|L<rsup|2>*<around|(|\<bbb-R\>\<times\>\<cal-M\>|)>>>.
-
-    For <math|V=0>: the stochastic heat equation (infinite-dimensional OU
-    process).
-
-    History: Parisi\UWu 1981 (gauge theories without gauge fixing); physics
-    review Damgaard\UHüffel 1987\U88; first mathematical construction for
-    <math|P<around|(|\<varphi\>|)><rsub|2>> on <math|\<bbb-T\><rsup|2>>:
-    Jona-Lasinio\UMitter 1985. Review: Gubinelli, <em|Encyclopedia of
-    Mathematical Physics> 2025.
-  </hidden>|<\hidden>
-    <mytitle|DS <math|\<Rightarrow\>> invariance>
-
-    \;
-
-    Itô's formula: for <math|F=g*<around|(|\<varphi\><around|(|f<rsub|1>|)>,\<ldots\>,\<varphi\><around|(|f<rsub|n>|)>|)>>
-    the generator is
-
-    <\equation*>
-      \<cal-L\>*F<around|(|\<varphi\>|)>=<big|sum><rsub|i,j><around|\<langle\>|f<rsub|i>,f<rsub|j>|\<rangle\>>*<space|0.17em>\<partial\><rsub|i*j>*g<around|(|\<ldots\>|)>-<big|sum><rsub|i>\<varphi\>*<around|(|A*f<rsub|i>|)>*<space|0.17em>\<partial\><rsub|i>*g<around|(|\<ldots\>|)>.
-    </equation*>
-
-    <\proposition*>
-      <math|\<bbb-E\><rsub|\<mu\><rsub|m>>*<around|[|G*<space|0.17em>\<cal-L\>*F|]>=-\<bbb-E\><rsub|\<mu\><rsub|m>><around*|[|<around|\<langle\>|D*G,D*F|\<rangle\>><rsub|L<rsup|2><around|(|\<cal-M\>|)>>|]>>
-      for <math|F,G\<in\>\<cal-F\>*C<rsup|\<infty\>><rsub|b>>; in particular
-      <math|\<bbb-E\><rsub|\<mu\><rsub|m>>*<around|[|\<cal-L\>*F|]>=0>.
-    </proposition*>
-
-    <with|font-series|bold|Proof.> Apply DS to
-    <math|k*<space|0.17em>\<partial\><rsub|i>*g> with <math|h=f<rsub|i>> and
-    sum over <math|i>:
-
-    <\equation*>
-      <big|sum><rsub|i>\<bbb-E\>*<around|[|k*<space|0.17em>\<partial\><rsub|i>*g*<space|0.17em>\<varphi\>*<around|(|A*f<rsub|i>|)>|]>=<big|sum><rsub|i,j><around|\<langle\>|f<rsub|i>,f<rsub|j>|\<rangle\>>*\<bbb-E\>*<around*|[|\<partial\><rsub|j>*k*<space|0.17em>\<partial\><rsub|i>*g+k*<space|0.17em>\<partial\><rsub|i*j>*g|]>.<space|2em>
-    </equation*>
-
-    <strong|Static (DS) and dynamic (Langevin) characterisations are two
-    faces of the same integration by parts.>
-  </hidden>|<\hidden>
-    <mytitle|The stationary solution>
-
-    \;
-
-    <\theorem*>
-      For <math|t\<in\>\<bbb-R\>>, <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>
-      let <math|\<Phi\><rsub|t><around|(|f|)>=<sqrt|2>*<space|0.17em>\<xi\><around|(|K<rsub|t,f>|)>>,
-      \ <math|K<rsub|t,f><around|(|r,x|)>=<with|math-font|Bbb|1><rsub|r\<less\>t><around*|(|\<mathe\><rsup|-<around|(|t-r|)>*A>f|)><around|(|x|)>>.
-
-      <\enumerate-alpha>
-        <item><math|\<bbb-E\>*<around|[|\<Phi\><rsub|t><around|(|f|)>*\<Phi\><rsub|s><around|(|g|)>|]>=<around|\<langle\>|f,\<mathe\><rsup|-<around|\||t-s|\|>*A>C*g|\<rangle\>>>:
-        stationary, and <math|<math-up|Law><around|(|\<Phi\><rsub|t>|)>=\<mu\><rsub|m>>
-        for every <math|t>.
-
-        <item><math|\<Phi\>> is a mild and weak solution: for
-        <math|s\<less\>t>, <math|\<Phi\><rsub|t><around|(|h|)>=\<Phi\><rsub|s><around|(|h|)>-<big|int><rsub|s><rsup|t>\<Phi\><rsub|r>*<around|(|A*h|)>\<mathd\>r+<sqrt|2>*<space|0.17em>\<xi\>*<around|(|<with|math-font|Bbb|1><rsub|<around|(|s,t|)>>\<otimes\>h|)>>.
-
-        <item>From any initial datum <math|\<Psi\><rsub|0>\<in\>\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
-        independent of <math|\<xi\>>: <math|\<bbb-E\><space|0.17em>\<mathe\><rsup|\<mathi\>\<Psi\><rsub|t><around|(|f|)>>\<to\>\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>.
-        Hence <math|\<mu\><rsub|m>> is the <strong|unique invariant measure>.
-      </enumerate-alpha>
-    </theorem*>
-
-    <with|font-series|bold|Proof of (a).>
-    <math|<around|\<langle\>|K<rsub|t,f>,K<rsub|s,g>|\<rangle\>>=<big|int><rsub|-\<infty\>><rsup|t\<wedge\>s><around|\<langle\>|f,\<mathe\><rsup|-<around|(|t+s-2*r|)>*A>g|\<rangle\>>\<mathd\>r=<around|\<langle\>|f,\<mathe\><rsup|-<around|\||t-s|\|>*A><around|(|2*A|)><rsup|-1>*g|\<rangle\>>>;
-    an <math|\<cal-S\><rprime|'>>-valued version exists by Itô\UNawata/Mitoma
-    regularisation.
-  </hidden>|<\hidden>
-    <mytitle|Proof of (b), (c)>
-
-    \;
-
-    <with|font-series|bold|(a), on <math|\<bbb-T\><rsup|d>>.> The modes
-    <math|\<Phi\><rsub|t><around|(|e<rsub|n>|)>> are independent stationary
-    OU processes <math|\<mathd\>X=-\<lambda\><rsub|n>*X\<mathd\>t+<sqrt|2>\<mathd\>B>
-    with variance <math|\<lambda\><rsub|n><rsup|-1>>.
-
-    <with|font-series|bold|(b)> Mild form from the semigroup identity
-    <math|K<rsub|t,h>=K<rsub|s,\<mathe\><rsup|-<around|(|t-s|)>*A>h>+<with|math-font|Bbb|1><rsub|<around|(|s,t|)>>\<mathe\><rsup|-<around|(|t-\<cdummy\>|)>*A>h>;
-    weak form by stochastic Fubini (Exercise 3.12).
-
-    <with|font-series|bold|(c)> By independence,
-
-    <\equation*>
-      \<bbb-E\><space|0.17em>\<mathe\><rsup|\<mathi\>\<Psi\><rsub|t><around|(|f|)>>=\<bbb-E\><around*|[|\<mathe\><rsup|\<mathi\>\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>>|]><space|0.17em>\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,<around|(|1-\<mathe\><rsup|-2*t*A>|)>*C*f|\<rangle\>>>.
-    </equation*>
-
-    For <math|m\<gtr\>0>, <math|\<mathe\><rsup|-t*A>f\<to\>0> in
-    <math|\<cal-S\><around|(|\<cal-M\>|)>>, so
-    <math|\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>\<to\>0> a.s. If
-    <math|\<Psi\><rsub|0>\<sim\>\<mu\><rsub|m>> the product is exactly
-    <math|\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>
-    (invariance); an invariant <math|\<nu\>> must have the same
-    characteristic functional.
-  </hidden>|<\hidden>
-    <mytitle|Comments>
-
-    \;
-
-    <\itemize>
-      <item>As a field on <math|\<bbb-R\>\<times\>\<cal-M\>>, the stationary
-      solution has covariance <math|2*<around|(|\<partial\><rsub|t>+A|)><rsup|-1>*<around|(|-\<partial\><rsub|t>+A|)><rsup|-1>=2*<around|(|-\<partial\><rsub|t><rsup|2>+A<rsup|2>|)><rsup|-1>>;
-      its equal-time slice is <math|2*<big|int><rsub|\<bbb-R\>><around|(|\<theta\><rsup|2>+A<rsup|2>|)><rsup|-1>*<frac|\<mathd\>\<theta\>|2*\<pi\>>=A<rsup|-1>>.
-
-      <item>The stochastic time <math|t> has nothing to do with the Euclidean
-      time <math|\<tau\>>.
-
-      <item>Interacting case: a <strong|singular SPDE>.
-
-      <\itemize>
-        <item><math|\<Phi\><rsup|4><rsub|2>>: Da Prato\UDebussche 2003 (also
-        Jona-Lasinio\UMitter, Albeverio\URöckner).
-
-        <item><math|\<Phi\><rsup|4><rsub|3>>: Hairer 2014;
-        Gubinelli\UImkeller\UPerkowski 2015; Catellier\UChouk 2018.
-
-        <item>Global bounds: Mourrat\UWeber 2017; Gubinelli\UHofmanová 2019;
-        construction of Euclidean <math|\<Phi\><rsup|4><rsub|3>> via the
-        dynamics: Gubinelli\UHofmanová 2021.
-      </itemize>
-    </itemize>
-  </hidden>|<\hidden>
-    <vspace*|2.5cm>
-
-    \;
-
-    <with|font-size|1.6|font-series|bold|color|dark red|Elliptic stochastic
-    quantisation>
-
-    <vspace|0.3cm>
-
-    <with|color|dark grey|Lecture 2>
-
-    \;
-  </hidden>|<\hidden>
-    <mytitle|Dimensional reduction (Parisi\USourlas 1979)>
-
-    \;
-
-    The elliptic SPDE in <math|d+2> dimensions
-
-    <\equation*>
-      <around|(|m<rsup|2>-\<Delta\><rsub|\<bbb-R\><rsup|2>\<times\>\<cal-M\>>|)>*\<Psi\>+V<rprime|'><around|(|\<Psi\>|)>=\<zeta\>,<space|2em>\<zeta\>*<text|white
-      noise on >\<bbb-R\><rsup|2>\<times\>\<cal-M\>,
-    </equation*>
-
-    is related to the <math|d>-dimensional Gibbs measure: formally
-
-    <\equation*>
-      <math-up|Law><around*|(|\<Psi\>(z,\<cdot\><around*|)||)>\<propto\>exp
-      <around*|(|-4*\<pi\>*<around*|[|<tfrac|1|2><around|\<langle\>|\<varphi\>,A*\<varphi\>|\<rangle\>>+<big|int>V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>.|\<nobracket\>>
-    </equation*>
-
-    <\itemize>
-      <item>Mechanism: a hidden <strong|supersymmetry> (Parisi\USourlas;
-      Klein\ULandau\UPerez 1984).
-
-      <item>Rigorous nonlinear results: <math|d=0> (Albeverio\UDe
-      Vecchi\UGubinelli 2020); polynomial on <math|\<bbb-T\><rsup|2>> and
-      exponential on <math|\<bbb-R\><rsup|2>> (ADG 2021); elliptic
-      <math|\<Phi\><rsup|4>> in 4 and 5 dimensions (Gubinelli\UHofmanová
-      2019).
-
-      <item>For <math|V=0> it is elementary, and it explains the
-      <math|4*\<pi\>>.
-    </itemize>
-  </hidden>|<\hidden>
-    <mytitle|The linear case>
-
-    \;
-
-    <\theorem*>
-      Let <math|<math-ss|L>=m<rsup|2>-\<Delta\><rsub|\<bbb-R\><rsup|2>\<times\>\<cal-M\>>=-\<Delta\><rsub|\<bbb-R\><rsup|2>>+A>
-      and <math|\<zeta\>> white noise on <math|\<bbb-R\><rsup|2>\<times\>\<cal-M\>>.
-
-      <\enumerate-alpha>
-        <item><math|<math-ss|L>\<Psi\>=<sqrt|4*\<pi\>>*<space|0.17em>\<zeta\>>
-        has a unique tempered solution <math|\<Psi\><around|(|u|)>=<sqrt|4*\<pi\>>*<space|0.17em>\<zeta\><around|(|<math-ss|L><rsup|-1>u|)>>.
-
-        <item><math|K<rsub|z,f>=<math-ss|L><rsup|-1><around|(|\<delta\><rsub|z>\<otimes\>f|)>\<in\>L<rsup|2>>,
-        continuous in <math|z>; <math|\<Psi\><around|(|z,f|)>=<sqrt|4*\<pi\>>*<space|0.17em>\<zeta\><around|(|K<rsub|z,f>|)>>
-        is the section of <math|\<Psi\>> at <math|z>.
-
-        <item><math|\<bbb-E\>*<around|[|\<Psi\><around|(|z,f|)>*\<Psi\><around|(|z,g|)>|]>=<around|\<langle\>|f,C*g|\<rangle\>>>:
-        every section has law <math|\<mu\><rsub|m>>, and
-        <math|(\<Psi\>(z,\<cdot\><around|)||)><rsub|z\<in\>\<bbb-R\><rsup|2>>>
-        is stationary and isotropic.
-      </enumerate-alpha>
-    </theorem*>
-
-    <with|font-series|bold|Uniqueness:> <math|<math-ss|L>> maps
-    <math|\<cal-S\>> onto <math|\<cal-S\>>, so
-    <math|D<around|(|<math-ss|L>u|)>=0> <math|\<forall\>u> forces <math|D=0>.
-  </hidden>|<\hidden>
-    <mytitle|Proof: where <math|4*\<pi\>> comes from>
-
-    \;
-
-    Fourier transform in <math|z> only: <math|<wide|K<rsub|z,f>|^><around|(|q|)>=\<mathe\><rsup|-\<mathi\>q\<cdot\>z><around|(|<around|\||q|\|><rsup|2>+A|)><rsup|-1>*f>.
-    By Plancherel and the spectral theorem,
-
-    <\equation*>
-      <around|\<langle\>|K<rsub|z,f>,K<rsub|z,g>|\<rangle\>>=<around*|\<langle\>|f,<around*|[|<big|int><rsub|\<bbb-R\><rsup|2>><frac|\<mathd\>q|<around|(|2*\<pi\>|)><rsup|2>>*<around|(|<around|\||q|\|><rsup|2>+A|)><rsup|-2>|]>*g|\<rangle\>>=<frac|1|4*\<pi\>>*<around|\<langle\>|f,A<rsup|-1>*g|\<rangle\>>,
-    </equation*>
-
-    since
-
-    <\equation*>
-      <big|int><rsub|\<bbb-R\><rsup|2>><frac|\<mathd\>q|<around|(|2*\<pi\>|)><rsup|2>>*<frac|1|<around|(|<around|\||q|\|><rsup|2>+a|)><rsup|2>>=<frac|1|2*\<pi\>>*<big|int><rsub|0><rsup|\<infty\>><frac|r<space|0.17em>\<mathd\>r|<around|(|r<rsup|2>+a|)><rsup|2>>=<frac|1|4*\<pi\>*a>.
-    </equation*>
-
-    Multiply by <math|4*\<pi\>>. Stationarity and isotropy: the covariance
-    <math|4*\<pi\>*<big|int>\<mathe\><rsup|\<mathi\>q\<cdot\><around|(|z-z<rprime|'>|)>><around|\<langle\>|f,<around|(|<around|\||q|\|><rsup|2>+A|)><rsup|-2>*g|\<rangle\>><frac|\<mathd\>q|<around|(|2*\<pi\>|)><rsup|2>>>
-    depends only on <math|<around|\||z-z<rprime|'>|\|>>.
-  </hidden>|<\hidden>
-    <mytitle|Slices of Gaussian fields>
-
-    \;
-
-    Field on <math|\<bbb-R\><rsup|k>\<times\>\<cal-M\>> with covariance
-    <math|<around|(|-\<Delta\><rsub|\<bbb-R\><rsup|k>>+A|)><rsup|-p>>; its
-    slice <math|<around|{|0|}>\<times\>\<cal-M\>> has covariance
-
-    <\equation*>
-      c<rsub|k,p>*<space|0.17em>A<rsup|k/2-p>,<space|2em>c<rsub|k,p>=<frac|\<Gamma\>*<around|(|p-<frac|k|2>|)>|<around|(|4*\<pi\>|)><rsup|k/2>*\<Gamma\><around|(|p|)>>.
-    </equation*>
-
-    <tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<table|<row|<cell|<math|<around|(|k,p|)>>>|<cell|slice
-    covariance>|<cell|interpretation>>|<row|<cell|<math|<around|(|1,1|)>>>|<cell|<math|<frac|1|2>*A<rsup|-1/2>>>|<cell|time-zero
-    field, <math|<around|(|2*\<omega\>|)><rsup|-1>>>>|<row|<cell|<math|<around|(|2,2|)>>>|<cell|<math|<around|(|4*\<pi\>|)><rsup|-1>*A<rsup|-1>>>|<cell|elliptic
-    stochastic quantisation>>|<row|<cell|parabolic>|<cell|<math|2*<around|(|-\<partial\><rsub|t><rsup|2>+A<rsup|2>|)><rsup|-1>\<to\>A<rsup|-1>>>|<cell|Langevin
-    dynamics>>|<row|<cell|<math|<around|(|1,2|)>>>|<cell|<math|\<propto\>A<rsup|-3/2>>>|<cell|not
-    a GFF (e.g. codim-1 slices of the elliptic field)>>>>>
-
-    The GFF arises iff <math|p=1+<frac|k|2>>. For
-    <math|\<cal-M\>=\<bbb-R\><rsup|d>>, every codimension-two slice of the
-    elliptic field is a GFF.
-  </hidden>|<\hidden>
     <mytitle|Outlook>
 
     \;
@@ -1081,13 +807,17 @@
     <with|font-series|bold|Next lecture>
 
     <\itemize>
-      <item>Lecture 3: the GFF along a scale parameter; stochastic
-      observables; Polchinski equation and its FBSDE; Wetterich equation;
+      <item>Lecture 3: stochastic quantisation; the GFF along a scale
+      parameter; stochastic observables, products and OPE.
+
+      <item>Lecture 4: Polchinski equation and its FBSDE; Wetterich equation;
       variational structure.
 
-      <item>Later lectures (not yet settled): probably a construction of
-      <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE.
+      <item>Lectures 5\U7: a construction of <math|\<Phi\><rsup|4><rsub|3>>
+      on the torus via the FBSDE.
     </itemize>
+
+    \;
 
     <\myframed>
       <strong|The pattern>
@@ -1117,14 +847,9 @@
 
         <item>3.8 DS in finite dimensions.
 
-        <item>3.10 Infinitesimal invariance characterises
-        <math|\<mu\><rsub|m>>.
+        <item>3.11 Computer experiments.
 
-        <item>3.13 Slices of Gaussian fields.
-
-        <item>3.15 Computer experiments.
-
-        <item>3.16 Two masses: positivity vs. locality.
+        <item>3.12 Two masses: positivity vs. locality.
       </itemize>
     </cell>|<\cell>
       <with|font-series|bold|Reading>
@@ -1135,12 +860,6 @@
         <item>Janson, <em|Gaussian Hilbert Spaces>.
 
         <item>Glimm\UJaffe; Simon, <math|P<around|(|\<varphi\>|)><rsub|2>>.
-
-        <item>Da Prato\UZabczyk, <em|Stochastic Equations in Infinite
-        Dimensions>.
-
-        <item>Albeverio\UDe Vecchi\UGubinelli, <em|Elliptic stochastic
-        quantization>, AoP 2020.
       </itemize>
     </cell>>>>>
   </hidden>>

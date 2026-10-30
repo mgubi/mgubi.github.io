@@ -3,7 +3,7 @@
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
 <\body>
-  <screens|<\shown>
+  <screens|<\hidden>
     <\with|par-mode|left>
       <vspace*|0.8cm>
 
@@ -23,11 +23,11 @@
       <small|Massimiliano Gubinelli \| University of Oxford>
 
       <small|<with|color|dark grey|SISSA lectures, Lecture 1 \V notes:
-      Ÿ1\UŸ2>>
+      Lecture 1, ŸŸ1\U2>>
 
       \;
     </with>
-  </shown>|<\hidden>
+  </hidden>|<\hidden>
     <mytitle|What is constructive QFT?>
 
     \;
@@ -898,7 +898,7 @@
     <with|font-series|bold|Question.> Which measures on
     <math|\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d>|)>> correspond to
     relativistic QFTs?
-  </hidden>|<\hidden>
+  </hidden>|<\shown>
     <mytitle|Osterwalder\USchrader axioms>
 
     \;
@@ -927,7 +927,7 @@
       moments of <math|\<mu\>> are the Schwinger functions of a unique
       Wightman theory; OS4 <math|\<Leftrightarrow\>> unique vacuum.
     </theorem*>
-  </hidden>|<\hidden>
+  </shown>|<\hidden>
     <mytitle|Reconstruction: the idea>
 
     \;

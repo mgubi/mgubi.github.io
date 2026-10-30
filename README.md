@@ -86,7 +86,7 @@ generated pages. The author's standalone exports can be used for comparison.
 
 PDFs are supplied exports, stored as `store/sissa/2026/cqft_notes_LN.pdf` and
 `cqft_slides_LN.pdf`; the website build does not regenerate them. For lectures
-3–6 the native notes are named `cqft_lectureN.tm`, and the supplied slide PDFs
+3–7 the native notes are named `cqft_lectureN.tm`, and the supplied slide PDFs
 have the suffix `-print.pdf`. Keep the course page links and revision dates in
 sync. The individual supplements are discoverable through the course page and
 sitemap; only the course page is listed in the article index and Atom feed.

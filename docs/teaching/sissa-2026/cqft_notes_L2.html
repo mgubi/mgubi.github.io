@@ -111,11 +111,10 @@
         recover the free relativistic field, discuss the Euclidean
         K&auml;ll&eacute;n&ndash;Lehmann representation, and define its local
         (Wick) operators. We prove that the Dyson&ndash;Schwinger equation
-        characterises the GFF among probability measures on distributions, and
-        that the GFF is the stationary one-time (resp. one-point) marginal of
-        the parabolic (resp. elliptic) stochastic quantisation equation.
-        Exercises are collected at the end. These notes follow the slides of
-        Lecture 2.</font>
+        characterises the GFF among probability measures on distributions.
+        Stochastic quantisation is treated in Lecture 3. Exercises are
+        collected at the end. These notes follow the slides of Lecture
+        2.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -157,30 +156,16 @@
         Dyson&ndash;Schwinger equation <span style="margin-left: 5mm"></span> <a href="#auto-11">10</a>
       </p>
       <p>
-        3.5<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
-        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-12">12</a>
+        3.5<span style="margin-left: 1em"></span>Outlook <span style="margin-left: 5mm"></span> <a href="#auto-12">12</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Langevin dynamics. <span style="margin-left: 5mm"></span> <a href="#auto-13">12</a></font>
-      </p>
-      <p>
-        <font style="font-size: 92.0%">History. <span style="margin-left: 5mm"></span> <a href="#auto-14">12</a></font>
-      </p>
-      <p>
-        3.6<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
-        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-16">14</a>
-      </p>
-      <p>
-        3.7<span style="margin-left: 1em"></span>Outlook <span style="margin-left: 5mm"></span> <a href="#auto-17">15</a>
-      </p>
-      <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-18">15</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-13">12</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>References and further reading</b> <span style="margin-left: 5mm"></span> <a href="#auto-19">17</a>
+        <b>References and further reading</b> <span style="margin-left: 5mm"></span> <a href="#auto-14">13</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Guide. <span style="margin-left: 5mm"></span> <a href="#auto-20">17</a></font>
+        <font style="font-size: 92.0%">Guide. <span style="margin-left: 5mm"></span> <a href="#auto-15">13</a></font>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
@@ -458,9 +443,9 @@ x
       <a href="#bib-Nel73b">Nel73b</a>]). The time-zero restriction of the GFF is Gaussian
       with covariance \((2 \omega)^{- 1}\), the ground state measure of the
       free Hamiltonian in the Schr&ouml;dinger representation (Exercise <a
-      href="#ex:slices">3.13</a>). The GFF is also the continuum limit of the lattice
-      model <a href="cqft_notes_L1.html#eq:spin-system">(2.12)</a> with \(V = 0\) (for \(d = 2\); in general
-      \(d\) see Exercise <a href="cqft_notes_L1.html#ex:lattice-action">2.3</a> and Exercise <a href="#ex:lattice-gff">3.14</a>).
+      href="cqft_lecture3.html#ex:slices">4.4</a> of Lecture 3). The GFF is also the continuum limit of the
+      lattice model <a href="cqft_notes_L1.html#eq:spin-system">(2.12)</a> with \(V = 0\) (for \(d = 2\); in
+      general \(d\) see Exercise <a href="cqft_notes_L1.html#ex:lattice-action">2.3</a> and Exercise <a href="#ex:lattice-gff">3.10</a>).
     </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">3.5</class>. </strong><class style="font-style: normal"><strong>(Nelson's
@@ -802,7 +787,7 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
     <p>
       with a <em>negative</em> weight at \(m_2^2\). By <class style="font-style: normal">(<a href="#eq:KL-euclid">3.5</a>)</class>
       and the uniqueness of the Stieltjes transform it is not reflection
-      positive (Exercise <a href="#ex:two-masses">3.16</a>). It reconstructs at best a theory
+      positive (Exercise <a href="#ex:two-masses">3.12</a>). It reconstructs at best a theory
       with an indefinite metric, in which the particle of mass \(m_2\) is a
       ghost of negative norm [<a href="#bib-PU50">PU50</a>, <a href="#bib-LW69">LW69</a>]. More
       generally, call the Euclidean field equation <em>local</em> if \(C^{-
@@ -1423,457 +1408,14 @@ x_j)
       For a result in this direction for the exponential interaction in \(d =
       2\) see [<a href="#bib-DGT22">DGT22</a>].
     </p>
-    <h3 id="auto-12">3.5<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
-    stochastic quantisation<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-12">3.5<span style="margin-left: 1em"></span>Outlook<span style="margin-left: 1em"></span></h3>
     <p>
-      <div style="display: inline">
-        <a id="auto-13"></a>
-      </div>
-      <h5>Langevin dynamics.<span style="margin-left: 1em"></span></h5>
-      <div style="display: inline">
-        If \(S : \mathbb{R}^N \to \mathbb{R}\) is smooth with \(\mathrm{e}^{-
-        S} \in L^1\), the diffusion \(\mathrm{d} X_t = - \nabla S (X_t)
-        \mathrm{d} t + \sqrt{2} \hspace{0.17em}
-\mathrm{d} B_t\) has generator
-        \(\mathcal{L}= \Delta - \nabla S \cdot \nabla\), and
-        \(\mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot (\nabla
-        \mathrm{e}^{- S} +
-\mathrm{e}^{- S} \nabla S) = 0\): the Gibbs measure
-        \(\mathrm{e}^{- S (x)} \mathrm{d} x / Z\) is invariant. Parisi and Wu
-        [<a href="#bib-PW81">PW81</a>] proposed to apply this to the Euclidean action,
-        introducing a fictitious &ldquo;stochastic time&rdquo; \(t\):
-      </div>
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:SQE"></a>\(\displaystyle \partial_t \Phi = - (m^2
-        - \Delta) \Phi - V' (\Phi) + \sqrt{2}
-\hspace{0.17em} \xi \qquad
-        \text{on } \mathbb{R}_+ \times \mathcal{M},\)</td>
-        <td align="right">(3.14)</td>
-      </tr>
-    </table>
-    <p>
-      with \(\xi\) space-time white noise. This is <em>(parabolic) stochastic
-      quantisation</em>. For \(V = 0\) it is the stochastic heat equation, an
-      infinite-dimensional Ornstein&ndash;Uhlenbeck process.
-    </p>
-    <p>
-      <div style="display: inline">
-        <a id="auto-14"></a>
-      </div>
-      <h5>History.<span style="margin-left: 1em"></span></h5>
-      <div style="display: inline">
-        Parisi and Wu [<a href="#bib-PW81">PW81</a>] introduced stochastic quantisation
-        to do perturbation theory for gauge theories without gauge fixing. The
-        physics literature of the 1980s is reviewed by Damgaard and
-        H&uuml;ffel [<a href="#bib-DH87">DH87</a>], whose reprint volume [<a href="#bib-DH88">DH88</a>]
-        collects the original papers. Jona-Lasinio and Mitter [<a href="#bib-JLM85">JLM85</a>]
-        gave the first mathematical construction of the dynamics for \(P
-        (\varphi)_2\) on the torus, where the Wick-ordered interaction makes
-        <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> a singular SPDE. They used
-        Girsanov's theorem for a variant of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class>
-        in which the drift is smoothed by \((1 - \Delta)^{- \varepsilon}\) and
-        the noise has covariance \((1 - \Delta)^{- \varepsilon}\) (a slightly
-        coloured noise), which still has the \(P (\varphi)_2\) measure as
-        invariant measure. A recent review of the mathematical theory is [<a
-        href="#bib-Gub25">Gub25</a>].
-      </div>
-    </p>
-    <p>
-      Space-time white noise on \(\mathbb{R} \times \mathcal{M}\) is a centred
-      Gaussian family \((\xi (u))_{u \in L^2  (\mathbb{R} \times
-      \mathcal{M})}\) with \(\mathbb{E} [\xi (u) \xi (v)] = \langle u, v
-      \rangle\), formally \(\mathbb{E} [\xi (t, x) \xi (s, y)] = \delta (t -
-      s) \delta (x - y)\). Let \(W_t (h) = \xi (\mathbb{1}_{[0, t]} \otimes
-      h)\), \(t \geq 0\), a cylindrical Brownian motion. For a (weak) solution
-      \(\Phi\) of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> with \(V = 0\) and
-      \(F = g (\varphi (f_1), \ldots, \varphi (f_n)) \in
-      \mathcal{F}C^{\infty}_b\), It&ocirc;'s formula shows that \(F (\Phi_t) -
-      \int_0^t \mathcal{L}F (\Phi_r) \mathrm{d} r\) is a martingale, with
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:generator"></a>\(\displaystyle \mathcal{L}F (\varphi) =
-        \sum_{i, j} \langle f_i, f_j \rangle
-\hspace{0.17em} \partial_{ij} g
-        (\ldots) - \sum_i \varphi (Af_i)
-\hspace{0.17em} \partial_i g
-        (\ldots) .\)</td>
-        <td align="right">(3.15)</td>
-      </tr>
-    </table>
-    <div class="theorem">
-      <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Proposition <class style="font-style: normal">3.18</class>.
-        </strong><i><class style="font-style: normal"><strong>(DS \(\Rightarrow\) invariance)
-        </strong></class><a id="prop:inf-inv"></a> For \(F, G \in \mathcal{F}C^{\infty}_b\):
-        \(\mathbb{E}_{\mu_m}  [G \hspace{0.17em} \mathcal{L}F] =
-        -\mathbb{E}_{\mu_m}
-[\langle DG, DF \rangle_{L^2 (\mathcal{M})}]\). In
-        particular \(\mathbb{E}_{\mu_m}  [\mathcal{L}F] = 0\).</i>
-      </p>
-    </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>We may assume \(F = g (\varphi (f_1),
-      \ldots)\) and \(G = k (\varphi (f_1), \ldots)\) with the same \(f_i\).
-      Apply <class style="font-style: normal">(<a href="#eq:DS">3.10</a>)</class> to the cylinder function
-      \(k \hspace{0.17em} \partial_i g\) with \(h = f_i\) and sum over \(i\):
-      \(\sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g \hspace{0.17em}
-      \varphi
-(Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle \mathbb{E}
-      [\partial_j k
-\hspace{0.17em} \partial_i g + k \hspace{0.17em}
-      \partial_{ij} g]\). Insert this into \(\mathbb{E}
-      [G\mathcal{L}F]\).<span style="margin-left: 1em"></span>\(\Box\)
-    </p>
-    <p>
-      So the static characterisation (DS) and the dynamic one (invariance
-      under the Langevin flow) are two faces of the same integration by parts
-      formula.
-    </p>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.19</class>. </strong><i><class
-        style="font-style: normal"><strong>(Parabolic stochastic quantisation of the GFF)
-        </strong></class><a id="thm:parabolic"></a> Let \(\xi\) be space-time white noise on
-        \(\mathbb{R} \times \mathcal{M}\). For \(t \in \mathbb{R}\) and \(f
-        \in \mathcal{S} (\mathcal{M})\) define</i>
-      </p>
-      <i><table width="100%">
-        <tr>
-          <td width="100%" align="center"><a id="eq:stat-sol"></a>\(\displaystyle \Phi_t (f) := \sqrt{2}
-          \hspace{0.17em} \xi (K_{t, f}), \qquad K_{t, f} (r,
-x) :=
-          \mathbb{1}_{\{r < t\}} (\mathrm{e}^{- (t - r) A} f) (x) .\)</td>
-          <td align="right">(3.16)</td>
-        </tr>
-      </table></i>
-      <div style="margin-bottom: 1em">
-        <i><div class="enum-alpha">
-          <ol>
-            <li>
-              <p>
-                \(\Phi\) is a centred Gaussian process with \(\mathbb{E}
-                [\Phi_t (f) \Phi_s (g)] = \langle f, \mathrm{e}^{- |t - s|A}
-                Cg
-\rangle\). In particular \((\Phi_t)_{t \in \mathbb{R}}\) is
-                stationary and, for every \(t\), \(\Phi_t\) has a version with
-                values in \(\mathcal{S}' (\mathcal{M})\) whose law is
-                \(\mu_m\).
-              </p>
-            </li>
-            <li>
-              <p>
-                \(\Phi\) is a mild and weak solution of <class style="font-style: normal">(<a
-                href="#eq:SQE">3.14</a>)</class> with \(V = 0\): for \(s < t\) and \(h
-                \in \mathcal{S} (\mathcal{M})\),
-              </p>
-              <center>
-                \(\displaystyle \begin{array}{c}
-  \Phi_t (h) = \Phi_s
-                (\mathrm{e}^{- (t - s) A} h) + \sqrt{2}  \hspace{0.17em}
-  \xi
-                \left( \mathbb{1}_{(s, t)} (r) \hspace{0.17em} \mathrm{e}^{-
-                (t - r) A}
-  h \right),\\
-  \Phi_t (h) = \Phi_s (h) - \int_s^t
-                \Phi_r  (Ah) \hspace{0.17em} \mathrm{d} r
-  + \sqrt{2}
-                \hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)
-                .
-\end{array}\)
-              </center>
-            </li>
-            <li>
-              <p>
-                Let \(\Psi_0\) be an \(\mathcal{S}' (\mathcal{M})\)-valued
-                random variable independent of \(\xi\), and let \(\Psi\) be
-                the mild solution started from \(\Psi_0\),
-              </p>
-              <center>
-                \(\displaystyle \Psi_t (f) = \Psi_0 (\mathrm{e}^{- tA} f) +
-                \sqrt{2}  \hspace{0.17em} \xi
-\left( \mathbb{1}_{(0, t)} (r)
-                \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
-\right), \qquad t
-                \geq 0.\)
-              </center>
-              <p>
-                Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
-                \mathrm{e}^{- \frac{1}{2}
-\langle f, Cf \rangle}\) as \(t \to
-                \infty\) for every \(f \in \mathcal{S} (\mathcal{M})\).
-                Moreover \(\mu_m\) is invariant (\(\Psi_0 \sim \mu_m\) implies
-                \(\Psi_t \sim \mu_m\) for all \(t\)), and it is the unique
-                invariant probability measure of the dynamics.
-              </p>
-            </li>
-          </ol>
-        </div></i>
-      </div>
-    </div>
-    <p style="margin-top: 1em">
-      <strong class="enunciation-name">Proof. </strong>(a) Since \(A\) is self-adjoint and
-      commutes with \(\mathrm{e}^{- uA}\),
-    </p>
-    <center>
-      \(\displaystyle \langle K_{t, f}, K_{s, g} \rangle = \int_{- \infty}^{t
-      \wedge s} \langle f,
-\mathrm{e}^{- (t + s - 2 r) A} g \rangle \mathrm{d}
-      r = \langle f,
-\mathrm{e}^{- |t - s|A} (2 A)^{- 1} g \rangle .\)
-    </center>
-    <p>
-      In particular \(K_{t, f} \in L^2  (\mathbb{R} \times \mathcal{M})\), and
-      multiplying by \(2\) gives the covariance. Stationarity follows. For
-      fixed \(t\), \(f \mapsto \Phi_t (f)\) is linear and \(\mathbb{E} [\Phi_t
-      (f)^2] = \langle f, Cf \rangle \leq m^{- 2} \|f\|_{L^2}^2\), so it is
-      continuous from \(\mathcal{S} (\mathcal{M})\) to \(L^2 (\mathbb{P})\).
-      By the regularisation theorem for random linear functionals on nuclear
-      spaces (It&ocirc;&ndash;Nawata, Mitoma) it has an \(\mathcal{S}'
-      (\mathcal{M})\)-valued version, which is centred Gaussian with
-      covariance \(C\), i.e. has law \(\mu_m\). On the torus one can see this
-      directly: the coordinates \(\Phi_t (e_n)\) are independent stationary OU
-      processes \(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
-      \mathrm{d} B\) with variance \(\lambda_n^{- 1}\), and <class style="font-style: normal">(<a
-      href="#eq:series">3.3</a>)</class> applies.
-    </p>
-    <p>
-      (b) The mild formula is the identity \(K_{t, h} = K_{s, \mathrm{e}^{- (t
-      - s) A} h} + \mathbb{1}_{(s, t)} (r)
-\mathrm{e}^{- (t - r) A} h\)
-      together with the linearity of \(\xi\). The weak formulation follows
-      from the mild one by a stochastic Fubini argument (Exercise <a href="#ex:weak">3.12</a>).
-    </p>
-    <p>
-      (c) Since \(\Psi_0\) is independent of \(\xi\),
-    </p>
-    <center>
-      \(\displaystyle \mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}]
-      =\mathbb{E}
-[\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{- tA} f)}]
-      \hspace{0.17em}
-\mathrm{e}^{- \frac{1}{2}  \langle f, (1 - \mathrm{e}^{-
-      2 tA}) Cf \rangle} .\)
-    </center>
-    <p style="margin-bottom: 1em">
-      For \(m > 0\), \(\mathrm{e}^{- tA} f \to 0\) in \(\mathcal{S}
-      (\mathcal{M})\) as \(t \to \infty\), so \(\Psi_0 (\mathrm{e}^{- tA} f)
-      \to 0\) a.s. because \(\Psi_0 \in \mathcal{S}' (\mathcal{M})\). By
-      dominated convergence the first factor tends to \(1\), while the second
-      tends to \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\). If
-      \(\Psi_0 \sim \mu_m\), the first factor equals \(\mathrm{e}^{-
-      \frac{1}{2}  \langle f, \mathrm{e}^{- 2 tA} Cf \rangle}\) and the
-      product is exactly \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
-      \rangle}\), which proves invariance. If \(\nu\) is invariant, start from
-      \(\Psi_0 \sim \nu\): then \(\text{Law} (\Psi_t) = \nu\) for all \(t\),
-      so the characteristic functional of \(\nu\) equals that of \(\mu_m\),
-      and \(\nu = \mu_m\).<span style="margin-left: 1em"></span>\(\Box\)
-    </p>
-    <div style="margin-top: 1em; margin-bottom: 1em">
-      <table style="width: 100%">
-        <tbody><tr>
-          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><center>
-            <img src="cqft_notes_L2-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.1999779614325em" alt="Figure from Constructive quantum field theory — Lecture 2 (notes)" decoding="async" loading="lazy"><a id="fig:she"></a>
-          </center></td>
-        </tr><tr>
-          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
-        </tr><tr>
-          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
-            <font style="font-size: 84.1%"><p>
-              <b>Figure 3.3. </b><a id="auto-15"></a>Parabolic stochastic quantisation
-              of the GFF on a circle of length \(8\), \(m = 1\), started from
-              \(\Phi_0 = 0\). Left: a sample of the solution. Right: each
-              Fourier mode is an Ornstein&ndash;Uhlenbeck process, whose
-              variance relaxes to \(\lambda_k^{- 1}\) at rate \(2 \lambda_k\)
-              (Theorem <a href="#thm:parabolic">3.19</a>(c)). Dots: Monte Carlo estimates with
-              \(4000\) samples.
-            </p></font>
-          </div></td>
-        </tr></tbody>
-      </table>
-    </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">3.20</class>. </strong>As a Gaussian
-      field on \(\mathbb{R} \times \mathcal{M}\), the stationary solution has
-      covariance \(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
-      \partial_t^2 +
-A^2)^{- 1}\), and its equal-time slice has covariance \(2
-      \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}  \frac{\mathrm{d} \theta}{2
-      \pi} =
-A^{- 1}\). The stochastic time \(t\) is unrelated to the
-      Euclidean time \(\tau\). For interacting theories, <class style="font-style: normal">(<a
-      href="#eq:SQE">3.14</a>)</class> is a singular SPDE. It was solved by Da Prato
-      and Debussche for \(\Phi^4_2\) [<a href="#bib-DPD03">DPD03</a>] (see also [<a href="#bib-JLM85">JLM85</a>,
-      <a href="#bib-AR91">AR91</a>]), and for \(\Phi^4_3\) using regularity structures
-      and paracontrolled calculus [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a
-      href="#bib-CC18">CC18</a>]. Global-in-time bounds [<a href="#bib-MW17">MW17</a>, <a href="#bib-GH19">GH19</a>]
-      then allow constructing the Euclidean \(\Phi^4_3\) theory as the
-      invariant measure of the dynamics [<a href="#bib-GH21">GH21</a>].
-    </p>
-    <h3 id="auto-16">3.6<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
-    stochastic quantisation<span style="margin-left: 1em"></span></h3>
-    <p>
-      Parisi and Sourlas [<a href="#bib-PS79">PS79</a>] discovered that the elliptic SPDE
-      in \(d + 2\) dimensions
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:ESQ"></a>\(\displaystyle (m^2 -
-        \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi + V' (\Psi) =
-        \zeta,
-\qquad \zeta \text{white noise on } \mathbb{R}^2 \times
-        \mathcal{M},\)</td>
-        <td align="right">(3.17)</td>
-      </tr>
-    </table>
-    <p>
-      is related to the \(d\)-dimensional Gibbs measure: formally, the law of
-      \(\Psi (z, \cdot)\), \(z \in \mathbb{R}^2\), is \(\propto \exp \left( -
-      4 \pi \left[ \tfrac{1}{2} \langle \varphi, A \varphi
-\rangle + \int V
-      (\varphi) \right] \right) \mathcal{D} \varphi\) (<em>dimensional
-      reduction</em>). The underlying mechanism is a hidden supersymmetry [<a
-      href="#bib-PS79">PS79</a>, <a href="#bib-KLP84">KLP84</a>]. In [<a href="#bib-KLP84">KLP84</a>] the
-      dimensional reduction of the supersymmetric representation is proved
-      rigorously, but not the supersymmetric representation of the solution of
-      the SPDE; the full nonlinear statement was proved for \(d = 0\) in [<a
-      href="#bib-ADG20">ADG20</a>] and for some two-dimensional models (polynomial
-      interactions on \(\mathbb{T}^2\), exponential interactions on
-      \(\mathbb{R}^2\)) in [<a href="#bib-ADG21">ADG21</a>]; elliptic \(\Phi^4\) equations
-      in \(4\) and \(5\) dimensions are solved in [<a href="#bib-GH19">GH19</a>]. For \(V
-      = 0\) the statement is elementary, and it explains the factor \(4 \pi\).
-      We normalise the noise so that the slice is exactly \(\mu_m\).
-    </p>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.21</class>. </strong><i><class
-        style="font-style: normal"><strong>(Elliptic stochastic quantisation of the GFF)
-        </strong></class><a id="thm:elliptic"></a> Let \(\zeta\) be white noise on
-        \(\mathbb{R}^2 \times \mathcal{M}\) (an \(\mathcal{S}'  (\mathbb{R}^2
-        \times \mathcal{M})\)-valued Gaussian variable with \(\mathbb{E}
-        [\zeta (u) \zeta (v)] = \langle u, v \rangle\)) and \(\textsf{L} :=
-        m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}} =
-        -
-\Delta_{\mathbb{R}^2} + A\).</i>
-      </p>
-      <div style="margin-bottom: 1em">
-        <i><div class="enum-alpha">
-          <ol>
-            <li>
-              <p>
-                The equation \(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
-                \zeta\) has a unique \(\mathcal{S}'  (\mathbb{R}^2 \times
-                \mathcal{M})\)-valued solution, \(\Psi (u) = \sqrt{4 \pi}
-                \hspace{0.17em} \zeta (\textsf{L}^{- 1} u)\).
-              </p>
-            </li>
-            <li>
-              <p>
-                For \(z \in \mathbb{R}^2\) and \(f \in \mathcal{S}
-                (\mathcal{M})\) the function \(K_{z, f} := \textsf{L}^{- 1}
-                (\delta_z \otimes f)\) lies in \(L^2  (\mathbb{R}^2 \times
-                \mathcal{M})\), and \(z \mapsto K_{z, f}\) is continuous. The
-                Wiener integrals \(\Psi (z, f) := \sqrt{4 \pi}
-                \hspace{0.17em} \zeta (K_{z, f})\) satisfy \(\Psi (v \otimes
-                f) = \int_{\mathbb{R}^2} v (z) \Psi (z, f)
-                \hspace{0.17em}
-\mathrm{d} z\) a.s. for \(v \in \mathcal{S}
-                (\mathbb{R}^2)\).
-              </p>
-            </li>
-            <li>
-              <p>
-                For all \(z \in \mathbb{R}^2\) and \(f, g \in \mathcal{S}
-                (\mathcal{M})\), \(\mathbb{E} [\Psi (z, f) \Psi (z, g)] =
-                \langle f, Cg \rangle\). Hence \(\Psi (z, \cdot)\) has an
-                \(\mathcal{S}' (\mathcal{M})\)-valued version with law
-                \(\mu_m\), and the field \((\Psi (z, \cdot))_{z \in
-                \mathbb{R}^2}\) is stationary and isotropic in \(z\).
-              </p>
-            </li>
-          </ol>
-        </div></i>
-      </div>
-    </div>
-    <p style="margin-top: 1em">
-      <strong class="enunciation-name">Proof. </strong>(a) \(\textsf{L}\) is a continuous
-      bijection of \(\mathcal{S} (\mathbb{R}^2 \times \mathcal{M})\), so
-      \(\Psi (u) := \sqrt{4 \pi} \zeta (\textsf{L}^{- 1} u)\) defines an
-      \(\mathcal{S}'\)-valued variable with \(\Psi (\textsf{L} u) = \sqrt{4
-      \pi} \zeta (u)\). If \(D \in \mathcal{S}'\) satisfies \(D (\textsf{L} u)
-      = 0\) for all \(u \in \mathcal{S}\), then \(D = 0\) since \(\textsf{L}\)
-      is onto: the solution is unique.
-    </p>
-    <p>
-      (b), (c) Take the Fourier transform in \(z\) only, with measure
-      \(\mathrm{d} q / (2 \pi)^2\). The transform of \(K_{z, f}\) is the \(L^2
-      (\mathcal{M})\)-valued function \(q \mapsto \mathrm{e}^{- \mathrm{i} q
-      \cdot z} (|q|^2 + A)^{- 1} f\). By Plancherel, the spectral theorem for
-      \(A\) and Tonelli,
-    </p>
-    <center>
-      \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \int_{\mathbb{R}^2}
-      \langle f, (|q|^2 +
-A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2 \pi)^2} =
-      \left\langle f, \left[
-\int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2
-      \pi)^2} (|q|^2 + A)^{- 2} \right] g
-\right\rangle = \frac{1}{4 \pi}
-      \langle f, A^{- 1} g \rangle,\)
-    </center>
-    <p>
-      using the scalar identity
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:4pi"></a>\(\displaystyle \int_{\mathbb{R}^2}
-        \frac{\mathrm{d} q}{(2 \pi)^2}  \frac{1}{(|q|^2 + a)^2} =
-\frac{1}{2
-        \pi}  \int_0^{\infty} \frac{r \hspace{0.17em} \mathrm{d} r}{(r^2
-        +
-a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
-        <td align="right">(3.18)</td>
-      </tr>
-    </table>
-    <p style="margin-bottom: 1em">
-      In particular \(K_{z, f} \in L^2\), and its continuity in \(z\) follows
-      by dominated convergence. Since the transform of \(\int v (z) K_{z, f}
-      \mathrm{d} z\) is \(\hat{v} (q)  (|q|^2 + A)^{- 1} f\), the Bochner
-      integral \(\int v (z) K_{z, f} \mathrm{d} z\) equals \(\textsf{L}^{- 1}
-      (v \otimes f)\). The Wiener integral \(\zeta\) is an isometry \(L^2 \to
-      L^2 (\mathbb{P})\) and commutes with Bochner integrals, which gives (b).
-      Multiplying by \(4 \pi\) gives the covariance in (c). The \(\mathcal{S}'
-      (\mathcal{M})\)-valued version is obtained as in Theorem <a href="#thm:parabolic">3.19</a>.
-      Stationarity and isotropy hold because \(\mathbb{E} [\Psi (z, f) \Psi
-      (z', g)] = 4 \pi \int \mathrm{e}^{\mathrm{i} q
-\cdot (z - z')} \langle
-      f, (|q|^2 + A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2
-\pi)^2}\) depends
-      only on \(|z - z' |\).<span style="margin-left: 1em"></span>\(\Box\)
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">3.22</class>. </strong><class style="font-style: normal"><strong>(Slices
-      of Gaussian fields) </strong></class>Both stochastic quantisations
-      exhibit the GFF as a <em>slice</em> of a Gaussian field in higher
-      dimension. For the field on \(\mathbb{R}^k \times \mathcal{M}\) with
-      covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\), the slice \(\{0\}
-      \times \mathcal{M}\) has covariance \(c_{k, p} A^{k / 2 - p}\) with
-      \(c_{k, p} = \Gamma (p - \frac{k}{2}) / ((4 \pi)^{k / 2} \Gamma (p))\)
-      (Exercise <a href="#ex:slices">3.13</a>). The GFF arises iff \(p = 1 + k / 2\):
-      \((k, p) = (2, 2)\) is elliptic SQ, while \((k, p) = (1, 1)\) gives
-      instead the time-zero field \((2 \omega)^{- 1}\) of Proposition <a href="#prop:RP">3.4</a>.
-      When \(\mathcal{M}=\mathbb{R}^d\), the elliptic field \(\Psi\) is
-      Euclidean invariant in \(\mathbb{R}^{d + 2}\), and its restriction to
-      <em>every</em> codimension-two affine subspace is a GFF.
-    </p>
-    <h3 id="auto-17">3.7<span style="margin-left: 1em"></span>Outlook<span style="margin-left: 1em"></span></h3>
-    <p>
-      In Lecture 3 we decompose the GFF along a scale parameter: the field at
-      resolution \(t\) is a Gaussian martingale, whose terminal value is the
-      GFF. Interactions are then introduced through the Polchinski equation
-      for the effective potential, and through its probabilistic form, a
+      In Lecture 3 we obtain the GFF as the stationary marginal of the
+      parabolic and elliptic stochastic quantisation equations, and we
+      decompose it along a scale parameter: the field at resolution \(t\) is a
+      Gaussian martingale, whose terminal value is the GFF. In Lecture 4
+      interactions are introduced through the Polchinski equation for the
+      effective potential, and through its probabilistic form, a
       forward&ndash;backward stochastic differential equation for the field at
       increasing resolution. These tools can be used to construct \(\Phi^4_2\)
       and \(\Phi^4_3\). On \(\mathbb{T}^2\) the Wick-ordered interaction
@@ -1881,7 +1423,7 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       satisfies the renormalised DS equation <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class>.
       In \(d = 3\) Wick ordering no longer suffices.
     </p>
-    <h3 id="auto-18">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-13">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.1</class>.
@@ -2071,68 +1613,6 @@ P} G (x_i - x_j)\).</font>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.10</class>.
-        </strong><class style="font-style: normal"><strong>(Infinitesimal invariance characterises
-        \(\mu_m\)) </strong></class>On \(\mathbb{T}^d_L\), let \(\nu\) be a
-        probability measure on \(\mathcal{S}' (\mathbb{T}^d_L)\) with
-        \(\varphi (f) \in L^1 (\nu)\) and \(\mathbb{E}_{\nu}  [\mathcal{L}F] =
-        0\) for all \(F \in \mathcal{F}C^{\infty}_b\). Show that \(\nu =
-        \mu_m\). <em>Hint:</em> for \(f = \sum_{n \leq N} a_n e_n\) and \(\psi
-        (a) =\mathbb{E}_{\nu} \mathrm{e}^{\mathrm{i} \varphi (f)}\), show
-        \(\sum_n \lambda_n a_n \partial_{a_n} \psi = - |a|^2 \psi\), and
-        differentiate \(s \mapsto \psi (\mathrm{e}^{sD} a) \exp (\frac{1}{2}
-        \sum_n a_n^2
-\mathrm{e}^{2 \lambda_n s} / \lambda_n)\), where \(D =
-        \text{diag} (\lambda_n)\).</font>
-      </p>
-    </div>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.11</class>.
-        </strong><class style="font-style: normal"><strong>(Reversibility) </strong></class>Use
-        Proposition <a href="#prop:inf-inv">3.18</a> to show that \(\mathcal{L}\) is
-        symmetric in \(L^2 (\mu_m)\). Deduce, and check directly from the
-        covariance in Theorem <a href="#thm:parabolic">3.19</a>(a), that the stationary
-        solution is time reversible: \((\Phi_{- t})_{t \in \mathbb{R}}\) and
-        \((\Phi_t)_{t \in \mathbb{R}}\) have the same law.</font>
-      </p>
-    </div>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.12</class>.
-        </strong><class style="font-style: normal"><strong>(Mild implies weak) </strong></class><a
-        id="ex:weak"></a> Prove the weak formulation in Theorem <a href="#thm:parabolic">3.19</a>(b).
-        Show that, as a random distribution on \(\mathbb{R} \times
-        \mathcal{M}\), the stationary solution has covariance operator \(2 (-
-        \partial_t^2 + A^2)^{- 1}\).</font>
-      </p>
-    </div>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.13</class>.
-        </strong><class style="font-style: normal"><strong>(Slices of Gaussian fields)
-        </strong></class><a id="ex:slices"></a> Let \(k \geq 1\), \(p > k / 2\), and let
-        \(\Psi\) be the centred Gaussian field on \(\mathbb{R}^k \times
-        \mathcal{M}\) with covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\).
-        (a) Show that \(\Psi (0, \cdot)\) is well defined with covariance
-        \(c_{k, p} A^{k / 2 - p}\), \(c_{k, p} = \Gamma (p - \frac{k}{2}) /
-        ((4 \pi)^{k / 2} \Gamma (p))\). (b) For \((k, p) = (1, 1)\) and
-        \(\mathcal{M}= N\), show that the time-zero field of the GFF on
-        \(\mathbb{R} \times N\) is the ground state measure \(\Omega_0
-        (\varphi)^2 \mathcal{D} \varphi\) of the free Hamiltonian, i.e.
-        Gaussian with covariance \((2 \omega)^{- 1}\) (compare Exercise <a
-        href="cqft_notes_L1.html#ex:OU">2.2</a>). (c) Show that the restriction of the elliptic field of
-        Theorem <a href="#thm:elliptic">3.21</a> to a codimension-<em>one</em> slice
-        \(\mathbb{R} \times \mathcal{M}\) has covariance proportional to \((-
-        \partial^2 + A)^{- 3 / 2}\), so it is not a GFF. (d) Show that
-        \(\mathbb{E} [\Psi (z, f) \Psi (0, g)] = \langle f, |z|A^{- 1 / 2} K_1
-        (|z|A^{1
-/ 2}) g \rangle\) in Theorem <a href="#thm:elliptic">3.21</a>, and recover
-        \(\langle f, Cg \rangle\) as \(z \to 0\).</font>
-      </p>
-    </div>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.14</class>.
         </strong><class style="font-style: normal"><strong>(Lattice approximation)
         </strong></class><a id="ex:lattice-gff"></a> Let \(\mu_{\varepsilon}\) be the centred
         Gaussian measure on \(\mathbb{R}^{(\varepsilon \mathbb{Z}/
@@ -2146,28 +1626,28 @@ P} G (x_i - x_j)\).</font>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.15</class>.
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.11</class>.
         </strong><class style="font-style: normal"><strong>(Computer experiments)
-        </strong></class>(a) Sample the lattice GFF of Exercise <a href="#ex:lattice-gff">3.14</a>
+        </strong></class>(a) Sample the lattice GFF of Exercise <a href="#ex:lattice-gff">3.10</a>
         on \(\mathbb{T}^2\) with \(\varepsilon = 1 / N\) (i.e. on
         \((\mathbb{Z}/ N\mathbb{Z})^2\) with mass \(m / N\) in lattice units)
         by FFT, for \(N = 64, 256, 1024\), and check that the empirical
         variance of \(\varphi_u\) grows like \(\frac{1}{2 \pi} \log N\). (b)
-        Implement an explicit Euler scheme for the lattice version of <class
-        style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class> with \(V = 0\) (mind the stability
-        constraint \(\Delta t \lesssim \varepsilon^2\)), and check that the
-        variance of the \(k\)-th Fourier mode relaxes to \(\lambda_k^{- 1}\)
-        at rate \(2 \lambda_k\), with \(\lambda_k\) the eigenvalues of \(m^2 -
-        \Delta_{\varepsilon}\). (c) Add \(V' (\varphi) = 4 \lambda (\varphi^3
-        - 3 c_{\varepsilon} \varphi)\), i.e. \(V = \lambda : \varphi^4\):, and
-        observe that the solutions have a nontrivial limit as \(N \to
-        \infty\), while without the counterterm \(- 12 \lambda c_{\varepsilon}
-        \varphi\) they converge to zero [<a href="#bib-HRW12">HRW12</a>].</font>
+        Implement an explicit Euler scheme for the lattice version of <a href="cqft_lecture3.html#eq:SQE">(4.1)</a>
+        in Lecture 3 with \(V = 0\) (mind the stability constraint \(\Delta t
+        \lesssim \varepsilon^2\)), and check that the variance of the \(k\)-th
+        Fourier mode relaxes to \(\lambda_k^{- 1}\) at rate \(2 \lambda_k\),
+        with \(\lambda_k\) the eigenvalues of \(m^2 - \Delta_{\varepsilon}\).
+        (c) Add \(V' (\varphi) = 4 \lambda (\varphi^3 - 3 c_{\varepsilon}
+        \varphi)\), i.e. \(V = \lambda : \varphi^4\):, and observe that the
+        solutions have a nontrivial limit as \(N \to \infty\), while without
+        the counterterm \(- 12 \lambda c_{\varepsilon} \varphi\) they converge
+        to zero [<a href="#bib-HRW12">HRW12</a>].</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.16</class>.
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.12</class>.
         </strong><class style="font-style: normal"><strong>(Two masses) </strong></class><a id="ex:two-masses"></a>
         In the setting of the example after Remark <a href="#rem:KL-euclid">3.7</a>: (a) Show
         that \(\mu_{\rho}\) satisfies (OS0)&ndash;(OS4), and that the theory
@@ -2196,10 +1676,10 @@ P} G (x_i - x_j)\).</font>
         convergence), while \(s / p (s) \to 0\).</font>
       </p>
     </div>
-    <h2 id="auto-19">References and further reading<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-14">References and further reading<span style="margin-left: 1em"></span></h2>
     <p>
       <div style="display: inline">
-        <a id="auto-20"></a>
+        <a id="auto-15"></a>
       </div>
       <h5>Guide.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2214,12 +1694,12 @@ P} G (x_i - x_j)\).</font>
         representations:</em> [<a href="#bib-Sym69">Sym69</a>, <a href="#bib-BFS82">BFS82</a>, <a
         href="#bib-Dyn84">Dyn84</a>, <a href="#bib-LW04">LW04</a>, <a href="#bib-LJ10">LJ10</a>, <a href="#bib-LJ11">LJ11</a>,
         <a href="#bib-Lup16">Lup16</a>, <a href="#bib-Wer16">Wer16</a>, <a href="#bib-QW19">QW19</a>, <a href="#bib-WP21">WP21</a>].
-        <em>Stochastic quantisation:</em> reviews [<a href="#bib-DH87">DH87</a>, <a href="#bib-DH88">DH88</a>,
-        <a href="#bib-Gub25">Gub25</a>]; parabolic [<a href="#bib-PW81">PW81</a>, <a href="#bib-JLM85">JLM85</a>,
-        <a href="#bib-AR91">AR91</a>, <a href="#bib-DPD03">DPD03</a>, <a href="#bib-DPZ14">DPZ14</a>]; singular
-        SPDEs [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a href="#bib-CC18">CC18</a>, <a
-        href="#bib-MW17">MW17</a>, <a href="#bib-HRW12">HRW12</a>]; construction of \(\Phi^4_3\) via
-        dynamics and variational methods [<a href="#bib-GH21">GH21</a>, <a href="#bib-BG20">BG20</a>];
+        <em>Stochastic quantisation (Lecture 3):</em> reviews [<a href="#bib-DH87">DH87</a>,
+        <a href="#bib-DH88">DH88</a>, <a href="#bib-Gub25">Gub25</a>]; parabolic [<a href="#bib-PW81">PW81</a>,
+        <a href="#bib-JLM85">JLM85</a>, <a href="#bib-AR91">AR91</a>, <a href="#bib-DPD03">DPD03</a>, <a href="#bib-DPZ14">DPZ14</a>];
+        singular SPDEs [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a href="#bib-CC18">CC18</a>,
+        <a href="#bib-MW17">MW17</a>, <a href="#bib-HRW12">HRW12</a>]; construction of \(\Phi^4_3\)
+        via dynamics and variational methods [<a href="#bib-GH21">GH21</a>, <a href="#bib-BG20">BG20</a>];
         Euclidean field equations and DS equations for \(P (\varphi)_2\) [<a
         href="#bib-DG74">DG74</a>, <a href="#bib-AR91">AR91</a>], for \(\Phi^4_3\) [<a href="#bib-FR77">FR77</a>,
         <a href="#bib-ALZ06">ALZ06</a>, <a href="#bib-GH21">GH21</a>], and for the exponential model

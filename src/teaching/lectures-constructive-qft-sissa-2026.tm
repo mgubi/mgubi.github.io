@@ -47,8 +47,7 @@
     free field. Construction on the torus and Euclidean space; reflection
     positivity and the free relativistic field; Nelson's Markov property
     and Symanzik's Brownian-path representation; Wick products; Gaussian
-    integration by parts and the Dyson--Schwinger equation; parabolic and
-    elliptic stochastic quantisation.
+    integration by parts and the Dyson--Schwinger equation.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L2.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
@@ -56,42 +55,50 @@
     Revised 30 October 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
-    observables, the Polchinski flow and forward--backward equations.
-    Decomposition of the field by resolution; stochastic observables and
-    effective potentials; the Polchinski equation and FBSDEs; the Wetterich
-    equation and the variational structure of the flow. Additional material
-    covers products of observables, perturbation theory, counterterms and
-    Dyson--Schwinger equations at every scale.
-    Draft notes: [<notes-store|PDF|sissa/2026/cqft_notes_L3.pdf>]
+    quantisation and stochastic observables. Parabolic and elliptic
+    stochastic quantisation of the Gaussian free field; decomposition of the
+    field by resolution; stochastic observables, with examples from Brownian
+    motion and the free field; Wick powers in every dimension, products of
+    observables and the operator product expansion.
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L3.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>].
     Revised 30 October 2026.
   </itemize>
 
-  <subsection*|Provisional materials for Lectures 4--6>
+  <subsection*|Provisional materials for Lectures 4--7>
 
-  An FBSDE construction of <math|\<phi\><rsup|4><rsub|3>> on the torus.
-  These materials may be adjusted as the course progresses.
+  Lecture 4 introduces interactions through the Polchinski flow;
+  Lectures 5--7 give an FBSDE construction of
+  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
+  adjusted as the course progresses. Lecture 7 will not be delivered in
+  class.
 
   <\itemize>
-    <item><with|font-series|bold|Lecture 4>: The Wetterich FBSDE, two renormalisations and the large-field problem.
+    <item><with|font-series|bold|Lecture 4>: The Polchinski flow and forward--backward equations. Effective potentials and the Polchinski equation; the FBSDE, whose force is an observable; the Wetterich equation and the variational structure of the flow; perturbation theory, counterterms and Dyson--Schwinger equations at every scale.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>].
 
-    <item><with|font-series|bold|Lecture 5>: A priori estimates for the forward--backward system.
+    <item><with|font-series|bold|Lecture 5>: The Wetterich FBSDE, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>].
 
-    <item><with|font-series|bold|Lecture 6>: UV stability, compactness and the limiting FBSDE.
+    <item><with|font-series|bold|Lecture 6>: A priori estimates for the forward--backward system.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>].
+
+    <item><with|font-series|bold|Lecture 7>: UV stability, compactness and the limiting FBSDE (not delivered in class).
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L7.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture7.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L7.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_L7.tm>].
 
   </itemize>
 

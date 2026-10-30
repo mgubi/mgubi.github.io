@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 7 (notes) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
+    <link href="cqft-notes.css" type="text/css" rel="stylesheet">
+    <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
+    <script src="max-html.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 7 (notes), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_lecture7.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 7 (notes)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>A Constructive Introduction to Quantum
+            Field Theory</strong></font></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 129.7%"><strong>Lecture 7: \(\Phi^4_3\) on the torus III.
+            UV stability, compactness and the limiting
+            FBSDE</strong></font></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+          <table class="title-block">
+            <tr>
+              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        <class style="font-variant: small-caps">by M. Gubinelli</class>
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        Mathematical Institute, University of Oxford
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i>November 2026 <class style="font-family: Times New Roman">&mdash;</class>
+            <em>provisional</em></i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <div style="margin-top: 2em; margin-bottom: 0.5em; margin-left: 60px; margin-right: 60px">
+      <p style="margin-bottom: 0.5em">
+        <font style="font-size: 84.1%"><strong>Abstract</strong></font>
+      </p>
+    </div>
+    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
+      <p>
+        <font style="font-size: 84.1%">We close the argument. At a fixed lattice the error of
+        the approximate forecast vanishes at infinite resolution, because the
+        explicit action matches the bare action there; this removes the
+        boundary term of the energy estimate, and gives bounds uniform in the
+        lattice (UV stability). The order of limits is essential: first the
+        upper scale at fixed lattice, then the lattice. The uniform energy
+        bounds give compactness of the forecast in space and scale, by a
+        maximum principle and a linear elliptic estimate, and tightness of the
+        lattice measures in \(H^{- s}\), \(s > \frac{1}{2}\). Identifying the
+        limit requires two further arguments: weak convergence of the
+        deterministic coefficients against compact resolvents, and strong
+        compactness of the backward integrand, which follows from the
+        positivity of the posterior covariance and its exact Riccati equation.
+        The result is a solution of the FBSDE on the continuum torus, driven
+        by a Brownian motion obtained as the limit of the lattice innovations,
+        with no additional noise, whose terminal law is a subsequential limit
+        of the lattice measures and satisfies a renormalised integration by
+        parts formula. We end with what is not proved and with the
+        infinite-volume problem.</font>
+      </p>
+    </div>
+    <div class="max-toc">
+      <div class="max-toc-title">
+        Contents
+      </div>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">2</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>18<span style="margin-left: 1em"></span>The boundary at infinite resolution</b> <span
+        style="margin-left: 5mm"></span> <a href="#auto-2">2</a>
+      </p>
+      <p>
+        18.1<span style="margin-left: 1em"></span>The boundary lemma <span style="margin-left: 5mm"></span> <a
+        href="#auto-3">2</a>
+      </p>
+      <p>
+        18.2<span style="margin-left: 1em"></span>UV stability <span style="margin-left: 5mm"></span> <a href="#auto-4">3</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-5">3</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>19<span style="margin-left: 1em"></span>Compactness</b> <span style="margin-left: 5mm"></span> <a href="#auto-6">3</a>
+      </p>
+      <p>
+        19.1<span style="margin-left: 1em"></span>One Hilbert space <span style="margin-left: 5mm"></span> <a
+        href="#auto-7">3</a>
+      </p>
+      <p>
+        19.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum principle <span
+        style="margin-left: 5mm"></span> <a href="#auto-8">4</a>
+      </p>
+      <p>
+        19.3<span style="margin-left: 1em"></span>Regularity in space and scale <span style="margin-left: 5mm"></span>
+        <a href="#auto-9">4</a>
+      </p>
+      <p>
+        19.4<span style="margin-left: 1em"></span>The terminal field <span style="margin-left: 5mm"></span> <a
+        href="#auto-10">5</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>20<span style="margin-left: 1em"></span>Identifying the limit</b> <span style="margin-left: 5mm"></span>
+        <a href="#auto-11">5</a>
+      </p>
+      <p>
+        20.1<span style="margin-left: 1em"></span>The deterministic coefficients <span style="margin-left: 5mm"></span>
+        <a href="#auto-12">5</a>
+      </p>
+      <p>
+        20.2<span style="margin-left: 1em"></span>The noise <span style="margin-left: 5mm"></span> <a href="#auto-13">6</a>
+      </p>
+      <p>
+        20.3<span style="margin-left: 1em"></span>The result <span style="margin-left: 5mm"></span> <a href="#auto-14">7</a>
+      </p>
+      <p>
+        20.4<span style="margin-left: 1em"></span>The renormalised field equation <span style="margin-left: 5mm"></span>
+        <a href="#auto-15">7</a>
+      </p>
+      <p>
+        20.5<span style="margin-left: 1em"></span>What is not proved, and where to go next <span
+        style="margin-left: 5mm"></span> <a href="#auto-16">8</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Summary of the course. <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a></font>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-19">9</a>
+      </p>
+    </div>
+    <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
+    <p>
+      Lecture 6 proved, at every lattice cutoff \(N\) and every upper scale
+      \(T\),
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:energy-recall"></a>\(\displaystyle \|E_T \|_{L^p} + \|J_T
+        \|_{L^p} \le C_{\gamma}  (1 + p^5 + \delta_{N, T, p}),
+\qquad
+        \delta_{N, T, p} = \|TZ_T \|^2_{L^{2 p} (\mathbb{P}; L^2)},\)</td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      for the backward energy \(E_T\) and the large-field action \(J_T\) of <a
+      href="cqft_lecture6.html#eq:energies">(15.6)</a>. Three things remain.
+    </p>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            Show that the boundary term vanishes: \(TZ_T \to 0\) as \(T \to
+            \infty\) at fixed \(N\) (Section <a href="#sec:terminal">18</a>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Turn the uniform energy bounds into compactness of the processes
+            and of the measures (Section <a href="#sec:compactness">19</a>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Identify the limit: the deterministic coefficients, the noise, and
+            the equations (Section <a href="#sec:limit">20</a>).
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p>
+      The structure of (iii) is instructive: convergence of the fields alone
+      does not suffice to pass to the limit in an FBSDE, because the backward
+      martingale might converge to something with <em>extra noise</em>. Here
+      the statistical meaning of the backward variable, a posterior mean with
+      a positive covariance, saves us.
+    </p>
+    <h2 id="auto-2"><a id="sec:terminal"></a>18<span style="margin-left: 1em"></span>The boundary at infinite
+    resolution<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3">18.1<span style="margin-left: 1em"></span>The boundary lemma<span style="margin-left: 1em"></span></h3>
+    <p>
+      At a fixed lattice, the terminal resolution is \(q = \infty\), and the
+      field at resolution \(q\), \(\Phi_q = C_q P_q\), converges to the
+      terminal field \(\Phi_{\infty}\). The approximate action
+      \(\bar{\Gamma}_q\) was built to converge to the bare action: \(\mu_q \to
+      \mu_N\), \(\Theta_q \to 0\), and the nonlinear corrections were
+      integrated from \(q = \infty\), so that they vanish there. This is the
+      boundary condition of the backward equation.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">18.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Boundary lemma) </strong></class><a id="lem:terminal"></a> At fixed
+        \(N\), for every \(p < \infty\), as \(q \to \infty\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:terminal"></a>\(\displaystyle \|Y_q - \Phi_{\infty}
+          \|_{L^p (\mathbb{P}; H_N)} + \|qZ_q \|_{L^p
+(\mathbb{P}; H_N)} \le
+          C_{N, p}  \hspace{0.17em} q^{- 1 / 2}, \qquad
+\text{hence} \qquad
+          \delta_{N, T, p} \le C_{N, p} T^{- 1} .\)</td>
+          <td align="right">(18.1)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>The constants depend on \(N\); this is not a uniform estimate.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>All norms on \(H_N\) are equivalent, and
+      we do not track the dependence on \(N\).
+    </p>
+    <p>
+      <em>The field at resolution \(q\).</em> By <a href="cqft_lecture5.html#eq:observation">(12.5)</a>, \(\Phi_q
+      = C_q P_q = (q - q_0) C_q \Phi_{\infty} + C_q B_{q - q_0}\), and \((q -
+      q_0) C_q - I = - C_q K_{q_0} = O (q^{- 1})\), \(\|C_q B_{q - q_0}
+      \|_{L^p} = O (q^{- 1 / 2})\). So \(\| \Phi_q - \Phi_{\infty} \|_{L^p}
+      \le C_{N, p} q^{- 1 / 2}\).
+    </p>
+    <p>
+      <em>The approximate forecast.</em> Global convexity gives \(\|Y_q \| \le
+      C \|P_q \| / q\), bounded in every \(L^p\) uniformly in \(q\). The
+      coordinate equation \(\Phi_q = Y_q + C_q D \bar{\Gamma}_q (Y_q)\) and
+      the bounds \(| \mu_q | \le C_N\), \(\| \Theta_q \|_{\text{row}} = O_N
+      (q^{- 1 / 2})\) and \(\|D \tilde{h}_q (y)\|_{\infty} \le C \textsf{S}_4
+      (h^{[2]}_q) \|y\|_{\infty}^3
+\le C \gamma^2 q^{- 1 / 2}
+      \|y\|_{\infty}^3\) (Taylor from the fourth order, since the low jets
+      vanish) show that \(D \bar{\Gamma}_q (Y_q)\) is bounded in \(L^p\), so
+      \(\|Y_q - \Phi_q \|_{L^p} = O (q^{- 1})\). Moreover \(| \mu_q - \mu_N |
+      = O_N (q^{- 1})\), and therefore
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:gradient-match"></a>\(\displaystyle \|D \bar{\Gamma}_q (Y_q)
+        - DV_N (\Phi_{\infty})\|_{L^p} \le C_{N, p} q^{- 1 /
+2} .\)</td>
+        <td align="right">(18.2)</td>
+      </tr>
+    </table>
+    <p>
+      Thus <em>the explicit force at the approximate forecast converges to the
+      bare force at the terminal field.</em>
+    </p>
+    <p>
+      <em>The error.</em> Subtract the approximate coordinate identity \(P_q =
+      K_q Y_q + D \bar{\Gamma}_q (Y_q)\) from the exact posterior identity <a
+      href="cqft_lecture5.html#eq:posterior-ibp">(12.10)</a>, \(P_q = K_q \psi_q +\mathbb{E}_q  [DV_N
+      (\Phi_{\infty})]\):
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:qZ"></a>\(\displaystyle qZ_q = qC_q  [D
+        \bar{\Gamma}_q (Y_q) -\mathbb{E}_q DV_N (\Phi_{\infty})] .\)</td>
+        <td align="right">(18.3)</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 1em">
+      Let \(G = DV_N (\Phi_{\infty})\) and \(G^0_q = DV_N (\Phi_q)\), which is
+      \(\mathcal{F}_q\)-measurable. Then \(\|\mathbb{E}_q G - G\|_{L^p} \le
+      \|\mathbb{E}_q (G - G^0_q)\|_{L^p} + \|G^0_q
+- G\|_{L^p} \le 2 \|G -
+      G^0_q \|_{L^p} = O (q^{- 1 / 2})\), by the cubic Lipschitz bound for
+      \(DV_N\) and the first step. With <class style="font-style: normal">(<a href="#eq:gradient-match">18.2</a>)</class>
+      and \(\|qC_q \| \le 1\) this proves the claim.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The proof uses no estimate uniform in \(N\), and no concentration of the
+      posterior: only that the observed estimator \(\Phi_q = C_q P_q\), which
+      is \(\mathcal{F}_q\)-measurable, converges to the hidden field. In
+      Lecture 4 language, the forecast and the field at resolution \(q\) have
+      the same limit at infinite resolution, and the force \(F_q = K_q
+      (\psi_q - \Phi_q)\) converges to the bare force \(- DV_N
+      (\Phi_{\infty})\) (Exercise <a href="#ex:force-limit">18.1</a>; recall \(F_q
+      =\mathbb{E}_q  [- DV_N (\Phi_{\infty})]\) by <a href="cqft_lecture5.html#eq:polchinski-fbsde">(12.9)</a>, so
+      this is the conditional-expectation step of the proof).
+    </p>
+    <h3 id="auto-4">18.2<span style="margin-left: 1em"></span>UV stability<span style="margin-left: 1em"></span></h3>
+    <p>
+      Now let \(T \to \infty\) at fixed \(N\) in <class style="font-style: normal">(<a href="#eq:energy-recall">1</a>)</class>:
+      the paths and the law \(\nu_N\) do not depend on \(T\), \(E_T\) and
+      \(J_T\) increase to \(E_{\infty}\) and \(J_{\infty}\), and \(\delta_{N,
+      T, p} \to 0\) by Lemma <a href="#lem:terminal">18.1</a>. Only then take the supremum
+      over \(N\).
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(UV stability [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="thm:uv"></a> For \(q_0\) large enough, depending only
+        on \(\gamma\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:uv"></a>\(\displaystyle \sup_N (\|E^N_{\infty}
+          \|_{L^p} +\|J^N_{\infty} \|_{L^p}) \le C_{\gamma}  (1
++ p^5), \qquad
+          \sup_N \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma} q^{- 5 / 2},\)</td>
+          <td align="right">(18.4)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>and \(\sup_N \mathbb{E} \exp \{c (E^N_{\infty} + J^N_{\infty})^{1 /
+        5} \} < \infty\) for small \(c > 0\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>Monotone convergence in <class style="font-style: normal">(<a
+      href="#eq:energy-recall">1</a>)</class>, then the representation formula <a href="cqft_lecture6.html#eq:representation">(17.2)</a>
+      on \([q, \infty)\), whose terminal term vanishes by Lemma <a href="#lem:terminal">18.1</a>.
+      The exponential moment follows from the polynomial growth by Markov's
+      inequality with \(p \asymp R^{1 / 5}\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The order of limits matters. The constant \(C_{N, p}\) in Lemma <a href="#lem:terminal">18.1</a>
+      diverges with \(N\), and we never take a supremum over \(N\) of the
+      remainder \(C_{N, p} / T\). The infinite-resolution boundary is used
+      only qualitatively, at each lattice separately.
+    </p>
+    <h3 id="auto-5">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.1</class>.
+        </strong><class style="font-style: normal"><strong>(The force at infinite resolution)
+        </strong></class><a id="ex:force-limit"></a> Show that, at fixed \(N\), \(F_q = K_q
+        (\psi_q - \Phi_q) \to - DV_N (\Phi_{\infty})\) in every \(L^p\), and
+        that \(F_q = K_q Z_q - D \bar{\Gamma}_q (Y_q)\). Interpret the last
+        identity: the force observable of Lecture 4 is the explicit force at
+        the approximate forecast, corrected by \(K_q Z_q\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.2</class>.
+        </strong><class style="font-style: normal"><strong>(Why the stronger boundary)
+        </strong></class>Using the bound on the boundary term in the proof of
+        Proposition <a href="cqft_lecture6.html#prop:backward">17.2</a>, explain why \(Z_T \to 0\) alone would
+        not make it vanish, and why the rate \(\|TZ_T \| = o (1)\) of Lemma <a
+        href="#lem:terminal">18.1</a> is what is needed.</font>
+      </p>
+    </div>
+    <h2 id="auto-6"><a id="sec:compactness"></a>19<span style="margin-left: 1em"></span>Compactness<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-7">19.1<span style="margin-left: 1em"></span>One Hilbert space<span style="margin-left: 1em"></span></h3>
+    <p>
+      To compare lattices, partition \(\mathbb{T}^3\) into cubic cells
+      \(\square_x\) of side \(N^{- 1}\) centred at \(x \in \Lambda_N\), and
+      let
+    </p>
+    <center>
+      \(\displaystyle (\iota_N u) (z) = u (x)  (z \in \square_x), \qquad (j_N
+      f) (x) = N^3
+\int_{\square_x} f, \qquad \textsf{P}_N = \iota_N j_N .\)
+    </center>
+    <p>
+      \(\iota_N : H_N \to H = L^2 (\mathbb{T}^3)\) is an isometry, \(j_N =
+      \iota_N^{\ast}\), and \(\textsf{P}_N \to I\) strongly. Fields are
+      embedded by \(\iota_N\), operators by \(\iota_N \cdot j_N\). The
+      embedded innovation has covariance \(\textsf{P}_N\); in the limit it
+      becomes a cylindrical Brownian motion on \(H\), obtained as the limit of
+      the lattice innovations.
+    </p>
+    <h3 id="auto-8">19.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum
+    principle<span style="margin-left: 1em"></span></h3>
+    <p>
+      The energy bounds control \(L^4\) and \(L^6\) norms of large fields.
+      Spatial suprema at finite resolution come for free from the elliptic
+      structure of <a href="cqft_lecture6.html#eq:volterra">(15.4)</a>.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">19.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum after closure) </strong></class><a id="lem:sup"></a>
+        Let \(\varpi = \frac{3}{8}\), \(\mathcal{Y}_T = \sup_{q_0 \le q \le T}
+        q^{- \varpi} \|Y_q \|_{\infty}\) and \(\mathcal{X}_T = \sup_{q_0 \le q
+        \le T} q^{- \varpi} \|X_q \|_{\infty}\). For \(q_0\) large,</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:sup"></a>\(\displaystyle \mathcal{Y}_T \le C
+            (\mathcal{X}_T + q_0^{- \varpi} \gamma^{1 / 2} E_T^{1 /
+2}),
+            \qquad \|\mathcal{X}_{\infty} \|_{L^p} \le C \sqrt{p} .\)</td>
+            <td align="right">(19.1)</td>
+          </tr>
+        </table></i>
+      </div>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Idea. </strong>Remove the backward forcing by
+      \(\mathcal{H}_q = C_q F^Z_q\), with \(\|\mathcal{H}_q \|_{\infty} \le
+      Cq^{- 1 / 4} \|F^Z_q \|_2 \le C \gamma^{1 / 2}
+E_T^{1 / 2}\) (by
+      Cauchy&ndash;Schwarz in \(q\)). Then \(U = V -\mathcal{H}\) solves, at
+      each frozen \(q\), \(K_q U + \frac{\gamma}{3}  (U + d)^3 = f\) with \(d
+      =\mathcal{H}+ X - \varrho (Y)\) and \(f = \int_{q_0}^q (Y_s - X_s)
+      \mathrm{d} s\). Constant functions of height \(\max \{\|d\|_{\infty},
+      q^{- 1} \|f\|_{\infty} \}\) are super- and subsolutions, so the lattice
+      maximum principle bounds \(\|U\|_{\infty}\). This gives \((1 - 2
+      \varepsilon_q) y_q \le 2 (\|\mathcal{H}_q \|_{\infty} + x_q) + q^{- 1}
+
+\int_{q_0}^q (y_s + x_s) \mathrm{d} s\) for \(y_q = \|Y_q
+      \|_{\infty}\), \(x_q = \|X_q \|_{\infty}\), where \(\varepsilon_q = C
+      (g_q + g_q^2)\) bounds \(\|D \varrho_q \|_{\infty \to \infty}\) (Lecture
+      6). The weight \(q^{- \varpi}\) absorbs the memory since \(q^{- 1 -
+      \varpi}  \int_{q_0}^q s^{\varpi} \mathrm{d} s \le (1 + \varpi)^{- 1}
+<
+      1\). The Gaussian supremum is a chaining argument: \(\text{Var} X_q (x)
+      \le Cq^{1 / 2}\) and the increments in space and scale are
+      H&ouml;lder.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      In particular <em>finite-resolution</em> spatial suprema of \(Y\) have
+      all moments uniformly in \(N\). At the terminal resolution there is no
+      such bound: \(\Phi_{\infty}\) is a distribution.
+    </p>
+    <h3 id="auto-9">19.3<span style="margin-left: 1em"></span>Regularity in space and scale<span style="margin-left: 1em"></span></h3>
+    <p>
+      On a finite scale interval \(I = [q_0, Q]\) write <a href="cqft_lecture6.html#eq:volterra">(15.4)</a> as
+      the linear elliptic equation
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:linear"></a>\(\displaystyle K_q V_q = f_q, \qquad f_q
+        = \int_{q_0}^q (Y_s - X_s + Z_s) \mathrm{d} s -
+\frac{\gamma}{3} Y_q^3
+        .\)</td>
+        <td align="right">(19.2)</td>
+      </tr>
+    </table>
+    <p>
+      The energies control \(\mathbb{E} \int_I \|Y_q \|_6^6 \mathrm{d} q\)
+      (since \(|Y|^6 \le r_q^6 + |t_q |^6\)) and \(\mathbb{E} \int_I \|Z_q
+      \|_2^2 \mathrm{d} q\), hence \(\mathbb{E} \int_I \|f_q \|_2^2 \le C_I\),
+      and testing with \(V\),
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} \int_I (\| \nabla_N V_q \|_2^2 +\|V_q \|_2^2)
+      \mathrm{d} q \le C_I
+.\)
+    </center>
+    <p>
+      So the non-Gaussian part \(V\) of the approximate forecast is in
+      \(H^1\), and the approximate forecast \(Y = V + X - \varrho (Y)\)
+      inherits the regularity of the free field.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">19.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Forward compactness)
+        </strong></class><a id="prop:forward-compact"></a> For \(0 < \sigma, \theta <
+        \frac{1}{2}\),</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \sup_N \mathbb{E} \left[ \int_I \| \iota_N Y^N_q
+          \|_{H^{\sigma}}^2 \mathrm{d}
+q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
+          H)} \right] < \infty .\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>The embedded approximate forecasts are tight in every
+        space&ndash;time \(L^p\), and polynomials of them converge along
+        strongly convergent subsequences. The forward equation gives the
+        H&ouml;lder bound \(\sup_N \mathbb{E} \| \iota_N Y^N \|^8_{C^{1 / 4}
+        (I ; H)} < \infty\), and averaging in time against the \(H^{\sigma}\)
+        bound gives uniform Fourier tails \(\lim_m \sup_N \mathbb{E} \sup_{q
+        \in I} \|(I - \textsf{F}_m) \iota_N Y^N_q
+\|_2^2 = 0\)
+        (\(\textsf{F}_m\) the projection on frequencies \(|k| \le m\)); hence
+        they are also tight in \(C (I ; H)\).</i>
+      </p>
+    </div>
+    <p>
+      The spatial bound combines the \(H^1\) bound on \(V\), the
+      \(H^{\sigma}\) regularity of \(X\) (\(\sigma < \frac{1}{2}\)), and the
+      contraction property of \(\varrho\); the scale regularity uses the
+      forward equation, whose drift \(b (Y) + H (Y) Z\) has bounded integrated
+      square by Proposition <a href="cqft_lecture5.html#prop:source">14.2</a> and the energies, and whose
+      martingale part has bounded bracket density. The supremum bound of Lemma
+      <a href="#lem:sup">19.1</a> upgrades \(L^2\) compactness to every \(L^p\).
+    </p>
+    <h3 id="auto-10">19.4<span style="margin-left: 1em"></span>The terminal field<span style="margin-left: 1em"></span></h3>
+    <p>
+      The approximate forecast converges at infinite resolution in negative
+      Sobolev spaces, uniformly in \(N\) (to the same limit as the forecast
+      \(\psi\)). The martingale part of \(Y\) has bracket \(\int H^2\), and
+      the positive inequality \(H_q^2 \le \frac{C}{q} C_q\) gives
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:noise-tail"></a>\(\displaystyle \int_Q^{\infty} \|(1 -
+        \Delta)^{- s / 2} H_q \|_{\text{HS}}^2 \mathrm{d} q
+\le C
+        \int_Q^{\infty} \frac{1}{q}  \sum_k \frac{(1 + |k|^2)^{- s}}{q +
+        c
+|k|^2} \hspace{0.17em} \mathrm{d} q \le C_s  \hspace{0.17em} Q^{- (s
+        -
+\frac{1}{2})}, \qquad \tfrac{1}{2} < s < \tfrac{3}{2},\)</td>
+        <td align="right">(19.3)</td>
+      </tr>
+    </table>
+    <p>
+      where \(q + c |k|^2\) bounds the lattice symbol from below (aliases of
+      the cell embedding only increase the frequency). The drifts are
+      integrable at infinity in \(H\): the bounded-field drift is \(O (q^{- 5
+      / 2})\), the large-field drift is controlled by \(\int q^{7 / 2}
+      \|b^{\text{l}} \|^2 \le C \gamma^3 J_{\infty}\) and
+      Cauchy&ndash;Schwarz, and \(\int \|H_q Z_q \| \mathrm{d} q \le C \int
+      q^{- 1} \|Z_q \| \le C \gamma^{1 /
+2} E_{\infty}^{1 / 2}\). More
+      precisely, the squared drift tails beyond \(Q\) are \(O (Q^{- 3})\)
+      (bounded-field), \(O (Q^{- 5 / 2}) \gamma^3 J_{\infty}\) (large-field)
+      and \(O (Q^{- 3 / 2}) \gamma E_{\infty}\) (the \(HZ\) term), all at most
+      \(Q^{- (s - \frac{1}{2})}\) for \(s < \frac{3}{2}\). By Doob's
+      inequality, for \(\frac{1}{2} < s < \frac{3}{2}\),
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:terminal-tail"></a>\(\displaystyle \sup_N \mathbb{E} \sup_{t
+        \ge Q} \|Y_t - Y_Q \|^2_{H^{- s}} \le C_s
+\hspace{0.17em} Q^{- (s -
+        \frac{1}{2})} .\)</td>
+        <td align="right">(19.4)</td>
+      </tr>
+    </table>
+    <p>
+      Letting \(t \to \infty\) at fixed \(N\) (Lemma <a href="#lem:terminal">18.1</a>) this
+      holds with \(Y_t\) replaced by \(\Phi_{\infty}\). Together with the
+      tightness at finite resolution, this gives:
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Corollary <class style="font-style: normal">19.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Tightness of the lattice measures)
+        </strong></class><a id="cor:tight"></a> For every \(s > \frac{1}{2}\) the
+        embedded laws \(\nu_N \circ \iota_N^{- 1}\) are tight in \(H^{- s}
+        (\mathbb{T}^3)\), and \(\sup_N \mathbb{E} \| \iota_N \Phi^N_{\infty}
+        \|^p_{H^{- s}} < \infty\) for every \(p\).</i>
+      </p>
+    </div>
+    <p>
+      For the moments: the drift integrals have all moments by <class style="font-style: normal">(<a
+      href="#eq:uv">18.4</a>)</class>, and the \(H^{- s}\) martingale has a
+      deterministic bracket bound by <class style="font-style: normal">(<a href="#eq:noise-tail">19.3</a>)</class>
+      at \(Q = q_0\), so the Burkholder&ndash;Davis&ndash;Gundy inequality
+      gives all moments.
+    </p>
+    <p>
+      The threshold \(s > \frac{1}{2}\) is that of the free field in \(d =
+      3\): the interacting field is no rougher than the Gaussian one, and at
+      every finite resolution its non-Gaussian part \(V\) is smoother
+      (\(H^1\)).
+    </p>
+    <h2 id="auto-11"><a id="sec:limit"></a>20<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-12">20.1<span style="margin-left: 1em"></span>The deterministic coefficients<span style="margin-left: 1em"></span></h3>
+    <p>
+      The coefficients \(M^N_q\), \(h^{[j], N}_q\), \(H^N_q (y)\), \(b^N_q
+      (y)\) are constructed at each lattice. Their uniform bounds (Proposition
+      <a href="cqft_lecture5.html#prop:coeff">13.1</a>) do not by themselves identify a limit: a weakly
+      convergent vertex cannot in general be contracted against a varying
+      covariance. The three tools are:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <em>Weak vertex measures.</em> Derivative kernels with bounded
+          rooted norms are signed measures with bounded mass; they converge
+          weakly along subsequences, and the centred kernel \(\Theta_q\)
+          converges in a weak topology controlled by its first moment. The
+          limiting coefficients solve the same fixed-point problem, whose
+          solution is unique in its ball; so the whole sequence converges.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Compact sandwich.</em> If \(G_N \to G\) in Hilbert&ndash;Schmidt
+          norm, and \(\textsf{B}_N\) are symmetric, uniformly bounded and
+          converge weakly to \(\textsf{B}\), with \(\sup_N \|G_N \textsf{B}_N
+          \| \le \theta < 1\) and \(\|G \textsf{B} \| \le \theta\), then \((I
+          + G_N \textsf{B}_N)^{- 1} G_N \to (I + G \textsf{B})^{- 1} G\) in
+          Hilbert&ndash;Schmidt norm. The free resolvent is the compact factor
+          that turns weak convergence of the Hessian into strong convergence
+          of the response.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Contraction against a moving covariance.</em> The rows of the
+          inverses are H&ouml;lder (any exponent \(a < \frac{1}{2}\)); with
+          the Hilbert&ndash;Schmidt convergence given by the sandwich, the
+          squared kernels \((H^N_q)^2\) converge uniformly to a continuous
+          kernel. Weakly convergent vertices of bounded variation can
+          therefore be contracted against them, and the trace steps of the
+          recursion pass to the limit.
+        </p>
+      </li>
+    </ul>
+    <p>
+      With these, \(H^N_q (Y^N_q) \to H_q (Y_q)\) and \(b^N_q (Y^N_q) \to b_q
+      (Y_q)\) in \(L^2 (I ; \text{HS})\) and \(L^2 (I ; H)\) along strongly
+      converging forecasts with the uniform supremum moments of Lemma <a href="#lem:sup">19.1</a>.
+    </p>
+    <h3 id="auto-13">20.2<span style="margin-left: 1em"></span>The noise<span style="margin-left: 1em"></span></h3>
+    <p>
+      The delicate point is the backward martingale. Fields converging in law
+      do not imply that the stochastic integrals converge to stochastic
+      integrals of the limits.
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Remark <class style="font-style: normal">20.1</class>. </strong><class style="font-style: normal"><strong>(Hidden
+      noise) </strong></class><a id="rem:hidden"></a> Let \(B\) be a real Brownian motion
+      and \(L^n_t = \int_0^t (1 + \sin (ns)) \mathrm{d} B_s\). Then \((L^n,
+      B)\) converges in law to \((B + 2^{- 1 / 2}  \tilde{B}, B)\), with
+      \(\tilde{B}\) an independent Brownian motion: the integrands converge
+      weakly to \(1\), but their squares converge weakly to \(\frac{3}{2}\). A
+      limiting FBSDE obtained this way would have an extra martingale,
+      orthogonal to the driving noise.
+    </p>
+    <p>
+      To exclude this one needs <em>strong</em> compactness of the integrands.
+      For the forward equation the integrand \(H (Y)\) is an explicit function
+      of \(Y\), and strong convergence follows from the coefficient limits.
+      For the backward equation the integrand is \(\Xi = \text{Cov} - H (Y)\),
+      and we need strong compactness of the posterior covariance
+      \(\text{Cov}_q\). It comes from its exact dynamics.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">20.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Riccati equation of the posterior covariance)
+        </strong></class><a id="lem:riccati"></a> At each \(N\), \(\text{Cov}_q = D^2
+        \mathcal{K}_q (P_q) \ge 0\) and</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:riccati"></a>\(\displaystyle \text{dCov}_q = -
+            \text{Cov}_q^2 \hspace{0.17em} \mathrm{d} q + D^3
+\mathcal{K}_q
+            (P_q) [\mathrm{d} W_q] .\)</td>
+            <td align="right">(20.1)</td>
+          </tr>
+        </table></i>
+      </div>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>Differentiate the equation of Proposition
+      <a href="cqft_lecture5.html#prop:posterior">12.3</a>(c) twice in \(p\): \((\partial_q + \frac{1}{2}
+      \Delta_p + D\mathcal{K} \cdot D_p) D^2 \mathcal{K}=
+- (D^2
+      \mathcal{K})^2\), and apply It&ocirc;'s formula along \(\mathrm{d} P =
+      D\mathcal{K} (P) \mathrm{d} q + \mathrm{d} W\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      This is <a href="cqft_lecture4.html#eq:cov-dynamics">(8.9)</a> for \(\partial_q \mathscr{R} = 1\):
+      conditional variance is resolved at the rate \(\text{Cov}^2\). For a
+      smooth test \(f\), the process \(\langle f, \text{Cov}_q f \rangle \ge
+      0\) is a nonnegative supermartingale, with drift \(- \| \text{Cov}_q
+      f\|^2\), and initial value \(\text{Var}_{\nu_N} \langle \Phi_{\infty}, f
+      \rangle\), bounded uniformly in \(N\) by Corollary <a href="#cor:tight">19.3</a>. A
+      nonnegative supermartingale has controlled oscillations: after stopping
+      at the first time it exceeds a level \(K\) (an event of probability at
+      most \(C_f / K\)), its decreasing part \(A\) and the bracket of its
+      martingale part \(J\) satisfy \(\mathbb{E}A_Q \le C_f\) and \(\mathbb{E}
+      [J]_Q \le K^2 + 2 KC_f\), which gives time regularity in \(W^{a, 1}\),
+      \(a < \frac{1}{2}\), and hence strong compactness of each finite block
+      \(\langle f_i, \text{Cov} f_j \rangle\). Spatial tails come from the
+      isometry (recall \(\psi_{q_0} =\mathbb{E} \Phi_{\infty} = 0\), \(\nu_N\)
+      being even), with symmetry exchanging input and output tails,
+      \(\mathbb{E} \int_I \|(I - \textsf{F}_m) \text{Cov}_q
+      \|_{\text{HS}}^2
+\mathrm{d} q =\mathbb{E}\|(I - \textsf{F}_m) \psi_Q
+      \|_2^2\), and from the terminal averaging \(\psi_Q =\mathbb{E}_Q
+      \int_L^{L + 1} (Y_s + Z_s) \mathrm{d} s\), using the \(H^{\sigma}\)
+      bound of Proposition <a href="#prop:forward-compact">19.2</a> and \(\mathbb{E} \|Z_s \|_2^2 \le
+      Cs^{- 5 / 2}\) (first \(m \to \infty\), then \(L \to \infty\)).
+      Altogether \(\text{Cov}^N\) is tight in strong \(L^2 (I ; \text{HS})\).
+      Since \(S \mapsto \int SS^{\ast}\) is continuous from \(L^2 (I ;
+      \text{HS})\) to \(C (I ; \text{trace class})\), the brackets of
+      \(\psi^N\) are tight in \(C (I)\); a continuous martingale with tight
+      brackets and uniformly small maximal Fourier tails (from the terminal
+      averaging above and Doob's inequality) is tight in \(C (I ; H)\). Hence
+      \(\psi^N\), and \(Z^N = \psi^N - Y^N\), are tight in \(C (I ; H)\).
+      Strong convergence of the integrands gives convergence of the brackets
+      \(\int \text{CovCov}^{\ast}\) and of the covariations with \(W\), and
+      then:
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">20.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Identification of the martingales
+        [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="prop:martingales"></a> Along a
+        subsequence, on a common filtered probability space, the limit of the
+        forecast satisfies \(\psi_q = \int_{q_0}^q \text{Cov}_s
+        \hspace{0.17em} \mathrm{d} W_s\) with \(W\) a cylindrical Brownian
+        motion for the joint filtration, and \(Y\), \(Z\), \(X\) satisfy</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          <a id="eq:limit-equations"></a>\(\displaystyle \begin{array}{rl}
+  Y_q & = \int_{q_0}^q
+          [b_s (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s + \int_{q_0}^q
+  H_s (Y_s)
+          \hspace{0.17em} \mathrm{d} W_s,\\
+  Z_q & = - \int_{q_0}^q [b_s
+          (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s +
+  \int_{q_0}^q \Xi_s
+          \hspace{0.17em} \mathrm{d} W_s, \qquad X_q = \int_{q_0}^q
+  C_s
+          \hspace{0.17em} \mathrm{d} W_s . \hspace{3cm}   \text{(20.2)}
+
+\end{array}\)
+        </center></i>
+      </p>
+    </div>
+    <p>
+      The argument is: the limiting \(\psi\) is a continuous square-integrable
+      martingale for the joint filtration (fixed-time martingale identities
+      pass to the limit with uniform integrability); its bracket and its
+      covariation with \(W\) are those of \(\int \text{Cov} \hspace{0.17em}
+      \mathrm{d} W\); so \(\psi - \int \text{Cov} \hspace{0.17em} \mathrm{d}
+      W\) has zero bracket and vanishes. No extra martingale survives. The
+      same argument for the forward equation identifies its noise with the
+      same \(W\), and identifies the limiting Gaussian part \(X\) as \(\int C
+      \hspace{0.17em} \mathrm{d} W\), not a new Gaussian field.
+    </p>
+    <h3 id="auto-14">20.3<span style="margin-left: 1em"></span>The result<span style="margin-left: 1em"></span></h3>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">20.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Subsequential construction of \(\Phi^4_3\) [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="thm:limit"></a> Let \(\lambda > 0\) and \(q_0\) large
+        enough. Along a subsequence of lattices:</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                the embedded processes \((Y^N, Z^N, \psi^N, X^N)\) converge in
+                law in \(C (I ; H)\) for every finite \(I\), together with the
+                embedded innovations \(W^N\) in \(C (I ; H^{- r})\), \(r >
+                \frac{3}{2}\), and the integrands \((\text{Cov}^N, \Xi^N)\) in
+                strong \(L^2 (I ; \text{HS})\), jointly and with an almost
+                sure representation;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limit solves the FBSDE <class style="font-style: normal">(<a href="#eq:limit-equations">20.2</a>)</class>
+                on \([q_0, \infty)\), with \(Y_{q_0} = Z_{q_0} = 0\), the
+                deterministic continuum coefficients \(b, H\), limits of those
+                of Lecture 5 and unique in their ball, an \(H\)-cylindrical
+                Brownian motion \(W\) for the joint filtration, obtained as
+                the limit of the lattice innovations, a symmetric nonnegative
+                integrand \(\text{Cov} = H (Y) + \Xi\), and \(\mathbb{E} \|Z_q
+                \|_2^2 \le Cq^{- 5 / 2}\);
+              </p>
+            </li>
+            <li>
+              <p>
+                there is a terminal field \(\Phi\) with \(Y_q \to \Phi\) in
+                \(H^{- s}\), almost surely and in mean square, for every \(s >
+                \frac{1}{2}\). Its law \(\nu\) is the weak limit of the
+                lattice measures \(\nu_N\) along the subsequence, and for
+                smooth \(h\),
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:closed-forecast"></a>\(\displaystyle \langle Y_q +
+                  Z_q, h \rangle =\mathbb{E} \left[ \langle \Phi, h
+                  \rangle
+\hspace{0.17em} | \hspace{0.17em} \mathcal{F}_q
+                  \right] :\)</td>
+                  <td align="right">(20.3)</td>
+                </tr>
+              </table>
+              <p>
+                the forecast remains the conditional mean of the terminal
+                field;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limiting thresholded energies \(E_{\infty}, J_{\infty}\)
+                (built with \(X = \int C \hspace{0.17em} \mathrm{d} W\))
+                satisfy the bounds of Theorem <a href="#thm:uv">18.2</a> (Fatou).
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
+    </div>
+    <p>
+      So the posterior structure survives the continuum limit: \(\psi = Y +
+      Z\) is a closed observable, the conditional mean of the terminal field;
+      \(Y\) is computed from the explicit action; and the error \(Z\) is small
+      at high resolution. This is the FBSDE of Lecture 4, in forecast
+      coordinates, for a subsequential limit \(\nu\) of the renormalised
+      lattice measures, with the full noise retained.
+    </p>
+    <h3 id="auto-15">20.4<span style="margin-left: 1em"></span>The renormalised field equation<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      The terminal law satisfies an integration by parts formula in which the
+      renormalised cube appears only tested in expectation.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">20.5</class>. </strong><i><class
+        style="font-style: normal"><strong>(Integration by parts) </strong></class><a id="thm:DS"></a> Let
+        \(h, h_1, \ldots, h_k\) be smooth and \(G (\varphi) = g (\langle
+        \varphi, h_1 \rangle, \ldots, \langle \varphi, h_k
+\rangle)\) with \(g
+        \in C_b^{\infty} (\mathbb{R}^k)\), and let \(D_h G (\varphi) =
+        \frac{\mathrm{d}}{\mathrm{d} a} G (\varphi + ah) |_{a = 0}\). Along
+        the subsequence of Theorem <a href="#thm:limit">20.4</a> (recall \(C = (m^2 -
+        \Delta_N)^{- 1}\) with \(m^2 = q_0\)),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:DS"></a>\(\displaystyle \lim_N \mathbb{E}
+            \left[ G (\iota_N \Phi^N_{\infty}) \hspace{0.17em} \langle
+\mu_N
+            \Phi^N_{\infty} + \lambda (\Phi^N_{\infty})^3, j_N h
+            \rangle_{H_N}
+\right] =\mathbb{E}_{\nu}  [D_h G (\Phi) - G (\Phi)
+            \langle \Phi, (q_0 -
+\Delta) h \rangle] .\)</td>
+            <td align="right">(20.4)</td>
+          </tr>
+        </table></i>
+      </div>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>At fixed \(N\), Gaussian integration by
+      parts in the density \(\mathrm{e}^{- V_N - \frac{1}{2}  \langle \varphi,
+      K_{q_0} \varphi \rangle}\) gives, with \(x = \Phi^N_{\infty}\) and \(h_N
+      = j_N h\),
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E} [G (\iota_N x) \langle \mu_N x + \lambda x^3,
+      h_N \rangle]
+=\mathbb{E} [D_{h_N} (G \circ \iota_N) (x)] -\mathbb{E} [G
+      (\iota_N x) \langle
+x, K_{q_0} h_N \rangle] .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      Cell averaging commutes with lattice translations, so \(K_{q_0} j_N h =
+      j_N  (q_0 - \Delta^{\text{tr}}_N) h\) with \(\Delta^{\text{tr}}_N\) the
+      finite-difference Laplacian acting on smooth functions, which converges
+      to \(\Delta h\) in every Sobolev norm. The right side converges by
+      Corollary <a href="#cor:tight">19.3</a> (weak convergence in \(H^{- s}\) and uniform
+      moments), and the derivative term is a finite sum with converging
+      coefficients \(\langle j_N h, j_N h_i \rangle \to \langle h, h_i
+      \rangle\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      This is the terminal case of the Dyson&ndash;Schwinger equation of
+      Theorem <a href="cqft_lecture4.html#thm:DS-scale">11.1</a>, <a href="cqft_lecture4.html#eq:DS-terminal">(11.3)</a>, for the limiting theory.
+      It does not say that \(\mu_N \Phi + \lambda \Phi^3\) converges as a
+      random distribution: only its expectation against cylinder functions is
+      identified. This is consistent with the expectation of Lecture 4 (Figure
+      <a href="cqft_lecture4.html#fig:fbsde-flow">7.1</a> and the remark following it) that the limiting force is
+      an observable without a terminal representative; it is not proved here
+      that no such representative exists. At every <em>finite</em> resolution,
+      on the other hand, the force is explicit: \(F_q = K_q Z_q - D
+      \bar{\Gamma}_q (Y_q)\) (Exercises <a href="#ex:force-limit">18.1</a> and <a href="#ex:force-observable">20.1</a>).
+    </p>
+    <h3 id="auto-16">20.5<span style="margin-left: 1em"></span>What is not proved, and where to go
+    next<span style="margin-left: 1em"></span></h3>
+    <ul>
+      <li>
+        <p>
+          <em>Uniqueness.</em> The limit is subsequential. Uniqueness of the
+          limiting FBSDE, or of \(\nu\), would give convergence of the whole
+          sequence and independence of the regularisation.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Small mass (strong coupling).</em> The construction needs
+          \(\gamma q_0^{- 1 / 2}\) small. By scaling, it is equivalent to the
+          weak-coupling regime \(\lambda / m \ll 1\) (unit mass on a torus of
+          side \(m\)). Removing it requires a priori estimates that do not
+          rely on the smallness of the feedback coefficient \(\gamma^2 /
+          q_0\), and a coefficient construction outside the perturbative ball
+          (\(g_{q_0} = \gamma q_0^{- 1 / 2}\) small in Proposition <a href="cqft_lecture5.html#prop:coeff">13.1</a>).
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Axioms.</em> Reflection positivity holds at every lattice, for
+          reflections in lattice and mid-lattice planes (nearest-neighbour
+          action), and passes to \(\nu\) for every reflection in a coordinate
+          plane, by approximating the plane with lattice planes (standard;
+          Exercise <a href="#ex:RP">20.4</a>). Rotation invariance (absent on the
+          torus) and clustering need infinite volume.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Infinite volume.</em> The force, its Burgers flow, and
+          differences of free energies are intensive (Section <a href="cqft_lecture4.html#sec:infinite-volume">9.2</a>).
+          The estimates of Lecture 6 must then be made local, with weights in
+          space and constants per unit volume. A new difficulty appears in the
+          backward equation: its integrand \(\Xi\) is a nonlocal operator, and
+          the backward error at a point can receive noise from arbitrarily far
+          away. Uniform-in-volume coefficient bounds and local energy moments
+          are themselves open; they could give an infinite-volume Gibbs
+          subsequence. Controlling the &ldquo;noise from infinity&rdquo;
+          (together with local compactness of the Hessian blocks) is the main
+          additional step needed to retain the full FBSDE without an
+          orthogonal martingale [<a href="#bib-FBSDE26">FBSDE26</a>].
+        </p>
+      </li>
+    </ul>
+    <p>
+      <div style="display: inline">
+        <a id="auto-17"></a>
+      </div>
+      <h5>Summary of the course.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The seven lectures went from the Wightman axioms to the Euclidean
+        formulation (Lecture 1), to the free field (Lecture 2), to stochastic
+        quantisation and the scale decomposition (Lecture 3), and to the three
+        faces of an interacting field: the Polchinski equation, the FBSDE and
+        the variational problem (Lecture 4). In Lectures 5&ndash;7 the FBSDE
+        in forecast coordinates, together with an explicit solution of the
+        Wetterich equation up to an integrable defect, gave a construction of
+        \(\Phi^4_3\) in which every object has a probabilistic meaning: the
+        forecast is a conditional mean, the response is a conditional
+        covariance, the Brownian motion is an innovation, and UV stability is
+        the statement that an explicit action predicts the conditional mean up
+        to an error that is small at high resolution.
+      </div>
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <font style="font-size: 84.0%"><table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lecture 4 (formal)</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lectures 5&ndash;7</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">status in the limit</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">forecast \(\psi_t =\mathbb{E}_t \Phi_T\)</td>
+            <td style="text-align: center; vertical-align: middle">\(\psi = Y + Z\)</td>
+            <td style="text-align: center; vertical-align: middle">closed martingale, <class style="font-style: normal">(<a href="#eq:closed-forecast">20.3</a>)</class></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">response \(H_t = \text{Cov}_t\)</td>
+            <td style="text-align: center; vertical-align: middle">\(\text{Cov} = H (Y) + \Xi\)</td>
+            <td style="text-align: center; vertical-align: middle">strong \(L^2 (\text{HS})\), Riccati</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">\(\Gamma_t\), Wetterich</td>
+            <td style="text-align: center; vertical-align: middle">\(\bar{\Gamma}_q\) explicit, defect \(e\)</td>
+            <td style="text-align: center; vertical-align: middle">deterministic coefficients</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">force \(F_t\)</td>
+            <td style="text-align: center; vertical-align: middle">\(K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</td>
+            <td style="text-align: center; vertical-align: middle">observable at finite \(q\)</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">DS equation</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">Theorem <a href="#thm:DS">20.5</a></td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">tested in expectation</td>
+          </tr></tbody>
+        </table></font>
+      </p>
+    </center>
+    <h3 id="auto-18">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">20.1</class>.
+        </strong><class style="font-style: normal"><strong>(The force observable)
+        </strong></class><a id="ex:force-observable"></a> Show that \(\langle F^N_q, j_N h \rangle
+        = \langle \psi^N_q, K_q j_N h \rangle - \langle
+W^N_q, j_N h \rangle -
+        \int_{q_0}^q \langle \psi^N_s, j_N h \rangle \mathrm{d}
+s\). Deduce
+        that, along the subsequence of Theorem <a href="#thm:limit">20.4</a>, these
+        converge, with uniformly bounded moments, to \(\langle F_q, h \rangle
+        = \int_{q_0}^q \langle (\text{Cov}_s K_s - I) h,
+\mathrm{d} W_s
+        \rangle\), a martingale for the limiting filtration (note \(F_{q_0} =
+        0\), since \(\nu_N\) is even). (Cross-check: \(F_q = K_q Z_q - D
+        \bar{\Gamma}_q (Y_q)\), with Lemma <a href="#lem:sup">19.1</a> and Theorem <a
+        href="#thm:uv">18.2</a>, gives a uniform second-moment bound.) Why does this
+        not give a terminal value \(F_{\infty}\)?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">20.2</class>.
+        </strong><class style="font-style: normal"><strong>(Hidden noise) </strong></class>Prove
+        the claim of Remark <a href="#rem:hidden">20.1</a>. Where would the argument of
+        Proposition <a href="#prop:martingales">20.3</a> fail if only weak convergence of
+        \(\text{Cov}^N\) were known?</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">20.3</class>.
+        </strong><class style="font-style: normal"><strong>(Riccati and positivity)
+        </strong></class>For a Gaussian \(\nu_N = \mu^C\), solve <class style="font-style: normal">(<a
+        href="#eq:riccati">20.1</a>)</class> and check that \(\text{Cov}_q = C_q\). For a
+        general \(\nu_N\), show that \(\text{TrCov}_q\) is a
+        supermartingale.</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">20.4</class>.
+        </strong><class style="font-style: normal"><strong>(Reflection positivity)
+        </strong></class><a id="ex:RP"></a> Show that \(\nu_N\) is reflection
+        positive for reflections in lattice and mid-lattice planes
+        (nearest-neighbour Gaussian times a local potential). Deduce
+        reflection positivity of \(\nu\) for every coordinate plane \(\{x_1 =
+        a\}\): take cylinder functions of tests supported in \(\{a < x_1 < a +
+        \frac{1}{2} \}\) (one of the two components of the torus minus the
+        fixed planes \(\{x_1 = a\}\) and \(\{x_1 = a + \frac{1}{2} \}\) of
+        \(\theta_a\)), cell-average them, and use lattice planes \(a_N \to
+        a\), so that for large \(N\) the averaged tests lie on the correct
+        side. Since lattice and mid-lattice reflections map cells to cells,
+        \(\theta_{a_N} j_N f = j_N \theta_{a_N} f\), so the reflected tested
+        variables are \(\langle \iota_N \Phi, \theta_{a_N} f \rangle\), with
+        \(\theta_{a_N} f \to \theta_a f\) in every \(H^s\).</font>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">20.5</class>.
+        </strong><class style="font-style: normal"><strong>(Negative Sobolev threshold)
+        </strong></class>Verify <class style="font-style: normal">(<a href="#eq:noise-tail">19.3</a>)</class>, and
+        show that at \(s = \frac{3}{2}\) the bound becomes \(Q^{- 1} \log (2 +
+        Q)\).</font>
+      </p>
+    </div>
+    <h2 id="auto-19">References<span style="margin-left: 1em"></span></h2>
+    <dl>
+      <p>
+        <dt>
+          <strong>[FBSDE26]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-FBSDE26"></a>M. Gubinelli. The massive \(\Phi^4_3\) field through
+            forward&ndash;backward equations. Course notes, October 2026.
+          </p>
+        </dd>
+      </p>
+    </dl>
+  </body>
+</html>

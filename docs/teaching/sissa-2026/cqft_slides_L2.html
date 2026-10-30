@@ -76,7 +76,7 @@
         </p>
         <p>
           <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 2 &mdash; notes:
-          &sect;3</font></font>
+          Lecture 2, &sect;3</font></font>
         </p>
         <p>
 
@@ -132,12 +132,6 @@
         <li>
           <p>
             <strong>DS characterises the GFF.</strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>The GFF is the stationary marginal of parabolic and
-            elliptic stochastic quantisation.</strong>
           </p>
         </li>
       </ol>
@@ -461,7 +455,7 @@ f, Cf \rangle} .\)
         <li>
           <p>
             The GFF is the continuum limit of the lattice spin system of
-            Lecture 1 with <font color="#620000">\(V = 0\)</font> (Exercise 3.14).
+            Lecture 1 with <font color="#620000">\(V = 0\)</font> (Exercise 3.10).
           </p>
         </li>
         <li>
@@ -1400,496 +1394,6 @@ x_j)  \hspace{0.17em} S_{n - 2} (\ldots
       </ul>
     </div>
     <div class="toggle" style="display: none">
-      <p style="margin-top: 2.5cm">
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Parabolic stochastic
-        quantisation</font></b></font>
-      </p>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
-      <p>
-        <font color="#707070">Lecture 2</font>
-      </p>
-      <p>
-
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Langevin dynamics (Parisi&ndash;Wu 1981)
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Finite dimensions: <font color="#620000">\(\mathrm{d} X_t = - \nabla S (X_t)
-        \mathrm{d} t + \sqrt{2} \hspace{0.17em}
-\mathrm{d} B_t\)</font> has
-        generator <font color="#620000">\(\mathcal{L}= \Delta - \nabla S \cdot
-        \nabla\)</font> and
-      </p>
-      <center>
-        \(\displaystyle \mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot
-        (\nabla \mathrm{e}^{- S} +
-\mathrm{e}^{- S} \nabla S) = 0 :\)
-      </center>
-      <p>
-        the Gibbs measure <font color="#620000">\(\mathrm{e}^{- S} \mathrm{d} x /
-        Z\)</font> is invariant.
-      </p>
-      <p>
-        Apply this to the Euclidean action, with a fictitious
-        <strong>stochastic time</strong> <font color="#620000">\(t\)</font>:
-      </p>
-      <center>
-        \(\displaystyle \partial_t \Phi = - (m^2 - \Delta) \Phi - V' (\Phi) +
-        \sqrt{2}
-\hspace{0.17em} \xi \qquad \text{on } \mathbb{R}_+ \times
-        \mathcal{M},\)
-      </center>
-      <p>
-        <font color="#620000">\(\xi\)</font> space-time white noise: <font color="#620000">\(\mathbb{E}
-        [\xi (u) \xi (v)] = \langle u, v \rangle_{L^2  (\mathbb{R}
-        \times
-\mathcal{M})}\)</font>.
-      </p>
-      <p>
-        For <font color="#620000">\(V = 0\)</font>: the stochastic heat equation
-        (infinite-dimensional OU process).
-      </p>
-      <p>
-        History: Parisi&ndash;Wu 1981 (gauge theories without gauge fixing);
-        physics review Damgaard&ndash;H&uuml;ffel 1987&ndash;88; first
-        mathematical construction for <font color="#620000">\(P (\varphi)_2\)</font> on
-        <font color="#620000">\(\mathbb{T}^2\)</font>: Jona-Lasinio&ndash;Mitter 1985.
-        Review: Gubinelli, <em>Encyclopedia of Mathematical Physics</em> 2025.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        DS <font color="#620000">\(\Rightarrow\)</font> invariance
-      </div>
-      <p>
-
-      </p>
-      <p>
-        It&ocirc;'s formula: for <font color="#620000">\(F = g (\varphi (f_1), \ldots,
-        \varphi (f_n))\)</font> the generator is
-      </p>
-      <center>
-        \(\displaystyle \mathcal{L}F (\varphi) = \sum_{i, j} \langle f_i, f_j
-        \rangle  \hspace{0.17em}
-\partial_{ij} g (\ldots) - \sum_i \varphi
-        (Af_i)  \hspace{0.17em} \partial_i g
-(\ldots) .\)
-      </center>
-      <p style="margin-top: 1em; margin-bottom: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i><font color="#620000">\(\mathbb{E}_{\mu_m}  [G
-        \hspace{0.17em} \mathcal{L}F] = -\mathbb{E}_{\mu_m}
-[\langle DG, DF
-        \rangle_{L^2 (\mathcal{M})}]\)</font> for <font color="#620000">\(F, G \in
-        \mathcal{F}C^{\infty}_b\)</font>; in particular <font color="#620000">\(\mathbb{E}_{\mu_m}
-        [\mathcal{L}F] = 0\)</font>.</i>
-      </p>
-      <p>
-        <b>Proof.</b> Apply DS to <font color="#620000">\(k \hspace{0.17em} \partial_i
-        g\)</font> with <font color="#620000">\(h = f_i\)</font> and sum over <font
-        color="#620000">\(i\)</font>:
-      </p>
-      <center>
-        \(\displaystyle \sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g
-        \hspace{0.17em} \varphi
-(Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle
-        \mathbb{E} \left[ \partial_j k
-\hspace{0.17em} \partial_i g + k
-        \hspace{0.17em} \partial_{ij} g \right] .
-\qquad\)
-      </center>
-      <p>
-        <strong>Static (DS) and dynamic (Langevin) characterisations are two
-        faces of the same integration by parts.</strong>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The stationary solution
-      </div>
-      <p>
-
-      </p>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Theorem.
-        </strong></font></font><i>For <font color="#620000">\(t \in
-        \mathbb{R}\)</font>, <font color="#620000">\(f \in \mathcal{S}
-        (\mathcal{M})\)</font> let <font color="#620000">\(\Phi_t (f) = \sqrt{2}
-        \hspace{0.17em} \xi (K_{t, f})\)</font>,  <font color="#620000">\(K_{t, f} (r,
-        x) = \mathbb{1}_{r < t} (\mathrm{e}^{- (t - r) A} f) (x)\)</font>.</i>
-      </p>
-      <div style="margin-bottom: 1em">
-        <i><ol>
-          <li>
-            <p>
-              <font color="#620000">\(\mathbb{E} [\Phi_t (f) \Phi_s (g)] = \langle f,
-              \mathrm{e}^{- |t - s|A} Cg
-\rangle\)</font>: stationary, and
-              <font color="#620000">\(\text{Law} (\Phi_t) = \mu_m\)</font> for every
-              <font color="#620000">\(t\)</font>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <font color="#620000">\(\Phi\)</font> is a mild and weak solution: for
-              <font color="#620000">\(s < t\)</font>, <font color="#620000">\(\Phi_t (h) =
-              \Phi_s (h) - \int_s^t \Phi_r  (Ah) \mathrm{d} r + \sqrt{2}
-
-\hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)\)</font>.
-            </p>
-          </li>
-          <li>
-            <p>
-              From any initial datum <font color="#620000">\(\Psi_0 \in \mathcal{S}'
-              (\mathcal{M})\)</font> independent of <font color="#620000">\(\xi\)</font>:
-              <font color="#620000">\(\mathbb{E} \hspace{0.17em} \mathrm{e}^{\mathrm{i}
-              \Psi_t (f)} \to
-\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
-              \rangle}\)</font>. Hence <font color="#620000">\(\mu_m\)</font> is the
-              <strong>unique invariant measure</strong>.
-            </p>
-          </li>
-        </ol></i>
-      </div>
-      <p>
-        <b>Proof of (a).</b> <font color="#620000">\(\langle K_{t, f}, K_{s, g} \rangle
-        = \int_{- \infty}^{t \wedge s} \langle f,
-\mathrm{e}^{- (t + s - 2 r)
-        A} g \rangle \mathrm{d} r = \langle f,
-\mathrm{e}^{- |t - s|A} (2
-        A)^{- 1} g \rangle\)</font>; an <font color="#620000">\(\mathcal{S}'\)</font>-valued
-        version exists by It&ocirc;&ndash;Nawata/Mitoma regularisation.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Proof of (b), (c)
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <b>(a), on <font color="#620000">\(\mathbb{T}^d\)</font>.</b> The modes <font
-        color="#620000">\(\Phi_t (e_n)\)</font> are independent stationary OU processes
-        <font color="#620000">\(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
-        \mathrm{d} B\)</font> with variance <font color="#620000">\(\lambda_n^{-
-        1}\)</font>.
-      </p>
-      <p>
-        <b>(b)</b> Mild form from the semigroup identity <font color="#620000">\(K_{t,
-        h} = K_{s, \mathrm{e}^{- (t - s) A} h} + \mathbb{1}_{(s,
-        t)}
-\mathrm{e}^{- (t - \cdot) A} h\)</font>; weak form by stochastic
-        Fubini (Exercise 3.12).
-      </p>
-      <p>
-        <b>(c)</b> By independence,
-      </p>
-      <center>
-        \(\displaystyle \mathbb{E} \hspace{0.17em} \mathrm{e}^{\mathrm{i}
-        \Psi_t (f)} =\mathbb{E}
-[\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{-
-        tA} f)}] \hspace{0.17em}
-\mathrm{e}^{- \frac{1}{2}  \langle f, (1 -
-        \mathrm{e}^{- 2 tA}) Cf \rangle} .\)
-      </center>
-      <p>
-        For <font color="#620000">\(m > 0\)</font>, <font color="#620000">\(\mathrm{e}^{- tA} f
-        \to 0\)</font> in <font color="#620000">\(\mathcal{S} (\mathcal{M})\)</font>,
-        so <font color="#620000">\(\Psi_0 (\mathrm{e}^{- tA} f) \to 0\)</font> a.s. If
-        <font color="#620000">\(\Psi_0 \sim \mu_m\)</font> the product is exactly <font
-        color="#620000">\(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\)</font>
-        (invariance); an invariant <font color="#620000">\(\nu\)</font> must have the
-        same characteristic functional.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Comments
-      </div>
-      <p>
-
-      </p>
-      <ul>
-        <li>
-          <p>
-            As a field on <font color="#620000">\(\mathbb{R} \times
-            \mathcal{M}\)</font>, the stationary solution has covariance <font
-            color="#620000">\(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
-            \partial_t^2 +
-A^2)^{- 1}\)</font>; its equal-time slice is <font
-            color="#620000">\(2 \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}
-            \frac{\mathrm{d} \theta}{2 \pi} =
-A^{- 1}\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            The stochastic time <font color="#620000">\(t\)</font> has nothing to do
-            with the Euclidean time <font color="#620000">\(\tau\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Interacting case: a <strong>singular SPDE</strong>.
-          </p>
-          <ul>
-            <li>
-              <p>
-                <font color="#620000">\(\Phi^4_2\)</font>: Da Prato&ndash;Debussche
-                2003 (also Jona-Lasinio&ndash;Mitter,
-                Albeverio&ndash;R&ouml;ckner).
-              </p>
-            </li>
-            <li>
-              <p>
-                <font color="#620000">\(\Phi^4_3\)</font>: Hairer 2014;
-                Gubinelli&ndash;Imkeller&ndash;Perkowski 2015;
-                Catellier&ndash;Chouk 2018.
-              </p>
-            </li>
-            <li>
-              <p>
-                Global bounds: Mourrat&ndash;Weber 2017;
-                Gubinelli&ndash;Hofmanov&aacute; 2019; construction of
-                Euclidean <font color="#620000">\(\Phi^4_3\)</font> via the dynamics:
-                Gubinelli&ndash;Hofmanov&aacute; 2021.
-              </p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="toggle" style="display: none">
-      <p style="margin-top: 2.5cm">
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Elliptic stochastic
-        quantisation</font></b></font>
-      </p>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
-      <p>
-        <font color="#707070">Lecture 2</font>
-      </p>
-      <p>
-
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Dimensional reduction (Parisi&ndash;Sourlas 1979)
-      </div>
-      <p>
-
-      </p>
-      <p>
-        The elliptic SPDE in <font color="#620000">\(d + 2\)</font> dimensions
-      </p>
-      <center>
-        \(\displaystyle (m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi
-        + V' (\Psi) = \zeta,
-\qquad \zeta \text{white noise on } \mathbb{R}^2
-        \times \mathcal{M},\)
-      </center>
-      <p>
-        is related to the <font color="#620000">\(d\)</font>-dimensional Gibbs measure:
-        formally
-      </p>
-      <center>
-        \(\displaystyle \text{Law} \left( \Psi (z, \cdot)) \propto \exp \left(
-        - 4 \pi \left[
-\tfrac{1}{2} \langle \varphi, A \varphi \rangle + \int
-        V (\varphi) \right]
-\right) \mathcal{D} \varphi . \right.\)
-      </center>
-      <ul>
-        <li>
-          <p>
-            Mechanism: a hidden <strong>supersymmetry</strong>
-            (Parisi&ndash;Sourlas; Klein&ndash;Landau&ndash;Perez 1984).
-          </p>
-        </li>
-        <li>
-          <p>
-            Rigorous nonlinear results: <font color="#620000">\(d = 0\)</font>
-            (Albeverio&ndash;De Vecchi&ndash;Gubinelli 2020); polynomial on
-            <font color="#620000">\(\mathbb{T}^2\)</font> and exponential on <font
-            color="#620000">\(\mathbb{R}^2\)</font> (ADG 2021); elliptic <font color="#620000">\(\Phi^4\)</font>
-            in 4 and 5 dimensions (Gubinelli&ndash;Hofmanov&aacute; 2019).
-          </p>
-        </li>
-        <li>
-          <p>
-            For <font color="#620000">\(V = 0\)</font> it is elementary, and it
-            explains the <font color="#620000">\(4 \pi\)</font>.
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The linear case
-      </div>
-      <p>
-
-      </p>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Theorem.
-        </strong></font></font><i>Let <font color="#620000">\(\textsf{L} = m^2 -
-        \Delta_{\mathbb{R}^2 \times \mathcal{M}} = -
-\Delta_{\mathbb{R}^2} +
-        A\)</font> and <font color="#620000">\(\zeta\)</font> white noise on <font
-        color="#620000">\(\mathbb{R}^2 \times \mathcal{M}\)</font>.</i>
-      </p>
-      <div style="margin-bottom: 1em">
-        <i><ol>
-          <li>
-            <p>
-              <font color="#620000">\(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
-              \zeta\)</font> has a unique tempered solution <font color="#620000">\(\Psi
-              (u) = \sqrt{4 \pi}  \hspace{0.17em} \zeta (\textsf{L}^{- 1}
-              u)\)</font>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <font color="#620000">\(K_{z, f} = \textsf{L}^{- 1} (\delta_z \otimes f)
-              \in L^2\)</font>, continuous in <font color="#620000">\(z\)</font>; <font
-              color="#620000">\(\Psi (z, f) = \sqrt{4 \pi}  \hspace{0.17em} \zeta
-              (K_{z, f})\)</font> is the section of <font color="#620000">\(\Psi\)</font>
-              at <font color="#620000">\(z\)</font>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <font color="#620000">\(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle f,
-              Cg \rangle\)</font>: every section has law <font color="#620000">\(\mu_m\)</font>,
-              and <font color="#620000">\((\Psi (z, \cdot))_{z \in
-              \mathbb{R}^2}\)</font> is stationary and isotropic.
-            </p>
-          </li>
-        </ol></i>
-      </div>
-      <p>
-        <b>Uniqueness:</b> <font color="#620000">\(\textsf{L}\)</font> maps <font
-        color="#620000">\(\mathcal{S}\)</font> onto <font color="#620000">\(\mathcal{S}\)</font>,
-        so <font color="#620000">\(D (\textsf{L} u) = 0\)</font> <font color="#620000">\(\forall
-        u\)</font> forces <font color="#620000">\(D = 0\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Proof: where <font color="#620000">\(4 \pi\)</font> comes from
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Fourier transform in <font color="#620000">\(z\)</font> only: <font color="#620000">\(\widehat{K_{z,
-        f}} (q) = \mathrm{e}^{- \mathrm{i} q \cdot z} (|q|^2 + A)^{-
-        1}
-f\)</font>. By Plancherel and the spectral theorem,
-      </p>
-      <center>
-        \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \left\langle f,
-        \left[
-\int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2} (|q|^2 +
-        A)^{- 2} \right] g
-\right\rangle = \frac{1}{4 \pi}  \langle f, A^{- 1}
-        g \rangle,\)
-      </center>
-      <p>
-        since
-      </p>
-      <center>
-        \(\displaystyle \int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2}
-        \frac{1}{(|q|^2 + a)^2} =
-\frac{1}{2 \pi}  \int_0^{\infty} \frac{r
-        \hspace{0.17em} \mathrm{d} r}{(r^2 +
-a)^2} = \frac{1}{4 \pi a} .\)
-      </center>
-      <p>
-        Multiply by <font color="#620000">\(4 \pi\)</font>. Stationarity and isotropy:
-        the covariance <font color="#620000">\(4 \pi \int \mathrm{e}^{\mathrm{i} q
-        \cdot (z - z')} \langle f, (|q|^2 + A)^{-
-2} g \rangle
-        \frac{\mathrm{d} q}{(2 \pi)^2}\)</font> depends only on <font color="#620000">\(|z
-        - z' |\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Slices of Gaussian fields
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Field on <font color="#620000">\(\mathbb{R}^k \times \mathcal{M}\)</font> with
-        covariance <font color="#620000">\((- \Delta_{\mathbb{R}^k} + A)^{-
-        p}\)</font>; its slice <font color="#620000">\(\{0\} \times
-        \mathcal{M}\)</font> has covariance
-      </p>
-      <center>
-        \(\displaystyle c_{k, p}  \hspace{0.17em} A^{k / 2 - p}, \qquad c_{k,
-        p} = \frac{\Gamma (p -
-\frac{k}{2})}{(4 \pi)^{k / 2} \Gamma (p)} .\)
-      </center>
-      <p>
-        <table style="display: inline-table; vertical-align: middle">
-          <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\((k, p)\)</font></td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">slice covariance</td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">interpretation</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((1, 1)\)</font></td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\frac{1}{2} A^{- 1 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle">time-zero field, <font color="#620000">\((2 \omega)^{-
-            1}\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((2, 2)\)</font></td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\((4 \pi)^{- 1} A^{- 1}\)</font></td>
-            <td style="text-align: center; vertical-align: middle">elliptic stochastic quantisation</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">parabolic</td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(2 (- \partial_t^2 + A^2)^{- 1} \to A^{-
-            1}\)</font></td>
-            <td style="text-align: center; vertical-align: middle">Langevin dynamics</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\((1, 2)\)</font></td>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid"><font color="#620000">\(\propto A^{- 3 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">not a GFF (e.g. codim-1 slices of the elliptic
-            field)</td>
-          </tr></tbody>
-        </table>
-      </p>
-      <p>
-        The GFF arises iff <font color="#620000">\(p = 1 + \frac{k}{2}\)</font>. For
-        <font color="#620000">\(\mathcal{M}=\mathbb{R}^d\)</font>, every
-        codimension-two slice of the elliptic field is a GFF.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
       <div class="slide-title">
         Outlook
       </div>
@@ -1902,18 +1406,26 @@ a)^2} = \frac{1}{4 \pi a} .\)
       <ul>
         <li>
           <p>
-            Lecture 3: the GFF along a scale parameter; stochastic
-            observables; Polchinski equation and its FBSDE; Wetterich
-            equation; variational structure.
+            Lecture 3: stochastic quantisation; the GFF along a scale
+            parameter; stochastic observables, products and OPE.
           </p>
         </li>
         <li>
           <p>
-            Later lectures (not yet settled): probably a construction of <font
-            color="#620000">\(\Phi^4_3\)</font> on the torus via the FBSDE.
+            Lecture 4: Polchinski equation and its FBSDE; Wetterich equation;
+            variational structure.
+          </p>
+        </li>
+        <li>
+          <p>
+            Lectures 5&ndash;7: a construction of <font color="#620000">\(\Phi^4_3\)</font>
+            on the torus via the FBSDE.
           </p>
         </li>
       </ul>
+      <p>
+
+      </p>
       <div class="slide-block">
         <p>
           <strong>The pattern</strong>
@@ -1966,22 +1478,12 @@ a)^2} = \frac{1}{4 \pi a} .\)
             </li>
             <li>
               <p>
-                3.10 Infinitesimal invariance characterises <font color="#620000">\(\mu_m\)</font>.
+                3.11 Computer experiments.
               </p>
             </li>
             <li>
               <p>
-                3.13 Slices of Gaussian fields.
-              </p>
-            </li>
-            <li>
-              <p>
-                3.15 Computer experiments.
-              </p>
-            </li>
-            <li>
-              <p>
-                3.16 Two masses: positivity vs. locality.
+                3.12 Two masses: positivity vs. locality.
               </p>
             </li>
           </ul></td>
@@ -2002,18 +1504,6 @@ a)^2} = \frac{1}{4 \pi a} .\)
               <p>
                 Glimm&ndash;Jaffe; Simon, <font color="#620000">\(P
                 (\varphi)_2\)</font>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Da Prato&ndash;Zabczyk, <em>Stochastic Equations in Infinite
-                Dimensions</em>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Albeverio&ndash;De Vecchi&ndash;Gubinelli, <em>Elliptic
-                stochastic quantization</em>, AoP 2020.
               </p>
             </li>
           </ul></td>
