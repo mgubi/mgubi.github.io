@@ -17,6 +17,10 @@
 
 (use-modules (doc tmweb))
 
+;; MathJax fixes of the exporter, from the max-html plugin. Headless runs do
+;; not execute the plugin's initialisation, so load them explicitly.
+(use-modules (max-html fixes))
+
 ;; The SISSA materials have their own reading/presentation styles and use
 ;; MathJax, like the author's standalone exports. Keep this choice local to
 ;; these documents instead of changing the export of the rest of the site.
@@ -35,6 +39,26 @@
       (lambda ()
         (set-preference "texmacs->html:mathjax" saved-mathjax)
         (set-preference "texmacs->html:mathml" saved-mathml)))))
+
+;; MathJax cannot display pictures. TeXmacs' MathJax export turns graphics
+;; and images inside a formula into \includegraphics, so the picture is lost.
+;; Export such formulas as images instead, as the export without MathJax does.
+(let ((tmhtml-module (resolve-module '(convert html tmhtml))))
+  (eval
+   '(begin
+      (define (notes-formula-picture? x)
+        (and (pair? x)
+             (or (in? (car x) '(graphics image draw-over draw-under))
+                 (let loop ((l (cdr x)))
+                   (and (pair? l)
+                        (or (notes-formula-picture? (car l)) (loop (cdr l))))))))
+      (define tmhtml-mathjax-formula
+        (let ((formula tmhtml-mathjax-formula))
+          (lambda (x)
+            (if (notes-formula-picture? x)
+                (tmhtml-png `(with "mode" "math" ,x))
+                (formula x))))))
+   tmhtml-module))
 
 ;; TODO:
 ;; * improve conversion of strings (spurious <concat> elements in atom output)

@@ -991,3 +991,6 @@ code {
     font-family: var(--title-family);
     color: var(--color-title);
 }
+
+/* Marked terms inside MathJax formulas (\marked, notes.ts). */
+.tm-marked { background-color: var(--color-surface); border-radius: 2px; }

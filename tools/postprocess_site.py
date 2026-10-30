@@ -230,7 +230,7 @@ def modernize_markup(text: str) -> str:
             kept += f' class="{classes.group(1)}"'
         if styles:
             kept += f' style="{styles}"'
-        block = re.search(r"<(?:div|p|table|ul|ol|h[1-6]|hr)\b", content, re.I)
+        block = re.search(r"<(?:div|p|table|ul|ol|h[1-6]|hr|center)\b", content, re.I)
         tag = "div" if block else "span"
         return f"<{tag}{kept}>{content}</{tag}>"
 
@@ -240,7 +240,7 @@ def modernize_markup(text: str) -> str:
 
     def modernize_block_emphasis(match: re.Match[str]) -> str:
         tag, content = match.group(1).lower(), match.group(2)
-        if not re.search(r"<(?:div|p|table|ul|ol|h[1-6])\b", content, re.I):
+        if not re.search(r"<(?:div|p|table|ul|ol|h[1-6]|center)\b", content, re.I):
             return match.group(0)
         css_class = "block-italic" if tag == "i" else "block-bold"
         return f'<div class="{css_class}">{content}</div>'
@@ -254,7 +254,7 @@ def modernize_markup(text: str) -> str:
 
     def replace_teletype(match: re.Match[str]) -> str:
         attributes, content = match.group(1), match.group(2)
-        if re.search(r"<(?:div|p|table|ul|ol|h[1-6])\b", content, re.I):
+        if re.search(r"<(?:div|p|table|ul|ol|h[1-6]|center)\b", content, re.I):
             class_match = re.search(r'\bclass="([^"]*)"', attributes, re.I)
             classes = "block-monospace"
             if class_match:

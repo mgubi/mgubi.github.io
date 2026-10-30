@@ -29,8 +29,8 @@
     </src-comment>
   </active*>
 
-  <assign|font|mathlarge=TeX Gyre Pagella,typewriter=Source Code
-  Pro,Source Pro>
+  <assign|font|mathlarge=TeX Gyre Pagella,typewriter=Source Code Pro,Source
+  Pro>
 
   <\active*>
     <\src-comment>
@@ -40,7 +40,7 @@
 
   <assign|full-screen-mode|false>
 
-  <assign|font-base-size|10>
+  <assign|font-base-size|11>
 
   <assign|notes-title-color|#9a2727>
 
@@ -60,7 +60,8 @@
 
   <assign|par-sep|0.5fn>
 
-  <assign|notes-heading|<macro|body|<with|font|Source Pro|font-family|ss|font-series|bold|color|<value|notes-title-color>|<arg|body>>>>
+  <assign|notes-heading|<macro|body|<with|font|Source
+  Pro|font-family|ss|font-series|bold|color|<value|notes-title-color>|<arg|body>>>>
 
   <assign|sectional-normal-bold|<macro|name|<style-with|src-compact|none|<sectional-normal|<notes-heading|<arg|name>>>>>>
 
@@ -81,6 +82,15 @@
   <assign|html-css|/resources/notes-base.css>
 
   <assign|html-extra-javascript-src|<tuple|/resources/highlight.pack.js|/resources/notes-base.js>>
+
+  <\active*>
+    <\src-comment>
+      MathJax lacks some macros produced by the LaTeX conversion of
+      formulas: define them before MathJax loads.
+    </src-comment>
+  </active*>
+
+  <assign|html-extra-javascript|<tuple|var bs = String.fromCharCode(92), sp = String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs + 'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1], llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs + 'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox: [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*' + sp + '#2))}{#3}', 3, '']}}};>>
 
   <\active*>
     <\src-comment>

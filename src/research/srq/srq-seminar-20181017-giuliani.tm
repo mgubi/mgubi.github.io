@@ -225,7 +225,7 @@
   </equation*>
 
   <\equation*>
-    \<times\><big|prod><rsub|j=1><rsup|s<rsub|v<rsub|0>>><around*|[|<around*|\<\|\|\>|g<rsub|\<omega\>><rsup|<around*|(|-1|)>>|\<\|\|\>><rsub|L<rsup|1>><rsup|s<rsub|v<rsub|j>>-1><rsub|><around*|\<\|\|\>|g<rsub|\<omega\>><rsup|<around*|(|-1|)>>|\<\|\|\>><rsub|L<rsup|\<infty\>>><rsup|<frac|4s<rsub|v<rsub|s<rsub|j>>>-<around*|\||P<rsub|v<rsub|j>>|\|>|2>-<around*|(|s<rsub|v<rsub|j>>-1|)>><around*|(|s<rsub|v<rsub|j>>!|)>|]>
+    \<times\><big|prod><rsub|j=1><rsup|s<rsub|v<rsub|0>>><around*|[|<around*|\<\|\|\>|g<rsub|\<omega\>><rsup|<around*|(|-1|)>>|\<\|\|\>><rsub|L<rsup|1>><rsup|s<rsub|v<rsub|j>>-1><around*|\<\|\|\>|g<rsub|\<omega\>><rsup|<around*|(|-1|)>>|\<\|\|\>><rsub|L<rsup|\<infty\>>><rsup|<frac|4s<rsub|v<rsub|s<rsub|j>>>-<around*|\||P<rsub|v<rsub|j>>|\|>|2>-<around*|(|s<rsub|v<rsub|j>>-1|)>><around*|(|s<rsub|v<rsub|j>>!|)>|]>
   </equation*>
 
   where we sum over trees <math|\<tau\>> with

@@ -38,7 +38,7 @@ class SissaMaterialsTests(unittest.TestCase):
                         self.assertEqual(text.count('class="toggle"'), slides)
                         self.assertIn('class="slide-title"', text)
                     else:
-                        self.assertIn('class="cqft-toc"', text)
+                        self.assertIn('class="max-toc"', text)
                     for href in re.findall(r'(?:src|href)="([^"]+)"', text):
                         target = local_target(page, href)
                         if target:
@@ -56,6 +56,15 @@ class SissaMaterialsTests(unittest.TestCase):
                 self.assertIn(f'sissa-2026/{name}.html', hrefs)
             for kind in ('notes', 'slides'):
                 self.assertIn(f'../../store/sissa/2026/cqft_{kind}_L{number}.pdf', hrefs)
+
+    def test_max_html_resources_match_the_plugin(self):
+        # The pages load the max-html resources from their own folder; keep
+        # these copies identical to the plugin's.
+        resources = ROOT / 'plugins' / 'max-html' / 'resources'
+        for name in ('max-html.css', 'max-html.js', 'max-html-slides.css', 'max-html-slides.js'):
+            for folder in (ROOT / 'src' / 'teaching' / 'sissa-2026', MATERIALS):
+                with self.subTest(file=name, folder=folder.relative_to(ROOT).as_posix()):
+                    self.assertEqual((folder / name).read_bytes(), (resources / name).read_bytes())
 
 
 if __name__ == '__main__':

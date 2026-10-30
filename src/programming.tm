@@ -211,6 +211,14 @@
     <item><hlink|Daniel Holden's website|https://theorangeduck.com/page/all>: technical articles on numerical methods, graphics, animation, machine learning and game development.
 
     <item><hlink|Peter Norvig's website|https://norvig.com>: essays, notebooks and code on artificial intelligence, algorithms, programming languages and software design.
+
+    <item><hlink|Uxn ecosystem|https://100r.co/site/uxn.html>: Hundred Rabbits' ecosystem for portable tools and graphical applications built around a small virtual machine.
+
+    <item><hlink|Oleg Kiselyov's homepage|https://okmij.org/ftp/>: articles, tutorials and code on functional programming, types, continuations and staged computation.
+
+    <item><hlink|GNU Guix|https://guix.gnu.org/>: a package manager and GNU/Linux system with declarative configuration and reproducible software environments.
+
+    <item><hlink|Nix and NixOS|https://nixos.org/>: a package manager and Linux distribution for declarative system configuration and reproducible development environments.
   </itemize>
 
   \;
