@@ -198,7 +198,7 @@
         <font style="font-size: 92.0%">Operator product expansion. <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Higher orders. <span style="margin-left: 5mm"></span> <a href="#auto-25">10</a></font>
+        <font style="font-size: 92.0%">Higher orders. <span style="margin-left: 5mm"></span> <a href="#auto-25">11</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">Locality and factorisation. <span style="margin-left: 5mm"></span> <a href="#auto-26">11</a></font>
@@ -207,7 +207,7 @@
         <font style="font-size: 92.0%">Outlook. <span style="margin-left: 5mm"></span> <a href="#auto-28">11</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-29">11</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-29">12</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-30">12</a>
@@ -1302,29 +1302,34 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
       <h5>Brownian deltas.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         The observables \(\Pi^y\) of Example <a href="#exa:delta">5.7</a> show the
-        mechanism of the operator product expansion in its simplest form. Put
-        \(\varepsilon = T - t\) and \(c_{\varepsilon} = (4 \pi \varepsilon)^{-
-        1 / 2}\). For \(y \neq z\) the exact identity
+        mechanism of the operator product expansion in its simplest form.
+        Write \(c_s = (4 \pi s)^{- 1 / 2}\). Completing the square, \((B_t -
+        y)^2 + (B_t - z)^2 = 2 (B_t - m)^2 + (y - z)^2 / 2\) with \(m = (y +
+        z) / 2\), gives the exact identity
       </div>
     </p>
     <center>
-      \(\displaystyle p_{\varepsilon} (B - y) p_{\varepsilon} (B - z) =
-      c_{\varepsilon}
-\mathrm{e}^{- (y - z)^2 / 4 \varepsilon} p_{\varepsilon
-      / 2} \left( B -
-\frac{y + z}{2} \right)\)
+      \(\displaystyle \Pi^y_t \Pi^z_t = c_{T - t} \mathrm{e}^{- (y - z)^2 / 4
+      (T - t)} p_{(T - t) /
+2} (B_t - m), \qquad t < T.\)
     </center>
     <p>
-      shows that \(\| \Pi^y_t \Pi^z_t \|_{L^1} = c_{\varepsilon} \mathrm{e}^{-
-      (y - z)^2 / 4
-\varepsilon} p_{T - \varepsilon / 2} ((y + z) / 2) \to 0\)
-      as \(t \uparrow T\): the product exists and \(\Pi^y \star \Pi^z = 0\).
-      At \(y = z\) the exponential suppression is lost, and \(\mathbb{E}
-      (\Pi^y_t)^2 = c_{\varepsilon} p_{T - \varepsilon / 2} (y) \to
-\infty\):
-      the square does not exist. It can be resolved at a fixed coarser
-      resolution. Since \(p_{\varepsilon} (z)^2 = c_{\varepsilon}
-      p_{\varepsilon / 2} (z)\), for fixed \(s < T - \varepsilon\)
+      Since \(B_t \sim N (0, t)\), \(\mathbb{E}p_{(T - t) / 2} (B_t - m) =
+      p_{(T + t) / 2} (m)\), so for \(y \neq z\)
+    </p>
+    <center>
+      \(\displaystyle \| \Pi^y_t \Pi^z_t \|_{L^1} = c_{T - t} \mathrm{e}^{- (y
+      - z)^2 / 4 (T - t)}
+p_{(T + t) / 2} (m) \longrightarrow 0 \qquad (t
+      \uparrow T) :\)
+    </center>
+    <p>
+      the product exists and \(\Pi^y \star \Pi^z = 0\). At \(y = z\) the
+      exponential suppression is lost, and \(\mathbb{E} (\Pi^y_t)^2 = c_{T -
+      t} p_{(T + t) / 2} (y) \to \infty\): the square does not exist. It can
+      be resolved at a fixed coarser resolution. Let \(u = T - \varepsilon\)
+      be a fine resolution and \(s < u\) a coarser one. Since
+      \(p_{\varepsilon} (w)^2 = c_{\varepsilon} p_{\varepsilon / 2} (w)\),
     </p>
     <center>
       \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =

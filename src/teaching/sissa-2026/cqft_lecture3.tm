@@ -958,21 +958,29 @@
 
   <paragraph|Brownian deltas.> The observables <math|\<Pi\><rsup|y>> of
   Example<nbsp><reference|exa:delta> show the mechanism of the operator
-  product expansion in its simplest form. Put <math|\<varepsilon\>=T-t> and
-  <math|c<rsub|\<varepsilon\>>=<around|(|4*\<pi\>*\<varepsilon\>|)><rsup|-1/2>>.
-  For <math|y\<neq\>z> the exact identity
+  product expansion in its simplest form. Write
+  <math|c<rsub|s>=<around|(|4*\<pi\>*s|)><rsup|-1/2>>. Completing the square,
+  <math|<around|(|B<rsub|t>-y|)><rsup|2>+<around|(|B<rsub|t>-z|)><rsup|2>=2*<around|(|B<rsub|t>-m|)><rsup|2>+<around|(|y-z|)><rsup|2>/2>
+  with <math|m=<around|(|y+z|)>/2>, gives the exact identity
 
   <\equation*>
-    p<rsub|\<varepsilon\>><around|(|B-y|)>*p<rsub|\<varepsilon\>><around|(|B-z|)>=c<rsub|\<varepsilon\>>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around*|(|B-<frac|y+z|2>|)>
+    \<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-m|)>,<space|2em>t\<less\>T.
   </equation*>
 
-  shows that <math|<around|\<\|\|\>|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>=c<rsub|\<varepsilon\>>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*\<varepsilon\>>*p<rsub|T-\<varepsilon\>/2><around|(|<around|(|y+z|)>/2|)>\<to\>0>
-  as <math|t\<uparrow\>T>: the product exists and
-  <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0>. At <math|y=z> the
-  exponential suppression is lost, and <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|T-\<varepsilon\>/2><around|(|y|)>\<to\>\<infty\>>:
+  Since <math|B<rsub|t>\<sim\>N<around|(|0,t|)>>,
+  <math|\<bbb-E\>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-m|)>=p<rsub|<around|(|T+t|)>/2><around|(|m|)>>,
+  so for <math|y\<neq\>z>
+
+  <\equation*>
+    <around|\<\|\|\>|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T+t|)>/2><around|(|m|)>\<longrightarrow\>0<space|2em><around|(|t\<uparrow\>T|)>:
+  </equation*>
+
+  the product exists and <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0>. At
+  <math|y=z> the exponential suppression is lost, and
+  <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<to\>\<infty\>>:
   the square does not exist. It can be resolved at a fixed coarser
-  resolution. Since <math|p<rsub|\<varepsilon\>><around|(|z|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|z|)>>,
-  for fixed <math|s\<less\>T-\<varepsilon\>>
+  resolution. Let <math|u=T-\<varepsilon\>> be a fine resolution and
+  <math|s\<less\>u> a coarser one. Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
 
   <\equation*>
     \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*p<rsub|T-s-\<varepsilon\>/2><around|(|B<rsub|s>-y|)>=c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|s>-<frac|\<varepsilon\>*c<rsub|\<varepsilon\>>|4>*\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y><rsub|s>+<frac|\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>|32>*\<partial\><rsub|y><rsup|4>*\<Pi\><rsup|y><rsub|s>+O<rsub|L<rsup|1>><around|(|\<varepsilon\><rsup|5/2>|)>,
@@ -1299,11 +1307,11 @@
     <associate|auto-22|<tuple|1|10>>
     <associate|auto-23|<tuple|2|10>>
     <associate|auto-24|<tuple|3|10>>
-    <associate|auto-25|<tuple|4|10>>
+    <associate|auto-25|<tuple|4|11>>
     <associate|auto-26|<tuple|5|11>>
     <associate|auto-27|<tuple|6.1|11>>
     <associate|auto-28|<tuple|6|11>>
-    <associate|auto-29|<tuple|6|11>>
+    <associate|auto-29|<tuple|6|12>>
     <associate|auto-3|<tuple|2|2>>
     <associate|auto-30|<tuple|6.5|12>>
     <associate|auto-4|<tuple|4|2>>
@@ -1328,14 +1336,14 @@
     <associate|bib-GH19|<tuple|GH19|12>>
     <associate|bib-GH21|<tuple|GH21|12>>
     <associate|bib-GIP15|<tuple|GIP15|12>>
-    <associate|bib-Gub25|<tuple|Gub25|12>>
-    <associate|bib-Hai14|<tuple|Hai14|12>>
-    <associate|bib-JLM85|<tuple|JLM85|12>>
-    <associate|bib-KLP84|<tuple|KLP84|12>>
-    <associate|bib-MW17|<tuple|MW17|12>>
-    <associate|bib-PS79|<tuple|PS79|12>>
-    <associate|bib-PW81|<tuple|PW81|12>>
-    <associate|bib-Pol84|<tuple|Pol84|12>>
+    <associate|bib-Gub25|<tuple|Gub25|13>>
+    <associate|bib-Hai14|<tuple|Hai14|13>>
+    <associate|bib-JLM85|<tuple|JLM85|13>>
+    <associate|bib-KLP84|<tuple|KLP84|13>>
+    <associate|bib-MW17|<tuple|MW17|13>>
+    <associate|bib-PS79|<tuple|PS79|13>>
+    <associate|bib-PW81|<tuple|PW81|13>>
+    <associate|bib-Pol84|<tuple|Pol84|13>>
     <associate|bib-Sal99|<tuple|Sal99|13>>
     <associate|bib-WK74|<tuple|WK74|13>>
     <associate|def:obs|<tuple|5.3|7>>
@@ -1349,23 +1357,23 @@
     <associate|eq:generator|<tuple|4.2|3>>
     <associate|eq:heat-kernel|<tuple|5.2|6>>
     <associate|eq:heat-profile|<tuple|5.1|6>>
-    <associate|eq:prod-cond|<tuple|6.2|9>>
-    <associate|eq:prod-formula|<tuple|6.3|9>>
+    <associate|eq:prod-cond|<tuple|6.2|10>>
+    <associate|eq:prod-formula|<tuple|6.3|10>>
     <associate|eq:scale-GFF|<tuple|5.3|6>>
     <associate|eq:stat-sol|<tuple|4.3|3>>
     <associate|eq:wick-obs-cov|<tuple|6.1|9>>
     <associate|eq:wick-product|<tuple|6.6|10>>
-    <associate|ex:brownian-delta|<tuple|5.4|8>>
+    <associate|ex:brownian-delta|<tuple|5.4|9>>
     <associate|ex:brownian-obs|<tuple|5.3|8>>
-    <associate|ex:brownian-ope|<tuple|6.4|11>>
+    <associate|ex:brownian-ope|<tuple|6.4|12>>
     <associate|ex:ct|<tuple|5.2|8>>
-    <associate|ex:hermite-flow|<tuple|6.1|11>>
+    <associate|ex:hermite-flow|<tuple|6.1|12>>
     <associate|ex:invariance|<tuple|4.1|5>>
     <associate|ex:point-splitting|<tuple|6.5|12>>
     <associate|ex:scale-GFF|<tuple|5.1|8>>
     <associate|ex:slices|<tuple|4.4|6>>
     <associate|ex:weak|<tuple|4.3|5>>
-    <associate|ex:wick-product|<tuple|6.2|11>>
+    <associate|ex:wick-product|<tuple|6.2|12>>
     <associate|exa:brownian|<tuple|5.5|7>>
     <associate|exa:delta|<tuple|5.7|8>>
     <associate|fig:locality|<tuple|6.1|11>>
@@ -1373,7 +1381,7 @@
     <associate|fig:she|<tuple|4.1|4>>
     <associate|lem:uniq|<tuple|5.4|7>>
     <associate|prop:inf-inv|<tuple|4.1|3>>
-    <associate|prop:product|<tuple|6.3|9>>
+    <associate|prop:product|<tuple|6.3|10>>
     <associate|prop:repair|<tuple|5.6|8>>
     <associate|prop:scale-GFF|<tuple|5.2|7>>
     <associate|prop:wick-obs|<tuple|6.1|9>>

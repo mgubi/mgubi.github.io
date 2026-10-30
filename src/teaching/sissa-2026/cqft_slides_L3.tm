@@ -478,95 +478,111 @@
   </hidden>|<\hidden>
     <mytitle|Brownian observables>
 
-    <vspace|0.3cm>
-
-    For standard one-dimensional Brownian motion:
-
-    <\equation*>
-      B<rsub|t>,<space|2em> B<rsub|t><rsup|2>-t,<space|2em>
-      B<rsub|t><rsup|3>-3t B<rsub|t>
-    </equation*>
-
-    are observables without terminal representatives.
-
-    \;
-
-    The exponential martingale makes the loss of terminal information
-    explicit:
+    For a standard Brownian motion <math|B> and the Hermite polynomials
+    <math|H<rsub|n><around|(|a;c|)>> of variance <math|c>, the martingales
 
     <\equation*>
-      Z<rsub|t>=exp <around*|[|\<lambda\>
-      B<rsub|t>-\<lambda\><rsup|2>t/2|]>,<space|2em>\<lambda\>\<neq\>0,
+      B<rsub|t>,<space|2em>B<rsub|t><rsup|2>-t,<space|2em>B<rsub|t><rsup|3>-3*t*B<rsub|t>,<space|2em>\<ldots\>,<space|2em>H<rsub|n><around|(|B<rsub|t>;t|)>
     </equation*>
+
+    are observables without a terminal value, and not even bounded in
+    <math|L<rsup|1>>:
 
     <\equation*>
-      Z<rsub|t>\<longrightarrow\>0<space|0.3em><text|a.s.>,<space|2em>
-      \<bbb-E\>Z<rsub|t>=1.
+      \<bbb-E\><around|\||B<rsub|t><rsup|2>-t|\|>=t*\<bbb-E\><around|\||Z<rsup|2>-1|\|>\<longrightarrow\>\<infty\>,<space|2em>Z\<sim\>N<around|(|0,1|)>.
     </equation*>
 
-    <strong|The limiting random variable is zero; the observable is not.>
+    They sum up to the exponential martingale (<math|\<lambda\>\<neq\>0>):
+
+    <\equation*>
+      Z<rsub|t>=\<mathe\><rsup|\<lambda\>*B<rsub|t>-\<lambda\><rsup|2>*t/2>=<big|sum><rsub|n\<geq\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>Z<rsub|t>\<to\>0<text|
+      a.s.>,<space|2em>\<bbb-E\>*Z<rsub|t>=1,
+    </equation*>
+
+    since <math|\<lambda\>*B<rsub|t>-\<lambda\><rsup|2>*t/2\<sim\>-\<lambda\><rsup|2>*t/2\<to\>-\<infty\>>.
+    The mass escapes to rarer and rarer paths.
+
+    <\myframed>
+      <strong|The limiting random variable is zero; the observable is not.> A
+      point value <math|X<rsub|t><around|(|x|)>> of the GFF is a Brownian
+      motion run with the clock <math|c<rsub|t>>: these are the prototypes of
+      the Wick powers <math|H<rsub|n><around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>>.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|Repair by the future drift>
 
-    \;
-
-    A semimartingale description of an observable can be repaired
-    (Proposition 5.6):
-
-    Suppose <math|\<mathd\>N<rsub|t>=\<beta\><rsub|t><space|0.17em>\<mathd\>t+\<mathd\>M<rsub|t>>
-    and
+    <strong|Proposition.> Let <math|N<rsub|t>=N<rsub|0>+<big|int><rsub|0><rsup|t>\<beta\><rsub|s>*\<mathd\>s+M<rsub|t>>,
+    with <math|M> a martingale and <math|\<bbb-E\><big|int><rsub|0><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<less\>\<infty\>>.
+    The only observable with <math|<around|\<\|\|\>|N<rsub|t>-O<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>
+    is
 
     <\equation*>
-      \<bbb-E\><big|int><rsub|0><rsup|\<infty\>>\|\<beta\><rsub|s>\|<space|0.17em>\<mathd\>s\<less\>\<infty\>.
+      O<rsub|t>=N<rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|t><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s|]><space|2em><text|(the
+      expected drift still to come).>
     </equation*>
 
-    Then the observable in its class is
+    <strong|Proof.> <math|O<rsub|t>=N<rsub|0>+M<rsub|t>+\<bbb-E\><rsub|t><big|int><rsub|0><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s>
+    is a martingale, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>;
+    uniqueness is asymptotic uniqueness.
+
+    <strong|Example.> <math|N<rsub|t>=B<rsub|t>+\<mathe\><rsup|-t>*sin
+    B<rsub|t>>. Itô: <math|\<beta\><rsub|t>=-<frac|3|2>*\<mathe\><rsup|-t>*sin
+    B<rsub|t>>, and <math|\<bbb-E\><rsub|t>*sin
+    B<rsub|s>=\<mathe\><rsup|-<around|(|s-t|)>/2>*sin B<rsub|t>>, so
 
     <\equation*>
-      O<rsub|t>=N<rsub|t>+\<bbb-E\><rsub|t><big|int><rsub|t><rsup|\<infty\>>\<beta\><rsub|s><space|0.17em>\<mathd\>s.
+      \<bbb-E\><rsub|t><big|int><rsub|t><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s=-<frac|3|2>*sin
+      B<rsub|t>*<big|int><rsub|t><rsup|\<infty\>>\<mathe\><rsup|-s-<around|(|s-t|)>/2>*\<mathd\>s=-\<mathe\><rsup|-t>*sin
+      B<rsub|t>,<space|2em>O<rsub|t>=B<rsub|t>.
     </equation*>
 
-    The correction is the expected drift still to come.
-
-    <\equation*>
-      N<rsub|t>=B<rsub|t>+e<rsup|-t>sin B<rsub|t><space|1em>\<Longrightarrow\><space|1em>
-      O<rsub|t>=B<rsub|t>.
-    </equation*>
-
-    \;
-
-    \;
+    <\myframed>
+      This is the germ of the forward\Ubackward equations: in Lecture 4 the
+      forecast <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>*\<Phi\><rsub|T>> is
+      the field plus the expected drift still to come.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|A delta at a Brownian endpoint>
 
-    <vspace|0.3cm>
-
-    Fix <math|T\<gtr\>0> and <math|y\<in\>\<bbb-R\>>. With
-    <math|p<rsub|s>(z)=(2\<pi\> s)<rsup|-1/2>e<rsup|-z<rsup|2>/(2s)>>, define
-
-    <\equation*>
-      \<Pi\><rsub|t><rsup|y>=p<rsub|T-t>(B<rsub|t>-y),<space|2em> t\<less\>T.
-    </equation*>
-
-    The heat semigroup gives <math|\<bbb-E\><rsub|s>\<Pi\><rsub|t><rsup|y>=\<Pi\><rsub|s><rsup|y>>.
-    For bounded test functions,
+    Fix <math|T\<gtr\>0>, <math|y\<in\>\<bbb-R\>>, the heat kernel
+    <math|p<rsub|s><around|(|w|)>=<around|(|2*\<pi\>*s|)><rsup|-1/2>*\<mathe\><rsup|-w<rsup|2>/2*s>>,
+    and
 
     <\equation*>
-      <big|int><rsub|\<bbb-R\>> g(y)\<Pi\><rsub|t><rsup|y><space|0.17em>\<mathd\>y=\<bbb-E\><rsub|t>
-      g(B<rsub|T>).
+      \<Pi\><rsup|y><rsub|t>\<assign\>p<rsub|T-t><around|(|B<rsub|t>-y|)>,<space|2em>0\<leq\>t\<less\>T.
     </equation*>
 
-    At a fixed <math|y>, <math|\<Pi\><rsub|t><rsup|y>\<rightarrow\>0> almost
-    surely, but <math|\<bbb-E\>\<Pi\><rsub|t><rsup|y>=p<rsub|T>(y)\<gtr\>0>.
+    <\itemize>
+      <item><strong|Martingale:> <math|\<bbb-E\><rsub|s>*\<Pi\><rsup|y><rsub|t>=\<Pi\><rsup|y><rsub|s>>
+      for <math|s\<leq\>t>, by Chapman\UKolmogorov
+      <math|p<rsub|t-s>\<ast\>p<rsub|T-t>=p<rsub|T-s>>.
 
-    \;
+      <item><strong|Density of <math|B<rsub|T>>:>
+      <math|<big|int>g<around|(|y|)>*\<Pi\><rsup|y><rsub|t>*\<mathd\>y=\<bbb-E\><rsub|t>*g<around|(|B<rsub|T>|)>>
+      for bounded <math|g>, by the Markov property.
 
-    <strong|<math|\<delta\>(B<rsub|T>-y)> is represented by its conditional
-    densities.>
+      <item><strong|Singular:> at fixed <math|y>,
+      <math|\<Pi\><rsup|y><rsub|t>\<to\>0> almost surely as
+      <math|t\<uparrow\>T>, since <math|B<rsub|T>\<neq\>y> a.s.; but
+      <math|\<bbb-E\>*\<Pi\><rsup|y><rsub|t>=p<rsub|T><around|(|y|)>\<gtr\>0>.
 
-    <small|<with|color|dark grey|Here high resolution means
-    <math|t\<uparrow\> T>; one may reparametrise by <math|a=(T-t)<rsup|-1>>.
-    Works for Markov processes.>>
+      <item><strong|Mass one:> <math|y\<mapsto\>\<Pi\><rsup|y><rsub|t>> is a
+      probability density for every <math|t\<less\>T>, so
+      <math|<around|(|\<Pi\><rsup|y>|)><rsub|y>> is a measure-valued
+      observable, although each <math|\<Pi\><rsup|y><rsub|t>> tends to zero.
+    </itemize>
+
+    <\myframed>
+      <strong|<math|\<delta\><around|(|B<rsub|T>-y|)>> is not a random
+      variable, but it is an observable:> the family of its conditional
+      densities. Its derivatives <math|\<partial\><rsub|y><rsup|k>*\<Pi\><rsup|y>>
+      are observables too.
+    </myframed>
+
+    <small|<with|color|dark grey|High resolution means <math|t\<uparrow\>T>;
+    reparametrise by <math|<around|(|T-t|)><rsup|-1>> to get
+    <math|<around|[|T<rsup|-1>,\<infty\>|)>>. The same works for any Markov
+    process with a transition density.>>
   </hidden>|<\hidden>
     <mytitle|Germs and locality>
 
@@ -674,58 +690,65 @@
   </hidden>|<\hidden>
     <mytitle|Brownian deltas at different targets>
 
-    <vspace|0.3cm>
-
-    \;
-
-    For <math|y\<neq\> z>, the exact product formula is
+    For <math|y\<neq\>z>, <math|t\<less\>T>, <math|m=<frac|y+z|2>> and
+    <math|c<rsub|s>=<around|(|4*\<pi\>*s|)><rsup|-1/2>>, the product is
+    exact:
 
     <\equation*>
-      p<rsub|\<varepsilon\>>(B-y)p<rsub|\<varepsilon\>>(B-z)=c<rsub|\<varepsilon\>>
-      e<rsup|-(y-z)<rsup|2>/(4\<varepsilon\>)>p<rsub|\<varepsilon\>/2>(B-<frac|y+z|2>).
+      \<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-m|)>.
     </equation*>
 
-    Its <math|L<rsup|1>> norm tends to zero as
-    <math|\<varepsilon\>\<downarrow\>0>. Hence
+    <strong|Proof.> Complete the square: <math|<around|(|B<rsub|t>-y|)><rsup|2>+<around|(|B<rsub|t>-z|)><rsup|2>=2*<around|(|B<rsub|t>-m|)><rsup|2>+<frac|<around|(|y-z|)><rsup|2>|2>>,
+    and use <math|<around|(|2*\<pi\>*<around|(|T-t|)>|)><rsup|-1>=c<rsub|T-t>*<around|(|\<pi\>*<around|(|T-t|)>|)><rsup|-1/2>>.
+
+    Taking expectations, with <math|B<rsub|t>\<sim\>N<around|(|0,t|)>>:
 
     <\equation*>
-      \<Pi\><rsup|y>\<star\> \<Pi\><rsup|z>=0<space|2em>(y\<neq\> z).
+      \<bbb-E\>*\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T+t|)>/2><around|(|m|)>\<longrightarrow\>0<space|1em><around|(|t\<uparrow\>T|)>.
     </equation*>
 
-    At equal targets, the exponential suppression disappears and the leading
-    coefficient diverges.
+    So the product exists and <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0>
+    for <math|y\<neq\>z>. At <math|y=z> the exponential suppression
+    disappears:
 
-    \;
+    <\equation*>
+      \<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<longrightarrow\>\<infty\>.
+    </equation*>
 
-    <small|<with|color|dark grey|The product depends dramatically on whether
-    the singular supports meet.>>
-
-    \;
+    <\myframed>
+      The product depends dramatically on whether the singular supports meet:
+      separated supports multiply to zero, coincident ones call for
+      renormalisation.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|Brownian OPE: resolve the delta square>
 
-    <vspace|0.3cm>
-
-    Put <math|\<varepsilon\>=T-u>, fix <math|t\<less\>u>, and set
-    <math|c<rsub|\<varepsilon\>>=(4\<pi\>\<varepsilon\>)<rsup|-1/2>>. Since
-
-    <\equation*>
-      p<rsub|\<varepsilon\>>(z)<rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2>(z),
-    </equation*>
-
-    conditioning on the coarse information gives the exact identity
+    Fine resolution <math|u=T-\<varepsilon\>>, coarse resolution
+    <math|s\<less\>u>, <math|c<rsub|\<varepsilon\>>=<around|(|4*\<pi\>*\<varepsilon\>|)><rsup|-1/2>>.
+    Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
+    Chapman\UKolmogorov gives the exact identity
 
     <\equation*>
-      \<bbb-E\><rsub|t>[(\<Pi\><rsub|T-\<varepsilon\>><rsup|y>)<rsup|2>]=c<rsub|\<varepsilon\>>p<rsub|T-t-\<varepsilon\>/2>(B<rsub|t>-y).
+      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*p<rsub|T-s-\<varepsilon\>/2><around|(|B<rsub|s>-y|)>.
     </equation*>
 
-    Use <math|\<partial\><rsub|s>p<rsub|s>=<frac|1|2>\<partial\><rsub|y><rsup|2>p<rsub|s>>
-    to obtain
+    Taylor expand in the time variable, with
+    <math|\<partial\><rsub|\<tau\>>*p<rsub|\<tau\>>=<frac|1|2>*\<partial\><rsub|y><rsup|2>*p<rsub|\<tau\>>>:
 
     <\equation*>
-      \<bbb-E\><rsub|t>[(\<Pi\><rsub|T-\<varepsilon\>><rsup|y>)<rsup|2>]=c<rsub|\<varepsilon\>>\<Pi\><rsub|t><rsup|y>-<frac|\<varepsilon\>
-      c<rsub|\<varepsilon\>>|4>\<partial\><rsub|y><rsup|2>\<Pi\><rsub|t><rsup|y>+<frac|\<varepsilon\><rsup|2>c<rsub|\<varepsilon\>>|32>\<partial\><rsub|y><rsup|4>\<Pi\><rsub|t><rsup|y>+O<rsub|L<rsup|1>,t>(\<varepsilon\><rsup|5/2>).
+      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|s>-<frac|\<varepsilon\>*c<rsub|\<varepsilon\>>|4>*\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y><rsub|s>+<frac|\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>|32>*\<partial\><rsub|y><rsup|4>*\<Pi\><rsup|y><rsub|s>+O<rsub|L<rsup|1>,s><around|(|\<varepsilon\><rsup|5/2>|)>.
     </equation*>
+
+    <\itemize>
+      <item>Singular coefficients (<math|c<rsub|\<varepsilon\>>\<to\>\<infty\>>;
+      <math|\<varepsilon\>*c<rsub|\<varepsilon\>>,\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>\<to\>0>)
+      times observables <math|\<Pi\><rsup|y>,\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y>,\<ldots\>>:
+      an <strong|operator product expansion>.
+
+      <item>The order of limits matters: fixed coarse resolution <math|s>,
+      then <math|\<varepsilon\>\<downarrow\>0>. Without conditioning,
+      <math|<around|\<\|\|\>|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>-c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|\<\|\|\>><rsub|L<rsup|1>>\<asymp\>\<varepsilon\><rsup|-1/2>>.
+    </itemize>
   </hidden>|<\hidden>
     <mytitle|Products of point evaluations>
 

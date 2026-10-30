@@ -841,118 +841,157 @@ e_n\)</font>:
       <div class="slide-title">
         Brownian observables
       </div>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
       <p>
-        For standard one-dimensional Brownian motion:
+        For a standard Brownian motion <font color="#620000">\(B\)</font> and the
+        Hermite polynomials <font color="#620000">\(H_n (a ; c)\)</font> of variance
+        <font color="#620000">\(c\)</font>, the martingales
       </p>
       <center>
-        \(\displaystyle B_t, \qquad B_t^2 - t, \qquad B_t^3 - 3 t B_t\)
+        \(\displaystyle B_t, \qquad B_t^2 - t, \qquad B_t^3 - 3 tB_t, \qquad
+        \ldots, \qquad H_n (B_t ;
+t)\)
       </center>
       <p>
-        are observables without terminal representatives.
-      </p>
-      <p>
-
-      </p>
-      <p>
-        The exponential martingale makes the loss of terminal information
-        explicit:
+        are observables without a terminal value, and not even bounded in
+        <font color="#620000">\(L^1\)</font>:
       </p>
       <center>
-        \(\displaystyle Z_t = \exp [\lambda B_t - \lambda^2 t / 2], \qquad
-        \lambda \neq 0,\)
-      </center>
-      <center>
-        \(\displaystyle Z_t \longrightarrow 0 \hspace{0.3em} \text{a.s.},
-        \qquad \mathbb{E}Z_t = 1.\)
+        \(\displaystyle \mathbb{E} |B_t^2 - t| = t\mathbb{E} |Z^2 - 1|
+        \longrightarrow \infty, \qquad
+Z \sim N (0, 1) .\)
       </center>
       <p>
-        <strong>The limiting random variable is zero; the observable is
-        not.</strong>
+        They sum up to the exponential martingale (<font color="#620000">\(\lambda \neq
+        0\)</font>):
       </p>
+      <center>
+        \(\displaystyle Z_t = \mathrm{e}^{\lambda B_t - \lambda^2 t / 2} =
+        \sum_{n \geq 0}
+\frac{\lambda^n}{n!} H_n (B_t ; t), \qquad Z_t \to 0
+        \text{ a.s.}, \qquad
+\mathbb{E}Z_t = 1,\)
+      </center>
+      <p>
+        since <font color="#620000">\(\lambda B_t - \lambda^2 t / 2 \sim - \lambda^2 t
+        / 2 \to - \infty\)</font>. The mass escapes to rarer and rarer paths.
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>The limiting random variable is zero; the observable is
+          not.</strong> A point value <font color="#620000">\(X_t (x)\)</font> of the
+          GFF is a Brownian motion run with the clock <font color="#620000">\(c_t\)</font>:
+          these are the prototypes of the Wick powers <font color="#620000">\(H_n (X_t
+          (x) ; c_t)\)</font>.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Repair by the future drift
       </div>
       <p>
-
-      </p>
-      <p>
-        A semimartingale description of an observable can be repaired
-        (Proposition 5.6):
-      </p>
-      <p>
-        Suppose <font color="#620000">\(\mathrm{d} N_t = \beta_t \hspace{0.17em}
-        \mathrm{d} t + \mathrm{d} M_t\)</font> and
+        <strong>Proposition.</strong> Let <font color="#620000">\(N_t = N_0 + \int_0^t
+        \beta_s \mathrm{d} s + M_t\)</font>, with <font color="#620000">\(M\)</font> a
+        martingale and <font color="#620000">\(\mathbb{E} \int_0^{\infty} | \beta_s |
+        \mathrm{d} s < \infty\)</font>. The only observable with <font color="#620000">\(\|N_t
+        - O_t \|_{L^1} \to 0\)</font> is
       </p>
       <center>
-        \(\displaystyle \mathbb{E} \int_0^{\infty} | \beta_s | \hspace{0.17em}
-        \mathrm{d} s < \infty .\)
+        \(\displaystyle O_t = N_t +\mathbb{E}_t \left[ \int_t^{\infty} \beta_s
+        \mathrm{d} s \right]
+\qquad \text{(the expected drift still to
+        come).}\)
       </center>
       <p>
-        Then the observable in its class is
+        <strong>Proof.</strong> <font color="#620000">\(O_t = N_0 + M_t +\mathbb{E}_t
+        \int_0^{\infty} \beta_s \mathrm{d} s\)</font> is a martingale, and
+        <font color="#620000">\(\|O_t - N_t \|_{L^1} \leq \mathbb{E} \int_t^{\infty} |
+        \beta_s | \mathrm{d} s
+\to 0\)</font>; uniqueness is asymptotic
+        uniqueness.
+      </p>
+      <p>
+        <strong>Example.</strong> <font color="#620000">\(N_t = B_t + \mathrm{e}^{- t}
+        \sin B_t\)</font>. It&ocirc;: <font color="#620000">\(\beta_t = - \frac{3}{2}
+        \mathrm{e}^{- t} \sin B_t\)</font>, and <font color="#620000">\(\mathbb{E}_t
+        \sin B_s = \mathrm{e}^{- (s - t) / 2} \sin B_t\)</font>, so
       </p>
       <center>
-        \(\displaystyle O_t = N_t +\mathbb{E}_t \int_t^{\infty} \beta_s
-        \hspace{0.17em} \mathrm{d} s.\)
+        \(\displaystyle \mathbb{E}_t \int_t^{\infty} \beta_s \mathrm{d} s = -
+        \frac{3}{2} \sin B_t
+\int_t^{\infty} \mathrm{e}^{- s - (s - t) / 2}
+        \mathrm{d} s = - \mathrm{e}^{-
+t} \sin B_t, \qquad O_t = B_t .\)
       </center>
-      <p>
-        The correction is the expected drift still to come.
-      </p>
-      <center>
-        \(\displaystyle N_t = B_t + e^{- t} \sin B_t \quad \Longrightarrow
-        \quad O_t = B_t .\)
-      </center>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
+      <div class="slide-block">
+        <p>
+          This is the germ of the forward&ndash;backward equations: in Lecture
+          4 the forecast <font color="#620000">\(\psi_t =\mathbb{E}_t \Phi_T\)</font>
+          is the field plus the expected drift still to come.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         A delta at a Brownian endpoint
       </div>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
       <p>
-        Fix <font color="#620000">\(T > 0\)</font> and <font color="#620000">\(y \in
-        \mathbb{R}\)</font>. With <font color="#620000">\(p_s (z) = (2 \pi s)^{- 1 / 2}
-        e^{- z^2 / (2 s)}\)</font>, define
+        Fix <font color="#620000">\(T > 0\)</font>, <font color="#620000">\(y \in
+        \mathbb{R}\)</font>, the heat kernel <font color="#620000">\(p_s (w) = (2 \pi
+        s)^{- 1 / 2} \mathrm{e}^{- w^2 / 2 s}\)</font>, and
       </p>
       <center>
-        \(\displaystyle \Pi_t^y = p_{T - t} (B_t - y), \qquad t < T.\)
+        \(\displaystyle \Pi^y_t := p_{T - t} (B_t - y), \qquad 0 \leq t < T.\)
       </center>
+      <ul>
+        <li>
+          <p>
+            <strong>Martingale:</strong> <font color="#620000">\(\mathbb{E}_s \Pi^y_t =
+            \Pi^y_s\)</font> for <font color="#620000">\(s \leq t\)</font>, by
+            Chapman&ndash;Kolmogorov <font color="#620000">\(p_{t - s} \ast p_{T - t} =
+            p_{T - s}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Density of <font color="#620000">\(B_T\)</font>:</strong> <font
+            color="#620000">\(\int g (y) \Pi^y_t \mathrm{d} y =\mathbb{E}_t g
+            (B_T)\)</font> for bounded <font color="#620000">\(g\)</font>, by the
+            Markov property.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Singular:</strong> at fixed <font color="#620000">\(y\)</font>,
+            <font color="#620000">\(\Pi^y_t \to 0\)</font> almost surely as <font
+            color="#620000">\(t \uparrow T\)</font>, since <font color="#620000">\(B_T \neq
+            y\)</font> a.s.; but <font color="#620000">\(\mathbb{E} \Pi^y_t = p_T (y) >
+            0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Mass one:</strong> <font color="#620000">\(y \mapsto
+            \Pi^y_t\)</font> is a probability density for every <font color="#620000">\(t
+            < T\)</font>, so <font color="#620000">\((\Pi^y)_y\)</font> is a
+            measure-valued observable, although each <font color="#620000">\(\Pi^y_t\)</font>
+            tends to zero.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong><font color="#620000">\(\delta (B_T - y)\)</font> is not a random
+          variable, but it is an observable:</strong> the family of its
+          conditional densities. Its derivatives <font color="#620000">\(\partial_y^k
+          \Pi^y\)</font> are observables too.
+        </p>
+      </div>
       <p>
-        The heat semigroup gives <font color="#620000">\(\mathbb{E}_s \Pi_t^y =
-        \Pi_s^y\)</font>. For bounded test functions,
-      </p>
-      <center>
-        \(\displaystyle \int_{\mathbb{R}} g (y) \Pi_t^y \hspace{0.17em}
-        \mathrm{d} y =\mathbb{E}_t g
-(B_T) .\)
-      </center>
-      <p>
-        At a fixed <font color="#620000">\(y\)</font>, <font color="#620000">\(\Pi_t^y
-        \rightarrow 0\)</font> almost surely, but <font color="#620000">\(\mathbb{E}
-        \Pi_t^y = p_T (y) > 0\)</font>.
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <strong><font color="#620000">\(\delta (B_T - y)\)</font> is represented by its
-        conditional densities.</strong>
-      </p>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">Here high resolution means <font color="#620000">\(t
-        \uparrow T\)</font>; one may reparametrise by <font color="#620000">\(a = (T -
-        t)^{- 1}\)</font>. Works for Markov processes.</font></font>
+        <font style="font-size: 84.1%"><font color="#707070">High resolution means <font color="#620000">\(t
+        \uparrow T\)</font>; reparametrise by <font color="#620000">\((T - t)^{-
+        1}\)</font> to get <font color="#620000">\([T^{- 1}, \infty)\)</font>. The same
+        works for any Markov process with a transition density.</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1124,80 +1163,99 @@ e_n\)</font>:
       <div class="slide-title">
         Brownian deltas at different targets
       </div>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
       <p>
-
-      </p>
-      <p>
-        For <font color="#620000">\(y \neq z\)</font>, the exact product formula is
+        For <font color="#620000">\(y \neq z\)</font>, <font color="#620000">\(t < T\)</font>,
+        <font color="#620000">\(m = \frac{y + z}{2}\)</font> and <font color="#620000">\(c_s =
+        (4 \pi s)^{- 1 / 2}\)</font>, the product is exact:
       </p>
       <center>
-        \(\displaystyle p_{\varepsilon} (B - y) p_{\varepsilon} (B - z) =
-        c_{\varepsilon} e^{- (y -
-z)^2 / (4 \varepsilon)} p_{\varepsilon / 2}
-        (B - \frac{y + z}{2}) .\)
+        \(\displaystyle \Pi^y_t \Pi^z_t = c_{T - t} \mathrm{e}^{- (y - z)^2 /
+        4 (T - t)} p_{(T - t) /
+2} (B_t - m) .\)
       </center>
       <p>
-        Its <font color="#620000">\(L^1\)</font> norm tends to zero as <font color="#620000">\(\varepsilon
-        \downarrow 0\)</font>. Hence
+        <strong>Proof.</strong> Complete the square: <font color="#620000">\((B_t -
+        y)^2 + (B_t - z)^2 = 2 (B_t - m)^2 + \frac{(y - z)^2}{2}\)</font>, and
+        use <font color="#620000">\((2 \pi (T - t))^{- 1} = c_{T - t}  (\pi (T - t))^{-
+        1 / 2}\)</font>.
+      </p>
+      <p>
+        Taking expectations, with <font color="#620000">\(B_t \sim N (0, t)\)</font>:
       </p>
       <center>
-        \(\displaystyle \Pi^y \star \Pi^z = 0 \qquad (y \neq z) .\)
+        \(\displaystyle \mathbb{E} \Pi^y_t \Pi^z_t = c_{T - t} \mathrm{e}^{-
+        (y - z)^2 / 4 (T - t)}
+p_{(T + t) / 2} (m) \longrightarrow 0 \quad (t
+        \uparrow T) .\)
       </center>
       <p>
-        At equal targets, the exponential suppression disappears and the
-        leading coefficient diverges.
+        So the product exists and <font color="#620000">\(\Pi^y \star \Pi^z =
+        0\)</font> for <font color="#620000">\(y \neq z\)</font>. At <font color="#620000">\(y =
+        z\)</font> the exponential suppression disappears:
       </p>
-      <p>
-
-      </p>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">The product depends dramatically on whether
-        the singular supports meet.</font></font>
-      </p>
-      <p>
-
-      </p>
+      <center>
+        \(\displaystyle \mathbb{E} (\Pi^y_t)^2 = c_{T - t} p_{(T + t) / 2} (y)
+        \longrightarrow \infty
+.\)
+      </center>
+      <div class="slide-block">
+        <p>
+          The product depends dramatically on whether the singular supports
+          meet: separated supports multiply to zero, coincident ones call for
+          renormalisation.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Brownian OPE: resolve the delta square
       </div>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
       <p>
-        Put <font color="#620000">\(\varepsilon = T - u\)</font>, fix <font color="#620000">\(t
-        < u\)</font>, and set <font color="#620000">\(c_{\varepsilon} = (4 \pi
-        \varepsilon)^{- 1 / 2}\)</font>. Since
+        Fine resolution <font color="#620000">\(u = T - \varepsilon\)</font>, coarse
+        resolution <font color="#620000">\(s < u\)</font>, <font color="#620000">\(c_{\varepsilon}
+        = (4 \pi \varepsilon)^{- 1 / 2}\)</font>. Since <font color="#620000">\(p_{\varepsilon}
+        (w)^2 = c_{\varepsilon} p_{\varepsilon / 2} (w)\)</font>,
+        Chapman&ndash;Kolmogorov gives the exact identity
       </p>
       <center>
-        \(\displaystyle p_{\varepsilon} (z)^2 = c_{\varepsilon} p_{\varepsilon
-        / 2} (z),\)
+        \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
+        c_{\varepsilon} p_{T - s -
+\varepsilon / 2} (B_s - y) .\)
       </center>
       <p>
-        conditioning on the coarse information gives the exact identity
+        Taylor expand in the time variable, with <font color="#620000">\(\partial_{\tau}
+        p_{\tau} = \frac{1}{2} \partial_y^2 p_{\tau}\)</font>:
       </p>
       <center>
-        \(\displaystyle \mathbb{E}_t [(\Pi_{T - \varepsilon}^y)^2] =
-        c_{\varepsilon} p_{T - t -
-\varepsilon / 2} (B_t - y) .\)
-      </center>
-      <p>
-        Use <font color="#620000">\(\partial_s p_s = \frac{1}{2} \partial_y^2
-        p_s\)</font> to obtain
-      </p>
-      <center>
-        \(\displaystyle \mathbb{E}_t [(\Pi_{T - \varepsilon}^y)^2] =
-        c_{\varepsilon} \Pi_t^y -
+        \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
+        c_{\varepsilon} \Pi^y_s -
 \frac{\varepsilon c_{\varepsilon}}{4}
-        \partial_y^2 \Pi_t^y +
+        \partial_y^2 \Pi^y_s +
 \frac{\varepsilon^2 c_{\varepsilon}}{32}
-        \partial_y^4 \Pi_t^y + O_{L^1, t}
+        \partial_y^4 \Pi^y_s + O_{L^1, s}
 (\varepsilon^{5 / 2}) .\)
       </center>
+      <ul>
+        <li>
+          <p>
+            Singular coefficients (<font color="#620000">\(c_{\varepsilon} \to
+            \infty\)</font>; <font color="#620000">\(\varepsilon c_{\varepsilon},
+            \varepsilon^2 c_{\varepsilon} \to 0\)</font>) times observables
+            <font color="#620000">\(\Pi^y, \partial_y^2 \Pi^y, \ldots\)</font>: an
+            <strong>operator product expansion</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The order of limits matters: fixed coarse resolution <font color="#620000">\(s\)</font>,
+            then <font color="#620000">\(\varepsilon \downarrow 0\)</font>. Without
+            conditioning, <font color="#620000">\(\|(\Pi^y_{T - \varepsilon})^2 -
+            c_{\varepsilon} \Pi^y_{T - \varepsilon}
+\|_{L^1} \asymp
+            \varepsilon^{- 1 / 2}\)</font>.
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
