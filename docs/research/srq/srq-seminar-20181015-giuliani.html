@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -40,8 +47,7 @@
       Recall the geometric setting of our problem:
     </p>
     <div class="center">
-      \(\displaystyle
-      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}\)
+      <img src="srq-seminar-20181015-giuliani-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -7.3356914600551em; height: 14.6713829201102em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       and the expression of the partition function for the interacting model:
@@ -58,36 +64,14 @@ e^{A_e} + V (\psi, A)}\)
       w_y)\). Edges are of four types and
     </p>
     <div class="center">
-      \(\displaystyle K_r = \left\{ \begin{array}{lll}
-  t_1 &amp; \text{for} &amp; r
-      = 1\\
-  i t_2 &amp;  &amp; r = 2\\
-  - t_3 &amp;  &amp; r = 3\\
-  - i t_4 &amp;  &amp; r =
-      4
-\end{array} \right.
-      \qquad
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181015-giuliani-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -3.33192286501377em; height: 6.66384573002755em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       We will specialize to the case \(t_i = 1\) for \(i = 1, 2, 3, 4\) and
       interaction
     </p>
     <div class="center">
-      \(\displaystyle W (M) = \sum_{\text{even faces
-      $f$}}
-\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
-  \hline
-  f\\
-
-      \hline
-\end{array}$}}}
-      +\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
-  f
-\end{array}$}}}
-      \qquad
-      \qquad
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181015-giuliani-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -2.66556473829201em; height: 5.33112947658402em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       (dimer representation of the \(6\)-vertex model).
@@ -180,22 +164,13 @@ k_2) + \omega (k_2 - k_1) .\)
       connected correlation functions)
     </p>
     <div class="center">
-      \(\displaystyle \frac{1}{L^2} \log \frac{Z_{\lambda}}{Z_0} =
-      \frac{1}{L^2} \sum_{x_1, \ldots,
-x_n} \frac{\alpha^n}{n!} \mathcal{E}
-      \left(
-\raisebox{-0.5\height}{\includegraphics[width=4.27244031221304cm,height=1.28915781188508cm]{image-1.pdf}}
-\right)\)
+      <img src="srq-seminar-20181015-giuliani-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0.0285399449035812em; margin-right: 0em; margin-top: -0.03865564738292em; vertical-align: -1.76116804407714em; height: 3.94607162534435em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       Contributions of the form
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-=
-      \int \frac{\mathrm{d} p}{(2 \pi)^2} \left[ \frac{f (p)}{\mu (p)}
-      \right]^n\)
+      <img src="srq-seminar-20181015-giuliani-5.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -2.26565289256198em; height: 4.53130578512397em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       with
@@ -215,7 +190,7 @@ q_2 + 2 k_2 + p_1 - p_2)}}{\mu (k) \mu (q) m (k + q -
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle f (0) = 0. \)</td>
+        <td width="100%" align="center"><a id="eq:cancellation"></a>\(\displaystyle f (0) = 0. \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -236,31 +211,18 @@ q_2 + 2 k_2 + p_1 - p_2)}}{\mu (k) \mu (q) m (k + q -
       Therefore a more precise estimate gives
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\approx
-      \int \frac{\mathrm{d} p}{(2 \pi)^2} (\log p)^n \approx C^n n!\)
+      <img src="srq-seminar-20181015-giuliani-6.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -2.39900826446281em; height: 4.79801652892562em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       so each contribution is finite thanks to the cancellation&nbsp;<span
-      style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span> but the overall sum \(\sum_{n \geqslant
+      style="font-style: normal">(<a href="#eq:cancellation">1</a>)</span> but the overall sum \(\sum_{n \geqslant
       1}\) of these diagrams is still divergent.
     </p>
     <p>
       What we can say is that, by resumming these contributions we get
     </p>
     <div class="center">
-      \(\displaystyle \sum_{n \geqslant 1} \alpha^{2
-      n}
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\approx
-      \sum_n \alpha^{2 n} \int \frac{\mathrm{d} p}{(2 \pi)^2} (C \log p)^n
-      =
-\int \mathrm{d} p \frac{\alpha^2 C \log p}{1 - \alpha^2 \log
-      p}
-\underbrace{\leqslant}_{\text{if $C > 0$!!}} C \alpha^2 \int
-      \mathrm{d} p
-(\log p) \leqslant C' \alpha^2\)
+      <img src="srq-seminar-20181015-giuliani-7.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -2.53229752066116em; height: 5.06459504132231em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       which is finite. And indeed it happens that \(C > 0\) by computations.
@@ -269,11 +231,7 @@ q_2 + 2 k_2 + p_1 - p_2)}}{\mu (k) \mu (q) m (k + q -
       gives a critical exponent
     </p>
     <div class="center">
-      \(\displaystyle g_{\operatorname{int}} (p)
-      =
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\approx
-      \frac{1}{p^{1 + c \lambda^2}}\)
+      <img src="srq-seminar-20181015-giuliani-8.png" style="margin-left: -0.0282093663911846em; margin-bottom: 0em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: -2.13240771349862em; height: 4.26481542699725em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       The logs are a signal that something serious is happening.
@@ -309,7 +267,7 @@ r')}}{((- i + 1) x_1 - (- i - 1) x_2)^2} \right) + (-
           finite by additional cancellations.
         </p></td>
         <td style="width: 50%; padding-right: 0em"><p>
-          \(\raisebox{-0.5\height}{\includegraphics[width=5.95811196379378cm,height=2.97486225895317cm]{image-1.pdf}}\)
+          <img src="srq-seminar-20181015-giuliani-9.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -3.99821487603306em; height: 7.99642975206612em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
         </p></td>
       </tr></tbody>
     </table>
@@ -432,13 +390,7 @@ e^{V^{(0)} (\psi^0 + \psi)} .\)
 \psi))}_{\text{$n$ times}}\)
     </div>
     <div class="center">
-      \(\displaystyle = \sum_{n \geqslant 1} \frac{1}{n!} (- 2 \alpha)^n
-      \sum_{x_1, ., \ldots, x_n}
-\sum_{\omega_1, ., \ldots, \omega_n}
-      \mathcal{E}_0
-      \left(
-\raisebox{-0.5\height}{\includegraphics[width=4.9665404040404cm,height=1.48745572609209cm]{image-1.pdf}}
-\right)\)
+      <img src="srq-seminar-20181015-giuliani-10.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: -0.03865564738292em; vertical-align: -1.99914049586777em; height: 4.41923966942149em" alt="Figure from SRQ seminar – October 15th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       where each propagator arises with \(\omega\) indexes and where each leg

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -191,8 +198,9 @@ e^{i A_{x y}} \phi_y |^2 + \sum_{x \in
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \int_{\mathbb{R}^{\Lambda}} e^{- G
-        (A + \partial \theta)} \mathrm{d}^{\Lambda}
+        <td width="100%" align="center"><a id="eq:fixing"></a>\(\displaystyle
+        \int_{\mathbb{R}^{\Lambda}} e^{- G (A + \partial \theta)}
+        \mathrm{d}^{\Lambda}
 \theta = 1. \)</td>
         <td align="right">(1)</td>
       </tr>
@@ -202,13 +210,7 @@ e^{i A_{x y}} \phi_y |^2 + \sum_{x \in
       \rightarrow 0\) and \(\alpha = 1\) is Feynman.
     </p>
     <div class="center">
-      \(\displaystyle G (A) = \frac{1}{2 \alpha^2}
-      \underbrace{(\partial^{\ast} A, \partial^{\ast}
-A)}_{:= \sum_{x \in
-      \Lambda} (\partial^{\ast} A)_x^2} + \text{const},
-      \qquad
-\quad
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181109-brydges-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: -2.26576308539945em; height: 4.5315261707989em" alt="Figure from SRQ seminar – November 9th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       where \((\partial^{\ast} A)_x = \sum_{y : y \sim x} A_{x y}\)  is the
@@ -218,7 +220,7 @@ A)}_{:= \sum_{x \in
       \partial\).
     </p>
     <p>
-      <span class="underline">Exercise</span>: check&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>.
+      <span class="underline">Exercise</span>: check&nbsp;<span style="font-style: normal">(<a href="#eq:fixing">1</a>)</span>.
 
     </p>
     <p>
@@ -236,12 +238,12 @@ A)}_{:= \sum_{x \in
 (A, \phi) - G (A)} \mathrm{d}^E A
       \mathrm{d}^{\Lambda} \phi .\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(\(d \geqslant 2\))
-      Fix \(\mu\) and \(\mu e / \sqrt{8 \lambda}\). For \(\lambda\)
-      sufficiently small, for observables \(F, G\):</i>
-    </p>
-    <div style="margin-bottom: 1em">
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(\(d \geqslant
+        2\)) Fix \(\mu\) and \(\mu e / \sqrt{8 \lambda}\). For \(\lambda\)
+        sufficiently small, for observables \(F, G\):</i>
+      </p>
       <div class="block-italic"><ol>
         <li>
           <p>
@@ -279,39 +281,40 @@ e^{- m | x |}, \qquad x \in
     <p>
       Set \(e = 1\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">2</span>. </strong><i><a id="th:2"></a></i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \int_{\mathbb{R}^E \times \mathbb{C}^{\Lambda}} e^{- S
-        (A, \phi)} F (A, \phi)
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i><a id="th:2"></a></i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \int_{\mathbb{R}^E \times \mathbb{C}^{\Lambda}} e^{-
+          S (A, \phi)} F (A, \phi)
 \mathrm{d}^E A \mathrm{d}^{\Lambda} \phi\)
-      </div></div>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle = \int_{[- \pi, \pi]^E \times \mathbb{C}^{\Lambda}}
-        \left[ \sum_{v : \partial
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle = \int_{[- \pi, \pi]^E \times \mathbb{C}^{\Lambda}}
+          \left[ \sum_{v : \partial
 v = 0} e^{- \frac{1}{2} \sum_{p \in F}
-        (\partial A_p + v_p)^2} \right] e^{-
-S_{\text{Higgs}} (A, \phi)} F (A,
-        \phi) \mathrm{d}^E A \mathrm{d}^{\Lambda}
+          (\partial A_p + v_p)^2} \right] e^{-
+S_{\text{Higgs}} (A, \phi)} F
+          (A, \phi) \mathrm{d}^E A \mathrm{d}^{\Lambda}
 \phi\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>where \(v \in (2 \pi \mathbb{Z})^F\). (\(v\) is a vortex
-      variable)</i>
-    </p>
+        </div></div>
+      </p>
+      <p>
+        <i>where \(v \in (2 \pi \mathbb{Z})^F\). (\(v\) is a vortex
+        variable)</i>
+      </p>
+    </div>
     <p>
       In \(d = 3\): Given \(v \in (2 \pi \mathbb{Z})^F\) and a
       \(3\)&ndash;cell \(c\), \((\partial v)_c = \sum_{p \in \partial c}
       v_p\).
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181109-brydges-5.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -5.06446280991736em; height: 10.1289256198347em" alt="Figure from SRQ seminar – November 9th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       Therefore \(\partial v = 0\) requires to identify closed loops which

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -224,8 +231,7 @@ x_{i'})) \}_{i, i' = 1, \ldots,
       N}]\)
     </div>
     <div class="center">
-      \(\displaystyle
-      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}\)
+      <img src="srq-seminar-20181017-giuliani-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: 0em; vertical-align: -2.13238567493113em; height: 4.26479338842975em" alt="Figure from SRQ seminar – October 17th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       where \(T\) are spanning trees of the graph of the vertices making the
@@ -339,11 +345,7 @@ g_{\omega}^{(- 1)} (x, y)\)
       represented as
     </p>
     <div class="center">
-      \(\displaystyle W^{(- 2)}_{\ell, \underline{\omega}} (\underline{x}) =
-      \sum_{s \geqslant 1}
-\sum_{s_1, \ldots, s_s \geqslant
-      1}
-\raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181017-giuliani-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -3.99821487603306em; height: 7.99642975206612em" alt="Figure from SRQ seminar – October 17th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       where the hollow dots represent the kernels at the level of \(V^{(0)}\)
@@ -371,11 +373,11 @@ P_{v_{s_{v_0}}}
       \right| - | P_{v_0} |}{2} - (s_{v_0} - 1)}\)
     </div>
     <div class="center">
-      \(\displaystyle \times \prod_{j = 1}^{s_{v_0}} \left[ \left\|
-      g_{\omega}^{(- 1)}
-{\right\|_{L^1}^{s_{v_j} - 1}}  \| g_{\omega}^{(- 1)}
-      \|_{L^{\infty}}^{\frac{4
-s_{v_{s_j}} - | P_{v_j} |}{2} - (s_{v_j} - 1)}
+      \(\displaystyle \times \prod_{j = 1}^{s_{v_0}} \left[ \| g_{\omega}^{(-
+      1)} \|_{L^1}^{s_{v_j}
+- 1} \| g_{\omega}^{(- 1)}
+      \|_{L^{\infty}}^{\frac{4 s_{v_{s_j}} - | P_{v_j}
+|}{2} - (s_{v_j} - 1)}
       (s_{v_j} !) \right]\)
     </div>
     <p>

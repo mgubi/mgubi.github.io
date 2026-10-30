@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -205,12 +212,14 @@ a_6 a_5 a_4) = p_{\operatorname{area} (F)} (h_{\partial F} (g))
       This is the reason to use the heat kernel in the definition of
       \(\mu^{\mathbb{G}}\).
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>There is a unique
-      family of r.v. \((H_{\ell})_{\ell \in L (\Sigma)}\) of \(G\)-valued
-      r.v.s, unique in distribution, which is consistent with the lattice
-      theory and stochastically continuous.</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>There is a unique
+        family of r.v. \((H_{\ell})_{\ell \in L (\Sigma)}\) of \(G\)-valued
+        r.v.s, unique in distribution, which is consistent with the lattice
+        theory and stochastically continuous.</i>
+      </p>
+    </div>
     <p>
       Ilya Chevyrev has a recent preprint where he defines a space of
       distributional connections \(\mathcal{A}\) on which he is able to define
@@ -365,12 +374,12 @@ g_1 \mathrm{d} g_2}{Z_T},\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t}
-        \mathbb{E} [\operatorname{tr} (U_t^2)] =
--\mathbb{E}
-        [\operatorname{tr} (U_t^2)] -\mathbb{E} [\operatorname{tr}
-(U_t)^2] .
-        \)</td>
+        <td width="100%" align="center"><a id="eq:s1"></a>\(\displaystyle
+        \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\operatorname{tr} (U_t^2)]
+        =
+-\mathbb{E} [\operatorname{tr} (U_t^2)] -\mathbb{E}
+        [\operatorname{tr}
+(U_t)^2] . \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -400,17 +409,17 @@ g_1 \mathrm{d} g_2}{Z_T},\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t}
-        \mathbb{E} [\operatorname{tr} (U_t)^2] =
--\mathbb{E}
-        [\operatorname{tr} (U_t)^2] - \frac{1}{N^2}
+        <td width="100%" align="center"><a id="eq:s2"></a>\(\displaystyle
+        \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\operatorname{tr} (U_t)^2]
+        =
+-\mathbb{E} [\operatorname{tr} (U_t)^2] - \frac{1}{N^2}
         \mathbb{E}
 [\operatorname{tr} (U_t^2)] \)</td>
         <td align="right">(2)</td>
       </tr>
     </table>
     <p>
-      and <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span>
+      and <span style="font-style: normal">(<a href="#eq:s1">1</a>)</span>&nbsp;<span style="font-style: normal">(<a href="#eq:s2">2</a>)</span>
       form a system of ODEs which can be solved to give:
     </p>
     <div class="center">
@@ -465,40 +474,44 @@ g_1 \mathrm{d} g_2}{Z_T},\)
       of equations and taking the \(N \rightarrow \infty\) limit one can prove
       the following theorem:
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">4</span>. </strong><i>(Biane 1995)</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \mathbb{E} [\operatorname{tr} (U^n_t)] \xrightarrow[N
-        \rightarrow \infty]{}
-e^{- n t / 2} \sum_{k = 0}^{n - 1} \frac{(-
-        t)^k}{k!} n^{k - 1} \binom{n}{k +
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">4</span>. </strong><i>(Biane 1995)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \mathbb{E} [\operatorname{tr} (U^n_t)]
+          \xrightarrow[N \rightarrow \infty]{}
+e^{- n t / 2} \sum_{k = 0}^{n -
+          1} \frac{(- t)^k}{k!} n^{k - 1} \binom{n}{k +
 1} .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       Another theorem says:
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">5</span>. </strong><i>(Levy) YM holonomy
-      process on \(\mathbb{R}^2\) with group \(U (N)\). For any loop \(\ell
-      \in L (\Sigma)\)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \mathbb{E} [\operatorname{tr} (H_{\ell})]
-        \xrightarrow[N \rightarrow \infty]{}
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">5</span>. </strong><i>(Levy) YM
+        holonomy process on \(\mathbb{R}^2\) with group \(U (N)\). For any
+        loop \(\ell \in L (\Sigma)\)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \mathbb{E} [\operatorname{tr} (H_{\ell})]
+          \xrightarrow[N \rightarrow \infty]{}
 \phi  (\ell) \in [- 1, 1],\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \operatorname{Var} (\operatorname{tr} (H_{\ell})) = O
-        \left( \frac{1}{N^2}
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \operatorname{Var} (\operatorname{tr} (H_{\ell})) =
+          O \left( \frac{1}{N^2}
 \right) .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       <b>Makeenko&ndash;Migdal equation</b>
     </p>
@@ -540,22 +553,14 @@ e^{- n t / 2} \sum_{k = 0}^{n - 1} \frac{(-
       Loops with one intersection point and disjoint areas give
     </p>
     <div class="center">
-      \(\displaystyle \phi
-      \left(
-\raisebox{-0.5\height}{\includegraphics[width=3.9748458612095cm,height=3.96645021645022cm]{image-1.pdf}}
-\right)
-      = e^{- t_1 / 2} e^{- t_2 / 2}\)
+      <img src="srq-seminar-20181003-levy-5.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0.0466556473829201em; margin-right: -0.0112837465564759em; margin-top: -0.03865564738292em; vertical-align: -5.37756473829201em; height: 11.1607493112948em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       A loop with on intersection point and one area inside the other (large
       area \(s\) and small area \(t\)). Call the value of
     </p>
     <div class="center">
-      \(\displaystyle \phi
-      \left(
-\raisebox{-0.5\height}{\includegraphics[width=3.9748458612095cm,height=3.96645021645022cm]{image-1.pdf}}
-\right)
-      = f (s, t) .\)
+      <img src="srq-seminar-20181003-levy-6.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0.0466556473829201em; margin-right: -0.0112837465564724em; margin-top: -0.03865564738292em; vertical-align: -5.37756473829201em; height: 11.1607493112948em" alt="Figure from SRQ seminar – October 3rd, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       Then

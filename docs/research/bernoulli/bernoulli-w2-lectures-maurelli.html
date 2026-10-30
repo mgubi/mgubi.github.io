@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The lectures of Mario Maurelli at the second workshop of the Bernoulli Center Program “New developments and challenges in Stochastic Partial Differential Equations”">
@@ -83,10 +90,10 @@
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle X (t) = c_{\alpha} (t - t_0)^{1 / (1
-        - \alpha)} \mathbb{1}_{t > t_0} v, \qquad
-v \in \mathbb{S}^{d - 1},
-        \qquad \forall t_0 \in [0, \infty] . \)</td>
+        <td width="100%" align="center"><a id="eq:sol-ode"></a>\(\displaystyle X (t) = c_{\alpha} (t -
+        t_0)^{1 / (1 - \alpha)} \mathbb{1}_{t > t_0} v, \qquad
+v \in
+        \mathbb{S}^{d - 1}, \qquad \forall t_0 \in [0, \infty] . \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -106,11 +113,14 @@ v \in \mathbb{S}^{d - 1},
       Flandoli&ndash;Gubinelli&ndash;Priola 2010, Catellier&ndash;Gubinelli
       2016.
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem. </strong><i>(Krylov-R&ouml;ckner) \(b \in L^q_t L^p_x\)
-      \(p, q \in (2, + \infty)\) \(2 / q + d / p < 1\) imples strong existence
-      and pathwise uniqueness for all \(x_0 \in \mathbb{R}^d\).</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Krylov-R&ouml;ckner) \(b \in L^q_t
+        L^p_x\) \(p, q \in (2, + \infty)\) \(2 / q + d / p < 1\) imples strong
+        existence and pathwise uniqueness for all \(x_0 \in
+        \mathbb{R}^d\).</i>
+      </p>
+    </div>
     <p>
       Under the same conditions, there exists also a stochastic flow of
       homeomeorphisms. \((t, x_0) \mapsto X_t^{x_0, \omega}\), i.e. a
@@ -127,7 +137,7 @@ v \in \mathbb{S}^{d - 1},
 \mathrm{d} W_t, \qquad X_0 = 0.\)
     </div>
     <p>
-      Drift contribution is given by&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>,
+      Drift contribution is given by&nbsp;<span style="font-style: normal">(<a href="#eq:sol-ode">1</a>)</span>,
       i.e. \(\mathrm{d} Y_t = | Y_t |^{\alpha} \frac{Y_t}{| Y_t |} \mathrm{d}
       t\) so \(| Y_t | \lesssim t^{1 / (1 - \alpha)}\) while \(| W_t | \approx
       t^{1 / 2}\) so
@@ -257,13 +267,15 @@ t} \mu_0 (\varphi \circ X_t) = \mu_0 ((b
     <p>
       where \(W\) is a \(d\)-dimensional Brownian motion.
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem. </strong><i>(Flandoli&ndash;Gubinelli&ndash;Priola
-      2010) \(b \in L^{\infty}_t (C^{0 +}_{x, \operatorname{bounded}})\),
-      \(\operatorname{div}b \in L^{2 +}_{t, x}\) then there exists strong and
-      pathwise unique transport equation in \(L^{\infty}_{t, x}\) for all
-      \(\theta_0 \in L^{\infty}_x\).</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Flandoli&ndash;Gubinelli&ndash;Priola
+        2010) \(b \in L^{\infty}_t (C^{0 +}_{x, \operatorname{bounded}})\),
+        \(\operatorname{div}b \in L^{2 +}_{t, x}\) then there exists strong
+        and pathwise unique transport equation in \(L^{\infty}_{t, x}\) for
+        all \(\theta_0 \in L^{\infty}_x\).</i>
+      </p>
+    </div>
     <p>
       The strategy of proof uses the diffeomorphic flow of characteristics.
       Uniqueness follows from the relation \(\theta (t, X^x_t) = \theta (0,
@@ -620,11 +632,13 @@ V |^{1 - \alpha}} \mathrm{d} t + (1 - \alpha)
     <p>
       with \(c I = Q (0)\).
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem. </strong><i>(LJ-R) There exists a unique solution
-      adapted to the Brownian filtration in the class \(L^{\infty}_{t, \omega}
-      L_x^2\).</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(LJ-R) There exists a unique solution
+        adapted to the Brownian filtration in the class \(L^{\infty}_{t,
+        \omega} L_x^2\).</i>
+      </p>
+    </div>
     <p>
       The proof goes via Wiener chaos decomposition, proving that the various
       projections are well-posed.
@@ -764,41 +778,46 @@ x = 0.\)
       \theta \circ \mathrm{d} W =
 0, \qquad u = K \ast \theta .\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Existence of
-      \(\dot{H}^{- 1}\) solutions. For \(\alpha \in (0, 1)\) and \(\omega_0
-      \in \dot{H}^{- 1}\) then there exists probabilistically weak solutions
-      \(\theta \in L^{\infty}_t \dot{H}^{- 1}_x \cap C_t (H^{- 4})\)
-      \(\mathbb{P}- a.s\) satisfying in addition</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \theta \in L^2_{t, \omega} (\dot{H}^{- \alpha}_x) .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Existence of
+        \(\dot{H}^{- 1}\) solutions. For \(\alpha \in (0, 1)\) and \(\omega_0
+        \in \dot{H}^{- 1}\) then there exists probabilistically weak solutions
+        \(\theta \in L^{\infty}_t \dot{H}^{- 1}_x \cap C_t (H^{- 4})\)
+        \(\mathbb{P}- a.s\) satisfying in addition</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \theta \in L^2_{t, \omega} (\dot{H}^{- \alpha}_x)
+          .\)
+        </div></div>
+      </p>
+    </div>
     <p>
       There is an anomalous regularisation of the solutions which live for
       almost every time and almost surely in \(\dot{H}^{- \alpha}_x\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Uniqueness in
-      \(L^p\). For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
-        \frac{2}{p} - 1 \right) <
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Coghi-Maurelli 2023+) Uniqueness in
+        \(L^p\). For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
+          \frac{2}{p} - 1 \right) <
 \alpha < \frac{1}{2} \wedge \left( 1 -
-        \frac{1}{p} \right)\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>then there is pathwise uniqueness (and strong existence) in
-      \(L^{\infty}_{t, \omega} (L^p_x \cap L^1_x) \cap L^{\infty}_t
-      L^2_{\omega}
+          \frac{1}{p} \right)\)
+        </div></div>
+      </p>
+      <p>
+        <i>then there is pathwise uniqueness (and strong existence) in
+        \(L^{\infty}_{t, \omega} (L^p_x \cap L^1_x) \cap L^{\infty}_t
+        L^2_{\omega}
 \dot{H}^{- 1}_x \cap L^2_{t, \omega} (\dot{H}^{-
-      \alpha})\).</i>
-    </p>
+        \alpha})\).</i>
+      </p>
+    </div>
     <p>
       <hr> [end of second lecture]
     </p>
@@ -814,10 +833,10 @@ x = 0.\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{d} \theta + u \cdot \nabla
-        \theta + \nabla \theta \circ \mathrm{d} W =
-0, \qquad u = K \ast
-        \theta . \)</td>
+        <td width="100%" align="center"><a id="eq:eu-plus-kr"></a>\(\displaystyle \mathrm{d} \theta + u
+        \cdot \nabla \theta + \nabla \theta \circ \mathrm{d} W =
+0, \qquad u =
+        K \ast \theta . \)</td>
         <td align="right">(2)</td>
       </tr>
     </table>
@@ -875,55 +894,63 @@ x = 0.\)
       \hat{\theta} (n) |
 \mathrm{d} n\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Definition. </strong><i>\(\theta\) is an \(\dot{H}^{- 1}\)
-      solution to the equation&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span>,
-      there exists a \((\mathcal{F}_t)_t\)-progressively measurable \(\theta
-      \in L^{\infty}_t (\dot{H}^{- 1}_x) \cap C_t (H_x^{- 4})\) \(\mathbb{P}-
-      a.s.\) and</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \theta_t = \theta_0 - \int_0^t \underbrace{(K \ast
-        \theta_r) \cdot
-        \nabla
+    <div class="notes-theorem">
+      <p>
+        <strong>Definition. </strong><i>\(\theta\) is an \(\dot{H}^{- 1}\)
+        solution to the equation&nbsp;<span style="font-style: normal">(<a href="#eq:eu-plus-kr">2</a>)</span>,
+        there exists a \((\mathcal{F}_t)_t\)-progressively measurable \(\theta
+        \in L^{\infty}_t (\dot{H}^{- 1}_x) \cap C_t (H_x^{- 4})\)
+        \(\mathbb{P}- a.s.\) and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \theta_t = \theta_0 - \int_0^t \underbrace{(K \ast
+          \theta_r) \cdot
+          \nabla
 \theta_r}_{=\operatorname{curl}\operatorname{div} (u_r
-        u_r^{\mathrm{T}})}
+          u_r^{\mathrm{T}})}
 \mathrm{d} r - \int_0^t \nabla \omega_r \cdot
-        \mathrm{d} W_r + \int_0^t
-\frac{c}{2} \Delta \theta_r \mathrm{d} r.\)
-      </div></div>
-    </p>
+          \mathrm{d} W_r + \int_0^t
+\frac{c}{2} \Delta \theta_r \mathrm{d}
+          r.\)
+        </div></div>
+      </p>
+    </div>
     <p>
       The basic results we would like to discuss are the following about
       existence and uniqueness
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i><a id="th:existence"></a>\((\exists)\)
-      \(\alpha \in (0, 1)\), \(\theta_0 \in \dot{H}^{- 1}\) then \(\exists
-      \theta\) \(\dot{H}^{- 1}\) solution to the equation&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> such that</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \theta \in L^2_{x, t} (\dot{H}^{- \alpha}_x) .\)
-      </div></div>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">2</span>. </strong><i><a id="th:uniqueness"></a>\((!)\)
-      \(\) For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
-        \frac{2}{p} - 1 \right) <
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i><a id="th:existence"></a>\((\exists)\)
+        \(\alpha \in (0, 1)\), \(\theta_0 \in \dot{H}^{- 1}\) then \(\exists
+        \theta\) \(\dot{H}^{- 1}\) solution to the equation&nbsp;<span style="font-style: normal">(<a
+        href="#eq:eu-plus-kr">2</a>)</span> such that</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \theta \in L^2_{x, t} (\dot{H}^{- \alpha}_x) .\)
+        </div></div>
+      </p>
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i><a id="th:uniqueness"></a>\((!)\)
+        \(\) For \(\theta \in L^p \cap L^1 \cap \dot{H}^{- 1}\) and </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \frac{3}{2} < p < \infty, \qquad 0 \vee \left(
+          \frac{2}{p} - 1 \right) <
 \alpha < \frac{1}{2} \wedge \left( 1 -
-        \frac{1}{p} \right)\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>then there exists a unique strong solution in \(L^{\infty}_{t,
-      \omega} (L^p_x \cap L^1_x)\).</i>
-    </p>
+          \frac{1}{p} \right)\)
+        </div></div>
+      </p>
+      <p>
+        <i>then there exists a unique strong solution in \(L^{\infty}_{t,
+        \omega} (L^p_x \cap L^1_x)\).</i>
+      </p>
+    </div>
     <p>
       Galeati&ndash;Luo (2023+) weak uniqueness for log-Euler 2d via
       Girsanov's theorem (a nice paper)
@@ -1187,33 +1214,37 @@ L^1}^2 \| \theta \|_{\dot{H}^{-
       estimates in \(\dot{H}^{1 - \alpha}\) which gives strong compactness in
       \(L^2\) and we can pass to the limit easily in the equation.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Galeati&ndash;Grotto&ndash;Maurelli,
-      2024+) Linear Kraichnan with \(\alpha \in (0, 1)\)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \partial_t \mu +\operatorname{div} (\mu \circ
-        \mathrm{d} W) = 0,\)
-      </div></div>
-    </p>
-    <p>
-      <i>then, for all \(s \in (0, d / 2)\),</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \mu
-        \|_{\dot{H}^{- s}}^2] = -
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Galeati&ndash;Grotto&ndash;Maurelli,
+        2024+) Linear Kraichnan with \(\alpha \in (0, 1)\)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \partial_t \mu +\operatorname{div} (\mu \circ
+          \mathrm{d} W) = 0,\)
+        </div></div>
+      </p>
+      <p>
+        <i>then, for all \(s \in (0, d / 2)\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} t} \mathbb{E} [\| \mu
+          \|_{\dot{H}^{- s}}^2] = -
 C\mathbb{E} [\| \mu \|_{\dot{H}^{- s + 1 -
-        \alpha}}^2] + \text{l.o.t.}\)
-      </div></div>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem. </strong><i>(Jian&ndash;Luo, 2024+ &amp;
-      Bagnara&ndash;Galeati&ndash;M. 2024+) Consider generalized SQG, the
-      strong uniqueness for solutions in \(L^p \cap L^1\) with \(p \geqslant
-      2\).</i>
-    </p>
+          \alpha}}^2] + \text{l.o.t.}\)
+        </div></div>
+      </p>
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Jian&ndash;Luo, 2024+ &amp;
+        Bagnara&ndash;Galeati&ndash;M. 2024+) Consider generalized SQG, the
+        strong uniqueness for solutions in \(L^p \cap L^1\) with \(p \geqslant
+        2\).</i>
+      </p>
+    </div>
     <p>
 
     </p>

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series (actually this particular talk was delivered in the Probability seminar at Cambridge)">
@@ -106,17 +113,19 @@
       \(r \rightarrow 0\) and ask about \(T^{- 1 / 2} X^{\rho, r} (T t)\)?
       Difficulties are recollisions (beyond the BG limit).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>\(d = 3\), \(T (r)
-      \approx r^{- 2 + \varepsilon}\) as \(r \rightarrow 0\), then</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle (t \mapsto T^{- 1 / 2} X^{\rho, r} (T t))
-        \xRightarrow{d} (t \in [0, 1]
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>\(d = 3\), \(T
+        (r) \approx r^{- 2 + \varepsilon}\) as \(r \rightarrow 0\), then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle (t \mapsto T^{- 1 / 2} X^{\rho, r} (T t))
+          \xRightarrow{d} (t \in [0, 1]
 \mapsto W_{\sigma} (t)) .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       The variance \(\sigma^2\) is the same as that obtained with a double
       limit procedure.
@@ -186,10 +195,10 @@ s \approx T^{- 1 / 2} (Tr) \ll 1\)
       anything, and wait for the next opportunity which will come after \(O
       (1)\) time interval, at this point I recouple the speed processes.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <span style="font-style: normal">2</span>. </strong><i></i>
-    </p>
-    <div style="margin-bottom: 1em">
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">2</span>. </strong><i></i>
+      </p>
       <div class="block-italic"><table style="width: 100%">
         <tbody><tr>
           <td style="width: 100%; padding-left: 0em; padding-right: 0em; text-align: center"><p>

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -87,23 +94,25 @@ t)\)
       The random walk has a local time \(L_t (i) = \int_0^t \mathbb{I}_{X_s =
       i} \mathrm{d} s\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(BFS-Dynkin) If \(g
-      : [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) has rapid decay,
-      then</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \int_{(\mathbb{R}^2)^{\Lambda}} \mathrm{d} \varphi
-        e^{- H_{\beta} (\varphi)} g
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(BFS-Dynkin) If
+        \(g : [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) has rapid decay,
+        then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \int_{(\mathbb{R}^2)^{\Lambda}} \mathrm{d} \varphi
+          e^{- H_{\beta} (\varphi)} g
 \left( \frac{1}{2} \varphi^2 \right) x_i
-        x_j = \int_{(\mathbb{R}^2)^{\Lambda}}
+          x_j = \int_{(\mathbb{R}^2)^{\Lambda}}
 \mathrm{d} \varphi e^{-
-        H_{\beta} (\varphi)} \mathbb{E}_i \left[ g \left(
+          H_{\beta} (\varphi)} \mathbb{E}_i \left[ g \left(
 \frac{1}{2}
-        \varphi^2 + L_t \right) \mathbb{I}_{X_t = j} \right] .\)
-      </div></div>
-    </p>
+          \varphi^2 + L_t \right) \mathbb{I}_{X_t = j} \right] .\)
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Remark <span style="font-style: normal">2</span>. </strong>The expectation is
       unnormalized. A more familiar version comes from taking
@@ -196,21 +205,23 @@ i, \frac{1}{2} \varphi^2 \right) \mathrm{d} t =
 \varphi^2} (\mathbb{I}_{X_t = j} g (L_t))
       \mathrm{d} t\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Lemma <span style="font-style: normal">4</span>. </strong><i><a id="lemma:key"></a>\(g :
-      \Lambda \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) with rapid
-      decay. </i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle - \sum_j \int \mathrm{d} \varphi e^{- H_{\beta}
-        (\varphi)} x_i x_j
+    <div class="notes-theorem">
+      <p>
+        <strong>Lemma <span style="font-style: normal">4</span>. </strong><i><a id="lemma:key"></a>\(g :
+        \Lambda \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) with
+        rapid decay. </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle - \sum_j \int \mathrm{d} \varphi e^{- H_{\beta}
+          (\varphi)} x_i x_j
 (\mathcal{L}g) \left( j, \frac{1}{2} \varphi^2
-        \right) = \int \mathrm{d}
+          \right) = \int \mathrm{d}
 \varphi e^{- H_{\beta} (\varphi)} g \left(
-        i, \frac{1}{2} \varphi^2 \right)\)
-      </div></div>
-    </p>
+          i, \frac{1}{2} \varphi^2 \right)\)
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Proof. </strong>Integration by parts. \(T_i = \partial /
       \partial_{x_i}\). Let \([f] := \int_{(\mathbb{R}^2)^{\Lambda}}
@@ -316,43 +327,48 @@ z^2 = - 1 ; z \geqslant 1 \} .\)
     <p>
       So this is the (hyper)hyperboloid with positive \(z\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Definition <span style="font-style: normal">5</span>. </strong><i>(of
-      \(\mathbb{H}^2\) spin model). We proceed like for the GFF by replacing
-      the Euclidean inner product with the Minkowski inner product, i.e.:
-      \(\varphi_i \varphi_j = x_i x_j + y_i y_j - z_i z_j\). We replace the
-      Lebesgue measure with \(\mathrm{d} \varphi_i \rightarrow \frac{1}{z_i}
-      \mathrm{d} \varphi_i\) and \(m^2 \varphi^2 \rightarrow h (z_i - 1)\)
-      with \(h > 0\). Therefore we write</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \langle f (\varphi) \rangle^{\mathbb{H}^2}_{\Lambda,
-        \beta, h} :=
-\int_{(\mathbb{H}^2)^{\Lambda}} e^{- \frac{1}{2} \sum_{i,
-        j} \beta_{i, j} |
-\varphi_i - \varphi_j |^2_{\mathbb{H}^2} - \sum_i h
-        (z_i - 1)} f (\varphi)
-\prod_i \frac{\mathrm{d} \varphi_i}{z_i} .\)
-      </div></div>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">6</span>. </strong><i>(BHS) \(g : \Lambda
-      \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) smooth and
-      bounded</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \langle x_i x_j g (z - 1)
-        \rangle^{\mathbb{H}^2}_{\Lambda, \beta, h} =
+    <div class="notes-theorem">
+      <p>
+        <strong>Definition <span style="font-style: normal">5</span>. </strong><i>(of
+        \(\mathbb{H}^2\) spin model). We proceed like for the GFF by replacing
+        the Euclidean inner product with the Minkowski inner product, i.e.:
+        \(\varphi_i \varphi_j = x_i x_j + y_i y_j - z_i z_j\). We replace the
+        Lebesgue measure with \(\mathrm{d} \varphi_i \rightarrow \frac{1}{z_i}
+        \mathrm{d} \varphi_i\) and \(m^2 \varphi^2 \rightarrow h (z_i - 1)\)
+        with \(h > 0\). Therefore we write</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \langle f (\varphi) \rangle^{\mathbb{H}^2}_{\Lambda,
+          \beta, h} :=
+\int_{(\mathbb{H}^2)^{\Lambda}} e^{- \frac{1}{2}
+          \sum_{i, j} \beta_{i, j} |
+\varphi_i - \varphi_j |^2_{\mathbb{H}^2}
+          - \sum_i h (z_i - 1)} f (\varphi)
+\prod_i \frac{\mathrm{d}
+          \varphi_i}{z_i} .\)
+        </div></div>
+      </p>
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">6</span>. </strong><i>(BHS) \(g :
+        \Lambda \times [0, \infty)^{\Lambda} \rightarrow \mathbb{R}\) smooth
+        and bounded</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \langle x_i x_j g (z - 1)
+          \rangle^{\mathbb{H}^2}_{\Lambda, \beta, h} =
 \left\langle z_i
-        \int_0^{\infty} \mathrm{d} t\mathbb{E}_{i, z - 1}
+          \int_0^{\infty} \mathrm{d} t\mathbb{E}_{i, z - 1}
 [\mathbb{I}_{X_t =
-        j} g (L_t) e^{- h t}] \right\rangle_{\Lambda, \beta,
-h}^{\mathbb{H}^2}
-        .\)
-      </div></div>
-    </p>
+          j} g (L_t) e^{- h t}] \right\rangle_{\Lambda,
+          \beta,
+h}^{\mathbb{H}^2} .\)
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Remark <span style="font-style: normal">7</span>. </strong>There is a
       \(\mathbb{H}^{2|2}\) variant which reads
@@ -372,16 +388,19 @@ e^{- h t}]
     <p>
       An application:
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">8</span>. </strong><i>(BHS) For any
-      \((\beta_{i, j})_{i, j}\) that is translation invariant and finite range
-      on \(\mathbb{Z}^2\). Then the VRJP is recurrent, meaning that</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \mathbb{E}_{0, 0} L_{\infty} (0) = \infty .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">8</span>. </strong><i>(BHS) For any
+        \((\beta_{i, j})_{i, j}\) that is translation invariant and finite
+        range on \(\mathbb{Z}^2\). Then the VRJP is recurrent, meaning
+        that</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \mathbb{E}_{0, 0} L_{\infty} (0) = \infty .\)
+        </div></div>
+      </p>
+    </div>
     <p>
       The proof goes via the Mermin&ndash;Wagner theorem for the
       \(\mathbb{H}^{2|2}\) model by taking \(g = 1\) in the above theorem and

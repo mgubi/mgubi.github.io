@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -79,19 +86,21 @@ f (x))^2 .\)
 .\)
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em">
-      <div style="color: black"><div class="ornament" style="background-color:;border-radius:15px;display:block;">
-        <p style="margin-top: 1em">
-          <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(Yau's
-          inequality)</i>
-        </p>
-        <p style="margin-bottom: 1em">
-          <div class="block-italic"><div class="center">
-            \(\displaystyle H' (t) \leqslant - \int \Gamma \sqrt{f_t}
-            \mathrm{d} \mu_t + \int (L^{\ast}_t
+      <div style="color: #292222"><div class="ornament" style="background-color:;border-radius:15px;display:block;">
+        <div class="notes-theorem">
+          <p>
+            <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(Yau's
+            inequality)</i>
+          </p>
+          <p>
+            <div class="block-italic"><div class="center">
+              \(\displaystyle H' (t) \leqslant - \int \Gamma \sqrt{f_t}
+              \mathrm{d} \mu_t + \int (L^{\ast}_t
 \mathbb{1}- \partial_t \log
-            \psi_t) f_t \mathrm{d} \mu_t .\)
-          </div></div>
-        </p>
+              \psi_t) f_t \mathrm{d} \mu_t .\)
+            </div></div>
+          </p>
+        </div>
       </div></div>
     </div>
     <p>
@@ -124,24 +133,26 @@ f (x))^2 .\)
       &ldquo;observable&rdquo;. We are interested in the behaviour of the
       integral for large \(T\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">2</span>. </strong><i></i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \log \mathbb{E}^{\mu_0} \left[ \exp \left( \int_0^T
-        V_t (x_t) \mathrm{d} t
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i></i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \log \mathbb{E}^{\mu_0} \left[ \exp \left( \int_0^T
+          V_t (x_t) \mathrm{d} t
 \right) \right] \leqslant \int_0^T \sup_f
-        \left[ - \int \Gamma \sqrt{f}
+          \left[ - \int \Gamma \sqrt{f}
 \mathrm{d} \mu_t + \int \left( V_t +
-        \frac{1}{2} (L^{\ast}_t \mathbb{1}-
-\partial_t \log \psi_t) \right) f
-        \mathrm{d} \mu_t \right] \mathrm{d} t,\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>where the supremum is over any density \(f\) for \(\mu_t\). </i>
-    </p>
+          \frac{1}{2} (L^{\ast}_t \mathbb{1}-
+\partial_t \log \psi_t) \right)
+          f \mathrm{d} \mu_t \right] \mathrm{d} t,\)
+        </div></div>
+      </p>
+      <p>
+        <i>where the supremum is over any density \(f\) for \(\mu_t\). </i>
+      </p>
+    </div>
     <p>
       Interesting fact is that the structure of the r.h.s. is similar to the
       structure of Yau's inequality.

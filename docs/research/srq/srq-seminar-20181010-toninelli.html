@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -154,12 +161,12 @@
         </p></td>
       </tr></tbody>
     </table>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>[AIHP '15]
-      \(\)\(\underline{t} = (1, 1, 1, 1)\) and \(| \lambda | \leqslant
-      \lambda_0\) then</i>
-    </p>
-    <div style="margin-bottom: 1em">
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>[AIHP '15]
+        \(\)\(\underline{t} = (1, 1, 1, 1)\) and \(| \lambda | \leqslant
+        \lambda_0\) then</i>
+      </p>
       <div class="block-italic"><ol>
         <li>
           <p>
@@ -230,20 +237,22 @@
       \(\underline{t}\) but recall that \(\nu (0) = 1\) for any
       \(\underline{t}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">3</span>. </strong><i>(J.Stat.Mech.) It
-      holds (analog of Haldane's relation for Luttinger liquids)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \nu (\lambda) = A (\lambda)\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>for any \(| \lambda | \leqslant \lambda_0\). (Proven for
-      \(\underline{t} = (1, 1, 1, 1)\), but work in progress for more general
-      parameters).</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">3</span>. </strong><i>(J.Stat.Mech.) It
+        holds (analog of Haldane's relation for Luttinger liquids)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \nu (\lambda) = A (\lambda)\)
+        </div></div>
+      </p>
+      <p>
+        <i>for any \(| \lambda | \leqslant \lambda_0\). (Proven for
+        \(\underline{t} = (1, 1, 1, 1)\), but work in progress for more
+        general parameters).</i>
+      </p>
+    </div>
     <p>
 
     </p>
@@ -456,50 +465,52 @@ y} \psi^+_x
       \mathrm{D} \psi e^{S_A
 (\psi)}\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Proposition <span style="font-style: normal">4</span>. </strong><i>When \(W (M) =
-      \sum_{f \in \text{even faces}}
-      \left(
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">4</span>. </strong><i>When \(W (M)
+        = \sum_{f \in \text{even faces}}
+        \left(
 \mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
 
-      f
+        f
 \end{array}$}}} +\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
 
-      \hline
+        \hline
   f\\
   \hline
 \end{array}$}}} \right)\) then</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle Z_{\Lambda, \lambda} = \sum_M w (M)
-        e^{\text{\scriptsize{$\lambda \sum_{f \in
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle Z_{\Lambda, \lambda} = \sum_M w (M)
+          e^{\text{\scriptsize{$\lambda \sum_{f \in
 \text{even faces}} \left(
-        \mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
-  f
-\end{array}$}}}
-        +\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
-  \hline
-  f\\
+          \mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
 
-        \hline
-\end{array}$}}} \right)$}}} = \int \mathrm{D} \psi e^{S (\psi)
-        + \alpha
+          f
+\end{array}$}}} +\mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
+
+          \hline
+  f\\
+  \hline
+\end{array}$}}} \right)$}}} = \int \mathrm{D}
+          \psi e^{S (\psi) + \alpha
 \sum_{\gamma} \prod_{e \in \gamma} E_e}\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>where \(\gamma = \begin{array}{|l|}
+        </div></div>
+      </p>
+      <p>
+        <i>where \(\gamma = \begin{array}{|l|}
   f
 \end{array},
-      \begin{array}{l}
+        \begin{array}{l}
   \hline
   f\\
   \hline
-\end{array}\) and \(E_e = K (e)
-      \psi^+_x \psi^-_x\) if \(e = (b_x, w_y)\) and \(\alpha = e^{\lambda} - 1
-      \approx \lambda\). </i>
-    </p>
+\end{array}\) and \(E_e = K
+        (e) \psi^+_x \psi^-_x\) if \(e = (b_x, w_y)\) and \(\alpha =
+        e^{\lambda} - 1 \approx \lambda\). </i>
+      </p>
+    </div>
     <p>
       If we are interested in the generating function of the interacting model
       we replace \(S (\psi) \rightarrow S_A (\psi)\) and \(E_e \rightarrow E_e

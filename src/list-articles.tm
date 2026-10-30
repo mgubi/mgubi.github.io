@@ -12,10 +12,19 @@
 
   <hrule>
 
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|30 Oct 2026>
+
+  <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
+  October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>
+
+  <notes-entry|research/events.tm|Events|I travel around to meet other
+  mathematicians.|30 Oct 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|29 Oct 2026>
+  Stochastic Analysis Trimester Programme.|30 Oct 2026>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|27 Oct 2026>
@@ -33,9 +42,6 @@
     analysis for those who, like me, have struggled with the usual
     presentations of this subject.
   </notes-entry|24 Oct 2026>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|24 Oct 2026>
 
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>
@@ -56,9 +62,6 @@
   literate documents can explain the relationships between programming
   languages, with a Scheme/C++ example and a proposal for the development of
   <TeXmacs>.|21 Oct 2026>
-
-  <notes-entry|research/events.tm|Events|I travel around to meet other
-  mathematicians.|21 Oct 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|21
   Oct 2026>
@@ -168,9 +171,6 @@
   <notes-entry|teaching/lectures-tcc-emqm-tt24.tm|Elements of Mathematical
   Quantum Mechanics|These lectures are delivered in the context of the TCC
   course offer of HT 2024.|26 Jun 2024>
-
-  <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
-  October 17th, 2018|Notes from a talk in the SRQ series.|31 May 2024>
 
   <notes-entry|research/srq/srq-seminar-20180924-chandra.tm|SRQ seminar \U
   September 24th, 2018|Notes from a talk in the SRQ series.|31 May 2024>

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Last week we had a discussion in class about continuous local martingales . My experience is that it is a confusing aspect in learning stochastic calculus. I record here some aspects of that discussion. May 15th 2023.">
@@ -104,10 +111,10 @@ M_t^{\tau_n} \|_{L^1} \rightarrow 0\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle M_t = f (B_{t + 1}) = f (B_1) +
-        \int_0^t \nabla f (B_{s + 1}) \cdot \mathrm{d}
-B_{s + 1}, \qquad
-        \nabla f (x) = - \frac{x}{| x |^3}, \qquad x \neq 0. \)</td>
+        <td width="100%" align="center"><a id="eq:counter"></a>\(\displaystyle M_t = f (B_{t + 1}) = f
+        (B_1) + \int_0^t \nabla f (B_{s + 1}) \cdot \mathrm{d}
+B_{s + 1},
+        \qquad \nabla f (x) = - \frac{x}{| x |^3}, \qquad x \neq 0. \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -227,7 +234,7 @@ B_{s + 1}, \qquad
       \infty]\).
     </p>
     <p>
-      If we go back to the process&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>
+      If we go back to the process&nbsp;<span style="font-style: normal">(<a href="#eq:counter">1</a>)</span>
       we see that
     </p>
     <div class="center">

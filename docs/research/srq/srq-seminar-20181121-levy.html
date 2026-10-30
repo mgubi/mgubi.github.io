@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -175,7 +182,7 @@ w^{- 1} x w) \mathrm{d} w \mathrm{d} w_1 \mathrm{d}
       d^{\mathbb{E}^+} u.\)
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em">
-      <div style="color: black"><div class="ornament" style="background-color:;border-radius:15px;display:block;">
+      <div style="color: #292222"><div class="ornament" style="background-color:;border-radius:15px;display:block;">
         <p>
           \(Z^{\Gamma}_{x_1, \ldots, x_p}\) does not depend on the graph, it
           depends only on \(G\), the area and \(x_1, \ldots, x_p\). So
@@ -194,8 +201,7 @@ w^{- 1} x w) \mathrm{d} w \mathrm{d} w_1 \mathrm{d}
       components and area \(T\), which is homeomorphic to this:
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181121-levy-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       (see Mohar&ndash;Bojassen &ldquo;Curves on surfaces&rdquo; for the
@@ -213,19 +219,13 @@ w^{- 1} x w) \mathrm{d} w \mathrm{d} w_1 \mathrm{d}
       In the simplest case it gives:
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\qquad
-      Z_{T, 0, 1} = \int_G K_T (c x c^{- 1}) \mathrm{d} c = K_T (x)\)
+      <img src="srq-seminar-20181121-levy-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -2.66552066115703em; height: 5.33104132231405em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       so the heat kernel is one of these functions. Next,
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\qquad
-      Z_{T, 0, 0} = K_T (1)\)
+      <img src="srq-seminar-20181121-levy-5.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -2.66552066115703em; height: 5.33104132231405em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       Properties of these functions. (related to surgety of \(2 d\) surfaces)
@@ -273,19 +273,13 @@ w^{- 1} x w) \mathrm{d} w \mathrm{d} w_1 \mathrm{d}
       building blocks, namely: a cap
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\qquad
-      Z_{T, 0, 1} (x)\)
+      <img src="srq-seminar-20181121-levy-6.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -2.66552066115703em; height: 5.33104132231405em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       and pants:
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}
-\qquad
-      Z_{T, 0, 3} (x_1, x_2, x_3)\)
+      <img src="srq-seminar-20181121-levy-7.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -2.66552066115703em; height: 5.33104132231405em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       Let's go back to
@@ -302,26 +296,28 @@ w^{- 1} x w) \mathrm{d} w \mathrm{d} w_1 \mathrm{d}
       Consider \(G = U (N)\) and \(M = S^2\) with \(\langle X, Y \rangle = N^2
       \operatorname{Tr} (X^{\ast}, Y)\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>The limit below exists:</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle F (T) = \lim_{N \rightarrow \infty} \frac{1}{N^2} \log
-        K_T (I_N)\)
-      </div></div>
-    </p>
-    <p>
-      <i>and \(F\) is \(C^2\) on \(\mathbb{R}^{\ast}_+\), is \(C^{\infty}\) on
-      \(\mathbb{R}^{\ast}_+ \backslash \{ \pi^2 \}\) and </i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle F''' (\pi^2 - 0) = - \frac{1}{\pi^6}, \qquad F'''
-        (\pi^2 + 0) = -
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>The limit below exists:</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle F (T) = \lim_{N \rightarrow \infty} \frac{1}{N^2}
+          \log K_T (I_N)\)
+        </div></div>
+      </p>
+      <p>
+        <i>and \(F\) is \(C^2\) on \(\mathbb{R}^{\ast}_+\), is \(C^{\infty}\)
+        on \(\mathbb{R}^{\ast}_+ \backslash \{ \pi^2 \}\) and </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle F''' (\pi^2 - 0) = - \frac{1}{\pi^6}, \qquad F'''
+          (\pi^2 + 0) = -
 \frac{3}{\pi^6} .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       The results is due to Douglas&ndash;Kazakov and the first proof is due
       to Liechty&ndash;Wang (2015) and a subsequent proof is given by
@@ -419,7 +415,7 @@ T}{2}} V (\ell)^2\)
       \(T > \pi^2\)
     </p>
     <p>
-      <img src="srq-seminar-20181121-levy-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
+      <img src="srq-seminar-20181121-levy-8.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from SRQ seminar – November 21th, 2018" decoding="async" loading="lazy">
     </p>
     <p>
 

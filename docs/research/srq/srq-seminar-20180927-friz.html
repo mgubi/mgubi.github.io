@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -170,48 +177,49 @@ f^j_{\beta ; k}
       stochastic differential equations. Truncation at level of
       \(\mathbb{X}^{[\bullet]}\) gives the so-called Milstein scheme.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>Given deterministic
-      objects \(\mathbb{W} := (\mathbb{W}^{\bullet}, \mathbb{W}^{[\bullet]})
-      \in C^{\alpha}
-\times ?\) with \(\alpha \in ?\) where we can think
-      of</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \mathbb{W}^{[\bullet]}_{s, t} = \iint_{s < u < v < t}
-        \mathrm{d} W_v
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>Given
+        deterministic objects \(\mathbb{W} := (\mathbb{W}^{\bullet},
+        \mathbb{W}^{[\bullet]}) \in C^{\alpha}
+\times ?\) with \(\alpha \in
+        ?\) where we can think of</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \mathbb{W}^{[\bullet]}_{s, t} = \iint_{s < u < v <
+          t} \mathrm{d} W_v
 \mathrm{d} W_u\)
-      </div></div>
-    </p>
-    <p>
-      <i>but which are required only to satisfy the natural algebraic
-      properties of iterated integrals wrt to joining adjacent integration
-      regions (Chen's relation) and that are &ldquo;analytically good
-      enough&rdquo;, namely \(| \mathbb{W}^{\bullet}_{s, t} | \lesssim | t - s
-      |^{\alpha}\) and \(| \mathbb{W}^{[\bullet]}_{s, t} | \lesssim | t - s
-      |^{2 \alpha}\) for some \(\alpha \in (1 / 3, 1 / 2)\). </i>
-    </p>
-    <p>
-      <i>Then, there is a robust theory of the differential equation</i>
-    </p>
-    <div style="margin-bottom: 1em">
+        </div></div>
+      </p>
+      <p>
+        <i>but which are required only to satisfy the natural algebraic
+        properties of iterated integrals wrt to joining adjacent integration
+        regions (Chen's relation) and that are &ldquo;analytically good
+        enough&rdquo;, namely \(| \mathbb{W}^{\bullet}_{s, t} | \lesssim | t -
+        s |^{\alpha}\) and \(| \mathbb{W}^{[\bullet]}_{s, t} | \lesssim | t -
+        s |^{2 \alpha}\) for some \(\alpha \in (1 / 3, 1 / 2)\). </i>
+      </p>
+      <p>
+        <i>Then, there is a robust theory of the differential equation</i>
+      </p>
       <div class="block-italic"><table width="100%">
         <tr>
-          <td width="100%" align="center">\(\displaystyle \mathrm{d} Y = f (Y) \mathrm{d} W.
-          \)</td>
+          <td width="100%" align="center"><a id="eq:rde"></a>\(\displaystyle \mathrm{d} Y = f (Y)
+          \mathrm{d} W. \)</td>
           <td align="right">(1)</td>
         </tr>
       </table></div>
     </div>
     <p>
-      This means: there exists a unique solution to&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span> driven by \((\mathbb{W}^{\bullet},
+      This means: there exists a unique solution to&nbsp;<span style="font-style: normal">(<a
+      href="#eq:rde">1</a>)</span> driven by \((\mathbb{W}^{\bullet},
       \mathbb{W}^{[\bullet]})\) such that there is a good local understanding
       of such a solution, namely of any small interval \([s, t]\) we have
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle Y_t - Y_s = f (Y_s)
+        <td width="100%" align="center"><a id="eq:exp"></a>\(\displaystyle Y_t - Y_s = f (Y_s)
         \mathbb{W}^{\bullet}_{s, t} + (f' f) (Y_s)
 \mathbb{W}^{[\bullet]}_{s,
         t} + \underbrace{O (| t - s |^{3 \alpha})}_{\approx
@@ -225,8 +233,9 @@ o (| t - s |),
       Riemann&ndash;Stiljes sums.
     </p>
     <p>
-      Actually we can take&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> as a
-      <i>definition</i> for the rough differential equation&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>. This approach is due to Davie. Then there is a
+      Actually we can take&nbsp;<span style="font-style: normal">(<a href="#eq:exp">2</a>)</span> as a
+      <i>definition</i> for the rough differential equation&nbsp;<span style="font-style: normal">(<a
+      href="#eq:rde">1</a>)</span>. This approach is due to Davie. Then there is a
       corresponding existence and uniqueness theorem.
     </p>
     <p>
@@ -276,22 +285,25 @@ t} + \sum Z_s' \mathbb{W}^{[\bullet]}_{s, t}\)
       \mathcal{D}_{\mathbb{W}}^{2 \alpha}\) to denote that the space depends
       on \(\mathbb{W}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">2</span>. </strong><i>The rough integral
-      construction of controlled paths as defined right now, works. Namely, as
-      limit of modified Riemann sums, the rough integral exists and comes with
-      a good local description:</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle I (Z)_t - I (Z)_s = Z_s \mathbb{W}^{\bullet}_{s, t} +
-        Z'_s
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i>The rough
+        integral construction of controlled paths as defined right now, works.
+        Namely, as limit of modified Riemann sums, the rough integral exists
+        and comes with a good local description:</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle I (Z)_t - I (Z)_s = Z_s \mathbb{W}^{\bullet}_{s, t}
+          + Z'_s
 \mathbb{W}^{[\bullet]}_{s, t} + O (| t - s |^{3 \alpha}) .\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>The integral is continuous wrt. \((Z, Z')\) and \(\mathbb{W}\). </i>
-    </p>
+        </div></div>
+      </p>
+      <p>
+        <i>The integral is continuous wrt. \((Z, Z')\) and \(\mathbb{W}\).
+        </i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong>Remark <span style="font-style: normal">3</span>. </strong>Taking the
       distributional derivative of \(\int \operatorname{Zd}\mathbb{W}\) we

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -66,40 +73,42 @@ S_A (\psi) = - \sum_{\text{edges $e$}} E_e
       with \(E_e = \psi^+_x \psi^-_y \mathcal{K} (e)\) for an edge \(e = (b_x,
       w_y)\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <span style="font-style: normal">1</span>. </strong><i>For the
-      interaction</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle W (M) = \sum_{\text{even faces $f$}}
-        \left(
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">1</span>. </strong><i>For the
+        interaction</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle W (M) = \sum_{\text{even faces $f$}}
+          \left(
 \mathbb{I}_{\text{\scriptsize{$\begin{array}{l}
   \hline
-  f\\
 
-        \hline
+          f\\
+  \hline
 \end{array}$}}}
-        +\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
-  f
-\end{array}$}}}
-        \right)\)
-      </div></div>
-    </p>
-    <p>
-      <i>we have</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle e^{W_{\Lambda, \lambda} (A)} = \int \mathrm{D} \psi
-        e^{S_A (\psi) + \alpha
+          +\mathbb{I}_{\text{\scriptsize{$\begin{array}{|l|}
+
+          f
+\end{array}$}}} \right)\)
+        </div></div>
+      </p>
+      <p>
+        <i>we have</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle e^{W_{\Lambda, \lambda} (A)} = \int \mathrm{D} \psi
+          e^{S_A (\psi) + \alpha
 \sum_{\gamma} \prod_{e \in \gamma} E_e
-        e^{A_e}},\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>where \(\alpha = e^{\lambda} - 1\). </i>
-    </p>
+          e^{A_e}},\)
+        </div></div>
+      </p>
+      <p>
+        <i>where \(\alpha = e^{\lambda} - 1\). </i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Proof. </strong>For simplicity let us fix \(A = \underline{0}\).
 
@@ -279,21 +288,14 @@ V}_{\text{$n$ times}}),\)
       For graphs of the form
     </p>
     <div class="center">
-      \(\displaystyle
-      \text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}
-=
-      | \Lambda | \int \frac{\mathrm{d} p}{(2 \pi)^2} \left[ \frac{1}{\mu
-      (p)}
-\right]^n f (p)^n\)
+      <img src="srq-seminar-20181012-toninelli-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -5.33093112947658em; height: 10.6618622589532em" alt="Figure from SRQ seminar – October 12th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       and \(f (p) \approx 1\) so there are singularities in the denominator as
       \(n\) is not small. Here \(f (p)\) is the contribution from the subgraph
     </p>
     <div class="center">
-      \(\displaystyle f (p)
-      =
-\text{\raisebox{-0.5\height}{\includegraphics[width=14.8741473173291cm,height=8.92447199265381cm]{image-1.pdf}}}\)
+      <img src="srq-seminar-20181012-toninelli-2.png" style="margin-left: -0.141046831955923em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -3.06532231404959em; height: 6.13062258953168em" alt="Figure from SRQ seminar – October 12th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       The idea is to break the propagator in dyadic pieces to localize the
@@ -328,16 +330,18 @@ V}_{\text{$n$ times}}),\)
       and for fixed \(h\) each \(g_+^{(h)} (x)\) decay very fast since they
       are Fourier transforms of nice functions.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <span style="font-style: normal">4</span>. </strong><i>For \(h
-      \leqslant 0\), </i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle | g_+^{(h)} (x) | \leqslant C 2^h e^{- \sqrt{2^h | x
-        |}} .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">4</span>. </strong><i>For \(h
+        \leqslant 0\), </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle | g_+^{(h)} (x) | \leqslant C 2^h e^{- \sqrt{2^h | x
+          |}} .\)
+        </div></div>
+      </p>
+    </div>
     <p>
       <b>Multi&ndash;scale expansion</b>
     </p>

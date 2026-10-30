@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The lectures of Nikolaos Zygouras at the second workshop of the Bernoulli Center Program “New developments and challenges in Stochastic Partial Differential Equations”">
@@ -79,53 +86,59 @@
       \(\displaystyle \beta_{\varepsilon} = \hat{\beta} \sqrt{\frac{2
       \pi}{\log 1 / \varepsilon}}\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Caravenna-Sun-Z '17) For any fixed \(x,
-      t\):</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle u_{\varepsilon} (t, x) \longrightarrow \left\{
-        \begin{array}{lll}
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Caravenna-Sun-Z '17) For any fixed \(x,
+        t\):</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle u_{\varepsilon} (t, x) \longrightarrow \left\{
+          \begin{array}{lll}
   e^{\sigma_{\hat{\beta}} X - \frac{1}{2}
-        \sigma_{\hat{\beta}}^2}, &amp;  &amp;
+          \sigma_{\hat{\beta}}^2}, &amp;  &amp;
   \hat{\beta} < 1\\
   0, &amp;  &amp;
-        \hat{\beta} \geqslant 1
+          \hat{\beta} \geqslant 1
 \end{array} \right.\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>with \(\sigma_{\hat{\beta}} = \log (1 / (1 - \hat{\beta}^2))\) where
-      \(X \sim \mathcal{N} (0, 1)\). </i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Caravenna-Sun-Z '17) For any nice test
-      function \(\phi\)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \sqrt{\frac{\log 1 / \varepsilon}{2 \pi}}
-        \int_{\mathbb{R}^2} (u_{\varepsilon}
-(t, x) - 1) \phi (x) \mathrm{d} x
-        \longrightarrow \int_{\mathbb{R}^2} v (t, x)
-\phi (x) \mathrm{d} x\)
-      </div></div>
-    </p>
-    <p>
-      <i>where</i>
-    </p>
-    <div class="block-italic"><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t v = \frac{1}{2} \Delta v
-        + \sqrt{\frac{1}{1 - \hat{\beta}^2}}
+        </div></div>
+      </p>
+      <p>
+        <i>with \(\sigma_{\hat{\beta}} = \log (1 / (1 - \hat{\beta}^2))\)
+        where \(X \sim \mathcal{N} (0, 1)\). </i>
+      </p>
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Caravenna-Sun-Z '17) For any nice test
+        function \(\phi\)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \sqrt{\frac{\log 1 / \varepsilon}{2 \pi}}
+          \int_{\mathbb{R}^2} (u_{\varepsilon}
+(t, x) - 1) \phi (x) \mathrm{d}
+          x \longrightarrow \int_{\mathbb{R}^2} v (t, x)
+\phi (x) \mathrm{d}
+          x\)
+        </div></div>
+      </p>
+      <p>
+        <i>where</i>
+      </p>
+      <div class="block-italic"><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:EW"></a>\(\displaystyle \partial_t v =
+          \frac{1}{2} \Delta v + \sqrt{\frac{1}{1 -
+          \hat{\beta}^2}}
 \tilde{\zeta} \)</td>
-        <td align="right">(1)</td>
-      </tr>
-    </table></div>
-    <p style="margin-bottom: 1em">
-      <i>for space-time white noise \(\tilde{\zeta}\).</i>
-    </p>
+          <td align="right">(1)</td>
+        </tr>
+      </table></div>
+      <p>
+        <i>for space-time white noise \(\tilde{\zeta}\).</i>
+      </p>
+    </div>
     <p>
       Some other examples.
     </p>
@@ -140,22 +153,25 @@
 \varepsilon}} \zeta_{\varepsilon} -
       c_{\varepsilon}\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(CSZ '18) For all \(\hat{\beta} < 1\),</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \sqrt{\frac{\log 1 / \varepsilon}{2 \pi}}
-        \int_{\mathbb{R}^2} (h_{\varepsilon}
-(t, x) -\mathbb{E}h_{\varepsilon}
-        (t, x)) \phi (x) \mathrm{d} x\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>has same Edward&ndash;Wilkinson limit&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>
-      as above, i.e. \(\longrightarrow \int_{\mathbb{R}^2} v (t, x) \phi (x)
-      \mathrm{d} x\).</i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(CSZ '18) For all \(\hat{\beta} <
+        1\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \sqrt{\frac{\log 1 / \varepsilon}{2 \pi}}
+          \int_{\mathbb{R}^2} (h_{\varepsilon}
+(t, x)
+          -\mathbb{E}h_{\varepsilon} (t, x)) \phi (x) \mathrm{d} x\)
+        </div></div>
+      </p>
+      <p>
+        <i>has same Edward&ndash;Wilkinson limit&nbsp;<span style="font-style: normal">(<a href="#eq:EW">1</a>)</span>
+        as above, i.e. \(\longrightarrow \int_{\mathbb{R}^2} v (t, x) \phi (x)
+        \mathrm{d} x\).</i>
+      </p>
+    </div>
     <p>
       Gu (2018+) proved the case for small \(\hat{\beta}\) and
       Chatterjee&ndash;Dunlap (2018-) (tightness).
@@ -172,23 +188,25 @@
       (\partial_y h_{\varepsilon})^2) +
 \zeta_{\varepsilon}\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Erhard&ndash;Cannizzaro&ndash;Toninelli
-      '21) Edwards&ndash;Wilkinson limit: \(h_{\varepsilon} \rightarrow h\)
-      with</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \partial_t h = \frac{\nu_{\operatorname{eff}}}{2}
-        \Delta h +
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Erhard&ndash;Cannizzaro&ndash;Toninelli
+        '21) Edwards&ndash;Wilkinson limit: \(h_{\varepsilon} \rightarrow h\)
+        with</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \partial_t h = \frac{\nu_{\operatorname{eff}}}{2}
+          \Delta h +
 \sqrt{\nu_{\operatorname{eff}}} \zeta\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>with \(\nu_{\operatorname{eff}} = \sqrt{1 + \frac{2
-      \lambda^2}{\pi}}\) for all \(\lambda > 0\), i.e. there is no phase
-      transition.</i>
-    </p>
+        </div></div>
+      </p>
+      <p>
+        <i>with \(\nu_{\operatorname{eff}} = \sqrt{1 + \frac{2
+        \lambda^2}{\pi}}\) for all \(\lambda > 0\), i.e. there is no phase
+        transition.</i>
+      </p>
+    </div>
     <p>
       See also Erhard&ndash;Cannizzaro&ndash;Sch&ouml;nbauer (2019) and
       Cannizzaro&ndash;Gubinelli&ndash;Toninelli (2023) on Burgers equation.
@@ -203,33 +221,37 @@
       (u_{\varepsilon})
 \zeta_{\varepsilon}\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Dunlap&ndash;Gu '20) If \(\| \sigma
-      \|_{\operatorname{Lip}} < (2 \pi)^{1 / 2}\) then \(u_{\varepsilon}
-      (\varepsilon^{2 - Q}, x) \xrightarrow{d} \Xi (Q)\)
-      pointwise&ndash;fluctuation solving a FBSDE:</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \left\{ \begin{array}{l}
-  \mathrm{d} \Xi (q) = J (Q -
-        q, \Xi (q)) \mathrm{d} B (q)\\
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Dunlap&ndash;Gu '20) If \(\| \sigma
+        \|_{\operatorname{Lip}} < (2 \pi)^{1 / 2}\) then \(u_{\varepsilon}
+        (\varepsilon^{2 - Q}, x) \xrightarrow{d} \Xi (Q)\)
+        pointwise&ndash;fluctuation solving a FBSDE:</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \left\{ \begin{array}{l}
+  \mathrm{d} \Xi (q) = J (Q
+          - q, \Xi (q)) \mathrm{d} B (q)\\
   J (q, b) = \frac{1}{2 \sqrt{\pi}}
-        \sqrt{\mathbb{E} [\sigma^2 (\Xi (q))]}
+          \sqrt{\mathbb{E} [\sigma^2 (\Xi (q))]}
 \end{array} \right.\)
-      </div></div>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(Ran Tao '22) Edwards&ndash;Wilkinson
-      convergence to</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \partial_t u = \frac{1}{2} \Delta u + \sqrt{\mathbb{E}
-        [\sigma (\Xi (2))]}
+        </div></div>
+      </p>
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(Ran Tao '22) Edwards&ndash;Wilkinson
+        convergence to</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \partial_t u = \frac{1}{2} \Delta u +
+          \sqrt{\mathbb{E} [\sigma (\Xi (2))]}
 \zeta .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       <span class="underline">2d Allen&ndash;Cahn critical noise scaling</span>
     </p>
@@ -260,34 +282,37 @@
       <span class="underline">Emergence of strong correlations: the critical 2d
       stochastic heat flow</span>
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(CSZ '22) If</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \beta_{\varepsilon}^2 = \frac{\pi}{| \log \varepsilon
-        |} \left( 1 +
-\frac{\theta}{| \log \varepsilon |} \right)\)
-      </div></div>
-    </p>
-    <p>
-      <i>then</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \int_{\mathbb{R}^2} \phi (x) u_{\varepsilon} (t, x ;
-        \psi) \mathrm{d} x
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(CSZ '22) If</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \beta_{\varepsilon}^2 = \frac{\pi}{| \log
+          \varepsilon |} \left( 1 +
+\frac{\theta}{| \log \varepsilon |}
+          \right)\)
+        </div></div>
+      </p>
+      <p>
+        <i>then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \int_{\mathbb{R}^2} \phi (x) u_{\varepsilon} (t, x ;
+          \psi) \mathrm{d} x
 \longrightarrow \int_{\mathbb{R}^2}
-        \int_{\mathbb{R}^2} \phi (x)
+          \int_{\mathbb{R}^2} \phi (x)
 Z^{\operatorname{SHF}}_{\theta} (t ; x,
-        y) \psi (y) \mathrm{d} x \mathrm{d} y\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>and \(Z^{\operatorname{SHF}}_{\theta}\) is: 1) a log-correlated
-      field; 2) not Gaussian or \(\exp (\operatorname{Gaussian})\); 3) is a
-      measure, singular wrt. Lebesgue; 4) some hints of self-similarity.</i>
-    </p>
+          y) \psi (y) \mathrm{d} x \mathrm{d} y\)
+        </div></div>
+      </p>
+      <p>
+        <i>and \(Z^{\operatorname{SHF}}_{\theta}\) is: 1) a log-correlated
+        field; 2) not Gaussian or \(\exp (\operatorname{Gaussian})\); 3) is a
+        measure, singular wrt. Lebesgue; 4) some hints of self-similarity.</i>
+      </p>
+    </div>
     <p>
 
     </p>
@@ -645,20 +670,22 @@ g_{s_1} (x_1) \xi_{\varepsilon} (s_1, x_1)
 \frac{\theta}{\log N} \right)^k \mathbb{P} (T_1
       + \cdots + T_k \leqslant N)\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Proposition. </strong><i>(Dickman subordinator)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \frac{T_1 + \cdots + T_{s \log N}}{N}
-        \xrightarrow{d}_{N \rightarrow \infty}
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition. </strong><i>(Dickman subordinator)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \frac{T_1 + \cdots + T_{s \log N}}{N}
+          \xrightarrow{d}_{N \rightarrow \infty}
 (Y_s)_{s \geqslant 0}\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>where \(Y\) is a L&eacute;vy process with L&eacute;vy measure \(\nu
-      (\mathrm{d} x) = \frac{\mathbb{1}_{x < 1}}{x}\).</i>
-    </p>
+        </div></div>
+      </p>
+      <p>
+        <i>where \(Y\) is a L&eacute;vy process with L&eacute;vy measure \(\nu
+        (\mathrm{d} x) = \frac{\mathbb{1}_{x < 1}}{x}\).</i>
+      </p>
+    </div>
     <p>
       We do the change of variables \(k = s \log N\) to get
     </p>
@@ -682,11 +709,13 @@ g_{s_1} (x_1) \xi_{\varepsilon} (s_1, x_1)
       tells us that the main contribution comes from terms in the chaos
       expansion of order \(\log N\):
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Corollary. </strong><i>Main contribution to fluctuations of
-      \(Z_N^{\operatorname{crit}}\) comes from chaoses of order \(k = O (\log
-      N)\). </i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary. </strong><i>Main contribution to fluctuations of
+        \(Z_N^{\operatorname{crit}}\) comes from chaoses of order \(k = O
+        (\log N)\). </i>
+      </p>
+    </div>
     <p>
       This is a signal of noise sensitivity: the critical SHF is
       noise-sensitive. The limiting object is independent of the white noise
@@ -722,15 +751,7 @@ t \in (0, 1) .\)
 
     </p>
     <div class="center">
-      \(\displaystyle \mathbb{P}
-      \left(
-\text{\raisebox{-0.5\height}{\includegraphics[width=3.87574609733701cm,height=2.97486225895317cm]{image-1.pdf}}}
-\right)
-      = \frac{1}{\log N} \left\{ \begin{array}{lll}
-  O (1) &amp;  &amp; \hat{\beta} <
-      1\\
-  \log N &amp;  &amp; \hat{\beta} = 1
-\end{array} \right.\)
+      <img src="bernoulli-w2-lectures-zygouras-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: 0em; margin-top: -0.0373553719008273em; vertical-align: -3.99821487603306em; height: 8.44330578512397em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </div>
     <p>
       which shows that we do not need to rescale in order to have a
@@ -807,7 +828,7 @@ t \in (0, 1) .\)
 (\mathrm{d} \alpha_2 + N^{\alpha_1})\)
     </div>
     <p>
-      <img src="bernoulli-w2-lectures-zygouras-2.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img src="bernoulli-w2-lectures-zygouras-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
 
@@ -826,7 +847,7 @@ t \in (0, 1) .\)
       of view:
     </p>
     <p>
-      <img src="bernoulli-w2-lectures-zygouras-3.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img src="bernoulli-w2-lectures-zygouras-4.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -6.6636694214876em; height: 13.3273388429752em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
 
@@ -859,7 +880,7 @@ W (\mathrm{d} \alpha_2) + \int_{\alpha_1 >
       Let's give a general structure:
     </p>
     <p>
-      <img class="image" src="bernoulli-w2-lectures-zygouras-4.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img class="image" src="bernoulli-w2-lectures-zygouras-5.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
       From this general structure, the limit of chaos has an explicit formula
@@ -912,13 +933,13 @@ W (\mathrm{d} \alpha_2) + \int_{\alpha_1 >
       \frac{x}{N^{1 / 2}} \right)\):
     </p>
     <p>
-      <img src="bernoulli-w2-lectures-zygouras-5.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 22.6195482093664em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img src="bernoulli-w2-lectures-zygouras-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 22.6195482093664em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
 
     </p>
     <p>
-      <img class="image" src="bernoulli-w2-lectures-zygouras-6.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img class="image" src="bernoulli-w2-lectures-zygouras-7.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <div class="center">
       \(\displaystyle \frac{1}{N} \sum_x \sum_{\operatorname{boxes}}
@@ -1068,7 +1089,7 @@ q_{n_2 - n'_1} (x_2 - x_1') \Theta^N
       computation of the moments:
     </p>
     <p>
-      <img class="image" src="bernoulli-w2-lectures-zygouras-7.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img class="image" src="bernoulli-w2-lectures-zygouras-8.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
       and this also hints to the fact that the SHF is not a Gaussian
@@ -1105,7 +1126,7 @@ q_{n_2 - n'_1} (x_2 - x_1') \Theta^N
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
-          <img src="bernoulli-w2-lectures-zygouras-8.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -8.52956473829201em; height: 17.059129476584em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+          <img src="bernoulli-w2-lectures-zygouras-9.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -8.52956473829201em; height: 17.059129476584em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
         </p></td>
         <td style="width: 50%; vertical-align: top; padding-right: 0em"><div class="center">
           \(\displaystyle Z^{\beta_N}_N (x) = Z^{\beta_N, A}_N (x) +
@@ -1163,30 +1184,32 @@ A}_N (x)} \approx \frac{Z^{\beta_N, A}_N (x)
       \(\displaystyle u (0, x) = \frac{\lambda}{\sqrt{\log 1 / \varepsilon}}
       \xi_{\varepsilon} (x)\)
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem. </strong><i>(GRZ)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \sqrt{\log 1 / \varepsilon} u_{\varepsilon} (t, x) -
-        \lambda \sigma_{\lambda}
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem. </strong><i>(GRZ)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \sqrt{\log 1 / \varepsilon} u_{\varepsilon} (t, x) -
+          \lambda \sigma_{\lambda}
 P_t \ast \xi (x) \xrightarrow{L^2 (\Omega)}
-        0\)
-      </div></div>
-    </p>
-    <p>
-      <i>where</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \left\{ \begin{array}{lll}
+          0\)
+        </div></div>
+      </p>
+      <p>
+        <i>where</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \left\{ \begin{array}{lll}
   \dot{\sigma} = -
-        \frac{3}{2 \pi} \sigma^3 &amp;  &amp; \lambda > 0,\\
+          \frac{3}{2 \pi} \sigma^3 &amp;  &amp; \lambda > 0,\\
   \sigma (0) = 1. &amp;  &amp;
 
 \end{array} \right.\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       Let's recall Butcher's series
     </p>
@@ -1257,7 +1280,7 @@ P_{t - s} \ast u (t - s, \cdot)^3 (x)
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
-          \(\raisebox{-8.45945410085255e-4\height}{\includegraphics[width=7.44546930342385cm,height=4.96228518955792cm]{image-1.pdf}}\)
+          <img src="bernoulli-w2-lectures-zygouras-10.png" style="margin-left: -0.0112837465564738em; margin-bottom: -0.0112837465564738em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: 0em; height: 13.3386225895317em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
         </p></td>
         <td style="width: 50%; vertical-align: top; padding-right: 0em; vertical-align: middle"><p>
           where the dots are contributions from the initial condition which
@@ -1291,14 +1314,14 @@ P_{t - s} \ast u (t - s, \cdot)^3 (x)
           style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>
         </p></td>
         <td style="width: 50%; vertical-align: middle; padding-right: 0em"><p>
-          \(\raisebox{-7.05059351675893e-4\height}{\includegraphics[width=7.44546930342385cm,height=5.95385674931129cm]{image-1.pdf}}\)
+          <img src="bernoulli-w2-lectures-zygouras-11.png" style="margin-left: -0.0112837465564738em; margin-bottom: -0.0112837465564738em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: 0em; height: 16.0039669421488em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
         </p></td>
       </tr></tbody>
     </table>
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 50%; vertical-align: top; padding-left: 0em"><p>
-          \(\raisebox{-8.45945410085255e-4\height}{\includegraphics[width=7.44546930342385cm,height=4.96228518955792cm]{image-1.pdf}}\)
+          <img src="bernoulli-w2-lectures-zygouras-12.png" style="margin-left: -0.0112837465564738em; margin-bottom: -0.0112837465564738em; margin-right: -0.0112837465564759em; margin-top: 0em; vertical-align: 0em; height: 13.3386225895317em" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
         </p></td>
         <td style="width: 50%; vertical-align: top; padding-right: 0em"><p>
           <span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
@@ -1401,7 +1424,7 @@ P_{t - s} \ast u (t - s, \cdot)^3 (x)
       </li>
     </ul>
     <p>
-      <img class="image" src="bernoulli-w2-lectures-zygouras-9.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
+      <img class="image" src="bernoulli-w2-lectures-zygouras-13.jpg" width="100%" alt="Figure from Zygouras - Critical SPDEs" decoding="async" loading="lazy">
     </p>
     <p>
       <hr>[end of third lecture]

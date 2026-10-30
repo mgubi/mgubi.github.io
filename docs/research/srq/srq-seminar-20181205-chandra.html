@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -291,8 +298,7 @@ B + \underbrace{\mathrm{D}_B
       We want a Markov process on connections such that the following holds
     </p>
     <div class="center">
-      \(\displaystyle
-      \raisebox{-0.5\height}{\includegraphics[width=14.8825429620884cm,height=8.92447199265381cm]{image-1.pdf}}\)
+      <img src="srq-seminar-20181205-chandra-1.png" style="margin-left: -0.0112837465564738em; margin-bottom: 0em; margin-right: -0.0112837465564724em; margin-top: 0em; vertical-align: -7.99638567493113em; height: 15.9927713498623em" alt="Figure from SRQ seminar – December 5th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
       At least locally in time.
@@ -305,7 +311,7 @@ B + \underbrace{\mathrm{D}_B
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \left\{ \begin{array}{l}
+        <td width="100%" align="center"><a id="eq:one"></a>\(\displaystyle \left\{ \begin{array}{l}
 
         \partial_t A_{\varepsilon} = - \mathrm{D}_{A_{\varepsilon}}^{\ast}
 
@@ -328,7 +334,8 @@ B + \underbrace{\mathrm{D}_B
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t B_{\varepsilon} = -
+        <td width="100%" align="center"><a id="eq:two"></a>\(\displaystyle \partial_t
+        B_{\varepsilon} = -
         \mathrm{D}_{B_{\varepsilon}}^{\ast}
 F_{B_{\varepsilon}} -
         \mathrm{D}_{B_{\varepsilon}}
@@ -343,7 +350,8 @@ F_{B_{\varepsilon}} -
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t \tilde{B}_{\varepsilon} =
+        <td width="100%" align="center"><a id="eq:three"></a>\(\displaystyle \partial_t
+        \tilde{B}_{\varepsilon} =
         -
 \mathrm{D}_{\tilde{B}_{\varepsilon}}^{\ast}
         F_{\tilde{B}_{\varepsilon}}
@@ -357,11 +365,11 @@ g_{\varepsilon} (J_{\varepsilon}
       </tr>
     </table>
     <p>
-      By Ito isometry eq.&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">3</span>)</span> is equal
-      in distribution to eq.&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> for
+      By Ito isometry eq.&nbsp;<span style="font-style: normal">(<a href="#eq:three">3</a>)</span> is equal
+      in distribution to eq.&nbsp;<span style="font-style: normal">(<a href="#eq:two">2</a>)</span> for
       \(\varepsilon > 0\). But using the theory of regularity structures we
-      can show that eq.&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> is equal
-      in distribution to eq.&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>
+      can show that eq.&nbsp;<span style="font-style: normal">(<a href="#eq:two">2</a>)</span> is equal
+      in distribution to eq.&nbsp;<span style="font-style: normal">(<a href="#eq:one">1</a>)</span>
       because we can see explicitly the cancellations in \(g_{\varepsilon}
       (J_{\varepsilon} g_{\varepsilon}^{- 1} (\eta))\) as the mollifier is
       removed. This comes from the BPHZ solution theory.

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -136,44 +143,46 @@ the noise} \}] .\)
       \(\mathbb{T}^3\). This bound is independent of the initial conditions on
       the solution.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>Assume that
-      \(\varphi\) solves (see Remark&nbsp;<a href="#rem:sol">2</a> below)</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle (\partial_t - \Delta) \varphi = - (\varphi^3 - 3 C_1
-        \varphi + 9 C_2 \varphi)
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>Assume that
+        \(\varphi\) solves (see Remark&nbsp;<a href="#rem:sol">2</a> below)</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle (\partial_t - \Delta) \varphi = - (\varphi^3 - 3 C_1
+          \varphi + 9 C_2 \varphi)
 + \xi\)
-      </div></div>
-    </p>
-    <p>
-      <i>on \(P_0 = (0, 1) \times \{ x : | x | < 1 \}\). No assumptions on
-      boundary conditions on this open set. Let  \(\varphi = X + v\) where
-      \(X\) solves \(\)\((\partial_t - \Delta) X = \xi\) in \(P_0\) with
-      Dirichlet boundary continutions at \(t = 0\) and \(| x | = 1\) and let
-      \(P_R = (R^2, 1) \times \{ x : | x | \leqslant 1 - R \}\) (parabolic
-      scaling), then</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \| v \|_{L^{\infty} (P_R)} \lesssim \max [R^{- 1},
-        \sup_{\tau} \| \tau
+        </div></div>
+      </p>
+      <p>
+        <i>on \(P_0 = (0, 1) \times \{ x : | x | < 1 \}\). No assumptions on
+        boundary conditions on this open set. Let  \(\varphi = X + v\) where
+        \(X\) solves \(\)\((\partial_t - \Delta) X = \xi\) in \(P_0\) with
+        Dirichlet boundary continutions at \(t = 0\) and \(| x | = 1\) and let
+        \(P_R = (R^2, 1) \times \{ x : | x | \leqslant 1 - R \}\) (parabolic
+        scaling), then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \| v \|_{L^{\infty} (P_R)} \lesssim \max [R^{- 1},
+          \sup_{\tau} \| \tau
 \|_{\gamma_{\tau}}^{1 / (\gamma_{\tau} + n
-        (\tau))}]\)
-      </div></div>
-    </p>
-    <p>
-      <i>where \(\tau\) are the trees which appear in the solution theory of
-      \(\varphi^4_3\) (they are six):</i>
-    </p>
-    <p>
-      <i><img src="srq-seminar-20181005-weber-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -11.9944903581267em; height: 23.9889807162534em" alt="Figure from SRQ seminar – October 5st, 2018" decoding="async" loading="lazy"></i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>Where \(n (\tau_1) = 1\),  \(n (\tau_2) = n (\tau_4) = n (\tau_5) =
-      1\), \(n (\tau_3) = n (\tau_6) = 3\).</i>
-    </p>
+          (\tau))}]\)
+        </div></div>
+      </p>
+      <p>
+        <i>where \(\tau\) are the trees which appear in the solution theory of
+        \(\varphi^4_3\) (they are six):</i>
+      </p>
+      <p>
+        <i><img src="srq-seminar-20181005-weber-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: -11.9944903581267em; height: 23.9889807162534em" alt="Figure from SRQ seminar – October 5st, 2018" decoding="async" loading="lazy"></i>
+      </p>
+      <p>
+        <i>Where \(n (\tau_1) = 1\),  \(n (\tau_2) = n (\tau_4) = n (\tau_5) =
+        1\), \(n (\tau_3) = n (\tau_6) = 3\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong>Remark <span style="font-style: normal">2</span>. </strong><a id="rem:sol"></a>As per
       meaning of the equation: think of \(\xi\) with a tiny ultraviolet
@@ -223,17 +232,19 @@ the noise} \}] .\)
       of the various tress one can immediately deduce the following
       integrability for the random field \(v\):
     </p>
-    <p style="margin-top: 1em">
-      <strong>Corollary <span style="font-style: normal">4</span>. </strong><i>We have the
-      following integrability:</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \mathbb{E} [\exp (\| v \|_{P_{1 / 2}}^{1 -
-        \varepsilon})] < \infty, \qquad
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">4</span>. </strong><i>We have the
+        following integrability:</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \mathbb{E} [\exp (\| v \|_{P_{1 / 2}}^{1 -
+          \varepsilon})] < \infty, \qquad
 \forall \varepsilon > 0.\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Remark <span style="font-style: normal">5</span>. </strong>Optimality of
       integrability: in the paper 1808.10401 we developed this technique for
@@ -248,10 +259,10 @@ the noise} \}] .\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E} [\exp (\| u \|_{P_{1 /
-        2}}^{2 + (m - 1) \alpha})] < \infty, \qquad
-\forall \alpha < 1 / 2.
-        \)</td>
+        <td width="100%" align="center"><a id="eq:exp-int-1d"></a>\(\displaystyle \mathbb{E} [\exp (\| u
+        \|_{P_{1 / 2}}^{2 + (m - 1) \alpha})] < \infty, \qquad
+\forall \alpha
+        < 1 / 2. \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -278,7 +289,7 @@ the noise} \}] .\)
     <p style="margin-bottom: 1em">
       (the second comes from the regularity of the Brownian bridge) and
       interpolating one gets an integrability of the \(L^{\infty}\) norm which
-      match the result&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span>.
+      match the result&nbsp;<span style="font-style: normal">(<a href="#eq:exp-int-1d">1</a>)</span>.
     </p>
     <p>
       Ideas of the proof: we observe that
@@ -305,23 +316,27 @@ the noise} \}] .\)
       Assume that for \(T\) fixed the term \((v_T^3 - (v^3)_T)\) is small (due
       to regularity of \(v\)).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">6</span>. </strong><i>Let \(u\) solve</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle (\partial_t - \Delta) u = g, \qquad \text{on $P_0$}\)
-      </div></div>
-    </p>
-    <p>
-      <i>then</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \| u \|_{P_R} \lesssim \max (R^{- 1}, \| g \|_{P_0}^{1
-        / 3}) .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">6</span>. </strong><i>Let \(u\)
+        solve</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle (\partial_t - \Delta) u = g, \qquad \text{on
+          $P_0$}\)
+        </div></div>
+      </p>
+      <p>
+        <i>then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \| u \|_{P_R} \lesssim \max (R^{- 1}, \| g
+          \|_{P_0}^{1 / 3}) .\)
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Proof. </strong>(sketch). We assume that \(g = 0\) makes things
       slightly easier. We let \(\eta\) be a smooth version of the distance of

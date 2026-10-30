@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -65,42 +72,44 @@
       We fix a compact connected Lie group \(G\) with Lie algebra
       \(\mathfrak{g}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Definition <span style="font-style: normal">1</span>. </strong><i>For \(\alpha \in
-      [0, 1]\), let \(\Omega_{\alpha}^1\) denote the closure of bounded
-      measurable \(\mathfrak{g}\)&ndash;valued one&ndash;forms under the
-      norm</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle | A |_{\alpha} := \sup_{| \ell | > 0} \frac{| A (\ell)
-        |}{| \ell |^{\alpha}} +
-\sup_{\ell \| \bar{\ell}} \frac{| A (\ell) - A
-        (\bar{\ell}) |}{d (\ell,
-\bar{\ell})^{\alpha / 2} | \ell |^{\alpha /
-        2}}\)
-      </div></div>
-    </p>
-    <p>
-      <i>where for \(A \in \Omega_{\alpha}^1\) we write </i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle A = \sum_{\mu = 1}^2 A_{\mu} \mathrm{d} x_{\mu},
-        \qquad A_{\mu} : \mathbb{T}^2
+    <div class="notes-theorem">
+      <p>
+        <strong>Definition <span style="font-style: normal">1</span>. </strong><i>For \(\alpha
+        \in [0, 1]\), let \(\Omega_{\alpha}^1\) denote the closure of bounded
+        measurable \(\mathfrak{g}\)&ndash;valued one&ndash;forms under the
+        norm</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle | A |_{\alpha} := \sup_{| \ell | > 0} \frac{| A
+          (\ell) |}{| \ell |^{\alpha}} +
+\sup_{\ell \| \bar{\ell}} \frac{| A
+          (\ell) - A (\bar{\ell}) |}{d (\ell,
+\bar{\ell})^{\alpha / 2} | \ell
+          |^{\alpha / 2}}\)
+        </div></div>
+      </p>
+      <p>
+        <i>where for \(A \in \Omega_{\alpha}^1\) we write </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle A = \sum_{\mu = 1}^2 A_{\mu} \mathrm{d} x_{\mu},
+          \qquad A_{\mu} : \mathbb{T}^2
 \rightarrow \mathfrak{g}\)
-      </div></div>
-    </p>
-    <p>
-      <i>and</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle A (\ell) := \sum_{\mu = 1}^2 \int_0^1 A_{\mu} (x +
-        \lambda t e_{\mu}) \lambda
+        </div></div>
+      </p>
+      <p>
+        <i>and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle A (\ell) := \sum_{\mu = 1}^2 \int_0^1 A_{\mu} (x +
+          \lambda t e_{\mu}) \lambda
 \mathrm{d} t.\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       Note that \(| A (\ell) | \leqslant | A |_{\infty} | \ell |\). Moreover
       \(A (\ell) - A (\bar{\ell})\) is associated to the holonomy of a loop
@@ -133,25 +142,27 @@
       of \(\ell_A\) from the Lie algebra \(\mathfrak{g}\) to the Lie group
       \(G\) by solving an ODE which makes sense here by Young integration.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">3</span>. </strong><i>Suppose \(G\) is
-      either abelian or simply connected. For all \(\alpha \in (1 / 2, 1)\)
-      there exists (and its definitely not unique) a
-      \(\Omega^1_{\alpha}\)&ndash;valued r.v. \(A\) such that for all axis
-      loops \(\gamma_1, \ldots, \gamma_n\), representation \(\varphi : G
-      \rightarrow \operatorname{Mat}_{m \times m}\),</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle (\operatorname{Tr} [\varphi \operatorname{hol} (A,
-        \gamma_1)], \ldots
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">3</span>. </strong><i>Suppose \(G\) is
+        either abelian or simply connected. For all \(\alpha \in (1 / 2, 1)\)
+        there exists (and its definitely not unique) a
+        \(\Omega^1_{\alpha}\)&ndash;valued r.v. \(A\) such that for all axis
+        loops \(\gamma_1, \ldots, \gamma_n\), representation \(\varphi : G
+        \rightarrow \operatorname{Mat}_{m \times m}\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle (\operatorname{Tr} [\varphi \operatorname{hol} (A,
+          \gamma_1)], \ldots
 \operatorname{Tr} [\varphi \operatorname{hol} (A,
-        \gamma_n)])\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>have the same joint distribution as under the YM measure.</i>
-    </p>
+          \gamma_n)])\)
+        </div></div>
+      </p>
+      <p>
+        <i>have the same joint distribution as under the YM measure.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong>Remark <span style="font-style: normal">4</span>. </strong>(motivation)
       \(\Omega^1_{\alpha}\) embeds into \(\mathcal{C}^{\alpha - 1} = B^{\alpha
@@ -246,15 +257,15 @@ r_{i + 1})),\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle | X |_{q \text{-var}} \leqslant C |
-        r |^{\alpha / 2}, \)</td>
+        <td width="100%" align="center"><a id="eq:star"></a>\(\displaystyle | X |_{q \text{-var}}
+        \leqslant C | r |^{\alpha / 2}, \)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle | \log (U (\partial r)) | \leqslant
-        C | r |^{\alpha / 2} \)</td>
+        <td width="100%" align="center"><a id="eq:star-2"></a>\(\displaystyle | \log (U (\partial r)) |
+        \leqslant C | r |^{\alpha / 2} \)</td>
         <td align="right">(2)</td>
       </tr>
     </table>
@@ -275,35 +286,37 @@ X_{t_i} |^q \right]^{1 / q}\)
       \(U\) defines an element of \(\mathfrak{A}^{(N)}\) for all \(N \leqslant
       N_1\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">5</span>. </strong><i><a id="th:landau"></a>(Landau)
-      Suppose there exists \(\alpha \in (2 / 3, 1)\), \(C \geqslant 0\), \(N_0
-      \leqslant N_1\) \(q \in [1, (1 - \alpha)^{- 1})\) such that&nbsp;<span
-      style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span> holds for all \(r \in \Lambda_N\), \(N
-      \in \{ N_0, \ldots, N_1 \}\) and</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle C 2^{- N_0 \alpha} + \max_{(x, y) \in B_{N_0}} | \log
-        U (x, y) | \leqslant a\)
-      </div></div>
-    </p>
-    <p>
-      <i>where \(a\) depends only on \(G\) (and \(a = \infty\) if \(G\) is
-      Abelian). Then for \(\bar{\alpha} < \alpha\), there exists \(K > 0\),
-      not depending on \(N_1\) (!) and \(g \in G^{(N_1)}\) so that, for \(A :=
-      \log U^g\) we have </i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \sup_{\ell \in \chi^{(N_1)}} \frac{| A (\ell) |}{|
-        \ell |^{\bar{\alpha}}} +
-\sup_{\ell \| \bar{\ell}} \frac{| A (\ell) -
-        A (\bar{\ell}) |}{| \ell
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">5</span>. </strong><i><a id="th:landau"></a>(Landau)
+        Suppose there exists \(\alpha \in (2 / 3, 1)\), \(C \geqslant 0\),
+        \(N_0 \leqslant N_1\) \(q \in [1, (1 - \alpha)^{- 1})\) such
+        that&nbsp;<span style="font-style: normal">(<a href="#eq:star">1</a>)</span> holds for all \(r \in
+        \Lambda_N\), \(N \in \{ N_0, \ldots, N_1 \}\) and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle C 2^{- N_0 \alpha} + \max_{(x, y) \in B_{N_0}} |
+          \log U (x, y) | \leqslant a\)
+        </div></div>
+      </p>
+      <p>
+        <i>where \(a\) depends only on \(G\) (and \(a = \infty\) if \(G\) is
+        Abelian). Then for \(\bar{\alpha} < \alpha\), there exists \(K > 0\),
+        not depending on \(N_1\) (!) and \(g \in G^{(N_1)}\) so that, for \(A
+        := \log U^g\) we have </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \sup_{\ell \in \chi^{(N_1)}} \frac{| A (\ell) |}{|
+          \ell |^{\bar{\alpha}}} +
+\sup_{\ell \| \bar{\ell}} \frac{| A (\ell)
+          - A (\bar{\ell}) |}{| \ell
 |^{\bar{\alpha} / 2} d (\ell,
-        \bar{\ell})^{\bar{\alpha} / 2}} \leqslant K.\)
-      </div></div>
-    </p>
+          \bar{\ell})^{\bar{\alpha} / 2}} \leqslant K.\)
+        </div></div>
+      </p>
+    </div>
     <p>
       (here we use a Landau type gauge)
     </p>
@@ -311,18 +324,21 @@ X_{t_i} |^q \right]^{1 / q}\)
       In order to control the large gauge fields we need to use a different
       gauges (an axial type one):
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <span style="font-style: normal">6</span>. </strong><i>(Axial) If
-      eq.&nbsp;\(\textrm{(\hyperref[eq:star-2]{2})}\) holds for all rectanges
-      in \(\mathcal{A}^{(M)}\) and \(G\) is simply connected, then there
-      exists \(K\) not depending on \(M\) and \(g \in G^{(M)}\) such that </i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \max_{(x, y) \in B_M} | \log U^g (x, y) | \leqslant K
-        2^{- M \alpha / 2} .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Lemma <span style="font-style: normal">6</span>. </strong><i>(Axial) If
+        eq.&nbsp;\(\textrm{(\hyperref[eq:star-2]{2})}\) holds for all
+        rectanges in \(\mathcal{A}^{(M)}\) and \(G\) is simply connected, then
+        there exists \(K\) not depending on \(M\) and \(g \in G^{(M)}\) such
+        that </i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \max_{(x, y) \in B_M} | \log U^g (x, y) | \leqslant
+          K 2^{- M \alpha / 2} .\)
+        </div></div>
+      </p>
+    </div>
     <p>
 
     </p>

@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -80,10 +87,12 @@
       \sqrt{2} \mathrm{d} w_t,
 \quad t \geqslant 0.\)
     </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>This SDE defines a
-      reversible Markov process for \(\mu\). </i>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>This SDE defines
+        a reversible Markov process for \(\mu\). </i>
+      </p>
+    </div>
     <p>
       This means that if \(x_0 \sim \mu\) and \(\mu \bot w\) then \((x_t)_{t
       \in [0, 1]}\) has the same law as \((x_{1 - t})_{t \in [0, 1]}\) (the
@@ -293,8 +302,8 @@ w_t, \quad t \geqslant 0.\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E} [\xi (\eta)^2] = \| \eta
-        \|_{L^2 (\mathbb{R}_+ \times
+        <td width="100%" align="center"><a id="eq:cov-xi"></a>\(\displaystyle \mathbb{E} [\xi (\eta)^2]
+        = \| \eta \|_{L^2 (\mathbb{R}_+ \times
 \mathbb{R}^d)}, \qquad \eta \in
         \mathcal{D} (\mathbb{R}_+ \times \mathbb{R}^d)
 . \)</td>
@@ -304,7 +313,7 @@ w_t, \quad t \geqslant 0.\)
     <p>
       Realization: On \(\mathbb{R}_+\) take \((B_t)_{t \geqslant 0}\) be a
       Brownian motion, define \(\xi (\eta) = \int_{\mathbb{R}_+} \eta (t)
-      \mathrm{d} B_t\) and then &nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span>
+      \mathrm{d} B_t\) and then &nbsp;<span style="font-style: normal">(<a href="#eq:cov-xi">2</a>)</span>
       is just Ito<sup class="wide">&macr;</sup> isometry.
     </p>
     <p>
@@ -354,16 +363,18 @@ w_t, \quad t \geqslant 0.\)
     <p>
       so
     </p>
-    <p style="margin-top: 1em">
-      <strong>Corollary <span style="font-style: normal">2</span>. </strong><i>For all \(\alpha,
-      \beta > 0\),</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \alpha^{1 / 2} \beta^{d / 2} \xi_{\alpha, \beta} \sim
-        \xi .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">2</span>. </strong><i>For all
+        \(\alpha, \beta > 0\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \alpha^{1 / 2} \beta^{d / 2} \xi_{\alpha, \beta}
+          \sim \xi .\)
+        </div></div>
+      </p>
+    </div>
     <p>
       Informally
     </p>

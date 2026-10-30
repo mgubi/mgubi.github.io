@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -187,17 +194,19 @@
       respectively and we let \(K_i\) the value of \(K (e)\) for an edge of
       type \(i = 1, 2, 3, 4\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">2</span>. </strong><i></i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \Pi (\{ e_1, \ldots, e_n \} \in M) = \left[ \prod_{j =
-        1}^n K (e_j) \right]
-\det [\mathcal{K}^{- 1} (w_k, b_{\ell})]_{k, \ell
-        = 1, \ldots, n} .\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i></i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \Pi (\{ e_1, \ldots, e_n \} \in M) = \left[ \prod_{j
+          = 1}^n K (e_j) \right]
+\det [\mathcal{K}^{- 1} (w_k, b_{\ell})]_{k,
+          \ell = 1, \ldots, n} .\)
+        </div></div>
+      </p>
+    </div>
     <table style="width: 100%">
       <tbody><tr>
         <td style="width: 50%; padding-left: 0em; vertical-align: top"><p>
@@ -285,47 +294,49 @@
     <p>
       are the derivatives at the poles.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Corollary <span style="font-style: normal">4</span>. </strong><i>(edge-edge
-      correlation) Take \(e_1\) of type \(r_1\) and at \(x\) and \(e_2\) of
-      type \(r_2\) and at \(y\), then</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \Pi (e_1 ; e_2) = \Pi (\{ e_1, e_2 \} \in M) - \Pi (\{
-        e_1 \} \in M) \Pi (\{
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">4</span>. </strong><i>(edge-edge
+        correlation) Take \(e_1\) of type \(r_1\) and at \(x\) and \(e_2\) of
+        type \(r_2\) and at \(y\), then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \Pi (e_1 ; e_2) = \Pi (\{ e_1, e_2 \} \in M) - \Pi
+          (\{ e_1 \} \in M) \Pi (\{
 e_2 \} \in M) =\)
-      </div></div>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \propto \det [(\mathcal{K}^{- 1} (w_m, b_n))_{m, n =
-        1, 2}] - \det
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \propto \det [(\mathcal{K}^{- 1} (w_m, b_n))_{m, n =
+          1, 2}] - \det
 [(\mathcal{K}^{- 1} (w_m, b_n))_{m, n = 1}] \det
-        [(\mathcal{K}^{- 1} (w_m,
+          [(\mathcal{K}^{- 1} (w_m,
 b_n))_{m, n = 2}]\)
-      </div></div>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle = - K (e_1) K (e_2) \mathcal{K}^{- 1} (w_1, b_2)
-        \mathcal{K}^{- 1} (w_2, b_1)\)
-      </div></div>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \cong_{| x - y | \rightarrow \infty} \frac{1}{2 \pi^2}
-        \operatorname{Re}
-\left[ \frac{K_{r_1} K_{r_2}}{\phi_+ (x - y)^2}
-        \right] + \frac{(- 1)^{x_1 +
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle = - K (e_1) K (e_2) \mathcal{K}^{- 1} (w_1, b_2)
+          \mathcal{K}^{- 1} (w_2, b_1)\)
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \cong_{| x - y | \rightarrow \infty} \frac{1}{2
+          \pi^2} \operatorname{Re}
+\left[ \frac{K_{r_1} K_{r_2}}{\phi_+ (x -
+          y)^2} \right] + \frac{(- 1)^{x_1 +
 x_2 - (y_1 + y_2)}}{4 \pi^2}
-        \cfrac{\overbrace{C_{r_1 r_2}}^{K_{r_1}^{\ast}
+          \cfrac{\overbrace{C_{r_1 r_2}}^{K_{r_1}^{\ast}
 K_{r_2} + K_{r_1}
-        K^{\ast}_{r_2}}}{| \phi_+ (x - y) |^2} + O
-        \left(
+          K^{\ast}_{r_2}}}{| \phi_+ (x - y) |^2} + O
+          \left(
 \frac{1}{\operatorname{dist} (x, y)^3} \right) .\)
-      </div></div>
-    </p>
+        </div></div>
+      </p>
+    </div>
     <p>
       Note that \(| \phi_+ (x - y) |\) behaves like a distance between in \(x,
       y\) since \(\alpha_{\omega}, \beta_{\omega}\) are not colinear in the
@@ -449,11 +460,7 @@ K_{r_2} + K_{r_1}
       Model 2:
     </p>
     <div class="center">
-      \(\displaystyle f (M) = f
-      \left(
-\text{\raisebox{-0.5\height}{\includegraphics[width=1.1984126984127cm,height=1.09082710219074cm]{image-1.pdf}}}
-\right)
-      =\mathbb{I}_{e_1, e_2} +\mathbb{I}_{e_3, e_4}\)
+      <img src="srq-seminar-20181008-toninelli-5.png" style="margin-left: -0.141046831955923em; margin-bottom: 0em; margin-right: -0.0112837465564741em; margin-top: -0.03865564738292em; vertical-align: -1.46607162534435em; height: 3.36954269972452em" alt="Figure from SRQ seminar – October 8th, 2018" decoding="async" loading="lazy">
     </div>
     <p>
 

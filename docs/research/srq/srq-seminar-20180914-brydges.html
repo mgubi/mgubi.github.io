@@ -9,6 +9,13 @@
     <link href="/resources/favicon-32x32.png" rel="icon">
     <script src="/resources/highlight.pack.js" defer></script>
     <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Notes from a talk in the SRQ series.">
@@ -94,55 +101,56 @@
       use Cauchy&ndash;Schwartz twice to obtain
     </p>
     <div class="center">
-      \(\displaystyle \begin{array}{rl}
-  &amp; \left| \begin{array}{|l|l|}
-
-      \hline
+      <a id="eq:chessboard0"></a>\(\displaystyle \begin{array}{rl}
+  &amp; \left|
+      \begin{array}{|l|l|}
+    \hline
     A &amp; B\\
     \hline
     D &amp; C\\
-    \hline
-  \end{array}
-      \right| \leqslant\\
-  &amp; \left( \hspace{0.27em} \begin{array}{|l|l|}
 
       \hline
+  \end{array} \right| \leqslant\\
+  &amp; \left( \hspace{0.27em}
+      \begin{array}{|l|l|}
+    \hline
     A &amp; \theta_1 A\\
     \hline
-    \theta_2 A &amp; \theta_1
-      \theta_2 A\\
-    \hline
-  \end{array} \hspace{0.27em} \right)^{1 / 4}
-      \left( \hspace{0.27em}
-  \hspace{0.17em} \begin{array}{|l|l|}
 
-      \hline
+      \theta_2 A &amp; \theta_1 \theta_2 A\\
+    \hline
+  \end{array}
+      \hspace{0.27em} \right)^{1 / 4} \left( \hspace{0.27em}
+  \hspace{0.17em}
+      \begin{array}{|l|l|}
+    \hline
     \theta_1 B &amp; B\\
     \hline
-    \theta_2 \theta_1 B &amp;
-      \theta_2 B\\
-    \hline
-  \end{array} \hspace{0.27em} \right)^{1 / 4}
-      \left( \hspace{0.27em}
-  \begin{array}{|l|l|}
-    \hline
-    \theta_1 D
-      &amp; \theta_1 \theta_2 D\\
-    \hline
-    D &amp; \theta_1 D\\
-    \hline
 
-      \end{array} \hspace{0.27em} \right)^{1 / 4} \left( \hspace{0.27em}
+      \theta_2 \theta_1 B &amp; \theta_2 B\\
+    \hline
+  \end{array}
+      \hspace{0.27em} \right)^{1 / 4} \left( \hspace{0.27em}
 
       \begin{array}{|l|l|}
     \hline
-    \theta_1 \theta_2 C &amp; \theta_2 C\\
+    \theta_1 D &amp; \theta_1 \theta_2 D\\
 
       \hline
-    \theta_1 C &amp; C\\
+    D &amp; \theta_1 D\\
     \hline
   \end{array} \hspace{0.27em}
-      \right)^{1 / 4} . \hspace{3cm}   \text{(1)}
+      \right)^{1 / 4} \left( \hspace{0.27em}
+  \begin{array}{|l|l|}
+
+      \hline
+    \theta_1 \theta_2 C &amp; \theta_2 C\\
+    \hline
+    \theta_1 C
+      &amp; C\\
+    \hline
+  \end{array} \hspace{0.27em} \right)^{1 / 4} .
+      \hspace{3cm}   \text{(1)}
 \end{array}\)
     </div>
     <p>
@@ -172,15 +180,15 @@
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \int_{\mathbb{R}^{\Lambda}} e^{-
-        \frac{1}{2}  (\nabla \phi, \nabla \phi)}
-\prod_{x \in \Lambda} A_x
-        (\phi_x) \mathrm{d} \phi_x \leqslant \prod_{y \in
-\Lambda} \left(
-        \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2} (\nabla \phi,
-\nabla
-        \phi)}  \prod_{x \in \Lambda} A_y (\phi_x) \mathrm{d} \phi_x
-        \right)^{1
+        <td width="100%" align="center"><a id="eq:chessboard"></a>\(\displaystyle
+        \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2}  (\nabla \phi, \nabla
+        \phi)}
+\prod_{x \in \Lambda} A_x (\phi_x) \mathrm{d} \phi_x \leqslant
+        \prod_{y \in
+\Lambda} \left( \int_{\mathbb{R}^{\Lambda}} e^{-
+        \frac{1}{2} (\nabla \phi,
+\nabla \phi)}  \prod_{x \in \Lambda} A_y
+        (\phi_x) \mathrm{d} \phi_x \right)^{1
 / | \Lambda |} \)</td>
         <td align="right">(2)</td>
       </tr>
@@ -188,13 +196,13 @@
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <span style="font-size: 90.0%"><strong>Problem <span style="font-style: normal">1</span>. </strong>(1)
-        Verify this. (2) Does <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> hold if
+        Verify this. (2) Does <span style="font-style: normal">(<a href="#eq:chessboard">2</a>)</span> hold if
         \(N\) is odd and all \(A_x\) are positive?</span>
       </p>
     </div>
     <p>
       The estimate of this example was first proved in [<a href="#bib-FSS76">FSS76</a>].
-      As <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">1</span>)</span> suggests, it can be
+      As <span style="font-style: normal">(<a href="#eq:chessboard0">1</a>)</span> suggests, it can be
       generalised to allow functions that depend on many fields or continuum
       fields in place of the single field functions \(A_x\) . Such
       generalisations were developed in detail in [<a href="#bib-FILS78">FILS78</a>].
@@ -208,7 +216,7 @@
       \(n > 2\). For \(n = 2\) there are other easy proofs. See for example
       [<a href="#bib-KK86">KK86</a>]. Since the proof below relies on O.S. positivity it
       is a very delicate proof: if for example we make the left hand side of
-      <span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span> more ferromagnetic by adding
+      <span style="font-style: normal">(<a href="#eq:chessboard">2</a>)</span> more ferromagnetic by adding
       ferromagnetic next-to-nearest neighbour interaction then the above proof
       no longer applies. Yet one would expect that making the model more
       ferromagnetic would increase only its tendency to correlate the
@@ -217,34 +225,37 @@
       renormalisation group expansion that is not delicate and gives detailed
       information.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(IR bounds) Take
-      \(A \in C_0^{\infty} (\mathbb{R})\). Define</i>
-    </p>
-    <p>
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \langle F \rangle_A := Z_A^{- 1}
-        \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2}
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>(IR bounds) Take
+        \(A \in C_0^{\infty} (\mathbb{R})\). Define</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \langle F \rangle_A := Z_A^{- 1}
+          \int_{\mathbb{R}^{\Lambda}} e^{- \frac{1}{2}
 (\nabla \phi, \nabla
-        \phi)} F (\phi)  \prod_{x \in \Lambda} A (\phi_x)
-\mathrm{d} \phi_x\)
-      </div></div>
-    </p>
-    <p>
-      <i>then for \(g : \Lambda \rightarrow \mathbb{R}\)</i>
-    </p>
-    <div class="block-italic"><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \langle e^{- (\nabla \phi, \nabla
-        g)} \rangle_A \leqslant e^{\frac{1}{2}
-(\nabla g, \nabla g)} .
-        \)</td>
-        <td align="right">(3)</td>
-      </tr>
-    </table></div>
-    <p style="margin-bottom: 1em">
-      <i>(a Gaussian upper bound).</i>
-    </p>
+          \phi)} F (\phi)  \prod_{x \in \Lambda} A (\phi_x)
+\mathrm{d}
+          \phi_x\)
+        </div></div>
+      </p>
+      <p>
+        <i>then for \(g : \Lambda \rightarrow \mathbb{R}\)</i>
+      </p>
+      <div class="block-italic"><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:ir-bound"></a>\(\displaystyle \langle e^{- (\nabla
+          \phi, \nabla g)} \rangle_A \leqslant e^{\frac{1}{2}
+(\nabla g,
+          \nabla g)} . \)</td>
+          <td align="right">(3)</td>
+        </tr>
+      </table></div>
+      <p>
+        <i>(a Gaussian upper bound).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
       <strong>Proof. </strong>Complete the square in \(\langle e^{- (\nabla
       \phi, \nabla g)} \rangle_A\):
@@ -272,7 +283,7 @@ e^{\frac{1}{2}  (\nabla g, \nabla g)}
 g_x) \mathrm{d} \phi_x\)
     </div>
     <p>
-      and use chessboard estimate&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">2</span>)</span>
+      and use chessboard estimate&nbsp;<span style="font-style: normal">(<a href="#eq:chessboard">2</a>)</span>
       to bound the integral as
     </p>
     <div class="center">
@@ -336,18 +347,21 @@ e^{\frac{1}{2}
     <p>
       The IR bound implies:
     </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Corollary <span style="font-style: normal">2</span>. </strong><i>For \(g\)
+        orthonal to constants we have</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \langle \phi (g)^2 \rangle_A \leqslant (g, (-
+          \Delta)^{- 1} g) .\)
+        </div></div>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Corollary <span style="font-style: normal">2</span>. </strong><i>For \(g\)
-      orthonal to constants we have</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \langle \phi (g)^2 \rangle_A \leqslant (g, (-
-        \Delta)^{- 1} g) .\)
-      </div></div>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>Replace \(g\) with \(tg\) in&nbsp;<span style="font-style: normal">(<span class="unavailable-link" title="Referenced material is not currently available">3</span>)</span> and take \(t \rightarrow 0\) to get
+      <strong>Proof. </strong>Replace \(g\) with \(tg\) in&nbsp;<span style="font-style: normal">(<a
+      href="#eq:ir-bound">3</a>)</span> and take \(t \rightarrow 0\) to get
     </p>
     <div class="center">
       \(\displaystyle 1 + t \langle (\nabla \phi, \nabla g) \rangle_A +
@@ -374,19 +388,22 @@ e^{\frac{1}{2}
       <span style="margin-left: 1em"></span>
       \(\Box\)
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <span style="font-style: normal">3</span>. </strong><i><a id="thm:LRO"></a>Let \(d
-      > 2\). The \(\infty\) volume limit of the \(O (n)\) sigma model has long
-      range order (LRO) in the sense that for \(R \gg 1\) (radius) we have</i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <div class="block-italic"><div class="center">
-        \(\displaystyle \liminf_{| \Lambda | \rightarrow \infty} \left\langle
-        \left| \frac{1}{|
-\Lambda |}  \sum_{x \in \Lambda} \phi_x \right|^2
-        \right\rangle_{\Lambda} > 0.\)
-      </div></div>
-    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">3</span>. </strong><i><a id="thm:LRO"></a>Let
+        \(d > 2\). The \(\infty\) volume limit of the \(O (n)\) sigma model
+        has long range order (LRO) in the sense that for \(R \gg 1\) (radius)
+        we have</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle \liminf_{| \Lambda | \rightarrow \infty}
+          \left\langle \left| \frac{1}{|
+\Lambda |}  \sum_{x \in \Lambda}
+          \phi_x \right|^2 \right\rangle_{\Lambda} > 0.\)
+        </div></div>
+      </p>
+    </div>
     <p>
       This bound implies that for \(R\) large no infinite volume limit measure
       can be ergodic under translations because if it were then the spatial
