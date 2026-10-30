@@ -1,0 +1,149 @@
+/* Shared website controls alongside the author's standalone course styles
+   (TeXmacs documents exported with the max-html plugin). */
+@import url('./theme.css');
+/* The website's fonts, declared as in notes-base.css (same files). */
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonts/source/SourceSerifPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source/SourceSansPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source/SourceCodePro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+/* Notes (pages with a TeXmacs title block): the website's typography.
+   The slides keep their own font (cqft-slides.css). */
+:root { --max-text-font: 'Source Serif Pro', serif; }
+body:has(.title-block) { font-size: 17.1px; }
+body:has(.title-block) :is(h1, h2, h3, h4, h5, h6, .title-block, .max-toc-title) {
+  font-family: var(--title-family);
+}
+body:has(.title-block) :is(tt, code, pre) { font-family: 'Source Code Pro', monospace; }
+:root { --title-family: 'Source Sans Pro', sans-serif; }
+.cqft-page-title {
+  position: absolute; width: 1px; height: 1px; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.cqft-course-nav { font: 14px var(--title-family); margin: 0 0 1.5em; }
+.cqft-course-nav a { color: var(--color-link); }
+.cqft-course-nav a::before { content: "\2190\00a0"; }
+/* Keep the course link in view: a bar on top of the page when reading... */
+body:not(.deck, .overview) .cqft-course-nav {
+  position: sticky; top: 0; z-index: 11; padding: .5em 0;
+  background: var(--bg); border-bottom: 1px solid var(--rule);
+}
+html:has(.cqft-course-nav) { scroll-padding-top: 3rem; }
+/* ...and the head of the fixed contents panel of the notes on wide screens. */
+@media (min-width: 961px) {
+  body:has(.max-toc) .cqft-course-nav {
+    position: fixed; top: 0; left: 0; width: var(--toc-w); box-sizing: border-box;
+    margin: 0; padding: .9rem 1.25rem .7rem; background: var(--panel);
+    border-right: 1px solid var(--rule);
+  }
+  body:has(.max-toc) .max-toc { padding-top: 3.2rem; }
+  html:has(.max-toc) { scroll-padding-top: 1rem; }
+}
+body.deck .cqft-course-nav, body.overview .cqft-course-nav {
+  position: fixed; top: 12px; left: 16px; z-index: 20;
+}
+body.deck .theme-control, body.overview .theme-control {
+  position: fixed; top: 8px; right: 12px; z-index: 20;
+}
+/* Fill the explicit-dark gaps in the supplied notes palette. */
+:root[data-theme="dark"] {
+  --panel: #232326; --hover: #33333a;
+  --current: #3b3428; --current-fg: #f0c9a0;
+}
+img { background: var(--image-background); }
+body.deck, body.overview { background: var(--color-surface); color: var(--color-text); }
+body.deck div.toggle, body.overview div.toggle { background: var(--color-background); }
+.slide-title { color: var(--color-title); border-color: var(--color-title); }
+font[color="#800000"], font[color="#620000"] { color: var(--color-title); }
+font[color="#707070"], #max-counter, #max-help { color: var(--color-muted); }
+@media print { .cqft-course-nav { display: none; } }

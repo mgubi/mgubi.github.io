@@ -18,11 +18,12 @@
   <\active*>
     <\src-comment>
       Stylesheets and scripts next to the HTML page: those of max-html (from
-      the plugin's resources folder) and the website's course controls.
+      the plugin's resources folder), then the website's course
+      stylesheet, which also sets the website's fonts.
     </src-comment>
   </active*>
 
-  <assign|html-extra-css|<tuple|max-html.css|/resources/sissa-materials.css>>
+  <assign|html-extra-css|<tuple|max-html.css|/resources/course-materials.css>>
 
   <assign|html-extra-javascript-src|<tuple|max-html.js>>
 
