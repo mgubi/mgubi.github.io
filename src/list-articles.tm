@@ -12,6 +12,11 @@
 
   <hrule>
 
+  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
+  constructive introduction to quantum field theory|Lectures at SISSA,
+  Trieste, 20 October--6 November 2026, as part of the Probability and
+  Stochastic Analysis Trimester Programme.|30 Oct 2026>
+
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
   Oct 2026>
 
@@ -28,11 +33,6 @@
 
   <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
   October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>
-
-  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
-  constructive introduction to quantum field theory|Lectures at SISSA,
-  Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|30 Oct 2026>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|27 Oct 2026>
