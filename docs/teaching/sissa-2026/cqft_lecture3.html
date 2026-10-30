@@ -164,53 +164,61 @@
         href="#auto-14">7</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-15">8</a>
+        <font style="font-size: 92.0%">Observables as equivalence classes. <span style="margin-left: 5mm"></span>
+        <a href="#auto-15">7</a></font>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">Random variables as observables. <span style="margin-left: 5mm"></span> <a
+        href="#auto-16">7</a></font>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>6<span style="margin-left: 1em"></span>Observables of the Gaussian free field and
-        their products</b> <span style="margin-left: 5mm"></span> <a href="#auto-16">9</a>
+        their products</b> <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
       </p>
       <p>
         6.1<span style="margin-left: 1em"></span>Wick powers and exponentials <span style="margin-left: 5mm"></span>
-        <a href="#auto-17">9</a>
+        <a href="#auto-19">9</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Point evaluations. <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a></font>
+        <font style="font-size: 92.0%">Point evaluations. <span style="margin-left: 5mm"></span> <a href="#auto-20">9</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Wick powers. <span style="margin-left: 5mm"></span> <a href="#auto-19">9</a></font>
+        <font style="font-size: 92.0%">Wick powers. <span style="margin-left: 5mm"></span> <a href="#auto-21">9</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Exponentials. <span style="margin-left: 5mm"></span> <a href="#auto-20">9</a></font>
+        <font style="font-size: 92.0%">Exponentials. <span style="margin-left: 5mm"></span> <a href="#auto-22">9</a></font>
       </p>
       <p>
         6.2<span style="margin-left: 1em"></span>Products of observables <span style="margin-left: 5mm"></span> <a
-        href="#auto-21">9</a>
+        href="#auto-23">9</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Brownian deltas. <span style="margin-left: 5mm"></span> <a href="#auto-22">10</a></font>
+        <font style="font-size: 92.0%">Brownian deltas. <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">Products of point evaluations. <span style="margin-left: 5mm"></span> <a
-        href="#auto-23">10</a></font>
+        href="#auto-25">10</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Operator product expansion. <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a></font>
+        <font style="font-size: 92.0%">Operator product expansion. <span style="margin-left: 5mm"></span> <a href="#auto-26">10</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Higher orders. <span style="margin-left: 5mm"></span> <a href="#auto-25">11</a></font>
+        <font style="font-size: 92.0%">Higher orders. <span style="margin-left: 5mm"></span> <a href="#auto-27">11</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Locality and factorisation. <span style="margin-left: 5mm"></span> <a href="#auto-26">11</a></font>
+        <font style="font-size: 92.0%">Locality and factorisation. <span style="margin-left: 5mm"></span> <a href="#auto-28">11</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Outlook. <span style="margin-left: 5mm"></span> <a href="#auto-28">11</a></font>
+        <font style="font-size: 92.0%">Outlook. <span style="margin-left: 5mm"></span> <a href="#auto-30">12</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-29">12</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-31">12</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-30">12</a>
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-32">12</a>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
@@ -961,6 +969,45 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       \(L^1\) contraction. (b) Likewise, \(\|O_s -\mathbb{E}_s N_t \|_{L^1}
       \leq \|O_t - N_t \|_{L^1}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-15"></a>
+      </div>
+      <h5>Observables as equivalence classes.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Call two integrable adapted processes \(N\) and \(N'\)
+        <em>asymptotically equivalent</em>, \(N \sim N'\), if \(\|N_t - N'_t
+        \|_{L^1} \to 0\) as \(t \to \infty\). By Lemma <a href="#lem:uniq">5.4</a>(a)
+        each equivalence class contains at most one martingale, and by Lemma
+        <a href="#lem:uniq">5.4</a>(b) this martingale, when it exists, is recovered from
+        any member \(N\) of the class by looking back: \(O_s = \lim_{t \to
+        \infty} \mathbb{E}_s N_t\) in \(L^1\). So an observable is the same
+        thing as an equivalence class of asymptotically equivalent processes
+        that contains a martingale: every member of the class is a
+        <em>description</em> of the observable, and the martingale is its
+        canonical representative. Proposition <a href="#prop:repair">5.6</a> below finds the
+        martingale from a semimartingale description.
+      </div>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-16"></a>
+      </div>
+      <h5>Random variables as observables.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The map \(Y \mapsto (\mathbb{E}_t Y)_{t \geq 0}\) sends \(L^1
+        (\mathcal{F}_{\infty})\) into the observables. It is injective, since
+        \(\mathbb{E}_t Y \to Y\) in \(L^1\) (L&eacute;vy's upward theorem),
+        and its image is exactly the set of closed observables, i.e. of the
+        uniformly integrable martingales. So the space of observables, a
+        vector space on which \(O \mapsto \langle O \rangle\) is a linear
+        form, generalises \(L^1 (\mathcal{F}_{\infty})\): dropping uniform
+        integrability enlarges it, and the new elements are exactly the
+        observables without a terminal value. For them an almost sure limit,
+        when it exists, does not determine the observable (see Example <a
+        href="#exa:brownian">5.5</a>).
+      </div>
+    </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Example <class style="font-style: normal">5.5</class>. </strong><class style="font-style: normal"><strong>(Brownian
       observables) </strong></class><a id="exa:brownian"></a>Let \(B\) be a standard
@@ -1077,7 +1124,7 @@ t)\)
       counterterms. By Lemma <a href="#lem:uniq">5.4</a>(b), a germ determines the
       observable.
     </p>
-    <h3 id="auto-15">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-17">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">5.1</class>.
@@ -1132,12 +1179,12 @@ t)\)
         of \(\partial_y^k \delta (B_T - y)\).</font>
       </p>
     </div>
-    <h2 id="auto-16"><a id="sec:gff-obs"></a>6<span style="margin-left: 1em"></span>Observables of the Gaussian free
+    <h2 id="auto-18"><a id="sec:gff-obs"></a>6<span style="margin-left: 1em"></span>Observables of the Gaussian free
     field and their products<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-17">6.1<span style="margin-left: 1em"></span>Wick powers and exponentials<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-19">6.1<span style="margin-left: 1em"></span>Wick powers and exponentials<span style="margin-left: 1em"></span></h3>
     <p>
       <div style="display: inline">
-        <a id="auto-18"></a>
+        <a id="auto-20"></a>
       </div>
       <h5>Point evaluations.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1148,7 +1195,7 @@ t)\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-19"></a>
+        <a id="auto-21"></a>
       </div>
       <h5>Wick powers.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1224,7 +1271,7 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-20"></a>
+        <a id="auto-22"></a>
       </div>
       <h5>Exponentials.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1236,7 +1283,7 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
         \mathrm{e}^{\beta_1 \beta_2 Q_t  (x, y)}\).
       </div>
     </p>
-    <h3 id="auto-21"><a id="sec:product"></a>6.2<span style="margin-left: 1em"></span>Products of observables<span
+    <h3 id="auto-23"><a id="sec:product"></a>6.2<span style="margin-left: 1em"></span>Products of observables<span
     style="margin-left: 1em"></span></h3>
     <p>
       The pointwise product of two martingales is not a martingale. The
@@ -1297,7 +1344,7 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-22"></a>
+        <a id="auto-24"></a>
       </div>
       <h5>Brownian deltas.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1315,7 +1362,8 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
     </center>
     <p>
       Since \(B_t \sim N (0, t)\), \(\mathbb{E}p_{(T - t) / 2} (B_t - m) =
-      p_{(T + t) / 2} (m)\), so for \(y \neq z\)
+      p_{(T + t) / 2} (m)\), and, the product being nonnegative, its
+      expectation is its \(L^1\) norm: for \(y \neq z\)
     </p>
     <center>
       \(\displaystyle \| \Pi^y_t \Pi^z_t \|_{L^1} = c_{T - t} \mathrm{e}^{- (y
@@ -1324,12 +1372,16 @@ p_{(T + t) / 2} (m) \longrightarrow 0 \qquad (t
       \uparrow T) :\)
     </center>
     <p>
-      the product exists and \(\Pi^y \star \Pi^z = 0\). At \(y = z\) the
-      exponential suppression is lost, and \(\mathbb{E} (\Pi^y_t)^2 = c_{T -
-      t} p_{(T + t) / 2} (y) \to \infty\): the square does not exist. It can
-      be resolved at a fixed coarser resolution. Let \(u = T - \varepsilon\)
-      be a fine resolution and \(s < u\) a coarser one. Since
-      \(p_{\varepsilon} (w)^2 = c_{\varepsilon} p_{\varepsilon / 2} (w)\),
+      so \(\Pi^y_t \Pi^z_t\) is asymptotically equivalent to the zero
+      observable, and by Definition <a href="#def:product">6.2</a> the product exists and
+      \(\Pi^y \star \Pi^z = 0\). At \(y = z\) the exponential suppression is
+      lost, and \(\mathbb{E} (\Pi^y_t)^2 = c_{T - t} p_{(T + t) / 2} (y) \to
+      \infty\): the square does not exist, since a martingale \(O\) with
+      \(\|O_t - (\Pi^y_t)^2 \|_{L^1} \to 0\) would force \(\mathbb{E}
+      (\Pi^y_t)^2 \to \mathbb{E}O_0 < \infty\). It can be resolved at a fixed
+      coarser resolution. Let \(u = T - \varepsilon\) be a fine resolution and
+      \(s < u\) a coarser one. Since \(p_{\varepsilon} (w)^2 = c_{\varepsilon}
+      p_{\varepsilon / 2} (w)\),
     </p>
     <center>
       \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
@@ -1357,7 +1409,7 @@ c_{\varepsilon}  [p_{\varepsilon / 2} - p_{\varepsilon}] (B_{T -
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-23"></a>
+        <a id="auto-25"></a>
       </div>
       <h5>Products of point evaluations.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1387,7 +1439,7 @@ y),\)</td>
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-24"></a>
+        <a id="auto-26"></a>
       </div>
       <h5>Operator product expansion.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1435,7 +1487,7 @@ y),\)</td>
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-25"></a>
+        <a id="auto-27"></a>
       </div>
       <h5>Higher orders.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1468,7 +1520,7 @@ W (\partial^2 X, \partial^2 X)) .\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-26"></a>
+        <a id="auto-28"></a>
       </div>
       <h5>Locality and factorisation.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1500,7 +1552,7 @@ W (\partial^2 X, \partial^2 X)) .\)
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 6.1. </b><a id="auto-27"></a>Covariation of point observables,
+              <b>Figure 6.1. </b><a id="auto-29"></a>Covariation of point observables,
               heat profile in \(d = 2\). Left: the kernels of \(\dot{Q}_s^{1 /
               2}\) centred at \(x\) (navy) and at \(y\) (teal) at three
               resolutions, with their overlap (gold). The integral of the
@@ -1525,7 +1577,7 @@ W (\partial^2 X, \partial^2 X)) .\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-28"></a>
+        <a id="auto-30"></a>
       </div>
       <h5>Outlook.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1537,7 +1589,7 @@ W (\partial^2 X, \partial^2 X)) .\)
         we met here for the GFF, are the tools to describe it.
       </div>
     </p>
-    <h3 id="auto-29">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-31">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">6.1</class>.
@@ -1608,7 +1660,7 @@ W (\partial^2 X, \partial^2 X)) .\)
         for the heat profile. How does it grow as \(t \to \infty\)?</font>
       </p>
     </div>
-    <h2 id="auto-30">References<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-32">References<span style="margin-left: 1em"></span></h2>
     <dl>
       <p>
         <dt>

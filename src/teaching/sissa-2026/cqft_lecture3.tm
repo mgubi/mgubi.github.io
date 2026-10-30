@@ -69,64 +69,72 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14>>
 
+    <with|par-left|3tab|<with|font-size|0.92|Observables as equivalence
+    classes. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-15>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|Random variables as observables.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-16>>>
+
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15>>
+    <no-break><pageref|auto-17>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Observables
     of the Gaussian free field and their products>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16><vspace|0.5fn>
+    <no-break><pageref|auto-18><vspace|0.5fn>
 
     <with|par-left|1tab|6.1<space|2spc>Wick powers and exponentials
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17>>
+    <no-break><pageref|auto-19>>
 
     <with|par-left|3tab|<with|font-size|0.92|Point evaluations.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18>>>
+    <no-break><pageref|auto-20>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Wick powers.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19>>>
+    <no-break><pageref|auto-21>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Exponentials.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20>>>
+    <no-break><pageref|auto-22>>>
 
     <with|par-left|1tab|6.2<space|2spc>Products of observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21>>
+    <no-break><pageref|auto-23>>
 
     <with|par-left|3tab|<with|font-size|0.92|Brownian deltas.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>>
+    <no-break><pageref|auto-24>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Products of point evaluations.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-23>>>
+    <no-break><pageref|auto-25>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Operator product expansion.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>>
+    <no-break><pageref|auto-26>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Higher orders.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-25>>>
+    <no-break><pageref|auto-27>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Locality and factorisation.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>>
+    <no-break><pageref|auto-28>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Outlook.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28>>>
+    <no-break><pageref|auto-30>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>
+    <no-break><pageref|auto-31>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30><vspace|0.5fn>
+    <no-break><pageref|auto-32><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -691,6 +699,35 @@
     <math|<around|\<\|\|\>|O<rsub|s>-\<bbb-E\><rsub|s>*N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\><around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>>.
   </proof>
 
+  <paragraph|Observables as equivalence classes.> Call two integrable adapted
+  processes <math|N> and <math|N<rprime|'>> <em|asymptotically equivalent>,
+  <math|N\<sim\>N<rprime|'>>, if <math|<around|\<\|\|\>|N<rsub|t>-N<rprime|'><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>
+  as <math|t\<to\>\<infty\>>. By Lemma<nbsp><reference|lem:uniq>(a) each
+  equivalence class contains at most one martingale, and by
+  Lemma<nbsp><reference|lem:uniq>(b) this martingale, when it exists, is
+  recovered from any member <math|N> of the class by looking back:
+  <math|O<rsub|s>=lim<rsub|t\<to\>\<infty\>> \<bbb-E\><rsub|s>*N<rsub|t>> in
+  <math|L<rsup|1>>. So an observable is the same thing as an equivalence
+  class of asymptotically equivalent processes that contains a martingale:
+  every member of the class is a <em|description> of the observable, and the
+  martingale is its canonical representative.
+  Proposition<nbsp><reference|prop:repair> below finds the martingale from a
+  semimartingale description.
+
+  <paragraph|Random variables as observables.> The map
+  <math|Y\<mapsto\><around|(|\<bbb-E\><rsub|t>*Y|)><rsub|t\<geq\>0>> sends
+  <math|L<rsup|1><around|(|\<cal-F\><rsub|\<infty\>>|)>> into the
+  observables. It is injective, since <math|\<bbb-E\><rsub|t>*Y\<to\>Y> in
+  <math|L<rsup|1>> (Lévy's upward theorem), and its image is exactly the set
+  of closed observables, i.e. of the uniformly integrable martingales. So the
+  space of observables, a vector space on which
+  <math|O\<mapsto\><around|\<langle\>|O|\<rangle\>>> is a linear form,
+  generalises <math|L<rsup|1><around|(|\<cal-F\><rsub|\<infty\>>|)>>:
+  dropping uniform integrability enlarges it, and the new elements are
+  exactly the observables without a terminal value. For them an almost sure
+  limit, when it exists, does not determine the observable (see
+  Example<nbsp><reference|exa:brownian>).
+
   <\example>
     <dueto|Brownian observables><label|exa:brownian>Let <math|B> be a
     standard Brownian motion and <math|<around|(|\<cal-F\><rsub|t>|)>> its
@@ -969,18 +1006,24 @@
 
   Since <math|B<rsub|t>\<sim\>N<around|(|0,t|)>>,
   <math|\<bbb-E\>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-m|)>=p<rsub|<around|(|T+t|)>/2><around|(|m|)>>,
-  so for <math|y\<neq\>z>
+  and, the product being nonnegative, its expectation is its <math|L<rsup|1>>
+  norm: for <math|y\<neq\>z>
 
   <\equation*>
     <around|\<\|\|\>|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T+t|)>/2><around|(|m|)>\<longrightarrow\>0<space|2em><around|(|t\<uparrow\>T|)>:
   </equation*>
 
-  the product exists and <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0>. At
-  <math|y=z> the exponential suppression is lost, and
-  <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<to\>\<infty\>>:
-  the square does not exist. It can be resolved at a fixed coarser
-  resolution. Let <math|u=T-\<varepsilon\>> be a fine resolution and
-  <math|s\<less\>u> a coarser one. Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
+  so <math|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>> is asymptotically
+  equivalent to the zero observable, and by
+  Definition<nbsp><reference|def:product> the product exists and
+  <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0>. At <math|y=z> the
+  exponential suppression is lost, and <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<to\>\<infty\>>:
+  the square does not exist, since a martingale <math|O> with
+  <math|<around|\<\|\|\>|O<rsub|t>-<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>
+  would force <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>\<to\>\<bbb-E\>*O<rsub|0>\<less\>\<infty\>>.
+  It can be resolved at a fixed coarser resolution. Let
+  <math|u=T-\<varepsilon\>> be a fine resolution and <math|s\<less\>u> a
+  coarser one. Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
 
   <\equation*>
     \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*p<rsub|T-s-\<varepsilon\>/2><around|(|B<rsub|s>-y|)>=c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|s>-<frac|\<varepsilon\>*c<rsub|\<varepsilon\>>|4>*\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y><rsub|s>+<frac|\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>|32>*\<partial\><rsub|y><rsup|4>*\<Pi\><rsup|y><rsub|s>+O<rsub|L<rsup|1>><around|(|\<varepsilon\><rsup|5/2>|)>,
@@ -1296,24 +1339,26 @@
     <associate|auto-12|<tuple|5.1|6>>
     <associate|auto-13|<tuple|5.1|7>>
     <associate|auto-14|<tuple|5.2|7>>
-    <associate|auto-15|<tuple|5.7|8>>
-    <associate|auto-16|<tuple|6|9>>
-    <associate|auto-17|<tuple|6.1|9>>
-    <associate|auto-18|<tuple|1|9>>
-    <associate|auto-19|<tuple|2|9>>
+    <associate|auto-15|<tuple|1|7>>
+    <associate|auto-16|<tuple|2|7>>
+    <associate|auto-17|<tuple|5.7|8>>
+    <associate|auto-18|<tuple|6|9>>
+    <associate|auto-19|<tuple|6.1|9>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|3|9>>
-    <associate|auto-21|<tuple|6.2|9>>
-    <associate|auto-22|<tuple|1|10>>
-    <associate|auto-23|<tuple|2|10>>
-    <associate|auto-24|<tuple|3|10>>
-    <associate|auto-25|<tuple|4|11>>
-    <associate|auto-26|<tuple|5|11>>
-    <associate|auto-27|<tuple|6.1|11>>
-    <associate|auto-28|<tuple|6|11>>
-    <associate|auto-29|<tuple|6|12>>
+    <associate|auto-20|<tuple|1|9>>
+    <associate|auto-21|<tuple|2|9>>
+    <associate|auto-22|<tuple|3|9>>
+    <associate|auto-23|<tuple|6.2|9>>
+    <associate|auto-24|<tuple|1|10>>
+    <associate|auto-25|<tuple|2|10>>
+    <associate|auto-26|<tuple|3|10>>
+    <associate|auto-27|<tuple|4|11>>
+    <associate|auto-28|<tuple|5|11>>
+    <associate|auto-29|<tuple|6.1|11>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-30|<tuple|6.5|12>>
+    <associate|auto-30|<tuple|6|12>>
+    <associate|auto-31|<tuple|6|12>>
+    <associate|auto-32|<tuple|6.5|12>>
     <associate|auto-4|<tuple|4|2>>
     <associate|auto-5|<tuple|4.1|2>>
     <associate|auto-6|<tuple|1|2>>
@@ -1332,10 +1377,10 @@
     <associate|bib-CC18|<tuple|CC18|12>>
     <associate|bib-DH87|<tuple|DH87|12>>
     <associate|bib-DH88|<tuple|DH88|12>>
-    <associate|bib-DPD03|<tuple|DPD03|12>>
-    <associate|bib-GH19|<tuple|GH19|12>>
-    <associate|bib-GH21|<tuple|GH21|12>>
-    <associate|bib-GIP15|<tuple|GIP15|12>>
+    <associate|bib-DPD03|<tuple|DPD03|13>>
+    <associate|bib-GH19|<tuple|GH19|13>>
+    <associate|bib-GH21|<tuple|GH21|13>>
+    <associate|bib-GIP15|<tuple|GIP15|13>>
     <associate|bib-Gub25|<tuple|Gub25|13>>
     <associate|bib-Hai14|<tuple|Hai14|13>>
     <associate|bib-JLM85|<tuple|JLM85|13>>
@@ -1347,7 +1392,7 @@
     <associate|bib-Sal99|<tuple|Sal99|13>>
     <associate|bib-WK74|<tuple|WK74|13>>
     <associate|def:obs|<tuple|5.3|7>>
-    <associate|def:product|<tuple|6.2|9>>
+    <associate|def:product|<tuple|6.2|10>>
     <associate|def:profile|<tuple|5.1|6>>
     <associate|eq:4pi|<tuple|4.5|5>>
     <associate|eq:ESQ|<tuple|4.4|4>>
@@ -1362,16 +1407,16 @@
     <associate|eq:scale-GFF|<tuple|5.3|6>>
     <associate|eq:stat-sol|<tuple|4.3|3>>
     <associate|eq:wick-obs-cov|<tuple|6.1|9>>
-    <associate|eq:wick-product|<tuple|6.6|10>>
+    <associate|eq:wick-product|<tuple|6.6|11>>
     <associate|ex:brownian-delta|<tuple|5.4|9>>
-    <associate|ex:brownian-obs|<tuple|5.3|8>>
+    <associate|ex:brownian-obs|<tuple|5.3|9>>
     <associate|ex:brownian-ope|<tuple|6.4|12>>
-    <associate|ex:ct|<tuple|5.2|8>>
+    <associate|ex:ct|<tuple|5.2|9>>
     <associate|ex:hermite-flow|<tuple|6.1|12>>
     <associate|ex:invariance|<tuple|4.1|5>>
     <associate|ex:point-splitting|<tuple|6.5|12>>
     <associate|ex:scale-GFF|<tuple|5.1|8>>
-    <associate|ex:slices|<tuple|4.4|6>>
+    <associate|ex:slices|<tuple|4.4|5>>
     <associate|ex:weak|<tuple|4.3|5>>
     <associate|ex:wick-product|<tuple|6.2|12>>
     <associate|exa:brownian|<tuple|5.5|7>>
@@ -1383,14 +1428,14 @@
     <associate|prop:inf-inv|<tuple|4.1|3>>
     <associate|prop:product|<tuple|6.3|10>>
     <associate|prop:repair|<tuple|5.6|8>>
-    <associate|prop:scale-GFF|<tuple|5.2|7>>
+    <associate|prop:scale-GFF|<tuple|5.2|6>>
     <associate|prop:wick-obs|<tuple|6.1|9>>
     <associate|rem:finite-range|<tuple|6.4|11>>
     <associate|sec:gff-obs|<tuple|6|9>>
     <associate|sec:obs|<tuple|5|6>>
     <associate|sec:product|<tuple|6.2|9>>
     <associate|sec:sq|<tuple|4|2>>
-    <associate|thm:elliptic|<tuple|4.4|5>>
+    <associate|thm:elliptic|<tuple|4.4|4>>
     <associate|thm:parabolic|<tuple|4.2|3>>
   </collection>
 </references>
@@ -1501,7 +1546,7 @@
       <with|mode|<quote|math>|s\<gg\>1/<around|\||x-y|\|>>. As
       <with|mode|<quote|math>|y\<to\>x> the mass moves to
       <with|mode|<quote|math>|s\<to\>\<infty\>>, which is the divergence of
-      the product at coincident points.>|<pageref|auto-27>>
+      the product at coincident points.>|<pageref|auto-29>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -1555,66 +1600,74 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14>>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Observables as
+      equivalence classes. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Random
+      variables as observables. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-16>>>
+
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15>>
+      <no-break><pageref|auto-17>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Observables
       of the Gaussian free field and their products>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-16><vspace|0.5fn>
+      <no-break><pageref|auto-18><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|6.1<space|2spc>Wick powers and exponentials
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17>>
+      <no-break><pageref|auto-19>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Point
       evaluations. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18>>>
+      <no-break><pageref|auto-20>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Wick powers.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19>>>
+      <no-break><pageref|auto-21>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Exponentials.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20>>>
+      <no-break><pageref|auto-22>>>
 
       <with|par-left|<quote|1tab>|6.2<space|2spc>Products of observables
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Brownian
       deltas. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22>>>
+      <no-break><pageref|auto-24>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Products of
       point evaluations. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23>>>
+      <no-break><pageref|auto-25>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Operator
       product expansion. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>>
+      <no-break><pageref|auto-26>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Higher orders.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-25>>>
+      <no-break><pageref|auto-27>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Locality and
       factorisation. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-26>>>
+      <no-break><pageref|auto-28>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Outlook.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28>>>
+      <no-break><pageref|auto-30>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-31>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30><vspace|0.5fn>
+      <no-break><pageref|auto-32><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

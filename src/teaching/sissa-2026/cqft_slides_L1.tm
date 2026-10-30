@@ -653,33 +653,35 @@
   </hidden>|<\hidden>
     <mytitle|Discretising imaginary time>
 
-    \;
+    <\with|font-size|0.9>
+      \;
 
-    Kinetic semigroup: <math|\<mathe\><rsup|<frac|\<delta\>|2*\<varepsilon\>>*\<Delta\>><around|(|\<varphi\>,\<varphi\><rprime|'>|)>=<around|(|2*\<pi\>*\<delta\>/\<varepsilon\>|)><rsup|-N/2>*exp
-    <around*|(|-<frac|\<varepsilon\>|2*\<delta\>>*<around|\||\<varphi\>-\<varphi\><rprime|'>|\|><rsup|2>|)>>.
+      Kinetic semigroup: <math|\<mathe\><rsup|<frac|\<delta\>|2*\<varepsilon\>>*\<Delta\>><around|(|\<varphi\>,\<varphi\><rprime|'>|)>=<around|(|2*\<pi\>*\<delta\>/\<varepsilon\>|)><rsup|-N/2>*exp
+      <around*|(|-<frac|\<varepsilon\>|2*\<delta\>>*<around|\||\<varphi\>-\<varphi\><rprime|'>|\|><rsup|2>|)>>.
 
-    <with|font-series|bold|Transfer matrix> (symmetric Trotter step):
+      <with|font-series|bold|Transfer matrix> (symmetric Trotter step):
 
-    <\equation*>
-      T<rsub|\<delta\>>=\<mathe\><rsup|-\<delta\>*U/2>\<mathe\><rsup|<frac|\<delta\>|2*\<varepsilon\>>*\<Delta\>>\<mathe\><rsup|-\<delta\>*U/2>,<space|2em>T<rsub|\<delta\>>*<around|(|\<varphi\>,\<varphi\><rprime|'>|)>\<propto\>exp
-      <around*|(|-<frac|\<varepsilon\>|2*\<delta\>>*<big|sum><rsub|x><around|(|\<varphi\><rsub|x>-\<varphi\><rsub|x><rprime|'>|)><rsup|2>-<frac|\<delta\>|2>*<around*|(|U<around|(|\<varphi\>|)>+U<around|(|\<varphi\><rprime|'>|)>|)>|)>,
-    </equation*>
+      <\equation*>
+        T<rsub|\<delta\>>=\<mathe\><rsup|-\<delta\>*U/2>\<mathe\><rsup|<frac|\<delta\>|2*\<varepsilon\>>*\<Delta\>>\<mathe\><rsup|-\<delta\>*U/2>,<space|2em>T<rsub|\<delta\>>*<around|(|\<varphi\>,\<varphi\><rprime|'>|)>\<propto\>exp
+        <around*|(|-<frac|\<varepsilon\>|2*\<delta\>>*<big|sum><rsub|x><around|(|\<varphi\><rsub|x>-\<varphi\><rsub|x><rprime|'>|)><rsup|2>-<frac|\<delta\>|2>*<around*|(|U<around|(|\<varphi\>|)>+U<around|(|\<varphi\><rprime|'>|)>|)>|)>,
+      </equation*>
 
-    and <math|T<rsub|\<delta\>><rsup|<around|\<lfloor\>|\<tau\>/\<delta\>|\<rfloor\>>>\<to\>\<mathe\><rsup|-\<tau\>*H<rsub|\<varepsilon\>>>>
-    (Trotter).
+      and <math|T<rsub|\<delta\>><rsup|<around|\<lfloor\>|\<tau\>/\<delta\>|\<rfloor\>>>\<to\>\<mathe\><rsup|-\<tau\>*H<rsub|\<varepsilon\>>>>
+      (Trotter).
 
-    Space-time lattice <math|\<Lambda\>=<around|(|\<delta\>*\<bbb-Z\>/T*\<bbb-Z\>|)>\<times\><around|(|\<varepsilon\>*\<bbb-Z\>/L*\<bbb-Z\>|)>>,
-    <math|T=J*\<delta\>>:
+      Space-time lattice <math|\<Lambda\>=<around|(|\<delta\>*\<bbb-Z\>/T*\<bbb-Z\>|)>\<times\><around|(|\<varepsilon\>*\<bbb-Z\>/L*\<bbb-Z\>|)>>,
+      <math|T=J*\<delta\>>:
 
-    <\equation*>
-      <math-up|Tr><around|(|T<rsub|\<delta\>><rsup|J>|)>\<propto\><big|int>\<mathe\><rsup|-S<rsub|\<delta\>,\<varepsilon\>><around|(|\<varphi\>|)>><big|prod><rsub|u\<in\>\<Lambda\>>\<mathd\>\<varphi\><rsub|u>,
-    </equation*>
+      <\equation*>
+        <math-up|Tr><around|(|T<rsub|\<delta\>><rsup|J>|)>\<propto\><big|int>\<mathe\><rsup|-S<rsub|\<delta\>,\<varepsilon\>><around|(|\<varphi\>|)>><big|prod><rsub|u\<in\>\<Lambda\>>\<mathd\>\<varphi\><rsub|u>,
+      </equation*>
 
-    <\equation*>
-      S<rsub|\<delta\>,\<varepsilon\>><around|(|\<varphi\>|)>=<big|sum><rsub|<around|(|\<tau\>,x|)>>\<varepsilon\>*\<delta\>*<around*|[|<tfrac|1|2><around*|(|\<partial\><rsup|\<delta\>><rsub|\<tau\>>*\<varphi\>|)><rsup|2>+<tfrac|1|2><around*|(|\<nabla\><rsub|\<varepsilon\>>*\<varphi\>|)><rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>.
-    </equation*>
+      <\equation*>
+        S<rsub|\<delta\>,\<varepsilon\>><around|(|\<varphi\>|)>=<big|sum><rsub|<around|(|\<tau\>,x|)>>\<varepsilon\>*\<delta\>*<around*|[|<tfrac|1|2><around*|(|\<partial\><rsup|\<delta\>><rsub|\<tau\>>*\<varphi\>|)><rsup|2>+<tfrac|1|2><around*|(|\<nabla\><rsub|\<varepsilon\>>*\<varphi\>|)><rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>.
+      </equation*>
 
-    <strong|The Minkowski metric has become Euclidean.>
+      <strong|The Minkowski metric has become Euclidean.>
+    </with>
   </hidden>|<\hidden>
     <mytitle|Feynman\UKac\UNelson>
 
@@ -1001,7 +1003,7 @@
   <\collection>
     <associate|bg-color|#f2f2f2>
     <associate|color|darker grey>
-    <associate|font-base-size|9>
+    <associate|font-base-size|10>
     <associate|info-flag|none>
     <associate|item-1|<macro|\<blacktriangleright\>>>
     <associate|math-color|#620000>

@@ -4,29 +4,31 @@
 
 <\body>
   <screens|<\shown>
-    <\with|par-mode|left>
-      <vspace*|0.8cm>
+    <\with|font-size|0.9>
+      <\with|par-mode|left>
+        <vspace*|0.8cm>
 
-      \;
+        \;
 
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+        <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
+        Introduction to Quantum Field Theory>
 
-      <vspace|0.2cm>
+        <vspace|0.2cm>
 
-      <with|font-size|1.3|<math|\<Phi\><rsup|4><rsub|3>> on the torus I: the
-      Wetterich FBSDE and renormalisation>
+        <with|font-size|1.3|<math|\<Phi\><rsup|4><rsub|3>> on the torus I:
+        the Wetterich FBSDE and renormalisation>
 
-      <vspace|0.65cm>
+        <vspace|0.65cm>
 
-      \;
+        \;
 
-      <small|Massimiliano Gubinelli \| University of Oxford>
+        <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 5 (provisional) \V
-      notes: Lecture 5, ŸŸ12\U14>>
+        <small|<with|color|dark grey|SISSA lectures, Lecture 5 (provisional)
+        \V notes: Lecture 5, ŸŸ12\U14>>
 
-      \;
+        \;
+      </with>
     </with>
   </shown>|<\hidden>
     <mytitle|Where we are>
@@ -307,35 +309,38 @@
   </hidden>|<\hidden>
     <mytitle|Approximate forecast and error>
 
-    \;
+    <\with|font-size|0.9>
+      \;
 
-    <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> even,
-    <math|<wide|\<Psi\>|\<bar\>><rsub|q>=<frac|1|2>*<around|\<langle\>|y,K<rsub|q>*y|\<rangle\>>+<wide|\<Gamma\>|\<bar\>><rsub|q>>
-    uniformly convex, <math|<wide|\<cal-K\>|\<bar\>><rsub|q>=<wide|\<Psi\>|\<bar\>><rsub|q><rsup|\<ast\>>>.
-
-    <\equation*>
-      H<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+D<rsup|2>*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>|)><rsup|-1>,<space|1em>e<rsub|q><around|(|y|)>=\<partial\><rsub|q>*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>-<tfrac|1|2><math-up|Tr><around*|[|H<rsub|q><around|(|y|)>-H<rsub|q><around|(|0|)>|]>,<space|1em>b<rsub|q>=-H<rsub|q>*D*e<rsub|q>.
-    </equation*>
-
-    <\equation*>
-      Y<rsub|q>=D*<wide|\<cal-K\>|\<bar\>><rsub|q><around|(|P<rsub|q>|)><around|(|<text|approximate
-      forecast>|)>,<space|2em>Z<rsub|q>=\<psi\><rsub|q>-Y<rsub|q><around|(|<text|error>|)>,<space|2em>\<Xi\><rsub|q>=<math-up|Cov><rsub|q>-H<rsub|q><around|(|Y<rsub|q>|)>.
-    </equation*>
-
-    <\theorem*>
-      <dueto|exact, at fixed <math|N>>
+      <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> even,
+      <math|<wide|\<Psi\>|\<bar\>><rsub|q>=<frac|1|2>*<around|\<langle\>|y,K<rsub|q>*y|\<rangle\>>+<wide|\<Gamma\>|\<bar\>><rsub|q>>
+      uniformly convex, <math|<wide|\<cal-K\>|\<bar\>><rsub|q>=<wide|\<Psi\>|\<bar\>><rsub|q><rsup|\<ast\>>>.
 
       <\equation*>
-        <\aligned>
-          <tformat|<table|<row|<cell|\<mathd\>Y<rsub|q>>|<cell|=<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+H<rsub|q><around|(|Y<rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>,>>|<row|<cell|\<mathd\>Z<rsub|q>>|<cell|=-<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+\<Xi\><rsub|q><space|0.17em>\<mathd\>W<rsub|q>,>>>>
-        </aligned>
-
-        <space|2em>Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0.
+        H<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+D<rsup|2>*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>|)><rsup|-1>,<space|1em>e<rsub|q><around|(|y|)>=\<partial\><rsub|q>*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>-<tfrac|1|2><math-up|Tr><around*|[|H<rsub|q><around|(|y|)>-H<rsub|q><around|(|0|)>|]>,<space|1em>b<rsub|q>=-H<rsub|q>*D*e<rsub|q>.
       </equation*>
-    </theorem*>
 
-    Proof: <math|\<partial\><rsub|q>*<wide|\<cal-K\>|\<bar\>>+<frac|1|2><math-up|Tr>D<rsup|2>*<wide|\<cal-K\>|\<bar\>>+<frac|1|2>*<around|\<\|\|\>|D*<wide|\<cal-K\>|\<bar\>>|\<\|\|\>><rsup|2>=-e\<circ\>D*<wide|\<cal-K\>|\<bar\>>+<frac|1|2><math-up|Tr>H<around|(|0|)>>;
-    differentiate in <math|p>, Itô along <math|\<mathd\>P=\<psi\><space|0.17em>\<mathd\>q+\<mathd\>W>.
+      <\equation*>
+        Y<rsub|q>=D*<wide|\<cal-K\>|\<bar\>><rsub|q><around|(|P<rsub|q>|)><around|(|<text|approximate
+        forecast>|)>,<space|2em>Z<rsub|q>=\<psi\><rsub|q>-Y<rsub|q><around|(|<text|error>|)>,<space|2em>\<Xi\><rsub|q>=<math-up|Cov><rsub|q>-H<rsub|q><around|(|Y<rsub|q>|)>.
+      </equation*>
+
+      <\theorem*>
+        <dueto|exact, at fixed <math|N>>
+
+        <\equation*>
+          <\aligned>
+            <tformat|<table|<row|<cell|\<mathd\>Y<rsub|q>>|<cell|=<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+H<rsub|q><around|(|Y<rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>,>>|<row|<cell|\<mathd\>Z<rsub|q>>|<cell|=-<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+\<Xi\><rsub|q><space|0.17em>\<mathd\>W<rsub|q>,>>>>
+          </aligned>
+
+          <space|2em>Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0.
+        </equation*>
+      </theorem*>
+
+      Proof: <math|\<partial\><rsub|q>*<wide|\<cal-K\>|\<bar\>>+<frac|1|2><math-up|Tr>D<rsup|2>*<wide|\<cal-K\>|\<bar\>>+<frac|1|2>*<around|\<\|\|\>|D*<wide|\<cal-K\>|\<bar\>>|\<\|\|\>><rsup|2>=-e\<circ\>D*<wide|\<cal-K\>|\<bar\>>+<frac|1|2><math-up|Tr>H<around|(|0|)>>;
+      differentiate in <math|p>, Itô along
+      <math|\<mathd\>P=\<psi\><space|0.17em>\<mathd\>q+\<mathd\>W>.
+    </with>
   </hidden>|<\hidden>
     <mytitle|Reading the system>
 
@@ -688,40 +693,42 @@
   </hidden>|<\hidden>
     <mytitle|The complete defect>
 
-    \;
+    <\with|font-size|0.9>
+      \;
 
-    <math|b=b<rsup|<math-up|b>>+b<rsup|<math-up|l>>>,
-    <math|b<rsup|<math-up|b>>=-H*<space|0.17em>D*\<kappa\>*<space|0.17em>D*e<rsup|<math-up|o>>*<around|(|\<kappa\>*y|)>>,
-    <math|t<rsub|q><around|(|y|)>=y*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>>.
+      <math|b=b<rsup|<math-up|b>>+b<rsup|<math-up|l>>>,
+      <math|b<rsup|<math-up|b>>=-H*<space|0.17em>D*\<kappa\>*<space|0.17em>D*e<rsup|<math-up|o>>*<around|(|\<kappa\>*y|)>>,
+      <math|t<rsub|q><around|(|y|)>=y*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>>.
 
-    <\proposition*>
-      <dueto|uniformly in <math|y>, <math|N>, <math|p>>
+      <\proposition*>
+        <dueto|uniformly in <math|y>, <math|N>, <math|p>>
 
-      <\equation*>
-        <around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>,<space|2em><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\>*q<rsup|-3/2><around*|(|<around|\<\|\|\>|t<rsub|q>*<around|\<\|\|\>|<rsub|p>+r<rsub|q><rsup|-1>|\<\|\|\>>*y<rsup|2>*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>|\<\|\|\>><rsub|p>|)>,
-      </equation*>
+        <\equation*>
+          <around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>,<space|2em><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\>*q<rsup|-3/2><around*|(|<around|\<\|\|\>|t<rsub|q>*<around|\<\|\|\>|<rsub|p>+r<rsub|q><rsup|-1>|\<\|\|\>>*y<rsup|2>*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>|\<\|\|\>><rsub|p>|)>,
+        </equation*>
 
-      <\equation*>
-        <around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>.
-      </equation*>
-    </proposition*>
+        <\equation*>
+          <around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>.
+        </equation*>
+      </proposition*>
 
-    Sources of <math|b<rsup|<math-up|l>>> (four groups): the mass term
-    <math|M<rprime|'>*y-J*M<rprime|'>*\<kappa\>*y> (<math|J=D*\<kappa\>>,
-    <math|M<rprime|'>=\<partial\><rsub|q>*M>; quadratic part unclipped, flow
-    computed at <math|\<kappa\>*y>); the motion of the clip; quartic vertex
-    at <math|y> vs correction at <math|\<kappa\>*y>; chain-rule terms with
-    <math|\<kappa\><rprime|''>,\<kappa\><rprime|'''>>. All vanish if
-    <math|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<le\>r<rsub|q>>.
+      Sources of <math|b<rsup|<math-up|l>>> (four groups): the mass term
+      <math|M<rprime|'>*y-J*M<rprime|'>*\<kappa\>*y> (<math|J=D*\<kappa\>>,
+      <math|M<rprime|'>=\<partial\><rsub|q>*M>; quadratic part unclipped,
+      flow computed at <math|\<kappa\>*y>); the motion of the clip; quartic
+      vertex at <math|y> vs correction at <math|\<kappa\>*y>; chain-rule
+      terms with <math|\<kappa\><rprime|''>,\<kappa\><rprime|'''>>. All
+      vanish if <math|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<le\>r<rsub|q>>.
 
-    <\myframed>
-      <strong|The point>
+      <\myframed>
+        <strong|The point>
 
-      <math|b<rsup|<math-up|l>>> is as large as the whole drift, but
-      <strong|supported on large fields>. It is controlled by how often the
-      actual dynamics visits them: <math|<big|int>q<rsup|-3/2>*\<gamma\><around|\<\|\|\>|t<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|6><rsup|6><space|0.17em>\<mathd\>q>
-      (Lecture 6).
-    </myframed>
+        <math|b<rsup|<math-up|l>>> is as large as the whole drift, but
+        <strong|supported on large fields>. It is controlled by how often the
+        actual dynamics visits them: <math|<big|int>q<rsup|-3/2>*\<gamma\><around|\<\|\|\>|t<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|6><rsup|6><space|0.17em>\<mathd\>q>
+        (Lecture 6).
+      </myframed>
+    </with>
   </hidden>|<\hidden>
     <mytitle|The coordinate equation>
 
@@ -759,7 +766,7 @@
   <\collection>
     <associate|bg-color|#f2f2f2>
     <associate|color|darker grey>
-    <associate|font-base-size|9>
+    <associate|font-base-size|10>
     <associate|info-flag|none>
     <associate|item-1|<macro|\<blacktriangleright\>>>
     <associate|math-color|#620000>

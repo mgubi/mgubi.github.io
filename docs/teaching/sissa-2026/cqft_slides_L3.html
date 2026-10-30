@@ -839,6 +839,57 @@ e_n\)</font>:
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Observables as equivalence classes
+      </div>
+      <font style="font-size: 90.0%"><p>
+        Two integrable adapted processes are <strong>asymptotically
+        equivalent</strong> if
+      </p><center>
+        \(\displaystyle N \sim N' \quad \Longleftrightarrow \quad \|N_t - N'_t
+        \|_{L^1}
+\longrightarrow 0 \quad (t \to \infty) .\)
+      </center><ul>
+        <li>
+          <p>
+            A class contains <strong>at most one martingale</strong>: if <font
+            color="#620000">\(O \sim O'\)</font> are martingales, then <font color="#620000">\(\|O_s
+            - O'_s \|_{L^1} \leq \|O_t - O'_t \|_{L^1} \to 0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            When it exists, it is recovered by looking back: <font color="#620000">\(O_s
+            = \lim_{t \to \infty} \mathbb{E}_s N_t\)</font> in <font color="#620000">\(L^1\)</font>,
+            for any <font color="#620000">\(N\)</font> in the class.
+          </p>
+        </li>
+        <li>
+          <p>
+            An <strong>observable</strong> <font color="#620000">\(=\)</font> a class
+            containing a martingale; its members are <em>descriptions</em>,
+            the martingale is the canonical one.
+          </p>
+        </li>
+      </ul><p>
+        <strong>Random variables sit inside.</strong> For <font color="#620000">\(Y \in
+        L^1 (\mathcal{F}_{\infty})\)</font>,
+      </p><center>
+        \(\displaystyle Y \quad \longmapsto \quad (\mathbb{E}_t Y)_{t \geq
+        0}\)
+      </center><p>
+        is injective (<font color="#620000">\(\mathbb{E}_t Y \to Y\)</font> in <font
+        color="#620000">\(L^1\)</font>), with image the uniformly integrable
+        martingales: the closed observables.
+      </p><div class="slide-block">
+        <p>
+          <strong>Observables generalise <font color="#620000">\(L^1\)</font> random
+          variables.</strong> Removing uniform integrability enlarges the
+          space; an almost sure limit alone need not determine the observable.
+        </p>
+      </div></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         Brownian observables
       </div>
       <p>
@@ -1163,48 +1214,42 @@ t} \sin B_t, \qquad O_t = B_t .\)
       <div class="slide-title">
         Brownian deltas at different targets
       </div>
-      <p>
+      <font style="font-size: 90.0%"><p>
         For <font color="#620000">\(y \neq z\)</font>, <font color="#620000">\(t < T\)</font>,
         <font color="#620000">\(m = \frac{y + z}{2}\)</font> and <font color="#620000">\(c_s =
         (4 \pi s)^{- 1 / 2}\)</font>, the product is exact:
-      </p>
-      <center>
+      </p><center>
         \(\displaystyle \Pi^y_t \Pi^z_t = c_{T - t} \mathrm{e}^{- (y - z)^2 /
         4 (T - t)} p_{(T - t) /
 2} (B_t - m) .\)
-      </center>
-      <p>
+      </center><p>
         <strong>Proof.</strong> Complete the square: <font color="#620000">\((B_t -
         y)^2 + (B_t - z)^2 = 2 (B_t - m)^2 + \frac{(y - z)^2}{2}\)</font>, and
         use <font color="#620000">\((2 \pi (T - t))^{- 1} = c_{T - t}  (\pi (T - t))^{-
         1 / 2}\)</font>.
-      </p>
-      <p>
-        Taking expectations, with <font color="#620000">\(B_t \sim N (0, t)\)</font>:
-      </p>
-      <center>
-        \(\displaystyle \mathbb{E} \Pi^y_t \Pi^z_t = c_{T - t} \mathrm{e}^{-
+      </p><p>
+        The product is <font color="#620000">\(\geq 0\)</font>, so its expectation is
+        its <font color="#620000">\(L^1\)</font> norm (<font color="#620000">\(B_t \sim N (0,
+        t)\)</font>):
+      </p><center>
+        \(\displaystyle \| \Pi^y_t \Pi^z_t \|_{L^1} = c_{T - t} \mathrm{e}^{-
         (y - z)^2 / 4 (T - t)}
 p_{(T + t) / 2} (m) \longrightarrow 0 \quad (t
         \uparrow T) .\)
-      </center>
-      <p>
-        So the product exists and <font color="#620000">\(\Pi^y \star \Pi^z =
-        0\)</font> for <font color="#620000">\(y \neq z\)</font>. At <font color="#620000">\(y =
-        z\)</font> the exponential suppression disappears:
-      </p>
-      <center>
-        \(\displaystyle \mathbb{E} (\Pi^y_t)^2 = c_{T - t} p_{(T + t) / 2} (y)
-        \longrightarrow \infty
-.\)
-      </center>
-      <div class="slide-block">
+      </center><p>
+        So <font color="#620000">\(\Pi^y_t \Pi^z_t \sim 0\)</font>: the zero observable
+        is the martingale in its class, hence <font color="#620000">\(\Pi^y \star \Pi^z
+        = 0\)</font> for <font color="#620000">\(y \neq z\)</font>. At <font color="#620000">\(y
+        = z\)</font> the exponential suppression disappears, <font color="#620000">\(\mathbb{E}
+        (\Pi^y_t)^2 = c_{T - t} p_{(T + t) / 2} (y) \to \infty\)</font>, and
+        no martingale is in the class: it would have constant expectation.
+      </p><div class="slide-block">
         <p>
           The product depends dramatically on whether the singular supports
           meet: separated supports multiply to zero, coincident ones call for
           renormalisation.
         </p>
-      </div>
+      </div></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1382,10 +1427,9 @@ y) .\)
       <div class="slide-title">
         Locality: a picture
       </div>
-      <p>
+      <font style="font-size: 90.0%"><p>
 
-      </p>
-      <p style="margin-top: 4pt">
+      </p><p style="margin-top: 4pt">
         <img class="image" src="cqft_slides_L3-2.png" height="66%" width="100%" alt="Figure from Constructive quantum field theory — Lecture 3 (slides)" decoding="async" loading="lazy"><br /> Left: kernels of <font
         color="#620000">\(\dot{Q}_s^{1 / 2}\)</font> at <font color="#620000">\(x\)</font> and
         <font color="#620000">\(y\)</font>; their overlap integrates to <font color="#620000">\(\dot{Q}_s
@@ -1395,7 +1439,7 @@ y) .\)
         / |x - y|\)</font>; total <font color="#620000">\(G (x - y)\)</font>. As <font
         color="#620000">\(y \to x\)</font> the mass escapes to <font color="#620000">\(s \to
         \infty\)</font>.
-      </p>
+      </p></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">

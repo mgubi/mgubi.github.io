@@ -24,7 +24,7 @@ class SissaMaterialsTests(unittest.TestCase):
 
     def test_complete_notes_and_slide_exports(self):
         # Slide counts from the author's supplied HTML and PDF exports.
-        for number, slides in enumerate((31, 32, 34, 38, 26, 19, 18), 1):
+        for number, slides in enumerate((31, 32, 35, 38, 26, 19, 18), 1):
             notes = f'cqft_notes_L{number}' if number < 3 else f'cqft_lecture{number}'
             for name in (notes, f'cqft_slides_L{number}'):
                 with self.subTest(page=name):

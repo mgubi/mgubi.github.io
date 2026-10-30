@@ -869,7 +869,7 @@
   <\collection>
     <associate|bg-color|#f2f2f2>
     <associate|color|darker grey>
-    <associate|font-base-size|9>
+    <associate|font-base-size|10>
     <associate|info-flag|none>
     <associate|item-1|<macro|\<blacktriangleright\>>>
     <associate|math-color|#620000>

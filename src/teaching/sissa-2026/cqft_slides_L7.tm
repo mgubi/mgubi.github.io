@@ -188,39 +188,42 @@
   </hidden>|<\hidden>
     <mytitle|Regularity and the terminal field>
 
-    \;
+    <\with|font-size|0.9>
+      \;
 
-    <with|font-series|bold|Space.> <math|K<rsub|q>*V<rsub|q>=f<rsub|q>> with
-    <math|\<bbb-E\>*<big|int><rsub|I><around|\<\|\|\>|f|\<\|\|\>><rsub|2><rsup|2>\<le\>C<rsub|I>>
-    (energies), so <math|V\<in\>L<rsup|2><around|(|I;H<rsup|1>|)>>;
-    <math|Y=V+X-\<varrho\><around|(|Y|)>> has the regularity of the free
-    field: <math|H<rsup|\<sigma\>>>, <math|\<sigma\>\<less\><frac|1|2>>, in
-    space; <math|H<rsup|\<theta\>>>, <math|\<theta\>\<less\><frac|1|2>>, in
-    scale; tight in space\Utime <math|L<rsup|p>> (and in
-    <math|C*<around|(|I;H|)>>: <math|C<rsup|1/4>> Hölder bound <math|+>
-    uniform Fourier tails).
+      <with|font-series|bold|Space.> <math|K<rsub|q>*V<rsub|q>=f<rsub|q>>
+      with <math|\<bbb-E\>*<big|int><rsub|I><around|\<\|\|\>|f|\<\|\|\>><rsub|2><rsup|2>\<le\>C<rsub|I>>
+      (energies), so <math|V\<in\>L<rsup|2><around|(|I;H<rsup|1>|)>>;
+      <math|Y=V+X-\<varrho\><around|(|Y|)>> has the regularity of the free
+      field: <math|H<rsup|\<sigma\>>>, <math|\<sigma\>\<less\><frac|1|2>>, in
+      space; <math|H<rsup|\<theta\>>>, <math|\<theta\>\<less\><frac|1|2>>, in
+      scale; tight in space\Utime <math|L<rsup|p>> (and in
+      <math|C*<around|(|I;H|)>>: <math|C<rsup|1/4>> Hölder bound <math|+>
+      uniform Fourier tails).
 
-    <with|font-series|bold|Terminal field.>
-    <math|H<rsub|q><rsup|2>\<le\><frac|C|q>*C<rsub|q>> gives, for
-    <math|<frac|1|2>\<less\>s\<less\><frac|3|2>>,
+      <with|font-series|bold|Terminal field.>
+      <math|H<rsub|q><rsup|2>\<le\><frac|C|q>*C<rsub|q>> gives, for
+      <math|<frac|1|2>\<less\>s\<less\><frac|3|2>>,
 
-    <\equation*>
-      <big|int><rsub|Q><rsup|\<infty\>><around|\<\|\|\>|<around|(|1-\<Delta\>|)><rsup|-s/2>*H<rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>\<mathd\>q\<le\>C*<big|int><rsub|Q><rsup|\<infty\>><frac|1|q>*<big|sum><rsub|k><frac|<around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-s>|q+c<around|\||k|\|><rsup|2>>\<mathd\>q\<le\>C<rsub|s>*Q<rsup|-<around|(|s-<frac|1|2>|)>>,
-    </equation*>
+      <\equation*>
+        <big|int><rsub|Q><rsup|\<infty\>><around|\<\|\|\>|<around|(|1-\<Delta\>|)><rsup|-s/2>*H<rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>\<mathd\>q\<le\>C*<big|int><rsub|Q><rsup|\<infty\>><frac|1|q>*<big|sum><rsub|k><frac|<around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-s>|q+c<around|\||k|\|><rsup|2>>\<mathd\>q\<le\>C<rsub|s>*Q<rsup|-<around|(|s-<frac|1|2>|)>>,
+      </equation*>
 
-    and the drifts have squared tails <math|O<around|(|Q<rsup|-3>|)>>,
-    <math|O<around|(|Q<rsup|-5/2>|)>>, <math|O<around|(|Q<rsup|-3/2>|)>>.
-    Doob:
+      and the drifts have squared tails <math|O<around|(|Q<rsup|-3>|)>>,
+      <math|O<around|(|Q<rsup|-5/2>|)>>, <math|O<around|(|Q<rsup|-3/2>|)>>.
+      Doob:
 
-    <\equation*>
-      sup<rsub|N> \<bbb-E\>*sup<rsub|t\<ge\>Q><around|\<\|\|\>|Y<rsub|t>-Y<rsub|Q>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>\<le\>C<rsub|s>*Q<rsup|-<around|(|s-<frac|1|2>|)>>.
-    </equation*>
+      <\equation*>
+        sup<rsub|N> \<bbb-E\>*sup<rsub|t\<ge\>Q><around|\<\|\|\>|Y<rsub|t>-Y<rsub|Q>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>\<le\>C<rsub|s>*Q<rsup|-<around|(|s-<frac|1|2>|)>>.
+      </equation*>
 
-    <\corollary*>
-      <math|\<nu\><rsub|N>> is tight in <math|H<rsup|-s><around|(|\<bbb-T\><rsup|3>|)>>
-      for every <math|s\<gtr\><frac|1|2>>, with all moments uniformly in
-      <math|N>. (Threshold of the free field in <math|d=3>.)
-    </corollary*>
+      <\corollary*>
+        <math|\<nu\><rsub|N>> is tight in
+        <math|H<rsup|-s><around|(|\<bbb-T\><rsup|3>|)>> for every
+        <math|s\<gtr\><frac|1|2>>, with all moments uniformly in <math|N>.
+        (Threshold of the free field in <math|d=3>.)
+      </corollary*>
+    </with>
   </hidden>|<\hidden>
     <vspace*|2.5cm>
 
@@ -500,7 +503,7 @@
   <\collection>
     <associate|bg-color|#f2f2f2>
     <associate|color|darker grey>
-    <associate|font-base-size|9>
+    <associate|font-base-size|10>
     <associate|info-flag|none>
     <associate|item-1|<macro|\<blacktriangleright\>>>
     <associate|math-color|#620000>
