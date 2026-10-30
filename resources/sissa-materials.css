@@ -7,6 +7,23 @@
 }
 .cqft-course-nav { font: 14px var(--title-family); margin: 0 0 1.5em; }
 .cqft-course-nav a { color: var(--color-link); }
+.cqft-course-nav a::before { content: "\2190\00a0"; }
+/* Keep the course link in view: a bar on top of the page when reading... */
+body:not(.deck, .overview) .cqft-course-nav {
+  position: sticky; top: 0; z-index: 11; padding: .5em 0;
+  background: var(--bg); border-bottom: 1px solid var(--rule);
+}
+html:has(.cqft-course-nav) { scroll-padding-top: 3rem; }
+/* ...and the head of the fixed contents panel of the notes on wide screens. */
+@media (min-width: 961px) {
+  body:has(.max-toc) .cqft-course-nav {
+    position: fixed; top: 0; left: 0; width: var(--toc-w); box-sizing: border-box;
+    margin: 0; padding: .9rem 1.25rem .7rem; background: var(--panel);
+    border-right: 1px solid var(--rule);
+  }
+  body:has(.max-toc) .max-toc { padding-top: 3.2rem; }
+  html:has(.max-toc) { scroll-padding-top: 1rem; }
+}
 body.deck .cqft-course-nav, body.overview .cqft-course-nav {
   position: fixed; top: 12px; left: 16px; z-index: 20;
 }
