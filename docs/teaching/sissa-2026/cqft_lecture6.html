@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 6 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -127,8 +128,8 @@
         infinite-volume problem.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -190,7 +191,7 @@
         style="margin-left: 5mm"></span> <a href="#auto-16">8</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Summary of the course. <span style="margin-left: 5mm"></span> <a href="#auto-17">9</a></font>
+        <font style="font-size: 92.0%">Summary of the course. <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a></font>
       </p>
       <p>
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
@@ -204,12 +205,12 @@
       Lecture 5 proved, at every lattice cutoff \(N\) and every upper scale
       \(T\),
     </p>
-    <a id="eq:energy-recall"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \|E_T \|_{L^p} + \|J_T \|_{L^p} \le
-        C_{\gamma}  (1 + p^5 + \delta_{N, T, p}),
-\qquad \delta_{N, T, p} =
-        \|TZ_T \|^2_{L^{2 p} (\mathbb{P}; L^2)},\)</td>
+        <td width="100%" align="center"><a id="eq:energy-recall"></a>\(\displaystyle \|E_T \|_{L^p} + \|J_T
+        \|_{L^p} \le C_{\gamma}  (1 + p^5 + \delta_{N, T, p}),
+\qquad
+        \delta_{N, T, p} = \|TZ_T \|^2_{L^{2 p} (\mathbb{P}; L^2)},\)</td>
         <td align="right">(1)</td>
       </tr>
     </table>
@@ -217,26 +218,28 @@
       for the backward energy \(E_T\) and the large-field action \(J_T\) of <a
       href="cqft_lecture5.html#eq:energies">(14.6)</a>. Three things remain.
     </p>
-    <ol>
-      <li>
-        <p>
-          Show that the boundary term vanishes: \(TZ_T \to 0\) as \(T \to
-          \infty\) at fixed \(N\) (Section <a href="#sec:terminal">17</a>).
-        </p>
-      </li>
-      <li>
-        <p>
-          Turn the uniform energy bounds into compactness of the processes and
-          of the measures (Section <a href="#sec:compactness">18</a>).
-        </p>
-      </li>
-      <li>
-        <p>
-          Identify the limit: the deterministic coefficients, the noise, and
-          the equations (Section <a href="#sec:limit">19</a>).
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            Show that the boundary term vanishes: \(TZ_T \to 0\) as \(T \to
+            \infty\) at fixed \(N\) (Section <a href="#sec:terminal">17</a>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Turn the uniform energy bounds into compactness of the processes
+            and of the measures (Section <a href="#sec:compactness">18</a>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Identify the limit: the deterministic coefficients, the noise, and
+            the equations (Section <a href="#sec:limit">19</a>).
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       The structure of (iii) is instructive: convergence of the fields alone
       does not suffice to pass to the limit in an FBSDE, because the backward
@@ -256,28 +259,30 @@
       integrated from \(q = \infty\), so that they vanish there. This is the
       boundary condition of the backward equation.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">17.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Boundary lemma) </strong></class><a id="lem:terminal"></a> At fixed
+        \(N\), for every \(p < \infty\), as \(q \to \infty\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:terminal"></a>\(\displaystyle \|Y_q - \Phi_{\infty}
+          \|_{L^p (\mathbb{P}; H_N)} + \|qZ_q \|_{L^p
+(\mathbb{P}; H_N)} \le
+          C_{N, p}  \hspace{0.17em} q^{- 1 / 2}, \qquad
+\text{hence} \qquad
+          \delta_{N, T, p} \le C_{N, p} T^{- 1} .\)</td>
+          <td align="right">(17.1)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>The constants depend on \(N\); this is not a uniform estimate.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">17.1</class>. </strong><i><class style="font-style: normal"><strong>(Boundary
-      lemma) </strong></class><a id="lem:terminal"></a> At fixed \(N\), for every \(p <
-      \infty\), as \(q \to \infty\),</i>
-    </p>
-    <i><a id="eq:terminal"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \|Y_q - \Phi_{\infty} \|_{L^p
-        (\mathbb{P}; H_N)} + \|qZ_q \|_{L^p
-(\mathbb{P}; H_N)} \le C_{N, p}
-        \hspace{0.17em} q^{- 1 / 2}, \qquad
-\text{hence} \qquad \delta_{N, T,
-        p} \le C_{N, p} T^{- 1} .\)</td>
-        <td align="right">(17.1)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>The constants depend on \(N\); this is not a uniform estimate.</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>All norms on \(H_N\) are equivalent, and we do
-      not track the dependence on \(N\).
+      <strong class="enunciation-name">Proof. </strong>All norms on \(H_N\) are equivalent, and
+      we do not track the dependence on \(N\).
     </p>
     <p>
       <em>The field at resolution \(q\).</em> By <a href="cqft_lecture4.html#eq:observation">(11.5)</a>, \(\Phi_q
@@ -299,10 +304,10 @@
       \(\|Y_q - \Phi_q \|_{L^p} = O (q^{- 1})\). Moreover \(| \mu_q - \mu_N |
       = O_N (q^{- 1})\), and therefore
     </p>
-    <a id="eq:gradient-match"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \|D \bar{\Gamma}_q (Y_q) - DV_N
-        (\Phi_{\infty})\|_{L^p} \le C_{N, p} q^{- 1 /
+        <td width="100%" align="center"><a id="eq:gradient-match"></a>\(\displaystyle \|D \bar{\Gamma}_q (Y_q)
+        - DV_N (\Phi_{\infty})\|_{L^p} \le C_{N, p} q^{- 1 /
 2} .\)</td>
         <td align="right">(17.2)</td>
       </tr>
@@ -317,10 +322,10 @@
       href="cqft_lecture4.html#eq:posterior-ibp">(11.10)</a>, \(P_q = K_q \psi_q +\mathbb{E}_q  [DV_N
       (\Phi_{\infty})]\):
     </p>
-    <a id="eq:qZ"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle qZ_q = qC_q  [D \bar{\Gamma}_q (Y_q)
-        -\mathbb{E}_q DV_N (\Phi_{\infty})] .\)</td>
+        <td width="100%" align="center"><a id="eq:qZ"></a>\(\displaystyle qZ_q = qC_q  [D
+        \bar{\Gamma}_q (Y_q) -\mathbb{E}_q DV_N (\Phi_{\infty})] .\)</td>
         <td align="right">(17.3)</td>
       </tr>
     </table>
@@ -352,30 +357,33 @@
       T, p} \to 0\) by Lemma <a href="#lem:terminal">17.1</a>. Only then take the supremum
       over \(N\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">17.2</class>. </strong><i><class style="font-style: normal"><strong>(UV
-      stability [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="thm:uv"></a> For
-      \(q_0\) large enough, depending only on \(\gamma\),</i>
-    </p>
-    <i><a id="eq:uv"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \sup_N (\|E^N_{\infty} \|_{L^p}
-        +\|J^N_{\infty} \|_{L^p}) \le C_{\gamma}  (1
-+ p^5), \qquad \sup_N
-        \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma} q^{- 5 / 2},\)</td>
-        <td align="right">(17.4)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>and \(\sup_N \mathbb{E} \exp \{c (E^N_{\infty} + J^N_{\infty})^{1 /
-      5} \} < \infty\) for small \(c > 0\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(UV stability [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="thm:uv"></a> For \(q_0\) large enough, depending only
+        on \(\gamma\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:uv"></a>\(\displaystyle \sup_N (\|E^N_{\infty}
+          \|_{L^p} +\|J^N_{\infty} \|_{L^p}) \le C_{\gamma}  (1
++ p^5), \qquad
+          \sup_N \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma} q^{- 5 / 2},\)</td>
+          <td align="right">(17.4)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>and \(\sup_N \mathbb{E} \exp \{c (E^N_{\infty} + J^N_{\infty})^{1 /
+        5} \} < \infty\) for small \(c > 0\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Monotone convergence in <class style="font-style: normal">(<a href="#eq:energy-recall">1</a>)</class>,
-      then the representation formula <a href="cqft_lecture5.html#eq:representation">(16.2)</a> on \([q, \infty)\),
-      whose terminal term vanishes by Lemma <a href="#lem:terminal">17.1</a>. The exponential
-      moment follows from the polynomial growth by Markov's inequality with
-      \(p \asymp R^{1 / 5}\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>Monotone convergence in <class style="font-style: normal">(<a
+      href="#eq:energy-recall">1</a>)</class>, then the representation formula <a href="cqft_lecture5.html#eq:representation">(16.2)</a>
+      on \([q, \infty)\), whose terminal term vanishes by Lemma <a href="#lem:terminal">17.1</a>.
+      The exponential moment follows from the polynomial growth by Markov's
+      inequality with \(p \asymp R^{1 / 5}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       The order of limits matters. The constant \(C_{N, p}\) in Lemma <a href="#lem:terminal">17.1</a>
@@ -432,45 +440,48 @@
       Spatial suprema at finite resolution come for free from the elliptic
       structure of <a href="cqft_lecture5.html#eq:volterra">(14.4)</a>.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">18.1</class>. </strong><i><class style="font-style: normal"><strong>(Supremum
-      after closure) </strong></class><a id="lem:sup"></a> Let \(\varpi =
-      \frac{3}{8}\), \(\mathcal{Y}_T = \sup_{q_0 \le q \le T} q^{- \varpi}
-      \|Y_q \|_{\infty}\) and \(\mathcal{X}_T = \sup_{q_0 \le q \le T} q^{-
-      \varpi} \|X_q \|_{\infty}\). For \(q_0\) large,</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:sup"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \mathcal{Y}_T \le C (\mathcal{X}_T
-          + q_0^{- \varpi} \gamma^{1 / 2} E_T^{1 /
-2}), \qquad
-          \|\mathcal{X}_{\infty} \|_{L^p} \le C \sqrt{p} .\)</td>
-          <td align="right">(18.1)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">18.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum after closure) </strong></class><a id="lem:sup"></a>
+        Let \(\varpi = \frac{3}{8}\), \(\mathcal{Y}_T = \sup_{q_0 \le q \le T}
+        q^{- \varpi} \|Y_q \|_{\infty}\) and \(\mathcal{X}_T = \sup_{q_0 \le q
+        \le T} q^{- \varpi} \|X_q \|_{\infty}\). For \(q_0\) large,</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:sup"></a>\(\displaystyle \mathcal{Y}_T \le C
+            (\mathcal{X}_T + q_0^{- \varpi} \gamma^{1 / 2} E_T^{1 /
+2}),
+            \qquad \|\mathcal{X}_{\infty} \|_{L^p} \le C \sqrt{p} .\)</td>
+            <td align="right">(18.1)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Idea. </strong>Remove the backward forcing by \(\mathcal{H}_q =
-      C_q F^Z_q\), with \(\|\mathcal{H}_q \|_{\infty} \le Cq^{- 1 / 4} \|F^Z_q
-      \|_2 \le C \gamma^{1 / 2}
-E_T^{1 / 2}\) (by Cauchy&ndash;Schwarz in
-      \(q\)). Then \(U = V -\mathcal{H}\) solves, at each frozen \(q\), \(K_q
-      U + \frac{\gamma}{3}  (U + d)^3 = f\) with \(d =\mathcal{H}+ X - \varrho
-      (Y)\) and \(f = \int_{q_0}^q (Y_s - X_s) \mathrm{d} s\). Constant
-      functions of height \(\max \{\|d\|_{\infty}, q^{- 1} \|f\|_{\infty} \}\)
-      are super- and subsolutions, so the lattice maximum principle bounds
-      \(\|U\|_{\infty}\). This gives \((1 - 2 \varepsilon_q) y_q \le 2
-      (\|\mathcal{H}_q \|_{\infty} + x_q) + q^{- 1}
-\int_{q_0}^q (y_s + x_s)
-      \mathrm{d} s\) for \(y_q = \|Y_q \|_{\infty}\), \(x_q = \|X_q
-      \|_{\infty}\), where \(\varepsilon_q = C (g_q + g_q^2)\) bounds \(\|D
-      \varrho_q \|_{\infty \to \infty}\) (Lecture 5). The weight \(q^{-
-      \varpi}\) absorbs the memory since \(q^{- 1 - \varpi}  \int_{q_0}^q
-      s^{\varpi} \mathrm{d} s \le (1 + \varpi)^{- 1}
-< 1\). The Gaussian
-      supremum is a chaining argument: \(\text{Var} X_q (x) \le Cq^{1 / 2}\)
-      and the increments in space and scale are H&ouml;lder.<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Idea. </strong>Remove the backward forcing by
+      \(\mathcal{H}_q = C_q F^Z_q\), with \(\|\mathcal{H}_q \|_{\infty} \le
+      Cq^{- 1 / 4} \|F^Z_q \|_2 \le C \gamma^{1 / 2}
+E_T^{1 / 2}\) (by
+      Cauchy&ndash;Schwarz in \(q\)). Then \(U = V -\mathcal{H}\) solves, at
+      each frozen \(q\), \(K_q U + \frac{\gamma}{3}  (U + d)^3 = f\) with \(d
+      =\mathcal{H}+ X - \varrho (Y)\) and \(f = \int_{q_0}^q (Y_s - X_s)
+      \mathrm{d} s\). Constant functions of height \(\max \{\|d\|_{\infty},
+      q^{- 1} \|f\|_{\infty} \}\) are super- and subsolutions, so the lattice
+      maximum principle bounds \(\|U\|_{\infty}\). This gives \((1 - 2
+      \varepsilon_q) y_q \le 2 (\|\mathcal{H}_q \|_{\infty} + x_q) + q^{- 1}
+
+\int_{q_0}^q (y_s + x_s) \mathrm{d} s\) for \(y_q = \|Y_q
+      \|_{\infty}\), \(x_q = \|X_q \|_{\infty}\), where \(\varepsilon_q = C
+      (g_q + g_q^2)\) bounds \(\|D \varrho_q \|_{\infty \to \infty}\) (Lecture
+      5). The weight \(q^{- \varpi}\) absorbs the memory since \(q^{- 1 -
+      \varpi}  \int_{q_0}^q s^{\varpi} \mathrm{d} s \le (1 + \varpi)^{- 1}
+<
+      1\). The Gaussian supremum is a chaining argument: \(\text{Var} X_q (x)
+      \le Cq^{1 / 2}\) and the increments in space and scale are
+      H&ouml;lder.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       In particular <em>finite-resolution</em> spatial suprema of \(Y\) have
@@ -482,10 +493,10 @@ E_T^{1 / 2}\) (by Cauchy&ndash;Schwarz in
       On a finite scale interval \(I = [q_0, Q]\) write <a href="cqft_lecture5.html#eq:volterra">(14.4)</a> as
       the linear elliptic equation
     </p>
-    <a id="eq:linear"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q V_q = f_q, \qquad f_q =
-        \int_{q_0}^q (Y_s - X_s + Z_s) \mathrm{d} s -
+        <td width="100%" align="center"><a id="eq:linear"></a>\(\displaystyle K_q V_q = f_q, \qquad f_q
+        = \int_{q_0}^q (Y_s - X_s + Z_s) \mathrm{d} s -
 \frac{\gamma}{3} Y_q^3
         .\)</td>
         <td align="right">(18.2)</td>
@@ -507,31 +518,34 @@ E_T^{1 / 2}\) (by Cauchy&ndash;Schwarz in
       \(H^1\), and the approximate forecast \(Y = V + X - \varrho (Y)\)
       inherits the regularity of the free field.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">18.2</class>. </strong><i><class
-      style="font-style: normal"><strong>(Forward compactness) </strong></class><a id="prop:forward-compact"></a> For
-      \(0 < \sigma, \theta < \frac{1}{2}\),</i>
-    </p>
-    <p>
-      <i><center>
-        \(\displaystyle \sup_N \mathbb{E} \left[ \int_I \| \iota_N Y^N_q
-        \|_{H^{\sigma}}^2 \mathrm{d}
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">18.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Forward compactness)
+        </strong></class><a id="prop:forward-compact"></a> For \(0 < \sigma, \theta <
+        \frac{1}{2}\),</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle \sup_N \mathbb{E} \left[ \int_I \| \iota_N Y^N_q
+          \|_{H^{\sigma}}^2 \mathrm{d}
 q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
-        H)} \right] < \infty .\)
-      </center></i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>The embedded approximate forecasts are tight in every
-      space&ndash;time \(L^p\), and polynomials of them converge along
-      strongly convergent subsequences. The forward equation gives the
-      H&ouml;lder bound \(\sup_N \mathbb{E} \| \iota_N Y^N \|^8_{C^{1 / 4}  (I
-      ; H)} < \infty\), and averaging in time against the \(H^{\sigma}\) bound
-      gives uniform Fourier tails \(\lim_m \sup_N \mathbb{E} \sup_{q \in I}
-      \|(I - \textsf{F}_m) \iota_N Y^N_q
-\|_2^2 = 0\) (\(\textsf{F}_m\) the
-      projection on frequencies \(|k| \le m\)); hence they are also tight in
-      \(C (I ; H)\).</i>
-    </p>
+          H)} \right] < \infty .\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>The embedded approximate forecasts are tight in every
+        space&ndash;time \(L^p\), and polynomials of them converge along
+        strongly convergent subsequences. The forward equation gives the
+        H&ouml;lder bound \(\sup_N \mathbb{E} \| \iota_N Y^N \|^8_{C^{1 / 4}
+        (I ; H)} < \infty\), and averaging in time against the \(H^{\sigma}\)
+        bound gives uniform Fourier tails \(\lim_m \sup_N \mathbb{E} \sup_{q
+        \in I} \|(I - \textsf{F}_m) \iota_N Y^N_q
+\|_2^2 = 0\)
+        (\(\textsf{F}_m\) the projection on frequencies \(|k| \le m\)); hence
+        they are also tight in \(C (I ; H)\).</i>
+      </p>
+    </div>
     <p>
       The spatial bound combines the \(H^1\) bound on \(V\), the
       \(H^{\sigma}\) regularity of \(X\) (\(\sigma < \frac{1}{2}\)), and the
@@ -548,14 +562,14 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       \(\psi\)). The martingale part of \(Y\) has bracket \(\int H^2\), and
       the positive inequality \(H_q^2 \le \frac{C}{q} C_q\) gives
     </p>
-    <a id="eq:noise-tail"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \int_Q^{\infty} \|(1 - \Delta)^{- s
-        / 2} H_q \|_{\text{HS}}^2 \mathrm{d} q
-\le C \int_Q^{\infty}
-        \frac{1}{q}  \sum_k \frac{(1 + |k|^2)^{- s}}{q + c
-|k|^2}
-        \hspace{0.17em} \mathrm{d} q \le C_s  \hspace{0.17em} Q^{- (s
+        <td width="100%" align="center"><a id="eq:noise-tail"></a>\(\displaystyle \int_Q^{\infty} \|(1 -
+        \Delta)^{- s / 2} H_q \|_{\text{HS}}^2 \mathrm{d} q
+\le C
+        \int_Q^{\infty} \frac{1}{q}  \sum_k \frac{(1 + |k|^2)^{- s}}{q +
+        c
+|k|^2} \hspace{0.17em} \mathrm{d} q \le C_s  \hspace{0.17em} Q^{- (s
         -
 \frac{1}{2})}, \qquad \tfrac{1}{2} < s < \tfrac{3}{2},\)</td>
         <td align="right">(18.3)</td>
@@ -576,10 +590,10 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       \(Q^{- (s - \frac{1}{2})}\) for \(s < \frac{3}{2}\). By Doob's
       inequality, for \(\frac{1}{2} < s < \frac{3}{2}\),
     </p>
-    <a id="eq:terminal-tail"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \sup_N \mathbb{E} \sup_{t \ge Q}
-        \|Y_t - Y_Q \|^2_{H^{- s}} \le C_s
+        <td width="100%" align="center"><a id="eq:terminal-tail"></a>\(\displaystyle \sup_N \mathbb{E} \sup_{t
+        \ge Q} \|Y_t - Y_Q \|^2_{H^{- s}} \le C_s
 \hspace{0.17em} Q^{- (s -
         \frac{1}{2})} .\)</td>
         <td align="right">(18.4)</td>
@@ -590,13 +604,16 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       holds with \(Y_t\) replaced by \(\Phi_{\infty}\). Together with the
       tightness at finite resolution, this gives:
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Corollary <class style="font-style: normal">18.3</class>. </strong><i><class style="font-style: normal"><strong>(Tightness
-      of the lattice measures) </strong></class><a id="cor:tight"></a> For every \(s >
-      \frac{1}{2}\) the embedded laws \(\nu_N \circ \iota_N^{- 1}\) are tight
-      in \(H^{- s} (\mathbb{T}^3)\), and \(\sup_N \mathbb{E} \| \iota_N
-      \Phi^N_{\infty} \|^p_{H^{- s}} < \infty\) for every \(p\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Corollary <class style="font-style: normal">18.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Tightness of the lattice measures)
+        </strong></class><a id="cor:tight"></a> For every \(s > \frac{1}{2}\) the
+        embedded laws \(\nu_N \circ \iota_N^{- 1}\) are tight in \(H^{- s}
+        (\mathbb{T}^3)\), and \(\sup_N \mathbb{E} \| \iota_N \Phi^N_{\infty}
+        \|^p_{H^{- s}} < \infty\) for every \(p\).</i>
+      </p>
+    </div>
     <p>
       For the moments: the drift integrals have all moments by <class style="font-style: normal">(<a
       href="#eq:uv">17.4</a>)</class>, and the \(H^{- s}\) martingale has a
@@ -666,7 +683,7 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       integrals of the limits.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">19.1</class>. </strong><class style="font-style: normal"><strong>(Hidden
+      <strong class="enunciation-name">Remark <class style="font-style: normal">19.1</class>. </strong><class style="font-style: normal"><strong>(Hidden
       noise) </strong></class><a id="rem:hidden"></a> Let \(B\) be a real Brownian motion
       and \(L^n_t = \int_0^t (1 + \sin (ns)) \mathrm{d} B_s\). Then \((L^n,
       B)\) converges in law to \((B + 2^{- 1 / 2}  \tilde{B}, B)\), with
@@ -683,29 +700,32 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       and we need strong compactness of the posterior covariance
       \(\text{Cov}_q\). It comes from its exact dynamics.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">19.2</class>. </strong><i><class style="font-style: normal"><strong>(Riccati
-      equation of the posterior covariance) </strong></class><a id="lem:riccati"></a> At
-      each \(N\), \(\text{Cov}_q = D^2 \mathcal{K}_q (P_q) \ge 0\) and</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:riccati"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \text{dCov}_q = - \text{Cov}_q^2
-          \hspace{0.17em} \mathrm{d} q + D^3
-\mathcal{K}_q (P_q) [\mathrm{d}
-          W_q] .\)</td>
-          <td align="right">(19.1)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">19.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Riccati equation of the posterior covariance)
+        </strong></class><a id="lem:riccati"></a> At each \(N\), \(\text{Cov}_q = D^2
+        \mathcal{K}_q (P_q) \ge 0\) and</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:riccati"></a>\(\displaystyle \text{dCov}_q = -
+            \text{Cov}_q^2 \hspace{0.17em} \mathrm{d} q + D^3
+\mathcal{K}_q
+            (P_q) [\mathrm{d} W_q] .\)</td>
+            <td align="right">(19.1)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Differentiate the equation of Proposition <a
-      href="cqft_lecture4.html#prop:posterior">11.3</a>(c) twice in \(p\): \((\partial_q + \frac{1}{2} \Delta_p +
-      D\mathcal{K} \cdot D_p) D^2 \mathcal{K}=
-- (D^2 \mathcal{K})^2\), and
-      apply It&ocirc;'s formula along \(\mathrm{d} P = D\mathcal{K} (P)
-      \mathrm{d} q + \mathrm{d} W\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>Differentiate the equation of Proposition
+      <a href="cqft_lecture4.html#prop:posterior">11.3</a>(c) twice in \(p\): \((\partial_q + \frac{1}{2}
+      \Delta_p + D\mathcal{K} \cdot D_p) D^2 \mathcal{K}=
+- (D^2
+      \mathcal{K})^2\), and apply It&ocirc;'s formula along \(\mathrm{d} P =
+      D\mathcal{K} (P) \mathrm{d} q + \mathrm{d} W\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       This is <a href="cqft_lecture3.html#eq:cov-dynamics">(6.9)</a> for \(\partial_q \mathscr{R} = 1\):
@@ -741,36 +761,33 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       \(\int \text{CovCov}^{\ast}\) and of the covariations with \(W\), and
       then:
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">19.3</class>. </strong><i><class
-      style="font-style: normal"><strong>(Identification of the martingales [<a href="#bib-FBSDE26">FBSDE26</a>])
-      </strong></class><a id="prop:martingales"></a> Along a subsequence, on a common filtered
-      probability space, the limit of the forecast satisfies \(\psi_q =
-      \int_{q_0}^q \text{Cov}_s \hspace{0.17em} \mathrm{d} W_s\) with \(W\) a
-      cylindrical Brownian motion for the joint filtration, and \(Y\), \(Z\),
-      \(X\) satisfy</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:limit-equations"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">19.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Identification of the martingales
+        [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="prop:martingales"></a> Along a
+        subsequence, on a common filtered probability space, the limit of the
+        forecast satisfies \(\psi_q = \int_{q_0}^q \text{Cov}_s
+        \hspace{0.17em} \mathrm{d} W_s\) with \(W\) a cylindrical Brownian
+        motion for the joint filtration, and \(Y\), \(Z\), \(X\) satisfy</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          <a id="eq:limit-equations"></a>\(\displaystyle \begin{array}{rl}
+  Y_q & = \int_{q_0}^q
+          [b_s (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s + \int_{q_0}^q
+  H_s (Y_s)
+          \hspace{0.17em} \mathrm{d} W_s,\\
+  Z_q & = - \int_{q_0}^q [b_s
+          (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s +
+  \int_{q_0}^q \Xi_s
+          \hspace{0.17em} \mathrm{d} W_s, \qquad X_q = \int_{q_0}^q
+  C_s
+          \hspace{0.17em} \mathrm{d} W_s . \hspace{3cm}   \text{(19.2)}
 
-\begin{equationsbase}
-  Y_q & =
-          \int_{q_0}^q [b_s (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s +
-          \int_{q_0}^q
-  H_s (Y_s) \hspace{0.17em} \mathrm{d} W_s,\\
-  Z_q & =
-          - \int_{q_0}^q [b_s (Y_s) + H_s (Y_s) Z_s] \mathrm{d} s +
-
-          \int_{q_0}^q \Xi_s \hspace{0.17em} \mathrm{d} W_s, \qquad X_q =
-          \int_{q_0}^q
-  C_s \hspace{0.17em} \mathrm{d} W_s
-          .
-\end{equationsbase}\)</td>
-          <td align="right">(19.2)</td>
-        </tr>
-      </table></i>
+\end{array}\)
+        </center></i>
+      </p>
     </div>
     <p>
       The argument is: the limiting \(\psi\) is a continuous square-integrable
@@ -784,64 +801,71 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       \hspace{0.17em} \mathrm{d} W\), not a new Gaussian field.
     </p>
     <h3 id="auto-14">19.3<span style="margin-left: 1em"></span>The result<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">19.4</class>. </strong><i><class style="font-style: normal"><strong>(Subsequential
-      construction of \(\Phi^4_3\) [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a
-      id="thm:limit"></a> Let \(\lambda > 0\) and \(q_0\) large enough. Along a
-      subsequence of lattices:</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><ol>
-        <li>
-          <p>
-            the embedded processes \((Y^N, Z^N, \psi^N, X^N)\) converge in law
-            in \(C (I ; H)\) for every finite \(I\), together with the
-            embedded innovations \(W^N\) in \(C (I ; H^{- r})\), \(r >
-            \frac{3}{2}\), and the integrands \((\text{Cov}^N, \Xi^N)\) in
-            strong \(L^2 (I ; \text{HS})\), jointly and with an almost sure
-            representation;
-          </p>
-        </li>
-        <li>
-          <p>
-            the limit solves the FBSDE <class style="font-style: normal">(<a href="#eq:limit-equations">19.2</a>)</class>
-            on \([q_0, \infty)\), with \(Y_{q_0} = Z_{q_0} = 0\), the
-            deterministic continuum coefficients \(b, H\), limits of those of
-            Lecture 4 and unique in their ball, an \(H\)-cylindrical Brownian
-            motion \(W\) for the joint filtration, obtained as the limit of
-            the lattice innovations, a symmetric nonnegative integrand
-            \(\text{Cov} = H (Y) + \Xi\), and \(\mathbb{E} \|Z_q \|_2^2 \le
-            Cq^{- 5 / 2}\);
-          </p>
-        </li>
-        <li>
-          <p>
-            there is a terminal field \(\Phi\) with \(Y_q \to \Phi\) in \(H^{-
-            s}\), almost surely and in mean square, for every \(s >
-            \frac{1}{2}\). Its law \(\nu\) is the weak limit of the lattice
-            measures \(\nu_N\) along the subsequence, and for smooth \(h\),
-          </p>
-          <a id="eq:closed-forecast"></a><table width="100%">
-            <tr>
-              <td width="100%" align="center">\(\displaystyle \langle Y_q + Z_q, h \rangle
-              =\mathbb{E} \left[ \langle \Phi, h \rangle
-\hspace{0.17em} |
-              \hspace{0.17em} \mathcal{F}_q \right] :\)</td>
-              <td align="right">(19.3)</td>
-            </tr>
-          </table>
-          <p>
-            the forecast remains the conditional mean of the terminal field;
-          </p>
-        </li>
-        <li>
-          <p>
-            the limiting thresholded energies \(E_{\infty}, J_{\infty}\)
-            (built with \(X = \int C \hspace{0.17em} \mathrm{d} W\)) satisfy
-            the bounds of Theorem <a href="#thm:uv">17.2</a> (Fatou).
-          </p>
-        </li>
-      </ol></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">19.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Subsequential construction of \(\Phi^4_3\) [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="thm:limit"></a> Let \(\lambda > 0\) and \(q_0\) large
+        enough. Along a subsequence of lattices:</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                the embedded processes \((Y^N, Z^N, \psi^N, X^N)\) converge in
+                law in \(C (I ; H)\) for every finite \(I\), together with the
+                embedded innovations \(W^N\) in \(C (I ; H^{- r})\), \(r >
+                \frac{3}{2}\), and the integrands \((\text{Cov}^N, \Xi^N)\) in
+                strong \(L^2 (I ; \text{HS})\), jointly and with an almost
+                sure representation;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limit solves the FBSDE <class style="font-style: normal">(<a href="#eq:limit-equations">19.2</a>)</class>
+                on \([q_0, \infty)\), with \(Y_{q_0} = Z_{q_0} = 0\), the
+                deterministic continuum coefficients \(b, H\), limits of those
+                of Lecture 4 and unique in their ball, an \(H\)-cylindrical
+                Brownian motion \(W\) for the joint filtration, obtained as
+                the limit of the lattice innovations, a symmetric nonnegative
+                integrand \(\text{Cov} = H (Y) + \Xi\), and \(\mathbb{E} \|Z_q
+                \|_2^2 \le Cq^{- 5 / 2}\);
+              </p>
+            </li>
+            <li>
+              <p>
+                there is a terminal field \(\Phi\) with \(Y_q \to \Phi\) in
+                \(H^{- s}\), almost surely and in mean square, for every \(s >
+                \frac{1}{2}\). Its law \(\nu\) is the weak limit of the
+                lattice measures \(\nu_N\) along the subsequence, and for
+                smooth \(h\),
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:closed-forecast"></a>\(\displaystyle \langle Y_q +
+                  Z_q, h \rangle =\mathbb{E} \left[ \langle \Phi, h
+                  \rangle
+\hspace{0.17em} | \hspace{0.17em} \mathcal{F}_q
+                  \right] :\)</td>
+                  <td align="right">(19.3)</td>
+                </tr>
+              </table>
+              <p>
+                the forecast remains the conditional mean of the terminal
+                field;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limiting thresholded energies \(E_{\infty}, J_{\infty}\)
+                (built with \(X = \int C \hspace{0.17em} \mathrm{d} W\))
+                satisfy the bounds of Theorem <a href="#thm:uv">17.2</a> (Fatou).
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
     </div>
     <p>
       So the posterior structure survives the continuum limit: \(\psi = Y +
@@ -857,37 +881,39 @@ q +\| \iota_N Y^N \|^2_{H^{\theta} (I ;
       The terminal law satisfies an integration by parts formula in which the
       renormalised cube appears only tested in expectation.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">19.5</class>. </strong><i><class style="font-style: normal"><strong>(Integration
-      by parts) </strong></class><a id="thm:DS"></a> Let \(h, h_1, \ldots, h_k\) be
-      smooth and \(G (\varphi) = g (\langle \varphi, h_1 \rangle, \ldots,
-      \langle \varphi, h_k
-\rangle)\) with \(g \in C_b^{\infty}
-      (\mathbb{R}^k)\), and let \(D_h G (\varphi) =
-      \frac{\mathrm{d}}{\mathrm{d} a} G (\varphi + ah) |_{a = 0}\). Along the
-      subsequence of Theorem <a href="#thm:limit">19.4</a> (recall \(C = (m^2 -
-      \Delta_N)^{- 1}\) with \(m^2 = q_0\)),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:DS"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \lim_N \mathbb{E} \left[ G
-          (\iota_N \Phi^N_{\infty}) \hspace{0.17em} \langle
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">19.5</class>. </strong><i><class
+        style="font-style: normal"><strong>(Integration by parts) </strong></class><a id="thm:DS"></a> Let
+        \(h, h_1, \ldots, h_k\) be smooth and \(G (\varphi) = g (\langle
+        \varphi, h_1 \rangle, \ldots, \langle \varphi, h_k
+\rangle)\) with \(g
+        \in C_b^{\infty} (\mathbb{R}^k)\), and let \(D_h G (\varphi) =
+        \frac{\mathrm{d}}{\mathrm{d} a} G (\varphi + ah) |_{a = 0}\). Along
+        the subsequence of Theorem <a href="#thm:limit">19.4</a> (recall \(C = (m^2 -
+        \Delta_N)^{- 1}\) with \(m^2 = q_0\)),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:DS"></a>\(\displaystyle \lim_N \mathbb{E}
+            \left[ G (\iota_N \Phi^N_{\infty}) \hspace{0.17em} \langle
 \mu_N
-          \Phi^N_{\infty} + \lambda (\Phi^N_{\infty})^3, j_N h
-          \rangle_{H_N}
+            \Phi^N_{\infty} + \lambda (\Phi^N_{\infty})^3, j_N h
+            \rangle_{H_N}
 \right] =\mathbb{E}_{\nu}  [D_h G (\Phi) - G (\Phi)
-          \langle \Phi, (q_0 -
+            \langle \Phi, (q_0 -
 \Delta) h \rangle] .\)</td>
-          <td align="right">(19.4)</td>
-        </tr>
-      </table></i>
+            <td align="right">(19.4)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>At fixed \(N\), Gaussian integration by parts in
-      the density \(\mathrm{e}^{- V_N - \frac{1}{2}  \langle \varphi, K_{q_0}
-      \varphi \rangle}\) gives, with \(x = \Phi^N_{\infty}\) and \(h_N = j_N
-      h\),
+      <strong class="enunciation-name">Proof. </strong>At fixed \(N\), Gaussian integration by
+      parts in the density \(\mathrm{e}^{- V_N - \frac{1}{2}  \langle \varphi,
+      K_{q_0} \varphi \rangle}\) gives, with \(x = \Phi^N_{\infty}\) and \(h_N
+      = j_N h\),
     </p>
     <center>
       \(\displaystyle \mathbb{E} [G (\iota_N x) \langle \mu_N x + \lambda x^3,

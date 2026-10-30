@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 5 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -125,8 +126,8 @@
         lattice.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -167,14 +168,14 @@
         15.1<span style="margin-left: 1em"></span>The scalar model <span style="margin-left: 5mm"></span> <a href="#auto-10">4</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">What the scalar lemma says. <span style="margin-left: 5mm"></span> <a href="#auto-11">6</a></font>
+        <font style="font-size: 92.0%">What the scalar lemma says. <span style="margin-left: 5mm"></span> <a href="#auto-11">5</a></font>
       </p>
       <p>
         15.2<span style="margin-left: 1em"></span>The lattice version <span style="margin-left: 5mm"></span> <a
         href="#auto-12">6</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-13">7</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-13">6</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>16<span style="margin-left: 1em"></span>Backward feedback and closure</b> <span
@@ -192,7 +193,7 @@
         16.3<span style="margin-left: 1em"></span>Closing the loop <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a>
       </p>
       <p>
-        16.4<span style="margin-left: 1em"></span>Consequences <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
+        16.4<span style="margin-left: 1em"></span>Consequences <span style="margin-left: 5mm"></span> <a href="#auto-18">8</a>
       </p>
       <p>
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-19">9</a>
@@ -206,58 +207,53 @@
       At the end of Lecture 4 we had, at each lattice cutoff \(N\), the exact
       system (Theorem <a href="cqft_lecture4.html#thm:YZ">11.6</a>)
     </p>
-    <a id="eq:YZ"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \
-
-\begin{equationsbase}
-
-        \mathrm{d} Y_q & = [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q
-        (Y_q)
-  \hspace{0.17em} \mathrm{d} W_q,\\
-  \mathrm{d} Z_q & = - [b_q
-        (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + \Xi_q
+    <center>
+      <a id="eq:YZ"></a>\(\displaystyle \begin{array}{rl}
+  \mathrm{d} Y_q & = [b_q
+      (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
   \hspace{0.17em}
-        \mathrm{d} W_q,
-\end{equationsbase}
-
-\qquad Y_{q_0} = Z_{q_0} =
-        0,\)</td>
-        <td align="right">(1)</td>
-      </tr>
-    </table>
+      \mathrm{d} W_q,\\
+  \mathrm{d} Z_q & = - [b_q (Y_q) + H_q (Y_q) Z_q]
+      \mathrm{d} q + \Xi_q
+  \hspace{0.17em} \mathrm{d} W_q, \qquad Y_{q_0} =
+      Z_{q_0} = 0, \hspace{3cm}
+  \text{(1)}
+\end{array}\)
+    </center>
     <p>
       where \(Y\) is the approximate forecast built from the explicit action
       \(\bar{\Gamma}_q\), \(Z = \psi - Y\) is its error, and \(\psi = Y + Z\)
       is the exact forecast, a martingale. The inputs from Lecture 4 are:
     </p>
-    <ol>
-      <li>
-        <p>
-          <em>Global coercivity</em> (Lemma <a href="cqft_lecture4.html#lem:resolvent">13.1</a>): \(H_q (y)\) is
-          comparable to \((K_q + \gamma y^2)^{- 1}\) and \(\|H_q (y)\|_{p \to
-          p} \le (1 + \varepsilon_q) / q\), \(\varepsilon_q = C (g_q +
-          g_q^2)\).
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>The source</em> (Proposition <a href="cqft_lecture4.html#prop:source">13.2</a>): \(b =
-          b^{\text{b}} + b^{\text{l}}\) with \(\|b^{\text{b}}_q \|_{\infty}
-          \le C \gamma^{7 / 2} q^{- 5 / 2}\) and \(\|b^{\text{l}}_q (y)\|_2^2
-          \le C \gamma^4 q^{- 5} \|t_q (y)\|_6^6\), where \(t_q (y) = y
-          \mathbb{1}_{|y| > r_q}\).
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>The coordinate equation</em> <a href="cqft_lecture4.html#eq:coordinate">(13.5)</a>: \(K_q  (Y_q +
-          \varrho_q (Y_q)) + \frac{\gamma}{3} Y_q^3 = K_q \Phi_q = P_q\), with
-          a small Lipschitz correction, \(\|D \varrho_q \|_{p \to p} \le
-          \varepsilon_q\).
-        </p>
-      </li>
-    </ol>
+    <div class="enum-Alpha">
+      <ol>
+        <li>
+          <p>
+            <em>Global coercivity</em> (Lemma <a href="cqft_lecture4.html#lem:resolvent">13.1</a>): \(H_q (y)\)
+            is comparable to \((K_q + \gamma y^2)^{- 1}\) and \(\|H_q (y)\|_{p
+            \to p} \le (1 + \varepsilon_q) / q\), \(\varepsilon_q = C (g_q +
+            g_q^2)\).
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>The source</em> (Proposition <a href="cqft_lecture4.html#prop:source">13.2</a>): \(b =
+            b^{\text{b}} + b^{\text{l}}\) with \(\|b^{\text{b}}_q \|_{\infty}
+            \le C \gamma^{7 / 2} q^{- 5 / 2}\) and \(\|b^{\text{l}}_q
+            (y)\|_2^2 \le C \gamma^4 q^{- 5} \|t_q (y)\|_6^6\), where \(t_q
+            (y) = y \mathbb{1}_{|y| > r_q}\).
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>The coordinate equation</em> <a href="cqft_lecture4.html#eq:coordinate">(13.5)</a>: \(K_q  (Y_q
+            + \varrho_q (Y_q)) + \frac{\gamma}{3} Y_q^3 = K_q \Phi_q = P_q\),
+            with a small Lipschitz correction, \(\|D \varrho_q \|_{p \to p}
+            \le \varepsilon_q\).
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       The goal is to show that \(Z\) is small and that \(Y\) rarely visits
       large fields, <em>uniformly in \(N\)</em>. This is UV stability. Neither
@@ -310,29 +306,32 @@
       All estimates below are first proved on a finite interval \([q_0, T]\)
       and at fixed \(N\). There, everything is finite.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Preliminary moments) </strong></class><a id="lem:pre"></a> At
+        fixed \(N\) and \(T\), the maxima over \([q_0, T]\) of \(P, Y, \psi,
+        Z\) have all moments, and so does \(\int_{q_0}^T (\| \text{Cov}_q
+        \|_{\text{HS}}^2 +\| \Xi_q \|_{\text{HS}}^2)
+\mathrm{d} q\).
+        Consequently the energies \(E_T\), \(J_T\) and \(G_T\) defined below
+        have all moments at fixed \(N, T\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Lemma <class style="font-style: normal">14.1</class>. </strong><i><class style="font-style: normal"><strong>(Preliminary
-      moments) </strong></class><a id="lem:pre"></a> At fixed \(N\) and \(T\), the
-      maxima over \([q_0, T]\) of \(P, Y, \psi, Z\) have all moments, and so
-      does \(\int_{q_0}^T (\| \text{Cov}_q \|_{\text{HS}}^2 +\| \Xi_q
-      \|_{\text{HS}}^2)
-\mathrm{d} q\). Consequently the energies \(E_T\),
-      \(J_T\) and \(G_T\) defined below have all moments at fixed \(N,
-      T\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(P\) has all maximal moments, since \(\nu_N\)
-      has all moments. Global convexity, \(D^2  \bar{\Psi}_q \ge cq\) and \(D
-      \bar{\Psi}_q (0) = 0\), gives \(\|Y_q \| \le C \|P_q \| / q\). Doob's
-      inequality for the martingale \(\psi_q =\mathbb{E}_q \Phi_{\infty}\)
-      gives its maximal moments, and \(Z = \psi - Y\). For the integrands,
-      \(\| \text{Cov}_q \|_{\text{HS}} \le \text{TrCov}_q \le \mathbb{E}_q
-      \|
-\Phi_{\infty} \|^2\), and \(\|H_q (Y_q)\|_{\text{HS}} \le C
-      \sqrt{\dim H_N} / q\). The energies involve, besides \(Y\) and \(Z\),
-      the Gaussian field \(X\) and \(\varrho_q (Y_q)\); finite-dimensional
-      norm equivalence, \(\| \varrho_q (y)\| \le \varepsilon_q \|y\|\) and
-      Gaussian moments of \(X\) give their moments.<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>\(P\) has all maximal moments, since
+      \(\nu_N\) has all moments. Global convexity, \(D^2  \bar{\Psi}_q \ge
+      cq\) and \(D \bar{\Psi}_q (0) = 0\), gives \(\|Y_q \| \le C \|P_q \| /
+      q\). Doob's inequality for the martingale \(\psi_q =\mathbb{E}_q
+      \Phi_{\infty}\) gives its maximal moments, and \(Z = \psi - Y\). For the
+      integrands, \(\| \text{Cov}_q \|_{\text{HS}} \le \text{TrCov}_q \le
+      \mathbb{E}_q \|
+\Phi_{\infty} \|^2\), and \(\|H_q (Y_q)\|_{\text{HS}}
+      \le C \sqrt{\dim H_N} / q\). The energies involve, besides \(Y\) and
+      \(Z\), the Gaussian field \(X\) and \(\varrho_q (Y_q)\);
+      finite-dimensional norm equivalence, \(\| \varrho_q (y)\| \le
+      \varepsilon_q \|y\|\) and Gaussian moments of \(X\) give their
+      moments.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       These constants depend on \(N\) and \(T\). They are used only to justify
@@ -343,9 +342,9 @@
       The Gaussian part of the forecast is the free field at resolution \(q\)
       driven by the <em>same</em> innovation,
     </p>
-    <a id="eq:X"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle X_q := \int_{q_0}^q C_s
+        <td width="100%" align="center"><a id="eq:X"></a>\(\displaystyle X_q := \int_{q_0}^q C_s
         \hspace{0.17em} \mathrm{d} W_s, \qquad \text{Law}
 (X_q) = \mu^{Q_q}
         .\)</td>
@@ -358,10 +357,10 @@
       the interacting measure. Since \(\mathrm{d} (K_q X_q) = X_q
       \hspace{0.17em} \mathrm{d} q + \mathrm{d} W_q\),
     </p>
-    <a id="eq:KX"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q X_q = W_q + \int_{q_0}^q X_s
-        \hspace{0.17em} \mathrm{d} s.\)</td>
+        <td width="100%" align="center"><a id="eq:KX"></a>\(\displaystyle K_q X_q = W_q +
+        \int_{q_0}^q X_s \hspace{0.17em} \mathrm{d} s.\)</td>
         <td align="right">(14.2)</td>
       </tr>
     </table>
@@ -372,11 +371,12 @@
       equation (C) and subtract <class style="font-style: normal">(<a href="#eq:KX">14.2</a>)</class>.
       With
     </p>
-    <a id="eq:Vsharp"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V_q := Y_q + \varrho_q (Y_q) - X_q,
-        \qquad F^Z_q := \int_{q_0}^q Z_s
-\hspace{0.17em} \mathrm{d} s,\)</td>
+        <td width="100%" align="center"><a id="eq:Vsharp"></a>\(\displaystyle V_q := Y_q + \varrho_q
+        (Y_q) - X_q, \qquad F^Z_q := \int_{q_0}^q Z_s
+\hspace{0.17em}
+        \mathrm{d} s,\)</td>
         <td align="right">(14.3)</td>
       </tr>
     </table>
@@ -385,14 +385,14 @@
       potentials \(V_t\), \(V_N\) of Lectures 3&ndash;4) and we obtain the
       identity
     </p>
-    <a id="eq:volterra"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q V_q + \frac{\gamma}{3} Y_q^3 =
-        \int_{q_0}^q V_s \hspace{0.17em}
-\mathrm{d} s - \int_{q_0}^q \varrho_s
-        (Y_s) \hspace{0.17em} \mathrm{d} s +
-F^Z_q, \qquad Y_q = V_q + X_q -
-        \varrho_q (Y_q) .\)</td>
+        <td width="100%" align="center"><a id="eq:volterra"></a>\(\displaystyle K_q V_q +
+        \frac{\gamma}{3} Y_q^3 = \int_{q_0}^q V_s \hspace{0.17em}
+\mathrm{d} s
+        - \int_{q_0}^q \varrho_s (Y_s) \hspace{0.17em} \mathrm{d} s +
+F^Z_q,
+        \qquad Y_q = V_q + X_q - \varrho_q (Y_q) .\)</td>
         <td align="right">(14.4)</td>
       </tr>
     </table>
@@ -428,12 +428,13 @@ F^Z_q, \qquad Y_q = V_q + X_q -
       Define the signed excess of \(V\) over three quarters of the threshold,
       the large-field part of \(Y\), and the large Gaussian values,
     </p>
-    <a id="eq:thresholds"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle w_q = \text{sgn} (V_q)  \left( |V_q
-        | - \tfrac{3}{4} r_q \right)_+, \qquad
-t_q = Y_q  \mathbb{1}_{|Y_q | >
-        r_q}, \qquad \xi_q = X_q  \mathbb{1}_{|X_q | >
+        <td width="100%" align="center"><a id="eq:thresholds"></a>\(\displaystyle w_q = \text{sgn} (V_q)
+        \left( |V_q | - \tfrac{3}{4} r_q \right)_+, \qquad
+t_q = Y_q
+        \mathbb{1}_{|Y_q | > r_q}, \qquad \xi_q = X_q  \mathbb{1}_{|X_q |
+        >
 r_q / 32},\)</td>
         <td align="right">(14.5)</td>
       </tr>
@@ -442,28 +443,24 @@ r_q / 32},\)</td>
       all pointwise in space, with \(r_q = (q / \gamma)^{1 / 2}\). The three
       random energies are
     </p>
-    <a id="eq:energies"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \
-
-\begin{equationsbase}
+    <center>
+      <a id="eq:energies"></a>\(\displaystyle \begin{array}{rlll}
   E_T & =
-        \frac{1}{\gamma}  \int_{q_0}^T q^{1 / 2} \|Z_q \|_2^2
+      \frac{1}{\gamma}  \int_{q_0}^T q^{1 / 2} \|Z_q \|_2^2
+  \hspace{0.17em}
+      \mathrm{d} q &  & \text{(backward energy)},\\
+  J_T & = \int_{q_0}^T
+      q^{- 3 / 2}  [q\|w_q \|_4^4 + \gamma \|w_q \|_6^6 +
+  \gamma \|t_q
+      \|_6^6] \mathrm{d} q &  & \text{(large-field action)},\\
+  G_T & =
+      \int_{q_0}^T [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3 / 2} \|
 
-        \hspace{0.17em} \mathrm{d} q &  & \text{(backward energy)},\\
-  J_T &
-        = \int_{q_0}^T q^{- 3 / 2}  [q\|w_q \|_4^4 + \gamma \|w_q \|_6^6 +
+      \xi_q \|_6^6] \mathrm{d} q &  & \text{(Gaussian tails)} . \hspace{3cm}
 
-        \gamma \|t_q \|_6^6] \mathrm{d} q &  & \text{(large-field action)},\\
-
-        G_T & = \int_{q_0}^T [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3 /
-        2} \|
-  \xi_q \|_6^6] \mathrm{d} q &  & \text{(Gaussian tails)}
-        .
-\end{equationsbase}\)</td>
-        <td align="right">(14.6)</td>
-      </tr>
-    </table>
+  \text{(14.6)}
+\end{array}\)
+    </center>
     <p>
       Only <em>thresholded</em> sixth powers are integrated over all scales:
       \(\mathbb{E} \|X_q \|_6^6 \approx q^{3 / 2}\) for \(2 q_0 \le q \lesssim
@@ -499,31 +496,34 @@ r_q / 32},\)</td>
       </p>
     </center>
     <h3 id="auto-7">14.4<span style="margin-left: 1em"></span>Two Hardy inequalities<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">14.2</class>. </strong><i><class style="font-style: normal"><strong>(Hardy)
-      </strong></class><a id="lem:hardy"></a> For \(f\) on \([q_0, \infty)\) with values
-      in a Banach space, extended by zero to \((0, q_0)\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:hardy"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \left| q^{- 1}  \int_0^q f_s
-          \hspace{0.17em} \mathrm{d} s \right|_{L^4 (q^{-
-1 / 2} \mathrm{d}
-          q)} \le \frac{8}{7} \|f\|_{L^4 (q^{- 1 / 2} \mathrm{d} q)},
-\qquad
-          \int_0^{\infty} q^{- 3 / 2} \left| \int_0^q f_s
-          \hspace{0.17em}
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Hardy) </strong></class><a id="lem:hardy"></a> For \(f\) on
+        \([q_0, \infty)\) with values in a Banach space, extended by zero to
+        \((0, q_0)\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:hardy"></a>\(\displaystyle \left| q^{- 1}
+            \int_0^q f_s \hspace{0.17em} \mathrm{d} s \right|_{L^4 (q^{-
+1 /
+            2} \mathrm{d} q)} \le \frac{8}{7} \|f\|_{L^4 (q^{- 1 / 2}
+            \mathrm{d} q)},
+\qquad \int_0^{\infty} q^{- 3 / 2} \left| \int_0^q
+            f_s \hspace{0.17em}
 \mathrm{d} s \right|^2 \mathrm{d} q \le 16
-          \int_0^{\infty} q^{1 / 2} \|f_q
+            \int_0^{\infty} q^{1 / 2} \|f_q
 \|^2 \mathrm{d} q.\)</td>
-          <td align="right">(14.7)</td>
-        </tr>
-      </table></i>
+            <td align="right">(14.7)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Write \(q^{- 1}  \int_0^q f_s \mathrm{d} s =
-      \int_0^1 f_{q \theta} \mathrm{d} \theta\) and apply Minkowski's
+      <strong class="enunciation-name">Proof. </strong>Write \(q^{- 1}  \int_0^q f_s \mathrm{d}
+      s = \int_0^1 f_{q \theta} \mathrm{d} \theta\) and apply Minkowski's
       inequality. For the first bound, the substitution \(u = q \theta\) gives
       \(\|f_{\cdot \theta} \|_{L^4 (q^{- 1 / 2} \mathrm{d} q)} = \theta^{- 1 /
       8}
@@ -579,50 +579,52 @@ r_q / 32},\)</td>
       mechanisms of the forward estimate are already present, and the
       constants can be checked by hand.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">15.1</class>. </strong><i><class style="font-style: normal"><strong>(Scalar
-      forward coercivity) </strong></class><a id="lem:scalar-forward"></a> Let \(\gamma > 0\),
-      \(q_0 < T\), let \(X, f : [q_0, T] \to \mathbb{R}\) be continuous, and
-      let \(v\) be continuous and solve</i>
-    </p>
-    <i><a id="eq:scalar"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle qv_q + \frac{\gamma}{3}  (v_q +
-        X_q)^3 = \int_{q_0}^q v_s \hspace{0.17em}
-\mathrm{d} s + f_q, \qquad q
-        \in [q_0, T] .\)</td>
-        <td align="right">(15.1)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>Define \(r_q\), \(w_q\), \(\xi_q\) as in <class style="font-style: normal">(<a href="#eq:thresholds">14.5</a>)</class>,
-      with \(V = v\). Then</i>
-    </p>
-    <i><a id="eq:scalar-forward"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \frac{3}{28}  \int_{q_0}^T q^{- 1 /
-        2} w_q^4 \hspace{0.17em} \mathrm{d} q +
-\frac{\gamma}{16}
-        \int_{q_0}^T q^{- 3 / 2} w_q^6 \hspace{0.17em} \mathrm{d} q
-\le
-        \frac{4225}{6} \gamma \int_{q_0}^T q^{- 3 / 2} \xi_q^6
-        \hspace{0.17em}
-\mathrm{d} q + \frac{12}{\gamma}  \int_{q_0}^T q^{- 3
-        / 2} f_q^2
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">15.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Scalar forward coercivity) </strong></class><a id="lem:scalar-forward"></a>
+        Let \(\gamma > 0\), \(q_0 < T\), let \(X, f : [q_0, T] \to
+        \mathbb{R}\) be continuous, and let \(v\) be continuous and solve</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:scalar"></a>\(\displaystyle qv_q + \frac{\gamma}{3}
+          (v_q + X_q)^3 = \int_{q_0}^q v_s \hspace{0.17em}
+\mathrm{d} s +
+          f_q, \qquad q \in [q_0, T] .\)</td>
+          <td align="right">(15.1)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>Define \(r_q\), \(w_q\), \(\xi_q\) as in <class style="font-style: normal">(<a href="#eq:thresholds">14.5</a>)</class>,
+        with \(V = v\). Then</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:scalar-forward"></a>\(\displaystyle \frac{3}{28}
+          \int_{q_0}^T q^{- 1 / 2} w_q^4 \hspace{0.17em} \mathrm{d} q
+          +
+\frac{\gamma}{16}  \int_{q_0}^T q^{- 3 / 2} w_q^6 \hspace{0.17em}
+          \mathrm{d} q
+\le \frac{4225}{6} \gamma \int_{q_0}^T q^{- 3 / 2}
+          \xi_q^6 \hspace{0.17em}
+\mathrm{d} q + \frac{12}{\gamma}
+          \int_{q_0}^T q^{- 3 / 2} f_q^2
 \hspace{0.17em} \mathrm{d} q.\)</td>
-        <td align="right">(15.2)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>Moreover the large-field part \(t_q = (v_q + X_q)  \mathbb{1}_{|v_q +
-      X_q | > r_q}\) satisfies \(|t_q | \le \frac{32}{7}  (|w_q | + | \xi_q
-      |)\).</i>
-    </p>
+          <td align="right">(15.2)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>Moreover the large-field part \(t_q = (v_q + X_q)  \mathbb{1}_{|v_q
+        + X_q | > r_q}\) satisfies \(|t_q | \le \frac{32}{7}  (|w_q | + |
+        \xi_q |)\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong><em>Step 1: test with \(w^3\).</em> Multiply
-      <class style="font-style: normal">(<a href="#eq:scalar">15.1</a>)</class> by \(w_q^3\). We estimate the
-      four terms where \(w_q \ne 0\); there \(|v_q | = |w_q | + \frac{3}{4}
-      r_q\) and \(v_q, w_q\) have the same sign.
+      <strong class="enunciation-name">Proof. </strong><em>Step 1: test with \(w^3\).</em>
+      Multiply <class style="font-style: normal">(<a href="#eq:scalar">15.1</a>)</class> by \(w_q^3\). We
+      estimate the four terms where \(w_q \ne 0\); there \(|v_q | = |w_q | +
+      \frac{3}{4} r_q\) and \(v_q, w_q\) have the same sign.
     </p>
     <p>
       <em>Mass.</em> \(qv_q w_q^3 = q|w_q |^4 + \frac{3}{4} qr_q |w_q |^3\).
@@ -702,35 +704,38 @@ r_q / 32},\)</td>
       have \(\frac{7}{32}  |v + X| \le |v + X| - \frac{25}{32} r \le |w| + |
       \xi |\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">15.2</class>. </strong><i><class style="font-style: normal"><strong>(Two
-      elementary inequalities) </strong></class>For \(x, \rho \ge 0\), \((x -
-      \rho)^3 \ge \frac{3}{4} x^3 - 65 \rho^3\). For \(u, \rho, r \ge 0\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:elementary"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \frac{1}{3} u^3  \left( u +
-          \frac{11}{16} r - \rho \right)^3 \ge \frac{1}{12}
-u^6 + \frac{1}{4}
-          r^2 u^4 - \frac{4225}{6} \rho^6 .\)</td>
-          <td align="right">(15.3)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">15.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Two elementary inequalities) </strong></class>For \(x,
+        \rho \ge 0\), \((x - \rho)^3 \ge \frac{3}{4} x^3 - 65 \rho^3\). For
+        \(u, \rho, r \ge 0\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:elementary"></a>\(\displaystyle \frac{1}{3} u^3
+            \left( u + \frac{11}{16} r - \rho \right)^3 \ge \frac{1}{12}
+u^6 +
+            \frac{1}{4} r^2 u^4 - \frac{4225}{6} \rho^6 .\)</td>
+            <td align="right">(15.3)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(\frac{1}{4} x^3 + 64 \rho^3 - 3 x^2 \rho =
-      \frac{1}{4}  (x - 8 \rho)^2  (x + 4
-\rho) \ge 0\), so \((x - \rho)^3 \ge
-      x^3 - 3 x^2 \rho - \rho^3 \ge \frac{3}{4} x^3 - 65 \rho^3\). Apply it
-      with \(x = u + \frac{11}{16} r\): \(\frac{1}{3} u^3  (x - \rho)^3 \ge
-      \frac{1}{4} u^3 x^3 - \frac{65}{3} u^3
-\rho^3\), and \(u^3 x^3 \ge u^6 +
-      3 (\frac{11}{16})^2 r^2 u^4\) with \(\frac{3}{4} (\frac{11}{16})^2 =
-      \frac{363}{1024} > \frac{1}{4}\). Finally \(\frac{65}{3} u^3 \rho^3 \le
-      \frac{1}{6} u^6 + \frac{4225}{6} \rho^6\), since \(\frac{1}{6}  (u^3 -
-      65 \rho^3)^2 \ge 0\), and \(\frac{1}{4} - \frac{1}{6} =
-      \frac{1}{12}\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>\(\frac{1}{4} x^3 + 64 \rho^3 - 3 x^2
+      \rho = \frac{1}{4}  (x - 8 \rho)^2  (x + 4
+\rho) \ge 0\), so \((x -
+      \rho)^3 \ge x^3 - 3 x^2 \rho - \rho^3 \ge \frac{3}{4} x^3 - 65 \rho^3\).
+      Apply it with \(x = u + \frac{11}{16} r\): \(\frac{1}{3} u^3  (x -
+      \rho)^3 \ge \frac{1}{4} u^3 x^3 - \frac{65}{3} u^3
+\rho^3\), and \(u^3
+      x^3 \ge u^6 + 3 (\frac{11}{16})^2 r^2 u^4\) with \(\frac{3}{4}
+      (\frac{11}{16})^2 = \frac{363}{1024} > \frac{1}{4}\). Finally
+      \(\frac{65}{3} u^3 \rho^3 \le \frac{1}{6} u^6 + \frac{4225}{6} \rho^6\),
+      since \(\frac{1}{6}  (u^3 - 65 \rho^3)^2 \ge 0\), and \(\frac{1}{4} -
+      \frac{1}{6} = \frac{1}{12}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       <div style="display: inline">
@@ -751,29 +756,32 @@ u^6 + \frac{1}{4}
       </div>
     </p>
     <h3 id="auto-12">15.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">15.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Forward coercivity [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="prop:forward"></a> For \(q_0\) large (depending on
+        \(\gamma\)), at every cutoff \(N\) and every \(T\), pathwise,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:forward"></a>\(\displaystyle J_T \le C
+          \hspace{0.17em} (G_T + E_T), \qquad \|G_T \|_{L^p (\mathbb{P})}
+          \le
+C \gamma^3 p^5  \quad (p \ge 1),\)</td>
+          <td align="right">(15.4)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">15.3</class>. </strong><i><class
-      style="font-style: normal"><strong>(Forward coercivity [<a href="#bib-FBSDE26">FBSDE26</a>])
-      </strong></class><a id="prop:forward"></a> For \(q_0\) large (depending on
-      \(\gamma\)), at every cutoff \(N\) and every \(T\), pathwise,</i>
-    </p>
-    <i><a id="eq:forward"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle J_T \le C \hspace{0.17em} (G_T +
-        E_T), \qquad \|G_T \|_{L^p (\mathbb{P})} \le
-C \gamma^3 p^5  \quad (p
-        \ge 1),\)</td>
-        <td align="right">(15.4)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof: the changes from the scalar case. </strong>Test <class
-      style="font-style: normal">(<a href="#eq:volterra">14.4</a>)</class> with \(w_q^3\) in \(L^2 (\Lambda_N)\)
-      and proceed as in Lemma <a href="#lem:scalar-forward">15.1</a>, with H&ouml;lder's inequality
-      in space as well as in scale. Three new terms appear.
+      <strong class="enunciation-name">Proof: the changes from the scalar case. </strong>Test
+      <class style="font-style: normal">(<a href="#eq:volterra">14.4</a>)</class> with \(w_q^3\) in \(L^2
+      (\Lambda_N)\) and proceed as in Lemma <a href="#lem:scalar-forward">15.1</a>, with
+      H&ouml;lder's inequality in space as well as in scale. Three new terms
+      appear.
     </p>
     <p>
       <em>The Laplacian.</em> \(\langle w^3, - \Delta_N V \rangle \ge 0\).
@@ -917,12 +925,12 @@ C_j p^{j / 2} q^{j / 4} \mathrm{e}^{- c
       The backward equation in <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class> is
       linear in \(Z\). Its propagator is the adapted operator solution of
     </p>
-    <a id="eq:propagator"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_s  \mathscr{P}_{q, s} =
-        \mathscr{P}_{q, s} H_s (Y_s), \qquad
-\mathscr{P}_{q, q} = I, \qquad s
-        \ge q.\)</td>
+        <td width="100%" align="center"><a id="eq:propagator"></a>\(\displaystyle \partial_s
+        \mathscr{P}_{q, s} = \mathscr{P}_{q, s} H_s (Y_s),
+        \qquad
+\mathscr{P}_{q, q} = I, \qquad s \ge q.\)</td>
         <td align="right">(16.1)</td>
       </tr>
     </table>
@@ -934,35 +942,37 @@ C_j p^{j / 2} q^{j / 4} \mathrm{e}^{- c
       u}{u}) \le
 \exp (C (g_{q_0} + g_{q_0}^2))\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">16.1</class>. </strong><i><class style="font-style: normal"><strong>(Conditional
-      representation) </strong></class><a id="lem:representation"></a> For \(q_0 \le q \le T\), at
-      fixed \(N\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:representation"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle Z_q =\mathbb{E}_q  \left[
-          \mathscr{P}_{q, T} Z_T + \int_q^T \mathscr{P}_{q,
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">16.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Conditional representation) </strong></class><a id="lem:representation"></a>
+        For \(q_0 \le q \le T\), at fixed \(N\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:representation"></a>\(\displaystyle Z_q =\mathbb{E}_q
+            \left[ \mathscr{P}_{q, T} Z_T + \int_q^T \mathscr{P}_{q,
 s}
-          \hspace{0.17em} b_s (Y_s) \hspace{0.17em} \mathrm{d} s \right]
-          .\)</td>
-          <td align="right">(16.2)</td>
-        </tr>
-      </table></i>
+            \hspace{0.17em} b_s (Y_s) \hspace{0.17em} \mathrm{d} s \right]
+            .\)</td>
+            <td align="right">(16.2)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>By the product rule and <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class>,
-      \(\mathrm{d}_s (\mathscr{P}_{q, s} Z_s) = \mathscr{P}_{q, s} H_s Z_s
-      \mathrm{d}
-s - \mathscr{P}_{q, s}  (b_s + H_s Z_s) \mathrm{d} s +
-      \mathscr{P}_{q, s}
-\Xi_s \mathrm{d} W_s = - \mathscr{P}_{q, s} b_s
-      \mathrm{d} s + \mathscr{P}_{q,
-s} \Xi_s \mathrm{d} W_s\). The stochastic
-      integral is a true martingale by Lemma <a href="#lem:pre">14.1</a> and the
-      deterministic bound on \(\mathscr{P}\). Integrate from \(q\) to \(T\)
-      and take \(\mathbb{E}_q\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>By the product rule and <class style="font-style: normal">(<a
+      href="#eq:YZ">1</a>)</class>, \(\mathrm{d}_s (\mathscr{P}_{q, s} Z_s) =
+      \mathscr{P}_{q, s} H_s Z_s \mathrm{d}
+s - \mathscr{P}_{q, s}  (b_s + H_s
+      Z_s) \mathrm{d} s + \mathscr{P}_{q, s}
+\Xi_s \mathrm{d} W_s = -
+      \mathscr{P}_{q, s} b_s \mathrm{d} s + \mathscr{P}_{q,
+s} \Xi_s
+      \mathrm{d} W_s\). The stochastic integral is a true martingale by Lemma
+      <a href="#lem:pre">14.1</a> and the deterministic bound on \(\mathscr{P}\).
+      Integrate from \(q\) to \(T\) and take \(\mathbb{E}_q\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       So \(Z\) is the expected source accumulated on the unresolved scales,
@@ -1057,48 +1067,54 @@ q^{- 2} \mathrm{d} q \hspace{0.17em}
       it contributes to the backward energy only through \(J_T\), with the
       small factor \(\gamma^2 / q_0\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">16.2</class>. </strong><i><class
-      style="font-style: normal"><strong>(Backward feedback) </strong></class><a id="prop:backward"></a> At every
-      cutoff,</i>
-    </p>
-    <i><a id="eq:backward"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \|E_T \|_{L^p} \le C \gamma^6 q_0^{-
-        3 / 2} + C \gamma^{- 1} q_0^{- 1 / 2}
-\hspace{0.17em} \delta_{N, T,
-        p} + C \gamma^2 q_0^{- 1} \|J_T \|_{L^p},\)</td>
-        <td align="right">(16.3)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">16.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Backward feedback)
+        </strong></class><a id="prop:backward"></a> At every cutoff,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:backward"></a>\(\displaystyle \|E_T \|_{L^p} \le C
+          \gamma^6 q_0^{- 3 / 2} + C \gamma^{- 1} q_0^{- 1 / 2}
+
+\hspace{0.17em} \delta_{N, T, p} + C \gamma^2 q_0^{- 1} \|J_T
+          \|_{L^p},\)</td>
+          <td align="right">(16.3)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(\|Z\|^2 \le 3 (\|Z^{\text{t}} \|^2
+      <strong class="enunciation-name">Proof. </strong>\(\|Z\|^2 \le 3 (\|Z^{\text{t}} \|^2
       +\|Z^{\text{b}} \|^2 +\|Z^{\text{l}} \|^2)\) and the three estimates
       above.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <h3 id="auto-17">16.3<span style="margin-left: 1em"></span>Closing the loop<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">16.3</class>. </strong><i><class style="font-style: normal"><strong>(Cutoff-uniform
-      energy estimate) </strong></class><a id="thm:energy"></a> There is \(q_0\),
-      depending only on \(\gamma\), such that for every \(N\), \(T\) and \(p
-      \ge 1\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:energy"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \|E_T \|_{L^p} + \|J_T \|_{L^p}
-          \le C_{\gamma}  (1 + p^5 + \delta_{N, T, p})
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">16.3</class>. </strong><i><class
+        style="font-style: normal"><strong>(Cutoff-uniform energy estimate) </strong></class><a
+        id="thm:energy"></a> There is \(q_0\), depending only on \(\gamma\), such that for
+        every \(N\), \(T\) and \(p \ge 1\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:energy"></a>\(\displaystyle \|E_T \|_{L^p} +
+            \|J_T \|_{L^p} \le C_{\gamma}  (1 + p^5 + \delta_{N, T,
+            p})
 .\)</td>
-          <td align="right">(16.4)</td>
-        </tr>
-      </table></i>
+            <td align="right">(16.4)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>Let \(x = \|E_T \|_p\) and \(y = \|J_T \|_p\).
-      By Propositions <a href="#prop:forward">15.3</a> and <a href="#prop:backward">16.2</a>,
+      <strong class="enunciation-name">Proof. </strong>Let \(x = \|E_T \|_p\) and \(y = \|J_T
+      \|_p\). By Propositions <a href="#prop:forward">15.3</a> and <a href="#prop:backward">16.2</a>,
     </p>
     <center>
       \(\displaystyle y \le A_0  \hspace{0.17em} (C \gamma^3 p^5 + x), \qquad
@@ -1141,13 +1157,14 @@ q^{- 2} \mathrm{d} q \hspace{0.17em}
       fixed \(N\), by letting \(T \to \infty\). Assuming this for the moment,
       we obtain
     </p>
-    <a id="eq:uv-stability"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \sup_N \|E^N_{\infty} \|_{L^p} +
-        \sup_N \|J^N_{\infty} \|_{L^p} \le
-C_{\gamma}  (1 + p^5), \qquad
-        \sup_N \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma}
-q^{- 5 / 2} .\)</td>
+        <td width="100%" align="center"><a id="eq:uv-stability"></a>\(\displaystyle \sup_N \|E^N_{\infty}
+        \|_{L^p} + \sup_N \|J^N_{\infty} \|_{L^p} \le
+C_{\gamma}  (1 + p^5),
+        \qquad \sup_N \mathbb{E} \|Z^N_q \|_2^2 \le C_{\gamma}
+q^{- 5 / 2}
+        .\)</td>
         <td align="right">(16.5)</td>
       </tr>
     </table>
@@ -1164,7 +1181,7 @@ q^{- 5 / 2} .\)</td>
       = b (Y) \mathrm{d} q + H (Y) \mathrm{d} W\).
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">16.4</class>. </strong><class style="font-style: normal"><strong>(Comparison
+      <strong class="enunciation-name">Remark <class style="font-style: normal">16.4</class>. </strong><class style="font-style: normal"><strong>(Comparison
       with the variational method) </strong></class>In the
       Bou&eacute;&ndash;Dupuis approach (Theorem <a href="cqft_lecture3.html#thm:BD">7.1</a>) one
       estimates a drift \(u\) which is the costate up to \(\dot{Q}^{1 / 2}\),

@@ -960,7 +960,7 @@
   <math|h\<in\>\<cal-S\><around|(|\<cal-M\>|)>> define
 
   <\equation>
-    D<rsub|h>*F<around|(|\<varphi\>|)>\<assign\><frac|\<mathd\>|\<mathd\>t>*F*<around|(|\<varphi\>+t*h|)><mid|\|><rsub|t=0>=<big|sum><rsub|i>\<partial\><rsub|i>*g*<around|(|\<varphi\><around|(|f<rsub|1>|)>,\<ldots\>,\<varphi\><around|(|f<rsub|n>|)>|)><around|\<langle\>|f<rsub|i>,h|\<rangle\>>=<around|\<langle\>|D*F<around|(|\<varphi\>|)>,h|\<rangle\>>,
+    D<rsub|h>*F<around|(|\<varphi\>|)>\<assign\><around*|.|<frac|\<mathd\>|\<mathd\>t>*F*<around|(|\<varphi\>+t*h|)>|\|><rsub|t=0>=<big|sum><rsub|i>\<partial\><rsub|i>*g*<around|(|\<varphi\><around|(|f<rsub|1>|)>,\<ldots\>,\<varphi\><around|(|f<rsub|n>|)>|)><around|\<langle\>|f<rsub|i>,h|\<rangle\>>=<around|\<langle\>|D*F<around|(|\<varphi\>|)>,h|\<rangle\>>,
   </equation>
 
   with <math|D*F=<big|sum><rsub|i>\<partial\><rsub|i>*g<around|(|\<ldots\>|)>*f<rsub|i>>,

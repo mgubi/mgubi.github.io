@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 2 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -117,8 +118,8 @@
         Lecture 2.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -222,35 +223,37 @@
       of \(\mathcal{S} (\mathcal{M})\), being Fourier multipliers by \((|k|^2
       + m^2)^{\pm 1}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Definition <class style="font-style: normal">3.1</class>. </strong><i><a id="def:gff"></a>The
-      <em>(massive) Gaussian free field</em> on \(\mathcal{M}\) is the centred
-      Gaussian probability measure \(\mu = \mu_m\) on \(\mathcal{S}'
-      (\mathcal{M})\) with covariance \(C\):</i>
-    </p>
-    <i><a id="eq:gff-cov"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \int \varphi (f) \varphi (g)
-        \hspace{0.17em} \mu (\mathrm{d} \varphi) =
-\langle f, Cg \rangle =
-        \iint f (x) G (x, y) g (y) \hspace{0.17em} \mathrm{d}
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">3.1</class>. </strong><i><a
+        id="def:gff"></a>The <em>(massive) Gaussian free field</em> on \(\mathcal{M}\)
+        is the centred Gaussian probability measure \(\mu = \mu_m\) on
+        \(\mathcal{S}' (\mathcal{M})\) with covariance \(C\):</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:gff-cov"></a>\(\displaystyle \int \varphi (f)
+          \varphi (g)  \hspace{0.17em} \mu (\mathrm{d} \varphi) =
+\langle f,
+          Cg \rangle = \iint f (x) G (x, y) g (y) \hspace{0.17em} \mathrm{d}
 x
-        \hspace{0.17em} \mathrm{d} y,\)</td>
-        <td align="right">(3.2)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>equivalently \(\int \mathrm{e}^{\mathrm{i} \varphi (f)} \mu
-      (\mathrm{d} \varphi) =
+          \hspace{0.17em} \mathrm{d} y,\)</td>
+          <td align="right">(3.2)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>equivalently \(\int \mathrm{e}^{\mathrm{i} \varphi (f)} \mu
+        (\mathrm{d} \varphi) =
 \mathrm{e}^{- \frac{1}{2}  \langle f, Cf
-      \rangle}\) for all \(f \in \mathcal{S} (\mathcal{M})\). Here \(G\) is
-      the Green function of \(A\). On \(\mathbb{R}^d\), \(G (x, y) = G_m  (x -
-      y)\) with \(G_m (x) = \int \frac{\mathrm{e}^{\mathrm{i} k \cdot
-      x}}{|k|^2 + m^2}
+        \rangle}\) for all \(f \in \mathcal{S} (\mathcal{M})\). Here \(G\) is
+        the Green function of \(A\). On \(\mathbb{R}^d\), \(G (x, y) = G_m  (x
+        - y)\) with \(G_m (x) = \int \frac{\mathrm{e}^{\mathrm{i} k \cdot
+        x}}{|k|^2 + m^2}
 \frac{\mathrm{d} k}{(2 \pi)^d}\). On
-      \(\mathbb{T}^d_L\), \(G (x, y) = \sum_{n \in \mathbb{Z}^d} G_m  (x - y +
-      nL)\) (method of images).</i>
-    </p>
+        \(\mathbb{T}^d_L\), \(G (x, y) = \sum_{n \in \mathbb{Z}^d} G_m  (x - y
+        + nL)\) (method of images).</i>
+      </p>
+    </div>
     <p>
       Formally \(\mu_m (\mathrm{d} \varphi) \backprime\backprime = "Z^{- 1}
       \mathrm{e}^{-
@@ -287,31 +290,33 @@ x
         </tr></tbody>
       </table>
     </div>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Existence and regularity) </strong></class><a id="thm:existence"></a>
+        (a) Let \(\mathcal{M}=\mathbb{T}^d_L\), let \((e_n)_{n \geq 0}\) be a
+        real orthonormal basis of \(L^2 (\mathbb{T}^d_L)\) of eigenfunctions
+        of \(- \Delta\), \(- \Delta e_n = \kappa_n e_n\), \(\lambda_n := m^2 +
+        \kappa_n\), and let \((g_n)\) be i.i.d. \(N (0, 1)\). For every \(s >
+        \frac{d}{2} - 1\) the series</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:series"></a>\(\displaystyle \varphi = \sum_{n \geq
+          0} \lambda_n^{- 1 / 2} g_n  \hspace{0.17em} e_n\)</td>
+          <td align="right">(3.3)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>converges a.s. and in \(L^2 (\mathbb{P}; H^{- s}
+        (\mathbb{T}^d_L))\), and its law is \(\mu_m\). In particular \(\mu_m
+        (H^{- s}) = 1\) for \(s > \frac{d}{2} - 1\). (b) On \(\mathbb{R}^d\),
+        \(\mu_m\) exists by the Bochner&ndash;Minlos theorem.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3.2</class>. </strong><i><class style="font-style: normal"><strong>(Existence
-      and regularity) </strong></class><a id="thm:existence"></a> (a) Let
-      \(\mathcal{M}=\mathbb{T}^d_L\), let \((e_n)_{n \geq 0}\) be a real
-      orthonormal basis of \(L^2 (\mathbb{T}^d_L)\) of eigenfunctions of \(-
-      \Delta\), \(- \Delta e_n = \kappa_n e_n\), \(\lambda_n := m^2 +
-      \kappa_n\), and let \((g_n)\) be i.i.d. \(N (0, 1)\). For every \(s >
-      \frac{d}{2} - 1\) the series</i>
-    </p>
-    <i><a id="eq:series"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \varphi = \sum_{n \geq 0}
-        \lambda_n^{- 1 / 2} g_n  \hspace{0.17em} e_n\)</td>
-        <td align="right">(3.3)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>converges a.s. and in \(L^2 (\mathbb{P}; H^{- s} (\mathbb{T}^d_L))\),
-      and its law is \(\mu_m\). In particular \(\mu_m (H^{- s}) = 1\) for \(s
-      > \frac{d}{2} - 1\). (b) On \(\mathbb{R}^d\), \(\mu_m\) exists by the
-      Bochner&ndash;Minlos theorem.</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>(a) With \(\| \varphi \|_{H^{- s}}^2 = \sum_n (1
-      + \kappa_n)^{- s}  \langle e_n, \varphi
+      <strong class="enunciation-name">Proof. </strong>(a) With \(\| \varphi \|_{H^{- s}}^2 =
+      \sum_n (1 + \kappa_n)^{- s}  \langle e_n, \varphi
 \rangle^2\),
     </p>
     <center>
@@ -343,7 +348,7 @@ x
       semidefinite by the Schur product theorem.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">3.3</class>. </strong>The
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.3</class>. </strong>The
       Cameron&ndash;Martin space of \(\mu_m\) is \(H^1 (\mathcal{M})\) with
       norm \(\langle h, Ah \rangle^{1 / 2}\): the fields of finite action. It
       has measure zero, and typical samples are much rougher (Exercise <a
@@ -362,34 +367,36 @@ x
       \partial_{\tau}^2 + B\) with \(B := m^2 - \Delta_N\) on \(L^2 (N)\), and
       we set \(\omega := B^{1 / 2} \geq m\).
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">3.4</class>. </strong><i><a
+        id="prop:RP"></a>(a) As an operator-valued kernel in the time variables, \(C
+        (\tau, \tau') = \mathrm{e}^{- | \tau - \tau' | \omega} (2 \omega)^{-
+        1}\). (b) For \(f \in \mathcal{S} (\mathcal{M})\) with \(\text{supp} f
+        \subset \{\tau > 0\}\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:RP"></a>\(\displaystyle \langle \Theta f, Cf
+          \rangle = \left| (2 \omega)^{- 1 / 2} \int_0^{\infty}
+\mathrm{e}^{-
+          \tau \omega} f (\tau, \cdot \left) \hspace{0.17em} \mathrm{d}
+\tau
+          \right|^2_{L^2 (N)} \geq 0. \right.\)</td>
+          <td align="right">(3.4)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>(c) \(\mu_m\) on \(\mathbb{R}^d\) satisfies (OS0)&ndash;(OS4).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">3.4</class>. </strong><i><a id="prop:RP"></a>(a)
-      As an operator-valued kernel in the time variables, \(C (\tau, \tau') =
-      \mathrm{e}^{- | \tau - \tau' | \omega} (2 \omega)^{- 1}\). (b) For \(f
-      \in \mathcal{S} (\mathcal{M})\) with \(\text{supp} f \subset \{\tau >
-      0\}\),</i>
-    </p>
-    <i><a id="eq:RP"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \langle \Theta f, Cf \rangle =
-        \left| (2 \omega)^{- 1 / 2} \int_0^{\infty}
-\mathrm{e}^{- \tau \omega}
-        f (\tau, \cdot \left) \hspace{0.17em} \mathrm{d}
-\tau \right|^2_{L^2
-        (N)} \geq 0. \right.\)</td>
-        <td align="right">(3.4)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>(c) \(\mu_m\) on \(\mathbb{R}^d\) satisfies (OS0)&ndash;(OS4).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>(a) follows from the partial Fourier transform
-      in \(\tau\), the spectral theorem for \(B\), and the scalar identity
-      \(\int_{\mathbb{R}} \mathrm{e}^{\mathrm{i} kt} (k^2 + w^2)^{- 1}
-
-\frac{\mathrm{d} k}{2 \pi} = \mathrm{e}^{- w |t|} / (2 w)\), \(w > 0\).
-      (b) Since \(\Theta f\) is supported in \(\{\tau < 0\}\),
+      <strong class="enunciation-name">Proof. </strong>(a) follows from the partial Fourier
+      transform in \(\tau\), the spectral theorem for \(B\), and the scalar
+      identity \(\int_{\mathbb{R}} \mathrm{e}^{\mathrm{i} kt} (k^2 + w^2)^{-
+      1}
+\frac{\mathrm{d} k}{2 \pi} = \mathrm{e}^{- w |t|} / (2 w)\), \(w >
+      0\). (b) Since \(\Theta f\) is supported in \(\{\tau < 0\}\),
     </p>
     <center>
       \(\displaystyle \begin{array}{rl}
@@ -456,7 +463,7 @@ x
       \(d\) see Exercise <a href="cqft_notes_L1.html#ex:lattice-action">2.3</a> and Exercise <a href="#ex:lattice-gff">3.14</a>).
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">3.5</class>. </strong><class style="font-style: normal"><strong>(Nelson's
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.5</class>. </strong><class style="font-style: normal"><strong>(Nelson's
       Markov property) </strong></class><a id="rem:markov"></a> For \(U \subset
       \mathbb{R}^d\) open let \(\Sigma_U\) be the \(\sigma\)-algebra generated
       by the \(\varphi (f)\) with \(\text{supp} f \subset U\), and for \(K\)
@@ -549,7 +556,7 @@ x
       more.
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">3.6</class>. </strong><class style="font-style: normal"><strong>(Symanzik,
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.6</class>. </strong><class style="font-style: normal"><strong>(Symanzik,
       Brownian paths and loop soups) </strong></class><a id="rem:symanzik"></a> The
       Euclidean programme goes back to Symanzik [<a href="#bib-Sym66">Sym66</a>, <a href="#bib-Sym69">Sym69</a>],
       who proposed to study QFT through its Schwinger functions, viewed as the
@@ -601,7 +608,7 @@ x
       see [<a href="#bib-WP21">WP21</a>].
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">3.7</class>. </strong><class style="font-style: normal"><strong>(Euclidean
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.7</class>. </strong><class style="font-style: normal"><strong>(Euclidean
       K&auml;ll&eacute;n&ndash;Lehmann representation) </strong></class><a id="rem:KL-euclid"></a>
       The computation in Proposition <a href="#prop:RP">3.4</a>(a) says that \(\int
       \mathrm{d} \Omega_M (\textbf{p}) \hspace{0.17em} \mathrm{e}^{-
@@ -614,12 +621,12 @@ x
       two-point function of any theory satisfying the Wightman (or OS) axioms
       is
     </p>
-    <a id="eq:KL-euclid"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle S_2 (x) = v^2 + \int_{[0, \infty)}
-        \rho (\mathrm{d} M^2)  \hspace{0.17em} G_M
-(x), \qquad x \neq 0,
-        \qquad \text{i.e.} \qquad \hat{S}_2^T (k) = \int_{[0,
+        <td width="100%" align="center"><a id="eq:KL-euclid"></a>\(\displaystyle S_2 (x) = v^2 + \int_{[0,
+        \infty)} \rho (\mathrm{d} M^2)  \hspace{0.17em} G_M
+(x), \qquad x \neq
+        0, \qquad \text{i.e.} \qquad \hat{S}_2^T (k) = \int_{[0,
 \infty)}
         \frac{\rho (\mathrm{d} M^2)}{|k|^2 + M^2},\)</td>
         <td align="right">(3.5)</td>
@@ -884,26 +891,28 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
       regularisation. The subtraction is encoded in Hermite polynomials with
       variance \(c \geq 0\),
     </p>
-    <a id="eq:hermite"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{e}^{ta - ct^2 / 2} = \sum_{n
-        \geq 0} \frac{t^n}{n!} H_n (a ; c),
-\qquad H_2 = a^2 - c, \quad H_3 =
-        a^3 - 3 ca, \quad H_4 = a^4 - 6 ca^2 + 3 c^2
+        <td width="100%" align="center"><a id="eq:hermite"></a>\(\displaystyle \mathrm{e}^{ta - ct^2 /
+        2} = \sum_{n \geq 0} \frac{t^n}{n!} H_n (a ; c),
+\qquad H_2 = a^2 - c,
+        \quad H_3 = a^3 - 3 ca, \quad H_4 = a^4 - 6 ca^2 + 3 c^2
 .\)</td>
         <td align="right">(3.6)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Lemma <class style="font-style: normal">3.8</class>. </strong><i><a id="lem:hermite"></a>If \((X,
-      Y)\) is a centred Gaussian vector with \(\mathbb{E}X^2 = a\) and
-      \(\mathbb{E}Y^2 = b\), then \(\mathbb{E} [H_n (X ; a) H_k (Y ; b)] =
-      \delta_{nk}  \hspace{0.17em} n!
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">3.8</class>. </strong><i><a id="lem:hermite"></a>If
+        \((X, Y)\) is a centred Gaussian vector with \(\mathbb{E}X^2 = a\) and
+        \(\mathbb{E}Y^2 = b\), then \(\mathbb{E} [H_n (X ; a) H_k (Y ; b)] =
+        \delta_{nk}  \hspace{0.17em} n!
 \hspace{0.17em}
-      (\mathbb{E}[XY])^n\).</i>
-    </p>
+        (\mathbb{E}[XY])^n\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(\mathbb{E} [\mathrm{e}^{sX - s^2 a / 2}
+      <strong class="enunciation-name">Proof. </strong>\(\mathbb{E} [\mathrm{e}^{sX - s^2 a / 2}
       \mathrm{e}^{tY - t^2 b / 2}] =
 \mathrm{e}^{\frac{1}{2} \mathbb{E} (sX +
       tY)^2 - \frac{1}{2} s^2 a -
@@ -935,45 +944,47 @@ c_{\varepsilon}), \qquad :
         <td align="right">(3.7)</td>
       </tr>
     </table>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.9</class>. </strong><i><class
+        style="font-style: normal"><strong>(Wick powers) </strong></class><a id="thm:wick"></a> Let \(n \geq
+        1\) with \(n (d - 2) < d\), i.e. every \(n\) if \(d \leq 2\), \(n \leq
+        2\) if \(d = 3\), \(n = 1\) if \(d \geq 4\). Then for every \(f \in
+        \mathcal{S} (\mathcal{M})\), \(: \varphi^n : (f) := \lim_{\varepsilon
+        \to 0} : \varphi^n_{\varepsilon} : (f)\) exists in \(L^2 (\mu_m)\), is
+        independent of \(\eta\), and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:wick-cov"></a>\(\displaystyle \mathbb{E} [: \varphi^n
+          : (f) : \varphi^k : (g)] = \delta_{nk}
+\hspace{0.17em} n! \iint f
+          (x) G (x - y)^n g (y) \hspace{0.17em} \mathrm{d} x
+\hspace{0.17em}
+          \mathrm{d} y.\)</td>
+          <td align="right">(3.8)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>If instead \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
+        0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \to
+        \infty\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3.9</class>. </strong><i><class style="font-style: normal"><strong>(Wick
-      powers) </strong></class><a id="thm:wick"></a> Let \(n \geq 1\) with \(n (d - 2) <
-      d\), i.e. every \(n\) if \(d \leq 2\), \(n \leq 2\) if \(d = 3\), \(n =
-      1\) if \(d \geq 4\). Then for every \(f \in \mathcal{S} (\mathcal{M})\),
-      \(: \varphi^n : (f) := \lim_{\varepsilon \to 0} :
-      \varphi^n_{\varepsilon} : (f)\) exists in \(L^2 (\mu_m)\), is
-      independent of \(\eta\), and</i>
-    </p>
-    <i><a id="eq:wick-cov"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E} [: \varphi^n : (f) :
-        \varphi^k : (g)] = \delta_{nk}
-\hspace{0.17em} n! \iint f (x) G (x -
-        y)^n g (y) \hspace{0.17em} \mathrm{d} x
-\hspace{0.17em} \mathrm{d}
-        y.\)</td>
-        <td align="right">(3.8)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>If instead \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
-      0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \to
-      \infty\).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong><em>Step 1: a uniform bound.</em> Let \(K (z) =
-      1 + \log_+ (1 / |z|)\) if \(d = 2\), \(K (z) = 1 + |z|^{2 - d}\) if \(d
-      \geq 3\), \(K \equiv 1\) if \(d = 1\). Then \(0 < G \leq C_0 K\), and we
-      claim \(G_{\varepsilon, \delta} \leq CK\) uniformly in \(\varepsilon,
-      \delta \in (0, 1]\). Let \(r = \max (\varepsilon, \delta)\). Then
-      \(\text{supp} (\eta_{\varepsilon} \ast \eta_{\delta}) \subset B (0, 2
-      r)\), \(\int \eta_{\varepsilon} \ast \eta_{\delta} = 1\) and \(\|
-      \eta_{\varepsilon} \ast \eta_{\delta} \|_{\infty} \leq r^{- d} \|
-      \eta
-\|_{\infty}\). If \(|z| \geq 4 r\), then \(G_{\varepsilon, \delta}
-      (z) \leq \sup_{|w| \geq |z| / 2} G (w) \leq C_0 K (z /
-2) \leq CK (z)\).
-      If \(|z| < 4 r\), then
+      <strong class="enunciation-name">Proof. </strong><em>Step 1: a uniform bound.</em> Let \(K
+      (z) = 1 + \log_+ (1 / |z|)\) if \(d = 2\), \(K (z) = 1 + |z|^{2 - d}\)
+      if \(d \geq 3\), \(K \equiv 1\) if \(d = 1\). Then \(0 < G \leq C_0 K\),
+      and we claim \(G_{\varepsilon, \delta} \leq CK\) uniformly in
+      \(\varepsilon, \delta \in (0, 1]\). Let \(r = \max (\varepsilon,
+      \delta)\). Then \(\text{supp} (\eta_{\varepsilon} \ast \eta_{\delta})
+      \subset B (0, 2 r)\), \(\int \eta_{\varepsilon} \ast \eta_{\delta} = 1\)
+      and \(\| \eta_{\varepsilon} \ast \eta_{\delta} \|_{\infty} \leq r^{- d}
+      \| \eta
+\|_{\infty}\). If \(|z| \geq 4 r\), then \(G_{\varepsilon,
+      \delta} (z) \leq \sup_{|w| \geq |z| / 2} G (w) \leq C_0 K (z /
+2) \leq
+      CK (z)\). If \(|z| < 4 r\), then
     </p>
     <center>
       \(\displaystyle G_{\varepsilon, \delta} (z) \leq \| \eta \|_{\infty}
@@ -1014,9 +1025,9 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">3.10</class>. </strong>(i) The subtraction
-      of \(c_{\varepsilon} \to \infty\) is the simplest instance of
-      renormalisation: \(\varphi_{\varepsilon} (x)^n\) itself has no limit
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.10</class>. </strong>(i) The
+      subtraction of \(c_{\varepsilon} \to \infty\) is the simplest instance
+      of renormalisation: \(\varphi_{\varepsilon} (x)^n\) itself has no limit
       when \(d \geq 2\). (ii) The variables \(: \varphi^n : (f)\) belong to
       the \(n\)-th Wiener chaos, and \(L^2 (\mu_m) \simeq \bigoplus_n
       \mathcal{H}_n\) is the symmetric Fock space over \(H^{- 1}
@@ -1055,17 +1066,19 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
         following argument is independent and covers all Wick powers.
       </div>
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proposition <class style="font-style: normal">3.11</class>. </strong><i><a id="prop:no-wick"></a>Let
-      \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv} 0\). Then the
-      family \((: \varphi_{\varepsilon}^n : (f))_{\varepsilon \in (0, 1]}\) is
-      not tight. In particular there is no random distribution \(\Psi\), on
-      any probability space, such that \(: \varphi_{\varepsilon_k}^n : \to
-      \Psi\) in law in \(\mathcal{S}'\) along some sequence \(\varepsilon_k
-      \to 0\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">3.11</class>. </strong><i><a
+        id="prop:no-wick"></a>Let \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
+        0\). Then the family \((: \varphi_{\varepsilon}^n : (f))_{\varepsilon
+        \in (0, 1]}\) is not tight. In particular there is no random
+        distribution \(\Psi\), on any probability space, such that \(:
+        \varphi_{\varepsilon_k}^n : \to \Psi\) in law in \(\mathcal{S}'\)
+        along some sequence \(\varepsilon_k \to 0\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>Let \(X_{\varepsilon} = :
+      <strong class="enunciation-name">Proof. </strong>Let \(X_{\varepsilon} = :
       \varphi_{\varepsilon}^n : (f) \in \mathcal{H}_n\) and
       \(\sigma_{\varepsilon}^2 =\mathbb{E}X_{\varepsilon}^2\), so that
       \(\sigma_{\varepsilon} \to \infty\) by Theorem <a href="#thm:wick">3.9</a>. The
@@ -1103,7 +1116,7 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       contradiction.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">3.12</class>. </strong><class style="font-style: normal"><strong>(The
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.12</class>. </strong><class style="font-style: normal"><strong>(The
       law of a bounded chaos is controlled by its \(L^2\) norm)
       </strong></class><a id="rem:chaos-norms"></a>Let \(X\) be in the bounded chaos
       \(\bigoplus_{k \leq n} \mathcal{H}_k\), e.g. a polynomial of degree
@@ -1167,12 +1180,12 @@ n}\) for \(t > 0\).
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle D_h F (\varphi) :=
-        \frac{\mathrm{d}}{\mathrm{d} t} F (\varphi + th) |_{t = 0}
-= \sum_i
-        \partial_i g (\varphi (f_1), \ldots, \varphi (f_n)) \langle f_i,
-        h
-\rangle = \langle DF (\varphi), h \rangle,\)</td>
+        <td width="100%" align="center">\(\displaystyle D_h F (\varphi) := \left.
+        \frac{\mathrm{d}}{\mathrm{d} t} F (\varphi + th)
+\right|_{t = 0} =
+        \sum_i \partial_i g (\varphi (f_1), \ldots, \varphi (f_n))
+\langle
+        f_i, h \rangle = \langle DF (\varphi), h \rangle,\)</td>
         <td align="right">(3.9)</td>
       </tr>
     </table>
@@ -1180,17 +1193,20 @@ n}\) for \(t > 0\).
       with \(DF = \sum_i \partial_i g (\ldots) f_i\), formally \(DF (x) =
       \delta F / \delta \varphi (x)\).
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">3.13</class>. </strong><i><class
+        style="font-style: normal"><strong>(Gaussian integration by parts) </strong></class><a id="lem:gibp"></a>
+        If \((Y, X_1, \ldots, X_n)\) is a centred Gaussian vector and \(g \in
+        C^{\infty}_b (\mathbb{R}^n)\), then \(\mathbb{E} [Yg (X)] = \sum_i
+        \mathbb{E} [YX_i]  \hspace{0.17em} \mathbb{E}
+[\partial_i g
+        (X)]\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Lemma <class style="font-style: normal">3.13</class>. </strong><i><class style="font-style: normal"><strong>(Gaussian
-      integration by parts) </strong></class><a id="lem:gibp"></a> If \((Y, X_1, \ldots,
-      X_n)\) is a centred Gaussian vector and \(g \in C^{\infty}_b
-      (\mathbb{R}^n)\), then \(\mathbb{E} [Yg (X)] = \sum_i \mathbb{E} [YX_i]
-      \hspace{0.17em} \mathbb{E}
-[\partial_i g (X)]\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>For \(g = \mathrm{e}^{\mathrm{i} \langle u,
-      \cdot \rangle}\): \(\mathbb{E} [Y \mathrm{e}^{\mathrm{i} \langle u, X
+      <strong class="enunciation-name">Proof. </strong>For \(g = \mathrm{e}^{\mathrm{i} \langle
+      u, \cdot \rangle}\): \(\mathbb{E} [Y \mathrm{e}^{\mathrm{i} \langle u, X
       \rangle}] = - \mathrm{i}
 \frac{\mathrm{d}}{\mathrm{d} \theta} \mathbb{E}
       [\mathrm{e}^{\mathrm{i} \theta
@@ -1201,48 +1217,52 @@ Y + \mathrm{i} \langle u, X \rangle}]
       The general case follows by Fourier inversion for \(g \in \mathcal{S}
       (\mathbb{R}^n)\) and then by approximation.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">3.14</class>. </strong><i><class
-      style="font-style: normal"><strong>(Dyson&ndash;Schwinger equation for the GFF)
-      </strong></class><a id="prop:DS"></a> For all \(F \in \mathcal{F}C^{\infty}_b\)
-      and \(h \in \mathcal{S} (\mathcal{M})\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:DS"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\mu_m}  [D_h F]
-          =\mathbb{E}_{\mu_m}  \left[ F \hspace{0.17em}
-\varphi (Ah) \right],
-          \qquad \text{formally} \quad \mathbb{E} \left[
-\frac{\delta
-          F}{\delta \varphi (x)} \right] =\mathbb{E} \left[ F
-\hspace{0.17em}
-          (m^2 - \Delta) \varphi (x) \right] .\)</td>
-          <td align="right">(3.10)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">3.14</class>.
+        </strong><i><class style="font-style: normal"><strong>(Dyson&ndash;Schwinger equation for
+        the GFF) </strong></class><a id="prop:DS"></a> For all \(F \in
+        \mathcal{F}C^{\infty}_b\) and \(h \in \mathcal{S} (\mathcal{M})\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:DS"></a>\(\displaystyle \mathbb{E}_{\mu_m}
+            [D_h F] =\mathbb{E}_{\mu_m}  \left[ F \hspace{0.17em}
+\varphi (Ah)
+            \right], \qquad \text{formally} \quad \mathbb{E}
+            \left[
+\frac{\delta F}{\delta \varphi (x)} \right] =\mathbb{E}
+            \left[ F
+\hspace{0.17em} (m^2 - \Delta) \varphi (x) \right]
+            .\)</td>
+            <td align="right">(3.10)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Under \(\mu_m\), \((\varphi (Ah), \varphi (f_1),
-      \ldots, \varphi (f_n))\) is centred Gaussian with \(\mathbb{E} [\varphi
-      (Ah) \varphi (f_i)] = \langle Ah, Cf_i \rangle = \langle
+      <strong class="enunciation-name">Proof. </strong>Under \(\mu_m\), \((\varphi (Ah), \varphi
+      (f_1), \ldots, \varphi (f_n))\) is centred Gaussian with \(\mathbb{E}
+      [\varphi (Ah) \varphi (f_i)] = \langle Ah, Cf_i \rangle = \langle
 h, f_i
       \rangle\). Apply Lemma <a href="#lem:gibp">3.13</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">3.15</class>. </strong><class style="font-style: normal"><strong>(DS
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.15</class>. </strong><class style="font-style: normal"><strong>(DS
       \(=\) Euclidean field equation) </strong></class><a id="rem:DS"></a> (i)
       Choosing \(F = \varphi (f_2) \cdots \varphi (f_n)\) (allowed by
       approximation, since all moments are finite) gives the hierarchy for the
       Schwinger functions \(S_n (x_1, \ldots, x_n) =\mathbb{E} [\varphi (x_1)
       \cdots \varphi (x_n)]\):
     </p>
-    <a id="eq:DS-hierarchy"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (m^2 - \Delta_{x_1}) S_n (x_1,
-        \ldots, x_n) = \sum_{j = 2}^n \delta (x_1 -
-x_j)  \hspace{0.17em} S_{n
-        - 2} (x_2, \ldots, \widehat{x_j}, \ldots, x_n),\)</td>
+        <td width="100%" align="center"><a id="eq:DS-hierarchy"></a>\(\displaystyle (m^2 - \Delta_{x_1}) S_n
+        (x_1, \ldots, x_n) = \sum_{j = 2}^n \delta (x_1 -
+x_j)
+        \hspace{0.17em} S_{n - 2} (x_2, \ldots, \widehat{x_j}, \ldots,
+        x_n),\)</td>
         <td align="right">(3.11)</td>
       </tr>
     </table>
@@ -1254,12 +1274,12 @@ x_j)  \hspace{0.17em} S_{n
       (ii) For a formal Gibbs measure \(\mu_V \propto \mathrm{e}^{- \int V
       (\varphi)} \mu_m\) the same computation gives
     </p>
-    <a id="eq:DS-V"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\mu_V}  [D_h F]
-        =\mathbb{E}_{\mu_V}  \left[ F \hspace{0.17em}
-((m^2 - \Delta) \varphi
-        + V' (\varphi)) (h) \right],\)</td>
+        <td width="100%" align="center"><a id="eq:DS-V"></a>\(\displaystyle \mathbb{E}_{\mu_V}  [D_h
+        F] =\mathbb{E}_{\mu_V}  \left[ F \hspace{0.17em}
+((m^2 - \Delta)
+        \varphi + V' (\varphi)) (h) \right],\)</td>
         <td align="right">(3.12)</td>
       </tr>
     </table>
@@ -1334,31 +1354,33 @@ x_j)  \hspace{0.17em} S_{n
     <p>
       The DS equation is not only satisfied by the GFF; it characterises it.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.16</class>. </strong><i><class
+        style="font-style: normal"><strong>(DS characterises the GFF) </strong></class><a id="thm:DS-unique"></a>
+        Let \(\nu\) be a probability measure on \(\mathcal{S}' (\mathcal{M})\)
+        such that \(\varphi (f) \in L^1 (\nu)\) for all \(f \in \mathcal{S}
+        (\mathcal{M})\) and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:DS-nu"></a>\(\displaystyle \mathbb{E}_{\nu}  [D_h
+          F] =\mathbb{E}_{\nu}  [F \hspace{0.17em} \varphi (Ah)]
+\qquad
+          \text{for all } F \in \mathcal{F}C^{\infty}_b, h \in
+          \mathcal{S}
+(\mathcal{M}) .\)</td>
+          <td align="right">(3.13)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>Then \(\nu = \mu_m\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3.16</class>. </strong><i><class style="font-style: normal"><strong>(DS
-      characterises the GFF) </strong></class><a id="thm:DS-unique"></a> Let \(\nu\) be a
-      probability measure on \(\mathcal{S}' (\mathcal{M})\) such that
-      \(\varphi (f) \in L^1 (\nu)\) for all \(f \in \mathcal{S}
-      (\mathcal{M})\) and</i>
-    </p>
-    <i><a id="eq:DS-nu"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E}_{\nu}  [D_h F]
-        =\mathbb{E}_{\nu}  [F \hspace{0.17em} \varphi (Ah)]
-\qquad \text{for
-        all } F \in \mathcal{F}C^{\infty}_b, h \in \mathcal{S}
-(\mathcal{M})
-        .\)</td>
-        <td align="right">(3.13)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>Then \(\nu = \mu_m\).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>Fix a real \(f \in \mathcal{S} (\mathcal{M})\)
-      and let \(h = Cf \in \mathcal{S} (\mathcal{M})\), so that \(Ah = f\).
-      For \(s \in \mathbb{R}\) apply <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
+      <strong class="enunciation-name">Proof. </strong>Fix a real \(f \in \mathcal{S}
+      (\mathcal{M})\) and let \(h = Cf \in \mathcal{S} (\mathcal{M})\), so
+      that \(Ah = f\). For \(s \in \mathbb{R}\) apply <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
       to the real and imaginary parts of \(F_s (\varphi) =
       \mathrm{e}^{\mathrm{i} s \varphi (f)}\), which belong to
       \(\mathcal{F}C^{\infty}_b\), using \(D_h F_s = \mathrm{i} s \langle f,
@@ -1387,18 +1409,19 @@ x_j)  \hspace{0.17em} S_{n
       \mu_m\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">3.17</class>. </strong>The integrability
-      assumption is the minimal one needed for <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
-      to make sense, since \(\varphi (Ah)\) ranges over all \(\varphi (g)\),
-      \(g \in \mathcal{S} (\mathcal{M})\). Only test functions \(F =
-      \mathrm{e}^{\mathrm{i} s \varphi (f)}\) were used: DS turns into a
-      first-order linear ODE for the characteristic function. For \(m = 0\) on
-      the torus no probability measure solves <class style="font-style: normal">(<a href="#eq:DS-nu">3.13</a>)</class>
-      (Exercise <a href="#ex:massless">3.9</a>). For interacting theories, <class style="font-style: normal">(<a
-      href="#eq:DS-V">3.12</a>)</class> is a singular nonlinear relation, and uniqueness
-      of its solutions is a hard and largely open problem. In finite
-      dimensions it is easy (Exercise <a href="#ex:DS-finite">3.8</a>). For a result in this
-      direction for the exponential interaction in \(d = 2\) see [<a href="#bib-DGT22">DGT22</a>].
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.17</class>. </strong>The
+      integrability assumption is the minimal one needed for <class style="font-style: normal">(<a
+      href="#eq:DS-nu">3.13</a>)</class> to make sense, since \(\varphi (Ah)\) ranges
+      over all \(\varphi (g)\), \(g \in \mathcal{S} (\mathcal{M})\). Only test
+      functions \(F = \mathrm{e}^{\mathrm{i} s \varphi (f)}\) were used: DS
+      turns into a first-order linear ODE for the characteristic function. For
+      \(m = 0\) on the torus no probability measure solves <class style="font-style: normal">(<a
+      href="#eq:DS-nu">3.13</a>)</class> (Exercise <a href="#ex:massless">3.9</a>). For interacting
+      theories, <class style="font-style: normal">(<a href="#eq:DS-V">3.12</a>)</class> is a singular
+      nonlinear relation, and uniqueness of its solutions is a hard and
+      largely open problem. In finite dimensions it is easy (Exercise <a href="#ex:DS-finite">3.8</a>).
+      For a result in this direction for the exponential interaction in \(d =
+      2\) see [<a href="#bib-DGT22">DGT22</a>].
     </p>
     <h3 id="auto-12">3.5<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
     stochastic quantisation<span style="margin-left: 1em"></span></h3>
@@ -1421,12 +1444,12 @@ x_j)  \hspace{0.17em} S_{n
         introducing a fictitious &ldquo;stochastic time&rdquo; \(t\):
       </div>
     </p>
-    <a id="eq:SQE"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t \Phi = - (m^2 - \Delta)
-        \Phi - V' (\Phi) + \sqrt{2}
-\hspace{0.17em} \xi \qquad \text{on }
-        \mathbb{R}_+ \times \mathcal{M},\)</td>
+        <td width="100%" align="center"><a id="eq:SQE"></a>\(\displaystyle \partial_t \Phi = - (m^2
+        - \Delta) \Phi - V' (\Phi) + \sqrt{2}
+\hspace{0.17em} \xi \qquad
+        \text{on } \mathbb{R}_+ \times \mathcal{M},\)</td>
         <td align="right">(3.14)</td>
       </tr>
     </table>
@@ -1469,30 +1492,33 @@ x_j)  \hspace{0.17em} S_{n
       \mathcal{F}C^{\infty}_b\), It&ocirc;'s formula shows that \(F (\Phi_t) -
       \int_0^t \mathcal{L}F (\Phi_r) \mathrm{d} r\) is a martingale, with
     </p>
-    <a id="eq:generator"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{L}F (\varphi) = \sum_{i, j}
-        \langle f_i, f_j \rangle
-\hspace{0.17em} \partial_{ij} g (\ldots) -
-        \sum_i \varphi (Af_i)
-\hspace{0.17em} \partial_i g (\ldots) .\)</td>
+        <td width="100%" align="center"><a id="eq:generator"></a>\(\displaystyle \mathcal{L}F (\varphi) =
+        \sum_{i, j} \langle f_i, f_j \rangle
+\hspace{0.17em} \partial_{ij} g
+        (\ldots) - \sum_i \varphi (Af_i)
+\hspace{0.17em} \partial_i g
+        (\ldots) .\)</td>
         <td align="right">(3.15)</td>
       </tr>
     </table>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">3.18</class>.
+        </strong><i><class style="font-style: normal"><strong>(DS \(\Rightarrow\) invariance)
+        </strong></class><a id="prop:inf-inv"></a> For \(F, G \in \mathcal{F}C^{\infty}_b\):
+        \(\mathbb{E}_{\mu_m}  [G \hspace{0.17em} \mathcal{L}F] =
+        -\mathbb{E}_{\mu_m}
+[\langle DG, DF \rangle_{L^2 (\mathcal{M})}]\). In
+        particular \(\mathbb{E}_{\mu_m}  [\mathcal{L}F] = 0\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proposition <class style="font-style: normal">3.18</class>. </strong><i><class
-      style="font-style: normal"><strong>(DS \(\Rightarrow\) invariance) </strong></class><a id="prop:inf-inv"></a>
-      For \(F, G \in \mathcal{F}C^{\infty}_b\): \(\mathbb{E}_{\mu_m}  [G
-      \hspace{0.17em} \mathcal{L}F] = -\mathbb{E}_{\mu_m}
-[\langle DG, DF
-      \rangle_{L^2 (\mathcal{M})}]\). In particular \(\mathbb{E}_{\mu_m}
-      [\mathcal{L}F] = 0\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>We may assume \(F = g (\varphi (f_1), \ldots)\)
-      and \(G = k (\varphi (f_1), \ldots)\) with the same \(f_i\). Apply
-      <class style="font-style: normal">(<a href="#eq:DS">3.10</a>)</class> to the cylinder function \(k
-      \hspace{0.17em} \partial_i g\) with \(h = f_i\) and sum over \(i\):
+      <strong class="enunciation-name">Proof. </strong>We may assume \(F = g (\varphi (f_1),
+      \ldots)\) and \(G = k (\varphi (f_1), \ldots)\) with the same \(f_i\).
+      Apply <class style="font-style: normal">(<a href="#eq:DS">3.10</a>)</class> to the cylinder function
+      \(k \hspace{0.17em} \partial_i g\) with \(h = f_i\) and sum over \(i\):
       \(\sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g \hspace{0.17em}
       \varphi
 (Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle \mathbb{E}
@@ -1506,84 +1532,90 @@ x_j)  \hspace{0.17em} S_{n
       under the Langevin flow) are two faces of the same integration by parts
       formula.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3.19</class>. </strong><i><class style="font-style: normal"><strong>(Parabolic
-      stochastic quantisation of the GFF) </strong></class><a id="thm:parabolic"></a> Let
-      \(\xi\) be space-time white noise on \(\mathbb{R} \times \mathcal{M}\).
-      For \(t \in \mathbb{R}\) and \(f \in \mathcal{S} (\mathcal{M})\)
-      define</i>
-    </p>
-    <i><a id="eq:stat-sol"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \Phi_t (f) := \sqrt{2}
-        \hspace{0.17em} \xi (K_{t, f}), \qquad K_{t, f} (r,
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.19</class>. </strong><i><class
+        style="font-style: normal"><strong>(Parabolic stochastic quantisation of the GFF)
+        </strong></class><a id="thm:parabolic"></a> Let \(\xi\) be space-time white noise on
+        \(\mathbb{R} \times \mathcal{M}\). For \(t \in \mathbb{R}\) and \(f
+        \in \mathcal{S} (\mathcal{M})\) define</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:stat-sol"></a>\(\displaystyle \Phi_t (f) := \sqrt{2}
+          \hspace{0.17em} \xi (K_{t, f}), \qquad K_{t, f} (r,
 x) :=
-        \mathbb{1}_{\{r < t\}} (\mathrm{e}^{- (t - r) A} f) (x) .\)</td>
-        <td align="right">(3.16)</td>
-      </tr>
-    </table></i>
-    <div style="margin-bottom: 1em">
-      <i><ol>
-        <li>
-          <p>
-            \(\Phi\) is a centred Gaussian process with \(\mathbb{E} [\Phi_t
-            (f) \Phi_s (g)] = \langle f, \mathrm{e}^{- |t - s|A} Cg
-\rangle\).
-            In particular \((\Phi_t)_{t \in \mathbb{R}}\) is stationary and,
-            for every \(t\), \(\Phi_t\) has a version with values in
-            \(\mathcal{S}' (\mathcal{M})\) whose law is \(\mu_m\).
-          </p>
-        </li>
-        <li>
-          <p>
-            \(\Phi\) is a mild and weak solution of <class style="font-style: normal">(<a href="#eq:SQE">3.14</a>)</class>
-            with \(V = 0\): for \(s < t\) and \(h \in \mathcal{S}
-            (\mathcal{M})\),
-          </p>
-          <center>
-            \(\displaystyle \begin{array}{c}
+          \mathbb{1}_{\{r < t\}} (\mathrm{e}^{- (t - r) A} f) (x) .\)</td>
+          <td align="right">(3.16)</td>
+        </tr>
+      </table></i>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                \(\Phi\) is a centred Gaussian process with \(\mathbb{E}
+                [\Phi_t (f) \Phi_s (g)] = \langle f, \mathrm{e}^{- |t - s|A}
+                Cg
+\rangle\). In particular \((\Phi_t)_{t \in \mathbb{R}}\) is
+                stationary and, for every \(t\), \(\Phi_t\) has a version with
+                values in \(\mathcal{S}' (\mathcal{M})\) whose law is
+                \(\mu_m\).
+              </p>
+            </li>
+            <li>
+              <p>
+                \(\Phi\) is a mild and weak solution of <class style="font-style: normal">(<a
+                href="#eq:SQE">3.14</a>)</class> with \(V = 0\): for \(s < t\) and \(h
+                \in \mathcal{S} (\mathcal{M})\),
+              </p>
+              <center>
+                \(\displaystyle \begin{array}{c}
   \Phi_t (h) = \Phi_s
-            (\mathrm{e}^{- (t - s) A} h) + \sqrt{2}  \hspace{0.17em}
+                (\mathrm{e}^{- (t - s) A} h) + \sqrt{2}  \hspace{0.17em}
   \xi
-            \left( \mathbb{1}_{(s, t)} (r) \hspace{0.17em} \mathrm{e}^{- (t -
-            r) A}
+                \left( \mathbb{1}_{(s, t)} (r) \hspace{0.17em} \mathrm{e}^{-
+                (t - r) A}
   h \right),\\
-  \Phi_t (h) = \Phi_s (h) - \int_s^t \Phi_r
-            (Ah) \hspace{0.17em} \mathrm{d} r
-  + \sqrt{2}  \hspace{0.17em}
-            \xi (\mathbb{1}_{(s, t)} \otimes h) .
+  \Phi_t (h) = \Phi_s (h) - \int_s^t
+                \Phi_r  (Ah) \hspace{0.17em} \mathrm{d} r
+  + \sqrt{2}
+                \hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)
+                .
 \end{array}\)
-          </center>
-        </li>
-        <li>
-          <p>
-            Let \(\Psi_0\) be an \(\mathcal{S}' (\mathcal{M})\)-valued random
-            variable independent of \(\xi\), and let \(\Psi\) be the mild
-            solution started from \(\Psi_0\),
-          </p>
-          <center>
-            \(\displaystyle \Psi_t (f) = \Psi_0 (\mathrm{e}^{- tA} f) +
-            \sqrt{2}  \hspace{0.17em} \xi
+              </center>
+            </li>
+            <li>
+              <p>
+                Let \(\Psi_0\) be an \(\mathcal{S}' (\mathcal{M})\)-valued
+                random variable independent of \(\xi\), and let \(\Psi\) be
+                the mild solution started from \(\Psi_0\),
+              </p>
+              <center>
+                \(\displaystyle \Psi_t (f) = \Psi_0 (\mathrm{e}^{- tA} f) +
+                \sqrt{2}  \hspace{0.17em} \xi
 \left( \mathbb{1}_{(0, t)} (r)
-            \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
-\right), \qquad t \geq
-            0.\)
-          </center>
-          <p>
-            Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
-            \mathrm{e}^{- \frac{1}{2}
+                \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
+\right), \qquad t
+                \geq 0.\)
+              </center>
+              <p>
+                Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
+                \mathrm{e}^{- \frac{1}{2}
 \langle f, Cf \rangle}\) as \(t \to
-            \infty\) for every \(f \in \mathcal{S} (\mathcal{M})\). Moreover
-            \(\mu_m\) is invariant (\(\Psi_0 \sim \mu_m\) implies \(\Psi_t
-            \sim \mu_m\) for all \(t\)), and it is the unique invariant
-            probability measure of the dynamics.
-          </p>
-        </li>
-      </ol></i>
+                \infty\) for every \(f \in \mathcal{S} (\mathcal{M})\).
+                Moreover \(\mu_m\) is invariant (\(\Psi_0 \sim \mu_m\) implies
+                \(\Psi_t \sim \mu_m\) for all \(t\)), and it is the unique
+                invariant probability measure of the dynamics.
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>(a) Since \(A\) is self-adjoint and commutes
-      with \(\mathrm{e}^{- uA}\),
+      <strong class="enunciation-name">Proof. </strong>(a) Since \(A\) is self-adjoint and
+      commutes with \(\mathrm{e}^{- uA}\),
     </p>
     <center>
       \(\displaystyle \langle K_{t, f}, K_{s, g} \rangle = \int_{- \infty}^{t
@@ -1663,8 +1695,8 @@ x) :=
       </table>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">3.20</class>. </strong>As a Gaussian field
-      on \(\mathbb{R} \times \mathcal{M}\), the stationary solution has
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.20</class>. </strong>As a Gaussian
+      field on \(\mathbb{R} \times \mathcal{M}\), the stationary solution has
       covariance \(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
       \partial_t^2 +
 A^2)^{- 1}\), and its equal-time slice has covariance \(2
@@ -1686,12 +1718,13 @@ A^{- 1}\). The stochastic time \(t\) is unrelated to the
       Parisi and Sourlas [<a href="#bib-PS79">PS79</a>] discovered that the elliptic SPDE
       in \(d + 2\) dimensions
     </p>
-    <a id="eq:ESQ"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (m^2 - \Delta_{\mathbb{R}^2 \times
-        \mathcal{M}}) \Psi + V' (\Psi) = \zeta,
-\qquad \zeta \text{white noise
-        on } \mathbb{R}^2 \times \mathcal{M},\)</td>
+        <td width="100%" align="center"><a id="eq:ESQ"></a>\(\displaystyle (m^2 -
+        \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi + V' (\Psi) =
+        \zeta,
+\qquad \zeta \text{white noise on } \mathbb{R}^2 \times
+        \mathcal{M},\)</td>
         <td align="right">(3.17)</td>
       </tr>
     </table>
@@ -1713,55 +1746,61 @@ A^{- 1}\). The stochastic time \(t\) is unrelated to the
       = 0\) the statement is elementary, and it explains the factor \(4 \pi\).
       We normalise the noise so that the slice is exactly \(\mu_m\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">3.21</class>. </strong><i><class style="font-style: normal"><strong>(Elliptic
-      stochastic quantisation of the GFF) </strong></class><a id="thm:elliptic"></a> Let
-      \(\zeta\) be white noise on \(\mathbb{R}^2 \times \mathcal{M}\) (an
-      \(\mathcal{S}'  (\mathbb{R}^2 \times \mathcal{M})\)-valued Gaussian
-      variable with \(\mathbb{E} [\zeta (u) \zeta (v)] = \langle u, v
-      \rangle\)) and \(\textsf{L} := m^2 - \Delta_{\mathbb{R}^2 \times
-      \mathcal{M}} = -
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.21</class>. </strong><i><class
+        style="font-style: normal"><strong>(Elliptic stochastic quantisation of the GFF)
+        </strong></class><a id="thm:elliptic"></a> Let \(\zeta\) be white noise on
+        \(\mathbb{R}^2 \times \mathcal{M}\) (an \(\mathcal{S}'  (\mathbb{R}^2
+        \times \mathcal{M})\)-valued Gaussian variable with \(\mathbb{E}
+        [\zeta (u) \zeta (v)] = \langle u, v \rangle\)) and \(\textsf{L} :=
+        m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}} =
+        -
 \Delta_{\mathbb{R}^2} + A\).</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><ol>
-        <li>
-          <p>
-            The equation \(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
-            \zeta\) has a unique \(\mathcal{S}'  (\mathbb{R}^2 \times
-            \mathcal{M})\)-valued solution, \(\Psi (u) = \sqrt{4 \pi}
-            \hspace{0.17em} \zeta (\textsf{L}^{- 1} u)\).
-          </p>
-        </li>
-        <li>
-          <p>
-            For \(z \in \mathbb{R}^2\) and \(f \in \mathcal{S} (\mathcal{M})\)
-            the function \(K_{z, f} := \textsf{L}^{- 1} (\delta_z \otimes f)\)
-            lies in \(L^2  (\mathbb{R}^2 \times \mathcal{M})\), and \(z
-            \mapsto K_{z, f}\) is continuous. The Wiener integrals \(\Psi (z,
-            f) := \sqrt{4 \pi}  \hspace{0.17em} \zeta (K_{z, f})\) satisfy
-            \(\Psi (v \otimes f) = \int_{\mathbb{R}^2} v (z) \Psi (z, f)
-            \hspace{0.17em}
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                The equation \(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
+                \zeta\) has a unique \(\mathcal{S}'  (\mathbb{R}^2 \times
+                \mathcal{M})\)-valued solution, \(\Psi (u) = \sqrt{4 \pi}
+                \hspace{0.17em} \zeta (\textsf{L}^{- 1} u)\).
+              </p>
+            </li>
+            <li>
+              <p>
+                For \(z \in \mathbb{R}^2\) and \(f \in \mathcal{S}
+                (\mathcal{M})\) the function \(K_{z, f} := \textsf{L}^{- 1}
+                (\delta_z \otimes f)\) lies in \(L^2  (\mathbb{R}^2 \times
+                \mathcal{M})\), and \(z \mapsto K_{z, f}\) is continuous. The
+                Wiener integrals \(\Psi (z, f) := \sqrt{4 \pi}
+                \hspace{0.17em} \zeta (K_{z, f})\) satisfy \(\Psi (v \otimes
+                f) = \int_{\mathbb{R}^2} v (z) \Psi (z, f)
+                \hspace{0.17em}
 \mathrm{d} z\) a.s. for \(v \in \mathcal{S}
-            (\mathbb{R}^2)\).
-          </p>
-        </li>
-        <li>
-          <p>
-            For all \(z \in \mathbb{R}^2\) and \(f, g \in \mathcal{S}
-            (\mathcal{M})\), \(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle
-            f, Cg \rangle\). Hence \(\Psi (z, \cdot)\) has an \(\mathcal{S}'
-            (\mathcal{M})\)-valued version with law \(\mu_m\), and the field
-            \((\Psi (z, \cdot))_{z \in \mathbb{R}^2}\) is stationary and
-            isotropic in \(z\).
-          </p>
-        </li>
-      </ol></i>
+                (\mathbb{R}^2)\).
+              </p>
+            </li>
+            <li>
+              <p>
+                For all \(z \in \mathbb{R}^2\) and \(f, g \in \mathcal{S}
+                (\mathcal{M})\), \(\mathbb{E} [\Psi (z, f) \Psi (z, g)] =
+                \langle f, Cg \rangle\). Hence \(\Psi (z, \cdot)\) has an
+                \(\mathcal{S}' (\mathcal{M})\)-valued version with law
+                \(\mu_m\), and the field \((\Psi (z, \cdot))_{z \in
+                \mathbb{R}^2}\) is stationary and isotropic in \(z\).
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>(a) \(\textsf{L}\) is a continuous bijection of
-      \(\mathcal{S} (\mathbb{R}^2 \times \mathcal{M})\), so \(\Psi (u) :=
-      \sqrt{4 \pi} \zeta (\textsf{L}^{- 1} u)\) defines an
+      <strong class="enunciation-name">Proof. </strong>(a) \(\textsf{L}\) is a continuous
+      bijection of \(\mathcal{S} (\mathbb{R}^2 \times \mathcal{M})\), so
+      \(\Psi (u) := \sqrt{4 \pi} \zeta (\textsf{L}^{- 1} u)\) defines an
       \(\mathcal{S}'\)-valued variable with \(\Psi (\textsf{L} u) = \sqrt{4
       \pi} \zeta (u)\). If \(D \in \mathcal{S}'\) satisfies \(D (\textsf{L} u)
       = 0\) for all \(u \in \mathcal{S}\), then \(D = 0\) since \(\textsf{L}\)
@@ -1787,14 +1826,14 @@ A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2 \pi)^2} =
     <p>
       using the scalar identity
     </p>
-    <a id="eq:4pi"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \int_{\mathbb{R}^2} \frac{\mathrm{d}
-        q}{(2 \pi)^2}  \frac{1}{(|q|^2 + a)^2} =
-\frac{1}{2 \pi}
-        \int_0^{\infty} \frac{r \hspace{0.17em} \mathrm{d} r}{(r^2 +
-a)^2} =
-        \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
+        <td width="100%" align="center"><a id="eq:4pi"></a>\(\displaystyle \int_{\mathbb{R}^2}
+        \frac{\mathrm{d} q}{(2 \pi)^2}  \frac{1}{(|q|^2 + a)^2} =
+\frac{1}{2
+        \pi}  \int_0^{\infty} \frac{r \hspace{0.17em} \mathrm{d} r}{(r^2
+        +
+a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
         <td align="right">(3.18)</td>
       </tr>
     </table>
@@ -1815,7 +1854,7 @@ a)^2} =
       only on \(|z - z' |\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">3.22</class>. </strong><class style="font-style: normal"><strong>(Slices
+      <strong class="enunciation-name">Remark <class style="font-style: normal">3.22</class>. </strong><class style="font-style: normal"><strong>(Slices
       of Gaussian fields) </strong></class>Both stochastic quantisations
       exhibit the GFF as a <em>slice</em> of a Gaussian field in higher
       dimension. For the field on \(\mathbb{R}^k \times \mathcal{M}\) with

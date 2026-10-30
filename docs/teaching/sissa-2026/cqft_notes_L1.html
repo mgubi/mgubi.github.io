@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 1 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -118,8 +119,8 @@
         the slides of Lecture 1.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -331,99 +332,101 @@
       space of states. For a scalar field we may assume a true representation.
     </p>
     <h3 id="auto-7">1.2<span style="margin-left: 1em"></span>The Wightman axioms<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em">
-      <strong>Definition <class style="font-style: normal">1.1</class>. </strong><i><class style="font-style: normal"><strong>(Wightman
-      QFT of a hermitian scalar field) </strong></class><a id="def:wightman"></a> A Wightman
-      theory is given by the following data, subject to the following
-      conditions.</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><dl>
-        <p>
-          <dt>
-            (W0) Relativistic quantum theory
-          </dt>
-          <dd>
-            <p>
-              A separable Hilbert space \(\mathcal{H}\) and a strongly
-              continuous unitary representation \(U\) of
-              \(\mathcal{P}^{\uparrow}_+\) on \(\mathcal{H}\). Write \(U (a,
-              \mathbb{1}) = \mathrm{e}^{\mathrm{i} P \cdot a} =
-              \mathrm{e}^{\mathrm{i}
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">1.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(Wightman QFT of a hermitian scalar
+        field) </strong></class><a id="def:wightman"></a> A Wightman theory is given by the
+        following data, subject to the following conditions.</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><dl>
+          <p>
+            <dt>
+              (W0) Relativistic quantum theory
+            </dt>
+            <dd>
+              <p>
+                A separable Hilbert space \(\mathcal{H}\) and a strongly
+                continuous unitary representation \(U\) of
+                \(\mathcal{P}^{\uparrow}_+\) on \(\mathcal{H}\). Write \(U (a,
+                \mathbb{1}) = \mathrm{e}^{\mathrm{i} P \cdot a} =
+                \mathrm{e}^{\mathrm{i}
 (P^0 a^0 - \textbf{P} \cdot
-              \textbf{a})}\) for commuting self-adjoint generators \(P = (P^0,
-              \textbf{P})\); \(H := P^0\) is the Hamiltonian.
-            </p>
-            <p>
-              <em>Spectrum condition:</em> the joint spectrum of \((P^0,
-              \ldots, P^s)\) is contained in \(\bar{V}_{\hspace{-0.17em} +}\);
-              in particular \(H \geq | \textbf{P} | \geq 0\).
-            </p>
-            <p>
-              <em>Vacuum:</em> there is a unit vector \(\Omega\), unique up to
-              a phase among the translation invariant vectors, with \(U (a,
-              \Lambda) \Omega = \Omega\) for all \((a, \Lambda) \in
-              \mathcal{P}^{\uparrow}_+\).
-            </p>
-          </dd>
-        </p>
-        <p>
-          <dt>
-            (W1) Fields
-          </dt>
-          <dd>
-            <p>
-              There is a dense subspace \(\mathcal{D} \subset \mathcal{H}\)
-              and, for every \(f \in \mathcal{S} (\mathbb{R}^d)\), an operator
-              \(\varphi (f)\) with domain \(\mathcal{D}\) such that \(\Omega
-              \in \mathcal{D}\), \(\varphi (f) \mathcal{D} \subset
-              \mathcal{D}\), \(U (a, \Lambda) \mathcal{D} \subset
-              \mathcal{D}\); for \(\chi, \psi \in \mathcal{D}\) the map \(f
-              \mapsto \langle \chi, \varphi (f) \psi \rangle\) is a tempered
-              distribution; and \(\langle \chi, \varphi (f) \psi \rangle =
-              \langle \varphi (\bar{f}) \chi, \psi
+                \textbf{a})}\) for commuting self-adjoint generators \(P =
+                (P^0, \textbf{P})\); \(H := P^0\) is the Hamiltonian.
+              </p>
+              <p>
+                <em>Spectrum condition:</em> the joint spectrum of \((P^0,
+                \ldots, P^s)\) is contained in \(\bar{V}_{\hspace{-0.17em}
+                +}\); in particular \(H \geq | \textbf{P} | \geq 0\).
+              </p>
+              <p>
+                <em>Vacuum:</em> there is a unit vector \(\Omega\), unique up
+                to a phase among the translation invariant vectors, with \(U
+                (a, \Lambda) \Omega = \Omega\) for all \((a, \Lambda) \in
+                \mathcal{P}^{\uparrow}_+\).
+              </p>
+            </dd>
+          </p>
+          <p>
+            <dt>
+              (W1) Fields
+            </dt>
+            <dd>
+              <p>
+                There is a dense subspace \(\mathcal{D} \subset \mathcal{H}\)
+                and, for every \(f \in \mathcal{S} (\mathbb{R}^d)\), an
+                operator \(\varphi (f)\) with domain \(\mathcal{D}\) such that
+                \(\Omega \in \mathcal{D}\), \(\varphi (f) \mathcal{D} \subset
+                \mathcal{D}\), \(U (a, \Lambda) \mathcal{D} \subset
+                \mathcal{D}\); for \(\chi, \psi \in \mathcal{D}\) the map \(f
+                \mapsto \langle \chi, \varphi (f) \psi \rangle\) is a tempered
+                distribution; and \(\langle \chi, \varphi (f) \psi \rangle =
+                \langle \varphi (\bar{f}) \chi, \psi
 \rangle\).
-            </p>
-          </dd>
-        </p>
-        <p>
-          <dt>
-            (W2) Covariance
-          </dt>
-          <dd>
-            <p>
-              \(U (a, \Lambda) \varphi (f) U (a, \Lambda)^{- 1} = \varphi
-              (f_{(a, \Lambda)})\) on \(\mathcal{D}\), where \(f_{(a,
-              \Lambda)} (x) = f (\Lambda^{- 1} (x - a))\).
-            </p>
-          </dd>
-        </p>
-        <p>
-          <dt>
-            (W3) Locality
-          </dt>
-          <dd>
-            <p>
-              If the supports of \(f\) and \(g\) are spacelike separated, then
-              \([\varphi (f), \varphi (g)] \psi = 0\) for all \(\psi \in
-              \mathcal{D}\).
-            </p>
-          </dd>
-        </p>
-        <p>
-          <dt>
-            (W4) Cyclicity of the vacuum
-          </dt>
-          <dd>
-            <p>
-              The span of \(\{\varphi (f_1) \cdots \varphi (f_n) \Omega :
-              \hspace{0.17em} n \geq 0, f_j
-\in \mathcal{S}(\mathbb{R}^d)\}\)
-              is dense in \(\mathcal{H}\).
-            </p>
-          </dd>
-        </p>
-      </dl></i>
+              </p>
+            </dd>
+          </p>
+          <p>
+            <dt>
+              (W2) Covariance
+            </dt>
+            <dd>
+              <p>
+                \(U (a, \Lambda) \varphi (f) U (a, \Lambda)^{- 1} = \varphi
+                (f_{(a, \Lambda)})\) on \(\mathcal{D}\), where \(f_{(a,
+                \Lambda)} (x) = f (\Lambda^{- 1} (x - a))\).
+              </p>
+            </dd>
+          </p>
+          <p>
+            <dt>
+              (W3) Locality
+            </dt>
+            <dd>
+              <p>
+                If the supports of \(f\) and \(g\) are spacelike separated,
+                then \([\varphi (f), \varphi (g)] \psi = 0\) for all \(\psi
+                \in \mathcal{D}\).
+              </p>
+            </dd>
+          </p>
+          <p>
+            <dt>
+              (W4) Cyclicity of the vacuum
+            </dt>
+            <dd>
+              <p>
+                The span of \(\{\varphi (f_1) \cdots \varphi (f_n) \Omega :
+                \hspace{0.17em} n \geq 0, f_j
+\in
+                \mathcal{S}(\mathbb{R}^d)\}\) is dense in \(\mathcal{H}\).
+              </p>
+            </dd>
+          </p>
+        </dl></i>
+      </div>
     </div>
     <p>
       Formally \(\varphi (f) = \int \varphi (x) f (x) \hspace{0.17em}
@@ -463,15 +466,17 @@
       exchange of two adjacent spacelike separated arguments; (e) <em>cluster
       property</em>, equivalent to uniqueness of the vacuum (Remark <a href="#rem:clustering">2.7</a>).
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem <class style="font-style: normal">1.2</class>. </strong><i><class style="font-style: normal"><strong>(Wightman
-      reconstruction [<a href="#bib-SW64">SW64</a>]) </strong></class>Any sequence
-      \((W_n)_{n \geq 0}\) of tempered distributions with \(W_0 = 1\)
-      satisfying (a)&ndash;(d) is the sequence of Wightman functions of a
-      theory satisfying (W1)&ndash;(W4) and (W0) except possibly uniqueness of
-      the vacuum, unique up to unitary equivalence. The vacuum is unique iff
-      (e) holds.</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">1.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Wightman reconstruction [<a href="#bib-SW64">SW64</a>])
+        </strong></class>Any sequence \((W_n)_{n \geq 0}\) of tempered
+        distributions with \(W_0 = 1\) satisfying (a)&ndash;(d) is the
+        sequence of Wightman functions of a theory satisfying (W1)&ndash;(W4)
+        and (W0) except possibly uniqueness of the vacuum, unique up to
+        unitary equivalence. The vacuum is unique iff (e) holds.</i>
+      </p>
+    </div>
     <p>
       So constructing a QFT amounts to constructing its Wightman functions.
       For the axioms, the reconstruction theorem and the algebraic viewpoint
@@ -487,7 +492,7 @@
       the higher Wightman functions.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">1.3</class>. </strong><class style="font-style: normal"><strong>(Minimal
+      <strong class="enunciation-name">Remark <class style="font-style: normal">1.3</class>. </strong><class style="font-style: normal"><strong>(Minimal
       requirements) </strong></class><a id="rem:minimal"></a> The axioms (W0)&ndash;(W4)
       are a minimal transcription of what we expect of any relativistic
       quantum theory with a local quantity. (W0) encodes quantum mechanics
@@ -512,7 +517,7 @@
       &sect;II.1].
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">1.4</class>. </strong><class style="font-style: normal"><strong>(Local
+      <strong class="enunciation-name">Remark <class style="font-style: normal">1.4</class>. </strong><class style="font-style: normal"><strong>(Local
       algebras and fields) </strong></class><a id="rem:nets"></a> For a bounded open
       region \(O \subset \mathbb{R}^d\), let \(\mathfrak{A} (O)\) be the von
       Neumann algebra generated by the bounded functions of the smeared fields
@@ -555,7 +560,7 @@
       its local algebras are those generated by the reconstructed field.
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">1.5</class>. </strong><class style="font-style: normal"><strong>(The
+      <strong class="enunciation-name">Remark <class style="font-style: normal">1.5</class>. </strong><class style="font-style: normal"><strong>(The
       vacuum, and states without a vacuum) </strong></class><a id="rem:hadamard"></a> In
       Minkowski space the vacuum is singled out by symmetry and stability: it
       is the Poincar&eacute; invariant state, and by the spectrum condition it
@@ -635,14 +640,15 @@
         (\textbf{p}) \Omega = 0\). The free field is
       </div>
     </p>
-    <a id="eq:free-field"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \varphi (x) = \int \mathrm{d}
-        \Omega_m (\textbf{p})  \hspace{0.17em} [a
-(\textbf{p}) \mathrm{e}^{-
-        \mathrm{i} p \cdot x} + a^{\ast} (\textbf{p})
-\mathrm{e}^{\mathrm{i} p
-        \cdot x}]_{p^0 = \omega (\textbf{p})} .\)</td>
+        <td width="100%" align="center"><a id="eq:free-field"></a>\(\displaystyle \varphi (x) = \int
+        \mathrm{d} \Omega_m (\textbf{p})  \hspace{0.17em} [a
+(\textbf{p})
+        \mathrm{e}^{- \mathrm{i} p \cdot x} + a^{\ast}
+        (\textbf{p})
+\mathrm{e}^{\mathrm{i} p \cdot x}]_{p^0 = \omega
+        (\textbf{p})} .\)</td>
         <td align="right">(1.2)</td>
       </tr>
     </table>
@@ -653,16 +659,16 @@
 \mathrm{d} x|_{p^0 = \omega
       (\textbf{p})}\), and
     </p>
-    <a id="eq:W2"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle W_2  (x - y) = \int \mathrm{d}
-        \Omega_m (\textbf{p}) \hspace{0.17em}
-\mathrm{e}^{- \mathrm{i} p \cdot
-        (x - y)}, \qquad \| \varphi (f) \Omega \|^2 =
-\int \mathrm{d} \Omega_m
-        (\textbf{p}) \hspace{0.17em} | \tilde{f} (\textbf{p})
-|^2 < \infty
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:W2"></a>\(\displaystyle W_2  (x - y) = \int
+        \mathrm{d} \Omega_m (\textbf{p}) \hspace{0.17em}
+\mathrm{e}^{-
+        \mathrm{i} p \cdot (x - y)}, \qquad \| \varphi (f) \Omega \|^2 =
+\int
+        \mathrm{d} \Omega_m (\textbf{p}) \hspace{0.17em} | \tilde{f}
+        (\textbf{p})
+|^2 < \infty .\)</td>
         <td align="right">(1.3)</td>
       </tr>
     </table>
@@ -673,31 +679,35 @@
       logarithmic for \(s = 1\) and power-like for \(s \geq 2\). This is not
       an artefact of the free field.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">1.6</class>.
+        </strong><i><class style="font-style: normal"><strong>(No fields at a point; Wightman [<a
+        href="#bib-Wig64">Wig64</a>]) </strong></class><a id="prop:nopoint"></a> Assume (W0)&ndash;(W2)
+        and suppose there is \(\psi \in \mathcal{H}\) such that \(\varphi (f)
+        \Omega = \int f (x) U (x, \mathbb{1}) \psi \hspace{0.17em}
+\mathrm{d}
+        x\) for all \(f \in \mathcal{S} (\mathbb{R}^d)\), i.e.
+        &ldquo;\(\varphi (0) \Omega = \psi\) exists&rdquo;. Then \(\psi =
+        \langle \Omega, \psi \rangle \Omega\), hence \(\varphi (f) \Omega =
+        \langle \Omega, \psi \rangle \left( \int f \right) \Omega\).</i>
+      </p>
+    </div>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">1.7</class>. </strong><i><a id="lem:finite-inv"></a>Let
+        \(d \geq 2\) and let \(\mu\) be a finite positive Borel measure on
+        \(\bar{V}_{\hspace{-0.17em} +}\) invariant under
+        \(\mathcal{L}^{\uparrow}_+\). Then \(\mu = \mu (\{0\}) \delta_0\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proposition <class style="font-style: normal">1.6</class>. </strong><i><class style="font-style: normal"><strong>(No
-      fields at a point; Wightman [<a href="#bib-Wig64">Wig64</a>]) </strong></class><a
-      id="prop:nopoint"></a> Assume (W0)&ndash;(W2) and suppose there is \(\psi \in
-      \mathcal{H}\) such that \(\varphi (f) \Omega = \int f (x) U (x,
-      \mathbb{1}) \psi \hspace{0.17em}
-\mathrm{d} x\) for all \(f \in
-      \mathcal{S} (\mathbb{R}^d)\), i.e. &ldquo;\(\varphi (0) \Omega = \psi\)
-      exists&rdquo;. Then \(\psi = \langle \Omega, \psi \rangle \Omega\),
-      hence \(\varphi (f) \Omega = \langle \Omega, \psi \rangle \left( \int f
-      \right) \Omega\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Lemma <class style="font-style: normal">1.7</class>. </strong><i><a id="lem:finite-inv"></a>Let \(d
-      \geq 2\) and let \(\mu\) be a finite positive Borel measure on
-      \(\bar{V}_{\hspace{-0.17em} +}\) invariant under
-      \(\mathcal{L}^{\uparrow}_+\). Then \(\mu = \mu (\{0\}) \delta_0\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>A boost of rapidity \(\theta\) in the \(x^1\)
-      direction acts as \(p^0 \pm p^1 \mapsto \mathrm{e}^{\pm \theta} (p^0 \pm
-      p^1)\), leaving the other components unchanged. Let \(S^{\pm}_j = \{p
-      \in \bar{V}_{\hspace{-0.17em} +} : \hspace{0.17em} 2^j \leq
-p^0 \pm p^1
-      < 2^{j + 1} \}\), \(j \in \mathbb{Z}\). The boost with
+      <strong class="enunciation-name">Proof. </strong>A boost of rapidity \(\theta\) in the
+      \(x^1\) direction acts as \(p^0 \pm p^1 \mapsto \mathrm{e}^{\pm \theta}
+      (p^0 \pm p^1)\), leaving the other components unchanged. Let \(S^{\pm}_j
+      = \{p \in \bar{V}_{\hspace{-0.17em} +} : \hspace{0.17em} 2^j \leq
+p^0
+      \pm p^1 < 2^{j + 1} \}\), \(j \in \mathbb{Z}\). The boost with
       \(\mathrm{e}^{\theta} = 2\) maps \(S^+_j\) onto \(S^+_{j + 1}\), so
       \(\mu (S^+_j)\) is independent of \(j\). These sets are disjoint and
       \(\mu\) is finite, so \(\mu (S^+_j) = 0\). The same argument applies to
@@ -707,11 +717,11 @@ p^0 \pm p^1
       0\) forces \(p = 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Proof of Proposition <a href="#prop:nopoint">1.6</a>. </strong>By covariance,
-      \(U (0, \Lambda) \varphi (f) \Omega = \varphi (f_{(0, \Lambda)})
-      \Omega\). Since \(U (0, \Lambda) U (x, \mathbb{1}) = U (\Lambda x,
-      \mathbb{1}) U (0, \Lambda)\), after the change of variables \(x \mapsto
-      \Lambda x\) this reads
+      <strong class="enunciation-name">Proof of Proposition <a href="#prop:nopoint">1.6</a>. </strong>By
+      covariance, \(U (0, \Lambda) \varphi (f) \Omega = \varphi (f_{(0,
+      \Lambda)}) \Omega\). Since \(U (0, \Lambda) U (x, \mathbb{1}) = U
+      (\Lambda x, \mathbb{1}) U (0, \Lambda)\), after the change of variables
+      \(x \mapsto \Lambda x\) this reads
     </p>
     <center>
       \(\displaystyle \int f (x)  \hspace{0.17em} U (\Lambda x, \mathbb{1})
@@ -734,15 +744,16 @@ p^0 \pm p^1
       \Omega\) by uniqueness of the vacuum.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">1.8</class>. </strong>So the only theories
-      with point-like fields have \(\varphi (f) \Omega \propto \Omega\); using
-      locality and the Reeh&ndash;Schlieder theorem one then shows that
-      \(\varphi\) is a multiple of the identity [<a href="#bib-SW64">SW64</a>, <a href="#bib-Wig64">Wig64</a>].
-      Physically (Bohr&ndash;Rosenfeld), measuring a field at a sharp point
-      requires infinite energy. Quantum fields are therefore
-      <em>operator-valued distributions</em>, and every nonlinear expression
-      in \(\varphi (x)\) (interaction terms, field equations, composite
-      operators) requires a definition. This is the root of renormalisation.
+      <strong class="enunciation-name">Remark <class style="font-style: normal">1.8</class>. </strong>So the only
+      theories with point-like fields have \(\varphi (f) \Omega \propto
+      \Omega\); using locality and the Reeh&ndash;Schlieder theorem one then
+      shows that \(\varphi\) is a multiple of the identity [<a href="#bib-SW64">SW64</a>,
+      <a href="#bib-Wig64">Wig64</a>]. Physically (Bohr&ndash;Rosenfeld), measuring a
+      field at a sharp point requires infinite energy. Quantum fields are
+      therefore <em>operator-valued distributions</em>, and every nonlinear
+      expression in \(\varphi (x)\) (interaction terms, field equations,
+      composite operators) requires a definition. This is the root of
+      renormalisation.
     </p>
     <h3 id="auto-10"><a id="sec:KL"></a>1.4<span style="margin-left: 1em"></span>The two-point function: the
     K&auml;ll&eacute;n&ndash;Lehmann representation<span style="margin-left: 1em"></span></h3>
@@ -760,56 +771,59 @@ p^0 \pm p^1
       \(\langle \Omega, \varphi (f) \Omega \rangle = v \int f\) for some \(v
       \in \mathbb{R}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">1.9</class>. </strong><i><class style="font-style: normal"><strong>(K&auml;ll&eacute;n&ndash;Lehmann
-      [<a href="#bib-Kal52">Kal52</a>, <a href="#bib-Leh54">Leh54</a>]) </strong></class><a id="thm:KL"></a>
-      Assume (W0)&ndash;(W2). There is a positive Borel measure \(\rho\) on
-      \([0, \infty)\), the <em>spectral measure</em> of the field, such
-      that</i>
-    </p>
-    <i><a id="eq:KL"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle W_2  (x - y) = v^2 + \int_{[0,
-        \infty)} \rho (\mathrm{d} M^2)
-\hspace{0.17em} W_2^{(M)}  (x -
-        y)\)</td>
-        <td align="right">(1.4)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>in the sense of tempered distributions. The measure \(\rho\) grows at
-      most polynomially and is such that the right-hand side is tempered; in
-      particular \(\rho (\{0\}) = 0\) if \(d = 2\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">1.9</class>. </strong><i><class
+        style="font-style: normal"><strong>(K&auml;ll&eacute;n&ndash;Lehmann [<a href="#bib-Kal52">Kal52</a>,
+        <a href="#bib-Leh54">Leh54</a>]) </strong></class><a id="thm:KL"></a> Assume
+        (W0)&ndash;(W2). There is a positive Borel measure \(\rho\) on \([0,
+        \infty)\), the <em>spectral measure</em> of the field, such that</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:KL"></a>\(\displaystyle W_2  (x - y) = v^2 +
+          \int_{[0, \infty)} \rho (\mathrm{d} M^2)
+\hspace{0.17em} W_2^{(M)}
+          (x - y)\)</td>
+          <td align="right">(1.4)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>in the sense of tempered distributions. The measure \(\rho\) grows
+        at most polynomially and is such that the right-hand side is tempered;
+        in particular \(\rho (\{0\}) = 0\) if \(d = 2\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Sketch. </strong>Let \(\psi_f := \varphi (f) \Omega - v (\int f)
-      \Omega \perp \Omega\). By hermiticity \(\langle \psi_{\bar{f}}, \psi_g
-      \rangle = W_2  (f \otimes g) - v^2  \int f \int
-g\), and by covariance
-      \(U (a, \mathbb{1}) \psi_f = \psi_{f_{(a, \mathbb{1})}}\). Hence the
-      truncated function \(W_2^T := W_2 - v^2\) is a distribution of positive
-      type in \(x - y\). By the Bochner&ndash;Schwartz theorem (equivalently,
-      the spectral theorem for the translations restricted to the closed span
-      of the \(\psi_f\)) it is the Fourier transform of a positive tempered
-      measure \(\mu\) on momentum space. The spectrum condition gives
-      \(\text{supp} \mu \subset \bar{V}_{\hspace{-0.17em} +}\). Since \(\psi_f
-      \perp \Omega\) and \(\Omega\) is the only translation invariant vector,
-      \(\mu (\{0\}) = 0\). Covariance and \(U (0, \Lambda) \Omega = \Omega\)
-      make \(\mu\) invariant under \(\mathcal{L}^{\uparrow}_+\). The
-      \(\mathcal{L}^{\uparrow}_+\)-orbits in \(\bar{V}_{\hspace{-0.17em} +}
-      \setminus \{0\}\) are the hyperboloids \(H^+_M\), \(M > 0\), and (for
-      \(d \geq 3\)) the punctured boundary of the cone, \(M = 0\). Each
-      carries a unique invariant measure up to normalisation, namely
-      \(\mathrm{d} \Omega_M\). (For \(d = 2\) the two half-lines \(p^0 = \pm
-      p^1 > 0\) of the cone boundary are orbits too, but their invariant
-      measures \(\mathrm{d} p^{\pm} / p^{\pm}\) are not locally finite at
-      \(0\), so a tempered \(\mu\) cannot charge them; hence \(\rho (\{0\}) =
-      0\).) Disintegrating \(\mu\) along \(M = (p^2)^{1 / 2}\) gives \(\mu =
-      \int \rho (\mathrm{d} M^2)  \hspace{0.17em} \Omega_M\), which is <class
-      style="font-style: normal">(<a href="#eq:KL">1.4</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Sketch. </strong>Let \(\psi_f := \varphi (f) \Omega - v
+      (\int f) \Omega \perp \Omega\). By hermiticity \(\langle \psi_{\bar{f}},
+      \psi_g \rangle = W_2  (f \otimes g) - v^2  \int f \int
+g\), and by
+      covariance \(U (a, \mathbb{1}) \psi_f = \psi_{f_{(a, \mathbb{1})}}\).
+      Hence the truncated function \(W_2^T := W_2 - v^2\) is a distribution of
+      positive type in \(x - y\). By the Bochner&ndash;Schwartz theorem
+      (equivalently, the spectral theorem for the translations restricted to
+      the closed span of the \(\psi_f\)) it is the Fourier transform of a
+      positive tempered measure \(\mu\) on momentum space. The spectrum
+      condition gives \(\text{supp} \mu \subset \bar{V}_{\hspace{-0.17em}
+      +}\). Since \(\psi_f \perp \Omega\) and \(\Omega\) is the only
+      translation invariant vector, \(\mu (\{0\}) = 0\). Covariance and \(U
+      (0, \Lambda) \Omega = \Omega\) make \(\mu\) invariant under
+      \(\mathcal{L}^{\uparrow}_+\). The \(\mathcal{L}^{\uparrow}_+\)-orbits in
+      \(\bar{V}_{\hspace{-0.17em} +} \setminus \{0\}\) are the hyperboloids
+      \(H^+_M\), \(M > 0\), and (for \(d \geq 3\)) the punctured boundary of
+      the cone, \(M = 0\). Each carries a unique invariant measure up to
+      normalisation, namely \(\mathrm{d} \Omega_M\). (For \(d = 2\) the two
+      half-lines \(p^0 = \pm p^1 > 0\) of the cone boundary are orbits too,
+      but their invariant measures \(\mathrm{d} p^{\pm} / p^{\pm}\) are not
+      locally finite at \(0\), so a tempered \(\mu\) cannot charge them; hence
+      \(\rho (\{0\}) = 0\).) Disintegrating \(\mu\) along \(M = (p^2)^{1 /
+      2}\) gives \(\mu = \int \rho (\mathrm{d} M^2)  \hspace{0.17em}
+      \Omega_M\), which is <class style="font-style: normal">(<a href="#eq:KL">1.4</a>)</class>.<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">1.10</class>. </strong><class style="font-style: normal"><strong>(Reading
+      <strong class="enunciation-name">Remark <class style="font-style: normal">1.10</class>. </strong><class style="font-style: normal"><strong>(Reading
       the spectrum off \(\rho\)) </strong></class><a id="rem:KL"></a> (i) <em>Free
       fields.</em> The free field has \(\rho = \delta_{m^2}\). Conversely, if
       \(\rho = \delta_{m^2}\) with \(m > 0\) then \(\varphi - v\) is a free
@@ -878,10 +892,10 @@ g\), and by covariance
       mass shell, the free field <class style="font-style: normal">(<a href="#eq:free-field">1.2</a>)</class>
       solves the Klein&ndash;Gordon equation in the sense of distributions:
     </p>
-    <a id="eq:KG"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (\Box + m^2) \varphi = 0, \qquad
-        \Box = \partial_t^2 - \Delta_{\textbf{x}} .\)</td>
+        <td width="100%" align="center"><a id="eq:KG"></a>\(\displaystyle (\Box + m^2) \varphi = 0,
+        \qquad \Box = \partial_t^2 - \Delta_{\textbf{x}} .\)</td>
         <td align="right">(1.5)</td>
       </tr>
     </table>
@@ -893,12 +907,12 @@ g\), and by covariance
       \mathcal{S} (\mathbb{R}^s)\) (Exercise <a href="#ex:restrictions">1.3</a>), and satisfy
       the canonical commutation relations (CCR)
     </p>
-    <a id="eq:CCR"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle [\varphi (t, \textbf{x}), \pi (t,
-        \textbf{y})] = \mathrm{i} \delta
-(\textbf{x} - \textbf{y}), \qquad
-        [\varphi (t, \textbf{x}), \varphi (t,
+        <td width="100%" align="center"><a id="eq:CCR"></a>\(\displaystyle [\varphi (t, \textbf{x}),
+        \pi (t, \textbf{y})] = \mathrm{i} \delta
+(\textbf{x} - \textbf{y}),
+        \qquad [\varphi (t, \textbf{x}), \varphi (t,
 \textbf{y})] = [\pi (t,
         \textbf{x}), \pi (t, \textbf{y})] = 0.\)</td>
         <td align="right">(1.6)</td>
@@ -921,10 +935,10 @@ g\), and by covariance
         (k^2 + m^2)^{1 / 2}\), and
       </div>
     </p>
-    <a id="eq:modes"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \varphi (0, x) = \sum_k (2 L
-        \omega_k)^{- 1 / 2}  (a_k \mathrm{e}^{\mathrm{i}
+        <td width="100%" align="center"><a id="eq:modes"></a>\(\displaystyle \varphi (0, x) = \sum_k
+        (2 L \omega_k)^{- 1 / 2}  (a_k \mathrm{e}^{\mathrm{i}
 kx} + a_k^{\ast}
         \mathrm{e}^{- \mathrm{i} kx}), \qquad [a_k, a^{\ast}_{k'}]
         =
@@ -936,14 +950,14 @@ kx} + a_k^{\ast}
       The free field is an infinite collection of independent harmonic
       oscillators, one per mode. With an ultraviolet cutoff \(|k| \leq R\),
     </p>
-    <a id="eq:logdiv"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \langle \Omega, \varphi_R (0, x)^2
-        \Omega \rangle = \sum_{|k| \leq R}
-\frac{1}{2 L \omega_k} = \frac{1}{2
-        \pi} \log \frac{R}{m} + O (1)
-\xrightarrow[]{R \to \infty} \infty
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:logdiv"></a>\(\displaystyle \langle \Omega, \varphi_R
+        (0, x)^2 \Omega \rangle = \sum_{|k| \leq R}
+\frac{1}{2 L \omega_k} =
+        \frac{1}{2 \pi} \log \frac{R}{m} + O (1)
+\xrightarrow[]{R \to \infty}
+        \infty .\)</td>
         <td align="right">(1.8)</td>
       </tr>
     </table>
@@ -961,10 +975,10 @@ kx} + a_k^{\ast}
         operator equation
       </div>
     </p>
-    <a id="eq:NLKG"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (\Box + m^2) \varphi + \lambda
-        \varphi^3 = 0,\)</td>
+        <td width="100%" align="center"><a id="eq:NLKG"></a>\(\displaystyle (\Box + m^2) \varphi +
+        \lambda \varphi^3 = 0,\)</td>
         <td align="right">(1.9)</td>
       </tr>
     </table>
@@ -972,47 +986,49 @@ kx} + a_k^{\ast}
       together with the CCR <class style="font-style: normal">(<a href="#eq:CCR">1.6</a>)</class>. This
       immediately runs into three problems.
     </p>
-    <ol>
-      <li>
-        <p>
-          \(\varphi (x)^3\) has no meaning, being the cube of a distribution.
-          It must be <em>renormalised</em>. In \(d = 2\) Wick ordering \(:
-          \varphi^3\): suffices (cf. <class style="font-style: normal">(<a href="#eq:logdiv">1.8</a>)</class>
-          and Section <a href="cqft_notes_L2.html#sec:wick">3.3</a>); in \(d = 3\) a further mass
-          counterterm is needed in the equation (and a vacuum-energy
-          counterterm in the Hamiltonian); in \(d = 4\) the theory is expected
-          to be trivial, as is proved for the scaling limits of critical
-          lattice \(\varphi^4_4\) models [<a href="#bib-ADC21">ADC21</a>].
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>Haag's theorem</em> [<a href="#bib-Haa96">Haa96</a>]: in infinite volume the
-          interacting field at fixed time cannot be unitarily equivalent to
-          the free one, so there is no interaction picture. The interacting
-          theory lives in a representation of the CCR inequivalent to the Fock
-          one.
-        </p>
-      </li>
-      <li>
-        <p>
-          Even in finite volume, \(H = H_0 + \lambda \int_{\mathbb{T}_L} :
-          \varphi (0, x)^4 : \mathrm{d} x\) is the sum of a positive operator
-          and an operator unbounded below. That it is bounded below was
-          Nelson's breakthrough [<a href="#bib-Nel66">Nel66</a>], based on
-          hypercontractivity. Its self-adjointness and the construction of the
-          corresponding local Heisenberg dynamics, with finite propagation
-          speed, are due to Glimm&ndash;Jaffe ([<a href="#bib-GJ68">GJ68</a>] and its
-          sequels) and Segal [<a href="#bib-Seg70">Seg70</a>]; see [<a href="#bib-BSZ92">BSZ92</a>]
-          for a textbook account of this Hamiltonian approach. Removing the
-          volume cutoff for \(\varphi^4_2\) was achieved by Glimm and Jaffe in
-          a series of difficult papers; the full set of Wightman axioms for
-          weakly coupled \(P (\varphi)_2\) models was established in [<a href="#bib-GJS74">GJS74</a>],
-          already with Euclidean methods. For \(\Phi^4_3\) see [<a href="#bib-GJ73">GJ73</a>,
-          <a href="#bib-FO76">FO76</a>].
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            \(\varphi (x)^3\) has no meaning, being the cube of a
+            distribution. It must be <em>renormalised</em>. In \(d = 2\) Wick
+            ordering \(: \varphi^3\): suffices (cf. <class style="font-style: normal">(<a href="#eq:logdiv">1.8</a>)</class>
+            and Section <a href="cqft_notes_L2.html#sec:wick">3.3</a>); in \(d = 3\) a further mass
+            counterterm is needed in the equation (and a vacuum-energy
+            counterterm in the Hamiltonian); in \(d = 4\) the theory is
+            expected to be trivial, as is proved for the scaling limits of
+            critical lattice \(\varphi^4_4\) models [<a href="#bib-ADC21">ADC21</a>].
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Haag's theorem</em> [<a href="#bib-Haa96">Haa96</a>]: in infinite volume
+            the interacting field at fixed time cannot be unitarily equivalent
+            to the free one, so there is no interaction picture. The
+            interacting theory lives in a representation of the CCR
+            inequivalent to the Fock one.
+          </p>
+        </li>
+        <li>
+          <p>
+            Even in finite volume, \(H = H_0 + \lambda \int_{\mathbb{T}_L} :
+            \varphi (0, x)^4 : \mathrm{d} x\) is the sum of a positive
+            operator and an operator unbounded below. That it is bounded below
+            was Nelson's breakthrough [<a href="#bib-Nel66">Nel66</a>], based on
+            hypercontractivity. Its self-adjointness and the construction of
+            the corresponding local Heisenberg dynamics, with finite
+            propagation speed, are due to Glimm&ndash;Jaffe ([<a href="#bib-GJ68">GJ68</a>]
+            and its sequels) and Segal [<a href="#bib-Seg70">Seg70</a>]; see [<a href="#bib-BSZ92">BSZ92</a>]
+            for a textbook account of this Hamiltonian approach. Removing the
+            volume cutoff for \(\varphi^4_2\) was achieved by Glimm and Jaffe
+            in a series of difficult papers; the full set of Wightman axioms
+            for weakly coupled \(P (\varphi)_2\) models was established in [<a
+            href="#bib-GJS74">GJS74</a>], already with Euclidean methods. For \(\Phi^4_3\)
+            see [<a href="#bib-GJ73">GJ73</a>, <a href="#bib-FO76">FO76</a>].
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       The Euclidean approach (Symanzik, Nelson, Osterwalder&ndash;Schrader,
       Guerra&ndash;Rosen&ndash;Simon) simplified this enormously. We now
@@ -1160,16 +1176,16 @@ kx} + a_k^{\ast}
     <p>
       \(V (u) = \lambda u^4\)) and
     </p>
-    <a id="eq:Hlat"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle H_{\varepsilon} := \sum_{x \in
-        \Lambda_{\varepsilon}} \varepsilon \left[
-\tfrac{1}{2} \pi_x^2 +
-        \tfrac{1}{2} (\nabla_{\varepsilon} \varphi)_x^2 +
-\tfrac{1}{2} m^2
-        \varphi_x^2 + V (\varphi_x) \right] = - \frac{1}{2
-\varepsilon}
-        \Delta_{\mathbb{R}^{\Lambda_{\varepsilon}}} +
+        <td width="100%" align="center"><a id="eq:Hlat"></a>\(\displaystyle H_{\varepsilon} :=
+        \sum_{x \in \Lambda_{\varepsilon}} \varepsilon \left[
+\tfrac{1}{2}
+        \pi_x^2 + \tfrac{1}{2} (\nabla_{\varepsilon} \varphi)_x^2
+        +
+\tfrac{1}{2} m^2 \varphi_x^2 + V (\varphi_x) \right] = -
+        \frac{1}{2
+\varepsilon} \Delta_{\mathbb{R}^{\Lambda_{\varepsilon}}} +
         U_{\varepsilon}
 (\varphi),\)</td>
         <td align="right">(2.1)</td>
@@ -1188,10 +1204,10 @@ kx} + a_k^{\ast}
 \mathrm{e}^{-
       \mathrm{i} tH_{\varepsilon}}\) satisfy
     </p>
-    <a id="eq:latticewave"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t^2 \varphi_x (t) =
-        (\Delta_{\varepsilon} \varphi (t))_x - m^2
+        <td width="100%" align="center"><a id="eq:latticewave"></a>\(\displaystyle \partial_t^2 \varphi_x
+        (t) = (\Delta_{\varepsilon} \varphi (t))_x - m^2
 \varphi_x (t) - V'
         (\varphi_x (t)), \qquad (\Delta_{\varepsilon} \varphi)_x
         =
@@ -1235,46 +1251,50 @@ energy}) .\)</td>
 \mathrm{i} tH_{\varepsilon}}\). Since \(\bar{H}
       \Omega_{\varepsilon} = 0\),
     </p>
-    <a id="eq:Wlat"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle W (t_1, \ldots, t_n) := \langle
-        \Omega_{\varepsilon}, F_1 (t_1) \cdots F_n
-(t_n) \Omega_{\varepsilon}
-        \rangle = \langle \Omega_{\varepsilon}, F_1
-\mathrm{e}^{- \mathrm{i}
-        (t_1 - t_2) \bar{H}} F_2 \cdots \mathrm{e}^{-
-\mathrm{i} (t_{n - 1} -
-        t_n) \bar{H}} F_n \Omega_{\varepsilon} \rangle .\)</td>
+        <td width="100%" align="center"><a id="eq:Wlat"></a>\(\displaystyle W (t_1, \ldots, t_n) :=
+        \langle \Omega_{\varepsilon}, F_1 (t_1) \cdots F_n
+(t_n)
+        \Omega_{\varepsilon} \rangle = \langle \Omega_{\varepsilon},
+        F_1
+\mathrm{e}^{- \mathrm{i} (t_1 - t_2) \bar{H}} F_2 \cdots
+        \mathrm{e}^{-
+\mathrm{i} (t_{n - 1} - t_n) \bar{H}} F_n
+        \Omega_{\varepsilon} \rangle .\)</td>
         <td align="right">(2.4)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">2.1</class>. </strong><i><class style="font-style: normal"><strong>(Wick
-      rotation) </strong></class><a id="prop:wick-rot"></a> \(W\) depends only on \(\zeta_j =
-      t_j - t_{j + 1}\) and extends to a function \(\mathcal{W} (\zeta_1,
-      \ldots, \zeta_{n - 1})\) which is bounded and continuous on
-      \(\bar{\mathbb{C}}_-^{\hspace{0.17em} n - 1}\) and analytic on
-      \(\mathbb{C}_-^{n - 1}\), \(\mathbb{C}_- = \{ \text{Im} \zeta < 0\}\).
-      At \(\zeta_j = - \mathrm{i} (\tau_j - \tau_{j + 1})\), \(\tau_1 \geq
-      \ldots \geq \tau_n\), it gives the <em>Schwinger functions</em></i>
-    </p>
-    <i><a id="eq:schwinger"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle S (\tau_1, \ldots, \tau_n) = \langle
-        \Omega_{\varepsilon}, F_1 \mathrm{e}^{-
-(\tau_1 - \tau_2) \bar{H}} F_2
-        \cdots \mathrm{e}^{- (\tau_{n - 1} - \tau_n)
-\bar{H}} F_n
-        \Omega_{\varepsilon} \rangle,\)</td>
-        <td align="right">(2.5)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>and the Schwinger functions determine the Wightman functions
-      \(W\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">2.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(Wick rotation) </strong></class><a
+        id="prop:wick-rot"></a> \(W\) depends only on \(\zeta_j = t_j - t_{j + 1}\) and
+        extends to a function \(\mathcal{W} (\zeta_1, \ldots, \zeta_{n - 1})\)
+        which is bounded and continuous on
+        \(\bar{\mathbb{C}}_-^{\hspace{0.17em} n - 1}\) and analytic on
+        \(\mathbb{C}_-^{n - 1}\), \(\mathbb{C}_- = \{ \text{Im} \zeta < 0\}\).
+        At \(\zeta_j = - \mathrm{i} (\tau_j - \tau_{j + 1})\), \(\tau_1 \geq
+        \ldots \geq \tau_n\), it gives the <em>Schwinger functions</em></i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:schwinger"></a>\(\displaystyle S (\tau_1, \ldots,
+          \tau_n) = \langle \Omega_{\varepsilon}, F_1 \mathrm{e}^{-
+(\tau_1 -
+          \tau_2) \bar{H}} F_2 \cdots \mathrm{e}^{- (\tau_{n - 1} -
+          \tau_n)
+\bar{H}} F_n \Omega_{\varepsilon} \rangle,\)</td>
+          <td align="right">(2.5)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>and the Schwinger functions determine the Wightman functions
+        \(W\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>By the spectral theorem, \(\mathrm{e}^{-
+      <strong class="enunciation-name">Proof. </strong>By the spectral theorem, \(\mathrm{e}^{-
       \mathrm{i} \zeta \bar{H}} = \int \mathrm{e}^{- \mathrm{i} \zeta
 \lambda}
       \mathrm{d} E (\lambda)\) with \(| \mathrm{e}^{- \mathrm{i} \zeta
@@ -1314,14 +1334,14 @@ energy}) .\)</td>
       </table>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">2.2</class>. </strong>This is exactly where
-      positivity of the energy enters: it allows rotating \(t \mapsto -
-      \mathrm{i} \tau\) in all time differences simultaneously. It will be
-      used twice more: \(\mathrm{e}^{- \tau \bar{H}}\), \(\tau \geq 0\), is a
-      contraction semigroup, which can be represented as a path integral
-      (Feynman&ndash;Kac); and \(\mathrm{e}^{- T \bar{H}}\) converges to the
-      projection onto \(\ker \bar{H}\) as \(T \to \infty\), i.e. onto the
-      vacuum when it is unique (Remark <a href="#rem:clustering">2.7</a>). (That the
+      <strong class="enunciation-name">Remark <class style="font-style: normal">2.2</class>. </strong>This is
+      exactly where positivity of the energy enters: it allows rotating \(t
+      \mapsto - \mathrm{i} \tau\) in all time differences simultaneously. It
+      will be used twice more: \(\mathrm{e}^{- \tau \bar{H}}\), \(\tau \geq
+      0\), is a contraction semigroup, which can be represented as a path
+      integral (Feynman&ndash;Kac); and \(\mathrm{e}^{- T \bar{H}}\) converges
+      to the projection onto \(\ker \bar{H}\) as \(T \to \infty\), i.e. onto
+      the vacuum when it is unique (Remark <a href="#rem:clustering">2.7</a>). (That the
       Feynman&ndash;Kac weights are positive is a separate fact, coming from
       the kinetic term.) In a relativistic theory, the Wightman functions are
       boundary values of functions analytic in the forward tube (Exercise <a
@@ -1353,16 +1373,16 @@ energy}) .\)</td>
 \delta
       U_{\varepsilon} / 2}\) has the explicit positive kernel
     </p>
-    <a id="eq:transfer"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle T_{\delta}  (\varphi, \varphi') =
-        \left( \frac{2 \pi \delta}{\varepsilon}
-\right)^{- N / 2} \exp \left(
-        - \frac{\varepsilon}{2 \delta}  \sum_x
-(\varphi_x - \varphi'_x)^2 -
-        \frac{\delta}{2}  (U_{\varepsilon} (\varphi) +
-U_{\varepsilon}
-        (\varphi')) \right),\)</td>
+        <td width="100%" align="center"><a id="eq:transfer"></a>\(\displaystyle T_{\delta}  (\varphi,
+        \varphi') = \left( \frac{2 \pi \delta}{\varepsilon}
+\right)^{- N / 2}
+        \exp \left( - \frac{\varepsilon}{2 \delta}  \sum_x
+(\varphi_x -
+        \varphi'_x)^2 - \frac{\delta}{2}  (U_{\varepsilon} (\varphi)
+        +
+U_{\varepsilon} (\varphi')) \right),\)</td>
         <td align="right">(2.6)</td>
       </tr>
     </table>
@@ -1395,19 +1415,20 @@ T\mathbb{Z}) \times
 \prod_{u \in \Lambda} \mathrm{d}
       \varphi_u\) with the <em>lattice Euclidean action</em>
     </p>
-    <a id="eq:lattice-action"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle S_{\delta, \varepsilon} (\varphi) =
-        \sum_{(\tau, x) \in \Lambda} \varepsilon
-\delta \left[ \tfrac{1}{2}
-        \left( \frac{\varphi_{\tau + \delta, x} -
-\varphi_{\tau, x}}{\delta}
-        \right)^2 + \tfrac{1}{2} \left(
-\frac{\varphi_{\tau, x + \varepsilon}
-        - \varphi_{\tau, x}}{\varepsilon}
-\right)^2 + \tfrac{1}{2} m^2
-        \varphi_{\tau, x}^2 + V (\varphi_{\tau, x})
-\right] .\)</td>
+        <td width="100%" align="center"><a id="eq:lattice-action"></a>\(\displaystyle S_{\delta, \varepsilon}
+        (\varphi) = \sum_{(\tau, x) \in \Lambda} \varepsilon
+\delta \left[
+        \tfrac{1}{2} \left( \frac{\varphi_{\tau + \delta, x} -
+\varphi_{\tau,
+        x}}{\delta} \right)^2 + \tfrac{1}{2} \left(
+\frac{\varphi_{\tau, x +
+        \varepsilon} - \varphi_{\tau, x}}{\varepsilon}
+\right)^2 +
+        \tfrac{1}{2} m^2 \varphi_{\tau, x}^2 + V (\varphi_{\tau, x})
+\right]
+        .\)</td>
         <td align="right">(2.8)</td>
       </tr>
     </table>
@@ -1422,13 +1443,14 @@ m^2 \varphi^2 + V (\varphi)]
       Imaginary time and space now play symmetric roles: the Minkowski metric
       has become Euclidean. Define the probability measure
     </p>
-    <a id="eq:lattice-measure"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mu_{\delta, \varepsilon}^{T, L}
-        (\mathrm{d} \varphi) := Z^{- 1}
-\mathrm{e}^{- S_{\delta, \varepsilon}
-        (\varphi)} \prod_{u \in \Lambda}
-\mathrm{d} \varphi_u .\)</td>
+        <td width="100%" align="center"><a id="eq:lattice-measure"></a>\(\displaystyle \mu_{\delta,
+        \varepsilon}^{T, L} (\mathrm{d} \varphi) := Z^{- 1}
+\mathrm{e}^{-
+        S_{\delta, \varepsilon} (\varphi)} \prod_{u \in \Lambda}
+\mathrm{d}
+        \varphi_u .\)</td>
         <td align="right">(2.9)</td>
       </tr>
     </table>
@@ -1437,9 +1459,9 @@ m^2 \varphi^2 + V (\varphi)]
       gives, for \(\tau_1 \geq \ldots \geq \tau_n\) in \(\delta \mathbb{Z}\)
       with \(\tau_1 - \tau_n < T\),
     </p>
-    <a id="eq:FK-lattice"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \frac{\text{Tr} (F_1
+        <td width="100%" align="center"><a id="eq:FK-lattice"></a>\(\displaystyle \frac{\text{Tr} (F_1
         T_{\delta}^{k_1} F_2 T_{\delta}^{k_2} \cdots
         F_n
 T_{\delta}^{k_n})}{\text{Tr} (T_{\delta}^J)} = \int F_1
@@ -1454,45 +1476,49 @@ L} (\mathrm{d} \varphi),\)</td>
       where \(k_j = (\tau_j - \tau_{j + 1}) / \delta\) for \(j < n\) and \(k_n
       = J - \sum_{j < n} k_j\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">2.3</class>. </strong><i><class style="font-style: normal"><strong>(Feynman&ndash;Kac&ndash;Nelson)
-      </strong></class><a id="prop:FK"></a> For bounded continuous \(F_j\) and dyadic
-      \(\tau_1 \geq \ldots \geq \tau_n\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:FK"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \langle \Omega_{\varepsilon}, F_1
-          \mathrm{e}^{- (\tau_1 - \tau_2) \bar{H}}
-F_2 \cdots F_n
-          \Omega_{\varepsilon} \rangle = \lim_{T \to \infty} \lim_{\delta
-\to
-          0}  \int F_1 (\varphi_{\tau_1}) \cdots F_n (\varphi_{\tau_n})
-
-\hspace{0.17em} \mu_{\delta, \varepsilon}^{T, L} (\mathrm{d}
-          \varphi) .\)</td>
-          <td align="right">(2.11)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">2.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Feynman&ndash;Kac&ndash;Nelson)
+        </strong></class><a id="prop:FK"></a> For bounded continuous \(F_j\) and dyadic
+        \(\tau_1 \geq \ldots \geq \tau_n\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:FK"></a>\(\displaystyle \langle
+            \Omega_{\varepsilon}, F_1 \mathrm{e}^{- (\tau_1 - \tau_2)
+            \bar{H}}
+F_2 \cdots F_n \Omega_{\varepsilon} \rangle = \lim_{T \to
+            \infty} \lim_{\delta
+\to 0}  \int F_1 (\varphi_{\tau_1}) \cdots
+            F_n (\varphi_{\tau_n})
+\hspace{0.17em} \mu_{\delta,
+            \varepsilon}^{T, L} (\mathrm{d} \varphi) .\)</td>
+            <td align="right">(2.11)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Sketch. </strong>The Gaussian factor in <class style="font-style: normal">(<a href="#eq:lattice-measure">2.9</a>)</class>
-      gives precisely the finite-dimensional distributions, at times \(\tau
-      \in \delta \mathbb{Z}/ T\mathbb{Z}\), of the (unnormalised) Brownian
-      loop measure on \(\mathbb{R}^{\Lambda_{\varepsilon}}\) of length \(T\)
-      and generator \(\frac{1}{2 \varepsilon} \Delta\) (variance \(t /
-      \varepsilon\) per coordinate). The potential term \(\delta \sum_{\tau}
-      U_{\varepsilon} (\varphi_{\tau})\) is a Riemann sum for \(\int_0^T
-      U_{\varepsilon} (\omega_{\tau}) \mathrm{d} \tau\). Hence, as \(\delta
-      \to 0\) (along dyadic \(\delta\), say, so that the \(\tau_j\) stay on
-      the lattice), both sides of <class style="font-style: normal">(<a href="#eq:FK-lattice">2.10</a>)</class>
-      converge to the Feynman&ndash;Kac expression \(\text{Tr} (F_1
-      \mathrm{e}^{- (\tau_1 - \tau_2) H} \cdots F_n \mathrm{e}^{- (T
-- \tau_1
-      + \tau_n) H}) / \text{Tr} (\mathrm{e}^{- TH})\), written as an integral
-      over Brownian loops weighted by \(\exp (- \int_0^T U_{\varepsilon})\)
-      [<a href="#bib-Sim79">Sim79</a>]. The limit \(T \to \infty\) uses that \(E_0\) is
-      simple and isolated (Exercise <a href="#ex:vacuum">2.6</a>).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Sketch. </strong>The Gaussian factor in <class style="font-style: normal">(<a
+      href="#eq:lattice-measure">2.9</a>)</class> gives precisely the finite-dimensional
+      distributions, at times \(\tau \in \delta \mathbb{Z}/ T\mathbb{Z}\), of
+      the (unnormalised) Brownian loop measure on
+      \(\mathbb{R}^{\Lambda_{\varepsilon}}\) of length \(T\) and generator
+      \(\frac{1}{2 \varepsilon} \Delta\) (variance \(t / \varepsilon\) per
+      coordinate). The potential term \(\delta \sum_{\tau} U_{\varepsilon}
+      (\varphi_{\tau})\) is a Riemann sum for \(\int_0^T U_{\varepsilon}
+      (\omega_{\tau}) \mathrm{d} \tau\). Hence, as \(\delta \to 0\) (along
+      dyadic \(\delta\), say, so that the \(\tau_j\) stay on the lattice),
+      both sides of <class style="font-style: normal">(<a href="#eq:FK-lattice">2.10</a>)</class> converge to the
+      Feynman&ndash;Kac expression \(\text{Tr} (F_1 \mathrm{e}^{- (\tau_1 -
+      \tau_2) H} \cdots F_n \mathrm{e}^{- (T
+- \tau_1 + \tau_n) H}) /
+      \text{Tr} (\mathrm{e}^{- TH})\), written as an integral over Brownian
+      loops weighted by \(\exp (- \int_0^T U_{\varepsilon})\) [<a href="#bib-Sim79">Sim79</a>].
+      The limit \(T \to \infty\) uses that \(E_0\) is simple and isolated
+      (Exercise <a href="#ex:vacuum">2.6</a>).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Vacuum expectations of the quantum system in imaginary time are thus
@@ -1530,10 +1556,10 @@ F_2 \cdots F_n
       Take the isotropic lattice \(\delta = \varepsilon\). Then <class style="font-style: normal">(<a
       href="#eq:lattice-action">2.8</a>)</class> becomes
     </p>
-    <a id="eq:spin-system"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle S_{\varepsilon} (\varphi) =
-        \sum_{\langle u, v \rangle} \tfrac{1}{2}
+        <td width="100%" align="center"><a id="eq:spin-system"></a>\(\displaystyle S_{\varepsilon} (\varphi)
+        = \sum_{\langle u, v \rangle} \tfrac{1}{2}
 (\varphi_u - \varphi_v)^2 +
         \varepsilon^2  \sum_u \left[ \tfrac{1}{2} m^2
 \varphi_u^2 + V
@@ -1638,7 +1664,7 @@ m^2 a^2 + V
       </table>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">2.4</class>. </strong><class style="font-style: normal"><strong>(Continuum
+      <strong class="enunciation-name">Remark <class style="font-style: normal">2.4</class>. </strong><class style="font-style: normal"><strong>(Continuum
       limit \(=\) critical point) </strong></class>In lattice units the model
       <class style="font-style: normal">(<a href="#eq:spin-system">2.12</a>)</class> has mass \(\varepsilon m \to
       0\), so its correlation length is \(\xi \approx (\varepsilon m)^{- 1}
@@ -1656,7 +1682,7 @@ m^2 a^2 + V
       approximations for \(P (\varphi)_2\).
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">2.5</class>. </strong><class style="font-style: normal"><strong>(Renormalisation
+      <strong class="enunciation-name">Remark <class style="font-style: normal">2.5</class>. </strong><class style="font-style: normal"><strong>(Renormalisation
       already appears) </strong></class>For \(V (a) = \lambda a^4\), the limit
       \(\varepsilon \to 0\) at fixed \((m, \lambda)\) does not produce an
       interacting theory: the Gaussian part alone has \(c_{\varepsilon} :=
@@ -1675,9 +1701,9 @@ m^2 a^2 + V
       Formally, as \(\varepsilon \to 0\) and \(L, T \to \infty\), <class
       style="font-style: normal">(<a href="#eq:lattice-measure">2.9</a>)</class> becomes the Euclidean path integral
     </p>
-    <a id="eq:path-integral"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mu (\mathrm{d} \varphi)
+        <td width="100%" align="center"><a id="eq:path-integral"></a>\(\displaystyle \mu (\mathrm{d} \varphi)
         \hspace{0.27em} \backprime\backprime = "
 \hspace{0.27em} Z^{- 1} \exp
         \left( - \int_{\mathbb{R}^d} \left[ \tfrac{1}{2}
@@ -1765,16 +1791,19 @@ m^2 a^2 + V
         </dd>
       </p>
     </dl>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">2.6</class>. </strong><i><class
+        style="font-style: normal"><strong>(Osterwalder&ndash;Schrader reconstruction [<a href="#bib-OS73">OS73</a>,
+        <a href="#bib-OS75">OS75</a>, <a href="#bib-GJ87">GJ87</a>]) </strong></class>If \(\mu\)
+        satisfies (OS0)&ndash;(OS3), its moments are the Schwinger functions
+        of a unique Wightman theory satisfying (W1)&ndash;(W4) and (W0) except
+        possibly uniqueness of the vacuum. (OS4) holds iff the vacuum is
+        unique.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Theorem <class style="font-style: normal">2.6</class>. </strong><i><class style="font-style: normal"><strong>(Osterwalder&ndash;Schrader
-      reconstruction [<a href="#bib-OS73">OS73</a>, <a href="#bib-OS75">OS75</a>, <a href="#bib-GJ87">GJ87</a>])
-      </strong></class>If \(\mu\) satisfies (OS0)&ndash;(OS3), its moments are
-      the Schwinger functions of a unique Wightman theory satisfying
-      (W1)&ndash;(W4) and (W0) except possibly uniqueness of the vacuum. (OS4)
-      holds iff the vacuum is unique.</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Idea. </strong>Let \(\mathcal{E}_+\) be the functions of
+      <strong class="enunciation-name">Idea. </strong>Let \(\mathcal{E}_+\) be the functions of
       \(\varphi\) that depend only on its restriction to \(\{\tau > 0\}\),
       with \((F, G) := \mathbb{E}_{\mu}  [\overline{\Theta F}  \hspace{0.17em}
       G]\). By (OS3) this is a positive semi-definite form; quotienting by
@@ -1787,7 +1816,7 @@ m^2 a^2 + V
       functions.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
-      <strong>Remark <class style="font-style: normal">2.7</class>. </strong><class style="font-style: normal"><strong>(Positivity,
+      <strong class="enunciation-name">Remark <class style="font-style: normal">2.7</class>. </strong><class style="font-style: normal"><strong>(Positivity,
       clustering and uniqueness of the vacuum) </strong></class><a id="rem:clustering"></a>
       Let \(H \geq 0\) be self-adjoint, \(\Omega \in \ker H\), and let \(P_0\)
       be the orthogonal projection onto \(\ker H\). Positivity of the energy

@@ -588,13 +588,7 @@
     with <math|W> a cylindrical Brownian motion for the joint filtration, and
     <math|Y>, <math|Z>, <math|X> satisfy
 
-    <\equation>
-      <label|eq:limit-equations>
-
-      <\aligned>
-        <tformat|<table|<row|<cell|Y<rsub|q>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>H<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>W<rsub|s>,>>|<row|<cell|Z<rsub|q>>|<cell|=-<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>\<Xi\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>X<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsub|s>.>>>>
-      </aligned>
-    </equation>
+    <align|<tformat|<table|<row|<cell|Y<rsub|q>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>H<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>W<rsub|s>,>>|<row|<cell|Z<rsub|q>>|<cell|=-<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>\<Xi\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>X<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsub|s>.<eq-number><label|eq:limit-equations>>>>>>
   </proposition>
 
   The argument is: the limiting <math|\<psi\>> is a continuous
@@ -870,7 +864,7 @@
     <associate|auto-14|<tuple|19.3|7>>
     <associate|auto-15|<tuple|19.4|7>>
     <associate|auto-16|<tuple|19.5|8>>
-    <associate|auto-17|<tuple|1|9>>
+    <associate|auto-17|<tuple|1|8>>
     <associate|auto-18|<tuple|1|9>>
     <associate|auto-19|<tuple|19.5|9>>
     <associate|auto-2|<tuple|17|2>>
@@ -883,7 +877,7 @@
     <associate|auto-9|<tuple|18.3|4>>
     <associate|bib-FBSDE26|<tuple|FBSDE26|9>>
     <associate|cor:tight|<tuple|18.3|5>>
-    <associate|eq:DS|<tuple|19.4|8>>
+    <associate|eq:DS|<tuple|19.4|7>>
     <associate|eq:closed-forecast|<tuple|19.3|7>>
     <associate|eq:energy-recall|<tuple|1|2>>
     <associate|eq:gradient-match|<tuple|17.2|2>>
@@ -908,7 +902,7 @@
     <associate|sec:compactness|<tuple|18|3>>
     <associate|sec:limit|<tuple|19|5>>
     <associate|sec:terminal|<tuple|17|2>>
-    <associate|thm:DS|<tuple|19.5|8>>
+    <associate|thm:DS|<tuple|19.5|7>>
     <associate|thm:limit|<tuple|19.4|7>>
     <associate|thm:uv|<tuple|17.2|3>>
   </collection>

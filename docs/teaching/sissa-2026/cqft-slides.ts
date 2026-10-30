@@ -5,14 +5,17 @@
 <\body>
   <\active*>
     <\src-title>
-      <src-package|cqft-slides|1.0>
+      <src-package|cqft-slides|2.0>
 
-      <src-purpose|HTML export of the SISSA lecture slides: each screen
-      becomes a slide of a small web viewer.>
+      <src-purpose|Presentation macros of the SISSA lecture slides and their
+      HTML export, on top of the package max-html-slides of the max-html
+      plugin.>
 
       <src-copyright|2026|Massimiliano Gubinelli>
     </src-title>
   </active*>
+
+  <use-package|max-html-slides>
 
   <\active*>
     <\src-comment>
@@ -65,29 +68,18 @@
 
   <\active*>
     <\src-comment>
-      Stylesheets and the slide viewer script, next to the HTML pages.
+      Stylesheets and the slide viewer of max-html-slides (from the plugin's
+      resources folder), the fonts and cqft-slides.css, next to the HTML
+      pages. max-html-slides also gives HTML renderings of mytitle,
+      myframed and myframed-2.
     </src-comment>
   </active*>
 
-  <assign|html-extra-css|<tuple|https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap|cqft-slides.css|/resources/sissa-materials.css>>
+  <assign|html-extra-css|<tuple|max-html-slides.css|https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap|cqft-slides.css|/resources/sissa-materials.css>>
 
-  <assign|html-extra-javascript-src|<tuple|cqft-slides.js>>
+  <assign|html-extra-javascript-src|<tuple|max-html-slides.js>>
 
   <assign|html-head-favicon|cqft-icon.svg>
-
-  <\active*>
-    <\src-comment>
-      HTML renderings of the macros of the talk preamble. On screen
-      <src-macro|mytitle> and <src-macro|myframed> are tables; in HTML they
-      become classed blocks styled by <verbatim|cqft-slides.css>.
-    </src-comment>
-  </active*>
-
-  <assign|tmhtml-mytitle|<macro|tit|<html-div-class|slide-title|<arg|tit>>>>
-
-  <assign|tmhtml-myframed|<macro|body|<html-div-class|slide-block|<arg|body>>>>
-
-  <assign|tmhtml-myframed-2|<macro|body|<html-div-class|slide-box|<arg|body>>>>
 </body>
 
 <\initial>

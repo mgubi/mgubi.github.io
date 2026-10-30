@@ -1,8 +1,8 @@
-// Contents side panel: highlight the entry of the section being read.
-// The panel is the TeXmacs table of contents (div.cqft-toc, see
-// cqft-notes.ts); each entry links to an "#auto-N" anchor of its heading.
+// max-html: contents side panel: highlight the entry of the section being read.
+// The panel is the TeXmacs table of contents (div.max-toc, see
+// max-html.ts); each entry links to an "#auto-N" anchor of its heading.
 (function () {
-  var toc = document.querySelector('.cqft-toc');
+  var toc = document.querySelector('.max-toc');
   if (!toc) return;
   var items = [];
   Array.prototype.forEach.call(toc.querySelectorAll('p a[href^="#auto-"]'), function (a) {

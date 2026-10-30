@@ -1,0 +1,84 @@
+/* max-html: reading layout for TeXmacs articles exported to HTML (package
+   max-html). Fonts and colours are variables: a document stylesheet loaded
+   after this one may set --max-text-font, --strong, --math, ... */
+:root { --max-text-font: 'TeX Gyre Pagella', Palatino, 'Palatino Linotype', 'Book Antiqua', serif; }
+:root { --fg: #1f1f1f; --bg: #fdfdfb; --link: #1b4f8a; --rule: #d6d3cc; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --fg: #e6e4df; --bg: #1c1c1e; --link: #8fb8ea; --rule: #444; }
+  :root:not([data-theme="light"]) img { background: #fff; }
+}
+:root[data-theme="dark"] { --fg: #e6e4df; --bg: #1c1c1e; --link: #8fb8ea; --rule: #444; }
+html { background: var(--bg); }
+body { max-width: 46em; margin: 2.5em auto 4em; padding: 0 16px; color: var(--fg);
+       background: var(--bg);
+       font-family: var(--max-text-font);
+       font-size: 19.5px; line-height: 1.5; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2em; border-bottom: 1px solid var(--rule); padding-bottom: .2em; }
+img { max-width: 100%; height: auto; }
+table { max-width: 100%; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+center { overflow-x: auto; }
+
+/* Table of contents as a fixed side panel (see max-html.ts). */
+:root { --panel: #f4f2ec; --hover: #e7e3d8; --toc-w: 17rem; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --panel: #232326; --hover: #33333a; }
+}
+.max-toc { position: fixed; top: 0; left: 0; bottom: 0; width: var(--toc-w);
+            box-sizing: border-box; overflow-y: auto; padding: 1.2rem .9rem 2rem;
+            background: var(--panel); border-right: 1px solid var(--rule);
+            font-family: var(--max-text-font); font-size: 16px; line-height: 1.3;
+            text-align: left; z-index: 10; }
+.max-toc-title { font-weight: 600; font-size: 1.1em; margin: 0 .3em .6em; }
+.max-toc p { position: relative; margin: .1em 0 !important; padding: .2em .35em; border-radius: 4px; }
+.max-toc p:hover { background: var(--hover); }
+.max-toc p:has(> b) { margin-top: .8em !important; }
+.max-toc p { padding-left: 2.35em; text-indent: -2em; }
+.max-toc p:has(> font) { padding-left: 2.6em; text-indent: -1em; }
+.max-toc p a[href^="#auto-"] { position: absolute; inset: 0; font-size: 0; color: transparent; }
+.max-toc p a[href^="#auto-"]:focus-visible { outline: 2px solid var(--link); border-radius: 4px; }
+.max-toc span[style*="margin-left: 5mm"] { display: none; }
+body { margin-left: max(calc(var(--toc-w) + 2rem), calc((100vw - 46em) / 2)); margin-right: auto; }
+html { scroll-padding-top: 1rem; }
+@media (max-width: 960px) {
+  .max-toc { position: static; width: auto; max-height: none; border-right: 0;
+              border: 1px solid var(--rule); border-radius: 6px; margin: 1.5em 0; }
+  body { margin-left: auto; }
+}
+@media print { .max-toc { position: static; width: auto; border: 0; background: none; } body { margin-left: auto; } }
+/* Current position (max-html.js). */
+:root { --current: #ebe2cf; --current-fg: #7a1f1f; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --current: #3b3428; --current-fg: #f0c9a0; }
+}
+.max-toc p.toc-current { background: var(--current); color: var(--current-fg);
+                          box-shadow: inset 3px 0 0 var(--current-fg); }
+.max-toc p.toc-current-section { color: var(--current-fg); }
+/* Framed theorems (div.theorem, see max-html.ts), after J. van der Hoeven's articles. */
+:root { --frame: #cfc6b4; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --frame: #5e574b; } }
+:root[data-theme="dark"] { --frame: #5e574b; }
+.theorem { border: 1px solid var(--frame); border-left: .5em solid var(--frame);
+           margin: 1.4em 0; padding: .1em 1.1em; border-radius: 2px; }
+.theorem > p:first-child { margin-top: .8em !important; }
+.theorem > p:last-child { margin-bottom: .8em !important; }
+.theorem center { overflow-x: auto; }
+@media print { .theorem { break-inside: avoid; } }
+/* Numbered list variants (max-html.ts): labels (a), (A), (i) as in the PDF. */
+.enum-alpha > ol > li::marker { content: "(" counter(list-item, lower-alpha) ")\2002"; }
+.enum-Alpha > ol > li::marker { content: "(" counter(list-item, upper-alpha) ")\2002"; }
+.enum-roman > ol > li::marker { content: "(" counter(list-item, lower-roman) ")\2002"; }
+.enum-alpha > ol > li::marker, .enum-Alpha > ol > li::marker, .enum-roman > ol > li::marker { font-style: normal; }
+/* Colours for strong text (headings, theorem names, bold) and for mathematics. */
+:root { --strong: #7a1f1f; --math: #1d4b57; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --strong: #e3ae8f; --math: #a6d3da; }
+}
+:root[data-theme="dark"] { --strong: #e3ae8f; --math: #a6d3da; }
+h1, h2, h3, h4, h5, h6, strong, b, dt, .enunciation-name { color: var(--strong); }
+.max-toc b, .max-toc strong { color: inherit; }
+mjx-container { color: var(--math); }
+a mjx-container { color: inherit; }

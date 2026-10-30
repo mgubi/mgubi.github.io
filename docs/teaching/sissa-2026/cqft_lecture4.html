@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 4 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -129,8 +130,8 @@
         estimates on the FBSDE, and Lecture 6 removes the cutoffs.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -160,7 +161,7 @@
       </p>
       <p>
         11.4<span style="margin-left: 1em"></span>The Wetterich formulation <span style="margin-left: 5mm"></span>
-        <a href="#auto-8">5</a>
+        <a href="#auto-8">6</a>
       </p>
       <p>
         11.5<span style="margin-left: 1em"></span>Approximate forecast and error <span style="margin-left: 5mm"></span>
@@ -197,7 +198,7 @@
       </p>
       <p>
         12.4<span style="margin-left: 1em"></span>Two mass renormalisations <span style="margin-left: 5mm"></span>
-        <a href="#auto-19">11</a>
+        <a href="#auto-19">10</a>
       </p>
       <p>
         12.5<span style="margin-left: 1em"></span>Two correction steps <span style="margin-left: 5mm"></span> <a
@@ -218,7 +219,7 @@
         <font style="font-size: 92.0%">A scalar model. <span style="margin-left: 5mm"></span> <a href="#auto-24">12</a></font>
       </p>
       <p>
-        13.2<span style="margin-left: 1em"></span>Clipping <span style="margin-left: 5mm"></span> <a href="#auto-25">13</a>
+        13.2<span style="margin-left: 1em"></span>Clipping <span style="margin-left: 5mm"></span> <a href="#auto-25">12</a>
       </p>
       <p>
         13.3<span style="margin-left: 1em"></span>The complete defect <span style="margin-left: 5mm"></span> <a
@@ -226,7 +227,7 @@
       </p>
       <p>
         <font style="font-size: 92.0%">Where the large-field error comes from. <span style="margin-left: 5mm"></span>
-        <a href="#auto-27">14</a></font>
+        <a href="#auto-27">13</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">The coordinate correction. <span style="margin-left: 5mm"></span> <a href="#auto-28">14</a></font>
@@ -267,30 +268,32 @@
     <p>
       The argument has three parts, one per lecture.
     </p>
-    <ol>
-      <li>
-        <p>
-          <em>Deterministic renormalisation</em> (this lecture). Construct an
-          explicit approximate effective average action \(\bar{\Gamma}_q\) and
-          a counterterm, by a finite number of steps of the Wetterich flow,
-          and estimate its defect.
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>A priori estimates</em> (Lecture 5). Write the exact FBSDE in
-          the coordinates of \(\bar{\Gamma}_q\), and estimate the forward and
-          the backward equation together, uniformly in the lattice.
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>Removing the cutoffs</em> (Lecture 6). Remove the upper scale at
-          fixed lattice, then the lattice, and identify the limiting FBSDE and
-          its terminal law.
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            <em>Deterministic renormalisation</em> (this lecture). Construct
+            an explicit approximate effective average action
+            \(\bar{\Gamma}_q\) and a counterterm, by a finite number of steps
+            of the Wetterich flow, and estimate its defect.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>A priori estimates</em> (Lecture 5). Write the exact FBSDE in
+            the coordinates of \(\bar{\Gamma}_q\), and estimate the forward
+            and the backward equation together, uniformly in the lattice.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Removing the cutoffs</em> (Lecture 6). Remove the upper scale
+            at fixed lattice, then the lattice, and identify the limiting
+            FBSDE and its terminal law.
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       The emphasis is on the structure of the argument. We give complete
       proofs of the identities and of the scalar models of the estimates, and
@@ -376,11 +379,12 @@ x), \qquad \|C\|_{\text{row}} = \sup_x  \int
     <p>
       Set
     </p>
-    <a id="eq:K-C"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q := q - \Delta_N, \qquad C_q :=
-        K_q^{- 1}, \qquad C := C_{q_0} = (m^2 -
-\Delta_N)^{- 1} .\)</td>
+        <td width="100%" align="center"><a id="eq:K-C"></a>\(\displaystyle K_q := q - \Delta_N,
+        \qquad C_q := K_q^{- 1}, \qquad C := C_{q_0} = (m^2 -
+\Delta_N)^{- 1}
+        .\)</td>
         <td align="right">(11.1)</td>
       </tr>
     </table>
@@ -389,13 +393,14 @@ x), \qquad \|C\|_{\text{row}} = \sup_x  \int
       instead of \(t\) as the resolution variable (so \(\dot{Q}\) now means
       \(\partial_q Q_q\)),
     </p>
-    <a id="eq:dictionary-profile"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle Q_q = C - C_q, \qquad \partial_q Q_q
-        = C_q^2, \qquad \dot{Q}^{1 / 2} = C_q,
-\qquad S_q = C_q, \qquad
-        \mathscr{R}_q = q - q_0, \qquad \partial_q
-\mathscr{R}_q = 1.\)</td>
+        <td width="100%" align="center"><a id="eq:dictionary-profile"></a>\(\displaystyle Q_q = C - C_q, \qquad
+        \partial_q Q_q = C_q^2, \qquad \dot{Q}^{1 / 2} = C_q,
+\qquad S_q =
+        C_q, \qquad \mathscr{R}_q = q - q_0, \qquad \partial_q
+\mathscr{R}_q
+        = 1.\)</td>
         <td align="right">(11.2)</td>
       </tr>
     </table>
@@ -404,29 +409,31 @@ x), \qquad \|C\|_{\text{row}} = \sup_x  \int
       S_q^{- 1}\) is the precision of the posterior at resolution \(q\) under
       the free prior \(\mu^C\). The main properties of \(C_q\) are elementary.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">11.1</class>. </strong><i><class style="font-style: normal"><strong>(Free
-      resolvents) </strong></class><a id="lem:free"></a> For \(q \geq 1\), uniformly in
-      \(N\): \(C_q\) has a nonnegative kernel, \(C_q  \mathbb{1} = q^{- 1}
-      \mathbb{1}\), \(\|C_q \|_{p \to p} = q^{- 1}\) for \(1 \le p \le
-      \infty\), and</i>
-    </p>
-    <i><a id="eq:a2"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle a_2 (q) := (C_q^2) (x, x) =
-        \text{Tr} C_q^2 \lesssim q^{- 1 / 2} \wedge N^3
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">11.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Free resolvents) </strong></class><a id="lem:free"></a> For \(q
+        \geq 1\), uniformly in \(N\): \(C_q\) has a nonnegative kernel, \(C_q
+        \mathbb{1} = q^{- 1}  \mathbb{1}\), \(\|C_q \|_{p \to p} = q^{- 1}\)
+        for \(1 \le p \le \infty\), and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:a2"></a>\(\displaystyle a_2 (q) := (C_q^2) (x,
+          x) = \text{Tr} C_q^2 \lesssim q^{- 1 / 2} \wedge N^3
 q^{- 2}, \qquad
-        \text{Tr} C_q \lesssim N \wedge N^3 q^{- 1} .\)</td>
-        <td align="right">(11.3)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>For \(y \in H_N\) and \(\gamma > 0\), the killed resolvent \(G_q (y)
-      = (K_q + \gamma y^2)^{- 1}\) satisfies \(0 \le G_q (y) (x, z) \le C_q
-      (x, z)\).</i>
-    </p>
+          \text{Tr} C_q \lesssim N \wedge N^3 q^{- 1} .\)</td>
+          <td align="right">(11.3)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>For \(y \in H_N\) and \(\gamma > 0\), the killed resolvent \(G_q
+        (y) = (K_q + \gamma y^2)^{- 1}\) satisfies \(0 \le G_q (y) (x, z) \le
+        C_q  (x, z)\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(C_q = \int_0^{\infty} \mathrm{e}^{- qs}
+      <strong class="enunciation-name">Proof. </strong>\(C_q = \int_0^{\infty} \mathrm{e}^{- qs}
       \mathrm{e}^{s \Delta} \mathrm{d} s\) and \(\mathrm{e}^{s \Delta}\) is
       the transition kernel of the lattice random walk. This gives positivity
       and the row sums. Killing the walk at rate \(\gamma y^2\) gives the
@@ -452,12 +459,12 @@ q^{- 2}, \qquad
       with the counterterm \(\gamma_T\) of Lecture 3). The interaction and the
       lattice measure are
     </p>
-    <a id="eq:nuN"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle U (\varphi) = \frac{\lambda}{4}
-        \int \varphi^4, \qquad V_N (\varphi) = U
-(\varphi) + \frac{\mu_N}{2}
-        \int \varphi^2, \qquad \nu_N (\mathrm{d} \varphi)
+        <td width="100%" align="center"><a id="eq:nuN"></a>\(\displaystyle U (\varphi) =
+        \frac{\lambda}{4}  \int \varphi^4, \qquad V_N (\varphi) = U
+(\varphi)
+        + \frac{\mu_N}{2}  \int \varphi^2, \qquad \nu_N (\mathrm{d} \varphi)
 =
         \frac{\mathrm{e}^{- V_N (\varphi)}}{\mathcal{Z}_N}  \hspace{0.17em}
         \mu^C
@@ -475,37 +482,42 @@ q^{- 2}, \qquad
       \(\mu_N\), \(\nu_N\) is a probability measure with all moments, since
       the quartic term dominates.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">11.2</class>. </strong><i><class style="font-style: normal"><strong>(Main
-      result, informal [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="thm:main"></a>
-      Let \(\lambda > 0\) and let \(q_0\) be large enough, depending on
-      \(\lambda\). There are explicit \(\mu_N\), with \(\mu_N = - 3 \lambda
-      \text{Tr} C + O (\log N)\), such that:</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><ol>
-        <li>
-          <p>
-            the laws \(\nu_N\), embedded in \(H^{- s} (\mathbb{T}^3)\), are
-            tight for every \(s > \frac{1}{2}\);
-          </p>
-        </li>
-        <li>
-          <p>
-            along a subsequence, the forecast processes converge, on a common
-            probability space, to a solution of a forward&ndash;backward
-            system on \([q_0, \infty)\) driven by a cylindrical Brownian
-            motion, whose terminal value has the limiting law \(\nu\);
-          </p>
-        </li>
-        <li>
-          <p>
-            \(\nu\) satisfies the integration by parts formula of Theorem <a
-            href="cqft_lecture6.html#thm:DS">19.5</a>, in which the renormalised cube appears only tested
-            in expectation.
-          </p>
-        </li>
-      </ol></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">11.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Main result, informal [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="thm:main"></a> Let \(\lambda > 0\) and let \(q_0\) be
+        large enough, depending on \(\lambda\). There are explicit \(\mu_N\),
+        with \(\mu_N = - 3 \lambda \text{Tr} C + O (\log N)\), such that:</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                the laws \(\nu_N\), embedded in \(H^{- s} (\mathbb{T}^3)\),
+                are tight for every \(s > \frac{1}{2}\);
+              </p>
+            </li>
+            <li>
+              <p>
+                along a subsequence, the forecast processes converge, on a
+                common probability space, to a solution of a
+                forward&ndash;backward system on \([q_0, \infty)\) driven by a
+                cylindrical Brownian motion, whose terminal value has the
+                limiting law \(\nu\);
+              </p>
+            </li>
+            <li>
+              <p>
+                \(\nu\) satisfies the integration by parts formula of Theorem
+                <a href="cqft_lecture6.html#thm:DS">19.5</a>, in which the renormalised cube appears only
+                tested in expectation.
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
     </div>
     <p>
       The bounds that prove (a) and (b) are uniform in \(N\): this is <em>UV
@@ -523,10 +535,10 @@ q^{- 2}, \qquad
 \langle u, v \rangle\). We
       observe
     </p>
-    <a id="eq:observation"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle P_q = (q - q_0) \Phi_{\infty} + B_{q
-        - q_0}, \qquad q \ge q_0,\)</td>
+        <td width="100%" align="center"><a id="eq:observation"></a>\(\displaystyle P_q = (q - q_0)
+        \Phi_{\infty} + B_{q - q_0}, \qquad q \ge q_0,\)</td>
         <td align="right">(11.5)</td>
       </tr>
     </table>
@@ -535,74 +547,79 @@ q^{- 2}, \qquad
       (completed), and \(\mathbb{E}_q =\mathbb{E}[\hspace{0.17em} \cdot
       \hspace{0.17em} |\mathcal{F}_q]\). Let
     </p>
-    <a id="eq:K-ex"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{K}_q (p) := \log \int
-        \mathrm{e}^{\langle p, \varphi \rangle -
-\frac{q - q_0}{2} \| \varphi
-        \|_2^2} \nu_N (\mathrm{d} \varphi), \qquad
-\nu_{q, p} (\mathrm{d}
-        \varphi) := \mathrm{e}^{\langle p, \varphi \rangle -
-\frac{q - q_0}{2}
-        \| \varphi \|_2^2 -\mathcal{K}_q (p)} \nu_N (\mathrm{d}
-\varphi)
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:K-ex"></a>\(\displaystyle \mathcal{K}_q (p) := \log
+        \int \mathrm{e}^{\langle p, \varphi \rangle -
+\frac{q - q_0}{2} \|
+        \varphi \|_2^2} \nu_N (\mathrm{d} \varphi), \qquad
+\nu_{q, p}
+        (\mathrm{d} \varphi) := \mathrm{e}^{\langle p, \varphi \rangle
+        -
+\frac{q - q_0}{2} \| \varphi \|_2^2 -\mathcal{K}_q (p)} \nu_N
+        (\mathrm{d}
+\varphi) .\)</td>
         <td align="right">(11.6)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">11.3</class>. </strong><i><class
-      style="font-style: normal"><strong>(Posterior, forecast and innovation) </strong></class><a
-      id="prop:posterior"></a> At every fixed \(N\):</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><ol>
-        <li>
-          <p>
-            the conditional law of \(\Phi_{\infty}\) given \(\mathcal{F}_q\)
-            is \(\nu_{q, P_q}\). In particular the <em>forecast</em> and the
-            <em>conditional covariance</em> are
-          </p>
-          <a id="eq:forecast"></a><table width="100%">
-            <tr>
-              <td width="100%" align="center">\(\displaystyle \psi_q := \mathbb{E}_q
-              \Phi_{\infty} = D\mathcal{K}_q (P_q), \qquad
-\text{Cov}_q :=
-              \text{Cov} (\Phi_{\infty} |\mathcal{F}_q) = D^2
-              \mathcal{K}_q
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">11.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Posterior, forecast and innovation)
+        </strong></class><a id="prop:posterior"></a> At every fixed \(N\):</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                the conditional law of \(\Phi_{\infty}\) given
+                \(\mathcal{F}_q\) is \(\nu_{q, P_q}\). In particular the
+                <em>forecast</em> and the <em>conditional covariance</em> are
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:forecast"></a>\(\displaystyle \psi_q :=
+                  \mathbb{E}_q \Phi_{\infty} = D\mathcal{K}_q (P_q),
+                  \qquad
+\text{Cov}_q := \text{Cov} (\Phi_{\infty}
+                  |\mathcal{F}_q) = D^2 \mathcal{K}_q
 (P_q) > 0 ;\)</td>
-              <td align="right">(11.7)</td>
-            </tr>
-          </table>
-        </li>
-        <li>
-          <p>
-            the <em>innovation</em> \(W_q := P_q - \int_{q_0}^q \psi_s
-            \mathrm{d} s\) is an \((\mathcal{F}_q)\)-Brownian motion on
-            \(H_N\), and
-          </p>
-          <a id="eq:dpsi"></a><table width="100%">
-            <tr>
-              <td width="100%" align="center">\(\displaystyle \mathrm{d} P_q = \psi_q
-              \hspace{0.17em} \mathrm{d} q + \mathrm{d} W_q, \qquad
-\mathrm{d}
-              \psi_q = \text{Cov}_q \hspace{0.17em} \mathrm{d} W_q ;\)</td>
-              <td align="right">(11.8)</td>
-            </tr>
-          </table>
-        </li>
-        <li>
-          <p>
-            \(\mathcal{K}\) solves \(\partial_q \mathcal{K}_q + \frac{1}{2}
-            \text{Tr} D^2 \mathcal{K}_q +
-\frac{1}{2}  \|D\mathcal{K}_q \|_2^2
-            = 0\).
-          </p>
-        </li>
-      </ol></i>
+                  <td align="right">(11.7)</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <p>
+                the <em>innovation</em> \(W_q := P_q - \int_{q_0}^q \psi_s
+                \mathrm{d} s\) is an \((\mathcal{F}_q)\)-Brownian motion on
+                \(H_N\), and
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:dpsi"></a>\(\displaystyle \mathrm{d} P_q
+                  = \psi_q \hspace{0.17em} \mathrm{d} q + \mathrm{d} W_q,
+                  \qquad
+\mathrm{d} \psi_q = \text{Cov}_q \hspace{0.17em}
+                  \mathrm{d} W_q ;\)</td>
+                  <td align="right">(11.8)</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <p>
+                \(\mathcal{K}\) solves \(\partial_q \mathcal{K}_q +
+                \frac{1}{2} \text{Tr} D^2 \mathcal{K}_q +
+\frac{1}{2}
+                \|D\mathcal{K}_q \|_2^2 = 0\).
+              </p>
+            </li>
+          </ol>
+        </div></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>(a) Conditionally on \(\Phi_{\infty} =
+      <strong class="enunciation-name">Proof. </strong>(a) Conditionally on \(\Phi_{\infty} =
       \varphi\), the density of the observed path on \([q_0, q]\) with respect
       to the law of \(B\) is \(\exp \{\langle P_q, \varphi \rangle - \frac{q -
       q_0}{2} \| \varphi \|^2 \}\) (Girsanov, or a direct computation on
@@ -630,34 +647,38 @@ q^{- 2}, \qquad
       Gaussian factor of precision \(q - q_0\): the remaining randomness has
       precision \(K_{q_0} + (q - q_0) = K_q\). This suggests the following.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">11.4</class>.
+        </strong><i><class style="font-style: normal"><strong>(The Polchinski process)
+        </strong></class><a id="prop:polchinski"></a> Let \(\Phi_q := C_q P_q\) and \(F_q :=
+        K_q  (\psi_q - \Phi_q)\). Then</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:polchinski-fbsde"></a>\(\displaystyle \mathrm{d} \Phi_q =
+          C_q^2 F_q \hspace{0.17em} \mathrm{d} q + C_q
+\hspace{0.17em}
+          \mathrm{d} W_q, \qquad F_q =\mathbb{E}_q  [- DV_N
+(\Phi_{\infty})],
+          \qquad \psi_q = \Phi_q + C_q F_q .\)</td>
+          <td align="right">(11.9)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>This is the FBSDE <a href="cqft_lecture3.html#eq:fbsde">(5.7)</a> of Lecture 3 for the profile
+        <class style="font-style: normal">(<a href="#eq:dictionary-profile">11.2</a>)</class>: \(\Phi\) is the interacting
+        field at resolution \(q\), \(F\) the effective force, \(\psi\) the
+        forecast of Proposition <a href="cqft_lecture3.html#prop:psi">6.1</a>, and \(\text{Cov}_q =
+        H^{\text{ex}}_q (\psi_q)\) (Proposition <a href="#prop:wetterich">11.5</a>) is the
+        response of Proposition <a href="cqft_lecture3.html#prop:H-cov">6.3</a>. Under \(\nu_N = \mu^C\) one
+        has \(F = 0\), \(\Phi_q = \psi_q\), and \(\Phi_q\) is the Gaussian
+        field \(X_q\) of Proposition <a href="cqft_lecture3.html#prop:scale-GFF">4.2</a>, with law
+        \(\mu^{Q_q}\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">11.4</class>. </strong><i><class
-      style="font-style: normal"><strong>(The Polchinski process) </strong></class><a id="prop:polchinski"></a> Let
-      \(\Phi_q := C_q P_q\) and \(F_q := K_q  (\psi_q - \Phi_q)\). Then</i>
-    </p>
-    <i><a id="eq:polchinski-fbsde"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q
-        \hspace{0.17em} \mathrm{d} q + C_q
-\hspace{0.17em} \mathrm{d} W_q,
-        \qquad F_q =\mathbb{E}_q  [- DV_N
-(\Phi_{\infty})], \qquad \psi_q =
-        \Phi_q + C_q F_q .\)</td>
-        <td align="right">(11.9)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>This is the FBSDE <a href="cqft_lecture3.html#eq:fbsde">(5.7)</a> of Lecture 3 for the profile
-      <class style="font-style: normal">(<a href="#eq:dictionary-profile">11.2</a>)</class>: \(\Phi\) is the interacting
-      field at resolution \(q\), \(F\) the effective force, \(\psi\) the
-      forecast of Proposition <a href="cqft_lecture3.html#prop:psi">6.1</a>, and \(\text{Cov}_q =
-      H^{\text{ex}}_q (\psi_q)\) (Proposition <a href="#prop:wetterich">11.5</a>) is the
-      response of Proposition <a href="cqft_lecture3.html#prop:H-cov">6.3</a>. Under \(\nu_N = \mu^C\) one
-      has \(F = 0\), \(\Phi_q = \psi_q\), and \(\Phi_q\) is the Gaussian field
-      \(X_q\) of Proposition <a href="cqft_lecture3.html#prop:scale-GFF">4.2</a>, with law \(\mu^{Q_q}\).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>\(\mathrm{d} \Phi_q = - C_q^2 P_q
+      <strong class="enunciation-name">Proof. </strong>\(\mathrm{d} \Phi_q = - C_q^2 P_q
       \hspace{0.17em} \mathrm{d} q + C_q  (\psi_q
 \mathrm{d} q + \mathrm{d}
       W_q) = C_q  (\psi_q - \Phi_q) \mathrm{d} q + C_q
@@ -668,9 +689,9 @@ q^{- 2}, \qquad
 \rangle - V_N
       (\varphi)\}\): there is no boundary term, and
     </p>
-    <a id="eq:posterior-ibp"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle p = K_q  \hspace{0.17em}
+        <td width="100%" align="center"><a id="eq:posterior-ibp"></a>\(\displaystyle p = K_q  \hspace{0.17em}
         D\mathcal{K}_q (p) + \int DV_N \hspace{0.17em}
 \mathrm{d} \nu_{q, p}
         .\)</td>
@@ -741,12 +762,12 @@ q^{- 2}, \qquad
       Let \(\Psi_q := \mathcal{K}_q^{\ast}\) be the Legendre transform of the
       log-partition function and
     </p>
-    <a id="eq:Gamma-ex"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Gamma_q (y) := \Psi_q (y) -
-        \tfrac{1}{2} \langle y, K_q y \rangle, \qquad
-H_q^{\text{ex}} (y) :=
-        (K_q + D^2 \Gamma_q (y))^{- 1} .\)</td>
+        <td width="100%" align="center"><a id="eq:Gamma-ex"></a>\(\displaystyle \Gamma_q (y) := \Psi_q
+        (y) - \tfrac{1}{2} \langle y, K_q y \rangle, \qquad
+H_q^{\text{ex}}
+        (y) := (K_q + D^2 \Gamma_q (y))^{- 1} .\)</td>
         <td align="right">(11.11)</td>
       </tr>
     </table>
@@ -758,47 +779,49 @@ H_q^{\text{ex}} (y) :=
       q_0\) (Exercise <a href="#ex:same-Gamma">11.1</a>). The coordinate identity \(P_q = D
       \Psi_q (\psi_q)\) reads
     </p>
-    <a id="eq:coordinate-ex"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q \Phi_q = K_q \psi_q + D \Gamma_q
-        (\psi_q), \qquad \text{i.e.} \qquad
-\Phi_q = \psi_q + C_q D \Gamma_q
-        (\psi_q),\)</td>
+        <td width="100%" align="center"><a id="eq:coordinate-ex"></a>\(\displaystyle K_q \Phi_q = K_q \psi_q +
+        D \Gamma_q (\psi_q), \qquad \text{i.e.} \qquad
+\Phi_q = \psi_q + C_q D
+        \Gamma_q (\psi_q),\)</td>
         <td align="right">(11.12)</td>
       </tr>
     </table>
     <p>
       which is <a href="cqft_lecture3.html#eq:coord">(6.5)</a> with \(\mathscr{F}_q = D \Gamma_q\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">11.5</class>. </strong><i><class
-      style="font-style: normal"><strong>(Wetterich equation with a mass regulator)
-      </strong></class><a id="prop:wetterich"></a> At fixed \(N\), \(\Gamma_q\) is smooth and
-      strictly convex after adding \(\frac{1}{2}  \langle y, K_q y \rangle\),
-      and</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:wetterich"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \partial_q \Gamma_q (y) =
-          \tfrac{1}{2} \text{Tr} H^{\text{ex}}_q (y), \qquad
-\text{Cov}_q =
-          H^{\text{ex}}_q (\psi_q) .\)</td>
-          <td align="right">(11.13)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">11.5</class>.
+        </strong><i><class style="font-style: normal"><strong>(Wetterich equation with a mass
+        regulator) </strong></class><a id="prop:wetterich"></a> At fixed \(N\), \(\Gamma_q\)
+        is smooth and strictly convex after adding \(\frac{1}{2}  \langle y,
+        K_q y \rangle\), and</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:wetterich"></a>\(\displaystyle \partial_q \Gamma_q
+            (y) = \tfrac{1}{2} \text{Tr} H^{\text{ex}}_q (y),
+            \qquad
+\text{Cov}_q = H^{\text{ex}}_q (\psi_q) .\)</td>
+            <td align="right">(11.13)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(\mathcal{K}_q\) is smooth, strictly convex
-      (its Hessian is a covariance) and superlinear (the posterior has full
-      support), so \(\Psi_q\) is smooth and \(D^2 \Psi_q  (D\mathcal{K}(p)) =
-      (D^2 \mathcal{K}(p))^{- 1}\). By the envelope theorem at fixed \(y\) and
-      Proposition <a href="#prop:posterior">11.3</a>(c), \(\partial_q \Psi_q (y) = - \partial_q
-      \mathcal{K}_q (p) = \frac{1}{2} \text{Tr}
-D^2 \mathcal{K}_q (p) +
-      \frac{1}{2} \|y\|^2\), with \(p = D \Psi_q (y)\). Subtract \(\partial_q
-      \frac{1}{2}  \langle y, K_q y \rangle = \frac{1}{2} \|y\|^2\).<span
-      style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>\(\mathcal{K}_q\) is smooth, strictly
+      convex (its Hessian is a covariance) and superlinear (the posterior has
+      full support), so \(\Psi_q\) is smooth and \(D^2 \Psi_q
+      (D\mathcal{K}(p)) = (D^2 \mathcal{K}(p))^{- 1}\). By the envelope
+      theorem at fixed \(y\) and Proposition <a href="#prop:posterior">11.3</a>(c),
+      \(\partial_q \Psi_q (y) = - \partial_q \mathcal{K}_q (p) = \frac{1}{2}
+      \text{Tr}
+D^2 \mathcal{K}_q (p) + \frac{1}{2} \|y\|^2\), with \(p = D
+      \Psi_q (y)\). Subtract \(\partial_q \frac{1}{2}  \langle y, K_q y
+      \rangle = \frac{1}{2} \|y\|^2\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       This is <a href="cqft_lecture3.html#eq:wetterich-Gamma">(6.12)</a> with \(\partial_q \mathscr{R} = 1\), up to
@@ -828,22 +851,35 @@ D^2 \mathcal{K}_q (p) +
       \(\bar{\mathcal{K}}_q = \bar{\Psi}_q^{\ast}\) and define the
       <em>approximate response</em>, the <em>defect</em> and its drift
     </p>
-    <a id="eq:defect"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \)</td>
-        <td align="right">(11.14)</td>
-      </tr>
-    </table>
+    <div style="text-indent: 0em; margin-top: 0.5em; margin-bottom: 0.5em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 33.3333333333333%; white-space: nowrap; padding-left: 0em; text-align: right; padding-bottom: 0.45em">\(\displaystyle \)</td>
+          <td style="white-space: nowrap; text-align: center; padding-bottom: 0.45em">\(\displaystyle H_q (y) := (K_q + D^2  \bar{\Gamma}_q
+          (y))^{- 1},\)</td>
+          <td style="width: 66.6666666666667%; white-space: nowrap; text-align: center; text-align: left; padding-bottom: 0.45em">\(\displaystyle \)</td>
+          <td style="white-space: nowrap; padding-right: 0em; text-align: right; padding-bottom: 0.45em"></td>
+        </tr><tr>
+          <td style="width: 33.3333333333333%; white-space: nowrap; padding-left: 0em; text-align: right">\(\displaystyle \)</td>
+          <td style="white-space: nowrap; text-align: center">\(\displaystyle e_q (y) := \partial_q  \bar{\Gamma}_q (y)
+          - \tfrac{1}{2} \text{Tr} [H_q (y) -
+H_q (0)], \qquad b_q (y) := -
+          H_q (y) De_q (y) .\)</td>
+          <td style="width: 66.6666666666667%; white-space: nowrap; text-align: center; text-align: left">\(\displaystyle \)</td>
+          <td style="white-space: nowrap; padding-right: 0em; text-align: right"><class style="font-style: normal">(11.14)</class></td>
+        </tr></tbody>
+      </table>
+    </div>
     <p>
       The subtraction of \(H_q (0)\) only removes a function of \(q\). Define
       the <em>approximate forecast</em> and the <em>error</em>
     </p>
-    <a id="eq:YZ"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle Y_q := D \bar{\mathcal{K}}_q (P_q),
-        \qquad Z_q := \psi_q - Y_q, \qquad \Xi_q
-:= \text{Cov}_q - H_q (Y_q)
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:YZ"></a>\(\displaystyle Y_q := D
+        \bar{\mathcal{K}}_q (P_q), \qquad Z_q := \psi_q - Y_q, \qquad \Xi_q
+:=
+        \text{Cov}_q - H_q (Y_q) .\)</td>
         <td align="right">(11.15)</td>
       </tr>
     </table>
@@ -854,34 +890,33 @@ D^2 \mathcal{K}_q (p) +
       If \(\bar{\Gamma} = \Gamma\) then \(Y = \psi\), \(Z = 0\), and \(e\)
       depends only on \(q\), so \(b = 0\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">11.6</class>. </strong><i><class style="font-style: normal"><strong>(The
-      FBSDE in approximate forecast coordinates) </strong></class><a id="thm:YZ"></a>
-      At every fixed \(N\),</i>
-    </p>
-    <i><a id="eq:YZ-fbsde"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">11.6</class>. </strong><i><class
+        style="font-style: normal"><strong>(The FBSDE in approximate forecast coordinates)
+        </strong></class><a id="thm:YZ"></a> At every fixed \(N\),</i>
+      </p>
+      <p>
+        <i><center>
+          <a id="eq:YZ-fbsde"></a>\(\displaystyle \begin{array}{rl}
+  \mathrm{d} Y_q & =
+          [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
 
-\begin{equationsbase}
-
-        \mathrm{d} Y_q & = [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q
-        (Y_q)
-  \hspace{0.17em} \mathrm{d} W_q,\\
-  \mathrm{d} Z_q & = - [b_q
-        (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + \Xi_q
-  \hspace{0.17em}
-        \mathrm{d} W_q,
-\end{equationsbase}\)</td>
-        <td align="right">(11.16)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>with \(Y_{q_0} = Z_{q_0} = 0\), and \(Y + Z = \psi\) is the
-      martingale \(\int \text{Cov} \hspace{0.17em} \mathrm{d} W\).</i>
-    </p>
+          \hspace{0.17em} \mathrm{d} W_q,\\
+  \mathrm{d} Z_q & = - [b_q (Y_q)
+          + H_q (Y_q) Z_q] \mathrm{d} q + \Xi_q
+  \hspace{0.17em} \mathrm{d}
+          W_q, \hspace{3cm}   \text{(11.16)}
+\end{array}\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>with \(Y_{q_0} = Z_{q_0} = 0\), and \(Y + Z = \psi\) is the
+        martingale \(\int \text{Cov} \hspace{0.17em} \mathrm{d} W\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>By the Legendre identities \(\partial_q
+      <strong class="enunciation-name">Proof. </strong>By the Legendre identities \(\partial_q
       \bar{\mathcal{K}}_q (p) = - \partial_q  \bar{\Psi}_q (y) = -
 \frac{1}{2}
       \|y\|^2 - \partial_q  \bar{\Gamma}_q (y)\) and \(D^2
@@ -1036,11 +1071,12 @@ W_q,\)
     <p>
       Two scales govern everything:
     </p>
-    <a id="eq:g-r"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle g_q := \gamma q^{- 1 / 2}, \qquad
-        r_q := (q / \gamma)^{1 / 2}, \qquad \gamma
-r_q^2 = q.\)</td>
+        <td width="100%" align="center"><a id="eq:g-r"></a>\(\displaystyle g_q := \gamma q^{- 1 /
+        2}, \qquad r_q := (q / \gamma)^{1 / 2}, \qquad \gamma
+r_q^2 =
+        q.\)</td>
         <td align="right">(12.1)</td>
       </tr>
     </table>
@@ -1077,9 +1113,9 @@ r_q^2 = q.\)</td>
       \(\Gamma_q - U - \frac{1}{2}  \langle y, M_q y \rangle\) to the bare
       action is
     </p>
-    <a id="eq:power-counting"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \textsf{S}_k \lesssim g_q
+        <td width="100%" align="center"><a id="eq:power-counting"></a>\(\displaystyle \textsf{S}_k \lesssim g_q
         \hspace{0.17em} q \hspace{0.17em} r_q^{2 - k} .\)</td>
         <td align="right">(12.2)</td>
       </tr>
@@ -1110,9 +1146,9 @@ r_q^2 = q.\)</td>
         2}\)) and the others in operator norm (\(\le C / q\)):
       </div>
     </p>
-    <a id="eq:loop"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle s (\text{loop}) \le C
+        <td width="100%" align="center"><a id="eq:loop"></a>\(\displaystyle s (\text{loop}) \le C
         \hspace{0.17em} a_2 (q)  \hspace{0.17em} q^{- (p - 1)}
 \prod_{i =
         1}^p s (T_i)\)</td>
@@ -1138,24 +1174,18 @@ r_q^2 = q.\)</td>
       equation and integrate from \(q = \infty\). With the quadratic part
       subtracted this gives the <em>seed</em>
     </p>
-    <a id="eq:seed"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \
-
-\begin{equationsbase}
-
-        \mathcal{L}_q (y) & = \tfrac{1}{2} \text{Tr} [\log (I + C_q^{1 / 2}
-        \gamma
-  y^2 C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 / 2}],\\
-
-        \partial_q \mathcal{L}_q (y) & = \tfrac{1}{2} \text{Tr} [G_q (y) -
-        C_q] +
+    <center>
+      <a id="eq:seed"></a>\(\displaystyle \begin{array}{rl}
+  \mathcal{L}_q (y) & =
+      \tfrac{1}{2} \text{Tr} [\log (I + C_q^{1 / 2} \gamma
+  y^2 C_q^{1 / 2})
+      - C_q^{1 / 2} \gamma y^2 C_q^{1 / 2}],\\
+  \partial_q \mathcal{L}_q (y)
+      & = \tfrac{1}{2} \text{Tr} [G_q (y) - C_q] +
   \tfrac{\gamma}{2} a_2 (q)
-        \|y\|_2^2,
-\end{equationsbase}\)</td>
-        <td align="right">(12.4)</td>
-      </tr>
-    </table>
+      \|y\|_2^2, \hspace{3cm}   \text{(12.4)}
+\end{array}\)
+    </center>
     <p>
       with \(G_q (y) = (K_q + \gamma y^2)^{- 1}\). \(\mathcal{L}_q \le 0\),
       and its constant and quadratic Taylor coefficients at \(y = 0\) vanish.
@@ -1185,22 +1215,22 @@ r_q^2 = q.\)</td>
       path (a running mass \(\mu_q\) and an even, translation-invariant,
       centred kernel \(\Theta_q\), \(\Theta_q  \mathbb{1} = 0\)), and set
     </p>
-    <a id="eq:trace-map"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathscr{T}_q  [M, h] (y) :=
-        \tfrac{1}{2} \text{Tr} [(K_q + M_q + D^2 (U + h)
-(y))^{- 1} - (K_q +
-        M_q)^{- 1}] .\)</td>
+        <td width="100%" align="center"><a id="eq:trace-map"></a>\(\displaystyle \mathscr{T}_q  [M, h] (y)
+        := \tfrac{1}{2} \text{Tr} [(K_q + M_q + D^2 (U + h)
+(y))^{- 1} - (K_q
+        + M_q)^{- 1}] .\)</td>
         <td align="right">(12.5)</td>
       </tr>
     </table>
     <p>
       The approximate action on the field ball is
     </p>
-    <a id="eq:Gamma-o"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Gamma^{\text{o}}_q (y) = U (y) +
-        \tfrac{1}{2} \langle y, M_q y \rangle +
+        <td width="100%" align="center"><a id="eq:Gamma-o"></a>\(\displaystyle \Gamma^{\text{o}}_q (y) =
+        U (y) + \tfrac{1}{2} \langle y, M_q y \rangle +
 h^{[2]}_q (y),\)</td>
         <td align="right">(12.6)</td>
       </tr>
@@ -1209,12 +1239,13 @@ h^{[2]}_q (y),\)</td>
       with the nonlinear part built by two <em>integrated</em> Wetterich
       steps,
     </p>
-    <a id="eq:iteration"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle h^{[0]} =\mathcal{L}, \qquad h^{[j +
-        1]}_q =\mathcal{L}_q - \int_q^{\infty}
-\Pi (\mathscr{T}_s [M, h^{[j]}]
-        - \partial_s \mathcal{L}_s) \mathrm{d} s,
+        <td width="100%" align="center"><a id="eq:iteration"></a>\(\displaystyle h^{[0]} =\mathcal{L},
+        \qquad h^{[j + 1]}_q =\mathcal{L}_q - \int_q^{\infty}
+\Pi
+        (\mathscr{T}_s [M, h^{[j]}] - \partial_s \mathcal{L}_s) \mathrm{d}
+        s,
 \qquad j = 0, 1,\)</td>
         <td align="right">(12.7)</td>
       </tr>
@@ -1242,12 +1273,12 @@ h^{[2]}_q (y),\)</td>
         the <em>mass equation</em>
       </div>
     </p>
-    <a id="eq:mass"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_q M_q = B_q [M] := - \gamma
-        \text{Tr} (R_{0, q}^2) I - \tfrac{1}{2}
-\text{Ctr}_{R_{0, q}^2} D^4
-        h^{[2]}_q (0),\)</td>
+        <td width="100%" align="center"><a id="eq:mass"></a>\(\displaystyle \partial_q M_q = B_q [M]
+        := - \gamma \text{Tr} (R_{0, q}^2) I - \tfrac{1}{2}
+\text{Ctr}_{R_{0,
+        q}^2} D^4 h^{[2]}_q (0),\)</td>
         <td align="right">(12.8)</td>
       </tr>
     </table>
@@ -1264,12 +1295,12 @@ h^{[2]}_q (y),\)</td>
       physical scale \(q_0\), while the nonlocal kernel is pinned at infinity.
       The <em>bare mass</em> is then
     </p>
-    <a id="eq:bare-mass"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mu_N = \lim_{q \to \infty} \mu_q =
-        \int_{q_0}^{\infty} \beta_q
-\hspace{0.17em} \mathrm{d} q, \qquad B_q
-        \mathbb{1} = \beta_q  \mathbb{1},\)</td>
+        <td width="100%" align="center"><a id="eq:bare-mass"></a>\(\displaystyle \mu_N = \lim_{q \to
+        \infty} \mu_q = \int_{q_0}^{\infty} \beta_q
+\hspace{0.17em} \mathrm{d}
+        q, \qquad B_q  \mathbb{1} = \beta_q  \mathbb{1},\)</td>
         <td align="right">(12.9)</td>
       </tr>
     </table>
@@ -1278,71 +1309,73 @@ h^{[2]}_q (y),\)</td>
       href="#eq:nuN">11.4</a>)</class>. Note the order: the counterterm is an output of
       the deterministic flow, not an input.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">12.1</class>. </strong><i><class
-      style="font-style: normal"><strong>(The coefficient construction [<a href="#bib-FBSDE26">FBSDE26</a>])
-      </strong></class><a id="prop:coeff"></a> For \(q_0\) large enough (depending on
-      \(\gamma\), not on \(N\)), the system <class style="font-style: normal">(<a href="#eq:iteration">12.7</a>)</class>&ndash;<class
-      style="font-style: normal">(<a href="#eq:mass">12.8</a>)</class> has a unique solution in a ball,
-      with</i>
-    </p>
-    <i><a id="eq:coeff"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle | \mu_q | \le C \gamma \sqrt{q},
-        \qquad v_1 (\Theta_q) \le C \gamma^2 q^{- 1
-/ 2}, \qquad \| \partial_q
-        M_q \|_{\text{row}} \le Cg_q,\)</td>
-        <td align="right">(12.10)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>where \(v_1 (\Theta) = \int d (0, z)  | \Theta (0, z) | \mathrm{d}
-      z\). The seed obeys \(\mathcal{N}_{k, q} (\mathcal{L}) \le C_k g_q
-      qr_q^{2 - k}\), \(4 \le k \le 10\), and the corrections obey</i>
-    </p>
-    <i><a id="eq:increments"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{N}_{k, q}  (h^{[j]} - h^{[j
-        - 1]}) \le C_k  \hspace{0.17em} g_q^{j +
-1}  \hspace{0.17em} q
-        \hspace{0.17em} r_q^{2 - k}, \qquad 4 \le k \le 10 - 2
-j, \quad j = 1,
-        2,\)</td>
-        <td align="right">(12.11)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>where \(\mathcal{N}_{k, q} (f) = \textsf{S}_k (f) + \sqrt{q}
-      \hspace{0.17em} v_1
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">12.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(The coefficient construction [<a
+        href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="prop:coeff"></a> For \(q_0\) large
+        enough (depending on \(\gamma\), not on \(N\)), the system <class
+        style="font-style: normal">(<a href="#eq:iteration">12.7</a>)</class>&ndash;<class style="font-style: normal">(<a href="#eq:mass">12.8</a>)</class>
+        has a unique solution in a ball, with</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:coeff"></a>\(\displaystyle | \mu_q | \le C \gamma
+          \sqrt{q}, \qquad v_1 (\Theta_q) \le C \gamma^2 q^{- 1
+/ 2}, \qquad
+          \| \partial_q M_q \|_{\text{row}} \le Cg_q,\)</td>
+          <td align="right">(12.10)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>where \(v_1 (\Theta) = \int d (0, z)  | \Theta (0, z) | \mathrm{d}
+        z\). The seed obeys \(\mathcal{N}_{k, q} (\mathcal{L}) \le C_k g_q
+        qr_q^{2 - k}\), \(4 \le k \le 10\), and the corrections obey</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:increments"></a>\(\displaystyle \mathcal{N}_{k, q}
+          (h^{[j]} - h^{[j - 1]}) \le C_k  \hspace{0.17em} g_q^{j +
+1}
+          \hspace{0.17em} q \hspace{0.17em} r_q^{2 - k}, \qquad 4 \le k \le 10
+          - 2
+j, \quad j = 1, 2,\)</td>
+          <td align="right">(12.11)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>where \(\mathcal{N}_{k, q} (f) = \textsf{S}_k (f) + \sqrt{q}
+        \hspace{0.17em} v_1
 (D^k f (0))\), and for a \(k\)-tensor</i>
-    </p>
-    <p>
-      <i><center>
-        \(\displaystyle v_1 (T) = \max_{i, a < b} \sup_{x_i}  \int d (x_a,
-        x_b) |T|  \prod_{j \ne i}
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle v_1 (T) = \max_{i, a < b} \sup_{x_i}  \int d (x_a,
+          x_b) |T|  \prod_{j \ne i}
 \mathrm{d} x_j .\)
-      </center></i>
-    </p>
-    <p>
-      <i>The complete defect of \(\Gamma^{\text{o}}\) on the ball is
-      \(e^{\text{o}}_q = \Pi (\mathscr{T}_q [M, h^{[1]}] - \mathscr{T}_q [M,
-      h^{[2]}])\), and</i>
-    </p>
-    <i><a id="eq:defect-bound"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \textsf{S}_4 (e^{\text{o}}_q) \le C
-        \gamma^5 q^{- 3} .\)</td>
-        <td align="right">(12.12)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>At fixed \(N\) the bare mass exists, \(| \mu_N | \lesssim \gamma
-      \text{Tr} C \lesssim \gamma N\), and \(| \mu_N - \mu_q | \le C \gamma
-      N^3 / q\), \(\| \Theta_q \|_{\text{row}} \le CN \gamma^2 q^{- 1 / 2} \to
-      0\) as \(q \to \infty\).</i>
-    </p>
+        </center></i>
+      </p>
+      <p>
+        <i>The complete defect of \(\Gamma^{\text{o}}\) on the ball is
+        \(e^{\text{o}}_q = \Pi (\mathscr{T}_q [M, h^{[1]}] - \mathscr{T}_q [M,
+        h^{[2]}])\), and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:defect-bound"></a>\(\displaystyle \textsf{S}_4
+          (e^{\text{o}}_q) \le C \gamma^5 q^{- 3} .\)</td>
+          <td align="right">(12.12)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>At fixed \(N\) the bare mass exists, \(| \mu_N | \lesssim \gamma
+        \text{Tr} C \lesssim \gamma N\), and \(| \mu_N - \mu_q | \le C \gamma
+        N^3 / q\), \(\| \Theta_q \|_{\text{row}} \le CN \gamma^2 q^{- 1 / 2}
+        \to 0\) as \(q \to \infty\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Idea of the proof. </strong>(a) <em>Trace Lipschitz
+      <strong class="enunciation-name">Idea of the proof. </strong>(a) <em>Trace Lipschitz
       estimate.</em> If two corrections \(h, \hat{h}\) obey the individual
       bounds <class style="font-style: normal">(<a href="#eq:power-counting">12.2</a>)</class> up to order \(k + 2\)
       and their difference obeys them with \(g_q\) replaced by
@@ -1443,15 +1476,15 @@ j, \quad j = 1,
       \hspace{0.17em} \mathrm{d} q + \ldots\) from \(q\) to \(s\) is about \(s
       / q\) (since \(H \approx C_q\) has norm \(q^{- 1}\)), so
     </p>
-    <a id="eq:Z-heuristic"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle Z_q \approx \int_q^{\infty}
-        \frac{s}{q}  \hspace{0.17em} b_s \hspace{0.17em}
-\mathrm{d} s, \qquad
-        |b_s | \lesssim \|H_s \| \hspace{0.17em} \textsf{S}_4
-(e_s)
-        \hspace{0.17em} r_s^3 \lesssim s^{- 1} \textsf{S}_4 (e_s)
-
+        <td width="100%" align="center"><a id="eq:Z-heuristic"></a>\(\displaystyle Z_q \approx
+        \int_q^{\infty} \frac{s}{q}  \hspace{0.17em} b_s
+        \hspace{0.17em}
+\mathrm{d} s, \qquad |b_s | \lesssim \|H_s \|
+        \hspace{0.17em} \textsf{S}_4
+(e_s)  \hspace{0.17em} r_s^3 \lesssim
+        s^{- 1} \textsf{S}_4 (e_s)
 \hspace{0.17em} r_s^3,\)</td>
         <td align="right">(12.13)</td>
       </tr>
@@ -1636,9 +1669,9 @@ r_q^{- k}\). (b) Show that \(q \cdot q^{1 /
       u\) on \([- 1, 1]\), constant outside \([- 2, 2]\), with \(0 \le \tau'
       \le 1\), and set
     </p>
-    <a id="eq:clipping"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \kappa_q (y) (x) := r_q
+        <td width="100%" align="center"><a id="eq:clipping"></a>\(\displaystyle \kappa_q (y) (x) := r_q
         \hspace{0.17em} \tau (y (x) / r_q), \qquad
 \tilde{h}_q := h^{[2]}_q
         \circ \kappa_q, \qquad \bar{\Gamma}_q := U +
@@ -1654,12 +1687,12 @@ r_q^{- k}\). (b) Show that \(q \cdot q^{1 /
       obeys the same bounds <class style="font-style: normal">(<a href="#eq:power-counting">12.2</a>)</class>
       <em>globally</em>:
     </p>
-    <a id="eq:global-h"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle s (D^j  \tilde{h}_q) \le Cg_q
-        qr_q^{2 - j}  (j = 2, 3, 4), \qquad s (D^2
-\partial_q  \tilde{h}_q)
-        \le Cg_q,\)</td>
+        <td width="100%" align="center"><a id="eq:global-h"></a>\(\displaystyle s (D^j  \tilde{h}_q) \le
+        Cg_q qr_q^{2 - j}  (j = 2, 3, 4), \qquad s (D^2
+\partial_q
+        \tilde{h}_q) \le Cg_q,\)</td>
         <td align="right">(13.2)</td>
       </tr>
     </table>
@@ -1667,21 +1700,40 @@ r_q^{- k}\). (b) Show that \(q \cdot q^{1 /
       for all \(y \in H_N\); the scale derivative includes the motion of the
       clip, \(\partial_q \kappa_q = O (r_q / q)\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Lemma <class style="font-style: normal">13.1</class>. </strong><i><class style="font-style: normal"><strong>(Global
-      coercivity) </strong></class><a id="lem:resolvent"></a> For \(q_0\) large, for all \(y
-      \in H_N\) and \(q \ge q_0\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:resolvent"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \)</td>
-          <td align="right">(13.3)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">13.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Global coercivity) </strong></class><a id="lem:resolvent"></a> For
+        \(q_0\) large, for all \(y \in H_N\) and \(q \ge q_0\),</i>
+      </p>
+      <div style="margin-top: 0.5em; margin-bottom: 1em">
+        <i><div style="text-indent: 0em">
+          <div style="margin-top: 0.5em; margin-bottom: 0.5em">
+            <table style="width: 100%">
+              <tbody><tr>
+                <td style="width: 33.3333333333333%; white-space: nowrap; padding-left: 0em; text-align: right; padding-bottom: 0.45em">\(\displaystyle \)</td>
+                <td style="white-space: nowrap; text-align: center; padding-bottom: 0.45em">\(\displaystyle c \hspace{0.17em} (K_q + \gamma
+                y^2) \le H_q (y)^{- 1} \le C \hspace{0.17em}
+(K_q + \gamma
+                y^2),\)</td>
+                <td style="width: 66.6666666666667%; white-space: nowrap; text-align: center; text-align: left; padding-bottom: 0.45em">\(\displaystyle \)</td>
+                <td style="white-space: nowrap; padding-right: 0em; text-align: right; padding-bottom: 0.45em"></td>
+              </tr><tr>
+                <td style="width: 33.3333333333333%; white-space: nowrap; padding-left: 0em; text-align: right">\(\displaystyle \)</td>
+                <td style="white-space: nowrap; text-align: center">\(\displaystyle \|H_q (y)\|_{p \to p} \le \frac{1 +
+                C (g_q + g_q^2)}{q}  \quad (1 \le p \le
+\infty), \qquad
+                \text{diag} H_q (y)^2 \le Ca_2 (q) .\)</td>
+                <td style="width: 66.6666666666667%; white-space: nowrap; text-align: center; text-align: left">\(\displaystyle \)</td>
+                <td style="white-space: nowrap; padding-right: 0em; text-align: right"><class style="font-style: normal">(13.3)</class></td>
+              </tr></tbody>
+            </table>
+          </div>
+        </div></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Idea. </strong>\(H^{- 1} = K_q + \gamma y^2 + M_q + D^2
+      <strong class="enunciation-name">Idea. </strong>\(H^{- 1} = K_q + \gamma y^2 + M_q + D^2
       \tilde{h}_q\), and \(M_q + D^2  \tilde{h}_q\) is small relative to
       \(K_q\): \(\|D^2  \tilde{h}_q \| \le Cg_q q\), and \(M_q\) is small
       after multiplication by \(C_q\) (the centred kernel is controlled by its
@@ -1713,32 +1765,32 @@ b^{\text{b}}_q,\)
       (y) = y \hspace{0.17em} \chi_q (y)\), the field restricted to the
       large-field set.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">13.2</class>. </strong><i><class
-      style="font-style: normal"><strong>(Complete source bounds [<a href="#bib-FBSDE26">FBSDE26</a>])
-      </strong></class><a id="prop:source"></a> Uniformly in \(y \in H_N\), \(N\) and \(p
-      \in [1, \infty]\),</i>
-    </p>
-    <i><a id="eq:source"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \
-
-\begin{equationsbase}
-
-        \|b^{\text{b}}_q (y)\|_p & \le C \gamma^{7 / 2} q^{- 5 / 2},\\
-
-        \|b^{\text{l}}_q (y)\|_p & \le C \gamma q^{- 3 / 2} (\|t_q \|_p +
-        r_q^{- 1}
-  \|y^2 \chi_q \|_p),\\
-  \|b^{\text{l}}_q (y)\|_2^2 & \le C
-        \gamma^4 q^{- 5} \|t_q \|_6^6 .
-\end{equationsbase}\)</td>
-        <td align="right">(13.4)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>Moreover \(\|b_q (y)\|_p \le C \gamma q^{- 3 / 2} \|y\|_p\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">13.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Complete source bounds [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong></class><a id="prop:source"></a> Uniformly in \(y \in H_N\), \(N\) and \(p
+        \in [1, \infty]\),</i>
+      </p>
+      <p>
+        <i><center>
+          <a id="eq:source"></a>\(\displaystyle \begin{array}{rl}
+  \|b^{\text{b}}_q
+          (y)\|_p & \le C \gamma^{7 / 2} q^{- 5 / 2},\\
+  \|b^{\text{l}}_q
+          (y)\|_p & \le C \gamma q^{- 3 / 2} (\|t_q \|_p + r_q^{- 1}
+  \|y^2
+          \chi_q \|_p),\\
+  \|b^{\text{l}}_q (y)\|_2^2 & \le C \gamma^4 q^{-
+          5} \|t_q \|_6^6 .
+  \hspace{3cm}   \text{(13.4)}
+\end{array}\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>Moreover \(\|b_q (y)\|_p \le C \gamma q^{- 3 / 2} \|y\|_p\).</i>
+      </p>
+    </div>
     <p>
       The first bound is <class style="font-style: normal">(<a href="#eq:Z-heuristic">12.13</a>)</class> with \(n =
       2\): on the ball \(|De^{\text{o}} | \le \textsf{S}_4 (e^{\text{o}})  (2
@@ -1765,36 +1817,39 @@ b^{\text{b}}_q,\)
         (z))^{- 1}\), the difference has four groups (seven terms):
       </div>
     </p>
-    <ol>
-      <li>
-        <p>
-          the mass term \(M' y - JM' z\): the quadratic part is not clipped,
-          but its flow was computed at \(z\);
-        </p>
-      </li>
-      <li>
-        <p>
-          the motion of the clip, \(JD^2 h (z) \partial_q \kappa + (D
-          \partial_q \kappa)^{\ast} Dh (z)\);
-        </p>
-      </li>
-      <li>
-        <p>
-          \(\gamma (y - Jz) \text{diag} H^2\) and \(\gamma Jz \text{diag} (H^2
-          - (H^{\text{o}})^2)\): the quartic vertex sees \(y\), the correction
-          sees \(z\), and the two responses differ by \(\gamma (y^2 - z^2)\)
-          and by the chain-rule terms of the clipped Hessian, all supported on
-          \(\{|y| > r_q \}\);
-        </p>
-      </li>
-      <li>
-        <p>
-          the contraction of \(D^3  (h \circ \kappa) - JD^3 h (z)\) (the chain
-          rule produces terms with \(\kappa''\), \(\kappa'''\), supported on
-          large fields) and of \(D^3 h\) with \(H^2 - (H^{\text{o}})^2\).
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            the mass term \(M' y - JM' z\): the quadratic part is not clipped,
+            but its flow was computed at \(z\);
+          </p>
+        </li>
+        <li>
+          <p>
+            the motion of the clip, \(JD^2 h (z) \partial_q \kappa + (D
+            \partial_q \kappa)^{\ast} Dh (z)\);
+          </p>
+        </li>
+        <li>
+          <p>
+            \(\gamma (y - Jz) \text{diag} H^2\) and \(\gamma Jz \text{diag}
+            (H^2 - (H^{\text{o}})^2)\): the quartic vertex sees \(y\), the
+            correction sees \(z\), and the two responses differ by \(\gamma
+            (y^2 - z^2)\) and by the chain-rule terms of the clipped Hessian,
+            all supported on \(\{|y| > r_q \}\);
+          </p>
+        </li>
+        <li>
+          <p>
+            the contraction of \(D^3  (h \circ \kappa) - JD^3 h (z)\) (the
+            chain rule produces terms with \(\kappa''\), \(\kappa'''\),
+            supported on large fields) and of \(D^3 h\) with \(H^2 -
+            (H^{\text{o}})^2\).
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       Each group vanishes if \(\|y\|_{\infty} \le r_q\), and each is bounded
       by \(g_q\) times \(|t|\) or \(r^{- 1} y^2 \chi\), in \(L^p\), by the
@@ -1830,12 +1885,12 @@ b^{\text{b}}_q,\)
         Finally, write the approximate coordinate equation as
       </div>
     </p>
-    <a id="eq:coordinate"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q
-        (Y_q)) + \tfrac{\gamma}{3} Y_q^3, \qquad
-\varrho_q (y) := C_q  (M_q y
-        + D \tilde{h}_q (y)),\)</td>
+        <td width="100%" align="center"><a id="eq:coordinate"></a>\(\displaystyle K_q \Phi_q = K_q  (Y_q +
+        \varrho_q (Y_q)) + \tfrac{\gamma}{3} Y_q^3, \qquad
+\varrho_q (y) :=
+        C_q  (M_q y + D \tilde{h}_q (y)),\)</td>
         <td align="right">(13.5)</td>
       </tr>
     </table>

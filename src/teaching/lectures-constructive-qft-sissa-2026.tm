@@ -53,7 +53,7 @@
     [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>].
-    Revised 29 October 2026.
+    Revised 30 October 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
     observables, the Polchinski flow and forward--backward equations.
@@ -66,7 +66,7 @@
     [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>].
-    Revised 29 October 2026.
+    Revised 30 October 2026.
   </itemize>
 
   <subsection*|Provisional materials for Lectures 4--6>
@@ -95,7 +95,7 @@
 
   </itemize>
 
-  Materials revised 29 October 2026. In the HTML slides, use the arrow
+  Materials revised 30 October 2026. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.
 
   <subsection*|Schedule>

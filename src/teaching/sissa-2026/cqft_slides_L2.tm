@@ -645,7 +645,7 @@
     <math|g\<in\>C<rsup|\<infty\>><rsub|b>>:
 
     <\equation*>
-      D<rsub|h>*F<around|(|\<varphi\>|)>=<frac|\<mathd\>|\<mathd\>t>*F*<around|(|\<varphi\>+t*h|)><mid|\|><rsub|t=0>=<big|sum><rsub|i>\<partial\><rsub|i>*g<around|(|\<ldots\>|)><around|\<langle\>|f<rsub|i>,h|\<rangle\>>=<around|\<langle\>|D*F,h|\<rangle\>>,<space|2em>D*F<around|(|x|)>=<frac|\<delta\>*F|\<delta\>*\<varphi\><around|(|x|)>>.
+      D<rsub|h>*F<around|(|\<varphi\>|)>=<around*|.|<frac|\<mathd\>|\<mathd\>t>*F*<around|(|\<varphi\>+t*h|)>|\|><rsub|t=0>=<big|sum><rsub|i>\<partial\><rsub|i>*g<around|(|\<ldots\>|)><around|\<langle\>|f<rsub|i>,h|\<rangle\>>=<around|\<langle\>|D*F,h|\<rangle\>>,<space|2em>D*F<around|(|x|)>=<frac|\<delta\>*F|\<delta\>*\<varphi\><around|(|x|)>>.
     </equation*>
 
     <\lemma*>

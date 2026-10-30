@@ -1694,7 +1694,7 @@
   Its infinitesimal generators are the vector fields
 
   <\equation>
-    <label|eq:PB>\<cal-P\><rsub|B><around|(|V|)>\<assign\><tfrac|1|2><math-up|Tr><around|(|B*D<rsup|2>*V|)>-<tfrac|1|2><around|\<langle\>|D*V,B*D*V|\<rangle\>>,<space|2em><tfrac|\<mathd\>|\<mathd\>s>\<cal-R\><rsub|s*B><around|(|V|)><mid|\|><rsub|s=0>=\<cal-P\><rsub|B><around|(|V|)>,
+    <label|eq:PB>\<cal-P\><rsub|B><around|(|V|)>\<assign\><tfrac|1|2><math-up|Tr><around|(|B*D<rsup|2>*V|)>-<tfrac|1|2><around|\<langle\>|D*V,B*D*V|\<rangle\>>,<space|2em><around*|.|<tfrac|\<mathd\>|\<mathd\>s>\<cal-R\><rsub|s*B><around|(|V|)>|\|><rsub|s=0>=\<cal-P\><rsub|B><around|(|V|)>,
   </equation>
 
   and <eqref|eq:polchinski> reads <math|\<partial\><rsub|t>*V<rsub|t>=-\<cal-P\><rsub|<wide|Q|\<dot\>><rsub|t>><around|(|V<rsub|t>|)>>.

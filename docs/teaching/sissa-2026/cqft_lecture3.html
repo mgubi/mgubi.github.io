@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-notes.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-notes.js" defer></script>
+    <script src="max-html.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 3 (notes), on the personal website of Massimiliano Gubinelli.">
@@ -130,8 +131,8 @@
         difficulties lie.</font>
       </p>
     </div>
-    <div class="cqft-toc">
-      <div class="cqft-toc-title">
+    <div class="max-toc">
+      <div class="max-toc-title">
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
@@ -387,21 +388,23 @@
     <h2 id="auto-6"><a id="sec:obs"></a>4<span style="margin-left: 1em"></span>Setting: covariance profiles and
     observables<span style="margin-left: 1em"></span></h2>
     <h3 id="auto-7">4.1<span style="margin-left: 1em"></span>Covariance profiles<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Definition <class style="font-style: normal">4.1</class>. </strong><i><a id="def:profile"></a>A
-      <em>covariance profile</em> is a family \((Q_t)_{t \in [0, \infty)}\) of
-      bounded, symmetric, translation invariant operators on \(L^2
-      (\mathcal{M})\) with \(Q_0 = 0\), \(t \mapsto Q_t\) smooth, \(\dot{Q}_t
-      := \partial_t Q_t \geq 0\), \(Q_t \to C\) as \(t \to \infty\), and such
-      that \(\dot{Q}_t\) and \(Q_t\) have smooth kernels for every \(t <
-      \infty\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">4.1</class>. </strong><i><a
+        id="def:profile"></a>A <em>covariance profile</em> is a family \((Q_t)_{t \in [0,
+        \infty)}\) of bounded, symmetric, translation invariant operators on
+        \(L^2 (\mathcal{M})\) with \(Q_0 = 0\), \(t \mapsto Q_t\) smooth,
+        \(\dot{Q}_t := \partial_t Q_t \geq 0\), \(Q_t \to C\) as \(t \to
+        \infty\), and such that \(\dot{Q}_t\) and \(Q_t\) have smooth kernels
+        for every \(t < \infty\).</i>
+      </p>
+    </div>
     <p>
       Our standard example is the <em>heat profile</em>
     </p>
-    <a id="eq:heat-profile"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle Q_t := C \hspace{0.17em}
+        <td width="100%" align="center"><a id="eq:heat-profile"></a>\(\displaystyle Q_t := C \hspace{0.17em}
         \mathrm{e}^{- A / t^2}, \qquad \dot{Q}_t =
 \frac{2}{t^3}
         \hspace{0.17em} \mathrm{e}^{- A / t^2},\)</td>
@@ -412,12 +415,12 @@
       which smooths the Green function with the heat kernel at time \(t^{-
       2}\). On \(\mathbb{R}^d\) the kernels are explicit,
     </p>
-    <a id="eq:heat-kernel"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \dot{Q}_t  (x - y) = \frac{2 t^{d -
-        3} \mathrm{e}^{- m^2 / t^2}}{(4 \pi)^{d /
-2}} \hspace{0.17em}
-        \mathrm{e}^{- t^2  |x - y|^2 / 4},\)</td>
+        <td width="100%" align="center"><a id="eq:heat-kernel"></a>\(\displaystyle \dot{Q}_t  (x - y) =
+        \frac{2 t^{d - 3} \mathrm{e}^{- m^2 / t^2}}{(4 \pi)^{d /
+2}}
+        \hspace{0.17em} \mathrm{e}^{- t^2  |x - y|^2 / 4},\)</td>
         <td align="right">(4.2)</td>
       </tr>
     </table>
@@ -444,25 +447,27 @@
       (\mathcal{M})\), \(\mathbb{E} [W_t (x) W_s (y)] = (t \wedge s) \delta (x
       - y)\), and
     </p>
-    <a id="eq:scale-GFF"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle X_t := \int_0^t \dot{Q}_s^{1 / 2}
-        \hspace{0.17em} \mathrm{d} W_s .\)</td>
+        <td width="100%" align="center"><a id="eq:scale-GFF"></a>\(\displaystyle X_t := \int_0^t
+        \dot{Q}_s^{1 / 2} \hspace{0.17em} \mathrm{d} W_s .\)</td>
         <td align="right">(4.3)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proposition <class style="font-style: normal">4.2</class>. </strong><i><a id="prop:scale-GFF"></a>For
-      every \(t < \infty\), \(X_t\) is a smooth Gaussian field with law
-      \(\mu^{Q_t}\), and \((X_t (x))_{t \geq 0}\) is a continuous martingale
-      with \(\mathrm{d} \langle X (x), X (y) \rangle_t = \dot{Q}_t  (x, y)
-      \hspace{0.17em}
-\mathrm{d} t\). As \(t \to \infty\), \(X_t \to
-      X_{\infty}\) in \(H^{- s}_{\text{loc}}\) for \(s > \frac{d}{2} - 1\),
-      and \(\text{Law} (X_{\infty}) = \mu_m\). The increments \(X_T - X_t\)
-      are independent of \(\mathcal{F}_t := \sigma (X_s : s \leq t)\), with
-      law \(\mu^{Q_{T, t}}\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">4.2</class>. </strong><i><a
+        id="prop:scale-GFF"></a>For every \(t < \infty\), \(X_t\) is a smooth Gaussian field
+        with law \(\mu^{Q_t}\), and \((X_t (x))_{t \geq 0}\) is a continuous
+        martingale with \(\mathrm{d} \langle X (x), X (y) \rangle_t =
+        \dot{Q}_t  (x, y) \hspace{0.17em}
+\mathrm{d} t\). As \(t \to \infty\),
+        \(X_t \to X_{\infty}\) in \(H^{- s}_{\text{loc}}\) for \(s >
+        \frac{d}{2} - 1\), and \(\text{Law} (X_{\infty}) = \mu_m\). The
+        increments \(X_T - X_t\) are independent of \(\mathcal{F}_t := \sigma
+        (X_s : s \leq t)\), with law \(\mu^{Q_{T, t}}\).</i>
+      </p>
+    </div>
     <p>
       So the GFF is the terminal value of a Gaussian martingale of smooth
       fields: the <em>field at resolution \(t\)</em> (Figure <a href="#fig:multiscale">4.1</a>).
@@ -498,15 +503,18 @@
       \hspace{0.17em}
 |\mathcal{F}_t]\).
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Definition <class style="font-style: normal">4.3</class>. </strong><i><class style="font-style: normal"><strong>([<a
-      href="#bib-BCG26">BCG26</a>]) </strong></class><a id="def:obs"></a> An <em>observable</em> is
-      a real or complex \((\mathcal{F}_t)\)-martingale \(O = (O_t)_{t \geq
-      0}\): \(O_s =\mathbb{E}_s [O_t]\) for \(s \leq t\). Its
-      <em>expectation</em> is \(\langle O \rangle := \mathbb{E} [O_t]\), which
-      is independent of \(t\). An <em>observable field</em> is a family \((O
-      (x))_{x \in \mathcal{M}}\) of observables.</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">4.3</class>.
+        </strong><i><class style="font-style: normal"><strong>([<a href="#bib-BCG26">BCG26</a>])
+        </strong></class><a id="def:obs"></a> An <em>observable</em> is a real or
+        complex \((\mathcal{F}_t)\)-martingale \(O = (O_t)_{t \geq 0}\): \(O_s
+        =\mathbb{E}_s [O_t]\) for \(s \leq t\). Its <em>expectation</em> is
+        \(\langle O \rangle := \mathbb{E} [O_t]\), which is independent of
+        \(t\). An <em>observable field</em> is a family \((O (x))_{x \in
+        \mathcal{M}}\) of observables.</i>
+      </p>
+    </div>
     <p>
       Every integrable \(\mathcal{F}_{\infty}\)-measurable random variable
       \(Y\) gives a <em>closed</em> observable \(O_t =\mathbb{E}_t [Y]\), with
@@ -516,31 +524,33 @@
       carry a perfectly meaningful family of finite-resolution estimates. The
       next lemma is elementary but basic.
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">4.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Asymptotic uniqueness) </strong></class><a id="lem:uniq"></a>
+        (a) If \(O^1, O^2\) are observables with \(\|O^1_t - O^2_t \|_{L^1}
+        \to 0\), then \(O^1 = O^2\). (b) If \((N_t)\) is any adapted process
+        and \(O\) an observable with \(\|N_t - O_t \|_{L^1} \to 0\), then
+        \(O_s = \lim_{t \to \infty} \mathbb{E}_s [N_t]\) in \(L^1\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Lemma <class style="font-style: normal">4.4</class>. </strong><i><class style="font-style: normal"><strong>(Asymptotic
-      uniqueness) </strong></class><a id="lem:uniq"></a> (a) If \(O^1, O^2\) are
-      observables with \(\|O^1_t - O^2_t \|_{L^1} \to 0\), then \(O^1 = O^2\).
-      (b) If \((N_t)\) is any adapted process and \(O\) an observable with
-      \(\|N_t - O_t \|_{L^1} \to 0\), then \(O_s = \lim_{t \to \infty}
-      \mathbb{E}_s [N_t]\) in \(L^1\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>(a) \(O^1_s - O^2_s =\mathbb{E}_s  [O^1_t -
-      O^2_t]\) for every \(t \geq s\), and conditional expectation is an
+      <strong class="enunciation-name">Proof. </strong>(a) \(O^1_s - O^2_s =\mathbb{E}_s  [O^1_t
+      - O^2_t]\) for every \(t \geq s\), and conditional expectation is an
       \(L^1\) contraction. (b) Likewise, \(\|O_s -\mathbb{E}_s N_t \|_{L^1}
       \leq \|O_t - N_t \|_{L^1}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       So an observable is determined by its asymptotic behaviour. A
-      <em>germ</em> for \(O\) is a family of functionals \(\ring{O}_t\) on
-      smooth fields such that \(\|O_t - \ring{O}_t (X_t)\|_{L^1} \to 0\). The
-      observable field \(O (x)\) is <em>local</em> if it admits germs of the
-      form
+      <em>germ</em> for \(O\) is a family of functionals \(\mathring{O}_t\) on
+      smooth fields such that \(\|O_t - \mathring{O}_t (X_t)\|_{L^1} \to 0\).
+      The observable field \(O (x)\) is <em>local</em> if it admits germs of
+      the form
     </p>
     <center>
-      \(\displaystyle \ring{O}_t (X_t) (x) = \ring{\mathcal{O}}_t (X_t (x),
-      \nabla X_t (x), \ldots,
-\nabla^k X_t (x)) .\)
+      \(\displaystyle \mathring{O}_t (X_t) (x) = \mathring{\mathcal{O}}_t (X_t
+      (x), \nabla X_t (x),
+\ldots, \nabla^k X_t (x)) .\)
     </center>
     <p>
       Germs are not unique, and this freedom reflects the freedom of choosing
@@ -583,9 +593,9 @@
       \(V_T\) be an interaction, a functional of smooth fields bounded below.
       Our main example is
     </p>
-    <a id="eq:phi4-VT"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V_T (\varphi) =
+        <td width="100%" align="center"><a id="eq:phi4-VT"></a>\(\displaystyle V_T (\varphi) =
         \int_{\mathbb{T}^d_L} \left[ \lambda H_4 (\varphi (x) ; c_T)
 +
         \gamma_T  \hspace{0.17em} H_2 (\varphi (x) ; c_T) \right] \mathrm{d}
@@ -598,29 +608,31 @@
       (\(\gamma_T = 0\) for \(d = 2\)). The interacting measure at cutoff
       \(T\) is
     </p>
-    <a id="eq:nuT"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \nu_T (\mathrm{d} \varphi) = Z_T^{-
-        1} \mathrm{e}^{- V_T (\varphi)} \mu^{Q_T}
-(\mathrm{d} \varphi)
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:nuT"></a>\(\displaystyle \nu_T (\mathrm{d}
+        \varphi) = Z_T^{- 1} \mathrm{e}^{- V_T (\varphi)}
+        \mu^{Q_T}
+(\mathrm{d} \varphi) .\)</td>
         <td align="right">(5.2)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em">
-      <strong>Definition <class style="font-style: normal">5.1</class>. </strong><i>The
-      <em>effective potential</em> at resolution \(t \in [0, T]\) is</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:Vt"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle \mathrm{e}^{- V_t (\varphi)} :=
-          \int \mathrm{e}^{- V_T  (\varphi + \zeta)}
-\hspace{0.17em}
-          \mu^{Q_{T, t}} (\mathrm{d} \zeta) .\)</td>
-          <td align="right">(5.3)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">5.1</class>. </strong><i>The
+        <em>effective potential</em> at resolution \(t \in [0, T]\) is</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:Vt"></a>\(\displaystyle \mathrm{e}^{- V_t
+            (\varphi)} := \int \mathrm{e}^{- V_T  (\varphi +
+            \zeta)}
+\hspace{0.17em} \mu^{Q_{T, t}} (\mathrm{d} \zeta) .\)</td>
+            <td align="right">(5.3)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p>
       \(V_t\) is the interaction felt by the field at resolution \(t\) once
@@ -628,45 +640,49 @@
       the Wilson effective action. At \(t = 0\), \(V_0 (0) = - \log Z_T\) is
       the free energy. Here is the first key fact.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">5.2</class>. </strong><i><class style="font-style: normal"><strong>(Marginals)
-      </strong></class><a id="prop:marginals"></a> Let \(\mathbb{P}\) be defined by
-      \(\mathrm{d} \mathbb{P}/ \mathrm{d} \mathbb{P}_0 = Z_T^{- 1}
-      \mathrm{e}^{- V_T
-(X_T)}\), where \(\mathbb{P}_0\) is the law of the
-      Gaussian process \(X\). Then \(\text{Law}_{\mathbb{P}} (X_T) = \nu_T\),
-      and for every \(t \leq T\)</i>
-    </p>
-    <i><a id="eq:nut"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \text{Law}_{\mathbb{P}} (X_t) =
-        \nu_t, \qquad \nu_t (\mathrm{d} \varphi) :=
-Z_T^{- 1} \mathrm{e}^{-
-        V_t (\varphi)} \mu^{Q_t} (\mathrm{d} \varphi) .\)</td>
-        <td align="right">(5.4)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>Moreover, the conditional law of \(X_T\) given \(\mathcal{F}_t\)
-      is</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:localisation"></a><table width="100%">
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">5.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Marginals) </strong></class><a id="prop:marginals"></a>
+        Let \(\mathbb{P}\) be defined by \(\mathrm{d} \mathbb{P}/ \mathrm{d}
+        \mathbb{P}_0 = Z_T^{- 1} \mathrm{e}^{- V_T
+(X_T)}\), where
+        \(\mathbb{P}_0\) is the law of the Gaussian process \(X\). Then
+        \(\text{Law}_{\mathbb{P}} (X_T) = \nu_T\), and for every \(t \leq
+        T\)</i>
+      </p>
+      <i><table width="100%">
         <tr>
-          <td width="100%" align="center">\(\displaystyle \mu_t^{X_t} (\mathrm{d} \varphi),
-          \qquad \mu_t^{\phi} (G) := \mathrm{e}^{V_t
-(\phi)} \int G (\phi +
-          \zeta) \hspace{0.17em} \mathrm{e}^{- V_T  (\phi +
-\zeta)}
-          \hspace{0.17em} \mu^{Q_{T, t}} (\mathrm{d} \zeta) .\)</td>
-          <td align="right">(5.5)</td>
+          <td width="100%" align="center"><a id="eq:nut"></a>\(\displaystyle \text{Law}_{\mathbb{P}}
+          (X_t) = \nu_t, \qquad \nu_t (\mathrm{d} \varphi) :=
+Z_T^{- 1}
+          \mathrm{e}^{- V_t (\varphi)} \mu^{Q_t} (\mathrm{d} \varphi) .\)</td>
+          <td align="right">(5.4)</td>
         </tr>
       </table></i>
+      <p>
+        <i>Moreover, the conditional law of \(X_T\) given \(\mathcal{F}_t\)
+        is</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:localisation"></a>\(\displaystyle \mu_t^{X_t}
+            (\mathrm{d} \varphi), \qquad \mu_t^{\phi} (G) :=
+            \mathrm{e}^{V_t
+(\phi)} \int G (\phi + \zeta) \hspace{0.17em}
+            \mathrm{e}^{- V_T  (\phi +
+\zeta)} \hspace{0.17em} \mu^{Q_{T, t}}
+            (\mathrm{d} \zeta) .\)</td>
+            <td align="right">(5.5)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Under \(\mathbb{P}_0\), \(X_T = X_t + (X_T -
-      X_t)\) with an independent increment of law \(\mu^{Q_{T, t}}\). Hence
-      \(\mathbb{E}_{\mathbb{P}} [G (X_t)] = Z_T^{- 1} \mathbb{E}_0 [G
+      <strong class="enunciation-name">Proof. </strong>Under \(\mathbb{P}_0\), \(X_T = X_t +
+      (X_T - X_t)\) with an independent increment of law \(\mu^{Q_{T, t}}\).
+      Hence \(\mathbb{E}_{\mathbb{P}} [G (X_t)] = Z_T^{- 1} \mathbb{E}_0 [G
       (X_t)
 \mathrm{e}^{- V_T (X_T)}] = Z_T^{- 1} \mathbb{E}_0 [G (X_t)
       \mathrm{e}^{- V_t
@@ -681,28 +697,30 @@ Z_T^{- 1} \mathrm{e}^{-
       of \(\nu_T\) in the sense of Eldan [<a href="#bib-Eld23">Eld23</a>], adapted to the
       covariance profile [<a href="#bib-BBD24">BBD24</a>, <a href="#bib-BCG26">BCG26</a>].
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">5.3</class>. </strong><i><class style="font-style: normal"><strong>(Polchinski
-      equation [<a href="#bib-Pol84">Pol84</a>]) </strong></class><a id="thm:polchinski"></a> <class
-      style="font-style: normal">(formal)</class> \(V_t\) solves the backward
-      Hamilton&ndash;Jacobi equation</i>
-    </p>
-    <i><a id="eq:polchinski"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t V_t = \tfrac{1}{2}
-        \langle DV_t, \dot{Q}_t  \hspace{0.17em} DV_t
-\rangle - \tfrac{1}{2}
-        \text{Tr} \left( \dot{Q}_t  \hspace{0.17em} D^2 V_t
-\right), \qquad t
-        \in [0, T],\)</td>
-        <td align="right">(5.6)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>with terminal condition \(V_T\).</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">5.3</class>. </strong><i><class
+        style="font-style: normal"><strong>(Polchinski equation [<a href="#bib-Pol84">Pol84</a>])
+        </strong></class><a id="thm:polchinski"></a> <class style="font-style: normal">(formal)</class> \(V_t\)
+        solves the backward Hamilton&ndash;Jacobi equation</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:polchinski"></a>\(\displaystyle \partial_t V_t =
+          \tfrac{1}{2} \langle DV_t, \dot{Q}_t  \hspace{0.17em} DV_t
+\rangle -
+          \tfrac{1}{2} \text{Tr} \left( \dot{Q}_t  \hspace{0.17em} D^2
+          V_t
+\right), \qquad t \in [0, T],\)</td>
+          <td align="right">(5.6)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>with terminal condition \(V_T\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(u_t := \mathrm{e}^{- V_t} =
+      <strong class="enunciation-name">Proof. </strong>\(u_t := \mathrm{e}^{- V_t} =
       \mathrm{e}^{\frac{1}{2} \Delta_{Q_{T, t}}} u_T\) is a Gaussian
       convolution, where \(\Delta_Q := \text{Tr} (QD^2)\). Since \(\partial_t
       Q_{T, t} = - \dot{Q}_t\), it solves the backward heat equation
@@ -718,46 +736,50 @@ Z_T^{- 1} \mathrm{e}^{-
       and in Section <a href="#sec:algebra">9</a>.
     </p>
     <h3 id="auto-13">5.2<span style="margin-left: 1em"></span>The Polchinski process<span style="margin-left: 1em"></span></h3>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">5.4</class>. </strong><i><class style="font-style: normal"><strong>(FBSDE
-      for the interacting field) </strong></class><a id="thm:fbsde"></a> <class style="font-style: normal">(formal)</class>
-      Under \(\mathbb{P}\) the process \(\Phi_t := X_t\), the <em>interacting
-      field at resolution \(t\)</em>, solves</i>
-    </p>
-    <i><a id="eq:fbsde"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{d} \Phi_t = \dot{Q}_t
-        \hspace{0.17em} F_t \hspace{0.17em} \mathrm{d}
-t + \dot{Q}_t^{1 / 2}
-        \hspace{0.17em} \mathrm{d} W^{\mathbb{P}}_t, \qquad F_t
-= - DV_t
-        (\Phi_t) =\mathbb{E}^{\mathbb{P}}_t  [- DV_T (\Phi_T)],\)</td>
-        <td align="right">(5.7)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>with \(\Phi_0 = 0\) and a \(\mathbb{P}\)-cylindrical Brownian motion
-      \(W^{\mathbb{P}}\). In particular the <em>effective force</em>
-      \((F_t)_{t \leq T}\) is a \(\mathbb{P}\)-martingale: an observable field
-      of the interacting theory.</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">5.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(FBSDE for the interacting field) </strong></class><a
+        id="thm:fbsde"></a> <class style="font-style: normal">(formal)</class> Under \(\mathbb{P}\) the
+        process \(\Phi_t := X_t\), the <em>interacting field at resolution
+        \(t\)</em>, solves</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:fbsde"></a>\(\displaystyle \mathrm{d} \Phi_t =
+          \dot{Q}_t  \hspace{0.17em} F_t \hspace{0.17em} \mathrm{d}
+t +
+          \dot{Q}_t^{1 / 2} \hspace{0.17em} \mathrm{d} W^{\mathbb{P}}_t,
+          \qquad F_t
+= - DV_t (\Phi_t) =\mathbb{E}^{\mathbb{P}}_t  [- DV_T
+          (\Phi_T)],\)</td>
+          <td align="right">(5.7)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>with \(\Phi_0 = 0\) and a \(\mathbb{P}\)-cylindrical Brownian
+        motion \(W^{\mathbb{P}}\). In particular the <em>effective force</em>
+        \((F_t)_{t \leq T}\) is a \(\mathbb{P}\)-martingale: an observable
+        field of the interacting theory.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>The density process is \(M_t := \mathbb{E}_0
-      [\mathrm{d} \mathbb{P}/ \mathrm{d} \mathbb{P}_0
-|\mathcal{F}_t] = Z_T^{-
-      1} \mathrm{e}^{- V_t (X_t)}\), by Proposition <a href="#prop:marginals">5.2</a>. By
-      It&ocirc;'s formula and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>, its
-      drift vanishes and \(\mathrm{d} M_t = - M_t \langle DV_t (X_t),
-      \dot{Q}_t^{1 / 2} \mathrm{d} W_t
-\rangle\). By Girsanov's theorem,
-      \(W^{\mathbb{P}}_t = W_t + \int_0^t \dot{Q}_s^{1 / 2} DV_s (X_s)
-      \mathrm{d} s\) is a \(\mathbb{P}\)-Brownian motion, which is <class
-      style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>. Differentiating <class style="font-style: normal">(<a
-      href="#eq:Vt">5.3</a>)</class> gives \(DV_t (\phi) = \mu_t^{\phi}  (DV_T)\),
-      which is the second identity. Alternatively, It&ocirc;'s formula for
-      \(DV_t (\Phi_t)\), together with the derivative of <class style="font-style: normal">(<a
-      href="#eq:polchinski">5.6</a>)</class>, shows that its drift vanishes. Here one uses
-      that \(D^2 V_t\) is symmetric.<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>The density process is \(M_t :=
+      \mathbb{E}_0  [\mathrm{d} \mathbb{P}/ \mathrm{d}
+      \mathbb{P}_0
+|\mathcal{F}_t] = Z_T^{- 1} \mathrm{e}^{- V_t (X_t)}\), by
+      Proposition <a href="#prop:marginals">5.2</a>. By It&ocirc;'s formula and <class style="font-style: normal">(<a
+      href="#eq:polchinski">5.6</a>)</class>, its drift vanishes and \(\mathrm{d} M_t = - M_t
+      \langle DV_t (X_t), \dot{Q}_t^{1 / 2} \mathrm{d} W_t
+\rangle\). By
+      Girsanov's theorem, \(W^{\mathbb{P}}_t = W_t + \int_0^t \dot{Q}_s^{1 /
+      2} DV_s (X_s) \mathrm{d} s\) is a \(\mathbb{P}\)-Brownian motion, which
+      is <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>. Differentiating <class
+      style="font-style: normal">(<a href="#eq:Vt">5.3</a>)</class> gives \(DV_t (\phi) = \mu_t^{\phi}
+      (DV_T)\), which is the second identity. Alternatively, It&ocirc;'s
+      formula for \(DV_t (\Phi_t)\), together with the derivative of <class
+      style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>, shows that its drift vanishes. Here
+      one uses that \(D^2 V_t\) is symmetric.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Read as an equation for an unknown pair \((\Phi, F)\), <class style="font-style: normal">(<a
@@ -766,14 +788,14 @@ t + \dot{Q}_t^{1 / 2}
       that is determined backward, as the conditional expectation of a
       functional of the terminal field:
     </p>
-    <a id="eq:fbsde-system"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Phi_t = \int_0^t \dot{Q}_s F_s
-        \hspace{0.17em} \mathrm{d} s + \int_0^t
-\dot{Q}_s^{1 / 2} \mathrm{d}
-        W_s, \qquad F_t =\mathbb{E}_t  [- DV_T (\Phi_T)],
-\qquad t \in [0, T]
-        .\)</td>
+        <td width="100%" align="center"><a id="eq:fbsde-system"></a>\(\displaystyle \Phi_t = \int_0^t
+        \dot{Q}_s F_s \hspace{0.17em} \mathrm{d} s + \int_0^t
+\dot{Q}_s^{1 /
+        2} \mathrm{d} W_s, \qquad F_t =\mathbb{E}_t  [- DV_T (\Phi_T)],
+\qquad
+        t \in [0, T] .\)</td>
         <td align="right">(5.8)</td>
       </tr>
     </table>
@@ -817,7 +839,7 @@ t + \dot{Q}_t^{1 / 2}
       </table>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">5.5</class>. </strong><class style="font-style: normal"><strong>(Closed
+      <strong class="enunciation-name">Remark <class style="font-style: normal">5.5</class>. </strong><class style="font-style: normal"><strong>(Closed
       versus local) </strong></class>At finite \(T\) the force is a closed
       observable, \(F_t =\mathbb{E}_t [F_T]\). For \(\Phi^4\), \(F_T (x) = - 4
       \lambda H_3  (\Phi_T (x) ; c_T) - 2 \gamma_T H_1  (\Phi_T (x) ;
@@ -870,10 +892,10 @@ c_T)\)
       =\mathbb{E}^{\mathbb{P}}_t [G (\Phi_T)]\) is \(O_t = G_t (\Phi_t)\),
       with
     </p>
-    <a id="eq:Gt"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle G_t (\phi) = \mu_t^{\phi} (G) =
-        \mathrm{e}^{V_t (\phi)} \int G (\phi + \zeta)
+        <td width="100%" align="center"><a id="eq:Gt"></a>\(\displaystyle G_t (\phi) = \mu_t^{\phi}
+        (G) = \mathrm{e}^{V_t (\phi)} \int G (\phi + \zeta)
 \hspace{0.17em}
         \mathrm{e}^{- V_T  (\phi + \zeta)} \mu^{Q_{T, t}} (\mathrm{d}
 \zeta)
@@ -885,12 +907,12 @@ c_T)\)
       Formally, \(G_t\) solves the backward Kolmogorov equation of the
       interacting dynamics,
     </p>
-    <a id="eq:kolmogorov"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t G_t + \tfrac{1}{2}
-        \text{Tr} (\dot{Q}_t D^2 G_t) - \langle
-\dot{Q}_t DV_t, DG_t \rangle =
-        0, \qquad G_T = G,\)</td>
+        <td width="100%" align="center"><a id="eq:kolmogorov"></a>\(\displaystyle \partial_t G_t +
+        \tfrac{1}{2} \text{Tr} (\dot{Q}_t D^2 G_t) - \langle
+\dot{Q}_t DV_t,
+        DG_t \rangle = 0, \qquad G_T = G,\)</td>
         <td align="right">(5.10)</td>
       </tr>
     </table>
@@ -914,9 +936,9 @@ c_T)\)
         [\partial_{\theta} V_T^{\theta} (\Phi_T)]\), an observable, and
       </div>
     </p>
-    <a id="eq:tangent"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_{\theta}
+        <td width="100%" align="center"><a id="eq:tangent"></a>\(\displaystyle \partial_{\theta}
         \mathbb{E}^{\nu^{\theta}_T} [G] = -
 \text{Cov}^{\nu_T^{\theta}} (G,
         \partial_{\theta} V^{\theta}_T) .\)</td>
@@ -936,12 +958,12 @@ c_T)\)
       Differentiating <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>, the effective
       force \(F_t = - DV_t\), now as a function of the field, solves
     </p>
-    <a id="eq:burgers"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t F_t = - DF_t  [\dot{Q}_t
-        F_t] - \tfrac{1}{2} \text{Tr} (\dot{Q}_t
-D^2 F_t), \qquad F_T = -
-        DV_T,\)</td>
+        <td width="100%" align="center"><a id="eq:burgers"></a>\(\displaystyle \partial_t F_t = - DF_t
+        [\dot{Q}_t F_t] - \tfrac{1}{2} \text{Tr} (\dot{Q}_t
+D^2 F_t), \qquad
+        F_T = - DV_T,\)</td>
         <td align="right">(5.12)</td>
       </tr>
     </table>
@@ -951,24 +973,27 @@ D^2 F_t), \qquad F_T = -
       the statement that \(u = \mathrm{e}^{- V}\) solves a heat equation. Two
       remarks on <class style="font-style: normal">(<a href="#eq:burgers">5.12</a>)</class>:
     </p>
-    <ol>
-      <li>
-        <p>
-          it uses only the force, which is a local quantity
-          (<em>intensive</em>), while \(V_t\) is <em>extensive</em>, of order
-          of the volume. This matters in infinite volume (Section <a href="#sec:infinite-volume">7.2</a>);
-        </p>
-      </li>
-      <li>
-        <p>
-          the Burgers flows for different covariances commute, and the
-          curvature vanishes, when \(DF_t\) is symmetric, i.e. when \(F_t\) is
-          a gradient [<a href="#bib-BCG26">BCG26</a>]. For a non-gradient force, as for
-          the general Wilson&ndash;It&ocirc; diffusions of [<a href="#bib-BCG26">BCG26</a>],
-          the flows do not commute.
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            it uses only the force, which is a local quantity
+            (<em>intensive</em>), while \(V_t\) is <em>extensive</em>, of
+            order of the volume. This matters in infinite volume (Section <a
+            href="#sec:infinite-volume">7.2</a>);
+          </p>
+        </li>
+        <li>
+          <p>
+            the Burgers flows for different covariances commute, and the
+            curvature vanishes, when \(DF_t\) is symmetric, i.e. when \(F_t\)
+            is a gradient [<a href="#bib-BCG26">BCG26</a>]. For a non-gradient force, as
+            for the general Wilson&ndash;It&ocirc; diffusions of [<a href="#bib-BCG26">BCG26</a>],
+            the flows do not commute.
+          </p>
+        </li>
+      </ol>
+    </div>
     <h3 id="auto-19">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
@@ -1072,10 +1097,10 @@ W)\) has
       \rangle\): \(\dot{p} = 0\) and \(\dot{x} = \dot{Q}_s p\). From \(t\) to
       \(T\) this flow is the linear shear
     </p>
-    <a id="eq:shear"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Sigma_t : (x, p) \longmapsto (x +
-        S_t p, \hspace{0.27em} p) .\)</td>
+        <td width="100%" align="center"><a id="eq:shear"></a>\(\displaystyle \Sigma_t : (x, p)
+        \longmapsto (x + S_t p, \hspace{0.27em} p) .\)</td>
         <td align="right">(6.1)</td>
       </tr>
     </table>
@@ -1091,51 +1116,55 @@ W)\) has
       state with the current costate along the free flow <class style="font-style: normal">(<a
       href="#eq:shear">6.1</a>)</class>.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">6.1</class>. </strong><i><class style="font-style: normal"><strong>(The
-      forecast) </strong></class><a id="prop:psi"></a> <class style="font-style: normal">(formal)</class>
-      The conditional mean of the terminal field is</i>
-    </p>
-    <i><a id="eq:psi"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \psi_t := \mathbb{E}_t [\Phi_T] =
-        \Phi_t + S_t F_t,\)</td>
-        <td align="right">(6.2)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>i.e. \((\psi_t, F_t) = \Sigma_t (\Phi_t, F_t)\). It is a martingale,
-      with</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:psi-noise"></a><table width="100%">
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">6.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(The forecast) </strong></class><a
+        id="prop:psi"></a> <class style="font-style: normal">(formal)</class> The conditional mean of the
+        terminal field is</i>
+      </p>
+      <i><table width="100%">
         <tr>
-          <td width="100%" align="center">\(\displaystyle \mathrm{d} \psi_t = \dot{Q}_t^{1 /
-          2} \mathrm{d} W_t + S_t \Upsilon_t
-\hspace{0.17em} \mathrm{d} W_t =
-          (\mathbb{1} + S_t DF_t (\Phi_t))
-\dot{Q}_t^{1 / 2} \mathrm{d} W_t
-          .\)</td>
-          <td align="right">(6.3)</td>
+          <td width="100%" align="center"><a id="eq:psi"></a>\(\displaystyle \psi_t := \mathbb{E}_t
+          [\Phi_T] = \Phi_t + S_t F_t,\)</td>
+          <td align="right">(6.2)</td>
         </tr>
       </table></i>
+      <p>
+        <i>i.e. \((\psi_t, F_t) = \Sigma_t (\Phi_t, F_t)\). It is a
+        martingale, with</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:psi-noise"></a>\(\displaystyle \mathrm{d} \psi_t =
+            \dot{Q}_t^{1 / 2} \mathrm{d} W_t + S_t \Upsilon_t
+\hspace{0.17em}
+            \mathrm{d} W_t = (\mathbb{1} + S_t DF_t (\Phi_t))
+\dot{Q}_t^{1 /
+            2} \mathrm{d} W_t .\)</td>
+            <td align="right">(6.3)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>Integrate the forward equation from \(t\) to
-      \(T\) and condition on \(\mathcal{F}_t\): since \(F\) is a martingale,
-      \(\mathbb{E}_t  \int_t^T \dot{Q}_s F_s \mathrm{d} s = S_t F_t\). For the
-      differential, the drift \(\dot{Q}_t F_t\) of \(\Phi\) cancels against
-      \(\dot{S}_t F_t\), and \(S_t \hspace{0.17em} \mathrm{d} F_t = S_t
-      \Upsilon_t \hspace{0.17em} \mathrm{d}
+      <strong class="enunciation-name">Proof. </strong>Integrate the forward equation from \(t\)
+      to \(T\) and condition on \(\mathcal{F}_t\): since \(F\) is a
+      martingale, \(\mathbb{E}_t  \int_t^T \dot{Q}_s F_s \mathrm{d} s = S_t
+      F_t\). For the differential, the drift \(\dot{Q}_t F_t\) of \(\Phi\)
+      cancels against \(\dot{S}_t F_t\), and \(S_t \hspace{0.17em} \mathrm{d}
+      F_t = S_t \Upsilon_t \hspace{0.17em} \mathrm{d}
 W_t\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       So \(\psi\) is a closed observable, the <em>field observable</em> of [<a
       href="#bib-BCG26">BCG26</a>]. The field splits as
     </p>
-    <a id="eq:lambda-split"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Phi_t = \psi_t - S_t F_t :\)</td>
+        <td width="100%" align="center"><a id="eq:lambda-split"></a>\(\displaystyle \Phi_t = \psi_t - S_t F_t
+        :\)</td>
         <td align="right">(6.4)</td>
       </tr>
     </table>
@@ -1156,10 +1185,10 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
       Assume that the map \(x \mapsto \psi = x + S_t F_t (x)\) is invertible,
       and write its inverse as
     </p>
-    <a id="eq:coord"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle x = \psi + S_t  \mathscr{F}_t
-        (\psi), \qquad \mathscr{F}_t (\psi) := - F_t
+        <td width="100%" align="center"><a id="eq:coord"></a>\(\displaystyle x = \psi + S_t
+        \mathscr{F}_t (\psi), \qquad \mathscr{F}_t (\psi) := - F_t
 (x),\)</td>
         <td align="right">(6.5)</td>
       </tr>
@@ -1169,10 +1198,10 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
       function of the forecast. Introduce the <em>response</em> and the
       <em>regulator</em>
     </p>
-    <a id="eq:response"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle H_t (\psi) := (S_t^{- 1} + D
-        \mathscr{F}_t (\psi))^{- 1}, \qquad
+        <td width="100%" align="center"><a id="eq:response"></a>\(\displaystyle H_t (\psi) := (S_t^{- 1}
+        + D \mathscr{F}_t (\psi))^{- 1}, \qquad
 \mathscr{R}_t := S_t^{- 1} -
         Q_T^{- 1}, \qquad \dot{\mathscr{R}}_t = S_t^{- 1}
 \dot{Q}_t S_t^{- 1}
@@ -1186,45 +1215,50 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
       (\psi))^{- 1} =
 H_t (\psi) S_t^{- 1}\).
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">6.2</class>. </strong><i><class style="font-style: normal"><strong>(FBSDE
-      in force coordinates) </strong></class><a id="thm:transformed"></a> <class style="font-style: normal">(formal)</class>
-      In the coordinates \((\psi, \mathscr{F})\), the system <class style="font-style: normal">(<a
-      href="#eq:fbsde-system">5.8</a>)</class> becomes</i>
-    </p>
-    <i><a id="eq:transformed-fbsde"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{d} \psi_t = H_t (\psi_t)
-        \hspace{0.17em} S_t^{- 1}  \dot{Q}_t^{1 /
-2} \hspace{0.17em}
-        \mathrm{d} W_t, \qquad \mathscr{F}_t (\psi_t) =\mathbb{E}_t
-[DV_T
-        (\psi_T)],\)</td>
-        <td align="right">(6.7)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>with \(\psi_0 = S_0 F_0 =\mathbb{E} [\Phi_T]\) and \(\psi_T =
-      \Phi_T\). The forward equation has no drift, and its covariance is
-      \(\mathcal{C}_t := H_t  \dot{\mathscr{R}}_t H_t^{\ast}\). The decoupling
-      field \(\mathscr{F}\) solves the pure diffusion equation</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:transformed-flow"></a><table width="100%">
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">6.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(FBSDE in force coordinates) </strong></class><a id="thm:transformed"></a>
+        <class style="font-style: normal">(formal)</class> In the coordinates \((\psi,
+        \mathscr{F})\), the system <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class>
+        becomes</i>
+      </p>
+      <i><table width="100%">
         <tr>
-          <td width="100%" align="center">\(\displaystyle \partial_t  \mathscr{F}_t +
-          \tfrac{1}{2} \hspace{0.17em} \text{Tr} \left(
-\mathcal{C}_t
-          \hspace{0.17em} D^2  \mathscr{F}_t \right) = 0, \qquad
-\mathscr{F}_T
-          = DV_T .\)</td>
-          <td align="right">(6.8)</td>
+          <td width="100%" align="center"><a id="eq:transformed-fbsde"></a>\(\displaystyle \mathrm{d} \psi_t = H_t
+          (\psi_t)  \hspace{0.17em} S_t^{- 1}  \dot{Q}_t^{1 /
+2}
+          \hspace{0.17em} \mathrm{d} W_t, \qquad \mathscr{F}_t (\psi_t)
+          =\mathbb{E}_t
+[DV_T (\psi_T)],\)</td>
+          <td align="right">(6.7)</td>
         </tr>
       </table></i>
+      <p>
+        <i>with \(\psi_0 = S_0 F_0 =\mathbb{E} [\Phi_T]\) and \(\psi_T =
+        \Phi_T\). The forward equation has no drift, and its covariance is
+        \(\mathcal{C}_t := H_t  \dot{\mathscr{R}}_t H_t^{\ast}\). The
+        decoupling field \(\mathscr{F}\) solves the pure diffusion
+        equation</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:transformed-flow"></a>\(\displaystyle \partial_t
+            \mathscr{F}_t + \tfrac{1}{2} \hspace{0.17em} \text{Tr}
+            \left(
+\mathcal{C}_t  \hspace{0.17em} D^2  \mathscr{F}_t \right) =
+            0, \qquad
+\mathscr{F}_T = DV_T .\)</td>
+            <td align="right">(6.8)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>The forward equation is <class style="font-style: normal">(<a href="#eq:psi-noise">6.3</a>)</class>
-      with \(\mathbb{1} + S_t DF_t = H_t S_t^{- 1}\), and its covariance is
+      <strong class="enunciation-name">Proof. </strong>The forward equation is <class style="font-style: normal">(<a
+      href="#eq:psi-noise">6.3</a>)</class> with \(\mathbb{1} + S_t DF_t = H_t S_t^{- 1}\),
+      and its covariance is
     </p>
     <center>
       \(\displaystyle H_t S_t^{- 1}  \dot{Q}_t S_t^{- 1} H_t^{\ast} = H_t
@@ -1260,27 +1294,29 @@ H_t^{\ast} .\)
     <p>
       For the Polchinski process the response has a direct meaning.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">6.3</class>. </strong><i><a id="prop:H-cov"></a><class
-      style="font-style: normal">(formal)</class> If \(F_t = - DV_t\) then</i>
-    </p>
-    <p>
-      <i><center>
-        \(\displaystyle H_t (\psi_t) = \text{Cov}_t := \text{Cov}^{\mathbb{P}}
-        (\Phi_T \hspace{0.17em}
-| \hspace{0.17em} \mathcal{F}_t) = S_t - S_t
-        D^2 V_t (\Phi_t) S_t .\)
-      </center></i>
-    </p>
-    <p style="margin-bottom: 1em">
-      <i>In particular \(H_t > 0\) is symmetric, \(\mathbb{1} + S_t DF_t =
-      \text{Cov}_t S_t^{- 1}\) is always invertible, and \(H_t \leq S_t\) when
-      \(V_T\) is convex.</i>
-    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">6.3</class>. </strong><i><a
+        id="prop:H-cov"></a><class style="font-style: normal">(formal)</class> If \(F_t = - DV_t\) then</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle H_t (\psi_t) = \text{Cov}_t :=
+          \text{Cov}^{\mathbb{P}} (\Phi_T \hspace{0.17em}
+| \hspace{0.17em}
+          \mathcal{F}_t) = S_t - S_t D^2 V_t (\Phi_t) S_t .\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>In particular \(H_t > 0\) is symmetric, \(\mathbb{1} + S_t DF_t =
+        \text{Cov}_t S_t^{- 1}\) is always invertible, and \(H_t \leq S_t\)
+        when \(V_T\) is convex.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>By <class style="font-style: normal">(<a href="#eq:localisation">5.5</a>)</class>, the
-      conditional law \(\mu_t^{\phi}\) is the tilt of \(\mu^{S_t}  (\cdot -
-      \phi)\) by \(\mathrm{e}^{- V_T}\); differentiating twice in \(\phi\)
+      <strong class="enunciation-name">Proof. </strong>By <class style="font-style: normal">(<a href="#eq:localisation">5.5</a>)</class>,
+      the conditional law \(\mu_t^{\phi}\) is the tilt of \(\mu^{S_t}  (\cdot
+      - \phi)\) by \(\mathrm{e}^{- V_T}\); differentiating twice in \(\phi\)
       gives \(\text{Cov} (\mu_t^{\phi}) = S_t - S_t D^2 V_t (\phi) S_t\). On
       the other hand \(H_t S_t^{- 1} = \mathbb{1} + S_t DF_t = \mathbb{1} -
       S_t D^2 V_t\). The last claim is the Brascamp&ndash;Lieb
@@ -1294,16 +1330,17 @@ H_t^{\ast} .\)
       \(\mathbb{E}_t  [\Phi_T \otimes \Phi_T] = \psi_t \otimes \psi_t +
       \text{Cov}_t\) is a martingale,
     </p>
-    <a id="eq:cov-dynamics"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathrm{d} \langle \psi, \psi
-        \rangle_t =\mathcal{C}_t \hspace{0.17em}
-\mathrm{d} t = \text{Cov}_t
-        \dot{\mathscr{R}}_t \text{Cov}_t \hspace{0.17em}
-\mathrm{d} t, \qquad
-        \text{dCov}_t = - \text{Cov}_t \dot{\mathscr{R}}_t
-\text{Cov}_t
-        \hspace{0.17em} \mathrm{d} t + \mathrm{d} (\text{martingale}) .\)</td>
+        <td width="100%" align="center"><a id="eq:cov-dynamics"></a>\(\displaystyle \mathrm{d} \langle \psi,
+        \psi \rangle_t =\mathcal{C}_t \hspace{0.17em}
+\mathrm{d} t =
+        \text{Cov}_t \dot{\mathscr{R}}_t \text{Cov}_t
+        \hspace{0.17em}
+\mathrm{d} t, \qquad \text{dCov}_t = - \text{Cov}_t
+        \dot{\mathscr{R}}_t
+\text{Cov}_t \hspace{0.17em} \mathrm{d} t +
+        \mathrm{d} (\text{martingale}) .\)</td>
         <td align="right">(6.9)</td>
       </tr>
     </table>
@@ -1352,11 +1389,12 @@ H_t^{\ast} .\)
       S_t^{- 1} > 0\) (Proposition <a href="#prop:H-cov">6.3</a>), so the map is injective.
       Hence the image is the graph of a gradient:
     </p>
-    <a id="eq:F-gradient"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathscr{F}_t = D \Gamma_t, \qquad
-        H_t = (S_t^{- 1} + D^2 \Gamma_t)^{- 1},
-\qquad \Gamma_T = V_T .\)</td>
+        <td width="100%" align="center"><a id="eq:F-gradient"></a>\(\displaystyle \mathscr{F}_t = D
+        \Gamma_t, \qquad H_t = (S_t^{- 1} + D^2 \Gamma_t)^{- 1},
+\qquad
+        \Gamma_T = V_T .\)</td>
         <td align="right">(6.10)</td>
       </tr>
     </table>
@@ -1364,12 +1402,12 @@ H_t^{\ast} .\)
       The generating function of this canonical transformation is the Moreau
       (infimal convolution) transform
     </p>
-    <a id="eq:moreau"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V_t (x) = \inf_{\psi} \left\{
-        \Gamma_t (\psi) + \tfrac{1}{2} \langle x -
-\psi, S_t^{- 1} (x - \psi)
-        \rangle \right\},\)</td>
+        <td width="100%" align="center"><a id="eq:moreau"></a>\(\displaystyle V_t (x) = \inf_{\psi}
+        \left\{ \Gamma_t (\psi) + \tfrac{1}{2} \langle x -
+\psi, S_t^{- 1} (x
+        - \psi) \rangle \right\},\)</td>
         <td align="right">(6.11)</td>
       </tr>
     </table>
@@ -1404,45 +1442,47 @@ H_t^{\ast} .\)
         </tr></tbody>
       </table>
     </div>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">6.4</class>. </strong><i><class style="font-style: normal"><strong>(Wetterich
-      equation) </strong></class><a id="thm:wetterich"></a> <class style="font-style: normal">(formal)</class>
-      \(\Gamma_t\) solves</i>
-    </p>
-    <i><a id="eq:wetterich-Gamma"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t \Gamma_t = \tfrac{1}{2}
-        \text{Tr} [\dot{\mathscr{R}}_t  ((S_t^{-
-1} + D^2 \Gamma_t)^{- 1} -
-        S_t)], \qquad \Gamma_T = V_T .\)</td>
-        <td align="right">(6.12)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>Equivalently, the <em>effective average action</em>
-      \(\Gamma^{\text{EAA}}_t (\psi) := \Gamma_t (\psi) + \frac{1}{2}  \langle
-      \psi,
-Q_T^{- 1} \psi \rangle\) solves, up to a field-independent
-      term,</i>
-    </p>
-    <i><a id="eq:wetterich"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \partial_t \Gamma^{\text{EAA}}_t =
-        \tfrac{1}{2} \text{Tr}
-[\dot{\mathscr{R}}_t  (D^2
-        \Gamma^{\text{EAA}}_t + \mathscr{R}_t)^{- 1}] .\)</td>
-        <td align="right">(6.13)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>It interpolates between the bare action \(\Gamma^{\text{EAA}}_T =
-      \frac{1}{2}  \langle \psi, Q_T^{- 1} \psi \rangle +
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">6.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Wetterich equation) </strong></class><a id="thm:wetterich"></a>
+        <class style="font-style: normal">(formal)</class> \(\Gamma_t\) solves</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:wetterich-Gamma"></a>\(\displaystyle \partial_t \Gamma_t =
+          \tfrac{1}{2} \text{Tr} [\dot{\mathscr{R}}_t  ((S_t^{-
+1} + D^2
+          \Gamma_t)^{- 1} - S_t)], \qquad \Gamma_T = V_T .\)</td>
+          <td align="right">(6.12)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>Equivalently, the <em>effective average action</em>
+        \(\Gamma^{\text{EAA}}_t (\psi) := \Gamma_t (\psi) + \frac{1}{2}
+        \langle \psi,
+Q_T^{- 1} \psi \rangle\) solves, up to a
+        field-independent term,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:wetterich"></a>\(\displaystyle \partial_t
+          \Gamma^{\text{EAA}}_t = \tfrac{1}{2} \text{Tr}
+[\dot{\mathscr{R}}_t
+          (D^2 \Gamma^{\text{EAA}}_t + \mathscr{R}_t)^{- 1}] .\)</td>
+          <td align="right">(6.13)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>It interpolates between the bare action \(\Gamma^{\text{EAA}}_T =
+        \frac{1}{2}  \langle \psi, Q_T^{- 1} \psi \rangle +
 V_T (\psi)\)
-      (\(\mathscr{R}_T = \infty\)) and the 1PI effective action
-      \(\Gamma^{\text{EAA}}_0\) of \(\nu_T\) (\(\mathscr{R}_0 = 0\)).</i>
-    </p>
+        (\(\mathscr{R}_T = \infty\)) and the 1PI effective action
+        \(\Gamma^{\text{EAA}}_0\) of \(\nu_T\) (\(\mathscr{R}_0 = 0\)).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>Integrate <class style="font-style: normal">(<a href="#eq:transformed-flow">6.8</a>)</class>
+      <strong class="enunciation-name">Proof. </strong>Integrate <class style="font-style: normal">(<a href="#eq:transformed-flow">6.8</a>)</class>
       in field space. With \(\mathscr{F} = D \Gamma\), the derivative of \(H =
       (S^{- 1} + D^2 \Gamma)^{- 1}\) in a direction \(v\) is \(- H
       \hspace{0.17em} D^3 \Gamma [v]  \hspace{0.17em} H\), so by the total
@@ -1520,9 +1560,9 @@ V_T (\psi)\)
       profile with \(T = \infty\), \(S_t = C (1 - \mathrm{e}^{- A / t^2})\)
       and
     </p>
-    <a id="eq:exp-regulator"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathscr{R}_t =
+        <td width="100%" align="center"><a id="eq:exp-regulator"></a>\(\displaystyle \mathscr{R}_t =
         \frac{A}{\mathrm{e}^{A / t^2} - 1},\)</td>
         <td align="right">(6.14)</td>
       </tr>
@@ -1569,14 +1609,14 @@ V_T (\psi)\)
         (x - \psi) \rangle\) for \(\nu\) of mean \(\psi\),
       </div>
     </p>
-    <a id="eq:constrained"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \Gamma_t (\psi) = \inf \left\{ \int
-        V_T \hspace{0.17em} \mathrm{d} \nu +
-\text{Ent} \left( \nu
-        \hspace{0.17em} | \hspace{0.17em} \mu^{S_t} (\cdot -
-\psi) \right) :
-        \left. \int \varphi \hspace{0.17em} \nu (\mathrm{d} \varphi) =
+        <td width="100%" align="center"><a id="eq:constrained"></a>\(\displaystyle \Gamma_t (\psi) = \inf
+        \left\{ \int V_T \hspace{0.17em} \mathrm{d} \nu +
+\text{Ent} \left(
+        \nu \hspace{0.17em} | \hspace{0.17em} \mu^{S_t} (\cdot -
+\psi) \right)
+        : \left. \int \varphi \hspace{0.17em} \nu (\mathrm{d} \varphi) =
 \psi
         \right\} . \right.\)</td>
         <td align="right">(6.15)</td>
@@ -1603,10 +1643,10 @@ V_T (\psi)\)
         becomes the Hopf&ndash;Lax formula
       </div>
     </p>
-    <a id="eq:hopf-lax"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V^{\text{tree}}_t (x) = \inf_y
-        \left\{ V_T (y) + \tfrac{1}{2} \langle y - x,
+        <td width="100%" align="center"><a id="eq:hopf-lax"></a>\(\displaystyle V^{\text{tree}}_t (x) =
+        \inf_y \left\{ V_T (y) + \tfrac{1}{2} \langle y - x,
 S_t^{- 1} (y - x)
         \rangle \right\},\)</td>
         <td align="right">(6.16)</td>
@@ -1753,33 +1793,35 @@ X^u := X + I (u),\)
       the field driven by the control \(u\) under the Gaussian reference
       \(\mathbb{P}_0\).
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">7.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Bou&eacute;&ndash;Dupuis [<a href="#bib-BD98">BD98</a>];
+        Polchinski as HJB) </strong></class><a id="thm:BD"></a> <class style="font-style: normal">(formal)</class></i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:BD"></a>\(\displaystyle - \log \mathbb{E}_0
+          [\mathrm{e}^{- V_T (X_T)}] = V_0 (0) = \inf_{u \in
+\mathbb{H}_a}
+          \mathbb{E}_0  \left[ V_T (X^u_T) + \frac{1}{2}  \int_0^T \|u_s
+\|^2
+          \mathrm{d} s \right] .\)</td>
+          <td align="right">(7.1)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>The infimum is attained at the feedback control \(u^{\ast}_s = -
+        \dot{Q}_s^{1 / 2} DV_s (X^{u^{\ast}}_s)\), and \(\text{Law}
+        (X^{u^{\ast}}_T) = \nu_T\). The effective potential is the value
+        function, and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class> is the
+        Hamilton&ndash;Jacobi&ndash;Bellman equation of this control
+        problem.</i>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">7.1</class>. </strong><i><class style="font-style: normal"><strong>(Bou&eacute;&ndash;Dupuis
-      [<a href="#bib-BD98">BD98</a>]; Polchinski as HJB) </strong></class><a id="thm:BD"></a>
-      <class style="font-style: normal">(formal)</class></i>
-    </p>
-    <i><a id="eq:BD"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle - \log \mathbb{E}_0 [\mathrm{e}^{-
-        V_T (X_T)}] = V_0 (0) = \inf_{u \in
-\mathbb{H}_a} \mathbb{E}_0  \left[
-        V_T (X^u_T) + \frac{1}{2}  \int_0^T \|u_s
-\|^2 \mathrm{d} s \right]
-        .\)</td>
-        <td align="right">(7.1)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>The infimum is attained at the feedback control \(u^{\ast}_s = -
-      \dot{Q}_s^{1 / 2} DV_s (X^{u^{\ast}}_s)\), and \(\text{Law}
-      (X^{u^{\ast}}_T) = \nu_T\). The effective potential is the value
-      function, and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class> is the
-      Hamilton&ndash;Jacobi&ndash;Bellman equation of this control
-      problem.</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proof. </strong>(Verification.) For any \(u\), by It&ocirc;'s
-      formula and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>,
+      <strong class="enunciation-name">Proof. </strong>(Verification.) For any \(u\), by
+      It&ocirc;'s formula and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class>,
     </p>
     <center>
       \(\displaystyle \begin{array}{rl}
@@ -1798,14 +1840,14 @@ X^u := X + I (u),\)
       with \(DV_t = DV_t (X^u_t)\) and a martingale \(M\). Integrating and
       taking expectations,
     </p>
-    <a id="eq:verification"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E}_0  \left[ V_T (X^u_T) +
-        \frac{1}{2}  \int_0^T \|u_t \|^2
-\mathrm{d} t \right] = V_0 (0) +
-        \frac{1}{2} \mathbb{E}_0  \int_0^T \|u_t +
-\dot{Q}_t^{1 / 2} DV_t
-        (X^u_t)\|^2 \mathrm{d} t.\)</td>
+        <td width="100%" align="center"><a id="eq:verification"></a>\(\displaystyle \mathbb{E}_0  \left[ V_T
+        (X^u_T) + \frac{1}{2}  \int_0^T \|u_t \|^2
+\mathrm{d} t \right] = V_0
+        (0) + \frac{1}{2} \mathbb{E}_0  \int_0^T \|u_t +
+\dot{Q}_t^{1 / 2}
+        DV_t (X^u_t)\|^2 \mathrm{d} t.\)</td>
         <td align="right">(7.2)</td>
       </tr>
     </table>
@@ -1827,9 +1869,9 @@ X^u := X + I (u),\)
         s = 0\) for all adapted \(v\), i.e.
       </div>
     </p>
-    <a id="eq:EL"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle u_s = - \dot{Q}_s^{1 / 2}
+        <td width="100%" align="center"><a id="eq:EL"></a>\(\displaystyle u_s = - \dot{Q}_s^{1 / 2}
         \hspace{0.17em} \mathbb{E}_s  [DV_T (X^u_T)] =
 \dot{Q}_s^{1 / 2} F_s
         .\)</td>
@@ -1872,14 +1914,14 @@ X^u := X + I (u),\)
         Adding a test functional \(f\),
       </div>
     </p>
-    <a id="eq:generating"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{W}_T (f) := - \log \int
-        \mathrm{e}^{- f} \mathrm{d} \nu_T = \inf_u
-\mathbb{E}_0  \left[ f
-        (X^u_T) + V_T (X^u_T) + \frac{1}{2}  \int_0^T \|u_s
-\|^2 \mathrm{d} s
-        \right] - V_0 (0) .\)</td>
+        <td width="100%" align="center"><a id="eq:generating"></a>\(\displaystyle \mathcal{W}_T (f) := -
+        \log \int \mathrm{e}^{- f} \mathrm{d} \nu_T = \inf_u
+\mathbb{E}_0
+        \left[ f (X^u_T) + V_T (X^u_T) + \frac{1}{2}  \int_0^T \|u_s
+\|^2
+        \mathrm{d} s \right] - V_0 (0) .\)</td>
         <td align="right">(7.4)</td>
       </tr>
     </table>
@@ -1903,54 +1945,56 @@ X^u := X + I (u),\)
       style="font-style: normal">(<a href="#eq:BD">7.1</a>)</class> has no limit as \(L \to \infty\).
       Three objects are intensive and survive formally:
     </p>
-    <ol>
-      <li>
-        <p>
-          <em>the force.</em> For a local interaction \(V_T (\varphi) = \int
-          v_T (\varphi (x)) \mathrm{d} x\), \(DV_T (\varphi) (x) = v_T'
-          (\varphi (x))\), and <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class> reads,
-          on \(\mathbb{R}^d\),
-        </p>
-        <a id="eq:fbsde-inf"></a><table width="100%">
-          <tr>
-            <td width="100%" align="center">\(\displaystyle \Phi_t = \int_0^t \dot{Q}_s F_s
-            \hspace{0.17em} \mathrm{d} s + \int_0^t
-\dot{Q}_s^{1 / 2}
-            \mathrm{d} W_s, \qquad F_t (x) = -\mathbb{E}_t [v_T' (\Phi_T
-(x))]
-            .\)</td>
-            <td align="right">(7.5)</td>
-          </tr>
-        </table>
-        <p>
-          Here every quantity is local, and the equation makes sense without a
-          volume cutoff. Infinite-volume limits of \(\nu_T^{(L)}\) are
-          expected to be laws of solutions of <class style="font-style: normal">(<a href="#eq:fbsde-inf">7.5</a>)</class>.
-          Uniqueness of such solutions (e.g. for small coupling, or by
-          contraction in weighted spaces) is a uniqueness statement for the
-          infinite-volume theory. Non-uniqueness is expected in the presence
-          of phase transitions, e.g. for \(\Phi^4_2\) with a deep double-well
-          potential [<a href="#bib-GJS75">GJS75</a>];
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>the Burgers flow</em> <class style="font-style: normal">(<a href="#eq:burgers">5.12</a>)</class>
-          of the force, for the same reason;
-        </p>
-      </li>
-      <li>
-        <p>
-          <em>differences of free energies.</em> For a local \(f\),
-          \(\mathcal{W}_T^{(L)} (f)\) in <class style="font-style: normal">(<a href="#eq:generating">7.4</a>)</class>
-          is a difference of two extensive infima, and it stays bounded as \(L
-          \to \infty\). Its variational characterisation, through the
-          infinite-volume Euler&ndash;Lagrange equation <class style="font-style: normal">(<a
-          href="#eq:fbsde-inf">7.5</a>)</class>, is the basis of the infinite-volume analysis
-          of \(\Phi^4_2\) and \(\exp (\Phi)_2\) in [<a href="#bib-BG24">BG24</a>].
-        </p>
-      </li>
-    </ol>
+    <div class="enum-roman">
+      <ol>
+        <li>
+          <p>
+            <em>the force.</em> For a local interaction \(V_T (\varphi) = \int
+            v_T (\varphi (x)) \mathrm{d} x\), \(DV_T (\varphi) (x) = v_T'
+            (\varphi (x))\), and <class style="font-style: normal">(<a href="#eq:fbsde-system">5.8</a>)</class>
+            reads, on \(\mathbb{R}^d\),
+          </p>
+          <table width="100%">
+            <tr>
+              <td width="100%" align="center"><a id="eq:fbsde-inf"></a>\(\displaystyle \Phi_t = \int_0^t
+              \dot{Q}_s F_s \hspace{0.17em} \mathrm{d} s +
+              \int_0^t
+\dot{Q}_s^{1 / 2} \mathrm{d} W_s, \qquad F_t (x) =
+              -\mathbb{E}_t [v_T' (\Phi_T
+(x))] .\)</td>
+              <td align="right">(7.5)</td>
+            </tr>
+          </table>
+          <p>
+            Here every quantity is local, and the equation makes sense without
+            a volume cutoff. Infinite-volume limits of \(\nu_T^{(L)}\) are
+            expected to be laws of solutions of <class style="font-style: normal">(<a href="#eq:fbsde-inf">7.5</a>)</class>.
+            Uniqueness of such solutions (e.g. for small coupling, or by
+            contraction in weighted spaces) is a uniqueness statement for the
+            infinite-volume theory. Non-uniqueness is expected in the presence
+            of phase transitions, e.g. for \(\Phi^4_2\) with a deep
+            double-well potential [<a href="#bib-GJS75">GJS75</a>];
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>the Burgers flow</em> <class style="font-style: normal">(<a href="#eq:burgers">5.12</a>)</class>
+            of the force, for the same reason;
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>differences of free energies.</em> For a local \(f\),
+            \(\mathcal{W}_T^{(L)} (f)\) in <class style="font-style: normal">(<a href="#eq:generating">7.4</a>)</class>
+            is a difference of two extensive infima, and it stays bounded as
+            \(L \to \infty\). Its variational characterisation, through the
+            infinite-volume Euler&ndash;Lagrange equation <class style="font-style: normal">(<a
+            href="#eq:fbsde-inf">7.5</a>)</class>, is the basis of the infinite-volume
+            analysis of \(\Phi^4_2\) and \(\exp (\Phi)_2\) in [<a href="#bib-BG24">BG24</a>].
+          </p>
+        </li>
+      </ol>
+    </div>
     <p>
       The coercive estimates must then be <em>local</em>: one uses weighted
       norms and needs bounds whose constants do not depend on the volume. This
@@ -2027,41 +2071,44 @@ X^u := X + I (u),\)
         generating function \(\mathrm{e}^{\tau a - c \tau^2 / 2}\)).
       </div>
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">8.1</class>. </strong><i><class style="font-style: normal"><strong>(Wick
-      observables) </strong></class><a id="prop:wick-obs"></a> For every \(d \geq 1\), \(n
-      \geq 1\) and \(x \in \mathcal{M}\),</i>
-    </p>
-    <p>
-      <i><center>
-        \(\displaystyle : X^n_t : (x) := H_n  (X_t (x) ; c_t)\)
-      </center></i>
-    </p>
-    <p>
-      <i>is a continuous martingale, with \(\mathrm{d} \hspace{0.17em} : X^n_t
-      : (x) = n \hspace{0.17em} : X^{n - 1}_t :
-(x) \hspace{0.17em} \mathrm{d}
-      X_t (x)\) and</i>
-    </p>
-    <i><a id="eq:wick-obs-cov"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E} \left[ : X^n_t : (x)
-        \hspace{0.17em} : X^k_t : (y) \right] =
-\delta_{nk}  \hspace{0.17em}
-        n! \hspace{0.17em} Q_t  (x, y)^n .\)</td>
-        <td align="right">(8.1)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>In particular, for \(x \neq y\), \(\lim_t \mathbb{E}[: X^n_t : (x) :
-      X^n_t : (y)] = n! \hspace{0.17em} G (x -
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">8.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(Wick observables)
+        </strong></class><a id="prop:wick-obs"></a> For every \(d \geq 1\), \(n \geq 1\) and
+        \(x \in \mathcal{M}\),</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle : X^n_t : (x) := H_n  (X_t (x) ; c_t)\)
+        </center></i>
+      </p>
+      <p>
+        <i>is a continuous martingale, with \(\mathrm{d} \hspace{0.17em} :
+        X^n_t : (x) = n \hspace{0.17em} : X^{n - 1}_t :
+(x) \hspace{0.17em}
+        \mathrm{d} X_t (x)\) and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:wick-obs-cov"></a>\(\displaystyle \mathbb{E} \left[ :
+          X^n_t : (x) \hspace{0.17em} : X^k_t : (y) \right] =
+\delta_{nk}
+          \hspace{0.17em} n! \hspace{0.17em} Q_t  (x, y)^n .\)</td>
+          <td align="right">(8.1)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>In particular, for \(x \neq y\), \(\lim_t \mathbb{E}[: X^n_t : (x)
+        : X^n_t : (y)] = n! \hspace{0.17em} G (x -
 y)^n\).</i>
-    </p>
+      </p>
+    </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>By It&ocirc;'s formula, using \(\mathrm{d}
-      \langle X (x), X (x) \rangle_t = \dot{c}_t \hspace{0.17em}
-\mathrm{d}
-      t\),
+      <strong class="enunciation-name">Proof. </strong>By It&ocirc;'s formula, using
+      \(\mathrm{d} \langle X (x), X (x) \rangle_t = \dot{c}_t
+      \hspace{0.17em}
+\mathrm{d} t\),
     </p>
     <center>
       \(\displaystyle \mathrm{d} H_n  (X_t (x) ; c_t) = \partial_a H_n
@@ -2109,46 +2156,51 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
       The pointwise product of two martingales is not a martingale. The
       natural definition of the product keeps the asymptotics.
     </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Definition <class style="font-style: normal">8.2</class>. </strong><i><a id="def:product"></a>Two
-      observables \(O^1, O^2\) <em>admit a product</em> if \(O^1_t O^2_t \in
-      L^1\) for all \(t\) and there is an observable \(O^1 \star O^2\) with
-      \(\|(O^1 \star O^2)_t - O^1_t O^2_t \|_{L^1} \to 0\). By Lemma <a href="#lem:uniq">4.4</a>
-      it is unique, and \((O^1 \star O^2)_s = \lim_t \mathbb{E}_s [O^1_t
-      O^2_t]\).</i>
-    </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">8.3</class>. </strong><i><a id="prop:product"></a>Let
-      \(O^1, O^2\) be continuous observables, square integrable on bounded
-      intervals, with</i>
-    </p>
-    <i><a id="eq:prod-cond"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E} \int_0^{\infty} |
-        \mathrm{d} \langle O^1, O^2 \rangle_s | < \infty
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Definition <class style="font-style: normal">8.2</class>. </strong><i><a
+        id="def:product"></a>Two observables \(O^1, O^2\) <em>admit a product</em> if
+        \(O^1_t O^2_t \in L^1\) for all \(t\) and there is an observable \(O^1
+        \star O^2\) with \(\|(O^1 \star O^2)_t - O^1_t O^2_t \|_{L^1} \to 0\).
+        By Lemma <a href="#lem:uniq">4.4</a> it is unique, and \((O^1 \star O^2)_s =
+        \lim_t \mathbb{E}_s [O^1_t O^2_t]\).</i>
+      </p>
+    </div>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">8.3</class>. </strong><i><a
+        id="prop:product"></a>Let \(O^1, O^2\) be continuous observables, square integrable
+        on bounded intervals, with</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:prod-cond"></a>\(\displaystyle \mathbb{E}
+          \int_0^{\infty} | \mathrm{d} \langle O^1, O^2 \rangle_s | <
+          \infty
 .\)</td>
-        <td align="right">(8.2)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>Then \(O^1 \star O^2\) exists and</i>
-    </p>
-    <i><a id="eq:prod-formula"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle (O^1 \star O^2)_t = O^1_t O^2_t
-        +\mathbb{E}_t \left[ \int_t^{\infty}
-\mathrm{d} \langle O^1, O^2
-        \rangle_s \right] .\)</td>
-        <td align="right">(8.3)</td>
-      </tr>
-    </table></i>
-    <p style="margin-bottom: 1em">
-      <i>In particular \(\langle O^1 \star O^2 \rangle = O^1_0 O^2_0
-      +\mathbb{E} \langle O^1, O^2
+          <td align="right">(8.2)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>Then \(O^1 \star O^2\) exists and</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:prod-formula"></a>\(\displaystyle (O^1 \star O^2)_t =
+          O^1_t O^2_t +\mathbb{E}_t \left[ \int_t^{\infty}
+\mathrm{d} \langle
+          O^1, O^2 \rangle_s \right] .\)</td>
+          <td align="right">(8.3)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>In particular \(\langle O^1 \star O^2 \rangle = O^1_0 O^2_0
+        +\mathbb{E} \langle O^1, O^2
 \rangle_{\infty}\).</i>
-    </p>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>\(P_t := O^1_t O^2_t - \langle O^1, O^2
+      <strong class="enunciation-name">Proof. </strong>\(P_t := O^1_t O^2_t - \langle O^1, O^2
       \rangle_t\) is a martingale on bounded intervals, and \(N_t :=
       \mathbb{E}_t  \langle O^1, O^2 \rangle_{\infty}\) is a closed martingale
       by <class style="font-style: normal">(<a href="#eq:prod-cond">8.2</a>)</class>. So \(P + N\) is a
@@ -2170,12 +2222,13 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
         then \(\dot{Q}_s \geq 0\) and the integral is \(G (x - y)\). Hence
       </div>
     </p>
-    <a id="eq:XX"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (\textbf{X} (x) \star \textbf{X}
-        (y))_t = X_t (x) X_t (y) + G (x - y) - Q_t
-(x - y), \qquad \langle
-        \textbf{X} (x) \star \textbf{X} (y) \rangle = G (x -
+        <td width="100%" align="center"><a id="eq:XX"></a>\(\displaystyle (\textbf{X} (x) \star
+        \textbf{X} (y))_t = X_t (x) X_t (y) + G (x - y) - Q_t
+(x - y), \qquad
+        \langle \textbf{X} (x) \star \textbf{X} (y) \rangle = G (x
+        -
 y),\)</td>
         <td align="right">(8.4)</td>
       </tr>
@@ -2197,12 +2250,12 @@ y),\)</td>
         \to x\),
       </div>
     </p>
-    <a id="eq:OPE"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle (\textbf{X} (x) \star \textbf{X}
-        (y))_t - G (x - y) \hspace{0.27em}
-\longrightarrow \hspace{0.27em} X_t
-        (x)^2 - c_t = : X^2_t : (x) .\)</td>
+        <td width="100%" align="center"><a id="eq:OPE"></a>\(\displaystyle (\textbf{X} (x) \star
+        \textbf{X} (y))_t - G (x - y) \hspace{0.27em}
+\longrightarrow
+        \hspace{0.27em} X_t (x)^2 - c_t = : X^2_t : (x) .\)</td>
         <td align="right">(8.5)</td>
       </tr>
     </table>
@@ -2215,10 +2268,10 @@ y),\)</td>
       singular coefficient. More generally (Exercise <a href="#ex:wick-product">8.2</a>), for
       \(x \neq y\),
     </p>
-    <a id="eq:wick-product"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle : \textbf{X}^n : (x) \star :
-        \textbf{X}^k : (y) = \sum_{j \leq n \wedge k} j!
+        <td width="100%" align="center"><a id="eq:wick-product"></a>\(\displaystyle : \textbf{X}^n : (x)
+        \star : \textbf{X}^k : (y) = \sum_{j \leq n \wedge k} j!
 \binom{n}{j}
         \binom{k}{j} \hspace{0.17em} G (x - y)^j \hspace{0.17em}
         :
@@ -2284,12 +2337,12 @@ y),\)</td>
       </table>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">8.4</class>. </strong><a id="rem:finite-range"></a>A finite
-      range decomposition makes these statements exact: if \(\dot{Q}_t  (x, y)
-      = 0\) for \(|x - y| \geq 1 / t\), then \(X_T - X_t\) restricted to
-      regions at distance \(\geq 1 / t\) are independent. Such decompositions
-      of \((m^2 - \Delta)^{- 1}\) exist and are a basic tool of the rigorous
-      renormalisation group [<a href="#bib-BBS19">BBS19</a>].
+      <strong class="enunciation-name">Remark <class style="font-style: normal">8.4</class>. </strong><a id="rem:finite-range"></a>A
+      finite range decomposition makes these statements exact: if \(\dot{Q}_t
+      (x, y) = 0\) for \(|x - y| \geq 1 / t\), then \(X_T - X_t\) restricted
+      to regions at distance \(\geq 1 / t\) are independent. Such
+      decompositions of \((m^2 - \Delta)^{- 1}\) exist and are a basic tool of
+      the rigorous renormalisation group [<a href="#bib-BBS19">BBS19</a>].
     </p>
     <h3 id="auto-51">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -2346,24 +2399,24 @@ y),\)</td>
     <p>
       For a positive covariance \(S\) define the renormalisation map
     </p>
-    <a id="eq:RG-map"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{R}_S (V) := - \log (\mu^S
-        \ast \mathrm{e}^{- V}), \qquad (\mu^S \ast
-u) (\phi) = \int u (\phi +
-        \zeta) \mu^S (\mathrm{d} \zeta) .\)</td>
+        <td width="100%" align="center"><a id="eq:RG-map"></a>\(\displaystyle \mathcal{R}_S (V) := -
+        \log (\mu^S \ast \mathrm{e}^{- V}), \qquad (\mu^S \ast
+u) (\phi) =
+        \int u (\phi + \zeta) \mu^S (\mathrm{d} \zeta) .\)</td>
         <td align="right">(9.1)</td>
       </tr>
     </table>
     <p>
       Since \(\mu^S \ast \mu^{S'} = \mu^{S + S'}\),
     </p>
-    <a id="eq:semigroup"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{R}_S \circ \mathcal{R}_{S'}
-        =\mathcal{R}_{S + S'} =\mathcal{R}_{S'}
-\circ \mathcal{R}_S, \qquad
-        V_t =\mathcal{R}_{Q_{T, t}} (V_T) .\)</td>
+        <td width="100%" align="center"><a id="eq:semigroup"></a>\(\displaystyle \mathcal{R}_S \circ
+        \mathcal{R}_{S'} =\mathcal{R}_{S + S'} =\mathcal{R}_{S'}
+\circ
+        \mathcal{R}_S, \qquad V_t =\mathcal{R}_{Q_{T, t}} (V_T) .\)</td>
         <td align="right">(9.2)</td>
       </tr>
     </table>
@@ -2373,14 +2426,14 @@ u) (\phi) = \int u (\phi +
       nonlinearly on interactions and linearly on Boltzmann factors
       \(\mathrm{e}^{- V}\). Its infinitesimal generators are the vector fields
     </p>
-    <a id="eq:PB"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle \mathcal{P}_B (V) := \tfrac{1}{2}
-        \text{Tr} (BD^2 V) - \tfrac{1}{2} \langle
-DV, BDV \rangle, \qquad
-        \tfrac{\mathrm{d}}{\mathrm{d} s} \mathcal{R}_{sB} (V)
-|_{s = 0}
-        =\mathcal{P}_B (V),\)</td>
+        <td width="100%" align="center"><a id="eq:PB"></a>\(\displaystyle \mathcal{P}_B (V) :=
+        \tfrac{1}{2} \text{Tr} (BD^2 V) - \tfrac{1}{2} \langle
+DV, BDV
+        \rangle, \qquad \left. \tfrac{\mathrm{d}}{\mathrm{d}
+        s}
+\mathcal{R}_{sB} (V) \right|_{s = 0} =\mathcal{P}_B (V),\)</td>
         <td align="right">(9.3)</td>
       </tr>
     </table>
@@ -2388,16 +2441,19 @@ DV, BDV \rangle, \qquad
       and <class style="font-style: normal">(<a href="#eq:polchinski">5.6</a>)</class> reads \(\partial_t V_t =
       -\mathcal{P}_{\dot{Q}_t} (V_t)\).
     </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">9.1</class>.
+        </strong><i><class style="font-style: normal"><strong>(Flatness) </strong></class><a id="prop:flat"></a>
+        <class style="font-style: normal">(formal)</class> (a) \([\mathcal{P}_B, \mathcal{P}_{B'}]
+        = 0\) for all positive \(B, B'\). (b) \(V_t\) depends on the profile
+        only through \(Q_{T, t}\). In particular the free energy \(V_0 (0)\)
+        and the law \(\nu_T\) depend only on \(Q_T\), not on the path \(t
+        \mapsto Q_t\).</i>
+      </p>
+    </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proposition <class style="font-style: normal">9.1</class>. </strong><i><class style="font-style: normal"><strong>(Flatness)
-      </strong></class><a id="prop:flat"></a> <class style="font-style: normal">(formal)</class> (a)
-      \([\mathcal{P}_B, \mathcal{P}_{B'}] = 0\) for all positive \(B, B'\).
-      (b) \(V_t\) depends on the profile only through \(Q_{T, t}\). In
-      particular the free energy \(V_0 (0)\) and the law \(\nu_T\) depend only
-      on \(Q_T\), not on the path \(t \mapsto Q_t\).</i>
-    </p>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>(a) Differentiate \(\mathcal{R}_{sB}
+      <strong class="enunciation-name">Proof. </strong>(a) Differentiate \(\mathcal{R}_{sB}
       \mathcal{R}_{rB'} =\mathcal{R}_{rB'} \mathcal{R}_{sB}\) at \(s = r =
       0\), or compute directly (Exercise <a href="#ex:commutator">9.1</a>). (b) is <class
       style="font-style: normal">(<a href="#eq:semigroup">9.2</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
@@ -2414,12 +2470,12 @@ DV, BDV \rangle, \qquad
       Expanding \(V_t =\mathcal{R}_{Q_{T, t}} (V_T)\) in cumulants of the
       Gaussian increment \(\zeta \sim \mu^{Q_{T, t}}\) gives
     </p>
-    <a id="eq:cumulants"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V_t (\phi) =\mathbb{E}_{\zeta}  [V_T
-        (\phi + \zeta)] - \tfrac{1}{2}
-\text{Var}_{\zeta} (V_T (\phi + \zeta))
-        + \ldots\)</td>
+        <td width="100%" align="center"><a id="eq:cumulants"></a>\(\displaystyle V_t (\phi)
+        =\mathbb{E}_{\zeta}  [V_T (\phi + \zeta)] -
+        \tfrac{1}{2}
+\text{Var}_{\zeta} (V_T (\phi + \zeta)) + \ldots\)</td>
         <td align="right">(9.4)</td>
       </tr>
     </table>
@@ -2428,12 +2484,12 @@ DV, BDV \rangle, \qquad
       shows that Gaussian convolution simply <em>lowers the Wick
       ordering</em>: since \(Q_{T, t}  (x, x) = c_T - c_t\),
     </p>
-    <a id="eq:first-order"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle V_t (\phi) = \int [\lambda H_4 (\phi
-        (x) ; c_t) + \gamma_T H_2 (\phi (x) ;
-c_t)] \mathrm{d} x + O
-        (\lambda^2) .\)</td>
+        <td width="100%" align="center"><a id="eq:first-order"></a>\(\displaystyle V_t (\phi) = \int
+        [\lambda H_4 (\phi (x) ; c_t) + \gamma_T H_2 (\phi (x) ;
+c_t)]
+        \mathrm{d} x + O (\lambda^2) .\)</td>
         <td align="right">(9.5)</td>
       </tr>
     </table>
@@ -2443,28 +2499,33 @@ c_t)] \mathrm{d} x + O
       resolution. This is the dual statement of Proposition <a href="#prop:wick-obs">8.1</a>:
       \(\int H_4  (X_t ; c_t)\) is an observable.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Proposition <class style="font-style: normal">9.2</class>. </strong><i><class style="font-style: normal"><strong>(Second
-      order) </strong></class><a id="prop:second-order"></a> <class style="font-style: normal">(formal)</class> Write
-      \(S = Q_{T, t}\) and \(: \phi^p :_t = H_p  (\phi ; c_t)\). Then</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:second-order"></a><table width="100%">
-        <tr>
-          <td width="100%" align="center">\(\displaystyle V_t (\phi) = \int [\lambda :
-          \phi^4 :_t + \gamma_T : \phi^2 :_t] -
-\frac{\lambda^2}{2}  \sum_{k =
-          1}^4 \binom{4}{k}^2 k! \iint S (x, y)^k
-\hspace{0.17em} : \phi^{4 -
-          k} :_t (x) \hspace{0.17em} : \phi^{4 - k} :_t (y)
-\hspace{0.17em}
-          \mathrm{d} x \hspace{0.17em} \mathrm{d} y + O (\lambda^3) .\)</td>
-          <td align="right">(9.6)</td>
-        </tr>
-      </table></i>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">9.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Second order) </strong></class><a
+        id="prop:second-order"></a> <class style="font-style: normal">(formal)</class> Write \(S = Q_{T, t}\) and \(:
+        \phi^p :_t = H_p  (\phi ; c_t)\). Then</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:second-order"></a>\(\displaystyle V_t (\phi) = \int
+            [\lambda : \phi^4 :_t + \gamma_T : \phi^2 :_t]
+            -
+\frac{\lambda^2}{2}  \sum_{k = 1}^4 \binom{4}{k}^2 k! \iint S
+            (x, y)^k
+\hspace{0.17em} : \phi^{4 - k} :_t (x) \hspace{0.17em} :
+            \phi^{4 - k} :_t (y)
+\hspace{0.17em} \mathrm{d} x \hspace{0.17em}
+            \mathrm{d} y + O (\lambda^3) .\)</td>
+            <td align="right">(9.6)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em">
-      <strong>Proof. </strong>By the binomial formula for Hermite polynomials,
+      <strong class="enunciation-name">Proof. </strong>By the binomial formula for Hermite
+      polynomials,
     </p>
     <center>
       \(\displaystyle H_4  (\phi + \zeta ; c_t + s) = \sum_{k = 0}^4
@@ -2500,12 +2561,13 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
           \lambda^2 \left( \int S^3 \right)  \int : \phi^2 :_t +\)(finite),
           with \(\int S^3 \sim \frac{1}{16 \pi^2} \log T\). It is cancelled by
         </p>
-        <a id="eq:gammaT"></a><table width="100%">
+        <table width="100%">
           <tr>
-            <td width="100%" align="center">\(\displaystyle \gamma_T := 48 \lambda^2
-            \int_{\mathbb{T}^3_L} Q_T (z)^3 \hspace{0.17em}
-\mathrm{d} z =
-            \frac{3 \lambda^2}{\pi^2} \log T + O (1),\)</td>
+            <td width="100%" align="center"><a id="eq:gammaT"></a>\(\displaystyle \gamma_T := 48
+            \lambda^2  \int_{\mathbb{T}^3_L} Q_T (z)^3
+            \hspace{0.17em}
+\mathrm{d} z = \frac{3 \lambda^2}{\pi^2} \log T +
+            O (1),\)</td>
             <td align="right">(9.7)</td>
           </tr>
         </table>
@@ -2586,54 +2648,58 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
       to \(\mathrm{e}^{- A / t^2}\) as \(T \to \infty\). \(F_t\) is the force
       observable of Theorem <a href="#thm:fbsde">5.4</a>.
     </p>
-    <p style="margin-top: 1em">
-      <strong>Theorem <class style="font-style: normal">10.1</class>. </strong><i><class style="font-style: normal"><strong>(DS
-      equations at resolution \(t\)) </strong></class><a id="thm:DS-scale"></a> <class
-      style="font-style: normal">(formal)</class> The <em>noise observable</em></i>
-    </p>
-    <i><a id="eq:eta"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \eta_t := K \Phi_t - J_t F_t\)</td>
-        <td align="right">(10.1)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>is a centred \(\mathbb{P}\)-martingale, with \(\mathrm{d} \eta_t = K
-      \dot{Q}_t^{1 / 2} \mathrm{d} W^{\mathbb{P}}_t - J_t
-\hspace{0.17em}
-      \mathrm{d} F_t\). For every \(t \leq T\), every \(h\) and every
-      functional \(G\),</i>
-    </p>
-    <i><a id="eq:DS-scale"></a><table width="100%">
-      <tr>
-        <td width="100%" align="center">\(\displaystyle \mathbb{E}^{\mathbb{P}}  [D_{J_t h}
-        G (\Phi_t)] =\mathbb{E}^{\mathbb{P}}
-\left[ G (\Phi_t) \hspace{0.17em}
-        \langle h, \eta_t \rangle \right]
-=\mathbb{E}^{\mathbb{P}} \left[ G
-        (\Phi_t) \hspace{0.17em} \langle h, K \Phi_t
-- J_t F_t \rangle \right]
-        .\)</td>
-        <td align="right">(10.2)</td>
-      </tr>
-    </table></i>
-    <p>
-      <i>At \(t = T\) this is the Dyson&ndash;Schwinger equation of
-      \(\nu_T\),</i>
-    </p>
-    <div style="margin-bottom: 1em">
-      <i><a id="eq:DS-terminal"></a><table width="100%">
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">10.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(DS equations at resolution \(t\)) </strong></class><a
+        id="thm:DS-scale"></a> <class style="font-style: normal">(formal)</class> The <em>noise
+        observable</em></i>
+      </p>
+      <i><table width="100%">
         <tr>
-          <td width="100%" align="center">\(\displaystyle \mathbb{E}^{\nu_T}  [D_h G]
-          =\mathbb{E}^{\nu_T} \left[ G \hspace{0.17em}
-\langle h, K \varphi +
-          DV_T (\varphi) \rangle \right] .\)</td>
-          <td align="right">(10.3)</td>
+          <td width="100%" align="center"><a id="eq:eta"></a>\(\displaystyle \eta_t := K \Phi_t -
+          J_t F_t\)</td>
+          <td align="right">(10.1)</td>
         </tr>
       </table></i>
+      <p>
+        <i>is a centred \(\mathbb{P}\)-martingale, with \(\mathrm{d} \eta_t =
+        K \dot{Q}_t^{1 / 2} \mathrm{d} W^{\mathbb{P}}_t - J_t
+\hspace{0.17em}
+        \mathrm{d} F_t\). For every \(t \leq T\), every \(h\) and every
+        functional \(G\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:DS-scale"></a>\(\displaystyle \mathbb{E}^{\mathbb{P}}
+          [D_{J_t h} G (\Phi_t)] =\mathbb{E}^{\mathbb{P}}
+\left[ G (\Phi_t)
+          \hspace{0.17em} \langle h, \eta_t \rangle
+          \right]
+=\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t) \hspace{0.17em}
+          \langle h, K \Phi_t
+- J_t F_t \rangle \right] .\)</td>
+          <td align="right">(10.2)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>At \(t = T\) this is the Dyson&ndash;Schwinger equation of
+        \(\nu_T\),</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:DS-terminal"></a>\(\displaystyle \mathbb{E}^{\nu_T}
+            [D_h G] =\mathbb{E}^{\nu_T} \left[ G \hspace{0.17em}
+\langle h, K
+            \varphi + DV_T (\varphi) \rangle \right] .\)</td>
+            <td align="right">(10.3)</td>
+          </tr>
+        </table></i>
+      </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Proof. </strong>From <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>
+      <strong class="enunciation-name">Proof. </strong>From <class style="font-style: normal">(<a href="#eq:fbsde">5.7</a>)</class>
       and \(\dot{J}_t = K \dot{Q}_t\), \(\mathrm{d} \eta_t = K (\dot{Q}_t F_t
       \mathrm{d} t + \dot{Q}_t^{1 / 2}
 \mathrm{d} W^{\mathbb{P}}_t) - K
@@ -2653,10 +2719,10 @@ F_t\). The drift cancels,
       href="#eq:eta">10.1</a>)</class> becomes an exact identity between observables at
       every resolution:
     </p>
-    <a id="eq:field-eq-scale"></a><table width="100%">
+    <table width="100%">
       <tr>
-        <td width="100%" align="center">\(\displaystyle A \Phi_t = AQ_t  \hspace{0.17em} F_t
-        + \eta_t,\)</td>
+        <td width="100%" align="center"><a id="eq:field-eq-scale"></a>\(\displaystyle A \Phi_t = AQ_t
+        \hspace{0.17em} F_t + \eta_t,\)</td>
         <td align="right">(10.4)</td>
       </tr>
     </table>
@@ -2673,7 +2739,7 @@ F_t\). The drift cancels,
       renormalised DS equation of [<a href="#bib-GH21">GH21</a>].
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong>Remark <class style="font-style: normal">10.2</class>. </strong><class style="font-style: normal"><strong>(Comparison
+      <strong class="enunciation-name">Remark <class style="font-style: normal">10.2</class>. </strong><class style="font-style: normal"><strong>(Comparison
       with stochastic quantisation) </strong></class>In parabolic or elliptic
       stochastic quantisation (Lecture 2, &sect;3.5&ndash;3.6) the field
       equation is imposed in an auxiliary time, and the field at fixed time

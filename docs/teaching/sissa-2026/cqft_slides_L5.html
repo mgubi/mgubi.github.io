@@ -33,10 +33,11 @@
       wavy red; } .fill-out { text-decoration: underline dotted; }
     </style>
     <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html-slides.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-slides.css" type="text/css" rel="stylesheet">
     <link href="/resources/sissa-materials.css" type="text/css" rel="stylesheet">
-    <script src="cqft-slides.js" defer></script>
+    <script src="max-html-slides.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Constructive quantum field theory — Lecture 5 (slides), on the personal website of Massimiliano Gubinelli.">
@@ -94,18 +95,18 @@
         At each lattice <font color="#620000">\(N\)</font>, exactly (Lecture 4):
       </p>
       <center>
-        \(\displaystyle \begin{equationsbase}
-  \mathrm{d} Y_q & = [b_q (Y_q)
-        + H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
+        \(\displaystyle \begin{aligned}
+  \mathrm{d} Y_q & = [b_q (Y_q) + H_q
+        (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
   \hspace{0.17em} \mathrm{d}
         W_q,\\
   \mathrm{d} Z_q & = - [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q
         + \Xi_q
   \hspace{0.17em} \mathrm{d} W_q,
-\end{equationsbase}
+\end{aligned}
 
-\qquad
-        \psi = Y + Z = \int \text{Cov} \hspace{0.17em} \mathrm{d} W.\)
+\qquad \psi =
+        Y + Z = \int \text{Cov} \hspace{0.17em} \mathrm{d} W.\)
       </center>
       <p>
         <b>Inputs.</b>
@@ -284,20 +285,20 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
 / 32} .\)
       </center>
       <center>
-        \(\displaystyle \begin{equationsbase}
-  E_T & = \tfrac{1}{\gamma} \int
-        q^{1 / 2} \|Z_q \|_2^2 \hspace{0.17em}
-  \mathrm{d} q \qquad
-        \text{backward energy}\\
-  J_T & = \int q^{- 3 / 2}  [q\|w_q \|_4^4 +
-        \gamma \|w_q \|_6^6 + \gamma
-  \|t_q \|_6^6] \mathrm{d} q \qquad
-        \text{large-field action}\\
-  G_T & = \int [q^{- 1 / 2} \| \xi_q
-        \|_4^4 + \gamma q^{- 3 / 2} \| \xi_q
-  \|_6^6] \mathrm{d} q \qquad
-        \text{Gaussian tails}
-\end{equationsbase}\)
+        \(\displaystyle \begin{aligned}
+  E_T & = \tfrac{1}{\gamma} \int q^{1
+        / 2} \|Z_q \|_2^2 \hspace{0.17em}
+  \mathrm{d} q \qquad \text{backward
+        energy}\\
+  J_T & = \int q^{- 3 / 2}  [q\|w_q \|_4^4 + \gamma \|w_q
+        \|_6^6 + \gamma
+  \|t_q \|_6^6] \mathrm{d} q \qquad \text{large-field
+        action}\\
+  G_T & = \int [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3
+        / 2} \| \xi_q
+  \|_6^6] \mathrm{d} q \qquad \text{Gaussian
+        tails}
+\end{aligned}\)
       </center>
       <p>
         <table style="display: inline-table; vertical-align: middle">

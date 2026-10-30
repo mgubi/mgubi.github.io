@@ -1,4 +1,4 @@
-// Slide viewer for TeXmacs presentations exported to HTML: TeXmacs writes
+// max-html-slides: slide viewer for TeXmacs presentations exported to HTML: TeXmacs writes
 // each screen as <div class="toggle">; show them one at a time.
 (function () {
   var all = Array.prototype.slice.call(document.querySelectorAll('div.toggle'));
@@ -8,8 +8,8 @@
     return !empty;
   });
   var cur = 0, body = document.body;
-  var counter = document.createElement('div'); counter.id = 'cqft-counter';
-  var help = document.createElement('div'); help.id = 'cqft-help';
+  var counter = document.createElement('div'); counter.id = 'max-counter';
+  var help = document.createElement('div'); help.id = 'max-help';
   help.textContent = '← → navigate · o overview';
   body.appendChild(counter); body.appendChild(help);
   function show(k) {

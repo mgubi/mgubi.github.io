@@ -23,5 +23,5 @@ body.deck, body.overview { background: var(--color-surface); color: var(--color-
 body.deck div.toggle, body.overview div.toggle { background: var(--color-background); }
 .slide-title { color: var(--color-title); border-color: var(--color-title); }
 font[color="#800000"], font[color="#620000"] { color: var(--color-title); }
-font[color="#707070"], #cqft-counter, #cqft-help { color: var(--color-muted); }
+font[color="#707070"], #max-counter, #max-help { color: var(--color-muted); }
 @media print { .cqft-course-nav { display: none; } }

@@ -113,15 +113,7 @@
   At the end of Lecture<nbsp>4 we had, at each lattice cutoff <math|N>, the
   exact system (Theorem<nbsp><hlink|11.6|cqft_lecture4.tm#thm:YZ>)
 
-  <\equation>
-    <label|eq:YZ>
-
-    <\aligned>
-      <tformat|<table|<row|<cell|\<mathd\>Y<rsub|q>>|<cell|=<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+H<rsub|q><around|(|Y<rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>,>>|<row|<cell|\<mathd\>Z<rsub|q>>|<cell|=-<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+\<Xi\><rsub|q><space|0.17em>\<mathd\>W<rsub|q>,>>>>
-    </aligned>
-
-    <space|2em>Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0,
-  </equation>
+  <align|<tformat|<table|<row|<cell|\<mathd\>Y<rsub|q>>|<cell|=<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+H<rsub|q><around|(|Y<rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>,>>|<row|<cell|\<mathd\>Z<rsub|q>>|<cell|=-<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+\<Xi\><rsub|q><space|0.17em>\<mathd\>W<rsub|q>,<space|2em>Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0,<eq-number><label|eq:YZ>>>>>>
 
   where <math|Y> is the approximate forecast built from the explicit action
   <math|<wide|\<Gamma\>|\<bar\>><rsub|q>>, <math|Z=\<psi\>-Y> is its error,
@@ -275,16 +267,10 @@
   all pointwise in space, with <math|r<rsub|q>=<around|(|q/\<gamma\>|)><rsup|1/2>>.
   The three random energies are
 
-  <\equation>
-    <label|eq:energies>
-
-    <\aligned>
-      <tformat|<table|<row|<cell|E<rsub|T>>|<cell|=<frac|1|\<gamma\>>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|1/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>q>|<cell|>|<cell|<text|(backward
-      energy)>,>>|<row|<cell|J<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*<around*|[|q*<around|\<\|\|\>|w<rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>|\<\|\|\>>*w<rsub|q>*<around|\<\|\|\>|<rsub|6><rsup|6>+\<gamma\>|\<\|\|\>>*t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(large-field
-      action)>,>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2>|\<\|\|\>>*\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(Gaussian
-      tails)>.>>>>
-    </aligned>
-  </equation>
+  <align|<tformat|<table|<row|<cell|E<rsub|T>>|<cell|=<frac|1|\<gamma\>>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|1/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>q>|<cell|>|<cell|<text|(backward
+  energy)>,>>|<row|<cell|J<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*<around*|[|q*<around|\<\|\|\>|w<rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>|\<\|\|\>>*w<rsub|q>*<around|\<\|\|\>|<rsub|6><rsup|6>+\<gamma\>|\<\|\|\>>*t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(large-field
+  action)>,>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2>|\<\|\|\>>*\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(Gaussian
+  tails)>.<eq-number><label|eq:energies>>>>>>
 
   Only <em|thresholded> sixth powers are integrated over all scales:
   <math|\<bbb-E\><around|\<\|\|\>|X<rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<approx\>q<rsup|3/2>>
@@ -930,14 +916,14 @@
   <\collection>
     <associate|auto-1|<tuple|?|2>>
     <associate|auto-10|<tuple|15.1|4>>
-    <associate|auto-11|<tuple|1|6>>
+    <associate|auto-11|<tuple|1|5>>
     <associate|auto-12|<tuple|15.2|6>>
-    <associate|auto-13|<tuple|15.4|7>>
+    <associate|auto-13|<tuple|15.4|6>>
     <associate|auto-14|<tuple|16|7>>
     <associate|auto-15|<tuple|16.1|7>>
     <associate|auto-16|<tuple|16.2|7>>
     <associate|auto-17|<tuple|16.3|8>>
-    <associate|auto-18|<tuple|16.4|9>>
+    <associate|auto-18|<tuple|16.4|8>>
     <associate|auto-19|<tuple|16.4|9>>
     <associate|auto-2|<tuple|1|2>>
     <associate|auto-20|<tuple|16.3|9>>
@@ -957,21 +943,21 @@
     <associate|eq:YZ|<tuple|1|2>>
     <associate|eq:backward|<tuple|16.3|8>>
     <associate|eq:elementary|<tuple|15.3|5>>
-    <associate|eq:energies|<tuple|14.6|4>>
+    <associate|eq:energies|<tuple|14.6|3>>
     <associate|eq:energy|<tuple|16.4|8>>
     <associate|eq:forward|<tuple|15.4|6>>
     <associate|eq:hardy|<tuple|14.7|4>>
     <associate|eq:propagator|<tuple|16.1|7>>
     <associate|eq:representation|<tuple|16.2|7>>
-    <associate|eq:scalar|<tuple|15.1|5>>
-    <associate|eq:scalar-forward|<tuple|15.2|5>>
+    <associate|eq:scalar|<tuple|15.1|4>>
+    <associate|eq:scalar-forward|<tuple|15.2|4>>
     <associate|eq:thresholds|<tuple|14.5|3>>
-    <associate|eq:uv-stability|<tuple|16.5|9>>
+    <associate|eq:uv-stability|<tuple|16.5|8>>
     <associate|eq:volterra|<tuple|14.4|3>>
     <associate|lem:hardy|<tuple|14.2|4>>
-    <associate|lem:pre|<tuple|14.1|3>>
+    <associate|lem:pre|<tuple|14.1|2>>
     <associate|lem:representation|<tuple|16.1|7>>
-    <associate|lem:scalar-forward|<tuple|15.1|5>>
+    <associate|lem:scalar-forward|<tuple|15.1|4>>
     <associate|prop:backward|<tuple|16.2|8>>
     <associate|prop:forward|<tuple|15.3|6>>
     <associate|sec:backward|<tuple|16|7>>
