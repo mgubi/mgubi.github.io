@@ -13,16 +13,105 @@
 
   <notes-abstract|Things I teach & have taught.>
 
-  <subsection*|Current lecture courses (2026)>
+  <with|font-series|bold|Contents.> <hlink|Lecture
+  series|#sec:lecture-series> \<cdot\> <hlink|Oxford (2022\U)|#sec:oxford>
+  \<cdot\> <hlink|Bonn (2015\U2022)|#sec:bonn> \<cdot\> <hlink|Paris
+  Dauphine (2008\U2015)|#sec:dauphine> \<cdot\> <hlink|Paris XI
+  (2006\U2008)|#sec:paris-xi>
+
+  <subsection*|Lecture series><label|sec:lecture-series>
 
   <\itemize>
     <item><notes-link|A constructive introduction to quantum field
     theory|lectures-constructive-qft-sissa-2026.tm> \U SISSA,
     20 October--6 November 2026. Part of the <hlink|Probability and
     Stochastic Analysis Trimester Programme|https://sites.google.com/view/probsissa>.
+
+    <item>Euclidean fields via stochastic analysis \U course at the RIMS
+    Spring Workshop \PThe Mathematical Roads to Quantum Field Theory\Q,
+    Kyoto, 13--17 April 2026
+    (<hlink|url|https://sites.google.com/view/rims-2026-mrqft/events>).
+    Lecture notes: <em|The FBSDE approach to stochastic quantisation>
+    [<notes-store|PDF|notes-fbsde-stochastic-quantisation-kyoto-2026.pdf>].
+
+    <item><notes-link|A stochastic analysis perspective on Euclidean
+    fields|lectures-euclidean-fields-st-flour-2025.tm> \U 53rd Saint-Flour
+    Probability Summer School, 30 June--12 July 2025. Lecture notes and
+    recordings.
+
+    <item>Minicourse in Pavia, June 2025.
+
+    <item>Minicourse at the GSSI Intensive Trimester \PParticles, Fluids and
+    Patterns: Analytical and Computational Challenges\Q, L'Aquila, May 2025
+    (<hlink|url|https://trimester2025.math.gssi.it>).
+
+    <item>SLMath Summer Graduate School \PStochastic quantisation\Q,
+    Berkeley, July 2024 (<hlink|url|https://www.slmath.org/summer-schools/1038>).
+    Organisation and lectures. Lecture notes, based on the Milan course:
+    week 1 [<notes-store|PDF|notes-slmath-2024-week-1.pdf>], week 2
+    [<notes-store|PDF|notes-slmath-2024-week-2.pdf>]; notes of the first
+    lecture of week 2, on discrete Besov spaces
+    [<notes-store|PDF|notes-slmath-2024-week-2-lecture-1.pdf>].
+
+    <item>Constructive stochastic quantization \U CIME summer school
+    \PStatistical Mechanics and Stochastic PDEs\Q, Cetraro, September 2023
+    (<hlink|url|https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2023/statistical-mechanics-and-stochastic-pde>).
+    Slides: [<notes-store|PDF|talk-cetraro-2023.pdf>]. Lecture notes in
+    <em|Statistical Mechanics and Stochastic PDEs: Cetraro, Italy 2023>,
+    Lecture Notes in Mathematics 2401, Springer, 2026 (forthcoming).
+
+    <item>Facets of stochastic quantisation \U Online Open Probability
+    School (OOPS), September 2021. Recordings: <hlink|Lecture
+    1|https://www.youtube.com/watch?v=qyRbCFg0Hcc>, <hlink|Lecture
+    2|https://www.youtube.com/watch?v=uT9sFfhv7wA>, <hlink|Lecture
+    3|https://www.youtube.com/watch?v=t8xLfHNNlHg>. Slides:
+    [<notes-store|1|oops-sq-lecture-1.pdf>] [<notes-store|2|oops-sq-lecture-2.pdf>]
+    [<notes-store|3|oops-sq-lecture-3.pdf>].
+
+    <item><notes-link|Stochastic quantization of Euclidean quantum field
+    theories|lectures-sq-ws20-21.tm> \U Graduate school of the University of
+    Milan, 15--25 February 2021 (online). Lecture notes and scripts.
+
+    <item>Workshop for students (6 hours) at the Fields Medal Symposium in
+    honour of Martin Hairer, Toronto, 2017.
+
+    <item>Minicourse at the Hausdorff School \PRecent Development in Singular
+    Stochastic PDEs\Q, Bonn, 20--24 February 2017
+    (<hlink|url|https://www.mathematics.uni-bonn.de/hsm-school/programs/schools/hsm-special-topic-schools/hs_2017_02_20>).
+
+    <item>Energy solutions for the stationary KPZ equation \U CIME summer
+    school \PSingular Random Dynamics\Q, Cetraro, 22--26 August 2016.
+    Lecture notes in <hlink|<em|Singular Random
+    Dynamics>|https://doi.org/10.1007/978-3-030-29545-5_2>, Lecture Notes in
+    Mathematics 2253, Springer, 2019.
+
+    <item>Minicourse at the winter school \PRecent Breakthroughs in
+    Singular SPDEs\Q, Milan, 2015. Slides: <em|Lectures on paracontrolled
+    distributions with applications to singular SPDEs>
+    [<notes-store|PDF|slides-milan-2015.pdf>].
+
+    <item>Course at the 18th Escola Brasileira de Probabilidade, Mambucaba,
+    2014. Lecture notes, with Nicolas Perkowski: <hlink|<em|Lectures on
+    singular stochastic PDEs>|https://doi.org/10.21711/217504322015/em291>,
+    Ensaios Matemáticos 29, Sociedade Brasileira de Matemática, 2015.
+
+    <item>Minicourse at the Centro di Ricerca Matematica Ennio De Giorgi,
+    Pisa, 2014.
+
+    <item>Minicourses in Marseille, Berlin and Rome, 2012. Notes of the
+    Berlin minicourse (December 2012): <em|Controlled paths and
+    applications> [<notes-store|PDF|notes-berlin-lectures-2012.pdf>].
+
+    <item>Lectures on large deviations at the Scuola Normale Superiore,
+    Pisa, 2012. Lecture notes: <em|Notes on large deviations,
+    <math|\<Gamma\>>-convergence and entropy>
+    [<notes-store|PDF|notes-large-deviations-pisa-2012.pdf>].
+
+    <item>Minicourse on rough paths, CMLS, École Polytechnique, Palaiseau,
+    2009.
   </itemize>
 
-  <subsection*|Past lecture courses and seminars in Oxford (2022\U)>
+  <subsection*|Past lecture courses and seminars in Oxford (2022\U)><label|sec:oxford>
 
   <\itemize>
     <item>C8.1 Stochastic Differential Equations (MT24)
@@ -39,7 +128,7 @@
     [<hlink|url|https://courses.maths.ox.ac.uk/course/view.php?id=699>]
   </itemize>
 
-  <subsection*|Past lecture courses and seminars in Bonn (2015\U2022)>
+  <subsection*|Past lecture courses and seminars in Bonn (2015\U2022)><label|sec:bonn>
 
   <\itemize>
     <item>Course: Stochastic Analysis (SS22)
@@ -58,9 +147,6 @@
 
     <item>Master seminar: Nonperturbative renormalization group (WS2021)
     (<notes-link|link|seminar-renormalization-group-ws20-21.tm>)
-
-    <item>Course: Stochastic quantization of Euclidean quantum
-    field<nbsp>theories (WS2021) (<notes-link|link|lectures-sq-ws20-21.tm>)
 
     <item>Course: Einfürung in die Wahrscheinlichkeitstheorie
     (WS2021)<nbsp>(<notes-link|link|lectures-intro-probability-ws20-21.tm>)
@@ -110,7 +196,7 @@
   </itemize>
 
   <subsection*|Past lecture courses and seminars in Paris Dauphine
-  (2008\U2015)>
+  (2008\U2015)><label|sec:dauphine>
 
   Année 2014/2015
 
@@ -198,7 +284,7 @@
     MMD)|teaching-dauphine-08-09.tm#eac>
   </itemize>
 
-  <subsection*|Past lecture courses and seminars in Paris XI (2006\U2008)>
+  <subsection*|Past lecture courses and seminars in Paris XI (2006\U2008)><label|sec:paris-xi>
 
   \;
 </body>

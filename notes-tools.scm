@@ -21,11 +21,16 @@
 ;; not execute the plugin's initialisation, so load them explicitly.
 (use-modules (max-html fixes))
 
-;; The SISSA materials have their own reading/presentation styles and use
-;; MathJax, like the author's standalone exports. Keep this choice local to
-;; these documents instead of changing the export of the rest of the site.
+;; Course materials (SISSA 2026, Saint-Flour 2025) have their own reading/
+;; presentation styles and use MathJax, like the author's standalone exports.
+;; Keep this choice local to these documents instead of changing the export
+;; of the rest of the site.
+(define (course-material? file)
+  (or (string-occurs? "/sissa-2026/" file)
+      (string-occurs? "/st-flour-2025/" file)))
+
 (tm-define (tmweb-convert-file tm-file html-file)
-  (:require (string-occurs? "/sissa-2026/" (url->system tm-file)))
+  (:require (course-material? (url->system tm-file)))
   (let ((saved-mathjax (get-preference "texmacs->html:mathjax"))
         (saved-mathml (get-preference "texmacs->html:mathml")))
     (dynamic-wind
@@ -135,7 +140,8 @@
           (not (or (equal? fname "main.tm") 
                    (equal? fname "list-articles.tm")
                    ;; Course supplements are linked from their course page.
-                   (string-starts? fname "teaching/sissa-2026/")))))
+                   (string-starts? fname "teaching/sissa-2026/")
+                   (string-starts? fname "teaching/st-flour-2025/")))))
     (map system->url
          (command-lines "find" (url->system dir) "-type" "f"
                         "-name" "*.tm" "-print")))))

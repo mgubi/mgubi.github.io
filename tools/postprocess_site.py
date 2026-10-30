@@ -309,20 +309,32 @@ def restore_course_equation_anchors(text: str, source: Path) -> str:
     return re.sub(r'<table\b[^>]*>.*?</table>', restore, text, flags=re.S)
 
 
+def course_material(relative: str) -> tuple[str, str, str] | None:
+    """Title, course page and link label of a standalone course document."""
+    material = re.fullmatch(r'teaching/sissa-2026/cqft_(notes_L|slides_L|lecture)([1-6])\.html', relative)
+    if material:
+        kind = 'slides' if material[1] == 'slides_L' else 'notes'
+        return (f'Constructive quantum field theory — Lecture {material[2]} ({kind})',
+                '../lectures-constructive-qft-sissa-2026.html#auto-3', 'SISSA lectures')
+    if relative == 'teaching/st-flour-2025/euclidean-fields-notes.html':
+        return ('A stochastic analysis perspective on Euclidean fields — Saint-Flour 2025 (notes)',
+                '../lectures-euclidean-fields-st-flour-2025.html', 'Saint-Flour lectures')
+    return None
+
+
 def initial_transform(path: Path) -> str:
     relative = path.relative_to(DOCS).as_posix()
     text = decode_export(path.read_bytes(), path)
-    material = re.fullmatch(r'teaching/sissa-2026/cqft_(notes_L|slides_L|lecture)([1-6])\.html', relative)
+    material = course_material(relative)
     if material:
         # Preserve TeXmacs' standalone presentation/TOC structure. In
         # particular, legacy font wrappers are used by the supplied TOC CSS.
-        kind = 'slides' if material[1] == 'slides_L' else 'notes'
-        title = f'Constructive quantum field theory — Lecture {material[2]} ({kind})'
+        title, course, label = material
         text = restore_course_equation_anchors(text, ROOT / 'src' / Path(relative).with_suffix('.tm'))
         text = modernize_head(text, relative, title)
         text = modernize_images(text, title, relative)
         if 'class="cqft-page-title"' not in text:
-            text = text.replace('<body>', '<body>\n    <h1 class="cqft-page-title">' + escape_attribute(title) + '</h1>\n    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>', 1)
+            text = text.replace('<body>', '<body>\n    <h1 class="cqft-page-title">' + escape_attribute(title) + '</h1>\n    <nav class="cqft-course-nav" aria-label="Course"><a href="' + course + '">' + label + '</a></nav>', 1)
         text = re.sub(r'</(?:meta|link|img)>', '', text)
         return re.sub(r'[ \t]+(?=\n)', '', text)
     title = page_title(text, relative)

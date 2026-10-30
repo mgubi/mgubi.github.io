@@ -10,6 +10,8 @@ from xml.etree import ElementTree
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# Course supplements, linked from their course page instead of the feed.
+COURSE_MATERIALS = {ROOT / 'src' / 'teaching' / name for name in ('sissa-2026', 'st-flour-2025')}
 FEED = ROOT / "docs" / "notes.atom"
 ENTRY = re.compile(r"<entry>(.*?)</entry>", re.DOTALL)
 
@@ -100,7 +102,7 @@ class FeedDateTests(unittest.TestCase):
             path.relative_to(ROOT / "src").as_posix()
             for path in (ROOT / "src").rglob("*.tm")
             if path.name not in {"main.tm", "list-articles.tm"}
-            and path.parent != ROOT / 'src' / 'teaching' / 'sissa-2026'
+            and path.parent not in COURSE_MATERIALS
         }
         actual = {field(entry, "id").split(":", 2)[-1] for entry in self.entries}
         self.assertEqual(actual, expected)

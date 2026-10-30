@@ -145,7 +145,7 @@ class SiteQualityTests(unittest.TestCase):
 
     def test_legacy_export_markup_is_modernized(self) -> None:
         for path in self.pages:
-            if path.parent == DOCS / 'teaching' / 'sissa-2026':
+            if path.parent in (DOCS / 'teaching' / 'sissa-2026', DOCS / 'teaching' / 'st-flour-2025'):
                 # Standalone course styles intentionally target native wrappers.
                 continue
             text = path.read_text(encoding="utf-8")

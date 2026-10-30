@@ -85,7 +85,8 @@
     [talk]
 
     <item>53rd Probability Summer School, Saint-Flour, July 2025
-    (<hlink|url|https://lmbp.uca.fr/stflour/lectures.html>) [lectures]
+    (<hlink|url|https://lmbp.uca.fr/stflour/lectures.html>)
+    [<notes-link|lectures|../teaching/lectures-euclidean-fields-st-flour-2025.tm>]
 
     <item>Developments in the Mathematical Sciences \U DIMS 2025, Leipzig,
     June 16\U18, 2025
