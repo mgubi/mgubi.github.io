@@ -926,6 +926,63 @@ D^2 F)}_{\text{field coordinate}}
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Brascamp&ndash;Lieb bounds on the conditional covariance
+      </div>
+      <p>
+        Conditional law <font color="#620000">\(\mu^{\phi}_t \propto \mathrm{e}^{-
+        W}\)</font>, <font color="#620000">\(D^2 W = S_t^{- 1} + D^2 V_T\)</font>. Then
+      </p>
+      <center>
+        \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T])^{- 1} \leq
+        \operatorname{Cov}_t \leq
+\mathbb{E}_t [(S_t^{- 1} + D^2 V_T)^{- 1}]
+        .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <strong>Lower:</strong> Cram&eacute;r&ndash;Rao, no convexity
+            needed: <font color="#620000">\(\mathbb{E} [(y - m) \otimes DW] =
+            1\)</font> and Cauchy&ndash;Schwarz.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Upper:</strong> Brascamp&ndash;Lieb (1976), for <font
+            color="#620000">\(D^2 W > 0\)</font>: <font color="#620000">\(\operatorname{Var} (f)
+            \leq \mathbb{E} \langle Df, (D^2 W)^{- 1} Df \rangle\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Equal for quadratic <font color="#620000">\(V_T\)</font>. Via <font color="#620000">\(\operatorname{Cov}_t
+            = S_t - S_t D^2 V_t S_t\)</font>: two-sided bounds on <font color="#620000">\(D^2
+            V_t\)</font>, i.e. on the Wetterich propagator <font color="#620000">\(H_t\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(V_T\)</font> convex <font color="#620000">\(\Rightarrow\)</font>
+            <font color="#620000">\(\operatorname{Cov}_t \leq S_t\)</font>, <font
+            color="#620000">\(D^2 V_t \geq 0\)</font>: convexity propagates along
+            Polchinski. <font color="#620000">\(D^2 V_T \geq \kappa \Rightarrow
+            \operatorname{Cov}_t \leq (S_t^{- 1} +
+\kappa)^{- 1}\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <font color="#620000">\(\Phi^4_3\)</font>: the counterterm <font color="#620000">\(-
+          \gamma_T  \int : \varphi^2 :\)</font> breaks convexity, the upper
+          bound is lost, the conditional law may spread over several wells:
+          the <strong>large-field problem</strong> (clipping and global
+          coercivity, Lecture 5).
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         Stochastic localisation: a picture
       </div>
       <font style="font-size: 90.0%"><p>
@@ -978,6 +1035,53 @@ S_t^{- 1} (x - \psi) \rangle
         (x)\)</font> has Hessian <font color="#620000">\(S_t^{- 1} \text{Cov}_t S_t^{-
         1} > 0\)</font>.
       </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Phase space and Lagrangian graphs
+      </div>
+      <p>
+        Phase space of pairs (field, force) <font color="#620000">\((x, p) \in
+        \mathbb{R}^n \times \mathbb{R}^n\)</font>, symplectic form <font
+        color="#620000">\(\omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d}
+        p_i\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(L\)</font> (dimension <font color="#620000">\(n\)</font>) is
+            <strong>Lagrangian</strong> if <font color="#620000">\(\omega |_L =
+            0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            A graph <font color="#620000">\(p = F (x)\)</font> is Lagrangian <font
+            color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(DF\)</font>
+            symmetric <font color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(F\)</font>
+            is a gradient. <strong>Gradient sector = Lagrangian
+            graphs.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
+            The shear <font color="#620000">\(\Sigma_t (x, p) = (x + S_t p, p)\)</font>
+            is symplectic since <font color="#620000">\(S_t\)</font> is symmetric:
+            <font color="#620000">\(\Sigma_t^{\ast} \omega = \omega + \sum (S_t)_{ij}
+            \mathrm{d} p_j \wedge
+\mathrm{d} p_i = \omega\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          The image of the graph of <font color="#620000">\(- DV_t\)</font> is
+          Lagrangian; as a graph over the forecast <font color="#620000">\(\psi\)</font>
+          it is the graph of a gradient <font color="#620000">\(D \Gamma_t\)</font>,
+          with the Moreau transform as generating function.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1173,6 +1277,59 @@ S_t^{- 1} (y - x) \rangle \right\},\)
         color="#620000">\([t, T]\)</font>; expanding in <font color="#620000">\(V_T\)</font>
         gives exactly the tree diagrams.
       </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Log-Sobolev along the localisation
+      </div>
+      <p>
+        <font color="#620000">\(M_t =\mathbb{E}_t F (\Phi_T) = \int F \mathrm{d}
+        \mu_t^{\Phi_t}\)</font>, <font color="#620000">\(\mathbb{E}F = 1\)</font>.
+        It&ocirc; for <font color="#620000">\(M \log M\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \operatorname{Ent}_{\nu_T} (F) = \frac{1}{2}
+        \mathbb{E} \int_0^T
+\frac{\mathrm{d} \langle M \rangle_t}{M_t}
+        =\operatorname{Ent}
+        (M_t)
++\mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (F) .\)
+      </center>
+      <p>
+        <strong>Multiscale Bakry&ndash;&Eacute;mery</strong>
+        (Bauerschmidt&ndash;Bodineau): if <font color="#620000">\(\dot{Q}_t D^2 V_t
+        \dot{Q}_t + \frac{1}{2}  \ddot{Q}_t \geq \kappa_t
+\dot{Q}_t\)</font>
+        for all <font color="#620000">\(t, \phi\)</font>, then
+      </p>
+      <center>
+        \(\displaystyle \operatorname{Ent}_{\nu_T} (F) \leq \frac{2}{\gamma}
+        \mathbb{E} \|
+\dot{Q}_T^{1 / 2} D \sqrt{F} \|^2, \qquad
+        \frac{1}{\gamma} = \int_0^T
+\mathrm{e}^{- 2 \int_t^T \kappa}
+        \mathrm{d} t.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            Via <font color="#620000">\(D^2 V_t = S_t^{- 1} - S_t^{- 1}
+            \operatorname{Cov}_t S_t^{- 1}\)</font>: an upper bound on <font
+            color="#620000">\(\operatorname{Cov}_t\)</font> in the metric <font color="#620000">\(\dot{R}_t\)</font>,
+            the rate at which conditional variance is resolved.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Entropic stability:</strong> <font color="#620000">\(\dot{R}
+            \operatorname{Cov} \dot{R} \leq \alpha \dot{R}\)</font> on <font
+            color="#620000">\([0, t]\)</font> <font color="#620000">\(\Rightarrow\)</font> <font
+            color="#620000">\(\operatorname{Ent} (F) \leq \mathrm{e}^{\int_0^t
+            \alpha}
+\mathbb{E}\operatorname{Ent}_{\mu_t} (F)\)</font>.
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">

@@ -566,6 +566,42 @@
 
     Gaussian reference: <math|S<rsub|t>*<wide|<with|math-font|cal*|R>|\<dot\>><rsub|t>*S<rsub|t>=<wide|Q|\<dot\>><rsub|t>>.
   </hidden>|<\hidden>
+    <mytitle|Brascamp\ULieb bounds on the conditional covariance>
+
+    Conditional law <math|\<mu\><rsup|\<phi\>><rsub|t>\<propto\>\<mathe\><rsup|-W>>,
+    <math|D<rsup|2>*W=S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>>. Then
+
+    <\equation*>
+      <around*|(|\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>|]>|)><rsup|-1>\<leq\>Cov<rsub|t>\<leq\>\<bbb-E\><rsub|t><around*|[|<around*|(|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>|)><rsup|-1>|]>.
+    </equation*>
+
+    <\itemize>
+      <item><strong|Lower:> Cramér\URao, no convexity needed:
+      <math|\<bbb-E\><around|[|<around|(|y-m|)>\<otimes\>D*W|]>=1> and
+      Cauchy\USchwarz.
+
+      <item><strong|Upper:> Brascamp\ULieb (1976), for
+      <math|D<rsup|2>*W\<gtr\>0>: <math|Var<around|(|f|)>\<leq\>\<bbb-E\><around|\<langle\>|D*f,<around|(|D<rsup|2>*W|)><rsup|-1>*D*f|\<rangle\>>>.
+
+      <item>Equal for quadratic <math|V<rsub|T>>. Via
+      <math|Cov<rsub|t>=S<rsub|t>-S<rsub|t>*D<rsup|2>*V<rsub|t>*S<rsub|t>>:
+      two-sided bounds on <math|D<rsup|2>*V<rsub|t>>, i.e. on the Wetterich
+      propagator <math|H<rsub|t>>.
+
+      <item><math|V<rsub|T>> convex <math|\<Rightarrow\>>
+      <math|Cov<rsub|t>\<leq\>S<rsub|t>>, <math|D<rsup|2>*V<rsub|t>\<geq\>0>:
+      convexity propagates along Polchinski.
+      <math|D<rsup|2>*V<rsub|T>\<geq\>\<kappa\>\<Rightarrow\>Cov<rsub|t>\<leq\><around|(|S<rsub|t><rsup|-1>+\<kappa\>|)><rsup|-1>>.
+    </itemize>
+
+    <\myframed>
+      <math|\<Phi\><rsup|4><rsub|3>>: the counterterm
+      <math|-\<gamma\><rsub|T>*<big|int>:\<varphi\><rsup|2>:> breaks
+      convexity, the upper bound is lost, the conditional law may spread over
+      several wells: the <strong|large-field problem> (clipping and global
+      coercivity, Lecture<nbsp>5).
+    </myframed>
+  </hidden>|<\hidden>
     <mytitle|Stochastic localisation: a picture>
 
     <\with|font-size|0.9>
@@ -607,6 +643,33 @@
     <math|D*V<rsub|t><around|(|x|)>=D*\<Gamma\><rsub|t><around|(|\<psi\>|)>>.
     Well defined: <math|<frac|1|2>*<around|\<langle\>|x,S<rsub|t><rsup|-1>*x|\<rangle\>>-V<rsub|t><around|(|x|)>>
     has Hessian <math|S<rsub|t><rsup|-1><math-up|Cov><rsub|t>S<rsub|t><rsup|-1>\<gtr\>0>.
+  </hidden>|<\hidden>
+    <mytitle|Phase space and Lagrangian graphs>
+
+    Phase space of pairs (field, force) <math|<around|(|x,p|)>\<in\>\<bbb-R\><rsup|n>\<times\>\<bbb-R\><rsup|n>>,
+    symplectic form <math|\<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>>.
+
+    <\itemize>
+      <item><math|L> (dimension <math|n>) is <strong|Lagrangian> if
+      <math|\<omega\><mid|\|><rsub|L>=0>.
+
+      <item>A graph <math|p=F<around|(|x|)>> is Lagrangian
+      <math|\<Leftrightarrow\>> <math|D*F> symmetric
+      <math|\<Leftrightarrow\>> <math|F> is a gradient. <strong|Gradient
+      sector = Lagrangian graphs.>
+
+      <item>Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
+      The shear <math|\<Sigma\><rsub|t><around|(|x,p|)>=<around|(|x+S<rsub|t>*p,p|)>>
+      is symplectic since <math|S<rsub|t>> is symmetric:
+      <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum><around|(|S<rsub|t>|)><rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>.
+    </itemize>
+
+    <\myframed>
+      The image of the graph of <math|-D*V<rsub|t>> is Lagrangian; as a graph
+      over the forecast <math|\<psi\>> it is the graph of a gradient
+      <math|D*\<Gamma\><rsub|t>>, with the Moreau transform as generating
+      function.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|The shear in zero dimensions>
 
@@ -724,6 +787,34 @@
     classical field equation <math|S<rsub|t><rsup|-1>*<around|(|y-x|)>+D*V<rsub|T><around|(|y|)>=0>
     in the shell <math|<around|[|t,T|]>>; expanding in <math|V<rsub|T>> gives
     exactly the tree diagrams.
+  </hidden>|<\hidden>
+    <mytitle|Log-Sobolev along the localisation>
+
+    <math|M<rsub|t>=\<bbb-E\><rsub|t>*F<around|(|\<Phi\><rsub|T>|)>=<big|int>F*\<mathd\>\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>>,
+    <math|\<bbb-E\>*F=1>. Itô for <math|M*log M>:
+
+    <\equation*>
+      Ent<rsub|\<nu\><rsub|T>><around|(|F|)>=<frac|1|2>*\<bbb-E\><big|int><rsub|0><rsup|T><frac|\<mathd\><around|\<langle\>|M|\<rangle\>><rsub|t>|M<rsub|t>>=Ent<around|(|M<rsub|t>|)>+\<bbb-E\>*Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|F|)>.
+    </equation*>
+
+    <strong|Multiscale Bakry\UÉmery> (Bauerschmidt\UBodineau): if
+    <math|<wide|Q|\<dot\>><rsub|t>*D<rsup|2>*V<rsub|t>*<wide|Q|\<dot\>><rsub|t>+<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>\<geq\>\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>>
+    for all <math|t,\<phi\>>, then
+
+    <\equation*>
+      Ent<rsub|\<nu\><rsub|T>><around|(|F|)>\<leq\><frac|2|\<gamma\>>*\<bbb-E\><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|F>|\<\|\|\>><rsup|2>,<space|2em><frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\>>*\<mathd\>t.
+    </equation*>
+
+    <\itemize>
+      <item>Via <math|D<rsup|2>*V<rsub|t>=S<rsub|t><rsup|-1>-S<rsub|t><rsup|-1>*Cov<rsub|t>*S<rsub|t><rsup|-1>>:
+      an upper bound on <math|Cov<rsub|t>> in the metric
+      <math|<wide|R|\<dot\>><rsub|t>>, the rate at which conditional variance
+      is resolved.
+
+      <item><strong|Entropic stability:> <math|<wide|R|\<dot\>>*Cov*<wide|R|\<dot\>>\<leq\>\<alpha\>*<wide|R|\<dot\>>>
+      on <math|<around|[|0,t|]>> <math|\<Rightarrow\>>
+      <math|Ent<around|(|F|)>\<leq\>\<mathe\><rsup|<big|int><rsub|0><rsup|t>\<alpha\>>*\<bbb-E\>*Ent<rsub|\<mu\><rsub|t>><around|(|F|)>>.
+    </itemize>
   </hidden>|<\hidden>
     <vspace*|2.5cm>
 
