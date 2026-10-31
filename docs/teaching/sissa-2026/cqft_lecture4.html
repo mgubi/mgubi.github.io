@@ -261,35 +261,39 @@
         9.2<span style="margin-left: 1em"></span>Infinite volume <span style="margin-left: 5mm"></span> <a href="#auto-42">16</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-43">17</a>
+        <font style="font-size: 92.0%">Differences of free energies. <span style="margin-left: 5mm"></span> <a
+        href="#auto-43">17</a></font>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-44">18</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>Part II. Additional material</b> <span style="margin-left: 5mm"></span> <a href="#auto-44">17</a>
+        <b>Part II. Additional material</b> <span style="margin-left: 5mm"></span> <a href="#auto-45">18</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>10<span style="margin-left: 1em"></span>Algebraic structure of the Polchinski
-        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-45">17</a>
+        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-46">18</a>
       </p>
       <p>
         10.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps <span
-        style="margin-left: 5mm"></span> <a href="#auto-46">17</a>
-      </p>
-      <p>
-        10.2<span style="margin-left: 1em"></span>Perturbation theory and counterterms <span
         style="margin-left: 5mm"></span> <a href="#auto-47">18</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-48">19</a>
+        10.2<span style="margin-left: 1em"></span>Perturbation theory and counterterms <span
+        style="margin-left: 5mm"></span> <a href="#auto-48">19</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-49">20</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>11<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger equations at every
-        scale</b> <span style="margin-left: 5mm"></span> <a href="#auto-49">19</a>
+        scale</b> <span style="margin-left: 5mm"></span> <a href="#auto-50">20</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-50">20</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-51">21</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-51">20</a>
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-52">21</a>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
@@ -2154,13 +2158,127 @@ X^u := X + I (u),\)
       </ol>
     </div>
     <p>
+      <div style="display: inline">
+        <a id="auto-43"></a>
+      </div>
+      <h5>Differences of free energies.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Fix the volume, and let \(u^{\ast}\) be the optimal drift of <class
+        style="font-style: normal">(<a href="#eq:BD">9.1</a>)</class>, so that \(X^{u^{\ast}} = \Phi\) is
+        the Polchinski process (Theorem <a href="#thm:BD">9.1</a>). In <class style="font-style: normal">(<a
+        href="#eq:generating">9.4</a>)</class> the infimum may be taken over perturbations \(u
+        = u^{\ast} + w\) of the optimal drift. The drift enters linearly, so
+        \(X^{u^{\ast} + w} = \Phi + I (w)\) with \(I_t (w) = \int_0^t
+        \dot{Q}_s^{1 / 2} w_s \hspace{0.17em} \mathrm{d} s\), and by the
+        Euler&ndash;Lagrange equation <class style="font-style: normal">(<a href="#eq:EL">9.3</a>)</class>
+        the cross term of the energy is \(\mathbb{E} \int_0^T \langle
+        u^{\ast}_s, w_s \rangle \mathrm{d} s = -\mathbb{E}
+\langle DV_T
+        (\Phi_T), I_T (w) \rangle\). The two extensive infima then cancel
+        exactly, and what is left is a variational problem for the
+        perturbation alone.
+      </div>
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">9.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Variational principle relative to
+        the FBSDE) </strong></class><a id="prop:relative-vp"></a>(formal) Let \(\Phi\) be the
+        Polchinski process, i.e. the solution of the FBSDE <class style="font-style: normal">(<a
+        href="#eq:fbsde-system">7.8</a>)</class> driven by the Brownian motion \(W\), and
+        \(\nu_T\) the law of \(\Phi_T\). For every \(f\) bounded from
+        below,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:relative-vp"></a>\(\displaystyle - \log \int
+          \mathrm{e}^{- f} \mathrm{d} \nu_T = \inf_w \mathbb{E} \left[
+          f
+(\Phi_T + I_T (w)) + B_{V_T} (\Phi_T, I_T (w)) + \frac{1}{2}
+          \int_0^T \|w_s
+\|^2 \mathrm{d} s \right],\)</td>
+          <td align="right">(9.6)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>where the infimum runs over adapted \(w\) with \(\mathbb{E}
+        \int_0^T \|w_s \|^2 \mathrm{d} s < \infty\), and</i>
+      </p>
+      <p>
+        <i><center>
+          \(\displaystyle B_V (\phi, h) := V (\phi + h) - V (\phi) - \langle
+          DV (\phi), h \rangle\)
+        </center></i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>is the Bregman divergence of \(V\). The minimiser satisfies \(w_s =
+        - \dot{Q}_s^{1 / 2} \mathbb{E}_s [Df (\Phi^f_T) + DV_T (\Phi^f_T) -
+        DV_T
+(\Phi_T)]\), with \(\Phi^f = \Phi + I (w)\): the perturbed field
+        solves the FBSDE with terminal potential \(V_T + f\), and its force is
+        that of \(\Phi\) corrected by \(F^f_s - F_s = -\mathbb{E}_s [Df
+        (\Phi^f_T) + DV_T (\Phi^f_T) - DV_T (\Phi_T)]\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>By <class style="font-style: normal">(<a href="#eq:generating">9.4</a>)</class>,
+      the left-hand side is \(\inf_u J_f (u) - J_0 (u^{\ast})\), with \(J_f
+      (u) =\mathbb{E} [f (X^u_T) + V_T (X^u_T) + \frac{1}{2} \int \|u\|^2]\).
+      Writing \(u = u^{\ast} + w\) and expanding \(\frac{1}{2} \|u^{\ast} +
+      w\|^2\), the terms \(V_T (\Phi_T)\) and \(\frac{1}{2} \int \|u^{\ast}
+      \|^2\) cancel against \(J_0 (u^{\ast})\), and the cross term is computed
+      above. The first-order condition in \(w\) is obtained as in <class
+      style="font-style: normal">(<a href="#eq:EL">9.3</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      For a local interaction \(V_T (\varphi) = \int v_T (\varphi (x))
+      \mathrm{d} x\),
+    </p>
+    <center>
+      \(\displaystyle B_{V_T} (\phi, h) = \int b_T (\phi (x), h (x))
+      \mathrm{d} x, \qquad b_T (a, h)
+= v_T (a + h) - v_T (a) - v_T' (a) h,\)
+    </center>
+    <p>
+      and \(b_T (a, 0) = 0\). So every term of <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>
+      is local: there is no free energy and no extensive quantity, only the
+      field \(\Phi\) and the perturbation that \(f\) induces on it. For \(f\)
+      supported in a bounded region one expects the optimal \(w\), and with it
+      \(I (w)\), to decay away from the support, at the rate of the decay of
+      correlations of the measure. Both sides of <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>
+      then make sense in infinite volume, with \(\Phi\) a solution of the
+      infinite-volume FBSDE <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.5</a>)</class>. This
+      suggests the following formal description of the infinite-volume
+      measures (at a fixed ultraviolet cutoff \(T\)):
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <em>an infinite-volume measure is the law of \(\Phi_T\) for a solution
+        \(\Phi\) of <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.5</a>)</class> which satisfies
+        <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>, with \(B = \int b_T
+        \mathrm{d} x\), for all local \(f\).</em>
+      </p>
+    </center>
+    <p>
+      The Laplace functionals in <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>
+      determine the measure, and the condition involves only intensive
+      quantities. When the FBSDE has several solutions, as is expected in the
+      presence of phase transitions, each solution gives a measure with its
+      own variational principle; the perturbations \(w\) of finite energy only
+      probe a given solution locally. For \(\Phi^4_3\) the Bregman term
+      contains the divergent counterterms, and, as for <class style="font-style: normal">(<a href="#eq:generating">9.4</a>)</class>,
+      the change of variables of [<a href="#bib-BG20">BG20</a>] is needed before <class
+      style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class> has bounds uniform in \(T\); in two
+      dimensions, compare the infinite-volume analysis of [<a href="#bib-BG24">BG24</a>].
+    </p>
+    <p>
       The coercive estimates must then be <em>local</em>: one uses weighted
       norms and needs bounds whose constants do not depend on the volume. This
       infrared problem is the analogue, for the scale dynamics, of the
       &ldquo;coming down from infinity&rdquo; estimates for the parabolic
       dynamics.
     </p>
-    <h3 id="auto-43">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-44">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.1</class>.
@@ -2197,15 +2315,33 @@ X^u := X + I (u),\)
         = 4\) term of <class style="font-style: normal">(<a href="#eq:second-order">10.6</a>)</class>.</font>
       </p>
     </div>
-    <h2 id="auto-44">Part II. Additional material<span style="margin-left: 1em"></span></h2>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.3</class>.
+        </strong><class style="font-style: normal"><strong>(The relative variational principle)
+        </strong></class><a id="ex:relative-vp"></a>(a) Derive <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>
+        and the equation for the minimiser. (b) For a Gaussian \(\nu_T\)
+        (quadratic \(V_T\)) and a linear \(f = \langle g, \cdot \rangle\),
+        compute the Bregman term, solve <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>,
+        and recover \(- \log \int \mathrm{e}^{- \langle g, \cdot \rangle}
+        \mathrm{d} \nu_T = \langle
+g, m \rangle - \frac{1}{2}  \langle g,
+        \Sigma g \rangle\), with \(m\) and \(\Sigma\) the mean and covariance.
+        (c) For a local interaction and \(f\) supported in a ball, show that
+        \(B_{V_T}\) only sees the region where \(I (w) \neq 0\), and discuss
+        why <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class> is bounded uniformly in
+        the volume.</font>
+      </p>
+    </div>
+    <h2 id="auto-45">Part II. Additional material<span style="margin-left: 1em"></span></h2>
     <p>
       The following sections complement the main lecture. They develop the
       algebraic and perturbative structure of the Polchinski flow, and the
       Dyson&ndash;Schwinger equations at every scale.
     </p>
-    <h2 id="auto-45"><a id="sec:algebra"></a>10<span style="margin-left: 1em"></span>Algebraic structure of the
+    <h2 id="auto-46"><a id="sec:algebra"></a>10<span style="margin-left: 1em"></span>Algebraic structure of the
     Polchinski flow<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-46">10.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps<span
+    <h3 id="auto-47">10.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps<span
     style="margin-left: 1em"></span></h3>
     <p>
       For a positive covariance \(S\) define the renormalisation map
@@ -2275,7 +2411,7 @@ DV, BDV
       the process \(\Phi\) and the observables at intermediate resolution, but
       not the terminal theory. The flow has no holonomy [<a href="#bib-BCG26">BCG26</a>].
     </p>
-    <h3 id="auto-47"><a id="sec:pert"></a>10.2<span style="margin-left: 1em"></span>Perturbation theory and
+    <h3 id="auto-48"><a id="sec:pert"></a>10.2<span style="margin-left: 1em"></span>Perturbation theory and
     counterterms<span style="margin-left: 1em"></span></h3>
     <p>
       Expanding \(V_t =\mathcal{R}_{Q_{T, t}} (V_T)\) in cumulants of the
@@ -2406,7 +2542,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
       \(\nu_t\) at fixed \(t\) are expected to stay absolutely continuous with
       respect to \(\mu^{Q_t}\), while the terminal one is not.
     </p>
-    <h3 id="auto-48">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-49">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">10.1</class>.
@@ -2443,7 +2579,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         ordering, and the sunset) and vacuum graphs with \(n \leq 3\).</font>
       </p>
     </div>
-    <h2 id="auto-49"><a id="sec:DS"></a>11<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger equations
+    <h2 id="auto-50"><a id="sec:DS"></a>11<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger equations
     at every scale<span style="margin-left: 1em"></span></h2>
     <p>
       Assume now that all the operators involved are functions of \(A\), hence
@@ -2561,7 +2697,7 @@ F_t\). The drift cancels,
       different noise covariance: the martingale \(J_t \hspace{0.17em}
       \mathrm{d} F_t\) in \(\mathrm{d} \eta_t\) is essential [<a href="#bib-BCG26">BCG26</a>].
     </p>
-    <h3 id="auto-50">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-51">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">11.1</class>.
@@ -2584,7 +2720,7 @@ F_t\). The drift cancels,
         of the GFF in Lecture 2.</font>
       </p>
     </div>
-    <h2 id="auto-51">References<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-52">References<span style="margin-left: 1em"></span></h2>
     <dl>
       <p>
         <dt>

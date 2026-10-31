@@ -1529,6 +1529,58 @@ V_0 (0) + \tfrac{1}{2} \mathbb{E}_0
       </p>
     </div>
     <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Differences of free energies
+      </div>
+      <p>
+        Perturb the optimal drift: <font color="#620000">\(u = u^{\ast} + w\)</font>,
+        <font color="#620000">\(X^u = \Phi + I (w)\)</font>, <font color="#620000">\(I_t (w) =
+        \int_0^t \dot{Q}^{1 / 2} w\)</font>. By Euler&ndash;Lagrange, the
+        extensive terms cancel exactly:
+      </p>
+      <center>
+        \(\displaystyle - \log \int \mathrm{e}^{- f} \mathrm{d} \nu_T = \inf_w
+        \mathbb{E} \left[ f
+(\Phi_T + I_T (w)) + B_{V_T} (\Phi_T, I_T (w)) +
+        \frac{1}{2}  \int_0^T \|w\|^2
+\right],\)
+      </center>
+      <p>
+        <font color="#620000">\(B_V (\phi, h) = V (\phi + h) - V (\phi) - \langle DV
+        (\phi), h \rangle\)</font>: the <strong>Bregman divergence</strong>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Local interaction: <font color="#620000">\(B = \int b_T (\Phi_T (x), I_T
+            (x)) \mathrm{d} x\)</font>, zero where <font color="#620000">\(I =
+            0\)</font>: every term is <strong>intensive</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Minimiser: the FBSDE with terminal potential <font color="#620000">\(V_T +
+            f\)</font>, as a <strong>perturbation</strong> of <font color="#620000">\(\Phi\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Makes sense in infinite volume with <font color="#620000">\(\Phi\)</font>
+            solving the infinite-volume FBSDE.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>Formal statement.</strong> Infinite-volume measures <font
+          color="#620000">\(=\)</font> laws of <font color="#620000">\(\Phi_T\)</font> for
+          solutions of the infinite-volume FBSDE satisfying this principle for
+          all local <font color="#620000">\(f\)</font>. Several solutions <font color="#620000">\(\leftrightarrow\)</font>
+          several phases.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
 
       </p>

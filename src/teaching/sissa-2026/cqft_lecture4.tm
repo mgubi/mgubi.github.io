@@ -177,38 +177,42 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-42>>
 
+    <with|par-left|3tab|<with|font-size|0.92|Differences of free energies.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-43>>>
+
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-43>>
+    <no-break><pageref|auto-44>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Part II.
     Additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44><vspace|0.5fn>
+    <no-break><pageref|auto-45><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Algebraic
     structure of the Polchinski flow> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45><vspace|0.5fn>
+    <no-break><pageref|auto-46><vspace|0.5fn>
 
     <with|par-left|1tab|10.1<space|2spc>A semigroup of renormalisation maps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>
+    <no-break><pageref|auto-47>>
 
     <with|par-left|1tab|10.2<space|2spc>Perturbation theory and counterterms
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47>>
+    <no-break><pageref|auto-48>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-48>>
+    <no-break><pageref|auto-49>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Dyson\USchwinger
     equations at every scale> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-49><vspace|0.5fn>
+    <no-break><pageref|auto-50><vspace|0.5fn>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-50>>
+    <no-break><pageref|auto-51>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-51><vspace|0.5fn>
+    <no-break><pageref|auto-52><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -1501,6 +1505,95 @@
     <around|(|\<Phi\>|)><rsub|2>> in<nbsp><cite|BG24>.
   </enumerate-roman>
 
+  <paragraph|Differences of free energies.> Fix the volume, and let
+  <math|u<rsup|\<ast\>>> be the optimal drift of <eqref|eq:BD>, so that
+  <math|X<rsup|u<rsup|\<ast\>>>=\<Phi\>> is the Polchinski process
+  (Theorem<nbsp><reference|thm:BD>). In <eqref|eq:generating> the infimum may
+  be taken over perturbations <math|u=u<rsup|\<ast\>>+w> of the optimal
+  drift. The drift enters linearly, so <math|X<rsup|u<rsup|\<ast\>>+w>=\<Phi\>+I<around|(|w|)>>
+  with <math|I<rsub|t><around|(|w|)>=<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsub|s><rsup|1/2>*w<rsub|s><space|0.17em>\<mathd\>s>,
+  and by the Euler\ULagrange equation <eqref|eq:EL> the cross term of the
+  energy is <math|\<bbb-E\><big|int><rsub|0><rsup|T><around|\<langle\>|u<rsup|\<ast\>><rsub|s>,w<rsub|s>|\<rangle\>>*\<mathd\>s=-\<bbb-E\><around|\<langle\>|D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>,I<rsub|T><around|(|w|)>|\<rangle\>>>.
+  The two extensive infima then cancel exactly, and what is left is a
+  variational problem for the perturbation alone.
+
+  <\proposition>
+    <dueto|Variational principle relative to the
+    FBSDE><label|prop:relative-vp>(formal) Let <math|\<Phi\>> be the
+    Polchinski process, i.e. the solution of the FBSDE
+    <eqref|eq:fbsde-system> driven by the Brownian motion <math|W>, and
+    <math|\<nu\><rsub|T>> the law of <math|\<Phi\><rsub|T>>. For every
+    <math|f> bounded from below,
+
+    <\equation>
+      <label|eq:relative-vp>-log <big|int>\<mathe\><rsup|-f>*\<mathd\>\<nu\><rsub|T>=inf<rsub|w>
+      \<bbb-E\><around*|[|f<around|(|\<Phi\><rsub|T>+I<rsub|T><around|(|w|)>|)>+B<rsub|V<rsub|T>><around|(|\<Phi\><rsub|T>,I<rsub|T><around|(|w|)>|)>+<frac|1|2>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|w<rsub|s>|\<\|\|\>><rsup|2>*\<mathd\>s|]>,
+    </equation>
+
+    where the infimum runs over adapted <math|w> with
+    <math|\<bbb-E\><big|int><rsub|0><rsup|T><around|\<\|\|\>|w<rsub|s>|\<\|\|\>><rsup|2>*\<mathd\>s\<less\>\<infty\>>,
+    and
+
+    <\equation*>
+      B<rsub|V><around|(|\<phi\>,h|)>\<assign\>V<around|(|\<phi\>+h|)>-V<around|(|\<phi\>|)>-<around|\<langle\>|D*V<around|(|\<phi\>|)>,h|\<rangle\>>
+    </equation*>
+
+    is the Bregman divergence of <math|V>. The minimiser satisfies
+    <math|w<rsub|s>=-<wide|Q|\<dot\>><rsub|s><rsup|1/2>*\<bbb-E\><rsub|s><around|[|D*f<around|(|\<Phi\><rsup|f><rsub|T>|)>+D*V<rsub|T><around|(|\<Phi\><rsup|f><rsub|T>|)>-D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>,
+    with <math|\<Phi\><rsup|f>=\<Phi\>+I<around|(|w|)>>: the perturbed field
+    solves the FBSDE with terminal potential <math|V<rsub|T>+f>, and its
+    force is that of <math|\<Phi\>> corrected by
+    <math|F<rsup|f><rsub|s>-F<rsub|s>=-\<bbb-E\><rsub|s><around|[|D*f<around|(|\<Phi\><rsup|f><rsub|T>|)>+D*V<rsub|T><around|(|\<Phi\><rsup|f><rsub|T>|)>-D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>.
+  </proposition>
+
+  <\proof>
+    By <eqref|eq:generating>, the left-hand side is <math|inf<rsub|u>
+    J<rsub|f><around|(|u|)>-J<rsub|0><around|(|u<rsup|\<ast\>>|)>>, with
+    <math|J<rsub|f><around|(|u|)>=\<bbb-E\><around|[|f<around|(|X<rsup|u><rsub|T>|)>+V<rsub|T><around|(|X<rsup|u><rsub|T>|)>+<frac|1|2><big|int><around|\<\|\|\>|u|\<\|\|\>><rsup|2>|]>>.
+    Writing <math|u=u<rsup|\<ast\>>+w> and expanding
+    <math|<frac|1|2><around|\<\|\|\>|u<rsup|\<ast\>>+w|\<\|\|\>><rsup|2>>,
+    the terms <math|V<rsub|T><around|(|\<Phi\><rsub|T>|)>> and
+    <math|<frac|1|2><big|int><around|\<\|\|\>|u<rsup|\<ast\>>|\<\|\|\>><rsup|2>>
+    cancel against <math|J<rsub|0><around|(|u<rsup|\<ast\>>|)>>, and the
+    cross term is computed above. The first-order condition in <math|w> is
+    obtained as in <eqref|eq:EL>.
+  </proof>
+
+  For a local interaction <math|V<rsub|T><around|(|\<varphi\>|)>=<big|int>v<rsub|T><around|(|\<varphi\><around|(|x|)>|)>*\<mathd\>x>,
+
+  <\equation*>
+    B<rsub|V<rsub|T>><around|(|\<phi\>,h|)>=<big|int>b<rsub|T><around|(|\<phi\><around|(|x|)>,h<around|(|x|)>|)>*\<mathd\>x,<space|2em>b<rsub|T><around|(|a,h|)>=v<rsub|T><around|(|a+h|)>-v<rsub|T><around|(|a|)>-v<rsub|T><rprime|'><around|(|a|)>*h,
+  </equation*>
+
+  and <math|b<rsub|T><around|(|a,0|)>=0>. So every term of
+  <eqref|eq:relative-vp> is local: there is no free energy and no extensive
+  quantity, only the field <math|\<Phi\>> and the perturbation that <math|f>
+  induces on it. For <math|f> supported in a bounded region one expects the
+  optimal <math|w>, and with it <math|I<around|(|w|)>>, to decay away from
+  the support, at the rate of the decay of correlations of the measure. Both
+  sides of <eqref|eq:relative-vp> then make sense in infinite volume, with
+  <math|\<Phi\>> a solution of the infinite-volume FBSDE
+  <eqref|eq:fbsde-inf>. This suggests the following formal description of the
+  infinite-volume measures (at a fixed ultraviolet cutoff <math|T>):
+
+  <\padded-center>
+    <em|an infinite-volume measure is the law of <math|\<Phi\><rsub|T>> for a
+    solution <math|\<Phi\>> of <eqref|eq:fbsde-inf> which satisfies
+    <eqref|eq:relative-vp>, with <math|B=<big|int>b<rsub|T>*\<mathd\>x>, for
+    all local <math|f>.>
+  </padded-center>
+
+  The Laplace functionals in <eqref|eq:relative-vp> determine the measure,
+  and the condition involves only intensive quantities. When the FBSDE has
+  several solutions, as is expected in the presence of phase transitions,
+  each solution gives a measure with its own variational principle; the
+  perturbations <math|w> of finite energy only probe a given solution
+  locally. For <math|\<Phi\><rsup|4><rsub|3>> the Bregman term contains the
+  divergent counterterms, and, as for <eqref|eq:generating>, the change of
+  variables of<nbsp><cite|BG20> is needed before <eqref|eq:relative-vp> has
+  bounds uniform in <math|T>; in two dimensions, compare the infinite-volume
+  analysis of<nbsp><cite|BG24>.
+
   The coercive estimates must then be <em|local>: one uses weighted norms and
   needs bounds whose constants do not depend on the volume. This infrared
   problem is the analogue, for the scale dynamics, of the \Pcoming down from
@@ -1526,6 +1619,20 @@
 
     which diverges linearly in <math|T>. Relate this to the <math|k=4> term
     of <eqref|eq:second-order>.
+  </exercise>
+
+  <\exercise>
+    <dueto|The relative variational principle><label|ex:relative-vp>(a)
+    Derive <eqref|eq:relative-vp> and the equation for the minimiser. (b) For
+    a Gaussian <math|\<nu\><rsub|T>> (quadratic <math|V<rsub|T>>) and a
+    linear <math|f=<around|\<langle\>|g,\<cdummy\>|\<rangle\>>>, compute the
+    Bregman term, solve <eqref|eq:relative-vp>, and recover <math|-log
+    <big|int>\<mathe\><rsup|-<around|\<langle\>|g,\<cdummy\>|\<rangle\>>>*\<mathd\>\<nu\><rsub|T>=<around|\<langle\>|g,m|\<rangle\>>-<frac|1|2>*<around|\<langle\>|g,\<Sigma\>*g|\<rangle\>>>,
+    with <math|m> and <math|\<Sigma\>> the mean and covariance. (c) For a
+    local interaction and <math|f> supported in a ball, show that
+    <math|B<rsub|V<rsub|T>>> only sees the region where
+    <math|I<around|(|w|)>\<neq\>0>, and discuss why <eqref|eq:relative-vp> is
+    bounded uniformly in the volume.
   </exercise>
 
   <section*|Part II. Additional material>
@@ -1958,65 +2065,66 @@
     <associate|auto-40|<tuple|2|16>>
     <associate|auto-41|<tuple|3|16>>
     <associate|auto-42|<tuple|9.2|16>>
-    <associate|auto-43|<tuple|iii|17>>
-    <associate|auto-44|<tuple|9.2|17>>
-    <associate|auto-45|<tuple|10|17>>
-    <associate|auto-46|<tuple|10.1|17>>
-    <associate|auto-47|<tuple|10.2|18>>
-    <associate|auto-48|<tuple|<with|mode|<quote|math>|\<bullet\>>|19>>
-    <associate|auto-49|<tuple|11|19>>
+    <associate|auto-43|<tuple|1|17>>
+    <associate|auto-44|<tuple|9.6|18>>
+    <associate|auto-45|<tuple|9.3|18>>
+    <associate|auto-46|<tuple|10|18>>
+    <associate|auto-47|<tuple|10.1|18>>
+    <associate|auto-48|<tuple|10.2|19>>
+    <associate|auto-49|<tuple|<with|mode|<quote|math>|\<bullet\>>|20>>
     <associate|auto-5|<tuple|3|3>>
-    <associate|auto-50|<tuple|11.2|20>>
-    <associate|auto-51|<tuple|11.2|20>>
+    <associate|auto-50|<tuple|11|20>>
+    <associate|auto-51|<tuple|11.2|21>>
+    <associate|auto-52|<tuple|11.2|21>>
     <associate|auto-6|<tuple|7|3>>
     <associate|auto-7|<tuple|7.1|3>>
     <associate|auto-8|<tuple|7.2|4>>
     <associate|auto-9|<tuple|7.1|5>>
-    <associate|bib-ALZ06|<tuple|ALZ06|20>>
-    <associate|bib-BB19|<tuple|BB19|20>>
-    <associate|bib-BBD24|<tuple|BBD24|20>>
-    <associate|bib-BCG26|<tuple|BCG26|20>>
-    <associate|bib-BD98|<tuple|BD98|20>>
-    <associate|bib-BG20|<tuple|BG20|20>>
-    <associate|bib-BG21b|<tuple|BG21b|20>>
-    <associate|bib-BG24|<tuple|BG24|20>>
-    <associate|bib-BK87|<tuple|BK87|20>>
-    <associate|bib-BL76|<tuple|BL76|20>>
-    <associate|bib-BTW02|<tuple|BTW02|20>>
-    <associate|bib-Bis73|<tuple|Bis73|20>>
-    <associate|bib-Eld23|<tuple|Eld23|20>>
-    <associate|bib-GH21|<tuple|GH21|21>>
-    <associate|bib-GJS75|<tuple|GJS75|21>>
-    <associate|bib-MY99|<tuple|MY99|21>>
-    <associate|bib-Mor94|<tuple|Mor94|21>>
-    <associate|bib-PBGM62|<tuple|PBGM62|21>>
-    <associate|bib-Pen90|<tuple|Pen90|21>>
-    <associate|bib-Pol84|<tuple|Pol84|21>>
-    <associate|bib-Sal99|<tuple|Sal99|21>>
-    <associate|bib-Wet93|<tuple|Wet93|21>>
-    <associate|bib-YZ99|<tuple|YZ99|21>>
+    <associate|bib-ALZ06|<tuple|ALZ06|21>>
+    <associate|bib-BB19|<tuple|BB19|21>>
+    <associate|bib-BBD24|<tuple|BBD24|21>>
+    <associate|bib-BCG26|<tuple|BCG26|21>>
+    <associate|bib-BD98|<tuple|BD98|21>>
+    <associate|bib-BG20|<tuple|BG20|21>>
+    <associate|bib-BG21b|<tuple|BG21b|21>>
+    <associate|bib-BG24|<tuple|BG24|21>>
+    <associate|bib-BK87|<tuple|BK87|21>>
+    <associate|bib-BL76|<tuple|BL76|21>>
+    <associate|bib-BTW02|<tuple|BTW02|21>>
+    <associate|bib-Bis73|<tuple|Bis73|21>>
+    <associate|bib-Eld23|<tuple|Eld23|21>>
+    <associate|bib-GH21|<tuple|GH21|22>>
+    <associate|bib-GJS75|<tuple|GJS75|22>>
+    <associate|bib-MY99|<tuple|MY99|22>>
+    <associate|bib-Mor94|<tuple|Mor94|22>>
+    <associate|bib-PBGM62|<tuple|PBGM62|22>>
+    <associate|bib-Pen90|<tuple|Pen90|22>>
+    <associate|bib-Pol84|<tuple|Pol84|22>>
+    <associate|bib-Sal99|<tuple|Sal99|22>>
+    <associate|bib-Wet93|<tuple|Wet93|22>>
+    <associate|bib-YZ99|<tuple|YZ99|22>>
     <associate|eq:BD|<tuple|9.1|15>>
-    <associate|eq:DS-scale|<tuple|11.2|19>>
-    <associate|eq:DS-terminal|<tuple|11.3|19>>
+    <associate|eq:DS-scale|<tuple|11.2|20>>
+    <associate|eq:DS-terminal|<tuple|11.3|20>>
     <associate|eq:EL|<tuple|9.3|16>>
     <associate|eq:F-gradient|<tuple|8.10|11>>
     <associate|eq:Gt|<tuple|7.9|6>>
-    <associate|eq:PB|<tuple|10.3|17>>
-    <associate|eq:RG-map|<tuple|10.1|17>>
+    <associate|eq:PB|<tuple|10.3|18>>
+    <associate|eq:RG-map|<tuple|10.1|18>>
     <associate|eq:Vt|<tuple|7.3|3>>
     <associate|eq:burgers|<tuple|7.12|6>>
     <associate|eq:constrained|<tuple|8.15|13>>
     <associate|eq:coord|<tuple|8.5|9>>
     <associate|eq:cov-dynamics|<tuple|8.9|10>>
-    <associate|eq:cumulants|<tuple|10.4|18>>
-    <associate|eq:eta|<tuple|11.1|19>>
+    <associate|eq:cumulants|<tuple|10.4|19>>
+    <associate|eq:eta|<tuple|11.1|20>>
     <associate|eq:exp-regulator|<tuple|8.14|13>>
     <associate|eq:fbsde|<tuple|7.7|4>>
     <associate|eq:fbsde-inf|<tuple|9.5|16>>
     <associate|eq:fbsde-system|<tuple|7.8|5>>
-    <associate|eq:field-eq-scale|<tuple|11.4|19>>
-    <associate|eq:first-order|<tuple|10.5|18>>
-    <associate|eq:gammaT|<tuple|10.7|18>>
+    <associate|eq:field-eq-scale|<tuple|11.4|20>>
+    <associate|eq:first-order|<tuple|10.5|19>>
+    <associate|eq:gammaT|<tuple|10.7|19>>
     <associate|eq:generating|<tuple|9.4|16>>
     <associate|eq:hopf-lax|<tuple|8.16|13>>
     <associate|eq:kolmogorov|<tuple|7.10|6>>
@@ -2029,9 +2137,10 @@
     <associate|eq:polchinski|<tuple|7.6|4>>
     <associate|eq:psi|<tuple|8.2|9>>
     <associate|eq:psi-noise|<tuple|8.3|9>>
+    <associate|eq:relative-vp|<tuple|9.6|17>>
     <associate|eq:response|<tuple|8.6|9>>
-    <associate|eq:second-order|<tuple|10.6|18>>
-    <associate|eq:semigroup|<tuple|10.2|17>>
+    <associate|eq:second-order|<tuple|10.6|19>>
+    <associate|eq:semigroup|<tuple|10.2|18>>
     <associate|eq:shear|<tuple|8.1|8>>
     <associate|eq:tangent|<tuple|7.11|6>>
     <associate|eq:transformed-fbsde|<tuple|8.7|9>>
@@ -2042,15 +2151,16 @@
     <associate|ex:1PI|<tuple|8.7|15>>
     <associate|ex:brascamp-lieb|<tuple|8.10|15>>
     <associate|ex:characteristics|<tuple|8.2|15>>
-    <associate|ex:commutator|<tuple|10.1|19>>
+    <associate|ex:commutator|<tuple|10.1|20>>
     <associate|ex:doob|<tuple|7.3|7>>
     <associate|ex:envelope|<tuple|8.5|15>>
     <associate|ex:lsi|<tuple|8.11|15>>
     <associate|ex:pontryagin|<tuple|8.1|15>>
-    <associate|ex:power-counting|<tuple|10.3|19>>
+    <associate|ex:power-counting|<tuple|10.3|20>>
     <associate|ex:quadratic|<tuple|7.1|7>>
     <associate|ex:regulators|<tuple|8.9|15>>
-    <associate|ex:sunset|<tuple|10.2|19>>
+    <associate|ex:relative-vp|<tuple|9.3|18>>
+    <associate|ex:sunset|<tuple|10.2|20>>
     <associate|ex:zero-dim|<tuple|7.2|7>>
     <associate|fig:fbsde-flow|<tuple|7.1|5>>
     <associate|fig:localisation|<tuple|8.1|11>>
@@ -2058,21 +2168,22 @@
     <associate|fig:regulator|<tuple|8.3|13>>
     <associate|fig:shear|<tuple|8.2|12>>
     <associate|prop:H-cov|<tuple|8.3|10>>
-    <associate|prop:flat|<tuple|10.1|18>>
+    <associate|prop:flat|<tuple|10.1|19>>
     <associate|prop:marginals|<tuple|7.2|3>>
     <associate|prop:psi|<tuple|8.1|9>>
-    <associate|prop:second-order|<tuple|10.2|18>>
-    <associate|sec:DS|<tuple|11|19>>
-    <associate|sec:algebra|<tuple|10|17>>
+    <associate|prop:relative-vp|<tuple|9.2|17>>
+    <associate|prop:second-order|<tuple|10.2|19>>
+    <associate|sec:DS|<tuple|11|20>>
+    <associate|sec:algebra|<tuple|10|18>>
     <associate|sec:burgers|<tuple|7.4|6>>
     <associate|sec:infinite-volume|<tuple|9.2|16>>
     <associate|sec:lsi|<tuple|8.7|14>>
-    <associate|sec:pert|<tuple|10.2|18>>
+    <associate|sec:pert|<tuple|10.2|19>>
     <associate|sec:polchinski|<tuple|7|3>>
     <associate|sec:variational|<tuple|9|15>>
     <associate|sec:wetterich|<tuple|8|7>>
     <associate|thm:BD|<tuple|9.1|15>>
-    <associate|thm:DS-scale|<tuple|11.1|19>>
+    <associate|thm:DS-scale|<tuple|11.1|20>>
     <associate|thm:fbsde|<tuple|7.4|4>>
     <associate|thm:lsi|<tuple|8.5|14>>
     <associate|thm:polchinski|<tuple|7.3|4>>
@@ -2155,6 +2266,10 @@
       BG21b
 
       GJS75
+
+      BG24
+
+      BG20
 
       BG24
 
@@ -2385,41 +2500,45 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-42>>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Differences of
+      free energies. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-43>>>
+
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-44>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Part
       II. Additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44><vspace|0.5fn>
+      <no-break><pageref|auto-45><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Algebraic
       structure of the Polchinski flow> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45><vspace|0.5fn>
+      <no-break><pageref|auto-46><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|10.1<space|2spc>A semigroup of
       renormalisation maps <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>
+      <no-break><pageref|auto-47>>
 
       <with|par-left|<quote|1tab>|10.2<space|2spc>Perturbation theory and
       counterterms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>
+      <no-break><pageref|auto-48>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-49>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Dyson\USchwinger
       equations at every scale> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49><vspace|0.5fn>
+      <no-break><pageref|auto-50><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>
+      <no-break><pageref|auto-51>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51><vspace|0.5fn>
+      <no-break><pageref|auto-52><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

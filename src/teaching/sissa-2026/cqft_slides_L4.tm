@@ -994,6 +994,39 @@
     <small|<with|color|dark grey|Barashkov\UGubinelli, PMP 2023;
     Glimm\UJaffe\USpencer 1975>>
   </hidden>|<\hidden>
+    <mytitle|Differences of free energies>
+
+    Perturb the optimal drift: <math|u=u<rsup|\<ast\>>+w>,
+    <math|X<rsup|u>=\<Phi\>+I<around|(|w|)>>,
+    <math|I<rsub|t><around|(|w|)>=<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsup|1/2>*w>.
+    By Euler\ULagrange, the extensive terms cancel exactly:
+
+    <\equation*>
+      -log <big|int>\<mathe\><rsup|-f>*\<mathd\>\<nu\><rsub|T>=inf<rsub|w>
+      \<bbb-E\><around*|[|f<around|(|\<Phi\><rsub|T>+I<rsub|T><around|(|w|)>|)>+B<rsub|V<rsub|T>><around|(|\<Phi\><rsub|T>,I<rsub|T><around|(|w|)>|)>+<frac|1|2>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|w|\<\|\|\>><rsup|2>|]>,
+    </equation*>
+
+    <math|B<rsub|V><around|(|\<phi\>,h|)>=V<around|(|\<phi\>+h|)>-V<around|(|\<phi\>|)>-<around|\<langle\>|D*V<around|(|\<phi\>|)>,h|\<rangle\>>>:
+    the <strong|Bregman divergence>.
+
+    <\itemize>
+      <item>Local interaction: <math|B=<big|int>b<rsub|T><around|(|\<Phi\><rsub|T><around|(|x|)>,I<rsub|T><around|(|x|)>|)>*\<mathd\>x>,
+      zero where <math|I=0>: every term is <strong|intensive>.
+
+      <item>Minimiser: the FBSDE with terminal potential <math|V<rsub|T>+f>,
+      as a <strong|perturbation> of <math|\<Phi\>>.
+
+      <item>Makes sense in infinite volume with <math|\<Phi\>> solving the
+      infinite-volume FBSDE.
+    </itemize>
+
+    <\myframed>
+      <strong|Formal statement.> Infinite-volume measures <math|=> laws of
+      <math|\<Phi\><rsub|T>> for solutions of the infinite-volume FBSDE
+      satisfying this principle for all local <math|f>. Several solutions
+      <math|\<leftrightarrow\>> several phases.
+    </myframed>
+  </hidden>|<\hidden>
     <vspace*|2.5cm>
 
     \;
