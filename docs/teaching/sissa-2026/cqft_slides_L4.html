@@ -566,22 +566,26 @@ D^2 F_t), \qquad F_T = - DV_T .\)
       <div class="slide-title">
         Pontryagin's maximum principle
       </div>
-      <font style="font-size: 90.0%"><p>
+      <p>
         Minimise <font color="#620000">\(J (u) = g (x_T) + \int_t^T \ell (x_s, u_s)
         \mathrm{d} s\)</font> subject to <font color="#620000">\(\dot{x} = b (x,
         u)\)</font>, <font color="#620000">\(x_t = x\)</font>.
         <strong>Hamiltonian:</strong>
-      </p><center>
+      </p>
+      <center>
         \(\displaystyle H (x, p, u) = \langle p, b (x, u) \rangle - \ell (x,
         u) .\)
-      </center><p>
+      </center>
+      <p>
         <strong>Pontryagin.</strong> Along an optimal pair there is a
         <strong>costate</strong> <font color="#620000">\(p\)</font> with
-      </p><center>
+      </p>
+      <center>
         \(\displaystyle \dot{x} = \partial_p H, \qquad \dot{p} = - \partial_x
         H, \qquad p_T = - Dg
 (x_T), \qquad u \in \arg \max H (x, p, \cdot) .\)
-      </center><ul>
+      </center>
+      <ul>
         <li>
           <p>
             State forward, costate backward: a <strong>two-point boundary
@@ -590,29 +594,67 @@ D^2 F_t), \qquad F_T = - DV_T .\)
         </li>
         <li>
           <p>
-            First variation: <font color="#620000">\(\delta J = - \int \langle
-            \partial_u H, v \rangle \mathrm{d} s\)</font>. The costate is the
-            Lagrange multiplier of <font color="#620000">\(\dot{x} = b\)</font>.
+            The costate is the Lagrange multiplier of the constraint <font
+            color="#620000">\(\dot{x} = b\)</font>; an optimal control is a critical
+            point of the Hamiltonian.
           </p>
         </li>
         <li>
           <p>
-            Value function <font color="#620000">\(V (t, x)\)</font>: <font color="#620000">\(\partial_t
-            V = H_{\ast} (x, - DV)\)</font>, <font color="#620000">\(H_{\ast} = \max_u
-            H\)</font> (HJB). Hamilton's equations are its characteristics,
-            and
-          </p>
-          <center>
-            \(\displaystyle p_s = - DV (s, x_s) :\)
-          </center>
-          <p>
-            the costate is the force the future exerts on the present.
+            Next: why this holds, and what <font color="#620000">\(p\)</font> is.
           </p>
         </li>
-      </ul><p>
+      </ul>
+      <p>
         <font style="font-size: 84.1%"><font color="#707070">Pontryagin&ndash;Boltyanskii&ndash;Gamkrelidze&ndash;Mishchenko
         1962.</font></font>
-      </p></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Pontryagin: first variation and HJB
+      </div>
+      <p>
+        <strong>First variation.</strong> Perturb <font color="#620000">\(u \to u +
+        \varepsilon v\)</font>; the state varies by <font color="#620000">\(\xi =
+        \partial_{\varepsilon} x\)</font>,
+      </p>
+      <center>
+        \(\displaystyle \dot{\xi} = \partial_x b \xi + \partial_u bv, \qquad
+        \xi_t = 0.\)
+      </center>
+      <p>
+        The costate equation <font color="#620000">\(\dot{p} = - \partial_x H\)</font>
+        is exactly what makes <font color="#620000">\(\frac{\mathrm{d}}{\mathrm{d} s}
+        \langle p, \xi \rangle = \langle \partial_x
+\ell, \xi \rangle +
+        \langle p, \partial_u bv \rangle\)</font>. Integrating, with <font
+        color="#620000">\(p_T = - Dg (x_T)\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} \varepsilon} J (u +
+        \varepsilon v) |_{\varepsilon
+= 0} = - \int_t^T \langle \partial_u H
+        (x_s, p_s, u_s), v_s \rangle \mathrm{d}
+s.\)
+      </center>
+      <p>
+        <strong>HJB.</strong> Dynamic programming over <font color="#620000">\([t, t +
+        \mathrm{d} t]\)</font>:
+      </p>
+      <center>
+        \(\displaystyle V (t, x) = \min_u [\ell \mathrm{d} t + V (t +
+        \mathrm{d} t, x + b \mathrm{d}
+t)] \quad \Longrightarrow \quad
+        \partial_t V = H_{\ast} (x, - DV), \quad
+H_{\ast} = \max_u H.\)
+      </center>
+      <p>
+        Hamilton's equations for <font color="#620000">\(H_{\ast}\)</font> are its
+        characteristics, and along them <font color="#620000">\(p_s = - DV (s,
+        x_s)\)</font>: the costate is the force the future exerts on the
+        present.
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -676,25 +718,17 @@ D^2 F_t), \qquad F_T = - DV_T .\)
         State and costate
       </div>
       <p>
-
-      </p>
-      <p>
         <font color="#620000">\(S_t := Q_T - Q_t\)</font>: the covariance still
         unresolved; <font color="#620000">\(\dot{S}_t = - \dot{Q}_t\)</font>, <font
         color="#620000">\(S_T = 0\)</font>. <font color="#620000">\(\mathrm{d} F_t = \Upsilon_t
         \hspace{0.17em} \mathrm{d} W_t\)</font>.
       </p>
       <p>
-        <b>Pontryagin.</b> Control problem <font color="#620000">\(\mathrm{d} X =
-        \dot{Q}_t^{1 / 2}  (u \hspace{0.17em} \mathrm{d} t +
-        \mathrm{d}
-W)\)</font>, cost <font color="#620000">\(V_T (X_T) + \frac{1}{2}
-        \int \|u\|^2\)</font>. Hamiltonian <font color="#620000">\(\langle p,
-        \dot{Q}_t^{1 / 2} u \rangle - \frac{1}{2} \|u\|^2\)</font> is state
-        independent <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\(\mathrm{d}
-        p_t = \Upsilon_t \hspace{0.17em} \mathrm{d} W_t\)</font>, <font color="#620000">\(p_T
-        = - DV_T (X_T)\)</font>, <font color="#620000">\(u_t = \dot{Q}_t^{1 / 2}
-        p_t\)</font>.
+        Control <font color="#620000">\(\mathrm{d} X = \dot{Q}_t^{1 / 2}  (u
+        \hspace{0.17em} \mathrm{d} t + \mathrm{d}
+W)\)</font>, optimal <font
+        color="#620000">\(u_t = \dot{Q}_t^{1 / 2} p_t\)</font>, costate <font color="#620000">\(p_t
+        = F_t\)</font>.
       </p>
       <p>
         <strong>The field <font color="#620000">\(\Phi\)</font> is the state; the force
@@ -930,7 +964,7 @@ D^2 F)}_{\text{field coordinate}}
       </div>
       <p>
         Conditional law <font color="#620000">\(\mu^{\phi}_t \propto \mathrm{e}^{-
-        W}\)</font>, <font color="#620000">\(D^2 W = S_t^{- 1} + D^2 V_T\)</font>. Then
+        U}\)</font>, <font color="#620000">\(D^2 U = S_t^{- 1} + D^2 V_T\)</font>. Then
       </p>
       <center>
         \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T])^{- 1} \leq
@@ -942,15 +976,15 @@ D^2 F)}_{\text{field coordinate}}
         <li>
           <p>
             <strong>Lower:</strong> Cram&eacute;r&ndash;Rao, no convexity
-            needed: <font color="#620000">\(\mathbb{E} [(y - m) \otimes DW] =
+            needed: <font color="#620000">\(\mathbb{E} [(y - m) \otimes DU] =
             1\)</font> and Cauchy&ndash;Schwarz.
           </p>
         </li>
         <li>
           <p>
             <strong>Upper:</strong> Brascamp&ndash;Lieb (1976), for <font
-            color="#620000">\(D^2 W > 0\)</font>: <font color="#620000">\(\operatorname{Var} (f)
-            \leq \mathbb{E} \langle Df, (D^2 W)^{- 1} Df \rangle\)</font>.
+            color="#620000">\(D^2 U > 0\)</font>: <font color="#620000">\(\operatorname{Var} (f)
+            \leq \mathbb{E} \langle Df, (D^2 U)^{- 1} Df \rangle\)</font>.
           </p>
         </li>
         <li>
@@ -973,10 +1007,11 @@ D^2 F)}_{\text{field coordinate}}
       </ul>
       <div class="slide-block">
         <p>
-          <font color="#620000">\(\Phi^4_3\)</font>: the counterterm <font color="#620000">\(-
-          \gamma_T  \int : \varphi^2 :\)</font> breaks convexity, the upper
-          bound is lost, the conditional law may spread over several wells:
-          the <strong>large-field problem</strong> (clipping and global
+          <font color="#620000">\(\Phi^4_3\)</font>: Wick ordering gives <font color="#620000">\(V_T\)</font>
+          the curvature <font color="#620000">\(- 12 \lambda c_T \to - \infty\)</font>
+          at <font color="#620000">\(\varphi = 0\)</font> (already for <font color="#620000">\(\Phi^4_2\)</font>).
+          The upper bound is lost, the conditional law may spread over several
+          wells: the <strong>large-field problem</strong> (clipping and global
           coercivity, Lecture 5).
         </p>
       </div>
@@ -997,6 +1032,53 @@ D^2 F)}_{\text{field coordinate}}
         open circle: <font color="#620000">\(\Phi_T\)</font>. The conditional law
         localises on one well.
       </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Phase space and Lagrangian graphs
+      </div>
+      <p>
+        Phase space of pairs (field, force) <font color="#620000">\((x, p) \in
+        \mathbb{R}^n \times \mathbb{R}^n\)</font>, symplectic form <font
+        color="#620000">\(\omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d}
+        p_i\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(L\)</font> (dimension <font color="#620000">\(n\)</font>) is
+            <strong>Lagrangian</strong> if <font color="#620000">\(\omega |_L =
+            0\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            A graph <font color="#620000">\(p = F (x)\)</font> is Lagrangian <font
+            color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(DF\)</font>
+            symmetric <font color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(F\)</font>
+            is a gradient. <strong>Gradient sector = Lagrangian
+            graphs.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
+            The shear <font color="#620000">\(\Sigma_t (x, p) = (x + S_t p, p)\)</font>
+            is symplectic since <font color="#620000">\(S_t\)</font> is symmetric:
+            <font color="#620000">\(\Sigma_t^{\ast} \omega = \omega + \sum S_{ij}
+            \mathrm{d} p_j \wedge \mathrm{d}
+p_i = \omega\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          The image of the graph of <font color="#620000">\(- DV_t\)</font> is
+          Lagrangian; as a graph over the forecast <font color="#620000">\(\psi\)</font>
+          it is the graph of <font color="#620000">\(- D \Gamma_t\)</font>, with the
+          Moreau transform as generating function.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1035,53 +1117,6 @@ S_t^{- 1} (x - \psi) \rangle
         (x)\)</font> has Hessian <font color="#620000">\(S_t^{- 1} \text{Cov}_t S_t^{-
         1} > 0\)</font>.
       </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Phase space and Lagrangian graphs
-      </div>
-      <p>
-        Phase space of pairs (field, force) <font color="#620000">\((x, p) \in
-        \mathbb{R}^n \times \mathbb{R}^n\)</font>, symplectic form <font
-        color="#620000">\(\omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d}
-        p_i\)</font>.
-      </p>
-      <ul>
-        <li>
-          <p>
-            <font color="#620000">\(L\)</font> (dimension <font color="#620000">\(n\)</font>) is
-            <strong>Lagrangian</strong> if <font color="#620000">\(\omega |_L =
-            0\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            A graph <font color="#620000">\(p = F (x)\)</font> is Lagrangian <font
-            color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(DF\)</font>
-            symmetric <font color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(F\)</font>
-            is a gradient. <strong>Gradient sector = Lagrangian
-            graphs.</strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
-            The shear <font color="#620000">\(\Sigma_t (x, p) = (x + S_t p, p)\)</font>
-            is symplectic since <font color="#620000">\(S_t\)</font> is symmetric:
-            <font color="#620000">\(\Sigma_t^{\ast} \omega = \omega + \sum (S_t)_{ij}
-            \mathrm{d} p_j \wedge
-\mathrm{d} p_i = \omega\)</font>.
-          </p>
-        </li>
-      </ul>
-      <div class="slide-block">
-        <p>
-          The image of the graph of <font color="#620000">\(- DV_t\)</font> is
-          Lagrangian; as a graph over the forecast <font color="#620000">\(\psi\)</font>
-          it is the graph of a gradient <font color="#620000">\(D \Gamma_t\)</font>,
-          with the Moreau transform as generating function.
-        </p>
-      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1280,56 +1315,126 @@ S_t^{- 1} (y - x) \rangle \right\},\)
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Log-Sobolev along the localisation
+        Entropy along the localisation
       </div>
       <p>
-        <font color="#620000">\(M_t =\mathbb{E}_t F (\Phi_T) = \int F \mathrm{d}
-        \mu_t^{\Phi_t}\)</font>, <font color="#620000">\(\mathbb{E}F = 1\)</font>.
-        It&ocirc; for <font color="#620000">\(M \log M\)</font>:
+        <font color="#620000">\(\rho \geq 0\)</font>, <font color="#620000">\(\mathbb{E}_{\nu_T}
+        \rho = 1\)</font>, <font color="#620000">\(M_t =\mathbb{E}_t \rho (\Phi_T) =
+        G_t (\Phi_t)\)</font>, <font color="#620000">\(G_t (\phi) = \int \rho
+        \mathrm{d} \mu_t^{\phi}\)</font>.
       </p>
-      <center>
-        \(\displaystyle \operatorname{Ent}_{\nu_T} (F) = \frac{1}{2}
-        \mathbb{E} \int_0^T
-\frac{\mathrm{d} \langle M \rangle_t}{M_t}
-        =\operatorname{Ent}
-        (M_t)
-+\mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (F) .\)
-      </center>
-      <p>
-        <strong>Multiscale Bakry&ndash;&Eacute;mery</strong>
-        (Bauerschmidt&ndash;Bodineau): if <font color="#620000">\(\dot{Q}_t D^2 V_t
-        \dot{Q}_t + \frac{1}{2}  \ddot{Q}_t \geq \kappa_t
-\dot{Q}_t\)</font>
-        for all <font color="#620000">\(t, \phi\)</font>, then
-      </p>
-      <center>
-        \(\displaystyle \operatorname{Ent}_{\nu_T} (F) \leq \frac{2}{\gamma}
-        \mathbb{E} \|
-\dot{Q}_T^{1 / 2} D \sqrt{F} \|^2, \qquad
-        \frac{1}{\gamma} = \int_0^T
-\mathrm{e}^{- 2 \int_t^T \kappa}
-        \mathrm{d} t.\)
-      </center>
       <ul>
         <li>
           <p>
-            Via <font color="#620000">\(D^2 V_t = S_t^{- 1} - S_t^{- 1}
-            \operatorname{Cov}_t S_t^{- 1}\)</font>: an upper bound on <font
-            color="#620000">\(\operatorname{Cov}_t\)</font> in the metric <font color="#620000">\(\dot{R}_t\)</font>,
-            the rate at which conditional variance is resolved.
+            <font color="#620000">\(M_0 = 1\)</font>, <font color="#620000">\(M_T = \rho
+            (\Phi_T)\)</font>, and <font color="#620000">\(\mathrm{d} M_t = \langle
+            DG_t (\Phi_t), \dot{Q}_t^{1 / 2} \mathrm{d} W_t
+\rangle\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <strong>Entropic stability:</strong> <font color="#620000">\(\dot{R}
-            \operatorname{Cov} \dot{R} \leq \alpha \dot{R}\)</font> on <font
-            color="#620000">\([0, t]\)</font> <font color="#620000">\(\Rightarrow\)</font> <font
-            color="#620000">\(\operatorname{Ent} (F) \leq \mathrm{e}^{\int_0^t
-            \alpha}
-\mathbb{E}\operatorname{Ent}_{\mu_t} (F)\)</font>.
+            It&ocirc; for <font color="#620000">\(M \log M\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) = \frac{1}{2}
+            \mathbb{E} \int_0^T
+\frac{\mathrm{d} \langle M \rangle_t}{M_t} =
+            2\mathbb{E} \int_0^T \left\|
+\dot{Q}_t^{1 / 2} D \sqrt{G_t}
+            (\Phi_t) \right\|^2 \mathrm{d} t.\)
+          </center>
+        </li>
+        <li>
+          <p>
+            Stopping at <font color="#620000">\(t\)</font>: <strong>revealed +
+            hidden</strong> entropy,
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho)
+            =\operatorname{Ent}
+            (M_t)
++\mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (\rho) .\)
+          </center>
+        </li>
+        <li>
+          <p>
+            The increments see the conditional law: <font color="#620000">\(DG_t (\phi)
+            = S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (\rho, y)\)</font>.
           </p>
         </li>
       </ul>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070">Bauerschmidt&ndash;Bodineau&ndash;Dagallier,
+        Probab. Surveys 2024: their fluctuation measure is our stochastic
+        localisation (scale reversed).</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Multiscale Bakry&ndash;&Eacute;mery
+      </div>
+      <font style="font-size: 90.0%"><p>
+        <strong>Theorem</strong> (Bauerschmidt&ndash;Bodineau). If for all
+        <font color="#620000">\(t, \phi\)</font>, with <font color="#620000">\(\kappa_t \in
+        \mathbb{R}\)</font> (possibly negative),
+      </p><center>
+        \(\displaystyle \dot{Q}_t D^2 V_t (\phi)  \dot{Q}_t + \frac{1}{2}
+        \ddot{Q}_t \geq \kappa_t
+\dot{Q}_t,\)
+      </center><p>
+        then <font color="#620000">\(\operatorname{Ent}_{\nu_T} (\rho) \leq
+        \frac{2}{\gamma} \mathbb{E} \|
+\dot{Q}_T^{1 / 2} D \sqrt{\rho}
+        \|^2\)</font>, <font color="#620000">\(\frac{1}{\gamma} = \int_0^T
+        \mathrm{e}^{- 2 \int_t^T \kappa} \mathrm{d} t\)</font>.
+      </p><ul>
+        <li>
+          <p>
+            Gradient bound at each scale + entropy formula. Gaussian check:
+            <font color="#620000">\(V = 0\)</font>, <font color="#620000">\(Q_t = tQ_T /
+            T\)</font>, <font color="#620000">\(\kappa = 0\)</font> <font color="#620000">\(\Rightarrow\)</font>
+            Gaussian LSI.
+          </p>
+        </li>
+        <li>
+          <p>
+            Convexity of the <strong>effective</strong> potentials, not of
+            <font color="#620000">\(V_T\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            By <font color="#620000">\(D^2 V_t = S_t^{- 1} - S_t^{- 1}
+            \operatorname{Cov}_t S_t^{- 1}\)</font> and <font color="#620000">\(\dot{Q}
+            = S \dot{R} S\)</font>, the hypothesis is the bound, uniform in
+            <font color="#620000">\(\phi\)</font>,
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Cov}_t \leq S_t - \kappa_t
+            \dot{R}_t^{- 1} + \frac{1}{2}
+\dot{R}_t^{- 1} S_t^{- 1}
+            \ddot{Q}_t S_t^{- 1}  \dot{R}_t^{- 1}\)
+          </center>
+          <p>
+            (<font color="#620000">\(= S_t\)</font> for the Gaussian): <font color="#620000">\(\kappa_t
+            > 0\)</font> is more concentrated than the unresolved Gaussian.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Entropic stability</strong> (Chen&ndash;Eldan): <font
+            color="#620000">\(\dot{R}_r \operatorname{Cov}_{\mu_r^{\phi}}  \dot{R}_r
+            \leq \alpha_r
+\dot{R}_r\)</font> for all <font color="#620000">\(\phi\)</font>,
+            <font color="#620000">\(r \leq t\)</font> <font color="#620000">\(\Rightarrow\)</font>
+            <font color="#620000">\(\operatorname{Ent} (\rho) \leq \mathrm{e}^{\int_0^t
+            \alpha}
+\mathbb{E}\operatorname{Ent}_{\mu_t} (\rho)\)</font>: the
+            low resolutions must not hide too much.
+          </p>
+        </li>
+      </ul></font>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
@@ -1535,8 +1640,16 @@ V_0 (0) + \tfrac{1}{2} \mathbb{E}_0
       <p>
         Perturb the optimal drift: <font color="#620000">\(u = u^{\ast} + w\)</font>,
         <font color="#620000">\(X^u = \Phi + I (w)\)</font>, <font color="#620000">\(I_t (w) =
-        \int_0^t \dot{Q}^{1 / 2} w\)</font>. By Euler&ndash;Lagrange, the
-        extensive terms cancel exactly:
+        \int_0^t \dot{Q}^{1 / 2} w\)</font>. Euler&ndash;Lagrange gives the
+        cross term
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \int \langle u^{\ast}, w \rangle =
+        -\mathbb{E} \langle DV_T
+(\Phi_T), I_T (w) \rangle,\)
+      </center>
+      <p>
+        and the two extensive infima cancel exactly:
       </p>
       <center>
         \(\displaystyle - \log \int \mathrm{e}^{- f} \mathrm{d} \nu_T = \inf_w
@@ -1547,36 +1660,71 @@ V_0 (0) + \tfrac{1}{2} \mathbb{E}_0
       </center>
       <p>
         <font color="#620000">\(B_V (\phi, h) = V (\phi + h) - V (\phi) - \langle DV
-        (\phi), h \rangle\)</font>: the <strong>Bregman divergence</strong>.
+        (\phi), h \rangle\)</font>: the <strong>first-order Taylor
+        remainder</strong>.
       </p>
       <ul>
         <li>
           <p>
-            Local interaction: <font color="#620000">\(B = \int b_T (\Phi_T (x), I_T
-            (x)) \mathrm{d} x\)</font>, zero where <font color="#620000">\(I =
-            0\)</font>: every term is <strong>intensive</strong>.
+            Minimiser: <font color="#620000">\(\Phi^f = \Phi + I (w)\)</font> solves
+            the FBSDE with terminal potential <font color="#620000">\(V_T + f\)</font>,
+            a perturbation of <font color="#620000">\(\Phi\)</font>: <font color="#620000">\(F^f
+            - F = -\mathbb{E}_s [Df + DV_T (\Phi^f_T) - DV_T
+            (\Phi_T)]\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Infinite-volume measures
+      </div>
+      <p>
+        Local interaction <font color="#620000">\(V_T = \int v_T (\varphi (x))
+        \mathrm{d} x\)</font>:
+      </p>
+      <center>
+        \(\displaystyle B_{V_T} (\phi, h) = \int b_T (\phi (x), h (x))
+        \mathrm{d} x, \qquad b_T (a, h)
+= v_T (a + h) - v_T (a) - v_T' (a)
+        h.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(b_T (a, 0) = 0\)</font>: only the region where the
+            perturbation acts counts. Every term is
+            <strong>intensive</strong>: no free energy, only <font color="#620000">\(\Phi\)</font>
+            and its perturbation.
           </p>
         </li>
         <li>
           <p>
-            Minimiser: the FBSDE with terminal potential <font color="#620000">\(V_T +
-            f\)</font>, as a <strong>perturbation</strong> of <font color="#620000">\(\Phi\)</font>.
+            <font color="#620000">\(f\)</font> local <font color="#620000">\(\Rightarrow\)</font>
+            the optimal <font color="#620000">\(w\)</font> should decay away from its
+            support, at the rate of decay of correlations.
           </p>
         </li>
         <li>
           <p>
-            Makes sense in infinite volume with <font color="#620000">\(\Phi\)</font>
-            solving the infinite-volume FBSDE.
+            Several solutions of the FBSDE (phase transitions) <font color="#620000">\(\Rightarrow\)</font>
+            several measures, each with its own principle.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\Phi^4_3\)</font>: the remainder term carries the
+            counterterms; the change of variables of Barashkov&ndash;Gubinelli
+            is still needed.
           </p>
         </li>
       </ul>
       <div class="slide-block">
         <p>
-          <strong>Formal statement.</strong> Infinite-volume measures <font
-          color="#620000">\(=\)</font> laws of <font color="#620000">\(\Phi_T\)</font> for
-          solutions of the infinite-volume FBSDE satisfying this principle for
-          all local <font color="#620000">\(f\)</font>. Several solutions <font color="#620000">\(\leftrightarrow\)</font>
-          several phases.
+          <strong>Formal statement.</strong> An infinite-volume measure is the
+          law of <font color="#620000">\(\Phi_T\)</font> for a solution of the
+          infinite-volume FBSDE satisfying the relative variational principle
+          for all local <font color="#620000">\(f\)</font>.
         </p>
       </div>
     </div>

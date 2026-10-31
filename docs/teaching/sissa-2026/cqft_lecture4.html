@@ -114,14 +114,20 @@
         and integrates the transport part of the force flow exactly. In the
         gradient case the remaining equation for the force is the Wetterich
         equation for the effective average action, whose propagator is the
-        conditional covariance. We then discuss the variational structure of
-        the flow (Bou&eacute;&ndash;Dupuis formula and
+        conditional covariance. We read the FBSDE as the stochastic Pontryagin
+        system of a control problem, bound the conditional covariance from
+        both sides (Brascamp&ndash;Lieb and Cram&eacute;r&ndash;Rao), and
+        prove log-Sobolev inequalities along the localisation (multiscale
+        Bakry&ndash;&Eacute;mery). We then discuss the variational structure
+        of the flow (Bou&eacute;&ndash;Dupuis formula and
         Hamilton&ndash;Jacobi&ndash;Bellman equation) in finite and infinite
-        volume. The additional material covers the algebraic and perturbative
-        structure of the flow (semigroup, flatness, counterterms for
-        \(\Phi^4_3\)), and the Dyson&ndash;Schwinger equations at every scale.
-        The treatment is formal: we compute as if all objects were smooth and
-        integrable, and we indicate where the real difficulties lie.</font>
+        volume, where it becomes a variational principle relative to the FBSDE
+        involving only intensive quantities. The additional material covers
+        the algebraic and perturbative structure of the flow (semigroup,
+        flatness, counterterms for \(\Phi^4_3\)), and the
+        Dyson&ndash;Schwinger equations at every scale. The treatment is
+        formal: we compute as if all objects were smooth and integrable, and
+        we indicate where the real difficulties lie.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -241,11 +247,11 @@
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>9<span style="margin-left: 1em"></span>Variational structure</b> <span style="margin-left: 5mm"></span>
-        <a href="#auto-37">15</a>
+        <a href="#auto-37">16</a>
       </p>
       <p>
         9.1<span style="margin-left: 1em"></span>Finite volume: the Bou&eacute;&ndash;Dupuis
-        formula <span style="margin-left: 5mm"></span> <a href="#auto-38">15</a>
+        formula <span style="margin-left: 5mm"></span> <a href="#auto-38">16</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Euler&ndash;Lagrange equation \(=\) FBSDE. <span style="margin-left: 5mm"></span>
@@ -258,7 +264,7 @@
         <font style="font-size: 92.0%">Generating functionals. <span style="margin-left: 5mm"></span> <a href="#auto-41">16</a></font>
       </p>
       <p>
-        9.2<span style="margin-left: 1em"></span>Infinite volume <span style="margin-left: 5mm"></span> <a href="#auto-42">16</a>
+        9.2<span style="margin-left: 1em"></span>Infinite volume <span style="margin-left: 5mm"></span> <a href="#auto-42">17</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Differences of free energies. <span style="margin-left: 5mm"></span> <a
@@ -272,11 +278,11 @@
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>10<span style="margin-left: 1em"></span>Algebraic structure of the Polchinski
-        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-46">18</a>
+        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-46">19</a>
       </p>
       <p>
         10.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps <span
-        style="margin-left: 5mm"></span> <a href="#auto-47">18</a>
+        style="margin-left: 5mm"></span> <a href="#auto-47">19</a>
       </p>
       <p>
         10.2<span style="margin-left: 1em"></span>Perturbation theory and counterterms <span
@@ -963,21 +969,18 @@ u), \qquad V (T, \cdot) = g.\)
       The noise adds the It&ocirc; term to the Hamilton&ndash;Jacobi equation,
       which becomes the Polchinski equation <class style="font-style: normal">(<a href="#eq:polchinski">7.6</a>)</class>:
       its quadratic, Hamilton&ndash;Jacobi part generates the trees, and the
-      trace term generates the loops. The forward&ndash;backward system <class
-      style="font-style: normal">(<a href="#eq:fbsde-system">7.8</a>)</class> is the stochastic Hamiltonian system
-      of this problem.
+      trace term generates the loops.
     </p>
     <p>
-      The FBSDE is the stochastic Pontryagin system of the control problem of
-      Theorem <a href="#thm:BD">9.1</a>. The controlled field \(\mathrm{d} X =
-      \dot{Q}_t^{1 / 2}  (u \hspace{0.17em} \mathrm{d} t + \mathrm{d}
-W)\) has
-      Hamiltonian \(\langle p, \dot{Q}_t^{1 / 2} u \rangle - \frac{1}{2}
-      \|u\|^2\), which does not depend on the state. By the stochastic maximum
-      principle (Exercise <a href="#ex:pontryagin">8.1</a>), the adjoint process \(p\) has no
-      drift, \(\mathrm{d} p_t = \Upsilon_t \hspace{0.17em} \mathrm{d} W_t\),
-      with terminal value \(p_T = - DV_T (X_T)\), and the optimal control is
-      \(u_t = \dot{Q}_t^{1 / 2} p_t\). Thus
+      In the notation of Theorem <a href="#thm:BD">9.1</a> the controlled field is
+      \(\mathrm{d} X = \dot{Q}_t^{1 / 2}  (u \hspace{0.17em} \mathrm{d} t +
+      \mathrm{d}
+W)\), the costate has no drift, \(\mathrm{d} p_t = \Upsilon_t
+      \hspace{0.17em} \mathrm{d} W_t\), with terminal value \(p_T = - DV_T
+      (X_T)\), and the optimal control is \(u_t = \dot{Q}_t^{1 / 2} p_t\)
+      (Exercise <a href="#ex:pontryagin">8.1</a>). Since \(p_t\) is the value \(F_t\) of the
+      force, the FBSDE <class style="font-style: normal">(<a href="#eq:fbsde-system">7.8</a>)</class> is the
+      stochastic Pontryagin system of this problem:
     </p>
     <center>
       <p style="margin-top: 0.5em; margin-bottom: 0.5em">
@@ -997,10 +1000,10 @@ W)\) has
       It&ocirc; correction, and generates the loops.
     </p>
     <p>
-      Without noise the state&ndash;costate pair follows the Hamiltonian flow
-      of the free Hamiltonian \(h_s (p) = \frac{1}{2}  \langle p, \dot{Q}_s p
-      \rangle\): \(\dot{p} = 0\) and \(\dot{x} = \dot{Q}_s p\). From \(t\) to
-      \(T\) this flow is the linear shear
+      As seen above, without noise the state&ndash;costate pair follows the
+      Hamiltonian flow of the free Hamiltonian \(H_{\ast}\): \(\dot{p} = 0\)
+      and \(\dot{x} = \dot{Q}_s p\). From \(t\) to \(T\) this flow is the
+      linear shear
     </p>
     <table width="100%">
       <tr>
@@ -1261,15 +1264,16 @@ H_t^{\ast} .\)
       <h5>Brascamp&ndash;Lieb and Cram&eacute;r&ndash;Rao bounds.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         The conditional law \(\mu^{\phi}_t\) has density proportional to
-        \(\mathrm{e}^{- W}\), with \(W (y) = V_T (y) + \frac{1}{2} \langle y -
-        \phi, S_t^{- 1} (y - \phi) \rangle\) and \(D^2 W = S_t^{- 1} + D^2
+        \(\mathrm{e}^{- U}\), with \(U (y) = V_T (y) + \frac{1}{2} \langle y -
+        \phi, S_t^{- 1} (y - \phi) \rangle\) and \(D^2 U = S_t^{- 1} + D^2
         V_T\). Two classical inequalities bound its covariance by the Hessian
-        of \(W\). If \(D^2 W > 0\), the Brascamp&ndash;Lieb inequality [<a
+        of \(U\). If \(D^2 U > 0\), the Brascamp&ndash;Lieb inequality [<a
         href="#bib-BL76">BL76</a>], \(\operatorname{Var}_{\mu} (f) \leq \mathbb{E}_{\mu}
-        \langle Df, (D^2 W)^{- 1}
+        \langle Df, (D^2 U)^{- 1}
 Df \rangle\), applied to linear functions
-        \(f = \langle h, \cdot \rangle\), and without any convexity the
-        Cram&eacute;r&ndash;Rao inequality give
+        \(f = \langle h, \cdot \rangle\), and the Cram&eacute;r&ndash;Rao
+        inequality, which needs no convexity, give respectively the upper and
+        the lower bound in
       </div>
     </p>
     <center>
@@ -1279,10 +1283,10 @@ Df \rangle\), applied to linear functions
       (\Phi_T))^{- 1}] .\)
     </center>
     <p>
-      The lower bound follows from \(\mathbb{E}_{\mu} [(y - m) \otimes DW (y)]
+      The lower bound follows from \(\mathbb{E}_{\mu} [(y - m) \otimes DU (y)]
       = 1\) (integration by parts) and the Cauchy&ndash;Schwarz inequality,
-      with the Fisher information \(\mathbb{E}_{\mu} [DW \otimes DW]
-      =\mathbb{E}_{\mu} D^2 W\) (Exercise <a href="#ex:brascamp-lieb">8.10</a>). The two bounds
+      with the Fisher information \(\mathbb{E}_{\mu} [DU \otimes DU]
+      =\mathbb{E}_{\mu} D^2 U\) (Exercise <a href="#ex:brascamp-lieb">8.10</a>). The two bounds
       coincide when \(V_T\) is quadratic, and their gap is a Jensen gap for
       the inverse. Through Proposition <a href="#prop:H-cov">8.3</a> they are two-sided
       bounds on the Hessian of the effective potential, i.e. on the response
@@ -1309,13 +1313,16 @@ Df \rangle\), applied to linear functions
       </li>
       <li>
         <p>
-          For \(\Phi^4_3\) the counterterm \(- \gamma_T  \int : \varphi^2 :\)
-          makes \(V_T\) non-convex, with a negative curvature that diverges as
-          \(T \to \infty\). The upper bound is lost, and at low resolution the
-          conditional law may spread over several wells (Figure <a href="#fig:localisation">8.1</a>).
-          This is the large-field problem. In Lecture 5 it is handled by a
-          clipped approximate action, whose global coercivity (Lemma 14.1
-          there) is a bound of Brascamp&ndash;Lieb type on the response.
+          For \(\Phi^4_3\) convexity is already lost through the Wick
+          ordering: \(H_4  (\varphi ; c_T) = \varphi^4 - 6 c_T \varphi^2 + 3
+          c_T^2\), so <class style="font-style: normal">(<a href="#eq:phi4-VT">7.1</a>)</class> has curvature
+          \(- 12 \lambda c_T\) at \(\varphi = 0\), which diverges as \(T \to
+          \infty\) (this happens already for \(\Phi^4_2\)). The upper bound is
+          lost, and at low resolution the conditional law may spread over
+          several wells (Figure <a href="#fig:localisation">8.1</a>). This is the large-field
+          problem. In Lecture 5 it is handled by a clipped approximate action,
+          whose global coercivity (Lemma 14.1 there) is a bound of
+          Brascamp&ndash;Lieb type on the response.
         </p>
       </li>
     </ul>
@@ -1354,35 +1361,33 @@ Df \rangle\), applied to linear functions
       </div>
       <h5>Phase space and Lagrangian graphs.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        Pairs \((x, p)\) of a field and a force form the phase space
-        \(\mathbb{R}^n \times \mathbb{R}^n\), with the symplectic form
+        Pairs \((x, p)\) of a field and a value of the force form the phase
+        space \(\mathbb{R}^n \times \mathbb{R}^n\), with the symplectic form
         \(\omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d} p_i\). A
         submanifold \(L\) of dimension \(n\) is <em>Lagrangian</em> if
         \(\omega\) vanishes on it. The graph \(L = \{(x, F (x))\}\) of a force
         field is Lagrangian if and only if \(\sum_{i, j} \partial_j F_i
         \mathrm{d} x_i \wedge \mathrm{d} x_j = 0\), i.e. \(DF\) is symmetric,
         i.e. \(F\) is (locally) a gradient: the gradient sector is the sector
-        of Lagrangian graphs. A linear map preserves \(\omega\) (it is
-        <em>symplectic</em>) if and only if it maps Lagrangian submanifolds to
-        Lagrangian submanifolds. The shear <class style="font-style: normal">(<a href="#eq:shear">8.1</a>)</class>
-        is symplectic, since \(\Sigma_t^{\ast} \omega = \omega + \sum_{i, j}
+        of Lagrangian graphs. A map that preserves \(\omega\) (a
+        <em>symplectic</em> map) sends Lagrangian submanifolds to Lagrangian
+        submanifolds. The shear <class style="font-style: normal">(<a href="#eq:shear">8.1</a>)</class> is
+        symplectic, since \(\Sigma_t^{\ast} \omega = \omega + \sum_{i, j}
         (S_t)_{ij} \mathrm{d} p_j \wedge
 \mathrm{d} p_i = \omega\) for \(S_t\)
         symmetric. So it maps the graph of a gradient to a Lagrangian
         submanifold; if the image is again a graph over the new base variable,
-        it is the graph of a gradient. This is what we use now.
+        it is the graph of a gradient.
       </div>
     </p>
     <p>
-      Now let \(F_t = - DV_t\). The graph \(\{(x, - DV_t (x))\}\) is a
-      Lagrangian submanifold of the (field, force) phase space, and the shear
-      <class style="font-style: normal">(<a href="#eq:shear">8.1</a>)</class> is symplectic because \(S_t\)
-      is symmetric. Its image is again Lagrangian. It is a graph over
-      \(\psi\): the map \(x \mapsto x + S_t F_t (x)\) is \(S_t\) times the
-      gradient of \(\frac{1}{2}  \langle x, S_t^{- 1} x \rangle - V_t (x)\),
-      which is strictly convex since its Hessian is \(S_t^{- 1} \text{Cov}_t
-      S_t^{- 1} > 0\) (Proposition <a href="#prop:H-cov">8.3</a>), so the map is injective.
-      Hence the image is the graph of a gradient:
+      Now let \(F_t = - DV_t\). Its graph is Lagrangian, hence so is its image
+      under the shear. The image is a graph over \(\psi\): the map \(x \mapsto
+      x + S_t F_t (x)\) is \(S_t\) times the gradient of \(\frac{1}{2}
+      \langle x, S_t^{- 1} x \rangle - V_t (x)\), which is strictly convex
+      since its Hessian is \(S_t^{- 1} \text{Cov}_t S_t^{- 1} > 0\)
+      (Proposition <a href="#prop:H-cov">8.3</a>), so the map is injective. Hence the image
+      is the graph of a gradient:
     </p>
     <table width="100%">
       <tr>
@@ -1675,45 +1680,47 @@ S_t^{- 1} (y - x)
       </div>
       <h5>Entropy as quadratic variation.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        Let \(F \geq 0\) with \(\mathbb{E}_{\nu_T} F = 1\), and let \(M_t
-        =\mathbb{E}_t [F (\Phi_T)] = G_t (\Phi_t)\), with \(G_t (\phi) = \int
-        F \hspace{0.17em} \mathrm{d} \mu_t^{\phi}\). The martingale \(M\) runs
-        from \(M_0 = 1\) to \(M_T = F (\Phi_T)\), and its noise is that of the
-        field: \(\mathrm{d} M_t = \langle DG_t (\Phi_t), \dot{Q}_t^{1 / 2}
-        \mathrm{d} W_t
-\rangle\). It&ocirc;'s formula for \(M \log M\) gives
+        Let \(\rho \geq 0\) with \(\mathbb{E}_{\nu_T} \rho = 1\), and let
+        \(M_t =\mathbb{E}_t [\rho (\Phi_T)] = G_t (\Phi_t)\), with \(G_t
+        (\phi) = \int \rho \hspace{0.17em} \mathrm{d} \mu_t^{\phi}\). The
+        martingale \(M\) runs from \(M_0 = 1\) to \(M_T = \rho (\Phi_T)\), and
+        its noise is that of the field: \(\mathrm{d} M_t = \langle DG_t
+        (\Phi_t), \dot{Q}_t^{1 / 2} \mathrm{d} W_t
+\rangle\). It&ocirc;'s
+        formula for \(M \log M\) gives
       </div>
     </p>
     <center>
-      \(\displaystyle \operatorname{Ent}_{\nu_T} (F) = \frac{1}{2} \mathbb{E}
-      \int_0^T
-\frac{\mathrm{d} \langle M \rangle_t}{M_t} = 2\mathbb{E}
-      \int_0^T \left\|
-\dot{Q}_t^{1 / 2} D \sqrt{G_t} (\Phi_t) \right\|^2
-      \mathrm{d} t,\)
+      \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) = \frac{1}{2}
+      \mathbb{E} \int_0^T
+\frac{\mathrm{d} \langle M \rangle_t}{M_t} =
+      2\mathbb{E} \int_0^T \left\|
+\dot{Q}_t^{1 / 2} D \sqrt{G_t} (\Phi_t)
+      \right\|^2 \mathrm{d} t,\)
     </center>
     <p>
       and, stopping at resolution \(t\), the chain rule
     </p>
     <center>
-      \(\displaystyle \operatorname{Ent}_{\nu_T} (F) =\operatorname{Ent} (G_t
-      (\Phi_t)) +\mathbb{E}
-\left[ \operatorname{Ent}_{\mu_t^{\Phi_t}} (F)
-      \right] :\)
+      \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) =\operatorname{Ent}
+      (G_t (\Phi_t))
++\mathbb{E} \left[ \operatorname{Ent}_{\mu_t^{\Phi_t}}
+      (\rho) \right] :\)
     </center>
     <p>
       the entropy already revealed at resolution \(t\) plus the expected
       entropy still hidden. The increments are controlled by the conditional
       law: differentiating the density of \(\mu_t^{\phi}\) in \(\phi\), \(DG_t
-      (\phi) = S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (F, y)\).
+      (\phi) = S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (\rho, y)\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">8.5</class>. </strong><i><class
         style="font-style: normal"><strong>(Multiscale Bakry&ndash;&Eacute;mery [<a href="#bib-BBD24">BBD24</a>])
         </strong></class><a id="thm:lsi"></a>(formal in infinite dimensions) Suppose
-        that there are real numbers \(\kappa_t\) such that, for all \(t \in
-        [0, T]\) and all \(\phi\), as quadratic forms,</i>
+        that there are real numbers (possibly negative) \(\kappa_t\) such
+        that, for all \(t \in [0, T]\) and all \(\phi\), as quadratic
+        forms,</i>
       </p>
       <p>
         <i><center>
@@ -1727,30 +1734,38 @@ S_t^{- 1} (y - x)
       </p>
       <p style="margin-bottom: 1em">
         <i><center>
-          \(\displaystyle \operatorname{Ent}_{\nu_T} (F) \leq \frac{2}{\gamma}
-          \mathbb{E}_{\nu_T} \left[
-\left\| \dot{Q}_T^{1 / 2} D \sqrt{F}
-          \right\|^2 \right], \qquad
-\frac{1}{\gamma} = \int_0^T \exp \left( -
-          2 \int_t^T \kappa_r \mathrm{d} r
-\right) \mathrm{d} t.\)
+          \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leq
+          \frac{2}{\gamma} \mathbb{E}_{\nu_T}
+\left[ \left\| \dot{Q}_T^{1 / 2}
+          D \sqrt{\rho} \right\|^2 \right], \qquad
+\frac{1}{\gamma} = \int_0^T
+          \exp \left( - 2 \int_t^T \kappa_r \mathrm{d} r
+\right) \mathrm{d}
+          t.\)
         </center></i>
       </p>
     </div>
     <p>
-      The hypothesis gives, at each resolution, the gradient bound \(\|
-      \dot{Q}_t^{1 / 2} D \sqrt{G_t} \|^2 \leq \mathrm{e}^{- 2 \int_t^T
-      \kappa}
-\int \| \dot{Q}_T^{1 / 2} D \sqrt{F} \|^2 \mathrm{d}
-      \mu_t^{\phi}\); inserted in the entropy formula it gives the theorem [<a
-      href="#bib-BBD24">BBD24</a>]. For \(V_T = 0\) and a linear profile \(Q_t = tQ_T /
-      T\) one may take \(\kappa = 0\), so \(1 / \gamma = T\) and the theorem
-      is the Gaussian log-Sobolev inequality \(\operatorname{Ent} (F) \leq
-      2\mathbb{E} \langle D \sqrt{F}, Q_T D \sqrt{F}
-\rangle\). The hypothesis
-      is a convexity condition on the effective potentials at every scale, not
-      on \(V_T\), corrected by the scale dependence \(\ddot{Q}_t\) of the
-      decomposition.
+      The hypothesis gives, at each resolution, the gradient bound
+    </p>
+    <center>
+      \(\displaystyle \left\| \dot{Q}_t^{1 / 2} D \sqrt{G_t} \right\|^2 \leq
+      \mathrm{e}^{- 2
+\int_t^T \kappa_r \mathrm{d} r}  \int \left\|
+      \dot{Q}_T^{1 / 2} D \sqrt{\rho}
+\right\|^2 \mathrm{d} \mu_t^{\phi} ;\)
+    </center>
+    <p>
+      inserted in the entropy formula it gives the theorem [<a href="#bib-BBD24">BBD24</a>].
+      For \(V_T = 0\) and a linear profile \(Q_t = tQ_T / T\) one may take
+      \(\kappa = 0\), so \(1 / \gamma = T\) and the theorem is the Gaussian
+      log-Sobolev inequality \(\operatorname{Ent} (\rho) \leq 2\mathbb{E}
+      \langle D \sqrt{\rho}, Q_T D
+\sqrt{\rho} \rangle\). The hypothesis is a
+      convexity condition on the effective potentials at every scale, not on
+      \(V_T\), corrected by the scale dependence \(\ddot{Q}_t\) of the
+      decomposition; \(\kappa_t\) may be negative at some scales: only the
+      weights \(\mathrm{e}^{- 2 \int_t^T \kappa}\) enter \(\gamma\).
     </p>
     <p>
       <div style="display: inline">
@@ -1761,20 +1776,56 @@ S_t^{- 1} (y - x)
         By Proposition <a href="#prop:H-cov">8.3</a>, \(D^2 V_t = S_t^{- 1} - S_t^{- 1}
         \operatorname{Cov}_t S_t^{- 1}\), and \(S_t^{- 1}  \dot{Q}_t S_t^{- 1}
         = \dot{R}_t\) is the derivative of the regulator <class style="font-style: normal">(<a
-        href="#eq:response">8.6</a>)</class>. So the hypothesis is an upper bound on the
-        conditional covariance, measured in the metric \(\dot{R}_t\): it
-        bounds the same quantity \(\operatorname{Cov}_t  \dot{R}_t
-        \operatorname{Cov}_t\) which, by <class style="font-style: normal">(<a href="#eq:cov-dynamics">8.9</a>)</class>,
-        is the rate at which the conditional variance is resolved. In this
-        form [<a href="#bib-BBD24">BBD24</a>], if \(\dot{R}_r \operatorname{Cov}_r
-        \dot{R}_r \leq \alpha_r  \dot{R}_r\) for \(r \leq t\), then
+        href="#eq:response">8.6</a>)</class>. Since \(\dot{Q}_t S_t^{- 1} = S_t
+        \dot{R}_t\), the hypothesis reads
       </div>
     </p>
     <center>
-      \(\displaystyle \operatorname{Ent}_{\nu_T} (F) \leq \exp \left( \int_0^t
-      \alpha_r \mathrm{d} r
-\right) \mathbb{E} \left[
-      \operatorname{Ent}_{\mu_t^{\Phi_t}} (F) \right] :\)
+      \(\displaystyle S_t  \dot{R}_t \operatorname{Cov}_t  \dot{R}_t S_t \leq
+      \dot{Q}_t S_t^{- 1}
+\dot{Q}_t + \frac{1}{2}  \ddot{Q}_t - \kappa_t
+      \dot{Q}_t :\)
+    </center>
+    <p>
+      if \(\dot{Q}_t\) is invertible, conjugating by \(\dot{Q}_t^{- 1} =
+      S_t^{- 1}  \dot{R}_t^{- 1} S_t^{- 1}\) shows that it is equivalent to
+      the explicit bound
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:lsi-cov"></a>\(\displaystyle
+        \operatorname{Cov}_{\mu_t^{\phi}} \leq S_t - \kappa_t  \dot{R}_t^{- 1}
+        +
+\frac{1}{2}  \dot{R}_t^{- 1} S_t^{- 1}  \ddot{Q}_t S_t^{- 1}
+        \dot{R}_t^{- 1}
+\qquad \forall \phi . \)</td>
+        <td align="right">(8.17)</td>
+      </tr>
+    </table>
+    <p>
+      When \(Q_t\) and \(S_t\) are functions of one operator (Fourier
+      multipliers, say), \(\dot{R}_t^{- 1} = S_t^2  \dot{Q}_t^{- 1}\) and the
+      right-hand side is \(S_t - S_t^2  \dot{Q}_t^{- 2}  (\kappa_t  \dot{Q}_t
+      - \frac{1}{2}  \ddot{Q}_t)\). For the Gaussian case with a linear
+      profile (\(\kappa = 0\), \(\ddot{Q} = 0\)) it is \(\operatorname{Cov}_t
+      \leq S_t\), with equality. A positive \(\kappa_t\) makes every
+      conditional law strictly more concentrated than the unresolved Gaussian
+      fluctuation; a negative one lets \(\operatorname{Cov}_t\) exceed
+      \(S_t\), as in a double well at low resolution. The hypothesis is thus
+      an upper bound on the conditional covariance, uniform in the
+      conditioning, measured in the metric \(\dot{R}_t\). Closely related is
+      the <em>entropic stability</em> of Chen and Eldan [<a href="#bib-CE22">CE22</a>]
+      (see also [<a href="#bib-BBD24">BBD24</a>]): if, for all \(r \leq t\) and all
+      \(\phi\), \(\dot{R}_r \operatorname{Cov}_{\mu_r^{\phi}}  \dot{R}_r \leq
+      \alpha_r
+\dot{R}_r\), then
+    </p>
+    <center>
+      \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leq \exp \left(
+      \int_0^t \alpha_r
+\mathrm{d} r \right) \mathbb{E} \left[
+      \operatorname{Ent}_{\mu_t^{\Phi_t}}
+(\rho) \right] :\)
     </center>
     <p>
       the total entropy is controlled by the entropy that is still hidden at
@@ -1908,15 +1959,15 @@ S_t^{- 1} (y - x)
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">8.10</class>.
         </strong><class style="font-style: normal"><strong>(Brascamp&ndash;Lieb and
         Cram&eacute;r&ndash;Rao) </strong></class><a id="ex:brascamp-lieb"></a>Let \(\mu
-        (\mathrm{d} y) \propto \mathrm{e}^{- W (y)} \mathrm{d} y\) on
+        (\mathrm{d} y) \propto \mathrm{e}^{- U (y)} \mathrm{d} y\) on
         \(\mathbb{R}^n\), with mean \(m\). (a) Show that \(\mathbb{E}_{\mu}
-        [(y - m) \otimes DW] = 1\) and \(\mathbb{E}_{\mu} [DW \otimes DW]
-        =\mathbb{E}_{\mu} D^2 W\), and deduce \(\operatorname{Cov}_{\mu} \geq
-        (\mathbb{E}_{\mu} D^2 W)^{- 1}\). (b) For \(D^2 W > 0\), prove the
+        [(y - m) \otimes DU] = 1\) and \(\mathbb{E}_{\mu} [DU \otimes DU]
+        =\mathbb{E}_{\mu} D^2 U\), and deduce \(\operatorname{Cov}_{\mu} \geq
+        (\mathbb{E}_{\mu} D^2 U)^{- 1}\). (b) For \(D^2 U > 0\), prove the
         Brascamp&ndash;Lieb inequality for linear \(f\) by H&ouml;rmander's
         \(L^2\) method: solve \(Lg = f -\mathbb{E}_{\mu} f\) with \(L = -
-        \Delta + \langle DW, D \rangle\) and use \(\mathbb{E}_{\mu} [(Lg)^2]
-        \geq \mathbb{E}_{\mu} \langle Dg, D^2 WDg \rangle\). (c) In zero
+        \Delta + \langle DU, D \rangle\) and use \(\mathbb{E}_{\mu} [(Lg)^2]
+        \geq \mathbb{E}_{\mu} \langle Dg, D^2 UDg \rangle\). (c) In zero
         dimensions, with \(S_t = S\) and \(V_T (y) = \lambda y^4\), compute
         both bounds numerically and compare with the conditional variance;
         repeat for the double well \(V_T (y) = \frac{1}{2} y^4 - \frac{3}{2}
@@ -1928,14 +1979,14 @@ S_t^{- 1} (y - x)
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">8.11</class>.
         </strong><class style="font-style: normal"><strong>(Entropy along the localisation)
         </strong></class><a id="ex:lsi"></a>(a) Derive the formula for
-        \(\operatorname{Ent}_{\nu_T} (F)\) as the integrated quadratic
+        \(\operatorname{Ent}_{\nu_T} (\rho)\) as the integrated quadratic
         variation of \(M\), and the chain rule. (b) Show that \(DG_t (\phi) =
-        S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (F, y)\). (c) For \(V_T =
-        0\) and a linear profile, recover the Gaussian log-Sobolev inequality
-        from Theorem <a href="#thm:lsi">8.5</a>. (d) In zero dimensions, with \(Q_t = 1
-        - \mathrm{e}^{- t}\) and a convex \(V_T\), find \(\kappa_t\) and the
-        resulting constant, and compare with the Bakry&ndash;&Eacute;mery
-        criterion.</font>
+        S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (\rho, y)\). (c) For \(V_T
+        = 0\) and a linear profile, recover the Gaussian log-Sobolev
+        inequality from Theorem <a href="#thm:lsi">8.5</a>. (d) In zero dimensions, with
+        \(Q_t = 1 - \mathrm{e}^{- t}\) and a convex \(V_T\), find \(\kappa_t\)
+        and the resulting constant, and compare with the
+        Bakry&ndash;&Eacute;mery criterion.</font>
       </p>
     </div>
     <h2 id="auto-37"><a id="sec:variational"></a>9<span style="margin-left: 1em"></span>Variational structure<span style="margin-left: 1em"></span></h2>
@@ -2211,21 +2262,28 @@ X^u := X + I (u),\)
         </center></i>
       </p>
       <p style="margin-bottom: 1em">
-        <i>is the Bregman divergence of \(V\). The minimiser satisfies \(w_s =
-        - \dot{Q}_s^{1 / 2} \mathbb{E}_s [Df (\Phi^f_T) + DV_T (\Phi^f_T) -
-        DV_T
-(\Phi_T)]\), with \(\Phi^f = \Phi + I (w)\): the perturbed field
-        solves the FBSDE with terminal potential \(V_T + f\), and its force is
-        that of \(\Phi\) corrected by \(F^f_s - F_s = -\mathbb{E}_s [Df
-        (\Phi^f_T) + DV_T (\Phi^f_T) - DV_T (\Phi_T)]\).</i>
+        <i>is the remainder of the first-order Taylor expansion of \(V\). The
+        minimiser satisfies \(w_s = - \dot{Q}_s^{1 / 2} \mathbb{E}_s [Df
+        (\Phi^f_T) + DV_T (\Phi^f_T) - DV_T
+(\Phi_T)]\), with \(\Phi^f = \Phi
+        + I (w)\): the perturbed field solves the FBSDE with terminal
+        potential \(V_T + f\), and its force is that of \(\Phi\) corrected by
+        \(F^f_s - F_s = -\mathbb{E}_s [Df (\Phi^f_T) + DV_T (\Phi^f_T) - DV_T
+        (\Phi_T)]\).</i>
       </p>
     </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
+    <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>By <class style="font-style: normal">(<a href="#eq:generating">9.4</a>)</class>,
-      the left-hand side is \(\inf_u J_f (u) - J_0 (u^{\ast})\), with \(J_f
-      (u) =\mathbb{E} [f (X^u_T) + V_T (X^u_T) + \frac{1}{2} \int \|u\|^2]\).
-      Writing \(u = u^{\ast} + w\) and expanding \(\frac{1}{2} \|u^{\ast} +
-      w\|^2\), the terms \(V_T (\Phi_T)\) and \(\frac{1}{2} \int \|u^{\ast}
+      the left-hand side is \(\inf_u J_f (u) - J_0 (u^{\ast})\), with
+    </p>
+    <center>
+      \(\displaystyle J_f (u) =\mathbb{E} \left[ f (X^u_T) + V_T (X^u_T) +
+      \frac{1}{2}  \int_0^T
+\|u_s \|^2 \mathrm{d} s \right] .\)
+    </center>
+    <p style="margin-bottom: 1em">
+      Writing \(u = u^{\ast} + w\) and expanding \(\frac{1}{2}  \|u^{\ast} +
+      w\|^2\), the terms \(V_T (\Phi_T)\) and \(\frac{1}{2}  \int \|u^{\ast}
       \|^2\) cancel against \(J_0 (u^{\ast})\), and the cross term is computed
       above. The first-order condition in \(w\) is obtained as in <class
       style="font-style: normal">(<a href="#eq:EL">9.3</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
@@ -2265,7 +2323,7 @@ X^u := X + I (u),\)
       quantities. When the FBSDE has several solutions, as is expected in the
       presence of phase transitions, each solution gives a measure with its
       own variational principle; the perturbations \(w\) of finite energy only
-      probe a given solution locally. For \(\Phi^4_3\) the Bregman term
+      probe a given solution locally. For \(\Phi^4_3\) this remainder term
       contains the divergent counterterms, and, as for <class style="font-style: normal">(<a href="#eq:generating">9.4</a>)</class>,
       the change of variables of [<a href="#bib-BG20">BG20</a>] is needed before <class
       style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class> has bounds uniform in \(T\); in two
@@ -2322,7 +2380,7 @@ X^u := X + I (u),\)
         </strong></class><a id="ex:relative-vp"></a>(a) Derive <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>
         and the equation for the minimiser. (b) For a Gaussian \(\nu_T\)
         (quadratic \(V_T\)) and a linear \(f = \langle g, \cdot \rangle\),
-        compute the Bregman term, solve <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>,
+        compute the remainder term, solve <class style="font-style: normal">(<a href="#eq:relative-vp">9.6</a>)</class>,
         and recover \(- \log \int \mathrm{e}^{- \langle g, \cdot \rangle}
         \mathrm{d} \nu_T = \langle
 g, m \rangle - \frac{1}{2}  \langle g,
@@ -2864,6 +2922,19 @@ F_t\). The drift cancels,
             <a id="bib-BTW02"></a>J. Berges, N. Tetradis, C. Wetterich. Non-perturbative
             renormalization flow in quantum field theory and statistical
             physics. <em>Phys. Rep.</em> 363 (2002), 223&ndash;386.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[CE22]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-CE22"></a>Y. Chen, R. Eldan. Localization schemes: a framework
+            for proving mixing bounds for Markov chains. In <em>2022 IEEE 63rd
+            Annual Symposium on Foundations of Computer Science (FOCS)</em>,
+            2022, 110&ndash;122.
           </p>
         </dd>
       </p>

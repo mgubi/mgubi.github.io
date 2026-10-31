@@ -329,45 +329,64 @@
   </hidden>|<\hidden>
     <mytitle|Pontryagin's maximum principle>
 
-    <\with|font-size|0.9>
-      Minimise <math|J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s>
-      subject to <math|<wide|x|\<dot\>>=b<around|(|x,u|)>>,
-      <math|x<rsub|t>=x>. <strong|Hamiltonian:>
+    Minimise <math|J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s>
+    subject to <math|<wide|x|\<dot\>>=b<around|(|x,u|)>>, <math|x<rsub|t>=x>.
+    <strong|Hamiltonian:>
 
-      <\equation*>
-        H<around|(|x,p,u|)>=<around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>.
-      </equation*>
+    <\equation*>
+      H<around|(|x,p,u|)>=<around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>.
+    </equation*>
 
-      <strong|Pontryagin.> Along an optimal pair there is a <strong|costate>
-      <math|p> with
+    <strong|Pontryagin.> Along an optimal pair there is a <strong|costate>
+    <math|p> with
 
-      <\equation*>
-        <wide|x|\<dot\>>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u\<in\>arg
-        max H<around|(|x,p,\<cdummy\>|)>.
-      </equation*>
+    <\equation*>
+      <wide|x|\<dot\>>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u\<in\>arg
+      max H<around|(|x,p,\<cdummy\>|)>.
+    </equation*>
 
-      <\itemize>
-        <item>State forward, costate backward: a <strong|two-point boundary
-        problem>.
+    <\itemize>
+      <item>State forward, costate backward: a <strong|two-point boundary
+      problem>.
 
-        <item>First variation: <math|\<delta\>*J=-<big|int><around|\<langle\>|\<partial\><rsub|u>*H,v|\<rangle\>>*\<mathd\>s>.
-        The costate is the Lagrange multiplier of <math|<wide|x|\<dot\>>=b>.
+      <item>The costate is the Lagrange multiplier of the constraint
+      <math|<wide|x|\<dot\>>=b>; an optimal control is a critical point of
+      the Hamiltonian.
 
-        <item>Value function <math|V<around|(|t,x|)>>:
-        <math|\<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-D*V|)>>,
-        <math|H<rsub|\<ast\>>=max<rsub|u> H> (HJB). Hamilton's equations are
-        its characteristics, and
+      <item>Next: why this holds, and what <math|p> is.
+    </itemize>
 
-        <\equation*>
-          p<rsub|s>=-D*V<around|(|s,x<rsub|s>|)>:
-        </equation*>
+    <small|<with|color|dark grey|Pontryagin\UBoltyanskii\UGamkrelidze\UMishchenko
+    1962.>>
+  </hidden>|<\hidden>
+    <mytitle|Pontryagin: first variation and HJB>
 
-        the costate is the force the future exerts on the present.
-      </itemize>
+    <strong|First variation.> Perturb <math|u\<to\>u+\<varepsilon\>*v>; the
+    state varies by <math|\<xi\>=\<partial\><rsub|\<varepsilon\>>*x>,
 
-      <small|<with|color|dark grey|Pontryagin\UBoltyanskii\UGamkrelidze\UMishchenko
-      1962.>>
-    </with>
+    <\equation*>
+      <wide|\<xi\>|\<dot\>>=\<partial\><rsub|x>*b*\<xi\>+\<partial\><rsub|u>*b*v,<space|2em>\<xi\><rsub|t>=0.
+    </equation*>
+
+    The costate equation <math|<wide|p|\<dot\>>=-\<partial\><rsub|x>*H> is
+    exactly what makes <math|<frac|\<mathd\>|\<mathd\>s><around|\<langle\>|p,\<xi\>|\<rangle\>>=<around|\<langle\>|\<partial\><rsub|x>*\<ell\>,\<xi\>|\<rangle\>>+<around|\<langle\>|p,\<partial\><rsub|u>*b*v|\<rangle\>>>.
+    Integrating, with <math|p<rsub|T>=-D*g<around|(|x<rsub|T>|)>>:
+
+    <\equation*>
+      <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*H<around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
+    </equation*>
+
+    <strong|HJB.> Dynamic programming over
+    <math|<around|[|t,t+\<mathd\>t|]>>:
+
+    <\equation*>
+      V<around|(|t,x|)>=min<rsub|u><around*|[|\<ell\>*\<mathd\>t+V<around|(|t+\<mathd\>t,x+b*\<mathd\>t|)>|]><space|1em>\<Longrightarrow\><space|1em>\<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-D*V|)>,<space|1em>H<rsub|\<ast\>>=max<rsub|u>
+      H.
+    </equation*>
+
+    Hamilton's equations for <math|H<rsub|\<ast\>>> are its characteristics,
+    and along them <math|p<rsub|s>=-D*V<around|(|s,x<rsub|s>|)>>: the costate
+    is the force the future exerts on the present.
   </hidden>|<\hidden>
     <mytitle|The Hamiltonian of the field>
 
@@ -414,20 +433,13 @@
   </hidden>|<\hidden>
     <mytitle|State and costate>
 
-    \;
-
     <math|S<rsub|t>\<assign\>Q<rsub|T>-Q<rsub|t>>: the covariance still
     unresolved; <math|<wide|S|\<dot\>><rsub|t>=-<wide|Q|\<dot\>><rsub|t>>,
     <math|S<rsub|T>=0>. <math|\<mathd\>F<rsub|t>=\<Upsilon\><rsub|t><space|0.17em>\<mathd\>W<rsub|t>>.
 
-    <with|font-series|bold|Pontryagin.> Control problem
-    <math|\<mathd\>X=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*<around|(|u<space|0.17em>\<mathd\>t+\<mathd\>W|)>>,
-    cost <math|V<rsub|T><around|(|X<rsub|T>|)>+<frac|1|2>*<big|int><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>.
-    Hamiltonian <math|<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|t><rsup|1/2>*u|\<rangle\>>-<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>
-    is state independent <math|\<Rightarrow\>>
-    <math|\<mathd\>p<rsub|t>=\<Upsilon\><rsub|t><space|0.17em>\<mathd\>W<rsub|t>>,
-    <math|p<rsub|T>=-D*V<rsub|T><around|(|X<rsub|T>|)>>,
-    <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>.
+    Control <math|\<mathd\>X=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*<around|(|u<space|0.17em>\<mathd\>t+\<mathd\>W|)>>,
+    optimal <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>,
+    costate <math|p<rsub|t>=F<rsub|t>>.
 
     <strong|The field <math|\<Phi\>> is the state; the force <math|F> is the
     costate.>
@@ -568,8 +580,8 @@
   </hidden>|<\hidden>
     <mytitle|Brascamp\ULieb bounds on the conditional covariance>
 
-    Conditional law <math|\<mu\><rsup|\<phi\>><rsub|t>\<propto\>\<mathe\><rsup|-W>>,
-    <math|D<rsup|2>*W=S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>>. Then
+    Conditional law <math|\<mu\><rsup|\<phi\>><rsub|t>\<propto\>\<mathe\><rsup|-U>>,
+    <math|D<rsup|2>*U=S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>>. Then
 
     <\equation*>
       <around*|(|\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>|]>|)><rsup|-1>\<leq\>Cov<rsub|t>\<leq\>\<bbb-E\><rsub|t><around*|[|<around*|(|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>|)><rsup|-1>|]>.
@@ -577,11 +589,11 @@
 
     <\itemize>
       <item><strong|Lower:> Cramér\URao, no convexity needed:
-      <math|\<bbb-E\><around|[|<around|(|y-m|)>\<otimes\>D*W|]>=1> and
+      <math|\<bbb-E\><around|[|<around|(|y-m|)>\<otimes\>D*U|]>=1> and
       Cauchy\USchwarz.
 
       <item><strong|Upper:> Brascamp\ULieb (1976), for
-      <math|D<rsup|2>*W\<gtr\>0>: <math|Var<around|(|f|)>\<leq\>\<bbb-E\><around|\<langle\>|D*f,<around|(|D<rsup|2>*W|)><rsup|-1>*D*f|\<rangle\>>>.
+      <math|D<rsup|2>*U\<gtr\>0>: <math|Var<around|(|f|)>\<leq\>\<bbb-E\><around|\<langle\>|D*f,<around|(|D<rsup|2>*U|)><rsup|-1>*D*f|\<rangle\>>>.
 
       <item>Equal for quadratic <math|V<rsub|T>>. Via
       <math|Cov<rsub|t>=S<rsub|t>-S<rsub|t>*D<rsup|2>*V<rsub|t>*S<rsub|t>>:
@@ -595,11 +607,12 @@
     </itemize>
 
     <\myframed>
-      <math|\<Phi\><rsup|4><rsub|3>>: the counterterm
-      <math|-\<gamma\><rsub|T>*<big|int>:\<varphi\><rsup|2>:> breaks
-      convexity, the upper bound is lost, the conditional law may spread over
-      several wells: the <strong|large-field problem> (clipping and global
-      coercivity, Lecture<nbsp>5).
+      <math|\<Phi\><rsup|4><rsub|3>>: Wick ordering gives <math|V<rsub|T>>
+      the curvature <math|-12*\<lambda\>*c<rsub|T>\<to\>-\<infty\>> at
+      <math|\<varphi\>=0> (already for <math|\<Phi\><rsup|4><rsub|2>>). The
+      upper bound is lost, the conditional law may spread over several wells:
+      the <strong|large-field problem> (clipping and global coercivity,
+      Lecture<nbsp>5).
     </myframed>
   </hidden>|<\hidden>
     <mytitle|Stochastic localisation: a picture>
@@ -616,6 +629,33 @@
       circle: <math|\<Phi\><rsub|T>>. The conditional law localises on one
       well.
     </with>
+  </hidden>|<\hidden>
+    <mytitle|Phase space and Lagrangian graphs>
+
+    Phase space of pairs (field, force) <math|<around|(|x,p|)>\<in\>\<bbb-R\><rsup|n>\<times\>\<bbb-R\><rsup|n>>,
+    symplectic form <math|\<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>>.
+
+    <\itemize>
+      <item><math|L> (dimension <math|n>) is <strong|Lagrangian> if
+      <math|\<omega\><mid|\|><rsub|L>=0>.
+
+      <item>A graph <math|p=F<around|(|x|)>> is Lagrangian
+      <math|\<Leftrightarrow\>> <math|D*F> symmetric
+      <math|\<Leftrightarrow\>> <math|F> is a gradient. <strong|Gradient
+      sector = Lagrangian graphs.>
+
+      <item>Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
+      The shear <math|\<Sigma\><rsub|t><around|(|x,p|)>=<around|(|x+S<rsub|t>*p,p|)>>
+      is symplectic since <math|S<rsub|t>> is symmetric:
+      <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum>S<rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>.
+    </itemize>
+
+    <\myframed>
+      The image of the graph of <math|-D*V<rsub|t>> is Lagrangian; as a graph
+      over the forecast <math|\<psi\>> it is the graph of
+      <math|-D*\<Gamma\><rsub|t>>, with the Moreau transform as generating
+      function.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|The gradient sector>
 
@@ -643,33 +683,6 @@
     <math|D*V<rsub|t><around|(|x|)>=D*\<Gamma\><rsub|t><around|(|\<psi\>|)>>.
     Well defined: <math|<frac|1|2>*<around|\<langle\>|x,S<rsub|t><rsup|-1>*x|\<rangle\>>-V<rsub|t><around|(|x|)>>
     has Hessian <math|S<rsub|t><rsup|-1><math-up|Cov><rsub|t>S<rsub|t><rsup|-1>\<gtr\>0>.
-  </hidden>|<\hidden>
-    <mytitle|Phase space and Lagrangian graphs>
-
-    Phase space of pairs (field, force) <math|<around|(|x,p|)>\<in\>\<bbb-R\><rsup|n>\<times\>\<bbb-R\><rsup|n>>,
-    symplectic form <math|\<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>>.
-
-    <\itemize>
-      <item><math|L> (dimension <math|n>) is <strong|Lagrangian> if
-      <math|\<omega\><mid|\|><rsub|L>=0>.
-
-      <item>A graph <math|p=F<around|(|x|)>> is Lagrangian
-      <math|\<Leftrightarrow\>> <math|D*F> symmetric
-      <math|\<Leftrightarrow\>> <math|F> is a gradient. <strong|Gradient
-      sector = Lagrangian graphs.>
-
-      <item>Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
-      The shear <math|\<Sigma\><rsub|t><around|(|x,p|)>=<around|(|x+S<rsub|t>*p,p|)>>
-      is symplectic since <math|S<rsub|t>> is symmetric:
-      <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum><around|(|S<rsub|t>|)><rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>.
-    </itemize>
-
-    <\myframed>
-      The image of the graph of <math|-D*V<rsub|t>> is Lagrangian; as a graph
-      over the forecast <math|\<psi\>> it is the graph of a gradient
-      <math|D*\<Gamma\><rsub|t>>, with the Moreau transform as generating
-      function.
-    </myframed>
   </hidden>|<\hidden>
     <mytitle|The shear in zero dimensions>
 
@@ -788,33 +801,76 @@
     in the shell <math|<around|[|t,T|]>>; expanding in <math|V<rsub|T>> gives
     exactly the tree diagrams.
   </hidden>|<\hidden>
-    <mytitle|Log-Sobolev along the localisation>
+    <mytitle|Entropy along the localisation>
 
-    <math|M<rsub|t>=\<bbb-E\><rsub|t>*F<around|(|\<Phi\><rsub|T>|)>=<big|int>F*\<mathd\>\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>>,
-    <math|\<bbb-E\>*F=1>. Itô for <math|M*log M>:
-
-    <\equation*>
-      Ent<rsub|\<nu\><rsub|T>><around|(|F|)>=<frac|1|2>*\<bbb-E\><big|int><rsub|0><rsup|T><frac|\<mathd\><around|\<langle\>|M|\<rangle\>><rsub|t>|M<rsub|t>>=Ent<around|(|M<rsub|t>|)>+\<bbb-E\>*Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|F|)>.
-    </equation*>
-
-    <strong|Multiscale Bakry\UÉmery> (Bauerschmidt\UBodineau): if
-    <math|<wide|Q|\<dot\>><rsub|t>*D<rsup|2>*V<rsub|t>*<wide|Q|\<dot\>><rsub|t>+<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>\<geq\>\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>>
-    for all <math|t,\<phi\>>, then
-
-    <\equation*>
-      Ent<rsub|\<nu\><rsub|T>><around|(|F|)>\<leq\><frac|2|\<gamma\>>*\<bbb-E\><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|F>|\<\|\|\>><rsup|2>,<space|2em><frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\>>*\<mathd\>t.
-    </equation*>
+    <math|\<rho\>\<geq\>0>, <math|\<bbb-E\><rsub|\<nu\><rsub|T>>*\<rho\>=1>,
+    <math|M<rsub|t>=\<bbb-E\><rsub|t>*\<rho\><around|(|\<Phi\><rsub|T>|)>=G<rsub|t><around|(|\<Phi\><rsub|t>|)>>,
+    <math|G<rsub|t><around|(|\<phi\>|)>=<big|int>\<rho\>*\<mathd\>\<mu\><rsub|t><rsup|\<phi\>>>.
 
     <\itemize>
-      <item>Via <math|D<rsup|2>*V<rsub|t>=S<rsub|t><rsup|-1>-S<rsub|t><rsup|-1>*Cov<rsub|t>*S<rsub|t><rsup|-1>>:
-      an upper bound on <math|Cov<rsub|t>> in the metric
-      <math|<wide|R|\<dot\>><rsub|t>>, the rate at which conditional variance
-      is resolved.
+      <item><math|M<rsub|0>=1>, <math|M<rsub|T>=\<rho\><around|(|\<Phi\><rsub|T>|)>>,
+      and <math|\<mathd\>M<rsub|t>=<around|\<langle\>|D*G<rsub|t><around|(|\<Phi\><rsub|t>|)>,<wide|Q|\<dot\>><rsub|t><rsup|1/2>*\<mathd\>W<rsub|t>|\<rangle\>>>.
 
-      <item><strong|Entropic stability:> <math|<wide|R|\<dot\>>*Cov*<wide|R|\<dot\>>\<leq\>\<alpha\>*<wide|R|\<dot\>>>
-      on <math|<around|[|0,t|]>> <math|\<Rightarrow\>>
-      <math|Ent<around|(|F|)>\<leq\>\<mathe\><rsup|<big|int><rsub|0><rsup|t>\<alpha\>>*\<bbb-E\>*Ent<rsub|\<mu\><rsub|t>><around|(|F|)>>.
+      <item>Itô for <math|M*log M>:
+
+      <\equation*>
+        Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>=<frac|1|2>*\<bbb-E\><big|int><rsub|0><rsup|T><frac|\<mathd\><around|\<langle\>|M|\<rangle\>><rsub|t>|M<rsub|t>>=2*\<bbb-E\><big|int><rsub|0><rsup|T><around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D<sqrt|G<rsub|t>><around|(|\<Phi\><rsub|t>|)>|\<\|\|\>><rsup|2>*\<mathd\>t.
+      </equation*>
+
+      <item>Stopping at <math|t>: <strong|revealed + hidden> entropy,
+
+      <\equation*>
+        Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>=Ent<around|(|M<rsub|t>|)>+\<bbb-E\>*Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|\<rho\>|)>.
+      </equation*>
+
+      <item>The increments see the conditional law:
+      <math|D*G<rsub|t><around|(|\<phi\>|)>=S<rsub|t><rsup|-1>*Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>><around|(|\<rho\>,y|)>>.
     </itemize>
+
+    <small|<with|color|dark grey|Bauerschmidt\UBodineau\UDagallier, Probab.
+    Surveys 2024: their fluctuation measure is our stochastic localisation
+    (scale reversed).>>
+  </hidden>|<\hidden>
+    <mytitle|Multiscale Bakry\UÉmery>
+
+    <\with|font-size|0.9>
+      <strong|Theorem> (Bauerschmidt\UBodineau). If for all <math|t,\<phi\>>,
+      with <math|\<kappa\><rsub|t>\<in\>\<bbb-R\>> (possibly negative),
+
+      <\equation*>
+        <wide|Q|\<dot\>><rsub|t>*D<rsup|2>*V<rsub|t><around|(|\<phi\>|)>*<wide|Q|\<dot\>><rsub|t>+<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>\<geq\>\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>,
+      </equation*>
+
+      then <math|Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leq\><frac|2|\<gamma\>>*\<bbb-E\><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|\<rho\>>|\<\|\|\>><rsup|2>>,
+      <math|<frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\>>*\<mathd\>t>.
+
+      <\itemize>
+        <item>Gradient bound at each scale + entropy formula. Gaussian check:
+        <math|V=0>, <math|Q<rsub|t>=t*Q<rsub|T>/T>, <math|\<kappa\>=0>
+        <math|\<Rightarrow\>> Gaussian LSI.
+
+        <item>Convexity of the <strong|effective> potentials, not of
+        <math|V<rsub|T>>.
+
+        <item>By <math|D<rsup|2>*V<rsub|t>=S<rsub|t><rsup|-1>-S<rsub|t><rsup|-1>*Cov<rsub|t>*S<rsub|t><rsup|-1>>
+        and <math|<wide|Q|\<dot\>>=S*<wide|R|\<dot\>>*S>, the hypothesis is
+        the bound, uniform in <math|\<phi\>>,
+
+        <\equation*>
+          Cov<rsub|t>\<leq\>S<rsub|t>-\<kappa\><rsub|t>*<wide|R|\<dot\>><rsub|t><rsup|-1>+<frac|1|2>*<wide|R|\<dot\>><rsub|t><rsup|-1>*S<rsub|t><rsup|-1>*<wide|Q|\<ddot\>><rsub|t>*S<rsub|t><rsup|-1>*<wide|R|\<dot\>><rsub|t><rsup|-1>
+        </equation*>
+
+        (<math|=S<rsub|t>> for the Gaussian):
+        <math|\<kappa\><rsub|t>\<gtr\>0> is more concentrated than the
+        unresolved Gaussian.
+
+        <item><strong|Entropic stability> (Chen\UEldan):
+        <math|<wide|R|\<dot\>><rsub|r>*Cov<rsub|\<mu\><rsub|r><rsup|\<phi\>>>*<wide|R|\<dot\>><rsub|r>\<leq\>\<alpha\><rsub|r>*<wide|R|\<dot\>><rsub|r>>
+        for all <math|\<phi\>>, <math|r\<leq\>t> <math|\<Rightarrow\>>
+        <math|Ent<around|(|\<rho\>|)>\<leq\>\<mathe\><rsup|<big|int><rsub|0><rsup|t>\<alpha\>>*\<bbb-E\>*Ent<rsub|\<mu\><rsub|t>><around|(|\<rho\>|)>>:
+        the low resolutions must not hide too much.
+      </itemize>
+    </with>
   </hidden>|<\hidden>
     <vspace*|2.5cm>
 
@@ -999,7 +1055,13 @@
     Perturb the optimal drift: <math|u=u<rsup|\<ast\>>+w>,
     <math|X<rsup|u>=\<Phi\>+I<around|(|w|)>>,
     <math|I<rsub|t><around|(|w|)>=<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsup|1/2>*w>.
-    By Euler\ULagrange, the extensive terms cancel exactly:
+    Euler\ULagrange gives the cross term
+
+    <\equation*>
+      \<bbb-E\><big|int><around|\<langle\>|u<rsup|\<ast\>>,w|\<rangle\>>=-\<bbb-E\><around|\<langle\>|D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>,I<rsub|T><around|(|w|)>|\<rangle\>>,
+    </equation*>
+
+    and the two extensive infima cancel exactly:
 
     <\equation*>
       -log <big|int>\<mathe\><rsup|-f>*\<mathd\>\<nu\><rsub|T>=inf<rsub|w>
@@ -1007,24 +1069,42 @@
     </equation*>
 
     <math|B<rsub|V><around|(|\<phi\>,h|)>=V<around|(|\<phi\>+h|)>-V<around|(|\<phi\>|)>-<around|\<langle\>|D*V<around|(|\<phi\>|)>,h|\<rangle\>>>:
-    the <strong|Bregman divergence>.
+    the <strong|first-order Taylor remainder>.
 
     <\itemize>
-      <item>Local interaction: <math|B=<big|int>b<rsub|T><around|(|\<Phi\><rsub|T><around|(|x|)>,I<rsub|T><around|(|x|)>|)>*\<mathd\>x>,
-      zero where <math|I=0>: every term is <strong|intensive>.
+      <item>Minimiser: <math|\<Phi\><rsup|f>=\<Phi\>+I<around|(|w|)>> solves
+      the FBSDE with terminal potential <math|V<rsub|T>+f>, a perturbation of
+      <math|\<Phi\>>: <math|F<rsup|f>-F=-\<bbb-E\><rsub|s><around|[|D*f+D*V<rsub|T><around|(|\<Phi\><rsup|f><rsub|T>|)>-D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>.
+    </itemize>
+  </hidden>|<\hidden>
+    <mytitle|Infinite-volume measures>
 
-      <item>Minimiser: the FBSDE with terminal potential <math|V<rsub|T>+f>,
-      as a <strong|perturbation> of <math|\<Phi\>>.
+    Local interaction <math|V<rsub|T>=<big|int>v<rsub|T><around|(|\<varphi\><around|(|x|)>|)>*\<mathd\>x>:
 
-      <item>Makes sense in infinite volume with <math|\<Phi\>> solving the
-      infinite-volume FBSDE.
+    <\equation*>
+      B<rsub|V<rsub|T>><around|(|\<phi\>,h|)>=<big|int>b<rsub|T><around|(|\<phi\><around|(|x|)>,h<around|(|x|)>|)>*\<mathd\>x,<space|2em>b<rsub|T><around|(|a,h|)>=v<rsub|T><around|(|a+h|)>-v<rsub|T><around|(|a|)>-v<rsub|T><rprime|'><around|(|a|)>*h.
+    </equation*>
+
+    <\itemize>
+      <item><math|b<rsub|T><around|(|a,0|)>=0>: only the region where the
+      perturbation acts counts. Every term is <strong|intensive>: no free
+      energy, only <math|\<Phi\>> and its perturbation.
+
+      <item><math|f> local <math|\<Rightarrow\>> the optimal <math|w> should
+      decay away from its support, at the rate of decay of correlations.
+
+      <item>Several solutions of the FBSDE (phase transitions)
+      <math|\<Rightarrow\>> several measures, each with its own principle.
+
+      <item><math|\<Phi\><rsup|4><rsub|3>>: the remainder term carries the
+      counterterms; the change of variables of Barashkov\UGubinelli is still
+      needed.
     </itemize>
 
     <\myframed>
-      <strong|Formal statement.> Infinite-volume measures <math|=> laws of
-      <math|\<Phi\><rsub|T>> for solutions of the infinite-volume FBSDE
-      satisfying this principle for all local <math|f>. Several solutions
-      <math|\<leftrightarrow\>> several phases.
+      <strong|Formal statement.> An infinite-volume measure is the law of
+      <math|\<Phi\><rsub|T>> for a solution of the infinite-volume FBSDE
+      satisfying the relative variational principle for all local <math|f>.
     </myframed>
   </hidden>|<\hidden>
     <vspace*|2.5cm>

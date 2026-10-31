@@ -19,10 +19,15 @@
     terminal field removes its drift and integrates the transport part of the
     force flow exactly. In the gradient case the remaining equation for the
     force is the Wetterich equation for the effective average action, whose
-    propagator is the conditional covariance. We then discuss the variational
-    structure of the flow (Boué\UDupuis formula and Hamilton\UJacobi\UBellman
-    equation) in finite and infinite volume. The additional material covers
-    the algebraic and perturbative structure of the flow (semigroup,
+    propagator is the conditional covariance. We read the FBSDE as the
+    stochastic Pontryagin system of a control problem, bound the conditional
+    covariance from both sides (Brascamp\ULieb and Cramér\URao), and prove
+    log-Sobolev inequalities along the localisation (multiscale
+    Bakry\UÉmery). We then discuss the variational structure of the flow
+    (Boué\UDupuis formula and Hamilton\UJacobi\UBellman equation) in finite
+    and infinite volume, where it becomes a variational principle relative to
+    the FBSDE involving only intensive quantities. The additional material
+    covers the algebraic and perturbative structure of the flow (semigroup,
     flatness, counterterms for <math|\<Phi\><rsup|4><rsub|3>>), and the
     Dyson\USchwinger equations at every scale. The treatment is formal: we
     compute as if all objects were smooth and integrable, and we indicate
@@ -684,19 +689,16 @@
   The noise adds the Itô term to the Hamilton\UJacobi equation, which becomes
   the Polchinski equation <eqref|eq:polchinski>: its quadratic,
   Hamilton\UJacobi part generates the trees, and the trace term generates the
-  loops. The forward\Ubackward system <eqref|eq:fbsde-system> is the
-  stochastic Hamiltonian system of this problem.
+  loops.
 
-  The FBSDE is the stochastic Pontryagin system of the control problem of
-  Theorem<nbsp><reference|thm:BD>. The controlled field
-  <math|\<mathd\>X=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*<around|(|u<space|0.17em>\<mathd\>t+\<mathd\>W|)>>
-  has Hamiltonian <math|<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|t><rsup|1/2>*u|\<rangle\>>-<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>,
-  which does not depend on the state. By the stochastic maximum principle
-  (Exercise<nbsp><reference|ex:pontryagin>), the adjoint process <math|p> has
-  no drift, <math|\<mathd\>p<rsub|t>=\<Upsilon\><rsub|t><space|0.17em>\<mathd\>W<rsub|t>>,
+  In the notation of Theorem<nbsp><reference|thm:BD> the controlled field is
+  <math|\<mathd\>X=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*<around|(|u<space|0.17em>\<mathd\>t+\<mathd\>W|)>>,
+  the costate has no drift, <math|\<mathd\>p<rsub|t>=\<Upsilon\><rsub|t><space|0.17em>\<mathd\>W<rsub|t>>,
   with terminal value <math|p<rsub|T>=-D*V<rsub|T><around|(|X<rsub|T>|)>>,
-  and the optimal control is <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>.
-  Thus
+  and the optimal control is <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>
+  (Exercise<nbsp><reference|ex:pontryagin>). Since <math|p<rsub|t>> is the
+  value <math|F<rsub|t>> of the force, the FBSDE <eqref|eq:fbsde-system> is
+  the stochastic Pontryagin system of this problem:
 
   <\padded-center>
     <em|the field <math|\<Phi\>> is the state, and the force <math|F> is the
@@ -715,8 +717,8 @@
   <math|-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>>*D<rsup|2>*F|)>> is
   the Itô correction, and generates the loops.
 
-  Without noise the state\Ucostate pair follows the Hamiltonian flow of the
-  free Hamiltonian <math|h<rsub|s><around|(|p|)>=<frac|1|2>*<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>>:
+  As seen above, without noise the state\Ucostate pair follows the
+  Hamiltonian flow of the free Hamiltonian <math|H<rsub|\<ast\>>>:
   <math|<wide|p|\<dot\>>=0> and <math|<wide|x|\<dot\>>=<wide|Q|\<dot\>><rsub|s>*p>.
   From <math|t> to <math|T> this flow is the linear shear
 
@@ -899,21 +901,22 @@
 
   <paragraph|Brascamp\ULieb and Cramér\URao bounds.> The conditional law
   <math|\<mu\><rsup|\<phi\>><rsub|t>> has density proportional to
-  <math|\<mathe\><rsup|-W>>, with <math|W<around|(|y|)>=V<rsub|T><around|(|y|)>+<frac|1|2><around|\<langle\>|y-\<phi\>,S<rsub|t><rsup|-1>*<around|(|y-\<phi\>|)>|\<rangle\>>>
-  and <math|D<rsup|2>*W=S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>>. Two
-  classical inequalities bound its covariance by the Hessian of <math|W>. If
-  <math|D<rsup|2>*W\<gtr\>0>, the Brascamp\ULieb inequality<nbsp><cite|BL76>,
-  <math|Var<rsub|\<mu\>><around|(|f|)>\<leq\>\<bbb-E\><rsub|\<mu\>><around|\<langle\>|D*f,<around|(|D<rsup|2>*W|)><rsup|-1>*D*f|\<rangle\>>>,
+  <math|\<mathe\><rsup|-U>>, with <math|U<around|(|y|)>=V<rsub|T><around|(|y|)>+<frac|1|2><around|\<langle\>|y-\<phi\>,S<rsub|t><rsup|-1>*<around|(|y-\<phi\>|)>|\<rangle\>>>
+  and <math|D<rsup|2>*U=S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T>>. Two
+  classical inequalities bound its covariance by the Hessian of <math|U>. If
+  <math|D<rsup|2>*U\<gtr\>0>, the Brascamp\ULieb inequality<nbsp><cite|BL76>,
+  <math|Var<rsub|\<mu\>><around|(|f|)>\<leq\>\<bbb-E\><rsub|\<mu\>><around|\<langle\>|D*f,<around|(|D<rsup|2>*U|)><rsup|-1>*D*f|\<rangle\>>>,
   applied to linear functions <math|f=<around|\<langle\>|h,\<cdummy\>|\<rangle\>>>,
-  and without any convexity the Cramér\URao inequality give
+  and the Cramér\URao inequality, which needs no convexity, give respectively
+  the upper and the lower bound in
 
   <\equation*>
     <around*|(|\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>|)><rsup|-1>\<leq\>Cov<rsub|t>\<leq\>\<bbb-E\><rsub|t><around*|[|<around*|(|S<rsub|t><rsup|-1>+D<rsup|2>*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|)><rsup|-1>|]>.
   </equation*>
 
-  The lower bound follows from <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|y-m|)>\<otimes\>D*W<around|(|y|)>|]>=1>
+  The lower bound follows from <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|y-m|)>\<otimes\>D*U<around|(|y|)>|]>=1>
   (integration by parts) and the Cauchy\USchwarz inequality, with the Fisher
-  information <math|\<bbb-E\><rsub|\<mu\>><around|[|D*W\<otimes\>D*W|]>=\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*W>
+  information <math|\<bbb-E\><rsub|\<mu\>><around|[|D*U\<otimes\>D*U|]>=\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*U>
   (Exercise<nbsp><reference|ex:brascamp-lieb>). The two bounds coincide when
   <math|V<rsub|T>> is quadratic, and their gap is a Jensen gap for the
   inverse. Through Proposition<nbsp><reference|prop:H-cov> they are two-sided
@@ -934,12 +937,13 @@
     uniformly in the conditioning: a uniform mass in the interaction is a
     uniform mass in every conditional law.
 
-    <item>For <math|\<Phi\><rsup|4><rsub|3>> the counterterm
-    <math|-\<gamma\><rsub|T>*<big|int>:\<varphi\><rsup|2>:> makes
-    <math|V<rsub|T>> non-convex, with a negative curvature that diverges as
-    <math|T\<to\>\<infty\>>. The upper bound is lost, and at low resolution
-    the conditional law may spread over several wells
-    (Figure<nbsp><reference|fig:localisation>). This is the large-field
+    <item>For <math|\<Phi\><rsup|4><rsub|3>> convexity is already lost
+    through the Wick ordering: <math|H<rsub|4>*<around|(|\<varphi\>;c<rsub|T>|)>=\<varphi\><rsup|4>-6*c<rsub|T>*\<varphi\><rsup|2>+3*c<rsub|T><rsup|2>>,
+    so <eqref|eq:phi4-VT> has curvature <math|-12*\<lambda\>*c<rsub|T>> at
+    <math|\<varphi\>=0>, which diverges as <math|T\<to\>\<infty\>> (this
+    happens already for <math|\<Phi\><rsup|4><rsub|2>>). The upper bound is
+    lost, and at low resolution the conditional law may spread over several
+    wells (Figure<nbsp><reference|fig:localisation>). This is the large-field
     problem. In Lecture<nbsp>5 it is handled by a clipped approximate action,
     whose global coercivity (Lemma<nbsp>14.1 there) is a bound of
     Brascamp\ULieb type on the response.
@@ -961,29 +965,26 @@
   <subsection|The gradient sector: Wetterich's equation>
 
   <paragraph|Phase space and Lagrangian graphs.> Pairs
-  <math|<around|(|x,p|)>> of a field and a force form the phase space
-  <math|\<bbb-R\><rsup|n>\<times\>\<bbb-R\><rsup|n>>, with the symplectic
-  form <math|\<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>>.
+  <math|<around|(|x,p|)>> of a field and a value of the force form the phase
+  space <math|\<bbb-R\><rsup|n>\<times\>\<bbb-R\><rsup|n>>, with the
+  symplectic form <math|\<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>>.
   A submanifold <math|L> of dimension <math|n> is <em|Lagrangian> if
   <math|\<omega\>> vanishes on it. The graph
   <math|L=<around|{|<around|(|x,F<around|(|x|)>|)>|}>> of a force field is
   Lagrangian if and only if <math|<big|sum><rsub|i,j>\<partial\><rsub|j>*F<rsub|i>*\<mathd\>x<rsub|i>\<wedge\>\<mathd\>x<rsub|j>=0>,
   i.e. <math|D*F> is symmetric, i.e. <math|F> is (locally) a gradient: the
-  gradient sector is the sector of Lagrangian graphs. A linear map preserves
-  <math|\<omega\>> (it is <em|symplectic>) if and only if it maps Lagrangian
-  submanifolds to Lagrangian submanifolds. The shear <eqref|eq:shear> is
-  symplectic, since <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum><rsub|i,j><around|(|S<rsub|t>|)><rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>
+  gradient sector is the sector of Lagrangian graphs. A map that preserves
+  <math|\<omega\>> (a <em|symplectic> map) sends Lagrangian submanifolds to
+  Lagrangian submanifolds. The shear <eqref|eq:shear> is symplectic, since
+  <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum><rsub|i,j><around|(|S<rsub|t>|)><rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>
   for <math|S<rsub|t>> symmetric. So it maps the graph of a gradient to a
   Lagrangian submanifold; if the image is again a graph over the new base
-  variable, it is the graph of a gradient. This is what we use now.
+  variable, it is the graph of a gradient.
 
-  Now let <math|F<rsub|t>=-D*V<rsub|t>>. The graph
-  <math|<around|{|<around|(|x,-D*V<rsub|t><around|(|x|)>|)>|}>> is a
-  Lagrangian submanifold of the (field, force) phase space, and the shear
-  <eqref|eq:shear> is symplectic because <math|S<rsub|t>> is symmetric. Its
-  image is again Lagrangian. It is a graph over <math|\<psi\>>: the map
-  <math|x\<mapsto\>x+S<rsub|t>*F<rsub|t><around|(|x|)>> is <math|S<rsub|t>>
-  times the gradient of <math|<frac|1|2>*<around|\<langle\>|x,S<rsub|t><rsup|-1>*x|\<rangle\>>-V<rsub|t><around|(|x|)>>,
+  Now let <math|F<rsub|t>=-D*V<rsub|t>>. Its graph is Lagrangian, hence so is
+  its image under the shear. The image is a graph over <math|\<psi\>>: the
+  map <math|x\<mapsto\>x+S<rsub|t>*F<rsub|t><around|(|x|)>> is
+  <math|S<rsub|t>> times the gradient of <math|<frac|1|2>*<around|\<langle\>|x,S<rsub|t><rsup|-1>*x|\<rangle\>>-V<rsub|t><around|(|x|)>>,
   which is strictly convex since its Hessian is
   <math|S<rsub|t><rsup|-1><math-up|Cov><rsub|t>S<rsub|t><rsup|-1>\<gtr\>0>
   (Proposition<nbsp><reference|prop:H-cov>), so the map is injective. Hence
@@ -1162,34 +1163,34 @@
   this dictionary their argument is an entropy computation along our
   filtration.
 
-  <paragraph|Entropy as quadratic variation.> Let <math|F\<geq\>0> with
-  <math|\<bbb-E\><rsub|\<nu\><rsub|T>>*F=1>, and let
-  <math|M<rsub|t>=\<bbb-E\><rsub|t><around|[|F<around|(|\<Phi\><rsub|T>|)>|]>=G<rsub|t><around|(|\<Phi\><rsub|t>|)>>,
-  with <math|G<rsub|t><around|(|\<phi\>|)>=<big|int>F*<space|0.17em>\<mathd\>\<mu\><rsub|t><rsup|\<phi\>>>.
+  <paragraph|Entropy as quadratic variation.> Let <math|\<rho\>\<geq\>0> with
+  <math|\<bbb-E\><rsub|\<nu\><rsub|T>>*\<rho\>=1>, and let
+  <math|M<rsub|t>=\<bbb-E\><rsub|t><around|[|\<rho\><around|(|\<Phi\><rsub|T>|)>|]>=G<rsub|t><around|(|\<Phi\><rsub|t>|)>>,
+  with <math|G<rsub|t><around|(|\<phi\>|)>=<big|int>\<rho\>*<space|0.17em>\<mathd\>\<mu\><rsub|t><rsup|\<phi\>>>.
   The martingale <math|M> runs from <math|M<rsub|0>=1> to
-  <math|M<rsub|T>=F<around|(|\<Phi\><rsub|T>|)>>, and its noise is that of
-  the field: <math|\<mathd\>M<rsub|t>=<around|\<langle\>|D*G<rsub|t><around|(|\<Phi\><rsub|t>|)>,<wide|Q|\<dot\>><rsub|t><rsup|1/2>*\<mathd\>W<rsub|t>|\<rangle\>>>.
+  <math|M<rsub|T>=\<rho\><around|(|\<Phi\><rsub|T>|)>>, and its noise is that
+  of the field: <math|\<mathd\>M<rsub|t>=<around|\<langle\>|D*G<rsub|t><around|(|\<Phi\><rsub|t>|)>,<wide|Q|\<dot\>><rsub|t><rsup|1/2>*\<mathd\>W<rsub|t>|\<rangle\>>>.
   Itô's formula for <math|M*log M> gives
 
   <\equation*>
-    Ent<rsub|\<nu\><rsub|T>><around|(|F|)>=<frac|1|2>*\<bbb-E\><big|int><rsub|0><rsup|T><frac|\<mathd\><around|\<langle\>|M|\<rangle\>><rsub|t>|M<rsub|t>>=2*\<bbb-E\><big|int><rsub|0><rsup|T><around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D<sqrt|G<rsub|t>><around|(|\<Phi\><rsub|t>|)>|\<\|\|\>><rsup|2>*\<mathd\>t,
+    Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>=<frac|1|2>*\<bbb-E\><big|int><rsub|0><rsup|T><frac|\<mathd\><around|\<langle\>|M|\<rangle\>><rsub|t>|M<rsub|t>>=2*\<bbb-E\><big|int><rsub|0><rsup|T><around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D<sqrt|G<rsub|t>><around|(|\<Phi\><rsub|t>|)>|\<\|\|\>><rsup|2>*\<mathd\>t,
   </equation*>
 
   and, stopping at resolution <math|t>, the chain rule
 
   <\equation*>
-    Ent<rsub|\<nu\><rsub|T>><around|(|F|)>=Ent<around|(|G<rsub|t><around|(|\<Phi\><rsub|t>|)>|)>+\<bbb-E\><around*|[|Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|F|)>|]>:
+    Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>=Ent<around|(|G<rsub|t><around|(|\<Phi\><rsub|t>|)>|)>+\<bbb-E\><around*|[|Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|\<rho\>|)>|]>:
   </equation*>
 
   the entropy already revealed at resolution <math|t> plus the expected
   entropy still hidden. The increments are controlled by the conditional law:
   differentiating the density of <math|\<mu\><rsub|t><rsup|\<phi\>>> in
-  <math|\<phi\>>, <math|D*G<rsub|t><around|(|\<phi\>|)>=S<rsub|t><rsup|-1>*Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>><around|(|F,y|)>>.
+  <math|\<phi\>>, <math|D*G<rsub|t><around|(|\<phi\>|)>=S<rsub|t><rsup|-1>*Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>><around|(|\<rho\>,y|)>>.
 
   <\theorem>
     <dueto|Multiscale Bakry\UÉmery<nbsp><cite|BBD24>><label|thm:lsi>(formal
-    in infinite dimensions) Suppose that there are real numbers
-    <math|\<kappa\><rsub|t>> such that, for all
+    in infinite dimensions) Suppose that there are real numbers (possibly
+    negative) <math|\<kappa\><rsub|t>> such that, for all
     <math|t\<in\><around|[|0,T|]>> and all <math|\<phi\>>, as quadratic
     forms,
 
@@ -1200,37 +1201,67 @@
     Then <math|\<nu\><rsub|T>> satisfies the log-Sobolev inequality
 
     <\equation*>
-      Ent<rsub|\<nu\><rsub|T>><around|(|F|)>\<leq\><frac|2|\<gamma\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around*|[|<around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|F>|\<\|\|\>><rsup|2>|]>,<space|2em><frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>exp
+      Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leq\><frac|2|\<gamma\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around*|[|<around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|\<rho\>>|\<\|\|\>><rsup|2>|]>,<space|2em><frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>exp
       <around*|(|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r|)>*\<mathd\>t.
     </equation*>
   </theorem>
 
   The hypothesis gives, at each resolution, the gradient bound
-  <math|<around|\<\|\|\>|<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D<sqrt|G<rsub|t>>|\<\|\|\>><rsup|2>\<leq\>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\>>*<big|int><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|F>|\<\|\|\>><rsup|2>*\<mathd\>\<mu\><rsub|t><rsup|\<phi\>>>;
+
+  <\equation*>
+    <around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D<sqrt|G<rsub|t>>|\<\|\|\>><rsup|2>\<leq\>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r>*<big|int><around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|\<rho\>>|\<\|\|\>><rsup|2>*\<mathd\>\<mu\><rsub|t><rsup|\<phi\>>;
+  </equation*>
+
   inserted in the entropy formula it gives the theorem<nbsp><cite|BBD24>. For
   <math|V<rsub|T>=0> and a linear profile <math|Q<rsub|t>=t*Q<rsub|T>/T> one
   may take <math|\<kappa\>=0>, so <math|1/\<gamma\>=T> and the theorem is the
-  Gaussian log-Sobolev inequality <math|Ent<around|(|F|)>\<leq\>2*\<bbb-E\><around|\<langle\>|D<sqrt|F>,Q<rsub|T>*D<sqrt|F>|\<rangle\>>>.
+  Gaussian log-Sobolev inequality <math|Ent<around|(|\<rho\>|)>\<leq\>2*\<bbb-E\><around|\<langle\>|D<sqrt|\<rho\>>,Q<rsub|T>*D<sqrt|\<rho\>>|\<rangle\>>>.
   The hypothesis is a convexity condition on the effective potentials at
   every scale, not on <math|V<rsub|T>>, corrected by the scale dependence
-  <math|<wide|Q|\<ddot\>><rsub|t>> of the decomposition.
+  <math|<wide|Q|\<ddot\>><rsub|t>> of the decomposition;
+  <math|\<kappa\><rsub|t>> may be negative at some scales: only the weights
+  <math|\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\>>> enter
+  <math|\<gamma\>>.
 
   <paragraph|In terms of the conditional covariance.> By
   Proposition<nbsp><reference|prop:H-cov>,
   <math|D<rsup|2>*V<rsub|t>=S<rsub|t><rsup|-1>-S<rsub|t><rsup|-1>*Cov<rsub|t>*S<rsub|t><rsup|-1>>,
   and <math|S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1>=<wide|R|\<dot\>><rsub|t>>
-  is the derivative of the regulator <eqref|eq:response>. So the hypothesis
-  is an upper bound on the conditional covariance, measured in the metric
-  <math|<wide|R|\<dot\>><rsub|t>>: it bounds the same quantity
-  <math|Cov<rsub|t>*<wide|R|\<dot\>><rsub|t>*Cov<rsub|t>> which, by
-  <eqref|eq:cov-dynamics>, is the rate at which the conditional variance is
-  resolved. In this form<nbsp><cite|BBD24>, if
-  <math|<wide|R|\<dot\>><rsub|r>*Cov<rsub|r>*<wide|R|\<dot\>><rsub|r>\<leq\>\<alpha\><rsub|r>*<wide|R|\<dot\>><rsub|r>>
-  for <math|r\<leq\>t>, then
+  is the derivative of the regulator <eqref|eq:response>. Since
+  <math|<wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1>=S<rsub|t>*<wide|R|\<dot\>><rsub|t>>,
+  the hypothesis reads
 
   <\equation*>
-    Ent<rsub|\<nu\><rsub|T>><around|(|F|)>\<leq\>exp
-    <around*|(|<big|int><rsub|0><rsup|t>\<alpha\><rsub|r>*\<mathd\>r|)>*\<bbb-E\><around*|[|Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|F|)>|]>:
+    S<rsub|t>*<wide|R|\<dot\>><rsub|t>*Cov<rsub|t>*<wide|R|\<dot\>><rsub|t>*S<rsub|t>\<leq\><wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t>+<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>-\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>:
+  </equation*>
+
+  if <math|<wide|Q|\<dot\>><rsub|t>> is invertible, conjugating by
+  <math|<wide|Q|\<dot\>><rsub|t><rsup|-1>=S<rsub|t><rsup|-1>*<wide|R|\<dot\>><rsub|t><rsup|-1>*S<rsub|t><rsup|-1>>
+  shows that it is equivalent to the explicit bound
+
+  <\equation>
+    Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>>\<leq\>S<rsub|t>-\<kappa\><rsub|t>*<wide|R|\<dot\>><rsub|t><rsup|-1>+<frac|1|2>*<wide|R|\<dot\>><rsub|t><rsup|-1>*S<rsub|t><rsup|-1>*<wide|Q|\<ddot\>><rsub|t>*S<rsub|t><rsup|-1>*<wide|R|\<dot\>><rsub|t><rsup|-1><space|2em>\<forall\>\<phi\>.<label|eq:lsi-cov>
+  </equation>
+
+  When <math|Q<rsub|t>> and <math|S<rsub|t>> are functions of one operator
+  (Fourier multipliers, say), <math|<wide|R|\<dot\>><rsub|t><rsup|-1>=S<rsub|t><rsup|2>*<wide|Q|\<dot\>><rsub|t><rsup|-1>>
+  and the right-hand side is <math|S<rsub|t>-S<rsub|t><rsup|2>*<wide|Q|\<dot\>><rsub|t><rsup|-2>*<around|(|\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>-<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>|)>>.
+  For the Gaussian case with a linear profile (<math|\<kappa\>=0>,
+  <math|<wide|Q|\<ddot\>>=0>) it is <math|Cov<rsub|t>\<leq\>S<rsub|t>>, with
+  equality. A positive <math|\<kappa\><rsub|t>> makes every conditional law
+  strictly more concentrated than the unresolved Gaussian fluctuation; a
+  negative one lets <math|Cov<rsub|t>> exceed <math|S<rsub|t>>, as in a
+  double well at low resolution. The hypothesis is thus an upper bound on the
+  conditional covariance, uniform in the conditioning, measured in the metric
+  <math|<wide|R|\<dot\>><rsub|t>>. Closely related is the <em|entropic
+  stability> of Chen and Eldan<nbsp><cite|CE22> (see also<nbsp><cite|BBD24>):
+  if, for all <math|r\<leq\>t> and all <math|\<phi\>>,
+  <math|<wide|R|\<dot\>><rsub|r>*Cov<rsub|\<mu\><rsub|r><rsup|\<phi\>>>*<wide|R|\<dot\>><rsub|r>\<leq\>\<alpha\><rsub|r>*<wide|R|\<dot\>><rsub|r>>,
+  then
+
+  <\equation*>
+    Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leq\>exp
+    <around*|(|<big|int><rsub|0><rsup|t>\<alpha\><rsub|r>*\<mathd\>r|)>*\<bbb-E\><around*|[|Ent<rsub|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>><around|(|\<rho\>|)>|]>:
   </equation*>
 
   the total entropy is controlled by the entropy that is still hidden at
@@ -1338,16 +1369,16 @@
 
   <\exercise>
     <dueto|Brascamp\ULieb and Cramér\URao><label|ex:brascamp-lieb>Let
-    <math|\<mu\><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|-W<around|(|y|)>>*\<mathd\>y>
+    <math|\<mu\><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|-U<around|(|y|)>>*\<mathd\>y>
     on <math|\<bbb-R\><rsup|n>>, with mean <math|m>. (a) Show that
-    <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|y-m|)>\<otimes\>D*W|]>=1>
-    and <math|\<bbb-E\><rsub|\<mu\>><around|[|D*W\<otimes\>D*W|]>=\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*W>,
-    and deduce <math|Cov<rsub|\<mu\>>\<geq\><around|(|\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*W|)><rsup|-1>>.
-    (b) For <math|D<rsup|2>*W\<gtr\>0>, prove the Brascamp\ULieb inequality
+    <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|y-m|)>\<otimes\>D*U|]>=1>
+    and <math|\<bbb-E\><rsub|\<mu\>><around|[|D*U\<otimes\>D*U|]>=\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*U>,
+    and deduce <math|Cov<rsub|\<mu\>>\<geq\><around|(|\<bbb-E\><rsub|\<mu\>>*D<rsup|2>*U|)><rsup|-1>>.
+    (b) For <math|D<rsup|2>*U\<gtr\>0>, prove the Brascamp\ULieb inequality
     for linear <math|f> by Hörmander's <math|L<rsup|2>> method: solve
     <math|L*g=f-\<bbb-E\><rsub|\<mu\>>*f> with
-    <math|L=-\<Delta\>+<around|\<langle\>|D*W,D|\<rangle\>>> and use
-    <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|L*g|)><rsup|2>|]>\<geq\>\<bbb-E\><rsub|\<mu\>><around|\<langle\>|D*g,D<rsup|2>*W*D*g|\<rangle\>>>.
+    <math|L=-\<Delta\>+<around|\<langle\>|D*U,D|\<rangle\>>> and use
+    <math|\<bbb-E\><rsub|\<mu\>><around|[|<around|(|L*g|)><rsup|2>|]>\<geq\>\<bbb-E\><rsub|\<mu\>><around|\<langle\>|D*g,D<rsup|2>*U*D*g|\<rangle\>>>.
     (c) In zero dimensions, with <math|S<rsub|t>=S> and
     <math|V<rsub|T><around|(|y|)>=\<lambda\>*y<rsup|4>>, compute both bounds
     numerically and compare with the conditional variance; repeat for the
@@ -1356,9 +1387,9 @@
 
   <\exercise>
     <dueto|Entropy along the localisation><label|ex:lsi>(a) Derive the
-    formula for <math|Ent<rsub|\<nu\><rsub|T>><around|(|F|)>> as the
+    formula for <math|Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>> as the
     integrated quadratic variation of <math|M>, and the chain rule. (b) Show
-    that <math|D*G<rsub|t><around|(|\<phi\>|)>=S<rsub|t><rsup|-1>*Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>><around|(|F,y|)>>.
+    that <math|D*G<rsub|t><around|(|\<phi\>|)>=S<rsub|t><rsup|-1>*Cov<rsub|\<mu\><rsub|t><rsup|\<phi\>>><around|(|\<rho\>,y|)>>.
     (c) For <math|V<rsub|T>=0> and a linear profile, recover the Gaussian
     log-Sobolev inequality from Theorem<nbsp><reference|thm:lsi>. (d) In zero
     dimensions, with <math|Q<rsub|t>=1-\<mathe\><rsup|-t>> and a convex
@@ -1538,8 +1569,8 @@
       B<rsub|V><around|(|\<phi\>,h|)>\<assign\>V<around|(|\<phi\>+h|)>-V<around|(|\<phi\>|)>-<around|\<langle\>|D*V<around|(|\<phi\>|)>,h|\<rangle\>>
     </equation*>
 
-    is the Bregman divergence of <math|V>. The minimiser satisfies
-    <math|w<rsub|s>=-<wide|Q|\<dot\>><rsub|s><rsup|1/2>*\<bbb-E\><rsub|s><around|[|D*f<around|(|\<Phi\><rsup|f><rsub|T>|)>+D*V<rsub|T><around|(|\<Phi\><rsup|f><rsub|T>|)>-D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>,
+    is the remainder of the first-order Taylor expansion of <math|V>. The
+    minimiser satisfies <math|w<rsub|s>=-<wide|Q|\<dot\>><rsub|s><rsup|1/2>*\<bbb-E\><rsub|s><around|[|D*f<around|(|\<Phi\><rsup|f><rsub|T>|)>+D*V<rsub|T><around|(|\<Phi\><rsup|f><rsub|T>|)>-D*V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>,
     with <math|\<Phi\><rsup|f>=\<Phi\>+I<around|(|w|)>>: the perturbed field
     solves the FBSDE with terminal potential <math|V<rsub|T>+f>, and its
     force is that of <math|\<Phi\>> corrected by
@@ -1549,11 +1580,15 @@
   <\proof>
     By <eqref|eq:generating>, the left-hand side is <math|inf<rsub|u>
     J<rsub|f><around|(|u|)>-J<rsub|0><around|(|u<rsup|\<ast\>>|)>>, with
-    <math|J<rsub|f><around|(|u|)>=\<bbb-E\><around|[|f<around|(|X<rsup|u><rsub|T>|)>+V<rsub|T><around|(|X<rsup|u><rsub|T>|)>+<frac|1|2><big|int><around|\<\|\|\>|u|\<\|\|\>><rsup|2>|]>>.
+
+    <\equation*>
+      J<rsub|f><around|(|u|)>=\<bbb-E\><around*|[|f<around|(|X<rsup|u><rsub|T>|)>+V<rsub|T><around|(|X<rsup|u><rsub|T>|)>+<frac|1|2>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|u<rsub|s>|\<\|\|\>><rsup|2>*\<mathd\>s|]>.
+    </equation*>
+
     Writing <math|u=u<rsup|\<ast\>>+w> and expanding
-    <math|<frac|1|2><around|\<\|\|\>|u<rsup|\<ast\>>+w|\<\|\|\>><rsup|2>>,
+    <math|<frac|1|2>*<around|\<\|\|\>|u<rsup|\<ast\>>+w|\<\|\|\>><rsup|2>>,
     the terms <math|V<rsub|T><around|(|\<Phi\><rsub|T>|)>> and
-    <math|<frac|1|2><big|int><around|\<\|\|\>|u<rsup|\<ast\>>|\<\|\|\>><rsup|2>>
+    <math|<frac|1|2>*<big|int><around|\<\|\|\>|u<rsup|\<ast\>>|\<\|\|\>><rsup|2>>
     cancel against <math|J<rsub|0><around|(|u<rsup|\<ast\>>|)>>, and the
     cross term is computed above. The first-order condition in <math|w> is
     obtained as in <eqref|eq:EL>.
@@ -1588,11 +1623,11 @@
   several solutions, as is expected in the presence of phase transitions,
   each solution gives a measure with its own variational principle; the
   perturbations <math|w> of finite energy only probe a given solution
-  locally. For <math|\<Phi\><rsup|4><rsub|3>> the Bregman term contains the
-  divergent counterterms, and, as for <eqref|eq:generating>, the change of
-  variables of<nbsp><cite|BG20> is needed before <eqref|eq:relative-vp> has
-  bounds uniform in <math|T>; in two dimensions, compare the infinite-volume
-  analysis of<nbsp><cite|BG24>.
+  locally. For <math|\<Phi\><rsup|4><rsub|3>> this remainder term contains
+  the divergent counterterms, and, as for <eqref|eq:generating>, the change
+  of variables of<nbsp><cite|BG20> is needed before <eqref|eq:relative-vp>
+  has bounds uniform in <math|T>; in two dimensions, compare the
+  infinite-volume analysis of<nbsp><cite|BG24>.
 
   The coercive estimates must then be <em|local>: one uses weighted norms and
   needs bounds whose constants do not depend on the volume. This infrared
@@ -1626,7 +1661,7 @@
     Derive <eqref|eq:relative-vp> and the equation for the minimiser. (b) For
     a Gaussian <math|\<nu\><rsub|T>> (quadratic <math|V<rsub|T>>) and a
     linear <math|f=<around|\<langle\>|g,\<cdummy\>|\<rangle\>>>, compute the
-    Bregman term, solve <eqref|eq:relative-vp>, and recover <math|-log
+    remainder term, solve <eqref|eq:relative-vp>, and recover <math|-log
     <big|int>\<mathe\><rsup|-<around|\<langle\>|g,\<cdummy\>|\<rangle\>>>*\<mathd\>\<nu\><rsub|T>=<around|\<langle\>|g,m|\<rangle\>>-<frac|1|2>*<around|\<langle\>|g,\<Sigma\>*g|\<rangle\>>>,
     with <math|m> and <math|\<Sigma\>> the mean and covariance. (c) For a
     local interaction and <math|f> supported in a ball, show that
@@ -1965,6 +2000,11 @@
     C.<nbsp>Wetterich. Non-perturbative renormalization flow in quantum field
     theory and statistical physics. <em|Phys. Rep.> 363 (2002), 223\U386.
 
+    <bibitem*|CE22><label|bib-CE22>Y.<nbsp>Chen, R.<nbsp>Eldan. Localization
+    schemes: a framework for proving mixing bounds for Markov chains. In
+    <em|2022 IEEE 63rd Annual Symposium on Foundations of Computer Science
+    (FOCS)>, 2022, 110\U122.
+
     <bibitem*|Eld23><label|bib-Eld23>R.<nbsp>Eldan. Analysis of
     high-dimensional distributions using pathwise methods. In <em|Proceedings
     of the ICM 2022>, EMS Press, 2023, 4246\U4270.
@@ -2057,19 +2097,19 @@
     <associate|auto-33|<tuple|8.7|14>>
     <associate|auto-34|<tuple|1|14>>
     <associate|auto-35|<tuple|2|14>>
-    <associate|auto-36|<tuple|2|15>>
-    <associate|auto-37|<tuple|9|15>>
-    <associate|auto-38|<tuple|9.1|15>>
+    <associate|auto-36|<tuple|8.17|15>>
+    <associate|auto-37|<tuple|9|16>>
+    <associate|auto-38|<tuple|9.1|16>>
     <associate|auto-39|<tuple|1|16>>
     <associate|auto-4|<tuple|3|3>>
     <associate|auto-40|<tuple|2|16>>
     <associate|auto-41|<tuple|3|16>>
-    <associate|auto-42|<tuple|9.2|16>>
+    <associate|auto-42|<tuple|9.2|17>>
     <associate|auto-43|<tuple|1|17>>
     <associate|auto-44|<tuple|9.6|18>>
     <associate|auto-45|<tuple|9.3|18>>
-    <associate|auto-46|<tuple|10|18>>
-    <associate|auto-47|<tuple|10.1|18>>
+    <associate|auto-46|<tuple|10|19>>
+    <associate|auto-47|<tuple|10.1|19>>
     <associate|auto-48|<tuple|10.2|19>>
     <associate|auto-49|<tuple|<with|mode|<quote|math>|\<bullet\>>|20>>
     <associate|auto-5|<tuple|3|3>>
@@ -2085,14 +2125,15 @@
     <associate|bib-BBD24|<tuple|BBD24|21>>
     <associate|bib-BCG26|<tuple|BCG26|21>>
     <associate|bib-BD98|<tuple|BD98|21>>
-    <associate|bib-BG20|<tuple|BG20|21>>
-    <associate|bib-BG21b|<tuple|BG21b|21>>
-    <associate|bib-BG24|<tuple|BG24|21>>
-    <associate|bib-BK87|<tuple|BK87|21>>
-    <associate|bib-BL76|<tuple|BL76|21>>
-    <associate|bib-BTW02|<tuple|BTW02|21>>
-    <associate|bib-Bis73|<tuple|Bis73|21>>
-    <associate|bib-Eld23|<tuple|Eld23|21>>
+    <associate|bib-BG20|<tuple|BG20|22>>
+    <associate|bib-BG21b|<tuple|BG21b|22>>
+    <associate|bib-BG24|<tuple|BG24|22>>
+    <associate|bib-BK87|<tuple|BK87|22>>
+    <associate|bib-BL76|<tuple|BL76|22>>
+    <associate|bib-BTW02|<tuple|BTW02|22>>
+    <associate|bib-Bis73|<tuple|Bis73|22>>
+    <associate|bib-CE22|<tuple|CE22|22>>
+    <associate|bib-Eld23|<tuple|Eld23|22>>
     <associate|bib-GH21|<tuple|GH21|22>>
     <associate|bib-GJS75|<tuple|GJS75|22>>
     <associate|bib-MY99|<tuple|MY99|22>>
@@ -2103,14 +2144,14 @@
     <associate|bib-Sal99|<tuple|Sal99|22>>
     <associate|bib-Wet93|<tuple|Wet93|22>>
     <associate|bib-YZ99|<tuple|YZ99|22>>
-    <associate|eq:BD|<tuple|9.1|15>>
-    <associate|eq:DS-scale|<tuple|11.2|20>>
-    <associate|eq:DS-terminal|<tuple|11.3|20>>
+    <associate|eq:BD|<tuple|9.1|16>>
+    <associate|eq:DS-scale|<tuple|11.2|21>>
+    <associate|eq:DS-terminal|<tuple|11.3|21>>
     <associate|eq:EL|<tuple|9.3|16>>
     <associate|eq:F-gradient|<tuple|8.10|11>>
     <associate|eq:Gt|<tuple|7.9|6>>
-    <associate|eq:PB|<tuple|10.3|18>>
-    <associate|eq:RG-map|<tuple|10.1|18>>
+    <associate|eq:PB|<tuple|10.3|19>>
+    <associate|eq:RG-map|<tuple|10.1|19>>
     <associate|eq:Vt|<tuple|7.3|3>>
     <associate|eq:burgers|<tuple|7.12|6>>
     <associate|eq:constrained|<tuple|8.15|13>>
@@ -2120,16 +2161,17 @@
     <associate|eq:eta|<tuple|11.1|20>>
     <associate|eq:exp-regulator|<tuple|8.14|13>>
     <associate|eq:fbsde|<tuple|7.7|4>>
-    <associate|eq:fbsde-inf|<tuple|9.5|16>>
+    <associate|eq:fbsde-inf|<tuple|9.5|17>>
     <associate|eq:fbsde-system|<tuple|7.8|5>>
-    <associate|eq:field-eq-scale|<tuple|11.4|20>>
+    <associate|eq:field-eq-scale|<tuple|11.4|21>>
     <associate|eq:first-order|<tuple|10.5|19>>
-    <associate|eq:gammaT|<tuple|10.7|19>>
+    <associate|eq:gammaT|<tuple|10.7|20>>
     <associate|eq:generating|<tuple|9.4|16>>
     <associate|eq:hopf-lax|<tuple|8.16|13>>
     <associate|eq:kolmogorov|<tuple|7.10|6>>
     <associate|eq:lambda-split|<tuple|8.4|9>>
     <associate|eq:localisation|<tuple|7.5|4>>
+    <associate|eq:lsi-cov|<tuple|8.17|14>>
     <associate|eq:moreau|<tuple|8.11|11>>
     <associate|eq:nuT|<tuple|7.2|3>>
     <associate|eq:nut|<tuple|7.4|3>>
@@ -2140,7 +2182,7 @@
     <associate|eq:relative-vp|<tuple|9.6|17>>
     <associate|eq:response|<tuple|8.6|9>>
     <associate|eq:second-order|<tuple|10.6|19>>
-    <associate|eq:semigroup|<tuple|10.2|18>>
+    <associate|eq:semigroup|<tuple|10.2|19>>
     <associate|eq:shear|<tuple|8.1|8>>
     <associate|eq:tangent|<tuple|7.11|6>>
     <associate|eq:transformed-fbsde|<tuple|8.7|9>>
@@ -2154,7 +2196,7 @@
     <associate|ex:commutator|<tuple|10.1|20>>
     <associate|ex:doob|<tuple|7.3|7>>
     <associate|ex:envelope|<tuple|8.5|15>>
-    <associate|ex:lsi|<tuple|8.11|15>>
+    <associate|ex:lsi|<tuple|8.11|16>>
     <associate|ex:pontryagin|<tuple|8.1|15>>
     <associate|ex:power-counting|<tuple|10.3|20>>
     <associate|ex:quadratic|<tuple|7.1|7>>
@@ -2174,15 +2216,15 @@
     <associate|prop:relative-vp|<tuple|9.2|17>>
     <associate|prop:second-order|<tuple|10.2|19>>
     <associate|sec:DS|<tuple|11|20>>
-    <associate|sec:algebra|<tuple|10|18>>
+    <associate|sec:algebra|<tuple|10|19>>
     <associate|sec:burgers|<tuple|7.4|6>>
-    <associate|sec:infinite-volume|<tuple|9.2|16>>
+    <associate|sec:infinite-volume|<tuple|9.2|17>>
     <associate|sec:lsi|<tuple|8.7|14>>
     <associate|sec:pert|<tuple|10.2|19>>
     <associate|sec:polchinski|<tuple|7|3>>
-    <associate|sec:variational|<tuple|9|15>>
+    <associate|sec:variational|<tuple|9|16>>
     <associate|sec:wetterich|<tuple|8|7>>
-    <associate|thm:BD|<tuple|9.1|15>>
+    <associate|thm:BD|<tuple|9.1|16>>
     <associate|thm:DS-scale|<tuple|11.1|20>>
     <associate|thm:fbsde|<tuple|7.4|4>>
     <associate|thm:lsi|<tuple|8.5|14>>
@@ -2256,6 +2298,8 @@
       BBD24
 
       BBD24
+
+      CE22
 
       BBD24
 
