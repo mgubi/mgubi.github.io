@@ -1,11 +1,11 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|article|number-long-article|british|cqft-notes>>
 
 <\body>
-  <doc-data|<doc-title|A Constructive Introduction to Quantum Field
-  Theory>|<doc-subtitle|Lecture 7: <math|\<Phi\><rsup|4><rsub|3>> on the
-  torus III. UV stability, compactness and the limiting
+  <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
+  Field Theory>|<doc-subtitle|Lecture<nbsp>7: <math|\<Phi\><rsup|4><rsub|3>>
+  on the torus III. UV stability, compactness and the limiting
   FBSDE>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
@@ -36,66 +36,66 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|18<space|2spc>The
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|16<space|2spc>The
     boundary at infinite resolution> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2><vspace|0.5fn>
 
-    <with|par-left|1tab|18.1<space|2spc>The boundary lemma
+    <with|par-left|1tab|16.1<space|2spc>The boundary lemma
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3>>
 
-    <with|par-left|1tab|18.2<space|2spc>UV stability
+    <with|par-left|1tab|16.2<space|2spc>UV stability
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|19<space|2spc>Compactness>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|17<space|2spc>Compactness>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-6><vspace|0.5fn>
 
-    <with|par-left|1tab|19.1<space|2spc>One Hilbert space
+    <with|par-left|1tab|17.1<space|2spc>One Hilbert space
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
 
-    <with|par-left|1tab|19.2<space|2spc>Spatial suprema by a maximum
+    <with|par-left|1tab|17.2<space|2spc>Spatial suprema by a maximum
     principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-8>>
 
-    <with|par-left|1tab|19.3<space|2spc>Regularity in space and scale
+    <with|par-left|1tab|17.3<space|2spc>Regularity in space and scale
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-9>>
 
-    <with|par-left|1tab|19.4<space|2spc>The terminal field
+    <with|par-left|1tab|17.4<space|2spc>The terminal field
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|20<space|2spc>Identifying
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|18<space|2spc>Identifying
     the limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-11><vspace|0.5fn>
 
-    <with|par-left|1tab|20.1<space|2spc>The deterministic coefficients
+    <with|par-left|1tab|18.1<space|2spc>The deterministic coefficients
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-12>>
 
-    <with|par-left|1tab|20.2<space|2spc>The noise
+    <with|par-left|1tab|18.2<space|2spc>The noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-13>>
 
-    <with|par-left|1tab|20.3<space|2spc>The result
+    <with|par-left|1tab|18.3<space|2spc>The result
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14>>
 
-    <with|par-left|1tab|20.4<space|2spc>The renormalised field equation
+    <with|par-left|1tab|18.4<space|2spc>The renormalised field equation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-15>>
 
-    <with|par-left|1tab|20.5<space|2spc>What is not proved, and where to go
+    <with|par-left|1tab|18.5<space|2spc>What is not proved, and where to go
     next <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-16>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Summary of the course.
+    <with|par-left|3tab|<with|font-size|0.92|Summary of the course
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-17>>>
 
@@ -117,7 +117,7 @@
   </equation>
 
   for the backward energy <math|E<rsub|T>> and the large-field action
-  <math|J<rsub|T>> of <hlink|(15.6)|cqft_lecture6.tm#eq:energies>. Three
+  <math|J<rsub|T>> of <hlink|(13.6)|cqft_lecture6.tm#eq:energies>. Three
   things remain.
 
   <\enumerate-roman>
@@ -138,7 +138,7 @@
   statistical meaning of the backward variable, a posterior mean with a
   positive covariance, saves us.
 
-  <assign|section-nr|17><section|The boundary at infinite
+  <assign|section-nr|15><section|The boundary at infinite
   resolution><label|sec:terminal>
 
   <subsection|The boundary lemma>
@@ -168,7 +168,7 @@
     dependence on <math|N>.
 
     <em|The field at resolution <math|q>.> By
-    <hlink|(12.5)|cqft_lecture5.tm#eq:observation>,
+    <hlink|(10.5)|cqft_lecture5.tm#eq:observation>,
     <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>>,
     and <math|<around|(|q-q<rsub|0>|)>*C<rsub|q>-I=-C<rsub|q>*K<rsub|q<rsub|0>>=O<around|(|q<rsup|-1>|)>>,
     <math|<around|\<\|\|\>|C<rsub|q>*B<rsub|q-q<rsub|0>>|\<\|\|\>><rsub|L<rsup|p>>=O<around|(|q<rsup|-1/2>|)>>.
@@ -196,7 +196,7 @@
 
     <em|The error.> Subtract the approximate coordinate identity
     <math|P<rsub|q>=K<rsub|q>*Y<rsub|q>+D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
-    from the exact posterior identity <hlink|(12.10)|cqft_lecture5.tm#eq:posterior-ibp>,
+    from the exact posterior identity <hlink|(10.10)|cqft_lecture5.tm#eq:posterior-ibp>,
     <math|P<rsub|q>=K<rsub|q>*\<psi\><rsub|q>+\<bbb-E\><rsub|q>*<around|[|D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>>:
 
     <\equation>
@@ -208,8 +208,9 @@
     is <math|\<cal-F\><rsub|q>>-measurable. Then
     <math|<around|\<\|\|\>|\<bbb-E\><rsub|q>*G-G|\<\|\|\>><rsub|L<rsup|p>>\<le\><around|\<\|\|\>|\<bbb-E\><rsub|q>*<around|(|G-G<rsup|0><rsub|q>|)>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|G<rsup|0><rsub|q>-G|\<\|\|\>><rsub|L<rsup|p>>\<le\>2*<around|\<\|\|\>|G-G<rsup|0><rsub|q>|\<\|\|\>><rsub|L<rsup|p>>=O<around|(|q<rsup|-1/2>|)>>,
     by the cubic Lipschitz bound for <math|D*V<rsub|N>> and the first step.
-    With <eqref|eq:gradient-match> and <math|<around|\<\|\|\>|q*C<rsub|q>|\<\|\|\>>\<le\>1>
-    this proves the claim.
+    With<nbsp><eqref|eq:gradient-match> and
+    <math|<around|\<\|\|\>|q*C<rsub|q>|\<\|\|\>>\<le\>1> this proves the
+    claim.
   </proof>
 
   The proof uses no estimate uniform in <math|N>, and no concentration of the
@@ -222,17 +223,18 @@
   converges to the bare force <math|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>>
   (Exercise<nbsp><reference|ex:force-limit>; recall
   <math|F<rsub|q>=\<bbb-E\><rsub|q>*<around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>>
-  by <hlink|(12.9)|cqft_lecture5.tm#eq:polchinski-fbsde>, so this is the
+  by <hlink|(10.9)|cqft_lecture5.tm#eq:polchinski-fbsde>, so this is the
   conditional-expectation step of the proof).
 
   <subsection|UV stability>
 
-  Now let <math|T\<to\>\<infty\>> at fixed <math|N> in
-  <eqref|eq:energy-recall>: the paths and the law <math|\<nu\><rsub|N>> do
-  not depend on <math|T>, <math|E<rsub|T>> and <math|J<rsub|T>> increase to
-  <math|E<rsub|\<infty\>>> and <math|J<rsub|\<infty\>>>, and
-  <math|\<delta\><rsub|N,T,p>\<to\>0> by Lemma<nbsp><reference|lem:terminal>.
-  Only then take the supremum over <math|N>.
+  Now let <math|T\<to\>\<infty\>> at fixed <math|N>
+  in<nbsp><eqref|eq:energy-recall>: the paths and the law
+  <math|\<nu\><rsub|N>> do not depend on <math|T>, <math|E<rsub|T>> and
+  <math|J<rsub|T>> increase to <math|E<rsub|\<infty\>>> and
+  <math|J<rsub|\<infty\>>>, and <math|\<delta\><rsub|N,T,p>\<to\>0> by
+  Lemma<nbsp><reference|lem:terminal>. Only then take the supremum over
+  <math|N>.
 
   <\theorem>
     <dueto|UV stability<nbsp><cite|FBSDE26>><label|thm:uv> For
@@ -248,9 +250,9 @@
   </theorem>
 
   <\proof>
-    Monotone convergence in <eqref|eq:energy-recall>, then the representation
-    formula <hlink|(17.2)|cqft_lecture6.tm#eq:representation> on
-    <math|<around|[|q,\<infty\>|)>>, whose terminal term vanishes by
+    Monotone convergence in<nbsp><eqref|eq:energy-recall>, then the
+    representation formula <hlink|(15.2)|cqft_lecture6.tm#eq:representation>
+    on <math|<around|[|q,\<infty\>|)>>, whose terminal term vanishes by
     Lemma<nbsp><reference|lem:terminal>. The exponential moment follows from
     the polynomial growth by Markov's inequality with
     <math|p\<asymp\>R<rsup|1/5>>.
@@ -275,7 +277,7 @@
 
   <\exercise>
     <dueto|Why the stronger boundary>Using the bound on the boundary term in
-    the proof of Proposition<nbsp><hlink|17.2|cqft_lecture6.tm#prop:backward>,
+    the proof of Proposition<nbsp><hlink|15.2|cqft_lecture6.tm#prop:backward>,
     explain why <math|Z<rsub|T>\<to\>0> alone would not make it vanish, and
     why the rate <math|<around|\<\|\|\>|T*Z<rsub|T>|\<\|\|\>>=o<around|(|1|)>>
     of Lemma<nbsp><reference|lem:terminal> is what is needed.
@@ -305,7 +307,7 @@
 
   The energy bounds control <math|L<rsup|4>> and <math|L<rsup|6>> norms of
   large fields. Spatial suprema at finite resolution come for free from the
-  elliptic structure of <hlink|(15.4)|cqft_lecture6.tm#eq:volterra>.
+  elliptic structure of <hlink|(13.4)|cqft_lecture6.tm#eq:volterra>.
 
   <\lemma>
     <dueto|Supremum after closure><label|lem:sup> Let
@@ -350,7 +352,7 @@
   <subsection|Regularity in space and scale>
 
   On a finite scale interval <math|I=<around|[|q<rsub|0>,Q|]>> write
-  <hlink|(15.4)|cqft_lecture6.tm#eq:volterra> as the linear elliptic equation
+  <hlink|(13.4)|cqft_lecture6.tm#eq:volterra> as the linear elliptic equation
 
   <\equation>
     <label|eq:linear>K<rsub|q>*V<rsub|q>=f<rsub|q>,<space|2em>f<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q><around|(|Y<rsub|s>-X<rsub|s>+Z<rsub|s>|)>\<mathd\>s-<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>.
@@ -396,7 +398,7 @@
   (<math|\<sigma\>\<less\><frac|1|2>>), and the contraction property of
   <math|\<varrho\>>; the scale regularity uses the forward equation, whose
   drift <math|b<around|(|Y|)>+H<around|(|Y|)>*Z> has bounded integrated
-  square by Proposition<nbsp><hlink|14.2|cqft_lecture5.tm#prop:source> and
+  square by Proposition<nbsp><hlink|12.2|cqft_lecture5.tm#prop:source> and
   the energies, and whose martingale part has bounded bracket density. The
   supremum bound of Lemma<nbsp><reference|lem:sup> upgrades <math|L<rsup|2>>
   compactness to every <math|L<rsup|p>>.
@@ -445,10 +447,11 @@
     for every <math|p>.
   </corollary>
 
-  For the moments: the drift integrals have all moments by <eqref|eq:uv>, and
-  the <math|H<rsup|-s>> martingale has a deterministic bracket bound by
-  <eqref|eq:noise-tail> at <math|Q=q<rsub|0>>, so the
-  Burkholder\UDavis\UGundy inequality gives all moments.
+  For the moments: the drift integrals have all moments
+  by<nbsp><eqref|eq:uv>, and the <math|H<rsup|-s>> martingale has a
+  deterministic bracket bound by<nbsp><eqref|eq:noise-tail> at
+  <math|Q=q<rsub|0>>, so the Burkholder\UDavis\UGundy inequality gives all
+  moments.
 
   The threshold <math|s\<gtr\><frac|1|2>> is that of the free field in
   <math|d=3>: the interacting field is no rougher than the Gaussian one, and
@@ -463,7 +466,7 @@
   <math|h<rsup|<around|[|j|]>,N><rsub|q>>,
   <math|H<rsup|N><rsub|q><around|(|y|)>>,
   <math|b<rsup|N><rsub|q><around|(|y|)>> are constructed at each lattice.
-  Their uniform bounds (Proposition<nbsp><hlink|13.1|cqft_lecture5.tm#prop:coeff>)
+  Their uniform bounds (Proposition<nbsp><hlink|11.1|cqft_lecture5.tm#prop:coeff>)
   do not by themselves identify a limit: a weakly convergent vertex cannot in
   general be contracted against a varying covariance. The three tools are:
 
@@ -537,15 +540,15 @@
   </lemma>
 
   <\proof>
-    Differentiate the equation of Proposition<nbsp><hlink|12.3|cqft_lecture5.tm#prop:posterior>(c)
+    Differentiate the equation of Proposition<nbsp><hlink|10.3|cqft_lecture5.tm#prop:posterior>(c)
     twice in <math|p>: <math|<around|(|\<partial\><rsub|q>+<frac|1|2>*\<Delta\><rsub|p>+D*\<cal-K\>\<cdot\>D<rsub|p>|)>*D<rsup|2>*\<cal-K\>=-<around|(|D<rsup|2>*\<cal-K\>|)><rsup|2>>,
     and apply Itô's formula along <math|\<mathd\>P=D*\<cal-K\><around|(|P|)>\<mathd\>q+\<mathd\>W>.
   </proof>
 
   This is <hlink|(8.9)|cqft_lecture4.tm#eq:cov-dynamics> for
-  <math|\<partial\><rsub|q><with|math-font|cal*|R>=1>: conditional variance
-  is resolved at the rate <math|<math-up|Cov><rsup|2>>. For a smooth test
-  <math|f>, the process <math|<around|\<langle\>|f,<math-up|Cov><rsub|q>f|\<rangle\>>\<ge\>0>
+  <math|\<partial\><rsub|q>\<cal-R\>=1>: conditional variance is resolved at
+  the rate <math|<math-up|Cov><rsup|2>>. For a smooth test <math|f>, the
+  process <math|<around|\<langle\>|f,<math-up|Cov><rsub|q>f|\<rangle\>>\<ge\>0>
   is a nonnegative supermartingale, with drift
   <math|-<around|\<\|\|\>|<math-up|Cov><rsub|q>f|\<\|\|\>><rsup|2>>, and
   initial value <math|<math-up|Var><rsub|\<nu\><rsub|N>><around|\<langle\>|\<Phi\><rsub|\<infty\>>,f|\<rangle\>>>,
@@ -618,7 +621,7 @@
       strong <math|L<rsup|2><around|(|I;<math-up|HS>|)>>, jointly and with an
       almost sure representation;
 
-      <item>the limit solves the FBSDE <eqref|eq:limit-equations> on
+      <item>the limit solves the FBSDE<nbsp><eqref|eq:limit-equations> on
       <math|<around|[|q<rsub|0>,\<infty\>|)>>, with
       <math|Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0>, the deterministic
       continuum coefficients <math|b,H>, limits of those of Lecture<nbsp>5
@@ -696,9 +699,9 @@
   </proof>
 
   This is the terminal case of the Dyson\USchwinger equation of
-  Theorem<nbsp><hlink|11.1|cqft_lecture4.tm#thm:DS-scale>,
-  <hlink|(11.3)|cqft_lecture4.tm#eq:DS-terminal>, for the limiting theory. It
-  does not say that <math|\<mu\><rsub|N>*\<Phi\>+\<lambda\>*\<Phi\><rsup|3>>
+  Theorem<nbsp><hlink|B.1|cqft_lecture4.tm#thm:DS-scale>,
+  <hlink|(B.3)|cqft_lecture4.tm#eq:DS-terminal> of Lecture<nbsp>4, for the
+  limiting theory. It does not say that <math|\<mu\><rsub|N>*\<Phi\>+\<lambda\>*\<Phi\><rsup|3>>
   converges as a random distribution: only its expectation against cylinder
   functions is identified. This is consistent with the expectation of
   Lecture<nbsp>4 (Figure<nbsp><hlink|7.1|cqft_lecture4.tm#fig:fbsde-flow> and
@@ -706,8 +709,8 @@
   terminal representative; it is not proved here that no such representative
   exists. At every <em|finite> resolution, on the other hand, the force is
   explicit: <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
-  (Exercises<nbsp><reference|ex:force-limit> and
-  <reference|ex:force-observable>).
+  (Exercises<nbsp><reference|ex:force-limit>
+  and<nbsp><reference|ex:force-observable>).
 
   <subsection|What is not proved, and where to go next>
 
@@ -723,7 +726,7 @@
     not rely on the smallness of the feedback coefficient
     <math|\<gamma\><rsup|2>/q<rsub|0>>, and a coefficient construction
     outside the perturbative ball (<math|g<rsub|q<rsub|0>>=\<gamma\>*q<rsub|0><rsup|-1/2>>
-    small in Proposition<nbsp><hlink|13.1|cqft_lecture5.tm#prop:coeff>).
+    small in Proposition<nbsp><hlink|11.1|cqft_lecture5.tm#prop:coeff>).
 
     <item><em|Axioms.> Reflection positivity holds at every lattice, for
     reflections in lattice and mid-lattice planes (nearest-neighbour action),
@@ -745,11 +748,11 @@
     full FBSDE without an orthogonal martingale<nbsp><cite|FBSDE26>.
   </itemize>
 
-  <paragraph|Summary of the course.> The seven lectures went from the
-  Wightman axioms to the Euclidean formulation (Lecture<nbsp>1), to the free
-  field (Lecture<nbsp>2), to stochastic quantisation and the scale
-  decomposition (Lecture 3), and to the three faces of an interacting field:
-  the Polchinski equation, the FBSDE and the variational problem
+  <paragraph|Summary of the course> The seven lectures went from the Wightman
+  axioms to the Euclidean formulation (Lecture<nbsp>1), to the free field
+  (Lecture<nbsp>2), to stochastic quantisation and the scale decomposition
+  (Lecture<nbsp>3), and to the three faces of an interacting field: the
+  Polchinski equation, the FBSDE and the variational problem
   (Lecture<nbsp>4). In Lectures<nbsp>5\U7 the FBSDE in forecast coordinates,
   together with an explicit solution of the Wetterich equation up to an
   integrable defect, gave a construction of <math|\<Phi\><rsup|4><rsub|3>> in
@@ -799,8 +802,8 @@
 
   <\exercise>
     <dueto|Riccati and positivity>For a Gaussian
-    <math|\<nu\><rsub|N>=\<mu\><rsup|C>>, solve <eqref|eq:riccati> and check
-    that <math|<math-up|Cov><rsub|q>=C<rsub|q>>. For a general
+    <math|\<nu\><rsub|N>=\<mu\><rsup|C>>, solve<nbsp><eqref|eq:riccati> and
+    check that <math|<math-up|Cov><rsub|q>=C<rsub|q>>. For a general
     <math|\<nu\><rsub|N>>, show that <math|<math-up|TrCov><rsub|q>> is a
     supermartingale.
   </exercise>
@@ -825,8 +828,8 @@
   </exercise>
 
   <\exercise>
-    <dueto|Negative Sobolev threshold>Verify <eqref|eq:noise-tail>, and show
-    that at <math|s=<frac|3|2>> the bound becomes <math|Q<rsup|-1>*log
+    <dueto|Negative Sobolev threshold>Verify<nbsp><eqref|eq:noise-tail>, and
+    show that at <math|s=<frac|3|2>> the bound becomes <math|Q<rsup|-1>*log
     <around|(|2+Q|)>>.
   </exercise>
 
@@ -858,54 +861,54 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|2>>
-    <associate|auto-10|<tuple|19.4|5>>
-    <associate|auto-11|<tuple|20|5>>
-    <associate|auto-12|<tuple|20.1|5>>
-    <associate|auto-13|<tuple|20.2|6>>
-    <associate|auto-14|<tuple|20.3|7>>
-    <associate|auto-15|<tuple|20.4|7>>
-    <associate|auto-16|<tuple|20.5|8>>
+    <associate|auto-10|<tuple|17.4|5>>
+    <associate|auto-11|<tuple|18|5>>
+    <associate|auto-12|<tuple|18.1|5>>
+    <associate|auto-13|<tuple|18.2|6>>
+    <associate|auto-14|<tuple|18.3|7>>
+    <associate|auto-15|<tuple|18.4|7>>
+    <associate|auto-16|<tuple|18.5|8>>
     <associate|auto-17|<tuple|1|8>>
     <associate|auto-18|<tuple|1|9>>
-    <associate|auto-19|<tuple|20.5|9>>
-    <associate|auto-2|<tuple|18|2>>
-    <associate|auto-3|<tuple|18.1|2>>
-    <associate|auto-4|<tuple|18.2|3>>
-    <associate|auto-5|<tuple|18.4|3>>
-    <associate|auto-6|<tuple|19|3>>
-    <associate|auto-7|<tuple|19.1|3>>
-    <associate|auto-8|<tuple|19.2|4>>
-    <associate|auto-9|<tuple|19.3|4>>
+    <associate|auto-19|<tuple|18.5|9>>
+    <associate|auto-2|<tuple|16|2>>
+    <associate|auto-3|<tuple|16.1|2>>
+    <associate|auto-4|<tuple|16.2|3>>
+    <associate|auto-5|<tuple|16.4|3>>
+    <associate|auto-6|<tuple|17|3>>
+    <associate|auto-7|<tuple|17.1|3>>
+    <associate|auto-8|<tuple|17.2|4>>
+    <associate|auto-9|<tuple|17.3|4>>
     <associate|bib-FBSDE26|<tuple|FBSDE26|9>>
-    <associate|cor:tight|<tuple|19.3|5>>
-    <associate|eq:DS|<tuple|20.4|7>>
-    <associate|eq:closed-forecast|<tuple|20.3|7>>
+    <associate|cor:tight|<tuple|17.3|5>>
+    <associate|eq:DS|<tuple|18.4|7>>
+    <associate|eq:closed-forecast|<tuple|18.3|7>>
     <associate|eq:energy-recall|<tuple|1|2>>
-    <associate|eq:gradient-match|<tuple|18.2|2>>
-    <associate|eq:limit-equations|<tuple|20.2|7>>
-    <associate|eq:linear|<tuple|19.2|4>>
-    <associate|eq:noise-tail|<tuple|19.3|5>>
-    <associate|eq:qZ|<tuple|18.3|3>>
-    <associate|eq:riccati|<tuple|20.1|6>>
-    <associate|eq:sup|<tuple|19.1|4>>
-    <associate|eq:terminal|<tuple|18.1|2>>
-    <associate|eq:terminal-tail|<tuple|19.4|5>>
-    <associate|eq:uv|<tuple|18.4|3>>
-    <associate|ex:RP|<tuple|20.4|9>>
-    <associate|ex:force-limit|<tuple|18.1|3>>
-    <associate|ex:force-observable|<tuple|20.1|9>>
-    <associate|lem:riccati|<tuple|20.2|6>>
-    <associate|lem:sup|<tuple|19.1|4>>
-    <associate|lem:terminal|<tuple|18.1|2>>
-    <associate|prop:forward-compact|<tuple|19.2|4>>
-    <associate|prop:martingales|<tuple|20.3|7>>
-    <associate|rem:hidden|<tuple|20.1|6>>
-    <associate|sec:compactness|<tuple|19|3>>
-    <associate|sec:limit|<tuple|20|5>>
-    <associate|sec:terminal|<tuple|18|2>>
-    <associate|thm:DS|<tuple|20.5|7>>
-    <associate|thm:limit|<tuple|20.4|7>>
-    <associate|thm:uv|<tuple|18.2|3>>
+    <associate|eq:gradient-match|<tuple|16.2|2>>
+    <associate|eq:limit-equations|<tuple|18.2|7>>
+    <associate|eq:linear|<tuple|17.2|4>>
+    <associate|eq:noise-tail|<tuple|17.3|5>>
+    <associate|eq:qZ|<tuple|16.3|3>>
+    <associate|eq:riccati|<tuple|18.1|6>>
+    <associate|eq:sup|<tuple|17.1|4>>
+    <associate|eq:terminal|<tuple|16.1|2>>
+    <associate|eq:terminal-tail|<tuple|17.4|5>>
+    <associate|eq:uv|<tuple|16.4|3>>
+    <associate|ex:RP|<tuple|18.4|9>>
+    <associate|ex:force-limit|<tuple|16.1|3>>
+    <associate|ex:force-observable|<tuple|18.1|9>>
+    <associate|lem:riccati|<tuple|18.2|6>>
+    <associate|lem:sup|<tuple|17.1|4>>
+    <associate|lem:terminal|<tuple|16.1|2>>
+    <associate|prop:forward-compact|<tuple|17.2|4>>
+    <associate|prop:martingales|<tuple|18.3|7>>
+    <associate|rem:hidden|<tuple|18.1|6>>
+    <associate|sec:compactness|<tuple|17|3>>
+    <associate|sec:limit|<tuple|18|5>>
+    <associate|sec:terminal|<tuple|16|2>>
+    <associate|thm:DS|<tuple|18.5|7>>
+    <associate|thm:limit|<tuple|18.4|7>>
+    <associate|thm:uv|<tuple|16.2|3>>
   </collection>
 </references>
 
@@ -925,15 +928,15 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>The
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|16<space|2spc>The
       boundary at infinite resolution> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|18.1<space|2spc>The boundary lemma
+      <with|par-left|<quote|1tab>|16.1<space|2spc>The boundary lemma
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|1tab>|18.2<space|2spc>UV stability
+      <with|par-left|<quote|1tab>|16.2<space|2spc>UV stability
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
@@ -941,52 +944,52 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Compactness>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|17<space|2spc>Compactness>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|19.1<space|2spc>One Hilbert space
+      <with|par-left|<quote|1tab>|17.1<space|2spc>One Hilbert space
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
-      <with|par-left|<quote|1tab>|19.2<space|2spc>Spatial suprema by a
+      <with|par-left|<quote|1tab>|17.2<space|2spc>Spatial suprema by a
       maximum principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>
 
-      <with|par-left|<quote|1tab>|19.3<space|2spc>Regularity in space and
+      <with|par-left|<quote|1tab>|17.3<space|2spc>Regularity in space and
       scale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
 
-      <with|par-left|<quote|1tab>|19.4<space|2spc>The terminal field
+      <with|par-left|<quote|1tab>|17.4<space|2spc>The terminal field
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|20<space|2spc>Identifying
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Identifying
       the limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-11><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|20.1<space|2spc>The deterministic
+      <with|par-left|<quote|1tab>|18.1<space|2spc>The deterministic
       coefficients <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12>>
 
-      <with|par-left|<quote|1tab>|20.2<space|2spc>The noise
+      <with|par-left|<quote|1tab>|18.2<space|2spc>The noise
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13>>
 
-      <with|par-left|<quote|1tab>|20.3<space|2spc>The result
+      <with|par-left|<quote|1tab>|18.3<space|2spc>The result
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14>>
 
-      <with|par-left|<quote|1tab>|20.4<space|2spc>The renormalised field
+      <with|par-left|<quote|1tab>|18.4<space|2spc>The renormalised field
       equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15>>
 
-      <with|par-left|<quote|1tab>|20.5<space|2spc>What is not proved, and
+      <with|par-left|<quote|1tab>|18.5<space|2spc>What is not proved, and
       where to go next <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-16>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Summary of the
-      course. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      course <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17>>>
 
       <with|par-left|<quote|1tab>|Exercises

@@ -31,6 +31,16 @@
   <assign|html-extra-javascript-src|<tuple|max-html.js>>
 
   <assign|html-head-favicon|cqft-icon.svg>
+
+  <\active*>
+    <\src-comment>
+      Paragraph titles are written without a final full stop, so that the
+      table of contents shows them bare; the full stop is added here, after
+      the title in the text.
+    </src-comment>
+  </active*>
+
+  <assign|paragraph-post-sep|<macro|.<sectional-sep>>>
 </body>
 
 <\initial>

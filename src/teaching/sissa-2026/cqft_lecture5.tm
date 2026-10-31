@@ -1,12 +1,12 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|article|number-long-article|british|cqft-notes>>
 
 <\body>
-  <doc-data|<doc-title|A Constructive Introduction to Quantum Field
-  Theory>|<doc-subtitle|Lecture 5: <math|\<Phi\><rsup|4><rsub|3>> on the
-  torus I. The Wetterich FBSDE, two renormalisations and the large-field
-  problem>|<doc-author|<author-data|<author-name|M.
+  <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
+  Field Theory>|<doc-subtitle|Lecture<nbsp>5: <math|\<Phi\><rsup|4><rsub|3>>
+  on the torus I. The Wetterich FBSDE, two renormalisations and the
+  large-field problem>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
 
@@ -40,110 +40,110 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|What is proved.
+    <with|par-left|3tab|<with|font-size|0.92|What is proved
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2>>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>The
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>The
     problem and the exact FBSDE> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3><vspace|0.5fn>
 
-    <with|par-left|1tab|12.1<space|2spc>Lattice, scales and notation
+    <with|par-left|1tab|10.1<space|2spc>Lattice, scales and notation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The resolution parameter.
+    <with|par-left|3tab|<with|font-size|0.92|The resolution parameter
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>>
 
-    <with|par-left|1tab|12.2<space|2spc>The cutoff measure and the goal
+    <with|par-left|1tab|10.2<space|2spc>The cutoff measure and the goal
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-6>>
 
-    <with|par-left|1tab|12.3<space|2spc>The Polchinski process as a posterior
+    <with|par-left|1tab|10.3<space|2spc>The Polchinski process as a posterior
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
 
-    <with|par-left|1tab|12.4<space|2spc>The Wetterich formulation
+    <with|par-left|1tab|10.4<space|2spc>The Wetterich formulation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-8>>
 
-    <with|par-left|1tab|12.5<space|2spc>Approximate forecast and error
+    <with|par-left|1tab|10.5<space|2spc>Approximate forecast and error
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-9>>
 
     <with|par-left|3tab|<with|font-size|0.92|Reading
-    <with|font-shape|right|(<reference|eq:YZ-fbsde>)>.
+    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>><with|font-shape|right|(<reference|eq:YZ-fbsde>)>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-12>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|13<space|2spc>Renormalisation:
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Renormalisation:
     why two of them> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-13><vspace|0.5fn>
 
-    <with|par-left|1tab|13.1<space|2spc>Scales and power counting
+    <with|par-left|1tab|11.1<space|2spc>Scales and power counting
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The basic loop estimate.
+    <with|par-left|3tab|<with|font-size|0.92|The basic loop estimate
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-15>>>
 
-    <with|par-left|1tab|13.2<space|2spc>The seed: one loop
+    <with|par-left|1tab|11.2<space|2spc>The seed: one loop
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-16>>
 
-    <with|par-left|1tab|13.3<space|2spc>Corrections and the mass
+    <with|par-left|1tab|11.3<space|2spc>Corrections and the mass
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-17>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The quadratic part.
+    <with|par-left|3tab|<with|font-size|0.92|The quadratic part
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-18>>>
 
-    <with|par-left|1tab|13.4<space|2spc>Two mass renormalisations
+    <with|par-left|1tab|11.4<space|2spc>Two mass renormalisations
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-19>>
 
-    <with|par-left|1tab|13.5<space|2spc>Two correction steps
+    <with|par-left|1tab|11.5<space|2spc>Two correction steps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-20>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-21>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|14<space|2spc>The
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>The
     flow at large fields> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-22><vspace|0.5fn>
 
-    <with|par-left|1tab|14.1<space|2spc>The large-field problem
+    <with|par-left|1tab|12.1<space|2spc>The large-field problem
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-23>>
 
-    <with|par-left|3tab|<with|font-size|0.92|A scalar model.
+    <with|par-left|3tab|<with|font-size|0.92|A scalar model
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-24>>>
 
-    <with|par-left|1tab|14.2<space|2spc>Clipping
+    <with|par-left|1tab|12.2<space|2spc>Clipping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-25>>
 
-    <with|par-left|1tab|14.3<space|2spc>The complete defect
+    <with|par-left|1tab|12.3<space|2spc>The complete defect
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-26>>
 
     <with|par-left|3tab|<with|font-size|0.92|Where the large-field error
-    comes from. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    comes from <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-27>>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The coordinate correction.
+    <with|par-left|3tab|<with|font-size|0.92|The coordinate correction
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-28>>>
 
-    <with|par-left|1tab|14.4<space|2spc>Summary
+    <with|par-left|1tab|12.4<space|2spc>Summary
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-29>>
 
@@ -168,13 +168,13 @@
   the ultraviolet cutoff, and take the limit. For
   <math|\<Phi\><rsup|4><rsub|3>> the force <math|F<rsub|t>> is not expected
   to converge to an integrable terminal value, and the naive estimates of the
-  force diverge (Section<nbsp><hlink|10.2|cqft_lecture4.tm#sec:pert>). In
-  these three lectures we carry out a version of the programme on the unit
-  torus <math|\<bbb-T\><rsup|3>>, for a large mass. The guiding principle is
-  the one of Section<nbsp><hlink|8|cqft_lecture4.tm#sec:wetterich>: do not
-  estimate <math|\<Phi\>> and <math|F> directly, but pass to the forecast
-  coordinate, in which the forward equation has no drift and the tree
-  diagrams have been integrated exactly.
+  force diverge (Appendix<nbsp><hlink|A.2|cqft_lecture4.tm#sec:pert> of
+  Lecture<nbsp>4). In these three lectures we carry out a version of the
+  programme on the unit torus <math|\<bbb-T\><rsup|3>>, for a large mass. The
+  guiding principle is the one of Section<nbsp><hlink|8|cqft_lecture4.tm#sec:wetterich>:
+  do not estimate <math|\<Phi\>> and <math|F> directly, but pass to the
+  forecast coordinate, in which the forward equation has no drift and the
+  tree diagrams have been integrated exactly.
 
   The argument has three parts, one per lecture.
 
@@ -200,7 +200,7 @@
   point of view is that of<nbsp><cite|BCG26>; for other constructions of
   <math|\<Phi\><rsup|4><rsub|3>> see<nbsp><cite|GJ73|FO76|BFS83|BG20|GH21>.
 
-  <paragraph|What is proved.> The construction is for a large mass
+  <paragraph|What is proved> The construction is for a large mass
   <math|m<rsup|2>=q<rsub|0>> compared to the coupling,
   <math|\<lambda\>\<ll\>q<rsub|0><rsup|1/2>>: a weak dimensionless coupling
   on a fixed torus. It gives a subsequential limit of the lattice measures,
@@ -208,7 +208,7 @@
   the lattice innovations. It does not prove uniqueness of the limit, the
   Osterwalder\USchrader axioms, or an infinite-volume limit.
 
-  <assign|section-nr|11><section|The problem and the exact
+  <assign|section-nr|9><section|The problem and the exact
   FBSDE><label|sec:problem>
 
   <subsection|Lattice, scales and notation><label|sec:notation>
@@ -241,13 +241,13 @@
   in Lecture<nbsp>3. <math|<around|\<\|\|\>|u|\<\|\|\>><rsub|p>> is the
   <math|L<rsup|p>> norm for the measure <math|<big|int>>.
 
-  <paragraph|The resolution parameter.> Lecture<nbsp>3 used a general
+  <paragraph|The resolution parameter> Lecture<nbsp>3 used a general
   covariance profile. Here we use the <em|mass-regulator profile> of
-  Exercise<nbsp><hlink|8.9|cqft_lecture4.tm#ex:regulators> of Lecture 4: with
-  <math|m<rsup|2>=q<rsub|0>> and <math|t\<ge\>0>,
+  Exercise<nbsp><hlink|8.9|cqft_lecture4.tm#ex:regulators> of Lecture<nbsp>4:
+  with <math|m<rsup|2>=q<rsub|0>> and <math|t\<ge\>0>,
 
   <\equation*>
-    <wide|Q|^><rsub|t><around|(|k|)>=<frac|1|<around|\||k|\|><rsup|2>+q<rsub|0>>-<frac|1|<around|\||k|\|><rsup|2>+q<rsub|0>+t<rsup|2>>,<space|2em><with|math-font|cal*|R><rsub|t>=t<rsup|2>.
+    <wide|Q|^><rsub|t><around|(|k|)>=<frac|1|<around|\||k|\|><rsup|2>+q<rsub|0>>-<frac|1|<around|\||k|\|><rsup|2>+q<rsub|0>+t<rsup|2>>,<space|2em>\<cal-R\><rsub|t>=t<rsup|2>.
   </equation*>
 
   It is convenient to parametrise the resolution by the squared regulator
@@ -268,7 +268,7 @@
   <math|<wide|Q|\<dot\>>> now means <math|\<partial\><rsub|q>*Q<rsub|q>>),
 
   <\equation>
-    <label|eq:dictionary-profile>Q<rsub|q>=C-C<rsub|q>,<space|2em>\<partial\><rsub|q>*Q<rsub|q>=C<rsub|q><rsup|2>,<space|2em><wide|Q|\<dot\>><rsup|1/2>=C<rsub|q>,<space|2em>S<rsub|q>=C<rsub|q>,<space|2em><with|math-font|cal*|R><rsub|q>=q-q<rsub|0>,<space|2em>\<partial\><rsub|q>*<with|math-font|cal*|R><rsub|q>=1.
+    <label|eq:dictionary-profile>Q<rsub|q>=C-C<rsub|q>,<space|2em>\<partial\><rsub|q>*Q<rsub|q>=C<rsub|q><rsup|2>,<space|2em><wide|Q|\<dot\>><rsup|1/2>=C<rsub|q>,<space|2em>S<rsub|q>=C<rsub|q>,<space|2em>\<cal-R\><rsub|q>=q-q<rsub|0>,<space|2em>\<partial\><rsub|q>*\<cal-R\><rsub|q>=1.
   </equation>
 
   So <math|C<rsub|q>> is the covariance of the scales not yet resolved, and
@@ -352,7 +352,7 @@
       <math|\<nu\>>;
 
       <item><math|\<nu\>> satisfies the integration by parts formula of
-      Theorem<nbsp><hlink|20.5|cqft_lecture7.tm#thm:DS>, in which the
+      Theorem<nbsp><hlink|18.5|cqft_lecture7.tm#thm:DS>, in which the
       renormalised cube appears only tested in expectation.
     </enumerate-alpha>
   </theorem>
@@ -432,10 +432,10 @@
   </proof>
 
   The observation <math|P<rsub|q>> is not yet the field of Lecture<nbsp>4.
-  The posterior <eqref|eq:K-ex> is <math|\<nu\><rsub|N>> tilted by a Gaussian
-  factor of precision <math|q-q<rsub|0>>: the remaining randomness has
-  precision <math|K<rsub|q<rsub|0>>+<around|(|q-q<rsub|0>|)>=K<rsub|q>>. This
-  suggests the following.
+  The posterior<nbsp><eqref|eq:K-ex> is <math|\<nu\><rsub|N>> tilted by a
+  Gaussian factor of precision <math|q-q<rsub|0>>: the remaining randomness
+  has precision <math|K<rsub|q<rsub|0>>+<around|(|q-q<rsub|0>|)>=K<rsub|q>>.
+  This suggests the following.
 
   <\proposition>
     <dueto|The Polchinski process><label|prop:polchinski> Let
@@ -448,7 +448,7 @@
     </equation>
 
     This is the FBSDE <hlink|(7.7)|cqft_lecture4.tm#eq:fbsde> of
-    Lecture<nbsp>4 for the profile <eqref|eq:dictionary-profile>:
+    Lecture<nbsp>4 for the profile<nbsp><eqref|eq:dictionary-profile>:
     <math|\<Phi\>> is the interacting field at resolution <math|q>, <math|F>
     the effective force, <math|\<psi\>> the forecast of
     Proposition<nbsp><hlink|8.1|cqft_lecture4.tm#prop:psi>, and
@@ -458,7 +458,7 @@
     <math|\<nu\><rsub|N>=\<mu\><rsup|C>> one has <math|F=0>,
     <math|\<Phi\><rsub|q>=\<psi\><rsub|q>>, and <math|\<Phi\><rsub|q>> is the
     Gaussian field <math|X<rsub|q>> of Proposition<nbsp><hlink|5.2|cqft_lecture3.tm#prop:scale-GFF>
-    of Lecture 3, with law <math|\<mu\><rsup|Q<rsub|q>>>.
+    of Lecture<nbsp>3, with law <math|\<mu\><rsup|Q<rsub|q>>>.
   </proposition>
 
   <\proof>
@@ -515,7 +515,7 @@
   defined for every <math|q>, with terminal resolution <math|\<infty\>> at
   fixed <math|N>. The lattice is the only ultraviolet cutoff, and
   <math|\<Phi\><rsub|q>\<to\>\<Phi\><rsub|\<infty\>>> as
-  <math|q\<to\>\<infty\>> (Lemma<nbsp><hlink|18.1|cqft_lecture7.tm#lem:terminal>).
+  <math|q\<to\>\<infty\>> (Lemma<nbsp><hlink|16.1|cqft_lecture7.tm#lem:terminal>).
 
   <subsection|The Wetterich formulation><label|sec:wetterich>
 
@@ -531,16 +531,16 @@
   function of <math|q> alone, the <math|\<Gamma\><rsub|t>> of Lecture<nbsp>4:
   <math|\<Gamma\><rsub|q>+<frac|1|2>*<around|\<langle\>|y,K<rsub|q<rsub|0>>*y|\<rangle\>>>
   is the effective average action with the regulator
-  <math|<with|math-font|cal*|R><rsub|q>=q-q<rsub|0>>
-  (Exercise<nbsp><reference|ex:same-Gamma>). The coordinate identity
-  <math|P<rsub|q>=D*\<Psi\><rsub|q><around|(|\<psi\><rsub|q>|)>> reads
+  <math|\<cal-R\><rsub|q>=q-q<rsub|0>> (Exercise<nbsp><reference|ex:same-Gamma>).
+  The coordinate identity <math|P<rsub|q>=D*\<Psi\><rsub|q><around|(|\<psi\><rsub|q>|)>>
+  reads
 
   <\equation>
     <label|eq:coordinate-ex>K<rsub|q>*\<Phi\><rsub|q>=K<rsub|q>*\<psi\><rsub|q>+D*\<Gamma\><rsub|q><around|(|\<psi\><rsub|q>|)>,<space|2em><text|i.e.><space|2em>\<Phi\><rsub|q>=\<psi\><rsub|q>+C<rsub|q>*D*\<Gamma\><rsub|q><around|(|\<psi\><rsub|q>|)>,
   </equation>
 
   which is <hlink|(8.5)|cqft_lecture4.tm#eq:coord> with
-  <math|<with|math-font|cal*|F><rsub|q>=D*\<Gamma\><rsub|q>>.
+  <math|\<cal-F\><rsub|q>=D*\<Gamma\><rsub|q>>.
 
   <\proposition>
     <dueto|Wetterich equation with a mass regulator><label|prop:wetterich> At
@@ -565,7 +565,7 @@
   </proof>
 
   This is <hlink|(8.12)|cqft_lecture4.tm#eq:wetterich-Gamma> with
-  <math|\<partial\><rsub|q><with|math-font|cal*|R>=1>, up to the constant
+  <math|\<partial\><rsub|q>\<cal-R\>=1>, up to the constant
   <math|-<frac|1|2><math-up|Tr>C<rsub|q>> (which is infinite in the continuum
   and irrelevant here). It is an identity about the unknown measure
   <math|\<nu\><rsub|N>>, not a construction: to use it we would need
@@ -579,7 +579,7 @@
 
   an <em|approximate> effective action gives approximate forecast
   coordinates, and the error should be governed by how badly the approximate
-  action fails to solve <eqref|eq:wetterich>.
+  action fails to solve<nbsp><eqref|eq:wetterich>.
 
   <subsection|Approximate forecast and error><label|sec:YZ>
 
@@ -602,10 +602,10 @@
 
   Equivalently <math|Y<rsub|q>> solves the approximate coordinate equation
   <math|K<rsub|q>*\<Phi\><rsub|q>=K<rsub|q>*Y<rsub|q>+D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
-  i.e. <eqref|eq:coordinate-ex> with <math|<wide|\<Gamma\>|\<bar\>>> in place
-  of <math|\<Gamma\>>. If <math|<wide|\<Gamma\>|\<bar\>>=\<Gamma\>> then
-  <math|Y=\<psi\>>, <math|Z=0>, and <math|e> depends only on <math|q>, so
-  <math|b=0>.
+  i.e.<nbsp><eqref|eq:coordinate-ex> with <math|<wide|\<Gamma\>|\<bar\>>> in
+  place of <math|\<Gamma\>>. If <math|<wide|\<Gamma\>|\<bar\>>=\<Gamma\>>
+  then <math|Y=\<psi\>>, <math|Z=0>, and <math|e> depends only on <math|q>,
+  so <math|b=0>.
 
   <\theorem>
     <dueto|The FBSDE in approximate forecast coordinates><label|thm:YZ> At
@@ -635,18 +635,18 @@
     </equation*>
 
     which is the first equation, since <math|\<psi\>-Y=Z>. The second is
-    <math|\<mathd\>Z=\<mathd\>\<psi\>-\<mathd\>Y> and <eqref|eq:dpsi>. At
-    <math|q=q<rsub|0>>, <math|P<rsub|q<rsub|0>>=0> and evenness give
+    <math|\<mathd\>Z=\<mathd\>\<psi\>-\<mathd\>Y> and<nbsp><eqref|eq:dpsi>.
+    At <math|q=q<rsub|0>>, <math|P<rsub|q<rsub|0>>=0> and evenness give
     <math|Y<rsub|q<rsub|0>>=0=\<psi\><rsub|q<rsub|0>>>.
   </proof>
 
-  <paragraph|Reading <eqref|eq:YZ-fbsde>.> The equation for <math|Y> is
+  <paragraph|Reading<nbsp><eqref|eq:YZ-fbsde>> The equation for <math|Y> is
   forward and explicit, once <math|Z> is known: its coefficients <math|b,H>
   are deterministic functions built from <math|<wide|\<Gamma\>|\<bar\>>>. The
   equation for <math|Z> is backward. Its terminal condition is not imposed
   but <em|proved>: if <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> matches the
   bare action as <math|q\<to\>\<infty\>>, then <math|q*Z<rsub|q>\<to\>0> at
-  each fixed <math|N> (Lemma<nbsp><hlink|18.1|cqft_lecture7.tm#lem:terminal>).
+  each fixed <math|N> (Lemma<nbsp><hlink|16.1|cqft_lecture7.tm#lem:terminal>).
   Its only source is the drift <math|b>, i.e. the gradient of the defect,
   transported by the propagator <math|exp <big|int>H>. So:
 
@@ -739,14 +739,15 @@
 
   <\exercise>
     <dueto|Same <math|\<Gamma\>>><label|ex:same-Gamma> Show that
-    <math|\<Gamma\><rsub|q>> of <eqref|eq:Gamma-ex> coincides, up to a
+    <math|\<Gamma\><rsub|q>> of<nbsp><eqref|eq:Gamma-ex> coincides, up to a
     constant, with the <math|\<Gamma\><rsub|t>> of
-    <hlink|(8.11)|cqft_lecture4.tm#eq:moreau> for the profile
-    <eqref|eq:dictionary-profile>, and that
+    <hlink|(8.11)|cqft_lecture4.tm#eq:moreau> for the
+    profile<nbsp><eqref|eq:dictionary-profile>, and that
     <math|\<Gamma\><rsub|q>+<frac|1|2>*<around|\<langle\>|y,K<rsub|q<rsub|0>>*y|\<rangle\>>>
     is the effective average action <math|\<Gamma\><rsup|<math-up|EAA>>> of
-    Theorem<nbsp><hlink|8.4|cqft_lecture4.tm#thm:wetterich>. Check that
-    <eqref|eq:wetterich> agrees with <hlink|(8.12)|cqft_lecture4.tm#eq:wetterich-Gamma>.
+    Theorem<nbsp><hlink|8.4|cqft_lecture4.tm#thm:wetterich>. Check
+    that<nbsp><eqref|eq:wetterich> agrees with
+    <hlink|(8.12)|cqft_lecture4.tm#eq:wetterich-Gamma>.
   </exercise>
 
   <\exercise>
@@ -754,8 +755,9 @@
     <math|a\<gtr\>0>. Compute <math|\<cal-K\><rsub|q>>,
     <math|\<psi\><rsub|q>>, <math|<math-up|Cov><rsub|q>> and
     <math|\<Gamma\><rsub|q>> explicitly, and check
-    Proposition<nbsp><reference|prop:polchinski> and <eqref|eq:wetterich>.
-    Compare with Exercise<nbsp><hlink|7.1|cqft_lecture4.tm#ex:quadratic>.
+    Proposition<nbsp><reference|prop:polchinski>
+    and<nbsp><eqref|eq:wetterich>. Compare with
+    Exercise<nbsp><hlink|7.1|cqft_lecture4.tm#ex:quadratic>.
   </exercise>
 
   <\exercise>
@@ -836,9 +838,9 @@
   costs <math|r<rsub|q><rsup|-1>>. For <math|k=4>,
   <math|g<rsub|q>*q*r<rsub|q><rsup|-2>=\<gamma\>*g<rsub|q>>: the quartic
   vertex of the corrections is <math|\<gamma\>> times the small coupling. The
-  whole construction is a bookkeeping of <eqref|eq:power-counting>.
+  whole construction is a bookkeeping of<nbsp><eqref|eq:power-counting>.
 
-  <paragraph|The basic loop estimate.> Derivatives of
+  <paragraph|The basic loop estimate> Derivatives of
   <math|<frac|1|2><math-up|Tr><around|(|K+D<rsup|2>*\<Gamma\>|)><rsup|-1>>
   are traces of closed chains <math|H*<space|0.17em>D<rsup|j<rsub|1>+2>*\<Gamma\>*<space|0.17em>H*\<cdots\>*D<rsup|j<rsub|p>+2>*\<Gamma\>*<space|0.17em>H>.
   A closed loop with <math|p> vertices, each carrying at least one external
@@ -860,7 +862,7 @@
   built from them is <math|\<le\>C*q<rsup|1/2>*r<rsub|q><rsup|-k>>, and after
   the integration in <math|q> that produces <math|\<Gamma\>> (which gains a
   factor <math|q>) it has size <math|q<rsup|3/2>*r<rsub|q><rsup|-k>=g<rsub|q>*q*r<rsub|q><rsup|2-k>>:
-  this is the origin of <eqref|eq:power-counting>, the size of one loop.
+  this is the origin of<nbsp><eqref|eq:power-counting>, the size of one loop.
   Replacing a bare vertex by a vertex of a correction of relative size
   <math|\<varepsilon\>> multiplies the loop by <math|\<varepsilon\>>
   (Exercise<nbsp><reference|ex:loop-count>). <em|Every further loop gains one
@@ -888,7 +890,7 @@
   is the sum of one-loop diagrams with <math|2*j> external legs. The quartic
   term is the bubble <math|-<frac|\<gamma\><rsup|2>|4><big|iint>C<rsub|q>*<around|(|x,z|)><rsup|2>*y<around|(|x|)><rsup|2>*y<around|(|z|)><rsup|2><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>z>,
   with <math|s*<around|(|D<rsup|4>*\<cal-L\><rsub|q><around|(|0|)>|)>=6*\<gamma\><rsup|2>*a<rsub|2><around|(|q|)>\<le\>C*g<rsub|q>*q*r<rsub|q><rsup|-2>>,
-  as predicted by <eqref|eq:power-counting>.
+  as predicted by<nbsp><eqref|eq:power-counting>.
 
   <subsection|Corrections and the mass>
 
@@ -903,7 +905,7 @@
   <math|\<Theta\><rsub|q>*<with|math-font|Bbb|1>=0>), and set
 
   <\equation>
-    <label|eq:trace-map><with|math-font|cal*|T><rsub|q>*<around|[|M,h|]><around|(|y|)>\<assign\><tfrac|1|2><math-up|Tr><around*|[|<around*|(|K<rsub|q>+M<rsub|q>+D<rsup|2>*<around|(|U+h|)><around|(|y|)>|)><rsup|-1>-<around*|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>|]>.
+    <label|eq:trace-map>\<cal-T\><rsub|q>*<around|[|M,h|]><around|(|y|)>\<assign\><tfrac|1|2><math-up|Tr><around*|[|<around*|(|K<rsub|q>+M<rsub|q>+D<rsup|2>*<around|(|U+h|)><around|(|y|)>|)><rsup|-1>-<around*|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>|]>.
   </equation>
 
   The approximate action on the field ball is
@@ -915,16 +917,16 @@
   with the nonlinear part built by two <em|integrated> Wetterich steps,
 
   <\equation>
-    <label|eq:iteration>h<rsup|<around|[|0|]>>=\<cal-L\>,<space|2em>h<rsup|<around|[|j+1|]>><rsub|q>=\<cal-L\><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>*<around*|(|<with|math-font|cal*|T><rsub|s>*<around|[|M,h<rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>*\<cal-L\><rsub|s>|)>\<mathd\>s,<space|2em>j=0,1,
+    <label|eq:iteration>h<rsup|<around|[|0|]>>=\<cal-L\>,<space|2em>h<rsup|<around|[|j+1|]>><rsub|q>=\<cal-L\><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>*<around*|(|\<cal-T\><rsub|s>*<around|[|M,h<rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>*\<cal-L\><rsub|s>|)>\<mathd\>s,<space|2em>j=0,1,
   </equation>
 
-  so that <math|\<partial\><rsub|q>*h<rsup|<around|[|j+1|]>>=\<Pi\>*<space|0.17em><with|math-font|cal*|T><rsub|q>*<around|[|M,h<rsup|<around|[|j|]>>|]>>:
+  so that <math|\<partial\><rsub|q>*h<rsup|<around|[|j+1|]>>=\<Pi\>*<space|0.17em>\<cal-T\><rsub|q>*<around|[|M,h<rsup|<around|[|j|]>>|]>>:
   each step inserts the previous approximation into the trace. The integrals
   run from <math|\<infty\>>: the nonlinear part is fixed by the requirement
   that it vanishes at infinite resolution, where <math|\<Gamma\><rsub|q>>
   must become the bare action (Theorem<nbsp><hlink|8.4|cqft_lecture4.tm#thm:wetterich>).
 
-  <paragraph|The quadratic part.> The low jets are not iterated: they are
+  <paragraph|The quadratic part> The low jets are not iterated: they are
   handled exactly by the path <math|M>. The quadratic part of the flow at
   <math|y=0> is, by evenness, <math|<frac|1|2>*D<rsup|2><math-up|Tr>H<around|(|0|)>=-<frac|1|2><math-up|Ctr><rsub|R<rsub|0><rsup|2>>D<rsup|4>*\<Gamma\><rsup|<math-up|o>><around|(|0|)>>,
   where <math|R<rsub|0,q>=<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>> and
@@ -953,15 +955,15 @@
     \<mu\><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|\<infty\>>\<beta\><rsub|q><space|0.17em>\<mathd\>q,<space|2em>B<rsub|q>*<with|math-font|Bbb|1>=\<beta\><rsub|q>*<with|math-font|Bbb|1>,
   </equation>
 
-  and it is this number that enters the Gibbs measure <eqref|eq:nuN>. Note
-  the order: the counterterm is an output of the deterministic flow, not an
-  input.
+  and it is this number that enters the Gibbs measure<nbsp><eqref|eq:nuN>.
+  Note the order: the counterterm is an output of the deterministic flow, not
+  an input.
 
   <\proposition>
     <dueto|The coefficient construction<nbsp><cite|FBSDE26>><label|prop:coeff>
     For <math|q<rsub|0>> large enough (depending on <math|\<gamma\>>, not on
-    <math|N>), the system <eqref|eq:iteration>\U<eqref|eq:mass> has a unique
-    solution in a ball, with
+    <math|N>), the system<nbsp><eqref|eq:iteration>\U<eqref|eq:mass> has a
+    unique solution in a ball, with
 
     <\equation>
       <label|eq:coeff><around|\||\<mu\><rsub|q>|\|>\<le\>C*\<gamma\>*<sqrt|q>,<space|2em>v<rsub|1><around|(|\<Theta\><rsub|q>|)>\<le\>C*\<gamma\><rsup|2>*q<rsup|-1/2>,<space|2em><around|\<\|\|\>|\<partial\><rsub|q>*M<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<le\>C*g<rsub|q>,
@@ -984,7 +986,7 @@
     </equation*>
 
     The complete defect of <math|\<Gamma\><rsup|<math-up|o>>> on the ball is
-    <math|e<rsup|<math-up|o>><rsub|q>=\<Pi\>*<around|(|<with|math-font|cal*|T><rsub|q>*<around|[|M,h<rsup|<around|[|1|]>>|]>-<with|math-font|cal*|T><rsub|q>*<around|[|M,h<rsup|<around|[|2|]>>|]>|)>>,
+    <math|e<rsup|<math-up|o>><rsub|q>=\<Pi\>*<around|(|\<cal-T\><rsub|q>*<around|[|M,h<rsup|<around|[|1|]>>|]>-\<cal-T\><rsub|q>*<around|[|M,h<rsup|<around|[|2|]>>|]>|)>>,
     and
 
     <\equation>
@@ -1000,28 +1002,29 @@
 
   <\render-proof|Idea of the proof>
     (a) <em|Trace Lipschitz estimate.> If two corrections <math|h,<wide|h|^>>
-    obey the individual bounds <eqref|eq:power-counting> up to order
+    obey the individual bounds<nbsp><eqref|eq:power-counting> up to order
     <math|k+2> and their difference obeys them with <math|g<rsub|q>> replaced
     by <math|\<varepsilon\><rsub|q>>, then
-    <math|\<cal-N\><rsub|k>*<around|(|<with|math-font|cal*|T>*<around|[|M,h|]>-<with|math-font|cal*|T>*<around|[|M,<wide|h|^>|]>|)>\<le\>C*\<varepsilon\><rsub|q>*q<rsup|1/2>*r<rsub|q><rsup|-k>>.
+    <math|\<cal-N\><rsub|k>*<around|(|\<cal-T\>*<around|[|M,h|]>-\<cal-T\>*<around|[|M,<wide|h|^>|]>|)>\<le\>C*\<varepsilon\><rsub|q>*q<rsup|1/2>*r<rsub|q><rsup|-k>>.
     Expand <math|D<rsup|k>> of the trace into loops; in each, telescope the
-    difference onto one marked vertex or propagator and apply
-    <eqref|eq:loop>. (b) <em|Integration.> Each step gains one <math|g>; the
-    integrand of <eqref|eq:iteration> is <math|O<around|(|\<gamma\><rsup|1+k/2>*s<rsup|-k/2>|)>>
-    in the <math|k>th derivative, and that of the increment
+    difference onto one marked vertex or propagator and
+    apply<nbsp><eqref|eq:loop>. (b) <em|Integration.> Each step gains one
+    <math|g>; the integrand of<nbsp><eqref|eq:iteration> is
+    <math|O<around|(|\<gamma\><rsup|1+k/2>*s<rsup|-k/2>|)>> in the <math|k>th
+    derivative, and that of the increment
     <math|h<rsup|<around|[|j+1|]>>-h<rsup|<around|[|j|]>>> is
     <math|O<around|(|\<gamma\><rsup|1+k/2>*s<rsup|-k/2>*g<rsub|s><rsup|j>|)>>,
     integrable at <math|s=\<infty\>> for <math|k\<ge\>4>. The low jets have
     been removed, so the lower derivatives are controlled by Taylor's formula
     from the fourth. (c) <em|Mass path.> Given <math|M> in the ball, the
-    right side of <eqref|eq:mass> is computed from the corrections, and the
-    map <math|M\<mapsto\><around|(|\<mu\>,\<Theta\>|)>> is a contraction for
-    large <math|q<rsub|0>>: differences gain a factor
+    right side of<nbsp><eqref|eq:mass> is computed from the corrections, and
+    the map <math|M\<mapsto\><around|(|\<mu\>,\<Theta\>|)>> is a contraction
+    for large <math|q<rsub|0>>: differences gain a factor
     <math|g<rsub|q<rsub|0>>> (for <math|\<mu\>> after integrating from
     <math|q<rsub|0>>, using <math|sup<rsub|x> log
     x/<sqrt|x>\<less\>\<infty\>>). (d) <em|Defect.> The mass equation
     supplies exactly the quadratic jet of the flow, and
-    <math|\<partial\><rsub|q>*h<rsup|<around|[|2|]>>=\<Pi\>*<with|math-font|cal*|T>*<around|[|M,h<rsup|<around|[|1|]>>|]>>,
+    <math|\<partial\><rsub|q>*h<rsup|<around|[|2|]>>=\<Pi\>*\<cal-T\>*<around|[|M,h<rsup|<around|[|1|]>>|]>>,
     so the defect is the trace difference between the last two
     approximations, of order <math|g<rsup|3>>: by (a) with
     <math|\<varepsilon\><rsub|q>=g<rsub|q><rsup|3>>,
@@ -1038,21 +1041,22 @@
   second one: the estimate <math|<around|\<\|\|\>|\<delta\><rsub|z><rsup|2>*C<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<lesssim\>d<around|(|0,z|)><rsup|2>>,
   which a second moment would require, fails by a logarithm, and one uses
   <math|<around|\<\|\|\>|\<delta\><rsub|z><rsup|2>*C<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<lesssim\>q<rsup|-1/2>*d<around|(|0,z|)>>
-  instead <cite|FBSDE26>. This is also why <math|\<cal-N\><rsub|k>> contains
-  a spatial moment at <math|y=0>.
+  instead<nbsp><cite|FBSDE26>. This is also why <math|\<cal-N\><rsub|k>>
+  contains a spatial moment at <math|y=0>.
 
   <subsection|Two mass renormalisations>
 
   The bare mass <math|\<mu\><rsub|N>> diverges as <math|N\<to\>\<infty\>>.
   Its two divergent parts are the two divergent self-energy diagrams of
-  Section<nbsp><hlink|10.2|cqft_lecture4.tm#sec:pert>.
+  Appendix<nbsp><hlink|A.2|cqft_lecture4.tm#sec:pert> of Lecture<nbsp>4.
 
   <\itemize>
-    <item><em|The tadpole.> The first term of <eqref|eq:mass> integrates to
-    <math|-\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|\<infty\>><math-up|Tr>R<rsub|0,q><rsup|2><space|0.17em>\<mathd\>q\<approx\>-\<gamma\><math-up|Tr>C=-3*\<lambda\><math-up|Tr>C\<sim\>-N>.
+    <item><em|The tadpole.> The first term of<nbsp><eqref|eq:mass> integrates
+    to <math|-\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|\<infty\>><math-up|Tr>R<rsub|0,q><rsup|2><space|0.17em>\<mathd\>q\<approx\>-\<gamma\><math-up|Tr>C=-3*\<lambda\><math-up|Tr>C\<sim\>-N>.
     This is Wick ordering: <math|<frac|\<lambda\>|4>*\<varphi\><rsup|4>-<frac|3|2>*\<lambda\>*c*\<varphi\><rsup|2>>
     agrees, up to a constant, with <math|<frac|\<lambda\>|4>*H<rsub|4>*<around|(|\<varphi\>;c|)>>,
-    with <math|c=C*<around|(|x,x|)>> (<hlink|(10.5)|cqft_lecture4.tm#eq:first-order>).
+    with <math|c=C*<around|(|x,x|)>> (<hlink|(A.5)|cqft_lecture4.tm#eq:first-order>
+    of Lecture<nbsp>4).
 
     <item><em|The sunset.> The second term contracts the bubble contained in
     <math|D<rsup|4>*h<rsup|<around|[|2|]>><around|(|0|)>> (the quartic
@@ -1060,21 +1064,21 @@
     in <math|q> produces the two-loop self-energy, which diverges like
     <math|\<lambda\><rsup|2>*<big|int><rsub|<around|\||z|\|>\<gtr\>1/N><around|\||z|\|><rsup|-3>\<mathd\>z\<sim\>\<lambda\><rsup|2>*log
     N>. This is the sunset counterterm <math|\<gamma\><rsub|T>\<sim\>log T>
-    of <hlink|(10.7)|cqft_lecture4.tm#eq:gammaT>: with
+    of <hlink|(A.7)|cqft_lecture4.tm#eq:gammaT> of Lecture<nbsp>4: with
     <math|\<lambda\><rsub|<math-up|L3>>=\<lambda\>/4> and
     <math|\<gamma\><rsub|T>*<big|int>H<rsub|2>=\<gamma\><rsub|T>*<big|int>\<varphi\><rsup|2>+>const,
     the sunset part of <math|\<mu\><rsub|N>> is
     <math|2*\<gamma\><rsub|T>=6*\<lambda\><rsup|2>*<big|int>C<rsup|3>\<approx\><frac|3*\<lambda\><rsup|2>|8*\<pi\><rsup|2>>*log
-    N>, positive. (The double-tadpole logarithms in the two terms of
-    <eqref|eq:mass>, the bubble with a tadpole insertion and the mass
+    N>, positive. (The double-tadpole logarithms in the two terms
+    of<nbsp><eqref|eq:mass>, the bubble with a tadpole insertion and the mass
     insertion in <math|<math-up|Tr>R<rsub|0,q><rsup|2>>, cancel each other.)
   </itemize>
 
-  Power counting (Exercise<nbsp><hlink|10.3|cqft_lecture4.tm#ex:power-counting>)
-  says that no other counterterm is needed. In the flow this is the statement
-  that the integrals <eqref|eq:iteration> of all vertices with
-  <math|k\<ge\>4> legs converge at <math|q=\<infty\>>: only the quadratic jet
-  must be fixed by a boundary condition.
+  Power counting (Exercise<nbsp><hlink|A.3|cqft_lecture4.tm#ex:power-counting>
+  of Lecture<nbsp>4) says that no other counterterm is needed. In the flow
+  this is the statement that the integrals<nbsp><eqref|eq:iteration> of all
+  vertices with <math|k\<ge\>4> legs converge at <math|q=\<infty\>>: only the
+  quadratic jet must be fixed by a boundary condition.
 
   There is a subtlety: the running mass <math|\<mu\><rsub|q>> at fixed
   <math|q> has a limit as <math|N\<to\>\<infty\>>, but
@@ -1086,11 +1090,11 @@
   <subsection|Two correction steps>
 
   Why two corrections, and not one or three? The answer is in the backward
-  equation of <eqref|eq:YZ-fbsde>. Freeze the noise and the large fields, and
-  estimate the size of <math|Z> produced by a defect on the ball. The
-  propagator of <math|\<mathd\>Z=-H*Z<space|0.17em>\<mathd\>q+\<ldots\>> from
-  <math|q> to <math|s> is about <math|s/q> (since <math|H\<approx\>C<rsub|q>>
-  has norm <math|q<rsup|-1>>), so
+  equation of<nbsp><eqref|eq:YZ-fbsde>. Freeze the noise and the large
+  fields, and estimate the size of <math|Z> produced by a defect on the ball.
+  The propagator of <math|\<mathd\>Z=-H*Z<space|0.17em>\<mathd\>q+\<ldots\>>
+  from <math|q> to <math|s> is about <math|s/q> (since
+  <math|H\<approx\>C<rsub|q>> has norm <math|q<rsup|-1>>), so
 
   <\equation>
     <label|eq:Z-heuristic>Z<rsub|q>\<approx\><big|int><rsub|q><rsup|\<infty\>><frac|s|q>*<space|0.17em>b<rsub|s><space|0.17em>\<mathd\>s,<space|2em><around|\||b<rsub|s>|\|>\<lesssim\><around|\<\|\|\>|H<rsub|s>|\<\|\|\>><space|0.17em><math-ss|S><rsub|4><around|(|e<rsub|s>|)>*<space|0.17em>r<rsub|s><rsup|3>\<lesssim\>s<rsup|-1><math-ss|S><rsub|4><around|(|e<rsub|s>|)>*<space|0.17em>r<rsub|s><rsup|3>,
@@ -1143,8 +1147,8 @@
   <subsection*|Exercises>
 
   <\exercise>
-    <dueto|Counting loops><label|ex:loop-count> (a) Use <eqref|eq:loop> to
-    show that a loop with <math|p> vertices
+    <dueto|Counting loops><label|ex:loop-count> (a) Use<nbsp><eqref|eq:loop>
+    to show that a loop with <math|p> vertices
     <math|D<rsup|j<rsub|i>+2>*<around|(|U+h|)>>, <math|j<rsub|i>\<ge\>1>,
     each with <math|s\<le\>C*q*r<rsub|q><rsup|-j<rsub|i>>>, and
     <math|k=<big|sum>j<rsub|i>> external legs has rooted norm
@@ -1153,7 +1157,7 @@
     (c) If one vertex is replaced by a vertex of size
     <math|\<varepsilon\>*<space|0.17em>q*r<rsub|q><rsup|-j>>, show that the
     loop gains the factor <math|\<varepsilon\>>. Deduce the sizes
-    <math|g<rsup|j+1>> of the increments in <eqref|eq:increments>.
+    <math|g<rsup|j+1>> of the increments in<nbsp><eqref|eq:increments>.
   </exercise>
 
   <\exercise>
@@ -1170,7 +1174,7 @@
     <math|h<rsub|n>=<wide|h|^><rsub|n>+<frac|\<delta\>|12>*y<rsup|4>>. Show
     that both have small Hessians on <math|<around|\||y|\|>\<less\>2>, that
     <math|h<rsub|n>-<wide|h|^><rsub|n>> has bounded derivatives, but
-    <math|D<rsup|4>*<around|(|<with|math-font|cal*|T><around|[|h<rsub|n>|]>-<with|math-font|cal*|T><around|[|<wide|h|^><rsub|n>|]>|)><around|(|0|)>=12*<around|(|2*\<delta\>+\<alpha\>*\<delta\>*n<rsup|2>+\<delta\><rsup|2>|)>>
+    <math|D<rsup|4>*<around|(|\<cal-T\><around|[|h<rsub|n>|]>-\<cal-T\><around|[|<wide|h|^><rsub|n>|]>|)><around|(|0|)>=12*<around|(|2*\<delta\>+\<alpha\>*\<delta\>*n<rsup|2>+\<delta\><rsup|2>|)>>
     is unbounded in <math|n>. Conclude that the trace estimate needs the
     individual higher derivative bounds.
   </exercise>
@@ -1197,7 +1201,7 @@
   and <em|uniformly convex for all fields>, which agrees with
   <math|\<Gamma\><rsup|<math-up|o>><rsub|q>> on the ball.
 
-  <paragraph|A scalar model.> The difficulty is already visible in the
+  <paragraph|A scalar model> The difficulty is already visible in the
   one-site seed, <math|\<cal-L\><rsub|q><around|(|y|)>=<frac|1|2>*<around|[|log
   <around|(|1+\<gamma\>*y<rsup|2>/q|)>-\<gamma\>*y<rsup|2>/q|]>>. Its power
   series <math|<big|sum><rsub|j\<ge\>2><frac|<around|(|-1|)><rsup|j+1>|2*j>*<around|(|\<gamma\>*y<rsup|2>/q|)><rsup|j>>
@@ -1241,7 +1245,7 @@
   The clip acts pointwise in space and maps every field into the ball. The
   quartic and quadratic parts are not clipped. By the chain rule, with
   factors <math|<around|\||\<kappa\><rsub|q><rsup|<around|(|b|)>>|\|>\<le\>C*r<rsub|q><rsup|1-b>>,
-  the clipped correction obeys the same bounds <eqref|eq:power-counting>
+  the clipped correction obeys the same bounds<nbsp><eqref|eq:power-counting>
   <em|globally>:
 
   <\equation>
@@ -1277,9 +1281,9 @@
 
   On the set <math|<around|{|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<le\>r<rsub|q>|}>>
   the clip is the identity and the defect is <math|e<rsup|<math-up|o>>>, of
-  size <eqref|eq:defect-bound>. Outside it, the clipped action does not solve
-  the Wetterich equation even approximately in relative terms. Split the
-  drift into its bounded-field and large-field parts,
+  size<nbsp><eqref|eq:defect-bound>. Outside it, the clipped action does not
+  solve the Wetterich equation even approximately in relative terms. Split
+  the drift into its bounded-field and large-field parts,
 
   <\equation*>
     b<rsup|<math-up|b>><rsub|q><around|(|y|)>\<assign\>-H<rsub|q><around|(|y|)>*<space|0.17em>D*\<kappa\><rsub|q><around|(|y|)>*<space|0.17em>D*e<rsup|<math-up|o>><rsub|q>*<around|(|\<kappa\><rsub|q>*y|)>,<space|2em>b<rsup|<math-up|l>><rsub|q>\<assign\>b<rsub|q>-b<rsup|<math-up|b>><rsub|q>,
@@ -1299,7 +1303,7 @@
     Moreover <math|<around|\<\|\|\>|b<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\>*q<rsup|-3/2><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>.
   </proposition>
 
-  The first bound is <eqref|eq:Z-heuristic> with <math|n=2>: on the ball
+  The first bound is<nbsp><eqref|eq:Z-heuristic> with <math|n=2>: on the ball
   <math|<around|\||D*e<rsup|<math-up|o>>|\|>\<le\><math-ss|S><rsub|4><around|(|e<rsup|<math-up|o>>|)>*<around|(|2*r|)><rsup|3>/6>,
   and <math|q<rsup|-1>*\<gamma\><rsup|5>*q<rsup|-3>*r<rsub|q><rsup|3>=\<gamma\><rsup|7/2>*q<rsup|-5/2>>.
   The large-field part is as large as the bound
@@ -1311,7 +1315,7 @@
   <math|<around|\||t|\|>+r<rsup|-1>*y<rsup|2>\<le\>2*r<rsup|-2><around|\||t|\|><rsup|3>>,
   and <math|<around|(|\<gamma\>*q<rsup|-3/2>*r<rsup|-2>|)><rsup|2>=\<gamma\><rsup|4>*q<rsup|-5>>.
 
-  <paragraph|Where the large-field error comes from.> Compute the gradient of
+  <paragraph|Where the large-field error comes from> Compute the gradient of
   the defect of the clipped action and compare it with
   <math|D*\<kappa\>*<space|0.17em>D*e<rsup|<math-up|o>>*<around|(|\<kappa\>*y|)>>.
   With <math|z=\<kappa\><rsub|q><around|(|y|)>>,
@@ -1357,14 +1361,14 @@
   </equation*>
 
   (the <math|t>-part of the large-field action of Lecture<nbsp>6), whose
-  weight is matched to the last bound in <eqref|eq:source>:
+  weight is matched to the last bound in<nbsp><eqref|eq:source>:
   <math|q<rsup|7/2>\<cdot\>\<gamma\><rsup|4>*q<rsup|-5>=\<gamma\><rsup|3>\<cdot\><around|(|\<gamma\>*q<rsup|-3/2>|)>>,
   so <math|<big|int>q<rsup|7/2><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<mathd\>q\<le\>C*\<gamma\><rsup|3>*<big|int>q<rsup|-3/2>*\<gamma\><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<mathd\>q>,
   where <math|q<rsup|7/2>> is the weight with which
   <math|<around|\<\|\|\>|b<rsup|<math-up|l>>|\<\|\|\>><rsub|2><rsup|2>>
   enters the backward representation (Lecture<nbsp>6).
 
-  <paragraph|The coordinate correction.> Finally, write the approximate
+  <paragraph|The coordinate correction> Finally, write the approximate
   coordinate equation as
 
   <\equation>
@@ -1389,9 +1393,9 @@
     all deterministic and constructed without any information on
     <math|\<nu\><rsub|N>>;
 
-    <item>the exact FBSDE <eqref|eq:YZ-fbsde> for the approximate forecast
-    <math|Y> and the error <math|Z>, with noise coefficients bounded as in
-    Lemma<nbsp><reference|lem:resolvent>;
+    <item>the exact FBSDE<nbsp><eqref|eq:YZ-fbsde> for the approximate
+    forecast <math|Y> and the error <math|Z>, with noise coefficients bounded
+    as in Lemma<nbsp><reference|lem:resolvent>;
 
     <item>a source <math|b=b<rsup|<math-up|b>>+b<rsup|<math-up|l>>>, whose
     bounded-field part is integrable in the backward equation thanks to the
@@ -1434,8 +1438,8 @@
     <math|\<gamma\>*q<rsup|-3><around|\||y|\|>> on the whole drift (the
     analogue of <math|<around|(|g<rsub|q>/q|)><around|\||y|\|>>, with
     <math|a<rsub|2><around|(|q|)>=q<rsup|-2>> in place of
-    <math|q<rsup|-1/2>>), but it vanishes on the ball. Compare with
-    <eqref|eq:source>.
+    <math|q<rsup|-1/2>>), but it vanishes on the ball. Compare
+    with<nbsp><eqref|eq:source>.
   </exercise>
 
   <\exercise>
@@ -1505,35 +1509,35 @@
   <\collection>
     <associate|auto-1|<tuple|?|2>>
     <associate|auto-10|<tuple|1|7>>
-    <associate|auto-11|<tuple|12.1|7>>
-    <associate|auto-12|<tuple|12.1|7>>
-    <associate|auto-13|<tuple|13|8>>
-    <associate|auto-14|<tuple|13.1|8>>
+    <associate|auto-11|<tuple|10.1|7>>
+    <associate|auto-12|<tuple|10.1|7>>
+    <associate|auto-13|<tuple|11|8>>
+    <associate|auto-14|<tuple|11.1|8>>
     <associate|auto-15|<tuple|1|8>>
-    <associate|auto-16|<tuple|13.2|9>>
-    <associate|auto-17|<tuple|13.3|9>>
+    <associate|auto-16|<tuple|11.2|9>>
+    <associate|auto-17|<tuple|11.3|9>>
     <associate|auto-18|<tuple|1|9>>
-    <associate|auto-19|<tuple|13.4|10>>
+    <associate|auto-19|<tuple|11.4|10>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|13.5|11>>
-    <associate|auto-21|<tuple|13.13|12>>
-    <associate|auto-22|<tuple|14|12>>
-    <associate|auto-23|<tuple|14.1|12>>
+    <associate|auto-20|<tuple|11.5|11>>
+    <associate|auto-21|<tuple|11.13|11>>
+    <associate|auto-22|<tuple|12|12>>
+    <associate|auto-23|<tuple|12.1|12>>
     <associate|auto-24|<tuple|1|12>>
-    <associate|auto-25|<tuple|14.2|12>>
-    <associate|auto-26|<tuple|14.3|13>>
+    <associate|auto-25|<tuple|12.2|12>>
+    <associate|auto-26|<tuple|12.3|13>>
     <associate|auto-27|<tuple|1|13>>
     <associate|auto-28|<tuple|2|14>>
-    <associate|auto-29|<tuple|14.4|14>>
-    <associate|auto-3|<tuple|12|3>>
+    <associate|auto-29|<tuple|12.4|14>>
+    <associate|auto-3|<tuple|10|3>>
     <associate|auto-30|<tuple|<with|mode|<quote|math>|\<bullet\>>|14>>
-    <associate|auto-31|<tuple|14.3|15>>
-    <associate|auto-4|<tuple|12.1|3>>
+    <associate|auto-31|<tuple|12.3|15>>
+    <associate|auto-4|<tuple|10.1|3>>
     <associate|auto-5|<tuple|1|3>>
-    <associate|auto-6|<tuple|12.2|4>>
-    <associate|auto-7|<tuple|12.3|4>>
-    <associate|auto-8|<tuple|12.4|6>>
-    <associate|auto-9|<tuple|12.5|6>>
+    <associate|auto-6|<tuple|10.2|4>>
+    <associate|auto-7|<tuple|10.3|4>>
+    <associate|auto-8|<tuple|10.4|6>>
+    <associate|auto-9|<tuple|10.5|6>>
     <associate|bib-BCG26|<tuple|BCG26|15>>
     <associate|bib-BFS83|<tuple|BFS83|15>>
     <associate|bib-BG20|<tuple|BG20|15>>
@@ -1541,62 +1545,62 @@
     <associate|bib-FO76|<tuple|FO76|15>>
     <associate|bib-GH21|<tuple|GH21|15>>
     <associate|bib-GJ73|<tuple|GJ73|15>>
-    <associate|eq:Gamma-ex|<tuple|12.11|6>>
-    <associate|eq:Gamma-o|<tuple|13.6|9>>
-    <associate|eq:K-C|<tuple|12.1|3>>
-    <associate|eq:K-ex|<tuple|12.6|4>>
-    <associate|eq:YZ|<tuple|12.15|6>>
-    <associate|eq:YZ-fbsde|<tuple|12.16|6>>
-    <associate|eq:Z-heuristic|<tuple|13.13|11>>
-    <associate|eq:a2|<tuple|12.3|3>>
-    <associate|eq:bare-mass|<tuple|13.9|9>>
-    <associate|eq:clipping|<tuple|14.1|12>>
-    <associate|eq:coeff|<tuple|13.10|10>>
-    <associate|eq:coordinate|<tuple|14.5|14>>
-    <associate|eq:coordinate-ex|<tuple|12.12|6>>
-    <associate|eq:defect|<tuple|12.14|6>>
-    <associate|eq:defect-bound|<tuple|13.12|10>>
-    <associate|eq:dictionary-profile|<tuple|12.2|3>>
-    <associate|eq:dpsi|<tuple|12.8|4>>
-    <associate|eq:forecast|<tuple|12.7|4>>
-    <associate|eq:g-r|<tuple|13.1|8>>
-    <associate|eq:global-h|<tuple|14.2|13>>
-    <associate|eq:increments|<tuple|13.11|10>>
-    <associate|eq:iteration|<tuple|13.7|9>>
-    <associate|eq:loop|<tuple|13.3|8>>
-    <associate|eq:mass|<tuple|13.8|9>>
-    <associate|eq:nuN|<tuple|12.4|4>>
-    <associate|eq:observation|<tuple|12.5|4>>
-    <associate|eq:polchinski-fbsde|<tuple|12.9|5>>
-    <associate|eq:posterior-ibp|<tuple|12.10|5>>
-    <associate|eq:power-counting|<tuple|13.2|8>>
-    <associate|eq:resolvent|<tuple|14.3|13>>
-    <associate|eq:seed|<tuple|13.4|9>>
-    <associate|eq:source|<tuple|14.4|13>>
-    <associate|eq:trace-map|<tuple|13.5|9>>
-    <associate|eq:wetterich|<tuple|12.13|6>>
-    <associate|ex:clip-scalar|<tuple|14.2|14>>
-    <associate|ex:loop-count|<tuple|13.1|12>>
-    <associate|ex:one-site|<tuple|12.4|8>>
-    <associate|ex:receive|<tuple|14.1|14>>
-    <associate|ex:same-Gamma|<tuple|12.1|7>>
-    <associate|fig:strategy|<tuple|12.1|7>>
-    <associate|lem:free|<tuple|12.1|3>>
-    <associate|lem:resolvent|<tuple|14.1|13>>
-    <associate|prop:coeff|<tuple|13.1|10>>
-    <associate|prop:polchinski|<tuple|12.4|5>>
-    <associate|prop:posterior|<tuple|12.3|4>>
-    <associate|prop:source|<tuple|14.2|13>>
-    <associate|prop:wetterich|<tuple|12.5|6>>
-    <associate|sec:YZ|<tuple|12.5|6>>
-    <associate|sec:large-fields|<tuple|14|12>>
-    <associate|sec:notation|<tuple|12.1|3>>
-    <associate|sec:posterior|<tuple|12.3|4>>
-    <associate|sec:problem|<tuple|12|3>>
-    <associate|sec:renormalisation|<tuple|13|8>>
-    <associate|sec:wetterich|<tuple|12.4|6>>
-    <associate|thm:YZ|<tuple|12.6|6>>
-    <associate|thm:main|<tuple|12.2|4>>
+    <associate|eq:Gamma-ex|<tuple|10.11|6>>
+    <associate|eq:Gamma-o|<tuple|11.6|9>>
+    <associate|eq:K-C|<tuple|10.1|3>>
+    <associate|eq:K-ex|<tuple|10.6|4>>
+    <associate|eq:YZ|<tuple|10.15|6>>
+    <associate|eq:YZ-fbsde|<tuple|10.16|6>>
+    <associate|eq:Z-heuristic|<tuple|11.13|11>>
+    <associate|eq:a2|<tuple|10.3|3>>
+    <associate|eq:bare-mass|<tuple|11.9|9>>
+    <associate|eq:clipping|<tuple|12.1|12>>
+    <associate|eq:coeff|<tuple|11.10|10>>
+    <associate|eq:coordinate|<tuple|12.5|14>>
+    <associate|eq:coordinate-ex|<tuple|10.12|6>>
+    <associate|eq:defect|<tuple|10.14|6>>
+    <associate|eq:defect-bound|<tuple|11.12|10>>
+    <associate|eq:dictionary-profile|<tuple|10.2|3>>
+    <associate|eq:dpsi|<tuple|10.8|4>>
+    <associate|eq:forecast|<tuple|10.7|4>>
+    <associate|eq:g-r|<tuple|11.1|8>>
+    <associate|eq:global-h|<tuple|12.2|12>>
+    <associate|eq:increments|<tuple|11.11|10>>
+    <associate|eq:iteration|<tuple|11.7|9>>
+    <associate|eq:loop|<tuple|11.3|8>>
+    <associate|eq:mass|<tuple|11.8|9>>
+    <associate|eq:nuN|<tuple|10.4|4>>
+    <associate|eq:observation|<tuple|10.5|4>>
+    <associate|eq:polchinski-fbsde|<tuple|10.9|5>>
+    <associate|eq:posterior-ibp|<tuple|10.10|5>>
+    <associate|eq:power-counting|<tuple|11.2|8>>
+    <associate|eq:resolvent|<tuple|12.3|13>>
+    <associate|eq:seed|<tuple|11.4|9>>
+    <associate|eq:source|<tuple|12.4|13>>
+    <associate|eq:trace-map|<tuple|11.5|9>>
+    <associate|eq:wetterich|<tuple|10.13|6>>
+    <associate|ex:clip-scalar|<tuple|12.2|14>>
+    <associate|ex:loop-count|<tuple|11.1|11>>
+    <associate|ex:one-site|<tuple|10.4|8>>
+    <associate|ex:receive|<tuple|12.1|14>>
+    <associate|ex:same-Gamma|<tuple|10.1|7>>
+    <associate|fig:strategy|<tuple|10.1|7>>
+    <associate|lem:free|<tuple|10.1|3>>
+    <associate|lem:resolvent|<tuple|12.1|13>>
+    <associate|prop:coeff|<tuple|11.1|10>>
+    <associate|prop:polchinski|<tuple|10.4|5>>
+    <associate|prop:posterior|<tuple|10.3|4>>
+    <associate|prop:source|<tuple|12.2|13>>
+    <associate|prop:wetterich|<tuple|10.5|6>>
+    <associate|sec:YZ|<tuple|10.5|6>>
+    <associate|sec:large-fields|<tuple|12|12>>
+    <associate|sec:notation|<tuple|10.1|3>>
+    <associate|sec:posterior|<tuple|10.3|4>>
+    <associate|sec:problem|<tuple|10|3>>
+    <associate|sec:renormalisation|<tuple|11|8>>
+    <associate|sec:wetterich|<tuple|10.4|6>>
+    <associate|thm:YZ|<tuple|10.6|6>>
+    <associate|thm:main|<tuple|10.2|4>>
   </collection>
 </references>
 
@@ -1630,7 +1634,7 @@
       FBSDE26
     </associate>
     <\associate|figure>
-      <tuple|normal|<surround|<hidden-binding|<tuple>|12.1>||The structure of
+      <tuple|normal|<surround|<hidden-binding|<tuple>|10.1>||The structure of
       the construction. The two arrows between the forward and backward
       estimates form the closed loop of Lecture
       <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>6:
@@ -1641,40 +1645,40 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|What is
-      proved. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|What is proved
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>The
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>The
       problem and the exact FBSDE> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|12.1<space|2spc>Lattice, scales and
+      <with|par-left|<quote|1tab>|10.1<space|2spc>Lattice, scales and
       notation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The resolution
-      parameter. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      parameter <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>>
 
-      <with|par-left|<quote|1tab>|12.2<space|2spc>The cutoff measure and the
+      <with|par-left|<quote|1tab>|10.2<space|2spc>The cutoff measure and the
       goal <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6>>
 
-      <with|par-left|<quote|1tab>|12.3<space|2spc>The Polchinski process as a
+      <with|par-left|<quote|1tab>|10.3<space|2spc>The Polchinski process as a
       posterior <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
-      <with|par-left|<quote|1tab>|12.4<space|2spc>The Wetterich formulation
+      <with|par-left|<quote|1tab>|10.4<space|2spc>The Wetterich formulation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>
 
-      <with|par-left|<quote|1tab>|12.5<space|2spc>Approximate forecast and
+      <with|par-left|<quote|1tab>|10.5<space|2spc>Approximate forecast and
       error <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Reading
-      <with|font-shape|<quote|right>|(<reference|eq:YZ-fbsde>)>.
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-shape|<quote|right>|(<reference|eq:YZ-fbsde>)>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>>
 
@@ -1682,35 +1686,35 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|13<space|2spc>Renormalisation:
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Renormalisation:
       why two of them> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|13.1<space|2spc>Scales and power counting
+      <with|par-left|<quote|1tab>|11.1<space|2spc>Scales and power counting
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The basic loop
-      estimate. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      estimate <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15>>>
 
-      <with|par-left|<quote|1tab>|13.2<space|2spc>The seed: one loop
+      <with|par-left|<quote|1tab>|11.2<space|2spc>The seed: one loop
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-16>>
 
-      <with|par-left|<quote|1tab>|13.3<space|2spc>Corrections and the mass
+      <with|par-left|<quote|1tab>|11.3<space|2spc>Corrections and the mass
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The quadratic
-      part. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      part <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-18>>>
 
-      <with|par-left|<quote|1tab>|13.4<space|2spc>Two mass renormalisations
+      <with|par-left|<quote|1tab>|11.4<space|2spc>Two mass renormalisations
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19>>
 
-      <with|par-left|<quote|1tab>|13.5<space|2spc>Two correction steps
+      <with|par-left|<quote|1tab>|11.5<space|2spc>Two correction steps
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-20>>
 
@@ -1718,35 +1722,35 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-21>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|14<space|2spc>The
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>The
       flow at large fields> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-22><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|14.1<space|2spc>The large-field problem
+      <with|par-left|<quote|1tab>|12.1<space|2spc>The large-field problem
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-23>>
 
-      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|A scalar
-      model. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|A scalar model
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-24>>>
 
-      <with|par-left|<quote|1tab>|14.2<space|2spc>Clipping
+      <with|par-left|<quote|1tab>|12.2<space|2spc>Clipping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-25>>
 
-      <with|par-left|<quote|1tab>|14.3<space|2spc>The complete defect
+      <with|par-left|<quote|1tab>|12.3<space|2spc>The complete defect
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-26>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Where the
-      large-field error comes from. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      large-field error comes from <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-27>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The coordinate
-      correction. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      correction <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-28>>>
 
-      <with|par-left|<quote|1tab>|14.4<space|2spc>Summary
+      <with|par-left|<quote|1tab>|12.4<space|2spc>Summary
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-29>>
 

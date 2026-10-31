@@ -1,11 +1,11 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|article|number-long-article|british|cqft-notes>>
 
 <\body>
-  <doc-data|<doc-title|A Constructive Introduction to Quantum Field
-  Theory>|<doc-subtitle|Lecture 6: <math|\<Phi\><rsup|4><rsub|3>> on the
-  torus II. A priori estimates for the forward\Ubackward
+  <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
+  Field Theory>|<doc-subtitle|Lecture<nbsp>6: <math|\<Phi\><rsup|4><rsub|3>>
+  on the torus II. A priori estimates for the forward\Ubackward
   system>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
@@ -35,68 +35,68 @@
     <no-break><pageref|auto-1><vspace|0.5fn>
 
     <with|par-left|3tab|<with|font-size|0.92|How a priori estimates for
-    FBSDEs are usually obtained. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    FBSDEs are usually obtained <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2>>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|15<space|2spc>The
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|13<space|2spc>The
     energies> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3><vspace|0.5fn>
 
-    <with|par-left|1tab|15.1<space|2spc>Moments at fixed cutoff
+    <with|par-left|1tab|13.1<space|2spc>Moments at fixed cutoff
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>
 
-    <with|par-left|1tab|15.2<space|2spc>Subtracting the Gaussian part
+    <with|par-left|1tab|13.2<space|2spc>Subtracting the Gaussian part
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <with|par-left|1tab|15.3<space|2spc>Thresholds and energies
+    <with|par-left|1tab|13.3<space|2spc>Thresholds and energies
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-6>>
 
-    <with|par-left|1tab|15.4<space|2spc>Two Hardy inequalities
+    <with|par-left|1tab|13.4<space|2spc>Two Hardy inequalities
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-8>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|16<space|2spc>Forward
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|14<space|2spc>Forward
     coercivity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-9><vspace|0.5fn>
 
-    <with|par-left|1tab|16.1<space|2spc>The scalar model
+    <with|par-left|1tab|14.1<space|2spc>The scalar model
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>
 
-    <with|par-left|3tab|<with|font-size|0.92|What the scalar lemma says.
+    <with|par-left|3tab|<with|font-size|0.92|What the scalar lemma says
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-11>>>
 
-    <with|par-left|1tab|16.2<space|2spc>The lattice version
+    <with|par-left|1tab|14.2<space|2spc>The lattice version
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-12>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-13>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|17<space|2spc>Backward
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|15<space|2spc>Backward
     feedback and closure> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14><vspace|0.5fn>
 
-    <with|par-left|1tab|17.1<space|2spc>The backward representation
+    <with|par-left|1tab|15.1<space|2spc>The backward representation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-15>>
 
-    <with|par-left|1tab|17.2<space|2spc>Three contributions
+    <with|par-left|1tab|15.2<space|2spc>Three contributions
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-16>>
 
-    <with|par-left|1tab|17.3<space|2spc>Closing the loop
+    <with|par-left|1tab|15.3<space|2spc>Closing the loop
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-17>>
 
-    <with|par-left|1tab|17.4<space|2spc>Consequences
+    <with|par-left|1tab|15.4<space|2spc>Consequences
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-18>>
 
@@ -111,7 +111,7 @@
   <section*|Introduction>
 
   At the end of Lecture<nbsp>5 we had, at each lattice cutoff <math|N>, the
-  exact system (Theorem<nbsp><hlink|12.6|cqft_lecture5.tm#thm:YZ>)
+  exact system (Theorem<nbsp><hlink|10.6|cqft_lecture5.tm#thm:YZ>)
 
   <align|<tformat|<table|<row|<cell|\<mathd\>Y<rsub|q>>|<cell|=<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+H<rsub|q><around|(|Y<rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>,>>|<row|<cell|\<mathd\>Z<rsub|q>>|<cell|=-<around*|[|b<rsub|q><around|(|Y<rsub|q>|)>+H<rsub|q><around|(|Y<rsub|q>|)>*Z<rsub|q>|]>\<mathd\>q+\<Xi\><rsub|q><space|0.17em>\<mathd\>W<rsub|q>,<space|2em>Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0,<eq-number><label|eq:YZ>>>>>>
 
@@ -121,19 +121,19 @@
   Lecture<nbsp>5 are:
 
   <\enumerate-Alpha>
-    <item><em|Global coercivity> (Lemma<nbsp><hlink|14.1|cqft_lecture5.tm#lem:resolvent>):
+    <item><em|Global coercivity> (Lemma<nbsp><hlink|12.1|cqft_lecture5.tm#lem:resolvent>):
     <math|H<rsub|q><around|(|y|)>> is comparable to
     <math|<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)><rsup|-1>> and
     <math|<around|\<\|\|\>|H<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p\<to\>p>\<le\><around|(|1+\<varepsilon\><rsub|q>|)>/q>,
     <math|\<varepsilon\><rsub|q>=C*<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>>.
 
-    <item><em|The source> (Proposition<nbsp><hlink|14.2|cqft_lecture5.tm#prop:source>):
+    <item><em|The source> (Proposition<nbsp><hlink|12.2|cqft_lecture5.tm#prop:source>):
     <math|b=b<rsup|<math-up|b>>+b<rsup|<math-up|l>>> with
     <math|<around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<le\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>>
     and <math|<around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q><around|(|y|)>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q><around|(|y|)>|\<\|\|\>><rsub|6><rsup|6>>,
     where <math|t<rsub|q><around|(|y|)>=y*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>>.
 
-    <item><em|The coordinate equation> <hlink|(14.5)|cqft_lecture5.tm#eq:coordinate>:
+    <item><em|The coordinate equation> <hlink|(12.5)|cqft_lecture5.tm#eq:coordinate>:
     <math|K<rsub|q>*<around|(|Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|)>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=K<rsub|q>*\<Phi\><rsub|q>=P<rsub|q>>,
     with a small Lipschitz correction, <math|<around|\<\|\|\>|D*\<varrho\><rsub|q>|\<\|\|\>><rsub|p\<to\>p>\<le\>\<varepsilon\><rsub|q>>.
   </enumerate-Alpha>
@@ -144,7 +144,7 @@
   and the source of the backward equation is controlled by the large fields
   of <math|Y>.
 
-  <paragraph|How a priori estimates for FBSDEs are usually obtained.> For an
+  <paragraph|How a priori estimates for FBSDEs are usually obtained> For an
   FBSDE with Lipschitz coefficients one estimates
   <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsup|2>> by Itô's
   formula and Gronwall, and closes either on a short time interval or under a
@@ -166,7 +166,7 @@
     weights are matched.
   </itemize>
 
-  <assign|section-nr|14>
+  <assign|section-nr|12>
 
   <section|The energies><label|sec:energies>
 
@@ -222,8 +222,8 @@
   </equation>
 
   On the other hand <math|P<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>\<psi\><rsub|s>\<mathd\>s=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q><around|(|Y<rsub|s>+Z<rsub|s>|)>\<mathd\>s>.
-  Insert this into the coordinate equation (C) and subtract <eqref|eq:KX>.
-  With
+  Insert this into the coordinate equation (C) and
+  subtract<nbsp><eqref|eq:KX>. With
 
   <\equation>
     <label|eq:Vsharp>V<rsub|q>\<assign\>Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-X<rsub|q>,<space|2em>F<rsup|Z><rsub|q>\<assign\><big|int><rsub|q<rsub|0>><rsup|q>Z<rsub|s><space|0.17em>\<mathd\>s,
@@ -308,11 +308,12 @@
     and <math|<around|(|<big|int><rsub|0><rsup|1>\<theta\><rsup|-3/4>\<mathd\>\<theta\>|)><rsup|2>=16>.
   </proof>
 
-  The first inequality will estimate the memory term of <eqref|eq:volterra>.
-  Its constant <math|<frac|8|7>> is <em|larger> than one. Coercivity from the
-  mass term alone, which has coefficient one, would therefore not absorb the
-  memory. The missing margin will come from the cubic term: at large fields
-  it adds <math|<frac|1|4>*q<around|\||w|\|><rsup|4>> to the mass, and
+  The first inequality will estimate the memory term
+  of<nbsp><eqref|eq:volterra>. Its constant <math|<frac|8|7>> is <em|larger>
+  than one. Coercivity from the mass term alone, which has coefficient one,
+  would therefore not absorb the memory. The missing margin will come from
+  the cubic term: at large fields it adds
+  <math|<frac|1|4>*q<around|\||w|\|><rsup|4>> to the mass, and
   <math|1+<frac|1|4>-<frac|8|7>=<frac|3|28>\<gtr\>0>.
 
   <subsection*|Exercises>
@@ -347,9 +348,10 @@
   correction <math|\<varrho\>> (restored in
   Proposition<nbsp><reference|prop:forward>) and allow an arbitrary
   continuous <math|X>, thinking of one site of the lattice, where
-  <math|<math-up|Var>X<rsub|q>\<approx\><sqrt|q>>. Then <eqref|eq:volterra>
-  becomes a scalar equation with memory. All the mechanisms of the forward
-  estimate are already present, and the constants can be checked by hand.
+  <math|<math-up|Var>X<rsub|q>\<approx\><sqrt|q>>.
+  Then<nbsp><eqref|eq:volterra> becomes a scalar equation with memory. All
+  the mechanisms of the forward estimate are already present, and the
+  constants can be checked by hand.
 
   <\lemma>
     <dueto|Scalar forward coercivity><label|lem:scalar-forward> Let
@@ -361,8 +363,8 @@
       <label|eq:scalar>q*v<rsub|q>+<frac|\<gamma\>|3>*<around|(|v<rsub|q>+X<rsub|q>|)><rsup|3>=<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s><space|0.17em>\<mathd\>s+f<rsub|q>,<space|2em>q\<in\><around|[|q<rsub|0>,T|]>.
     </equation>
 
-    Define <math|r<rsub|q>>, <math|w<rsub|q>>, <math|\<xi\><rsub|q>> as in
-    <eqref|eq:thresholds>, with <math|V=v>. Then
+    Define <math|r<rsub|q>>, <math|w<rsub|q>>, <math|\<xi\><rsub|q>> as
+    in<nbsp><eqref|eq:thresholds>, with <math|V=v>. Then
 
     <\equation>
       <label|eq:scalar-forward><frac|3|28>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2>*w<rsub|q><rsup|4><space|0.17em>\<mathd\>q+<frac|\<gamma\>|16>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*w<rsub|q><rsup|6><space|0.17em>\<mathd\>q\<le\><frac|4225|6>*\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*\<xi\><rsub|q><rsup|6><space|0.17em>\<mathd\>q+<frac|12|\<gamma\>>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*f<rsub|q><rsup|2><space|0.17em>\<mathd\>q.
@@ -373,9 +375,10 @@
   </lemma>
 
   <\proof>
-    <em|Step 1: test with <math|w<rsup|3>>.> Multiply <eqref|eq:scalar> by
-    <math|w<rsub|q><rsup|3>>. We estimate the four terms where
-    <math|w<rsub|q>\<ne\>0>; there <math|<around|\||v<rsub|q>|\|>=<around|\||w<rsub|q>|\|>+<frac|3|4>*r<rsub|q>>
+    <em|Step<nbsp>1: test with <math|w<rsup|3>>.>
+    Multiply<nbsp><eqref|eq:scalar> by <math|w<rsub|q><rsup|3>>. We estimate
+    the four terms where <math|w<rsub|q>\<ne\>0>; there
+    <math|<around|\||v<rsub|q>|\|>=<around|\||w<rsub|q>|\|>+<frac|3|4>*r<rsub|q>>
     and <math|v<rsub|q>,w<rsub|q>> have the same sign.
 
     <em|Mass.> <math|q*v<rsub|q>*w<rsub|q><rsup|3>=q\|w<rsub|q>\|<rsup|4>+<frac|3|4>*q*r<rsub|q><around|\||w<rsub|q>|\|><rsup|3>>.
@@ -391,7 +394,7 @@
       <frac|\<gamma\>|3>*w<rsub|q><rsup|3>*<around|(|v<rsub|q>+X<rsub|q>|)><rsup|3>\<ge\><frac|\<gamma\>|3><around|\||w<rsub|q>|\|><rsup|3>*<around*|(|<around|\||w<rsub|q>|\|>+<frac|11|16>*r<rsub|q>-<around|\||\<xi\><rsub|q>|\|>|)><rsup|3>\<ge\><frac|\<gamma\>|12>*w<rsub|q><rsup|6>+<frac|q|4>*w<rsub|q><rsup|4>-<frac|4225|6>*\<gamma\>*\<xi\><rsub|q><rsup|6>,
     </equation*>
 
-    by the elementary inequality <eqref|eq:elementary> below and
+    by the elementary inequality<nbsp><eqref|eq:elementary> below and
     <math|\<gamma\>*r<rsub|q><rsup|2>=q>. <em|This is the large-field
     coercivity: at large fields the cube adds a sixth power and a quarter of
     the mass.>
@@ -411,7 +414,7 @@
 
     <em|Forcing.> By Young's inequality <math|w<rsub|q><rsup|3>*f<rsub|q>\<le\><frac|\<gamma\>|48>*w<rsub|q><rsup|6>+<frac|12|\<gamma\>>*f<rsub|q><rsup|2>>.
 
-    <em|Step 2: integrate.> Collecting, at every <math|q>,
+    <em|Step<nbsp>2: integrate.> Collecting, at every <math|q>,
 
     <\equation*>
       <frac|5|4>*q*<space|0.17em>w<rsub|q><rsup|4>+<around*|(|<frac|\<gamma\>|12>-<frac|\<gamma\>|48>|)>*w<rsub|q><rsup|6>\<le\>w<rsub|q><rsup|3>*<big|int><rsub|q<rsub|0>><rsup|q>w<rsub|s><space|0.17em>\<mathd\>s+<frac|4225|6>*\<gamma\>*\<xi\><rsub|q><rsup|6>+<frac|12|\<gamma\>>*f<rsub|q><rsup|2>.
@@ -427,7 +430,7 @@
       <big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2><around|\||w<rsub|q>|\|><rsup|3>*<around*|\||q<rsup|-1>*<big|int><rsub|q<rsub|0>><rsup|q>w<rsub|s><space|0.17em>\<mathd\>s|\|>\<mathd\>q\<le\>A<rsup|3/4>\<cdot\><frac|8|7>*A<rsup|1/4>=<frac|8|7>*A.
     </equation*>
 
-    Since <math|<frac|5|4>-<frac|8|7>=<frac|3|28>>, <eqref|eq:scalar-forward>
+    Since <math|<frac|5|4>-<frac|8|7>=<frac|3|28>>,<nbsp><eqref|eq:scalar-forward>
     follows. For the last claim, <math|<around|\||v+X|\|>\<le\><around|\||w|\|>+<frac|3|4>*r+<frac|r|32>+<around|\||\<xi\>|\|>>,
     so on <math|<around|{|<around|\||v+X|\|>\<gtr\>r|}>> we have
     <math|<frac|7|32>*<around|\||v+X|\|>\<le\><around|\||v+X|\|>-<frac|25|32>*r\<le\><around|\||w|\|>+<around|\||\<xi\>|\|>>.
@@ -455,7 +458,7 @@
     and <math|<frac|1|4>-<frac|1|6>=<frac|1|12>>.
   </proof>
 
-  <paragraph|What the scalar lemma says.> The excess of the forecast over the
+  <paragraph|What the scalar lemma says> The excess of the forecast over the
   threshold is controlled by two things only: how often the <em|Gaussian>
   field is large, which is a known quantity (the Gaussian-tail functional
   <math|G<rsub|T>>, with <math|<around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C*\<gamma\><rsup|3>*p<rsup|5>>
@@ -481,7 +484,7 @@
   </proposition>
 
   <\render-proof|Proof: the changes from the scalar case>
-    Test <eqref|eq:volterra> with <math|w<rsub|q><rsup|3>> in
+    Test<nbsp><eqref|eq:volterra> with <math|w<rsub|q><rsup|3>> in
     <math|L<rsup|2><around|(|\<Lambda\><rsub|N>|)>> and proceed as in
     Lemma<nbsp><reference|lem:scalar-forward>, with Hölder's inequality in
     space as well as in scale. Three new terms appear.
@@ -570,8 +573,8 @@
 
   <\exercise>
     <dueto|Without the cube>Replace <math|<frac|\<gamma\>|3>*<around|(|v+X|)><rsup|3>>
-    by <math|0> in <eqref|eq:scalar>, and show that the argument fails: find
-    <math|v> solving <math|q*v<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s>\<mathd\>s+f<rsub|q>>
+    by <math|0> in<nbsp><eqref|eq:scalar>, and show that the argument fails:
+    find <math|v> solving <math|q*v<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s>\<mathd\>s+f<rsub|q>>
     on <math|<around|[|q<rsub|0>,\<infty\>|)>> with
     <math|<big|int>q<rsup|-1/2>*v<rsup|4>=\<infty\>> for <math|f> with
     <math|<big|int>q<rsup|-3/2>*f<rsup|2>\<less\>\<infty\>> (try <math|v>
@@ -591,8 +594,8 @@
   </exercise>
 
   <\exercise>
-    <dueto|Simulation>Solve <eqref|eq:scalar> numerically with <math|X> a
-    scalar Brownian motion run with clock
+    <dueto|Simulation>Solve<nbsp><eqref|eq:scalar> numerically with <math|X>
+    a scalar Brownian motion run with clock
     <math|<big|int><rsub|q<rsub|0>><rsup|q>s<rsup|-1/2>\<mathd\>s> (the
     three-dimensional bubble <math|a<rsub|2><around|(|s|)>\<approx\>s<rsup|-1/2>>),
     e.g. <math|\<gamma\>=1>, <math|q<rsub|0>=1>, <math|T=10<rsup|4>>. With
@@ -604,8 +607,8 @@
     <math|<around|\||X<rsub|q>|\|>\<gtr\>r<rsub|q>/32> on most scales. Add a
     forcing pulse <math|f<rsub|q>=\<kappa\>*<space|0.17em>q*r<rsub|q>*<with|math-font|Bbb|1><rsub|<around|[|a,2*a|]>><around|(|q|)>>
     with <math|\<kappa\>> of order one, so that <math|v> crosses
-    <math|<frac|3|4>*r<rsub|q>>. Compare the left side of
-    <eqref|eq:scalar-forward> with its <math|f>-term and its
+    <math|<frac|3|4>*r<rsub|q>>. Compare the left side
+    of<nbsp><eqref|eq:scalar-forward> with its <math|f>-term and its
     <math|\<xi\>>-term separately, as functions of <math|\<kappa\>> and
     <math|a>; then decrease <math|\<gamma\>> (e.g.
     <math|\<gamma\>=10<rsup|-2>>) and observe the <math|\<xi\>>-term becoming
@@ -616,14 +619,14 @@
 
   <subsection|The backward representation>
 
-  The backward equation in <eqref|eq:YZ> is linear in <math|Z>. Its
+  The backward equation in<nbsp><eqref|eq:YZ> is linear in <math|Z>. Its
   propagator is the adapted operator solution of
 
   <\equation>
-    <label|eq:propagator>\<partial\><rsub|s>*<with|math-font|cal*|P><rsub|q,s>=<with|math-font|cal*|P><rsub|q,s>*H<rsub|s><around|(|Y<rsub|s>|)>,<space|2em><with|math-font|cal*|P><rsub|q,q>=I,<space|2em>s\<ge\>q.
+    <label|eq:propagator>\<partial\><rsub|s>*\<cal-P\><rsub|q,s>=\<cal-P\><rsub|q,s>*H<rsub|s><around|(|Y<rsub|s>|)>,<space|2em>\<cal-P\><rsub|q,q>=I,<space|2em>s\<ge\>q.
   </equation>
 
-  By (A), <math|<around|\<\|\|\>|<with|math-font|cal*|P><rsub|q,s>|\<\|\|\>><rsub|2\<to\>2>\<le\>exp
+  By (A), <math|<around|\<\|\|\>|\<cal-P\><rsub|q,s>|\<\|\|\>><rsub|2\<to\>2>\<le\>exp
   <big|int><rsub|q><rsup|s><frac|1+\<varepsilon\><rsub|u>|u>\<mathd\>u\<le\>L<rsub|0>*<space|0.17em><frac|s|q>>,
   with <math|L<rsub|0>=exp <around|(|<big|int><rsub|q<rsub|0>><rsup|\<infty\>>\<varepsilon\><rsub|u>*<frac|\<mathd\>u|u>|)>\<le\>exp
   <around*|(|C*<around|(|g<rsub|q<rsub|0>>+g<rsub|q<rsub|0>><rsup|2>|)>|)>>.
@@ -633,17 +636,17 @@
     <math|q<rsub|0>\<le\>q\<le\>T>, at fixed <math|N>,
 
     <\equation>
-      <label|eq:representation>Z<rsub|q>=\<bbb-E\><rsub|q>*<around*|[|<with|math-font|cal*|P><rsub|q,T>*Z<rsub|T>+<big|int><rsub|q><rsup|T><with|math-font|cal*|P><rsub|q,s>*<space|0.17em>b<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>s|]>.
+      <label|eq:representation>Z<rsub|q>=\<bbb-E\><rsub|q>*<around*|[|\<cal-P\><rsub|q,T>*Z<rsub|T>+<big|int><rsub|q><rsup|T>\<cal-P\><rsub|q,s>*<space|0.17em>b<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>s|]>.
     </equation>
   </lemma>
 
   <\proof>
-    By the product rule and <eqref|eq:YZ>,
-    <math|\<mathd\><rsub|s><around|(|<with|math-font|cal*|P><rsub|q,s>*Z<rsub|s>|)>=<with|math-font|cal*|P><rsub|q,s>*H<rsub|s>*Z<rsub|s>\<mathd\>s-<with|math-font|cal*|P><rsub|q,s>*<around|(|b<rsub|s>+H<rsub|s>*Z<rsub|s>|)>\<mathd\>s+<with|math-font|cal*|P><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>=-<with|math-font|cal*|P><rsub|q,s>*b<rsub|s>\<mathd\>s+<with|math-font|cal*|P><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>>.
+    By the product rule and<nbsp><eqref|eq:YZ>,
+    <math|\<mathd\><rsub|s><around|(|\<cal-P\><rsub|q,s>*Z<rsub|s>|)>=\<cal-P\><rsub|q,s>*H<rsub|s>*Z<rsub|s>\<mathd\>s-\<cal-P\><rsub|q,s>*<around|(|b<rsub|s>+H<rsub|s>*Z<rsub|s>|)>\<mathd\>s+\<cal-P\><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>=-\<cal-P\><rsub|q,s>*b<rsub|s>\<mathd\>s+\<cal-P\><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>>.
     The stochastic integral is a true martingale by
     Lemma<nbsp><reference|lem:pre> and the deterministic bound on
-    <math|<with|math-font|cal*|P>>. Integrate from <math|q> to <math|T> and
-    take <math|\<bbb-E\><rsub|q>>.
+    <math|\<cal-P\>>. Integrate from <math|q> to <math|T> and take
+    <math|\<bbb-E\><rsub|q>>.
   </proof>
 
   So <math|Z> is the expected source accumulated on the unresolved scales,
@@ -678,7 +681,7 @@
   </equation*>
 
   At fixed <math|N>, <math|\<delta\><rsub|N,T,p>\<to\>0> as
-  <math|T\<to\>\<infty\>> (Lemma<nbsp><hlink|18.1|cqft_lecture7.tm#lem:terminal>).
+  <math|T\<to\>\<infty\>> (Lemma<nbsp><hlink|16.1|cqft_lecture7.tm#lem:terminal>).
 
   <em|Large fields.> Let <math|A<rsup|<math-up|l>>\<assign\><big|int><rsub|q<rsub|0>><rsup|T>s<rsup|7/2><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|s><around|(|Y<rsub|s>|)>|\<\|\|\>><rsub|2><rsup|2>\<mathd\>s\<le\>C*\<gamma\><rsup|4>*<big|int>s<rsup|-3/2><around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|6><rsup|6>\<le\>C*\<gamma\><rsup|3>*J<rsub|T>>
   by (B). By Cauchy\USchwarz in <math|s>,
@@ -733,7 +736,8 @@
   <\proof>
     Let <math|x=<around|\<\|\|\>|E<rsub|T>|\<\|\|\>><rsub|p>> and
     <math|y=<around|\<\|\|\>|J<rsub|T>|\<\|\|\>><rsub|p>>. By
-    Propositions<nbsp><reference|prop:forward> and <reference|prop:backward>,
+    Propositions<nbsp><reference|prop:forward>
+    and<nbsp><reference|prop:backward>,
 
     <\equation*>
       y\<le\>A<rsub|0>*<space|0.17em><around|(|C*\<gamma\><rsup|3>*p<rsup|5>+x|)>,<space|2em>x\<le\>B<rsub|0>+B<rsub|1>*\<delta\><rsub|N,T,p>+\<eta\>*<space|0.17em>y,<space|2em>\<eta\>=<frac|C*\<gamma\><rsup|2>|q<rsub|0>>,
@@ -838,7 +842,7 @@
     <math|<wide|Q|\<dot\>><rsup|1/2>>, and the renormalisation is a change of
     variables <math|u=-4*\<lambda\>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>
     (in the normalisation <math|\<lambda\>*<big|int>:\<varphi\><rsup|4>>: of
-    Lecture<nbsp>4) <cite|BG20>. Here the explicit action
+    Lecture<nbsp>4)<nbsp><cite|BG20>. Here the explicit action
     <math|<wide|\<Gamma\>|\<bar\>>> plays the role of all such changes of
     variables at once, in the forecast coordinate, and <math|Z> plays the
     role of the remainder <math|r>. The coercivity of the quartic term is
@@ -855,8 +859,7 @@
     show that
 
     <\equation*>
-      <with|math-font|cal*|P><rsub|q,s>=<frac|s|q>*exp
-      <around*|(|-<big|int><rsub|q><rsup|s><frac|\<gamma\>*Y<rsub|u><rsup|2>|u*<around|(|u+\<gamma\>*Y<rsub|u><rsup|2>|)>>\<mathd\>u|)>\<le\><frac|s|q>.
+      \<cal-P\><rsub|q,s>=<frac|s|q>*exp <around*|(|-<big|int><rsub|q><rsup|s><frac|\<gamma\>*Y<rsub|u><rsup|2>|u*<around|(|u+\<gamma\>*Y<rsub|u><rsup|2>|)>>\<mathd\>u|)>\<le\><frac|s|q>.
     </equation*>
 
     In which sense do large fields make the backward equation more
@@ -915,55 +918,55 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|2>>
-    <associate|auto-10|<tuple|16.1|4>>
+    <associate|auto-10|<tuple|14.1|4>>
     <associate|auto-11|<tuple|1|5>>
-    <associate|auto-12|<tuple|16.2|6>>
-    <associate|auto-13|<tuple|16.4|6>>
-    <associate|auto-14|<tuple|17|7>>
-    <associate|auto-15|<tuple|17.1|7>>
-    <associate|auto-16|<tuple|17.2|7>>
-    <associate|auto-17|<tuple|17.3|8>>
-    <associate|auto-18|<tuple|17.4|8>>
-    <associate|auto-19|<tuple|17.4|9>>
+    <associate|auto-12|<tuple|14.2|6>>
+    <associate|auto-13|<tuple|14.4|6>>
+    <associate|auto-14|<tuple|15|7>>
+    <associate|auto-15|<tuple|15.1|7>>
+    <associate|auto-16|<tuple|15.2|7>>
+    <associate|auto-17|<tuple|15.3|8>>
+    <associate|auto-18|<tuple|15.4|8>>
+    <associate|auto-19|<tuple|15.4|9>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|17.3|9>>
-    <associate|auto-3|<tuple|15|2>>
-    <associate|auto-4|<tuple|15.1|2>>
-    <associate|auto-5|<tuple|15.2|3>>
-    <associate|auto-6|<tuple|15.3|3>>
-    <associate|auto-7|<tuple|15.4|4>>
-    <associate|auto-8|<tuple|15.7|4>>
-    <associate|auto-9|<tuple|16|4>>
+    <associate|auto-20|<tuple|15.3|9>>
+    <associate|auto-3|<tuple|13|2>>
+    <associate|auto-4|<tuple|13.1|2>>
+    <associate|auto-5|<tuple|13.2|3>>
+    <associate|auto-6|<tuple|13.3|3>>
+    <associate|auto-7|<tuple|13.4|4>>
+    <associate|auto-8|<tuple|13.7|4>>
+    <associate|auto-9|<tuple|14|4>>
     <associate|bib-BG20|<tuple|BG20|9>>
     <associate|bib-FBSDE26|<tuple|FBSDE26|9>>
     <associate|bib-MY99|<tuple|MY99|9>>
-    <associate|eq:KX|<tuple|15.2|3>>
-    <associate|eq:Vsharp|<tuple|15.3|3>>
-    <associate|eq:X|<tuple|15.1|3>>
+    <associate|eq:KX|<tuple|13.2|3>>
+    <associate|eq:Vsharp|<tuple|13.3|3>>
+    <associate|eq:X|<tuple|13.1|3>>
     <associate|eq:YZ|<tuple|1|2>>
-    <associate|eq:backward|<tuple|17.3|8>>
-    <associate|eq:elementary|<tuple|16.3|5>>
-    <associate|eq:energies|<tuple|15.6|3>>
-    <associate|eq:energy|<tuple|17.4|8>>
-    <associate|eq:forward|<tuple|16.4|6>>
-    <associate|eq:hardy|<tuple|15.7|4>>
-    <associate|eq:propagator|<tuple|17.1|7>>
-    <associate|eq:representation|<tuple|17.2|7>>
-    <associate|eq:scalar|<tuple|16.1|4>>
-    <associate|eq:scalar-forward|<tuple|16.2|4>>
-    <associate|eq:thresholds|<tuple|15.5|3>>
-    <associate|eq:uv-stability|<tuple|17.5|8>>
-    <associate|eq:volterra|<tuple|15.4|3>>
-    <associate|lem:hardy|<tuple|15.2|4>>
-    <associate|lem:pre|<tuple|15.1|2>>
-    <associate|lem:representation|<tuple|17.1|7>>
-    <associate|lem:scalar-forward|<tuple|16.1|4>>
-    <associate|prop:backward|<tuple|17.2|8>>
-    <associate|prop:forward|<tuple|16.3|6>>
-    <associate|sec:backward|<tuple|17|7>>
-    <associate|sec:energies|<tuple|15|2>>
-    <associate|sec:forward|<tuple|16|4>>
-    <associate|thm:energy|<tuple|17.3|8>>
+    <associate|eq:backward|<tuple|15.3|8>>
+    <associate|eq:elementary|<tuple|14.3|5>>
+    <associate|eq:energies|<tuple|13.6|3>>
+    <associate|eq:energy|<tuple|15.4|8>>
+    <associate|eq:forward|<tuple|14.4|6>>
+    <associate|eq:hardy|<tuple|13.7|4>>
+    <associate|eq:propagator|<tuple|15.1|7>>
+    <associate|eq:representation|<tuple|15.2|7>>
+    <associate|eq:scalar|<tuple|14.1|4>>
+    <associate|eq:scalar-forward|<tuple|14.2|4>>
+    <associate|eq:thresholds|<tuple|13.5|3>>
+    <associate|eq:uv-stability|<tuple|15.5|8>>
+    <associate|eq:volterra|<tuple|13.4|3>>
+    <associate|lem:hardy|<tuple|13.2|4>>
+    <associate|lem:pre|<tuple|13.1|2>>
+    <associate|lem:representation|<tuple|15.1|7>>
+    <associate|lem:scalar-forward|<tuple|14.1|4>>
+    <associate|prop:backward|<tuple|15.2|8>>
+    <associate|prop:forward|<tuple|14.3|6>>
+    <associate|sec:backward|<tuple|15|7>>
+    <associate|sec:energies|<tuple|13|2>>
+    <associate|sec:forward|<tuple|14|4>>
+    <associate|thm:energy|<tuple|15.3|8>>
   </collection>
 </references>
 
@@ -982,27 +985,27 @@
       <no-break><pageref|auto-1><vspace|0.5fn>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|How a priori
-      estimates for FBSDEs are usually obtained.
+      estimates for FBSDEs are usually obtained
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|15<space|2spc>The
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|13<space|2spc>The
       energies> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|15.1<space|2spc>Moments at fixed cutoff
+      <with|par-left|<quote|1tab>|13.1<space|2spc>Moments at fixed cutoff
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
-      <with|par-left|<quote|1tab>|15.2<space|2spc>Subtracting the Gaussian
+      <with|par-left|<quote|1tab>|13.2<space|2spc>Subtracting the Gaussian
       part <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
 
-      <with|par-left|<quote|1tab>|15.3<space|2spc>Thresholds and energies
+      <with|par-left|<quote|1tab>|13.3<space|2spc>Thresholds and energies
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6>>
 
-      <with|par-left|<quote|1tab>|15.4<space|2spc>Two Hardy inequalities
+      <with|par-left|<quote|1tab>|13.4<space|2spc>Two Hardy inequalities
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
@@ -1010,19 +1013,19 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|16<space|2spc>Forward
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|14<space|2spc>Forward
       coercivity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|16.1<space|2spc>The scalar model
+      <with|par-left|<quote|1tab>|14.1<space|2spc>The scalar model
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|What the
-      scalar lemma says. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      scalar lemma says <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-11>>>
 
-      <with|par-left|<quote|1tab>|16.2<space|2spc>The lattice version
+      <with|par-left|<quote|1tab>|14.2<space|2spc>The lattice version
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12>>
 
@@ -1030,23 +1033,23 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|17<space|2spc>Backward
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|15<space|2spc>Backward
       feedback and closure> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|17.1<space|2spc>The backward representation
+      <with|par-left|<quote|1tab>|15.1<space|2spc>The backward representation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15>>
 
-      <with|par-left|<quote|1tab>|17.2<space|2spc>Three contributions
+      <with|par-left|<quote|1tab>|15.2<space|2spc>Three contributions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-16>>
 
-      <with|par-left|<quote|1tab>|17.3<space|2spc>Closing the loop
+      <with|par-left|<quote|1tab>|15.3<space|2spc>Closing the loop
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17>>
 
-      <with|par-left|<quote|1tab>|17.4<space|2spc>Consequences
+      <with|par-left|<quote|1tab>|15.4<space|2spc>Consequences
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-18>>
 

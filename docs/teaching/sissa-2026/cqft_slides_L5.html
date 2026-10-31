@@ -77,7 +77,7 @@
         </p>
         <p>
           <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 5 (provisional)
-          &mdash; notes: Lecture 5, &sect;&sect;12&ndash;14</font></font>
+          &mdash; notes: Lecture 5, &sect;&sect;10&ndash;12</font></font>
         </p>
         <p>
 
@@ -285,17 +285,19 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
         (y) = \gamma y^2\)</font> (not the counterterm <font color="#620000">\(\gamma_T\)</font>
         of Lecture 4). The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
       </p>
-      <p style="margin-top: 1em; margin-bottom: 1em">
-        <font color="#800000"><font color="#800000"><strong>Theorem.
-        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(informal)
-        </strong></font></font></class>For <font color="#620000">\(q_0\)</font> large:
-        explicit <font color="#620000">\(\mu_N = - 3 \lambda \text{Tr} C + O (\log
-        N)\)</font> such that (a) <font color="#620000">\(\nu_N\)</font> is tight in
-        <font color="#620000">\(H^{- s}\)</font>, <font color="#620000">\(s >
-        \frac{1}{2}\)</font>; (b) along a subsequence, the forecasts converge
-        to a solution of a limiting FBSDE; (c) the limit satisfies a
-        renormalised integration by parts formula.</i>
-      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em; margin-bottom: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(informal)
+          </strong></font></font></class>For <font color="#620000">\(q_0\)</font>
+          large: explicit <font color="#620000">\(\mu_N = - 3 \lambda \text{Tr} C + O
+          (\log N)\)</font> such that (a) <font color="#620000">\(\nu_N\)</font> is
+          tight in <font color="#620000">\(H^{- s}\)</font>, <font color="#620000">\(s >
+          \frac{1}{2}\)</font>; (b) along a subsequence, the forecasts
+          converge to a solution of a limiting FBSDE; (c) the limit satisfies
+          a renormalised integration by parts formula.</i>
+        </p>
+      </div>
       <p>
         The bounds behind (a), (b) are bounds on the error <font color="#620000">\(Z\)</font>
         of an approximate forecast, <strong>uniform in <font color="#620000">\(N\)</font></strong>:
@@ -319,39 +321,41 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
         \mathcal{F}_q = \sigma
 (P_s : s \le q) .\)
       </center>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i>With <font color="#620000">\(\mathcal{K}_q (p) = \log
-        \int \mathrm{e}^{\langle p, \varphi \rangle - \frac{q
-- q_0}{2} \|
-        \varphi \|^2} \nu_N (\mathrm{d} \varphi)\)</font>:</i>
-      </p>
-      <div style="margin-bottom: 1em">
-        <i><ul>
-          <li>
-            <p>
-              forecast <font color="#620000">\(\psi_q =\mathbb{E}_q \Phi_{\infty} =
-              D\mathcal{K}_q (P_q)\)</font>, covariance <font color="#620000">\(\text{Cov}_q
-              = D^2 \mathcal{K}_q (P_q) > 0\)</font>;
-            </p>
-          </li>
-          <li>
-            <p>
-              innovation <font color="#620000">\(W_q = P_q - \int_{q_0}^q \psi_s
-              \mathrm{d} s\)</font> is an <font color="#620000">\((\mathcal{F}_q)\)</font>-Brownian
-              motion;
-            </p>
-          </li>
-          <li>
-            <p>
-              <font color="#620000">\(\mathrm{d} \psi_q = \text{Cov}_q \hspace{0.17em}
-              \mathrm{d} W_q\)</font>, and <font color="#620000">\(\partial_q
-              \mathcal{K}+ \frac{1}{2} \text{Tr} D^2 \mathcal{K}+ \frac{1}{2}
-
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>With <font color="#620000">\(\mathcal{K}_q (p) =
+          \log \int \mathrm{e}^{\langle p, \varphi \rangle - \frac{q
+- q_0}{2}
+          \| \varphi \|^2} \nu_N (\mathrm{d} \varphi)\)</font>:</i>
+        </p>
+        <div style="margin-bottom: 1em">
+          <i><ul>
+            <li>
+              <p>
+                forecast <font color="#620000">\(\psi_q =\mathbb{E}_q \Phi_{\infty} =
+                D\mathcal{K}_q (P_q)\)</font>, covariance <font color="#620000">\(\text{Cov}_q
+                = D^2 \mathcal{K}_q (P_q) > 0\)</font>;
+              </p>
+            </li>
+            <li>
+              <p>
+                innovation <font color="#620000">\(W_q = P_q - \int_{q_0}^q \psi_s
+                \mathrm{d} s\)</font> is an <font color="#620000">\((\mathcal{F}_q)\)</font>-Brownian
+                motion;
+              </p>
+            </li>
+            <li>
+              <p>
+                <font color="#620000">\(\mathrm{d} \psi_q = \text{Cov}_q
+                \hspace{0.17em} \mathrm{d} W_q\)</font>, and <font color="#620000">\(\partial_q
+                \mathcal{K}+ \frac{1}{2} \text{Tr} D^2 \mathcal{K}+
+                \frac{1}{2}
 \|D\mathcal{K}\|^2 = 0\)</font>.
-            </p>
-          </li>
-        </ul></i>
+              </p>
+            </li>
+          </ul></i>
+        </div>
       </div>
       <p>
         Proof: Bayes with likelihood <font color="#620000">\(\exp \{\langle P_q,
@@ -367,25 +371,29 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
       <p>
 
       </p>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i><font color="#620000">\(\Phi_q := C_q P_q\)</font>
-        and <font color="#620000">\(F_q := K_q  (\psi_q - \Phi_q)\)</font> satisfy</i>
-      </p>
-      <p>
-        <i><center>
-          \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
-          \mathrm{d} q + C_q
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><font color="#620000">\(\Phi_q := C_q P_q\)</font>
+          and <font color="#620000">\(F_q := K_q  (\psi_q - \Phi_q)\)</font>
+          satisfy</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
+            \mathrm{d} q + C_q
 \hspace{0.17em} \mathrm{d} W_q, \qquad F_q
-          =\mathbb{E}_q  [- DV_N
+            =\mathbb{E}_q  [- DV_N
 (\Phi_{\infty})], \qquad \psi_q = \Phi_q +
-          C_q F_q,\)
-        </center></i>
-      </p>
-      <p style="margin-bottom: 1em">
-        <i>i.e. the FBSDE of Lecture 4 for the mass profile. <font color="#620000">\(\text{Cov}_q\)</font>
-        is the response <font color="#620000">\(H^{\text{ex}}_q (\psi_q)\)</font>.</i>
-      </p>
+            C_q F_q,\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>i.e. the FBSDE of Lecture 4 for the mass profile. <font color="#620000">\(\text{Cov}_q\)</font>
+          is the response <font color="#620000">\(H^{\text{ex}}_q
+          (\psi_q)\)</font>.</i>
+        </p>
+      </div>
       <ul>
         <li>
           <p>
@@ -514,24 +522,26 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
         <li>
           <p>
             Coordinates: <font color="#620000">\(\Phi_q = \psi_q + C_q D \Gamma_q
-            (\psi_q)\)</font> (Lecture 4, <font color="#620000">\(x = \psi + S
-            \mathscr{F} (\psi)\)</font>).
+            (\psi_q)\)</font> (Lecture 4, <font color="#620000">\(x = \psi +
+            S\mathcal{F} (\psi)\)</font>).
           </p>
         </li>
       </ul>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Wetterich
-        with a mass regulator) </strong></font></font></class></i>
-      </p>
-      <p style="margin-bottom: 1em">
-        <i><center>
-          \(\displaystyle \partial_q \Gamma_q (y) = \tfrac{1}{2} \text{Tr}
-          H^{\text{ex}}_q (y), \qquad
-\text{Cov}_q = H^{\text{ex}}_q (\psi_q)
-          .\)
-        </center></i>
-      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Wetterich
+          with a mass regulator) </strong></font></font></class></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \partial_q \Gamma_q (y) = \tfrac{1}{2} \text{Tr}
+            H^{\text{ex}}_q (y), \qquad
+\text{Cov}_q = H^{\text{ex}}_q
+            (\psi_q) .\)
+          </center></i>
+        </p>
+      </div>
       <p>
         An <strong>identity about the unknown <font color="#620000">\(\nu_N\)</font></strong>,
         not a construction. Strategy: an approximate <font color="#620000">\(\bar{\Gamma}\)</font>
@@ -562,27 +572,30 @@ H_q De_q .\)
         forecast}), \qquad Z_q =
 \psi_q - Y_q (\text{error}), \qquad \Xi_q =
         \text{Cov}_q - H_q (Y_q) .\)
-      </center><p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Theorem.
-        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(exact,
-        at fixed <font color="#620000">\(N\)</font>)
-        </strong></font></font></class></i>
-      </p><p style="margin-bottom: 1em">
-        <i><center>
-          \(\displaystyle \begin{aligned}
+      </center><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(exact,
+          at fixed <font color="#620000">\(N\)</font>)
+          </strong></font></font></class></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \begin{aligned}
   \mathrm{d} Y_q & = [b_q (Y_q) +
-          H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
+            H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
+  \hspace{0.17em}
+            \mathrm{d} W_q,\\
+  \mathrm{d} Z_q & = - [b_q (Y_q) + H_q (Y_q)
+            Z_q] \mathrm{d} q + \Xi_q
   \hspace{0.17em} \mathrm{d}
-          W_q,\\
-  \mathrm{d} Z_q & = - [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d}
-          q + \Xi_q
-  \hspace{0.17em} \mathrm{d} W_q,
+            W_q,
 \end{aligned}
 
-\qquad
-          Y_{q_0} = Z_{q_0} = 0.\)
-        </center></i>
-      </p><p>
+\qquad Y_{q_0} = Z_{q_0} = 0.\)
+          </center></i>
+        </p>
+      </div><p>
         Proof: <font color="#620000">\(\partial_q  \bar{\mathcal{K}} + \frac{1}{2}
         \text{Tr} D^2  \bar{\mathcal{K}} +
 \frac{1}{2}  \|D \bar{\mathcal{K}}
@@ -764,14 +777,14 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         quadratic path,
       </p>
       <center>
-        \(\displaystyle \mathscr{T}_q [M, h] = \tfrac{1}{2} \text{Tr} [(K_q +
+        \(\displaystyle \mathcal{T}_q [M, h] = \tfrac{1}{2} \text{Tr} [(K_q +
         M_q + D^2 (U + h))^{- 1}
 - (K_q + M_q)^{- 1}],\)
       </center>
       <center>
         \(\displaystyle h^{[0]} =\mathcal{L}, \qquad h^{[j + 1]}_q
         =\mathcal{L}_q - \int_q^{\infty}
-\Pi (\mathscr{T}_s [M, h^{[j]}] -
+\Pi (\mathcal{T}_s [M, h^{[j]}] -
         \partial_s \mathcal{L}_s) \mathrm{d} s,
 \quad j = 0, 1,\)
       </center>
@@ -806,23 +819,25 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         Bare mass <font color="#620000">\(\mu_N = \lim_{q \to \infty} \mu_q\)</font>:
         an <strong>output</strong> of the flow.
       </p>
-      <p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(for
-        <font color="#620000">\(q_0\)</font> large, uniformly in <font color="#620000">\(N\)</font>)
-        </strong></font></font></class>Unique solution in a ball, with <font
-        color="#620000">\(| \mu_q | \le C \gamma \sqrt{q}\)</font>, <font color="#620000">\(v_1
-        (\Theta_q) \le C \gamma^2 q^{- 1 / 2}\)</font>; increments <font
-        color="#620000">\(\mathcal{N}_k  (h^{[j]} - h^{[j - 1]}) \le C_k g_q^{j + 1}
-        qr_q^{2 - k}\)</font>, <font color="#620000">\(4 \le k \le 10 - 2 j\)</font>,
-        <font color="#620000">\(j = 1, 2\)</font>; and the defect of <font color="#620000">\(\Gamma^{\text{o}}\)</font></i>
-      </p>
-      <p style="margin-bottom: 1em">
-        <i><center>
-          \(\displaystyle \textsf{S}_4 (e^{\text{o}}_q) \le C \gamma^5 q^{- 3}
-          .\)
-        </center></i>
-      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(for
+          <font color="#620000">\(q_0\)</font> large, uniformly in <font color="#620000">\(N\)</font>)
+          </strong></font></font></class>Unique solution in a ball, with <font
+          color="#620000">\(| \mu_q | \le C \gamma \sqrt{q}\)</font>, <font color="#620000">\(v_1
+          (\Theta_q) \le C \gamma^2 q^{- 1 / 2}\)</font>; increments <font
+          color="#620000">\(\mathcal{N}_k  (h^{[j]} - h^{[j - 1]}) \le C_k g_q^{j + 1}
+          qr_q^{2 - k}\)</font>, <font color="#620000">\(4 \le k \le 10 - 2 j\)</font>,
+          <font color="#620000">\(j = 1, 2\)</font>; and the defect of <font color="#620000">\(\Gamma^{\text{o}}\)</font></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \textsf{S}_4 (e^{\text{o}}_q) \le C \gamma^5 q^{-
+            3} .\)
+          </center></i>
+        </p>
+      </div>
       <p>
         Ideas: trace Lipschitz estimate by loops; integrability at <font
         color="#620000">\(q = \infty\)</font> for <font color="#620000">\(k \ge 4\)</font>;
@@ -1050,25 +1065,29 @@ H_q (y)^2 \le Ca_2 (q) .\)
 (\kappa
         y)\)</font>, <font color="#620000">\(t_q (y) = y \mathbb{1}_{|y| >
         r_q}\)</font>.
-      </p><p style="margin-top: 1em">
-        <font color="#800000"><font color="#800000"><strong>Proposition.
-        </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(uniformly
-        in <font color="#620000">\(y\)</font>, <font color="#620000">\(N\)</font>, <font color="#620000">\(p\)</font>)
-        </strong></font></font></class></i>
-      </p><p>
-        <i><center>
-          \(\displaystyle \|b^{\text{b}}_q \|_p \le C \gamma^{7 / 2} q^{- 5 /
-          2}, \qquad
+      </p><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(uniformly
+          in <font color="#620000">\(y\)</font>, <font color="#620000">\(N\)</font>, <font
+          color="#620000">\(p\)</font>) </strong></font></font></class></i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \|b^{\text{b}}_q \|_p \le C \gamma^{7 / 2} q^{- 5
+            / 2}, \qquad
 \|b^{\text{l}}_q \|_p \le C \gamma q^{- 3 / 2} (\|t_q
-          \|_p + r_q^{- 1} \|y^2
+            \|_p + r_q^{- 1} \|y^2
 \mathbb{1}_{|y| > r_q} \|_p),\)
-        </center></i>
-      </p><p style="margin-bottom: 1em">
-        <i><center>
-          \(\displaystyle \|b^{\text{l}}_q \|_2^2 \le C \gamma^4 q^{- 5} \|t_q
-          \|_6^6 .\)
-        </center></i>
-      </p><p>
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \le C \gamma^4 q^{- 5}
+            \|t_q \|_6^6 .\)
+          </center></i>
+        </p>
+      </div><p>
         Sources of <font color="#620000">\(b^{\text{l}}\)</font> (four groups): the
         mass term <font color="#620000">\(M' y - JM' \kappa y\)</font> (<font color="#620000">\(J
         = D \kappa\)</font>, <font color="#620000">\(M' = \partial_q M\)</font>;

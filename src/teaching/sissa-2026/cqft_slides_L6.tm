@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -23,8 +23,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 6 (provisional) \V
-      notes: Lecture 6, ŸŸ15\U17>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>6
+      (provisional) \V notes: Lecture<nbsp>6, ŸŸ13\U15>>
 
       \;
     </with>
@@ -33,7 +33,7 @@
 
     \;
 
-    At each lattice <math|N>, exactly (Lecture 5):
+    At each lattice <math|N>, exactly (Lecture<nbsp>5):
 
     <\equation*>
       <\aligned>
@@ -99,7 +99,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 6>
+    <with|color|dark grey|Lecture<nbsp>6>
 
     \;
   </hidden>|<\hidden>
@@ -195,7 +195,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 6>
+    <with|color|dark grey|Lecture<nbsp>6>
 
     \;
   </hidden>|<\hidden>
@@ -348,7 +348,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 6>
+    <with|color|dark grey|Lecture<nbsp>6>
 
     \;
   </hidden>|<\hidden>
@@ -356,11 +356,11 @@
 
     \;
 
-    Propagator: <math|\<partial\><rsub|s>*<with|math-font|cal*|P><rsub|q,s>=<with|math-font|cal*|P><rsub|q,s>*H<rsub|s><around|(|Y<rsub|s>|)>>,
-    <math|<with|math-font|cal*|P><rsub|q,q>=I>, and by (A)
+    Propagator: <math|\<partial\><rsub|s>*\<cal-P\><rsub|q,s>=\<cal-P\><rsub|q,s>*H<rsub|s><around|(|Y<rsub|s>|)>>,
+    <math|\<cal-P\><rsub|q,q>=I>, and by (A)
 
     <\equation*>
-      <around|\<\|\|\>|<with|math-font|cal*|P><rsub|q,s>|\<\|\|\>>\<le\>L<rsub|0>*<space|0.17em><frac|s|q>,<space|2em>L<rsub|0>=exp
+      <around|\<\|\|\>|\<cal-P\><rsub|q,s>|\<\|\|\>>\<le\>L<rsub|0>*<space|0.17em><frac|s|q>,<space|2em>L<rsub|0>=exp
       <around*|(|<big|int><rsub|q<rsub|0>><rsup|\<infty\>>\<varepsilon\><rsub|u>*<frac|\<mathd\>u|u>|)>\<le\>\<mathe\><rsup|C*<around|(|g<rsub|q<rsub|0>>+g<rsub|q<rsub|0>><rsup|2>|)>>.
     </equation*>
 
@@ -368,16 +368,16 @@
       <dueto|conditional representation>
 
       <\equation*>
-        Z<rsub|q>=\<bbb-E\><rsub|q>*<around*|[|<with|math-font|cal*|P><rsub|q,T>*Z<rsub|T>+<big|int><rsub|q><rsup|T><with|math-font|cal*|P><rsub|q,s>*<space|0.17em>b<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>s|]>.
+        Z<rsub|q>=\<bbb-E\><rsub|q>*<around*|[|\<cal-P\><rsub|q,T>*Z<rsub|T>+<big|int><rsub|q><rsup|T>\<cal-P\><rsub|q,s>*<space|0.17em>b<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>s|]>.
       </equation*>
     </lemma*>
 
-    Proof: <math|\<mathd\><rsub|s><around|(|<with|math-font|cal*|P><rsub|q,s>*Z<rsub|s>|)>=-<with|math-font|cal*|P><rsub|q,s>*b<rsub|s>\<mathd\>s+<with|math-font|cal*|P><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>>,
+    Proof: <math|\<mathd\><rsub|s><around|(|\<cal-P\><rsub|q,s>*Z<rsub|s>|)>=-\<cal-P\><rsub|q,s>*b<rsub|s>\<mathd\>s+\<cal-P\><rsub|q,s>*\<Xi\><rsub|s>\<mathd\>W<rsub|s>>,
     a true martingale at fixed <math|N>.
 
     <math|Z> = expected source on the unresolved scales, transported back,
     plus the boundary error. Compare <math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|F<rsub|T>|]>>
-    in Lecture 4: here the source is the <strong|defect>.
+    in Lecture<nbsp>4: here the source is the <strong|defect>.
   </hidden>|<\hidden>
     <mytitle|Three contributions>
 
@@ -489,7 +489,7 @@
 
     \;
 
-    Once the boundary term is removed (Lecture 7):
+    Once the boundary term is removed (Lecture<nbsp>7):
 
     <\equation*>
       sup<rsub|N>\<\|\|\>E<rsup|N><rsub|\<infty\>>\<\|\|\><rsub|L<rsup|p>>+sup<rsub|N><around|\<\|\|\>|J<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<space|2em>sup<rsub|N>
@@ -515,14 +515,15 @@
     \;
 
     <\myframed>
-      <strong|Comparison with Boué\UDupuis (Lecture 4)>
+      <strong|Comparison with Boué\UDupuis (Lecture<nbsp>4)>
 
       There: drift <math|u=-4*\<lambda\>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>
-      (<math|\<lambda\>*<big|int>:\<varphi\><rsup|4>>: of Lecture 4). Here:
-      <math|<wide|\<Gamma\>|\<bar\>>> does all such changes of variables at
-      once in the forecast coordinate; <math|Z> plays the role of <math|r>.
-      Coercivity of the quartic: <strong|pathwise> in the forward equation;
-      the remainder: <strong|in expectation> through the backward one.
+      (<math|\<lambda\>*<big|int>:\<varphi\><rsup|4>>: of Lecture<nbsp>4).
+      Here: <math|<wide|\<Gamma\>|\<bar\>>> does all such changes of
+      variables at once in the forecast coordinate; <math|Z> plays the role
+      of <math|r>. Coercivity of the quartic: <strong|pathwise> in the
+      forward equation; the remainder: <strong|in expectation> through the
+      backward one.
     </myframed>
 
     <with|par-mode|right|<small|<with|color|dark grey|Barashkov\UG. 2020>>>

@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -22,8 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 2 \V notes:
-      Lecture 2, Ÿ3>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>2 \V notes:
+      Lecture<nbsp>2, Ÿ3>>
 
       \;
     </with>
@@ -64,7 +64,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 2>
+    <with|color|dark grey|Lecture<nbsp>2>
 
     \;
   </hidden>|<\hidden>
@@ -183,7 +183,7 @@
     positive definiteness from <math|\<Psi\>*<around|(|f<rsub|j>-f<rsub|k>|)>=a<rsub|j>*a<rsub|k>\<mathe\><rsup|<around|\<langle\>|f<rsub|j>,C*f<rsub|k>|\<rangle\>>>>
     and the Schur product theorem.
 
-    <with|font-series|bold|Regularity> (sharp, Exercise 3.3):
+    <with|font-series|bold|Regularity> (sharp, Exercise<nbsp>3.3):
 
     <tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-bborder|1ln>|<table|<row|<cell|<math|d=1>>|<cell|<math|d=2>>|<cell|<math|d=3>>>|<row|<cell|stationary
     OU process>|<cell|<math|H<rsup|-\<kappa\>>>,
@@ -202,7 +202,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 2>
+    <with|color|dark grey|Lecture<nbsp>2>
 
     \;
   </hidden>|<\hidden>
@@ -251,7 +251,7 @@
       Hamiltonian in the Schrödinger representation.
 
       <item>The GFF is the continuum limit of the lattice spin system of
-      Lecture 1 with <math|V=0> (Exercise 3.10).
+      Lecture<nbsp>1 with <math|V=0> (Exercise<nbsp>3.10).
 
       <item>Markov property (Nelson): rooted in the <strong|locality of
       <math|A>>.
@@ -360,7 +360,8 @@
       and <math|G<rsub|M>/G<rsub|m>\<to\>1> at <math|0> (<math|d\<geq\>2>),
       so <math|liminf<rsub|x\<to\>0> S<rsub|2><rsup|T><around|(|x|)>/G<rsub|m><around|(|x|)>\<geq\>\<rho\><around|(|<around|[|0,\<infty\>|)>|)>\<gtr\>0>:
       never less singular than free. Scale invariance <math|\<Rightarrow\>>
-      unitarity bound <math|\<Delta\>\<geq\><frac|d-2|2>> (Exercise 3.2).
+      unitarity bound <math|\<Delta\>\<geq\><frac|d-2|2>>
+      (Exercise<nbsp>3.2).
 
       <item><strong|Long distances.> <math|<math-up|supp>\<rho\>\<subset\><around|[|m<rsub|0><rsup|2>,\<infty\>|)>>
       <math|\<Leftrightarrow\>> decay at least like
@@ -469,7 +470,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 2>
+    <with|color|dark grey|Lecture<nbsp>2>
 
     \;
   </hidden>|<\hidden>
@@ -564,7 +565,7 @@
       has no limit; subtracting <math|c<rsub|\<varepsilon\>>\<to\>\<infty\>>
       (via <math|H<rsub|n>>) is the simplest counterterm. A different
       mollifier changes <math|:\<varphi\><rsup|n>>: by lower Wick powers with
-      <em|finite> coefficients (Exercise 3.4).
+      <em|finite> coefficients (Exercise<nbsp>3.4).
 
       <item><strong|Chaos:> <math|:\<varphi\><rsup|n>:<around|(|f|)>> lies in
       the <math|n>-th Wiener chaos; <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>\<simeq\>>
@@ -581,7 +582,7 @@
       <math|\<partial\><rsup|\<alpha\>>*\<varphi\>>; in <math|d=2> the Wick
       exponentials <math|:\<mathe\><rsup|\<mathi\>\<beta\>*\<varphi\>>>:, in
       <math|L<rsup|2>> iff <math|\<beta\><rsup|2>\<less\>4*\<pi\>>
-      (sine-Gordon; Exercise 3.6).
+      (sine-Gordon; Exercise<nbsp>3.6).
     </itemize>
   </hidden>|<\hidden>
     <vspace*|2.5cm>
@@ -593,7 +594,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 2>
+    <with|color|dark grey|Lecture<nbsp>2>
 
     \;
   </hidden>|<\hidden>
@@ -679,7 +680,7 @@
     </equation*>
 
     which with <math|S<rsub|0>=1>, <math|S<rsub|1>=0> gives Wick's theorem
-    (Exercise 3.7).
+    (Exercise<nbsp>3.7).
   </hidden>|<\hidden>
     <mytitle|DS <math|=> Euclidean field equation>
 
@@ -742,7 +743,7 @@
       <around|(|1/\<varepsilon\>|)>>: <math|4*\<lambda\>*\<delta\><rsub|\<varepsilon\>>>
       is the sunset mass counterterm (Gubinelli\UHofmanová 2021).
 
-      <item>Lecture 3: OPE of stochastic observables, explicit at every
+      <item>Lecture<nbsp>3: OPE of stochastic observables, explicit at every
       scale.
     </itemize>
   </hidden>|<\hidden>
@@ -790,10 +791,10 @@
       ODE>.
 
       <item><math|m=0> on the torus: <em|no> probability measure solves DS
-      (take <math|h=1>); work modulo constants (Exercise 3.9).
+      (take <math|h=1>); work modulo constants (Exercise<nbsp>3.9).
 
       <item>Finite dimensions: DS says <math|\<nabla\><around|(|\<mathe\><rsup|S>\<nu\>|)>=0>,
-      so uniqueness is easy for any <math|S> (Exercise 3.8).
+      so uniqueness is easy for any <math|S> (Exercise<nbsp>3.8).
 
       <item>Interacting theories: DS is a singular nonlinear relation;
       uniqueness is hard and largely open. Results for the exponential model
@@ -807,14 +808,14 @@
     <with|font-series|bold|Next lecture>
 
     <\itemize>
-      <item>Lecture 3: stochastic quantisation; the GFF along a scale
+      <item>Lecture<nbsp>3: stochastic quantisation; the GFF along a scale
       parameter; stochastic observables, products and OPE.
 
-      <item>Lecture 4: Polchinski equation and its FBSDE; Wetterich equation;
-      variational structure.
+      <item>Lecture<nbsp>4: Polchinski equation and its FBSDE; Wetterich
+      equation; variational structure.
 
-      <item>Lectures 5\U7: a construction of <math|\<Phi\><rsup|4><rsub|3>>
-      on the torus via the FBSDE.
+      <item>Lectures<nbsp>5\U7: a construction of
+      <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE.
     </itemize>
 
     \;

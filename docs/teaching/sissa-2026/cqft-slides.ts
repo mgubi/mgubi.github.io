@@ -64,6 +64,22 @@
     </with>
   </macro>>
 
+  <\active*>
+    <\src-comment>
+      Theorem-like environments (theorems, propositions, lemmas,
+      corollaries, definitions) are boxed with myframed-2; on export the
+      box becomes a block of class slide-box.
+    </src-comment>
+  </active*>
+
+  <assign|cqft-render-theorem|<value|render-theorem>>
+
+  <assign|render-theorem|<\macro|which|body>
+    <\myframed-2>
+      <cqft-render-theorem|<arg|which>|<arg|body>>
+    </myframed-2>
+  </macro>>
+
   <assign|mydot|<math|\<cdot\>>>
 
   <\active*>

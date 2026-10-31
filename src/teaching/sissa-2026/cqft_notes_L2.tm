@@ -1,10 +1,10 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|article|number-long-article|british|cqft-notes>>
 
 <\body>
-  <doc-data|<doc-title|A Constructive Introduction to Quantum Field
-  Theory>|<doc-subtitle|Lecture 2: The Gaussian free
+  <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
+  Field Theory>|<doc-subtitle|Lecture<nbsp>2: The Gaussian free
   field>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|SISSA, October 2026>>
@@ -17,8 +17,8 @@
     Källén\ULehmann representation, and define its local (Wick) operators. We
     prove that the Dyson\USchwinger equation characterises the GFF among
     probability measures on distributions. Stochastic quantisation is treated
-    in Lecture 3. Exercises are collected at the end. These notes follow the
-    slides of Lecture 2.
+    in Lecture<nbsp>3. Exercises are collected at the end. These notes follow
+    the slides of Lecture<nbsp>2.
   </abstract>>
 
   <\table-of-contents|toc>
@@ -38,12 +38,12 @@
     field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Example: two masses.
+    <with|par-left|3tab|<with|font-size|0.92|Example: two masses
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Is the nonlocal theory physical?
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <with|par-left|3tab|<with|font-size|0.92|Physical meaning of the nonlocal
+    theory <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-8>>>
 
     <with|par-left|1tab|3.3<space|2spc>Local operators: Wick products
@@ -51,7 +51,7 @@
     <no-break><pageref|auto-9>>
 
     <with|par-left|3tab|<with|font-size|0.92|Beyond
-    <with|mode|math|L<rsup|2>>: no random distribution.
+    <with|mode|math|L<rsup|2>>: no random distribution
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>>
 
@@ -70,22 +70,22 @@
     further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14><vspace|0.5fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Guide.
+    <with|par-left|3tab|<with|font-size|0.92|Guide
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-15>>>
   </table-of-contents>
 
   <section*|Introduction>
 
-  In Lecture 1 we saw that, after the passage to imaginary time, a
+  In Lecture<nbsp>1 we saw that, after the passage to imaginary time, a
   relativistic quantum field is encoded in a probability measure on
   distributions satisfying the Osterwalder\USchrader axioms, formally
   <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>\<propto\>exp
   <around|(|-<big|int><around|[|<frac|1|2>\|\<nabla\>*\<varphi\>\|<rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>>
   (Eq.<nbsp><hlink|(2.13)|cqft_notes_L1.tm#eq:path-integral>). In this
   lecture we treat its Gaussian part rigorously. Conventions are those of
-  Lecture 1. Sections, equations and exercises keep the numbering of the
-  notes, so that Ÿ1\U2 refer to the notes of Lecture 1.
+  Lecture<nbsp>1. Sections, equations and exercises keep the numbering of the
+  notes, so that Ÿ1\U2 refer to the notes of Lecture<nbsp>1.
 
   <assign|section-nr|2><section|The Gaussian free field><label|sec:gff>
 
@@ -251,7 +251,7 @@
       <tformat|<table|<row|<cell|<around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>>|<cell|=<big|iint><rsub|\<tau\>\<less\>0\<less\>\<tau\><rprime|'>><around|\<langle\>|f*<around|(|-\<tau\>|)>,\<mathe\><rsup|-<around|(|\<tau\><rprime|'>-\<tau\>|)>*\<omega\>><around|(|2*\<omega\>|)><rsup|-1>*f<around|(|\<tau\><rprime|'>|)>|\<rangle\>><space|0.17em>\<mathd\>\<tau\><space|0.17em>\<mathd\>\<tau\><rprime|'>>>|<row|<cell|>|<cell|=<big|int><rsub|0><rsup|\<infty\>><space|-0.17em><space|-0.17em><space|-0.17em><big|int><rsub|0><rsup|\<infty\>><around|\<langle\>|\<mathe\><rsup|-s*\<omega\>>f<around|(|s|)>,<around|(|2*\<omega\>|)><rsup|-1>\<mathe\><rsup|-\<tau\><rprime|'>*\<omega\>>f<around|(|\<tau\><rprime|'>|)>|\<rangle\>><space|0.17em>\<mathd\>s<space|0.17em>\<mathd\>\<tau\><rprime|'>,>>>>
     </align*>
 
-    which is <eqref|eq:RP>. (c) (OS0)\U(OS2) and (OS4) follow from the
+    which is<nbsp><eqref|eq:RP>. (c) (OS0)\U(OS2) and (OS4) follow from the
     explicit form of <math|<wide|\<mu\>|^><around|(|f|)>> and the decay of
     <math|G<rsub|m>>. For (OS3), <math|C> commutes with <math|\<Theta\>>, so
     <math|<wide|\<mu\>|^>*<around|(|f<rsub|i>-\<Theta\>*f<rsub|j>|)>=a<rsub|i>*a<rsub|j>\<mathe\><rsup|<around|\<langle\>|\<Theta\>*f<rsub|i>,C*f<rsub|j>|\<rangle\>>>>
@@ -323,8 +323,8 @@
   restriction of the GFF is Gaussian with covariance
   <math|<around|(|2*\<omega\>|)><rsup|-1>>, the ground state measure of the
   free Hamiltonian in the Schrödinger representation
-  (Exercise<nbsp><hlink|4.4|cqft_lecture3.tm#ex:slices> of Lecture 3). The
-  GFF is also the continuum limit of the lattice model
+  (Exercise<nbsp><hlink|4.4|cqft_lecture3.tm#ex:slices> of Lecture<nbsp>3).
+  The GFF is also the continuum limit of the lattice model
   <hlink|(2.12)|cqft_notes_L1.tm#eq:spin-system> with <math|V=0> (for
   <math|d=2>; in general <math|d> see Exercise<nbsp><hlink|2.3|cqft_notes_L1.tm#ex:lattice-action>
   and Exercise<nbsp><reference|ex:lattice-gff>).
@@ -525,7 +525,7 @@
     follows from Proposition<nbsp><reference|prop:RP> for each mass
     <math|M\<gtr\>0> and <math|\<rho\>\<geq\>0>. (If only the first condition
     holds, the measure may still exist and satisfy the other axioms, but
-    (OS1) in the form of Lecture 1 can fail: for the massless field in
+    (OS1) in the form of Lecture<nbsp>1 can fail: for the massless field in
     <math|d\<geq\>3>, <math|f=\<mathi\>g> with <math|g\<geq\>0> supported in
     a ball of radius <math|R> gives <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|g,C*g|\<rangle\>>>>
     with <math|<around|\<langle\>|g,C*g|\<rangle\>>\<sim\>R<rsup|d+2>>.) It
@@ -540,7 +540,7 @@
     a single atom, as the following example shows.
   </remark>
 
-  <paragraph|Example: two masses.> Let <math|0\<less\>m<rsub|1>\<less\>m<rsub|2>>,
+  <paragraph|Example: two masses> Let <math|0\<less\>m<rsub|1>\<less\>m<rsub|2>>,
   <math|c<rsub|1>,c<rsub|2>\<gtr\>0>, and
 
   <\equation*>
@@ -627,9 +627,9 @@
     P<rsup|-1>=<frac|<around|(|m<rsub|1><rsup|2>-\<Delta\>|)><rsup|-1>-<around|(|m<rsub|2><rsup|2>-\<Delta\>|)><rsup|-1>|m<rsub|2><rsup|2>-m<rsub|1><rsup|2>>,<space|2em><text|i.e.><space|2em>\<rho\>=<frac|\<delta\><rsub|m<rsub|1><rsup|2>>-\<delta\><rsub|m<rsub|2><rsup|2>>|m<rsub|2><rsup|2>-m<rsub|1><rsup|2>>,
   </equation*>
 
-  with a <em|negative> weight at <math|m<rsub|2><rsup|2>>. By
-  <eqref|eq:KL-euclid> and the uniqueness of the Stieltjes transform it is
-  not reflection positive (Exercise<nbsp><reference|ex:two-masses>). It
+  with a <em|negative> weight at <math|m<rsub|2><rsup|2>>.
+  By<nbsp><eqref|eq:KL-euclid> and the uniqueness of the Stieltjes transform
+  it is not reflection positive (Exercise<nbsp><reference|ex:two-masses>). It
   reconstructs at best a theory with an indefinite metric, in which the
   particle of mass <math|m<rsub|2>> is a ghost of negative
   norm<nbsp><cite|PU50|LW69>. More generally, call the Euclidean field
@@ -660,7 +660,7 @@
   locality is also behind Nelson's Markov property of the
   GFF<nbsp><cite|Nel73a>.
 
-  <paragraph|Is the nonlocal theory physical?> In Minkowski space the
+  <paragraph|Physical meaning of the nonlocal theory> In Minkowski space the
   two-mass theory is a perfectly good one. It satisfies all the Wightman
   axioms, including locality (W3): <math|<around|[|\<varphi\><around|(|x|)>,\<varphi\><around|(|y|)>|]>>
   is a sum of free-field commutators and vanishes at spacelike separation.
@@ -726,9 +726,9 @@
 
   <\proof>
     <math|\<bbb-E\><around|[|\<mathe\><rsup|s*X-s<rsup|2>*a/2>\<mathe\><rsup|t*Y-t<rsup|2>*b/2>|]>=\<mathe\><rsup|<frac|1|2>*\<bbb-E\>*<around|(|s*X+t*Y|)><rsup|2>-<frac|1|2>*s<rsup|2>*a-<frac|1|2>*t<rsup|2>*b>=\<mathe\><rsup|s*t*\<bbb-E\>*<around|[|X*Y|]>>>.
-    Expand both sides in powers of <math|s,t> using <eqref|eq:hermite> (the
-    exchange of sum and expectation is justified by Gaussian integrability)
-    and compare coefficients.
+    Expand both sides in powers of <math|s,t> using<nbsp><eqref|eq:hermite>
+    (the exchange of sum and expectation is justified by Gaussian
+    integrability) and compare coefficients.
   </proof>
 
   Fix an even mollifier <math|0\<leq\>\<eta\>\<in\>C<rsup|\<infty\>><rsub|c><around|(|B<around|(|0,1|)>|)>>
@@ -761,8 +761,9 @@
   </theorem>
 
   <\proof>
-    <em|Step 1: a uniform bound.> Let <math|K<around|(|z|)>=1+log<rsub|+><around|(|1/<around|\||z|\|>|)>>
-    if <math|d=2>, <math|K<around|(|z|)>=1+<around|\||z|\|><rsup|2-d>> if
+    <em|Step<nbsp>1: a uniform bound.> Let
+    <math|K<around|(|z|)>=1+log<rsub|+><around|(|1/<around|\||z|\|>|)>> if
+    <math|d=2>, <math|K<around|(|z|)>=1+<around|\||z|\|><rsup|2-d>> if
     <math|d\<geq\>3>, <math|K\<equiv\>1> if <math|d=1>. Then
     <math|0\<less\>G\<leq\>C<rsub|0>*K>, and we claim
     <math|G<rsub|\<varepsilon\>,\<delta\>>\<leq\>C*K> uniformly in
@@ -780,7 +781,7 @@
       G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<leq\><around|\<\|\|\>|\<eta\>|\<\|\|\>><rsub|\<infty\>>*<space|0.17em>r<rsup|-d>*<big|int><rsub|B<around|(|0,6*r|)>>G\<leq\>C*<frac|1|<around|\||B<around|(|0,6*r|)>|\|>>*<big|int><rsub|B<around|(|0,6*r|)>>K\<leq\>C*K<around|(|r|)>\<leq\>C<rprime|'>*K<around|(|z|)>.
     </equation*>
 
-    <em|Step 2: convergence.> By Lemma<nbsp><reference|lem:hermite> and
+    <em|Step<nbsp>2: convergence.> By Lemma<nbsp><reference|lem:hermite> and
     Fubini,
 
     <\equation*>
@@ -794,10 +795,10 @@
     <math|<around|{|<around|\||z|\|>\<geq\>1|}>>. Since
     <math|f,g\<in\>L<rsup|1>\<cap\>L<rsup|\<infty\>>>, dominated convergence
     gives <math|\<bbb-E\><around|[||(>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>)<rsup|2>]=n!<big|iint>f*f*<space|0.17em><around|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>\<to\>0>:
-    the sequence is Cauchy in <math|L<rsup|2>>. The limit covariance is
-    <eqref|eq:wick-cov>. Running the same computation with two different
-    mollifiers shows independence of <math|\<eta\>>. <em|Step 3: divergence.>
-    If <math|n*<around|(|d-2|)>\<geq\>d>, then
+    the sequence is Cauchy in <math|L<rsup|2>>. The limit covariance
+    is<nbsp><eqref|eq:wick-cov>. Running the same computation with two
+    different mollifiers shows independence of <math|\<eta\>>.
+    <em|Step<nbsp>3: divergence.> If <math|n*<around|(|d-2|)>\<geq\>d>, then
     <math|G<rsup|n>\<geq\>c<around|\||z|\|><rsup|-n*<around|(|d-2|)>>> is not
     locally integrable, and Fatou's lemma gives <math|liminf
     \<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<geq\>n!<big|iint>f*f*G<rsup|n>=\<infty\>>.
@@ -829,7 +830,7 @@
     of the Høegh-Krohn model.
   </remark>
 
-  <paragraph|Beyond <math|L<rsup|2>>: no random distribution.> When
+  <paragraph|Beyond <math|L<rsup|2>>: no random distribution> When
   <math|n*<around|(|d-2|)>\<geq\>d> the divergence in
   Theorem<nbsp><reference|thm:wick> is not an artefact of the
   <math|L<rsup|2>> norm: no other topology, and no other choice of
@@ -1018,13 +1019,13 @@
     R¡czka<nbsp><cite|FR77>, using the constructions of Glimm, Jaffe, Feldman
     and Osterwalder. The renormalised cubic term is not a random variable
     under the <math|\<Phi\><rsup|4><rsub|3>> measure<nbsp><cite|ALZ06>; a
-    description of it as a random distribution, and a proof of
-    <eqref|eq:DS-V> for all <math|\<lambda\>\<gtr\>0> in infinite volume, are
-    given in<nbsp><cite|GH21>.
+    description of it as a random distribution, and a proof
+    of<nbsp><eqref|eq:DS-V> for all <math|\<lambda\>\<gtr\>0> in infinite
+    volume, are given in<nbsp><cite|GH21>.
 
     (iii) <em|Point splitting and the operator product expansion.> The
-    nonlinear term in <eqref|eq:DS-V> is a product of distributions at the
-    same point, and the natural way to define it is by point splitting:
+    nonlinear term in<nbsp><eqref|eq:DS-V> is a product of distributions at
+    the same point, and the natural way to define it is by point splitting:
     <math|\<varphi\><rsup|3><around|(|x|)>> is the regular part of
     <math|\<varphi\><around|(|y<rsub|1>|)>*\<varphi\><around|(|y<rsub|2>|)>*\<varphi\><around|(|y<rsub|3>|)>>
     as <math|y<rsub|i>\<to\>x>. Under the GFF, the Wick decomposition of
@@ -1064,9 +1065,9 @@
     <math|P<around|(|\<varphi\>|)><rsub|2>> were obtained by point splitting
     by Schrader<nbsp><cite|Sch74>; the renormalised cube of<nbsp><cite|GH21>
     is approximated in the spirit of the OPE; convergence of the OPE in
-    perturbation theory is proved in<nbsp><cite|HK12>. Lecture 3 describes
-    the OPE at the level of stochastic observables, where the singular
-    coefficients are explicit at every scale.
+    perturbation theory is proved in<nbsp><cite|HK12>. Lecture<nbsp>3
+    describes the OPE at the level of stochastic observables, where the
+    singular coefficients are explicit at every scale.
   </remark>
 
   The DS equation is not only satisfied by the GFF; it characterises it.
@@ -1088,7 +1089,7 @@
   <\proof>
     Fix a real <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> and let
     <math|h=C*f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>, so that <math|A*h=f>.
-    For <math|s\<in\>\<bbb-R\>> apply <eqref|eq:DS-nu> to the real and
+    For <math|s\<in\>\<bbb-R\>> apply<nbsp><eqref|eq:DS-nu> to the real and
     imaginary parts of <math|F<rsub|s><around|(|\<varphi\>|)>=\<mathe\><rsup|\<mathi\>s*\<varphi\><around|(|f|)>>>,
     which belong to <math|\<cal-F\>*C<rsup|\<infty\>><rsub|b>>, using
     <math|D<rsub|h>*F<rsub|s>=\<mathi\>s*<around|\<langle\>|f,C*f|\<rangle\>>*F<rsub|s>>.
@@ -1113,35 +1114,36 @@
   </proof>
 
   <\remark>
-    The integrability assumption is the minimal one needed for
-    <eqref|eq:DS-nu> to make sense, since <math|\<varphi\>*<around|(|A*h|)>>
-    ranges over all <math|\<varphi\><around|(|g|)>>,
-    <math|g\<in\>\<cal-S\><around|(|\<cal-M\>|)>>. Only test functions
-    <math|F=\<mathe\><rsup|\<mathi\>s*\<varphi\><around|(|f|)>>> were used:
-    DS turns into a first-order linear ODE for the characteristic function.
-    For <math|m=0> on the torus no probability measure solves
-    <eqref|eq:DS-nu> (Exercise<nbsp><reference|ex:massless>). For interacting
-    theories, <eqref|eq:DS-V> is a singular nonlinear relation, and
-    uniqueness of its solutions is a hard and largely open problem. In finite
-    dimensions it is easy (Exercise<nbsp><reference|ex:DS-finite>). For a
-    result in this direction for the exponential interaction in <math|d=2>
-    see<nbsp><cite|DGT22>.
+    The integrability assumption is the minimal one needed
+    for<nbsp><eqref|eq:DS-nu> to make sense, since
+    <math|\<varphi\>*<around|(|A*h|)>> ranges over all
+    <math|\<varphi\><around|(|g|)>>, <math|g\<in\>\<cal-S\><around|(|\<cal-M\>|)>>.
+    Only test functions <math|F=\<mathe\><rsup|\<mathi\>s*\<varphi\><around|(|f|)>>>
+    were used: DS turns into a first-order linear ODE for the characteristic
+    function. For <math|m=0> on the torus no probability measure
+    solves<nbsp><eqref|eq:DS-nu> (Exercise<nbsp><reference|ex:massless>). For
+    interacting theories,<nbsp><eqref|eq:DS-V> is a singular nonlinear
+    relation, and uniqueness of its solutions is a hard and largely open
+    problem. In finite dimensions it is easy
+    (Exercise<nbsp><reference|ex:DS-finite>). For a result in this direction
+    for the exponential interaction in <math|d=2> see<nbsp><cite|DGT22>.
   </remark>
 
   <subsection|Outlook>
 
-  In Lecture 3 we obtain the GFF as the stationary marginal of the parabolic
-  and elliptic stochastic quantisation equations, and we decompose it along a
-  scale parameter: the field at resolution <math|t> is a Gaussian martingale,
-  whose terminal value is the GFF. In Lecture 4 interactions are introduced
-  through the Polchinski equation for the effective potential, and through
-  its probabilistic form, a forward\Ubackward stochastic differential
-  equation for the field at increasing resolution. These tools can be used to
-  construct <math|\<Phi\><rsup|4><rsub|2>> and
+  In Lecture<nbsp>3 we obtain the GFF as the stationary marginal of the
+  parabolic and elliptic stochastic quantisation equations, and we decompose
+  it along a scale parameter: the field at resolution <math|t> is a Gaussian
+  martingale, whose terminal value is the GFF. In Lecture<nbsp>4 interactions
+  are introduced through the Polchinski equation for the effective potential,
+  and through its probabilistic form, a forward\Ubackward stochastic
+  differential equation for the field at increasing resolution. These tools
+  can be used to construct <math|\<Phi\><rsup|4><rsub|2>> and
   <math|\<Phi\><rsup|4><rsub|3>>. On <math|\<bbb-T\><rsup|2>> the
   Wick-ordered interaction <math|\<lambda\>*<big|int>:\<varphi\><rsup|4>:\<mathd\>x>
-  suffices, and the measure satisfies the renormalised DS equation
-  <eqref|eq:DS-V>. In <math|d=3> Wick ordering no longer suffices.
+  suffices, and the measure satisfies the renormalised DS
+  equation<nbsp><eqref|eq:DS-V>. In <math|d=3> Wick ordering no longer
+  suffices.
 
   <subsection*|Exercises>
 
@@ -1166,9 +1168,10 @@
       <big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)>\|\<tau\>\|+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>,
     </equation*>
 
-    and derive <eqref|eq:KL-euclid> from <hlink|(1.4)|cqft_notes_L1.tm#eq:KL>.
-    (b) Show that <math|G<rsub|M><around|(|x|)>> is decreasing in <math|M>
-    and, for <math|d\<geq\>2>, that <math|G<rsub|M><around|(|x|)>/G<rsub|m><around|(|x|)>\<to\>1>
+    and derive<nbsp><eqref|eq:KL-euclid> from
+    <hlink|(1.4)|cqft_notes_L1.tm#eq:KL>. (b) Show that
+    <math|G<rsub|M><around|(|x|)>> is decreasing in <math|M> and, for
+    <math|d\<geq\>2>, that <math|G<rsub|M><around|(|x|)>/G<rsub|m><around|(|x|)>\<to\>1>
     as <math|x\<to\>0>. Prove the lower bound in
     Remark<nbsp><reference|rem:KL-euclid>(i). (c) Let <math|d\<geq\>3> and
     suppose <math|S<rsub|2><rsup|T><around|(|x|)>=<around|\||x|\|><rsup|-2*\<Delta\><rsub|\<varphi\>>>>
@@ -1248,10 +1251,10 @@
 
   <\exercise>
     <dueto|Wick's theorem from DS><label|ex:wick-thm> (a) Complete the proof
-    of Lemma<nbsp><reference|lem:gibp>. (b) Derive <eqref|eq:DS-hierarchy>
-    from <eqref|eq:DS>, justifying the use of polynomial <math|F>. (c) Deduce
-    Isserlis\UWick: <math|S<rsub|2*n+1>=0> and
-    <math|S<rsub|2*n><around|(|x<rsub|1>,\<ldots\>,x<rsub|2*n>|)>=<big|sum><rsub|<text|pairings
+    of Lemma<nbsp><reference|lem:gibp>. (b)
+    Derive<nbsp><eqref|eq:DS-hierarchy> from<nbsp><eqref|eq:DS>, justifying
+    the use of polynomial <math|F>. (c) Deduce Isserlis\UWick:
+    <math|S<rsub|2*n+1>=0> and <math|S<rsub|2*n><around|(|x<rsub|1>,\<ldots\>,x<rsub|2*n>|)>=<big|sum><rsub|<text|pairings
     >P><big|prod><rsub|<around|{|i,j|}>\<in\>P>G*<around|(|x<rsub|i>-x<rsub|j>|)>>.
   </exercise>
 
@@ -1274,9 +1277,9 @@
   <\exercise>
     <dueto|The massless case><label|ex:massless> (a) Show that for <math|m=0>
     on <math|\<bbb-T\><rsup|d>> no probability measure on
-    <math|\<cal-S\><rprime|'><around|(|\<bbb-T\><rsup|d>|)>> satisfies
-    <eqref|eq:DS-nu> with <math|A=-\<Delta\>>. <em|Hint:> take <math|h=1>.
-    (b) Show that the massless GFF exists on the quotient
+    <math|\<cal-S\><rprime|'><around|(|\<bbb-T\><rsup|d>|)>>
+    satisfies<nbsp><eqref|eq:DS-nu> with <math|A=-\<Delta\>>. <em|Hint:> take
+    <math|h=1>. (b) Show that the massless GFF exists on the quotient
     <math|\<cal-S\><rprime|'><around|(|\<bbb-T\><rsup|d>|)>/\<bbb-R\>> (test
     functions with <math|<big|int>f=0>), and characterise it by DS there. (c)
     On <math|\<bbb-R\><rsup|2>>, show that
@@ -1307,7 +1310,7 @@
     and check that the empirical variance of <math|\<varphi\><rsub|u>> grows
     like <math|<frac|1|2*\<pi\>>*log N>. (b) Implement an explicit Euler
     scheme for the lattice version of <hlink|(4.1)|cqft_lecture3.tm#eq:SQE>
-    in Lecture 3 with <math|V=0> (mind the stability constraint
+    in Lecture<nbsp>3 with <math|V=0> (mind the stability constraint
     <math|\<Delta\>*t\<lesssim\>\<varepsilon\><rsup|2>>), and check that the
     variance of the <math|k>-th Fourier mode relaxes to
     <math|\<lambda\><rsub|k><rsup|-1>> at rate <math|2*\<lambda\><rsub|k>>,
@@ -1353,22 +1356,23 @@
 
   <section*|References and further reading>
 
-  <paragraph|Guide.> <em|Gaussian fields and Wick calculus:>
-  <cite|GV64|Bog98|Jan97|She07|LSSW16|BP25>. <em|Nonexistence of Wick powers
-  beyond <math|L<rsup|2>> and chaos inequalities:>
-  <cite|AL07|PZ32|CW01|NP05|AZ96>. <em|Euclidean free field and Markov
-  property:> <cite|Sym66|Sym69|Nel73a|Nel73b|GRS75|GJ87|Sim74|Gue06>.
-  <em|Path and loop representations:> <cite|Sym69|BFS82|Dyn84|LW04|LJ10|LJ11|Lup16|Wer16|QW19|WP21>.
-  <em|Stochastic quantisation (Lecture 3):> reviews <cite|DH87|DH88|Gub25>;
-  parabolic <cite|PW81|JLM85|AR91|DPD03|DPZ14>; singular SPDEs
-  <cite|Hai14|GIP15|CC18|MW17|HRW12>; construction of
-  <math|\<Phi\><rsup|4><rsub|3>> via dynamics and variational methods
-  <cite|GH21|BG20>; Euclidean field equations and DS equations for
-  <math|P<around|(|\<varphi\>|)><rsub|2>> <cite|DG74|AR91>, for
-  <math|\<Phi\><rsup|4><rsub|3>> <cite|FR77|ALZ06|GH21>, and for the
-  exponential model in <math|d=2> <cite|DGT22>; operator product expansion
-  and composite operators <cite|Wil69|Zim73|Sch74|HK12>; elliptic stochastic
-  quantisation and dimensional reduction <cite|PS79|KLP84|ADG20|ADG21|GH19>.
+  <paragraph|Guide> <em|Gaussian fields and Wick
+  calculus:><nbsp><cite|GV64|Bog98|Jan97|She07|LSSW16|BP25>. <em|Nonexistence
+  of Wick powers beyond <math|L<rsup|2>> and chaos
+  inequalities:><nbsp><cite|AL07|PZ32|CW01|NP05|AZ96>. <em|Euclidean free
+  field and Markov property:><nbsp><cite|Sym66|Sym69|Nel73a|Nel73b|GRS75|GJ87|Sim74|Gue06>.
+  <em|Path and loop representations:><nbsp><cite|Sym69|BFS82|Dyn84|LW04|LJ10|LJ11|Lup16|Wer16|QW19|WP21>.
+  <em|Stochastic quantisation (Lecture<nbsp>3):>
+  reviews<nbsp><cite|DH87|DH88|Gub25>; parabolic<nbsp><cite|PW81|JLM85|AR91|DPD03|DPZ14>;
+  singular SPDEs<nbsp><cite|Hai14|GIP15|CC18|MW17|HRW12>; construction of
+  <math|\<Phi\><rsup|4><rsub|3>> via dynamics and variational
+  methods<nbsp><cite|GH21|BG20>; Euclidean field equations and DS equations
+  for <math|P<around|(|\<varphi\>|)><rsub|2>><nbsp><cite|DG74|AR91>, for
+  <math|\<Phi\><rsup|4><rsub|3>><nbsp><cite|FR77|ALZ06|GH21>, and for the
+  exponential model in <math|d=2><nbsp><cite|DGT22>; operator product
+  expansion and composite operators<nbsp><cite|Wil69|Zim73|Sch74|HK12>;
+  elliptic stochastic quantisation and dimensional
+  reduction<nbsp><cite|PS79|KLP84|ADG20|ADG21|GH19>.
 
   \ 
 
@@ -2056,11 +2060,11 @@
       <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Example: two
-      masses. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      masses <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>>
 
-      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Is the
-      nonlocal theory physical? <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Physical
+      meaning of the nonlocal theory <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>>
 
       <with|par-left|<quote|1tab>|3.3<space|2spc>Local operators: Wick
@@ -2068,7 +2072,7 @@
       <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Beyond
-      <with|mode|<quote|math>|L<rsup|2>>: no random distribution.
+      <with|mode|<quote|math>|L<rsup|2>>: no random distribution
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>>
 
@@ -2089,7 +2093,7 @@
       and further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14><vspace|0.5fn>
 
-      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Guide.
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Guide
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15>>>
     </associate>

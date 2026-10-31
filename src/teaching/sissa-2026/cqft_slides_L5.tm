@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -24,8 +24,8 @@
 
         <small|Massimiliano Gubinelli \| University of Oxford>
 
-        <small|<with|color|dark grey|SISSA lectures, Lecture 5 (provisional)
-        \V notes: Lecture 5, ŸŸ12\U14>>
+        <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>5
+        (provisional) \V notes: Lecture<nbsp>5, ŸŸ10\U12>>
 
         \;
       </with>
@@ -35,7 +35,7 @@
 
     \;
 
-    <with|font-series|bold|Lecture 4.> Interacting field at resolution
+    <with|font-series|bold|Lecture<nbsp>4.> Interacting field at resolution
     <math|t> = solution of the FBSDE
 
     <\equation*>
@@ -46,7 +46,7 @@
     the forward equation has no drift and the trees are integrated exactly;
     the backward half is the <strong|Wetterich equation>.
 
-    <with|font-series|bold|Lectures 5\U7.> Construct
+    <with|font-series|bold|Lectures<nbsp>5\U7.> Construct
     <math|\<Phi\><rsup|4><rsub|3>> on <math|\<bbb-T\><rsup|3>> with this
     FBSDE:
 
@@ -57,10 +57,10 @@
 
       <item><strong|a priori estimates> for the exact FBSDE in the
       coordinates of <math|<wide|\<Gamma\>|\<bar\>><rsub|q>>, uniform in the
-      lattice (Lecture 6);
+      lattice (Lecture<nbsp>6);
 
-      <item><strong|removing the cutoffs> and identifying the limit (Lecture
-      7).
+      <item><strong|removing the cutoffs> and identifying the limit
+      (Lecture<nbsp>7).
     </enumerate>
 
     <with|par-mode|right|<small|<with|color|dark grey|G., course notes on
@@ -112,7 +112,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 5>
+    <with|color|dark grey|Lecture<nbsp>5>
 
     \;
   </hidden>|<\hidden>
@@ -129,7 +129,7 @@
       K<rsub|q>=q-\<Delta\>,<space|2em>C<rsub|q>=K<rsub|q><rsup|-1>,<space|2em>C=C<rsub|q<rsub|0>>=<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>.
     </equation*>
 
-    In Lecture 3 notation (<math|T=\<infty\>>, and
+    In Lecture<nbsp>3 notation (<math|T=\<infty\>>, and
     <math|<wide|Q|\<dot\>>=\<partial\><rsub|q>*Q<rsub|q>>):
 
     <\equation*>
@@ -160,8 +160,8 @@
     </equation*>
 
     <math|\<gamma\>=3*\<lambda\>>, so <math|D<rsup|2>*U<around|(|y|)>=\<gamma\>*y<rsup|2>>
-    (not the counterterm <math|\<gamma\><rsub|T>> of Lecture 4). The Wick
-    ordering is now part of <math|\<mu\><rsub|N>>.
+    (not the counterterm <math|\<gamma\><rsub|T>> of Lecture<nbsp>4). The
+    Wick ordering is now part of <math|\<mu\><rsub|N>>.
 
     <\theorem*>
       <dueto|informal>For <math|q<rsub|0>> large: explicit
@@ -220,7 +220,7 @@
         \<mathd\>\<Phi\><rsub|q>=C<rsub|q><rsup|2>*F<rsub|q><space|0.17em>\<mathd\>q+C<rsub|q><space|0.17em>\<mathd\>W<rsub|q>,<space|2em>F<rsub|q>=\<bbb-E\><rsub|q>*<around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>,<space|2em>\<psi\><rsub|q>=\<Phi\><rsub|q>+C<rsub|q>*F<rsub|q>,
       </equation*>
 
-      i.e. the FBSDE of Lecture 4 for the mass profile.
+      i.e. the FBSDE of Lecture<nbsp>4 for the mass profile.
       <math|<math-up|Cov><rsub|q>> is the response
       <math|H<rsup|<math-up|ex>><rsub|q><around|(|\<psi\><rsub|q>|)>>.
     </proposition*>
@@ -233,7 +233,7 @@
       (posterior with source <math|p>), at
       <math|p=K<rsub|q>*\<Phi\><rsub|q>>.
 
-      <item>Same law as Lecture 4: both are the Gaussian law tilted by
+      <item>Same law as Lecture<nbsp>4: both are the Gaussian law tilted by
       <math|\<mathe\><rsup|-V<rsub|N>>/\<cal-Z\><rsub|N>> of the terminal
       field; <math|\<sigma\><around|(|P|)>=\<sigma\><around|(|\<Phi\>|)>>.
     </itemize>
@@ -285,13 +285,13 @@
 
     <\itemize>
       <item>Up to a function of <math|q>, <math|\<Gamma\><rsub|q>> is the
-      <math|\<Gamma\><rsub|t>> of Lecture 4;
+      <math|\<Gamma\><rsub|t>> of Lecture<nbsp>4;
       <math|\<Gamma\><rsub|q>+<frac|1|2>*<around|\<langle\>|y,K<rsub|q<rsub|0>>*y|\<rangle\>>>
       is the effective average action with regulator
       <math|\<cal-R\><rsub|q>=q-q<rsub|0>>.
 
       <item>Coordinates: <math|\<Phi\><rsub|q>=\<psi\><rsub|q>+C<rsub|q>*D*\<Gamma\><rsub|q><around|(|\<psi\><rsub|q>|)>>
-      (Lecture 4, <math|x=\<psi\>+S*<with|math-font|cal*|F><around|(|\<psi\>|)>>).
+      (Lecture<nbsp>4, <math|x=\<psi\>+S*\<cal-F\><around|(|\<psi\>|)>>).
     </itemize>
 
     <\proposition*>
@@ -351,8 +351,9 @@
       coefficients <math|b,H> built from <math|<wide|\<Gamma\>|\<bar\>>>.
 
       <item><math|Z>: backward. The terminal condition
-      <math|q*Z<rsub|q>\<to\>0> is <strong|proved> at fixed <math|N> (Lecture
-      7), because <math|<wide|\<Gamma\>|\<bar\>><rsub|q>\<to\>> bare action.
+      <math|q*Z<rsub|q>\<to\>0> is <strong|proved> at fixed <math|N>
+      (Lecture<nbsp>7), because <math|<wide|\<Gamma\>|\<bar\>><rsub|q>\<to\>>
+      bare action.
 
       <item>The only source of <math|Z> is the drift <math|b>, the gradient
       of the defect, transported by <math|exp <big|int>H>.
@@ -368,7 +369,7 @@
     Needed: (i) a defect integrable against the backward propagator
     (<strong|renormalisation>); (ii) global coercivity of
     <math|<wide|\<Gamma\>|\<bar\>>> (<strong|large fields>); (iii) a priori
-    estimates (Lecture 6).
+    estimates (Lecture<nbsp>6).
   </hidden>|<\hidden>
     <mytitle|The structure of the construction>
 
@@ -459,7 +460,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 5>
+    <with|color|dark grey|Lecture<nbsp>5>
 
     \;
   </hidden>|<\hidden>
@@ -509,9 +510,10 @@
 
     \;
 
-    <with|font-series|bold|Seed> (one loop, Lecture 4, Ex. 8.7(b)): replace
-    <math|D<rsup|2>*\<Gamma\>> by <math|D<rsup|2>*U=\<gamma\>*y<rsup|2>> and
-    integrate from <math|q=\<infty\>>,
+    <with|font-series|bold|Seed> (one loop, Lecture<nbsp>4, Ex. 8.7(b)):
+    replace <math|D<rsup|2>*\<Gamma\>> by
+    <math|D<rsup|2>*U=\<gamma\>*y<rsup|2>> and integrate from
+    <math|q=\<infty\>>,
 
     <\equation*>
       \<cal-L\><rsub|q><around|(|y|)>=<tfrac|1|2><math-up|Tr><around*|[|log
@@ -525,11 +527,11 @@
     quadratic path,
 
     <\equation*>
-      <with|math-font|cal*|T><rsub|q><around|[|M,h|]>=<tfrac|1|2><math-up|Tr><around*|[|<around|(|K<rsub|q>+M<rsub|q>+D<rsup|2>*<around|(|U+h|)>|)><rsup|-1>-<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>|]>,
+      \<cal-T\><rsub|q><around|[|M,h|]>=<tfrac|1|2><math-up|Tr><around*|[|<around|(|K<rsub|q>+M<rsub|q>+D<rsup|2>*<around|(|U+h|)>|)><rsup|-1>-<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>|]>,
     </equation*>
 
     <\equation*>
-      h<rsup|<around|[|0|]>>=\<cal-L\>,<space|2em>h<rsup|<around|[|j+1|]>><rsub|q>=\<cal-L\><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>*<around*|(|<with|math-font|cal*|T><rsub|s><around|[|M,h<rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>*\<cal-L\><rsub|s>|)>\<mathd\>s,<space|1em>j=0,1,
+      h<rsup|<around|[|0|]>>=\<cal-L\>,<space|2em>h<rsup|<around|[|j+1|]>><rsub|q>=\<cal-L\><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>*<around*|(|\<cal-T\><rsub|s><around|[|M,h<rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>*\<cal-L\><rsub|s>|)>\<mathd\>s,<space|1em>j=0,1,
     </equation*>
 
     <\equation*>
@@ -574,7 +576,7 @@
 
     \;
 
-    The two divergent self-energies of Lecture 4 Ÿ10.2:
+    The two divergent self-energies of Lecture<nbsp>4 Ÿ10.2:
 
     <\itemize>
       <item><strong|Tadpole>: <math|-\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|\<infty\>><math-up|Tr>R<rsub|0,q><rsup|2><space|0.17em>\<mathd\>q\<approx\>-3*\<lambda\><math-up|Tr>C\<sim\>-N>.
@@ -629,7 +631,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 5>
+    <with|color|dark grey|Lecture<nbsp>5>
 
     \;
   </hidden>|<\hidden>
@@ -726,7 +728,7 @@
         <math|b<rsup|<math-up|l>>> is as large as the whole drift, but
         <strong|supported on large fields>. It is controlled by how often the
         actual dynamics visits them: <math|<big|int>q<rsup|-3/2>*\<gamma\><around|\<\|\|\>|t<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|6><rsup|6><space|0.17em>\<mathd\>q>
-        (Lecture 6).
+        (Lecture<nbsp>6).
       </myframed>
     </with>
   </hidden>|<\hidden>

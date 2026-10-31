@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -22,8 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 3 \V notes:
-      Lecture 3, ŸŸ4\U6>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>3 \V notes:
+      Lecture<nbsp>3, ŸŸ4\U6>>
 
       \;
     </with>
@@ -63,7 +63,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 3>
+    <with|color|dark grey|Lecture<nbsp>3>
 
     \;
   </hidden>|<\hidden>
@@ -168,7 +168,7 @@
 
     <with|font-series|bold|(b)> Mild form from the semigroup identity
     <math|K<rsub|t,h>=K<rsub|s,\<mathe\><rsup|-<around|(|t-s|)>*A>h>+<with|math-font|Bbb|1><rsub|<around|(|s,t|)>>\<mathe\><rsup|-<around|(|t-\<cdummy\>|)>*A>h>;
-    weak form by stochastic Fubini (Exercise 4.3).
+    weak form by stochastic Fubini (Exercise<nbsp>4.3).
 
     <with|font-series|bold|(c)> By independence,
 
@@ -220,7 +220,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 3>
+    <with|color|dark grey|Lecture<nbsp>3>
 
     \;
   </hidden>|<\hidden>
@@ -319,9 +319,10 @@
     <tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<table|<row|<cell|<math|<around|(|k,p|)>>>|<cell|slice
     covariance>|<cell|interpretation>>|<row|<cell|<math|<around|(|1,1|)>>>|<cell|<math|<frac|1|2>*A<rsup|-1/2>>>|<cell|time-zero
     field, <math|<around|(|2*\<omega\>|)><rsup|-1>>>>|<row|<cell|<math|<around|(|2,2|)>>>|<cell|<math|<around|(|4*\<pi\>|)><rsup|-1>*A<rsup|-1>>>|<cell|elliptic
-    stochastic quantisation>>|<row|<cell|parabolic>|<cell|<math|2*<around|(|-\<partial\><rsub|t><rsup|2>+A<rsup|2>|)><rsup|-1>\<to\>A<rsup|-1>>>|<cell|Langevin
+    stochastic quantisation>>|<row|<cell|<math|<around|(|1,1|)>,
+    A\<to\>A<rsup|2>>>|<cell|<math|2*<around|(|-\<partial\><rsub|t><rsup|2>+A<rsup|2>|)><rsup|-1>\<to\>A<rsup|-1>>>|<cell|Langevin
     dynamics>>|<row|<cell|<math|<around|(|1,2|)>>>|<cell|<math|\<propto\>A<rsup|-3/2>>>|<cell|not
-    a GFF (e.g. codim-1 slices of the elliptic field)>>>>>
+    a GFF>>>>>
 
     The GFF arises iff <math|p=1+<frac|k|2>>. For
     <math|\<cal-M\>=\<bbb-R\><rsup|d>>, every codimension-two slice of the
@@ -361,7 +362,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 3>
+    <with|color|dark grey|Lecture<nbsp>3>
 
     \;
   </hidden>|<\hidden>
@@ -429,7 +430,7 @@
     <math|X<rsub|t>=<big|sum><rsub|n><around*|(|<big|int><rsub|0><rsup|t><wide|q|\<dot\>><rsub|n><around|(|s|)><rsup|1/2>\<mathd\>B<rsup|n><rsub|s>|)>*e<rsub|n>>:
     independent Gaussian martingales, variance
     <math|q<rsub|n><around|(|t|)>*\<uparrow\>*q<rsub|n><around|(|\<infty\>|)>>;
-    then as in Lecture 2.
+    then as in Lecture<nbsp>2.
   </hidden>|<\hidden>
     <mytitle|The field at resolution <math|t>: a picture>
 
@@ -465,13 +466,11 @@
       perfectly good family of estimates.
     </itemize>
 
-    <\myframed>
-      <strong|Asymptotic uniqueness>
-
-      (a) <math|<around|\<\|\|\>|O<rsup|1><rsub|t>-O<rsup|2><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0\<Rightarrow\>O<rsup|1>=O<rsup|2>>.<space|1em>(b)
+    <\lemma*>
+      <dueto|Asymptotic uniqueness>(a) <math|<around|\<\|\|\>|O<rsup|1><rsub|t>-O<rsup|2><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0\<Rightarrow\>O<rsup|1>=O<rsup|2>>.<space|1em>(b)
       <math|N> adapted, <math|<around|\<\|\|\>|N<rsub|t>-O<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0\<Rightarrow\>O<rsub|s>=lim<rsub|t>
       \<bbb-E\><rsub|s>*N<rsub|t>>.
-    </myframed>
+    </lemma*>
 
     <with|font-series|bold|Proof.> <math|\<bbb-E\><rsub|s>> is an
     <math|L<rsup|1>> contraction.
@@ -498,7 +497,7 @@
 
         <item>An <strong|observable> <math|=> a class containing a
         martingale; its members are <em|descriptions>, the martingale is the
-        canonical one.
+        canonical representative.
       </itemize>
 
       <strong|Random variables sit inside.> For
@@ -535,7 +534,8 @@
       \<bbb-E\><around|\||B<rsub|t><rsup|2>-t|\|>=t*\<bbb-E\><around|\||Z<rsup|2>-1|\|>\<longrightarrow\>\<infty\>,<space|2em>Z\<sim\>N<around|(|0,1|)>.
     </equation*>
 
-    They sum up to the exponential martingale (<math|\<lambda\>\<neq\>0>):
+    They sum up to the exponential martingale
+    (<math|\<lambda\>\<in\>\<bbb-R\>, \<lambda\>\<neq\>0>):
 
     <\equation*>
       Z<rsub|t>=\<mathe\><rsup|\<lambda\>*B<rsub|t>-\<lambda\><rsup|2>*t/2>=<big|sum><rsub|n\<geq\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>Z<rsub|t>\<to\>0<text|
@@ -554,15 +554,18 @@
   </hidden>|<\hidden>
     <mytitle|Repair by the future drift>
 
-    <strong|Proposition.> Let <math|N<rsub|t>=N<rsub|0>+<big|int><rsub|0><rsup|t>\<beta\><rsub|s>*\<mathd\>s+M<rsub|t>>,
-    with <math|M> a martingale and <math|\<bbb-E\><big|int><rsub|0><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<less\>\<infty\>>.
-    The only observable with <math|<around|\<\|\|\>|N<rsub|t>-O<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>
-    is
+    <\proposition*>
+      Let <math|N<rsub|t>=N<rsub|0>+<big|int><rsub|0><rsup|t>\<beta\><rsub|s>*\<mathd\>s+M<rsub|t>>,
+      with <math|N<rsub|0>\<in\>L<rsup|1>>, <math|M> a martingale and
+      <math|\<bbb-E\><big|int><rsub|0><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<less\>\<infty\>>.
+      The only observable with <math|<around|\<\|\|\>|N<rsub|t>-O<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>
+      is
 
-    <\equation*>
-      O<rsub|t>=N<rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|t><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s|]><space|2em><text|(the
-      expected drift still to come).>
-    </equation*>
+      <\equation*>
+        O<rsub|t>=N<rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|t><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s|]><space|2em><text|(the
+        expected drift still to come).>
+      </equation*>
+    </proposition*>
 
     <strong|Proof.> <math|O<rsub|t>=N<rsub|0>+M<rsub|t>+\<bbb-E\><rsub|t><big|int><rsub|0><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s>
     is a martingale, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>;
@@ -580,9 +583,9 @@
     </equation*>
 
     <\myframed>
-      This is the germ of the forward\Ubackward equations: in Lecture 4 the
-      forecast <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>*\<Phi\><rsub|T>> is
-      the field plus the expected drift still to come.
+      This is the germ of the forward\Ubackward equations: in Lecture<nbsp>4
+      the forecast <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>*\<Phi\><rsub|T>>
+      is the field plus the expected drift still to come.
     </myframed>
   </hidden>|<\hidden>
     <mytitle|A delta at a Brownian endpoint>
@@ -663,7 +666,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 3>
+    <with|color|dark grey|Lecture<nbsp>3>
 
     \;
   </hidden>|<\hidden>
@@ -689,7 +692,7 @@
     <math|<around|(|<frac|1|2>*\<partial\><rsub|a><rsup|2>+\<partial\><rsub|c>|)>*H<rsub|n>*<space|0.17em><wide|c|\<dot\>><rsub|t>=0>.
 
     <\itemize>
-      <item>Lecture 2: <math|:\<varphi\><rsup|n>>: exists iff
+      <item>Lecture<nbsp>2: <math|:\<varphi\><rsup|n>>: exists iff
       <math|n*<around|(|d-2|)>\<less\>d>. As <strong|observables>, Wick
       powers exist in every <math|d>, unsmeared.
 
@@ -734,31 +737,33 @@
     <mytitle|Brownian deltas at different targets>
 
     <\with|font-size|0.9>
-      For <math|y\<neq\>z>, <math|t\<less\>T>, <math|m=<frac|y+z|2>> and
-      <math|c<rsub|s>=<around|(|4*\<pi\>*s|)><rsup|-1/2>>, the product is
-      exact:
+      For <math|y\<neq\>z>, <math|t\<less\>T>,
+      <math|<wide|y|\<bar\>>=<frac|y+z|2>> and
+      <math|\<kappa\><rsub|s>=<around|(|4*\<pi\>*s|)><rsup|-1/2>>, the
+      product is exact:
 
       <\equation*>
-        \<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-m|)>.
+        \<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>=\<kappa\><rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T-t|)>/2><around|(|B<rsub|t>-<wide|y|\<bar\>>|)>.
       </equation*>
 
       <strong|Proof.> Complete the square:
-      <math|<around|(|B<rsub|t>-y|)><rsup|2>+<around|(|B<rsub|t>-z|)><rsup|2>=2*<around|(|B<rsub|t>-m|)><rsup|2>+<frac|<around|(|y-z|)><rsup|2>|2>>,
-      and use <math|<around|(|2*\<pi\>*<around|(|T-t|)>|)><rsup|-1>=c<rsub|T-t>*<around|(|\<pi\>*<around|(|T-t|)>|)><rsup|-1/2>>.
+      <math|<around|(|B<rsub|t>-y|)><rsup|2>+<around|(|B<rsub|t>-z|)><rsup|2>=2*<around|(|B<rsub|t>-<wide|y|\<bar\>>|)><rsup|2>+<frac|<around|(|y-z|)><rsup|2>|2>>,
+      and use <math|<around|(|2*\<pi\>*<around|(|T-t|)>|)><rsup|-1>=\<kappa\><rsub|T-t>*<around|(|\<pi\>*<around|(|T-t|)>|)><rsup|-1/2>>.
 
       The product is <math|\<geq\>0>, so its expectation is its
       <math|L<rsup|1>> norm (<math|B<rsub|t>\<sim\>N<around|(|0,t|)>>):
 
       <\equation*>
-        <around|\<\|\|\>|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>=c<rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T+t|)>/2><around|(|m|)>\<longrightarrow\>0<space|1em><around|(|t\<uparrow\>T|)>.
+        <around|\<\|\|\>|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>=\<kappa\><rsub|T-t>*\<mathe\><rsup|-<around|(|y-z|)><rsup|2>/4*<around|(|T-t|)>>*p<rsub|<around|(|T+t|)>/2><around|(|<wide|y|\<bar\>>|)>\<longrightarrow\>0<space|1em><around|(|t\<uparrow\>T|)>.
       </equation*>
 
       So <math|\<Pi\><rsup|y><rsub|t>*\<Pi\><rsup|z><rsub|t>\<sim\>0>: the
       zero observable is the martingale in its class, hence
       <math|\<Pi\><rsup|y>\<star\>\<Pi\><rsup|z>=0> for <math|y\<neq\>z>. At
       <math|y=z> the exponential suppression disappears,
-      <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=c<rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<to\>\<infty\>>,
-      and no martingale is in the class: it would have constant expectation.
+      <math|\<bbb-E\>*<around|(|\<Pi\><rsup|y><rsub|t>|)><rsup|2>=\<kappa\><rsub|T-t>*p<rsub|<around|(|T+t|)>/2><around|(|y|)>\<to\>\<infty\>>,
+      and no martingale is in the class: its constant expectation would have
+      to be this divergent limit.
 
       <\myframed>
         The product depends dramatically on whether the singular supports
@@ -770,30 +775,30 @@
     <mytitle|Brownian OPE: resolve the delta square>
 
     Fine resolution <math|u=T-\<varepsilon\>>, coarse resolution
-    <math|s\<less\>u>, <math|c<rsub|\<varepsilon\>>=<around|(|4*\<pi\>*\<varepsilon\>|)><rsup|-1/2>>.
-    Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=c<rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
+    <math|s\<less\>u>, <math|\<kappa\><rsub|\<varepsilon\>>=<around|(|4*\<pi\>*\<varepsilon\>|)><rsup|-1/2>>.
+    Since <math|p<rsub|\<varepsilon\>><around|(|w|)><rsup|2>=\<kappa\><rsub|\<varepsilon\>>*p<rsub|\<varepsilon\>/2><around|(|w|)>>,
     Chapman\UKolmogorov gives the exact identity
 
     <\equation*>
-      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*p<rsub|T-s-\<varepsilon\>/2><around|(|B<rsub|s>-y|)>.
+      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=\<kappa\><rsub|\<varepsilon\>>*p<rsub|T-s-\<varepsilon\>/2><around|(|B<rsub|s>-y|)>.
     </equation*>
 
     Taylor expand in the time variable, with
     <math|\<partial\><rsub|\<tau\>>*p<rsub|\<tau\>>=<frac|1|2>*\<partial\><rsub|y><rsup|2>*p<rsub|\<tau\>>>:
 
     <\equation*>
-      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|s>-<frac|\<varepsilon\>*c<rsub|\<varepsilon\>>|4>*\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y><rsub|s>+<frac|\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>|32>*\<partial\><rsub|y><rsup|4>*\<Pi\><rsup|y><rsub|s>+O<rsub|L<rsup|1>,s><around|(|\<varepsilon\><rsup|5/2>|)>.
+      \<bbb-E\><rsub|s><around*|[|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>|]>=\<kappa\><rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|s>-<frac|\<varepsilon\>*\<kappa\><rsub|\<varepsilon\>>|4>*\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y><rsub|s>+<frac|\<varepsilon\><rsup|2>*\<kappa\><rsub|\<varepsilon\>>|32>*\<partial\><rsub|y><rsup|4>*\<Pi\><rsup|y><rsub|s>+O<rsub|L<rsup|1>,s><around|(|\<varepsilon\><rsup|5/2>|)>.
     </equation*>
 
     <\itemize>
-      <item>Singular coefficients (<math|c<rsub|\<varepsilon\>>\<to\>\<infty\>>;
-      <math|\<varepsilon\>*c<rsub|\<varepsilon\>>,\<varepsilon\><rsup|2>*c<rsub|\<varepsilon\>>\<to\>0>)
+      <item>Singular coefficients (<math|\<kappa\><rsub|\<varepsilon\>>\<to\>\<infty\>>;
+      <math|\<varepsilon\>*\<kappa\><rsub|\<varepsilon\>>,\<varepsilon\><rsup|2>*\<kappa\><rsub|\<varepsilon\>>\<to\>0>)
       times observables <math|\<Pi\><rsup|y>,\<partial\><rsub|y><rsup|2>*\<Pi\><rsup|y>,\<ldots\>>:
       an <strong|operator product expansion>.
 
       <item>The order of limits matters: fixed coarse resolution <math|s>,
       then <math|\<varepsilon\>\<downarrow\>0>. Without conditioning,
-      <math|<around|\<\|\|\>|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>-c<rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|\<\|\|\>><rsub|L<rsup|1>>\<asymp\>\<varepsilon\><rsup|-1/2>>.
+      <math|<around|\<\|\|\>|<around|(|\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|)><rsup|2>-\<kappa\><rsub|\<varepsilon\>>*\<Pi\><rsup|y><rsub|T-\<varepsilon\>>|\<\|\|\>><rsub|L<rsup|1>>\<asymp\>\<varepsilon\><rsup|-1/2>>.
     </itemize>
   </hidden>|<\hidden>
     <mytitle|Products of point evaluations>
@@ -890,7 +895,8 @@
 
     <\itemize>
       <item><strong|Stochastic quantisation>: the GFF is the stationary
-      marginal of parabolic and elliptic Langevin dynamics.
+      marginal of the parabolic Langevin dynamics and the one-point marginal
+      of the elliptic SPDE.
 
       <item>The GFF is the terminal value of a martingale <math|X<rsub|t>> of
       smooth fields; <strong|observables are martingales>, possibly without
@@ -903,8 +909,8 @@
     <\myframed>
       <strong|Next>
 
-      Lecture 4: interactions, the Polchinski equation and its FBSDE, the
-      Wetterich equation.
+      Lecture<nbsp>4: interactions, the Polchinski equation and its FBSDE,
+      the Wetterich equation.
     </myframed>
   </hidden>|<\hidden>
     <mytitle|Exercises and reading>

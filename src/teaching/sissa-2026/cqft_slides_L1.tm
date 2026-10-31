@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -22,8 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 1 \V notes:
-      Lecture 1, ŸŸ1\U2>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>1 \V notes:
+      Lecture<nbsp>1, ŸŸ1\U2>>
 
       \;
     </with>
@@ -108,7 +108,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 1>
+    <with|color|dark grey|Lecture<nbsp>1>
 
     \;
   </hidden>|<\hidden>
@@ -475,7 +475,7 @@
       </equation*>
 
       <item>Wick ordering <math|:\<varphi\><rsub|R><rsup|2>\<assign\>\<varphi\><rsub|R><rsup|2>-<around|\<langle\>|\<Omega\>,\<varphi\><rsub|R><rsup|2>*\<Omega\>|\<rangle\>>>
-      removes exactly this divergence (Exercise 1.7).
+      removes exactly this divergence (Exercise<nbsp>1.7).
     </itemize>
   </hidden>|<\hidden>
     <mytitle|Interactions: three problems>
@@ -512,7 +512,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 1>
+    <with|color|dark grey|Lecture<nbsp>1>
 
     \;
   </hidden>|<\hidden>
@@ -730,7 +730,8 @@
       A sample of the stationary OU process, <math|m=1>.
     </cell>>>>>
 
-    <with|par-mode|right|<small|<with|color|dark grey|Notes, Exercise 2.2>>>
+    <with|par-mode|right|<small|<with|color|dark grey|Notes,
+    Exercise<nbsp>2.2>>>
   </hidden>|<\hidden>
     <mytitle|The space-time lattice>
 
@@ -820,7 +821,7 @@
       <item>Nearest-neighbour <math|\<Rightarrow\>> <strong|reflection
       positive>: the Euclidean shadow of <math|\<mathe\><rsup|-\<varepsilon\>*H>\<geq\>0>.
       Conversely, RP <math|\<Rightarrow\>> Hilbert space and <math|H\<geq\>0>
-      (Exercises 2.5, 2.7).
+      (Exercises<nbsp>2.5, 2.7).
     </itemize>
   </hidden>|<\hidden>
     <mytitle|A dictionary>

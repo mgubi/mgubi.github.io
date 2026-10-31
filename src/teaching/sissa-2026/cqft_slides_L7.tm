@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
 
@@ -22,8 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture 7 (provisional) \V
-      notes: Lecture 7, ŸŸ18\U20>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>7
+      (provisional) \V notes: Lecture<nbsp>7, ŸŸ16\U18>>
 
       \;
     </with>
@@ -32,7 +32,7 @@
 
     \;
 
-    Lecture 6, at every lattice <math|N> and upper scale <math|T>:
+    Lecture<nbsp>6, at every lattice <math|N> and upper scale <math|T>:
 
     <\equation*>
       <around|\<\|\|\>|E<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|J<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|\<gamma\>>*<around*|(|1+p<rsup|5>+\<delta\><rsub|N,T,p>|)>,<space|2em>\<delta\><rsub|N,T,p>=<around|\<\|\|\>|T*Z<rsub|T>|\<\|\|\>><rsup|2><rsub|L<rsup|2*p><around|(|\<bbb-P\>;L<rsup|2>|)>>.
@@ -67,7 +67,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 7>
+    <with|color|dark grey|Lecture<nbsp>7>
 
     \;
   </hidden>|<\hidden>
@@ -148,7 +148,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 7>
+    <with|color|dark grey|Lecture<nbsp>7>
 
     \;
   </hidden>|<\hidden>
@@ -234,7 +234,7 @@
 
     <vspace|0.3cm>
 
-    <with|color|dark grey|Lecture 7>
+    <with|color|dark grey|Lecture<nbsp>7>
 
     \;
   </hidden>|<\hidden>
@@ -308,9 +308,9 @@
       </equation*>
     </lemma*>
 
-    Lecture 4: conditional variance is resolved at rate
-    <math|<math-up|Cov><rsub|t><wide|<with|math-font|cal*|R>|\<dot\>><rsub|t><math-up|Cov><rsub|t>>;
-    here <math|\<partial\><rsub|q><with|math-font|cal*|R>=1>.
+    Lecture<nbsp>4: conditional variance is resolved at rate
+    <math|<math-up|Cov><rsub|t><wide|\<cal-R\>|\<dot\>><rsub|t><math-up|Cov><rsub|t>>;
+    here <math|\<partial\><rsub|q>\<cal-R\>=1>.
 
     <\itemize>
       <item><math|<around|\<langle\>|f,<math-up|Cov><rsub|q>f|\<rangle\>>\<ge\>0>:
@@ -432,15 +432,15 @@
     tightness and uniform moments.
 
     <\itemize>
-      <item>The terminal case of the DS equations of Lecture 4.
+      <item>The terminal case of the DS equations of Lecture<nbsp>4.
 
       <item>The renormalised cube <math|\<mu\><rsub|N>*\<Phi\>+\<lambda\>*\<Phi\><rsup|3>>
       is identified only <strong|tested in expectation>, not as a random
       distribution.
 
-      <item>Consistent with the expectation (Lecture 4) that the limiting
-      force is an observable without terminal representative; this is
-      <strong|not proved>.
+      <item>Consistent with the expectation (Lecture<nbsp>4) that the
+      limiting force is an observable without terminal representative; this
+      is <strong|not proved>.
 
       <item>At every finite resolution the force is explicit:
       <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
