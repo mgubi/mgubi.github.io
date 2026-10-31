@@ -86,93 +86,109 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-16>>
 
+    <with|par-left|3tab|<with|font-size|0.92|Pontryagin's maximum principle.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-17>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|The costate is a gradient.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-18>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|The Hamiltonian of the field.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-19>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|With noise.
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-20>>>
+
     <with|par-left|1tab|8.2<space|2spc>Removing the predictable drift
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17>>
+    <no-break><pageref|auto-21>>
 
     <with|par-left|1tab|8.3<space|2spc>The FBSDE in the forecast coordinate
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18>>
+    <no-break><pageref|auto-22>>
 
     <with|par-left|1tab|8.4<space|2spc>Conditional moments
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19>>
+    <no-break><pageref|auto-23>>
 
     <with|par-left|1tab|8.5<space|2spc>The gradient sector: Wetterich's
     equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21>>
+    <no-break><pageref|auto-25>>
 
     <with|par-left|1tab|8.6<space|2spc>Variational meaning and the tree level
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>
+    <no-break><pageref|auto-28>>
 
     <with|par-left|3tab|<with|font-size|0.92|Constrained free energies.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-25>>>
+    <no-break><pageref|auto-29>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The tree level.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>>
+    <no-break><pageref|auto-30>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-27>>
+    <no-break><pageref|auto-31>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Variational
     structure> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28><vspace|0.5fn>
+    <no-break><pageref|auto-32><vspace|0.5fn>
 
     <with|par-left|1tab|9.1<space|2spc>Finite volume: the Boué\UDupuis
     formula <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>
+    <no-break><pageref|auto-33>>
 
     <with|par-left|3tab|<with|font-size|0.92|Euler\ULagrange equation
     <with|mode|math|=> FBSDE. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>>
+    <no-break><pageref|auto-34>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Entropy.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31>>>
+    <no-break><pageref|auto-35>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Generating functionals.
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>>
+    <no-break><pageref|auto-36>>>
 
     <with|par-left|1tab|9.2<space|2spc>Infinite volume
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33>>
+    <no-break><pageref|auto-37>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34>>
+    <no-break><pageref|auto-38>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Part II.
     Additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35><vspace|0.5fn>
+    <no-break><pageref|auto-39><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Algebraic
     structure of the Polchinski flow> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36><vspace|0.5fn>
+    <no-break><pageref|auto-40><vspace|0.5fn>
 
     <with|par-left|1tab|10.1<space|2spc>A semigroup of renormalisation maps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37>>
+    <no-break><pageref|auto-41>>
 
     <with|par-left|1tab|10.2<space|2spc>Perturbation theory and counterterms
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-38>>
+    <no-break><pageref|auto-42>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-39>>
+    <no-break><pageref|auto-43>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Dyson\USchwinger
     equations at every scale> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-40><vspace|0.5fn>
+    <no-break><pageref|auto-44><vspace|0.5fn>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-41>>
+    <no-break><pageref|auto-45>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42><vspace|0.5fn>
+    <no-break><pageref|auto-46><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -549,6 +565,103 @@
   <math|\<mathd\>F<rsub|t>=\<Upsilon\><rsub|t><space|0.17em>\<mathd\>W<rsub|t>>.
 
   <subsection|State and costate>
+
+  <paragraph|Pontryagin's maximum principle.> Consider first a deterministic
+  problem: minimise the cost <math|J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s>
+  over controls <math|u> on <math|<around|[|t,T|]>>, where the state solves
+  <math|<wide|x|\<dot\>><rsub|s>=b<around|(|x<rsub|s>,u<rsub|s>|)>>,
+  <math|x<rsub|t>=x>. With the <em|Hamiltonian>
+
+  <\equation*>
+    H<around|(|x,p,u|)>\<assign\><around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>,
+  </equation*>
+
+  Pontryagin's principle<nbsp><cite|PBGM62> says that along an optimal pair
+  <math|<around|(|x,u|)>> there is a <em|costate> <math|p> such that
+
+  <\equation*>
+    <wide|x|\<dot\>><rsub|s>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>><rsub|s>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u<rsub|s>\<in\>arg
+    max<rsub|v> H<around|(|x<rsub|s>,p<rsub|s>,v|)>.
+  </equation*>
+
+  The state runs forward from its initial value, the costate backward from
+  its terminal value: a two-point boundary value problem. In the smooth case
+  the principle is the first-order condition. If
+  <math|\<xi\>=\<partial\><rsub|\<varepsilon\>>*x> is the variation of the
+  state under <math|u\<to\>u+\<varepsilon\>*v>, then
+  <math|<wide|\<xi\>|\<dot\>>=\<partial\><rsub|x>*b*\<xi\>+\<partial\><rsub|u>*b*v>,
+  <math|\<xi\><rsub|t>=0>, and the costate equation is exactly what makes
+  <math|<frac|\<mathd\>|\<mathd\>s><around|\<langle\>|p,\<xi\>|\<rangle\>>=<around|\<langle\>|\<partial\><rsub|x>*\<ell\>,\<xi\>|\<rangle\>>+<around|\<langle\>|p,\<partial\><rsub|u>*b*v|\<rangle\>>>.
+  Integrating over <math|<around|[|t,T|]>> and using the terminal condition,
+
+  <\equation*>
+    <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*H<around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
+  </equation*>
+
+  So the costate is the Lagrange multiplier of the constraint
+  <math|<wide|x|\<dot\>>=b>, and an optimal control is a critical point of
+  the Hamiltonian.
+
+  <paragraph|The costate is a gradient.> Let
+  <math|V<around|(|t,x|)>=min<rsub|u> J<around|(|u|)>> be the value function.
+  Comparing the cost from <math|<around|(|t,x|)>> with the cost from
+  <math|<around|(|t+\<mathd\>t,x+b*\<mathd\>t|)>> gives the
+  Hamilton\UJacobi\UBellman equation
+
+  <\equation*>
+    \<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-D*V|)>,<space|2em>H<rsub|\<ast\>><around|(|x,p|)>\<assign\>max<rsub|u>
+    H<around|(|x,p,u|)>,<space|2em>V<around|(|T,\<cdummy\>|)>=g.
+  </equation*>
+
+  Its characteristics are Hamilton's equations for <math|H<rsub|\<ast\>>>,
+  and along them <math|p<rsub|s>=-D*V<around|(|s,x<rsub|s>|)>>: the costate
+  is the sensitivity of the optimal cost to a displacement of the state, i.e.
+  the force that the future exerts on the present.
+
+  <paragraph|The Hamiltonian of the field.> In the problem of
+  Theorem<nbsp><reference|thm:BD> the state is the field,
+  <math|b<around|(|x,u|)>=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u>,
+  <math|\<ell\>=<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>> and
+  <math|g=V<rsub|T>>. Then <math|H<around|(|p,u|)>=<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u|\<rangle\>>-<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>
+  is maximal at <math|u=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*p>, and
+
+  <\equation*>
+    H<rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>
+  </equation*>
+
+  is the Hamiltonian of a free particle with mass matrix
+  <math|<wide|Q|\<dot\>><rsub|s><rsup|-1>>: it does not depend on the state.
+  Hence <math|<wide|p|\<dot\>>=0> and <math|<wide|x|\<dot\>>=<wide|Q|\<dot\>><rsub|s>*p>:
+  the costate is conserved and the state moves along the shear
+  <eqref|eq:shear>. All the interaction sits in the terminal condition
+  <math|p=-D*V<rsub|T><around|(|x+S<rsub|t>*p|)>>, an implicit equation for
+  the momentum, solved by a sum of tree graphs
+  (Exercise<nbsp><reference|ex:characteristics>). The corresponding
+  Hamilton\UJacobi equation <math|\<partial\><rsub|t>*V=<frac|1|2><around|\<langle\>|D*V,<wide|Q|\<dot\>><rsub|t>*D*V|\<rangle\>>>
+  is the Polchinski equation <eqref|eq:polchinski> without its trace term.
+
+  <paragraph|With noise.> For a controlled diffusion
+  <math|\<mathd\>X=b<around|(|X,u|)>*\<mathd\>s+\<sigma\>*\<mathd\>W>, with
+  <math|\<sigma\>> independent of the control, the stochastic maximum
+  principle<nbsp><cite|Bis73|Pen90|YZ99> keeps the Hamiltonian and the
+  maximisation, but the costate becomes an adapted process which solves a
+  <em|backward> stochastic differential equation,
+
+  <\equation*>
+    \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*H*<space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>p<rsub|T>=-D*g<around|(|X<rsub|T>|)>.
+  </equation*>
+
+  The martingale term <math|\<Upsilon\>*\<mathd\>W> is the price of
+  adaptedness: the costate may not anticipate the noise. For the field
+  <math|\<partial\><rsub|x>*H=0>, so the costate is a martingale,
+  <math|p<rsub|t>=\<bbb-E\><rsub|t><around|[|-D*V<rsub|T><around|(|X<rsub|T>|)>|]>>,
+  and since the value function is the effective potential
+  (Theorem<nbsp><reference|thm:BD>), <math|p<rsub|t>=-D*V<rsub|t><around|(|X<rsub|t>|)>>.
+  The noise adds the Itô term to the Hamilton\UJacobi equation, which becomes
+  the Polchinski equation <eqref|eq:polchinski>: its quadratic,
+  Hamilton\UJacobi part generates the trees, and the trace term generates the
+  loops. The forward\Ubackward system <eqref|eq:fbsde-system> is the
+  stochastic Hamiltonian system of this problem.
 
   The FBSDE is the stochastic Pontryagin system of the control problem of
   Theorem<nbsp><reference|thm:BD>. The controlled field
@@ -1493,10 +1606,6 @@
     B.<nbsp>Dagallier. Stochastic dynamics and the Polchinski equation: an
     introduction. <em|Probab. Surveys> 21 (2024), 200\U290.
 
-    <bibitem*|BTW02><label|bib-BTW02>J.<nbsp>Berges, N.<nbsp>Tetradis,
-    C.<nbsp>Wetterich. Non-perturbative renormalization flow in quantum field
-    theory and statistical physics. <em|Phys. Rep.> 363 (2002), 223\U386.
-
     <bibitem*|BCG26><label|bib-BCG26>I.<nbsp>Bailleul, I.<nbsp>Chevyrev,
     M.<nbsp>Gubinelli. Stochastic observables and Wilson\UItô diffusions. In
     preparation.
@@ -1517,9 +1626,17 @@
     the variational method for Euclidean quantum fields in infinite volume.
     <em|Probab. Math. Phys.> 4 (2023), 761\U801.
 
+    <bibitem*|Bis73><label|bib-Bis73>J.-M.<nbsp>Bismut. Conjugate convex
+    functions in optimal stochastic control. <em|J. Math. Anal. Appl.> 44
+    (1973), 384\U404.
+
     <bibitem*|BK87><label|bib-BK87>D.<space|0.17em>C.<nbsp>Brydges,
     T.<nbsp>Kennedy. Mayer expansions and the Hamilton\UJacobi equation.
     <em|J. Stat. Phys.> 48 (1987), 19\U49.
+
+    <bibitem*|BTW02><label|bib-BTW02>J.<nbsp>Berges, N.<nbsp>Tetradis,
+    C.<nbsp>Wetterich. Non-perturbative renormalization flow in quantum field
+    theory and statistical physics. <em|Phys. Rep.> 363 (2002), 223\U386.
 
     <bibitem*|Eld23><label|bib-Eld23>R.<nbsp>Eldan. Analysis of
     high-dimensional distributions using pathwise methods. In <em|Proceedings
@@ -1541,6 +1658,15 @@
     <em|Forward-Backward Stochastic Differential Equations and their
     Applications>. Lecture Notes in Math. 1702, Springer, 1999.
 
+    <bibitem*|PBGM62><label|bib-PBGM62>L.<nbsp>S.<nbsp>Pontryagin,
+    V.<nbsp>G.<nbsp>Boltyanskii, R.<nbsp>V.<nbsp>Gamkrelidze,
+    E.<nbsp>F.<nbsp>Mishchenko. <em|The Mathematical Theory of Optimal
+    Processes>. Interscience, 1962.
+
+    <bibitem*|Pen90><label|bib-Pen90>S.<nbsp>Peng. A general stochastic
+    maximum principle for optimal control problems. <em|SIAM J. Control
+    Optim.> 28 (1990), 966\U979.
+
     <bibitem*|Pol84><label|bib-Pol84>J.<nbsp>Polchinski. Renormalization and
     effective Lagrangians. <em|Nuclear Phys. B> 231 (1984), 269\U295.
 
@@ -1550,6 +1676,10 @@
     <bibitem*|Wet93><label|bib-Wet93>C.<nbsp>Wetterich. Exact evolution
     equation for the effective potential. <em|Phys. Lett. B> 301 (1993),
     90\U94.
+
+    <bibitem*|YZ99><label|bib-YZ99>J.<nbsp>Yong, X.<nbsp>Y.<nbsp>Zhou.
+    <em|Stochastic Controls: Hamiltonian Systems and HJB Equations>.
+    Springer, 1999.
   </bib-list>
 </body>
 
@@ -1579,136 +1709,144 @@
     <associate|auto-14|<tuple|ii|6>>
     <associate|auto-15|<tuple|8|6>>
     <associate|auto-16|<tuple|8.1|7>>
-    <associate|auto-17|<tuple|8.2|7>>
-    <associate|auto-18|<tuple|8.3|8>>
-    <associate|auto-19|<tuple|8.4|8>>
+    <associate|auto-17|<tuple|1|7>>
+    <associate|auto-18|<tuple|2|7>>
+    <associate|auto-19|<tuple|3|7>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|8.1|9>>
-    <associate|auto-21|<tuple|8.5|9>>
-    <associate|auto-22|<tuple|8.2|10>>
-    <associate|auto-23|<tuple|8.3|11>>
-    <associate|auto-24|<tuple|8.6|11>>
-    <associate|auto-25|<tuple|1|11>>
-    <associate|auto-26|<tuple|2|11>>
-    <associate|auto-27|<tuple|8.16|12>>
-    <associate|auto-28|<tuple|9|12>>
-    <associate|auto-29|<tuple|9.1|12>>
+    <associate|auto-20|<tuple|4|7>>
+    <associate|auto-21|<tuple|8.2|8>>
+    <associate|auto-22|<tuple|8.3|9>>
+    <associate|auto-23|<tuple|8.4|9>>
+    <associate|auto-24|<tuple|8.1|10>>
+    <associate|auto-25|<tuple|8.5|10>>
+    <associate|auto-26|<tuple|8.2|11>>
+    <associate|auto-27|<tuple|8.3|12>>
+    <associate|auto-28|<tuple|8.6|12>>
+    <associate|auto-29|<tuple|1|12>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-30|<tuple|1|13>>
-    <associate|auto-31|<tuple|2|13>>
-    <associate|auto-32|<tuple|3|13>>
-    <associate|auto-33|<tuple|9.2|13>>
-    <associate|auto-34|<tuple|iii|14>>
-    <associate|auto-35|<tuple|9.2|14>>
-    <associate|auto-36|<tuple|10|14>>
-    <associate|auto-37|<tuple|10.1|14>>
-    <associate|auto-38|<tuple|10.2|14>>
-    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<bullet\>>|15>>
+    <associate|auto-30|<tuple|2|12>>
+    <associate|auto-31|<tuple|8.16|13>>
+    <associate|auto-32|<tuple|9|13>>
+    <associate|auto-33|<tuple|9.1|13>>
+    <associate|auto-34|<tuple|1|14>>
+    <associate|auto-35|<tuple|2|14>>
+    <associate|auto-36|<tuple|3|14>>
+    <associate|auto-37|<tuple|9.2|14>>
+    <associate|auto-38|<tuple|iii|15>>
+    <associate|auto-39|<tuple|9.2|15>>
     <associate|auto-4|<tuple|3|2>>
-    <associate|auto-40|<tuple|11|16>>
-    <associate|auto-41|<tuple|11.2|16>>
-    <associate|auto-42|<tuple|11.2|17>>
+    <associate|auto-40|<tuple|10|15>>
+    <associate|auto-41|<tuple|10.1|15>>
+    <associate|auto-42|<tuple|10.2|15>>
+    <associate|auto-43|<tuple|<with|mode|<quote|math>|\<bullet\>>|16>>
+    <associate|auto-44|<tuple|11|17>>
+    <associate|auto-45|<tuple|11.2|17>>
+    <associate|auto-46|<tuple|11.2|18>>
     <associate|auto-5|<tuple|3|2>>
     <associate|auto-6|<tuple|7|2>>
     <associate|auto-7|<tuple|7.1|2>>
     <associate|auto-8|<tuple|7.2|3>>
     <associate|auto-9|<tuple|7.1|4>>
-    <associate|bib-ALZ06|<tuple|ALZ06|17>>
-    <associate|bib-BBD24|<tuple|BBD24|17>>
-    <associate|bib-BCG26|<tuple|BCG26|17>>
-    <associate|bib-BD98|<tuple|BD98|17>>
-    <associate|bib-BG20|<tuple|BG20|17>>
-    <associate|bib-BG21b|<tuple|BG21b|17>>
-    <associate|bib-BG24|<tuple|BG24|17>>
-    <associate|bib-BK87|<tuple|BK87|17>>
-    <associate|bib-BTW02|<tuple|BTW02|17>>
-    <associate|bib-Eld23|<tuple|Eld23|17>>
-    <associate|bib-GH21|<tuple|GH21|17>>
-    <associate|bib-GJS75|<tuple|GJS75|17>>
-    <associate|bib-MY99|<tuple|MY99|17>>
-    <associate|bib-Mor94|<tuple|Mor94|17>>
-    <associate|bib-Pol84|<tuple|Pol84|17>>
-    <associate|bib-Sal99|<tuple|Sal99|17>>
-    <associate|bib-Wet93|<tuple|Wet93|17>>
-    <associate|eq:BD|<tuple|9.1|12>>
-    <associate|eq:DS-scale|<tuple|11.2|16>>
-    <associate|eq:DS-terminal|<tuple|11.3|16>>
-    <associate|eq:EL|<tuple|9.3|13>>
-    <associate|eq:F-gradient|<tuple|8.10|9>>
+    <associate|bib-ALZ06|<tuple|ALZ06|18>>
+    <associate|bib-BBD24|<tuple|BBD24|18>>
+    <associate|bib-BCG26|<tuple|BCG26|18>>
+    <associate|bib-BD98|<tuple|BD98|18>>
+    <associate|bib-BG20|<tuple|BG20|18>>
+    <associate|bib-BG21b|<tuple|BG21b|18>>
+    <associate|bib-BG24|<tuple|BG24|18>>
+    <associate|bib-BK87|<tuple|BK87|18>>
+    <associate|bib-BTW02|<tuple|BTW02|18>>
+    <associate|bib-Bis73|<tuple|Bis73|18>>
+    <associate|bib-Eld23|<tuple|Eld23|18>>
+    <associate|bib-GH21|<tuple|GH21|18>>
+    <associate|bib-GJS75|<tuple|GJS75|18>>
+    <associate|bib-MY99|<tuple|MY99|18>>
+    <associate|bib-Mor94|<tuple|Mor94|18>>
+    <associate|bib-PBGM62|<tuple|PBGM62|18>>
+    <associate|bib-Pen90|<tuple|Pen90|18>>
+    <associate|bib-Pol84|<tuple|Pol84|18>>
+    <associate|bib-Sal99|<tuple|Sal99|18>>
+    <associate|bib-Wet93|<tuple|Wet93|18>>
+    <associate|bib-YZ99|<tuple|YZ99|18>>
+    <associate|eq:BD|<tuple|9.1|13>>
+    <associate|eq:DS-scale|<tuple|11.2|17>>
+    <associate|eq:DS-terminal|<tuple|11.3|17>>
+    <associate|eq:EL|<tuple|9.3|14>>
+    <associate|eq:F-gradient|<tuple|8.10|10>>
     <associate|eq:Gt|<tuple|7.9|5>>
-    <associate|eq:PB|<tuple|10.3|14>>
-    <associate|eq:RG-map|<tuple|10.1|14>>
+    <associate|eq:PB|<tuple|10.3|15>>
+    <associate|eq:RG-map|<tuple|10.1|15>>
     <associate|eq:Vt|<tuple|7.3|3>>
     <associate|eq:burgers|<tuple|7.12|6>>
-    <associate|eq:constrained|<tuple|8.15|11>>
-    <associate|eq:coord|<tuple|8.5|8>>
-    <associate|eq:cov-dynamics|<tuple|8.9|9>>
-    <associate|eq:cumulants|<tuple|10.4|14>>
-    <associate|eq:eta|<tuple|11.1|16>>
-    <associate|eq:exp-regulator|<tuple|8.14|11>>
+    <associate|eq:constrained|<tuple|8.15|12>>
+    <associate|eq:coord|<tuple|8.5|9>>
+    <associate|eq:cov-dynamics|<tuple|8.9|10>>
+    <associate|eq:cumulants|<tuple|10.4|15>>
+    <associate|eq:eta|<tuple|11.1|17>>
+    <associate|eq:exp-regulator|<tuple|8.14|12>>
     <associate|eq:fbsde|<tuple|7.7|3>>
-    <associate|eq:fbsde-inf|<tuple|9.5|13>>
+    <associate|eq:fbsde-inf|<tuple|9.5|14>>
     <associate|eq:fbsde-system|<tuple|7.8|4>>
-    <associate|eq:field-eq-scale|<tuple|11.4|16>>
-    <associate|eq:first-order|<tuple|10.5|15>>
-    <associate|eq:gammaT|<tuple|10.7|15>>
-    <associate|eq:generating|<tuple|9.4|13>>
-    <associate|eq:hopf-lax|<tuple|8.16|11>>
+    <associate|eq:field-eq-scale|<tuple|11.4|17>>
+    <associate|eq:first-order|<tuple|10.5|16>>
+    <associate|eq:gammaT|<tuple|10.7|16>>
+    <associate|eq:generating|<tuple|9.4|14>>
+    <associate|eq:hopf-lax|<tuple|8.16|12>>
     <associate|eq:kolmogorov|<tuple|7.10|5>>
-    <associate|eq:lambda-split|<tuple|8.4|7>>
+    <associate|eq:lambda-split|<tuple|8.4|8>>
     <associate|eq:localisation|<tuple|7.5|3>>
-    <associate|eq:moreau|<tuple|8.11|9>>
+    <associate|eq:moreau|<tuple|8.11|10>>
     <associate|eq:nuT|<tuple|7.2|3>>
     <associate|eq:nut|<tuple|7.4|3>>
-    <associate|eq:phi4-VT|<tuple|7.1|2>>
+    <associate|eq:phi4-VT|<tuple|7.1|3>>
     <associate|eq:polchinski|<tuple|7.6|3>>
-    <associate|eq:psi|<tuple|8.2|7>>
-    <associate|eq:psi-noise|<tuple|8.3|7>>
-    <associate|eq:response|<tuple|8.6|8>>
-    <associate|eq:second-order|<tuple|10.6|15>>
-    <associate|eq:semigroup|<tuple|10.2|14>>
-    <associate|eq:shear|<tuple|8.1|7>>
+    <associate|eq:psi|<tuple|8.2|8>>
+    <associate|eq:psi-noise|<tuple|8.3|8>>
+    <associate|eq:response|<tuple|8.6|9>>
+    <associate|eq:second-order|<tuple|10.6|16>>
+    <associate|eq:semigroup|<tuple|10.2|15>>
+    <associate|eq:shear|<tuple|8.1|8>>
     <associate|eq:tangent|<tuple|7.11|5>>
-    <associate|eq:transformed-fbsde|<tuple|8.7|8>>
-    <associate|eq:transformed-flow|<tuple|8.8|8>>
-    <associate|eq:verification|<tuple|9.2|12>>
-    <associate|eq:wetterich|<tuple|8.13|10>>
-    <associate|eq:wetterich-Gamma|<tuple|8.12|10>>
-    <associate|ex:1PI|<tuple|8.7|12>>
-    <associate|ex:characteristics|<tuple|8.2|12>>
-    <associate|ex:commutator|<tuple|10.1|15>>
+    <associate|eq:transformed-fbsde|<tuple|8.7|9>>
+    <associate|eq:transformed-flow|<tuple|8.8|9>>
+    <associate|eq:verification|<tuple|9.2|13>>
+    <associate|eq:wetterich|<tuple|8.13|11>>
+    <associate|eq:wetterich-Gamma|<tuple|8.12|11>>
+    <associate|ex:1PI|<tuple|8.7|13>>
+    <associate|ex:characteristics|<tuple|8.2|13>>
+    <associate|ex:commutator|<tuple|10.1|16>>
     <associate|ex:doob|<tuple|7.3|6>>
-    <associate|ex:envelope|<tuple|8.5|12>>
-    <associate|ex:pontryagin|<tuple|8.1|12>>
-    <associate|ex:power-counting|<tuple|10.3|16>>
+    <associate|ex:envelope|<tuple|8.5|13>>
+    <associate|ex:pontryagin|<tuple|8.1|13>>
+    <associate|ex:power-counting|<tuple|10.3|17>>
     <associate|ex:quadratic|<tuple|7.1|6>>
-    <associate|ex:regulators|<tuple|8.9|12>>
-    <associate|ex:sunset|<tuple|10.2|15>>
+    <associate|ex:regulators|<tuple|8.9|13>>
+    <associate|ex:sunset|<tuple|10.2|16>>
     <associate|ex:zero-dim|<tuple|7.2|6>>
     <associate|fig:fbsde-flow|<tuple|7.1|4>>
-    <associate|fig:localisation|<tuple|8.1|9>>
+    <associate|fig:localisation|<tuple|8.1|10>>
     <associate|fig:polchinski-0d|<tuple|7.2|5>>
-    <associate|fig:regulator|<tuple|8.3|11>>
-    <associate|fig:shear|<tuple|8.2|10>>
-    <associate|prop:H-cov|<tuple|8.3|8>>
-    <associate|prop:flat|<tuple|10.1|14>>
+    <associate|fig:regulator|<tuple|8.3|12>>
+    <associate|fig:shear|<tuple|8.2|11>>
+    <associate|prop:H-cov|<tuple|8.3|9>>
+    <associate|prop:flat|<tuple|10.1|15>>
     <associate|prop:marginals|<tuple|7.2|3>>
-    <associate|prop:psi|<tuple|8.1|7>>
-    <associate|prop:second-order|<tuple|10.2|15>>
-    <associate|sec:DS|<tuple|11|16>>
-    <associate|sec:algebra|<tuple|10|14>>
+    <associate|prop:psi|<tuple|8.1|8>>
+    <associate|prop:second-order|<tuple|10.2|16>>
+    <associate|sec:DS|<tuple|11|17>>
+    <associate|sec:algebra|<tuple|10|15>>
     <associate|sec:burgers|<tuple|7.4|6>>
-    <associate|sec:infinite-volume|<tuple|9.2|13>>
-    <associate|sec:pert|<tuple|10.2|14>>
+    <associate|sec:infinite-volume|<tuple|9.2|14>>
+    <associate|sec:pert|<tuple|10.2|15>>
     <associate|sec:polchinski|<tuple|7|2>>
-    <associate|sec:variational|<tuple|9|12>>
+    <associate|sec:variational|<tuple|9|13>>
     <associate|sec:wetterich|<tuple|8|6>>
-    <associate|thm:BD|<tuple|9.1|12>>
-    <associate|thm:DS-scale|<tuple|11.1|16>>
+    <associate|thm:BD|<tuple|9.1|13>>
+    <associate|thm:DS-scale|<tuple|11.1|17>>
     <associate|thm:fbsde|<tuple|7.4|3>>
     <associate|thm:polchinski|<tuple|7.3|3>>
-    <associate|thm:transformed|<tuple|8.2|8>>
-    <associate|thm:wetterich|<tuple|8.4|10>>
+    <associate|thm:transformed|<tuple|8.2|9>>
+    <associate|thm:wetterich|<tuple|8.4|11>>
   </collection>
 </references>
 
@@ -1750,6 +1888,14 @@
       Wet93
 
       BTW02
+
+      PBGM62
+
+      Bis73
+
+      Pen90
+
+      YZ99
 
       BCG26
 
@@ -1820,7 +1966,7 @@
       <with|mode|<quote|math>|<with|mode|<quote|text>|<with|font-family|<quote|rm>|font-shape|<quote|right>|Cov>><rsub|t>>.
       At low resolution the conditional law covers both wells; as
       <with|mode|<quote|math>|t> grows it localises on one of
-      them.>|<pageref|auto-20>>
+      them.>|<pageref|auto-24>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.2>||The
       zero-dimensional model of Figure <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><reference|fig:polchinski-0d>
@@ -1832,7 +1978,7 @@
       Right: the bare potential <with|mode|<quote|math>|V<rsub|T>>, the
       effective potential <with|mode|<quote|math>|V<rsub|t>> and
       <with|mode|<quote|math>|\<Gamma\><rsub|t>>, each shifted to have
-      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-22>>
+      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-26>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.3>||The regulator
       <with|mode|<quote|math>|<with|math-font|<quote|cal*>|R><rsub|t>> of the
@@ -1840,7 +1986,7 @@
       <with|mode|<quote|math>|m=1>): close to the mass term
       <with|mode|<quote|math>|t<rsup|2>> (dotted) on the modes
       <with|mode|<quote|math>|<around|\||k|\|>\<ll\>t>, exponentially small
-      on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-23>>
+      on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-27>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -1901,98 +2047,114 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-16>>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Pontryagin's
+      maximum principle. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-17>>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The costate is
+      a gradient. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-18>>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The
+      Hamiltonian of the field. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-19>>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|With noise.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20>>>
+
       <with|par-left|<quote|1tab>|8.2<space|2spc>Removing the predictable
       drift <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17>>
+      <no-break><pageref|auto-21>>
 
       <with|par-left|<quote|1tab>|8.3<space|2spc>The FBSDE in the forecast
       coordinate <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18>>
+      <no-break><pageref|auto-22>>
 
       <with|par-left|<quote|1tab>|8.4<space|2spc>Conditional moments
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19>>
+      <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|1tab>|8.5<space|2spc>The gradient sector:
       Wetterich's equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-25>>
 
       <with|par-left|<quote|1tab>|8.6<space|2spc>Variational meaning and the
       tree level <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-28>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Constrained
       free energies. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-25>>>
+      <no-break><pageref|auto-29>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The tree
       level. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-26>>>
+      <no-break><pageref|auto-30>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-27>>
+      <no-break><pageref|auto-31>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Variational
       structure> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28><vspace|0.5fn>
+      <no-break><pageref|auto-32><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|9.1<space|2spc>Finite volume: the
       Boué\UDupuis formula <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-33>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Euler\ULagrange
       equation <with|mode|<quote|math>|=> FBSDE.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>>
+      <no-break><pageref|auto-34>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Entropy.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>>
+      <no-break><pageref|auto-35>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Generating
       functionals. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>>
+      <no-break><pageref|auto-36>>>
 
       <with|par-left|<quote|1tab>|9.2<space|2spc>Infinite volume
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-33>>
+      <no-break><pageref|auto-37>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34>>
+      <no-break><pageref|auto-38>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Part
       II. Additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35><vspace|0.5fn>
+      <no-break><pageref|auto-39><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Algebraic
       structure of the Polchinski flow> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36><vspace|0.5fn>
+      <no-break><pageref|auto-40><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|10.1<space|2spc>A semigroup of
       renormalisation maps <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37>>
+      <no-break><pageref|auto-41>>
 
       <with|par-left|<quote|1tab>|10.2<space|2spc>Perturbation theory and
       counterterms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38>>
+      <no-break><pageref|auto-42>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39>>
+      <no-break><pageref|auto-43>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Dyson\USchwinger
       equations at every scale> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40><vspace|0.5fn>
+      <no-break><pageref|auto-44><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-41>>
+      <no-break><pageref|auto-45>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42><vspace|0.5fn>
+      <no-break><pageref|auto-46><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

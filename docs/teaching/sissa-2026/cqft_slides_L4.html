@@ -564,6 +564,115 @@ D^2 F_t), \qquad F_T = - DV_T .\)
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Pontryagin's maximum principle
+      </div>
+      <font style="font-size: 90.0%"><p>
+        Minimise <font color="#620000">\(J (u) = g (x_T) + \int_t^T \ell (x_s, u_s)
+        \mathrm{d} s\)</font> subject to <font color="#620000">\(\dot{x} = b (x,
+        u)\)</font>, <font color="#620000">\(x_t = x\)</font>.
+        <strong>Hamiltonian:</strong>
+      </p><center>
+        \(\displaystyle H (x, p, u) = \langle p, b (x, u) \rangle - \ell (x,
+        u) .\)
+      </center><p>
+        <strong>Pontryagin.</strong> Along an optimal pair there is a
+        <strong>costate</strong> <font color="#620000">\(p\)</font> with
+      </p><center>
+        \(\displaystyle \dot{x} = \partial_p H, \qquad \dot{p} = - \partial_x
+        H, \qquad p_T = - Dg
+(x_T), \qquad u \in \arg \max H (x, p, \cdot) .\)
+      </center><ul>
+        <li>
+          <p>
+            State forward, costate backward: a <strong>two-point boundary
+            problem</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            First variation: <font color="#620000">\(\delta J = - \int \langle
+            \partial_u H, v \rangle \mathrm{d} s\)</font>. The costate is the
+            Lagrange multiplier of <font color="#620000">\(\dot{x} = b\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Value function <font color="#620000">\(V (t, x)\)</font>: <font color="#620000">\(\partial_t
+            V = H_{\ast} (x, - DV)\)</font>, <font color="#620000">\(H_{\ast} = \max_u
+            H\)</font> (HJB). Hamilton's equations are its characteristics,
+            and
+          </p>
+          <center>
+            \(\displaystyle p_s = - DV (s, x_s) :\)
+          </center>
+          <p>
+            the costate is the force the future exerts on the present.
+          </p>
+        </li>
+      </ul><p>
+        <font style="font-size: 84.1%"><font color="#707070">Pontryagin&ndash;Boltyanskii&ndash;Gamkrelidze&ndash;Mishchenko
+        1962.</font></font>
+      </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The Hamiltonian of the field
+      </div>
+      <font style="font-size: 90.0%"><p>
+        State <font color="#620000">\(=\)</font> field, <font color="#620000">\(b = \dot{Q}_s^{1
+        / 2} u\)</font>, <font color="#620000">\(\ell = \frac{1}{2} \|u\|^2\)</font>,
+        <font color="#620000">\(g = V_T\)</font>. Maximising over <font color="#620000">\(u =
+        \dot{Q}_s^{1 / 2} p\)</font>:
+      </p><center>
+        \(\displaystyle H_{\ast} (p) = \frac{1}{2} \langle p, \dot{Q}_s p
+        \rangle :\)
+      </center><p>
+        a free particle with mass matrix <font color="#620000">\(\dot{Q}_s^{-
+        1}\)</font>, and no dependence on the state <font color="#620000">\(x\)</font>.
+      </p><ul>
+        <li>
+          <p>
+            <strong>Without noise:</strong> <font color="#620000">\(\dot{p} =
+            0\)</font>, <font color="#620000">\(\dot{x} = \dot{Q} p\)</font>: the shear
+            <font color="#620000">\((x, p) \mapsto (x + S_t p, p)\)</font>. All
+            interaction is in <font color="#620000">\(p = - DV_T (x + S_t p)\)</font>:
+            <strong>trees</strong>. HJB <font color="#620000">\(=\)</font> Polchinski
+            without the trace.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>With noise</strong> (Bismut 1973, Peng 1990): the costate
+            solves a BSDE
+          </p>
+          <center>
+            \(\displaystyle \mathrm{d} p_s = - \partial_x H \hspace{0.17em}
+            \mathrm{d} s + \Upsilon_s
+\hspace{0.17em} \mathrm{d} W_s,\)
+          </center>
+          <p>
+            with <font color="#620000">\(\Upsilon \mathrm{d} W\)</font> the price of
+            adaptedness. Here <font color="#620000">\(\partial_x H = 0\)</font>: the
+            costate is a <strong>martingale</strong>, <font color="#620000">\(p_t = -
+            DV_t (X_t) = F_t\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The It&ocirc; term turns HJB into <strong>Polchinski</strong>:
+            quadratic part <font color="#620000">\(=\)</font> trees, trace term <font
+            color="#620000">\(=\)</font> loops.
+          </p>
+        </li>
+      </ul><div class="slide-block">
+        <p>
+          The FBSDE is the stochastic Hamiltonian system: field <font color="#620000">\(=\)</font>
+          state, force <font color="#620000">\(=\)</font> costate.
+        </p>
+      </div></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         State and costate
       </div>
       <p>

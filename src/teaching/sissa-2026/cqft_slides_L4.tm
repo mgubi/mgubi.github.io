@@ -327,6 +327,91 @@
 
     \;
   </hidden>|<\hidden>
+    <mytitle|Pontryagin's maximum principle>
+
+    <\with|font-size|0.9>
+      Minimise <math|J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s>
+      subject to <math|<wide|x|\<dot\>>=b<around|(|x,u|)>>,
+      <math|x<rsub|t>=x>. <strong|Hamiltonian:>
+
+      <\equation*>
+        H<around|(|x,p,u|)>=<around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>.
+      </equation*>
+
+      <strong|Pontryagin.> Along an optimal pair there is a <strong|costate>
+      <math|p> with
+
+      <\equation*>
+        <wide|x|\<dot\>>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u\<in\>arg
+        max H<around|(|x,p,\<cdummy\>|)>.
+      </equation*>
+
+      <\itemize>
+        <item>State forward, costate backward: a <strong|two-point boundary
+        problem>.
+
+        <item>First variation: <math|\<delta\>*J=-<big|int><around|\<langle\>|\<partial\><rsub|u>*H,v|\<rangle\>>*\<mathd\>s>.
+        The costate is the Lagrange multiplier of <math|<wide|x|\<dot\>>=b>.
+
+        <item>Value function <math|V<around|(|t,x|)>>:
+        <math|\<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-D*V|)>>,
+        <math|H<rsub|\<ast\>>=max<rsub|u> H> (HJB). Hamilton's equations are
+        its characteristics, and
+
+        <\equation*>
+          p<rsub|s>=-D*V<around|(|s,x<rsub|s>|)>:
+        </equation*>
+
+        the costate is the force the future exerts on the present.
+      </itemize>
+
+      <small|<with|color|dark grey|Pontryagin\UBoltyanskii\UGamkrelidze\UMishchenko
+      1962.>>
+    </with>
+  </hidden>|<\hidden>
+    <mytitle|The Hamiltonian of the field>
+
+    <\with|font-size|0.9>
+      State <math|=> field, <math|b=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u>,
+      <math|\<ell\>=<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>,
+      <math|g=V<rsub|T>>. Maximising over
+      <math|u=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*p>:
+
+      <\equation*>
+        H<rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>:
+      </equation*>
+
+      a free particle with mass matrix <math|<wide|Q|\<dot\>><rsub|s><rsup|-1>>,
+      and no dependence on the state <math|x>.
+
+      <\itemize>
+        <item><strong|Without noise:> <math|<wide|p|\<dot\>>=0>,
+        <math|<wide|x|\<dot\>>=<wide|Q|\<dot\>>*p>: the shear
+        <math|<around|(|x,p|)>\<mapsto\><around|(|x+S<rsub|t>*p,p|)>>. All
+        interaction is in <math|p=-D*V<rsub|T><around|(|x+S<rsub|t>*p|)>>:
+        <strong|trees>. HJB <math|=> Polchinski without the trace.
+
+        <item><strong|With noise> (Bismut 1973, Peng 1990): the costate
+        solves a BSDE
+
+        <\equation*>
+          \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*H*<space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,
+        </equation*>
+
+        with <math|\<Upsilon\>*\<mathd\>W> the price of adaptedness. Here
+        <math|\<partial\><rsub|x>*H=0>: the costate is a <strong|martingale>,
+        <math|p<rsub|t>=-D*V<rsub|t><around|(|X<rsub|t>|)>=F<rsub|t>>.
+
+        <item>The Itô term turns HJB into <strong|Polchinski>: quadratic part
+        <math|=> trees, trace term <math|=> loops.
+      </itemize>
+
+      <\myframed>
+        The FBSDE is the stochastic Hamiltonian system: field <math|=> state,
+        force <math|=> costate.
+      </myframed>
+    </with>
+  </hidden>|<\hidden>
     <mytitle|State and costate>
 
     \;
