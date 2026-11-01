@@ -142,7 +142,7 @@
     <no-break><pageref|auto-35>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Lectures
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>5\U7
+    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>5\U6
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-36>>>
 
@@ -189,7 +189,7 @@
   Osterwalder\USchrader axioms. Lecture<nbsp>2
   (Section<nbsp><hlink|3|cqft_notes_L2.tm#sec:gff> of its notes) studies the
   first example, the Gaussian free field. Section<nbsp><reference|app:plan>
-  outlines the plan of the course (seven lectures).
+  outlines the plan of the course (six lectures).
 
   <paragraph|Conventions> <math|\<hbar\>=c=1>. Spacetime dimension is
   <math|d=1+s>, <math|s\<geq\>1> the number of space dimensions. Inner
@@ -1649,14 +1649,14 @@
 
   <section|The course><label|app:plan>
 
-  These notes cover the first of seven two-hour lectures given at SISSA,
+  These notes cover the first of six two-hour lectures given at SISSA,
   Trieste, in October\UNovember 2026, for graduate students in analysis,
   probability or mathematical physics. Each lecture has its own notes.
-  Lectures<nbsp>1\U4 develop the general framework; Lectures<nbsp>5\U7 give a
+  Lectures<nbsp>1\U4 develop the general framework; Lectures<nbsp>5\U6 give a
   construction of <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE
   of Lecture<nbsp>4. Lectures<nbsp>1\U3 were delivered in October 2026;
-  Lectures<nbsp>4\U7 are provisional, and Lecture<nbsp>7 will not be
-  delivered in class.
+  Lectures<nbsp>4\U6 are provisional, and Sections<nbsp>16\U18 of
+  Lecture<nbsp>6 will not be delivered in class.
 
   <paragraph|Prerequisites> Measure-theoretic probability and Itô calculus;
   the spectral theorem for self-adjoint operators; distributions and Fourier
@@ -1729,12 +1729,13 @@
   Additional material: perturbation theory and counterterms; Dyson\USchwinger
   equations at every scale. <em|Reading:><nbsp><cite|Pol84|BBD24|BD98|BG20>.
 
-  <paragraph|Lectures<nbsp>5\U7> Construction of
+  <paragraph|Lectures<nbsp>5\U6> Construction of
   <math|\<Phi\><rsup|4><rsub|3>> on the torus (separate notes). The Wetterich
   FBSDE, two renormalisations and the large-field problem (Lecture<nbsp>5); a
-  priori estimates for the forward\Ubackward system (Lecture<nbsp>6); UV
-  stability, compactness and the limiting FBSDE (Lecture<nbsp>7, not
-  delivered in class). <em|Reading:><nbsp><cite|BG20|BCG26>.
+  priori estimates for the forward\Ubackward system (Lecture<nbsp>6,
+  Sections<nbsp>13\U15); UV stability, compactness and the limiting FBSDE
+  (Lecture<nbsp>6, Sections<nbsp>16\U18, not delivered in class).
+  <em|Reading:><nbsp><cite|BG20|BCG26>.
 
   <paragraph|Homework and projects> Problem sets can be drawn from the
   exercises at the end of each section. The computer experiments of
@@ -2510,7 +2511,7 @@
       <no-break><pageref|auto-35>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lectures
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>5\U7
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>5\U6
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-36>>>
 

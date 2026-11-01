@@ -64,7 +64,7 @@
         </p>
         <p>
           <font style="font-size: 130.0%"><font color="#620000">\(\Phi^4_3\)</font> on the torus II: a
-          priori estimates</font>
+          priori estimates and the limit</font>
         </p>
         <p style="margin-bottom: 0.65cm">
 
@@ -77,7 +77,7 @@
         </p>
         <p>
           <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 6 (provisional)
-          &mdash; notes: Lecture 6, &sect;&sect;13&ndash;15</font></font>
+          &mdash; notes: Lecture 6, &sect;&sect;13&ndash;18</font></font>
         </p>
         <p>
 
@@ -172,7 +172,7 @@
         </li>
         <li>
           <p>
-            the forward equation is, after subtracting the Gaussian part, a
+            the forward equation is, by the field equation of Lecture 4, a
             cubic <strong>elliptic</strong> equation at each resolution:
             coercive, estimated <strong>pathwise</strong>;
           </p>
@@ -212,35 +212,76 @@
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Subtracting the Gaussian part
+        The noise of the field equation
       </div>
       <p>
-
-      </p>
-      <p>
-        Free field at resolution <font color="#620000">\(q\)</font> driven by the
-        <strong>same</strong> innovation:
+        Lecture 5: <font color="#620000">\(P_q = (q - q_0) \Phi_{\infty} + B_{q -
+        q_0}\)</font>, a noisy measurement. Since <font color="#620000">\(\psi_q
+        =\mathbb{E}_q \Phi_{\infty}\)</font>,
       </p>
       <center>
-        \(\displaystyle X_q = \int_{q_0}^q C_s \hspace{0.17em} \mathrm{d} W_s
-        \sim \mu^{Q_q}, \qquad
-K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
-        s.\)
+        \(\displaystyle \eta_q := P_q - (q - q_0) \psi_q =\mathbb{E}_q [B_{q -
+        q_0}] :\)
       </center>
       <p>
-        Also <font color="#620000">\(P_q = W_q + \int (Y + Z)\)</font>. With <font
-        color="#620000">\(V_q = Y_q + \varrho_q (Y_q) - X_q\)</font> and <font color="#620000">\(F^Z_q
-        = \int_{q_0}^q Z_s \mathrm{d} s\)</font>, the noise cancels:
+        the noise observable of Lecture 4 is the <strong>filtered measurement
+        noise</strong>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i>For convex <font color="#620000">\(\Psi\)</font>,
+          <font color="#620000">\(\mathbb{E} \Psi (\eta_q) \leq \mathbb{E} \Psi (B_{q -
+          q_0})\)</font>, whatever the interaction. So <font color="#620000">\(\zeta_q
+          = C_q \eta_q\)</font> has</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \mathbb{E} \mathrm{e}^{u \zeta_q (x)} \leq \exp
+            \left( \frac{u^2}{2} (q - q_0)
+a^2 (q) \right), \qquad (q - q_0)
+            a^2 (q) \lesssim \sqrt{q} .\)
+          </center></i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            Proof: conditional Jensen. One line.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\zeta\)</font> is not Gaussian, but it has the
+            <strong>tails of the free field</strong>, uniformly in <font
+            color="#620000">\(N\)</font> and in the interaction.
+          </p>
+        </li>
+        <li>
+          <p>
+            Dudley + Doob: <font color="#620000">\(\sup_q q^{- 1 / 4}  (\log (2 +
+            q))^{- 1 / 2} \| \zeta_q \|_{\infty}\)</font> has Gaussian tails.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The field equation
+      </div>
+      <p>
+        Insert <font color="#620000">\(P_q = \eta_q + (q - q_0)  (Y_q + Z_q)\)</font>
+        into the coordinate equation (C), with <font color="#620000">\(K_q = K_{q_0} +
+        q - q_0\)</font>. With <font color="#620000">\(V_q = Y_q + \varrho_q (Y_q) -
+        \zeta_q\)</font>:
       </p>
       <center>
         \(\displaystyle \begin{array}{|l|}
   \hline
-  \hspace{0.27em} K_q V_q
-        + \frac{\gamma}{3} Y_q^3 = \int_{q_0}^q V_s
-  \hspace{0.17em}
-        \mathrm{d} s - \int_{q_0}^q \varrho_s (Y_s) \hspace{0.17em}
-
-        \mathrm{d} s + F^Z_q, \qquad Y_q = V_q + X_q - \varrho_q (Y_q) .
+  \hspace{0.27em} K_{q_0}
+        V_q + \frac{\gamma}{3} Y_q^3 = (q - q_0)  (\zeta_q -
+  \varrho_q (Y_q)
+        + Z_q), \qquad Y_q = V_q + \zeta_q - \varrho_q (Y_q) .
 
         \hspace{0.27em}\\
   \hline
@@ -249,26 +290,35 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
       <ul>
         <li>
           <p>
-            At each <font color="#620000">\(q\)</font>: <font color="#620000">\((q - \Delta) V +
-            \frac{\gamma}{3}  (V + X - \varrho)^3 = f\)</font>, a nonlinear
-            Helmholtz equation; <font color="#620000">\(X\)</font> is a shift inside
-            the cube.
+            The field equation of Lecture 4 in these coordinates: elliptic at
+            each <font color="#620000">\(q\)</font>, with <strong>no memory</strong>.
+            The past enters only through the noise.
           </p>
         </li>
         <li>
           <p>
-            The memory has <strong>coefficient one</strong>: <font color="#620000">\(\int_{q_0}^q
-            V \approx qV\)</font>. It must be absorbed, not treated as
-            forcing.
+            The backward equation enters only through <font color="#620000">\((q - q_0)
+            Z_q\)</font>, at the same resolution.
           </p>
         </li>
         <li>
           <p>
-            The backward equation enters only through <font color="#620000">\(F^Z =
-            \int Z\)</font>. Pathwise.
+            The mass is only <font color="#620000">\(q_0\)</font>: at large <font
+            color="#620000">\(q\)</font> all the coercivity must come from the
+            <strong>cube</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The identity is <strong>pathwise</strong>.
           </p>
         </li>
       </ul>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070">Exercise 13.3: subtracting the Gaussian
+        field <font color="#620000">\(X = \int C \hspace{0.17em} \mathrm{d} W\)</font>
+        instead gives an equation with memory.</font></font>
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -281,8 +331,8 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
         \(\displaystyle w_q = \text{sgn} (V_q)  \left( |V_q | - \tfrac{3}{4}
         r_q \right)_+, \qquad t_q
 = Y_q  \mathbb{1}_{|Y_q | > r_q}, \qquad
-        \xi_q = X_q  \mathbb{1}_{|X_q | > r_q
-/ 32} .\)
+        \xi_q = \zeta_q  \mathbb{1}_{|
+\zeta_q | > r_q / 32} .\)
       </center>
       <center>
         \(\displaystyle \begin{aligned}
@@ -296,7 +346,7 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
         action}\\
   G_T & = \int [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3
         / 2} \| \xi_q
-  \|_6^6] \mathrm{d} q \qquad \text{Gaussian
+  \|_6^6] \mathrm{d} q \qquad \text{noise
         tails}
 \end{aligned}\)
       </center>
@@ -309,8 +359,8 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
           </tr><tr>
             <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\|Z_q \|^2\)</font></td>
             <td style="text-align: center; vertical-align: middle"><font color="#620000">\(q^{1 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle">Hardy: <font color="#620000">\(\int q^{- 3 / 2} \|F^Z \|^2 \le
-            16 \int q^{1 / 2} \|Z\|^2\)</font></td>
+            <td style="text-align: center; vertical-align: middle">forcing: <font color="#620000">\(q^{- 3 / 2} \cdot \gamma^{- 1}
+            q^2 \|Z\|_2^2\)</font></td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\gamma \|t_q \|_6^6\)</font></td>
             <td style="text-align: center; vertical-align: middle"><font color="#620000">\(q^{- 3 / 2}\)</font></td>
@@ -327,55 +377,11 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
       </p>
       <p>
         Only <strong>thresholded</strong> sixth powers: unthresholded, <font
-        color="#620000">\(\mathbb{E} \|X_q \|_6^6 \asymp q^{3 / 2}\)</font> for <font
-        color="#620000">\(2 q_0 \le q \lesssim N^2\)</font>, so <font color="#620000">\(\int
-        \gamma q^{- 3 / 2} \mathbb{E} \|X_q \|_6^6 \approx \gamma N^2\)</font>
-        is not uniform in <font color="#620000">\(N\)</font>.
+        color="#620000">\(\mathbb{E} \| \zeta_q \|_6^6\)</font> can be of order <font
+        color="#620000">\(q^{3 / 2}\)</font> (free case), so <font color="#620000">\(\int \gamma
+        q^{- 3 / 2} \mathbb{E} \| \zeta_q \|_6^6\)</font> can reach <font
+        color="#620000">\(\gamma N^2\)</font>, not uniform in <font color="#620000">\(N\)</font>.
       </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Two Hardy inequalities
-      </div>
-      <p>
-
-      </p>
-      <div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Lemma.
-          </strong></font></font><i>For <font color="#620000">\(f\)</font> on <font
-          color="#620000">\([q_0, \infty)\)</font>, extended by zero to <font color="#620000">\((0,
-          q_0)\)</font>,</i>
-        </p>
-        <p style="margin-bottom: 1em">
-          <i><center>
-            \(\displaystyle \left| q^{- 1}  \hspace{-0.17em} \int_0^q f
-            \right|_{L^4 (q^{- 1 / 2}
-\mathrm{d} q)} \le \frac{8}{7}
-            \|f\|_{L^4 (q^{- 1 / 2} \mathrm{d} q)}, \qquad
-\int q^{- 3 / 2}
-            \left| \int_0^q f \right|^2 \le 16 \int q^{1 / 2} \|f\|^2 .\)
-          </center></i>
-        </p>
-      </div>
-      <p>
-        Proof: <font color="#620000">\(q^{- 1}  \int_0^q f = \int_0^1 f_{q \theta}
-        \mathrm{d} \theta\)</font>, Minkowski; <font color="#620000">\(\int_0^1
-        \theta^{- 1 / 8} = \frac{8}{7}\)</font>, <font color="#620000">\((\int_0^1
-        \theta^{- 3 / 4})^2 = 16\)</font>.
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>The problem</strong>
-        </p>
-        <p>
-          <font color="#620000">\(\frac{8}{7} > 1\)</font>: the mass term alone
-          (coefficient one) does not absorb the memory. The missing margin
-          comes from the <strong>cube</strong>: at large fields it adds <font
-          color="#620000">\(\frac{1}{4} q |w|^4\)</font>, and <font color="#620000">\(1 +
-          \frac{1}{4} - \frac{8}{7} = \frac{3}{28} > 0\)</font>.
-        </p>
-      </div>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
@@ -401,229 +407,227 @@ K_q X_q = W_q + \int_{q_0}^q X_s \mathrm{d}
       <div class="slide-title">
         The scalar model
       </div>
-      <p>
-
-      </p>
       <div class="slide-box">
         <p style="margin-top: 1em">
           <font color="#800000"><font color="#800000"><strong>Lemma.
           </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(scalar
-          forward coercivity) </strong></font></font></class>If <font color="#620000">\(qv_q
-          + \frac{\gamma}{3}  (v_q + X_q)^3 = \int_{q_0}^q v_s
-          \hspace{0.17em}
-\mathrm{d} s + f_q\)</font> on <font color="#620000">\([q_0,
-          T]\)</font>, then</i>
+          forward coercivity) </strong></font></font></class>If <font color="#620000">\(a
+          \geq 0\)</font>, <font color="#620000">\(0 \leq p \leq q\)</font> and <font
+          color="#620000">\(av + \frac{\gamma}{3}  (v + g)^3 = p (g + z)\)</font>,
+          then, with <font color="#620000">\(r = (q / \gamma)^{1 / 2}\)</font>,</i>
         </p>
         <p>
           <i><center>
-            \(\displaystyle \frac{3}{28}  \int q^{- 1 / 2} w^4 +
-            \frac{\gamma}{16}  \int q^{- 3 / 2} w^6
-\le \frac{4225}{6} \gamma
-            \int q^{- 3 / 2} \xi^6 + \frac{12}{\gamma}  \int
-q^{- 3 / 2}
-            f^2,\)
+            \(\displaystyle \frac{q}{8} w^4 + \frac{\gamma}{16} w^6 \leq 54 q
+            \xi^4 + \frac{4225}{6}
+\gamma \xi^6 + \frac{12}{\gamma} q^2 z^2,\)
           </center></i>
         </p>
         <p style="margin-bottom: 1em">
-          <i>and <font color="#620000">\(|t_q | \le \frac{32}{7}  (|w_q | + | \xi_q
-          |)\)</font>. Pathwise, uniform in <font color="#620000">\(\gamma\)</font>.</i>
+          <i>where <font color="#620000">\(w =\operatorname{sgn} (v)  (|v| -
+          \frac{3}{4} r)_+\)</font>, <font color="#620000">\(\xi = g \mathbb{1}_{|g| >
+          r / 32}\)</font>; and <font color="#620000">\(|t| \leq \frac{32}{7}  (|w| + |
+          \xi |)\)</font>.</i>
         </p>
       </div>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The scalar model: a simulation
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Forcing pulse <font color="#620000">\(f_q = \kappa \hspace{0.17em} qr_q
-        \mathbb{1}_{[a, 2 a]} (q)\)</font>, <font color="#620000">\(\kappa\)</font> of
-        order one. Thresholds: <font color="#620000">\(\pm \frac{3}{4}\)</font> for
-        <font color="#620000">\(V_q / r_q\)</font>, <font color="#620000">\(\pm 1\)</font> for
-        <font color="#620000">\(Y_q / r_q\)</font>; the Gaussian part <font color="#620000">\(X_q
-        / r_q\)</font> on its own panel.
-      </p>
-      <p>
-        <img src="cqft_slides_L6-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.4418666666667em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
-      </p>
-      <p>
-        The pulse pushes <font color="#620000">\(V\)</font> past <font color="#620000">\(\frac{3}{4}
-        r\)</font>; the cube caps the excursion and brings it back. On this
-        range <font color="#620000">\(|X_q | > r_q / 32\)</font> most of the time:
-        <font color="#620000">\(\xi_q\)</font> is not rare until <font color="#620000">\(g_q\)</font>
-        is small (here <font color="#620000">\(q \gg 10^6\)</font>). In this
-        realisation the Gaussian part stays below the threshold, <font color="#620000">\(|X_q
-        | / r_q < \frac{3}{4}\)</font>.
-      </p>
+      <ul>
+        <li>
+          <p>
+            The excess is controlled <strong>at each resolution
+            separately</strong> by the noise tails and by the error <font
+            color="#620000">\(Z\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            No smallness of the coupling, and no integration in <font color="#620000">\(q\)</font>:
+            multiply by <font color="#620000">\(q^{- 3 / 2}\)</font> only to match the
+            energies.
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Proof: test with <font color="#620000">\(w^3\)</font>
       </div>
       <p>
-
-      </p>
-      <p>
-        Where <font color="#620000">\(w \ne 0\)</font>: <font color="#620000">\(|v| = |w| +
-        \frac{3}{4} r\)</font>, same sign.
+        Where <font color="#620000">\(w \neq 0\)</font>: <font color="#620000">\(|v| = |w| +
+        \frac{3}{4} r\)</font>, same sign, so <font color="#620000">\(avw^3 \geq
+        0\)</font>.
       </p>
       <ul>
         <li>
           <p>
-            <b>Mass:</b> <font color="#620000">\(qvw^3 = q|w|^4 + \frac{3}{4} qr
-            |w|^3\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <b>Cube:</b> <font color="#620000">\(|X| \le \frac{r}{32} + | \xi
-            |\)</font>, so <font color="#620000">\(\text{sgn} (w)  (v + X) \ge |w| +
-            \frac{11}{16} r - | \xi |\)</font>; the cube is increasing, and
+            <strong>Cube.</strong> <font color="#620000">\(\operatorname{sgn} (w)  (v +
+            g) \geq |w| + \frac{11}{16} r - | \xi |\)</font>, and <font color="#620000">\(\gamma
+            r^2 = q\)</font>:
           </p>
           <center>
-            \(\displaystyle \frac{\gamma}{3} w^3  (v + X)^3 \ge
-            \frac{\gamma}{12} w^6 + \frac{q}{4} w^4 -
-\frac{4225}{6} \gamma
-            \xi^6  \qquad (\gamma r^2 = q) .\)
+            \(\displaystyle \frac{\gamma}{3} w^3  (v + g)^3 \geq
+            \frac{\gamma}{12} w^6 + \frac{q}{4} w^4 +
+\frac{qr}{13} |w|^3 -
+            \frac{4225}{6} \gamma \xi^6 .\)
           </center>
+        </li>
+        <li>
           <p>
-            <strong>Large-field coercivity: a sixth power and a quarter of the
-            mass.</strong>
+            <strong>Noise.</strong> <font color="#620000">\(pgw^3 \leq \frac{qr}{32}
+            |w|^3 + q | \xi | |w|^3\)</font>: the first term is absorbed by
+            the cube, and <font color="#620000">\(q | \xi | |w|^3 \leq \frac{q}{8} w^4
+            + 54 q \xi^4\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <b>Memory:</b> <font color="#620000">\(|v - w| \le \frac{3}{4} r\)</font>,
-            <font color="#620000">\(\int_{q_0}^q r \le \frac{2}{3} qr\)</font>: <font
-            color="#620000">\(w^3  \hspace{-0.17em} \int v \le \frac{1}{2} qr|w|^3 +
-            w^3  \hspace{-0.17em}
-\int w\)</font>; the first is absorbed by
-            <font color="#620000">\(\frac{3}{4} qr |w|^3\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <b>Forcing:</b> <font color="#620000">\(w^3 f \le \frac{\gamma}{48} w^6 +
-            \frac{12}{\gamma} f^2\)</font>.
+            <strong>Error.</strong> <font color="#620000">\(q |z| |w|^3 \leq
+            \frac{\gamma}{48} w^6 + \frac{12}{\gamma} q^2 z^2\)</font>.
           </p>
         </li>
       </ul>
-      <p>
-        Multiply by <font color="#620000">\(q^{- 3 / 2}\)</font>, integrate,
-        H&ouml;lder and Hardy: <font color="#620000">\(\int q^{- 3 / 2} w^3
-        \hspace{-0.17em} \int w \le \frac{8}{7}  \int q^{- 1 /
-2}
-        w^4\)</font>, and <font color="#620000">\(\frac{5}{4} - \frac{8}{7} =
-        \frac{3}{28}\)</font>.
-      </p>
+      <div class="slide-block">
+        <p>
+          Above the threshold the cube provides a sixth power, a mass <font
+          color="#620000">\(q\)</font> and a cubic term which dominates the noise below
+          the threshold.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Two elementary inequalities
       </div>
       <p>
-
-      </p>
-      <p>
-        For <font color="#620000">\(x, \rho \ge 0\)</font>:<span style="margin-left: 1em"></span><font
-        color="#620000">\(\frac{1}{4} x^3 + 64 \rho^3 - 3 x^2 \rho = \frac{1}{4}  (x -
-        8 \rho)^2  (x + 4
-\rho) \ge 0\)</font>, hence
+        For <font color="#620000">\(x, \rho, u, r \geq 0\)</font>:
       </p>
       <center>
-        \(\displaystyle (x - \rho)^3 \ge \tfrac{3}{4} x^3 - 65 \rho^3 .\)
+        \(\displaystyle (x - \rho)^3 \geq \frac{3}{4} x^3 - 65 \rho^3,\)
       </center>
-      <p>
-        With <font color="#620000">\(x = u + \frac{11}{16} r\)</font>: <font color="#620000">\(u^3
-        x^3 \ge u^6 + 3 (\tfrac{11}{16})^2 r^2 u^4\)</font>, <font color="#620000">\(\frac{3}{4}
-        (\frac{11}{16})^2 = \frac{363}{1024} > \frac{1}{4}\)</font>, and <font
-        color="#620000">\(\frac{65}{3} u^3 \rho^3 \le \frac{1}{6} u^6 + \frac{4225}{6}
-        \rho^6\)</font>. So
-      </p>
       <center>
         \(\displaystyle \frac{1}{3} u^3  \left( u + \frac{11}{16} r - \rho
-        \right)^3 \ge \frac{1}{12}
-u^6 + \frac{1}{4} r^2 u^4 - \frac{4225}{6}
-        \rho^6 .\)
+        \right)^3 \geq \frac{1}{12}
+u^6 + \frac{1}{4} r^2 u^4 + \frac{1}{13}
+        r^3 u^3 - \frac{4225}{6} \rho^6 .\)
       </center>
-      <div class="slide-block">
-        <p>
-          <strong>What the scalar lemma says</strong>
-        </p>
-        <p>
-          The excess of the forecast over the threshold is controlled by how
-          often the <strong>Gaussian</strong> field is large (known, <font
-          color="#620000">\(N\)</font>-independent) and by the
-          <strong>backward</strong> forcing. No smallness of the coupling;
-          pathwise.
-        </p>
-      </div>
+      <p>
+        <strong>Proof.</strong> <font color="#620000">\(\frac{1}{4} x^3 + 64 \rho^3 - 3
+        x^2 \rho = \frac{1}{4}  (x - 8 \rho)^2  (x + 4
+\rho) \geq 0\)</font>.
+        Then <font color="#620000">\(x = u + b\)</font>, <font color="#620000">\(b =
+        \frac{11}{16} r\)</font>: <font color="#620000">\(\frac{3}{4} b^2 > \frac{1}{4}
+        r^2\)</font>, <font color="#620000">\(\frac{1}{4} b^3 > \frac{1}{13}
+        r^3\)</font>, and <font color="#620000">\(\frac{65}{3} u^3 \rho^3 \leq
+        \frac{1}{6} u^6 + \frac{4225}{6} \rho^6\)</font>.
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         The lattice version
       </div>
-      <p>
-
-      </p>
       <div class="slide-box">
-        <p style="margin-top: 1em; margin-bottom: 1em">
+        <p style="margin-top: 1em">
           <font color="#800000"><font color="#800000"><strong>Proposition.
           </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(forward
           coercivity) </strong></font></font></class>For <font color="#620000">\(q_0\)</font>
-          large, at every <font color="#620000">\(N, T\)</font>, pathwise:<span style="margin-left: 1em"></span><font
-          color="#620000">\(J_T \le C (G_T + E_T)\)</font>, <span style="margin-left: 1em"></span><font
-          color="#620000">\(\|G_T \|_{L^p} \le C \gamma^3 p^5\)</font>.</i>
+          large, at every <font color="#620000">\(N\)</font>, pathwise and for every
+          <font color="#620000">\(q\)</font>,</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle q \|w_q \|_4^4 + \gamma \|w_q \|_6^6 + \gamma
+            \|t_q \|_6^6 \leq C (q\| \xi_q
+\|_4^4 + \gamma \| \xi_q \|_6^6 +
+            \gamma^{- 1} q^2 \|Z_q \|_2^2) .\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>So <font color="#620000">\(J_T \leq C (G_T + E_T)\)</font>, and <font
+          color="#620000">\(\|G_T \|_{L^p} \leq C \gamma^3 p^5\)</font>.</i>
         </p>
       </div>
-      <p>
-        New terms:
-      </p>
       <ul>
         <li>
           <p>
-            <b>Laplacian:</b> <font color="#620000">\(w^3 = \phi' (V)\)</font>, <font
-            color="#620000">\(\phi\)</font> convex, so <font color="#620000">\(\langle \phi'
-            (V), - \Delta V \rangle = N^{- 1}  \sum_{x \sim x'} (\phi' (V_x)
--
-            \phi' (V_{x'}))  (V_x - V_{x'}) \ge 0\)</font>.
+            <strong>Elliptic term:</strong> <font color="#620000">\(w^3 = \phi'
+            (V)\)</font>, <font color="#620000">\(\phi\)</font> convex, so <font color="#620000">\(\langle
+            w^3, K_{q_0} V \rangle \geq 0\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <b>Coordinate correction:</b> <font color="#620000">\(\varrho = \varrho^0 +
-            \varrho^1\)</font>, <font color="#620000">\(\| \varrho^0 \|_{\infty} \le
-            \varepsilon r\)</font> (threshold shift; memory absorbed by the
-            spare <font color="#620000">\(\frac{1}{4} qr |w|^3\)</font>), <font color="#620000">\(\|
-            \varrho^1 \|_j \le C \varepsilon (\|w\|_j +\| \xi \|_j)\)</font>
-            (memory absorbed by <font color="#620000">\(\frac{3}{28}\)</font>).
-            Operator bounds: <font color="#620000">\(\varrho\)</font> is nonlocal but
-            small.
+            <strong>Coordinate correction:</strong> <font color="#620000">\(\varrho =
+            \varrho^0 + \varrho^1\)</font>, <font color="#620000">\(\| \varrho^0
+            \|_{\infty} \leq \varepsilon r\)</font> shifts the threshold,
+            <font color="#620000">\(\| \varrho^1 \|_j \leq C \varepsilon (\|w\|_j +\|
+            \xi \|_j)\)</font> is absorbed.
           </p>
         </li>
         <li>
           <p>
-            <b>Backward forcing:</b> <font color="#620000">\(\gamma^{- 1}  \int q^{- 3
-            / 2} \|F^Z \|^2 \le 16 E_T\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <b>Gaussian tails:</b> <font color="#620000">\(\text{Var} X_q (x) \lesssim
-            \sqrt{q}\)</font> vs threshold <font color="#620000">\(\frac{1}{32}  (q /
-            \gamma)^{1 / 2}\)</font>: <font color="#620000">\(| \| \xi_q \|_j^j |_p \le
-            C_j p^{j / 2} q^{j / 4} \mathrm{e}^{- c \sqrt{q} /
-(p
-            \gamma)}\)</font>.
+            <strong>Noise tails:</strong> <font color="#620000">\(\mathbb{P} (| \zeta_q
+            (x) | > r_q / 32) \leq 2 \mathrm{e}^{- c \sqrt{q}
+            /
+\gamma}\)</font>, by the lemma.
           </p>
         </li>
       </ul>
-      <p>
-        <font color="#620000">\(X\)</font> is Gaussian under the interacting measure:
-        <strong>no information on the interacting field is used</strong>.
-      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        <font color="#620000">\(L^{\infty}\)</font> coercivity
+      </div>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>For <font color="#620000">\(q_0\)</font> large, at
+          every <font color="#620000">\(N\)</font>, pathwise and for every <font color="#620000">\(q\)</font>,</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \|Y_q \|_{\infty} \leq C \left[ \left(
+            \frac{q}{\gamma} \right)^{1 / 3} \|
+\zeta_q \|_{\infty}^{1 / 3}
+            +\| \zeta_q \|_{\infty} + q^{1 / 4} + q\|Z_q \|_2
+\right] .\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>So <font color="#620000">\(t_q = 0\)</font> whenever <font color="#620000">\(\|
+          \zeta_q \|_{\infty} + q \|Z_q \|_2 \leq cr_q\)</font>.</i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            Remove the error: <font color="#620000">\(\mathcal{H}= (q - q_0) C_{q_0}
+            Z_q\)</font>, with <font color="#620000">\(\|\mathcal{H}\|_{\infty}
+            \lesssim q \|Z_q \|_2\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At a maximum of <font color="#620000">\(W = V -\mathcal{H}\)</font>, the
+            elliptic term has a sign: <font color="#620000">\(\frac{\gamma}{3} Y^3 \leq
+            q \|d\|_{\infty}\)</font>. <strong>The cube alone gives the
+            bound.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Large fields occur only when the noise or the error is
+            large.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            With <font color="#620000">\(\| \zeta_q \|_{\infty} \lesssim q^{1 /
+            4}\)</font> and <font color="#620000">\(\|Z_q \|_2 \lesssim q^{- 5 /
+            4}\)</font> (Doob on <font color="#620000">\(\mathbb{E}_q
+            A^{\text{l}}\)</font>): <font color="#620000">\(\|Y_q \|_{\infty} \lesssim
+            q^{5 / 12} \ll r_q\)</font>, up to logarithms.
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
@@ -775,7 +779,7 @@ q_0^{- 3 / 2} .\)
         fixed <font color="#620000">\(N, T\)</font>, absorb.
       </p>
       <center>
-        <img src="cqft_slides_L6-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 7.82734545454545em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+        <img src="cqft_slides_L6-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 7.82734545454545em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
       </center>
       <p>
         The smallness is in the <strong>feedback</strong>, independent of
@@ -792,7 +796,7 @@ q_0^{- 3 / 2} .\)
 
       </p>
       <p>
-        Once the boundary term is removed (Lecture 7):
+        Once the boundary term is removed (Section 16):
       </p>
       <center>
         \(\displaystyle \sup_N \|E^N_{\infty} \|_{L^p} + \sup_N \|J^N_{\infty}
@@ -849,6 +853,994 @@ q_0^{- 3 / 2} .\)
       </div>
       <p>
         <font style="font-size: 84.1%"><font color="#707070">Barashkov&ndash;G. 2020</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Removing the cutoffs
+      </div>
+      <p>
+
+      </p>
+      <p>
+        So far, at every lattice <font color="#620000">\(N\)</font> and upper scale
+        <font color="#620000">\(T\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \|E_T \|_{L^p} + \|J_T \|_{L^p} \le C_{\gamma}  (1 +
+        p^5 + \delta_{N, T, p}),
+\qquad \delta_{N, T, p} = \|TZ_T \|^2_{L^{2
+        p} (\mathbb{P}; L^2)} .\)
+      </center>
+      <p>
+        Three things remain:
+      </p>
+      <ol>
+        <li>
+          <p>
+            the boundary term vanishes: <font color="#620000">\(TZ_T \to 0\)</font> at
+            fixed <font color="#620000">\(N\)</font>;
+          </p>
+        </li>
+        <li>
+          <p>
+            uniform energy bounds <font color="#620000">\(\Rightarrow\)</font>
+            compactness of processes and measures;
+          </p>
+        </li>
+        <li>
+          <p>
+            identify the limit: coefficients, noise, equations.
+          </p>
+        </li>
+      </ol>
+      <div class="slide-block">
+        <p>
+          <strong>The subtle point</strong>
+        </p>
+        <p>
+          Convergence of the fields does not pass an FBSDE to the limit: the
+          backward martingale could acquire <strong>extra noise</strong>. The
+          statistical meaning of the backward variable saves us.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">The boundary at infinite
+        resolution</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 6</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The boundary lemma
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\bar{\Gamma}_q\)</font> was built to converge to the
+        bare action: <font color="#620000">\(\mu_q \to \mu_N\)</font>, <font color="#620000">\(\Theta_q
+        \to 0\)</font>, corrections integrated from <font color="#620000">\(q =
+        \infty\)</font>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(fixed
+          <font color="#620000">\(N\)</font>, constants depend on <font color="#620000">\(N\)</font>)
+          </strong></font></font></class></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \|Y_q - \Phi_{\infty} \|_{L^p} + \|qZ_q \|_{L^p}
+            \le C_{N, p}  \hspace{0.17em}
+q^{- 1 / 2}, \qquad \text{hence}
+            \qquad \delta_{N, T, p} \le C_{N, p} T^{- 1}
+.\)
+          </center></i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            The field at resolution <font color="#620000">\(q\)</font>: <font color="#620000">\(\Phi_q
+            = C_q P_q = (q - q_0) C_q \Phi_{\infty} + C_q B_{q - q_0}
+            \to
+\Phi_{\infty}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\Phi_q = Y_q + C_q D \bar{\Gamma}_q (Y_q)\)</font>,
+            so <font color="#620000">\(Y_q - \Phi_q = O (q^{- 1})\)</font> and <font
+            color="#620000">\(D \bar{\Gamma}_q (Y_q) \to DV_N (\Phi_{\infty})\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Exact minus approximate coordinate identity:
+          </p>
+          <center>
+            \(\displaystyle qZ_q = qC_q  [D \bar{\Gamma}_q (Y_q) -\mathbb{E}_q
+            DV_N (\Phi_{\infty})] ;\)
+          </center>
+          <p>
+            compare <font color="#620000">\(\mathbb{E}_q G\)</font> with the
+            <strong>observed</strong> <font color="#620000">\(G^0_q = DV_N
+            (\Phi_q)\)</font>: <font color="#620000">\(\|\mathbb{E}_q G - G\| \le 2 \|G
+            - G^0_q \|\)</font>.
+          </p>
+        </li>
+      </ul>
+      <p>
+        No uniform estimate, no posterior concentration.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        UV stability
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Let <font color="#620000">\(T \to \infty\)</font> at fixed <font color="#620000">\(N\)</font>
+        (paths and <font color="#620000">\(\nu_N\)</font> do not depend on <font color="#620000">\(T\)</font>;
+        monotone convergence; <font color="#620000">\(\delta_{N, T, p} \to 0\)</font>).
+        <strong>Only then</strong> take <font color="#620000">\(\sup_N\)</font>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(UV
+          stability) </strong></font></font></class>For <font color="#620000">\(q_0 =
+          q_0 (\gamma)\)</font> large,</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \sup_N (\|E^N_{\infty} \|_{L^p} +\|J^N_{\infty}
+            \|_{L^p}) \le C_{\gamma}  (1 +
+p^5), \qquad \sup_N \mathbb{E}
+            \|Z^N_q \|_2^2 \le C_{\gamma} q^{- 5 / 2},\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>and <font color="#620000">\(\sup_N \mathbb{E} \exp \{c (E^N_{\infty} +
+          J^N_{\infty})^{1 / 5} \} < \infty\)</font>.</i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(C_{N, p}\)</font> diverges with <font color="#620000">\(N\)</font>:
+            never take <font color="#620000">\(\sup_N\)</font> of <font color="#620000">\(C_{N,
+            p} / T\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The force: <font color="#620000">\(F_q =\mathbb{E}_q  [- DV_N
+            (\Phi_{\infty})] = K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</font>, the
+            explicit force at the approximate forecast, corrected by <font
+            color="#620000">\(K_q Z_q\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Compactness</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 6</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Suprema by a maximum principle
+      </div>
+      <p>
+        Embed by cells <font color="#620000">\(\square_x\)</font>: <font color="#620000">\(\iota_N
+        : H_N \to H = L^2 (\mathbb{T}^3)\)</font> isometric, <font color="#620000">\(j_N
+        = \iota_N^{\ast}\)</font>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(supremum
+          after closure) </strong></font></font></class>Let <font color="#620000">\(\mathcal{Y}=
+          \sup_q q^{- 5 / 12}  (\log (2 + q))^{- 1 / 6} \|Y_q
+          \|_{\infty}\)</font>, <font color="#620000">\(\mathcal{Z}= \sup_q q^{5 / 4}
+          \|Z_q \|_2\)</font>. Uniformly in <font color="#620000">\(N\)</font>,</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \mathcal{Y} \leq C_{\gamma}  (1
+            +\mathcal{N}+\mathcal{Z}), \qquad
+\|\mathcal{N}\|_{L^p} \leq C
+            \sqrt{p}, \qquad \|\mathcal{Z}^2 \|_{L^p} \leq
+C_{\gamma}  (1 +
+            p^5) .\)
+          </center></i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            From the <font color="#620000">\(L^{\infty}\)</font> coercivity above:
+            <strong>lattice maximum principle</strong> in the field equation,
+            no memory.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\mathcal{N}\)</font>: supremum of the noise (convex
+            domination, Dudley, Doob). <font color="#620000">\(\mathcal{Z}\)</font>:
+            Doob on <font color="#620000">\(\mathbb{E}_q A^{\text{l}}\)</font>, after
+            the boundary term is removed.
+          </p>
+        </li>
+        <li>
+          <p>
+            The exponent <font color="#620000">\(5 / 12 < \frac{1}{2}\)</font> keeps
+            <font color="#620000">\(Y\)</font> below the threshold.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Finite-resolution suprema have all moments, uniformly in <font color="#620000">\(N\)</font>.
+        At the terminal resolution there is no such bound: <font color="#620000">\(\Phi_{\infty}\)</font>
+        is a distribution.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Regularity and the terminal field
+      </div>
+      <font style="font-size: 90.0%"><p>
+
+      </p><p>
+        <b>Space.</b> <font color="#620000">\(K_{q_0} V_q = f_q\)</font> with <font
+        color="#620000">\(\mathbb{E} \int_I \|f\|_2^2 \le C_I\)</font> (energies), so
+        <font color="#620000">\(V \in L^2 (I ; H^1)\)</font>; <font color="#620000">\(Y = V +
+        \zeta - \varrho (Y)\)</font> has the regularity of the noise, that of
+        the free field: <font color="#620000">\(H^{\sigma}\)</font>, <font color="#620000">\(\sigma
+        < \frac{1}{2}\)</font>, in space; <font color="#620000">\(H^{\theta}\)</font>,
+        <font color="#620000">\(\theta < \frac{1}{2}\)</font>, in scale; tight in
+        space&ndash;time <font color="#620000">\(L^p\)</font> (and in <font color="#620000">\(C
+        (I ; H)\)</font>: <font color="#620000">\(C^{1 / 4}\)</font> H&ouml;lder bound
+        <font color="#620000">\(+\)</font> uniform Fourier tails).
+      </p><p>
+        <b>Terminal field.</b> <font color="#620000">\(H_q^2 \le \frac{C}{q}
+        C_q\)</font> gives, for <font color="#620000">\(\frac{1}{2} < s <
+        \frac{3}{2}\)</font>,
+      </p><center>
+        \(\displaystyle \int_Q^{\infty} \|(1 - \Delta)^{- s / 2} H_q
+        \|_{\text{HS}}^2 \mathrm{d} q \le
+C \int_Q^{\infty} \frac{1}{q}
+        \sum_k \frac{(1 + |k|^2)^{- s}}{q + c |k|^2}
+\mathrm{d} q \le C_s Q^{-
+        (s - \frac{1}{2})},\)
+      </center><p>
+        and the drifts have squared tails <font color="#620000">\(O (Q^{- 3})\)</font>,
+        <font color="#620000">\(O (Q^{- 5 / 2})\)</font>, <font color="#620000">\(O (Q^{- 3 /
+        2})\)</font>. Doob:
+      </p><center>
+        \(\displaystyle \sup_N \mathbb{E} \sup_{t \ge Q} \|Y_t - Y_Q \|_{H^{-
+        s}}^2 \le C_s Q^{- (s -
+\frac{1}{2})} .\)
+      </center><div class="slide-box">
+        <p style="margin-top: 1em; margin-bottom: 1em">
+          <font color="#800000"><font color="#800000"><strong>Corollary.
+          </strong></font></font><i><font color="#620000">\(\nu_N\)</font> is tight in
+          <font color="#620000">\(H^{- s} (\mathbb{T}^3)\)</font> for every <font
+          color="#620000">\(s > \frac{1}{2}\)</font>, with all moments uniformly in
+          <font color="#620000">\(N\)</font>. (Threshold of the free field in <font
+          color="#620000">\(d = 3\)</font>.)</i>
+        </p>
+      </div></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 160.0%"><b><font color="#800000">Identifying the limit</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 6</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The deterministic coefficients
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Uniform bounds do not identify a limit: a weakly convergent vertex
+        cannot in general be contracted against a varying covariance. Three
+        tools:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Weak vertex measures</strong>: bounded rooted norms <font
+            color="#620000">\(\Rightarrow\)</font> signed measures, weakly compact; the
+            centred kernel in a first-moment topology. The limits solve the
+            same fixed point, unique in its ball: the whole sequence
+            converges.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Compact sandwich</strong>: <font color="#620000">\(G_N \to
+            G\)</font> in <font color="#620000">\(\text{HS}\)</font>, <font color="#620000">\(\textsf{B}_N
+            \to \textsf{B}\)</font> weakly, symmetric, uniformly bounded,
+            <font color="#620000">\(\sup_N \|G_N \textsf{B}_N \| \le \theta <
+            1\)</font>, <font color="#620000">\(\|G \textsf{B} \| \le \theta\)</font>
+            <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\((I + G_N
+            \textsf{B}_N)^{- 1} G_N \to (I + G \textsf{B})^{- 1} G\)</font> in
+            <font color="#620000">\(\text{HS}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Contraction against a moving covariance</strong>: rows of
+            the inverses are H&ouml;lder <font color="#620000">\(+\)</font> HS
+            convergence <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\((H^N)^2
+            \to H^2\)</font> uniformly; weak vertices can be contracted.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Hence <font color="#620000">\(H^N_q (Y^N_q) \to H_q (Y_q)\)</font> in <font
+        color="#620000">\(L^2 (I ; \text{HS})\)</font> and <font color="#620000">\(b^N_q (Y^N_q)
+        \to b_q (Y_q)\)</font> in <font color="#620000">\(L^2 (I ; H)\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Hidden noise
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(L^n_t = \int_0^t g_n (s) \hspace{0.17em} \mathrm{d}
+        B_s\)</font>, <font color="#620000">\(g_n = 1 + \sin (ns)\)</font>: integrands
+        <font color="#620000">\(\to 1\)</font> weakly, squares <font color="#620000">\(\to
+        \frac{3}{2}\)</font>.
+      </p>
+      <center>
+        \(\displaystyle (L^n, B) \Longrightarrow (B + 2^{- 1 / 2}  \tilde{B},
+        \hspace{0.27em} B),
+\qquad \tilde{B} \perp B.\)
+      </center>
+      <p>
+        <img src="cqft_slides_L6-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 12.4881454545455em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+      </p>
+      <p>
+        Left: <font color="#620000">\((B_1, L^n_1 - B_1)\)</font>, <font color="#620000">\(n =
+        200\)</font>: correlation <font color="#620000">\(\approx 0\)</font>, variance
+        of the gap <font color="#620000">\(\approx \frac{1}{2}\)</font> &mdash; the
+        residual does not vanish and is orthogonal to <font color="#620000">\(B\)</font>.
+        Right: <font color="#620000">\(\int_0^t g_n \to t\)</font> but <font color="#620000">\(\int_0^t
+        g_n^2 \to \frac{3}{2} t\)</font>.
+      </p>
+      <p>
+        A limiting FBSDE obtained this way would carry an <strong>extra
+        martingale</strong> orthogonal to the driving noise. We need
+        <strong>strong</strong> compactness of the backward integrand <font
+        color="#620000">\(\Xi = \text{Cov} - H (Y)\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The Riccati equation of the posterior covariance
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i><font color="#620000">\(\text{Cov}_q = D^2
+          \mathcal{K}_q (P_q) \ge 0\)</font> and</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \text{dCov}_q = - \text{Cov}_q^2 \hspace{0.17em}
+            \mathrm{d} q + D^3
+\mathcal{K}_q (P_q) [\mathrm{d} W_q]\)
+          </center></i>
+        </p>
+      </div>
+      <p>
+        Lecture 4: conditional variance is resolved at rate <font color="#620000">\(\text{Cov}_t
+        \dot{\mathcal{R}}_t \text{Cov}_t\)</font>; here <font color="#620000">\(\partial_q
+        \mathcal{R}= 1\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\langle f, \text{Cov}_q f \rangle \ge 0\)</font>: a
+            <strong>nonnegative supermartingale</strong>, initial value <font
+            color="#620000">\(\text{Var}_{\nu_N} \langle \Phi_{\infty}, f
+            \rangle\)</font> bounded uniformly (uniform moments, Corollary).
+          </p>
+        </li>
+        <li>
+          <p>
+            Stop at level <font color="#620000">\(K\)</font>: decreasing part and
+            bracket have bounded expectations <font color="#620000">\(\Rightarrow\)</font>
+            time regularity <font color="#620000">\(W^{a, 1}\)</font>, <font color="#620000">\(a
+            < \frac{1}{2}\)</font> <font color="#620000">\(\Rightarrow\)</font> strong
+            compactness of each finite block.
+          </p>
+        </li>
+        <li>
+          <p>
+            Spatial tails: isometry <font color="#620000">\(+\)</font> symmetry, and
+            terminal averaging <font color="#620000">\(\psi_Q =\mathbb{E}_Q  \int_L^{L
+            + 1} (Y_s + Z_s) \mathrm{d} s\)</font> (<font color="#620000">\(H^{\sigma}\)</font>
+            bound on <font color="#620000">\(Y\)</font>, <font color="#620000">\(\mathbb{E}
+            \|Z_s \|^2 \le Cs^{- 5 / 2}\)</font>).
+          </p>
+        </li>
+      </ul>
+      <p>
+        <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\(\text{Cov}^N\)</font>
+        tight in strong <font color="#620000">\(L^2 (I ; \text{HS})\)</font>; brackets
+        <font color="#620000">\(\int \text{CovCov}^{\ast}\)</font> and covariations
+        with <font color="#620000">\(W\)</font> converge.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Identification of the martingales
+      </div>
+      <p>
+
+      </p>
+      <p>
+        On a common filtered space (Skorokhod), along a subsequence:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\psi\)</font> is a continuous square-integrable
+            martingale for the joint filtration; its bracket and its
+            covariation with <font color="#620000">\(W\)</font> are those of <font
+            color="#620000">\(\int \text{Cov} \hspace{0.17em} \mathrm{d} W\)</font>;
+          </p>
+        </li>
+        <li>
+          <p>
+            so <font color="#620000">\(\psi - \int \text{Cov} \hspace{0.17em}
+            \mathrm{d} W\)</font> has zero bracket and vanishes: <strong>no
+            extra martingale</strong>;
+          </p>
+        </li>
+        <li>
+          <p>
+            same for the forward equation, and <font color="#620000">\(X = \int C
+            \hspace{0.17em} \mathrm{d} W\)</font> with the
+            <strong>same</strong> <font color="#620000">\(W\)</font>.
+          </p>
+        </li>
+      </ul>
+      <center>
+        \(\displaystyle \begin{aligned}
+  Y_q & = \int_{q_0}^q [b (Y) + H (Y)
+        Z] \mathrm{d} s + \int_{q_0}^q H (Y)
+  \hspace{0.17em} \mathrm{d}
+        W,\\
+  Z_q & = - \int_{q_0}^q [b (Y) + H (Y) Z] \mathrm{d} s +
+        \int_{q_0}^q \Xi
+  \hspace{0.17em} \mathrm{d} W, \qquad X_q =
+        \int_{q_0}^q C_s \hspace{0.17em}
+  \mathrm{d} W_s .
+\end{aligned}\)
+      </center>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The result (I): convergence and the limiting FBSDE
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(subsequential
+          construction) </strong></font></font></class>For <font color="#620000">\(\lambda
+          > 0\)</font>, <font color="#620000">\(q_0\)</font> large, along a subsequence
+          of lattices:</i>
+        </p>
+        <div style="margin-bottom: 1em">
+          <i><ol>
+            <li>
+              <p>
+                <font color="#620000">\((Y^N, Z^N, \psi^N, X^N)\)</font>, with <font
+                color="#620000">\(X^N = \int C \hspace{0.17em} \mathrm{d} W^N\)</font>,
+                converge in <font color="#620000">\(C (I ; H)\)</font>, <font color="#620000">\(W^N\)</font>
+                in <font color="#620000">\(C (I ; H^{- r})\)</font>, <font color="#620000">\(r >
+                \frac{3}{2}\)</font>, <font color="#620000">\((\text{Cov}^N,
+                \Xi^N)\)</font> in strong <font color="#620000">\(L^2 (I ;
+                \text{HS})\)</font>, jointly, a.s. on a new space;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limit solves the FBSDE on <font color="#620000">\([q_0,
+                \infty)\)</font> with the continuum coefficients <font color="#620000">\(b,
+                H\)</font> (unique in their ball), an <font color="#620000">\(H\)</font>-cylindrical
+                Brownian motion obtained as the limit of the lattice
+                innovations, <font color="#620000">\(\text{Cov} = H (Y) + \Xi \ge
+                0\)</font>, and <font color="#620000">\(\mathbb{E} \|Z_q \|^2 \le Cq^{-
+                5 / 2}\)</font>;
+              </p>
+            </li>
+          </ol></i>
+        </div>
+      </div>
+      <p>
+        <font color="#620000">\(\psi^N\)</font> is tight in <font color="#620000">\(C (I ;
+        H)\)</font> because its brackets <font color="#620000">\(\int \text{Cov}^N
+        \text{Cov}^{N \ast}\)</font> are tight and its Fourier tails are
+        uniformly small.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The result (II): the terminal law
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(subsequential
+          construction, continued) </strong></font></font></class></i>
+        </p>
+        <div style="margin-bottom: 1em">
+          <i><ol>
+            <p>
+
+            </p>
+            <li>
+              <p>
+                <font color="#620000">\(Y_q \to \Phi\)</font> in <font color="#620000">\(H^{-
+                s}\)</font>, <font color="#620000">\(s > \frac{1}{2}\)</font>, a.s. and
+                in mean square; <font color="#620000">\(\text{Law} (\Phi) =
+                \nu\)</font> is the weak limit of <font color="#620000">\(\nu_N\)</font>,
+                and <font color="#620000">\(\langle Y_q + Z_q, h \rangle =\mathbb{E}
+                [\langle \Phi, h \rangle
+\hspace{0.17em} | \hspace{0.17em}
+                \mathcal{F}_q]\)</font>;
+              </p>
+            </li>
+            <li>
+              <p>
+                the limiting thresholded energies (built with <font color="#620000">\(\zeta_q
+                = C_q (W_q + \int \psi - (q - q_0) \psi_q)\)</font>) obey the
+                bounds of UV stability.
+              </p>
+            </li>
+          </ol></i>
+        </div>
+      </div>
+      <p>
+        The posterior structure survives: <font color="#620000">\(\psi = Y + Z\)</font>
+        is a <strong>closed observable</strong>, <font color="#620000">\(Y\)</font> is
+        computed from the explicit action, <font color="#620000">\(Z\)</font> is small
+        at high resolution.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The renormalised field equation
+      </div>
+      <p>
+
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(integration
+          by parts) </strong></font></font></class><font color="#620000">\(G (\varphi)
+          = g (\langle \varphi, h_1 \rangle, \ldots, \langle \varphi,
+          h_k
+\rangle)\)</font>, <font color="#620000">\(g \in C_b^{\infty}\)</font>,
+          <font color="#620000">\(h, h_i\)</font> smooth:</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \lim_N \mathbb{E} [G (\iota_N \Phi^N_{\infty})
+            \langle \mu_N \Phi^N_{\infty} +
+\lambda (\Phi^N_{\infty})^3, j_N h
+            \rangle]\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle =\mathbb{E}_{\nu}  [D_h G (\Phi) - G (\Phi)
+            \langle \Phi, (q_0 - \Delta) h
+\rangle] .\)
+          </center></i>
+        </p>
+      </div>
+      <p>
+        Proof: Gaussian integration by parts in <font color="#620000">\(\mathrm{e}^{-
+        V_N - \frac{1}{2}  \langle \varphi, K_{q_0} \varphi \rangle}\)</font>;
+        tightness and uniform moments.
+      </p>
+      <ul>
+        <li>
+          <p>
+            The terminal case of the DS equations of Lecture 4.
+          </p>
+        </li>
+        <li>
+          <p>
+            The renormalised cube <font color="#620000">\(\mu_N \Phi + \lambda
+            \Phi^3\)</font> is identified only <strong>tested in
+            expectation</strong>, not as a random distribution.
+          </p>
+        </li>
+        <li>
+          <p>
+            Limiting force without terminal representative: <strong>not
+            proved</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At every finite resolution the force is explicit: <font color="#620000">\(F_q
+            = K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The field equation at resolution <font color="#620000">\(q\)</font>
+      </div>
+      <p>
+        In the limit: <font color="#620000">\(\Phi_q = C_q P_q\)</font>, <font color="#620000">\(\eta_q
+        = P_q - (q - q_0) \psi_q\)</font>, <font color="#620000">\(F_q = K_q \psi_q -
+        P_q\)</font>, <font color="#620000">\(J_q = (q - q_0) C_q \to I\)</font>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i>For every <font color="#620000">\(q\)</font>, with
+          no renormalisation constant, pathwise as distributions,</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle K_{q_0} \Phi_q = J_q F_q + \eta_q, \qquad
+            \mathbb{E}D_{J_q h} G (\Phi_q)
+=\mathbb{E} [G (\Phi_q) \langle
+            \eta_q, h \rangle] .\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><font color="#620000">\(\langle F, h \rangle\)</font>, <font color="#620000">\(\langle
+          \eta, h \rangle\)</font> are martingales, and <font color="#620000">\(\|
+          \langle F_q + D \bar{\Gamma}_q (Y_q), h \rangle \|_{L^2}
+          \lesssim
+\|h\|_{H^2} q^{- 1 / 4}\)</font>.</i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            <strong>Proof of DS:</strong> <font color="#620000">\(\eta_q =\mathbb{E}_q
+            B_{q - q_0}\)</font> and <font color="#620000">\(\Phi_q = J_q \Phi_{\infty}
+            + C_q B_{q - q_0}\)</font>: Gaussian integration by parts in <font
+            color="#620000">\(B\)</font>, then <font color="#620000">\(N \to \infty\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>The renormalised cube is an observable:</strong> the
+            unique martingale in the class of the explicit <font color="#620000">\(- D
+            \bar{\Gamma}_q (Y_q)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(q \to \infty\)</font> recovers the integration by
+            parts formula. Not proved: that <font color="#620000">\(F\)</font> is
+            closed.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Exponential integrability: the tilt
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <strong>Hairer&ndash;Steele.</strong> <font color="#620000">\(\hat{\nu}
+        =\mathcal{Z}^{- 1} \mathrm{e}^W \nu\)</font>. For every set <font
+        color="#620000">\(A\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \mathcal{Z} \le \exp (\sup_A W) / \hat{\nu} (A) .\)
+      </center>
+      <p>
+        It is enough that the tilted measure gives mass <font color="#620000">\(\frac{1}{2}\)</font>
+        to a fixed set. They use the dynamics: for <font color="#620000">\(W =
+        \frac{\beta}{4} \langle \varphi, \psi \rangle^4\)</font> the force
+        <font color="#620000">\(\beta \psi \langle \Phi, \psi \rangle^3\)</font> is
+        below the cube, and coming down from infinity is uniform.
+      </p>
+      <p>
+        <strong>In the filter.</strong> Same channel, same <font color="#620000">\(\bar{\Gamma}\)</font>,
+        prior <font color="#620000">\(\hat{\nu}_N\)</font>:
+      </p>
+      <ul>
+        <li>
+          <p>
+            the same <font color="#620000">\(b\)</font>, <font color="#620000">\(H\)</font>, the
+            same noise bound, the same forward and backward estimates;
+          </p>
+        </li>
+        <li>
+          <p>
+            only the boundary changes: <font color="#620000">\(T \hat{Z}_T \to DW
+            (\hat{\Phi})\)</font>, so
+          </p>
+        </li>
+      </ul>
+      <center>
+        \(\displaystyle \| \hat{E}_{\infty} \|_{L^p} + \| \hat{J}_{\infty}
+        \|_{L^p} \le C_{\gamma} (1
++ p^5 + \|DW (\hat{\Phi})\|_{L^{2 p}
+        (L^2)}^2) .\)
+      </center>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Closing: the scale adapts to the level
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Test the coordinate equation with <font color="#620000">\(\psi\)</font>, <font
+        color="#620000">\(X = \langle \hat{\Phi}, \psi \rangle\)</font>, <font color="#620000">\(P_q
+        = (q - q_0) \hat{\Phi} + B\)</font>:
+      </p>
+      <center>
+        \(\displaystyle |X| \le C (r_q + \|t_q \|_6 + \frac{\gamma}{q} \|t_q
+        \|_6^3
++\mathcal{N}_{\psi}) .\)
+      </center>
+      <p>
+        Choose <font color="#620000">\(Q\)</font> with <font color="#620000">\(r_Q \sim
+        |X|\)</font>, so <font color="#620000">\(Q \sim \gamma X^2\)</font>: then <font
+        color="#620000">\(\|t_q \|_6 \gtrsim |X|\)</font> on <font color="#620000">\([Q / 2,
+        Q]\)</font>, and
+      </p>
+      <center>
+        \(\displaystyle |X|^5 \lesssim 1 +\mathcal{N}_{\psi}^5 +
+        \hat{J}_{\infty} .\)
+      </center>
+      <p>
+        So <font color="#620000">\(W = \beta (1 + X^2)^{7 / 4}\)</font> closes for
+        small <font color="#620000">\(\beta\)</font>, uniformly in <font color="#620000">\(N\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \exp (\beta | \langle \Phi, \psi \rangle
+        |^{7 / 2}) \le C, \quad
+\mathbb{E} \exp (\beta \| \Phi \|_{H^{- s}}^2)
+        \le C \quad (s > \frac{1}{2}) .\)
+      </center>
+      <p>
+        <strong>Not quartic:</strong> on one site <font color="#620000">\(\hat{J} \sim
+        |X|^5\)</font> is sharp, while <font color="#620000">\(\|DW\|^2 \sim \beta^2
+        |X|^6\)</font>. The backward bound <font color="#620000">\(s / q\)</font>
+        ignores that <font color="#620000">\(H (Y)\)</font> is small on large fields.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Scale-by-scale DS and uniqueness
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <strong>DS along the scales.</strong> For <font color="#620000">\(G = g
+        (\langle \Phi_{q_1}, h_1 \rangle, \ldots, \langle \Phi_{q_k},
+        h_k
+\rangle)\)</font>, <font color="#620000">\(q_i \le q\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \sum_i \partial_i g \langle J_{q_i} h, h_i
+        \rangle =\mathbb{E}[G
+\langle \eta_q, h \rangle] =\mathbb{E}[G
+        (\langle \Phi_q, K_{q_0} h \rangle +
+\langle D \bar{\Gamma}_q (Y_q),
+        J_q h \rangle)] + O (q^{- 1 / 4}) .\)
+      </center>
+      <p>
+        <strong>Uniqueness in finite volume, conditional</strong> (as in
+        Hairer&ndash;Steele, Thm 2.2). <font color="#620000">\(\nu_N\)</font> is
+        invariant for the lattice equation with <font color="#620000">\(\mu_N = m_N +
+        c_N\)</font>. Assume lattice convergence, ergodicity and tightness in
+        our setting: if <font color="#620000">\(c_N \to c\)</font>, then <font color="#620000">\(\nu_N
+        \to \pi_c\)</font>, the unique invariant measure.
+      </p>
+      <ul>
+        <li>
+          <p>
+            The literature covers dyadic grids, unit coefficients and a fixed
+            finite part; our odd <font color="#620000">\(N\)</font> and varying <font
+            color="#620000">\(c_N\)</font> are assumed extensions.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <font color="#620000">\(\nu = \pi_c\)</font>, quartic tails hold: <font
+            color="#620000">\(\mathbb{E}_{\nu} \exp (\beta \langle \Phi, \psi
+            \rangle^4) < \infty\)</font> (Hairer&ndash;Steele).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Not proved here:</strong> convergence of <font color="#620000">\(c_N\)</font>
+            (lattice sums); uniqueness for the FBSDE as an equation; an
+            intrinsic proof.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        What is not proved
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Uniqueness</strong> for the FBSDE as an equation;
+            convergence of the finite part of the counterterm; an intrinsic
+            proof.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Small mass / strong coupling</strong>: the construction
+            needs <font color="#620000">\(\gamma q_0^{- 1 / 2}\)</font> small, i.e.
+            weak coupling <font color="#620000">\(\lambda / m \ll 1\)</font>. Removing
+            it needs a priori estimates without the small feedback <font
+            color="#620000">\(\gamma^2 / q_0\)</font>, and a coefficient construction
+            outside the perturbative ball.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Axioms</strong>: reflection positivity holds on the
+            lattice (lattice and mid-lattice planes) and passes to <font
+            color="#620000">\(\nu\)</font> for every coordinate reflection (standard;
+            exercise); rotation invariance and clustering need infinite
+            volume.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Infinite volume</strong>: the force and its Burgers flow
+            are intensive; estimates must be made local. Uniform-in-volume
+            coefficient bounds and local energy moments are open; retaining
+            the full FBSDE also needs control of the <strong>noise from
+            infinity</strong> in the nonlocal <font color="#620000">\(\Xi\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Summary of the course
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Wightman <font color="#620000">\(\to\)</font> Euclidean (L1) <font color="#620000">\(\to\)</font>
+        free field (L2) <font color="#620000">\(\to\)</font> stochastic quantisation,
+        scale decomposition (L3) <font color="#620000">\(\to\)</font> Polchinski,
+        FBSDE, variational problem (L4) <font color="#620000">\(\to\)</font> <font
+        color="#620000">\(\Phi^4_3\)</font> through the FBSDE in forecast coordinates
+        (L5&ndash;6).
+      </p>
+      <p>
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lecture 4 (formal)</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lectures 5&ndash;6</td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">in the limit</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">forecast <font color="#620000">\(\psi_t =\mathbb{E}_t
+            \Phi_T\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\psi = Y + Z\)</font></td>
+            <td style="text-align: center; vertical-align: middle">closed martingale</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">response <font color="#620000">\(H_t =
+            \text{Cov}_t\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\text{Cov} = H (Y) + \Xi\)</font></td>
+            <td style="text-align: center; vertical-align: middle">strong <font color="#620000">\(L^2 (\text{HS})\)</font>,
+            Riccati</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\Gamma_t\)</font>, Wetterich</td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\bar{\Gamma}_q\)</font> explicit, defect
+            <font color="#620000">\(e\)</font></td>
+            <td style="text-align: center; vertical-align: middle">deterministic coefficients</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle">force <font color="#620000">\(F_t\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(K_q Z_q - D \bar{\Gamma}_q
+            (Y_q)\)</font></td>
+            <td style="text-align: center; vertical-align: middle">observable at finite <font color="#620000">\(q\)</font></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">DS equation</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">integration by parts</td>
+            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">tested in expectation</td>
+          </tr></tbody>
+        </table>
+      </p>
+      <p>
+        <strong>UV stability</strong> <font color="#620000">\(=\)</font> an explicit
+        action predicts the conditional mean up to an error that is small at
+        high resolution.
       </p>
     </div>
   </body>

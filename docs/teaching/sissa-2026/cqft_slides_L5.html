@@ -109,7 +109,7 @@
         <strong>Wetterich equation</strong>.
       </p>
       <p>
-        <b>Lectures 5&ndash;7.</b> Construct <font color="#620000">\(\Phi^4_3\)</font>
+        <b>Lectures 5&ndash;6.</b> Construct <font color="#620000">\(\Phi^4_3\)</font>
         on <font color="#620000">\(\mathbb{T}^3\)</font> with this FBSDE:
       </p>
       <ol>
@@ -130,7 +130,7 @@
         <li>
           <p>
             <strong>removing the cutoffs</strong> and identifying the limit
-            (Lecture 7).
+            (Lecture 6).
           </p>
         </li>
       </ol>
@@ -625,7 +625,7 @@ H_q De_q .\)
           <p>
             <font color="#620000">\(Z\)</font>: backward. The terminal condition <font
             color="#620000">\(qZ_q \to 0\)</font> is <strong>proved</strong> at fixed
-            <font color="#620000">\(N\)</font> (Lecture 7), because <font color="#620000">\(\bar{\Gamma}_q
+            <font color="#620000">\(N\)</font> (Lecture 6), because <font color="#620000">\(\bar{\Gamma}_q
             \to\)</font> bare action.
           </p>
         </li>
@@ -695,8 +695,10 @@ H_q De_q .\)
       </p>
       <center>
         \(\displaystyle g_q = \gamma q^{- 1 / 2} (\text{dimensionless
-        coupling}), \qquad r_q = (q /
-\gamma)^{1 / 2} (\gamma r_q^2 = q :
+        coupling}),\)
+      </center>
+      <center>
+        \(\displaystyle r_q = (q / \gamma)^{1 / 2} (\gamma r_q^2 = q :
         \text{nonlinearity} \approx
 \text{regulator}) .\)
       </center>
@@ -796,6 +798,25 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Seed and corrections in graphs
+      </div>
+      <p>
+
+      </p>
+      <center>
+        <img src="cqft_slides_L5-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.87507878787879em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+      </center>
+      <center>
+        <img src="cqft_slides_L5-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.6225696969697em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070">Each step inserts the previous correction
+        into the trace: one more loop, one more <font color="#620000">\(g_q\)</font>.
+        Two steps give a defect of order <font color="#620000">\(g_q^3\)</font>.</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         The mass
       </div>
       <p>
@@ -853,7 +874,7 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
 
       </p>
       <p>
-        The two divergent self-energies of Lecture 4 &sect;10.2:
+        The two divergent self-energies of Appendix A.2 of Lecture 4:
       </p>
       <ul>
         <li>
@@ -892,6 +913,22 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         <font color="#620000">\(\mu_q\)</font> at fixed <font color="#620000">\(q\)</font> has a
         limit as <font color="#620000">\(N \to \infty\)</font>; <font color="#620000">\(\mu_N\)</font>
         does not. <strong>Never interchange the two limits.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The two mass renormalisations in graphs
+      </div>
+      <p>
+
+      </p>
+      <center>
+        <img src="cqft_slides_L5-5.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 27.7320242424242em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070">The cross is <font color="#620000">\(R_{0,
+        q}^2\)</font>. The bubble in <font color="#620000">\(D^4 h^{[2]} (0)\)</font>
+        produces the sunset.</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1160,6 +1197,136 @@ H_q (y)^2 \le Ca_2 (q) .\)
       <p>
         <b>Next:</b> estimates on <font color="#620000">\((Y, Z)\)</font> uniform in
         <font color="#620000">\(N\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Why not Polchinski with a frozen cube?
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <strong>Programme:</strong> keep <font color="#620000">\(- \lambda
+        \varphi^3\)</font> unclipped, clip the higher orders, pay in the
+        source of <font color="#620000">\(R = F - f\)</font>. Test it on one site:
+        <font color="#620000">\(K_q = q\)</font>, <font color="#620000">\(S = 1 / q\)</font>.
+      </p>
+      <center>
+        \(\displaystyle F_q (x) = - \lambda \mathbb{E}_x Y^3 = q (m_q (x) -
+        x), \quad |m_q (x) | \le 2
+\lambda^{- 1 / 4} + 2 (q|x| / \lambda)^{1 /
+        3} .\)
+      </center>
+      <center>
+        <img src="cqft_slides_L5-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.0773818181818em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        So <font color="#620000">\(R / (\lambda x^3) \to 1\)</font>: the remainder
+        <strong>cancels the cube</strong>. Field equation: <font color="#620000">\(qx =
+        (q - q_0) m_q + \eta_q\)</font>, only linear confinement.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The price of clipping
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(U^c = U_1 + U_2 \circ \kappa_q\)</font>, with <font
+        color="#620000">\(U_2\)</font> the first tree. For <font color="#620000">\(|x| \ge 2
+        r_q\)</font>, the force defect is exactly
+      </p>
+      <center>
+        \(\displaystyle E_q = S^2 U_1' U_1'' \approx 3 \lambda^2 S^2 x^5,\)
+      </center>
+      <p>
+        of size <font color="#620000">\((q / \lambda)^{1 / 2}\)</font> at the edge of
+        the clip: <strong>not integrable in</strong> <font color="#620000">\(q\)</font>.
+      </p>
+      <center>
+        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [E_q + S^2 (f^c)'
+        R_q] \hspace{0.17em}
+\mathrm{d} q + \Xi_q \hspace{0.17em} \mathrm{d}
+        W_q, \quad \text{bracket}
+\approx 3 \lambda^2 S^2 x^5 - 3 \lambda S^2
+        x^2 R.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            The source and the dissipation <strong>cancel</strong> for the
+            true <font color="#620000">\(R \sim \lambda x^3\)</font>: separate
+            estimates give nothing.
+          </p>
+        </li>
+        <li>
+          <p>
+            Tails independent of <font color="#620000">\(R\)</font>: on one site from
+            the posterior moment, but not uniform on the lattice (negative
+            bare mass).
+          </p>
+        </li>
+        <li>
+          <p>
+            More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
+            r_q\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Integrating the cube
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Solve the transport part of the flow exactly:
+      </p>
+      <center>
+        \(\displaystyle \partial_q f + S^2 ff' = 0, \quad f_{\infty} = -
+        \lambda x^3 \quad \Rightarrow
+\quad f_q (x) = - \lambda y^3, \quad qy
+        + \lambda y^3 = qx.\)
+      </center>
+      <center>
+        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \le 2 C_{\ast} (\lambda /
+        q)^{1 / 2}, \quad
+C_{\ast} < \frac{1}{2} .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(y_q (\Phi_q) = Y_q\)</font>: <strong>this is the
+            forecast coordinate</strong>. <font color="#620000">\(F_q - f_q = K_q
+            Z_q\)</font>, and <font color="#620000">\(Z\)</font> is the posterior mean
+            minus the mode.
+          </p>
+        </li>
+        <li>
+          <p>
+            The defect is <font color="#620000">\(qb_q (y)\)</font>: bounded for all
+            fields. The trees are in <font color="#620000">\(x \mapsto y\)</font>; the
+            quartic does not flow in <font color="#620000">\(y\)</font>, so only loops
+            are clipped.
+          </p>
+        </li>
+        <li>
+          <p>
+            The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
+            + \lambda y^3 = P_q\)</font>.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Not a no-go theorem: it rules out only estimating <font color="#620000">\(R\)</font>
+        as a small perturbation of the frozen cube. Integrating the cube in
+        the original field is possible, but on the lattice its loop defect
+        must still be renormalised; that route is not proved here.
       </p>
     </div>
   </body>

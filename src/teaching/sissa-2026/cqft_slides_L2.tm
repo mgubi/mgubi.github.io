@@ -814,7 +814,7 @@
       <item>Lecture<nbsp>4: Polchinski equation and its FBSDE; Wetterich
       equation; variational structure.
 
-      <item>Lectures<nbsp>5\U7: a construction of
+      <item>Lectures<nbsp>5\U6: a construction of
       <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE.
     </itemize>
 

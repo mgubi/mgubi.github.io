@@ -5,8 +5,8 @@
 <\body>
   <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
   Field Theory>|<doc-subtitle|Lecture<nbsp>6: <math|\<Phi\><rsup|4><rsub|3>>
-  on the torus II. A priori estimates for the forward\Ubackward
-  system>|<doc-author|<author-data|<author-name|M.
+  on the torus II. A priori estimates, UV stability and the limiting
+  FBSDE>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
 
@@ -15,18 +15,45 @@
     lattice, on the error <math|Z> of the approximate forecast and on the
     time the forecast spends at large fields. The two halves of the FBSDE of
     Lecture<nbsp>5 give two inequalities, neither of which closes alone. The
-    forward equation, rewritten as a cubic elliptic equation with memory, is
-    coercive: a convex threshold test bounds the weighted large-field action
-    by Gaussian tails and by the backward energy. The backward equation is
-    linear in <math|Z>: a conditional representation formula bounds the
-    backward energy by an integrable bounded-field source, a boundary term,
-    and a <em|small> multiple of the large-field action. The small
-    coefficient is <math|C*\<gamma\><rsup|2>/q<rsub|0>>, independent of the
-    lattice and of the moment order, so one choice of <math|q<rsub|0>> closes
-    the loop. The clipping error of Lecture<nbsp>5 is controlled exactly in
-    this way. We give complete proofs in the scalar (one-site) model, where
-    all the mechanisms are visible with explicit constants, and indicate the
-    changes needed on the lattice.
+    forward equation becomes, through the field equation of Lecture<nbsp>4, a
+    cubic elliptic equation at each resolution, with no memory: its noise is
+    the filtered measurement noise, sub-Gaussian uniformly in the
+    interaction. This equation is coercive: testing it bounds the weighted
+    large-field action, scale by scale, by the tails of the noise and by the
+    backward energy, and the maximum principle gives a pointwise bound driven
+    by the cube. The backward equation is linear in <math|Z>: a conditional
+    representation formula bounds the backward energy by an integrable
+    bounded-field source, a boundary term, and a small multiple of the
+    large-field action. The small coefficient is
+    <math|C*\<gamma\><rsup|2>/q<rsub|0>>, independent of the lattice and of
+    the moment order, so one choice of <math|q<rsub|0>> closes the loop. The
+    clipping error of Lecture<nbsp>5 is controlled exactly in this way. We
+    give complete proofs in the scalar (one-site) model, where all the
+    mechanisms are visible with explicit constants, and indicate the changes
+    needed on the lattice.
+
+    We then close the argument. At a fixed lattice the error of the
+    approximate forecast vanishes at infinite resolution, because the
+    explicit action matches the bare action there; this removes the boundary
+    term of the energy estimate, and gives bounds uniform in the lattice (UV
+    stability). The order of limits is essential: first the upper scale at
+    fixed lattice, then the lattice. The uniform energy bounds give
+    compactness of the forecast in space and scale, by a maximum principle
+    and a linear elliptic estimate, and tightness of the lattice measures in
+    <math|H<rsup|-s>>, <math|s\<gtr\><frac|1|2>>. Identifying the limit
+    requires two further arguments: weak convergence of the deterministic
+    coefficients against compact resolvents, and strong compactness of the
+    backward integrand, which follows from the positivity of the posterior
+    covariance and its exact Riccati equation. The result is a solution of
+    the FBSDE on the continuum torus, driven by a Brownian motion obtained as
+    the limit of the lattice innovations, with no additional noise, whose
+    terminal law is a subsequential limit of the lattice measures and
+    satisfies a renormalised integration by parts formula. Tilting the
+    filter, as in the argument of Hairer and Steele, gives uniform
+    exponential moments of the tested field beyond the Gaussian order. We
+    also give the Dyson\USchwinger equations along the scales, and discuss
+    uniqueness in finite volume through the dynamics. We end with what is not
+    proved and with the infinite-volume problem.
   </abstract>>
 
   <\table-of-contents|toc>
@@ -46,7 +73,7 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>
 
-    <with|par-left|1tab|13.2<space|2spc>Subtracting the Gaussian part
+    <with|par-left|1tab|13.2<space|2spc>The field equation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
@@ -54,26 +81,26 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-6>>
 
-    <with|par-left|1tab|13.4<space|2spc>Two Hardy inequalities
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-7>>
-
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8>>
+    <no-break><pageref|auto-7>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|14<space|2spc>Forward
     coercivity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-9><vspace|0.5fn>
+    <no-break><pageref|auto-8><vspace|0.5fn>
 
     <with|par-left|1tab|14.1<space|2spc>The scalar model
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-10>>
+    <no-break><pageref|auto-9>>
 
     <with|par-left|3tab|<with|font-size|0.92|What the scalar lemma says
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-11>>>
+    <no-break><pageref|auto-10>>>
 
     <with|par-left|1tab|14.2<space|2spc>The lattice version
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-11>>
+
+    <with|par-left|1tab|14.3<space|2spc>A pointwise bound
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-12>>
 
@@ -103,9 +130,94 @@
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-19>>
 
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Removing the
+    cutoffs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-20><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|16<space|2spc>The
+    boundary at infinite resolution> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-21><vspace|0.5fn>
+
+    <with|par-left|1tab|16.1<space|2spc>The boundary lemma
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-22>>
+
+    <with|par-left|1tab|16.2<space|2spc>UV stability
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-23>>
+
+    <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-24>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|17<space|2spc>Compactness>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-25><vspace|0.5fn>
+
+    <with|par-left|1tab|17.1<space|2spc>One Hilbert space
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-26>>
+
+    <with|par-left|1tab|17.2<space|2spc>Spatial suprema by a maximum
+    principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-27>>
+
+    <with|par-left|1tab|17.3<space|2spc>Regularity in space and scale
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-28>>
+
+    <with|par-left|1tab|17.4<space|2spc>The terminal field
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-29>>
+
+    <with|par-left|1tab|17.5<space|2spc>Exponential integrability: the
+    Hairer\USteele argument <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-30>>
+
+    <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-31>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|18<space|2spc>Identifying
+    the limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-32><vspace|0.5fn>
+
+    <with|par-left|1tab|18.1<space|2spc>The deterministic coefficients
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-33>>
+
+    <with|par-left|1tab|18.2<space|2spc>The noise
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-34>>
+
+    <with|par-left|1tab|18.3<space|2spc>The result
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-35>>
+
+    <with|par-left|1tab|18.4<space|2spc>The renormalised field equation
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-36>>
+
+    <with|par-left|1tab|18.5<space|2spc>Dyson\USchwinger along the scales
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-37>>
+
+    <with|par-left|1tab|18.6<space|2spc>Uniqueness in finite volume
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-38>>
+
+    <with|par-left|1tab|18.7<space|2spc>What is not proved, and where to go
+    next <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-39>>
+
+    <with|par-left|3tab|<with|font-size|0.92|Summary of the course
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-40>>>
+
+    <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-41>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20><vspace|0.5fn>
+    <no-break><pageref|auto-42><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -158,13 +270,21 @@
     so it can be solved by a conditional representation formula with an
     explicit propagator;
 
-    <item>the forward equation is, after subtracting the Gaussian part, a
-    cubic <em|elliptic> equation at each resolution, which is coercive and
-    can be estimated pathwise;
+    <item>the forward equation is, by the field equation of Lecture<nbsp>4, a
+    cubic <em|elliptic> equation at each resolution, with no memory, which is
+    coercive and can be estimated pathwise;
+
+    <item>its noise is a conditional expectation of the measurement noise,
+    hence sub-Gaussian whatever the interaction;
 
     <item>the two estimates are linked through two weighted energies whose
     weights are matched.
   </itemize>
+
+  Sections<nbsp><reference|sec:energies>\U<reference|sec:backward> prove
+  these estimates at a fixed lattice and a finite upper scale.
+  Sections<nbsp><reference|sec:terminal>\U<reference|sec:limit> remove the
+  cutoffs and identify the limit.
 
   <assign|section-nr|12>
 
@@ -187,81 +307,106 @@
 
   <\proof>
     <math|P> has all maximal moments, since <math|\<nu\><rsub|N>> has all
-    moments. Global convexity, <math|D<rsup|2>*<wide|\<Psi\>|\<bar\>><rsub|q>\<ge\>c*q>
-    and <math|D*<wide|\<Psi\>|\<bar\>><rsub|q><around|(|0|)>=0>, gives
-    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>>\<le\>C<around|\<\|\|\>|P<rsub|q>|\<\|\|\>>/q>.
+    moments. Global convexity, <math|D<rsup|2><wide|\<Psi\>|\<bar\>><rsub|q>\<geq\>c*q>
+    and <math|D<wide|\<Psi\>|\<bar\>><rsub|q><around|(|0|)>=0>, gives
+    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>>\<leq\>C<around|\<\|\|\>|P<rsub|q>|\<\|\|\>>/q>.
     Doob's inequality for the martingale <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>*\<Phi\><rsub|\<infty\>>>
     gives its maximal moments, and <math|Z=\<psi\>-Y>. For the integrands,
-    <math|<around|\<\|\|\>|<math-up|Cov><rsub|q>|\<\|\|\>><rsub|<math-up|HS>>\<le\><math-up|TrCov><rsub|q>\<le\>\<bbb-E\><rsub|q><around|\<\|\|\>|\<Phi\><rsub|\<infty\>>|\<\|\|\>><rsup|2>>,
-    and <math|<around|\<\|\|\>|H<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|<math-up|HS>>\<le\>C*<sqrt|dim
+    <math|<around|\<\|\|\>|Cov<rsub|q>|\<\|\|\>><rsub|<math-up|HS>>\<leq\><math-up|Tr>Cov<rsub|q>\<leq\>\<bbb-E\><rsub|q><around|\<\|\|\>|\<Phi\><rsub|\<infty\>>|\<\|\|\>><rsup|2>>,
+    and <math|<around|\<\|\|\>|H<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|<math-up|HS>>\<leq\>C<sqrt|dim
     H<rsub|N>>/q>. The energies involve, besides <math|Y> and <math|Z>, the
-    Gaussian field <math|X> and <math|\<varrho\><rsub|q><around|(|Y<rsub|q>|)>>;
-    finite-dimensional norm equivalence, <math|<around|\<\|\|\>|\<varrho\><rsub|q><around|(|y|)>|\<\|\|\>>\<le\>\<varepsilon\><rsub|q><around|\<\|\|\>|y|\<\|\|\>>>
-    and Gaussian moments of <math|X> give their moments.
+    field <math|\<zeta\><rsub|q>> of Section<nbsp><reference|sec:field> and
+    <math|\<varrho\><rsub|q><around|(|Y<rsub|q>|)>>; finite-dimensional norm
+    equivalence and <math|<around|\<\|\|\>|\<varrho\><rsub|q><around|(|y|)>|\<\|\|\>>\<leq\>\<varepsilon\><rsub|q><around|\<\|\|\>|y|\<\|\|\>>>
+    give their moments.
   </proof>
 
   These constants depend on <math|N> and <math|T>. They are used only to
   justify the absorptions below, never in the final bounds.
 
-  <subsection|Subtracting the Gaussian part>
+  <subsection|The field equation><label|sec:field>
 
-  The Gaussian part of the forecast is the free field at resolution <math|q>
-  driven by the <em|same> innovation,
-
-  <\equation>
-    <label|eq:X>X<rsub|q>\<assign\><big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em><math-up|Law><around|(|X<rsub|q>|)>=\<mu\><rsup|Q<rsub|q>>.
-  </equation>
-
-  This is the formula <hlink|(5.3)|cqft_lecture3.tm#eq:scale-GFF> of
-  Lecture<nbsp>3, but <math|W> is the innovation of the interacting problem;
-  <math|X> is a Gaussian process under the interacting measure. Since
-  <math|\<mathd\><around|(|K<rsub|q>*X<rsub|q>|)>=X<rsub|q><space|0.17em>\<mathd\>q+\<mathd\>W<rsub|q>>,
+  Lecture<nbsp>5 realises the process as a measurement: by
+  <hlink|(10.5)|cqft_lecture5.tm#eq:observation>,
+  <math|P<rsub|q>=<around|(|q-q<rsub|0>|)>*\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>>,
+  with <math|B> a Brownian motion. Since <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>*\<Phi\><rsub|\<infty\>>>,
+  the noise seen at resolution <math|q> is explicit:
 
   <\equation>
-    <label|eq:KX>K<rsub|q>*X<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>X<rsub|s><space|0.17em>\<mathd\>s.
+    \<eta\><rsub|q>\<assign\>P<rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>.<label|eq:eta-filter>
   </equation>
 
-  On the other hand <math|P<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>\<psi\><rsub|s>\<mathd\>s=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q><around|(|Y<rsub|s>+Z<rsub|s>|)>\<mathd\>s>.
-  Insert this into the coordinate equation (C) and
-  subtract<nbsp><eqref|eq:KX>. With
+  This is the noise observable of Theorem<nbsp><hlink|B.1|cqft_lecture4.tm#thm:DS-scale>
+  of Lecture<nbsp>4 in the profile <hlink|(10.2)|cqft_lecture5.tm#eq:dictionary-profile>,
+  where <math|S<rsub|q>=C<rsub|q>> and the regulator is <math|q-q<rsub|0>>.
+  Its bound (Proposition<nbsp><hlink|B.3|cqft_lecture4.tm#prop:subgauss> of
+  Lecture<nbsp>4) is here one line.
+
+  <\lemma>
+    <dueto|The noise><label|lem:noise>For every convex <math|\<Psi\>> on
+    <math|H<rsub|N>>, <math|\<bbb-E\>*\<Psi\><around|(|\<eta\><rsub|q>|)>\<leq\>\<bbb-E\>*\<Psi\><around|(|B<rsub|q-q<rsub|0>>|)>>,
+    whatever the interaction. In particular
+    <math|\<zeta\><rsub|q>\<assign\>C<rsub|q>*\<eta\><rsub|q>> satisfies, for
+    all <math|x> and <math|u\<in\>\<bbb-R\>>,
+
+    <\equation>
+      \<bbb-E\>*\<mathe\><rsup|u*\<zeta\><rsub|q><around|(|x|)>>\<leq\>exp
+      <around*|(|<frac|u<rsup|2>|2>*<around|(|q-q<rsub|0>|)>*a<rsup|2><around|(|q|)>|)>,<space|2em><around|(|q-q<rsub|0>|)>*a<rsup|2><around|(|q|)>\<leq\>C<sqrt|q>,<label|eq:zeta-tail>
+    </equation>
+
+    uniformly in <math|N>.
+  </lemma>
+
+  <\proof>
+    Conditional Jensen in <eqref|eq:eta-filter>, with
+    <math|\<Psi\><around|(|f|)>=\<mathe\><rsup|u<around|\<langle\>|C<rsub|q>*\<delta\><rsub|x>,f|\<rangle\>>>>,
+    and <hlink|(10.3)|cqft_lecture5.tm#eq:a2>.
+  </proof>
+
+  So <math|\<zeta\><rsub|q>> has the tails of the free field at resolution
+  <math|q>. It is not Gaussian, and it depends on the interaction through
+  <math|\<psi\>>, but its bounds do not. Insert
+  <math|P<rsub|q>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*<around|(|Y<rsub|q>+Z<rsub|q>|)>>
+  into the coordinate equation (C), and use
+  <math|K<rsub|q>=K<rsub|q<rsub|0>>+q-q<rsub|0>>. With
 
   <\equation>
-    <label|eq:Vsharp>V<rsub|q>\<assign\>Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-X<rsub|q>,<space|2em>F<rsup|Z><rsub|q>\<assign\><big|int><rsub|q<rsub|0>><rsup|q>Z<rsub|s><space|0.17em>\<mathd\>s,
+    V<rsub|q>\<assign\>Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-\<zeta\><rsub|q>,<label|eq:Vsharp>
   </equation>
 
-  the noise <math|W> cancels (<math|V<rsub|q>> is not to be confused with the
-  potentials <math|V<rsub|t>>, <math|V<rsub|N>> of Lectures<nbsp>4\U5) and we
-  obtain the identity
+  (<math|V<rsub|q>> is not to be confused with the potentials
+  <math|V<rsub|t>>, <math|V<rsub|N>> of Lectures<nbsp>4\U5) we obtain the
+  <em|field equation>
 
   <\equation>
-    <label|eq:volterra>K<rsub|q>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<big|int><rsub|q<rsub|0>><rsup|q>V<rsub|s><space|0.17em>\<mathd\>s-<big|int><rsub|q<rsub|0>><rsup|q>\<varrho\><rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>s+F<rsup|Z><rsub|q>,<space|2em>Y<rsub|q>=V<rsub|q>+X<rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>.
+    K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>,<space|2em>Y<rsub|q>=V<rsub|q>+\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>.<label|eq:field>
   </equation>
 
-  This is the equation we estimate. At each <math|q> it is the cubic elliptic
-  equation <math|<around|(|q-\<Delta\>|)>*V+<frac|\<gamma\>|3>*<around|(|V+X-\<varrho\>|)><rsup|3>=f>,
-  a nonlinear Helmholtz equation in which the Gaussian field <math|X> enters,
-  up to the small correction <math|\<varrho\>>, only as a shift inside the
-  cube, and the right side has a memory. Three remarks:
+  This is the equation we estimate: the field
+  equation<nbsp><hlink|(B.4)|cqft_lecture4.tm#eq:field-eq-scale> of
+  Lecture<nbsp>4 in these coordinates. Three remarks:
 
   <\itemize>
-    <item>the memory term has <em|coefficient one>:
-    <math|<big|int><rsub|q<rsub|0>><rsup|q>V<rsub|s>\<mathd\>s> is of the
-    same size as the mass term <math|q*V<rsub|q>>. It cannot be treated as a
-    forcing; it involves <math|V> itself, and the estimate must absorb it;
+    <item>it is an elliptic equation at each resolution, with <em|no memory>:
+    the past enters only through the noise <math|\<eta\><rsub|q>>;
 
     <item>the only trace of the backward equation is
-    <math|F<rsup|Z>=<big|int>Z>;
+    <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>, at the same resolution;
 
     <item>the identity is pathwise: no expectation has been taken.
   </itemize>
 
+  The mass of <eqref|eq:field> is only <math|q<rsub|0>>, so at large
+  resolution all the coercivity must come from the cube. The next section
+  shows that it does.
+
   <subsection|Thresholds and energies>
 
   Define the signed excess of <math|V> over three quarters of the threshold,
-  the large-field part of <math|Y>, and the large Gaussian values,
+  the large-field part of <math|Y>, and the large values of the noise,
 
   <\equation>
-    <label|eq:thresholds>w<rsub|q>=<math-up|sgn><around|(|V<rsub|q>|)>*<around*|(|<around|\||V<rsub|q>|\|>-<tfrac|3|4>r<rsub|q>|)><rsub|+>,<space|2em>t<rsub|q>=Y<rsub|q>*<with|math-font|Bbb|1><rsub|<around|\||Y<rsub|q>|\|>\<gtr\>r<rsub|q>>,<space|2em>\<xi\><rsub|q>=X<rsub|q>*<with|math-font|Bbb|1><rsub|<around|\||X<rsub|q>|\|>\<gtr\>r<rsub|q>/32>,
+    <label|eq:thresholds>w<rsub|q>=<math-up|sgn><around|(|V<rsub|q>|)>*<around*|(|<around|\||V<rsub|q>|\|>-<tfrac|3|4>r<rsub|q>|)><rsub|+>,<space|2em>t<rsub|q>=Y<rsub|q>*<with|math-font|Bbb|1><rsub|<around|\||Y<rsub|q>|\|>\<gtr\>r<rsub|q>>,<space|2em>\<xi\><rsub|q>=\<zeta\><rsub|q>*<with|math-font|Bbb|1><rsub|<around|\||\<zeta\><rsub|q>|\|>\<gtr\>r<rsub|q>/32>,
   </equation>
 
   all pointwise in space, with <math|r<rsub|q>=<around|(|q/\<gamma\>|)><rsup|1/2>>.
@@ -269,75 +414,62 @@
 
   <align|<tformat|<table|<row|<cell|E<rsub|T>>|<cell|=<frac|1|\<gamma\>>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|1/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>q>|<cell|>|<cell|<text|(backward
   energy)>,>>|<row|<cell|J<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*<around*|[|q*<around|\<\|\|\>|w<rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>|\<\|\|\>>*w<rsub|q>*<around|\<\|\|\>|<rsub|6><rsup|6>+\<gamma\>|\<\|\|\>>*t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(large-field
-  action)>,>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2>|\<\|\|\>>*\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(Gaussian
+  action)>,>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|T><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2>|\<\|\|\>>*\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q>|<cell|>|<cell|<text|(noise
   tails)>.<eq-number><label|eq:energies>>>>>>
 
   Only <em|thresholded> sixth powers are integrated over all scales:
-  <math|\<bbb-E\><around|\<\|\|\>|X<rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<approx\>q<rsup|3/2>>
-  for <math|2*q<rsub|0>\<le\>q\<lesssim\>N<rsup|2>>, so the unthresholded
-  Gaussian contribution to <math|J> would grow like
-  <math|\<gamma\>*N<rsup|2>>, not uniformly in <math|N>. The weights are
+  <math|\<bbb-E\><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>>
+  can be of order <math|q<rsup|3/2>>, so an unthresholded noise contribution
+  to <math|J> would not be integrable uniformly in <math|N>. The weights are
   matched to each other and to the source bounds:
 
   <\padded-center>
-    <with|font-size|0.84|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<table|<row|<cell|quantity>|<cell|weight>|<cell|reason>>|<row|<cell|<math|<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>>>|<cell|<math|q<rsup|1/2>>>|<cell|Hardy:
-    <math|<big|int>q<rsup|-3/2><around|\<\|\|\>|F<rsup|Z>|\<\|\|\>><rsup|2>\<le\>16*<big|int>q<rsup|1/2><around|\<\|\|\>|Z|\<\|\|\>><rsup|2>>>>|<row|<cell|<math|\<gamma\><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>>>|<cell|<math|q<rsup|-3/2>>>|<cell|source:
+    <with|font-size|0.84|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<table|<row|<cell|quantity>|<cell|weight>|<cell|reason>>|<row|<cell|<math|<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>>>|<cell|<math|q<rsup|1/2>>>|<cell|forcing:
+    <math|q<rsup|-3/2>\<cdot\>\<gamma\><rsup|-1>*q<rsup|2><around|\<\|\|\>|Z|\<\|\|\>><rsub|2><rsup|2>>>>|<row|<cell|<math|\<gamma\><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>>>|<cell|<math|q<rsup|-3/2>>>|<cell|source:
     <math|q<rsup|7/2><around|\<\|\|\>|b<rsup|<math-up|l>>|\<\|\|\>><rsup|2>\<le\>C*\<gamma\><rsup|3>\<cdot\>\<gamma\>*q<rsup|-3/2><around|\<\|\|\>|t|\<\|\|\>><rsub|6><rsup|6>>>>|<row|<cell|<math|<around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>>>|<cell|<math|q<rsup|7/2>>>|<cell|backward
     propagator <math|s/q> and <math|<big|int><rsub|q><rsup|\<infty\>>s<rsup|-3/2>\<mathd\>s=2*q<rsup|-1/2>>>>>>>>
   </padded-center>
 
-  <subsection|Two Hardy inequalities>
-
-  <\lemma>
-    <dueto|Hardy><label|lem:hardy> For <math|f> on
-    <math|<around|[|q<rsub|0>,\<infty\>|)>> with values in a Banach space,
-    extended by zero to <math|<around|(|0,q<rsub|0>|)>>,
-
-    <\equation>
-      <label|eq:hardy><around*|\||q<rsup|-1>*<big|int><rsub|0><rsup|q>f<rsub|s><space|0.17em>\<mathd\>s|\|><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>\<le\><frac|8|7><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>,<space|2em><big|int><rsub|0><rsup|\<infty\>>q<rsup|-3/2><around*|\||<big|int><rsub|0><rsup|q>f<rsub|s><space|0.17em>\<mathd\>s|\|><rsup|2>\<mathd\>q\<le\>16*<big|int><rsub|0><rsup|\<infty\>>q<rsup|1/2><around|\<\|\|\>|f<rsub|q>|\<\|\|\>><rsup|2>\<mathd\>q.
-    </equation>
-  </lemma>
-
-  <\proof>
-    Write <math|q<rsup|-1>*<big|int><rsub|0><rsup|q>f<rsub|s>\<mathd\>s=<big|int><rsub|0><rsup|1>f<rsub|q*\<theta\>>\<mathd\>\<theta\>>
-    and apply Minkowski's inequality. For the first bound, the substitution
-    <math|u=q*\<theta\>> gives <math|<around|\<\|\|\>|f<rsub|\<cdot\>\<theta\>>|\<\|\|\>><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>=\<theta\><rsup|-1/8><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>>,
-    and <math|<big|int><rsub|0><rsup|1>\<theta\><rsup|-1/8>\<mathd\>\<theta\>=<frac|8|7>>.
-    For the second, the left side is <math|<around|\<\|\|\>|q<rsup|-1>*<big|int><rsub|0><rsup|q>f|\<\|\|\>><rsup|2><rsub|L<rsup|2><around|(|q<rsup|1/2>\<mathd\>q|)>>>,
-    <math|<around|\<\|\|\>|f<rsub|\<cdot\>\<theta\>>|\<\|\|\>><rsub|L<rsup|2><around|(|q<rsup|1/2>\<mathd\>q|)>>=\<theta\><rsup|-3/4><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|2><around|(|q<rsup|1/2>\<mathd\>q|)>>>,
-    and <math|<around|(|<big|int><rsub|0><rsup|1>\<theta\><rsup|-3/4>\<mathd\>\<theta\>|)><rsup|2>=16>.
-  </proof>
-
-  The first inequality will estimate the memory term
-  of<nbsp><eqref|eq:volterra>. Its constant <math|<frac|8|7>> is <em|larger>
-  than one. Coercivity from the mass term alone, which has coefficient one,
-  would therefore not absorb the memory. The missing margin will come from
-  the cubic term: at large fields it adds
-  <math|<frac|1|4>*q<around|\||w|\|><rsup|4>> to the mass, and
-  <math|1+<frac|1|4>-<frac|8|7>=<frac|3|28>\<gtr\>0>.
-
   <subsection*|Exercises>
 
   <\exercise>
-    <dueto|Matched weights>Check the three weights in the table. Show that
-    the forward estimate needs a weight at least <math|q<rsup|1/2>> on
-    <math|<around|\<\|\|\>|Z|\<\|\|\>><rsup|2>>: test the second Hardy
-    inequality with weight <math|q<rsup|1/2-\<sigma\>>>,
-    <math|\<sigma\>\<gtr\>0>, on <math|f=<with|math-font|Bbb|1><rsub|<around|[|a,2*a|]>>>,
-    <math|a\<to\>\<infty\>>. Show that the backward estimate of
-    Section<nbsp><reference|sec:backward> also holds with weight
-    <math|q<rsup|1/2+\<sigma\>>> for <math|0\<less\>\<sigma\>\<less\><frac|1|2>>.
-    Which term breaks at <math|\<sigma\>=<frac|1|2>>, and how does the
-    feedback coefficient depend on <math|\<sigma\>>?
+    <dueto|Matched weights>Check the three weights in the table. Show from
+    <eqref|eq:field> that the forward estimate, with the weight
+    <math|q<rsup|-3/2>> on the large-field action, needs the weight
+    <math|q<rsup|1/2>> on <math|<around|\<\|\|\>|Z|\<\|\|\>><rsub|2><rsup|2>>.
+    Show that the backward estimate of Section<nbsp><reference|sec:backward>
+    also holds with weight <math|q<rsup|1/2+\<sigma\>>> for
+    <math|0\<less\>\<sigma\>\<less\><frac|1|2>>. Which term breaks at
+    <math|\<sigma\>=<frac|1|2>>, and how does the feedback coefficient depend
+    on <math|\<sigma\>>?
   </exercise>
 
   <\exercise>
-    <dueto|Gaussian sixth powers>Show that
-    <math|\<bbb-E\><around|\<\|\|\>|X<rsub|q>|\<\|\|\>><rsub|6><rsup|6>=15<around*|(|<big|int><rsub|q<rsub|0>><rsup|q>a<rsub|2>|)><rsup|3>\<le\>C*q<rsup|3/2>>,
-    and that it is <math|\<ge\>c*q<rsup|3/2>> for
-    <math|2*q<rsub|0>\<le\>q\<le\>N<rsup|2>>. Show that
-    <math|\<bbb-E\><around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<le\>C*q<rsup|3/2>*exp
-    <around|(|-c*<sqrt|q>/\<gamma\>|)>>.
+    <dueto|Moments of the noise>Show from Lemma<nbsp><reference|lem:noise>
+    that <math|\<bbb-E\><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<leq\>15*<around|(|<around|(|q-q<rsub|0>|)>*a<rsup|2><around|(|q|)>|)><rsup|3>\<leq\>C*q<rsup|3/2>>
+    and <math|\<bbb-E\><around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<leq\>C*q<rsup|3/2>*exp
+    <around|(|-c<sqrt|q>/\<gamma\>|)>>. For <math|V<rsub|N>=0>, compute the
+    covariance of <math|\<zeta\><rsub|q>> and compare it with the bound. On
+    which modes is the bound sharp?
+  </exercise>
+
+  <\exercise>
+    <dueto|The memory form><label|ex:memory>Let
+    <math|X<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsub|s>>,
+    so that <math|K<rsub|q>*X<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>X<rsub|s><space|0.17em>\<mathd\>s>,
+    and <math|V<rprime|'><rsub|q>=Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-X<rsub|q>>.
+    Using <math|P<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>\<psi\><rsub|s><space|0.17em>\<mathd\>s>,
+    derive the equation with memory
+
+    <\equation*>
+      K<rsub|q>*V<rprime|'><rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<big|int><rsub|q<rsub|0>><rsup|q><around|(|V<rprime|'><rsub|s>-\<varrho\><rsub|s><around|(|Y<rsub|s>|)>+Z<rsub|s>|)>*\<mathd\>s.
+    </equation*>
+
+    Here the noise is exactly Gaussian, but the memory has the size of the
+    mass term. Why would testing it with <math|w<rsup|3>> need the Hardy
+    inequality <math|<around|\<\|\|\>|q<rsup|-1><big|int><rsub|0><rsup|q>f|\<\|\|\>><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>\<leq\><frac|8|7><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|4><around|(|q<rsup|-1/2>\<mathd\>q|)>>>,
+    and where would the margin come from? What does <eqref|eq:field> trade to
+    avoid this?
   </exercise>
 
   <section|Forward coercivity><label|sec:forward>
@@ -346,242 +478,274 @@
 
   On one site the Laplacian disappears. We also drop the small Lipschitz
   correction <math|\<varrho\>> (restored in
-  Proposition<nbsp><reference|prop:forward>) and allow an arbitrary
-  continuous <math|X>, thinking of one site of the lattice, where
-  <math|<math-up|Var>X<rsub|q>\<approx\><sqrt|q>>.
-  Then<nbsp><eqref|eq:volterra> becomes a scalar equation with memory. All
-  the mechanisms of the forward estimate are already present, and the
-  constants can be checked by hand.
+  Proposition<nbsp><reference|prop:forward>) and treat the noise and the
+  error as given numbers. Then <eqref|eq:field> is a scalar equation at each
+  <math|q>, and all the constants can be checked by hand.
 
   <\lemma>
-    <dueto|Scalar forward coercivity><label|lem:scalar-forward> Let
-    <math|\<gamma\>\<gtr\>0>, <math|q<rsub|0>\<less\>T>, let
-    <math|X,f:<around|[|q<rsub|0>,T|]>\<to\>\<bbb-R\>> be continuous, and let
-    <math|v> be continuous and solve
+    <dueto|Scalar forward coercivity><label|lem:scalar-forward>Let
+    <math|\<gamma\>,q\<gtr\>0>, <math|a\<geq\>0>, <math|0\<leq\>p\<leq\>q>
+    and <math|v,g,z\<in\>\<bbb-R\>> with
 
     <\equation>
-      <label|eq:scalar>q*v<rsub|q>+<frac|\<gamma\>|3>*<around|(|v<rsub|q>+X<rsub|q>|)><rsup|3>=<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s><space|0.17em>\<mathd\>s+f<rsub|q>,<space|2em>q\<in\><around|[|q<rsub|0>,T|]>.
+      a*v+<frac|\<gamma\>|3>*<around|(|v+g|)><rsup|3>=p*<around|(|g+z|)>.<label|eq:scalar>
     </equation>
 
-    Define <math|r<rsub|q>>, <math|w<rsub|q>>, <math|\<xi\><rsub|q>> as
-    in<nbsp><eqref|eq:thresholds>, with <math|V=v>. Then
+    Let <math|r=<around|(|q/\<gamma\>|)><rsup|1/2>>,
+    <math|w=sgn<around|(|v|)>*<around|(|<around|\||v|\|>-<frac|3|4>*r|)><rsub|+>>,
+    <math|\<xi\>=g*<with|math-font|Bbb|1><rsub|<around|\||g|\|>\<gtr\>r/32>>.
+    Then
 
     <\equation>
-      <label|eq:scalar-forward><frac|3|28>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2>*w<rsub|q><rsup|4><space|0.17em>\<mathd\>q+<frac|\<gamma\>|16>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*w<rsub|q><rsup|6><space|0.17em>\<mathd\>q\<le\><frac|4225|6>*\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*\<xi\><rsub|q><rsup|6><space|0.17em>\<mathd\>q+<frac|12|\<gamma\>>*<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-3/2>*f<rsub|q><rsup|2><space|0.17em>\<mathd\>q.
+      <frac|q|8>*w<rsup|4>+<frac|\<gamma\>|16>*w<rsup|6>\<leq\>54*q*\<xi\><rsup|4>+<frac|4225|6>*\<gamma\>*\<xi\><rsup|6>+<frac|12|\<gamma\>>*q<rsup|2>*z<rsup|2>.<label|eq:scalar-bound>
     </equation>
 
-    Moreover the large-field part <math|t<rsub|q>=<around|(|v<rsub|q>+X<rsub|q>|)>*<with|math-font|Bbb|1><rsub|<around|\||v<rsub|q>+X<rsub|q>|\|>\<gtr\>r<rsub|q>>>
-    satisfies <math|<around|\||t<rsub|q>|\|>\<le\><frac|32|7>*<around|(|<around|\||w<rsub|q>|\|>+<around|\||\<xi\><rsub|q>|\|>|)>>.
+    Moreover <math|t=<around|(|v+g|)>*<with|math-font|Bbb|1><rsub|<around|\||v+g|\|>\<gtr\>r>>
+    satisfies <math|<around|\||t|\|>\<leq\><frac|32|7>*<around|(|<around|\||w|\|>+<around|\||\<xi\>|\|>|)>>.
   </lemma>
 
   <\proof>
-    <em|Step<nbsp>1: test with <math|w<rsup|3>>.>
-    Multiply<nbsp><eqref|eq:scalar> by <math|w<rsub|q><rsup|3>>. We estimate
-    the four terms where <math|w<rsub|q>\<ne\>0>; there
-    <math|<around|\||v<rsub|q>|\|>=<around|\||w<rsub|q>|\|>+<frac|3|4>*r<rsub|q>>
-    and <math|v<rsub|q>,w<rsub|q>> have the same sign.
-
-    <em|Mass.> <math|q*v<rsub|q>*w<rsub|q><rsup|3>=q\|w<rsub|q>\|<rsup|4>+<frac|3|4>*q*r<rsub|q><around|\||w<rsub|q>|\|><rsup|3>>.
-
-    <em|Cube.> <math|<around|\||X<rsub|q>|\|>\<le\><frac|r<rsub|q>|32>+<around|\||\<xi\><rsub|q>|\|>>,
-    so <math|<math-up|sgn><around|(|w<rsub|q>|)>*<around|(|v<rsub|q>+X<rsub|q>|)>\<ge\><around|\||w<rsub|q>|\|>+<frac|23|32>*r<rsub|q>-<around|\||\<xi\><rsub|q>|\|>\<ge\><around|\||w<rsub|q>|\|>+<frac|11|16>*r<rsub|q>-<around|\||\<xi\><rsub|q>|\|>>
-    (we give up <math|<frac|1|32>*r<rsub|q>> to leave room, on the lattice,
-    for the shift <math|<around|\<\|\|\>|\<varrho\><rsup|0><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<le\>\<varepsilon\><rsub|q>*r<rsub|q>>,
-    <math|\<varepsilon\><rsub|q>\<le\><frac|1|32>>). Since the cube is
-    increasing (also if the right side is negative),
+    Multiply <eqref|eq:scalar> by <math|w<rsup|3>>, where <math|w\<neq\>0>;
+    there <math|<around|\||v|\|>=<around|\||w|\|>+<frac|3|4>*r> and
+    <math|v,w> have the same sign, so <math|a*v*w<rsup|3>\<geq\>0>. Since
+    <math|<around|\||g|\|>\<leq\><frac|r|32>+<around|\||\<xi\>|\|>>,
+    <math|sgn<around|(|w|)>*<around|(|v+g|)>\<geq\><around|\||w|\|>+<frac|11|16>*r-<around|\||\<xi\>|\|>>
+    (we give up <math|<frac|1|32>*r> to leave room, on the lattice, for
+    <math|\<varrho\>>). The cube being increasing, <eqref|eq:elementary> and
+    <math|\<gamma\>*r<rsup|2>=q> give
 
     <\equation*>
-      <frac|\<gamma\>|3>*w<rsub|q><rsup|3>*<around|(|v<rsub|q>+X<rsub|q>|)><rsup|3>\<ge\><frac|\<gamma\>|3><around|\||w<rsub|q>|\|><rsup|3>*<around*|(|<around|\||w<rsub|q>|\|>+<frac|11|16>*r<rsub|q>-<around|\||\<xi\><rsub|q>|\|>|)><rsup|3>\<ge\><frac|\<gamma\>|12>*w<rsub|q><rsup|6>+<frac|q|4>*w<rsub|q><rsup|4>-<frac|4225|6>*\<gamma\>*\<xi\><rsub|q><rsup|6>,
+      <frac|\<gamma\>|3>*w<rsup|3>*<around|(|v+g|)><rsup|3>\<geq\><frac|\<gamma\>|12>*w<rsup|6>+<frac|q|4>*w<rsup|4>+<frac|q*r|13><around|\||w|\|><rsup|3>-<frac|4225|6>*\<gamma\>*\<xi\><rsup|6>.
     </equation*>
 
-    by the elementary inequality<nbsp><eqref|eq:elementary> below and
-    <math|\<gamma\>*r<rsub|q><rsup|2>=q>. <em|This is the large-field
-    coercivity: at large fields the cube adds a sixth power and a quarter of
-    the mass.>
-
-    <em|Memory.> Since <math|<around|\||v<rsub|s>-w<rsub|s>|\|>\<le\><frac|3|4>*r<rsub|s>>
-    and <math|<big|int><rsub|q<rsub|0>><rsup|q>r<rsub|s>\<mathd\>s\<le\><frac|2|3>*q*r<rsub|q>>,
-
-    <\equation*>
-      w<rsub|q><rsup|3>*<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s><space|0.17em>\<mathd\>s\<le\><frac|3|4>\<cdot\><frac|2|3>*<space|0.17em>q*r<rsub|q>\|w<rsub|q>\|<rsup|3>+w<rsub|q><rsup|3>*<big|int><rsub|q<rsub|0>><rsup|q>w<rsub|s><space|0.17em>\<mathd\>s.
-    </equation*>
-
-    The first term, <math|<frac|1|2>*q*r<rsub|q><around|\||w<rsub|q>|\|><rsup|3>>,
-    is absorbed by the second mass term <math|<frac|3|4>*q*r<rsub|q><around|\||w<rsub|q>|\|><rsup|3>>;
-    the leftover <math|<frac|1|4>*q*r<rsub|q><around|\||w<rsub|q>|\|><rsup|3>\<ge\>0>
-    is dropped here, and is used on the lattice to absorb the memory of
-    <math|\<varrho\><rsup|0>>.
-
-    <em|Forcing.> By Young's inequality <math|w<rsub|q><rsup|3>*f<rsub|q>\<le\><frac|\<gamma\>|48>*w<rsub|q><rsup|6>+<frac|12|\<gamma\>>*f<rsub|q><rsup|2>>.
-
-    <em|Step<nbsp>2: integrate.> Collecting, at every <math|q>,
-
-    <\equation*>
-      <frac|5|4>*q*<space|0.17em>w<rsub|q><rsup|4>+<around*|(|<frac|\<gamma\>|12>-<frac|\<gamma\>|48>|)>*w<rsub|q><rsup|6>\<le\>w<rsub|q><rsup|3>*<big|int><rsub|q<rsub|0>><rsup|q>w<rsub|s><space|0.17em>\<mathd\>s+<frac|4225|6>*\<gamma\>*\<xi\><rsub|q><rsup|6>+<frac|12|\<gamma\>>*f<rsub|q><rsup|2>.
-    </equation*>
-
-    Multiply by <math|q<rsup|-3/2>> and integrate over
-    <math|<around|[|q<rsub|0>,T|]>>. With
-    <math|A=<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2>*w<rsub|q><rsup|4>\<mathd\>q>,
-    Hölder and the first Hardy inequality (with <math|w> extended by zero
-    outside <math|<around|[|q<rsub|0>,T|]>>) give
-
-    <\equation*>
-      <big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2><around|\||w<rsub|q>|\|><rsup|3>*<around*|\||q<rsup|-1>*<big|int><rsub|q<rsub|0>><rsup|q>w<rsub|s><space|0.17em>\<mathd\>s|\|>\<mathd\>q\<le\>A<rsup|3/4>\<cdot\><frac|8|7>*A<rsup|1/4>=<frac|8|7>*A.
-    </equation*>
-
-    Since <math|<frac|5|4>-<frac|8|7>=<frac|3|28>>,<nbsp><eqref|eq:scalar-forward>
-    follows. For the last claim, <math|<around|\||v+X|\|>\<le\><around|\||w|\|>+<frac|3|4>*r+<frac|r|32>+<around|\||\<xi\>|\|>>,
-    so on <math|<around|{|<around|\||v+X|\|>\<gtr\>r|}>> we have
-    <math|<frac|7|32>*<around|\||v+X|\|>\<le\><around|\||v+X|\|>-<frac|25|32>*r\<le\><around|\||w|\|>+<around|\||\<xi\>|\|>>.
+    This is the large-field coercivity: above the threshold the cube provides
+    a sixth power, a quartic term of the size of a mass <math|q>, and a cubic
+    term which dominates the noise below the threshold. On the right side,
+    <math|p*g*w<rsup|3>\<leq\><frac|q*r|32><around|\||w|\|><rsup|3>+q<around|\||\<xi\>|\|><around|\||w|\|><rsup|3>>,
+    and the first term is absorbed. By Young's inequality,
+    <math|q<around|\||\<xi\>|\|><around|\||w|\|><rsup|3>\<leq\><frac|q|8>*w<rsup|4>+54*q*\<xi\><rsup|4>>
+    and <math|q<around|\||z|\|><around|\||w|\|><rsup|3>\<leq\><frac|\<gamma\>|48>*w<rsup|6>+<frac|12|\<gamma\>>*q<rsup|2>*z<rsup|2>>.
+    This gives <eqref|eq:scalar-bound>. For the last claim,
+    <math|<around|\||v+g|\|>\<leq\><around|\||w|\|>+<frac|3|4>*r+<frac|r|32>+<around|\||\<xi\>|\|>>,
+    so on <math|<around|{|<around|\||v+g|\|>\<gtr\>r|}>> we have
+    <math|<frac|7|32><around|\||v+g|\|>\<leq\><around|\||v+g|\|>-<frac|25|32>*r\<leq\><around|\||w|\|>+<around|\||\<xi\>|\|>>.
   </proof>
 
   <\lemma>
-    <dueto|Two elementary inequalities>For <math|x,\<rho\>\<ge\>0>,
-    <math|<around|(|x-\<rho\>|)><rsup|3>\<ge\><frac|3|4>*x<rsup|3>-65*\<rho\><rsup|3>>.
-    For <math|u,\<rho\>,r\<ge\>0>,
+    <dueto|Two elementary inequalities>For <math|x,\<rho\>\<geq\>0>,
+    <math|<around|(|x-\<rho\>|)><rsup|3>\<geq\><frac|3|4>*x<rsup|3>-65*\<rho\><rsup|3>>.
+    For <math|u,\<rho\>,r\<geq\>0>,
 
     <\equation>
-      <label|eq:elementary><frac|1|3>*u<rsup|3>*<around*|(|u+<frac|11|16>*r-\<rho\>|)><rsup|3>\<ge\><frac|1|12>*u<rsup|6>+<frac|1|4>*r<rsup|2>*u<rsup|4>-<frac|4225|6>*\<rho\><rsup|6>.
+      <frac|1|3>*u<rsup|3>*<around*|(|u+<frac|11|16>*r-\<rho\>|)><rsup|3>\<geq\><frac|1|12>*u<rsup|6>+<frac|1|4>*r<rsup|2>*u<rsup|4>+<frac|1|13>*r<rsup|3>*u<rsup|3>-<frac|4225|6>*\<rho\><rsup|6>.<label|eq:elementary>
     </equation>
   </lemma>
 
   <\proof>
-    <math|<frac|1|4>*x<rsup|3>+64*\<rho\><rsup|3>-3*x<rsup|2>*\<rho\>=<frac|1|4>*<around|(|x-8*\<rho\>|)><rsup|2>*<around|(|x+4*\<rho\>|)>\<ge\>0>,
-    so <math|<around|(|x-\<rho\>|)><rsup|3>\<ge\>x<rsup|3>-3*x<rsup|2>*\<rho\>-\<rho\><rsup|3>\<ge\><frac|3|4>*x<rsup|3>-65*\<rho\><rsup|3>>.
-    Apply it with <math|x=u+<frac|11|16>*r>:
-    <math|<frac|1|3>*u<rsup|3>*<around|(|x-\<rho\>|)><rsup|3>\<ge\><frac|1|4>*u<rsup|3>*x<rsup|3>-<frac|65|3>*u<rsup|3>*\<rho\><rsup|3>>,
-    and <math|u<rsup|3>*x<rsup|3>\<ge\>u<rsup|6>+3<around|(|<frac|11|16>|)><rsup|2>*r<rsup|2>*u<rsup|4>>
-    with <math|<frac|3|4><around|(|<frac|11|16>|)><rsup|2>=<frac|363|1024>\<gtr\><frac|1|4>>.
-    Finally <math|<frac|65|3>*u<rsup|3>*\<rho\><rsup|3>\<le\><frac|1|6>*u<rsup|6>+<frac|4225|6>*\<rho\><rsup|6>>,
-    since <math|<frac|1|6>*<around|(|u<rsup|3>-65*\<rho\><rsup|3>|)><rsup|2>\<ge\>0>,
+    <math|<frac|1|4>*x<rsup|3>+64*\<rho\><rsup|3>-3*x<rsup|2>*\<rho\>=<frac|1|4>*<around|(|x-8*\<rho\>|)><rsup|2>*<around|(|x+4*\<rho\>|)>\<geq\>0>,
+    so <math|<around|(|x-\<rho\>|)><rsup|3>\<geq\>x<rsup|3>-3*x<rsup|2>*\<rho\>-\<rho\><rsup|3>\<geq\><frac|3|4>*x<rsup|3>-65*\<rho\><rsup|3>>.
+    Apply it with <math|x=u+b>, <math|b=<frac|11|16>*r>:
+    <math|<frac|1|3>*u<rsup|3>*<around|(|x-\<rho\>|)><rsup|3>\<geq\><frac|1|4>*u<rsup|3>*x<rsup|3>-<frac|65|3>*u<rsup|3>*\<rho\><rsup|3>>,
+    and <math|x<rsup|3>\<geq\>u<rsup|3>+3*b<rsup|2>*u+b<rsup|3>> with
+    <math|<frac|3|4>*b<rsup|2>=<frac|363|1024>*r<rsup|2>\<gtr\><frac|1|4>*r<rsup|2>>
+    and <math|<frac|1|4>*b<rsup|3>=<frac|1331|16384>*r<rsup|3>\<gtr\><frac|1|13>*r<rsup|3>>.
+    Finally <math|<frac|65|3>*u<rsup|3>*\<rho\><rsup|3>\<leq\><frac|1|6>*u<rsup|6>+<frac|4225|6>*\<rho\><rsup|6>>,
     and <math|<frac|1|4>-<frac|1|6>=<frac|1|12>>.
   </proof>
 
   <paragraph|What the scalar lemma says> The excess of the forecast over the
-  threshold is controlled by two things only: how often the <em|Gaussian>
-  field is large, which is a known quantity (the Gaussian-tail functional
-  <math|G<rsub|T>>, with <math|<around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C*\<gamma\><rsup|3>*p<rsup|5>>
-  independently of <math|N>), exponentially small at large <math|q>, and the
-  <em|backward> forcing <math|f>. The memory term, although of the same size
-  as the mass term, is absorbed thanks to the extra quartic damping supplied
-  by the cube at large fields. There is no smallness in the coupling: the
-  estimate is uniform in <math|\<gamma\>> once the threshold scales like
-  <math|r<rsub|q>=<around|(|q/\<gamma\>|)><rsup|1/2>>. And it is pathwise.
+  threshold is controlled, at each resolution separately, by two things only:
+  how large the noise is, whose tails are known and exponentially small at
+  large <math|q>, and the error <math|Z>. There is no smallness in the
+  coupling: the estimate is uniform in <math|\<gamma\>> once the threshold
+  scales like <math|r<rsub|q>=<around|(|q/\<gamma\>|)><rsup|1/2>>. It is
+  pathwise, and it needs no integration in <math|q>.
 
   <subsection|The lattice version>
 
   <\proposition>
-    <dueto|Forward coercivity<nbsp><cite|FBSDE26>><label|prop:forward> For
-    <math|q<rsub|0>> large (depending on <math|\<gamma\>>), at every cutoff
-    <math|N> and every <math|T>, pathwise,
+    <dueto|Forward coercivity><label|prop:forward>For <math|q<rsub|0>> large
+    (depending on <math|\<gamma\>>), at every cutoff <math|N>, pathwise and
+    for every <math|q>,
 
     <\equation>
-      <label|eq:forward>J<rsub|T>\<le\>C*<space|0.17em><around|(|G<rsub|T>+E<rsub|T>|)>,<space|2em><around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<le\>C*\<gamma\><rsup|3>*p<rsup|5>*<space|1em><around|(|p\<ge\>1|)>,
+      q<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|4><rsup|4>+\<gamma\><around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|6><rsup|6>+\<gamma\><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<leq\>C*<around*|(|q<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|4><rsup|4>+\<gamma\><around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>+\<gamma\><rsup|-1>*q<rsup|2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>|)>.<label|eq:forward-q>
+    </equation>
+
+    Consequently, for every <math|T>,
+
+    <\equation>
+      J<rsub|T>\<leq\>C*<around|(|G<rsub|T>+E<rsub|T>|)>,<space|2em><around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<leq\>C*\<gamma\><rsup|3>*p<rsup|5><space|1em><around|(|p\<geq\>1|)>,<label|eq:forward>
     </equation>
 
     with <math|C> independent of <math|N>, <math|T> and <math|p>.
   </proposition>
 
   <\render-proof|Proof: the changes from the scalar case>
-    Test<nbsp><eqref|eq:volterra> with <math|w<rsub|q><rsup|3>> in
+    Test <eqref|eq:field> with <math|w<rsub|q><rsup|3>> in
     <math|L<rsup|2><around|(|\<Lambda\><rsub|N>|)>> and proceed as in
     Lemma<nbsp><reference|lem:scalar-forward>, with Hölder's inequality in
-    space as well as in scale. Three new terms appear.
+    space. Three new terms appear.
 
-    <em|The Laplacian.> <math|<around|\<langle\>|w<rsup|3>,-\<Delta\><rsub|N>*V|\<rangle\>>\<ge\>0>.
+    <em|The elliptic term.> <math|<around|\<langle\>|w<rsup|3>,K<rsub|q<rsub|0>>*V|\<rangle\>>\<geq\>0>.
     Indeed <math|w<rsup|3>=\<phi\><rprime|'><around|(|V|)>> for the convex
     function <math|\<phi\><around|(|v|)>=<frac|1|4>*<around|(|<around|\||v|\|>-<frac|3|4>*r|)><rsub|+><rsup|4>>,
-    and for any nondecreasing <math|\<phi\><rprime|'>>,
+    <math|V*w<rsup|3>\<geq\>0>, and for any nondecreasing
+    <math|\<phi\><rprime|'>>,
 
     <\equation*>
-      <around|\<langle\>|\<phi\><rprime|'><around|(|V|)>,-\<Delta\><rsub|N>*V|\<rangle\>>=N<rsup|-1>*<big|sum><rsub|x\<sim\>x<rprime|'>><around*|(|\<phi\><rprime|'><around|(|V<around|(|x|)>|)>-\<phi\><rprime|'><around|(|V<around|(|x<rprime|'>|)>|)>|)>*<around*|(|V<around|(|x|)>-V<around|(|x<rprime|'>|)>|)>\<ge\>0,
+      <around|\<langle\>|\<phi\><rprime|'><around|(|V|)>,-\<Delta\><rsub|N>*V|\<rangle\>>=N<rsup|-1><big|sum><rsub|x\<sim\>x<rprime|'>><around|(|\<phi\><rprime|'><around|(|V<around|(|x|)>|)>-\<phi\><rprime|'><around|(|V<around|(|x<rprime|'>|)>|)>|)>*<around|(|V<around|(|x|)>-V<around|(|x<rprime|'>|)>|)>\<geq\>0,
     </equation*>
 
     summing over unordered nearest-neighbour pairs. So the elliptic term only
     helps.
 
     <em|The coordinate correction.> Split
-    <math|\<varrho\><rsub|q><around|(|y|)>=\<varrho\><rsup|0><rsub|q>+\<varrho\><rsup|1><rsub|q>>
-    according to <math|<around|\||y|\|>\<le\>r<rsub|q>> or not (writing
-    <math|\<varrho\><rsub|q><around|(|y|)>=<math-ss|L><rsub|q><around|(|y|)>*y>
-    with <math|<math-ss|L>> the averaged derivative). Then
-    <math|<around|\<\|\|\>|\<varrho\><rsup|0><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<le\>\<varepsilon\><rsub|q>*r<rsub|q>>
-    shifts the threshold by a small amount, and
-    <math|<around|\<\|\|\>|\<varrho\><rsup|1><rsub|q>|\<\|\|\>><rsub|j>\<le\>\<varepsilon\><rsub|q><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|j>>,
-    <math|j=4,6>. If <math|\<varepsilon\><rsub|q>\<le\><frac|1|32>>, then
-    <math|<around|\||Y|\|>\<le\><around|\||w|\|>+<frac|13|16>*r<rsub|q>+<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>;
+    <math|\<varrho\><rsub|q><around|(|y|)>=\<varrho\><rsub|q><rsup|0>+\<varrho\><rsub|q><rsup|1>>
+    according to <math|<around|\||y|\|>\<leq\>r<rsub|q>> or not (writing
+    <math|\<varrho\><rsub|q><around|(|y|)>=L<rsub|q><around|(|y|)>*y> with
+    <math|L> the averaged derivative). Then
+    <math|<around|\<\|\|\>|\<varrho\><rsub|q><rsup|0>|\<\|\|\>><rsub|\<infty\>>\<leq\>\<varepsilon\><rsub|q>*r<rsub|q>\<leq\>r<rsub|q>/32>
+    shifts the threshold, and <math|<around|\<\|\|\>|\<varrho\><rsub|q><rsup|1>|\<\|\|\>><rsub|j>\<leq\>\<varepsilon\><rsub|q><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|j>>,
+    <math|j=4,6>. Then <math|<around|\||Y|\|>\<leq\><around|\||w|\|>+<frac|13|16>*r<rsub|q>+<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>;
     on <math|<around|{|<around|\||Y|\|>\<gtr\>r<rsub|q>|}>> this gives
-    <math|<frac|3|16><around|\||Y|\|>\<le\><around|\||w|\|>+<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>,
-    so <math|<around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|j>\<le\><frac|16|3><around|(|<around|\<\|\|\>|w<rsub|q>*<around|\<\|\|\>|<rsub|j>+<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j>+\<varepsilon\><rsub|q>|\<\|\|\>>*t<rsub|q>|\<\|\|\>><rsub|j>|)>>,
-    and for small <math|\<varepsilon\>>
+    <math|<frac|3|16><around|\||Y|\|>\<leq\><around|\||w|\|>+<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>,
+    so for small <math|\<varepsilon\>>
 
     <\equation*>
-      <around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|j>\<le\>C*<around|(|<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|j>+<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j>|)>,<space|2em><around|\<\|\|\>|\<varrho\><rsup|1><rsub|q>|\<\|\|\>><rsub|j>\<le\>C*\<varepsilon\><rsub|q>*<around|(|<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|j>+<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j>|)>.
+      <around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|j>\<leq\>C*<around|(|<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|j>+<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j>|)>,<space|2em><around|\<\|\|\>|\<varrho\><rsub|q><rsup|1>|\<\|\|\>><rsub|j>\<leq\>C*\<varepsilon\><rsub|q>*<around|(|<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|j>+<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j>|)>.
     </equation*>
 
-    This also supplies the <math|t> part of <math|J<rsub|T>>. These are
-    <em|operator> bounds: <math|\<varrho\>> is nonlocal, but small in every
-    <math|L<rsup|p>>. In the cube the error is
-    <math|\<rho\>=<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>,
-    and the cube error <math|<frac|4225|6>*\<gamma\><around|\<\|\|\>|\<rho\>|\<\|\|\>><rsub|6><rsup|6>>
-    is at most <math|C*\<gamma\><around|(|<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|6><rsup|6>+\<varepsilon\><rsub|q><rsup|6>|\<\|\|\>>*w<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|)>>:
-    the <math|w> part is absorbed for small <math|\<varepsilon\>>, the
-    <math|\<xi\>> part goes into <math|G<rsub|T>>. The memory of
-    <math|\<varrho\><rsup|0>> costs at most
-    <math|<frac|2|3><around|(|sup<rsub|s>
-    \<varepsilon\><rsub|s>|)>*<space|0.17em>q*r<rsub|q><around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|3><rsup|3>>
-    and is absorbed by the spare <math|<frac|1|4>*q*r<rsub|q><around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|3><rsup|3>>
-    when <math|sup<rsub|s> \<varepsilon\><rsub|s>\<less\><frac|3|8>>
-    (automatic, since <math|\<varepsilon\>\<le\><frac|1|32>>); the memory of
-    <math|\<varrho\><rsup|1>> costs <math|C*sup<rsub|q>
-    \<varepsilon\><rsub|q>*<space|0.17em><around|(|A+G<rsub|T>|)>>, with
-    <math|A=<big|int><rsub|q<rsub|0>><rsup|T>q<rsup|-1/2><around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|4><rsup|4>\<mathd\>q>,
-    by Hölder, Hardy and Young, and is absorbed by the spare
-    <math|<frac|3|28>> if <math|C*sup<rsub|q>
-    \<varepsilon\><rsub|q>\<less\><frac|3|56>>; the subtraction is legitimate
-    because <math|A\<less\>\<infty\>> pathwise at fixed <math|N,T>, by
-    continuity on <math|<around|[|q<rsub|0>,T|]>>. All are deterministic
-    smallness conditions on <math|g<rsub|q<rsub|0>>>, independent of
-    <math|p>.
+    This also supplies the <math|t> part of <eqref|eq:forward-q>. These are
+    operator bounds: <math|\<varrho\>> is nonlocal, but small in every
+    <math|L<rsup|p>>. In the cube and on the right side of <eqref|eq:field>
+    the error is <math|\<rho\>=<around|\||\<xi\>|\|>+<around|\||\<varrho\><rsup|1>|\|>>.
+    The bounded parts on the right cost <math|<frac|q*r|16><around|\<\|\|\>|w|\<\|\|\>><rsub|3><rsup|3>>,
+    which is absorbed by <math|<frac|q*r|13><around|\<\|\|\>|w|\<\|\|\>><rsub|3><rsup|3>>
+    from the cube. The cube error is at most
+    <math|C*\<gamma\>*<around|(|<around|\<\|\|\>|\<xi\>|\<\|\|\>><rsub|6><rsup|6>+\<varepsilon\><rsup|6><around|\<\|\|\>|w|\<\|\|\>><rsub|6><rsup|6>|)>>,
+    and Young's inequality gives <math|C*q*<around|(|<around|\<\|\|\>|\<xi\>|\<\|\|\>><rsub|4><rsup|4>+\<varepsilon\><rsup|4><around|\<\|\|\>|w|\<\|\|\>><rsub|4><rsup|4>|)>>.
+    The <math|w> parts are absorbed for small <math|\<varepsilon\>>: these
+    are deterministic smallness conditions on <math|g<rsub|q<rsub|0>>>,
+    independent of <math|p>.
 
-    <em|The backward forcing.> <math|<around|\||<around|\<langle\>|w<rsup|3>,F<rsup|Z>|\<rangle\>>|\|>\<le\><frac|\<gamma\>|48>\<\|\|\>w\<\|\|\><rsub|6><rsup|6>+<frac|12|\<gamma\>><around|\<\|\|\>|F<rsup|Z>|\<\|\|\>><rsub|2><rsup|2>>,
-    and by the second Hardy inequality <math|\<gamma\><rsup|-1>*<big|int>q<rsup|-3/2><around|\<\|\|\>|F<rsup|Z><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<mathd\>q\<le\>16*<space|0.17em>E<rsub|T>>.
+    <em|The error.> <math|<around|\||<around|\<langle\>|w<rsup|3>,<around|(|q-q<rsub|0>|)>*Z|\<rangle\>>|\|>\<leq\><frac|\<gamma\>|48><around|\<\|\|\>|w|\<\|\|\>><rsub|6><rsup|6>+<frac|12|\<gamma\>>*q<rsup|2><around|\<\|\|\>|Z|\<\|\|\>><rsub|2><rsup|2>>.
+    Multiplying <eqref|eq:forward-q> by <math|q<rsup|-3/2>> and integrating
+    gives <math|J<rsub|T>\<leq\>C*<around|(|G<rsub|T>+E<rsub|T>|)>>.
 
-    <em|Gaussian tails.> <math|X<rsub|q><around|(|x|)>> is centred Gaussian
-    with variance <math|<big|int><rsub|q<rsub|0>><rsup|q>a<rsub|2>\<le\>C*<sqrt|q>>,
-    while the threshold is <math|r<rsub|q>/32=<frac|1|32>*<around|(|q/\<gamma\>|)><rsup|1/2>>.
-    By Minkowski's inequality in <math|x> and translation invariance of
-    <math|<math-up|Law><around|(|X<rsub|q>|)>>,
-    <math|<around*|\||<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j><rsup|j>|\|><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<le\><around*|\||<around|\||\<xi\><rsub|q><around|(|0|)>|\|><rsup|j>|\|><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>>,
-    and by Hölder, for <math|j=4,6>,
+    <em|Tails of the noise.> By Minkowski's inequality in <math|x>, for
+    <math|j=4,6>, <math|<around|\<\|\|\>|<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j><rsup|j>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<leq\>sup<rsub|x><around|\<\|\|\>|<around|\||\<xi\><rsub|q><around|(|x|)>|\|><rsup|j>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>>,
+    and by Hölder and <eqref|eq:zeta-tail>, with threshold
+    <math|r<rsub|q>/32=<frac|1|32>*<around|(|q/\<gamma\>|)><rsup|1/2>>, this
+    is at most
 
     <\equation*>
-      <around*|\||<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|j><rsup|j>|\|><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<le\><around*|(|\<bbb-E\><around|\||X<rsub|q><around|(|0|)>|\|><rsup|2*j*p>|)><rsup|<frac|1|2*p>>*\<bbb-P\>*<around*|(|<around|\||X<rsub|q><around|(|0|)>|\|>\<gtr\>r<rsub|q>/32|)><rsup|<frac|1|2*p>>\<le\>C<rsub|j>*p<rsup|j/2>*q<rsup|j/4>\<mathe\><rsup|-c*<sqrt|q>/<around|(|p*\<gamma\>|)>>,
+      <around|(|\<bbb-E\><around|\||\<zeta\><rsub|q><around|(|x|)>|\|><rsup|2*j*p>|)><rsup|<frac|1|2*p>>*\<bbb-P\><around|(|<around|\||\<zeta\><rsub|q><around|(|x|)>|\|>\<gtr\>r<rsub|q>/32|)><rsup|<frac|1|2*p>>\<leq\>C<rsub|j>*p<rsup|j/2>*q<rsup|j/4>*\<mathe\><rsup|-c<sqrt|q>/<around|(|p*\<gamma\>|)>>,
     </equation*>
 
     and integrating in <math|q> with <math|u=<sqrt|q>/<around|(|p*\<gamma\>|)>>
-    gives <math|<around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\><rsup|3>*p<rsup|5>>.
+    gives <math|<around|\<\|\|\>|G<rsub|T>|\<\|\|\>><rsub|p>\<leq\>C*\<gamma\><rsup|3>*p<rsup|5>>.
   </render-proof>
 
   No information on the interacting field has been used, apart from the
-  equation itself: the Gaussian tails are tails of the free field <math|X>,
-  which is Gaussian under the interacting measure because it is built from
-  the innovation.
+  equation itself and the posterior structure of the noise. The tails of
+  <math|\<zeta\>> are those of the free field whatever the interaction: this
+  replaces the subtraction of a Gaussian field.
+
+  <subsection|A pointwise bound><label|sec:sup>
+
+  The maximum principle gives more than the integrated estimate: a bound in
+  <math|L<rsup|\<infty\>>> driven by the cube alone.
+
+  <\proposition>
+    <dueto|<math|L<rsup|\<infty\>>> coercivity><label|prop:sup>For
+    <math|q<rsub|0>> large, at every cutoff, pathwise and for every <math|q>,
+
+    <\equation>
+      <around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leq\>C*<around*|[|<around*|(|<frac|q|\<gamma\>>|)><rsup|1/3><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>><rsup|1/3>+<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<rsup|1/4>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>|]>.<label|eq:sup>
+    </equation>
+
+    In particular there is <math|c\<gtr\>0> such that <math|t<rsub|q>=0>,
+    i.e. <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leq\>r<rsub|q>>,
+    whenever <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leq\>c*r<rsub|q>>:
+    large fields occur only when the noise or the error is large.
+  </proposition>
+
+  <\proof>
+    Let <math|p=q-q<rsub|0>>, <math|d=\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>>,
+    and remove the error by <math|\<cal-H\>=p*C<rsub|q<rsub|0>>*Z<rsub|q>>.
+    Then <math|<around|\<\|\|\>|\<cal-H\>|\<\|\|\>><rsub|\<infty\>>\<leq\>p*a<around|(|q<rsub|0>|)><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leq\>C*q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>,
+    since the kernel of <math|C<rsub|q<rsub|0>>> is in <math|L<rsup|2>>
+    uniformly in <math|N> by <hlink|(10.3)|cqft_lecture5.tm#eq:a2>. By
+    <eqref|eq:field>, <math|W=V-\<cal-H\>> and <math|D=\<cal-H\>+d> satisfy
+
+    <\equation*>
+      K<rsub|q<rsub|0>>*W+<frac|\<gamma\>|3>*<around|(|W+D|)><rsup|3>=p*d,<space|2em>Y<rsub|q>=W+D.
+    </equation*>
+
+    At a positive maximum of <math|W>, <math|K<rsub|q<rsub|0>>*W\<geq\>0>, so
+    <math|W+D\<leq\><around|(|3*p<around|\<\|\|\>|d|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>>
+    there; similarly at a negative minimum. Hence
+    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leq\>2<around|\<\|\|\>|D|\<\|\|\>><rsub|\<infty\>>+<around|(|3*q<around|\<\|\|\>|d|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>>.
+    With <math|<around|\<\|\|\>|\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|\<infty\>>\<leq\>\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>,
+    the term <math|2*\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>
+    is absorbed, and by Young's inequality
+    <math|<around|(|q*\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>\<leq\><frac|1|4><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>+C*<around|(|q*\<varepsilon\><rsub|q>/\<gamma\>|)><rsup|1/2>>,
+    where <math|q*\<varepsilon\><rsub|q>/\<gamma\>\<leq\>C<sqrt|q>> since
+    <math|g<rsub|q>=\<gamma\>*q<rsup|-1/2>>. This proves <eqref|eq:sup>. For
+    the last claim use <math|q/\<gamma\>=r<rsub|q><rsup|2>>: the terms of
+    <eqref|eq:sup> are at most <math|C*<around|(|c<rsup|1/3>+c+g<rsub|q><rsup|1/2>|)>*r<rsub|q>>,
+    and <math|g<rsub|q><rsup|1/2>\<leq\>g<rsub|q<rsub|0>><rsup|1/2>> is
+    small.
+  </proof>
+
+  <\lemma>
+    <dueto|Supremum of the noise><label|lem:noise-sup>Uniformly in <math|N>
+    and in the interaction,
+
+    <\equation*>
+      <around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<leq\>C<sqrt|p>,<space|2em>\<cal-N\>\<assign\>sup<rsub|q\<geq\>q<rsub|0>>q<rsup|-1/4>*<around|(|log
+      <around|(|2+q|)>|)><rsup|-1/2><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>.
+    </equation*>
+  </lemma>
+
+  <\proof>
+    At fixed <math|q> the norm <math|f\<mapsto\><around|\<\|\|\>|C<rsub|q>*f|\<\|\|\>><rsub|\<infty\>>>
+    is convex, so by Lemma<nbsp><reference|lem:noise>
+    <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>> is
+    dominated by the supremum of the Gaussian field
+    <math|C<rsub|q>*B<rsub|q-q<rsub|0>>>. Its variance is at most
+    <math|C<sqrt|q>>, and for <math|\<theta\>\<less\>1> its increments have
+    variance at most <math|C<sqrt|q>*<around|(|<sqrt|q><around|\||x-y|\|>|)><rsup|\<theta\>>>
+    uniformly in <math|N>, so Dudley's bound gives the mean
+    <math|\<lesssim\>q<rsup|1/4><sqrt|log <around|(|2+q|)>>> and Gaussian
+    concentration gives fluctuations at the scale <math|q<rsup|1/4>>. For the
+    supremum over <math|s\<in\><around|[|Q,2*Q|]>>, write
+    <math|C<rsub|s>=C<rsub|2*Q>*K<rsub|2*Q>*C<rsub|s>>, where
+    <math|<around|\<\|\|\>|K<rsub|2*Q>*C<rsub|s>|\<\|\|\>><rsub|\<infty\>\<to\>\<infty\>>\<leq\>2>.
+    Since <math|\<mathd\>\<eta\><rsub|q>=<around|(|I-<around|(|q-q<rsub|0>|)><math-up|Cov><rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>>
+    by <hlink|(10.8)|cqft_lecture5.tm#eq:dpsi>, <math|\<eta\>> is a
+    martingale, <math|<around|\<\|\|\>|C<rsub|2*Q>*\<eta\><rsub|s>|\<\|\|\>><rsub|\<infty\>>>
+    is a submartingale, and Doob's inequality gives, for <math|p\<geq\>2>,
+    <math|<around|\<\|\|\>|sup<rsub|s\<in\>[Q,2*Q]><around|\<\|\|\>|\<zeta\><rsub|s>|\<\|\|\>><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<leq\>C*Q<rsup|1/4>*<around|(|<sqrt|log
+    <around|(|2+Q|)>>+<sqrt|p>|)>>. Markov's inequality with
+    <math|p\<asymp\>\<lambda\><rsup|2>*log <around|(|2+Q|)>> bounds the
+    probability that the normalised supremum over <math|<around|[|Q,2*Q|]>>
+    exceeds <math|\<lambda\>> by <math|<around|(|2+Q|)><rsup|-c*\<lambda\><rsup|2>>>,
+    for <math|\<lambda\>\<geq\>\<lambda\><rsub|0>>. This is summable over
+    dyadic <math|Q>, and <math|<around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|p>\<leq\>C<sqrt|p>>
+    follows.
+  </proof>
 
   <subsection*|Exercises>
 
   <\exercise>
-    <dueto|Without the cube>Replace <math|<frac|\<gamma\>|3>*<around|(|v+X|)><rsup|3>>
-    by <math|0> in<nbsp><eqref|eq:scalar>, and show that the argument fails:
-    find <math|v> solving <math|q*v<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>v<rsub|s>\<mathd\>s+f<rsub|q>>
-    on <math|<around|[|q<rsub|0>,\<infty\>|)>> with
-    <math|<big|int>q<rsup|-1/2>*v<rsup|4>=\<infty\>> for <math|f> with
-    <math|<big|int>q<rsup|-3/2>*f<rsup|2>\<less\>\<infty\>> (try <math|v>
-    constant). Testing with <math|v<rsup|3>> gives
-    <math|<around|(|1-<frac|8|7>|)>*<big|int>q<rsup|-1/2>*v<rsup|4>\<le\>\<ldots\>>,
-    which is empty. What replaces the missing margin, and the missing
-    <math|w<rsup|6>> term that absorbs the forcing, when the cube is present?
+    <dueto|Without the cube>Replace <math|<frac|\<gamma\>|3>*<around|(|v+g|)><rsup|3>>
+    by <math|0> in <eqref|eq:scalar>. Show that
+    <math|v=p*a<rsup|-1>*<around|(|g+z|)>>, so that the estimate fails as
+    <math|q\<to\>\<infty\>> at fixed mass <math|a>. Which term of
+    <eqref|eq:scalar-bound> replaces the missing mass, and how does the
+    threshold <math|r=<around|(|q/\<gamma\>|)><rsup|1/2>> enter?
   </exercise>
 
   <\exercise>
@@ -594,25 +758,14 @@
   </exercise>
 
   <\exercise>
-    <dueto|Simulation>Solve<nbsp><eqref|eq:scalar> numerically with <math|X>
-    a scalar Brownian motion run with clock
-    <math|<big|int><rsub|q<rsub|0>><rsup|q>s<rsup|-1/2>\<mathd\>s> (the
-    three-dimensional bubble <math|a<rsub|2><around|(|s|)>\<approx\>s<rsup|-1/2>>),
-    e.g. <math|\<gamma\>=1>, <math|q<rsub|0>=1>, <math|T=10<rsup|4>>. With
-    <math|f=0> the solution typically stays below the threshold (it can cross
-    briefly at small <math|q>, where <math|<around|\||X<rsub|q>|\|>> is
-    comparable to <math|r<rsub|q>>), so the left side is zero or small; the
-    right side does not, because at these parameters
-    <math|g<rsub|q<rsub|0>>=1> is not small and
-    <math|<around|\||X<rsub|q>|\|>\<gtr\>r<rsub|q>/32> on most scales. Add a
-    forcing pulse <math|f<rsub|q>=\<kappa\>*<space|0.17em>q*r<rsub|q>*<with|math-font|Bbb|1><rsub|<around|[|a,2*a|]>><around|(|q|)>>
-    with <math|\<kappa\>> of order one, so that <math|v> crosses
-    <math|<frac|3|4>*r<rsub|q>>. Compare the left side
-    of<nbsp><eqref|eq:scalar-forward> with its <math|f>-term and its
-    <math|\<xi\>>-term separately, as functions of <math|\<kappa\>> and
-    <math|a>; then decrease <math|\<gamma\>> (e.g.
-    <math|\<gamma\>=10<rsup|-2>>) and observe the <math|\<xi\>>-term becoming
-    negligible at large <math|q>.
+    <dueto|Numerical check>Solve <eqref|eq:scalar> numerically for random
+    <math|\<gamma\>,q,a,p,g,z>, and check <eqref|eq:scalar-bound>. Take
+    <math|g> Gaussian with variance <math|<sqrt|q>>, <math|z=0>,
+    <math|\<gamma\>=1>, and compare <math|<around|\||v+g|\|>> with
+    <math|<around|(|q*<around|\||g|\|>/\<gamma\>|)><rsup|1/3>> and with
+    <math|r>. Is the exponent <math|5/12> of
+    <math|<around|(|q*<around|\||g|\|>|)><rsup|1/3>\<approx\>q<rsup|5/12>>
+    attained on one site? What should improve it on the lattice?
   </exercise>
 
   <section|Backward feedback and closure><label|sec:backward>
@@ -681,7 +834,7 @@
   </equation*>
 
   At fixed <math|N>, <math|\<delta\><rsub|N,T,p>\<to\>0> as
-  <math|T\<to\>\<infty\>> (Lemma<nbsp><hlink|16.1|cqft_lecture7.tm#lem:terminal>).
+  <math|T\<to\>\<infty\>> (Lemma<nbsp><reference|lem:terminal>).
 
   <em|Large fields.> Let <math|A<rsup|<math-up|l>>\<assign\><big|int><rsub|q<rsub|0>><rsup|T>s<rsup|7/2><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|s><around|(|Y<rsub|s>|)>|\<\|\|\>><rsub|2><rsup|2>\<mathd\>s\<le\>C*\<gamma\><rsup|4>*<big|int>s<rsup|-3/2><around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|6><rsup|6>\<le\>C*\<gamma\><rsup|3>*J<rsub|T>>
   by (B). By Cauchy\USchwarz in <math|s>,
@@ -805,8 +958,8 @@
   <math|\<gamma\><rsup|2>/q<rsub|0>>, not in the coupling of either equation,
   and it is independent of the moment order, so a single <math|q<rsub|0>>
   closes the loop for every <math|p>. The growth <math|p<rsup|5>> is then
-  inherited from the Gaussian tails <math|G<rsub|T>>, and gives stretched
-  exponential moments <math|\<bbb-E\>*exp
+  inherited from the tails of the noise, <math|G<rsub|T>>, and gives
+  stretched exponential moments <math|\<bbb-E\>*exp
   <around|{|c*<around|(|E<rsub|\<infty\>>+J<rsub|\<infty\>>|)><rsup|1/5>|}>\<less\>\<infty\>>
   once the boundary term is removed. Note that
   <math|\<gamma\><rsup|2>/q<rsub|0>=g<rsub|q<rsub|0>><rsup|2>>.
@@ -814,8 +967,8 @@
   <subsection|Consequences>
 
   The boundary term <math|\<delta\><rsub|N,T,p>> is removed in
-  Lecture<nbsp>7, at each fixed <math|N>, by letting <math|T\<to\>\<infty\>>.
-  Assuming this for the moment, we obtain
+  Section<nbsp><reference|sec:terminal>, at each fixed <math|N>, by letting
+  <math|T\<to\>\<infty\>>. Assuming this for the moment, we obtain
 
   <\equation>
     <label|eq:uv-stability>sup<rsub|N>\<\|\|\>E<rsup|N><rsub|\<infty\>>\<\|\|\><rsub|L<rsup|p>>+sup<rsub|N><around|\<\|\|\>|J<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<space|2em>sup<rsub|N>
@@ -827,13 +980,28 @@
   factor <math|3>, <math|O<around|(|q<rsup|-3>|)>>, <math|0> and, by the
   computation above, <math|2*L<rsub|0><rsup|2>*q<rsup|-5/2>*\<bbb-E\>*A<rsup|<math-up|l>>>.
   So the approximate forecast differs from the exact one by
-  <math|O<around|(|q<rsup|-5/4>|)>> in <math|L<rsup|2>*<around|(|\<bbb-P\>;L<rsup|2>|)>>
+  <math|O<around|(|q<rsup|-5/4>|)>> in <math|L<rsup|2><around|(|\<bbb-P\>;L<rsup|2>|)>>
   (root mean square), uniformly in the lattice. Since
-  <math|<around|\<\|\|\>|H<rsub|q>|\<\|\|\>>\<le\>C/q>, the coupling term
+  <math|<around|\<\|\|\>|H<rsub|q>|\<\|\|\>>\<leq\>C/q>, the coupling term
   <math|H<rsub|q>*Z<rsub|q>> in the forward equation is
-  <math|O<around|(|q<rsup|-9/4>|)>> in <math|L<rsup|2>*<around|(|\<bbb-P\>;L<rsup|2>|)>>,
+  <math|O<around|(|q<rsup|-9/4>|)>> in <math|L<rsup|2><around|(|\<bbb-P\>;L<rsup|2>|)>>,
   integrable in <math|q>: the forward equation is, up to an integrable drift,
-  the explicit SDE <math|\<mathd\>Y=b<around|(|Y|)>\<mathd\>q+H<around|(|Y|)>\<mathd\>W>.
+  the explicit SDE <math|\<mathd\>Y=b<around|(|Y|)>*\<mathd\>q+H<around|(|Y|)>*\<mathd\>W>.
+  The same computation holds along the path. At <math|T=\<infty\>> the
+  boundary part vanishes (Lemma<nbsp><reference|lem:terminal>) and, with
+  <math|A<rsup|<math-up|l>>> now integrated up to <math|\<infty\>> (it has
+  all moments, since <math|A<rsup|<math-up|l>>\<leq\>C*\<gamma\><rsup|3>*J<rsub|\<infty\>>>),
+  <math|q<rsup|5/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<leq\>3*<around|(|C*\<gamma\><rsup|7>*q<rsub|0><rsup|-1/2>+2*L<rsub|0><rsup|2>*\<bbb-E\><rsub|q>*A<rsup|<math-up|l>>|)>>.
+  Since <math|\<bbb-E\><rsub|q>*A<rsup|<math-up|l>>> is a martingale, Doob's
+  inequality gives, for <math|p\<geq\>2>,
+
+  <\equation>
+    <around*|\<\|\|\>|sup<rsub|q\<geq\>q<rsub|0>>q<rsup|5/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<leq\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>.<label|eq:Z-sup>
+  </equation>
+
+  With Proposition<nbsp><reference|prop:sup> and
+  Lemma<nbsp><reference|lem:noise-sup> this gives pointwise bounds on
+  <math|Y> for all resolutions, used in Section<nbsp><reference|sec:compactness>.
 
   <\remark>
     <dueto|Comparison with the variational method>In the Boué\UDupuis
@@ -882,6 +1050,1340 @@
     for small <math|c>.
   </exercise>
 
+  <section*|Removing the cutoffs>
+
+  <assign|equation-nr|1>Sections<nbsp><reference|sec:energies>\U<reference|sec:backward>
+  proved, at every lattice cutoff <math|N> and every upper scale <math|T>,
+
+  <\equation>
+    <label|eq:energy-recall><around|\<\|\|\>|E<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|J<rsub|T>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|\<gamma\>>*<around*|(|1+p<rsup|5>+\<delta\><rsub|N,T,p>|)>,<space|2em>\<delta\><rsub|N,T,p>=<around|\<\|\|\>|T*Z<rsub|T>|\<\|\|\>><rsup|2><rsub|L<rsup|2*p><around|(|\<bbb-P\>;L<rsup|2>|)>>,
+  </equation>
+
+  for the backward energy <math|E<rsub|T>> and the large-field action
+  <math|J<rsub|T>> of <eqref|eq:energies>. Three things remain.
+
+  <\enumerate-roman>
+    <item>Show that the boundary term vanishes: <math|T*Z<rsub|T>\<to\>0> as
+    <math|T\<to\>\<infty\>> at fixed <math|N>
+    (Section<nbsp><reference|sec:terminal>).
+
+    <item>Turn the uniform energy bounds into compactness of the processes
+    and of the measures (Section<nbsp><reference|sec:compactness>).
+
+    <item>Identify the limit: the deterministic coefficients, the noise, and
+    the equations (Section<nbsp><reference|sec:limit>).
+  </enumerate-roman>
+
+  The structure of (iii) is instructive: convergence of the fields alone does
+  not suffice to pass to the limit in an FBSDE, because the backward
+  martingale might converge to something with <em|extra noise>. Here the
+  statistical meaning of the backward variable, a posterior mean with a
+  positive covariance, saves us.
+
+  <section|The boundary at infinite resolution><label|sec:terminal>
+
+  <subsection|The boundary lemma>
+
+  At a fixed lattice, the terminal resolution is <math|q=\<infty\>>, and the
+  field at resolution <math|q>, <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>>,
+  converges to the terminal field <math|\<Phi\><rsub|\<infty\>>>. The
+  approximate action <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> was built to
+  converge to the bare action: <math|\<mu\><rsub|q>\<to\>\<mu\><rsub|N>>,
+  <math|\<Theta\><rsub|q>\<to\>0>, and the nonlinear corrections were
+  integrated from <math|q=\<infty\>>, so that they vanish there. This is the
+  boundary condition of the backward equation.
+
+  <\lemma>
+    <dueto|Boundary lemma><label|lem:terminal> At fixed <math|N>, for every
+    <math|p\<less\>\<infty\>>, as <math|q\<to\>\<infty\>>,
+
+    <\equation>
+      <label|eq:terminal><around|\<\|\|\>|Y<rsub|q>-\<Phi\><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>;H<rsub|N>|)>>+<around|\<\|\|\>|q*Z<rsub|q>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>;H<rsub|N>|)>>\<le\>C<rsub|N,p>*<space|0.17em>q<rsup|-1/2>,<space|2em><text|hence><space|2em>\<delta\><rsub|N,T,p>\<le\>C<rsub|N,p>*T<rsup|-1>.
+    </equation>
+
+    The constants depend on <math|N>; this is not a uniform estimate.
+  </lemma>
+
+  <\proof>
+    All norms on <math|H<rsub|N>> are equivalent, and we do not track the
+    dependence on <math|N>.
+
+    <em|The field at resolution <math|q>.> By
+    <hlink|(10.5)|cqft_lecture5.tm#eq:observation>,
+    <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>>,
+    and <math|<around|(|q-q<rsub|0>|)>*C<rsub|q>-I=-C<rsub|q>*K<rsub|q<rsub|0>>=O<around|(|q<rsup|-1>|)>>,
+    <math|<around|\<\|\|\>|C<rsub|q>*B<rsub|q-q<rsub|0>>|\<\|\|\>><rsub|L<rsup|p>>=O<around|(|q<rsup|-1/2>|)>>.
+    So <math|<around|\<\|\|\>|\<Phi\><rsub|q>-\<Phi\><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|N,p>*q<rsup|-1/2>>.
+
+    <em|The approximate forecast.> Global convexity gives
+    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>>\<le\>C<around|\<\|\|\>|P<rsub|q>|\<\|\|\>>/q>,
+    bounded in every <math|L<rsup|p>> uniformly in <math|q>. The coordinate
+    equation <math|\<Phi\><rsub|q>=Y<rsub|q>+C<rsub|q>*D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
+    and the bounds <math|<around|\||\<mu\><rsub|q>|\|>\<le\>C<rsub|N>>,
+    <math|<around|\<\|\|\>|\<Theta\><rsub|q>|\<\|\|\>><rsub|<math-up|row>>=O<rsub|N><around|(|q<rsup|-1/2>|)>>
+    and <math|<around|\<\|\|\>|D*<wide|h|~><rsub|q><around|(|y|)>|\<\|\|\>><rsub|\<infty\>>\<le\>C<math-ss|S><rsub|4><around|(|h<rsup|<around|[|2|]>><rsub|q>|)><around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>><rsup|3>\<le\>C*\<gamma\><rsup|2>*q<rsup|-1/2><around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>><rsup|3>>
+    (Taylor from the fourth order, since the low jets vanish) show that
+    <math|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>> is
+    bounded in <math|L<rsup|p>>, so <math|<around|\<\|\|\>|Y<rsub|q>-\<Phi\><rsub|q>|\<\|\|\>><rsub|L<rsup|p>>=O<around|(|q<rsup|-1>|)>>.
+    Moreover <math|<around|\||\<mu\><rsub|q>-\<mu\><rsub|N>|\|>=O<rsub|N><around|(|q<rsup|-1>|)>>,
+    and therefore
+
+    <\equation>
+      <label|eq:gradient-match><around|\<\|\|\>|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|\<\|\|\>><rsub|L<rsup|p>>\<le\>C<rsub|N,p>*q<rsup|-1/2>.
+    </equation>
+
+    Thus <em|the explicit force at the approximate forecast converges to the
+    bare force at the terminal field.>
+
+    <em|The error.> Subtract the approximate coordinate identity
+    <math|P<rsub|q>=K<rsub|q>*Y<rsub|q>+D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
+    from the exact posterior identity <hlink|(10.10)|cqft_lecture5.tm#eq:posterior-ibp>,
+    <math|P<rsub|q>=K<rsub|q>*\<psi\><rsub|q>+\<bbb-E\><rsub|q>*<around|[|D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>>:
+
+    <\equation>
+      <label|eq:qZ>q*Z<rsub|q>=q*C<rsub|q>*<around*|[|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>-\<bbb-E\><rsub|q>*D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>.
+    </equation>
+
+    Let <math|G=D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>> and
+    <math|G<rsup|0><rsub|q>=D*V<rsub|N><around|(|\<Phi\><rsub|q>|)>>, which
+    is <math|\<cal-F\><rsub|q>>-measurable. Then
+    <math|<around|\<\|\|\>|\<bbb-E\><rsub|q>*G-G|\<\|\|\>><rsub|L<rsup|p>>\<le\><around|\<\|\|\>|\<bbb-E\><rsub|q>*<around|(|G-G<rsup|0><rsub|q>|)>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|G<rsup|0><rsub|q>-G|\<\|\|\>><rsub|L<rsup|p>>\<le\>2*<around|\<\|\|\>|G-G<rsup|0><rsub|q>|\<\|\|\>><rsub|L<rsup|p>>=O<around|(|q<rsup|-1/2>|)>>,
+    by the cubic Lipschitz bound for <math|D*V<rsub|N>> and the first step.
+    With<nbsp><eqref|eq:gradient-match> and
+    <math|<around|\<\|\|\>|q*C<rsub|q>|\<\|\|\>>\<le\>1> this proves the
+    claim.
+  </proof>
+
+  The proof uses no estimate uniform in <math|N>, and no concentration of the
+  posterior: only that the observed estimator
+  <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>>, which is
+  <math|\<cal-F\><rsub|q>>-measurable, converges to the hidden field. In
+  Lecture<nbsp>4 language, the forecast and the field at resolution <math|q>
+  have the same limit at infinite resolution, and the force
+  <math|F<rsub|q>=K<rsub|q>*<around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>>
+  converges to the bare force <math|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>>
+  (Exercise<nbsp><reference|ex:force-limit>; recall
+  <math|F<rsub|q>=\<bbb-E\><rsub|q>*<around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>>
+  by <hlink|(10.9)|cqft_lecture5.tm#eq:polchinski-fbsde>, so this is the
+  conditional-expectation step of the proof).
+
+  <subsection|UV stability>
+
+  Now let <math|T\<to\>\<infty\>> at fixed <math|N>
+  in<nbsp><eqref|eq:energy-recall>: the paths and the law
+  <math|\<nu\><rsub|N>> do not depend on <math|T>, <math|E<rsub|T>> and
+  <math|J<rsub|T>> increase to <math|E<rsub|\<infty\>>> and
+  <math|J<rsub|\<infty\>>>, and <math|\<delta\><rsub|N,T,p>\<to\>0> by
+  Lemma<nbsp><reference|lem:terminal>. Only then take the supremum over
+  <math|N>.
+
+  <\theorem>
+    <dueto|UV stability<nbsp><cite|FBSDE26>><label|thm:uv> For
+    <math|q<rsub|0>> large enough, depending only on <math|\<gamma\>>,
+
+    <\equation>
+      <label|eq:uv>sup<rsub|N><around*|(|<around|\<\|\|\>|E<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|J<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>|)>\<le\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<space|2em>sup<rsub|N>
+      \<bbb-E\><around|\<\|\|\>|Z<rsup|N><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<le\>C<rsub|\<gamma\>>*q<rsup|-5/2>,
+    </equation>
+
+    and <math|sup<rsub|N> \<bbb-E\>*exp <around|{|c*<around|(|E<rsup|N><rsub|\<infty\>>+J<rsup|N><rsub|\<infty\>>|)><rsup|1/5>|}>\<less\>\<infty\>>
+    for small <math|c\<gtr\>0>.
+  </theorem>
+
+  <\proof>
+    Monotone convergence in<nbsp><eqref|eq:energy-recall>, then the
+    representation formula <eqref|eq:representation> on
+    <math|<around|[|q,\<infty\>|)>>, whose terminal term vanishes by
+    Lemma<nbsp><reference|lem:terminal>. The exponential moment follows from
+    the polynomial growth by Markov's inequality with
+    <math|p\<asymp\>R<rsup|1/5>>.
+  </proof>
+
+  The order of limits matters. The constant <math|C<rsub|N,p>> in
+  Lemma<nbsp><reference|lem:terminal> diverges with <math|N>, and we never
+  take a supremum over <math|N> of the remainder <math|C<rsub|N,p>/T>. The
+  infinite-resolution boundary is used only qualitatively, at each lattice
+  separately.
+
+  <subsection*|Exercises>
+
+  <\exercise>
+    <dueto|The force at infinite resolution><label|ex:force-limit> Show that,
+    at fixed <math|N>, <math|F<rsub|q>=K<rsub|q>*<around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>\<to\>-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>>
+    in every <math|L<rsup|p>>, and that <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
+    Interpret the last identity: the force observable of Lecture<nbsp>4 is
+    the explicit force at the approximate forecast, corrected by
+    <math|K<rsub|q>*Z<rsub|q>>.
+  </exercise>
+
+  <\exercise>
+    <dueto|Why the stronger boundary>Using the bound on the boundary term in
+    the proof of Proposition<nbsp><reference|prop:backward>, explain why
+    <math|Z<rsub|T>\<to\>0> alone would not make it vanish, and why the rate
+    <math|<around|\<\|\|\>|T*Z<rsub|T>|\<\|\|\>>=o<around|(|1|)>> of
+    Lemma<nbsp><reference|lem:terminal> is what is needed.
+  </exercise>
+
+  <section|Compactness><label|sec:compactness>
+
+  <subsection|One Hilbert space>
+
+  To compare lattices, partition <math|\<bbb-T\><rsup|3>> into cubic cells
+  <math|\<square\><rsub|x>> of side <math|N<rsup|-1>> centred at
+  <math|x\<in\>\<Lambda\><rsub|N>>, and let
+
+  <\equation*>
+    <around|(|\<iota\><rsub|N>*u|)><around|(|z|)>=u<around|(|x|)>*<around|(|z\<in\>\<square\><rsub|x>|)>,<space|2em><around|(|j<rsub|N>*f|)><around|(|x|)>=N<rsup|3>*<big|int><rsub|\<square\><rsub|x>>f,<space|2em><math-ss|P><rsub|N>=\<iota\><rsub|N>*j<rsub|N>.
+  </equation*>
+
+  <math|\<iota\><rsub|N>:H<rsub|N>\<to\>H=L<rsup|2><around|(|\<bbb-T\><rsup|3>|)>>
+  is an isometry, <math|j<rsub|N>=\<iota\><rsub|N><rsup|\<ast\>>>, and
+  <math|<math-ss|P><rsub|N>\<to\>I> strongly. Fields are embedded by
+  <math|\<iota\><rsub|N>>, operators by <math|\<iota\><rsub|N>\<cdot\>j<rsub|N>>.
+  The embedded innovation has covariance <math|<math-ss|P><rsub|N>>; in the
+  limit it becomes a cylindrical Brownian motion on <math|H>, obtained as the
+  limit of the lattice innovations.
+
+  <subsection|Spatial suprema by a maximum principle>
+
+  The energy bounds control <math|L<rsup|4>> and <math|L<rsup|6>> norms of
+  large fields. Spatial suprema at finite resolution come from the
+  <math|L<rsup|\<infty\>>> coercivity of Proposition<nbsp><reference|prop:sup>.
+
+  <\lemma>
+    <dueto|Supremum after closure><label|lem:sup>Let
+    <math|\<cal-Y\>=sup<rsub|q\<geq\>q<rsub|0>>q<rsup|-5/12>*<around|(|log
+    <around|(|2+q|)>|)><rsup|-1/6><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>
+    and <math|\<cal-Z\>=sup<rsub|q\<geq\>q<rsub|0>>q<rsup|5/4><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>.
+    For <math|q<rsub|0>> large, with <math|\<cal-N\>> the supremum of the
+    noise of Lemma<nbsp><reference|lem:noise-sup>,
+
+    <\equation>
+      \<cal-Y\>\<leq\>C<rsub|\<gamma\>>*<around|(|1+\<cal-N\>+\<cal-Z\>|)>,<space|2em><around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|L<rsup|p>>\<leq\>C<sqrt|p>,<space|2em><around|\<\|\|\>|\<cal-Z\><rsup|2>|\<\|\|\>><rsub|L<rsup|p>>\<leq\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<label|eq:sup-closure>
+    </equation>
+
+    uniformly in <math|N>.
+  </lemma>
+
+  <\proof>
+    By the definitions, <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leq\>q<rsup|1/4>*<around|(|log
+    <around|(|2+q|)>|)><rsup|1/2>*\<cal-N\>> and
+    <math|q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leq\>q<rsup|-1/4>*\<cal-Z\>>.
+    Inserting these in <eqref|eq:sup>, the first term gives
+    <math|\<gamma\><rsup|-1/3>*q<rsup|5/12>*<around|(|log
+    <around|(|2+q|)>|)><rsup|1/6>*\<cal-N\><rsup|1/3>>, and the others are of
+    lower order. The bound on <math|\<cal-Z\>> is <eqref|eq:Z-sup>, whose
+    boundary term vanishes by Lemma<nbsp><reference|lem:terminal>.
+  </proof>
+
+  Any exponent below <math|<frac|1|2>> keeps <math|Y> below the threshold
+  <math|r<rsub|q>> at large <math|q>, and we only need moments of the
+  supremum of <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>> on
+  finite intervals of scales. The exponent <math|5/12> comes from the cube
+  alone. The memory form of Exercise<nbsp><reference|ex:memory>, with a
+  weight in <math|q> absorbing the memory, gives every exponent above
+  <math|<frac|1|4>>, at the price of that absorption.
+
+  In particular <em|finite-resolution> spatial suprema of <math|Y> have all
+  moments uniformly in <math|N>. At the terminal resolution there is no such
+  bound: <math|\<Phi\><rsub|\<infty\>>> is a distribution.
+
+  <subsection|Regularity in space and scale>
+
+  On a finite scale interval <math|I=<around|[|q<rsub|0>,Q|]>> write the
+  field equation <eqref|eq:field> as the linear elliptic equation
+
+  <\equation>
+    K<rsub|q<rsub|0>>*V<rsub|q>=f<rsub|q>,<space|2em>f<rsub|q>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>-<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>.<label|eq:linear>
+  </equation>
+
+  The energies control <math|\<bbb-E\><big|int><rsub|I><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|6><rsup|6>\<mathd\>q>
+  (since <math|<around|\||Y|\|><rsup|6>\<leq\>r<rsub|q><rsup|6>+<around|\||t<rsub|q>|\|><rsup|6>>)
+  and <math|\<bbb-E\><big|int><rsub|I><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<mathd\>q>,
+  and <math|\<bbb-E\><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<leq\>C<sqrt|q>>.
+  Hence <math|\<bbb-E\><big|int><rsub|I><around|\<\|\|\>|f<rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<leq\>C<rsub|I>>,
+  and testing with <math|V>,
+
+  <\equation*>
+    \<bbb-E\>*<big|int><rsub|I><around*|(|<around|\<\|\|\>|\<nabla\><rsub|N>*V<rsub|q>|\<\|\|\>><rsub|2><rsup|2>+<around|\<\|\|\>|V<rsub|q>|\<\|\|\>><rsub|2><rsup|2>|)>\<mathd\>q\<le\>C<rsub|I>.
+  </equation*>
+
+  So the part <math|V> of the approximate forecast is in <math|H<rsup|1>>,
+  and <math|Y=V+\<zeta\>-\<varrho\><around|(|Y|)>> inherits the regularity of
+  the noise <math|\<zeta\>>. This is that of the free field, whatever the
+  interaction: by Lemma<nbsp><reference|lem:noise>,
+  <math|\<bbb-E\><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|H<rsup|\<sigma\>>><rsup|2>\<leq\>C*<around|(|q-q<rsub|0>|)><big|sum><rsub|k><around|(|1+<around|\||k|\|><rsup|2>|)><rsup|\<sigma\>>*<around|(|q+c<around|\||k|\|><rsup|2>|)><rsup|-2>>,
+  finite uniformly in <math|N> for <math|\<sigma\>\<less\><frac|1|2>>.
+
+  <\proposition>
+    <dueto|Forward compactness><label|prop:forward-compact> For
+    <math|0\<less\>\<sigma\>,\<theta\>\<less\><frac|1|2>>,
+
+    <\equation*>
+      sup<rsub|N> \<bbb-E\>*<around*|[|<big|int><rsub|I><around|\<\|\|\>|\<iota\><rsub|N>*Y<rsup|N><rsub|q>|\<\|\|\>><rsub|H<rsup|\<sigma\>>><rsup|2>\<mathd\>q+<around|\<\|\|\>|\<iota\><rsub|N>*Y<rsup|N>|\<\|\|\>><rsup|2><rsub|H<rsup|\<theta\>>*<around|(|I;H|)>>|]>\<less\>\<infty\>.
+    </equation*>
+
+    The embedded approximate forecasts are tight in every space\Utime
+    <math|L<rsup|p>>, and polynomials of them converge along strongly
+    convergent subsequences. The forward equation gives the Hölder bound
+    <math|sup<rsub|N> \<bbb-E\>*<around|\<\|\|\>|\<iota\><rsub|N>*Y<rsup|N>|\<\|\|\>><rsup|8><rsub|C<rsup|1/4>*<around|(|I;H|)>>\<less\>\<infty\>>,
+    and averaging in time against the <math|H<rsup|\<sigma\>>> bound gives
+    uniform Fourier tails <math|lim<rsub|m> sup<rsub|N>
+    \<bbb-E\>*sup<rsub|q\<in\>I><around|\<\|\|\>|<around|(|I-<math-ss|F><rsub|m>|)>*\<iota\><rsub|N>*Y<rsup|N><rsub|q>|\<\|\|\>><rsub|2><rsup|2>=0>
+    (<math|<math-ss|F><rsub|m>> the projection on frequencies
+    <math|<around|\||k|\|>\<le\>m>); hence they are also tight in
+    <math|C*<around|(|I;H|)>>.
+  </proposition>
+
+  The spatial bound combines the <math|H<rsup|1>> bound on <math|V>, the
+  <math|H<rsup|\<sigma\>>> regularity of <math|\<zeta\>>
+  (<math|\<sigma\>\<less\><frac|1|2>>, for which the cell embedding is
+  uniformly bounded), and the contraction property of <math|\<varrho\>>:
+  since <math|\<varrho\>> commutes with lattice translations
+  <math|\<tau\><rsub|a>>, <hlink|(12.5)|cqft_lecture5.tm#eq:coordinate> gives
+  <math|<around|\<\|\|\>|\<tau\><rsub|a>*\<varrho\><around|(|Y|)>-\<varrho\><around|(|Y|)>|\<\|\|\>><rsub|2>\<leq\>\<varepsilon\><rsub|q><around|\<\|\|\>|\<tau\><rsub|a>*Y-Y|\<\|\|\>><rsub|2>>,
+  so the increments of <math|Y> are controlled by those of <math|V+\<zeta\>>;
+  the scale regularity uses the forward equation, whose drift
+  <math|b<around|(|Y|)>+H<around|(|Y|)>*Z> has bounded integrated square by
+  Proposition<nbsp><hlink|12.2|cqft_lecture5.tm#prop:source> and the
+  energies, and whose martingale part has bounded bracket density. The
+  supremum bound of Lemma<nbsp><reference|lem:sup> upgrades <math|L<rsup|2>>
+  compactness to every <math|L<rsup|p>>.
+
+  <subsection|The terminal field>
+
+  The approximate forecast converges at infinite resolution in negative
+  Sobolev spaces, uniformly in <math|N> (to the same limit as the forecast
+  <math|\<psi\>>). The martingale part of <math|Y> has bracket
+  <math|<big|int>H<rsup|2>>, and the positive inequality
+  <math|H<rsub|q><rsup|2>\<le\><frac|C|q>*C<rsub|q>> gives
+
+  <\equation>
+    <label|eq:noise-tail><big|int><rsub|Q><rsup|\<infty\>><around|\<\|\|\>|<around|(|1-\<Delta\>|)><rsup|-s/2>*H<rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>\<mathd\>q\<le\>C*<big|int><rsub|Q><rsup|\<infty\>><frac|1|q>*<big|sum><rsub|k><frac|<around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-s>|q+c<around|\||k|\|><rsup|2>><space|0.17em>\<mathd\>q\<le\>C<rsub|s>*<space|0.17em>Q<rsup|-<around|(|s-<frac|1|2>|)>>,<space|2em><tfrac|1|2>\<less\>s\<less\><tfrac|3|2>,
+  </equation>
+
+  where <math|q+c<around|\||k|\|><rsup|2>> bounds the lattice symbol from
+  below (aliases of the cell embedding only increase the frequency). The
+  drifts are integrable at infinity in <math|H>: the bounded-field drift is
+  <math|O<around|(|q<rsup|-5/2>|)>>, the large-field drift is controlled by
+  <math|<big|int>q<rsup|7/2><around|\<\|\|\>|b<rsup|<math-up|l>>|\<\|\|\>><rsup|2>\<le\>C*\<gamma\><rsup|3>*J<rsub|\<infty\>>>
+  and Cauchy\USchwarz, and <math|<big|int><around|\<\|\|\>|H<rsub|q>*Z<rsub|q>|\<\|\|\>>\<mathd\>q\<le\>C*<big|int>q<rsup|-1><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>>\<le\>C*\<gamma\><rsup|1/2>*E<rsub|\<infty\>><rsup|1/2>>.
+  More precisely, the squared drift tails beyond <math|Q> are
+  <math|O<around|(|Q<rsup|-3>|)>> (bounded-field),
+  <math|O<around|(|Q<rsup|-5/2>|)>*\<gamma\><rsup|3>*J<rsub|\<infty\>>>
+  (large-field) and <math|O<around|(|Q<rsup|-3/2>|)>*\<gamma\>*E<rsub|\<infty\>>>
+  (the <math|H*Z> term), all at most <math|Q<rsup|-<around|(|s-<frac|1|2>|)>>>
+  for <math|s\<less\><frac|3|2>>. By Doob's inequality, for
+  <math|<frac|1|2>\<less\>s\<less\><frac|3|2>>,
+
+  <\equation>
+    <label|eq:terminal-tail>sup<rsub|N> \<bbb-E\>*sup<rsub|t\<ge\>Q><around|\<\|\|\>|Y<rsub|t>-Y<rsub|Q>|\<\|\|\>><rsup|2><rsub|H<rsup|-s>>\<le\>C<rsub|s>*<space|0.17em>Q<rsup|-<around|(|s-<frac|1|2>|)>>.
+  </equation>
+
+  Letting <math|t\<to\>\<infty\>> at fixed <math|N>
+  (Lemma<nbsp><reference|lem:terminal>) this holds with <math|Y<rsub|t>>
+  replaced by <math|\<Phi\><rsub|\<infty\>>>. Together with the tightness at
+  finite resolution, this gives:
+
+  <\corollary>
+    <dueto|Tightness of the lattice measures><label|cor:tight> For every
+    <math|s\<gtr\><frac|1|2>> the embedded laws
+    <math|\<nu\><rsub|N>\<circ\>\<iota\><rsub|N><rsup|-1>> are tight in
+    <math|H<rsup|-s><around|(|\<bbb-T\><rsup|3>|)>>, and <math|sup<rsub|N>
+    \<bbb-E\>*<around|\<\|\|\>|\<iota\><rsub|N>*\<Phi\><rsup|N><rsub|\<infty\>>|\<\|\|\>><rsup|p><rsub|H<rsup|-s>>\<less\>\<infty\>>
+    for every <math|p>.
+  </corollary>
+
+  For the moments: the drift integrals have all moments
+  by<nbsp><eqref|eq:uv>, and the <math|H<rsup|-s>> martingale has a
+  deterministic bracket bound by<nbsp><eqref|eq:noise-tail> at
+  <math|Q=q<rsub|0>>, so the Burkholder\UDavis\UGundy inequality gives all
+  moments.
+
+  The threshold <math|s\<gtr\><frac|1|2>> is that of the free field in
+  <math|d=3>: the interacting field is no rougher than the Gaussian one, and
+  at every finite resolution its part <math|V> is smoother
+  (<math|H<rsup|1>>).
+
+  <subsection|Exponential integrability: the Hairer\USteele
+  argument><label|sec:hs-exp>
+
+  Theorem<nbsp><reference|thm:uv> gives only stretched exponential moments of
+  the energies. Hairer and Steele<nbsp><cite|HSt22> found a very simple
+  argument for much stronger integrability of the field. Let <math|W> be a
+  functional with <math|\<cal-Z\>=\<bbb-E\>\<mathe\><rsup|W>\<less\>\<infty\>>,
+  and let <math|<wide|\<nu\>|^>=\<cal-Z\><rsup|-1>\<mathe\><rsup|W>\<nu\>> be
+  the tilted measure. For every set <math|A>,
+  <math|<wide|\<nu\>|^>(A)\<le\>\<cal-Z\><rsup|-1>exp(sup<rsub|A>W)\<nu\>(A)>,
+  so
+
+  <\equation>
+    \<cal-Z\>\<le\><frac|exp(sup<rsub|A>W)|<wide|\<nu\>|^>(A)>.<label|eq:hs-trick>
+  </equation>
+
+  To bound the exponential moment it is enough to know that the tilted
+  measure gives mass <math|<frac|1|2>> to some fixed set, uniformly in the
+  cutoffs. No moment of <math|\<mathe\><rsup|W>> has to be estimated.
+  In<nbsp><cite|HSt22>, <math|W=<frac|\<beta\>|4><around|\<langle\>|\<varphi\>,\<psi\>|\<rangle\>><rsup|4>>,
+  the tilted measure is formally invariant for the
+  <math|\<Phi\><rsup|4><rsub|3>> dynamics with the added force
+  <math|\<beta\>\<psi\><around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>><rsup|3>>,
+  which is dominated by the cube, and the bound comes from coming down from
+  infinity<nbsp><cite|MW17|MW20>, uniformly in the initial condition. We now
+  run the same idea with the estimates of this lecture: the role of the
+  dynamics is played by the filter, which is available for every prior.
+
+  <strong|The filter of a tilted measure.> Fix <math|N> and an even
+  <math|C<rsup|1>> functional <math|W> such that <math|D*W> has polynomial
+  growth and <math|W\<le\> c<around|\<\|\|\>|\<varphi\>|\<\|\|\>><rsub|4><rsup|4>+C>
+  with <math|c\<less\>\<lambda\>/4>. Then
+  <math|<wide|\<nu\>|^><rsub|N>\<propto\>\<mathe\><rsup|W>\<nu\><rsub|N>> has
+  all moments. Observe a field <math|<wide|\<Phi\>|^>\<sim\><wide|\<nu\>|^><rsub|N>>
+  through the same channel, <math|P<rsub|q>=(q-q<rsub|0>)<wide|\<Phi\>|^>+B<rsub|q-q<rsub|0>>>
+  with <math|B> independent of <math|<wide|\<Phi\>|^>>, let
+  <math|<wide|\<psi\>|^><rsub|q>=\<bbb-E\><rsub|q><wide|\<Phi\>|^>>, and let
+  <math|W> also denote its innovation Brownian motion. <strong|Keep the
+  action> <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> <strong|unchanged>:
+  <math|Y<rsub|q>=D<wide|\<cal-K\>|\<bar\>><rsub|q>(P<rsub|q>)>,
+  <math|<wide|Z|^><rsub|q>=<wide|\<psi\>|^><rsub|q>-Y<rsub|q>>, and define
+  <math|<wide|E|^>>, <math|<wide|J|^>> as in (<reference|eq:energies>) with
+  these fields.
+
+  <\proposition>
+    <dueto|What survives a tilt><label|prop:hs-tilt>With <math|q<rsub|0>> and
+    the constants of Theorem<nbsp><reference|thm:energy>, which do not depend
+    on <math|W>:
+
+    <\enumerate-alpha>
+      <item>The pair <math|(Y,<wide|Z|^>)> solves (<reference|eq:YZ>) with
+      the same <math|b>, <math|H>. Lemmas<nbsp><reference|lem:noise>
+      and<nbsp><reference|lem:noise-sup> and
+      Proposition<nbsp><reference|prop:forward> hold unchanged.
+
+      <item>The estimate (<reference|eq:energy>) holds with
+      <math|<wide|\<delta\>|^><rsub|N,T,p>=<around|\<\|\|\>|T<wide|Z|^><rsub|T>|\<\|\|\>><rsub|L<rsup|2p>(\<bbb-P\>;L<rsup|2>)><rsup|2>>.
+
+      <item>At fixed <math|N>, <math|T<wide|Z|^><rsub|T>\<to\>
+      D*W(<wide|\<Phi\>|^>)> in every <math|L<rsup|p>> as
+      <math|T\<to\>\<infty\>>. Therefore
+
+      <\equation>
+        <around|\<\|\|\>|<wide|E|^><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>+<around|\<\|\|\>|<wide|J|^><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<le\>
+        C<rsub|\<gamma\>><around|(|1+p<rsup|5>+<around|\<\|\|\>|D*W(<wide|\<Phi\>|^>)|\<\|\|\>><rsub|L<rsup|2p>(\<bbb-P\>;L<rsup|2>)><rsup|2>|)>.<label|eq:hs-energy>
+      </equation>
+    </enumerate-alpha>
+  </proposition>
+
+  <\proof>
+    (a) Theorem<nbsp>10.6 of Lecture<nbsp>5 uses only
+    <math|<space|0.17em>\<mathd\> P=<wide|\<psi\>|^><space|0.17em>\<mathd\>
+    q+<space|0.17em>\<mathd\> W> and that <math|<wide|\<psi\>|^>> is a
+    martingale: the coefficients come from <math|<wide|\<Gamma\>|\<bar\>>>
+    alone. The identity <math|\<eta\><rsub|q>=\<bbb-E\><rsub|q>B<rsub|q-q<rsub|0>>>
+    holds for every prior, and the rest of the forward estimate is pathwise,
+    given <math|<wide|Z|^>>. (b) Lemma<nbsp><reference|lem:pre> needs only
+    that <math|<wide|\<nu\>|^><rsub|N>> has all moments, and then
+    Lemma<nbsp><reference|lem:representation>,
+    Proposition<nbsp><reference|prop:backward> and the absorption are
+    unchanged. (c) As in Lemma<nbsp><reference|lem:terminal>: the posterior
+    identity now reads <math|P<rsub|q>=K<rsub|q><wide|\<psi\>|^><rsub|q>+\<bbb-E\><rsub|q>[D*V<rsub|N>(<wide|\<Phi\>|^>)-D*W(<wide|\<Phi\>|^>)]>,
+    so (<reference|eq:qZ>) becomes <math|q<wide|Z|^><rsub|q>=q*C<rsub|q>[D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>)-\<bbb-E\><rsub|q>D*V<rsub|N>(<wide|\<Phi\>|^>)+\<bbb-E\><rsub|q>D*W(<wide|\<Phi\>|^>)]>.
+    The first two terms cancel in the limit as before, and
+    <math|\<bbb-E\><rsub|q>D*W(<wide|\<Phi\>|^>)\<to\> D*W(<wide|\<Phi\>|^>)>
+    in every <math|L<rsup|p>> by martingale convergence, since
+    <math|<wide|\<Phi\>|^>> is measurable for
+    <math|\<cal-F\><rsub|\<infty\>>>. Finally let <math|T\<to\>\<infty\>> in
+    (<reference|eq:energy>), by monotone convergence.
+  </proof>
+
+  So the only trace of the tilt in the system is the terminal value of the
+  error: the matching of <math|<wide|\<Gamma\>|\<bar\>>> with the bare action
+  now fails by exactly <math|D*W>. To close, we must bound the size of the
+  field by <math|<wide|J|^>>. This needs no information on <math|<wide|Z|^>>:
+  the coordinate equation at resolution <math|q> contains the terminal field
+  directly.
+
+  <\lemma>
+    <dueto|The terminal field and the large-field
+    action><label|lem:hs-field>Let <math|\<psi\>> be smooth,
+    <math|\<psi\><rsub|N>=j<rsub|N>\<psi\>>,
+    <math|X=<around|\<langle\>|<wide|\<Phi\>|^>,\<psi\><rsub|N>|\<rangle\>>>,
+    and <math|\<cal-N\><rsub|\<psi\>>=sup<rsub|q\<ge\>2q<rsub|0>>q<rsup|-1>\|<around|\<langle\>|B<rsub|q-q<rsub|0>>,\<psi\><rsub|N>|\<rangle\>>\|>,
+    which has Gaussian tails independently of the prior. There is
+    <math|C<rsub|1>>, depending only on <math|<around|\<\|\|\>|\<psi\>|\<\|\|\>><rsub|C<rsup|2>>>,
+    such that for every prior, pathwise,
+
+    <\equation>
+      \|X\|<rsup|5>\<le\> C<rsub|2>+(4C<rsub|1>\<cal-N\><rsub|\<psi\>>)<rsup|5>+2\<gamma\><rsup|-1/2>(8C<rsub|1>)<rsup|5><wide|J|^><rsub|\<infty\>>,<space|1em>
+      C<rsub|2>=(8C<rsub|1>r<rsub|4q<rsub|0>>)<rsup|5>.<label|eq:hs-field>
+    </equation>
+  </lemma>
+
+  <\proof>
+    Test the coordinate equation <hlink|(12.5)|cqft_lecture5.tm#eq:coordinate>
+    with <math|\<psi\><rsub|N>>, and use <math|P<rsub|q>=(q-q<rsub|0>)<wide|\<Phi\>|^>+B<rsub|q-q<rsub|0>>>.
+    For <math|q\<ge\>2q<rsub|0>> we have <math|q-q<rsub|0>\<ge\> q/2>,
+    <math|<around|\<\|\|\>|K<rsub|q>\<psi\><rsub|N>|\<\|\|\>><rsub|2>\<le\>
+    C*q<around|\<\|\|\>|\<psi\>|\<\|\|\>><rsub|C<rsup|2>>> and
+    <math|<around|\<\|\|\>|\<varrho\><rsub|q>(Y)|\<\|\|\>><rsub|2>\<le\><around|\<\|\|\>|Y|\<\|\|\>><rsub|2>>,
+    so
+
+    <\equation*>
+      \|X\|\<le\> C<around|\<\|\|\>|\<psi\>|\<\|\|\>><rsub|C<rsup|2>><around|(|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|2>+<frac|\<gamma\>|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|3><rsup|3>|)>+2\<cal-N\><rsub|\<psi\>>.
+    </equation*>
+
+    Since <math|\|Y\|\<le\> r<rsub|q>+\|t<rsub|q>\|> and <math|\<gamma\>
+    r<rsub|q><rsup|3>/q=r<rsub|q>>, this gives, for a suitable
+    <math|C<rsub|1>>,
+
+    <\equation>
+      \|X\|\<le\> C<rsub|1><around|(|r<rsub|q>+<around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6>+<frac|\<gamma\>|q><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|3>+\<cal-N\><rsub|\<psi\>>|)>.<label|eq:hs-test>
+    </equation>
+
+    Let <math|R=\|X\|> and suppose that <math|R\<ge\>8C<rsub|1>r<rsub|4q<rsub|0>>>
+    and <math|R\<ge\>4C<rsub|1>\<cal-N\><rsub|\<psi\>>>. Choose <math|Q> with
+    <math|r<rsub|Q>=R/(8C<rsub|1>)>, so that <math|Q\<ge\>4q<rsub|0>>. For
+    <math|q\<in\>[Q/2,Q]>, (<reference|eq:hs-test>) gives
+    <math|<around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6>+<frac|\<gamma\>|q><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|3>\<ge\>
+    R/(2C<rsub|1>)>. In either case <math|<around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6>\<ge\>
+    R/(8C<rsub|1>)>, the second one because
+    <math|\<gamma\>/Q=(8C<rsub|1>/R)<rsup|2>>. Therefore
+
+    <\equation*>
+      <wide|J|^><rsub|\<infty\>>\<ge\>\<gamma\><big|int><rsub|Q/2><rsup|Q>q<rsup|-3/2><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6><space|0.17em>\<mathd\>
+      q\<ge\><frac|\<gamma\>|2>Q<rsup|-1/2><around|(|<frac|R|8C<rsub|1>>|)><rsup|6>=<frac|\<gamma\><rsup|1/2>|2><around|(|<frac|R|8C<rsub|1>>|)><rsup|5>.
+    </equation*>
+
+    This is (<reference|eq:hs-field>). The choice <math|Q\<sim\>\<gamma\>
+    R<rsup|2>> is the one in which the field of size <math|R> is exactly at
+    its threshold <math|r<rsub|Q>>: the scale adapts to the level, as the
+    time does in coming down from infinity.
+  </proof>
+
+  <\theorem>
+    <dueto|Exponential integrability><label|thm:hs>For <math|q<rsub|0>> as in
+    Theorem<nbsp><reference|thm:uv>, smooth <math|\<psi\>> and
+    <math|s\<gtr\><frac|1|2>>, there are <math|\<beta\>\<gtr\>0> and
+    <math|C\<less\>\<infty\>> such that, uniformly in <math|N>,
+
+    <\equation>
+      \<bbb-E\>exp<around|(|\<beta\>\|<around|\<langle\>|\<iota\><rsub|N>\<Phi\><rsub|\<infty\>><rsup|N>,\<psi\>|\<rangle\>>\|<rsup|7/2>|)>\<le\>
+      C,<space|1em>\<bbb-E\>exp<around|(|\<beta\><around|\<\|\|\>|\<iota\><rsub|N>\<Phi\><rsub|\<infty\>><rsup|N>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>|)>\<le\>
+      C.<label|eq:hs-result>
+    </equation>
+
+    The same bounds hold for every limit point <math|\<nu\>> of the lattice
+    measures.
+  </theorem>
+
+  <\proof>
+    <strong|First bound.> Take <math|W(\<varphi\>)=\<beta\>(1+<around|\<langle\>|\<varphi\>,\<psi\><rsub|N>|\<rangle\>><rsup|2>)<rsup|7/4>>.
+    Then <math|<around|\<\|\|\>|D*W|\<\|\|\>><rsub|2><rsup|2>\<le\>
+    C\<beta\><rsup|2><around|\<\|\|\>|\<psi\>|\<\|\|\>><rsub|2><rsup|2>(1+\|X\|<rsup|5>)>.
+    Inserting (<reference|eq:hs-field>) in (<reference|eq:hs-energy>) with
+    <math|p=1>,
+
+    <\equation*>
+      \<bbb-E\><wide|J|^><rsub|\<infty\>>\<le\>
+      C<rsub|\<gamma\>><around|(|2+C\<beta\><rsup|2><around|\<\|\|\>|\<psi\>|\<\|\|\>><rsub|2><rsup|2>(1+C<rsub|2>+C\<bbb-E\>\<cal-N\><rsub|\<psi\>><rsup|5>+C\<gamma\><rsup|-1/2>\<bbb-E\><wide|J|^><rsub|\<infty\>>)|)>.
+    </equation*>
+
+    At fixed <math|N>, <math|\<bbb-E\><wide|J|^><rsub|\<infty\>>> is finite
+    by (<reference|eq:hs-energy>), since <math|<wide|\<nu\>|^><rsub|N>> has
+    all moments. So for small <math|\<beta\>> it can be absorbed, and then
+    <math|\<bbb-E\><wide|J|^><rsub|\<infty\>>> and, by
+    (<reference|eq:hs-field>), <math|<wide|\<bbb-E\>|^>\|X\|<rsup|5>> are
+    bounded by a constant independent of <math|N>. By Markov's inequality,
+    <math|<wide|\<nu\>|^><rsub|N>(\|X\|\<le\> K)\<ge\><frac|1|2>> for a fixed
+    <math|K>, and (<reference|eq:hs-trick>) gives
+    <math|\<cal-Z\><rsub|N>\<le\>2exp(\<beta\>(1+K<rsup|2>)<rsup|7/4>)>.
+
+    <strong|Second bound.> Take <math|W(\<varphi\>)=<frac|\<beta\>|2><around|\<\|\|\>|\<iota\><rsub|N>\<varphi\>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>>.
+    Now <math|D*W=\<beta\> j<rsub|N>(1-\<Delta\>)<rsup|-s>\<iota\><rsub|N>\<varphi\>>
+    and <math|<around|\<\|\|\>|D*W|\<\|\|\>><rsub|2>\<le\>\<beta\><around|\<\|\|\>|\<iota\><rsub|N>\<varphi\>|\<\|\|\>><rsub|H<rsup|-s>>>.
+    As <math|Y<rsub|q<rsub|0>>=0> and <math|Y<rsub|q>\<to\><wide|\<Phi\>|^>>,
+    integrating the forward equation and using (<reference|eq:noise-tail>)
+    for the martingale (with <math|s\<less\><frac|3|2>>, which is enough by
+    monotonicity of the norms) and Cauchy\USchwarz in <math|q> for the drifts
+    as in the proof of (<reference|eq:terminal-tail>),
+
+    <\equation*>
+      <wide|\<bbb-E\>|^><around|\<\|\|\>|\<iota\><rsub|N><wide|\<Phi\>|^>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>\<le\>
+      C<rsub|s>(1+\<gamma\><rsup|3>\<bbb-E\><wide|J|^><rsub|\<infty\>>+\<gamma\>\<bbb-E\><wide|E|^><rsub|\<infty\>>).
+    </equation*>
+
+    Thus (<reference|eq:hs-energy>) with <math|p=1> closes again for small
+    <math|\<beta\>>, and we conclude as before. The limit points follow by
+    Fatou's lemma and weak convergence.
+  </proof>
+
+  <\remark>
+    <dueto|How far this goes><label|rem:hs-exponent>The field equation at a
+    fixed scale would only give <math|\|X\|<rsup|2>\<lesssim\>1+<wide|J|^>>,
+    hence Gaussian tails. Adapting the scale to the level improves this to
+    the exponent <math|<frac|7|2>>. The quartic exponent, which is expected
+    to be optimal because it is the exponent of the formal density, would
+    need (<reference|eq:hs-field>) with <math|\|X\|<rsup|6>>. This is out of
+    reach of (<reference|eq:hs-energy>) as it stands: on one site, the saddle
+    <math|q*y+\<lambda\> y<rsup|3>=(q-q<rsub|0>)X> gives
+    <math|<wide|J|^><rsub|\<infty\>>\<sim\>\<gamma\><rsup|1/2>\|X\|<rsup|5>>
+    (Exercise<nbsp><reference|ex:hs-saddle>), so (<reference|eq:hs-field>)
+    cannot be improved, while <math|<around|\<\|\|\>|D*W|\<\|\|\>><rsup|2>\<sim\>\<beta\><rsup|2>\|X\|<rsup|6>>
+    for the quartic tilt. What is lost is in the backward estimate: the bound
+    <math|<around|\<\|\|\>|\<cal-P\><rsub|q,s>|\<\|\|\>>\<le\> L<rsub|0>s/q>
+    ignores that <math|H<rsub|q>(Y)> is much smaller than <math|1/q> in the
+    direction of a large field, much as the cube keeps the force
+    <math|\<beta\>\<psi\><around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>><rsup|3>>
+    under control in<nbsp><cite|HSt22>. On one site a computation with the
+    sharp propagator of Exercise<nbsp>15.1 suggests that the quartic tilt
+    would then close. Under the identification of
+    Section<nbsp><reference|sec:hs-uniq>, the quartic bound for <math|\<nu\>>
+    follows from the dynamics (Corollary<nbsp><reference|cor:hs-quartic>).
+  </remark>
+
+  Already (<reference|eq:hs-result>) has two consequences. The moments of
+  <math|<around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>>> grow slowly enough
+  for Carleman's condition, so the Schwinger functions of <math|\<nu\>>
+  determine <math|\<nu\>>. And <math|<around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>>>
+  is not a nondegenerate Gaussian variable, since such a variable has no
+  finite exponential moment of order <math|<frac|7|2>>; that
+  <math|<around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>>> is nondegenerate is
+  not proved here.
+
+  <subsection*|Exercises>
+
+  <\exercise>
+    <dueto|One site: the sharp threshold>On one site, with
+    <math|\<nu\>\<propto\>exp(-<frac|\<lambda\>|4>x<rsup|4>-<frac|q<rsub|0>|2>x<rsup|2>)>,
+    show that <math|\<bbb-E\>exp(<frac|\<beta\>|4>x<rsup|4>)> is finite if
+    and only if <math|\<beta\>\<le\>\<lambda\>>. Which step of the proof of
+    Theorem<nbsp><reference|thm:hs> requires <math|\<beta\>> small, and how
+    small?
+  </exercise>
+
+  <\exercise>
+    <dueto|The saddle><label|ex:hs-saddle>On one site let <math|y<rsub|q>>
+    solve <math|q*y+\<lambda\> y<rsup|3>=(q-q<rsub|0>)X> for large <math|X>.
+    Show that <math|y<rsub|q>\<approx\>(q*X/\<lambda\>)<rsup|1/3>> for
+    <math|q\<ll\>\<gamma\> X<rsup|2>>, and <math|y<rsub|q>\<approx\> X>
+    beyond. Compute <math|\<gamma\><big|int>
+    q<rsup|-3/2>t<rsub|q><rsup|6><space|0.17em>\<mathd\> q> and show that it
+    is of order <math|\<gamma\><rsup|1/2>X<rsup|5>>, dominated by
+    <math|q\<sim\>\<gamma\> X<rsup|2>>. Why is the adaptive choice of
+    <math|Q> in Lemma<nbsp><reference|lem:hs-field> the right one?
+  </exercise>
+
+  <\exercise>
+    <dueto|The tilted boundary>Show directly on one site that
+    <math|q<wide|Z|^><rsub|q>\<to\> W<rprime|'>(<wide|\<Phi\>|^>)>. Why does
+    this not contradict Lemma<nbsp><reference|lem:terminal>, where the error
+    <math|Z> of the untilted model has <math|q*Z<rsub|q>\<to\>0>?
+  </exercise>
+
+  <section|Identifying the limit><label|sec:limit>
+
+  <subsection|The deterministic coefficients>
+
+  The coefficients <math|M<rsup|N><rsub|q>>,
+  <math|h<rsup|<around|[|j|]>,N><rsub|q>>,
+  <math|H<rsup|N><rsub|q><around|(|y|)>>,
+  <math|b<rsup|N><rsub|q><around|(|y|)>> are constructed at each lattice.
+  Their uniform bounds (Proposition<nbsp><hlink|11.1|cqft_lecture5.tm#prop:coeff>)
+  do not by themselves identify a limit: a weakly convergent vertex cannot in
+  general be contracted against a varying covariance. The three tools are:
+
+  <\itemize>
+    <item><em|Weak vertex measures.> Derivative kernels with bounded rooted
+    norms are signed measures with bounded mass; they converge weakly along
+    subsequences, and the centred kernel <math|\<Theta\><rsub|q>> converges
+    in a weak topology controlled by its first moment. The limiting
+    coefficients solve the same fixed-point problem, whose solution is unique
+    in its ball; so the whole sequence converges.
+
+    <item><em|Compact sandwich.> If <math|G<rsub|N>\<to\>G> in
+    Hilbert\USchmidt norm, and <math|<math-ss|B><rsub|N>> are symmetric,
+    uniformly bounded and converge weakly to <math|<math-ss|B>>, with
+    <math|sup<rsub|N><around|\<\|\|\>|G<rsub|N><math-ss|B><rsub|N>|\<\|\|\>>\<le\>\<theta\>\<less\>1>
+    and <math|<around|\<\|\|\>|G<math-ss|B>|\<\|\|\>>\<le\>\<theta\>>, then
+    <math|<around|(|I+G<rsub|N><math-ss|B><rsub|N>|)><rsup|-1>*G<rsub|N>\<to\><around|(|I+G<math-ss|B>|)><rsup|-1>*G>
+    in Hilbert\USchmidt norm. The free resolvent is the compact factor that
+    turns weak convergence of the Hessian into strong convergence of the
+    response.
+
+    <item><em|Contraction against a moving covariance.> The rows of the
+    inverses are Hölder (any exponent <math|a\<less\><frac|1|2>>); with the
+    Hilbert\USchmidt convergence given by the sandwich, the squared kernels
+    <math|<around|(|H<rsup|N><rsub|q>|)><rsup|2>> converge uniformly to a
+    continuous kernel. Weakly convergent vertices of bounded variation can
+    therefore be contracted against them, and the trace steps of the
+    recursion pass to the limit.
+  </itemize>
+
+  With these, <math|H<rsup|N><rsub|q><around|(|Y<rsup|N><rsub|q>|)>\<to\>H<rsub|q><around|(|Y<rsub|q>|)>>
+  and <math|b<rsup|N><rsub|q><around|(|Y<rsup|N><rsub|q>|)>\<to\>b<rsub|q><around|(|Y<rsub|q>|)>>
+  in <math|L<rsup|2><around|(|I;<math-up|HS>|)>> and
+  <math|L<rsup|2><around|(|I;H|)>> along strongly converging forecasts with
+  the uniform supremum moments of Lemma<nbsp><reference|lem:sup>.
+
+  <subsection|The noise>
+
+  The delicate point is the backward martingale. Fields converging in law do
+  not imply that the stochastic integrals converge to stochastic integrals of
+  the limits.
+
+  <\remark>
+    <dueto|Hidden noise><label|rem:hidden> Let <math|B> be a real Brownian
+    motion and <math|L<rsup|n><rsub|t>=<big|int><rsub|0><rsup|t><around|(|1+sin
+    <around|(|n*s|)>|)>\<mathd\>B<rsub|s>>. Then
+    <math|<around|(|L<rsup|n>,B|)>> converges in law to
+    <math|<around|(|B+2<rsup|-1/2>*<wide|B|~>,B|)>>, with <math|<wide|B|~>>
+    an independent Brownian motion: the integrands converge weakly to
+    <math|1>, but their squares converge weakly to <math|<frac|3|2>>. A
+    limiting FBSDE obtained this way would have an extra martingale,
+    orthogonal to the driving noise.
+  </remark>
+
+  To exclude this one needs <em|strong> compactness of the integrands. For
+  the forward equation the integrand <math|H<around|(|Y|)>> is an explicit
+  function of <math|Y>, and strong convergence follows from the coefficient
+  limits. For the backward equation the integrand is
+  <math|\<Xi\>=<math-up|Cov>-H<around|(|Y|)>>, and we need strong compactness
+  of the posterior covariance <math|<math-up|Cov><rsub|q>>. It comes from its
+  exact dynamics.
+
+  <\lemma>
+    <dueto|Riccati equation of the posterior covariance><label|lem:riccati>
+    At each <math|N>, <math|<math-up|Cov><rsub|q>=D<rsup|2>*\<cal-K\><rsub|q><around|(|P<rsub|q>|)>\<ge\>0>
+    and
+
+    <\equation>
+      <label|eq:riccati><math-up|dCov><rsub|q>=-<math-up|Cov><rsub|q><rsup|2><space|0.17em>\<mathd\>q+D<rsup|3>*\<cal-K\><rsub|q><around|(|P<rsub|q>|)><around|[|\<mathd\>W<rsub|q>|]>.
+    </equation>
+  </lemma>
+
+  <\proof>
+    Differentiate the equation of Proposition<nbsp><hlink|10.3|cqft_lecture5.tm#prop:posterior>(c)
+    twice in <math|p>: <math|<around|(|\<partial\><rsub|q>+<frac|1|2>*\<Delta\><rsub|p>+D*\<cal-K\>\<cdot\>D<rsub|p>|)>*D<rsup|2>*\<cal-K\>=-<around|(|D<rsup|2>*\<cal-K\>|)><rsup|2>>,
+    and apply Itô's formula along <math|\<mathd\>P=D*\<cal-K\><around|(|P|)>\<mathd\>q+\<mathd\>W>.
+  </proof>
+
+  This is <hlink|(8.9)|cqft_lecture4.tm#eq:cov-dynamics> for
+  <math|\<partial\><rsub|q>\<cal-R\>=1>: conditional variance is resolved at
+  the rate <math|<math-up|Cov><rsup|2>>. For a smooth test <math|f>, the
+  process <math|<around|\<langle\>|f,<math-up|Cov><rsub|q>f|\<rangle\>>\<ge\>0>
+  is a nonnegative supermartingale, with drift
+  <math|-<around|\<\|\|\>|<math-up|Cov><rsub|q>f|\<\|\|\>><rsup|2>>, and
+  initial value <math|<math-up|Var><rsub|\<nu\><rsub|N>><around|\<langle\>|\<Phi\><rsub|\<infty\>>,f|\<rangle\>>>,
+  bounded uniformly in <math|N> by Corollary<nbsp><reference|cor:tight>. A
+  nonnegative supermartingale has controlled oscillations: after stopping at
+  the first time it exceeds a level <math|K> (an event of probability at most
+  <math|C<rsub|f>/K>), its decreasing part <math|A> and the bracket of its
+  martingale part <math|J> satisfy <math|\<bbb-E\>*A<rsub|Q>\<le\>C<rsub|f>>
+  and <math|\<bbb-E\><around|[|J|]><rsub|Q>\<le\>K<rsup|2>+2*K*C<rsub|f>>,
+  which gives time regularity in <math|W<rsup|a,1>>,
+  <math|a\<less\><frac|1|2>>, and hence strong compactness of each finite
+  block <math|<around|\<langle\>|f<rsub|i>,<math-up|Cov>f<rsub|j>|\<rangle\>>>.
+  Spatial tails come from the isometry (recall
+  <math|\<psi\><rsub|q<rsub|0>>=\<bbb-E\>*\<Phi\><rsub|\<infty\>>=0>,
+  <math|\<nu\><rsub|N>> being even), with symmetry exchanging input and
+  output tails, <math|\<bbb-E\>*<big|int><rsub|I><around|\<\|\|\>|<around|(|I-<math-ss|F><rsub|m>|)><math-up|Cov><rsub|q><around|\<\|\|\>|<rsub|<math-up|HS>><rsup|2>\<mathd\>q=\<bbb-E\>|\<\|\|\>>*<around|(|I-<math-ss|F><rsub|m>|)>*\<psi\><rsub|Q>|\<\|\|\>><rsub|2><rsup|2>>,
+  and from the terminal averaging <math|\<psi\><rsub|Q>=\<bbb-E\><rsub|Q>*<big|int><rsub|L><rsup|L+1><around|(|Y<rsub|s>+Z<rsub|s>|)>\<mathd\>s>,
+  using the <math|H<rsup|\<sigma\>>> bound of
+  Proposition<nbsp><reference|prop:forward-compact> and
+  <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*s<rsup|-5/2>>
+  (first <math|m\<to\>\<infty\>>, then <math|L\<to\>\<infty\>>). Altogether
+  <math|<math-up|Cov><rsup|N>> is tight in strong
+  <math|L<rsup|2><around|(|I;<math-up|HS>|)>>. Since
+  <math|S\<mapsto\><big|int>S*S<rsup|\<ast\>>> is continuous from
+  <math|L<rsup|2><around|(|I;<math-up|HS>|)>> to
+  <math|C*<around|(|I;<text|trace class>|)>>, the brackets of
+  <math|\<psi\><rsup|N>> are tight in <math|C<around|(|I|)>>; a continuous
+  martingale with tight brackets and uniformly small maximal Fourier tails
+  (from the terminal averaging above and Doob's inequality) is tight in
+  <math|C*<around|(|I;H|)>>. Hence <math|\<psi\><rsup|N>>, and
+  <math|Z<rsup|N>=\<psi\><rsup|N>-Y<rsup|N>>, are tight in
+  <math|C*<around|(|I;H|)>>. Strong convergence of the integrands gives
+  convergence of the brackets <math|<big|int><math-up|CovCov><rsup|\<ast\>>>
+  and of the covariations with <math|W>, and then:
+
+  <\proposition>
+    <dueto|Identification of the martingales<nbsp><cite|FBSDE26>><label|prop:martingales>
+    Along a subsequence, on a common filtered probability space, the limit of
+    the forecast satisfies <math|\<psi\><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q><math-up|Cov><rsub|s><space|0.17em>\<mathd\>W<rsub|s>>
+    with <math|W> a cylindrical Brownian motion for the joint filtration, and
+    <math|Y>, <math|Z>, <math|X> satisfy
+
+    <align|<tformat|<table|<row|<cell|Y<rsub|q>>|<cell|=<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>H<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>W<rsub|s>,>>|<row|<cell|Z<rsub|q>>|<cell|=-<big|int><rsub|q<rsub|0>><rsup|q><around*|[|b<rsub|s><around|(|Y<rsub|s>|)>+H<rsub|s><around|(|Y<rsub|s>|)>*Z<rsub|s>|]>\<mathd\>s+<big|int><rsub|q<rsub|0>><rsup|q>\<Xi\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>X<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsub|s>.<eq-number><label|eq:limit-equations>>>>>>
+  </proposition>
+
+  The argument is: the limiting <math|\<psi\>> is a continuous
+  square-integrable martingale for the joint filtration (fixed-time
+  martingale identities pass to the limit with uniform integrability); its
+  bracket and its covariation with <math|W> are those of
+  <math|<big|int><math-up|Cov><space|0.17em>\<mathd\>W>; so
+  <math|\<psi\>-<big|int><math-up|Cov><space|0.17em>\<mathd\>W> has zero
+  bracket and vanishes. No extra martingale survives. The same argument for
+  the forward equation identifies its noise with the same <math|W>, and
+  identifies the limit of the auxiliary Gaussian field <math|X> as
+  <math|<big|int>C<space|0.17em>\<mathd\>W>, not a new Gaussian field.
+
+  <subsection|The result>
+
+  <\theorem>
+    <dueto|Subsequential construction of <math|\<Phi\><rsup|4><rsub|3>><nbsp><cite|FBSDE26>><label|thm:limit>
+    Let <math|\<lambda\>\<gtr\>0> and <math|q<rsub|0>> large enough. Along a
+    subsequence of lattices:
+
+    <\enumerate-alpha>
+      <item>the embedded processes <math|<around|(|Y<rsup|N>,Z<rsup|N>,\<psi\><rsup|N>,X<rsup|N>|)>>
+      (with <math|X<rsup|N><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>W<rsup|N><rsub|s>>
+      the auxiliary Gaussian field) converge in law in
+      <math|C*<around|(|I;H|)>> for every finite <math|I>, together with the
+      embedded innovations <math|W<rsup|N>> in
+      <math|C*<around|(|I;H<rsup|-r>|)>>, <math|r\<gtr\><frac|3|2>>, and the
+      integrands <math|<around|(|<math-up|Cov><rsup|N>,\<Xi\><rsup|N>|)>> in
+      strong <math|L<rsup|2><around|(|I;<math-up|HS>|)>>, jointly and with an
+      almost sure representation;
+
+      <item>the limit solves the FBSDE<nbsp><eqref|eq:limit-equations> on
+      <math|<around|[|q<rsub|0>,\<infty\>|)>>, with
+      <math|Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0>, the deterministic
+      continuum coefficients <math|b,H>, limits of those of Lecture<nbsp>5
+      and unique in their ball, an <math|H>-cylindrical Brownian motion
+      <math|W> for the joint filtration, obtained as the limit of the lattice
+      innovations, a symmetric nonnegative integrand
+      <math|<math-up|Cov>=H<around|(|Y|)>+\<Xi\>>, and
+      <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*q<rsup|-5/2>>;
+
+      <item>there is a terminal field <math|\<Phi\>> with
+      <math|Y<rsub|q>\<to\>\<Phi\>> in <math|H<rsup|-s>>, almost surely and
+      in mean square, for every <math|s\<gtr\><frac|1|2>>. Its law
+      <math|\<nu\>> is the weak limit of the lattice measures
+      <math|\<nu\><rsub|N>> along the subsequence, and for smooth <math|h>,
+
+      <\equation>
+        <label|eq:closed-forecast><around|\<langle\>|Y<rsub|q>+Z<rsub|q>,h|\<rangle\>>=\<bbb-E\><around*|[|<around|\<langle\>|\<Phi\>,h|\<rangle\>><space|0.17em><mid|\|><space|0.17em>\<cal-F\><rsub|q>|]>:
+      </equation>
+
+      the forecast remains the conditional mean of the terminal field;
+
+      <item>the limiting thresholded energies
+      <math|E<rsub|\<infty\>>,J<rsub|\<infty\>>> satisfy the bounds of
+      Theorem<nbsp><reference|thm:uv>. Indeed, the lattice identities
+      <math|V<rsub|q>=C<rsub|q>*<around|[|<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>-<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>|]>>
+      and <math|\<zeta\><rsub|q>=X<rsub|q>+C<rsub|q><big|int><rsub|q<rsub|0>><rsup|q><around|(|\<psi\><rsub|s>-X<rsub|s>|)>\<mathd\>s-<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<psi\><rsub|q>>
+      need neither <math|\<varrho\>> nor <math|W>, so <math|V<rsup|N>> and
+      <math|\<zeta\><rsup|N>> converge by (a), the <math|L<rsup|6>>
+      convergence of <math|Y<rsup|N>> and the Hilbert\USchmidt convergence of
+      the free resolvent; the integrands of <math|E> and <math|J> are lower
+      semicontinuous in these variables, and Fatou's lemma applies.
+    </enumerate-alpha>
+  </theorem>
+
+  So the posterior structure survives the continuum limit: <math|\<psi\>=Y+Z>
+  is a closed observable, the conditional mean of the terminal field;
+  <math|Y> is computed from the explicit action; and the error <math|Z> is
+  small at high resolution. This is the FBSDE of Lecture<nbsp>4, in forecast
+  coordinates, for a subsequential limit <math|\<nu\>> of the renormalised
+  lattice measures, with the full noise retained.
+
+  <subsection|The renormalised field equation>
+
+  The terminal law satisfies an integration by parts formula in which the
+  renormalised cube appears only tested in expectation.
+
+  <\theorem>
+    <dueto|Integration by parts><label|thm:DS> Let
+    <math|h,h<rsub|1>,\<ldots\>,h<rsub|k>> be smooth and
+    <math|G<around|(|\<varphi\>|)>=g<around|(|<around|\<langle\>|\<varphi\>,h<rsub|1>|\<rangle\>>,\<ldots\>,<around|\<langle\>|\<varphi\>,h<rsub|k>|\<rangle\>>|)>>
+    with <math|g\<in\>C<rsub|b><rsup|\<infty\>><around|(|\<bbb-R\><rsup|k>|)>>,
+    and let <math|D<rsub|h>*G<around|(|\<varphi\>|)>=<frac|\<mathd\>|\<mathd\>a>*G*<around|(|\<varphi\>+a*h|)>\|<rsub|a=0>>.
+    Along the subsequence of Theorem<nbsp><reference|thm:limit> (recall
+    <math|C=<around|(|m<rsup|2>-\<Delta\><rsub|N>|)><rsup|-1>> with
+    <math|m<rsup|2>=q<rsub|0>>),
+
+    <\equation>
+      <label|eq:DS>lim<rsub|N> \<bbb-E\>*<around*|[|G*<around|(|\<iota\><rsub|N>*\<Phi\><rsup|N><rsub|\<infty\>>|)><space|0.17em><around|\<langle\>|\<mu\><rsub|N>*\<Phi\><rsup|N><rsub|\<infty\>>+\<lambda\><around|(|\<Phi\><rsup|N><rsub|\<infty\>>|)><rsup|3>,j<rsub|N>*h|\<rangle\>><rsub|H<rsub|N>>|]>=\<bbb-E\><rsub|\<nu\>>*<around*|[|D<rsub|h>*G<around|(|\<Phi\>|)>-G<around|(|\<Phi\>|)><around|\<langle\>|\<Phi\>,<around|(|q<rsub|0>-\<Delta\>|)>*h|\<rangle\>>|]>.
+    </equation>
+  </theorem>
+
+  <\proof>
+    At fixed <math|N>, Gaussian integration by parts in the density
+    <math|\<mathe\><rsup|-V<rsub|N>-<frac|1|2>*<around|\<langle\>|\<varphi\>,K<rsub|q<rsub|0>>*\<varphi\>|\<rangle\>>>>
+    gives, with <math|x=\<Phi\><rsup|N><rsub|\<infty\>>> and
+    <math|h<rsub|N>=j<rsub|N>*h>,
+
+    <\equation*>
+      \<bbb-E\>*<around*|[|G*<around|(|\<iota\><rsub|N>*x|)><around|\<langle\>|\<mu\><rsub|N>*x+\<lambda\>*x<rsup|3>,h<rsub|N>|\<rangle\>>|]>=\<bbb-E\>*<around*|[|D<rsub|h<rsub|N>>*<around|(|G\<circ\>\<iota\><rsub|N>|)><around|(|x|)>|]>-\<bbb-E\>*<around*|[|G*<around|(|\<iota\><rsub|N>*x|)><around|\<langle\>|x,K<rsub|q<rsub|0>>*h<rsub|N>|\<rangle\>>|]>.
+    </equation*>
+
+    Cell averaging commutes with lattice translations, so
+    <math|K<rsub|q<rsub|0>>*j<rsub|N>*h=j<rsub|N>*<around|(|q<rsub|0>-\<Delta\><rsup|<math-up|tr>><rsub|N>|)>*h>
+    with <math|\<Delta\><rsup|<math-up|tr>><rsub|N>> the finite-difference
+    Laplacian acting on smooth functions, which converges to
+    <math|\<Delta\>*h> in every Sobolev norm. The right side converges by
+    Corollary<nbsp><reference|cor:tight> (weak convergence in
+    <math|H<rsup|-s>> and uniform moments), and the derivative term is a
+    finite sum with converging coefficients
+    <math|<around|\<langle\>|j<rsub|N>*h,j<rsub|N>*h<rsub|i>|\<rangle\>>\<to\><around|\<langle\>|h,h<rsub|i>|\<rangle\>>>.
+  </proof>
+
+  This is the terminal case of the Dyson\USchwinger equation of
+  Theorem<nbsp><hlink|B.1|cqft_lecture4.tm#thm:DS-scale>,
+  <hlink|(B.3)|cqft_lecture4.tm#eq:DS-terminal> of Lecture<nbsp>4, for the
+  limiting theory. It does not say that <math|\<mu\><rsub|N>*\<Phi\>+\<lambda\>*\<Phi\><rsup|3>>
+  converges as a random distribution: only its expectation against cylinder
+  functions is identified. This is consistent with the expectation of
+  Lecture<nbsp>4 (Figure<nbsp><hlink|7.1|cqft_lecture4.tm#fig:fbsde-flow> and
+  the remark following it) that the limiting force is an observable without a
+  terminal representative; it is not proved here that no such representative
+  exists. At every <em|finite> resolution, on the other hand, the force is
+  explicit: <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
+  (Exercises<nbsp><reference|ex:force-limit>
+  and<nbsp><reference|ex:force-observable>).
+
+  Theorem<nbsp><reference|thm:DS> is the statement at infinite resolution,
+  where the cube can only be tested in expectation. At every finite
+  resolution there is a statement between observables, in which no divergent
+  quantity appears. In the limit of Theorem<nbsp><reference|thm:limit>, let
+
+  <\equation*>
+    P<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>\<psi\><rsub|s><space|0.17em>\<mathd\>s,<space|1em>\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>,<space|1em>\<eta\><rsub|q>=P<rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>,<space|1em><around|\<langle\>|F<rsub|q>,h|\<rangle\>>=<around|\<langle\>|\<psi\><rsub|q>,K<rsub|q>*h|\<rangle\>>-<around|\<langle\>|P<rsub|q>,h|\<rangle\>>,
+  </equation*>
+
+  and <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>>, which is
+  <math|K<rsub|q<rsub|0>>*Q<rsub|q>> in the notation of Lecture<nbsp>4 and
+  tends to <math|I> as <math|q\<to\>\<infty\>>. Here
+  <math|\<Phi\><rsub|q>\<in\>H>, while <math|F<rsub|q>> and
+  <math|\<eta\><rsub|q>> are distributions, tested with smooth <math|h>.
+
+  <\theorem>
+    <dueto|The field equation at resolution <math|q>><label|thm:field-q>Along
+    the subsequence of Theorem<nbsp><reference|thm:limit>, for every
+    <math|q\<geq\>q<rsub|0>> and all smooth <math|h>, <math|G> as in
+    Theorem<nbsp><reference|thm:DS>:
+
+    <\enumerate-alpha>
+      <item><em|Field equation.> Almost surely, as distributions,
+
+      <\equation>
+        K<rsub|q<rsub|0>>*\<Phi\><rsub|q>=J<rsub|q>*F<rsub|q>+\<eta\><rsub|q>.<label|eq:field-q>
+      </equation>
+
+      <item><em|Observables.> <math|<around|\<langle\>|F,h|\<rangle\>>> and
+      <math|<around|\<langle\>|\<eta\>,h|\<rangle\>>> are centred
+      martingales,
+
+      <\equation*>
+        <around|\<langle\>|F<rsub|q>,h|\<rangle\>>=<big|int><rsub|q<rsub|0>><rsup|q><around|\<langle\>|<around|(|Cov<rsub|s>*K<rsub|s>-I|)>*h,\<mathd\>W<rsub|s>|\<rangle\>>,<space|2em><around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>=<big|int><rsub|q<rsub|0>><rsup|q><around|\<langle\>|<around|(|I-<around|(|s-q<rsub|0>|)>*Cov<rsub|s>|)>*h,\<mathd\>W<rsub|s>|\<rangle\>>,
+      </equation*>
+
+      and <math|\<bbb-E\>*\<mathe\><rsup|<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>>\<leq\>\<mathe\><rsup|<around|(|q-q<rsub|0>|)><around|\<\|\|\>|h|\<\|\|\>><rsub|2><rsup|2>/2>>.
+
+      <item><em|Dyson\USchwinger equation at resolution <math|q>.>
+
+      <\equation>
+        \<bbb-E\>*D<rsub|J<rsub|q>*h>*G<around|(|\<Phi\><rsub|q>|)>=\<bbb-E\><around*|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>|]>=\<bbb-E\><around*|[|G<around|(|\<Phi\><rsub|q>|)><around*|(|<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>*h|\<rangle\>>-<around|\<langle\>|F<rsub|q>,J<rsub|q>*h|\<rangle\>>|)>|]>.<label|eq:DS-q>
+      </equation>
+
+      <item><em|The renormalised cube as an observable.> With
+      <math|<around|\<langle\>|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>\<assign\><around|\<langle\>|P<rsub|q>,h|\<rangle\>>-<around|\<langle\>|Y<rsub|q>,K<rsub|q>*h|\<rangle\>>>,
+      the explicit force of Lecture<nbsp>5,
+
+      <\equation>
+        <around*|\<\|\|\>|<around|\<langle\>|F<rsub|q>,h|\<rangle\>>+<around|\<langle\>|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>|\<\|\|\>><rsub|L<rsup|2><around|(|\<bbb-P\>|)>>\<leq\>C<rsub|\<gamma\>><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>*q<rsup|-1/4>.<label|eq:germ>
+      </equation>
+
+      So <math|<around|\<langle\>|F,h|\<rangle\>>> is the unique martingale
+      asymptotically equivalent to the explicit process
+      <math|-<around|\<langle\>|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>>,
+      in the sense of Lemma<nbsp><hlink|5.4|cqft_lecture3.tm#lem:uniq> of
+      Lecture<nbsp>3.
+
+      <item><em|Infinite resolution.> As <math|q\<to\>\<infty\>>, both sides
+      of <eqref|eq:DS-q> converge, and
+
+      <\equation>
+        lim<rsub|q\<to\>\<infty\>>\<bbb-E\><around*|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,J<rsub|q>*h|\<rangle\>>|]>=\<bbb-E\><rsub|\<nu\>><around*|[|D<rsub|h>*G<around|(|\<Phi\>|)>-G<around|(|\<Phi\>|)><around|\<langle\>|\<Phi\>,<around|(|q<rsub|0>-\<Delta\>|)>*h|\<rangle\>>|]>,<label|eq:DS-limit-q>
+      </equation>
+
+      the right side of <eqref|eq:DS>.
+    </enumerate-alpha>
+  </theorem>
+
+  <\proof>
+    (a) is algebra: <math|J<rsub|q>*K<rsub|q>=q-q<rsub|0>> and
+    <math|K<rsub|q<rsub|0>>=K<rsub|q>-<around|(|q-q<rsub|0>|)>> give, for
+    <math|<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q>*k|\<rangle\>>=<around|\<langle\>|P<rsub|q>,k|\<rangle\>>>,
+    the identity <math|K<rsub|q<rsub|0>>*\<Phi\><rsub|q>-J<rsub|q>*F<rsub|q>=P<rsub|q>-<around|(|q-q<rsub|0>|)>*\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*<around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>=\<eta\><rsub|q>>.
+
+    (c) <em|At fixed <math|N>.> By <eqref|eq:eta-filter>,
+    <math|\<eta\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>>,
+    and <math|G<around|(|\<Phi\><rsub|q>|)>> is
+    <math|\<cal-F\><rsub|q>>-measurable, so
+    <math|\<bbb-E\><around|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|B<rsub|q-q<rsub|0>>,h|\<rangle\>>|]>>.
+    Now <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>=J<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>>,
+    with <math|B> independent of <math|\<Phi\><rsub|\<infty\>>>. Gaussian
+    integration by parts in <math|B> gives
+    <math|<around|(|q-q<rsub|0>|)>*\<bbb-E\>*D<rsub|C<rsub|q>*h>*G<around|(|\<Phi\><rsub|q>|)>=\<bbb-E\>*D<rsub|J<rsub|q>*h>*G<around|(|\<Phi\><rsub|q>|)>>.
+    <em|In the limit.> Apply this with <math|j<rsub|N>*h>. By
+    Theorem<nbsp><reference|thm:limit>(a),
+    <math|\<iota\><rsub|N>*\<Phi\><rsup|N><rsub|q>\<to\>\<Phi\><rsub|q>> in
+    <math|H>: from <math|K<rsub|q>*X<rsub|q>=W<rsub|q>+<big|int><rsub|q<rsub|0>><rsup|q>X<rsub|s><space|0.17em>\<mathd\>s>
+    we get <math|\<Phi\><rsup|N><rsub|q>=X<rsup|N><rsub|q>+C<rsup|N><rsub|q><big|int><rsub|q<rsub|0>><rsup|q><around|(|\<psi\><rsup|N><rsub|s>-X<rsup|N><rsub|s>|)><space|0.17em>\<mathd\>s>,
+    where <math|X<rsup|N>> and <math|\<psi\><rsup|N>> converge in
+    <math|C*<around|(|I;H|)>> and <math|\<iota\><rsub|N>*C<rsup|N><rsub|q>*j<rsub|N>\<to\>C<rsub|q>>
+    in operator norm on <math|H>; <math|<around|\<langle\>|\<eta\><rsup|N><rsub|q>,j<rsub|N>*h|\<rangle\>>>
+    converges in <math|L<rsup|2>> because it involves only <math|W<rsup|N>>
+    and <math|\<psi\><rsup|N>> tested with <math|h>; and
+    <math|\<iota\><rsub|N>*J<rsup|N><rsub|q>*j<rsub|N>*h\<to\>J<rsub|q>*h>.
+    The moments are uniform in <math|N>. The second equality in
+    <eqref|eq:DS-q> is (a).
+
+    (b) By Proposition<nbsp><reference|prop:martingales>,
+    <math|\<psi\><rsub|q>=<big|int>Cov<rsub|s><space|0.17em>\<mathd\>W<rsub|s>>;
+    insert <math|P=W+<big|int>\<psi\>> and use the product rule, the drifts
+    cancelling: <math|\<mathd\><around|(|K<rsub|q>*\<psi\><rsub|q>-P<rsub|q>|)>=<around|(|K<rsub|q>*Cov<rsub|q>-I|)>*\<mathd\>W<rsub|q>>,
+    tested with <math|h>, and similarly for <math|\<eta\>>. The exponential
+    bound holds at fixed <math|N> by Lemma<nbsp><reference|lem:noise>, and
+    passes to the limit by Fatou.
+
+    (d) At fixed <math|N>, <math|P<rsub|q>=K<rsub|q>*Y<rsub|q>+D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
+    and <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
+    So the left side of <eqref|eq:germ> is
+    <math|<around|\<\|\|\>|<around|\<langle\>|Z<rsub|q>,K<rsub|q>*h|\<rangle\>>|\<\|\|\>><rsub|L<rsup|2>>\<leq\><around|\<\|\|\>|K<rsub|q>*h|\<\|\|\>><rsub|2>*<around|(|\<bbb-E\><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2>|)><rsup|1/2>\<leq\>C<rsub|\<gamma\>><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>*q<rsup|-1/4>>,
+    by Theorem<nbsp><reference|thm:uv>. The bound passes to the limit.
+
+    (e) By <eqref|eq:germ> with the exact
+    <math|K<rsub|q>*J<rsub|q>*h=<around|(|q-q<rsub|0>|)>*h>, replacing
+    <math|-F<rsub|q>> by <math|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
+    in <eqref|eq:DS-q> costs <math|O<around|(|q<rsup|-1/4>|)>>. Moreover
+    <math|<around|\<langle\>|\<Phi\><rsub|q>,k|\<rangle\>>=<around|\<langle\>|\<psi\><rsub|q>,J<rsub|q>*k|\<rangle\>>+<around|\<langle\>|\<zeta\><rsub|q>,k|\<rangle\>>>,
+    where <math|\<bbb-E\><around|\<langle\>|\<zeta\><rsub|q>,k|\<rangle\>><rsup|2>\<leq\><around|(|q-q<rsub|0>|)><around|\<\|\|\>|C<rsub|q>*k|\<\|\|\>><rsub|2><rsup|2>\<leq\><around|\<\|\|\>|k|\<\|\|\>><rsub|2><rsup|2>/q>,
+    and <math|\<psi\><rsub|q>\<to\>\<Phi\>> in <math|H<rsup|-s>> in mean
+    square by Theorem<nbsp><reference|thm:limit>(c). So
+    <math|\<Phi\><rsub|q>\<to\>\<Phi\>> tested with smooth functions, and
+    <math|J<rsub|q>*h\<to\>h> in every Sobolev norm.
+  </proof>
+
+  So the field equation holds at every resolution with no renormalisation
+  constant, and in the strong sense of a pathwise identity between
+  distributions. The nonlinearity enters only through the force observable
+  <math|F>, whose class contains the explicit process
+  <math|-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)> >: the cube
+  of the forecast with its counterterms, at resolution <math|q>. This is the
+  renormalised cube, as an element of the space of observables of
+  Lecture<nbsp>3. Theorem<nbsp><reference|thm:DS> is the shadow of this at
+  infinite resolution: by <eqref|eq:DS-limit-q>, the two orders of limits,
+  <math|N\<to\>\<infty\>> at the terminal resolution and
+  <math|q\<to\>\<infty\>> after <math|N>, give the same right side. What is
+  not proved is that <math|F> is closed: the statement <eqref|eq:germ> gives
+  no bound on <math|<around|\<langle\>|F<rsub|q>,h|\<rangle\>>> uniform in
+  <math|q>.
+
+  <subsection|Dyson\USchwinger along the scales><label|sec:hs-ds>
+
+  Theorem<nbsp><reference|thm:field-q> is stated for functionals of the field
+  at one resolution. The same proof works along the whole observed path up to
+  <math|q>, and this is the scale-by-scale form of the Dyson\USchwinger
+  equations of Lecture<nbsp>4 for the interacting theory.
+
+  <\corollary>
+    <dueto|Dyson\USchwinger along the scales><label|cor:hs-ds>Along the
+    subsequence of Theorem<nbsp><reference|thm:limit>, let
+    <math|q<rsub|0>\<le\> q<rsub|1>\<le\>\<ldots\>\<le\> q<rsub|k>\<le\> q>,
+    let <math|h,h<rsub|1>,\<ldots\>,h<rsub|k>> be smooth, <math|g\<in\>
+    C<rsub|b><rsup|\<infty\>>(\<bbb-R\><rsup|k>)> and
+    <math|G=g(<around|\<langle\>|\<Phi\><rsub|q<rsub|1>>,h<rsub|1>|\<rangle\>>,\<ldots\>,<around|\<langle\>|\<Phi\><rsub|q<rsub|k>>,h<rsub|k>|\<rangle\>>)>.
+    Then
+
+    <\equation>
+      \<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>]=\<bbb-E\>\<cal-D\><rsub|h>G,<space|1em>\<cal-D\><rsub|h>G=<big|sum><rsub|i=1><rsup|k>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>,<label|eq:hs-ds-path>
+    </equation>
+
+    that is, the derivative of <math|G> in the direction which shifts the
+    field at each scale <math|s> by <math|J<rsub|s>h>. Equivalently, for
+    <math|<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>=<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>-<around|\<langle\>|F<rsub|q>,J<rsub|q>h|\<rangle\>>>,
+
+    <\equation>
+      \<bbb-E\>\<cal-D\><rsub|h>G=\<bbb-E\>[G(<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>),J<rsub|q>h|\<rangle\>>)]+O(C<rsub|\<gamma\>><around|\<\|\|\>|g|\<\|\|\>><rsub|\<infty\>><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>q<rsup|-1/4>).<label|eq:hs-ds-explicit>
+    </equation>
+
+    So at every resolution the renormalised cube
+    <math|D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>)> closes the hierarchy,
+    up to an error which vanishes as <math|q\<to\>\<infty\>>. The increments
+    are consistent: <math|\<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>-\<eta\><rsub|s>,h|\<rangle\>>]=0>
+    for <math|q<rsub|k>\<le\> s\<le\> q>.
+  </corollary>
+
+  <\proof>
+    At fixed <math|N>, <math|G> is <math|\<cal-F\><rsub|q>>-measurable, so
+    <math|\<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>]=\<bbb-E\>[G<around|\<langle\>|B<rsub|q-q<rsub|0>>,h|\<rangle\>>]>
+    by (<reference|eq:eta-filter>). Moreover
+    <math|\<Phi\><rsub|s>=J<rsub|s>\<Phi\><rsub|\<infty\>>+C<rsub|s>B<rsub|s-q<rsub|0>>>
+    with <math|B> independent of <math|\<Phi\><rsub|\<infty\>>>, and for
+    <math|s\<le\> q> the covariance of <math|<around|\<langle\>|B<rsub|q-q<rsub|0>>,h|\<rangle\>>>
+    and <math|<around|\<langle\>|C<rsub|s>B<rsub|s-q<rsub|0>>,k|\<rangle\>>>
+    is <math|(s-q<rsub|0>)<around|\<langle\>|C<rsub|s>h,k|\<rangle\>>=<around|\<langle\>|J<rsub|s>h,k|\<rangle\>>>.
+    Gaussian integration by parts in the path of <math|B> gives
+    (<reference|eq:hs-ds-path>). The limit is taken as in the proof of
+    Theorem<nbsp><reference|thm:field-q>, now using the joint convergence at
+    the scales <math|q<rsub|1>,\<ldots\>,q<rsub|k>,q>. Finally
+    (<reference|eq:hs-ds-explicit>) follows from (<reference|eq:germ>) with
+    <math|J<rsub|q>h>, since <math|<around|\<\|\|\>|J<rsub|q>h|\<\|\|\>><rsub|H<rsup|2>>\<le\><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>>.
+  </proof>
+
+  <subsection|Uniqueness in finite volume><label|sec:hs-uniq>
+
+  The construction above is subsequential, and nothing in the FBSDE selects
+  the limit. In finite volume uniqueness can be obtained from outside, as
+  in<nbsp><cite|HSt22>, by identifying <math|\<nu\>> as the invariant measure
+  of the <math|\<Phi\><rsup|4><rsub|3>> dynamics. The measure
+  <math|\<nu\><rsub|N>> is invariant for the lattice equation
+
+  <\equation>
+    <space|0.17em>\<mathd\> \<varphi\>=[(\<Delta\><rsub|N>-q<rsub|0>-\<mu\><rsub|N>)\<varphi\>-\<lambda\>\<varphi\><rsup|3>]<space|0.17em>\<mathd\>
+    t+<sqrt|2><space|0.17em>\<mathd\> W<rsup|N><rsub|t>,<label|eq:hs-lattice-dyn>
+  </equation>
+
+  with <math|W<rsup|N>> a Brownian motion on <math|H<rsub|N>>. Write
+  <math|\<mu\><rsub|N>=m<rsub|N>+c<rsub|N>>, where <math|m<rsub|N>> is a
+  choice of the renormalisation constants of the lattice dynamics
+  in<nbsp><cite|HMt18>. With <math|\<ell\>=1/(2\<lambda\>)>, the change of
+  variables <math|\<varphi\>(t,x)=<sqrt|2>\<ell\><rsup|-1/2>v(t/\<ell\><rsup|2>,x/\<ell\>)>
+  gives unit cube and unit noise on a torus of side <math|2\<lambda\>>, and
+  <math|q<rsub|0>> goes into the finite part. We assume the following three
+  facts in this setting, with <math|\<alpha\>=-<frac|1|2>-\<kappa\>>.
+
+  <\enumerate-roman>
+    <item><strong|Convergence of the lattice dynamics.> If
+    <math|c<rsub|N>\<to\> c>, the solutions of
+    (<reference|eq:hs-lattice-dyn>) converge in probability to the solution
+    of the <math|\<Phi\><rsup|4><rsub|3>> equation with parameter <math|c>,
+    uniformly over initial conditions in compact subsets of
+    <math|C<rsup|\<alpha\>>>.
+
+    <item><strong|Ergodicity.> The <math|\<Phi\><rsup|4><rsub|3>> semigroup
+    <math|\<cal-P\><rsup|c><rsub|t>> has a unique invariant probability
+    measure <math|\<pi\><rsub|c>>, and <math|<around|\<\|\|\>|\<cal-P\><rsup|c><rsub|t>\<mu\>-\<pi\><rsub|c>|\<\|\|\>><rsub|<math-up|TV>>\<to\>0>
+    uniformly in the initial law <math|\<mu\>>.
+
+    <item><strong|Tightness in> <math|C<rsup|\<alpha\>>><strong|.> For
+    bounded <math|c<rsub|N>> the lattice measures are tight in
+    <math|C<rsup|\<alpha\>>>. Corollary<nbsp><reference|cor:tight> gives only
+    <math|H<rsup|-s>>.
+  </enumerate-roman>
+
+  These are not quite the statements in the literature, and this must be kept
+  in mind. Facts (i) and (iii) are proved in<nbsp><cite|HMt18|HSt22>
+  and<nbsp><cite|GH21> for dyadic grids, with a fixed finite part, while our
+  <math|N> is odd and <math|c<rsub|N>> may vary. Fact (ii) follows from the
+  strong Feller property<nbsp><cite|HMa18>, the support
+  theorem<nbsp><cite|HSc22> and coming down from
+  infinity<nbsp><cite|MW17|MW20>, which are stated on the unit torus with
+  unit coefficients for the cube and the noise. We expect these extensions to
+  be routine, but we have not checked them.
+
+  <\theorem>
+    <dueto|Uniqueness in finite volume, conditional><label|thm:hs-uniq>Assume
+    (i)\U(iii). If <math|c<rsub|N>\<to\> c> along a subsequence, then
+    <math|\<iota\><rsub|N>\<nu\><rsub|N>\<to\>\<pi\><rsub|c>> along it.
+    Consequently, if <math|c<rsub|N>> converges, the whole sequence
+    <math|\<iota\><rsub|N>\<nu\><rsub|N>> converges, and
+    <math|\<nu\>=\<pi\><rsub|c>> does not depend on the subsequence.
+    Moreover, in the limit of Theorem<nbsp><reference|thm:limit>,
+    <math|P<rsub|q>=(q-q<rsub|0>)\<Phi\>+B<rsub|q-q<rsub|0>>> with <math|B> a
+    Brownian motion independent of <math|\<Phi\>>, so the joint law of
+    <math|(\<Phi\>,P)> is unique.
+  </theorem>
+
+  <\proof>
+    The argument is that of<nbsp><cite|HSt22>, Theorem<nbsp>2.2. Let <math|f>
+    be bounded and Lipschitz on <math|C<rsup|\<alpha\>>>. By invariance of
+    <math|\<nu\><rsub|N>> under the lattice semigroup
+    <math|\<cal-P\><rsup|N><rsub|t>>,
+
+    <\equation*>
+      \|\<pi\><rsub|c>(f)-\<iota\><rsub|N>\<nu\><rsub|N>(f)\|\<le\>\|\<pi\><rsub|c>(f)-\<cal-P\><rsup|c><rsub|t>(\<iota\><rsub|N>\<nu\><rsub|N>)(f)\|+\|\<cal-P\><rsup|c><rsub|t>(\<iota\><rsub|N>\<nu\><rsub|N>)(f)-\<iota\><rsub|N>(\<cal-P\><rsup|N><rsub|t>\<nu\><rsub|N>)(f)\|.
+    </equation*>
+
+    By (ii) the first term is small for <math|t> large, uniformly in
+    <math|N>. For that fixed <math|t>, split the second term on a compact set
+    of initial conditions with almost full mass, by (iii), and use (i) there.
+    For the last claim, <math|B<rsup|N>=P<rsup|N>-(q-q<rsub|0>)\<Phi\><rsup|N><rsub|\<infty\>>>
+    converges jointly with <math|\<Phi\><rsup|N><rsub|\<infty\>>> by
+    (<reference|eq:terminal-tail>), and independence passes to weak limits.
+  </proof>
+
+  <\corollary>
+    <dueto|Quartic tails><label|cor:hs-quartic>If
+    <math|\<nu\>=\<pi\><rsub|c>>, then <math|\<bbb-E\><rsub|\<nu\>>exp(\<beta\><around|\<langle\>|\<Phi\>,\<psi\>|\<rangle\>><rsup|4>)\<less\>\<infty\>>
+    for smooth <math|\<psi\>> and small <math|\<beta\>\<gtr\>0>. This
+    is<nbsp><cite|HSt22>, Theorem<nbsp>1.1, proved there in fixed volume and
+    for any fixed torus size. The homogeneous version of<nbsp><cite|HSt22>,
+    Theorem<nbsp>1.2, stated there as a direct adaptation, would then give
+    <math|\<bbb-E\><rsub|\<nu\>>exp(\<beta\><around|\<\|\|\>|\<Phi\>|\<\|\|\>><rsub|H<rsup|-1/2-\<kappa\>>><rsup|4>)\<less\>\<infty\>>,
+    adding the zero mode through Theorem<nbsp>1.1 and a partition of unity;
+    that version is stated there only on the unit torus, so on the side
+    <math|2\<lambda\>> this is a further assumed extension.
+  </corollary>
+
+  Three things should be kept apart. <strong|First>, this proof uses none of
+  the estimates of this lecture: it only identifies the object constructed
+  here, under the assumptions above. <strong|Second>, neither the convergence
+  nor the boundedness of <math|c<rsub|N>> has been proved here, and
+  identifying a limit point as some <math|\<pi\><rsub|c>> needs at least
+  boundedness along a subsequence. This is a statement about lattice sums. By
+  (11.9) of Lecture<nbsp>5, <math|\<mu\><rsub|N>=<big|int><rsub|q<rsub|0>><rsup|\<infty\>>\<beta\><rsub|q><space|0.17em>\<mathd\>
+  q>, and power counting predicts that, after the tadpole and the sunset are
+  removed, the remainder is integrable at <math|q=\<infty\>> uniformly in
+  <math|N>. The removal is not term by term, since the double-tadpole
+  logarithms cancel only between the two terms of (11.8), and the coefficient
+  of <math|q<rsup|-1>> must match the lattice sunset exactly. <strong|Third>,
+  the theorem does not say that the limiting FBSDE has a unique solution as
+  an equation. To deduce uniqueness of the law of <math|(Y,Z,W)> one would
+  also want <math|\<psi\><rsub|q>=\<bbb-E\>[\<Phi\>\<mid\>\<cal-F\><rsup|P><rsub|q>]>
+  and <math|Y<rsub|q>> a function of <math|P<rsub|q>> in the limit, which is
+  not shown here. An intrinsic proof in the language of this lecture remains
+  open.
+
+  <subsection|What is not proved, and where to go next>
+
+  <\itemize>
+    <item><em|Uniqueness.> In finite volume
+    Theorem<nbsp><reference|thm:hs-uniq> identifies limit points through the
+    dynamics, under explicit assumptions: extensions of known results to our
+    lattices and the convergence of the finite part <math|c<rsub|N>>. Not
+    proved here: these assumptions, uniqueness for the limiting FBSDE as an
+    equation, and an intrinsic proof.
+
+    <item><em|Small mass (strong coupling).> The construction needs
+    <math|\<gamma\>*q<rsub|0><rsup|-1/2>> small. By scaling, it is equivalent
+    to the weak-coupling regime <math|\<lambda\>/m\<ll\>1> (unit mass on a
+    torus of side <math|m>). Removing it requires a priori estimates that do
+    not rely on the smallness of the feedback coefficient
+    <math|\<gamma\><rsup|2>/q<rsub|0>>, and a coefficient construction
+    outside the perturbative ball (<math|g<rsub|q<rsub|0>>=\<gamma\>*q<rsub|0><rsup|-1/2>>
+    small in Proposition<nbsp><hlink|11.1|cqft_lecture5.tm#prop:coeff>).
+
+    <item><em|Axioms.> Reflection positivity holds at every lattice, for
+    reflections in lattice and mid-lattice planes (nearest-neighbour action),
+    and passes to <math|\<nu\>> for every reflection in a coordinate plane,
+    by approximating the plane with lattice planes (standard;
+    Exercise<nbsp><reference|ex:RP>). Rotation invariance (absent on the
+    torus) and clustering need infinite volume.
+
+    <item><em|Infinite volume.> The force, its Burgers flow, and differences
+    of free energies are intensive (Section<nbsp><hlink|9.2|cqft_lecture4.tm#sec:infinite-volume>).
+    The estimates of this lecture must then be made local, with weights in
+    space and constants per unit volume. A new difficulty appears in the
+    backward equation: its integrand <math|\<Xi\>> is a nonlocal operator,
+    and the backward error at a point can receive noise from arbitrarily far
+    away. Uniform-in-volume coefficient bounds and local energy moments are
+    themselves open; they could give an infinite-volume Gibbs subsequence.
+    Controlling the \Pnoise from infinity\Q (together with local compactness
+    of the Hessian blocks) is the main additional step needed to retain the
+    full FBSDE without an orthogonal martingale<nbsp><cite|FBSDE26>.
+  </itemize>
+
+  <paragraph|Summary of the course> The six lectures went from the Wightman
+  axioms to the Euclidean formulation (Lecture<nbsp>1), to the free field
+  (Lecture<nbsp>2), to stochastic quantisation and the scale decomposition
+  (Lecture<nbsp>3), and to the three faces of an interacting field: the
+  Polchinski equation, the FBSDE and the variational problem
+  (Lecture<nbsp>4). In Lectures<nbsp>5\U6 the FBSDE in forecast coordinates,
+  together with an explicit solution of the Wetterich equation up to an
+  integrable defect, gave a construction of <math|\<Phi\><rsup|4><rsub|3>> in
+  which every object has a probabilistic meaning: the forecast is a
+  conditional mean, the response is a conditional covariance, the Brownian
+  motion is an innovation, and UV stability is the statement that an explicit
+  action predicts the conditional mean up to an error that is small at high
+  resolution.
+
+  <\padded-center>
+    <with|font-size|0.84|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<table|<row|<cell|Lecture<nbsp>4
+    (formal)>|<cell|Lectures<nbsp>5\U6>|<cell|status in the
+    limit>>|<row|<cell|forecast <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>*\<Phi\><rsub|T>>>|<cell|<math|\<psi\>=Y+Z>>|<cell|closed
+    martingale, <eqref|eq:closed-forecast>>>|<row|<cell|response
+    <math|H<rsub|t>=<math-up|Cov><rsub|t>>>|<cell|<math|<math-up|Cov>=H<around|(|Y|)>+\<Xi\>>>|<cell|strong
+    <math|L<rsup|2><around|(|<math-up|HS>|)>>,
+    Riccati>>|<row|<cell|<math|\<Gamma\><rsub|t>>,
+    Wetterich>|<cell|<math|<wide|\<Gamma\>|\<bar\>><rsub|q>> explicit, defect
+    <math|e>>|<cell|deterministic coefficients>>|<row|<cell|force
+    <math|F<rsub|t>>>|<cell|<math|K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>>|<cell|observable
+    at finite <math|q>>>|<row|<cell|DS equation>|<cell|Theorem<nbsp><reference|thm:DS>>|<cell|tested
+    in expectation>>>>>>
+  </padded-center>
+
+  <subsection*|Exercises>
+
+  <\exercise>
+    <dueto|The force observable><label|ex:force-observable> Show that
+    <math|<around|\<langle\>|F<rsup|N><rsub|q>,j<rsub|N>*h|\<rangle\>>=<around|\<langle\>|\<psi\><rsup|N><rsub|q>,K<rsub|q>*j<rsub|N>*h|\<rangle\>>-<around|\<langle\>|W<rsup|N><rsub|q>,j<rsub|N>*h|\<rangle\>>-<big|int><rsub|q<rsub|0>><rsup|q><around|\<langle\>|\<psi\><rsup|N><rsub|s>,j<rsub|N>*h|\<rangle\>>\<mathd\>s>.
+    Deduce that, along the subsequence of Theorem<nbsp><reference|thm:limit>,
+    these converge, with uniformly bounded moments, to
+    <math|<around|\<langle\>|F<rsub|q>,h|\<rangle\>>=<big|int><rsub|q<rsub|0>><rsup|q><around|\<langle\>|<around|(|<math-up|Cov><rsub|s>K<rsub|s>-I|)>*h,\<mathd\>W<rsub|s>|\<rangle\>>>,
+    a martingale for the limiting filtration (note
+    <math|F<rsub|q<rsub|0>>=0>, since <math|\<nu\><rsub|N>> is even).
+    (Cross-check: <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
+    with Lemma<nbsp><reference|lem:sup> and Theorem<nbsp><reference|thm:uv>,
+    gives a uniform second-moment bound.) Why does this not give a terminal
+    value <math|F<rsub|\<infty\>>>?
+  </exercise>
+
+  <\exercise>
+    <dueto|Hidden noise>Prove the claim of
+    Remark<nbsp><reference|rem:hidden>. Where would the argument of
+    Proposition<nbsp><reference|prop:martingales> fail if only weak
+    convergence of <math|<math-up|Cov><rsup|N>> were known?
+  </exercise>
+
+  <\exercise>
+    <dueto|Riccati and positivity>For a Gaussian
+    <math|\<nu\><rsub|N>=\<mu\><rsup|C>>, solve<nbsp><eqref|eq:riccati> and
+    check that <math|<math-up|Cov><rsub|q>=C<rsub|q>>. For a general
+    <math|\<nu\><rsub|N>>, show that <math|<math-up|TrCov><rsub|q>> is a
+    supermartingale.
+  </exercise>
+
+  <\exercise>
+    <dueto|Reflection positivity><label|ex:RP> Show that
+    <math|\<nu\><rsub|N>> is reflection positive for reflections in lattice
+    and mid-lattice planes (nearest-neighbour Gaussian times a local
+    potential). Deduce reflection positivity of <math|\<nu\>> for every
+    coordinate plane <math|<around|{|x<rsub|1>=a|}>>: take cylinder functions
+    of tests supported in <math|<around|{|a\<less\>x<rsub|1>\<less\>a+<frac|1|2>|}>>
+    (one of the two components of the torus minus the fixed planes
+    <math|<around|{|x<rsub|1>=a|}>> and <math|<around|{|x<rsub|1>=a+<frac|1|2>|}>>
+    of <math|\<theta\><rsub|a>>), cell-average them, and use lattice planes
+    <math|a<rsub|N>\<to\>a>, so that for large <math|N> the averaged tests
+    lie on the correct side. Since lattice and mid-lattice reflections map
+    cells to cells, <math|\<theta\><rsub|a<rsub|N>>*j<rsub|N>*f=j<rsub|N>*\<theta\><rsub|a<rsub|N>>*f>,
+    so the reflected tested variables are
+    <math|<around|\<langle\>|\<iota\><rsub|N>*\<Phi\>,\<theta\><rsub|a<rsub|N>>*f|\<rangle\>>>,
+    with <math|\<theta\><rsub|a<rsub|N>>*f\<to\>\<theta\><rsub|a>*f> in every
+    <math|H<rsup|s>>.
+  </exercise>
+
+  <\exercise>
+    <dueto|Dyson\USchwinger by Gaussian integration by parts>(a) At fixed
+    <math|N>, check that <eqref|eq:DS-q> is
+    Theorem<nbsp><hlink|B.1|cqft_lecture4.tm#thm:DS-scale> of Lecture<nbsp>4
+    in the profile of Lecture<nbsp>5, and compare the two proofs: score of
+    the law of <math|\<Phi\><rsub|q>> against the filtered noise. (b) For
+    <math|V<rsub|N>=0>, write <math|F=0> and check <eqref|eq:field-q>
+    directly. (c) Show that <math|<around|\<langle\>|F,h|\<rangle\>>> has
+    bracket <math|<big|int><around|\<\|\|\>|<around|(|Cov<rsub|s>*K<rsub|s>-I|)>*h|\<\|\|\>><rsub|2><rsup|2>\<mathd\>s>,
+    and that <eqref|eq:germ> does not bound it uniformly in <math|q>. What
+    would a bound imply?
+  </exercise>
+
+  <\exercise>
+    <dueto|Negative Sobolev threshold>Verify<nbsp><eqref|eq:noise-tail>, and
+    show that at <math|s=<frac|3|2>> the bound becomes <math|Q<rsup|-1>*log
+    <around|(|2+Q|)>>.
+  </exercise>
+
   <section*|References>
 
   <\bib-list|FBSDE26>
@@ -892,6 +2394,34 @@
     <bibitem*|FBSDE26><label|bib-FBSDE26>M.<nbsp>Gubinelli. The massive
     <math|\<Phi\><rsup|4><rsub|3>> field through forward\Ubackward equations.
     Course notes, October 2026.
+
+    <bibitem*|GH21><label|bib-GH21>M.<nbsp>Gubinelli, M.<nbsp>Hofmanová. A
+    PDE construction of the Euclidean <math|\<Phi\><rsup|4><rsub|3>> quantum
+    field theory. <em|Comm. Math. Phys.> 384 (2021), 1\U75.
+
+    <bibitem*|HMa18><label|bib-HMa18>M.<nbsp>Hairer, J.<nbsp>Mattingly. The
+    strong Feller property for singular stochastic PDEs. <em|Ann. Inst. H.
+    Poincaré Probab. Statist.> 54 (2018), 1314\U1340.
+
+    <bibitem*|HMt18><label|bib-HMt18>M.<nbsp>Hairer, K.<nbsp>Matetski.
+    Discretisations of rough stochastic PDEs. <em|Ann. Probab.> 46 (2018),
+    1651\U1709.
+
+    <bibitem*|HSc22><label|bib-HSc22>M.<nbsp>Hairer, P.<nbsp>Schönbauer. The
+    support of singular stochastic partial differential equations. <em|Forum
+    Math. Pi> 10 (2022), e1.
+
+    <bibitem*|HSt22><label|bib-HSt22>M.<nbsp>Hairer, R.<nbsp>Steele. The
+    <math|\<Phi\><rsup|4><rsub|3>> measure has sub-Gaussian tails. <em|J.
+    Stat. Phys.> 186 (2022), art. 38.
+
+    <bibitem*|MW17><label|bib-MW17>J.-C.<nbsp>Mourrat, H.<nbsp>Weber. The
+    dynamic <math|\<Phi\><rsup|4><rsub|3>> model comes down from infinity.
+    <em|Comm. Math. Phys.> 356 (2017), 673\U753.
+
+    <bibitem*|MW20><label|bib-MW20>A.<nbsp>Moinat, H.<nbsp>Weber. Space-time
+    localisation for the dynamic <math|\<Phi\><rsup|4><rsub|3>> model.
+    <em|Comm. Pure Appl. Math.> 73 (2020), 2519\U2555.
 
     <bibitem*|MY99><label|bib-MY99>J.<nbsp>Ma, J.<nbsp>Yong.
     <em|Forward-Backward Stochastic Differential Equations and their
@@ -918,55 +2448,150 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|2>>
-    <associate|auto-10|<tuple|14.1|4>>
-    <associate|auto-11|<tuple|1|5>>
-    <associate|auto-12|<tuple|14.2|6>>
-    <associate|auto-13|<tuple|14.4|6>>
-    <associate|auto-14|<tuple|15|7>>
-    <associate|auto-15|<tuple|15.1|7>>
-    <associate|auto-16|<tuple|15.2|7>>
-    <associate|auto-17|<tuple|15.3|8>>
-    <associate|auto-18|<tuple|15.4|8>>
-    <associate|auto-19|<tuple|15.4|9>>
-    <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|15.3|9>>
-    <associate|auto-3|<tuple|13|2>>
-    <associate|auto-4|<tuple|13.1|2>>
-    <associate|auto-5|<tuple|13.2|3>>
-    <associate|auto-6|<tuple|13.3|3>>
-    <associate|auto-7|<tuple|13.4|4>>
-    <associate|auto-8|<tuple|13.7|4>>
-    <associate|auto-9|<tuple|14|4>>
-    <associate|bib-BG20|<tuple|BG20|9>>
-    <associate|bib-FBSDE26|<tuple|FBSDE26|9>>
-    <associate|bib-MY99|<tuple|MY99|9>>
-    <associate|eq:KX|<tuple|13.2|3>>
-    <associate|eq:Vsharp|<tuple|13.3|3>>
-    <associate|eq:X|<tuple|13.1|3>>
+    <associate|auto-10|<tuple|1|6>>
+    <associate|auto-11|<tuple|14.2|6>>
+    <associate|auto-12|<tuple|14.3|7>>
+    <associate|auto-13|<tuple|14.5|8>>
+    <associate|auto-14|<tuple|15|8>>
+    <associate|auto-15|<tuple|15.1|8>>
+    <associate|auto-16|<tuple|15.2|8>>
+    <associate|auto-17|<tuple|15.3|9>>
+    <associate|auto-18|<tuple|15.4|9>>
+    <associate|auto-19|<tuple|15.4|10>>
+    <associate|auto-2|<tuple|1|3>>
+    <associate|auto-20|<tuple|15.3|10>>
+    <associate|auto-21|<tuple|16|11>>
+    <associate|auto-22|<tuple|16.1|11>>
+    <associate|auto-23|<tuple|16.2|11>>
+    <associate|auto-24|<tuple|16.4|12>>
+    <associate|auto-25|<tuple|17|12>>
+    <associate|auto-26|<tuple|17.1|12>>
+    <associate|auto-27|<tuple|17.2|12>>
+    <associate|auto-28|<tuple|17.3|13>>
+    <associate|auto-29|<tuple|17.4|13>>
+    <associate|auto-3|<tuple|13|3>>
+    <associate|auto-30|<tuple|17.5|14>>
+    <associate|auto-31|<tuple|17.7|16>>
+    <associate|auto-32|<tuple|18|16>>
+    <associate|auto-33|<tuple|18.1|16>>
+    <associate|auto-34|<tuple|18.2|17>>
+    <associate|auto-35|<tuple|18.3|18>>
+    <associate|auto-36|<tuple|18.4|18>>
+    <associate|auto-37|<tuple|18.5|20>>
+    <associate|auto-38|<tuple|18.6|21>>
+    <associate|auto-39|<tuple|18.7|22>>
+    <associate|auto-4|<tuple|13.1|3>>
+    <associate|auto-40|<tuple|1|22>>
+    <associate|auto-41|<tuple|1|23>>
+    <associate|auto-42|<tuple|18.6|23>>
+    <associate|auto-5|<tuple|13.2|4>>
+    <associate|auto-6|<tuple|13.3|4>>
+    <associate|auto-7|<tuple|13.6|5>>
+    <associate|auto-8|<tuple|14|5>>
+    <associate|auto-9|<tuple|14.1|5>>
+    <associate|bib-BG20|<tuple|BG20|23>>
+    <associate|bib-FBSDE26|<tuple|FBSDE26|23>>
+    <associate|bib-GH21|<tuple|GH21|23>>
+    <associate|bib-HMa18|<tuple|HMa18|23>>
+    <associate|bib-HMt18|<tuple|HMt18|23>>
+    <associate|bib-HSc22|<tuple|HSc22|23>>
+    <associate|bib-HSt22|<tuple|HSt22|23>>
+    <associate|bib-MW17|<tuple|MW17|23>>
+    <associate|bib-MW20|<tuple|MW20|23>>
+    <associate|bib-MY99|<tuple|MY99|23>>
+    <associate|cor:hs-ds|<tuple|18.7|20>>
+    <associate|cor:hs-quartic|<tuple|18.9|21>>
+    <associate|cor:tight|<tuple|17.3|14>>
+    <associate|eq:DS|<tuple|18.4|19>>
+    <associate|eq:DS-limit-q|<tuple|18.8|20>>
+    <associate|eq:DS-q|<tuple|18.6|19>>
+    <associate|eq:KX|<tuple|14.2|3>>
+    <associate|eq:Vsharp|<tuple|13.3|4>>
+    <associate|eq:X|<tuple|14.1|3>>
     <associate|eq:YZ|<tuple|1|2>>
-    <associate|eq:backward|<tuple|15.3|8>>
-    <associate|eq:elementary|<tuple|14.3|5>>
-    <associate|eq:energies|<tuple|13.6|3>>
-    <associate|eq:energy|<tuple|15.4|8>>
-    <associate|eq:forward|<tuple|14.4|6>>
-    <associate|eq:hardy|<tuple|13.7|4>>
-    <associate|eq:propagator|<tuple|15.1|7>>
-    <associate|eq:representation|<tuple|15.2|7>>
-    <associate|eq:scalar|<tuple|14.1|4>>
-    <associate|eq:scalar-forward|<tuple|14.2|4>>
-    <associate|eq:thresholds|<tuple|13.5|3>>
-    <associate|eq:uv-stability|<tuple|15.5|8>>
-    <associate|eq:volterra|<tuple|13.4|3>>
-    <associate|lem:hardy|<tuple|13.2|4>>
-    <associate|lem:pre|<tuple|13.1|2>>
-    <associate|lem:representation|<tuple|15.1|7>>
-    <associate|lem:scalar-forward|<tuple|14.1|4>>
-    <associate|prop:backward|<tuple|15.2|8>>
+    <associate|eq:Z-sup|<tuple|15.6|10>>
+    <associate|eq:backward|<tuple|15.3|9>>
+    <associate|eq:closed-forecast|<tuple|18.3|18>>
+    <associate|eq:elementary|<tuple|14.3|6>>
+    <associate|eq:energies|<tuple|13.6|4>>
+    <associate|eq:energy|<tuple|15.4|9>>
+    <associate|eq:energy-recall|<tuple|2|10>>
+    <associate|eq:eta-filter|<tuple|13.1|4>>
+    <associate|eq:field|<tuple|13.4|4>>
+    <associate|eq:field-q|<tuple|18.5|19>>
+    <associate|eq:forward|<tuple|14.5|6>>
+    <associate|eq:forward-q|<tuple|14.4|6>>
+    <associate|eq:germ|<tuple|18.7|19>>
+    <associate|eq:gradient-match|<tuple|16.2|11>>
+    <associate|eq:hardy|<tuple|14.7|4>>
+    <associate|eq:hs-ds-explicit|<tuple|18.10|20>>
+    <associate|eq:hs-ds-path|<tuple|18.9|20>>
+    <associate|eq:hs-energy|<tuple|17.6|14>>
+    <associate|eq:hs-field|<tuple|17.7|15>>
+    <associate|eq:hs-lattice-dyn|<tuple|18.11|21>>
+    <associate|eq:hs-result|<tuple|17.9|15>>
+    <associate|eq:hs-test|<tuple|17.8|15>>
+    <associate|eq:hs-trick|<tuple|17.5|14>>
+    <associate|eq:limit-equations|<tuple|18.2|18>>
+    <associate|eq:linear|<tuple|17.2|13>>
+    <associate|eq:noise-tail|<tuple|17.3|13>>
+    <associate|eq:propagator|<tuple|15.1|8>>
+    <associate|eq:qZ|<tuple|16.3|11>>
+    <associate|eq:representation|<tuple|15.2|8>>
+    <associate|eq:riccati|<tuple|18.1|17>>
+    <associate|eq:scalar|<tuple|14.1|5>>
+    <associate|eq:scalar-bound|<tuple|14.2|5>>
+    <associate|eq:scalar-forward|<tuple|15.2|4>>
+    <associate|eq:sup|<tuple|14.6|7>>
+    <associate|eq:sup-closure|<tuple|17.1|12>>
+    <associate|eq:terminal|<tuple|16.1|11>>
+    <associate|eq:terminal-tail|<tuple|17.4|14>>
+    <associate|eq:thresholds|<tuple|13.5|4>>
+    <associate|eq:uv|<tuple|16.4|12>>
+    <associate|eq:uv-stability|<tuple|15.5|9>>
+    <associate|eq:volterra|<tuple|14.4|3>>
+    <associate|eq:zeta-tail|<tuple|13.2|4>>
+    <associate|ex:RP|<tuple|18.4|23>>
+    <associate|ex:force-limit|<tuple|16.1|12>>
+    <associate|ex:force-observable|<tuple|18.1|23>>
+    <associate|ex:hs-saddle|<tuple|17.2|16>>
+    <associate|ex:memory|<tuple|13.3|5>>
+    <associate|lem:hardy|<tuple|14.2|4>>
+    <associate|lem:hs-field|<tuple|17.5|15>>
+    <associate|lem:noise|<tuple|13.2|4>>
+    <associate|lem:noise-sup|<tuple|14.5|7>>
+    <associate|lem:pre|<tuple|13.1|3>>
+    <associate|lem:representation|<tuple|15.1|8>>
+    <associate|lem:riccati|<tuple|18.2|17>>
+    <associate|lem:scalar-forward|<tuple|14.1|5>>
+    <associate|lem:sup|<tuple|17.1|12>>
+    <associate|lem:terminal|<tuple|16.1|11>>
+    <associate|prop:backward|<tuple|15.2|9>>
     <associate|prop:forward|<tuple|14.3|6>>
-    <associate|sec:backward|<tuple|15|7>>
-    <associate|sec:energies|<tuple|13|2>>
-    <associate|sec:forward|<tuple|14|4>>
-    <associate|thm:energy|<tuple|15.3|8>>
+    <associate|prop:forward-compact|<tuple|17.2|13>>
+    <associate|prop:hs-tilt|<tuple|17.4|14>>
+    <associate|prop:martingales|<tuple|18.3|18>>
+    <associate|prop:sup|<tuple|14.4|7>>
+    <associate|rem:hidden|<tuple|18.1|17>>
+    <associate|rem:hs-exponent|<tuple|17.7|16>>
+    <associate|sec:backward|<tuple|15|8>>
+    <associate|sec:compactness|<tuple|17|12>>
+    <associate|sec:energies|<tuple|13|3>>
+    <associate|sec:field|<tuple|13.2|4>>
+    <associate|sec:forward|<tuple|14|5>>
+    <associate|sec:hs-ds|<tuple|18.5|20>>
+    <associate|sec:hs-exp|<tuple|17.5|14>>
+    <associate|sec:hs-uniq|<tuple|18.6|21>>
+    <associate|sec:limit|<tuple|18|16>>
+    <associate|sec:sup|<tuple|14.3|7>>
+    <associate|sec:terminal|<tuple|16|11>>
+    <associate|thm:DS|<tuple|18.5|19>>
+    <associate|thm:energy|<tuple|15.3|9>>
+    <associate|thm:field-q|<tuple|18.6|19>>
+    <associate|thm:hs|<tuple|17.6|15>>
+    <associate|thm:hs-uniq|<tuple|18.8|21>>
+    <associate|thm:limit|<tuple|18.4|18>>
+    <associate|thm:uv|<tuple|16.2|12>>
   </collection>
 </references>
 
@@ -975,9 +2600,49 @@
     <\associate|bib>
       MY99
 
+      BG20
+
       FBSDE26
 
-      BG20
+      HSt22
+
+      HSt22
+
+      MW17
+
+      MW20
+
+      HSt22
+
+      FBSDE26
+
+      FBSDE26
+
+      HSt22
+
+      HMt18
+
+      HMt18
+
+      HSt22
+
+      GH21
+
+      HMa18
+
+      HSc22
+
+      MW17
+
+      MW20
+
+      HSt22
+
+      HSt22
+
+      HSt22
+
+      FBSDE26
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -997,35 +2662,35 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
-      <with|par-left|<quote|1tab>|13.2<space|2spc>Subtracting the Gaussian
-      part <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|13.2<space|2spc>The field equation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|1tab>|13.3<space|2spc>Thresholds and energies
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6>>
 
-      <with|par-left|<quote|1tab>|13.4<space|2spc>Two Hardy inequalities
+      <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
-      <with|par-left|<quote|1tab>|Exercises
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
-
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|14<space|2spc>Forward
       coercivity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9><vspace|0.5fn>
+      <no-break><pageref|auto-8><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|14.1<space|2spc>The scalar model
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10>>
+      <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|What the
       scalar lemma says <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11>>>
+      <no-break><pageref|auto-10>>>
 
       <with|par-left|<quote|1tab>|14.2<space|2spc>The lattice version
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|14.3<space|2spc>A pointwise bound
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12>>
 
@@ -1057,9 +2722,97 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19>>
 
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Removing
+      the cutoffs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|16<space|2spc>The
+      boundary at infinite resolution> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|16.1<space|2spc>The boundary lemma
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-22>>
+
+      <with|par-left|<quote|1tab>|16.2<space|2spc>UV stability
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-23>>
+
+      <with|par-left|<quote|1tab>|Exercises
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-24>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|17<space|2spc>Compactness>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-25><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|17.1<space|2spc>One Hilbert space
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-26>>
+
+      <with|par-left|<quote|1tab>|17.2<space|2spc>Spatial suprema by a
+      maximum principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-27>>
+
+      <with|par-left|<quote|1tab>|17.3<space|2spc>Regularity in space and
+      scale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-28>>
+
+      <with|par-left|<quote|1tab>|17.4<space|2spc>The terminal field
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-29>>
+
+      <with|par-left|<quote|1tab>|17.5<space|2spc>Exponential integrability:
+      the Hairer\USteele argument <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-30>>
+
+      <with|par-left|<quote|1tab>|Exercises
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-31>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Identifying
+      the limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-32><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|18.1<space|2spc>The deterministic
+      coefficients <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-33>>
+
+      <with|par-left|<quote|1tab>|18.2<space|2spc>The noise
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-34>>
+
+      <with|par-left|<quote|1tab>|18.3<space|2spc>The result
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-35>>
+
+      <with|par-left|<quote|1tab>|18.4<space|2spc>The renormalised field
+      equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-36>>
+
+      <with|par-left|<quote|1tab>|18.5<space|2spc>Dyson\USchwinger along the
+      scales <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-37>>
+
+      <with|par-left|<quote|1tab>|18.6<space|2spc>Uniqueness in finite volume
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-38>>
+
+      <with|par-left|<quote|1tab>|18.7<space|2spc>What is not proved, and
+      where to go next <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-39>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Summary of the
+      course <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-40>>>
+
+      <with|par-left|<quote|1tab>|Exercises
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-41>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20><vspace|0.5fn>
+      <no-break><pageref|auto-42><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

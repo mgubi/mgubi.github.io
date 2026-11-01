@@ -41,7 +41,7 @@
     [<notes-link|HTML|sissa-2026/cqft_notes_L1.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L1.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L1.tm>].
-    Revised 29 October 2026.
+    Revised 2 November 2026.
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
     free field. Construction on the torus and Euclidean space; reflection
@@ -52,7 +52,7 @@
     [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>].
-    Revised 30 October 2026.
+    Revised 2 November 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
     quantisation and stochastic observables. Parabolic and elliptic
@@ -67,13 +67,13 @@
     Revised 30 October 2026.
   </itemize>
 
-  <subsection*|Provisional materials for Lectures 4--7>
+  <subsection*|Provisional materials for Lectures 4--6>
 
   Lecture 4 introduces interactions through the Polchinski flow;
-  Lectures 5--7 give an FBSDE construction of
+  Lectures 5--6 give an FBSDE construction of
   <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
-  adjusted as the course progresses. Lecture 7 will not be delivered in
-  class.
+  adjusted as the course progresses. Sections 16--18 of Lecture 6 will not
+  be delivered in class.
 
   <\itemize>
     <item><with|font-series|bold|Lecture 4>: The Polchinski flow and forward--backward equations. Effective potentials and the Polchinski equation; the FBSDE, whose force is an observable; the Wetterich equation and the variational structure of the flow; perturbation theory, counterterms and Dyson--Schwinger equations at every scale.
@@ -88,21 +88,15 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>].
 
-    <item><with|font-series|bold|Lecture 6>: A priori estimates for the forward--backward system.
+    <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability, compactness and the limiting FBSDE (Sections 16--18 not delivered in class).
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>].
 
-    <item><with|font-series|bold|Lecture 7>: UV stability, compactness and the limiting FBSDE (not delivered in class).
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L7.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture7.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L7.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L7.tm>].
+    </itemize>
 
-  </itemize>
-
-  Materials revised 30 October 2026. In the HTML slides, use the arrow
+  Materials revised 2 November 2026. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.
 
   <subsection*|Schedule>
