@@ -297,6 +297,37 @@
       by the lemma.
     </itemize>
   </hidden>|<\hidden>
+    <mytitle|<math|L<rsup|\<infty\>>> coercivity>
+
+    <\proposition*>
+      For <math|q<rsub|\<ast\>>> large, at every <math|N>, pathwise and for
+      every <math|q>,
+
+      <\equation*>
+        <around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>C*<around*|[|<around*|(|<frac|q|\<gamma\>>|)><rsup|1/3><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>><rsup|1/3>+<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<rsup|1/4>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>|]>.
+      </equation*>
+
+      So <math|t<rsub|q>=0> whenever <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leqslant\>c*r<rsub|q>>.
+    </proposition*>
+
+    <\itemize>
+      <item>Remove the error: <math|\<cal-H\>=<around|(|q-q<rsub|0>|)>*C<rsub|q<rsub|0>>*Z<rsub|q>>,
+      with <math|<around|\<\|\|\>|\<cal-H\>|\<\|\|\>><rsub|\<infty\>>\<lesssim\>q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>.
+
+      <item>At a maximum of <math|W=V-\<cal-H\>>, the elliptic term has a
+      sign: <math|<frac|\<gamma\>|3>*Y<rsup|3>\<leqslant\>q<around|\<\|\|\>|d|\<\|\|\>><rsub|\<infty\>>>.
+      <strong|The cube alone gives the bound.>
+
+      <item><strong|Large fields occur only when the noise or the error is
+      large.>
+
+      <item>With <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<lesssim\>q<rsup|1/4>>
+      and <math|<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<lesssim\>q<rsup|-5/4>>
+      (Doob on <math|\<bbb-E\><rsub|q>*A<rsup|<math-up|l>>>):
+      <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<lesssim\>q<rsup|5/12>\<ll\>r<rsub|q>>,
+      up to logarithms.
+    </itemize>
+  </hidden>|<\hidden>
     <vspace*|2.5cm>
 
     \;
@@ -477,7 +508,7 @@
 
       There: drift <math|u=-4*\<lambda\>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>
       (<math|\<lambda\>*<big|int>:\<varphi\><rsup|4>>: of Lecture<nbsp>4).
-      Here: <math|<wide|\<Gamma\>|\<bar\>>> does all such changes of
+      Here: <math|<wide|\<cal-F\>|\<bar\>>> does all such changes of
       variables at once in the forecast coordinate; <math|Z> plays the role
       of <math|r>. Coercivity of the quartic: <strong|pathwise> in the
       forward equation; the remainder: <strong|in expectation> through the
@@ -535,8 +566,8 @@
 
     \;
 
-    <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> was built to converge to the bare
-    action: <math|\<mu\><rsub|q>\<to\>\<mu\><rsub|N>>,
+    <math|<wide|\<cal-F\>|\<bar\>><rsub|q>> was built to converge to the bare
+    force: <math|\<mu\><rsub|q>\<to\>\<mu\><rsub|N>>,
     <math|\<Theta\><rsub|q>\<to\>0>, corrections integrated from
     <math|q=\<infty\>>.
 
@@ -552,14 +583,14 @@
       <item>The field at resolution <math|q>:
       <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>\<to\>\<Phi\><rsub|\<infty\>>>.
 
-      <item><math|\<Phi\><rsub|q>=Y<rsub|q>+C<rsub|q>*D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
+      <item><math|\<Phi\><rsub|q>=Y<rsub|q>+C<rsub|q>*<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
       so <math|Y<rsub|q>-\<Phi\><rsub|q>=O<around|(|q<rsup|-1>|)>> and
-      <math|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>\<to\>D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>>.
+      <math|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>\<to\>D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>>.
 
       <item>Exact minus approximate coordinate identity:
 
       <\equation*>
-        q*Z<rsub|q>=q*C<rsub|q>*<around*|[|D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>-\<bbb-E\><rsub|q>*D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>;
+        q*Z<rsub|q>=q*C<rsub|q>*<around*|[|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>-\<bbb-E\><rsub|q>*D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>;
       </equation*>
 
       compare <math|\<bbb-E\><rsub|q>*G> with the <strong|observed>
@@ -595,7 +626,7 @@
       <item><math|C<rsub|N,p>> diverges with <math|N>: never take
       <math|sup<rsub|N>> of <math|C<rsub|N,p>/T>.
 
-      <item>The force: <math|F<rsub|q>=\<bbb-E\><rsub|q>*<around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
+      <item>The force: <math|F<rsub|q>=\<bbb-E\><rsub|q>*<around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>=K<rsub|q>*Z<rsub|q>-<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
       the explicit force at the approximate forecast, corrected by
       <math|K<rsub|q>*Z<rsub|q>>.
     </itemize>
@@ -670,6 +701,40 @@
     <with|color|dark grey|Lecture<nbsp>6>
 
     \;
+  </hidden>|<\hidden>
+    <mytitle|Suprema by a maximum principle>
+
+    Embed by cells <math|\<square\><rsub|x>>:
+    <math|\<iota\><rsub|N>:H<rsub|N>\<to\>H=L<rsup|2><around|(|\<bbb-T\><rsup|3>|)>>
+    isometric, <math|j<rsub|N>=\<iota\><rsub|N><rsup|\<ast\>>>.
+
+    <\lemma*>
+      <dueto|supremum after closure>Let <math|\<cal-Y\>=sup<rsub|q>q<rsup|-5/12>*<around|(|log
+      <around|(|2+q|)>|)><rsup|-1/6><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>,
+      <math|\<cal-Z\>=sup<rsub|q>q<rsup|5/4><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>.
+      Uniformly in <math|N>,
+
+      <\equation*>
+        \<cal-Y\>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+\<cal-N\>+\<cal-Z\>|)>,<space|2em><around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<sqrt|p>,<space|2em><around|\<\|\|\>|\<cal-Z\><rsup|2>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>.
+      </equation*>
+    </lemma*>
+
+    <\itemize>
+      <item>From the <math|L<rsup|\<infty\>>> coercivity above:
+      <strong|lattice maximum principle> in the field equation, no memory.
+
+      <item><math|\<cal-N\>>: supremum of the noise (convex domination,
+      Dudley, Doob). <math|\<cal-Z\>>: Doob on
+      <math|\<bbb-E\><rsub|q>*A<rsup|<math-up|l>>>, after the boundary term
+      is removed.
+
+      <item>The exponent <math|5/12\<less\><frac|1|2>> keeps <math|Y> below
+      the threshold.
+    </itemize>
+
+    Finite-resolution suprema have all moments, uniformly in <math|N>. At the
+    terminal resolution there is no such bound:
+    <math|\<Phi\><rsub|\<infty\>>> is a distribution.
   </hidden>|<\hidden>
     <mytitle|The terminal field>
 
@@ -750,17 +815,22 @@
 
     \;
 
-    <strong|Moreau transform.> <math|K<rsub|q>y+D<wide|\<Gamma\>|\<bar\>><rsub|q>(y)=K<rsub|q>x>,
-    <math|<wide|V|\<bar\>><rsub|q>(x)=<wide|\<Gamma\>|\<bar\>><rsub|q>(y)+<frac|1|2><around|\<langle\>|x-y,K<rsub|q>(x-y)|\<rangle\>>>,
-    and
+    <math|K<rsub|q>y+<wide|\<cal-F\>|\<bar\>><rsub|q>(y)=K<rsub|q>x>,
+    <math|<wide|f|\<bar\>><rsub|q>(x)=K<rsub|q>(y-x)>: the explicit force
+    solves Burgers with a source <math|-K<rsub|q>H<rsub|q>\<cal-D\><rsub|q>\<circ\>
+    y>.
+
+    <strong|The first scalar.> <math|\<cal-D\>> and <math|<wide|f|\<bar\>>>
+    are gradients: <math|e<rsub|q>=<big|int><rsub|0><rsup|1><around|\<langle\>|\<cal-D\><rsub|q>(t*y),y|\<rangle\>><space|0.17em>\<mathd\>
+    t>, <math|D<wide|V|\<bar\>>=-<wide|f|\<bar\>>>, and
 
     <\equation*>
       \<partial\><rsub|q><wide|V|\<bar\>>+<frac|1|2><math-up|Tr>(C<rsub|q><rsup|2>D<rsup|2><wide|V|\<bar\>>)-<frac|1|2><around|\<\|\|\>|C<rsub|q>D<wide|V|\<bar\>>|\<\|\|\>><rsub|2><rsup|2>=e<rsub|q>\<circ\>
       y+c(q).
     </equation*>
 
-    <strong|Explicit flow> <math|\<bbb-R\><rsup|q,x>>:
-    <math|<space|0.17em>\<mathd\> x=-C<rsub|s>(x-y<rsub|s>(x))<space|0.17em>\<mathd\>
+    Explicit flow <math|\<bbb-R\><rsup|q,x>>: <math|<space|0.17em>\<mathd\>
+    x=-C<rsub|s>(x-y<rsub|s>(x))<space|0.17em>\<mathd\>
     s+C<rsub|s><space|0.17em>\<mathd\> W>, whose coordinate solves
     <math|<space|0.17em>\<mathd\> Y=b(Y)<space|0.17em>\<mathd\>
     s+H(Y)<space|0.17em>\<mathd\> W>. It contains no <math|Z>.
@@ -920,7 +990,7 @@
       proved>.
 
       <item>At every finite resolution the force is explicit:
-      <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
+      <math|F<rsub|q>=K<rsub|q>*Z<rsub|q>-<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
     </itemize>
   </hidden>|<\hidden>
     <mytitle|The field equation at resolution <math|q>>
@@ -940,7 +1010,7 @@
 
       <math|<around|\<langle\>|F,h|\<rangle\>>>,
       <math|<around|\<langle\>|\<eta\>,h|\<rangle\>>> are martingales, and
-      <math|<around|\<\|\|\>|<around|\<langle\>|F<rsub|q>+D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>|\<\|\|\>><rsub|L<rsup|2>>\<lesssim\><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>*q<rsup|-1/4>>.
+      <math|<around|\<\|\|\>|<around|\<langle\>|F<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>|\<\|\|\>><rsub|L<rsup|2>>\<lesssim\><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>*q<rsup|-1/4>>.
     </theorem*>
 
     <\itemize>
@@ -950,7 +1020,7 @@
 
       <item><strong|The renormalised cube is an observable:> the unique
       martingale in the class of the explicit
-      <math|-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
+      <math|-<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>.
 
       <item><math|q\<to\>\<infty\>> recovers the integration by parts
       formula. Not proved: that <math|F> is closed.
@@ -969,7 +1039,7 @@
     <strong|Shift the coordinate:>
 
     <\equation*>
-      K<rsub|q>Y<rsub|q>+D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>)=P<rsub|q>+h*f,<space|1em>
+      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>)=P<rsub|q>+h*f,<space|1em>
       Z<rsub|q>=<wide|\<psi\>|^><rsub|q>-Y<rsub|q>.
     </equation*>
 
@@ -1023,10 +1093,10 @@
     <math|q<rsub|i>\<leqslant\> q>:
 
     <\equation*>
-      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>]=\<bbb-E\>[G(<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>),J<rsub|q>h|\<rangle\>>)]+O(q<rsup|-1/4>).
+      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>]=\<bbb-E\>[G(<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>),J<rsub|q>h|\<rangle\>>)]+O(q<rsup|-1/4>).
     </equation*>
 
-    So the explicit force <math|D<wide|\<Gamma\>|\<bar\>><rsub|q>(Y<rsub|q>)>
+    So the explicit force <math|<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>)>
     closes the hierarchy at large <math|q>, up to an error which vanishes as
     <math|q\<to\>\<infty\>>.
   </hidden>|<\hidden>
@@ -1103,16 +1173,16 @@
     4 (formal)>|<cell|Lectures 5\U6>|<cell|in the limit>>|<row|<cell|forecast
     <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>*\<Phi\><rsub|T>>>|<cell|<math|\<psi\>=Y+Z>>|<cell|closed
     martingale>>|<row|<cell|response <math|H<rsub|t>=<math-up|Cov><rsub|t>>>|<cell|<math|<math-up|Cov>=H<around|(|Y|)>+\<Xi\>>>|<cell|conditional
-    covariance>>|<row|<cell|<math|\<Gamma\><rsub|t>>,
-    Wetterich>|<cell|<math|<wide|\<Gamma\>|\<bar\>><rsub|q>> explicit, defect
-    <math|e>>|<cell|deterministic coefficients>>|<row|<cell|force
-    <math|F<rsub|t>>>|<cell|<math|K<rsub|q>*Z<rsub|q>-D*<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>>|<cell|observable
+    covariance>>|<row|<cell|<math|\<cal-F\><rsub|t>>, force
+    equation>|<cell|<math|<wide|\<cal-F\>|\<bar\>><rsub|q>> explicit, defect
+    <math|\<cal-D\>>>|<cell|deterministic coefficients>>|<row|<cell|force
+    <math|F<rsub|t>>>|<cell|<math|K<rsub|q>*Z<rsub|q>-<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>>|<cell|observable
     at finite <math|q>>>|<row|<cell|DS equation>|<cell|integration by
     parts>|<cell|tested in expectation>>>>>
 
-    <strong|UV stability> <math|=> an explicit action predicts the
-    conditional mean up to a small error. So the measure is an explicit
-    density over an explicit flow, with that error as the optimal control.
+    <strong|UV stability> <math|=> an explicit force predicts the conditional
+    mean up to a small error. So the measure is an explicit density over an
+    explicit flow, with that error as the optimal control.
   </hidden>>
 </body>
 

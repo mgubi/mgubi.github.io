@@ -64,7 +64,7 @@
         </p>
         <p>
           <font style="font-size: 130.0%"><font color="#620000">\(\Phi^4_3\)</font> on the torus I: the
-          Wetterich FBSDE and renormalisation</font>
+          FBSDE in force coordinates and renormalisation</font>
         </p>
         <p style="margin-bottom: 0.65cm">
 
@@ -106,7 +106,7 @@
         In the <strong>forecast coordinate</strong> <font color="#620000">\(\psi_t
         =\mathbb{E}_t \Phi_T\)</font> the forward equation has no drift and
         the trees are integrated exactly; the backward half is the
-        <strong>Wetterich equation</strong>.
+        <strong>force equation</strong>.
       </p>
       <p>
         <b>Lectures 5&ndash;6.</b> Construct <font color="#620000">\(\Phi^4_3\)</font>
@@ -116,15 +116,15 @@
         <li>
           <p>
             <strong>deterministic renormalisation</strong>: an explicit
-            approximate effective action <font color="#620000">\(\bar{\Gamma}_q\)</font>
-            and its defect (today);
+            approximate force <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> and
+            its defect (today);
           </p>
         </li>
         <li>
           <p>
             <strong>a priori estimates</strong> for the exact FBSDE in the
-            coordinates of <font color="#620000">\(\bar{\Gamma}_q\)</font>, uniform in
-            the lattice (Lecture 6);
+            coordinates of <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>,
+            uniform in the lattice (Lecture 6);
           </p>
         </li>
         <li>
@@ -292,124 +292,54 @@ V_N (\varphi)} \mu^C
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The Polchinski process as a filtering problem
+        The Polchinski process as a posterior
       </div>
       <p>
 
       </p>
       <p>
-        Fixed <font color="#620000">\(N\)</font>. Hidden field <font color="#620000">\(\Phi_{\infty}
-        \sim \nu_N\)</font>, independent Brownian motion <font color="#620000">\(B\)</font>,
-        observations
+        By Lecture 4 (filtering and the field equation), in the profile <font
+        color="#620000">\(S_q = C_q\)</font>, <font color="#620000">\(\mathcal{R}_q = q -
+        q_0\)</font>. Fixed <font color="#620000">\(N\)</font>: everything is a
+        theorem. <font color="#620000">\(\Phi_{\infty} \sim \nu_N\)</font>, <font
+        color="#620000">\(B\)</font> an independent Brownian motion,
       </p>
       <center>
-        \(\displaystyle P_q = (q - q_0) \Phi_{\infty} + B_{q - q_0}, \qquad
-        \mathcal{F}_q = \sigma
-(P_s : s \leqslant q) .\)
+        \(\displaystyle P_q = (q - q_0) \Phi_{\infty} + B_{q - q_0}, \quad
+        \mathcal{F}_q = \sigma (P_s
+: s \leqslant q) .\)
       </center>
-      <div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Proposition.
-          </strong></font></font><i>With <font color="#620000">\(\mathcal{K}_q (p) =
-          \log \int \mathrm{e}^{\langle p, \varphi \rangle - \frac{q
-- q_0}{2}
-          \| \varphi \|^2} \nu_N (\mathrm{d} \varphi)\)</font>:</i>
-        </p>
-        <div style="margin-bottom: 1em">
-          <i><ul>
-            <li>
-              <p>
-                forecast <font color="#620000">\(\psi_q =\mathbb{E}_q \Phi_{\infty} =
-                D\mathcal{K}_q (P_q)\)</font>, covariance <font color="#620000">\(\text{Cov}_q
-                = D^2 \mathcal{K}_q (P_q) > 0\)</font>;
-              </p>
-            </li>
-            <li>
-              <p>
-                innovation <font color="#620000">\(W_q = P_q - \int_{q_0}^q \psi_s
-                \mathrm{d} s\)</font> is an <font color="#620000">\((\mathcal{F}_q)\)</font>-Brownian
-                motion;
-              </p>
-            </li>
-            <li>
-              <p>
-                <font color="#620000">\(\mathrm{d} \psi_q = \text{Cov}_q
-                \hspace{0.17em} \mathrm{d} W_q\)</font>, and <font color="#620000">\(\partial_q
-                \mathcal{K}+ \frac{1}{2} \text{Tr} D^2 \mathcal{K}+
-                \frac{1}{2}
-\|D\mathcal{K}\|^2 = 0\)</font>.
-              </p>
-            </li>
-          </ul></i>
-        </div>
-      </div>
       <p>
-        Proof: Bayes with likelihood <font color="#620000">\(\exp \{\langle P_q,
-        \varphi \rangle - \frac{q - q_0}{2} \| \varphi \|^2 \}\)</font>;
-        L&eacute;vy's characterisation; It&ocirc; on <font color="#620000">\(D\mathcal{K}_q
-        (P_q)\)</font>.
+        With <font color="#620000">\(\mathcal{K}_q (p) = \text{log} \int
+        \mathrm{e}^{\langle p, \varphi \rangle -
+\frac{q - q_0}{2} \| \varphi
+        \|^2} \nu_N (\hspace{0.17em} \mathrm{d} \varphi)\)</font>:
       </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        <font color="#620000">\(\Phi_q = C_q P_q\)</font> is the Polchinski field
-      </div>
-      <p>
-
-      </p>
-      <div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Proposition.
-          </strong></font></font><i><font color="#620000">\(\Phi_q := C_q P_q\)</font>
-          and <font color="#620000">\(F_q := K_q  (\psi_q - \Phi_q)\)</font>
-          satisfy</i>
-        </p>
-        <p>
-          <i><center>
-            \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
-            \mathrm{d} q + C_q
-\hspace{0.17em} \mathrm{d} W_q, \qquad F_q
-            =\mathbb{E}_q  [- DV_N
-(\Phi_{\infty})], \qquad \psi_q = \Phi_q +
-            C_q F_q,\)
-          </center></i>
-        </p>
-        <p style="margin-bottom: 1em">
-          <i>i.e. the FBSDE of Lecture 4 for the mass profile. <font color="#620000">\(\text{Cov}_q\)</font>
-          is the response <font color="#620000">\(H^{\text{ex}}_q
-          (\psi_q)\)</font>.</i>
-        </p>
-      </div>
       <ul>
         <li>
           <p>
-            Drift: <font color="#620000">\(\mathrm{d} (C_q P_q) = - C_q^2 P_q
-            \mathrm{d} q + C_q  (\psi_q \mathrm{d} q +
-\mathrm{d}
-            W_q)\)</font>.
+            forecast <font color="#620000">\(\psi_q = D\mathcal{K}_q (P_q)\)</font>,
+            covariance <font color="#620000">\(\text{Cov}_q = D^2 \mathcal{K}_q
+            (P_q)\)</font>;
           </p>
         </li>
         <li>
           <p>
-            Force: posterior integration by parts, <font color="#620000">\(p = K_q
-            D\mathcal{K}_q (p) +\mathbb{E}_{\text{post}}  [DV_N]\)</font>
-            (posterior with source <font color="#620000">\(p\)</font>), at <font color="#620000">\(p
-            = K_q \Phi_q\)</font>.
+            innovation <font color="#620000">\(W_q = P_q - \int_{q_0}^q \psi_s
+            \hspace{0.17em} \mathrm{d} s\)</font>, <font color="#620000">\(\hspace{0.17em}
+            \mathrm{d} \psi_q = \text{Cov}_q \hspace{0.17em}
+            \mathrm{d}
+W_q\)</font>;
           </p>
         </li>
         <li>
           <p>
-            Same law as Lecture 4: both are the Gaussian law tilted by <font
-            color="#620000">\(\mathrm{e}^{- V_N} /\mathcal{Z}_N\)</font> of the
-            terminal field; <font color="#620000">\(\sigma (P) = \sigma
-            (\Phi)\)</font>.
+            field <font color="#620000">\(\Phi_q = C_q P_q\)</font>, force <font color="#620000">\(F_q
+            = K_q (\psi_q - \Phi_q) =\mathbb{E}_q [- DV_N
+            (\Phi_{\infty})]\)</font>: this is the FBSDE of Lecture 4.
           </p>
         </li>
       </ul>
-      <p>
-        <strong>At fixed <font color="#620000">\(N\)</font> the FBSDE is a
-        theorem</strong>, and <font color="#620000">\(W\)</font> is an innovation.
-      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -427,170 +357,101 @@ V_N (\varphi)} \mu^C
         = 2\)</font>, <font color="#620000">\(q_0 = 100\)</font> (<font color="#620000">\(g_{q_0}
         = 0.6\)</font>). <font color="#620000">\(\Phi_q = P_q / q\)</font>, the
         posterior mean <font color="#620000">\(\psi_q\)</font>, and the approximate
-        forecast <font color="#620000">\(Y_q\)</font> from <font color="#620000">\(\bar{\Gamma}
-        = \frac{\lambda}{4} y^4\)</font>. All converge to the hidden <font
-        color="#620000">\(\Phi_{\infty}\)</font>, and <font color="#620000">\(qZ_q \to
-        0\)</font>.
+        forecast <font color="#620000">\(Y_q\)</font> from <font color="#620000">\(\bar{\mathcal{F}}
+        = \lambda y^3\)</font>. All converge to the hidden <font color="#620000">\(\Phi_{\infty}\)</font>,
+        and <font color="#620000">\(qZ_q \to 0\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Dictionary
+        The exact force in the forecast coordinate
       </div>
       <p>
 
       </p>
       <p>
-        <div style="display: inline">
-
-        </div>
-        <table style="display: inline-table; vertical-align: middle">
-          <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lecture 4</td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">filtering at resolution <font color="#620000">\(q\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">field <font color="#620000">\(\Phi_q\)</font></td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(C_q P_q\)</font>: posterior mean under
-            the Gaussian prior <font color="#620000">\(\mu^C\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">forecast <font color="#620000">\(\psi_q\)</font></td>
-            <td style="text-align: center; vertical-align: middle">posterior mean <font color="#620000">\(\mathbb{E}_q
-            \Phi_{\infty}\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">response <font color="#620000">\(H^{\text{ex}}_q (\psi_q) =
-            \text{Cov}_q\)</font></td>
-            <td style="text-align: center; vertical-align: middle">posterior covariance</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">force <font color="#620000">\(F_q = K_q  (\psi_q -
-            \Phi_q)\)</font></td>
-            <td style="text-align: center; vertical-align: middle">posterior mean of <font color="#620000">\(- DV_N
-            (\Phi_{\infty})\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">Brownian motion <font color="#620000">\(W\)</font></td>
-            <td style="text-align: center; vertical-align: middle">innovation <font color="#620000">\(P_q - \int \psi\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">unresolved covariance <font color="#620000">\(S_q =
-            C_q\)</font></td>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">inverse of prior <font color="#620000">\(+\)</font> observation
-            precision</td>
-          </tr></tbody>
-        </table>
+        Since <font color="#620000">\(\text{Cov}_q > 0\)</font>, <font color="#620000">\(p
+        \mapsto D\mathcal{K}_q (p)\)</font> is invertible: define <font color="#620000">\(\mathcal{F}_q\)</font>
+        by <font color="#620000">\(K_q \Phi_q = K_q \psi_q +\mathcal{F}_q
+        (\psi_q)\)</font>, and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q +
+        D\mathcal{F}_q (y))^{- 1}\)</font>.
       </p>
       <p>
-        The lattice is the only UV cutoff: terminal resolution <font color="#620000">\(q
-        = \infty\)</font>, and <font color="#620000">\(\Phi_q \to
-        \Phi_{\infty}\)</font>.
+        It is the <font color="#620000">\(\mathcal{F}\)</font> of Lecture 4 (<font
+        color="#620000">\(x = \psi + S\mathcal{F}(\psi)\)</font>), and <font color="#620000">\(F_q
+        = -\mathcal{F}_q (\psi_q)\)</font>.
       </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The Wetterich formulation
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <font color="#620000">\(\Psi_q =\mathcal{K}_q^{\ast}\)</font>, <span style="margin-left: 1em"></span><font
-        color="#620000">\(\Gamma_q (y) = \Psi_q (y) - \frac{1}{2}  \langle y, K_q y
-        \rangle\)</font>, <span style="margin-left: 1em"></span><font color="#620000">\(H^{\text{ex}}_q
-        (y) = (K_q + D^2 \Gamma_q (y))^{- 1}\)</font>.
-      </p>
-      <ul>
-        <li>
-          <p>
-            Up to a function of <font color="#620000">\(q\)</font>, <font color="#620000">\(\Gamma_q\)</font>
-            is the <font color="#620000">\(\Gamma_t\)</font> of Lecture 4; <font color="#620000">\(\Gamma_q
-            + \frac{1}{2}  \langle y, K_{q_0} y \rangle\)</font> is the
-            effective average action with regulator <font color="#620000">\(\mathcal{R}_q
-            = q - q_0\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Coordinates: <font color="#620000">\(\Phi_q = \psi_q + C_q D \Gamma_q
-            (\psi_q)\)</font> (Lecture 4, <font color="#620000">\(x = \psi +
-            S\mathcal{F} (\psi)\)</font>).
-          </p>
-        </li>
-      </ul>
-      <div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Proposition.
-          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Wetterich
-          with a mass regulator) </strong></font></font></class></i>
+      <div class="slide-block">
+        <p>
+          <strong>The force equation with a mass regulator</strong>
         </p>
-        <p style="margin-bottom: 1em">
-          <i><center>
-            \(\displaystyle \partial_q \Gamma_q (y) = \tfrac{1}{2} \text{Tr}
-            H^{\text{ex}}_q (y), \qquad
-\text{Cov}_q = H^{\text{ex}}_q
-            (\psi_q) .\)
-          </center></i>
-        </p>
+        <center>
+          \(\displaystyle \partial_q \mathcal{F}_q + \frac{1}{2}
+          \text{Ctr}_{(H^{\text{ex}}_q)^2} D^2
+\mathcal{F}_q = 0, \quad
+          \text{Cov}_q = H^{\text{ex}}_q (\psi_q) .\)
+        </center>
       </div>
       <p>
-        An <strong>identity about the unknown <font color="#620000">\(\nu_N\)</font></strong>,
-        not a construction. Strategy: an approximate <font color="#620000">\(\bar{\Gamma}\)</font>
+        It&ocirc; on <font color="#620000">\(P = K \psi +\mathcal{F}(\psi)\)</font>.
+        Its integrated form is Wetterich's equation, which we do not need. An
+        identity about the unknown <font color="#620000">\(\nu_N\)</font>, not a
+        construction. Strategy: an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
         gives approximate forecast coordinates; the error should be driven by
-        the failure of <font color="#620000">\(\bar{\Gamma}\)</font> to solve
-        Wetterich.
+        the failure of <font color="#620000">\(\bar{\mathcal{F}}\)</font> to solve this
+        equation.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Approximate forecast and error
       </div>
-      <font style="font-size: 90.0%"><p>
+      <p>
 
-      </p><p>
-        <font color="#620000">\(\bar{\Gamma}_q\)</font> even, <font color="#620000">\(\bar{\Psi}_q
-        = \frac{1}{2}  \langle y, K_q y \rangle + \bar{\Gamma}_q\)</font>
-        uniformly convex, <font color="#620000">\(\bar{\mathcal{K}}_q =
-        \bar{\Psi}_q^{\ast}\)</font>.
-      </p><center>
-        \(\displaystyle H_q (y) = (K_q + D^2  \bar{\Gamma}_q (y))^{- 1}, \quad
-        e_q (y) = \partial_q
-\bar{\Gamma}_q (y) - \tfrac{1}{2} \text{Tr} [H_q
-        (y) - H_q (0)], \quad b_q = -
-H_q De_q .\)
-      </center><center>
-        \(\displaystyle Y_q = D \bar{\mathcal{K}}_q (P_q) (\text{approximate
-        forecast}), \qquad Z_q =
-\psi_q - Y_q (\text{error}), \qquad \Xi_q =
-        \text{Cov}_q - H_q (Y_q) .\)
-      </center><div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Theorem.
-          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(exact,
-          at fixed <font color="#620000">\(N\)</font>)
-          </strong></font></font></class></i>
+      </p>
+      <p>
+        <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> odd, <font color="#620000">\(D
+        \bar{\mathcal{F}}_q\)</font> symmetric, <font color="#620000">\(K_q + D
+        \bar{\mathcal{F}}_q \geqslant \bar{c}_q\)</font>.
+      </p>
+      <center>
+        \(\displaystyle H_q = (K_q + D \bar{\mathcal{F}}_q)^{- 1}, \quad
+        \mathcal{D}_q = \partial_q
+\bar{\mathcal{F}}_q + \frac{1}{2}
+        \text{Ctr}_{H_q^2} D^2 \bar{\mathcal{F}}_q,
+\quad b_q = - H_q
+        \mathcal{D}_q .\)
+      </center>
+      <center>
+        \(\displaystyle K_q Y_q + \bar{\mathcal{F}}_q (Y_q) = P_q, \quad Z_q =
+        \psi_q - Y_q, \quad
+\Xi_q = \text{Cov}_q - H_q (Y_q) .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          <strong>Exact, at fixed</strong> <font color="#620000">\(N\)</font>
         </p>
-        <p style="margin-bottom: 1em">
-          <i><center>
-            \(\displaystyle \begin{aligned}
-  \mathrm{d} Y_q & = [b_q (Y_q) +
-            H_q (Y_q) Z_q] \mathrm{d} q + H_q (Y_q)
-  \hspace{0.17em}
-            \mathrm{d} W_q,\\
-  \mathrm{d} Z_q & = - [b_q (Y_q) + H_q (Y_q)
-            Z_q] \mathrm{d} q + \Xi_q
-  \hspace{0.17em} \mathrm{d}
-            W_q,
-\end{aligned}
-
-\qquad Y_{q_0} = Z_{q_0} = 0.\)
-          </center></i>
-        </p>
-      </div><p>
-        Proof: <font color="#620000">\(\partial_q  \bar{\mathcal{K}} + \frac{1}{2}
-        \text{Tr} D^2  \bar{\mathcal{K}} +
-\frac{1}{2}  \|D \bar{\mathcal{K}}
-        \|^2 = - e \circ D \bar{\mathcal{K}} +
-\frac{1}{2} \text{Tr} H
-        (0)\)</font>; differentiate in <font color="#620000">\(p\)</font>, It&ocirc;
-        along <font color="#620000">\(\mathrm{d} P = \psi \hspace{0.17em} \mathrm{d} q
-        + \mathrm{d} W\)</font>.
-      </p></font>
+        <center>
+          \(\displaystyle \hspace{0.17em} \mathrm{d} Y_q = [b_q (Y_q) + H_q
+          (Y_q) Z_q] \hspace{0.17em}
+\mathrm{d} q + H_q (Y_q) \hspace{0.17em}
+          \mathrm{d} W_q,\)
+        </center>
+        <center>
+          \(\displaystyle \hspace{0.17em} \mathrm{d} Z_q = - [b_q (Y_q) + H_q
+          (Y_q) Z_q] \hspace{0.17em}
+\mathrm{d} q + \Xi_q \hspace{0.17em}
+          \mathrm{d} W_q, \quad Y_{q_0} = Z_{q_0} =
+0.\)
+        </center>
+      </div>
+      <p>
+        Proof: It&ocirc; on the coordinate equation, with <font color="#620000">\(\hspace{0.17em}
+        \mathrm{d} P = \psi \hspace{0.17em} \mathrm{d} q +
+\hspace{0.17em}
+        \mathrm{d} W\)</font>: the martingale part gives <font color="#620000">\(H\)</font>,
+        the drift gives <font color="#620000">\(HZ + b\)</font>.
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -604,22 +465,22 @@ H_q De_q .\)
           <p>
             <font color="#620000">\(Y\)</font>: forward and explicit once <font color="#620000">\(Z\)</font>
             is known; coefficients <font color="#620000">\(b, H\)</font> built from
-            <font color="#620000">\(\bar{\Gamma}\)</font>.
+            <font color="#620000">\(\bar{\mathcal{F}}\)</font>.
           </p>
         </li>
         <li>
           <p>
             <font color="#620000">\(Z\)</font>: backward. The terminal condition <font
             color="#620000">\(qZ_q \to 0\)</font> is <strong>proved</strong> at fixed
-            <font color="#620000">\(N\)</font> (Lecture 6), because <font color="#620000">\(\bar{\Gamma}_q
-            \to\)</font> bare action.
+            <font color="#620000">\(N\)</font> (Lecture 6), because <font color="#620000">\(\bar{\mathcal{F}}_q
+            \to\)</font> bare force.
           </p>
         </li>
         <li>
           <p>
             The only source of <font color="#620000">\(Z\)</font> is the drift <font
-            color="#620000">\(b\)</font>, the gradient of the defect, transported by
-            <font color="#620000">\(\exp \int H\)</font>.
+            color="#620000">\(b\)</font>, the force defect, transported by <font color="#620000">\(\exp
+            \int H\)</font>.
           </p>
         </li>
       </ul>
@@ -628,16 +489,16 @@ H_q De_q .\)
           <strong>UV stability</strong>
         </p>
         <p>
-          The explicit action <font color="#620000">\(\bar{\Gamma}\)</font> computes
-          the forecast up to an error <font color="#620000">\(Z\)</font> which is small
-          uniformly in <font color="#620000">\(N\)</font>.
+          The explicit force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
+          computes the forecast up to an error <font color="#620000">\(Z\)</font> which
+          is small uniformly in <font color="#620000">\(N\)</font>.
         </p>
       </div>
       <p>
         Needed: (i) a defect integrable against the backward propagator
         (<strong>renormalisation</strong>); (ii) global coercivity of <font
-        color="#620000">\(\bar{\Gamma}\)</font> (<strong>large fields</strong>); (iii)
-        a priori estimates (Lecture 6).
+        color="#620000">\(\bar{\mathcal{F}}\)</font> (<strong>large fields</strong>);
+        (iii) a priori estimates (Lecture 6).
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -744,43 +605,40 @@ H_q De_q .\)
 
       </p>
       <p>
-        <b>Seed</b> (one loop, Lecture 4, Ex. 8.7(b)): replace <font color="#620000">\(D^2
-        \Gamma\)</font> by <font color="#620000">\(D^2 U = \gamma y^2\)</font> and
-        integrate from <font color="#620000">\(q = \infty\)</font>,
+        <strong>Seed</strong> (one loop): replace <font color="#620000">\(D\mathcal{F}\)</font>
+        by <font color="#620000">\(\gamma y^2\)</font> and integrate from <font color="#620000">\(q
+        = \infty\)</font>, with the linear part subtracted,
       </p>
       <center>
-        \(\displaystyle \mathcal{L}_q (y) = \tfrac{1}{2} \text{Tr} [\log (I +
-        C_q^{1 / 2} \gamma y^2
-C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
-        2}] = \sum_{j \geqslant 2}
-\frac{(- 1)^{j + 1}}{2 j} \text{Tr} (C_q
-        \gamma y^2)^j .\)
+        \(\displaystyle \ell_q (y) (x) = \gamma y (x) [G_q (y) (x, x) - C_q
+        (x, x)], \quad G_q (y) =
+(K_q + \gamma y^2)^{- 1} .\)
       </center>
       <p>
-        Quartic term <font color="#620000">\(=\)</font> bubble, <font color="#620000">\(s (D^4
-        \mathcal{L}_q (0)) = 6 \gamma^2 a_2 (q)\)</font>.
+        Leading term = bubble, <font color="#620000">\(s (D^3 \ell_q (0)) = 6 \gamma^2
+        a_2 (q)\)</font>.
       </p>
       <p>
-        <b>Corrections.</b> <font color="#620000">\(\Pi\)</font> removes the constant
-        and quadratic jets, <font color="#620000">\(M_q = \mu_q + \Theta_q\)</font> a
-        quadratic path,
+        <strong>Corrections.</strong> <font color="#620000">\(\Pi\)</font> removes the
+        linear jet, <font color="#620000">\(M_q = \mu_q + \Theta_q\)</font> a linear
+        path, <font color="#620000">\(U\prime = \lambda y^3\)</font>,
       </p>
       <center>
-        \(\displaystyle \mathcal{T}_q [M, h] = \tfrac{1}{2} \text{Tr} [(K_q +
-        M_q + D^2 (U + h))^{- 1}
-- (K_q + M_q)^{- 1}],\)
+        \(\displaystyle \mathcal{T}_q [M, \ell] = - \frac{1}{2}
+        \text{Ctr}_{R^2} D^2 (U\prime + \ell),
+\quad R = (K_q + M_q + D
+        (U\prime + \ell))^{- 1},\)
       </center>
       <center>
-        \(\displaystyle h^{[0]} =\mathcal{L}, \qquad h^{[j + 1]}_q
-        =\mathcal{L}_q - \int_q^{\infty}
-\Pi (\mathcal{T}_s [M, h^{[j]}] -
-        \partial_s \mathcal{L}_s) \mathrm{d} s,
-\quad j = 0, 1,\)
+        \(\displaystyle \ell^{[0]} = \ell, \quad \ell^{[j + 1]}_q = \ell_q -
+        \int_q^{\infty} \Pi
+(\mathcal{T}_s [M, \ell^{[j]}] - \partial_s
+        \ell_s) \hspace{0.17em} \mathrm{d}
+s, \quad j = 0, 1,\)
       </center>
       <center>
-        \(\displaystyle \Gamma^{\text{o}}_q = U + \tfrac{1}{2} \langle y, M_q
-        y \rangle + h^{[2]}_q
-\quad \text{on the ball} .\)
+        \(\displaystyle \mathcal{F}^o_q = U\prime + M_q y + \ell^{[2]}_q \quad
+        \text{on the ball.}\)
       </center>
     </div>
     <div class="toggle" style="display: none">
@@ -791,14 +649,14 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
 
       </p>
       <center>
-        <img src="cqft_slides_L5-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.87507878787879em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+        <img src="cqft_slides_L5-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.40210909090909em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
       </center>
       <center>
         <img src="cqft_slides_L5-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.6225696969697em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
       </center>
       <p>
         <font style="font-size: 84.1%"><font color="#707070">Each step inserts the previous correction
-        into the trace: one more loop, one more <font color="#620000">\(g_q\)</font>.
+        into the loop: one more loop, one more <font color="#620000">\(g_q\)</font>.
         Two steps give a defect of order <font color="#620000">\(g_q^3\)</font>.</font></font>
       </p>
     </div>
@@ -810,14 +668,14 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
 
       </p>
       <p>
-        The quadratic jet is not iterated: it is solved exactly by <font
-        color="#620000">\(M\)</font>,
+        The linear jet is not iterated: it is solved exactly by <font color="#620000">\(M\)</font>,
       </p>
       <center>
         \(\displaystyle \partial_q M_q = - \gamma \text{Tr} (R_{0, q}^2) I -
         \frac{1}{2}
-\text{Ctr}_{R_{0, q}^2} D^4 h^{[2]}_q (0), \quad R_{0, q}
-        = (K_q + M_q)^{- 1},\)
+\text{Ctr}_{R_{0, q}^2} D^3 \ell^{[2]}_q (0), \quad R_{0,
+        q} = (K_q + M_q)^{-
+1},\)
       </center>
       <p>
         with <font color="#620000">\(\mu_{q_{\ast}} = b\)</font>, <font color="#620000">\(|b|
@@ -832,10 +690,12 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         uniformly in</strong> <font color="#620000">\(N\)</font><strong>.</strong>
         Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C \gamma
         q\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C \gamma^2 q^{- 1
-        / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k (h^{[j]} -
-        h^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2 - k}\)</font>; and the
-        defect of <font color="#620000">\(\Gamma^{\text{o}}\)</font>: <font color="#620000">\(S_4
-        (e^{\text{o}}_q) \leqslant C \gamma^5 q^{- 3}\)</font>.
+        / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k (\ell^{[j]} -
+        \ell^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2
+- k}\)</font>; and
+        the defect of <font color="#620000">\(\mathcal{F}^{\text{o}}\)</font>: <font
+        color="#620000">\(S_4 (\mathcal{D}^{\text{o}}_q) \leqslant C \gamma^5 q^{-
+        3}\)</font>.
       </p>
       <p>
         <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r - 3
@@ -868,9 +728,9 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         </li>
         <li>
           <p>
-            <strong>Sunset</strong>: contracting the bubble in <font color="#620000">\(D^4
-            h (0)\)</font> with <font color="#620000">\(R_0^2\)</font> and integrating
-            gives the two-loop self-energy,
+            <strong>Sunset</strong>: contracting the bubble in <font color="#620000">\(D^3
+            \ell (0)\)</font> with <font color="#620000">\(R_0^2\)</font> and
+            integrating gives the two-loop self-energy,
           </p>
           <center>
             \(\displaystyle 6 \lambda^2  \int C^3 \approx \frac{3 \lambda^2}{8
@@ -883,7 +743,7 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       <p>
         Power counting: nothing else. In the flow: the integrals from <font
         color="#620000">\(q = \infty\)</font> of all vertices with <font color="#620000">\(k
-        \geqslant 4\)</font> legs converge; only the quadratic jet needs a
+        \geqslant 4\)</font> legs converge; only the linear jet needs a
         boundary condition.
       </p>
       <p>
@@ -904,8 +764,8 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       </center>
       <p>
         <font style="font-size: 84.1%"><font color="#707070">The cross is <font color="#620000">\(R_{0,
-        q}^2\)</font>. The bubble in <font color="#620000">\(D^4 h^{[2]} (0)\)</font>
-        produces the sunset.</font></font>
+        q}^2\)</font>. The bubble in <font color="#620000">\(D^3 \ell^{[2]}
+        (0)\)</font> produces the sunset.</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -919,15 +779,16 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         Backward propagator <font color="#620000">\(\approx s / q\)</font>, so <font
         color="#620000">\(Z_q \approx \int_q^{\infty} \frac{s}{q} b_s \mathrm{d}
         s\)</font>, and on the ball <font color="#620000">\(|b_s | \lesssim s^{- 1}
-        \textsf{S}_4 (e_s) r_s^3\)</font>. After <font color="#620000">\(n\)</font>
-        steps, <font color="#620000">\(\textsf{S}_4 (e_s) \lesssim g_s^{n + 1} s^{1 /
-        2} r_s^{- 4}\)</font>:
+        \textsf{S}_4 (\mathcal{D}_s) r_s^3\)</font>. After <font color="#620000">\(n\)</font>
+        steps, <font color="#620000">\(\textsf{S}_4 (\mathcal{D}_s) \lesssim g_s^{n +
+        1} s^{1 / 2} r_s^{- 4}\)</font>:
       </p>
       <p>
         <table style="display: inline-table; vertical-align: middle">
           <tbody><tr>
             <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">steps <font color="#620000">\(n\)</font></td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\textsf{S}_4 (e_s)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\textsf{S}_4
+            (\mathcal{D}_s)\)</font></td>
             <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(|b_s |\)</font></td>
             <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\int_q^{\infty} \frac{s}{q} |b_s |
             \mathrm{d} s\)</font></td>
@@ -989,37 +850,35 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
 
       </p>
       <p>
-        All bounds hold on <font color="#620000">\(\mathcal{B}_q = \{\|y\|_{\infty} < 2
-        r_q \}\)</font> only. The free field exceeds <font color="#620000">\(r_q\)</font>
-        with small, nonzero probability, and nothing a priori controls the
-        interacting forecast. We need <font color="#620000">\(\bar{\Gamma}_q\)</font>
-        <strong>defined and uniformly convex for all fields</strong>.
+        All bounds hold on <font color="#620000">\(\mathcal{B}_q\)</font> only. The
+        free field exceeds <font color="#620000">\(r_q\)</font> with small, nonzero
+        probability, and nothing a priori controls the interacting forecast.
+        We need <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> defined and
+        uniformly coercive for all fields.
       </p>
       <div class="slide-block">
         <p>
           <strong>Scalar model</strong>
         </p>
         <p>
-          <font color="#620000">\(\mathcal{L}_q (y) = \frac{1}{2}  [\log (1 + \gamma
-          y^2 / q) - \gamma y^2 / q]\)</font>: power series of radius exactly
-          <font color="#620000">\(r_q\)</font> (singularities at <font color="#620000">\(\pm
-          \mathrm{i} r_q\)</font>). Truncations at even <font color="#620000">\(j
-          \geqslant 4\)</font> are unbounded below. The exact function is
-          harmless, <font color="#620000">\(|\mathcal{L}_q'' | \leqslant \frac{9}{8}
+          <font color="#620000">\(\ell_q (y) = \gamma y [(q + \gamma y^2)^{- 1} - q^{-
+          1}]\)</font>: power series of radius exactly <font color="#620000">\(r_q\)</font>
+          (singularities at <font color="#620000">\(\pm \mathrm{i} r_q\)</font>). Half
+          of the truncations destroy monotonicity. The exact function is
+          harmless, <font color="#620000">\(| \ell_q \prime | \leqslant \frac{9}{8}
           \gamma / q\)</font>.
         </p>
       </div>
       <p>
         Perturbative control for <font color="#620000">\(|y| \lesssim r_q\)</font>;
         outside, a non-perturbative replacement that keeps the structure the
-        estimates use: <strong>coercivity</strong>, carried by the bare
-        quartic.
+        estimates use: coercivity, carried by the bare cube.
       </p>
       <p>
         One site: <font color="#620000">\(qy + \lambda y^3 = p\)</font>, noise
         coefficient <font color="#620000">\(H_q (y) = (q + \gamma y^2)^{- 1} \leqslant
-        q^{- 1} \wedge (\gamma y^2)^{- 1}\)</font>. Large fields are
-        <strong>more elliptic and less noisy</strong>.
+        q^{- 1} \wedge (\gamma y^2)^{- 1}\)</font>. Large fields are more
+        elliptic and less noisy.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1032,21 +891,22 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       <p>
         <font color="#620000">\(\tau\)</font> smooth odd, <font color="#620000">\(\tau (u) =
         u\)</font> on <font color="#620000">\([- 1, 1]\)</font>, constant outside <font
-        color="#620000">\([- 2, 2]\)</font>, <font color="#620000">\(0 \leqslant \tau' \leqslant
-        1\)</font>;
+        color="#620000">\([- 2, 2]\)</font>, <font color="#620000">\(0 \leqslant \tau \prime
+        \leqslant 1\)</font>;
       </p>
       <center>
-        \(\displaystyle \kappa_q (y) = r_q \tau (y / r_q), \qquad
-        \bar{\Gamma}_q = U + \tfrac{1}{2}
-\langle y, M_q y \rangle +
-        \tilde{h}_q, \qquad \tilde{h}_q = h^{[2]}_q \circ
-\kappa_q .\)
+        \(\displaystyle \kappa_q (y) = r_q \tau (y / r_q), \quad
+        \tilde{\ell}_q = D \kappa_q \cdot
+\ell^{[2]}_q \circ \kappa_q, \quad
+        \bar{\mathcal{F}}_q = U\prime + M_q y +
+\tilde{\ell}_q .\)
       </center>
       <p>
-        The quartic and quadratic parts are <strong>not</strong> clipped.
-        Globally: <font color="#620000">\(s (D^j  \tilde{h}_q) \leqslant Cg_q qr_q^{2 -
-        j}\)</font> (<font color="#620000">\(j = 2, 3, 4\)</font>), <font color="#620000">\(s
-        (D^2 \partial_q  \tilde{h}_q) \leqslant Cg_q\)</font>.
+        The cubic and linear parts are not clipped, and <font color="#620000">\(D
+        \kappa_q\)</font> keeps the force a gradient. Globally: <font color="#620000">\(s
+        (D^{j - 1} \tilde{\ell}_q) \leqslant Cg_q qr_q^{2 - j}\)</font> (<font
+        color="#620000">\(j = 2, 3, 4\)</font>), <font color="#620000">\(s (D \partial_q
+        \tilde{\ell}_q) \leqslant Cg_q\)</font>.
       </p>
       <div class="slide-block">
         <p>
@@ -1059,12 +919,12 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         </p>
         <center>
           \(\displaystyle \|H_q (y)\|_{p \to p} \leqslant \frac{1 + C (g_q +
-          g_q^2)}{q}, \qquad
+          g_q^2)}{q}, \quad
 \text{diag} H_q (y)^2 \leqslant Ca_2 (q) .\)
         </center>
       </div>
       <p>
-        Neumann series for <font color="#620000">\(H = (I + G (M + D^2  \tilde{h}))^{-
+        Neumann series for <font color="#620000">\(H = (I + G (M + D \tilde{\ell}))^{-
         1} G\)</font>, <font color="#620000">\(G = (K_q + \gamma y^2)^{- 1} \leqslant
         C_q\)</font>.
       </p>
@@ -1077,9 +937,9 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
 
       </p><p>
         <font color="#620000">\(b = b^{\text{b}} + b^{\text{l}}\)</font>, <font color="#620000">\(b^{\text{b}}
-        = - H \hspace{0.17em} D \kappa \hspace{0.17em} De^{\text{o}}
-(\kappa
-        y)\)</font>, <font color="#620000">\(t_q (y) = y \mathbb{1}_{|y| >
+        = - H \hspace{0.17em} D \kappa \hspace{0.17em}
+\mathcal{D}^{\text{o}}
+        (\kappa y)\)</font>, <font color="#620000">\(t_q (y) = y \mathbb{1}_{|y| >
         r_q}\)</font>.
       </p><div class="slide-box">
         <p style="margin-top: 1em">
@@ -1107,11 +967,11 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       </div><p>
         Sources of <font color="#620000">\(b^{\text{l}}\)</font> (four groups): the
         mass term <font color="#620000">\(M' y - JM' \kappa y\)</font> (<font color="#620000">\(J
-        = D \kappa\)</font>, <font color="#620000">\(M' = \partial_q M\)</font>;
-        quadratic part unclipped, flow computed at <font color="#620000">\(\kappa
-        y\)</font>); the motion of the clip; quartic vertex at <font color="#620000">\(y\)</font>
-        vs correction at <font color="#620000">\(\kappa y\)</font>; chain-rule terms
-        with <font color="#620000">\(\kappa'', \kappa'''\)</font>. All vanish if <font
+        = D \kappa\)</font>, <font color="#620000">\(M' = \partial_q M\)</font>; linear
+        part unclipped, flow computed at <font color="#620000">\(\kappa y\)</font>);
+        the motion of the clip; cubic vertex at <font color="#620000">\(y\)</font> vs
+        correction at <font color="#620000">\(\kappa y\)</font>; chain-rule terms with
+        <font color="#620000">\(\kappa'', \kappa'''\)</font>. All vanish if <font
         color="#620000">\(\|y\|_{\infty} \leqslant r_q\)</font>.
       </p><div class="slide-block">
         <p>
@@ -1139,10 +999,10 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       <center>
         \(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q (Y_q)) +
         \frac{\gamma}{3} Y_q^3, \qquad
-\varrho_q (y) = C_q  (M_q y + D
-        \tilde{h}_q (y)), \quad \|D \varrho_q \|_{p
-\to p} \leqslant C (g_q +
-        g_q^2) .\)
+\varrho_q (y) = C_q  (M_q y +
+        \tilde{\ell}_q (y)), \quad \|D \varrho_q \|_{p
+\to p} \leqslant C (g_q
+        + g_q^2) .\)
       </center>
       <p>
         <strong>Up to a small Lipschitz perturbation, the forecast solves the
@@ -1157,7 +1017,7 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         <li>
           <p>
             <font color="#620000">\(\mu_N\)</font>, <font color="#620000">\(M_q\)</font> and a
-            globally convex <font color="#620000">\(\bar{\Gamma}_q\)</font>, all
+            globally coercive <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>, all
             deterministic;
           </p>
         </li>
@@ -1181,39 +1041,37 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The action below the auxiliary scale
+        The force below the auxiliary scale
       </div>
       <p>
 
       </p>
       <p>
-        The expansion needs <font color="#620000">\(g_q\)</font> small, so <font color="#620000">\(\bar{\Gamma}_q\)</font>
+        The expansion needs <font color="#620000">\(g_q\)</font> small, so <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>
         is built for <font color="#620000">\(q \geqslant q_{\ast}\)</font>. Below <font
-        color="#620000">\(q_{\ast}\)</font> nothing needs constructing:
-        <strong>freeze</strong> it,
+        color="#620000">\(q_{\ast}\)</font> nothing needs constructing: freeze it,
       </p>
       <center>
-        \(\displaystyle \bar{\Gamma}_q (y) = \bar{\Gamma}_{q_{\ast}} (y) +
-        \frac{1}{2} (q_{\ast} - q)
-\|y\|_2^2 .\)
+        \(\displaystyle \bar{\mathcal{F}}_q (y) = \bar{\mathcal{F}}_{q_{\ast}}
+        (y) + (q_{\ast} - q) y.\)
       </center>
       <p>
-        Then <font color="#620000">\(K_q + D^2 \bar{\Gamma}_q = K_{q_{\ast}} + D^2
-        \bar{\Gamma}_{q_{\ast}}\)</font>: convexity is automatic, <font color="#620000">\(H_q
-        = H_{q_{\ast}}\)</font>, and <font color="#620000">\(y_q (x) = y_{q_{\ast}}
-        (C_{q_{\ast}} K_q x)\)</font>.
+        Then <font color="#620000">\(K_q + D \bar{\mathcal{F}}_q = K_{q_{\ast}} + D
+        \bar{\mathcal{F}}_{q_{\ast}}\)</font>: coercivity is automatic, <font
+        color="#620000">\(H_q = H_{q_{\ast}}\)</font>, and <font color="#620000">\(y_q (x) =
+        y_{q_{\ast}} (C_{q_{\ast}} K_q x)\)</font>.
       </p>
       <p>
-        The defect is explicit: <font color="#620000">\(e_s (y) = - \frac{1}{2}
-        \|y\|_2^2 - \frac{1}{2} \text{Tr} [H_{q_{\ast}} (y) -
-H_{q_{\ast}}
-        (0)]\)</font>, with <font color="#620000">\(|e_s (y) | \leqslant C
-        \|y\|_2^2\)</font>.
+        The defect is explicit: <font color="#620000">\(\mathcal{D}_s (y) = - y +
+        \frac{1}{2} \text{Ctr}_{H_{q_{\ast}}^2}
+        D^2
+\bar{\mathcal{F}}_{q_{\ast}} (y)\)</font>, with <font color="#620000">\(\|\mathcal{D}_s
+        (y)\|_p \leqslant C \|y\|_p\)</font>.
       </p>
       <p>
         So the system holds on <font color="#620000">\([q_0, \infty)\)</font> with
-        <font color="#620000">\(Y_{q_0} = 0\)</font>: <strong>the initial value is
-        deterministic</strong>, with no large mass. <font color="#620000">\(q_{\ast}\)</font>
+        <font color="#620000">\(Y_{q_0} = 0\)</font>: the initial value is
+        deterministic, with no large mass. <font color="#620000">\(q_{\ast}\)</font>
         stays only in the proofs, where the expansion and the closure of the
         loop need <font color="#620000">\(g_q\)</font> small.
       </p>
@@ -1254,47 +1112,40 @@ H_{q_{\ast}}
 
       </p>
       <p>
-        <font color="#620000">\(U^c = U_1 + U_2 \circ \kappa_q\)</font>, with <font
-        color="#620000">\(U_2\)</font> the first tree. For <font color="#620000">\(|x| \geqslant
-        2 r_q\)</font>, the force defect is exactly
+        <font color="#620000">\(f^c = f_1 +\mathcal{C}f_2\)</font>, with <font color="#620000">\(f_1
+        = - \lambda (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font> the
+        first tree, <font color="#620000">\(\mathcal{C}f_2 = \kappa_q \prime \cdot f_2
+        \circ \kappa_q\)</font>. For <font color="#620000">\(|x| \geqslant 2
+        r_q\)</font>, the Burgers defect is exactly
       </p>
       <center>
-        \(\displaystyle E_q = S^2 U_1' U_1'' \approx 3 \lambda^2 S^2 x^5,\)
+        \(\displaystyle E_q = S^2 f_1 f_1 \prime \approx 3 \lambda^2 S^2
+        x^5,\)
       </center>
       <p>
         of size <font color="#620000">\((q / \lambda)^{1 / 2}\)</font> at the edge of
-        the clip: <strong>not integrable in</strong> <font color="#620000">\(q\)</font>.
+        the clip: not integrable in <font color="#620000">\(q\)</font>.
       </p>
       <center>
-        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [E_q + S^2 (f^c)'
-        R_q] \hspace{0.17em}
-\mathrm{d} q + \Xi_q \hspace{0.17em} \mathrm{d}
-        W_q, \quad \text{bracket}
-\approx 3 \lambda^2 S^2 x^5 - 3 \lambda S^2
-        x^2 R.\)
+        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [E_q + S^2
+        (f^c)\prime R_q] \hspace{0.17em}
+\mathrm{d} q + \Xi_q \hspace{0.17em}
+        \mathrm{d} W_q, \quad \text{bracket}
+\approx 3 \lambda^2 S^2 x^5 - 3
+        \lambda S^2 x^2 R.\)
       </center>
-      <ul>
-        <li>
-          <p>
-            The source and the dissipation <strong>cancel</strong> for the
-            true <font color="#620000">\(R \sim \lambda x^3\)</font>: separate
-            estimates give nothing.
-          </p>
-        </li>
-        <li>
-          <p>
-            Tails independent of <font color="#620000">\(R\)</font>: on one site from
-            the posterior moment, but not uniform on the lattice (negative
-            bare mass).
-          </p>
-        </li>
-        <li>
-          <p>
-            More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
-            r_q\)</font>.
-          </p>
-        </li>
-      </ul>
+      <p>
+        The source and the dissipation cancel for the true <font color="#620000">\(R
+        \sim \lambda x^3\)</font>: separate estimates give nothing.
+      </p>
+      <p>
+        Tails independent of <font color="#620000">\(R\)</font>: on one site from the
+        posterior moment, but not uniform on the lattice (negative bare mass).
+      </p>
+      <p>
+        More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
+        r_q\)</font>.
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1330,8 +1181,8 @@ C_{\ast} < \frac{1}{2} .\)
           <p>
             The defect is <font color="#620000">\(qb_q (y)\)</font>: bounded for all
             fields. The trees are in <font color="#620000">\(x \mapsto y\)</font>; the
-            quartic does not flow in <font color="#620000">\(y\)</font>, so only loops
-            are clipped.
+            cube does not flow in <font color="#620000">\(y\)</font>, so only loops are
+            clipped.
           </p>
         </li>
         <li>

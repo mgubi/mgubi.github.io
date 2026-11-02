@@ -570,6 +570,64 @@ w^4 + \frac{qr}{13} |w|^3 -
       </ul>
     </div>
     <div class="toggle" style="display: none">
+      <div class="slide-title">
+        <font color="#620000">\(L^{\infty}\)</font> coercivity
+      </div>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>For <font color="#620000">\(q_{\ast}\)</font>
+          large, at every <font color="#620000">\(N\)</font>, pathwise and for every
+          <font color="#620000">\(q\)</font>,</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \|Y_q \|_{\infty} \leqslant C \left[ \left(
+            \frac{q}{\gamma} \right)^{1 / 3}
+\| \zeta_q \|_{\infty}^{1 / 3}
+            +\| \zeta_q \|_{\infty} + q^{1 / 4} + q\|Z_q
+\|_2 \right] .\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>So <font color="#620000">\(t_q = 0\)</font> whenever <font color="#620000">\(\|
+          \zeta_q \|_{\infty} + q \|Z_q \|_2 \leqslant cr_q\)</font>.</i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            Remove the error: <font color="#620000">\(\mathcal{H}= (q - q_0) C_{q_0}
+            Z_q\)</font>, with <font color="#620000">\(\|\mathcal{H}\|_{\infty}
+            \lesssim q \|Z_q \|_2\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At a maximum of <font color="#620000">\(W = V -\mathcal{H}\)</font>, the
+            elliptic term has a sign: <font color="#620000">\(\frac{\gamma}{3} Y^3
+            \leqslant q \|d\|_{\infty}\)</font>. <strong>The cube alone gives
+            the bound.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Large fields occur only when the noise or the error is
+            large.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            With <font color="#620000">\(\| \zeta_q \|_{\infty} \lesssim q^{1 /
+            4}\)</font> and <font color="#620000">\(\|Z_q \|_2 \lesssim q^{- 5 /
+            4}\)</font> (Doob on <font color="#620000">\(\mathbb{E}_q
+            A^{\text{l}}\)</font>): <font color="#620000">\(\|Y_q \|_{\infty} \lesssim
+            q^{5 / 12} \ll r_q\)</font>, up to logarithms.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
 
       </p>
@@ -788,8 +846,8 @@ C_{\gamma} q^{- 5 / 2},\)
         <p>
           There: drift <font color="#620000">\(u = - 4 \lambda \dot{Q}^{1 / 2} : X^3 :
           + r\)</font> (<font color="#620000">\(\lambda \int : \varphi^4\)</font>: of
-          Lecture 4). Here: <font color="#620000">\(\bar{\Gamma}\)</font> does all such
-          changes of variables at once in the forecast coordinate; <font
+          Lecture 4). Here: <font color="#620000">\(\bar{\mathcal{F}}\)</font> does all
+          such changes of variables at once in the forecast coordinate; <font
           color="#620000">\(Z\)</font> plays the role of <font color="#620000">\(r\)</font>.
           Coercivity of the quartic: <strong>pathwise</strong> in the forward
           equation; the remainder: <strong>in expectation</strong> through the
@@ -881,8 +939,8 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
 
       </p>
       <p>
-        <font color="#620000">\(\bar{\Gamma}_q\)</font> was built to converge to the
-        bare action: <font color="#620000">\(\mu_q \to \mu_N\)</font>, <font color="#620000">\(\Theta_q
+        <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> was built to converge to
+        the bare force: <font color="#620000">\(\mu_q \to \mu_N\)</font>, <font color="#620000">\(\Theta_q
         \to 0\)</font>, corrections integrated from <font color="#620000">\(q =
         \infty\)</font>.
       </p>
@@ -915,9 +973,10 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
         </li>
         <li>
           <p>
-            <font color="#620000">\(\Phi_q = Y_q + C_q D \bar{\Gamma}_q (Y_q)\)</font>,
-            so <font color="#620000">\(Y_q - \Phi_q = O (q^{- 1})\)</font> and <font
-            color="#620000">\(D \bar{\Gamma}_q (Y_q) \to DV_N (\Phi_{\infty})\)</font>.
+            <font color="#620000">\(\Phi_q = Y_q + C_q  \bar{\mathcal{F}}_q
+            (Y_q)\)</font>, so <font color="#620000">\(Y_q - \Phi_q = O (q^{-
+            1})\)</font> and <font color="#620000">\(\bar{\mathcal{F}}_q (Y_q) \to DV_N
+            (\Phi_{\infty})\)</font>.
           </p>
         </li>
         <li>
@@ -925,8 +984,8 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
             Exact minus approximate coordinate identity:
           </p>
           <center>
-            \(\displaystyle qZ_q = qC_q  [D \bar{\Gamma}_q (Y_q) -\mathbb{E}_q
-            DV_N (\Phi_{\infty})] ;\)
+            \(\displaystyle qZ_q = qC_q  [\bar{\mathcal{F}}_q (Y_q)
+            -\mathbb{E}_q DV_N (\Phi_{\infty})] ;\)
           </center>
           <p>
             compare <font color="#620000">\(\mathbb{E}_q G\)</font> with the
@@ -985,8 +1044,9 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
         <li>
           <p>
             The force: <font color="#620000">\(F_q =\mathbb{E}_q  [- DV_N
-            (\Phi_{\infty})] = K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</font>, the
-            explicit force at the approximate forecast, corrected by <font
+            (\Phi_{\infty})] = K_q Z_q - \bar{\mathcal{F}}_q
+(Y_q)\)</font>,
+            the explicit force at the approximate forecast, corrected by <font
             color="#620000">\(K_q Z_q\)</font>.
           </p>
         </li>
@@ -1119,6 +1179,64 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Suprema by a maximum principle
+      </div>
+      <p>
+        Embed by cells <font color="#620000">\(\square_x\)</font>: <font color="#620000">\(\iota_N
+        : H_N \to H = L^2 (\mathbb{T}^3)\)</font> isometric, <font color="#620000">\(j_N
+        = \iota_N^{\ast}\)</font>.
+      </p>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(supremum
+          after closure) </strong></font></font></class>Let <font color="#620000">\(\mathcal{Y}=
+          \sup_q q^{- 5 / 12}  (\log (2 + q))^{- 1 / 6} \|Y_q
+          \|_{\infty}\)</font>, <font color="#620000">\(\mathcal{Z}= \sup_q q^{5 / 4}
+          \|Z_q \|_2\)</font>. Uniformly in <font color="#620000">\(N\)</font>,</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \mathcal{Y} \leqslant C_{\gamma}  (1
+            +\mathcal{N}+\mathcal{Z}), \qquad
+\|\mathcal{N}\|_{L^p} \leqslant
+            C \sqrt{p}, \qquad \|\mathcal{Z}^2 \|_{L^p}
+\leqslant C_{\gamma}
+            (1 + p^5) .\)
+          </center></i>
+        </p>
+      </div>
+      <ul>
+        <li>
+          <p>
+            From the <font color="#620000">\(L^{\infty}\)</font> coercivity above:
+            <strong>lattice maximum principle</strong> in the field equation,
+            no memory.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\mathcal{N}\)</font>: supremum of the noise (convex
+            domination, Dudley, Doob). <font color="#620000">\(\mathcal{Z}\)</font>:
+            Doob on <font color="#620000">\(\mathbb{E}_q A^{\text{l}}\)</font>, after
+            the boundary term is removed.
+          </p>
+        </li>
+        <li>
+          <p>
+            The exponent <font color="#620000">\(5 / 12 < \frac{1}{2}\)</font> keeps
+            <font color="#620000">\(Y\)</font> below the threshold.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Finite-resolution suprema have all moments, uniformly in <font color="#620000">\(N\)</font>.
+        At the terminal resolution there is no such bound: <font color="#620000">\(\Phi_{\infty}\)</font>
+        is a distribution.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         The terminal field
       </div>
       <p>
@@ -1237,11 +1355,18 @@ C_s Q^{- (s - \frac{1}{2})} .\)
 
       </p>
       <p>
-        <strong>Moreau transform.</strong> <font color="#620000">\(K_q y + D
-        \bar{\Gamma}_q (y) = K_q x\)</font>, <font color="#620000">\(\bar{V}_q (x) =
-        \bar{\Gamma}_q (y) + \frac{1}{2} \langle x - y, K_q (x -
-        y)
-\rangle\)</font>, and
+        <font color="#620000">\(K_q y + \bar{\mathcal{F}}_q (y) = K_q x\)</font>, <font
+        color="#620000">\(\bar{f}_q (x) = K_q (y - x)\)</font>: the explicit force
+        solves Burgers with a source <font color="#620000">\(- K_q H_q \mathcal{D}_q
+        \circ y\)</font>.
+      </p>
+      <p>
+        <strong>The first scalar.</strong> <font color="#620000">\(\mathcal{D}\)</font>
+        and <font color="#620000">\(\bar{f}\)</font> are gradients: <font color="#620000">\(e_q
+        = \int_0^1 \langle \mathcal{D}_q (ty), y \rangle
+        \hspace{0.17em}
+\mathrm{d} t\)</font>, <font color="#620000">\(D \bar{V} = -
+        \bar{f}\)</font>, and
       </p>
       <center>
         \(\displaystyle \partial_q \bar{V} + \frac{1}{2} \text{Tr} (C_q^2 D^2
@@ -1250,14 +1375,14 @@ C_s Q^{- (s - \frac{1}{2})} .\)
         .\)
       </center>
       <p>
-        <strong>Explicit flow</strong> <font color="#620000">\(\mathbb{R}^{q,
-        x}\)</font>: <font color="#620000">\(\hspace{0.17em} \mathrm{d} x = - C_s (x -
-        y_s (x)) \hspace{0.17em} \mathrm{d}
-s + C_s \hspace{0.17em} \mathrm{d}
-        W\)</font>, whose coordinate solves <font color="#620000">\(\hspace{0.17em}
-        \mathrm{d} Y = b (Y) \hspace{0.17em} \mathrm{d} s + H
-        (Y)
-\hspace{0.17em} \mathrm{d} W\)</font>. It contains no <font color="#620000">\(Z\)</font>.
+        Explicit flow <font color="#620000">\(\mathbb{R}^{q, x}\)</font>: <font color="#620000">\(\hspace{0.17em}
+        \mathrm{d} x = - C_s (x - y_s (x)) \hspace{0.17em} \mathrm{d}
+s + C_s
+        \hspace{0.17em} \mathrm{d} W\)</font>, whose coordinate solves <font
+        color="#620000">\(\hspace{0.17em} \mathrm{d} Y = b (Y) \hspace{0.17em}
+        \mathrm{d} s + H (Y)
+\hspace{0.17em} \mathrm{d} W\)</font>. It
+        contains no <font color="#620000">\(Z\)</font>.
       </p>
       <p>
         <font color="#620000">\(y_s\)</font> is Lipschitz for the uniform norm (maximum
@@ -1523,7 +1648,7 @@ W \rangle\)</font>.
         <li>
           <p>
             At every finite resolution the force is explicit: <font color="#620000">\(F_q
-            = K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</font>.
+            = K_q Z_q - \bar{\mathcal{F}}_q (Y_q)\)</font>.
           </p>
         </li>
       </ul>
@@ -1554,7 +1679,7 @@ W \rangle\)</font>.
         <p style="margin-bottom: 1em">
           <i><font color="#620000">\(\langle F, h \rangle\)</font>, <font color="#620000">\(\langle
           \eta, h \rangle\)</font> are martingales, and <font color="#620000">\(\|
-          \langle F_q + D \bar{\Gamma}_q (Y_q), h \rangle \|_{L^2}
+          \langle F_q + \bar{\mathcal{F}}_q (Y_q), h \rangle \|_{L^2}
           \lesssim
 \|h\|_{H^2} q^{- 1 / 4}\)</font>.</i>
         </p>
@@ -1571,8 +1696,8 @@ W \rangle\)</font>.
         <li>
           <p>
             <strong>The renormalised cube is an observable:</strong> the
-            unique martingale in the class of the explicit <font color="#620000">\(- D
-            \bar{\Gamma}_q (Y_q)\)</font>.
+            unique martingale in the class of the explicit <font color="#620000">\(-
+            \bar{\mathcal{F}}_q (Y_q)\)</font>.
           </p>
         </li>
         <li>
@@ -1602,8 +1727,9 @@ W \rangle\)</font>.
         hC_{q_0} f)\)</font>. <strong>Shift the coordinate:</strong>
       </p>
       <center>
-        \(\displaystyle K_q Y_q + D \bar{\Gamma}_q (Y_q) = P_q + hf, \quad Z_q
-        = \hat{\psi}_q - Y_q .\)
+        \(\displaystyle K_q Y_q + \bar{\mathcal{F}}_q (Y_q) = P_q + hf, \quad
+        Z_q = \hat{\psi}_q - Y_q
+.\)
       </center>
       <p>
         The system is the same, <font color="#620000">\(TZ_T \to 0\)</font> at fixed
@@ -1684,13 +1810,13 @@ C, \quad \sup_N \mathbb{E} \exp
         \rangle =\mathbb{E}[G
 \langle \eta_q, h \rangle] =\mathbb{E}[G
         (\langle \Phi_q, K_{q_0} h \rangle +
-\langle D \bar{\Gamma}_q (Y_q),
-        J_q h \rangle)] + O (q^{- 1 / 4}) .\)
+\langle \bar{\mathcal{F}}_q
+        (Y_q), J_q h \rangle)] + O (q^{- 1 / 4}) .\)
       </center>
       <p>
-        So the explicit force <font color="#620000">\(D \bar{\Gamma}_q (Y_q)\)</font>
-        closes the hierarchy at large <font color="#620000">\(q\)</font>, up to an
-        error which vanishes as <font color="#620000">\(q \to \infty\)</font>.
+        So the explicit force <font color="#620000">\(\bar{\mathcal{F}}_q
+        (Y_q)\)</font> closes the hierarchy at large <font color="#620000">\(q\)</font>,
+        up to an error which vanishes as <font color="#620000">\(q \to \infty\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1824,13 +1950,14 @@ C, \quad \sup_N \mathbb{E} \exp
             <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\text{Cov} = H (Y) + \Xi\)</font></td>
             <td style="text-align: center; vertical-align: middle">conditional covariance</td>
           </tr><tr>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\Gamma_t\)</font>, Wetterich</td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\bar{\Gamma}_q\)</font> explicit, defect
-            <font color="#620000">\(e\)</font></td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\mathcal{F}_t\)</font>, force
+            equation</td>
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(\bar{\mathcal{F}}_q\)</font> explicit,
+            defect <font color="#620000">\(\mathcal{D}\)</font></td>
             <td style="text-align: center; vertical-align: middle">deterministic coefficients</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle">force <font color="#620000">\(F_t\)</font></td>
-            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(K_q Z_q - D \bar{\Gamma}_q
+            <td style="text-align: center; vertical-align: middle"><font color="#620000">\(K_q Z_q - \bar{\mathcal{F}}_q
             (Y_q)\)</font></td>
             <td style="text-align: center; vertical-align: middle">observable at finite <font color="#620000">\(q\)</font></td>
           </tr><tr>
@@ -1842,7 +1969,7 @@ C, \quad \sup_N \mathbb{E} \exp
       </p>
       <p>
         <strong>UV stability</strong> <font color="#620000">\(=\)</font> an explicit
-        action predicts the conditional mean up to a small error. So the
+        force predicts the conditional mean up to a small error. So the
         measure is an explicit density over an explicit flow, with that error
         as the optimal control.
       </p>

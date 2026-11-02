@@ -14,131 +14,127 @@
     kernels> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
+    <with|par-left|3tab|<with|font-size|0.92|Forces and their primitives
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-2>>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|20<space|2spc>Renormalisation
     with two correction steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2><vspace|0.5fn>
+    <no-break><pageref|auto-3><vspace|0.5fn>
 
     <with|par-left|1tab|20.1<space|2spc>Tensors and the iteration
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3>>
+    <no-break><pageref|auto-4>>
 
     <with|par-left|1tab|20.2<space|2spc>Two elementary receiving estimates
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-4>>
+    <no-break><pageref|auto-5>>
 
     <with|par-left|1tab|20.3<space|2spc>The finite derivative budgets
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-5>>
+    <no-break><pageref|auto-6>>
 
     <with|par-left|1tab|20.4<space|2spc>The coefficients, with a boundary
     value <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-6>>
+    <no-break><pageref|auto-7>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|21<space|2spc>Global
     coercivity and the complete large-field error>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-7><vspace|0.5fn>
+    <no-break><pageref|auto-8><vspace|0.5fn>
 
     <with|par-left|1tab|21.1<space|2spc>Clipping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8>>
+    <no-break><pageref|auto-9>>
 
     <with|par-left|1tab|21.2<space|2spc>Global coercivity
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-9>>
+    <no-break><pageref|auto-10>>
 
     <with|par-left|1tab|21.3<space|2spc>The complete defect
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-10>>
+    <no-break><pageref|auto-11>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|22<space|2spc>The
     bare mass and its limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-11><vspace|0.5fn>
+    <no-break><pageref|auto-12><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|23<space|2spc>Identifying
     the deterministic coefficients: conventions>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-12><vspace|0.5fn>
+    <no-break><pageref|auto-13><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|24<space|2spc>The
     topology of the centred quadratic kernel>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-13><vspace|0.5fn>
+    <no-break><pageref|auto-14><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|25<space|2spc>Physical
     vertex measures and their derivatives>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14><vspace|0.5fn>
+    <no-break><pageref|auto-15><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|26<space|2spc>Compact
     resolvents receive weak Hessians> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15><vspace|0.5fn>
+    <no-break><pageref|auto-16><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|27<space|2spc>Convergence
     of the seed and the two trace steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16><vspace|0.5fn>
+    <no-break><pageref|auto-17><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|28<space|2spc>The
     mixed boundary fixed point converges>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17><vspace|0.5fn>
+    <no-break><pageref|auto-18><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|29<space|2spc>Clipping
     and the complete drift> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18><vspace|0.5fn>
+    <no-break><pageref|auto-19><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|30<space|2spc>Random
     inputs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19><vspace|0.5fn>
+    <no-break><pageref|auto-20><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|31<space|2spc>The
     coordinate, high modes and stochastic integrals>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20><vspace|0.5fn>
+    <no-break><pageref|auto-21><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|32<space|2spc>Complements
     not used in the lectures> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21><vspace|0.5fn>
+    <no-break><pageref|auto-22><vspace|0.5fn>
 
-    <with|par-left|1tab|32.1<space|2spc>A pointwise bound
+    <with|par-left|1tab|32.1<space|2spc>Regularity in space and scale
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>
-
-    <with|par-left|1tab|32.2<space|2spc>Spatial suprema by a maximum
-    principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-23>>
 
-    <with|par-left|1tab|32.3<space|2spc>Regularity in space and scale
+    <with|par-left|1tab|32.2<space|2spc>The limit by compactness: the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-24>>
 
-    <with|par-left|1tab|32.4<space|2spc>The limit by compactness: the noise
+    <with|par-left|1tab|32.3<space|2spc>The limit by compactness: the result
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-25>>
 
-    <with|par-left|1tab|32.5<space|2spc>The limit by compactness: the result
+    <with|par-left|1tab|32.4<space|2spc>Density at a fixed scale
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-26>>
 
-    <with|par-left|1tab|32.6<space|2spc>Density at a fixed scale
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <with|par-left|1tab|32.5<space|2spc>Feynman\UKac comparison along the
+    explicit flow <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-27>>
 
-    <with|par-left|1tab|32.7<space|2spc>Feynman\UKac comparison along the
-    explicit flow <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <with|par-left|1tab|32.6<space|2spc>Uniqueness through the comparison
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-28>>
 
-    <with|par-left|1tab|32.8<space|2spc>Uniqueness through the comparison
+    <with|par-left|1tab|32.7<space|2spc>Symmetrised Girsanov comparison
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-29>>
 
-    <with|par-left|1tab|32.9<space|2spc>Symmetrised Girsanov comparison
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>
-
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31><vspace|0.5fn>
+    <no-break><pageref|auto-30><vspace|0.5fn>
   </table-of-contents>
 
   This supplement contains the detailed proofs which Lectures<nbsp>5\U6 cite
@@ -177,10 +173,9 @@
     Sections<nbsp><reference|c-conv>\U<reference|c-cons-sec>.
 
     <item>Results removed from the lectures, which are not needed there:
-    pointwise bounds and regularity at finite resolution, the proof of the
-    limit FBSDE by compactness and the Riccati equation, the density at a
-    fixed scale, and two earlier proofs of uniqueness:
-    Section<nbsp><reference|d-sec>.
+    regularity at finite resolution, the proof of the limit FBSDE by
+    compactness and the Riccati equation, the density at a fixed scale, and
+    two earlier proofs of uniqueness: Section<nbsp><reference|d-sec>.
   </itemize>
 
   The auxiliary scale <math|q<rsub|\<ast\>>> is as in the lectures. In
@@ -205,6 +200,19 @@
   r<rsub|q><rsup|2>=q>. Generic convolution kernels are denoted
   <math|E,E<rprime|'>>, and the letters <math|L,L<rprime|'>> denote arbitrary
   kernels. Distance <math|d> is torus distance.
+
+  <paragraph|Forces and their primitives> Lecture<nbsp>5 is written in terms
+  of forces. The proofs below expand the trace, so they are written for the
+  primitives of those forces: <math|h> with <math|D*h=\<ell\>>,
+  <math|\<cal-L\>> with <math|D\<cal-L\>=\<ell\>> for the seed,
+  <math|<wide|\<Gamma\>|\<bar\>>> with <math|D<wide|\<Gamma\>|\<bar\>>=<wide|\<cal-F\>|\<bar\>>>,
+  <math|e> with <math|D*e=\<cal-D\>>, and the trace map
+  <math|<frac|1|2><math-up|Tr>[(K+M+D<rsup|2>(U+h))<rsup|-1>-(K+M)<rsup|-1>]>,
+  whose derivative is the loop force <math|\<cal-T\>> of Lecture<nbsp>5. A
+  vertex with <math|k> legs is <math|D<rsup|k>> of the primitive and
+  <math|D<rsup|k-1>> of the force, so the norms <math|S<rsub|k>> and
+  <math|\<cal-N\><rsub|k>> agree. No additive constant of a primitive enters
+  any estimate.
 
   There are two scales, which must not be confused. The <strong|reference
   mass> <math|q<rsub|0>\<gtr\>0> has arbitrary size; it fixes the covariance
@@ -3205,8 +3213,8 @@
     estimate (<reference|c-continuity3>) requires no bound at all, and
     (<reference|c-continuity1>) requires only the <math|L<rsup|4>>
     convergence of the field, but we do not use this. Moments of the sup norm
-    such as those of Lemma<nbsp><reference|d-lem:sup> are one way of
-    obtaining the tightness.
+    such as those of Lemma<nbsp><hlink|17.1|cqft_lecture6.tm#lem:sup> are one
+    way of obtaining the tightness.
   </remark>
 
   <section|The coordinate, high modes and stochastic
@@ -3626,140 +3634,6 @@
   <math|D\<kappa\>>, <math|J<rsub|q>> the filter, <math|J<rsub|\<infty\>>>
   the energy.
 
-  <subsection|A pointwise bound><label|d-sec:sup>
-
-  The maximum principle gives more than the integrated estimate: a bound in
-  <math|L<rsup|\<infty\>>> driven by the cube alone.
-
-  <\proposition>
-    <dueto|<math|L<rsup|\<infty\>>> coercivity><label|d-prop:sup>For
-    <math|q<rsub|\<ast\>>> large, at every cutoff, pathwise and for every
-    <math|q\<geqslant\>q<rsub|\<ast\>>>,
-
-    <\equation>
-      <around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>C*<around*|[|<around*|(|<frac|q|\<gamma\>>|)><rsup|1/3><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>><rsup|1/3>+<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<rsup|1/4>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>|]>.<label|d-eq:sup>
-    </equation>
-
-    In particular there is <math|c\<gtr\>0> such that <math|t<rsub|q>=0>,
-    i.e. <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>r<rsub|q>>,
-    whenever <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>+q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leqslant\>c*r<rsub|q>>:
-    large fields occur only when the noise or the error is large.
-  </proposition>
-
-  <\proof>
-    Let <math|p=q-q<rsub|0>>, <math|d=\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>>,
-    and remove the error by <math|\<cal-H\>=p*C<rsub|q<rsub|0>>*Z<rsub|q>>.
-    Then <math|<around|\<\|\|\>|\<cal-H\>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>p*a<around|(|q<rsub|0>|)><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leqslant\>C*q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>,
-    since the kernel of <math|C<rsub|q<rsub|0>>> is in <math|L<rsup|2>>
-    uniformly in <math|N> by <hlink|(10.3)|cqft_lecture5.tm#eq:a2>. By
-    <hlink|(13.4)|cqft_lecture6.tm#eq:field>, <math|v=V-\<cal-H\>> and
-    <math|D=\<cal-H\>+d> satisfy
-
-    <\equation*>
-      K<rsub|q<rsub|0>>*v+<frac|\<gamma\>|3>*<around|(|v+D|)><rsup|3>=p*d,<space|2em>Y<rsub|q>=v+D.
-    </equation*>
-
-    At a positive maximum of <math|v>, <math|K<rsub|q<rsub|0>>*v\<geqslant\>0>,
-    so <math|v+D\<leqslant\><around|(|3*p<around|\<\|\|\>|d|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>>
-    there; similarly at a negative minimum. Hence
-    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>2<around|\<\|\|\>|D|\<\|\|\>><rsub|\<infty\>>+<around|(|3*q<around|\<\|\|\>|d|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>>.
-    With <math|<around|\<\|\|\>|\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>,
-    the term <math|2*\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>
-    is absorbed, and by Young's inequality
-    <math|<around|(|q*\<varepsilon\><rsub|q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>/\<gamma\>|)><rsup|1/3>\<leqslant\><frac|1|4><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>+C*<around|(|q*\<varepsilon\><rsub|q>/\<gamma\>|)><rsup|1/2>>,
-    where <math|q*\<varepsilon\><rsub|q>/\<gamma\>\<leqslant\>C<sqrt|q>>
-    since <math|g<rsub|q>=\<gamma\>*q<rsup|-1/2>>. This proves
-    <eqref|d-eq:sup>. For the last claim use
-    <math|q/\<gamma\>=r<rsub|q><rsup|2>>: the terms of <eqref|d-eq:sup> are
-    at most <math|C*<around|(|c<rsup|1/3>+c+g<rsub|q><rsup|1/2>|)>*r<rsub|q>>,
-    and <math|g<rsub|q><rsup|1/2>\<leqslant\>g<rsub|q<rsub|\<ast\>>><rsup|1/2>>
-    is small.
-  </proof>
-
-  <\lemma>
-    <dueto|Supremum of the noise><label|d-lem:noise-sup>Uniformly in <math|N>
-    and in the interaction,
-
-    <\equation*>
-      <around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|L<rsup|p><around|(|\<bbb-P\>|)>>\<leqslant\>C<sqrt|p>,<space|2em>\<cal-N\>\<assign\>sup<rsub|q\<geqslant\>q<rsub|\<ast\>>>q<rsup|-1/4>*<around|(|log
-      <around|(|2+q|)>|)><rsup|-1/2><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>.
-    </equation*>
-  </lemma>
-
-  <\proof>
-    At fixed <math|q> the norm <math|f\<mapsto\><around|\<\|\|\>|C<rsub|q>*f|\<\|\|\>><rsub|\<infty\>>>
-    is convex, so by Lemma<nbsp><hlink|13.2|cqft_lecture6.tm#lem:noise>
-    <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>> is
-    dominated by the supremum of the Gaussian field
-    <math|C<rsub|q>*B<rsub|q-q<rsub|0>>>. Its variance is at most
-    <math|C<sqrt|q>>, and for <math|\<theta\>\<less\>1> its increments have
-    variance at most <math|C<sqrt|q>*<around|(|<sqrt|q><around|\||x-y|\|>|)><rsup|\<theta\>>>
-    uniformly in <math|N>, so Dudley's bound gives the mean
-    <math|\<lesssim\>q<rsup|1/4><sqrt|log <around|(|2+q|)>>> and Gaussian
-    concentration gives fluctuations at the scale <math|q<rsup|1/4>>. For the
-    supremum over <math|s\<in\><around|[|Q,2*Q|]>>, write
-    <math|C<rsub|s>=C<rsub|2*Q>*K<rsub|2*Q>*C<rsub|s>>, where
-    <math|<around|\<\|\|\>|K<rsub|2*Q>*C<rsub|s>|\<\|\|\>><rsub|\<infty\>\<to\>\<infty\>>\<leqslant\>2>.
-    Since <math|\<mathd\>\<eta\><rsub|q>=<around|(|I-<around|(|q-q<rsub|0>|)><math-up|Cov><rsub|q>|)><space|0.17em>\<mathd\>W<rsub|q>>
-    by <hlink|(10.8)|cqft_lecture5.tm#eq:dpsi>, <math|\<eta\>> is a
-    martingale, <math|<around|\<\|\|\>|C<rsub|2*Q>*\<eta\><rsub|s>|\<\|\|\>><rsub|\<infty\>>>
-    is a submartingale, and Doob's inequality gives, for
-    <math|p\<geqslant\>2>, <math|<around|\<\|\|\>|sup<rsub|s\<in\>[Q,2*Q]><around|\<\|\|\>|\<zeta\><rsub|s>|\<\|\|\>><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C*Q<rsup|1/4>*<around|(|<sqrt|log
-    <around|(|2+Q|)>>+<sqrt|p>|)>>. Markov's inequality with
-    <math|p\<asymp\>\<lambda\><rsup|2>*log <around|(|2+Q|)>> bounds the
-    probability that the normalised supremum over <math|<around|[|Q,2*Q|]>>
-    exceeds <math|\<lambda\>> by <math|<around|(|2+Q|)><rsup|-c*\<lambda\><rsup|2>>>,
-    for <math|\<lambda\>\<geqslant\>\<lambda\><rsub|0>>. This is summable
-    over dyadic <math|Q>, and <math|<around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|p>\<leqslant\>C<sqrt|p>>
-    follows.
-  </proof>
-
-  <subsection|Spatial suprema by a maximum principle>
-
-  The energy bounds control <math|L<rsup|4>> and <math|L<rsup|6>> norms of
-  large fields. Spatial suprema at finite resolution come from the
-  <math|L<rsup|\<infty\>>> coercivity of Proposition<nbsp><reference|d-prop:sup>.
-
-  <\lemma>
-    <dueto|Supremum after closure><label|d-lem:sup>Let
-    <math|\<cal-Y\>=sup<rsub|q\<geqslant\>q<rsub|\<ast\>>>q<rsup|-5/12>*<around|(|log
-    <around|(|2+q|)>|)><rsup|-1/6><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>>
-    and <math|\<cal-Z\>=sup<rsub|q\<geqslant\>q<rsub|\<ast\>>>q<rsup|5/4><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>>.
-    For <math|q<rsub|\<ast\>>> large, with <math|\<cal-N\>> the supremum of
-    the noise of Lemma<nbsp><reference|d-lem:noise-sup>,
-
-    <\equation>
-      \<cal-Y\>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+\<cal-N\>+\<cal-Z\>|)>,<space|2em><around|\<\|\|\>|\<cal-N\>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<sqrt|p>,<space|2em><around|\<\|\|\>|\<cal-Z\><rsup|2>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<label|d-eq:sup-closure>
-    </equation>
-
-    uniformly in <math|N>.
-  </lemma>
-
-  <\proof>
-    By the definitions, <math|<around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>q<rsup|1/4>*<around|(|log
-    <around|(|2+q|)>|)><rsup|1/2>*\<cal-N\>> and
-    <math|q<around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2>\<leqslant\>q<rsup|-1/4>*\<cal-Z\>>.
-    Inserting these in <eqref|d-eq:sup>, the first term gives
-    <math|\<gamma\><rsup|-1/3>*q<rsup|5/12>*<around|(|log
-    <around|(|2+q|)>|)><rsup|1/6>*\<cal-N\><rsup|1/3>>, and the others are of
-    lower order. The bound on <math|\<cal-Z\>> is
-    <hlink|(15.6)|cqft_lecture6.tm#eq:Z-sup>, whose boundary term vanishes by
-    Lemma<nbsp><hlink|16.1|cqft_lecture6.tm#lem:terminal>.
-  </proof>
-
-  Any exponent below <math|<frac|1|2>> keeps <math|Y> below the threshold
-  <math|r<rsub|q>> at large <math|q>, and we only need moments of the
-  supremum of <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>> on
-  finite intervals of scales. The exponent <math|5/12> comes from the cube
-  alone. The memory form of Exercise<nbsp><hlink|13.3|cqft_lecture6.tm#ex:memory>,
-  with a weight in <math|q> absorbing the memory, gives every exponent above
-  <math|<frac|1|4>>, at the price of that absorption.
-
-  In particular <em|finite-resolution> spatial suprema, for
-  <math|q\<geqslant\>q<rsub|\<ast\>>>, of <math|Y> have all moments uniformly
-  in <math|N>. At the terminal resolution there is no such bound:
-  <math|\<Phi\><rsub|\<infty\>>> is a distribution.
-
   <subsection|Regularity in space and scale>
 
   On a finite scale interval <math|I=<around|[|q<rsub|\<ast\>>,Q|]>> write
@@ -3820,7 +3694,7 @@
   <math|b<around|(|Y|)>+H<around|(|Y|)>*Z> has bounded integrated square by
   Proposition<nbsp><hlink|12.2|cqft_lecture5.tm#prop:source> and the
   energies, and whose martingale part has bounded bracket density. The
-  supremum bound of Lemma<nbsp><reference|d-lem:sup> upgrades
+  supremum bound of Lemma<nbsp><hlink|17.1|cqft_lecture6.tm#lem:sup> upgrades
   <math|L<rsup|2>> compactness to every <math|L<rsup|p>>.
 
   <subsection|The limit by compactness: the noise>
@@ -3872,7 +3746,7 @@
   is a nonnegative supermartingale, with drift
   <math|-<around|\<\|\|\>|<math-up|Cov><rsub|q>f|\<\|\|\>><rsup|2>>, and
   initial value <math|<math-up|Var><rsub|\<nu\><rsub|N>><around|\<langle\>|\<Phi\><rsub|\<infty\>>,f|\<rangle\>>>,
-  bounded uniformly in <math|N> by Corollary<nbsp><hlink|17.1|cqft_lecture6.tm#cor:tight>.
+  bounded uniformly in <math|N> by Corollary<nbsp><hlink|17.2|cqft_lecture6.tm#cor:tight>.
   A nonnegative supermartingale has controlled oscillations: after stopping
   at the first time it exceeds a level <math|K> (an event of probability at
   most <math|C<rsub|f>/K>), its decreasing part <math|A> and the bracket of
@@ -4108,7 +3982,8 @@
     under the integral. By Step<nbsp>1 of the proof of
     Theorem<nbsp><reference|d-thm:unique>, that is
     (<hlink|12.5|cqft_lecture5.tm#eq:coordinate>) and
-    Lemma<nbsp><reference|d-lem:sup>, <math|sup<rsub|N>\<bbb-P\>(<around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<gtr\>*R/2)\<to\>0>
+    Lemma<nbsp><hlink|17.1|cqft_lecture6.tm#lem:sup>,
+    <math|sup<rsub|N>\<bbb-P\>(<around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<gtr\>*R/2)\<to\>0>
     as <math|R\<to\>\<infty\>>. So for <math|R> large,
     <math|I<rsub|N>(R)/Z<rsub|N>\<geqslant\><frac|1|2>>, where
     <math|Z<rsub|N>> is the total mass, and hence
@@ -4120,12 +3995,12 @@
 
     <strong|The formula.> The kernel form follows by disintegrating
     <math|\<nu\><rsub|N>> at scale <math|q>, and using
-    (<hlink|18.10|cqft_lecture6.tm#eq:kernel>) with the uniform convergence
+    (<hlink|18.12|cqft_lecture6.tm#eq:kernel>) with the uniform convergence
     in probability: the cylinder function
     <math|\<Pi\><rsup|N><rsub|q>O(x<rsub|N>)> is bounded, and converges for
     continuously convergent arguments. So <math|<big|int>
     O<space|0.17em>\<mathd\>\<nu\>=<big|int>\<Pi\><rsub|q>O<space|0.17em>\<mathd\>\<rho\><rsub|q>/\<rho\><rsub|q>(1)>,
-    which by (<hlink|18.10|cqft_lecture6.tm#eq:kernel>) and
+    which by (<hlink|18.12|cqft_lecture6.tm#eq:kernel>) and
     (<reference|d-eq:rho>) is (<reference|d-eq:GM>), the factor
     <math|\<mathe\><rsup|A>> cancelling.
   </proof>
@@ -4510,12 +4385,13 @@
     <math|P<rsub|q>=K<rsub|q>\<Phi\><rsub|q>>,
     <math|\<Phi\><rsub|q>=Y<rsub|q>+\<varrho\><rsub|q>(Y<rsub|q>)+<frac|\<gamma\>|3>C<rsub|q>Y<rsub|q><rsup|3>>,
     so <math|<around|\<\|\|\>|\<Phi\><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>2<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>+<frac|\<gamma\>|3q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>><rsup|3>>.
-    Proposition<nbsp><reference|d-prop:sup>, whose constant involves
-    <math|<around|\<\|\|\>|C<rsub|q<rsub|0>>|\<\|\|\>><rsub|2\<to\>\<infty\>>>,
+    Proposition<nbsp><hlink|14.4|cqft_lecture6.tm#prop:sup>, whose constant
+    involves <math|<around|\<\|\|\>|C<rsub|q<rsub|0>>|\<\|\|\>><rsub|2\<to\>\<infty\>>>,
     finite with <math|a<rsub|2>(q<rsub|0>)\<leqslant\> q<rsub|0><rsup|-2>+C>
-    uniformly in <math|N>, with Lemma<nbsp><reference|d-lem:noise-sup> and
-    Theorem<nbsp><hlink|16.2|cqft_lecture6.tm#thm:uv> gives
-    Lemma<nbsp><reference|d-lem:sup>: <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>\<cal-Y\>*q<rsup|5/12>log<rsup|1/6>(2+q)>
+    uniformly in <math|N>, with Lemma<nbsp><hlink|14.5|cqft_lecture6.tm#lem:noise-sup>
+    and Theorem<nbsp><hlink|16.2|cqft_lecture6.tm#thm:uv> gives
+    Lemma<nbsp><hlink|17.1|cqft_lecture6.tm#lem:sup>:
+    <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>\<cal-Y\>*q<rsup|5/12>log<rsup|1/6>(2+q)>
     for <math|q\<geqslant\> q<rsub|\<ast\>>>, with <math|\<cal-Y\>> having
     moments uniformly in <math|N>. Therefore
     <math|p<rsub|q>:=sup<rsub|N>\<bbb-P\>(<around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<gtr\>\<rho\><rsub|q>/2)\<to\>0>.
@@ -4639,7 +4515,7 @@
       <around|\<langle\>|\<iota\><rsub|N>(\<Phi\><rsub|\<infty\>>-\<Phi\><rsub|q>),h|\<rangle\>>=<around|\<langle\>|\<Phi\><rsub|\<infty\>>,C<rsub|q>K<rsub|q<rsub|0>>j<rsub|N>h|\<rangle\>>-<around|\<langle\>|C<rsub|q>B<rsub|q-q<rsub|0>>,j<rsub|N>h|\<rangle\>>.
     </equation*>
 
-    By (<hlink|17.5|cqft_lecture6.tm#eq:tested>), the first has mean absolute
+    By (<hlink|17.6|cqft_lecture6.tm#eq:tested>), the first has mean absolute
     value at most <math|C<around|\<\|\|\>|C<rsub|q>K<rsub|q<rsub|0>>j<rsub|N>h|\<\|\|\>><rsub|\<ast\>>\<leqslant\>
     C*q<rsup|-1><around|\<\|\|\>|h|\<\|\|\>><rsub|C<rsup|2>>>, as
     <math|C<rsub|q>> has norm <math|q<rsup|-1>> on each <math|L<rsup|p>>. The
@@ -4652,7 +4528,7 @@
     </equation*>
 
     Let <math|q\<to\>\<infty\>>. Cylinder functions separate measures on
-    <math|H<rsup|-s>> and Theorem<nbsp><hlink|17.4|cqft_lecture6.tm#thm:hs-gauss>
+    <math|H<rsup|-s>> and Theorem<nbsp><hlink|17.5|cqft_lecture6.tm#thm:hs-gauss>
     gives tightness, so the whole sequence converges. Since <math|B<rsup|N>>
     is a Brownian motion independent of <math|\<Phi\><rsup|N><rsub|\<infty\>>>,
     independence passes to the limit, with <math|P=(q-q<rsub|0>)\<Phi\>+B>
@@ -4665,7 +4541,7 @@
   <math|\<psi\><rsub|q>> is measurable for the filtration of <math|P>; these
   follow from the density in Lecture<nbsp>6,
   Theorem<nbsp><hlink|18.6|cqft_lecture6.tm#thm:limit>(b) and
-  Theorem<nbsp><hlink|18.12|cqft_lecture6.tm#thm:unique-law>. It does not
+  Theorem<nbsp><hlink|18.11|cqft_lecture6.tm#thm:unique-law>. It does not
   cover <math|H<rsup|-s>> with <math|s> near <math|<frac|1|2>> for quartic
   moments.
 
@@ -4930,10 +4806,10 @@
   With Proposition<nbsp><reference|d-prop:gir>, Steps<nbsp>1, 4 and<nbsp>5 of
   Theorem<nbsp><reference|d-thm:unique> conclude the proof as before: it uses
   Theorem<nbsp><hlink|16.2|cqft_lecture6.tm#thm:uv>,
-  Proposition<nbsp><reference|d-prop:sup>,
-  Lemma<nbsp><reference|d-lem:noise-sup>, (11.12), Lemma<nbsp>12.1, and
-  Proposition<nbsp>12.2 with its ledger. On this route the condition
-  <math|q<rsub|\<ast\>>\<geqslant\> q<rsub|A>> of
+  Proposition<nbsp><hlink|14.4|cqft_lecture6.tm#prop:sup>,
+  Lemma<nbsp><hlink|14.5|cqft_lecture6.tm#lem:noise-sup>, (11.12),
+  Lemma<nbsp>12.1, and Proposition<nbsp>12.2 with its ledger. On this route
+  the condition <math|q<rsub|\<ast\>>\<geqslant\> q<rsub|A>> of
   Theorem<nbsp><reference|d-thm:unique> is not needed.
 
   <section*|References>
@@ -4973,8 +4849,8 @@
     <associate|a-eq-clipping|<tuple|21.1|12>>
     <associate|a-eq-clipping-marks|<tuple|21.7|14>>
     <associate|a-eq-coeffbounds|<tuple|20.10|9>>
-    <associate|a-eq-coordinate-small|<tuple|21.5|14>>
-    <associate|a-eq-covariance-marked|<tuple|21.8|15>>
+    <associate|a-eq-coordinate-small|<tuple|21.5|13>>
+    <associate|a-eq-covariance-marked|<tuple|21.8|14>>
     <associate|a-eq-frakD|<tuple|21.11|15>>
     <associate|a-eq-free|<tuple|19.1|2>>
     <associate|a-eq-globalh|<tuple|21.2|12>>
@@ -4987,12 +4863,12 @@
     <associate|a-eq-module|<tuple|19.3|3>>
     <associate|a-eq-receive|<tuple|19.5|4>>
     <associate|a-eq-resolvent|<tuple|21.3|13>>
-    <associate|a-eq-response|<tuple|20.14|12>>
+    <associate|a-eq-response|<tuple|20.14|11>>
     <associate|a-eq-rooted-cycle|<tuple|20.5|6>>
     <associate|a-eq-seed|<tuple|20.1|5>>
     <associate|a-eq-seedder|<tuple|20.2|5>>
     <associate|a-eq-smallerror|<tuple|20.12|9>>
-    <associate|a-eq-source|<tuple|21.4|14>>
+    <associate|a-eq-source|<tuple|21.4|13>>
     <associate|a-eq-third-chain-marked|<tuple|21.9|15>>
     <associate|a-eq-trace-map|<tuple|20.3|5>>
     <associate|a-eq-tracegain|<tuple|20.7|7>>
@@ -5003,10 +4879,10 @@
     <associate|a-lem-inserted-receiver|<tuple|20.3|7>>
     <associate|a-lem-resolvent|<tuple|21.1|13>>
     <associate|a-lem-rooted-cycle|<tuple|20.1|6>>
-    <associate|a-lem-source|<tuple|21.2|14>>
+    <associate|a-lem-source|<tuple|21.2|13>>
     <associate|a-lem-trace|<tuple|20.4|7>>
     <associate|a-prop-coeff|<tuple|20.6|9>>
-    <associate|a-prop-response|<tuple|20.8|12>>
+    <associate|a-prop-response|<tuple|20.8|11>>
     <associate|a-rem-trace-hypotheses|<tuple|20.5|8>>
     <associate|a-sec-budgets|<tuple|20.3|7>>
     <associate|a-sec-clip|<tuple|21.1|12>>
@@ -5019,137 +4895,130 @@
     <associate|a-sec-recursion|<tuple|20|4>>
     <associate|a-sec-tensors|<tuple|20.1|4>>
     <associate|auto-1|<tuple|19|2>>
-    <associate|auto-10|<tuple|21.3|13>>
-    <associate|auto-11|<tuple|22|16>>
-    <associate|auto-12|<tuple|23|17>>
-    <associate|auto-13|<tuple|24|18>>
-    <associate|auto-14|<tuple|25|19>>
-    <associate|auto-15|<tuple|26|20>>
-    <associate|auto-16|<tuple|27|22>>
-    <associate|auto-17|<tuple|28|23>>
-    <associate|auto-18|<tuple|29|26>>
-    <associate|auto-19|<tuple|30|29>>
-    <associate|auto-2|<tuple|20|4>>
-    <associate|auto-20|<tuple|31|30>>
-    <associate|auto-21|<tuple|32|34>>
-    <associate|auto-22|<tuple|32.1|34>>
-    <associate|auto-23|<tuple|32.2|35>>
-    <associate|auto-24|<tuple|32.3|35>>
-    <associate|auto-25|<tuple|32.4|36>>
-    <associate|auto-26|<tuple|32.5|37>>
-    <associate|auto-27|<tuple|32.6|38>>
-    <associate|auto-28|<tuple|32.7|38>>
-    <associate|auto-29|<tuple|32.8|41>>
-    <associate|auto-3|<tuple|20.1|4>>
-    <associate|auto-30|<tuple|32.9|43>>
-    <associate|auto-31|<tuple|32.19|45>>
-    <associate|auto-4|<tuple|20.2|5>>
-    <associate|auto-5|<tuple|20.3|7>>
-    <associate|auto-6|<tuple|20.4|9>>
-    <associate|auto-7|<tuple|21|12>>
-    <associate|auto-8|<tuple|21.1|12>>
-    <associate|auto-9|<tuple|21.2|13>>
-    <associate|bib-FBSDE26|<tuple|FBSDE26|45>>
-    <associate|bib-GM24|<tuple|GM24|45>>
+    <associate|auto-10|<tuple|21.2|13>>
+    <associate|auto-11|<tuple|21.3|13>>
+    <associate|auto-12|<tuple|22|16>>
+    <associate|auto-13|<tuple|23|17>>
+    <associate|auto-14|<tuple|24|18>>
+    <associate|auto-15|<tuple|25|18>>
+    <associate|auto-16|<tuple|26|19>>
+    <associate|auto-17|<tuple|27|21>>
+    <associate|auto-18|<tuple|28|22>>
+    <associate|auto-19|<tuple|29|26>>
+    <associate|auto-2|<tuple|1|2>>
+    <associate|auto-20|<tuple|30|28>>
+    <associate|auto-21|<tuple|31|30>>
+    <associate|auto-22|<tuple|32|33>>
+    <associate|auto-23|<tuple|32.1|33>>
+    <associate|auto-24|<tuple|32.2|34>>
+    <associate|auto-25|<tuple|32.3|35>>
+    <associate|auto-26|<tuple|32.4|36>>
+    <associate|auto-27|<tuple|32.5|37>>
+    <associate|auto-28|<tuple|32.6|39>>
+    <associate|auto-29|<tuple|32.7|41>>
+    <associate|auto-3|<tuple|20|4>>
+    <associate|auto-30|<tuple|32.16|43>>
+    <associate|auto-4|<tuple|20.1|4>>
+    <associate|auto-5|<tuple|20.2|5>>
+    <associate|auto-6|<tuple|20.3|7>>
+    <associate|auto-7|<tuple|20.4|9>>
+    <associate|auto-8|<tuple|21|12>>
+    <associate|auto-9|<tuple|21.1|12>>
+    <associate|bib-FBSDE26|<tuple|FBSDE26|43>>
+    <associate|bib-GM24|<tuple|GM24|43>>
     <associate|c-L2continuity|<tuple|30.2|29>>
-    <associate|c-Upsilon|<tuple|30.3|30>>
-    <associate|c-ascoli|<tuple|31.1|31>>
+    <associate|c-Upsilon|<tuple|30.3|29>>
+    <associate|c-ascoli|<tuple|31.1|30>>
     <associate|c-bvp|<tuple|28.3|24>>
-    <associate|c-collapse|<tuple|29.6|28>>
-    <associate|c-compact|<tuple|26|20>>
+    <associate|c-collapse|<tuple|29.6|27>>
+    <associate|c-compact|<tuple|26|19>>
     <associate|c-compensated|<tuple|24.1|18>>
     <associate|c-complete|<tuple|29|26>>
     <associate|c-completecons|<tuple|29.1|26>>
-    <associate|c-cons|<tuple|31.2|31>>
+    <associate|c-cons|<tuple|31.2|30>>
     <associate|c-cons-sec|<tuple|31|30>>
     <associate|c-continuity1|<tuple|29.3|27>>
     <associate|c-continuity2|<tuple|29.4|27>>
     <associate|c-continuity3|<tuple|29.5|27>>
     <associate|c-conv|<tuple|23|17>>
-    <associate|c-coordinate|<tuple|31.1|31>>
+    <associate|c-coordinate|<tuple|31.1|30>>
     <associate|c-covcont|<tuple|26.3|21>>
-    <associate|c-defect-def|<tuple|31.2|31>>
+    <associate|c-defect-def|<tuple|31.2|30>>
     <associate|c-fieldcont|<tuple|29.2|27>>
     <associate|c-fieldconv|<tuple|29.7|28>>
     <associate|c-fieldlimit|<tuple|29.3|28>>
-    <associate|c-findiff|<tuple|25.2|20>>
+    <associate|c-findiff|<tuple|25.2|19>>
     <associate|c-finitecons|<tuple|27.2|22>>
-    <associate|c-fixed|<tuple|28|23>>
+    <associate|c-fixed|<tuple|28|22>>
     <associate|c-freecons|<tuple|26.1|20>>
     <associate|c-frozen|<tuple|29.2|26>>
     <associate|c-gradient|<tuple|29.1|26>>
-    <associate|c-hessianTaylor|<tuple|25.1|20>>
-    <associate|c-highbound|<tuple|31.4|32>>
-    <associate|c-highmodes|<tuple|31.3|32>>
-    <associate|c-moveboundary|<tuple|28.4|25>>
+    <associate|c-hessianTaylor|<tuple|25.1|19>>
+    <associate|c-highbound|<tuple|31.4|31>>
+    <associate|c-highmodes|<tuple|31.3|31>>
+    <associate|c-moveboundary|<tuple|28.4|24>>
     <associate|c-pathcons|<tuple|28.3|24>>
-    <associate|c-pathmetric|<tuple|23.1|18>>
+    <associate|c-pathmetric|<tuple|23.1|17>>
     <associate|c-qtopology|<tuple|24.1|18>>
     <associate|c-random|<tuple|30.1|29>>
-    <associate|c-random-sec|<tuple|30|29>>
+    <associate|c-random-sec|<tuple|30|28>>
     <associate|c-randomcoef|<tuple|30.1|29>>
-    <associate|c-recursiontail|<tuple|27.3|23>>
+    <associate|c-recursiontail|<tuple|27.3|22>>
     <associate|c-rem-hyp|<tuple|30.2|30>>
     <associate|c-rem-noderiv|<tuple|28.2|24>>
     <associate|c-rem-qstar|<tuple|31.5|33>>
-    <associate|c-resid|<tuple|31.3|32>>
+    <associate|c-resid|<tuple|31.3|31>>
     <associate|c-rowmodulus|<tuple|26.1|21>>
-    <associate|c-sandwich|<tuple|26.2|21>>
-    <associate|c-seed|<tuple|27|22>>
-    <associate|c-seedcons|<tuple|27.1|22>>
-    <associate|c-seedforce|<tuple|27.1|22>>
-    <associate|c-stoch|<tuple|31.4|33>>
-    <associate|c-stochconv|<tuple|31.5|33>>
+    <associate|c-sandwich|<tuple|26.2|20>>
+    <associate|c-seed|<tuple|27|21>>
+    <associate|c-seedcons|<tuple|27.1|21>>
+    <associate|c-seedforce|<tuple|27.1|21>>
+    <associate|c-stoch|<tuple|31.4|32>>
+    <associate|c-stochconv|<tuple|31.5|32>>
     <associate|c-strongmass|<tuple|28.2|23>>
     <associate|c-topology|<tuple|24|18>>
-    <associate|c-tracedecomp|<tuple|27.2|23>>
-    <associate|c-vertex|<tuple|25|19>>
+    <associate|c-tracedecomp|<tuple|27.2|22>>
+    <associate|c-vertex|<tuple|25|18>>
     <associate|c-vertexweak|<tuple|25.1|19>>
-    <associate|c-weakcontr|<tuple|26.4|22>>
+    <associate|c-weakcontr|<tuple|26.4|21>>
     <associate|c-weakintegral|<tuple|28.1|23>>
     <associate|c-weaksource|<tuple|28.1|23>>
-    <associate|d-cor:rho|<tuple|32.9|38>>
-    <associate|d-density|<tuple|32.6|38>>
-    <associate|d-eq:F|<tuple|32.9|39>>
-    <associate|d-eq:FKT|<tuple|32.13|41>>
-    <associate|d-eq:GM|<tuple|32.8|38>>
-    <associate|d-eq:HJ2|<tuple|32.15|43>>
-    <associate|d-eq:closed-forecast|<tuple|32.6|37>>
-    <associate|d-eq:comp|<tuple|32.12|40>>
-    <associate|d-eq:e-bound|<tuple|32.16|43>>
-    <associate|d-eq:eps|<tuple|32.14|41>>
-    <associate|d-eq:exp-riccati|<tuple|32.11|40>>
-    <associate|d-eq:limit-equations|<tuple|32.5|36>>
-    <associate|d-eq:linear|<tuple|32.3|35>>
-    <associate|d-eq:rho|<tuple|32.7|38>>
-    <associate|d-eq:riccati|<tuple|32.4|36>>
-    <associate|d-eq:sub|<tuple|32.10|40>>
-    <associate|d-eq:sup|<tuple|32.1|34>>
-    <associate|d-eq:sup-closure|<tuple|32.2|35>>
-    <associate|d-eq:sym|<tuple|32.17|44>>
-    <associate|d-lem:HJ|<tuple|32.10|39>>
-    <associate|d-lem:e-bound|<tuple|32.17|43>>
-    <associate|d-lem:exp-riccati|<tuple|32.14|40>>
-    <associate|d-lem:input|<tuple|32.12|39>>
-    <associate|d-lem:noise-sup|<tuple|32.2|34>>
-    <associate|d-lem:pm|<tuple|32.11|39>>
-    <associate|d-lem:riccati|<tuple|32.6|36>>
-    <associate|d-lem:sub|<tuple|32.13|40>>
-    <associate|d-lem:sup|<tuple|32.3|35>>
-    <associate|d-prop:comp|<tuple|32.15|40>>
-    <associate|d-prop:forward-compact|<tuple|32.4|35>>
-    <associate|d-prop:gir|<tuple|32.18|43>>
-    <associate|d-prop:martingales|<tuple|32.7|36>>
-    <associate|d-prop:sup|<tuple|32.1|34>>
-    <associate|d-rem:Z|<tuple|32.19|45>>
-    <associate|d-rem:hidden|<tuple|32.5|36>>
-    <associate|d-sec|<tuple|32|34>>
-    <associate|d-sec:FK|<tuple|32.7|38>>
-    <associate|d-sec:gir|<tuple|32.9|43>>
-    <associate|d-sec:sup|<tuple|32.1|34>>
-    <associate|d-sec:uniq|<tuple|32.8|41>>
-    <associate|d-thm:limit|<tuple|32.8|37>>
-    <associate|d-thm:unique|<tuple|32.16|41>>
+    <associate|d-cor:rho|<tuple|32.6|36>>
+    <associate|d-density|<tuple|32.4|36>>
+    <associate|d-eq:F|<tuple|32.7|37>>
+    <associate|d-eq:FKT|<tuple|32.11|39>>
+    <associate|d-eq:GM|<tuple|32.6|36>>
+    <associate|d-eq:HJ2|<tuple|32.13|41>>
+    <associate|d-eq:closed-forecast|<tuple|32.4|35>>
+    <associate|d-eq:comp|<tuple|32.10|38>>
+    <associate|d-eq:e-bound|<tuple|32.14|41>>
+    <associate|d-eq:eps|<tuple|32.12|39>>
+    <associate|d-eq:exp-riccati|<tuple|32.9|38>>
+    <associate|d-eq:limit-equations|<tuple|32.3|35>>
+    <associate|d-eq:linear|<tuple|32.1|33>>
+    <associate|d-eq:rho|<tuple|32.5|36>>
+    <associate|d-eq:riccati|<tuple|32.2|34>>
+    <associate|d-eq:sub|<tuple|32.8|38>>
+    <associate|d-eq:sym|<tuple|32.15|42>>
+    <associate|d-lem:HJ|<tuple|32.7|37>>
+    <associate|d-lem:e-bound|<tuple|32.14|41>>
+    <associate|d-lem:exp-riccati|<tuple|32.11|38>>
+    <associate|d-lem:input|<tuple|32.9|37>>
+    <associate|d-lem:pm|<tuple|32.8|37>>
+    <associate|d-lem:riccati|<tuple|32.3|34>>
+    <associate|d-lem:sub|<tuple|32.10|38>>
+    <associate|d-prop:comp|<tuple|32.12|38>>
+    <associate|d-prop:forward-compact|<tuple|32.1|33>>
+    <associate|d-prop:gir|<tuple|32.15|41>>
+    <associate|d-prop:martingales|<tuple|32.4|35>>
+    <associate|d-rem:Z|<tuple|32.16|43>>
+    <associate|d-rem:hidden|<tuple|32.2|34>>
+    <associate|d-sec|<tuple|32|33>>
+    <associate|d-sec:FK|<tuple|32.5|37>>
+    <associate|d-sec:gir|<tuple|32.7|41>>
+    <associate|d-sec:uniq|<tuple|32.6|39>>
+    <associate|d-thm:limit|<tuple|32.5|35>>
+    <associate|d-thm:unique|<tuple|32.13|39>>
     <associate|eq:explicit|<tuple|22.2|16>>
     <associate|eq:fN|<tuple|22.1|16>>
     <associate|m-sec|<tuple|22|16>>
@@ -5178,132 +5047,128 @@
       kernels> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Forces and
+      their primitives <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|20<space|2spc>Renormalisation
       with two correction steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.5fn>
+      <no-break><pageref|auto-3><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|20.1<space|2spc>Tensors and the iteration
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3>>
+      <no-break><pageref|auto-4>>
 
       <with|par-left|<quote|1tab>|20.2<space|2spc>Two elementary receiving
       estimates <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4>>
+      <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|1tab>|20.3<space|2spc>The finite derivative
       budgets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5>>
+      <no-break><pageref|auto-6>>
 
       <with|par-left|<quote|1tab>|20.4<space|2spc>The coefficients, with a
       boundary value <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6>>
+      <no-break><pageref|auto-7>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|21<space|2spc>Global
       coercivity and the complete large-field error>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7><vspace|0.5fn>
+      <no-break><pageref|auto-8><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|21.1<space|2spc>Clipping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
+      <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|1tab>|21.2<space|2spc>Global coercivity
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9>>
+      <no-break><pageref|auto-10>>
 
       <with|par-left|<quote|1tab>|21.3<space|2spc>The complete defect
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10>>
+      <no-break><pageref|auto-11>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|22<space|2spc>The
       bare mass and its limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11><vspace|0.5fn>
+      <no-break><pageref|auto-12><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|23<space|2spc>Identifying
       the deterministic coefficients: conventions>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-12><vspace|0.5fn>
+      <no-break><pageref|auto-13><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|24<space|2spc>The
       topology of the centred quadratic kernel>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-13><vspace|0.5fn>
+      <no-break><pageref|auto-14><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|25<space|2spc>Physical
       vertex measures and their derivatives>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-14><vspace|0.5fn>
+      <no-break><pageref|auto-15><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|26<space|2spc>Compact
       resolvents receive weak Hessians> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15><vspace|0.5fn>
+      <no-break><pageref|auto-16><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|27<space|2spc>Convergence
       of the seed and the two trace steps>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-16><vspace|0.5fn>
+      <no-break><pageref|auto-17><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|28<space|2spc>The
       mixed boundary fixed point converges>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17><vspace|0.5fn>
+      <no-break><pageref|auto-18><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|29<space|2spc>Clipping
       and the complete drift> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18><vspace|0.5fn>
+      <no-break><pageref|auto-19><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|30<space|2spc>Random
       inputs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19><vspace|0.5fn>
+      <no-break><pageref|auto-20><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|31<space|2spc>The
       coordinate, high modes and stochastic integrals>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20><vspace|0.5fn>
+      <no-break><pageref|auto-21><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|32<space|2spc>Complements
       not used in the lectures> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21><vspace|0.5fn>
+      <no-break><pageref|auto-22><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|32.1<space|2spc>A pointwise bound
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22>>
-
-      <with|par-left|<quote|1tab>|32.2<space|2spc>Spatial suprema by a
-      maximum principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.1<space|2spc>Regularity in space and
+      scale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-23>>
 
-      <with|par-left|<quote|1tab>|32.3<space|2spc>Regularity in space and
-      scale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.2<space|2spc>The limit by compactness:
+      the noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-24>>
 
-      <with|par-left|<quote|1tab>|32.4<space|2spc>The limit by compactness:
-      the noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.3<space|2spc>The limit by compactness:
+      the result <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-25>>
 
-      <with|par-left|<quote|1tab>|32.5<space|2spc>The limit by compactness:
-      the result <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.4<space|2spc>Density at a fixed scale
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-26>>
 
-      <with|par-left|<quote|1tab>|32.6<space|2spc>Density at a fixed scale
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.5<space|2spc>Feynman\UKac comparison
+      along the explicit flow <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-27>>
 
-      <with|par-left|<quote|1tab>|32.7<space|2spc>Feynman\UKac comparison
-      along the explicit flow <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|32.6<space|2spc>Uniqueness through the
+      comparison <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-28>>
 
-      <with|par-left|<quote|1tab>|32.8<space|2spc>Uniqueness through the
+      <with|par-left|<quote|1tab>|32.7<space|2spc>Symmetrised Girsanov
       comparison <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-29>>
 
-      <with|par-left|<quote|1tab>|32.9<space|2spc>Symmetrised Girsanov
-      comparison <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>
-
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31><vspace|0.5fn>
+      <no-break><pageref|auto-30><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

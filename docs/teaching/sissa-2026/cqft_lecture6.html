@@ -103,54 +103,22 @@
         <font style="font-size: 84.1%"><strong>Abstract</strong></font>
       </p>
     </div>
-    <div style="margin-left: 60px; margin-right: 60px">
+    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
       <p>
         <font style="font-size: 84.1%">We prove the central estimate of the construction:
         bounds, uniform in the lattice, on the error \(Z\) of the approximate
         forecast and on the time the forecast spends at large fields. The two
-        halves of the FBSDE of Lecture 5 give two inequalities, neither of
-        which closes alone. The forward equation becomes, through the field
-        equation of Lecture 4, a cubic elliptic equation at each resolution,
-        with no memory: its noise is the filtered measurement noise,
-        sub-Gaussian uniformly in the interaction. This equation is coercive:
-        testing it bounds the weighted large-field action, scale by scale, by
-        the tails of the noise and by the backward energy. The backward
-        equation is linear in \(Z\): a conditional representation formula
-        bounds the backward energy by an integrable bounded-field source, a
-        boundary term, and a small multiple of the large-field action. The
-        small coefficient is \(C \gamma^2 / q_{\ast}\), independent of the
-        lattice and of the moment order, so one choice of \(q_{\ast}\) closes
-        the loop. The clipping error of Lecture 5 is controlled exactly in
-        this way. We give complete proofs in the scalar (one-site) model,
-        where all the mechanisms are visible with explicit constants, and
-        indicate the changes needed on the lattice.</font>
-      </p>
-    </div>
-    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
-      <p>
-        <font style="font-size: 84.1%">We then close the argument, for every coupling and every
-        finite mass: the only large number is an auxiliary scale \(q_{\ast}\),
-        internal to the proofs, and below it the estimates follow from those
-        above it because the forecast is a martingale. At a fixed lattice the
-        error of the approximate forecast vanishes at infinite resolution,
-        because the explicit action matches the bare action there; this
-        removes the boundary term of the energy estimate and gives bounds
-        uniform in the lattice (UV stability). The order of limits is
-        essential: first the upper scale at fixed lattice, then the lattice. A
-        linear source changes only the field equation, and this gives quartic
-        exponential tails for tested fields. The same estimates hold for the
-        flow restarted from any field at any scale. So the exact flow is the
-        explicit flow with control \(Z\), of finite relative entropy. This
-        writes the limit measure as an explicit density over an explicit SDE,
-        for the whole lattice sequence, without the stochastic dynamics.
-        Girsanov's theorem then gives the FBSDE on the continuum torus, with
-        no additional noise and with no compactness of the processes, and a
-        renormalised integration by parts formula follows, at the terminal
-        scale and along the scales. The forecast is a continuous function of
-        the observation, the scalar form of the FBSDE has uniqueness in law,
-        and there is a renormalised variational formula with no infinite
-        constant. We end with what is not proved and with the infinite-volume
-        problem. (Joint work with S.-J. Meyer + AI.)</font>
+        halves of the FBSDE give two inequalities which close only together,
+        with small coefficient \(C \gamma^2 / q_{\ast}\), for every coupling
+        and every finite mass. The same bounds hold for the flow restarted
+        from any field at any scale. So the exact flow is an explicit flow
+        with a control of finite relative entropy. This writes the limit
+        measure as an explicit density over an explicit SDE, for the whole
+        lattice sequence, and it gives the FBSDE on the continuum torus, the
+        field equation at every resolution, uniqueness in law for the scalar
+        form of the FBSDE, a renormalised variational formula with no infinite
+        constant, and quartic exponential tails. (Joint work with S.-J. Meyer
+        + AI.)</font>
       </p>
     </div>
     <div class="max-toc">
@@ -160,41 +128,41 @@
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">2</a>
       </p>
-      <p>
-        <font style="font-size: 92.0%">How a priori estimates for FBSDEs are usually obtained
-        <span style="margin-left: 5mm"></span> <a href="#auto-2">3</a></font>
-      </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>13<span style="margin-left: 1em"></span>The energies</b> <span style="margin-left: 5mm"></span> <a
-        href="#auto-3">4</a>
+        href="#auto-2">4</a>
       </p>
       <p>
         13.1<span style="margin-left: 1em"></span>Moments at fixed cutoff <span style="margin-left: 5mm"></span>
-        <a href="#auto-4">4</a>
+        <a href="#auto-3">4</a>
       </p>
       <p>
         13.2<span style="margin-left: 1em"></span>The field equation <span style="margin-left: 5mm"></span> <a
-        href="#auto-5">4</a>
+        href="#auto-4">4</a>
       </p>
       <p>
         13.3<span style="margin-left: 1em"></span>Thresholds and energies <span style="margin-left: 5mm"></span>
-        <a href="#auto-6">5</a>
+        <a href="#auto-5">5</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-7">6</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-6">5</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>14<span style="margin-left: 1em"></span>Forward coercivity</b> <span style="margin-left: 5mm"></span>
-        <a href="#auto-8">6</a>
+        <a href="#auto-7">5</a>
       </p>
       <p>
-        14.1<span style="margin-left: 1em"></span>The scalar model <span style="margin-left: 5mm"></span> <a href="#auto-9">6</a>
+        14.1<span style="margin-left: 1em"></span>The scalar model <span style="margin-left: 5mm"></span> <a href="#auto-8">5</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">What the scalar lemma says <span style="margin-left: 5mm"></span> <a href="#auto-10">7</a></font>
+        <font style="font-size: 92.0%">What the scalar lemma says <span style="margin-left: 5mm"></span> <a href="#auto-9">6</a></font>
       </p>
       <p>
         14.2<span style="margin-left: 1em"></span>The lattice version <span style="margin-left: 5mm"></span> <a
+        href="#auto-10">6</a>
+      </p>
+      <p>
+        14.3<span style="margin-left: 1em"></span>A pointwise bound <span style="margin-left: 5mm"></span> <a
         href="#auto-11">7</a>
       </p>
       <p>
@@ -210,7 +178,7 @@
       </p>
       <p>
         15.2<span style="margin-left: 1em"></span>Three contributions <span style="margin-left: 5mm"></span> <a
-        href="#auto-15">8</a>
+        href="#auto-15">9</a>
       </p>
       <p>
         15.3<span style="margin-left: 1em"></span>Closing the loop <span style="margin-left: 5mm"></span> <a href="#auto-16">9</a>
@@ -222,7 +190,7 @@
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-18">10</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>Removing the cutoffs</b> <span style="margin-left: 5mm"></span> <a href="#auto-19">11</a>
+        <b>Removing the cutoffs</b> <span style="margin-left: 5mm"></span> <a href="#auto-19">10</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>16<span style="margin-left: 1em"></span>The boundary at infinite resolution</b> <span
@@ -239,7 +207,7 @@
         16.3<span style="margin-left: 1em"></span>Restarted laws <span style="margin-left: 5mm"></span> <a href="#auto-23">12</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-24">14</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-24">13</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>17<span style="margin-left: 1em"></span>Tightness and tails</b> <span style="margin-left: 5mm"></span>
@@ -250,49 +218,49 @@
         href="#auto-26">14</a>
       </p>
       <p>
-        17.2<span style="margin-left: 1em"></span>The terminal field <span style="margin-left: 5mm"></span> <a
-        href="#auto-27">14</a>
+        17.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum principle <span
+        style="margin-left: 5mm"></span> <a href="#auto-27">14</a>
       </p>
       <p>
-        17.3<span style="margin-left: 1em"></span>Exponential moments <span style="margin-left: 5mm"></span> <a
-        href="#auto-28">15</a>
+        17.3<span style="margin-left: 1em"></span>The terminal field <span style="margin-left: 5mm"></span> <a
+        href="#auto-28">14</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-29">16</a>
+        17.4<span style="margin-left: 1em"></span>Exponential moments <span style="margin-left: 5mm"></span> <a
+        href="#auto-29">15</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-30">16</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>18<span style="margin-left: 1em"></span>Identifying the limit</b> <span style="margin-left: 5mm"></span>
-        <a href="#auto-30">17</a>
-      </p>
-      <p>
-        18.1<span style="margin-left: 1em"></span>The deterministic coefficients <span style="margin-left: 5mm"></span>
         <a href="#auto-31">17</a>
       </p>
       <p>
-        18.2<span style="margin-left: 1em"></span>The exact flow as a controlled explicit flow
-        <span style="margin-left: 5mm"></span> <a href="#auto-32">17</a>
+        18.1<span style="margin-left: 1em"></span>The deterministic coefficients <span style="margin-left: 5mm"></span>
+        <a href="#auto-32">17</a>
       </p>
       <p>
-        18.3<span style="margin-left: 1em"></span>The limit law <span style="margin-left: 5mm"></span> <a href="#auto-33">19</a>
+        18.2<span style="margin-left: 1em"></span>The exact flow as a controlled explicit flow
+        <span style="margin-left: 5mm"></span> <a href="#auto-33">17</a>
+      </p>
+      <p>
+        18.3<span style="margin-left: 1em"></span>The limit law <span style="margin-left: 5mm"></span> <a href="#auto-34">20</a>
       </p>
       <p>
         18.4<span style="margin-left: 1em"></span>The filtering model and the FBSDE <span style="margin-left: 5mm"></span>
-        <a href="#auto-34">21</a>
+        <a href="#auto-35">21</a>
       </p>
       <p>
         18.5<span style="margin-left: 1em"></span>The renormalised field equation <span style="margin-left: 5mm"></span>
-        <a href="#auto-35">23</a>
+        <a href="#auto-36">23</a>
       </p>
       <p>
-        18.6<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger along the scales <span
-        style="margin-left: 5mm"></span> <a href="#auto-36">24</a>
-      </p>
-      <p>
-        18.7<span style="margin-left: 1em"></span>Uniqueness in law and the variational formula
+        18.6<span style="margin-left: 1em"></span>Uniqueness in law and the variational formula
         <span style="margin-left: 5mm"></span> <a href="#auto-37">25</a>
       </p>
       <p>
-        18.8<span style="margin-left: 1em"></span>What is not proved, and where to go next <span
+        18.7<span style="margin-left: 1em"></span>What is not proved, and where to go next <span
         style="margin-left: 5mm"></span> <a href="#auto-38">27</a>
       </p>
       <p>
@@ -324,10 +292,10 @@
 \end{array}\)
     </center>
     <p>
-      where \(Y\) is the approximate forecast built from the explicit action
-      \(\bar{\Gamma}_q\), \(Z = \psi - Y\) is its error, and \(\psi = Y + Z\)
-      is the exact forecast, a martingale. The inputs from Lecture 5, all for
-      \(q \geqslant q_{\ast}\), are:
+      where \(Y\) is the approximate forecast built from the explicit force
+      \(\bar{\mathcal{F}}_q\), \(Z = \psi - Y\) is its error, and \(\psi = Y +
+      Z\) is the exact forecast, a martingale. The inputs from Lecture 5, all
+      for \(q \geqslant q_{\ast}\), are:
     </p>
     <div class="enum-Alpha">
       <ol>
@@ -366,47 +334,17 @@
       fields of \(Y\).
     </p>
     <p>
-      <div style="display: inline">
-        <a id="auto-2"></a>
-      </div>
-      <h5>How a priori estimates for FBSDEs are usually obtained.<span style="margin-left: 1em"></span></h5>
-      <div style="display: inline">
-        For an FBSDE with Lipschitz coefficients one estimates \(\mathbb{E}
-        \|Z_q \|^2\) by It&ocirc;'s formula and Gronwall, and closes either on
-        a short time interval or under a monotonicity condition [<a href="#bib-MY99">MY99</a>].
-        Here the time interval is infinite, the coefficients are not uniformly
-        Lipschitz in the relevant norms, and the coupling is not small in a
-        Lipschitz sense. What we have instead is structure:
-      </div>
+      <strong>How a priori estimates for FBSDEs are usually obtained.</strong>
+      For an FBSDE with Lipschitz coefficients one estimates \(\mathbb{E}
+      \|Z_q \|^2\) by It&ocirc;'s formula and Gronwall, and closes either on a
+      short time interval or under a monotonicity condition [<a href="#bib-MY99">MY99</a>].
+      Here the time interval is infinite, the coefficients are not uniformly
+      Lipschitz in the relevant norms, and the coupling is not small in a
+      Lipschitz sense. What we have instead is structure: the backward
+      equation is linear in \(Z\), the forward equation is a memoryless cubic
+      elliptic equation at each resolution, and its noise is sub-Gaussian
+      whatever the interaction.
     </p>
-    <ul>
-      <li>
-        <p>
-          the backward equation is <em>linear</em> in \(Z\), given \(Y\), so
-          it can be solved by a conditional representation formula with an
-          explicit propagator;
-        </p>
-      </li>
-      <li>
-        <p>
-          the forward equation is, by the field equation of Lecture 4, a cubic
-          <em>elliptic</em> equation at each resolution, with no memory, which
-          is coercive and can be estimated pathwise;
-        </p>
-      </li>
-      <li>
-        <p>
-          its noise is a conditional expectation of the measurement noise,
-          hence sub-Gaussian whatever the interaction;
-        </p>
-      </li>
-      <li>
-        <p>
-          the two estimates are linked through two weighted energies whose
-          weights are matched.
-        </p>
-      </li>
-    </ul>
     <p>
       <strong>Origin of the results.</strong> The results of Lectures
       5&ndash;6 are new. They were obtained recently, with the use of AI, in
@@ -415,13 +353,11 @@
     </p>
     <p>
       <strong>Where the system starts.</strong> The system starts at \(q_0\)
-      with \(Y_{q_0} = Z_{q_0} = 0\). The auxiliary scale \(q_{\ast}\), large
-      depending on \(\lambda\), \(q_0\) and the finite part of the mass, is
-      where the action stops being frozen (Section <a href="cqft_lecture5.html#sec:low-action">12.5</a>). The
-      energies below are integrated from \(q_{\ast}\), and no value of \(Y\)
-      at \(q_{\ast}\) is used: this is what the memoryless field equation
-      makes possible. Below \(q_{\ast}\) everything follows from the
-      martingale property of the forecast (Section <a href="#sec:restart">16.3</a>).
+      with \(Y_{q_0} = Z_{q_0} = 0\). The energies below are integrated from
+      \(q_{\ast}\) (Section <a href="cqft_lecture5.html#sec:low-action">12.5</a>), and no value of \(Y\) at
+      \(q_{\ast}\) is used: this is what the memoryless field equation makes
+      possible. Below \(q_{\ast}\) everything follows from the martingale
+      property of the forecast (Section <a href="#sec:restart">16.3</a>).
     </p>
     <p>
       Sections <a href="#sec:energies">13</a>&ndash;<a href="#sec:backward">15</a> prove these estimates at
@@ -444,16 +380,16 @@
           <em>Forward coercivity</em> (Proposition <a href="#prop:forward">14.3</a>):
           pathwise, at each scale, the cube bounds the large-field part of
           \(Y\) by the noise tails and \(Z\). It controls where the explicit
-          action is inaccurate.
+          force is inaccurate.
         </p>
       </li>
       <li>
         <p>
           <em>Backward representation</em> (Proposition <a href="#prop:backward">15.2</a>):
-          \(Z\) is the transported defect. Its energy is bounded by the
-          bounded-field source, a boundary term, and \(C \gamma^2 / q_{\ast}\)
-          times the large-field action. This factor is the only smallness that
-          closes the loop.
+          \(Z\) is the transported defect, as the equation is linear in it.
+          Its energy is bounded by the bounded-field source, a boundary term,
+          and \(C \gamma^2 / q_{\ast}\) times the large-field action. This
+          factor is the only smallness that closes the loop.
         </p>
       </li>
       <li>
@@ -494,9 +430,17 @@
       </li>
       <li>
         <p>
-          <em>Sources</em> (Proposition <a href="#prop:source">17.2</a>): quartic and
+          <em>Sources</em> (Proposition <a href="#prop:source">17.3</a>): quartic and
           Gaussian tails. These are end results, and nothing else depends on
           them.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Pointwise bounds</em> (Proposition <a href="#prop:sup">14.4</a>, Lemmas <a
+          href="#lem:noise-sup">14.5</a>, <a href="#lem:sup">17.1</a>): after closure, large fields
+          occur only at finitely many dyadic scales. Neither the loop nor the
+          identification of the limit uses them.
         </p>
       </li>
     </ul>
@@ -510,18 +454,18 @@
       Girsanov's theorem (Theorem <a href="#thm:limit">18.6</a>), with no further estimate
       on the flow, only the convergence of \(H\) and \(b\) and lower
       semicontinuity. The restart at every \((q, x)\) gives the kernel
-      \(\Pi_q\): the formula (<a href="#eq:D">18.16</a>), the statement that the
+      \(\Pi_q\): the formula (<a href="#eq:D">18.18</a>), the statement that the
       forecast is a continuous function of the field, its convergence at each
-      scale, and Section <a href="#sec:law-var">18.7</a>; the sources use it at \((q_0,
+      scale, and Section <a href="#sec:law-var">18.6</a>; the sources use it at \((q_0,
       hC_{q_0} f)\). Higher moments of the energies serve only for the
-      stretched exponential bound, the higher moments in Corollary <a href="#cor:tight">17.1</a>,
-      and (<a href="#eq:restart-low">16.10</a>) with \(p > 1\).
+      stretched exponential bound, the higher moments in Corollary <a href="#cor:tight">17.2</a>
+      and in Lemma <a href="#lem:sup">17.1</a>, and (<a href="#eq:restart-low">16.10</a>) with \(p > 1\).
     </p>
     <p>
 
     </p>
-    <h2 id="auto-3"><a id="sec:energies"></a>13<span style="margin-left: 1em"></span>The energies<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-4">13.1<span style="margin-left: 1em"></span>Moments at fixed cutoff<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-2"><a id="sec:energies"></a>13<span style="margin-left: 1em"></span>The energies<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3">13.1<span style="margin-left: 1em"></span>Moments at fixed cutoff<span style="margin-left: 1em"></span></h3>
     <p>
       All estimates below are first proved on a finite interval \([q_{\ast},
       T]\) and at fixed \(N\). There, everything is finite.
@@ -540,30 +484,28 @@
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>\(P\) has all maximal moments, since
-      \(\nu_N\) has all moments. Global convexity, \(D^2 \bar{\Psi}_q
-      \geqslant cq\) and \(D \bar{\Psi}_q (0) = 0\), gives \(\|Y_q \|
-      \leqslant C \|P_q \| / q\). Doob's inequality for the martingale
-      \(\psi_q =\mathbb{E}_q \Phi_{\infty}\) gives its maximal moments, and
-      \(Z = \psi - Y\). For the integrands, \(\|\operatorname{Cov}_q
-      \|_{\text{HS}} \leqslant \text{Tr} \operatorname{Cov}_q
-\leqslant
-      \mathbb{E}_q \| \Phi_{\infty} \|^2\), and \(\|H_q (Y_q)\|_{\text{HS}}
-      \leqslant C \sqrt{\dim H_N} / q\). The energies involve, besides \(Y\)
-      and \(Z\), the field \(\zeta_q\) of Section <a href="#sec:field">13.2</a> and
-      \(\varrho_q (Y_q)\); finite-dimensional norm equivalence and \(\|
-      \varrho_q (y)\| \leqslant \varepsilon_q \|y\|\) give their moments.<span
-      style="margin-left: 1em"></span>\(\Box\)
+      \(\nu_N\) has all moments. Global coercivity, \(K_q + D
+      \bar{\mathcal{F}}_q \geqslant cq\) and \(\bar{\mathcal{F}}_q (0) = 0\),
+      gives \(\|Y_q \| \leqslant C \|P_q \| / q\). Doob's inequality for the
+      martingale \(\psi_q =\mathbb{E}_q \Phi_{\infty}\) gives its maximal
+      moments, and \(Z = \psi - Y\). For the integrands,
+      \(\|\operatorname{Cov}_q \|_{\text{HS}} \leqslant \text{Tr}
+      \operatorname{Cov}_q
+\leqslant \mathbb{E}_q \| \Phi_{\infty} \|^2\), and
+      \(\|H_q (Y_q)\|_{\text{HS}} \leqslant C \sqrt{\dim H_N} / q\). The
+      energies involve, besides \(Y\) and \(Z\), the field \(\zeta_q\) of
+      Section <a href="#sec:field">13.2</a> and \(\varrho_q (Y_q)\); finite-dimensional
+      norm equivalence and \(\| \varrho_q (y)\| \leqslant \varepsilon_q
+      \|y\|\) give their moments.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       These constants depend on \(N\) and \(T\). They are used only to justify
       the absorptions below, never in the final bounds.
     </p>
-    <h3 id="auto-5"><a id="sec:field"></a>13.2<span style="margin-left: 1em"></span>The field equation<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-4"><a id="sec:field"></a>13.2<span style="margin-left: 1em"></span>The field equation<span style="margin-left: 1em"></span></h3>
     <p>
-      Lecture 5 realises the process as a measurement: by <a href="cqft_lecture5.html#eq:observation">(10.5)</a>,
-      \(P_q = (q - q_0) \Phi_{\infty} + B_{q - q_0}\), with \(B\) a Brownian
-      motion. Since \(\psi_q =\mathbb{E}_q \Phi_{\infty}\), the noise seen at
-      resolution \(q\) is explicit:
+      By (<a href="cqft_lecture5.html#eq:observation">10.5</a>) the noise of Section <a href="cqft_lecture4.html#sec:DS">9.2</a> of Lecture
+      4 is here the filtered measurement noise:
     </p>
     <table width="100%">
       <tr>
@@ -573,9 +515,9 @@
       </tr>
     </table>
     <p>
-      This is the noise observable of Theorem <a href="cqft_lecture4.html#thm:DS-scale">B.1</a> of Lecture 4 in
+      This is the noise observable of Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a> of Lecture 4 in
       the profile <a href="cqft_lecture5.html#eq:dictionary-profile">(10.2)</a>, where \(S_q = C_q\) and the regulator
-      is \(q - q_0\). Its bound (Proposition <a href="cqft_lecture4.html#prop:subgauss">B.3</a> of Lecture 4) is
+      is \(q - q_0\). Its bound (Proposition <a href="cqft_lecture4.html#prop:subgauss">9.5</a> of Lecture 4) is
       here one line.
     </p>
     <div class="theorem">
@@ -633,7 +575,7 @@ Z_q),
       </tr>
     </table>
     <p>
-      This is the equation we estimate: the field equation <a href="cqft_lecture4.html#eq:field-eq-scale">(B.4)</a>
+      This is the equation we estimate: the field equation <a href="cqft_lecture4.html#eq:field-eq-scale">(9.7)</a>
       of Lecture 4 in these coordinates. Three remarks:
     </p>
     <ul>
@@ -660,7 +602,7 @@ Z_q),
       so at large resolution all the coercivity must come from the cube. The
       next section shows that it does.
     </p>
-    <h3 id="auto-6">13.3<span style="margin-left: 1em"></span>Thresholds and energies<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-5">13.3<span style="margin-left: 1em"></span>Thresholds and energies<span style="margin-left: 1em"></span></h3>
     <p>
       Define the signed excess of \(V\) over three quarters of the threshold,
       the large-field part of \(Y\), and the large values of the noise,
@@ -732,7 +674,7 @@ t_q = Y_q
         </table></font>
       </p>
     </center>
-    <h3 id="auto-7">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-6">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">13.1</class>.
@@ -783,7 +725,7 @@ Z_s) \mathrm{d} s.\)
     <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%">Below the auxiliary scale \(\varrho\) comes from the
-        frozen action, and is not small. Here the noise is exactly Gaussian,
+        frozen force, and is not small. Here the noise is exactly Gaussian,
         but the memory has the size of the mass term. Why would testing it
         with \(w^3\) need the Hardy inequality \(\|q^{- 1} \int_0^q f\|_{L^4
         (q^{- 1 / 2} \mathrm{d} q)} \leqslant \frac{8}{7}
@@ -792,8 +734,8 @@ Z_s) \mathrm{d} s.\)
         <class style="font-style: normal">(<a href="#eq:field">13.4</a>)</class> trade to avoid this?</font>
       </p>
     </div>
-    <h2 id="auto-8"><a id="sec:forward"></a>14<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-9">14.1<span style="margin-left: 1em"></span>The scalar model<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-7"><a id="sec:forward"></a>14<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-8">14.1<span style="margin-left: 1em"></span>The scalar model<span style="margin-left: 1em"></span></h3>
     <p>
       On one site the Laplacian disappears. We also drop the small Lipschitz
       correction \(\varrho\) (restored in Proposition <a href="#prop:forward">14.3</a>) and
@@ -901,7 +843,7 @@ w^4 + \frac{qr}{13} |w|^3 -
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-10"></a>
+        <a id="auto-9"></a>
       </div>
       <h5>What the scalar lemma says.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -914,7 +856,7 @@ w^4 + \frac{qr}{13} |w|^3 -
         \(q\).
       </div>
     </p>
-    <h3 id="auto-11">14.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-10">14.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">14.3</class>.
@@ -1032,6 +974,106 @@ w^4 + \frac{qr}{13} |w|^3 -
       \(\zeta\) are those of the free field whatever the interaction: this
       replaces the subtraction of a Gaussian field.
     </p>
+    <h3 id="auto-11"><a id="sec:sup"></a>14.3<span style="margin-left: 1em"></span>A pointwise bound<span style="margin-left: 1em"></span></h3>
+    <p>
+      The maximum principle gives more than the integrated estimate: a bound
+      in \(L^{\infty}\) driven by the cube alone.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">14.4</class>.
+        </strong><i><class style="font-style: normal"><strong>(\(L^{\infty}\) coercivity)
+        </strong></class><a id="prop:sup"></a>For \(q_{\ast}\) large, at every cutoff,
+        pathwise and for every \(q \geqslant q_{\ast}\),</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:sup"></a>\(\displaystyle \|Y_q \|_{\infty}
+          \leqslant C \left[ \left( \frac{q}{\gamma} \right)^{1 / 3}
+\|
+          \zeta_q \|_{\infty}^{1 / 3} +\| \zeta_q \|_{\infty} + q^{1 / 4} +
+          q\|Z_q
+\|_2 \right] . \)</td>
+          <td align="right">(14.6)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>In particular there is \(c > 0\) such that \(t_q = 0\), i.e.
+        \(\|Y_q \|_{\infty} \leqslant r_q\), whenever \(\| \zeta_q \|_{\infty}
+        + q \|Z_q \|_2 \leqslant cr_q\): large fields occur only when the
+        noise or the error is large.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>Let \(p = q - q_0\), \(d = \zeta_q -
+      \varrho_q (Y_q)\), and remove the error by \(\mathcal{H}= pC_{q_0}
+      Z_q\). Then \(\|\mathcal{H}\|_{\infty} \leqslant pa (q_0) \|Z_q \|_2
+      \leqslant Cq \|Z_q \|_2\), since the kernel of \(C_{q_0}\) is in \(L^2\)
+      uniformly in \(N\) by <a href="cqft_lecture5.html#eq:a2">(10.3)</a>. By <class style="font-style: normal">(<a href="#eq:field">13.4</a>)</class>,
+      \(W = V -\mathcal{H}\) and \(D =\mathcal{H}+ d\) satisfy
+    </p>
+    <center>
+      \(\displaystyle K_{q_0} W + \frac{\gamma}{3}  (W + D)^3 = pd, \qquad Y_q
+      = W + D.\)
+    </center>
+    <p style="margin-bottom: 1em">
+      At a positive maximum of \(W\), \(K_{q_0} W \geqslant 0\), so \(W + D
+      \leqslant (3 p\|d\|_{\infty} / \gamma)^{1 / 3}\) there; similarly at a
+      negative minimum. Hence \(\|Y_q \|_{\infty} \leqslant 2 \|D\|_{\infty} +
+      (3 q\|d\|_{\infty} / \gamma)^{1
+/ 3}\). With \(\| \varrho_q
+      (Y_q)\|_{\infty} \leqslant \varepsilon_q \|Y_q \|_{\infty}\), the term
+      \(2 \varepsilon_q \|Y_q \|_{\infty}\) is absorbed, and by Young's
+      inequality \((q \varepsilon_q \|Y_q \|_{\infty} / \gamma)^{1 / 3}
+      \leqslant \frac{1}{4}
+\|Y_q \|_{\infty} + C (q \varepsilon_q /
+      \gamma)^{1 / 2}\), where \(q \varepsilon_q / \gamma \leqslant C
+      \sqrt{q}\) since \(g_q = \gamma q^{- 1 / 2}\). This proves <class style="font-style: normal">(<a
+      href="#eq:sup">14.6</a>)</class>. For the last claim use \(q / \gamma = r_q^2\):
+      the terms of <class style="font-style: normal">(<a href="#eq:sup">14.6</a>)</class> are at most \(C
+      (c^{1 / 3} + c + g_q^{1 / 2}) r_q\), and \(g_q^{1 / 2} \leqslant
+      g_{q_{\ast}}^{1 / 2}\) is small.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.5</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum of the noise) </strong></class><a id="lem:noise-sup"></a>Uniformly
+        in \(N\) and in the interaction,</i>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i><center>
+          \(\displaystyle \|\mathcal{N}\|_{L^p (\mathbb{P})} \leqslant C
+          \sqrt{p}, \qquad \mathcal{N} :=
+\sup_{q \geqslant q_{\ast}} q^{- 1 /
+          4}  (\log (2 + q))^{- 1 / 2} \| \zeta_q
+\|_{\infty} .\)
+        </center></i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>At fixed \(q\) the norm \(f \mapsto \|C_q
+      f\|_{\infty}\) is convex, so by Lemma <a href="#lem:noise">13.2</a> \(\| \zeta_q
+      \|_{\infty}\) is dominated by the supremum of the Gaussian field \(C_q
+      B_{q - q_0}\). Its variance is at most \(C \sqrt{q}\), and for \(\theta
+      < 1\) its increments have variance at most \(C \sqrt{q}  (\sqrt{q} |x -
+      y|)^{\theta}\) uniformly in \(N\), so Dudley's bound gives the mean
+      \(\lesssim q^{1 / 4} \sqrt{\log (2 + q)}\) and Gaussian concentration
+      gives fluctuations at the scale \(q^{1 / 4}\). For the supremum over \(s
+      \in [Q, 2 Q]\), write \(C_s = C_{2 Q} K_{2 Q} C_s\), where \(\|K_{2 Q}
+      C_s \|_{\infty \to \infty} \leqslant 2\). Since \(\mathrm{d} \eta_q = (I
+      - (q - q_0) \text{Cov}_q) \hspace{0.17em} \mathrm{d}
+W_q\) by <a href="cqft_lecture5.html#eq:dpsi">(10.8)</a>,
+      \(\eta\) is a martingale, \(\|C_{2 Q} \eta_s \|_{\infty}\) is a
+      submartingale, and Doob's inequality gives, for \(p \geqslant 2\), \(\|
+      \sup_{s \in [Q, 2 Q]} \| \zeta_s \|_{\infty} \|_{L^p} \leqslant CQ^{1 /
+      4}
+(\sqrt{\log (2 + Q)} + \sqrt{p})\). Markov's inequality with \(p
+      \asymp \lambda^2 \log (2 + Q)\) bounds the probability that the
+      normalised supremum over \([Q, 2 Q]\) exceeds \(\lambda\) by \((2 +
+      Q)^{- c \lambda^2}\), for \(\lambda \geqslant \lambda_0\). This is
+      summable over dyadic \(Q\), and \(\|\mathcal{N}\|_p \leqslant C
+      \sqrt{p}\) follows.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
     <h3 id="auto-12">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
@@ -1066,22 +1108,6 @@ w^4 + \frac{qr}{13} |w|^3 -
         \((q|g| / \gamma)^{1 / 3}\) and with \(r\). Is the exponent \(5 / 12\)
         of \((q|g|)^{1 / 3} \approx q^{5 / 12}\) attained on one site? What
         should improve it on the lattice?</font>
-      </p>
-    </div>
-    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
-      <p>
-        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.4</class>.
-        </strong><class style="font-style: normal"><strong>(A pointwise bound) </strong></class><a
-        id="ex:sup"></a>Show that, for \(q_{\ast}\) large and \(q \geqslant
-        q_{\ast}\), pathwise, \(\|Y_q \|_{\infty} \leqslant C [(q / \gamma)^{1
-        / 3} \| \zeta_q \|_{\infty}^{1
-/ 3} + \| \zeta_q \|_{\infty} + q^{1 /
-        4} + q \|Z_q \|_2]\). Hint: remove the error by \(\mathcal{H}= (q -
-        q_0) C_{q_0} Z_q\), and use the maximum principle on (<a href="#eq:field">13.4</a>).
-        Conclude that large fields occur only when the noise or the error is
-        large. Why is the exponent \(5 / 12\) of \((q \| \zeta_q
-        \|_{\infty})^{1 / 3}\) below the \(\frac{1}{2}\) of the threshold
-        \(r_q\)?</font>
       </p>
     </div>
     <h2 id="auto-13"><a id="sec:backward"></a>15<span style="margin-left: 1em"></span>Backward feedback and
@@ -1145,7 +1171,7 @@ s}
       So \(Z\) is the expected source accumulated on the unresolved scales,
       transported back to \(q\), plus the boundary error. This is the
       conditional-expectation form of a backward equation, as in \(F_t
-      =\mathbb{E}_t [F_T]\) for the force (Theorem <a href="cqft_lecture4.html#thm:fbsde">7.4</a>); here the
+      =\mathbb{E}_t [F_T]\) for the force (Theorem <a href="cqft_lecture4.html#thm:fbsde">7.3</a>); here the
       source is the defect.
     </p>
     <h3 id="auto-15">15.2<span style="margin-left: 1em"></span>Three contributions<span style="margin-left: 1em"></span></h3>
@@ -1230,15 +1256,6 @@ p} .\)
       \gamma^2}{q_{\ast}} \hspace{0.17em} \|J_T \|_{L^p}
 .\)
     </center>
-    <p>
-      <em>This is how the clipping error is controlled.</em> The large-field
-      source \(b^{\text{l}}\) is not small; but its squared \(L^2\) norm is
-      controlled by the sixth power of the large-field part,
-      \(\|b^{\text{l}}_q \|_2^2 \leqslant C \gamma^4 q^{- 5} \|t_q \|_6^6\)
-      (B), and after transport by the propagator and integration with the
-      energy weight it contributes to the backward energy only through
-      \(J_T\), with the small factor \(\gamma^2 / q_{\ast}\).
-    </p>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">15.2</class>.
@@ -1314,16 +1331,13 @@ T, p})
       </p>
     </center>
     <p>
-      Forward coercivity estimates the large fields using the backward energy;
-      the backward representation returns that energy with a small
-      coefficient. Neither half closes on its own. The smallness is in the
-      <em>feedback</em>, \(\gamma^2 / q_{\ast}\), not in the coupling of
-      either equation, and it is independent of the moment order, so a single
-      \(q_{\ast}\) closes the loop for every \(p\). The growth \(p^5\) is then
-      inherited from the tails of the noise, \(G_T\), and gives stretched
-      exponential moments \(\mathbb{E} \exp \{c (E_{\infty} + J_{\infty})^{1 /
-      5} \} < \infty\) once the boundary term is removed. Note that \(\gamma^2
-      / q_{\ast} = g_{q_{\ast}}^2\).
+      The smallness is in the <em>feedback</em>, \(\gamma^2 / q_{\ast}\), not
+      in the coupling of either equation, and it is independent of the moment
+      order, so a single \(q_{\ast}\) closes the loop for every \(p\). The
+      growth \(p^5\) is then inherited from the tails of the noise, \(G_T\),
+      and gives stretched exponential moments \(\mathbb{E} \exp \{c
+      (E_{\infty} + J_{\infty})^{1 / 5} \} < \infty\) once the boundary term
+      is removed. Note that \(\gamma^2 / q_{\ast} = g_{q_{\ast}}^2\).
     </p>
     <h3 id="auto-17">15.4<span style="margin-left: 1em"></span>Consequences<span style="margin-left: 1em"></span></h3>
     <p>
@@ -1371,21 +1385,6 @@ C_{\gamma}
         <td align="right">(15.6)</td>
       </tr>
     </table>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">15.4</class>. </strong><class style="font-style: normal"><strong>(Comparison
-      with the variational method) </strong></class>In the
-      Bou&eacute;&ndash;Dupuis approach (Theorem <a href="cqft_lecture4.html#thm:BD">9.1</a>) one
-      estimates a drift \(u\) which is the costate up to \(\dot{Q}^{1 / 2}\),
-      and the renormalisation is a change of variables \(u = - 4 \lambda
-      \dot{Q}^{1 / 2} : X^3 : + r\) (in the normalisation \(\lambda \int :
-      \varphi^4\): of Lecture 4) [<a href="#bib-BG20">BG20</a>]. Here the explicit action
-      \(\bar{\Gamma}\) plays the role of all such changes of variables at
-      once, in the forecast coordinate, and \(Z\) plays the role of the
-      remainder \(r\). The coercivity of the quartic term is used in both, but
-      here it is used <em>pathwise in the forward equation</em>, while the
-      remainder is estimated in expectation through the backward equation. The
-      precise statement is Theorem <a href="#thm:var">18.13</a>.
-    </p>
     <h3 id="auto-18">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
       <p>
@@ -1433,21 +1432,9 @@ C_{\gamma}
     </div>
     <h2 id="auto-19">Removing the cutoffs<span style="margin-left: 1em"></span></h2>
     <p>
-      Sections <a href="#sec:energies">13</a>&ndash;<a href="#sec:backward">15</a> proved, at every lattice
-      cutoff \(N\) and every upper scale \(T\),
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:energy-recall"></a>\(\displaystyle \|E_T \|_{L^p} + \|J_T
-        \|_{L^p} \leqslant C_{\gamma}  (1 + p^5 + \delta_{N,
-T, p}), \qquad
-        \delta_{N, T, p} = \|TZ_T \|^2_{L^{2 p} (\mathbb{P}; L^2)},\)</td>
-        <td align="right">(2)</td>
-      </tr>
-    </table>
-    <p>
-      for the backward energy \(E_T\) and the large-field action \(J_T\) of
-      <class style="font-style: normal">(<a href="#eq:energies">13.6</a>)</class>. Three things remain.
+      Sections <a href="#sec:energies">13</a>&ndash;<a href="#sec:backward">15</a> proved (<a href="#eq:energy">15.4</a>)
+      at every lattice cutoff \(N\) and every upper scale \(T\). Three things
+      remain.
     </p>
     <div class="enum-roman">
       <ol>
@@ -1473,23 +1460,15 @@ T, p}), \qquad
         </li>
       </ol>
     </div>
-    <p>
-      The structure of (iii) is instructive: convergence of the fields alone
-      does not suffice to pass to the limit in an FBSDE, because the backward
-      martingale might converge to something with extra noise (Remark <a href="#rem:hidden">18.7</a>).
-      Here the statistical meaning of the backward variable, a posterior mean,
-      saves us: the limit is written as an explicit density over an explicit
-      flow, and the equations are read off from it.
-    </p>
     <h2 id="auto-20"><a id="sec:terminal"></a>16<span style="margin-left: 1em"></span>The boundary at infinite
     resolution<span style="margin-left: 1em"></span></h2>
     <h3 id="auto-21">16.1<span style="margin-left: 1em"></span>The boundary lemma<span style="margin-left: 1em"></span></h3>
     <p>
       At a fixed lattice, the terminal resolution is \(q = \infty\), and the
       field at resolution \(q\), \(\Phi_q = C_q P_q\), converges to the
-      terminal field \(\Phi_{\infty}\). The approximate action
-      \(\bar{\Gamma}_q\) was built to converge to the bare action: \(\mu_q \to
-      \mu_N\), \(\Theta_q \to 0\), and the nonlinear corrections were
+      terminal field \(\Phi_{\infty}\). The approximate force
+      \(\bar{\mathcal{F}}_q\) was built to converge to the bare force: \(\mu_q
+      \to \mu_N\), \(\Theta_q \to 0\), and the nonlinear corrections were
       integrated from \(q = \infty\), so that they vanish there. This is the
       boundary condition of the backward equation.
     </p>
@@ -1526,23 +1505,25 @@ T, p}), \qquad
       \leqslant C_{N, p} q^{- 1 / 2}\).
     </p>
     <p>
-      <em>The approximate forecast.</em> Global convexity gives \(\|Y_q \|
+      <em>The approximate forecast.</em> Global coercivity gives \(\|Y_q \|
       \leqslant C \|P_q \| / q\), bounded in every \(L^p\) uniformly in \(q\).
-      The coordinate equation \(\Phi_q = Y_q + C_q D \bar{\Gamma}_q (Y_q)\)
-      and the bounds \(| \mu_q | \leqslant C_N\), \(\| \Theta_q
-      \|_{\text{row}} = O_N (q^{- 1 / 2})\) and \(\|D \tilde{h}_q
-      (y)\|_{\infty} \leqslant C \textsf{S}_4 (h^{[2]}_q)
+      The coordinate equation \(\Phi_q = Y_q + C_q  \bar{\mathcal{F}}_q
+      (Y_q)\) and the bounds \(| \mu_q | \leqslant C_N\), \(\| \Theta_q
+      \|_{\text{row}} = O_N (q^{- 1 / 2})\) and \(\| \tilde{\ell}_q
+      (y)\|_{\infty} \leqslant C \textsf{S}_4 (\ell^{[2]}_q)
 \|y\|_{\infty}^3
       \leqslant C \gamma^2 q^{- 1 / 2} \|y\|_{\infty}^3\) (Taylor from the
-      fourth order, since the low jets vanish) show that \(D \bar{\Gamma}_q
-      (Y_q)\) is bounded in \(L^p\), so \(\|Y_q - \Phi_q \|_{L^p} = O (q^{-
-      1})\). Moreover \(| \mu_q - \mu_N | = O_N (q^{- 1})\), and therefore
+      four-leg vertex, since the low jet vanishes) show that
+      \(\bar{\mathcal{F}}_q (Y_q)\) is bounded in \(L^p\), so \(\|Y_q - \Phi_q
+      \|_{L^p} = O (q^{- 1})\). Moreover \(| \mu_q - \mu_N | = O_N (q^{-
+      1})\), and therefore
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:gradient-match"></a>\(\displaystyle \|D \bar{\Gamma}_q (Y_q)
-        - DV_N (\Phi_{\infty})\|_{L^p} \leqslant C_{N, p}
-q^{- 1 / 2} .\)</td>
+        <td width="100%" align="center"><a id="eq:gradient-match"></a>\(\displaystyle \| \bar{\mathcal{F}}_q
+        (Y_q) - DV_N (\Phi_{\infty})\|_{L^p} \leqslant C_{N,
+p} q^{- 1 / 2}
+        .\)</td>
         <td align="right">(16.2)</td>
       </tr>
     </table>
@@ -1552,14 +1533,15 @@ q^{- 1 / 2} .\)</td>
     </p>
     <p>
       <em>The error.</em> Subtract the approximate coordinate identity \(P_q =
-      K_q Y_q + D \bar{\Gamma}_q (Y_q)\) from the exact posterior identity <a
-      href="cqft_lecture5.html#eq:posterior-ibp">(10.10)</a>, \(P_q = K_q \psi_q +\mathbb{E}_q  [DV_N
+      K_q Y_q + \bar{\mathcal{F}}_q (Y_q)\) from the exact posterior identity
+      <a href="cqft_lecture5.html#eq:posterior-ibp">(10.10)</a>, \(P_q = K_q \psi_q +\mathbb{E}_q  [DV_N
       (\Phi_{\infty})]\):
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:qZ"></a>\(\displaystyle qZ_q = qC_q  [D
-        \bar{\Gamma}_q (Y_q) -\mathbb{E}_q DV_N (\Phi_{\infty})] .\)</td>
+        <td width="100%" align="center"><a id="eq:qZ"></a>\(\displaystyle qZ_q = qC_q
+        [\bar{\mathcal{F}}_q (Y_q) -\mathbb{E}_q DV_N (\Phi_{\infty})]
+        .\)</td>
         <td align="right">(16.3)</td>
       </tr>
     </table>
@@ -1586,7 +1568,7 @@ q^{- 1 / 2} .\)</td>
     </p>
     <h3 id="auto-22">16.2<span style="margin-left: 1em"></span>UV stability<span style="margin-left: 1em"></span></h3>
     <p>
-      Now let \(T \to \infty\) at fixed \(N\) in <class style="font-style: normal">(<a href="#eq:energy-recall">2</a>)</class>:
+      Now let \(T \to \infty\) at fixed \(N\) in <class style="font-style: normal">(<a href="#eq:energy">15.4</a>)</class>:
       the paths and the law \(\nu_N\) do not depend on \(T\), \(E_T\) and
       \(J_T\) increase to \(E_{\infty}\) and \(J_{\infty}\), and \(\delta_{N,
       T, p} \to 0\) by Lemma <a href="#lem:terminal">16.1</a>. Only then take the supremum
@@ -1617,17 +1599,11 @@ C_{\gamma} q^{- 5
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>Monotone convergence in <class style="font-style: normal">(<a
-      href="#eq:energy-recall">2</a>)</class>, then the representation formula <class style="font-style: normal">(<a
+      href="#eq:energy">15.4</a>)</class>, then the representation formula <class style="font-style: normal">(<a
       href="#eq:representation">15.2</a>)</class> on \([q, \infty)\), whose terminal term vanishes
       by Lemma <a href="#lem:terminal">16.1</a>. The exponential moment follows from the
       polynomial growth by Markov's inequality with \(p \asymp R^{1 /
       5}\).<span style="margin-left: 1em"></span>\(\Box\)
-    </p>
-    <p>
-      The order of limits matters. The constant \(C_{N, p}\) in Lemma <a href="#lem:terminal">16.1</a>
-      diverges with \(N\), and we never take a supremum over \(N\) of the
-      remainder \(C_{N, p} / T\). The infinite-resolution boundary is used
-      only qualitatively, at each lattice separately.
     </p>
     <h3 id="auto-23"><a id="sec:restart"></a>16.3<span style="margin-left: 1em"></span>Restarted laws<span style="margin-left: 1em"></span></h3>
     <p>
@@ -1640,7 +1616,7 @@ C_{\gamma} q^{- 5
         style="font-style: normal"><strong>(Lipschitz coordinate) </strong></class><a id="lem:lip"></a>Uniformly
         in \(N\), \(\|y_s (x) - y_s (x')\|_{\infty} \leqslant 3 \|x - x'
         \|_{\infty}\) for \(s \geqslant q_{\ast}\) and with the constant \(6\)
-        for \(s < q_{\ast}\). So the drift in (<a href="#eq:flows">18.2</a>) is Lipschitz
+        for \(s < q_{\ast}\). So the drift in (<a href="#eq:flows">18.4</a>) is Lipschitz
         on \(L^{\infty}\) with constant \(7 / s\).</i>
       </p>
     </div>
@@ -1665,16 +1641,16 @@ C_{\gamma} q^{- 5
       at any scale, and these estimates are the input of Section <a href="#sec:hs-uniq">18.2</a>.
       Let \(\mathrm{e}^{- V_q (x)} =\mathbb{E} \mathrm{e}^{- V_N (x +
       \int_q^{\infty} C_s
-\hspace{0.17em} \mathrm{d} W_s)}\) be the exact
-      potential, and \(\mathbb{P}^{q, x}\) the exact flow conditioned on
-      \(\Phi_q = x\), \(\hspace{0.17em} \mathrm{d} \Phi = - C_s^2 DV_s (\Phi)
-      \hspace{0.17em}
-\mathrm{d} s + C_s \hspace{0.17em} \mathrm{d} W\). Fix
-      \(N\), \(q \geqslant q_0\) and \(x \in H_N\), \(R = \|x\|_{\infty}\). By
-      the Markov property of the flow, \(\mathbb{P}^{q, x}\) is the law of
-      \(P_t = K_q x + (t - q) \hat{\Phi} + B'_{t - q}\), \(t \geqslant q\),
-      where \(B'\) is a Brownian motion independent of \(\hat{\Phi}\), and
-      \(\hat{\Phi}\) has the law
+\hspace{0.17em} \mathrm{d} W_s)}\), and define the
+      exact force \(F_q = - DV_q\), and let \(\mathbb{P}^{q, x}\) be the exact
+      flow conditioned on \(\Phi_q = x\), \(\hspace{0.17em} \mathrm{d} \Phi =
+      - C_s^2 DV_s (\Phi) \hspace{0.17em}
+\mathrm{d} s + C_s \hspace{0.17em}
+      \mathrm{d} W\). Fix \(N\), \(q \geqslant q_0\) and \(x \in H_N\), \(R =
+      \|x\|_{\infty}\). By the Markov property of the flow, \(\mathbb{P}^{q,
+      x}\) is the law of \(P_t = K_q x + (t - q) \hat{\Phi} + B'_{t - q}\),
+      \(t \geqslant q\), where \(B'\) is a Brownian motion independent of
+      \(\hat{\Phi}\), and \(\hat{\Phi}\) has the law
     </p>
     <table width="100%">
       <tr>
@@ -1773,7 +1749,8 @@ s
             <td width="100%" align="center"><a id="eq:restart-low"></a>\(\displaystyle \sup_{q \leqslant s
             \leqslant q_{\ast}} \mathbb{E}^{q, x} (\| \psi_s \|_2^{2
 p} +
-            \|Y_s \|_4^{2 p} + \|Z_s \|_2^{2 p}) \leqslant C_{p, R} . \)</td>
+            \|Y_s \|_{\infty}^{2 p} + \|Z_s \|_2^{2 p}) \leqslant C_{p, R} .
+            \)</td>
             <td align="right">(16.10)</td>
           </tr>
         </table></i>
@@ -1843,12 +1820,15 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       q_{\ast}\), by Jensen. Now \(Y_s = y_{q_{\ast}} (x'_s)\) with \(x'_s =
       C_{q_{\ast}} P_s = C_{q_{\ast}} K_q x + (s - q) C_{q_{\ast}} \psi_s
       +
-C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). Testing <a href="cqft_lecture5.html#eq:coordinate">(12.5)</a> at
-      \(q_{\ast}\) with \(u - x'\), \(u = y + \varrho_{q_{\ast}} (y)\), gives
-      \(\|y\|_4 \leqslant \|x' \|_4 + \varepsilon_{q_{\ast}} \|y\|_4\). With
-      \(C_{q_{\ast}} : L^2 \to L^4\) bounded uniformly in \(N\) and Lemma <a
-      href="#lem:noise">13.2</a>, this bounds \(\mathbb{E} \|Y_s \|_4^{2 p}\). Then \(Z_s
-      = \psi_s - Y_s\). This proves (<a href="#eq:restart-low">16.10</a>).<span style="margin-left: 1em"></span>\(\Box\)
+C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). By Lemma <a href="#lem:lip">16.3</a>,
+      \(\|Y_s \|_{\infty} \leqslant 3 \|x'_s \|_{\infty}\), as \(y_{q_{\ast}}
+      (0) = 0\), and \(C_{q_{\ast}} : L^2 \to L^{\infty}\) is bounded
+      uniformly in \(N\), while \(\|C_{q_{\ast}} \mathbb{E}_s B'_{s - q}
+      \|_{\infty}\) is dominated in every convex moment by the supremum of a
+      Gaussian field at the fixed scale \(q_{\ast}\), by conditional Jensen as
+      in Lemma <a href="#lem:noise">13.2</a>. This bounds \(\mathbb{E} \|Y_s
+      \|_{\infty}^{2 p}\). Then \(Z_s = \psi_s - Y_s\). This proves (<a href="#eq:restart-low">16.10</a>).<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <h3 id="auto-24">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1857,7 +1837,7 @@ C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). Testing <a href="cqft_lecture5.html#eq:c
         </strong><class style="font-style: normal"><strong>(The force at infinite resolution)
         </strong></class><a id="ex:force-limit"></a> Show that, at fixed \(N\), \(F_q = K_q
         (\psi_q - \Phi_q) \to - DV_N (\Phi_{\infty})\) in every \(L^p\), and
-        that \(F_q = K_q Z_q - D \bar{\Gamma}_q (Y_q)\). Interpret the last
+        that \(F_q = K_q Z_q - \bar{\mathcal{F}}_q (Y_q)\). Interpret the last
         identity: the force observable of Lecture 4 is the explicit force at
         the approximate forecast, corrected by \(K_q Z_q\).</font>
       </p>
@@ -1892,7 +1872,76 @@ C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). Testing <a href="cqft_lecture5.html#eq:c
       becomes a cylindrical Brownian motion on \(H\), obtained as the limit of
       the lattice innovations.
     </p>
-    <h3 id="auto-27">17.2<span style="margin-left: 1em"></span>The terminal field<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-27">17.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum
+    principle<span style="margin-left: 1em"></span></h3>
+    <p>
+      The energy bounds control \(L^4\) and \(L^6\) norms of large fields.
+      Spatial suprema at finite resolution come from the \(L^{\infty}\)
+      coercivity of Proposition <a href="#prop:sup">14.4</a>.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">17.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum after closure) </strong></class><a id="lem:sup"></a>Let
+        \(\mathcal{Y}= \sup_{q \geqslant q_{\ast}} q^{- 5 / 12}  (\log (2 +
+        q))^{- 1 /
+6} \|Y_q \|_{\infty}\) and \(\mathcal{Z}= \sup_{q \geqslant
+        q_{\ast}} q^{5 / 4} \|Z_q \|_2\). For \(q_{\ast}\) large, with
+        \(\mathcal{N}\) the supremum of the noise of Lemma <a href="#lem:noise-sup">14.5</a>,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:sup-closure"></a>\(\displaystyle \mathcal{Y} \leqslant
+          C_{\gamma}  (1 +\mathcal{N}+\mathcal{Z}),
+          \qquad
+\|\mathcal{N}\|_{L^p} \leqslant C \sqrt{p}, \qquad
+          \|\mathcal{Z}^2 \|_{L^p}
+\leqslant C_{\gamma}  (1 + p^5), \)</td>
+          <td align="right">(17.1)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>uniformly in \(N\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>By the definitions, \(\| \zeta_q
+      \|_{\infty} \leqslant q^{1 / 4}  (\log (2 + q))^{1 / 2} \mathcal{N}\)
+      and \(q \|Z_q \|_2 \leqslant q^{- 1 / 4} \mathcal{Z}\). Inserting these
+      in <class style="font-style: normal">(<a href="#eq:sup">14.6</a>)</class>, the first term gives
+      \(\gamma^{- 1 / 3} q^{5 / 12}  (\log (2 + q))^{1 / 6} \mathcal{N}^{1 /
+      3}\), and the others are of lower order. The bound on \(\mathcal{Z}\) is
+      <class style="font-style: normal">(<a href="#eq:Z-sup">15.6</a>)</class>, whose boundary term vanishes
+      by Lemma <a href="#lem:terminal">16.1</a>.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      Any exponent below \(\frac{1}{2}\) keeps \(Y\) below the threshold
+      \(r_q\) at large \(q\). The exponent \(5 / 12\) comes from the cube
+      alone. The memory form of Exercise <a href="#ex:memory">13.3</a>, with a weight in
+      \(q\) absorbing the memory, gives every exponent above \(\frac{1}{4}\),
+      at the price of that absorption.
+    </p>
+    <p>
+      At the terminal resolution there is no such bound: \(\Phi_{\infty}\) is
+      a distribution.
+    </p>
+    <p>
+      <strong>What the pointwise bound gives, and what it does not.</strong>
+      The \(L^{\infty}\) bound cannot replace Proposition <a href="#prop:forward">14.3</a> in
+      the loop: it is linear in \(q \|Z_q \|_2\), so its sixth power is not
+      controlled by the energy \(E\), while the test with \(w^3\) gives a
+      bound quadratic in \(Z\). Once the loop has closed it does give more.
+      Almost surely \(\|Y_q \|_{\infty} \ll r_q\) past a random scale, so
+      large fields occur only at finitely many dyadic scales, and
+      \(\mathcal{D}_q (Y_q)\) is then the bounded-field defect alone. Suprema
+      over finite intervals of scales \(\geqslant q_{\ast}\) have all moments
+      uniformly in \(N\), which is the boundedness part of the hypothesis of
+      Section 18.1 along the exact flow, though Section 18.1 does not need it,
+      as it passes through the explicit flow. The same maximum principle, in
+      the form of Lemma <a href="#lem:lip">16.3</a>, gives the estimate below
+      \(q_{\ast}\) in Proposition <a href="#prop:restart">16.4</a>.
+    </p>
+    <h3 id="auto-28">17.3<span style="margin-left: 1em"></span>The terminal field<span style="margin-left: 1em"></span></h3>
     <p>
       The approximate forecast converges at infinite resolution in negative
       Sobolev spaces, uniformly in \(N\) (to the same limit as the forecast
@@ -1910,7 +1959,7 @@ C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). Testing <a href="cqft_lecture5.html#eq:c
         Q^{- (s -
 \frac{1}{2})}, \qquad \tfrac{1}{2} < s <
         \tfrac{3}{2},\)</td>
-        <td align="right">(17.1)</td>
+        <td align="right">(17.2)</td>
       </tr>
     </table>
     <p>
@@ -1934,7 +1983,7 @@ C_{q_{\ast}} \mathbb{E}_s B'_{s - q}\). Testing <a href="cqft_lecture5.html#eq:c
         \geqslant Q} \|Y_t - Y_Q \|^2_{H^{- s}} \leqslant
 C_s  \hspace{0.17em}
         Q^{- (s - \frac{1}{2})} .\)</td>
-        <td align="right">(17.2)</td>
+        <td align="right">(17.3)</td>
       </tr>
     </table>
     <p>
@@ -1942,24 +1991,16 @@ C_s  \hspace{0.17em}
       holds with \(Y_t\) replaced by \(\Phi_{\infty}\).
     </p>
     <p>
-      <strong>The field at the lower scale.</strong> Proposition <a href="#prop:forward">14.3</a>
-      at \(q = q_{\ast}\) gives \(\gamma \|t_{q_{\ast}} \|_6^6 \leqslant C
-      (q_{\ast} \| \xi_{q_{\ast}} \|_4^4 +
-\gamma \| \xi_{q_{\ast}} \|_6^6 +
-      \gamma^{- 1} q_{\ast}^2 \|Z_{q_{\ast}}
-\|_2^2)\), and Lemma <a href="#lem:representation">15.1</a>
-      gives \(\|Z_{q_{\ast}} \|_2^2 \leqslant C (\gamma^7 q_{\ast}^{- 3} +
-      q_{\ast}^{- 5 /
-2} \mathbb{E}_{q_{\ast}} A^{\text{l}})\). Since
-      \(\|Y_{q_{\ast}} \|_2 \leqslant r_{q_{\ast}} + \|t_{q_{\ast}} \|_6\), it
-      has all moments, uniformly in \(N\). So \(\sup_N \mathbb{E} \| \iota_N
-      \Phi^N_{\infty} \|_{H^{- s'}}^2 < \infty\) for \(\frac{1}{2} < s' <
-      \frac{3}{2}\), and as \(H^{- s'}\) embeds compactly in \(H^{- s}\) for
-      \(s > s'\):
+      <strong>The field at the lower scale.</strong> As in the proof of
+      Proposition <a href="#prop:restart">16.4</a>, \(\|Y_{q_{\ast}} \|_2\) has all moments,
+      uniformly in \(N\). So \(\sup_N \mathbb{E}\| \iota_N \Phi^N_{\infty}
+      \|_{H^{- s\prime}}^2 < \infty\) for \(\frac{1}{2} < s\prime <
+      \frac{3}{2}\), and these spaces embed compactly in \(H^{- s}\) for \(s >
+      s\prime\):
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Corollary <class style="font-style: normal">17.1</class>.
+        <strong class="enunciation-name">Corollary <class style="font-style: normal">17.2</class>.
         </strong><i><class style="font-style: normal"><strong>(Tightness of the lattice measures)
         </strong></class><a id="cor:tight"></a> For every \(s > \frac{1}{2}\) the
         embedded laws \(\nu_N \circ \iota_N^{- 1}\) are tight in \(H^{- s}
@@ -1970,7 +2011,7 @@ C_s  \hspace{0.17em}
     <p>
       For the moments: the drift integrals have all moments by <class style="font-style: normal">(<a
       href="#eq:uv">16.4</a>)</class>, and the \(H^{- s}\) martingale has a
-      deterministic bracket bound by <class style="font-style: normal">(<a href="#eq:noise-tail">17.1</a>)</class>
+      deterministic bracket bound by <class style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</class>
       at \(Q = q_{\ast}\), the field at the lower scale has all moments by the
       paragraph above, so the Burkholder&ndash;Davis&ndash;Gundy inequality
       gives all moments.
@@ -1980,7 +2021,7 @@ C_s  \hspace{0.17em}
       3\): the interacting field is no rougher than the Gaussian one. At every
       finite resolution its part \(V\) is smoother (\(H^1\)).
     </p>
-    <h3 id="auto-28"><a id="sec:hs-exp"></a>17.3<span style="margin-left: 1em"></span>Exponential moments<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-29"><a id="sec:hs-exp"></a>17.4<span style="margin-left: 1em"></span>Exponential moments<span style="margin-left: 1em"></span></h3>
     <p>
       Theorem <a href="#thm:uv">16.2</a> gives only stretched exponential moments of
       the energies. Hairer and Steele [<a href="#bib-HSt22">HSt22</a>] showed that the
@@ -1995,19 +2036,20 @@ C_s  \hspace{0.17em}
       \mathrm{e}^{h \langle \varphi, f \rangle} \nu_N\), which has all moments
       at fixed \(N\). Observe \(\hat{\Phi} \sim \hat{\nu}\) through the same
       channel, with \(\hat{\psi}_q =\mathbb{E}_q \hat{\Phi}\). <strong>Keep
-      the action, and shift the observation:</strong>
+      the force, and shift the observation:</strong>
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:shift"></a>\(\displaystyle K_q Y_q + D
-        \bar{\Gamma}_q (Y_q) = P_q + hf, \quad Z_q = \hat{\psi}_q - Y_q .
+        <td width="100%" align="center"><a id="eq:shift"></a>\(\displaystyle K_q Y_q +
+        \bar{\mathcal{F}}_q (Y_q) = P_q + hf, \quad Z_q = \hat{\psi}_q - Y_q
+.
         \)</td>
-        <td align="right">(17.3)</td>
+        <td align="right">(17.4)</td>
       </tr>
     </table>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Proposition <class style="font-style: normal">17.2</class>.
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">17.3</class>.
         </strong><i><class style="font-style: normal"><strong>(The source changes the field
         equation, not the system) </strong></class><a id="prop:source"></a>For \(q
         \geqslant q_{\ast}\): the pair \((Y, Z)\) solves (<a href="#eq:YZ">1</a>) with
@@ -2040,12 +2082,12 @@ C_s  \hspace{0.17em}
       <tr>
         <td width="100%" align="center"><a id="eq:endpoint"></a>\(\displaystyle \hat{\Phi} = Y_q + Z_q +
         \frac{\eta_q - B_{q - q_0}}{q - q_0} . \)</td>
-        <td align="right">(17.4)</td>
+        <td align="right">(17.5)</td>
       </tr>
     </table>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.3</class>. </strong><i><class
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.4</class>. </strong><i><class
         style="font-style: normal"><strong>(Quartic tails) </strong></class><a id="thm:hs"></a>Let
         \(\|f\|_{\ast} = \|f\|_1 + \|f\|_2 + \|f\|_{\infty}\). There are
         \(\beta, C\) independent of \(N\) and \(f\) such that</i>
@@ -2058,7 +2100,7 @@ C_s  \hspace{0.17em}
           \mathbb{E} \exp (\beta \langle \Phi_{\infty}^N, f \rangle^4
           /
 \|f\|_{\ast}^4) \leqslant C. \)</td>
-          <td align="right">(17.5)</td>
+          <td align="right">(17.6)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
@@ -2071,7 +2113,7 @@ C_s  \hspace{0.17em}
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>Let \(\|f\|_{\ast} = 1\) and \(q_h = \max
       (q_{\ast}, 2 q_0 + 1, (70 \gamma^{1 / 2} |h|)^{2 / 3})\). Put \(X =
-      \langle \hat{\Phi}, f \rangle\). By (<a href="#eq:endpoint">17.4</a>), \(|Y| \leqslant
+      \langle \hat{\Phi}, f \rangle\). By (<a href="#eq:endpoint">17.5</a>), \(|Y| \leqslant
       r_q + |t_q |\) and \(q - q_0 \geqslant q / 2\),
     </p>
     <center>
@@ -2081,7 +2123,7 @@ C_s  \hspace{0.17em}
       \rangle |.\)
     </center>
     <p>
-      Average over \([q_h, 2 q_h]\). By Proposition <a href="#prop:source">17.2</a>,
+      Average over \([q_h, 2 q_h]\). By Proposition <a href="#prop:source">17.3</a>,
       \(\hat{\mathbb{E}} J_{\infty} \leqslant C\) on \([q_h, \infty)\); since
       \(\gamma (2 q_h)^{- 3 / 2} \int_{q_h}^{2 q_h} \|t_q \|_6^6
       \hspace{0.17em}
@@ -2117,7 +2159,7 @@ cR^4}\) for \(R \geqslant R_0\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.4</class>. </strong><i><class
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.5</class>. </strong><i><class
         style="font-style: normal"><strong>(Gaussian tails at the free threshold)
         </strong></class><a id="thm:hs-gauss"></a>For \(s > \frac{1}{2}\) there is \(\beta_s
         > 0\) with \(\sup_N \mathbb{E} \exp (\beta_s \| \iota_N
@@ -2136,7 +2178,7 @@ cR^4}\) for \(R \geqslant R_0\).
       + J_{\infty}) \leqslant C (1 + \beta^2 x)\), and the argument for the
       field at the lower scale gives \(\hat{\mathbb{E}} \|Y_{q_{\ast}} \|_2^2
       \leqslant C (1 + \beta^2 x)\). Integrating the forward equation on
-      \([q_{\ast}, \infty)\), with (<a href="#eq:noise-tail">17.1</a>) for the martingale and
+      \([q_{\ast}, \infty)\), with (<a href="#eq:noise-tail">17.2</a>) for the martingale and
       Cauchy&ndash;Schwarz in \(q\) for the drifts, \(x \leqslant C_s (1 +
       \beta^2 x)\). So \(x \leqslant 2 C_s\) for small \(\beta\). Thus
       \(\hat{\nu} (A) \geqslant \frac{1}{2}\) for the ball \(A\) of radius
@@ -2145,7 +2187,7 @@ cR^4}\) for \(R \geqslant R_0\).
       \(\mathcal{Z}=\mathbb{E} \mathrm{e}^W \leqslant 2 \mathrm{e}^{\beta K^2
       / 2}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-29">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-30">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.1</class>.
@@ -2154,7 +2196,7 @@ cR^4}\) for \(R \geqslant R_0\).
         \frac{\lambda}{4} x^4 - \frac{q_0}{2} x^2)\), show that \(\mathbb{E}
         \exp (\frac{\beta}{4} x^4)\) is finite if and only if \(\beta
         \leqslant \lambda\). Compute \(L (h)\) asymptotically and compare with
-        Theorem <a href="#thm:hs">17.3</a>.</font>
+        Theorem <a href="#thm:hs">17.4</a>.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -2163,7 +2205,7 @@ cR^4}\) for \(R \geqslant R_0\).
         </strong><class style="font-style: normal"><strong>(The shift) </strong></class>Show
         directly on one site that \(q (\hat{\psi}_q - y_q) \to h\) if \(y_q\)
         solves \(qy + \lambda y^3 = P_q\), and that \(qZ_q \to 0\) with (<a
-        href="#eq:shift">17.3</a>). Why does a quartic tilt have no such shift, and which
+        href="#eq:shift">17.4</a>). Why does a quartic tilt have no such shift, and which
         power of the field does its boundary term produce?</font>
       </p>
     </div>
@@ -2172,7 +2214,7 @@ cR^4}\) for \(R \geqslant R_0\).
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.3</class>.
         </strong><class style="font-style: normal"><strong>(Moment growth and determinacy)
         </strong></class>Deduce Carleman's condition for \(\langle \Phi, f
-        \rangle\) from Theorem <a href="#thm:hs">17.3</a>. Why does the theorem exclude
+        \rangle\) from Theorem <a href="#thm:hs">17.4</a>. Why does the theorem exclude
         a nondegenerate Gaussian law for \(\langle \Phi, f \rangle\)?</font>
       </p>
     </div>
@@ -2190,10 +2232,10 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
         resolution smoother than the free field?</font>
       </p>
     </div>
-    <h2 id="auto-30"><a id="sec:limit"></a>18<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-31">18.1<span style="margin-left: 1em"></span>The deterministic coefficients<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-31"><a id="sec:limit"></a>18<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-32">18.1<span style="margin-left: 1em"></span>The deterministic coefficients<span style="margin-left: 1em"></span></h3>
     <p>
-      The coefficients \(M^N_q\), \(h^{[j], N}_q\), \(H^N_q (y)\), \(b^N_q
+      The coefficients \(M^N_q\), \(\ell^{[j], N}_q\), \(H^N_q (y)\), \(b^N_q
       (y)\) are constructed at each lattice. Their uniform bounds (Proposition
       <a href="cqft_lecture5.html#prop:coeff">11.1</a>) do not by themselves identify a limit: a weakly
       convergent vertex cannot in general be contracted against a varying
@@ -2219,7 +2261,7 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
           \theta\), then \((I + G_N \textsf{B}_N)^{- 1} G_N \to (I + G
           \textsf{B})^{- 1} G\) in Hilbert&ndash;Schmidt norm. The free
           resolvent is the compact factor that turns weak convergence of the
-          Hessian into strong convergence of the response.
+          derivative of the force into strong convergence of the response.
         </p>
       </li>
       <li>
@@ -2229,7 +2271,7 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
           the Hilbert&ndash;Schmidt convergence given by the sandwich, the
           squared kernels \((H^N_q)^2\) converge uniformly to a continuous
           kernel. Weakly convergent vertices of bounded variation can
-          therefore be contracted against them, and the trace steps of the
+          therefore be contracted against them, and the loop steps of the
           recursion pass to the limit.
         </p>
       </li>
@@ -2239,8 +2281,8 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
       almost every \(q \in I\), with \(\sup_I \|Y^N \|_{\infty}\) bounded, in
       probability, then \(H^N_q (Y^N_q) \to H_q (Y_q)\) and \(b^N_q (Y^N_q)
       \to b_q (Y_q)\) in \(L^2 (I ; \text{HS})\) and \(L^2 (I ; H)\), in
-      probability. By the resolvent identity \(H^N = (I - H^N D^2
-      \bar{\Gamma}^N) C^N\), for bounded \(y\), \(H^N\) is small in
+      probability. By the resolvent identity \(H^N = (I - H^N D
+      \bar{\mathcal{F}}^N) C^N\), for bounded \(y\), \(H^N\) is small in
       Hilbert&ndash;Schmidt norm on high modes, uniformly in \(N\); so the
       Fourier projection and \(j_N\) give the same limit, and \(\int_I \iota_N
       H^N (Y^N) \hspace{0.17em} \mathrm{d} W^N \to \int_I H
@@ -2248,11 +2290,11 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
 \hspace{0.17em} \mathrm{d} W\) in \(H\), in probability, when
       \(W^N\) is the projection of \(W\), and the processes are adapted to a
       filtration for which \(W\) is a Brownian motion. For \(q < q_{\ast}\)
-      this holds with the frozen coefficients, as \(D \Upsilon\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>
-      is the trace part of the gradient, and \(Y\) is continuous across
+      this holds with the frozen coefficients, as \(\mathcal{U}\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>
+      is the loop part of the defect, and \(Y\) is continuous across
       \(q_{\ast}\) although \(b\) jumps.
     </p>
-    <h3 id="auto-32"><a id="sec:hs-uniq"></a>18.2<span style="margin-left: 1em"></span>The exact flow as a controlled
+    <h3 id="auto-33"><a id="sec:hs-uniq"></a>18.2<span style="margin-left: 1em"></span>The exact flow as a controlled
     explicit flow<span style="margin-left: 1em"></span></h3>
     <p>
       Compactness would give limit points, and nothing in the FBSDE selects
@@ -2262,13 +2304,45 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
       relative entropy.
     </p>
     <p>
-      Let \(y = y_q (x)\) solve \(K_q y + D \bar{\Gamma}_q (y) = K_q x\), and
-      let \(\bar{V}_q (x) = \bar{\Gamma}_q (y) + \frac{1}{2} \langle x - y,
-      K_q (x - y)
-\rangle\) be the Moreau transform of the action. Recall the
-      defect \(e_q\) and the exact potential \(V_q\) of Section <a href="#sec:restart">16.3</a>,
-      with force \(F_q = - DV_q\). By the envelope theorem and \(Dy = H_q
-      K_q\),
+      Let \(y = y_q (x)\) solve \(K_q y + \bar{\mathcal{F}}_q (y) = K_q x\),
+      let \(\bar{f}_q (x) = K_q (y - x)\) be the explicit force in the field
+      variable, and recall the exact force \(F_q = - DV_q\) of Section <a
+      href="#sec:restart">16.3</a>. Differentiating the coordinate equation in \(q\) and
+      \(x\) gives the Burgers equation with a source,
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:burgers-defect"></a>\(\displaystyle \partial_q \bar{f} +
+        \frac{1}{2} \text{Ctr}_{C_q^2} D^2 \bar{f} + D \bar{f}
+[C_q^2 \bar{f}]
+        = - K_q H_q \mathcal{D}_q \circ y. \)</td>
+        <td align="right">(18.1)</td>
+      </tr>
+    </table>
+    <p>
+      Up to here we have needed only forces. To compare the laws of the two
+      flows we need, for the first time, a scalar. Since \(D
+      \bar{\mathcal{F}}\) is symmetric, \(\bar{\mathcal{F}}\) is a gradient,
+      and so are \(\bar{f}_q\) and the defect \(\mathcal{D}_q\) (as
+      \(\frac{1}{2} \text{Ctr}_{H^2} D^2 \bar{\mathcal{F}} = - \frac{1}{2} D
+      \text{Tr}
+H\)). Let
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:primitive"></a>\(\displaystyle e_q (y) = \int_0^1
+        \langle \mathcal{D}_q (ty), y \rangle \hspace{0.17em}
+\mathrm{d} t,
+        \quad \bar{V}_q (x) = - \int_0^1 \langle \bar{f}_q (tx), x
+\rangle
+        \hspace{0.17em} \mathrm{d} t, \)</td>
+        <td align="right">(18.2)</td>
+      </tr>
+    </table>
+    <p>
+      so that \(De_q =\mathcal{D}_q\), \(D \bar{V}_q = - \bar{f}_q\), \(e_q
+      (0) = \bar{V}_q (0) = 0\). Then (<a href="#eq:burgers-defect">18.1</a>), together with \(Dy
+      = H_q K_q\), is the gradient of
     </p>
     <table width="100%">
       <tr>
@@ -2277,10 +2351,19 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
 \|C_q D
         \bar{V} \|_2^2 = e_q \circ y + c (q), \quad c (q) =
         \frac{1}{2}
-\text{Tr} (C_q - H_q (0)) . \)</td>
-        <td align="right">(18.1)</td>
+\text{Tr} (C_q - H_q (0)), \)</td>
+        <td align="right">(18.3)</td>
       </tr>
     </table>
+    <p>
+      where the constant is read off at \(x = 0\), as \(D^2 \bar{V} (0) = K_q
+      - K_q H_q (0) K_q\). Here \(\bar{V}\) is the value function of the
+      explicit flow, in the sense of Section <a href="cqft_lecture4.html#sec:generator">8.5</a> of Lecture 4,
+      and \(e\) is its running cost. This is the only place where a potential
+      enters, and it is unavoidable: Girsanov alone gives a density in terms
+      of the unknown \(Z\), and only the identity \(\mathcal{D}= De\) makes it
+      explicit.
+    </p>
     <p>
       So \(\bar{V}\) solves the Polchinski equation up to its defect. Since
       \(C_s^2 D \bar{V}_s (x) = C_s (x - y_s (x))\), the <strong>explicit
@@ -2292,19 +2375,19 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
         \mathrm{d} x = - C_s (x - y_s (x)) \hspace{0.17em} \mathrm{d}
 s + C_s
         \hspace{0.17em} \mathrm{d} W, \quad x_q = x. \)</td>
-        <td align="right">(18.2)</td>
+        <td align="right">(18.4)</td>
       </tr>
     </table>
     <p>
       Its coordinate \(Y = y_s (x_s)\) solves \(\hspace{0.17em} \mathrm{d} Y =
       b (Y) \hspace{0.17em} \mathrm{d} s + H (Y)
 \hspace{0.17em} \mathrm{d}
-      W\), \(b = - HDe\): indeed \(\hspace{0.17em} \mathrm{d} (K_s x) = Y
-      \hspace{0.17em} \mathrm{d} s +
-\hspace{0.17em} \mathrm{d} W\), and one
-      applies It&ocirc;'s formula to \(K_s Y + D \bar{\Gamma}_s (Y) = K_s x\).
-      It contains no \(Z\). All this holds for all \(q \geqslant q_0\); below
-      \(q_{\ast}\) the defect is <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>.
+      W\), \(b = - H\mathcal{D}\): indeed \(\hspace{0.17em} \mathrm{d} (K_s x)
+      = Y \hspace{0.17em} \mathrm{d} s +
+\hspace{0.17em} \mathrm{d} W\), and
+      one applies It&ocirc;'s formula to \(K_s Y + \bar{\mathcal{F}}_s (Y) =
+      K_s x\). It contains no \(Z\). All this holds for all \(q \geqslant
+      q_0\); below \(q_{\ast}\) the defect is <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -2320,24 +2403,25 @@ s + C_s
             C \gamma^5 s^{- 3} \| \pi_s y\|_4^4 + C \gamma^3 s^{- 5 /
 2} \|t_s
             (y)\|_6^6 . \)</td>
-            <td align="right">(18.3)</td>
+            <td align="right">(18.5)</td>
           </tr>
         </table></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>On the ball \(e_s = e_s^{\text{o}}\), so
-      \(|e_s (\pi_s y) | \leqslant C \gamma^5 s^{- 3} \| \pi_s y\|_4^4\) by
-      the zero jets and (11.12). With \(z_{\theta} = \pi_s y + \theta (y -
-      \pi_s y)\), \(e_s (y) - e_s (\pi_s y) = \int_0^1 \langle De_s
-      (z_{\theta}), y - \pi_s y
-\rangle \hspace{0.17em} \mathrm{d} \theta\),
-      and \(y - \pi_s y\) is supported on the set \(\mathcal{A}\) where \(|y|
-      > r_s\), with norm at most \(\|t_s \|_2\). Write \(De = D \kappa
-      De^{\text{o}} \circ \kappa +\mathfrak{D}\). Then \(|De^{\text{o}} |
-      \leqslant S_4 (e^{\text{o}}) (2 r_s)^3 \leqslant C \gamma^{7
-/ 2} s^{- 3
-      / 2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so
+      <strong class="enunciation-name">Proof. </strong>On the ball \(\mathcal{D}_s
+      =\mathcal{D}_s^o\), so \(|e_s (\pi_s y) | \leqslant C \gamma^5 s^{- 3}
+      \| \pi_s y\|_4^4\) by the primitive formula and (11.12). With
+      \(z_{\theta} = \pi_s y + \theta (y - \pi_s y)\), \(e_s (y) - e_s (\pi_s
+      y) = \int_0^1 \langle \mathcal{D}_s (z_{\theta}), y -
+\pi_s y \rangle
+      \hspace{0.17em} \mathrm{d} \theta\), and \(y - \pi_s y\) is supported on
+      the set \(\mathcal{A}\) where \(|y| > r_s\), with norm at most \(\|t_s
+      \|_2\). Write \(De = D \kappa \mathcal{D}^{\text{o}} \circ \kappa
+      +\mathfrak{D}\). Then \(|\mathcal{D}^{\text{o}} | \leqslant S_4
+      (\mathcal{D}^{\text{o}}) (2 r_s)^3
+\leqslant C \gamma^{7 / 2} s^{- 3 /
+      2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so
       the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2\).
       By the term-by-term bounds behind Proposition <a href="cqft_lecture5.html#prop:source">12.2</a> (the
       four groups of Section 12.3 of Lecture 5, [<a href="#bib-FBSDE26">FBSDE26</a>]), which
@@ -2358,7 +2442,7 @@ s + C_s
       With \(\Delta = V - \bar{V}\) (\(\Delta\) is not the Laplacian in this
       section), \(\mathcal{C}_N (q) = \int_q^{\infty} c (s) \hspace{0.17em}
       \mathrm{d} s\) and \(A_N (q, x) = V_q (x) - \bar{V}_q (x) -\mathcal{C}_N
-      (q)\), subtracting (<a href="#eq:HJ">18.1</a>) from the Polchinski equation
+      (q)\), subtracting (<a href="#eq:HJ">18.3</a>) from the Polchinski equation
       gives
     </p>
     <table width="100%">
@@ -2369,7 +2453,7 @@ s + C_s
         D \Delta \rangle - \frac{1}{2} \|C_s D \Delta \|_2^2 + e_s \circ
 y_s +
         c (s) = 0. \)</td>
-        <td align="right">(18.4)</td>
+        <td align="right">(18.6)</td>
       </tr>
     </table>
     <p>
@@ -2402,7 +2486,7 @@ y_s +
 =\mathbb{E}^{\mathbb{R}^{q, x}} \exp (-
           \int_q^{\infty} e_s (Y_s)
 \hspace{0.17em} \mathrm{d} s) . \)</td>
-          <td align="right">(18.5)</td>
+          <td align="right">(18.7)</td>
         </tr>
       </table></i>
       <p>
@@ -2414,7 +2498,7 @@ y_s +
           (\mathbb{P}^{q, x} |\mathbb{R}^{q, x}) = \frac{1}{2}
 \int_q^{\infty}
           \mathbb{E}^{q, x} \|Z_s \|_2^2 \hspace{0.17em} \mathrm{d} s, \)</td>
-          <td align="right">(18.6)</td>
+          <td align="right">(18.8)</td>
         </tr>
       </table></i>
       <i><table width="100%">
@@ -2424,7 +2508,7 @@ y_s +
 +\mathbb{E}^{\mathbb{P}^{q,
           x}} \int_q^{\infty} e_s (Y_s) \hspace{0.17em}
 \mathrm{d} s, \)</td>
-          <td align="right">(18.7)</td>
+          <td align="right">(18.9)</td>
         </tr>
       </table></i>
       <p>
@@ -2439,7 +2523,7 @@ y_s +
           \mathbb{E}^{\mathbb{R}^{q, x}}
 \int_q^{\infty} e_s (Y_s)
           \hspace{0.17em} \mathrm{d} s. \)</td>
-          <td align="right">(18.8)</td>
+          <td align="right">(18.10)</td>
         </tr>
       </table></i>
       <p>
@@ -2455,7 +2539,7 @@ y_s +
           \int_T^{\infty} |e_s (Y_s) |
 \hspace{0.17em} \mathrm{d} s \leqslant
           C_R T^{- 1 / 2} . \)</td>
-          <td align="right">(18.9)</td>
+          <td align="right">(18.11)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
@@ -2468,7 +2552,7 @@ y_s +
       Both are absolutely continuous with respect to the free flow from \(x\),
       \(\hspace{0.17em} \mathrm{d} \xi = C_s \hspace{0.17em} \mathrm{d} W\).
       As \(\mathrm{e}^{- V}\) is harmonic the first density is \(\mathrm{e}^{-
-      V_T (\xi_T) + V_q (x)}\). By (<a href="#eq:HJ">18.1</a>) and It&ocirc;'s formula
+      V_T (\xi_T) + V_q (x)}\). By (<a href="#eq:HJ">18.3</a>) and It&ocirc;'s formula
       the second is \(\exp (- \bar{V}_T (\xi_T) + \bar{V}_q (x) + \int_q^T
       (e_s (y_s (\xi_s)) + c
 (s)) \hspace{0.17em} \mathrm{d} s)\); it is a
@@ -2494,7 +2578,7 @@ y_s +
       \(\sup_T \text{Ent}_T \leqslant C_R\). So \(M_T\) is uniformly
       integrable under \(\mathbb{R}^{q, x}\), and \(\mathbb{P}^{q, x} \ll
       \mathbb{R}^{q, x}\) on \([q, \infty)\) with density \(M_{\infty} =
-      \text{lim}_T M_T\), and (<a href="#eq:entropy">18.6</a>) holds.
+      \text{lim}_T M_T\), and (<a href="#eq:entropy">18.8</a>) holds.
     </p>
     <p>
       <strong>The limit of</strong> \(M_T\). Both laws have, at fixed \(N\),
@@ -2518,49 +2602,50 @@ y_s +
       So \(M_{\infty} = \exp (\Delta_q (x) -\mathcal{C}_N (q) -
       \int_q^{\infty} e) =
 \mathrm{e}^{A_N} \mathrm{e}^{- \int e}\), which is
-      positive; hence the equivalence and (<a href="#eq:density">18.5</a>), the second
+      positive; hence the equivalence and (<a href="#eq:density">18.7</a>), the second
       formula by \(\mathbb{E}^{\mathbb{R}} M_{\infty} = 1\).
     </p>
     <p>
       <strong>The identity.</strong> Take \(\mathbb{E}^{\mathbb{P}}\) of
-      \(\log M_{\infty}\) in (<a href="#eq:density">18.5</a>): this is (<a href="#eq:Aid">18.7</a>),
-      the integrability coming from (<a href="#eq:tails">18.9</a>). The left inequality
-      in (<a href="#eq:sandwich">18.8</a>) is \(\text{Ent} \geqslant 0\), the right one
-      Jensen's inequality in (<a href="#eq:density">18.5</a>). So the exact and explicit
+      \(\log M_{\infty}\) in (<a href="#eq:density">18.7</a>): this is (<a href="#eq:Aid">18.9</a>),
+      the integrability coming from (<a href="#eq:tails">18.11</a>). The left inequality
+      in (<a href="#eq:sandwich">18.10</a>) is \(\text{Ent} \geqslant 0\), the right one
+      Jensen's inequality in (<a href="#eq:density">18.7</a>). So the exact and explicit
       potentials are compared using only expectations of the defect and the
       entropy of the control.
     </p>
     <p style="margin-bottom: 1em">
-      <strong>The expectations.</strong> For \(s < q_{\ast}\) use <a href="cqft_lecture5.html#eq:low">(12.20)</a>:
-      under \(\mathbb{P}^{q, x}\) by (<a href="#eq:restart-low">16.10</a>); under
-      \(\mathbb{R}^{q, x}\) by It&ocirc;'s formula for \(\|Y\|_2^2\), the
-      bounds <a href="cqft_lecture5.html#eq:low">(12.20)</a> and \(\|Y_q \|_2 \leqslant 6 R\). So these
-      contribute at most \(C_R\). For \(s \geqslant q_{\ast}\) use Lemma <a
-      href="#lem:e-bound">18.1</a>, \(|e_s (y) | \leqslant C \gamma^5 s^{- 3} \| \pi_s
-      y\|_4^4 + C \gamma^3 s^{- 5 /
-2} \|t_s (y)\|_6^6\). Under
-      \(\mathbb{P}^{q, x}\): the second term integrates on \([T, \infty)\) to
-      at most \(C \gamma^2 T^{- 1} J_{\infty}\). For the first, with \(\|
-      \pi_s Y\|_4^4 \leqslant r_s^2 \|Y\|_2^2\), (<a href="#eq:restart2">16.9</a>) gives a
-      bound \(C_R T^{- 1 / 2}\). Under \(\mathbb{R}^{q, x}\): with \(\ell_s =
-      Y_s - Y_q\), by the linear bound \(\|b (Y)\|_p \leqslant C \gamma s^{- 3
-      / 2} \|Y\|_p\) of Proposition <a href="cqft_lecture5.html#prop:source">12.2</a>, valid for every \(p\),
-      \(\text{diag} H^2 \leqslant Cs^{- 1 / 2}\) and It&ocirc;'s formula,
-      \(\mathbb{E} \| \ell_s \|_j^j \leqslant C (s^{j / 4} + (g_{q^{\vee}}
-      R)^j)\) for \(j = 2, 6, 12\), with \(C\) depending on \(q_{\ast}\) if
-      \(q < q_{\ast}\), by <a href="cqft_lecture5.html#eq:low">(12.20)</a> on \([q, q_{\ast}]\); in that
-      case read \(g_q\) below as \(g_{q_{\ast}}\), only \(C_R\) being claimed.
-      The first term gives \(C \gamma^5 T^{- 2} R^4 + C \gamma^4 T^{- 1 / 2}
-      (1 + g_q^2 R^2 T^{- 1 / 2})\). For the second, when \(s \geqslant q_R /
-      C\), \(\|t_s \|_6^6 \leqslant Cr_s^{- 6} \| \ell_s \|_{12}^{12}\) as
+      <strong>The expectations.</strong> For \(s < q_{\ast}\) use <a href="cqft_lecture5.html#eq:low">(12.20)</a>,
+      so \(|e_s (y) | \leqslant C \|y\|_2^2\) by (<a href="#eq:primitive">18.2</a>): under
+      \(\mathbb{P}^{q, x}\) by (<a href="#eq:restart-low">16.10</a>); under \(\mathbb{R}^{q,
+      x}\) by It&ocirc;'s formula for \(\|Y\|_2^2\), the bounds <a href="cqft_lecture5.html#eq:low">(12.20)</a>
+      and \(\|Y_q \|_2 \leqslant 6 R\). So these contribute at most \(C_R\).
+      For \(s \geqslant q_{\ast}\) use Lemma <a href="#lem:e-bound">18.1</a>, \(|e_s (y) |
+      \leqslant C \gamma^5 s^{- 3} \| \pi_s y\|_4^4 + C \gamma^3 s^{- 5 /
+2}
+      \|t_s (y)\|_6^6\). Under \(\mathbb{P}^{q, x}\): the second term
+      integrates on \([T, \infty)\) to at most \(C \gamma^2 T^{- 1}
+      J_{\infty}\). For the first, with \(\| \pi_s Y\|_4^4 \leqslant r_s^2
+      \|Y\|_2^2\), (<a href="#eq:restart2">16.9</a>) gives a bound \(C_R T^{- 1 / 2}\).
+      Under \(\mathbb{R}^{q, x}\): with \(\varsigma_s = Y_s - Y_q\), by the
+      linear bound \(\|b (Y)\|_p \leqslant C \gamma s^{- 3 / 2} \|Y\|_p\) of
+      Proposition <a href="cqft_lecture5.html#prop:source">12.2</a>, valid for every \(p\), \(\text{diag} H^2
+      \leqslant Cs^{- 1 / 2}\) and It&ocirc;'s formula, \(\mathbb{E} \|
+      \varsigma_s \|_j^j \leqslant C (s^{j / 4} + (g_{q^{\vee}} R)^j)\) for
+      \(j = 2, 6, 12\), with \(C\) depending on \(q_{\ast}\) if \(q <
+      q_{\ast}\), by <a href="cqft_lecture5.html#eq:low">(12.20)</a> on \([q, q_{\ast}]\); in that case
+      read \(g_q\) below as \(g_{q_{\ast}}\), only \(C_R\) being claimed. The
+      first term gives \(C \gamma^5 T^{- 2} R^4 + C \gamma^4 T^{- 1 / 2} (1 +
+      g_q^2 R^2 T^{- 1 / 2})\). For the second, when \(s \geqslant q_R / C\),
+      \(\|t_s \|_6^6 \leqslant Cr_s^{- 6} \| \varsigma_s \|_{12}^{12}\) as
       before, giving \(C \gamma^6 T^{- 3 / 2}\) and terms in \(g_q R\) of
       higher decay. When \(s < q_R / C\), \(\|t_s \|_6^6 \leqslant C (R^6 + \|
-      \ell_s \|_6^6)\), whose integral with the weight \(\gamma^3 s^{- 5 /
-      2}\) on \([T, q_R / C]\) is at most \(C \gamma^3 (T^{- 3 / 2} R^6 + (g_q
-      R)^6 T^{- 3 / 2} + \log_+ (q_R / T))\). Since \(\log_+ (q_R / T)
-      \leqslant C_R T^{- 1 / 2}\), this is (<a href="#eq:tails">18.9</a>).<span style="margin-left: 1em"></span>\(\Box\)
+      \varsigma_s \|_6^6)\), whose integral with the weight \(\gamma^3 s^{- 5
+      / 2}\) on \([T, q_R / C]\) is at most \(C \gamma^3 (T^{- 3 / 2} R^6 +
+      (g_q R)^6 T^{- 3 / 2} + \log_+ (q_R / T))\). Since \(\log_+ (q_R / T)
+      \leqslant C_R T^{- 1 / 2}\), this is (<a href="#eq:tails">18.11</a>).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-33"><a id="sec:limit-law"></a>18.3<span style="margin-left: 1em"></span>The limit law<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-34"><a id="sec:limit-law"></a>18.3<span style="margin-left: 1em"></span>The limit law<span style="margin-left: 1em"></span></h3>
     <p>
       Couple the lattices by common Fourier Gaussians, \(W^N\) being the
       projection of a cylindrical \(W\) on a fixed probability space. The
@@ -2581,21 +2666,22 @@ y_s +
       principle, equicontinuity by Lemma <a href="#lem:lip">16.3</a> and translation
       covariance, uniqueness of the coordinate equation among continuous \(y\)
       by testing with the difference, as \(y - x \in H^1\). For \(e\): \(e_s
-      (0) = 0\), so \(e_s (y) = \int_0^1 \langle De_s (ty), y \rangle
-      \hspace{0.17em} \mathrm{d} t\). By the consistency of the coefficients
-      [<a href="#bib-FBSDE26">FBSDE26</a>], \(De^N_s (\phi_N)\) converges weakly in \(L^2\)
-      at each \(s\) for smooth bounded \(\phi\), and uniformly in \(N\),
-      \(\|De^N_s (y) - De^N_s (z)\|_2 \leqslant C (1 + \|z\|_{\infty}) (\|y -
-      z\|_2 +
-\|y^2 - z^2 \|_2)\). A three-term approximation extends the weak
-      convergence to uniformly convergent fields, and dominated convergence in
-      \(t\) gives the claim. Moreover \(|e^N_s (y) | \leqslant Cg_s
-      \|y\|_2^2\) by the global linear bound on \(De\) behind Proposition <a
-      href="cqft_lecture5.html#prop:source">12.2</a> [<a href="#bib-FBSDE26">FBSDE26</a>], which dominates on \([q, T]\).
-      For \(s < q_{\ast}\) the same applies to \(\Upsilon\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>,
-      and \(\|y\|_2^2\) is continuous; for \(y_s\) use <a href="cqft_lecture5.html#eq:freeze-y">(12.18)</a>
-      and the convergence of the kernel of \(C_{q_{\ast}}\) in \(L^1\).<span
-      style="margin-left: 1em"></span>\(\Box\)
+      (0) = 0\), so \(e_s (y) = \int_0^1 \langle \mathcal{D}_s (ty), y \rangle
+      \hspace{0.17em}
+\mathrm{d} t\). By the consistency of the coefficients
+      [<a href="#bib-FBSDE26">FBSDE26</a>], \(\mathcal{D}^N_s (\phi_N)\) converges weakly in
+      \(L^2\) at each \(s\) for smooth bounded \(\phi\), and uniformly in
+      \(N\), \(\|\mathcal{D}^N_s (y) -\mathcal{D}^N_s (z)\|_2 \leqslant C (1
+      +
+\|z\|_{\infty}) (\|y - z\|_2 + \|y^2 - z^2 \|_2)\). A three-term
+      approximation extends the weak convergence to uniformly convergent
+      fields, and dominated convergence in \(t\) gives the claim. Moreover
+      \(|e^N_s (y) | \leqslant Cg_s \|y\|_2^2\) by the global linear bound on
+      \(\mathcal{D}\) behind Proposition <a href="cqft_lecture5.html#prop:source">12.2</a> [<a href="#bib-FBSDE26">FBSDE26</a>],
+      which dominates on \([q, T]\). For \(s < q_{\ast}\) the same applies to
+      \(\mathcal{U}\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>, and \(\|y\|_2^2\) is
+      continuous; for \(y_s\) use <a href="cqft_lecture5.html#eq:freeze-y">(12.18)</a> and the convergence of
+      the kernel of \(C_{q_{\ast}}\) in \(L^1\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       By Lemma <a href="#lem:lip">16.3</a>, \(x = \xi + v\) with \(\xi_t = x_q +
@@ -2614,7 +2700,7 @@ y_s +
       \(L^2\) for \(h \in L^2\), uniformly in \(N\), since \(\|H_s h\|_2
       \leqslant Cs^{- 1} \|h\|_2\) and \(\|b\|_2 \leqslant C \gamma s^{- 3 /
       2} \|Y\|_2\). So \(\langle Y_{\infty}, h \rangle\) is defined; by (<a
-      href="#eq:noise-tail">17.1</a>) and the It&ocirc; bound on \(\mathbb{E} \|Y_s \|_2^2\),
+      href="#eq:noise-tail">17.2</a>) and the It&ocirc; bound on \(\mathbb{E} \|Y_s \|_2^2\),
       \(Y_s\) converges also in \(H^{- s'}\), \(s' > \frac{1}{2}\), in \(L^2
       (\mathbb{R}^{q, x})\), uniformly in \(N\).
     </p>
@@ -2623,7 +2709,7 @@ y_s +
         <strong class="enunciation-name">Theorem <class style="font-style: normal">18.4</class>. </strong><i><class
         style="font-style: normal"><strong>(Limit of the kernels) </strong></class><a id="thm:limit-kernel"></a>Let
         \(\iota_N x_N \to x\) uniformly, \(x\) continuous. The densities (<a
-        href="#eq:density">18.5</a>) converge in \(L^1\) along the coupling, \(A_N (q, x_N)
+        href="#eq:density">18.7</a>) converge in \(L^1\) along the coupling, \(A_N (q, x_N)
         \to A (q, x)\), and for bounded continuous cylinder functions \(O\) of
         the terminal field</i>
       </p>
@@ -2640,7 +2726,7 @@ A (q, x)}
           =\mathbb{E}^{\mathbb{R}^{q, x}} \exp (- \int_q^{\infty} e_s
           (Y_s)
 \hspace{0.17em} \mathrm{d} s) . \)</td>
-          <td align="right">(18.10)</td>
+          <td align="right">(18.12)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
@@ -2660,8 +2746,8 @@ A (q, x)}
       (Y^N_s) \hspace{0.17em} \mathrm{d} s)\), \(f_N = \mathrm{e}^{A_N} a_N\).
       On \([q, T]\) the integrals converge almost surely by Lemma <a href="#lem:cons">18.3</a>,
       since the paths are bounded; the tail on \([T, \infty)\) is small in
-      \(L^1\) uniformly in \(N\) by (<a href="#eq:tails">18.9</a>). So \(a_N \to a = \exp
-      (- \int_q^{\infty} e)\) in probability. By (<a href="#eq:entropy">18.6</a>), (<a
+      \(L^1\) uniformly in \(N\) by (<a href="#eq:tails">18.11</a>). So \(a_N \to a =
+      \exp (- \int_q^{\infty} e)\) in probability. By (<a href="#eq:entropy">18.8</a>), (<a
       href="#eq:restart2">16.9</a>) and (<a href="#eq:restart-low">16.10</a>), \(\mathbb{E}f_N \log f_N
       \leqslant C_R\), so \((f_N)\) is uniformly integrable by de la
       Vall&eacute;e Poussin's criterion, and \(|A_N | \leqslant C_R\) by
@@ -2669,7 +2755,7 @@ A (q, x)}
       \(f_N \to \mathrm{e}^A a\) in \(L^1\), so \(\mathrm{e}^{- A}
       =\mathbb{E}a\). Thus the limit is unique and \(A_N \to A\). As \(\langle
       Y^N_{\infty}, h \rangle \to \langle Y_{\infty}, h \rangle\) in
-      probability, \(L^1\) convergence of \(f_N\) gives (<a href="#eq:kernel">18.10</a>)
+      probability, \(L^1\) convergence of \(f_N\) gives (<a href="#eq:kernel">18.12</a>)
       for bounded continuous \(O\) and, the paths converging uniformly along
       the coupling, for the joint functionals. For \(\langle \varphi, h
       \rangle\) use also the uniform second moment of \(\langle \hat{\Phi}, h
@@ -2705,7 +2791,7 @@ A (q, x)}
           [\mathrm{e}^{- \int_{q_0}^{\infty} e_s
 (Y_s) \hspace{0.17em}
           \mathrm{d} s}]} . \)</td>
-          <td align="right">(18.11)</td>
+          <td align="right">(18.13)</td>
         </tr>
       </table></i>
       <p>
@@ -2722,7 +2808,7 @@ A (q, x)}
             \mathbb{E}^{\mathbb{R}} \mathrm{e}^{-
 \int_{q_0}^{\infty} e_s
             (Y_s) \hspace{0.17em} \mathrm{d} s} . \)</td>
-            <td align="right">(18.12)</td>
+            <td align="right">(18.14)</td>
           </tr>
         </table></i>
       </div>
@@ -2732,15 +2818,15 @@ A (q, x)}
       \((q, x) = (q_0, 0)\), as \(\mathbb{P}^{q_0, 0}\) is the flow for
       \(\nu_N\), and \(\bar{V}_{q_0} (0) = 0\), \(V_{q_0} (0) = - \log \int
       \mathrm{e}^{- V_N} \hspace{0.17em} \mathrm{d} \mu_C\). With the
-      tightness of Corollary <a href="#cor:tight">17.1</a> this identifies the limit along
+      tightness of Corollary <a href="#cor:tight">17.2</a> this identifies the limit along
       the whole sequence.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       The divergent constant has not disappeared: it is \(\mathcal{C}_N
-      (q_0)\) in (<a href="#eq:free">18.12</a>), and it does not enter (<a href="#eq:GM0">18.11</a>).
+      (q_0)\) in (<a href="#eq:free">18.14</a>), and it does not enter (<a href="#eq:GM0">18.13</a>).
       Exercise <a href="#ex:gauss">18.9</a> computes it in the Gaussian case.
     </p>
-    <h3 id="auto-34"><a id="sec:filter"></a>18.4<span style="margin-left: 1em"></span>The filtering model and the
+    <h3 id="auto-35"><a id="sec:filter"></a>18.4<span style="margin-left: 1em"></span>The filtering model and the
     FBSDE<span style="margin-left: 1em"></span></h3>
     <p>
       We now read off the limit FBSDE from the density. Let
@@ -2782,7 +2868,7 @@ A (q, x)}
                   \rangle
 |\mathcal{F}_q] = \langle m_q (\Phi_q), h \rangle,
                   \)</td>
-                  <td align="right">(18.13)</td>
+                  <td align="right">(18.15)</td>
                 </tr>
               </table>
               <p>
@@ -2808,7 +2894,7 @@ A (q, x)}
                   (Y_s) Z_s) \hspace{0.17em} \mathrm{d} s +
 \int_{q_0}^q \Xi_s
                   \hspace{0.17em} \mathrm{d} W_s, \)</td>
-                  <td align="right">(18.14)</td>
+                  <td align="right">(18.16)</td>
                 </tr>
               </table>
               <p>
@@ -2824,7 +2910,7 @@ A (q, x)}
 \Phi, k \rangle |\mathcal{F}_q] - \langle
                   \psi_q, h \rangle \langle \psi_q, k
 \rangle . \)</td>
-                  <td align="right">(18.15)</td>
+                  <td align="right">(18.17)</td>
                 </tr>
               </table>
               <p>
@@ -2880,15 +2966,15 @@ A (q, x)}
         (t,
 x_t) - \int_{q_0}^t e_s (Y_s) \hspace{0.17em} \mathrm{d} s),
         \)</td>
-        <td align="right">(18.16)</td>
+        <td align="right">(18.18)</td>
       </tr>
     </table>
     <p>
       and \(\mathbb{E}^{\mathbb{P}} [O (\Phi) |\mathcal{F}_t]
       =\mathbb{E}^{\mathbb{R}} [fO
 (\Phi) |\mathcal{F}_t] / D_t = \Pi_t O
-      (x_t)\). The right side of (<a href="#eq:D">18.16</a>) is continuous in \(t\),
-      so (<a href="#eq:D">18.16</a>) holds for all \(t\) simultaneously, and \(D\) is
+      (x_t)\). The right side of (<a href="#eq:D">18.18</a>) is continuous in \(t\),
+      so (<a href="#eq:D">18.18</a>) holds for all \(t\) simultaneously, and \(D\) is
       continuous and positive.
     </p>
     <p>
@@ -2978,8 +3064,8 @@ W^{\mathbb{R}} - Z
       \hspace{0.17em}
 \mathrm{d} u\). On the right, condition on
       \(\mathcal{F}_u \supset \mathcal{F}_s\). So the integral over \([q_0,
-      \cdot]\) of the difference of the two sides of (<a href="#eq:Cov">18.15</a>) is a
-      continuous martingale of finite variation, hence null. This is (<a href="#eq:Cov">18.15</a>)
+      \cdot]\) of the difference of the two sides of (<a href="#eq:Cov">18.17</a>) is a
+      continuous martingale of finite variation, hence null. This is (<a href="#eq:Cov">18.17</a>)
       for almost every \((q, \omega)\), and \(\text{Cov}\) is symmetric and
       nonnegative, Hilbert&ndash;Schmidt almost everywhere.
     </p>
@@ -2991,7 +3077,7 @@ W^{\mathbb{R}} - Z
       semicontinuity from Theorem <a href="#thm:uv">16.2</a>, by (e).
     </p>
     <p>
-      <strong>(d).</strong> (<a href="#eq:terminal-tail">17.2</a>) passes to the limit by lower
+      <strong>(d).</strong> (<a href="#eq:terminal-tail">17.3</a>) passes to the limit by lower
       semicontinuity.
     </p>
     <p style="margin-bottom: 1em">
@@ -3022,17 +3108,9 @@ W^{\mathbb{R}} - Z
       equation of the posterior covariance (Exercise <a href="#ex:riccati">18.3</a>). Here
       the density does it: the filtration is Brownian under the reference.
       What remains open is whether \(\mathcal{F}\) is generated by \(W\)
-      (Section <a href="#sec:open">18.8</a>).
+      (Section <a href="#sec:open">18.7</a>).
     </p>
-    <p>
-      So the posterior structure survives the continuum limit: \(\psi = Y +
-      Z\) is a closed observable, the conditional mean of the terminal field;
-      \(Y\) is computed from the explicit action; and the error \(Z\) is small
-      at high resolution. This is the FBSDE of Lecture 4, in forecast
-      coordinates, for the limit \(\nu\) of the renormalised lattice measures,
-      with the full noise retained.
-    </p>
-    <h3 id="auto-35">18.5<span style="margin-left: 1em"></span>The renormalised field equation<span
+    <h3 id="auto-36">18.5<span style="margin-left: 1em"></span>The renormalised field equation<span
     style="margin-left: 1em"></span></h3>
     <p>
       The terminal law satisfies an integration by parts formula in which the
@@ -3061,7 +3139,7 @@ W^{\mathbb{R}} - Z
 \right] =\mathbb{E}_{\nu}  [D_h G (\Phi) - G (\Phi)
             \langle \Phi, (q_0 -
 \Delta) h \rangle] .\)</td>
-            <td align="right">(18.17)</td>
+            <td align="right">(18.19)</td>
           </tr>
         </table></i>
       </div>
@@ -3084,14 +3162,14 @@ x, K_{q_0} h_N \rangle] .\)
       j_N  (q_0 - \Delta^{\text{tr}}_N) h\) with \(\Delta^{\text{tr}}_N\) the
       finite-difference Laplacian acting on smooth functions, which converges
       to \(\Delta h\) in every Sobolev norm. The right side converges by
-      Corollary <a href="#cor:tight">17.1</a> (weak convergence in \(H^{- s}\) and uniform
+      Corollary <a href="#cor:tight">17.2</a> (weak convergence in \(H^{- s}\) and uniform
       moments), and the derivative term is a finite sum with converging
       coefficients \(\langle j_N h, j_N h_i \rangle \to \langle h, h_i
       \rangle\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       This is the terminal case of the Dyson&ndash;Schwinger equation of
-      Theorem <a href="cqft_lecture4.html#thm:DS-scale">B.1</a>, <a href="cqft_lecture4.html#eq:DS-terminal">(B.3)</a> of Lecture 4, for the
+      Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a>, <a href="cqft_lecture4.html#eq:DS-terminal">(9.6)</a> of Lecture 4, for the
       limiting theory. It does not say that \(\mu_N \Phi + \lambda \Phi^3\)
       converges as a random distribution: only its expectation against
       cylinder functions is identified. This is consistent with the
@@ -3099,273 +3177,160 @@ x, K_{q_0} h_N \rangle] .\)
       following it) that the limiting force is an observable without a
       terminal representative; it is not proved here that no such
       representative exists. At every <em>finite</em> resolution, on the other
-      hand, the force is explicit: \(F_q = K_q Z_q - D \bar{\Gamma}_q (Y_q)\)
-      (Exercises <a href="#ex:force-limit">16.1</a> and <a href="#ex:force-observable">18.1</a>).
-    </p>
-    <p>
-      Theorem <a href="#thm:DS">18.8</a> is the statement at infinite resolution, where
-      the cube can only be tested in expectation. At every finite resolution
-      there is a statement between observables, in which no divergent quantity
-      appears. In the limit of Theorem <a href="#thm:limit">18.6</a>, let
-    </p>
-    <center>
-      \(\displaystyle P_q = W_q + \int_{q_0}^q \psi_s \hspace{0.17em}
-      \mathrm{d} s, \quad \Phi_q =
-C_q P_q, \quad \eta_q = P_q - (q - q_0)
-      \psi_q, \quad \langle F_q, h \rangle =
-\langle \psi_q, K_q h \rangle -
-      \langle P_q, h \rangle,\)
-    </center>
-    <p>
-      and \(J_q = (q - q_0) C_q\), which is \(K_{q_0} Q_q\) in the notation of
-      Lecture 4 and tends to \(I\) as \(q \to \infty\). Here \(\Phi_q \in H\),
-      while \(F_q\) and \(\eta_q\) are distributions, tested with smooth
-      \(h\).
+      hand, the force is explicit: \(F_q = K_q Z_q - \bar{\mathcal{F}}_q
+      (Y_q)\) (Exercises <a href="#ex:force-limit">16.1</a> and <a href="#ex:force-observable">18.1</a>).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">18.9</class>. </strong><i><class
-        style="font-style: normal"><strong>(The field equation at resolution \(q\))
-        </strong></class><a id="thm:field-q"></a>For the limit of Theorem <a href="#thm:limit">18.6</a>,
-        for every \(q \geqslant q_0\) and all smooth \(h\), \(G\) as in
-        Theorem <a href="#thm:DS">18.8</a>:</i>
+        style="font-style: normal"><strong>(The field equation in the limit) </strong></class><a
+        id="thm:field-q"></a>For the limit of Theorem <a href="#thm:limit">18.6</a>, Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a>
+        and Corollary <a href="cqft_lecture4.html#cor:DS-path">9.3</a> of Lecture 4 hold at every resolution,
+        with \(\Phi_q = C_q P_q\), \(F_q = K_q \psi_q - P_q\), \(\eta_q = P_q
+        - (q - q_0) \psi_q\) and \(J_q = (q - q_0) C_q \to I\). That is, for
+        all smooth \(h\) and cylinder \(G\), almost surely as distributions,
+        and with no renormalisation constant,</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:field-q"></a>\(\displaystyle K_{q_0} \Phi_q = J_q
+          F_q + \eta_q, \)</td>
+          <td align="right">(18.20)</td>
+        </tr>
+      </table></i>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:DS-q"></a>\(\displaystyle \mathbb{E}D_{J_q h} G
+          (\Phi_q) =\mathbb{E}[G (\Phi_q) \langle \eta_q, h
+\rangle]
+          =\mathbb{E}[G (\Phi_q) (\langle \Phi_q, K_{q_0} h \rangle -
+          \langle
+F_q, J_q h \rangle)], \)</td>
+          <td align="right">(18.21)</td>
+        </tr>
+      </table></i>
+      <p>
+        <i>and \(\langle F, h \rangle, \langle \eta, h \rangle\) are centred
+        martingales, with \(\langle F_q, h \rangle = \int_{q_0}^q \langle
+        (\text{Cov}_s K_s - I) h,
+\hspace{0.17em} \mathrm{d} W_s \rangle\) and
+        \(\mathbb{E} \mathrm{e}^{\langle \eta_q, h \rangle} \leqslant
+        \mathrm{e}^{(q -
+q_0) \|h\|_2^2 / 2}\). Moreover:</i>
       </p>
       <div style="margin-bottom: 1em">
         <i><div class="enum-alpha">
           <ol>
             <li>
               <p>
-                <em>Field equation.</em> Almost surely, as distributions,
-              </p>
-              <table width="100%">
-                <tr>
-                  <td width="100%" align="center"><a id="eq:field-q"></a>\(\displaystyle K_{q_0} \Phi_q
-                  = J_q F_q + \eta_q . \)</td>
-                  <td align="right">(18.18)</td>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-                <em>Observables.</em> \(\langle F, h \rangle\) and \(\langle
-                \eta, h \rangle\) are centred martingales,
-              </p>
-              <center>
-                \(\displaystyle \langle F_q, h \rangle = \int_{q_0}^q \langle
-                (\operatorname{Cov}_s K_s - I)
-h, \mathrm{d} W_s \rangle,
-                \qquad \langle \eta_q, h \rangle = \int_{q_0}^q
-\langle (I -
-                (s - q_0)\operatorname{Cov}_s) h, \mathrm{d} W_s \rangle,\)
-              </center>
-              <p>
-                and \(\mathbb{E} \mathrm{e}^{\langle \eta_q, h \rangle}
-                \leqslant \mathrm{e}^{(q -
-q_0) \|h\|_2^2 / 2}\).
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>Dyson&ndash;Schwinger equation at resolution \(q\).</em>
-              </p>
-              <table width="100%">
-                <tr>
-                  <td width="100%" align="center"><a id="eq:DS-q"></a>\(\displaystyle
-                  \mathbb{E}D_{J_q h} G (\Phi_q) =\mathbb{E} [G (\Phi_q)
-                  \langle \eta_q, h
-\rangle] =\mathbb{E} [G (\Phi_q) (\langle
-                  \Phi_q, K_{q_0} h \rangle - \langle
-F_q, J_q h \rangle)] .
-                  \)</td>
-                  <td align="right">(18.19)</td>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-                <em>The renormalised cube as an observable.</em> For large
-                \(q\), with \(\langle D \bar{\Gamma}_q (Y_q), h \rangle :=
-                \langle P_q, h \rangle - \langle
-Y_q, K_q h \rangle\), the
-                explicit force of Lecture 5,
+                <strong>The renormalised cube as an observable.</strong> For
+                large \(q\), with the explicit force \(\langle
+                \bar{\mathcal{F}}_q (Y_q), h \rangle : = \langle P_q, h
+                \rangle -
+\langle Y_q, K_q h \rangle\),
               </p>
               <table width="100%">
                 <tr>
                   <td width="100%" align="center"><a id="eq:germ"></a>\(\displaystyle \| \langle F_q,
-                  h \rangle + \langle D \bar{\Gamma}_q (Y_q), h \rangle
-                  \|_{L^2
-(\mathbb{P})} \leqslant C_{\gamma} \|h\|_{H^2} q^{-
-                  1 / 4} . \)</td>
-                  <td align="right">(18.20)</td>
+                  h \rangle + \langle \bar{\mathcal{F}}_q (Y_q), h
+                  \rangle
+\|_{L^2 (\mathbb{P})} \leqslant C \|h\|_{H^2} q^{- 1
+                  / 4} . \)</td>
+                  <td align="right">(18.22)</td>
                 </tr>
               </table>
               <p>
                 So \(\langle F, h \rangle\) is the unique martingale
                 asymptotically equivalent to the explicit process \(- \langle
-                D \bar{\Gamma}_q (Y_q), h \rangle\), in the sense of Lemma <a
-                href="cqft_lecture3.html#lem:uniq">5.4</a> of Lecture 3.
+                \bar{\mathcal{F}}_q (Y_q), h \rangle\), in the sense of Lemma
+                <a href="cqft_lecture3.html#lem:uniq">5.4</a> of Lecture 3.
               </p>
             </li>
             <li>
               <p>
-                <em>Infinite resolution.</em> As \(q \to \infty\), both sides
-                of <class style="font-style: normal">(<a href="#eq:DS-q">18.19</a>)</class> converge, and
+                <strong>Infinite resolution.</strong> As \(q \to \infty\),
               </p>
               <table width="100%">
                 <tr>
-                  <td width="100%" align="center"><a id="eq:DS-limit-q"></a>\(\displaystyle \lim_{q \to
-                  \infty} \mathbb{E} [G (\Phi_q) \langle D \bar{\Gamma}_q
-                  (Y_q), J_q
-h \rangle] =\mathbb{E}_{\nu} [D_h G (\Phi) - G
-                  (\Phi) \langle \Phi, (q_0 -
-\Delta) h \rangle], \)</td>
-                  <td align="right">(18.21)</td>
+                  <td width="100%" align="center"><a id="eq:DS-limit-q"></a>\(\displaystyle \text{lim}_{q
+                  \to \infty} \mathbb{E}[G (\Phi_q) \langle
+                  \bar{\mathcal{F}}_q
+(Y_q), J_q h \rangle] =\mathbb{E}_{\nu}
+                  [D_h G (\Phi) - G (\Phi) \langle \Phi,
+(q_0 - \Delta) h
+                  \rangle], \)</td>
+                  <td align="right">(18.23)</td>
                 </tr>
               </table>
               <p>
-                the right side of <class style="font-style: normal">(<a href="#eq:DS">18.17</a>)</class>.
+                the right side of (<a href="#eq:DS">18.19</a>).
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Along the scales.</strong> For \(g \in C_b^{\infty}
+                (\mathbb{R}^k)\), \(G = g (\langle \Phi_{q_1}, h_1 \rangle,
+                \ldots, \langle \Phi_{q_k}, h_k
+\rangle)\), \(q_i \leqslant
+                q\),
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:hs-ds-explicit"></a>\(\displaystyle \mathbb{E}
+                  \sum_i \partial_i g \langle J_{q_i} h, h_i \rangle
+                  =\mathbb{E}[G
+(\langle \Phi_q, K_{q_0} h \rangle + \langle
+                  \bar{\mathcal{F}}_q (Y_q), J_q h
+\rangle)] + O (C
+                  \|g\|_{\infty} \|h\|_{H^2} q^{- 1 / 4}), \)</td>
+                  <td align="right">(18.24)</td>
+                </tr>
+              </table>
+              <p>
+                so at every large resolution the renormalised cube closes the
+                hierarchy, up to an error which vanishes as \(q \to \infty\).
               </p>
             </li>
           </ol>
         </div></i>
       </div>
     </div>
-    <p style="margin-top: 1em">
-      <strong class="enunciation-name">Proof. </strong>(a) is algebra: \(J_q K_q = q - q_0\) and
-      \(K_{q_0} = K_q - (q - q_0)\) give, for \(\langle \Phi_q, K_q k \rangle
-      = \langle P_q, k \rangle\), the identity \(K_{q_0} \Phi_q - J_q F_q =
-      P_q - (q - q_0) \Phi_q - (q - q_0) (\psi_q -
-\Phi_q) = \eta_q\).
-    </p>
-    <p>
-      (c) By Theorem <a href="#thm:limit">18.6</a>(a),(b), \(\eta_q = P_q - (q - q_0)
-      \psi_q =\mathbb{E}_q [B_{q - q_0}]\), and \(G (\Phi_q)\) is
-      \(\mathcal{F}_q\)-measurable, so \(\mathbb{E}[G (\Phi_q) \langle \eta_q,
-      h \rangle] =\mathbb{E}[G (\Phi_q)
-\langle B_{q - q_0}, h \rangle]\). Now
-      \(\Phi_q = C_q P_q = J_q \Phi + C_q B_{q - q_0}\), with \(B\)
-      independent of \(\Phi\). Gaussian integration by parts in \(B\) gives
-      \((q - q_0)\mathbb{E}D_{C_q h} G (\Phi_q) =\mathbb{E}D_{J_q h} G
-      (\Phi_q)\). The second equality in (<a href="#eq:DS-q">18.19</a>) is (a).
-    </p>
-    <p>
-      (b) By Theorem <a href="#thm:limit">18.6</a>, \(\psi_q = \int \text{Cov}_s
-      \hspace{0.17em} \mathrm{d} W_s\); insert \(P = W + \int \psi\) and use
-      the product rule, the drifts cancelling: \(\hspace{0.17em} \mathrm{d}
-      (K_q \psi_q - P_q) = (K_q \text{Cov}_q - I)
-\hspace{0.17em} \mathrm{d}
-      W_q\), tested with \(h\), and similarly for \(\eta\). The exponential
-      bound is conditional Jensen in \(\eta_q =\mathbb{E}_q [B_{q - q_0}]\).
-    </p>
-    <p>
-      (d) \(P_q = K_q Y_q + D \bar{\Gamma}_q (Y_q)\) and \(F_q = K_q Z_q - D
-      \bar{\Gamma}_q (Y_q)\). So the left side of (<a href="#eq:germ">18.20</a>) is \(\|
-      \langle Z_q, K_q h \rangle \|_{L^2} \leqslant \|K_q h\|_2 (\mathbb{E}
-      \|Z_q
-\|_2^2)^{1 / 2} \leqslant C \|h\|_{H^2} q^{- 1 / 4}\), by Theorem
-      <a href="#thm:limit">18.6</a>(c).
-    </p>
-    <p style="margin-bottom: 1em">
-      (e) By (<a href="#eq:germ">18.20</a>) with the exact \(K_q J_q h = (q - q_0) h\),
-      replacing \(- F_q\) by \(D \bar{\Gamma}_q (Y_q)\) in (<a href="#eq:DS-q">18.19</a>)
-      costs \(O (q^{- 1 / 4})\). Moreover \(\langle \Phi_q, k \rangle =
-      \langle \psi_q, J_q k \rangle + \langle \zeta_q, k
-\rangle\), where
-      \(\mathbb{E} \langle \zeta_q, k \rangle^2 \leqslant (q - q_0) \|C_q
-      k\|_2^2
-\leqslant \|k\|_2^2 / q\), and \(\psi_q \to \Phi\) tested in
-      mean square, by the martingale property. So \(\Phi_q \to \Phi\) tested
-      with smooth functions, and \(J_q h \to h\) in every Sobolev norm.<span
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>The algebra and the integration by parts
+      are those of Lecture 4, since by Theorem <a href="#thm:limit">18.6</a>(a),(b),
+      \(\eta_q =\mathbb{E}_q [B_{q - q_0}]\), with \(\Phi_q = J_q \Phi + C_q
+      B_{q - q_0}\) and \(B\) independent of \(\Phi\). The martingale
+      representation is \(\psi = \int \text{Cov} \hspace{0.17em} \mathrm{d}
+      W\), and the exponential bound is conditional Jensen. For (<a href="#eq:germ">18.22</a>),
+      \(F_q = K_q Z_q - \bar{\mathcal{F}}_q (Y_q)\), so its left side is at
+      most \(\|K_q h\|_2 (\mathbb{E} \|Z_q \|_2^2)^{1 / 2}\), and Theorem <a
+      href="#thm:limit">18.6</a>(c) applies. For (<a href="#eq:DS-limit-q">18.23</a>): by (<a href="#eq:germ">18.22</a>)
+      with \(K_q J_q h = (q - q_0) h\), replacing \(- F_q\) by
+      \(\bar{\mathcal{F}}_q (Y_q)\) in (<a href="#eq:DS-q">18.21</a>) costs \(O (q^{- 1
+      / 4})\). Moreover \(\langle \Phi_q, k \rangle = \langle \psi_q, J_q k
+      \rangle + \langle \zeta_q, k
+\rangle\) with \(\mathbb{E} \langle
+      \zeta_q, k \rangle^2 \leqslant \|k\|_2^2 / q\), and \(\psi_q \to \Phi\)
+      tested in mean square, by the martingale property. So \(\Phi_q \to
+      \Phi\) tested with smooth functions, and \(J_q h \to h\) in every
+      Sobolev norm. (<a href="#eq:hs-ds-explicit">18.24</a>) follows from (<a href="#eq:germ">18.22</a>)
+      with \(J_q h\), as \(\|J_q h\|_{H^2} \leqslant \|h\|_{H^2}\).<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      So the field equation holds at every resolution with no renormalisation
-      constant, and in the strong sense of a pathwise identity between
-      distributions. The nonlinearity enters only through the force observable
-      \(F\), whose class contains the explicit process \(- D \bar{\Gamma}_q
-      (Y_q) \): the cube of the forecast with its counterterms, at resolution
-      \(q\). This is the renormalised cube, as an element of the space of
-      observables of Lecture 3. Theorem <a href="#thm:DS">18.8</a> is the shadow of
-      this at infinite resolution: by <class style="font-style: normal">(<a href="#eq:DS-limit-q">18.21</a>)</class>,
-      the two orders of limits, \(N \to \infty\) at the terminal resolution
-      and \(q \to \infty\) after \(N\), give the same right side. What is not
-      proved is that \(F\) is closed: the statement <class style="font-style: normal">(<a href="#eq:germ">18.20</a>)</class>
-      gives no bound on \(\langle F_q, h \rangle\) uniform in \(q\).
+      This is the renormalised cube: the cube of the forecast with its
+      counterterms, at resolution \(q\). By (<a href="#eq:DS-limit-q">18.23</a>) the two
+      orders of limits, \(N \to \infty\) at the terminal resolution and \(q
+      \to \infty\) after \(N\), give the same right side. What is not proved
+      is that \(F\) is closed: (<a href="#eq:germ">18.22</a>) gives no bound on
+      \(\langle F_q, h \rangle\) uniform in \(q\).
     </p>
-    <h3 id="auto-36"><a id="sec:hs-ds"></a>18.6<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger along the
-    scales<span style="margin-left: 1em"></span></h3>
-    <p>
-      Theorem <a href="#thm:field-q">18.9</a> is stated for functionals of the field at one
-      resolution. The same proof works along the whole observed path up to
-      \(q\), and this is the scale-by-scale form of the Dyson&ndash;Schwinger
-      equations of Lecture 4 for the interacting theory.
-    </p>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Corollary <class style="font-style: normal">18.10</class>.
-        </strong><i><class style="font-style: normal"><strong>(Dyson&ndash;Schwinger along the
-        scales) </strong></class><a id="cor:hs-ds"></a>For the limit of Theorem <a href="#thm:limit">18.6</a>,
-        let \(q_0 \leqslant q_1 \leqslant \ldots \leqslant q_k \leqslant q\),
-        let \(h, h_1, \ldots, h_k\) be smooth, \(g \in C_b^{\infty}
-        (\mathbb{R}^k)\) and \(G = g (\langle \Phi_{q_1}, h_1 \rangle, \ldots,
-        \langle \Phi_{q_k}, h_k
-\rangle)\). Then</i>
-      </p>
-      <i><table width="100%">
-        <tr>
-          <td width="100%" align="center"><a id="eq:hs-ds-path"></a>\(\displaystyle \mathbb{E}[G \langle
-          \eta_q, h \rangle] =\mathbb{E}\mathcal{D}_h G, \quad
-\mathcal{D}_h G
-          = \sum_{i = 1}^k \partial_i g \langle J_{q_i} h, h_i \rangle,
-          \)</td>
-          <td align="right">(18.22)</td>
-        </tr>
-      </table></i>
-      <p>
-        <i>that is, the derivative of \(G\) in the direction which shifts the
-        field at each scale \(s\) by \(J_s h\). Equivalently, for \(\langle
-        \eta_q, h \rangle = \langle \Phi_q, K_{q_0} h \rangle - \langle
-        F_q,
-J_q h \rangle\),</i>
-      </p>
-      <i><table width="100%">
-        <tr>
-          <td width="100%" align="center"><a id="eq:hs-ds-explicit"></a>\(\displaystyle \mathbb{E}\mathcal{D}_h
-          G =\mathbb{E}[G (\langle \Phi_q, K_{q_0} h \rangle +
-\langle D
-          \bar{\Gamma}_q (Y_q), J_q h \rangle)] + O (C_{\gamma}
-          \|g\|_{\infty}
-\|h\|_{H^2} q^{- 1 / 4}) . \)</td>
-          <td align="right">(18.23)</td>
-        </tr>
-      </table></i>
-      <p style="margin-bottom: 1em">
-        <i>So at every large resolution \(q\) the renormalised cube \(D
-        \bar{\Gamma}_q (Y_q)\) closes the hierarchy, up to an error which
-        vanishes as \(q \to \infty\). The increments are consistent:
-        \(\mathbb{E}[G \langle \eta_q - \eta_s, h \rangle] = 0\) for \(q_k
-        \leqslant s \leqslant q\).</i>
-      </p>
-    </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>\(G\) is \(\mathcal{F}_q\)-measurable, so
-      \(\mathbb{E}[G \langle \eta_q, h \rangle] =\mathbb{E}[G \langle B_{q -
-      q_0}, h
-\rangle]\). Moreover \(\Phi_s = J_s \Phi + C_s B_{s - q_0}\)
-      with \(B\) independent of \(\Phi\), and for \(s \leqslant q\) the
-      covariance of \(\langle B_{q - q_0}, h \rangle\) and \(\langle C_s B_{s
-      - q_0}, k \rangle\) is \((s - q_0) \langle C_s h, k \rangle = \langle
-      J_s h, k \rangle\). Gaussian integration by parts in the path of \(B\)
-      gives (<a href="#eq:hs-ds-path">18.22</a>). Finally (<a href="#eq:hs-ds-explicit">18.23</a>) follows from
-      (<a href="#eq:germ">18.20</a>) with \(J_q h\), since \(\|J_q h\|_{H^2} \leqslant
-      \|h\|_{H^2}\).<span style="margin-left: 1em"></span>\(\Box\)
-    </p>
-    <h3 id="auto-37"><a id="sec:law-var"></a>18.7<span style="margin-left: 1em"></span>Uniqueness in law and the
+    <h3 id="auto-37"><a id="sec:law-var"></a>18.6<span style="margin-left: 1em"></span>Uniqueness in law and the
     variational formula<span style="margin-left: 1em"></span></h3>
     <p>
       Along the exact flow the value \(A_t = A (t, x_t)\) solves a scalar
       backward equation, the integrated form of the vector one and the
-      analogue of (4.13) of Gubinelli&ndash;Meyer. Indeed, by (<a href="#eq:D">18.16</a>)
+      analogue of (4.13) of Gubinelli&ndash;Meyer. Indeed, by (<a href="#eq:D">18.18</a>)
       and \(\hspace{0.17em} \mathrm{d} D = D \langle Z, \hspace{0.17em}
       \mathrm{d}
 W^{\mathbb{R}} \rangle\),
@@ -3378,12 +3343,12 @@ W^{\mathbb{R}} \rangle\),
         \int_t^{\infty} \langle Z_s, \hspace{0.17em} \mathrm{d} W_s
 \rangle .
         \)</td>
-        <td align="right">(18.24)</td>
+        <td align="right">(18.25)</td>
       </tr>
     </table>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Definition <class style="font-style: normal">18.11</class>.
+        <strong class="enunciation-name">Definition <class style="font-style: normal">18.10</class>.
         </strong><i><class style="font-style: normal"><strong>(Scalar FBSDE) </strong></class><a
         id="def:scalar"></a>Fix \(q \geqslant q_0\) and a continuous \(x\). A
         <strong>solution</strong> is a filtered probability space, of law
@@ -3396,7 +3361,7 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
         \mathrm{d} W)\), with \(\mathbb{E} \int_q^{\infty} \|Z\|_2^2
         \hspace{0.17em} \mathrm{d} s +\mathbb{E}
 \int_q^{\infty} |e_s (Y_s) |
-        \hspace{0.17em} \mathrm{d} s < \infty\), satisfying (<a href="#eq:scalar-A">18.24</a>),
+        \hspace{0.17em} \mathrm{d} s < \infty\), satisfying (<a href="#eq:scalar-A">18.25</a>),
         \(A_q\) being deterministic, and such that \(\mathcal{E}_T = \exp (-
         \int_q^T \langle Z, \hspace{0.17em} \mathrm{d} W
 \rangle - \frac{1}{2}
@@ -3407,7 +3372,7 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
       The forward equation here is \(\hspace{0.17em} \mathrm{d} P = (Y + Z)
       \hspace{0.17em} \mathrm{d} s +
 \hspace{0.17em} \mathrm{d} W\) with \(P =
-      K_s x\): the forward equation of (<a href="#eq:limit-equations">18.14</a>). The limit law is
+      K_s x\): the forward equation of (<a href="#eq:limit-equations">18.16</a>). The limit law is
       a solution, by the proof of Theorem <a href="#thm:limit">18.6</a>, at \((q, x)\) in
       place of \((q_0, 0)\): \(\mathcal{E}_t = D_t^{- 1}\) is uniformly
       integrable under the exact law, closed by \(\hspace{0.17em} \mathrm{d}
@@ -3416,7 +3381,7 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.12</class>. </strong><i><class
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.11</class>. </strong><i><class
         style="font-style: normal"><strong>(Uniqueness in law) </strong></class><a id="thm:unique-law"></a>For
         every solution, the law of \(x\) on paths is the limit of
         \(\mathbb{P}^{q, x_N}\), \(A_q = A (q, x)\), and \(Z\) is the adapted
@@ -3433,7 +3398,7 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
       \hspace{0.17em} \mathrm{d} s +
 C_s \hspace{0.17em} \mathrm{d} W'\). By
       pathwise uniqueness (Lemma <a href="#lem:lip">16.3</a>), \(x\) under
-      \(\mathbb{Q}'\) has law \(\mathbb{R}^{q, x}\). By (<a href="#eq:scalar-A">18.24</a>)
+      \(\mathbb{Q}'\) has law \(\mathbb{R}^{q, x}\). By (<a href="#eq:scalar-A">18.25</a>)
       at \(t = q\), \(\mathcal{E}_{\infty}^{- 1} = \exp (\int_q^{\infty}
       \langle Z, \hspace{0.17em}
 \mathrm{d} W \rangle + \frac{1}{2}
@@ -3457,12 +3422,12 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       So if the backward equation is written for the scalar value \(A\), the
       solution is unique in law. Its \(Z\) is the feedback \(m_s (x_s) - y_s
       (x_s)\), and by Theorem <a href="#thm:limit">18.6</a> it coincides with \(\psi - Y\)
-      of (<a href="#eq:limit-equations">18.14</a>); differentiability of \(A\) in \(x\) is not
+      of (<a href="#eq:limit-equations">18.16</a>); differentiability of \(A\) in \(x\) is not
       claimed.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.13</class>. </strong><i><class
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.12</class>. </strong><i><class
         style="font-style: normal"><strong>(Renormalised variational formula) </strong></class><a
         id="thm:var"></a>For \(q \geqslant q_0\), \(x\) continuous, and \(O\) bounded
         measurable on paths, under the reference \(\mathbb{R}^{q, x}\),</i>
@@ -3479,12 +3444,12 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
 [O + \int_q^{\infty} (e_s (Y_s) +
           \frac{1}{2} \|u_s \|_2^2) \hspace{0.17em}
 \mathrm{d} s]], \)</td>
-          <td align="right">(18.25)</td>
+          <td align="right">(18.26)</td>
         </tr>
       </table></i>
       <p>
         <i>where, for \(\mathbb{Q}\) of finite entropy, \(u\) is the drift of
-        \(W\) under \(\mathbb{Q}\) added to (<a href="#eq:flows">18.2</a>) as \(C_s u_s
+        \(W\) under \(\mathbb{Q}\) added to (<a href="#eq:flows">18.4</a>) as \(C_s u_s
         \hspace{0.17em} \mathrm{d} s\), so that \(Y\) solves \(\hspace{0.17em}
         \mathrm{d} Y = (b (Y) + H (Y) u) \hspace{0.17em} \mathrm{d} s
 + H (Y)
@@ -3507,13 +3472,13 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
           \frac{1}{2} \|u_s \|_2^2) \hspace{0.17em}
 \mathrm{d} s], \quad
           Y^u_{q_0} = 0, \)</td>
-          <td align="right">(18.26)</td>
+          <td align="right">(18.27)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
         <i>the infimum being over the laws of finite entropy with respect to
         \(\mathbb{R}\), and \(\mathcal{G}(0) = A (q_0, 0)\) is the
-        renormalised free energy (<a href="#eq:free">18.12</a>). The minimiser for \(O =
+        renormalised free energy (<a href="#eq:free">18.14</a>). The minimiser for \(O =
         0\) is \(u = Z\). No infinite constant occurs in \(\mathcal{G}\), and
         there is no initial law to optimise over.</i>
       </p>
@@ -3541,26 +3506,26 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       with \(\mathcal{S}= O + \int_q^{\infty} e\). The integrability
       \(\mathbb{E}^{\mathbb{R}} \mathrm{e}^{-\mathcal{S}} < \infty\) is
       Theorem <a href="#thm:limit-kernel">18.4</a>. At the minimiser for \(O = 0\),
-      \(\mathbb{E}|\mathcal{S}| < \infty\) passes to the limit from (<a href="#eq:tails">18.9</a>)
+      \(\mathbb{E}|\mathcal{S}| < \infty\) passes to the limit from (<a href="#eq:tails">18.11</a>)
       by Fatou; for \(O\) bounded the same holds as the tilted law has a
       bounded density with respect to it. Since \(\mathbb{R}^{q, x}\) is the
       strong solution driven by \(W\), every \(\mathbb{Q}\) of finite entropy
       has a drift \(u\) with \(\text{Ent} = \frac{1}{2}
       \mathbb{E}^{\mathbb{Q}} \int \|u\|^2\) by F&ouml;llmer's theorem. At \(O
-      = 0\), the minimiser has control \(Z\), by Section <a href="#sec:law-var">18.7</a>
+      = 0\), the minimiser has control \(Z\), by Section <a href="#sec:law-var">18.6</a>
       (\(u = Z\) is the F&ouml;llmer drift of \(\mathbb{P}^{q, x}\)). The
       equation for \(Y\) holds under \(\mathbb{R}^{q, x}\) by the proof of
       Theorem <a href="#thm:limit">18.6</a>, hence under \(\mathbb{Q} \ll \mathbb{R}^{q,
       x}\) with \(\hspace{0.17em} \mathrm{d} W = \hspace{0.17em} \mathrm{d}
       W^{\mathbb{Q}} + u
-\hspace{0.17em} \mathrm{d} s\). (<a href="#eq:var">18.26</a>)
-      is (<a href="#eq:var-x">18.25</a>) at \((q_0, 0)\), with (<a href="#eq:GM0">18.11</a>).<span
+\hspace{0.17em} \mathrm{d} s\). (<a href="#eq:var">18.27</a>)
+      is (<a href="#eq:var-x">18.26</a>) at \((q_0, 0)\), with (<a href="#eq:GM0">18.13</a>).<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">18.14</class>. </strong><class
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.13</class>. </strong><class
       style="font-style: normal"><strong>(Coercivity as a corollary) </strong></class><a id="rem:coerc"></a>(<a
-      href="#eq:var-x">18.25</a>) with \(O = 0\) reads, for every control, \(\mathbb{E}
+      href="#eq:var-x">18.26</a>) with \(O = 0\) reads, for every control, \(\mathbb{E}
       \int (e_s (Y^u_s) + \frac{1}{2} \|u_s \|^2) \hspace{0.17em}
 \mathrm{d} s
       \geqslant A (q, x) \geqslant - C_R\). This is the coercivity
@@ -3574,23 +3539,25 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
       are not needed here.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">18.15</class>. </strong><class
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.14</class>. </strong><class
       style="font-style: normal"><strong>(Comparison) </strong></class><a id="rem:comp"></a>In the
       Barashkov&ndash;Gubinelli functional the Lagrangian contains
       \(\frac{1}{2} \|u\|^2\) for a control singular at the cutoff, and
       renormalisation is a change of variables in the cost, subtracting the
-      Wick cube of the free field (Remark 15.4). Here the reference process
-      carries the renormalisation, the control is the remainder \(Z\), it is
-      in \(L^2\) uniformly in \(N\) (of size \(q^{- 5 / 4}\)), and the only
-      interaction left in the cost is the defect \(e\), with \(\mathbb{E} \int
-      |e|\) small at large \(q\).
+      Wick cube of the free field (\(u = - 4 \lambda \dot{Q}^{1 / 2} : X^3 : +
+      r\) in the normalisation of Lecture 4 [<a href="#bib-BG20">BG20</a>]). Here the
+      reference process carries the renormalisation, the control is the
+      remainder \(Z\), it is in \(L^2\) uniformly in \(N\) (of size \(q^{- 5 /
+      4}\)), and the only interaction left in the cost is the defect \(e\),
+      with \(\mathbb{E} \int |e|\) small at large \(q\). The coercivity is
+      used pathwise, the remainder in expectation.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <class style="font-style: normal">18.16</class>. </strong><class
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.15</class>. </strong><class
       style="font-style: normal"><strong>(Comparison with sine&ndash;Gordon) </strong></class><a
       id="rem:GM"></a>In [<a href="#bib-GM24">GM24</a>] the smoothed force and the defect are
       bounded uniformly in the field, there is a spatial cut-off, and the same
-      formula follows from boundedness; (<a href="#eq:scalar-A">18.24</a>) is the analogue
+      formula follows from boundedness; (<a href="#eq:scalar-A">18.25</a>) is the analogue
       of their (4.13). Here the defect is unbounded. What replaces the bound
       is the entropy of the control: UV stability of the restarted laws makes
       the densities uniformly integrable, and exponential moments of the
@@ -3604,13 +3571,13 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
       tails hold also at \(H^{- 1 / 2 - \vartheta}\) on the literature's
       lattices; we have not used this.
     </p>
-    <h3 id="auto-38"><a id="sec:open"></a>18.8<span style="margin-left: 1em"></span>What is not proved, and where
+    <h3 id="auto-38"><a id="sec:open"></a>18.7<span style="margin-left: 1em"></span>What is not proved, and where
     to go next<span style="margin-left: 1em"></span></h3>
     <ul>
       <li>
         <p>
-          <em>The vector FBSDE and strong solutions.</em> Theorem <a href="#thm:unique-law">18.12</a>
-          gives uniqueness in law for the scalar form. A solution of (<a href="#eq:limit-equations">18.14</a>)
+          <em>The vector FBSDE and strong solutions.</em> Theorem <a href="#thm:unique-law">18.11</a>
+          gives uniqueness in law for the scalar form. A solution of (<a href="#eq:limit-equations">18.16</a>)
           alone need not have \(Z\) of gradient form. It would suffice that
           any solution has a Lipschitz decoupling field, which needs a
           pointwise bound on \(\text{Cov}_q (x) = D^2 \mathcal{K}_q\), or
@@ -3625,9 +3592,9 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
       </li>
       <li>
         <p>
-          <em>Quartic tails at the free threshold.</em> Theorem <a href="#thm:hs">17.3</a>
+          <em>Quartic tails at the free threshold.</em> Theorem <a href="#thm:hs">17.4</a>
           gives quartic moments in \(H^{- \rho}\) for \(\rho > \frac{3}{2}\),
-          and Theorem <a href="#thm:hs-gauss">17.4</a> Gaussian moments for \(s >
+          and Theorem <a href="#thm:hs-gauss">17.5</a> Gaussian moments for \(s >
           \frac{1}{2}\). The quartic moment at \(s\) near \(\frac{1}{2}\)
           would need spatially resolved sources.
         </p>
@@ -3645,7 +3612,7 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
       <li>
         <p>
           <em>Infinite volume.</em> The force, its Burgers flow, and
-          differences of free energies are intensive (Section <a href="cqft_lecture4.html#sec:infinite-volume">9.2</a>).
+          differences of free energies are intensive (Section <a href="cqft_lecture4.html#sec:infinite-volume">9.4</a>).
           The estimates of this lecture must then be made local, with weights
           in space and constants per unit volume. A new difficulty appears in
           the backward equation: its integrand \(\Xi\) is a nonlocal operator,
@@ -3653,9 +3620,9 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
           far away. Uniform-in-volume coefficient bounds and local energy
           moments are themselves open; they could give an infinite-volume
           Gibbs subsequence. Controlling the &ldquo;noise from infinity&rdquo;
-          (together with local compactness of the Hessian blocks) is the main
-          additional step needed to retain the full FBSDE without an
-          orthogonal martingale [<a href="#bib-FBSDE26">FBSDE26</a>].
+          (together with local compactness of the blocks of the derivative of
+          the force) is the main additional step needed to retain the full
+          FBSDE without an orthogonal martingale [<a href="#bib-FBSDE26">FBSDE26</a>].
         </p>
       </li>
     </ul>
@@ -3667,52 +3634,22 @@ s \geqslant - C_R\) with constant \(\theta = 1\). It has been
       <div style="display: inline">
         The six lectures went from the Wightman axioms to the Euclidean
         formulation (Lecture 1), to the free field (Lecture 2), to stochastic
-        quantisation and the scale decomposition (Lecture 3), and to the three
-        faces of an interacting field: the Polchinski equation, the FBSDE and
-        the variational problem (Lecture 4). In Lectures 5&ndash;6 the FBSDE
-        in forecast coordinates, together with an explicit solution of the
-        Wetterich equation up to an integrable defect, gave a construction of
-        \(\Phi^4_3\) in which every object has a probabilistic meaning: the
-        forecast is a conditional mean, the response is a conditional
-        covariance, the Brownian motion is an innovation, and UV stability is
-        the statement that an explicit action predicts the conditional mean up
-        to an error that is small at high resolution. In the end the exact
-        flow is the explicit flow with control the error, the measure is an
-        explicit density over the explicit flow, and the renormalised
-        variational problem has that error as its optimal control.
+        quantisation and the scale decomposition (Lecture 3), and to three
+        views of an interacting field, renormalisation, optimal control and
+        filtering, meeting in the force coordinates (Lecture 4). In Lectures
+        5&ndash;6 the FBSDE in forecast coordinates, together with an explicit
+        solution of the force equation up to an integrable defect, gave a
+        construction of \(\Phi^4_3\) in which every object has a probabilistic
+        meaning: the forecast is a conditional mean, the response is a
+        conditional covariance, the Brownian motion is an innovation, and UV
+        stability is the statement that an explicit force predicts the
+        conditional mean up to an error that is small at high resolution. In
+        the end the exact flow is the explicit flow with control the error,
+        the measure is an explicit density over the explicit flow, and the
+        renormalised variational problem has that error as its optimal
+        control.
       </div>
     </p>
-    <center>
-      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
-        <font style="font-size: 84.0%"><table style="display: inline-table; vertical-align: middle">
-          <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lecture 4 (formal)</td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Lectures 5&ndash;6</td>
-            <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">status in the limit</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">forecast \(\psi_t =\mathbb{E}_t \Phi_T\)</td>
-            <td style="text-align: center; vertical-align: middle">\(\psi = Y + Z\)</td>
-            <td style="text-align: center; vertical-align: middle">closed martingale, <class style="font-style: normal">(<a href="#eq:closed-forecast">18.13</a>)</class></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">response \(H_t = \text{Cov}_t\)</td>
-            <td style="text-align: center; vertical-align: middle">\(\text{Cov} = H (Y) + \Xi\)</td>
-            <td style="text-align: center; vertical-align: middle">conditional covariance</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">\(\Gamma_t\), Wetterich</td>
-            <td style="text-align: center; vertical-align: middle">\(\bar{\Gamma}_q\) explicit, defect \(e\)</td>
-            <td style="text-align: center; vertical-align: middle">deterministic coefficients</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle">force \(F_t\)</td>
-            <td style="text-align: center; vertical-align: middle">\(K_q Z_q - D \bar{\Gamma}_q (Y_q)\)</td>
-            <td style="text-align: center; vertical-align: middle">observable at finite \(q\)</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">DS equation</td>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">Theorem <a href="#thm:DS">18.8</a></td>
-            <td style="text-align: center; vertical-align: middle; border-bottom: 1px solid">tested in expectation</td>
-          </tr></tbody>
-        </table></font>
-      </p>
-    </center>
     <h3 id="auto-40">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
@@ -3728,8 +3665,8 @@ s\). Deduce
         \int_{q_0}^q \langle (\text{Cov}_s K_s - I) h,
 \mathrm{d} W_s
         \rangle\), a martingale for the limiting filtration (note \(F_{q_0} =
-        0\), since \(\nu_N\) is even). (Cross-check: \(F_q = K_q Z_q - D
-        \bar{\Gamma}_q (Y_q)\), with Theorem <a href="#thm:uv">16.2</a>, gives a
+        0\), since \(\nu_N\) is even). (Cross-check: \(F_q = K_q Z_q -
+        \bar{\mathcal{F}}_q (Y_q)\), with Theorem <a href="#thm:uv">16.2</a>, gives a
         uniform second-moment bound.) Why does this not give a terminal value
         \(F_{\infty}\)?</font>
       </p>
@@ -3754,7 +3691,7 @@ s\). Deduce
         q + D^3 \mathcal{K}_q (P_q) [\hspace{0.17em} \mathrm{d} W_q]\). For a
         Gaussian \(\nu_N = \mu^C\), solve this and check that \(\text{Cov}_q =
         C_q\). For a general \(\nu_N\), show that \(\text{Tr} \text{Cov}_q\)
-        is a supermartingale, and compare with (<a href="#eq:Cov">18.15</a>).</font>
+        is a supermartingale, and compare with (<a href="#eq:Cov">18.17</a>).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -3781,21 +3718,22 @@ s\). Deduce
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.5</class>.
         </strong><class style="font-style: normal"><strong>(Dyson&ndash;Schwinger by Gaussian
         integration by parts) </strong></class>(a) At fixed \(N\), check that
-        <class style="font-style: normal">(<a href="#eq:DS-q">18.19</a>)</class> is Theorem <a href="cqft_lecture4.html#thm:DS-scale">B.1</a>
-        of Lecture 4 in the profile of Lecture 5, and compare the two proofs:
-        score of the law of \(\Phi_q\) against the filtered noise. (b) For
-        \(V_N = 0\), write \(F = 0\) and check <class style="font-style: normal">(<a href="#eq:field-q">18.18</a>)</class>
-        directly. (c) Show that \(\langle F, h \rangle\) has bracket \(\int
-        \|(\operatorname{Cov}_s K_s - I) h\|_2^2 \mathrm{d} s\), and that
-        <class style="font-style: normal">(<a href="#eq:germ">18.20</a>)</class> does not bound it uniformly
-        in \(q\). What would a bound imply?</font>
+        <class style="font-style: normal">(<a href="#eq:DS-q">18.21</a>)</class> is Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a>
+        of Lecture 4 in the profile of Lecture 5, and compare the proofs of
+        Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a> and of Corollary <a href="cqft_lecture4.html#cor:DS-path">9.3</a> (\(k = 1\))
+        of Lecture 4: score of the law of \(\Phi_q\) against the filtered
+        noise. (b) For \(V_N = 0\), write \(F = 0\) and check <class style="font-style: normal">(<a
+        href="#eq:field-q">18.20</a>)</class> directly. (c) Show that \(\langle F, h
+        \rangle\) has bracket \(\int \|(\operatorname{Cov}_s K_s - I) h\|_2^2
+        \mathrm{d} s\), and that <class style="font-style: normal">(<a href="#eq:germ">18.22</a>)</class>
+        does not bound it uniformly in \(q\). What would a bound imply?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.6</class>.
         </strong><class style="font-style: normal"><strong>(Negative Sobolev threshold)
-        </strong></class>Verify <class style="font-style: normal">(<a href="#eq:noise-tail">17.1</a>)</class>, and
+        </strong></class>Verify <class style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</class>, and
         show that at \(s = \frac{3}{2}\) the bound becomes \(Q^{- 1} \log (2 +
         Q)\).</font>
       </p>
@@ -3804,23 +3742,27 @@ s\). Deduce
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.7</class>.
         </strong><class style="font-style: normal"><strong>(One site) </strong></class><a id="ex:one-site"></a>On
-        one site take \(K_s = s\), \(\bar{\Gamma} (y) = \frac{\gamma}{12} y^4
-        + \frac{a}{2} y^2\) independent of \(s\), with \(s + a > 0\) on the
-        range considered, and \(V_N = \bar{\Gamma}\). Show that \(e_s (y) + c
-        (s) = \frac{1}{2} (s^{- 1} - (s + \bar{\Gamma}'' (y))^{- 1})\).
+        one site take \(K_s = s\), \(\bar{\mathcal{F}} (y) = \frac{\gamma}{3}
+        y^3 + ay\) independent of \(s\), with \(s + a > 0\) on the range
+        considered, and \(DV_N = \bar{\mathcal{F}}\). Show that
+        \(\mathcal{D}_s (y) = \frac{1}{2} \bar{\mathcal{F}} \prime\prime (y)
+        (s +
+\bar{\mathcal{F}} \prime (y))^{- 2}\) and \(e_s (y) + c (s) =
+        \frac{1}{2} (s^{- 1} - (s + \bar{\mathcal{F}} \prime (y))^{-
+1})\).
         Simulate \(\hspace{0.17em} \mathrm{d} x = - s^{- 1} (x - y_s (x))
         \hspace{0.17em}
 \mathrm{d} s + s^{- 1} \hspace{0.17em} \mathrm{d} W\),
-        and check (<a href="#eq:density">18.5</a>) and (<a href="#eq:sandwich">18.8</a>) numerically. How
-        small is the entropy?</font>
+        and check (<a href="#eq:density">18.7</a>) and (<a href="#eq:sandwich">18.10</a>) numerically.
+        How small is the entropy?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.8</class>.
         </strong><class style="font-style: normal"><strong>(Freezing) </strong></class><a id="ex:freeze"></a>In
-        the setting of the previous exercise freeze the action below
-        \(q_{\ast}\), and check (<a href="#eq:GM0">18.11</a>) and (<a href="#eq:free">18.12</a>)
+        the setting of the previous exercise freeze the force below
+        \(q_{\ast}\), and check (<a href="#eq:GM0">18.13</a>) and (<a href="#eq:free">18.14</a>)
         numerically for several \(q_{\ast}\). Which quantities change with
         \(q_{\ast}\), and which do not?</font>
       </p>
@@ -3829,11 +3771,12 @@ s\). Deduce
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.9</class>.
         </strong><class style="font-style: normal"><strong>(Gaussian case) </strong></class><a id="ex:gauss"></a>For
-        \(V_N = \frac{\mu}{2} \| \varphi \|^2\) and \(\bar{\Gamma}_q = V_N\)
-        for \(q \geqslant q_{\ast}\), show that \(e = 0\) above \(q_{\ast}\)
-        and \(e = - \frac{1}{2} \|y\|^2\) below. Compute the density (<a href="#eq:density">18.5</a>)
-        mode by mode, and show that the constant diverging with \(N\) is
-        carried by \(\mathcal{C}_N\).</font>
+        \(V_N = \frac{\mu}{2} \| \varphi \|^2\) and \(\bar{\mathcal{F}}_q =
+        \mu y\) for \(q \geqslant q_{\ast}\), show that \(\mathcal{D}= 0\)
+        above \(q_{\ast}\) and \(\mathcal{D}= - y\) below, so \(e = -
+        \frac{1}{2} \|y\|^2\). Compute the density (<a href="#eq:density">18.7</a>) mode by
+        mode, and show that the constant diverging with \(N\) is carried by
+        \(\mathcal{C}_N\).</font>
       </p>
     </div>
     <h2 id="auto-41">References<span style="margin-left: 1em"></span></h2>

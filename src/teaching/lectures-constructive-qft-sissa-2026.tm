@@ -76,13 +76,13 @@
   be delivered in class.
 
   <\itemize>
-    <item><with|font-series|bold|Lecture 4>: Forward--backward equations. Effective potentials and the Polchinski equation; the FBSDE, whose force is an observable; the Wetterich equation and the variational structure of the flow; perturbation theory, counterterms and Dyson--Schwinger equations at every scale.
+    <item><with|font-series|bold|Lecture 4>: Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>].
 
-    <item><with|font-series|bold|Lecture 5>: The Wetterich FBSDE, two renormalisations and the large-field problem.
+    <item><with|font-series|bold|Lecture 5>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
