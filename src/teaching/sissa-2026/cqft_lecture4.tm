@@ -4,8 +4,8 @@
 
 <\body>
   <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
-  Field Theory>|<doc-subtitle|Lecture<nbsp>4: The Polchinski flow and
-  forward\Ubackward equations>|<doc-author|<author-data|<author-name|M.
+  Field Theory>|<doc-subtitle|Lecture<nbsp>4: Forward\Ubackward
+  equations>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
 

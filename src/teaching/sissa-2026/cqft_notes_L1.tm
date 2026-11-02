@@ -137,8 +137,7 @@
 
     <with|par-left|3tab|<with|font-size|0.92|Lecture
     <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>4.
-    The Polchinski flow and forward\Ubackward equations
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    Forward\Ubackward equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-35>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Lectures
@@ -1682,7 +1681,7 @@
   characterisation>>|<row|<cell|3>|<cell|Stochastic quantisation and
   stochastic observables>|<cell|Parabolic and elliptic SQ; scale
   decomposition; stochastic observables; products and
-  OPE>>|<row|<cell|4>|<cell|The Polchinski flow and FBSDEs>|<cell|Polchinski
+  OPE>>|<row|<cell|4>|<cell|Forward\Ubackward equations>|<cell|Polchinski
   equation and FBSDE; force coordinates and the Wetterich equation;
   Boué\UDupuis formula>>>>><label|tab:course>>|Lectures<nbsp>1\U4.>
 
@@ -1721,15 +1720,15 @@
   and<nbsp><hlink|6.2|cqft_lecture3.tm#ex:wick-product>.
   <em|Reading:><nbsp><cite|DPZ14|ADG20|BCG26>.
 
-  <paragraph|Lecture<nbsp>4. The Polchinski flow and forward\Ubackward
-  equations> Separate notes: Effective potentials and the Polchinski
-  equation; the Polchinski process as an FBSDE whose force is a martingale;
-  the FBSDE in force coordinates, where the transport term is integrated
-  exactly, and the Wetterich equation for the effective average action; the
-  Boué\UDupuis formula, with the Polchinski equation as its
-  Hamilton\UJacobi\UBellman equation, in finite and infinite volume.
-  Additional material: perturbation theory and counterterms; Dyson\USchwinger
-  equations at every scale. <em|Reading:><nbsp><cite|Pol84|BBD24|BD98|BG20>.
+  <paragraph|Lecture<nbsp>4. Forward\Ubackward equations> Separate notes:
+  Effective potentials and the Polchinski equation; the Polchinski process as
+  an FBSDE whose force is a martingale; the FBSDE in force coordinates, where
+  the transport term is integrated exactly, and the Wetterich equation for
+  the effective average action; the Boué\UDupuis formula, with the Polchinski
+  equation as its Hamilton\UJacobi\UBellman equation, in finite and infinite
+  volume. Additional material: perturbation theory and counterterms;
+  Dyson\USchwinger equations at every scale.
+  <em|Reading:><nbsp><cite|Pol84|BBD24|BD98|BG20>.
 
   <paragraph|Lectures<nbsp>5\U6> Construction of
   <math|\<Phi\><rsup|4><rsub|3>> on the torus (separate notes). The Wetterich
@@ -2509,8 +2508,7 @@
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lecture
       <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>4.
-      The Polchinski flow and forward\Ubackward equations
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      Forward\Ubackward equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-35>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Lectures

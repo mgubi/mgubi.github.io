@@ -14,8 +14,7 @@
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|The Polchinski flow and forward\Ubackward
-      equations>
+      <with|font-size|1.3|Forward\Ubackward equations>
 
       <vspace|0.65cm>
 

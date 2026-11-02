@@ -76,7 +76,7 @@
   be delivered in class.
 
   <\itemize>
-    <item><with|font-series|bold|Lecture 4>: The Polchinski flow and forward--backward equations. Effective potentials and the Polchinski equation; the FBSDE, whose force is an observable; the Wetterich equation and the variational structure of the flow; perturbation theory, counterterms and Dyson--Schwinger equations at every scale.
+    <item><with|font-series|bold|Lecture 4>: Forward--backward equations. Effective potentials and the Polchinski equation; the FBSDE, whose force is an observable; the Wetterich equation and the variational structure of the flow; perturbation theory, counterterms and Dyson--Schwinger equations at every scale.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
