@@ -221,7 +221,7 @@
   with <math|\<bbb-E\>*<around|[|\<xi\><around|(|u|)>*\<xi\><around|(|v|)>|]>=<around|\<langle\>|u,v|\<rangle\>>>,
   formally <math|\<bbb-E\>*<around|[|\<xi\>*<around|(|t,x|)>*\<xi\>*<around|(|s,y|)>|]>=\<delta\>*<around|(|t-s|)>*\<delta\>*<around|(|x-y|)>>.
   Let <math|W<rsub|t><around|(|h|)>=\<xi\>*<around|(|<with|math-font|Bbb|1><rsub|<around|[|0,t|]>>\<otimes\>h|)>>,
-  <math|t\<geq\>0>, a cylindrical Brownian motion. For a (weak) solution
+  <math|t\<geqslant\>0>, a cylindrical Brownian motion. For a (weak) solution
   <math|\<Phi\>> of<nbsp><eqref|eq:SQE> with <math|V=0> and
   <math|F=g*<around|(|\<varphi\><around|(|f<rsub|1>|)>,\<ldots\>,\<varphi\><around|(|f<rsub|n>|)>|)>\<in\>\<cal-F\>*C<rsup|\<infty\>><rsub|b>>,
   Itô's formula shows that <math|F<around|(|\<Phi\><rsub|t>|)>-<big|int><rsub|0><rsup|t>\<cal-L\>*F<around|(|\<Phi\><rsub|r>|)>\<mathd\>r>
@@ -284,7 +284,7 @@
       solution started from <math|\<Psi\><rsub|0>>,
 
       <\equation*>
-        \<Psi\><rsub|t><around|(|f|)>=\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|0,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>f|)>,<space|2em>t\<geq\>0.
+        \<Psi\><rsub|t><around|(|f|)>=\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|0,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>f|)>,<space|2em>t\<geqslant\>0.
       </equation*>
 
       Then <math|\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<Psi\><rsub|t><around|(|f|)>>|]>\<to\>\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>
@@ -307,7 +307,7 @@
     In particular <math|K<rsub|t,f>\<in\>L<rsup|2>*<around|(|\<bbb-R\>\<times\>\<cal-M\>|)>>,
     and multiplying by <math|2> gives the covariance. Stationarity follows.
     For fixed <math|t>, <math|f\<mapsto\>\<Phi\><rsub|t><around|(|f|)>> is
-    linear and <math|\<bbb-E\><around|[|\<Phi\><rsub|t><around|(|f|)><rsup|2>|]>=<around|\<langle\>|f,C*f|\<rangle\>>\<leq\>m<rsup|-2><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|2>><rsup|2>>,
+    linear and <math|\<bbb-E\><around|[|\<Phi\><rsub|t><around|(|f|)><rsup|2>|]>=<around|\<langle\>|f,C*f|\<rangle\>>\<leqslant\>m<rsup|-2><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|2>><rsup|2>>,
     so it is continuous from <math|\<cal-S\><around|(|\<cal-M\>|)>> to
     <math|L<rsup|2><around|(|\<bbb-P\>|)>>. By the regularisation theorem for
     random linear functionals on nuclear spaces (Itô\UNawata, Mitoma) it has
@@ -502,7 +502,7 @@
     and <math|\<bbb-E\><rsub|\<nu\>>*<around|[|\<cal-L\>*F|]>=0> for all
     <math|F\<in\>\<cal-F\>*C<rsup|\<infty\>><rsub|b>>. Show that
     <math|\<nu\>=\<mu\><rsub|m>>. <em|Hint:> for
-    <math|f=<big|sum><rsub|n\<leq\>N>a<rsub|n>*e<rsub|n>> and
+    <math|f=<big|sum><rsub|n\<leqslant\>N>a<rsub|n>*e<rsub|n>> and
     <math|\<psi\><around|(|a|)>=\<bbb-E\><rsub|\<nu\>>\<mathe\><rsup|\<mathi\>\<varphi\><around|(|f|)>>>,
     show <math|<big|sum><rsub|n>\<lambda\><rsub|n>*a<rsub|n>*\<partial\><rsub|a<rsub|n>>*\<psi\>=-<around|\||a|\|><rsup|2>*\<psi\>>,
     and differentiate <math|s\<mapsto\>\<psi\><around|(|\<mathe\><rsup|s*D>a|)>*exp
@@ -529,11 +529,11 @@
   </exercise>
 
   <\exercise>
-    <dueto|Slices of Gaussian fields><label|ex:slices> Let <math|k\<geq\>1>,
-    <math|p\<gtr\>k/2>, and let <math|\<Psi\>> be the centred Gaussian field
-    on <math|\<bbb-R\><rsup|k>\<times\>\<cal-M\>> with covariance
-    <math|<around|(|-\<Delta\><rsub|\<bbb-R\><rsup|k>>+A|)><rsup|-p>>. (a)
-    Show that <math|\<Psi\><around|(|0,\<cdot\>|)>> is well defined with
+    <dueto|Slices of Gaussian fields><label|ex:slices> Let
+    <math|k\<geqslant\>1>, <math|p\<gtr\>k/2>, and let <math|\<Psi\>> be the
+    centred Gaussian field on <math|\<bbb-R\><rsup|k>\<times\>\<cal-M\>> with
+    covariance <math|<around|(|-\<Delta\><rsub|\<bbb-R\><rsup|k>>+A|)><rsup|-p>>.
+    (a) Show that <math|\<Psi\><around|(|0,\<cdot\>|)>> is well defined with
     covariance <math|c<rsub|k,p>*A<rsup|k/2-p>>,
     <math|c<rsub|k,p>=\<Gamma\>*<around|(|p-<frac|k|2>|)>/<around|(|<around|(|4*\<pi\>|)><rsup|k/2>*\<Gamma\><around|(|p|)>|)>>.
     (b) For <math|<around|(|k,p|)>=<around|(|1,1|)>> and <math|\<cal-M\>=N>,
@@ -559,8 +559,8 @@
   the Wilson\UKadanoff picture<nbsp><cite|WK74>, and forces us to work with
   singular objects from the start. Already for the GFF, the Wick power
   <math|:\<varphi\><rsup|n>>: is not a random distribution when
-  <math|n*<around|(|d-2|)>\<geq\>d>, since its regularisations are not even
-  tight (Proposition<nbsp><hlink|3.11|cqft_notes_L2.tm#prop:no-wick> of
+  <math|n*<around|(|d-2|)>\<geqslant\>d>, since its regularisations are not
+  even tight (Proposition<nbsp><hlink|3.11|cqft_notes_L2.tm#prop:no-wick> of
   Lecture<nbsp>2).
 
   From now on we index everything by a <em|resolution>
@@ -568,12 +568,12 @@
   <math|t> is a smooth function <math|\<varphi\><rsub|t>>, and the
   information available at resolution <math|t> is the
   <math|\<sigma\>>-algebra <math|\<cal-F\><rsub|t>> generated by
-  <math|<around|(|\<varphi\><rsub|s>|)><rsub|s\<leq\>t>>. A physical quantity
-  is then not a single random variable but a <em|consistent family> of
-  finite-resolution estimates of it, i.e. a martingale. This is the notion of
-  stochastic observable of<nbsp><cite|BCG26>, on which this lecture is based;
-  see also<nbsp><cite|Pol84|BK87|Sal99|BBD24> for the renormalisation group
-  side and<nbsp><cite|BG20|BG23> for the variational side.
+  <math|<around|(|\<varphi\><rsub|s>|)><rsub|s\<leqslant\>t>>. A physical
+  quantity is then not a single random variable but a <em|consistent family>
+  of finite-resolution estimates of it, i.e. a martingale. This is the notion
+  of stochastic observable of<nbsp><cite|BCG26>, on which this lecture is
+  based; see also<nbsp><cite|Pol84|BK87|Sal99|BBD24> for the renormalisation
+  group side and<nbsp><cite|BG20|BG23> for the variational side.
 
   In Section<nbsp><reference|sec:sq> the variable <math|t> was the auxiliary
   time of a stochastic dynamics; from now on <math|t> is a resolution.
@@ -585,7 +585,7 @@
     <math|<around|(|Q<rsub|t>|)><rsub|t\<in\><around|[|0,\<infty\>|)>>> of
     bounded, symmetric, translation invariant operators on
     <math|L<rsup|2><around|(|\<cal-M\>|)>> with <math|Q<rsub|0>=0>,
-    <math|t\<mapsto\>Q<rsub|t>> smooth, <math|<wide|Q|\<dot\>><rsub|t>\<assign\>\<partial\><rsub|t>*Q<rsub|t>\<geq\>0>,
+    <math|t\<mapsto\>Q<rsub|t>> smooth, <math|<wide|Q|\<dot\>><rsub|t>\<assign\>\<partial\><rsub|t>*Q<rsub|t>\<geqslant\>0>,
     <math|Q<rsub|t>\<to\>C> as <math|t\<to\>\<infty\>>, and such that
     <math|<wide|Q|\<dot\>><rsub|t>> and <math|Q<rsub|t>> have smooth kernels
     for every <math|t\<less\>\<infty\>>.
@@ -609,21 +609,21 @@
   modes <math|<around|\||k|\|>\<lesssim\>t>: <math|t> is a <em|momentum
   scale>, or resolution. Other profiles are useful, even when they violate
   some smoothness requirement of Definition<nbsp><reference|def:profile>. A
-  sharp Fourier cutoff is <math|<wide|Q|^><rsub|t><around|(|k|)>=<with|math-font|Bbb|1><rsub|<around|\||k|\|>\<leq\>t>*<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|-1>>,
+  sharp Fourier cutoff is <math|<wide|Q|^><rsub|t><around|(|k|)>=<with|math-font|Bbb|1><rsub|<around|\||k|\|>\<leqslant\>t>*<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|-1>>,
   which is not smooth in <math|t>. In a <em|finite range decomposition>,
   <math|<wide|Q|\<dot\>><rsub|t>*<around|(|x,y|)>=0> for
-  <math|<around|\||x-y|\|>\<geq\>1/t> (Remark<nbsp><reference|rem:finite-range>).
-  We write
+  <math|<around|\||x-y|\|>\<geqslant\>1/t>
+  (Remark<nbsp><reference|rem:finite-range>). We write
 
   <\equation*>
-    c<rsub|t>\<assign\>Q<rsub|t>*<around|(|x,x|)>,<space|2em>Q<rsub|T,t>\<assign\>Q<rsub|T>-Q<rsub|t>*<space|1em><around|(|t\<leq\>T|)>.
+    c<rsub|t>\<assign\>Q<rsub|t>*<around|(|x,x|)>,<space|2em>Q<rsub|T,t>\<assign\>Q<rsub|T>-Q<rsub|t>*<space|1em><around|(|t\<leqslant\>T|)>.
   </equation*>
 
-  For <math|d\<geq\>2>, <math|c<rsub|t>\<to\>\<infty\>> as
+  For <math|d\<geqslant\>2>, <math|c<rsub|t>\<to\>\<infty\>> as
   <math|t\<to\>\<infty\>> (Exercise<nbsp><reference|ex:ct>).
 
-  Let <math|<around|(|W<rsub|t>|)><rsub|t\<geq\>0>> be a cylindrical Brownian
-  motion on <math|L<rsup|2><around|(|\<cal-M\>|)>>,
+  Let <math|<around|(|W<rsub|t>|)><rsub|t\<geqslant\>0>> be a cylindrical
+  Brownian motion on <math|L<rsup|2><around|(|\<cal-M\>|)>>,
   <math|\<bbb-E\>*<around|[|W<rsub|t><around|(|x|)>*W<rsub|s><around|(|y|)>|]>=<around|(|t\<wedge\>s|)>*\<delta\>*<around|(|x-y|)>>,
   and
 
@@ -634,13 +634,13 @@
   <\proposition>
     <label|prop:scale-GFF>For every <math|t\<less\>\<infty\>>,
     <math|X<rsub|t>> is a smooth Gaussian field with law
-    <math|\<mu\><rsup|Q<rsub|t>>>, and <math|<around|(|X<rsub|t><around|(|x|)>|)><rsub|t\<geq\>0>>
+    <math|\<mu\><rsup|Q<rsub|t>>>, and <math|<around|(|X<rsub|t><around|(|x|)>|)><rsub|t\<geqslant\>0>>
     is a continuous martingale with <math|\<mathd\><around|\<langle\>|X<around|(|x|)>,X<around|(|y|)>|\<rangle\>><rsub|t>=<wide|Q|\<dot\>><rsub|t>*<around|(|x,y|)><space|0.17em>\<mathd\>t>.
     As <math|t\<to\>\<infty\>>, <math|X<rsub|t>\<to\>X<rsub|\<infty\>>> in
     <math|H<rsup|-s><rsub|<math-up|loc>>> for <math|s\<gtr\><frac|d|2>-1>,
     and <math|<math-up|Law><around|(|X<rsub|\<infty\>>|)>=\<mu\><rsub|m>>.
     The increments <math|X<rsub|T>-X<rsub|t>> are independent of
-    <math|\<cal-F\><rsub|t>\<assign\>\<sigma\><around|(|X<rsub|s>:s\<leq\>t|)>>,
+    <math|\<cal-F\><rsub|t>\<assign\>\<sigma\><around|(|X<rsub|s>:s\<leqslant\>t|)>>,
     with law <math|\<mu\><rsup|Q<rsub|T,t>>>.
   </proposition>
 
@@ -658,15 +658,16 @@
 
   <subsection|Stochastic observables>
 
-  Fix a filtration <math|<around|(|\<cal-F\><rsub|t>|)><rsub|t\<geq\>0>>, for
-  the moment that of <math|X>, and write <math|\<bbb-E\><rsub|t>\<assign\>\<bbb-E\>[<space|0.17em>\<cdot\><space|0.17em><around|\||\<cal-F\><rsub|t>|]>>.
+  Fix a filtration <math|<around|(|\<cal-F\><rsub|t>|)><rsub|t\<geqslant\>0>>,
+  for the moment that of <math|X>, and write
+  <math|\<bbb-E\><rsub|t>\<assign\>\<bbb-E\>[<space|0.17em>\<cdot\><space|0.17em><around|\||\<cal-F\><rsub|t>|]>>.
 
   <\definition>
     <dueto|<cite|BCG26>><label|def:obs> An <em|observable> is a real or
     complex <math|<around|(|\<cal-F\><rsub|t>|)>>-martingale
-    <math|O=<around|(|O<rsub|t>|)><rsub|t\<geq\>0>>:
+    <math|O=<around|(|O<rsub|t>|)><rsub|t\<geqslant\>0>>:
     <math|O<rsub|s>=\<bbb-E\><rsub|s><around|[|O<rsub|t>|]>> for
-    <math|s\<leq\>t>. Its <em|expectation> is
+    <math|s\<leqslant\>t>. Its <em|expectation> is
     <math|<around|\<langle\>|O|\<rangle\>>\<assign\>\<bbb-E\><around|[|O<rsub|t>|]>>,
     which is independent of <math|t>. An <em|observable field> is a family
     <math|<around|(|O<around|(|x|)>|)><rsub|x\<in\>\<cal-M\>>> of
@@ -679,7 +680,7 @@
   <math|O<rsub|t>\<to\>Y>. The point of the definition is that interesting
   observables need <em|not> be closed: a martingale may diverge as
   <math|t\<to\>\<infty\>> (for instance <math|X<rsub|t><around|(|x|)>> for
-  <math|d\<geq\>2>), and still carry a perfectly meaningful family of
+  <math|d\<geqslant\>2>), and still carry a perfectly meaningful family of
   finite-resolution estimates. The next lemma is elementary but basic.
 
   <\lemma>
@@ -695,9 +696,9 @@
 
   <\proof>
     (a) <math|O<rsup|1><rsub|s>-O<rsup|2><rsub|s>=\<bbb-E\><rsub|s>*<around|[|O<rsup|1><rsub|t>-O<rsup|2><rsub|t>|]>>
-    for every <math|t\<geq\>s>, and conditional expectation is an
+    for every <math|t\<geqslant\>s>, and conditional expectation is an
     <math|L<rsup|1>> contraction. (b) Likewise,
-    <math|<around|\<\|\|\>|O<rsub|s>-\<bbb-E\><rsub|s>*N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\><around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>>.
+    <math|<around|\<\|\|\>|O<rsub|s>-\<bbb-E\><rsub|s>*N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leqslant\><around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>>.
   </proof>
 
   <paragraph|Observables as equivalence classes> Call two integrable adapted
@@ -716,8 +717,8 @@
   semimartingale description.
 
   <paragraph|Random variables as observables> The map
-  <math|Y\<mapsto\><around|(|\<bbb-E\><rsub|t>*Y|)><rsub|t\<geq\>0>> sends
-  <math|L<rsup|1><around|(|\<cal-F\><rsub|\<infty\>>|)>> into the
+  <math|Y\<mapsto\><around|(|\<bbb-E\><rsub|t>*Y|)><rsub|t\<geqslant\>0>>
+  sends <math|L<rsup|1><around|(|\<cal-F\><rsub|\<infty\>>|)>> into the
   observables. It is injective, since <math|\<bbb-E\><rsub|t>*Y\<to\>Y> in
   <math|L<rsup|1>> (Lévy's upward theorem), and its image is exactly the set
   of closed observables, i.e. of the uniformly integrable martingales. So the
@@ -748,7 +749,7 @@
     clock <math|c<rsub|t>>. The exponential martingale
 
     <\equation*>
-      Z<rsub|t>=exp <around*|(|\<lambda\>*B<rsub|t>-<frac|\<lambda\><rsup|2>|2>*t|)>=<big|sum><rsub|n\<geq\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>\<lambda\>\<in\>\<bbb-R\>,
+      Z<rsub|t>=exp <around*|(|\<lambda\>*B<rsub|t>-<frac|\<lambda\><rsup|2>|2>*t|)>=<big|sum><rsub|n\<geqslant\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>\<lambda\>\<in\>\<bbb-R\>,
       \<lambda\>\<neq\>0,
     </equation*>
 
@@ -776,7 +777,7 @@
 
   <\proof>
     <math|O<rsub|t>=N<rsub|0>+M<rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|0><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s|]>>
-    is a sum of martingales, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>.
+    is a sum of martingales, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leqslant\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>.
     Uniqueness is Lemma<nbsp><reference|lem:uniq>(a).
   </proof>
 
@@ -804,7 +805,7 @@
     be the heat kernel, and
 
     <\equation*>
-      \<Pi\><rsup|y><rsub|t>\<assign\>p<rsub|T-t><around|(|B<rsub|t>-y|)>,<space|2em>0\<leq\>t\<less\>T.
+      \<Pi\><rsup|y><rsub|t>\<assign\>p<rsub|T-t><around|(|B<rsub|t>-y|)>,<space|2em>0\<leqslant\>t\<less\>T.
     </equation*>
 
     Here the resolution runs over <math|<around|[|0,T|)>> (reparametrise by
@@ -853,7 +854,7 @@
     <math|c<rsub|t>=<frac|1|4*\<pi\>>*E<rsub|1>*<around|(|m<rsup|2>/t<rsup|2>|)>=<frac|1|2*\<pi\>>*log
     <frac|t|m>+O<around|(|1|)>> for <math|d=2>, where <math|E<rsub|1>> is the
     exponential integral, and that <math|c<rsub|t>\<asymp\>t<rsup|d-2>> for
-    <math|d\<geq\>3>.
+    <math|d\<geqslant\>3>.
   </exercise>
 
   <\exercise>
@@ -887,8 +888,8 @@
   <subsection|Wick powers and exponentials>
 
   <paragraph|Point evaluations> For every <math|x> and every <math|d>,
-  <math|<math-bf|X><around|(|x|)>\<assign\><around|(|X<rsub|t><around|(|x|)>|)><rsub|t\<geq\>0>>
-  is a local observable. For <math|d\<geq\>2> it is not closed:
+  <math|<math-bf|X><around|(|x|)>\<assign\><around|(|X<rsub|t><around|(|x|)>|)><rsub|t\<geqslant\>0>>
+  is a local observable. For <math|d\<geqslant\>2> it is not closed:
   <math|\<bbb-E\>*X<rsub|t><around|(|x|)><rsup|2>=c<rsub|t>\<to\>\<infty\>>.
 
   <paragraph|Wick powers> Recall that <math|\<partial\><rsub|c>*H<rsub|n>*<around|(|a;c|)>=-<frac|1|2>*\<partial\><rsub|a><rsup|2>*H<rsub|n>*<around|(|a;c|)>>
@@ -896,8 +897,8 @@
   generating function <math|\<mathe\><rsup|\<tau\>*a-c*\<tau\><rsup|2>/2>>).
 
   <\proposition>
-    <dueto|Wick observables><label|prop:wick-obs> For every <math|d\<geq\>1>,
-    <math|n\<geq\>1> and <math|x\<in\>\<cal-M\>>,
+    <dueto|Wick observables><label|prop:wick-obs> For every
+    <math|d\<geqslant\>1>, <math|n\<geqslant\>1> and <math|x\<in\>\<cal-M\>>,
 
     <\equation*>
       :X<rsup|n><rsub|t>:<around|(|x|)>\<assign\>H<rsub|n>*<around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>
@@ -931,8 +932,8 @@
   distribution only for <math|n*<around|(|d-2|)>\<less\>d>, and by
   Proposition<nbsp><hlink|3.11|cqft_notes_L2.tm#prop:no-wick> not at all
   otherwise. As observables, Wick powers exist in <em|every> dimension and
-  need no smearing. When <math|n*<around|(|d-2|)>\<geq\>d> and
-  <math|0\<leq\>f\<nequiv\>0>, the smeared martingale
+  need no smearing. When <math|n*<around|(|d-2|)>\<geqslant\>d> and
+  <math|0\<leqslant\>f\<nequiv\>0>, the smeared martingale
   <math|t\<mapsto\>:X<rsub|t><rsup|n>:<around|(|f|)>> is unbounded in
   <math|L<rsup|2>> and, by the Paley\UZygmund argument of Lecture<nbsp>2, not
   even tight as <math|t\<to\>\<infty\>>: it has no terminal value, and the
@@ -1048,18 +1049,19 @@
   <math|<around|\<langle\>|<math-bf|X><around|(|x|)>,<math-bf|X><around|(|y|)>|\<rangle\>><rsub|t>=Q<rsub|t>*<around|(|x-y|)>>
   is deterministic and<nbsp><eqref|eq:prod-cond> reads
   <math|<big|int><rsub|0><rsup|\<infty\>><around|\||<wide|Q|\<dot\>><rsub|s>*<around|(|x-y|)>|\|>\<mathd\>s\<less\>\<infty\>>.
-  For the heat profile and <math|d\<geq\>2> this holds iff <math|x\<neq\>y>,
-  and then <math|<wide|Q|\<dot\>><rsub|s>\<geq\>0> and the integral is
-  <math|G*<around|(|x-y|)>>. Hence
+  For the heat profile and <math|d\<geqslant\>2> this holds iff
+  <math|x\<neq\>y>, and then <math|<wide|Q|\<dot\>><rsub|s>\<geqslant\>0> and
+  the integral is <math|G*<around|(|x-y|)>>. Hence
 
   <\equation>
     <label|eq:XX><around|(|<math-bf|X><around|(|x|)>*\<star\><math-bf|X><around|(|y|)>|)><rsub|t>=X<rsub|t><around|(|x|)>*X<rsub|t><around|(|y|)>+G*<around|(|x-y|)>-Q<rsub|t>*<around|(|x-y|)>,<space|2em><around|\<langle\>|<math-bf|X><around|(|x|)>*\<star\><math-bf|X><around|(|y|)>|\<rangle\>>=G*<around|(|x-y|)>,
   </equation>
 
   which is the correct two-point function. We never had to discuss the
-  regularity of <math|X<rsub|\<infty\>>>. For <math|x=y> and <math|d\<geq\>2>
-  the product does not exist: its expectation would be <math|lim<rsub|t>
-  \<bbb-E\>*X<rsub|t><around|(|x|)><rsup|2>=lim<rsub|t> c<rsub|t>=\<infty\>>.
+  regularity of <math|X<rsub|\<infty\>>>. For <math|x=y> and
+  <math|d\<geqslant\>2> the product does not exist: its expectation would be
+  <math|lim<rsub|t> \<bbb-E\>*X<rsub|t><around|(|x|)><rsup|2>=lim<rsub|t>
+  c<rsub|t>=\<infty\>>.
 
   <paragraph|Operator product expansion> Formula<nbsp><eqref|eq:XX> has an
   exact short-distance expansion at every resolution: for fixed <math|t>, as
@@ -1077,12 +1079,12 @@
   (Exercise<nbsp><reference|ex:wick-product>), for <math|x\<neq\>y>,
 
   <\equation>
-    <label|eq:wick-product>:<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|k>:<around|(|y|)>=<big|sum><rsub|j\<leq\>n\<wedge\>k>j!<binom|n|j><binom|k|j><space|0.17em>G*<around|(|x-y|)><rsup|j><space|0.17em>:<math-bf|X><rsup|n-j><around|(|x|)><math-bf|X><rsup|k-j><around|(|y|)>:,
+    <label|eq:wick-product>:<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|k>:<around|(|y|)>=<big|sum><rsub|j\<leqslant\>n\<wedge\>k>j!<binom|n|j><binom|k|j><space|0.17em>G*<around|(|x-y|)><rsup|j><space|0.17em>:<math-bf|X><rsup|n-j><around|(|x|)><math-bf|X><rsup|k-j><around|(|y|)>:,
   </equation>
 
   where <math|:<math-bf|X><rsup|p><around|(|x|)><math-bf|X><rsup|q><around|(|y|)>:<rsub|t>\<assign\>H<rsub|p>*<around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>*H<rsub|q>*<around|(|X<rsub|t><around|(|y|)>;c<rsub|t>|)>>
-  minus its contractions at scales <math|\<leq\>t>. This is Wick's theorem
-  written at the level of observables. The coefficients
+  minus its contractions at scales <math|\<leqslant\>t>. This is Wick's
+  theorem written at the level of observables. The coefficients
   <math|G*<around|(|x-y|)><rsup|j>> carry all the singularities, and the
   observables on the right have regular limits as <math|y\<to\>x>.
 
@@ -1139,11 +1141,11 @@
   <\remark>
     <label|rem:finite-range>A finite range decomposition makes these
     statements exact: if <math|<wide|Q|\<dot\>><rsub|t>*<around|(|x,y|)>=0>
-    for <math|<around|\||x-y|\|>\<geq\>1/t>, then <math|X<rsub|T>-X<rsub|t>>
-    restricted to regions at distance <math|\<geq\>1/t> are independent. Such
-    decompositions of <math|<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>> exist
-    and are a basic tool of the rigorous renormalisation
-    group<nbsp><cite|BBS19>.
+    for <math|<around|\||x-y|\|>\<geqslant\>1/t>, then
+    <math|X<rsub|T>-X<rsub|t>> restricted to regions at distance
+    <math|\<geqslant\>1/t> are independent. Such decompositions of
+    <math|<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>> exist and are a basic
+    tool of the rigorous renormalisation group<nbsp><cite|BBS19>.
   </remark>
 
   <paragraph|Outlook> Interactions are introduced in Lecture<nbsp>4. The
@@ -1158,9 +1160,10 @@
   <\exercise>
     <dueto|Hermite calculus along the flow><label|ex:hermite-flow> (a) Show
     that <math|<big|int>H<rsub|n>*<around|(|a+b;c|)>*<space|0.17em>\<mu\><rsup|s><around|(|\<mathd\>b|)>=H<rsub|n>*<around|(|a;c-s|)>>
-    for <math|0\<leq\>s\<leq\>c>, where <math|\<mu\><rsup|s>=N<around|(|0,s|)>>.
-    (b) Deduce again that <math|H<rsub|n>*<around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>>
-    is a martingale, using only the independence of the increments.
+    for <math|0\<leqslant\>s\<leqslant\>c>, where
+    <math|\<mu\><rsup|s>=N<around|(|0,s|)>>. (b) Deduce again that
+    <math|H<rsub|n>*<around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>> is a
+    martingale, using only the independence of the increments.
   </exercise>
 
   <\exercise>
@@ -1182,13 +1185,14 @@
     <math|:\<mathe\><rsup|\<mathi\>b<math-bf|X>>:<around|(|x|)>*\<star\><wide|:\<mathe\><rsup|\<mathi\>b<math-bf|X>>:<around|(|y|)>|\<bar\>>>
     reads <math|<big|int><rsup|\<infty\>>\<mathe\><rsup|b<rsup|2>*c<rsub|s>><wide|Q|\<dot\>><rsub|s>*<around|(|x-y|)>\<mathd\>s\<less\>\<infty\>>.
     Deduce that the product exists for all <math|x\<neq\>y> if
-    <math|d\<leq\>3>, for <math|<around|\||x-y|\|>\<gtr\><around|\||b|\|>/2*\<pi\>>
+    <math|d\<leqslant\>3>, for <math|<around|\||x-y|\|>\<gtr\><around|\||b|\|>/2*\<pi\>>
     but not for <math|<around|\||x-y|\|>\<less\><around|\||b|\|>/2*\<pi\>> if
-    <math|d=4>, and not at all if <math|d\<geq\>5>. For <math|d\<leq\>3> show
-    that its expectation is <math|\<mathe\><rsup|b<rsup|2>*G*<around|(|x-y|)>>>,
-    and decide for which <math|b> it is locally integrable in <math|y>: all
-    <math|b> in <math|d=1>, <math|b<rsup|2>\<less\>4*\<pi\>> in <math|d=2>
-    (the <math|L<rsup|2>> threshold of Lecture<nbsp>2), only <math|b=0> in
+    <math|d=4>, and not at all if <math|d\<geqslant\>5>. For
+    <math|d\<leqslant\>3> show that its expectation is
+    <math|\<mathe\><rsup|b<rsup|2>*G*<around|(|x-y|)>>>, and decide for which
+    <math|b> it is locally integrable in <math|y>: all <math|b> in
+    <math|d=1>, <math|b<rsup|2>\<less\>4*\<pi\>> in <math|d=2> (the
+    <math|L<rsup|2>> threshold of Lecture<nbsp>2), only <math|b=0> in
     <math|d=3>.
   </exercise>
 

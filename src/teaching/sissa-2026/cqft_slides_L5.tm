@@ -71,37 +71,30 @@
 
     \;
 
+    For every coupling <math|\<lambda\>\<gtr\>0> and every mass
+    <math|m<rsup|2>=q<rsub|0>\<gtr\>0>, on a fixed torus, with no smallness,
+    and an explicit counterterm with arbitrary finite part:
+
     <\itemize>
-      <item>Large mass <math|m<rsup|2>=q<rsub|0>> compared with the coupling:
-      <math|\<gamma\>*q<rsub|0><rsup|-1/2>\<ll\>1>,
-      <math|\<gamma\>=3*\<lambda\>>. A weak dimensionless coupling on a fixed
-      torus.
+      <item>the whole lattice sequence converges to a measure <math|\<nu\>>,
+      an explicit density over an explicit SDE;
 
-      <item>Tightness of the lattice measures in <math|H<rsup|-s>>,
-      <math|s\<gtr\><frac|1|2>>.
+      <item>the forecasts converge to the solution of an FBSDE from
+      <math|Y<rsub|q<rsub|0>>=0>, driven by the limit of the lattice
+      innovations, and <math|\<psi\><rsub|q>=m<rsub|q>(\<Phi\><rsub|q>)>;
 
-      <item>A subsequential limit: an FBSDE on
-      <math|<around|[|q<rsub|0>,\<infty\>|)>>, driven by a Brownian motion
-      obtained as the limit of the lattice innovations, whose terminal value
-      has the limiting law.
-
-      <item>A renormalised integration by parts formula.
+      <item>uniqueness in law for its scalar form, a variational formula with
+      no infinite constant, quartic tails, integration by parts.
     </itemize>
 
-    <with|font-series|bold|Not proved:> uniqueness, OS axioms, infinite
-    volume.
+    <strong|Not proved:> the vector FBSDE alone, strong solutions, OS axioms
+    in full, infinite volume.
 
-    <\myframed>
-      <strong|The guiding principle>
+    <strong|Guiding principle.> Do not estimate <math|\<Phi\>> and <math|F>.
+    Estimate the error of an explicit approximate forecast.
 
-      Do not estimate <math|\<Phi\>> and <math|F>. Estimate the
-      <strong|error> of an explicit approximate forecast. UV stability
-      <math|=> this error is small uniformly in the lattice.
-    </myframed>
-
-    <with|par-mode|right|<small|<with|color|dark grey|Other constructions:
-    Glimm\UJaffe 1973; Feldman\UOsterwalder 1976; Brydges\UFröhlich\USokal
-    1983; Barashkov\UG. 2020; G.\UHofmanová 2021>>>
+    The results of Lectures<nbsp>5\U6 are new: joint work with S.-J. Meyer +
+    AI.
   </hidden>|<\hidden>
     <vspace*|2.5cm>
 
@@ -139,7 +132,7 @@
     <\myframed>
       <strong|Free resolvents (uniform in <math|N>)>
 
-      <math|C<rsub|q>\<ge\>0> as a kernel,
+      <math|C<rsub|q>\<geqslant\>0> as a kernel,
       <math|C<rsub|q>*<with|math-font|Bbb|1>=q<rsup|-1>*<with|math-font|Bbb|1>>,
       <math|<around|\<\|\|\>|C<rsub|q>|\<\|\|\>><rsub|p\<to\>p>=q<rsup|-1>>,
 
@@ -155,25 +148,23 @@
 
     \;
 
-    <\equation*>
-      U<around|(|\<varphi\>|)>=<frac|\<lambda\>|4>*<big|int>\<varphi\><rsup|4>,<space|2em>V<rsub|N>=U+<frac|\<mu\><rsub|N>|2>*<big|int>\<varphi\><rsup|2>,<space|2em>\<nu\><rsub|N><around|(|\<mathd\>\<varphi\>|)>=\<cal-Z\><rsub|N><rsup|-1>\<mathe\><rsup|-V<rsub|N><around|(|\<varphi\>|)>>\<mu\><rsup|C><around|(|\<mathd\>\<varphi\>|)>,
-    </equation*>
+    <math|U(\<varphi\>)=<frac|\<lambda\>|4><big|int>\<varphi\><rsup|4>>,
+    <math|V<rsub|N>=U+<frac|\<mu\><rsub|N>|2><big|int>\<varphi\><rsup|2>>,
+    <math|\<nu\><rsub|N>(<space|0.17em>\<mathd\>\<varphi\>)=\<cal-Z\><rsub|N><rsup|-1>\<mathe\><rsup|-V<rsub|N>(\<varphi\>)>\<mu\><rsup|C>(<space|0.17em>\<mathd\>\<varphi\>)>.
 
-    <math|\<gamma\>=3*\<lambda\>>, so <math|D<rsup|2>*U<around|(|y|)>=\<gamma\>*y<rsup|2>>
+    <math|\<gamma\>=3\<lambda\>>, so <math|D<rsup|2>U(y)=\<gamma\> y<rsup|2>>
     (not the counterterm <math|\<gamma\><rsub|T>> of Lecture<nbsp>4). The
     Wick ordering is now part of <math|\<mu\><rsub|N>>.
 
-    <\theorem*>
-      <dueto|informal>For <math|q<rsub|0>> large: explicit
-      <math|\<mu\><rsub|N>=-3*\<lambda\><math-up|Tr>C+O<around|(|log N|)>>
-      such that (a) <math|\<nu\><rsub|N>> is tight in <math|H<rsup|-s>>,
-      <math|s\<gtr\><frac|1|2>>; (b) along a subsequence, the forecasts
-      converge to a solution of a limiting FBSDE; (c) the limit satisfies a
-      renormalised integration by parts formula.
-    </theorem*>
+    <strong|Main result, informal.> Let <math|\<mu\><rsub|N>=r-3\<lambda\><math-up|Tr>
+    C+6\<lambda\><rsup|2><big|int> C<rsup|3>>. Then (a)
+    <math|\<nu\><rsub|N>\<to\>\<nu\>> in <math|H<rsup|-s>>,
+    <math|s\<gtr\><frac|1|2>>, along the whole sequence; (b) the forecasts
+    converge in law to a solution of a limiting FBSDE; (c) <math|\<nu\>> has
+    a variational formula, an integration by parts formula and quartic tails.
 
-    The bounds behind (a), (b) are bounds on the error <math|Z> of an
-    approximate forecast, <strong|uniform in <math|N>>: UV stability.
+    These come from bounds on the error <math|Z> of an approximate forecast,
+    uniform in <math|N>: <strong|UV stability>.
   </hidden>|<\hidden>
     <mytitle|The Polchinski process as a filtering problem>
 
@@ -183,7 +174,7 @@
     independent Brownian motion <math|B>, observations
 
     <\equation*>
-      P<rsub|q>=<around|(|q-q<rsub|0>|)>*\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>,<space|2em>\<cal-F\><rsub|q>=\<sigma\><around|(|P<rsub|s>:s\<le\>q|)>.
+      P<rsub|q>=<around|(|q-q<rsub|0>|)>*\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>,<space|2em>\<cal-F\><rsub|q>=\<sigma\><around|(|P<rsub|s>:s\<leqslant\>q|)>.
     </equation*>
 
     <\proposition*>
@@ -503,7 +494,7 @@
       <strong|Loop estimate>
 
       A closed loop with <math|p> vertices:
-      <math|s<around|(|<text|loop>|)>\<le\>C*a<rsub|2><around|(|q|)>*<space|0.17em>q<rsup|-<around|(|p-1|)>>*<big|prod><rsub|i>s<around|(|T<rsub|i>|)>>
+      <math|s<around|(|<text|loop>|)>\<leqslant\>C*a<rsub|2><around|(|q|)>*<space|0.17em>q<rsup|-<around|(|p-1|)>>*<big|prod><rsub|i>s<around|(|T<rsub|i>|)>>
       (two propagators in <math|L<rsup|2>>, the others in operator norm).
       After the <math|q> integration a one-loop term is of size
       <math|g<rsub|q>*q*r<rsub|q><rsup|2-k>>; every further loop gains a
@@ -521,7 +512,7 @@
 
     <\equation*>
       \<cal-L\><rsub|q><around|(|y|)>=<tfrac|1|2><math-up|Tr><around*|[|log
-      <around|(|I+C<rsub|q><rsup|1/2>*\<gamma\>*y<rsup|2>*C<rsub|q><rsup|1/2>|)>-C<rsub|q><rsup|1/2>*\<gamma\>*y<rsup|2>*C<rsub|q><rsup|1/2>|]>=<big|sum><rsub|j\<ge\>2><frac|<around|(|-1|)><rsup|j+1>|2*j><math-up|Tr><around|(|C<rsub|q>*\<gamma\>*y<rsup|2>|)><rsup|j>.
+      <around|(|I+C<rsub|q><rsup|1/2>*\<gamma\>*y<rsup|2>*C<rsub|q><rsup|1/2>|)>-C<rsub|q><rsup|1/2>*\<gamma\>*y<rsup|2>*C<rsub|q><rsup|1/2>|]>=<big|sum><rsub|j\<geqslant\>2><frac|<around|(|-1|)><rsup|j+1>|2*j><math-up|Tr><around|(|C<rsub|q>*\<gamma\>*y<rsup|2>|)><rsup|j>.
     </equation*>
 
     Quartic term <math|=> bubble, <math|s*<around|(|D<rsup|4>*\<cal-L\><rsub|q><around|(|0|)>|)>=6*\<gamma\><rsup|2>*a<rsub|2><around|(|q|)>>.
@@ -759,31 +750,29 @@
     The quadratic jet is not iterated: it is solved exactly by <math|M>,
 
     <\equation*>
-      \<partial\><rsub|q>*M<rsub|q>=-\<gamma\><math-up|Tr><around|(|R<rsub|0,q><rsup|2>|)>*<space|0.17em>I-<tfrac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|4>*h<rsup|<around|[|2|]>><rsub|q><around|(|0|)>,<space|2em>R<rsub|0,q>=<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>,
+      \<partial\><rsub|q>M<rsub|q>=-\<gamma\><math-up|Tr>(R<rsub|0,q><rsup|2>)I-<frac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|4>h<rsup|[2]><rsub|q>(0),<space|1em>
+      R<rsub|0,q>=(K<rsub|q>+M<rsub|q>)<rsup|-1>,
     </equation*>
 
-    with <strong|mixed boundary conditions> <math|\<mu\><rsub|q<rsub|0>>=0>
-    (physical mass) and <math|\<Theta\><rsub|q>\<to\>0> as
-    <math|q\<to\>\<infty\>> (first moment). Bare mass
-    <math|\<mu\><rsub|N>=lim<rsub|q\<to\>\<infty\>> \<mu\><rsub|q>>: an
-    <strong|output> of the flow.
+    with <math|\<mu\><rsub|q<rsub|\<ast\>>>=b>, <math|\|b\|\<leqslant\>
+    B\<gamma\> q<rsub|\<ast\>><rsup|1/2>>, at an <strong|auxiliary scale>
+    <math|q<rsub|\<ast\>>>, and <math|\<Theta\><rsub|q>\<to\>0> as
+    <math|q\<to\>\<infty\>>. Bare mass <math|\<mu\><rsub|N>=<math-up|lim><rsub|q\<to\>\<infty\>>\<mu\><rsub|q>>:
+    an output of the flow.
 
-    <\proposition*>
-      <dueto|for <math|q<rsub|0>> large, uniformly in <math|N>>Unique
-      solution in a ball, with <math|<around|\||\<mu\><rsub|q>|\|>\<le\>C*\<gamma\>*<sqrt|q>>,
-      <math|v<rsub|1><around|(|\<Theta\><rsub|q>|)>\<le\>C*\<gamma\><rsup|2>*q<rsup|-1/2>>;
-      increments <math|\<cal-N\><rsub|k>*<around|(|h<rsup|<around|[|j|]>>-h<rsup|<around|[|j-1|]>>|)>\<le\>C<rsub|k>*g<rsub|q><rsup|j+1>*q*r<rsub|q><rsup|2-k>>,
-      <math|4\<le\>k\<le\>10-2*j>, <math|j=1,2>; and the defect of
-      <math|\<Gamma\><rsup|<math-up|o>>>
+    <strong|For> <math|q<rsub|\<ast\>>> <strong|large, uniformly in>
+    <math|N><strong|.> Unique solution in a ball,
+    <math|\|\<mu\><rsub|q>\|\<leqslant\> C\<gamma\> q>,
+    <math|v<rsub|1>(\<Theta\><rsub|q>)\<leqslant\>
+    C\<gamma\><rsup|2>q<rsup|-1/2>>; increments
+    <math|\<cal-N\><rsub|k>(h<rsup|[j]>-h<rsup|[j-1]>)\<leqslant\>
+    C<rsub|k>g<rsub|q><rsup|j+1>q*r<rsub|q><rsup|2-k>>; and the defect of
+    <math|\<Gamma\><rsup|<math-up|o>>>: <math|S<rsub|4>(e<rsup|<math-up|o>><rsub|q>)\<leqslant\>
+    C\<gamma\><rsup|5>q<rsup|-3>>.
 
-      <\equation*>
-        <math-ss|S><rsub|4><around|(|e<rsup|<math-up|o>><rsub|q>|)>\<le\>C*\<gamma\><rsup|5>*q<rsup|-3>.
-      </equation*>
-    </proposition*>
-
-    Ideas: trace Lipschitz estimate by loops; integrability at
-    <math|q=\<infty\>> for <math|k\<ge\>4>; contraction for <math|M>;
-    derivative budget <math|10\<to\>8\<to\>6>.
+    <strong|Explicit counterterm.> <math|\<mu\><rsub|N>=r-3\<lambda\><math-up|Tr>
+    C+6\<lambda\><rsup|2><big|int> C<rsup|3>> is admissible: the measure does
+    not depend on <math|q<rsub|\<ast\>>>.
   </hidden>|<\hidden>
     <mytitle|Two mass renormalisations>
 
@@ -792,7 +781,7 @@
     The two divergent self-energies of Appendix<nbsp>A.2 of Lecture<nbsp>4:
 
     <\itemize>
-      <item><strong|Tadpole>: <math|-\<gamma\>*<big|int><rsub|q<rsub|0>><rsup|\<infty\>><math-up|Tr>R<rsub|0,q><rsup|2><space|0.17em>\<mathd\>q\<approx\>-3*\<lambda\><math-up|Tr>C\<sim\>-N>.
+      <item><strong|Tadpole>: <math|-\<gamma\>*<big|int><rsub|q<rsub|\<ast\>>><rsup|\<infty\>><math-up|Tr>R<rsub|0,q><rsup|2><space|0.17em>\<mathd\>q\<approx\>-3*\<lambda\><math-up|Tr>C\<sim\>-N>.
       Wick ordering: <math|<frac|\<lambda\>|4>*\<varphi\><rsup|4>-<frac|3|2>*\<lambda\>*c*\<varphi\><rsup|2>=<frac|\<lambda\>|4>*H<rsub|4>*<around|(|\<varphi\>;c|)>+>const.
 
       <item><strong|Sunset>: contracting the bubble in
@@ -807,8 +796,8 @@
     </itemize>
 
     Power counting: nothing else. In the flow: the integrals from
-    <math|q=\<infty\>> of all vertices with <math|k\<ge\>4> legs converge;
-    only the quadratic jet needs a boundary condition.
+    <math|q=\<infty\>> of all vertices with <math|k\<geqslant\>4> legs
+    converge; only the quadratic jet needs a boundary condition.
 
     <math|\<mu\><rsub|q>> at fixed <math|q> has a limit as
     <math|N\<to\>\<infty\>>; <math|\<mu\><rsub|N>> does not. <strong|Never
@@ -996,9 +985,9 @@
       <math|\<cal-L\><rsub|q><around|(|y|)>=<frac|1|2>*<around|[|log
       <around|(|1+\<gamma\>*y<rsup|2>/q|)>-\<gamma\>*y<rsup|2>/q|]>>: power
       series of radius exactly <math|r<rsub|q>> (singularities at
-      <math|\<pm\>\<mathi\>r<rsub|q>>). Truncations at even <math|j\<ge\>4>
-      are unbounded below. The exact function is harmless,
-      <math|<around|\||\<cal-L\><rsub|q><rprime|''>|\|>\<le\><frac|9|8>*\<gamma\>/q>.
+      <math|\<pm\>\<mathi\>r<rsub|q>>). Truncations at even
+      <math|j\<geqslant\>4> are unbounded below. The exact function is
+      harmless, <math|<around|\||\<cal-L\><rsub|q><rprime|''>|\|>\<leqslant\><frac|9|8>*\<gamma\>/q>.
     </myframed>
 
     Perturbative control for <math|<around|\||y|\|>\<lesssim\>r<rsub|q>>;
@@ -1006,7 +995,7 @@
     estimates use: <strong|coercivity>, carried by the bare quartic.
 
     One site: <math|q*y+\<lambda\>*y<rsup|3>=p>, noise coefficient
-    <math|H<rsub|q><around|(|y|)>=<around|(|q+\<gamma\>*y<rsup|2>|)><rsup|-1>\<le\>q<rsup|-1>\<wedge\><around|(|\<gamma\>*y<rsup|2>|)><rsup|-1>>.
+    <math|H<rsub|q><around|(|y|)>=<around|(|q+\<gamma\>*y<rsup|2>|)><rsup|-1>\<leqslant\>q<rsup|-1>\<wedge\><around|(|\<gamma\>*y<rsup|2>|)><rsup|-1>>.
     Large fields are <strong|more elliptic and less noisy>.
   </hidden>|<\hidden>
     <mytitle|Clipping>
@@ -1015,28 +1004,28 @@
 
     <math|\<tau\>> smooth odd, <math|\<tau\><around|(|u|)>=u> on
     <math|<around|[|-1,1|]>>, constant outside <math|<around|[|-2,2|]>>,
-    <math|0\<le\>\<tau\><rprime|'>\<le\>1>;
+    <math|0\<leqslant\>\<tau\><rprime|'>\<leqslant\>1>;
 
     <\equation*>
       \<kappa\><rsub|q><around|(|y|)>=r<rsub|q>*\<tau\>*<around|(|y/r<rsub|q>|)>,<space|2em><wide|\<Gamma\>|\<bar\>><rsub|q>=U+<tfrac|1|2><around|\<langle\>|y,M<rsub|q>*y|\<rangle\>>+<wide|h|~><rsub|q>,<space|2em><wide|h|~><rsub|q>=h<rsup|<around|[|2|]>><rsub|q>\<circ\>\<kappa\><rsub|q>.
     </equation*>
 
     The quartic and quadratic parts are <strong|not> clipped. Globally:
-    <math|s*<around|(|D<rsup|j>*<wide|h|~><rsub|q>|)>\<le\>C*g<rsub|q>*q*r<rsub|q><rsup|2-j>>
-    (<math|j=2,3,4>), <math|s*<around|(|D<rsup|2>*\<partial\><rsub|q>*<wide|h|~><rsub|q>|)>\<le\>C*g<rsub|q>>.
+    <math|s*<around|(|D<rsup|j>*<wide|h|~><rsub|q>|)>\<leqslant\>C*g<rsub|q>*q*r<rsub|q><rsup|2-j>>
+    (<math|j=2,3,4>), <math|s*<around|(|D<rsup|2>*\<partial\><rsub|q>*<wide|h|~><rsub|q>|)>\<leqslant\>C*g<rsub|q>>.
 
     <\myframed>
       <strong|Global coercivity>
 
-      For all <math|y>: <math|c*<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)>\<le\>H<rsub|q><around|(|y|)><rsup|-1>\<le\>C*<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)>>,
+      For all <math|y>: <math|c*<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)>\<leqslant\>H<rsub|q><around|(|y|)><rsup|-1>\<leqslant\>C*<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)>>,
 
       <\equation*>
-        <around|\<\|\|\>|H<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p\<to\>p>\<le\><frac|1+C*<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>|q>,<space|2em><math-up|diag>H<rsub|q><around|(|y|)><rsup|2>\<le\>C*a<rsub|2><around|(|q|)>.
+        <around|\<\|\|\>|H<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p\<to\>p>\<leqslant\><frac|1+C*<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>|q>,<space|2em><math-up|diag>H<rsub|q><around|(|y|)><rsup|2>\<leqslant\>C*a<rsub|2><around|(|q|)>.
       </equation*>
     </myframed>
 
     Neumann series for <math|H=<around|(|I+G*<around|(|M+D<rsup|2>*<wide|h|~>|)>|)><rsup|-1>*G>,
-    <math|G=<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)><rsup|-1>\<le\>C<rsub|q>>.
+    <math|G=<around|(|K<rsub|q>+\<gamma\>*y<rsup|2>|)><rsup|-1>\<leqslant\>C<rsub|q>>.
   </hidden>|<\hidden>
     <mytitle|The complete defect>
 
@@ -1051,11 +1040,11 @@
         <dueto|uniformly in <math|y>, <math|N>, <math|p>>
 
         <\equation*>
-          <around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>,<space|2em><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|p>\<le\>C*\<gamma\>*q<rsup|-3/2><around*|(|<around|\<\|\|\>|t<rsub|q>*<around|\<\|\|\>|<rsub|p>+r<rsub|q><rsup|-1>|\<\|\|\>>*y<rsup|2>*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>|\<\|\|\>><rsub|p>|)>,
+          <around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|p>\<leqslant\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>,<space|2em><around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|p>\<leqslant\>C*\<gamma\>*q<rsup|-3/2><around*|(|<around|\<\|\|\>|t<rsub|q>*<around|\<\|\|\>|<rsub|p>+r<rsub|q><rsup|-1>|\<\|\|\>>*y<rsup|2>*<with|math-font|Bbb|1><rsub|<around|\||y|\|>\<gtr\>r<rsub|q>>|\<\|\|\>><rsub|p>|)>,
         </equation*>
 
         <\equation*>
-          <around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<le\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>.
+          <around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>.
         </equation*>
       </proposition*>
 
@@ -1065,7 +1054,7 @@
       flow computed at <math|\<kappa\>*y>); the motion of the clip; quartic
       vertex at <math|y> vs correction at <math|\<kappa\>*y>; chain-rule
       terms with <math|\<kappa\><rprime|''>,\<kappa\><rprime|'''>>. All
-      vanish if <math|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<le\>r<rsub|q>>.
+      vanish if <math|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<leqslant\>r<rsub|q>>.
 
       <\myframed>
         <strong|The point>
@@ -1084,7 +1073,7 @@
     With <math|D*U=<frac|\<gamma\>|3>*y<rsup|3>>:
 
     <\equation*>
-      K<rsub|q>*\<Phi\><rsub|q>=K<rsub|q>*<around*|(|Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|)>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>,<space|2em>\<varrho\><rsub|q><around|(|y|)>=C<rsub|q>*<around*|(|M<rsub|q>*y+D*<wide|h|~><rsub|q><around|(|y|)>|)>,<space|1em><around|\<\|\|\>|D*\<varrho\><rsub|q>|\<\|\|\>><rsub|p\<to\>p>\<le\>C*<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>.
+      K<rsub|q>*\<Phi\><rsub|q>=K<rsub|q>*<around*|(|Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|)>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>,<space|2em>\<varrho\><rsub|q><around|(|y|)>=C<rsub|q>*<around*|(|M<rsub|q>*y+D*<wide|h|~><rsub|q><around|(|y|)>|)>,<space|1em><around|\<\|\|\>|D*\<varrho\><rsub|q>|\<\|\|\>><rsub|p\<to\>p>\<leqslant\>C*<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>.
     </equation*>
 
     <strong|Up to a small Lipschitz perturbation, the forecast solves the
@@ -1107,6 +1096,33 @@
     <with|font-series|bold|Next:> estimates on <math|<around|(|Y,Z|)>>
     uniform in <math|N>.
   </hidden>|<\hidden>
+    <mytitle|The action below the auxiliary scale>
+
+    \;
+
+    The expansion needs <math|g<rsub|q>> small, so
+    <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> is built for <math|q\<geqslant\>
+    q<rsub|\<ast\>>>. Below <math|q<rsub|\<ast\>>> nothing needs
+    constructing: <strong|freeze> it,
+
+    <\equation*>
+      <wide|\<Gamma\>|\<bar\>><rsub|q>(y)=<wide|\<Gamma\>|\<bar\>><rsub|q<rsub|\<ast\>>>(y)+<frac|1|2>(q<rsub|\<ast\>>-q)<around|\<\|\|\>|y|\<\|\|\>><rsub|2><rsup|2>.
+    </equation*>
+
+    Then <math|K<rsub|q>+D<rsup|2><wide|\<Gamma\>|\<bar\>><rsub|q>=K<rsub|q<rsub|\<ast\>>>+D<rsup|2><wide|\<Gamma\>|\<bar\>><rsub|q<rsub|\<ast\>>>>:
+    convexity is automatic, <math|H<rsub|q>=H<rsub|q<rsub|\<ast\>>>>, and
+    <math|y<rsub|q>(x)=y<rsub|q<rsub|\<ast\>>>(C<rsub|q<rsub|\<ast\>>>K<rsub|q>x)>.
+
+    The defect is explicit: <math|e<rsub|s>(y)=-<frac|1|2><around|\<\|\|\>|y|\<\|\|\>><rsub|2><rsup|2>-<frac|1|2><math-up|Tr>[H<rsub|q<rsub|\<ast\>>>(y)-H<rsub|q<rsub|\<ast\>>>(0)]>,
+    with <math|\|e<rsub|s>(y)\|\<leqslant\>
+    C<around|\<\|\|\>|y|\<\|\|\>><rsub|2><rsup|2>>.
+
+    So the system holds on <math|[q<rsub|0>,\<infty\>)> with
+    <math|Y<rsub|q<rsub|0>>=0>: <strong|the initial value is deterministic>,
+    with no large mass. <math|q<rsub|\<ast\>>> stays only in the proofs,
+    where the expansion and the closure of the loop need <math|g<rsub|q>>
+    small.
+  </hidden>|<\hidden>
     <mytitle|Why not Polchinski with a frozen cube?>
 
     \;
@@ -1116,7 +1132,7 @@
     site: <math|K<rsub|q>=q>, <math|S=1/q>.
 
     <\equation*>
-      F<rsub|q>(x)=-\<lambda\>\<bbb-E\><rsub|x>Y<rsup|3>=q(m<rsub|q>(x)-x),<space|1em>\|m<rsub|q>(x)\|\<le\>2\<lambda\><rsup|-1/4>+2(q\|x\|/\<lambda\>)<rsup|1/3>.
+      F<rsub|q>(x)=-\<lambda\>\<bbb-E\><rsub|x>Y<rsup|3>=q(m<rsub|q>(x)-x),<space|1em>\|m<rsub|q>(x)\|\<leqslant\>2\<lambda\><rsup|-1/4>+2(q\|x\|/\<lambda\>)<rsup|1/3>.
     </equation*>
 
     <with|par-mode|center|<\script-output|tikz|default>
@@ -1326,8 +1342,8 @@
     \;
 
     <math|U<rsup|c>=U<rsub|1>+U<rsub|2>\<circ\>\<kappa\><rsub|q>>, with
-    <math|U<rsub|2>> the first tree. For <math|\|x\|\<ge\>2r<rsub|q>>, the
-    force defect is exactly
+    <math|U<rsub|2>> the first tree. For <math|\|x\|\<geqslant\>2r<rsub|q>>,
+    the force defect is exactly
 
     <\equation*>
       E<rsub|q>=S<rsup|2>U<rsub|1><rprime|'>U<rsub|1><rprime|''>\<approx\>3\<lambda\><rsup|2>S<rsup|2>x<rsup|5>,
@@ -1368,7 +1384,7 @@
     </equation*>
 
     <\equation*>
-      sup<rsub|x>\|F<rsub|q>(x)-f<rsub|q>(x)\|\<le\>2C<rsub|\<ast\>>(\<lambda\>/q)<rsup|1/2>,<space|1em>
+      sup<rsub|x>\|F<rsub|q>(x)-f<rsub|q>(x)\|\<leqslant\>2C<rsub|\<ast\>>(\<lambda\>/q)<rsup|1/2>,<space|1em>
       C<rsub|\<ast\>>\<less\><frac|1|2>.
     </equation*>
 

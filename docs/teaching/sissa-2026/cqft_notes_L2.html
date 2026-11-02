@@ -184,7 +184,7 @@
     <h3 id="auto-3">3.1<span style="margin-left: 1em"></span>Definition and construction<span style="margin-left: 1em"></span></h3>
     <p>
       Throughout, \(\mathcal{M}\) is either the torus \(\mathbb{T}^d_L =
-      (\mathbb{R}/ L\mathbb{Z})^d\) or \(\mathbb{R}^d\), \(d \geq 1\). We
+      (\mathbb{R}/ L\mathbb{Z})^d\) or \(\mathbb{R}^d\), \(d \geqslant 1\). We
       write \(\mathcal{S} (\mathcal{M})\) for \(C^{\infty} (\mathbb{T}^d_L)\),
       resp. the Schwartz space, and \(\mathcal{S}' (\mathcal{M})\) for its
       dual. We equip \(\mathcal{S}' (\mathcal{M})\) with the
@@ -202,9 +202,9 @@
     </table>
     <p>
       \(C\) is a positive bounded operator on \(L^2 (\mathcal{M})\) with
-      \(\|C\| \leq m^{- 2}\). Both \(A\) and \(C\) are continuous bijections
-      of \(\mathcal{S} (\mathcal{M})\), being Fourier multipliers by \((|k|^2
-      + m^2)^{\pm 1}\).
+      \(\|C\| \leqslant m^{- 2}\). Both \(A\) and \(C\) are continuous
+      bijections of \(\mathcal{S} (\mathcal{M})\), being Fourier multipliers
+      by \((|k|^2 + m^2)^{\pm 1}\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -245,8 +245,8 @@ x
       Green function satisfies (Exercise <a href="#ex:green">3.1</a>): \(G_m (x) \sim
       \frac{1}{2 \pi} \log \frac{1}{|x|}\) as \(x \to 0\) if \(d = 2\); \(G_m
       (x) \sim \frac{\Gamma (d / 2 - 1)}{4 \pi^{d / 2}} |x|^{2 - d}\) if \(d
-      \geq 3\); \(G_m (x) = \mathrm{e}^{- m |x|} / (2 m)\) if \(d = 1\); and
-      \(G_m\) decays like \(|x|^{- (d - 1) / 2} \mathrm{e}^{- m |x|}\) at
+      \geqslant 3\); \(G_m (x) = \mathrm{e}^{- m |x|} / (2 m)\) if \(d = 1\);
+      and \(G_m\) decays like \(|x|^{- (d - 1) / 2} \mathrm{e}^{- m |x|}\) at
       infinity. Uniqueness of \(\mu_m\) is clear, since a probability measure
       on \(\mathcal{S}' (\mathcal{M})\) is determined by its characteristic
       functional.
@@ -277,16 +277,16 @@ x
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">3.2</class>. </strong><i><class
         style="font-style: normal"><strong>(Existence and regularity) </strong></class><a id="thm:existence"></a>
-        (a) Let \(\mathcal{M}=\mathbb{T}^d_L\), let \((e_n)_{n \geq 0}\) be a
-        real orthonormal basis of \(L^2 (\mathbb{T}^d_L)\) of eigenfunctions
-        of \(- \Delta\), \(- \Delta e_n = \kappa_n e_n\), \(\lambda_n := m^2 +
-        \kappa_n\), and let \((g_n)\) be i.i.d. \(N (0, 1)\). For every \(s >
-        \frac{d}{2} - 1\) the series</i>
+        (a) Let \(\mathcal{M}=\mathbb{T}^d_L\), let \((e_n)_{n \geqslant 0}\)
+        be a real orthonormal basis of \(L^2 (\mathbb{T}^d_L)\) of
+        eigenfunctions of \(- \Delta\), \(- \Delta e_n = \kappa_n e_n\),
+        \(\lambda_n := m^2 + \kappa_n\), and let \((g_n)\) be i.i.d. \(N (0,
+        1)\). For every \(s > \frac{d}{2} - 1\) the series</i>
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="eq:series"></a>\(\displaystyle \varphi = \sum_{n \geq
-          0} \lambda_n^{- 1 / 2} g_n  \hspace{0.17em} e_n\)</td>
+          <td width="100%" align="center"><a id="eq:series"></a>\(\displaystyle \varphi = \sum_{n
+          \geqslant 0} \lambda_n^{- 1 / 2} g_n  \hspace{0.17em} e_n\)</td>
           <td align="right">(3.3)</td>
         </tr>
       </table></i>
@@ -323,12 +323,12 @@ x
       positive definite and \(\Psi (0) = 1\), there is a unique probability
       measure on \(\mathcal{S}' (\mathbb{R}^d)\) with characteristic
       functional \(\Psi\). For \(\Psi (f) = \mathrm{e}^{- \frac{1}{2}  \langle
-      f, Cf \rangle}\), continuity follows from \(\langle f, Cf \rangle \leq
-      m^{- 2} \|f\|_{L^2}^2\). For positive definiteness, write \(\Psi (f_j -
-      f_k) = a_j a_k \mathrm{e}^{Q_{jk}}\) with \(a_j = \mathrm{e}^{-
-      \frac{1}{2} Q_{jj}}\) and \(Q_{jk} = \langle f_j, Cf_k \rangle\)
-      positive semidefinite. Then \((\mathrm{e}^{Q_{jk}})\) is positive
-      semidefinite by the Schur product theorem.<span style="margin-left: 1em"></span>\(\Box\)
+      f, Cf \rangle}\), continuity follows from \(\langle f, Cf \rangle
+      \leqslant m^{- 2} \|f\|_{L^2}^2\). For positive definiteness, write
+      \(\Psi (f_j - f_k) = a_j a_k \mathrm{e}^{Q_{jk}}\) with \(a_j =
+      \mathrm{e}^{- \frac{1}{2} Q_{jj}}\) and \(Q_{jk} = \langle f_j, Cf_k
+      \rangle\) positive semidefinite. Then \((\mathrm{e}^{Q_{jk}})\) is
+      positive semidefinite by the Schur product theorem.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">3.3</class>. </strong>The
@@ -348,7 +348,7 @@ x
       or \(\mathbb{T}^{d - 1}_L\), points \((\tau, \textbf{x})\), \(\Theta
       (\tau, \textbf{x}) = (- \tau, \textbf{x})\). Then \(A = -
       \partial_{\tau}^2 + B\) with \(B := m^2 - \Delta_N\) on \(L^2 (N)\), and
-      we set \(\omega := B^{1 / 2} \geq m\).
+      we set \(\omega := B^{1 / 2} \geqslant m\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -365,7 +365,7 @@ x
 \mathrm{e}^{-
           \tau \omega} f (\tau, \cdot \left) \hspace{0.17em} \mathrm{d}
 \tau
-          \right|^2_{L^2 (N)} \geq 0. \right.\)</td>
+          \right|^2_{L^2 (N)} \geqslant 0. \right.\)</td>
           <td align="right">(3.4)</td>
         </tr>
       </table></i>
@@ -427,7 +427,7 @@ x
               the time-zero plane: \(\langle \Theta f, Cf \rangle = \|(2
               \omega)^{- 1 / 2}  \int_0^{\infty}
 \mathrm{e}^{- \tau \omega} f
-              (\tau) \mathrm{d} \tau \|^2 \geq 0\).
+              (\tau) \mathrm{d} \tau \|^2 \geqslant 0\).
             </p></font>
           </div></td>
         </tr></tbody>
@@ -485,9 +485,9 @@ x
       \{\tau > 0\}\) and let \(\Sigma_0\) be the germ \(\sigma\)-algebra of
       \(\{\tau = 0\}\). For the GFF it is generated by the time-zero field
       (<em>sharp</em> Markov property), so \(\Theta\) acts trivially on it. If
-      \(F\) is \(\Sigma_{\{\tau \geq 0\}}\)-measurable, then \(\Theta F\) is
-      \(\Sigma_{\{\tau \leq 0\}}\)-measurable and \(\mathbb{E} [\Theta F
-      \hspace{0.17em} | \hspace{0.17em} \Sigma_0] =\mathbb{E}
+      \(F\) is \(\Sigma_{\{\tau \geqslant 0\}}\)-measurable, then \(\Theta F\)
+      is \(\Sigma_{\{\tau \leqslant 0\}}\)-measurable and \(\mathbb{E} [\Theta
+      F \hspace{0.17em} | \hspace{0.17em} \Sigma_0] =\mathbb{E}
 [F
       \hspace{0.17em} | \hspace{0.17em} \Sigma_0]\), so the Markov property
       gives
@@ -502,7 +502,7 @@ x
 \Sigma_0] \right] =\mathbb{E} \left[
       |\mathbb{E}[F \hspace{0.17em} |
 \hspace{0.17em} \Sigma_0] |^2 \right]
-      \geq 0.\)
+      \geqslant 0.\)
     </center>
     <p>
       Sharpness is essential: the fourth-order field with covariance \(P^{-
@@ -563,7 +563,7 @@ x
       lattice this is the random walk representation of Brydges, Fr&ouml;hlich
       and Spencer [<a href="#bib-BFS82">BFS82</a>], the basis of one of the proofs of
       triviality of \(\varphi^4_d\) for \(d > 4\). Heuristically, the
-      interaction becomes ineffective in the continuum for \(d \geq 4\)
+      interaction becomes ineffective in the continuum for \(d \geqslant 4\)
       because two independent Brownian paths do not intersect there.
     </p>
     <p style="margin-bottom: 1em">
@@ -624,14 +624,14 @@ x
     </p>
     <p>
       (i) <em>Short distances.</em> \(G_M (x)\) is decreasing in \(M\), and
-      for \(d \geq 2\) we have \(G_M (x) / G_m (x) \to 1\) as \(x \to 0\), for
-      every \(M\). Hence, for every \(K\), \(S^T_2 (x) \geq \rho ([0, K^2])
-      \hspace{0.17em} G_K (x)\), and, if \(\rho \neq 0\),
+      for \(d \geqslant 2\) we have \(G_M (x) / G_m (x) \to 1\) as \(x \to
+      0\), for every \(M\). Hence, for every \(K\), \(S^T_2 (x) \geqslant \rho
+      ([0, K^2])  \hspace{0.17em} G_K (x)\), and, if \(\rho \neq 0\),
     </p>
     <center>
-      \(\displaystyle \liminf_{x \to 0}  \frac{S_2^T (x)}{G_m (x)} \geq \rho
-      ([0, \infty)) \in (0,
-\infty] .\)
+      \(\displaystyle \liminf_{x \to 0}  \frac{S_2^T (x)}{G_m (x)} \geqslant
+      \rho ([0, \infty)) \in
+(0, \infty] .\)
     </center>
     <p>
       The two-point function of any nontrivial theory is at least as singular
@@ -655,17 +655,18 @@ x
       M^2)^{- 1} < \infty\) and \(\int \rho (\mathrm{d} M^2) M^{- 2} <
       \infty\), the Gaussian measure on \(\mathcal{S}' (\mathbb{R}^d)\) with
       covariance \(C_{\rho} = \int \rho (\mathrm{d} M^2)  (M^2 - \Delta)^{-
-      1}\) satisfies the OS axioms: \(\hat{C}_{\rho} \leq \hat{C}_{\rho} (0) =
-      \int \rho (\mathrm{d} M^2) M^{- 2}\) is bounded, which gives (OS1) with
-      \(p = 2\), and reflection positivity follows from Proposition <a href="#prop:RP">3.4</a>
-      for each mass \(M > 0\) and \(\rho \geq 0\). (If only the first
-      condition holds, the measure may still exist and satisfy the other
-      axioms, but (OS1) in the form of Lecture 1 can fail: for the massless
-      field in \(d \geq 3\), \(f = \mathrm{i} g\) with \(g \geq 0\) supported
-      in a ball of radius \(R\) gives \(| \hat{\mu} (f) | =
-      \mathrm{e}^{\frac{1}{2}  \langle g, Cg \rangle}\) with \(\langle g, Cg
-      \rangle \sim R^{d + 2}\).) It reconstructs the generalised free field of
-      Exercise <a href="cqft_notes_L1.html#ex:gen-free">1.6</a>. Its Dyson&ndash;Schwinger equation
+      1}\) satisfies the OS axioms: \(\hat{C}_{\rho} \leqslant \hat{C}_{\rho}
+      (0) = \int \rho (\mathrm{d} M^2) M^{-
+2}\) is bounded, which gives (OS1)
+      with \(p = 2\), and reflection positivity follows from Proposition <a
+      href="#prop:RP">3.4</a> for each mass \(M > 0\) and \(\rho \geqslant 0\). (If only
+      the first condition holds, the measure may still exist and satisfy the
+      other axioms, but (OS1) in the form of Lecture 1 can fail: for the
+      massless field in \(d \geqslant 3\), \(f = \mathrm{i} g\) with \(g
+      \geqslant 0\) supported in a ball of radius \(R\) gives \(| \hat{\mu}
+      (f) | = \mathrm{e}^{\frac{1}{2}  \langle g, Cg \rangle}\) with \(\langle
+      g, Cg \rangle \sim R^{d + 2}\).) It reconstructs the generalised free
+      field of Exercise <a href="cqft_notes_L1.html#ex:gen-free">1.6</a>. Its Dyson&ndash;Schwinger equation
       \(\mathbb{E} [D_h F] =\mathbb{E} [F \varphi (C_{\rho}^{- 1} h)]\) still
       characterises it: under mild conditions on \(\rho\) (e.g. \(\rho\)
       finite with a mass gap), \(C_{\rho}\) is a bijection of \(\mathcal{S}
@@ -724,9 +725,9 @@ x
       with \(\varphi_m\) the free field <a href="cqft_notes_L1.html#eq:free-field">(1.2)</a> of mass \(m\). The
       Wightman functions are given by Wick's theorem with \(W_2 = c_1^2
       W_2^{(m_1)} + c_2^2 W_2^{(m_2)}\), and all truncated functions of order
-      \(\geq 3\) vanish. Physically, these are <em>two species of free scalar
-      particles</em>, of masses \(m_1\) and \(m_2\), both created from the
-      vacuum by the same field: \(\varphi (f) \Omega = c_1 a_1^{\ast}
+      \(\geqslant 3\) vanish. Physically, these are <em>two species of free
+      scalar particles</em>, of masses \(m_1\) and \(m_2\), both created from
+      the vacuum by the same field: \(\varphi (f) \Omega = c_1 a_1^{\ast}
       (\tilde{f} |_{H^+_{m_1}}) \Omega + c_2
 a_2^{\ast} (\tilde{f}
       |_{H^+_{m_2}}) \Omega\). They do not scatter. The mass spectrum consists
@@ -794,15 +795,15 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
       rational spectral densities the converse holds [<a href="#bib-Roz82">Roz82</a>]. The
       Fourier transform of a covariance satisfying the OS axioms is \(q
       (|k|^2) + \int \rho (\mathrm{d} M^2)  (|k|^2 + M^2)^{- 1}\), with \(\rho
-      \geq 0\) and \(q\) a polynomial coming from contact terms invisible to
-      \(\rho\). If \(\deg p \geq 1\), then \(q = 0\), since \(1 / p (s) \to
-      0\) and the Stieltjes term tends to \(0\) as \(s \to \infty\). Moreover
-      \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\) increases to \(\rho
-      ([0, \infty))\) as \(s \to \infty\), while \(s / p (s) \to 0\) if \(\deg
-      p \geq 2\); hence \(\rho = 0\), a contradiction. If \(\deg p = 0\),
-      \(\hat{C}\) is constant. So a centred Gaussian measure satisfying the OS
-      axioms has a local Euclidean field equation iff its covariance is \(c
-      (M^2 - \Delta)^{- 1}\) with \(M > 0\), or a multiple of the identity
+      \geqslant 0\) and \(q\) a polynomial coming from contact terms invisible
+      to \(\rho\). If \(\deg p \geqslant 1\), then \(q = 0\), since \(1 / p
+      (s) \to 0\) and the Stieltjes term tends to \(0\) as \(s \to \infty\).
+      Moreover \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\) increases to
+      \(\rho ([0, \infty))\) as \(s \to \infty\), while \(s / p (s) \to 0\) if
+      \(\deg p \geqslant 2\); hence \(\rho = 0\), a contradiction. If \(\deg p
+      = 0\), \(\hat{C}\) is constant. So a centred Gaussian measure satisfying
+      the OS axioms has a local Euclidean field equation iff its covariance is
+      \(c (M^2 - \Delta)^{- 1}\) with \(M > 0\), or a multiple of the identity
       (white noise, whose reconstructed Hilbert space is \(\mathbb{C}
       \Omega\)). Note that it is the covariance, not \(\rho\), that matters:
       \(a \mathbb{1} + c (m^2 - \Delta)^{- 1}\) with \(a > 0\) is reflection
@@ -870,16 +871,16 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
     <p>
       Interactions \(\int V (\varphi (x)) \mathrm{d} x\) and nonlinear field
       equations require local functions of \(\varphi (x)\), but \(\varphi\) is
-      not a function for \(d \geq 2\). We regularise, subtract, and remove the
-      regularisation. The subtraction is encoded in Hermite polynomials with
-      variance \(c \geq 0\),
+      not a function for \(d \geqslant 2\). We regularise, subtract, and
+      remove the regularisation. The subtraction is encoded in Hermite
+      polynomials with variance \(c \geqslant 0\),
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:hermite"></a>\(\displaystyle \mathrm{e}^{ta - ct^2 /
-        2} = \sum_{n \geq 0} \frac{t^n}{n!} H_n (a ; c),
-\qquad H_2 = a^2 - c,
-        \quad H_3 = a^3 - 3 ca, \quad H_4 = a^4 - 6 ca^2 + 3 c^2
+        2} = \sum_{n \geqslant 0} \frac{t^n}{n!} H_n (a ; c),
+\qquad H_2 = a^2
+        - c, \quad H_3 = a^3 - 3 ca, \quad H_4 = a^4 - 6 ca^2 + 3 c^2
 .\)</td>
         <td align="right">(3.6)</td>
       </tr>
@@ -906,9 +907,9 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
       coefficients.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      Fix an even mollifier \(0 \leq \eta \in C^{\infty}_c (B (0, 1))\) with
-      \(\int \eta = 1\), \(\eta_{\varepsilon} = \varepsilon^{- d} \eta (\cdot
-      / \varepsilon)\) (periodised on the torus), and let
+      Fix an even mollifier \(0 \leqslant \eta \in C^{\infty}_c (B (0, 1))\)
+      with \(\int \eta = 1\), \(\eta_{\varepsilon} = \varepsilon^{- d} \eta
+      (\cdot / \varepsilon)\) (periodised on the torus), and let
       \(\varphi_{\varepsilon} = \eta_{\varepsilon} \ast \varphi\), a smooth
       function. Then \(\mathbb{E} [\varphi_{\varepsilon} (x) \varphi_{\delta}
       (y)] = G_{\varepsilon,
@@ -930,12 +931,12 @@ c_{\varepsilon}), \qquad :
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">3.9</class>. </strong><i><class
-        style="font-style: normal"><strong>(Wick powers) </strong></class><a id="thm:wick"></a> Let \(n \geq
-        1\) with \(n (d - 2) < d\), i.e. every \(n\) if \(d \leq 2\), \(n \leq
-        2\) if \(d = 3\), \(n = 1\) if \(d \geq 4\). Then for every \(f \in
-        \mathcal{S} (\mathcal{M})\), \(: \varphi^n : (f) := \lim_{\varepsilon
-        \to 0} : \varphi^n_{\varepsilon} : (f)\) exists in \(L^2 (\mu_m)\), is
-        independent of \(\eta\), and</i>
+        style="font-style: normal"><strong>(Wick powers) </strong></class><a id="thm:wick"></a> Let \(n
+        \geqslant 1\) with \(n (d - 2) < d\), i.e. every \(n\) if \(d
+        \leqslant 2\), \(n \leqslant 2\) if \(d = 3\), \(n = 1\) if \(d
+        \geqslant 4\). Then for every \(f \in \mathcal{S} (\mathcal{M})\), \(:
+        \varphi^n : (f) := \lim_{\varepsilon \to 0} : \varphi^n_{\varepsilon}
+        : (f)\) exists in \(L^2 (\mu_m)\), is independent of \(\eta\), and</i>
       </p>
       <i><table width="100%">
         <tr>
@@ -949,32 +950,34 @@ c_{\varepsilon}), \qquad :
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
-        <i>If instead \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
-        0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \to
-        \infty\).</i>
+        <i>If instead \(n (d - 2) \geqslant d\) and \(0 \leqslant f
+        \mathrel{\not\equiv} 0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n
+        : (f)^2] \to \infty\).</i>
       </p>
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong><em>Step 1: a uniform bound.</em> Let \(K
       (z) = 1 + \log_+ (1 / |z|)\) if \(d = 2\), \(K (z) = 1 + |z|^{2 - d}\)
-      if \(d \geq 3\), \(K \equiv 1\) if \(d = 1\). Then \(0 < G \leq C_0 K\),
-      and we claim \(G_{\varepsilon, \delta} \leq CK\) uniformly in
-      \(\varepsilon, \delta \in (0, 1]\). Let \(r = \max (\varepsilon,
-      \delta)\). Then \(\text{supp} (\eta_{\varepsilon} \ast \eta_{\delta})
-      \subset B (0, 2 r)\), \(\int \eta_{\varepsilon} \ast \eta_{\delta} = 1\)
-      and \(\| \eta_{\varepsilon} \ast \eta_{\delta} \|_{\infty} \leq r^{- d}
-      \| \eta
-\|_{\infty}\). If \(|z| \geq 4 r\), then \(G_{\varepsilon,
-      \delta} (z) \leq \sup_{|w| \geq |z| / 2} G (w) \leq C_0 K (z /
-2) \leq
-      CK (z)\). If \(|z| < 4 r\), then
+      if \(d \geqslant 3\), \(K \equiv 1\) if \(d = 1\). Then \(0 < G
+      \leqslant C_0 K\), and we claim \(G_{\varepsilon, \delta} \leqslant CK\)
+      uniformly in \(\varepsilon, \delta \in (0, 1]\). Let \(r = \max
+      (\varepsilon, \delta)\). Then \(\text{supp} (\eta_{\varepsilon} \ast
+      \eta_{\delta}) \subset B (0, 2 r)\), \(\int \eta_{\varepsilon} \ast
+      \eta_{\delta} = 1\) and \(\| \eta_{\varepsilon} \ast \eta_{\delta}
+      \|_{\infty} \leqslant r^{- d} \| \eta
+\|_{\infty}\). If \(|z| \geqslant
+      4 r\), then \(G_{\varepsilon, \delta} (z) \leqslant \sup_{|w| \geqslant
+      |z| / 2} G (w)
+\leqslant C_0 K (z / 2) \leqslant CK (z)\). If \(|z| < 4
+      r\), then
     </p>
     <center>
-      \(\displaystyle G_{\varepsilon, \delta} (z) \leq \| \eta \|_{\infty}
-      \hspace{0.17em} r^{- d}
-\int_{B (0, 6 r)} G \leq C \frac{1}{|B (0, 6 r)
-      |}  \int_{B (0, 6 r)} K \leq
-CK (r) \leq C' K (z) .\)
+      \(\displaystyle G_{\varepsilon, \delta} (z) \leqslant \| \eta
+      \|_{\infty}  \hspace{0.17em}
+r^{- d}  \int_{B (0, 6 r)} G \leqslant C
+      \frac{1}{|B (0, 6 r) |}  \int_{B (0,
+6 r)} K \leqslant CK (r) \leqslant
+      C' K (z) .\)
     </center>
     <p>
       <em>Step 2: convergence.</em> By Lemma <a href="#lem:hermite">3.8</a> and Fubini,
@@ -991,9 +994,9 @@ G_{\varepsilon, \delta}  (x - y)^n
     <p style="margin-bottom: 1em">
       As \(\varepsilon, \delta \to 0\), \(G_{\varepsilon, \delta} (z) \to G
       (z)\) for \(z \neq 0\). Moreover \(K^n \in L^1_{\text{loc}}\) iff \(n (d
-      - 2) < d\), and \(K\) is bounded on \(\{|z| \geq 1\}\). Since \(f, g \in
-      L^1 \cap L^{\infty}\), dominated convergence gives \(\mathbb{E} [(:
-      \varphi_{\varepsilon}^n : (f) - : \varphi_{\delta}^n : (f))^2]
+      - 2) < d\), and \(K\) is bounded on \(\{|z| \geqslant 1\}\). Since \(f,
+      g \in L^1 \cap L^{\infty}\), dominated convergence gives \(\mathbb{E}
+      [(: \varphi_{\varepsilon}^n : (f) - : \varphi_{\delta}^n : (f))^2]
 = n!
       \iint ff \hspace{0.17em} (G^n_{\varepsilon, \varepsilon} -
       2
@@ -1001,21 +1004,21 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       sequence is Cauchy in \(L^2\). The limit covariance is <class style="font-style: normal">(<a
       href="#eq:wick-cov">3.8</a>)</class>. Running the same computation with two different
       mollifiers shows independence of \(\eta\). <em>Step 3: divergence.</em>
-      If \(n (d - 2) \geq d\), then \(G^n \geq c |z|^{- n (d - 2)}\) is not
-      locally integrable, and Fatou's lemma gives \(\liminf \mathbb{E}[:
-      \varphi_{\varepsilon}^n : (f)^2] \geq n! \iint ffG^n =
-\infty\).<span
-      style="margin-left: 1em"></span>\(\Box\)
+      If \(n (d - 2) \geqslant d\), then \(G^n \geqslant c |z|^{- n (d - 2)}\)
+      is not locally integrable, and Fatou's lemma gives \(\liminf
+      \mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \geqslant n! \iint ffG^n
+=
+      \infty\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">3.10</class>. </strong>(i) The
       subtraction of \(c_{\varepsilon} \to \infty\) is the simplest instance
       of renormalisation: \(\varphi_{\varepsilon} (x)^n\) itself has no limit
-      when \(d \geq 2\). (ii) The variables \(: \varphi^n : (f)\) belong to
-      the \(n\)-th Wiener chaos, and \(L^2 (\mu_m) \simeq \bigoplus_n
+      when \(d \geqslant 2\). (ii) The variables \(: \varphi^n : (f)\) belong
+      to the \(n\)-th Wiener chaos, and \(L^2 (\mu_m) \simeq \bigoplus_n
       \mathcal{H}_n\) is the symmetric Fock space over \(H^{- 1}
       (\mathcal{M})\) [<a href="#bib-Jan97">Jan97</a>]. By Nelson's hypercontractivity,
-      \(\|X\|_{L^p} \leq (p - 1)^{n / 2} \|X\|_{L^2}\) for \(X \in
+      \(\|X\|_{L^p} \leqslant (p - 1)^{n / 2} \|X\|_{L^2}\) for \(X \in
       \mathcal{H}_n\), so the convergence holds in every \(L^p\). A
       Kolmogorov-type argument gives convergence in \(C^{- \kappa}\) for \(d =
       2\). (iii) In \(d = 2\) on \(\mathbb{T}^2\), the interaction \(\int :
@@ -1035,28 +1038,28 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       </div>
       <h5>Beyond \(L^2\): no random distribution.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        When \(n (d - 2) \geq d\) the divergence in Theorem <a href="#thm:wick">3.9</a>
+        When \(n (d - 2) \geqslant d\) the divergence in Theorem <a href="#thm:wick">3.9</a>
         is not an artefact of the \(L^2\) norm: no other topology, and no
         other choice of probability space, can rescue the limit. Albeverio and
         Liang [<a href="#bib-AL07">AL07</a>] showed this for the Wick square in \(d =
-        4\), and remarked that the argument extends to \(d \geq 5\): \(:
+        4\), and remarked that the argument extends to \(d \geqslant 5\): \(:
         \varphi^2 : (f)\) is well defined as a Hida distribution, i.e. as a
         generalised functional of white noise, but for \(f > 0\) the
         characteristic functions of its Fourier-cutoff approximations do not
         converge to a characteristic function (the natural candidate
-        vanishes), so it is not a random variable. For \(d \leq 3\), instead,
-        it is a random variable, and an infinitely divisible one. The
+        vanishes), so it is not a random variable. For \(d \leqslant 3\),
+        instead, it is a random variable, and an infinitely divisible one. The
         following argument is independent and covers all Wick powers.
       </div>
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">3.11</class>. </strong><i><a
-        id="prop:no-wick"></a>Let \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
-        0\). Then the family \((: \varphi_{\varepsilon}^n : (f))_{\varepsilon
-        \in (0, 1]}\) is not tight. In particular there is no random
-        distribution \(\Psi\), on any probability space, such that \(:
-        \varphi_{\varepsilon_k}^n : \to \Psi\) in law in \(\mathcal{S}'\)
+        id="prop:no-wick"></a>Let \(n (d - 2) \geqslant d\) and \(0 \leqslant f
+        \mathrel{\not\equiv} 0\). Then the family \((: \varphi_{\varepsilon}^n
+        : (f))_{\varepsilon \in (0, 1]}\) is not tight. In particular there is
+        no random distribution \(\Psi\), on any probability space, such that
+        \(: \varphi_{\varepsilon_k}^n : \to \Psi\) in law in \(\mathcal{S}'\)
         along some sequence \(\varepsilon_k \to 0\).</i>
       </p>
     </div>
@@ -1066,44 +1069,44 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       \(\sigma_{\varepsilon}^2 =\mathbb{E}X_{\varepsilon}^2\), so that
       \(\sigma_{\varepsilon} \to \infty\) by Theorem <a href="#thm:wick">3.9</a>. The
       <em>Paley&ndash;Zygmund inequality</em> [<a href="#bib-PZ32">PZ32</a>] states that
-      for \(Z \geq 0\) with \(\mathbb{E}Z^2 < \infty\) and \(\theta \in [0,
-      1]\),
+      for \(Z \geqslant 0\) with \(\mathbb{E}Z^2 < \infty\) and \(\theta \in
+      [0, 1]\),
     </p>
     <center>
-      \(\displaystyle \mathbb{P} (Z > \theta \hspace{0.17em} \mathbb{E}Z) \geq
-      (1 - \theta)^2
+      \(\displaystyle \mathbb{P} (Z > \theta \hspace{0.17em} \mathbb{E}Z)
+      \geqslant (1 - \theta)^2
 \frac{(\mathbb{E}Z)^2}{\mathbb{E}Z^2} .\)
     </center>
     <p>
-      (Proof: \(\mathbb{E}Z \leq \theta \mathbb{E}Z +\mathbb{E} [Z
+      (Proof: \(\mathbb{E}Z \leqslant \theta \mathbb{E}Z +\mathbb{E} [Z
       \mathbb{1}_{Z > \theta
-\mathbb{E}Z}] \leq \theta \mathbb{E}Z +
-      (\mathbb{E}Z^2)^{1 / 2} \mathbb{P} (Z
-> \theta \mathbb{E}Z)^{1 / 2}\) by
+\mathbb{E}Z}] \leqslant \theta \mathbb{E}Z +
+      (\mathbb{E}Z^2)^{1 / 2}
+\mathbb{P} (Z > \theta \mathbb{E}Z)^{1 / 2}\) by
       Cauchy&ndash;Schwarz.) Apply it to \(Z = X_{\varepsilon}^2\) with
       \(\theta = \frac{1}{4}\). Hypercontractivity with \(p = 4\) gives
-      \(\mathbb{E}X_{\varepsilon}^4 \leq 9^n \sigma_{\varepsilon}^4\), so
+      \(\mathbb{E}X_{\varepsilon}^4 \leqslant 9^n \sigma_{\varepsilon}^4\), so
     </p>
     <center>
       \(\displaystyle \mathbb{P} \left( |X_{\varepsilon} | > \tfrac{1}{2}
       \sigma_{\varepsilon}
-\right) \geq \tfrac{9}{16} \hspace{0.17em} 9^{- n}
-      = : c_n > 0.\)
+\right) \geqslant \tfrac{9}{16} \hspace{0.17em}
+      9^{- n} = : c_n > 0.\)
     </center>
     <p style="margin-bottom: 1em">
       Given \(R > 0\), for \(\varepsilon\) small enough \(\frac{1}{2}
       \sigma_{\varepsilon} > R\) and hence \(\mathbb{P} (|X_{\varepsilon} | >
-      R) \geq c_n\): the family is not tight. If \(: \varphi_{\varepsilon_k}^n
-      : \to \Psi\) in law in \(\mathcal{S}'\), then \(X_{\varepsilon_k} \to
-      \Psi (f)\) in law, and a sequence converging in law is tight, a
-      contradiction.<span style="margin-left: 1em"></span>\(\Box\)
+      R) \geqslant c_n\): the family is not tight. If \(:
+      \varphi_{\varepsilon_k}^n : \to \Psi\) in law in \(\mathcal{S}'\), then
+      \(X_{\varepsilon_k} \to \Psi (f)\) in law, and a sequence converging in
+      law is tight, a contradiction.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">3.12</class>. </strong><class style="font-style: normal"><strong>(The
       law of a bounded chaos is controlled by its \(L^2\) norm)
       </strong></class><a id="rem:chaos-norms"></a>Let \(X\) be in the bounded chaos
-      \(\bigoplus_{k \leq n} \mathcal{H}_k\), e.g. a polynomial of degree
-      \(\leq n\) in finitely many Gaussian variables. Three inequalities
+      \(\bigoplus_{k \leqslant n} \mathcal{H}_k\), e.g. a polynomial of degree
+      \(\leqslant n\) in finitely many Gaussian variables. Three inequalities
       control its law in terms of \(\sigma = \|X\|_{L^2}\) alone, with
       constants that depend only on \(n\):
     </p>
@@ -1111,23 +1114,23 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       <li>
         <p>
           <em>upper tails</em> (hypercontractivity [<a href="#bib-Jan97">Jan97</a>]):
-          \(\|X\|_{L^p} \leq (p - 1)^{n / 2} \sigma\), hence \(\mathbb{P} (|X|
-          > t \sigma) \leq \exp (- c \hspace{0.17em} t^{2 / n})\) for \(t \geq
-          t_0\);
+          \(\|X\|_{L^p} \leqslant (p - 1)^{n / 2} \sigma\), hence \(\mathbb{P}
+          (|X| > t \sigma) \leqslant \exp (- c \hspace{0.17em} t^{2 / n})\)
+          for \(t \geqslant t_0\);
         </p>
       </li>
       <li>
         <p>
           <em>no escape to zero</em> (Paley&ndash;Zygmund): \(\mathbb{P} (|X|
-          > \frac{1}{2} \sigma) \geq c_n > 0\);
+          > \frac{1}{2} \sigma) \geqslant c_n > 0\);
         </p>
       </li>
       <li>
         <p>
           <em>anti-concentration</em> (Carbery&ndash;Wright [<a href="#bib-CW01">CW01</a>]):
-          \(\mathbb{P} (|X| \leq t \sigma) \leq C \hspace{0.17em} n
-          \hspace{0.17em} t^{1 /
-n}\) for \(t > 0\).
+          \(\mathbb{P} (|X| \leqslant t \sigma) \leqslant C \hspace{0.17em}
+          n
+\hspace{0.17em} t^{1 / n}\) for \(t > 0\).
         </p>
       </li>
     </ul>
@@ -1143,11 +1146,11 @@ n}\) for \(t > 0\).
       <em>Gaussian</em> white noise, which retains no information on the
       \(n\)-th power. The fourth moment theorem [<a href="#bib-NP05">NP05</a>]
       characterises such Gaussian limits within a fixed chaos, and a central
-      limit theorem of this kind for the lattice \(: \varphi^4\): in \(d \geq
-      3\) is proved in [<a href="#bib-AZ96">AZ96</a>]. In particular, in \(d \geq 4\) no
-      Wick power with \(n \geq 2\) exists as a random distribution, so under
-      the GFF the interaction \(\int : \varphi^4\): cannot even be written
-      down.
+      limit theorem of this kind for the lattice \(: \varphi^4\): in \(d
+      \geqslant 3\) is proved in [<a href="#bib-AZ96">AZ96</a>]. In particular, in \(d
+      \geqslant 4\) no Wick power with \(n \geqslant 2\) exists as a random
+      distribution, so under the GFF the interaction \(\int : \varphi^4\):
+      cannot even be written down.
     </p>
     <p style="margin-bottom: 1em">
       <em>Acknowledgement.</em> I thank Ilya Chevyrev and Emilio Ferrucci for
@@ -1459,38 +1462,38 @@ x_j)
       <p>
         <font style="font-size: 84.1%">and derive <class style="font-style: normal">(<a href="#eq:KL-euclid">3.5</a>)</class> from
         <a href="cqft_notes_L1.html#eq:KL">(1.4)</a>. (b) Show that \(G_M (x)\) is decreasing in \(M\)
-        and, for \(d \geq 2\), that \(G_M (x) / G_m (x) \to 1\) as \(x \to
-        0\). Prove the lower bound in Remark <a href="#rem:KL-euclid">3.7</a>(i). (c) Let \(d
-        \geq 3\) and suppose \(S_2^T (x) = |x|^{- 2 \Delta_{\varphi}}\) (a
-        scale invariant theory; the scaling dimension \(\Delta_{\varphi}\) is
-        not the Laplacian). Using \(G_M (x) = M^{d - 2} G_1  (Mx)\), show that
-        \(\rho (\mathrm{d} M^2) = c \hspace{0.17em} (M^2)^{\Delta_{\varphi} -
-        d / 2}
-\mathrm{d} M^2\) reproduces \(S_2^T\) for some \(c > 0\), for
-        \(\frac{d - 2}{2} < \Delta_{\varphi} < \frac{d}{2}\), and that this is
-        a locally finite measure iff \(\Delta_{\varphi} > \frac{d - 2}{2}\)
-        (for \(\Delta_{\varphi} \geq \frac{d}{2}\), \(S_2^T\) is not locally
-        integrable). Using uniqueness of the Stieltjes transform, deduce the
-        unitarity bound \(\Delta_{\varphi} \geq \frac{d - 2}{2}\), with
-        equality iff \(\rho \propto \delta_0\), the massless free
-        field.</font>
+        and, for \(d \geqslant 2\), that \(G_M (x) / G_m (x) \to 1\) as \(x
+        \to 0\). Prove the lower bound in Remark <a href="#rem:KL-euclid">3.7</a>(i). (c) Let
+        \(d \geqslant 3\) and suppose \(S_2^T (x) = |x|^{- 2
+        \Delta_{\varphi}}\) (a scale invariant theory; the scaling dimension
+        \(\Delta_{\varphi}\) is not the Laplacian). Using \(G_M (x) = M^{d -
+        2} G_1  (Mx)\), show that \(\rho (\mathrm{d} M^2) = c \hspace{0.17em}
+        (M^2)^{\Delta_{\varphi} - d / 2}
+\mathrm{d} M^2\) reproduces \(S_2^T\)
+        for some \(c > 0\), for \(\frac{d - 2}{2} < \Delta_{\varphi} <
+        \frac{d}{2}\), and that this is a locally finite measure iff
+        \(\Delta_{\varphi} > \frac{d - 2}{2}\) (for \(\Delta_{\varphi}
+        \geqslant \frac{d}{2}\), \(S_2^T\) is not locally integrable). Using
+        uniqueness of the Stieltjes transform, deduce the unitarity bound
+        \(\Delta_{\varphi} \geqslant \frac{d - 2}{2}\), with equality iff
+        \(\rho \propto \delta_0\), the massless free field.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.3</class>.
         </strong><class style="font-style: normal"><strong>(Regularity is sharp)
-        </strong></class><a id="ex:regularity"></a> (a) For \(a_n \geq 0\) and \((g_n)\)
+        </strong></class><a id="ex:regularity"></a> (a) For \(a_n \geqslant 0\) and \((g_n)\)
         i.i.d. \(N (0, 1)\), show that \(\mathbb{E} \hspace{0.17em}
         \mathrm{e}^{- \sum_n a_n g_n^2} = \prod_n (1 + 2
 a_n)^{- 1 / 2}\).
         Deduce that \(\sum_n a_n g_n^2 < \infty\) a.s. iff \(\sum_n a_n <
         \infty\). (b) Conclude that \(\mu_m (H^{- s} (\mathbb{T}^d_L)) = 1\)
         iff \(s > \frac{d}{2} - 1\). In particular \(\mu_m (L^2) = 0\) for \(d
-        \geq 2\), and the Cameron&ndash;Martin space \(H^1\) is \(\mu_m\)-null
-        in every dimension. (c<sup>\(\star\)</sup>) Using hypercontractivity
-        and a Kolmogorov argument, show that \(\varphi \in C^{1 - d / 2 -
-        \kappa}\) a.s. for every \(\kappa > 0\).</font>
+        \geqslant 2\), and the Cameron&ndash;Martin space \(H^1\) is
+        \(\mu_m\)-null in every dimension. (c<sup>\(\star\)</sup>) Using
+        hypercontractivity and a Kolmogorov argument, show that \(\varphi \in
+        C^{1 - d / 2 - \kappa}\) a.s. for every \(\kappa > 0\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1498,12 +1501,12 @@ a_n)^{- 1 / 2}\).
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">3.4</class>.
         </strong><class style="font-style: normal"><strong>(Hermite calculus and change of
         renormalisation) </strong></class>(a) Show that \(H_n (a ; c) =
-        \sum_{k \leq n / 2} \frac{n!}{k! \hspace{0.17em} (n - 2 k) !}
-\left(
-        - \frac{c}{2} \right)^k a^{n - 2 k}\), \(\partial_a H_n = nH_{n - 1}\)
-        and \(aH_n = H_{n + 1} + ncH_{n - 1}\). (b) Show that \(H_n (a + b ; c
-        + c') = \sum_k \binom{n}{k} H_k (a ; c) H_{n - k} (b ; c')\). (c) Show
-        that \(H_n (a ; c') = \sum_k \binom{n}{2 k} (2 k - 1) !!
+        \sum_{k \leqslant n / 2} \frac{n!}{k! \hspace{0.17em} (n - 2 k)
+!}
+        \left( - \frac{c}{2} \right)^k a^{n - 2 k}\), \(\partial_a H_n = nH_{n
+        - 1}\) and \(aH_n = H_{n + 1} + ncH_{n - 1}\). (b) Show that \(H_n (a
+        + b ; c + c') = \sum_k \binom{n}{k} H_k (a ; c) H_{n - k} (b ; c')\).
+        (c) Show that \(H_n (a ; c') = \sum_k \binom{n}{2 k} (2 k - 1) !!
         \hspace{0.17em} (c - c')^k
 H_{n - 2 k} (a ; c)\). Interpret this as
         the effect of changing the mollifier on \(: \varphi^n\):: Wick powers
@@ -1517,10 +1520,10 @@ H_{n - 2 k} (a ; c)\). Interpret this as
         </strong><class style="font-style: normal"><strong>(Wick powers: details)
         </strong></class>(a) Show that \(c_{\varepsilon} = \frac{1}{2 \pi}
         \log \frac{1}{\varepsilon} + O (1)\) for \(d = 2\) and
-        \(c_{\varepsilon} \asymp \varepsilon^{2 - d}\) for \(d \geq 3\). (b)
-        In \(d = 3\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^3 :
+        \(c_{\varepsilon} \asymp \varepsilon^{2 - d}\) for \(d \geqslant 3\).
+        (b) In \(d = 3\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^3 :
         (f)^2] \asymp \log
-\frac{1}{\varepsilon}\) for \(0 \leq f
+\frac{1}{\varepsilon}\) for \(0 \leqslant f
         \mathrel{\not\equiv} 0\): the cube is borderline divergent. (c) In \(d
         = 4\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^2 : (f)^2]
         \asymp \log
@@ -1556,10 +1559,10 @@ H_{n - 2 k} (a ; c)\). Interpret this as
         <font style="font-size: 84.1%">and deduce that \(: \mathrm{e}^{\mathrm{i} \beta
         \varphi_{\varepsilon}} : (f)\) converges in \(L^2 (\mu_m)\) for every
         \(f\) if \(\beta^2 < 4 \pi\), while its second moment diverges for \(0
-        \leq f \mathrel{\not\equiv} 0\) if \(\beta^2 \geq 4 \pi\). What
-        changes for the real exponential \(: \mathrm{e}^{\alpha \varphi}\):?
-        (Gaussian multiplicative chaos exists in \(L^1\) for \(\alpha^2 < 8
-        \pi\), see [<a href="#bib-BP25">BP25</a>].)</font>
+        \leqslant f \mathrel{\not\equiv} 0\) if \(\beta^2 \geqslant 4 \pi\).
+        What changes for the real exponential \(: \mathrm{e}^{\alpha
+        \varphi}\):? (Gaussian multiplicative chaos exists in \(L^1\) for
+        \(\alpha^2 < 8 \pi\), see [<a href="#bib-BP25">BP25</a>].)</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1666,10 +1669,10 @@ P} G (x_i - x_j)\).</font>
         supported in \(\{\tau > 0\}\) with \(\langle \Theta f, P^{- 1} f
         \rangle < 0\). <em>Hint:</em> choose \(g\) with \(\int_0^{\infty}
         \mathrm{e}^{- \omega_1 \tau} g (\tau) \mathrm{d} \tau = 0\). (e) Let
-        \(p\) be a real polynomial of degree \(\geq 2\), positive on \([0,
-        \infty)\). Show that \(1 / p (|k|^2)\) is not of the form \(\int \rho
-        (\mathrm{d} M^2)  (|k|^2 + M^2)^{- 1}\) with \(\rho \geq 0\).
-        <em>Hint:</em> \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\)
+        \(p\) be a real polynomial of degree \(\geqslant 2\), positive on
+        \([0, \infty)\). Show that \(1 / p (|k|^2)\) is not of the form \(\int
+        \rho (\mathrm{d} M^2)  (|k|^2 + M^2)^{- 1}\) with \(\rho \geqslant
+        0\). <em>Hint:</em> \(s \int \rho (\mathrm{d} M^2)  (s + M^2)^{- 1}\)
         increases to \(\rho ([0, \infty))\) as \(s \to \infty\) (monotone
         convergence), while \(s / p (s) \to 0\).</font>
       </p>
@@ -1744,8 +1747,8 @@ P} G (x_i - x_j)\).</font>
         <dd>
           <p>
             <a id="bib-AL07"></a>S. Albeverio, S. Liang. A note on the renormalized
-            square of free quantum fields in space-time dimension \(d \geq
-            4\). <em>Bull. Sci. Math.</em> 131 (2007), 1&ndash;11.
+            square of free quantum fields in space-time dimension \(d
+            \geqslant 4\). <em>Bull. Sci. Math.</em> 131 (2007), 1&ndash;11.
           </p>
         </dd>
       </p>

@@ -340,9 +340,9 @@
       \mathcal{M})}\) with \(\mathbb{E} [\xi (u) \xi (v)] = \langle u, v
       \rangle\), formally \(\mathbb{E} [\xi (t, x) \xi (s, y)] = \delta (t -
       s) \delta (x - y)\). Let \(W_t (h) = \xi (\mathbb{1}_{[0, t]} \otimes
-      h)\), \(t \geq 0\), a cylindrical Brownian motion. For a (weak) solution
-      \(\Phi\) of <class style="font-style: normal">(<a href="#eq:SQE">4.1</a>)</class> with \(V = 0\) and
-      \(F = g (\varphi (f_1), \ldots, \varphi (f_n)) \in
+      h)\), \(t \geqslant 0\), a cylindrical Brownian motion. For a (weak)
+      solution \(\Phi\) of <class style="font-style: normal">(<a href="#eq:SQE">4.1</a>)</class> with \(V =
+      0\) and \(F = g (\varphi (f_1), \ldots, \varphi (f_n)) \in
       \mathcal{F}C^{\infty}_b\), It&ocirc;'s formula shows that \(F (\Phi_t) -
       \int_0^t \mathcal{L}F (\Phi_r) \mathrm{d} r\) is a martingale, with
     </p>
@@ -451,7 +451,7 @@ x) :=
 \left( \mathbb{1}_{(0, t)} (r)
                 \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
 \right), \qquad t
-                \geq 0.\)
+                \geqslant 0.\)
               </center>
               <p>
                 Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
@@ -482,15 +482,16 @@ x) :=
       In particular \(K_{t, f} \in L^2  (\mathbb{R} \times \mathcal{M})\), and
       multiplying by \(2\) gives the covariance. Stationarity follows. For
       fixed \(t\), \(f \mapsto \Phi_t (f)\) is linear and \(\mathbb{E} [\Phi_t
-      (f)^2] = \langle f, Cf \rangle \leq m^{- 2} \|f\|_{L^2}^2\), so it is
-      continuous from \(\mathcal{S} (\mathcal{M})\) to \(L^2 (\mathbb{P})\).
-      By the regularisation theorem for random linear functionals on nuclear
-      spaces (It&ocirc;&ndash;Nawata, Mitoma) it has an \(\mathcal{S}'
-      (\mathcal{M})\)-valued version, which is centred Gaussian with
-      covariance \(C\), i.e. has law \(\mu_m\). On the torus one can see this
-      directly: the coordinates \(\Phi_t (e_n)\) are independent stationary OU
-      processes \(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
-      \mathrm{d} B\) with variance \(\lambda_n^{- 1}\), and <a href="cqft_notes_L2.html#eq:series">(3.3)</a>
+      (f)^2] = \langle f, Cf \rangle \leqslant m^{- 2}
+\|f\|_{L^2}^2\), so it
+      is continuous from \(\mathcal{S} (\mathcal{M})\) to \(L^2
+      (\mathbb{P})\). By the regularisation theorem for random linear
+      functionals on nuclear spaces (It&ocirc;&ndash;Nawata, Mitoma) it has an
+      \(\mathcal{S}' (\mathcal{M})\)-valued version, which is centred Gaussian
+      with covariance \(C\), i.e. has law \(\mu_m\). On the torus one can see
+      this directly: the coordinates \(\Phi_t (e_n)\) are independent
+      stationary OU processes \(\mathrm{d} X = - \lambda_n X \mathrm{d} t +
+      \sqrt{2} \mathrm{d} B\) with variance \(\lambda_n^{- 1}\), and <a href="cqft_notes_L2.html#eq:series">(3.3)</a>
       of Lecture 2 applies.
     </p>
     <p>
@@ -731,13 +732,13 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
         \(\nu\) be a probability measure on \(\mathcal{S}' (\mathbb{T}^d_L)\)
         with \(\varphi (f) \in L^1 (\nu)\) and \(\mathbb{E}_{\nu}
         [\mathcal{L}F] = 0\) for all \(F \in \mathcal{F}C^{\infty}_b\). Show
-        that \(\nu = \mu_m\). <em>Hint:</em> for \(f = \sum_{n \leq N} a_n
-        e_n\) and \(\psi (a) =\mathbb{E}_{\nu} \mathrm{e}^{\mathrm{i} \varphi
-        (f)}\), show \(\sum_n \lambda_n a_n \partial_{a_n} \psi = - |a|^2
-        \psi\), and differentiate \(s \mapsto \psi (\mathrm{e}^{sD} a) \exp
-        (\frac{1}{2}  \sum_n a_n^2
-\mathrm{e}^{2 \lambda_n s} / \lambda_n)\),
-        where \(D = \text{diag} (\lambda_n)\).</font>
+        that \(\nu = \mu_m\). <em>Hint:</em> for \(f = \sum_{n \leqslant N}
+        a_n e_n\) and \(\psi (a) =\mathbb{E}_{\nu} \mathrm{e}^{\mathrm{i}
+        \varphi (f)}\), show \(\sum_n \lambda_n a_n \partial_{a_n} \psi = -
+        |a|^2 \psi\), and differentiate \(s \mapsto \psi (\mathrm{e}^{sD} a)
+        \exp (\frac{1}{2}  \sum_n a_n^2
+\mathrm{e}^{2 \lambda_n s} /
+        \lambda_n)\), where \(D = \text{diag} (\lambda_n)\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -765,8 +766,8 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">4.4</class>.
         </strong><class style="font-style: normal"><strong>(Slices of Gaussian fields)
-        </strong></class><a id="ex:slices"></a> Let \(k \geq 1\), \(p > k / 2\), and let
-        \(\Psi\) be the centred Gaussian field on \(\mathbb{R}^k \times
+        </strong></class><a id="ex:slices"></a> Let \(k \geqslant 1\), \(p > k / 2\), and
+        let \(\Psi\) be the centred Gaussian field on \(\mathbb{R}^k \times
         \mathcal{M}\) with covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\).
         (a) Show that \(\Psi (0, \cdot)\) is well defined with covariance
         \(c_{k, p} A^{k / 2 - p}\), \(c_{k, p} = \Gamma (p - \frac{k}{2}) /
@@ -794,21 +795,22 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       the scale-by-scale organisation of the Wilson&ndash;Kadanoff picture [<a
       href="#bib-WK74">WK74</a>], and forces us to work with singular objects from the
       start. Already for the GFF, the Wick power \(: \varphi^n\): is not a
-      random distribution when \(n (d - 2) \geq d\), since its regularisations
-      are not even tight (Proposition <a href="cqft_notes_L2.html#prop:no-wick">3.11</a> of Lecture 2).
+      random distribution when \(n (d - 2) \geqslant d\), since its
+      regularisations are not even tight (Proposition <a href="cqft_notes_L2.html#prop:no-wick">3.11</a> of
+      Lecture 2).
     </p>
     <p>
       From now on we index everything by a <em>resolution</em> \(t \in [0,
       \infty)\). The field observed at resolution \(t\) is a smooth function
       \(\varphi_t\), and the information available at resolution \(t\) is the
-      \(\sigma\)-algebra \(\mathcal{F}_t\) generated by \((\varphi_s)_{s \leq
-      t}\). A physical quantity is then not a single random variable but a
-      <em>consistent family</em> of finite-resolution estimates of it, i.e. a
-      martingale. This is the notion of stochastic observable of [<a href="#bib-BCG26">BCG26</a>],
-      on which this lecture is based; see also [<a href="#bib-Pol84">Pol84</a>, <a href="#bib-BK87">BK87</a>,
-      <a href="#bib-Sal99">Sal99</a>, <a href="#bib-BBD24">BBD24</a>] for the renormalisation group
-      side and [<a href="#bib-BG20">BG20</a>, <a href="#bib-BG23">BG23</a>] for the variational
-      side.
+      \(\sigma\)-algebra \(\mathcal{F}_t\) generated by \((\varphi_s)_{s
+      \leqslant t}\). A physical quantity is then not a single random variable
+      but a <em>consistent family</em> of finite-resolution estimates of it,
+      i.e. a martingale. This is the notion of stochastic observable of [<a
+      href="#bib-BCG26">BCG26</a>], on which this lecture is based; see also [<a href="#bib-Pol84">Pol84</a>,
+      <a href="#bib-BK87">BK87</a>, <a href="#bib-Sal99">Sal99</a>, <a href="#bib-BBD24">BBD24</a>] for the
+      renormalisation group side and [<a href="#bib-BG20">BG20</a>, <a href="#bib-BG23">BG23</a>]
+      for the variational side.
     </p>
     <p>
       In Section <a href="#sec:sq">4</a> the variable \(t\) was the auxiliary time of a
@@ -821,7 +823,7 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
         id="def:profile"></a>A <em>covariance profile</em> is a family \((Q_t)_{t \in [0,
         \infty)}\) of bounded, symmetric, translation invariant operators on
         \(L^2 (\mathcal{M})\) with \(Q_0 = 0\), \(t \mapsto Q_t\) smooth,
-        \(\dot{Q}_t := \partial_t Q_t \geq 0\), \(Q_t \to C\) as \(t \to
+        \(\dot{Q}_t := \partial_t Q_t \geqslant 0\), \(Q_t \to C\) as \(t \to
         \infty\), and such that \(\dot{Q}_t\) and \(Q_t\) have smooth kernels
         for every \(t < \infty\).</i>
       </p>
@@ -856,21 +858,21 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       Fourier space \(Q_t\) retains the modes \(|k| \lesssim t\): \(t\) is a
       <em>momentum scale</em>, or resolution. Other profiles are useful, even
       when they violate some smoothness requirement of Definition <a href="#def:profile">5.1</a>.
-      A sharp Fourier cutoff is \(\hat{Q}_t (k) = \mathbb{1}_{|k| \leq t}
+      A sharp Fourier cutoff is \(\hat{Q}_t (k) = \mathbb{1}_{|k| \leqslant t}
       (|k|^2 + m^2)^{- 1}\), which is not smooth in \(t\). In a <em>finite
-      range decomposition</em>, \(\dot{Q}_t  (x, y) = 0\) for \(|x - y| \geq 1
-      / t\) (Remark <a href="#rem:finite-range">6.4</a>). We write
+      range decomposition</em>, \(\dot{Q}_t  (x, y) = 0\) for \(|x - y|
+      \geqslant 1 / t\) (Remark <a href="#rem:finite-range">6.4</a>). We write
     </p>
     <center>
       \(\displaystyle c_t := Q_t  (x, x), \qquad Q_{T, t} := Q_T - Q_t  \quad
-      (t \leq T) .\)
+      (t \leqslant T) .\)
     </center>
     <p>
-      For \(d \geq 2\), \(c_t \to \infty\) as \(t \to \infty\) (Exercise <a
-      href="#ex:ct">5.2</a>).
+      For \(d \geqslant 2\), \(c_t \to \infty\) as \(t \to \infty\) (Exercise
+      <a href="#ex:ct">5.2</a>).
     </p>
     <p>
-      Let \((W_t)_{t \geq 0}\) be a cylindrical Brownian motion on \(L^2
+      Let \((W_t)_{t \geqslant 0}\) be a cylindrical Brownian motion on \(L^2
       (\mathcal{M})\), \(\mathbb{E} [W_t (x) W_s (y)] = (t \wedge s) \delta (x
       - y)\), and
     </p>
@@ -885,14 +887,14 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       <p style="margin-top: 1em; margin-bottom: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">5.2</class>. </strong><i><a
         id="prop:scale-GFF"></a>For every \(t < \infty\), \(X_t\) is a smooth Gaussian field
-        with law \(\mu^{Q_t}\), and \((X_t (x))_{t \geq 0}\) is a continuous
-        martingale with \(\mathrm{d} \langle X (x), X (y) \rangle_t =
-        \dot{Q}_t  (x, y) \hspace{0.17em}
-\mathrm{d} t\). As \(t \to \infty\),
-        \(X_t \to X_{\infty}\) in \(H^{- s}_{\text{loc}}\) for \(s >
+        with law \(\mu^{Q_t}\), and \((X_t (x))_{t \geqslant 0}\) is a
+        continuous martingale with \(\mathrm{d} \langle X (x), X (y) \rangle_t
+        = \dot{Q}_t  (x, y) \hspace{0.17em}
+\mathrm{d} t\). As \(t \to
+        \infty\), \(X_t \to X_{\infty}\) in \(H^{- s}_{\text{loc}}\) for \(s >
         \frac{d}{2} - 1\), and \(\text{Law} (X_{\infty}) = \mu_m\). The
         increments \(X_T - X_t\) are independent of \(\mathcal{F}_t := \sigma
-        (X_s : s \leq t)\), with law \(\mu^{Q_{T, t}}\).</i>
+        (X_s : s \leqslant t)\), with law \(\mu^{Q_{T, t}}\).</i>
       </p>
     </div>
     <p>
@@ -925,9 +927,9 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
     </div>
     <h3 id="auto-14">5.2<span style="margin-left: 1em"></span>Stochastic observables<span style="margin-left: 1em"></span></h3>
     <p>
-      Fix a filtration \((\mathcal{F}_t)_{t \geq 0}\), for the moment that of
-      \(X\), and write \(\mathbb{E}_t := \mathbb{E}[\hspace{0.17em} \cdot
-      \hspace{0.17em}
+      Fix a filtration \((\mathcal{F}_t)_{t \geqslant 0}\), for the moment
+      that of \(X\), and write \(\mathbb{E}_t := \mathbb{E}[\hspace{0.17em}
+      \cdot \hspace{0.17em}
 |\mathcal{F}_t]\).
     </p>
     <div class="theorem">
@@ -935,11 +937,11 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
         <strong class="enunciation-name">Definition <class style="font-style: normal">5.3</class>.
         </strong><i><class style="font-style: normal"><strong>([<a href="#bib-BCG26">BCG26</a>])
         </strong></class><a id="def:obs"></a> An <em>observable</em> is a real or
-        complex \((\mathcal{F}_t)\)-martingale \(O = (O_t)_{t \geq 0}\): \(O_s
-        =\mathbb{E}_s [O_t]\) for \(s \leq t\). Its <em>expectation</em> is
-        \(\langle O \rangle := \mathbb{E} [O_t]\), which is independent of
-        \(t\). An <em>observable field</em> is a family \((O (x))_{x \in
-        \mathcal{M}}\) of observables.</i>
+        complex \((\mathcal{F}_t)\)-martingale \(O = (O_t)_{t \geqslant 0}\):
+        \(O_s =\mathbb{E}_s [O_t]\) for \(s \leqslant t\). Its
+        <em>expectation</em> is \(\langle O \rangle := \mathbb{E} [O_t]\),
+        which is independent of \(t\). An <em>observable field</em> is a
+        family \((O (x))_{x \in \mathcal{M}}\) of observables.</i>
       </p>
     </div>
     <p>
@@ -947,7 +949,7 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       \(Y\) gives a <em>closed</em> observable \(O_t =\mathbb{E}_t [Y]\), with
       \(O_t \to Y\). The point of the definition is that interesting
       observables need <em>not</em> be closed: a martingale may diverge as \(t
-      \to \infty\) (for instance \(X_t (x)\) for \(d \geq 2\)), and still
+      \to \infty\) (for instance \(X_t (x)\) for \(d \geqslant 2\)), and still
       carry a perfectly meaningful family of finite-resolution estimates. The
       next lemma is elementary but basic.
     </p>
@@ -963,9 +965,9 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>(a) \(O^1_s - O^2_s =\mathbb{E}_s  [O^1_t
-      - O^2_t]\) for every \(t \geq s\), and conditional expectation is an
-      \(L^1\) contraction. (b) Likewise, \(\|O_s -\mathbb{E}_s N_t \|_{L^1}
-      \leq \|O_t - N_t \|_{L^1}\).<span style="margin-left: 1em"></span>\(\Box\)
+      - O^2_t]\) for every \(t \geqslant s\), and conditional expectation is
+      an \(L^1\) contraction. (b) Likewise, \(\|O_s -\mathbb{E}_s N_t \|_{L^1}
+      \leqslant \|O_t - N_t \|_{L^1}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       <div style="display: inline">
@@ -993,7 +995,7 @@ a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
       </div>
       <h5>Random variables as observables.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        The map \(Y \mapsto (\mathbb{E}_t Y)_{t \geq 0}\) sends \(L^1
+        The map \(Y \mapsto (\mathbb{E}_t Y)_{t \geqslant 0}\) sends \(L^1
         (\mathcal{F}_{\infty})\) into the observables. It is injective, since
         \(\mathbb{E}_t Y \to Y\) in \(L^1\) (L&eacute;vy's upward theorem),
         and its image is exactly the set of closed observables, i.e. of the
@@ -1027,10 +1029,10 @@ t)\)
     </p>
     <center>
       \(\displaystyle Z_t = \exp \left( \lambda B_t - \frac{\lambda^2}{2} t
-      \right) = \sum_{n \geq
-0} \frac{\lambda^n}{n!} H_n (B_t ; t), \qquad
-      \lambda \in \mathbb{R}, \lambda
-\neq 0,\)
+      \right) = \sum_{n
+\geqslant 0} \frac{\lambda^n}{n!} H_n (B_t ; t),
+      \qquad \lambda \in
+\mathbb{R}, \lambda \neq 0,\)
     </center>
     <p style="margin-bottom: 1em">
       makes the loss of terminal information explicit: \(Z_t \to 0\) almost
@@ -1063,9 +1065,9 @@ t)\)
       <strong class="enunciation-name">Proof. </strong>\(O_t = N_0 + M_t +\mathbb{E}_t \left[
       \int_0^{\infty} \beta_s \mathrm{d} s
 \right]\) is a sum of martingales,
-      and \(\|O_t - N_t \|_{L^1} \leq \mathbb{E} \int_t^{\infty} | \beta_s |
-      \mathrm{d} s
-\to 0\). Uniqueness is Lemma <a href="#lem:uniq">5.4</a>(a).<span
+      and \(\|O_t - N_t \|_{L^1} \leqslant \mathbb{E} \int_t^{\infty} |
+      \beta_s |
+\mathrm{d} s \to 0\). Uniqueness is Lemma <a href="#lem:uniq">5.4</a>(a).<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -1094,7 +1096,8 @@ t)\)
       w^2 / 2 s}\) be the heat kernel, and
     </p>
     <center>
-      \(\displaystyle \Pi^y_t := p_{T - t} (B_t - y), \qquad 0 \leq t < T.\)
+      \(\displaystyle \Pi^y_t := p_{T - t} (B_t - y), \qquad 0 \leqslant t <
+      T.\)
     </center>
     <p style="margin-bottom: 1em">
       Here the resolution runs over \([0, T)\) (reparametrise by \((T - t)^{-
@@ -1145,8 +1148,8 @@ t)\)
         show that \(c_t = \frac{1}{4 \pi} E_1  (m^2 / t^2) = \frac{1}{2 \pi}
         \log \frac{t}{m} + O
 (1)\) for \(d = 2\), where \(E_1\) is the
-        exponential integral, and that \(c_t \asymp t^{d - 2}\) for \(d \geq
-        3\).</font>
+        exponential integral, and that \(c_t \asymp t^{d - 2}\) for \(d
+        \geqslant 3\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1188,8 +1191,8 @@ t)\)
       <h5>Point evaluations.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         For every \(x\) and every \(d\), \(\textbf{X} (x) := (X_t (x))_{t
-        \geq 0}\) is a local observable. For \(d \geq 2\) it is not closed:
-        \(\mathbb{E}X_t (x)^2 = c_t \to \infty\).
+        \geqslant 0}\) is a local observable. For \(d \geqslant 2\) it is not
+        closed: \(\mathbb{E}X_t (x)^2 = c_t \to \infty\).
       </div>
     </p>
     <p>
@@ -1207,8 +1210,8 @@ t)\)
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">6.1</class>.
         </strong><i><class style="font-style: normal"><strong>(Wick observables)
-        </strong></class><a id="prop:wick-obs"></a> For every \(d \geq 1\), \(n \geq 1\) and
-        \(x \in \mathcal{M}\),</i>
+        </strong></class><a id="prop:wick-obs"></a> For every \(d \geqslant 1\), \(n
+        \geqslant 1\) and \(x \in \mathcal{M}\),</i>
       </p>
       <p>
         <i><center>
@@ -1260,13 +1263,14 @@ X_t (x) + \left( \tfrac{1}{2} \partial_a^2
       \varphi^n\): existed as a random distribution only for \(n (d - 2) <
       d\), and by Proposition <a href="cqft_notes_L2.html#prop:no-wick">3.11</a> not at all otherwise. As
       observables, Wick powers exist in <em>every</em> dimension and need no
-      smearing. When \(n (d - 2) \geq d\) and \(0 \leq f \mathrel{\not\equiv}
-      0\), the smeared martingale \(t \mapsto : X_t^n : (f)\) is unbounded in
-      \(L^2\) and, by the Paley&ndash;Zygmund argument of Lecture 2, not even
-      tight as \(t \to \infty\): it has no terminal value, and the observable
-      is the whole family, not a limit. The singularity has not disappeared.
-      It has moved from the observables themselves to their <em>products</em>
-      at coincident points, as we now see.
+      smearing. When \(n (d - 2) \geqslant d\) and \(0 \leqslant f
+      \mathrel{\not\equiv} 0\), the smeared martingale \(t \mapsto : X_t^n :
+      (f)\) is unbounded in \(L^2\) and, by the Paley&ndash;Zygmund argument
+      of Lecture 2, not even tight as \(t \to \infty\): it has no terminal
+      value, and the observable is the whole family, not a limit. The
+      singularity has not disappeared. It has moved from the observables
+      themselves to their <em>products</em> at coincident points, as we now
+      see.
     </p>
     <p>
       <div style="display: inline">
@@ -1418,8 +1422,9 @@ t)} p_{(T + t) / 2} (\bar{y})
         Here \(\langle \textbf{X} (x), \textbf{X} (y) \rangle_t = Q_t  (x -
         y)\) is deterministic and <class style="font-style: normal">(<a href="#eq:prod-cond">6.2</a>)</class>
         reads \(\int_0^{\infty} | \dot{Q}_s (x - y) | \mathrm{d} s < \infty\).
-        For the heat profile and \(d \geq 2\) this holds iff \(x \neq y\), and
-        then \(\dot{Q}_s \geq 0\) and the integral is \(G (x - y)\). Hence
+        For the heat profile and \(d \geqslant 2\) this holds iff \(x \neq
+        y\), and then \(\dot{Q}_s \geqslant 0\) and the integral is \(G (x -
+        y)\). Hence
       </div>
     </p>
     <table width="100%">
@@ -1435,9 +1440,9 @@ y),\)</td>
     </table>
     <p>
       which is the correct two-point function. We never had to discuss the
-      regularity of \(X_{\infty}\). For \(x = y\) and \(d \geq 2\) the product
-      does not exist: its expectation would be \(\lim_t \mathbb{E}X_t (x)^2 =
-      \lim_t c_t = \infty\).
+      regularity of \(X_{\infty}\). For \(x = y\) and \(d \geqslant 2\) the
+      product does not exist: its expectation would be \(\lim_t \mathbb{E}X_t
+      (x)^2 = \lim_t c_t = \infty\).
     </p>
     <p>
       <div style="display: inline">
@@ -1471,9 +1476,9 @@ y),\)</td>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:wick-product"></a>\(\displaystyle : \textbf{X}^n : (x)
-        \star : \textbf{X}^k : (y) = \sum_{j \leq n \wedge k} j!
-\binom{n}{j}
-        \binom{k}{j} \hspace{0.17em} G (x - y)^j \hspace{0.17em}
+        \star : \textbf{X}^k : (y) = \sum_{j \leqslant n \wedge
+k} j!
+        \binom{n}{j} \binom{k}{j} \hspace{0.17em} G (x - y)^j \hspace{0.17em}
         :
 \textbf{X}^{n - j} (x) \textbf{X}^{k - j} (y) :,\)</td>
         <td align="right">(6.6)</td>
@@ -1482,10 +1487,10 @@ y),\)</td>
     <p>
       where \(: \textbf{X}^p (x) \textbf{X}^q (y) :_t := H_p  (X_t (x) ; c_t)
       H_q  (X_t (y)
-; c_t)\) minus its contractions at scales \(\leq t\). This
-      is Wick's theorem written at the level of observables. The coefficients
-      \(G (x - y)^j\) carry all the singularities, and the observables on the
-      right have regular limits as \(y \to x\).
+; c_t)\) minus its contractions at scales \(\leqslant t\).
+      This is Wick's theorem written at the level of observables. The
+      coefficients \(G (x - y)^j\) carry all the singularities, and the
+      observables on the right have regular limits as \(y \to x\).
     </p>
     <p>
       <div style="display: inline">
@@ -1575,10 +1580,10 @@ X)) .\)
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">6.4</class>. </strong><a id="rem:finite-range"></a>A
       finite range decomposition makes these statements exact: if \(\dot{Q}_t
-      (x, y) = 0\) for \(|x - y| \geq 1 / t\), then \(X_T - X_t\) restricted
-      to regions at distance \(\geq 1 / t\) are independent. Such
-      decompositions of \((m^2 - \Delta)^{- 1}\) exist and are a basic tool of
-      the rigorous renormalisation group [<a href="#bib-BBS19">BBS19</a>].
+      (x, y) = 0\) for \(|x - y| \geqslant 1 / t\), then \(X_T - X_t\)
+      restricted to regions at distance \(\geqslant 1 / t\) are independent.
+      Such decompositions of \((m^2 - \Delta)^{- 1}\) exist and are a basic
+      tool of the rigorous renormalisation group [<a href="#bib-BBS19">BBS19</a>].
     </p>
     <p>
       <div style="display: inline">
@@ -1600,10 +1605,10 @@ X)) .\)
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">6.1</class>.
         </strong><class style="font-style: normal"><strong>(Hermite calculus along the flow)
         </strong></class><a id="ex:hermite-flow"></a> (a) Show that \(\int H_n  (a + b ; c)
-        \hspace{0.17em} \mu^s (\mathrm{d} b) = H_n  (a ; c - s)\) for \(0 \leq
-        s \leq c\), where \(\mu^s = N (0, s)\). (b) Deduce again that \(H_n
-        (X_t (x) ; c_t)\) is a martingale, using only the independence of the
-        increments.</font>
+        \hspace{0.17em} \mu^s (\mathrm{d} b) = H_n  (a ; c - s)\) for \(0
+        \leqslant s \leqslant c\), where \(\mu^s = N (0, s)\). (b) Deduce
+        again that \(H_n  (X_t (x) ; c_t)\) is a martingale, using only the
+        independence of the increments.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1634,12 +1639,12 @@ X)) .\)
 \mathrm{e}^{\mathrm{i} b \textbf{X}} : (y)}\) reads
         \(\int^{\infty} \mathrm{e}^{b^2 c_s} \dot{Q}_s  (x - y) \mathrm{d} s <
         \infty\). Deduce that the product exists for all \(x \neq y\) if \(d
-        \leq 3\), for \(|x - y| > |b| / 2 \pi\) but not for \(|x - y| < |b| /
-        2 \pi\) if \(d = 4\), and not at all if \(d \geq 5\). For \(d \leq 3\)
-        show that its expectation is \(\mathrm{e}^{b^2 G (x - y)}\), and
-        decide for which \(b\) it is locally integrable in \(y\): all \(b\) in
-        \(d = 1\), \(b^2 < 4 \pi\) in \(d = 2\) (the \(L^2\) threshold of
-        Lecture 2), only \(b = 0\) in \(d = 3\).</font>
+        \leqslant 3\), for \(|x - y| > |b| / 2 \pi\) but not for \(|x - y| <
+        |b| / 2 \pi\) if \(d = 4\), and not at all if \(d \geqslant 5\). For
+        \(d \leqslant 3\) show that its expectation is \(\mathrm{e}^{b^2 G (x
+        - y)}\), and decide for which \(b\) it is locally integrable in \(y\):
+        all \(b\) in \(d = 1\), \(b^2 < 4 \pi\) in \(d = 2\) (the \(L^2\)
+        threshold of Lecture 2), only \(b = 0\) in \(d = 3\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">

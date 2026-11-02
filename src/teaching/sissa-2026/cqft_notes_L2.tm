@@ -93,7 +93,7 @@
 
   Throughout, <math|\<cal-M\>> is either the torus
   <math|\<bbb-T\><rsup|d><rsub|L>=<around|(|\<bbb-R\>/L*\<bbb-Z\>|)><rsup|d>>
-  or <math|\<bbb-R\><rsup|d>>, <math|d\<geq\>1>. We write
+  or <math|\<bbb-R\><rsup|d>>, <math|d\<geqslant\>1>. We write
   <math|\<cal-S\><around|(|\<cal-M\>|)>> for
   <math|C<rsup|\<infty\>><around|(|\<bbb-T\><rsup|d><rsub|L>|)>>, resp. the
   Schwartz space, and <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>> for
@@ -109,9 +109,10 @@
 
   <math|C> is a positive bounded operator on
   <math|L<rsup|2><around|(|\<cal-M\>|)>> with
-  <math|<around|\<\|\|\>|C|\<\|\|\>>\<leq\>m<rsup|-2>>. Both <math|A> and
-  <math|C> are continuous bijections of <math|\<cal-S\><around|(|\<cal-M\>|)>>,
-  being Fourier multipliers by <math|<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|\<pm\>1>>.
+  <math|<around|\<\|\|\>|C|\<\|\|\>>\<leqslant\>m<rsup|-2>>. Both <math|A>
+  and <math|C> are continuous bijections of
+  <math|\<cal-S\><around|(|\<cal-M\>|)>>, being Fourier multipliers by
+  <math|<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|\<pm\>1>>.
 
   <\definition>
     <label|def:gff>The <em|(massive) Gaussian free field> on <math|\<cal-M\>>
@@ -138,7 +139,7 @@
   <math|G<rsub|m><around|(|x|)>\<sim\><frac|1|2*\<pi\>>*log
   <frac|1|<around|\||x|\|>>> as <math|x\<to\>0> if <math|d=2>;
   <math|G<rsub|m><around|(|x|)>\<sim\><frac|\<Gamma\>*<around|(|d/2-1|)>|4*\<pi\><rsup|d/2>><around|\||x|\|><rsup|2-d>>
-  if <math|d\<geq\>3>; <math|G<rsub|m><around|(|x|)>=\<mathe\><rsup|-m<around|\||x|\|>>/<around|(|2*m|)>>
+  if <math|d\<geqslant\>3>; <math|G<rsub|m><around|(|x|)>=\<mathe\><rsup|-m<around|\||x|\|>>/<around|(|2*m|)>>
   if <math|d=1>; and <math|G<rsub|m>> decays like
   <math|<around|\||x|\|><rsup|-<around|(|d-1|)>/2>\<mathe\><rsup|-m<around|\||x|\|>>>
   at infinity. Uniqueness of <math|\<mu\><rsub|m>> is clear, since a
@@ -157,15 +158,15 @@
   <\theorem>
     <dueto|Existence and regularity><label|thm:existence> (a) Let
     <math|\<cal-M\>=\<bbb-T\><rsup|d><rsub|L>>, let
-    <math|<around|(|e<rsub|n>|)><rsub|n\<geq\>0>> be a real orthonormal basis
-    of <math|L<rsup|2><around|(|\<bbb-T\><rsup|d><rsub|L>|)>> of
+    <math|<around|(|e<rsub|n>|)><rsub|n\<geqslant\>0>> be a real orthonormal
+    basis of <math|L<rsup|2><around|(|\<bbb-T\><rsup|d><rsub|L>|)>> of
     eigenfunctions of <math|-\<Delta\>>, <math|-\<Delta\>*e<rsub|n>=\<kappa\><rsub|n>*e<rsub|n>>,
     <math|\<lambda\><rsub|n>\<assign\>m<rsup|2>+\<kappa\><rsub|n>>, and let
     <math|<around|(|g<rsub|n>|)>> be i.i.d. <math|N<around|(|0,1|)>>. For
     every <math|s\<gtr\><frac|d|2>-1> the series
 
     <\equation>
-      <label|eq:series>\<varphi\>=<big|sum><rsub|n\<geq\>0>\<lambda\><rsub|n><rsup|-1/2>*g<rsub|n>*<space|0.17em>e<rsub|n>
+      <label|eq:series>\<varphi\>=<big|sum><rsub|n\<geqslant\>0>\<lambda\><rsub|n><rsup|-1/2>*g<rsub|n>*<space|0.17em>e<rsub|n>
     </equation>
 
     converges a.s. and in <math|L<rsup|2><around|(|\<bbb-P\>;H<rsup|-s><around|(|\<bbb-T\><rsup|d><rsub|L>|)>|)>>,
@@ -194,7 +195,7 @@
     is a unique probability measure on <math|\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d>|)>>
     with characteristic functional <math|\<Psi\>>. For
     <math|\<Psi\><around|(|f|)>=\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>,
-    continuity follows from <math|<around|\<langle\>|f,C*f|\<rangle\>>\<leq\>m<rsup|-2><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|2>><rsup|2>>.
+    continuity follows from <math|<around|\<langle\>|f,C*f|\<rangle\>>\<leqslant\>m<rsup|-2><around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|2>><rsup|2>>.
     For positive definiteness, write <math|\<Psi\>*<around|(|f<rsub|j>-f<rsub|k>|)>=a<rsub|j>*a<rsub|k>\<mathe\><rsup|Q<rsub|j*k>>>
     with <math|a<rsub|j>=\<mathe\><rsup|-<frac|1|2>*Q<rsub|j*j>>> and
     <math|Q<rsub|j*k>=<around|\<langle\>|f<rsub|j>,C*f<rsub|k>|\<rangle\>>>
@@ -224,7 +225,7 @@
   Then <math|A=-\<partial\><rsub|\<tau\>><rsup|2>+B> with
   <math|B\<assign\>m<rsup|2>-\<Delta\><rsub|N>> on
   <math|L<rsup|2><around|(|N|)>>, and we set
-  <math|\<omega\>\<assign\>B<rsup|1/2>\<geq\>m>.
+  <math|\<omega\>\<assign\>B<rsup|1/2>\<geqslant\>m>.
 
   <\proposition>
     <label|prop:RP>(a) As an operator-valued kernel in the time variables,
@@ -233,7 +234,7 @@
     <math|<math-up|supp>f\<subset\><around|{|\<tau\>\<gtr\>0|}>>,
 
     <\equation>
-      <label|eq:RP><around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\||<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f(\<tau\>,\<cdot\><around*|)|<space|0.17em>\<mathd\>\<tau\>|\|><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geq\>0.|\<nobracket\>>
+      <label|eq:RP><around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\||<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f(\<tau\>,\<cdot\><around*|)|<space|0.17em>\<mathd\>\<tau\>|\|><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geqslant\>0.|\<nobracket\>>
     </equation>
 
     (c) <math|\<mu\><rsub|m>> on <math|\<bbb-R\><rsup|d>> satisfies
@@ -313,7 +314,7 @@
   positivity (Proposition<nbsp><reference|prop:RP>). For <math|f> supported
   in <math|<around|{|\<tau\>\<gtr\>0|}>> the covariance between <math|f> and
   its mirror image factorises through the time-zero plane:
-  <math|<around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2>*<big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around|(|\<tau\>|)>\<mathd\>\<tau\>|\<\|\|\>><rsup|2>\<geq\>0>.>
+  <math|<around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2>*<big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around|(|\<tau\>|)>\<mathd\>\<tau\>|\<\|\|\>><rsup|2>\<geqslant\>0>.>
 
   By the OS reconstruction theorem the GFF yields a Wightman theory, the free
   field of mass <math|m> of Section<nbsp><hlink|1.3|cqft_notes_L1.tm#sec:distrib>.
@@ -372,13 +373,13 @@
     <math|\<Sigma\><rsub|0>> be the germ <math|\<sigma\>>-algebra of
     <math|<around|{|\<tau\>=0|}>>. For the GFF it is generated by the
     time-zero field (<em|sharp> Markov property), so <math|\<Theta\>> acts
-    trivially on it. If <math|F> is <math|\<Sigma\><rsub|<around|{|\<tau\>\<geq\>0|}>>>-measurable,
-    then <math|\<Theta\>*F> is <math|\<Sigma\><rsub|<around|{|\<tau\>\<leq\>0|}>>>-measurable
+    trivially on it. If <math|F> is <math|\<Sigma\><rsub|<around|{|\<tau\>\<geqslant\>0|}>>>-measurable,
+    then <math|\<Theta\>*F> is <math|\<Sigma\><rsub|<around|{|\<tau\>\<leqslant\>0|}>>>-measurable
     and <math|\<bbb-E\>*<around|[|\<Theta\>*F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>=\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>>,
     so the Markov property gives
 
     <\equation*>
-      \<bbb-E\>*<around*|[|<wide|\<Theta\>*F|\<bar\>>*<space|0.17em>F|]>=\<bbb-E\><around*|[|<wide|\<bbb-E\>*<around|[|\<Theta\>*F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\<bar\>><space|0.17em>\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|]>=\<bbb-E\><around*|[|<around|\||\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\|><rsup|2>|]>\<geq\>0.
+      \<bbb-E\>*<around*|[|<wide|\<Theta\>*F|\<bar\>>*<space|0.17em>F|]>=\<bbb-E\><around*|[|<wide|\<bbb-E\>*<around|[|\<Theta\>*F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\<bar\>><space|0.17em>\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|]>=\<bbb-E\><around*|[|<around|\||\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\|><rsup|2>|]>\<geqslant\>0.
     </equation*>
 
     Sharpness is essential: the fourth-order field with covariance
@@ -439,8 +440,9 @@
     lattice this is the random walk representation of Brydges, Fröhlich and
     Spencer<nbsp><cite|BFS82>, the basis of one of the proofs of triviality
     of <math|\<varphi\><rsup|4><rsub|d>> for <math|d\<gtr\>4>. Heuristically,
-    the interaction becomes ineffective in the continuum for <math|d\<geq\>4>
-    because two independent Brownian paths do not intersect there.
+    the interaction becomes ineffective in the continuum for
+    <math|d\<geqslant\>4> because two independent Brownian paths do not
+    intersect there.
 
     The modern continuum version is the <em|Brownian loop soup> of Lawler and
     Werner<nbsp><cite|LW04>, a Poisson process of unrooted Brownian loops
@@ -488,14 +490,14 @@
     <math|\<rho\>=\<delta\><rsub|m<rsup|2>>>. Three consequences follow.
 
     (i) <em|Short distances.> <math|G<rsub|M><around|(|x|)>> is decreasing in
-    <math|M>, and for <math|d\<geq\>2> we have
+    <math|M>, and for <math|d\<geqslant\>2> we have
     <math|G<rsub|M><around|(|x|)>/G<rsub|m><around|(|x|)>\<to\>1> as
     <math|x\<to\>0>, for every <math|M>. Hence, for every <math|K>,
-    <math|S<rsup|T><rsub|2><around|(|x|)>\<geq\>\<rho\><around|(|<around|[|0,K<rsup|2>|]>|)>*<space|0.17em>G<rsub|K><around|(|x|)>>,
+    <math|S<rsup|T><rsub|2><around|(|x|)>\<geqslant\>\<rho\><around|(|<around|[|0,K<rsup|2>|]>|)>*<space|0.17em>G<rsub|K><around|(|x|)>>,
     and, if <math|\<rho\>\<neq\>0>,
 
     <\equation*>
-      liminf<rsub|x\<to\>0> <frac|S<rsub|2><rsup|T><around|(|x|)>|G<rsub|m><around|(|x|)>>\<geq\>\<rho\><around|(|<around|[|0,\<infty\>|)>|)>\<in\><around|(|0,\<infty\>|]>.
+      liminf<rsub|x\<to\>0> <frac|S<rsub|2><rsup|T><around|(|x|)>|G<rsub|m><around|(|x|)>>\<geqslant\>\<rho\><around|(|<around|[|0,\<infty\>|)>|)>\<in\><around|(|0,\<infty\>|]>.
     </equation*>
 
     The two-point function of any nontrivial theory is at least as singular
@@ -520,14 +522,15 @@
     and <math|<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*M<rsup|-2>\<less\>\<infty\>>,
     the Gaussian measure on <math|\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d>|)>>
     with covariance <math|C<rsub|\<rho\>>=<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<around|(|M<rsup|2>-\<Delta\>|)><rsup|-1>>
-    satisfies the OS axioms: <math|<wide|C|^><rsub|\<rho\>>\<leq\><wide|C|^><rsub|\<rho\>><around|(|0|)>=<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*M<rsup|-2>>
+    satisfies the OS axioms: <math|<wide|C|^><rsub|\<rho\>>\<leqslant\><wide|C|^><rsub|\<rho\>><around|(|0|)>=<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*M<rsup|-2>>
     is bounded, which gives (OS1) with <math|p=2>, and reflection positivity
     follows from Proposition<nbsp><reference|prop:RP> for each mass
-    <math|M\<gtr\>0> and <math|\<rho\>\<geq\>0>. (If only the first condition
-    holds, the measure may still exist and satisfy the other axioms, but
-    (OS1) in the form of Lecture<nbsp>1 can fail: for the massless field in
-    <math|d\<geq\>3>, <math|f=\<mathi\>g> with <math|g\<geq\>0> supported in
-    a ball of radius <math|R> gives <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|g,C*g|\<rangle\>>>>
+    <math|M\<gtr\>0> and <math|\<rho\>\<geqslant\>0>. (If only the first
+    condition holds, the measure may still exist and satisfy the other
+    axioms, but (OS1) in the form of Lecture<nbsp>1 can fail: for the
+    massless field in <math|d\<geqslant\>3>, <math|f=\<mathi\>g> with
+    <math|g\<geqslant\>0> supported in a ball of radius <math|R> gives
+    <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|g,C*g|\<rangle\>>>>
     with <math|<around|\<langle\>|g,C*g|\<rangle\>>\<sim\>R<rsup|d+2>>.) It
     reconstructs the generalised free field of
     Exercise<nbsp><hlink|1.6|cqft_notes_L1.tm#ex:gen-free>. Its
@@ -575,8 +578,8 @@
   <hlink|(1.2)|cqft_notes_L1.tm#eq:free-field> of mass <math|m>. The Wightman
   functions are given by Wick's theorem with
   <math|W<rsub|2>=c<rsub|1><rsup|2>*W<rsub|2><rsup|<around|(|m<rsub|1>|)>>+c<rsub|2><rsup|2>*W<rsub|2><rsup|<around|(|m<rsub|2>|)>>>,
-  and all truncated functions of order <math|\<geq\>3> vanish. Physically,
-  these are <em|two species of free scalar particles>, of masses
+  and all truncated functions of order <math|\<geqslant\>3> vanish.
+  Physically, these are <em|two species of free scalar particles>, of masses
   <math|m<rsub|1>> and <math|m<rsub|2>>, both created from the vacuum by the
   same field: <math|\<varphi\><around|(|f|)>*\<Omega\>=c<rsub|1>*a<rsub|1><rsup|\<ast\>><around|(|<wide|f|~>\|<rsub|H<rsup|+><rsub|m<rsub|1>>>|)>*\<Omega\>+c<rsub|2>*a<rsub|2><rsup|\<ast\>><around|(|<wide|f|~>\|<rsub|H<rsup|+><rsub|m<rsub|2>>>|)>*\<Omega\>>.
   They do not scatter. The mass spectrum consists of the two shells
@@ -639,20 +642,21 @@
   spectral densities the converse holds<nbsp><cite|Roz82>. The Fourier
   transform of a covariance satisfying the OS axioms is
   <math|q<around|(|<around|\||k|\|><rsup|2>|)>+<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<around|(|<around|\||k|\|><rsup|2>+M<rsup|2>|)><rsup|-1>>,
-  with <math|\<rho\>\<geq\>0> and <math|q> a polynomial coming from contact
-  terms invisible to <math|\<rho\>>. If <math|deg p\<geq\>1>, then
-  <math|q=0>, since <math|1/p<around|(|s|)>\<to\>0> and the Stieltjes term
-  tends to <math|0> as <math|s\<to\>\<infty\>>. Moreover
+  with <math|\<rho\>\<geqslant\>0> and <math|q> a polynomial coming from
+  contact terms invisible to <math|\<rho\>>. If <math|deg p\<geqslant\>1>,
+  then <math|q=0>, since <math|1/p<around|(|s|)>\<to\>0> and the Stieltjes
+  term tends to <math|0> as <math|s\<to\>\<infty\>>. Moreover
   <math|s*<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<around|(|s+M<rsup|2>|)><rsup|-1>>
   increases to <math|\<rho\><around|(|<around|[|0,\<infty\>|)>|)>> as
   <math|s\<to\>\<infty\>>, while <math|s/p<around|(|s|)>\<to\>0> if <math|deg
-  p\<geq\>2>; hence <math|\<rho\>=0>, a contradiction. If <math|deg p=0>,
-  <math|<wide|C|^>> is constant. So a centred Gaussian measure satisfying the
-  OS axioms has a local Euclidean field equation iff its covariance is
-  <math|c*<around|(|M<rsup|2>-\<Delta\>|)><rsup|-1>> with <math|M\<gtr\>0>,
-  or a multiple of the identity (white noise, whose reconstructed Hilbert
-  space is <math|\<bbb-C\>*\<Omega\>>). Note that it is the covariance, not
-  <math|\<rho\>>, that matters: <math|a*<with|math-font|Bbb|1>+c*<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>>
+  p\<geqslant\>2>; hence <math|\<rho\>=0>, a contradiction. If <math|deg
+  p=0>, <math|<wide|C|^>> is constant. So a centred Gaussian measure
+  satisfying the OS axioms has a local Euclidean field equation iff its
+  covariance is <math|c*<around|(|M<rsup|2>-\<Delta\>|)><rsup|-1>> with
+  <math|M\<gtr\>0>, or a multiple of the identity (white noise, whose
+  reconstructed Hilbert space is <math|\<bbb-C\>*\<Omega\>>). Note that it is
+  the covariance, not <math|\<rho\>>, that matters:
+  <math|a*<with|math-font|Bbb|1>+c*<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>>
   with <math|a\<gtr\>0> is reflection positive and has
   <math|\<rho\>=c*\<delta\><rsub|m<rsup|2>>>, but its field equation is
   nonlocal. <em|Positivity and locality of the Euclidean field equation
@@ -710,12 +714,12 @@
   Interactions <math|<big|int>V<around|(|\<varphi\><around|(|x|)>|)>\<mathd\>x>
   and nonlinear field equations require local functions of
   <math|\<varphi\><around|(|x|)>>, but <math|\<varphi\>> is not a function
-  for <math|d\<geq\>2>. We regularise, subtract, and remove the
+  for <math|d\<geqslant\>2>. We regularise, subtract, and remove the
   regularisation. The subtraction is encoded in Hermite polynomials with
-  variance <math|c\<geq\>0>,
+  variance <math|c\<geqslant\>0>,
 
   <\equation>
-    <label|eq:hermite>\<mathe\><rsup|t*a-c*t<rsup|2>/2>=<big|sum><rsub|n\<geq\>0><frac|t<rsup|n>|n!>*H<rsub|n><around|(|a;c|)>,<space|2em>H<rsub|2>=a<rsup|2>-c,<space|1em>H<rsub|3>=a<rsup|3>-3*c*a,<space|1em>H<rsub|4>=a<rsup|4>-6*c*a<rsup|2>+3*c<rsup|2>.
+    <label|eq:hermite>\<mathe\><rsup|t*a-c*t<rsup|2>/2>=<big|sum><rsub|n\<geqslant\>0><frac|t<rsup|n>|n!>*H<rsub|n><around|(|a;c|)>,<space|2em>H<rsub|2>=a<rsup|2>-c,<space|1em>H<rsub|3>=a<rsup|3>-3*c*a,<space|1em>H<rsub|4>=a<rsup|4>-6*c*a<rsup|2>+3*c<rsup|2>.
   </equation>
 
   <\lemma>
@@ -731,7 +735,7 @@
     integrability) and compare coefficients.
   </proof>
 
-  Fix an even mollifier <math|0\<leq\>\<eta\>\<in\>C<rsup|\<infty\>><rsub|c><around|(|B<around|(|0,1|)>|)>>
+  Fix an even mollifier <math|0\<leqslant\>\<eta\>\<in\>C<rsup|\<infty\>><rsub|c><around|(|B<around|(|0,1|)>|)>>
   with <math|<big|int>\<eta\>=1>, <math|\<eta\><rsub|\<varepsilon\>>=\<varepsilon\><rsup|-d>*\<eta\>*<around|(|\<cdummy\>/\<varepsilon\>|)>>
   (periodised on the torus), and let <math|\<varphi\><rsub|\<varepsilon\>>=\<eta\><rsub|\<varepsilon\>>\<ast\>\<varphi\>>,
   a smooth function. Then <math|\<bbb-E\>*<around|[|\<varphi\><rsub|\<varepsilon\>><around|(|x|)>*\<varphi\><rsub|\<delta\>><around|(|y|)>|]>=G<rsub|\<varepsilon\>,\<delta\>>*<around|(|x-y|)>>
@@ -744,10 +748,11 @@
   </equation>
 
   <\theorem>
-    <dueto|Wick powers><label|thm:wick> Let <math|n\<geq\>1> with
+    <dueto|Wick powers><label|thm:wick> Let <math|n\<geqslant\>1> with
     <math|n*<around|(|d-2|)>\<less\>d>, i.e. every <math|n> if
-    <math|d\<leq\>2>, <math|n\<leq\>2> if <math|d=3>, <math|n=1> if
-    <math|d\<geq\>4>. Then for every <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
+    <math|d\<leqslant\>2>, <math|n\<leqslant\>2> if <math|d=3>, <math|n=1> if
+    <math|d\<geqslant\>4>. Then for every
+    <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
     <math|:\<varphi\><rsup|n>:<around|(|f|)>\<assign\>lim<rsub|\<varepsilon\>\<to\>0>:\<varphi\><rsup|n><rsub|\<varepsilon\>>:<around|(|f|)>>
     exists in <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>>, is independent of
     <math|\<eta\>>, and
@@ -756,29 +761,30 @@
       <label|eq:wick-cov>\<bbb-E\>*<around*|[|:\<varphi\><rsup|n>:<around|(|f|)>:\<varphi\><rsup|k>:<around|(|g|)>|]>=\<delta\><rsub|n*k>*<space|0.17em>n!<big|iint>f<around|(|x|)>*G*<around|(|x-y|)><rsup|n>*g<around|(|y|)><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>y.
     </equation>
 
-    If instead <math|n*<around|(|d-2|)>\<geq\>d> and
-    <math|0\<leq\>f\<nequiv\>0>, then <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<to\>\<infty\>>.
+    If instead <math|n*<around|(|d-2|)>\<geqslant\>d> and
+    <math|0\<leqslant\>f\<nequiv\>0>, then
+    <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<to\>\<infty\>>.
   </theorem>
 
   <\proof>
     <em|Step<nbsp>1: a uniform bound.> Let
     <math|K<around|(|z|)>=1+log<rsub|+><around|(|1/<around|\||z|\|>|)>> if
     <math|d=2>, <math|K<around|(|z|)>=1+<around|\||z|\|><rsup|2-d>> if
-    <math|d\<geq\>3>, <math|K\<equiv\>1> if <math|d=1>. Then
-    <math|0\<less\>G\<leq\>C<rsub|0>*K>, and we claim
-    <math|G<rsub|\<varepsilon\>,\<delta\>>\<leq\>C*K> uniformly in
+    <math|d\<geqslant\>3>, <math|K\<equiv\>1> if <math|d=1>. Then
+    <math|0\<less\>G\<leqslant\>C<rsub|0>*K>, and we claim
+    <math|G<rsub|\<varepsilon\>,\<delta\>>\<leqslant\>C*K> uniformly in
     <math|\<varepsilon\>,\<delta\>\<in\><around|(|0,1|]>>. Let <math|r=max
     <around|(|\<varepsilon\>,\<delta\>|)>>. Then
     <math|<math-up|supp><around|(|\<eta\><rsub|\<varepsilon\>>\<ast\>\<eta\><rsub|\<delta\>>|)>\<subset\>B<around|(|0,2*r|)>>,
     <math|<big|int>\<eta\><rsub|\<varepsilon\>>\<ast\>\<eta\><rsub|\<delta\>>=1>
-    and <math|<around|\<\|\|\>|\<eta\><rsub|\<varepsilon\>>\<ast\>\<eta\><rsub|\<delta\>>|\<\|\|\>><rsub|\<infty\>>\<leq\>r<rsup|-d><around|\<\|\|\>|\<eta\>|\<\|\|\>><rsub|\<infty\>>>.
-    If <math|<around|\||z|\|>\<geq\>4*r>, then
-    <math|G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<leq\>sup<rsub|<around|\||w|\|>\<geq\><around|\||z|\|>/2>
-    G<around|(|w|)>\<leq\>C<rsub|0>*K*<around|(|z/2|)>\<leq\>C*K<around|(|z|)>>.
+    and <math|<around|\<\|\|\>|\<eta\><rsub|\<varepsilon\>>\<ast\>\<eta\><rsub|\<delta\>>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>r<rsup|-d><around|\<\|\|\>|\<eta\>|\<\|\|\>><rsub|\<infty\>>>.
+    If <math|<around|\||z|\|>\<geqslant\>4*r>, then
+    <math|G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<leqslant\>sup<rsub|<around|\||w|\|>\<geqslant\><around|\||z|\|>/2>
+    G<around|(|w|)>\<leqslant\>C<rsub|0>*K*<around|(|z/2|)>\<leqslant\>C*K<around|(|z|)>>.
     If <math|<around|\||z|\|>\<less\>4*r>, then
 
     <\equation*>
-      G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<leq\><around|\<\|\|\>|\<eta\>|\<\|\|\>><rsub|\<infty\>>*<space|0.17em>r<rsup|-d>*<big|int><rsub|B<around|(|0,6*r|)>>G\<leq\>C*<frac|1|<around|\||B<around|(|0,6*r|)>|\|>>*<big|int><rsub|B<around|(|0,6*r|)>>K\<leq\>C*K<around|(|r|)>\<leq\>C<rprime|'>*K<around|(|z|)>.
+      G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<leqslant\><around|\<\|\|\>|\<eta\>|\<\|\|\>><rsub|\<infty\>>*<space|0.17em>r<rsup|-d>*<big|int><rsub|B<around|(|0,6*r|)>>G\<leqslant\>C*<frac|1|<around|\||B<around|(|0,6*r|)>|\|>>*<big|int><rsub|B<around|(|0,6*r|)>>K\<leqslant\>C*K<around|(|r|)>\<leqslant\>C<rprime|'>*K<around|(|z|)>.
     </equation*>
 
     <em|Step<nbsp>2: convergence.> By Lemma<nbsp><reference|lem:hermite> and
@@ -792,27 +798,27 @@
     <math|G<rsub|\<varepsilon\>,\<delta\>><around|(|z|)>\<to\>G<around|(|z|)>>
     for <math|z\<neq\>0>. Moreover <math|K<rsup|n>\<in\>L<rsup|1><rsub|<math-up|loc>>>
     iff <math|n*<around|(|d-2|)>\<less\>d>, and <math|K> is bounded on
-    <math|<around|{|<around|\||z|\|>\<geq\>1|}>>. Since
+    <math|<around|{|<around|\||z|\|>\<geqslant\>1|}>>. Since
     <math|f,g\<in\>L<rsup|1>\<cap\>L<rsup|\<infty\>>>, dominated convergence
     gives <math|\<bbb-E\><around|[||(>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>)<rsup|2>]=n!<big|iint>f*f*<space|0.17em><around|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>\<to\>0>:
     the sequence is Cauchy in <math|L<rsup|2>>. The limit covariance
     is<nbsp><eqref|eq:wick-cov>. Running the same computation with two
     different mollifiers shows independence of <math|\<eta\>>.
-    <em|Step<nbsp>3: divergence.> If <math|n*<around|(|d-2|)>\<geq\>d>, then
-    <math|G<rsup|n>\<geq\>c<around|\||z|\|><rsup|-n*<around|(|d-2|)>>> is not
-    locally integrable, and Fatou's lemma gives <math|liminf
-    \<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<geq\>n!<big|iint>f*f*G<rsup|n>=\<infty\>>.
+    <em|Step<nbsp>3: divergence.> If <math|n*<around|(|d-2|)>\<geqslant\>d>,
+    then <math|G<rsup|n>\<geqslant\>c<around|\||z|\|><rsup|-n*<around|(|d-2|)>>>
+    is not locally integrable, and Fatou's lemma gives <math|liminf
+    \<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<geqslant\>n!<big|iint>f*f*G<rsup|n>=\<infty\>>.
   </proof>
 
   <\remark>
     (i) The subtraction of <math|c<rsub|\<varepsilon\>>\<to\>\<infty\>> is
     the simplest instance of renormalisation:
     <math|\<varphi\><rsub|\<varepsilon\>><around|(|x|)><rsup|n>> itself has
-    no limit when <math|d\<geq\>2>. (ii) The variables
+    no limit when <math|d\<geqslant\>2>. (ii) The variables
     <math|:\<varphi\><rsup|n>:<around|(|f|)>> belong to the <math|n>-th
     Wiener chaos, and <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>\<simeq\><big|oplus><rsub|n>\<cal-H\><rsub|n>>
     is the symmetric Fock space over <math|H<rsup|-1><around|(|\<cal-M\>|)>><nbsp><cite|Jan97>.
-    By Nelson's hypercontractivity, <math|<around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|p>>\<leq\><around|(|p-1|)><rsup|n/2><around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|2>>>
+    By Nelson's hypercontractivity, <math|<around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\><around|(|p-1|)><rsup|n/2><around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|2>>>
     for <math|X\<in\>\<cal-H\><rsub|n>>, so the convergence holds in every
     <math|L<rsup|p>>. A Kolmogorov-type argument gives convergence in
     <math|C<rsup|-\<kappa\>>> for <math|d=2>. (iii) In <math|d=2> on
@@ -831,23 +837,24 @@
   </remark>
 
   <paragraph|Beyond <math|L<rsup|2>>: no random distribution> When
-  <math|n*<around|(|d-2|)>\<geq\>d> the divergence in
+  <math|n*<around|(|d-2|)>\<geqslant\>d> the divergence in
   Theorem<nbsp><reference|thm:wick> is not an artefact of the
   <math|L<rsup|2>> norm: no other topology, and no other choice of
   probability space, can rescue the limit. Albeverio and
   Liang<nbsp><cite|AL07> showed this for the Wick square in <math|d=4>, and
-  remarked that the argument extends to <math|d\<geq\>5>:
+  remarked that the argument extends to <math|d\<geqslant\>5>:
   <math|:\<varphi\><rsup|2>:<around|(|f|)>> is well defined as a Hida
   distribution, i.e. as a generalised functional of white noise, but for
   <math|f\<gtr\>0> the characteristic functions of its Fourier-cutoff
   approximations do not converge to a characteristic function (the natural
-  candidate vanishes), so it is not a random variable. For <math|d\<leq\>3>,
-  instead, it is a random variable, and an infinitely divisible one. The
-  following argument is independent and covers all Wick powers.
+  candidate vanishes), so it is not a random variable. For
+  <math|d\<leqslant\>3>, instead, it is a random variable, and an infinitely
+  divisible one. The following argument is independent and covers all Wick
+  powers.
 
   <\proposition>
-    <label|prop:no-wick>Let <math|n*<around|(|d-2|)>\<geq\>d> and
-    <math|0\<leq\>f\<nequiv\>0>. Then the family
+    <label|prop:no-wick>Let <math|n*<around|(|d-2|)>\<geqslant\>d> and
+    <math|0\<leqslant\>f\<nequiv\>0>. Then the family
     <math|(:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>)<rsub|\<varepsilon\>\<in\><around|(|0,1|]>>>
     is not tight. In particular there is no random distribution
     <math|\<Psi\>>, on any probability space, such that
@@ -861,27 +868,27 @@
     and <math|\<sigma\><rsub|\<varepsilon\>><rsup|2>=\<bbb-E\>*X<rsub|\<varepsilon\>><rsup|2>>,
     so that <math|\<sigma\><rsub|\<varepsilon\>>\<to\>\<infty\>> by
     Theorem<nbsp><reference|thm:wick>. The <em|Paley\UZygmund
-    inequality><nbsp><cite|PZ32> states that for <math|Z\<geq\>0> with
+    inequality><nbsp><cite|PZ32> states that for <math|Z\<geqslant\>0> with
     <math|\<bbb-E\>*Z<rsup|2>\<less\>\<infty\>> and
     <math|\<theta\>\<in\><around|[|0,1|]>>,
 
     <\equation*>
-      \<bbb-P\>*<around|(|Z\<gtr\>\<theta\>*<space|0.17em>\<bbb-E\>*Z|)>\<geq\><around|(|1-\<theta\>|)><rsup|2>*<frac|<around|(|\<bbb-E\>*Z|)><rsup|2>|\<bbb-E\>*Z<rsup|2>>.
+      \<bbb-P\>*<around|(|Z\<gtr\>\<theta\>*<space|0.17em>\<bbb-E\>*Z|)>\<geqslant\><around|(|1-\<theta\>|)><rsup|2>*<frac|<around|(|\<bbb-E\>*Z|)><rsup|2>|\<bbb-E\>*Z<rsup|2>>.
     </equation*>
 
-    (Proof: <math|\<bbb-E\>*Z\<leq\>\<theta\>*\<bbb-E\>*Z+\<bbb-E\>*<around|[|Z*<with|math-font|Bbb|1><rsub|Z\<gtr\>\<theta\>*\<bbb-E\>*Z>|]>\<leq\>\<theta\>*\<bbb-E\>*Z+<around|(|\<bbb-E\>*Z<rsup|2>|)><rsup|1/2>*\<bbb-P\>*<around|(|Z\<gtr\>\<theta\>*\<bbb-E\>*Z|)><rsup|1/2>>
+    (Proof: <math|\<bbb-E\>*Z\<leqslant\>\<theta\>*\<bbb-E\>*Z+\<bbb-E\>*<around|[|Z*<with|math-font|Bbb|1><rsub|Z\<gtr\>\<theta\>*\<bbb-E\>*Z>|]>\<leqslant\>\<theta\>*\<bbb-E\>*Z+<around|(|\<bbb-E\>*Z<rsup|2>|)><rsup|1/2>*\<bbb-P\>*<around|(|Z\<gtr\>\<theta\>*\<bbb-E\>*Z|)><rsup|1/2>>
     by Cauchy\USchwarz.) Apply it to <math|Z=X<rsub|\<varepsilon\>><rsup|2>>
     with <math|\<theta\>=<frac|1|4>>. Hypercontractivity with <math|p=4>
-    gives <math|\<bbb-E\>*X<rsub|\<varepsilon\>><rsup|4>\<leq\>9<rsup|n>*\<sigma\><rsub|\<varepsilon\>><rsup|4>>,
+    gives <math|\<bbb-E\>*X<rsub|\<varepsilon\>><rsup|4>\<leqslant\>9<rsup|n>*\<sigma\><rsub|\<varepsilon\>><rsup|4>>,
     so
 
     <\equation*>
-      \<bbb-P\>*<around*|(|<around|\||X<rsub|\<varepsilon\>>|\|>\<gtr\><tfrac|1|2>\<sigma\><rsub|\<varepsilon\>>|)>\<geq\><tfrac|9|16><space|0.17em>9<rsup|-n>=:c<rsub|n>\<gtr\>0.
+      \<bbb-P\>*<around*|(|<around|\||X<rsub|\<varepsilon\>>|\|>\<gtr\><tfrac|1|2>\<sigma\><rsub|\<varepsilon\>>|)>\<geqslant\><tfrac|9|16><space|0.17em>9<rsup|-n>=:c<rsub|n>\<gtr\>0.
     </equation*>
 
     Given <math|R\<gtr\>0>, for <math|\<varepsilon\>> small enough
     <math|<frac|1|2>*\<sigma\><rsub|\<varepsilon\>>\<gtr\>R> and hence
-    <math|\<bbb-P\>*<around|(|<around|\||X<rsub|\<varepsilon\>>|\|>\<gtr\>R|)>\<geq\>c<rsub|n>>:
+    <math|\<bbb-P\>*<around|(|<around|\||X<rsub|\<varepsilon\>>|\|>\<gtr\>R|)>\<geqslant\>c<rsub|n>>:
     the family is not tight. If <math|:\<varphi\><rsub|\<varepsilon\><rsub|k>><rsup|n>:\<to\>\<Psi\>>
     in law in <math|\<cal-S\><rprime|'>>, then
     <math|X<rsub|\<varepsilon\><rsub|k>>\<to\>\<Psi\><around|(|f|)>> in law,
@@ -891,24 +898,24 @@
   <\remark>
     <dueto|The law of a bounded chaos is controlled by its <math|L<rsup|2>>
     norm><label|rem:chaos-norms>Let <math|X> be in the bounded chaos
-    <math|<big|oplus><rsub|k\<leq\>n>\<cal-H\><rsub|k>>, e.g. a polynomial of
-    degree <math|\<leq\>n> in finitely many Gaussian variables. Three
-    inequalities control its law in terms of
+    <math|<big|oplus><rsub|k\<leqslant\>n>\<cal-H\><rsub|k>>, e.g. a
+    polynomial of degree <math|\<leqslant\>n> in finitely many Gaussian
+    variables. Three inequalities control its law in terms of
     <math|\<sigma\>=<around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|2>>> alone, with
     constants that depend only on <math|n>:
 
     <\itemize>
       <item><em|upper tails> (hypercontractivity<nbsp><cite|Jan97>):
-      <math|<around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|p>>\<leq\><around|(|p-1|)><rsup|n/2>*\<sigma\>>,
-      hence <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<gtr\>t*\<sigma\>|)>\<leq\>exp
+      <math|<around|\<\|\|\>|X|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\><around|(|p-1|)><rsup|n/2>*\<sigma\>>,
+      hence <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<gtr\>t*\<sigma\>|)>\<leqslant\>exp
       <around|(|-c*<space|0.17em>t<rsup|2/n>|)>> for
-      <math|t\<geq\>t<rsub|0>>;
+      <math|t\<geqslant\>t<rsub|0>>;
 
       <item><em|no escape to zero> (Paley\UZygmund):
-      <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<gtr\><frac|1|2>*\<sigma\>|)>\<geq\>c<rsub|n>\<gtr\>0>;
+      <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<gtr\><frac|1|2>*\<sigma\>|)>\<geqslant\>c<rsub|n>\<gtr\>0>;
 
       <item><em|anti-concentration> (Carbery\UWright<nbsp><cite|CW01>):
-      <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<leq\>t*\<sigma\>|)>\<leq\>C*<space|0.17em>n*<space|0.17em>t<rsup|1/n>>
+      <math|\<bbb-P\>*<around|(|<around|\||X|\|>\<leqslant\>t*\<sigma\>|)>\<leqslant\>C*<space|0.17em>n*<space|0.17em>t<rsup|1/n>>
       for <math|t\<gtr\>0>.
     </itemize>
 
@@ -925,9 +932,9 @@
     <math|n>-th power. The fourth moment theorem<nbsp><cite|NP05>
     characterises such Gaussian limits within a fixed chaos, and a central
     limit theorem of this kind for the lattice <math|:\<varphi\><rsup|4>>: in
-    <math|d\<geq\>3> is proved in<nbsp><cite|AZ96>. In particular, in
-    <math|d\<geq\>4> no Wick power with <math|n\<geq\>2> exists as a random
-    distribution, so under the GFF the interaction
+    <math|d\<geqslant\>3> is proved in<nbsp><cite|AZ96>. In particular, in
+    <math|d\<geqslant\>4> no Wick power with <math|n\<geqslant\>2> exists as
+    a random distribution, so under the GFF the interaction
     <math|<big|int>:\<varphi\><rsup|4>>: cannot even be written down.
 
     <em|Acknowledgement.> I thank Ilya Chevyrev and Emilio Ferrucci for
@@ -1171,10 +1178,10 @@
     and derive<nbsp><eqref|eq:KL-euclid> from
     <hlink|(1.4)|cqft_notes_L1.tm#eq:KL>. (b) Show that
     <math|G<rsub|M><around|(|x|)>> is decreasing in <math|M> and, for
-    <math|d\<geq\>2>, that <math|G<rsub|M><around|(|x|)>/G<rsub|m><around|(|x|)>\<to\>1>
+    <math|d\<geqslant\>2>, that <math|G<rsub|M><around|(|x|)>/G<rsub|m><around|(|x|)>\<to\>1>
     as <math|x\<to\>0>. Prove the lower bound in
-    Remark<nbsp><reference|rem:KL-euclid>(i). (c) Let <math|d\<geq\>3> and
-    suppose <math|S<rsub|2><rsup|T><around|(|x|)>=<around|\||x|\|><rsup|-2*\<Delta\><rsub|\<varphi\>>>>
+    Remark<nbsp><reference|rem:KL-euclid>(i). (c) Let <math|d\<geqslant\>3>
+    and suppose <math|S<rsub|2><rsup|T><around|(|x|)>=<around|\||x|\|><rsup|-2*\<Delta\><rsub|\<varphi\>>>>
     (a scale invariant theory; the scaling dimension
     <math|\<Delta\><rsub|\<varphi\>>> is not the Laplacian). Using
     <math|G<rsub|M><around|(|x|)>=M<rsup|d-2>*G<rsub|1>*<around|(|M*x|)>>,
@@ -1183,31 +1190,32 @@
     <math|<frac|d-2|2>\<less\>\<Delta\><rsub|\<varphi\>>\<less\><frac|d|2>>,
     and that this is a locally finite measure iff
     <math|\<Delta\><rsub|\<varphi\>>\<gtr\><frac|d-2|2>> (for
-    <math|\<Delta\><rsub|\<varphi\>>\<geq\><frac|d|2>>,
+    <math|\<Delta\><rsub|\<varphi\>>\<geqslant\><frac|d|2>>,
     <math|S<rsub|2><rsup|T>> is not locally integrable). Using uniqueness of
     the Stieltjes transform, deduce the unitarity bound
-    <math|\<Delta\><rsub|\<varphi\>>\<geq\><frac|d-2|2>>, with equality iff
-    <math|\<rho\>\<propto\>\<delta\><rsub|0>>, the massless free field.
+    <math|\<Delta\><rsub|\<varphi\>>\<geqslant\><frac|d-2|2>>, with equality
+    iff <math|\<rho\>\<propto\>\<delta\><rsub|0>>, the massless free field.
   </exercise>
 
   <\exercise>
     <dueto|Regularity is sharp><label|ex:regularity> (a) For
-    <math|a<rsub|n>\<geq\>0> and <math|<around|(|g<rsub|n>|)>> i.i.d.
+    <math|a<rsub|n>\<geqslant\>0> and <math|<around|(|g<rsub|n>|)>> i.i.d.
     <math|N<around|(|0,1|)>>, show that <math|\<bbb-E\><space|0.17em>\<mathe\><rsup|-<big|sum><rsub|n>a<rsub|n>*g<rsub|n><rsup|2>>=<big|prod><rsub|n><around|(|1+2*a<rsub|n>|)><rsup|-1/2>>.
     Deduce that <math|<big|sum><rsub|n>a<rsub|n>*g<rsub|n><rsup|2>\<less\>\<infty\>>
     a.s. iff <math|<big|sum><rsub|n>a<rsub|n>\<less\>\<infty\>>. (b) Conclude
     that <math|\<mu\><rsub|m><around|(|H<rsup|-s><around|(|\<bbb-T\><rsup|d><rsub|L>|)>|)>=1>
     iff <math|s\<gtr\><frac|d|2>-1>. In particular
-    <math|\<mu\><rsub|m><around|(|L<rsup|2>|)>=0> for <math|d\<geq\>2>, and
-    the Cameron\UMartin space <math|H<rsup|1>> is <math|\<mu\><rsub|m>>-null
-    in every dimension. (c<rsup|<math|\<star\>>>) Using hypercontractivity
-    and a Kolmogorov argument, show that <math|\<varphi\>\<in\>C<rsup|1-d/2-\<kappa\>>>
-    a.s. for every <math|\<kappa\>\<gtr\>0>.
+    <math|\<mu\><rsub|m><around|(|L<rsup|2>|)>=0> for <math|d\<geqslant\>2>,
+    and the Cameron\UMartin space <math|H<rsup|1>> is
+    <math|\<mu\><rsub|m>>-null in every dimension. (c<rsup|<math|\<star\>>>)
+    Using hypercontractivity and a Kolmogorov argument, show that
+    <math|\<varphi\>\<in\>C<rsup|1-d/2-\<kappa\>>> a.s. for every
+    <math|\<kappa\>\<gtr\>0>.
   </exercise>
 
   <\exercise>
     <dueto|Hermite calculus and change of renormalisation>(a) Show that
-    <math|H<rsub|n><around|(|a;c|)>=<big|sum><rsub|k\<leq\>n/2><frac|n!|k!<space|0.17em><around|(|n-2*k|)>!>*<around*|(|-<frac|c|2>|)><rsup|k>*a<rsup|n-2*k>>,
+    <math|H<rsub|n><around|(|a;c|)>=<big|sum><rsub|k\<leqslant\>n/2><frac|n!|k!<space|0.17em><around|(|n-2*k|)>!>*<around*|(|-<frac|c|2>|)><rsup|k>*a<rsup|n-2*k>>,
     <math|\<partial\><rsub|a>*H<rsub|n>=n*H<rsub|n-1>> and
     <math|a*H<rsub|n>=H<rsub|n+1>+n*c*H<rsub|n-1>>. (b) Show that
     <math|H<rsub|n><around|(|a+b;c+c<rprime|'>|)>=<big|sum><rsub|k><binom|n|k>H<rsub|k><around|(|a;c|)>*H<rsub|n-k><around|(|b;c<rprime|'>|)>>.
@@ -1222,10 +1230,10 @@
     <math|c<rsub|\<varepsilon\>>=<frac|1|2*\<pi\>>*log
     <frac|1|\<varepsilon\>>+O<around|(|1|)>> for <math|d=2> and
     <math|c<rsub|\<varepsilon\>>\<asymp\>\<varepsilon\><rsup|2-d>> for
-    <math|d\<geq\>3>. (b) In <math|d=3>, show that
+    <math|d\<geqslant\>3>. (b) In <math|d=3>, show that
     <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|3>:<around|(|f|)><rsup|2>]\<asymp\>log
-    <frac|1|\<varepsilon\>>> for <math|0\<leq\>f\<nequiv\>0>: the cube is
-    borderline divergent. (c) In <math|d=4>, show that
+    <frac|1|\<varepsilon\>>> for <math|0\<leqslant\>f\<nequiv\>0>: the cube
+    is borderline divergent. (c) In <math|d=4>, show that
     <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|2>:<around|(|f|)><rsup|2>]\<asymp\>log
     <frac|1|\<varepsilon\>>> as well.
   </exercise>
@@ -1242,8 +1250,8 @@
     and deduce that <math|:\<mathe\><rsup|\<mathi\>\<beta\>*\<varphi\><rsub|\<varepsilon\>>>:<around|(|f|)>>
     converges in <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>> for every
     <math|f> if <math|\<beta\><rsup|2>\<less\>4*\<pi\>>, while its second
-    moment diverges for <math|0\<leq\>f\<nequiv\>0> if
-    <math|\<beta\><rsup|2>\<geq\>4*\<pi\>>. What changes for the real
+    moment diverges for <math|0\<leqslant\>f\<nequiv\>0> if
+    <math|\<beta\><rsup|2>\<geqslant\>4*\<pi\>>. What changes for the real
     exponential <math|:\<mathe\><rsup|\<alpha\>*\<varphi\>>>:? (Gaussian
     multiplicative chaos exists in <math|L<rsup|1>> for
     <math|\<alpha\><rsup|2>\<less\>8*\<pi\>>, see<nbsp><cite|BP25>.)
@@ -1343,11 +1351,11 @@
     and find <math|f> supported in <math|<around|{|\<tau\>\<gtr\>0|}>> with
     <math|<around|\<langle\>|\<Theta\>*f,P<rsup|-1>*f|\<rangle\>>\<less\>0>.
     <em|Hint:> choose <math|g> with <math|<big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<omega\><rsub|1>*\<tau\>>g<around|(|\<tau\>|)>\<mathd\>\<tau\>=0>.
-    (e) Let <math|p> be a real polynomial of degree <math|\<geq\>2>, positive
-    on <math|<around|[|0,\<infty\>|)>>. Show that
+    (e) Let <math|p> be a real polynomial of degree <math|\<geqslant\>2>,
+    positive on <math|<around|[|0,\<infty\>|)>>. Show that
     <math|1/p<around|(|<around|\||k|\|><rsup|2>|)>> is not of the form
     <math|<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<around|(|<around|\||k|\|><rsup|2>+M<rsup|2>|)><rsup|-1>>
-    with <math|\<rho\>\<geq\>0>. <em|Hint:>
+    with <math|\<rho\>\<geqslant\>0>. <em|Hint:>
     <math|s*<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<around|(|s+M<rsup|2>|)><rsup|-1>>
     increases to <math|\<rho\><around|(|<around|[|0,\<infty\>|)>|)>> as
     <math|s\<to\>\<infty\>> (monotone convergence), while
@@ -1388,7 +1396,7 @@
 
     <bibitem*|AL07><label|bib-AL07>S.<nbsp>Albeverio, S.<nbsp>Liang. A note
     on the renormalized square of free quantum fields in space-time dimension
-    <math|d\<geq\>4>. <em|Bull. Sci. Math.> 131 (2007), 1\U11.
+    <math|d\<geqslant\>4>. <em|Bull. Sci. Math.> 131 (2007), 1\U11.
 
     <bibitem*|ALZ06><label|bib-ALZ06>S.<nbsp>Albeverio, S.<nbsp>Liang,
     B.<nbsp>Zegarlinski. Remark on the integration by parts formula for the
@@ -2040,7 +2048,7 @@
       For <with|mode|<quote|math>|f> supported in
       <with|mode|<quote|math>|<around|{|\<tau\>\<gtr\>0|}>> the covariance
       between <with|mode|<quote|math>|f> and its mirror image factorises
-      through the time-zero plane: <with|mode|<quote|math>|<around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2>*<big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around|(|\<tau\>|)>\<mathd\>\<tau\>|\<\|\|\>><rsup|2>\<geq\>0>.>|<pageref|auto-6>>
+      through the time-zero plane: <with|mode|<quote|math>|<around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2>*<big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around|(|\<tau\>|)>\<mathd\>\<tau\>|\<\|\|\>><rsup|2>\<geqslant\>0>.>|<pageref|auto-6>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>

@@ -281,13 +281,13 @@
       </div>
       <h5>Conventions.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        \(\hbar = c = 1\). Spacetime dimension is \(d = 1 + s\), \(s \geq 1\)
-        the number of space dimensions. Inner products \(\langle f, g \rangle
-        = \int \bar{f} g\) are antilinear in the first slot. For \(f \in
-        \mathcal{S} (\mathbb{R}^n)\), \(\hat{f} (k) = \int \mathrm{e}^{-
-        \mathrm{i} k \cdot x} f (x) \hspace{0.17em}
-\mathrm{d} x\). Constants
-        \(C\) may change from line to line.
+        \(\hbar = c = 1\). Spacetime dimension is \(d = 1 + s\), \(s
+        \geqslant 1\) the number of space dimensions. Inner products \(\langle
+        f, g \rangle = \int \bar{f} g\) are antilinear in the first slot. For
+        \(f \in \mathcal{S} (\mathbb{R}^n)\), \(\hat{f} (k) = \int
+        \mathrm{e}^{- \mathrm{i} k \cdot x} f (x) \hspace{0.17em}
+\mathrm{d}
+        x\). Constants \(C\) may change from line to line.
       </div>
     </p>
     <h2 id="auto-4"><a id="sec:wightman"></a>1<span style="margin-left: 1em"></span>Relativistic quantum fields in
@@ -363,7 +363,8 @@
               <p>
                 <em>Spectrum condition:</em> the joint spectrum of \((P^0,
                 \ldots, P^s)\) is contained in \(\bar{V}_{\hspace{-0.17em}
-                +}\); in particular \(H \geq | \textbf{P} | \geq 0\).
+                +}\); in particular \(H \geqslant | \textbf{P} | \geqslant
+                0\).
               </p>
               <p>
                 <em>Vacuum:</em> there is a unit vector \(\Omega\), unique up
@@ -423,8 +424,8 @@
             <dd>
               <p>
                 The span of \(\{\varphi (f_1) \cdots \varphi (f_n) \Omega :
-                \hspace{0.17em} n \geq 0, f_j
-\in
+                \hspace{0.17em} n \geqslant 0,
+f_j \in
                 \mathcal{S}(\mathbb{R}^d)\}\) is dense in \(\mathcal{H}\).
               </p>
             </dd>
@@ -437,8 +438,8 @@
       \mathrm{d} x\), and \(\varphi (x^0, \textbf{x}) = \mathrm{e}^{\mathrm{i}
       Hx^0} \varphi (0,
 \textbf{x}) \mathrm{e}^{- \mathrm{i} Hx^0}\) is the
-      Heisenberg-picture field. For \(d \geq 3\), Lorentz invariance of the
-      vacuum follows from translation invariance and uniqueness: \(U (0,
+      Heisenberg-picture field. For \(d \geqslant 3\), Lorentz invariance of
+      the vacuum follows from translation invariance and uniqueness: \(U (0,
       \Lambda) \Omega\) is translation invariant, hence equal to \(\chi
       (\Lambda) \Omega\) for a character \(\chi\) of
       \(\mathcal{L}^{\uparrow}_+\), and \(\chi \equiv 1\) because
@@ -460,7 +461,7 @@
       extend, by the Schwartz kernel theorem, to tempered distributions \(W_n
       \in \mathcal{S}' (\mathbb{R}^{dn})\). They satisfy: (a)
       <em>positivity</em>: \(\sum_{j, k} W_{j + k}  (g_j^{\ast} \otimes g_k)
-      \geq 0\) for every finite sequence \(g_j \in \mathcal{S}
+      \geqslant 0\) for every finite sequence \(g_j \in \mathcal{S}
       (\mathbb{R}^{dj})\), with \(g^{\ast} (x_1, \ldots, x_j) = \overline{g
       (x_j, \ldots, x_1)}\); (b) <em>Poincar&eacute; invariance</em>; (c)
       <em>spectral condition</em>: \(W_n (x_1, \ldots, x_n) = w_n (x_1 - x_2,
@@ -474,7 +475,7 @@
       <p style="margin-top: 1em; margin-bottom: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">1.2</class>. </strong><i><class
         style="font-style: normal"><strong>(Wightman reconstruction [<a href="#bib-SW64">SW64</a>])
-        </strong></class>Any sequence \((W_n)_{n \geq 0}\) of tempered
+        </strong></class>Any sequence \((W_n)_{n \geqslant 0}\) of tempered
         distributions with \(W_0 = 1\) satisfying (a)&ndash;(d) is the
         sequence of Wightman functions of a theory satisfying (W1)&ndash;(W4)
         and (W0) except possibly uniqueness of the vacuum, unique up to
@@ -678,10 +679,10 @@
     </table>
     <p>
       But formally \(\| \varphi (x) \Omega \|^2 = W_2 (0) = \int \mathrm{d}
-      \Omega_m = + \infty\) for \(s \geq 1\): field fluctuations at a point
-      are infinite. The divergence is ultraviolet (large momenta). It is
-      logarithmic for \(s = 1\) and power-like for \(s \geq 2\). This is not
-      an artefact of the free field.
+      \Omega_m = + \infty\) for \(s \geqslant 1\): field fluctuations at a
+      point are infinite. The divergence is ultraviolet (large momenta). It is
+      logarithmic for \(s = 1\) and power-like for \(s \geqslant 2\). This is
+      not an artefact of the free field.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
@@ -700,8 +701,8 @@
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
         <strong class="enunciation-name">Lemma <class style="font-style: normal">1.7</class>. </strong><i><a id="lem:finite-inv"></a>Let
-        \(d \geq 2\) and let \(\mu\) be a finite positive Borel measure on
-        \(\bar{V}_{\hspace{-0.17em} +}\) invariant under
+        \(d \geqslant 2\) and let \(\mu\) be a finite positive Borel measure
+        on \(\bar{V}_{\hspace{-0.17em} +}\) invariant under
         \(\mathcal{L}^{\uparrow}_+\). Then \(\mu = \mu (\{0\}) \delta_0\).</i>
       </p>
     </div>
@@ -709,16 +710,16 @@
       <strong class="enunciation-name">Proof. </strong>A boost of rapidity \(\theta\) in the
       \(x^1\) direction acts as \(p^0 \pm p^1 \mapsto \mathrm{e}^{\pm \theta}
       (p^0 \pm p^1)\), leaving the other components unchanged. Let \(S^{\pm}_j
-      = \{p \in \bar{V}_{\hspace{-0.17em} +} : \hspace{0.17em} 2^j \leq
-p^0
-      \pm p^1 < 2^{j + 1} \}\), \(j \in \mathbb{Z}\). The boost with
+      = \{p \in \bar{V}_{\hspace{-0.17em} +} : \hspace{0.17em} 2^j
+\leqslant
+      p^0 \pm p^1 < 2^{j + 1} \}\), \(j \in \mathbb{Z}\). The boost with
       \(\mathrm{e}^{\theta} = 2\) maps \(S^+_j\) onto \(S^+_{j + 1}\), so
       \(\mu (S^+_j)\) is independent of \(j\). These sets are disjoint and
       \(\mu\) is finite, so \(\mu (S^+_j) = 0\). The same argument applies to
       \(S^-_j\). Finally \(\bigcup_j (S^+_j \cup S^-_j) =
-      \bar{V}_{\hspace{-0.17em} +} \setminus \{0\}\), since \(p^0 \pm p^1 \geq
-      0\) on \(\bar{V}_{\hspace{-0.17em} +}\) and \(p^0 + p^1 = p^0 - p^1 =
-      0\) forces \(p = 0\).<span style="margin-left: 1em"></span>\(\Box\)
+      \bar{V}_{\hspace{-0.17em} +} \setminus \{0\}\), since \(p^0 \pm p^1
+      \geqslant 0\) on \(\bar{V}_{\hspace{-0.17em} +}\) and \(p^0 + p^1 = p^0
+      - p^1 = 0\) forces \(p = 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof of Proposition <a href="#prop:nopoint">1.6</a>. </strong>By
@@ -765,15 +766,15 @@ p^0
       The free two-point function <class style="font-style: normal">(<a href="#eq:W2">1.3</a>)</class> is
       the Fourier transform of the invariant measure on the mass shell. In
       every Wightman theory the two-point function is a positive superposition
-      of such free ones. For \(M \geq 0\) let \(W_2^{(M)}\) be the two-point
-      function <class style="font-style: normal">(<a href="#eq:W2">1.3</a>)</class> of the free field of
-      mass \(M\). For \(M = 0\) and \(d \geq 3\) it is defined with the
-      invariant measure \(\mathrm{d} \Omega_0 = \mathrm{d} \textbf{p} / ((2
-      \pi)^s 2| \textbf{p} |)\) on the boundary of the cone; for \(d = 2\) the
-      measure \(\mathrm{d} p / |p|\) is not locally finite at \(p = 0\), and
-      \(W_2^{(0)}\) is not defined. By translation invariance of \(\Omega\),
-      \(\langle \Omega, \varphi (f) \Omega \rangle = v \int f\) for some \(v
-      \in \mathbb{R}\).
+      of such free ones. For \(M \geqslant 0\) let \(W_2^{(M)}\) be the
+      two-point function <class style="font-style: normal">(<a href="#eq:W2">1.3</a>)</class> of the free
+      field of mass \(M\). For \(M = 0\) and \(d \geqslant 3\) it is defined
+      with the invariant measure \(\mathrm{d} \Omega_0 = \mathrm{d} \textbf{p}
+      / ((2 \pi)^s 2| \textbf{p} |)\) on the boundary of the cone; for \(d =
+      2\) the measure \(\mathrm{d} p / |p|\) is not locally finite at \(p =
+      0\), and \(W_2^{(0)}\) is not defined. By translation invariance of
+      \(\Omega\), \(\langle \Omega, \varphi (f) \Omega \rangle = v \int f\)
+      for some \(v \in \mathbb{R}\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -815,8 +816,8 @@ g\), and by
       (0, \Lambda) \Omega = \Omega\) make \(\mu\) invariant under
       \(\mathcal{L}^{\uparrow}_+\). The \(\mathcal{L}^{\uparrow}_+\)-orbits in
       \(\bar{V}_{\hspace{-0.17em} +} \setminus \{0\}\) are the hyperboloids
-      \(H^+_M\), \(M > 0\), and (for \(d \geq 3\)) the punctured boundary of
-      the cone, \(M = 0\). Each carries a unique invariant measure up to
+      \(H^+_M\), \(M > 0\), and (for \(d \geqslant 3\)) the punctured boundary
+      of the cone, \(M = 0\). Each carries a unique invariant measure up to
       normalisation, namely \(\mathrm{d} \Omega_M\). (For \(d = 2\) the two
       half-lines \(p^0 = \pm p^1 > 0\) of the cone boundary are orbits too,
       but their invariant measures \(\mathrm{d} p^{\pm} / p^{\pm}\) are not
@@ -850,8 +851,8 @@ g\), and by
     <p>
       (iii) <em>No point fields, again.</em> Formally \(W_2^T (0) = \int \rho
       (\mathrm{d} M^2)  \int \mathrm{d} \Omega_M = \infty\) for any \(\rho
-      \neq 0\) when \(d \geq 2\). The singularity at coincident points of a
-      nontrivial Wightman field is at least as strong as that of the free
+      \neq 0\) when \(d \geqslant 2\). The singularity at coincident points of
+      a nontrivial Wightman field is at least as strong as that of the free
       field. Remark <a href="cqft_notes_L2.html#rem:KL-euclid">3.7</a> gives a precise Euclidean version of this
       statement.
     </p>
@@ -859,7 +860,7 @@ g\), and by
       (iv) <em>Canonical fields and field-strength renormalisation.</em> If
       the sharp-time fields exist and satisfy the CCR <class style="font-style: normal">(<a href="#eq:CCR">1.6</a>)</class>,
       then \(\int \rho (\mathrm{d} M^2) = 1\) (Exercise <a href="#ex:sum-rule">1.5</a>).
-      Hence \(Z = \rho (\{m^2 \}) \leq 1\), with equality iff \(\rho =
+      Hence \(Z = \rho (\{m^2 \}) \leqslant 1\), with equality iff \(\rho =
       \delta_{m^2}\). The time-zero fields of \(P (\varphi)_2\) models satisfy
       the CCR [<a href="#bib-GJ87">GJ87</a>]. In \(d = 4\), perturbation theory gives
       \(\int \rho = \infty\), i.e. &ldquo;\(Z = 0\)&rdquo;: the renormalised
@@ -880,10 +881,10 @@ g\), and by
               <b>Figure 1.2. </b><a id="auto-11"></a>Typical spectral measure of an
               interacting field with mass gap (Theorem <a href="#thm:KL">1.9</a> and
               Remark <a href="#rem:KL">1.10</a>): an isolated atom at the one-particle
-              mass (\(0 < Z \leq 1\) for a canonical field), and a continuum
-              starting at \((2 m)^2\), or at \((3 m)^2\) in the presence of
-              the symmetry \(\varphi \mapsto - \varphi\). The free field has
-              \(\rho = \delta_{m^2}\).
+              mass (\(0 < Z \leqslant 1\) for a canonical field), and a
+              continuum starting at \((2 m)^2\), or at \((3 m)^2\) in the
+              presence of the symmetry \(\varphi \mapsto - \varphi\). The free
+              field has \(\rho = \delta_{m^2}\).
             </p></font>
           </div></td>
         </tr></tbody>
@@ -952,16 +953,17 @@ kx} + a_k^{\ast}
     </table>
     <p>
       The free field is an infinite collection of independent harmonic
-      oscillators, one per mode. With an ultraviolet cutoff \(|k| \leq R\),
+      oscillators, one per mode. With an ultraviolet cutoff \(|k| \leqslant
+      R\),
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:logdiv"></a>\(\displaystyle \langle \Omega, \varphi_R
-        (0, x)^2 \Omega \rangle = \sum_{|k| \leq R}
-\frac{1}{2 L \omega_k} =
-        \frac{1}{2 \pi} \log \frac{R}{m} + O (1)
-\xrightarrow[]{R \to \infty}
-        \infty .\)</td>
+        (0, x)^2 \Omega \rangle = \sum_{|k| \leqslant R}
+\frac{1}{2 L
+        \omega_k} = \frac{1}{2 \pi} \log \frac{R}{m} + O (1)
+\xrightarrow[]{R
+        \to \infty} \infty .\)</td>
         <td align="right">(1.8)</td>
       </tr>
     </table>
@@ -1091,7 +1093,7 @@ kx} + a_k^{\ast}
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">1.4</class>.
         </strong><class style="font-style: normal"><strong>(Analyticity from the spectrum
-        condition) </strong></class><a id="ex:analytic"></a> (a) Let \(H \geq 0\) be
+        condition) </strong></class><a id="ex:analytic"></a> (a) Let \(H \geqslant 0\) be
         self-adjoint. Show that \(z \mapsto \langle \psi, \mathrm{e}^{-
         \mathrm{i} zH} \chi \rangle\) is bounded and analytic on \(\{
         \text{Im} z < 0\}\), continuous up to the boundary, and is determined
@@ -1113,8 +1115,8 @@ kx} + a_k^{\ast}
         independently of \(M\). (b) Assume a Wightman field has sharp-time
         fields satisfying <class style="font-style: normal">(<a href="#eq:CCR">1.6</a>)</class>. Using
         <class style="font-style: normal">(<a href="#eq:KL">1.4</a>)</class>, show (at least formally)
-        that \(\int \rho (\mathrm{d} M^2) = 1\). Deduce \(0 \leq Z \leq 1\) in
-        Remark <a href="#rem:KL">1.10</a>(iv).</font>
+        that \(\int \rho (\mathrm{d} M^2) = 1\). Deduce \(0 \leqslant Z
+        \leqslant 1\) in Remark <a href="#rem:KL">1.10</a>(iv).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1128,10 +1130,10 @@ kx} + a_k^{\ast}
         \(\varphi\) satisfies (W0)&ndash;(W4) and has \(\rho = \sum_i c_i^2
         \delta_{M_i^2}\). (b) Show that \(\prod_i (\Box + M_i^2) \varphi =
         0\), but that \(\varphi\) satisfies no Klein&ndash;Gordon equation of
-        a single mass if \(n \geq 2\). (c) Show that all truncated Wightman
-        functions of order \(\geq 3\) vanish, so there is no scattering. (d)
-        Extend the construction to an arbitrary polynomially bounded \(\rho\)
-        (with \(\rho (\{0\}) = 0\) if \(d = 2\)).</font>
+        a single mass if \(n \geqslant 2\). (c) Show that all truncated
+        Wightman functions of order \(\geqslant 3\) vanish, so there is no
+        scattering. (d) Extend the construction to an arbitrary polynomially
+        bounded \(\rho\) (with \(\rho (\{0\}) = 0\) if \(d = 2\)).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1227,8 +1229,8 @@ kx} + a_k^{\ast}
     </p>
     <p>
       \(H_{\varepsilon}\) is a Schr&ouml;dinger operator on \(\mathbb{R}^N\)
-      with a confining potential (\(U_{\varepsilon} \geq c| \varphi |^2 - C\)
-      since \(m > 0\)). Hence it is essentially self-adjoint on
+      with a confining potential (\(U_{\varepsilon} \geqslant c| \varphi |^2 -
+      C\) since \(m > 0\)). Hence it is essentially self-adjoint on
       \(C^{\infty}_c\), bounded below, with compact resolvent, and
       \(\mathrm{e}^{- tH_{\varepsilon}}\) is trace class for \(t > 0\). The
       integral kernel of \(\mathrm{e}^{- tH_{\varepsilon}}\) is strictly
@@ -1240,7 +1242,7 @@ kx} + a_k^{\ast}
     <table width="100%">
       <tr>
         <td width="100%" align="center">\(\displaystyle \bar{H} := H_{\varepsilon} - E_0
-        \geq 0 \qquad (\text{positivity of the
+        \geqslant 0 \qquad (\text{positivity of the
 energy}) .\)</td>
         <td align="right">(2.3)</td>
       </tr>
@@ -1278,8 +1280,9 @@ energy}) .\)</td>
         which is bounded and continuous on
         \(\bar{\mathbb{C}}_-^{\hspace{0.17em} n - 1}\) and analytic on
         \(\mathbb{C}_-^{n - 1}\), \(\mathbb{C}_- = \{ \text{Im} \zeta < 0\}\).
-        At \(\zeta_j = - \mathrm{i} (\tau_j - \tau_{j + 1})\), \(\tau_1 \geq
-        \ldots \geq \tau_n\), it gives the <em>Schwinger functions</em></i>
+        At \(\zeta_j = - \mathrm{i} (\tau_j - \tau_{j + 1})\), \(\tau_1
+        \geqslant \ldots \geqslant \tau_n\), it gives the <em>Schwinger
+        functions</em></i>
       </p>
       <i><table width="100%">
         <tr>
@@ -1303,16 +1306,16 @@ energy}) .\)</td>
 \lambda}
       \mathrm{d} E (\lambda)\) with \(| \mathrm{e}^{- \mathrm{i} \zeta
       \lambda} | = \mathrm{e}^{\lambda \text{Im}
-\zeta} \leq 1\) for \(\lambda
-      \geq 0\), \(\text{Im} \zeta \leq 0\). It is therefore a contraction,
-      strongly continuous on \(\bar{\mathbb{C}}_-\) and analytic in the
-      interior. Products of such operators give separately analytic, bounded,
-      continuous functions, hence jointly analytic ones. If \(\mathcal{W}\)
-      vanishes on \((- \mathrm{i} \mathbb{R}_+)^{n - 1}\), the identity
-      theorem in \(\zeta_1\) (with the other variables on the imaginary axis)
-      shows that it vanishes for all \(\zeta_1 \in \mathbb{C}_-\). Proceeding
-      variable by variable, and using continuity up to the boundary, gives \(W
-      \equiv 0\).<span style="margin-left: 1em"></span>\(\Box\)
+\zeta} \leqslant 1\) for
+      \(\lambda \geqslant 0\), \(\text{Im} \zeta \leqslant 0\). It is
+      therefore a contraction, strongly continuous on \(\bar{\mathbb{C}}_-\)
+      and analytic in the interior. Products of such operators give separately
+      analytic, bounded, continuous functions, hence jointly analytic ones. If
+      \(\mathcal{W}\) vanishes on \((- \mathrm{i} \mathbb{R}_+)^{n - 1}\), the
+      identity theorem in \(\zeta_1\) (with the other variables on the
+      imaginary axis) shows that it vanishes for all \(\zeta_1 \in
+      \mathbb{C}_-\). Proceeding variable by variable, and using continuity up
+      to the boundary, gives \(W \equiv 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
       <table style="width: 100%">
@@ -1326,12 +1329,12 @@ energy}) .\)</td>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
               <b>Figure 2.1. </b><a id="auto-19"></a>Wick rotation (Proposition <a
-              href="#prop:wick-rot">2.1</a>). Since \(\bar{H} \geq 0\), \(\mathrm{e}^{-
+              href="#prop:wick-rot">2.1</a>). Since \(\bar{H} \geqslant 0\), \(\mathrm{e}^{-
               \mathrm{i} \zeta \bar{H}}\) is a contraction on the lower
-              half-plane \(\text{Im} \zeta \leq 0\), analytic in its interior.
-              The Wightman functions on the real axis and the Schwinger
-              functions on the negative imaginary axis are boundary values and
-              restrictions of the same analytic function.
+              half-plane \(\text{Im} \zeta \leqslant 0\), analytic in its
+              interior. The Wightman functions on the real axis and the
+              Schwinger functions on the negative imaginary axis are boundary
+              values and restrictions of the same analytic function.
             </p></font>
           </div></td>
         </tr></tbody>
@@ -1341,15 +1344,15 @@ energy}) .\)</td>
       <strong class="enunciation-name">Remark <class style="font-style: normal">2.2</class>. </strong>This is
       exactly where positivity of the energy enters: it allows rotating \(t
       \mapsto - \mathrm{i} \tau\) in all time differences simultaneously. It
-      will be used twice more: \(\mathrm{e}^{- \tau \bar{H}}\), \(\tau \geq
-      0\), is a contraction semigroup, which can be represented as a path
-      integral (Feynman&ndash;Kac); and \(\mathrm{e}^{- T \bar{H}}\) converges
-      to the projection onto \(\ker \bar{H}\) as \(T \to \infty\), i.e. onto
-      the vacuum when it is unique (Remark <a href="#rem:clustering">2.7</a>). (That the
-      Feynman&ndash;Kac weights are positive is a separate fact, coming from
-      the kinetic term.) In a relativistic theory, the Wightman functions are
-      boundary values of functions analytic in the forward tube (Exercise <a
-      href="#ex:analytic">1.4</a>). By Lorentz covariance and locality (the
+      will be used twice more: \(\mathrm{e}^{- \tau \bar{H}}\), \(\tau
+      \geqslant 0\), is a contraction semigroup, which can be represented as a
+      path integral (Feynman&ndash;Kac); and \(\mathrm{e}^{- T \bar{H}}\)
+      converges to the projection onto \(\ker \bar{H}\) as \(T \to \infty\),
+      i.e. onto the vacuum when it is unique (Remark <a href="#rem:clustering">2.7</a>). (That
+      the Feynman&ndash;Kac weights are positive is a separate fact, coming
+      from the kinetic term.) In a relativistic theory, the Wightman functions
+      are boundary values of functions analytic in the forward tube (Exercise
+      <a href="#ex:analytic">1.4</a>). By Lorentz covariance and locality (the
       Bargmann&ndash;Hall&ndash;Wightman theorem and Jost points) these extend
       to a domain containing all non-coincident Euclidean points, where they
       define symmetric, Euclidean invariant Schwinger functions [<a href="#bib-SW64">SW64</a>,
@@ -1460,8 +1463,8 @@ m^2 \varphi^2 + V (\varphi)]
     </table>
     <p>
       Inserting multiplication operators between the factors \(T_{\delta}\)
-      gives, for \(\tau_1 \geq \ldots \geq \tau_n\) in \(\delta \mathbb{Z}\)
-      with \(\tau_1 - \tau_n < T\),
+      gives, for \(\tau_1 \geqslant \ldots \geqslant \tau_n\) in \(\delta
+      \mathbb{Z}\) with \(\tau_1 - \tau_n < T\),
     </p>
     <table width="100%">
       <tr>
@@ -1485,7 +1488,7 @@ L} (\mathrm{d} \varphi),\)</td>
         <strong class="enunciation-name">Proposition <class style="font-style: normal">2.3</class>.
         </strong><i><class style="font-style: normal"><strong>(Feynman&ndash;Kac&ndash;Nelson)
         </strong></class><a id="prop:FK"></a> For bounded continuous \(F_j\) and dyadic
-        \(\tau_1 \geq \ldots \geq \tau_n\),</i>
+        \(\tau_1 \geqslant \ldots \geqslant \tau_n\),</i>
       </p>
       <div style="margin-bottom: 1em">
         <i><table width="100%">
@@ -1625,7 +1628,7 @@ m^2 a^2 + V
                 <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Euclidean field theory</td>
                 <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">Statistical mechanics</td>
               </tr><tr>
-                <td style="text-align: center; vertical-align: middle">positive Hilbert space, \(H \geq 0\)</td>
+                <td style="text-align: center; vertical-align: middle">positive Hilbert space, \(H \geqslant 0\)</td>
                 <td style="text-align: center; vertical-align: middle">reflection positivity</td>
                 <td style="text-align: center; vertical-align: middle">RP of n.n. interactions</td>
               </tr><tr>
@@ -1752,11 +1755,11 @@ m^2 a^2 + V
         </dt>
         <dd>
           <p>
-            For some \(p \in [1, 2]\) and \(c > 0\), \(| \hat{\mu} (f) | \leq
-            \exp (c (\|f\|_{L^1} +\|f\|_{L^p}^p))\) for all complex-valued \(f
-            \in C^{\infty}_c (\mathbb{R}^d)\), with \(\hat{\mu}\) extended by
-            (OS0); if \(p = 2\), the two-point function is in addition
-            required to be locally integrable.
+            For some \(p \in [1, 2]\) and \(c > 0\), \(| \hat{\mu} (f) |
+            \leqslant \exp (c (\|f\|_{L^1} +\|f\|_{L^p}^p))\) for all
+            complex-valued \(f \in C^{\infty}_c (\mathbb{R}^d)\), with
+            \(\hat{\mu}\) extended by (OS0); if \(p = 2\), the two-point
+            function is in addition required to be locally integrable.
           </p>
         </dd>
       </p>
@@ -1812,9 +1815,9 @@ m^2 a^2 + V
       with \((F, G) := \mathbb{E}_{\mu}  [\overline{\Theta F}  \hspace{0.17em}
       G]\). By (OS3) this is a positive semi-definite form; quotienting by
       null vectors and completing gives \(\mathcal{H}\). Time translations by
-      \(t \geq 0\) map \(\mathcal{E}_+\) to itself and descend to a
-      self-adjoint contraction semigroup \(\mathrm{e}^{- tH}\), so \(H \geq
-      0\): <em>positivity of the energy is recovered from reflection
+      \(t \geqslant 0\) map \(\mathcal{E}_+\) to itself and descend to a
+      self-adjoint contraction semigroup \(\mathrm{e}^{- tH}\), so \(H
+      \geqslant 0\): <em>positivity of the energy is recovered from reflection
       positivity</em>. The vacuum is the class of \(1\), and the analytic
       continuation \(\tau \to \mathrm{i} t\) yields the Wightman
       functions.<span style="margin-left: 1em"></span>\(\Box\)
@@ -1822,10 +1825,10 @@ m^2 a^2 + V
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">2.7</class>. </strong><class style="font-style: normal"><strong>(Positivity,
       clustering and uniqueness of the vacuum) </strong></class><a id="rem:clustering"></a>
-      Let \(H \geq 0\) be self-adjoint, \(\Omega \in \ker H\), and let \(P_0\)
-      be the orthogonal projection onto \(\ker H\). Positivity of the energy
-      turns uniqueness of the vacuum into a clustering statement, in three
-      steps.
+      Let \(H \geqslant 0\) be self-adjoint, \(\Omega \in \ker H\), and let
+      \(P_0\) be the orthogonal projection onto \(\ker H\). Positivity of the
+      energy turns uniqueness of the vacuum into a clustering statement, in
+      three steps.
     </p>
     <p>
       (i) <em>Imaginary time: no averaging is needed.</em> By the spectral
@@ -1833,7 +1836,7 @@ m^2 a^2 + V
       \infty)} \mathrm{e}^{- t \lambda} \mathrm{d} E
 (\lambda) \to E (\{0\}) =
       P_0\) strongly as \(t \to \infty\), because \(\mathrm{e}^{- t \lambda}
-      \to \mathbb{1}_{\lambda = 0}\) for \(\lambda \geq 0\). In the
+      \to \mathbb{1}_{\lambda = 0}\) for \(\lambda \geqslant 0\). In the
       reconstruction above, for \(F, G \in \mathcal{E}_+\) and \(\tau_t\) the
       time translation,
     </p>
@@ -1851,8 +1854,8 @@ m^2 a^2 + V
       iff \(P_0\) is the projection onto \(\mathbb{C} \Omega\), i.e. iff the
       vacuum is unique. With a mass gap the convergence is exponential, at
       rate \(\inf (\text{spec} H \setminus \{0\})\) (Exercise <a href="#ex:vacuum">2.6</a>).
-      Moreover, the spectrum condition \(H \geq | \textbf{P} |\) implies that
-      a vector with \(H \psi = 0\) also has \(\textbf{P} \psi = 0\):
+      Moreover, the spectrum condition \(H \geqslant | \textbf{P} |\) implies
+      that a vector with \(H \psi = 0\) also has \(\textbf{P} \psi = 0\):
       invariance under time translations already gives invariance under all
       translations. For reflection positive measures, ergodicity (OS4) (by the
       reconstruction theorem) and clustering in imaginary time (by (i)) are
@@ -2025,7 +2028,7 @@ m^2 a^2 + V
         \varepsilon\), let \(\mu_{\varepsilon}\) have action <class style="font-style: normal">(<a
         href="#eq:spin-system">2.12</a>)</class>, and let \(\Theta\) be the reflection \(\tau
         \mapsto - \tau\), which fixes the planes \(\tau = 0\) and \(\tau = T /
-        2\). Show that \(\mathbb{E} [F \cdot \Theta F] \geq 0\) for every
+        2\). Show that \(\mathbb{E} [F \cdot \Theta F] \geqslant 0\) for every
         bounded real \(F\) depending only on \(\{\varphi_u : \tau (u) \in [0,
         T / 2]\}\). <em>Hint:</em> write \(S_{\varepsilon} = S_+ + \Theta
         S_+\), with the terms living on the fixed planes split evenly, and
@@ -2052,9 +2055,9 @@ m^2 a^2 + V
           \(\displaystyle | \langle \Omega, A \mathrm{e}^{- \tau \bar{H}} B
           \Omega \rangle - \langle
 \Omega, A \Omega \rangle \langle \Omega, B
-          \Omega \rangle | \leq \|A\| \|B\|
-\mathrm{e}^{- \tau (E_1 - E_0)}
-          :\)
+          \Omega \rangle | \leqslant \|A\|
+\|B\| \mathrm{e}^{- \tau (E_1 -
+          E_0)} :\)
         </center></font>
       </p>
     </div>
@@ -2072,25 +2075,26 @@ m^2 a^2 + V
         \(\mathbb{R}^{\varepsilon \mathbb{Z} \times \Lambda_{\varepsilon}}\),
         invariant under time translations and reflection positive with respect
         to \(\Theta\). On bounded functions \(F\) of \(\{\varphi_u : \tau (u)
-        \geq 0\}\) put \((F, G) =\mathbb{E} [\overline{\Theta F} G]\) and
+        \geqslant 0\}\) put \((F, G) =\mathbb{E} [\overline{\Theta F} G]\) and
         \((\textsf{T} F) (\varphi) = F (\varphi (\cdot + \varepsilon,
         \cdot))\). Show that \((F, \textsf{T} G) = (\textsf{T} F, G)\) and, by
-        iterating Cauchy&ndash;Schwarz, \(| (F, \textsf{T} F) | \leq (F, F)\).
-        Deduce that \(\textsf{T}\) induces a self-adjoint contraction on the
-        reconstructed Hilbert space, and that \(H := - (2 \varepsilon)^{- 1}
-        \log \textsf{T}^2 \geq 0\) on \((\ker \textsf{T})^{\perp}\).</font>
+        iterating Cauchy&ndash;Schwarz, \(| (F, \textsf{T} F) | \leqslant (F,
+        F)\). Deduce that \(\textsf{T}\) induces a self-adjoint contraction on
+        the reconstructed Hilbert space, and that \(H := - (2 \varepsilon)^{-
+        1} \log \textsf{T}^2 \geqslant 0\) on \((\ker
+        \textsf{T})^{\perp}\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">2.8</class>.
         </strong><class style="font-style: normal"><strong>(Positivity, clustering and uniqueness)
-        </strong></class><a id="ex:clustering"></a> (a) Let \(H \geq 0\) be self-adjoint.
-        Show that \(\mathrm{e}^{- tH} \to P_0\) strongly as \(t \to \infty\),
-        where \(P_0\) is the projection onto \(\ker H\), and that
-        \(\frac{1}{T}  \int_0^T \mathrm{e}^{- \mathrm{i} tH} \mathrm{d} t \to
-        P_0\) strongly. Give an example where \(\mathrm{e}^{- \mathrm{i} tH}\)
-        has no weak limit. (b) In the setting of Exercise <a href="#ex:toyOS">2.7</a>,
+        </strong></class><a id="ex:clustering"></a> (a) Let \(H \geqslant 0\) be
+        self-adjoint. Show that \(\mathrm{e}^{- tH} \to P_0\) strongly as \(t
+        \to \infty\), where \(P_0\) is the projection onto \(\ker H\), and
+        that \(\frac{1}{T}  \int_0^T \mathrm{e}^{- \mathrm{i} tH} \mathrm{d} t
+        \to P_0\) strongly. Give an example where \(\mathrm{e}^{- \mathrm{i}
+        tH}\) has no weak limit. (b) In the setting of Exercise <a href="#ex:toyOS">2.7</a>,
         show that \(\mathbb{E} [\overline{\Theta F} \hspace{0.17em}
         \textsf{T}^{2 n} G] \to
 \overline{\mathbb{E}F}  \hspace{0.17em}

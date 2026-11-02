@@ -24,7 +24,7 @@ class SissaMaterialsTests(unittest.TestCase):
 
     def test_complete_notes_and_slide_exports(self):
         # Slide counts from the author's supplied HTML and PDF exports.
-        for number, slides in enumerate((31, 32, 35, 56, 31, 40), 1):
+        for number, slides in enumerate((31, 32, 35, 56, 32, 41), 1):
             notes = f'cqft_notes_L{number}' if number < 3 else f'cqft_lecture{number}'
             for name in (notes, f'cqft_slides_L{number}'):
                 with self.subTest(page=name):
@@ -56,6 +56,16 @@ class SissaMaterialsTests(unittest.TestCase):
                 self.assertIn(f'sissa-2026/{name}.html', hrefs)
             for kind in ('notes', 'slides'):
                 self.assertIn(f'../../store/sissa/2026/cqft_{kind}_L{number}.pdf', hrefs)
+
+    def test_supplement_is_published(self):
+        page = MATERIALS / 'cqft_supplement.html'
+        text = page.read_text()
+        self.assertIn('mathjax@3', text)
+        self.assertNotIn('/Users/', text)
+        self.assertIn('class="max-toc"', text)
+        self.assertTrue((ROOT / 'store/sissa/2026/cqft_notes_supplement.pdf').read_bytes().startswith(b'%PDF-'))
+        course = (ROOT / 'docs/teaching/lectures-constructive-qft-sissa-2026.html').read_text()
+        self.assertIn('sissa-2026/cqft_supplement.html', course)
 
     def test_max_html_resources_match_the_plugin(self):
         # The pages load the max-html resources from their own folder; keep

@@ -197,7 +197,7 @@
       <math|U<around|(|a,<with|math-font|Bbb|1>|)>=\<mathe\><rsup|\<mathi\>P\<cdot\>a>>,
       <math|H=P<rsup|0>>.<next-line><em|Spectrum condition:>
       <math|<math-up|spec><around|(|P|)>\<subset\><wide|V|\<bar\>><rsub|<space|-0.17em>+>>,
-      so <math|H\<geq\><around|\||<math-bf|P>|\|>\<geq\>0>.<next-line><em|Vacuum:>
+      so <math|H\<geqslant\><around|\||<math-bf|P>|\|>\<geqslant\>0>.<next-line><em|Vacuum:>
       unique (up to phase) unit vector <math|\<Omega\>> with
       <math|U<around|(|a,<with|math-font|Bbb|1>|)>*\<Omega\>=\<Omega\>>.
     </myframed>
@@ -233,7 +233,7 @@
     <math|W<rsub|n><around|(|f<rsub|1>,\<ldots\>,f<rsub|n>|)>=<around|\<langle\>|\<Omega\>,\<varphi\><around|(|f<rsub|1>|)>*\<cdots\>*\<varphi\><around|(|f<rsub|n>|)>*\<Omega\>|\<rangle\>>\<in\>\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d*n>|)>>:
 
     <\itemize>
-      <item>positivity <math|<big|sum><rsub|j,k>W<rsub|j+k>*<around|(|g<rsub|j><rsup|\<ast\>>\<otimes\>g<rsub|k>|)>\<geq\>0>;<space|1em>Poincaré
+      <item>positivity <math|<big|sum><rsub|j,k>W<rsub|j+k>*<around|(|g<rsub|j><rsup|\<ast\>>\<otimes\>g<rsub|k>|)>\<geqslant\>0>;<space|1em>Poincaré
       invariance;
 
       <item>spectral condition: Fourier support in
@@ -294,11 +294,11 @@
     but
 
     <\equation*>
-      <around|\<\|\|\>|\<varphi\><around|(|x|)>*\<Omega\>|\<\|\|\>><rsup|2>=W<rsub|2><around|(|0|)>=<big|int>\<mathd\>\<Omega\><rsub|m>=+\<infty\>*<space|2em><around|(|s\<geq\>1|)>.
+      <around|\<\|\|\>|\<varphi\><around|(|x|)>*\<Omega\>|\<\|\|\>><rsup|2>=W<rsub|2><around|(|0|)>=<big|int>\<mathd\>\<Omega\><rsub|m>=+\<infty\>*<space|2em><around|(|s\<geqslant\>1|)>.
     </equation*>
 
     UV divergence: logarithmic for <math|s=1>, power-like for
-    <math|s\<geq\>2>. <strong|Not an artefact of the free field.>
+    <math|s\<geqslant\>2>. <strong|Not an artefact of the free field.>
   </hidden>|<\hidden>
     <mytitle|No fields at a point>
 
@@ -314,7 +314,7 @@
     </proposition*>
 
     <\lemma*>
-      For <math|d\<geq\>2>, a <em|finite>
+      For <math|d\<geqslant\>2>, a <em|finite>
       <math|\<cal-L\><rsup|\<uparrow\>><rsub|+>>-invariant measure on
       <math|<wide|V|\<bar\>><rsub|<space|-0.17em>+>> is
       <math|c*<space|0.17em>\<delta\><rsub|0>>.
@@ -338,7 +338,7 @@
     The sets
 
     <\equation*>
-      S<rsub|j><rsup|\<pm\>>=<around|{|p\<in\><wide|V|\<bar\>><rsub|<space|-0.17em>+>:2<rsup|j>\<leq\>p<rsup|0>\<pm\>p<rsup|1>\<less\>2<rsup|j+1>|}>,<space|2em>j\<in\>\<bbb-Z\>,
+      S<rsub|j><rsup|\<pm\>>=<around|{|p\<in\><wide|V|\<bar\>><rsub|<space|-0.17em>+>:2<rsup|j>\<leqslant\>p<rsup|0>\<pm\>p<rsup|1>\<less\>2<rsup|j+1>|}>,<space|2em>j\<in\>\<bbb-Z\>,
     </equation*>
 
     are mapped to each other by the boost with
@@ -367,7 +367,7 @@
     \;
 
     Let <math|W<rsub|2><rsup|<around|(|M|)>>> be the free two-point function
-    of mass <math|M\<geq\>0> and <math|<around|\<langle\>|\<Omega\>,\<varphi\><around|(|f|)>*\<Omega\>|\<rangle\>>=v*<big|int>f>.
+    of mass <math|M\<geqslant\>0> and <math|<around|\<langle\>|\<Omega\>,\<varphi\><around|(|f|)>*\<Omega\>|\<rangle\>>=v*<big|int>f>.
 
     <\theorem*>
       <dueto|Källén 1952, Lehmann 1954>Under (W0)\U(W2) there is a positive,
@@ -417,9 +417,9 @@
       <math|W<rsub|2><rsup|T><around|(|0|)>=<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<big|int>\<mathd\>\<Omega\><rsub|M>=\<infty\>>.
 
       <item><strong|Canonical fields:> CCR at sharp times
-      <math|\<Rightarrow\>> <math|<big|int>\<rho\>=1>, so <math|Z\<leq\>1>.
-      In <math|d=4> perturbatively <math|<big|int>\<rho\>=\<infty\>>
-      (wave-function renormalisation).
+      <math|\<Rightarrow\>> <math|<big|int>\<rho\>=1>, so
+      <math|Z\<leqslant\>1>. In <math|d=4> perturbatively
+      <math|<big|int>\<rho\>=\<infty\>> (wave-function renormalisation).
     </itemize>
   </hidden>|<\hidden>
     <mytitle|The quantum wave equation>
@@ -467,10 +467,10 @@
       <item>An infinite family of independent harmonic oscillators, one per
       mode.
 
-      <item>With a UV cutoff <math|<around|\||k|\|>\<leq\>R>:
+      <item>With a UV cutoff <math|<around|\||k|\|>\<leqslant\>R>:
 
       <\equation*>
-        <around|\<langle\>|\<Omega\>,\<varphi\><rsub|R>*<around|(|0,x|)><rsup|2>*\<Omega\>|\<rangle\>>=<big|sum><rsub|<around|\||k|\|>\<leq\>R><frac|1|2*L*\<omega\><rsub|k>>=<frac|1|2*\<pi\>>*log
+        <around|\<langle\>|\<Omega\>,\<varphi\><rsub|R>*<around|(|0,x|)><rsup|2>*\<Omega\>|\<rangle\>>=<big|sum><rsub|<around|\||k|\|>\<leqslant\>R><frac|1|2*L*\<omega\><rsub|k>>=<frac|1|2*\<pi\>>*log
         <frac|R|m>+O<around|(|1|)>\<to\>\<infty\>.
       </equation*>
 
@@ -545,7 +545,7 @@
 
       <item>Perron\UFrobenius: simple ground state
       <math|\<Omega\><rsub|\<varepsilon\>>\<gtr\>0>, energy
-      <math|E<rsub|0>>.<space|1em> <math|<wide|H|\<bar\>>\<assign\>H<rsub|\<varepsilon\>>-E<rsub|0>\<geq\>0>.
+      <math|E<rsub|0>>.<space|1em> <math|<wide|H|\<bar\>>\<assign\>H<rsub|\<varepsilon\>>-E<rsub|0>\<geqslant\>0>.
     </itemize>
   </hidden>|<\hidden>
     <mytitle|Positivity of the energy <math|\<Rightarrow\>> Wick rotation>
@@ -562,8 +562,8 @@
       <\proposition*>
         <math|W> extends analytically to <math|<math-up|Im><around|(|t<rsub|j>-t<rsub|j+1>|)>\<less\>0>.
         At <math|t<rsub|j>=-\<mathi\>\<tau\><rsub|j>>,
-        <math|\<tau\><rsub|1>\<geq\>\<ldots\>\<geq\>\<tau\><rsub|n>>, it
-        gives the <strong|Schwinger functions>
+        <math|\<tau\><rsub|1>\<geqslant\>\<ldots\>\<geqslant\>\<tau\><rsub|n>>,
+        it gives the <strong|Schwinger functions>
 
         <\equation*>
           S<around|(|\<tau\><rsub|1>,\<ldots\>,\<tau\><rsub|n>|)>=<around|\<langle\>|\<Omega\><rsub|\<varepsilon\>>,F<rsub|1>\<mathe\><rsup|-<around|(|\<tau\><rsub|1>-\<tau\><rsub|2>|)>*<wide|H|\<bar\>>>F<rsub|2>*\<cdots\>*F<rsub|n>*\<Omega\><rsub|\<varepsilon\>>|\<rangle\>>,
@@ -629,9 +629,9 @@
     <\enumerate>
       <item><with|font-series|bold|Analyticity.>
       <math|\<mathe\><rsup|-\<mathi\>\<zeta\>*<wide|H|\<bar\>>>=<big|int>\<mathe\><rsup|-\<mathi\>\<zeta\>*\<lambda\>>\<mathd\>E<around|(|\<lambda\>|)>>
-      is a contraction for <math|<math-up|Im>\<zeta\>\<leq\>0>, since
-      <math|\<lambda\>\<geq\>0>: analytic in the interior, continuous up to
-      the boundary.
+      is a contraction for <math|<math-up|Im>\<zeta\>\<leqslant\>0>, since
+      <math|\<lambda\>\<geqslant\>0>: analytic in the interior, continuous up
+      to the boundary.
 
       <item><with|font-series|bold|Uniqueness.> An analytic function on the
       half plane vanishing on <math|-\<mathi\>\<bbb-R\><rsub|+>> vanishes;
@@ -819,9 +819,9 @@
       and <math|\<varepsilon\><rsup|d>*<big|sum><rsub|u>>.
 
       <item>Nearest-neighbour <math|\<Rightarrow\>> <strong|reflection
-      positive>: the Euclidean shadow of <math|\<mathe\><rsup|-\<varepsilon\>*H>\<geq\>0>.
-      Conversely, RP <math|\<Rightarrow\>> Hilbert space and <math|H\<geq\>0>
-      (Exercises<nbsp>2.5, 2.7).
+      positive>: the Euclidean shadow of <math|\<mathe\><rsup|-\<varepsilon\>*H>\<geqslant\>0>.
+      Conversely, RP <math|\<Rightarrow\>> Hilbert space and
+      <math|H\<geqslant\>0> (Exercises<nbsp>2.5, 2.7).
     </itemize>
   </hidden>|<\hidden>
     <mytitle|A dictionary>
@@ -831,7 +831,7 @@
     <tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|8|8|1|-1|cell-bborder|1ln>|<table|<row|<cell|Quantum
     (real time)>|<cell|Euclidean field theory>|<cell|Statistical
     mechanics>>|<row|<cell|Hilbert space positivity,
-    <math|H\<geq\>0>>|<cell|reflection positivity>|<cell|RP of n.n.
+    <math|H\<geqslant\>0>>|<cell|reflection positivity>|<cell|RP of n.n.
     interactions>>|<row|<cell|<math|\<mathe\><rsup|-\<varepsilon\>*H>>>|<cell|time
     translation by <math|\<varepsilon\>>>|<cell|transfer
     matrix>>|<row|<cell|vacuum <math|\<Omega\>>>|<cell|infinite-volume
@@ -912,7 +912,7 @@
       <item*|OS0><em|Analyticity:> <math|z\<mapsto\><wide|\<mu\>|^><around|(|<big|sum><rsub|j>z<rsub|j>*f<rsub|j>|)>>
       entire.
 
-      <item*|OS1><em|Regularity:> <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>\<leq\>exp
+      <item*|OS1><em|Regularity:> <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>\<leqslant\>exp
       <around*|(|c*<around|(|<around|\<\|\|\>|f|\<\|\|\>><rsub|L<rsup|1>>+<around|\<\|\|\>|f|\<\|\|\>><rsup|p><rsub|L<rsup|p>>|)>|)>>,
       <math|p\<in\><around|[|1,2|]>>, complex <math|f>.
 
@@ -920,7 +920,7 @@
 
       <item*|OS3><em|Reflection positivity:> for real <math|f<rsub|i>>
       supported in <math|<around|{|\<tau\>\<gtr\>0|}>>,
-      <math|<around*|(|<wide|\<mu\>|^>*<around|(|f<rsub|i>-\<Theta\>*f<rsub|j>|)>|)><rsub|i*j>\<geq\>0>.
+      <math|<around*|(|<wide|\<mu\>|^>*<around|(|f<rsub|i>-\<Theta\>*f<rsub|j>|)>|)><rsub|i*j>\<geqslant\>0>.
 
       <item*|OS4><em|Ergodicity> under time translations.
     </description>
@@ -938,13 +938,13 @@
     <\itemize>
       <item><math|\<cal-E\><rsub|+>=> functions of
       <math|\<varphi\>\|<rsub|<around|{|\<tau\>\<gtr\>0|}>>>, with
-      <math|<around|(|F,G|)>=\<bbb-E\><rsub|\<mu\>><around|[|<wide|\<Theta\>*F|\<bar\>><space|0.17em>G|]>\<geq\>0>
+      <math|<around|(|F,G|)>=\<bbb-E\><rsub|\<mu\>><around|[|<wide|\<Theta\>*F|\<bar\>><space|0.17em>G|]>\<geqslant\>0>
       by OS3.
 
       <item>Quotient by null vectors and complete: physical Hilbert space
       <math|\<cal-H\>>.
 
-      <item>Time translations by <math|t\<geq\>0> preserve
+      <item>Time translations by <math|t\<geqslant\>0> preserve
       <math|\<cal-E\><rsub|+>> and descend to a self-adjoint contraction
       semigroup <math|\<mathe\><rsup|-t*H>>: <strong|positivity of the energy
       is recovered from reflection positivity>.

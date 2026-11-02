@@ -862,7 +862,7 @@ H_{\ast} = \max_u H.\)
         1}, \qquad \mathcal{R}_t =
 S_t^{- 1} - Q_T^{- 1}, \qquad
         \dot{\mathcal{R}}_t = S_t^{- 1}  \dot{Q}_t
-S_t^{- 1} \geq 0.\)
+S_t^{- 1} \geqslant 0.\)
       </center>
       <div class="slide-box">
         <p style="margin-top: 1em">
@@ -968,8 +968,8 @@ D^2 F)}_{\text{field coordinate}}
         </p>
         <p style="margin-bottom: 1em">
           <i>So <font color="#620000">\(H_t > 0\)</font>, <font color="#620000">\(\mathbb{1} +
-          S_t DF_t\)</font> is always invertible, and <font color="#620000">\(H_t \leq
-          S_t\)</font> for convex <font color="#620000">\(V_T\)</font>
+          S_t DF_t\)</font> is always invertible, and <font color="#620000">\(H_t
+          \leqslant S_t\)</font> for convex <font color="#620000">\(V_T\)</font>
           (Brascamp&ndash;Lieb).</i>
         </p>
       </div>
@@ -1012,10 +1012,10 @@ D^2 F)}_{\text{field coordinate}}
         S_t^{- 1} + D^2 V_T\)</font>. Then
       </p>
       <center>
-        \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T])^{- 1} \leq
-        \operatorname{Cov}_t \leq
-\mathbb{E}_t [(S_t^{- 1} + D^2 V_T)^{- 1}]
-        .\)
+        \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T])^{- 1} \leqslant
+        \operatorname{Cov}_t
+\leqslant \mathbb{E}_t [(S_t^{- 1} + D^2 V_T)^{-
+        1}] .\)
       </center>
       <ul>
         <li>
@@ -1029,9 +1029,9 @@ D^2 F)}_{\text{field coordinate}}
           <p>
             <strong>Upper:</strong> Brascamp&ndash;Lieb (1976), for <font
             color="#620000">\(D^2 \mathcal{U}> 0\)</font>: <font color="#620000">\(\operatorname{Var}
-            (f) \leq \mathbb{E} \langle Df, (D^2 \mathcal{U})^{- 1}
-            Df
-\rangle\)</font>.
+            (f) \leqslant \mathbb{E} \langle Df, (D^2 \mathcal{U})^{-
+1} Df
+            \rangle\)</font>.
           </p>
         </li>
         <li>
@@ -1044,11 +1044,12 @@ D^2 F)}_{\text{field coordinate}}
         <li>
           <p>
             <font color="#620000">\(V_T\)</font> convex <font color="#620000">\(\Rightarrow\)</font>
-            <font color="#620000">\(\operatorname{Cov}_t \leq S_t\)</font>, <font
-            color="#620000">\(D^2 V_t \geq 0\)</font>: convexity propagates along
-            Polchinski. <font color="#620000">\(D^2 V_T \geq \kappa \Rightarrow
-            \operatorname{Cov}_t \leq (S_t^{- 1} +
-\kappa)^{- 1}\)</font>.
+            <font color="#620000">\(\operatorname{Cov}_t \leqslant S_t\)</font>, <font
+            color="#620000">\(D^2 V_t \geqslant 0\)</font>: convexity propagates along
+            Polchinski. <font color="#620000">\(D^2 V_T \geqslant \kappa \Rightarrow
+            \operatorname{Cov}_t \leqslant (S_t^{- 1}
++ \kappa)^{-
+            1}\)</font>.
           </p>
         </li>
       </ul>
@@ -1443,7 +1444,7 @@ S_t^{- 1} (y - x) \rangle \right\},\)
         Entropy along the localisation
       </div>
       <font style="font-size: 90.0%"><p>
-        <font color="#620000">\(\rho \geq 0\)</font>, <font color="#620000">\(\mathbb{E}_{\nu_T}
+        <font color="#620000">\(\rho \geqslant 0\)</font>, <font color="#620000">\(\mathbb{E}_{\nu_T}
         \rho = 1\)</font>, <font color="#620000">\(M_t =\mathbb{E}_t \rho (\Phi_T) =
         G_t (\Phi_t)\)</font>, <font color="#620000">\(G_t (\phi) = \int \rho
         \mathrm{d} \mu_t^{\phi}\)</font>.
@@ -1492,10 +1493,10 @@ S_t^{- 1} (y - x) \rangle \right\},\)
             <strong>Entropic stability</strong> (Chen&ndash;Eldan): if <font
             color="#620000">\(\dot{\mathcal{R}}_r \operatorname{Cov}_{\mu_r^{\phi}}
             \dot{\mathcal{R}}_r
-\leq \alpha_r  \dot{\mathcal{R}}_r\)</font>
-            for all <font color="#620000">\(\phi\)</font> and <font color="#620000">\(r \leq
-            t\)</font>, then <font color="#620000">\(\operatorname{Ent}_{\nu_T} (\rho)
-            \leq \mathrm{e}^{\int_0^t \alpha_r
+\leqslant \alpha_r
+            \dot{\mathcal{R}}_r\)</font> for all <font color="#620000">\(\phi\)</font>
+            and <font color="#620000">\(r \leqslant t\)</font>, then <font color="#620000">\(\operatorname{Ent}_{\nu_T}
+            (\rho) \leqslant \mathrm{e}^{\int_0^t \alpha_r
 \mathrm{d} r}
             \mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (\rho)\)</font>: the
             low resolutions must not hide too much.
@@ -1522,14 +1523,14 @@ S_t^{- 1} (y - x) \rangle \right\},\)
         <p>
           <i><center>
             \(\displaystyle \dot{Q}_t D^2 V_t (\phi)  \dot{Q}_t + \frac{1}{2}
-            \ddot{Q}_t \geq \kappa_t
-\dot{Q}_t,\)
+            \ddot{Q}_t \geqslant
+\kappa_t  \dot{Q}_t,\)
           </center></i>
         </p>
         <p style="margin-bottom: 1em">
-          <i>then <font color="#620000">\(\operatorname{Ent}_{\nu_T} (\rho) \leq
-          \frac{2}{\gamma} \mathbb{E}_{\nu_T} \|
-\dot{Q}_T^{1 / 2} D
+          <i>then <font color="#620000">\(\operatorname{Ent}_{\nu_T} (\rho) \leqslant
+          \frac{2}{\gamma}
+\mathbb{E}_{\nu_T} \| \dot{Q}_T^{1 / 2} D
           \sqrt{\rho} \|^2\)</font>, <font color="#620000">\(\frac{1}{\gamma} =
           \int_0^T \mathrm{e}^{- 2 \int_t^T \kappa_r \mathrm{d} r}
 \mathrm{d}
@@ -1558,15 +1559,15 @@ S_t^{- 1} (y - x) \rangle \right\},\)
             <font color="#620000">\(\phi\)</font>,
           </p>
           <center>
-            \(\displaystyle \operatorname{Cov}_t \leq S_t - S_t  \dot{Q}_t^{-
-            1}  \left( \kappa_t
-\dot{Q}_t - \frac{1}{2}  \ddot{Q}_t \right)
-            \dot{Q}_t^{- 1} S_t :\)
+            \(\displaystyle \operatorname{Cov}_t \leqslant S_t - S_t
+            \dot{Q}_t^{- 1}  \left( \kappa_t
+\dot{Q}_t - \frac{1}{2}
+            \ddot{Q}_t \right)  \dot{Q}_t^{- 1} S_t :\)
           </center>
           <p>
             at most <font color="#620000">\(S_t\)</font> iff <font color="#620000">\(\kappa_t
-            \dot{Q}_t \geq \frac{1}{2}  \ddot{Q}_t\)</font> (linear profile:
-            <font color="#620000">\(\kappa_t \geq 0\)</font>).
+            \dot{Q}_t \geqslant \frac{1}{2}  \ddot{Q}_t\)</font> (linear
+            profile: <font color="#620000">\(\kappa_t \geqslant 0\)</font>).
           </p>
         </li>
       </ul></font>
@@ -1664,8 +1665,8 @@ V_0 (0) + \tfrac{1}{2} \mathbb{E}_0
       </center>
       <p>
         <b>Entropy.</b> <font color="#620000">\(\frac{1}{2} \mathbb{E}_0  \int \|u\|^2
-        \geq \text{Ent} (\text{Law} (X^u) |
-\text{Law} (X))\)</font>: a
+        \geqslant \text{Ent} (\text{Law} (X^u)
+| \text{Law} (X))\)</font>: a
         pathwise lift of the Gibbs principle <font color="#620000">\(- \log Z_T =
         \inf_{\nu} \{ \int V_T \hspace{0.17em} \mathrm{d} \nu +
 \text{Ent}
@@ -2138,9 +2139,9 @@ BDV \rangle, \qquad \partial_t V_t =
         <p>
           <i><center>
             \(\displaystyle \mathbb{E} \mathrm{e}^{u \langle h, \eta_t
-            \rangle} \leq \exp \left(
-\frac{u^2}{2} \langle h, \mathcal{R}_t h
-            \rangle \right),\)
+            \rangle} \leqslant \exp \left(
+\frac{u^2}{2} \langle h,
+            \mathcal{R}_t h \rangle \right),\)
           </center></i>
         </p>
         <p style="margin-bottom: 1em">
@@ -2152,18 +2153,19 @@ BDV \rangle, \qquad \partial_t V_t =
           <p>
             Heat profile, <font color="#620000">\(T = \infty\)</font> (finite spatial
             cutoff): <font color="#620000">\(\mathcal{R}_t = A / (\mathrm{e}^{A / t^2}
-            - 1) \leq t^2\)</font>; <font color="#620000">\(\mathcal{R}_t \leq
-            \frac{4}{3} t^2\)</font> for <font color="#620000">\(T \geq 2 t\)</font>.
+            - 1) \leqslant t^2\)</font>; <font color="#620000">\(\mathcal{R}_t
+            \leqslant \frac{4}{3} t^2\)</font> for <font color="#620000">\(T \geqslant
+            2 t\)</font>.
           </p>
         </li>
         <li>
           <p>
             With <font color="#620000">\(\mathrm{d} F = \Upsilon \mathrm{d} W\)</font>
             and It&ocirc;: <font color="#620000">\(\mathbb{E} \int_0^t \|
-            \Upsilon_s^{\ast} J_s h\|^2 \mathrm{d} s \leq 2 (1 +
-\mathrm{e}^{-
-            1}) t^2 \|h\|^2\)</font>: a smoothed derivative of the force,
-            without the terminal force.
+            \Upsilon_s^{\ast} J_s h\|^2 \mathrm{d} s \leqslant 2 (1
++
+            \mathrm{e}^{- 1}) t^2 \|h\|^2\)</font>: a smoothed derivative of
+            the force, without the terminal force.
           </p>
         </li>
         <li>
@@ -2196,7 +2198,7 @@ BDV \rangle, \qquad \partial_t V_t =
       <ul>
         <li>
           <p>
-            <font color="#620000">\(\mathcal{R}_t \leq t^2 \mathrm{e}^{- A / 2
+            <font color="#620000">\(\mathcal{R}_t \leqslant t^2 \mathrm{e}^{- A / 2
             t^2}\)</font>: at resolution <font color="#620000">\(t\)</font>, <font
             color="#620000">\(\eta_t \lesssim t \times\)</font> white noise smoothed at
             scale <font color="#620000">\(1 / t\)</font>, so <font color="#620000">\(\eta_t (x)
@@ -2228,10 +2230,11 @@ BDV \rangle, \qquad \partial_t V_t =
         <li>
           <p>
             <strong>Pathwise</strong> (convex domination of the norm, Doob):
-            a.s. for <font color="#620000">\(t \geq 1\)</font>, at finite spatial
+            a.s. for <font color="#620000">\(t \geqslant 1\)</font>, at finite spatial
             cutoff, <font color="#620000">\(\sup_x (1 + |x|)^{- \varepsilon} | \eta_t
-            (x) | \leq C (\omega) t^{1 + d / 2}
-\sqrt{\log (2 + t)}\)</font>.
+            (x) | \leqslant C (\omega) t^{1 + d
+/ 2} \sqrt{\log (2 +
+            t)}\)</font>.
           </p>
         </li>
       </ul>
@@ -2300,13 +2303,13 @@ j_t = S_t^{- 1}
           <font color="#800000"><font color="#800000"><strong>Proposition.
           </strong></font></font><i>If <font color="#620000">\(\dot{\mathcal{R}}_r
           \operatorname{Cov}_{\mu_r^{\phi}}  \dot{\mathcal{R}}_r
-\leq \alpha_r
-          \dot{\mathcal{R}}_r\)</font> for all <font color="#620000">\(\phi\)</font>,
-          <font color="#620000">\(r \leq t\)</font>, then</i>
+\leqslant
+          \alpha_r  \dot{\mathcal{R}}_r\)</font> for all <font color="#620000">\(\phi\)</font>,
+          <font color="#620000">\(r \leqslant t\)</font>, then</i>
         </p>
         <p>
           <i><center>
-            \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leq
+            \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leqslant
             \mathrm{e}^{\int_0^t \alpha}
 \mathbb{E}\operatorname{Var}_{\mu_t}
             (f),\)
@@ -2314,8 +2317,8 @@ j_t = S_t^{- 1}
         </p>
         <p style="margin-bottom: 1em">
           <i>and, for <font color="#620000">\(\nu_T\)</font> log-concave, <font color="#620000">\(\operatorname{Var}_{\nu_T}
-          (f) \leq \mathrm{e}^{\int_0^t \alpha} \mathbb{E}
-\langle Df,
+          (f) \leqslant \mathrm{e}^{\int_0^t \alpha}
+\mathbb{E} \langle Df,
           \mathcal{R}_t^{- 1} Df \rangle\)</font>.</i>
         </p>
       </div>
@@ -2325,10 +2328,9 @@ j_t = S_t^{- 1}
         = -\mathbb{E} \langle \chi, \dot{\mathcal{R}} \chi \rangle\)</font>,
         <font color="#620000">\(\chi =\operatorname{Cov} (f, y)\)</font>;
         Cauchy&ndash;Schwarz gives <font color="#620000">\(\langle \chi,
-        \dot{\mathcal{R}} \chi \rangle \leq \alpha
-        \operatorname{Var}
-(f)\)</font>. Then Brascamp&ndash;Lieb for <font
-        color="#620000">\(\mu_t\)</font>.
+        \dot{\mathcal{R}} \chi \rangle \leqslant \alpha
+\operatorname{Var}
+        (f)\)</font>. Then Brascamp&ndash;Lieb for <font color="#620000">\(\mu_t\)</font>.
       </p>
       <ul>
         <li>
@@ -2341,8 +2343,9 @@ j_t = S_t^{- 1}
           <p>
             <strong>KLS conjecture</strong>: isotropic log-concave on <font
             color="#620000">\(\mathbb{R}^n\)</font>, <font color="#620000">\(\mathcal{R}_t =
-            t\)</font>: <font color="#620000">\(\operatorname{Var} (f) \leq t^{- 1}
-            \mathrm{e}^{\int \alpha} \mathbb{E} |Df|^2\)</font>. Keep <font
+            t\)</font>: <font color="#620000">\(\operatorname{Var} (f) \leqslant t^{-
+            1} \mathrm{e}^{\int \alpha} \mathbb{E}
+|Df|^2\)</font>. Keep <font
             color="#620000">\(\|\operatorname{Cov}_r \|\)</font> bounded as long as
             possible (only with high probability). Eldan 2013, Chen 2021,
             Klartag&ndash;Lehec 2022, Klartag 2023: Poincar&eacute; constant

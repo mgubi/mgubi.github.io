@@ -473,7 +473,7 @@
         \mathbb{P}_0 = Z_T^{- 1} \mathrm{e}^{- V_T
 (X_T)}\), where
         \(\mathbb{P}_0\) is the law of the Gaussian process \(X\). Then
-        \(\text{Law}_{\mathbb{P}} (X_T) = \nu_T\), and for every \(t \leq
+        \(\text{Law}_{\mathbb{P}} (X_T) = \nu_T\), and for every \(t \leqslant
         T\)</i>
       </p>
       <i><table width="100%">
@@ -584,8 +584,8 @@ t +
       <p style="margin-bottom: 1em">
         <i>with \(\Phi_0 = 0\) and a \(\mathbb{P}\)-cylindrical Brownian
         motion \(W^{\mathbb{P}}\). In particular the <em>effective force</em>
-        \((F_t)_{t \leq T}\) is a \(\mathbb{P}\)-martingale: an observable
-        field of the interacting theory.</i>
+        \((F_t)_{t \leqslant T}\) is a \(\mathbb{P}\)-martingale: an
+        observable field of the interacting theory.</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -869,7 +869,7 @@ D^2 F_t), \qquad
         </strong><class style="font-style: normal"><strong>(Zero dimensions) </strong></class><a
         id="ex:zero-dim"></a> Take \(\mathcal{M}\) a point, \(Q_t = q (t)\) scalar,
         increasing, \(V_T (x) = \lambda x^4 - ax^2\) with \(\lambda > 0\), \(a
-        \geq 0\) (a double well if \(a > 0\); Figure <a href="#fig:polchinski-0d">7.2</a> has
+        \geqslant 0\) (a double well if \(a > 0\); Figure <a href="#fig:polchinski-0d">7.2</a> has
         \(\lambda = \frac{1}{2}\), \(a = \frac{3}{2}\)). (a) Write <class
         style="font-style: normal">(<a href="#eq:polchinski">7.6</a>)</class> and solve it numerically for \(q (t)
         = 1 - \mathrm{e}^{- t}\). (b) Simulate <class style="font-style: normal">(<a href="#eq:fbsde">7.7</a>)</class>
@@ -1174,7 +1174,7 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
 := S_t^{- 1} -
         Q_T^{- 1}, \qquad \dot{\mathcal{R}}_t = S_t^{- 1}  \dot{Q}_t
 S_t^{- 1}
-        \geq 0.\)</td>
+        \geqslant 0.\)</td>
         <td align="right">(8.6)</td>
       </tr>
     </table>
@@ -1278,8 +1278,8 @@ H_t^{\ast} .\)
       </p>
       <p style="margin-bottom: 1em">
         <i>In particular \(H_t > 0\) is symmetric, \(\mathbb{1} + S_t DF_t =
-        \text{Cov}_t S_t^{- 1}\) is always invertible, and \(H_t \leq S_t\)
-        when \(V_T\) is convex.</i>
+        \text{Cov}_t S_t^{- 1}\) is always invertible, and \(H_t \leqslant
+        S_t\) when \(V_T\) is convex.</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -1335,7 +1335,7 @@ H_t^{\ast} .\)
         \mathcal{U}= S_t^{- 1} + D^2 V_T\). Two classical inequalities bound
         its covariance by the Hessian of \(\mathcal{U}\). If \(D^2
         \mathcal{U}> 0\), the Brascamp&ndash;Lieb inequality [<a href="#bib-BL76">BL76</a>],
-        \(\operatorname{Var}_{\mu} (f) \leq \mathbb{E}_{\mu} \langle Df,
+        \(\operatorname{Var}_{\mu} (f) \leqslant \mathbb{E}_{\mu} \langle Df,
         (D^2
 \mathcal{U})^{- 1} Df \rangle\), applied to linear functions \(f
         = \langle h, \cdot \rangle\), and the Cram&eacute;r&ndash;Rao
@@ -1344,10 +1344,11 @@ H_t^{\ast} .\)
       </div>
     </p>
     <center>
-      \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T (\Phi_T)])^{- 1} \leq
-      \operatorname{Cov}_t
-\leq \mathbb{E}_t [(S_t^{- 1} + D^2 V_T
-      (\Phi_T))^{- 1}] .\)
+      \(\displaystyle (\mathbb{E}_t [S_t^{- 1} + D^2 V_T (\Phi_T)])^{- 1}
+      \leqslant
+\operatorname{Cov}_t \leqslant \mathbb{E}_t [(S_t^{- 1} + D^2
+      V_T (\Phi_T))^{-
+1}] .\)
     </center>
     <p>
       The lower bound follows from \(\mathbb{E}_{\mu} [(y - m) \otimes
@@ -1365,19 +1366,20 @@ H_t^{\ast} .\)
     <ul>
       <li>
         <p>
-          If \(V_T\) is convex, then \(\operatorname{Cov}_t \leq S_t\): the
-          interaction can only reduce the conditional variance. Equivalently
-          \(D^2 V_t \geq 0\): convexity is preserved along the Polchinski flow
-          (as also follows from the Pr&eacute;kopa&ndash;Leindler inequality),
-          and \(D^2 \Gamma_t \geq 0\) in <class style="font-style: normal">(<a href="#eq:F-gradient">8.10</a>)</class>.
+          If \(V_T\) is convex, then \(\operatorname{Cov}_t \leqslant S_t\):
+          the interaction can only reduce the conditional variance.
+          Equivalently \(D^2 V_t \geqslant 0\): convexity is preserved along
+          the Polchinski flow (as also follows from the
+          Pr&eacute;kopa&ndash;Leindler inequality), and \(D^2 \Gamma_t
+          \geqslant 0\) in <class style="font-style: normal">(<a href="#eq:F-gradient">8.10</a>)</class>.
         </p>
       </li>
       <li>
         <p>
-          If \(D^2 V_T \geq \kappa\) with \(\kappa > 0\), then
-          \(\operatorname{Cov}_t \leq (S_t^{- 1} + \kappa)^{- 1}\) uniformly
-          in the conditioning: a uniform mass in the interaction is a uniform
-          mass in every conditional law.
+          If \(D^2 V_T \geqslant \kappa\) with \(\kappa > 0\), then
+          \(\operatorname{Cov}_t \leqslant (S_t^{- 1} + \kappa)^{- 1}\)
+          uniformly in the conditioning: a uniform mass in the interaction is
+          a uniform mass in every conditional law.
         </p>
       </li>
       <li>
@@ -1516,8 +1518,8 @@ y\), for every \(V_T\) bounded below. Its gradient in \(j\)
       <class style="font-style: normal">(<a href="#eq:moreau">8.11</a>)</class> requires. At \(t = 0\), where
       \(S_0 = Q_T\), this semiconvexity is the convexity of
       \(\Gamma^{\text{EAA}}_0\). \(\Gamma_t\) itself is convex if and only if
-      \(\operatorname{Cov}_t \leq S_t\), which holds for convex \(V_T\) but
-      may fail for a double well at low resolution. Convexity matters only
+      \(\operatorname{Cov}_t \leqslant S_t\), which holds for convex \(V_T\)
+      but may fail for a double well at low resolution. Convexity matters only
       without noise: the Hopf&ndash;Lax potential <class style="font-style: normal">(<a href="#eq:hopf-lax">8.16</a>)</class>
       is merely semiconcave, and unless \(S_t^{- 1} + D^2 V_T > 0\) the
       characteristics cross, producing caustics and shocks of the force. The
@@ -1849,8 +1851,8 @@ S_t^{- 1} (y - x)
       </div>
       <h5>Entropy as quadratic variation.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        Let \(\rho \geq 0\) with \(\mathbb{E}_{\nu_T} \rho = 1\), and let
-        \(M_t =\mathbb{E}_t [\rho (\Phi_T)] = G_t (\Phi_t)\), with \(G_t
+        Let \(\rho \geqslant 0\) with \(\mathbb{E}_{\nu_T} \rho = 1\), and
+        let \(M_t =\mathbb{E}_t [\rho (\Phi_T)] = G_t (\Phi_t)\), with \(G_t
         (\phi) = \int \rho \hspace{0.17em} \mathrm{d} \mu_t^{\phi}\). The
         martingale \(M\) runs from \(M_0 = 1\) to \(M_T = \rho (\Phi_T)\), and
         its noise is that of the field: \(\mathrm{d} M_t = \langle DG_t
@@ -1894,8 +1896,8 @@ S_t^{- 1} (y - x)
       <p>
         <i><center>
           \(\displaystyle \dot{Q}_t D^2 V_t (\phi)  \dot{Q}_t + \frac{1}{2}
-          \ddot{Q}_t \geq \kappa_t
-\dot{Q}_t .\)
+          \ddot{Q}_t \geqslant
+\kappa_t  \dot{Q}_t .\)
         </center></i>
       </p>
       <p>
@@ -1903,13 +1905,13 @@ S_t^{- 1} (y - x)
       </p>
       <p style="margin-bottom: 1em">
         <i><center>
-          \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leq
-          \frac{2}{\gamma} \mathbb{E}_{\nu_T}
-\left[ \left\| \dot{Q}_T^{1 / 2}
-          D \sqrt{\rho} \right\|^2 \right], \qquad
-\frac{1}{\gamma} = \int_0^T
-          \exp \left( - 2 \int_t^T \kappa_r \mathrm{d} r
-\right) \mathrm{d}
+          \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leqslant
+          \frac{2}{\gamma}
+\mathbb{E}_{\nu_T} \left[ \left\| \dot{Q}_T^{1 / 2}
+          D \sqrt{\rho} \right\|^2
+\right], \qquad \frac{1}{\gamma} = \int_0^T
+          \exp \left( - 2 \int_t^T \kappa_r
+\mathrm{d} r \right) \mathrm{d}
           t.\)
         </center></i>
       </p>
@@ -1918,8 +1920,8 @@ S_t^{- 1} (y - x)
       The hypothesis gives, at each resolution, the gradient bound
     </p>
     <center>
-      \(\displaystyle \left\| \dot{Q}_t^{1 / 2} D \sqrt{G_t} \right\|^2 \leq
-      \mathrm{e}^{- 2
+      \(\displaystyle \left\| \dot{Q}_t^{1 / 2} D \sqrt{G_t} \right\|^2
+      \leqslant \mathrm{e}^{- 2
 \int_t^T \kappa_r \mathrm{d} r}  \int \left\|
       \dot{Q}_T^{1 / 2} D \sqrt{\rho}
 \right\|^2 \mathrm{d} \mu_t^{\phi} ;\)
@@ -1928,7 +1930,7 @@ S_t^{- 1} (y - x)
       inserted in the entropy formula it gives the theorem [<a href="#bib-BBD24">BBD24</a>].
       For \(V_T = 0\) and a linear profile \(Q_t = tQ_T / T\) one may take
       \(\kappa = 0\), so \(1 / \gamma = T\) and the theorem is the Gaussian
-      log-Sobolev inequality \(\operatorname{Ent} (\rho) \leq 2\mathbb{E}
+      log-Sobolev inequality \(\operatorname{Ent} (\rho) \leqslant 2\mathbb{E}
       \langle D \sqrt{\rho}, Q_T D
 \sqrt{\rho} \rangle\). The hypothesis is a
       convexity condition on the effective potentials at every scale, not on
@@ -1952,10 +1954,10 @@ S_t^{- 1} (y - x)
     </p>
     <center>
       \(\displaystyle S_t  \dot{\mathcal{R}}_t \operatorname{Cov}_t
-      \dot{\mathcal{R}}_t S_t \leq
-\dot{Q}_t S_t^{- 1}  \dot{Q}_t +
-      \frac{1}{2}  \ddot{Q}_t - \kappa_t  \dot{Q}_t
-.\)
+      \dot{\mathcal{R}}_t S_t
+\leqslant \dot{Q}_t S_t^{- 1}  \dot{Q}_t +
+      \frac{1}{2}  \ddot{Q}_t - \kappa_t
+\dot{Q}_t .\)
     </center>
     <p>
       If \(\dot{Q}_t\) is invertible, multiplying on the left by \(S_t
@@ -1966,7 +1968,7 @@ S_t^{- 1} (y - x)
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:lsi-cov"></a>\(\displaystyle
-        \operatorname{Cov}_{\mu_t^{\phi}} \leq S_t - S_t  \dot{Q}_t^{- 1}
+        \operatorname{Cov}_{\mu_t^{\phi}} \leqslant S_t - S_t  \dot{Q}_t^{- 1}
         \left(
 \kappa_t  \dot{Q}_t - \frac{1}{2}  \ddot{Q}_t \right)
         \dot{Q}_t^{- 1} S_t
@@ -1985,7 +1987,7 @@ S_t^{- 1} (y - x)
       \(\kappa_t > 0\)), every conditional law is strictly more concentrated
       than the unresolved Gaussian fluctuation; if not,
       \(\operatorname{Cov}_t\) may exceed \(S_t\), as in a double well at low
-      resolution. A concave profile (\(\ddot{Q} \leq 0\)) makes the bound
+      resolution. A concave profile (\(\ddot{Q} \leqslant 0\)) makes the bound
       smaller but forces \(\kappa\) down by the same amount: for the Gaussian
       with \(Q_t = 1 - \mathrm{e}^{- t}\) one has \(\ddot{Q} = - \dot{Q}\),
       the hypothesis holds with \(\kappa = - \frac{1}{2}\), and
@@ -1993,13 +1995,13 @@ S_t^{- 1} (y - x)
       the conditional covariance, uniform in the conditioning, measured in the
       metric \(\dot{\mathcal{R}}_t\). Closely related is the <em>entropic
       stability</em> of Chen and Eldan [<a href="#bib-CE22">CE22</a>] (see also [<a href="#bib-BBD24">BBD24</a>]):
-      if, for all \(r \leq t\) and all \(\phi\), \(\dot{\mathcal{R}}_r
+      if, for all \(r \leqslant t\) and all \(\phi\), \(\dot{\mathcal{R}}_r
       \operatorname{Cov}_{\mu_r^{\phi}}  \dot{\mathcal{R}}_r
-\leq \alpha_r
-      \dot{\mathcal{R}}_r\), then
+\leqslant
+      \alpha_r  \dot{\mathcal{R}}_r\), then
     </p>
     <center>
-      \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leq \exp \left(
+      \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leqslant \exp \left(
       \int_0^t \alpha_r
 \mathrm{d} r \right) \mathbb{E} \left[
       \operatorname{Ent}_{\mu_t^{\Phi_t}}
@@ -2141,17 +2143,17 @@ S_t^{- 1} (y - x)
         [(y - m) \otimes D\mathcal{U}] = 1\) and \(\mathbb{E}_{\mu}
         [D\mathcal{U} \otimes D\mathcal{U}] =\mathbb{E}_{\mu}
         D^2
-\mathcal{U}\), and deduce \(\operatorname{Cov}_{\mu} \geq
+\mathcal{U}\), and deduce \(\operatorname{Cov}_{\mu} \geqslant
         (\mathbb{E}_{\mu} D^2 \mathcal{U})^{- 1}\). (b) For \(D^2 \mathcal{U}>
         0\), prove the Brascamp&ndash;Lieb inequality for linear \(f\) by
         H&ouml;rmander's \(L^2\) method: solve \(Lg = f -\mathbb{E}_{\mu} f\)
         with \(L = - \Delta + \langle D\mathcal{U}, D \rangle\) and use
-        \(\mathbb{E}_{\mu} [(Lg)^2] \geq \mathbb{E}_{\mu} \langle Dg, D^2
-        \mathcal{U}Dg
-\rangle\). (c) In zero dimensions, with \(S_t = S\) and
-        \(V_T (y) = \lambda y^4\), compute both bounds numerically and compare
-        with the conditional variance; repeat for the double well \(V_T (y) =
-        \frac{1}{2} y^4 - \frac{3}{2} y^2\).</font>
+        \(\mathbb{E}_{\mu} [(Lg)^2] \geqslant \mathbb{E}_{\mu} \langle Dg,
+        D^2
+\mathcal{U}Dg \rangle\). (c) In zero dimensions, with \(S_t = S\)
+        and \(V_T (y) = \lambda y^4\), compute both bounds numerically and
+        compare with the conditional variance; repeat for the double well
+        \(V_T (y) = \frac{1}{2} y^4 - \frac{3}{2} y^2\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -2245,9 +2247,9 @@ X^u := X + I (u),\)
       </tr>
     </table>
     <p style="margin-bottom: 1em">
-      So the cost is \(\geq V_0 (0)\), with equality iff \(u = u^{\ast}\).
-      With this control \(X^{u^{\ast}}\) solves the same SDE as \(\Phi\) in
-      <class style="font-style: normal">(<a href="#eq:fbsde">7.7</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
+      So the cost is \(\geqslant V_0 (0)\), with equality iff \(u =
+      u^{\ast}\). With this control \(X^{u^{\ast}}\) solves the same SDE as
+      \(\Phi\) in <class style="font-style: normal">(<a href="#eq:fbsde">7.7</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       <div style="display: inline">
@@ -2285,17 +2287,17 @@ X^u := X + I (u),\)
       </div>
       <h5>Entropy.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        By Girsanov, \(\frac{1}{2} \mathbb{E}_0  \int \|u\|^2 \geq \text{Ent}
-        (\text{Law} (X^u)
-\hspace{0.17em} | \hspace{0.17em} \text{Law} (X))\),
-        which is at least the entropy of the terminal marginal. So <class
-        style="font-style: normal">(<a href="#eq:BD">9.1</a>)</class> is a pathwise lift of the Gibbs
-        variational principle \(- \log Z_T = \inf_{\nu} \{ \int V_T
-        \hspace{0.17em} \mathrm{d} \nu +
-\text{Ent} (\nu | \mu^{Q_T})\}\). The
-        lift is useful because adapted drifts can be <em>constructed scale by
-        scale</em>: one looks for \(u\) as a functional of the Gaussian
-        process \(X\), not as an unknown measure.
+        By Girsanov, \(\frac{1}{2} \mathbb{E}_0  \int \|u\|^2 \geqslant
+        \text{Ent} (\text{Law} (X^u)
+\hspace{0.17em} | \hspace{0.17em}
+        \text{Law} (X))\), which is at least the entropy of the terminal
+        marginal. So <class style="font-style: normal">(<a href="#eq:BD">9.1</a>)</class> is a pathwise
+        lift of the Gibbs variational principle \(- \log Z_T = \inf_{\nu} \{
+        \int V_T \hspace{0.17em} \mathrm{d} \nu +
+\text{Ent} (\nu |
+        \mu^{Q_T})\}\). The lift is useful because adapted drifts can be
+        <em>constructed scale by scale</em>: one looks for \(u\) as a
+        functional of the Gaussian process \(X\), not as an unknown measure.
       </div>
     </p>
     <p>
@@ -2825,12 +2827,12 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">A.2</class>.
         </strong><class style="font-style: normal"><strong>(The sunset) </strong></class><a id="ex:sunset"></a>
-        (a) Show that \(\int_{|z| \leq 1} G (z)^3 \hspace{0.17em} \mathrm{d} z
-        = \infty\) in \(d = 3\), and that \(\int Q_T^3 = \frac{1}{16 \pi^2}
-        \log T + O (1)\) for the heat profile. (b) Show that \(Q_T^3 - (Q_T -
-        Q_t)^3\) is integrable uniformly in \(T\), and deduce that the
-        counterterm <class style="font-style: normal">(<a href="#eq:gammaT">A.7</a>)</class> makes the \(:
-        \phi^2\): coefficient in <class style="font-style: normal">(<a href="#eq:second-order">A.6</a>)</class>
+        (a) Show that \(\int_{|z| \leqslant 1} G (z)^3 \hspace{0.17em}
+        \mathrm{d} z = \infty\) in \(d = 3\), and that \(\int Q_T^3 =
+        \frac{1}{16 \pi^2} \log T + O (1)\) for the heat profile. (b) Show
+        that \(Q_T^3 - (Q_T - Q_t)^3\) is integrable uniformly in \(T\), and
+        deduce that the counterterm <class style="font-style: normal">(<a href="#eq:gammaT">A.7</a>)</class>
+        makes the \(: \phi^2\): coefficient in <class style="font-style: normal">(<a href="#eq:second-order">A.6</a>)</class>
         converge. (c) Show that the remaining part \(\iint S^3  (x, y)  (\phi
         (x) - \phi (y))^2\) converges for smooth \(\phi\).</font>
       </p>
@@ -2843,8 +2845,9 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         graph of \(\Phi^4_d\) with \(n\) vertices and \(E\) external legs is
         \(\omega = d - \frac{d - 2}{2} E + (d - 4) n\). Deduce that in \(d =
         3\) the only divergent graphs with loops are the two-point graphs with
-        \(n \leq 2\) (the tadpole and double tadpole, removed by Wick
-        ordering, and the sunset) and vacuum graphs with \(n \leq 3\).</font>
+        \(n \leqslant 2\) (the tadpole and double tadpole, removed by Wick
+        ordering, and the sunset) and vacuum graphs with \(n \leqslant
+        3\).</font>
       </p>
     </div>
     <h2 id="auto-55"><a id="sec:DS"></a>Appendix B<span style="margin-left: 1em"></span>Dyson&ndash;Schwinger
@@ -2881,7 +2884,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         <i>is a centred \(\mathbb{P}\)-martingale, with \(\mathrm{d} \eta_t =
         K \dot{Q}_t^{1 / 2} \mathrm{d} W^{\mathbb{P}}_t - J_t
 \hspace{0.17em}
-        \mathrm{d} F_t\). For every \(t \leq T\), every \(h\) and every
+        \mathrm{d} F_t\). For every \(t \leqslant T\), every \(h\) and every
         functional \(G\),</i>
       </p>
       <i><table width="100%">
@@ -2952,7 +2955,7 @@ F_t\). The drift cancels,
       plays the role of the renormalised cube, the limit \(t \to \infty\) of
       <class style="font-style: normal">(<a href="#eq:field-eq-scale">B.4</a>)</class> corresponds to the renormalised
       DS equation of [<a href="#bib-GH21">GH21</a>]. Lecture 6 proves the field equation
-      at every resolution for the subsequential limit (Theorem <a href="cqft_lecture6.html#thm:field-q">18.6</a>).
+      at every resolution for the subsequential limit (Theorem <a href="cqft_lecture6.html#thm:field-q">18.9</a>).
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">B.2</class>. </strong><class style="font-style: normal"><strong>(Comparison
@@ -3016,7 +3019,7 @@ F_t\). The drift cancels,
         </strong></class><a id="prop:subgauss"></a>Let \(0 < t < T\). Then \(\eta_t
         =\mathbb{E} [J_t  (Q_t (1 - J_t))^{- 1} \zeta_t | \Phi_t]\), and
         \(\eta_t\) is dominated in the convex order by \(N (0,
-        \mathcal{R}_t)\): \(\mathbb{E} \Psi (\eta_t) \leq \mathbb{E} \Psi
+        \mathcal{R}_t)\): \(\mathbb{E} \Psi (\eta_t) \leqslant \mathbb{E} \Psi
         (\Xi)\), \(\Xi \sim N (0, \mathcal{R}_t)\), for every convex \(\Psi\)
         for which both sides are defined. In particular, for every \(h\) and
         \(u \in \mathbb{R}\),</i>
@@ -3024,7 +3027,7 @@ F_t\). The drift cancels,
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:noise-mgf"></a>\(\displaystyle \mathbb{E}
-          \mathrm{e}^{u \langle h, \eta_t \rangle} \leq \exp
+          \mathrm{e}^{u \langle h, \eta_t \rangle} \leqslant \exp
           \left(
 \frac{u^2}{2} \langle h, \mathcal{R}_t h \rangle \right) :
           \)</td>
@@ -3043,8 +3046,8 @@ F_t\). The drift cancels,
       \Phi_T)\) and \(Dg (z) = - B^{- 1} z \hspace{0.17em} g (z)\), so \(- D
       \log p_t (\Phi_t) =\mathbb{E} [B^{- 1} \zeta_t | \Phi_t]\); apply
       \(J_t\) and use <class style="font-style: normal">(<a href="#eq:noise-score">B.5</a>)</class>. By conditional
-      Jensen, \(\Psi (\eta_t) \leq \mathbb{E} [\Psi (J_t B^{- 1} \zeta_t) |
-      \Phi_t]\), and \(J_t B^{- 1} \zeta_t\) is centred Gaussian with
+      Jensen, \(\Psi (\eta_t) \leqslant \mathbb{E} [\Psi (J_t B^{- 1} \zeta_t)
+      | \Phi_t]\), and \(J_t B^{- 1} \zeta_t\) is centred Gaussian with
       covariance \(J_t B^{- 1} J_t =\mathcal{R}_t\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -3055,10 +3058,11 @@ F_t\). The drift cancels,
     <center>
       \(\displaystyle \mathcal{R}_t = \frac{A \mathrm{e}^{A /
       T^2}}{\mathrm{e}^{A (t^{- 2} - T^{-
-2})} - 1} \leq \frac{4}{3} t^2 \quad
-      (T \geq 2 t), \qquad \mathcal{R}_t =
-\frac{A}{\mathrm{e}^{A / t^2} - 1}
-      \leq t^2 \quad (T = \infty)\)
+2})} - 1} \leqslant \frac{4}{3} t^2
+      \quad (T \geqslant 2 t), \qquad
+\mathcal{R}_t = \frac{A}{\mathrm{e}^{A /
+      t^2} - 1} \leqslant t^2 \quad (T =
+\infty)\)
     </center>
     <p>
       (Exercise <a href="#ex:subgauss">B.3</a>). At a finite spatial cutoff all of this
@@ -3088,17 +3092,17 @@ F_t\). The drift cancels,
 \end{array} \right.\)
     </center>
     <p>
-      Since \(x / (\mathrm{e}^x - 1) \leq \mathrm{e}^{- x / 2}\),
-      \(\mathcal{R}_t \leq t^2 \mathrm{e}^{- A / 2 t^2}\): at resolution \(t\)
-      the noise is no larger than \(t\) times a white noise smoothed at scale
-      \(1 / t\). Pointwise, \(\operatorname{Var} \hspace{0.17em} \eta_t (x)
-      \leq \mathcal{R}_t (x, x)
-\lesssim t^{d + 2}\), i.e. \(\eta_t (x) = O
-      (t^{1 + d / 2})\). This is the size at scale \(1 / t\) of a distribution
-      of regularity \(- 1 - d / 2\) (\(- 5 / 2\) in \(d = 3\)): seen at its
-      own resolution, the noise is one derivative rougher than white noise
-      (\(- d / 2\)) and two rougher than the GFF (\(1 - d / 2\)), the same as
-      the free noise \(A \varphi = A^{1 / 2} \xi\) of the
+      Since \(x / (\mathrm{e}^x - 1) \leqslant \mathrm{e}^{- x / 2}\),
+      \(\mathcal{R}_t \leqslant t^2 \mathrm{e}^{- A / 2 t^2}\): at resolution
+      \(t\) the noise is no larger than \(t\) times a white noise smoothed at
+      scale \(1 / t\). Pointwise, \(\operatorname{Var} \hspace{0.17em} \eta_t
+      (x) \leqslant \mathcal{R}_t (x, x)
+\lesssim t^{d + 2}\), i.e. \(\eta_t
+      (x) = O (t^{1 + d / 2})\). This is the size at scale \(1 / t\) of a
+      distribution of regularity \(- 1 - d / 2\) (\(- 5 / 2\) in \(d = 3\)):
+      seen at its own resolution, the noise is one derivative rougher than
+      white noise (\(- d / 2\)) and two rougher than the GFF (\(1 - d / 2\)),
+      the same as the free noise \(A \varphi = A^{1 / 2} \xi\) of the
       Dyson&ndash;Schwinger equation, whatever the interaction. It is not a
       bound on a limit distribution: \(\eta_t\) is a martingale in \(t\), not
       the smoothing of a fixed distribution, and on a fixed test function
@@ -3117,27 +3121,28 @@ F_t\). The drift cancels,
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">B.4</class>. </strong><class style="font-style: normal"><strong>(Pathwise
       bounds) </strong></class><a id="rem:noise-pathwise"></a><class style="font-style: normal">(sketch)</class> Work
-      at finite spatial cutoff, with \(T = \infty\) or \(t \leq T / 2\), so
-      that \(\mathcal{R}_t\) obeys the bounds below uniformly in the cutoff.
-      The norm \(\|f\|_{\varepsilon} = \sup_x (1 + |x|)^{- \varepsilon} |f (x)
-      |\) is convex, so Proposition <a href="#prop:subgauss">B.3</a> dominates \(\| \eta_t
-      \|_{\varepsilon}\) by \(\| \Xi \|_{\varepsilon}\), with \(\Xi \sim N (0,
-      \mathcal{R}_t)\). For this Gaussian field, \(\mathcal{R}_t (x, x)
-      \lesssim t^{d + 2}\) and \(\langle \delta_x - \delta_y, \mathcal{R}_t
-      (\delta_x - \delta_y) \rangle
-\lesssim t^{d + 4} |x - y|^2\), so
-      Dudley's bound and Gaussian concentration give Gaussian tails for \(\|
-      \Xi \|_{\varepsilon}\) at the level \(t^{1 + d / 2} \sqrt{\log (2 +
-      t)}\), uniformly in \(L\). Since \(\eta\) is a martingale, \(\| \eta_s
-      \|_{\varepsilon}\) is a submartingale, and Doob's inequality extends the
-      tails to \(\sup_{s \leq t}\). Summing over dyadic \(t\), almost surely
+      at finite spatial cutoff, with \(T = \infty\) or \(t \leqslant T / 2\),
+      so that \(\mathcal{R}_t\) obeys the bounds below uniformly in the
+      cutoff. The norm \(\|f\|_{\varepsilon} = \sup_x (1 + |x|)^{-
+      \varepsilon} |f (x) |\) is convex, so Proposition <a href="#prop:subgauss">B.3</a>
+      dominates \(\| \eta_t \|_{\varepsilon}\) by \(\| \Xi \|_{\varepsilon}\),
+      with \(\Xi \sim N (0, \mathcal{R}_t)\). For this Gaussian field,
+      \(\mathcal{R}_t (x, x) \lesssim t^{d + 2}\) and \(\langle \delta_x -
+      \delta_y, \mathcal{R}_t (\delta_x - \delta_y) \rangle
+\lesssim t^{d + 4}
+      |x - y|^2\), so Dudley's bound and Gaussian concentration give Gaussian
+      tails for \(\| \Xi \|_{\varepsilon}\) at the level \(t^{1 + d / 2}
+      \sqrt{\log (2 + t)}\), uniformly in \(L\). Since \(\eta\) is a
+      martingale, \(\| \eta_s \|_{\varepsilon}\) is a submartingale, and
+      Doob's inequality extends the tails to \(\sup_{s \leqslant t}\). Summing
+      over dyadic \(t\), almost surely
     </p>
     <center>
-      \(\displaystyle \| \eta_t \|_{\varepsilon} \leq C (\omega) t^{1 + d / 2}
-      \sqrt{\log (2 + t)}
-\qquad \text{for all } t \geq 1 \quad (1 \leq t \leq
-      T / 2 \text{ if } T <
-\infty),\)
+      \(\displaystyle \| \eta_t \|_{\varepsilon} \leqslant C (\omega) t^{1 + d
+      / 2} \sqrt{\log (2 +
+t)} \qquad \text{for all } t \geqslant 1 \quad (1
+      \leqslant t \leqslant T / 2
+\text{ if } T < \infty),\)
     </center>
     <p style="margin-bottom: 1em">
       with \(C\) having Gaussian tails uniformly in the interaction and in the
@@ -3156,14 +3161,14 @@ F_t\). The drift cancels,
         \mathrm{d} W_s\), so \(\int_0^t J_s \Upsilon_s \mathrm{d} W_s = K
         \int_0^t \dot{Q}_s^{1 / 2}
 \mathrm{d} W_s - \eta_t\). It&ocirc;'s
-        isometry, \((a + b)^2 \leq 2 a^2 + 2 b^2\) and <class style="font-style: normal">(<a href="#eq:noise-mgf">B.7</a>)</class>
-        give
+        isometry, \((a + b)^2 \leqslant 2 a^2 + 2 b^2\) and <class style="font-style: normal">(<a
+        href="#eq:noise-mgf">B.7</a>)</class> give
       </div>
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:force-integrand"></a>\(\displaystyle \mathbb{E} \int_0^t \|
-        \Upsilon_s^{\ast} J_s h \|^2 \mathrm{d} s \leq 2
+        \Upsilon_s^{\ast} J_s h \|^2 \mathrm{d} s \leqslant 2
 \langle h,
         \mathcal{R}_t h \rangle + 2 \langle h, KQ_t Kh \rangle . \)</td>
         <td align="right">(B.8)</td>
@@ -3171,8 +3176,8 @@ F_t\). The drift cancels,
     </table>
     <p>
       For the heat profile with \(T = \infty\), \(KQ_t K = A \mathrm{e}^{- A /
-      t^2} \leq t^2 / \mathrm{e}\), so the right-hand side is at most \(2 (1 +
-      \mathrm{e}^{- 1}) t^2 \|h\|_{L^2}^2\). This controls a smoothed
+      t^2} \leqslant t^2 / \mathrm{e}\), so the right-hand side is at most \(2
+      (1 + \mathrm{e}^{- 1}) t^2 \|h\|_{L^2}^2\). This controls a smoothed
       derivative of the force, \(\Upsilon_s = DF_s (\Phi_s)  \dot{Q}_s^{1 /
       2}\), without any estimate on the terminal force.
     </p>
@@ -3223,14 +3228,14 @@ F_t\). The drift cancels,
         </strong></class><a id="ex:subgauss"></a>(a) Check <class style="font-style: normal">(<a href="#eq:noise-score">B.5</a>)</class>
         and the bridge representation, and show that the Girsanov density
         depends only on \(X_T\). (b) Compute \(\mathcal{R}_t\) for the heat
-        profile, and show that \(\mathcal{R}_t \leq \frac{4}{3} t^2\) for \(T
-        \geq 2 t\) and \(\mathcal{R}_t \leq t^2\) for \(T = \infty\). (c)
-        Compute the law of \(\eta_t\) for \(V_T = 0\) and for \(V_T =
-        \frac{\kappa}{2} \| \varphi \|^2\), and show that its covariance tends
-        to \(\mathcal{R}_t\) as \(\kappa \to \infty\). In what sense is <class
-        style="font-style: normal">(<a href="#eq:noise-mgf">B.7</a>)</class> sharp? (d) Show that \(\mathcal{R}_t
-        (x, x) \asymp t^{d + 2}\) for \(t \gg m\), and complete the argument
-        of Remark <a href="#rem:noise-pathwise">B.4</a>.</font>
+        profile, and show that \(\mathcal{R}_t \leqslant \frac{4}{3} t^2\) for
+        \(T \geqslant 2 t\) and \(\mathcal{R}_t \leqslant t^2\) for \(T =
+        \infty\). (c) Compute the law of \(\eta_t\) for \(V_T = 0\) and for
+        \(V_T = \frac{\kappa}{2} \| \varphi \|^2\), and show that its
+        covariance tends to \(\mathcal{R}_t\) as \(\kappa \to \infty\). In
+        what sense is <class style="font-style: normal">(<a href="#eq:noise-mgf">B.7</a>)</class> sharp? (d) Show
+        that \(\mathcal{R}_t (x, x) \asymp t^{d + 2}\) for \(t \gg m\), and
+        complete the argument of Remark <a href="#rem:noise-pathwise">B.4</a>.</font>
       </p>
     </div>
     <h2 id="auto-61"><a id="sec:localisation"></a>Appendix C<span style="margin-left: 1em"></span>Stochastic
@@ -3336,16 +3341,16 @@ independent of } \Phi_T, \quad \mathbb{E} [N_s
         <strong class="enunciation-name">Proposition <class style="font-style: normal">C.1</class>.
         </strong><i><class style="font-style: normal"><strong>(Poincar&eacute; from the
         localisation) </strong></class><a id="prop:loc-poincare"></a>Suppose that, for all \(r
-        \leq t\) and all \(\phi\), \(\dot{\mathcal{R}}_r
+        \leqslant t\) and all \(\phi\), \(\dot{\mathcal{R}}_r
         \operatorname{Cov}_{\mu_r^{\phi}}  \dot{\mathcal{R}}_r
-\leq \alpha_r
-        \dot{\mathcal{R}}_r\). Then, for every \(f\),</i>
+\leqslant
+        \alpha_r  \dot{\mathcal{R}}_r\). Then, for every \(f\),</i>
       </p>
       <p>
         <i><center>
-          \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leq \exp \left(
-          \int_0^t \alpha_r \mathrm{d} r
-\right)
+          \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leqslant \exp \left(
+          \int_0^t \alpha_r
+\mathrm{d} r \right)
           \mathbb{E}\operatorname{Var}_{\mu_t^{\Phi_t}} (f) .\)
         </center></i>
       </p>
@@ -3354,10 +3359,11 @@ independent of } \Phi_T, \quad \mathbb{E} [N_s
       </p>
       <p style="margin-bottom: 1em">
         <i><center>
-          \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leq \exp \left(
-          \int_0^t \alpha_r \mathrm{d} r
-\right) \mathbb{E}_{\nu_T} \langle
-          Df, \mathcal{R}_t^{- 1} Df \rangle .\)
+          \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leqslant \exp \left(
+          \int_0^t \alpha_r
+\mathrm{d} r \right) \mathbb{E}_{\nu_T} \langle
+          Df, \mathcal{R}_t^{- 1} Df
+\rangle .\)
         </center></i>
       </p>
     </div>
@@ -3370,17 +3376,17 @@ independent of } \Phi_T, \quad \mathbb{E} [N_s
       \mathbb{E}\operatorname{Var}_{\mu_r^{\Phi_r}} (f)\) has \(v' =
       -\mathbb{E} \langle \chi_r, \dot{\mathcal{R}}_r \chi_r \rangle\) and \(v
       (0) =\operatorname{Var}_{\nu_T} (f)\). By Cauchy&ndash;Schwarz, with \(h
-      = \dot{\mathcal{R}}_r \chi_r\), \(\langle \chi_r, h \rangle^2 \leq
+      = \dot{\mathcal{R}}_r \chi_r\), \(\langle \chi_r, h \rangle^2 \leqslant
       \operatorname{Var}_{\mu_r^{\Phi_r}} (f)
 \langle h, \operatorname{Cov}_r
-      h \rangle \leq \alpha_r
-\operatorname{Var}_{\mu_r^{\Phi_r}} (f)  \langle
-      \chi_r, \dot{\mathcal{R}}_r
-\chi_r \rangle\). Hence \(v' \geq - \alpha_r
-      v\), which gives the first bound. For the second, the Hessian of the
-      potential of \(\mu_t^{\phi}\) is at least \(\mathcal{R}_t\): apply
-      Brascamp&ndash;Lieb to \(\mu_t^{\phi}\) and take the expectation.<span
-      style="margin-left: 1em"></span>\(\Box\)
+      h \rangle \leqslant \alpha_r
+\operatorname{Var}_{\mu_r^{\Phi_r}} (f)
+      \langle \chi_r, \dot{\mathcal{R}}_r
+\chi_r \rangle\). Hence \(v'
+      \geqslant - \alpha_r v\), which gives the first bound. For the second,
+      the Hessian of the potential of \(\mu_t^{\phi}\) is at least
+      \(\mathcal{R}_t\): apply Brascamp&ndash;Lieb to \(\mu_t^{\phi}\) and
+      take the expectation.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       For \(V_T = 0\) one has \(\operatorname{Cov}_r = S_r\). In one mode, or
@@ -3398,9 +3404,9 @@ independent of } \Phi_T, \quad \mathbb{E} [N_s
       <div style="display: inline">
         Take an isotropic log-concave measure on \(\mathbb{R}^n\) (mean zero,
         covariance \(1\)) and the identity control, \(\mathcal{R}_t = t\). The
-        second bound reads \(\operatorname{Var} (f) \leq t^{- 1}
-        \mathrm{e}^{\int_0^t \alpha} \mathbb{E}
-|Df|^2\), so a Poincar&eacute;
+        second bound reads \(\operatorname{Var} (f) \leqslant t^{- 1}
+        \mathrm{e}^{\int_0^t \alpha}
+\mathbb{E} |Df|^2\), so a Poincar&eacute;
         inequality follows if \(\operatorname{Cov}_r\) stays bounded in
         operator norm up to some time \(t\). The
         Kannan&ndash;Lov&aacute;sz&ndash;Simonovits conjecture asks for a
@@ -3512,9 +3518,9 @@ independent of } \Phi_T, \quad \mathbb{E} [N_s
         \frac{1}{2} N (a, \sigma^2) + \frac{1}{2} N (- a, \sigma^2)\), compute
         \(\operatorname{Cov}_{\mu_r^{\phi}}\) and its supremum over \(\phi\).
         Using the first bound as \(t \to \infty\), deduce the Poincar&eacute;
-        constant \(\leq \sigma^2 \mathrm{e}^{a^2 / \sigma^2}\). Compare with
-        the true order \(\mathrm{e}^{a^2 / 2 \sigma^2}\): why is the exponent
-        off by a factor \(2\)?</font>
+        constant \(\leqslant \sigma^2 \mathrm{e}^{a^2 / \sigma^2}\). Compare
+        with the true order \(\mathrm{e}^{a^2 / 2 \sigma^2}\): why is the
+        exponent off by a factor \(2\)?</font>
       </p>
     </div>
     <h2 id="auto-67">References<span style="margin-left: 1em"></span></h2>

@@ -147,54 +147,44 @@
       <p>
 
       </p>
+      <p>
+        For every coupling <font color="#620000">\(\lambda > 0\)</font> and every mass
+        <font color="#620000">\(m^2 = q_0 > 0\)</font>, on a fixed torus, with no
+        smallness, and an explicit counterterm with arbitrary finite part:
+      </p>
       <ul>
         <li>
           <p>
-            Large mass <font color="#620000">\(m^2 = q_0\)</font> compared with the
-            coupling: <font color="#620000">\(\gamma q_0^{- 1 / 2} \ll 1\)</font>,
-            <font color="#620000">\(\gamma = 3 \lambda\)</font>. A weak dimensionless
-            coupling on a fixed torus.
+            the whole lattice sequence converges to a measure <font color="#620000">\(\nu\)</font>,
+            an explicit density over an explicit SDE;
           </p>
         </li>
         <li>
           <p>
-            Tightness of the lattice measures in <font color="#620000">\(H^{-
-            s}\)</font>, <font color="#620000">\(s > \frac{1}{2}\)</font>.
+            the forecasts converge to the solution of an FBSDE from <font
+            color="#620000">\(Y_{q_0} = 0\)</font>, driven by the limit of the lattice
+            innovations, and <font color="#620000">\(\psi_q = m_q (\Phi_q)\)</font>;
           </p>
         </li>
         <li>
           <p>
-            A subsequential limit: an FBSDE on <font color="#620000">\([q_0,
-            \infty)\)</font>, driven by a Brownian motion obtained as the
-            limit of the lattice innovations, whose terminal value has the
-            limiting law.
-          </p>
-        </li>
-        <li>
-          <p>
-            A renormalised integration by parts formula.
+            uniqueness in law for its scalar form, a variational formula with
+            no infinite constant, quartic tails, integration by parts.
           </p>
         </li>
       </ul>
       <p>
-        <b>Not proved:</b> uniqueness, OS axioms, infinite volume.
+        <strong>Not proved:</strong> the vector FBSDE alone, strong solutions,
+        OS axioms in full, infinite volume.
       </p>
-      <div class="slide-block">
-        <p>
-          <strong>The guiding principle</strong>
-        </p>
-        <p>
-          Do not estimate <font color="#620000">\(\Phi\)</font> and <font color="#620000">\(F\)</font>.
-          Estimate the <strong>error</strong> of an explicit approximate
-          forecast. UV stability <font color="#620000">\(=\)</font> this error is small
-          uniformly in the lattice.
-        </p>
-      </div>
       <p>
-        <font style="font-size: 84.1%"><font color="#707070">Other constructions: Glimm&ndash;Jaffe 1973;
-        Feldman&ndash;Osterwalder 1976;
-        Brydges&ndash;Fr&ouml;hlich&ndash;Sokal 1983; Barashkov&ndash;G. 2020;
-        G.&ndash;Hofmanov&aacute; 2021</font></font>
+        <strong>Guiding principle.</strong> Do not estimate <font color="#620000">\(\Phi\)</font>
+        and <font color="#620000">\(F\)</font>. Estimate the error of an explicit
+        approximate forecast.
+      </p>
+      <p>
+        The results of Lectures 5&ndash;6 are new: joint work with S.-J. Meyer
+        + AI.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -250,7 +240,7 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
           <strong>Free resolvents (uniform in <font color="#620000">\(N\)</font>)</strong>
         </p>
         <p>
-          <font color="#620000">\(C_q \ge 0\)</font> as a kernel, <font color="#620000">\(C_q
+          <font color="#620000">\(C_q \geqslant 0\)</font> as a kernel, <font color="#620000">\(C_q
           \mathbb{1} = q^{- 1}  \mathbb{1}\)</font>, <font color="#620000">\(\|C_q
           \|_{p \to p} = q^{- 1}\)</font>,
         </p>
@@ -272,36 +262,32 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
       <p>
 
       </p>
-      <center>
-        \(\displaystyle U (\varphi) = \frac{\lambda}{4}  \int \varphi^4,
-        \qquad V_N = U +
-\frac{\mu_N}{2}  \int \varphi^2, \qquad \nu_N
-        (\mathrm{d} \varphi)
-=\mathcal{Z}_N^{- 1} \mathrm{e}^{- V_N (\varphi)}
-        \mu^C (\mathrm{d} \varphi),\)
-      </center>
+      <p>
+        <font color="#620000">\(U (\varphi) = \frac{\lambda}{4} \int
+        \varphi^4\)</font>, <font color="#620000">\(V_N = U + \frac{\mu_N}{2} \int
+        \varphi^2\)</font>, <font color="#620000">\(\nu_N (\hspace{0.17em} \mathrm{d}
+        \varphi) =\mathcal{Z}_N^{- 1} \mathrm{e}^{-
+V_N (\varphi)} \mu^C
+        (\hspace{0.17em} \mathrm{d} \varphi)\)</font>.
+      </p>
       <p>
         <font color="#620000">\(\gamma = 3 \lambda\)</font>, so <font color="#620000">\(D^2 U
         (y) = \gamma y^2\)</font> (not the counterterm <font color="#620000">\(\gamma_T\)</font>
         of Lecture 4). The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
       </p>
-      <div class="slide-box">
-        <p style="margin-top: 1em; margin-bottom: 1em">
-          <font color="#800000"><font color="#800000"><strong>Theorem.
-          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(informal)
-          </strong></font></font></class>For <font color="#620000">\(q_0\)</font>
-          large: explicit <font color="#620000">\(\mu_N = - 3 \lambda \text{Tr} C + O
-          (\log N)\)</font> such that (a) <font color="#620000">\(\nu_N\)</font> is
-          tight in <font color="#620000">\(H^{- s}\)</font>, <font color="#620000">\(s >
-          \frac{1}{2}\)</font>; (b) along a subsequence, the forecasts
-          converge to a solution of a limiting FBSDE; (c) the limit satisfies
-          a renormalised integration by parts formula.</i>
-        </p>
-      </div>
       <p>
-        The bounds behind (a), (b) are bounds on the error <font color="#620000">\(Z\)</font>
-        of an approximate forecast, <strong>uniform in <font color="#620000">\(N\)</font></strong>:
-        UV stability.
+        <strong>Main result, informal.</strong> Let <font color="#620000">\(\mu_N = r -
+        3 \lambda \text{Tr} C + 6 \lambda^2 \int C^3\)</font>. Then (a) <font
+        color="#620000">\(\nu_N \to \nu\)</font> in <font color="#620000">\(H^{- s}\)</font>,
+        <font color="#620000">\(s > \frac{1}{2}\)</font>, along the whole sequence; (b)
+        the forecasts converge in law to a solution of a limiting FBSDE; (c)
+        <font color="#620000">\(\nu\)</font> has a variational formula, an integration
+        by parts formula and quartic tails.
+      </p>
+      <p>
+        These come from bounds on the error <font color="#620000">\(Z\)</font> of an
+        approximate forecast, uniform in <font color="#620000">\(N\)</font>: <strong>UV
+        stability</strong>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -319,7 +305,7 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
       <center>
         \(\displaystyle P_q = (q - q_0) \Phi_{\infty} + B_{q - q_0}, \qquad
         \mathcal{F}_q = \sigma
-(P_s : s \le q) .\)
+(P_s : s \leqslant q) .\)
       </center>
       <div class="slide-box">
         <p style="margin-top: 1em">
@@ -741,9 +727,10 @@ H_q De_q .\)
         </p>
         <p>
           A closed loop with <font color="#620000">\(p\)</font> vertices: <font color="#620000">\(s
-          (\text{loop}) \le Ca_2 (q)  \hspace{0.17em} q^{- (p - 1)}  \prod_i s
-          (T_i)\)</font> (two propagators in <font color="#620000">\(L^2\)</font>, the
-          others in operator norm). After the <font color="#620000">\(q\)</font>
+          (\text{loop}) \leqslant Ca_2 (q)  \hspace{0.17em} q^{- (p - 1)}
+          \prod_i s
+(T_i)\)</font> (two propagators in <font color="#620000">\(L^2\)</font>,
+          the others in operator norm). After the <font color="#620000">\(q\)</font>
           integration a one-loop term is of size <font color="#620000">\(g_q qr_q^{2 -
           k}\)</font>; every further loop gains a factor <font color="#620000">\(g_q\)</font>.
         </p>
@@ -765,9 +752,9 @@ H_q De_q .\)
         \(\displaystyle \mathcal{L}_q (y) = \tfrac{1}{2} \text{Tr} [\log (I +
         C_q^{1 / 2} \gamma y^2
 C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
-        2}] = \sum_{j \ge 2} \frac{(-
-1)^{j + 1}}{2 j} \text{Tr} (C_q \gamma
-        y^2)^j .\)
+        2}] = \sum_{j \geqslant 2}
+\frac{(- 1)^{j + 1}}{2 j} \text{Tr} (C_q
+        \gamma y^2)^j .\)
       </center>
       <p>
         Quartic term <font color="#620000">\(=\)</font> bubble, <font color="#620000">\(s (D^4
@@ -827,43 +814,33 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         color="#620000">\(M\)</font>,
       </p>
       <center>
-        \(\displaystyle \partial_q M_q = - \gamma \text{Tr} (R_{0, q}^2)
-        \hspace{0.17em} I -
-\tfrac{1}{2} \text{Ctr}_{R_{0, q}^2} D^4 h^{[2]}_q
-        (0), \qquad R_{0, q} = (K_q
-+ M_q)^{- 1},\)
+        \(\displaystyle \partial_q M_q = - \gamma \text{Tr} (R_{0, q}^2) I -
+        \frac{1}{2}
+\text{Ctr}_{R_{0, q}^2} D^4 h^{[2]}_q (0), \quad R_{0, q}
+        = (K_q + M_q)^{- 1},\)
       </center>
       <p>
-        with <strong>mixed boundary conditions</strong> <font color="#620000">\(\mu_{q_0}
-        = 0\)</font> (physical mass) and <font color="#620000">\(\Theta_q \to
-        0\)</font> as <font color="#620000">\(q \to \infty\)</font> (first moment).
-        Bare mass <font color="#620000">\(\mu_N = \lim_{q \to \infty} \mu_q\)</font>:
-        an <strong>output</strong> of the flow.
+        with <font color="#620000">\(\mu_{q_{\ast}} = b\)</font>, <font color="#620000">\(|b|
+        \leqslant B \gamma q_{\ast}^{1 / 2}\)</font>, at an <strong>auxiliary
+        scale</strong> <font color="#620000">\(q_{\ast}\)</font>, and <font color="#620000">\(\Theta_q
+        \to 0\)</font> as <font color="#620000">\(q \to \infty\)</font>. Bare mass
+        <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>: an
+        output of the flow.
       </p>
-      <div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Proposition.
-          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(for
-          <font color="#620000">\(q_0\)</font> large, uniformly in <font color="#620000">\(N\)</font>)
-          </strong></font></font></class>Unique solution in a ball, with <font
-          color="#620000">\(| \mu_q | \le C \gamma \sqrt{q}\)</font>, <font color="#620000">\(v_1
-          (\Theta_q) \le C \gamma^2 q^{- 1 / 2}\)</font>; increments <font
-          color="#620000">\(\mathcal{N}_k  (h^{[j]} - h^{[j - 1]}) \le C_k g_q^{j + 1}
-          qr_q^{2 - k}\)</font>, <font color="#620000">\(4 \le k \le 10 - 2 j\)</font>,
-          <font color="#620000">\(j = 1, 2\)</font>; and the defect of <font color="#620000">\(\Gamma^{\text{o}}\)</font></i>
-        </p>
-        <p style="margin-bottom: 1em">
-          <i><center>
-            \(\displaystyle \textsf{S}_4 (e^{\text{o}}_q) \le C \gamma^5 q^{-
-            3} .\)
-          </center></i>
-        </p>
-      </div>
       <p>
-        Ideas: trace Lipschitz estimate by loops; integrability at <font
-        color="#620000">\(q = \infty\)</font> for <font color="#620000">\(k \ge 4\)</font>;
-        contraction for <font color="#620000">\(M\)</font>; derivative budget <font
-        color="#620000">\(10 \to 8 \to 6\)</font>.
+        <strong>For</strong> <font color="#620000">\(q_{\ast}\)</font> <strong>large,
+        uniformly in</strong> <font color="#620000">\(N\)</font><strong>.</strong>
+        Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C \gamma
+        q\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C \gamma^2 q^{- 1
+        / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k (h^{[j]} -
+        h^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2 - k}\)</font>; and the
+        defect of <font color="#620000">\(\Gamma^{\text{o}}\)</font>: <font color="#620000">\(S_4
+        (e^{\text{o}}_q) \leqslant C \gamma^5 q^{- 3}\)</font>.
+      </p>
+      <p>
+        <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r - 3
+        \lambda \text{Tr} C + 6 \lambda^2 \int C^3\)</font> is admissible: the
+        measure does not depend on <font color="#620000">\(q_{\ast}\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -880,13 +857,13 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         <li>
           <p>
             <strong>Tadpole</strong>: <font color="#620000">\(- \gamma
-            \int_{q_0}^{\infty} \text{Tr} R_{0, q}^2 \hspace{0.17em}
-            \mathrm{d} q
-\approx - 3 \lambda \text{Tr} C \sim - N\)</font>.
-            Wick ordering: <font color="#620000">\(\frac{\lambda}{4} \varphi^4 -
-            \frac{3}{2} \lambda c \varphi^2 =
-\frac{\lambda}{4} H_4  (\varphi
-            ; c) +\)</font>const.
+            \int_{q_{\ast}}^{\infty} \text{Tr} R_{0, q}^2
+            \hspace{0.17em}
+\mathrm{d} q \approx - 3 \lambda \text{Tr} C \sim
+            - N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{4}
+            \varphi^4 - \frac{3}{2} \lambda c \varphi^2 =
+\frac{\lambda}{4}
+            H_4  (\varphi ; c) +\)</font>const.
           </p>
         </li>
         <li>
@@ -905,9 +882,9 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       </ul>
       <p>
         Power counting: nothing else. In the flow: the integrals from <font
-        color="#620000">\(q = \infty\)</font> of all vertices with <font color="#620000">\(k \ge
-        4\)</font> legs converge; only the quadratic jet needs a boundary
-        condition.
+        color="#620000">\(q = \infty\)</font> of all vertices with <font color="#620000">\(k
+        \geqslant 4\)</font> legs converge; only the quadratic jet needs a
+        boundary condition.
       </p>
       <p>
         <font color="#620000">\(\mu_q\)</font> at fixed <font color="#620000">\(q\)</font> has a
@@ -1026,10 +1003,10 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
           <font color="#620000">\(\mathcal{L}_q (y) = \frac{1}{2}  [\log (1 + \gamma
           y^2 / q) - \gamma y^2 / q]\)</font>: power series of radius exactly
           <font color="#620000">\(r_q\)</font> (singularities at <font color="#620000">\(\pm
-          \mathrm{i} r_q\)</font>). Truncations at even <font color="#620000">\(j \ge
-          4\)</font> are unbounded below. The exact function is harmless,
-          <font color="#620000">\(|\mathcal{L}_q'' | \le \frac{9}{8} \gamma /
-          q\)</font>.
+          \mathrm{i} r_q\)</font>). Truncations at even <font color="#620000">\(j
+          \geqslant 4\)</font> are unbounded below. The exact function is
+          harmless, <font color="#620000">\(|\mathcal{L}_q'' | \leqslant \frac{9}{8}
+          \gamma / q\)</font>.
         </p>
       </div>
       <p>
@@ -1040,9 +1017,9 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       </p>
       <p>
         One site: <font color="#620000">\(qy + \lambda y^3 = p\)</font>, noise
-        coefficient <font color="#620000">\(H_q (y) = (q + \gamma y^2)^{- 1} \le q^{-
-        1} \wedge (\gamma y^2)^{- 1}\)</font>. Large fields are <strong>more
-        elliptic and less noisy</strong>.
+        coefficient <font color="#620000">\(H_q (y) = (q + \gamma y^2)^{- 1} \leqslant
+        q^{- 1} \wedge (\gamma y^2)^{- 1}\)</font>. Large fields are
+        <strong>more elliptic and less noisy</strong>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1055,7 +1032,8 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       <p>
         <font color="#620000">\(\tau\)</font> smooth odd, <font color="#620000">\(\tau (u) =
         u\)</font> on <font color="#620000">\([- 1, 1]\)</font>, constant outside <font
-        color="#620000">\([- 2, 2]\)</font>, <font color="#620000">\(0 \le \tau' \le 1\)</font>;
+        color="#620000">\([- 2, 2]\)</font>, <font color="#620000">\(0 \leqslant \tau' \leqslant
+        1\)</font>;
       </p>
       <center>
         \(\displaystyle \kappa_q (y) = r_q \tau (y / r_q), \qquad
@@ -1066,9 +1044,9 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
       </center>
       <p>
         The quartic and quadratic parts are <strong>not</strong> clipped.
-        Globally: <font color="#620000">\(s (D^j  \tilde{h}_q) \le Cg_q qr_q^{2 -
+        Globally: <font color="#620000">\(s (D^j  \tilde{h}_q) \leqslant Cg_q qr_q^{2 -
         j}\)</font> (<font color="#620000">\(j = 2, 3, 4\)</font>), <font color="#620000">\(s
-        (D^2 \partial_q  \tilde{h}_q) \le Cg_q\)</font>.
+        (D^2 \partial_q  \tilde{h}_q) \leqslant Cg_q\)</font>.
       </p>
       <div class="slide-block">
         <p>
@@ -1076,17 +1054,18 @@ C_q^{1 / 2}) - C_q^{1 / 2} \gamma y^2 C_q^{1 /
         </p>
         <p>
           For all <font color="#620000">\(y\)</font>: <font color="#620000">\(c (K_q + \gamma
-          y^2) \le H_q (y)^{- 1} \le C (K_q + \gamma y^2)\)</font>,
+          y^2) \leqslant H_q (y)^{- 1} \leqslant C (K_q + \gamma
+          y^2)\)</font>,
         </p>
         <center>
-          \(\displaystyle \|H_q (y)\|_{p \to p} \le \frac{1 + C (g_q +
-          g_q^2)}{q}, \qquad \text{diag}
-H_q (y)^2 \le Ca_2 (q) .\)
+          \(\displaystyle \|H_q (y)\|_{p \to p} \leqslant \frac{1 + C (g_q +
+          g_q^2)}{q}, \qquad
+\text{diag} H_q (y)^2 \leqslant Ca_2 (q) .\)
         </center>
       </div>
       <p>
         Neumann series for <font color="#620000">\(H = (I + G (M + D^2  \tilde{h}))^{-
-        1} G\)</font>, <font color="#620000">\(G = (K_q + \gamma y^2)^{- 1} \le
+        1} G\)</font>, <font color="#620000">\(G = (K_q + \gamma y^2)^{- 1} \leqslant
         C_q\)</font>.
       </p>
     </div>
@@ -1111,17 +1090,18 @@ H_q (y)^2 \le Ca_2 (q) .\)
         </p>
         <p>
           <i><center>
-            \(\displaystyle \|b^{\text{b}}_q \|_p \le C \gamma^{7 / 2} q^{- 5
-            / 2}, \qquad
-\|b^{\text{l}}_q \|_p \le C \gamma q^{- 3 / 2} (\|t_q
-            \|_p + r_q^{- 1} \|y^2
-\mathbb{1}_{|y| > r_q} \|_p),\)
+            \(\displaystyle \|b^{\text{b}}_q \|_p \leqslant C \gamma^{7 / 2}
+            q^{- 5 / 2}, \qquad
+\|b^{\text{l}}_q \|_p \leqslant C \gamma q^{-
+            3 / 2} (\|t_q \|_p + r_q^{- 1}
+\|y^2  \mathbb{1}_{|y| > r_q}
+            \|_p),\)
           </center></i>
         </p>
         <p style="margin-bottom: 1em">
           <i><center>
-            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \le C \gamma^4 q^{- 5}
-            \|t_q \|_6^6 .\)
+            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \leqslant C \gamma^4 q^{-
+            5} \|t_q \|_6^6 .\)
           </center></i>
         </p>
       </div><p>
@@ -1132,7 +1112,7 @@ H_q (y)^2 \le Ca_2 (q) .\)
         y\)</font>); the motion of the clip; quartic vertex at <font color="#620000">\(y\)</font>
         vs correction at <font color="#620000">\(\kappa y\)</font>; chain-rule terms
         with <font color="#620000">\(\kappa'', \kappa'''\)</font>. All vanish if <font
-        color="#620000">\(\|y\|_{\infty} \le r_q\)</font>.
+        color="#620000">\(\|y\|_{\infty} \leqslant r_q\)</font>.
       </p><div class="slide-block">
         <p>
           <strong>The point</strong>
@@ -1161,8 +1141,8 @@ H_q (y)^2 \le Ca_2 (q) .\)
         \frac{\gamma}{3} Y_q^3, \qquad
 \varrho_q (y) = C_q  (M_q y + D
         \tilde{h}_q (y)), \quad \|D \varrho_q \|_{p
-\to p} \le C (g_q + g_q^2)
-        .\)
+\to p} \leqslant C (g_q +
+        g_q^2) .\)
       </center>
       <p>
         <strong>Up to a small Lipschitz perturbation, the forecast solves the
@@ -1201,6 +1181,45 @@ H_q (y)^2 \le Ca_2 (q) .\)
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        The action below the auxiliary scale
+      </div>
+      <p>
+
+      </p>
+      <p>
+        The expansion needs <font color="#620000">\(g_q\)</font> small, so <font color="#620000">\(\bar{\Gamma}_q\)</font>
+        is built for <font color="#620000">\(q \geqslant q_{\ast}\)</font>. Below <font
+        color="#620000">\(q_{\ast}\)</font> nothing needs constructing:
+        <strong>freeze</strong> it,
+      </p>
+      <center>
+        \(\displaystyle \bar{\Gamma}_q (y) = \bar{\Gamma}_{q_{\ast}} (y) +
+        \frac{1}{2} (q_{\ast} - q)
+\|y\|_2^2 .\)
+      </center>
+      <p>
+        Then <font color="#620000">\(K_q + D^2 \bar{\Gamma}_q = K_{q_{\ast}} + D^2
+        \bar{\Gamma}_{q_{\ast}}\)</font>: convexity is automatic, <font color="#620000">\(H_q
+        = H_{q_{\ast}}\)</font>, and <font color="#620000">\(y_q (x) = y_{q_{\ast}}
+        (C_{q_{\ast}} K_q x)\)</font>.
+      </p>
+      <p>
+        The defect is explicit: <font color="#620000">\(e_s (y) = - \frac{1}{2}
+        \|y\|_2^2 - \frac{1}{2} \text{Tr} [H_{q_{\ast}} (y) -
+H_{q_{\ast}}
+        (0)]\)</font>, with <font color="#620000">\(|e_s (y) | \leqslant C
+        \|y\|_2^2\)</font>.
+      </p>
+      <p>
+        So the system holds on <font color="#620000">\([q_0, \infty)\)</font> with
+        <font color="#620000">\(Y_{q_0} = 0\)</font>: <strong>the initial value is
+        deterministic</strong>, with no large mass. <font color="#620000">\(q_{\ast}\)</font>
+        stays only in the proofs, where the expansion and the closure of the
+        loop need <font color="#620000">\(g_q\)</font> small.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         Why not Polchinski with a frozen cube?
       </div>
       <p>
@@ -1214,9 +1233,9 @@ H_q (y)^2 \le Ca_2 (q) .\)
       </p>
       <center>
         \(\displaystyle F_q (x) = - \lambda \mathbb{E}_x Y^3 = q (m_q (x) -
-        x), \quad |m_q (x) | \le 2
-\lambda^{- 1 / 4} + 2 (q|x| / \lambda)^{1 /
-        3} .\)
+        x), \quad |m_q (x) |
+\leqslant 2 \lambda^{- 1 / 4} + 2 (q|x| /
+        \lambda)^{1 / 3} .\)
       </center>
       <center>
         <img src="cqft_slides_L5-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.0773818181818em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
@@ -1236,8 +1255,8 @@ H_q (y)^2 \le Ca_2 (q) .\)
       </p>
       <p>
         <font color="#620000">\(U^c = U_1 + U_2 \circ \kappa_q\)</font>, with <font
-        color="#620000">\(U_2\)</font> the first tree. For <font color="#620000">\(|x| \ge 2
-        r_q\)</font>, the force defect is exactly
+        color="#620000">\(U_2\)</font> the first tree. For <font color="#620000">\(|x| \geqslant
+        2 r_q\)</font>, the force defect is exactly
       </p>
       <center>
         \(\displaystyle E_q = S^2 U_1' U_1'' \approx 3 \lambda^2 S^2 x^5,\)
@@ -1294,8 +1313,8 @@ H_q (y)^2 \le Ca_2 (q) .\)
         + \lambda y^3 = qx.\)
       </center>
       <center>
-        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \le 2 C_{\ast} (\lambda /
-        q)^{1 / 2}, \quad
+        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \leqslant 2 C_{\ast}
+        (\lambda / q)^{1 / 2}, \quad
 C_{\ast} < \frac{1}{2} .\)
       </center>
       <ul>

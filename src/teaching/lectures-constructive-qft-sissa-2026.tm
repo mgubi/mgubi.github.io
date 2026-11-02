@@ -64,7 +64,7 @@
     [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>].
-    Revised 30 October 2026.
+    Revised 2 November 2026.
   </itemize>
 
   <subsection*|Provisional materials for Lectures 4--6>
@@ -88,13 +88,20 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>].
 
-    <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability, compactness and the limiting FBSDE (Sections 16--18 not delivered in class).
+    <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>].
 
-    </itemize>
+    <item><with|font-series|bold|Supplement to Lectures 5--6>: Detailed proofs of what the lectures cite or condense: the coefficient construction, the large-field ledger, consistency of the coefficients, and older routes.
+
+    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_supplement.pdf>]
+
+    [<notes-link|HTML|sissa-2026/cqft_supplement.tm>].
+  </itemize>
+
+  The results of Lectures 5--6 are new: joint work with S.-J. Meyer + AI.
 
   Materials revised 2 November 2026. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.

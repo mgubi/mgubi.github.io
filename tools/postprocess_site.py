@@ -316,6 +316,9 @@ def course_material(relative: str) -> tuple[str, str, str] | None:
         kind = 'slides' if material[1] == 'slides_L' else 'notes'
         return (f'Constructive quantum field theory — Lecture {material[2]} ({kind})',
                 '../lectures-constructive-qft-sissa-2026.html#auto-3', 'SISSA lectures')
+    if relative == 'teaching/sissa-2026/cqft_supplement.html':
+        return ('Constructive quantum field theory — Supplement to Lectures 5–6 (notes)',
+                '../lectures-constructive-qft-sissa-2026.html#auto-3', 'SISSA lectures')
     if relative == 'teaching/st-flour-2025/euclidean-fields-notes.html':
         return ('A stochastic analysis perspective on Euclidean fields — Saint-Flour 2025 (notes)',
                 '../lectures-euclidean-fields-st-flour-2025.html', 'Saint-Flour lectures')

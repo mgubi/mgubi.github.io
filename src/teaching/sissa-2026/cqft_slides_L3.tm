@@ -339,7 +339,7 @@
 
       <item>Observe the field at resolution <math|t>: a <strong|smooth>
       function <math|\<varphi\><rsub|t>>. Information at resolution <math|t>:
-      <math|\<cal-F\><rsub|t>=\<sigma\><around|(|\<varphi\><rsub|s>:s\<leq\>t|)>>.
+      <math|\<cal-F\><rsub|t>=\<sigma\><around|(|\<varphi\><rsub|s>:s\<leqslant\>t|)>>.
 
       <item>A physical quantity is not a random variable but a
       <strong|consistent family of finite-resolution estimates>, i.e. a
@@ -372,9 +372,9 @@
 
     <\definition*>
       A <strong|covariance profile> is a family
-      <math|<around|(|Q<rsub|t>|)><rsub|t\<geq\>0>> of symmetric, translation
-      invariant operators with <math|Q<rsub|0>=0>,
-      <math|<wide|Q|\<dot\>><rsub|t>\<assign\>\<partial\><rsub|t>*Q<rsub|t>\<geq\>0>,
+      <math|<around|(|Q<rsub|t>|)><rsub|t\<geqslant\>0>> of symmetric,
+      translation invariant operators with <math|Q<rsub|0>=0>,
+      <math|<wide|Q|\<dot\>><rsub|t>\<assign\>\<partial\><rsub|t>*Q<rsub|t>\<geqslant\>0>,
       <math|Q<rsub|t>\<to\>C=<around|(|m<rsup|2>-\<Delta\>|)><rsup|-1>=A<rsup|-1>>,
       and smooth kernels for <math|t\<less\>\<infty\>>.
     </definition*>
@@ -390,15 +390,15 @@
     <math|Q<rsub|t>> keeps the modes <math|<around|\||k|\|>\<lesssim\>t>:
     <math|t> is a <strong|momentum scale>.
 
-    Others: sharp Fourier cutoff <math|<with|math-font|Bbb|1><rsub|<around|\||k|\|>\<leq\>t>*<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|-1>>;
+    Others: sharp Fourier cutoff <math|<with|math-font|Bbb|1><rsub|<around|\||k|\|>\<leqslant\>t>*<around|(|<around|\||k|\|><rsup|2>+m<rsup|2>|)><rsup|-1>>;
     <strong|finite range> decompositions,
     <math|<wide|Q|\<dot\>><rsub|t>*<around|(|x,y|)>=0> for
-    <math|<around|\||x-y|\|>\<geq\>1/t>.
+    <math|<around|\||x-y|\|>\<geqslant\>1/t>.
 
     Notation: <math|c<rsub|t>=Q<rsub|t>*<around|(|x,x|)>>,
-    <math|Q<rsub|T,t>=Q<rsub|T>-Q<rsub|t>>. For <math|d\<geq\>2>,
+    <math|Q<rsub|T,t>=Q<rsub|T>-Q<rsub|t>>. For <math|d\<geqslant\>2>,
     <math|c<rsub|t>\<to\>\<infty\>> (<math|<frac|1|2*\<pi\>>*log t> in
-    <math|d=2>, <math|\<asymp\>t<rsup|d-2>> in <math|d\<geq\>3>).
+    <math|d=2>, <math|\<asymp\>t<rsup|d-2>> in <math|d\<geqslant\>3>).
   </hidden>|<\hidden>
     <mytitle|The field at resolution <math|t>>
 
@@ -452,8 +452,8 @@
     <\definition*>
       <dueto|Bailleul\UChevyrev\UG.>An <strong|observable> is an
       <math|<around|(|\<cal-F\><rsub|t>|)>>-martingale
-      <math|O=<around|(|O<rsub|t>|)><rsub|t\<geq\>0>>. Its expectation is
-      <math|<around|\<langle\>|O|\<rangle\>>=\<bbb-E\>*O<rsub|t>>. An
+      <math|O=<around|(|O<rsub|t>|)><rsub|t\<geqslant\>0>>. Its expectation
+      is <math|<around|\<langle\>|O|\<rangle\>>=\<bbb-E\>*O<rsub|t>>. An
       observable field is a family <math|<around|(|O<around|(|x|)>|)><rsub|x\<in\>\<cal-M\>>>.
     </definition*>
 
@@ -462,8 +462,8 @@
       gives a <strong|closed> observable <math|O<rsub|t>=\<bbb-E\><rsub|t>*Y>.
 
       <item>The point: observables need <strong|not> be closed.
-      <math|X<rsub|t><around|(|x|)>>, <math|d\<geq\>2>, diverges, yet is a
-      perfectly good family of estimates.
+      <math|X<rsub|t><around|(|x|)>>, <math|d\<geqslant\>2>, diverges, yet is
+      a perfectly good family of estimates.
     </itemize>
 
     <\lemma*>
@@ -488,7 +488,7 @@
       <\itemize>
         <item>A class contains <strong|at most one martingale>: if
         <math|O\<sim\>O<rprime|'>> are martingales, then
-        <math|<around|\<\|\|\>|O<rsub|s>-O<rprime|'><rsub|s>|\<\|\|\>><rsub|L<rsup|1>>\<leq\><around|\<\|\|\>|O<rsub|t>-O<rprime|'><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>.
+        <math|<around|\<\|\|\>|O<rsub|s>-O<rprime|'><rsub|s>|\<\|\|\>><rsub|L<rsup|1>>\<leqslant\><around|\<\|\|\>|O<rsub|t>-O<rprime|'><rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<to\>0>.
 
         <item>When it exists, it is recovered by looking back:
         <math|O<rsub|s>=lim<rsub|t\<to\>\<infty\>>
@@ -504,7 +504,7 @@
       <math|Y\<in\>L<rsup|1><around|(|\<cal-F\><rsub|\<infty\>>|)>>,
 
       <\equation*>
-        Y<space|1em>\<longmapsto\><space|1em><around|(|\<bbb-E\><rsub|t>*Y|)><rsub|t\<geq\>0>
+        Y<space|1em>\<longmapsto\><space|1em><around|(|\<bbb-E\><rsub|t>*Y|)><rsub|t\<geqslant\>0>
       </equation*>
 
       is injective (<math|\<bbb-E\><rsub|t>*Y\<to\>Y> in <math|L<rsup|1>>),
@@ -538,7 +538,7 @@
     (<math|\<lambda\>\<in\>\<bbb-R\>, \<lambda\>\<neq\>0>):
 
     <\equation*>
-      Z<rsub|t>=\<mathe\><rsup|\<lambda\>*B<rsub|t>-\<lambda\><rsup|2>*t/2>=<big|sum><rsub|n\<geq\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>Z<rsub|t>\<to\>0<text|
+      Z<rsub|t>=\<mathe\><rsup|\<lambda\>*B<rsub|t>-\<lambda\><rsup|2>*t/2>=<big|sum><rsub|n\<geqslant\>0><frac|\<lambda\><rsup|n>|n!>*H<rsub|n><around|(|B<rsub|t>;t|)>,<space|2em>Z<rsub|t>\<to\>0<text|
       a.s.>,<space|2em>\<bbb-E\>*Z<rsub|t>=1,
     </equation*>
 
@@ -568,7 +568,7 @@
     </proposition*>
 
     <strong|Proof.> <math|O<rsub|t>=N<rsub|0>+M<rsub|t>+\<bbb-E\><rsub|t><big|int><rsub|0><rsup|\<infty\>>\<beta\><rsub|s>*\<mathd\>s>
-    is a martingale, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leq\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>;
+    is a martingale, and <math|<around|\<\|\|\>|O<rsub|t>-N<rsub|t>|\<\|\|\>><rsub|L<rsup|1>>\<leqslant\>\<bbb-E\><big|int><rsub|t><rsup|\<infty\>><around|\||\<beta\><rsub|s>|\|>*\<mathd\>s\<to\>0>;
     uniqueness is asymptotic uniqueness.
 
     <strong|Example.> <math|N<rsub|t>=B<rsub|t>+\<mathe\><rsup|-t>*sin
@@ -595,12 +595,12 @@
     and
 
     <\equation*>
-      \<Pi\><rsup|y><rsub|t>\<assign\>p<rsub|T-t><around|(|B<rsub|t>-y|)>,<space|2em>0\<leq\>t\<less\>T.
+      \<Pi\><rsup|y><rsub|t>\<assign\>p<rsub|T-t><around|(|B<rsub|t>-y|)>,<space|2em>0\<leqslant\>t\<less\>T.
     </equation*>
 
     <\itemize>
       <item><strong|Martingale:> <math|\<bbb-E\><rsub|s>*\<Pi\><rsup|y><rsub|t>=\<Pi\><rsup|y><rsub|s>>
-      for <math|s\<leq\>t>, by Chapman\UKolmogorov
+      for <math|s\<leqslant\>t>, by Chapman\UKolmogorov
       <math|p<rsub|t-s>\<ast\>p<rsub|T-t>=p<rsub|T-s>>.
 
       <item><strong|Density of <math|B<rsub|T>>:>
@@ -655,7 +655,7 @@
     <with|font-series|bold|Example.> <math|:X<rsup|n><rsub|t>:<around|(|x|)>=H<rsub|n>*<around|(|X<rsub|t><around|(|x|)>;c<rsub|t>|)>>
     is a local observable in <strong|every> <math|d> (more later), although
     <math|:\<varphi\><rsup|n>>: does not exist as a random distribution when
-    <math|n*<around|(|d-2|)>\<geq\>d>.
+    <math|n*<around|(|d-2|)>\<geqslant\>d>.
   </hidden>|<\hidden>
     <vspace*|2.5cm>
 
@@ -696,8 +696,8 @@
       <math|n*<around|(|d-2|)>\<less\>d>. As <strong|observables>, Wick
       powers exist in every <math|d>, unsmeared.
 
-      <item>For <math|n*<around|(|d-2|)>\<geq\>d>,
-      <math|0\<leq\>f\<nequiv\>0>, <math|:X<rsup|n><rsub|t>:<around|(|f|)>>
+      <item>For <math|n*<around|(|d-2|)>\<geqslant\>d>,
+      <math|0\<leqslant\>f\<nequiv\>0>, <math|:X<rsup|n><rsub|t>:<around|(|f|)>>
       is unbounded in <math|L<rsup|2>> and (Paley\UZygmund) not tight:
       <strong|no terminal value>; the observable is the whole family.
 
@@ -750,7 +750,7 @@
       <math|<around|(|B<rsub|t>-y|)><rsup|2>+<around|(|B<rsub|t>-z|)><rsup|2>=2*<around|(|B<rsub|t>-<wide|y|\<bar\>>|)><rsup|2>+<frac|<around|(|y-z|)><rsup|2>|2>>,
       and use <math|<around|(|2*\<pi\>*<around|(|T-t|)>|)><rsup|-1>=\<kappa\><rsub|T-t>*<around|(|\<pi\>*<around|(|T-t|)>|)><rsup|-1/2>>.
 
-      The product is <math|\<geq\>0>, so its expectation is its
+      The product is <math|\<geqslant\>0>, so its expectation is its
       <math|L<rsup|1>> norm (<math|B<rsub|t>\<sim\>N<around|(|0,t|)>>):
 
       <\equation*>
@@ -806,8 +806,8 @@
     \;
 
     <math|<around|\<langle\>|<math-bf|X><around|(|x|)>,<math-bf|X><around|(|y|)>|\<rangle\>><rsub|t>=Q<rsub|t>*<around|(|x-y|)>>
-    is deterministic. Heat profile, <math|d\<geq\>2>: the condition holds iff
-    <math|x\<neq\>y>, and then
+    is deterministic. Heat profile, <math|d\<geqslant\>2>: the condition
+    holds iff <math|x\<neq\>y>, and then
 
     <\equation*>
       <around|(|<math-bf|X><around|(|x|)>*\<star\><math-bf|X><around|(|y|)>|)><rsub|t>=X<rsub|t><around|(|x|)>*X<rsub|t><around|(|y|)>+G*<around|(|x-y|)>-Q<rsub|t>*<around|(|x-y|)>,<space|2em><around|\<langle\>|<math-bf|X><around|(|x|)>*\<star\><math-bf|X><around|(|y|)>|\<rangle\>>=G*<around|(|x-y|)>.
@@ -834,7 +834,7 @@
     For <math|x\<neq\>y>,
 
     <\equation*>
-      :<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|k>:<around|(|y|)>=<big|sum><rsub|j\<leq\>n\<wedge\>k>j!<binom|n|j><binom|k|j><space|0.17em>G*<around|(|x-y|)><rsup|j><space|0.17em>:<math-bf|X><rsup|n-j><around|(|x|)><math-bf|X><rsup|k-j><around|(|y|)>:.
+      :<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|k>:<around|(|y|)>=<big|sum><rsub|j\<leqslant\>n\<wedge\>k>j!<binom|n|j><binom|k|j><space|0.17em>G*<around|(|x-y|)><rsup|j><space|0.17em>:<math-bf|X><rsup|n-j><around|(|x|)><math-bf|X><rsup|k-j><around|(|y|)>:.
     </equation*>
 
     <\itemize>
