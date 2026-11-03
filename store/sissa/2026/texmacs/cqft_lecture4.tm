@@ -1547,9 +1547,12 @@
 
   whose optimality conditions <math|x=\<psi\>+S<rsub|t>*\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\>|)>>,
   <math|\<mathD\>V<rsub|t><around|(|x|)>=\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\>|)>>
-  are<nbsp><eqref|eq:coord>. It is well defined by the same convexity: up to
-  the change of variable <math|j=S<rsub|t><rsup|-1>*x>, it is a Legendre
-  transform. We use<nbsp><eqref|eq:moreau> to fix the additive constant in
+  are<nbsp><eqref|eq:coord>. It is well defined by the same convexity: as a
+  function of <math|j=S<rsub|t><rsup|-1>*x>, the function
+  <math|<frac|1|2>*<around|\<langle\>|x,S<rsub|t><rsup|-1>*x|\<rangle\>>-V<rsub|t><around|(|x|)>>
+  is the Legendre transform of <math|\<Gamma\><rsub|t>+<frac|1|2>*<around|\<langle\>|\<cdummy\>,S<rsub|t><rsup|-1>*\<cdummy\>|\<rangle\>>>.
+  The value function <math|V<rsub|t>> itself need not be convex. We
+  use<nbsp><eqref|eq:moreau> to fix the additive constant in
   <math|\<Gamma\><rsub|t>>. Figure<nbsp><reference|fig:shear> shows the
   construction in zero dimensions.
 
@@ -3492,22 +3495,22 @@
     <associate|auto-51|<tuple|2|22>>
     <associate|auto-52|<tuple|3|22>>
     <associate|auto-53|<tuple|9.4|22>>
-    <associate|auto-54|<tuple|1|22>>
-    <associate|auto-55|<tuple|9.14|23>>
+    <associate|auto-54|<tuple|1|23>>
+    <associate|auto-55|<tuple|9.14|24>>
     <associate|auto-56|<tuple|9.5|24>>
     <associate|auto-57|<tuple|A|24>>
     <associate|auto-58|<tuple|A.1|24>>
-    <associate|auto-59|<tuple|A.2|24>>
+    <associate|auto-59|<tuple|A.2|25>>
     <associate|auto-6|<tuple|7|3>>
     <associate|auto-60|<tuple|A.1|25>>
     <associate|auto-61|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
     <associate|auto-62|<tuple|B|26>>
     <associate|auto-63|<tuple|1|26>>
-    <associate|auto-64|<tuple|B.1|26>>
-    <associate|auto-65|<tuple|1|26>>
+    <associate|auto-64|<tuple|B.1|27>>
+    <associate|auto-65|<tuple|1|27>>
     <associate|auto-66|<tuple|2|27>>
     <associate|auto-67|<tuple|3|28>>
-    <associate|auto-68|<tuple|4|28>>
+    <associate|auto-68|<tuple|4|29>>
     <associate|auto-69|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
     <associate|auto-7|<tuple|7.1|4>>
     <associate|auto-70|<tuple|B.2|29>>
@@ -3517,15 +3520,15 @@
     <associate|bib-BB19|<tuple|BB19|29>>
     <associate|bib-BB21|<tuple|BB21|29>>
     <associate|bib-BBD24|<tuple|BBD24|29>>
-    <associate|bib-BCG26|<tuple|BCG26|29>>
-    <associate|bib-BD98|<tuple|BD98|29>>
-    <associate|bib-BG20|<tuple|BG20|29>>
-    <associate|bib-BG21|<tuple|BG21|29>>
-    <associate|bib-BG23|<tuple|BG23|29>>
+    <associate|bib-BCG26|<tuple|BCG26|30>>
+    <associate|bib-BD98|<tuple|BD98|30>>
+    <associate|bib-BG20|<tuple|BG20|30>>
+    <associate|bib-BG21|<tuple|BG21|30>>
+    <associate|bib-BG23|<tuple|BG23|30>>
     <associate|bib-BK87|<tuple|BK87|30>>
     <associate|bib-BL76|<tuple|BL76|30>>
     <associate|bib-BTW02|<tuple|BTW02|30>>
-    <associate|bib-Bis73|<tuple|Bis73|29>>
+    <associate|bib-Bis73|<tuple|Bis73|30>>
     <associate|bib-CE22|<tuple|CE22|30>>
     <associate|bib-Che21|<tuple|Che21|30>>
     <associate|bib-EMS22|<tuple|EMS22|30>>
@@ -3540,14 +3543,14 @@
     <associate|bib-KL22|<tuple|KL22|30>>
     <associate|bib-KL24|<tuple|KL24|30>>
     <associate|bib-Kla23|<tuple|Kla23|30>>
-    <associate|bib-MY99|<tuple|MY99|30>>
+    <associate|bib-MY99|<tuple|MY99|31>>
     <associate|bib-Mon23|<tuple|Mon23|30>>
-    <associate|bib-Mor94|<tuple|Mor94|30>>
-    <associate|bib-PBGM62|<tuple|PBGM62|30>>
-    <associate|bib-Pen90|<tuple|Pen90|30>>
-    <associate|bib-Pol84|<tuple|Pol84|30>>
-    <associate|bib-Sal99|<tuple|Sal99|30>>
-    <associate|bib-Wet93|<tuple|Wet93|30>>
+    <associate|bib-Mor94|<tuple|Mor94|31>>
+    <associate|bib-PBGM62|<tuple|PBGM62|31>>
+    <associate|bib-Pen90|<tuple|Pen90|31>>
+    <associate|bib-Pol84|<tuple|Pol84|31>>
+    <associate|bib-Sal99|<tuple|Sal99|31>>
+    <associate|bib-Wet93|<tuple|Wet93|31>>
     <associate|bib-YZ99|<tuple|YZ99|31>>
     <associate|cor:DS-path|<tuple|9.3|20>>
     <associate|eq:BD|<tuple|7.9|6>>
@@ -3557,26 +3560,26 @@
     <associate|eq:EL|<tuple|7.11|6>>
     <associate|eq:F-gradient|<tuple|8.11|14>>
     <associate|eq:Gt|<tuple|9.1|19>>
-    <associate|eq:Lambda|<tuple|9.10|20>>
+    <associate|eq:Lambda|<tuple|9.10|21>>
     <associate|eq:PB|<tuple|A.3|24>>
     <associate|eq:RG-map|<tuple|A.1|24>>
     <associate|eq:Vt|<tuple|7.3|4>>
     <associate|eq:bridge|<tuple|7.14|8>>
     <associate|eq:burgers|<tuple|8.1|10>>
-    <associate|eq:constrained|<tuple|8.16|17>>
+    <associate|eq:constrained|<tuple|8.16|18>>
     <associate|eq:coord|<tuple|8.5|11>>
     <associate|eq:cov-dynamics|<tuple|8.9|12>>
-    <associate|eq:cumulants|<tuple|A.4|24>>
+    <associate|eq:cumulants|<tuple|A.4|25>>
     <associate|eq:eta|<tuple|9.4|19>>
     <associate|eq:exp-regulator|<tuple|8.15|16>>
     <associate|eq:fbsde|<tuple|7.6|4>>
     <associate|eq:fbsde-inf|<tuple|9.13|22>>
     <associate|eq:fbsde-system|<tuple|7.7|4>>
     <associate|eq:field-eq-scale|<tuple|9.7|20>>
-    <associate|eq:first-order|<tuple|A.5|24>>
+    <associate|eq:first-order|<tuple|A.5|25>>
     <associate|eq:force-integrand|<tuple|9.12|22>>
     <associate|eq:free-action|<tuple|8.10|14>>
-    <associate|eq:gammaT|<tuple|A.7|25>>
+    <associate|eq:gammaT|<tuple|A.7|26>>
     <associate|eq:generating|<tuple|7.12|6>>
     <associate|eq:hopf-lax|<tuple|8.17|18>>
     <associate|eq:kolmogorov|<tuple|9.2|19>>
@@ -3593,13 +3596,13 @@
     <associate|eq:polchinski|<tuple|7.8|5>>
     <associate|eq:psi|<tuple|8.2|11>>
     <associate|eq:psi-noise|<tuple|8.3|11>>
-    <associate|eq:relative-vp|<tuple|9.14|22>>
+    <associate|eq:relative-vp|<tuple|9.14|23>>
     <associate|eq:response|<tuple|8.6|11>>
     <associate|eq:second-order|<tuple|A.6|25>>
     <associate|eq:semigroup|<tuple|A.2|24>>
     <associate|eq:shear|<tuple|7.13|7>>
     <associate|eq:tangent|<tuple|9.3|19>>
-    <associate|eq:transformed-fbsde|<tuple|8.7|11>>
+    <associate|eq:transformed-fbsde|<tuple|8.7|12>>
     <associate|eq:transformed-flow|<tuple|8.8|12>>
     <associate|eq:verification|<tuple|7.10|6>>
     <associate|eq:wetterich|<tuple|8.14|15>>
@@ -3608,7 +3611,7 @@
     <associate|ex:brascamp-lieb|<tuple|8.9|18>>
     <associate|ex:characteristics|<tuple|8.1|18>>
     <associate|ex:commutator|<tuple|A.1|26>>
-    <associate|ex:doob|<tuple|9.1|23>>
+    <associate|ex:doob|<tuple|9.1|24>>
     <associate|ex:envelope|<tuple|8.4|18>>
     <associate|ex:free-action|<tuple|8.10|18>>
     <associate|ex:loc-poincare|<tuple|B.2|29>>
@@ -3617,7 +3620,7 @@
     <associate|ex:power-counting|<tuple|A.3|26>>
     <associate|ex:quadratic|<tuple|7.1|9>>
     <associate|ex:regulators|<tuple|8.8|18>>
-    <associate|ex:relative-vp|<tuple|9.2|23>>
+    <associate|ex:relative-vp|<tuple|9.2|24>>
     <associate|ex:subgauss|<tuple|9.5|24>>
     <associate|ex:sunset|<tuple|A.2|26>>
     <associate|ex:zero-dim|<tuple|7.2|9>>
@@ -3636,10 +3639,10 @@
     <associate|prop:loc-poincare|<tuple|B.2|28>>
     <associate|prop:marginals|<tuple|7.2|4>>
     <associate|prop:psi|<tuple|8.1|11>>
-    <associate|prop:relative-vp|<tuple|9.7|22>>
+    <associate|prop:relative-vp|<tuple|9.7|23>>
     <associate|prop:second-order|<tuple|A.2|25>>
     <associate|prop:subgauss|<tuple|9.5|21>>
-    <associate|rem:noise-pathwise|<tuple|9.6|21>>
+    <associate|rem:noise-pathwise|<tuple|9.6|22>>
     <associate|sec:DS|<tuple|9.2|19>>
     <associate|sec:algebra|<tuple|A|24>>
     <associate|sec:burgers|<tuple|8.1|10>>
@@ -3649,12 +3652,12 @@
     <associate|sec:infinite-volume|<tuple|9.4|22>>
     <associate|sec:legendre|<tuple|8.6|15>>
     <associate|sec:localisation|<tuple|B|26>>
-    <associate|sec:lsi|<tuple|B.1|26>>
+    <associate|sec:lsi|<tuple|B.1|27>>
     <associate|sec:meet|<tuple|7.4|9>>
     <associate|sec:moments|<tuple|8.4|12>>
     <associate|sec:noise-bounds|<tuple|9.3|20>>
     <associate|sec:observables|<tuple|9|19>>
-    <associate|sec:pert|<tuple|A.2|24>>
+    <associate|sec:pert|<tuple|A.2|25>>
     <associate|sec:polchinski|<tuple|7|3>>
     <associate|sec:rg|<tuple|7.1|4>>
     <associate|sec:tree|<tuple|8.7|17>>
@@ -3664,7 +3667,7 @@
     <associate|thm:fbsde|<tuple|7.3|4>>
     <associate|thm:lsi|<tuple|B.1|27>>
     <associate|thm:polchinski|<tuple|7.4|5>>
-    <associate|thm:transformed|<tuple|8.2|11>>
+    <associate|thm:transformed|<tuple|8.2|12>>
     <associate|thm:wetterich|<tuple|8.4|15>>
   </collection>
 </references>
