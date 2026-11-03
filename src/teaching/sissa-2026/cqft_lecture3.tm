@@ -426,7 +426,7 @@
       Hence <math|\<Psi\><around|(|z,\<cdot\>|)>> has an
       <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>-valued version with
       law <math|\<mu\><rsub|m>>, and the field
-      <math|(\<Psi\>(z,\<cdot\><around|)||)><rsub|z\<in\>\<bbb-R\><rsup|2>>>
+      <math|<around|(|\<Psi\><around|(|z,\<cdot\>|)>|)><rsub|z\<in\>\<bbb-R\><rsup|2>>>
       is stationary and isotropic in <math|z>.
     </enumerate-alpha>
   </theorem>
@@ -660,7 +660,7 @@
 
   Fix a filtration <math|<around|(|\<cal-F\><rsub|t>|)><rsub|t\<geqslant\>0>>,
   for the moment that of <math|X>, and write
-  <math|\<bbb-E\><rsub|t>\<assign\>\<bbb-E\>[<space|0.17em>\<cdot\><space|0.17em><around|\||\<cal-F\><rsub|t>|]>>.
+  <math|\<bbb-E\><rsub|t>\<assign\>\<bbb-E\><around|[|<space|0.17em>\<cdot\><space|0.17em>\|\<cal-F\><rsub|t>|]>>.
 
   <\definition>
     <dueto|<cite|BCG26>><label|def:obs> An <em|observable> is a real or
@@ -912,7 +912,7 @@
     </equation>
 
     In particular, for <math|x\<neq\>y>, <math|lim<rsub|t>
-    \<bbb-E\>[:X<rsup|n><rsub|t>:<around|(|x|)>:X<rsup|n><rsub|t>:<around|(|y|)>]=n!<space|0.17em>G*<around|(|x-y|)><rsup|n>>.
+    \<bbb-E\><around|[|:X<rsup|n><rsub|t>:<around|(|x|)>:X<rsup|n><rsub|t>:<around|(|y|)>|]>=n!<space|0.17em>G*<around|(|x-y|)><rsup|n>>.
   </proposition>
 
   <\proof>
@@ -945,7 +945,7 @@
   <math|:\<mathe\><rsup|\<beta\>*X<rsub|t>>:<around|(|x|)>\<assign\>exp
   <around|(|\<beta\>*X<rsub|t><around|(|x|)>-<frac|\<beta\><rsup|2>|2>*c<rsub|t>|)>>
   is the stochastic exponential of <math|\<beta\>*X<around|(|x|)>>, hence a
-  martingale, and <math|\<bbb-E\>[:\<mathe\><rsup|\<beta\><rsub|1>*X<rsub|t>>:<around|(|x|)>:\<mathe\><rsup|\<beta\><rsub|2>*X<rsub|t>>:<around|(|y|)>]=\<mathe\><rsup|\<beta\><rsub|1>*\<beta\><rsub|2>*Q<rsub|t>*<around|(|x,y|)>>>.
+  martingale, and <math|\<bbb-E\><around|[|:\<mathe\><rsup|\<beta\><rsub|1>*X<rsub|t>>:<around|(|x|)>:\<mathe\><rsup|\<beta\><rsub|2>*X<rsub|t>>:<around|(|y|)>|]>=\<mathe\><rsup|\<beta\><rsub|1>*\<beta\><rsub|2>*Q<rsub|t>*<around|(|x,y|)>>>.
 
   <subsection|Products of observables><label|sec:product>
 
@@ -1174,7 +1174,7 @@
     <math|Q> is the heat profile. <em|Hint:> <math|c<rsub|s>> grows at most
     polynomially while <math|<wide|Q|\<dot\>><rsub|s>*<around|(|x-y|)>>
     decays like <math|\<mathe\><rsup|-s<rsup|2>*<around|\||x-y|\|><rsup|2>/4>>.
-    (b) Show that <math|\<langle\>:<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|n>:<around|(|y|)>\<rangle\>=n<rsup|2>*<big|int><rsub|0><rsup|\<infty\>><around|(|n-1|)>!<space|0.17em>Q<rsub|s><rsup|n-1>*<wide|Q|\<dot\>><rsub|s><space|0.17em>\<mathd\>s=n!<space|0.17em>G*<around|(|x-y|)><rsup|n>>.
+    (b) Show that <math|<around|\<langle\>|:<math-bf|X><rsup|n>:<around|(|x|)>*\<star\>:<math-bf|X><rsup|n>:<around|(|y|)>|\<rangle\>>=n<rsup|2>*<big|int><rsub|0><rsup|\<infty\>><around|(|n-1|)>!<space|0.17em>Q<rsub|s><rsup|n-1>*<wide|Q|\<dot\>><rsub|s><space|0.17em>\<mathd\>s=n!<space|0.17em>G*<around|(|x-y|)><rsup|n>>.
     (c) Prove<nbsp><eqref|eq:wick-product>.
   </exercise>
 

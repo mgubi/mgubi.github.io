@@ -173,8 +173,8 @@
     <\equation*>
       <\aligned>
         <tformat|<table|<row|<cell|E<rsub|T>>|<cell|=<tfrac|1|\<gamma\>><big|int>q<rsup|1/2><around|\<\|\|\>|Z<rsub|q>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>q<space|2em><text|backward
-        energy>>>|<row|<cell|J<rsub|T>>|<cell|=<big|int>q<rsup|-3/2>*<around*|[|q*<around|\<\|\|\>|w<rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>|\<\|\|\>>*w<rsub|q>*<around|\<\|\|\>|<rsub|6><rsup|6>+\<gamma\>|\<\|\|\>>*t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q<space|2em><text|large-field
-        action>>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>*<around|\<\|\|\>|<rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2>|\<\|\|\>>*\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q<space|2em><text|noise
+        energy>>>|<row|<cell|J<rsub|T>>|<cell|=<big|int>q<rsup|-3/2>*<around*|[|q*<around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|4><rsup|4>+\<gamma\><around|\<\|\|\>|w<rsub|q>|\<\|\|\>><rsub|6><rsup|6>+\<gamma\><around|\<\|\|\>|t<rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q<space|2em><text|large-field
+        action>>>|<row|<cell|G<rsub|T>>|<cell|=<big|int><around*|[|q<rsup|-1/2>*<around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|4><rsup|4>+\<gamma\>*q<rsup|-3/2><around|\<\|\|\>|\<xi\><rsub|q>|\<\|\|\>><rsub|6><rsup|6>|]>\<mathd\>q<space|2em><text|noise
         tails>>>>>
       </aligned>
     </equation*>
@@ -481,7 +481,7 @@
     Once the boundary term is removed (Section<nbsp>16):
 
     <\equation*>
-      sup<rsub|N>\<\|\|\>E<rsup|N><rsub|\<infty\>>\<\|\|\><rsub|L<rsup|p>>+sup<rsub|N><around|\<\|\|\>|J<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<space|2em>sup<rsub|N>
+      sup<rsub|N><around|\<\|\|\>|E<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>+sup<rsub|N><around|\<\|\|\>|J<rsup|N><rsub|\<infty\>>|\<\|\|\>><rsub|L<rsup|p>>\<leqslant\>C<rsub|\<gamma\>>*<around|(|1+p<rsup|5>|)>,<space|2em>sup<rsub|N>
       \<bbb-E\><around|\<\|\|\>|Z<rsup|N><rsub|q>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>C<rsub|\<gamma\>>*q<rsup|-5/2>,
     </equation*>
 
@@ -637,20 +637,20 @@
 
     The estimates use the start of the flow only through the noise. Let
     <math|\<bbb-P\><rsup|q,x>> be the exact flow conditioned on
-    <math|\<Phi\><rsub|q>=x>: <math|P<rsub|t>=K<rsub|q>x+(t-q)<wide|\<Phi\>|^>+B<rprime|'><rsub|t-q>>,
-    with prior <math|\<propto\>\<mathe\><rsup|<around|\<langle\>|z,K<rsub|q>x|\<rangle\>>-<frac|1|2><around|\<langle\>|z,K<rsub|q>z|\<rangle\>>-V<rsub|N>(z)><space|0.17em>\<mathd\>
+    <math|\<Phi\><rsub|q>=x>: <math|P<rsub|t>=K<rsub|q>x+<around|(|t-q|)><wide|\<Phi\>|^>+B<rprime|'><rsub|t-q>>,
+    with prior <math|\<propto\>\<mathe\><rsup|<around|\<langle\>|z,K<rsub|q>x|\<rangle\>>-<frac|1|2><around|\<langle\>|z,K<rsub|q>z|\<rangle\>>-V<rsub|N><around|(|z|)>><space|0.17em>\<mathd\>
     z>.
 
     The same posterior, the same system, and
     <math|\<zeta\><rsub|t>=C<rsub|t>K<rsub|q>x+\<zeta\><rsup|0><rsub|t>> with
     <math|<around|\<\|\|\>|C<rsub|t>K<rsub|q>x|\<\|\|\>><rsub|\<infty\>>\<leqslant\>2<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>>>.
-    The field equation is <math|K<rsub|q>V<rsub|t>+<frac|\<gamma\>|3>Y<rsub|t><rsup|3>=(t-q)(\<zeta\><rsub|t>-\<varrho\><rsub|t>(Y<rsub|t>)+Z<rsub|t>)>.
+    The field equation is <math|K<rsub|q>V<rsub|t>+<frac|\<gamma\>|3>Y<rsub|t><rsup|3>=<around|(|t-q|)><around|(|\<zeta\><rsub|t>-\<varrho\><rsub|t><around|(|Y<rsub|t>|)>+Z<rsub|t>|)>>.
 
     <strong|Restarted UV stability.> Uniformly in <math|N> and
     <math|<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>>\<leqslant\> R>, the
     bounds on <math|E,J> and <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>
-    C<rsub|R>s<rsup|-5/2>> hold on <math|[q\<vee\>
-    q<rsub|\<ast\>>,\<infty\>)>.
+    C<rsub|R>s<rsup|-5/2>> hold on <math|<around|[|q\<vee\>
+    q<rsub|\<ast\>>,\<infty\>|)>>.
 
     <strong|Below> <math|q<rsub|\<ast\>>><strong|: deduced.> <math|\<psi\>>
     is a martingale, so <math|\<bbb-E\><around|\<\|\|\>|\<psi\><rsub|s>|\<\|\|\>><rsub|2><rsup|2p>\<leqslant\>\<bbb-E\><around|\<\|\|\>|\<psi\><rsub|q<rsub|\<ast\>>>|\<\|\|\>><rsub|2><rsup|2p>>.
@@ -680,8 +680,9 @@
       <item><strong|Restarted laws:> the same from any field at any scale;
       gives the kernels.
 
-      <item><strong|Defect, Lipschitz coordinate:> <math|<big|int>\|e\|>
-      integrable; the explicit flow is a strong SDE.
+      <item><strong|Defect, Lipschitz coordinate:>
+      <math|<big|int><around|\||e|\|>> integrable; the explicit flow is a
+      strong SDE.
 
       <item><strong|Terminal tail:> tightness in <math|H<rsup|-s>>.
       <strong|Sources:> tails, end results only.
@@ -741,28 +742,29 @@
     \;
 
     Embed by cells: <math|\<iota\><rsub|N>:H<rsub|N>\<to\>
-    H=L<rsup|2>(\<bbb-T\><rsup|3>)> isometric,
+    H=L<rsup|2><around|(|\<bbb-T\><rsup|3>|)>> isometric,
     <math|j<rsub|N>=\<iota\><rsub|N><rsup|\<ast\>>>.
 
     <math|H<rsub|q><rsup|2>\<leqslant\> C*q*C<rsub|q>> gives, for
     <math|<frac|1|2>\<less\>*s\<less\><frac|3|2>>,
 
     <\equation*>
-      <big|int><rsub|Q><rsup|\<infty\>><around|\<\|\|\>|(1-\<Delta\>)<rsup|-s/2>H<rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2><space|0.17em>\<mathd\>
-      q\<leqslant\> C<big|int><rsub|Q><rsup|\<infty\>><frac|1|q><big|sum><rsub|k><frac|(1+\|k\|<rsup|2>)<rsup|-s>|q+c\|k\|<rsup|2>><space|0.17em>\<mathd\>
-      q\<leqslant\> C<rsub|s>Q<rsup|-(s-<frac|1|2>)>,
+      <big|int><rsub|Q><rsup|\<infty\>><around|\<\|\|\>|<around|(|1-\<Delta\>|)><rsup|-s/2>H<rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2><space|0.17em>\<mathd\>
+      q\<leqslant\> C<big|int><rsub|Q><rsup|\<infty\>><frac|1|q><big|sum><rsub|k><frac|<around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-s>|q+c<around|\||k|\|><rsup|2>><space|0.17em>\<mathd\>
+      q\<leqslant\> C<rsub|s>Q<rsup|-<around*|(|s-<frac|1|2>|)>>,
     </equation*>
 
-    and the drifts have squared tails <math|O(Q<rsup|-3>)>,
-    <math|O(Q<rsup|-5/2>)>, <math|O(Q<rsup|-3/2>)>. Doob:
+    and the drifts have squared tails <math|O<around|(|Q<rsup|-3>|)>>,
+    <math|O<around|(|Q<rsup|-5/2>|)>>, <math|O<around|(|Q<rsup|-3/2>|)>>.
+    Doob:
 
     <\equation*>
       sup<rsub|N>\<bbb-E\>sup<rsub|t\<geqslant\>
       Q><around|\<\|\|\>|Y<rsub|t>-Y<rsub|Q>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>\<leqslant\>
-      C<rsub|s>Q<rsup|-(s-<frac|1|2>)>.
+      C<rsub|s>Q<rsup|-<around*|(|s-<frac|1|2>|)>>.
     </equation*>
 
-    <math|\<nu\><rsub|N>> is tight in <math|H<rsup|-s>(\<bbb-T\><rsup|3>)>
+    <math|\<nu\><rsub|N>> is tight in <math|H<rsup|-s><around|(|\<bbb-T\><rsup|3>|)>>
     for every <math|s\<gtr\><frac|1|2>>, with moments uniform in <math|N>.
     (Threshold of the free field in <math|d=3>.)
   </hidden>|<\hidden>
@@ -815,25 +817,25 @@
 
     \;
 
-    <math|K<rsub|q>y+<wide|\<cal-F\>|\<bar\>><rsub|q>(y)=K<rsub|q>x>,
-    <math|<wide|f|\<bar\>><rsub|q>(x)=K<rsub|q>(y-x)>: the explicit force
-    solves Burgers with a source <math|-K<rsub|q>H<rsub|q>\<cal-D\><rsub|q>\<circ\>
-    y>.
+    <math|K<rsub|q>y+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|y|)>=K<rsub|q>x>,
+    <math|<wide|f|\<bar\>><rsub|q><around|(|x|)>=K<rsub|q><around|(|y-x|)>>:
+    the explicit force solves Burgers with a source
+    <math|-K<rsub|q>H<rsub|q>\<cal-D\><rsub|q>\<circ\> y>.
 
     <strong|The first scalar.> <math|\<cal-D\>> and <math|<wide|f|\<bar\>>>
-    are gradients: <math|e<rsub|q>=<big|int><rsub|0><rsup|1><around|\<langle\>|\<cal-D\><rsub|q>(t*y),y|\<rangle\>><space|0.17em>\<mathd\>
+    are gradients: <math|e<rsub|q>=<big|int><rsub|0><rsup|1><around|\<langle\>|\<cal-D\><rsub|q><around|(|t*y|)>,y|\<rangle\>><space|0.17em>\<mathd\>
     t>, <math|D<wide|V|\<bar\>>=-<wide|f|\<bar\>>>, and
 
     <\equation*>
-      \<partial\><rsub|q><wide|V|\<bar\>>+<frac|1|2><math-up|Tr>(C<rsub|q><rsup|2>D<rsup|2><wide|V|\<bar\>>)-<frac|1|2><around|\<\|\|\>|C<rsub|q>D<wide|V|\<bar\>>|\<\|\|\>><rsub|2><rsup|2>=e<rsub|q>\<circ\>
-      y+c(q).
+      \<partial\><rsub|q><wide|V|\<bar\>>+<frac|1|2><math-up|Tr><around|(|C<rsub|q><rsup|2>D<rsup|2><wide|V|\<bar\>>|)>-<frac|1|2><around|\<\|\|\>|C<rsub|q>D<wide|V|\<bar\>>|\<\|\|\>><rsub|2><rsup|2>=e<rsub|q>\<circ\>
+      y+c<around|(|q|)>.
     </equation*>
 
     Explicit flow <math|\<bbb-R\><rsup|q,x>>: <math|<space|0.17em>\<mathd\>
-    x=-C<rsub|s>(x-y<rsub|s>(x))<space|0.17em>\<mathd\>
+    x=-C<rsub|s><around|(|x-y<rsub|s><around|(|x|)>|)><space|0.17em>\<mathd\>
     s+C<rsub|s><space|0.17em>\<mathd\> W>, whose coordinate solves
-    <math|<space|0.17em>\<mathd\> Y=b(Y)<space|0.17em>\<mathd\>
-    s+H(Y)<space|0.17em>\<mathd\> W>. It contains no <math|Z>.
+    <math|<space|0.17em>\<mathd\> Y=b<around|(|Y|)><space|0.17em>\<mathd\>
+    s+H<around|(|Y|)><space|0.17em>\<mathd\> W>. It contains no <math|Z>.
 
     <math|y<rsub|s>> is Lipschitz for the uniform norm (maximum principle),
     uniformly in <math|N>: a strong continuum SDE.
@@ -848,12 +850,12 @@
 
     \;
 
-    With <math|A<rsub|N>(q,x)=V<rsub|q>(x)-<wide|V|\<bar\>><rsub|q>(x)-<big|int><rsub|q><rsup|\<infty\>>c>,
+    With <math|A<rsub|N><around|(|q,x|)>=V<rsub|q><around|(|x|)>-<wide|V|\<bar\>><rsub|q><around|(|x|)>-<big|int><rsub|q><rsup|\<infty\>>c>,
     at fixed <math|N>:
 
     <\equation*>
-      <frac|<space|0.17em>\<mathd\>\<bbb-P\><rsup|q,x>|<space|0.17em>\<mathd\>\<bbb-R\><rsup|q,x>>=\<mathe\><rsup|A<rsub|N>>exp<around|(|-<big|int><rsub|q><rsup|\<infty\>>e<rsub|s>(Y<rsub|s>)<space|0.17em>\<mathd\>
-      s|)>,<space|1em><math-up|Ent>(\<bbb-P\><rsup|q,x>\|\<bbb-R\><rsup|q,x>)=<frac|1|2><big|int><rsub|q><rsup|\<infty\>>\<bbb-E\><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>
+      <frac|<space|0.17em>\<mathd\>\<bbb-P\><rsup|q,x>|<space|0.17em>\<mathd\>\<bbb-R\><rsup|q,x>>=\<mathe\><rsup|A<rsub|N>>exp<around|(|-<big|int><rsub|q><rsup|\<infty\>>e<rsub|s><around|(|Y<rsub|s>|)><space|0.17em>\<mathd\>
+      s|)>,<space|1em><math-up|Ent><around|(|\<bbb-P\><rsup|q,x>\|\<bbb-R\><rsup|q,x>|)>=<frac|1|2><big|int><rsub|q><rsup|\<infty\>>\<bbb-E\><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2><space|0.17em>\<mathd\>
       s,
     </equation*>
 
@@ -864,8 +866,8 @@
       e.
     </equation*>
 
-    The defect on all fields: <math|\|e<rsub|s>(y)\|\<leqslant\>
-    C\<gamma\><rsup|5>s<rsup|-3><around|\<\|\|\>|\<pi\><rsub|s>y|\<\|\|\>><rsub|4><rsup|4>+C\<gamma\><rsup|3>s<rsup|-5/2><around|\<\|\|\>|t<rsub|s>(y)|\<\|\|\>><rsub|6><rsup|6>>.
+    The defect on all fields: <math|<around|\||e<rsub|s><around|(|y|)>|\|>\<leqslant\>
+    C\<gamma\><rsup|5>s<rsup|-3><around|\<\|\|\>|\<pi\><rsub|s>y|\<\|\|\>><rsub|4><rsup|4>+C\<gamma\><rsup|3>s<rsup|-5/2><around|\<\|\|\>|t<rsub|s><around|(|y|)>|\<\|\|\>><rsub|6><rsup|6>>.
     So both sides are bounded uniformly in <math|N>, by the energies under
     <math|\<bbb-P\>> and by Itô under <math|\<bbb-R\>>.
 
@@ -884,18 +886,18 @@
     <math|L<rsup|1>>:
 
     <\equation*>
-      \<Pi\><rsub|q>O(x)=\<mathe\><rsup|A(q,x)>\<bbb-E\><rsup|\<bbb-R\><rsup|q,x>>[O(Y<rsub|\<infty\>>)\<mathe\><rsup|-<big|int><rsub|q><rsup|\<infty\>>e>],<space|1em>\<mathe\><rsup|-A(q,x)>=\<bbb-E\><rsup|\<bbb-R\><rsup|q,x>>\<mathe\><rsup|-<big|int><rsub|q><rsup|\<infty\>>e>,
+      \<Pi\><rsub|q>O<around|(|x|)>=\<mathe\><rsup|A<around|(|q,x|)>>\<bbb-E\><rsup|\<bbb-R\><rsup|q,x>><around*|[|O<around|(|Y<rsub|\<infty\>>|)>\<mathe\><rsup|-<big|int><rsub|q><rsup|\<infty\>>e>|]>,<space|1em>\<mathe\><rsup|-A<around|(|q,x|)>>=\<bbb-E\><rsup|\<bbb-R\><rsup|q,x>>\<mathe\><rsup|-<big|int><rsub|q><rsup|\<infty\>>e>,
     </equation*>
 
-    jointly continuous in <math|(q,x)>.
+    jointly continuous in <math|<around|(|q,x|)>>.
 
-    <strong|The measure> is the kernel at <math|(q<rsub|0>,0)>. With
-    <math|\<bbb-R\>> the flow from <math|Y<rsub|q<rsub|0>>=0>, along the
+    <strong|The measure> is the kernel at <math|<around|(|q<rsub|0>,0|)>>.
+    With <math|\<bbb-R\>> the flow from <math|Y<rsub|q<rsub|0>>=0>, along the
     whole sequence,
 
     <\equation*>
-      <big|int> O<space|0.17em>\<mathd\>\<nu\>=<frac|\<bbb-E\><rsup|\<bbb-R\>>[O(Y<rsub|\<infty\>>)\<mathe\><rsup|-<big|int><rsub|q<rsub|0>><rsup|\<infty\>>e>]|\<bbb-E\><rsup|\<bbb-R\>>[\<mathe\><rsup|-<big|int><rsub|q<rsub|0>><rsup|\<infty\>>e>]>,<space|1em>-log<big|int>\<mathe\><rsup|-V<rsub|N>><space|0.17em>\<mathd\>\<mu\><rsub|C>-\<cal-C\><rsub|N>(q<rsub|0>)\<to\>
-      A(q<rsub|0>,0).
+      <big|int> O<space|0.17em>\<mathd\>\<nu\>=<frac|\<bbb-E\><rsup|\<bbb-R\>><around*|[|O<around|(|Y<rsub|\<infty\>>|)>\<mathe\><rsup|-<big|int><rsub|q<rsub|0>><rsup|\<infty\>>e>|]>|\<bbb-E\><rsup|\<bbb-R\>><around*|[|\<mathe\><rsup|-<big|int><rsub|q<rsub|0>><rsup|\<infty\>>e>|]>>,<space|1em>-log<big|int>\<mathe\><rsup|-V<rsub|N>><space|0.17em>\<mathd\>\<mu\><rsub|C>-\<cal-C\><rsub|N><around|(|q<rsub|0>|)>\<to\>
+      A<around|(|q<rsub|0>,0|)>.
     </equation*>
 
     As in Gubinelli\UMeyer for sine\UGordon, but the defect is unbounded: the
@@ -906,19 +908,20 @@
     \;
 
     Under <math|\<bbb-P\>=f\<bbb-R\>>, with
-    <math|f=\<mathe\><rsup|A(q<rsub|0>,0)>\<mathe\><rsup|-<big|int> e>>,
-    <math|\<Phi\>=Y<rsub|\<infty\>>>, <math|P<rsub|q>=K<rsub|q>x<rsub|q>>,
-    <math|\<cal-F\><rsub|q>=\<sigma\>(x<rsub|s>:s\<leqslant\> q)>:
+    <math|f=\<mathe\><rsup|A<around|(|q<rsub|0>,0|)>>\<mathe\><rsup|-<big|int>
+    e>>, <math|\<Phi\>=Y<rsub|\<infty\>>>,
+    <math|P<rsub|q>=K<rsub|q>x<rsub|q>>, <math|\<cal-F\><rsub|q>=\<sigma\><around|(|x<rsub|s>:s\<leqslant\>
+    q|)>>:
 
     <\itemize>
-      <item><math|\<Phi\>\<sim\>\<nu\>>, <math|P<rsub|q>=(q-q<rsub|0>)\<Phi\>+B<rsub|q-q<rsub|0>>>
+      <item><math|\<Phi\>\<sim\>\<nu\>>, <math|P<rsub|q>=<around|(|q-q<rsub|0>|)>\<Phi\>+B<rsub|q-q<rsub|0>>>
       with <math|B> independent of <math|\<Phi\>>;
 
-      <item><math|\<psi\><rsub|q>=\<bbb-E\>[\<Phi\>\|\<cal-F\><rsub|q>]=m<rsub|q>(\<Phi\><rsub|q>)>,
+      <item><math|\<psi\><rsub|q>=\<bbb-E\><around|[|\<Phi\>\|\<cal-F\><rsub|q>|]>=m<rsub|q><around|(|\<Phi\><rsub|q>|)>>,
       a continuous function of the field;
 
       <item><math|W=P-<big|int>\<psi\>> is a Brownian motion, and with
-      <math|Y=y(x)>, <math|Z=\<psi\>-Y>, the FBSDE holds from
+      <math|Y=y<around|(|x|)>>, <math|Z=\<psi\>-Y>, the FBSDE holds from
       <math|Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0>;
 
       <item><math|\<psi\>=<big|int><math-up|Cov><space|0.17em>\<mathd\> W>,
@@ -930,7 +933,7 @@
     <strong|Proof.> <math|\<cal-F\>> is Brownian under <math|\<bbb-R\>>. So
     <math|<space|0.17em>\<mathd\> D=D<around|\<langle\>|Z<rprime|'>,<space|0.17em>\<mathd\>
     W<rsup|\<bbb-R\>>|\<rangle\>>>, and Girsanov gives
-    <math|<space|0.17em>\<mathd\> P=(Y+Z<rprime|'>)<space|0.17em>\<mathd\>
+    <math|<space|0.17em>\<mathd\> P=<around|(|Y+Z<rprime|'>|)><space|0.17em>\<mathd\>
     s+<space|0.17em>\<mathd\> W>. By independence of <math|B> the drift is
     <math|\<psi\>>. For <math|M=N/D>, Itô gives <math|<space|0.17em>\<mathd\>
     M=<around|\<langle\>|n/D-M*Z,<space|0.17em>\<mathd\> W|\<rangle\>>>.
@@ -1035,51 +1038,52 @@
     on the prior.
 
     Let <math|<wide|\<nu\>|^>\<propto\>\<mathe\><rsup|h<around|\<langle\>|\<varphi\>,f|\<rangle\>>>\<nu\><rsub|N>>.
-    This is the flow restarted at <math|(q<rsub|0>,h*C<rsub|q<rsub|0>>f)>.
+    This is the flow restarted at <math|<around|(|q<rsub|0>,h*C<rsub|q<rsub|0>>f|)>>.
     <strong|Shift the coordinate:>
 
     <\equation*>
-      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>)=P<rsub|q>+h*f,<space|1em>
+      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=P<rsub|q>+h*f,<space|1em>
       Z<rsub|q>=<wide|\<psi\>|^><rsub|q>-Y<rsub|q>.
     </equation*>
 
     The system is the same, <math|T*Z<rsub|T>\<to\>0> at fixed <math|N>, and
     the field equation gains <math|h*f>: the noise gains
-    <math|d<rsub|q>=h*C<rsub|q>f>, <math|<around|\<\|\|\>|d<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>\|h\|<around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>/q>.
+    <math|d<rsub|q>=h*C<rsub|q>f>, <math|<around|\<\|\|\>|d<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\><around|\||h|\|><around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>/q>.
 
-    So UV stability holds on <math|[q<rsub|h>,\<infty\>)> when
-    <math|q<rsub|h><rsup|3/2>\<geqslant\>70\<gamma\><rsup|1/2>\|h\|<around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>:
+    So UV stability holds on <math|<around|[|q<rsub|h>,\<infty\>|)>> when
+    <math|q<rsub|h><rsup|3/2>\<geqslant\>70\<gamma\><rsup|1/2><around|\||h|\|><around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>:
     where the cube at its threshold, <math|q*r<rsub|q>>, dominates the
     source.
 
     An exact identity, with no cube and no derivative:
-    <math|<wide|\<Phi\>|^>=Y<rsub|q>+Z<rsub|q>+(\<eta\><rsub|q>-B<rsub|q-q<rsub|0>>)/(q-q<rsub|0>)>.
+    <math|<wide|\<Phi\>|^>=Y<rsub|q>+Z<rsub|q>+<around|(|\<eta\><rsub|q>-B<rsub|q-q<rsub|0>>|)>/<around|(|q-q<rsub|0>|)>>.
   </hidden>|<\hidden>
     <mytitle|Quartic tails: closing>
 
     \;
 
     Test the identity with <math|f>, <math|<around|\<\|\|\>|f|\<\|\|\>><rsub|\<ast\>>=<around|\<\|\|\>|f|\<\|\|\>><rsub|1>+<around|\<\|\|\>|f|\<\|\|\>><rsub|2>+<around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=1>,
-    and average over <math|[q<rsub|h>,2q<rsub|h>]>,
+    and average over <math|<around|[|q<rsub|h>,2q<rsub|h>|]>>,
     <math|X=<around|\<langle\>|<wide|\<Phi\>|^>,f|\<rangle\>>>:
 
     <\equation*>
-      <wide|\<bbb-E\>|^>\|X\|\<leqslant\> C*r<rsub|q<rsub|h>>+C\<leqslant\>
-      C(1+\|h\|)<rsup|1/3>.
+      <wide|\<bbb-E\>|^><around|\||X|\|>\<leqslant\>
+      C*r<rsub|q<rsub|h>>+C\<leqslant\> C<around|(|1+<around|\||h|\|>|)><rsup|1/3>.
     </equation*>
 
-    As <math|L(h)=log\<bbb-E\>\<mathe\><rsup|h<around|\<langle\>|\<Phi\>,f|\<rangle\>>>>
-    has <math|L<rprime|'>(h)=<wide|\<bbb-E\>|^>X>, we get
-    <math|L(h)\<leqslant\> C(\|h\|+\|h\|<rsup|4/3>)>. Chernoff:
+    As <math|L<around|(|h|)>=log\<bbb-E\>\<mathe\><rsup|h<around|\<langle\>|\<Phi\>,f|\<rangle\>>>>
+    has <math|L<rprime|'><around|(|h|)>=<wide|\<bbb-E\>|^>X>, we get
+    <math|L<around|(|h|)>\<leqslant\> C<around|(|<around|\||h|\|>+<around|\||h|\|><rsup|4/3>|)>>.
+    Chernoff:
 
     <\equation*>
-      \<bbb-E\>exp(\<beta\><around|\<langle\>|\<Phi\>,f|\<rangle\>><rsup|4>/<around|\<\|\|\>|f|\<\|\|\>><rsub|\<ast\>><rsup|4>)\<leqslant\>
-      C,<space|1em>sup<rsub|N>\<bbb-E\>exp(\<beta\><rsub|\<rho\>><around|\<\|\|\>|\<iota\><rsub|N>\<Phi\>|\<\|\|\>><rsub|H<rsup|-\<rho\>>><rsup|4>)\<less\>\<infty\>,<space|1em>\<rho\>\<gtr\><frac|3|2>.
+      \<bbb-E\>exp<around|(|\<beta\><around|\<langle\>|\<Phi\>,f|\<rangle\>><rsup|4>/<around|\<\|\|\>|f|\<\|\|\>><rsub|\<ast\>><rsup|4>|)>\<leqslant\>
+      C,<space|1em>sup<rsub|N>\<bbb-E\>exp<around|(|\<beta\><rsub|\<rho\>><around|\<\|\|\>|\<iota\><rsub|N>\<Phi\>|\<\|\|\>><rsub|H<rsup|-\<rho\>>><rsup|4>|)>\<less\>\<infty\>,<space|1em>\<rho\>\<gtr\><frac|3|2>.
     </equation*>
 
     <strong|Gaussian tails at the free threshold.> A quadratic tilt
     <math|W=<frac|\<beta\>|2><around|\<\|\|\>|\<iota\><rsub|N>\<varphi\>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>>,
-    with boundary term <math|D*W>, gives <math|sup<rsub|N>\<bbb-E\>exp(\<beta\><rsub|s><around|\<\|\|\>|\<iota\><rsub|N>\<Phi\>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>)\<less\>\<infty\>>,
+    with boundary term <math|D*W>, gives <math|sup<rsub|N>\<bbb-E\>exp<around|(|\<beta\><rsub|s><around|\<\|\|\>|\<iota\><rsub|N>\<Phi\>|\<\|\|\>><rsub|H<rsup|-s>><rsup|2>|)>\<less\>\<infty\>>,
     <math|s\<gtr\><frac|1|2>>.
 
     The quartic moment at <math|s> near <math|<frac|1|2>> would need
@@ -1089,14 +1093,14 @@
 
     \;
 
-    <strong|DS along the scales.> For <math|G=g(<around|\<langle\>|\<Phi\><rsub|q<rsub|1>>,h<rsub|1>|\<rangle\>>,\<ldots\>,<around|\<langle\>|\<Phi\><rsub|q<rsub|k>>,h<rsub|k>|\<rangle\>>)>,
+    <strong|DS along the scales.> For <math|G=g<around|(|<around|\<langle\>|\<Phi\><rsub|q<rsub|1>>,h<rsub|1>|\<rangle\>>,\<ldots\>,<around|\<langle\>|\<Phi\><rsub|q<rsub|k>>,h<rsub|k>|\<rangle\>>|)>>,
     <math|q<rsub|i>\<leqslant\> q>:
 
     <\equation*>
-      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\>[G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>]=\<bbb-E\>[G(<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>),J<rsub|q>h|\<rangle\>>)]+O(q<rsup|-1/4>).
+      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|(|<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,J<rsub|q>h|\<rangle\>>|)>|]>+O<around|(|q<rsup|-1/4>|)>.
     </equation*>
 
-    So the explicit force <math|<wide|\<cal-F\>|\<bar\>><rsub|q>(Y<rsub|q>)>
+    So the explicit force <math|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>
     closes the hierarchy at large <math|q>, up to an error which vanishes as
     <math|q\<to\>\<infty\>>.
   </hidden>|<\hidden>
@@ -1104,30 +1108,30 @@
 
     \;
 
-    <strong|Scalar form.> <math|A<rsub|t>=A(t,x<rsub|t>)> solves
+    <strong|Scalar form.> <math|A<rsub|t>=A<around|(|t,x<rsub|t>|)>> solves
 
     <\equation*>
-      A<rsub|t>=<big|int><rsub|t><rsup|\<infty\>>(e<rsub|s>(Y<rsub|s>)+<frac|1|2><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2>)<space|0.17em>\<mathd\>
+      A<rsub|t>=<big|int><rsub|t><rsup|\<infty\>><around*|(|e<rsub|s><around|(|Y<rsub|s>|)>+<frac|1|2><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2>|)><space|0.17em>\<mathd\>
       s+<big|int><rsub|t><rsup|\<infty\>><around|\<langle\>|Z<rsub|s>,<space|0.17em>\<mathd\>
       W<rsub|s>|\<rangle\>>.
     </equation*>
 
     With the forward equation <math|<space|0.17em>\<mathd\>
-    P=(Y+Z)<space|0.17em>\<mathd\> s+<space|0.17em>\<mathd\> W> this has
-    <strong|uniqueness in law>: Girsanov removes <math|Z>, pathwise
+    P=<around|(|Y+Z|)><space|0.17em>\<mathd\> s+<space|0.17em>\<mathd\> W>
+    this has <strong|uniqueness in law>: Girsanov removes <math|Z>, pathwise
     uniqueness gives <math|\<bbb-R\>>, and the scalar equation gives the
-    density. <math|Z> is the feedback <math|m(x)-y(x)>.
+    density. <math|Z> is the feedback <math|m<around|(|x|)>-y<around|(|x|)>>.
 
     <strong|Renormalised variational formula.> The Gibbs principle over
     <math|\<bbb-R\>>:
 
     <\equation*>
-      -log<big|int>\<mathe\><rsup|-O><space|0.17em>\<mathd\>\<nu\>=\<cal-G\>(O)-\<cal-G\>(0),<space|1em>\<cal-G\>(O)=inf<rsub|u>\<bbb-E\>[O(Y<rsup|u><rsub|\<infty\>>)+<big|int><rsub|q<rsub|0>><rsup|\<infty\>>(e<rsub|s>(Y<rsup|u><rsub|s>)+<frac|1|2><around|\<\|\|\>|u<rsub|s>|\<\|\|\>><rsub|2><rsup|2>)<space|0.17em>\<mathd\>
-      s],
+      -log<big|int>\<mathe\><rsup|-O><space|0.17em>\<mathd\>\<nu\>=\<cal-G\><around|(|O|)>-\<cal-G\><around|(|0|)>,<space|1em>\<cal-G\><around|(|O|)>=inf<rsub|u>\<bbb-E\><around*|[|O<around|(|Y<rsup|u><rsub|\<infty\>>|)>+<big|int><rsub|q<rsub|0>><rsup|\<infty\>><around*|(|e<rsub|s><around|(|Y<rsup|u><rsub|s>|)>+<frac|1|2><around|\<\|\|\>|u<rsub|s>|\<\|\|\>><rsub|2><rsup|2>|)><space|0.17em>\<mathd\>
+      s|]>,
     </equation*>
 
-    <math|<space|0.17em>\<mathd\> Y<rsup|u>=(b(Y<rsup|u>)+H(Y<rsup|u>)u)<space|0.17em>\<mathd\>
-    s+H(Y<rsup|u>)<space|0.17em>\<mathd\> W>,
+    <math|<space|0.17em>\<mathd\> Y<rsup|u>=<around|(|b<around|(|Y<rsup|u>|)>+H<around|(|Y<rsup|u>|)>u|)><space|0.17em>\<mathd\>
+    s+H<around|(|Y<rsup|u>|)><space|0.17em>\<mathd\> W>,
     <math|Y<rsup|u><rsub|q<rsub|0>>=0>. Minimiser for <math|O=0>: <math|u=Z>.
     <strong|No infinite constant, no initial law to optimise.>
   </hidden>|<\hidden>
@@ -1138,9 +1142,9 @@
     <\itemize>
       <item><strong|The vector FBSDE alone:> <math|Z> need not be a gradient.
       It would suffice that any solution has a Lipschitz decoupling field: a
-      pointwise bound on <math|<math-up|Cov><rsub|q>(x)>, or high-scale
-      contraction with non-degeneracy. Only <math|L<rsup|2>(<math-up|HS>)>
-      control is available.
+      pointwise bound on <math|<math-up|Cov><rsub|q><around|(|x|)>>, or
+      high-scale contraction with non-degeneracy. Only
+      <math|L<rsup|2><around|(|<math-up|HS>|)>> control is available.
 
       <item><strong|Strong solutions:> is <math|P> adapted to <math|W>? The
       same bound. Allinger\UMitter does not apply, as

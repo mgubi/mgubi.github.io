@@ -91,6 +91,14 @@ have the suffix `-print.pdf`. Keep the course page links and revision dates in
 sync. The individual supplements are discoverable through the course page and
 sitemap; only the course page is listed in the article index and Atom feed.
 
+The TeXmacs sources are also published as downloads: byte-identical copies of
+the `src/teaching/sissa-2026/*.tm` files, with their original names (the
+documents link to each other by file name), the packages `cqft-notes.ts` and
+`cqft-slides.ts`, and the `max-html.ts` and `max-html-slides.ts` packages from
+`plugins/max-html/packages/`, in `store/sissa/2026/texmacs/`, and the same
+folder as `store/sissa/2026/cqft_texmacs_sources.zip`. Refresh both whenever
+the sources change.
+
 ## Editing safely
 
 Read [AGENTS.md](AGENTS.md) before making changes. Treat `src/` as the source of

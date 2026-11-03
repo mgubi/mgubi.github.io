@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|notes>
 
@@ -15,7 +15,7 @@
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|30 Oct 2026>
+  Stochastic Analysis Trimester Programme.|03 Nov 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
   Oct 2026>

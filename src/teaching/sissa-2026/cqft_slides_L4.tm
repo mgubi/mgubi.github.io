@@ -383,7 +383,7 @@
     <with|font-series|bold|Proof> (verification). Itô <math|+> Polchinski:
 
     <\equation*>
-      \<bbb-E\><rsub|0>*<around*|[|V<rsub|T><around|(|X<rsup|u><rsub|T>|)>+<tfrac|1|2><big|int><rsub|0><rsup|T><around|\<\|\|\>|u<rsub|t>|\<\|\|\>><rsup|2>|]>=V<rsub|0><around|(|0|)>+<tfrac|1|2>\<bbb-E\><rsub|0>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|u<rsub|t>+<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D*V<rsub|t><around|(|X<rsup|u><rsub|t>|)>|\<\|\|\>><rsup|2>\<mathd\>t.<space|2em>
+      \<bbb-E\><rsub|0>*<around*|[|V<rsub|T><around|(|X<rsup|u><rsub|T>|)>+<tfrac|1|2><big|int><rsub|0><rsup|T><around|\<\|\|\>|u<rsub|t>|\<\|\|\>><rsup|2>\<mathd\>t|]>=V<rsub|0><around|(|0|)>+<tfrac|1|2>\<bbb-E\><rsub|0>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|u<rsub|t>+<wide|Q|\<dot\>><rsub|t><rsup|1/2>*D*V<rsub|t><around|(|X<rsup|u><rsub|t>|)>|\<\|\|\>><rsup|2>\<mathd\>t.<space|2em>
     </equation*>
   </hidden>|<\hidden>
     <mytitle|The control problem: PDE, dynamics, variational>
@@ -475,7 +475,7 @@
     has <strong|divergent cost>,
 
     <\equation*>
-      <tfrac|1|2>\<bbb-E\>*<big|int><rsub|0><rsup|T>\<\|\|\>4*\<lambda\>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>:\<\|\|\><rsup|2>\<mathd\>s=12*\<lambda\><rsup|2>*L<rsup|3>*<big|int>Q<rsub|T><around|(|z|)><rsup|4><space|0.17em>\<mathd\>z\<sim\>T.
+      <tfrac|1|2>\<bbb-E\>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|4*\<lambda\>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>:|\<\|\|\>><rsup|2>\<mathd\>s=12*\<lambda\><rsup|2>*L<rsup|3>*<big|int>Q<rsub|T><around|(|z|)><rsup|4><space|0.17em>\<mathd\>z\<sim\>T.
     </equation*>
 
     Change variables <math|u=-4*\<lambda\>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>,
@@ -636,19 +636,19 @@
     bridge,
 
     <\equation*>
-      j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>,<space|1em>\<bbb-E\>[N<rsub|s>\<otimes\>
-      N<rsub|t>]=\<cal-R\><rsub|s\<wedge\> t>,<space|1em> N<text| independent
-      of >\<Phi\><rsub|T>:
+      j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>,<space|1em>\<bbb-E\><around|[|N<rsub|s>\<otimes\>
+      N<rsub|t>|]>=\<cal-R\><rsub|s\<wedge\> t>,<space|1em> N<text|
+      independent of >\<Phi\><rsub|T>:
     </equation*>
 
     a noisy measurement of the terminal field, whose signal-to-noise ratio is
-    the <strong|regulator>. Let <math|\<cal-K\><rsub|t>(j)=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T>(<space|0.17em>\<mathd\>
-    y)>.
+    the <strong|regulator>. Let <math|\<cal-K\><rsub|t><around|(|j|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
+    y|)>>.
 
     <\itemize>
       <item><math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>> is the
-      <strong|Bayesian posterior>; <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>\<Phi\><rsub|T>=D\<cal-K\><rsub|t>(j<rsub|t>)>
-      and <math|<math-up|Cov><rsub|t>=D<rsup|2>\<cal-K\><rsub|t>(j<rsub|t>)>.
+      <strong|Bayesian posterior>; <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t>\<Phi\><rsub|T>=D\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>
+      and <math|<math-up|Cov><rsub|t>=D<rsup|2>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>.
 
       <item><math|W> is the <strong|innovation>:
       <math|<space|0.17em>\<mathd\> j<rsub|t>=<wide|\<cal-R\>|\<dot\>><rsub|t>\<psi\><rsub|t><space|0.17em>\<mathd\>
@@ -656,7 +656,7 @@
       W<rsub|t>> and <math|<space|0.17em>\<mathd\>\<psi\><rsub|t>=<math-up|Cov><rsub|t><wide|\<cal-R\>|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>
       W<rsub|t>>.
 
-      <item><math|\<partial\><rsub|t>\<cal-K\>+<frac|1|2><math-up|Tr>(<wide|\<cal-R\>|\<dot\>>D<rsup|2>\<cal-K\>)+<frac|1|2><around|\<langle\>|D\<cal-K\>,<wide|\<cal-R\>|\<dot\>>D\<cal-K\>|\<rangle\>>=0>:
+      <item><math|\<partial\><rsub|t>\<cal-K\>+<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>D<rsup|2>\<cal-K\>|)>+<frac|1|2><around|\<langle\>|D\<cal-K\>,<wide|\<cal-R\>|\<dot\>>D\<cal-K\>|\<rangle\>>=0>:
       Polchinski in the variable <math|j>.
     </itemize>
 
@@ -731,7 +731,7 @@
       </cell>|<\cell>
         value function
       </cell>|<\cell>
-        <math|<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-\<cal-K\><rsub|t>(S<rsub|t><rsup|-1>x)+f(t)>
+        <math|<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>+f<around|(|t|)>>
       </cell>>>>>>
     </padded-center>
 
@@ -1031,8 +1031,8 @@
     <math|t>, without interaction, costs the <strong|free action>
 
     <\equation*>
-      \<cal-A\><rsub|t>(x,\<psi\>)=<frac|1|2><around|\<langle\>|\<psi\>-x,S<rsub|t><rsup|-1>(\<psi\>-x)|\<rangle\>>,<space|1em>
-      p=S<rsub|t><rsup|-1>(\<psi\>-x)<text| constant.>
+      \<cal-A\><rsub|t><around|(|x,\<psi\>|)>=<frac|1|2><around|\<langle\>|\<psi\>-x,S<rsub|t><rsup|-1><around|(|\<psi\>-x|)>|\<rangle\>>,<space|1em>
+      p=S<rsub|t><rsup|-1><around|(|\<psi\>-x|)><text| constant.>
     </equation*>
 
     <\itemize>
@@ -1049,9 +1049,9 @@
     </itemize>
 
     <\myframed>
-      <math|(\<psi\><rsub|t>,F<rsub|t>)> are the Jacobi coordinates of the
-      free Hamiltonian of the field. With noise, the constants of motion
-      become <strong|martingales>.
+      <math|<around|(|\<psi\><rsub|t>,F<rsub|t>|)>> are the Jacobi
+      coordinates of the free Hamiltonian of the field. With noise, the
+      constants of motion become <strong|martingales>.
     </myframed>
   </hidden>|<\hidden>
     <mytitle|The gradient sector>
@@ -1281,7 +1281,7 @@
     \;
 
     <strong|Value function.> At the optimal forecast,
-    <math|V<rsub|t>(x)=\<Gamma\><rsub|t>(\<psi\>)+\<cal-A\><rsub|t>(x,\<psi\>)>:
+    <math|V<rsub|t><around|(|x|)>=\<Gamma\><rsub|t><around|(|\<psi\>|)>+\<cal-A\><rsub|t><around|(|x,\<psi\>|)>>:
     the cost attached to the forecast plus the cost of reaching it by free
     motion. This transports the generating function along
     <math|\<Sigma\><rsub|t>>:
@@ -1292,11 +1292,11 @@
       x|\<rangle\>>.
     </equation*>
 
-    <strong|Legendre.> With <math|\<cal-K\><rsub|t>(S<rsub|t><rsup|-1>x)=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t>(x)>
+    <strong|Legendre.> With <math|\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t><around|(|x|)>>
     up to a function of <math|t>,
 
     <\equation*>
-      \<cal-K\><rsub|t><rsup|\<ast\>>(\<psi\>)=\<Gamma\><rsub|t>(\<psi\>)+<frac|1|2><around|\<langle\>|\<psi\>,S<rsub|t><rsup|-1>\<psi\>|\<rangle\>>.
+      \<cal-K\><rsub|t><rsup|\<ast\>><around|(|\<psi\>|)>=\<Gamma\><rsub|t><around|(|\<psi\>|)>+<frac|1|2><around|\<langle\>|\<psi\>,S<rsub|t><rsup|-1>\<psi\>|\<rangle\>>.
     </equation*>
 
     <\itemize>
@@ -1730,7 +1730,7 @@
       \;
 
       Gaussian convolution <strong|lowers the Wick ordering>:
-      <math|V<rsub|t>=<big|int>[\<lambda\>:\<phi\><rsup|4>:<rsub|t>+\<gamma\><rsub|T>:\<phi\><rsup|2>:<rsub|t>]+O<around|(|\<lambda\><rsup|2>|)>>,
+      <math|V<rsub|t>=<big|int><around|[|\<lambda\>:\<phi\><rsup|4>:<rsub|t>+\<gamma\><rsub|T>:\<phi\><rsup|2>:<rsub|t>|]>+O<around|(|\<lambda\><rsup|2>|)>>,
       the dual of <math|<big|int>H<rsub|4>*<around|(|X<rsub|t>;c<rsub|t>|)>>
       being an observable. At second order, <math|S=Q<rsub|T,t>>:
 

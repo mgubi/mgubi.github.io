@@ -81,7 +81,7 @@
   relativistic quantum field is encoded in a probability measure on
   distributions satisfying the Osterwalder\USchrader axioms, formally
   <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>\<propto\>exp
-  <around|(|-<big|int><around|[|<frac|1|2>\|\<nabla\>*\<varphi\>\|<rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>>
+  <around|(|-<big|int><around|[|<frac|1|2><around|\||\<nabla\>*\<varphi\>|\|><rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>>
   (Eq.<nbsp><hlink|(2.13)|cqft_notes_L1.tm#eq:path-integral>). In this
   lecture we treat its Gaussian part rigorously. Conventions are those of
   Lecture<nbsp>1. Sections, equations and exercises keep the numbering of the
@@ -234,7 +234,7 @@
     <math|<math-up|supp>f\<subset\><around|{|\<tau\>\<gtr\>0|}>>,
 
     <\equation>
-      <label|eq:RP><around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\||<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f(\<tau\>,\<cdot\><around*|)|<space|0.17em>\<mathd\>\<tau\>|\|><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geqslant\>0.|\<nobracket\>>
+      <label|eq:RP><around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around*|(|\<tau\>,\<cdot\>|)><space|0.17em>\<mathd\>\<tau\>|\<\|\|\>><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geqslant\>0.
     </equation>
 
     (c) <math|\<mu\><rsub|m>> on <math|\<bbb-R\><rsup|d>> satisfies
@@ -387,7 +387,7 @@
     is Markov but not reflection positive, because its
     <math|\<Sigma\><rsub|0>> also contains
     <math|\<partial\><rsub|\<tau\>>*\<varphi\>>, which <math|\<Theta\>>
-    reverses. Moreover <math|P<rsub|t>=\<bbb-E\>[<space|0.17em>U<rsub|t><space|0.17em>\<cdot\><space|0.17em><around|\||<space|0.17em>\<Sigma\><rsub|0>|]>>,
+    reverses. Moreover <math|P<rsub|t>=\<bbb-E\><around|[|<space|0.17em>U<rsub|t><space|0.17em>\<cdot\><space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>>,
     with <math|U<rsub|t>> the time translation, is a semigroup on
     <math|L<rsup|2><around|(|\<Sigma\><rsub|0>|)>>: by the Markov property
     for <math|<around|{|\<tau\>\<gtr\>t|}>>,
@@ -470,7 +470,7 @@
   <\remark>
     <dueto|Euclidean Källén\ULehmann representation><label|rem:KL-euclid> The
     computation in Proposition<nbsp><reference|prop:RP>(a) says that
-    <math|<big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)>\|\<tau\>\|+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>>:
+    <math|<big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)><around|\||\<tau\>|\|>+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>>:
     the Wick rotation of the free two-point function
     <math|W<rsub|2><rsup|<around|(|M|)>>> is the Green function
     <math|G<rsub|M>> of <math|M<rsup|2>-\<Delta\>>. Rotating
@@ -702,7 +702,7 @@
   interacting theories, whose spectral measure also has a continuous part,
   the multi-particle continuum. There the continuum is produced by a
   <em|local> interaction, and the Euclidean field equation remains local,
-  e.g. <math|\<bbb-E\>*<around|[|D<rsub|h>*F|]>=\<bbb-E\>[F(<around|(|m<rsup|2>-\<Delta\>|)>*\<varphi\>+4*\<lambda\>:\<varphi\><rsup|3>:<around|)|<around|(|h|)>|]>>
+  e.g. <math|\<bbb-E\>*<around|[|D<rsub|h>*F|]>=\<bbb-E\><around|[|F<around|(|<around|(|m<rsup|2>-\<Delta\>|)>*\<varphi\>+4*\<lambda\>:\<varphi\><rsup|3>:|)><around|(|h|)>|]>>
   for <math|\<Phi\><rsup|4><rsub|2>>, although the inverse two-point function
   is nonlocal. Thus, for a single field: positive and nonlocal means an
   incomplete description, which is unphysical for continuous <math|\<rho\>>;
@@ -763,7 +763,7 @@
 
     If instead <math|n*<around|(|d-2|)>\<geqslant\>d> and
     <math|0\<leqslant\>f\<nequiv\>0>, then
-    <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<to\>\<infty\>>.
+    <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<to\>\<infty\>>.
   </theorem>
 
   <\proof>
@@ -800,14 +800,14 @@
     iff <math|n*<around|(|d-2|)>\<less\>d>, and <math|K> is bounded on
     <math|<around|{|<around|\||z|\|>\<geqslant\>1|}>>. Since
     <math|f,g\<in\>L<rsup|1>\<cap\>L<rsup|\<infty\>>>, dominated convergence
-    gives <math|\<bbb-E\><around|[||(>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>)<rsup|2>]=n!<big|iint>f*f*<space|0.17em><around|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>\<to\>0>:
+    gives <math|\<bbb-E\><around|[|<around|(|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>|)><rsup|2>|]>=n!<big|iint>f*f*<space|0.17em><around|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>\<to\>0>:
     the sequence is Cauchy in <math|L<rsup|2>>. The limit covariance
     is<nbsp><eqref|eq:wick-cov>. Running the same computation with two
     different mollifiers shows independence of <math|\<eta\>>.
     <em|Step<nbsp>3: divergence.> If <math|n*<around|(|d-2|)>\<geqslant\>d>,
     then <math|G<rsup|n>\<geqslant\>c<around|\||z|\|><rsup|-n*<around|(|d-2|)>>>
     is not locally integrable, and Fatou's lemma gives <math|liminf
-    \<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<geqslant\>n!<big|iint>f*f*G<rsup|n>=\<infty\>>.
+    \<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<geqslant\>n!<big|iint>f*f*G<rsup|n>=\<infty\>>.
   </proof>
 
   <\remark>
@@ -855,7 +855,7 @@
   <\proposition>
     <label|prop:no-wick>Let <math|n*<around|(|d-2|)>\<geqslant\>d> and
     <math|0\<leqslant\>f\<nequiv\>0>. Then the family
-    <math|(:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>)<rsub|\<varepsilon\>\<in\><around|(|0,1|]>>>
+    <math|<around|(|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>|)><rsub|\<varepsilon\>\<in\><around|(|0,1|]>>>
     is not tight. In particular there is no random distribution
     <math|\<Psi\>>, on any probability space, such that
     <math|:\<varphi\><rsub|\<varepsilon\><rsub|k>><rsup|n>:\<to\>\<Psi\>> in
@@ -966,7 +966,7 @@
 
   <\proof>
     For <math|g=\<mathe\><rsup|\<mathi\><around|\<langle\>|u,\<cdot\>|\<rangle\>>>>:
-    <math|\<bbb-E\><around|[|Y\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>=-\<mathi\><frac|\<mathd\>|\<mathd\>\<theta\>>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<theta\>*Y+\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>\|<rsub|\<theta\>=0>=\<mathi\><big|sum><rsub|i>u<rsub|i>*\<bbb-E\>*<around|[|Y*X<rsub|i>|]>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>>,
+    <math|\<bbb-E\><around|[|Y\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>=<around*|.|-\<mathi\><frac|\<mathd\>|\<mathd\>\<theta\>>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<theta\>*Y+\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>|\|><rsub|\<theta\>=0>=\<mathi\><big|sum><rsub|i>u<rsub|i>*\<bbb-E\>*<around|[|Y*X<rsub|i>|]>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>>,
     which is the claim. The general case follows by Fourier inversion for
     <math|g\<in\>\<cal-S\><around|(|\<bbb-R\><rsup|n>|)>> and then by
     approximation.
@@ -1172,7 +1172,7 @@
     bound><label|ex:KL-euclid> (a) Show that
 
     <\equation*>
-      <big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)>\|\<tau\>\|+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>,
+      <big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)><around|\||\<tau\>|\|>+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>,
     </equation*>
 
     and derive<nbsp><eqref|eq:KL-euclid> from
@@ -1231,10 +1231,10 @@
     <frac|1|\<varepsilon\>>+O<around|(|1|)>> for <math|d=2> and
     <math|c<rsub|\<varepsilon\>>\<asymp\>\<varepsilon\><rsup|2-d>> for
     <math|d\<geqslant\>3>. (b) In <math|d=3>, show that
-    <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|3>:<around|(|f|)><rsup|2>]\<asymp\>log
+    <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|3>:<around|(|f|)><rsup|2>|]>\<asymp\>log
     <frac|1|\<varepsilon\>>> for <math|0\<leqslant\>f\<nequiv\>0>: the cube
     is borderline divergent. (c) In <math|d=4>, show that
-    <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|2>:<around|(|f|)><rsup|2>]\<asymp\>log
+    <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|2>:<around|(|f|)><rsup|2>|]>\<asymp\>log
     <frac|1|\<varepsilon\>>> as well.
   </exercise>
 

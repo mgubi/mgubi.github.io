@@ -444,7 +444,7 @@
       <strong|Picture>
 
       A <em|linear wave equation with quantum initial data>
-      <math|(\<varphi\>*<around|(|0,\<cdot\>|)>,\<pi\>(0,\<cdot\><around|)||)>>,
+      <math|<around|(|\<varphi\>*<around|(|0,\<cdot\>|)>,\<pi\><around|(|0,\<cdot\>|)>|)>>,
       \Pdistributed\Q according to the vacuum.
     </myframed>
 
@@ -883,7 +883,7 @@
 
     <\equation*>
       \<mu\><around|(|\<mathd\>\<varphi\>|)>*`*`="*Z<rsup|-1>*exp
-      <around*|(|-<big|int><rsub|\<bbb-R\><rsup|d>><around*|[|<tfrac|1|2>\|\<nabla\>*\<varphi\>\|<rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>\<mathd\>x|)>*\<cal-D\>*\<varphi\>.
+      <around*|(|-<big|int><rsub|\<bbb-R\><rsup|d>><around*|[|<tfrac|1|2><around|\||\<nabla\>*\<varphi\>|\|><rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>\<mathd\>x|)>*\<cal-D\>*\<varphi\>.
     </equation*>
 
     <\itemize>
@@ -937,8 +937,8 @@
 
     <\itemize>
       <item><math|\<cal-E\><rsub|+>=> functions of
-      <math|\<varphi\>\|<rsub|<around|{|\<tau\>\<gtr\>0|}>>>, with
-      <math|<around|(|F,G|)>=\<bbb-E\><rsub|\<mu\>><around|[|<wide|\<Theta\>*F|\<bar\>><space|0.17em>G|]>\<geqslant\>0>
+      <math|<around*|.|\<varphi\>|\|><rsub|<around|{|\<tau\>\<gtr\>0|}>>>,
+      with <math|<around|(|F,G|)>=\<bbb-E\><rsub|\<mu\>><around|[|<wide|\<Theta\>*F|\<bar\>><space|0.17em>G|]>\<geqslant\>0>
       by OS3.
 
       <item>Quotient by null vectors and complete: physical Hilbert space

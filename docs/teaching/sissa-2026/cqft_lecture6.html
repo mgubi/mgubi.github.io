@@ -1639,38 +1639,38 @@ C_{\gamma} q^{- 5
       The estimates above use the start of the flow only through the noise. So
       they hold, with the changes below, for the flow restarted from any field
       at any scale, and these estimates are the input of Section <a href="#sec:hs-uniq">18.2</a>.
-      Let \(\mathrm{e}^{- V_q (x)} =\mathbb{E} \mathrm{e}^{- V_N (x +
-      \int_q^{\infty} C_s
-\hspace{0.17em} \mathrm{d} W_s)}\), and define the
-      exact force \(F_q = - DV_q\), and let \(\mathbb{P}^{q, x}\) be the exact
-      flow conditioned on \(\Phi_q = x\), \(\hspace{0.17em} \mathrm{d} \Phi =
-      - C_s^2 DV_s (\Phi) \hspace{0.17em}
-\mathrm{d} s + C_s \hspace{0.17em}
-      \mathrm{d} W\). Fix \(N\), \(q \geqslant q_0\) and \(x \in H_N\), \(R =
-      \|x\|_{\infty}\). By the Markov property of the flow, \(\mathbb{P}^{q,
-      x}\) is the law of \(P_t = K_q x + (t - q) \hat{\Phi} + B'_{t - q}\),
-      \(t \geqslant q\), where \(B'\) is a Brownian motion independent of
-      \(\hat{\Phi}\), and \(\hat{\Phi}\) has the law
+      Let \(\mathrm{e}^{- V_q (x)} =\mathbb{E} \mathrm{e}^{- V_N \left( x
+      +
+\int_q^{\infty} C_s \hspace{0.17em} \mathrm{d} W_s \right)}\), and
+      define the exact force \(F_q = - DV_q\), and let \(\mathbb{P}^{q, x}\)
+      be the exact flow conditioned on \(\Phi_q = x\), \(\hspace{0.17em}
+      \mathrm{d} \Phi = - C_s^2 DV_s (\Phi) \hspace{0.17em}
+\mathrm{d} s + C_s
+      \hspace{0.17em} \mathrm{d} W\). Fix \(N\), \(q \geqslant q_0\) and \(x
+      \in H_N\), \(R = \|x\|_{\infty}\). By the Markov property of the flow,
+      \(\mathbb{P}^{q, x}\) is the law of \(P_t = K_q x + (t - q) \hat{\Phi} +
+      B'_{t - q}\), \(t \geqslant q\), where \(B'\) is a Brownian motion
+      independent of \(\hat{\Phi}\), and \(\hat{\Phi}\) has the law
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:prior"></a>\(\displaystyle \nu^{[q, x]}
-        (\hspace{0.17em} \mathrm{d} z) \propto \exp (\langle z, K_q x
-\rangle
-        - \frac{1}{2} \langle z, K_q z \rangle - V_N (z))
-        \hspace{0.17em}
-\mathrm{d} z. \)</td>
+        (\hspace{0.17em} \mathrm{d} z) \propto \exp \left( \langle z, K_q
+x
+        \rangle - \frac{1}{2} \langle z, K_q z \rangle - V_N (z)
+        \right)
+\hspace{0.17em} \mathrm{d} z. \)</td>
         <td align="right">(16.5)</td>
       </tr>
     </table>
     <p>
       Note that \(\nu^{[q_0, 0]} = \nu_N\), so \(\mathbb{P}^{q_0, 0}\) is the
-      flow itself. The posterior given \(P_t\) is \(\propto \exp (\langle z,
-      P_t \rangle - \frac{1}{2} \langle z, K_t z \rangle -
-V_N (z))
-      \hspace{0.17em} \mathrm{d} z\), the same function of \(P_t\) as for
-      \(\nu_N\). So \(\psi_t = D\mathcal{K}_t (P_t)\), and \(Y_t\), \(Z_t =
-      \psi_t - Y_t\) and the system (<a href="#eq:YZ">1</a>) are unchanged, with the
+      flow itself. The posterior given \(P_t\) is \(\propto \exp \left(
+      \langle z, P_t \rangle - \frac{1}{2} \langle z, K_t z
+\rangle - V_N (z)
+      \right) \hspace{0.17em} \mathrm{d} z\), the same function of \(P_t\) as
+      for \(\nu_N\). So \(\psi_t = D\mathcal{K}_t (P_t)\), and \(Y_t\), \(Z_t
+      = \psi_t - Y_t\) and the system (<a href="#eq:YZ">1</a>) are unchanged, with the
       same coefficients and with \(Y_q = y_q (x)\), \(\|Y_q \|_{\infty}
       \leqslant 6 R\) by Lemma <a href="#lem:lip">16.3</a>. Let \(\eta_t = P_t - (t - q)
       \psi_t = K_q x +\mathbb{E}_t B'_{t - q}\), \(\zeta_t = C_t \eta_t\).
@@ -1748,9 +1748,8 @@ s
           <tr>
             <td width="100%" align="center"><a id="eq:restart-low"></a>\(\displaystyle \sup_{q \leqslant s
             \leqslant q_{\ast}} \mathbb{E}^{q, x} (\| \psi_s \|_2^{2
-p} +
-            \|Y_s \|_{\infty}^{2 p} + \|Z_s \|_2^{2 p}) \leqslant C_{p, R} .
-            \)</td>
+p} +\|Y_s
+            \|_{\infty}^{2 p} +\|Z_s \|_2^{2 p}) \leqslant C_{p, R} . \)</td>
             <td align="right">(16.10)</td>
           </tr>
         </table></i>
@@ -1768,9 +1767,9 @@ p} +
       <strong>The noise.</strong> Let \(q_R = (128)^2 \gamma R^2\), so that
       \(2 R \leqslant r_t / 64\) for \(t \geqslant q_R\). For such \(t\), \(|
       \zeta | > r_t / 32\) forces \(| \zeta^0 | > r_t / 64\) and \(| \zeta |
-      \leqslant 2| \zeta^0 |\), and the proof of (<a href="#eq:forward">14.5</a>) applies
+      \leqslant 2 | \zeta^0 |\), and the proof of (<a href="#eq:forward">14.5</a>) applies
       to \(\zeta^0\) with this threshold. For \(q \leqslant t < q_R\) use \(\|
-      \xi_t \|_j^j \leqslant C (R^j + \| \zeta^0_t \|_j^j)\) and \(\|\|
+      \xi_t \|_j^j \leqslant C (R^j +\| \zeta^0_t \|_j^j)\) and \(\|\|
       \zeta^0_t \|_j^j \|_{L^p} \leqslant Cp^{j / 2} t^{j / 4}\). Then the
       part of \(G\) on \([q^{\vee}, q_R)\) has \(L^p\) norm at most
     </p>
@@ -1993,7 +1992,7 @@ C_s  \hspace{0.17em}
     <p>
       <strong>The field at the lower scale.</strong> As in the proof of
       Proposition <a href="#prop:restart">16.4</a>, \(\|Y_{q_{\ast}} \|_2\) has all moments,
-      uniformly in \(N\). So \(\sup_N \mathbb{E}\| \iota_N \Phi^N_{\infty}
+      uniformly in \(N\). So \(\sup_N \mathbb{E} \| \iota_N \Phi^N_{\infty}
       \|_{H^{- s\prime}}^2 < \infty\) for \(\frac{1}{2} < s\prime <
       \frac{3}{2}\), and these spaces embed compactly in \(H^{- s}\) for \(s >
       s\prime\):
@@ -2094,12 +2093,12 @@ C_s  \hspace{0.17em}
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="eq:tested"></a>\(\displaystyle \mathbb{E}| \langle
+          <td width="100%" align="center"><a id="eq:tested"></a>\(\displaystyle \mathbb{E} | \langle
           \Phi_{\infty}^N, f \rangle | \leqslant C \|f\|_{\ast},
 \quad
-          \mathbb{E} \exp (\beta \langle \Phi_{\infty}^N, f \rangle^4
-          /
-\|f\|_{\ast}^4) \leqslant C. \)</td>
+          \mathbb{E} \exp (\beta \langle \Phi_{\infty}^N, f
+          \rangle^4
+/\|f\|_{\ast}^4) \leqslant C. \)</td>
           <td align="right">(17.6)</td>
         </tr>
       </table></i>
@@ -2120,7 +2119,7 @@ C_s  \hspace{0.17em}
       \(\displaystyle |X| \leqslant r_q \|f\|_1 + \|t_q \|_6 \|f\|_{6 / 5} +
       \|Z_q \|_2 \|f\|_2 +
 \frac{2}{q} | \langle \eta_q - B_{q - q_0}, f
-      \rangle |.\)
+      \rangle | .\)
     </center>
     <p>
       Average over \([q_h, 2 q_h]\). By Proposition <a href="#prop:source">17.3</a>,
@@ -2136,18 +2135,18 @@ C_s  \hspace{0.17em}
       \log \mathbb{E} \mathrm{e}^{h \langle \Phi_{\infty}, f \rangle}\) we
       have \(L' (h) = \hat{\mathbb{E}} X\) at fixed \(N\), so \(L (h)
       \leqslant C (|h| + |h|^{4 / 3})\), and Chernoff's inequality gives
-      \(\mathbb{P}(| \langle \Phi_{\infty}, f \rangle | > R) \leqslant 2
-      \mathrm{e}^{-
-cR^4}\) for \(R \geqslant R_0\).
+      \(\mathbb{P} (| \langle \Phi_{\infty}, f \rangle | > R) \leqslant
+      2
+\mathrm{e}^{- cR^4}\) for \(R \geqslant R_0\).
     </p>
     <p style="margin-bottom: 1em">
       For the norm, take a real Fourier basis \(f_k\) and \(w_k = (1 +
       |k|^2)^{- \rho}\), with \(W = \sum w_k < \infty\). As \(\langle \iota_N
       \varphi, f_k \rangle = \langle \varphi, j_N f_k \rangle\) and \(\|j_N
       f_k \|_{\ast} \leqslant C\), the bound applies to \(z_k = \langle
-      \iota_N \Phi_{\infty}, f_k \rangle\). Cauchy&ndash;Schwarz gives \((\sum
-      w_k z_k^2)^2 \leqslant W \sum w_k z_k^4\), and Jensen's inequality
-      concludes.<span style="margin-left: 1em"></span>\(\Box\)
+      \iota_N \Phi_{\infty}, f_k \rangle\). Cauchy&ndash;Schwarz gives
+      \(\left( \sum w_k z_k^2 \right)^2 \leqslant W \sum w_k z_k^4\), and
+      Jensen's inequality concludes.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       The scale \(q_h \sim |h|^{2 / 3}\) is where the cube at its threshold,
@@ -2192,11 +2191,11 @@ cR^4}\) for \(R \geqslant R_0\).
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.1</class>.
         </strong><class style="font-style: normal"><strong>(One site: the sharp threshold)
-        </strong></class>On one site, with \(\nu \propto \exp (-
-        \frac{\lambda}{4} x^4 - \frac{q_0}{2} x^2)\), show that \(\mathbb{E}
-        \exp (\frac{\beta}{4} x^4)\) is finite if and only if \(\beta
-        \leqslant \lambda\). Compute \(L (h)\) asymptotically and compare with
-        Theorem <a href="#thm:hs">17.4</a>.</font>
+        </strong></class>On one site, with \(\nu \propto \exp \left( -
+        \frac{\lambda}{4} x^4 - \frac{q_0}{2} x^2 \right)\), show that
+        \(\mathbb{E} \exp \left( \frac{\beta}{4} x^4 \right)\) is finite if
+        and only if \(\beta \leqslant \lambda\). Compute \(L (h)\)
+        asymptotically and compare with Theorem <a href="#thm:hs">17.4</a>.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -2479,13 +2478,14 @@ y_s +
           <td width="100%" align="center"><a id="eq:density"></a>\(\displaystyle \frac{\hspace{0.17em}
           \mathrm{d} \mathbb{P}^{q, x}}{\hspace{0.17em}
           \mathrm{d}
-\mathbb{R}^{q, x}} = \mathrm{e}^{A_N (q, x)} \exp (-
-          \int_q^{\infty} e_s (Y_s)
-\hspace{0.17em} \mathrm{d} s), \quad
-          \mathrm{e}^{- A_N (q, x)}
-=\mathbb{E}^{\mathbb{R}^{q, x}} \exp (-
-          \int_q^{\infty} e_s (Y_s)
-\hspace{0.17em} \mathrm{d} s) . \)</td>
+\mathbb{R}^{q, x}} = \mathrm{e}^{A_N (q, x)} \exp \left(
+          - \int_q^{\infty} e_s
+(Y_s) \hspace{0.17em} \mathrm{d} s \right),
+          \quad \mathrm{e}^{- A_N (q, x)}
+=\mathbb{E}^{\mathbb{R}^{q, x}} \exp
+          \left( - \int_q^{\infty} e_s (Y_s)
+\hspace{0.17em} \mathrm{d} s
+          \right) . \)</td>
           <td align="right">(18.7)</td>
         </tr>
       </table></i>
@@ -2553,18 +2553,20 @@ y_s +
       \(\hspace{0.17em} \mathrm{d} \xi = C_s \hspace{0.17em} \mathrm{d} W\).
       As \(\mathrm{e}^{- V}\) is harmonic the first density is \(\mathrm{e}^{-
       V_T (\xi_T) + V_q (x)}\). By (<a href="#eq:HJ">18.3</a>) and It&ocirc;'s formula
-      the second is \(\exp (- \bar{V}_T (\xi_T) + \bar{V}_q (x) + \int_q^T
-      (e_s (y_s (\xi_s)) + c
-(s)) \hspace{0.17em} \mathrm{d} s)\); it is a
-      true martingale since the drift is Lipschitz at fixed \(N\). So
+      the second is \(\exp \left( - \bar{V}_T (\xi_T) + \bar{V}_q (x) +
+      \int_q^T (e_s (y_s (\xi_s))
++ c (s)) \hspace{0.17em} \mathrm{d} s
+      \right)\); it is a true martingale since the drift is Lipschitz at fixed
+      \(N\). So
     </p>
     <center>
-      \(\displaystyle M_T : = \frac{\hspace{0.17em} \mathrm{d} \mathbb{P}^{q,
-      x}}{\hspace{0.17em}
-\mathrm{d} \mathbb{R}^{q, x}} |_{[q, T]} = \exp
-      (\Delta_q (x) - \Delta_T (x_T)
-- \int_q^T (e_s (Y_s) + c (s))
-      \hspace{0.17em} \mathrm{d} s) .\)
+      \(\displaystyle M_T : = \left. \frac{\hspace{0.17em} \mathrm{d}
+      \mathbb{P}^{q,
+x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
+      \right|_{[q, T]} = \exp
+\left( \Delta_q (x) - \Delta_T (x_T) - \int_q^T
+      (e_s (Y_s) + c (s))
+\hspace{0.17em} \mathrm{d} s \right) .\)
     </center>
     <p>
       <strong>Entropy on</strong> \([q, T]\). Under \(\mathbb{P}^{q, x}\) the
@@ -2591,19 +2593,19 @@ y_s +
       \|Y\|_2\) and \(\|H\| \leqslant C / s\), so \(\sup_s \|Y_s \|_2\) is
       finite and \(Y_s\) converges almost surely, the drift being integrable
       and the martingale bounded in \(L^2\); and \(x - y = \varrho_s (y) +
-      \frac{\gamma}{3} C_s y^3 = O_N (s^{- 1} (1 +
-\|y\|_{\infty}^3)) \to 0\).
+      \frac{\gamma}{3} C_s y^3 = O_N (s^{- 1} (1
++\|y\|_{\infty}^3)) \to 0\).
       Then \(\Delta_T (x_T) \to 0\): at fixed \(N\) the coefficients converge
-      with rates and \(y - x = O_N (T^{- 1} (\|x\|_{\infty} +
-      \|x\|_{\infty}^3))\), so \(\bar{V}_T \to V_N\), and \(V_T \to V_N\) by
+      with rates and \(y - x = O_N (T^{- 1} (\|x\|_{\infty}
+      +\|x\|_{\infty}^3))\), so \(\bar{V}_T \to V_N\), and \(V_T \to V_N\) by
       Gaussian integration, uniformly on bounded sets. By the bounds below
       \(\int_q^{\infty} |e_s (Y_s) | \hspace{0.17em} \mathrm{d} s < \infty\)
       almost surely under both laws, and \(c\) is integrable at fixed \(N\).
-      So \(M_{\infty} = \exp (\Delta_q (x) -\mathcal{C}_N (q) -
-      \int_q^{\infty} e) =
-\mathrm{e}^{A_N} \mathrm{e}^{- \int e}\), which is
-      positive; hence the equivalence and (<a href="#eq:density">18.7</a>), the second
-      formula by \(\mathbb{E}^{\mathbb{R}} M_{\infty} = 1\).
+      So \(M_{\infty} = \exp \left( \Delta_q (x) -\mathcal{C}_N (q) -
+      \int_q^{\infty} e
+\right) = \mathrm{e}^{A_N} \mathrm{e}^{- \int e}\),
+      which is positive; hence the equivalence and (<a href="#eq:density">18.7</a>), the
+      second formula by \(\mathbb{E}^{\mathbb{R}} M_{\infty} = 1\).
     </p>
     <p>
       <strong>The identity.</strong> Take \(\mathbb{E}^{\mathbb{P}}\) of
@@ -2639,7 +2641,7 @@ y_s +
       g_q^2 R^2 T^{- 1 / 2})\). For the second, when \(s \geqslant q_R / C\),
       \(\|t_s \|_6^6 \leqslant Cr_s^{- 6} \| \varsigma_s \|_{12}^{12}\) as
       before, giving \(C \gamma^6 T^{- 3 / 2}\) and terms in \(g_q R\) of
-      higher decay. When \(s < q_R / C\), \(\|t_s \|_6^6 \leqslant C (R^6 + \|
+      higher decay. When \(s < q_R / C\), \(\|t_s \|_6^6 \leqslant C (R^6 +\|
       \varsigma_s \|_6^6)\), whose integral with the weight \(\gamma^3 s^{- 5
       / 2}\) on \([T, q_R / C]\) is at most \(C \gamma^3 (T^{- 3 / 2} R^6 +
       (g_q R)^6 T^{- 3 / 2} + \log_+ (q_R / T))\). Since \(\log_+ (q_R / T)
@@ -2672,8 +2674,8 @@ y_s +
       [<a href="#bib-FBSDE26">FBSDE26</a>], \(\mathcal{D}^N_s (\phi_N)\) converges weakly in
       \(L^2\) at each \(s\) for smooth bounded \(\phi\), and uniformly in
       \(N\), \(\|\mathcal{D}^N_s (y) -\mathcal{D}^N_s (z)\|_2 \leqslant C (1
-      +
-\|z\|_{\infty}) (\|y - z\|_2 + \|y^2 - z^2 \|_2)\). A three-term
+      +\|z\|_{\infty})
+(\|y - z\|_2 +\|y^2 - z^2 \|_2)\). A three-term
       approximation extends the weak convergence to uniformly convergent
       fields, and dominated convergence in \(t\) gives the claim. Moreover
       \(|e^N_s (y) | \leqslant Cg_s \|y\|_2^2\) by the global linear bound on
@@ -2718,14 +2720,14 @@ y_s +
           <td width="100%" align="center"><a id="eq:kernel"></a>\(\displaystyle
           \mathbb{E}^{\mathbb{P}^{q, x_N}} O (\hat{\Phi}) \to \Pi_q O (x) :
           =
-\mathrm{e}^{A (q, x)} \mathbb{E}^{\mathbb{R}^{q, x}} [O
-          (Y_{\infty}) \exp (-
-\int_q^{\infty} e_s (Y_s) \hspace{0.17em}
-          \mathrm{d} s)], \quad \mathrm{e}^{-
-A (q, x)}
-          =\mathbb{E}^{\mathbb{R}^{q, x}} \exp (- \int_q^{\infty} e_s
-          (Y_s)
-\hspace{0.17em} \mathrm{d} s) . \)</td>
+\mathrm{e}^{A (q, x)} \mathbb{E}^{\mathbb{R}^{q, x}} \left[ O
+          (Y_{\infty})
+\exp (- \int_q^{\infty} e_s (Y_s) \hspace{0.17em}
+          \mathrm{d} s) \right], \quad
+\mathrm{e}^{- A (q, x)}
+          =\mathbb{E}^{\mathbb{R}^{q, x}} \exp (-
+\int_q^{\infty} e_s (Y_s)
+          \hspace{0.17em} \mathrm{d} s) . \)</td>
           <td align="right">(18.12)</td>
         </tr>
       </table></i>
@@ -2742,19 +2744,20 @@ A (q, x)}
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>Let \(a_N = \exp (- \int_q^{\infty} e^N_s
-      (Y^N_s) \hspace{0.17em} \mathrm{d} s)\), \(f_N = \mathrm{e}^{A_N} a_N\).
-      On \([q, T]\) the integrals converge almost surely by Lemma <a href="#lem:cons">18.3</a>,
-      since the paths are bounded; the tail on \([T, \infty)\) is small in
-      \(L^1\) uniformly in \(N\) by (<a href="#eq:tails">18.11</a>). So \(a_N \to a =
-      \exp (- \int_q^{\infty} e)\) in probability. By (<a href="#eq:entropy">18.8</a>), (<a
-      href="#eq:restart2">16.9</a>) and (<a href="#eq:restart-low">16.10</a>), \(\mathbb{E}f_N \log f_N
-      \leqslant C_R\), so \((f_N)\) is uniformly integrable by de la
-      Vall&eacute;e Poussin's criterion, and \(|A_N | \leqslant C_R\) by
-      Theorem <a href="#thm:sandwich">18.2</a>. Along any subsequence with \(A_N \to A\),
-      \(f_N \to \mathrm{e}^A a\) in \(L^1\), so \(\mathrm{e}^{- A}
-      =\mathbb{E}a\). Thus the limit is unique and \(A_N \to A\). As \(\langle
-      Y^N_{\infty}, h \rangle \to \langle Y_{\infty}, h \rangle\) in
+      <strong class="enunciation-name">Proof. </strong>Let \(a_N = \exp \left( - \int_q^{\infty}
+      e^N_s (Y^N_s) \hspace{0.17em} \mathrm{d} s
+\right)\), \(f_N =
+      \mathrm{e}^{A_N} a_N\). On \([q, T]\) the integrals converge almost
+      surely by Lemma <a href="#lem:cons">18.3</a>, since the paths are bounded; the tail
+      on \([T, \infty)\) is small in \(L^1\) uniformly in \(N\) by (<a href="#eq:tails">18.11</a>).
+      So \(a_N \to a = \exp \left( - \int_q^{\infty} e \right)\) in
+      probability. By (<a href="#eq:entropy">18.8</a>), (<a href="#eq:restart2">16.9</a>) and (<a href="#eq:restart-low">16.10</a>),
+      \(\mathbb{E}f_N \log f_N \leqslant C_R\), so \((f_N)\) is uniformly
+      integrable by de la Vall&eacute;e Poussin's criterion, and \(|A_N |
+      \leqslant C_R\) by Theorem <a href="#thm:sandwich">18.2</a>. Along any subsequence with
+      \(A_N \to A\), \(f_N \to \mathrm{e}^A a\) in \(L^1\), so \(\mathrm{e}^{-
+      A} =\mathbb{E}a\). Thus the limit is unique and \(A_N \to A\). As
+      \(\langle Y^N_{\infty}, h \rangle \to \langle Y_{\infty}, h \rangle\) in
       probability, \(L^1\) convergence of \(f_N\) gives (<a href="#eq:kernel">18.12</a>)
       for bounded continuous \(O\) and, the paths converging uniformly along
       the coupling, for the joint functionals. For \(\langle \varphi, h
@@ -2783,14 +2786,14 @@ A (q, x)}
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:GM0"></a>\(\displaystyle \int O \hspace{0.17em}
-          \mathrm{d} \nu = \frac{\mathbb{E}^{\mathbb{R}} [O
+          \mathrm{d} \nu = \frac{\mathbb{E}^{\mathbb{R}} \left[ O
 (Y_{\infty})
           \mathrm{e}^{- \int_{q_0}^{\infty} e_s (Y_s)
           \hspace{0.17em}
-\mathrm{d} s}]}{\mathbb{E}^{\mathbb{R}}
-          [\mathrm{e}^{- \int_{q_0}^{\infty} e_s
-(Y_s) \hspace{0.17em}
-          \mathrm{d} s}]} . \)</td>
+\mathrm{d} s} \right]}{\mathbb{E}^{\mathbb{R}}
+          \left[ \mathrm{e}^{-
+\int_{q_0}^{\infty} e_s (Y_s) \hspace{0.17em}
+          \mathrm{d} s} \right]} . \)</td>
           <td align="right">(18.13)</td>
         </tr>
       </table></i>
@@ -2864,7 +2867,7 @@ A (q, x)}
               <table width="100%">
                 <tr>
                   <td width="100%" align="center"><a id="eq:closed-forecast"></a>\(\displaystyle \langle \psi_q,
-                  h \rangle : =\mathbb{E}[\langle \Phi, h
+                  h \rangle : =\mathbb{E} [\langle \Phi, h
                   \rangle
 |\mathcal{F}_q] = \langle m_q (\Phi_q), h \rangle,
                   \)</td>
@@ -2905,7 +2908,7 @@ A (q, x)}
               <table width="100%">
                 <tr>
                   <td width="100%" align="center"><a id="eq:Cov"></a>\(\displaystyle \langle
-                  \text{Cov}_q h, k \rangle =\mathbb{E}[\langle \Phi, h
+                  \text{Cov}_q h, k \rangle =\mathbb{E} [\langle \Phi, h
                   \rangle \langle
 \Phi, k \rangle |\mathcal{F}_q] - \langle
                   \psi_q, h \rangle \langle \psi_q, k
@@ -3004,7 +3007,7 @@ W^{\mathbb{R}} \rangle\) with \(\mathbb{E}^{\mathbb{P}} \int
     <p>
       <strong>The drift is the forecast.</strong> By (a), the increments of
       \(B\) after \(s\) are independent of \(\Phi\) and of \(\mathcal{F}_s\),
-      so \(\mathbb{E}[\langle P_t - P_s, h \rangle |\mathcal{F}_s] = (t - s)
+      so \(\mathbb{E} [\langle P_t - P_s, h \rangle |\mathcal{F}_s] = (t - s)
       \langle
 \psi_s, h \rangle\) for smooth \(h\). As \(\psi\) is a
       martingale, \(\langle P, h \rangle - \int_{q_0}^{\cdot} \langle \psi_u,
@@ -3056,12 +3059,13 @@ W^{\mathbb{R}} - Z
       - q_0}, k \rangle
 - \int_s^t \langle \psi_u, k \rangle \hspace{0.17em}
       \mathrm{d} u\), and the term in \(B\) is independent of \((G, S)\). So
-      \(\mathbb{E}[GS \langle W_t - W_s, k \rangle] = \int_s^t \mathbb{E}[GS
-      (\langle
-\Phi, k \rangle - \langle \psi_u, k \rangle)] \hspace{0.17em}
-      \mathrm{d} u\). By the representation and It&ocirc;'s isometry the left
-      side is \(\int_s^t \mathbb{E}[G \langle \text{Cov}_u h, k \rangle]
+      \(\mathbb{E} [GS \langle W_t - W_s, k \rangle] = \int_s^t \mathbb{E}
+      [GS
+(\langle \Phi, k \rangle - \langle \psi_u, k \rangle)]
       \hspace{0.17em}
+\mathrm{d} u\). By the representation and It&ocirc;'s
+      isometry the left side is \(\int_s^t \mathbb{E} [G \langle \text{Cov}_u
+      h, k \rangle] \hspace{0.17em}
 \mathrm{d} u\). On the right, condition on
       \(\mathcal{F}_u \supset \mathcal{F}_s\). So the integral over \([q_0,
       \cdot]\) of the difference of the two sides of (<a href="#eq:Cov">18.17</a>) is a
@@ -3086,11 +3090,11 @@ W^{\mathbb{R}} - Z
       same theorem and the uniform bound of Proposition <a href="#prop:restart">16.4</a>.
       Then \(W^N = P^N - \int \psi^N\) converges tested, and \(W^N\) is tight
       in \(C (I ; H^{- \vartheta})\) as a Brownian motion. For the energies,
-      \(\zeta_q = \Phi_q - (q - q_0) C_q \psi_q\) and \(V_q = C_q [(q - q_0)
-      \psi_q - \frac{\gamma}{3} Y_q^3]\) converge uniformly, since the rows of
-      the kernel of \(C^N_q\) converge uniformly in \(L^2\), and along the
-      coupling \(\psi^N_q = m^N_q (x^N_q)\) is bounded in \(L^2\) and
-      converges weakly. The integrands of \(E\) and \(J\) are lower
+      \(\zeta_q = \Phi_q - (q - q_0) C_q \psi_q\) and \(V_q = C_q \left[ (q -
+      q_0) \psi_q - \frac{\gamma}{3} Y_q^3 \right]\) converge uniformly, since
+      the rows of the kernel of \(C^N_q\) converge uniformly in \(L^2\), and
+      along the coupling \(\psi^N_q = m^N_q (x^N_q)\) is bounded in \(L^2\)
+      and converges weakly. The integrands of \(E\) and \(J\) are lower
       semicontinuous in these variables, and Fatou's lemma applies.<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -3123,9 +3127,10 @@ W^{\mathbb{R}} - Z
         \(h, h_1, \ldots, h_k\) be smooth and \(G (\varphi) = g (\langle
         \varphi, h_1 \rangle, \ldots, \langle \varphi, h_k
 \rangle)\) with \(g
-        \in C_b^{\infty} (\mathbb{R}^k)\), and let \(D_h G (\varphi) =
-        \frac{\mathrm{d}}{\mathrm{d} a} G (\varphi + ah) |_{a = 0}\). Along
-        the sequence of Theorem <a href="#thm:limit">18.6</a> (recall \(C = (m^2 -
+        \in C_b^{\infty} (\mathbb{R}^k)\), and let \(D_h G (\varphi) = \left.
+        \frac{\mathrm{d}}{\mathrm{d} a} G (\varphi + ah)
+\right|_{a = 0}\).
+        Along the sequence of Theorem <a href="#thm:limit">18.6</a> (recall \(C = (m^2 -
         \Delta_N)^{- 1}\) with \(m^2 = q_0\)),</i>
       </p>
       <div style="margin-bottom: 1em">
@@ -3201,9 +3206,9 @@ x, K_{q_0} h_N \rangle] .\)
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:DS-q"></a>\(\displaystyle \mathbb{E}D_{J_q h} G
-          (\Phi_q) =\mathbb{E}[G (\Phi_q) \langle \eta_q, h
+          (\Phi_q) =\mathbb{E} [G (\Phi_q) \langle \eta_q, h
 \rangle]
-          =\mathbb{E}[G (\Phi_q) (\langle \Phi_q, K_{q_0} h \rangle -
+          =\mathbb{E} [G (\Phi_q) (\langle \Phi_q, K_{q_0} h \rangle -
           \langle
 F_q, J_q h \rangle)], \)</td>
           <td align="right">(18.21)</td>
@@ -3253,7 +3258,7 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
               <table width="100%">
                 <tr>
                   <td width="100%" align="center"><a id="eq:DS-limit-q"></a>\(\displaystyle \text{lim}_{q
-                  \to \infty} \mathbb{E}[G (\Phi_q) \langle
+                  \to \infty} \mathbb{E} [G (\Phi_q) \langle
                   \bar{\mathcal{F}}_q
 (Y_q), J_q h \rangle] =\mathbb{E}_{\nu}
                   [D_h G (\Phi) - G (\Phi) \langle \Phi,
@@ -3278,11 +3283,11 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
                 <tr>
                   <td width="100%" align="center"><a id="eq:hs-ds-explicit"></a>\(\displaystyle \mathbb{E}
                   \sum_i \partial_i g \langle J_{q_i} h, h_i \rangle
-                  =\mathbb{E}[G
+                  =\mathbb{E} [G
 (\langle \Phi_q, K_{q_0} h \rangle + \langle
                   \bar{\mathcal{F}}_q (Y_q), J_q h
-\rangle)] + O (C
-                  \|g\|_{\infty} \|h\|_{H^2} q^{- 1 / 4}), \)</td>
+\rangle)] + O
+                  (C\|g\|_{\infty} \|h\|_{H^2} q^{- 1 / 4}), \)</td>
                   <td align="right">(18.24)</td>
                 </tr>
               </table>
@@ -3303,7 +3308,7 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
       representation is \(\psi = \int \text{Cov} \hspace{0.17em} \mathrm{d}
       W\), and the exponential bound is conditional Jensen. For (<a href="#eq:germ">18.22</a>),
       \(F_q = K_q Z_q - \bar{\mathcal{F}}_q (Y_q)\), so its left side is at
-      most \(\|K_q h\|_2 (\mathbb{E} \|Z_q \|_2^2)^{1 / 2}\), and Theorem <a
+      most \(\|K_q h\|_2 (\mathbb{E}\|Z_q \|_2^2)^{1 / 2}\), and Theorem <a
       href="#thm:limit">18.6</a>(c) applies. For (<a href="#eq:DS-limit-q">18.23</a>): by (<a href="#eq:germ">18.22</a>)
       with \(K_q J_q h = (q - q_0) h\), replacing \(- F_q\) by
       \(\bar{\mathcal{F}}_q (Y_q)\) in (<a href="#eq:DS-q">18.21</a>) costs \(O (q^{- 1
@@ -3362,10 +3367,11 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
         \hspace{0.17em} \mathrm{d} s +\mathbb{E}
 \int_q^{\infty} |e_s (Y_s) |
         \hspace{0.17em} \mathrm{d} s < \infty\), satisfying (<a href="#eq:scalar-A">18.25</a>),
-        \(A_q\) being deterministic, and such that \(\mathcal{E}_T = \exp (-
-        \int_q^T \langle Z, \hspace{0.17em} \mathrm{d} W
-\rangle - \frac{1}{2}
-        \int_q^T \|Z\|_2^2)\) is a uniformly integrable martingale.</i>
+        \(A_q\) being deterministic, and such that \(\mathcal{E}_T = \exp
+        \left( - \int_q^T \langle Z, \hspace{0.17em} \mathrm{d} W
+\rangle -
+        \frac{1}{2} \int_q^T \|Z\|_2^2 \right)\) is a uniformly integrable
+        martingale.</i>
       </p>
     </div>
     <p>
@@ -3399,24 +3405,27 @@ C_s (Z \hspace{0.17em} \mathrm{d} s + \hspace{0.17em}
 C_s \hspace{0.17em} \mathrm{d} W'\). By
       pathwise uniqueness (Lemma <a href="#lem:lip">16.3</a>), \(x\) under
       \(\mathbb{Q}'\) has law \(\mathbb{R}^{q, x}\). By (<a href="#eq:scalar-A">18.25</a>)
-      at \(t = q\), \(\mathcal{E}_{\infty}^{- 1} = \exp (\int_q^{\infty}
-      \langle Z, \hspace{0.17em}
-\mathrm{d} W \rangle + \frac{1}{2}
-      \int_q^{\infty} \|Z\|_2^2) = \exp (A_q -
-\int_q^{\infty} e_s (Y_s)
-      \hspace{0.17em} \mathrm{d} s)\), a functional of the path of \(x\). So
-      the law of \(x\) under \(\mathbb{Q}\) is \(\mathrm{e}^{A_q}
-      \mathrm{e}^{- \int e} \mathbb{R}^{q, x}\), and normalisation gives \(A_q
-      = A (q, x)\). By Theorem <a href="#thm:limit-kernel">18.4</a> this is the limit of
-      \(\mathbb{P}^{q, x_N}\). For \(Z\): under \(\mathbb{Q}'\), for the
-      filtration \(\mathcal{F}\), \(W'\) is a Brownian motion and \(x\) is
-      Markov with respect to \(\mathcal{F}\), so the density process on
-      \(\mathcal{F}_t\) is \(D_t =\mathbb{E}' [\mathrm{e}^{A_q -
-      \int_q^{\infty} e} |\mathcal{F}_t]\), an adapted functional of the path
-      of \(x\). The drift \(Z\) under \(\mathbb{Q}\) is determined by the
-      covariation of \(\log D\) with \(W'\), which is computed from the path
-      of \(x\) only, since \(C_s \hspace{0.17em} \mathrm{d} W'\) is a
-      differential of \(x\) and its drift.<span style="margin-left: 1em"></span>\(\Box\)
+      at \(t = q\), \(\mathcal{E}_{\infty}^{- 1} = \exp \left( \int_q^{\infty}
+      \langle Z,
+\hspace{0.17em} \mathrm{d} W \rangle + \frac{1}{2}
+      \int_q^{\infty} \|Z\|_2^2
+\right) = \exp \left( A_q - \int_q^{\infty}
+      e_s (Y_s) \hspace{0.17em}
+\mathrm{d} s \right)\), a functional of the
+      path of \(x\). So the law of \(x\) under \(\mathbb{Q}\) is
+      \(\mathrm{e}^{A_q} \mathrm{e}^{- \int e} \mathbb{R}^{q, x}\), and
+      normalisation gives \(A_q = A (q, x)\). By Theorem <a href="#thm:limit-kernel">18.4</a>
+      this is the limit of \(\mathbb{P}^{q, x_N}\). For \(Z\): under
+      \(\mathbb{Q}'\), for the filtration \(\mathcal{F}\), \(W'\) is a
+      Brownian motion and \(x\) is Markov with respect to \(\mathcal{F}\), so
+      the density process on \(\mathcal{F}_t\) is \(D_t =\mathbb{E}' \left[
+      \mathrm{e}^{A_q - \int_q^{\infty} e} |\mathcal{F}_t
+\right]\), an
+      adapted functional of the path of \(x\). The drift \(Z\) under
+      \(\mathbb{Q}\) is determined by the covariation of \(\log D\) with
+      \(W'\), which is computed from the path of \(x\) only, since \(C_s
+      \hspace{0.17em} \mathrm{d} W'\) is a differential of \(x\) and its
+      drift.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       So if the backward equation is written for the scalar value \(A\), the
@@ -3440,10 +3449,11 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
 (Y_s) \hspace{0.17em} \mathrm{d} s} = \inf_{\mathbb{Q} \ll
           \mathbb{R}^{q, x},
 \text{Ent} (\mathbb{Q}|\mathbb{R}^{q, x}) <
-          \infty} [\mathbb{E}^{\mathbb{Q}}
-[O + \int_q^{\infty} (e_s (Y_s) +
-          \frac{1}{2} \|u_s \|_2^2) \hspace{0.17em}
-\mathrm{d} s]], \)</td>
+          \infty} \left[
+\mathbb{E}^{\mathbb{Q}} \left[ O + \int_q^{\infty}
+          (e_s (Y_s) + \frac{1}{2}
+\|u_s \|_2^2) \hspace{0.17em} \mathrm{d} s
+          \right] \right], \)</td>
           <td align="right">(18.26)</td>
         </tr>
       </table></i>
@@ -3464,20 +3474,20 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:var"></a>\(\displaystyle - \log \int
-          \mathrm{e}^{- O} \hspace{0.17em} \mathrm{d} \nu
-          =\mathcal{G}(O)
--\mathcal{G}(0), \quad \mathcal{G}(O) = \inf_u
-          \mathbb{E}[O (Y^u_{\infty}) +
-\int_{q_0}^{\infty} (e_s (Y^u_s) +
-          \frac{1}{2} \|u_s \|_2^2) \hspace{0.17em}
-\mathrm{d} s], \quad
-          Y^u_{q_0} = 0, \)</td>
+          \mathrm{e}^{- O} \hspace{0.17em} \mathrm{d} \nu =\mathcal{G}
+          (O)
+-\mathcal{G} (0), \quad \mathcal{G} (O) = \inf_u \mathbb{E}
+          \left[ O
+(Y^u_{\infty}) + \int_{q_0}^{\infty} (e_s (Y^u_s) +
+          \frac{1}{2} \|u_s \|_2^2)
+\hspace{0.17em} \mathrm{d} s \right],
+          \quad Y^u_{q_0} = 0, \)</td>
           <td align="right">(18.27)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
         <i>the infimum being over the laws of finite entropy with respect to
-        \(\mathbb{R}\), and \(\mathcal{G}(0) = A (q_0, 0)\) is the
+        \(\mathbb{R}\), and \(\mathcal{G} (0) = A (q_0, 0)\) is the
         renormalised free energy (<a href="#eq:free">18.14</a>). The minimiser for \(O =
         0\) is \(u = Z\). No infinite constant occurs in \(\mathcal{G}\), and
         there is no initial law to optimise over.</i>
@@ -3505,8 +3515,8 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       \(\mathbb{E}^{\mathbb{Q}} |\mathcal{S}| < \infty\) there. Apply this
       with \(\mathcal{S}= O + \int_q^{\infty} e\). The integrability
       \(\mathbb{E}^{\mathbb{R}} \mathrm{e}^{-\mathcal{S}} < \infty\) is
-      Theorem <a href="#thm:limit-kernel">18.4</a>. At the minimiser for \(O = 0\),
-      \(\mathbb{E}|\mathcal{S}| < \infty\) passes to the limit from (<a href="#eq:tails">18.11</a>)
+      Theorem <a href="#thm:limit-kernel">18.4</a>. At the minimiser for \(O = 0\), \(\mathbb{E}
+      |\mathcal{S}| < \infty\) passes to the limit from (<a href="#eq:tails">18.11</a>)
       by Fatou; for \(O\) bounded the same holds as the tilted law has a
       bounded density with respect to it. Since \(\mathbb{R}^{q, x}\) is the
       strong solution driven by \(W\), every \(\mathbb{Q}\) of finite entropy
@@ -3526,17 +3536,17 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       <strong class="enunciation-name">Remark <class style="font-style: normal">18.13</class>. </strong><class
       style="font-style: normal"><strong>(Coercivity as a corollary) </strong></class><a id="rem:coerc"></a>(<a
       href="#eq:var-x">18.26</a>) with \(O = 0\) reads, for every control, \(\mathbb{E}
-      \int (e_s (Y^u_s) + \frac{1}{2} \|u_s \|^2) \hspace{0.17em}
-\mathrm{d} s
-      \geqslant A (q, x) \geqslant - C_R\). This is the coercivity
-      \(\mathbb{E} \int (e_s + \frac{\theta}{2} \|u_s \|^2) \hspace{0.17em}
-      \mathrm{d}
-s \geqslant - C_R\) with constant \(\theta = 1\). It has been
-      obtained from the exact solution without any estimate on the controlled
-      equation. An independent proof with \(\theta < 1\), as suggested by the
-      test with \(Y^3\) in the memory form, would give the exponential moments
-      \(\mathbb{E}^{\mathbb{R}} \mathrm{e}^{- p \int e}\), \(p > 1\), which
-      are not needed here.
+      \int \left( e_s (Y^u_s) + \frac{1}{2} \|u_s \|^2 \right)
+\hspace{0.17em}
+      \mathrm{d} s \geqslant A (q, x) \geqslant - C_R\). This is the
+      coercivity \(\mathbb{E} \int \left( e_s + \frac{\theta}{2} \|u_s \|^2
+      \right)
+\hspace{0.17em} \mathrm{d} s \geqslant - C_R\) with constant
+      \(\theta = 1\). It has been obtained from the exact solution without any
+      estimate on the controlled equation. An independent proof with \(\theta
+      < 1\), as suggested by the test with \(Y^3\) in the memory form, would
+      give the exponential moments \(\mathbb{E}^{\mathbb{R}} \mathrm{e}^{- p
+      \int e}\), \(p > 1\), which are not needed here.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">18.14</class>. </strong><class

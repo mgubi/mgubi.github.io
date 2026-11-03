@@ -38,10 +38,12 @@
     representation, lattice spin systems and the Osterwalder--Schrader
     axioms.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L1.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_notes_L1.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_notes_L1.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_notes_L1.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L1.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L1.tm>].
-    Revised 2 November 2026.
+    [<notes-link|HTML|sissa-2026/cqft_slides_L1.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L1.tm>].
+    Revised 3 November 2026.
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
     free field. Construction on the torus and Euclidean space; reflection
@@ -49,10 +51,12 @@
     and Symanzik's Brownian-path representation; Wick products; Gaussian
     integration by parts and the Dyson--Schwinger equation.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L2.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_notes_L2.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>].
-    Revised 2 November 2026.
+    [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L2.tm>].
+    Revised 3 November 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
     quantisation and stochastic observables. Parabolic and elliptic
@@ -61,10 +65,12 @@
     motion and the free field; Wick powers in every dimension, products of
     observables and the operator product expansion.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L3.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture3.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>].
-    Revised 2 November 2026.
+    [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L3.tm>].
+    Revised 3 November 2026.
   </itemize>
 
   <subsection*|Provisional materials for Lectures 4--6>
@@ -78,32 +84,41 @@
   <\itemize>
     <item><with|font-series|bold|Lecture 4>: Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L4.tm>].
 
     <item><with|font-series|bold|Lecture 5>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture5.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L5.tm>].
 
     <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture6.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L6.tm>].
 
     <item><with|font-series|bold|Supplement to Lectures 5--6>: Detailed proofs of what the lectures cite or condense: the coefficient construction, the large-field ledger, consistency of the coefficients, and older routes.
 
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_supplement.pdf>]
 
-    [<notes-link|HTML|sissa-2026/cqft_supplement.tm>].
+    [<notes-link|HTML|sissa-2026/cqft_supplement.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_supplement.tm>].
   </itemize>
 
   The results of Lectures 5--6 are new: joint work with S.-J. Meyer + AI.
 
-  Materials revised 2 November 2026. In the HTML slides, use the arrow
+  Materials revised 3 November 2026. The TeXmacs sources of all notes
+  and slides, together with the style packages they use, are also
+  available as one archive [<notes-store|zip|sissa/2026/cqft_texmacs_sources.zip>]. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.
 
   <subsection*|Schedule>

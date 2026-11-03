@@ -361,11 +361,11 @@ x
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:RP"></a>\(\displaystyle \langle \Theta f, Cf
-          \rangle = \left| (2 \omega)^{- 1 / 2} \int_0^{\infty}
+          \rangle = \left\| (2 \omega)^{- 1 / 2} \int_0^{\infty}
 \mathrm{e}^{-
-          \tau \omega} f (\tau, \cdot \left) \hspace{0.17em} \mathrm{d}
-\tau
-          \right|^2_{L^2 (N)} \geqslant 0. \right.\)</td>
+          \tau \omega} f (\tau, \cdot) \hspace{0.17em} \mathrm{d}
+          \tau
+\right\|^2_{L^2 (N)} \geqslant 0.\)</td>
           <td align="right">(3.4)</td>
         </tr>
       </table></i>
@@ -509,7 +509,7 @@ x
       1}\) in the discussion of positivity versus locality below is Markov but
       not reflection positive, because its \(\Sigma_0\) also contains
       \(\partial_{\tau} \varphi\), which \(\Theta\) reverses. Moreover \(P_t
-      =\mathbb{E}[\hspace{0.17em} U_t \hspace{0.17em} \cdot \hspace{0.17em}
+      =\mathbb{E} [\hspace{0.17em} U_t \hspace{0.17em} \cdot \hspace{0.17em}
       |
 \hspace{0.17em} \Sigma_0]\), with \(U_t\) the time translation, is a
       semigroup on \(L^2 (\Sigma_0)\): by the Markov property for \(\{\tau >
@@ -857,7 +857,7 @@ m_1^2}, \qquad \text{i.e.} \qquad \rho =
       affect interacting theories, whose spectral measure also has a
       continuous part, the multi-particle continuum. There the continuum is
       produced by a <em>local</em> interaction, and the Euclidean field
-      equation remains local, e.g. \(\mathbb{E} [D_h F] =\mathbb{E}[F ((m^2 -
+      equation remains local, e.g. \(\mathbb{E} [D_h F] =\mathbb{E} [F ((m^2 -
       \Delta) \varphi + 4 \lambda :
 \varphi^3 :) (h)]\) for \(\Phi^4_2\),
       although the inverse two-point function is nonlocal. Thus, for a single
@@ -951,7 +951,7 @@ c_{\varepsilon}), \qquad :
       </table></i>
       <p style="margin-bottom: 1em">
         <i>If instead \(n (d - 2) \geqslant d\) and \(0 \leqslant f
-        \mathrel{\not\equiv} 0\), then \(\mathbb{E}[: \varphi_{\varepsilon}^n
+        \mathrel{\not\equiv} 0\), then \(\mathbb{E} [: \varphi_{\varepsilon}^n
         : (f)^2] \to \infty\).</i>
       </p>
     </div>
@@ -1005,9 +1005,9 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
       href="#eq:wick-cov">3.8</a>)</class>. Running the same computation with two different
       mollifiers shows independence of \(\eta\). <em>Step 3: divergence.</em>
       If \(n (d - 2) \geqslant d\), then \(G^n \geqslant c |z|^{- n (d - 2)}\)
-      is not locally integrable, and Fatou's lemma gives \(\liminf
-      \mathbb{E}[: \varphi_{\varepsilon}^n : (f)^2] \geqslant n! \iint ffG^n
-=
+      is not locally integrable, and Fatou's lemma gives \(\liminf \mathbb{E}
+      [: \varphi_{\varepsilon}^n : (f)^2] \geqslant n! \iint
+ffG^n =
       \infty\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -1193,15 +1193,17 @@ G^n_{\varepsilon, \delta} + G^n_{\delta, \delta}) \to 0\): the
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>For \(g = \mathrm{e}^{\mathrm{i} \langle
       u, \cdot \rangle}\): \(\mathbb{E} [Y \mathrm{e}^{\mathrm{i} \langle u, X
-      \rangle}] = - \mathrm{i}
-\frac{\mathrm{d}}{\mathrm{d} \theta} \mathbb{E}
-      [\mathrm{e}^{\mathrm{i} \theta
-Y + \mathrm{i} \langle u, X \rangle}]
-      |_{\theta = 0} = \mathrm{i} \sum_i u_i
-\mathbb{E} [YX_i] \mathbb{E}
-      [\mathrm{e}^{\mathrm{i} \langle u, X \rangle}]\), which is the claim.
-      The general case follows by Fourier inversion for \(g \in \mathcal{S}
-      (\mathbb{R}^n)\) and then by approximation.<span style="margin-left: 1em"></span>\(\Box\)
+      \rangle}] = \left. -
+\mathrm{i} \frac{\mathrm{d}}{\mathrm{d}
+      \theta}
+\mathbb{E}[\mathrm{e}^{\mathrm{i} \theta Y + \mathrm{i} \langle
+      u, X \rangle}]
+\right|_{\theta = 0} = \mathrm{i} \sum_i u_i \mathbb{E}
+      [YX_i] \mathbb{E}
+[\mathrm{e}^{\mathrm{i} \langle u, X \rangle}]\),
+      which is the claim. The general case follows by Fourier inversion for
+      \(g \in \mathcal{S} (\mathbb{R}^n)\) and then by approximation.<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -1521,11 +1523,11 @@ H_{n - 2 k} (a ; c)\). Interpret this as
         </strong></class>(a) Show that \(c_{\varepsilon} = \frac{1}{2 \pi}
         \log \frac{1}{\varepsilon} + O (1)\) for \(d = 2\) and
         \(c_{\varepsilon} \asymp \varepsilon^{2 - d}\) for \(d \geqslant 3\).
-        (b) In \(d = 3\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^3 :
+        (b) In \(d = 3\), show that \(\mathbb{E} [: \varphi_{\varepsilon}^3 :
         (f)^2] \asymp \log
 \frac{1}{\varepsilon}\) for \(0 \leqslant f
         \mathrel{\not\equiv} 0\): the cube is borderline divergent. (c) In \(d
-        = 4\), show that \(\mathbb{E}[: \varphi_{\varepsilon}^2 : (f)^2]
+        = 4\), show that \(\mathbb{E} [: \varphi_{\varepsilon}^2 : (f)^2]
         \asymp \log
 \frac{1}{\varepsilon}\) as well.</font>
       </p>

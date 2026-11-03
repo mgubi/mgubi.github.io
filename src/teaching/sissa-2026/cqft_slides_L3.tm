@@ -238,8 +238,8 @@
     is related to the <math|d>-dimensional Gibbs measure: formally
 
     <\equation*>
-      <math-up|Law><around*|(|\<Psi\>(z,\<cdot\><around*|)||)>\<propto\>exp
-      <around*|(|-4*\<pi\>*<around*|[|<tfrac|1|2><around|\<langle\>|\<varphi\>,A*\<varphi\>|\<rangle\>>+<big|int>V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>.|\<nobracket\>>
+      <math-up|Law><around*|(|\<Psi\><around*|(|z,\<cdot\>|)>|)>\<propto\>exp
+      <around*|(|-4*\<pi\>*<around*|[|<tfrac|1|2><around|\<langle\>|\<varphi\>,A*\<varphi\>|\<rangle\>>+<big|int>V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>.
     </equation*>
 
     <\itemize>
@@ -274,7 +274,7 @@
 
         <item><math|\<bbb-E\>*<around|[|\<Psi\><around|(|z,f|)>*\<Psi\><around|(|z,g|)>|]>=<around|\<langle\>|f,C*g|\<rangle\>>>:
         every section has law <math|\<mu\><rsub|m>>, and
-        <math|(\<Psi\>(z,\<cdot\><around|)||)><rsub|z\<in\>\<bbb-R\><rsup|2>>>
+        <math|<around|(|\<Psi\><around|(|z,\<cdot\>|)>|)><rsub|z\<in\>\<bbb-R\><rsup|2>>>
         is stationary and isotropic.
       </enumerate-alpha>
     </theorem*>
@@ -447,7 +447,7 @@
 
     \;
 
-    <math|\<bbb-E\><rsub|t>=\<bbb-E\>[<space|0.17em>\<cdot\><space|0.17em><around|\||\<cal-F\><rsub|t>|]>>.
+    <math|\<bbb-E\><rsub|t>=\<bbb-E\><around|[|<space|0.17em>\<cdot\><space|0.17em>\|\<cal-F\><rsub|t>|]>>.
 
     <\definition*>
       <dueto|Bailleul\UChevyrev\UG.>An <strong|observable> is an

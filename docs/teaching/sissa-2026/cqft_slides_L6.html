@@ -1256,10 +1256,10 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
         \|_{\text{HS}}^2 \hspace{0.17em}
 \mathrm{d} q \leqslant C
         \int_Q^{\infty} \frac{1}{q} \sum_k \frac{(1 +
-|k|^2)^{- s}}{q +
-        c|k|^2} \hspace{0.17em} \mathrm{d} q \leqslant C_s Q^{- (s
-        -
-\frac{1}{2})},\)
+|k|^2)^{- s}}{q + c
+        |k|^2} \hspace{0.17em} \mathrm{d} q \leqslant C_s Q^{-
+\left( s -
+        \frac{1}{2} \right)},\)
       </center>
       <p>
         and the drifts have squared tails <font color="#620000">\(O (Q^{- 3})\)</font>,
@@ -1269,7 +1269,7 @@ p}), \qquad \delta_{N, T, p} = \|TZ_T
       <center>
         \(\displaystyle \sup_N \mathbb{E} \sup_{t \geqslant Q} \|Y_t - Y_Q
         \|_{H^{- s}}^2 \leqslant
-C_s Q^{- (s - \frac{1}{2})} .\)
+C_s Q^{- \left( s - \frac{1}{2} \right)} .\)
       </center>
       <p>
         <font color="#620000">\(\nu_N\)</font> is tight in <font color="#620000">\(H^{- s}
@@ -1458,12 +1458,11 @@ s + C_s
       </p>
       <center>
         \(\displaystyle \Pi_q O (x) = \mathrm{e}^{A (q, x)}
-        \mathbb{E}^{\mathbb{R}^{q, x}} [O
+        \mathbb{E}^{\mathbb{R}^{q, x}} \left[ O
 (Y_{\infty}) \mathrm{e}^{-
-        \int_q^{\infty} e}], \quad \mathrm{e}^{- A (q,
-        x)}
-=\mathbb{E}^{\mathbb{R}^{q, x}} \mathrm{e}^{- \int_q^{\infty}
-        e},\)
+        \int_q^{\infty} e} \right], \quad \mathrm{e}^{- A
+(q, x)}
+        =\mathbb{E}^{\mathbb{R}^{q, x}} \mathrm{e}^{- \int_q^{\infty} e},\)
       </center>
       <p>
         jointly continuous in <font color="#620000">\((q, x)\)</font>.
@@ -1475,14 +1474,15 @@ s + C_s
       </p>
       <center>
         \(\displaystyle \int O \hspace{0.17em} \mathrm{d} \nu =
-        \frac{\mathbb{E}^{\mathbb{R}} [O
+        \frac{\mathbb{E}^{\mathbb{R}} \left[ O
 (Y_{\infty}) \mathrm{e}^{-
-        \int_{q_0}^{\infty} e}]}{\mathbb{E}^{\mathbb{R}}
-[\mathrm{e}^{-
-        \int_{q_0}^{\infty} e}]}, \quad - \log \int \mathrm{e}^{-
-        V_N}
-\hspace{0.17em} \mathrm{d} \mu_C -\mathcal{C}_N (q_0) \to A (q_0,
-        0) .\)
+        \int_{q_0}^{\infty} e}
+\right]}{\mathbb{E}^{\mathbb{R}} \left[
+        \mathrm{e}^{- \int_{q_0}^{\infty} e}
+\right]}, \quad - \log \int
+        \mathrm{e}^{- V_N} \hspace{0.17em} \mathrm{d}
+\mu_C -\mathcal{C}_N
+        (q_0) \to A (q_0, 0) .\)
       </center>
       <p>
         As in Gubinelli&ndash;Meyer for sine&ndash;Gordon, but the defect is
@@ -1513,7 +1513,7 @@ s + C_s
         </li>
         <li>
           <p>
-            <font color="#620000">\(\psi_q =\mathbb{E}[\Phi |\mathcal{F}_q] = m_q
+            <font color="#620000">\(\psi_q =\mathbb{E} [\Phi |\mathcal{F}_q] = m_q
             (\Phi_q)\)</font>, a continuous function of the field;
           </p>
         </li>
@@ -1772,11 +1772,11 @@ W \rangle\)</font>.
         3})\)</font>. Chernoff:
       </p>
       <center>
-        \(\displaystyle \mathbb{E} \exp (\beta \langle \Phi, f \rangle^4 /
-        \|f\|_{\ast}^4) \leqslant
-C, \quad \sup_N \mathbb{E} \exp
-        (\beta_{\rho} \| \iota_N \Phi \|_{H^{-
-\rho}}^4) < \infty, \quad \rho
+        \(\displaystyle \mathbb{E} \exp (\beta \langle \Phi, f \rangle^4
+        /\|f\|_{\ast}^4) \leqslant C,
+\quad \sup_N \mathbb{E} \exp
+        (\beta_{\rho} \| \iota_N \Phi \|_{H^{- \rho}}^4)
+< \infty, \quad \rho
         > \frac{3}{2} .\)
       </center>
       <p>
@@ -1807,8 +1807,8 @@ C, \quad \sup_N \mathbb{E} \exp
       </p>
       <center>
         \(\displaystyle \mathbb{E} \sum_i \partial_i g \langle J_{q_i} h, h_i
-        \rangle =\mathbb{E}[G
-\langle \eta_q, h \rangle] =\mathbb{E}[G
+        \rangle =\mathbb{E} [G
+\langle \eta_q, h \rangle] =\mathbb{E} [G
         (\langle \Phi_q, K_{q_0} h \rangle +
 \langle \bar{\mathcal{F}}_q
         (Y_q), J_q h \rangle)] + O (q^{- 1 / 4}) .\)
@@ -1831,11 +1831,11 @@ C, \quad \sup_N \mathbb{E} \exp
         solves
       </p>
       <center>
-        \(\displaystyle A_t = \int_t^{\infty} (e_s (Y_s) + \frac{1}{2} \|Z_s
-        \|_2^2) \hspace{0.17em}
-\mathrm{d} s + \int_t^{\infty} \langle Z_s,
-        \hspace{0.17em} \mathrm{d} W_s
-\rangle .\)
+        \(\displaystyle A_t = \int_t^{\infty} \left( e_s (Y_s) + \frac{1}{2}
+        \|Z_s \|_2^2 \right)
+\hspace{0.17em} \mathrm{d} s + \int_t^{\infty}
+        \langle Z_s, \hspace{0.17em}
+\mathrm{d} W_s \rangle .\)
       </center>
       <p>
         With the forward equation <font color="#620000">\(\hspace{0.17em} \mathrm{d} P
@@ -1853,12 +1853,13 @@ C, \quad \sup_N \mathbb{E} \exp
       </p>
       <center>
         \(\displaystyle - \log \int \mathrm{e}^{- O} \hspace{0.17em}
-        \mathrm{d} \nu =\mathcal{G}(O)
--\mathcal{G}(0), \quad \mathcal{G}(O) =
-        \inf_u \mathbb{E}[O (Y^u_{\infty}) +
-\int_{q_0}^{\infty} (e_s (Y^u_s)
-        + \frac{1}{2} \|u_s \|_2^2) \hspace{0.17em}
-\mathrm{d} s],\)
+        \mathrm{d} \nu =\mathcal{G} (O)
+-\mathcal{G} (0), \quad \mathcal{G}
+        (O) = \inf_u \mathbb{E} \left[ O
+(Y^u_{\infty}) + \int_{q_0}^{\infty}
+        \left( e_s (Y^u_s) + \frac{1}{2} \|u_s
+\|_2^2 \right) \hspace{0.17em}
+        \mathrm{d} s \right],\)
       </center>
       <p>
         <font color="#620000">\(\hspace{0.17em} \mathrm{d} Y^u = (b (Y^u) + H (Y^u) u)

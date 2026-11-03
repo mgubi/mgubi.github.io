@@ -34,7 +34,7 @@
 
     <with|font-series|bold|Last time.> Positivity of the energy
     <math|\<Rightarrow\>> imaginary time; vacuum expectations are moments of
-    <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>*<space|0.17em>`*`="*<space|0.17em>Z<rsup|-1>\<mathe\><rsup|-<big|int><around|[|<frac|1|2>\|\<nabla\>*\<varphi\>\|<rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>>\<cal-D\>*\<varphi\>>;
+    <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>*<space|0.17em>`*`="*<space|0.17em>Z<rsup|-1>\<mathe\><rsup|-<big|int><around|[|<frac|1|2><around|\||\<nabla\>*\<varphi\>|\|><rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>>\<cal-D\>*\<varphi\>>;
     relativistic QFTs <math|\<leftrightarrow\>> measures on
     <math|\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d>|)>> satisfying the
     OS axioms.
@@ -221,7 +221,7 @@
       <math|<math-up|supp>f\<subset\><around|{|\<tau\>\<gtr\>0|}>>:
 
       <\equation*>
-        <around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\||<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f(\<tau\>,\<cdot\><around*|)|<space|0.17em>\<mathd\>\<tau\>|\|><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geqslant\>0.|\<nobracket\>>
+        <around|\<langle\>|\<Theta\>*f,C*f|\<rangle\>>=<around*|\<\|\|\>|<around|(|2*\<omega\>|)><rsup|-1/2><big|int><rsub|0><rsup|\<infty\>>\<mathe\><rsup|-\<tau\>*\<omega\>>f<around*|(|\<tau\>,\<cdot\>|)><space|0.17em>\<mathd\>\<tau\>|\<\|\|\>><rsup|2><rsub|L<rsup|2><around|(|N|)>>\<geqslant\>0.
       </equation*>
 
       (c) <math|\<mu\><rsub|m>> on <math|\<bbb-R\><rsup|d>> satisfies
@@ -278,7 +278,7 @@
       trivial on <math|\<Sigma\><rsub|0>>:
 
       <\equation*>
-        \<bbb-E\>*<around|[|<wide|\<Theta\>*F|\<bar\>>*F|]>=\<bbb-E\><around*|[|<around|\||\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\|><rsup|2>|]>\<geqslant\>0,<space|2em>\<bbb-E\>[U<rsub|t><space|0.17em>\<cdot\><space|0.17em><around|\||<space|0.17em>\<Sigma\><rsub|0>|]>=\<mathe\><rsup|-t*H><text|on
+        \<bbb-E\>*<around|[|<wide|\<Theta\>*F|\<bar\>>*F|]>=\<bbb-E\><around*|[|<around|\||\<bbb-E\><around|[|F<space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>|\|><rsup|2>|]>\<geqslant\>0,<space|2em>\<bbb-E\><around|[|U<rsub|t><space|0.17em>\<cdot\><space|0.17em>\|<space|0.17em>\<Sigma\><rsub|0>|]>=\<mathe\><rsup|-t*H><text|on
         >L<rsup|2><around|(|\<Sigma\><rsub|0>|)>.
       </equation*>
 
@@ -346,7 +346,7 @@
     \;
 
     Wick rotation of <math|W<rsub|2><rsup|<around|(|M|)>>>:
-    <math|<big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)>\|\<tau\>\|+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>>.
+    <math|<big|int>\<mathd\>\<Omega\><rsub|M><around|(|<math-bf|p>|)><space|0.17em>\<mathe\><rsup|-\<omega\><rsub|M><around|(|<math-bf|p>|)><around|\||\<tau\>|\|>+\<mathi\><math-bf|p>\<cdot\><math-bf|x>>=G<rsub|M>*<around|(|\<tau\>,<math-bf|x>|)>>.
     Hence for any theory satisfying the axioms
 
     <\equation*>
@@ -524,7 +524,7 @@
       </equation*>
 
       If <math|n*<around|(|d-2|)>\<geqslant\>d> and
-      <math|0\<leqslant\>f\<nequiv\>0>: <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<to\>\<infty\>>.
+      <math|0\<leqslant\>f\<nequiv\>0>: <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<to\>\<infty\>>.
     </theorem*>
   </hidden>|<\hidden>
     <mytitle|Proof>
@@ -549,7 +549,7 @@
     <with|font-series|bold|2. Convergence.> By the lemma,
 
     <\equation*>
-      <around*|\<nobracket\>|\<bbb-E\><around*|[||(>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>)<rsup|2>|]>=n!<big|iint>f<around|(|x|)>*f<around|(|y|)>*<around*|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>*<around|(|x-y|)>\<to\>0
+      \<bbb-E\><around*|[|<around*|(|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>-:\<varphi\><rsub|\<delta\>><rsup|n>:<around|(|f|)>|)><rsup|2>|]>=n!<big|iint>f<around|(|x|)>*f<around|(|y|)>*<around*|(|G<rsup|n><rsub|\<varepsilon\>,\<varepsilon\>>-2*G<rsup|n><rsub|\<varepsilon\>,\<delta\>>+G<rsup|n><rsub|\<delta\>,\<delta\>>|)>*<around|(|x-y|)>\<to\>0
     </equation*>
 
     by dominated convergence: <math|K<rsup|n>\<in\>L<rsup|1><rsub|<math-up|loc>>\<Longleftrightarrow\>n*<around|(|d-2|)>\<less\>d>.
@@ -606,7 +606,7 @@
 
     <\itemize>
       <item>If <math|n*<around|(|d-2|)>\<geqslant\>d>:
-      <math|\<bbb-E\>[:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>]\<to\>\<infty\>>.
+      <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<to\>\<infty\>>.
       Worse: there is <strong|no random distribution> at all, in any topology
       or on any space. Albeverio\ULiang 2007:
       <math|:\<varphi\><rsup|2>:<around|(|f|)>>, <math|f\<gtr\>0>, in
@@ -655,7 +655,7 @@
     </lemma*>
 
     <with|font-series|bold|Proof.> For <math|g=\<mathe\><rsup|\<mathi\><around|\<langle\>|u,\<cdot\>|\<rangle\>>>>:
-    <math|\<bbb-E\><around|[|Y\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>=-\<mathi\>\<partial\><rsub|\<theta\>>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<theta\>*Y+\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>\|<rsub|\<theta\>=0>=\<mathi\><big|sum><rsub|i>u<rsub|i>*\<bbb-E\>*<around|[|Y*X<rsub|i>|]>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>>;
+    <math|\<bbb-E\><around|[|Y\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>=<around*|.|-\<mathi\>\<partial\><rsub|\<theta\>>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<theta\>*Y+\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>|\|><rsub|\<theta\>=0>=\<mathi\><big|sum><rsub|i>u<rsub|i>*\<bbb-E\>*<around|[|Y*X<rsub|i>|]>*\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\><around|\<langle\>|u,X|\<rangle\>>>|]>>;
     then Fourier inversion and approximation.
   </hidden>|<\hidden>
     <mytitle|The Dyson\USchwinger equation>

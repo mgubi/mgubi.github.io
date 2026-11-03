@@ -523,7 +523,7 @@
 
   For <math|f\<in\>\<cal-S\><around|(|\<bbb-R\><rsup|d>|)>> one gets
   <math|\<varphi\><around|(|f|)>*\<Omega\>=a<rsup|\<ast\>><around|(|<wide|f|~>|)>*\<Omega\>>
-  with <math|<wide|f|~><around|(|<math-bf|p>|)>=<big|int>f<around|(|x|)>\<mathe\><rsup|\<mathi\>p\<cdot\>x>\<mathd\>x\|<rsub|p<rsup|0>=\<omega\><around|(|<math-bf|p>|)>>>,
+  with <math|<wide|f|~><around|(|<math-bf|p>|)>=<around*|.|<big|int>f<around|(|x|)>\<mathe\><rsup|\<mathi\>p\<cdot\>x>\<mathd\>x|\|><rsub|p<rsup|0>=\<omega\><around|(|<math-bf|p>|)>>>,
   and
 
   <\equation>
@@ -786,7 +786,7 @@
   </equation>
 
   One may think of <math|\<varphi\>> as the solution of a <em|linear wave
-  equation with quantum initial data>: <math|(\<varphi\>*<around|(|0,\<cdot\>|)>,\<pi\>(0,\<cdot\><around|)||)>>
+  equation with quantum initial data>: <math|<around|(|\<varphi\>*<around|(|0,\<cdot\>|)>,\<pi\><around|(|0,\<cdot\>|)>|)>>
   satisfy the CCR and are \Pdistributed\Q according to the vacuum.
 
   <paragraph|Free field on a spatial circle> For <math|s=1> and space
@@ -809,7 +809,7 @@
 
   <paragraph|Interactions> The classical nonlinear Klein\UGordon equation
   <math|<around|(|\<Box\>+m<rsup|2>|)>*u+\<lambda\>*u<rsup|3>=0> is
-  Hamiltonian with <math|H=<big|int><around|[|<frac|1|2>*\<pi\><rsup|2>+<frac|1|2>\|\<nabla\>*u\|<rsup|2>+<frac|1|2>*m<rsup|2>*u<rsup|2>+<frac|\<lambda\>|4>*u<rsup|4>|]>\<mathd\><math-bf|x>>.
+  Hamiltonian with <math|H=<big|int><around|[|<frac|1|2>*\<pi\><rsup|2>+<frac|1|2><around|\||\<nabla\>*u|\|><rsup|2>+<frac|1|2>*m<rsup|2>*u<rsup|2>+<frac|\<lambda\>|4>*u<rsup|4>|]>\<mathd\><math-bf|x>>.
   Its quantum version would be the operator equation
 
   <\equation>
@@ -908,7 +908,7 @@
   <\exercise>
     <dueto|A canonical sum rule><label|ex:sum-rule> (a) For the free field of
     mass <math|M>, write <math|<around|[|\<varphi\><around|(|x|)>,\<varphi\><around|(|0|)>|]>=W<rsub|2><rsup|<around|(|M|)>><around|(|x|)>-W<rsub|2><rsup|<around|(|M|)>>*<around|(|-x|)>>
-    and show that <math|\<partial\><rsub|t><around|[|\<varphi\>*<around|(|t,<math-bf|x>|)>,\<varphi\>*<around|(|0,<with|math-font-family|bf|0>|)>|]>\|<rsub|t=0>=-\<mathi\>\<delta\><around|(|<math-bf|x>|)>>,
+    and show that <math|<around*|.|\<partial\><rsub|t><around|[|\<varphi\>*<around|(|t,<math-bf|x>|)>,\<varphi\>*<around|(|0,<with|math-font-family|bf|0>|)>|]>|\|><rsub|t=0>=-\<mathi\>\<delta\><around|(|<math-bf|x>|)>>,
     independently of <math|M>. (b) Assume a Wightman field has sharp-time
     fields satisfying<nbsp><eqref|eq:CCR>. Using<nbsp><eqref|eq:KL>, show (at
     least formally) that <math|<big|int>\<rho\><around|(|\<mathd\>M<rsup|2>|)>=1>.
@@ -985,8 +985,8 @@
 
   <math|H<rsub|\<varepsilon\>>> is a Schrödinger operator on
   <math|\<bbb-R\><rsup|N>> with a confining potential
-  (<math|U<rsub|\<varepsilon\>>\<geqslant\>c\|\<varphi\>\|<rsup|2>-C> since
-  <math|m\<gtr\>0>). Hence it is essentially self-adjoint on
+  (<math|U<rsub|\<varepsilon\>>\<geqslant\>c<around|\||\<varphi\>|\|><rsup|2>-C>
+  since <math|m\<gtr\>0>). Hence it is essentially self-adjoint on
   <math|C<rsup|\<infty\>><rsub|c>>, bounded below, with compact resolvent,
   and <math|\<mathe\><rsup|-t*H<rsub|\<varepsilon\>>>> is trace class for
   <math|t\<gtr\>0>. The integral kernel of
@@ -1368,7 +1368,7 @@
 
   <\equation>
     <label|eq:path-integral>\<mu\><around|(|\<mathd\>\<varphi\>|)>*<space|0.27em>`*`="*<space|0.27em>Z<rsup|-1>*exp
-    <around*|(|-<big|int><rsub|\<bbb-R\><rsup|d>><around*|[|<tfrac|1|2>\|\<nabla\>*\<varphi\>\|<rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>\<mathd\>x|)>*\<cal-D\>*\<varphi\>.
+    <around*|(|-<big|int><rsub|\<bbb-R\><rsup|d>><around*|[|<tfrac|1|2><around|\||\<nabla\>*\<varphi\>|\|><rsup|2>+<tfrac|1|2>m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>\<mathd\>x|)>*\<cal-D\>*\<varphi\>.
   </equation>
 
   Neither <math|\<cal-D\>*\<varphi\>> nor the action make sense, since
@@ -1614,7 +1614,7 @@
     <math|\<Theta\>>. On bounded functions <math|F> of
     <math|<around|{|\<varphi\><rsub|u>:\<tau\><around|(|u|)>\<geqslant\>0|}>>
     put <math|<around|(|F,G|)>=\<bbb-E\>*<around|[|<wide|\<Theta\>*F|\<bar\>>*G|]>>
-    and <math|<around|(|<math-ss|T>F|)><around|(|\<varphi\>|)>=F<around|(|\<varphi\>|(>\<cdot\>+\<varepsilon\>,\<cdot\><around|)||)>>.
+    and <math|<around|(|<math-ss|T>F|)><around|(|\<varphi\>|)>=F<around|(|\<varphi\><around|(|\<cdot\>+\<varepsilon\>,\<cdot\>|)>|)>>.
     Show that <math|<around|(|F,<math-ss|T>G|)>=<around|(|<math-ss|T>F,G|)>>
     and, by iterating Cauchy\USchwarz, <math|<around|\||<around|(|F,<math-ss|T>F|)>|\|>\<leqslant\><around|(|F,F|)>>.
     Deduce that <math|<math-ss|T>> induces a self-adjoint contraction on the
