@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
   <screens|<\shown>
@@ -9,12 +9,11 @@
 
       \;
 
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|The Gaussian free field>
+      <cqft-lecture-title|The Gaussian free field>
 
       <vspace|0.65cm>
 
@@ -59,7 +58,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Definition and
+    <cqft-part-title|Definition and
     construction>
 
     <vspace|0.3cm>
@@ -197,7 +196,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Reflection positivity
+    <cqft-part-title|Reflection positivity
     and the free field>
 
     <vspace|0.3cm>
@@ -466,7 +465,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Local operators: Wick
+    <cqft-part-title|Local operators: Wick
     products>
 
     <vspace|0.3cm>
@@ -591,7 +590,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|The Dyson\USchwinger
+    <cqft-part-title|The Dyson\USchwinger
     equation>
 
     <vspace|0.3cm>

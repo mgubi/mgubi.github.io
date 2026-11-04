@@ -47,17 +47,14 @@
   <body>
     <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 4 (slides)</h1>
     <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
-    <div class="toggle" style="display: none">
+    <div class="toggle" style="display: block">
       <div align="left">
         <p style="margin-top: 0.8cm">
 
         </p>
         <p>
-
-        </p>
-        <p>
-          <font style="font-size: 210.0%"><b><font color="#800000">A Constructive Introduction to Quantum
-          Field Theory</font></b></font>
+          <font style="font-size: 170.0%"><b><font color="#800000">A Constructive Introduction to<br
+          />Quantum Field Theory</font></b></font>
         </p>
         <p style="margin-bottom: 0.2cm">
 
@@ -194,7 +191,7 @@
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Three ways to generate the interacting
+        <font style="font-size: 135.0%"><b><font color="#800000">Three ways to generate the interacting
         measure</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -624,10 +621,15 @@ t \right] = V_0 (0) + \tfrac{1}{2}
         Pontryagin's maximum principle
       </div>
       <p>
-        Minimise <font color="#620000">\(J (u) = g (x_T) + \int_t^T \ell (x_s, u_s)
-        \mathrm{d} s\)</font> subject to <font color="#620000">\(\dot{x} = b (x,
-        u)\)</font>, <font color="#620000">\(x_t = x\)</font>.
-        <strong>Hamiltonian:</strong>
+        Minimise
+      </p>
+      <center>
+        \(\displaystyle J (u) = g (x_T) + \int_t^T \ell (x_s, u_s) \mathrm{d}
+        s\)
+      </center>
+      <p>
+        subject to <font color="#620000">\(\dot{x} = b (x, u)\)</font>, <font color="#620000">\(x_t
+        = x\)</font>. <strong>Hamiltonian:</strong>
       </p>
       <center>
         \(\displaystyle H (x, p, u) = \langle p, b (x, u) \rangle - \ell (x,
@@ -649,7 +651,7 @@ t \right] = V_0 (0) + \tfrac{1}{2}
           </center></i>
         </p>
       </div>
-      <ul>
+      <font style="font-size: 84.1%"><ul>
         <li>
           <p>
             State forward, costate backward: a <strong>two-point boundary
@@ -668,17 +670,16 @@ t \right] = V_0 (0) + \tfrac{1}{2}
             Next: why this holds, and what <font color="#620000">\(p\)</font> is.
           </p>
         </li>
-      </ul>
-      <p>
+      </ul><p>
         <font style="font-size: 84.1%"><font color="#707070">Pontryagin&ndash;Boltyanskii&ndash;Gamkrelidze&ndash;Mishchenko
         1962.</font></font>
-      </p>
+      </p></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Pontryagin: first variation and HJB
       </div>
-      <font style="font-size: 90.0%"><p>
+      <font style="font-size: 85.0%"><p>
         <strong>First variation.</strong> Perturb <font color="#620000">\(u \to u +
         \varepsilon v\)</font>; the state varies by <font color="#620000">\(\xi =
         \partial_{\varepsilon} x\)</font>,
@@ -827,26 +828,29 @@ t)] \quad \Longrightarrow \quad
       <div class="slide-title">
         Filtering: the field observes its future
       </div>
-      <font style="font-size: 90.0%"><p>
+      <p>
         All covariance operators are functions of <font color="#620000">\(A\)</font>;
         <font color="#620000">\(K = Q_T^{- 1}\)</font>, <font color="#620000">\(J_t =
         KQ_t\)</font>. Since <font color="#620000">\(\mathrm{d} \mathbb{P}/ \mathrm{d}
         \mathbb{P}_0\)</font> depends on <font color="#620000">\(X_T\)</font> only,
         given <font color="#620000">\(\Phi_T\)</font> the interacting field is the
         <strong>Gaussian bridge</strong>:
-      </p><center>
+      </p>
+      <center>
         \(\displaystyle \Phi_t = J_t \Phi_T + \zeta_t, \qquad \mathrm{d}
         \Phi_t = \dot{Q}_t S_t^{- 1}
 (\Phi_T - \Phi_t) \hspace{0.17em}
         \mathrm{d} t + \dot{Q}_t^{1 / 2}
 \hspace{0.17em} \mathrm{d} B_t,\)
-      </center><p>
+      </center>
+      <p>
         with <font color="#620000">\(\zeta\)</font>, <font color="#620000">\(B\)</font>
         independent of <font color="#620000">\(\Phi_T\)</font>. <strong>Signal</strong>
         <font color="#620000">\(\Phi_T\)</font>, with prior <font color="#620000">\(\nu_T\)</font>;
         <strong>observation</strong> <font color="#620000">\((\Phi_s)_{s \leqslant
         t}\)</font>, pulled towards the hidden field.
-      </p><div class="slide-box">
+      </p>
+      <div class="slide-box">
         <p style="margin-top: 1em">
           <font color="#800000"><font color="#800000"><strong>Proposition.
           </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Filtering)
@@ -885,28 +889,25 @@ S_t^{- 1}
             </li>
           </ul></i>
         </div>
-      </div><p>
-        Gaussian prior: <font color="#620000">\(\psi_t = \Phi_t\)</font>, <font color="#620000">\(F
-        = 0\)</font>. <font color="#620000">\(\Phi_t\)</font> is the estimate that
-        ignores the interaction, <font color="#620000">\(\psi_t\)</font> the one that
-        includes it.
-      </p></font>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Backward in resolution: Gaussian blurring
       </div>
-      <font style="font-size: 90.0%"><p>
+      <p>
         Reverse the resolution, <font color="#620000">\(\hat{\Phi}_s = \Phi_{T -
         s}\)</font>:
-      </p><center>
+      </p>
+      <center>
         \(\displaystyle \mathrm{d} \hat{\Phi}_s = - \dot{Q}_{T - s} Q_{T -
         s}^{- 1} \hat{\Phi}_s
 \hspace{0.17em} \mathrm{d} s + \dot{Q}_{T -
         s}^{1 / 2} \hspace{0.17em}
 \mathrm{d} \hat{W}_s, \qquad \hat{\Phi}_0 =
         \Phi_T \sim \nu_T .\)
-      </center><ul>
+      </center>
+      <ul>
         <li>
           <p>
             <font color="#620000">\(\mathrm{d} \mathbb{P}/ \mathrm{d}
@@ -936,12 +937,16 @@ S_t^{- 1}
             is the denoiser (Tweedie).
           </p>
         </li>
-      </ul><div class="slide-block">
+      </ul>
+      <p>
+
+      </p>
+      <div class="slide-block">
         <p>
           The Polchinski process is a <strong>denoising diffusion</strong>
           whose data distribution is the interacting measure.
         </p>
-      </div></font>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1194,7 +1199,7 @@ c_T) .\)
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Force coordinates and
+        <font style="font-size: 135.0%"><b><font color="#800000">Force coordinates and
         potentials</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -2088,7 +2093,7 @@ S_t^{- 1} (y - x) \rangle \right\},\)
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Observables and field
+        <font style="font-size: 135.0%"><b><font color="#800000">Observables and field
         equations</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -2592,7 +2597,7 @@ V_T (\Phi_T), I_T (w) \rangle .\)
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Appendices: additional
+        <font style="font-size: 135.0%"><b><font color="#800000">Appendices: additional
         material</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -2605,7 +2610,7 @@ V_T (\Phi_T), I_T (w) \rangle .\)
 
       </p>
     </div>
-    <div class="toggle" style="display: block">
+    <div class="toggle" style="display: none">
       <div class="slide-title">
         A semigroup of renormalisation maps
       </div>

@@ -147,3 +147,4 @@ body.deck div.toggle, body.overview div.toggle { background: var(--color-backgro
 font[color="#800000"], font[color="#620000"] { color: var(--color-title); }
 font[color="#707070"], #max-counter, #max-help { color: var(--color-muted); }
 @media print { .cqft-course-nav { display: none; } }
+.key-result { border-left: 3px solid var(--color-title); background: color-mix(in srgb, var(--color-title) 6%, transparent); padding: .4em 1em; margin: 1em 0; }

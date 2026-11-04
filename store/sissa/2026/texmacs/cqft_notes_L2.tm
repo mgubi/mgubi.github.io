@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|article|number-long-article|british|cqft-notes>>
+<style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
   <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
@@ -747,24 +747,26 @@
     :\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|x|)>\<assign\>H<rsub|n><around|(|\<varphi\><rsub|\<varepsilon\>><around|(|x|)>;c<rsub|\<varepsilon\>>|)>,<space|2em>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)>\<assign\><big|int>f<around|(|x|)>:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|x|)><space|0.17em>\<mathd\>x.
   </equation>
 
-  <\theorem>
-    <dueto|Wick powers><label|thm:wick> Let <math|n\<geqslant\>1> with
-    <math|n*<around|(|d-2|)>\<less\>d>, i.e. every <math|n> if
-    <math|d\<leqslant\>2>, <math|n\<leqslant\>2> if <math|d=3>, <math|n=1> if
-    <math|d\<geqslant\>4>. Then for every
-    <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
-    <math|:\<varphi\><rsup|n>:<around|(|f|)>\<assign\>lim<rsub|\<varepsilon\>\<to\>0>:\<varphi\><rsup|n><rsub|\<varepsilon\>>:<around|(|f|)>>
-    exists in <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>>, is independent of
-    <math|\<eta\>>, and
-
-    <\equation>
-      <label|eq:wick-cov>\<bbb-E\>*<around*|[|:\<varphi\><rsup|n>:<around|(|f|)>:\<varphi\><rsup|k>:<around|(|g|)>|]>=\<delta\><rsub|n*k>*<space|0.17em>n!<big|iint>f<around|(|x|)>*G*<around|(|x-y|)><rsup|n>*g<around|(|y|)><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>y.
-    </equation>
-
-    If instead <math|n*<around|(|d-2|)>\<geqslant\>d> and
-    <math|0\<leqslant\>f\<nequiv\>0>, then
-    <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<to\>\<infty\>>.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Wick powers><label|thm:wick> Let <math|n\<geqslant\>1> with
+      <math|n*<around|(|d-2|)>\<less\>d>, i.e. every <math|n> if
+      <math|d\<leqslant\>2>, <math|n\<leqslant\>2> if <math|d=3>, <math|n=1> if
+      <math|d\<geqslant\>4>. Then for every
+      <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
+      <math|:\<varphi\><rsup|n>:<around|(|f|)>\<assign\>lim<rsub|\<varepsilon\>\<to\>0>:\<varphi\><rsup|n><rsub|\<varepsilon\>>:<around|(|f|)>>
+      exists in <math|L<rsup|2><around|(|\<mu\><rsub|m>|)>>, is independent of
+      <math|\<eta\>>, and
+  
+      <\equation>
+        <label|eq:wick-cov>\<bbb-E\>*<around*|[|:\<varphi\><rsup|n>:<around|(|f|)>:\<varphi\><rsup|k>:<around|(|g|)>|]>=\<delta\><rsub|n*k>*<space|0.17em>n!<big|iint>f<around|(|x|)>*G*<around|(|x-y|)><rsup|n>*g<around|(|y|)><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>y.
+      </equation>
+  
+      If instead <math|n*<around|(|d-2|)>\<geqslant\>d> and
+      <math|0\<leqslant\>f\<nequiv\>0>, then
+      <math|\<bbb-E\><around|[|:\<varphi\><rsub|\<varepsilon\>><rsup|n>:<around|(|f|)><rsup|2>|]>\<to\>\<infty\>>.
+    </theorem>
+  </key-result>
 
   <\proof>
     <em|Step<nbsp>1: a uniform bound.> Let
@@ -1079,19 +1081,21 @@
 
   The DS equation is not only satisfied by the GFF; it characterises it.
 
-  <\theorem>
-    <dueto|DS characterises the GFF><label|thm:DS-unique> Let <math|\<nu\>>
-    be a probability measure on <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
-    such that <math|\<varphi\><around|(|f|)>\<in\>L<rsup|1><around|(|\<nu\>|)>>
-    for all <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> and
-
-    <\equation>
-      <label|eq:DS-nu>\<bbb-E\><rsub|\<nu\>>*<around|[|D<rsub|h>*F|]>=\<bbb-E\><rsub|\<nu\>>*<around|[|F*<space|0.17em>\<varphi\>*<around|(|A*h|)>|]>*<space|2em><text|for
-      all >F\<in\>\<cal-F\>*C<rsup|\<infty\>><rsub|b>,h\<in\>\<cal-S\><around|(|\<cal-M\>|)>.
-    </equation>
-
-    Then <math|\<nu\>=\<mu\><rsub|m>>.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|DS characterises the GFF><label|thm:DS-unique> Let <math|\<nu\>>
+      be a probability measure on <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
+      such that <math|\<varphi\><around|(|f|)>\<in\>L<rsup|1><around|(|\<nu\>|)>>
+      for all <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> and
+  
+      <\equation>
+        <label|eq:DS-nu>\<bbb-E\><rsub|\<nu\>>*<around|[|D<rsub|h>*F|]>=\<bbb-E\><rsub|\<nu\>>*<around|[|F*<space|0.17em>\<varphi\>*<around|(|A*h|)>|]>*<space|2em><text|for
+        all >F\<in\>\<cal-F\>*C<rsup|\<infty\>><rsub|b>,h\<in\>\<cal-S\><around|(|\<cal-M\>|)>.
+      </equation>
+  
+      Then <math|\<nu\>=\<mu\><rsub|m>>.
+    </theorem>
+  </key-result>
 
   <\proof>
     Fix a real <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> and let

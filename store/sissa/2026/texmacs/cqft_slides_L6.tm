@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
   <screens|<\shown>
@@ -9,12 +9,11 @@
 
       \;
 
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|<math|\<Phi\><rsup|4><rsub|3>> on the torus II: a
+      <cqft-lecture-title|<math|\<Phi\><rsup|4><rsub|3>> on the torus II: a
       priori estimates and the limit>
 
       <vspace|0.65cm>
@@ -55,7 +54,7 @@
       <item>Source: <math|<around|\<\|\|\>|b<rsup|<math-up|b>><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>C*\<gamma\><rsup|7/2>*q<rsup|-5/2>>,
       <math|<around|\<\|\|\>|b<rsup|<math-up|l>><rsub|q><around|(|y|)>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>C*\<gamma\><rsup|4>*q<rsup|-5><around|\<\|\|\>|t<rsub|q><around|(|y|)>|\<\|\|\>><rsub|6><rsup|6>>.
 
-      <item>Coordinates: <math|K<rsub|q>*<around|(|Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|)>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=P<rsub|q>>,
+      <item>Coordinates: <math|K<rsub|q>*<around|(|Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>|)>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=K<rsub|q>\<Phi\><rsub|q>>,
       <math|<around|\<\|\|\>|D*\<varrho\><rsub|q>|\<\|\|\>><rsub|p\<to\>p>\<leqslant\>\<varepsilon\><rsub|q>>.
     </enumerate-Alpha>
 
@@ -97,7 +96,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|The energies>
+    <cqft-part-title|The energies>
 
     <vspace|0.3cm>
 
@@ -107,11 +106,11 @@
   </hidden>|<\hidden>
     <mytitle|The noise of the field equation>
 
-    Lecture<nbsp>5: <math|P<rsub|q>=<around|(|q-q<rsub|0>|)>*\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>>,
+    Lecture<nbsp>5: <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\><rsub|\<infty\>>+C<rsub|q>B<rsub|q-q<rsub|0>>>,
     a noisy measurement. Since <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>*\<Phi\><rsub|\<infty\>>>,
 
     <\equation*>
-      \<eta\><rsub|q>\<assign\>P<rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>:
+      \<eta\><rsub|q>\<assign\>K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>:
     </equation*>
 
     the noise observable of Lecture<nbsp>4 is the <strong|filtered
@@ -137,7 +136,7 @@
   </hidden>|<\hidden>
     <mytitle|The field equation>
 
-    Insert <math|P<rsub|q>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*<around|(|Y<rsub|q>+Z<rsub|q>|)>>
+    Insert <math|K<rsub|q>\<Phi\><rsub|q>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*<around|(|Y<rsub|q>+Z<rsub|q>|)>>
     into the coordinate equation (C), with
     <math|K<rsub|q>=K<rsub|q<rsub|0>>+q-q<rsub|0>>. With
     <math|V<rsub|q>=Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-\<zeta\><rsub|q>>:
@@ -195,7 +194,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Forward coercivity>
+    <cqft-part-title|Forward coercivity>
 
     <vspace|0.3cm>
 
@@ -334,7 +333,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Backward feedback and
+    <cqft-part-title|Backward feedback and
     closure>
 
     <vspace|0.3cm>
@@ -555,7 +554,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|The boundary at
+    <cqft-part-title|The boundary at
     infinite resolution>
 
     <vspace|0.3cm>
@@ -583,7 +582,7 @@
 
     <\itemize>
       <item>The field at resolution <math|q>:
-      <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>\<to\>\<Phi\><rsub|\<infty\>>>.
+      <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>\<to\>\<Phi\><rsub|\<infty\>>>.
 
       <item><math|\<Phi\><rsub|q>=Y<rsub|q>+C<rsub|q>*<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>,
       so <math|Y<rsub|q>-\<Phi\><rsub|q>=O<around|(|q<rsup|-1>|)>> and
@@ -639,7 +638,7 @@
 
     The estimates use the start of the flow only through the noise. Let
     <math|\<bbb-P\><rsup|q,x>> be the exact flow conditioned on
-    <math|\<Phi\><rsub|q>=x>: <math|P<rsub|t>=K<rsub|q>x+<around|(|t-q|)><wide|\<Phi\>|^>+B<rprime|'><rsub|t-q>>,
+    <math|\<Phi\><rsub|q>=x>: <math|\<Phi\><rsub|t>=C<rsub|t><around|(|K<rsub|q>x+<around|(|t-q|)><wide|\<Phi\>|^>+B<rprime|'><rsub|t-q>|)>>,
     with prior <math|\<propto\>\<mathe\><rsup|<around|\<langle\>|z,K<rsub|q>x|\<rangle\>>-<frac|1|2><around|\<langle\>|z,K<rsub|q>z|\<rangle\>>-V<rsub|N><around|(|z|)>><space|0.17em>\<mathd\>
     z>.
 
@@ -697,7 +696,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Tightness>
+    <cqft-part-title|Tightness>
 
     <vspace|0.3cm>
 
@@ -774,7 +773,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Identifying the
+    <cqft-part-title|Identifying the
     limit>
 
     <vspace|0.3cm>
@@ -912,11 +911,11 @@
     Under <math|\<bbb-P\>=f\<bbb-R\>>, with
     <math|f=\<mathe\><rsup|A<around|(|q<rsub|0>,0|)>>\<mathe\><rsup|-<big|int>
     e>>, <math|\<Phi\>=Y<rsub|\<infty\>>>,
-    <math|P<rsub|q>=K<rsub|q>x<rsub|q>>, <math|\<cal-F\><rsub|q>=\<sigma\><around|(|x<rsub|s>:s\<leqslant\>
+    <math|\<cal-F\><rsub|q>=\<sigma\><around|(|x<rsub|s>:s\<leqslant\>
     q|)>>:
 
     <\itemize>
-      <item><math|\<Phi\>\<sim\>\<nu\>>, <math|P<rsub|q>=<around|(|q-q<rsub|0>|)>\<Phi\>+B<rsub|q-q<rsub|0>>>
+      <item><math|\<Phi\>\<sim\>\<nu\>>, <math|x<rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>
       with <math|B> independent of <math|\<Phi\>>;
 
       <item><math|\<psi\><rsub|q>=\<bbb-E\><around|[|\<Phi\>\|\<cal-F\><rsub|q>|]>=m<rsub|q><around|(|\<Phi\><rsub|q>|)>>,
@@ -1000,9 +999,7 @@
   </hidden>|<\hidden>
     <mytitle|The field equation at resolution <math|q>>
 
-    In the limit: <math|\<Phi\><rsub|q>=C<rsub|q>*P<rsub|q>>,
-    <math|\<eta\><rsub|q>=P<rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>,
-    <math|F<rsub|q>=K<rsub|q>*\<psi\><rsub|q>-P<rsub|q>>,
+    In the limit: <math|\<eta\><rsub|q>=K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>, <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>>,
     <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>\<to\>I>.
 
     <\theorem*>
@@ -1044,7 +1041,7 @@
     <strong|Shift the coordinate:>
 
     <\equation*>
-      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=P<rsub|q>+h*f,<space|1em>
+      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=K<rsub|q>\<Phi\><rsub|q>+h*f,<space|1em>
       Z<rsub|q>=<wide|\<psi\>|^><rsub|q>-Y<rsub|q>.
     </equation*>
 
@@ -1148,7 +1145,7 @@
       high-scale contraction with non-degeneracy. Only
       <math|L<rsup|2><around|(|<math-up|HS>|)>> control is available.
 
-      <item><strong|Strong solutions:> is <math|P> adapted to <math|W>? The
+      <item><strong|Strong solutions:> is the Polchinski process adapted to <math|W>? The
       same bound. Allinger\UMitter does not apply, as
       <math|<around|\<\|\|\>|\<Phi\>|\<\|\|\>><rsub|2>=\<infty\>>.
 

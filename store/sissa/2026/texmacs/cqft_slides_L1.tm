@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
   <screens|<\hidden>
@@ -9,12 +9,11 @@
 
       \;
 
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|Relativistic quantum fields and imaginary time>
+      <cqft-lecture-title|Relativistic quantum fields and imaginary time>
 
       <vspace|0.65cm>
 
@@ -103,7 +102,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Relativistic quantum
+    <cqft-part-title|Relativistic quantum
     fields>
 
     <vspace|0.3cm>
@@ -507,7 +506,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|From real to
+    <cqft-part-title|From real to
     imaginary time>
 
     <vspace|0.3cm>

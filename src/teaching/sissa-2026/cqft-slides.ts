@@ -84,6 +84,22 @@
 
   <\active*>
     <\src-comment>
+      Titles: the course title and the lecture title on the title slide, and
+      the titles of the slides that open each part of a lecture. Tune the
+      sizes here.
+    </src-comment>
+  </active*>
+
+  <assign|cqft-course-title|<macro|body|<with|font-size|1.7|font-series|bold|color|dark
+  red|<arg|body>>>>
+
+  <assign|cqft-lecture-title|<macro|body|<with|font-size|1.3|<arg|body>>>>
+
+  <assign|cqft-part-title|<macro|body|<with|font-size|1.35|font-series|bold|color|dark
+  red|<arg|body>>>>
+
+  <\active*>
+    <\src-comment>
       Stylesheets and the slide viewer of max-html-slides (from the plugin's
       resources folder), the fonts and cqft-slides.css, next to the HTML
       pages. max-html-slides also gives HTML renderings of mytitle,

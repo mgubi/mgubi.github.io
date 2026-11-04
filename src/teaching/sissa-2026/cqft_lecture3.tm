@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|article|number-long-article|british|cqft-notes>>
+<style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
   <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
@@ -252,49 +252,51 @@
   So the static characterisation (DS) and the dynamic one (invariance under
   the Langevin flow) are two faces of the same integration by parts formula.
 
-  <\theorem>
-    <dueto|Parabolic stochastic quantisation of the GFF><label|thm:parabolic>
-    Let <math|\<xi\>> be space-time white noise on
-    <math|\<bbb-R\>\<times\>\<cal-M\>>. For <math|t\<in\>\<bbb-R\>> and
-    <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> define
-
-    <\equation>
-      <label|eq:stat-sol>\<Phi\><rsub|t><around|(|f|)>\<assign\><sqrt|2>*<space|0.17em>\<xi\><around|(|K<rsub|t,f>|)>,<space|2em>K<rsub|t,f><around|(|r,x|)>\<assign\><with|math-font|Bbb|1><rsub|<around|{|r\<less\>t|}>><around*|(|\<mathe\><rsup|-<around|(|t-r|)>*A>f|)><around|(|x|)>.
-    </equation>
-
-    <\enumerate-alpha>
-      <item><math|\<Phi\>> is a centred Gaussian process with
-      <math|\<bbb-E\>*<around|[|\<Phi\><rsub|t><around|(|f|)>*\<Phi\><rsub|s><around|(|g|)>|]>=<around|\<langle\>|f,\<mathe\><rsup|-<around|\||t-s|\|>*A>C*g|\<rangle\>>>.
-      In particular <math|<around|(|\<Phi\><rsub|t>|)><rsub|t\<in\>\<bbb-R\>>>
-      is stationary and, for every <math|t>, <math|\<Phi\><rsub|t>> has a
-      version with values in <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
-      whose law is <math|\<mu\><rsub|m>>.
-
-      <item><math|\<Phi\>> is a mild and weak solution of<nbsp><eqref|eq:SQE>
-      with <math|V=0>: for <math|s\<less\>t> and
-      <math|h\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
-
-      <\gather*>
-        <tformat|<table|<row|<cell|\<Phi\><rsub|t><around|(|h|)>=\<Phi\><rsub|s><around|(|\<mathe\><rsup|-<around|(|t-s|)>*A>h|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|s,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>h|)>,>>|<row|<cell|\<Phi\><rsub|t><around|(|h|)>=\<Phi\><rsub|s><around|(|h|)>-<big|int><rsub|s><rsup|t>\<Phi\><rsub|r>*<around|(|A*h|)><space|0.17em>\<mathd\>r+<sqrt|2>*<space|0.17em>\<xi\>*<around*|(|<with|math-font|Bbb|1><rsub|<around|(|s,t|)>>\<otimes\>h|)>.>>>>
-      </gather*>
-
-      <item>Let <math|\<Psi\><rsub|0>> be an
-      <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>-valued random variable
-      independent of <math|\<xi\>>, and let <math|\<Psi\>> be the mild
-      solution started from <math|\<Psi\><rsub|0>>,
-
-      <\equation*>
-        \<Psi\><rsub|t><around|(|f|)>=\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|0,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>f|)>,<space|2em>t\<geqslant\>0.
-      </equation*>
-
-      Then <math|\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<Psi\><rsub|t><around|(|f|)>>|]>\<to\>\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>
-      as <math|t\<to\>\<infty\>> for every
-      <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>. Moreover
-      <math|\<mu\><rsub|m>> is invariant (<math|\<Psi\><rsub|0>\<sim\>\<mu\><rsub|m>>
-      implies <math|\<Psi\><rsub|t>\<sim\>\<mu\><rsub|m>> for all <math|t>),
-      and it is the unique invariant probability measure of the dynamics.
-    </enumerate-alpha>
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Parabolic stochastic quantisation of the GFF><label|thm:parabolic>
+      Let <math|\<xi\>> be space-time white noise on
+      <math|\<bbb-R\>\<times\>\<cal-M\>>. For <math|t\<in\>\<bbb-R\>> and
+      <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>> define
+  
+      <\equation>
+        <label|eq:stat-sol>\<Phi\><rsub|t><around|(|f|)>\<assign\><sqrt|2>*<space|0.17em>\<xi\><around|(|K<rsub|t,f>|)>,<space|2em>K<rsub|t,f><around|(|r,x|)>\<assign\><with|math-font|Bbb|1><rsub|<around|{|r\<less\>t|}>><around*|(|\<mathe\><rsup|-<around|(|t-r|)>*A>f|)><around|(|x|)>.
+      </equation>
+  
+      <\enumerate-alpha>
+        <item><math|\<Phi\>> is a centred Gaussian process with
+        <math|\<bbb-E\>*<around|[|\<Phi\><rsub|t><around|(|f|)>*\<Phi\><rsub|s><around|(|g|)>|]>=<around|\<langle\>|f,\<mathe\><rsup|-<around|\||t-s|\|>*A>C*g|\<rangle\>>>.
+        In particular <math|<around|(|\<Phi\><rsub|t>|)><rsub|t\<in\>\<bbb-R\>>>
+        is stationary and, for every <math|t>, <math|\<Phi\><rsub|t>> has a
+        version with values in <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
+        whose law is <math|\<mu\><rsub|m>>.
+  
+        <item><math|\<Phi\>> is a mild and weak solution of<nbsp><eqref|eq:SQE>
+        with <math|V=0>: for <math|s\<less\>t> and
+        <math|h\<in\>\<cal-S\><around|(|\<cal-M\>|)>>,
+  
+        <\gather*>
+          <tformat|<table|<row|<cell|\<Phi\><rsub|t><around|(|h|)>=\<Phi\><rsub|s><around|(|\<mathe\><rsup|-<around|(|t-s|)>*A>h|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|s,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>h|)>,>>|<row|<cell|\<Phi\><rsub|t><around|(|h|)>=\<Phi\><rsub|s><around|(|h|)>-<big|int><rsub|s><rsup|t>\<Phi\><rsub|r>*<around|(|A*h|)><space|0.17em>\<mathd\>r+<sqrt|2>*<space|0.17em>\<xi\>*<around*|(|<with|math-font|Bbb|1><rsub|<around|(|s,t|)>>\<otimes\>h|)>.>>>>
+        </gather*>
+  
+        <item>Let <math|\<Psi\><rsub|0>> be an
+        <math|\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>-valued random variable
+        independent of <math|\<xi\>>, and let <math|\<Psi\>> be the mild
+        solution started from <math|\<Psi\><rsub|0>>,
+  
+        <\equation*>
+          \<Psi\><rsub|t><around|(|f|)>=\<Psi\><rsub|0><around|(|\<mathe\><rsup|-t*A>f|)>+<sqrt|2>*<space|0.17em>\<xi\><around*|(|<with|math-font|Bbb|1><rsub|<around|(|0,t|)>><around|(|r|)><space|0.17em>\<mathe\><rsup|-<around|(|t-r|)>*A>f|)>,<space|2em>t\<geqslant\>0.
+        </equation*>
+  
+        Then <math|\<bbb-E\><around|[|\<mathe\><rsup|\<mathi\>\<Psi\><rsub|t><around|(|f|)>>|]>\<to\>\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|f,C*f|\<rangle\>>>>
+        as <math|t\<to\>\<infty\>> for every
+        <math|f\<in\>\<cal-S\><around|(|\<cal-M\>|)>>. Moreover
+        <math|\<mu\><rsub|m>> is invariant (<math|\<Psi\><rsub|0>\<sim\>\<mu\><rsub|m>>
+        implies <math|\<Psi\><rsub|t>\<sim\>\<mu\><rsub|m>> for all <math|t>),
+        and it is the unique invariant probability measure of the dynamics.
+      </enumerate-alpha>
+    </theorem>
+  </key-result>
 
   <\proof>
     (a) Since <math|A> is self-adjoint and commutes with
@@ -662,17 +664,19 @@
   for the moment that of <math|X>, and write
   <math|\<bbb-E\><rsub|t>\<assign\>\<bbb-E\><around|[|<space|0.17em>\<cdot\><space|0.17em>\|\<cal-F\><rsub|t>|]>>.
 
-  <\definition>
-    <dueto|<cite|BCG26>><label|def:obs> An <em|observable> is a real or
-    complex <math|<around|(|\<cal-F\><rsub|t>|)>>-martingale
-    <math|O=<around|(|O<rsub|t>|)><rsub|t\<geqslant\>0>>:
-    <math|O<rsub|s>=\<bbb-E\><rsub|s><around|[|O<rsub|t>|]>> for
-    <math|s\<leqslant\>t>. Its <em|expectation> is
-    <math|<around|\<langle\>|O|\<rangle\>>\<assign\>\<bbb-E\><around|[|O<rsub|t>|]>>,
-    which is independent of <math|t>. An <em|observable field> is a family
-    <math|<around|(|O<around|(|x|)>|)><rsub|x\<in\>\<cal-M\>>> of
-    observables.
-  </definition>
+  <\key-result>
+    <\definition>
+      <dueto|<cite|BCG26>><label|def:obs> An <em|observable> is a real or
+      complex <math|<around|(|\<cal-F\><rsub|t>|)>>-martingale
+      <math|O=<around|(|O<rsub|t>|)><rsub|t\<geqslant\>0>>:
+      <math|O<rsub|s>=\<bbb-E\><rsub|s><around|[|O<rsub|t>|]>> for
+      <math|s\<leqslant\>t>. Its <em|expectation> is
+      <math|<around|\<langle\>|O|\<rangle\>>\<assign\>\<bbb-E\><around|[|O<rsub|t>|]>>,
+      which is independent of <math|t>. An <em|observable field> is a family
+      <math|<around|(|O<around|(|x|)>|)><rsub|x\<in\>\<cal-M\>>> of
+      observables.
+    </definition>
+  </key-result>
 
   Every integrable <math|\<cal-F\><rsub|\<infty\>>>-measurable random
   variable <math|Y> gives a <em|closed> observable
@@ -964,26 +968,28 @@
     \<bbb-E\><rsub|s><around|[|O<rsup|1><rsub|t> O<rsup|2><rsub|t>|]>>.
   </definition>
 
-  <\proposition>
-    <label|prop:product>Let <math|O<rsup|1>,O<rsup|2>> be continuous
-    observables, square integrable on bounded intervals, with
-
-    <\equation>
-      <label|eq:prod-cond>\<bbb-E\>*<big|int><rsub|0><rsup|\<infty\>><around|\||\<mathd\><around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|s>|\|>\<less\>\<infty\>.
-    </equation>
-
-    Then <math|O<rsup|1> \<star\>*O<rsup|2>> exists and
-
-    <\equation>
-      <label|eq:prod-formula><around|(|O<rsup|1>
-      \<star\>*O<rsup|2>|)><rsub|t>=O<rsup|1><rsub|t>
-      O<rsup|2><rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|t><rsup|\<infty\>>\<mathd\><around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|s>|]>.
-    </equation>
-
-    In particular <math|<around|\<langle\>|O<rsup|1>
-    \<star\>*O<rsup|2>|\<rangle\>>=\<bbb-E\><around|[|O<rsup|1><rsub|0>
-    O<rsup|2><rsub|0>|]>+\<bbb-E\>*<around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|\<infty\>>>.
-  </proposition>
+  <\key-result>
+    <\proposition>
+      <label|prop:product>Let <math|O<rsup|1>,O<rsup|2>> be continuous
+      observables, square integrable on bounded intervals, with
+  
+      <\equation>
+        <label|eq:prod-cond>\<bbb-E\>*<big|int><rsub|0><rsup|\<infty\>><around|\||\<mathd\><around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|s>|\|>\<less\>\<infty\>.
+      </equation>
+  
+      Then <math|O<rsup|1> \<star\>*O<rsup|2>> exists and
+  
+      <\equation>
+        <label|eq:prod-formula><around|(|O<rsup|1>
+        \<star\>*O<rsup|2>|)><rsub|t>=O<rsup|1><rsub|t>
+        O<rsup|2><rsub|t>+\<bbb-E\><rsub|t><around*|[|<big|int><rsub|t><rsup|\<infty\>>\<mathd\><around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|s>|]>.
+      </equation>
+  
+      In particular <math|<around|\<langle\>|O<rsup|1>
+      \<star\>*O<rsup|2>|\<rangle\>>=\<bbb-E\><around|[|O<rsup|1><rsub|0>
+      O<rsup|2><rsub|0>|]>+\<bbb-E\>*<around|\<langle\>|O<rsup|1>,O<rsup|2>|\<rangle\>><rsub|\<infty\>>>.
+    </proposition>
+  </key-result>
 
   <\proof>
     <math|P<rsub|t>\<assign\>O<rsup|1><rsub|t>

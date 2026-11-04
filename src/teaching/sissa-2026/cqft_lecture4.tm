@@ -10,10 +10,6 @@
   Oxford>>>|<doc-date|SISSA, November 2026>>
 
   <abstract-data|<\abstract>
-    <strong|Joint work.> The results presented in Lectures<nbsp>4\U6 were
-    obtained recently, with the use of AI, in collaboration with Sarah-Jean
-    Meyer.
-
     Building on the scale decomposition and the stochastic observables of
     Lecture<nbsp>3, we introduce interactions. The interacting measure can be
     generated in three ways: as a renormalisation group decomposition of the
@@ -32,12 +28,17 @@
     Legendre transform of the log-partition function of the filter gives the
     effective average action, and its flow is the Wetterich equation. We then
     discuss stochastic observables, the field equation at every resolution,
-    whose noise is a filtered Gaussian noise and therefore sub-Gaussian, and
-    the passage to infinite volume. The appendices contain the algebra of the
+    whose noise is a filtered Gaussian noise and therefore sub-Gaussian,
+    whatever the interaction (an observation which, as far as we know, is
+    new, and which is the key input of the a priori estimates of
+    Lecture<nbsp>6), and the passage to infinite volume. The appendices contain the algebra of the
     flow, perturbation theory and counterterms, and the functional
     inequalities that follow from the localisation. The treatment is formal:
     we compute as if all objects were smooth and integrable, and we indicate
     where the real difficulties lie.
+
+    The results presented in Lectures<nbsp>4\U6 were obtained recently, with
+    the use of AI, in collaboration with Sarah-Jean Meyer.
   </abstract>>
 
   <\table-of-contents|toc>
@@ -57,263 +58,259 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>>
 
+    <with|par-left|3tab|<with|font-size|0.92|Acknowledgements
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-5>>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Main lecture>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-5><vspace|0.5fn>
+    <no-break><pageref|auto-6><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|7<space|2spc>Three
     ways to generate the interacting measure>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-6><vspace|0.5fn>
+    <no-break><pageref|auto-7><vspace|0.5fn>
 
     <with|par-left|1tab|7.1<space|2spc>Renormalisation: decomposing the
     covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-7>>
+    <no-break><pageref|auto-8>>
 
     <with|par-left|3tab|<with|font-size|0.92|The field as a process
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8>>>
+    <no-break><pageref|auto-9>>>
 
     <with|par-left|1tab|7.2<space|2spc>Optimal control: the Polchinski
     equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-10>>
+    <no-break><pageref|auto-11>>
 
     <with|par-left|3tab|<with|font-size|0.92|The control problem
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-11>>>
+    <no-break><pageref|auto-12>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Euler\ULagrange equation
     <with|mode|math|=> FBSDE <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-12>>>
+    <no-break><pageref|auto-13>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Entropy
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-13>>>
+    <no-break><pageref|auto-14>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Generating functionals
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14>>>
+    <no-break><pageref|auto-15>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Pontryagin's maximum principle
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15>>>
+    <no-break><pageref|auto-16>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The costate is a gradient
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16>>>
+    <no-break><pageref|auto-17>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The Hamiltonian of the field
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17>>>
+    <no-break><pageref|auto-18>>>
 
     <with|par-left|3tab|<with|font-size|0.92|With noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18>>>
+    <no-break><pageref|auto-19>>>
 
     <with|par-left|1tab|7.3<space|2spc>Filtering: measuring the field
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19>>
+    <no-break><pageref|auto-20>>
 
     <with|par-left|3tab|<with|font-size|0.92|The terminal field as a hidden
     signal <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20>>>
+    <no-break><pageref|auto-21>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Generation by denoising
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21>>>
+    <no-break><pageref|auto-22>>>
 
     <with|par-left|1tab|7.4<space|2spc>Where the three views meet
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>
+    <no-break><pageref|auto-23>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>
+    <no-break><pageref|auto-25>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|8<space|2spc>Force
     coordinates and potentials> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-25><vspace|0.5fn>
+    <no-break><pageref|auto-26><vspace|0.5fn>
 
     <with|par-left|1tab|8.1<space|2spc>The force and a Burgers equation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>
+    <no-break><pageref|auto-27>>
 
     <with|par-left|1tab|8.2<space|2spc>Removing the predictable drift
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28>>
+    <no-break><pageref|auto-29>>
 
     <with|par-left|1tab|8.3<space|2spc>The FBSDE in the forecast coordinate
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>
+    <no-break><pageref|auto-30>>
 
     <with|par-left|3tab|<with|font-size|0.92|A one-dimensional model: Burgers
     and Lax\UOleinik <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>>
+    <no-break><pageref|auto-31>>>
 
     <with|par-left|1tab|8.4<space|2spc>Conditional moments
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31>>
+    <no-break><pageref|auto-32>>
 
     <with|par-left|3tab|<with|font-size|0.92|Brascamp\ULieb and Cramér\URao
     bounds <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>>
+    <no-break><pageref|auto-33>>>
 
     <with|par-left|1tab|8.5<space|2spc>Potentials: the value function as a
     generator <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34>>
+    <no-break><pageref|auto-35>>
 
     <with|par-left|3tab|<with|font-size|0.92|Phase space and Lagrangian
     graphs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>>
+    <no-break><pageref|auto-36>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The free action generates the
     shear <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36>>>
+    <no-break><pageref|auto-37>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The value function generates the
     graph <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37>>>
+    <no-break><pageref|auto-38>>>
 
     <with|par-left|3tab|<with|font-size|0.92|No convexity is needed
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-38>>>
+    <no-break><pageref|auto-39>>>
 
     <with|par-left|1tab|8.6<space|2spc>The Legendre transform and Wetterich's
     equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-40>>
+    <no-break><pageref|auto-41>>
 
     <with|par-left|3tab|<with|font-size|0.92|Probabilistic meaning of
     <with|mode|math|\<Gamma\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42>>>
+    <no-break><pageref|auto-43>>>
 
     <with|par-left|1tab|8.7<space|2spc>Variational meaning and the tree level
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44>>
+    <no-break><pageref|auto-45>>
 
     <with|par-left|3tab|<with|font-size|0.92|Constrained free energies
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45>>>
+    <no-break><pageref|auto-46>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The tree level
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>>
+    <no-break><pageref|auto-47>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47>>
+    <no-break><pageref|auto-48>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Observables
     and field equations> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-48><vspace|0.5fn>
+    <no-break><pageref|auto-49><vspace|0.5fn>
 
     <with|par-left|1tab|9.1<space|2spc>Observables of the interacting theory
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-49>>
+    <no-break><pageref|auto-50>>
 
     <with|par-left|3tab|<with|font-size|0.92|Tangent observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-50>>>
+    <no-break><pageref|auto-51>>>
 
     <with|par-left|1tab|9.2<space|2spc>The field equation at every resolution
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-51>>
+    <no-break><pageref|auto-52>>
 
     <with|par-left|3tab|<with|font-size|0.92|The field equation for the
     forecast <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-52>>>
+    <no-break><pageref|auto-53>>>
 
     <with|par-left|1tab|9.3<space|2spc>Gaussian bounds for the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-53>>
+    <no-break><pageref|auto-54>>
 
     <with|par-left|3tab|<with|font-size|0.92|The roughness of the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-54>>>
+    <no-break><pageref|auto-55>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Control of the force
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-55>>>
+    <no-break><pageref|auto-56>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Consequence for
     <with|mode|math|\<Phi\><rsup|4><rsub|3>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-56>>>
+    <no-break><pageref|auto-57>>>
 
     <with|par-left|1tab|9.4<space|2spc>Infinite volume
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-57>>
+    <no-break><pageref|auto-58>>
 
     <with|par-left|3tab|<with|font-size|0.92|Differences of free energies
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-58>>>
+    <no-break><pageref|auto-59>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-59>>
+    <no-break><pageref|auto-60>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendices:
     additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-60><vspace|0.5fn>
+    <no-break><pageref|auto-61><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix
     A<space|2spc>Algebraic structure of the Polchinski flow>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-61><vspace|0.5fn>
+    <no-break><pageref|auto-62><vspace|0.5fn>
 
     <with|par-left|1tab|A.1<space|2spc>A semigroup of renormalisation maps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-62>>
+    <no-break><pageref|auto-63>>
 
     <with|par-left|1tab|A.2<space|2spc>Perturbation theory and counterterms
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-63>>
+    <no-break><pageref|auto-64>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-65>>
+    <no-break><pageref|auto-66>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix
     B<space|2spc>Stochastic localisation>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-66><vspace|0.5fn>
+    <no-break><pageref|auto-67><vspace|0.5fn>
 
     <with|par-left|3tab|<with|font-size|0.92|Why it is useful
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-67>>>
+    <no-break><pageref|auto-68>>>
 
     <with|par-left|1tab|B.1<space|2spc>Log-Sobolev inequalities along the
     localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-68>>
+    <no-break><pageref|auto-69>>
 
     <with|par-left|3tab|<with|font-size|0.92|Entropy as quadratic variation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-69>>>
+    <no-break><pageref|auto-70>>>
 
     <with|par-left|3tab|<with|font-size|0.92|In terms of the conditional
     covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-70>>>
+    <no-break><pageref|auto-71>>>
 
     <with|par-left|3tab|<with|font-size|0.92|An application: the KLS
     conjecture <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-71>>>
+    <no-break><pageref|auto-72>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The connection with
     Bauerschmidt\UBodineau <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-72>>>
+    <no-break><pageref|auto-73>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-73>>
+    <no-break><pageref|auto-74>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-74><vspace|0.5fn>
+    <no-break><pageref|auto-75><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
-
-  <strong|Origin of the results.> The results presented in Lectures<nbsp>4\U6
-  are joint work with Sarah-Jean Meyer, obtained recently with the use of AI.
-
-  <strong|Acknowledgements.> M.<nbsp>Gubinelli is partly supported by UK
-  Research and Innovation via the grant \PStochFields\Q EP/Z534328/1 and by
-  the Simons Collaboration on Probabilistic Paths to QFT. S.-J.<nbsp>Meyer is
-  supported by the grant \PStochFields\Q EP/Z534328/1.
 
   In Lecture<nbsp>3 we decomposed the Gaussian free field along a resolution
   parameter and took as primary objects the stochastic observables:
@@ -330,7 +327,10 @@
   then in terms of potentials, where the value function generates the
   canonical transformation and the Legendre transform leads to the Wetterich
   equation. Section<nbsp><reference|sec:observables> treats observables and
-  the field equation with its sub-Gaussian noise.
+  the field equation with its sub-Gaussian noise; that this noise is
+  sub-Gaussian whatever the interaction is, as far as we know, a new
+  observation of these notes, and it will be crucial for the a priori
+  estimates of the FBSDE in Lecture<nbsp>6.
   Appendices<nbsp><reference|sec:algebra>
   and<nbsp><reference|sec:localisation> are additional material, referred to
   from the main text where needed.
@@ -357,9 +357,18 @@
   <math|c>, and <math|\<mu\><rsup|Q>> is the centred Gaussian measure with
   covariance <math|Q>.
 
-  <assign|section-nr|6><section*|Main lecture>
+  \;
 
-  <section|Three ways to generate the interacting
+  <paragraph|Acknowledgements>The results presented in Lectures<nbsp>4\U6 are
+  joint work with Sarah-Jean Meyer, obtained recently with the use of AI.
+  M.<nbsp>Gubinelli is partly supported by UK Research and Innovation via the
+  grant \PStochFields\Q EP/Z534328/1 and by the Simons Collaboration on
+  Probabilistic Paths to QFT. S.-J.<nbsp>Meyer is supported by the grant
+  \PStochFields\Q EP/Z534328/1.
+
+  <section*|Main lecture>
+
+  <assign|section-nr|6><section|Three ways to generate the interacting
   measure><label|sec:polchinski>
 
   Fix a finite volume <math|\<cal-M\>=\<bbb-T\><rsup|d><rsub|L>> and a
@@ -484,22 +493,24 @@
   the field acquires a drift, and this drift is the effective force. The
   resulting process is the <strong|Polchinski process>.
 
-  <\theorem>
-    <dueto|FBSDE for the interacting field><label|thm:fbsde>
-    <with|font-shape|right|(formal)> Under <math|\<bbb-P\>> the process
-    <math|\<Phi\><rsub|t>\<assign\>X<rsub|t>>, the <em|interacting field at
-    resolution <math|t>>, solves
-
-    <\equation>
-      <label|eq:fbsde>\<mathd\>\<Phi\><rsub|t>=<wide|Q|\<dot\>><rsub|t>*<space|0.17em>F<rsub|t><space|0.17em>\<mathd\>t+<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsup|\<bbb-P\>><rsub|t>,<space|2em>F<rsub|t>=-\<mathD\>V<rsub|t><around|(|\<Phi\><rsub|t>|)>=\<bbb-E\><rsup|\<bbb-P\>><rsub|t>*<around*|[|-\<mathD\>V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>,
-    </equation>
-
-    with <math|\<Phi\><rsub|0>=0> and a <math|\<bbb-P\>>-cylindrical Brownian
-    motion <math|W<rsup|\<bbb-P\>>>. In particular the <em|effective force>
-    <math|<around|(|F<rsub|t>|)><rsub|t\<leqslant\>T>> is a
-    <math|\<bbb-P\>>-martingale: an observable field of the interacting
-    theory.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|FBSDE for the interacting field><label|thm:fbsde>
+      <with|font-shape|right|(formal)> Under <math|\<bbb-P\>> the process
+      <math|\<Phi\><rsub|t>\<assign\>X<rsub|t>>, the <em|interacting field at
+      resolution <math|t>>, solves
+  
+      <\equation>
+        <label|eq:fbsde>\<mathd\>\<Phi\><rsub|t>=<wide|Q|\<dot\>><rsub|t>*<space|0.17em>F<rsub|t><space|0.17em>\<mathd\>t+<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsup|\<bbb-P\>><rsub|t>,<space|2em>F<rsub|t>=-\<mathD\>V<rsub|t><around|(|\<Phi\><rsub|t>|)>=\<bbb-E\><rsup|\<bbb-P\>><rsub|t>*<around*|[|-\<mathD\>V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>,
+      </equation>
+  
+      with <math|\<Phi\><rsub|0>=0> and a <math|\<bbb-P\>>-cylindrical Brownian
+      motion <math|W<rsup|\<bbb-P\>>>. In particular the <em|effective force>
+      <math|<around|(|F<rsub|t>|)><rsub|t\<leqslant\>T>> is a
+      <math|\<bbb-P\>>-martingale: an observable field of the interacting
+      theory.
+    </theorem>
+  </key-result>
 
   <\proof>
     The density process is <math|M<rsub|t>\<assign\>\<bbb-E\><rsub|0><around|[|<space|0.17em>\<mathd\>\<bbb-P\>/<space|0.17em>\<mathd\>\<bbb-P\><rsub|0>\|\<cal-F\><rsub|t>|]>=Z<rsub|T><rsup|-1>\<mathe\><rsup|-V<rsub|t><around|(|X<rsub|t>|)>>>,
@@ -557,17 +568,19 @@
   function of this problem. Its equation in <math|t>, which we first derive
   directly from (<reference|eq:Vt>), is the dynamic programming equation.
 
-  <\theorem>
-    <dueto|Polchinski equation<nbsp><cite|Pol84>><label|thm:polchinski>
-    <with|font-shape|right|(formal)> <math|V<rsub|t>> solves the backward
-    Hamilton\UJacobi equation
-
-    <\equation>
-      <label|eq:polchinski>\<partial\><rsub|t>*V<rsub|t>=<tfrac|1|2><around|\<langle\>|\<mathD\>V<rsub|t>,<wide|Q|\<dot\>><rsub|t>*<space|0.17em>\<mathD\>V<rsub|t>|\<rangle\>>-<tfrac|1|2><math-up|Tr><around*|(|<wide|Q|\<dot\>><rsub|t>*<space|0.17em>\<mathD\><rsup|2>V<rsub|t>|)>,<space|2em>t\<in\><around|[|0,T|]>,
-    </equation>
-
-    with terminal condition <math|V<rsub|T>>.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Polchinski equation<nbsp><cite|Pol84>><label|thm:polchinski>
+      <with|font-shape|right|(formal)> <math|V<rsub|t>> solves the backward
+      Hamilton\UJacobi equation
+  
+      <\equation>
+        <label|eq:polchinski>\<partial\><rsub|t>*V<rsub|t>=<tfrac|1|2><around|\<langle\>|\<mathD\>V<rsub|t>,<wide|Q|\<dot\>><rsub|t>*<space|0.17em>\<mathD\>V<rsub|t>|\<rangle\>>-<tfrac|1|2><math-up|Tr><around*|(|<wide|Q|\<dot\>><rsub|t>*<space|0.17em>\<mathD\><rsup|2>V<rsub|t>|)>,<space|2em>t\<in\><around|[|0,T|]>,
+      </equation>
+  
+      with terminal condition <math|V<rsub|T>>.
+    </theorem>
+  </key-result>
 
   <\proof>
     <math|u<rsub|t>\<assign\>\<mathe\><rsup|-V<rsub|t>>=\<mathe\><rsup|<frac|1|2>*\<Delta\><rsub|Q<rsub|T,t>>>u<rsub|T>>
@@ -804,9 +817,15 @@
   Proposition<nbsp><reference|prop:marginals> says that the Polchinski
   process does exactly this for <math|\<nu\><rsub|T>>. What Eldan's
   construction adds to the picture of Section<nbsp><reference|sec:rg> is a
-  statistical reading: the Polchinski process is a noisy observation of its
-  own terminal value, and its drift is what an optimal filter learns from
-  this observation.
+  statistical reading:\ 
+
+  <\padded-center>
+    <\with|font-shape|italic>
+      the Polchinski process is a noisy observation of its own terminal
+      value, and its drift is what an optimal filter learns from this
+      observation.
+    </with>
+  </padded-center>
 
   <paragraph|The terminal field as a hidden signal> Assume that all the
   deterministic covariance operators are functions of <math|A>, hence
@@ -854,45 +873,56 @@
 
   be the <strong|regulator>.
 
-  <\proposition>
-    <dueto|Filtering, formal; a theorem at finite
-    cutoff><label|prop:filtering>
-
-    <\enumerate-alpha>
-      <item>The conditional law of <math|\<Phi\><rsub|T>> given
-      <math|\<cal-F\><rsub|t>> is the Bayesian posterior
-
-      <\equation>
-        <label|eq:posterior>\<mu\><rsub|t><rsup|\<Phi\><rsub|t>><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>\<Phi\><rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|\<mathd\>y|)>.
-      </equation>
-
-      It depends on the path only through <math|\<Phi\><rsub|t>>, a
-      sufficient statistic, and <math|\<cal-R\><rsub|t>> is the precision
-      gained on <math|\<Phi\><rsub|T>>.
-
-      <item>The Brownian motion <math|W> of the FBSDE<nbsp><eqref|eq:fbsde>
-      is the <strong|innovation> of the filter,
-      <math|W<rsub|t>=B<rsub|t>+<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsub|s><rsup|1/2>S<rsub|s><rsup|-1><around|(|\<Phi\><rsub|T>-\<psi\><rsub|s>|)><space|0.17em>\<mathd\>s>,
-      and the force is the posterior mean of the pull
-      in<nbsp><eqref|eq:observation>, per unit
-      <math|<wide|Q|\<dot\>><rsub|t>>:
-
-      <\equation*>
-        F<rsub|t>=\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)>|]>,<space|2em><text|i.e.><space|1em>\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>.
-      </equation*>
-
-      So<nbsp><eqref|eq:fbsde> is the observation
-      equation<nbsp><eqref|eq:observation> written in its own filtration.
-
-      <item>Every observable <math|O<rsub|t>=\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>>
-      solves the filter equation
-
-      <\equation*>
-        \<mathd\>O<rsub|t>=<around|\<langle\>|<math-up|Cov><rsub|t><around|(|G<around|(|\<Phi\><rsub|T>|)>,\<Phi\><rsub|T>|)>,S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>|\<rangle\>>,<space|2em><text|in
-        particular><space|1em>\<mathd\>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>.
-      </equation*>
-    </enumerate-alpha>
-  </proposition>
+  <\key-result>
+    <\proposition>
+      <dueto|Filtering, formal; a theorem at finite
+      cutoff><label|prop:filtering>
+  
+      <\enumerate-alpha>
+        <item>The conditional law of <math|\<Phi\><rsub|T>> given
+        <math|\<cal-F\><rsub|t>> is the Bayesian posterior
+  
+        <\equation>
+          <label|eq:posterior>\<mu\><rsub|t><rsup|\<Phi\><rsub|t>><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>\<Phi\><rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|\<mathd\>y|)>.
+        </equation>
+  
+        It depends on the path only through <math|\<Phi\><rsub|t>>, a
+        sufficient statistic, and <math|\<cal-R\><rsub|t>> is the precision
+        gained on <math|\<Phi\><rsub|T>>.
+  
+        <item>The Brownian motion <math|W> of the FBSDE<nbsp><eqref|eq:fbsde>
+        is the <strong|innovation> of the filter,
+  
+        <\equation*>
+          W<rsub|t>=B<rsub|t>+<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsub|s><rsup|1/2>S<rsub|s><rsup|-1><around|(|\<Phi\><rsub|T>-\<psi\><rsub|s>|)><space|0.17em>\<mathd\>s,
+        </equation*>
+  
+        and the force is the posterior mean of the pull
+        in<nbsp><eqref|eq:observation>, per unit
+        <math|<wide|Q|\<dot\>><rsub|t>>:
+  
+        <\equation*>
+          F<rsub|t>=\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)>|]>,<space|2em><text|i.e.><space|1em>\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>.
+        </equation*>
+  
+        So<nbsp><eqref|eq:fbsde> is the observation
+        equation<nbsp><eqref|eq:observation> written in its own filtration.
+  
+        <item>Every observable <math|O<rsub|t>=\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>>
+        solves the filter equation
+  
+        <\equation*>
+          \<mathd\>O<rsub|t>=<around|\<langle\>|<math-up|Cov><rsub|t><around|(|G<around|(|\<Phi\><rsub|T>|)>,\<Phi\><rsub|T>|)>,S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>|\<rangle\>>,
+        </equation*>
+  
+        in particular
+  
+        <\equation*>
+          \<mathd\>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>.
+        </equation*>
+      </enumerate-alpha>
+    </proposition>
+  </key-result>
 
   <\proof>
     (a) By Proposition<nbsp><reference|prop:marginals> the conditional law is
@@ -989,10 +1019,14 @@
   Gaussian reference <math|\<mu\><rsup|Q<rsub|t>>>, as
   <math|\<nu\><rsub|t>\<propto\>\<mathe\><rsup|-V<rsub|t>>\<mu\><rsup|Q<rsub|t>>>
   requires. The forecast is the optimal denoiser, and Tweedie's formula
-  <math|\<psi\><rsub|t>=J<rsub|t><rsup|-1><around|(|\<Phi\><rsub|t>+Q<rsub|t><around|(|1-J<rsub|t>|)>\<mathD\>log
-  p<rsub|t><around|(|\<Phi\><rsub|t>|)>|)>> is again
-  <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>. This is the
-  structure of score-based generative models (diffusion models), with
+
+  <\equation*>
+    \<psi\><rsub|t>=J<rsub|t><rsup|-1><around|(|\<Phi\><rsub|t>+Q<rsub|t><around|(|1-J<rsub|t>|)>\<mathD\>log
+    p<rsub|t><around|(|\<Phi\><rsub|t>|)>|)>
+  </equation*>
+
+  is again <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>. This is
+  the structure of score-based generative models (diffusion models), with
   <math|\<nu\><rsub|T>> as the data distribution, the blurring as the noising
   process and the Polchinski process as the generating dynamics.
 
@@ -1014,8 +1048,18 @@
 
     In this coordinate<nbsp><eqref|eq:posterior> is an exponential family
     with natural parameter <math|j<rsub|t>> and log-partition function
-    <math|\<cal-K\><rsub|t><around|(|j|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
-    y|)>>, and <math|\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t><around|(|x|)>>
+
+    <\equation*>
+      \<cal-K\><rsub|t><around|(|j|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
+      y|)>,
+    </equation*>
+
+    and
+
+    <\equation*>
+      \<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t><around|(|x|)>
+    </equation*>
+
     up to a function of <math|t>. Then <math|\<psi\><rsub|t>=\<mathD\>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>,
     <math|<math-up|Cov><rsub|t>=\<mathD\><rsup|2>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>,
     <math|<space|0.17em>\<mathd\> j<rsub|t>=<wide|\<cal-R\>|\<dot\>><rsub|t>\<psi\><rsub|t><space|0.17em>\<mathd\>
@@ -1038,6 +1082,34 @@
     construction<nbsp><cite|Eld13> uses an adapted control matrix. This is
     the profile of Lectures<nbsp>5\U6.
   </remark>
+
+  <paragraph|Literature: Polchinski, Eldan and diffusion models> The
+  objects of this section have been studied in three communities.
+  Stochastic localisation was introduced by Eldan<nbsp><cite|Eld13> for the
+  KLS conjecture and is surveyed in<nbsp><cite|Eld23>; Chen and
+  Eldan<nbsp><cite|CE22> made it a general framework, the localisation
+  schemes, for mixing bounds of Markov chains. That Eldan's process and the
+  Polchinski flow of the renormalisation group are the same object in
+  different coordinates is explained in the survey of Bauerschmidt,
+  Bodineau and Dagallier<nbsp><cite|BBD24>, who use the Polchinski flow to
+  prove log-Sobolev inequalities. On the generative side, diffusion models
+  were introduced in<nbsp><cite|SWMG15|HJA20> and given their SDE form, a
+  noising diffusion reversed in time by a drift built from the score,
+  in<nbsp><cite|SSK21>; the time-reversal formula goes back to
+  Anderson<nbsp><cite|And82> and Haussmann and Pardoux<nbsp><cite|HP86>,
+  and Tweedie's formula for the posterior mean is discussed
+  in<nbsp><cite|Efr11>. The two sides were connected by El<nbsp>Alaoui,
+  Montanari and Sellke<nbsp><cite|EMS22>, who run stochastic localisation
+  as a sampling algorithm, by El<nbsp>Alaoui and
+  Montanari<nbsp><cite|AM21>, who read it as the observation of a signal in
+  Gaussian noise (the filtering point of view of
+  Proposition<nbsp><reference|prop:filtering>), and by
+  Montanari<nbsp><cite|Mon23>, who presents denoising diffusions as
+  instances of stochastic localisation. On the physics side, Cotler and
+  Rezchikov showed that Polchinski's exact renormalisation group is a
+  gradient flow of the relative entropy in the sense of optimal
+  transport<nbsp><cite|CR23>, and proposed to read diffusion models as
+  inverse renormalisation group flows<nbsp><cite|CR23b>.
 
   <subsection|Where the three views meet><label|sec:meet>
 
@@ -1447,7 +1519,7 @@
   and recall the <em|regulator> of the filter:
 
   <\equation>
-    <label|eq:response>H<rsub|t><around|(|\<psi\>|)>\<assign\><around*|(|S<rsub|t><rsup|-1>+\<mathD\>\<cal-F\><rsub|t><around|(|\<psi\>|)>|)><rsup|-1>,<space|2em>\<cal-R\><rsub|t>\<assign\>S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>,<space|2em><wide|\<cal-R\>|\<dot\>><rsub|t>=S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1>\<geqslant\>0.
+    <label|eq:response>H<rsub|t><around|(|\<psi\>|)>\<assign\><around*|<left|(|2>|S<rsub|t><rsup|-1>+\<mathD\>\<cal-F\><rsub|t><around|(|\<psi\>|)>|<right|)|2>><rsup|-1>,<space|2em>\<cal-R\><rsub|t>\<assign\>S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>,<space|2em><wide|\<cal-R\>|\<dot\>><rsub|t>=S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1>\<geqslant\>0.
   </equation>
 
   Differentiating the two maps <math|x\<leftrightarrow\>\<psi\>> gives
@@ -1463,7 +1535,7 @@
     system<nbsp><eqref|eq:fbsde-system> becomes
 
     <\equation>
-      <label|eq:transformed-fbsde>\<mathd\>\<psi\><rsub|t>=H<rsub|t><around|(|\<psi\><rsub|t>|)>*<space|0.17em>S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>,<space|2em>\<cal-F\><rsub|t><around|(|\<psi\><rsub|t>|)>=\<bbb-E\><rsub|t>*<around*|[|\<mathD\>V<rsub|T><around|(|\<psi\><rsub|T>|)>|]>,
+      <label|eq:transformed-fbsde>\<mathd\>\<psi\><rsub|t>=H<rsub|t><around|(|\<psi\><rsub|t>|)>*<space|0.17em>S<rsub|t><rsup|-1>*<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>,<space|2em>\<cal-F\><rsub|t><around|(|\<psi\><rsub|t>|)>=\<bbb-E\><rsub|t><around*|<left|[|1>|\<mathD\>V<rsub|T><around|(|\<psi\><rsub|T>|)>|<right|]|1>>,
     </equation>
 
     with <math|\<psi\><rsub|0>=S<rsub|0>*F<rsub|0>=\<bbb-E\><around|[|\<Phi\><rsub|T>|]>>
@@ -1477,7 +1549,7 @@
     The decoupling field <math|\<cal-F\>> solves the pure diffusion equation
 
     <\equation>
-      <label|eq:transformed-flow>\<partial\><rsub|t>*\<cal-F\><rsub|t>+<tfrac|1|2><space|0.17em><math-up|Tr><around*|(|\<cal-C\><rsub|t>*<space|0.17em>\<mathD\><rsup|2>\<cal-F\><rsub|t>|)>=0,<space|2em>\<cal-F\><rsub|T>=\<mathD\>V<rsub|T>.
+      <label|eq:transformed-flow>\<partial\><rsub|t>*\<cal-F\><rsub|t>+<tfrac|1|2><space|0.17em><math-up|Tr><around*|<left|[|3>|\<cal-C\><rsub|t>*<space|0.17em>\<mathD\><rsup|2>\<cal-F\><rsub|t>|<right|]|3>>=0,<space|2em>\<cal-F\><rsub|T>=\<mathD\>V<rsub|T>.
     </equation>
   </theorem>
 
@@ -1678,7 +1750,7 @@
     happens already for <math|\<Phi\><rsup|4><rsub|2>>). The upper bound is
     lost, and at low resolution the conditional law may spread over several
     wells (Figure<nbsp><reference|fig:localisation>). This is the large-field
-    problem. In Lecture<nbsp>5 it is handled by a clipped approximate action,
+    problem. In Lecture<nbsp>5 it is handled by a clipped approximate force,
     whose global coercivity (Lemma<nbsp>12.1 there) is a bound of
     Brascamp\ULieb type on the response.
   </itemize>
@@ -1749,7 +1821,11 @@
 
   so <math|\<cal-A\><rsub|t>> is the generating function of the canonical
   transformation <math|\<Sigma\><rsub|t>>. Moreover
-  <math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|\<mathD\><rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>\<mathD\><rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>:
+
+  <\equation*>
+    \<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|\<mathD\><rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>\<mathD\><rsub|x>\<cal-A\><rsub|t>|\<rangle\>>:
+  </equation*>
+
   for every <math|\<psi\>> it solves the noiseless Polchinski equation, so it
   is a complete integral of that equation, with parameter <math|\<psi\>>.
   Jacobi's theorem then says that in the new coordinates the Hamiltonian
@@ -1855,28 +1931,34 @@
   <subsection|The Legendre transform and Wetterich's
   equation><label|sec:legendre>
 
-  <\theorem>
-    <dueto|Wetterich equation<nbsp><cite|Wet93>><label|thm:wetterich>
-    <with|font-shape|right|(formal)> <math|\<Gamma\><rsub|t>> solves
-
-    <\equation>
-      <label|eq:wetterich-Gamma>\<partial\><rsub|t>*\<Gamma\><rsub|t>=<tfrac|1|2><math-up|Tr><around*|[|<wide|\<cal-R\>|\<dot\>><rsub|t>*<around*|(|<around*|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>-S<rsub|t>|)>|]>,<space|2em>\<Gamma\><rsub|T>=V<rsub|T>.
-    </equation>
-
-    Equivalently, the <em|effective average action>
-    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t><around|(|\<psi\>|)>\<assign\>\<Gamma\><rsub|t><around|(|\<psi\>|)>+<frac|1|2>*<around|\<langle\>|\<psi\>,Q<rsub|T><rsup|-1>*\<psi\>|\<rangle\>>>
-    solves, up to a field-independent term,
-
-    <\equation>
-      <label|eq:wetterich>\<partial\><rsub|t>*\<Gamma\><rsup|<math-up|EAA>><rsub|t>=<tfrac|1|2><math-up|Tr><around*|[|<wide|\<cal-R\>|\<dot\>><rsub|t>*<around*|(|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>|]>.
-    </equation>
-
-    It interpolates between the bare action
-    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|T>=<frac|1|2>*<around|\<langle\>|\<psi\>,Q<rsub|T><rsup|-1>*\<psi\>|\<rangle\>>+V<rsub|T><around|(|\<psi\>|)>>
-    (<math|\<cal-R\><rsub|T>=\<infty\>>) and the 1PI effective action
-    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>> of <math|\<nu\><rsub|T>>
-    (<math|\<cal-R\><rsub|0>=0>).
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Wetterich equation<nbsp><cite|Wet93>><label|thm:wetterich>
+      <with|font-shape|right|(formal)> <math|\<Gamma\><rsub|t>> solves
+  
+      <\equation>
+        <label|eq:wetterich-Gamma>\<partial\><rsub|t>*\<Gamma\><rsub|t>=<tfrac|1|2><math-up|Tr><around|<left|[|3>|<wide|\<cal-R\>|\<dot\>><rsub|t>*<around*|<left|(|2>|<around*|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>-S<rsub|t>|<right|)|2>>|<right|]|3>>,<space|2em>\<Gamma\><rsub|T>=V<rsub|T>.
+      </equation>
+  
+      Equivalently, the <em|effective average action>
+      <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t><around|(|\<psi\>|)>\<assign\>\<Gamma\><rsub|t><around|(|\<psi\>|)>+<frac|1|2>*<around|\<langle\>|\<psi\>,Q<rsub|T><rsup|-1>*\<psi\>|\<rangle\>>>
+      solves, up to a field-independent term,
+  
+      <\equation>
+        <label|eq:wetterich>\<partial\><rsub|t>*\<Gamma\><rsup|<math-up|EAA>><rsub|t>=<tfrac|1|2><math-up|Tr><around*|<left|[|4>|<wide|\<cal-R\>|\<dot\>><rsub|t>*<around*|(|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>|<right|]|4>>.
+      </equation>
+  
+      It interpolates between the bare action
+  
+      <\equation*>
+        \<Gamma\><rsup|<math-up|EAA>><rsub|T>=<frac|1|2>*<around|\<langle\>|\<psi\>,Q<rsub|T><rsup|-1>*\<psi\>|\<rangle\>>+V<rsub|T><around|(|\<psi\>|)>
+      </equation*>
+  
+      (<math|\<cal-R\><rsub|T>=\<infty\>>) and the 1PI effective action
+      <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>> of <math|\<nu\><rsub|T>>
+      (<math|\<cal-R\><rsub|0>=0>).
+    </theorem>
+  </key-result>
 
   <\proof>
     Integrate<nbsp><eqref|eq:transformed-flow> in field space. With
@@ -2128,8 +2210,12 @@
   group<nbsp><cite|JL75|JL01>; for the link with large deviations see
   Section<nbsp>VIII of<nbsp><cite|JL01>. By Cramér's theorem the empirical
   mean of <math|N> independent samples of <math|\<nu\><rsub|T>> takes the
-  value <math|\<psi\>> with probability <math|\<approx\>exp
-  <around|(|-N*<around|(|\<Gamma\><rsup|<math-up|EAA>><rsub|0><around|(|\<psi\>|)>-V<rsub|0><around|(|0|)>|)>|)>>,
+  value <math|\<psi\>> with probability
+
+  <\equation*>
+    \<approx\>exp <around|(|-N*<around|(|\<Gamma\><rsup|<math-up|EAA>><rsub|0><around|(|\<psi\>|)>-V<rsub|0><around|(|0|)>|)>|)>,
+  </equation*>
+
   so <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>-V<rsub|0><around|(|0|)>> is
   the rate function of the large deviations of averages of the field. In
   particular <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>> is convex even when
@@ -2302,10 +2388,11 @@
   <section|Observables and field equations><label|sec:observables>
 
   In Lecture<nbsp>3 the primary objects were the stochastic observables,
-  martingales in the filtration of finite-resolution measurements
-  <cite|BCG26>. The filtering point of view makes this natural: an observable
-  is a posterior mean <math|\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>>.
-  We have already met the force <math|F<rsub|t>> and the forecast
+  martingales in the filtration of finite-resolution
+  measurements<nbsp><cite|BCG26>. The filtering point of view makes this
+  natural: an observable is a posterior mean
+  <math|\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>>. We have
+  already met the force <math|F<rsub|t>> and the forecast
   <math|\<psi\><rsub|t>>, and the field <math|\<Phi\><rsub|t>> is not one of
   them. This section develops the language for the interacting theory, and
   then draws the main consequence of the filter: a field equation at every
@@ -2365,30 +2452,32 @@
   is the <strong|noise observable> <math|\<eta\><rsub|t>> below. This gives a
   field equation at every resolution.
 
-  <\theorem>
-    <dueto|DS equations at resolution <math|t>><label|thm:DS-scale>
-    <with|font-shape|right|(formal)> The <em|noise observable>
-
-    <\equation>
-      <label|eq:eta>\<eta\><rsub|t>\<assign\>K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>
-    </equation>
-
-    is a centred <math|\<bbb-P\>>-martingale, with
-    <math|\<mathd\>\<eta\><rsub|t>=K*<wide|Q|\<dot\>><rsub|t><rsup|1/2>\<mathd\>W<rsub|t>-J<rsub|t><space|0.17em>\<mathd\>F<rsub|t>>.
-    For every <math|t\<leqslant\>T>, every <math|h> and every functional
-    <math|G>,
-
-    <\equation>
-      <label|eq:DS-scale>\<bbb-E\><rsup|\<bbb-P\>>*<around*|[|\<mathD\><rsub|J<rsub|t>*h>*G<around|(|\<Phi\><rsub|t>|)>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>|\<rangle\>>|]>.
-    </equation>
-
-    At <math|t=T> this is the Dyson\USchwinger equation of
-    <math|\<nu\><rsub|T>>,
-
-    <\equation>
-      <label|eq:DS-terminal>\<bbb-E\><rsup|\<nu\><rsub|T>>*<around|[|\<mathD\><rsub|h>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|T>><around*|[|G<space|0.17em><around|\<langle\>|h,K*\<varphi\>+\<mathD\>V<rsub|T><around|(|\<varphi\>|)>|\<rangle\>>|]>.
-    </equation>
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|DS equations at resolution <math|t>><label|thm:DS-scale>
+      <with|font-shape|right|(formal)> The <em|noise observable>
+  
+      <\equation>
+        <label|eq:eta>\<eta\><rsub|t>\<assign\>K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>
+      </equation>
+  
+      is a centred <math|\<bbb-P\>>-martingale, with
+      <math|\<mathd\>\<eta\><rsub|t>=K*<wide|Q|\<dot\>><rsub|t><rsup|1/2>\<mathd\>W<rsub|t>-J<rsub|t><space|0.17em>\<mathd\>F<rsub|t>>.
+      For every <math|t\<leqslant\>T>, every <math|h> and every functional
+      <math|G>,
+  
+      <\equation>
+        <label|eq:DS-scale>\<bbb-E\><rsup|\<bbb-P\>>*<around*|[|\<mathD\><rsub|J<rsub|t>*h>*G<around|(|\<Phi\><rsub|t>|)>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>|\<rangle\>>|]>.
+      </equation>
+  
+      At <math|t=T> this is the Dyson\USchwinger equation of
+      <math|\<nu\><rsub|T>>,
+  
+      <\equation>
+        <label|eq:DS-terminal>\<bbb-E\><rsup|\<nu\><rsub|T>>*<around|[|\<mathD\><rsub|h>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|T>><around*|[|G<space|0.17em><around|\<langle\>|h,K*\<varphi\>+\<mathD\>V<rsub|T><around|(|\<varphi\>|)>|\<rangle\>>|]>.
+      </equation>
+    </theorem>
+  </key-result>
 
   <\proof>
     From<nbsp><eqref|eq:fbsde> and <math|<wide|J|\<dot\>><rsub|t>=K*<wide|Q|\<dot\>><rsub|t>>,
@@ -2453,7 +2542,11 @@
   forced by the noise <math|\<eta\><rsub|t>>. For <math|\<Phi\><rsup|4>>, at
   finite <math|T> and to first order in <math|\<lambda\>>, the Wetterich
   equation<nbsp><eqref|eq:wetterich-Gamma> gives
-  <math|\<Gamma\><rsub|t>\<approx\>V<rsub|T>+<frac|1|2><math-up|Tr><around|(|S<rsub|t>\<mathD\><rsup|2>V<rsub|T>|)>>,
+
+  <\equation*>
+    \<Gamma\><rsub|t>\<approx\>V<rsub|T>+<frac|1|2><math-up|Tr><around|(|S<rsub|t>\<mathD\><rsup|2>V<rsub|T>|)>,
+  </equation*>
+
   and since <math|\<partial\><rsub|c>H<rsub|4>=-6*H<rsub|2>> and
   <math|c<rsub|T>-S<rsub|t><around|(|x,x|)>=c<rsub|t>>, the one loop moves
   the Wick ordering from the cutoff to the resolution:
@@ -2464,7 +2557,12 @@
   </equation*>
 
   The cube acts directly on the forecast, and pairing with
-  <math|\<psi\><rsub|t>> gives <math|<around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+4*\<lambda\>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>>,
+  <math|\<psi\><rsub|t>> gives
+
+  <\equation*>
+    <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+4*\<lambda\>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>,
+  </equation*>
+
   where <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>
   and <math|c<rsub|t>> is finite at fixed <math|t>: heuristically, a coercive
   bound up to a volume constant, driven by the sub-Gaussian noise of
@@ -2473,10 +2571,11 @@
   mass counterterm <math|\<gamma\><rsub|T>>, of order
   <math|\<lambda\><rsup|2>>, still does. In the form for
   <math|\<Phi\><rsub|t>> the same positivity is hidden behind
-  <math|\<mathe\><rsup|-A/t<rsup|2>>>. The integration by parts
-  formula<nbsp><eqref|eq:DS-scale> also transfers: a functional of
-  <math|\<psi\><rsub|t>> is a functional of <math|\<Phi\><rsub|t>>, and
-  <math|\<mathD\><rsub|x>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1>>
+  <math|\<mathe\><rsup|-A/t<rsup|2>>>.\ 
+
+  The integration by parts formula<nbsp><eqref|eq:DS-scale> also transfers: a
+  functional of <math|\<psi\><rsub|t>> is a functional of
+  <math|\<Phi\><rsub|t>>, and <math|\<mathD\><rsub|x>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1>>
   (Proposition<nbsp><reference|prop:H-cov>), so
 
   <\equation*>
@@ -2506,7 +2605,7 @@
     Then
 
     <\equation>
-      \<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|t>,h|\<rangle\>>|]>=\<bbb-E\><big|sum><rsub|i=1><rsup|k>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|t<rsub|i>>h,h<rsub|i>|\<rangle\>>,<label|eq:DS-path>
+      \<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|t>,h|\<rangle\>>|]>=\<bbb-E\><big|sum><rsub|i=1><rsup|k><around*|(|\<partial\><rsub|i>g|)><around*|(|\<cdots\>|)><around|\<langle\>|J<rsub|t<rsub|i>>h,h<rsub|i>|\<rangle\>>,<label|eq:DS-path>
     </equation>
 
     that is, the derivative of <math|G> in the direction which shifts the
@@ -2621,7 +2720,12 @@
     Write <math|\<Sigma\><rsub|t>=Q<rsub|t>*<around|(|1-J<rsub|t>|)>>, so
     that <math|J<rsub|t>\<Sigma\><rsub|t><rsup|-1>=S<rsub|t><rsup|-1>>, and
     <math|g> for the density of <math|N<around|(|0,\<Sigma\><rsub|t>|)>>.
-    Then <math|p<rsub|t><around|(|a|)>=\<bbb-E\>*g<around|(|a-J<rsub|t>*\<Phi\><rsub|T>|)>>
+    Then
+
+    <\equation*>
+      p<rsub|t><around|(|a|)>=\<bbb-E\>*g<around|(|a-J<rsub|t>*\<Phi\><rsub|T>|)>
+    </equation*>
+
     and <math|\<mathD\>g<around|(|z|)>=-\<Sigma\><rsub|t><rsup|-1>*z*<space|0.17em>g<around|(|z|)>>,
     so
 
@@ -2652,10 +2756,25 @@
   this holds with terminal resolution <math|T=\<infty\>>, before any
   continuum measure is constructed.
 
+  <paragraph|A new observation> The bound<nbsp><eqref|eq:noise-mgf> is, as
+  far as we know, a new observation of these notes. Its proof is elementary,
+  conditional Jensen applied to a Gaussian, but its consequence is not: at
+  every resolution the field solves an elliptic equation
+  (Theorem<nbsp><reference|thm:DS-scale>) whose noise has the tails of a
+  Gaussian with covariance the regulator <math|\<cal-R\><rsub|t>>, uniformly
+  in the interaction and in the cutoff, without any convexity or smallness
+  assumption. The interaction enters the noise only through the
+  conditioning, and conditioning cannot make Gaussian tails worse. This is
+  what makes the field equation usable beyond perturbation theory, and it
+  will be crucial for the a priori estimates of the FBSDE in
+  Lecture<nbsp>6: there the large fields of the forward equation are
+  controlled by the coercivity of the cube against a noise whose tails are
+  known in advance.
+
   <paragraph|The roughness of the noise> Compare spectral densities for the
   heat profile with <math|T=\<infty\>> and
   <math|A=<around|\||k|\|><rsup|2>+m<rsup|2>>: white noise <math|\<xi\>> has
-  density <math|1>, the GFF has <math|A<rsup|-1>>, the free noise
+  density <math|1>, the GFF has <math|A<rsup|-1>>, the GFF noise
   <math|\<eta\><rsub|t>=A*X<rsub|t>> has <math|A*\<mathe\><rsup|-A/t<rsup|2>>>,
   and the bound of Proposition<nbsp><reference|prop:subgauss> is
 
@@ -2672,7 +2791,7 @@
   is the size at scale <math|1/t> of a distribution of regularity
   <math|-1-d/2> (<math|-5/2> in <math|d=3>): seen at its own resolution, the
   noise is one derivative rougher than white noise (<math|-d/2>) and two
-  rougher than the GFF (<math|1-d/2>), the same as the free noise
+  rougher than the GFF (<math|1-d/2>), the same as the GFF noise
   <math|A*\<varphi\>=A<rsup|1/2>*\<xi\>> of the Dyson\USchwinger equation,
   whatever the interaction. It is not a bound on a limit distribution:
   <math|\<eta\><rsub|t>> is a martingale in <math|t>, not the smoothing of a
@@ -3591,6 +3710,13 @@
     <math|\<varphi\><rsup|4><rsub|3>>-quantum field model. <em|Infin. Dimens.
     Anal. Quantum Probab. Relat. Top.> 9 (2006), 149\U154.
 
+    <bibitem*|AM21><label|bib-AM21>A.<nbsp>El<nbsp>Alaoui, A.<nbsp>Montanari. An
+    information-theoretic view of stochastic localization. Preprint,
+    arXiv:2109.00709, 2021.
+
+    <bibitem*|And82><label|bib-And82>B.<nbsp>D.<nbsp>O.<nbsp>Anderson. Reverse-time diffusion
+    equation models. <em|Stochastic Process. Appl.> 12 (1982), 313\U326.
+
     <bibitem*|BB19><label|bib-BB19>R.<nbsp>Bauerschmidt, T.<nbsp>Bodineau. A
     very simple proof of the LSI for high temperature spin systems. <em|J.
     Funct. Anal.> 276 (2019), 2582\U2588.
@@ -3650,6 +3776,15 @@
     bound of the isoperimetric coefficient in the KLS conjecture. <em|Geom.
     Funct. Anal.> 31 (2021), 34\U61.
 
+    <bibitem*|CR23><label|bib-CR23>J.<nbsp>Cotler, S.<nbsp>Rezchikov. Renormalization group
+    flow as optimal transport. <em|Phys. Rev. D> 108 (2023), 025003.
+
+    <bibitem*|CR23b><label|bib-CR23b>J.<nbsp>Cotler, S.<nbsp>Rezchikov. Renormalizing diffusion
+    models. Preprint, arXiv:2308.12355, 2023.
+
+    <bibitem*|Efr11><label|bib-Efr11>B.<nbsp>Efron. Tweedie's formula and selection bias.
+    <em|J. Amer. Statist. Assoc.> 106 (2011), 1602\U1614.
+
     <bibitem*|Eld13><label|bib-Eld13>R.<nbsp>Eldan. Thin shell implies
     spectral gap up to polylog via a stochastic localization scheme.
     <em|Geom. Funct. Anal.> 23 (2013), 532\U569.
@@ -3675,6 +3810,13 @@
     <bibitem*|GJS75><label|bib-GJS75>J.<nbsp>Glimm, A.<nbsp>Jaffe,
     T.<nbsp>Spencer. Phase transitions for <math|\<varphi\><rsup|4><rsub|2>>
     quantum fields. <em|Comm. Math. Phys.> 45 (1975), 203\U216.
+
+    <bibitem*|HJA20><label|bib-HJA20>J.<nbsp>Ho, A.<nbsp>Jain, P.<nbsp>Abbeel. Denoising
+    diffusion probabilistic models. In <em|Advances in Neural Information
+    Processing Systems 33 (NeurIPS 2020)>, 2020. arXiv:2006.11239.
+
+    <bibitem*|HP86><label|bib-HP86>U.<nbsp>G.<nbsp>Haussmann, É.<nbsp>Pardoux. Time reversal of
+    diffusions. <em|Ann. Probab.> 14 (1986), 1188\U1205.
 
     <bibitem*|JL01><label|bib-JL01>G.<nbsp>Jona-Lasinio. Renormalization
     group and probability theory. <em|Phys. Rep.> 352 (2001), 439\U458.
@@ -3724,6 +3866,18 @@
     <bibitem*|Sal99><label|bib-Sal99>M.<nbsp>Salmhofer. <em|Renormalization:
     An Introduction>. Springer, 1999.
 
+    <bibitem*|SSK21><label|bib-SSK21>Y.<nbsp>Song, J.<nbsp>Sohl-Dickstein, D.<nbsp>P.<nbsp>Kingma,
+    A.<nbsp>Kumar, S.<nbsp>Ermon, B.<nbsp>Poole. Score-based generative
+    modeling through stochastic differential equations. In
+    <em|International Conference on Learning Representations (ICLR)>, 2021.
+    arXiv:2011.13456.
+
+    <bibitem*|SWMG15><label|bib-SWMG15>J.<nbsp>Sohl-Dickstein, E.<nbsp>A.<nbsp>Weiss,
+    N.<nbsp>Maheswaranathan, S.<nbsp>Ganguli. Deep unsupervised learning
+    using nonequilibrium thermodynamics. In <em|Proceedings of the 32nd
+    International Conference on Machine Learning (ICML)>, 2015.
+    arXiv:1503.03585.
+
     <bibitem*|Wet93><label|bib-Wet93>C.<nbsp>Wetterich. Exact evolution
     equation for the effective potential. <em|Phys. Lett. B> 301 (1993),
     90\U94.
@@ -3753,79 +3907,80 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|3>>
-    <associate|auto-10|<tuple|7.2|6>>
-    <associate|auto-11|<tuple|1|6>>
-    <associate|auto-12|<tuple|2|7>>
-    <associate|auto-13|<tuple|3|7>>
-    <associate|auto-14|<tuple|4|7>>
-    <associate|auto-15|<tuple|5|7>>
-    <associate|auto-16|<tuple|6|7>>
-    <associate|auto-17|<tuple|7|8>>
-    <associate|auto-18|<tuple|8|8>>
-    <associate|auto-19|<tuple|7.3|8>>
+    <associate|auto-10|<tuple|7.1|6>>
+    <associate|auto-11|<tuple|7.2|6>>
+    <associate|auto-12|<tuple|1|7>>
+    <associate|auto-13|<tuple|2|7>>
+    <associate|auto-14|<tuple|3|7>>
+    <associate|auto-15|<tuple|4|7>>
+    <associate|auto-16|<tuple|5|7>>
+    <associate|auto-17|<tuple|6|8>>
+    <associate|auto-18|<tuple|7|8>>
+    <associate|auto-19|<tuple|8|8>>
     <associate|auto-2|<tuple|1|3>>
-    <associate|auto-20|<tuple|1|8>>
-    <associate|auto-21|<tuple|2|10>>
-    <associate|auto-22|<tuple|7.4|10>>
-    <associate|auto-23|<tuple|7.2|11>>
+    <associate|auto-20|<tuple|7.3|8>>
+    <associate|auto-21|<tuple|1|10>>
+    <associate|auto-22|<tuple|2|10>>
+    <associate|auto-23|<tuple|7.4|11>>
     <associate|auto-24|<tuple|7.2|11>>
-    <associate|auto-25|<tuple|8|12>>
-    <associate|auto-26|<tuple|8.1|12>>
+    <associate|auto-25|<tuple|7.2|12>>
+    <associate|auto-26|<tuple|8|12>>
     <associate|auto-27|<tuple|8.1|12>>
-    <associate|auto-28|<tuple|8.2|13>>
-    <associate|auto-29|<tuple|8.3|13>>
+    <associate|auto-28|<tuple|8.1|13>>
+    <associate|auto-29|<tuple|8.2|13>>
     <associate|auto-3|<tuple|2|3>>
-    <associate|auto-30|<tuple|1|14>>
-    <associate|auto-31|<tuple|8.4|15>>
-    <associate|auto-32|<tuple|1|16>>
-    <associate|auto-33|<tuple|8.2|16>>
-    <associate|auto-34|<tuple|8.5|16>>
-    <associate|auto-35|<tuple|1|17>>
-    <associate|auto-36|<tuple|2|17>>
-    <associate|auto-37|<tuple|3|17>>
-    <associate|auto-38|<tuple|4|18>>
-    <associate|auto-39|<tuple|8.3|18>>
+    <associate|auto-30|<tuple|8.3|14>>
+    <associate|auto-31|<tuple|1|15>>
+    <associate|auto-32|<tuple|8.4|16>>
+    <associate|auto-33|<tuple|1|16>>
+    <associate|auto-34|<tuple|8.2|16>>
+    <associate|auto-35|<tuple|8.5|17>>
+    <associate|auto-36|<tuple|1|17>>
+    <associate|auto-37|<tuple|2|17>>
+    <associate|auto-38|<tuple|3|18>>
+    <associate|auto-39|<tuple|4|18>>
     <associate|auto-4|<tuple|3|3>>
-    <associate|auto-40|<tuple|8.6|18>>
-    <associate|auto-41|<tuple|8.4|19>>
-    <associate|auto-42|<tuple|1|20>>
-    <associate|auto-43|<tuple|8.5|20>>
-    <associate|auto-44|<tuple|8.7|20>>
-    <associate|auto-45|<tuple|1|20>>
-    <associate|auto-46|<tuple|2|21>>
-    <associate|auto-47|<tuple|8.17|21>>
-    <associate|auto-48|<tuple|9|22>>
-    <associate|auto-49|<tuple|9.1|22>>
-    <associate|auto-5|<tuple|3|3>>
-    <associate|auto-50|<tuple|1|22>>
-    <associate|auto-51|<tuple|9.2|22>>
-    <associate|auto-52|<tuple|1|23>>
-    <associate|auto-53|<tuple|9.3|24>>
-    <associate|auto-54|<tuple|1|25>>
-    <associate|auto-55|<tuple|2|25>>
-    <associate|auto-56|<tuple|3|26>>
-    <associate|auto-57|<tuple|9.4|26>>
-    <associate|auto-58|<tuple|1|26>>
-    <associate|auto-59|<tuple|9.15|27>>
-    <associate|auto-6|<tuple|7|3>>
-    <associate|auto-60|<tuple|9.5|28>>
-    <associate|auto-61|<tuple|A|28>>
-    <associate|auto-62|<tuple|A.1|28>>
-    <associate|auto-63|<tuple|A.2|28>>
-    <associate|auto-64|<tuple|A.1|29>>
-    <associate|auto-65|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
-    <associate|auto-66|<tuple|B|30>>
-    <associate|auto-67|<tuple|1|30>>
-    <associate|auto-68|<tuple|B.1|30>>
-    <associate|auto-69|<tuple|1|30>>
-    <associate|auto-7|<tuple|7.1|4>>
-    <associate|auto-70|<tuple|2|31>>
-    <associate|auto-71|<tuple|3|32>>
-    <associate|auto-72|<tuple|4|32>>
-    <associate|auto-73|<tuple|<with|mode|<quote|math>|\<bullet\>>|33>>
-    <associate|auto-74|<tuple|B.2|33>>
-    <associate|auto-8|<tuple|1|5>>
-    <associate|auto-9|<tuple|7.1|5>>
+    <associate|auto-40|<tuple|8.3|18>>
+    <associate|auto-41|<tuple|8.6|19>>
+    <associate|auto-42|<tuple|8.4|20>>
+    <associate|auto-43|<tuple|1|20>>
+    <associate|auto-44|<tuple|8.5|20>>
+    <associate|auto-45|<tuple|8.7|20>>
+    <associate|auto-46|<tuple|1|21>>
+    <associate|auto-47|<tuple|2|21>>
+    <associate|auto-48|<tuple|8.17|22>>
+    <associate|auto-49|<tuple|9|22>>
+    <associate|auto-5|<tuple|4|3>>
+    <associate|auto-50|<tuple|9.1|22>>
+    <associate|auto-51|<tuple|1|22>>
+    <associate|auto-52|<tuple|9.2|23>>
+    <associate|auto-53|<tuple|1|24>>
+    <associate|auto-54|<tuple|9.3|25>>
+    <associate|auto-55|<tuple|1|25>>
+    <associate|auto-56|<tuple|2|26>>
+    <associate|auto-57|<tuple|3|26>>
+    <associate|auto-58|<tuple|9.4|26>>
+    <associate|auto-59|<tuple|1|27>>
+    <associate|auto-6|<tuple|4|3>>
+    <associate|auto-60|<tuple|9.15|28>>
+    <associate|auto-61|<tuple|9.5|28>>
+    <associate|auto-62|<tuple|A|28>>
+    <associate|auto-63|<tuple|A.1|28>>
+    <associate|auto-64|<tuple|A.2|29>>
+    <associate|auto-65|<tuple|A.1|29>>
+    <associate|auto-66|<tuple|<with|mode|<quote|math>|\<bullet\>>|30>>
+    <associate|auto-67|<tuple|B|30>>
+    <associate|auto-68|<tuple|1|30>>
+    <associate|auto-69|<tuple|B.1|30>>
+    <associate|auto-7|<tuple|7|4>>
+    <associate|auto-70|<tuple|1|31>>
+    <associate|auto-71|<tuple|2|32>>
+    <associate|auto-72|<tuple|3|32>>
+    <associate|auto-73|<tuple|4|33>>
+    <associate|auto-74|<tuple|<with|mode|<quote|math>|\<bullet\>>|33>>
+    <associate|auto-75|<tuple|B.2|?>>
+    <associate|auto-8|<tuple|7.1|5>>
+    <associate|auto-9|<tuple|1|5>>
     <associate|bib-ALZ06|<tuple|ALZ06|33>>
     <associate|bib-BB19|<tuple|BB19|33>>
     <associate|bib-BB21|<tuple|BB21|33>>
@@ -4151,7 +4306,7 @@
       determined backward from the terminal interaction. It is shown to first
       order in <with|mode|<quote|math>|\<lambda\>>, where it is the Wick cube
       <with|mode|<quote|math>|-4*\<lambda\>*H<rsub|3>*<around|(|\<Phi\><rsub|t>;c<rsub|t>|)>>,
-      and each panel is in its own units.>|<pageref|auto-9>>
+      and each panel is in its own units.>|<pageref|auto-10>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|7.2>||A
       zero-dimensional Polchinski process (Exercise
@@ -4165,7 +4320,7 @@
       which split between the two wells (stochastic localisation). Right:
       histogram of <with|mode|<quote|math>|\<Phi\><rsub|T>>
       (<with|mode|<quote|math>|2\<cdot\>10<rsup|4>> paths) against the
-      density of <with|mode|<quote|math>|\<nu\><rsub|T>>.>|<pageref|auto-23>>
+      density of <with|mode|<quote|math>|\<nu\><rsub|T>>.>|<pageref|auto-24>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.1>||The Polchinski
       equation <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-shape|<quote|right>|(<reference|eq:polchinski>)>
@@ -4178,7 +4333,7 @@
       The first term joins two blobs and makes a tree; the second closes a
       loop on one blob. Integrating from <with|mode|<quote|math>|V<rsub|T>>
       and iterating generates the connected Feynman graphs, with lines
-      <with|mode|<quote|math>|Q<rsub|T,t>>.>|<pageref|auto-27>>
+      <with|mode|<quote|math>|Q<rsub|T,t>>.>|<pageref|auto-28>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.2>||Stochastic
       localisation for a two-component field:
@@ -4196,7 +4351,7 @@
       <with|mode|<quote|math>|<with|mode|<quote|text>|<with|font-family|<quote|rm>|font-shape|<quote|right>|Cov>><rsub|t>>.
       At low resolution the conditional law covers both wells; as
       <with|mode|<quote|math>|t> grows it localises on one of
-      them.>|<pageref|auto-33>>
+      them.>|<pageref|auto-34>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.3>||The
       zero-dimensional model of Figure <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><reference|fig:polchinski-0d>
@@ -4208,7 +4363,7 @@
       Right: the bare potential <with|mode|<quote|math>|V<rsub|T>>, the
       effective potential <with|mode|<quote|math>|V<rsub|t>> and
       <with|mode|<quote|math>|\<Gamma\><rsub|t>>, each shifted to have
-      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-39>>
+      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-40>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.4>||The Wetterich
       equation <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-shape|<quote|right>|(<reference|eq:wetterich>)>
@@ -4221,14 +4376,14 @@
       has been absorbed by the Legendre transform. Each field derivative
       brings down a higher vertex, so the hierarchy does not close at a
       finite order. The bottom row expands the response around
-      <with|mode|<quote|math>|S<rsub|t>>.>|<pageref|auto-41>>
+      <with|mode|<quote|math>|S<rsub|t>>.>|<pageref|auto-42>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.5>||The regulator
       <with|mode|<quote|math>|\<cal-R\><rsub|t>> of the heat profile
       (<with|mode|<quote|math>|T=\<infty\>>, <with|mode|<quote|math>|m=1>):
       close to the mass term <with|mode|<quote|math>|t<rsup|2>> (dotted) on
       the modes <with|mode|<quote|math>|<around|\||k|\|>\<ll\>t>,
-      exponentially small on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-43>>
+      exponentially small on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-44>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|A.1>||The terms
       <with|mode|<quote|math>|k=1,2,3,4> of
@@ -4239,7 +4394,7 @@
       in <with|mode|<quote|math>|d=3>, only the sunset,
       <with|mode|<quote|math>|k=3>, is a non-integrable divergence for the
       <with|mode|<quote|math>|:\<varphi\><rsup|2>:> term; it is cancelled by
-      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-64>>
+      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-65>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -4258,260 +4413,264 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>>
 
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Acknowledgements
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Main
       lecture> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.5fn>
+      <no-break><pageref|auto-6><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Three
       ways to generate the interacting measure>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
+      <no-break><pageref|auto-7><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|7.1<space|2spc>Renormalisation: decomposing
       the covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
+      <no-break><pageref|auto-8>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The field as a
       process <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>>
+      <no-break><pageref|auto-9>>>
 
       <with|par-left|<quote|1tab>|7.2<space|2spc>Optimal control: the
       Polchinski equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10>>
+      <no-break><pageref|auto-11>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The control
       problem <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11>>>
+      <no-break><pageref|auto-12>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Euler\ULagrange
       equation <with|mode|<quote|math>|=> FBSDE
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-12>>>
+      <no-break><pageref|auto-13>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Entropy
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-13>>>
+      <no-break><pageref|auto-14>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Generating
       functionals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-14>>>
+      <no-break><pageref|auto-15>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Pontryagin's
       maximum principle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15>>>
+      <no-break><pageref|auto-16>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The costate is
       a gradient <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-16>>>
+      <no-break><pageref|auto-17>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The
       Hamiltonian of the field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17>>>
+      <no-break><pageref|auto-18>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|With noise
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18>>>
+      <no-break><pageref|auto-19>>>
 
       <with|par-left|<quote|1tab>|7.3<space|2spc>Filtering: measuring the
       field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19>>
+      <no-break><pageref|auto-20>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The terminal
       field as a hidden signal <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20>>>
+      <no-break><pageref|auto-21>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Generation by
       denoising <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>>
+      <no-break><pageref|auto-22>>>
 
       <with|par-left|<quote|1tab>|7.4<space|2spc>Where the three views meet
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22>>
+      <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-25>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Force
       coordinates and potentials> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-25><vspace|0.5fn>
+      <no-break><pageref|auto-26><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|8.1<space|2spc>The force and a Burgers
       equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-26>>
+      <no-break><pageref|auto-27>>
 
       <with|par-left|<quote|1tab>|8.2<space|2spc>Removing the predictable
       drift <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28>>
+      <no-break><pageref|auto-29>>
 
       <with|par-left|<quote|1tab>|8.3<space|2spc>The FBSDE in the forecast
       coordinate <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-30>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|A
       one-dimensional model: Burgers and Lax\UOleinik
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>>
+      <no-break><pageref|auto-31>>>
 
       <with|par-left|<quote|1tab>|8.4<space|2spc>Conditional moments
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-32>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Brascamp\ULieb
       and Cramér\URao bounds <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>>
+      <no-break><pageref|auto-33>>>
 
       <with|par-left|<quote|1tab>|8.5<space|2spc>Potentials: the value
       function as a generator <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34>>
+      <no-break><pageref|auto-35>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Phase space
       and Lagrangian graphs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35>>>
+      <no-break><pageref|auto-36>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The free
       action generates the shear <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36>>>
+      <no-break><pageref|auto-37>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The value
       function generates the graph <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37>>>
+      <no-break><pageref|auto-38>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|No convexity
       is needed <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38>>>
+      <no-break><pageref|auto-39>>>
 
       <with|par-left|<quote|1tab>|8.6<space|2spc>The Legendre transform and
       Wetterich's equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40>>
+      <no-break><pageref|auto-41>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Probabilistic
       meaning of <with|mode|<quote|math>|\<Gamma\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>>>
+      <no-break><pageref|auto-43>>>
 
       <with|par-left|<quote|1tab>|8.7<space|2spc>Variational meaning and the
       tree level <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44>>
+      <no-break><pageref|auto-45>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Constrained
       free energies <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45>>>
+      <no-break><pageref|auto-46>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The tree level
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>>
+      <no-break><pageref|auto-47>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>
+      <no-break><pageref|auto-48>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Observables
       and field equations> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48><vspace|0.5fn>
+      <no-break><pageref|auto-49><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|9.1<space|2spc>Observables of the
       interacting theory <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49>>
+      <no-break><pageref|auto-50>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Tangent
       observables <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>>
+      <no-break><pageref|auto-51>>>
 
       <with|par-left|<quote|1tab>|9.2<space|2spc>The field equation at every
       resolution <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51>>
+      <no-break><pageref|auto-52>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The field
       equation for the forecast <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-52>>>
+      <no-break><pageref|auto-53>>>
 
       <with|par-left|<quote|1tab>|9.3<space|2spc>Gaussian bounds for the
       noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-54>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The roughness
       of the noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54>>>
+      <no-break><pageref|auto-55>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Control of the
       force <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>>
+      <no-break><pageref|auto-56>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Consequence
       for <with|mode|<quote|math>|\<Phi\><rsup|4><rsub|3>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-56>>>
+      <no-break><pageref|auto-57>>>
 
       <with|par-left|<quote|1tab>|9.4<space|2spc>Infinite volume
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57>>
+      <no-break><pageref|auto-58>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Differences of
       free energies <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>>
+      <no-break><pageref|auto-59>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-59>>
+      <no-break><pageref|auto-60>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendices:
       additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-60><vspace|0.5fn>
+      <no-break><pageref|auto-61><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       A<space|2spc>Algebraic structure of the Polchinski flow>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-61><vspace|0.5fn>
+      <no-break><pageref|auto-62><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|A.1<space|2spc>A semigroup of
       renormalisation maps <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-62>>
+      <no-break><pageref|auto-63>>
 
       <with|par-left|<quote|1tab>|A.2<space|2spc>Perturbation theory and
       counterterms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-63>>
+      <no-break><pageref|auto-64>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-65>>
+      <no-break><pageref|auto-66>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       B<space|2spc>Stochastic localisation>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-66><vspace|0.5fn>
+      <no-break><pageref|auto-67><vspace|0.5fn>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Why it is
       useful <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-67>>>
+      <no-break><pageref|auto-68>>>
 
       <with|par-left|<quote|1tab>|B.1<space|2spc>Log-Sobolev inequalities
       along the localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-68>>
+      <no-break><pageref|auto-69>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Entropy as
       quadratic variation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-69>>>
+      <no-break><pageref|auto-70>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|In terms of
       the conditional covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-70>>>
+      <no-break><pageref|auto-71>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|An
       application: the KLS conjecture <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-71>>>
+      <no-break><pageref|auto-72>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The connection
       with Bauerschmidt\UBodineau <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-72>>>
+      <no-break><pageref|auto-73>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-73>>
+      <no-break><pageref|auto-74>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-74><vspace|0.5fn>
+      <no-break><pageref|auto-75><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

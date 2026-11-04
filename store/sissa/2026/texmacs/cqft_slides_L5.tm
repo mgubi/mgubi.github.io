@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
   <screens|<\shown>
@@ -8,21 +8,18 @@
       <\with|par-mode|left>
         <vspace*|0.8cm>
 
-        \;
-
-        <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-        Introduction to Quantum Field Theory>
+        <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
         <vspace|0.2cm>
 
-        <with|font-size|1.3|<math|\<Phi\><rsup|4><rsub|3>> on the torus I:
+        <cqft-lecture-title|<math|\<Phi\><rsup|4><rsub|3>> on the torus I:
         the FBSDE in force coordinates and renormalisation>
 
         <vspace|0.65cm>
 
         <small|Massimiliano Gubinelli \| University of Oxford>
 
-      <small|Joint work with Sarah-Jean Meyer, with the use of AI>
+        <small|Joint work with Sarah-Jean Meyer, with the use of AI>
 
         <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>5
         (provisional) \V notes: Lecture<nbsp>5, ŸŸ10\U12>>
@@ -99,7 +96,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|The problem and the
+    <cqft-part-title|The problem and the
     exact FBSDE>
 
     <vspace|0.3cm>
@@ -165,33 +162,30 @@
     These come from bounds on the error <math|Z> of an approximate forecast,
     uniform in <math|N>: <strong|UV stability>.
   </hidden>|<\hidden>
-    <mytitle|The Polchinski process as a posterior>
+    <mytitle|The Polchinski process as a filter>
 
     \;
 
-    By Lecture<nbsp>4 (filtering and the field equation), in the profile
-    <math|S<rsub|q>=C<rsub|q>>, <math|\<cal-R\><rsub|q>=q-q<rsub|0>>. Fixed
-    <math|N>: everything is a theorem. <math|\<Phi\><rsub|\<infty\>>\<sim\>\<nu\><rsub|N>>,
-    <math|B> an independent Brownian motion,
+    By Lecture<nbsp>4, in the profile <math|S<rsub|q>=C<rsub|q>>,
+    <math|\<cal-R\><rsub|q>=q-q<rsub|0>>; at fixed <math|N> everything is a
+    theorem. The Polchinski process solves
 
     <\equation*>
-      P<rsub|q>=<around|(|q-q<rsub|0>|)>\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>,<space|1em>\<cal-F\><rsub|q>=\<sigma\><around|(|P<rsub|s>:s\<leqslant\>
-      q|)>.
+      \<mathd\>\<Phi\><rsub|q>=C<rsub|q><rsup|2>F<rsub|q><space|0.17em>\<mathd\>q+C<rsub|q><space|0.17em>\<mathd\>W<rsub|q>,<space|1em>F<rsub|q>=\<bbb-E\><rsub|q><around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>,<space|1em>\<Phi\><rsub|q<rsub|0>>=0,
     </equation*>
 
-    With <math|\<cal-K\><rsub|q><around|(|p|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|p,\<varphi\>|\<rangle\>>-<frac|q-q<rsub|0>|2><around|\<\|\|\>|\<varphi\>|\<\|\|\>><rsup|2>>\<nu\><rsub|N><around|(|<space|0.17em>\<mathd\>\<varphi\>|)>>:
+    and <math|\<Phi\><rsub|q>\<to\>\<Phi\><rsub|\<infty\>>\<sim\>\<nu\><rsub|N>>.
 
     <\itemize>
-      <item>forecast <math|\<psi\><rsub|q>=D\<cal-K\><rsub|q><around|(|P<rsub|q>|)>>,
-      covariance <math|<math-up|Cov><rsub|q>=D<rsup|2>\<cal-K\><rsub|q><around|(|P<rsub|q>|)>>;
+      <item>a noisy observation of its endpoint:
+      <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\><rsub|\<infty\>>+C<rsub|q>B<rsub|q-q<rsub|0>>>,
+      <math|B> independent of <math|\<Phi\><rsub|\<infty\>>>;
 
-      <item>innovation <math|W<rsub|q>=P<rsub|q>-<big|int><rsub|q<rsub|0>><rsup|q>\<psi\><rsub|s><space|0.17em>\<mathd\>
-      s>, <math|<space|0.17em>\<mathd\>\<psi\><rsub|q>=<math-up|Cov><rsub|q><space|0.17em>\<mathd\>
-      W<rsub|q>>;
+      <item>forecast <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>\<Phi\><rsub|\<infty\>>=\<Phi\><rsub|q>+C<rsub|q>F<rsub|q>=m<rsub|q><around|(|\<Phi\><rsub|q>|)>>,
+      covariance <math|<math-up|Cov><rsub|q>\<gtr\>0>;
 
-      <item>field <math|\<Phi\><rsub|q>=C<rsub|q>P<rsub|q>>, force
-      <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>=\<bbb-E\><rsub|q><around|[|-D*V<rsub|N><around|(|\<Phi\><rsub|\<infty\>>|)>|]>>:
-      this is the FBSDE of Lecture<nbsp>4.
+      <item><math|W> is the innovation:
+      <math|\<mathd\>\<psi\><rsub|q>=<math-up|Cov><rsub|q><space|0.17em>\<mathd\>W<rsub|q>>.
     </itemize>
   </hidden>|<\hidden>
     <mytitle|One site>
@@ -202,8 +196,7 @@
 
     Illustration: <math|\<nu\>\<propto\>\<mathe\><rsup|-\<lambda\>*\<varphi\><rsup|4>/4>\<mu\><rsup|1/q<rsub|0>>>
     on one site, <math|\<lambda\>=2>, <math|q<rsub|0>=100>
-    (<math|g<rsub|q<rsub|0>>=0.6>). <math|\<Phi\><rsub|q>=P<rsub|q>/q>, the
-    posterior mean <math|\<psi\><rsub|q>>, and the approximate forecast
+    (<math|g<rsub|q<rsub|0>>=0.6>). <math|\<Phi\><rsub|q>>, the posterior mean <math|\<psi\><rsub|q>>, and the approximate forecast
     <math|Y<rsub|q>> from <math|<wide|\<cal-F\>|\<bar\>>=\<lambda\>
     y<rsup|3>>. All converge to the hidden <math|\<Phi\><rsub|\<infty\>>>,
     and <math|q*Z<rsub|q>\<to\>0>.
@@ -212,9 +205,7 @@
 
     \;
 
-    Since <math|<math-up|Cov><rsub|q>\<gtr\>0>, <math|p\<mapsto\>
-    D\<cal-K\><rsub|q><around|(|p|)>> is invertible: define
-    <math|\<cal-F\><rsub|q>> by <math|K<rsub|q>\<Phi\><rsub|q>=K<rsub|q>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>>,
+    Since <math|\<Phi\><rsub|q>\<mapsto\>\<psi\><rsub|q>> is invertible, define <math|\<cal-F\><rsub|q>> by <math|\<Phi\><rsub|q>=\<psi\><rsub|q>+C<rsub|q>\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>> (the field equation <math|K<rsub|q>\<Phi\><rsub|q>=K<rsub|q>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>>),
     and <math|H<rsup|<math-up|ex>><rsub|q><around|(|y|)>=<around|(|K<rsub|q>+D\<cal-F\><rsub|q><around|(|y|)>|)><rsup|-1>>.
 
     It is the <math|\<cal-F\>> of Lecture<nbsp>4
@@ -229,7 +220,7 @@
       </equation*>
     </myframed>
 
-    Itô on <math|P=K\<psi\>+\<cal-F\><around|(|\<psi\>|)>>. Its integrated
+    Itô on <math|\<Phi\>=\<psi\>+C\<cal-F\><around|(|\<psi\>|)>>. Its integrated
     form is Wetterich's equation, which we do not need. An identity about the
     unknown <math|\<nu\><rsub|N>>, not a construction. Strategy: an
     approximate force <math|<wide|\<cal-F\>|\<bar\>>> gives approximate
@@ -251,7 +242,7 @@
     </equation*>
 
     <\equation*>
-      K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=P<rsub|q>,<space|1em>
+      Y<rsub|q>+C<rsub|q><wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=\<Phi\><rsub|q>,<space|1em>
       Z<rsub|q>=\<psi\><rsub|q>-Y<rsub|q>,<space|1em>\<Xi\><rsub|q>=<math-up|Cov><rsub|q>-H<rsub|q><around|(|Y<rsub|q>|)>.
     </equation*>
 
@@ -387,7 +378,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Renormalisation: why
+    <cqft-part-title|Renormalisation: why
     two of them>
 
     <vspace|0.3cm>
@@ -906,7 +897,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|The flow at large
+    <cqft-part-title|The flow at large
     fields>
 
     <vspace|0.3cm>
@@ -1355,7 +1346,7 @@
       in <math|y>, so only loops are clipped.
 
       <item>The cube is coercive in <math|y>: <math|q*y+\<lambda\>
-      y<rsup|3>=P<rsub|q>>.
+      y<rsup|3>=q*\<Phi\><rsub|q>>.
     </itemize>
 
     Not a no-go theorem: it rules out only estimating <math|R> as a small

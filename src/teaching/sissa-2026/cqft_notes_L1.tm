@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|article|number-long-article|british|cqft-notes>>
+<style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
   <doc-data|<doc-title|A Constructive Introduction <next-line>to Quantum
@@ -623,20 +623,22 @@
   invariance of <math|\<Omega\>>, <math|<around|\<langle\>|\<Omega\>,\<varphi\><around|(|f|)>*\<Omega\>|\<rangle\>>=v*<big|int>f>
   for some <math|v\<in\>\<bbb-R\>>.
 
-  <\theorem>
-    <dueto|Källén\ULehmann<nbsp><cite|Kal52|Leh54>><label|thm:KL> Assume
-    (W0)\U(W2). There is a positive Borel measure <math|\<rho\>> on
-    <math|<around|[|0,\<infty\>|)>>, the <em|spectral measure> of the field,
-    such that
-
-    <\equation>
-      <label|eq:KL>W<rsub|2>*<around|(|x-y|)>=v<rsup|2>+<big|int><rsub|<around|[|0,\<infty\>|)>>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<space|0.17em>W<rsub|2><rsup|<around|(|M|)>>*<around|(|x-y|)>
-    </equation>
-
-    in the sense of tempered distributions. The measure <math|\<rho\>> grows
-    at most polynomially and is such that the right-hand side is tempered; in
-    particular <math|\<rho\><around|(|<around|{|0|}>|)>=0> if <math|d=2>.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Källén\ULehmann<nbsp><cite|Kal52|Leh54>><label|thm:KL> Assume
+      (W0)\U(W2). There is a positive Borel measure <math|\<rho\>> on
+      <math|<around|[|0,\<infty\>|)>>, the <em|spectral measure> of the field,
+      such that
+  
+      <\equation>
+        <label|eq:KL>W<rsub|2>*<around|(|x-y|)>=v<rsup|2>+<big|int><rsub|<around|[|0,\<infty\>|)>>\<rho\><around|(|\<mathd\>M<rsup|2>|)>*<space|0.17em>W<rsub|2><rsup|<around|(|M|)>>*<around|(|x-y|)>
+      </equation>
+  
+      in the sense of tempered distributions. The measure <math|\<rho\>> grows
+      at most polynomially and is such that the right-hand side is tempered; in
+      particular <math|\<rho\><around|(|<around|{|0|}>|)>=0> if <math|d=2>.
+    </theorem>
+  </key-result>
 
   <\render-proof|Sketch>
     Let <math|\<psi\><rsub|f>\<assign\>\<varphi\><around|(|f|)>*\<Omega\>-v<around|(|<big|int>f|)>*\<Omega\>\<perp\>\<Omega\>>.
@@ -1410,13 +1412,15 @@
     <math|<around|(|\<cal-S\><rprime|'><around|(|\<bbb-R\><rsup|d>|)>,\<mu\>|)>>.
   </description-long>
 
-  <\theorem>
-    <dueto|Osterwalder\USchrader reconstruction<nbsp><cite|OS73|OS75|GJ87>>If
-    <math|\<mu\>> satisfies (OS0)\U(OS3), its moments are the Schwinger
-    functions of a unique Wightman theory satisfying (W1)\U(W4) and (W0)
-    except possibly uniqueness of the vacuum. (OS4) holds iff the vacuum is
-    unique.
-  </theorem>
+  <\key-result>
+    <\theorem>
+      <dueto|Osterwalder\USchrader reconstruction<nbsp><cite|OS73|OS75|GJ87>>If
+      <math|\<mu\>> satisfies (OS0)\U(OS3), its moments are the Schwinger
+      functions of a unique Wightman theory satisfying (W1)\U(W4) and (W0)
+      except possibly uniqueness of the vacuum. (OS4) holds iff the vacuum is
+      unique.
+    </theorem>
+  </key-result>
 
   <\render-proof|Idea>
     Let <math|\<cal-E\><rsub|+>> be the functions of <math|\<varphi\>> that

@@ -1,6 +1,6 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
   <screens|<\shown>
@@ -9,12 +9,11 @@
 
       \;
 
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|Stochastic quantisation and stochastic observables>
+      <cqft-lecture-title|Stochastic quantisation and stochastic observables>
 
       <vspace|0.65cm>
 
@@ -58,7 +57,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Parabolic stochastic
+    <cqft-part-title|Parabolic stochastic
     quantisation>
 
     <vspace|0.3cm>
@@ -215,7 +214,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Elliptic stochastic
+    <cqft-part-title|Elliptic stochastic
     quantisation>
 
     <vspace|0.3cm>
@@ -357,7 +356,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Setting: covariance
+    <cqft-part-title|Setting: covariance
     profiles and observables>
 
     <vspace|0.3cm>
@@ -661,7 +660,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Observables and their
+    <cqft-part-title|Observables and their
     products>
 
     <vspace|0.3cm>

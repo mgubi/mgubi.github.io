@@ -47,46 +47,28 @@
     <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
     <table class="title-block" style="margin-bottom: 2em">
       <tr>
-        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
           <tr>
-            <td><font style="font-size: 168.2%"><strong>A Constructive Introduction <br />to
-            Quantum Field Theory</strong></font></td>
+            <td><font color="#707070"><font style="font-size: 135.0%"><strong>A Constructive Introduction
+            <br />to Quantum Field Theory</strong></font></font></td>
           </tr>
         </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
           <tr>
-            <td><font style="font-size: 129.7%"><strong>Lecture 2: The Gaussian free
-            field</strong></font></td>
+            <td><font color="#800000"><font style="font-size: 175.0%"><strong>Lecture 2: The Gaussian free
+            field</strong></font></font></td>
           </tr>
-        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+        </table><div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
           <table class="title-block">
             <tr>
-              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
-                <div style="display: inline">
-                  <span style="margin-left: 0pt"></span>
-                </div>
-                <table style="display: inline-table; vertical-align: middle">
-                  <tbody><tr>
-                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
-                      <p>
-                        <class style="font-variant: small-caps">by M. Gubinelli</class>
-                      </p>
-                    </center></td>
-                  </tr></tbody>
-                </table>
-              </p><p style="margin-top: 0.5em; margin-bottom: 0.5em">
-                <div style="display: inline">
-                  <span style="margin-left: 0pt"></span>
-                </div>
-                <table style="display: inline-table; vertical-align: middle">
-                  <tbody><tr>
-                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
-                      <p>
-                        Mathematical Institute, University of Oxford
-                      </p>
-                    </center></td>
-                  </tr></tbody>
-                </table>
-              </p></td>
+              <td><div style="text-indent: 0em" align="left">
+                <p>
+                  <class style="font-variant: small-caps">M. Gubinelli</class>
+                </p>
+              </div><div style="text-indent: 0em" align="left">
+                <p>
+                  Mathematical Institute, University of Oxford
+                </p>
+              </div></td>
             </tr>
           </table>
         </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
@@ -928,32 +910,35 @@ c_{\varepsilon}), \qquad :
         <td align="right">(3.7)</td>
       </tr>
     </table>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.9</class>. </strong><i><class
-        style="font-style: normal"><strong>(Wick powers) </strong></class><a id="thm:wick"></a> Let \(n
-        \geqslant 1\) with \(n (d - 2) < d\), i.e. every \(n\) if \(d
-        \leqslant 2\), \(n \leqslant 2\) if \(d = 3\), \(n = 1\) if \(d
-        \geqslant 4\). Then for every \(f \in \mathcal{S} (\mathcal{M})\), \(:
-        \varphi^n : (f) := \lim_{\varepsilon \to 0} : \varphi^n_{\varepsilon}
-        : (f)\) exists in \(L^2 (\mu_m)\), is independent of \(\eta\), and</i>
-      </p>
-      <i><table width="100%">
-        <tr>
-          <td width="100%" align="center"><a id="eq:wick-cov"></a>\(\displaystyle \mathbb{E} [: \varphi^n
-          : (f) : \varphi^k : (g)] = \delta_{nk}
-\hspace{0.17em} n! \iint f
-          (x) G (x - y)^n g (y) \hspace{0.17em} \mathrm{d} x
+    <div class="key-result">
+      <div class="theorem">
+        <p style="margin-top: 1em">
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">3.9</class>. </strong><i><class
+          style="font-style: normal"><strong>(Wick powers) </strong></class><a id="thm:wick"></a> Let \(n
+          \geqslant 1\) with \(n (d - 2) < d\), i.e. every \(n\) if \(d
+          \leqslant 2\), \(n \leqslant 2\) if \(d = 3\), \(n = 1\) if \(d
+          \geqslant 4\). Then for every \(f \in \mathcal{S} (\mathcal{M})\),
+          \(: \varphi^n : (f) := \lim_{\varepsilon \to 0} :
+          \varphi^n_{\varepsilon} : (f)\) exists in \(L^2 (\mu_m)\), is
+          independent of \(\eta\), and</i>
+        </p>
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:wick-cov"></a>\(\displaystyle \mathbb{E} [:
+            \varphi^n : (f) : \varphi^k : (g)] = \delta_{nk}
 \hspace{0.17em}
-          \mathrm{d} y.\)</td>
-          <td align="right">(3.8)</td>
-        </tr>
-      </table></i>
-      <p style="margin-bottom: 1em">
-        <i>If instead \(n (d - 2) \geqslant d\) and \(0 \leqslant f
-        \mathrel{\not\equiv} 0\), then \(\mathbb{E} [: \varphi_{\varepsilon}^n
-        : (f)^2] \to \infty\).</i>
-      </p>
+            n! \iint f (x) G (x - y)^n g (y) \hspace{0.17em} \mathrm{d}
+            x
+\hspace{0.17em} \mathrm{d} y.\)</td>
+            <td align="right">(3.8)</td>
+          </tr>
+        </table></i>
+        <p style="margin-bottom: 1em">
+          <i>If instead \(n (d - 2) \geqslant d\) and \(0 \leqslant f
+          \mathrel{\not\equiv} 0\), then \(\mathbb{E} [:
+          \varphi_{\varepsilon}^n : (f)^2] \to \infty\).</i>
+        </p>
+      </div>
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong><em>Step 1: a uniform bound.</em> Let \(K
@@ -1342,28 +1327,30 @@ x_j)
     <p>
       The DS equation is not only satisfied by the GFF; it characterises it.
     </p>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <class style="font-style: normal">3.16</class>. </strong><i><class
-        style="font-style: normal"><strong>(DS characterises the GFF) </strong></class><a id="thm:DS-unique"></a>
-        Let \(\nu\) be a probability measure on \(\mathcal{S}' (\mathcal{M})\)
-        such that \(\varphi (f) \in L^1 (\nu)\) for all \(f \in \mathcal{S}
-        (\mathcal{M})\) and</i>
-      </p>
-      <i><table width="100%">
-        <tr>
-          <td width="100%" align="center"><a id="eq:DS-nu"></a>\(\displaystyle \mathbb{E}_{\nu}  [D_h
-          F] =\mathbb{E}_{\nu}  [F \hspace{0.17em} \varphi (Ah)]
+    <div class="key-result">
+      <div class="theorem">
+        <p style="margin-top: 1em">
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">3.16</class>.
+          </strong><i><class style="font-style: normal"><strong>(DS characterises the GFF)
+          </strong></class><a id="thm:DS-unique"></a> Let \(\nu\) be a probability measure on
+          \(\mathcal{S}' (\mathcal{M})\) such that \(\varphi (f) \in L^1
+          (\nu)\) for all \(f \in \mathcal{S} (\mathcal{M})\) and</i>
+        </p>
+        <i><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:DS-nu"></a>\(\displaystyle \mathbb{E}_{\nu}
+            [D_h F] =\mathbb{E}_{\nu}  [F \hspace{0.17em} \varphi (Ah)]
 \qquad
-          \text{for all } F \in \mathcal{F}C^{\infty}_b, h \in
-          \mathcal{S}
+            \text{for all } F \in \mathcal{F}C^{\infty}_b, h \in
+            \mathcal{S}
 (\mathcal{M}) .\)</td>
-          <td align="right">(3.13)</td>
-        </tr>
-      </table></i>
-      <p style="margin-bottom: 1em">
-        <i>Then \(\nu = \mu_m\).</i>
-      </p>
+            <td align="right">(3.13)</td>
+          </tr>
+        </table></i>
+        <p style="margin-bottom: 1em">
+          <i>Then \(\nu = \mu_m\).</i>
+        </p>
+      </div>
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>Fix a real \(f \in \mathcal{S}

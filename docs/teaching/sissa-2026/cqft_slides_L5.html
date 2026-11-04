@@ -53,11 +53,8 @@
 
         </p>
         <p>
-
-        </p>
-        <p>
-          <font style="font-size: 210.0%"><b><font color="#800000">A Constructive Introduction to Quantum
-          Field Theory</font></b></font>
+          <font style="font-size: 170.0%"><b><font color="#800000">A Constructive Introduction to<br
+          />Quantum Field Theory</font></b></font>
         </p>
         <p style="margin-bottom: 0.2cm">
 
@@ -196,7 +193,7 @@
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">The problem and the exact
+        <font style="font-size: 135.0%"><b><font color="#800000">The problem and the exact
         FBSDE</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -293,51 +290,45 @@ V_N (\varphi)} \mu^C
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The Polchinski process as a posterior
+        The Polchinski process as a filter
       </div>
       <p>
 
       </p>
       <p>
-        By Lecture 4 (filtering and the field equation), in the profile <font
-        color="#620000">\(S_q = C_q\)</font>, <font color="#620000">\(\mathcal{R}_q = q -
-        q_0\)</font>. Fixed <font color="#620000">\(N\)</font>: everything is a
-        theorem. <font color="#620000">\(\Phi_{\infty} \sim \nu_N\)</font>, <font
-        color="#620000">\(B\)</font> an independent Brownian motion,
+        By Lecture 4, in the profile <font color="#620000">\(S_q = C_q\)</font>, <font
+        color="#620000">\(\mathcal{R}_q = q - q_0\)</font>; at fixed <font color="#620000">\(N\)</font>
+        everything is a theorem. The Polchinski process solves
       </p>
       <center>
-        \(\displaystyle P_q = (q - q_0) \Phi_{\infty} + B_{q - q_0}, \quad
-        \mathcal{F}_q = \sigma (P_s
-: s \leqslant q) .\)
+        \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
+        \mathrm{d} q + C_q
+\hspace{0.17em} \mathrm{d} W_q, \quad F_q
+        =\mathbb{E}_q [- DV_N
+(\Phi_{\infty})], \quad \Phi_{q_0} = 0,\)
       </center>
       <p>
-        With <font color="#620000">\(\mathcal{K}_q (p) = \text{log} \int
-        \mathrm{e}^{\langle p, \varphi \rangle -
-\frac{q - q_0}{2} \| \varphi
-        \|^2} \nu_N (\hspace{0.17em} \mathrm{d} \varphi)\)</font>:
+        and <font color="#620000">\(\Phi_q \to \Phi_{\infty} \sim \nu_N\)</font>.
       </p>
       <ul>
         <li>
           <p>
-            forecast <font color="#620000">\(\psi_q = D\mathcal{K}_q (P_q)\)</font>,
-            covariance <font color="#620000">\(\text{Cov}_q = D^2 \mathcal{K}_q
-            (P_q)\)</font>;
+            a noisy observation of its endpoint: <font color="#620000">\(\Phi_q = (q -
+            q_0) C_q \Phi_{\infty} + C_q B_{q - q_0}\)</font>, <font color="#620000">\(B\)</font>
+            independent of <font color="#620000">\(\Phi_{\infty}\)</font>;
           </p>
         </li>
         <li>
           <p>
-            innovation <font color="#620000">\(W_q = P_q - \int_{q_0}^q \psi_s
-            \hspace{0.17em} \mathrm{d} s\)</font>, <font color="#620000">\(\hspace{0.17em}
-            \mathrm{d} \psi_q = \text{Cov}_q \hspace{0.17em}
-            \mathrm{d}
-W_q\)</font>;
+            forecast <font color="#620000">\(\psi_q =\mathbb{E}_q \Phi_{\infty} =
+            \Phi_q + C_q F_q = m_q (\Phi_q)\)</font>, covariance <font color="#620000">\(\text{Cov}_q
+            > 0\)</font>;
           </p>
         </li>
         <li>
           <p>
-            field <font color="#620000">\(\Phi_q = C_q P_q\)</font>, force <font color="#620000">\(F_q
-            = K_q (\psi_q - \Phi_q) =\mathbb{E}_q [- DV_N
-            (\Phi_{\infty})]\)</font>: this is the FBSDE of Lecture 4.
+            <font color="#620000">\(W\)</font> is the innovation: <font color="#620000">\(\mathrm{d}
+            \psi_q = \text{Cov}_q \hspace{0.17em} \mathrm{d} W_q\)</font>.
           </p>
         </li>
       </ul>
@@ -356,10 +347,10 @@ W_q\)</font>;
         Illustration: <font color="#620000">\(\nu \propto \mathrm{e}^{- \lambda
         \varphi^4 / 4} \mu^{1 / q_0}\)</font> on one site, <font color="#620000">\(\lambda
         = 2\)</font>, <font color="#620000">\(q_0 = 100\)</font> (<font color="#620000">\(g_{q_0}
-        = 0.6\)</font>). <font color="#620000">\(\Phi_q = P_q / q\)</font>, the
-        posterior mean <font color="#620000">\(\psi_q\)</font>, and the approximate
-        forecast <font color="#620000">\(Y_q\)</font> from <font color="#620000">\(\bar{\mathcal{F}}
-        = \lambda y^3\)</font>. All converge to the hidden <font color="#620000">\(\Phi_{\infty}\)</font>,
+        = 0.6\)</font>). <font color="#620000">\(\Phi_q\)</font>, the posterior mean
+        <font color="#620000">\(\psi_q\)</font>, and the approximate forecast <font
+        color="#620000">\(Y_q\)</font> from <font color="#620000">\(\bar{\mathcal{F}} = \lambda
+        y^3\)</font>. All converge to the hidden <font color="#620000">\(\Phi_{\infty}\)</font>,
         and <font color="#620000">\(qZ_q \to 0\)</font>.
       </p>
     </div>
@@ -371,10 +362,11 @@ W_q\)</font>;
 
       </p>
       <p>
-        Since <font color="#620000">\(\text{Cov}_q > 0\)</font>, <font color="#620000">\(p
-        \mapsto D\mathcal{K}_q (p)\)</font> is invertible: define <font color="#620000">\(\mathcal{F}_q\)</font>
-        by <font color="#620000">\(K_q \Phi_q = K_q \psi_q +\mathcal{F}_q
-        (\psi_q)\)</font>, and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q +
+        Since <font color="#620000">\(\Phi_q \mapsto \psi_q\)</font> is invertible,
+        define <font color="#620000">\(\mathcal{F}_q\)</font> by <font color="#620000">\(\Phi_q
+        = \psi_q + C_q \mathcal{F}_q (\psi_q)\)</font> (the field equation
+        <font color="#620000">\(K_q \Phi_q = K_q \psi_q +\mathcal{F}_q
+        (\psi_q)\)</font>), and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q +
         D\mathcal{F}_q (y))^{- 1}\)</font>.
       </p>
       <p>
@@ -394,10 +386,10 @@ W_q\)</font>;
         </center>
       </div>
       <p>
-        It&ocirc; on <font color="#620000">\(P = K \psi +\mathcal{F} (\psi)\)</font>.
-        Its integrated form is Wetterich's equation, which we do not need. An
-        identity about the unknown <font color="#620000">\(\nu_N\)</font>, not a
-        construction. Strategy: an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
+        It&ocirc; on <font color="#620000">\(\Phi = \psi + C\mathcal{F}
+        (\psi)\)</font>. Its integrated form is Wetterich's equation, which we
+        do not need. An identity about the unknown <font color="#620000">\(\nu_N\)</font>,
+        not a construction. Strategy: an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
         gives approximate forecast coordinates; the error should be driven by
         the failure of <font color="#620000">\(\bar{\mathcal{F}}\)</font> to solve this
         equation.
@@ -424,8 +416,8 @@ W_q\)</font>;
         \mathcal{D}_q .\)
       </center>
       <center>
-        \(\displaystyle K_q Y_q + \bar{\mathcal{F}}_q (Y_q) = P_q, \quad Z_q =
-        \psi_q - Y_q, \quad
+        \(\displaystyle Y_q + C_q \bar{\mathcal{F}}_q (Y_q) = \Phi_q, \quad
+        Z_q = \psi_q - Y_q, \quad
 \Xi_q = \text{Cov}_q - H_q (Y_q) .\)
       </center>
       <div class="slide-block">
@@ -521,7 +513,7 @@ W_q\)</font>;
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">Renormalisation: why two of
+        <font style="font-size: 135.0%"><b><font color="#800000">Renormalisation: why two of
         them</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -830,7 +822,7 @@ s, \quad j = 0, 1,\)
 
       </p>
       <p>
-        <font style="font-size: 160.0%"><b><font color="#800000">The flow at large
+        <font style="font-size: 135.0%"><b><font color="#800000">The flow at large
         fields</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
@@ -1189,7 +1181,7 @@ C_{\ast} < \frac{1}{2} .\)
         <li>
           <p>
             The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
-            + \lambda y^3 = P_q\)</font>.
+            + \lambda y^3 = q \Phi_q\)</font>.
           </p>
         </li>
       </ul>

@@ -1,20 +1,17 @@
 <TeXmacs|2.1.5>
 
-<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides>>
+<style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
-  <screens|<\hidden>
+  <screens|<\shown>
     <\with|par-mode|left>
       <vspace*|0.8cm>
 
-      \;
-
-      <with|font-size|2.1|font-series|bold|color|dark red|A Constructive
-      Introduction to Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
 
       <vspace|0.2cm>
 
-      <with|font-size|1.3|Forward\Ubackward equations>
+      <cqft-lecture-title|Forward\Ubackward equations>
 
       <vspace|0.65cm>
 
@@ -24,11 +21,12 @@
 
       <small|Joint work with Sarah-Jean Meyer, with the use of AI>
 
-      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>4 \V notes: Lecture<nbsp>4, ŸŸ7\U9, Appendices A\UB>>
+      <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>4 \V notes:
+      Lecture<nbsp>4, ŸŸ7\U9, Appendices A\UB>>
 
       \;
     </with>
-  </hidden>|<\hidden>
+  </shown>|<\hidden>
     <mytitle|Where we are>
 
     \;
@@ -81,7 +79,9 @@
 
       <item><strong|Filtering.> The field at resolution <math|t> is a noisy
       observation of the terminal field. The conditional law is the
-      posterior, the force is what the observation reveals, and backward in resolution its dynamics is linear and Gaussian, started from <math|\<nu\><rsub|T>>.
+      posterior, the force is what the observation reveals, and backward in
+      resolution its dynamics is linear and Gaussian, started from
+      <math|\<nu\><rsub|T>>.
     </itemize>
 
     \;
@@ -92,7 +92,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Three ways to
+    <cqft-part-title|Three ways to
     generate the interacting measure>
 
     <vspace|0.3cm>
@@ -248,8 +248,8 @@
     </theorem*>
 
     <with|font-series|bold|Proof.> <math|u<rsub|t>=\<mathe\><rsup|-V<rsub|t>>=\<mathe\><rsup|<frac|1|2>*\<Delta\><rsub|Q<rsub|T,t>>>u<rsub|T>>,
-    <math|\<Delta\><rsub|Q>=<math-up|Tr><around|(|Q*\<mathD\><rsup|2>|)>>, solves the
-    backward heat equation <math|\<partial\><rsub|t>*u<rsub|t>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>*u<rsub|t>|)>>.
+    <math|\<Delta\><rsub|Q>=<math-up|Tr><around|(|Q*\<mathD\><rsup|2>|)>>,
+    solves the backward heat equation <math|\<partial\><rsub|t>*u<rsub|t>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>*u<rsub|t>|)>>.
     Insert <math|\<mathD\><rsup|2>*u=<around|(|\<mathD\>V\<otimes\>\<mathD\>V-\<mathD\><rsup|2>*V|)>*u>.
 
     <wide-tabular|<tformat|<cwith|1|1|1|-1|cell-valign|t>|<cwith|1|1|1|-1|cell-hyphen|t>|<cwith|1|1|1|-1|cell-lsep|0em>|<cwith|1|1|1|-1|cell-rsep|1em>|<cwith|1|1|1|1|cell-width|0.48par>|<cwith|1|1|1|1|cell-hmode|exact>|<cwith|1|1|2|2|cell-width|0.48par>|<cwith|1|1|2|2|cell-hmode|exact>|<table|<row|<\cell>
@@ -504,7 +504,12 @@
   </hidden>|<\hidden>
     <mytitle|Pontryagin's maximum principle>
 
-    Minimise <math|J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s>
+    Minimise
+
+    <\equation*>
+      J<around|(|u|)>=g<around|(|x<rsub|T>|)>+<big|int><rsub|t><rsup|T>\<ell\><around|(|x<rsub|s>,u<rsub|s>|)>*\<mathd\>s
+    </equation*>
+
     subject to <math|<wide|x|\<dot\>>=b<around|(|x,u|)>>, <math|x<rsub|t>=x>.
     <strong|Hamiltonian:>
 
@@ -522,23 +527,25 @@
       </equation*>
     </theorem*>
 
-    <\itemize>
-      <item>State forward, costate backward: a <strong|two-point boundary
-      problem>.
+    <\small>
+      <\itemize>
+        <item>State forward, costate backward: a <strong|two-point boundary
+        problem>.
 
-      <item>The costate is the Lagrange multiplier of the constraint
-      <math|<wide|x|\<dot\>>=b>; an optimal control is a critical point of
-      the Hamiltonian.
+        <item>The costate is the Lagrange multiplier of the constraint
+        <math|<wide|x|\<dot\>>=b>; an optimal control is a critical point of
+        the Hamiltonian.
 
-      <item>Next: why this holds, and what <math|p> is.
-    </itemize>
+        <item>Next: why this holds, and what <math|p> is.
+      </itemize>
 
-    <small|<with|color|dark grey|Pontryagin\UBoltyanskii\UGamkrelidze\UMishchenko
-    1962.>>
+      <small|<with|color|dark grey|Pontryagin\UBoltyanskii\UGamkrelidze\UMishchenko
+      1962.>>
+    </small>
   </hidden>|<\hidden>
     <mytitle|Pontryagin: first variation and HJB>
 
-    <\with|font-size|0.9>
+    <\with|font-size|0.85>
       <strong|First variation.> Perturb <math|u\<to\>u+\<varepsilon\>*v>; the
       state varies by <math|\<xi\>=\<partial\><rsub|\<varepsilon\>>*x>,
 
@@ -593,8 +600,8 @@
         <math|\<Sigma\><rsub|t>:<around|(|x,p|)>\<mapsto\><around|(|x+S<rsub|t>*p,p|)>>,
         with <math|S<rsub|t>\<assign\>Q<rsub|T>-Q<rsub|t>> the covariance
         still unresolved. All interaction is in
-        <math|p=-\<mathD\>V<rsub|T><around|(|x+S<rsub|T>*p|)>>: <strong|trees>. HJB
-        <math|=> Polchinski without the trace.
+        <math|p=-\<mathD\>V<rsub|T><around|(|x+S<rsub|T>*p|)>>:
+        <strong|trees>. HJB <math|=> Polchinski without the trace.
 
         <item><strong|With noise> (Bismut 1973, Peng 1990): the costate
         solves a BSDE
@@ -648,82 +655,78 @@
   </hidden>|<\hidden>
     <mytitle|Filtering: the field observes its future>
 
-    <\with|font-size|0.9>
-      All covariance operators are functions of <math|A>;
-      <math|K=Q<rsub|T><rsup|-1>>, <math|J<rsub|t>=K*Q<rsub|t>>. Since
-      <math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends on
-      <math|X<rsub|T>> only, given <math|\<Phi\><rsub|T>> the interacting
-      field is the <strong|Gaussian bridge>:
+    All covariance operators are functions of <math|A>;
+    <math|K=Q<rsub|T><rsup|-1>>, <math|J<rsub|t>=K*Q<rsub|t>>. Since
+    <math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends on
+    <math|X<rsub|T>> only, given <math|\<Phi\><rsub|T>> the interacting field
+    is the <strong|Gaussian bridge>:
 
-      <\equation*>
-        \<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>,<space|2em>\<mathd\>\<Phi\><rsub|t>=<wide|Q|\<dot\>><rsub|t>S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)><space|0.17em>\<mathd\>t+<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>B<rsub|t>,
-      </equation*>
+    <\equation*>
+      \<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>,<space|2em>\<mathd\>\<Phi\><rsub|t>=<wide|Q|\<dot\>><rsub|t>S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)><space|0.17em>\<mathd\>t+<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>B<rsub|t>,
+    </equation*>
 
-      with <math|\<zeta\>>, <math|B> independent of <math|\<Phi\><rsub|T>>.
-      <strong|Signal> <math|\<Phi\><rsub|T>>, with prior
-      <math|\<nu\><rsub|T>>; <strong|observation>
-      <math|<around|(|\<Phi\><rsub|s>|)><rsub|s\<leqslant\>t>>, pulled
-      towards the hidden field.
+    with <math|\<zeta\>>, <math|B> independent of <math|\<Phi\><rsub|T>>.
+    <strong|Signal> <math|\<Phi\><rsub|T>>, with prior <math|\<nu\><rsub|T>>;
+    <strong|observation> <math|<around|(|\<Phi\><rsub|s>|)><rsub|s\<leqslant\>t>>,
+    pulled towards the hidden field.
 
-      <\proposition*>
-        <dueto|Filtering><with|font-shape|right|(formal)>
+    <\proposition*>
+      <dueto|Filtering><with|font-shape|right|(formal)>
 
-        <\itemize>
-          <item>Posterior: <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>\<Phi\><rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|\<mathd\>y|)>>,
-          <math|\<cal-R\><rsub|t>=S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>> the
-          precision gained: the <strong|regulator>.
+      <\itemize>
+        <item>Posterior: <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>\<Phi\><rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|\<mathd\>y|)>>,
+        <math|\<cal-R\><rsub|t>=S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>> the
+        precision gained: the <strong|regulator>.
 
-          <item><math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)>|]>>:
-          <math|<wide|Q|\<dot\>><rsub|t>F<rsub|t>> is the posterior mean of the pull,
-          <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>, and
-          <math|W> is the <strong|innovation>. The Polchinski SDE is the
-          observation equation in its own filtration.
+        <item><math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)>|]>>:
+        <math|<wide|Q|\<dot\>><rsub|t>F<rsub|t>> is the posterior mean of the
+        pull, <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>, and
+        <math|W> is the <strong|innovation>. The Polchinski SDE is the
+        observation equation in its own filtration.
 
-          <item>Filter equation: <math|\<mathd\>\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>=<around|\<langle\>|<math-up|Cov><rsub|t><around|(|G,\<Phi\><rsub|T>|)>,S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2>\<mathd\>W<rsub|t>|\<rangle\>>>.
-        </itemize>
-      </proposition*>
-
-      Gaussian prior: <math|\<psi\><rsub|t>=\<Phi\><rsub|t>>, <math|F=0>.
-      <math|\<Phi\><rsub|t>> is the estimate that ignores the interaction,
-      <math|\<psi\><rsub|t>> the one that includes it.
-    </with>
+        <item>Filter equation: <math|\<mathd\>\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>=<around|\<langle\>|<math-up|Cov><rsub|t><around|(|G,\<Phi\><rsub|T>|)>,S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2>\<mathd\>W<rsub|t>|\<rangle\>>>.
+      </itemize>
+    </proposition*>
   </hidden>|<\hidden>
     <mytitle|Backward in resolution: Gaussian blurring>
 
-    <\with|font-size|0.9>
-      Reverse the resolution, <math|<wide|\<Phi\>|^><rsub|s>=\<Phi\><rsub|T-s>>:
+    Reverse the resolution, <math|<wide|\<Phi\>|^><rsub|s>=\<Phi\><rsub|T-s>>:
 
-      <\equation*>
-        \<mathd\><wide|\<Phi\>|^><rsub|s>=-<wide|Q|\<dot\>><rsub|T-s>Q<rsub|T-s><rsup|-1><wide|\<Phi\>|^><rsub|s><space|0.17em>\<mathd\>s+<wide|Q|\<dot\>><rsub|T-s><rsup|1/2><space|0.17em>\<mathd\><wide|W|^><rsub|s>,<space|2em><wide|\<Phi\>|^><rsub|0>=\<Phi\><rsub|T>\<sim\>\<nu\><rsub|T>.
-      </equation*>
+    <\equation*>
+      \<mathd\><wide|\<Phi\>|^><rsub|s>=-<wide|Q|\<dot\>><rsub|T-s>Q<rsub|T-s><rsup|-1><wide|\<Phi\>|^><rsub|s><space|0.17em>\<mathd\>s+<wide|Q|\<dot\>><rsub|T-s><rsup|1/2><space|0.17em>\<mathd\><wide|W|^><rsub|s>,<space|2em><wide|\<Phi\>|^><rsub|0>=\<Phi\><rsub|T>\<sim\>\<nu\><rsub|T>.
+    </equation*>
 
-      <\itemize>
-        <item><math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends only on the <em|starting point> <math|X<rsub|T>>: the transition kernels are those of the Gaussian reference, only the initial law changes. A linear process with Gaussian transitions, not a Gaussian process.
+    <\itemize>
+      <item><math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends only
+      on the <em|starting point> <math|X<rsub|T>>: the transition kernels are
+      those of the Gaussian reference, only the initial law changes. A linear
+      process with Gaussian transitions, not a Gaussian process.
 
-        <item><strong|Backward>: blur the interacting field with Gaussian
-        noise, <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>;
-        this does not know the interaction. <strong|Forward>: Polchinski
-        undoes the blurring, all the interaction is in the drift.
+      <item><strong|Backward>: blur the interacting field with Gaussian
+      noise, <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>;
+      this does not know the interaction. <strong|Forward>: Polchinski undoes
+      the blurring, all the interaction is in the drift.
 
-        <item>Time reversal (<math|t\<gtr\>0>, finite cutoff): <math|<wide|Q|\<dot\>><rsub|t>F<rsub|t>=<wide|Q|\<dot\>><rsub|t>Q<rsub|t><rsup|-1>\<Phi\><rsub|t>+<wide|Q|\<dot\>><rsub|t>\<mathD\>log
-        p<rsub|t><around|(|\<Phi\><rsub|t>|)>>: the force is the
-        <strong|score> of <math|\<nu\><rsub|t>> relative to
-        <math|\<mu\><rsup|Q<rsub|t>>>, and <math|\<psi\><rsub|t>> is the
-        denoiser (Tweedie).
-      </itemize>
+      <item>Time reversal (<math|t\<gtr\>0>, finite cutoff):
+      <math|<wide|Q|\<dot\>><rsub|t>F<rsub|t>=<wide|Q|\<dot\>><rsub|t>Q<rsub|t><rsup|-1>\<Phi\><rsub|t>+<wide|Q|\<dot\>><rsub|t>\<mathD\>log
+      p<rsub|t><around|(|\<Phi\><rsub|t>|)>>: the force is the <strong|score>
+      of <math|\<nu\><rsub|t>> relative to <math|\<mu\><rsup|Q<rsub|t>>>, and
+      <math|\<psi\><rsub|t>> is the denoiser (Tweedie).
+    </itemize>
 
-      <\myframed>
-        The Polchinski process is a <strong|denoising diffusion> whose data
-        distribution is the interacting measure.
-      </myframed>
-    </with>
+    \;
+
+    <\myframed>
+      The Polchinski process is a <strong|denoising diffusion> whose data
+      distribution is the interacting measure.
+    </myframed>
   </hidden>|<\hidden>
     <mytitle|The measurement coordinate>
 
     \;
 
-    In the stochastic localisation literature the observation is written as
-    a linear measurement: with <math|j<rsub|t>=S<rsub|t><rsup|-1>\<Phi\><rsub|t>>,
+    In the stochastic localisation literature the observation is written as a
+    linear measurement: with <math|j<rsub|t>=S<rsub|t><rsup|-1>\<Phi\><rsub|t>>,
 
     <\equation*>
       j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>,<space|1em>N<rsub|t>=S<rsub|t><rsup|-1>\<zeta\><rsub|t>,<space|1em>\<bbb-E\><around|[|N<rsub|s>\<otimes\>
@@ -745,7 +748,9 @@
       Polchinski in the variable <math|j>.
     </itemize>
 
-    Eldan's basic scheme is the profile with <math|\<cal-R\><rsub|t>=t>, <math|N> a Brownian motion, run to <math|t=\<infty\>>: the profile of Lectures<nbsp>5\U6.
+    Eldan's basic scheme is the profile with <math|\<cal-R\><rsub|t>=t>,
+    <math|N> a Brownian motion, run to <math|t=\<infty\>>: the profile of
+    Lectures<nbsp>5\U6.
 
     <small|<with|color|dark grey|Eldan 2013; El<nbsp>Alaoui\UMontanari 2022;
     Bauerschmidt\UBodineau\UDagallier 2024>>
@@ -818,7 +823,8 @@
       </cell>|<\cell>
         value function
       </cell>|<\cell>
-        <math|->log-likelihood ratio of the observation, up to <math|log Z<rsub|T>>
+        <math|->log-likelihood ratio of the observation, up to <math|log
+        Z<rsub|T>>
       </cell>>>>>>
     </padded-center>
 
@@ -872,7 +878,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Force coordinates and
+    <cqft-part-title|Force coordinates and
     potentials>
 
     <vspace|0.3cm>
@@ -885,8 +891,8 @@
 
     \;
 
-    Differentiating Polchinski, <math|F<rsub|t>=-\<mathD\>V<rsub|t>> solves the
-    backward viscous <strong|Burgers equation>
+    Differentiating Polchinski, <math|F<rsub|t>=-\<mathD\>V<rsub|t>> solves
+    the backward viscous <strong|Burgers equation>
 
     <\equation*>
       \<partial\><rsub|t>*F<rsub|t>=-\<mathD\>F<rsub|t>*<around|[|<wide|Q|\<dot\>><rsub|t>*F<rsub|t>|]>-<tfrac|1|2><math-up|Tr><around*|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>*F<rsub|t>|)>,<space|2em>F<rsub|T>=-\<mathD\>V<rsub|T>.
@@ -1014,27 +1020,32 @@
         G<around|(|s,x|)>=min<rsub|y><around*|{|g<around|(|y|)>+<frac|<around|(|x-y|)><rsup|2>|2*s>|}>,<space|2em>u<around|(|s,x|)>=<frac|x-y<around|(|s,x|)>|s>,
       </equation*>
 
-      the minimiser being the label of <math|x>; characteristics cross (shocks) once <math|1+s*g<rprime|''>> vanishes somewhere. Viscous case: Cole\UHopf. Dictionary:
+      the minimiser being the label of <math|x>; characteristics cross
+      (shocks) once <math|1+s*g<rprime|''>> vanishes somewhere. Viscous case:
+      Cole\UHopf. Dictionary:
 
       <\padded-center>
         <with|font-size|0.9|<tabular|<tformat|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-rsep|1em>|<cwith|1|-1|3|3|cell-lsep|1em>|<table|<row|<cell|time
         <math|s>>|<cell|<math|S<rsub|t>>>|<cell|characteristics>|<cell|shear
         <math|x=\<psi\>+S<rsub|t>\<mathD\>V<rsub|T><around|(|\<psi\>|)>>>>|<row|<cell|Eulerian
-        <math|x>>|<cell|field <math|x>>|<cell|Lax\UOleinik>|<cell|tree
-        level (Hopf\ULax)>>|<row|<cell|label <math|y>>|<cell|forecast
-        <math|\<psi\>>>|<cell|Cole\UHopf, <math|\<varepsilon\>=<frac|1|2>>>|<cell|Polchinski>>|<row|<cell|<math|u=\<partial\><rsub|x>G>>|<cell|<math|-F<rsub|t>=\<mathD\>V<rsub|t>>>|<cell|datum
+        <math|x>>|<cell|field <math|x>>|<cell|Lax\UOleinik>|<cell|tree level
+        (Hopf\ULax)>>|<row|<cell|label <math|y>>|<cell|forecast
+        <math|\<psi\>>>|<cell|Cole\UHopf,
+        <math|\<varepsilon\>=<frac|1|2>>>|<cell|Polchinski>>|<row|<cell|<math|u=\<partial\><rsub|x>G>>|<cell|<math|-F<rsub|t>=\<mathD\>V<rsub|t>>>|<cell|datum
         <math|g>>|<cell|<math|V<rsub|T>>>>>>>>
       </padded-center>
 
       With noise the label is the <strong|posterior mean> of <math|y> under
       the Cole\UHopf measure, a martingale; the Moreau formula is
-      Lax\UOleinik with <math|V<rsub|T>\<to\>\<Gamma\><rsub|t>>, and at finite cutoff no shocks form.
+      Lax\UOleinik with <math|V<rsub|T>\<to\>\<Gamma\><rsub|t>>, and at
+      finite cutoff no shocks form.
     </with>
   </hidden>|<\hidden>
     <mytitle|Conditional moments>
 
     <\proposition*>
-      <with|font-shape|right|(formal)> If <math|F<rsub|t>=-\<mathD\>V<rsub|t>>, then
+      <with|font-shape|right|(formal)> If
+      <math|F<rsub|t>=-\<mathD\>V<rsub|t>>, then
 
       <\equation*>
         H<rsub|t><around|(|\<psi\><rsub|t>|)>=<math-up|Cov><rsub|t>\<assign\><math-up|Cov><rsup|\<bbb-P\>><around|(|\<Phi\><rsub|T><space|0.17em>\|<space|0.17em>\<Phi\><rsub|t>|)>=S<rsub|t>-S<rsub|t>*\<mathD\><rsup|2>*V<rsub|t><around|(|\<Phi\><rsub|t>|)>*S<rsub|t>.
@@ -1066,7 +1077,8 @@
     <mytitle|Brascamp\ULieb bounds on the conditional covariance>
 
     Conditional law <math|\<mu\><rsup|\<phi\>><rsub|t>\<propto\>\<mathe\><rsup|-\<cal-U\>>>,
-    <math|\<mathD\><rsup|2>*\<cal-U\>=S<rsub|t><rsup|-1>+\<mathD\><rsup|2>*V<rsub|T>>. Then
+    <math|\<mathD\><rsup|2>*\<cal-U\>=S<rsub|t><rsup|-1>+\<mathD\><rsup|2>*V<rsub|T>>.
+    Then
 
     <\equation*>
       <around*|(|\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>*V<rsub|T>|]>|)><rsup|-1>\<leqslant\>Cov<rsub|t>\<leqslant\>\<bbb-E\><rsub|t><around*|[|<around*|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>*V<rsub|T>|)><rsup|-1>|]>.
@@ -1084,13 +1096,13 @@
 
         <item>Equal for quadratic <math|V<rsub|T>>. Via
         <math|Cov<rsub|t>=S<rsub|t>-S<rsub|t>*\<mathD\><rsup|2>*V<rsub|t>*S<rsub|t>>:
-        two-sided bounds on <math|\<mathD\><rsup|2>*V<rsub|t>>, i.e. on the Wetterich
-        propagator <math|H<rsub|t>>.
+        two-sided bounds on <math|\<mathD\><rsup|2>*V<rsub|t>>, i.e. on the
+        Wetterich propagator <math|H<rsub|t>>.
 
         <item><math|V<rsub|T>> convex <math|\<Rightarrow\>>
         <math|Cov<rsub|t>\<leqslant\>S<rsub|t>>,
-        <math|\<mathD\><rsup|2>*V<rsub|t>\<geqslant\>0>: convexity propagates along
-        Polchinski. <math|\<mathD\><rsup|2>*V<rsub|T>\<geqslant\>\<kappa\>\<Rightarrow\>Cov<rsub|t>\<leqslant\><around|(|S<rsub|t><rsup|-1>+\<kappa\>|)><rsup|-1>>.
+        <math|\<mathD\><rsup|2>*V<rsub|t>\<geqslant\>0>: convexity propagates
+        along Polchinski. <math|\<mathD\><rsup|2>*V<rsub|T>\<geqslant\>\<kappa\>\<Rightarrow\>Cov<rsub|t>\<leqslant\><around|(|S<rsub|t><rsup|-1>+\<kappa\>|)><rsup|-1>>.
       </itemize>
     </small>
 
@@ -1150,8 +1162,9 @@
 
     <\myframed>
       So <math|\<Sigma\><rsub|t>> maps the graph of
-      <math|F<rsub|t>=-\<mathD\>V<rsub|t>> to a Lagrangian submanifold; if it is a
-      graph over the forecast <math|\<psi\>>, it is the graph of a gradient.
+      <math|F<rsub|t>=-\<mathD\>V<rsub|t>> to a Lagrangian submanifold; if it
+      is a graph over the forecast <math|\<psi\>>, it is the graph of a
+      gradient.
     </myframed>
   </hidden>|<\hidden>
     <mytitle|The free action generates the shear>
@@ -1168,9 +1181,9 @@
 
     <\itemize>
       <item><math|\<mathD\><rsub|x>\<cal-A\><rsub|t>=-p>,
-      <math|\<mathD\><rsub|\<psi\>>\<cal-A\><rsub|t>=p>: so <math|\<cal-A\><rsub|t>>
-      is the <strong|generating function> of the shear
-      <math|\<Sigma\><rsub|t>>.
+      <math|\<mathD\><rsub|\<psi\>>\<cal-A\><rsub|t>=p>: so
+      <math|\<cal-A\><rsub|t>> is the <strong|generating function> of the
+      shear <math|\<Sigma\><rsub|t>>.
 
       <item><math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|\<mathD\><rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>\<mathD\><rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>:
       a complete integral of the noiseless Polchinski equation.
@@ -1253,8 +1266,8 @@
     </theorem*>
 
     <with|font-series|bold|Proof.> <math|\<mathD\><rsub|v><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>*H|)>=-<math-up|Tr><around|(|\<cal-C\>*<space|0.17em>\<mathD\><rsup|2>*\<cal-F\>|)><around|[|v|]>>
-    by symmetry of <math|\<mathD\><rsup|3>*\<Gamma\>>, so the force equation reads
-    <math|D*<around*|(|\<partial\><rsub|t>*\<Gamma\>-<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>*H|)>|)>=0>.
+    by symmetry of <math|\<mathD\><rsup|3>*\<Gamma\>>, so the force equation
+    reads <math|D*<around*|(|\<partial\><rsub|t>*\<Gamma\>-<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>*H|)>|)>=0>.
     The constant: envelope theorem <math|+> Polchinski.
   </hidden>|<\hidden>
     <mytitle|The Wetterich equation in graphs>
@@ -1538,7 +1551,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Observables and field
+    <cqft-part-title|Observables and field
     equations>
 
     <vspace|0.3cm>
@@ -1658,13 +1671,19 @@
         <math|<frac|1|2><around|\<langle\>|\<psi\>,A*\<psi\>|\<rangle\>>+\<Gamma\><rsub|t><around|(|\<psi\>|)>>,
         forced by <math|\<eta\><rsub|t>>.
 
-        <item><math|\<Phi\><rsup|4>>, one loop: <math|\<Gamma\><rsub|t>\<approx\>V<rsub|T>+<frac|1|2><math-up|Tr><around|(|S<rsub|t>\<mathD\><rsup|2>V<rsub|T>|)>> moves the Wick ordering to <math|c<rsub|t>>:
+        <item><math|\<Phi\><rsup|4>>, one loop:
+        <math|\<Gamma\><rsub|t>\<approx\>V<rsub|T>+<frac|1|2><math-up|Tr><around|(|S<rsub|t>\<mathD\><rsup|2>V<rsub|T>|)>>
+        moves the Wick ordering to <math|c<rsub|t>>:
 
         <\equation*>
           <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+4*\<lambda\>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>,
         </equation*>
 
-        and <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>: the <strong|coercivity of the cube> is visible (heuristically; in <math|d=3> the mass counterterm still diverges). For <math|\<Phi\><rsub|t>> it is hidden behind <math|\<mathe\><rsup|-A/t<rsup|2>>>.
+        and <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>:
+        the <strong|coercivity of the cube> is visible (heuristically; in
+        <math|d=3> the mass counterterm still diverges). For
+        <math|\<Phi\><rsub|t>> it is hidden behind
+        <math|\<mathe\><rsup|-A/t<rsup|2>>>.
 
         <item>IBP: <math|\<bbb-E\><around|[|G<around|(|\<psi\><rsub|t>|)><around|\<langle\>|h,K*\<psi\><rsub|t>-F<rsub|t>|\<rangle\>>|]>=\<bbb-E\><around|[|\<mathD\><rsub|<math-up|Cov><rsub|t>\<cal-R\><rsub|t>h>G<around|(|\<psi\><rsub|t>|)>|]>>.
       </itemize>
@@ -1853,7 +1872,7 @@
 
     \;
 
-    <with|font-size|1.6|font-series|bold|color|dark red|Appendices:
+    <cqft-part-title|Appendices:
     additional material>
 
     <vspace|0.3cm>
@@ -1861,7 +1880,7 @@
     <with|color|dark grey|Lecture<nbsp>4>
 
     \;
-  </hidden>|<\shown>
+  </hidden>|<\hidden>
     <mytitle|A semigroup of renormalisation maps>
 
     \;
@@ -1894,7 +1913,7 @@
     <strong|coordinate systems> on the same RG trajectory: they change
     <math|\<Phi\>> and intermediate observables, not the terminal theory.
     <strong|No holonomy.>
-  </shown>|<\hidden>
+  </hidden>|<\hidden>
     <mytitle|Perturbation theory and counterterms>
 
     <\with|font-size|0.9>
@@ -2074,8 +2093,8 @@
 
     <math|\<Phi\><rsub|t>> is a noisy <strong|observation> of
     <math|\<Phi\><rsub|T>>, with precision <math|\<cal-R\><rsub|t>> gained,
-    and <math|\<mu\><rsub|t>> the <strong|posterior>. Basic (identity-control) case:
-    <math|\<cal-R\><rsub|t>=t>.
+    and <math|\<mu\><rsub|t>> the <strong|posterior>. Basic
+    (identity-control) case: <math|\<cal-R\><rsub|t>=t>.
 
     <\itemize>
       <item><strong|Martingale:> Itô splits variance and entropy into
@@ -2091,7 +2110,8 @@
 
       <item><strong|Algorithms:> sampling
       (El<nbsp>Alaoui\UMontanari\USellke), denoising diffusions (Montanari);
-      <math|\<eta\><rsub|t>> is minus the score, seen through <math|J<rsub|t>>.
+      <math|\<eta\><rsub|t>> is minus the score, seen through
+      <math|J<rsub|t>>.
     </itemize>
   </hidden>|<\hidden>
     <mytitle|Entropy along the localisation>
@@ -2242,7 +2262,8 @@
     <\itemize>
       <item><strong|Three constructions> of the interacting measure,
       renormalisation, control and filtering, produce one forward\Ubackward
-      system. Backward in resolution it is a linear Gaussian blurring of <math|\<nu\><rsub|T>>.
+      system. Backward in resolution it is a linear Gaussian blurring of
+      <math|\<nu\><rsub|T>>.
 
       <item>In <strong|force coordinates> the system has no drift, trees are
       integrated exactly, and the propagator is the conditional covariance.
