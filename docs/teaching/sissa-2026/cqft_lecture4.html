@@ -91,8 +91,7 @@
           </table>
         </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
           <tr>
-            <td><i>November 2026 <class style="font-family: Times New Roman">&mdash;</class>
-            <em>provisional</em></i></td>
+            <td><i>SISSA, November 2026</i></td>
           </tr>
         </table></td>
       </tr>
@@ -109,23 +108,27 @@
         measure can be generated in three ways: as a renormalisation group
         decomposition of the covariance, as an optimal control problem, whose
         dynamic programming equation is the Polchinski equation, and as a
-        filtering problem, where the regulator is the information gained on
-        the terminal field. The three views meet in one forward&ndash;backward
-        system for a field and a force, and its natural coordinates are the
-        force coordinates: the forward equation loses its drift, and the
-        conditional covariance becomes the propagator. All this can be said in
-        terms of forces, propagators and covariances. In the gradient case
-        there is a parallel story for potentials: the value function generates
-        the canonical transformation to force coordinates, the Legendre
-        transform of the log-partition function of the filter gives the
-        effective average action, and its flow is the Wetterich equation. We
-        then discuss stochastic observables, the field equation at every
-        resolution, whose noise is a filtered Gaussian noise and therefore
-        sub-Gaussian, and the passage to infinite volume. The appendices
-        contain the algebra of the flow, perturbation theory and counterterms,
-        and the functional inequalities that follow from the localisation. The
-        treatment is formal: we compute as if all objects were smooth and
-        integrable, and we indicate where the real difficulties lie.</font>
+        filtering problem: the field at resolution \(t\) is a noisy
+        observation of the terminal field, the Polchinski process is this
+        observation written in its own filtration, and backward in resolution
+        its dynamics is linear, with Gaussian transitions, started from the
+        interacting measure. The three views meet in one
+        forward&ndash;backward system for a field and a force, and its natural
+        coordinates are the force coordinates: the forward equation loses its
+        drift, and the conditional covariance becomes the propagator. All this
+        can be said in terms of forces, propagators and covariances. In the
+        gradient case there is a parallel story for potentials: the value
+        function generates the canonical transformation to force coordinates,
+        the Legendre transform of the log-partition function of the filter
+        gives the effective average action, and its flow is the Wetterich
+        equation. We then discuss stochastic observables, the field equation
+        at every resolution, whose noise is a filtered Gaussian noise and
+        therefore sub-Gaussian, and the passage to infinite volume. The
+        appendices contain the algebra of the flow, perturbation theory and
+        counterterms, and the functional inequalities that follow from the
+        localisation. The treatment is formal: we compute as if all objects
+        were smooth and integrable, and we indicate where the real
+        difficulties lie.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -133,7 +136,7 @@
         Contents
       </div>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">2</a>
+        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">3</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Structure <span style="margin-left: 5mm"></span> <a href="#auto-2">3</a></font>
@@ -156,203 +159,218 @@
         <span style="margin-left: 5mm"></span> <a href="#auto-7">4</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">The field as a process <span style="margin-left: 5mm"></span> <a href="#auto-8">4</a></font>
+        <font style="font-size: 92.0%">The field as a process <span style="margin-left: 5mm"></span> <a href="#auto-8">5</a></font>
       </p>
       <p>
         7.2<span style="margin-left: 1em"></span>Optimal control: the Polchinski equation <span
-        style="margin-left: 5mm"></span> <a href="#auto-10">5</a>
+        style="margin-left: 5mm"></span> <a href="#auto-10">6</a>
       </p>
       <p>
         <font style="font-size: 92.0%">The control problem <span style="margin-left: 5mm"></span> <a href="#auto-11">6</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">Euler&ndash;Lagrange equation \(=\) FBSDE <span style="margin-left: 5mm"></span>
-        <a href="#auto-12">6</a></font>
+        <a href="#auto-12">7</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Entropy <span style="margin-left: 5mm"></span> <a href="#auto-13">6</a></font>
+        <font style="font-size: 92.0%">Entropy <span style="margin-left: 5mm"></span> <a href="#auto-13">7</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Generating functionals <span style="margin-left: 5mm"></span> <a href="#auto-14">6</a></font>
+        <font style="font-size: 92.0%">Generating functionals <span style="margin-left: 5mm"></span> <a href="#auto-14">7</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">Pontryagin's maximum principle <span style="margin-left: 5mm"></span> <a
         href="#auto-15">7</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">The costate is a gradient <span style="margin-left: 5mm"></span> <a href="#auto-16">7</a></font>
+        <font style="font-size: 92.0%">The costate is a gradient <span style="margin-left: 5mm"></span> <a href="#auto-16">8</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">The Hamiltonian of the field <span style="margin-left: 5mm"></span> <a
-        href="#auto-17">7</a></font>
+        href="#auto-17">8</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">With noise <span style="margin-left: 5mm"></span> <a href="#auto-18">7</a></font>
+        <font style="font-size: 92.0%">With noise <span style="margin-left: 5mm"></span> <a href="#auto-18">8</a></font>
       </p>
       <p>
         7.3<span style="margin-left: 1em"></span>Filtering: measuring the field <span style="margin-left: 5mm"></span>
         <a href="#auto-19">8</a>
       </p>
       <p>
-        7.4<span style="margin-left: 1em"></span>Where the three views meet <span style="margin-left: 5mm"></span>
-        <a href="#auto-20">9</a>
+        <font style="font-size: 92.0%">The terminal field as a hidden signal <span style="margin-left: 5mm"></span>
+        <a href="#auto-20">9</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-22">9</a>
+        <font style="font-size: 92.0%">Generation by denoising <span style="margin-left: 5mm"></span> <a href="#auto-21">10</a></font>
+      </p>
+      <p>
+        7.4<span style="margin-left: 1em"></span>Where the three views meet <span style="margin-left: 5mm"></span>
+        <a href="#auto-22">11</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-24">12</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>8<span style="margin-left: 1em"></span>Force coordinates and potentials</b> <span
-        style="margin-left: 5mm"></span> <a href="#auto-23">10</a>
+        style="margin-left: 5mm"></span> <a href="#auto-25">12</a>
       </p>
       <p>
         8.1<span style="margin-left: 1em"></span>The force and a Burgers equation <span style="margin-left: 5mm"></span>
-        <a href="#auto-24">10</a>
+        <a href="#auto-26">12</a>
       </p>
       <p>
         8.2<span style="margin-left: 1em"></span>Removing the predictable drift <span style="margin-left: 5mm"></span>
-        <a href="#auto-26">11</a>
+        <a href="#auto-28">13</a>
       </p>
       <p>
         8.3<span style="margin-left: 1em"></span>The FBSDE in the forecast coordinate <span
-        style="margin-left: 5mm"></span> <a href="#auto-27">11</a>
+        style="margin-left: 5mm"></span> <a href="#auto-29">14</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">A one-dimensional model: Burgers and Lax&ndash;Oleinik
+        <span style="margin-left: 5mm"></span> <a href="#auto-30">14</a></font>
       </p>
       <p>
         8.4<span style="margin-left: 1em"></span>Conditional moments <span style="margin-left: 5mm"></span> <a
-        href="#auto-28">12</a>
+        href="#auto-31">15</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Brascamp&ndash;Lieb and Cram&eacute;r&ndash;Rao bounds
-        <span style="margin-left: 5mm"></span> <a href="#auto-29">13</a></font>
+        <span style="margin-left: 5mm"></span> <a href="#auto-32">15</a></font>
       </p>
       <p>
         8.5<span style="margin-left: 1em"></span>Potentials: the value function as a generator
-        <span style="margin-left: 5mm"></span> <a href="#auto-31">13</a>
+        <span style="margin-left: 5mm"></span> <a href="#auto-34">16</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Phase space and Lagrangian graphs <span style="margin-left: 5mm"></span> <a
-        href="#auto-32">14</a></font>
+        href="#auto-35">16</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">The free action generates the shear <span style="margin-left: 5mm"></span>
-        <a href="#auto-33">14</a></font>
+        <a href="#auto-36">17</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">The value function generates the graph <span style="margin-left: 5mm"></span>
-        <a href="#auto-34">14</a></font>
+        <a href="#auto-37">17</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">No convexity is needed <span style="margin-left: 5mm"></span> <a href="#auto-35">15</a></font>
+        <font style="font-size: 92.0%">No convexity is needed <span style="margin-left: 5mm"></span> <a href="#auto-38">17</a></font>
       </p>
       <p>
         8.6<span style="margin-left: 1em"></span>The Legendre transform and Wetterich's equation
-        <span style="margin-left: 5mm"></span> <a href="#auto-37">15</a>
+        <span style="margin-left: 5mm"></span> <a href="#auto-40">18</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Probabilistic meaning of \(\Gamma\) <span style="margin-left: 5mm"></span>
-        <a href="#auto-39">17</a></font>
+        <a href="#auto-42">20</a></font>
       </p>
       <p>
         8.7<span style="margin-left: 1em"></span>Variational meaning and the tree level <span
-        style="margin-left: 5mm"></span> <a href="#auto-41">17</a>
+        style="margin-left: 5mm"></span> <a href="#auto-44">20</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Constrained free energies <span style="margin-left: 5mm"></span> <a href="#auto-42">17</a></font>
+        <font style="font-size: 92.0%">Constrained free energies <span style="margin-left: 5mm"></span> <a href="#auto-45">20</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">The tree level <span style="margin-left: 5mm"></span> <a href="#auto-43">18</a></font>
+        <font style="font-size: 92.0%">The tree level <span style="margin-left: 5mm"></span> <a href="#auto-46">21</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-44">18</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-47">21</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>9<span style="margin-left: 1em"></span>Observables and field equations</b> <span
-        style="margin-left: 5mm"></span> <a href="#auto-45">19</a>
+        style="margin-left: 5mm"></span> <a href="#auto-48">22</a>
       </p>
       <p>
         9.1<span style="margin-left: 1em"></span>Observables of the interacting theory <span
-        style="margin-left: 5mm"></span> <a href="#auto-46">19</a>
+        style="margin-left: 5mm"></span> <a href="#auto-49">22</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Tangent observables <span style="margin-left: 5mm"></span> <a href="#auto-47">19</a></font>
+        <font style="font-size: 92.0%">Tangent observables <span style="margin-left: 5mm"></span> <a href="#auto-50">22</a></font>
       </p>
       <p>
         9.2<span style="margin-left: 1em"></span>The field equation at every resolution <span
-        style="margin-left: 5mm"></span> <a href="#auto-48">19</a>
+        style="margin-left: 5mm"></span> <a href="#auto-51">22</a>
+      </p>
+      <p>
+        <font style="font-size: 92.0%">The field equation for the forecast <span style="margin-left: 5mm"></span>
+        <a href="#auto-52">23</a></font>
       </p>
       <p>
         9.3<span style="margin-left: 1em"></span>Gaussian bounds for the noise <span style="margin-left: 5mm"></span>
-        <a href="#auto-49">20</a>
+        <a href="#auto-53">24</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">The roughness of the noise <span style="margin-left: 5mm"></span> <a href="#auto-50">21</a></font>
+        <font style="font-size: 92.0%">The roughness of the noise <span style="margin-left: 5mm"></span> <a href="#auto-54">25</a></font>
       </p>
       <p>
-        <font style="font-size: 92.0%">Control of the force <span style="margin-left: 5mm"></span> <a href="#auto-51">22</a></font>
+        <font style="font-size: 92.0%">Control of the force <span style="margin-left: 5mm"></span> <a href="#auto-55">25</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">Consequence for \(\Phi^4_3\) <span style="margin-left: 5mm"></span> <a
-        href="#auto-52">22</a></font>
+        href="#auto-56">26</a></font>
       </p>
       <p>
-        9.4<span style="margin-left: 1em"></span>Infinite volume <span style="margin-left: 5mm"></span> <a href="#auto-53">22</a>
+        9.4<span style="margin-left: 1em"></span>Infinite volume <span style="margin-left: 5mm"></span> <a href="#auto-57">26</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Differences of free energies <span style="margin-left: 5mm"></span> <a
-        href="#auto-54">23</a></font>
+        href="#auto-58">26</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-55">24</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-59">27</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>Appendices: additional material</b> <span style="margin-left: 5mm"></span> <a href="#auto-56">24</a>
+        <b>Appendices: additional material</b> <span style="margin-left: 5mm"></span> <a href="#auto-60">28</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>Appendix A<span style="margin-left: 1em"></span>Algebraic structure of the Polchinski
-        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-57">24</a>
+        flow</b> <span style="margin-left: 5mm"></span> <a href="#auto-61">28</a>
       </p>
       <p>
         A.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps <span
-        style="margin-left: 5mm"></span> <a href="#auto-58">24</a>
+        style="margin-left: 5mm"></span> <a href="#auto-62">28</a>
       </p>
       <p>
         A.2<span style="margin-left: 1em"></span>Perturbation theory and counterterms <span
-        style="margin-left: 5mm"></span> <a href="#auto-59">25</a>
+        style="margin-left: 5mm"></span> <a href="#auto-63">28</a>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-61">26</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-65">29</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
         <b>Appendix B<span style="margin-left: 1em"></span>Stochastic localisation</b> <span
-        style="margin-left: 5mm"></span> <a href="#auto-62">26</a>
+        style="margin-left: 5mm"></span> <a href="#auto-66">30</a>
       </p>
       <p>
-        <font style="font-size: 92.0%">Why it is useful <span style="margin-left: 5mm"></span> <a href="#auto-63">26</a></font>
+        <font style="font-size: 92.0%">Why it is useful <span style="margin-left: 5mm"></span> <a href="#auto-67">30</a></font>
       </p>
       <p>
         B.1<span style="margin-left: 1em"></span>Log-Sobolev inequalities along the localisation
-        <span style="margin-left: 5mm"></span> <a href="#auto-64">27</a>
+        <span style="margin-left: 5mm"></span> <a href="#auto-68">30</a>
       </p>
       <p>
         <font style="font-size: 92.0%">Entropy as quadratic variation <span style="margin-left: 5mm"></span> <a
-        href="#auto-65">27</a></font>
+        href="#auto-69">30</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">In terms of the conditional covariance <span style="margin-left: 5mm"></span>
-        <a href="#auto-66">27</a></font>
+        <a href="#auto-70">31</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">An application: the KLS conjecture <span style="margin-left: 5mm"></span>
-        <a href="#auto-67">28</a></font>
+        <a href="#auto-71">32</a></font>
       </p>
       <p>
         <font style="font-size: 92.0%">The connection with Bauerschmidt&ndash;Bodineau <span
-        style="margin-left: 5mm"></span> <a href="#auto-68">29</a></font>
+        style="margin-left: 5mm"></span> <a href="#auto-72">32</a></font>
       </p>
       <p>
-        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-69">29</a>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-73">33</a>
       </p>
       <p style="margin-top: 1em; margin-bottom: 0.5em">
-        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-70">29</a>
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-74">33</a>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
@@ -411,8 +429,8 @@
         \(G\), \(\mu_m\) the GFF, \(\langle f, g \rangle = \int fg\) for real
         functions. For a functional \(F\) on smooth fields, \(\mathrm{D} F
         (\varphi) \in \mathcal{S}' (\mathcal{M})\) and \(\mathrm{D}^2 F
-        (\varphi)\) are its first and second derivatives, \(D_h F = \langle
-        \mathrm{D} F, h \rangle\). \(H_n  (a ; c)\) are the Hermite
+        (\varphi)\) are its first and second derivatives, \(\mathrm{D}_h F =
+        \langle \mathrm{D} F, h \rangle\). \(H_n  (a ; c)\) are the Hermite
         polynomials of variance \(c\), and \(\mu^Q\) is the centred Gaussian
         measure with covariance \(Q\).
       </div>
@@ -474,10 +492,12 @@
       </li>
       <li>
         <p>
-          <strong>Filtering</strong> (Section <a href="#sec:filtering">7.3</a>). Measure the
-          terminal field with increasing precision. The law of the terminal
-          field given the measurement is the posterior, and the regulator is
-          the information gained.
+          <strong>Filtering</strong> (Section <a href="#sec:filtering">7.3</a>). Observe the
+          terminal field through noise, with increasing precision. The field
+          at resolution \(t\) is the observation, the force is what it reveals
+          about the terminal field, and backward in resolution the process has
+          a linear dynamics with Gaussian transitions, started from the
+          interacting measure.
         </p>
       </li>
     </ul>
@@ -1089,19 +1109,26 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
       survey). The idea is to write a measure as a mixture of simpler ones,
       through a measure-valued martingale driven by noise. Proposition <a
       href="#prop:marginals">7.2</a> says that the Polchinski process does exactly this for
-      \(\nu_T\).
+      \(\nu_T\). What Eldan's construction adds to the picture of Section <a
+      href="#sec:rg">7.1</a> is a statistical reading: the Polchinski process is a
+      noisy observation of its own terminal value, and its drift is what an
+      optimal filter learns from this observation.
     </p>
     <p>
-      What Eldan's construction adds to the picture of Section <a href="#sec:rg">7.1</a>
-      is a statistical reading: the process is a measurement. Assume that all
-      the deterministic covariance operators are functions of \(A\), hence
-      commute, and let \(K = Q_T^{- 1}\), \(J_t = KQ_t\), so that \(J_0 = 0\),
-      \(J_T = 1\). For the heat profile, \(K = A \mathrm{e}^{A / T^2}\) and
-      \(J_t = \mathrm{e}^{- A (t^{- 2} - T^{- 2})}\) is a heat semigroup,
-      which tends to \(\mathrm{e}^{- A / t^2}\) as \(T \to \infty\). Given its
-      terminal value, the interacting field is still the Gaussian bridge, as
-      the density of \(\mathbb{P}\) with respect to \(\mathbb{P}_0\) depends
-      on \(X_T\) only:
+      <div style="display: inline">
+        <a id="auto-20"></a>
+      </div>
+      <h5>The terminal field as a hidden signal.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Assume that all the deterministic covariance operators are functions
+        of \(A\), hence commute, and let \(K = Q_T^{- 1}\), \(J_t = KQ_t\), so
+        that \(J_0 = 0\), \(J_T = 1\). For the heat profile, \(K = A
+        \mathrm{e}^{A / T^2}\) and \(J_t = \mathrm{e}^{- A (t^{- 2} - T^{-
+        2})}\) is a heat semigroup, which tends to \(\mathrm{e}^{- A / t^2}\)
+        as \(T \to \infty\). Given its terminal value, the interacting field
+        is still the Gaussian bridge, as the density of \(\mathbb{P}\) with
+        respect to \(\mathbb{P}_0\) depends on \(X_T\) only:
+      </div>
     </p>
     <table width="100%">
       <tr>
@@ -1113,12 +1140,234 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
       </tr>
     </table>
     <p>
-      Let \(\mathcal{R}_t := S_t^{- 1} - Q_T^{- 1}\), the
-      <strong>regulator</strong>, so that \(\mathcal{R}_0 = 0\) and
-      \(\dot{\mathcal{R}}_t = S_t^{- 1} \dot{Q}_t S_t^{- 1} \geqslant 0\).
-      Since \(S_t = Q_T (1 - J_t)\), we have \(S_t^{- 1} J_t =\mathcal{R}_t\),
-      and \(j_t = S_t^{- 1} \Phi_t\) is a noisy measurement of the terminal
-      field, with signal-to-noise ratio the regulator:
+      Read <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class> as a statistical model.
+      The <em>signal</em> \(\Phi_T\) is hidden, with <em>prior</em> \(\nu_T\),
+      and the path \((\Phi_s)_{s \leqslant t}\) is an <em>observation</em> of
+      it: a copy attenuated by \(J_t\) and corrupted by a Gaussian noise
+      independent of the signal. Infinitesimally, the bridge is the Doob
+      transform of \(X\) by the Gaussian density of the remaining increment
+      \(\Phi_T - \Phi_t \sim \mu^{S_t}\), so that
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:observation"></a>\(\displaystyle \mathrm{d} \Phi_t =
+        \dot{Q}_t S_t^{- 1} (\Phi_T - \Phi_t) \hspace{0.17em}
+\mathrm{d} t +
+        \dot{Q}_t^{1 / 2} \hspace{0.17em} \mathrm{d} B_t,\)</td>
+        <td align="right">(7.15)</td>
+      </tr>
+    </table>
+    <p>
+      with \(B\) a Brownian motion independent of \(\Phi_T\), in the
+      filtration enlarged by \(\sigma (\Phi_T)\): at each resolution the field
+      is pulled towards the hidden terminal field, and the pull is seen
+      through noise. The <em>filtering problem</em> is to estimate \(\Phi_T\)
+      from \(\mathcal{F}_t = \sigma (\Phi_s : s \leqslant t)\), the filtration
+      of the Polchinski process itself. Let \(\psi_t =\mathbb{E}_t [\Phi_T]\),
+      \(\text{Cov}_t = \text{Cov} (\Phi_T |\mathcal{F}_t)\), and let
+    </p>
+    <center>
+      \(\displaystyle \mathcal{R}_t := S_t^{- 1} - Q_T^{- 1}, \qquad
+      \mathcal{R}_0 = 0, \qquad
+\dot{\mathcal{R}}_t = S_t^{- 1} \dot{Q}_t
+      S_t^{- 1} \geqslant 0,\)
+    </center>
+    <p>
+      be the <strong>regulator</strong>.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">7.6</class>.
+        </strong><i><class style="font-style: normal"><strong>(Filtering, formal; a theorem at
+        finite cutoff) </strong></class><a id="prop:filtering"></a></i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <i><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                The conditional law of \(\Phi_T\) given \(\mathcal{F}_t\) is
+                the Bayesian posterior
+              </p>
+              <table width="100%">
+                <tr>
+                  <td width="100%" align="center"><a id="eq:posterior"></a>\(\displaystyle \mu_t^{\Phi_t}
+                  (\mathrm{d} y) \propto \mathrm{e}^{\langle S_t^{- 1} \Phi_t,
+                  y
+\rangle - \frac{1}{2} \langle y, \mathcal{R}_t y \rangle}
+                  \nu_T (\mathrm{d} y)
+.\)</td>
+                  <td align="right">(7.16)</td>
+                </tr>
+              </table>
+              <p>
+                It depends on the path only through \(\Phi_t\), a sufficient
+                statistic, and \(\mathcal{R}_t\) is the precision gained on
+                \(\Phi_T\).
+              </p>
+            </li>
+            <li>
+              <p>
+                The Brownian motion \(W\) of the FBSDE <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class>
+                is the <strong>innovation</strong> of the filter, \(W_t = B_t
+                + \int_0^t \dot{Q}_s^{1 / 2} S_s^{- 1} (\Phi_T -
+                \psi_s)
+\hspace{0.17em} \mathrm{d} s\), and the force is the
+                posterior mean of the pull in <class style="font-style: normal">(<a href="#eq:observation">7.15</a>)</class>,
+                per unit \(\dot{Q}_t\):
+              </p>
+              <center>
+                \(\displaystyle F_t =\mathbb{E}_t [S_t^{- 1} (\Phi_T -
+                \Phi_t)], \qquad \text{i.e.} \quad
+\psi_t = \Phi_t + S_t F_t
+                .\)
+              </center>
+              <p>
+                So <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class> is the observation
+                equation <class style="font-style: normal">(<a href="#eq:observation">7.15</a>)</class> written in
+                its own filtration.
+              </p>
+            </li>
+            <li>
+              <p>
+                Every observable \(O_t =\mathbb{E}_t [G (\Phi_T)]\) solves the
+                filter equation
+              </p>
+              <center>
+                \(\displaystyle \mathrm{d} O_t = \langle \text{Cov}_t (G
+                (\Phi_T), \Phi_T), S_t^{- 1}
+\dot{Q}_t^{1 / 2} \hspace{0.17em}
+                \mathrm{d} W_t \rangle, \qquad \text{in
+particular} \quad
+                \mathrm{d} \psi_t = \text{Cov}_t S_t^{- 1} \dot{Q}_t^{1 /
+                2}
+\hspace{0.17em} \mathrm{d} W_t .\)
+              </center>
+            </li>
+          </ol>
+        </div></i>
+      </div>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>(a) By Proposition <a href="#prop:marginals">7.2</a> the
+      conditional law is \(\mu_t^{\Phi_t}\), the tilt of \(\mu^{S_t} (\cdot -
+      \Phi_t)\) by \(\mathrm{e}^{- V_T}\). The ratio of the Gaussian densities
+      of \(\mu^{S_t} (\cdot - x)\) and \(\mu^{Q_T}\) at \(y\) is
+      \(\mathrm{e}^{\langle S_t^{- 1} x, y \rangle - \frac{1}{2} \langle
+      y,
+\mathcal{R}_t y \rangle}\) up to a function of \(x\); equivalently,
+      apply Bayes' formula to the likelihood of <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class>.
+      (b) Integrate <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class> from \(t\) to
+      \(T\) and condition on \(\mathcal{F}_t\): since \(F\) is a martingale,
+      \(\mathbb{E}_t \int_t^T \dot{Q}_s F_s \hspace{0.17em} \mathrm{d} s = S_t
+      F_t\), so \(\psi_t = \Phi_t + S_t F_t\), and the posterior mean of the
+      drift of <class style="font-style: normal">(<a href="#eq:observation">7.15</a>)</class> is \(\dot{Q}_t S_t^{-
+      1} (\psi_t - \Phi_t) = \dot{Q}_t F_t\). Comparing the two expressions
+      <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class> and <class style="font-style: normal">(<a href="#eq:observation">7.15</a>)</class>
+      of \(\mathrm{d} \Phi_t\) gives the formula for \(W\). (c) \(O_t = G_t
+      (\Phi_t)\) with \(G_t (x) = \mu_t^x (G)\) is a martingale, so the drift
+      in It&ocirc;'s formula vanishes, and differentiating <class style="font-style: normal">(<a
+      href="#eq:posterior">7.16</a>)</class> in \(x\) gives \(\mathrm{D} G_t (x) = S_t^{- 1}
+      \text{Cov}_t (\Phi_T, G (\Phi_T))\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      So the Polchinski process is a filter. The interacting measure is the
+      prior on a hidden field; at resolution \(t\) one has observed the coarse
+      field \(\Phi_t\), and \(\mu_t^{\Phi_t}\) is what is known about the fine
+      one. The forecast \(\psi_t\) is the posterior mean of the hidden field,
+      and \(\dot{Q}_t F_t\) is the posterior mean of its pull on the observed
+      one. For the Gaussian prior \(\mu^{Q_T}\) the increments are
+      independent, so the posterior mean is \(\Phi_t\) itself and \(F = 0\):
+      \(\Phi_t\) is the estimate that ignores the interaction and \(\psi_t\)
+      the one that includes it. The effective potential is a likelihood ratio:
+      by the proof of Theorem <a href="#thm:fbsde">7.3</a>, \(Z_T^{- 1} \mathrm{e}^{- V_t
+      (\Phi_t)}\) is the likelihood ratio of the observation up to resolution
+      \(t\) under the interacting and under the Gaussian prior, and the
+      Polchinski equation is the equation of its logarithm.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">7.7</class>.
+        </strong><i><class style="font-style: normal"><strong>(Backward in resolution)
+        </strong></class><a id="prop:reversal"></a> <class style="font-style: normal">(formal)</class> Under
+        \(\mathbb{P}\) the reversed process \(\hat{\Phi}_s := \Phi_{T - s}\),
+        \(s \in [0, T]\), solves the linear equation</i>
+      </p>
+      <i><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:reversal"></a>\(\displaystyle \mathrm{d} \hat{\Phi}_s
+          = - \dot{Q}_{T - s} Q_{T - s}^{- 1} \hat{\Phi}_s
+\hspace{0.17em}
+          \mathrm{d} s + \dot{Q}_{T - s}^{1 / 2} \hspace{0.17em}
+\mathrm{d}
+          \hat{W}_s, \qquad \hat{\Phi}_0 = \Phi_T \sim \nu_T,\)</td>
+          <td align="right">(7.17)</td>
+        </tr>
+      </table></i>
+      <p style="margin-bottom: 1em">
+        <i>with \(\hat{W}\) a Brownian motion independent of \(\Phi_T\), and
+        its solution is <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class>. Backward in
+        resolution, the Polchinski process is a linear Markov process, with
+        Gaussian transition kernels which do not depend on the interaction,
+        started from the interacting measure. It is not a Gaussian process:
+        its marginals \(\nu_t\) are not Gaussian.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>Under \(\mathbb{P}_0\), \(X\) is a
+      centred Gaussian process with independent increments, so its reversal is
+      a Gaussian Markov process: for \(t < u\), the law of \(X_t\) given
+      \((X_r)_{r \geqslant u}\) is \(N (Q_t Q_u^{- 1} X_u, Q_t - Q_t Q_u^{- 1}
+      Q_t)\), and letting \(u \downarrow t\) gives the drift and the diffusion
+      of <class style="font-style: normal">(<a href="#eq:reversal">7.17</a>)</class>. Since \(\mathrm{d}
+      \mathbb{P}/ \mathrm{d} \mathbb{P}_0\) is a function of \(X_T\), the
+      initial value of the reversed process, these transition kernels are the
+      same under \(\mathbb{P}\), and only the initial law changes, from
+      \(\mu^{Q_T}\) to \(\nu_T\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-21"></a>
+      </div>
+      <h5>Generation by denoising.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        So two dynamics have the same marginals \(\nu_t\). Backward in
+        resolution, the interacting field is progressively blurred by Gaussian
+        noise, \(\Phi_t = J_t \Phi_T + \zeta_t\), until nothing is left at \(t
+        = 0\); this dynamics does not know the interaction. Forward, the
+        Polchinski process undoes the blurring, and all the interaction sits
+        in its drift. For \(0 < t \leqslant T\), at finite cutoff, the
+        time-reversal formula for diffusions says that the forward drift is
+        minus the backward one plus \(\dot{Q}_t\) times the score of the
+        marginal: if \(p_t\) is the density of \(\nu_t\),
+      </div>
+    </p>
+    <center>
+      \(\displaystyle \dot{Q}_t F_t = \dot{Q}_t Q_t^{- 1} \Phi_t + \dot{Q}_t
+      \mathrm{D} \log p_t
+(\Phi_t), \qquad \text{i.e.} \quad F_t = \mathrm{D}
+      \log p_t (\Phi_t) + Q_t^{-
+1} \Phi_t :\)
+    </center>
+    <p>
+      the force is the score of \(\nu_t\) relative to that of the Gaussian
+      reference \(\mu^{Q_t}\), as \(\nu_t \propto \mathrm{e}^{- V_t}
+      \mu^{Q_t}\) requires. The forecast is the optimal denoiser, and
+      Tweedie's formula \(\psi_t = J_t^{- 1} (\Phi_t + Q_t (1 - J_t)
+      \mathrm{D} \log p_t (\Phi_t))\) is again \(\psi_t = \Phi_t + S_t F_t\).
+      This is the structure of score-based generative models (diffusion
+      models), with \(\nu_T\) as the data distribution, the blurring as the
+      noising process and the Polchinski process as the generating dynamics.
+    </p>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Remark <class style="font-style: normal">7.8</class>. </strong><class style="font-style: normal"><strong>(The
+      measurement coordinate and the literature) </strong></class><a id="rem:measurement"></a>
+      In the literature on stochastic localisation [<a href="#bib-Eld13">Eld13</a>, <a
+      href="#bib-Eld23">Eld23</a>, <a href="#bib-BBD24">BBD24</a>] the observation is written in
+      another coordinate. Let \(j_t := S_t^{- 1} \Phi_t\). Since \(S_t^{- 1}
+      J_t =\mathcal{R}_t\), <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class> becomes
+      a linear measurement of the terminal field with signal-to-noise ratio
+      \(\mathcal{R}_t\):
     </p>
     <table width="100%">
       <tr>
@@ -1128,112 +1377,62 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
         N_t] =\mathcal{R}_{s \wedge t}, \quad N \text{
 independent of } \Phi_T
         . \)</td>
-        <td align="right">(7.15)</td>
+        <td align="right">(7.18)</td>
       </tr>
     </table>
     <p>
-      Let \(\mathcal{K}_t (j) = \text{log} \int \mathrm{e}^{\langle j, y
+      In this coordinate <class style="font-style: normal">(<a href="#eq:posterior">7.16</a>)</class> is an
+      exponential family with natural parameter \(j_t\) and log-partition
+      function \(\mathcal{K}_t (j) = \text{log} \int \mathrm{e}^{\langle j, y
       \rangle -
 \frac{1}{2} \langle y, \mathcal{R}_t y \rangle} \nu_T
       (\hspace{0.17em}
-\mathrm{d} y)\). Note that \(\mathcal{K}_t (S_t^{- 1}
-      x) = \frac{1}{2} \langle x, S_t^{- 1} x \rangle - V_t
-(x)\) up to a
-      function of \(t\).
+\mathrm{d} y)\), and \(\mathcal{K}_t (S_t^{- 1} x) =
+      \frac{1}{2} \langle x, S_t^{- 1} x \rangle - V_t
+(x)\) up to a function
+      of \(t\). Then \(\psi_t = \mathrm{D} \mathcal{K}_t (j_t)\),
+      \(\text{Cov}_t = \mathrm{D}^2 \mathcal{K}_t (j_t)\), \(\hspace{0.17em}
+      \mathrm{d} j_t = \dot{\mathcal{R}}_t \psi_t \hspace{0.17em}
+\mathrm{d} t
+      + \dot{\mathcal{R}}_t^{1 / 2} \hspace{0.17em} \mathrm{d} W_t\) with the
+      same innovation \(W\), and
     </p>
-    <div class="theorem">
-      <p style="margin-top: 1em">
-        <strong class="enunciation-name">Proposition <class style="font-style: normal">7.6</class>.
-        </strong><i><class style="font-style: normal"><strong>(Filtering, formal; a theorem at
-        finite cutoff) </strong></class><a id="prop:filtering"></a>Let \(\mathcal{F}_t\) be
-        generated by \((j_s)_{s \leqslant t}\), and let \(\psi_t =\mathbb{E}_t
-        [\Phi_T]\), \(\text{Cov}_t = \text{Cov} (\Phi_T |\mathcal{F}_t)\).
-        Then:</i>
-      </p>
-      <div style="margin-bottom: 1em">
-        <i><div class="enum-alpha">
-          <ol>
-            <li>
-              <p>
-                The conditional law of \(\Phi_T\) given \(\mathcal{F}_t\) is
-                \(\mu_t^{\Phi_t}\), the Bayesian posterior, proportional to
-                \(\mathrm{e}^{\langle j_t, y \rangle - \frac{1}{2} \langle y,
-                \mathcal{R}_t y
-\rangle} \nu_T (\hspace{0.17em} \mathrm{d}
-                y)\). So \(\psi_t = D\mathcal{K}_t (j_t)\) and \(\text{Cov}_t
-                = D^2 \mathcal{K}_t (j_t)\).
-              </p>
-            </li>
-            <li>
-              <p>
-                The Brownian motion \(W\) of the FBSDE is the
-                <strong>innovation</strong> of the filter: \(\hspace{0.17em}
-                \mathrm{d} j_t = \dot{\mathcal{R}}_t \psi_t
-                \hspace{0.17em}
-\mathrm{d} t + \dot{\mathcal{R}}_t^{1 / 2}
-                \hspace{0.17em} \mathrm{d} W_t\) and \(\hspace{0.17em}
-                \mathrm{d} \psi_t = \text{Cov}_t \dot{\mathcal{R}}_t^{1 /
-                2}
-\hspace{0.17em} \mathrm{d} W_t\). Moreover \(\psi_t =
-                \Phi_t + S_t F_t\).
-              </p>
-            </li>
-            <li>
-              <p>
-                The log-partition function solves the Hamilton&ndash;Jacobi
-                equation \(\partial_t \mathcal{K}_t + \frac{1}{2} \text{Tr}
-                (\dot{\mathcal{R}}_t D^2
-\mathcal{K}_t) + \frac{1}{2} \langle
-                D\mathcal{K}_t, \dot{\mathcal{R}}_t
-D\mathcal{K}_t \rangle =
-                0\): this is the Polchinski equation in the variable \(j\).
-              </p>
-            </li>
-          </ol>
-        </div></i>
-      </div>
-    </div>
-    <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>(a) Given \(\Phi_T = y\), the density of
-      the path of \(j\) with respect to that of \(N\) is \(\mathrm{e}^{\langle
-      j_t, y \rangle - \frac{1}{2} \langle y, \mathcal{R}_t y
-\rangle}\)
-      (Girsanov), and Bayes' formula applies. (b) Integrate (<a href="#eq:fbsde">7.6</a>)
-      from \(t\) to \(T\) and condition on \(\mathcal{F}_t\): since \(F\) is a
-      martingale, \(\mathbb{E}_t \int_t^T \dot{Q}_s F_s \hspace{0.17em}
-      \mathrm{d} s = S_t F_t\), so \(\psi_t = \Phi_t + S_t F_t\).
-      Differentiating \(j = S^{- 1} \Phi\) in (<a href="#eq:fbsde">7.6</a>), with
-      \(\partial_t S_t^{- 1} = \dot{\mathcal{R}}_t\), gives the first
-      equation. Since \(\psi_t = D\mathcal{K}_t (j_t)\) is a martingale, the
-      drift in It&ocirc;'s formula vanishes and the martingale part is \(D^2
-      \mathcal{K}_t (j_t) \dot{\mathcal{R}}_t^{1 / 2} \hspace{0.17em}
-      \mathrm{d}
-W_t\). (c) \(\partial_t \mathcal{K}= - \frac{1}{2} \mathbb{E}
-      \langle y, \dot{\mathcal{R}}
-y \rangle\) and \(\text{Tr}
-      (\dot{\mathcal{R}} D^2 \mathcal{K}) =\mathbb{E} \langle
-      y,
-\dot{\mathcal{R}} y \rangle - \langle \psi, \dot{\mathcal{R}} \psi
-      \rangle\).<span style="margin-left: 1em"></span>\(\Box\)
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:K-HJ"></a>\(\displaystyle \partial_t \mathcal{K}_t
+        + \frac{1}{2} \text{Tr} (\dot{\mathcal{R}}_t
+\mathrm{D}^2
+        \mathcal{K}_t) + \frac{1}{2} \langle \mathrm{D}
+        \mathcal{K}_t,
+\dot{\mathcal{R}}_t \mathrm{D} \mathcal{K}_t \rangle =
+        0,\)</td>
+        <td align="right">(7.19)</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 1em">
+      the Polchinski equation in the variable \(j\) [<a href="#bib-BBD24">BBD24</a>]
+      (\(\partial_t \mathcal{K}= - \frac{1}{2} \mathbb{E} \langle y,
+      \dot{\mathcal{R}}
+y \rangle\) and \(\text{Tr} (\dot{\mathcal{R}}
+      \mathrm{D}^2 \mathcal{K}) =\mathbb{E} \langle y,
+\dot{\mathcal{R}} y
+      \rangle - \langle \psi, \dot{\mathcal{R}} \psi \rangle\), expectations
+      under the posterior). The basic form of Eldan's scheme is the profile
+      \(S_t = (Q_T^{- 1} + t)^{- 1}\), \(t \in [0, \infty)\) (the terminal
+      resolution is then \(t = \infty\), and \(Q_T\) is the cutoff
+      covariance), where \(\mathcal{R}_t = t\) and \(j_t = t \Phi_T + N_t\)
+      with \(N\) a Brownian motion; Eldan's original construction [<a href="#bib-Eld13">Eld13</a>]
+      uses an adapted control matrix. This is the profile of Lectures
+      5&ndash;6.
     </p>
-    <p>
-      So the log-partition function of the filter is the effective potential
-      in another coordinate, and the Polchinski flow is its
-      Hamilton&ndash;Jacobi equation [<a href="#bib-BBD24">BBD24</a>]. The basic form of
-      Eldan's scheme, with identity control, is the profile \(S_t = (Q_T^{- 1}
-      + t)^{- 1}\), \(t \in [0, \infty)\), where \(\mathcal{R}_t = t\) and
-      \(j_t = t \Phi_T + N_t\) with \(N\) a Brownian motion; Eldan's original
-      construction [<a href="#bib-Eld13">Eld13</a>] uses an adapted control matrix. This
-      is the profile of Lectures 5&ndash;6.
-    </p>
-    <h3 id="auto-20"><a id="sec:meet"></a>7.4<span style="margin-left: 1em"></span>Where the three views meet<span
+    <h3 id="auto-22"><a id="sec:meet"></a>7.4<span style="margin-left: 1em"></span>Where the three views meet<span
     style="margin-left: 1em"></span></h3>
     <p>
       The three constructions give one process. Renormalisation produces it as
       the field at resolution \(t\) with its effective drift (Theorem <a href="#thm:fbsde">7.3</a>),
       control as the optimal state (<a href="#eq:EL">7.11</a>), and filtering as the
-      rescaled measurement \(S_t j_t\) (Proposition <a href="#prop:filtering">7.6</a>). Each of
-      them has a name for each object:
+      observation written in its own filtration (Proposition <a href="#prop:filtering">7.6</a>).
+      Each of them has a name for each object:
     </p>
     <center>
       <div style="margin-top: 0.5em; margin-bottom: 0.5em">
@@ -1275,7 +1474,7 @@ y \rangle\) and \(\text{Tr}
               state
             </p></td>
             <td style="width: 25%; vertical-align: middle; padding-right: 0em"><p>
-              posterior mean for the Gaussian prior, \(S_t j_t\)
+              observation; posterior mean for the Gaussian prior
             </p></td>
           </tr><tr>
             <td style="width: 25%; vertical-align: middle; padding-left: 0em"><p>
@@ -1337,7 +1536,7 @@ y \rangle\) and \(\text{Tr}
               covariance of \(\mu_t^{\Phi_t}\)
             </p></td>
             <td style="width: 25%; vertical-align: middle"><p>
-              \(S_t - S_t D^2 V_t S_t\)
+              \(S_t - S_t \mathrm{D}^2 V_t S_t\)
             </p></td>
             <td style="width: 25%; vertical-align: middle; padding-right: 0em"><p>
               posterior covariance
@@ -1353,8 +1552,8 @@ y \rangle\) and \(\text{Tr}
               value function
             </p></td>
             <td style="width: 25%; vertical-align: middle; padding-right: 0em; border-bottom: 1px solid"><p>
-              \(\frac{1}{2} \langle x, S_t^{- 1} x \rangle -\mathcal{K}_t
-              (S_t^{- 1} x)\), up to a function of \(t\)
+              minus the log-likelihood ratio of the observation, up to \(\log
+              Z_T\)
             </p></td>
           </tr></tbody>
         </table></font>
@@ -1382,7 +1581,7 @@ y \rangle\) and \(\text{Tr}
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 7.2. </b><a id="auto-21"></a>A zero-dimensional Polchinski
+              <b>Figure 7.2. </b><a id="auto-23"></a>A zero-dimensional Polchinski
               process (Exercise <a href="#ex:zero-dim">7.2</a>): \(Q_t = 1 - \mathrm{e}^{-
               t}\), \(T = 5\), \(V_T (x) = \frac{1}{2} x^4 - \frac{3}{2}
               x^2\). Left: the effective force \(F_t = - V_t'\) is almost
@@ -1396,7 +1595,7 @@ y \rangle\) and \(\text{Tr}
         </tr></tbody>
       </table>
     </div>
-    <h3 id="auto-22">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-24">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">7.1</class>.
@@ -1479,7 +1678,7 @@ y \rangle\) and \(\text{Tr}
         = 4\) term of <class style="font-style: normal">(<a href="#eq:second-order">A.6</a>)</class>.</font>
       </p>
     </div>
-    <h2 id="auto-23"><a id="sec:wetterich"></a>8<span style="margin-left: 1em"></span>Force coordinates and
+    <h2 id="auto-25"><a id="sec:wetterich"></a>8<span style="margin-left: 1em"></span>Force coordinates and
     potentials<span style="margin-left: 1em"></span></h2>
     <p>
       The three views agree on the forward&ndash;backward system (<a href="#eq:fbsde-system">7.7</a>),
@@ -1503,7 +1702,7 @@ y \rangle\) and \(\text{Tr}
       to the filter, and the equation for the force is the Wetterich equation
       for the effective average action [<a href="#bib-Wet93">Wet93</a>, <a href="#bib-BTW02">BTW02</a>].
     </p>
-    <h3 id="auto-24"><a id="sec:burgers"></a>8.1<span style="margin-left: 1em"></span>The force and a Burgers
+    <h3 id="auto-26"><a id="sec:burgers"></a>8.1<span style="margin-left: 1em"></span>The force and a Burgers
     equation<span style="margin-left: 1em"></span></h3>
     <p>
       Differentiating <class style="font-style: normal">(<a href="#eq:polchinski">7.8</a>)</class>, the effective
@@ -1535,7 +1734,7 @@ y \rangle\) and \(\text{Tr}
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 8.1. </b><a id="auto-25"></a><a id="fig:polchinski-graphs"></a>The Polchinski equation
+              <b>Figure 8.1. </b><a id="auto-27"></a><a id="fig:polchinski-graphs"></a>The Polchinski equation
               <class style="font-style: normal">(<a href="#eq:polchinski">7.8</a>)</class> and the Burgers
               equation <class style="font-style: normal">(<a href="#eq:burgers">8.1</a>)</class> as graphs. A
               blob with \(n\) legs is the \(n\)-th derivative of \(V_t\), or
@@ -1582,7 +1781,7 @@ y \rangle\) and \(\text{Tr}
       \text{Tr} (\dot{Q} \mathrm{D}^2 F)\) is the It&ocirc; correction, and
       generates the loops.
     </p>
-    <h3 id="auto-26">8.2<span style="margin-left: 1em"></span>Removing the predictable drift<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-28">8.2<span style="margin-left: 1em"></span>Removing the predictable drift<span style="margin-left: 1em"></span></h3>
     <p>
       The drift \(\dot{Q}_t F_t\) of the state is predictable, and the costate
       is a martingale. Hence the drift that remains to be accumulated on \([t,
@@ -1652,7 +1851,7 @@ W_t\).<span style="margin-left: 1em"></span>\(\Box\)
       coordinate \(\psi\) is the <em>interaction picture</em> with respect to
       the noiseless (classical) part of the dynamics.
     </p>
-    <h3 id="auto-27">8.3<span style="margin-left: 1em"></span>The FBSDE in the forecast coordinate<span
+    <h3 id="auto-29">8.3<span style="margin-left: 1em"></span>The FBSDE in the forecast coordinate<span
     style="margin-left: 1em"></span></h3>
     <p>
       Assume that the map
@@ -1777,7 +1976,85 @@ H_t^{\ast} .\)
       \(\mathrm{D} V_T\) by \(-\mathfrak{f}\) in <class style="font-style: normal">(<a href="#eq:transformed-fbsde">8.7</a>)</class>
       and <class style="font-style: normal">(<a href="#eq:transformed-flow">8.8</a>)</class>.
     </p>
-    <h3 id="auto-28"><a id="sec:moments"></a>8.4<span style="margin-left: 1em"></span>Conditional moments<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-30"></a>
+      </div>
+      <h5>A one-dimensional model: Burgers and Lax&ndash;Oleinik.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The passage to force coordinates is the passage from Eulerian to
+        Lagrangian coordinates for Burgers' equation. Consider first the
+        inviscid Burgers equation on \(\mathbb{R}\),
+      </div>
+    </p>
+    <center>
+      \(\displaystyle \partial_s u + u \partial_x u = 0, \qquad u (0, x) = g'
+      (x) .\)
+    </center>
+    <p>
+      Along the characteristics \(x = y + sg' (y)\) the velocity is constant,
+      \(u (s, y + sg' (y)) = g' (y)\): in the Lagrangian label \(y\) the
+      transport term disappears, and nothing moves. As long as the
+      characteristics do not cross, i.e. \(1 + sg'' > 0\), the map \(y \mapsto
+      x\) is invertible, and \(u = \partial_x G\) with the potential given by
+      the <em>Lax&ndash;Oleinik formula</em> (or Hopf&ndash;Lax formula)
+    </p>
+    <center>
+      \(\displaystyle G (s, x) = \min_y \left\{ g (y) + \frac{(x - y)^2}{2 s}
+      \right\}, \qquad u (s,
+x) = \frac{x - y (s, x)}{s} = g' (y (s, x)),\)
+    </center>
+    <p>
+      whose minimiser \(y (s, x)\) is the Lagrangian label of the point \(x\).
+      After the characteristics cross, the formula still selects one label,
+      the entropy solution, and \(u\) has shocks. The viscous equation
+      \(\partial_s u + u \partial_x u = \varepsilon \partial_x^2 u\) is
+      linearised by the Cole&ndash;Hopf transform,
+    </p>
+    <center>
+      \(\displaystyle G^{\varepsilon} (s, x) = - 2 \varepsilon \log \int
+      \mathrm{e}^{- (g (y) + (x -
+y)^2 / 2 s) / 2 \varepsilon} \mathrm{d} y,\)
+    </center>
+    <p>
+      and \(G^{\varepsilon} \to G\) as \(\varepsilon \to 0\) by Laplace's
+      method.
+    </p>
+    <p>
+      The dictionary with this section is: the unresolved covariance \(S_t\)
+      is the time \(s\), the field \(x\) is the Eulerian point, the forecast
+      \(\psi\) is the Lagrangian label \(y\), \(- F_t = \mathrm{D} V_t\) is
+      the velocity \(u\) (and \(V_t\) is \(G\)), and \(V_T\) is the datum
+      \(g\). The shear <class style="font-style: normal">(<a href="#eq:shear">7.13</a>)</class>, i.e. <class
+      style="font-style: normal">(<a href="#eq:coord">8.5</a>)</class> at tree level, \(x = \psi + S_t
+      \mathrm{D} V_T (\psi)\), is the characteristic map; the noiseless
+      Polchinski equation is the Hamilton&ndash;Jacobi equation \(\partial_s G
+      + \frac{1}{2} (\partial_x G)^2 = 0\), whose gradient solves the inviscid
+      Burgers equation; the tree-level potential <class style="font-style: normal">(<a href="#eq:hopf-lax">8.17</a>)</class>
+      is the Lax&ndash;Oleinik formula; and the condition for the
+      characteristics not to cross, \(S_t^{- 1} + \mathrm{D}^2 V_T > 0\), is
+      \(1 + sg'' > 0\). The Polchinski equation is the viscous
+      Hamilton&ndash;Jacobi equation, with \(\varepsilon = \frac{1}{2}\) in
+      the metric \(\dot{Q}_t\), and <class style="font-style: normal">(<a href="#eq:Vt">7.3</a>)</class>
+      is the Cole&ndash;Hopf formula.
+    </p>
+    <p>
+      Theorem <a href="#thm:transformed">8.2</a> is the Lagrangian description of the
+      <em>viscous</em> problem. With noise the label is no longer a function
+      of the Eulerian point: it is its posterior mean, the mean \(\psi\) of
+      \(y\) under the Cole&ndash;Hopf measure \(\propto \mathrm{e}^{- g (y) -
+      (x - y)^2 / 2 s}\), which is \(\mu_t^x\). In this label the velocity is
+      no longer constant but a martingale, and its evolution <class style="font-style: normal">(<a
+      href="#eq:transformed-flow">8.8</a>)</class> contains only the loops. The Lax&ndash;Oleinik
+      form survives exactly: the Moreau formula <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class>
+      of Section <a href="#sec:generator">8.5</a> is the Lax&ndash;Oleinik formula with the
+      datum \(V_T\) replaced by \(\Gamma_t\), and at finite cutoff no shocks
+      form: the noise keeps the label map invertible, locally by Proposition
+      <a href="#prop:H-cov">8.3</a> and globally by the convexity argument of Section <a
+      href="#sec:generator">8.5</a>. Figure <a href="#fig:shear">8.3</a> shows the construction for a
+      double well.
+    </p>
+    <h3 id="auto-31"><a id="sec:moments"></a>8.4<span style="margin-left: 1em"></span>Conditional moments<span style="margin-left: 1em"></span></h3>
     <p>
       For the Polchinski process the response has a direct meaning.
     </p>
@@ -1845,7 +2122,7 @@ H_t^{\ast} .\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-29"></a>
+        <a id="auto-32"></a>
       </div>
       <h5>Brascamp&ndash;Lieb and Cram&eacute;r&ndash;Rao bounds.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1929,7 +2206,7 @@ H_t^{\ast} .\)
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 8.2. </b><a id="auto-30"></a>Stochastic localisation for a
+              <b>Figure 8.2. </b><a id="auto-33"></a>Stochastic localisation for a
               two-component field: \(Q_t = (1 - \mathrm{e}^{- t})
               \mathbb{1}\), \(T = 4\), \(V_T\) a tilted double well, and the
               contours show the density of \(\nu_T\). One path of <class
@@ -1945,7 +2222,7 @@ H_t^{\ast} .\)
         </tr></tbody>
       </table>
     </div>
-    <h3 id="auto-31"><a id="sec:generator"></a>8.5<span style="margin-left: 1em"></span>Potentials: the value function
+    <h3 id="auto-34"><a id="sec:generator"></a>8.5<span style="margin-left: 1em"></span>Potentials: the value function
     as a generator<span style="margin-left: 1em"></span></h3>
     <p>
       We now use that the force is a gradient, \(F_t = - \mathrm{D} V_t\),
@@ -1958,7 +2235,7 @@ H_t^{\ast} .\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-32"></a>
+        <a id="auto-35"></a>
       </div>
       <h5>Phase space and Lagrangian graphs.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -1983,7 +2260,7 @@ H_t^{\ast} .\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-33"></a>
+        <a id="auto-36"></a>
       </div>
       <h5>The free action generates the shear.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2006,8 +2283,8 @@ H_t^{\ast} .\)
     </table>
     <p>
       The relation \(\psi = x + S_t p\) is the shear (<a href="#eq:shear">7.13</a>).
-      Since \(D_x \mathcal{A}_t = - p\) and \(D_{\psi} \mathcal{A}_t = p\), at
-      fixed \(t\)
+      Since \(\mathrm{D}_x \mathcal{A}_t = - p\) and \(\mathrm{D}_{\psi}
+      \mathcal{A}_t = p\), at fixed \(t\)
     </p>
     <center>
       \(\displaystyle \hspace{0.17em} \mathrm{d} \mathcal{A}_t = \langle p,
@@ -2018,13 +2295,13 @@ H_t^{\ast} .\)
     <p>
       so \(\mathcal{A}_t\) is the generating function of the canonical
       transformation \(\Sigma_t\). Moreover \(\partial_t \mathcal{A}_t =
-      \frac{1}{2} \langle D_x \mathcal{A}_t, \dot{Q}_t
-D_x \mathcal{A}_t
-      \rangle\): for every \(\psi\) it solves the noiseless Polchinski
-      equation, so it is a complete integral of that equation, with parameter
-      \(\psi\). Jacobi's theorem then says that in the new coordinates the
-      Hamiltonian \(H_{\ast}\) vanishes: \(\psi\) and \(p\) are constants of
-      motion.
+      \frac{1}{2} \langle \mathrm{D}_x \mathcal{A}_t,
+\dot{Q}_t \mathrm{D}_x
+      \mathcal{A}_t \rangle\): for every \(\psi\) it solves the noiseless
+      Polchinski equation, so it is a complete integral of that equation, with
+      parameter \(\psi\). Jacobi's theorem then says that in the new
+      coordinates the Hamiltonian \(H_{\ast}\) vanishes: \(\psi\) and \(p\)
+      are constants of motion.
     </p>
     <p>
       This is what force coordinates are:
@@ -2043,7 +2320,7 @@ D_x \mathcal{A}_t
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-34"></a>
+        <a id="auto-37"></a>
       </div>
       <h5>The value function generates the graph.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2098,20 +2375,21 @@ D_x \mathcal{A}_t
       transformation:
     </p>
     <center>
-      \(\displaystyle \hspace{0.17em} \mathrm{d} V_t = \langle D \Gamma_t,
-      \hspace{0.17em}
-\mathrm{d} \psi \rangle + \langle p, \hspace{0.17em}
-      \mathrm{d} \psi \rangle -
-\langle p, \hspace{0.17em} \mathrm{d} x
-      \rangle = - \langle F_t,
-\hspace{0.17em} \mathrm{d} x \rangle,\)
+      \(\displaystyle \hspace{0.17em} \mathrm{d} V_t = \langle \mathrm{D}
+      \Gamma_t, \hspace{0.17em}
+\mathrm{d} \psi \rangle + \langle p,
+      \hspace{0.17em} \mathrm{d} \psi \rangle -
+\langle p, \hspace{0.17em}
+      \mathrm{d} x \rangle = - \langle F_t,
+\hspace{0.17em} \mathrm{d} x
+      \rangle,\)
     </center>
     <p>
-      since \(D \Gamma_t (\psi) = - F_t = - p\).
+      since \(\mathrm{D} \Gamma_t (\psi) = - F_t = - p\).
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-35"></a>
+        <a id="auto-38"></a>
       </div>
       <h5>No convexity is needed.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2156,7 +2434,7 @@ y\), for every \(V_T\) bounded below. Its gradient in \(j\)
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 8.3. </b><a id="auto-36"></a>The zero-dimensional model of
+              <b>Figure 8.3. </b><a id="auto-39"></a>The zero-dimensional model of
               Figure <a href="#fig:polchinski-0d">7.2</a> at \(t = 1.2\). Left: the shear
               \(\Sigma_t\) (teal arrows) maps the graph of the force \(F_t = -
               V_t'\) (navy) to a graph over the forecast \(\psi\) (gold),
@@ -2168,7 +2446,7 @@ y\), for every \(V_T\) bounded below. Its gradient in \(j\)
         </tr></tbody>
       </table>
     </div>
-    <h3 id="auto-37"><a id="sec:legendre"></a>8.6<span style="margin-left: 1em"></span>The Legendre transform and
+    <h3 id="auto-40"><a id="sec:legendre"></a>8.6<span style="margin-left: 1em"></span>The Legendre transform and
     Wetterich's equation<span style="margin-left: 1em"></span></h3>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -2215,16 +2493,16 @@ V_T (\psi)\)
       <strong class="enunciation-name">Proof. </strong>Integrate <class style="font-style: normal">(<a href="#eq:transformed-flow">8.8</a>)</class>
       in field space. With \(\mathcal{F}= \mathrm{D} \Gamma\), the derivative
       of \(H = (S^{- 1} + \mathrm{D}^2 \Gamma)^{- 1}\) in a direction \(v\) is
-      \(- H \hspace{0.17em} D^3 \Gamma [v]  \hspace{0.17em} H\), so by the
-      total symmetry of \(D^3 \Gamma\),
+      \(- H \hspace{0.17em} \mathrm{D}^3 \Gamma [v]  \hspace{0.17em} H\), so
+      by the total symmetry of \(\mathrm{D}^3 \Gamma\),
     </p>
     <center>
-      \(\displaystyle D_v \text{Tr} (\dot{\mathcal{R}}_t H_t) = - \text{Tr}
-      \left( H_t
-\dot{\mathcal{R}}_t H_t  \hspace{0.17em} D^3 \Gamma_t [v]
-      \right) = -
-\text{Tr} \left( \mathcal{C}_t  \hspace{0.17em} \mathrm{D}^2
-      \mathcal{F}_t
+      \(\displaystyle \mathrm{D}_v \text{Tr} (\dot{\mathcal{R}}_t H_t) = -
+      \text{Tr} \left( H_t
+\dot{\mathcal{R}}_t H_t  \hspace{0.17em}
+      \mathrm{D}^3 \Gamma_t [v] \right) = -
+\text{Tr} \left( \mathcal{C}_t
+      \hspace{0.17em} \mathrm{D}^2 \mathcal{F}_t
 \right) [v] .\)
     </center>
     <p style="margin-bottom: 1em">
@@ -2256,17 +2534,17 @@ S_t^{- 1}\). For the endpoints:
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 8.4. </b><a id="auto-38"></a><a id="fig:wetterich-graphs"></a>The Wetterich equation
+              <b>Figure 8.4. </b><a id="auto-41"></a><a id="fig:wetterich-graphs"></a>The Wetterich equation
               <class style="font-style: normal">(<a href="#eq:wetterich">8.14</a>)</class> as graphs. The double
-              line is the full response \((D^2 \Gamma^{\text{EAA}}_t
-              +\mathcal{R}_t)^{- 1} = (S_t^{- 1} + D^2
-\Gamma_t)^{- 1}\) and
-              the crossed circle is one insertion of \(\dot{\mathcal{R}}_t\).
-              There is exactly one loop: the tree term of Figure <a href="#fig:polchinski-graphs">8.1</a>
-              has been absorbed by the Legendre transform. Each field
-              derivative brings down a higher vertex, so the hierarchy does
-              not close at a finite order. The bottom row expands the response
-              around \(S_t\).
+              line is the full response \((\mathrm{D}^2 \Gamma^{\text{EAA}}_t
+              +\mathcal{R}_t)^{- 1} = (S_t^{- 1} +
+\mathrm{D}^2 \Gamma_t)^{-
+              1}\) and the crossed circle is one insertion of
+              \(\dot{\mathcal{R}}_t\). There is exactly one loop: the tree
+              term of Figure <a href="#fig:polchinski-graphs">8.1</a> has been absorbed by the
+              Legendre transform. Each field derivative brings down a higher
+              vertex, so the hierarchy does not close at a finite order. The
+              bottom row expands the response around \(S_t\).
             </p></font>
           </div></td>
         </tr></tbody>
@@ -2335,9 +2613,10 @@ S_t^{- 1}\). For the endpoints:
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">8.5</class>.
         </strong><i><class style="font-style: normal"><strong>(The Legendre transform, formal; a
-        theorem at finite cutoff) </strong></class><a id="prop:legendre"></a>In the setting
-        of Proposition <a href="#prop:filtering">7.6</a>, the Legendre transform of the
-        log-partition function of the filter gives the effective action:</i>
+        theorem at finite cutoff) </strong></class><a id="prop:legendre"></a>With
+        \(\mathcal{K}_t\) as in Remark <a href="#rem:measurement">7.8</a>, the Legendre
+        transform of the log-partition function of the filter gives the
+        effective action:</i>
       </p>
       <p>
         <i><center>
@@ -2356,8 +2635,9 @@ S_t^{- 1} \psi \rangle =
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>By (<a href="#eq:moreau">8.12</a>) and the formula
-      for \(\mathcal{K}\). At fixed \(\psi\), with \(j = D\mathcal{K}^{\ast}
-      (\psi)\), the envelope theorem and Proposition <a href="#prop:filtering">7.6</a>(c) give
+      for \(\mathcal{K}\). At fixed \(\psi\), with \(j = \mathrm{D}
+      \mathcal{K}^{\ast} (\psi)\), the envelope theorem and <class style="font-style: normal">(<a
+      href="#eq:K-HJ">7.19</a>)</class> give
     </p>
     <center>
       \(\displaystyle \partial_t \mathcal{K}^{\ast} = \frac{1}{2} \text{Tr}
@@ -2376,18 +2656,18 @@ S_t^{- 1} \psi \rangle =
     </p>
     <p>
       So one Lagrangian graph has three generators: \(V_t\) in the field
-      \(x\), \(\mathcal{K}_t\) in the measurement \(j = S_t^{- 1} x\), and
-      \(\Gamma_t\) in the forecast \(\psi\). The Polchinski flow is the
-      Hamilton&ndash;Jacobi equation of the log-partition function of the
-      localisation; the Wetterich flow is its Legendre dual [<a href="#bib-Mor94">Mor94</a>],
-      whose argument is the posterior mean, and whose regulator is the
-      information gained. At \(t = 0\), where \(\mathcal{R}_0 = 0\),
-      \(\mathcal{K}_0\) is the generating function \(\Lambda\) of the
-      cumulants of \(\nu_T\) below.
+      \(x\), \(\mathcal{K}_t\) in the coordinate \(j = S_t^{- 1} x\) of Remark
+      <a href="#rem:measurement">7.8</a>, and \(\Gamma_t\) in the forecast \(\psi\). The
+      Polchinski flow is the Hamilton&ndash;Jacobi equation of the
+      log-partition function of the localisation; the Wetterich flow is its
+      Legendre dual [<a href="#bib-Mor94">Mor94</a>], whose argument is the posterior
+      mean, and whose regulator is the information gained. At \(t = 0\), where
+      \(\mathcal{R}_0 = 0\), \(\mathcal{K}_0\) is the generating function
+      \(\Lambda\) of the cumulants of \(\nu_T\) below.
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-39"></a>
+        <a id="auto-42"></a>
       </div>
       <h5>Probabilistic meaning of \(\Gamma\).<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2432,7 +2712,7 @@ S_t^{- 1} \psi \rangle =
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure 8.5. </b><a id="auto-40"></a>The regulator \(\mathcal{R}_t\) of
+              <b>Figure 8.5. </b><a id="auto-43"></a>The regulator \(\mathcal{R}_t\) of
               the heat profile (\(T = \infty\), \(m = 1\)): close to the mass
               term \(t^2\) (dotted) on the modes \(|k| \ll t\), exponentially
               small on the modes \(|k| \gg t\).
@@ -2441,11 +2721,11 @@ S_t^{- 1} \psi \rangle =
         </tr></tbody>
       </table>
     </div>
-    <h3 id="auto-41"><a id="sec:tree"></a>8.7<span style="margin-left: 1em"></span>Variational meaning and the tree
+    <h3 id="auto-44"><a id="sec:tree"></a>8.7<span style="margin-left: 1em"></span>Variational meaning and the tree
     level<span style="margin-left: 1em"></span></h3>
     <p>
       <div style="display: inline">
-        <a id="auto-42"></a>
+        <a id="auto-45"></a>
       </div>
       <h5>Constrained free energies.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2488,13 +2768,13 @@ S_t^{- 1} \psi \rangle =
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-43"></a>
+        <a id="auto-46"></a>
       </div>
       <h5>The tree level.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         Dropping the It&ocirc; term in <class style="font-style: normal">(<a href="#eq:transformed-flow">8.8</a>)</class>
         gives \(\Gamma_t = V_T\), and then <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class>
-        becomes the Hopf&ndash;Lax formula
+        becomes the Hopf&ndash;Lax (Lax&ndash;Oleinik) formula
       </div>
     </p>
     <table width="100%">
@@ -2514,7 +2794,7 @@ S_t^{- 1} (y - x)
       \mathrm{D} V_T (y) = 0\) in the shell \([t, T]\) with background \(x\),
       and expanding it in \(V_T\) produces exactly the tree diagrams.
     </p>
-    <h3 id="auto-44">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-47">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">8.1</class>.
@@ -2650,14 +2930,15 @@ S_t^{- 1} (y - x)
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">8.10</class>.
         </strong><class style="font-style: normal"><strong>(The free action) </strong></class><a
         id="ex:free-action"></a>(a) Prove (<a href="#eq:free-action">8.10</a>), and that \(\partial_t
-        \mathcal{A}_t = \frac{1}{2} \langle D_x \mathcal{A}_t, \dot{Q}_t
-D_x
-        \mathcal{A}_t \rangle\). (b) From the Moreau formula (<a href="#eq:moreau">8.12</a>),
-        recover the relations (<a href="#eq:coord">8.5</a>) by differentiating \(V_t (x)
-        = \Gamma_t (\psi) +\mathcal{A}_t (x, \psi)\).</font>
+        \mathcal{A}_t = \frac{1}{2} \langle \mathrm{D}_x
+        \mathcal{A}_t,
+\dot{Q}_t \mathrm{D}_x \mathcal{A}_t \rangle\). (b)
+        From the Moreau formula (<a href="#eq:moreau">8.12</a>), recover the relations (<a
+        href="#eq:coord">8.5</a>) by differentiating \(V_t (x) = \Gamma_t (\psi)
+        +\mathcal{A}_t (x, \psi)\).</font>
       </p>
     </div>
-    <h2 id="auto-45"><a id="sec:observables"></a>9<span style="margin-left: 1em"></span>Observables and field
+    <h2 id="auto-48"><a id="sec:observables"></a>9<span style="margin-left: 1em"></span>Observables and field
     equations<span style="margin-left: 1em"></span></h2>
     <p>
       In Lecture 3 the primary objects were the stochastic observables,
@@ -2670,7 +2951,7 @@ D_x
       filter: a field equation at every resolution, with a noise whose moments
       are controlled a priori.
     </p>
-    <h3 id="auto-46">9.1<span style="margin-left: 1em"></span>Observables of the interacting theory<span
+    <h3 id="auto-49">9.1<span style="margin-left: 1em"></span>Observables of the interacting theory<span
     style="margin-left: 1em"></span></h3>
     <p>
       For a functional \(G\) of the terminal field, the observable \(O_t
@@ -2712,7 +2993,7 @@ D_x
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-47"></a>
+        <a id="auto-50"></a>
       </div>
       <h5>Tangent observables.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -2738,14 +3019,17 @@ D_x
       response of the theory to a change of coupling. They are the observables
       conjugate to the coordinates of theory space.
     </p>
-    <h3 id="auto-48"><a id="sec:DS"></a>9.2<span style="margin-left: 1em"></span>The field equation at every
+    <h3 id="auto-51"><a id="sec:DS"></a>9.2<span style="margin-left: 1em"></span>The field equation at every
     resolution<span style="margin-left: 1em"></span></h3>
     <p>
-      The measurement noise \(N_t\) of (<a href="#eq:measurement">7.15</a>) is not observed,
-      but its posterior mean is: from \(j_t =\mathcal{R}_t \Phi_T + N_t\) we
-      get \(\mathbb{E}_t N_t = j_t -\mathcal{R}_t \psi_t\), which is the
-      <strong>noise observable</strong> \(\eta_t\) below. This gives a field
-      equation at every resolution.
+      By <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class> the field at resolution
+      \(t\) is a blurred copy of the terminal field, \(\Phi_t = J_t \Phi_T +
+      \zeta_t\). The noise \(\zeta_t\) is not observed, but its posterior mean
+      is, \(\mathbb{E}_t \zeta_t = \Phi_t - J_t \psi_t\). Since \(\psi_t =
+      \Phi_t + S_t F_t\) and \(1 - J_t = KS_t\), its rescaling \(S_t^{- 1}
+      \mathbb{E}_t \zeta_t = K \Phi_t - J_t F_t\) is the <strong>noise
+      observable</strong> \(\eta_t\) below. This gives a field equation at
+      every resolution.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -2771,13 +3055,13 @@ D_x
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:DS-scale"></a>\(\displaystyle \mathbb{E}^{\mathbb{P}}
-          [D_{J_t h} G (\Phi_t)] =\mathbb{E}^{\mathbb{P}}
-\left[ G (\Phi_t)
-          \hspace{0.17em} \langle h, \eta_t \rangle
-          \right]
-=\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t) \hspace{0.17em}
-          \langle h, K \Phi_t
-- J_t F_t \rangle \right] .\)</td>
+          [\mathrm{D}_{J_t h} G (\Phi_t)]
+=\mathbb{E}^{\mathbb{P}} \left[ G
+          (\Phi_t) \hspace{0.17em} \langle h, \eta_t
+\rangle \right]
+          =\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t) \hspace{0.17em}
+\langle
+          h, K \Phi_t - J_t F_t \rangle \right] .\)</td>
           <td align="right">(9.5)</td>
         </tr>
       </table></i>
@@ -2789,9 +3073,11 @@ D_x
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:DS-terminal"></a>\(\displaystyle \mathbb{E}^{\nu_T}
-            [D_h G] =\mathbb{E}^{\nu_T} \left[ G \hspace{0.17em}
-\langle h, K
-            \varphi + \mathrm{D} V_T (\varphi) \rangle \right] .\)</td>
+            [\mathrm{D}_h G] =\mathbb{E}^{\nu_T} \left[ G
+\hspace{0.17em}
+            \langle h, K \varphi + \mathrm{D} V_T (\varphi) \rangle
+\right]
+            .\)</td>
             <td align="right">(9.6)</td>
           </tr>
         </table></i>
@@ -2809,10 +3095,10 @@ D_x
       \(\mu^{Q_t}\) in the direction \(Q_t k\) gives
     </p>
     <center>
-      \(\displaystyle \mathbb{E}^{\nu_t}  [D_{Q_t k} G] =\mathbb{E}^{\nu_t}
-      [G (\langle k, \varphi
-\rangle + \langle Q_t k, \mathrm{D} V_t (\varphi)
-      \rangle)] .\)
+      \(\displaystyle \mathbb{E}^{\nu_t}  [\mathrm{D}_{Q_t k} G]
+      =\mathbb{E}^{\nu_t}  [G (\langle k,
+\varphi \rangle + \langle Q_t k,
+      \mathrm{D} V_t (\varphi) \rangle)] .\)
     </center>
     <p style="margin-bottom: 1em">
       Take \(k = Kh\), so that \(Q_t k = J_t h\), and recall \(F_t = -
@@ -2843,6 +3129,81 @@ D_x
       DS equation of [<a href="#bib-GH21">GH21</a>]. Lecture 6 proves the field equation
       at every resolution for the limit (Theorem <a href="cqft_lecture6.html#thm:field-q">18.9</a>).
     </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-52"></a>
+      </div>
+      <h5>The field equation for the forecast.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The same identity can be written for the forecast. Substituting
+        \(\Phi_t = \psi_t - S_t F_t\) (<a href="#eq:lambda-split">8.4</a>) in <class style="font-style: normal">(<a
+        href="#eq:eta">9.4</a>)</class>, and using \(KS_t = 1 - J_t\), the smoothing
+        operator disappears:
+      </div>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:field-eq-forecast"></a>\(\displaystyle K \psi_t = F_t + \eta_t,
+        \qquad F_t = - \mathrm{D} \Gamma_t (\psi_t) .\)</td>
+        <td align="right">(9.8)</td>
+      </tr>
+    </table>
+    <p>
+      As \(T \to \infty\) the two forms of the field equation at resolution
+      \(t\) are
+    </p>
+    <center>
+      \(\displaystyle A \Phi_t = \mathrm{e}^{- A / t^2} F_t + \eta_t \quad
+      \text{(Polchinski
+process),} \hspace{3em} A \psi_t + \mathrm{D} \Gamma_t
+      (\psi_t) = \eta_t \quad
+\text{(forecast).}\)
+    </center>
+    <p>
+      In the first, the force is smeared by \(\mathrm{e}^{- A / t^2}\) so the
+      nonlinearity is seen only through a smoothing operator. In the second it
+      acts on the same variable as the linear part, with no smoothing: this is
+      the Euler&ndash;Lagrange equation of the action \(\frac{1}{2} \langle
+      \psi, A \psi \rangle + \Gamma_t (\psi)\), forced by the noise
+      \(\eta_t\). For \(\Phi^4\), at finite \(T\) and to first order in
+      \(\lambda\), the Wetterich equation <class style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class>
+      gives \(\Gamma_t \approx V_T + \frac{1}{2} \text{Tr} (S_t \mathrm{D}^2
+      V_T)\), and since \(\partial_c H_4 = - 6 H_2\) and \(c_T - S_t (x, x) =
+      c_t\), the one loop moves the Wick ordering from the cutoff to the
+      resolution:
+    </p>
+    <center>
+      \(\displaystyle K \psi_t + 4 \lambda H_3  (\psi_t ; c_t) + (\text{mass
+      counterterm and higher
+orders}) = \eta_t .\)
+    </center>
+    <p>
+      The cube acts directly on the forecast, and pairing with \(\psi_t\)
+      gives \(\langle \psi_t, K \psi_t \rangle + 4 \lambda \int (\psi_t^4 - 3
+      c_t \psi_t^2)
+= \langle \psi_t, \eta_t \rangle + \ldots\), where \(4 a^4
+      - 12 c_t a^2 \geqslant - 9 c_t^2\) and \(c_t\) is finite at fixed \(t\):
+      heuristically, a coercive bound up to a volume constant, driven by the
+      sub-Gaussian noise of Section <a href="#sec:noise-bounds">9.3</a>. With the bare Wick
+      ordering \(c_T\) the quadratic term would diverge; in \(d = 3\) only the
+      mass counterterm \(\gamma_T\), of order \(\lambda^2\), still does. In
+      the form for \(\Phi_t\) the same positivity is hidden behind
+      \(\mathrm{e}^{- A / t^2}\). The integration by parts formula <class
+      style="font-style: normal">(<a href="#eq:DS-scale">9.5</a>)</class> also transfers: a functional of
+      \(\psi_t\) is a functional of \(\Phi_t\), and \(\mathrm{D}_x \psi_t =
+      \text{Cov}_t S_t^{- 1}\) (Proposition <a href="#prop:H-cov">8.3</a>), so
+    </p>
+    <center>
+      \(\displaystyle \mathbb{E}^{\mathbb{P}} [G (\psi_t) \langle h, K \psi_t
+      - F_t \rangle]
+=\mathbb{E}^{\mathbb{P}} [\mathrm{D}_{\text{Cov}_t
+      \mathcal{R}_t h} G
+(\psi_t)] .\)
+    </center>
+    <p>
+      The direction of differentiation is now random, the conditional
+      covariance applied to \(\mathcal{R}_t h\).
+    </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">9.2</class>. </strong><class style="font-style: normal"><strong>(Comparison
       with stochastic quantisation) </strong></class>In parabolic or elliptic
@@ -2871,7 +3232,7 @@ D_x
           \eta_t, h \rangle] =\mathbb{E} \sum_{i = 1}^k \partial_i
 g \langle
           J_{t_i} h, h_i \rangle, \)</td>
-          <td align="right">(9.8)</td>
+          <td align="right">(9.9)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
@@ -2883,14 +3244,15 @@ g \langle
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>\(G\) is \(\mathcal{F}_t\)-measurable, so
-      \(\mathbb{E} [G \langle \eta_t, h \rangle] =\mathbb{E} [G \langle N_t,
-      h
-\rangle]\). By (<a href="#eq:bridge">7.14</a>), \(\Phi_s = J_s \Phi_T + S_s N_s\),
-      and for \(s \leqslant t\) the covariance of \(\langle N_t, h \rangle\)
-      and \(\langle S_s N_s, k \rangle\) is \(\langle S_s \mathcal{R}_s h, k
-      \rangle = \langle J_s h, k \rangle\). Apply Gaussian integration by
-      parts in \(N\), given \(\Phi_T\). The last claim is the martingale
-      property of \(\eta\).<span style="margin-left: 1em"></span>\(\Box\)
+      \(\mathbb{E} [G \langle \eta_t, h \rangle] =\mathbb{E} [G \langle S_t^{-
+      1}
+\zeta_t, h \rangle]\). By <class style="font-style: normal">(<a href="#eq:bridge">7.14</a>)</class>,
+      \(\Phi_s = J_s \Phi_T + \zeta_s\), the bridge covariance is \(\mathbb{E}
+      [\zeta_s \otimes \zeta_t] = Q_s KS_t\) for \(s \leqslant t\), so the
+      covariance of \(\langle S_t^{- 1} \zeta_t, h \rangle\) and \(\langle
+      \zeta_s, k \rangle\) is \(\langle J_s h, k \rangle\). Apply Gaussian
+      integration by parts in \(\zeta\), given \(\Phi_T\). The last claim is
+      the martingale property of \(\eta\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">9.4</class>. </strong><class style="font-style: normal"><strong>(Closed
@@ -2914,14 +3276,14 @@ c_T)\)
       compatible family with no terminal representative. Locality of the
       limiting force is the crux of the construction [<a href="#bib-BCG26">BCG26</a>].
     </p>
-    <h3 id="auto-49"><a id="sec:noise-bounds"></a>9.3<span style="margin-left: 1em"></span>Gaussian bounds for the
+    <h3 id="auto-53"><a id="sec:noise-bounds"></a>9.3<span style="margin-left: 1em"></span>Gaussian bounds for the
     noise<span style="margin-left: 1em"></span></h3>
     <p>
       The noise observable \(\eta_t\) is not Gaussian: it depends on the
       unknown law of the interacting field. But the filter says what it is,
-      the conditional expectation of the Gaussian noise \(N_t\), so its
-      moments are bounded by those of an explicit Gaussian, uniformly in the
-      interaction.
+      the conditional expectation of the rescaled bridge noise \(S_t^{- 1}
+      \zeta_t\), so its moments are bounded by those of an explicit Gaussian,
+      uniformly in the interaction.
     </p>
     <p>
       Work at finite cutoff, where \(\Phi_t\) has a Lebesgue density \(p_t\),
@@ -2937,7 +3299,7 @@ c_T)\)
       <tr>
         <td width="100%" align="center"><a id="eq:noise-score"></a>\(\displaystyle \eta_t = - J_t \mathrm{D}
         \log p_t (\Phi_t) . \)</td>
-        <td align="right">(9.9)</td>
+        <td align="right">(9.10)</td>
       </tr>
     </table>
     <p>
@@ -2956,7 +3318,7 @@ c_T)\)
         1} = KJ_t  (1 - J_t)^{- 1} = S_t^{- 1} - Q_T^{- 1}
 =\mathcal{R}_t .
         \)</td>
-        <td align="right">(9.10)</td>
+        <td align="right">(9.11)</td>
       </tr>
     </table>
     <div class="theorem">
@@ -2967,8 +3329,7 @@ c_T)\)
       </p>
       <p>
         <i><center>
-          \(\displaystyle \eta_t =\mathbb{E} [J_t  (Q_t (1 - J_t))^{- 1}
-          \zeta_t | \Phi_t],\)
+          \(\displaystyle \eta_t =\mathbb{E} [S_t^{- 1} \zeta_t | \Phi_t],\)
         </center></i>
       </p>
       <p>
@@ -2993,7 +3354,7 @@ c_T)\)
           \left(
 \frac{u^2}{2} \langle h, \mathcal{R}_t h \rangle \right) :
           \)</td>
-          <td align="right">(9.11)</td>
+          <td align="right">(9.12)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
@@ -3003,26 +3364,26 @@ c_T)\)
       </p>
     </div>
     <p style="margin-top: 1em">
-      <strong class="enunciation-name">Proof. </strong>Write \(B = Q_t  (1 - J_t)\) and \(g\)
-      for the density of \(N (0, B)\). Then \(p_t (a) =\mathbb{E}g (a - J_t
-      \Phi_T)\) and \(\mathrm{D} g (z) = - B^{- 1} z \hspace{0.17em} g (z)\),
-      so
+      <strong class="enunciation-name">Proof. </strong>Write \(\Sigma_t = Q_t  (1 - J_t)\), so
+      that \(J_t \Sigma_t^{- 1} = S_t^{- 1}\), and \(g\) for the density of
+      \(N (0, \Sigma_t)\). Then \(p_t (a) =\mathbb{E}g (a - J_t \Phi_T)\) and
+      \(\mathrm{D} g (z) = - \Sigma_t^{- 1} z \hspace{0.17em} g (z)\), so
     </p>
     <center>
-      \(\displaystyle - \mathrm{D} \log p_t (\Phi_t) =\mathbb{E} [B^{- 1}
-      \zeta_t | \Phi_t] ;\)
+      \(\displaystyle - \mathrm{D} \log p_t (\Phi_t) =\mathbb{E} [\Sigma_t^{-
+      1} \zeta_t | \Phi_t] ;\)
     </center>
     <p>
-      apply \(J_t\) and use <class style="font-style: normal">(<a href="#eq:noise-score">9.9</a>)</class>. By
+      apply \(J_t\) and use <class style="font-style: normal">(<a href="#eq:noise-score">9.10</a>)</class>. By
       conditional Jensen,
     </p>
     <center>
-      \(\displaystyle \Psi (\eta_t) \leqslant \mathbb{E} [\Psi (J_t B^{- 1}
+      \(\displaystyle \Psi (\eta_t) \leqslant \mathbb{E} [\Psi (S_t^{- 1}
       \zeta_t) | \Phi_t],\)
     </center>
     <p style="margin-bottom: 1em">
-      and \(J_t B^{- 1} \zeta_t\) is centred Gaussian with covariance \(J_t
-      B^{- 1} J_t =\mathcal{R}_t\).<span style="margin-left: 1em"></span>\(\Box\)
+      and \(S_t^{- 1} \zeta_t\) is centred Gaussian with covariance \(S_t^{-
+      1} \Sigma_t S_t^{- 1} =\mathcal{R}_t\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       For the heat profile (compare <class style="font-style: normal">(<a href="#eq:exp-regulator">8.15</a>)</class>),
@@ -3045,7 +3406,7 @@ c_T)\)
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-50"></a>
+        <a id="auto-54"></a>
       </div>
       <h5>The roughness of the noise.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3080,7 +3441,7 @@ c_T)\)
       Dyson&ndash;Schwinger equation, whatever the interaction. It is not a
       bound on a limit distribution: \(\eta_t\) is a martingale in \(t\), not
       the smoothing of a fixed distribution, and on a fixed test function
-      <class style="font-style: normal">(<a href="#eq:noise-mgf">9.11</a>)</class> only gives \(\langle h, \eta_t
+      <class style="font-style: normal">(<a href="#eq:noise-mgf">9.12</a>)</class> only gives \(\langle h, \eta_t
       \rangle = O (t)\), while the free noise stays bounded. For \(\Phi^4_3\)
       no \(L^2\) limit of the logarithmic derivative is expected [<a href="#bib-ALZ06">ALZ06</a>].
       Compared with the free noise, the bound is sharp at and above the
@@ -3136,7 +3497,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-51"></a>
+        <a id="auto-55"></a>
       </div>
       <h5>Control of the force.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3158,7 +3519,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
     </center>
     <p>
       It&ocirc;'s isometry, \((a + b)^2 \leqslant 2 a^2 + 2 b^2\) and <class
-      style="font-style: normal">(<a href="#eq:noise-mgf">9.11</a>)</class> give
+      style="font-style: normal">(<a href="#eq:noise-mgf">9.12</a>)</class> give
     </p>
     <table width="100%">
       <tr>
@@ -3166,7 +3527,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
         \Upsilon_s^{\ast} J_s h \|^2 \mathrm{d} s \leqslant 2
 \langle h,
         \mathcal{R}_t h \rangle + 2 \langle h, KQ_t Kh \rangle . \)</td>
-        <td align="right">(9.12)</td>
+        <td align="right">(9.13)</td>
       </tr>
     </table>
     <p>
@@ -3178,7 +3539,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-52"></a>
+        <a id="auto-56"></a>
       </div>
       <h5>Consequence for \(\Phi^4_3\).<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3193,7 +3554,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
         this field equation, with the bound of Proposition <a href="#prop:subgauss">9.5</a>.
       </div>
     </p>
-    <h3 id="auto-53"><a id="sec:infinite-volume"></a>9.4<span style="margin-left: 1em"></span>Infinite volume<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-57"><a id="sec:infinite-volume"></a>9.4<span style="margin-left: 1em"></span>Infinite volume<span style="margin-left: 1em"></span></h3>
     <p>
       On \(\mathbb{T}^d_L\) the free energy \(V_0 (0)\) and the effective
       potential \(V_t\) are extensive: they grow like \(L^d\), and <class
@@ -3217,13 +3578,13 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
 \dot{Q}_s^{1 / 2} \mathrm{d} W_s, \qquad F_t (x) =
               -\mathbb{E}_t [v_T' (\Phi_T
 (x))] .\)</td>
-              <td align="right">(9.13)</td>
+              <td align="right">(9.14)</td>
             </tr>
           </table>
           <p>
             Here every quantity is local, and the equation makes sense without
             a volume cutoff. Infinite-volume limits of \(\nu_T^{(L)}\) are
-            expected to be laws of solutions of <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.13</a>)</class>.
+            expected to be laws of solutions of <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.14</a>)</class>.
             Uniqueness of such solutions (e.g. for small coupling, or by
             contraction in weighted spaces) is a uniqueness statement for the
             infinite-volume theory. Non-uniqueness is expected in the presence
@@ -3244,7 +3605,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
             is a difference of two extensive infima, and it stays bounded as
             \(L \to \infty\). Its variational characterisation, through the
             infinite-volume Euler&ndash;Lagrange equation <class style="font-style: normal">(<a
-            href="#eq:fbsde-inf">9.13</a>)</class>, is the basis of the infinite-volume
+            href="#eq:fbsde-inf">9.14</a>)</class>, is the basis of the infinite-volume
             analysis of \(\Phi^4_2\) and \(\exp (\Phi)_2\) in [<a href="#bib-BG23">BG23</a>].
           </p>
         </li>
@@ -3252,7 +3613,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
     </div>
     <p>
       <div style="display: inline">
-        <a id="auto-54"></a>
+        <a id="auto-58"></a>
       </div>
       <h5>Differences of free energies.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3290,7 +3651,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
 (\Phi_T + I_T (w)) + B_{V_T} (\Phi_T, I_T (w)) + \frac{1}{2}
           \int_0^T \|w_s
 \|^2 \mathrm{d} s \right],\)</td>
-          <td align="right">(9.14)</td>
+          <td align="right">(9.15)</td>
         </tr>
       </table></i>
       <p>
@@ -3343,27 +3704,27 @@ V_T (\Phi^f_T) - \mathrm{D} V_T
 = v_T (a + h) - v_T (a) - v_T' (a) h,\)
     </center>
     <p>
-      and \(b_T (a, 0) = 0\). So every term of <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>
+      and \(b_T (a, 0) = 0\). So every term of <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>
       is local: there is no free energy and no extensive quantity, only the
       field \(\Phi\) and the perturbation that \(f\) induces on it. For \(f\)
       supported in a bounded region one expects the optimal \(w\), and with it
       \(I (w)\), to decay away from the support, at the rate of the decay of
-      correlations of the measure. Both sides of <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>
+      correlations of the measure. Both sides of <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>
       then make sense in infinite volume, with \(\Phi\) a solution of the
-      infinite-volume FBSDE <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.13</a>)</class>. This
+      infinite-volume FBSDE <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.14</a>)</class>. This
       suggests the following formal description of the infinite-volume
       measures (at a fixed ultraviolet cutoff \(T\)):
     </p>
     <center>
       <p style="margin-top: 0.5em; margin-bottom: 0.5em">
         <em>an infinite-volume measure is the law of \(\Phi_T\) for a solution
-        \(\Phi\) of <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.13</a>)</class> which satisfies
-        <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>, with \(B = \int b_T
+        \(\Phi\) of <class style="font-style: normal">(<a href="#eq:fbsde-inf">9.14</a>)</class> which satisfies
+        <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>, with \(B = \int b_T
         \mathrm{d} x\), for all local \(f\).</em>
       </p>
     </center>
     <p>
-      The Laplace functionals in <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>
+      The Laplace functionals in <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>
       determine the measure, and the condition involves only intensive
       quantities. When the FBSDE has several solutions, as is expected in the
       presence of phase transitions, each solution gives a measure with its
@@ -3371,7 +3732,7 @@ V_T (\Phi^f_T) - \mathrm{D} V_T
       probe a given solution locally. For \(\Phi^4_3\) this remainder term
       contains the divergent counterterms, and, as for <class style="font-style: normal">(<a href="#eq:generating">7.12</a>)</class>,
       the change of variables of [<a href="#bib-BG20">BG20</a>] is needed before <class
-      style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class> has bounds uniform in \(T\); in two
+      style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class> has bounds uniform in \(T\); in two
       dimensions, compare the infinite-volume analysis of [<a href="#bib-BG23">BG23</a>].
     </p>
     <p>
@@ -3381,7 +3742,7 @@ V_T (\Phi^f_T) - \mathrm{D} V_T
       &ldquo;coming down from infinity&rdquo; estimates for the parabolic
       dynamics.
     </p>
-    <h3 id="auto-55">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-59">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.1</class>.
@@ -3397,17 +3758,17 @@ V_T (\Phi^f_T) - \mathrm{D} V_T
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.2</class>.
         </strong><class style="font-style: normal"><strong>(The relative variational principle)
-        </strong></class><a id="ex:relative-vp"></a>(a) Derive <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>
+        </strong></class><a id="ex:relative-vp"></a>(a) Derive <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>
         and the equation for the minimiser. (b) For a Gaussian \(\nu_T\)
         (quadratic \(V_T\)) and a linear \(f = \langle g, \cdot \rangle\),
-        compute the remainder term, solve <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class>,
+        compute the remainder term, solve <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class>,
         and recover \(- \log \int \mathrm{e}^{- \langle g, \cdot \rangle}
         \mathrm{d} \nu_T = \langle
 g, m \rangle - \frac{1}{2}  \langle g,
         \Sigma g \rangle\), with \(m\) and \(\Sigma\) the mean and covariance.
         (c) For a local interaction and \(f\) supported in a ball, show that
         \(B_{V_T}\) only sees the region where \(I (w) \neq 0\), and discuss
-        why <class style="font-style: normal">(<a href="#eq:relative-vp">9.14</a>)</class> is bounded uniformly in
+        why <class style="font-style: normal">(<a href="#eq:relative-vp">9.15</a>)</class> is bounded uniformly in
         the volume.</font>
       </p>
     </div>
@@ -3418,7 +3779,7 @@ g, m \rangle - \frac{1}{2}  \langle g,
         </strong></class>Prove <class style="font-style: normal">(<a href="#eq:DS-scale">9.5</a>)</class>
         without using Proposition <a href="#prop:marginals">7.2</a>, for \(G\) of the form
         \(G_t (\Phi_t)\) with \(G_t\) solving <class style="font-style: normal">(<a href="#eq:kolmogorov">9.2</a>)</class>.
-        Show that the drift of \(D_{J_t h} G_t (\Phi_t)\) equals the
+        Show that the drift of \(\mathrm{D}_{J_t h} G_t (\Phi_t)\) equals the
         covariation of \(G_t (\Phi_t)\) with \(\langle h, \eta_t \rangle\).
         Where is the symmetry of \(\mathrm{D} F_t\) used?</font>
       </p>
@@ -3428,16 +3789,17 @@ g, m \rangle - \frac{1}{2}  \langle g,
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.4</class>.
         </strong><class style="font-style: normal"><strong>(Gaussian check) </strong></class>For
         \(V_T = 0\) show that <class style="font-style: normal">(<a href="#eq:DS-scale">9.5</a>)</class> reduces
-        to \(\mathbb{E} [D_{Q_t Kh} G (X_t)] =\mathbb{E} [G (X_t) \langle Kh,
-        X_t \rangle]\), and compare with the DS characterisation of the GFF in
-        Lecture 2.</font>
+        to \(\mathbb{E} [\mathrm{D}_{Q_t Kh} G (X_t)] =\mathbb{E} [G (X_t)
+        \langle Kh, X_t
+\rangle]\), and compare with the DS characterisation
+        of the GFF in Lecture 2.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">9.5</class>.
         </strong><class style="font-style: normal"><strong>(Sub-Gaussian noise)
-        </strong></class><a id="ex:subgauss"></a>(a) Check <class style="font-style: normal">(<a href="#eq:noise-score">9.9</a>)</class>
+        </strong></class><a id="ex:subgauss"></a>(a) Check <class style="font-style: normal">(<a href="#eq:noise-score">9.10</a>)</class>
         and the bridge representation, and show that the Girsanov density
         depends only on \(X_T\). (b) Compute \(\mathcal{R}_t\) for the heat
         profile, and show that \(\mathcal{R}_t \leqslant \frac{4}{3} t^2\) for
@@ -3445,15 +3807,15 @@ g, m \rangle - \frac{1}{2}  \langle g,
         \infty\). (c) Compute the law of \(\eta_t\) for \(V_T = 0\) and for
         \(V_T = \frac{\kappa}{2} \| \varphi \|^2\), and show that its
         covariance tends to \(\mathcal{R}_t\) as \(\kappa \to \infty\). In
-        what sense is <class style="font-style: normal">(<a href="#eq:noise-mgf">9.11</a>)</class> sharp? (d)
+        what sense is <class style="font-style: normal">(<a href="#eq:noise-mgf">9.12</a>)</class> sharp? (d)
         Show that \(\mathcal{R}_t (x, x) \asymp t^{d + 2}\) for \(t \gg m\),
         and complete the argument of Remark <a href="#rem:noise-pathwise">9.6</a>.</font>
       </p>
     </div>
-    <h2 id="auto-56">Appendices: additional material<span style="margin-left: 1em"></span></h2>
-    <h2 id="auto-57"><a id="sec:algebra"></a>Appendix A<span style="margin-left: 1em"></span>Algebraic structure of
+    <h2 id="auto-60">Appendices: additional material<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-61"><a id="sec:algebra"></a>Appendix A<span style="margin-left: 1em"></span>Algebraic structure of
     the Polchinski flow</h2>
-    <h3 id="auto-58">A.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps<span
+    <h3 id="auto-62">A.1<span style="margin-left: 1em"></span>A semigroup of renormalisation maps<span
     style="margin-left: 1em"></span></h3>
     <p>
       For a positive covariance \(S\) define the renormalisation map
@@ -3525,7 +3887,7 @@ u) (\phi) =
       the process \(\Phi\) and the observables at intermediate resolution, but
       not the terminal theory. The flow has no holonomy [<a href="#bib-BCG26">BCG26</a>].
     </p>
-    <h3 id="auto-59"><a id="sec:pert"></a>A.2<span style="margin-left: 1em"></span>Perturbation theory and
+    <h3 id="auto-63"><a id="sec:pert"></a>A.2<span style="margin-left: 1em"></span>Perturbation theory and
     counterterms<span style="margin-left: 1em"></span></h3>
     <p>
       Expanding \(V_t =\mathcal{R}_{Q_{T, t}} (V_T)\) in cumulants of the
@@ -3610,7 +3972,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         </tr><tr>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
-              <b>Figure A.1. </b><a id="auto-60"></a><a id="fig:second-order"></a>The terms \(k = 1, 2,
+              <b>Figure A.1. </b><a id="auto-64"></a><a id="fig:second-order"></a>The terms \(k = 1, 2,
               3, 4\) of <class style="font-style: normal">(<a href="#eq:second-order">A.6</a>)</class>, with \(k\)
               lines \(S\) joining two Wick-ordered vertices; Wick ordering has
               removed the lines from a vertex to itself. As \(T \to \infty\)
@@ -3685,7 +4047,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
       \(\nu_t\) at fixed \(t\) are expected to stay absolutely continuous with
       respect to \(\mu^{Q_t}\), while the terminal one is not.
     </p>
-    <h3 id="auto-61">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-65">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">A.1</class>.
@@ -3693,8 +4055,8 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         id="ex:commutator"></a> Show by direct computation that \(\mathrm{D} \mathcal{P}_B
         (V) [\mathcal{P}_{B'} (V)] = \mathrm{D}
 \mathcal{P}_{B'} (V)
-        [\mathcal{P}_B (V)]\). Which property of \(\mathrm{D}^2 V\) and \(D^3
-        V\) is used?</font>
+        [\mathcal{P}_B (V)]\). Which property of \(\mathrm{D}^2 V\) and
+        \(\mathrm{D}^3 V\) is used?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -3724,7 +4086,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         3\).</font>
       </p>
     </div>
-    <h2 id="auto-62"><a id="sec:localisation"></a>Appendix B<span style="margin-left: 1em"></span>Stochastic
+    <h2 id="auto-66"><a id="sec:localisation"></a>Appendix B<span style="margin-left: 1em"></span>Stochastic
     localisation</h2>
     <p>
       Proposition <a href="#prop:marginals">7.2</a> and Section <a href="#sec:filtering">7.3</a> say that the
@@ -3733,7 +4095,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-63"></a>
+        <a id="auto-67"></a>
       </div>
       <h5>Why it is useful.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3773,11 +4135,11 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
       The process can also be run as an algorithm: with an approximate force
       it is a sampler, as in the algorithmic stochastic localisation of [<a
       href="#bib-EMS22">EMS22</a>], and denoising diffusions are of the same kind [<a
-      href="#bib-Mon23">Mon23</a>]. By <class style="font-style: normal">(<a href="#eq:noise-score">9.9</a>)</class>, the noise
-      of the field equation is, up to \(J_t\), the score that such algorithms
-      estimate.
+      href="#bib-Mon23">Mon23</a>]. By <class style="font-style: normal">(<a href="#eq:noise-score">9.10</a>)</class>, the
+      noise of the field equation is, up to \(J_t\), the score that such
+      algorithms estimate.
     </p>
-    <h3 id="auto-64"><a id="sec:lsi"></a>B.1<span style="margin-left: 1em"></span>Log-Sobolev inequalities along
+    <h3 id="auto-68"><a id="sec:lsi"></a>B.1<span style="margin-left: 1em"></span>Log-Sobolev inequalities along
     the localisation<span style="margin-left: 1em"></span></h3>
     <p>
       Bauerschmidt and Bodineau [<a href="#bib-BB21">BB21</a>] proved log-Sobolev
@@ -3794,7 +4156,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-65"></a>
+        <a id="auto-69"></a>
       </div>
       <h5>Entropy as quadratic variation.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3889,7 +4251,7 @@ W_t \rangle\). It&ocirc;'s
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-66"></a>
+        <a id="auto-70"></a>
       </div>
       <h5>In terms of the conditional covariance.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -4027,7 +4389,7 @@ W_t \rangle\). It&ocirc;'s
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-67"></a>
+        <a id="auto-71"></a>
       </div>
       <h5>An application: the KLS conjecture.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -4053,7 +4415,7 @@ W_t \rangle\). It&ocirc;'s
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-68"></a>
+        <a id="auto-72"></a>
       </div>
       <h5>The connection with Bauerschmidt&ndash;Bodineau.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -4135,7 +4497,7 @@ W_t \rangle\). It&ocirc;'s
         </p>
       </li>
     </ul>
-    <h3 id="auto-69">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-73">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">B.1</class>.
@@ -4167,7 +4529,7 @@ W_t \rangle\). It&ocirc;'s
         exponent off by a factor \(2\)?</font>
       </p>
     </div>
-    <h2 id="auto-70">References<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-74">References<span style="margin-left: 1em"></span></h2>
     <dl>
       <p>
         <dt>

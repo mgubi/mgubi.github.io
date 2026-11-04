@@ -71,25 +71,25 @@
     [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L3.tm>].
     Revised 3 November 2026.
-  </itemize>
 
-  <subsection*|Provisional materials for Lectures 4--6>
-
-  Lecture 4 introduces interactions through the Polchinski flow;
-  Lectures 5--6 give an FBSDE construction of
-  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
-  adjusted as the course progresses. Sections 16--18 of Lecture 6 will not
-  be delivered in class.
-
-  <\itemize>
-    <item><with|font-series|bold|Lecture 4>: Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
+    <item><with|font-series|bold|Lecture 4> (4 November 2026): Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L4.tm>].
+    Revised 4 November 2026.
+  </itemize>
 
+  <subsection*|Provisional materials for Lectures 5--6>
+
+  Lectures 5--6 give an FBSDE construction of
+  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
+  adjusted as the course progresses. Sections 16--18 of Lecture 6 will not
+  be delivered in class.
+
+  <\itemize>
     <item><with|font-series|bold|Lecture 5>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>]
@@ -116,7 +116,7 @@
 
   The results of Lectures 5--6 are new: joint work with S.-J. Meyer + AI.
 
-  Materials revised 3 November 2026. The TeXmacs sources of all notes
+  Materials revised 4 November 2026. The TeXmacs sources of all notes
   and slides, together with the style packages they use, are also
   available as one archive [<notes-store|zip|sissa/2026/cqft_texmacs_sources.zip>]. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.

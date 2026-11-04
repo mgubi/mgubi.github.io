@@ -7,15 +7,18 @@
   Field Theory>|<doc-subtitle|Lecture<nbsp>4: Forward\Ubackward
   equations>|<doc-author|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of
-  Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
+  Oxford>>>|<doc-date|SISSA, November 2026>>
 
   <abstract-data|<\abstract>
     Building on the scale decomposition and the stochastic observables of
     Lecture<nbsp>3, we introduce interactions. The interacting measure can be
     generated in three ways: as a renormalisation group decomposition of the
     covariance, as an optimal control problem, whose dynamic programming
-    equation is the Polchinski equation, and as a filtering problem, where
-    the regulator is the information gained on the terminal field. The three
+    equation is the Polchinski equation, and as a filtering problem: the
+    field at resolution <math|t> is a noisy observation of the terminal
+    field, the Polchinski process is this observation written in its own
+    filtration, and backward in resolution its dynamics is linear, with
+    Gaussian transitions, started from the interacting measure. The three
     views meet in one forward\Ubackward system for a field and a force, and
     its natural coordinates are the force coordinates: the forward equation
     loses its drift, and the conditional covariance becomes the propagator.
@@ -107,179 +110,195 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-19>>
 
+    <with|par-left|3tab|<with|font-size|0.92|The terminal field as a hidden
+    signal <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-20>>>
+
+    <with|par-left|3tab|<with|font-size|0.92|Generation by denoising
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-21>>>
+
     <with|par-left|1tab|7.4<space|2spc>Where the three views meet
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20>>
+    <no-break><pageref|auto-22>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>
+    <no-break><pageref|auto-24>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|8<space|2spc>Force
     coordinates and potentials> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-23><vspace|0.5fn>
+    <no-break><pageref|auto-25><vspace|0.5fn>
 
     <with|par-left|1tab|8.1<space|2spc>The force and a Burgers equation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>
+    <no-break><pageref|auto-26>>
 
     <with|par-left|1tab|8.2<space|2spc>Removing the predictable drift
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>
+    <no-break><pageref|auto-28>>
 
     <with|par-left|1tab|8.3<space|2spc>The FBSDE in the forecast coordinate
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-27>>
+    <no-break><pageref|auto-29>>
+
+    <with|par-left|3tab|<with|font-size|0.92|A one-dimensional model: Burgers
+    and Lax\UOleinik <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-30>>>
 
     <with|par-left|1tab|8.4<space|2spc>Conditional moments
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28>>
+    <no-break><pageref|auto-31>>
 
     <with|par-left|3tab|<with|font-size|0.92|Brascamp\ULieb and Cramér\URao
     bounds <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>>
+    <no-break><pageref|auto-32>>>
 
     <with|par-left|1tab|8.5<space|2spc>Potentials: the value function as a
     generator <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31>>
+    <no-break><pageref|auto-34>>
 
     <with|par-left|3tab|<with|font-size|0.92|Phase space and Lagrangian
     graphs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>>
+    <no-break><pageref|auto-35>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The free action generates the
     shear <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33>>>
+    <no-break><pageref|auto-36>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The value function generates the
     graph <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34>>>
+    <no-break><pageref|auto-37>>>
 
     <with|par-left|3tab|<with|font-size|0.92|No convexity is needed
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>>
+    <no-break><pageref|auto-38>>>
 
     <with|par-left|1tab|8.6<space|2spc>The Legendre transform and Wetterich's
     equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37>>
+    <no-break><pageref|auto-40>>
 
     <with|par-left|3tab|<with|font-size|0.92|Probabilistic meaning of
     <with|mode|math|\<Gamma\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-39>>>
+    <no-break><pageref|auto-42>>>
 
     <with|par-left|1tab|8.7<space|2spc>Variational meaning and the tree level
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-41>>
+    <no-break><pageref|auto-44>>
 
     <with|par-left|3tab|<with|font-size|0.92|Constrained free energies
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42>>>
+    <no-break><pageref|auto-45>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The tree level
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-43>>>
+    <no-break><pageref|auto-46>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44>>
+    <no-break><pageref|auto-47>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Observables
     and field equations> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45><vspace|0.5fn>
+    <no-break><pageref|auto-48><vspace|0.5fn>
 
     <with|par-left|1tab|9.1<space|2spc>Observables of the interacting theory
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>
+    <no-break><pageref|auto-49>>
 
     <with|par-left|3tab|<with|font-size|0.92|Tangent observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47>>>
+    <no-break><pageref|auto-50>>>
 
     <with|par-left|1tab|9.2<space|2spc>The field equation at every resolution
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-48>>
+    <no-break><pageref|auto-51>>
+
+    <with|par-left|3tab|<with|font-size|0.92|The field equation for the
+    forecast <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-52>>>
 
     <with|par-left|1tab|9.3<space|2spc>Gaussian bounds for the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-49>>
+    <no-break><pageref|auto-53>>
 
     <with|par-left|3tab|<with|font-size|0.92|The roughness of the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-50>>>
+    <no-break><pageref|auto-54>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Control of the force
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-51>>>
+    <no-break><pageref|auto-55>>>
 
     <with|par-left|3tab|<with|font-size|0.92|Consequence for
     <with|mode|math|\<Phi\><rsup|4><rsub|3>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-52>>>
+    <no-break><pageref|auto-56>>>
 
     <with|par-left|1tab|9.4<space|2spc>Infinite volume
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-53>>
+    <no-break><pageref|auto-57>>
 
     <with|par-left|3tab|<with|font-size|0.92|Differences of free energies
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-54>>>
+    <no-break><pageref|auto-58>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-55>>
+    <no-break><pageref|auto-59>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendices:
     additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-56><vspace|0.5fn>
+    <no-break><pageref|auto-60><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix
     A<space|2spc>Algebraic structure of the Polchinski flow>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-57><vspace|0.5fn>
+    <no-break><pageref|auto-61><vspace|0.5fn>
 
     <with|par-left|1tab|A.1<space|2spc>A semigroup of renormalisation maps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-58>>
+    <no-break><pageref|auto-62>>
 
     <with|par-left|1tab|A.2<space|2spc>Perturbation theory and counterterms
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-59>>
+    <no-break><pageref|auto-63>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-61>>
+    <no-break><pageref|auto-65>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix
     B<space|2spc>Stochastic localisation>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-62><vspace|0.5fn>
+    <no-break><pageref|auto-66><vspace|0.5fn>
 
     <with|par-left|3tab|<with|font-size|0.92|Why it is useful
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-63>>>
+    <no-break><pageref|auto-67>>>
 
     <with|par-left|1tab|B.1<space|2spc>Log-Sobolev inequalities along the
     localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-64>>
+    <no-break><pageref|auto-68>>
 
     <with|par-left|3tab|<with|font-size|0.92|Entropy as quadratic variation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-65>>>
+    <no-break><pageref|auto-69>>>
 
     <with|par-left|3tab|<with|font-size|0.92|In terms of the conditional
     covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-66>>>
+    <no-break><pageref|auto-70>>>
 
     <with|par-left|3tab|<with|font-size|0.92|An application: the KLS
     conjecture <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-67>>>
+    <no-break><pageref|auto-71>>>
 
     <with|par-left|3tab|<with|font-size|0.92|The connection with
     Bauerschmidt\UBodineau <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-68>>>
+    <no-break><pageref|auto-72>>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-69>>
+    <no-break><pageref|auto-73>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-70><vspace|0.5fn>
+    <no-break><pageref|auto-74><vspace|0.5fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -321,7 +340,7 @@
   for real functions. For a functional <math|F> on smooth fields,
   <math|\<mathD\>F<around|(|\<varphi\>|)>\<in\>\<cal-S\><rprime|'><around|(|\<cal-M\>|)>>
   and <math|\<mathD\><rsup|2>F<around|(|\<varphi\>|)>> are its first and
-  second derivatives, <math|D<rsub|h>*F=<around|\<langle\>|\<mathD\>F,h|\<rangle\>>>.
+  second derivatives, <math|\<mathD\><rsub|h>*F=<around|\<langle\>|\<mathD\>F,h|\<rangle\>>>.
   <math|H<rsub|n>*<around|(|a;c|)>> are the Hermite polynomials of variance
   <math|c>, and <math|\<mu\><rsup|Q>> is the centred Gaussian measure with
   covariance <math|Q>.
@@ -365,9 +384,11 @@
     dynamic programming equation.
 
     <item><strong|Filtering> (Section<nbsp><reference|sec:filtering>).
-    Measure the terminal field with increasing precision. The law of the
-    terminal field given the measurement is the posterior, and the regulator
-    is the information gained.
+    Observe the terminal field through noise, with increasing precision. The
+    field at resolution <math|t> is the observation, the force is what it
+    reveals about the terminal field, and backward in resolution the process
+    has a linear dynamics with Gaussian transitions, started from the
+    interacting measure.
   </itemize>
 
   Section<nbsp><reference|sec:meet> shows that the three constructions
@@ -769,14 +790,16 @@
   is to write a measure as a mixture of simpler ones, through a
   measure-valued martingale driven by noise.
   Proposition<nbsp><reference|prop:marginals> says that the Polchinski
-  process does exactly this for <math|\<nu\><rsub|T>>.
+  process does exactly this for <math|\<nu\><rsub|T>>. What Eldan's
+  construction adds to the picture of Section<nbsp><reference|sec:rg> is a
+  statistical reading: the Polchinski process is a noisy observation of its
+  own terminal value, and its drift is what an optimal filter learns from
+  this observation.
 
-  What Eldan's construction adds to the picture of
-  Section<nbsp><reference|sec:rg> is a statistical reading: the process is a
-  measurement. Assume that all the deterministic covariance operators are
-  functions of <math|A>, hence commute, and let <math|K=Q<rsub|T><rsup|-1>>,
-  <math|J<rsub|t>=K*Q<rsub|t>>, so that <math|J<rsub|0>=0>,
-  <math|J<rsub|T>=1>. For the heat profile,
+  <paragraph|The terminal field as a hidden signal> Assume that all the
+  deterministic covariance operators are functions of <math|A>, hence
+  commute, and let <math|K=Q<rsub|T><rsup|-1>>, <math|J<rsub|t>=K*Q<rsub|t>>,
+  so that <math|J<rsub|0>=0>, <math|J<rsub|T>=1>. For the heat profile,
   <math|K=A\<mathe\><rsup|A/T<rsup|2>>> and
   <math|J<rsub|t>=\<mathe\><rsup|-A<around|(|t<rsup|-2>-T<rsup|-2>|)>>> is a
   heat semigroup, which tends to <math|\<mathe\><rsup|-A/t<rsup|2>>> as
@@ -790,88 +813,228 @@
     of >\<Phi\><rsub|T>.<label|eq:bridge>
   </equation>
 
-  Let <math|\<cal-R\><rsub|t>\<assign\>S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>>,
-  the <strong|regulator>, so that <math|\<cal-R\><rsub|0>=0> and
-  <math|<wide|\<cal-R\>|\<dot\>><rsub|t>=S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t>S<rsub|t><rsup|-1>\<geqslant\>0>.
-  Since <math|S<rsub|t>=Q<rsub|T><around|(|1-J<rsub|t>|)>>, we have
-  <math|S<rsub|t><rsup|-1>J<rsub|t>=\<cal-R\><rsub|t>>, and
-  <math|j<rsub|t>=S<rsub|t><rsup|-1>\<Phi\><rsub|t>> is a noisy measurement
-  of the terminal field, with signal-to-noise ratio the regulator:
+  Read<nbsp><eqref|eq:bridge> as a statistical model. The <em|signal>
+  <math|\<Phi\><rsub|T>> is hidden, with <em|prior> <math|\<nu\><rsub|T>>,
+  and the path <math|<around|(|\<Phi\><rsub|s>|)><rsub|s\<leqslant\>t>> is an
+  <em|observation> of it: a copy attenuated by <math|J<rsub|t>> and corrupted
+  by a Gaussian noise independent of the signal. Infinitesimally, the bridge
+  is the Doob transform of <math|X> by the Gaussian density of the remaining
+  increment <math|\<Phi\><rsub|T>-\<Phi\><rsub|t>\<sim\>\<mu\><rsup|S<rsub|t>>>,
+  so that
 
   <\equation>
-    j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>,<space|1em>
-    N<rsub|t>=S<rsub|t><rsup|-1>\<zeta\><rsub|t>,<space|1em>\<bbb-E\><around|[|N<rsub|s>\<otimes\>
-    N<rsub|t>|]>=\<cal-R\><rsub|s\<wedge\> t>,<space|1em> N<text| independent
-    of >\<Phi\><rsub|T>.<label|eq:measurement>
+    <label|eq:observation>\<mathd\>\<Phi\><rsub|t>=<wide|Q|\<dot\>><rsub|t>*S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)><space|0.17em>\<mathd\>t+<wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>B<rsub|t>,
   </equation>
 
-  Let <math|\<cal-K\><rsub|t><around|(|j|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
-  y|)>>. Note that <math|\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t><around|(|x|)>>
-  up to a function of <math|t>.
+  with <math|B> a Brownian motion independent of <math|\<Phi\><rsub|T>>, in
+  the filtration enlarged by <math|\<sigma\><around|(|\<Phi\><rsub|T>|)>>: at
+  each resolution the field is pulled towards the hidden terminal field, and
+  the pull is seen through noise. The <em|filtering problem> is to estimate
+  <math|\<Phi\><rsub|T>> from <math|\<cal-F\><rsub|t>=\<sigma\><around|(|\<Phi\><rsub|s>:s\<leqslant\>t|)>>,
+  the filtration of the Polchinski process itself. Let
+  <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t><around|[|\<Phi\><rsub|T>|]>>,
+  <math|<math-up|Cov><rsub|t>=<math-up|Cov><around|(|\<Phi\><rsub|T>\|\<cal-F\><rsub|t>|)>>,
+  and let
+
+  <\equation*>
+    \<cal-R\><rsub|t>\<assign\>S<rsub|t><rsup|-1>-Q<rsub|T><rsup|-1>,<space|2em>\<cal-R\><rsub|0>=0,<space|2em><wide|\<cal-R\>|\<dot\>><rsub|t>=S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t>S<rsub|t><rsup|-1>\<geqslant\>0,
+  </equation*>
+
+  be the <strong|regulator>.
 
   <\proposition>
     <dueto|Filtering, formal; a theorem at finite
-    cutoff><label|prop:filtering>Let <math|\<cal-F\><rsub|t>> be generated by
-    <math|<around|(|j<rsub|s>|)><rsub|s\<leqslant\> t>>, and let
-    <math|\<psi\><rsub|t>=\<bbb-E\><rsub|t><around|[|\<Phi\><rsub|T>|]>>,
-    <math|<math-up|Cov><rsub|t>=<math-up|Cov><around|(|\<Phi\><rsub|T>\|\<cal-F\><rsub|t>|)>>.
-    Then:
+    cutoff><label|prop:filtering>
 
     <\enumerate-alpha>
       <item>The conditional law of <math|\<Phi\><rsub|T>> given
-      <math|\<cal-F\><rsub|t>> is <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>>,
-      the Bayesian posterior, proportional to
-      <math|\<mathe\><rsup|<around|\<langle\>|j<rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
-      y|)>>. So <math|\<psi\><rsub|t>=D\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>
-      and <math|<math-up|Cov><rsub|t>=D<rsup|2>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>.
+      <math|\<cal-F\><rsub|t>> is the Bayesian posterior
 
-      <item>The Brownian motion <math|W> of the FBSDE is the
-      <strong|innovation> of the filter: <math|<space|0.17em>\<mathd\>
-      j<rsub|t>=<wide|\<cal-R\>|\<dot\>><rsub|t>\<psi\><rsub|t><space|0.17em>\<mathd\>
-      t+<wide|\<cal-R\>|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>
-      W<rsub|t>> and <math|<space|0.17em>\<mathd\>\<psi\><rsub|t>=<math-up|Cov><rsub|t><wide|\<cal-R\>|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>
-      W<rsub|t>>. Moreover <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>.
+      <\equation>
+        <label|eq:posterior>\<mu\><rsub|t><rsup|\<Phi\><rsub|t>><around|(|\<mathd\>y|)>\<propto\>\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>\<Phi\><rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|\<mathd\>y|)>.
+      </equation>
 
-      <item>The log-partition function solves the Hamilton\UJacobi equation
-      <math|\<partial\><rsub|t>\<cal-K\><rsub|t>+<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>><rsub|t>D<rsup|2>\<cal-K\><rsub|t>|)>+<frac|1|2><around|\<langle\>|D\<cal-K\><rsub|t>,<wide|\<cal-R\>|\<dot\>><rsub|t>D\<cal-K\><rsub|t>|\<rangle\>>=0>:
-      this is the Polchinski equation in the variable <math|j>.
+      It depends on the path only through <math|\<Phi\><rsub|t>>, a
+      sufficient statistic, and <math|\<cal-R\><rsub|t>> is the precision
+      gained on <math|\<Phi\><rsub|T>>.
+
+      <item>The Brownian motion <math|W> of the FBSDE<nbsp><eqref|eq:fbsde>
+      is the <strong|innovation> of the filter,
+      <math|W<rsub|t>=B<rsub|t>+<big|int><rsub|0><rsup|t><wide|Q|\<dot\>><rsub|s><rsup|1/2>S<rsub|s><rsup|-1><around|(|\<Phi\><rsub|T>-\<psi\><rsub|s>|)><space|0.17em>\<mathd\>s>,
+      and the force is the posterior mean of the pull
+      in<nbsp><eqref|eq:observation>, per unit
+      <math|<wide|Q|\<dot\>><rsub|t>>:
+
+      <\equation*>
+        F<rsub|t>=\<bbb-E\><rsub|t><around*|[|S<rsub|t><rsup|-1><around|(|\<Phi\><rsub|T>-\<Phi\><rsub|t>|)>|]>,<space|2em><text|i.e.><space|1em>\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>.
+      </equation*>
+
+      So<nbsp><eqref|eq:fbsde> is the observation
+      equation<nbsp><eqref|eq:observation> written in its own filtration.
+
+      <item>Every observable <math|O<rsub|t>=\<bbb-E\><rsub|t><around|[|G<around|(|\<Phi\><rsub|T>|)>|]>>
+      solves the filter equation
+
+      <\equation*>
+        \<mathd\>O<rsub|t>=<around|\<langle\>|<math-up|Cov><rsub|t><around|(|G<around|(|\<Phi\><rsub|T>|)>,\<Phi\><rsub|T>|)>,S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>|\<rangle\>>,<space|2em><text|in
+        particular><space|1em>\<mathd\>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>W<rsub|t>.
+      </equation*>
     </enumerate-alpha>
   </proposition>
 
   <\proof>
-    (a) Given <math|\<Phi\><rsub|T>=y>, the density of the path of <math|j>
-    with respect to that of <math|N> is <math|\<mathe\><rsup|<around|\<langle\>|j<rsub|t>,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>>
-    (Girsanov), and Bayes' formula applies. (b) Integrate
-    (<reference|eq:fbsde>) from <math|t> to <math|T> and condition on
-    <math|\<cal-F\><rsub|t>>: since <math|F> is a martingale,
-    <math|\<bbb-E\><rsub|t><big|int><rsub|t><rsup|T><wide|Q|\<dot\>><rsub|s>F<rsub|s><space|0.17em>\<mathd\>
-    s=S<rsub|t>F<rsub|t>>, so <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>.
-    Differentiating <math|j=S<rsup|-1>\<Phi\>> in (<reference|eq:fbsde>),
-    with <math|\<partial\><rsub|t>S<rsub|t><rsup|-1>=<wide|\<cal-R\>|\<dot\>><rsub|t>>,
-    gives the first equation. Since <math|\<psi\><rsub|t>=D\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>
-    is a martingale, the drift in Itô's formula vanishes and the martingale
-    part is <math|D<rsup|2>\<cal-K\><rsub|t><around|(|j<rsub|t>|)><wide|\<cal-R\>|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>
-    W<rsub|t>>. (c) <math|\<partial\><rsub|t>\<cal-K\>=-<frac|1|2>\<bbb-E\><around|\<langle\>|y,<wide|\<cal-R\>|\<dot\>>y|\<rangle\>>>
-    and <math|<math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>D<rsup|2>\<cal-K\>|)>=\<bbb-E\><around|\<langle\>|y,<wide|\<cal-R\>|\<dot\>>y|\<rangle\>>-<around|\<langle\>|\<psi\>,<wide|\<cal-R\>|\<dot\>>\<psi\>|\<rangle\>>>.
+    (a) By Proposition<nbsp><reference|prop:marginals> the conditional law is
+    <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>>, the tilt of
+    <math|\<mu\><rsup|S<rsub|t>><around|(|\<cdummy\>-\<Phi\><rsub|t>|)>> by
+    <math|\<mathe\><rsup|-V<rsub|T>>>. The ratio of the Gaussian densities of
+    <math|\<mu\><rsup|S<rsub|t>><around|(|\<cdummy\>-x|)>> and
+    <math|\<mu\><rsup|Q<rsub|T>>> at <math|y> is
+    <math|\<mathe\><rsup|<around|\<langle\>|S<rsub|t><rsup|-1>x,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>>
+    up to a function of <math|x>; equivalently, apply Bayes' formula to the
+    likelihood of<nbsp><eqref|eq:bridge>. (b) Integrate<nbsp><eqref|eq:fbsde>
+    from <math|t> to <math|T> and condition on <math|\<cal-F\><rsub|t>>:
+    since <math|F> is a martingale, <math|\<bbb-E\><rsub|t><big|int><rsub|t><rsup|T><wide|Q|\<dot\>><rsub|s>F<rsub|s><space|0.17em>\<mathd\>
+    s=S<rsub|t>F<rsub|t>>, so <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>,
+    and the posterior mean of the drift of<nbsp><eqref|eq:observation> is
+    <math|<wide|Q|\<dot\>><rsub|t>S<rsub|t><rsup|-1><around|(|\<psi\><rsub|t>-\<Phi\><rsub|t>|)>=<wide|Q|\<dot\>><rsub|t>F<rsub|t>>.
+    Comparing the two expressions<nbsp><eqref|eq:fbsde>
+    and<nbsp><eqref|eq:observation> of <math|\<mathd\>\<Phi\><rsub|t>> gives
+    the formula for <math|W>. (c) <math|O<rsub|t>=G<rsub|t><around|(|\<Phi\><rsub|t>|)>>
+    with <math|G<rsub|t><around|(|x|)>=\<mu\><rsub|t><rsup|x><around|(|G|)>>
+    is a martingale, so the drift in Itô's formula vanishes, and
+    differentiating<nbsp><eqref|eq:posterior> in <math|x> gives
+    <math|\<mathD\>G<rsub|t><around|(|x|)>=S<rsub|t><rsup|-1><math-up|Cov><rsub|t><around|(|\<Phi\><rsub|T>,G<around|(|\<Phi\><rsub|T>|)>|)>>.
   </proof>
 
-  So the log-partition function of the filter is the effective potential in
-  another coordinate, and the Polchinski flow is its Hamilton\UJacobi
-  equation <cite|BBD24>. The basic form of Eldan's scheme, with identity
-  control, is the profile <math|S<rsub|t>=<around|(|Q<rsub|T><rsup|-1>+t|)><rsup|-1>>,
-  <math|t\<in\><around|[|0,\<infty\>|)>>, where <math|\<cal-R\><rsub|t>=t>
-  and <math|j<rsub|t>=t\<Phi\><rsub|T>+N<rsub|t>> with <math|N> a Brownian
-  motion; Eldan's original construction <cite|Eld13> uses an adapted control
-  matrix. This is the profile of Lectures<nbsp>5\U6.
+  So the Polchinski process is a filter. The interacting measure is the prior
+  on a hidden field; at resolution <math|t> one has observed the coarse field
+  <math|\<Phi\><rsub|t>>, and <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>> is
+  what is known about the fine one. The forecast <math|\<psi\><rsub|t>> is
+  the posterior mean of the hidden field, and
+  <math|<wide|Q|\<dot\>><rsub|t>F<rsub|t>> is the posterior mean of its pull
+  on the observed one. For the Gaussian prior <math|\<mu\><rsup|Q<rsub|T>>>
+  the increments are independent, so the posterior mean is
+  <math|\<Phi\><rsub|t>> itself and <math|F=0>: <math|\<Phi\><rsub|t>> is the
+  estimate that ignores the interaction and <math|\<psi\><rsub|t>> the one
+  that includes it. The effective potential is a likelihood ratio: by the
+  proof of Theorem<nbsp><reference|thm:fbsde>,
+  <math|Z<rsub|T><rsup|-1>\<mathe\><rsup|-V<rsub|t><around|(|\<Phi\><rsub|t>|)>>>
+  is the likelihood ratio of the observation up to resolution <math|t> under
+  the interacting and under the Gaussian prior, and the Polchinski equation
+  is the equation of its logarithm.
+
+  <\proposition>
+    <dueto|Backward in resolution><label|prop:reversal>
+    <with|font-shape|right|(formal)> Under <math|\<bbb-P\>> the reversed
+    process <math|<wide|\<Phi\>|^><rsub|s>\<assign\>\<Phi\><rsub|T-s>>,
+    <math|s\<in\><around|[|0,T|]>>, solves the linear equation
+
+    <\equation>
+      <label|eq:reversal>\<mathd\><wide|\<Phi\>|^><rsub|s>=-<wide|Q|\<dot\>><rsub|T-s>Q<rsub|T-s><rsup|-1><wide|\<Phi\>|^><rsub|s><space|0.17em>\<mathd\>s+<wide|Q|\<dot\>><rsub|T-s><rsup|1/2><space|0.17em>\<mathd\><wide|W|^><rsub|s>,<space|2em><wide|\<Phi\>|^><rsub|0>=\<Phi\><rsub|T>\<sim\>\<nu\><rsub|T>,
+    </equation>
+
+    with <math|<wide|W|^>> a Brownian motion independent of
+    <math|\<Phi\><rsub|T>>, and its solution is<nbsp><eqref|eq:bridge>.
+    Backward in resolution, the Polchinski process is a linear Markov
+    process, with Gaussian transition kernels which do not depend on the
+    interaction, started from the interacting measure. It is not a Gaussian
+    process: its marginals <math|\<nu\><rsub|t>> are not Gaussian.
+  </proposition>
+
+  <\proof>
+    Under <math|\<bbb-P\><rsub|0>>, <math|X> is a centred Gaussian process
+    with independent increments, so its reversal is a Gaussian Markov
+    process: for <math|t\<less\>u>, the law of <math|X<rsub|t>> given
+    <math|<around|(|X<rsub|r>|)><rsub|r\<geqslant\>u>> is
+    <math|N<around|(|Q<rsub|t>Q<rsub|u><rsup|-1>X<rsub|u>,Q<rsub|t>-Q<rsub|t>Q<rsub|u><rsup|-1>Q<rsub|t>|)>>,
+    and letting <math|u\<downarrow\>t> gives the drift and the diffusion
+    of<nbsp><eqref|eq:reversal>. Since <math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>>
+    is a function of <math|X<rsub|T>>, the initial value of the reversed
+    process, these transition kernels are the same under <math|\<bbb-P\>>,
+    and only the initial law changes, from <math|\<mu\><rsup|Q<rsub|T>>> to
+    <math|\<nu\><rsub|T>>.
+  </proof>
+
+  <paragraph|Generation by denoising> So two dynamics have the same marginals
+  <math|\<nu\><rsub|t>>. Backward in resolution, the interacting field is
+  progressively blurred by Gaussian noise,
+  <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>, until
+  nothing is left at <math|t=0>; this dynamics does not know the interaction.
+  Forward, the Polchinski process undoes the blurring, and all the
+  interaction sits in its drift. For <math|0\<less\>t\<leqslant\>T>, at
+  finite cutoff, the time-reversal formula for diffusions says that the
+  forward drift is minus the backward one plus
+  <math|<wide|Q|\<dot\>><rsub|t>> times the score of the marginal: if
+  <math|p<rsub|t>> is the density of <math|\<nu\><rsub|t>>,
+
+  <\equation*>
+    <wide|Q|\<dot\>><rsub|t>F<rsub|t>=<wide|Q|\<dot\>><rsub|t>Q<rsub|t><rsup|-1>\<Phi\><rsub|t>+<wide|Q|\<dot\>><rsub|t>\<mathD\>log
+    p<rsub|t><around|(|\<Phi\><rsub|t>|)>,<space|2em><text|i.e.><space|1em>F<rsub|t>=\<mathD\>log
+    p<rsub|t><around|(|\<Phi\><rsub|t>|)>+Q<rsub|t><rsup|-1>\<Phi\><rsub|t>:
+  </equation*>
+
+  the force is the score of <math|\<nu\><rsub|t>> relative to that of the
+  Gaussian reference <math|\<mu\><rsup|Q<rsub|t>>>, as
+  <math|\<nu\><rsub|t>\<propto\>\<mathe\><rsup|-V<rsub|t>>\<mu\><rsup|Q<rsub|t>>>
+  requires. The forecast is the optimal denoiser, and Tweedie's formula
+  <math|\<psi\><rsub|t>=J<rsub|t><rsup|-1><around|(|\<Phi\><rsub|t>+Q<rsub|t><around|(|1-J<rsub|t>|)>\<mathD\>log
+  p<rsub|t><around|(|\<Phi\><rsub|t>|)>|)>> is again
+  <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>>. This is the
+  structure of score-based generative models (diffusion models), with
+  <math|\<nu\><rsub|T>> as the data distribution, the blurring as the noising
+  process and the Polchinski process as the generating dynamics.
+
+  <\remark>
+    <dueto|The measurement coordinate and the
+    literature><label|rem:measurement> In the literature on stochastic
+    localisation<nbsp><cite|Eld13|Eld23|BBD24> the observation is written in
+    another coordinate. Let <math|j<rsub|t>\<assign\>S<rsub|t><rsup|-1>\<Phi\><rsub|t>>.
+    Since <math|S<rsub|t><rsup|-1>J<rsub|t>=\<cal-R\><rsub|t>>,<nbsp><eqref|eq:bridge>
+    becomes a linear measurement of the terminal field with signal-to-noise
+    ratio <math|\<cal-R\><rsub|t>>:
+
+    <\equation>
+      j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>,<space|1em>
+      N<rsub|t>=S<rsub|t><rsup|-1>\<zeta\><rsub|t>,<space|1em>\<bbb-E\><around|[|N<rsub|s>\<otimes\>
+      N<rsub|t>|]>=\<cal-R\><rsub|s\<wedge\> t>,<space|1em> N<text|
+      independent of >\<Phi\><rsub|T>.<label|eq:measurement>
+    </equation>
+
+    In this coordinate<nbsp><eqref|eq:posterior> is an exponential family
+    with natural parameter <math|j<rsub|t>> and log-partition function
+    <math|\<cal-K\><rsub|t><around|(|j|)>=<math-up|log><big|int>\<mathe\><rsup|<around|\<langle\>|j,y|\<rangle\>>-<frac|1|2><around|\<langle\>|y,\<cal-R\><rsub|t>y|\<rangle\>>>\<nu\><rsub|T><around|(|<space|0.17em>\<mathd\>
+    y|)>>, and <math|\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>=<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-V<rsub|t><around|(|x|)>>
+    up to a function of <math|t>. Then <math|\<psi\><rsub|t>=\<mathD\>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>,
+    <math|<math-up|Cov><rsub|t>=\<mathD\><rsup|2>\<cal-K\><rsub|t><around|(|j<rsub|t>|)>>,
+    <math|<space|0.17em>\<mathd\> j<rsub|t>=<wide|\<cal-R\>|\<dot\>><rsub|t>\<psi\><rsub|t><space|0.17em>\<mathd\>
+    t+<wide|\<cal-R\>|\<dot\>><rsub|t><rsup|1/2><space|0.17em>\<mathd\>
+    W<rsub|t>> with the same innovation <math|W>, and
+
+    <\equation>
+      <label|eq:K-HJ>\<partial\><rsub|t>\<cal-K\><rsub|t>+<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>><rsub|t>\<mathD\><rsup|2>\<cal-K\><rsub|t>|)>+<frac|1|2><around|\<langle\>|\<mathD\>\<cal-K\><rsub|t>,<wide|\<cal-R\>|\<dot\>><rsub|t>\<mathD\>\<cal-K\><rsub|t>|\<rangle\>>=0,
+    </equation>
+
+    the Polchinski equation in the variable <math|j><nbsp><cite|BBD24>
+    (<math|\<partial\><rsub|t>\<cal-K\>=-<frac|1|2>\<bbb-E\><around|\<langle\>|y,<wide|\<cal-R\>|\<dot\>>y|\<rangle\>>>
+    and <math|<math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>>\<mathD\><rsup|2>\<cal-K\>|)>=\<bbb-E\><around|\<langle\>|y,<wide|\<cal-R\>|\<dot\>>y|\<rangle\>>-<around|\<langle\>|\<psi\>,<wide|\<cal-R\>|\<dot\>>\<psi\>|\<rangle\>>>,
+    expectations under the posterior). The basic form of Eldan's scheme is
+    the profile <math|S<rsub|t>=<around|(|Q<rsub|T><rsup|-1>+t|)><rsup|-1>>,
+    <math|t\<in\><around|[|0,\<infty\>|)>> (the terminal resolution is then
+    <math|t=\<infty\>>, and <math|Q<rsub|T>> is the cutoff covariance), where
+    <math|\<cal-R\><rsub|t>=t> and <math|j<rsub|t>=t\<Phi\><rsub|T>+N<rsub|t>>
+    with <math|N> a Brownian motion; Eldan's original
+    construction<nbsp><cite|Eld13> uses an adapted control matrix. This is
+    the profile of Lectures<nbsp>5\U6.
+  </remark>
 
   <subsection|Where the three views meet><label|sec:meet>
 
   The three constructions give one process. Renormalisation produces it as
   the field at resolution <math|t> with its effective drift
   (Theorem<nbsp><reference|thm:fbsde>), control as the optimal state
-  (<reference|eq:EL>), and filtering as the rescaled measurement
-  <math|S<rsub|t>j<rsub|t>> (Proposition<nbsp><reference|prop:filtering>).
-  Each of them has a name for each object:
+  (<reference|eq:EL>), and filtering as the observation written in its own
+  filtration (Proposition<nbsp><reference|prop:filtering>). Each of them has
+  a name for each object:
 
   <\padded-center>
     <with|font-size|0.84|<wide-tabular|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|-1|2|4|cell-hyphen|t>|<cwith|1|-1|1|1|cell-width|0.2par>|<cwith|1|-1|1|1|cell-hmode|exact>|<cwith|1|-1|2|4|cell-width|0.26par>|<cwith|1|-1|2|4|cell-hmode|exact>|<cwith|1|1|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-bborder|1ln>|<table|<row|<\cell>
@@ -897,7 +1060,7 @@
     </cell>|<\cell>
       state
     </cell>|<\cell>
-      posterior mean for the Gaussian prior, <math|S<rsub|t>j<rsub|t>>
+      observation; posterior mean for the Gaussian prior
     </cell>>|<row|<\cell>
       <math|F<rsub|t>>
     </cell>|<\cell>
@@ -935,7 +1098,7 @@
     </cell>|<\cell>
       covariance of <math|\<mu\><rsub|t><rsup|\<Phi\><rsub|t>>>
     </cell>|<\cell>
-      <math|S<rsub|t>-S<rsub|t>D<rsup|2>V<rsub|t>S<rsub|t>>
+      <math|S<rsub|t>-S<rsub|t>\<mathD\><rsup|2>V<rsub|t>S<rsub|t>>
     </cell>|<\cell>
       posterior covariance
     </cell>>|<row|<\cell>
@@ -945,8 +1108,8 @@
     </cell>|<\cell>
       value function
     </cell>|<\cell>
-      <math|<frac|1|2><around|\<langle\>|x,S<rsub|t><rsup|-1>x|\<rangle\>>-\<cal-K\><rsub|t><around|(|S<rsub|t><rsup|-1>x|)>>,
-      up to a function of <math|t>
+      minus the log-likelihood ratio of the observation, up to <math|log
+      Z<rsub|T>>
     </cell>>>>>>
   </padded-center>
 
@@ -1340,6 +1503,75 @@
   replace <math|\<mathD\>V<rsub|T>> by <math|-\<frak-f\>>
   in<nbsp><eqref|eq:transformed-fbsde> and<nbsp><eqref|eq:transformed-flow>.
 
+  <paragraph|A one-dimensional model: Burgers and Lax\UOleinik> The passage
+  to force coordinates is the passage from Eulerian to Lagrangian coordinates
+  for Burgers' equation. Consider first the inviscid Burgers equation on
+  <math|\<bbb-R\>>,
+
+  <\equation*>
+    \<partial\><rsub|s>u+u*\<partial\><rsub|x>u=0,<space|2em>u<around|(|0,x|)>=g<rprime|'><around|(|x|)>.
+  </equation*>
+
+  Along the characteristics <math|x=y+s*g<rprime|'><around|(|y|)>> the
+  velocity is constant, <math|u<around|(|s,y+s*g<rprime|'><around|(|y|)>|)>=g<rprime|'><around|(|y|)>>:
+  in the Lagrangian label <math|y> the transport term disappears, and nothing
+  moves. As long as the characteristics do not cross, i.e.
+  <math|1+s*g<rprime|''>\<gtr\>0>, the map <math|y\<mapsto\>x> is invertible,
+  and <math|u=\<partial\><rsub|x>G> with the potential given by the
+  <em|Lax\UOleinik formula> (or Hopf\ULax formula)
+
+  <\equation*>
+    G<around|(|s,x|)>=min<rsub|y><around*|{|g<around|(|y|)>+<frac|<around|(|x-y|)><rsup|2>|2*s>|}>,<space|2em>u<around|(|s,x|)>=<frac|x-y<around|(|s,x|)>|s>=g<rprime|'><around|(|y<around|(|s,x|)>|)>,
+  </equation*>
+
+  whose minimiser <math|y<around|(|s,x|)>> is the Lagrangian label of the
+  point <math|x>. After the characteristics cross, the formula still selects
+  one label, the entropy solution, and <math|u> has shocks. The viscous
+  equation <math|\<partial\><rsub|s>u+u*\<partial\><rsub|x>u=\<varepsilon\>*\<partial\><rsub|x><rsup|2>u>
+  is linearised by the Cole\UHopf transform,
+
+  <\equation*>
+    G<rsup|\<varepsilon\>><around|(|s,x|)>=-2*\<varepsilon\>*log
+    <big|int>\<mathe\><rsup|-<around|(|g<around|(|y|)>+<around|(|x-y|)><rsup|2>/2*s|)>/2*\<varepsilon\>>*\<mathd\>y,
+  </equation*>
+
+  and <math|G<rsup|\<varepsilon\>>\<to\>G> as <math|\<varepsilon\>\<to\>0> by
+  Laplace's method.
+
+  The dictionary with this section is: the unresolved covariance
+  <math|S<rsub|t>> is the time <math|s>, the field <math|x> is the Eulerian
+  point, the forecast <math|\<psi\>> is the Lagrangian label <math|y>,
+  <math|-F<rsub|t>=\<mathD\>V<rsub|t>> is the velocity <math|u> (and
+  <math|V<rsub|t>> is <math|G>), and <math|V<rsub|T>> is the datum <math|g>.
+  The shear<nbsp><eqref|eq:shear>, i.e.<nbsp><eqref|eq:coord> at tree level,
+  <math|x=\<psi\>+S<rsub|t>\<mathD\>V<rsub|T><around|(|\<psi\>|)>>, is the
+  characteristic map; the noiseless Polchinski equation is the
+  Hamilton\UJacobi equation <math|\<partial\><rsub|s>G+<frac|1|2><around|(|\<partial\><rsub|x>G|)><rsup|2>=0>,
+  whose gradient solves the inviscid Burgers equation; the tree-level
+  potential<nbsp><eqref|eq:hopf-lax> is the Lax\UOleinik formula; and the
+  condition for the characteristics not to cross,
+  <math|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>V<rsub|T>\<gtr\>0>, is
+  <math|1+s*g<rprime|''>\<gtr\>0>. The Polchinski equation is the viscous
+  Hamilton\UJacobi equation, with <math|\<varepsilon\>=<frac|1|2>> in the
+  metric <math|<wide|Q|\<dot\>><rsub|t>>, and<nbsp><eqref|eq:Vt> is the
+  Cole\UHopf formula.
+
+  Theorem<nbsp><reference|thm:transformed> is the Lagrangian description of
+  the <em|viscous> problem. With noise the label is no longer a function of
+  the Eulerian point: it is its posterior mean, the mean <math|\<psi\>> of
+  <math|y> under the Cole\UHopf measure <math|\<propto\>\<mathe\><rsup|-g<around|(|y|)>-<around|(|x-y|)><rsup|2>/2*s>>,
+  which is <math|\<mu\><rsub|t><rsup|x>>. In this label the velocity is no
+  longer constant but a martingale, and its
+  evolution<nbsp><eqref|eq:transformed-flow> contains only the loops. The
+  Lax\UOleinik form survives exactly: the Moreau
+  formula<nbsp><eqref|eq:moreau> of Section<nbsp><reference|sec:generator> is
+  the Lax\UOleinik formula with the datum <math|V<rsub|T>> replaced by
+  <math|\<Gamma\><rsub|t>>, and at finite cutoff no shocks form: the noise
+  keeps the label map invertible, locally by
+  Proposition<nbsp><reference|prop:H-cov> and globally by the convexity
+  argument of Section<nbsp><reference|sec:generator>.
+  Figure<nbsp><reference|fig:shear> shows the construction for a double well.
+
   <subsection|Conditional moments><label|sec:moments>
 
   For the Polchinski process the response has a direct meaning.
@@ -1495,8 +1727,8 @@
   </equation>
 
   The relation <math|\<psi\>=x+S<rsub|t>p> is the shear
-  (<reference|eq:shear>). Since <math|D<rsub|x>\<cal-A\><rsub|t>=-p> and
-  <math|D<rsub|\<psi\>>\<cal-A\><rsub|t>=p>, at fixed <math|t>
+  (<reference|eq:shear>). Since <math|\<mathD\><rsub|x>\<cal-A\><rsub|t>=-p>
+  and <math|\<mathD\><rsub|\<psi\>>\<cal-A\><rsub|t>=p>, at fixed <math|t>
 
   <\equation*>
     <space|0.17em>\<mathd\>\<cal-A\><rsub|t>=<around|\<langle\>|p,<space|0.17em>\<mathd\>\<psi\>|\<rangle\>>-<around|\<langle\>|p,<space|0.17em>\<mathd\>
@@ -1505,7 +1737,7 @@
 
   so <math|\<cal-A\><rsub|t>> is the generating function of the canonical
   transformation <math|\<Sigma\><rsub|t>>. Moreover
-  <math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|D<rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>D<rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>:
+  <math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|\<mathD\><rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>\<mathD\><rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>:
   for every <math|\<psi\>> it solves the noiseless Polchinski equation, so it
   is a complete integral of that equation, with parameter <math|\<psi\>>.
   Jacobi's theorem then says that in the new coordinates the Hamiltonian
@@ -1563,12 +1795,12 @@
   transformation:
 
   <\equation*>
-    <space|0.17em>\<mathd\> V<rsub|t>=<around|\<langle\>|D\<Gamma\><rsub|t>,<space|0.17em>\<mathd\>\<psi\>|\<rangle\>>+<around|\<langle\>|p,<space|0.17em>\<mathd\>\<psi\>|\<rangle\>>-<around|\<langle\>|p,<space|0.17em>\<mathd\>
+    <space|0.17em>\<mathd\> V<rsub|t>=<around|\<langle\>|\<mathD\>\<Gamma\><rsub|t>,<space|0.17em>\<mathd\>\<psi\>|\<rangle\>>+<around|\<langle\>|p,<space|0.17em>\<mathd\>\<psi\>|\<rangle\>>-<around|\<langle\>|p,<space|0.17em>\<mathd\>
     x|\<rangle\>>=-<around|\<langle\>|F<rsub|t>,<space|0.17em>\<mathd\>
     x|\<rangle\>>,
   </equation*>
 
-  since <math|D\<Gamma\><rsub|t><around|(|\<psi\>|)>=-F<rsub|t>=-p>.
+  since <math|\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\>|)>=-F<rsub|t>=-p>.
 
   <paragraph|No convexity is needed> The construction uses no convexity of
   <math|V<rsub|T>>, <math|V<rsub|t>> or <math|\<Gamma\><rsub|t>>. The convex
@@ -1638,11 +1870,11 @@
     Integrate<nbsp><eqref|eq:transformed-flow> in field space. With
     <math|\<cal-F\>=\<mathD\>\<Gamma\>>, the derivative of
     <math|H=<around|(|S<rsup|-1>+\<mathD\><rsup|2>\<Gamma\>|)><rsup|-1>> in a
-    direction <math|v> is <math|-H*<space|0.17em>D<rsup|3>*\<Gamma\><around|[|v|]>*<space|0.17em>H>,
-    so by the total symmetry of <math|D<rsup|3>*\<Gamma\>>,
+    direction <math|v> is <math|-H*<space|0.17em>\<mathD\><rsup|3>*\<Gamma\><around|[|v|]>*<space|0.17em>H>,
+    so by the total symmetry of <math|\<mathD\><rsup|3>*\<Gamma\>>,
 
     <\equation*>
-      D<rsub|v><math-up|Tr><around*|(|<wide|\<cal-R\>|\<dot\>><rsub|t>*H<rsub|t>|)>=-<math-up|Tr><around*|(|H<rsub|t>*<wide|\<cal-R\>|\<dot\>><rsub|t>*H<rsub|t>*<space|0.17em>D<rsup|3>*\<Gamma\><rsub|t><around|[|v|]>|)>=-<math-up|Tr><around*|(|\<cal-C\><rsub|t>*<space|0.17em>\<mathD\><rsup|2>\<cal-F\><rsub|t>|)><around|[|v|]>.
+      \<mathD\><rsub|v><math-up|Tr><around*|(|<wide|\<cal-R\>|\<dot\>><rsub|t>*H<rsub|t>|)>=-<math-up|Tr><around*|(|H<rsub|t>*<wide|\<cal-R\>|\<dot\>><rsub|t>*H<rsub|t>*<space|0.17em>\<mathD\><rsup|3>*\<Gamma\><rsub|t><around|[|v|]>|)>=-<math-up|Tr><around*|(|\<cal-C\><rsub|t>*<space|0.17em>\<mathD\><rsup|2>\<cal-F\><rsub|t>|)><around|[|v|]>.
     </equation*>
 
     Hence<nbsp><eqref|eq:transformed-flow> reads
@@ -1783,7 +2015,7 @@
     \;
   </script-output|<image|<tuple|<#252150532D41646F62652D322E300A252543726561746F723A206476697073286B2920323032352E312028546558204C6976652032303235292020436F707972696768742032303235205261646963616C2045796520536F6674776172650A25255469746C653A20776574742E6476690A25254372656174696F6E446174653A2053756E204E6F762020312030303A30353A353820323032360A252550616765733A20310A2525506167654F726465723A20417363656E640A2525426F756E64696E67426F783A2030203020323334203138310A2525446F63756D656E74466F6E74733A2050617A6F4D6174682D4974616C69632055525750616C6C6164696F4C2D4974616C2050617A6F4D6174680A25252B2055525750616C6C6164696F4C2D526F6D6120434D52313020434D535931300A2525456E64436F6D6D656E74730A254456495053576562506167653A20287777772E7261646963616C6579652E636F6D290A254456495053436F6D6D616E644C696E653A206476697073202D7120776574742E647669202D6F20776574742E6570730A254456495053506172616D65746572733A206470693D3630300A254456495053536F757263653A2020546558206F757470757420323032362E31312E30313A303130350A2525426567696E50726F635365743A207465782E70726F203020300A25210A2F5465584469637420333030206469637420646566205465584469637420626567696E2F4E7B6465667D6465662F427B62696E64206465667D4E2F537B657863687D4E2F587B530A4E7D422F417B6475707D422F54527B7472616E736C6174657D4E2F69736C732066616C7365204E2F7673697A65203131203732206D756C204E2F6873697A6520382E352037320A6D756C204E2F6C616E64706C757339307B66616C73657D6465662F40726967696E7B69736C737B5B30206C616E64706C757339307B31202D317D7B2D3120317D6966656C736520300A3020305D636F6E6361747D6966203732205265736F6C7574696F6E2064697620373220565265736F6C7574696F6E20646976206E6567207363616C652069736C737B0A6C616E64706C757339307B565265736F6C7574696F6E20373220646976207673697A65206D756C203020657863687D7B5265736F6C7574696F6E202D373220646976206873697A650A6D756C20307D6966656C73652054527D6966205265736F6C7574696F6E20565265736F6C7574696F6E207673697A65202D373220646976203120616464206D756C2054525B0A6D61747269782063757272656E746D61747269787B41204120726F756E64207375622061627320302E3030303031206C747B726F756E647D69667D666F72616C6C20726F756E640A6578636820726F756E6420657863685D7365746D61747269787D4E2F406C616E6473636170657B2F69736C732074727565204E7D422F406D616E75616C666565647B0A737461747573646963742F6D616E75616C666565642074727565207075747D422F40636F706965737B2F23636F7069657320587D422F464D61745B3120302030202D31203020305D0A4E2F4642425B302030203020305D4E2F6E6E2030204E2F49456E2030204E2F6374722030204E2F64662D7461696C7B2F6E6E20382064696374204E206E6E20626567696E0A2F466F6E74547970652033204E2F466F6E744D617472697820666E747278204E2F466F6E7442426F7820464242204E20737472696E672F6261736520582061727261790A2F4269744D61707320582F4275696C64436861727B436861724275696C6465727D4E2F456E636F64696E672049456E204E20656E6420417B2F666F6F20736574666F6E747D320A617272617920636F707920637678204E206C6F61642030206E6E207075742F6374722030204E5B7D422F73662030204E2F64667B2F73662031204E2F666E74727820464D6174204E0A64662D7461696C7D422F6466737B6469762F736620582F666E7472785B736620302030207366206E6567203020305D4E2064662D7461696C7D422F457B706F70206E6E20410A646566696E65666F6E7420736574666F6E747D422F43777B43642041206C656E677468203520737562206765747D422F43687B43642041206C656E677468203420737562206765740A7D422F43787B3132382043642041206C656E67746820332073756220676574207375627D422F43797B43642041206C656E6774682032207375622067657420313237207375627D0A422F4364787B43642041206C656E677468203120737562206765747D422F43697B4364204120747970652F737472696E6774797065206E657B637472206765742F637472206374720A3120616464204E7D69667D422F436861724275696C6465727B736176652033203120726F6C6C205320412F6261736520676574203220696E6465782067657420530A2F4269744D617073206765742053206765742F4364205820706F702F6374722030204E20436478203020437820437920436820737562204378204377206164642043790A736574636163686564657669636520437720436820747275655B3120302030202D31202D2E3120437820737562204379202E31207375625D7B43697D696D6167656D61736B0A726573746F72657D422F447B2F63632058204120747970652F737472696E6774797065206E657B5D7D6966206E6E2F62617365206765742063632063747220707574206E6E0A2F4269744D6170732067657420532063747220532073662031206E657B412041206C656E6774682031207375622041203220696E64657820532067657420736620646976207075740A7D6966207075742F63747220637472203120616464204E7D422F497B636320312061646420447D422F626F707B75736572646963742F626F702D686F6F6B206B6E6F776E7B0A626F702D686F6F6B7D69662F53492073617665204E2040726967696E20302030206D6F7665746F2F56206D61747269782063757272656E746D6174726978204120312067657420410A6D756C20657863682030206765742041206D756C20616464202E3939206C747B2F51567D7B2F52567D6966656C7365206C6F61642064656620706F7020706F707D4E2F656F707B0A534920726573746F72652075736572646963742F656F702D686F6F6B206B6E6F776E7B656F702D686F6F6B7D69662073686F77706167657D4E2F4073746172747B0A75736572646963742F73746172742D686F6F6B206B6E6F776E7B73746172742D686F6F6B7D696620706F702F565265736F6C7574696F6E20582F5265736F6C7574696F6E20580A31303030206469762F4456496D616720582F49456E20323536206172726179204E203220737472696E6720302031203235357B49456E20532041203336302061646420333620340A696E64657820637672732063766E207075747D666F7220706F702036353738312E3736206469762F7673697A6520582036353738312E3736206469762F6873697A6520587D4E0A2F6469722030206465662F6479797B2F6469722030206465667D422F6479747B2F6469722031206465667D422F6474797B2F6469722032206465667D422F6474747B2F64697220330A6465667D422F707B64697220322065717B2D393020726F746174652073686F7720393020726F746174657D7B64697220332065717B2D393020726F746174652073686F772039300A726F746174657D7B73686F777D6966656C73657D6966656C73657D4E2F524D61745B3120302030202D31203020305D4E2F42446F742032363020737472696E67204E2F527820300A4E2F52792030204E2F567B7D422F52562F767B2F527920582F5278205820567D42207374617475736469637420626567696E2F70726F647563742077686572657B706F700A66616C73655B28446973706C617929284E65585429284C617365725772697465722031362F363030295D7B41206C656E6774682070726F64756374206C656E677468206C657B410A6C656E6774682070726F6475637420657863682030206578636820676574696E74657276616C2065717B706F70207472756520657869747D69667D7B706F707D6966656C73657D0A666F72616C6C7D7B66616C73657D6966656C736520656E647B7B6773617665205452202D2E31202E3120545220312031207363616C652052782052792066616C736520524D61747B0A42446F747D696D6167656D61736B2067726573746F72657D7D7B7B6773617665205452202D2E31202E31205452205278205279207363616C65203120312066616C736520524D61740A7B42446F747D696D6167656D61736B2067726573746F72657D7D6966656C736520422F51567B6773617665206E657770617468207472616E73666F726D20726F756E6420657863680A726F756E64206578636820697472616E73666F726D206D6F7665746F205278203020726C696E65746F2030205279206E656720726C696E65746F205278206E656720300A726C696E65746F2066696C6C2067726573746F72657D422F617B6D6F7665746F7D422F64656C74612030204E2F7461696C7B412F64656C74612058203020726D6F7665746F7D420A2F4D7B5320702064656C746120616464207461696C7D422F627B532070207461696C7D422F637B2D34204D7D422F647B2D33204D7D422F657B2D32204D7D422F667B2D31204D7D0A422F677B30204D7D422F687B31204D7D422F697B32204D7D422F6A7B33204D7D422F6B7B34204D7D422F777B3020726D6F7665746F7D422F6C7B70202D3420777D422F6D7B700A2D3320777D422F6E7B70202D3220777D422F6F7B70202D3120777D422F717B70203120777D422F727B70203220777D422F737B70203320777D422F747B70203420777D422F787B0A30205320726D6F7665746F7D422F797B33203220726F6C6C207020617D422F626F737B2F53532073617665204E7D422F656F737B535320726573746F72657D4220656E640A0A2525456E6450726F635365740A2525426567696E50726F635365743A206C336261636B656E642D64766970732E70726F203020300A25250A252520546869732069732066696C6520606C336261636B656E642D64766970732E70726F272C0A25252067656E65726174656420776974682074686520646F637374726970207574696C6974792E0A25250A252520546865206F726967696E616C20736F757263652066696C657320776572653A0A25250A2525206C336261636B656E642D6865616465722E64747820202877697468206F7074696F6E733A20606865616465722C647669707327290A2525200A252520436F707972696768742028432920323031392D3230323420546865204C615465582050726F6A6563740A2525200A2525204974206D617920626520646973747269627574656420616E642F6F72206D6F64696669656420756E6465722074686520636F6E646974696F6E73206F660A252520746865204C615465582050726F6A656374205075626C6963204C6963656E736520284C50504C292C206569746865722076657273696F6E20312E3363206F660A25252074686973206C6963656E7365206F722028617420796F7572206F7074696F6E2920616E79206C617465722076657273696F6E2E2020546865206C61746573740A25252076657273696F6E206F662074686973206C6963656E736520697320696E207468652066696C653A0A2525200A25252020202068747470733A2F2F7777772E6C617465782D70726F6A6563742E6F72672F6C70706C2E7478740A2525200A252520546869732066696C652069732070617274206F662074686520226C336261636B656E642062756E646C6522202854686520576F726B20696E204C50504C290A252520616E6420616C6C2066696C657320696E20746861742062756E646C65206D75737420626520646973747269627574656420746F6765746865722E0A2525200A25252046696C653A206C336261636B656E642D6865616465722E6474780A2F636F6C6F722E7363207B207D206465660A5465584469637420626567696E0A2F546558636F6C6F7273657061726174696F6E207B20736574636F6C6F72207D206465660A656E640A7472756520736574676C6F62616C0A2F7064662E676C6F62616C6469637420342064696374206465660A66616C736520736574676C6F62616C0A2F7064662E637673207B20363535333420737472696E6720637673207D206465660A2F7064662E6476692E7074207B2037322E3237206D756C205265736F6C7574696F6E20646976207D206465660A2F7064662E70742E647669207B2037322E323720646976205265736F6C7574696F6E206D756C207D206465660A2F7064662E726563742E6874207B20647570203120676574206E6567206578636820332067657420616464207D206465660A2F7064662E6C696E6B6D617267696E207B2031207064662E70742E647669207D206465660A2F7064662E6C696E6B64702E706164207B2030207D206465660A2F7064662E6C696E6B68742E706164207B2030207D206465660A2F7064662E726563740A20207B202F52656374205B207064662E6C6C78207064662E6C6C79207064662E757278207064662E757279205D207D206465660A2F7064662E736176652E6C6C0A20207B0A2020202063757272656E74706F696E740A202020202F7064662E6C6C792065786368206465660A202020202F7064662E6C6C782065786368206465660A20207D0A202020206465660A2F7064662E736176652E75720A20207B0A2020202063757272656E74706F696E740A202020202F7064662E7572792065786368206465660A202020202F7064662E7572782065786368206465660A20207D0A202020206465660A2F7064662E736176652E6C696E6B6C6C0A20207B0A2020202063757272656E74706F696E740A202020207064662E6C696E6B6D617267696E206164640A202020207064662E6C696E6B64702E706164206164640A202020202F7064662E6C6C792065786368206465660A202020207064662E6C696E6B6D617267696E207375620A202020202F7064662E6C6C782065786368206465660A20207D0A202020206465660A2F7064662E736176652E6C696E6B75720A20207B0A2020202063757272656E74706F696E740A202020207064662E6C696E6B6D617267696E207375620A202020207064662E6C696E6B68742E706164207375620A202020202F7064662E7572792065786368206465660A202020207064662E6C696E6B6D617267696E206164640A202020202F7064662E7572782065786368206465660A20207D0A202020206465660A2F7064662E646573742E616E63686F720A20207B0A2020202063757272656E74706F696E7420657863680A202020207064662E6476692E7074203732206164640A202020202F7064662E646573742E782065786368206465660A202020207064662E6476692E70740A202020207673697A65203732207375622065786368207375620A202020202F7064662E646573742E792065786368206465660A20207D0A202020206465660A2F7064662E646573742E706F696E740A20207B207064662E646573742E78207064662E646573742E79207D206465660A2F7064662E64657374326465766963650A20207B0A202020202F7064662E646573742E792065786368206465660A202020202F7064662E646573742E782065786368206465660A202020206D61747269782063757272656E746D61747269780A202020206D61747269782064656661756C746D61747269780A202020206D617472697820696E766572746D61747269780A202020206D617472697820636F6E6361746D61747269780A2020202063767820657865630A202020202F7064662E6465762E792065786368206465660A202020202F7064662E6465762E782065786368206465660A202020202F7064662E746D70642065786368206465660A202020202F7064662E746D70632065786368206465660A202020202F7064662E746D70622065786368206465660A202020202F7064662E746D70612065786368206465660A202020207064662E646573742E78207064662E746D7061206D756C0A2020202020207064662E646573742E79207064662E746D7063206D756C206164640A2020202020207064662E6465762E78206164640A202020207064662E646573742E78207064662E746D7062206D756C0A2020202020207064662E646573742E79207064662E746D7064206D756C206164640A2020202020207064662E6465762E79206164640A20207D0A202020206465660A2F7064662E626F72646572747261636B696E672066616C7365206465660A2F7064662E626F72646572747261636B696E672E626567696E0A20207B0A202020205344696374202F7064662E626F72646572747261636B696E672074727565207075740A202020205344696374202F7064662E6C656674626F756E6461727920756E6465660A202020205344696374202F7064662E7269676874626F756E6461727920756E6465660A202020202F612077686572650A2020202020207B0A20202020202020202F610A202020202020202020207B0A20202020202020202020202063757272656E74706F696E7420706F700A2020202020202020202020205344696374202F7064662E7269676874626F756E64617279206B6E6F776E206475700A20202020202020202020202020207B0A202020202020202020202020202020205344696374202F7064662E7269676874626F756E6461727920676574203220696E646578206C740A2020202020202020202020202020202020207B206E6F74207D0A2020202020202020202020202020202069660A20202020202020202020202020207D0A20202020202020202020202069660A20202020202020202020202020207B20706F70207D0A20202020202020202020202020207B2053446963742065786368202F7064662E7269676874626F756E64617279206578636820707574207D0A2020202020202020202020206966656C73650A2020202020202020202020206D6F7665746F0A20202020202020202020202063757272656E74706F696E7420706F700A2020202020202020202020205344696374202F7064662E6C656674626F756E64617279206B6E6F776E206475700A20202020202020202020202020207B0A202020202020202020202020202020205344696374202F7064662E6C656674626F756E6461727920676574203220696E6465782067740A2020202020202020202020202020202020207B206E6F74207D0A2020202020202020202020202020202069660A20202020202020202020202020207D0A20202020202020202020202069660A20202020202020202020202020207B20706F70207D0A20202020202020202020202020207B2053446963742065786368202F7064662E6C656674626F756E64617279206578636820707574207D0A2020202020202020202020206966656C73650A202020202020202020207D0A20202020202020207075740A2020202020207D0A2020202069660A20207D0A202020206465660A2F7064662E626F72646572747261636B696E672E656E640A20207B0A202020202F61207768657265207B202F61207B206D6F7665746F207D20707574207D2069660A202020202F78207768657265207B202F78207B2030206578636820726D6F7665746F207D20707574207D2069660A202020205344696374202F7064662E6C656674626F756E64617279206B6E6F776E0A2020202020207B207064662E6F75746572626F782030207064662E6C656674626F756E6461727920707574207D0A2020202069660A202020205344696374202F7064662E7269676874626F756E64617279206B6E6F776E0A2020202020207B207064662E6F75746572626F782032207064662E7269676874626F756E6461727920707574207D0A2020202069660A202020205344696374202F7064662E626F72646572747261636B696E672066616C7365207075740A20207D0A202020206465660A20202F7064662E626F72646572747261636B696E672E656E64706167650A7B0A20207064662E626F72646572747261636B696E670A202020207B0A2020202020207064662E626F72646572747261636B696E672E656E640A2020202020207472756520736574676C6F62616C0A2020202020207064662E676C6F62616C646963740A20202020202020202F7064662E62726F6B656E6C696E6B2E72656374205B207064662E6F75746572626F7820616C6F616420706F70205D207075740A2020202020207064662E676C6F62616C646963740A20202020202020202F7064662E62726F6B656E6C696E6B2E736B6970207064662E626173656C696E65736B6970207075740A2020202020207064662E676C6F62616C646963740A20202020202020202F7064662E62726F6B656E6C696E6B2E646963740A202020202020202020207064662E6C696E6B2E64696374207064662E637673207075740A20202020202066616C736520736574676C6F62616C0A2020202020206D61726B207064662E6C696E6B2E64696374206376782065786563202F526563740A20202020202020205B0A202020202020202020207064662E6C6C780A202020202020202020207064662E6C6C790A202020202020202020207064662E6F75746572626F78203220676574207064662E6C696E6B6D617267696E206164640A2020202020202020202063757272656E74706F696E74206578636820706F700A202020202020202020207064662E6F75746572626F78207064662E726563742E687420737562207064662E6C696E6B6D617267696E207375620A20202020202020205D0A2020202020202F414E4E207064662E7064666D61726B0A202020207D0A202069660A7D0A20206465660A2F7064662E626F72646572747261636B696E672E636F6E74696E75650A20207B0A202020202F7064662E6C696E6B2E64696374207064662E676C6F62616C646963740A2020202020202F7064662E62726F6B656E6C696E6B2E6469637420676574206465660A202020202F7064662E6F75746572626F78207064662E676C6F62616C646963740A2020202020202F7064662E62726F6B656E6C696E6B2E7265637420676574206465660A202020202F7064662E626173656C696E65736B6970207064662E676C6F62616C646963740A2020202020202F7064662E62726F6B656E6C696E6B2E736B697020676574206465660A202020207064662E676C6F62616C6469637420647570206475700A202020202F7064662E62726F6B656E6C696E6B2E6469637420756E6465660A202020202F7064662E62726F6B656E6C696E6B2E736B697020756E6465660A202020202F7064662E62726F6B656E6C696E6B2E7265637420756E6465660A2020202063757272656E74706F696E740A202020202F7064662E6F726967696E792065786368206465660A202020202F7064662E6F726967696E782065786368206465660A202020202F612077686572650A2020202020207B0A20202020202020202F610A202020202020202020207B0A2020202020202020202020206D6F7665746F0A20202020202020202020202053446963740A202020202020202020202020626567696E0A20202020202020202020202063757272656E74706F696E74207064662E6F726967696E79206E6520657863680A20202020202020202020202020207064662E6F726967696E78206E65206F720A20202020202020202020202020207B0A202020202020202020202020202020207064662E736176652E6C696E6B6C6C0A202020202020202020202020202020202F7064662E6C6C790A2020202020202020202020202020202020207064662E6C6C79207064662E6F75746572626F7820312067657420737562206465660A202020202020202020202020202020207064662E626F72646572747261636B696E672E626567696E0A20202020202020202020202020207D0A20202020202020202020202069660A202020202020202020202020656E640A202020202020202020207D0A20202020202020207075740A2020202020207D0A2020202069660A202020202F782077686572650A2020202020207B0A20202020202020202F780A202020202020202020207B0A20202020202020202020202030206578636820726D6F7665746F0A20202020202020202020202053446963740A202020202020202020202020626567696E0A20202020202020202020202063757272656E74706F696E740A2020202020202020202020207064662E6F726967696E79206E652065786368207064662E6F726967696E78206E65206F720A20202020202020202020202020207B0A202020202020202020202020202020207064662E736176652E6C696E6B6C6C0A202020202020202020202020202020202F7064662E6C6C790A2020202020202020202020202020202020207064662E6C6C79207064662E6F75746572626F7820312067657420737562206465660A202020202020202020202020202020207064662E626F72646572747261636B696E672E626567696E0A20202020202020202020202020207D0A20202020202020202020202069660A202020202020202020202020656E640A202020202020202020207D0A20202020202020207075740A2020202020207D0A2020202069660A20207D0A202020206465660A2F7064662E627265616B6C696E6B0A20207B0A20202020706F700A20202020636F756E74746F6D61726B2032206D6F6420302065710A2020202020207B0A2020202020202020636F756E74746F6D61726B202F7064662E636F756E742065786368206465660A202020202020202020207B0A2020202020202020202020207064662E636F756E742030206571207B2065786974207D2069660A202020202020202020202020636F756E74746F6D61726B203220726F6C6C0A2020202020202020202020203120696E646578202F526563742065710A20202020202020202020202020207B0A20202020202020202020202020202020647570203420617272617920636F70790A20202020202020202020202020202020647570206475700A20202020202020202020202020202020202031206765740A2020202020202020202020202020202020207064662E6F75746572626F78207064662E726563742E68740A2020202020202020202020202020202020207064662E6C696E6B6D617267696E2032206D756C20616464207375620A202020202020202020202020202020202020332065786368207075740A202020202020202020202020202020206475700A2020202020202020202020202020202020207064662E6F75746572626F782032206765740A2020202020202020202020202020202020207064662E6C696E6B6D617267696E206164640A202020202020202020202020202020202020322065786368207075740A20202020202020202020202020202020647570206475700A20202020202020202020202020202020202033206765740A2020202020202020202020202020202020207064662E6F75746572626F78207064662E726563742E68740A2020202020202020202020202020202020207064662E6C696E6B6D617267696E2032206D756C20616464206164640A202020202020202020202020202020202020312065786368207075740A202020202020202020202020202020202F7064662E63757272656E74726563742065786368206465660A202020202020202020202020202020207064662E627265616B6C696E6B2E77726974650A2020202020202020202020202020202020207B0A20202020202020202020202020202020202020207064662E63757272656E74726563740A20202020202020202020202020202020202020206475700A202020202020202020202020202020202020202020207064662E6F75746572626F782030206765740A202020202020202020202020202020202020202020207064662E6C696E6B6D617267696E207375620A20202020202020202020202020202020202020202020302065786368207075740A20202020202020202020202020202020202020206475700A202020202020202020202020202020202020202020207064662E6F75746572626F782032206765740A202020202020202020202020202020202020202020207064662E6C696E6B6D617267696E206164640A20202020202020202020202020202020202020202020322065786368207075740A2020202020202020202020202020202020202020647570206475700A2020202020202020202020202020202020202020202031206765740A202020202020202020202020202020202020202020207064662E626173656C696E65736B6970206164640A20202020202020202020202020202020202020202020312065786368207075740A2020202020202020202020202020202020202020647570206475700A2020202020202020202020202020202020202020202033206765740A202020202020202020202020202020202020202020207064662E626173656C696E65736B6970206164640A20202020202020202020202020202020202020202020332065786368207075740A20202020202020202020202020202020202020202F7064662E63757272656E74726563742065786368206465660A20202020202020202020202020202020202020207064662E627265616B6C696E6B2E77726974650A2020202020202020202020202020202020207D0A202020202020202020202020202020203120696E6465782033206765740A202020202020202020202020202020207064662E6C696E6B6D617267696E2032206D756C206164640A202020202020202020202020202020207064662E6F75746572626F78207064662E726563742E6874206164640A202020202020202020202020202020203220696E646578203120676574207375620A202020202020202020202020202020207064662E626173656C696E65736B69702064697620726F756E64206376692031207375620A202020202020202020202020202020202020657863680A202020202020202020202020202020207265706561740A202020202020202020202020202020207064662E63757272656E74726563740A202020202020202020202020202020206475700A2020202020202020202020202020202020207064662E6F75746572626F782030206765740A2020202020202020202020202020202020207064662E6C696E6B6D617267696E207375620A202020202020202020202020202020202020302065786368207075740A20202020202020202020202020202020647570206475700A20202020202020202020202020202020202031206765740A2020202020202020202020202020202020207064662E626173656C696E65736B6970206164640A202020202020202020202020202020202020312065786368207075740A20202020202020202020202020202020647570206475700A20202020202020202020202020202020202033206765740A2020202020202020202020202020202020207064662E626173656C696E65736B6970206164640A202020202020202020202020202020202020332065786368207075740A20202020202020202020202020202020647570203220696E6465782032206765742020322065786368207075740A202020202020202020202020202020202F7064662E63757272656E74726563742065786368206465660A202020202020202020202020202020207064662E627265616B6C696E6B2E77726974650A202020202020202020202020202020205344696374202F7064662E7064666D61726B2E676F6F642066616C7365207075740A20202020202020202020202020202020657869740A20202020202020202020202020207D0A20202020202020202020202020207B207064662E636F756E74203220737562202F7064662E636F756E74206578636820646566207D0A2020202020202020202020206966656C73650A202020202020202020207D0A20202020202020206C6F6F700A2020202020207D0A2020202069660A202020202F414E4E0A20207D0A202020206465660A2F7064662E627265616B6C696E6B2E77726974650A20207B0A20202020636F756E74746F6D61726B2031207375620A20202020696E646578202F5F6F626A6465662065710A2020202020207B0A2020202020202020636F756E74746F6D61726B202D3220726F6C6C0A20202020202020206475702077636865636B0A202020202020202020207B0A202020202020202020202020726561646F6E6C790A202020202020202020202020636F756E74746F6D61726B203220726F6C6C0A202020202020202020207D0A202020202020202020207B20706F7020706F70207D0A20202020202020206966656C73650A2020202020207D0A2020202069660A20202020636F756E74746F6D61726B20312061646420636F70790A20202020706F70207064662E63757272656E74726563740A202020202F414E4E207064666D61726B0A20207D0A202020206465660A2F7064662E7064666D61726B0A20207B0A202020205344696374202F7064662E7064666D61726B2E676F6F642074727565207075740A20202020647570202F414E4E2065710A2020202020207B0A20202020202020207064662E7064666D61726B2E73746F72650A20202020202020207064662E7064666D61726B2E646963740A20202020202020202020626567696E0A20202020202020202020202053756274797065202F4C696E6B2065710A20202020202020202020202063757272656E7464696374202F52656374206B6E6F776E20616E640A2020202020202020202020205344696374202F7064662E6F75746572626F78206B6E6F776E20616E640A2020202020202020202020205344696374202F7064662E626173656C696E65736B6970206B6E6F776E20616E640A20202020202020202020202020207B0A20202020202020202020202020202020526563742033206765740A202020202020202020202020202020207064662E6C696E6B6D617267696E2032206D756C206164640A202020202020202020202020202020207064662E6F75746572626F78207064662E726563742E6874206164640A2020202020202020202020202020202052656374203120676574207375620A202020202020202020202020202020207064662E626173656C696E65736B69702064697620726F756E642063766920302067740A2020202020202020202020202020202020207B207064662E627265616B6C696E6B207D0A2020202020202020202020202020202069660A20202020202020202020202020207D0A20202020202020202020202069660A20202020202020202020656E640A20202020202020205344696374202F7064662E6F75746572626F7820756E6465660A20202020202020205344696374202F7064662E626173656C696E65736B697020756E6465660A202020202020202063757272656E7464696374202F7064662E7064666D61726B2E6469637420756E6465660A2020202020207D0A2020202069660A202020207064662E7064666D61726B2E676F6F640A2020202020207B207064666D61726B207D0A2020202020207B20636C656172746F6D61726B207D0A202020206966656C73650A20207D0A202020206465660A2F7064662E7064666D61726B2E73746F72650A20207B0A202020202F7064662E7064666D61726B2E646963742036353533342064696374206465660A20202020636F756E74746F6D61726B20312061646420636F70790A20202020706F700A2020202020207B0A2020202020202020647570206D61726B2065710A202020202020202020207B0A202020202020202020202020706F700A202020202020202020202020657869740A202020202020202020207D0A202020202020202020207B0A2020202020202020202020207064662E7064666D61726B2E646963740A202020202020202020202020626567696E2064656620656E640A202020202020202020207D0A20202020202020206966656C73650A2020202020207D0A202020206C6F6F700A7D0A20206465660A2525200A25250A252520456E64206F662066696C6520606C336261636B656E642D64766970732E70726F272E0A0A2525456E6450726F635365740A2525426567696E50726F635365743A2038722E656E63203020300A252046696C652038722E656E6320205465582042617365203120456E636F64696E6720205265766973696F6E20322E302020323030322D31302D33300A250A252040407073656E636F64696E6766696C65407B0A25202020617574686F72202020203D2022532E20526168747A2C20502E204D61634B61792C20416C616E204A6566667265792C20422E20486F726E2C204B2E2042657272792C0A2520202020202020202020202020202020572E205363686D6964742C20502E204C65686D616E222C0A2520202076657273696F6E2020203D2022322E30222C0A25202020646174652020202020203D202232376E6F763036222C0A2520202066696C656E616D6520203D202238722E656E63222C0A25202020656D61696C20202020203D20227465782D666F6E747340407475672E6F7267222C0A25202020646F63737472696E67203D2022546869732069732074686520656E636F64696E6720766563746F7220666F7220547970653120616E642054727565547970650A2520202020202020202020202020202020666F6E747320746F20626520757365642077697468205465582E2020546869732066696C652069732070617274206F66207468650A252020202020202020202020202020202050534E4653532062756E646C652C2076657273696F6E2039220A2520407D0A25200A2520546865206964656120697320746F206861766520616C6C207468652063686172616374657273206E6F726D616C6C7920696E636C7564656420696E2054797065203120666F6E74730A2520617661696C61626C6520666F72207479706573657474696E672E2054686973206973206566666563746976656C7920746865206368617261637465727320696E2041646F62650A25205374616E6461726420656E636F64696E672C2049534F204C6174696E20312C2057696E646F777320414E534920696E636C7564696E6720746865206575726F2073796D626F6C2C0A25204D6163526F6D616E2C20616E6420736F6D6520657874726120636861726163746572732066726F6D204C75636964612E0A25200A252043686172616374657220636F64652061737369676E6D656E74732077657265206D61646520617320666F6C6C6F77733A0A25200A2520283129207468652057696E646F777320414E534920636861726163746572732061726520616C6D6F737420616C6C20696E2074686569722057696E646F777320414E53490A2520706F736974696F6E732C206265636175736520736F6D652057696E646F77732075736572732063616E6E6F7420656173696C79207265656E636F6465207468650A2520666F6E74732C20616E64206974206D616B6573206E6F20646966666572656E6365206F6E206F746865722073797374656D732E20546865206F6E6C792057696E646F77730A2520414E53492063686172616374657273206E6F7420617661696C61626C65206172652074686F73652074686174206D616B65206E6F2073656E736520666F720A25207479706573657474696E67202D2D207275626F7574202831323720646563696D616C292C206E6F627265616B73706163652028313630292C20736F667468797068656E0A252028313733292E2071756F746573696E676C6520616E6420677261766520617265206D6F766564206A75737420626563617573652069742773207375636820616E0A252069727269746174696F6E206E6F7420686176696E67207468656D20696E2054655820706F736974696F6E732E0A25200A25202832292052656D61696E696E672063686172616374657273206172652061737369676E6564206172626974726172696C7920746F20746865206C6F77657220706172740A25206F66207468652072616E67652C2061766F6964696E6720302C20313020616E6420313320696E2063617365207765206D6565742064756D6220736F6674776172652E0A25200A252028332920592659204C75636964612042726967687420696E636C7564657320736F6D65206578747261207465787420636861726163746572733B20696E207468650A2520686F7065732074686174206F7468657220506F737453637269707420666F6E74732C2070657268617073206372656174656420666F72207075626C69630A2520636F6E73756D7074696F6E2C2077696C6C20696E636C756465207468656D2C20746865792061726520696E636C75646564207374617274696E6720617420307831322E0A2520546865736520617265202F646F746C6573736A202F6666202F666669202F66666C2E0A25200A25202834292068797068656E206170706561727320747769636520666F7220636F6D7061746962696C697479207769746820626F746820415343494920616E642057696E646F77732E0A250A2520283529202F4575726F207761732061737369676E656420746F203132382C20617320696E2057696E646F777320414E53490A250A2520283629204D697373696E6720636861726163746572732066726F6D204D6163526F6D616E20656E636F64696E6720696E636F72706F726174656420617320666F6C6C6F77733A0A250A252020202020506F73745363726970742020202020204D6163526F6D616E202020202020202054655842617365310A2520202020202D2D2D2D2D2D2D2D2D2D2D2D2D2D20202D2D2D2D2D2D2D2D2D2D2D2D2D2D20202D2D2D2D2D2D2D2D2D2D2D2D2D2D0A2520202020202F6E6F74657175616C2020202020202031373320202020202020202020202020307831360A2520202020202F696E66696E6974792020202020202031373620202020202020202020202020307831370A2520202020202F6C657373657175616C20202020202031373820202020202020202020202020307831380A2520202020202F67726561746572657175616C20202031373920202020202020202020202020307831390A2520202020202F7061727469616C646966662020202031383220202020202020202020202020307831410A2520202020202F73756D6D6174696F6E20202020202031383320202020202020202020202020307831420A2520202020202F70726F64756374202020202020202031383420202020202020202020202020307831430A2520202020202F70692020202020202020202020202031383520202020202020202020202020307831440A2520202020202F696E74656772616C2020202020202031383620202020202020202020202020307838310A2520202020202F4F6D6567612020202020202020202031383920202020202020202020202020307838440A2520202020202F7261646963616C202020202020202031393520202020202020202020202020307838450A2520202020202F617070726F78657175616C2020202031393720202020202020202020202020307838460A2520202020202F44656C74612020202020202020202031393820202020202020202020202020307839440A2520202020202F6C6F7A656E6765202020202020202032313520202020202020202020202020307839450A250A2F5465584261736531456E636F64696E67205B0A2520307830300A202F2E6E6F74646566202F646F74616363656E74202F6669202F666C0A202F6672616374696F6E202F68756E676172756D6C617574202F4C736C617368202F6C736C6173680A202F6F676F6E656B202F72696E67202F2E6E6F74646566202F62726576650A202F6D696E7573202F2E6E6F74646566202F5A6361726F6E202F7A6361726F6E0A2520307831300A202F6361726F6E202F646F746C65737369202F646F746C6573736A202F66660A202F666669202F66666C202F6E6F74657175616C202F696E66696E6974790A202F6C657373657175616C202F67726561746572657175616C202F7061727469616C64696666202F73756D6D6174696F6E0A202F70726F64756374202F7069202F6772617665202F71756F746573696E676C650A2520307832300A202F7370616365202F6578636C616D202F71756F746564626C202F6E756D6265727369676E0A202F646F6C6C6172202F70657263656E74202F616D70657273616E64202F71756F746572696768740A202F706172656E6C656674202F706172656E7269676874202F617374657269736B202F706C75730A202F636F6D6D61202F68797068656E202F706572696F64202F736C6173680A2520307833300A202F7A65726F202F6F6E65202F74776F202F74687265650A202F666F7572202F66697665202F736978202F736576656E0A202F6569676874202F6E696E65202F636F6C6F6E202F73656D69636F6C6F6E0A202F6C657373202F657175616C202F67726561746572202F7175657374696F6E0A2520307834300A202F6174202F41202F42202F430A202F44202F45202F46202F470A202F48202F49202F4A202F4B0A202F4C202F4D202F4E202F4F0A2520307835300A202F50202F51202F52202F530A202F54202F55202F56202F570A202F58202F59202F5A202F627261636B65746C6566740A202F6261636B736C617368202F627261636B65747269676874202F617363696963697263756D202F756E64657273636F72650A2520307836300A202F71756F74656C656674202F61202F62202F630A202F64202F65202F66202F670A202F68202F69202F6A202F6B0A202F6C202F6D202F6E202F6F0A2520307837300A202F70202F71202F72202F730A202F74202F75202F76202F770A202F78202F79202F7A202F62726163656C6566740A202F626172202F62726163657269676874202F617363696974696C6465202F2E6E6F746465660A2520307838300A202F4575726F202F696E74656772616C202F71756F746573696E676C62617365202F666C6F72696E0A202F71756F746564626C62617365202F656C6C6970736973202F646167676572202F64616767657264626C0A202F63697263756D666C6578202F70657274686F7573616E64202F536361726F6E202F6775696C73696E676C6C6566740A202F4F45202F4F6D656761202F7261646963616C202F617070726F78657175616C0A2520307839300A202F2E6E6F74646566202F2E6E6F74646566202F2E6E6F74646566202F71756F746564626C6C6566740A202F71756F746564626C7269676874202F62756C6C6574202F656E64617368202F656D646173680A202F74696C6465202F74726164656D61726B202F736361726F6E202F6775696C73696E676C72696768740A202F6F65202F44656C7461202F6C6F7A656E6765202F5964696572657369730A2520307841300A202F2E6E6F74646566202F6578636C616D646F776E202F63656E74202F737465726C696E670A202F63757272656E6379202F79656E202F62726F6B656E626172202F73656374696F6E0A202F6469657265736973202F636F70797269676874202F6F726466656D696E696E65202F6775696C6C656D6F746C6566740A202F6C6F676963616C6E6F74202F68797068656E202F72656769737465726564202F6D6163726F6E0A2520307842300A202F646567726565202F706C75736D696E7573202F74776F7375706572696F72202F74687265657375706572696F720A202F6163757465202F6D75202F706172616772617068202F706572696F6463656E74657265640A202F636564696C6C61202F6F6E657375706572696F72202F6F72646D617363756C696E65202F6775696C6C656D6F7472696768740A202F6F6E6571756172746572202F6F6E6568616C66202F74687265657175617274657273202F7175657374696F6E646F776E0A2520307843300A202F416772617665202F416163757465202F4163697263756D666C6578202F4174696C64650A202F416469657265736973202F4172696E67202F4145202F43636564696C6C610A202F456772617665202F456163757465202F4563697263756D666C6578202F4564696572657369730A202F496772617665202F496163757465202F4963697263756D666C6578202F4964696572657369730A2520307844300A202F457468202F4E74696C6465202F4F6772617665202F4F61637574650A202F4F63697263756D666C6578202F4F74696C6465202F4F6469657265736973202F6D756C7469706C790A202F4F736C617368202F556772617665202F556163757465202F5563697263756D666C65780A202F556469657265736973202F596163757465202F54686F726E202F6765726D616E64626C730A2520307845300A202F616772617665202F616163757465202F6163697263756D666C6578202F6174696C64650A202F616469657265736973202F6172696E67202F6165202F63636564696C6C610A202F656772617665202F656163757465202F6563697263756D666C6578202F6564696572657369730A202F696772617665202F696163757465202F6963697263756D666C6578202F6964696572657369730A2520307846300A202F657468202F6E74696C6465202F6F6772617665202F6F61637574650A202F6F63697263756D666C6578202F6F74696C6465202F6F6469657265736973202F6469766964650A202F6F736C617368202F756772617665202F756163757465202F7563697263756D666C65780A202F756469657265736973202F796163757465202F74686F726E202F7964696572657369730A5D206465660A0A0A2525456E6450726F635365740A2525426567696E50726F635365743A2074657870732E70726F203020300A25210A5465584469637420626567696E2F72667B66696E64666F6E7420647570206C656E677468203120616464206469637420626567696E7B3120696E6465782F464944206E6520320A696E6465782F556E697175654944206E6520616E647B6465667D7B706F7020706F707D6966656C73657D666F72616C6C5B3120696E64657820302036202D3120726F6C6C0A65786563203020657863682035202D3120726F6C6C20565265736F6C7574696F6E205265736F6C7574696F6E20646976206D756C206E6567203020305D466F6E745479706520300A6E657B2F4D657472696373206578636820646566206469637420626567696E20456E636F64696E677B657863682064757020747970652F696E746567657274797065206E657B0A706F7020706F70203120737562206475702030206C657B706F707D7B5B7D6966656C73657D7B466F6E744D617472697820302067657420646976204D6574726963732030206765740A646976206465667D6966656C73657D666F72616C6C204D6574726963732F4D6574726963732063757272656E746469637420656E64206465667D7B7B3120696E64657820747970650A2F6E616D65747970652065717B657869747D6966206578636820706F707D6C6F6F707D6966656C73655B3220696E6465782063757272656E746469637420656E640A646566696E65666F6E742033202D3120726F6C6C206D616B65666F6E742F736574666F6E74206376785D637678206465667D6465662F4F626C69717565536C616E747B6475700A73696E205320636F7320646976206E65677D422F536C616E74466F6E747B3420696E646578206D756C206164647D6465662F457874656E64466F6E747B33202D3120726F6C6C0A6D756C20657863687D6465662F5265456E636F6465466F6E747B43686172537472696E67732072636865636B7B2F456E636F64696E672066616C736520646566206475705B0A657863687B6475702043686172537472696E67732065786368206B6E6F776E206E6F747B706F702F2E6E6F746465662F456E636F64696E672074727565206465667D69667D0A666F72616C6C20456E636F64696E677B5D6578636820706F707D7B636C656172746F6D61726B7D6966656C73657D69662F456E636F64696E672065786368206465667D6465660A656E640A0A2525456E6450726F635365740A2525426567696E50726F635365743A207370656369616C2E70726F203020300A25210A5465584469637420626567696E2F5344696374203230302064696374204E20534469637420626567696E2F405370656369616C44656661756C74737B2F687320363132204E0A2F767320373932204E2F686F2030204E2F766F2030204E2F6873632031204E2F7673632031204E2F616E672030204E2F434C49502030204E2F7277695365656E2066616C7365204E0A2F7268695365656E2066616C7365204E2F6C65747465727B7D4E2F6E6F74657B7D4E2F61347B7D4E2F6C6567616C7B7D4E7D422F407363616C65756E697420313030204E0A2F40687363616C657B407363616C65756E6974206469762F68736320587D422F40767363616C657B407363616C65756E6974206469762F76736320587D422F406873697A657B0A2F687320582F434C49502031204E7D422F407673697A657B2F767320582F434C49502031204E7D422F40636C69707B2F434C49502032204E7D422F40686F66667365747B2F686F0A587D422F40766F66667365747B2F766F20587D422F40616E676C657B2F616E6720587D422F407277697B3130206469762F72776920582F7277695365656E2074727565204E7D420A2F407268697B3130206469762F72686920582F7268695365656E2074727565204E7D422F406C6C787B2F6C6C7820587D422F406C6C797B2F6C6C7920587D422F407572787B0A2F75727820587D422F407572797B2F75727920587D422F6D61677363616C6520747275652064656620656E642F404D616353657455707B75736572646963742F6D64206B6E6F776E0A7B75736572646963742F6D642067657420747970652F64696374747970652065717B757365726469637420626567696E206D64206C656E67746820313020616464206D640A6D61786C656E6774682067657B2F6D64206D6420647570206C656E67746820323020616464206469637420636F7079206465667D696620656E64206D6420626567696E0A2F6C65747465727B7D4E2F6E6F74657B7D4E2F6C6567616C7B7D4E2F6F647B7478706F736520312030206D74782064656661756C746D617472697820647472616E73666F726D20530A6174616E2F70612058206E65777061746820636C697070617468206D61726B7B7472616E73666F726D7B697472616E73666F726D206D6F7665746F7D7D7B7472616E73666F726D7B0A697472616E73666F726D206C696E65746F7D7D7B36202D3220726F6C6C207472616E73666F726D2036202D3220726F6C6C207472616E73666F726D2036202D3220726F6C6C0A7472616E73666F726D7B697472616E73666F726D2036203220726F6C6C20697472616E73666F726D2036203220726F6C6C20697472616E73666F726D2036203220726F6C6C0A6375727665746F7D7D7B7B636C6F7365706174687D7D70617468666F72616C6C206E65777061746820636F756E74746F6D61726B206172726179206173746F72652F6763207864660A706F7020637420333920302070757420313020667A2030206673203220462F7C5F5F5F5F5F5F436F757269657220666E7420696E76657274666C61677B5061696E74426C61636B7D0A69667D4E2F7478706F73657B70787320707973207363616C652070707220616C6F616420706F7020706F727B6E6F666C6970737B706F702053206E6567205320545220706F7020310A2D31207363616C657D69662078666C69702079666C697020616E647B706F702053206E656720532054522031383020726F746174652031202D31207363616C652070707220330A67657420707072203120676574206E656720737562206E65672070707220322067657420707072203020676574206E656720737562206E65672054527D69662078666C69700A79666C6970206E6F7420616E647B706F702053206E6567205320545220706F702031383020726F746174652070707220332067657420707072203120676574206E6567207375620A6E656720302054527D69662079666C69702078666C6970206E6F7420616E647B707072203120676574206E656720707072203020676574206E65672054527D69667D7B0A6E6F666C6970737B545220706F7020706F702032373020726F746174652031202D31207363616C657D69662078666C69702079666C697020616E647B545220706F7020706F700A393020726F746174652031202D31207363616C652070707220332067657420707072203120676574206E656720737562206E656720707072203220676574207070722030206765740A6E656720737562206E65672054527D69662078666C69702079666C6970206E6F7420616E647B545220706F7020706F7020393020726F7461746520707072203320676574207070720A3120676574206E656720737562206E656720302054527D69662079666C69702078666C6970206E6F7420616E647B545220706F7020706F702032373020726F74617465207070720A322067657420707072203020676574206E656720737562206E6567203020532054527D69667D6966656C7365207363616C65627939367B70707220616C6F616420706F7020340A2D3120726F6C6C206164642032206469762033203120726F6C6C20616464203220646976203220636F7079205452202E393620647570207363616C65206E65672053206E656720530A54527D69667D4E2F63707B706F7020706F702073686F777061676520706D20726573746F72657D4E20656E647D69667D69667D4E2F6E6F726D616C7363616C657B0A5265736F6C7574696F6E2037322064697620565265736F6C7574696F6E20373220646976206E6567207363616C65206D61677363616C657B4456496D616720647570207363616C650A7D6966203020736574677261797D4E2F40626567696E7370656369616C7B534469637420626567696E2F5370656369616C536176652073617665204E2067736176650A6E6F726D616C7363616C652063757272656E74706F696E7420545220405370656369616C44656661756C747320636F756E742F6F636F756E7420582F64636F756E740A636F756E7464696374737461636B204E7D4E2F407365747370656369616C7B434C495020312065717B6E65777061746820302030206D6F7665746F206873203020726C696E65746F0A3020767320726C696E65746F206873206E6567203020726C696E65746F20636C6F73657061746820636C69707D696620686F20766F2054522068736320767363207363616C650A616E6720726F74617465207277695365656E7B72776920757278206C6C782073756220646976207268695365656E7B72686920757279206C6C7920737562206469767D7B6475707D0A6966656C7365207363616C65206C6C78206E6567206C6C79206E65672054527D7B7268695365656E7B72686920757279206C6C79207375622064697620647570207363616C650A6C6C78206E6567206C6C79206E65672054527D69667D6966656C736520434C495020322065717B6E657770617468206C6C78206C6C79206D6F7665746F20757278206C6C790A6C696E65746F2075727820757279206C696E65746F206C6C7820757279206C696E65746F20636C6F73657061746820636C69707D69662F73686F77706167657B7D4E0A2F6572617365706167657B7D4E2F736574706167656465766963657B706F707D4E2F636F7079706167657B7D4E206E6577706174687D4E2F40656E647370656369616C7B0A636F756E74206F636F756E74207375627B706F707D72657065617420636F756E7464696374737461636B2064636F756E74207375627B656E647D7265706561740A67726573746F7265205370656369616C5361766520726573746F726520656E647D4E2F406465667370656369616C7B534469637420626567696E7D4E0A2F406665647370656369616C7B656E647D422F6C697B6C696E65746F7D422F726C7B726C696E65746F7D422F72637B726375727665746F7D422F6E707B2F53617665580A63757272656E74706F696E742F53617665592058204E2031207365746C696E65636170206E6577706174687D4E2F73747B7374726F6B652053617665582053617665590A6D6F7665746F7D4E2F66696C7B66696C6C205361766558205361766559206D6F7665746F7D4E2F656C6C697073657B2F656E64616E676C6520582F7374617274616E676C6520580A2F7972616420582F7872616420582F736176656D6174726978206D61747269782063757272656E746D6174726978204E20545220787261642079726164207363616C65203020300A31207374617274616E676C6520656E64616E676C652061726320736176656D6174726978207365746D61747269787D4E20656E640A0A2525456E6450726F635365740A2525426567696E50726F635365743A20636F6C6F722E70726F203020300A25210A5465584469637420626567696E2F736574636D796B636F6C6F722077686572657B706F707D7B2F736574636D796B636F6C6F727B6475702031302065717B706F700A736574726762636F6C6F727D7B31207375622034203120726F6C6C20337B3320696E64657820616464206E6567206475702030206C747B706F7020307D69662033203120726F6C6C0A7D72657065617420736574726762636F6C6F7220706F707D6966656C73657D427D6966656C73652F546558636F6C6F72636D796B7B736574636D796B636F6C6F727D6465660A2F546558636F6C6F727267627B736574726762636F6C6F727D6465662F546558636F6C6F72677265797B736574677261797D6465662F546558636F6C6F72677261797B0A736574677261797D6465662F546558636F6C6F726873627B736574687362636F6C6F727D6465662F63757272656E74636D796B636F6C6F722077686572657B706F707D7B0A2F63757272656E74636D796B636F6C6F727B63757272656E74726762636F6C6F722031307D427D6966656C73652F44437B657863682064757020757365726469637420657863680A6B6E6F776E7B706F7020706F707D7B587D6966656C73657D422F477265656E59656C6C6F777B302E3135203020302E3639203020736574636D796B636F6C6F727D44430A2F59656C6C6F777B3020302031203020736574636D796B636F6C6F727D44432F476F6C64656E726F647B3020302E313020302E3834203020736574636D796B636F6C6F727D44430A2F44616E64656C696F6E7B3020302E323920302E3834203020736574636D796B636F6C6F727D44432F41707269636F747B3020302E333220302E353220300A736574636D796B636F6C6F727D44432F50656163687B3020302E353020302E3730203020736574636D796B636F6C6F727D44432F4D656C6F6E7B3020302E343620302E353020300A736574636D796B636F6C6F727D44432F59656C6C6F774F72616E67657B3020302E34322031203020736574636D796B636F6C6F727D44432F4F72616E67657B3020302E36310A302E3837203020736574636D796B636F6C6F727D44432F4275726E744F72616E67657B3020302E35312031203020736574636D796B636F6C6F727D44430A2F42697474657273776565747B3020302E3735203120302E323420736574636D796B636F6C6F727D44432F5265644F72616E67657B3020302E373720302E383720300A736574636D796B636F6C6F727D44432F4D61686F67616E797B3020302E383520302E383720302E333520736574636D796B636F6C6F727D44432F4D61726F6F6E7B3020302E38370A302E363820302E333220736574636D796B636F6C6F727D44432F427269636B5265647B3020302E383920302E393420302E323820736574636D796B636F6C6F727D44432F5265647B0A3020312031203020736574636D796B636F6C6F727D44432F4F72616E67655265647B30203120302E3530203020736574636D796B636F6C6F727D44432F527562696E655265647B0A30203120302E3133203020736574636D796B636F6C6F727D44432F57696C64537472617762657272797B3020302E393620302E3339203020736574636D796B636F6C6F727D44430A2F53616C6D6F6E7B3020302E353320302E3338203020736574636D796B636F6C6F727D44432F4361726E6174696F6E50696E6B7B3020302E3633203020300A736574636D796B636F6C6F727D44432F4D6167656E74617B3020312030203020736574636D796B636F6C6F727D44432F56696F6C65745265647B3020302E3831203020300A736574636D796B636F6C6F727D44432F52686F64616D696E657B3020302E38322030203020736574636D796B636F6C6F727D44432F4D756C62657272797B302E333420302E39300A3020302E303220736574636D796B636F6C6F727D44432F52656456696F6C65747B302E303720302E3930203020302E333420736574636D796B636F6C6F727D44430A2F467563687369617B302E343720302E3931203020302E303820736574636D796B636F6C6F727D44432F4C6176656E6465727B3020302E3438203020300A736574636D796B636F6C6F727D44432F54686973746C657B302E313220302E35392030203020736574636D796B636F6C6F727D44432F4F72636869647B302E333220302E363420300A3020736574636D796B636F6C6F727D44432F4461726B4F72636869647B302E343020302E383020302E3230203020736574636D796B636F6C6F727D44432F507572706C657B0A302E343520302E38362030203020736574636D796B636F6C6F727D44432F506C756D7B302E353020312030203020736574636D796B636F6C6F727D44432F56696F6C65747B0A302E373920302E38382030203020736574636D796B636F6C6F727D44432F526F79616C507572706C657B302E373520302E39302030203020736574636D796B636F6C6F727D44430A2F426C756556696F6C65747B302E383620302E3931203020302E303420736574636D796B636F6C6F727D44432F5065726977696E6B6C657B302E353720302E3535203020300A736574636D796B636F6C6F727D44432F4361646574426C75657B302E363220302E353720302E3233203020736574636D796B636F6C6F727D44430A2F436F726E666C6F776572426C75657B302E363520302E31332030203020736574636D796B636F6C6F727D44432F4D69646E69676874426C75657B302E393820302E313320300A302E343320736574636D796B636F6C6F727D44432F4E617679426C75657B302E393420302E35342030203020736574636D796B636F6C6F727D44432F526F79616C426C75657B310A302E35302030203020736574636D796B636F6C6F727D44432F426C75657B3120312030203020736574636D796B636F6C6F727D44432F436572756C65616E7B302E393420302E31310A30203020736574636D796B636F6C6F727D44432F4379616E7B3120302030203020736574636D796B636F6C6F727D44432F50726F63657373426C75657B302E39362030203020300A736574636D796B636F6C6F727D44432F536B79426C75657B302E3632203020302E3132203020736574636D796B636F6C6F727D44432F54757271756F6973657B302E383520300A302E3230203020736574636D796B636F6C6F727D44432F5465616C426C75657B302E3836203020302E333420302E303220736574636D796B636F6C6F727D44430A2F417175616D6172696E657B302E3832203020302E3330203020736574636D796B636F6C6F727D44432F426C7565477265656E7B302E3835203020302E333320300A736574636D796B636F6C6F727D44432F456D6572616C647B31203020302E3530203020736574636D796B636F6C6F727D44432F4A756E676C65477265656E7B302E393920300A302E3532203020736574636D796B636F6C6F727D44432F536561477265656E7B302E3639203020302E3530203020736574636D796B636F6C6F727D44432F477265656E7B3120300A31203020736574636D796B636F6C6F727D44432F466F72657374477265656E7B302E3931203020302E383820302E313220736574636D796B636F6C6F727D44430A2F50696E65477265656E7B302E3932203020302E353920302E323520736574636D796B636F6C6F727D44432F4C696D65477265656E7B302E35302030203120300A736574636D796B636F6C6F727D44432F59656C6C6F77477265656E7B302E3434203020302E3734203020736574636D796B636F6C6F727D44432F537072696E67477265656E7B0A302E3236203020302E3736203020736574636D796B636F6C6F727D44432F4F6C697665477265656E7B302E3634203020302E393520302E343020736574636D796B636F6C6F727D0A44432F5261775369656E6E617B3020302E3732203120302E343520736574636D796B636F6C6F727D44432F53657069617B3020302E3833203120302E37300A736574636D796B636F6C6F727D44432F42726F776E7B3020302E3831203120302E363020736574636D796B636F6C6F727D44432F54616E7B302E313420302E343220302E353620300A736574636D796B636F6C6F727D44432F477261797B302030203020302E353020736574636D796B636F6C6F727D44432F426C61636B7B302030203020310A736574636D796B636F6C6F727D44432F57686974657B3020302030203020736574636D796B636F6C6F727D444320656E640A0A2525456E6450726F635365740A5465584469637420626567696E20406465667370656369616C0A0A202F706766487267627B2F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B706766417267627D20646566202F706766646972207B206475702030206D6F7665746F20647570203520696E646578206C696E65746F207D2062696E64206465667D0A62696E64206465660A0A202F706766567267627B2F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B706766417267627D20646566202F706766646972207B2064757020302065786368206D6F7665746F20647570203520696E6465782065786368206C696E65746F207D0A62696E64206465667D2062696E64206465660A0A202F706766417267627B202F70676664696666203820696E64657820726F756E6420637669203820696E64657820726F756E6420637669207375622032206D756C20310A61646420646566203220696E646578203620696E64657820737562207067666469666620646976203220696E646578203620696E6465782073756220706766646966660A646976203220696E646578203620696E6465782073756220706766646966662064697620706766686569676874203920696E646578203920696E646578203920696E6465780A313420696E6465782070676664696666207B203320696E646578203320696E646578203320696E64657820736574726762636F6C6F7220706766646972207374726F6B650A34202D3120726F6C6C203720696E646578206164642034202D3120726F6C6C203620696E646578206164642034202D3120726F6C6C203520696E6465782061646420340A2D3120726F6C6C202E3520737562207D20726570656174206D61726B203135203120726F6C6C20636C656172746F6D61726B206578636820706F70207D62696E64206465660A0A202F70676652317267627B206E6577706174682064757020647570206475702030203336302061726320636C6970206E65777061746820647570202F706766656E64780A6578636820646566202F706766656E647920657863682064656620302E383735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B706766527267627D20646566202F706766737461727478206578636820646566202F706766737461727479206578636820646566202F706766646966667820706766656E64780A7067667374617274782073756220646566202F706766646966667920706766656E647920706766737461727479207375622064656620647570202F706766646F6D620A6578636820646566207D62696E64206465660A0A202F70676652327267627B206E65777061746820302E35206164642070676663697263782070676663697263792033203220726F6C6C2030203336302061726320736574726762636F6C6F720A66696C6C20706F707D62696E64206465660A0A202F706766527267627B202F70676664696666203820696E64657820726F756E6420637669203820696E64657820726F756E6420637669207375622034206D756C20310A61646420646566202F706766636972637820706766737461727478203920696E64657820706766646966667820706766646F6D6220646976206D756C20616464206465660A2F706766636972637920706766737461727479203920696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067666369726378650A706766737461727478203820696E64657820706766646966667820706766646F6D6220646976206D756C2061646420646566202F706766636972637965207067667374617274790A3820696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067667873746570207067666369726378652070676663697263780A73756220706766646966662064697620646566202F70676679737465702070676663697263796520706766636972637920737562207067666469666620646976206465660A3220696E646578203620696E64657820737562207067666469666620646976203220696E646578203620696E64657820737562207067666469666620646976203220696E6465780A3620696E64657820737562207067666469666620646976203820696E646578203820696E646578203820696E64657820313320696E6465782070676664696666207B0A3320696E646578203320696E646578203320696E64657820736574726762636F6C6F72207067666369726378207067666369726379203220696E6465782030203336300A61726320636C6F736570617468207374726F6B652034202D3120726F6C6C203620696E646578206164642034202D3120726F6C6C203520696E6465782061646420340A2D3120726F6C6C203420696E646578206164642034202D3120726F6C6C202E323520737562202F7067666369726378207067666369726378207067667873746570206164640A646566202F70676663697263792070676663697263792070676679737465702061646420646566207D20726570656174206D61726B203134203120726F6C6C20636C656172746F6D61726B0A6578636820706F70207D62696E64206465660A0A202F70676648636D796B7B202F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676641636D796B7D20646566202F706766646972207B206475702030206D6F7665746F20647570203620696E646578206C696E65746F207D2062696E64206465667D0A62696E64206465660A0A202F70676656636D796B7B202F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676641636D796B7D20646566202F706766646972207B2064757020302065786368206D6F7665746F20647570203620696E6465782065786368206C696E65746F0A7D2062696E64206465667D2062696E64206465660A0A202F70676641636D796B7B202F7067666469666620313020696E64657820726F756E642063766920313020696E64657820726F756E6420637669207375622032206D756C0A312061646420646566203320696E646578203820696E64657820737562207067666469666620646976203320696E646578203820696E6465782073756220706766646966660A646976203320696E646578203820696E64657820737562207067666469666620646976203320696E646578203820696E646578207375622070676664696666206469760A70676668656967687420313220696E64657820313220696E64657820313220696E64657820313220696E64657820313820696E6465782070676664696666207B20340A696E646578203420696E646578203420696E646578203420696E64657820736574636D796B636F6C6F7220706766646972207374726F6B652035202D3120726F6C6C0A3920696E646578206164642035202D3120726F6C6C203820696E646578206164642035202D3120726F6C6C203720696E646578206164642035202D3120726F6C6C20360A696E646578206164642035202D3120726F6C6C202E3520737562207D20726570656174206D61726B203139203120726F6C6C20636C656172746F6D61726B20657863680A706F70207D62696E64206465660A0A202F7067665231636D796B7B206E6577706174682064757020647570206475702030203336302061726320636C6970206E65777061746820647570202F706766656E64780A6578636820646566202F706766656E647920657863682064656620302E383735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676652636D796B7D20646566202F706766737461727478206578636820646566202F706766737461727479206578636820646566202F706766646966667820706766656E64780A7067667374617274782073756220646566202F706766646966667920706766656E647920706766737461727479207375622064656620647570202F706766646F6D620A6578636820646566207D62696E64206465660A0A202F7067665232636D796B7B206E65777061746820302E35206164642070676663697263782070676663697263792033203220726F6C6C2030203336302061726320736574636D796B636F6C6F720A66696C6C20706F707D62696E64206465660A0A202F70676652636D796B7B202F7067666469666620313020696E64657820726F756E642063766920313020696E64657820726F756E6420637669207375622034206D756C0A312061646420646566202F70676663697263782070676673746172747820313120696E64657820706766646966667820706766646F6D6220646976206D756C206164640A646566202F70676663697263792070676673746172747920313120696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067666369726378650A70676673746172747820313020696E64657820706766646966667820706766646F6D6220646976206D756C2061646420646566202F706766636972637965207067667374617274790A313020696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067667873746570207067666369726378652070676663697263780A73756220706766646966662064697620646566202F70676679737465702070676663697263796520706766636972637920737562207067666469666620646976206465660A3320696E646578203820696E64657820737562207067666469666620646976203320696E646578203820696E64657820737562207067666469666620646976203320696E6465780A3820696E64657820737562207067666469666620646976203320696E646578203820696E6465782073756220706766646966662064697620313120696E6465782031310A696E64657820313120696E64657820313120696E64657820313720696E6465782070676664696666207B203420696E646578203420696E646578203420696E6465780A3420696E64657820736574636D796B636F6C6F72207067666369726378207067666369726379203220696E6465782030203336302061726320636C6F7365706174680A7374726F6B652035202D3120726F6C6C203820696E646578206164642035202D3120726F6C6C203720696E646578206164642035202D3120726F6C6C203620696E6465780A6164642035202D3120726F6C6C203520696E646578206164642035202D3120726F6C6C202E323520737562202F70676663697263782070676663697263782070676678737465700A61646420646566202F70676663697263792070676663697263792070676679737465702061646420646566207D20726570656174206D61726B203138203120726F6C6C0A636C656172746F6D61726B206578636820706F70207D62696E64206465660A0A202F70676648677261797B202F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676641677261797D20646566202F706766646972207B206475702030206D6F7665746F20647570203320696E646578206C696E65746F207D2062696E64206465667D0A62696E64206465660A0A202F70676656677261797B202F70676668656967687420657863682064656620302E3735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676641677261797D20646566202F706766646972207B2064757020302065786368206D6F7665746F20647570203320696E6465782065786368206C696E65746F0A7D2062696E64206465667D2062696E64206465660A0A202F70676641677261797B202F70676664696666203420696E64657820726F756E6420637669203420696E64657820726F756E6420637669207375622032206D756C0A31206164642064656620647570203220696E6465782073756220706766646966662064697620706766686569676874203320696E646578203620696E64657820706766646966660A7B203120696E646578207365746772617920706766646972207374726F6B652065786368203320696E646578206164642065786368202E3520737562207D207265706561740A6D61726B2037203120726F6C6C20636C656172746F6D61726B206578636820706F70207D62696E64206465660A0A202F7067665231677261797B206E6577706174682064757020647570206475702030203336302061726320636C6970206E65777061746820647570202F706766656E64780A6578636820646566202F706766656E647920657863682064656620302E383735207365746C696E657769647468205B5D20302073657464617368202F70676673686164650A7B70676652677261797D20646566202F706766737461727478206578636820646566202F706766737461727479206578636820646566202F706766646966667820706766656E64780A7067667374617274782073756220646566202F706766646966667920706766656E647920706766737461727479207375622064656620647570202F706766646F6D620A6578636820646566207D62696E64206465660A0A202F7067665232677261797B206E65777061746820302E35206164642070676663697263782070676663697263792033203220726F6C6C2030203336302061726320736574677261790A66696C6C20706F707D62696E64206465660A0A202F70676652677261797B202F70676664696666203420696E64657820726F756E6420637669203420696E64657820726F756E6420637669207375622034206D756C0A312061646420646566202F706766636972637820706766737461727478203520696E64657820706766646966667820706766646F6D6220646976206D756C206164640A646566202F706766636972637920706766737461727479203520696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067666369726378650A706766737461727478203420696E64657820706766646966667820706766646F6D6220646976206D756C2061646420646566202F706766636972637965207067667374617274790A3420696E64657820706766646966667920706766646F6D6220646976206D756C2061646420646566202F7067667873746570207067666369726378652070676663697263780A73756220706766646966662064697620646566202F70676679737465702070676663697263796520706766636972637920737562207067666469666620646976206465660A647570203220696E64657820737562207067666469666620646976203220696E646578203520696E6465782070676664696666207B203120696E64657820736574677261790A7067666369726378207067666369726379203220696E6465782030203336302061726320636C6F736570617468207374726F6B652065786368203220696E646578206164640A65786368202E323520737562202F70676663697263782070676663697263782070676678737465702061646420646566202F70676663697263792070676663697263790A70676679737465702061646420646566207D20726570656174206D61726B2036203120726F6C6C20636C656172746F6D61726B206578636820706F70207D62696E640A6465660A0A20202F70676673637B7D62696E64206465662F70676666637B7D62696E64206465662F7067667374727B7374726F6B657D62696E64206465662F70676666696C6C7B66696C6C7D62696E640A6465662F706766656F66696C6C7B656F66696C6C7D62696E64206465662F706766657B6120647570203020726C696E65746F20657863682030206578636820726C696E65746F0A6E6567203020726C696E65746F20636C6F7365706174687D62696E64206465662F706766777B7365746C696E6577696474687D62696E64206465662F706766737B736176650A7067667064203732205265736F6C7574696F6E2064697620373220565265736F6C7574696F6E20646976206E6567207363616C65206D61677363616C657B31204456496D61670A64697620647570207363616C657D69662070676678206E65672070676679206E6567207472616E736C61746520706766666F61202E7365746F706163697479616C7068617D62696E640A6465662F706766727B706766736420726573746F72657D62696E642064656620757365726469637420626567696E2F7067666F7B7067667364202F706766782063757272656E74706F696E740A2F70676679206578636820646566206465662040626567696E7370656369616C7D62696E6420646566202F706766637B6E6577706174682040656E647370656369616C0A70676670647D62696E6420646566202F70676673647B676C6F62616C64696374202F70676664656C7461202F64656C7461207768657265207B706F702064656C74617D0A7B307D206966656C7365207075747D62696E64206465662F70676670647B2F64656C746120676C6F62616C64696374202F70676664656C746120676574206465667D62696E640A646566202F2E736574626C656E646D6F6465207768657265207B706F707D207B2F2E736574626C656E646D6F64657B706F707D6465667D206966656C7365202F2E73657466696C6C636F6E7374616E74616C7068610A7768657265207B706F70202F2E7365746F706163697479616C706861207B2E73657466696C6C636F6E7374616E74616C7068617D206465667D207B2F2E7365746F706163697479616C7068610A7768657265207B706F707D207B2F2E7365746F706163697479616C706861207B706F707D206465667D206966656C73657D206966656C7365202F2E70676673657466696C6C6F706163697479616C7068617B2F706766666F610A6578636820646566202F2E73657466696C6C636F6E7374616E74616C706861207768657265207B706F7020706766666F61202E73657466696C6C636F6E7374616E74616C7068617D0A7B2F70676666696C6C7B677361766520706766666F61202E7365746F706163697479616C7068612066696C6C2031202E7365746F706163697479616C706861206E6577706174680A66696C6C2067726573746F7265206E6577706174687D62696E6420646566202F706766656F66696C6C7B677361766520706766666F61202E7365746F706163697479616C7068610A656F66696C6C2031202E7365746F706163697479616C706861206E65777061746820656F66696C6C2067726573746F7265206E6577706174687D62696E64206465667D0A6966656C73657D2062696E6420646566202F2E7067667365747374726F6B656F706163697479616C7068617B2F706766736F61206578636820646566202F2E7365747374726F6B65636F6E7374616E74616C7068610A7768657265207B706F7020706766736F61202E7365747374726F6B65636F6E7374616E74616C7068617D207B2F7067667374727B677361766520706766736F61202E7365746F706163697479616C7068610A7374726F6B652067726573746F7265206E6577706174687D62696E64206465667D206966656C73657D62696E6420646566202F706766666F61203120646566202F706766736F610A3120646566202F2E70757368706466313464657669636566696C746572207768657265207B706F70205B7573657264696374202F626F702D686F6F6B206B6E6F776E0A7B7573657264696374202F626F702D686F6F6B2067657420616C6F616420706F707D206966207B30202E70757368706466313464657669636566696C7465727D20616C6F61640A706F705D206376782075736572646963742065786368202F626F702D686F6F6B206578636820707574205B7573657264696374202F656F702D686F6F6B206B6E6F776E0A7B7573657264696374202F656F702D686F6F6B2067657420616C6F616420706F707D206966207B2E706F70706466313464657669636566696C7465727D20616C6F61640A706F705D206376782075736572646963742065786368202F656F702D686F6F6B2065786368207075747D2069662073797374656D64696374202F7064666D61726B206B6E6F776E0A6E6F74207B7573657264696374202F7064666D61726B2073797374656D64696374202F636C656172746F6D61726B20676574207075747D20696620656E640A0A20202F706766777269746573616D706C65636D796B207B203420696E6465782030203520696E64657820706766636865636B636F6C6F7272616E676520323535206D756C0A726F756E642063766920707574203420696E6465782031203420696E64657820706766636865636B636F6C6F7272616E676520323535206D756C20726F756E64206376690A707574203420696E6465782032203320696E64657820706766636865636B636F6C6F7272616E676520323535206D756C20726F756E642063766920707574203420696E6465780A33203220696E64657820706766636865636B636F6C6F7272616E676520323535206D756C20726F756E64206376692070757420706F7020706F7020706F7020706F700A7D2062696E6420646566202F706766777269746573616D706C65726762207B203320696E6465782030203420696E64657820706766636865636B636F6C6F7272616E67650A323535206D756C20726F756E642063766920707574203320696E6465782031203320696E64657820706766636865636B636F6C6F7272616E676520323535206D756C0A726F756E642063766920707574203320696E6465782032203220696E64657820706766636865636B636F6C6F7272616E676520323535206D756C20726F756E64206376690A70757420706F7020706F7020706F70207D2062696E6420646566202F706766777269746573616D706C6567726179207B20706766636865636B636F6C6F7272616E67650A3136373737323135206D756C20726F756E6420637669203120696E6465782030203220696E646578202D313620626974736869667420707574203120696E64657820310A3220696E64657820363535333520616E64202D3820626974736869667420707574203120696E6465782032203220696E6465782032353520616E642070757420706F700A7D2062696E6420646566202F706766636865636B636F6C6F7272616E6765207B2064757020302E30206C74207B706F7020302E307D2069662064757020312E302067740A7B706F7020312E307D206966207D2062696E6420646566202F7067666368616E6E656C6465707468636D796B203820646566202F7067666368616E6E656C64657074687267620A3820646566202F7067666368616E6E656C64657074686772617920323420646566202F706766636F6C6F7273616D706C65636D796B203420737472696E67206465660A2F706766636F6C6F7273616D706C65726762203320737472696E6720646566202F706766636F6C6F7273616D706C6567726179203320737472696E6720646566202F70676672616E6765636D796B0A5B3020312030203120302031203020315D20646566202F70676672616E6765726762205B30203120302031203020315D20646566202F70676672616E6765677261790A5B3020315D206465660A0A202F706766317B6773617665206578656320312E30207067667720322E303030303220302E30206D6F7665746F202D362E303030303620342E3030303035206C696E65746F0A2D332E303030303320302E30206C696E65746F202D362E3030303036202D342E3030303035206C696E65746F2070676666696C6C202067726573746F72657D2062696E640A6465660A0A202F706766327B6773617665206578656320312E30207067667720302E382070676677205B205D20302E3020736574646173682031207365746C696E6563617020310A7365746C696E656A6F696E202D332E303030303320342E3030303035206D6F7665746F202D322E373530303220322E353030303220302E3020302E323439393820302E37350A302E30206375727665746F20302E30202D302E3234393938202D322E3735303032202D322E3530303032202D332E3030303033202D342E3030303035206375727665746F0A706766737472202067726573746F72657D2062696E64206465660A0A202F706766337B6773617665206578656320312E302070676677205B205D20302E30207365746461736820302E30202D352E3030303035206D6F7665746F20302E300A352E3030303035206C696E65746F20706766737472202067726573746F72657D2062696E64206465660A0A202F706766347B6773617665206578656320312E302070676677205B205D20302E302073657464617368202D332E3030303033202D352E3030303035206D6F7665746F0A302E30202D352E3030303035206C696E65746F20302E3020352E3030303035206C696E65746F202D332E303030303320352E3030303035206C696E65746F207067667374720A2067726573746F72657D2062696E64206465660A0A202F706766357B6773617665206578656320312E302070676677205B205D20302E302073657464617368202D322E3030303032202D352E3030303035206D6F7665746F0A312E30202D332E303030303320312E3020332E3030303033202D322E303030303220352E3030303035206375727665746F20706766737472202067726573746F72657D0A62696E64206465660A0A202F706766367B6773617665206578656320312E302070676677205B205D20302E302073657464617368202D342E3530303033202D352E3030303035206D6F7665746F0A302E343939393820302E30206C696E65746F202D342E353030303320352E3030303035206C696E65746F20706766737472202067726573746F72657D2062696E64206465660A0A202F706766377B6773617665206578656320312E302070676677202D322E353030303220302E30207472616E736C617465205B205D20302E30207365746461736820332E30303030330A302E30206D6F7665746F20332E303030303320312E363536383920312E363536383920332E303030303320302E3020332E3030303033206375727665746F202D312E36353638390A332E3030303033202D332E303030303320312E3635363839202D332E303030303320302E30206375727665746F202D332E3030303033202D312E3635363839202D312E36353638390A2D332E303030303320302E30202D332E3030303033206375727665746F20312E3635363839202D332E303030303320332E3030303033202D312E363536383920332E30303030330A302E30206375727665746F20636C6F7365706174682067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374720A67726573746F7265206E657770617468202067726573746F72657D2062696E64206465660A0A202F706766387B6773617665206578656320312E302070676677205B205D20302E30207365746461736820312E3020302E30206D6F7665746F202D352E30303030350A332E3030303033206C696E65746F202D31312E303030313220302E30206C696E65746F202D352E3030303035202D332E3030303033206C696E65746F20636C6F7365706174680A67736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F7265206E657770617468202067726573746F72657D0A62696E64206465660A200A406665647370656369616C20656E640A2525426567696E466F6E743A2055525750616C6C6164696F4C2D526F6D610A252150532D41646F6265466F6E742D312E303A2055525750616C6C6164696F4C2D526F6D6120312E30350A25254372656174696F6E446174653A205765642044656320323220313939390A2520436F707972696768742028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E740A252028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E740A2520536565207468652066696C6520434F5059494E472028474E552047656E6572616C205075626C6963204C6963656E73652920666F72206C6963656E736520636F6E646974696F6E732E0A252041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E740A252070726F6772616D20696E206120506F7374736372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E7420746861740A2520636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C6573730A25206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E0A3132206469637420626567696E0A2F466F6E74496E666F20313020646963742064757020626567696E0A2F76657273696F6E2028312E30352920726561646F6E6C79206465660A2F4E6F74696365202828555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E742E20536565207468652066696C6520434F5059494E472028474E552047656E6572616C205075626C6963204C6963656E73652920666F72206C6963656E736520636F6E646974696F6E732E2041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E742070726F6772616D20696E206120506F7374736372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E74207468617420636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C657373206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E2920726561646F6E6C79206465660A2F436F707972696768742028436F707972696768742028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E742920726561646F6E6C79206465660A2F46756C6C4E616D6520285552572050616C6C6164696F204C20526F6D616E2920726561646F6E6C79206465660A2F46616D696C794E616D6520285552572050616C6C6164696F204C2920726561646F6E6C79206465660A2F5765696768742028526F6D616E2920726561646F6E6C79206465660A2F4974616C6963416E676C6520302E30206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A656E6420726561646F6E6C79206465660A2F466F6E744E616D65202F55525750616C6C6164696F4C2D526F6D61206465660A2F5061696E74547970652030206465660A2F574D6F64652030206465660A2F466F6E7442426F78207B2D313636202D3238332031303231203934337D20726561646F6E6C79206465660A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E30303120302E3020302E3020302E30303120302E3020302E305D20726561646F6E6C79206465660A2F456E636F64696E67205374616E64617264456E636F64696E67206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364139383942393937344230313739464336434334343542433243303331303343363835373041374233353441344132383041450A364642463746393838384530333941423630464341463835324542344345334146454239373944354541373046444534344132414535433843303136364332370A424639363635454541313143374432333239433141323131444432364242333732424535383232463545413730443939454235373843374245464434344344460A303435413336333035364535453143433531353235454136464330363144434542423333373230384546463732393830323337364132383031343234463637300A304537453633393742323846313542433130423430303132423041334541454232363933453846374636323743344339433743364335424646313035433145340A314232423945384630393235334237363034304432363842383037313945314233463541353541413435414342373536423845324246354233373632374534360A444146443441344637343141383539424235463744374337374643374141393645453641433933433036434138323942383146453331453332443539433644450A423142463342364343433543334339323936444338364430313438374630384142363638463635364344443838454238313641454444314546413437463031340A464635393845373843393738444631384638463636303537333531424339364234383031354146324530394533453331383035334539353245394144343033370A424643374545463943424644374243333537343635363542374546424632343136333937393341453335373232303834333134374641444239323946424432340A303143383841333832463030424637393535344431323543353433343535333330303032423046453644323239383330343730433738353431453738444144350A334537433141363139423931323135414530323546383135363134343142464339414441343436303335423845423943334436394241373436414430434341410A303439443146453444393035444633463438443232393030453032413233464232334636423537314444433842324346373030383433314331454144374636420A443932413243343243414544393446393731344634344533434533314642414632334130363441413241374631334436453533373845323835333946303030390A333233413037353545353842413735363441343038423134324332333036373241343233444136413645353445443136324146424638464144464137354230420A464336343844354441364543333132353142363242394636313941443934363038373645454643423846394432333639434133303535383230333036353333460A334331443437443541324546393736313946433243373830424344393534304138323037343833363946464441423944353234393246313330433041433343380A453043383733373744413643323146314445343239433135414139333938373738373646383436303546363738354235414445413937333231424632394445460A333639324146353335454546453830313937354639343634353237323134323132384133464543384231424345423645353742383335323042354334444436390A333644423843444546364534394238393434434133314335394638373930434433464544353846313138324439414336444342324437354234383831423433300A433637444237363942343734354541353432333343444644353630304242324139363230394138334644303443313344344141344145323744454439374432350A393346364644413546363437313145433741323839394143393842443844383837394136413334383236353833323939344333424144383045314431323239310A434230353932343330324237383034343341373641303945314332374538444344434438374646453342453137444530343231413437373333433242443732330A394338373639343231353538333431393046363535393838313041463843414439383432463841314533424244324145333334384244384643393138394645320A454435363433454334443837313438373735313231373032454542373633394143443830454634463037353432424242433039463938463831464239314131430A383943363931424633384345343233394231314331433044394136423836343735334532303443304243434230393345313339463944363130344645303538340A444630323243363231463836453542464532453034374644353630453841383942333837324338374637383131453945424341394346313832343732383431410A383845374334323145354345363944414431323342383844344536433046443835433836433734343335424643414532384332423543414435374439314139420A343437333930364430343430383542353333364230363643364439434539393444324233333346343730414433324433424332384241324436393942374145360A324236383943443530434532443435383530314542434432333831463334333043333035394544434132324439463135434130334344313843423136304535390A433045393630463739303130444331453945433430424136393134463946423739353143423444354141464141313335433137443544363443443834384133320A433731413543383536434339433934463234423643394146383534423833373731363738433042304234433641344439433035414445363945354330343639370A383735314631314432414435353536313043303437314130313639463432464634433430443135353035463132363137393532353936313837323033453130320A344230303530313739374232443141413331313246444143303143363133443939374144343032323233353333453334393334383233313142354130433943390A304541413533373531364136414539343734323043303538354137414332344445364442423332304631393133323236463646463831324345343532463937310A313935413736393345453034313834423436334331313635374136343134333535353631373044324230343730423934363234353132343835433945314138450A344541323935334435424141314535354239454346423339464430453937434444383446343644343042333844323345413537394539353032454335423936320A373432383030463639453245463242454346343441333632444238463931363941443846453630344137423932423033343835324336373345434336334645320A323745353336424434393633433639343235384237313937323232334334373238314241374337433938353534443232334433303637313844323530353743440A414641353937364144333742454541333130354130434636383243334646313845373345373330354335434343444144364441353634323430444242343932360A374239343746454330343532453538353644313536394638454132434330344631344333413233464544453739413434374137463346344544363442413632420A443333364442314139454546373441373533363637444236323934314535334141444331464144344539354641343535423041323644424242423333364530420A303837334530353544353331393635463333414545333846353944383142323842374238444538323146313236344330334539303330453339443538323937300A423239384538353836353246343830463738353644453239413441373437354637313041394442424637453934444241434541454641373544323543393335300A464443463330444536333335353736393544344245463543313241354330424332413542433932313036373933323546454346423534413134303735383743310A413138363741453743324131343046383043334345433531363730454638343633443344394638424431353434354330443845324444434439303637454441330A333344383339344433433445393645343742453141423036453839424334323630374446353330323339413534413730344631393246353530443335373738450A334242314231454445344134353346333138383730394138353530343037344238363938453037443039453336353843364433424539393435433832454133410A434439304239303538373542353535453934304131304546394137433445303835373539463339303033363735354334424645393733363934423941333446360A443034393237303746463632323130323939413434323343334143433133454131373039373845314130324543333632433636373534343039384145343745350A463945303830373332364537353732344541343436383530363532314244313545303243423246344535423630324635353231303844424434334331434143300A463039354332394235303342373138324445413435413844324330323946353042373539323431393944304237413535343739343744433142423944323437380A324441354537384233444643304146363045373835423842373233433136463737463446333536383039374236304531423631323636453241344134324445350A413444374535353235304335324142333835454139394538343036363831343432324430413934423042363730363838333641413134363937373145373734340A344134373044463546334135364435323644313946394237344636334434463541384646413536423541324641323734413631333443314335364346344435360A423635454344414243314141343039413446353031414633324342363638344242343731434438303041333738333036343539433032324634313237463245320A323037303837444142464144323038463035444436344335393146324238324334424441394344443938323230463945463235414534313546343630373830310A313446394530453038394233424133464235463745323242303544303535393936423739433245363739354532333435323838314445413632353531333341320A373339454338383243374135453237363844323130464136323234393143344232323438383842413239413731443442413839433135343741343142373637320A353943463536354144413530313146454131334137463844393544414243344143463539334341383046334535383936314342343934373737364437344642300A304245363841374343423845344544464336344235334641353443453632384641444232454632393032393045304142383337313733393746353632413244430A353231454135323235433036453137393536323141433230314242424131373541393346424231333032354333393236323438313142434543454235324338360A363341304335414536353033414635304632313535303046323831464444373545343034363931464243453030343543384631343735423432393036433733340A453141443742423044364533444436433032373238303034393635463344393946413245443033433437363433343445303531353639363531333834354136450A304638394339454443303138344544453534324246344131374539324446423130364431443343463330374432353632353336313139444337423734433339440A383631304534383046423136313335364639383334384232364446373241343233394432353244413338303044313531454532433334364633333931433532330A443033443736314146413646373541383633373042314132313544324433343933313539443845464638413342413739443339394641463831443939353936460A334334424334384438423630313733353543454630393936344331393132464433353945414442394544374545453546373146413237304330343937443732380A323838334139324342333445344432323944363446354641433933444536384244433132333645343230343144363643434531313335443642363443323330350A333439414642333430443044463131373230414434303339363041453443314232424343443738314238384237323231383933423734303041343339383534350A344344353236343843443945453035393834363630344436343931354546324133434637424230423431414536433637343436364643353934324336323544340A363034314533313633464435424643373338373432424344324338383846373446464145313833454435324536344242324142393443333834303032393235430A413535453239443236393233353232364232344137453241373433413433434234363032463632463746373838333543323735364237453932453339393746350A384243383636463541313133314436443542334232453431384539414535314330433839364438453934413341334646383233423244463031464543344144420A373432324132323433314430384238434243333635433942354646304130464333443633393431334534343437464636314546343836353332364435373439350A394641303241463330443032423233444333343630393142324346394546323539373337463237413035374638313330434141304238454646463537463742370A364336323041443537433333323936423838394346453636363134304439454138414336384233343337373230383444343542393442383233343234334443440A393839354336323338433838333439324131444138323331304536424634463035344541343436444133383635454536433144314633313243443839464336380A313846444643413634333034324543313331424144394232334530363236374439414230343830454438463234334337413734393136303031373444363944380A363945354434304542333434453544324331314535323546303843463437353245443235333939323536364545393044304144443334353531394444414134450A464246314430443637393931374636414442423733353044353430384336323143444544364143323232393341363636323031413131454133304231363344330A354136383334393037433438343633463337303036454132443943383632354545443546354239463839333046343637363645393736364138323836464539320A413633343832464231444633303641454643303833434639454445303737384332443739424539464439444535374343333531373545374445463639383236430A393537364546394430363731393531353035393933444643454641413239444132374236423931303235373445323436314432464145363542373332314330300A393341324133343939314443303733433738313136324231314537393439433537454632463445314244303946304344374341433244304138393539443839390A433035453432334330383945463443373530343337413936363038433137353344434332343039373636303041393043454543363844384431303430303336460A324530453530303936354237353745384634334539414239303036444245313146413142453145463842443946334442413730453835344339383737453945340A313231443638464235343531323441424444373343384637333139354534393233303845413945373037423031324130354544444544384338434444303431350A393937313036393934434437443637453333354344314434434232363139334430364637353346433342443939464134334634314446333030413742334539380A353835354645353231383136303034463736353331373546384644323345353134314643363446463238463143413644344631424541314336343031383139300A383235343838344138323946424444444130393032454431343943464631393937434443363838364138363745433438353443434134463937303338323636410A344632313139303030304345413238343545373535443235443741323242383043423737333744453235333745374235344635453136343345333030343645380A373341344237464138324538453135463336364345393841343038333832353844343532453733313337344542323344453042433043333834343438304138410A463034454641444635443446393038313635423138324437433435363745463832333935363943413844424234303633464235343133324234323036423230390A443734393945454443353932304633373938353233324438433836314630464337433235444435414342414137373645313136363942383145414139394546390A313530423844333936393544303936383235443937393232353533333231463834313333433430434336314631333730444346454136343233303142314446300A443136343433444530304544363943314641363734424133363634463842443030433038413237394144324238323645443339304345314232373439323531340A433937323738333041374339333339313345344646454135443945413246363130414442394145373735374232333037413142423944363739374446414242440A353831313845303436444643304235434232413430353445444338433741323745343537393541313444393142384330423442303232464130434438423041440A343842463937423937323932413138324436443546314238314145304239424437414537363936443331423345443546414136463742343236324644323339360A413442354635313834343541363643453943393838333242363244413641423445423244314234424337333839393835434234463541333230333141463943370A414431423339383645463442463442324441343246323044453132423735453238303242363736343834433946303542414239364639303241343445463444410A363032343831333046383146344544433837314242463643434245463431383337444444314334424339454641334245453044363345304443344536463235330A413630423242313837414136323133303346323739423244343445454443313436343241423338324139434230424333464246314134333241453844373137320A463345343731333946454631443233443246393330414631423336314532413743424241303831333530363437383544423235373037463432303235433842300A373933314131393239303545433539463538393533323631443633413431413244364345333030414146364536423630334330374546373243373330303136390A363841413346434636443443313546433131304131344336423137443842454330444334383535443744313744303539393538444232413930374330383433420A323642433234383343394333434639434538453846414635363443434138354639303431353337383841363041413133443930413234304544324234353133340A363744443245394632313445363235464130434434323438423135313645324442343439384330454441413946323933453732363441323231413231433135410A453037343336383042324339393841463835444235454243453637354644353433313143423134363831353731373546374446324339353243393541464338390A303743313032393731373830443446343842373443433439413243423137333744353238353741323346413938464145383034343137394333394245324339380A314141303544394137413539323236434243333445433836443243413931453332323134444438353745383043394541323339384530414234343341344634370A393036413039313536433933393934393932433532364430444535424530453139343337343233363732413236423536304141353838433146314344454146360A463645443231464430353445383935323939373835464636313930454636383944444342363238314234393944374142363931373236383139443034463341360A384534354230364430313935393938453834304546324539414538433930413442353230463132383445314237433230443238414443433345343133364632410A343535343732323938414537464431464432384344444234444634363544423941384230323542424234393633374144393639323732373441373332383133410A343941343733454442374539383836423643343536303536383141374445313642393245453242414143433242433531413845443134463741314641343238380A364235454234383635314231343930393932434632334636313744343044323330394142313645443741303145413443423732343646363743414430413344450A424130443934374430414131463033464341414146423234373037383738363135424632333542444444354632343934394345423839413933393136433836420A324139444537363842423244413945313332363141384646363146324535364335433237334430344635444535443843354339443032313545413036413233330A363143304444303638323843464237393931333635423044453031463342343246333242314334453736383236343145374630394246434542323639423242370A314434344237373134324643433336444130454334304344394534353032324138313933344345354239393733414446383144374543393636343139393930350A324444433746303535444446364136454142394536324342443530414245383946354441343730453043363743464643363133333042353839444146453437370A433145464642383043453946464434353445363335373637364242464437313334313134423930423438373631424243373933373242453832314237353233460A333645333641444139364133424132343936334132353242413145393945333942453745313131383731393443354246384438424333323344414145394232370A344545354237454332344130313844424643314643434339363437453635343441344637333933433138423245353039384231453642304438373941363338410A414131443438353030393235303439313838423944393142463736423243363646353636424634364332354538344643333646443646314134344546373843310A363731393046333332364241333542324130463935434430333733464534354532324437303544373842434436454630393130354532444136314338334138430A453245423342353632313235373533423636433337304236454632333933423135454138424334443538323035394230433042453944323037433335463342300A313431333336343546423946384535334136453241314343303843454437363246463837454133453336443830383144363435303833434238433939323938350A444239394439424432394443384338414533463938444137373942433446313641303638394146433437443632333736314133454442353934384435433742450A314331444239383532453039463632424232324133413531424543384242393844444231303542453346314446333143443634414432313638384232464133420A444635453336434643353835393145373246463145363534334442354438443039344542443734364630304434383730454434344334323435343231413843310A434541393636313044393541463642464137463243434444453242313235463545354432363839324234463533463641443944443844443437303546463146310A353242363242433334313038344531423141393630433335413331393342334536433944413134333438423741343644463741444236363537444345464232340A394339373243384535343136303330443430373644344330394231363736303330363830313033323639423931393936454634364531394534343642384333300A373545333832394333394234414331463138323538373639434434384138394539454536384334354333324231464235394636453141364137383144383641300A433344414444354245344536463238364432374437333145453330443438373133383741373437364441453246433842354231454539364243313036393735410A363141384336413141433038373845433245423743314237453246414331364431343142323136343033314436313141343144433639334230423145343631430A353433324141434642464431413632394435333641433546454332383233424344343837424645384537374231373039353933303941374342393532344642420A353631373045394144454630323436344135374430434330413735303830353430433243333637454435373242433931304439303846374443383145413731390A433846374541453835343636433736374238433743363830373741454635423939343639363738453539393631383237373530463038443742314338363734450A463146373732394344423139373439414341394344333939413441424346323846434531363742373535363435443844454435453445303539443535333445390A353131363542453643423133313838423739303543363543434637384337444444323933454236334435453743343636453532384343414633363833354642300A364543464145323136353337384638454332464230394442334341384545383834423533343037303232434436453431353344413145464536323936323436460A323641424332414543413939334644363943374241383936363634313538454130313641353836363130463635343231463839303838323535384444464344440A324638354441384543463630433337344244363036314542463841354631413946464237314141343541353834443734344246424136304643323245393634430A453130414635313243323238463443464333443839433135333746344134434437303445384541464337353731313646453330313245303141454246353834420A313744373930314437353038453137433831413531393941353742413342373230433136393344303245333941433831373033313244354634384335393533370A423135383246464333313443414535303235313742353037434137393841394332324430413832364239333534454338373046333643463039323934303730360A373037444435333839363136423041374131353444393537374542364544464239463135373931314536304246433344433343324442353534343033454335350A363644364434423237304130364241343534323936454331374138364142304441363739393435424341364137314534333239444237334537463239303938370A383744393644384139414538444144393935353332373130303437364330334231333141303446414632464630424345453930354243373039393441423033350A334239314436424333323541434131383632314639463134393136443844443935433337393839393038453446423346444133333033453642433745424338430A334639304543453544414530353342364538363835324543304244353831463639383239393544384137324441463136303339344134363244353846343735320A354543463745303330344433424432343235363931324132454433433539423332434234304341413744393544353041374331353939453632443446434142300A303144354639444138344641353330383742423738423036323639364437304231314537323642434231353531444334413333343846394532393736363737340A433734463039393345333434374339323645323033393043333342373539313638383433444344363446424345423646433032353546444343453042323038460A413933354432443841333936373638323834433232413836363842413344443335353842313645393444443643424333324231443136333233363844303941390A363643343243414332333131323641314343423945374635364333304143383730393633343536314232324533374142383537433831343438443542304631330A444344353644363839374633313538313743463844374535393242333643304346353137383444413233433244323933313143344638323531344443463237430A364239344141344235323430354136433239303845424542453345323946374336413735393835374545463732463244313131313446363935463546434442360A313646343546444136383238323331343344373433304436353231354337383941314337303238444239413335303946393734463430394641304239354537370A394632453930393637373736453346443937383041343245443336413333453937463644314134323945464337393944444235333938464238393533334434430A324536354337434435353632463346444537444241433939444331334241364341453535384344333842463633334436303144343231313646353037463344460A363441424645333546373435363431313339434442323434323945343539413045344637453335394530433538454139323841333146323934413245464138370A353537303244463934463334443430373145363542313939313431393333354346354436323339424632353945303839354234344635313134383542333041380A343730393035344633394435323531343934414145414145454530414331454446344443324635333237353031314545393931414139364444463443393933320A424233324643433231394446464144394137463741364343313730334545303633343031343743463535433443433044433542344633323638413838333146330A333931413742324131374531413833393741443644433430353443453943454238453531374639354135333635394141363439413936364143463341324541330A333031434542304435443730353332383532433437333336323334393144363632343838303146413642464330373345334133443046364130413234383339360A344141394345464630433038423834354142393246304336303130334133374139393843353631414245303142434541384438363145364541323134343831430A343043324337463333323445394441453131373643373732344345453243373046334132303333373746374431453842454345463937314532363336303238310A303941314336334635383935373838334235443734424646343245463438444543413933443846354231444644434232373133323934303043414535423930350A363044344643354536354134434442313543344343413734344443314634413733323637333342443939454237333344353938463735423141374237423941410A373633463536464646464539384538423936304335423934323233383439313142313633343232383132423035304441453944314531313231413545383830430A464437334235314139324536303641363836353143384338333931433132373139414333454236413736353242333638393833303032393934464443423737360A323535313332444539394633463442373533304137324334393530334643344435433837424531313631333738314643433939414135363731334643463036460A324438313936443936374636344437383930443743373632313630453234323446444243353736383032454146313337323439393042393035363631423833450A434234323039393642453730333242413432444542334434383844383036343030414234434543433039374245323339323246314132354233343231463441420A374639383831393535424442304144334644453936313933453531364343434634334146333035324538463034323846423343423441333644423539323543440A383531413337313544433839393841433045353536463136444237344331334430354530363246463930383946344145313233453142334236464145374145370A443731443431373433444543424544363032424637384234334146423938304238334244394241344234363532333141383031373632303045393642383541330A353132443731443642353839423541384334383935443945464531313832453131434330453741453735464243423633443639333333454230303143334238390A354538323444454434334339363330354230443034324536443539454146353635373734333732413339463542453231374138313541453835433536433937430A333437424537463539364345333937333837353933384245333130443030333344344337334344364339354137364344313741354538354333303141453438390A353943304142433238394344453635354543354435383644343833444136394135343636453935323732323744453946463936313437463735303235364345310A444636343431444243463233313736314344323336353433464433334638383544313035344135344637304544423142433636444243344230433543343136380A383137334143424235453546443046304535323335343034393846373944373031413933304533324546413537303031444532393932323344444242333333440A373130303336383142344138313642333742334535343441303736384146363438333239333035363830354635443538344334324234333445414541324337320A383641413930333235373542323839314645374242303845324236454635384237343146363435384534444446353446413235323743394630354438343933340A343938434231434132393444413645424438374134434639333546443545454435324542463141454545353732373444343232463942413232413244324633350A463231344632414445364230424346303131354232324535444334414339423746353438454332343141323841383430363337393639383839333232463235320A324644393537304545364241354638354634383036373032463245333044444145383845333445434146354636453439413737374431354441383744383130410A433346464538464644383645453036314641304336453738463334423446443336353533373235374531323441413230303731313130363242443030304331460A383335394131314442383630443243444138464643453344343136413545423131433942313634444341373430303745383143304442344530413736424238350A383143423834443446444436463039373838433838373746463944313139433036324543394442373144444242343033353744463330443031413746463930380A333839343738383630414236463032444633443734454431353338353843323934443244363044444636434136323238384534453738304638363134433737340A394339343036333235433831343941303344423536353743373941344438434233343543393037414433354542343330454630304530423937344333304342380A304438343532463444323434424141314533423238324644323945363241383233383443333631414443424432374636414645364238424434453934314432460A433135344245413832364539364439463446363743443232453345344138453730303832463043303835414630334438394537363445343637373039394435420A423131444245304537343942424341443631313037463632373345393044444138383341353946323845383432364445334233443338394632323141303541360A443642453434313533383846303937324431333946344332393837424442383030444131433433303641433734303138344342333637443730443841423744460A383533413139304444443532353032303041313537313531463736323545363332393645333235453243333532303636463632374433434344333245344236310A373044454333463334324345333643413639313634414331454542373043384244444435353041373136314436374135333136353036354241443542313038410A314535334233323235343143343443333039324642433638433731383730324333354236333334433741303235323234414637443043434143414533463738460A343045394134353635334242414632413544434135363044423542463931353441424232374534324532333134383530443231303431443638343946354133340A463043383137443535424432453033303241334639323341454337393246333443354139454534413238383338343945374343413737413545423643303738360A324433303930414338413831443830313942463936384545333132313033324337463542463635413534434533364334324232324143373645434537363836450A344538444542394146423544424335424433323738423537333639344142443637463646463831463634353044324536333335383339393537313332424332410A353444353034463535303539464139383445384244433844323431334442464643303035463439443939393633454641423935353241424334463134414444310A394336313341383639434535453234373037323335393335303832393741393632313330464631323143393632313938384235393039423844414131394145460A314144393446434436443337333234363830344241354632313731433543353642363536324131303035323435443846354239313246434433304530413336440A314637323031394130393339334644353236424333364146443745414336364431323041333931314432383444434145323031384638383341413830344343460A463034334232304231453939333039414244433432314231333644393638314543303930424631343443344231463532453232303041353837334644414442420A453533463134434442364635303739433130453242393631323842463838413439383743464433394341343042453445424530313734424138323745374442410A393537454641304233334635323839454646304531343439303139313832433743364131443532434641373639383942413432354639374443343841464535300A424236313338433742394639423545323836373241333742443846353843373839443038433842413633313844464434393541334133354346353036353230440A364639433143423245413543413943413743353731393542343130463734323843394235333835373436303943323742363143354444384436373137363545460A343931394633414131373734394438323736393430463038343634343035443839423544354346333835464631384243463636393034313541453837323832330A443844444646434343463539313930373637414544374232344630393532384543393634384133393845463930303738443131443643303342413230454542360A313334464436463135413541394143443338353839463735433143393430433036353044323433454135313436373133384136313242414645343039334233340A464544454646423831344531413045304243313538453836423334343238383843394137433632333639453637424145424337463433343637414539383338410A343643464330303138414242353733413738433237313836313536354341373436443446313636314339373339444446313532313630344245303139413531460A384645414137344444363237434632394537413336363445443445433438363534303344454337433930323934363941383839423944383042454135363236300A304242354542393832304139324638433836423938413336414239353645434539463543353632303731333036313545413734433230364245313738333230440A303142344446313435443644433531354338384343413333363036363237443730344538384631463742453039413937314341424531354237323442363242420A304331423139434439393232393533363342393430394338413739313633333039303545373242424143303532353236453443313638434538383543384131310A454545433630334143373943364445333036354443433834453244344537383745394243453336313241433542363345343044303139313641434441343045320A373939304439423234323133383135363836413737383839463332433744334241344439453731344639333645323746443944324531413130444236383437350A313646393138353245314641343442333342323439433631354634413442433933313038304542353830453842374234384543413130433342394644323439380A443834424143344436343935393537423441423933433335343741374242353832393737353134304645303934373334463234433432324232433838454443310A364243453442323838344644443332393831333039323934393934384245394633324538303446394443324436423032433039363543444330443931444631410A343837414242424245324532383936384230353143344541414334394432454439433635333837374235434543414634374335433139333530313045373230430A423043463633383138393738393644324239334245333944393738313143464536454238413934304143383835354642344532443532374642463830443836420A444336304442323638454145343435304237363033353642313633463444373246414632443739454338463444344246334438343944323745424442324232360A423742354242314136393837374543324537393044304536433932333344463844444641444430333943303030423033343946323337314645373830374638330A383241443944314537453434364537334642353936463242333845363438443232453731463046353745393036414533463135463036324341343831344245460A413346434145444445383442344443453830323533393434364343433736333130303132463635453043334537454144333932344135423443323044343431390A393644363731433538324136463545353738343045424437373036454538394638323331463433414235364139333943454130384146413133334642444335370A434430393242333639343041324432383444323837424633414338333444394237373834394333373844423031463633463446314144303642363737413734410A433438453334313235394643444431453844393332383430464341333732373046434241443938463834363634393933393031464232393639433439393641300A443332364434373842373742344543463142334234344439453546373839423738373741444642443046354246304438364530444337423544363833354331410A423238353135383843333637454239314644453046333230464634314534354636303730353332433545423035433446453838453936354241413941323535410A313235333833354133303736383037313932313939363139364339373844393432313631413034463938303333374132393542444338363941434538363634350A304434393239324339463532463639384336444643353737413742453736383036373942353237333735323144443738384338433233453541363230463446440A344244443634313731354135304235343343413532373846464143343043444645343939453234424242443538423342304133304132313746413138344143300A344446433144443138383030423745343045313634303734333346433941323136444337414643453143354638443534433445383238443631443739333738330A374446383942363243364532314142383144464138303242454636363636444337303437393730413846374530333237343532353332343935394234363636310A464138414337354446413445444433384442353731304542464530303738303933454134374430444135323245323339354538464637393738343846363137350A423932303536303734363946443342304630433332313038454638443444383844394645354234464538444330314438463632324543464533464137433332420A353441353237383934314145413646343730333131333843324444434431413831344530464139333139463933463631423934394230333939444534313146430A344234314641333739313644363932353534303332333330314334343133363735454239423735413237434545314537423735413243333332443746304132440A313341434142314432414238413031413438434137394530323543334435343734334133423043464131343632354642463237344633374636343843304632420A303836314342453841393832374233463945394546304631393941313334453243353345384538323341413331363942333831333746303236353238373543450A424637463737444436363737443832343845363943314135384139363542374242303033443746453741343434383646413044454641463246393535323835350A334431373130303934414131303641414438373644354441464144323738373131333230394334443646443035363739373932454531453431383241434343430A393545424542423933303331414131464145453643303946314237323037323836373531463434464437334642453542303839453142394139374645463345320A414538393239423938443335373336464432434342423045333641454236363433433238334136314236453836374438303033353437443336453044413531450A323135373039464636393332324434324338393341333041433636374239413241453642394531414646343441453131344530343137343341363733444445460A323534353745373838343543433546423145464130464133393942363246344435434333324235343435423141353342353145373843353143343843333734420A413937344636303344463445304338424538314335304631434639443844423944424242463442464531414538353539373331323939373846373037433837340A363242363735304235374545454631383030343534393844394446464438364146334142354245313231413731353741343236353446314645393336383644370A313733384645393535464437433637463131333233453035394243443043344339423239323243383233333130343032423843414646324143324642373836380A413746433631453641443245354242383136324532443435463745463642424544443941354133413734424534454230373539414444444137443337463242450A313831313233333245413236303135333833343831324232443032323133424634313743363637323237454631343244303236323232333732323932443338330A464545324342453935363630344339423932344445443931384342353042373145394141393032313139423333373237343439374630324230354433393037440A414537364546423336383738303835413538333334453446454534393146443339444232383544374545314134433631323442383231344346344230453542410A444236453536463733374139423434423242353042384435344135374630463842363043354546344146313543333436323934304546323236353441423430350A333545343230303338304237423242323832393831304631453445363442463146413435383939374131393537353732384431353030393531354334323037310A413634394432463337423137374644323445433231333933444136303034464533324639333335333944443831313232303544324631454337343742434143390A374531324342433442353338414631463035424643423044344443313546433841354139423936314642333245323843453932303633393734423941444435420A314131383446453834383641314537444632444639323146413835304545443832373933424434414232424646433636413945394336314332394632333334350A434134324234443546373243444531374534354635363230364441393135323339443934463334353134333946383037394138383945394433313341414438430A313146454542443139333432413743304646343741423535353031303931453435414230434345344541453639333345463933343245423237353246424441300A433642373936373132343436434437353746383746393144423641373238393044413739304338433834303435303332354538323134383642354333394336390A393343313546323039434641373541354530444145413935414231304139453744323337343735303442384243303832443734434343354644394133463242340A394334454645454143414135443835433239383635304438303137444345444444443137313043443546424138303439453144364239434432353237313343390A453844383538323035464436413937433737303246423631303138304238383836353546303646334444363334353735463438314333383833353042423533350A463942333934373936423032353839373633423932364234303934354242343133423131354630363436453834394139433631304232373543383139323430380A324545444443363731414346314246433145424238443139344144453345394434363035304130443737353741344243374339333043434139434237424342310A454441314532414245413739383439433743333538414535433138324638384344383541463542343133343439314630344135463442413942384239303244330A443632433935454234413236443534343730433539314543363234394243464433464141323930464541443434363139323739353330393041464243394532320A424438394645363233343646313739343141314143354637343946353438454237313230353345303543354145454537333334333938444538344435443431410A344236344543434546383932363044333434344641373235303743423831443644364139334332344242363741453133444644454144463034354346303944300A323244383235343342334132363537373641313543323630313544334432463943353544434236323637443432464530354334424338333132453541443332440A454445413238354345384341304345363341414443373435343733413837343032463541383941433144333638384233354237413730394442334333353833370A383734444342434331424239414433313042444638463832304635433930363344344535443935384645394641333738314136304431453236444533333432340A333242423345303646333536424433423133413544354446374135454344324133424531344433413843354238434636344544373735303531463238314333420A433846423737384631313135433338423638433937453538394138354638414442423430464535433643314443303836463233464346443345374135443936320A363342344642413631424238424134354334433838303646353130363538344332354336463035363433344134333331463435313143363739303541354638310A414437384639434232463041344646333243314644423135444543443141324335303232333046434439393943414132413438314542304439373337354545410A443338433543323130333742343545384430434331393733373330424130314135413744434434373734323041444330303830394335433741423334453741320A344239423630344331453345443939444346383938363443434141463033313530313739383139444532433933463438354441414435434239434642303837300A344443334241303443454135313342424339364134394338383737393143423746383737373531394538413937384132383239353538344631423131373835420A393031463939413134363630343445423935304638313737363737383341443539443042464142324238334334364139313938373337453145464245433234360A413834434530333745443438443645303632443732434330344441434544413933394245373346334541464331353732443245353646463233443344323141380A423236373234423233343943454234384145313342424438444336393835313739324246463037424232463546394238324243423031393032443745334331460A413443423744343137313546323233313443374537373638463742424443374544424336454234363343454432373345393439463931344341383635344235310A334542413544333442434532344435443931314642393942413245334434424538304443323442443943443537443633344332374239463243424646313543380A353241393838373932354330363932383535443743363132413035463441424333343736333142324430413044324641454430453334454241424634443132330A4338464533454139363230353741323337450A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A2525456E64466F6E74200A2525426567696E466F6E743A2050617A6F4D6174680A252150532D41646F6265466F6E742D312E303A2050617A6F4D617468203030312E3030330A25254372656174696F6E446174653A20467269204D61792031372031313A31373A323820323030320A2525564D75736167653A20313230303030203135303030300A3131206469637420626567696E0A2F466F6E74496E666F20313420646963742064757020626567696E0A2F76657273696F6E20283030312E3030332920726561646F6E6C79206465660A2F436F70797269676874202828632920446965676F20507567612C20323030302C20323030322E2920726561646F6E6C79206465660A2F4E6F746963652028436F707972696768742028632920446965676F20507567612C20323030302C20323030322E20446973747269627574656420756E6465722074686520474E552047656E6572616C205075626C6963204C6963656E73652028687474703A2F2F7777772E676E752E6F72672F636F70796C6566742F67706C2E747874292E2041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E742070726F6772616D20696E206120506F7374536372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E74207468617420636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C657373206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E2920726561646F6E6C79206465660A2F46756C6C4E616D65202850617A6F204D6174682920726561646F6E6C79206465660A2F46616D696C794E616D65202850617A6F4D6174682920726561646F6E6C79206465660A2F4974616C6963416E676C652030206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A2F5765696768742028526567756C61722920726561646F6E6C79206465660A656E6420726561646F6E6C79206465660A2F466F6E744E616D65202F50617A6F4D617468206465660A2F456E636F64696E67203235362061727261790A30203120323535207B3120696E6465782065786368202F2E6E6F74646566207075747D20666F720A647570203731202F47616D6D61207075740A726561646F6E6C79206465660A2F5061696E74547970652030206465660A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E30303130302030203020302E3030313030203020305D20726561646F6E6C79206465660A2F466F6E7442426F78207B2D3430202D32383320383738203934367D20726561646F6E6C79206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364139383942393937344230313739464336434334343542434637433343333333333137333233324533464442464634333934390A314442383636433339303838433230334443323246444337353835383438363045433742423637464441323843433632303832343930363045313846414233320A323034373739423543303343303439334242424243393543463032363932434334444541413844324541393042354332453634333734453932424342383530310A343239423846414534413736433043364237364436464637434639413744354544464243413045393539353431433539424430354237444534334432354435330A464333444441364546304332373433393738413644303345313943434544344131314632454134424343333131304245384238443945323737323336313936390A433139323538454641464443323736434231414445393230384139343141333644313846394642314333334445463736414133313544443846364643313346360A393536444631344630424330343346433531343333454635303641383639443444433446344343383535313831334244344642333241353439414341363345300A353444393644323839394446314339314330444638303042453342413331383345443938353530413142364538333431303138453539353844364645353544390A333146313332303541384437453845384432373244353732464134353545344637394134323245323342463434343644443245303742303734463330443230420A374233323746433635324246343243413639423341463445423445444343344443334644443946364539373536364642393634434234393431423134313836460A393041434631314542393645463544424532334545353931343731433643424231453546454245443331423632333343463035373934354339323845454634410A424130304334363145324244303245363834354641424632343639383632433138363841433637453938323039343444463735303733353238334545393344420A433541433930374634444230453346464141343837394635373242384133314531343238323130343239303542434537434444323035383142343536364445460A364337333038313838434132343044443935333337384145313743384631343636373042393943453738364337324432344435333841393836343234414331340A463936313644304446393744393135433845323746324639394333424330463937413746353844304441393630413532343144423434434343334141443345420A423333463042414641334133303744334131324435383645424436393444363636444543324445354633333631393246304643384341313246323837334139370A334135323333444238373035344142433734453039374539313944384146464535304534393633363546334646393943413231433045373931343235334631320A393745313139373444423632303146303139383746303832313738454439303837364539383144413242433231453841334531424330364236344330343936420A363136383230324244463837374545303632374233413432323337344534423546314145354642343139454146343031323335344545434643304538363634370A463334313638433039323234353133363037424234354642424534353138344442453939443632373641393941373945354637324130433232424336333046320A314338303235384246434235434639353841413735453638443941324237424145393542434241424245413843444436443137334138423238323941393141380A323032313436423642444241313237353634373244383338343535383042383937423036373044424135303933444534424646323431353536323738383637420A464134424438463642313642413344423038373734343733314631423335344639303543453145433237373730304531374233383733373134464635383644380A443838303545383242454546464644374531413542424338303634464341363837334146343936334531414542343535364539453530444543313545364338360A394636463438334432334542423535363738383231443433463638423537304230433232353432333944363434413230353934304346434243354438393341370A433631383043393339333237424439334238444441463737303333354439323535434442364642453241464637344341414538443143423133413132464134460A444245394543414435413337344339343846433130454638303439303434413442453130394341323142363130443735343533443735443631384546383144420A424244334641344430323542413532453930363245453335373835354139343738313045354144323545414346384231323542304235413334424442424445410A433441413245363345434430354644384444383335303344313038433045334136443245303244363643343533314532304444454531373439344643363038390A353839453730313332453746374638353645363239463838383436314533423346463938373837424336463746343330323833343530364434373041314630440A384344354242363532364645334145413330443444454141324138324132303945323434384337343941384242424333313746373342343741313338383241350A343531464144444639373834433946343745354538373143363736463239323344453334413743303541464543433837383638443437354335463830313542300A354342423431463134373936463145444536303431414241393031384133363336344345393141413032453134383046423445383044304246383245383139430A393235323534383330444131434230393941363538424535373930303638464646333146393235393546453536443433393431373435354335444643364242460A373433324534383736464233433638353630393143454630303030414331323436304334423046393544303634373334463845313330353132444636313030300A313642444641344137333730324332303343304643423538444632453331424141324531443343313144374345374532353032313841443331303238333830350A343143313330383234424535363533374331324133423845464137354345354642354539303041304645304336304445463239373742433145304331353737430A383036354330303831353945334338453336423736353335434530424432314534364632354337363538443033373042324446423139414444453838304433360A443230393043343931413632313044324436454230454637323235343741463234334130394146383746444141454333444332424636384238413439453445370A383330323642463335383031444335394531313432464342453739334538313239414333363330323031363637444531443933313936413533463635443446380A344443384538313843324533344437364330423735464241344343334542354137333133363846333432443034423241443132324335444336304333373138380A373935324144354436453545313234413930433734304330363939453439353442454438453246463646423543463039423237463237423642363636323045380A343645383434353230383344373845303435433545344133324246373434383931423635464342383443383346464538424231304641394239463532303842460A393542363741344238334437414441383746433433393846443531364235433642373141393743363433434130413734304645354536423442343130303541320A423532353333384241464630383736313145463042423441393636434241384236453934464336383437374545413037323944434345314445434431423343460A413033343343453734464334353539314445384431344332313538353345353539314242423533444231374443303245363041363844363138444635384136340A323930343335433530393336314337433732443045343737344444373144423536344236364531443839433733423636363738304536353233454441303033390A304146413831423042333536363838434546393537424435344344353237343935353036443134434644424143374331333345464437444239464433463634380A313741354146413045394432443130390A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A2525456E64466F6E74200A2525426567696E466F6E743A20434D535931300A252150532D41646F6265466F6E742D312E303A20434D53593130203030332E3030320A25255469746C653A20434D535931300A2556657273696F6E3A203030332E3030320A25254372656174696F6E446174653A204D6F6E204A756C2031332031363A31373A303020323030390A252543726561746F723A204461766964204D2E204A6F6E65730A25436F707972696768743A20436F707972696768742028632920313939372C203230303920416D65726963616E204D617468656D61746963616C20536F63696574790A25436F707972696768743A20283C687474703A2F2F7777772E616D732E6F72673E292C207769746820526573657276656420466F6E74204E616D6520434D535931302E0A25205468697320466F6E7420536F667477617265206973206C6963656E73656420756E646572207468652053494C204F70656E20466F6E74204C6963656E73652C2056657273696F6E20312E312E0A252054686973206C6963656E736520697320696E20746865206163636F6D70616E79696E672066696C65204F464C2E7478742C20616E6420697320616C736F0A2520617661696C61626C6520776974682061204641512061743A20687474703A2F2F736372697074732E73696C2E6F72672F4F464C2E0A2525456E64436F6D6D656E74730A466F6E744469726563746F72792F434D53593130206B6E6F776E7B2F434D535931302066696E64666F6E74206475702F556E697175654944206B6E6F776E7B6475700A2F556E69717565494420676574203530393636353120657120657863682F466F6E745479706520676574203120657120616E647D7B706F702066616C73657D6966656C73650A7B7361766520747275657D7B66616C73657D6966656C73657D7B66616C73657D6966656C73650A3131206469637420626567696E0A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E3030312030203020302E30303120302030205D726561646F6E6C79206465660A2F466F6E744E616D65202F434D53593130206465660A2F466F6E7442426F78207B2D3239202D393630203131313620373735207D726561646F6E6C79206465660A2F5061696E74547970652030206465660A2F466F6E74496E666F203920646963742064757020626567696E0A2F76657273696F6E20283030332E3030322920726561646F6E6C79206465660A2F4E6F746963652028436F70797269676874205C303530635C30353120313939372C203230303920416D65726963616E204D617468656D61746963616C20536F6369657479205C3035303C687474703A2F2F7777772E616D732E6F72673E5C3035312C207769746820526573657276656420466F6E74204E616D6520434D535931302E2920726561646F6E6C79206465660A2F46756C6C4E616D652028434D535931302920726561646F6E6C79206465660A2F46616D696C794E616D652028436F6D7075746572204D6F6465726E2920726561646F6E6C79206465660A2F57656967687420284D656469756D2920726561646F6E6C79206465660A2F4974616C6963416E676C65202D31342E3034206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A656E6420726561646F6E6C79206465660A2F456E636F64696E67203235362061727261790A30203120323535207B3120696E6465782065786368202F2E6E6F74646566207075747D20666F720A6475702030202F6D696E7573207075740A6475702031202F706572696F6463656E7465726564207075740A647570203832202F52207075740A726561646F6E6C79206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364142323834424346384230343131423737324445354344303644464531424538393930353943353838333537343236443741300A374236383443303739413437443237313432363036344144313843423937353044384139383644314436374331423241454546384345373835434331394338310A444539363438394637343030343543354533343246303244413143394639463343313637363531453634364631413637434633373937383945333131454639310A353131443046363035423034354232373933353744364643383533374332333345374145453641344644424537334537354133394542323036443230413646360A313032313936314237343844343139454245454230323842353932313234453137344341353935433130384531323732354239383735353434393535434646440A303238423639384546373432424338433139463937394533354238453939434144444444433839434336433539373333463241323442433341463336414438360A313331393134374134413231394543423932443044394636323238423531413937433239353437303030464343384135383142453534334437334631464544340A334430384335333639333133383030334330314531443231364231383531373945313835364532413035414136433636414142423638423745343430393032310A393141413944384534433546424244413535463142423642433637394541424130364245393739354442393230413633343343453933344230344437354446320A453043333042384644324534373546453044363644344141363538323138363443374444364143393933394130343039344545413833324541443333444237410A313145453844353935464230453534334430453830443331443538344239373837394233433742344138354343363335384134313334324437304144304239370A433134313233343231464538413744313331464230443033393030423339324644413041424146433235453934364432323531463135304543353935453835370A443137414534323444423736423433313336363038364633373742324130454546443339303945334641333545353138383646433331383938394331454632300A423646353939304631443339433232313237463041343742433834363146334146444638374439424441344236433144314346443735313346314533433344330A393342454637363441413833323331363334334639464538363941373230453441413837414537364641383741383333424243353839324445303542383637460A313046413232354532333342434641394242353146343641364446323241444345414343303143334344314635344339414546413235453932454641433030440A374532424134323743323534383342413432413139394634443245343344464345373941373135364637343137414346373845343146434139314536433945460A423933333435304438353142373341364142364145413745453443373130434235433134323730443136373446413333343638363635333739334643423331420A343931453837304433433242433635344432433144453436334543394241323944373337314141313037383830304546393344334636363236334132454242420A463537323336393742463734343842443044324533303135343442454346343937464434373542383544464546353241463446384638424534343543414245360A303139333138383036443130433539353231353746463846383238364331454537303135343543384636304546413835344541453636383335413230343641360A393135443339354631453033363645464530433033393135383346453030314646313644383241324532444135463537373534413243364636393330364533360A333536454346384546433346313138384144364643443234323745303538304339374135423639423445304530394238354545444531343246354144443246300A354445353144364442373242313237343132413044353731303643313943413439333034384134463831353132394142453736374435313731354231353135440A394332313036374342354243383837343142373239384338334541453336413836364446413837443839383146313739423143333132393246353642424236340A334334333037373934363841414630374338413842343933344531453737354645334633353138364244314641364545333638394331433735303637384146310A464246394232333139354131323443354339393146453637304143304338364644333944324230374239413331394537344546443439384234353832303235320A373230454344463732393446374230423133374345423836443333424643454238363036393835413332363046443636394534363143384245393432313643350A443433344644383835344634344545363645354132383941394639453332424333364146363435443533463936363532363032424145443431384338443732360A424430344131423436313735353146453444454635343038334434313446374443453030344536424232444339433245463743453233324232353442413243350A374443424433364332303732454434364646373131463132314137303145323238344246314237313842333136343338324238463435334436384641303337370A444645313036353033423834303144344442383746353430324133414339413434324641303630423036313041393532344435333043373135374332364235360A414339373046434331443536353546464646413339323436453634323043463937443038414446423742303538323236373942443430433633384444463045370A413937424645383931384236313141313435414339363543323033463134323838313246394433343041463439394233413931354232324245373938353934450A304635323031303946433831453435323138304145343542313730464639393943354643323736314336434543443837343241354136464339374631363734330A414434454643433635373241364433463345344533333043354342324646364645413438413542363444443344424539343342443939313844344131384531380A434243463539384145464242364142334344324342433942464436303939323732463635343346334535333245304532314536313442443238383042313032330A304143323334434237303538323742463031364442383445303045384332353546444546413031303141383432393239353430423742344141384130383942440A354546463035423732333536423642433337323738313738323342354344424231423936333130333030304437463241344532413134373246433345363134420A354342434236443644373834303233313733444546454246413846394544383745433141304139454539384341353943464339363443463934334443363833460A453945303044413731384334343235413730354136394439393938384543364631353235323543373930393132433245343641323338314135363934323441420A353444463437393842433244374537413336314537393931363431443442373536434532413746463441323834383932373039324335394332433442383830390A453133414238344642364231313145363830443746423946324646433243354336364230423530314534343437433245343643313045324636313234343736460A413134304334303443464532444339453031393942463631453033354345423438314434333831333941393633303933344535343144323631464644323930360A344341443939453230363535464137343641464238314544424235363031463546443642314436383332413031443538354532433535303533463641373337380A344441414343414337363038444244414441414537333244363642334537463837453739373536333337433141393631453533413436353142453743373746340A303338423839433837463635304335344132413930454237463144353235424233353346333333313835353145453844383441364138334337313845413541340A423241433046373330364231453039353831394238373031354139304341334544373339423039303631373832433238434442333642413442443545353330380A354342423730343134453431313231393344414334413146413330393936333237323330443145303231463343443831313545313244323339443933464644430A423634353931304542323945343044383330453742414632444232353546443743344537373635353742423338313537393137443939334541433234353833370A413342353135313437303433353734313537423833343244383239433732323843434541383433414243383944313738354139363732413539323346433443440A324633464632374536464341434638344532443331333643413243304644334546314545373335344344303443333842354642383734353533363436454432440A434544463745333632454144443034423138303531463230413846423044453138453135323338354239443035463938413341374546313737383234453234360A343535414245363945324637303045423738313835434346433037453342344336464133303131313235323844393737333637443330443044354435394544450A464145423730364444433937304139453239363233364337323542324235354230394239433333364238453233434241354642383639324435364633334230330A313632393445354643374641413432453936333935413537434535314341384444443737343432463134324532453537364237373833373346423331433831430A313638343042423432324341383237453330413831383239363438424446314341333637303045413332414438383844303937433146453041303542324439460A343833414545343032363944463039414630443141443344463830433435444443353943324130334642423636314337394238373835333733374336443335320A363736323642363537333231423136313938444244364442393841303932463137383738414534363938313231453130303645353344364639423041334245320A334642363838323845463835344130434442414136384233374142434136414434413344383039414146304241423136393741383146453539433938433437320A314533334344373041373541323243323439444431314437364332353735454433333730413235383932413136443246443536394344413730433133303737300A393346343933433744343744364639413534323441374135343242414437323642464333414232323544434542424536414334424530303646384337433045410A303531343234423038333035424632443935314142323938364141464541303445303738434137394233393935383542464630463141444345443032453135420A383736354542364246364138453444303930314546463243334141313034393234454144393633374133354438373745304335314133433337444137384344340A383634334338434536444344444533463131364136433233393046393438453533373142454235414432453837423431433546303146423543313936433433360A364532353641383844303832453346343645344546464246363035423245464631453944394144354545344444433332334131333743443934353145444545300A303646374438323839384437314641463233363243304643463146373236463937463832303330354237434532303732384341303843363335373530383341370A383442413238423744453242393136343332343735353130453237344331324646443136363041373137463531444143464446304131303244383532323445300A443644423630374242373235363941424238413742433641313033353443424243303137333245464533354237323036324446323639434232354541334445360A444336303342303443393043353931324432433338443741354143444344443346364631313644383834463044384335323846363944354434374241323044420A304139453538354337443843433343333234464538413144463135303237394637453846423433424442373230453632344535453939313830333243303243440A383032303633364145354333384441323438344237463442333431363345304430413536314234334238304539373734364443303543383731414236323045430A433544343731303145434544344137453235463239313138344245463842383030323441413742423435364331423833413930373635324233333144454133340A373534323236433339433638383945424545464441443038314530314546384645343737353139383736363738333646444534433842423841334644343430360A314536343342344541333742443337303733344431413244423137433246344237344234454437353039384234333336303146373541383843394133374130350A434342313537454636453332303233424641333339373346334536353541344435383238393133363939364643464136314545414244373037393142363532330A314646354445373141423841313730333839323331313841354545443844353943344335384432343646464139424232363437323334364234304338373431460A313533443139434146463230444432413836433644423839313534413633304642313736313932394643334630343438454532463038394331433935334530320A393035424138444537354431303141393832413631313035364334423233373539364331303935314444393842414238333842373432443343463744453731380A363137444237324535323638353833323233453337453032394431433846443346314432313639303135314637364237364335324337323543413133354341320A383636363535334538363343453138384246433942393941463536414332444235424645424542313246423536334430303234344542383945343738363537410A393841463245313232334331414243323541343530304538313139423836454233433236423841324633353035413345353631304638394237433334453237380A353346413041353441374634364438344133354546454333364145363630413945334333374545333836343130363730324445354146364334354142463634420A383838413441353133323331333843453737444239333535373646453642343832344236393432444638303632353039384345314235423332423233344631440A303532413944363033393639373131384139443739333739333737354438373239443835373441324537344437313039433742374532334243354532453837410A434138453031393230333935324134383932353434453141443344344544443232393731363131333538414232333045394132414244463030413238383530310A413031423637433432423333463642373843333935363244423530463436363342393232443942453044384131353033313141453434423833433146313239460A303733333733323345394132333231314545353845313630343345313237433646393537343031393137394635363335363438413031313236363637374235360A423544303230314134453134373042393532413135373942353741423233323943443443363135333935303233433635334637383444333642354545333637320A313044313931463239454135303843453834373633434134434537433243353232394533384532343132353541354341424344364337434241454439303141320A434135334235453234313131393231434444463833353738443333443436334437304544414341304534373044384635393233303346423642464436384234440A334633424532443743354543384242463130433930313131413333453230354632363439423536453834343346364641413643373231433636353735414531320A443443343046314634364346394539444136373541423544353834304439333837383043443945344144363733364543424542364134333937363133353836460A383439423531303438414335463934303545303345313435343041354535353832463631434443444235374544444639354138433637303546343333454531360A363438463039384330334445443841324144393441453344453230324436323942393432324142423033313331384434384632433835463944424641313742450A383437303841413342364339463831463435303846374135434237423636343641423837323245434638313738373742373744343733463537373535364441410A324241304142414346434635444541373439384334373332384538373330313941393536464242323530464439443838383544323144333638464137304342440A323730394432444134344545374139383639393633454142343837383935343139303644453439464145373835454345314631384132324337453745443230340A393736383839364237384539454237413242443645454331423236303833393430363536454344363839443932393432434338414630354342463832414544300A423435413744463444443741413635323646423539373332323536304239454433303837413635423545454631333731433332384130323134313142464533420A443942353038384232463141414533383146464544353244324431453032434430444137383638334533423036313731434245393442453937363030303544370A313335383933443743433244423039374636414336363444393539344346314336353046383444413830443245444530343830324442413333434533444146450A454237413337453841454641344644413632353246463231453836373344443938453637313234443544424337424143463336314535373037374237313933390A433144314642393233453445333543303735434431424342453045383044414541313332304435354234334541423435443942323643333636423237383738320A373531394644433438324439383833394246304446324537433341353641314331413346433045353741373543413431344636353336433146453845423741300A344144464545334245444130463533424538434635463634323330373834413739373133334538434434364243434233424633384243453338413733434345320A394530373341444537393246373132383233314444443146363345363135364144423236303943323030383337433245384132443933443241374243393137310A303530433730394137314534344533324231423033433932454235434631443342414231433338453032374443344544394145443633334439384344373438360A334637373341434638414533333236333143463241424536443630363630373539334645383632414445333138303339363445334634444333434533413237310A433736424444393543383743444233423837424332364643374131364435363745454336324536464630443437314234383533444238413934443443414346380A383433383234463831383038334631304538384435324643343235334538323033323932434234304631343134414537453531444437333437303037433334320A434437304538453946324432413133443731323133423834314444454141423230384144394541363434353931433135444542303834313635463944463234420A423931443342424545433245333445333845463136413043334630303730304137424443424246454432454330443039363031414436353338323838444235300A333437384230353142354531364236303441303334314645363231413538373138443936304436393944334641443238343331304443463534454231333137350A313941373541353339454539384538303441454132343638394433353430463046313239353141334330314641434345394137424146344430444146413934360A464636354134443241344333393936393630373237324336383836463434453930414245323743413341314631324132394439423332453630453845333446300A313743354645343344304536394139394139323244393839303942324242434431343545353941354537463534323642333938384637334230394135323546360A384244343931353636334331333031333233313830453736304245383143423837344230323046444133414536333334304534323631453446334534393439420A434330393636424443343432363139304245394635443737463736413732414439323536363245354645314345463943434142363846304244333344413030330A463131454239314143343530324642443641453438444130463944303743333542393642313033453337394238413833413035464537323846313731363139340A314636353046373542454241444232453338313033383846334532444337423139463142413945333239323546324644394631394634453837303146334534450A343036393132354437433430313134343734303639314537413436303032314134374231453237393937464331444441424543354244304545304232303139340A324435373943374436373237414131323430383332343242444134364438453131364532373531433546323938383531413632423630414542453832413932390A394239463234393242413335363930443145464431363231354238454631344537413338303342393343323846413431443937314230354236414633423539330A453734414431453638413546434531324138364536334237384246454138374433393439464431363446313232373741343638384245393633353637393143420A383637314334393336353630384633454445434331303933323141463932423443323943414630373344413341374437334539313344304438334641433545420A424438383444344336383630353634303444414141443646383246393446383033464131464230444438393038443144463038464238374138424238333032370A303444453043424231433646454236423531374642443743463036353132303037394536303843453431383933433242433936413334373832364343444644350A433639453136313231374632313237413539463141364632323033373634313631334631393146323244354234434443424343324545353631353632333430340A414241374245364335464534373534383136313542324143314132343132453534363838444432314534344343394146354631364536333441464341333839430A344437343042374235314242313431424641443130383045374337323643313630364132384544343932453642444539463830304546414344313531333930390A383445393843454236413042374132413646334531443144434333423235353237393545303933323637334535394543433536444444333741314435324241360A433346304539303539373841423536383934314131363346344345334141423543354231364638363031364543343742413646334637414141413737433342360A303943384333414244423644353134413736454344333743333741413838423538363036333042333430364234393446373732353937353539364638343737370A443943463438363836454339433544424343314437383531334635393143374331304142394431353342334434313432364237424636363842304430343530330A353642434236383632353834363243314443363130393537323442394633333132333136323632464437433141454336453534444537453541374244384546460A303335323939423846443841344137423046353134303446344137363046344438423443304642374133324641344232333833414236453943373846444544420A464536413537383844333841363730314231323336333043324136443832304136383431363646424243383344423137303639343934464244343131423333330A434233374532343931433542443033354133333836374136443341334434323043433331414346343341413037313832434141453637453430454336333636330A423637384637314434433645304543334130414146393034434433414136364530444535453343444530343945393432343942333941314330364533434539410A463937344232343834424232434441313432383242393531314535303542334338394639433830323231384145343044314137353431333335433537333644440A434435363544344239463443433738463341333933373337454442344642443044413239394532314343464542413534373845454630313346303535324138420A304242313146463436434344423738344538424443463733304131363336334536363537323034394534324336393538383645414234324139414439303934430A423633354446344235423942443942394145383435354446413345454643373736353331393046394138423145393342373238314332413231454137444441390A333334383437343542444637453344443633433741433636433238364339413541363938413545344437413931373130423746463934334642323336303942360A344234343246383343423739353738384641423545394346334637354435343837444132363137304534353631433739343143393130423038384333423836440A463834344230463334304346383237383641334643463334373034383436334542443230303632383141383136363237303635444441364344344433414335450A323032344243393643374438393633383142424235363739353145374131463239443445393533353132393842303030443239453546334430343438434235410A434644414531424144453934303342393033373143334130374432303839343841464130323241363943353139343334423638313330383641444635313844350A383845304239323037324134344241314233454242363330413133423741423930393932453835423644363733363143384439364633453044383236464633370A313742363745344231454237424144464439384437463446443137424543453734304144463133433134314542463041393143423130354441424233324645300A353530383644353641304433353838343144313546443334394536423935353132453445444634433433303231364646383543324142453939354534423430410A413630343443433838323041443838354330374530353242334639314332453941314431363342464644323130463742453935423932334532353030444235300A323037353130364442353431433236374244343530423235423637304345383042434430363844344442464632443832363334313735423631464244334243330A343036313331463434433744364631384433373544314632323730383239444446323944433134444242353841333041433139333234354431384445393146380A414238384142353438443831333836303542423541353030373332393535333445333134333636453236363635414537303438324238393045343130314436420A363045344633423337414243413133343644414145384644423844443943383332454646334537334241343730453242414345374238353135434234333338380A433237414639394646393332323137354346384434393437453642333834364146463531363345393732313536383437463538413636363630454338413341360A354642343743394636333742344342423443373342364130383042304346364644314539363635453932303332353430353730464643433734374336374335300A383232383131414144433430344243374543443136373345384141364333413246314438324633393433304235384332393134354532463142363739433436450A393445444337313138383346314534454138343131374135343735374538383935413430343031413236453134333742333941324636354341414444364530320A443731464138414637343533363638444336313346333236413333343446373441443741433637353639414633393933383535303041424441354544443342410A333433434335454444344235353834363736323638353045373532423939353946454631343534453533453741334443424332323535414438463641423446450A383934343535313138413631433538383430434236384139323541434341443735434541434538363344383036393136323238463036313431393141314344350A444339424145323536303138363135414133373235383334353139343439423041383842344633393636353445373430393943303037393330414442313332370A444431313942463739394645334230423232334531454441303446453244413741314338373931343345314333334236433633343446344241303333414436460A384538384333334445463139373737393642343534424142323439344339333046343932413531384538313938433730384137354646454638433439433332340A413731384142353942383839444544353231323239453734314646453533463938454245383842303430354144353233323534464433464134424245393644410A444131433237433143393739413044443445363143334231463443344445303145343246314334343335454543464330324439373939344243384146353237300A453743423134353844373645443032323943354646423441323342383731363031384639303530393730383935443531373232434445384632454133443934370A444646333734443834393135443543354431363436334136464643443037394431454434313643343334374246383331464630433441444642363132393544430A344435373835424230383532424634373243464339374543313734343931434146393631414239303632394630353545373544414136443938393845383635330A354243463337393831364341453436464541363245374245384539423935333436364535313832383137324334444244304531424241443143453238423542310A303242334533363430334245383042343941343734343641363637374643454434333846303144363045423130463437384338393532384641333337443044380A383844334643313233433037363530374143444146373833413941364532344544373342463234423645304631314331334535333244453546373045423032410A363036353146433245323633303032443339383642374232304343324141303833333042394643324532363736354344353232363639363941383645453330450A373145304234314236433143364441343233443341374531353533443246414632364546343044433138333039393332324433363245343936353639354335320A394643334535424437414244373433434443423731374442313033373241373232413339434535334641424234353445414445323137394334434246433031360A413845383933433238454635343943413136393243384438414446433437314443434445323636464234453937413146333033353830314633463033344434340A413835334630423332433345354142383444353631384232304132333638453643434632344536363335414333364635393132464445363634383536443632450A323833393645303439464238323843383033463038343738414431333430373646433534444342443632464439314338384144374345304446423842344545330A343032423231344341303141463438353134413842333832314131364638413445443232453535384141443135463141394141374231343241443337363536340A354633344145434332313843333844453331393543383134324345383831433143423745413338313234433734463443424436353645414536393746343835450A344538373042433743343535413541303732463041413135433230453643323036373135463746424644314235453237463330304637333743343239443835460A384431393543464539433841364234433039444636303237344331413845443441353739324236433741364346323430314338453039363531424143353236320A394543303145364646354233343036434333324144324631333742303335333330363636373445364634324137463836303239434445363232334242303237460A313841443544364335424537324635344533454641433445373644374445333046344443383332363545433533353836343544434439394539394442333445360A373938444245333733464533354430453141313245334233423735303043414237333545374638353233454645333236414533384146314232423234353036370A424332414433373932353236333835353530383138333341423331443941373638383846464141384136344336334233363242394531333241303535443237310A424530363934334238343039433546363742414145303732333438393834434438334243394536354139353436383332333632423530433631354139423737390A333236334635373541363234394631423237343337453442363235423342423138443643463041353638424137313844363635423536393631383737334143360A314337314336313841393639443435343234344230414139384334384435354246444344364632384144363043313043374530443932453537333938353342460A423641393530373942363244333930364333444346343841314530364544374130383036364331453838423443303937393237353139354430374432343743390A433332443334314236384433433438363034443146303441324243334645313946303830353641454136333837374244393441323946463643453038364641310A30354238343739353436433542413841453533300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A7B726573746F72657D69660A2525456E64466F6E74200A2525426567696E466F6E743A20434D5231300A252150532D41646F6265466F6E742D312E303A20434D523130203030332E3030320A25255469746C653A20434D5231300A2556657273696F6E3A203030332E3030320A25254372656174696F6E446174653A204D6F6E204A756C2031332031363A31373A303020323030390A252543726561746F723A204461766964204D2E204A6F6E65730A25436F707972696768743A20436F707972696768742028632920313939372C203230303920416D65726963616E204D617468656D61746963616C20536F63696574790A25436F707972696768743A20283C687474703A2F2F7777772E616D732E6F72673E292C207769746820526573657276656420466F6E74204E616D6520434D5231302E0A25205468697320466F6E7420536F667477617265206973206C6963656E73656420756E646572207468652053494C204F70656E20466F6E74204C6963656E73652C2056657273696F6E20312E312E0A252054686973206C6963656E736520697320696E20746865206163636F6D70616E79696E672066696C65204F464C2E7478742C20616E6420697320616C736F0A2520617661696C61626C6520776974682061204641512061743A20687474703A2F2F736372697074732E73696C2E6F72672F4F464C2E0A2525456E64436F6D6D656E74730A466F6E744469726563746F72792F434D523130206B6E6F776E7B2F434D5231302066696E64666F6E74206475702F556E697175654944206B6E6F776E7B6475700A2F556E69717565494420676574203530303037393320657120657863682F466F6E745479706520676574203120657120616E647D7B706F702066616C73657D6966656C73650A7B7361766520747275657D7B66616C73657D6966656C73657D7B66616C73657D6966656C73650A3131206469637420626567696E0A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E3030312030203020302E30303120302030205D726561646F6E6C79206465660A2F466F6E744E616D65202F434D523130206465660A2F466F6E7442426F78207B2D3430202D323530203130303920373530207D726561646F6E6C79206465660A2F5061696E74547970652030206465660A2F466F6E74496E666F203920646963742064757020626567696E0A2F76657273696F6E20283030332E3030322920726561646F6E6C79206465660A2F4E6F746963652028436F70797269676874205C303530635C30353120313939372C203230303920416D65726963616E204D617468656D61746963616C20536F6369657479205C3035303C687474703A2F2F7777772E616D732E6F72673E5C3035312C207769746820526573657276656420466F6E74204E616D6520434D5231302E2920726561646F6E6C79206465660A2F46756C6C4E616D652028434D5231302920726561646F6E6C79206465660A2F46616D696C794E616D652028436F6D7075746572204D6F6465726E2920726561646F6E6C79206465660A2F57656967687420284D656469756D2920726561646F6E6C79206465660A2F4974616C6963416E676C652030206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A656E6420726561646F6E6C79206465660A2F456E636F64696E67203235362061727261790A30203120323535207B3120696E6465782065786368202F2E6E6F74646566207075747D20666F720A647570203433202F706C7573207075740A647570203631202F657175616C207075740A726561646F6E6C79206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364142323834424346384230343131423737324445354345334444333235453535373938323932443742443937324244373546410A304530373935323941463943383244463732463634313935433943323130444345333435323846353430444131464644374245424239423430373837424139330A353142424642374346433546393135324431453542423041443844303136433643464134454234314233433531443039314332443534343045363743464437310A374335363831364230334239303142463441323541303731373533383045353041323133463837374334343737384233433541414442434338364436453535310A453641463336344230424643414144323244384435353843354338314137443432354131363239444435313832323036373432443144303832413132463037380A304644344635463644333132394643464646314634413931324230413744454338443333413537423541453033323845463944353741444441433534333237330A433031393234313935413138314430334635303534413933423731453530363546384439324645323337393444324442394238353931453546303134343244380A353639363732434638364239314333463739433544444339374331393045453030383238313441354235413241354537374337393046303837453732393037390A323441354143383830444445443538333334444435453844433641304232424434463034423137333334413734424638464635443838423742363738413034410A323235354330353043423339413338393130364230433637324131393132414641383641343945464430324536314536353039453530454533354536373934340A384643363344393143334432373934423439413043323939333833324243344344433846374244373537354144363142434446343245324534323141413933450A334646394534464144393830323536443842333737303433413037464337354436313639333338303238363932434341384344314645393246443630414432360A443537423735313942383041384638444345394345453543444637323041463236384433433134303939343938413834334437364533423643303332384632340A443336454645374635433445354235433631323738363230304338444533413431454535463146464146343039373635334346434443384634464433324530420A303345444233453431333238334239454642304143333342303535363137303035424339423030353746443638433532443142304536374630433537313638350A373637463241413835414445344530313034413143373737373333443545333138413232413939343433333645354239384439363545353044333146333537410A384236454135413045413938453142303237434536384332454442313439454444443034454437344131423344323036443437314130433131433131343439420A444531393042424645424330384339453142373531334234334441333133344436423131413235313645364538364236374636384339373041333230443035450A393446454335374642333437363036444638393938394333333438324244303944303131433535414139323033313945374232364132303544334430463030340A323234363646303943303438324131363443464232374546364544324230343045434343334443414633343542354137333637364631393344343331323342370A373246443643464335453337393330453631454244354136333037453444453730313934453633383445433044373944423641443836443342333139413331430A384230353839443046453238323431443841434532383044303533304545393943383037323345353630424237324145394435334634373133313831463439310A333434423036443330323742413445394539344434333035424531443831373139374335344338464635364344363936343136354636343438454343384138410A363442343842344630464436393239394131333735383945323439314132383335303942323141334135373732463735423736303241394636304145353539420A303741353834333644303432323243373345414541373244453941354134343146383844323743313146344639313235354546453238304539314134414341430A314539384134453545364335374239414538364644323138433343443846323441343130343135364138304631333832313338344535323937383343353243380A373842393441423341303039363039303836374544333245384133303938304537333739323230333746373546303632424438334246344635393239424335310A434332324145453244424241414130303143464642464634314432353834323446414438383846464631424541423739364134344533313236313539453132300A374534303235433637364346393438383841313937314145463842363736344233414634413932443336464146364643353646443034393731304545333738320A424332434438344645323437334631333342453033433133343642383735343633463132364443414231354337413942434339413732374432333631313436320A344538443242464432343636363030323835443739353138373132423836383141424344363936303845364141393537384637424437373145433336453031410A354131374243313745333735303230454341353942343337393041424542394446354634464242454638303745353639394546454143353633453141434335440A454641333336453735444536443832343845393338314242313130383834464443383943324639413431454242433941384131463938453641343146363842450A454533304532354341313438433145464634324446463843323134413635333741423131463236304238433332394134393437423546433844433943353632320A344446374246344642464230303338304434374241424230334243333036323741413734313033453535334635353237384635333845444438433145363443450A304631333938434130414235413836363330313339423441374538464330323830344341464633383330313134363430414535304432464441334235363142350A433633414437454533333437383034434242343046423145373741364338393733354444383730333531433341313831313539314142343933323531423930340A333134463635373931393633433034313233373743314430323336324335453936353546314333443438303343443337394138454632344334383231384332450A444631313635383430343632424633374444453142384435464630394641324333423236314532463141363545434642453544344541443433423532433032390A454542333934384342384132353243424146353435433846413143333145393230453233413132444437323232434546324432413531334244373538454131330A444133334246354642463144373334363533454238334441324433373441354239413043453331364632344545333735443644463642444134393935344332450A444232354138383832313139333633363131394434363942413636453544414139433932353230464434463834343236413445353432373346413436393038340A373531373831374136454533453231313736443333333832354538383034364635304233434636393338414639424137394132463531333938323339454239310A314132443037463746434439343834323746463632463430464639354533394645314131414138343531343131353633464435333838343732323531433135350A363942444539323833423431393030423231454231313930443036453642313342373739344645443032304432433142444432303541453737423038344243450A454636323832343933393842343936444538354234303646433245313933394546303044464338344330374532364346373245433430314241414537353645350A374636363733323136453735363044314332413732334342343035454535434134373441303746363142383146383833363438324637334443393531364436370A434530434237373045414437353542364233353631393842344239374542423239433633343536393533323730434343384435363530433144303036453639440A333844453244464541423237444144353041383137463044363435443330414635423735413742353343424433443242384438374244304137453532354146330A323246374144444643453331373136393134433233313832363043324532423436363438393339323142363843354139333333344133363144393441373539430A304437423134364436464439344630343432443637324244413046363433324531384633433544464133374144413337384439354237354634313343394544310A424235433630364133454337444642334637393646353942303437384331334644313930303338314546453042423532343244354235443334443033414631440A344244433933454146383032304532364341323343384230453744444542424336373632413535373036374134434530354135323431383841384630324532460A333632354441333844464346333831373237383837463536343641333939354138413338413546423145354435454242333935464444304237433845373141440A423438454544423632414232434539394431323134333545464242464345454136394145394544383233384236304343373238384445333343373636434446450A313542373637423441453245364345303936354537373237324143394638363032334441363230353438434641433835424337353143343432313841323943390A383439463143324443424446414438393542353445353141353639393532454435304638324443384131394633363745374534343634333835344546443642330A464341454230344535354534363631433832443331453239333236313137343834383045463631464232464246423043464239343042454138314146434438340A344336413633333244374136303031373045333841384541464344344639334443313533433433313735343334433836424337343733343846414336314237360A314645433930323743314131393345353543383046314632304235333137414130413035414141333641453233354636453439463036453537304645453739380A383438353744373535324541393245463345464144353244453339433246384634334335394533413935374237423932364643393546433442363031383644460A374633353233454532414237344532393443384334424344384234393735453834383439453046424441364330423046323441363336444641353738423132320A434639374243353038394532314539463532393844314339463330434238424146463641334131314242344439413041354346324231384430353543343443410A344644344438464531414633363330393037444537453538354141383131463943443131464232433846433739313835314436353130303946413544463230420A334333334644324646383438413945334635363532424432393439363541333332444433463234364339314230414441333430313746463234353144313339340A463943334339354141433645433830363242453938453839313444353144413641313634414431333933383639334434343630343438353944303341393439440A463941433544463441303030434441393842423531364437363243423946364434344235323638464430433236453838424334413736304330463735413134300A444542444543413446353131313238423744323830353837323136304335353233364630413046413736333746463044344539344143303739434433433841370A443033413541353646323642303433384235373743343630313141313035333246454243414431344642443630333245323234463435363931413732363838360A353646333035323331454232464344463539433842424643423544424432443039334130453834443632414339334132333132434136393239354539333743340A384442413138303242383546353442354537453644363231364139313846393131464637303544334235434630353546314438373342393632383341304235330A353933343444393130434433393644383833463646373833364241363546414234333933413737334138463642433239383036394535424133383231304545440A343943394439323046373138453346434536393235323744433743434536393633424637343446324339314243353935323536343139364436303537344538360A383741304641423231463244423242443541353144374642443846433139393436443234453541323238343632433437373246393738453635304144434533420A384436364239433231323739433533314341314333413845434533343230424236353833373238374137323232434333363733413241354638424246444236300A433731394344303733454639413233363735313938343632433743383742323443433932443641454535433235414336333835354343333238313439343334320A443238463344324644453043313833343836373639413446443542303134333139334433314643423243324131344534383742424439364430424144424236340A443142353630323143333633413739354246313045324442343438323631433336334135344134414331313832423437304334353741413832444633463544310A463442333239383036313431454244353343414533303933313942393431333344374542444332443034353341393035414444323037333634333731453137380A304139354332363836453342333443344139373842464330454539363843333941424130303838394243353134393136324332423534343833443434464433420A354346463431463631314337453033423934393435463431343536304538373444374346323746464430363330383930443744374541363643424431353434380A323239303539453143343336424233334436393535324235333637414235443533353931433436373844304337303444443345413233463544394538413741430A313744303033433139453333334537323646464641323936314633334337304634323930383546374246453345323531304635394237384635384231394342340A303142343845313834424144393032304645434345334146353230343841303536393831444145413032414537383139374536353835354444423137303631360A463534323738333935443945413530444338333736314145373539463943444546394531393438453730303234313446433035323836454437393345363636320A333334374632413941463839313734393344373330354239324346393345384539313835463730303135463535393430383432393841364332463946443343300A363839463236324143394645444339423839353737454344453932463038443331343232303946424345374235433041383430434337363742434135364332300A344534453534354532424534443231433533383535434545344344304142333544314136303443304646464637374442414534323839373532323736353539460A413035464545363546343545434146343445393545323346414236303532313935433739343841463042313132363438324434453032443732424638414230330A444530463141363332463736373241443944444537304544433832414139393336373841383242454144304243323634394334373037464438353039383130440A333634423543364645304531303737324539353238384336323243324630364336333446344446384337464431343332424339333130443546323446454533460A374142333234383633443644414241413135373645373036343343413739454634443744463431303530393344363643454530463342383744323136344137460A323645413035463543343634354232324433453142464432323139363537373132433136384644393044453830314642304633323735394538304445433145310A343343454542313946454431324437353732303530343346433938464543363244364138443842393742433038334234413045393835414637383530443646440A383731364239393537433143333541303637354243353344463637324334323543373946343346444142414545374436334630393243463237314339413944370A433431463430433431383935313039383738383739343245363041343132423345454338344339413645314143374435344435323846353630344237324330380A393442373838323632314135424631463332354239324646393642383038373843433535304431414534443831393645343143423132353138353636303941350A433444334244303541393232443044343545303339443934353044454638343930413345393234453431343334313934393130424636304241314230384245310A423431383234333435363237373435353431413446313730334539353633323846363232374431314337343934364233384346423039363133393937394535360A344537323342383839423434433644373836373338363843383939313246384234463042344234383546313538374136333742363330463932453630373244350A374633423434454136464439364242443446433238413643314439303830354533424533453432413742433943383830373632393636433535424330344530310A323034443038334145393736464145364633374339344632374536384638433046323844353242313746364330464437433931353037303146443738463843450A423845384443393236304533393734303035454235434137323831373146343832443736353031364339344434414446453441343245463432323132424335360A374534454545453842304432413738353643443445343446353543304241423736324639324342384436344331373032324434424633413437433132463545360A323739464332333130314645453933373533363533434538434544433342373543394343423239424631443435353443363132304445384545373530464342420A453338423544393135323036393734393632453332303336324535394233463231423341423138373537303331393130343344303332383444343436373334360A434646324639384345423438343542373345443845303033453044433934323531423733453133413942353141334631343330424346364132314542394237410A363545313746413431314635334245363433324631353036323332423831353945303038464132353746383834413441303141433533424539313735344437380A424631344135423046424642394333314246343930383335354638413736323035323936384446353236443131383730384343423042374342354245453238350A364441423643443245333933343137384536304245434231314141423534373836323343463643353043393246384242354431413538333630393032384641370A423841353342373931424443394546373641313234463346373634313835374534424541303833374342333631373645433941353232454137463431423844330A363343333744313134353336374244333030463137423534353232413833344242423734444531324246394542323641434536463234413034364435384638390A344434423744463734383735463141304331433944393742453038343935393344374233393845423442303042454243384338443134393742364546383331410A413335333830464642374631414641344438383841413532433934383245384231373535434332303939303546393846343044393542343444344443424342360A363734323344314243324633353630464630413842344630434143333532413445453243314439343645343541414543384136414434303330334633333832430A444630373536424641334231454436344331363945353645443143373630463246463045323444433543394634313330364546384432363238313533443330410A354443423037393131323642454644343934374437454630383330314645303135463242303030384446464342463946324434443835394644343345433744390A433542453233374539424636363635423742314245424233363246304330433341384438363031304239433937464137343143393743324530353133333836430A394332364332333542313444443241353842464441433742354636334442344441364435443337443030393831373541393037313539304531444636364133440A423831373341303437433239443744333535353746303631333243433932304235343630423841464331314432334430394134453435443038394635454235310A393633464131413632353645333539443438353130374644313433423242463231464445394441353734344243323631354538364333314338393437304346300A443036433633393744394643434233313645413939383934333032343037353944324334393435443934314631353946433032333237463334423034324241420A423543334134374337384538433141364642434433393642314135314343344230323042384144343031383431454441424143454344423438324436454335420A373244324246454234353536373230464144443439443037333037433842323241434237453331304341343135314138354337314545463730453844313544450A423342303046323645304531363643313436343741363541444132323841334431433839303235424530353933303635363544423142314546433337443335380A384331454230323432353441464430343942413937374244344332433630353035304531373934304138394430443443354439363345373932333230463544420A333730363638324530334432354439453032343837323437383139353531343635303932434332324236423536453933463341423532383033384645433346300A363638463836363730374131394230343633424537303645433732394432454531363533414143374532394244323542464233323431443437393246353135320A454434313542344537464139324332454535413232453237453842373535343243343932453536443831314331393245393535343241364645304246453541350A363932373343324142454434333030443439314239324432414543444432373834303443423834423142423142443741464543383538323135383337443131380A433045393238424537453037434645454235314136443231333735423737324238323438433939343536343031343031353233324130444134424541313735340A333237344634303746454430383337413233363337314631413332303536323430463230313542314537463442324341373243364235383631304136364631330A343037434646424135453041323839334331463537324435304635313238364539313333423541383432333943393439334230353734453737443238314430310A313144303036383333353441303030433937303045414642433146443130344541313944464342383734373031393045374532434532364533413646443046460A323632304238374238324143383638364236323036423533304631374539333438424337443034423934383334383830324345353341333132343433444238370A344442424135333133413641324138444142384131434339413539344646384332393932383143304132363143384342323232364237333246424545444534300A324336414343373441314136313337394532453143443535343843443930383236384133324641383344383530344334343245413045313833414442463746460A394644303943303337414230333531364543434139334646303438323335424431314132354442303746313634353132413037394335333932414337463838390A434539364145354338443935383042434146434330383743333545373645454431413637314538374331324533303435453135413638373133343733364446380A444139383437373241464431383944363835373141324544373235364631453230343233304534314433443944443837364639333839353137313441333937330A304341393331303438394638453830374331433741344535314145413542433033303631304135443732363346463745304639464445334535453337413336320A354239313930303042443934443937383538334239343245423739434632424541433333464542433941363732373245423130383635424138464237354644370A394432383041423539463931423936433136433938324445383438443736443846413836323044464437433830423744454145373236343335304436464233410A454630343739344441333330353834344137434637313846364431413441334146463638323631373341303736413133373241424643353445443341433643320A303943393238374643383330353536434136393445323143413533343245434137423130433930414643343738334438343144374231453334464133444237410A324237303646334532314230464241423233453732353739363246433342433330394345413243373233394139443642343443433936383235313135414244320A414639413235363644324633333832433031353639464244423934433844363634413544413046374443334444313430434137374337343344374243313432300A333234454346394534373830323830454231313938383545393641364336313943453343304338453145323634453244454231333745354443383134393738360A343836443635363637454346343742314131453230453945364534464338333233453042433845363142444433424344464336353735433639433033453331410A454646433239303437324342424430343944453346383430414545333741323438363033343234304638304537354438413739453037363233373744463636300A353242313245414131364436373839393042313141394246424330334331443446434441394644344646424233453838333532343338313032463130423743350A394630344330313342363537354235453934384641423538454136393139383441304535344536423946334635303546464645463734443036464131434446330A344238413935393034433841323736334141384146354237314430304635444530394443314344463837413038423644313831343533303633453134433132440A423742423337373541364532413930313633363237334439454542383333454138434632304644383341453839394532384441444531304545454332304244370A424439333038354134423141433830414331414538323830433134373637463141343837424430363630303741304430353033313742443038313133314131340A364541303839384544353945343644413742363235344244434342433636303638364532454441304537374137303541363533373333424235433534393744300A423133303335394638363643463239334642364546304332414335424141324442304445443034354532444544334132363132443037383333333236303335390A313643463043434232373244333437363745413036394530463042304434323332374131383532394437324538393045444136313935433236383834333845440A453941434442454544343145383143413845423545343343324230394345323636454643413033463244374646353746313242303646394535344643433641360A353436363736463646464335423842374433463039383242364646304432314439343933303946304330423137354343314430393736463843353543364145440A364538323143333930343145323244393141423330393232463242324543323734364243374441423438343939313534324642433832443837423438373530370A353539414234363646373345453233433244333139344443354345344339414536364433313634363133414335434242334442353031423634444137433931420A433745443245453930323746433039303638323042333544344632434636364334463943453441383834423743303731353542434138383445434135454233410A414242383346383444423146353633393539394443374433463531323431414235443935433342434237414231454339304234424339383946373446423335340A303442324437333636413334443333354134374238433030433035434234323334383242463643373937304139353534353432344130384146463941303335420A374638334635324236354139373939434537364533303342383536363442363234433635453943413538313834433742453242423944394338364134444535410A383136354545334441324536353242353032324545373839333839364241424438383933314445314435333846363135373837363435444635414342424130420A413845354238393941333733323141413744344232383341433932333439373843324444383138313341314545354442364543313730444143314236454630320A393438393236333542343938373635433037413338443245394442304237353831423131303536433238323738463839423045363039393833373943303745420A433045414544433332414136394238423833364639324136314146443335363838333135423243334638363036333246433133453442444642363332313442430A343143433638353945414233414333303334343439323133434142393946413144323136353633343139434436443643453445314235364633334536433635340A374141394443423542303546433036384446303241433332343038433830313041443030344636434341393838373833303932374638434243443439434442350A313843414331454146463831354646324636463532374639333639343832303135363530303330323243364337333930423445334332423231394642344637360A394631324244323543413742334236314431413246384446454537393544303444353432384234324642363645304332353441463742374131304345463746440A453042353632324446364643344246353231343732303844394139314542343942303342423430444537463846424642353636463235313934324338464642310A314446413530343635393139343030433231434534373234443132453445423437414135463339324241393237333239444243413238413738464331444632450A364646323746344534453346383937314437424342354633464246384633304332313441323645354533324530453843424337314246323041453537334242420A313633444436364538394632433445324231413135333241453831433036303134364637353541314142413346313336354645413330423430334445374232320A373646343345444332393944423943344235434331463034453039464538424130334138334437333442443035434239424232363931373445314242423033370A373039303832343431433146323132363937443431424433334337343138363038374638353642304434433831313330333531443734343035444546333936380A434534424342423639413544363045423830454435313735433242384245353735414446413344323344304535304132464245303933344144433534373144310A444544423336344445414246463536434446353346323835374543353842333237433939313839353635413437393531383835453233333938323933363741340A314445464538303930363732394436443043373843323936324446433344463043463941323835413030433437314237413544313145423338384134363433460A413035333139323032413330363246323138353832433931363441333330304439433643373844354345363734353239463244383335443835414533334131440A444132444231433442373132304438424142443430333346323741413939393233453244393330304144303746453046334337414433304246344535304332440A383431414241363434453630444139334538414134433844304245433639463634323745304141324443373136353346353145433934424230313333343644390A314139414439413031444439333336344342303846444238364541463344333034453345324237323744424432373144413436354642353642423842393933360A393533353935393832363430414146413333453737413838444235334433303744463337313039353041314141304144454631364143314637453636303145300A32413831343341334339413134334443304533304137413737463437454633314230364137450A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A7B726573746F72657D69660A2525456E64466F6E74200A2525426567696E466F6E743A2055525750616C6C6164696F4C2D4974616C0A252150532D41646F6265466F6E742D312E303A2055525750616C6C6164696F4C2D4974616C20312E30350A25254372656174696F6E446174653A205765642044656320323220313939390A2520436F707972696768742028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E740A252028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E740A2520536565207468652066696C6520434F5059494E472028474E552047656E6572616C205075626C6963204C6963656E73652920666F72206C6963656E736520636F6E646974696F6E732E0A252041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E740A252070726F6772616D20696E206120506F7374736372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E7420746861740A2520636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C6573730A25206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E0A3132206469637420626567696E0A2F466F6E74496E666F20313020646963742064757020626567696E0A2F76657273696F6E2028312E30352920726561646F6E6C79206465660A2F4E6F74696365202828555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E742E20536565207468652066696C6520434F5059494E472028474E552047656E6572616C205075626C6963204C6963656E73652920666F72206C6963656E736520636F6E646974696F6E732E2041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E742070726F6772616D20696E206120506F7374736372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E74207468617420636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C657373206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E2920726561646F6E6C79206465660A2F436F707972696768742028436F707972696768742028555257292B2B2C436F7079726967687420313939392062792028555257292B2B2044657369676E202620446576656C6F706D656E742920726561646F6E6C79206465660A2F46756C6C4E616D6520285552572050616C6C6164696F204C204974616C69632920726561646F6E6C79206465660A2F46616D696C794E616D6520285552572050616C6C6164696F204C2920726561646F6E6C79206465660A2F5765696768742028526567756C61722920726561646F6E6C79206465660A2F4974616C6963416E676C65202D392E35206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A656E6420726561646F6E6C79206465660A2F466F6E744E616D65202F55525750616C6C6164696F4C2D4974616C206465660A2F5061696E74547970652030206465660A2F574D6F64652030206465660A2F466F6E7442426F78207B2D313730202D3330352031303130203934317D20726561646F6E6C79206465660A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E30303120302E3020302E3020302E30303120302E3020302E305D20726561646F6E6C79206465660A2F456E636F64696E67205374616E64617264456E636F64696E67206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364139383942393937344230313739464336434334343542433243303331303343363835373041374233353441344132383041450A364642463746393838384530333941423630464341463835324542344345334146454239373944354541373046444534344132414535433843303136364332370A424639363635454541313143374432333239433141323131444432364242333732424535383232463545413730443939454235373843374245464434344344460A303435413336333035364535453143433531353235454136464330363144434542423333373230384546463732393830323337364132383031343234463637300A304537453633393742323846313542433130423430303132423041334541454232363933453846374636323743344339433743364335424646313035433145340A314232423945384630393235334237363034304432363842383037313945314233463541353541413435414342354639373344454343353443383133304142450A433845323343383036374643343039444241323341343639444337433643344637454544433344413538384545334335423238323944334531343932393738420A463931433330433139313231383344423632424134383934313841363843334244343435363636303336373346414645364333444437384644464331463641300A383430444641343445414438413536353344444632464538364238424446363732373037443241414337364345333736433243394535364542393546333043440A373542314533313242453737374541443735454641323131313433333531333044444335353941434331413134343534333937393834443632344545423433410A433742443638384532373030323541333441393132383834444633383737343434363245344636363630393934313546323546383639393942333142303538380A353736323936353739463639333539353237323434353244383131423734394145363143363236353731314546303032344336414232354546453145383846430A463838414130373239353843373546363136443937314146423344393131364530343145453742363643333944413434383141393735303944453741433135360A434234334335413835353031453636313634453546433631463943363445453133384341304439413038303842453034343343463346424144313343363345450A453745333946314433383541343533453830393544423246463539313441363131453131424244444230344436464335354435314230383335384546373235330A394238453146453236353631434435434139363631433931443236344233383130413337424533373342463636464342303231453434303733373545434146360A424544433135363144373031413538383546343231364543353932393538433830444239423833363544363641384530373541383837383243344243363136310A463642353234364634394231344534453038364644313045303145444541354439354130463637443946364431364330393343433938313136423635324236300A303442374642443435314535333633393944453741384438423845303734303232383532344641354346383137333542424337324239373646393535464233460A383542393132373830353744433146413642343246463834423946323637313838363331413045423742343435363635333632303135313037334634323735430A394238304437314234444133454632334241323831314639304138343444324434413138433244334537433735444332333531463235304539343643343945450A314436374241353337374142414530303942313835393938323545414138394241423642353642433131373742333242343836334130303443433734343842300A323744394636303330414241424444454436314539354346344430324541393137304242434630344539383246423137304546463631423546304133453339410A453435393643423642343738463645413835443436343436304333453343333031383133393238443141343134304544323933314430364635354441314239320A353735363237423733363341374232463532433245424342303033463331363841434541444243323734423436303130344233324133374133354530384536310A364234433538454434424338324441303141453139463241464430434136373044344344313234363437383843374146334332324141453642324236374642440A373232323731363345353644364230303043413039323035453638384444454144343642304530423037324442423637394533324542434342333441463038340A453735343444384137363135434331344441313731424239323434433742414246464136313933323441464138453742303639463246423239444533324541360A423934303539454545353543423845343044353835324334414237393031464636384145453130413643423437304233433234414432313439334435354639350A313735434537464644453733393934453244333646454641373744323643333445444239394331374133453230393546313545384630434639304434413537460A464443393834364632423533454637424633423930433539363437414446373533464132443431394141363836323239304643323935443130324445433136450A323442373535463135323845453836324646313741333437313030383343364637323934433932373631333836323235314430323946374632463343414643370A444437333642423043343837393632343733304637344146303233423637333736333141393141363035343437464334344244423531364336433235303237370A324231364636453731353443353730303438414439393932353435394232364235303241413135433445463945424336453230434343374445343331463943440A334131423446383836384645313330413944424142383638324443323437374546423733444231334234354244343832434444464131433330343938384539370A323746453646384145463539363945464638374541343030353031413342333233314532393239444334413946354231383345303644324445384545394642380A333938354239364341394442304542443738314341323044313839343844314543323337463146344531304539323738414430363733464146444439444339390A344331314143313146393033384232423142354630373731333332424630313345393043423434444338343235363133344135353438304235313941303636420A383731364234433838433234454435443543344139314343433445323443353039383443333436413434314530443443323638464242304431463935454639430A414333303832324434414636453942353037323443363735353742343946444342463339364437424445383641343045443544424445384235453533374236380A413639334144443531434538414342384234453536414142463236354643333543373031313845343231414436364433413934373343323546384433453344370A394236414337314133393133393731433235334235413035354239353531424136383746343533443441354346344536314441354332453233384641433437380A313730414236373246373433424532303943353437433337463734433336303330383542464335303633384242313945344143363238323836434234454236430A413044353541443743354132303139384631384345454445444538463637313742323242353443324632383941414330454541374638303042433836434138440A373236353838383632414138363137424142313141334135454441304246363741433238334634423235393742354646423431373733374639464444363942340A454441444237394136393233343836413035314533354543413939433232373933353531383744313530374446344443334442393836373331464233424131410A453143414539313737353535353636363741364130394336463041324246373036313535443634353330444141434334463844413844373235343832343937410A383445374138353031374443464342364439373145453733393443413145333132313538413045373346353945344633444345423444384243333737443544430A444532414441384238313237394131413942453239333139393336313942394246353643433146333435393333344445373944443238373643393744394542430A453345423538443430423243454142463834393830434431324643394632323139363642314131423739353843453734464130334632444242443930314433310A464130423642454639334642423344394638353337463336463946413732444142443646304245303239363535373935324535334539423941343945343944460A393041364141453932454231423246334131373042413633383030413337423645444235453538453831424341323637323132463344363333464243393439380A423235313536444446383137364439323943463639323244413137303430333944414643353833353231454645423233313231413038384544333344334334380A363332434143433635454537393244414233313430464135363631323545353337423044373434353146343144364138323142343843433834464630323433420A383441424244363241384633313534463644353643383236323243344238354644433034383544463534433131324437383133463732373141353437343433380A413743433338303733354630324241463436373339443638354641444236423336414145413138334537394533424238364243304346463333323741344238310A384134364339383438324435354646433736384644304546423931423738413739424433343142324442433235303134414139384433443041373038454546420A383141324335463135343942453135324433314245373732444346353246423032344338333634463142434639363746454532423834443237383042413137410A303541303142373442463844304141304241444637313741443344323036423142384633453041333845343243313041344334314546424645344141354136310A433237313646433830353341323243344230423645434435313545433331344337343933453839323437303845464237363746393131464546384135333739320A334643344432414644434445384142414132433333363430383031313532313743343130393446373034414434413232333636353133353944333934324639380A433032363537443330433438363946313646343538303833423630383430394631424331333642453842453931324635394346464338353945424637443238300A443443454241334245453934303946383743353230313830434234353445443938354435353246374535444332333335324644393032424636463542354343430A383546453846444443373333353543383435333246374130383344354444443941353241304538453338433835383435433330433046463739423445393834390A354333384334353932393746334530444331424345363038364244303745423539313937414436344632453732334531344531353244343646323045423130390A343832303836433743443135394443374337323531374341453139393441304137393045343735433439373045383132323745343641394536333133424145420A334131393439333337354639333931373137304134334335303639433444363341453645383544444245383236464438313435393638464332333746313238310A324239373836353433454438324444374330463239443335323243383839313746343530363438413538453933434432453344334233333334343442454146300A373535344243453041443732453137363535324545414335324630433436373633413042453639324434373539383434314537303131433431413639353636380A394438313032434532383533454246313742324246413245354341414130334334424439383038414432344545303039413143424145463141423844313332350A464536463636333546433044443539433841374336364138313838424231353646343236334336303939423644334233383842374535423038463844323531440A384643434439304232423745313939313431463831453138433938324130383842423834363141454646443544444432453039323333364341444544383930420A393742334444314632323841354232433336334131443836343245434242304539334545393535363236303343334243423738433730413242384644333335360A353932434134424546314243443535313445423631373334304437374434343734353941423843353845373041333230313131303446463441353232323837440A363343373634314438413332443741453633464537304132414433424544453136453041323636393839373641313745334245463738373635454536303530320A423544373630463142394344383738333337313038454542323546364132333044433641423037303845413930354232454332443139444442454145343933460A454444334642454536363637454441364146303532344345333839463833393739374131333539313631393741343844343533363131343834444132393341410A413237393536313530304539414442384245354433333836393832393338383146463233374539313335453643353344363735443742453837394643453042320A304139434242333934463944333831353943383437324636454645323241304245464533384235383843363434434635463532443446313731414339363939450A443739333242393146363632393339384137303145364245423644353246313935373031383230324539314145423044354437303533323835324334373333360A323334393144363632343838303146413642464234363631323332413935454432423035433031423332454631434144303541423336413430413046383344310A443138334538344345314246384638334635394431393230343538303030414137343737424539303443313632314642383044374635413843303836373333330A464336433530323145383344304641303446343038363637323337413544384534344144454131423243363137393233423546344444363744443745333146440A433842433930343038334634424630463837433041324444423345343430423236334439413646443331384530433943323937433330363233343339463234390A324437353436343034433743313531464642314238353432433641423932424433463930394536443845333345453932433346354333393035433145383231420A353842453533363738353734323533353535414143363943344635464441323144314533364346343139373044324633433745373631313137343443354142390A313634414246413433443938463334463037424643454130333944464230463745324333384631333845453039323246424444334437424138423137413239410A333339463939413042453946433333413730324438303841414239314644343930424343383946433045464335353243354643353131393335443034303243450A413339384639394242433545424646374541304638363845304231453138464130423632394538333237413638454132303630314132413743334230364644450A414632413735453243464335463644334431364142394531423539393534464545374542343139433633383736314344304141313244443930333134313241430A383742393641373137393838333931443035364435354144353739374434323637303932433032364443343141464536454646423941303037343734313541310A434537363746393645423645424536363838333039463644393739334635384331444546314235384436353841454632363045433136314232443935383945450A384338333334463945394634333142363243313944334136343031393431444541313530393446343338304237343037323839373335353634463442443743460A313834383645333343364144313434323438373341433434393139354241383241393846313531434132383839373944393037313236433641364243444637440A443632334435344434434536383143393341373734363643303634383237453843434134444146374436323345414239364137353839464230454138373439320A304241464238393838393037313732393037364437353530323945363433353739413031324431384644374137323542343243424646413942303234433734300A423041363245374636393034423730303632433137304641414630383633334131334333303345414531314243393338374530333938453935434535464446370A414442323936354436313831443030393446414538323541454337314231424433373942393231343732454346364137344534463931414344394341334139450A334638424237303544373430433036383645334637333333374532383430304437313641373134443836374235433535334330313946394246304539423331300A393341463730444238314131333345364234443946314643413041354138313844303839343938353646354539424130384539373237354141364436443536440A424543353938394133394439314532433932374643304639443431314334353939443944364643313142393443463235353645323841324445464236333731340A323243444430373236333030354344353730393232314637323635314442343442433633433545353043394445454436383745303646323341304430454534310A413335373936393243373935333932313046424530353135463330414138444243383633353646303530373741344541443830324230324644314342304145460A343533303134454330334637393931394638333946423439434434433644413635344141343132344435373744373734413231374434383937413236313031370A313438343844303041444643343344463941303134334532454345443538443833343230463442303242443734323632444632314537323745464442314341360A413633463436304635423331414143463143313943323143334535393744343642353746393936443042323145383938373246443536344143423336434246300A353841364334443945364235333044364336393737313337333139333231424644423641353236423741454130374542363034363032383534463530444545350A463636454244354246374235453737443530384644434430424142333245333039343141453936454234434333353442333338323832373646323236344633310A353544344444363142344341423633414434353745423235423246374639393231383846334335453945354133354435343341393730303638384633303144420A393841393143364633344141353733424446343738323941304244304331464635443639434531383242413839433942454643443837444235354141354530410A443144324333393841323738303737323942333532343838333435424341373846383739303746314536453332444532464543463643304534353236453141370A414643354538313934313130463543353130454132334634393235333336433237344335453637464438384335424233464634353442324333314342374241370A363431333431324637303436434539313032344130433134353834313039323845343837393543393135313139434530453339424230363341383845414236430A414631353939323445413845303544453438393036424632373646334631394537464634444538364631333042463831423633463039463731393745454633370A304530303435303137334237353436353045383541323836363442314641383632343036393236333342314430363145363635353842334137414642413732420A343444333533374536433742304335343039453243434144413739313336384634343932303843364233433139453439413431463945344232413037454436410A323537304532314345373542334445464531413537413044434545374242383032433835323141423642384643383541424536383942383030423833363546300A394638414439353934434539464434363042393537443442313935323139384237463646313330394231444130463730373744464333334342443945323630390A373837303233423539463533464335304241433543463537373133343541394332334638303534333835374236353634394638343242423634414134384338320A444141304145313443423742414444323644324438314642303533313338314638383030464337414243353433363133374342364546303333393936453441330A384331353736433945453930464539453041394635454334393238413331423831353635363933303137413537393133434444373936304344334443453646440A433035373941443941463141444143323737454537353245423737443031434541353045304436353535383534333233464530303332304545423937423034330A374539423337443231343831424234324446394633344335453830423631384641363531464343313533364631313233343734443933433035433037423836380A394643343838353639394534424237363630433834463936413846343142333837414537453444364544433236353841303239443046374545353537393037320A454633464641303833383435323143433932454344393044353334373146454139323244303032374438364634433238353545323335434246373246343330320A453335434145444244433633453532413833313344393044414234313242313837304539453734353343393945383046424335414246463036363145383235350A424538423831413536423244443346323544354139463632303232344130413436334237424332433437304242463133454643384644334431323437463642300A354135453741343735323633373844343838444533303936303134373531453045414639444533353030393231413738313846423331383438374137313243430A433045453945354431363431393435313545383746433336343835353939464243394441433639333342384136314131323439383042453032383833424533440A323837344643363135333137423130314434444438453939434542363235423032323034324335423636454544344639323136343646353630383239453541340A433733374535413442413633454536324342353542453233303145313135424633384431384145383436314634363645323037363136444146453343453133450A353439343542304136424342353633334231443538303334364439313342414344424445463441444434443446414445413036463138413434413745374246300A324643443246353244344133464146333845453641324346454146413231414536433339464445343042394430384546314544324534314244453641334233390A393541423134434437353643344341333732303245303545304246453942383230363035363443303335413739333836354437433342393737323834453537310A453144314330313131443241394441433043343041443441303936393446464337414135364335443938313246423944393644413036343638333338423032380A313530463239314346453043423344343737363236434332343245414332463530363030434243384344433546443635393031433532433336314433424131380A444542394530444645384138364342413436393942303445453145434444303731313635394130463833383534363145343539353539423242463838423435440A364131423636433631354542324531373038423041333246333234423441334439453733453146354532433336434545313239343032344535354545373144370A433843444634454539463737374139443337384346364446344533434330333637463436304633423745444233353635443342433543423942423131453543310A394630413933444636363732423141343733303446463842394633423232334145423442324633303935424633304534433936374436464143443543443143320A454442453346383241384131343336303142434542363235443742423934333536364635413546363343383135463445463434444435424134364435464638350A423236464530454142374434334137303545443036363434323630313230313145353541434641353137433330424231453538434235383444333537353736310A344537303737464136414636463343433044333235443745393937323437443444334141343842333845443844374345333643453535363132443335313636340A353045353144454232383535383835443131453242433432464141463033333537414130384530354244463744323733433142413235453344354539343038300A373730443141423732394530463142414442354244324542353841453432354546363337324635384530423341313244333432413532323846424145313236380A424233334530414146393335394432463346443830323132443539323232323941433430343337444434443431363130303841333441303737394144344136410A414432413136363734334135454435444146453430450A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A2525456E64466F6E74200A2525426567696E466F6E743A2050617A6F4D6174682D4974616C69630A252150532D41646F6265466F6E742D312E303A2050617A6F4D6174682D4974616C6963203030312E3030330A25254372656174696F6E446174653A20467269204D61792031372031313A31373A323820323030320A2525564D75736167653A20313230303030203135303030300A3131206469637420626567696E0A2F466F6E74496E666F20313420646963742064757020626567696E0A2F76657273696F6E20283030312E3030332920726561646F6E6C79206465660A2F436F70797269676874202828632920446965676F20507567612C20323030302C20323030322E2920726561646F6E6C79206465660A2F4E6F746963652028436F707972696768742028632920446965676F20507567612C20323030302C20323030322E20446973747269627574656420756E6465722074686520474E552047656E6572616C205075626C6963204C6963656E73652028687474703A2F2F7777772E676E752E6F72672F636F70796C6566742F67706C2E747874292E2041732061207370656369616C20657863657074696F6E2C207065726D697373696F6E206973206772616E74656420746F20696E636C756465207468697320666F6E742070726F6772616D20696E206120506F7374536372697074206F72205044462066696C65207468617420636F6E7369737473206F66206120646F63756D656E74207468617420636F6E7461696E73207465787420746F20626520646973706C61796564206F72207072696E746564207573696E67207468697320666F6E742C207265676172646C657373206F662074686520636F6E646974696F6E73206F72206C6963656E7365206170706C79696E6720746F2074686520646F63756D656E7420697473656C662E2920726561646F6E6C79206465660A2F46756C6C4E616D65202850617A6F204D617468204974616C69632920726561646F6E6C79206465660A2F46616D696C794E616D65202850617A6F4D6174682920726561646F6E6C79206465660A2F4974616C6963416E676C65202D392E3530206465660A2F6973466978656450697463682066616C7365206465660A2F556E6465726C696E65506F736974696F6E202D313030206465660A2F556E6465726C696E65546869636B6E657373203530206465660A2F5765696768742028526567756C61722920726561646F6E6C79206465660A656E6420726561646F6E6C79206465660A2F466F6E744E616D65202F50617A6F4D6174682D4974616C6963206465660A2F456E636F64696E67203235362061727261790A30203120323535207B3120696E6465782065786368202F2E6E6F74646566207075747D20666F720A64757020313832202F7061727469616C64696666207075740A726561646F6E6C79206465660A2F5061696E74547970652030206465660A2F466F6E74547970652031206465660A2F466F6E744D6174726978205B302E30303130302030203020302E3030313030203020305D20726561646F6E6C79206465660A2F466F6E7442426F78207B2D3730202D32373720393032203733337D20726561646F6E6C79206465660A63757272656E746469637420656E640A63757272656E7466696C652065657865630A443944363646363333423834364139383942393937344230313739464336434334343542434637433343333333333137333233324533464442464634333934390A314442383636433339303838433230334443323246444337353835383438363045433742423637464441323843433632303832343930363045313846414233320A323034373739423543303343303439334242424243393543463032363932434334444541413844324541393042354332453634333734453932424342383530310A343239423846414534413736433043364237364436464637434639413744354544464243413045393539353431433539424430354237444534334432354435330A464333444441364546304332373433393738413644303345313943434544344131314632454134424343333131304245384238443945323737323336313936390A433139323538454641464443323736434231414445393230384139343141333644313846394642314333334445463736414133313544444230413746383543340A393136374535384131383138343045433436434333373945414145303730373146424433383143374544463530333237323938464638364136413446363831320A323535334332434146363733373139393143423733444433463038413742453344313245354430423838354141373446333744313934304545453931453931380A343544353834374344424141423437354231343237373443313443333844323044313630323741414234323643464334333034334236394536373836323935380A384433303944343633463645433235394243394241423236383944313338304443424239373242433544314336433045373030323442423934373433423044330A304537303843303138433646433439464233363735434234373432464544464539363632364141394541374433433739364346343842423441413339423841360A463643453035363636433837394430433041333244393444443536423846394437304431334145423138453943453630434641353942374330394131333135430A463543413835304532324637413744383330434437303341424137324146303830393335334642463832394246454136444336424442463731383638453530460A344642354346334537343230353330364634413034383345343339323233343532314539424545373344434338373230313346413043303043454632464345320A353631313845434231374236384536434645333443413141434234454341464538384432334345414139413334324536463939444633453644354333383442390A373333333139343142394643444332334445303331443335363232384336393746424132423442323344314636363636434434423436373836303937313235420A424239343035413435464141463633463533363843353033333033333646344232313236313932314130384335413236464439343646433736444141344433310A444533304634393832323845363830354631393335363234394230434232383444304339324639314331394235303430384239413143424341434533413243440A313336343243414332423538423543303938383035423844323636393541424641433130383039333639363637354346464236373837374435314533333532370A384139413431393143364130463030344342323043344133344243343434363539334133384543354346353931433643413432453646323638373733354133410A393142413830354237453935433835443842313946353838343530323943433746363346453836303335354233393530344142424539323243323145383443460A303232333035324239363030434244324437463139354144463934464235424346423533333933414241363037393546413738373543303143424532314638340A334445393933374539444641314641314643363245334435314343384639424437423033334231383143324533363044343737383634344645383236423536450A363742424436343432393437393634424136323334454646453235384330343936393130394238364246393334464442444333413245444235413232413732370A343743363944453236314532363445364431394345333931433938313244373935333737374630383143343246393043394137413732423339413146304446340A423239343932364336313738383541464636323935363743394637414632434142433138324245464437454444324145384141383242463944363046324641360A313034384631464341374631374543423743444231453239433433364431413233324631394534333642384236453530334332453438313735354342413741390A384243394631373641323746373736463037413743413934343734444531323737413934453644323032353533333946463536394446374531374544444535440A333944413244423634413532463639344136333846314241314641444639463944463730363846343735363031434141394642333636414132393946463731370A393735424133393033463341414436314543383136463134443334393635324532363644464537333438414135334144303036374442393531363543303441380A353533314331394136423646323431354138424344354339383742354132393338394532394138454237434534464342443244423937393141424439314143410A393133463144313436423238363136363432323235413541453937364634383931374235303144313845334238463239303841353544374138394532344337440A353333343038313635423633383234383634343939323534354432373436313442423342373239463631464242463431314645323045393335454436363031390A303932433343463330304545383841384432304542313134323336353839394330323845374343333834303436433243423435343642433738353139423035330A343345433934384344323133314644373339334237344635383639463031333343334330334137363933443537343032314433313544413132343938443134340A394541383435353939313842353537443646304237393146364438423738333832423246343336323845444332303036423644463345393035343138393242380A333845443939463245303846383832464141354138414232303933453930343044364338433445313946363639303638324435314144373142423737303642450A413238303535444234414246394635324446313743433137304239314439353432374234343139394134453844353630463732394639323838323741314346430A333842463230434241333239373342463345414445333931304341443934333331393534344235433536334441304534373538453646434639314544344237430A353336433536303634384430393242434339423033354143363532324139333039324431423739423133444536383436383134434537313542364241343441360A363632374642324237424530373243384534443437343142413536374245353241413534373544444334414239383735413933313430394246453242384138430A453030363843444144414141423034373744313930333542413231443537324443333733313531463839304438374142423834353636313837423537343144410A333745323832304532303034304335443342333735453138424435464536353130363642463937443537314639324531414331424432463944313834413744430A42333934434630343843364139434143304544334539383644353443343641394333364243333633344142333232324642303946333643324130353633370A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030300A636C656172746F6D61726B0A2525456E64466F6E74200A5465584469637420626567696E203135333535303535203131383731363736203130303020363030203630302028776574742E647669290A407374617274202F4661203230335B32312032312032312035305B7B205465584261736531456E636F64696E67205265456E636F6465466F6E74207D330A34312E353131202F55525750616C6C6164696F4C2D526F6D61207266202F4663203137335B36362038305B32322036317B7D332037372E3835380A2F434D53593130207266202F4664203138345B33322037315B7B7D312035382E31313534202F50617A6F4D617468207266202F46650A3139345B36312031375B36312034335B7B7D322037372E383538202F434D523130207266202F4666203138345B34322037315B7B7D310A37342E37313938202F50617A6F4D617468207266202F4667203133395B31392034375B34352036385B7B0A205465584261736531456E636F64696E67205265456E636F6465466F6E74207D322035382E31313534202F55525750616C6C6164696F4C2D4974616C0A7266202F4668203138365B333620335B34352031345B32392032392034395B7B205465584261736531456E636F64696E67205265456E636F6465466F6E74207D340A35382E31313534202F55525750616C6C6164696F4C2D526F6D61207266202F466A203137325B34322031345B35382036385B7B0A205465584261736531456E636F64696E67205265456E636F6465466F6E74207D322037342E37313938202F55525750616C6C6164696F4C2D4974616C0A7266202F466B203235345B313920315B7B205465584261736531456E636F64696E67205265456E636F6465466F6E74207D312037342E373139380A2F55525750616C6C6164696F4C2D526F6D61207266202F466C2037335B3336203138325B7B7D312037342E37313938202F50617A6F4D6174682D4974616C69630A726620656E640A2525456E6450726F6C6F670A2525426567696E53657475700A2525466561747572653A202A5265736F6C7574696F6E203630306470690A5465584469637420626567696E0A252064766970732D756E6B6E6F776E0A73746174757364696374202F73657470616765706172616D73206B6E6F776E207B206873697A65207673697A6520302031207374617475736469637420626567696E207B0A73657470616765706172616D73207D2073746F7070656420656E64207D207B2074727565207D206966656C7365207B2073746174757364696374202F73657470616765206B6E6F776E0A7B206873697A65207673697A652031207374617475736469637420626567696E207B2073657470616765207D2073746F7070656420706F7020656E64207D206966207D2069660A20656E640A2525456E6453657475700A2525506167653A203120310A5465584469637420626567696E2031203020626F700A25254869526573426F756E64696E67426F783A20302030203233342E32393935387074203138312E313437343270740A203020546558636F6C6F726772617920426C61636B203020546558636F6C6F72677261790A252550616765426F756E64696E67426F783A2030203020323334203138310A2525486952657350616765426F756E64696E67426F783A20302030203233332E3432333636203138302E343730320A2525426567696E5061676553657475700A3C3C202F5061676553697A65205B3233332E3432333636203138302E343730325D203E3E20736574706167656465766963650A30203020626F700A2525456E645061676553657475700A0A3020546558636F6C6F7267726179203020546558636F6C6F7267726179202D343030202D34333420610A0A202D343030202D34333420610A2D343030202D34333420610A0A0A207067666F0A0A20736176650A0A203020736574677261790A0A20302E3339383520706766770A0A20736176650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30202D31342E3935303036202D322E3636343833205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D34333420612031207720466C285C323636292D3336310A2D34323220792046672874292D333233202D34333420792046662847292D323830202D343631207920466828454141292D3237390A2D34313120792046672874292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302032392E3033353932202D322E3633323636205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D343334206120312077204665283D292D3238350A2D343633207920466828312970202D323835202D34353120333020332076202D323835202D34303820612832292D343030202D3433340A790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A2036392E343439353720302E30206D6F7665746F0A0A2038332E363232393720302E30206D6F7665746F0A0A2038332E363232393720372E38323738342037372E32373734322031342E31373333392036392E34343935372031342E3137333339206375727665746F0A0A2036312E36323137332031342E31373333392035352E323736313820372E38323738342035352E323736313820302E30206375727665746F0A0A2035352E3237363138202D372E38323738342036312E3632313733202D31342E31373333392036392E3434393537202D31342E3137333339206375727665746F0A0A2037372E3237373432202D31342E31373333392038332E3632323937202D372E38323738342038332E363232393720302E30206375727665746F0A0A20636C6F7365706174680A0A2036392E343439353720302E30206D6F7665746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A2036392E343439353720302E30206D6F7665746F0A0A2038332E363232393720302E30206D6F7665746F0A0A2038332E363232393720372E38323738342037372E32373734322031342E31373333392036392E34343935372031342E3137333339206375727665746F0A0A2036312E36323137332031342E31373333392035352E323736313820372E38323738342035352E323736313820302E30206375727665746F0A0A2035352E3237363138202D372E38323738342036312E3632313733202D31342E31373333392036392E3434393537202D31342E3137333339206375727665746F0A0A2037372E3237373432202D31342E31373333392038332E3632323937202D372E38323738342038332E363232393720302E30206375727665746F0A0A20636C6F7365706174680A0A2036392E343439353720302E30206D6F7665746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A2037322E38353131382031342E3137333339206D6F7665746F0A0A2037322E38353131382031362E30353230362037312E33323832352031372E3537352036392E34343935372031372E353735206375727665746F0A0A2036372E353730392031372E3537352036362E30343739372031362E30353230362036362E30343739372031342E3137333339206375727665746F0A0A2036362E30343739372031322E32393437312036372E353730392031302E37373137372036392E34343935372031302E3737313737206375727665746F0A0A2037312E33323832352031302E37373137372037322E38353131382031322E32393437312037322E38353131382031342E3137333339206375727665746F0A0A20636C6F7365706174680A0A2036392E34343935372031342E3137333339206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206E6577706174680A0A20736176650A0A2037322E38353131382031342E3137333339206D6F7665746F0A0A2037322E38353131382031362E30353230362037312E33323832352031372E3537352036392E34343935372031372E353735206375727665746F0A0A2036372E353730392031372E3537352036362E30343739372031362E30353230362036362E30343739372031342E3137333339206375727665746F0A0A2036362E30343739372031322E32393437312036372E353730392031302E37373137372036392E34343935372031302E3737313737206375727665746F0A0A2037312E33323832352031302E37373137372037322E38353131382031322E32393437312037322E38353131382031342E3137333339206375727665746F0A0A20636C6F7365706174680A0A2036392E34343935372031342E3137333339206D6F7665746F0A0A202F706766736D61736B696E706C61636520647570207768657265207B65786368206765747D7B706F702066616C73657D206966656C7365206E6F74207B636C69707D0A69660A0A206E6577706174680A0A20736176650A0A20302E373937303120706766770A0A2036362E30343739372031372E353735206D6F7665746F0A0A2037322E38353131382031302E3737313737206C696E65746F0A0A2037322E38353131382031372E353735206D6F7665746F0A0A2036362E30343739372031302E3737313737206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20726573746F72650A0A2037322E38353131382031342E3137333339206D6F7665746F0A0A2037322E38353131382031362E30353230362037312E33323832352031372E3537352036392E34343935372031372E353735206375727665746F0A0A2036372E353730392031372E3537352036362E30343739372031362E30353230362036362E30343739372031342E3137333339206375727665746F0A0A2036362E30343739372031322E32393437312036372E353730392031302E37373137372036392E34343935372031302E3737313737206375727665746F0A0A2037312E33323832352031302E37373137372037322E38353131382031322E32393437312037322E38353131382031342E3137333339206375727665746F0A0A20636C6F7365706174680A0A2036392E34343935372031342E3137333339206D6F7665746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E302036392E34343935372031342E3137333339205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433342061202D3430300A2D34333420610A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302038392E393737363620382E37303338205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D3433342061202D333639202D343532206120466B285C303031292D3339390A2D34333420792046632852292D333331202D34323220792046672874292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30202D31382E3638343539202D35302E3835343332205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A0A2D343030202D34333420612031207720466C285C323636292D333631202D34323220792046672874292D333232202D34333420790A466A284429732046662847292D323138202D343631207920466828454141292D323137202D34313120792046672874292D3430300A2D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302032352E3239323437202D35302E3832323136205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D343334206120312077204665283D2934342062204663285C303030292D3232320A2D343633207920466828312970202D323233202D34353120333020332076202D323233202D34303820612832292D343030202D3433340A790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A2038352E3034303232202D35362E3639333632206D6F7665746F0A0A2038352E3034303232202D35312E32313431332038302E3539383334202D34362E37373232332037352E3131383835202D34362E3737323233206375727665746F0A0A2036392E3633393336202D34362E37373232332036352E3139373438202D35312E32313431332036352E3139373438202D35362E3639333632206375727665746F0A0A2036352E3139373438202D36322E31373331312036392E3633393336202D36362E36313439392037352E3131383835202D36362E3631343939206375727665746F0A0A2038302E3539383334202D36362E36313439392038352E3034303232202D36322E31373331312038352E3034303232202D35362E3639333632206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383835202D35362E3639333632206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E302036382E3639333838202D35392E3633393539205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433342061203220770A46672844292D333532202D34353520792046612833292D333236202D34333420792046642847292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A2037352E3131383835202D36372E3031333439206D6F7665746F0A0A2037352E3131383835202D37342E3338333637206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A2038302E3237383436202D34372E3735363332206D6F7665746F0A0A2039372E3939353231202D31372E30363939332035322E32343235202D31372E30363939332036392E3935393234202D34372E3735363332206375727665746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A2038302E3237383436202D34372E3735363332206D6F7665746F0A0A2039372E3939353231202D31372E30363939332035322E32343235202D31372E30363939332036392E3935393234202D34372E3735363332206375727665746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A2037382E3532303435202D32342E3734313536206D6F7665746F0A0A2037382E3532303435202D32322E38363238382037362E3939373531202D32312E33333939352037352E3131383834202D32312E3333393935206375727665746F0A0A2037332E3234303136202D32312E33333939352037312E3731373232202D32322E38363238382037312E3731373232202D32342E3734313536206375727665746F0A0A2037312E3731373232202D32362E36323032342037332E3234303136202D32382E31343331372037352E3131383834202D32382E3134333137206375727665746F0A0A2037362E3939373531202D32382E31343331372037382E3532303435202D32362E36323032342037382E3532303435202D32342E3734313536206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D32342E3734313536206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206E6577706174680A0A20736176650A0A2037382E3532303435202D32342E3734313536206D6F7665746F0A0A2037382E3532303435202D32322E38363238382037362E3939373531202D32312E33333939352037352E3131383834202D32312E3333393935206375727665746F0A0A2037332E3234303136202D32312E33333939352037312E3731373232202D32322E38363238382037312E3731373232202D32342E3734313536206375727665746F0A0A2037312E3731373232202D32362E36323032342037332E3234303136202D32382E31343331372037352E3131383834202D32382E3134333137206375727665746F0A0A2037362E3939373531202D32382E31343331372037382E3532303435202D32362E36323032342037382E3532303435202D32342E3734313536206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D32342E3734313536206D6F7665746F0A0A202F706766736D61736B696E706C61636520647570207768657265207B65786368206765747D7B706F702066616C73657D206966656C7365206E6F74207B636C69707D0A69660A0A206E6577706174680A0A20736176650A0A20302E373937303120706766770A0A2037312E3731373232202D32312E3333393935206D6F7665746F0A0A2037382E3532303435202D32382E3134333137206C696E65746F0A0A2037382E3532303435202D32312E3333393935206D6F7665746F0A0A2037312E3731373232202D32382E3134333137206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20726573746F72650A0A2037382E3532303435202D32342E3734313536206D6F7665746F0A0A2037382E3532303435202D32322E38363238382037362E3939373531202D32312E33333939352037352E3131383834202D32312E3333393935206375727665746F0A0A2037332E3234303136202D32312E33333939352037312E3731373232202D32322E38363238382037312E3731373232202D32342E3734313536206375727665746F0A0A2037312E3731373232202D32362E36323032342037332E3234303136202D32382E31343331372037352E3131383834202D32382E3134333137206375727665746F0A0A2037362E3939373531202D32382E31343331372037382E3532303435202D32362E36323032342037382E3532303435202D32342E3734313536206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D32342E3734313536206D6F7665746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E302037352E3131383834202D32342E3734313536205D20636F6E6361740A0A20706766730A0A0A202D3430300A2D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433342061202D343030202D3433340A610A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30202D32302E3637373134202D3130342E3731333535205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D34333420612031207720466C285C323636292D333631202D34323220792046672874292D3332320A2D343334207920466A2844292D323632202D34363120792046682832292D323238202D34333420792046662847292D313835202D3436310A7920466828454141292D313834202D34313120792046672874292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302032352E3239323437202D3130342E3638313338205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D3430300A2D343334206120312077204665283D2967204663285C303030292D323232202D343633207920466828312970202D323233202D3435310A333020332076202D323233202D34303820612832292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A2038352E3034303232202D3131302E3535323834206D6F7665746F0A0A2038352E3034303232202D3130352E30373333352038302E3539383334202D3130302E36333134372037352E3131383835202D3130302E3633313437206375727665746F0A0A2036392E3633393336202D3130302E36333134372036352E3139373438202D3130352E30373333352036352E3139373438202D3131302E3535323834206375727665746F0A0A2036352E3139373438202D3131362E30333233332036392E3633393336202D3132302E34373432312037352E3131383835202D3132302E3437343231206375727665746F0A0A2038302E3539383334202D3132302E34373432312038352E3034303232202D3131362E30333233332038352E3034303232202D3131302E3535323834206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383835202D3131302E3535323834206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E302036382E3639333838202D3131332E3533363138205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433340A61202D343030202D34333420610A203020736574677261790A202D343030202D3433342061203220772046672844292D333532202D34353520792046612834292D3332360A2D34333420792046642847292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A2036382E3438353334202D3131382E3435373933206D6F7665746F0A0A2036332E3734373835202D3132342E3130333734206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A2038312E3735323337202D3131382E3435373933206D6F7665746F0A0A2038362E3438393835202D3132342E3130333734206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A2038302E3237383436202D3130312E3631353535206D6F7665746F0A0A2039372E3939353231202D37302E39323931352035322E32343235202D37302E39323931352036392E3935393234202D3130312E3631353535206375727665746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A2038302E3237383436202D3130312E3631353535206D6F7665746F0A0A2039372E3939353231202D37302E39323931352035322E32343235202D37302E39323931352036392E3935393234202D3130312E3631353535206375727665746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A2037382E3532303435202D37382E3630303738206D6F7665746F0A0A2037382E3532303435202D37362E373232312037362E3939373531202D37352E31393931372037352E3131383834202D37352E3139393137206375727665746F0A0A2037332E3234303136202D37352E31393931372037312E3731373232202D37362E373232312037312E3731373232202D37382E3630303738206375727665746F0A0A2037312E3731373232202D38302E34373934362037332E3234303136202D38322E303032342037352E3131383834202D38322E30303234206375727665746F0A0A2037362E3939373531202D38322E303032342037382E3532303435202D38302E34373934362037382E3532303435202D37382E3630303738206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D37382E3630303738206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206E6577706174680A0A20736176650A0A2037382E3532303435202D37382E3630303738206D6F7665746F0A0A2037382E3532303435202D37362E373232312037362E3939373531202D37352E31393931372037352E3131383834202D37352E3139393137206375727665746F0A0A2037332E3234303136202D37352E31393931372037312E3731373232202D37362E373232312037312E3731373232202D37382E3630303738206375727665746F0A0A2037312E3731373232202D38302E34373934362037332E3234303136202D38322E303032342037352E3131383834202D38322E30303234206375727665746F0A0A2037362E3939373531202D38322E303032342037382E3532303435202D38302E34373934362037382E3532303435202D37382E3630303738206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D37382E3630303738206D6F7665746F0A0A202F706766736D61736B696E706C61636520647570207768657265207B65786368206765747D7B706F702066616C73657D206966656C7365206E6F74207B636C69707D0A69660A0A206E6577706174680A0A20736176650A0A20302E373937303120706766770A0A2037312E3731373232202D37352E3139393137206D6F7665746F0A0A2037382E3532303435202D38322E30303234206C696E65746F0A0A2037382E3532303435202D37352E3139393137206D6F7665746F0A0A2037312E3731373232202D38322E30303234206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20726573746F72650A0A2037382E3532303435202D37382E3630303738206D6F7665746F0A0A2037382E3532303435202D37362E373232312037362E3939373531202D37352E31393931372037352E3131383834202D37352E3139393137206375727665746F0A0A2037332E3234303136202D37352E31393931372037312E3731373232202D37362E373232312037312E3731373232202D37382E3630303738206375727665746F0A0A2037312E3731373232202D38302E34373934362037332E3234303136202D38322E303032342037352E3131383834202D38322E30303234206375727665746F0A0A2037362E3939373531202D38322E303032342037382E3532303435202D38302E34373934362037382E3532303435202D37382E3630303738206375727665746F0A0A20636C6F7365706174680A0A2037352E3131383834202D37382E3630303738206D6F7665746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E302037352E3131383834202D37382E3630303738205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D3430300A2D34333420610A203020736574677261790A202D343030202D3433342061202D343030202D34333420610A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30203130352E3339313932202D3130342E3338343439205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D3433340A6120312077204665282B292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A203134342E3536383731202D3130322E3034383732206D6F7665746F0A0A203134342E3536383731202D39362E3536393233203134302E3132363833202D39322E3132373333203133342E3634373334202D39322E3132373333206375727665746F0A0A203132392E3136373835202D39322E3132373333203132342E3732353937202D39362E3536393233203132342E3732353937202D3130322E3034383732206375727665746F0A0A203132342E3732353937202D3130372E3532383231203132392E3136373835202D3131312E39373031203133342E3634373334202D3131312E39373031206375727665746F0A0A203134302E3132363833202D3131312E39373031203134342E3536383731202D3130372E3532383231203134342E3536383731202D3130322E3034383732206375727665746F0A0A20636C6F7365706174680A0A203133342E3634373334202D3130322E3034383732206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E30203132382E3232323335202D3130342E3939343639205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D3433340A610A203020736574677261790A202D343030202D3433342061203220772046672844292D333532202D34353520792046612833292D333236202D34333420792046642847292D3430300A2D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A203132342E3332373435202D3130322E3034383732206D6F7665746F0A0A203131362E3935373238202D3130322E3034383732206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A203230312E3236323333202D3130322E3034383732206D6F7665746F0A0A203230312E3236323333202D39362E3536393233203139362E3832303435202D39322E3132373333203139312E3334303936202D39322E3132373333206375727665746F0A0A203138352E3836313437202D39322E3132373333203138312E3431393539202D39362E3536393233203138312E3431393539202D3130322E3034383732206375727665746F0A0A203138312E3431393539202D3130372E3532383231203138352E3836313437202D3131312E39373031203139312E3334303936202D3131312E39373031206375727665746F0A0A203139362E3832303435202D3131312E39373031203230312E3236323333202D3130372E3532383231203230312E3236323333202D3130322E3034383732206375727665746F0A0A20636C6F7365706174680A0A203139312E3334303936202D3130322E3034383732206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E30203138342E3931353937202D3130342E3939343639205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433340A61203220772046672844292D333532202D34353520792046612833292D333236202D34333420792046642847292D343030202D3433340A790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A203230312E3636303833202D3130322E3034383732206D6F7665746F0A0A203230392E303331202D3130322E3034383732206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A203134312E3238303835202D39342E3134333633206D6F7665746F0A0A203135322E3133373939202D38352E3033333038203137332E3835303331202D38352E3033333038203138342E3730373433202D39342E3134333633206375727665746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A203134312E3238303835202D39342E3134333633206D6F7665746F0A0A203135322E3133373939202D38352E3033333038203137332E3835303331202D38352E3033333038203138342E3730373433202D39342E3134333633206375727665746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B3120736574677261797D6465660A0A203136362E3339353735202D38372E3331303733206D6F7665746F0A0A203136362E3339353735202D38352E3433323035203136342E3837323832202D38332E3930393132203136322E3939343134202D38332E3930393132206375727665746F0A0A203136312E3131353436202D38332E3930393132203135392E3539323533202D38352E3433323035203135392E3539323533202D38372E3331303733206375727665746F0A0A203135392E3539323533202D38392E31383934203136312E3131353436202D39302E3731323334203136322E3939343134202D39302E3731323334206375727665746F0A0A203136342E3837323832202D39302E3731323334203136362E3339353735202D38392E31383934203136362E3339353735202D38372E3331303733206375727665746F0A0A20636C6F7365706174680A0A203136322E3939343134202D38372E3331303733206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206E6577706174680A0A20736176650A0A203136362E3339353735202D38372E3331303733206D6F7665746F0A0A203136362E3339353735202D38352E3433323035203136342E3837323832202D38332E3930393132203136322E3939343134202D38332E3930393132206375727665746F0A0A203136312E3131353436202D38332E3930393132203135392E3539323533202D38352E3433323035203135392E3539323533202D38372E3331303733206375727665746F0A0A203135392E3539323533202D38392E31383934203136312E3131353436202D39302E3731323334203136322E3939343134202D39302E3731323334206375727665746F0A0A203136342E3837323832202D39302E3731323334203136362E3339353735202D38392E31383934203136362E3339353735202D38372E3331303733206375727665746F0A0A20636C6F7365706174680A0A203136322E3939343134202D38372E3331303733206D6F7665746F0A0A202F706766736D61736B696E706C61636520647570207768657265207B65786368206765747D7B706F702066616C73657D206966656C7365206E6F74207B636C69707D0A69660A0A206E6577706174680A0A20736176650A0A20302E373937303120706766770A0A203135392E3539323533202D38332E3930393132206D6F7665746F0A0A203136362E3339353735202D39302E3731323334206C696E65746F0A0A203136362E3339353735202D38332E3930393132206D6F7665746F0A0A203135392E3539323533202D39302E3731323334206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20726573746F72650A0A203136362E3339353735202D38372E3331303733206D6F7665746F0A0A203136362E3339353735202D38352E3433323035203136342E3837323832202D38332E3930393132203136322E3939343134202D38332E3930393132206375727665746F0A0A203136312E3131353436202D38332E3930393132203135392E3539323533202D38352E3433323035203135392E3539323533202D38372E3331303733206375727665746F0A0A203135392E3539323533202D38392E31383934203136312E3131353436202D39302E3731323334203136322E3939343134202D39302E3731323334206375727665746F0A0A203136342E3837323832202D39302E3731323334203136362E3339353735202D38392E31383934203136362E3339353735202D38372E3331303733206375727665746F0A0A20636C6F7365706174680A0A203136322E3939343134202D38372E3331303733206D6F7665746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E30203136322E3939343134202D38372E3331303733205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433342061202D3430300A2D34333420610A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A203134312E3238303835202D3130392E3935333831206D6F7665746F0A0A203135322E3133373939202D3131392E3036343335203137332E3835303331202D3131392E3036343335203138342E3730373433202D3130392E3935333831206375727665746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A203134312E3238303835202D3130392E3935333831206D6F7665746F0A0A203135322E3133373939202D3131392E3036343335203137332E3835303331202D3131392E3036343335203138342E3730373433202D3130392E3935333831206375727665746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A20302E373937303120706766770A0A20736176650A0A20322E3838393220706766770A0A20372E3038363639202D3135302E3233383232206D6F7665746F0A0A2032392E3736343232202D3135302E3233383232206C696E65746F0A0A207067667374720A0A20736176650A0A20312E323935313520706766770A0A202F70676673637B3120736574677261797D6465660A0A20372E3038363639202D3135302E3233383232206D6F7665746F0A0A2032392E3736343232202D3135302E3233383232206C696E65746F0A0A206773617665207067667363207067667374722067726573746F7265206E6577706174680A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302034332E3032383538202D3135312E3934363333205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D343334206120312077204665283D292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A2035392E3532383436202D3135302E3233383232206D6F7665746F0A0A2038322E3230353535202D3135302E3233383232206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E302038372E31343238202D3135322E3635333231205D20636F6E6361740A0A20706766730A0A0A202D3430300A2D34333420610A203020736574677261790A202D343030202D34333420612031207720466A2853292D333536202D34323220792046672874292D343030202D3433340A790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30203130312E3133393633202D3135322E3537333939205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D343334206120312077204663285C303030292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A203131342E3830343634202D3135302E3233383232206D6F7665746F0A0A203133312E3831323437202D3135302E3233383232206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A202F70676666637B302E383820736574677261797D6465660A0A20736176650A0A20302E373937303120706766770A0A202F70676666637B302E383820736574677261797D6465660A0A202F70676666637B302E383820736574677261797D6465660A0A203135312E3635353431202D3135302E3233383232206D6F7665746F0A0A203135312E3635353431202D3134342E3735383733203134372E3231333533202D3134302E3331363835203134312E3733343034202D3134302E3331363835206375727665746F0A0A203133362E3235343535202D3134302E3331363835203133312E3831323637202D3134342E3735383733203133312E3831323637202D3135302E3233383232206375727665746F0A0A203133312E3831323637202D3135352E3731373731203133362E3235343535202D3136302E31353936203134312E3733343034202D3136302E31353936206375727665746F0A0A203134372E3231333533202D3136302E31353936203135312E3635353431202D3135352E3731373731203135312E3635353431202D3135302E3233383232206375727665746F0A0A20636C6F7365706174680A0A203134312E3733343034202D3135302E3233383232206D6F7665746F0A0A2067736176652070676666632070676666696C6C2067726573746F7265206773617665207067667363207067667374722067726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20736176650A0A205B312E3020302E3020302E3020312E30203133352E3330393037202D3135332E31383432205D20636F6E6361740A0A20706766730A0A0A202D3430300A2D34333420610A202F70676673637B7D6465662F70676666637B7D6465660A202D343030202D3433342061202D343030202D34333420610A203020736574677261790A202D343030202D3433342061203220772046672844292D3335320A2D34353520792046612832292D333236202D34333420792046642847292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20302E373937303120706766770A0A203135312E36353536202D3135302E3233383232206D6F7665746F0A0A203136382E3636333432202D3135302E3233383232206C696E65746F0A0A207067667374720A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30203137362E3235383936202D3135322E3537333939205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A0A2D343030202D343334206120312077204665282B292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20736176650A0A20736176650A0A205B312E3020302E3020302E3020312E30203138372E3731303938202D3135322E3331333936205D20636F6E6361740A0A20706766730A0A0A202D343030202D34333420610A203020736574677261790A202D343030202D3433340A6120312077204663285C3030312931342062285C3030312967285C303031292D343030202D34333420790A0A0A20706766720A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A20726573746F72650A0A206E6577706174680A0A20726573746F72650A0A20706766630A0A0A203020546558636F6C6F72677261790A3020546558636F6C6F7267726179203020546558636F6C6F7267726179203020546558636F6C6F726772617920656F7020656E640A2525547261696C65720A0A7573657264696374202F656E642D686F6F6B206B6E6F776E7B656E642D686F6F6B7D69660A2525454F460A>|ps>||||>>>|<label|fig:wetterich-graphs>The
   Wetterich equation<nbsp><eqref|eq:wetterich> as graphs. The double line is
-  the full response <math|<around|(|D<rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>=<around|(|S<rsub|t><rsup|-1>+D<rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>>
+  the full response <math|<around|(|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>=<around|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>>
   and the crossed circle is one insertion of
   <math|<wide|\<cal-R\>|\<dot\>><rsub|t>>. There is exactly one loop: the
   tree term of Figure<nbsp><reference|fig:polchinski-graphs> has been
@@ -1830,9 +2062,9 @@
 
   <\proposition>
     <dueto|The Legendre transform, formal; a theorem at finite
-    cutoff><label|prop:legendre>In the setting of
-    Proposition<nbsp><reference|prop:filtering>, the Legendre transform of
-    the log-partition function of the filter gives the effective action:
+    cutoff><label|prop:legendre>With <math|\<cal-K\><rsub|t>> as in
+    Remark<nbsp><reference|rem:measurement>, the Legendre transform of the
+    log-partition function of the filter gives the effective action:
 
     <\equation*>
       \<cal-K\><rsub|t><rsup|\<ast\>><around|(|\<psi\>|)>=\<Gamma\><rsub|t><around|(|\<psi\>|)>+<frac|1|2><around|\<langle\>|\<psi\>,S<rsub|t><rsup|-1>\<psi\>|\<rangle\>>=\<Gamma\><rsup|<math-up|EAA>><rsub|t><around|(|\<psi\>|)>+<frac|1|2><around|\<langle\>|\<psi\>,\<cal-R\><rsub|t>\<psi\>|\<rangle\>>
@@ -1844,9 +2076,8 @@
 
   <\proof>
     By (<reference|eq:moreau>) and the formula for <math|\<cal-K\>>. At fixed
-    <math|\<psi\>>, with <math|j=D\<cal-K\><rsup|\<ast\>><around|(|\<psi\>|)>>,
-    the envelope theorem and Proposition<nbsp><reference|prop:filtering>(c)
-    give
+    <math|\<psi\>>, with <math|j=\<mathD\>\<cal-K\><rsup|\<ast\>><around|(|\<psi\>|)>>,
+    the envelope theorem and<nbsp><eqref|eq:K-HJ> give
 
     <\equation*>
       \<partial\><rsub|t>\<cal-K\><rsup|\<ast\>>=<frac|1|2><math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>><math-up|Cov>|)>+<frac|1|2><around|\<langle\>|\<psi\>,<wide|\<cal-R\>|\<dot\>>\<psi\>|\<rangle\>>,
@@ -1860,14 +2091,15 @@
   </proof>
 
   So one Lagrangian graph has three generators: <math|V<rsub|t>> in the field
-  <math|x>, <math|\<cal-K\><rsub|t>> in the measurement
-  <math|j=S<rsub|t><rsup|-1>x>, and <math|\<Gamma\><rsub|t>> in the forecast
-  <math|\<psi\>>. The Polchinski flow is the Hamilton\UJacobi equation of the
-  log-partition function of the localisation; the Wetterich flow is its
-  Legendre dual<nbsp><cite|Mor94>, whose argument is the posterior mean, and
-  whose regulator is the information gained. At <math|t=0>, where
-  <math|\<cal-R\><rsub|0>=0>, <math|\<cal-K\><rsub|0>> is the generating
-  function <math|\<Lambda\>> of the cumulants of <math|\<nu\><rsub|T>> below.
+  <math|x>, <math|\<cal-K\><rsub|t>> in the coordinate
+  <math|j=S<rsub|t><rsup|-1>x> of Remark<nbsp><reference|rem:measurement>,
+  and <math|\<Gamma\><rsub|t>> in the forecast <math|\<psi\>>. The Polchinski
+  flow is the Hamilton\UJacobi equation of the log-partition function of the
+  localisation; the Wetterich flow is its Legendre dual<nbsp><cite|Mor94>,
+  whose argument is the posterior mean, and whose regulator is the
+  information gained. At <math|t=0>, where <math|\<cal-R\><rsub|0>=0>,
+  <math|\<cal-K\><rsub|0>> is the generating function <math|\<Lambda\>> of
+  the cumulants of <math|\<nu\><rsub|T>> below.
 
   <paragraph|Probabilistic meaning of <math|\<Gamma\>>> At <math|t=0> the
   effective average action is the 1PI effective action of
@@ -1933,7 +2165,7 @@
   <paragraph|The tree level> Dropping the Itô term
   in<nbsp><eqref|eq:transformed-flow> gives
   <math|\<Gamma\><rsub|t>=V<rsub|T>>, and then<nbsp><eqref|eq:moreau> becomes
-  the Hopf\ULax formula
+  the Hopf\ULax (Lax\UOleinik) formula
 
   <\equation>
     <label|eq:hopf-lax>V<rsup|<math-up|tree>><rsub|t><around|(|x|)>=inf<rsub|y><around*|{|V<rsub|T><around|(|y|)>+<tfrac|1|2><around|\<langle\>|y-x,S<rsub|t><rsup|-1>*<around|(|y-x|)>|\<rangle\>>|}>,
@@ -2049,7 +2281,7 @@
   <\exercise>
     <dueto|The free action><label|ex:free-action>(a) Prove
     (<reference|eq:free-action>), and that
-    <math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|D<rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>D<rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>.
+    <math|\<partial\><rsub|t>\<cal-A\><rsub|t>=<frac|1|2><around|\<langle\>|\<mathD\><rsub|x>\<cal-A\><rsub|t>,<wide|Q|\<dot\>><rsub|t>\<mathD\><rsub|x>\<cal-A\><rsub|t>|\<rangle\>>>.
     (b) From the Moreau formula (<reference|eq:moreau>), recover the
     relations (<reference|eq:coord>) by differentiating
     <math|V<rsub|t><around|(|x|)>=\<Gamma\><rsub|t><around|(|\<psi\>|)>+\<cal-A\><rsub|t><around|(|x,\<psi\>|)>>.
@@ -2111,12 +2343,15 @@
 
   <subsection|The field equation at every resolution><label|sec:DS>
 
-  The measurement noise <math|N<rsub|t>> of (<reference|eq:measurement>) is
-  not observed, but its posterior mean is: from
-  <math|j<rsub|t>=\<cal-R\><rsub|t>\<Phi\><rsub|T>+N<rsub|t>> we get
-  <math|\<bbb-E\><rsub|t>N<rsub|t>=j<rsub|t>-\<cal-R\><rsub|t>\<psi\><rsub|t>>,
-  which is the <strong|noise observable> <math|\<eta\><rsub|t>> below. This
-  gives a field equation at every resolution.
+  By<nbsp><eqref|eq:bridge> the field at resolution <math|t> is a blurred
+  copy of the terminal field, <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>.
+  The noise <math|\<zeta\><rsub|t>> is not observed, but its posterior mean
+  is, <math|\<bbb-E\><rsub|t>\<zeta\><rsub|t>=\<Phi\><rsub|t>-J<rsub|t>\<psi\><rsub|t>>.
+  Since <math|\<psi\><rsub|t>=\<Phi\><rsub|t>+S<rsub|t>F<rsub|t>> and
+  <math|1-J<rsub|t>=K*S<rsub|t>>, its rescaling
+  <math|S<rsub|t><rsup|-1>\<bbb-E\><rsub|t>\<zeta\><rsub|t>=K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>>
+  is the <strong|noise observable> <math|\<eta\><rsub|t>> below. This gives a
+  field equation at every resolution.
 
   <\theorem>
     <dueto|DS equations at resolution <math|t>><label|thm:DS-scale>
@@ -2132,14 +2367,14 @@
     <math|G>,
 
     <\equation>
-      <label|eq:DS-scale>\<bbb-E\><rsup|\<bbb-P\>>*<around*|[|D<rsub|J<rsub|t>*h>*G<around|(|\<Phi\><rsub|t>|)>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>|\<rangle\>>|]>.
+      <label|eq:DS-scale>\<bbb-E\><rsup|\<bbb-P\>>*<around*|[|\<mathD\><rsub|J<rsub|t>*h>*G<around|(|\<Phi\><rsub|t>|)>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<Phi\><rsub|t>|)><space|0.17em><around|\<langle\>|h,K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>|\<rangle\>>|]>.
     </equation>
 
     At <math|t=T> this is the Dyson\USchwinger equation of
     <math|\<nu\><rsub|T>>,
 
     <\equation>
-      <label|eq:DS-terminal>\<bbb-E\><rsup|\<nu\><rsub|T>>*<around|[|D<rsub|h>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|T>><around*|[|G<space|0.17em><around|\<langle\>|h,K*\<varphi\>+\<mathD\>V<rsub|T><around|(|\<varphi\>|)>|\<rangle\>>|]>.
+      <label|eq:DS-terminal>\<bbb-E\><rsup|\<nu\><rsub|T>>*<around|[|\<mathD\><rsub|h>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|T>><around*|[|G<space|0.17em><around|\<langle\>|h,K*\<varphi\>+\<mathD\>V<rsub|T><around|(|\<varphi\>|)>|\<rangle\>>|]>.
     </equation>
   </theorem>
 
@@ -2153,7 +2388,7 @@
     direction <math|Q<rsub|t>*k> gives
 
     <\equation*>
-      \<bbb-E\><rsup|\<nu\><rsub|t>>*<around|[|D<rsub|Q<rsub|t>*k>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|t>>*<around|[|G*<around|(|<around|\<langle\>|k,\<varphi\>|\<rangle\>>+<around|\<langle\>|Q<rsub|t>*k,\<mathD\>V<rsub|t><around|(|\<varphi\>|)>|\<rangle\>>|)>|]>.
+      \<bbb-E\><rsup|\<nu\><rsub|t>>*<around|[|\<mathD\><rsub|Q<rsub|t>*k>*G|]>=\<bbb-E\><rsup|\<nu\><rsub|t>>*<around|[|G*<around|(|<around|\<langle\>|k,\<varphi\>|\<rangle\>>+<around|\<langle\>|Q<rsub|t>*k,\<mathD\>V<rsub|t><around|(|\<varphi\>|)>|\<rangle\>>|)>|]>.
     </equation*>
 
     Take <math|k=K*h>, so that <math|Q<rsub|t>*k=J<rsub|t>*h>, and recall
@@ -2180,6 +2415,64 @@
   the renormalised DS equation of<nbsp><cite|GH21>. Lecture<nbsp>6 proves the
   field equation at every resolution for the limit
   (Theorem<nbsp><hlink|18.9|cqft_lecture6.tm#thm:field-q>).
+
+  <paragraph|The field equation for the forecast> The same identity can be
+  written for the forecast. Substituting <math|\<Phi\><rsub|t>=\<psi\><rsub|t>-S<rsub|t>F<rsub|t>>
+  (<reference|eq:lambda-split>) in<nbsp><eqref|eq:eta>, and using
+  <math|K*S<rsub|t>=1-J<rsub|t>>, the smoothing operator disappears:
+
+  <\equation>
+    <label|eq:field-eq-forecast>K*\<psi\><rsub|t>=F<rsub|t>+\<eta\><rsub|t>,<space|2em>F<rsub|t>=-\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\><rsub|t>|)>.
+  </equation>
+
+  As <math|T\<to\>\<infty\>> the two forms of the field equation at
+  resolution <math|t> are
+
+  <\equation*>
+    A*\<Phi\><rsub|t>=\<mathe\><rsup|-A/t<rsup|2>>F<rsub|t>+\<eta\><rsub|t><space|1em><text|(Polchinski
+    process),><space|3em>A*\<psi\><rsub|t>+\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\><rsub|t>|)>=\<eta\><rsub|t><space|1em><text|(forecast).>
+  </equation*>
+
+  In the first, the force is smeared by <math|\<mathe\><rsup|-A/t<rsup|2>>>
+  so the nonlinearity is seen only through a smoothing operator. In the
+  second it acts on the same variable as the linear part, with no smoothing:
+  this is the Euler\ULagrange equation of the action
+  <math|<frac|1|2><around|\<langle\>|\<psi\>,A*\<psi\>|\<rangle\>>+\<Gamma\><rsub|t><around|(|\<psi\>|)>>,
+  forced by the noise <math|\<eta\><rsub|t>>. For <math|\<Phi\><rsup|4>>, at
+  finite <math|T> and to first order in <math|\<lambda\>>, the Wetterich
+  equation<nbsp><eqref|eq:wetterich-Gamma> gives
+  <math|\<Gamma\><rsub|t>\<approx\>V<rsub|T>+<frac|1|2><math-up|Tr><around|(|S<rsub|t>\<mathD\><rsup|2>V<rsub|T>|)>>,
+  and since <math|\<partial\><rsub|c>H<rsub|4>=-6*H<rsub|2>> and
+  <math|c<rsub|T>-S<rsub|t><around|(|x,x|)>=c<rsub|t>>, the one loop moves
+  the Wick ordering from the cutoff to the resolution:
+
+  <\equation*>
+    K*\<psi\><rsub|t>+4*\<lambda\>*H<rsub|3>*<around|(|\<psi\><rsub|t>;c<rsub|t>|)>+<around|(|<text|mass
+    counterterm and higher orders>|)>=\<eta\><rsub|t>.
+  </equation*>
+
+  The cube acts directly on the forecast, and pairing with
+  <math|\<psi\><rsub|t>> gives <math|<around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+4*\<lambda\>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>>,
+  where <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>
+  and <math|c<rsub|t>> is finite at fixed <math|t>: heuristically, a coercive
+  bound up to a volume constant, driven by the sub-Gaussian noise of
+  Section<nbsp><reference|sec:noise-bounds>. With the bare Wick ordering
+  <math|c<rsub|T>> the quadratic term would diverge; in <math|d=3> only the
+  mass counterterm <math|\<gamma\><rsub|T>>, of order
+  <math|\<lambda\><rsup|2>>, still does. In the form for
+  <math|\<Phi\><rsub|t>> the same positivity is hidden behind
+  <math|\<mathe\><rsup|-A/t<rsup|2>>>. The integration by parts
+  formula<nbsp><eqref|eq:DS-scale> also transfers: a functional of
+  <math|\<psi\><rsub|t>> is a functional of <math|\<Phi\><rsub|t>>, and
+  <math|\<mathD\><rsub|x>\<psi\><rsub|t>=<math-up|Cov><rsub|t>S<rsub|t><rsup|-1>>
+  (Proposition<nbsp><reference|prop:H-cov>), so
+
+  <\equation*>
+    \<bbb-E\><rsup|\<bbb-P\>><around*|[|G<around|(|\<psi\><rsub|t>|)><around|\<langle\>|h,K*\<psi\><rsub|t>-F<rsub|t>|\<rangle\>>|]>=\<bbb-E\><rsup|\<bbb-P\>><around*|[|\<mathD\><rsub|<math-up|Cov><rsub|t>\<cal-R\><rsub|t>h>G<around|(|\<psi\><rsub|t>|)>|]>.
+  </equation*>
+
+  The direction of differentiation is now random, the conditional covariance
+  applied to <math|\<cal-R\><rsub|t>h>.
 
   <\remark>
     <dueto|Comparison with stochastic quantisation>In parabolic or elliptic
@@ -2212,15 +2505,15 @@
 
   <\proof>
     <math|G> is <math|\<cal-F\><rsub|t>>-measurable, so
-    <math|\<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|t>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|\<langle\>|N<rsub|t>,h|\<rangle\>>|]>>.
-    By (<reference|eq:bridge>), <math|\<Phi\><rsub|s>=J<rsub|s>\<Phi\><rsub|T>+S<rsub|s>N<rsub|s>>,
-    and for <math|s\<leqslant\> t> the covariance of
-    <math|<around|\<langle\>|N<rsub|t>,h|\<rangle\>>> and
-    <math|<around|\<langle\>|S<rsub|s>N<rsub|s>,k|\<rangle\>>> is
-    <math|<around|\<langle\>|S<rsub|s>\<cal-R\><rsub|s>h,k|\<rangle\>>=<around|\<langle\>|J<rsub|s>h,k|\<rangle\>>>.
-    Apply Gaussian integration by parts in <math|N>, given
-    <math|\<Phi\><rsub|T>>. The last claim is the martingale property of
-    <math|\<eta\>>.
+    <math|\<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|t>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|\<langle\>|S<rsub|t><rsup|-1>\<zeta\><rsub|t>,h|\<rangle\>>|]>>.
+    By<nbsp><eqref|eq:bridge>, <math|\<Phi\><rsub|s>=J<rsub|s>\<Phi\><rsub|T>+\<zeta\><rsub|s>>,
+    the bridge covariance is <math|\<bbb-E\><around|[|\<zeta\><rsub|s>\<otimes\>\<zeta\><rsub|t>|]>=Q<rsub|s>K*S<rsub|t>>
+    for <math|s\<leqslant\> t>, so the covariance of
+    <math|<around|\<langle\>|S<rsub|t><rsup|-1>\<zeta\><rsub|t>,h|\<rangle\>>>
+    and <math|<around|\<langle\>|\<zeta\><rsub|s>,k|\<rangle\>>> is
+    <math|<around|\<langle\>|J<rsub|s>h,k|\<rangle\>>>. Apply Gaussian
+    integration by parts in <math|\<zeta\>>, given <math|\<Phi\><rsub|T>>.
+    The last claim is the martingale property of <math|\<eta\>>.
   </proof>
 
   <\remark>
@@ -2252,9 +2545,9 @@
 
   The noise observable <math|\<eta\><rsub|t>> is not Gaussian: it depends on
   the unknown law of the interacting field. But the filter says what it is,
-  the conditional expectation of the Gaussian noise <math|N<rsub|t>>, so its
-  moments are bounded by those of an explicit Gaussian, uniformly in the
-  interaction.
+  the conditional expectation of the rescaled bridge noise
+  <math|S<rsub|t><rsup|-1>\<zeta\><rsub|t>>, so its moments are bounded by
+  those of an explicit Gaussian, uniformly in the interaction.
 
   Work at finite cutoff, where <math|\<Phi\><rsub|t>> has a Lebesgue density
   <math|p<rsub|t>>, and let <math|0\<less\>t\<less\>T>. By
@@ -2288,7 +2581,7 @@
     <math|0\<less\>t\<less\>T>. Then
 
     <\equation*>
-      \<eta\><rsub|t>=\<bbb-E\><around*|[|J<rsub|t>*<around*|(|Q<rsub|t>*<around|(|1-J<rsub|t>|)>|)><rsup|-1>*\<zeta\><rsub|t><mid|\|>\<Phi\><rsub|t>|]>,
+      \<eta\><rsub|t>=\<bbb-E\><around*|[|S<rsub|t><rsup|-1>\<zeta\><rsub|t><mid|\|>\<Phi\><rsub|t>|]>,
     </equation*>
 
     and <math|\<eta\><rsub|t>> is dominated in the convex order by
@@ -2313,25 +2606,26 @@
   </proposition>
 
   <\proof>
-    Write <math|B=Q<rsub|t>*<around|(|1-J<rsub|t>|)>> and <math|g> for the
-    density of <math|N<around|(|0,B|)>>. Then
-    <math|p<rsub|t><around|(|a|)>=\<bbb-E\>*g<around|(|a-J<rsub|t>*\<Phi\><rsub|T>|)>>
-    and <math|\<mathD\>g<around|(|z|)>=-B<rsup|-1>*z*<space|0.17em>g<around|(|z|)>>,
+    Write <math|\<Sigma\><rsub|t>=Q<rsub|t>*<around|(|1-J<rsub|t>|)>>, so
+    that <math|J<rsub|t>\<Sigma\><rsub|t><rsup|-1>=S<rsub|t><rsup|-1>>, and
+    <math|g> for the density of <math|N<around|(|0,\<Sigma\><rsub|t>|)>>.
+    Then <math|p<rsub|t><around|(|a|)>=\<bbb-E\>*g<around|(|a-J<rsub|t>*\<Phi\><rsub|T>|)>>
+    and <math|\<mathD\>g<around|(|z|)>=-\<Sigma\><rsub|t><rsup|-1>*z*<space|0.17em>g<around|(|z|)>>,
     so
 
     <\equation*>
-      -\<mathD\>log p<rsub|t><around|(|\<Phi\><rsub|t>|)>=\<bbb-E\><around|[|B<rsup|-1>*\<zeta\><rsub|t><mid|\|>\<Phi\><rsub|t>|]>;
+      -\<mathD\>log p<rsub|t><around|(|\<Phi\><rsub|t>|)>=\<bbb-E\><around|[|\<Sigma\><rsub|t><rsup|-1>*\<zeta\><rsub|t><mid|\|>\<Phi\><rsub|t>|]>;
     </equation*>
 
     apply <math|J<rsub|t>> and use<nbsp><eqref|eq:noise-score>. By
     conditional Jensen,
 
     <\equation*>
-      \<Psi\><around|(|\<eta\><rsub|t>|)>\<leqslant\>\<bbb-E\><around|[|\<Psi\><around|(|J<rsub|t>*B<rsup|-1>*\<zeta\><rsub|t>|)><mid|\|>\<Phi\><rsub|t>|]>,
+      \<Psi\><around|(|\<eta\><rsub|t>|)>\<leqslant\>\<bbb-E\><around|[|\<Psi\><around|(|S<rsub|t><rsup|-1>*\<zeta\><rsub|t>|)><mid|\|>\<Phi\><rsub|t>|]>,
     </equation*>
 
-    and <math|J<rsub|t>*B<rsup|-1>*\<zeta\><rsub|t>> is centred Gaussian with
-    covariance <math|J<rsub|t>*B<rsup|-1>*J<rsub|t>=\<cal-R\><rsub|t>>.
+    and <math|S<rsub|t><rsup|-1>*\<zeta\><rsub|t>> is centred Gaussian with
+    covariance <math|S<rsub|t><rsup|-1>\<Sigma\><rsub|t>S<rsub|t><rsup|-1>=\<cal-R\><rsub|t>>.
   </proof>
 
   For the heat profile (compare<nbsp><eqref|eq:exp-regulator>),
@@ -2634,16 +2928,16 @@
     Proposition<nbsp><reference|prop:marginals>, for <math|G> of the form
     <math|G<rsub|t><around|(|\<Phi\><rsub|t>|)>> with <math|G<rsub|t>>
     solving<nbsp><eqref|eq:kolmogorov>. Show that the drift of
-    <math|D<rsub|J<rsub|t>*h>*G<rsub|t><around|(|\<Phi\><rsub|t>|)>> equals
-    the covariation of <math|G<rsub|t><around|(|\<Phi\><rsub|t>|)>> with
-    <math|<around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>>. Where is the
-    symmetry of <math|\<mathD\>F<rsub|t>> used?
+    <math|\<mathD\><rsub|J<rsub|t>*h>*G<rsub|t><around|(|\<Phi\><rsub|t>|)>>
+    equals the covariation of <math|G<rsub|t><around|(|\<Phi\><rsub|t>|)>>
+    with <math|<around|\<langle\>|h,\<eta\><rsub|t>|\<rangle\>>>. Where is
+    the symmetry of <math|\<mathD\>F<rsub|t>> used?
   </exercise>
 
   <\exercise>
     <dueto|Gaussian check>For <math|V<rsub|T>=0> show
     that<nbsp><eqref|eq:DS-scale> reduces to
-    <math|\<bbb-E\>*<around|[|D<rsub|Q<rsub|t>*K*h>*G<around|(|X<rsub|t>|)>|]>=\<bbb-E\><around|[|G<around|(|X<rsub|t>|)><around|\<langle\>|K*h,X<rsub|t>|\<rangle\>>|]>>,
+    <math|\<bbb-E\>*<around|[|\<mathD\><rsub|Q<rsub|t>*K*h>*G<around|(|X<rsub|t>|)>|]>=\<bbb-E\><around|[|G<around|(|X<rsub|t>|)><around|\<langle\>|K*h,X<rsub|t>|\<rangle\>>|]>>,
     and compare with the DS characterisation of the GFF in Lecture<nbsp>2.
   </exercise>
 
@@ -2936,8 +3230,8 @@
   <\exercise>
     <dueto|Commuting flows><label|ex:commutator> Show by direct computation
     that <math|\<mathD\>\<cal-P\><rsub|B><around|(|V|)><around|[|\<cal-P\><rsub|B<rprime|'>><around|(|V|)>|]>=\<mathD\>\<cal-P\><rsub|B<rprime|'>><around|(|V|)><around|[|\<cal-P\><rsub|B><around|(|V|)>|]>>.
-    Which property of <math|\<mathD\><rsup|2>V> and <math|D<rsup|3>*V> is
-    used?
+    Which property of <math|\<mathD\><rsup|2>V> and
+    <math|\<mathD\><rsup|3>*V> is used?
   </exercise>
 
   <\exercise>
@@ -3446,229 +3740,240 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|2>>
-    <associate|auto-10|<tuple|7.2|5>>
+    <associate|auto-1|<tuple|?|3>>
+    <associate|auto-10|<tuple|7.2|6>>
     <associate|auto-11|<tuple|1|6>>
-    <associate|auto-12|<tuple|2|6>>
-    <associate|auto-13|<tuple|3|6>>
-    <associate|auto-14|<tuple|4|6>>
+    <associate|auto-12|<tuple|2|7>>
+    <associate|auto-13|<tuple|3|7>>
+    <associate|auto-14|<tuple|4|7>>
     <associate|auto-15|<tuple|5|7>>
-    <associate|auto-16|<tuple|6|7>>
-    <associate|auto-17|<tuple|7|7>>
-    <associate|auto-18|<tuple|8|7>>
+    <associate|auto-16|<tuple|6|8>>
+    <associate|auto-17|<tuple|7|8>>
+    <associate|auto-18|<tuple|8|8>>
     <associate|auto-19|<tuple|7.3|8>>
     <associate|auto-2|<tuple|1|3>>
-    <associate|auto-20|<tuple|7.4|9>>
-    <associate|auto-21|<tuple|7.2|9>>
-    <associate|auto-22|<tuple|7.2|9>>
-    <associate|auto-23|<tuple|8|10>>
-    <associate|auto-24|<tuple|8.1|10>>
-    <associate|auto-25|<tuple|8.1|10>>
-    <associate|auto-26|<tuple|8.2|11>>
-    <associate|auto-27|<tuple|8.3|11>>
-    <associate|auto-28|<tuple|8.4|12>>
-    <associate|auto-29|<tuple|1|13>>
+    <associate|auto-20|<tuple|1|9>>
+    <associate|auto-21|<tuple|2|10>>
+    <associate|auto-22|<tuple|7.4|11>>
+    <associate|auto-23|<tuple|7.2|11>>
+    <associate|auto-24|<tuple|7.2|12>>
+    <associate|auto-25|<tuple|8|12>>
+    <associate|auto-26|<tuple|8.1|12>>
+    <associate|auto-27|<tuple|8.1|13>>
+    <associate|auto-28|<tuple|8.2|13>>
+    <associate|auto-29|<tuple|8.3|14>>
     <associate|auto-3|<tuple|2|3>>
-    <associate|auto-30|<tuple|8.2|13>>
-    <associate|auto-31|<tuple|8.5|13>>
-    <associate|auto-32|<tuple|1|14>>
-    <associate|auto-33|<tuple|2|14>>
-    <associate|auto-34|<tuple|3|14>>
-    <associate|auto-35|<tuple|4|15>>
-    <associate|auto-36|<tuple|8.3|15>>
-    <associate|auto-37|<tuple|8.6|15>>
-    <associate|auto-38|<tuple|8.4|16>>
-    <associate|auto-39|<tuple|1|17>>
+    <associate|auto-30|<tuple|1|14>>
+    <associate|auto-31|<tuple|8.4|15>>
+    <associate|auto-32|<tuple|1|15>>
+    <associate|auto-33|<tuple|8.2|16>>
+    <associate|auto-34|<tuple|8.5|16>>
+    <associate|auto-35|<tuple|1|16>>
+    <associate|auto-36|<tuple|2|17>>
+    <associate|auto-37|<tuple|3|17>>
+    <associate|auto-38|<tuple|4|17>>
+    <associate|auto-39|<tuple|8.3|18>>
     <associate|auto-4|<tuple|3|3>>
-    <associate|auto-40|<tuple|8.5|17>>
-    <associate|auto-41|<tuple|8.7|17>>
-    <associate|auto-42|<tuple|1|17>>
-    <associate|auto-43|<tuple|2|18>>
-    <associate|auto-44|<tuple|8.17|18>>
-    <associate|auto-45|<tuple|9|19>>
-    <associate|auto-46|<tuple|9.1|19>>
-    <associate|auto-47|<tuple|1|19>>
-    <associate|auto-48|<tuple|9.2|19>>
-    <associate|auto-49|<tuple|9.3|20>>
+    <associate|auto-40|<tuple|8.6|18>>
+    <associate|auto-41|<tuple|8.4|19>>
+    <associate|auto-42|<tuple|1|20>>
+    <associate|auto-43|<tuple|8.5|20>>
+    <associate|auto-44|<tuple|8.7|20>>
+    <associate|auto-45|<tuple|1|20>>
+    <associate|auto-46|<tuple|2|21>>
+    <associate|auto-47|<tuple|8.17|21>>
+    <associate|auto-48|<tuple|9|22>>
+    <associate|auto-49|<tuple|9.1|22>>
     <associate|auto-5|<tuple|3|3>>
-    <associate|auto-50|<tuple|1|21>>
-    <associate|auto-51|<tuple|2|22>>
-    <associate|auto-52|<tuple|3|22>>
-    <associate|auto-53|<tuple|9.4|22>>
-    <associate|auto-54|<tuple|1|23>>
-    <associate|auto-55|<tuple|9.14|24>>
-    <associate|auto-56|<tuple|9.5|24>>
-    <associate|auto-57|<tuple|A|24>>
-    <associate|auto-58|<tuple|A.1|24>>
-    <associate|auto-59|<tuple|A.2|25>>
+    <associate|auto-50|<tuple|1|22>>
+    <associate|auto-51|<tuple|9.2|22>>
+    <associate|auto-52|<tuple|1|23>>
+    <associate|auto-53|<tuple|9.3|24>>
+    <associate|auto-54|<tuple|1|25>>
+    <associate|auto-55|<tuple|2|25>>
+    <associate|auto-56|<tuple|3|26>>
+    <associate|auto-57|<tuple|9.4|26>>
+    <associate|auto-58|<tuple|1|26>>
+    <associate|auto-59|<tuple|9.15|27>>
     <associate|auto-6|<tuple|7|3>>
-    <associate|auto-60|<tuple|A.1|25>>
-    <associate|auto-61|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
-    <associate|auto-62|<tuple|B|26>>
-    <associate|auto-63|<tuple|1|26>>
-    <associate|auto-64|<tuple|B.1|27>>
-    <associate|auto-65|<tuple|1|27>>
-    <associate|auto-66|<tuple|2|27>>
-    <associate|auto-67|<tuple|3|28>>
-    <associate|auto-68|<tuple|4|29>>
-    <associate|auto-69|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-60|<tuple|9.5|28>>
+    <associate|auto-61|<tuple|A|28>>
+    <associate|auto-62|<tuple|A.1|28>>
+    <associate|auto-63|<tuple|A.2|28>>
+    <associate|auto-64|<tuple|A.1|29>>
+    <associate|auto-65|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-66|<tuple|B|30>>
+    <associate|auto-67|<tuple|1|30>>
+    <associate|auto-68|<tuple|B.1|30>>
+    <associate|auto-69|<tuple|1|30>>
     <associate|auto-7|<tuple|7.1|4>>
-    <associate|auto-70|<tuple|B.2|29>>
-    <associate|auto-8|<tuple|1|4>>
+    <associate|auto-70|<tuple|2|31>>
+    <associate|auto-71|<tuple|3|32>>
+    <associate|auto-72|<tuple|4|32>>
+    <associate|auto-73|<tuple|<with|mode|<quote|math>|\<bullet\>>|33>>
+    <associate|auto-74|<tuple|B.2|33>>
+    <associate|auto-8|<tuple|1|5>>
     <associate|auto-9|<tuple|7.1|5>>
-    <associate|bib-ALZ06|<tuple|ALZ06|29>>
-    <associate|bib-BB19|<tuple|BB19|29>>
-    <associate|bib-BB21|<tuple|BB21|29>>
-    <associate|bib-BBD24|<tuple|BBD24|29>>
-    <associate|bib-BCG26|<tuple|BCG26|30>>
-    <associate|bib-BD98|<tuple|BD98|30>>
-    <associate|bib-BG20|<tuple|BG20|30>>
-    <associate|bib-BG21|<tuple|BG21|30>>
-    <associate|bib-BG23|<tuple|BG23|30>>
-    <associate|bib-BK87|<tuple|BK87|30>>
-    <associate|bib-BL76|<tuple|BL76|30>>
-    <associate|bib-BTW02|<tuple|BTW02|30>>
-    <associate|bib-Bis73|<tuple|Bis73|30>>
-    <associate|bib-CE22|<tuple|CE22|30>>
-    <associate|bib-Che21|<tuple|Che21|30>>
-    <associate|bib-EMS22|<tuple|EMS22|30>>
-    <associate|bib-Eld13|<tuple|Eld13|30>>
-    <associate|bib-Eld23|<tuple|Eld23|30>>
-    <associate|bib-FS06|<tuple|FS06|30>>
-    <associate|bib-GH21|<tuple|GH21|30>>
-    <associate|bib-GJS75|<tuple|GJS75|30>>
-    <associate|bib-JL01|<tuple|JL01|30>>
-    <associate|bib-JL64|<tuple|JL64|30>>
-    <associate|bib-JL75|<tuple|JL75|30>>
-    <associate|bib-KL22|<tuple|KL22|30>>
-    <associate|bib-KL24|<tuple|KL24|30>>
-    <associate|bib-Kla23|<tuple|Kla23|30>>
-    <associate|bib-MY99|<tuple|MY99|31>>
-    <associate|bib-Mon23|<tuple|Mon23|30>>
-    <associate|bib-Mor94|<tuple|Mor94|31>>
-    <associate|bib-PBGM62|<tuple|PBGM62|31>>
-    <associate|bib-Pen90|<tuple|Pen90|31>>
-    <associate|bib-Pol84|<tuple|Pol84|31>>
-    <associate|bib-Sal99|<tuple|Sal99|31>>
-    <associate|bib-Wet93|<tuple|Wet93|31>>
-    <associate|bib-YZ99|<tuple|YZ99|31>>
-    <associate|cor:DS-path|<tuple|9.3|20>>
+    <associate|bib-ALZ06|<tuple|ALZ06|33>>
+    <associate|bib-BB19|<tuple|BB19|33>>
+    <associate|bib-BB21|<tuple|BB21|33>>
+    <associate|bib-BBD24|<tuple|BBD24|33>>
+    <associate|bib-BCG26|<tuple|BCG26|33>>
+    <associate|bib-BD98|<tuple|BD98|33>>
+    <associate|bib-BG20|<tuple|BG20|33>>
+    <associate|bib-BG21|<tuple|BG21|33>>
+    <associate|bib-BG23|<tuple|BG23|33>>
+    <associate|bib-BK87|<tuple|BK87|33>>
+    <associate|bib-BL76|<tuple|BL76|33>>
+    <associate|bib-BTW02|<tuple|BTW02|33>>
+    <associate|bib-Bis73|<tuple|Bis73|33>>
+    <associate|bib-CE22|<tuple|CE22|33>>
+    <associate|bib-Che21|<tuple|Che21|33>>
+    <associate|bib-EMS22|<tuple|EMS22|34>>
+    <associate|bib-Eld13|<tuple|Eld13|34>>
+    <associate|bib-Eld23|<tuple|Eld23|34>>
+    <associate|bib-FS06|<tuple|FS06|34>>
+    <associate|bib-GH21|<tuple|GH21|34>>
+    <associate|bib-GJS75|<tuple|GJS75|34>>
+    <associate|bib-JL01|<tuple|JL01|34>>
+    <associate|bib-JL64|<tuple|JL64|34>>
+    <associate|bib-JL75|<tuple|JL75|34>>
+    <associate|bib-KL22|<tuple|KL22|34>>
+    <associate|bib-KL24|<tuple|KL24|34>>
+    <associate|bib-Kla23|<tuple|Kla23|34>>
+    <associate|bib-MY99|<tuple|MY99|34>>
+    <associate|bib-Mon23|<tuple|Mon23|34>>
+    <associate|bib-Mor94|<tuple|Mor94|34>>
+    <associate|bib-PBGM62|<tuple|PBGM62|34>>
+    <associate|bib-Pen90|<tuple|Pen90|34>>
+    <associate|bib-Pol84|<tuple|Pol84|34>>
+    <associate|bib-Sal99|<tuple|Sal99|34>>
+    <associate|bib-Wet93|<tuple|Wet93|34>>
+    <associate|bib-YZ99|<tuple|YZ99|34>>
+    <associate|cor:DS-path|<tuple|9.3|23>>
     <associate|eq:BD|<tuple|7.9|6>>
-    <associate|eq:DS-path|<tuple|9.8|20>>
-    <associate|eq:DS-scale|<tuple|9.5|19>>
-    <associate|eq:DS-terminal|<tuple|9.6|19>>
-    <associate|eq:EL|<tuple|7.11|6>>
-    <associate|eq:F-gradient|<tuple|8.11|14>>
-    <associate|eq:Gt|<tuple|9.1|19>>
-    <associate|eq:Lambda|<tuple|9.10|21>>
-    <associate|eq:PB|<tuple|A.3|24>>
-    <associate|eq:RG-map|<tuple|A.1|24>>
+    <associate|eq:DS-path|<tuple|9.9|23>>
+    <associate|eq:DS-scale|<tuple|9.5|22>>
+    <associate|eq:DS-terminal|<tuple|9.6|22>>
+    <associate|eq:EL|<tuple|7.11|7>>
+    <associate|eq:F-gradient|<tuple|8.11|17>>
+    <associate|eq:Gt|<tuple|9.1|22>>
+    <associate|eq:K-HJ|<tuple|7.19|10>>
+    <associate|eq:Lambda|<tuple|9.11|24>>
+    <associate|eq:PB|<tuple|A.3|28>>
+    <associate|eq:RG-map|<tuple|A.1|28>>
     <associate|eq:Vt|<tuple|7.3|4>>
-    <associate|eq:bridge|<tuple|7.14|8>>
-    <associate|eq:burgers|<tuple|8.1|10>>
-    <associate|eq:constrained|<tuple|8.16|18>>
-    <associate|eq:coord|<tuple|8.5|11>>
-    <associate|eq:cov-dynamics|<tuple|8.9|12>>
-    <associate|eq:cumulants|<tuple|A.4|25>>
-    <associate|eq:eta|<tuple|9.4|19>>
-    <associate|eq:exp-regulator|<tuple|8.15|16>>
-    <associate|eq:fbsde|<tuple|7.6|4>>
-    <associate|eq:fbsde-inf|<tuple|9.13|22>>
-    <associate|eq:fbsde-system|<tuple|7.7|4>>
-    <associate|eq:field-eq-scale|<tuple|9.7|20>>
-    <associate|eq:first-order|<tuple|A.5|25>>
-    <associate|eq:force-integrand|<tuple|9.12|22>>
-    <associate|eq:free-action|<tuple|8.10|14>>
-    <associate|eq:gammaT|<tuple|A.7|26>>
-    <associate|eq:generating|<tuple|7.12|6>>
-    <associate|eq:hopf-lax|<tuple|8.17|18>>
-    <associate|eq:kolmogorov|<tuple|9.2|19>>
-    <associate|eq:lambda-split|<tuple|8.4|11>>
+    <associate|eq:bridge|<tuple|7.14|9>>
+    <associate|eq:burgers|<tuple|8.1|12>>
+    <associate|eq:constrained|<tuple|8.16|21>>
+    <associate|eq:coord|<tuple|8.5|14>>
+    <associate|eq:cov-dynamics|<tuple|8.9|15>>
+    <associate|eq:cumulants|<tuple|A.4|28>>
+    <associate|eq:eta|<tuple|9.4|22>>
+    <associate|eq:exp-regulator|<tuple|8.15|19>>
+    <associate|eq:fbsde|<tuple|7.6|5>>
+    <associate|eq:fbsde-inf|<tuple|9.14|26>>
+    <associate|eq:fbsde-system|<tuple|7.7|5>>
+    <associate|eq:field-eq-forecast|<tuple|9.8|23>>
+    <associate|eq:field-eq-scale|<tuple|9.7|23>>
+    <associate|eq:first-order|<tuple|A.5|28>>
+    <associate|eq:force-integrand|<tuple|9.13|26>>
+    <associate|eq:free-action|<tuple|8.10|17>>
+    <associate|eq:gammaT|<tuple|A.7|29>>
+    <associate|eq:generating|<tuple|7.12|7>>
+    <associate|eq:hopf-lax|<tuple|8.17|21>>
+    <associate|eq:kolmogorov|<tuple|9.2|22>>
+    <associate|eq:lambda-split|<tuple|8.4|13>>
     <associate|eq:localisation|<tuple|7.5|4>>
-    <associate|eq:lsi-cov|<tuple|B.1|27>>
-    <associate|eq:measurement|<tuple|7.15|8>>
-    <associate|eq:moreau|<tuple|8.12|14>>
-    <associate|eq:noise-mgf|<tuple|9.11|21>>
-    <associate|eq:noise-score|<tuple|9.9|20>>
+    <associate|eq:lsi-cov|<tuple|B.1|31>>
+    <associate|eq:measurement|<tuple|7.18|10>>
+    <associate|eq:moreau|<tuple|8.12|17>>
+    <associate|eq:noise-mgf|<tuple|9.12|24>>
+    <associate|eq:noise-score|<tuple|9.10|24>>
     <associate|eq:nuT|<tuple|7.2|3>>
     <associate|eq:nut|<tuple|7.4|4>>
+    <associate|eq:observation|<tuple|7.15|9>>
     <associate|eq:phi4-VT|<tuple|7.1|3>>
-    <associate|eq:polchinski|<tuple|7.8|5>>
-    <associate|eq:psi|<tuple|8.2|11>>
-    <associate|eq:psi-noise|<tuple|8.3|11>>
-    <associate|eq:relative-vp|<tuple|9.14|23>>
-    <associate|eq:response|<tuple|8.6|11>>
-    <associate|eq:second-order|<tuple|A.6|25>>
-    <associate|eq:semigroup|<tuple|A.2|24>>
-    <associate|eq:shear|<tuple|7.13|7>>
-    <associate|eq:tangent|<tuple|9.3|19>>
-    <associate|eq:transformed-fbsde|<tuple|8.7|12>>
-    <associate|eq:transformed-flow|<tuple|8.8|12>>
+    <associate|eq:polchinski|<tuple|7.8|6>>
+    <associate|eq:posterior|<tuple|7.16|9>>
+    <associate|eq:psi|<tuple|8.2|13>>
+    <associate|eq:psi-noise|<tuple|8.3|13>>
+    <associate|eq:relative-vp|<tuple|9.15|26>>
+    <associate|eq:response|<tuple|8.6|14>>
+    <associate|eq:reversal|<tuple|7.17|10>>
+    <associate|eq:second-order|<tuple|A.6|29>>
+    <associate|eq:semigroup|<tuple|A.2|28>>
+    <associate|eq:shear|<tuple|7.13|8>>
+    <associate|eq:tangent|<tuple|9.3|22>>
+    <associate|eq:transformed-fbsde|<tuple|8.7|14>>
+    <associate|eq:transformed-flow|<tuple|8.8|14>>
     <associate|eq:verification|<tuple|7.10|6>>
-    <associate|eq:wetterich|<tuple|8.14|15>>
-    <associate|eq:wetterich-Gamma|<tuple|8.13|15>>
-    <associate|ex:1PI|<tuple|8.6|18>>
-    <associate|ex:brascamp-lieb|<tuple|8.9|18>>
-    <associate|ex:characteristics|<tuple|8.1|18>>
-    <associate|ex:commutator|<tuple|A.1|26>>
-    <associate|ex:doob|<tuple|9.1|24>>
-    <associate|ex:envelope|<tuple|8.4|18>>
-    <associate|ex:free-action|<tuple|8.10|18>>
-    <associate|ex:loc-poincare|<tuple|B.2|29>>
-    <associate|ex:lsi|<tuple|B.1|29>>
-    <associate|ex:pontryagin|<tuple|7.3|10>>
-    <associate|ex:power-counting|<tuple|A.3|26>>
-    <associate|ex:quadratic|<tuple|7.1|9>>
-    <associate|ex:regulators|<tuple|8.8|18>>
-    <associate|ex:relative-vp|<tuple|9.2|24>>
-    <associate|ex:subgauss|<tuple|9.5|24>>
-    <associate|ex:sunset|<tuple|A.2|26>>
-    <associate|ex:zero-dim|<tuple|7.2|9>>
+    <associate|eq:wetterich|<tuple|8.14|18>>
+    <associate|eq:wetterich-Gamma|<tuple|8.13|18>>
+    <associate|ex:1PI|<tuple|8.6|21>>
+    <associate|ex:brascamp-lieb|<tuple|8.9|21>>
+    <associate|ex:characteristics|<tuple|8.1|21>>
+    <associate|ex:commutator|<tuple|A.1|29>>
+    <associate|ex:doob|<tuple|9.1|27>>
+    <associate|ex:envelope|<tuple|8.4|21>>
+    <associate|ex:free-action|<tuple|8.10|21>>
+    <associate|ex:loc-poincare|<tuple|B.2|33>>
+    <associate|ex:lsi|<tuple|B.1|33>>
+    <associate|ex:pontryagin|<tuple|7.3|12>>
+    <associate|ex:power-counting|<tuple|A.3|30>>
+    <associate|ex:quadratic|<tuple|7.1|12>>
+    <associate|ex:regulators|<tuple|8.8|21>>
+    <associate|ex:relative-vp|<tuple|9.2|27>>
+    <associate|ex:subgauss|<tuple|9.5|28>>
+    <associate|ex:sunset|<tuple|A.2|30>>
+    <associate|ex:zero-dim|<tuple|7.2|12>>
     <associate|fig:fbsde-flow|<tuple|7.1|5>>
-    <associate|fig:localisation|<tuple|8.2|13>>
-    <associate|fig:polchinski-0d|<tuple|7.2|9>>
-    <associate|fig:polchinski-graphs|<tuple|8.1|10>>
-    <associate|fig:regulator|<tuple|8.5|17>>
-    <associate|fig:second-order|<tuple|A.1|25>>
-    <associate|fig:shear|<tuple|8.3|15>>
-    <associate|fig:wetterich-graphs|<tuple|8.4|16>>
-    <associate|prop:H-cov|<tuple|8.3|12>>
-    <associate|prop:filtering|<tuple|7.6|8>>
-    <associate|prop:flat|<tuple|A.1|24>>
-    <associate|prop:legendre|<tuple|8.5|16>>
-    <associate|prop:loc-poincare|<tuple|B.2|28>>
+    <associate|fig:localisation|<tuple|8.2|16>>
+    <associate|fig:polchinski-0d|<tuple|7.2|11>>
+    <associate|fig:polchinski-graphs|<tuple|8.1|13>>
+    <associate|fig:regulator|<tuple|8.5|20>>
+    <associate|fig:second-order|<tuple|A.1|29>>
+    <associate|fig:shear|<tuple|8.3|18>>
+    <associate|fig:wetterich-graphs|<tuple|8.4|19>>
+    <associate|prop:H-cov|<tuple|8.3|15>>
+    <associate|prop:filtering|<tuple|7.6|9>>
+    <associate|prop:flat|<tuple|A.1|28>>
+    <associate|prop:legendre|<tuple|8.5|19>>
+    <associate|prop:loc-poincare|<tuple|B.2|32>>
     <associate|prop:marginals|<tuple|7.2|4>>
-    <associate|prop:psi|<tuple|8.1|11>>
-    <associate|prop:relative-vp|<tuple|9.7|23>>
-    <associate|prop:second-order|<tuple|A.2|25>>
-    <associate|prop:subgauss|<tuple|9.5|21>>
-    <associate|rem:noise-pathwise|<tuple|9.6|22>>
-    <associate|sec:DS|<tuple|9.2|19>>
-    <associate|sec:algebra|<tuple|A|24>>
-    <associate|sec:burgers|<tuple|8.1|10>>
-    <associate|sec:control|<tuple|7.2|5>>
+    <associate|prop:psi|<tuple|8.1|13>>
+    <associate|prop:relative-vp|<tuple|9.7|26>>
+    <associate|prop:reversal|<tuple|7.7|10>>
+    <associate|prop:second-order|<tuple|A.2|29>>
+    <associate|prop:subgauss|<tuple|9.5|24>>
+    <associate|rem:measurement|<tuple|7.8|10>>
+    <associate|rem:noise-pathwise|<tuple|9.6|25>>
+    <associate|sec:DS|<tuple|9.2|22>>
+    <associate|sec:algebra|<tuple|A|28>>
+    <associate|sec:burgers|<tuple|8.1|12>>
+    <associate|sec:control|<tuple|7.2|6>>
     <associate|sec:filtering|<tuple|7.3|8>>
-    <associate|sec:generator|<tuple|8.5|13>>
-    <associate|sec:infinite-volume|<tuple|9.4|22>>
-    <associate|sec:legendre|<tuple|8.6|15>>
-    <associate|sec:localisation|<tuple|B|26>>
-    <associate|sec:lsi|<tuple|B.1|27>>
-    <associate|sec:meet|<tuple|7.4|9>>
-    <associate|sec:moments|<tuple|8.4|12>>
-    <associate|sec:noise-bounds|<tuple|9.3|20>>
-    <associate|sec:observables|<tuple|9|19>>
-    <associate|sec:pert|<tuple|A.2|25>>
+    <associate|sec:generator|<tuple|8.5|16>>
+    <associate|sec:infinite-volume|<tuple|9.4|26>>
+    <associate|sec:legendre|<tuple|8.6|18>>
+    <associate|sec:localisation|<tuple|B|30>>
+    <associate|sec:lsi|<tuple|B.1|30>>
+    <associate|sec:meet|<tuple|7.4|11>>
+    <associate|sec:moments|<tuple|8.4|15>>
+    <associate|sec:noise-bounds|<tuple|9.3|24>>
+    <associate|sec:observables|<tuple|9|22>>
+    <associate|sec:pert|<tuple|A.2|28>>
     <associate|sec:polchinski|<tuple|7|3>>
     <associate|sec:rg|<tuple|7.1|4>>
-    <associate|sec:tree|<tuple|8.7|17>>
-    <associate|sec:wetterich|<tuple|8|10>>
+    <associate|sec:tree|<tuple|8.7|20>>
+    <associate|sec:wetterich|<tuple|8|12>>
     <associate|thm:BD|<tuple|7.5|6>>
-    <associate|thm:DS-scale|<tuple|9.1|19>>
-    <associate|thm:fbsde|<tuple|7.3|4>>
-    <associate|thm:lsi|<tuple|B.1|27>>
-    <associate|thm:polchinski|<tuple|7.4|5>>
-    <associate|thm:transformed|<tuple|8.2|12>>
-    <associate|thm:wetterich|<tuple|8.4|15>>
+    <associate|thm:DS-scale|<tuple|9.1|22>>
+    <associate|thm:fbsde|<tuple|7.3|5>>
+    <associate|thm:lsi|<tuple|B.1|31>>
+    <associate|thm:polchinski|<tuple|7.4|6>>
+    <associate|thm:transformed|<tuple|8.2|14>>
+    <associate|thm:wetterich|<tuple|8.4|18>>
   </collection>
 </references>
 
@@ -3718,6 +4023,12 @@
       Eld13
 
       Eld23
+
+      Eld13
+
+      Eld23
+
+      BBD24
 
       BBD24
 
@@ -3842,7 +4153,7 @@
       which split between the two wells (stochastic localisation). Right:
       histogram of <with|mode|<quote|math>|\<Phi\><rsub|T>>
       (<with|mode|<quote|math>|2\<cdot\>10<rsup|4>> paths) against the
-      density of <with|mode|<quote|math>|\<nu\><rsub|T>>.>|<pageref|auto-21>>
+      density of <with|mode|<quote|math>|\<nu\><rsub|T>>.>|<pageref|auto-23>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.1>||The Polchinski
       equation <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-shape|<quote|right>|(<reference|eq:polchinski>)>
@@ -3855,7 +4166,7 @@
       The first term joins two blobs and makes a tree; the second closes a
       loop on one blob. Integrating from <with|mode|<quote|math>|V<rsub|T>>
       and iterating generates the connected Feynman graphs, with lines
-      <with|mode|<quote|math>|Q<rsub|T,t>>.>|<pageref|auto-25>>
+      <with|mode|<quote|math>|Q<rsub|T,t>>.>|<pageref|auto-27>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.2>||Stochastic
       localisation for a two-component field:
@@ -3873,7 +4184,7 @@
       <with|mode|<quote|math>|<with|mode|<quote|text>|<with|font-family|<quote|rm>|font-shape|<quote|right>|Cov>><rsub|t>>.
       At low resolution the conditional law covers both wells; as
       <with|mode|<quote|math>|t> grows it localises on one of
-      them.>|<pageref|auto-30>>
+      them.>|<pageref|auto-33>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.3>||The
       zero-dimensional model of Figure <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><reference|fig:polchinski-0d>
@@ -3885,12 +4196,12 @@
       Right: the bare potential <with|mode|<quote|math>|V<rsub|T>>, the
       effective potential <with|mode|<quote|math>|V<rsub|t>> and
       <with|mode|<quote|math>|\<Gamma\><rsub|t>>, each shifted to have
-      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-36>>
+      minimum <with|mode|<quote|math>|0>.>|<pageref|auto-39>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.4>||The Wetterich
       equation <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-shape|<quote|right>|(<reference|eq:wetterich>)>
       as graphs. The double line is the full response
-      <with|mode|<quote|math>|<around|(|D<rsup|2>\<Gamma\><rsup|<with|mode|<quote|text>|<with|font-family|<quote|rm>|font-shape|<quote|right>|EAA>>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>=<around|(|S<rsub|t><rsup|-1>+D<rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>>
+      <with|mode|<quote|math>|<around|(|\<mathD\><rsup|2>\<Gamma\><rsup|<with|mode|<quote|text>|<with|font-family|<quote|rm>|font-shape|<quote|right>|EAA>>><rsub|t>+\<cal-R\><rsub|t>|)><rsup|-1>=<around|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>>
       and the crossed circle is one insertion of
       <with|mode|<quote|math>|<wide|\<cal-R\>|\<dot\>><rsub|t>>. There is
       exactly one loop: the tree term of Figure
@@ -3898,14 +4209,14 @@
       has been absorbed by the Legendre transform. Each field derivative
       brings down a higher vertex, so the hierarchy does not close at a
       finite order. The bottom row expands the response around
-      <with|mode|<quote|math>|S<rsub|t>>.>|<pageref|auto-38>>
+      <with|mode|<quote|math>|S<rsub|t>>.>|<pageref|auto-41>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8.5>||The regulator
       <with|mode|<quote|math>|\<cal-R\><rsub|t>> of the heat profile
       (<with|mode|<quote|math>|T=\<infty\>>, <with|mode|<quote|math>|m=1>):
       close to the mass term <with|mode|<quote|math>|t<rsup|2>> (dotted) on
       the modes <with|mode|<quote|math>|<around|\||k|\|>\<ll\>t>,
-      exponentially small on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-40>>
+      exponentially small on the modes <with|mode|<quote|math>|<around|\||k|\|>\<gg\>t>.>|<pageref|auto-43>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|A.1>||The terms
       <with|mode|<quote|math>|k=1,2,3,4> of
@@ -3916,7 +4227,7 @@
       in <with|mode|<quote|math>|d=3>, only the sunset,
       <with|mode|<quote|math>|k=3>, is a non-integrable divergence for the
       <with|mode|<quote|math>|:\<varphi\><rsup|2>:> term; it is cancelled by
-      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-60>>
+      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-64>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -3993,185 +4304,202 @@
       field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19>>
 
-      <with|par-left|<quote|1tab>|7.4<space|2spc>Where the three views meet
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20>>
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The terminal
+      field as a hidden signal <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20>>>
 
-      <with|par-left|<quote|1tab>|Exercises
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Generation by
+      denoising <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21>>>
+
+      <with|par-left|<quote|1tab>|7.4<space|2spc>Where the three views meet
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-22>>
 
+      <with|par-left|<quote|1tab>|Exercises
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-24>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Force
       coordinates and potentials> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23><vspace|0.5fn>
+      <no-break><pageref|auto-25><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|8.1<space|2spc>The force and a Burgers
       equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-26>>
 
       <with|par-left|<quote|1tab>|8.2<space|2spc>Removing the predictable
       drift <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-26>>
+      <no-break><pageref|auto-28>>
 
       <with|par-left|<quote|1tab>|8.3<space|2spc>The FBSDE in the forecast
       coordinate <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-27>>
+      <no-break><pageref|auto-29>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|A
+      one-dimensional model: Burgers and Lax\UOleinik
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-30>>>
 
       <with|par-left|<quote|1tab>|8.4<space|2spc>Conditional moments
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28>>
+      <no-break><pageref|auto-31>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Brascamp\ULieb
       and Cramér\URao bounds <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>>
+      <no-break><pageref|auto-32>>>
 
       <with|par-left|<quote|1tab>|8.5<space|2spc>Potentials: the value
       function as a generator <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-34>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Phase space
       and Lagrangian graphs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>>
+      <no-break><pageref|auto-35>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The free
       action generates the shear <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-33>>>
+      <no-break><pageref|auto-36>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The value
       function generates the graph <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34>>>
+      <no-break><pageref|auto-37>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|No convexity
       is needed <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35>>>
+      <no-break><pageref|auto-38>>>
 
       <with|par-left|<quote|1tab>|8.6<space|2spc>The Legendre transform and
       Wetterich's equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37>>
+      <no-break><pageref|auto-40>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Probabilistic
       meaning of <with|mode|<quote|math>|\<Gamma\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39>>>
+      <no-break><pageref|auto-42>>>
 
       <with|par-left|<quote|1tab>|8.7<space|2spc>Variational meaning and the
       tree level <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-41>>
+      <no-break><pageref|auto-44>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Constrained
       free energies <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>>>
+      <no-break><pageref|auto-45>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The tree level
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>>
+      <no-break><pageref|auto-46>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44>>
+      <no-break><pageref|auto-47>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Observables
       and field equations> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45><vspace|0.5fn>
+      <no-break><pageref|auto-48><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|9.1<space|2spc>Observables of the
       interacting theory <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>
+      <no-break><pageref|auto-49>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Tangent
       observables <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>>
+      <no-break><pageref|auto-50>>>
 
       <with|par-left|<quote|1tab>|9.2<space|2spc>The field equation at every
       resolution <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-51>>
+
+      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The field
+      equation for the forecast <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-52>>>
 
       <with|par-left|<quote|1tab>|9.3<space|2spc>Gaussian bounds for the
       noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49>>
+      <no-break><pageref|auto-53>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The roughness
       of the noise <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>>
+      <no-break><pageref|auto-54>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Control of the
       force <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51>>>
+      <no-break><pageref|auto-55>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Consequence
       for <with|mode|<quote|math>|\<Phi\><rsup|4><rsub|3>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-52>>>
+      <no-break><pageref|auto-56>>>
 
       <with|par-left|<quote|1tab>|9.4<space|2spc>Infinite volume
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-57>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Differences of
       free energies <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54>>>
+      <no-break><pageref|auto-58>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>
+      <no-break><pageref|auto-59>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendices:
       additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-56><vspace|0.5fn>
+      <no-break><pageref|auto-60><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       A<space|2spc>Algebraic structure of the Polchinski flow>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57><vspace|0.5fn>
+      <no-break><pageref|auto-61><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|A.1<space|2spc>A semigroup of
       renormalisation maps <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>
+      <no-break><pageref|auto-62>>
 
       <with|par-left|<quote|1tab>|A.2<space|2spc>Perturbation theory and
       counterterms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-59>>
+      <no-break><pageref|auto-63>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-61>>
+      <no-break><pageref|auto-65>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       B<space|2spc>Stochastic localisation>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-62><vspace|0.5fn>
+      <no-break><pageref|auto-66><vspace|0.5fn>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Why it is
       useful <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-63>>>
+      <no-break><pageref|auto-67>>>
 
       <with|par-left|<quote|1tab>|B.1<space|2spc>Log-Sobolev inequalities
       along the localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-64>>
+      <no-break><pageref|auto-68>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Entropy as
       quadratic variation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-65>>>
+      <no-break><pageref|auto-69>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|In terms of
       the conditional covariance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-66>>>
+      <no-break><pageref|auto-70>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|An
       application: the KLS conjecture <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-67>>>
+      <no-break><pageref|auto-71>>>
 
       <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|The connection
       with Bauerschmidt\UBodineau <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-68>>>
+      <no-break><pageref|auto-72>>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-69>>
+      <no-break><pageref|auto-73>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-70><vspace|0.5fn>
+      <no-break><pageref|auto-74><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

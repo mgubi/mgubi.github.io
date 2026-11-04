@@ -423,7 +423,8 @@
   <\proposition>
     <dueto|Posterior, forecast and innovation><label|prop:posterior>At every
     fixed <math|N>, by Proposition<nbsp><hlink|7.6|cqft_lecture4.tm#prop:filtering>
-    of Lecture<nbsp>4:
+    and Remark<nbsp><hlink|7.8|cqft_lecture4.tm#rem:measurement> of
+    Lecture<nbsp>4:
 
     <\enumerate-alpha>
       <item>the conditional law of <math|\<Phi\><rsub|\<infty\>>> given
