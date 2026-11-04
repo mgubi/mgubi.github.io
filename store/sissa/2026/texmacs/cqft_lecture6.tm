@@ -11,6 +11,10 @@
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
 
   <abstract-data|<\abstract>
+    <strong|Joint work.> The results presented in Lectures<nbsp>4\U6 were
+    obtained recently, with the use of AI, in collaboration with Sarah-Jean
+    Meyer.
+
     We prove the central estimate of the construction: bounds, uniform in the
     lattice, on the error <math|Z> of the approximate forecast and on the
     time the forecast spends at large fields. The two halves of the FBSDE
@@ -23,7 +27,7 @@
     gives the FBSDE on the continuum torus, the field equation at every
     resolution, uniqueness in law for the scalar form of the FBSDE, a
     renormalised variational formula with no infinite constant, and quartic
-    exponential tails. (Joint work with S.-J. Meyer + AI.)
+    exponential tails.
   </abstract>>
 
   <\table-of-contents|toc>
@@ -188,6 +192,16 @@
 
   <section*|Introduction>
 
+  <strong|Origin of the results.> The results presented in Lectures<nbsp>4\U6
+  are joint work with Sarah-Jean Meyer, obtained recently with the use of AI;
+  those of Lectures<nbsp>5\U6 are new. Detailed proofs of what these lectures
+  cite or condense are in the <hlink|Supplement|cqft_supplement.tm>.
+
+  <strong|Acknowledgements.> M.<nbsp>Gubinelli is partly supported by UK
+  Research and Innovation via the grant \PStochFields\Q EP/Z534328/1 and by
+  the Simons Collaboration on Probabilistic Paths to QFT. S.-J.<nbsp>Meyer is
+  supported by the grant \PStochFields\Q EP/Z534328/1.
+
   At the end of Lecture<nbsp>5 we had, at each lattice cutoff <math|N>, the
   exact system (Theorem<nbsp><hlink|10.6|cqft_lecture5.tm#thm:YZ>)
 
@@ -232,11 +246,6 @@
   structure: the backward equation is linear in <math|Z>, the forward
   equation is a memoryless cubic elliptic equation at each resolution, and
   its noise is sub-Gaussian whatever the interaction.
-
-  <strong|Origin of the results.> The results of Lectures<nbsp>5\U6 are new.
-  They were obtained recently, with the use of AI, in collaboration with
-  Sarah-Jean Meyer. Detailed proofs of what these lectures cite or condense
-  are in the <hlink|Supplement|cqft_supplement.tm>.
 
   <strong|Where the system starts.> The system starts at <math|q<rsub|0>>
   with <math|Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0>. The energies below are
@@ -3133,54 +3142,54 @@
     <associate|auto-2|<tuple|13|4>>
     <associate|auto-20|<tuple|16|11>>
     <associate|auto-21|<tuple|16.1|11>>
-    <associate|auto-22|<tuple|16.2|12>>
+    <associate|auto-22|<tuple|16.2|11>>
     <associate|auto-23|<tuple|16.3|12>>
     <associate|auto-24|<tuple|16.10|13>>
-    <associate|auto-25|<tuple|17|14>>
-    <associate|auto-26|<tuple|17.1|14>>
-    <associate|auto-27|<tuple|17.2|14>>
+    <associate|auto-25|<tuple|17|13>>
+    <associate|auto-26|<tuple|17.1|13>>
+    <associate|auto-27|<tuple|17.2|13>>
     <associate|auto-28|<tuple|17.3|14>>
     <associate|auto-29|<tuple|17.4|15>>
     <associate|auto-3|<tuple|13.1|4>>
     <associate|auto-30|<tuple|17.5|16>>
-    <associate|auto-31|<tuple|18|17>>
-    <associate|auto-32|<tuple|18.1|17>>
+    <associate|auto-31|<tuple|18|16>>
+    <associate|auto-32|<tuple|18.1|16>>
     <associate|auto-33|<tuple|18.2|17>>
-    <associate|auto-34|<tuple|18.3|20>>
+    <associate|auto-34|<tuple|18.3|19>>
     <associate|auto-35|<tuple|18.4|21>>
     <associate|auto-36|<tuple|18.5|23>>
-    <associate|auto-37|<tuple|18.6|25>>
-    <associate|auto-38|<tuple|18.7|27>>
-    <associate|auto-39|<tuple|1|27>>
+    <associate|auto-37|<tuple|18.6|24>>
+    <associate|auto-38|<tuple|18.7|26>>
+    <associate|auto-39|<tuple|1|26>>
     <associate|auto-4|<tuple|13.2|4>>
     <associate|auto-40|<tuple|1|27>>
-    <associate|auto-41|<tuple|18.9|28>>
+    <associate|auto-41|<tuple|18.9|27>>
     <associate|auto-5|<tuple|13.3|5>>
     <associate|auto-6|<tuple|13.6|5>>
     <associate|auto-7|<tuple|14|5>>
     <associate|auto-8|<tuple|14.1|5>>
     <associate|auto-9|<tuple|1|6>>
-    <associate|bib-BG20|<tuple|BG20|28>>
-    <associate|bib-FBSDE26|<tuple|FBSDE26|28>>
-    <associate|bib-GH21|<tuple|GH21|28>>
-    <associate|bib-GM24|<tuple|GM24|28>>
-    <associate|bib-HMa18|<tuple|HMa18|28>>
-    <associate|bib-HMt18|<tuple|HMt18|28>>
-    <associate|bib-HSc22|<tuple|HSc22|28>>
-    <associate|bib-HSt22|<tuple|HSt22|28>>
+    <associate|bib-BG20|<tuple|BG20|27>>
+    <associate|bib-FBSDE26|<tuple|FBSDE26|27>>
+    <associate|bib-GH21|<tuple|GH21|27>>
+    <associate|bib-GM24|<tuple|GM24|27>>
+    <associate|bib-HMa18|<tuple|HMa18|27>>
+    <associate|bib-HMt18|<tuple|HMt18|27>>
+    <associate|bib-HSc22|<tuple|HSc22|27>>
+    <associate|bib-HSt22|<tuple|HSt22|27>>
     <associate|bib-MW17|<tuple|MW17|28>>
     <associate|bib-MW20|<tuple|MW20|28>>
     <associate|bib-MY99|<tuple|MY99|28>>
-    <associate|cor:tight|<tuple|17.2|15>>
-    <associate|def:scalar|<tuple|18.10|25>>
-    <associate|eq:Aid|<tuple|18.9|19>>
-    <associate|eq:Cov|<tuple|18.17|22>>
-    <associate|eq:D|<tuple|18.18|22>>
+    <associate|cor:tight|<tuple|17.2|14>>
+    <associate|def:scalar|<tuple|18.10|24>>
+    <associate|eq:Aid|<tuple|18.9|18>>
+    <associate|eq:Cov|<tuple|18.17|21>>
+    <associate|eq:D|<tuple|18.18|21>>
     <associate|eq:DS|<tuple|18.19|23>>
-    <associate|eq:DS-limit-q|<tuple|18.23|24>>
-    <associate|eq:DS-q|<tuple|18.21|24>>
-    <associate|eq:GM0|<tuple|18.13|21>>
-    <associate|eq:HJ|<tuple|18.3|18>>
+    <associate|eq:DS-limit-q|<tuple|18.23|23>>
+    <associate|eq:DS-q|<tuple|18.21|23>>
+    <associate|eq:GM0|<tuple|18.13|20>>
+    <associate|eq:HJ|<tuple|18.3|17>>
     <associate|eq:HJB|<tuple|18.6|18>>
     <associate|eq:KX|<tuple|14.2|3>>
     <associate|eq:Vsharp|<tuple|13.3|4>>
@@ -3188,70 +3197,70 @@
     <associate|eq:YZ|<tuple|1|2>>
     <associate|eq:Z-sup|<tuple|15.6|10>>
     <associate|eq:backward|<tuple|15.3|9>>
-    <associate|eq:burgers-defect|<tuple|18.1|18>>
+    <associate|eq:burgers-defect|<tuple|18.1|17>>
     <associate|eq:closed-forecast|<tuple|18.15|21>>
-    <associate|eq:density|<tuple|18.7|19>>
-    <associate|eq:e-bound|<tuple|18.5|18>>
+    <associate|eq:density|<tuple|18.7|18>>
+    <associate|eq:e-bound|<tuple|18.5|17>>
     <associate|eq:elementary|<tuple|14.3|6>>
-    <associate|eq:endpoint|<tuple|17.5|16>>
+    <associate|eq:endpoint|<tuple|17.5|15>>
     <associate|eq:energies|<tuple|13.6|5>>
     <associate|eq:energy|<tuple|15.4|9>>
-    <associate|eq:entropy|<tuple|18.8|19>>
+    <associate|eq:entropy|<tuple|18.8|18>>
     <associate|eq:eta-filter|<tuple|13.1|4>>
     <associate|eq:field|<tuple|13.4|4>>
-    <associate|eq:field-q|<tuple|18.20|24>>
+    <associate|eq:field-q|<tuple|18.20|23>>
     <associate|eq:field-r|<tuple|16.7|12>>
-    <associate|eq:flows|<tuple|18.4|18>>
+    <associate|eq:flows|<tuple|18.4|17>>
     <associate|eq:forward|<tuple|14.5|6>>
     <associate|eq:forward-q|<tuple|14.4|6>>
-    <associate|eq:free|<tuple|18.14|21>>
-    <associate|eq:germ|<tuple|18.22|24>>
+    <associate|eq:free|<tuple|18.14|20>>
+    <associate|eq:germ|<tuple|18.22|23>>
     <associate|eq:gradient-match|<tuple|16.2|11>>
     <associate|eq:hardy|<tuple|14.7|4>>
-    <associate|eq:hs-ds-explicit|<tuple|18.24|24>>
+    <associate|eq:hs-ds-explicit|<tuple|18.24|23>>
     <associate|eq:kernel|<tuple|18.12|20>>
-    <associate|eq:limit-equations|<tuple|18.16|22>>
+    <associate|eq:limit-equations|<tuple|18.16|21>>
     <associate|eq:noise-tail|<tuple|17.2|14>>
-    <associate|eq:primitive|<tuple|18.2|18>>
+    <associate|eq:primitive|<tuple|18.2|17>>
     <associate|eq:prior|<tuple|16.5|12>>
     <associate|eq:propagator|<tuple|15.1|8>>
     <associate|eq:qZ|<tuple|16.3|11>>
     <associate|eq:representation|<tuple|15.2|8>>
-    <associate|eq:restart|<tuple|16.8|13>>
-    <associate|eq:restart-low|<tuple|16.10|13>>
-    <associate|eq:restart2|<tuple|16.9|13>>
-    <associate|eq:sandwich|<tuple|18.10|19>>
+    <associate|eq:restart|<tuple|16.8|12>>
+    <associate|eq:restart-low|<tuple|16.10|12>>
+    <associate|eq:restart2|<tuple|16.9|12>>
+    <associate|eq:sandwich|<tuple|18.10|18>>
     <associate|eq:scalar|<tuple|14.1|6>>
-    <associate|eq:scalar-A|<tuple|18.25|25>>
+    <associate|eq:scalar-A|<tuple|18.25|24>>
     <associate|eq:scalar-bound|<tuple|14.2|6>>
     <associate|eq:scalar-forward|<tuple|15.2|4>>
     <associate|eq:shift|<tuple|17.4|15>>
     <associate|eq:sup|<tuple|14.6|7>>
     <associate|eq:sup-closure|<tuple|17.1|14>>
-    <associate|eq:tails|<tuple|18.11|19>>
+    <associate|eq:tails|<tuple|18.11|18>>
     <associate|eq:terminal|<tuple|16.1|11>>
-    <associate|eq:terminal-tail|<tuple|17.3|15>>
-    <associate|eq:tested|<tuple|17.6|16>>
+    <associate|eq:terminal-tail|<tuple|17.3|14>>
+    <associate|eq:tested|<tuple|17.6|15>>
     <associate|eq:thresholds|<tuple|13.5|5>>
-    <associate|eq:uv|<tuple|16.4|12>>
+    <associate|eq:uv|<tuple|16.4|11>>
     <associate|eq:uv-stability|<tuple|15.5|10>>
-    <associate|eq:var|<tuple|18.27|26>>
+    <associate|eq:var|<tuple|18.27|25>>
     <associate|eq:var-x|<tuple|18.26|25>>
     <associate|eq:volterra|<tuple|14.4|3>>
     <associate|eq:zeta|<tuple|16.6|12>>
     <associate|eq:zeta-tail|<tuple|13.2|4>>
-    <associate|ex:H1|<tuple|17.4|17>>
-    <associate|ex:RP|<tuple|18.4|28>>
+    <associate|ex:H1|<tuple|17.4|16>>
+    <associate|ex:RP|<tuple|18.4|27>>
     <associate|ex:force-limit|<tuple|16.1|13>>
     <associate|ex:force-observable|<tuple|18.1|27>>
-    <associate|ex:freeze|<tuple|18.8|28>>
-    <associate|ex:gauss|<tuple|18.9|28>>
+    <associate|ex:freeze|<tuple|18.8|27>>
+    <associate|ex:gauss|<tuple|18.9|27>>
     <associate|ex:hidden|<tuple|18.2|27>>
     <associate|ex:memory|<tuple|13.3|5>>
-    <associate|ex:one-site|<tuple|18.7|28>>
+    <associate|ex:one-site|<tuple|18.7|27>>
     <associate|ex:riccati|<tuple|18.3|27>>
-    <associate|lem:cons|<tuple|18.3|20>>
-    <associate|lem:e-bound|<tuple|18.1|18>>
+    <associate|lem:cons|<tuple|18.3|19>>
+    <associate|lem:e-bound|<tuple|18.1|17>>
     <associate|lem:hardy|<tuple|14.2|4>>
     <associate|lem:lip|<tuple|16.3|12>>
     <associate|lem:noise|<tuple|13.2|4>>
@@ -3263,39 +3272,39 @@
     <associate|lem:terminal|<tuple|16.1|11>>
     <associate|prop:backward|<tuple|15.2|9>>
     <associate|prop:forward|<tuple|14.3|6>>
-    <associate|prop:restart|<tuple|16.4|13>>
+    <associate|prop:restart|<tuple|16.4|12>>
     <associate|prop:source|<tuple|17.3|15>>
     <associate|prop:sup|<tuple|14.4|7>>
     <associate|rem:GM|<tuple|18.15|26>>
-    <associate|rem:coerc|<tuple|18.13|26>>
-    <associate|rem:comp|<tuple|18.14|26>>
-    <associate|rem:hidden|<tuple|18.7|23>>
+    <associate|rem:coerc|<tuple|18.13|25>>
+    <associate|rem:comp|<tuple|18.14|25>>
+    <associate|rem:hidden|<tuple|18.7|22>>
     <associate|sec:backward|<tuple|15|8>>
-    <associate|sec:compactness|<tuple|17|14>>
+    <associate|sec:compactness|<tuple|17|13>>
     <associate|sec:energies|<tuple|13|4>>
     <associate|sec:field|<tuple|13.2|4>>
     <associate|sec:filter|<tuple|18.4|21>>
     <associate|sec:forward|<tuple|14|5>>
     <associate|sec:hs-exp|<tuple|17.4|15>>
     <associate|sec:hs-uniq|<tuple|18.2|17>>
-    <associate|sec:law-var|<tuple|18.6|25>>
-    <associate|sec:limit|<tuple|18|17>>
-    <associate|sec:limit-law|<tuple|18.3|20>>
-    <associate|sec:open|<tuple|18.7|27>>
+    <associate|sec:law-var|<tuple|18.6|24>>
+    <associate|sec:limit|<tuple|18|16>>
+    <associate|sec:limit-law|<tuple|18.3|19>>
+    <associate|sec:open|<tuple|18.7|26>>
     <associate|sec:restart|<tuple|16.3|12>>
     <associate|sec:sup|<tuple|14.3|7>>
     <associate|sec:terminal|<tuple|16|11>>
     <associate|thm:DS|<tuple|18.8|23>>
     <associate|thm:energy|<tuple|15.3|9>>
-    <associate|thm:field-q|<tuple|18.9|24>>
-    <associate|thm:hs|<tuple|17.4|16>>
+    <associate|thm:field-q|<tuple|18.9|23>>
+    <associate|thm:hs|<tuple|17.4|15>>
     <associate|thm:hs-gauss|<tuple|17.5|16>>
     <associate|thm:limit|<tuple|18.6|21>>
     <associate|thm:limit-kernel|<tuple|18.4|20>>
-    <associate|thm:nu|<tuple|18.5|21>>
-    <associate|thm:sandwich|<tuple|18.2|19>>
-    <associate|thm:unique-law|<tuple|18.11|25>>
-    <associate|thm:uv|<tuple|16.2|12>>
+    <associate|thm:nu|<tuple|18.5|20>>
+    <associate|thm:sandwich|<tuple|18.2|18>>
+    <associate|thm:unique-law|<tuple|18.11|24>>
+    <associate|thm:uv|<tuple|16.2|11>>
     <associate|thm:var|<tuple|18.12|25>>
   </collection>
 </references>

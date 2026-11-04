@@ -22,6 +22,8 @@
 
       <small|Massimiliano Gubinelli \| University of Oxford>
 
+      <small|Joint work with Sarah-Jean Meyer, with the use of AI>
+
       <small|<with|color|dark grey|SISSA lectures, Lecture<nbsp>4 \V notes: Lecture<nbsp>4, ŸŸ7\U9, Appendices A\UB>>
 
       \;

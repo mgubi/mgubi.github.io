@@ -11,6 +11,10 @@
   Oxford>>>|<doc-date|November 2026 <emdash> <em|provisional>>>
 
   <abstract-data|<\abstract>
+    <strong|Joint work.> The results presented in Lectures<nbsp>4\U6 were
+    obtained recently, with the use of AI, in collaboration with Sarah-Jean
+    Meyer.
+
     The last two lectures construct the massive
     <math|\<Phi\><rsup|4><rsub|3>> measure on the three-dimensional torus
     with the forward\Ubackward equations of Lecture<nbsp>4. In this lecture
@@ -32,8 +36,6 @@
     to all fields without losing coercivity. The price is an error that is
     not small but lives on large fields. Lecture<nbsp>6 controls it by a
     priori estimates on the FBSDE and removes the cutoffs.
-
-    (Joint work with S.-J. Meyer + AI.)
   </abstract>>
 
   <\table-of-contents|toc>
@@ -178,6 +180,16 @@
 
   <section*|Introduction>
 
+  <strong|Origin of the results.> The results presented in Lectures<nbsp>4\U6
+  are joint work with Sarah-Jean Meyer, obtained recently with the use of AI;
+  those of Lectures<nbsp>5\U6 are new. Detailed proofs of what these lectures
+  cite or condense are in the <hlink|Supplement|cqft_supplement.tm>.
+
+  <strong|Acknowledgements.> M.<nbsp>Gubinelli is partly supported by UK
+  Research and Innovation via the grant \PStochFields\Q EP/Z534328/1 and by
+  the Simons Collaboration on Probabilistic Paths to QFT. S.-J.<nbsp>Meyer is
+  supported by the grant \PStochFields\Q EP/Z534328/1.
+
   Lecture<nbsp>4 formulated a programme (Figure<nbsp><hlink|7.1|cqft_lecture4.tm#fig:fbsde-flow>
   and the remark following it): solve the FBSDE
 
@@ -217,11 +229,6 @@
   explicit counterterm whose finite part is arbitrary.
   Section<nbsp><hlink|18.7|cqft_lecture6.tm#sec:open> lists what is not
   proved.
-
-  <strong|Origin of the results.> The results of Lectures<nbsp>5\U6 are new.
-  They were obtained recently, with the use of AI, in collaboration with
-  Sarah-Jean Meyer. Detailed proofs of what these lectures cite or condense
-  are in the <hlink|Supplement|cqft_supplement.tm>.
 
   <strong|One auxiliary scale.> The number <math|q<rsub|0>\<gtr\>0> fixes the
   Gaussian reference <math|C=C<rsub|q<rsub|0>>>; it may be small, for

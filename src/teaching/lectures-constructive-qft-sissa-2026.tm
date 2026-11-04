@@ -17,6 +17,15 @@
   <with|font-series|bold|Lecturer.> Massimiliano Gubinelli (University of
   Oxford).
 
+  <with|font-series|bold|Joint work.> The results presented in Lectures
+  4--6 are joint work with Sarah-Jean Meyer, obtained recently with the use
+  of AI; those of Lectures 5--6 are new.
+
+  <with|font-series|bold|Acknowledgements.> M. Gubinelli is partly
+  supported by UK Research and Innovation via the grant ``StochFields''
+  EP/Z534328/1 and by the Simons Collaboration on Probabilistic Paths to
+  QFT. S.-J. Meyer is supported by the grant ``StochFields'' EP/Z534328/1.
+
   This course is part of the <hlink|Probability and Stochastic Analysis
   Trimester Programme|https://sites.google.com/view/probsissa> at SISSA.
 
@@ -113,8 +122,6 @@
     [<notes-link|HTML|sissa-2026/cqft_supplement.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_supplement.tm>].
   </itemize>
-
-  The results of Lectures 5--6 are new: joint work with S.-J. Meyer + AI.
 
   Materials revised 4 November 2026. The TeXmacs sources of all notes
   and slides, together with the style packages they use, are also

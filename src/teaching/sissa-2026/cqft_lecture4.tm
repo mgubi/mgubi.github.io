@@ -10,6 +10,10 @@
   Oxford>>>|<doc-date|SISSA, November 2026>>
 
   <abstract-data|<\abstract>
+    <strong|Joint work.> The results presented in Lectures<nbsp>4\U6 were
+    obtained recently, with the use of AI, in collaboration with Sarah-Jean
+    Meyer.
+
     Building on the scale decomposition and the stochastic observables of
     Lecture<nbsp>3, we introduce interactions. The interacting measure can be
     generated in three ways: as a renormalisation group decomposition of the
@@ -302,6 +306,14 @@
   </table-of-contents>
 
   <section*|Introduction>
+
+  <strong|Origin of the results.> The results presented in Lectures<nbsp>4\U6
+  are joint work with Sarah-Jean Meyer, obtained recently with the use of AI.
+
+  <strong|Acknowledgements.> M.<nbsp>Gubinelli is partly supported by UK
+  Research and Innovation via the grant \PStochFields\Q EP/Z534328/1 and by
+  the Simons Collaboration on Probabilistic Paths to QFT. S.-J.<nbsp>Meyer is
+  supported by the grant \PStochFields\Q EP/Z534328/1.
 
   In Lecture<nbsp>3 we decomposed the Gaussian free field along a resolution
   parameter and took as primary objects the stochastic observables:
@@ -3747,31 +3759,31 @@
     <associate|auto-13|<tuple|3|7>>
     <associate|auto-14|<tuple|4|7>>
     <associate|auto-15|<tuple|5|7>>
-    <associate|auto-16|<tuple|6|8>>
+    <associate|auto-16|<tuple|6|7>>
     <associate|auto-17|<tuple|7|8>>
     <associate|auto-18|<tuple|8|8>>
     <associate|auto-19|<tuple|7.3|8>>
     <associate|auto-2|<tuple|1|3>>
-    <associate|auto-20|<tuple|1|9>>
+    <associate|auto-20|<tuple|1|8>>
     <associate|auto-21|<tuple|2|10>>
-    <associate|auto-22|<tuple|7.4|11>>
+    <associate|auto-22|<tuple|7.4|10>>
     <associate|auto-23|<tuple|7.2|11>>
-    <associate|auto-24|<tuple|7.2|12>>
+    <associate|auto-24|<tuple|7.2|11>>
     <associate|auto-25|<tuple|8|12>>
     <associate|auto-26|<tuple|8.1|12>>
-    <associate|auto-27|<tuple|8.1|13>>
+    <associate|auto-27|<tuple|8.1|12>>
     <associate|auto-28|<tuple|8.2|13>>
-    <associate|auto-29|<tuple|8.3|14>>
+    <associate|auto-29|<tuple|8.3|13>>
     <associate|auto-3|<tuple|2|3>>
     <associate|auto-30|<tuple|1|14>>
     <associate|auto-31|<tuple|8.4|15>>
-    <associate|auto-32|<tuple|1|15>>
+    <associate|auto-32|<tuple|1|16>>
     <associate|auto-33|<tuple|8.2|16>>
     <associate|auto-34|<tuple|8.5|16>>
-    <associate|auto-35|<tuple|1|16>>
+    <associate|auto-35|<tuple|1|17>>
     <associate|auto-36|<tuple|2|17>>
     <associate|auto-37|<tuple|3|17>>
-    <associate|auto-38|<tuple|4|17>>
+    <associate|auto-38|<tuple|4|18>>
     <associate|auto-39|<tuple|8.3|18>>
     <associate|auto-4|<tuple|3|3>>
     <associate|auto-40|<tuple|8.6|18>>
@@ -3863,10 +3875,10 @@
     <associate|eq:PB|<tuple|A.3|28>>
     <associate|eq:RG-map|<tuple|A.1|28>>
     <associate|eq:Vt|<tuple|7.3|4>>
-    <associate|eq:bridge|<tuple|7.14|9>>
+    <associate|eq:bridge|<tuple|7.14|8>>
     <associate|eq:burgers|<tuple|8.1|12>>
     <associate|eq:constrained|<tuple|8.16|21>>
-    <associate|eq:coord|<tuple|8.5|14>>
+    <associate|eq:coord|<tuple|8.5|13>>
     <associate|eq:cov-dynamics|<tuple|8.9|15>>
     <associate|eq:cumulants|<tuple|A.4|28>>
     <associate|eq:eta|<tuple|9.4|22>>
@@ -3892,15 +3904,15 @@
     <associate|eq:noise-score|<tuple|9.10|24>>
     <associate|eq:nuT|<tuple|7.2|3>>
     <associate|eq:nut|<tuple|7.4|4>>
-    <associate|eq:observation|<tuple|7.15|9>>
+    <associate|eq:observation|<tuple|7.15|8>>
     <associate|eq:phi4-VT|<tuple|7.1|3>>
     <associate|eq:polchinski|<tuple|7.8|6>>
     <associate|eq:posterior|<tuple|7.16|9>>
     <associate|eq:psi|<tuple|8.2|13>>
     <associate|eq:psi-noise|<tuple|8.3|13>>
     <associate|eq:relative-vp|<tuple|9.15|26>>
-    <associate|eq:response|<tuple|8.6|14>>
-    <associate|eq:reversal|<tuple|7.17|10>>
+    <associate|eq:response|<tuple|8.6|13>>
+    <associate|eq:reversal|<tuple|7.17|9>>
     <associate|eq:second-order|<tuple|A.6|29>>
     <associate|eq:semigroup|<tuple|A.2|28>>
     <associate|eq:shear|<tuple|7.13|8>>
@@ -3919,18 +3931,18 @@
     <associate|ex:free-action|<tuple|8.10|21>>
     <associate|ex:loc-poincare|<tuple|B.2|33>>
     <associate|ex:lsi|<tuple|B.1|33>>
-    <associate|ex:pontryagin|<tuple|7.3|12>>
+    <associate|ex:pontryagin|<tuple|7.3|11>>
     <associate|ex:power-counting|<tuple|A.3|30>>
-    <associate|ex:quadratic|<tuple|7.1|12>>
+    <associate|ex:quadratic|<tuple|7.1|11>>
     <associate|ex:regulators|<tuple|8.8|21>>
     <associate|ex:relative-vp|<tuple|9.2|27>>
     <associate|ex:subgauss|<tuple|9.5|28>>
     <associate|ex:sunset|<tuple|A.2|30>>
-    <associate|ex:zero-dim|<tuple|7.2|12>>
+    <associate|ex:zero-dim|<tuple|7.2|11>>
     <associate|fig:fbsde-flow|<tuple|7.1|5>>
     <associate|fig:localisation|<tuple|8.2|16>>
     <associate|fig:polchinski-0d|<tuple|7.2|11>>
-    <associate|fig:polchinski-graphs|<tuple|8.1|13>>
+    <associate|fig:polchinski-graphs|<tuple|8.1|12>>
     <associate|fig:regulator|<tuple|8.5|20>>
     <associate|fig:second-order|<tuple|A.1|29>>
     <associate|fig:shear|<tuple|8.3|18>>
@@ -3943,7 +3955,7 @@
     <associate|prop:marginals|<tuple|7.2|4>>
     <associate|prop:psi|<tuple|8.1|13>>
     <associate|prop:relative-vp|<tuple|9.7|26>>
-    <associate|prop:reversal|<tuple|7.7|10>>
+    <associate|prop:reversal|<tuple|7.7|9>>
     <associate|prop:second-order|<tuple|A.2|29>>
     <associate|prop:subgauss|<tuple|9.5|24>>
     <associate|rem:measurement|<tuple|7.8|10>>
@@ -3958,7 +3970,7 @@
     <associate|sec:legendre|<tuple|8.6|18>>
     <associate|sec:localisation|<tuple|B|30>>
     <associate|sec:lsi|<tuple|B.1|30>>
-    <associate|sec:meet|<tuple|7.4|11>>
+    <associate|sec:meet|<tuple|7.4|10>>
     <associate|sec:moments|<tuple|8.4|15>>
     <associate|sec:noise-bounds|<tuple|9.3|24>>
     <associate|sec:observables|<tuple|9|22>>
