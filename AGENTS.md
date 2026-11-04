@@ -40,6 +40,32 @@ that defines its header links and path back to the root.
   page is deliberately retired, remove its exact generated counterpart and
   check the index, feed, and incoming links.
 
+## The TeXmacs skill
+
+For reading, writing, converting, typesetting or exporting TeXmacs documents,
+use the generic **TeXmacs skill** together with the rules of this file.
+
+- The skill is not part of this repository. It is expected at the user
+  level, `~/.claude/skills/texmacs` (a clone of
+  <https://github.com/mgubi/texmacs-skill>). **Check that it is present
+  before working on `.tm`/`.ts` files** (for example
+  `ls ~/.claude/skills/texmacs/SKILL.md`). If it is missing, tell the user
+  and suggest installing it:
+
+  ```sh
+  git clone https://github.com/mgubi/texmacs-skill ~/.claude/skills/texmacs
+  ```
+
+  The skill itself explains how to keep it updated and contribute back. Its
+  companion scripts are in `~/.claude/skills/texmacs/scripts/`; keep that
+  relative layout intact. Its "Conventions (mandatory)" apply to every
+  document.
+- The user's personal TeXmacs resources (this website, the `max-html` and
+  `notes` plugins, stationery, the reference talk) are summarised in the
+  user-level skill `texmacs-personal` (`~/.claude/skills/texmacs-personal`).
+- Where this file is more specific (byte-safe editing with
+  `tools/patch_texmacs.py`, the build, the page hierarchy), follow this file.
+
 ## Editing native TeXmacs files
 
 Native TeXmacs `.tm` and `.ts` files use TeXmacs' Cork-based universal
