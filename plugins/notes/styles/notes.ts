@@ -236,6 +236,46 @@
 
   <assign|tmhtml-notes-news-item|<macro|body|<html-div-class|whats-new-item|<arg|body>>>>
 
+  <assign|notes-profile|<macro|body|<arg|body>>>
+
+  <assign|tmhtml-notes-profile|<macro|body|<html-div-class|mg-hero|<arg|body>>>>
+
+  <assign|notes-portrait|<\macro|body>
+    <\center>
+      <arg|body>
+    </center>
+  </macro>>
+
+  <assign|tmhtml-notes-portrait|<\macro|body>
+    <\html-div-class|mg-portrait>
+      <\center>
+        <arg|body>
+      </center>
+    </html-div-class>
+  </macro>>
+
+  <assign|notes-caption|<\macro|body>
+    <\with|par-mode|right>
+      <very-small|<arg|body>>
+    </with>
+  </macro>>
+
+  <assign|tmhtml-notes-caption|<\macro|body>
+    <\html-div-class|mg-caption>
+      <\with|par-mode|right>
+        <very-small|<arg|body>>
+      </with>
+    </html-div-class>
+  </macro>>
+
+  <assign|notes-page-title|<macro|body|<huge|<with|font-series|bold|<arg|body>>>>>
+
+  <assign|tmhtml-notes-page-title|<macro|body|<html-div-class|mg-title|<huge|<with|font-series|bold|<arg|body>>>>>>
+
+  <assign|notes-side-image|<macro|body|<arg|body>>>
+
+  <assign|tmhtml-notes-side-image|<macro|body|<html-div-class|wave-image|<arg|body>>>>
+
   <assign|render-theorem|<\macro|which|body>
     <\notes-theorem>
       <surround|<theorem-name|<arg|which><theorem-sep>>|<yes-indent*>|<with|font-shape|italic|<arg|body>>>
