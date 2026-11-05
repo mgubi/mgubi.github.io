@@ -247,22 +247,22 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
         coincident-point variance of the shell at resolution <font color="#620000">\(q\)</font>.
       </p>
     </div>
-    <div class="toggle" style="display: none">
+    <div class="toggle" style="display: block">
       <div class="slide-title">
         The cutoff measure
       </div>
-      <p>
-        <font color="#620000">\(U (\varphi) = \frac{\lambda}{4} \int
+      <center>
+        <font color="#620000">\(U (\varphi) = \frac{\lambda}{12} \int
         \varphi^4\)</font>, <font color="#620000">\(V_N = U + \frac{\mu_N}{2} \int
         \varphi^2\)</font>, <font color="#620000">\(\nu_N (\hspace{0.17em} \mathrm{d}
         \varphi) =\mathcal{Z}_N^{- 1} \mathrm{e}^{-
 V_N (\varphi)} \mu^C
         (\hspace{0.17em} \mathrm{d} \varphi)\)</font>.
-      </p>
+      </center>
       <p>
-        <font color="#620000">\(\gamma = 3 \lambda\)</font>, so <font color="#620000">\(D^2 U
-        (y) = \gamma y^2\)</font> (not the counterterm <font color="#620000">\(\gamma_T\)</font>
-        of Lecture 4).
+        So <font color="#620000">\(D^2 U (y) = \lambda y^2\)</font>: the coupling is
+        the curvature, the same <font color="#620000">\(\lambda\)</font> as in Lecture
+        4.
       </p>
       <p>
         The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
@@ -279,8 +279,8 @@ V_N (\varphi)} \mu^C
           <strong>Main result, informal.</strong> Let
         </p>
         <center>
-          \(\displaystyle \mu_N = r - 3 \lambda \text{Tr} C + 6 \lambda^2 \int
-          C^3 .\)
+          \(\displaystyle \mu_N = r - \lambda \text{Tr} C + \frac{2}{3}
+          \lambda^2 \int C^3 .\)
         </center>
         <p>
           Then (a) <font color="#620000">\(\nu_N \to \nu\)</font> in <font color="#620000">\(H^{-
@@ -363,7 +363,7 @@ V_N (\varphi)} \mu^C
       </p>
       <p>
         One site, <font color="#620000">\(\nu \propto \mathrm{e}^{- \lambda \varphi^4 /
-        4} \mu^{1 / q_0}\)</font>, <font color="#620000">\(\lambda = 2\)</font>, <font
+        12} \mu^{1 / q_0}\)</font>, <font color="#620000">\(\lambda = 6\)</font>, <font
         color="#620000">\(q_0 = 1\)</font>. Left: one path of the observation <font
         color="#620000">\(\Phi_q\)</font> and of the forecast <font color="#620000">\(\psi_q\)</font>,
         both converging to the hidden <font color="#620000">\(\Phi_{\infty}\)</font>.
@@ -371,8 +371,8 @@ V_N (\varphi)} \mu^C
         2}\)</font>, the force term <font color="#620000">\(\psi_q - \Phi_q = C_q F_q
         \sim q^{- 1}\)</font>, and the error <font color="#620000">\(Z_q\)</font> of
         the approximate forecast from <font color="#620000">\(\bar{\mathcal{F}} =
-        \lambda y^3\)</font>, below the bound <font color="#620000">\(2 C_{\ast}
-        \lambda^{1 / 2} q^{- 3 / 2}\)</font> of Theorem 12.8.
+        \frac{\lambda}{3} y^3\)</font>, below the bound <font color="#620000">\(2
+        C_{\ast} (\lambda / 3)^{1 / 2} q^{- 3 / 2}\)</font> of Theorem 12.8.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -566,11 +566,11 @@ V_N (\varphi)} \mu^C
 
       </p>
       <center>
-        \(\displaystyle g_q = \gamma q^{- 1 / 2} (\text{dimensionless
+        \(\displaystyle g_q = \lambda q^{- 1 / 2} (\text{dimensionless
         coupling}),\)
       </center>
       <center>
-        \(\displaystyle r_q = (q / \gamma)^{1 / 2} (\gamma r_q^2 = q :
+        \(\displaystyle r_q = (q / \lambda)^{1 / 2} (\lambda r_q^2 = q :
         \text{nonlinearity} \approx
 \text{regulator}) .\)
       </center>
@@ -597,7 +597,7 @@ V_N (\varphi)} \mu^C
       <center>
         \(\displaystyle \textsf{S}_k \lesssim g_q  \hspace{0.17em} q
         \hspace{0.17em} r_q^{2 - k}
-\qquad (k = 4 : \gamma g_q) .\)
+\qquad (k = 4 : \lambda g_q) .\)
       </center>
     </div>
     <div class="toggle" style="display: none">
@@ -640,22 +640,22 @@ V_N (\varphi)} \mu^C
       </p>
       <p>
         <strong>Seed</strong> (one loop): replace <font color="#620000">\(D\mathcal{F}\)</font>
-        by <font color="#620000">\(\gamma y^2\)</font> and integrate from <font color="#620000">\(q
+        by <font color="#620000">\(\lambda y^2\)</font> and integrate from <font color="#620000">\(q
         = \infty\)</font>, with the linear part subtracted,
       </p>
       <center>
-        \(\displaystyle \ell_q (y) (x) = \gamma y (x) [G_q (y) (x, x) - C_q
+        \(\displaystyle \ell_q (y) (x) = \lambda y (x) [G_q (y) (x, x) - C_q
         (x, x)], \quad G_q (y) =
-(K_q + \gamma y^2)^{- 1} .\)
+(K_q + \lambda y^2)^{- 1} .\)
       </center>
       <p>
-        Leading term = bubble, <font color="#620000">\(s (D^3 \ell_q (0)) = 6 \gamma^2
+        Leading term = bubble, <font color="#620000">\(s (D^3 \ell_q (0)) = 6 \lambda^2
         a_2 (q)\)</font>.
       </p>
       <p>
         <strong>Corrections.</strong> <font color="#620000">\(\Pi\)</font> removes the
         linear jet, <font color="#620000">\(M_q = \mu_q + \Theta_q\)</font> a linear
-        path, <font color="#620000">\(U\prime = \lambda y^3\)</font>,
+        path, <font color="#620000">\(U\prime = \frac{\lambda}{3} y^3\)</font>,
       </p>
       <center>
         \(\displaystyle \mathcal{T}_q [M, \ell] = - \frac{1}{2}
@@ -754,7 +754,7 @@ s, \quad j = 0, 1,\)
         The linear jet is not iterated: it is solved exactly by <font color="#620000">\(M\)</font>,
       </p>
       <center>
-        \(\displaystyle \partial_q M_q = - \gamma \text{Tr} (R_{0, q}^2) I -
+        \(\displaystyle \partial_q M_q = - \lambda \text{Tr} (R_{0, q}^2) I -
         \frac{1}{2}
 \text{Ctr}_{R_{0, q}^2} D^3 \ell^{[2]}_q (0), \quad R_{0,
         q} = (K_q + M_q)^{-
@@ -762,7 +762,7 @@ s, \quad j = 0, 1,\)
       </center>
       <p>
         with <font color="#620000">\(\mu_{q_{\ast}} = b\)</font>, <font color="#620000">\(|b|
-        \leqslant B \gamma q_{\ast}^{1 / 2}\)</font>, at an <strong>auxiliary
+        \leqslant B \lambda q_{\ast}^{1 / 2}\)</font>, at an <strong>auxiliary
         scale</strong> <font color="#620000">\(q_{\ast}\)</font>, and <font color="#620000">\(\Theta_q
         \to 0\)</font> as <font color="#620000">\(q \to \infty\)</font>. Bare mass
         <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>: an
@@ -771,19 +771,19 @@ s, \quad j = 0, 1,\)
       <p>
         <strong>For</strong> <font color="#620000">\(q_{\ast}\)</font> <strong>large,
         uniformly in</strong> <font color="#620000">\(N\)</font><strong>.</strong>
-        Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C \gamma
-        q^{1 / 2}\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C \gamma^2
-        q^{- 1 / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k
+        Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C
+        \lambda q^{1 / 2}\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C
+        \lambda^2 q^{- 1 / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k
         (\ell^{[j]} - \ell^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2
 -
         k}\)</font>; and the defect of <font color="#620000">\(\mathcal{F}^{\text{o}}\)</font>:
-        <font color="#620000">\(S_4 (\mathcal{D}^{\text{o}}_q) \leqslant C \gamma^5
+        <font color="#620000">\(S_4 (\mathcal{D}^{\text{o}}_q) \leqslant C \lambda^5
         q^{- 3}\)</font>.
       </p>
       <p>
-        <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r - 3
-        \lambda \text{Tr} C + 6 \lambda^2 \int C^3\)</font> is admissible: the
-        measure does not depend on <font color="#620000">\(q_{\ast}\)</font>.
+        <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r -
+        \lambda \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3\)</font> is
+        admissible: the measure does not depend on <font color="#620000">\(q_{\ast}\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -799,13 +799,13 @@ s, \quad j = 0, 1,\)
       <ul>
         <li>
           <p>
-            <strong>Tadpole</strong>: <font color="#620000">\(- \gamma
+            <strong>Tadpole</strong>: <font color="#620000">\(- \lambda
             \int_{q_{\ast}}^{\infty} \text{Tr} R_{0, q}^2
             \hspace{0.17em}
-\mathrm{d} q \approx - 3 \lambda \text{Tr} C \sim
-            - N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{4}
-            \varphi^4 - \frac{3}{2} \lambda c \varphi^2 =
-\frac{\lambda}{4}
+\mathrm{d} q \approx - \lambda \text{Tr} C \sim -
+            N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{12}
+            \varphi^4 - \frac{1}{2} \lambda c \varphi^2 =
+\frac{\lambda}{12}
             H_4  (\varphi ; c) +\)</font>const.
           </p>
         </li>
@@ -816,10 +816,10 @@ s, \quad j = 0, 1,\)
             integrating gives the two-loop self-energy,
           </p>
           <center>
-            \(\displaystyle 6 \lambda^2  \int C^3 \approx \frac{3 \lambda^2}{8
-            \pi^2} \log N \quad (= 2
-\gamma_T  \text{of Lecture 4, with }
-            \lambda_{\textrm{L 4}} = \lambda / 4) .\)
+            \(\displaystyle \frac{2}{3} \lambda^2  \int C^3 \approx
+            \frac{\lambda^2}{24 \pi^2} \log N
+\quad (= 2 \gamma_T  \text{ of
+            Lecture 4}) .\)
           </center>
         </li>
       </ul>
@@ -880,19 +880,21 @@ s, \quad j = 0, 1,\)
             \mathrm{d} s\)</font></td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(0\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\gamma^3 s^{- 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\gamma^{3 / 2} s^{- 3 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^3 s^{- 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{3 / 2} s^{- 3 /
+            2}\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (power)</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(1\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\gamma^4 s^{- 5 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\gamma^{5 / 2} s^{- 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^4 s^{- 5 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{5 / 2} s^{- 2}\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (log)</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\gamma^5 s^{- 3}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\gamma^{7 / 2} s^{- 5 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2 \gamma^{7 / 2} q^{- 3 /
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^5 s^{- 3}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^{7 / 2} s^{- 5 /
+            2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2 \lambda^{7 / 2} q^{- 3 /
             2}\)</font></td>
           </tr></tbody>
         </table>
@@ -953,15 +955,15 @@ s, \quad j = 0, 1,\)
           <strong>Scalar model</strong>
         </p>
         <center>
-          \(\displaystyle \ell_q (y) = \gamma y [(q + \gamma y^2)^{- 1} - q^{-
-          1}]\)
+          \(\displaystyle \ell_q (y) = \lambda y [(q + \lambda y^2)^{- 1} -
+          q^{- 1}]\)
         </center>
         <p>
           : power series of radius exactly <font color="#620000">\(r_q\)</font>
           (singularities at <font color="#620000">\(\pm \mathrm{i} r_q\)</font>). Half
           of the truncations destroy monotonicity. The exact function is
           harmless, <font color="#620000">\(| \ell_q \prime | \leqslant \frac{9}{8}
-          \gamma / q\)</font>.
+          \lambda / q\)</font>.
         </p>
       </div>
       <p>
@@ -973,10 +975,10 @@ s, \quad j = 0, 1,\)
         estimates use: coercivity, carried by the bare cube.
       </p>
       <p>
-        One site: <font color="#620000">\(qy + \lambda y^3 = q \Phi_q\)</font>, noise
-        coefficient <font color="#620000">\(H_q (y) = (q + \gamma y^2)^{- 1} \leqslant
-        q^{- 1} \wedge (\gamma y^2)^{- 1}\)</font>. Large fields are more
-        elliptic and less noisy.
+        One site: <font color="#620000">\(qy + \frac{\lambda}{3} y^3 = q
+        \Phi_q\)</font>, noise coefficient <font color="#620000">\(H_q (y) = (q +
+        \lambda y^2)^{- 1} \leqslant q^{- 1} \wedge (\lambda y^2)^{-
+        1}\)</font>. Large fields are more elliptic and less noisy.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1011,8 +1013,8 @@ s, \quad j = 0, 1,\)
           <strong>Global coercivity</strong>
         </p>
         <p>
-          For all <font color="#620000">\(y\)</font>: <font color="#620000">\(c (K_q + \gamma
-          y^2) \leqslant H_q (y)^{- 1} \leqslant C (K_q + \gamma
+          For all <font color="#620000">\(y\)</font>: <font color="#620000">\(c (K_q + \lambda
+          y^2) \leqslant H_q (y)^{- 1} \leqslant C (K_q + \lambda
           y^2)\)</font>,
         </p>
         <center>
@@ -1023,7 +1025,7 @@ s, \quad j = 0, 1,\)
       </div>
       <p>
         Neumann series for <font color="#620000">\(H = (I + G (M + D \tilde{\ell}))^{-
-        1} G\)</font>, <font color="#620000">\(G = (K_q + \gamma y^2)^{- 1} \leqslant
+        1} G\)</font>, <font color="#620000">\(G = (K_q + \lambda y^2)^{- 1} \leqslant
         C_q\)</font>.
       </p>
     </div>
@@ -1048,9 +1050,9 @@ s, \quad j = 0, 1,\)
         </p>
         <p>
           <i><center>
-            \(\displaystyle \|b^{\text{b}}_q \|_p \leqslant C \gamma^{7 / 2}
+            \(\displaystyle \|b^{\text{b}}_q \|_p \leqslant C \lambda^{7 / 2}
             q^{- 5 / 2}, \qquad
-\|b^{\text{l}}_q \|_p \leqslant C \gamma q^{-
+\|b^{\text{l}}_q \|_p \leqslant C \lambda q^{-
             3 / 2} (\|t_q \|_p + r_q^{- 1}
 \|y^2  \mathbb{1}_{|y| > r_q}
             \|_p),\)
@@ -1058,7 +1060,7 @@ s, \quad j = 0, 1,\)
         </p>
         <p style="margin-bottom: 1em">
           <i><center>
-            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \leqslant C \gamma^4 q^{-
+            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \leqslant C \lambda^4 q^{-
             5} \|t_q \|_6^6 .\)
           </center></i>
         </p>
@@ -1079,7 +1081,7 @@ s, \quad j = 0, 1,\)
           <font color="#620000">\(b^{\text{l}}\)</font> is as large as the whole drift,
           but <strong>supported on large fields</strong>. It is controlled by
           how often the actual dynamics visits them: <font color="#620000">\(\int q^{-
-          3 / 2} \gamma \|t_q (Y_q)\|_6^6 \hspace{0.17em} \mathrm{d}
+          3 / 2} \lambda \|t_q (Y_q)\|_6^6 \hspace{0.17em} \mathrm{d}
           q\)</font> (Lecture 6).
         </p>
       </div></font>
@@ -1092,7 +1094,7 @@ s, \quad j = 0, 1,\)
 
       </p>
       <p>
-        With <font color="#620000">\(DU = \frac{\gamma}{3} y^3\)</font>:
+        With <font color="#620000">\(DU = \frac{\lambda}{3} y^3\)</font>:
       </p>
       <p>
         <strong>Up to a small Lipschitz perturbation, the forecast solves the
@@ -1100,7 +1102,7 @@ s, \quad j = 0, 1,\)
       </p>
       <center>
         \(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q (Y_q)) +
-        \frac{\gamma}{3} Y_q^3, \qquad
+        \frac{\lambda}{3} Y_q^3, \qquad
 \varrho_q (y) = C_q  (M_q y +
         \tilde{\ell}_q (y)), \quad \|D \varrho_q \|_{p
 \to p} \leqslant C (g_q
@@ -1183,22 +1185,22 @@ s, \quad j = 0, 1,\)
 
       </p>
       <p>
-        <strong>Programme:</strong> keep <font color="#620000">\(- \lambda
+        <strong>Programme:</strong> keep <font color="#620000">\(- \frac{\lambda}{3}
         \varphi^3\)</font> unclipped, clip the higher orders, pay in the
         source of <font color="#620000">\(R = F - f\)</font>. Test it on one site:
         <font color="#620000">\(K_q = q\)</font>, <font color="#620000">\(S = 1 / q\)</font>.
       </p>
       <center>
-        \(\displaystyle F_q (x) = - \lambda \mathbb{E}_x Y^3 = q (m_q (x) -
-        x), \quad |m_q (x) |
-\leqslant 2 \lambda^{- 1 / 4} + 2 (q|x| /
-        \lambda)^{1 / 3} .\)
+        \(\displaystyle F_q (x) = - \frac{\lambda}{3} \mathbb{E}_x Y^3 = q
+        (m_q (x) - x), \quad |m_q
+(x) | \leqslant 2 (\lambda / 3)^{- 1 / 4} +
+        2 (3 q|x| / \lambda)^{1 / 3} .\)
       </center>
       <center>
         <img src="cqft_slides_5-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.6768em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
       </center>
       <p>
-        So <font color="#620000">\(R / (\lambda x^3) \to 1\)</font>: the remainder
+        So <font color="#620000">\(3 R / (\lambda x^3) \to 1\)</font>: the remainder
         <strong>cancels the cube</strong>. Field equation: <font color="#620000">\(qx =
         (q - q_0) m_q + \eta_q\)</font>, only linear confinement.
       </p>
@@ -1212,17 +1214,17 @@ s, \quad j = 0, 1,\)
       </p>
       <p>
         <font color="#620000">\(f^c = f_1 +\mathcal{C}f_2\)</font>, with <font color="#620000">\(f_1
-        = - \lambda (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font> the
-        first tree, <font color="#620000">\(\mathcal{C}f_2 = \kappa_q \prime \cdot f_2
-        \circ \kappa_q\)</font>. For <font color="#620000">\(|x| \geqslant 2
+        = - \frac{\lambda}{3} (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font>
+        the first tree, <font color="#620000">\(\mathcal{C}f_2 = \kappa_q \prime \cdot
+        f_2 \circ \kappa_q\)</font>. For <font color="#620000">\(|x| \geqslant 2
         r_q\)</font>, the Burgers defect is exactly
       </p>
       <center>
-        \(\displaystyle E_q = S^2 f_1 f_1 \prime \approx 3 \lambda^2 S^2
-        x^5,\)
+        \(\displaystyle E_q = S^2 f_1 f_1 \prime \approx \frac{\lambda^2}{3}
+        S^2 x^5,\)
       </center>
       <p>
-        of size <font color="#620000">\((q / \lambda)^{1 / 2}\)</font> at the edge of
+        of size <font color="#620000">\((3 q / \lambda)^{1 / 2}\)</font> at the edge of
         the clip: not integrable in <font color="#620000">\(q\)</font>.
       </p>
       <center>
@@ -1230,12 +1232,12 @@ s, \quad j = 0, 1,\)
         (f^c)\prime R_q] \hspace{0.17em}
 \mathrm{d} q + \Xi^R_q
         \hspace{0.17em} \mathrm{d} W_q, \quad \text{bracket}
-\approx 3
-        \lambda^2 S^2 x^5 - 3 \lambda S^2 x^2 R.\)
+\approx
+        \frac{\lambda^2}{3} S^2 x^5 - \lambda S^2 x^2 R.\)
       </center>
       <p>
         The source and the dissipation cancel for the true <font color="#620000">\(R
-        \sim \lambda x^3\)</font>: separate estimates give nothing.
+        \sim \frac{\lambda}{3} x^3\)</font>: separate estimates give nothing.
       </p>
       <p>
         Tails independent of <font color="#620000">\(R\)</font>: on one site from the
@@ -1246,7 +1248,7 @@ s, \quad j = 0, 1,\)
         r_q\)</font>.
       </p>
     </div>
-    <div class="toggle" style="display: block">
+    <div class="toggle" style="display: none">
       <div class="slide-title">
         Integrating the cube
       </div>
@@ -1258,14 +1260,15 @@ s, \quad j = 0, 1,\)
       </p>
       <center>
         \(\displaystyle \partial_q f + S^2 ff' = 0, \quad f_{\infty} = -
-        \lambda x^3 \quad \Rightarrow
-\quad f_q (x) = - \lambda y^3, \quad qy
-        + \lambda y^3 = qx.\)
+        \frac{\lambda}{3} x^3 \quad
+\Rightarrow \quad f_q (x) = -
+        \frac{\lambda}{3} y^3, \quad qy +
+\frac{\lambda}{3} y^3 = qx.\)
       </center>
       <center>
         \(\displaystyle \sup_x |F_q (x) - f_q (x) | \leqslant 2 C_{\ast}
-        (\lambda / q)^{1 / 2}, \quad
-C_{\ast} < \frac{1}{2} .\)
+        (\frac{\lambda}{3 q})^{1 /
+2}, \quad C_{\ast} < \frac{1}{2} .\)
       </center>
       <ul>
         <li>
@@ -1287,7 +1290,7 @@ C_{\ast} < \frac{1}{2} .\)
         <li>
           <p>
             The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
-            + \lambda y^3 = q \Phi_q\)</font>.
+            + \frac{\lambda}{3} y^3 = q \Phi_q\)</font>.
           </p>
         </li>
       </ul>

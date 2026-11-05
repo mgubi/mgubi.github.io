@@ -106,7 +106,7 @@
         counterterm, and two correction steps beyond one loop, which make the
         defect integrable in the backward equation. Finally we identify the
         large-field problem: the construction only controls fields of size
-        \(r_q = (q / \gamma)^{1 / 2}\), and must be extended to all fields
+        \(r_q = (q / \lambda)^{1 / 2}\), and must be extended to all fields
         without losing coercivity. The price is an error that is not small but
         lives on large fields. Lecture 6 controls it by a priori estimates on
         the FBSDE and removes the cutoffs.</font>
@@ -376,7 +376,7 @@ x), \qquad \|C\|_{\text{row}} = \sup_x  \int
       and for a symmetric kernel on every \(L^p\), \(1 \leqslant p \leqslant
       \infty\), by interpolation: \(\|C\|_{p \to p} \leqslant
       \|C\|_{\text{row}}\). \(M_f\) is multiplication by \(f\), and \(K +
-      \gamma y^2\) means \(K + \gamma M_{y^2}\). For a functional \(F\) on
+      \lambda y^2\) means \(K + \lambda M_{y^2}\). For a functional \(F\) on
       \(H_N\), \(DF\), \(D^2 F\), \(D^k F\) are its gradient and derivatives,
       as in Lecture 3. \(\|u\|_p\) is the \(L^p\) norm for the measure
       \(\int\).
@@ -456,8 +456,8 @@ q^{- 2}, \qquad
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
-        <i>For \(y \in H_N\) and \(\gamma > 0\), the killed resolvent \(G_q
-        (y) = (K_q + \gamma y^2)^{- 1}\) satisfies \(0 \leqslant G_q (y) (x,
+        <i>For \(y \in H_N\) and \(\lambda > 0\), the killed resolvent \(G_q
+        (y) = (K_q + \lambda y^2)^{- 1}\) satisfies \(0 \leqslant G_q (y) (x,
         z) \leqslant C_q  (x, z)\).</i>
       </p>
     </div>
@@ -465,7 +465,7 @@ q^{- 2}, \qquad
       <strong class="enunciation-name">Proof. </strong>\(C_q = \int_0^{\infty} \mathrm{e}^{- qs}
       \mathrm{e}^{s \Delta} \mathrm{d} s\) and \(\mathrm{e}^{s \Delta}\) is
       the transition kernel of the lattice random walk. This gives positivity
-      and the row sums. Killing the walk at rate \(\gamma y^2\) gives the
+      and the row sums. Killing the walk at rate \(\lambda y^2\) gives the
       comparison for \(G_q\). The symbol of \(- \Delta_N\) is comparable to
       \(|k|^2\) on the centred frequency cube \(n \in \{- \frac{N - 1}{2},
       \ldots, \frac{N - 1}{2} \}^3\) (symbol \(4 N^2  \sum_i \sin^2 (\pi n_i /
@@ -484,14 +484,12 @@ q^{- 2}, \qquad
     <h3 id="auto-5">10.2<span style="margin-left: 1em"></span>The cutoff measure and the goal<span
     style="margin-left: 1em"></span></h3>
     <p>
-      Fix \(\lambda > 0\) and put \(\gamma := 3 \lambda\) (not to be confused
-      with the counterterm \(\gamma_T\) of Lecture 4). The interaction and the
-      lattice measure are
+      Fix \(\lambda > 0\). The interaction and the lattice measure are
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:nuN"></a>\(\displaystyle U (\varphi) =
-        \frac{\lambda}{4}  \int \varphi^4, \qquad V_N (\varphi) = U
+        \frac{\lambda}{12}  \int \varphi^4, \qquad V_N (\varphi) = U
 (\varphi)
         + \frac{\mu_N}{2}  \int \varphi^2, \qquad \nu_N (\mathrm{d} \varphi)
 =
@@ -504,16 +502,18 @@ q^{- 2}, \qquad
     <p>
       where \(\mu^C\) is the centred Gaussian measure with covariance \(C =
       C_{q_0}\) on \(H_N\), and \(\mu_N \in \mathbb{R}\) is a mass counterterm
-      to be chosen. With this normalisation \(D^2 U (y) = \gamma M_{y^2}\). In
-      Lecture 4 we wrote the interaction as
+      to be chosen. With this normalisation \(D^2 U (y) = \lambda M_{y^2}\):
+      the coupling is the curvature of the interaction, which is why we write
+      \(\lambda / 12\). In Lecture 4 we wrote the interaction as
     </p>
     <center>
-      \(\displaystyle \lambda \int H_4  (\varphi ; c_T) + \gamma_T  \int H_2
-      (\varphi ; c_T) ;\)
+      \(\displaystyle \frac{\lambda}{12}  \int H_4  (\varphi ; c_T) + \gamma_T
+      \int H_2  (\varphi ;
+c_T) ;\)
     </center>
     <p>
-      the Wick ordering is now part of \(\mu_N\), and the coupling is rescaled
-      by \(4\). For every real \(\mu_N\), \(\nu_N\) is a probability measure
+      the coupling is the same, and the Wick ordering is now part of
+      \(\mu_N\). For every real \(\mu_N\), \(\nu_N\) is a probability measure
       with all moments, since the quartic term dominates.
     </p>
     <div class="key-result">
@@ -526,8 +526,8 @@ q^{- 2}, \qquad
         </p>
         <p>
           <i><center>
-            \(\displaystyle \mu_N = r - 3 \lambda \text{Tr} C + 6 \lambda^2
-            \int C^3 .\)
+            \(\displaystyle \mu_N = r - \lambda \text{Tr} C + \frac{2}{3}
+            \lambda^2 \int C^3 .\)
           </center></i>
         </p>
         <p>
@@ -934,15 +934,15 @@ D^2 \mathcal{F}_q (y) = 0, \quad \text{Cov}_q =
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">10.4</class>.
         </strong><class style="font-style: normal"><strong>(One site) </strong></class><a id="ex:one-site"></a>Take
         \(N = 1\) (one site, \(\Delta = 0\), \(K_q = q\)) and
-        \(\bar{\mathcal{F}}_q (y) = \lambda y^3\). (a) Show that \(Y_q\) is
-        the real root of \(qY + \lambda Y^3 = q \Phi_q\), and that \(H_q (y) =
-        (q + \gamma y^2)^{- 1}\). Explain how large fields suppress the noise
-        of \(Y\). (b) Compute the defect \(\mathcal{D}_q (y) = \gamma y (q +
-        \gamma y^2)^{- 2}\) and the drift \(b_q (y) = - \gamma y (q + \gamma
-        y^2)^{- 3}\). Show that \(|b_q (y) | \leqslant \gamma q^{- 3} |y|\),
-        and compare with Proposition <a href="#prop:source">12.2</a>: on one site \(a_2 (q)
-        = q^{- 2}\) instead of \(q^{- 1 / 2}\), and no renormalisation is
-        needed.</font>
+        \(\bar{\mathcal{F}}_q (y) = \frac{\lambda}{3} y^3\). (a) Show that
+        \(Y_q\) is the real root of \(qY + \frac{\lambda}{3} Y^3 = q \Phi_q\),
+        and that \(H_q (y) = (q + \lambda y^2)^{- 1}\). Explain how large
+        fields suppress the noise of \(Y\). (b) Compute the defect
+        \(\mathcal{D}_q (y) = \lambda y (q + \lambda y^2)^{- 2}\) and the
+        drift \(b_q (y) = - \lambda y (q + \lambda y^2)^{- 3}\). Show that
+        \(|b_q (y) | \leqslant \lambda q^{- 3} |y|\), and compare with
+        Proposition <a href="#prop:source">12.2</a>: on one site \(a_2 (q) = q^{- 2}\)
+        instead of \(q^{- 1 / 2}\), and no renormalisation is needed.</font>
       </p>
     </div>
     <h2 id="auto-12"><a id="sec:renormalisation"></a>11<span style="margin-left: 1em"></span>Renormalisation: why two of
@@ -957,9 +957,9 @@ D^2 \mathcal{F}_q (y) = 0, \quad \text{Cov}_q =
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:g-r"></a>\(\displaystyle g_q := \gamma q^{- 1 /
-        2}, \qquad r_q := (q / \gamma)^{1 / 2}, \qquad \gamma
-r_q^2 =
+        <td width="100%" align="center"><a id="eq:g-r"></a>\(\displaystyle g_q := \lambda q^{- 1 /
+        2}, \qquad r_q := (q / \lambda)^{1 / 2}, \qquad
+\lambda r_q^2 =
         q.\)</td>
         <td align="right">(11.1)</td>
       </tr>
@@ -968,10 +968,10 @@ r_q^2 =
       \(g_q\) is the dimensionless coupling at resolution \(q\): in \(d = 3\)
       the coupling \(\lambda\) has dimension of mass, and \(q^{1 / 2}\) is the
       mass of the regulator. It is small at all scales \(q \geqslant
-      q_{\ast}\) if \(g_{q_{\ast}} = \gamma q_{\ast}^{- 1 / 2}\) is small;
+      q_{\ast}\) if \(g_{q_{\ast}} = \lambda q_{\ast}^{- 1 / 2}\) is small;
       this is the only large number in the construction, and it is not a
       physical mass. \(r_q\) is the field size at which the nonlinearity is
-      comparable to the regulator: \(D^2 U (y) = \gamma y^2 \approx q\) when
+      comparable to the regulator: \(D^2 U (y) = \lambda y^2 \approx q\) when
       \(|y| \approx r_q\). Compare with the size of the free field at
       resolution \(q\):
     </p>
@@ -1013,8 +1013,8 @@ r_q^2 =
       \(\displaystyle \bar{\mathcal{F}}_q - U\prime - M_q y\)
     </center>
     <p>
-      to the bare force (\(U\prime = DU = \lambda y^3\) the bare force,
-      \(M_q\) a linear mass term, Section 11.3) is
+      to the bare force (\(U\prime = DU = \frac{\lambda}{3} y^3\) the bare
+      force, \(M_q\) a linear mass term, Section 11.3) is
     </p>
     <table width="100%">
       <tr>
@@ -1027,8 +1027,8 @@ r_q^2 =
       For \(k = 2\) this says the derivative of the correction force is
       \(g_q\) times the regulator \(q\) (while \(D^2 U \approx q\) at \(|y|
       \approx r_q\)); each extra field derivative costs \(r_q^{- 1}\). For \(k
-      = 4\), \(g_q qr_q^{- 2} = \gamma g_q\): the four-leg vertex of the
-      corrections is \(\gamma\) times the small coupling. The whole
+      = 4\), \(g_q qr_q^{- 2} = \lambda g_q\): the four-leg vertex of the
+      corrections is \(\lambda\) times the small coupling. The whole
       construction is a bookkeeping of <class style="font-style: normal">(<a href="#eq:power-counting">11.2</a>)</class>.
     </p>
     <p>
@@ -1095,7 +1095,7 @@ r_q^2 =
       \(\displaystyle s (D^{j + 2} U) \leqslant Cqr_q^{- j}\)
     </center>
     <p>
-      on the ball (\(D^3 U = 2 \gamma y\), \(D^4 U = 2 \gamma\)). With \(a_2
+      on the ball (\(D^3 U = 2 \lambda y\), \(D^4 U = 2 \lambda\)). With \(a_2
       \leqslant Cq^{- 1 / 2}\), a loop with \(k\) external legs built from
       them is \(\leqslant Cq^{1 / 2} r_q^{- k}\), and after the integration in
       \(q\) that produces the force \(\mathcal{F}\) (which gains a factor
@@ -1108,42 +1108,42 @@ r_q^2 =
     <h3 id="auto-15">11.2<span style="margin-left: 1em"></span>The seed: one loop<span style="margin-left: 1em"></span></h3>
     <p>
       The first approximation is the one-loop formula of Exercise <a href="cqft_lecture_4.html#ex:1PI">8.6</a>(b):
-      replace \(D\mathcal{F}\) by \(DU\prime = \gamma y^2\) in the force
+      replace \(D\mathcal{F}\) by \(DU\prime = \lambda y^2\) in the force
       equation and integrate from \(q = \infty\). With the linear part
       subtracted this gives the seed
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:seed"></a>\(\displaystyle \ell_q (y) (x) = \gamma y
-        (x) [G_q (y) (x, x) - C_q (x, x)], \quad \partial_q
-\ell_q (y) (x) = -
-        \gamma y (x) [G_q (y)^2 (x, x) - a_2 (q)], \)</td>
+        <td width="100%" align="center"><a id="eq:seed"></a>\(\displaystyle \ell_q (y) (x) = \lambda
+        y (x) [G_q (y) (x, x) - C_q (x, x)], \quad \partial_q
+\ell_q (y) (x) =
+        - \lambda y (x) [G_q (y)^2 (x, x) - a_2 (q)], \)</td>
         <td align="right">(11.4)</td>
       </tr>
     </table>
     <p>
-      with \(G_q (y) = (K_q + \gamma y^2)^{- 1}\). It is odd, and its linear
+      with \(G_q (y) = (K_q + \lambda y^2)^{- 1}\). It is odd, and its linear
       Taylor coefficient at \(y = 0\) vanishes. Its expansion in powers of the
       field,
     </p>
     <center>
-      \(\displaystyle \ell_q (y) (x) = \gamma y (x) \sum_{j \geqslant 2} (-
-      1)^{j - 1} [C_q (\gamma
-y^2 C_q)^{j - 1}] (x, x),\)
+      \(\displaystyle \ell_q (y) (x) = \lambda y (x) \sum_{j \geqslant 2} (-
+      1)^{j - 1} [C_q
+(\lambda y^2 C_q)^{j - 1}] (x, x),\)
     </center>
     <p>
       is the sum of one-loop diagrams with \(2 j\) external legs, one of them
       the output \(x\). The leading term is the bubble
     </p>
     <center>
-      \(\displaystyle - \gamma^2 y (x) \int C_q (x, z)^2 y (z)^2
+      \(\displaystyle - \lambda^2 y (x) \int C_q (x, z)^2 y (z)^2
       \hspace{0.17em} \mathrm{d} z,\)
     </center>
     <p>
       with
     </p>
     <center>
-      \(\displaystyle s (D^3 \ell_q (0)) = 6 \gamma^2 a_2 (q) \leqslant Cg_q
+      \(\displaystyle s (D^3 \ell_q (0)) = 6 \lambda^2 a_2 (q) \leqslant Cg_q
       qr_q^{- 2},\)
     </center>
     <p>
@@ -1162,7 +1162,7 @@ y^2 C_q)^{j - 1}] (x, x),\)
             <font style="font-size: 84.1%"><p>
               <b>Figure 11.1. </b><a id="auto-16"></a><a id="fig:seed-rings"></a>The seed <class style="font-style: normal">(<a
               href="#eq:seed">11.4</a>)</class> as one-loop graphs: lines \(C_q\), and a
-              vertex \(\gamma y^2\) with its two external fields at each
+              vertex \(\lambda y^2\) with its two external fields at each
               corner. The \(j\)-th ring has \(2 j\) legs and coefficient \((-
               1)^{j + 1} / (2 j)\). Marking one leg of a ring gives its term
               in the seed force. The series sums to a logarithm and has radius
@@ -1395,7 +1395,7 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:mass"></a>\(\displaystyle \partial_q M_q = B_q [M]
-        := - \gamma \text{Tr} (R_{0, q}^2) I - \tfrac{1}{2}
+        := - \lambda \text{Tr} (R_{0, q}^2) I - \tfrac{1}{2}
 \text{Ctr}_{R_{0,
         q}^2} D^3 \ell^{[2]}_q (0),\)</td>
         <td align="right">(11.8)</td>
@@ -1412,7 +1412,7 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
     <p>
       (the latter in first spatial moment). The running mass is pinned at the
       auxiliary scale \(q_{\ast}\), at a value \(b\) with \(|b| \leqslant B
-      \gamma q_{\ast}^{1 / 2}\), while the nonlocal kernel is pinned at
+      \lambda q_{\ast}^{1 / 2}\), while the nonlocal kernel is pinned at
       infinity. The bare mass is then
     </p>
     <table width="100%">
@@ -1440,16 +1440,18 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
         <strong class="enunciation-name">Proposition <class style="font-style: normal">11.1</class>.
         </strong><i><class style="font-style: normal"><strong>(The coefficient construction)
         </strong></class><a id="prop:coeff"></a> For \(q_{\ast}\) large enough (depending
-        on \(\gamma\), not on \(N\)), the system <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class>&ndash;<class
+        on \(\lambda\), not on \(N\)), the system <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class>&ndash;<class
         style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class> has a unique solution in a ball,
         with</i>
       </p>
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:coeff"></a>\(\displaystyle | \mu_q | \leqslant C
-          \gamma \sqrt{q}, \qquad v_1 (\Theta_q) \leqslant C
-\gamma^2 q^{- 1 /
-          2}, \qquad \| \partial_q M_q \|_{\text{row}} \leqslant Cg_q,\)</td>
+          \lambda \sqrt{q}, \qquad v_1 (\Theta_q) \leqslant C
+\lambda^2 q^{- 1
+          / 2}, \qquad \| \partial_q M_q \|_{\text{row}}
+          \leqslant
+Cg_q,\)</td>
           <td align="right">(11.10)</td>
         </tr>
       </table></i>
@@ -1499,15 +1501,15 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:defect-bound"></a>\(\displaystyle \textsf{S}_4
-          (\mathcal{D}^{\text{o}}_q) \leqslant C \gamma^5 q^{- 3} .\)</td>
+          (\mathcal{D}^{\text{o}}_q) \leqslant C \lambda^5 q^{- 3} .\)</td>
           <td align="right">(11.12)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
-        <i>At fixed \(N\) the bare mass exists, \(| \mu_N - b| \lesssim \gamma
-        \text{Tr} C_{q_{\ast}} \lesssim \gamma N\), and \(| \mu_N - \mu_q |
-        \leqslant C \gamma N^3 / q\), \(\| \Theta_q \|_{\text{row}} \leqslant
-        CN \gamma^2 q^{- 1 / 2} \to 0\) as \(q \to \infty\).</i>
+        <i>At fixed \(N\) the bare mass exists, \(| \mu_N - b| \lesssim
+        \lambda \text{Tr} C_{q_{\ast}} \lesssim \lambda N\), and \(| \mu_N -
+        \mu_q | \leqslant C \lambda N^3 / q\), \(\| \Theta_q \|_{\text{row}}
+        \leqslant CN \lambda^2 q^{- 1 / 2} \to 0\) as \(q \to \infty\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -1522,9 +1524,9 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
       the loop force into loops; in each, telescope the difference onto one
       marked vertex or propagator and apply <class style="font-style: normal">(<a href="#eq:loop">11.3</a>)</class>.
       (b) <em>Integration.</em> Each step gains one \(g\); the integrand of
-      <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class> is \(O (\gamma^{1 + k / 2}
+      <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class> is \(O (\lambda^{1 + k / 2}
       s^{- k / 2})\) in the \(k\)-leg vertex, and that of the increment
-      \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\gamma^{1 + k / 2} s^{- k / 2}
+      \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\lambda^{1 + k / 2} s^{- k / 2}
       g_s^j)\), integrable at \(s = \infty\) for \(k \geqslant 4\). The low
       jets have been removed, so the lower derivatives are controlled by
       Taylor's formula from the four-leg vertex. (c) <em>Mass path.</em> Given
@@ -1539,7 +1541,7 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
       approximations, of order \(g^3\): by (a) with \(\varepsilon_q = g_q^3\),
       \(\textsf{S}_4 (\mathcal{D}^{\text{o}}) \leqslant Cg_q^3 q^{1 / 2}
       r_q^{- 4} = C
-\gamma^5 q^{- 3}\).<span style="margin-left: 1em"></span>\(\Box\)
+\lambda^5 q^{- 3}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Two technical points are hidden in this sketch. First, the loop estimate
@@ -1565,14 +1567,14 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
       <li>
         <p>
           <em>The tadpole.</em> The first term of <class style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class>
-          integrates to \(- \gamma \int_{q_{\ast}}^{\infty} \text{Tr} R_{0,
+          integrates to \(- \lambda \int_{q_{\ast}}^{\infty} \text{Tr} R_{0,
           q}^2 \hspace{0.17em}
-\mathrm{d} q \approx - \gamma \text{Tr} C = - 3
-          \lambda \text{Tr} C \sim - N\) (up to a term bounded uniformly in
-          \(N\)). This is Wick ordering: \(\frac{\lambda}{4} \varphi^4 -
-          \frac{3}{2} \lambda c \varphi^2\) agrees, up to a constant, with
-          \(\frac{\lambda}{4} H_4  (\varphi ; c)\), with \(c = C (x, x)\) (<a
-          href="cqft_lecture_4.html#eq:first-order">(A.5)</a> of Lecture 4).
+\mathrm{d} q \approx - \lambda \text{Tr} C \sim
+          - N\) (up to a term bounded uniformly in \(N\)). This is Wick
+          ordering: \(\frac{\lambda}{12} \varphi^4 - \frac{1}{2} \lambda c
+          \varphi^2\) agrees, up to a constant, with \(\frac{\lambda}{12} H_4
+          (\varphi ; c)\), with \(c = C (x, x)\) (<a href="cqft_lecture_4.html#eq:first-order">(A.5)</a> of
+          Lecture 4).
         </p>
       </li>
       <li>
@@ -1583,13 +1585,14 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
           self-energy, which diverges like \(\lambda^2  \int_{|z| > 1 / N}
           |z|^{- 3} \mathrm{d} z \sim \lambda^2 \log N\). This is the sunset
           counterterm \(\gamma_T \sim \log T\) of <a href="cqft_lecture_4.html#eq:gammaT">(A.7)</a> of
-          Lecture 4: with \(\lambda_{\text{L4}} = \lambda / 4\) and \(\gamma_T
-          \int H_2 = \gamma_T  \int \varphi^2 +\)const, the sunset part of
-          \(\mu_N\) is \(2 \gamma_T = 6 \lambda^2  \int C^3 \approx \frac{3
-          \lambda^2}{8 \pi^2} \log N\), positive. (The double-tadpole
-          logarithms in the two terms of <class style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class>,
-          the bubble with a tadpole insertion and the mass insertion in
-          \(\text{Tr} R_{0, q}^2\), cancel each other.)
+          Lecture 4: with \(\gamma_T  \int H_2 = \gamma_T  \int \varphi^2
+          +\)const, the sunset part of \(\mu_N\) is \(2 \gamma_T = \frac{2}{3}
+          \lambda^2  \int C^3 \approx \frac{\lambda^2}{24
+\pi^2} \log N\),
+          positive. (The double-tadpole logarithms in the two terms of <class
+          style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class>, the bubble with a tadpole
+          insertion and the mass insertion in \(\text{Tr} R_{0, q}^2\), cancel
+          each other.)
         </p>
       </li>
     </ul>
@@ -1663,15 +1666,15 @@ D\mathcal{T}_q [M, \ell_q] (0) y.\)
     <center>
       \(\displaystyle \textsf{S}_4 (\mathcal{D}_s) \lesssim g_s^{n + 1} s^{1 /
       2} r_s^{- 4} =
-\gamma^{n + 3} s^{- (n + 4) / 2}, \qquad |b_s | \lesssim
-      \gamma^{n + 3 / 2}
+\lambda^{n + 3} s^{- (n + 4) / 2}, \qquad |b_s | \lesssim
+      \lambda^{n + 3 / 2}
 s^{- (n + 3) / 2},\)
     </center>
     <p>
       and therefore
     </p>
     <center>
-      \(\displaystyle |Z_q | \lesssim \frac{\gamma^{n + 3 / 2}}{q}
+      \(\displaystyle |Z_q | \lesssim \frac{\lambda^{n + 3 / 2}}{q}
       \int_q^{\infty} s^{- (n + 1) /
 2} \mathrm{d} s.\)
     </center>
@@ -1686,19 +1689,19 @@ s^{- (n + 3) / 2},\)
             s\)</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(0\) (seed only)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\gamma^3 s^{- 2}\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\gamma^{3 / 2} s^{- 3 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\lambda^3 s^{- 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\lambda^{3 / 2} s^{- 3 / 2}\)</td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\infty\) (power)</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(1\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\gamma^4 s^{- 5 / 2}\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\gamma^{5 / 2} s^{- 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\lambda^4 s^{- 5 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\lambda^{5 / 2} s^{- 2}\)</td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em">\(\infty\) (logarithm)</td>
           </tr><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(2\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\gamma^5 s^{- 3}\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\gamma^{7 / 2} s^{- 5 / 2}\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(2 \gamma^{7 / 2} q^{- 3 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\lambda^5 s^{- 3}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\lambda^{7 / 2} s^{- 5 / 2}\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(2 \lambda^{7 / 2} q^{- 3 / 2}\)</td>
           </tr></tbody>
         </table></font>
       </p>
@@ -1707,7 +1710,7 @@ s^{- (n + 3) / 2},\)
       With one step the bounded-field source produces a logarithmically
       divergent error; two steps are the minimum, and they suffice:
       \(Z^{\text{b}}_q = O (q^{- 3 / 2})\), and the backward energy
-      \(\gamma^{- 1}  \int q^{1 / 2} |Z^{\text{b}} |^2 \mathrm{d} q\) is
+      \(\lambda^{- 1}  \int q^{1 / 2} |Z^{\text{b}} |^2 \mathrm{d} q\) is
       finite (Lecture 6). The general (fractional) theory gives the depth
       criterion \((n + 2) \varkappa > (3 + \varkappa) / 2\), with
       subcriticality \(\varkappa = \frac{1}{2}\) for \(\Phi^4_3\): \((2 + 2)
@@ -1740,38 +1743,38 @@ s^{- (n + 3) / 2},\)
           </strong></class><a id="thm:counter"></a>Let \(a_2 = \text{Tr} C_q^2\) and
           \(C_q^{(2)}\) be the kernel of \(C_q^2\); in integrals, powers of
           kernels are pointwise, \(\int C_q^2 C_q^{(2)} = \int C_q (0, z)^2
-          C_q^{(2)} (0, z) \mathrm{d} z\). For \(|b| \leqslant B \gamma
+          C_q^{(2)} (0, z) \mathrm{d} z\). For \(|b| \leqslant B \lambda
           q_{\ast}^{1 / 2}\) and \(q_{\ast}\) large,</i>
         </p>
         <i><table width="100%">
           <tr>
-            <td width="100%" align="center"><a id="eq:beta-exp"></a>\(\displaystyle \beta_q = - \gamma
-            a_2 - \gamma \mu_q a_2' + \gamma^2 a_2^2 + 2 \gamma^2 \int
-C_q^2
-            C_q^{(2)} +\mathcal{R}_q, \quad |\mathcal{R}_q | \leqslant C
-            \gamma^3
-q^{- 3 / 2}, \)</td>
+            <td width="100%" align="center"><a id="eq:beta-exp"></a>\(\displaystyle \beta_q = - \lambda
+            a_2 - \lambda \mu_q a_2' + \lambda^2 a_2^2 + 2 \lambda^2
+\int
+            C_q^2 C_q^{(2)} +\mathcal{R}_q, \quad |\mathcal{R}_q | \leqslant
+            C
+\lambda^3 q^{- 3 / 2}, \)</td>
             <td align="right">(11.14)</td>
           </tr>
         </table></i>
         <p>
-          <i>and so, for \(f_N (b) = \mu_N (b) + 3 \lambda \text{Tr} C - 6
-          \lambda^2 \int C^3\),</i>
+          <i>and so, for \(f_N (b) = \mu_N (b) + \lambda \text{Tr} C -
+          \frac{2}{3} \lambda^2 \int C^3\),</i>
         </p>
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:fN"></a>\(\displaystyle
             \begin{array}{rlllllllll}
   &  &  &  &  &  &  &  & f_N (b) = & b
-            (1 + \gamma a_2 (q_{\ast})) + \gamma
+            (1 + \lambda a_2 (q_{\ast})) + \lambda
   (\text{Tr} C - \text{Tr}
             C_{q_{\ast}})\\
-  &  &  &  &  &  &  &  &  & - 6 \lambda^2 \int
-            (C^3 - C_{q_{\ast}}^3) +
-  \int_{q_{\ast}}^{\infty} (\mathcal{R}_q
-            + \gamma (\beta_q + \gamma a_2) a_2)
-  \hspace{0.17em} \mathrm{d}
-            q.
+  &  &  &  &  &  &  &  &  & - \frac{2}{3}
+            \lambda^2 \int (C^3 -
+  C_{q_{\ast}}^3) + \int_{q_{\ast}}^{\infty}
+            (\mathcal{R}_q + \lambda (\beta_q
+  + \lambda a_2) a_2)
+            \hspace{0.17em} \mathrm{d} q.
 \end{array} \)</td>
             <td align="right">(11.15)</td>
           </tr>
@@ -1785,8 +1788,8 @@ q^{- 3 / 2}, \)</td>
         </p>
         <i><table width="100%">
           <tr>
-            <td width="100%" align="center"><a id="eq:explicit"></a>\(\displaystyle \mu_N = r - 3 \lambda
-            \text{Tr} C + 6 \lambda^2 \int C^3, \)</td>
+            <td width="100%" align="center"><a id="eq:explicit"></a>\(\displaystyle \mu_N = r - \lambda
+            \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3, \)</td>
             <td align="right">(11.16)</td>
           </tr>
         </table></i>
@@ -1798,41 +1801,42 @@ q^{- 3 / 2}, \)</td>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong><strong>Expansion.</strong> Expand \(R_0
       = C - CMC + CMCMR_0\) with \(C = C_q\). Since \(a_2' = - 2 \text{Tr}
-      C^3\), the first term of (<a href="#eq:mass">11.8</a>) is \(- \gamma a_2 - \gamma
-      \mu a_2' + 2 \gamma \text{Tr} (C^3 \Theta)\), up to \(O (\gamma a_2
-      g_q^2)\), and \(| \text{Tr} (C^3 \Theta) | \leqslant Cq^{- 1} v_1
-      (\Theta)\) because \(| \hat{\Theta} (k) | \leqslant 2 |k| v_1\). The
-      corrections in \(\ell^{[2]}\) give \(O (\gamma^3 q^{- 3 / 2})\) after
-      contraction, by (<a href="#eq:increments">11.11</a>). The cubic part of the seed is \(-
-      \gamma^2 y (x) \int C^2 (x, z) y (z)^2\), and contracting its third
-      derivative at zero with \(R_0^2\) gives the operator \(\gamma^2 a_2
-      \text{diag} (R_0^2) + 2 \gamma^2 C^2 \cdot R_0^2\), where \(\cdot\) is
-      the pointwise product of kernels. Its constant-mode eigenvalue, with
+      C^3\), the first term of (<a href="#eq:mass">11.8</a>) is \(- \lambda a_2 -
+      \lambda \mu a_2' + 2 \lambda \text{Tr} (C^3 \Theta)\), up to \(O
+      (\lambda a_2 g_q^2)\), and \(| \text{Tr} (C^3 \Theta) | \leqslant Cq^{-
+      1} v_1 (\Theta)\) because \(| \hat{\Theta} (k) | \leqslant 2 |k| v_1\).
+      The corrections in \(\ell^{[2]}\) give \(O (\lambda^3 q^{- 3 / 2})\)
+      after contraction, by (<a href="#eq:increments">11.11</a>). The cubic part of the seed
+      is \(- \lambda^2 y (x) \int C^2 (x, z) y (z)^2\), and contracting its
+      third derivative at zero with \(R_0^2\) gives the operator \(\lambda^2
+      a_2 \text{diag} (R_0^2) + 2 \lambda^2 C^2 \cdot R_0^2\), where \(\cdot\)
+      is the pointwise product of kernels. Its constant-mode eigenvalue, with
       \(R_0^2\) replaced by \(C^2\) at a relative cost \(g_q\), gives the
       remaining two terms.
     </p>
     <p>
       <strong>Integration.</strong> Use \(\partial_q \text{Tr} C_q = - a_2\),
-      \(\partial_q \int C_q^3 = - 3 \int C_q^2 C_q^{(2)}\), and \(- \gamma \mu
-      a_2' + \gamma^2 a_2^2 = - \gamma \partial_q (\mu a_2) + \gamma
-(\beta +
-      \gamma a_2) a_2\). This is the cancellation of the double-tadpole
-      logarithms: \(\beta + \gamma a_2 = O (\gamma^2 / q)\). At fixed \(N\)
-      the boundary terms at \(q = \infty\) vanish, which gives (<a href="#eq:fN">11.15</a>).
+      \(\partial_q \int C_q^3 = - 3 \int C_q^2 C_q^{(2)}\), and \(- \lambda
+      \mu a_2' + \lambda^2 a_2^2 = - \lambda \partial_q (\mu a_2) +
+\lambda
+      (\beta + \lambda a_2) a_2\). This is the cancellation of the
+      double-tadpole logarithms: \(\beta + \lambda a_2 = O (\lambda^2 / q)\).
+      At fixed \(N\) the boundary terms at \(q = \infty\) vanish, which gives
+      (<a href="#eq:fN">11.15</a>).
     </p>
     <p>
       <strong>Response.</strong> For two boundary values with difference
       \(\delta b\), put \(D = \sup_q | \delta \mu_q |\) and \(X = \sup_q q^{3
       / 2} v_1 (\delta \Theta_q)\), which are finite at fixed \(N\). The loop
-      comparison gives \(| \delta \beta_q | \leqslant C \gamma (Dq^{- 3 / 2} +
-      Xq^{- 5 / 2})\) and \(v_1 (\delta B_q - \delta \beta_q I) \leqslant C
-      \gamma^2 (Dq^{- 5 / 2} + Xq^{-
-7 / 2})\), so \(X \leqslant C \gamma^2 D
-      + C \gamma^2 q_{\ast}^{- 1} X\) and \(D \leqslant | \delta b| + C \gamma
-      q_{\ast}^{- 1 / 2} D + C \gamma q_{\ast}^{-
-3 / 2} X\). Hence \(D
-      \leqslant 2 | \delta b|\), and integrating \(\delta \beta\) gives the
-      claim.
+      comparison gives \(| \delta \beta_q | \leqslant C \lambda (Dq^{- 3 / 2}
+      + Xq^{- 5 / 2})\) and \(v_1 (\delta B_q - \delta \beta_q I) \leqslant C
+      \lambda^2 (Dq^{- 5 / 2} +
+Xq^{- 7 / 2})\), so \(X \leqslant C \lambda^2
+      D + C \lambda^2 q_{\ast}^{- 1} X\) and \(D \leqslant | \delta b| + C
+      \lambda q_{\ast}^{- 1 / 2} D + C \lambda
+q_{\ast}^{- 3 / 2} X\). Hence
+      \(D \leqslant 2 | \delta b|\), and integrating \(\delta \beta\) gives
+      the claim.
     </p>
     <p style="margin-bottom: 1em">
       <strong>Limit and inversion.</strong> In (<a href="#eq:fN">11.15</a>),
@@ -1840,7 +1844,7 @@ q^{- 3 / 2}, \)</td>
       (1 + |k|)^{- 4}\); \(C - C_{q_{\ast}}\) converges uniformly and \(C^2 +
       CC_{q_{\ast}} + C_{q_{\ast}}^2\) in \(L^1\); and the integrand converges
       at fixed \(q\) by consistency of the coefficients, dominated by \(C
-      \gamma^3 q^{- 3 / 2}\). As \(\text{Tr} C - \text{Tr} C_{q_{\ast}}
+      \lambda^3 q^{- 3 / 2}\). As \(\text{Tr} C - \text{Tr} C_{q_{\ast}}
       \leqslant C + q_{\ast}^{1 / 2} / 10\) uniformly in \(N\), the range of
       \(f_N\) contains \(r\) for \(B\) above a universal constant and
       \(q_{\ast}\) large. Monotonicity and pointwise convergence give the
@@ -1848,7 +1852,7 @@ q^{- 3 / 2}, \)</td>
     </p>
     <p>
       The boundary value \(b\) is not the finite part: by (<a href="#eq:fN">11.15</a>),
-      \(f_N (b) \approx b + \gamma q_{\ast}^{1 / 2} / (4 \pi)\) at leading
+      \(f_N (b) \approx b + \lambda q_{\ast}^{1 / 2} / (4 \pi)\) at leading
       order, so at fixed \(b\), raising \(q_{\ast}\) changes the theory.
     </p>
     <h3 id="auto-27">Exercises<span style="margin-left: 1em"></span></h3>
@@ -1871,23 +1875,24 @@ q^{- 3 / 2}, \)</td>
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">11.2</class>.
         </strong><class style="font-style: normal"><strong>(The bubble) </strong></class>Compute
-        \(D^3 \ell_q (0)\). Show that its rooted norm is \(6 \gamma^2 a_2
-        (q)\) and its first spatial moment is \(O (\gamma^2 q^{- 1})\).</font>
+        \(D^3 \ell_q (0)\). Show that its rooted norm is \(6 \lambda^2 a_2
+        (q)\) and its first spatial moment is \(O (\lambda^2 q^{-
+        1})\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">11.3</class>.
         </strong><class style="font-style: normal"><strong>(Small derivatives are not enough)
-        </strong></class>On one site take \(q = \gamma = 1\), \(M = 0\), fixed
-        small \(\alpha, \delta > 0\), \(\hat{\ell}_n (y) = \alpha n^{- 1} (ny
-        - \text{sin} (ny))\), and \(\ell_n = \hat{\ell}_n + \frac{\delta}{3}
-        y^3\). Show that both have small derivatives on \(|y| < 2\), that
-        \(\ell_n - \hat{\ell}_n\) has bounded derivatives, but \(D^3
-        (\mathcal{T}[\ell_n] -\mathcal{T}[\hat{\ell}_n]) (0) = 12 (2 \delta
-        +
-\alpha \delta n^2 + \delta^2)\) is unbounded in \(n\). Conclude that
-        the loop estimate needs the individual higher derivative
+        </strong></class>On one site take \(q = \lambda = 1\), \(M = 0\),
+        fixed small \(\alpha, \delta > 0\), \(\hat{\ell}_n (y) = \alpha n^{-
+        1} (ny - \text{sin} (ny))\), and \(\ell_n = \hat{\ell}_n +
+        \frac{\delta}{3} y^3\). Show that both have small derivatives on \(|y|
+        < 2\), that \(\ell_n - \hat{\ell}_n\) has bounded derivatives, but
+        \(D^3 (\mathcal{T}[\ell_n] -\mathcal{T}[\hat{\ell}_n]) (0) = 12 (2
+        \delta +
+\alpha \delta n^2 + \delta^2)\) is unbounded in \(n\).
+        Conclude that the loop estimate needs the individual higher derivative
         bounds.</font>
       </p>
     </div>
@@ -1921,15 +1926,16 @@ q^{- 3 / 2}, \)</td>
       <h5>A scalar model.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         The difficulty is already visible in the one-site seed, \(\ell_q (y)
-        = \gamma y [(q + \gamma y^2)^{- 1} - q^{- 1}]\). Its power series in
+        = \lambda y [(q + \lambda y^2)^{- 1} - q^{- 1}]\). Its power series in
         \(y\) has radius of convergence exactly \(r_q\): the singularities are
         at \(y = \pm \mathrm{i} r_q\). Truncating it at any order produces a
         polynomial whose leading coefficient alternates in sign: half of the
         truncations destroy the monotonicity of \(U\prime + \ell\) at \(|y|
         \gg r_q\). The exact function is harmless: it is linear at large
-        fields, and \(| \ell_q \prime (y) | \leqslant \frac{9}{8} \gamma / q
-        \leqslant 2 \gamma / q\) for all \(y\). In field theory we do not have
-        the exact function, only bounds on the ball, obtained through an
+        fields, and \(| \ell_q \prime (y) | \leqslant \frac{9}{8} \lambda / q
+        \leqslant 2 \lambda /
+q\) for all \(y\). In field theory we do not
+        have the exact function, only bounds on the ball, obtained through an
         expansion of the loop in vertices (the corrections are not
         polynomials, but their estimates are expansions in the field). This is
         the large-field problem: perturbative control holds for \(|y| \lesssim
@@ -1939,13 +1945,13 @@ q^{- 3 / 2}, \)</td>
     </p>
     <p>
       The structure to preserve is coercivity, and it is carried by the bare
-      cube. In the scalar model the coordinate equation \(qy + \lambda y^3 = q
-      \Phi_q\) has noise coefficient
+      cube. In the scalar model the coordinate equation \(qy +
+      \frac{\lambda}{3} y^3 = q \Phi_q\) has noise coefficient
     </p>
     <center>
-      \(\displaystyle H_q (y) = \frac{1}{q + \gamma y^2} \leqslant \frac{1}{q}
-      \wedge
-\frac{1}{\gamma y^2} :\)
+      \(\displaystyle H_q (y) = \frac{1}{q + \lambda y^2} \leqslant
+      \frac{1}{q} \wedge
+\frac{1}{\lambda y^2} :\)
     </center>
     <p>
       large fields are <em>more</em> elliptic and less noisy. A good
@@ -2001,9 +2007,9 @@ U\prime
           <tr>
             <td width="100%" align="center"><a id="eq:resolvent"></a>\(\displaystyle \begin{array}{c}
   c
-            \hspace{0.17em} (K_q + \gamma y^2) \leqslant H_q (y)^{- 1}
+            \hspace{0.17em} (K_q + \lambda y^2) \leqslant H_q (y)^{- 1}
             \leqslant C
-  \hspace{0.17em} (K_q + \gamma y^2),\\
+  \hspace{0.17em} (K_q + \lambda y^2),\\
   \|H_q
             (y)\|_{p \to p} \leqslant \frac{1 + C (g_q + g_q^2)}{q}  \quad (1
 
@@ -2017,12 +2023,12 @@ U\prime
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Idea. </strong>\(H^{- 1} = K_q + \gamma y^2 + M_q + D
+      <strong class="enunciation-name">Idea. </strong>\(H^{- 1} = K_q + \lambda y^2 + M_q + D
       \tilde{\ell}_q\), and \(M_q + D \tilde{\ell}_q\) is small relative to
       \(K_q\): \(\|D \tilde{\ell}_q \| \leqslant Cg_q q\), and \(M_q\) is
       small after multiplication by \(C_q\) (the centred kernel is controlled
       by its first moment, Exercise <a href="#ex:receive">12.1</a>). Write \(H = (I + G (M
-      + D \tilde{\ell}))^{- 1} G\) with \(G = (K_q + \gamma y^2)^{- 1}\) and
+      + D \tilde{\ell}))^{- 1} G\) with \(G = (K_q + \lambda y^2)^{- 1}\) and
       use the Neumann series and Lemma <a href="#lem:free">10.1</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -2061,20 +2067,20 @@ U\prime
         <tr>
           <td width="100%" align="center"><a id="eq:source"></a>\(\displaystyle \begin{array}{rl}
 
-          \|b^{\text{b}}_q (y)\|_p & \leqslant C \gamma^{7 / 2} q^{- 5 /
+          \|b^{\text{b}}_q (y)\|_p & \leqslant C \lambda^{7 / 2} q^{- 5 /
           2},\\
-  \|b^{\text{l}}_q (y)\|_p & \leqslant C \gamma q^{- 3 / 2}
+  \|b^{\text{l}}_q (y)\|_p & \leqslant C \lambda q^{- 3 / 2}
           (\|t_q \|_p +
   r_q^{- 1} \|y^2 \chi_q \|_p),\\
   \|b^{\text{l}}_q
-          (y)\|_2^2 & \leqslant C \gamma^4 q^{- 5} \|t_q \|_6^6 .
+          (y)\|_2^2 & \leqslant C \lambda^4 q^{- 5} \|t_q \|_6^6 .
 \end{array}
           \)</td>
           <td align="right">(12.4)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
-        <i>Moreover \(\|b_q (y)\|_p \leqslant C \gamma q^{- 3 / 2}
+        <i>Moreover \(\|b_q (y)\|_p \leqslant C \lambda q^{- 3 / 2}
         \|y\|_p\).</i>
       </p>
     </div>
@@ -2083,14 +2089,14 @@ U\prime
       first bound is <class style="font-style: normal">(<a href="#eq:Z-heuristic">11.13</a>)</class> with \(n =
       2\): on the ball \(|\mathcal{D}^{\text{o}} | \leqslant \textsf{S}_4
       (\mathcal{D}^{\text{o}})  (2
-r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
-      r_q^3 = \gamma^{7 / 2} q^{- 5 / 2}\). The large-field part is as large
-      as the bound \(\gamma q^{- 3 / 2} |y| = (g_q / q) |y|\) on the whole
+r)^3 / 6\), and \(q^{- 1} \lambda^5 q^{- 3}
+      r_q^3 = \lambda^{7 / 2} q^{- 5 / 2}\). The large-field part is as large
+      as the bound \(\lambda q^{- 3 / 2} |y| = (g_q / q) |y|\) on the whole
       drift (no smallness beyond the factor \(g_q\) already present in \(b\)),
       but it is <em>supported on the large-field set</em> (up to nonlocal
       tails controlled by operator bounds). The last bound follows from the
       second since on \(\{|y| > r\}\), \(|t| + r^{- 1} y^2 \leqslant 2 r^{- 2}
-      |t|^3\), and \((\gamma q^{- 3 / 2} r^{- 2})^2 = \gamma^4 q^{- 5}\).
+      |t|^3\), and \((\lambda q^{- 3 / 2} r^{- 2})^2 = \lambda^4 q^{- 5}\).
     </p>
     <p>
       <div style="display: inline">
@@ -2102,7 +2108,7 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
         \kappa \hspace{0.17em} \mathcal{D}^{\text{o}}  (\kappa y)\). With \(z
         = \kappa_q (y)\), \(J = D \kappa_q (y)\) (multiplication by \(\tau'
         (y / r)\)), \(\ell = \ell^{[2]}_q\), \(M' = \partial_q M_q\), and the
-        unclipped response \(H^{\text{o}} = (K + M + \gamma z^2 + D \ell
+        unclipped response \(H^{\text{o}} = (K + M + \lambda z^2 + D \ell
         (z))^{- 1}\), the difference has four groups (seven terms):
       </div>
     </p>
@@ -2122,10 +2128,10 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
         </li>
         <li>
           <p>
-            \(\gamma (y - Jz) \text{diag} H^2\) and \(\gamma Jz \text{diag}
+            \(\lambda (y - Jz) \text{diag} H^2\) and \(\lambda Jz \text{diag}
             (H^2 - (H^o)^2)\): the cubic vertex sees \(y\), the correction
-            sees \(z\), and the two responses differ by \(\gamma (y^2 - z^2)\)
-            and by the chain-rule terms of the clipped derivative, all
+            sees \(z\), and the two responses differ by \(\lambda (y^2 -
+            z^2)\) and by the chain-rule terms of the clipped derivative, all
             supported on \(|y| > r_q\);
           </p>
         </li>
@@ -2162,21 +2168,21 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:coordinate"></a>\(\displaystyle K_q \Phi_q = K_q  (Y_q +
-        \varrho_q (Y_q)) + \tfrac{\gamma}{3} Y_q^3, \qquad
+        \varrho_q (Y_q)) + \tfrac{\lambda}{3} Y_q^3, \qquad
 \varrho_q (y) :=
         C_q  (M_q y + \tilde{\ell}_q (y)),\)</td>
         <td align="right">(12.5)</td>
       </tr>
     </table>
     <p>
-      using \(DU (y) = \lambda y^3 = \frac{\gamma}{3} y^3\). The correction is
-      a small contraction, \(\|D \varrho_q (y)\|_{p \to p} \leqslant
-      \varepsilon_q := C (g_q + g_q^2)\), for all \(y\) and \(1 \leqslant p
-      \leqslant \infty\), and \(\varrho_q (0) = 0\) by oddness. So, up to a
-      small Lipschitz perturbation, <em>the forecast is the solution of the
-      cubic elliptic equation \(K_q  (Y + \varrho) + \frac{\gamma}{3} Y^3 =
-      K_q \Phi_q\) driven by the field at resolution \(q\)</em>. This is the
-      equation whose coercivity Lecture 6 exploits.
+      using \(DU (y) = \frac{\lambda}{3} y^3\). The correction is a small
+      contraction, \(\|D \varrho_q (y)\|_{p \to p} \leqslant \varepsilon_q :=
+      C (g_q + g_q^2)\), for all \(y\) and \(1 \leqslant p \leqslant \infty\),
+      and \(\varrho_q (0) = 0\) by oddness. So, up to a small Lipschitz
+      perturbation, <em>the forecast is the solution of the cubic elliptic
+      equation \(K_q  (Y + \varrho) + \frac{\lambda}{3} Y^3 = K_q \Phi_q\)
+      driven by the field at resolution \(q\)</em>. This is the equation whose
+      coercivity Lecture 6 exploits.
     </p>
     <h3 id="auto-35"><a id="sec:polchinski-large"></a>12.4<span style="margin-left: 1em"></span>Why the Polchinski expansion is
     not enough<span style="margin-left: 1em"></span></h3>
@@ -2185,11 +2191,12 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       for the force \(F\) at the field \(\Phi\), and the force equation at the
       forecast \(\psi\). We use the second, here and in Lecture 6. The first
       looks more economical, and the following programme is natural. Keep the
-      bare cube \(- \lambda \varphi^3\) unclipped, so that the approximate
-      force stays coercive at all fields. Expand the rest of the force in
-      perturbation theory and clip only these higher orders. Pay for the
-      clipping in the source of the equation for the remainder \(R = F - f\),
-      using the a priori estimates. No change of coordinates would be needed.
+      bare cube \(- \frac{\lambda}{3} \varphi^3\) unclipped, so that the
+      approximate force stays coercive at all fields. Expand the rest of the
+      force in perturbation theory and clip only these higher orders. Pay for
+      the clipping in the source of the equation for the remainder \(R = F -
+      f\), using the a priori estimates. No change of coordinates would be
+      needed.
     </p>
     <p>
       Here we test the programme where everything can be computed: on one
@@ -2198,10 +2205,10 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     </p>
     <p>
       <strong>Conventions.</strong> As in Exercise <a href="#ex:one-site">10.4</a>: \(N =
-      1\), \(\Delta = 0\), \(K_q = q\), \(V (\varphi) = \frac{\lambda}{4}
-      \varphi^4\), \(\gamma = 3 \lambda\) and \(r_q = (q / \gamma)^{1 / 2}\).
-      We write \(S = C_q = 1 / q\) for the remaining covariance, and \(x\) for
-      the value of the field at resolution \(q\).
+      1\), \(\Delta = 0\), \(K_q = q\), \(V (\varphi) = \frac{\lambda}{12}
+      \varphi^4\) and \(r_q = (q / \lambda)^{1 / 2}\). We write \(S = C_q = 1
+      / q\) for the remaining covariance, and \(x\) for the value of the field
+      at resolution \(q\).
     </p>
     <p>
       <div style="display: inline">
@@ -2213,12 +2220,12 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       </div>
     </p>
     <center>
-      \(\displaystyle F_q (x) = - \lambda \mathbb{E}_x Y^3,\)
+      \(\displaystyle F_q (x) = - \frac{\lambda}{3} \mathbb{E}_x Y^3,\)
     </center>
     <p>
       where \(\mathbb{E}_x\) is the expectation for the probability density
-      proportional to \(\mathrm{e}^{- \frac{\lambda}{4} y^4 - \frac{q}{2} (y -
-      x)^2}\). It solves the Burgers equation
+      proportional to \(\mathrm{e}^{- \frac{\lambda}{12} y^4 - \frac{q}{2} (y
+      - x)^2}\). It solves the Burgers equation
     </p>
     <table width="100%">
       <tr>
@@ -2232,8 +2239,8 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:pl-tweedie"></a>\(\displaystyle F_q (x) = - \lambda
-        \mathbb{E}_x Y^3 = q (m_q (x) - x) . \)</td>
+        <td width="100%" align="center"><a id="eq:pl-tweedie"></a>\(\displaystyle F_q (x) = -
+        \frac{\lambda}{3} \mathbb{E}_x Y^3 = q (m_q (x) - x) . \)</td>
         <td align="right">(12.7)</td>
       </tr>
     </table>
@@ -2246,49 +2253,51 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       <p style="margin-top: 1em; margin-bottom: 1em">
         <strong class="enunciation-name">Lemma <class style="font-style: normal">12.3</class>. </strong><i><class
         style="font-style: normal"><strong>(Posterior mean) </strong></class><a id="lem:pl-posterior"></a>For all
-        \(x\) and \(q\), \(|m_q (x) | \leqslant 2 \lambda^{- 1 / 4} + 2 (q|x|
-        / \lambda)^{1 / 3}\).</i>
+        \(x\) and \(q\), \(|m_q (x) | \leqslant 2 (\lambda / 3)^{- 1 / 4} + 2
+        (3 q|x| / \lambda)^{1 / 3}\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>Integrating the derivative of \(y\) times
-      the density gives \(\lambda \mathbb{E}_x Y^4 + q\mathbb{E}_x Y^2 -
-      qx\mathbb{E}_x Y = 1\). With \(M = (\mathbb{E}_x Y^4)^{1 / 4}\) this
-      gives \(\lambda M^4 \leqslant 1 + q |x| M\), and Young's inequality
-      gives \(\frac{\lambda}{2} M^4 \leqslant 1 + (q|x|)^{4 / 3} (2
-      \lambda)^{- 1 / 3}\). Finally \(|m_q | \leqslant M\).<span style="margin-left: 1em"></span>\(\Box\)
+      the density gives \(\frac{\lambda}{3} \mathbb{E}_x Y^4 + q\mathbb{E}_x
+      Y^2 - qx\mathbb{E}_x Y = 1\). With \(M = (\mathbb{E}_x Y^4)^{1 / 4}\)
+      this gives \(\frac{\lambda}{3} M^4 \leqslant 1 + q |x| M\), and Young's
+      inequality gives \(\frac{\lambda}{6} M^4 \leqslant 1 + (q|x|)^{4 / 3} (2
+      \lambda / 3)^{- 1 / 3}\). Finally \(|m_q | \leqslant M\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Therefore, by (<a href="#eq:pl-tweedie">12.7</a>), the two regimes of the force are
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:pl-two-limits"></a>\(\displaystyle F_q (x) \to - \lambda x^3
-        \quad (\text{fixed } x, q \to \infty), \quad F_q (x)
-= - qx + O
-        (|x|^{1 / 3}) \quad (\text{fixed } q, |x| \to \infty) . \)</td>
+        <td width="100%" align="center"><a id="eq:pl-two-limits"></a>\(\displaystyle F_q (x) \to -
+        \frac{\lambda}{3} x^3 \quad (\text{fixed } x, q \to \infty),
+\quad F_q
+        (x) = - qx + O (|x|^{1 / 3}) \quad (\text{fixed } q, |x| \to \infty)
+.
+        \)</td>
         <td align="right">(12.8)</td>
       </tr>
     </table>
     <p>
       The limits cannot be interchanged. The crossover is at \(|x| \sim r_q\),
-      where the cube equals the Gaussian restoring force: \(\lambda r_q^3 \sim
-      qr_q\). Beyond it the force is linear, because convolution with a
-      Gaussian of variance \(S\) cannot produce a force steeper than \(x /
-      S\).
+      where the cube equals the Gaussian restoring force: \(\frac{\lambda}{3}
+      r_q^3 \sim qr_q\). Beyond it the force is linear, because convolution
+      with a Gaussian of variance \(S\) cannot produce a force steeper than
+      \(x / S\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">12.4</class>.
         </strong><i><class style="font-style: normal"><strong>(The remainder of a frozen cube)
-        </strong></class><a id="prop:pl-frozen"></a>Let \(f (x) = - \lambda x^3 + f_1 (x)\)
-        with \(f_1 (x) = o (|x|^3)\), for instance linear terms plus bounded
-        clipped corrections. At every fixed \(q\), the remainder \(R_q = F_q -
-        f\) satisfies</i>
+        </strong></class><a id="prop:pl-frozen"></a>Let \(f (x) = - \frac{\lambda}{3} x^3 +
+        f_1 (x)\) with \(f_1 (x) = o (|x|^3)\), for instance linear terms plus
+        bounded clipped corrections. At every fixed \(q\), the remainder \(R_q
+        = F_q - f\) satisfies</i>
       </p>
       <p style="margin-bottom: 1em">
         <i><center>
-          \(\displaystyle \frac{R_q (x)}{\lambda x^3} \to 1 \quad (|x| \to
+          \(\displaystyle \frac{3 R_q (x)}{\lambda x^3} \to 1 \quad (|x| \to
           \infty) .\)
         </center></i>
       </p>
@@ -2310,11 +2319,13 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
         q\). Its noise is the conditional expectation of the bridge noise, so
         \(\mathbb{E} \exp (h \eta_q) \leqslant \exp ((q - q_0) h^2 / 2)\)
         whatever the interaction (Lemma <a href="cqft_lecture_6.html#lem:noise">13.2</a> of Lecture 6). With
-        the frozen cube \(f = - \lambda x^3\) the equation looks coercive:
+        the frozen cube \(f = - \frac{\lambda}{3} x^3\) the equation looks
+        coercive:
       </div>
     </p>
     <center>
-      \(\displaystyle q_0 x + J_q \lambda x^3 = J_q R_q (x) + \eta_q (x) .\)
+      \(\displaystyle q_0 x + J_q \frac{\lambda}{3} x^3 = J_q R_q (x) + \eta_q
+      (x) .\)
     </center>
     <p>
       But by Proposition <a href="#prop:pl-frozen">12.4</a>, \(J_q R_q\) cancels the cube on
@@ -2336,7 +2347,7 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">12.5</class>.
         </strong><i><class style="font-style: normal"><strong>(Tails on one site)
-        </strong></class><a id="prop:pl-tails"></a>If \(q^2 \geqslant 24 \lambda\), then
+        </strong></class><a id="prop:pl-tails"></a>If \(q^2 \geqslant 8 \lambda\), then
         \(|m_q (x) | \leqslant \frac{9}{10} |x|\) for \(|x| \geqslant r_q\),
         and for \(R \geqslant r_q\)</i>
       </p>
@@ -2351,19 +2362,19 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>The mean \(m\) has the sign of \(x\), the
       density being an even density tilted by \(\mathrm{e}^{qxy}\). Jensen's
-      inequality in the identity of Lemma <a href="#lem:pl-posterior">12.3</a> gives \(\lambda
-      m^4 + qm^2 - qxm \leqslant 1\). If \(x \geqslant r_q\) and \(m >
-      \frac{9}{10} x\), then \(\lambda m^3 + q (m - x) > x \left(
-      \frac{729}{1000} \lambda x^2 - \frac{q}{10}
-\right) \geqslant
-      \frac{143}{1000} qx\), as \(\lambda x^2 \geqslant q / 3\), so the left
-      side is at least \(\frac{1287}{10000} qx^2 \geqslant \frac{429}{10000}
-      q^2 / \lambda > 1\), a contradiction. So \(| \eta_q (x) | \geqslant
-      \frac{q}{10} |x|\) by (<a href="#eq:pl-linear">12.9</a>), and we conclude with the
-      sub-Gaussian bound.<span style="margin-left: 1em"></span>\(\Box\)
+      inequality in the identity of Lemma <a href="#lem:pl-posterior">12.3</a> gives
+      \(\frac{\lambda}{3} m^4 + qm^2 - qxm \leqslant 1\). If \(x \geqslant
+      r_q\) and \(m > \frac{9}{10} x\), then \(\frac{\lambda}{3} m^3 + q (m -
+      x) > x \left( \frac{243}{1000} \lambda x^2 -
+\frac{q}{10} \right)
+      \geqslant \frac{143}{1000} qx\), as \(\lambda x^2 \geqslant q\), so the
+      left side is at least \(\frac{1287}{10000} qx^2 \geqslant
+      \frac{1287}{10000} q^2 / \lambda > 1\), a contradiction. So \(| \eta_q
+      (x) | \geqslant \frac{q}{10} |x|\) by (<a href="#eq:pl-linear">12.9</a>), and we
+      conclude with the sub-Gaussian bound.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      At \(R = r_q\) the exponent is at least \(q^2 / (600 \lambda)\). This
+      At \(R = r_q\) the exponent is at least \(q^2 / (200 \lambda)\). This
       estimate treats the combined restoring force through the posterior
       moment. It never uses the cube as a coercive term against a remainder
       regarded as a source.
@@ -2371,7 +2382,7 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">12.6</class>. </strong><class style="font-style: normal"><strong>(This
       does not transfer to the lattice) </strong></class>With a linear term
-      \(ay\) in the force, Lemma <a href="#lem:pl-posterior">12.3</a> acquires the term \(((q +
+      \(ay\) in the force, Lemma <a href="#lem:pl-posterior">12.3</a> acquires the term \((3 (q +
       a)_- / \lambda)^{1 / 2}\). On the lattice the bare mass makes \(a\)
       divergent and negative, so this elementary moment bound is not uniform
       until the renormalised cancellations have been built in. The scalar tail
@@ -2392,11 +2403,11 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       \(\displaystyle D_q f_1 = 0, \quad D_q f_2 = - S^2 f_1 f_1 \prime,\)
     </center>
     <p>
-      with \(f_1 = - \lambda (x^3 + 3 Sx)\), the cube and its Wick correction,
-      and \(f_2 = 3 \lambda^2 Sx^5 + \ldots\), the first tree. Keep \(f_1\)
-      unclipped and clip the correction: \(f^c = f_1 +\mathcal{C}f_2\) with
-      \(\mathcal{C}f_2 = \kappa_q \prime \cdot f_2 \circ \kappa_q\), the clip
-      \(\kappa_q\) of (<a href="#eq:clipping">12.1</a>). Then
+      with \(f_1 = - \frac{\lambda}{3} (x^3 + 3 Sx)\), the cube and its Wick
+      correction, and \(f_2 = \frac{\lambda^2}{3} Sx^5 + \ldots\), the first
+      tree. Keep \(f_1\) unclipped and clip the correction: \(f^c = f_1
+      +\mathcal{C}f_2\) with \(\mathcal{C}f_2 = \kappa_q \prime \cdot f_2
+      \circ \kappa_q\), the clip \(\kappa_q\) of (<a href="#eq:clipping">12.1</a>). Then
     </p>
     <table width="100%">
       <tr>
@@ -2418,14 +2429,14 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:pl-quintic"></a>\(\displaystyle E_q (x) = S^2 f_1 (x) f_1
-        \prime (x) = 3 \lambda^2 S^2 x^5 (1 + O (S / x^2)) .
-\)</td>
+        \prime (x) = \frac{\lambda^2}{3} S^2 x^5 (1 + O (S /
+x^2)) . \)</td>
         <td align="right">(12.11)</td>
       </tr>
     </table>
     <p>
       This is the price of the clipping. At the edge of the clip it has size
-      \((q / \lambda)^{1 / 2}\), which is not integrable in \(q\), so it can
+      \((3 q / \lambda)^{1 / 2}\), which is not integrable in \(q\), so it can
       only be paid through the small probability of reaching the clip. Along
       the exact process \(\hspace{0.17em} \mathrm{d} \Phi_q = S^2 F_q (\Phi_q)
       \hspace{0.17em}
@@ -2444,23 +2455,23 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       </tr>
     </table>
     <p>
-      The transport term has a favourable sign at large fields: \((f^c)' = - 3
+      The transport term has a favourable sign at large fields: \((f^c)' = -
       \lambda (x^2 + S)\) for \(|x| \geqslant 2 r_q\), which is the
       dissipation one hopes to use (near the clip the sign fails: on the ball
       the quintic takes over beyond \(|x| \approx 0.77 r_q\)). But at large
-      fields the bracket is \(3 \lambda^2 S^2 x^5 - 3 \lambda S^2 x^2 R\), and
-      for the true \(R \sim \lambda x^3\) the two terms cancel at leading
-      order. The source and the dissipation are the same quantity, so
-      estimating them separately gives nothing. To close, one would need, for
-      instance, a signed estimate that retains this cancellation, or a tail
-      bound for \(\Phi\) obtained independently of \(R\). On one site
-      Proposition <a href="#prop:pl-tails">12.5</a> is such a bound: the probability of
-      reaching the clip is at most of order \(\exp (- cq^2 / \lambda)\), so in
-      expectation the source is exponentially small, and the frozen cube is
-      not ruled out there. But that bound comes from the posterior moment, and
-      by the remark above it does not transfer. The field equation alone
-      cannot replace it, since its restoring force is the cube and \(R\)
-      together, which is what we are trying to estimate.
+      fields the bracket is \(\frac{\lambda^2}{3} S^2 x^5 - \lambda S^2 x^2
+      R\), and for the true \(R \sim \frac{\lambda}{3} x^3\) the two terms
+      cancel at leading order. The source and the dissipation are the same
+      quantity, so estimating them separately gives nothing. To close, one
+      would need, for instance, a signed estimate that retains this
+      cancellation, or a tail bound for \(\Phi\) obtained independently of
+      \(R\). On one site Proposition <a href="#prop:pl-tails">12.5</a> is such a bound: the
+      probability of reaching the clip is at most of order \(\exp (- cq^2 /
+      \lambda)\), so in expectation the source is exponentially small, and the
+      frozen cube is not ruled out there. But that bound comes from the
+      posterior moment, and by the remark above it does not transfer. The
+      field equation alone cannot replace it, since its restoring force is the
+      cube and \(R\) together, which is what we are trying to estimate.
     </p>
     <p>
       Going further in perturbation theory does not help: any finite depth of
@@ -2482,7 +2493,7 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:pl-inviscid"></a>\(\displaystyle \partial_q f + S^2 ff' =
-        0, \quad f_{\infty} (x) = - \lambda x^3 . \)</td>
+        0, \quad f_{\infty} (x) = - \frac{\lambda}{3} x^3 . \)</td>
         <td align="right">(12.13)</td>
       </tr>
     </table>
@@ -2494,13 +2505,13 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
         <strong class="enunciation-name">Proposition <class style="font-style: normal">12.7</class>.
         </strong><i><class style="font-style: normal"><strong>(The integrated cube)
         </strong></class><a id="prop:pl-integrated"></a>For \(x \in \mathbb{R}\), let \(y = y_q
-        (x)\) be the unique real root of \(qy + \lambda y^3 = qx\). Then the
-        solution of (<a href="#eq:pl-inviscid">12.13</a>) is</i>
+        (x)\) be the unique real root of \(qy + \frac{\lambda}{3} y^3 = qx\).
+        Then the solution of (<a href="#eq:pl-inviscid">12.13</a>) is</i>
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="eq:pl-integrated"></a>\(\displaystyle f_q (x) = - \lambda y_q
-          (x)^3 = q (y_q (x) - x), \)</td>
+          <td width="100%" align="center"><a id="eq:pl-integrated"></a>\(\displaystyle f_q (x) = -
+          \frac{\lambda}{3} y_q (x)^3 = q (y_q (x) - x), \)</td>
           <td align="right">(12.14)</td>
         </tr>
       </table></i>
@@ -2513,7 +2524,7 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
             <li>
               <p>
                 <strong>Variational form.</strong> \(y_q (x)\) is the
-                minimiser of \(\frac{\lambda}{4} y^4 + \frac{q}{2} (y -
+                minimiser of \(\frac{\lambda}{12} y^4 + \frac{q}{2} (y -
                 x)^2\), and \(f_q = - \bar{V}_q'\) for the minimum value
                 \(\bar{V}_q (x)\).
               </p>
@@ -2521,19 +2532,21 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
             <li>
               <p>
                 <strong>Small fields.</strong> \(f_q (x) = q \sum_{k \geqslant
-                1} (- \lambda / q)^k c_k x^{2 k + 1}\) with \(c_k = \frac{1}{2
-                k + 1} \frac{(3 k) !}{k! (2 k) !}\), so \(f_q = - \lambda x^3
-                + 3 \lambda^2 Sx^5 - 12 \lambda^3 S^2 x^7 + \ldots\). This is
-                the sum of the tree expansion. Its radius of convergence is
-                \(|x| = \frac{2}{3} r_q\).
+                1} (- \frac{\lambda}{3 q})^k c_k x^{2 k + 1}\) with \(c_k =
+                \frac{1}{2 k + 1} \frac{(3 k) !}{k! (2 k) !}\), so \(f_q = -
+                \frac{\lambda}{3} x^3 + \frac{\lambda^2}{3} Sx^5 -
+                \frac{4
+\lambda^3}{9} S^2 x^7 + \ldots\). This is the sum of
+                the tree expansion. Its radius of convergence is \(|x| =
+                \frac{2}{3} r_q\).
               </p>
             </li>
             <li>
               <p>
-                <strong>Large fields.</strong> \(\lambda |y|^3 \leqslant q
-                |x|\), so \(f_q (x) = - qx + O (|x|^{1 / 3})\) at fixed \(q\),
-                as for the exact force, and \(f_q' = - \gamma y^2 / (1 +
-                \gamma y^2 / q) \leqslant 0\) for all \(x\).
+                <strong>Large fields.</strong> \(\frac{\lambda}{3} |y|^3
+                \leqslant q |x|\), so \(f_q (x) = - qx + O (|x|^{1 / 3})\) at
+                fixed \(q\), as for the exact force, and \(f_q' = - \lambda
+                y^2 / (1 + \lambda y^2 / q) \leqslant 0\) for all \(x\).
               </p>
             </li>
             <li>
@@ -2546,8 +2559,8 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
                 <tr>
                   <td width="100%" align="center"><a id="eq:pl-defect"></a>\(\displaystyle E_q =
                   \frac{1}{2} S^2 f_q'' (x) = qb_q (y_q (x)), \quad b_q (y) =
-                  - \gamma y
-(q + \gamma y^2)^{- 3} . \)</td>
+                  - \lambda y
+(q + \lambda y^2)^{- 3} . \)</td>
                   <td align="right">(12.15)</td>
                 </tr>
               </table>
@@ -2557,17 +2570,17 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>Differentiate \(x = y + \lambda Sy^3\)
-      with \(d = 1 + \gamma y^2 / q\): \(y' = 1 / d\), \(\partial_S y = -
-      \lambda y^3 / d\), \(f' = - \gamma y^2 / d\) and \(f'' = - 2 \gamma y /
-      d^3\). Hence \(\partial_S f = \gamma \lambda y^5 / d = ff'\), which is
-      (<a href="#eq:pl-inviscid">12.13</a>) as \(\partial_q = - S^2 \partial_S\). For (a), the
-      stationarity condition is \(\lambda y^3 + q (y - x) = 0\). For (b), use
-      Lagrange inversion on \(y = x - \lambda Sy^3\); the nearest singularity
-      is where \(d = 0\), that is at \(y = \pm \mathrm{i} r_q\), \(x = \pm
-      \frac{2}{3} \mathrm{i} r_q\). Finally (c) and (d) are read off from the
-      formulas, since \(d = 1 / (qH_q (y))\) with \(H_q (y) = (q + \gamma
-      y^2)^{- 1}\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>Differentiate \(x = y + \frac{\lambda}{3}
+      Sy^3\) with \(d = 1 + \lambda y^2 / q\): \(y' = 1 / d\), \(\partial_S y
+      = - \frac{\lambda}{3} y^3 / d\), \(f' = - \lambda y^2 / d\) and \(f'' =
+      - 2 \lambda y / d^3\). Hence \(\partial_S f = \frac{\lambda^2}{3} y^5 /
+      d = ff'\), which is (<a href="#eq:pl-inviscid">12.13</a>) as \(\partial_q = - S^2
+      \partial_S\). For (a), the stationarity condition is \(\frac{\lambda}{3}
+      y^3 + q (y - x) = 0\). For (b), use Lagrange inversion on \(y = x -
+      \frac{\lambda}{3} Sy^3\); the nearest singularity is where \(d = 0\),
+      that is at \(y = \pm \mathrm{i} r_q\), \(x = \pm \frac{2}{3} \mathrm{i}
+      r_q\). Finally (c) and (d) are read off from the formulas, since \(d = 1
+      / (qH_q (y))\) with \(H_q (y) = (q + \lambda y^2)^{- 1}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Item (b) explains why the depth of the expansion is not the issue. The
@@ -2590,9 +2603,9 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:pl-global"></a>\(\displaystyle \sup_{x \in
-            \mathbb{R}} |F_q (x) - f_q (x) | \leqslant 2 C_{\ast} (\lambda
-            /
-q)^{1 / 2} . \)</td>
+            \mathbb{R}} |F_q (x) - f_q (x) | \leqslant 2
+            C_{\ast}
+(\frac{\lambda}{3 q})^{1 / 2} . \)</td>
             <td align="right">(12.16)</td>
           </tr>
         </table></i>
@@ -2610,25 +2623,26 @@ q)^{1 / 2} . \)</td>
     </center>
     <p style="margin-bottom: 1em">
       The zeroth-order coefficient has the good sign, as \(- f' \geqslant 0\).
-      With \(z = (\lambda S)^{1 / 2} y\), the source obeys \(\frac{1}{2} |f''
-      | \leqslant C_{\ast} (\lambda / S)^{1 / 2}\), which is integrable at \(S
-      = 0\), so \(\beta (S) = 2 C_{\ast} (\lambda S)^{1 / 2}\) satisfies
-      \(\mathfrak{L} \beta \geqslant \frac{1}{2} |f'' |\). To apply the
-      maximum principle on the line, take \(\chi = \mathrm{e}^{3 S} (1 +
-      x^4)\). Then \(\mathfrak{L} \chi \geqslant 0\), since \(6 x^2 \leqslant
-      3 (1 + x^4)\) and \(xF (x) \leqslant 0\); the last holds because \(F = -
-      \lambda \mathbb{E}_x Y^3\), and \(\mathbb{E}_x Y^3\) has the sign of
-      \(x\), the density being an even density tilted by \(\mathrm{e}^{qxy}\).
-      Both \(F\) and \(f\) grow at most cubically, uniformly for bounded
-      \(S\): \(|f| \leqslant \lambda |x|^3\) since \(|y| \leqslant |x|\), and
-      \(\lambda \mathbb{E}_x Y^6 + q\mathbb{E}_x Y^4 - qx\mathbb{E}_x Y^3
-      =
-3\mathbb{E}_x Y^2\) gives \(\mathbb{E}_x Y^4 \leqslant (|x| + (3 S)^{1
-      / 2})^4\), up to constants, hence \(|F| \leqslant C \lambda (|x|^3 +
-      S^{3 / 2})\). Also \(\hat{R}\) is continuous at \(S = 0\), since the
-      posterior concentrates at \(x\). So \(\pm \hat{R} - \beta - \varepsilon
-      \chi\) is negative on the boundary of a large cylinder, hence inside it.
-      Let the cylinder grow and then \(\varepsilon \to 0\).<span style="margin-left: 1em"></span>\(\Box\)
+      With \(z = (\lambda S / 3)^{1 / 2} y\), the source obeys \(\frac{1}{2}
+      |f'' | \leqslant C_{\ast} (\frac{\lambda}{3 S})^{1 / 2}\), which is
+      integrable at \(S = 0\), so \(\beta (S) = 2 C_{\ast} (\lambda S / 3)^{1
+      / 2}\) satisfies \(\mathfrak{L} \beta \geqslant \frac{1}{2} |f'' |\). To
+      apply the maximum principle on the line, take \(\chi = \mathrm{e}^{3 S}
+      (1 + x^4)\). Then \(\mathfrak{L} \chi \geqslant 0\), since \(6 x^2
+      \leqslant 3 (1 + x^4)\) and \(xF (x) \leqslant 0\); the last holds
+      because \(F = - \frac{\lambda}{3} \mathbb{E}_x Y^3\), and \(\mathbb{E}_x
+      Y^3\) has the sign of \(x\), the density being an even density tilted by
+      \(\mathrm{e}^{qxy}\). Both \(F\) and \(f\) grow at most cubically,
+      uniformly for bounded \(S\): \(|f| \leqslant \frac{\lambda}{3} |x|^3\)
+      since \(|y| \leqslant |x|\), and \(\frac{\lambda}{3} \mathbb{E}_x Y^6 +
+      q\mathbb{E}_x Y^4 - qx\mathbb{E}_x Y^3 =
+3\mathbb{E}_x Y^2\) gives
+      \(\mathbb{E}_x Y^4 \leqslant (|x| + (3 S)^{1 / 2})^4\), up to constants,
+      hence \(|F| \leqslant C \lambda (|x|^3 + S^{3 / 2})\). Also \(\hat{R}\)
+      is continuous at \(S = 0\), since the posterior concentrates at \(x\).
+      So \(\pm \hat{R} - \beta - \varepsilon \chi\) is negative on the
+      boundary of a large cylinder, hence inside it. Let the cylinder grow and
+      then \(\varepsilon \to 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
       <table style="width: 100%">
@@ -2642,7 +2656,7 @@ q)^{1 / 2} . \)</td>
           <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
             <font style="font-size: 84.1%"><p>
               <b>Figure 12.1. </b><a id="auto-40"></a><a id="fig:scalar-force"></a>The force on one site,
-              for \(\lambda = 1\), \(q = 4\). Left: the frozen cube leaves the
+              for \(\lambda = 3\), \(q = 4\). Left: the frozen cube leaves the
               exact force at \(x \sim r_q\), while the integrated cube follows
               it at all fields: the two curves coincide at this scale, their
               difference being at most \(0.06\) in these units. Right, on a
@@ -2656,33 +2670,33 @@ q)^{1 / 2} . \)</td>
     </div>
     <p>
       <strong>The integrated cube is the forecast coordinate.</strong> The
-      equation \(qy + \lambda y^3 = qx\), at \(x = \Phi_q\), is the coordinate
-      equation of Exercise <a href="#ex:one-site">10.4</a>, so \(y_q (\Phi_q) = Y_q\).
-      Equations (<a href="#eq:pl-tweedie">12.7</a>) and (<a href="#eq:pl-integrated">12.14</a>) then say that
-      \(F_q - f_q = q (m_q - y_q)\): the remainder is \(K_q Z_q\), and the
-      error \(Z\) of (<a href="#eq:YZ">10.11</a>) is the posterior mean minus the
+      equation \(qy + \frac{\lambda}{3} y^3 = qx\), at \(x = \Phi_q\), is the
+      coordinate equation of Exercise <a href="#ex:one-site">10.4</a>, so \(y_q (\Phi_q) =
+      Y_q\). Equations (<a href="#eq:pl-tweedie">12.7</a>) and (<a href="#eq:pl-integrated">12.14</a>) then say
+      that \(F_q - f_q = q (m_q - y_q)\): the remainder is \(K_q Z_q\), and
+      the error \(Z\) of (<a href="#eq:YZ">10.11</a>) is the posterior mean minus the
       posterior mode. By (<a href="#eq:pl-global">12.16</a>), on one site \(|Z_q | \leqslant
-      2 C_{\ast} \lambda^{1 / 2} q^{- 3 / 2}\) surely, for all fields.
+      2 C_{\ast} (\lambda / 3)^{1 / 2} q^{- 3 / 2}\) surely, for all fields.
     </p>
     <p>
       <strong>Why the forecast coordinate has no such problem.</strong> In the
       variable \(y\) the bare cube does not flow at all: all the trees of (b)
       are contained in the map \(x \mapsto y\). The second term of (<a href="#eq:wetterich">10.9</a>)
-      is a loop, and the defect \(\mathcal{D}_q (y) = \gamma yH_q (y)^2\) of
-      \(\bar{\mathcal{F}}_q = \lambda y^3\) is bounded by \(\gamma^{1 / 2}
-      q^{- 3 / 2}\) for all \(y\). This is why Section 12.2 can leave the cube
-      untouched and clip only the corrections: what is clipped consists of
-      loops, not of trees whose large-field sum is forced to change the growth
-      of the force. This removes the frozen-cube problem specifically: the
-      clipping error of Section 12.3 is still there, and it is what Lecture 6
-      pays for.
+      is a loop, and the defect \(\mathcal{D}_q (y) = \lambda yH_q (y)^2\) of
+      \(\bar{\mathcal{F}}_q = \frac{\lambda}{3} y^3\) is bounded by
+      \(\lambda^{1 / 2} q^{- 3 / 2}\) for all \(y\). This is why Section 12.2
+      can leave the cube untouched and clip only the corrections: what is
+      clipped consists of loops, not of trees whose large-field sum is forced
+      to change the growth of the force. This removes the frozen-cube problem
+      specifically: the clipping error of Section 12.3 is still there, and it
+      is what Lecture 6 pays for.
     </p>
     <p>
-      In the coordinate \(y\) the cube is genuine: \(qy + \lambda y^3 = q
-      \Phi_q = (q - q_0) \psi_q + \eta_q\), i.e. \(q_0 y + \lambda y^3 =
-      \eta_q + (q - q_0) (\psi_q - y)\). This is the forecast equation of
-      Lecture 4 with the explicit force in place of the exact one, the
-      equation <a href="cqft_lecture_6.html#eq:field-Y">(13.3)</a> of Lecture 6 on one site.
+      In the coordinate \(y\) the cube is genuine: \(qy + \frac{\lambda}{3}
+      y^3 = q \Phi_q = (q - q_0) \psi_q + \eta_q\), i.e. \(q_0 y +
+      \frac{\lambda}{3} y^3 = \eta_q + (q - q_0) (\psi_q - y)\). This is the
+      forecast equation of Lecture 4 with the explicit force in place of the
+      exact one, the equation <a href="cqft_lecture_6.html#eq:field-Y">(13.3)</a> of Lecture 6 on one site.
     </p>
     <p>
       <strong>What the model points to.</strong> The scalar model points to
@@ -2703,9 +2717,9 @@ q)^{1 / 2} . \)</td>
       the Polchinski equation fails, nor does it give the asymptotics of the
       force on the lattice. There is also a limit to the integrated cube
       itself. With a linear term in the force, the map \(y \mapsto y + S
-      (\lambda y^3 + ry)\) has derivative \(1 + S (r + 3 \lambda y^2)\), which
-      vanishes somewhere when \(1 + Sr < 0\) (Exercise <a href="#ex:pl-negative">12.6</a>). A
-      divergent negative mass cannot simply be placed inside this monotone
+      (\frac{\lambda}{3} y^3 + ry)\) has derivative \(1 + S (r + \lambda
+      y^2)\), which vanishes somewhere when \(1 + Sr < 0\) (Exercise <a href="#ex:pl-negative">12.6</a>).
+      A divergent negative mass cannot simply be placed inside this monotone
       map, and this is one reason why the mass correction \(M_q\) of (<a href="#eq:clipping">12.1</a>)
       is kept apart from the cube and is required to be small relative to
       \(K_q\) (Lemma <a href="#lem:resolvent">12.1</a>).
@@ -2808,30 +2822,31 @@ C_{q_{\ast}} K_q =
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">12.2</class>.
         </strong><class style="font-style: normal"><strong>(The scalar clipping error)
         </strong></class><a id="ex:clip-scalar"></a>On one site, let \(\ell (y) = - \beta
-        \gamma^2 q^{- 2} y^3\) (a cubic correction, \(\beta\) a fixed number)
-        and \(\bar{\mathcal{F}}_q = \lambda y^3 + \kappa_q \prime (y) \ell
-        (\kappa_q (y))\). (a) Show that \(K_q + \bar{\mathcal{F}}_q \prime
-        \geqslant q / 2\) for all \(y\) if \(\beta \gamma \leqslant cq^2\).
-        (b) Show that \(b_q = b^b_q\) for \(|y| \leqslant r_q\). For \(|y| > 2
-        r_q\) show that \(\kappa_q\) is locally constant, \(b^b_q (y) = 0\),
-        and \(b_q (y) = - \gamma y (q + \gamma y^2)^{- 3}\), the drift of the
-        pure cube. (c) Conclude that on the large-field set the error is the
-        whole drift of the loop term: it is comparable, for \(|y| \approx 2
-        r_q\), to the one-site bound \(\gamma q^{- 3} |y|\) on the whole drift
-        (the analogue of \((g_q / q) |y|\), with \(a_2 (q) = q^{- 2}\) in
-        place of \(q^{- 1 / 2}\)), but it vanishes on the ball. Compare with
-        (<a href="#eq:source">12.4</a>).</font>
+        \lambda^2 q^{- 2} y^3\) (a cubic correction, \(\beta\) a fixed number)
+        and \(\bar{\mathcal{F}}_q = \frac{\lambda}{3} y^3 + \kappa_q \prime
+        (y) \ell
+(\kappa_q (y))\). (a) Show that \(K_q + \bar{\mathcal{F}}_q
+        \prime \geqslant q / 2\) for all \(y\) if \(\beta \lambda \leqslant
+        cq^2\). (b) Show that \(b_q = b^b_q\) for \(|y| \leqslant r_q\). For
+        \(|y| > 2 r_q\) show that \(\kappa_q\) is locally constant, \(b^b_q
+        (y) = 0\), and \(b_q (y) = - \lambda y (q + \lambda y^2)^{- 3}\), the
+        drift of the pure cube. (c) Conclude that on the large-field set the
+        error is the whole drift of the loop term: it is comparable, for \(|y|
+        \approx 2 r_q\), to the one-site bound \(\lambda q^{- 3} |y|\) on the
+        whole drift (the analogue of \((g_q / q) |y|\), with \(a_2 (q) = q^{-
+        2}\) in place of \(q^{- 1 / 2}\)), but it vanishes on the ball.
+        Compare with (<a href="#eq:source">12.4</a>).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">12.3</class>.
         </strong><class style="font-style: normal"><strong>(Large fields are less noisy)
-        </strong></class>On one site with \(\bar{\mathcal{F}} = \lambda y^3\),
-        show that the quadratic variation of \(Y\) is \(\int H_q (Y_q)^2
-        \hspace{0.17em} \mathrm{d} q\) and that \(H_q (y)^2 \leqslant (\gamma
-        y^2)^{- 2}\). Simulate the Polchinski process for \(\nu =
-        \mathrm{e}^{- \lambda \varphi^4 / 4} \mu^{1 / q_0}\) and plot
+        </strong></class>On one site with \(\bar{\mathcal{F}} =
+        \frac{\lambda}{3} y^3\), show that the quadratic variation of \(Y\) is
+        \(\int H_q (Y_q)^2 \hspace{0.17em} \mathrm{d} q\) and that \(H_q (y)^2
+        \leqslant (\lambda y^2)^{- 2}\). Simulate the Polchinski process for
+        \(\nu = \mathrm{e}^{- \lambda \varphi^4 / 12} \mu^{1 / q_0}\) and plot
         \(\Phi_q\), \(Y_q\) and \(\psi_q\).</font>
       </p>
     </div>
@@ -2855,20 +2870,20 @@ C_{q_{\ast}} K_q =
 \prime\). Which terms are
         controlled by the smallness of the truncation defect \(E_q (f)\)? Take
         \(f\) the tree expansion up to order \(k\), and \(\delta\) the
-        clipping of its terms beyond the cube. What replaces \(3 \lambda^2 S^2
-        x^5\) in (<a href="#eq:pl-quintic">12.11</a>)?</font>
+        clipping of its terms beyond the cube. What replaces
+        \(\frac{\lambda^2}{3} S^2 x^5\) in (<a href="#eq:pl-quintic">12.11</a>)?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">12.6</class>.
         </strong><class style="font-style: normal"><strong>(Negative mass) </strong></class><a id="ex:pl-negative"></a>For
-        \(r < 0\), let \(y \mapsto y + S (\lambda y^3 + ry)\). Show that it is
-        monotone if and only if \(1 + Sr \geqslant 0\). What happens to the
-        minimiser in the variational formula when \(1 + Sr < 0\), and to the
-        solution of (<a href="#eq:pl-inviscid">12.13</a>) with \(f_{\infty} = - \lambda x^3 -
-        rx\)? Why does this not contradict the existence of the exact, smooth
-        force \(F_q\)?</font>
+        \(r < 0\), let \(y \mapsto y + S (\frac{\lambda}{3} y^3 + ry)\). Show
+        that it is monotone if and only if \(1 + Sr \geqslant 0\). What
+        happens to the minimiser in the variational formula when \(1 + Sr <
+        0\), and to the solution of (<a href="#eq:pl-inviscid">12.13</a>) with \(f_{\infty} = -
+        \frac{\lambda}{3} x^3 - rx\)? Why does this not contradict the
+        existence of the exact, smooth force \(F_q\)?</font>
       </p>
     </div>
     <h2 id="auto-43">References<span style="margin-left: 1em"></span></h2>

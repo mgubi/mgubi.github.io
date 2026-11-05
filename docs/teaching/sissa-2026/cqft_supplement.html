@@ -271,14 +271,14 @@
     <h2 id="auto-1"><a id="a-sec-kernels"></a>19<span style="margin-left: 1em"></span>Elementary kernels<span style="margin-left: 1em"></span></h2>
     <p>
       We use the notation of Lecture 5: \(K_q = q - \Delta_N\), \(C_q = K_q^{-
-      1}\), \(G_q (y) = (K_q + \gamma y^2)^{- 1}\), \(H\) for the inverses of
+      1}\), \(G_q (y) = (K_q + \lambda y^2)^{- 1}\), \(H\) for the inverses of
       \(K_q + D^2 \Gamma\), \(M_q = \mu_q I + \Theta_q\) for the quadratic
       path, \(\kappa_q\) for the clip, \(\varrho_q\) for the coordinate
-      correction, and \(\text{Ctr}_E T\) for contraction. Recall \(\gamma = 3
-      \lambda\), \(g_q = \gamma q^{- 1 / 2}\) and \(r_q = (q / \gamma)^{1 /
-      2}\), so that \(\gamma r_q^2 = q\). Generic convolution kernels are
-      denoted \(E, E'\), and the letters \(L, L'\) denote arbitrary kernels.
-      Distance \(d\) is torus distance.
+      correction, and \(\text{Ctr}_E T\) for contraction. Recall \(g_q =
+      \lambda q^{- 1 / 2}\) and \(r_q = (q / \lambda)^{1 / 2}\), so that
+      \(\lambda r_q^2 = q\). Generic convolution kernels are denoted \(E,
+      E'\), and the letters \(L, L'\) denote arbitrary kernels. Distance \(d\)
+      is torus distance.
     </p>
     <p>
       <div style="display: inline">
@@ -304,8 +304,8 @@
       mass</strong> \(q_0 > 0\) has arbitrary size; it fixes the covariance
       \(C = C_{q_0}\) of the measure, and it is the lower end of the range of
       Lemma <a href="#a-lem-free">19.1</a>. The <strong>auxiliary scale</strong> \(q_{\ast}
-      \geqslant \text{max} (1, q_0)\) is large, depending on \(\gamma\) and on
-      the bound \(B\) below; all the operators of Sections <a href="#a-sec-kernels">19</a>&ndash;<a
+      \geqslant \text{max} (1, q_0)\) is large, depending on \(\lambda\) and
+      on the bound \(B\) below; all the operators of Sections <a href="#a-sec-kernels">19</a>&ndash;<a
       href="#a-sec-clipping">21</a> after Lemma <a href="#a-lem-free">19.1</a> are used at scales \(q
       \geqslant q_{\ast}\) and do not involve \(q_0\). So from Lemma <a href="#a-lem-center">19.3</a>
       on we assume \(q \geqslant 1\). Constants may depend on the coupling and
@@ -336,13 +336,13 @@
         </tr>
       </table></i>
       <p>
-        <i>For \(y \in H_N\) and \(\gamma > 0\),</i>
+        <i>For \(y \in H_N\) and \(\lambda > 0\),</i>
       </p>
       <div style="margin-bottom: 1em">
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="a-eq-killing"></a>\(\displaystyle 0 \leqslant G_q (y)
-            (x, z) \leqslant C_q (x, z), \quad G_q (y) (q + \gamma
+            (x, z) \leqslant C_q (x, z), \quad G_q (y) (q + \lambda
 y^2) = 1.
             \)</td>
             <td align="right">(19.2)</td>
@@ -355,9 +355,9 @@ y^2) = 1.
       \mathrm{e}^{- qt} \mathrm{e}^{t \Delta_N}
 \hspace{0.17em} \mathrm{d} t\)
       proves positivity, the row mass and the operator norms. Killing the
-      lattice random walk at rate \(\gamma y^2\) proves the first part of (<a
-      href="#a-eq-killing">19.2</a>). The second part is \((K_q + \gamma y^2) 1 = q + \gamma
-      y^2\).
+      lattice random walk at rate \(\lambda y^2\) proves the first part of (<a
+      href="#a-eq-killing">19.2</a>). The second part is \((K_q + \lambda y^2) 1 = q +
+      \lambda y^2\).
     </p>
     <p>
       The symbol of \(- \Delta_N\) is \(4 N^2 \sum_i \text{sin}^2 (\pi n_i /
@@ -531,7 +531,7 @@ q^{- 1 / 2} \|E\|_{\mathcal{H}_q} \|E'
       Now use the signed identity \(C_q \Theta = \frac{1}{2} \int \Theta (z)
       \delta_z^2 C_q \hspace{0.17em}
 \mathrm{d} z\). The receiving identity
-      \(G \Theta = (I - G \gamma y^2) C_q \Theta\) and \(\|I - G \gamma y^2
+      \(G \Theta = (I - G \lambda y^2) C_q \Theta\) and \(\|I - G \lambda y^2
       \|_{\infty \to \infty} \leqslant 2\) give the row bound. The form bound
       follows from the commuting Fourier multipliers of \(C_q\) and \(M\) and
       the row bound on \(C_q M\).<span style="margin-left: 1em"></span>\(\Box\)
@@ -619,9 +619,9 @@ x_k) | \prod_{j \neq i} \hspace{0.17em} \mathrm{d}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="a-eq-seed"></a>\(\displaystyle \mathcal{L}_q (y) =
-        \frac{1}{2} \text{Tr} [\log (I + C_q^{1 / 2} \gamma y^2
-C_q^{1 / 2}) -
-        C_q^{1 / 2} \gamma y^2 C_q^{1 / 2}] . \)</td>
+        \frac{1}{2} \text{Tr} [\log (I + C_q^{1 / 2} \lambda y^2
+C_q^{1 / 2})
+        - C_q^{1 / 2} \lambda y^2 C_q^{1 / 2}] . \)</td>
         <td align="right">(20.1)</td>
       </tr>
     </table>
@@ -635,8 +635,8 @@ C_q^{1 / 2}) -
       <tr>
         <td width="100%" align="center"><a id="a-eq-seedder"></a>\(\displaystyle \partial_q \mathcal{L}_q
         (y) = \frac{1}{2} \text{Tr} [G_q (y) - C_q] +
-\frac{\gamma}{2} a_2 (q)
-        \|y\|_2^2 . \)</td>
+\frac{\lambda}{2} a_2
+        (q) \|y\|_2^2 . \)</td>
         <td align="right">(20.2)</td>
       </tr>
     </table>
@@ -994,10 +994,10 @@ u)\|_2) .\)
     <p>
       For the seed, a derivative of order \(k \geqslant 4\) of the log
       determinant has \(p \geqslant 2\) inverse factors and \(p\) vertices:
-      the local potential \(\gamma y^2\) has only first and second
+      the local potential \(\lambda y^2\) has only first and second
       derivatives. The same cycle cut has \(p - 2\) intermediate inverses and
       gives \(C_k q^2 a_2 (q) r_q^{- k} \leqslant C_k g_q qr_q^{2 - k}\). At
-      zero its degree \(2 j\) term is \((- 1)^{j + 1} \text{Tr} (C_q \gamma
+      zero its degree \(2 j\) term is \((- 1)^{j + 1} \text{Tr} (C_q \lambda
       y^2)^j / (2 j)\); the same two-chain argument proves its spatial bound.
       Taylor gives \(\textsf{S}_2 \leqslant Cg_q q\), \(\textsf{S}_3 \leqslant
       Cg_q q / r_q\). Finally (<a href="#a-eq-seedder">20.2</a>) says that \(\mathcal{T}_q
@@ -1019,7 +1019,7 @@ u)\|_2) .\)
       <strong class="enunciation-name">Remark <class style="font-style: normal">20.5</class>. </strong><class style="font-style: normal"><strong>(Small
       Hessians alone do not suffice) </strong></class><a id="a-rem-trace-hypotheses"></a>The higher
       individual bounds in this lemma are necessary (compare Exercise 11.3 of
-      Lecture 5). On the one-site lattice take \(q = \gamma = 1\), \(M = 0\),
+      Lecture 5). On the one-site lattice take \(q = \lambda = 1\), \(M = 0\),
       and fixed small \(\alpha, \delta > 0\). Put
     </p>
     <center>
@@ -1041,7 +1041,7 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
     </center>
     <p style="margin-bottom: 1em">
       Thus a trace Lipschitz estimate cannot follow from Hessian smallness and
-      difference bounds alone. The example rescales to any \(q, \gamma\): put
+      difference bounds alone. The example rescales to any \(q, \lambda\): put
       \(y = r_q s\) and replace each correction \(h (s)\) by \(qr_q^2 h (y /
       r_q)\). The displayed trace derivative is then multiplied by \(q^{- 1}
       r_q^{- 4}\) and still diverges with \(n\) at fixed \(q\). In our
@@ -1057,7 +1057,7 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="a-eq-mass"></a>\(\displaystyle B_q [M] = - \gamma
+        <td width="100%" align="center"><a id="a-eq-mass"></a>\(\displaystyle B_q [M] = - \lambda
         \text{Tr} (R_{0, q}^2) I - \frac{1}{2} \text{Ctr}_{R_{0,
 q}^2} D^4
         h_q^{[2]} (0), \quad B_q 1 = \beta_q 1. \)</td>
@@ -1065,10 +1065,10 @@ q}^2} D^4
       </tr>
     </table>
     <p>
-      Let \(\mathcal{B}= [- B \gamma q_{\ast}^{1 / 2}, B \gamma q_{\ast}^{1 /
-      2}]\), an interval of boundary values, not to be confused with the field
-      ball \(\mathcal{B}_q\). For \(b \in \mathcal{B}\) the mixed boundary
-      conditions are
+      Let \(\mathcal{B}= [- B \lambda q_{\ast}^{1 / 2}, B \lambda q_{\ast}^{1
+      / 2}]\), an interval of boundary values, not to be confused with the
+      field ball \(\mathcal{B}_q\). For \(b \in \mathcal{B}\) the mixed
+      boundary conditions are
     </p>
     <table width="100%">
       <tr>
@@ -1098,9 +1098,9 @@ q}^2} D^4
     </p>
     <center>
       \(\displaystyle \|M\|_{\ast} = \text{max} \left( \sup_q \frac{| \mu_q
-      |}{\gamma \sqrt{q}},
-\sup_q \frac{v_1 (\Theta_q)}{\gamma^2 q^{- 1 / 2}}
-      \right) .\)
+      |}{\lambda \sqrt{q}},
+\sup_q \frac{v_1 (\Theta_q)}{\lambda^2 q^{- 1 /
+      2}} \right) .\)
     </center>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -1110,7 +1110,7 @@ q}^2} D^4
         of Lecture 5, with the dependence on \(b\) made explicit; the bare
         mass is treated in Lemma <a href="#a-lem-bare-mass">20.7</a>. There is a universal
         constant \(C_{\ast} \geqslant 1\) and, for each \(B < \infty\), a
-        scale \(\hat{q} = \hat{q} (\gamma, B)\) such that the following holds
+        scale \(\hat{q} = \hat{q} (\lambda, B)\) such that the following holds
         for \(q_{\ast} \geqslant \hat{q}\), \(q_{\ast} \geqslant \text{max}
         (1, q_0)\), and \(b \in \mathcal{B}\). With \(R = B + C_{\ast}\), the
         recursion (<a href="#a-eq-iteration">20.4</a>) and the mixed-boundary problem (<a href="#a-eq-mass">20.8</a>)&ndash;(<a
@@ -1120,10 +1120,11 @@ q}^2} D^4
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="a-eq-coeffbounds"></a>\(\displaystyle | \mu_q | \leqslant C
-          \gamma \sqrt{q}, \quad v_1 (\Theta_q) \leqslant C
-\gamma^2 q^{- 1 /
-          2}, \quad \| \partial_q M_q \|_{\text{row}} \leqslant Cg_q .
-\)</td>
+          \lambda \sqrt{q}, \quad v_1 (\Theta_q) \leqslant C
+\lambda^2 q^{- 1
+          / 2}, \quad \| \partial_q M_q \|_{\text{row}} \leqslant Cg_q
+.
+          \)</td>
           <td align="right">(20.10)</td>
         </tr>
       </table></i>
@@ -1150,7 +1151,8 @@ k},
           <td width="100%" align="center"><a id="a-eq-smallerror"></a>\(\displaystyle e_q^{\text{o}} = \Pi
           (\mathcal{T}_q [M, h^{[1]}] -\mathcal{T}_q [M, h^{[2]}]),
 \quad
-          \textsf{S}_4 (e_q^{\text{o}}) \leqslant C \gamma^5 q^{- 3} . \)</td>
+          \textsf{S}_4 (e_q^{\text{o}}) \leqslant C \lambda^5 q^{- 3} .
+          \)</td>
           <td align="right">(20.12)</td>
         </tr>
       </table></i>
@@ -1164,7 +1166,7 @@ k},
       each fixed \(N\) the norm \(\| \cdot \|_{\ast}\) defines a complete
       weighted supremum space of continuous paths; restrict to the closed
       subset \(\mu_{q_{\ast}} = b\). It meets the ball of radius \(R\), since
-      \(|b| / \left( \gamma \sqrt{q} \right) \leqslant B (q_{\ast} / q)^{1 /
+      \(|b| / \left( \lambda \sqrt{q} \right) \leqslant B (q_{\ast} / q)^{1 /
       2}
 \leqslant B\) for \(q \geqslant q_{\ast}\). Its \(\Theta\) norm is a
       norm on centred kernels, since the off-diagonal entries determine the
@@ -1201,7 +1203,7 @@ k},
     <center>
       \(\displaystyle \mathcal{N}_{k, s} (F^{[0]}) \leqslant C_k (1 + R) g_s
       s^{1 / 2} r_s^{- k} =
-C_k (1 + R) \gamma^{1 + k / 2} s^{- k / 2} .\)
+C_k (1 + R) \lambda^{1 + k / 2} s^{- k / 2} .\)
     </center>
     <p>
       For \(F^{[1]}\) through order six, telescope it as \(F^{[0]} + \Pi
@@ -1212,7 +1214,7 @@ C_k (1 + R) \gamma^{1 + k / 2} s^{- k / 2} .\)
       q}\). The projected integrands have zero constant and quadratic jets and
       are even. Taylor's formula therefore bounds their derivatives of order
       zero through three, on each fixed bounded field set, by the integrable
-      fourth-order bound \(C_R \gamma^3 s^{- 2}\) times the corresponding
+      fourth-order bound \(C_R \lambda^3 s^{- 2}\) times the corresponding
       field powers. Thus differentiation under the improper integral is
       justified through order eight at depth one and six at depth two. No
       unknown terminal jets or interacting moments are being imposed at
@@ -1230,10 +1232,10 @@ C_k (1 + R) \gamma^{1 + k / 2} s^{- k / 2} .\)
       .\)
     </center>
     <p>
-      Moreover \(\textsf{S}_4 (h^{[j]}) \leqslant C \gamma^2 q^{- 1 / 2}\) and
-      the zero low jets show that each \(h_q^{[j]}\) and its first three field
-      derivatives vanish as \(q \to \infty\) on any fixed bounded field set.
-      Path differences satisfy \(\mathcal{N}_k (\delta h^{[j]}) \leqslant
+      Moreover \(\textsf{S}_4 (h^{[j]}) \leqslant C \lambda^2 q^{- 1 / 2}\)
+      and the zero low jets show that each \(h_q^{[j]}\) and its first three
+      field derivatives vanish as \(q \to \infty\) on any fixed bounded field
+      set. Path differences satisfy \(\mathcal{N}_k (\delta h^{[j]}) \leqslant
       Cg_q^2 qr_q^{2 - k} \| \delta
 M\|_{\ast}\). Contracting fourth tensors
       with the kernel \(R_0^2\), whose supremum is \(Cq^{- 1 / 2}\), gives
@@ -1241,12 +1243,13 @@ M\|_{\ast}\). Contracting fourth tensors
     <center>
       \(\displaystyle | \beta_q | + \|B_q \|_{\text{row}} \leqslant C (g_q +
       g_q^2), \quad v_1 (B_q
-- \beta_q I) \leqslant C \gamma^2 q^{- 3 / 2} .\)
+- \beta_q I) \leqslant C \lambda^2 q^{- 3 / 2}
+      .\)
     </center>
     <p>
       The local quartic contributes only to the scalar. In the centred part
       the distance stays in the fourth tensor. For path differences these
-      estimates improve to \(Cg_q^2 \| \delta M\|_{\ast}\) and \(C \gamma^3
+      estimates improve to \(Cg_q^2 \| \delta M\|_{\ast}\) and \(C \lambda^3
       q^{- 2} \| \delta M\|_{\ast}\), respectively. These estimates first show
       that the output paths are continuous: the centred integral is absolutely
       convergent in \(v_1\), and its integrand is locally continuous. They
@@ -1254,12 +1257,12 @@ M\|_{\ast}\). Contracting fourth tensors
       href="#a-eq-bdry">20.9</a>),
     </p>
     <center>
-      \(\displaystyle \frac{| (\mathcal{F} \mu)_q |}{\gamma \sqrt{q}}
-      \leqslant \frac{|b|}{\gamma
-\sqrt{q}} + C (1 + g_{q_{\ast}}) \leqslant B
-      + C (1 + g_{q_{\ast}}), \quad
+      \(\displaystyle \frac{| (\mathcal{F} \mu)_q |}{\lambda \sqrt{q}}
+      \leqslant \frac{|b|}{\lambda
+\sqrt{q}} + C (1 + g_{q_{\ast}}) \leqslant
+      B + C (1 + g_{q_{\ast}}), \quad
 \frac{v_1 ((\mathcal{F}
-      \Theta)_q)}{\gamma^2 q^{- 1 / 2}} \leqslant 2 C.\)
+      \Theta)_q)}{\lambda^2 q^{- 1 / 2}} \leqslant 2 C.\)
     </center>
     <p>
       Here is the order of the constants. Work provisionally with a radius \(R
@@ -1282,11 +1285,11 @@ M\|_{\ast}\). Contracting fourth tensors
       bounds give
     </p>
     <center>
-      \(\displaystyle | \delta (\mathcal{F} \mu)_q | \leqslant C \gamma^2 \log
-      (q / q_{\ast}) \|
+      \(\displaystyle | \delta (\mathcal{F} \mu)_q | \leqslant C \lambda^2
+      \log (q / q_{\ast}) \|
 \delta M\|_{\ast}, \quad v_1 (\delta (\mathcal{F}
       \Theta)_q) \leqslant C
-\gamma^3 q^{- 1} \| \delta M\|_{\ast} .\)
+\lambda^3 q^{- 1} \| \delta M\|_{\ast} .\)
     </center>
     <p>
       After normalisation, the first is bounded by \(Cg_{q_{\ast}} \| \delta
@@ -1313,8 +1316,8 @@ M\|_{\ast}\). Contracting fourth tensors
     </p>
     <p>
       From now on \(q \geqslant q_{\ast}\) whenever \(\bar{\Gamma}_q\) occurs,
-      and all constants may depend on \(\gamma, B\) but not on \(N\) or on \(b
-      \in \mathcal{B}\).
+      and all constants may depend on \(\lambda, B\) but not on \(N\) or on
+      \(b \in \mathcal{B}\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -1327,33 +1330,33 @@ M\|_{\ast}\). Contracting fourth tensors
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="a-eq-bare-mass"></a>\(\displaystyle \|B_q \|_{\text{row}} +
-          | \beta_q | \leqslant C \gamma (1 + g_q) a_2 (q),
-\quad | \mu_N - b|
-          \leqslant C \gamma \text{Tr} C_{q_{\ast}} \leqslant C
-\gamma N,
+          | \beta_q | \leqslant C \lambda (1 + g_q) a_2 (q),
+\quad | \mu_N -
+          b| \leqslant C \lambda \text{Tr} C_{q_{\ast}} \leqslant C
+\lambda N,
           \)</td>
           <td align="right">(20.13)</td>
         </tr>
       </table></i>
       <p>
         <i><center>
-          \(\displaystyle | \mu_N - \mu_q | \leqslant C \gamma N^3 / q, \quad
+          \(\displaystyle | \mu_N - \mu_q | \leqslant C \lambda N^3 / q, \quad
           \| \Theta_q
-\|_{\text{row}} \leqslant CN \gamma^2 q^{- 1 / 2}
+\|_{\text{row}} \leqslant CN \lambda^2 q^{- 1 / 2}
           \longrightarrow 0.\)
         </center></i>
       </p>
       <p style="margin-bottom: 1em">
         <i>The last two limits concern \(q \to \infty\) at fixed \(N\). In
-        particular \(| \mu_N | \leqslant |b| + C \gamma N\), and \(\text{Tr}
+        particular \(| \mu_N | \leqslant |b| + C \lambda N\), and \(\text{Tr}
         C_{q_{\ast}} \leqslant \text{Tr} C\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>Keep the sharp finite-lattice bubble in
       the unweighted trace bounds: \(\|R_{0, q}^2 \|_{\infty} \leqslant Ca_2
-      (q)\) and \(\textsf{S}_4 (h_q^{[2]}) \leqslant C \gamma^2 q^{- 1 / 2} =
-      C \gamma g_q\). Contracting the fourth tensor in (<a href="#a-eq-mass">20.8</a>)
+      (q)\) and \(\textsf{S}_4 (h_q^{[2]}) \leqslant C \lambda^2 q^{- 1 / 2} =
+      C \lambda g_q\). Contracting the fourth tensor in (<a href="#a-eq-mass">20.8</a>)
       therefore gives the first inequality, including both Schur masses. Since
       \(\int_{q_{\ast}}^{\infty} a_2 (s) \hspace{0.17em} \mathrm{d} s =
       \text{Tr}
@@ -1369,8 +1372,8 @@ C_{q_{\ast}}\), its scalar integral is absolutely convergent,
       estimate. For the one-site lattice \(\Theta = 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      The leading \(N\)-dependent part of \(\mu_N\) is \(- 3 \lambda \text{Tr}
-      C_{q_{\ast}}\), and it differs from \(- 3 \lambda \text{Tr} C\) by a
+      The leading \(N\)-dependent part of \(\mu_N\) is \(- \lambda \text{Tr}
+      C_{q_{\ast}}\), and it differs from \(- \lambda \text{Tr} C\) by a
       quantity bounded in \(N\). The next quadratic contraction contains the
       logarithmic two-loop mass divergence. Keeping its full running kernel
       avoids an incorrect local replacement. There is no quartic or kinetic
@@ -1386,7 +1389,7 @@ C_{q_{\ast}}\), its scalar integral is absolutely convergent,
         </strong><i><class style="font-style: normal"><strong>(Dependence on the boundary value)
         </strong></class><a id="a-prop-response"></a>This is the step Response of the proof of
         Theorem <a href="cqft_lecture_5.html#thm:counter">11.2</a> of Lecture 5. For \(q_{\ast}\) large
-        depending on \(\gamma, B\), let \(b_1, b_2 \in \mathcal{B}\) with
+        depending on \(\lambda, B\), let \(b_1, b_2 \in \mathcal{B}\) with
         paths \(M^1, M^2\), and \(\delta b = b_1 - b_2\). Then at every fixed
         \(N\),</i>
       </p>
@@ -1398,8 +1401,8 @@ C_{q_{\ast}}\), its scalar integral is absolutely convergent,
 \sup_{q
             \geqslant q_{\ast}} q^{3 / 2} v_1 (\delta \Theta_q) \leqslant
             C
-\gamma^2 | \delta b|, \quad | \delta \mu_N - \delta b| \leqslant
-            C \gamma
+\lambda^2 | \delta b|, \quad | \delta \mu_N - \delta b|
+            \leqslant C \lambda
 q_{\ast}^{- 1 / 2} | \delta b| . \)</td>
             <td align="right">(20.14)</td>
           </tr>
@@ -1420,10 +1423,10 @@ C \rho_s s^{1 / 2} r_s^{- k}\). Since the seed does not depend
       the finite recursion,
     </p>
     <center>
-      \(\displaystyle s (D^4 \delta h_q^{[2]} (0)) \leqslant C \gamma^2 (Dq^{-
-      3 / 2} + Xq^{- 5 /
-2}), \quad v_1 (D^4 \delta h_q^{[2]} (0)) \leqslant C
-      \gamma^2 (Dq^{- 2} +
+      \(\displaystyle s (D^4 \delta h_q^{[2]} (0)) \leqslant C \lambda^2
+      (Dq^{- 3 / 2} + Xq^{- 5 /
+2}), \quad v_1 (D^4 \delta h_q^{[2]} (0))
+      \leqslant C \lambda^2 (Dq^{- 2} +
 Xq^{- 3}) .\)
     </center>
     <p>
@@ -1431,9 +1434,9 @@ Xq^{- 3}) .\)
       commuting Fourier multipliers, each with symbol bounded by \(C (q +
       c|k|^2)^{- 1}\) by (<a href="#a-eq-receive">19.5</a>), and \(\delta (R_0^2) = - (R_0^2
       \hat{R}_0 + R_0 \hat{R}_0^2) \delta M\). So the local term of (<a href="#a-eq-mass">20.8</a>)
-      varies by \(\gamma \text{Tr} ((R_0^2 \hat{R}_0 + R_0 \hat{R}_0^2) \delta
-      M)\), to leading order \(2 \gamma \text{Tr} (R_0^3 \delta M)\). This is
-      at most \(C \gamma (Dq^{- 3 / 2} + Xq^{- 5 / 2})\), as \(|
+      varies by \(\lambda \text{Tr} ((R_0^2 \hat{R}_0 + R_0 \hat{R}_0^2)
+      \delta M)\), to leading order \(2 \lambda \text{Tr} (R_0^3 \delta M)\).
+      This is at most \(C \lambda (Dq^{- 3 / 2} + Xq^{- 5 / 2})\), as \(|
       \widehat{\delta \Theta} (k) | \leqslant 2 |k| v_1 (\delta \Theta)\) and
       \(\sum_k |k| (q + c|k|^2)^{- 3} \leqslant Cq^{- 1}\). Contracting the
       fourth vertex with \(R_0^2\), whose supremum is \(Cq^{- 1 / 2}\), and
@@ -1442,26 +1445,26 @@ Xq^{- 3}) .\)
       Lemma <a href="#a-lem-trace">20.4</a>, gives
     </p>
     <center>
-      \(\displaystyle | \delta \beta_q | \leqslant C \gamma (Dq^{- 3 / 2} +
-      Xq^{- 5 / 2}), \quad v_1
-(\delta B_q - \delta \beta_q I) \leqslant C
-      \gamma^2 (Dq^{- 5 / 2} + Xq^{- 7 /
-2}) .\)
+      \(\displaystyle | \delta \beta_q | \leqslant C \lambda (Dq^{- 3 / 2} +
+      Xq^{- 5 / 2}), \quad
+v_1 (\delta B_q - \delta \beta_q I) \leqslant C
+      \lambda^2 (Dq^{- 5 / 2} +
+Xq^{- 7 / 2}) .\)
     </center>
     <p>
       Integrating the centred part from \(q\) to \(\infty\) and the scalar
       part from \(q_{\ast}\) to \(q\),
     </p>
     <center>
-      \(\displaystyle X \leqslant C \gamma^2 D + C \gamma^2 q_{\ast}^{- 1} X,
-      \quad D \leqslant |
-\delta b| + C \gamma q_{\ast}^{- 1 / 2} D + C \gamma
-      q_{\ast}^{- 3 / 2} X.\)
+      \(\displaystyle X \leqslant C \lambda^2 D + C \lambda^2 q_{\ast}^{- 1}
+      X, \quad D \leqslant |
+\delta b| + C \lambda q_{\ast}^{- 1 / 2} D + C
+      \lambda q_{\ast}^{- 3 / 2} X.\)
     </center>
     <p style="margin-bottom: 1em">
-      For \(q_{\ast}\) large the first gives \(X \leqslant C \gamma^2 D\), the
-      second \(D \leqslant 2 | \delta b|\), and integrating \(\delta \beta\)
-      over \([q_{\ast}, \infty)\) gives the last bound.<span style="margin-left: 1em"></span>\(\Box\)
+      For \(q_{\ast}\) large the first gives \(X \leqslant C \lambda^2 D\),
+      the second \(D \leqslant 2 | \delta b|\), and integrating \(\delta
+      \beta\) over \([q_{\ast}, \infty)\) gives the last bound.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <h2 id="auto-8"><a id="a-sec-clipping"></a>21<span style="margin-left: 1em"></span>Global coercivity and the
     complete large-field error<span style="margin-left: 1em"></span></h2>
@@ -1567,8 +1570,8 @@ Xq^{- 3}) .\)
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="a-eq-resolvent"></a>\(\displaystyle c (K_q + \gamma y^2)
-          \leqslant H_q (y)^{- 1} \leqslant C (K_q + \gamma y^2),
+          <td width="100%" align="center"><a id="a-eq-resolvent"></a>\(\displaystyle c (K_q + \lambda y^2)
+          \leqslant H_q (y)^{- 1} \leqslant C (K_q + \lambda y^2),
 \quad \|H_q
           (y)\|_{p \to p} \leqslant \frac{1 + C (g_q + g_q^2)}{q} \quad
           (1
@@ -1580,7 +1583,7 @@ Xq^{- 3}) .\)
         <i><center>
           \(\displaystyle \text{diag} H_q (y)^2 \leqslant Ca_2 (q), \quad M_y
           H_q (y)^2 M_y \leqslant C
-(\gamma q)^{- 1} I.\)
+(\lambda q)^{- 1} I.\)
         </center></i>
       </p>
     </div>
@@ -1592,7 +1595,7 @@ Xq^{- 3}) .\)
       gives \(p\). Every row of \(G\) has \(L^2\) norm at most \(\sqrt{a_2
       (q)}\); Minkowski in the same series proves the covariance estimate.
       Finally use \(H^2 \leqslant (C / q) H\) and \(M_y HM_y \leqslant C
-      \gamma^{- 1} I\). One must not square a Loewner inequality to obtain
+      \lambda^{- 1} I\). One must not square a Loewner inequality to obtain
       this assertion.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <h3 id="auto-11"><a id="a-sec-defect"></a>21.3<span style="margin-left: 1em"></span>The complete defect<span style="margin-left: 1em"></span></h3>
@@ -1621,28 +1624,28 @@ Xq^{- 3}) .\)
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="a-eq-source"></a>\(\displaystyle \|b_q^{\text{b}}
-          (y)\|_p \leqslant C \gamma^{7 / 2} q^{- 5 / 2}, \)</td>
+          (y)\|_p \leqslant C \lambda^{7 / 2} q^{- 5 / 2}, \)</td>
           <td align="right">(21.4)</td>
         </tr>
       </table></i>
       <p>
         <i><center>
-          \(\displaystyle \|b_q^{\text{l}} (y)\|_p \leqslant C \gamma q^{- 3 /
-          2} (\|t\|_p + r_q^{- 1}
+          \(\displaystyle \|b_q^{\text{l}} (y)\|_p \leqslant C \lambda q^{- 3
+          / 2} (\|t\|_p + r_q^{- 1}
 \|y^2 \chi_q (y)\|_p),\)
         </center></i>
       </p>
       <p>
         <i><center>
-          \(\displaystyle \|b_q^{\text{l}} (y)\|_2^2 \leqslant C \gamma^4 q^{-
-          5} \|t\|_6^6 .\)
+          \(\displaystyle \|b_q^{\text{l}} (y)\|_2^2 \leqslant C \lambda^4
+          q^{- 5} \|t\|_6^6 .\)
         </center></i>
       </p>
       <p>
-        <i>Moreover \(\|b_q (y)\|_p \leqslant C \gamma q^{- 3 / 2} \|y\|_p\),
+        <i>Moreover \(\|b_q (y)\|_p \leqslant C \lambda q^{- 3 / 2} \|y\|_p\),
         \(\|De_q (y)\|_p \leqslant Cg_q \|y\|_p\); the trace part (the loop
         part \(\mathcal{U}\) of (12.19) of Lecture 5) \(D \Upsilon_q (y) =
-        \gamma y \text{diag} H_q (y)^2 + \frac{1}{2}
+        \lambda y \text{diag} H_q (y)^2 + \frac{1}{2}
 \text{Ctr}_{H_q (y)^2}
         D^3 \tilde{h}_q (y)\) obeys \(\|D \Upsilon_q (y)\|_p \leqslant Cg_q
         \|y\|_p\); and</i>
@@ -1665,7 +1668,7 @@ Xq^{- 3}) .\)
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="a-eq-gradient"></a>\(\displaystyle De = \partial_q M_q y + D
-        \partial_q \tilde{h} + \gamma y \text{diag} H^2 +
+        \partial_q \tilde{h} + \lambda y \text{diag} H^2 +
 \frac{1}{2}
         \text{Ctr}_{H^2} D^3 \tilde{h} . \)</td>
         <td align="right">(21.6)</td>
@@ -1686,17 +1689,18 @@ Xq^{- 3}) .\)
       clipped inverses are
     </p>
     <center>
-      \(\displaystyle H^{\text{o}} = (K_q + M_q + \gamma z^2 + D^2 h (z))^{-
-      1}, \quad H = H_q (y) .\)
+      \(\displaystyle H^{\text{o}} = (K_q + M_q + \lambda z^2 + D^2 h (z))^{-
+      1}, \quad H = H_q (y)
+.\)
     </center>
     <p>
       Their inverse difference, denoted \(\textsf{D}\) to distinguish it from
       field differentiation, obeys
     </p>
     <center>
-      \(\displaystyle \textsf{D} : = H^{- 1} - (H^{\text{o}})^{- 1} = \gamma
-      M_{y^2 - z^2} + (J - I)
-f_2 J + f_2 (J - I) + M_{f_1 \kappa_q''},\)
+      \(\displaystyle \textsf{D} : = H^{- 1} - (H^{\text{o}})^{- 1} = \lambda
+      M_{y^2 - z^2} + (J -
+I) f_2 J + f_2 (J - I) + M_{f_1 \kappa_q''},\)
     </center>
     <center>
       \(\displaystyle H^2 - (H^{\text{o}})^2 = - H^2 \textsf{D} H^{\text{o}} -
@@ -1711,7 +1715,7 @@ f_2 J + f_2 (J - I) + M_{f_1 \kappa_q''},\)
       (Dw)^{\ast} f_1\)
     </center>
     <center>
-      \(\displaystyle + \gamma (y - Jz) \text{diag} H^2 + \gamma Jz
+      \(\displaystyle + \lambda (y - Jz) \text{diag} H^2 + \lambda Jz
       \text{diag} (H^2 -
 (H^{\text{o}})^2)\)
     </center>
@@ -1787,22 +1791,22 @@ y^2 \chi, \quad |w| \leqslant Cr \chi / q, \quad
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="a-eq-covariance-marked"></a>\(\displaystyle \| \text{diag}
-        \mathcal{D}_2 \|_p \leqslant C \frac{a_2}{q} [\gamma \|y^2 \chi
-\|_p +
-        (\sigma_2 + \sigma_1 / r)\| \chi \|_p] \leqslant C \frac{\gamma
-        a_2}{q}
-\|y^2 \chi \|_p, \)</td>
+        \mathcal{D}_2 \|_p \leqslant C \frac{a_2}{q} [\lambda \|y^2
+\chi \|_p
+        + (\sigma_2 + \sigma_1 / r)\| \chi \|_p] \leqslant C
+        \frac{\lambda
+a_2}{q} \|y^2 \chi \|_p, \)</td>
         <td align="right">(21.8)</td>
       </tr>
     </table>
     <center>
       \(\displaystyle \| \text{Ctr}_{\mathcal{D}_2} f_3 \|_p \leqslant C
-      \sigma_3 \frac{\gamma
+      \sigma_3 \frac{\lambda
 a_2}{q} \|y^2 \chi \|_p .\)
     </center>
     <p>
       In the last inequality use \(\sigma_2 + \sigma_1 / r \leqslant Cgq\),
-      \(\chi \leqslant \gamma y^2 \chi / q\), and small \(g\). This argument
+      \(\chi \leqslant \lambda y^2 \chi / q\), and small \(g\). This argument
       controls the column mass of the nonlocal contraction as well as its row
       mass.
     </p>
@@ -1828,7 +1832,7 @@ a_2}{q} \|y^2 \chi \|_p .\)
       </tr>
     </table>
     <p>
-      Here \(q / r^2 = \gamma\) and \(\gamma a_2 \leqslant Cg\). This is an
+      Here \(q / r^2 = \lambda\) and \(\lambda a_2 \leqslant Cg\). This is an
       operator estimate; the marked input sites can produce output at other
       spatial sites.
     </p>
@@ -1848,11 +1852,11 @@ a_2}{q} \|y^2 \chi \|_p .\)
       \(\displaystyle \|Jf_2 w + (Dw)^{\ast} f_1 \|_p \leqslant Cg \|t\|_p,\)
     </center>
     <center>
-      \(\displaystyle \| \gamma (y - Jz) \text{diag} H^2 \|_p \leqslant Cg
+      \(\displaystyle \| \lambda (y - Jz) \text{diag} H^2 \|_p \leqslant Cg
       \|t\|_p,\)
     </center>
     <center>
-      \(\displaystyle \| \gamma Jz \text{diag} \mathcal{D}_2 \|_p \leqslant
+      \(\displaystyle \| \lambda Jz \text{diag} \mathcal{D}_2 \|_p \leqslant
       Cgr^{- 1} \|y^2 \chi
 \|_p,\)
     </center>
@@ -1870,8 +1874,8 @@ a_2}{q} \|y^2 \chi \|_p .\)
       M' z\). The first part uses \(m (M') \leqslant Cg\); the second uses
       \(\|M' z\|_{\infty} \leqslant Cgr\) and \(\chi \leqslant |t| / r\). The
       second row uses the \(w, Dw\) bounds and \(\sigma_1, \sigma_2\). For the
-      fourth row note \(\gamma^2 ra_2 / q = \gamma a_2 / r \leqslant Cg / r\);
-      for the sixth use \(\sigma_3 \gamma a_2 / q \leqslant Cg^2 / r\).
+      fourth row note \(\lambda^2 ra_2 / q = \lambda a_2 / r \leqslant Cg /
+      r\); for the sixth use \(\sigma_3 \lambda a_2 / q \leqslant Cg^2 / r\).
     </p>
     <p>
       Put \(\mathfrak{D}_q (y) = De_q (y) - D \kappa_q (y) De_q^{\text{o}}
@@ -1901,7 +1905,7 @@ a_2}{q} \|y^2 \chi \|_p .\)
     <p>
       On the tail \(|t| + r^{- 1} y^2 \chi \leqslant 2 r^{- 2} |t|^3\);
       squaring the \(p = 2\) inequality gives \(\|b^{\text{l}} \|_2^2
-      \leqslant C \gamma^4 q^{- 5} \|t\|_6^6\). This retains the same
+      \leqslant C \lambda^4 q^{- 5} \|t\|_6^6\). This retains the same
       coefficients needed for the backward energy.
     </p>
     <p style="margin-bottom: 1em">
@@ -1912,7 +1916,7 @@ u\). Collapsing the covariance slots gives a
       two-slot kernel with both Schur masses at most \(Ca_2 s (D^4 \tilde{h})
       \leqslant Ca_2 gq / r^2 \leqslant Cg^2\). The other three terms in that
       gradient have \(L^p\) bounds \(Cg \|y\|_p\), using \(m (M') \leqslant
-      Cg\), \(s (D^2 \partial_q \tilde{h}) \leqslant Cg\), and \(\gamma \|
+      Cg\), \(s (D^2 \partial_q \tilde{h}) \leqslant Cg\), and \(\lambda \|
       \text{diag} H^2 \|_{\infty} \leqslant Cg\). Multiplication by \(H\)
       proves \(\|b (y)\|_p \leqslant Cgq^{- 1} \|y\|_p\). In particular, at
       \(q = q_{\ast}\), the last two terms of (<a href="#a-eq-gradient">21.6</a>), which form
@@ -1922,7 +1926,7 @@ u\). Collapsing the covariance slots gives a
       summand by \(C (| \mu | / q + \eta_q (\Theta))\) on every \(L^p\); the
       Schur bounds for \(C_q\) and the clipped Hessian bound the second by
       \(Cg\). This proves (<a href="#a-eq-coordinate-small">21.5</a>). As \(\varrho_q (0) = 0\) by
-      evenness and \(DU = \frac{\gamma}{3} y^3\), the equation \(K_q y + D
+      evenness and \(DU = \frac{\lambda}{3} y^3\), the equation \(K_q y + D
       \bar{\Gamma}_q (y) = K_q x\) is (<a href="cqft_lecture_5.html#eq:coordinate">12.5</a>) of Lecture 5.<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -1958,22 +1962,22 @@ u\). Collapsing the covariance slots gives a
         style="font-style: normal"><strong>(The mass and its explicit counterterm)
         </strong></class><a id="thm:mass"></a>Write \(a_2 = \text{Tr} C_q^2\),
         \(C_q^{(2)}\) for the kernel of \(C_q^2\), and \(f_N (b) = \mu_N (b) +
-        \gamma \text{Tr} C - 6 \lambda^2 \int C^3\). Then \(\beta_q = - \gamma
-        a_2 - \gamma \mu_q a_2' + \gamma^2 a_2^2 + 2 \gamma^2 \int
-C_q^2
-        C_q^{(2)} +\mathcal{R}_q\) with \(|\mathcal{R}_q | \leqslant C
-        \gamma^3 q^{- 3 / 2}\), and</i>
+        \lambda \text{Tr} C - \frac{2}{3} \lambda^2 \int C^3\). Then \(\beta_q
+        = - \lambda a_2 - \lambda \mu_q a_2' + \lambda^2 a_2^2 + 2
+        \lambda^2
+\int C_q^2 C_q^{(2)} +\mathcal{R}_q\) with \(|\mathcal{R}_q
+        | \leqslant C \lambda^3 q^{- 3 / 2}\), and</i>
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="eq:fN"></a>\(\displaystyle f_N (b) = b (1 + \gamma
-          a_2 (q_{\ast})) + \gamma (\text{Tr} C - \text{Tr}
-C_{q_{\ast}}) - 6
-          \lambda^2 \int (C^3 - C_{q_{\ast}}^3) +
-\int_{q_{\ast}}^{\infty}
-          (\mathcal{R}_q + \gamma (\beta_q + \gamma a_2) a_2)
-\hspace{0.17em}
-          \mathrm{d} q. \)</td>
+          <td width="100%" align="center"><a id="eq:fN"></a>\(\displaystyle f_N (b) = b (1 +
+          \lambda a_2 (q_{\ast})) + \lambda (\text{Tr} C -
+          \text{Tr}
+C_{q_{\ast}}) - \frac{2}{3} \lambda^2 \int (C^3 -
+          C_{q_{\ast}}^3) +
+\int_{q_{\ast}}^{\infty} (\mathcal{R}_q + \lambda
+          (\beta_q + \lambda a_2) a_2)
+\hspace{0.17em} \mathrm{d} q. \)</td>
           <td align="right">(22.1)</td>
         </tr>
       </table></i>
@@ -1986,8 +1990,8 @@ C_{q_{\ast}}) - 6
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="eq:explicit"></a>\(\displaystyle \mu_N = r - 3 \lambda
-          \text{Tr} C + 6 \lambda^2 \int C^3, \)</td>
+          <td width="100%" align="center"><a id="eq:explicit"></a>\(\displaystyle \mu_N = r - \lambda
+          \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3, \)</td>
           <td align="right">(22.2)</td>
         </tr>
       </table></i>
@@ -1999,52 +2003,52 @@ C_{q_{\ast}}) - 6
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong><strong>Expansion.</strong> Expand \(R_0
-      = C - CMC + CMCMR_0\) with \(C = C_q\). Then \(- \gamma \text{Tr} R_0^2
-      = - \gamma a_2 + 2 \gamma \text{Tr} (C^3 M) + O
-(\gamma a_2 \rho^2)\),
-      where \(\rho = | \mu | / q + \eta_q \leqslant C g_q\). As \(a_2' = - 2
-      \text{Tr} C^3\), this is \(- \gamma a_2 - \gamma \mu a_2' + 2 \gamma
-      \text{Tr} (C^3 \Theta)\) up to the error, and \(| \text{Tr} (C^3 \Theta)
-      | \leqslant Cq^{- 1} v_1 (\Theta) \leqslant C
-\gamma^2 q^{- 3 / 2}\).
-      For the vertex, write \(h^{[2]} =\mathcal{L}+ (h^{[1]} -\mathcal{L}) +
-      (h^{[2]} - h^{[1]})\). The increments have fourth rooted norm at most
-      \(Cg_q^2 \gamma\), and contracted with \(R_0^2\), whose supremum is
-      \(Cq^{- 1 / 2}\), they give \(O (\gamma^3 q^{- 3 / 2})\). The quartic
-      part of the seed is \(L (y) = - \frac{\gamma^2}{4} \int \int C (x, z)^2
-      y (x)^2 y (z)^2\). So
+      = C - CMC + CMCMR_0\) with \(C = C_q\). Then \(- \lambda \text{Tr} R_0^2
+      = - \lambda a_2 + 2 \lambda \text{Tr} (C^3 M) + O
+(\lambda a_2
+      \rho^2)\), where \(\rho = | \mu | / q + \eta_q \leqslant C g_q\). As
+      \(a_2' = - 2 \text{Tr} C^3\), this is \(- \lambda a_2 - \lambda \mu a_2'
+      + 2 \lambda \text{Tr} (C^3 \Theta)\) up to the error, and \(| \text{Tr}
+      (C^3 \Theta) | \leqslant Cq^{- 1} v_1 (\Theta) \leqslant C
+\lambda^2
+      q^{- 3 / 2}\). For the vertex, write \(h^{[2]} =\mathcal{L}+ (h^{[1]}
+      -\mathcal{L}) + (h^{[2]} - h^{[1]})\). The increments have fourth rooted
+      norm at most \(Cg_q^2 \lambda\), and contracted with \(R_0^2\), whose
+      supremum is \(Cq^{- 1 / 2}\), they give \(O (\lambda^3 q^{- 3 / 2})\).
+      The quartic part of the seed is \(L (y) = - \frac{\lambda^2}{4} \int
+      \int C (x, z)^2 y (x)^2 y (z)^2\). So
     </p>
     <center>
       \(\displaystyle - \frac{1}{2} \text{Tr} (R_0^2 D^2 L (y)) = \frac{1}{2}
-      \langle y, (\gamma^2
-a_2 \text{diag} (R_0^2) + 2 \gamma^2 C^2 \cdot
+      \langle y, (\lambda^2
+a_2 \text{diag} (R_0^2) + 2 \lambda^2 C^2 \cdot
       R_0^2) y \rangle,\)
     </center>
     <p>
       where \(\cdot\) denotes the pointwise product of kernels. Its
-      constant-mode eigenvalue is \(\gamma^2 a_2 \text{diag} (R_0^2) + 2
-      \gamma^2 \int C^2 R_0^2\), and replacing \(R_0^2\) by \(C^{(2)}\) costs
-      a relative factor \(Cg_q\), that is, \(O (\gamma^3 q^{- 3 / 2})\). This
+      constant-mode eigenvalue is \(\lambda^2 a_2 \text{diag} (R_0^2) + 2
+      \lambda^2 \int C^2 R_0^2\), and replacing \(R_0^2\) by \(C^{(2)}\) costs
+      a relative factor \(Cg_q\), that is, \(O (\lambda^3 q^{- 3 / 2})\). This
       proves the expansion.
     </p>
     <p>
       <strong>Integration.</strong> Three identities: \(\partial_q \text{Tr}
       C_q = - a_2\); \(\partial_q C_q (x) = - C_q^{(2)} (x)\), so \(\partial_q
       \int C_q^3 = - 3 \int C_q^2 C_q^{(2)}\); and \(\partial_q (\mu a_2) =
-      \beta a_2 + \mu a_2'\), so \(- \gamma \mu a_2' + \gamma^2 a_2^2 = -
-      \gamma \partial_q (\mu a_2) + \gamma
-(\beta + \gamma a_2) a_2\). At
+      \beta a_2 + \mu a_2'\), so \(- \lambda \mu a_2' + \lambda^2 a_2^2 = -
+      \lambda \partial_q (\mu a_2) +
+\lambda (\beta + \lambda a_2) a_2\). At
       fixed \(N\), as \(q \to \infty\), \(\text{Tr} C_q\), \(\int C_q^3\) and
-      \(\mu_q a_2 (q)\) tend to \(0\). Since \(\gamma^2 \cdot 2 \cdot
-      \frac{1}{3} = 6 \lambda^2\), integrating \(\beta\) over \([q_{\ast},
-      \infty)\) gives \(\mu_N = b (1 + \gamma a_2 (q_{\ast})) - \gamma
-      \text{Tr} C_{q_{\ast}} + 6
-\lambda^2 \int C_{q_{\ast}}^3 + \int
-      (\mathcal{R}+ \gamma (\beta + \gamma a_2)
-a_2)\), which is (<a href="#eq:fN">22.1</a>).
-      The last integrand is \(O (\gamma^3 q^{- 3 / 2})\), because \(\beta +
-      \gamma a_2 = O (\gamma^2 / q)\): indeed \(\mu a_2' = O (\gamma q^{1 / 2}
-      q^{- 3 / 2})\).
+      \(\mu_q a_2 (q)\) tend to \(0\). Since \(\lambda^2 \cdot 2 \cdot
+      \frac{1}{3} = \frac{2}{3} \lambda^2\), integrating \(\beta\) over
+      \([q_{\ast}, \infty)\) gives \(\mu_N = b (1 + \lambda a_2 (q_{\ast})) -
+      \lambda \text{Tr} C_{q_{\ast}} +
+\frac{2}{3} \lambda^2 \int
+      C_{q_{\ast}}^3 + \int (\mathcal{R}+ \lambda (\beta
++ \lambda a_2)
+      a_2)\), which is (<a href="#eq:fN">22.1</a>). The last integrand is \(O
+      (\lambda^3 q^{- 3 / 2})\), because \(\beta + \lambda a_2 = O (\lambda^2
+      / q)\): indeed \(\mu a_2' = O (\lambda q^{1 / 2} q^{- 3 / 2})\).
     </p>
     <p>
       <strong>Limit.</strong> The multiplier of \(\text{Tr} C - \text{Tr}
@@ -2058,15 +2062,15 @@ C_{q_{\ast}}^2)\), where \(C
       second factor converges in \(L^1\). At fixed \(q\), \(\beta_q^N\),
       \(\mu_q^N\) and the explicit terms converge by Proposition <a href="#prop:limits">22.1</a>
       and the convergence of the free kernels, hence so does
-      \(\mathcal{R}_q^N\). The integrand is dominated by \(C \gamma^3 q^{- 3 /
-      2}\), so \(f_N \to f\) pointwise.
+      \(\mathcal{R}_q^N\). The integrand is dominated by \(C \lambda^3 q^{- 3
+      / 2}\), so \(f_N \to f\) pointwise.
     </p>
     <p style="margin-bottom: 1em">
       <strong>Inversion.</strong> By Proposition <a href="#a-prop-response">20.8</a> and
-      \(\gamma a_2 (q_{\ast}) \leqslant Cg_{q_{\ast}}\), \(f_N\) is increasing
-      with \(|f_N (b_1) - f_N (b_2) - \delta b| \leqslant Cg_{q_{\ast}} |
-      \delta b|\), and the same holds for \(f\). By (<a href="#eq:fN">22.1</a>), \(f_N
-      (0) = \gamma (\text{Tr} C - \text{Tr} C_{q_{\ast}}) + O (\log
+      \(\lambda a_2 (q_{\ast}) \leqslant Cg_{q_{\ast}}\), \(f_N\) is
+      increasing with \(|f_N (b_1) - f_N (b_2) - \delta b| \leqslant
+      Cg_{q_{\ast}} | \delta b|\), and the same holds for \(f\). By (<a href="#eq:fN">22.1</a>),
+      \(f_N (0) = \lambda (\text{Tr} C - \text{Tr} C_{q_{\ast}}) + O (\log
       q_{\ast})\), and \(\text{Tr} C - \text{Tr} C_{q_{\ast}} \leqslant C
       (q_0) + q_{\ast}^{1 / 2} / 10\) uniformly in \(N\) (the continuum value
       of the coefficient is \(\frac{1}{4 \pi} < \frac{1}{10}\), and the
@@ -2093,10 +2097,10 @@ C_{q_{\ast}}^2)\), where \(C
     </p>
     <p>
       <strong>Notation.</strong> We use that of Lectures 5&ndash;6: \(K_q = q
-      - \Delta_N\), \(C_q = K_q^{- 1}\), \(g_q = \gamma q^{- 1 / 2}\), \(r_q =
-      (q / \gamma)^{1 / 2}\), \(a_2 (q) = \text{Tr} C_q^2\), the quadratic
+      - \Delta_N\), \(C_q = K_q^{- 1}\), \(g_q = \lambda q^{- 1 / 2}\), \(r_q
+      = (q / \lambda)^{1 / 2}\), \(a_2 (q) = \text{Tr} C_q^2\), the quadratic
       path \(M_q = \mu_q I + \Theta_q\), \(R_{0, q} = (K_q + M_q)^{- 1}\),
-      \(G_q (y) = (K_q + \gamma y^2)^{- 1}\), the seed \(\mathcal{L}_q\), the
+      \(G_q (y) = (K_q + \lambda y^2)^{- 1}\), the seed \(\mathcal{L}_q\), the
       corrections \(h^{[j]}_q\) of <a href="cqft_lecture_5.html#eq:iteration">(11.7)</a>, the source \(B_q [M]\)
       of <a href="cqft_lecture_5.html#eq:mass">(11.8)</a> with \(B_q 1 = \beta_q 1\), the clip
       \(\kappa_q\), \(\tilde{h}_q = h^{[2]}_q \circ \kappa_q\), the action
@@ -2135,9 +2139,9 @@ C_{q_{\ast}}^2)\), where \(C
     </p>
     <p>
       <strong>Boundary value.</strong> Fix \(B < \infty\), let \(\mathcal{B}=
-      [- B \gamma q_{\ast}^{1 / 2}, B \gamma q_{\ast}^{1 / 2}]\), fix \(b_N
+      [- B \lambda q_{\ast}^{1 / 2}, B \lambda q_{\ast}^{1 / 2}]\), fix \(b_N
       \to b\) in \(\mathcal{B}\), and take \(q_{\ast}\) large depending on
-      \(\gamma, B\). Throughout, the lattice coefficients are those of the
+      \(\lambda, B\). Throughout, the lattice coefficients are those of the
       system <a href="cqft_lecture_5.html#eq:iteration">(11.7)</a>&ndash;(11.8) with \(\mu^N_{q_{\ast}} = b_N\)
       and \(v_1 (\Theta^N_q) \to 0\) as \(q \to \infty\); by Proposition <a
       href="#a-prop-coeff">20.6</a> they lie in the ball \(\|M\|_{\ast} \leqslant R = B +
@@ -2146,16 +2150,17 @@ C_{q_{\ast}}^2)\), where \(C
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="c-pathmetric"></a>\(\displaystyle \|M\|_{\ast} = \text{max}
-        (\sup_{q \geqslant q_{\ast}} \frac{| \mu_q |}{\gamma
-q^{1 / 2}},
-        \sup_{q \geqslant q_{\ast}} \frac{v_1 (\Theta_q)}{\gamma^2 q^{- 1
-/
-        2}}), \quad d_{\ast} (M, \hat{M}) = \|M - \hat{M} \|_{\ast} . \)</td>
+        (\sup_{q \geqslant q_{\ast}} \frac{| \mu_q
+|}{\lambda q^{1 / 2}},
+        \sup_{q \geqslant q_{\ast}} \frac{v_1
+(\Theta_q)}{\lambda^2 q^{- 1 /
+        2}}), \quad d_{\ast} (M, \hat{M}) = \|M -
+\hat{M} \|_{\ast} . \)</td>
         <td align="right">(23.1)</td>
       </tr>
     </table>
     <p>
-      Constants may depend on \(\gamma, B\) and on the compact scale interval
+      Constants may depend on \(\lambda, B\) and on the compact scale interval
       \(I \subset [q_{\ast}, \infty)\) when so indicated, and never on \(N\).
       The bounds of Proposition <a href="cqft_lecture_5.html#prop:coeff">11.1</a>, of <a href="cqft_lecture_5.html#eq:global-h">(12.2)</a>, of
       Lemma <a href="cqft_lecture_5.html#lem:resolvent">12.1</a> and of Proposition <a href="cqft_lecture_5.html#prop:source">12.2</a> hold in
@@ -2407,7 +2412,7 @@ q^{1 / 2}},
         </center></i>
       </p>
       <p style="margin-bottom: 1em">
-        <i>locally uniformly in \(q\). The same holds after adding \(\gamma
+        <i>locally uniformly in \(q\). The same holds after adding \(\lambda
         (j_N \phi)^2\) for a fixed smooth bounded profile \(\phi\). In
         particular \(\iota_N C^N_q j_N \to C_q\) in \(\text{HS}\).</i>
       </p>
@@ -2417,7 +2422,7 @@ q^{1 / 2}},
       multipliers converge, by Lemma <a href="#c-qtopology">24.1</a> and the convergence of
       the lattice Laplacian symbol. Their absolute values are bounded by \(C
       (q + c|k|^2)^{- 1}\), by the small relative form bound: \(| \mu_q |
-      \leqslant Rg_q q\) and \(| \hat{\Theta}_q (k) | \leqslant CRg_q \gamma
+      \leqslant Rg_q q\) and \(| \hat{\Theta}_q (k) | \leqslant CRg_q \lambda
       |k| \leqslant CRg_q (g_q^2 q +
 |k|^2)\). The squared tail beyond \(|k| =
       L\) is therefore at most \(C_I \sum_{|k| > L} (1 + |k|^2)^{- 2}
@@ -2427,8 +2432,8 @@ q^{1 / 2}},
       convergence.
     </p>
     <p>
-      For the multiplication potential put \(V_N = \gamma (\iota_N j_N
-      \phi)^2\) and \(V = \gamma \phi^2\), so \(\|V_N - V\|_{\infty} \to 0\).
+      For the multiplication potential put \(V_N = \lambda (\iota_N j_N
+      \phi)^2\) and \(V = \lambda \phi^2\), so \(\|V_N - V\|_{\infty} \to 0\).
       If \(A_N, A\) denote the preceding background inverses and \(G_N, G\)
       the inverses with \(V_N, V\), the exact identity is
     </p>
@@ -2542,7 +2547,7 @@ q^{1 / 2}},
     </center>
     <p>
       The sum converges because \(a < \frac{1}{2}\). At a bounded field, write
-      \(R_N = R_{0, N} - R_{0, N} (\gamma \phi_N^2 + \textsf{B}_N) R_N\); the
+      \(R_N = R_{0, N} - R_{0, N} (\lambda \phi_N^2 + \textsf{B}_N) R_N\); the
       factor to the right of \(R_{0, N}\) is bounded on \(L^2\). Taking row
       differences proves (<a href="#c-rowmodulus">26.1</a>). Since \(R_N^2 (x, z)\) is the
       inner product of the two inverse rows, their common \(L^2\) bound proves
@@ -2611,15 +2616,15 @@ q^{1 / 2}},
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="c-seedforce"></a>\(\displaystyle D\mathcal{L}_q (\phi) (x)
-        = - \gamma^2 \phi (x) \int C_q (x, z) \phi (z)^2 G_q
-(\phi) (z, x)
+        = - \lambda^2 \phi (x) \int C_q (x, z) \phi (z)^2
+G_q (\phi) (z, x)
         \hspace{0.17em} \mathrm{d} z. \)</td>
         <td align="right">(27.1)</td>
       </tr>
     </table>
     <p style="margin-bottom: 1em">
-      It follows from \(D\mathcal{L}= \gamma \phi \text{diag} (G - C)\) and
-      \(G - C = - C \gamma \phi^2 G\). Both inverses converge in
+      It follows from \(D\mathcal{L}= \lambda \phi \text{diag} (G - C)\) and
+      \(G - C = - C \lambda \phi^2 G\). Both inverses converge in
       Hilbert&ndash;Schmidt norm by Lemma <a href="#c-freecons">26.1</a>.
       Cauchy&ndash;Schwarz in their two kernel variables proves \(L^1\)
       convergence of this force. Its uniform bound \(C_I \| \phi
@@ -2657,16 +2662,16 @@ q^{1 / 2}},
       a common Lipschitz bound in that parameter.
     </p>
     <p>
-      Let \(G_M = (K_q + M_q + \gamma \phi^2)^{- 1}\) and \(R_{\theta h} =
-      (K_q + M_q + \gamma \phi^2 + \theta D^2 h^{[j]} (\phi))^{- 1}\). The
+      Let \(G_M = (K_q + M_q + \lambda \phi^2)^{- 1}\) and \(R_{\theta h} =
+      (K_q + M_q + \lambda \phi^2 + \theta D^2 h^{[j]} (\phi))^{- 1}\). The
       scalar trace map decomposes exactly as
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="c-tracedecomp"></a>\(\displaystyle \text{Tr} (G_M - R_{0,
-        q}) = - \text{Tr} (R_{0, q} \gamma \phi^2 G_M), \quad
-\text{Tr} (R_h -
-        G_M) = - \int_0^1 \text{Ctr}_{R_{\theta h}^2} D^2 h^{[j]}
+        q}) = - \text{Tr} (R_{0, q} \lambda \phi^2 G_M), \quad
+\text{Tr} (R_h
+        - G_M) = - \int_0^1 \text{Ctr}_{R_{\theta h}^2} D^2 h^{[j]}
 (\phi)
         \hspace{0.17em} \mathrm{d} \theta . \)</td>
         <td align="right">(27.2)</td>
@@ -2689,13 +2694,13 @@ q^{1 / 2}},
       <tr>
         <td width="100%" align="center"><a id="c-recursiontail"></a>\(\displaystyle | \Pi (\mathcal{T}_s [M,
         h^{[j]}] - \partial_s \mathcal{L}_s) (\phi) |
-\leqslant C \gamma^3
+\leqslant C \lambda^3
         s^{- 2} \| \phi \|_4^4 . \)</td>
         <td align="right">(27.3)</td>
       </tr>
     </table>
     <p>
-      Consequently the omitted tail beyond \(L\) is at most \(C \gamma^3 L^{-
+      Consequently the omitted tail beyond \(L\) is at most \(C \lambda^3 L^{-
       1} \| \phi \|_4^4\), uniformly in the cutoffs. Pass to the limit first
       on \([q, L]\), then send \(L \to \infty\). This proves scalar
       convergence at depth \(j + 1\). Its derivative budget is eight at depth
@@ -2959,7 +2964,7 @@ I) \hspace{0.17em} \mathrm{d} s \right)\).
       paths in the ball converging in the weak path topology to \(M\).
       Proposition <a href="#c-finitecons">27.2</a> identifies the fourth zero-field vertex.
       Its contraction with \(R_0^2\) converges by Lemma <a href="#c-weakcontr">26.4</a>; the
-      local contribution \(- \gamma \text{Tr} R_0^2\) converges by
+      local contribution \(- \lambda \text{Tr} R_0^2\) converges by
       Hilbert&ndash;Schmidt convergence. It follows that \(B_q [M^N]\)
       converges weakly as a two-slot measure, locally uniformly in scale. The
       limit is invariant under every torus shift: approximate that shift by
@@ -2978,12 +2983,12 @@ I) \hspace{0.17em} \mathrm{d} s \right)\).
       point argument (Proposition <a href="#a-prop-coeff">20.6</a>) is
     </p>
     <center>
-      \(\displaystyle v_1 (B_s - \beta_s I) \leqslant C \gamma^2 s^{- 3 / 2}
+      \(\displaystyle v_1 (B_s - \beta_s I) \leqslant C \lambda^2 s^{- 3 / 2}
       .\)
     </center>
     <p>
-      Its upper tail in the first moment norm is at most \(2 C \gamma^2 L^{- 1
-      / 2}\). Lemma <a href="#c-weaksource">28.1</a> constructs this integral without a
+      Its upper tail in the first moment norm is at most \(2 C \lambda^2 L^{-
+      1 / 2}\). Lemma <a href="#c-weaksource">28.1</a> constructs this integral without a
       strong measurability assumption in the measure norm. It proves
       convergence against annular tests; the small displacement estimate of
       Lemma <a href="#c-qtopology">24.1</a> gives compensated tests, uniformly on compact
@@ -3039,7 +3044,7 @@ I) \hspace{0.17em} \mathrm{d} s \right)\).
       =\mathcal{F} (M)\) and the contraction proves uniqueness in the ball.
       The boundary conditions and decay of \(\Theta\) follow from the integral
       prescription and the inherited bound \(v_1 (\Theta_q) \leqslant C
-      \gamma^2 q^{- 1 / 2}\).
+      \lambda^2 q^{- 1 / 2}\).
     </p>
     <p style="margin-bottom: 1em">
       <strong>Step 4: conclusion along the moving boundary.</strong> By (<a
@@ -3060,7 +3065,7 @@ I) \hspace{0.17em} \mathrm{d} s \right)\).
         <td width="100%" align="center"><a id="c-gradient"></a>\(\displaystyle De_q (y) = M_q' y + D
         \partial_q \tilde{h}_q (y) + D \Upsilon_q (y), \quad D
 \Upsilon_q (y)
-        = \gamma y \text{diag} H_q (y)^2 + \frac{1}{2} \text{Ctr}_{H_q
+        = \lambda y \text{diag} H_q (y)^2 + \frac{1}{2} \text{Ctr}_{H_q
 (y)^2}
         D^3 \tilde{h}_q (y), \)</td>
         <td align="right">(29.1)</td>
@@ -3099,7 +3104,7 @@ H_{q_{\ast}} (y) (y -
             <p>
               \(\iota_N H^N_q (\phi_N) j_N \to H_q (\phi)\) in \(\text{HS}\),
               where \(H_q (\phi)\) is the limiting inverse, of the form \((I +
-              G \textsf{B})^{- 1} G\) with \(G = (K_q + M_q + \gamma
+              G \textsf{B})^{- 1} G\) with \(G = (K_q + M_q + \lambda
               \phi^2)^{- 1}\) and \(\textsf{B}\) the limit of the clipped
               Hessians;
             </p>
@@ -3177,7 +3182,7 @@ H_{q_{\ast}} (y) (y -
     </p>
     <p>
       The bounds \(\|H^N_q (y)\|_{\text{HS}}^2 \leqslant Ca_2 (q)\) and
-      \(\|b^N_q (y)\|_2 \leqslant C \gamma q^{- 3 / 2} \|y\|_2\), of Lemma <a
+      \(\|b^N_q (y)\|_2 \leqslant C \lambda q^{- 3 / 2} \|y\|_2\), of Lemma <a
       href="cqft_lecture_5.html#lem:resolvent">12.1</a> and Proposition <a href="cqft_lecture_5.html#prop:source">12.2</a>, and \(\| \varrho^N_q
       (y)\|_2 \leqslant \varepsilon_q \|y\|_2\) are uniform. So for a
       space&ndash;scale profile we integrate the convergence at each scale
@@ -3242,7 +3247,7 @@ H_{q_{\ast}} (y) (y -
       identity is
     </p>
     <center>
-      \(\displaystyle \Delta H = - H_y [\gamma M_a + \textsf{D}_y -
+      \(\displaystyle \Delta H = - H_y [\lambda M_a + \textsf{D}_y -
       \textsf{D}_z] H_z .\)
     </center>
     <p>
@@ -3308,7 +3313,7 @@ H_z^2) (u, v) | \leqslant C_I (d (u) + d (v)) .\)
     </p>
     <center>
       \(\displaystyle b_q (y) - b_q (z) = - H_y (De_q (y) - De_q (z)) + H_y
-      [\gamma M_a +
+      [\lambda M_a +
 \textsf{D}_y - \textsf{D}_z] H_z De_q (z) .\)
     </center>
     <p>
@@ -3320,7 +3325,7 @@ H_z^2) (u, v) | \leqslant C_I (d (u) + d (v)) .\)
     </p>
     <p style="margin-bottom: 1em">
       For the frozen drift, \(b (y) - b (z) = H_y (y - z - D \Upsilon (y) + D
-      \Upsilon (z)) - H_y [\gamma
+      \Upsilon (z)) - H_y [\lambda
 M_a + \textsf{D}_y - \textsf{D}_z] b (z)\),
       with \(H_y, \textsf{D}_y\) at scale \(q_{\ast}\) and \(\|b
       (z)\|_{\infty} \leqslant C \|z\|_{\infty}\) by (<a href="cqft_lecture_5.html#eq:low">12.20</a>). The
@@ -3634,7 +3639,7 @@ H)}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="c-coordinate"></a>\(\displaystyle y + \varrho_s (y) +
-        \frac{\gamma}{3} C_s y^3 = x \quad (s \geqslant q_{\ast})
+        \frac{\lambda}{3} C_s y^3 = x \quad (s \geqslant q_{\ast})
 . \)</td>
         <td align="right">(31.1)</td>
       </tr>
@@ -3709,7 +3714,7 @@ H)}
     <p>
       <strong>Uniqueness.</strong> Let \(y, y' \in L^{\infty}\) solve (<a
       href="#c-coordinate">31.1</a>), and put \(\delta = y - y'\), \(f = D \tilde{h}_s (y) -
-      D \tilde{h}_s (y')\) and \(w = \frac{\gamma}{3} (y^3 - (y')^3)\), which
+      D \tilde{h}_s (y')\) and \(w = \frac{\lambda}{3} (y^3 - (y')^3)\), which
       lie in \(H\). By the form of \(\varrho_s\) in Proposition <a href="#c-fieldlimit">29.3</a>,
       in Fourier variables,
     </p>
@@ -3821,7 +3826,7 @@ t\). Let \(z_N, z\) be as in (b). For each \(t\), \(\iota_N
           <td width="100%" align="center"><a id="c-resid"></a>\(\displaystyle H^N_q (y) = (I - H^N_q
           (y) D^2 \bar{\Gamma}^N_q (y)) C^N_q, \quad \|H^N_q (y)
 D^2
-          \bar{\Gamma}^N_q (y)\|_{2 \to 2} \leqslant C (1 + \gamma L^2 / q),
+          \bar{\Gamma}^N_q (y)\|_{2 \to 2} \leqslant C (1 + \lambda L^2 / q),
           \)</td>
           <td align="right">(31.3)</td>
         </tr>
@@ -3832,8 +3837,8 @@ D^2
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="c-highbound"></a>\(\displaystyle \|H^N_q (y) F^N_{> m}
-          \|_{\text{HS}} \leqslant C (1 + \gamma L^2 / q) m^{- 1 /
-2} .
+          \|_{\text{HS}} \leqslant C (1 + \lambda L^2 / q) m^{- 1
+/ 2} .
           \)</td>
           <td align="right">(31.4)</td>
         </tr>
@@ -3846,27 +3851,28 @@ D^2
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>The identity is \(H^N (K_q + D^2
       \bar{\Gamma}^N) = I\). By <a href="cqft_lecture_5.html#eq:clipping">(12.1)</a>, \(D^2 \bar{\Gamma}^N =
-      \gamma y^2 + \mu_q + \Theta_q + D^2 \tilde{h}_q (y)\). By Lemma <a href="cqft_lecture_5.html#lem:resolvent">12.1</a>,
-      \(\|H^N \|_{2 \to 2} \leqslant C / q\). So \(H^N (\gamma y^2 + \mu_q +
-      D^2 \tilde{h}_q)\) has norm at most \(C (\gamma L^2 / q + g_q)\), by <a
-      href="cqft_lecture_5.html#eq:coeff">(11.10)</a> and <a href="cqft_lecture_5.html#eq:global-h">(12.2)</a>. The kernel \(\Theta_q\) is
-      not bounded on \(L^2\) uniformly in \(N\), and we argue by the other
-      resolvent identity. By Lemma <a href="#c-qtopology">24.1</a>, \(\Theta_q C_q\) has the
-      multiplier \(\hat{\Theta}_q (k) (q + \lambda_N (k))^{- 1}\), of size at
-      most \(Cv_1 (\Theta_q) q^{- 1 / 2} \leqslant CR \gamma^2 q^{- 1}
-      \leqslant
-\frac{1}{2}\). From \(H^N = C_q - C_q D^2 \bar{\Gamma}^N
-      H^N\),
+      \lambda y^2 + \mu_q + \Theta_q + D^2 \tilde{h}_q (y)\). By Lemma <a
+      href="cqft_lecture_5.html#lem:resolvent">12.1</a>, \(\|H^N \|_{2 \to 2} \leqslant C / q\). So \(H^N
+      (\lambda y^2 + \mu_q + D^2 \tilde{h}_q)\) has norm at most \(C (\lambda
+      L^2 / q + g_q)\), by <a href="cqft_lecture_5.html#eq:coeff">(11.10)</a> and <a href="cqft_lecture_5.html#eq:global-h">(12.2)</a>. The
+      kernel \(\Theta_q\) is not bounded on \(L^2\) uniformly in \(N\), and we
+      argue by the other resolvent identity. By Lemma <a href="#c-qtopology">24.1</a>,
+      \(\Theta_q C_q\) has the multiplier \(\hat{\Theta}_q (k) (q + \lambda_N
+      (k))^{- 1}\), of size at most \(Cv_1 (\Theta_q) q^{- 1 / 2} \leqslant CR
+      \lambda^2 q^{- 1} \leqslant
+\frac{1}{2}\). From \(H^N = C_q - C_q D^2
+      \bar{\Gamma}^N H^N\),
     </p>
     <center>
       \(\displaystyle (I + \Theta_q C_q) \Theta_q H^N = \Theta_q C_q (I -
-      (\gamma y^2 + \mu_q + D^2
+      (\lambda y^2 + \mu_q + D^2
 \tilde{h}_q) H^N),\)
     </center>
     <p>
-      so that \(\| \Theta_q H^N \|_{2 \to 2} \leqslant C \gamma^2 q^{- 1} (1 +
-      \gamma L^2 / q)\), and \(H^N \Theta_q\) is its adjoint. This proves (<a
-      href="#c-resid">31.3</a>). Next
+      so that \(\| \Theta_q H^N \|_{2 \to 2} \leqslant C \lambda^2 q^{- 1} (1
+      + \lambda L^2 /
+q)\), and \(H^N \Theta_q\) is its adjoint. This proves
+      (<a href="#c-resid">31.3</a>). Next
     </p>
     <center>
       \(\displaystyle \|C^N_q F^N_{> m} \|_{\text{HS}}^2 = \sum_{k \in
@@ -4030,7 +4036,7 @@ F_{\leqslant m})\|_{\text{HS}}
       <tr>
         <td width="100%" align="center"><a id="d-eq:linear"></a>\(\displaystyle K_{q_0} V_q = f_q, \qquad
         f_q = (q - q_0)  (\zeta_q - \varrho_q (Y_q) + Z_q) -
-\frac{\gamma}{3}
+\frac{\lambda}{3}
         Y_q^3 . \)</td>
         <td align="right">(32.1)</td>
       </tr>
@@ -4248,7 +4254,7 @@ Y\|_2\), so
         style="font-style: normal"><strong>(Construction of \(\Phi^4_3\)) </strong></class><a id="d-thm:limit"></a>Let
         \(\lambda, q_0 > 0\), \(r \in \mathbb{R}\), with the counterterm of
         Theorem <a href="cqft_lecture_5.html#thm:counter">11.2</a> (or \(q_{\ast}\) large and \(b_N \to b\),
-        \(|b_N | \leqslant B \gamma q_{\ast}^{1 / 2}\)). Along a subsequence
+        \(|b_N | \leqslant B \lambda q_{\ast}^{1 / 2}\)). Along a subsequence
         of lattices (the whole sequence, by Theorem <a href="cqft_lecture_6.html#thm:limit">18.6</a>):</i>
       </p>
       <div style="margin-bottom: 1em">
@@ -4304,7 +4310,7 @@ Y\|_2\), so
                 the limiting thresholded energies \(E_{\infty}, J_{\infty}\)
                 satisfy the bounds of Theorem <a href="cqft_lecture_6.html#thm:uv">16.2</a>. Indeed, the
                 lattice identities \(V_q = C_q \left[ (q - q_0) \psi_q -
-                \frac{\gamma}{3} Y_q^3 \right]\) and \(\zeta_q = X_q + C_q
+                \frac{\lambda}{3} Y_q^3 \right]\) and \(\zeta_q = X_q + C_q
                 \int_{q_0}^q (\psi_s - X_s) \hspace{0.17em} \mathrm{d} s -
 (q
                 - q_0) C_q \psi_q\) need neither \(\varrho\) nor \(W\), so
@@ -4517,27 +4523,27 @@ s = \int F_q (y (x)) \hspace{0.17em}
     </center>
     <p>
       \(F_q\) is even and \(C^4\), vanishes on \(|u| \leqslant \frac{15}{16}
-      r_q\), and the \(s\) integral runs up to \(s_u = \frac{256}{225} \gamma
+      r_q\), and the \(s\) integral runs up to \(s_u = \frac{256}{225} \lambda
       u^2\). Let \(v = |u| / r_q - \frac{15}{16}\). Then for \(v > 0\), with
       constants independent of \(A\) and \(q\),
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="d-eq:F"></a>\(\displaystyle |F_q'' (u) | \leqslant
-        CAg_q (q + \gamma u^2) 1_{v > 0}, \quad |F_q'' (u) |
+        CAg_q (q + \lambda u^2) 1_{v > 0}, \quad |F_q'' (u) |
 \leqslant CAq^{1
-        / 2} \gamma \min (v_+^3, 1) \frac{|u|}{r_q} \quad \text{for
+        / 2} \lambda \min (v_+^3, 1) \frac{|u|}{r_q} \quad \text{for
 all } u,
         \)</td>
         <td align="right">(32.7)</td>
       </tr>
     </table>
     <p>
-      the second from differentiating \(u^2 \int_q^{s_u} \gamma s^{- 1 / 2}
+      the second from differentiating \(u^2 \int_q^{s_u} \lambda s^{- 1 / 2}
       \chi^2 (|u| / r_s) \hspace{0.17em}
 \mathrm{d} s\) twice in \(u\): near
       the threshold the integral is of order \(u^2 g_q qv^5\), and for \(|u|
-      \gg r_q\) it is of order \(A \gamma^{3 / 2} |u|^3\).
+      \gg r_q\) it is of order \(A \lambda^{3 / 2} |u|^3\).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
@@ -4545,21 +4551,21 @@ all } u,
         style="font-style: normal"><strong>(Global bounds for the comparison actions)
         </strong></class><a id="d-lem:pm"></a>For \(A\) fixed and \(q \geqslant q_A\),
         \(\Gamma^{\pm}\) satisfy the conclusions of Lemma 12.1, \(H^{\pm} (0)
-        = H_q (0)\), and \(\|b^{\pm} (y)\|_2 \leqslant C_A \gamma q^{- 3 / 2}
+        = H_q (0)\), and \(\|b^{\pm} (y)\|_2 \leqslant C_A \lambda q^{- 3 / 2}
         \|y\|_2\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>\(F'' \leqslant CAg_q \gamma y^2\) on its
-      support, as \(q \leqslant C \gamma y^2\) there. So \(\gamma y^2 \pm F''
-      (y) \geqslant 0\) for \(Ag_q\) small, and the proof of Lemma 12.1
-      applies with this potential: killing gives \(0 \leqslant (K_q + \gamma
-      y^2 \pm F'')^{- 1} \leqslant C_q\) entrywise, and the Neumann series
-      handles \(M + D^2 \tilde{h}\). For the drift, the new terms in
+      <strong class="enunciation-name">Proof. </strong>\(F'' \leqslant CAg_q \lambda y^2\) on
+      its support, as \(q \leqslant C \lambda y^2\) there. So \(\lambda y^2
+      \pm F'' (y) \geqslant 0\) for \(Ag_q\) small, and the proof of Lemma
+      12.1 applies with this potential: killing gives \(0 \leqslant (K_q +
+      \lambda y^2 \pm F'')^{- 1} \leqslant C_q\) entrywise, and the Neumann
+      series handles \(M + D^2 \tilde{h}\). For the drift, the new terms in
       \(De^{\pm}\) are \(\mp AD\mathfrak{g}_q\) with \(|D\mathfrak{g}_q |
       \leqslant Cg_q |y|\), and \(\pm \frac{1}{2} F''' (y) \text{diag}
       (H^{\pm})^2\) together with the change of \(H\) in the terms of \(De\).
-      Since \(|F''' (u) | \leqslant CA \gamma^{3 / 2} 1_{v > 0}\) and
+      Since \(|F''' (u) | \leqslant CA \lambda^{3 / 2} 1_{v > 0}\) and
       \(\text{diag} (H^{\pm})^2 \leqslant Ca_2\), the former is at most
       \(CAg_q^2 |y|\). Multiplication by \(H^{\pm}\) costs \(C / q\), and the
       global linear bound for \(b\) gives the rest.<span style="margin-left: 1em"></span>\(\Box\)
@@ -4583,20 +4589,20 @@ all } u,
       \(y^2 \chi\), through \(\mathcal{D}_2 = H^2 {- H^{\text{o}}}^2 = - H^2
       \textsf{D} H^{\text{o}} - H
 \textsf{D} {H^{\text{o}}}^2\) with
-      \(\textsf{D} = \gamma M_{y^2 - z^2} + \textsf{D}'\), where \(z\) is now
+      \(\textsf{D} = \lambda M_{y^2 - z^2} + \textsf{D}'\), where \(z\) is now
       the clipped field and \(\textsf{D}'\) the nonlocal insertions. The
       latter cost \(Cgq \| \chi \|_2\), and \(r \chi \leqslant |t|\). For the
       local insertion, put \(e_0 = (y^2 - z^2) / |y| \leqslant C |t|\) and \(Q
-      = \gamma^{1 / 2} M_{|y|} H\). By Lemma <a href="#a-lem-resolvent">21.1</a>, \(\|Q\|_{2 \to
-      2} \leqslant Cq^{- 1 / 2}\) and \(\text{diag} H^2, \text{diag}
+      = \lambda^{1 / 2} M_{|y|} H\). By Lemma <a href="#a-lem-resolvent">21.1</a>, \(\|Q\|_{2
+      \to 2} \leqslant Cq^{- 1 / 2}\) and \(\text{diag} H^2, \text{diag}
       {H^{\text{o}}}^2 \leqslant Ca_2\). Let \(T\) be a symmetric \(3\)-tensor
-      and \(\varphi \in L^2\). Then \(X = H^2 \gamma M_{y^2 - z^2}
-      H^{\text{o}}\) reads \(\gamma^{1 / 2} (HQ^{\ast}) M_{e_0}
+      and \(\varphi \in L^2\). Then \(X = H^2 \lambda M_{y^2 - z^2}
+      H^{\text{o}}\) reads \(\lambda^{1 / 2} (HQ^{\ast}) M_{e_0}
       H^{\text{o}}\), and Cauchy&ndash;Schwarz in all variables gives
     </p>
     <center>
       \(\displaystyle \left| \int \varphi (x) T (x, u, v) X (u, v) \right|
-      \leqslant \gamma^{1 / 2}
+      \leqslant \lambda^{1 / 2}
 (\int \varphi (x)^2 |T| (HQ^{\ast}) (u,
       a)^2)^{1 / 2} (\int |T|e_0 (a)^2
 H^{\text{o}} (a, v)^2)^{1 / 2} .\)
@@ -4606,14 +4612,14 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
       first factor is at most \((Ca_2 s (T) / q)^{1 / 2} \| \varphi \|_2\);
       integrating \(x, u\) and then \(v\), the second is at most \((Ca_2 s
       (T))^{1 / 2} \|e_0 \|_2\). So \(\| \text{Ctr}_X T\|_2 \leqslant Cr^{- 1}
-      a_2 s (T) \|t\|_2\). For \(X = H \gamma M_{y^2 - z^2} {H^{\text{o}}}^2\)
-      write it as \(\gamma^{1 / 2} (Q^{\ast} M_{e_0} H^{\text{o}})
-      H^{\text{o}}\) and put \(\varphi^2\) on the factor with the outer
-      \(H^{\text{o}}\): the same bound results. With \(s (f_3) \leqslant Cgq /
-      r\) this is row six, \(Cg^2 \|t\|_2\). With the local tensor, \(s (T) =
-      1\), it gives \(\| \text{diag} \mathcal{D}_2 \|_2 \leqslant Cr^{- 1} a_2
-      \|t\|_2\), hence row four, \(C \gamma ra_2 r^{- 1} \|t\|_2 \leqslant Cg
-      \|t\|_2\).<span style="margin-left: 1em"></span>\(\Box\)
+      a_2 s (T) \|t\|_2\). For \(X = H \lambda M_{y^2 - z^2}
+      {H^{\text{o}}}^2\) write it as \(\lambda^{1 / 2} (Q^{\ast} M_{e_0}
+      H^{\text{o}}) H^{\text{o}}\) and put \(\varphi^2\) on the factor with
+      the outer \(H^{\text{o}}\): the same bound results. With \(s (f_3)
+      \leqslant Cgq / r\) this is row six, \(Cg^2 \|t\|_2\). With the local
+      tensor, \(s (T) = 1\), it gives \(\| \text{diag} \mathcal{D}_2 \|_2
+      \leqslant Cr^{- 1} a_2 \|t\|_2\), hence row four, \(C \lambda ra_2 r^{-
+      1} \|t\|_2 \leqslant Cg \|t\|_2\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -4626,9 +4632,9 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="d-eq:sub"></a>\(\displaystyle e_s^- \geqslant - C
-            \gamma^5 s^{- 3} \| \pi_s y\|_4^4, \quad e_s^+ \leqslant
-            C
-\gamma^5 s^{- 3} \| \pi_s y\|_4^4 . \)</td>
+            \lambda^5 s^{- 3} \| \pi_s y\|_4^4, \quad e_s^+ \leqslant
+C
+            \lambda^5 s^{- 3} \| \pi_s y\|_4^4 . \)</td>
             <td align="right">(32.8)</td>
           </tr>
         </table></i>
@@ -4639,7 +4645,7 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
       \(\bar{\Gamma}\)<strong>.</strong> On \(\|z\|_{\infty} \leqslant r_s\)
       the clip is the identity, so \(e_s (\pi_s y) = e_s^{\text{o}} (\pi_s
       y)\), and by evenness, zero jets and (11.12), \(|e_s^{\text{o}} (\pi_s
-      y) | \leqslant C \gamma^5 s^{- 3} \| \pi_s y\|_4^4\). With \(z_{\theta}
+      y) | \leqslant C \lambda^5 s^{- 3} \| \pi_s y\|_4^4\). With \(z_{\theta}
       = \pi y + \theta (y - \pi y)\),
     </p>
     <center>
@@ -4653,12 +4659,12 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
       (z_{\theta})\|_2 \leqslant \|t_s (y)\|_2\). The first term of \(De\) is
       bounded pointwise by \(\sup |De^{\text{o}} | \leqslant \textsf{S}_4
       (e^{\text{o}}) (2 r_s)^3
-\leqslant C \gamma^{7 / 2} s^{- 3 / 2}\), and
+\leqslant C \lambda^{7 / 2} s^{- 3 / 2}\), and
       \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so it
-      contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2 \leqslant Cg_s
+      contributes at most \(C \lambda^4 s^{- 2} \|t_s \|_2^2 \leqslant Cg_s
       \|t_s \|_2^2\). By Lemma <a href="#d-lem:input">32.9</a> so does the second. Since
       \(\chi = 1\) on \(\mathcal{A}\), \(g_s \|t_s \|_2^2 \leqslant
-      \mathfrak{g}_s (y)\). Thus \(|e_s (y) | \leqslant C \gamma^5 s^{- 3} \|
+      \mathfrak{g}_s (y)\). Thus \(|e_s (y) | \leqslant C \lambda^5 s^{- 3} \|
       \pi_s y\|_4^4 + C_1 \mathfrak{g}_s
 (y)\) with \(C_1\) independent of
       \(A\).
@@ -4674,15 +4680,15 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
       most \(Cg_s / \min (v, 1)\). So for \(v \geqslant C_2 g_s\), this term
       is at most half of the density of \(A\mathfrak{g}_s\). For \(0 < v < C_2
       g_s\), the thin layer, \(a_2 |F'' | \leqslant CAq^{- 1 / 2} q^{1 / 2}
-      \gamma v^3 \leqslant CA \gamma
+      \lambda v^3 \leqslant CA \lambda
 g_s^3\). There \(| \pi_s u| \geqslant
-      \frac{15}{16} r_s\), and \(\gamma^5 s^{- 3} r_s^4 = \gamma^3 s^{- 1}\),
-      while \(A \gamma g_s^3 = A \gamma^4 s^{- 3 / 2} \leqslant \gamma^3 s^{-
-      1}\) for \(s\) large depending on \(A\). Hence \(\frac{1}{2} | \text{Tr}
-      (H^{\pm} - H) | \leqslant \frac{A}{2} \mathfrak{g}_s
-(y) + C \gamma^5
-      s^{- 3} \| \pi_s y\|_4^4\). Taking \(A \geqslant 2 C_1\) gives (<a href="#d-eq:sub">32.8</a>).<span
-      style="margin-left: 1em"></span>\(\Box\)
+      \frac{15}{16} r_s\), and \(\lambda^5 s^{- 3} r_s^4 = \lambda^3 s^{-
+      1}\), while \(A \lambda g_s^3 = A \lambda^4 s^{- 3 / 2} \leqslant
+      \lambda^3 s^{- 1}\) for \(s\) large depending on \(A\). Hence
+      \(\frac{1}{2} | \text{Tr} (H^{\pm} - H) | \leqslant \frac{A}{2}
+      \mathfrak{g}_s
+(y) + C \lambda^5 s^{- 3} \| \pi_s y\|_4^4\). Taking \(A
+      \geqslant 2 C_1\) gives (<a href="#d-eq:sub">32.8</a>).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       <strong>The flows.</strong> Fix \(x\) and \(q\). Let \(\bar{\Phi}\)
@@ -4708,12 +4714,12 @@ H^{\pm} (Y) \hspace{0.17em} \mathrm{d} W\), by the computation of
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="d-eq:exp-riccati"></a>\(\displaystyle \log \bar{\mathbb{E}}
-            \exp (\int_q^{\infty} C_3 \gamma^5 s^{- 3} \| \pi_s Y_s
+            \exp (\int_q^{\infty} C_3 \lambda^5 s^{- 3} \| \pi_s Y_s
 \|_4^4
-            \hspace{0.17em} \mathrm{d} s) \leqslant C \gamma^5 q^{- 2}
+            \hspace{0.17em} \mathrm{d} s) \leqslant C \lambda^5 q^{- 2}
             \|y\|_4^4 +
-C \gamma^4 q^{- 1 / 2} (1 + \gamma q^{- 1} \|y\|_2^2)
-            . \)</td>
+C \lambda^4 q^{- 1 / 2} (1 + \lambda q^{- 1}
+            \|y\|_2^2) . \)</td>
             <td align="right">(32.9)</td>
           </tr>
         </table></i>
@@ -4725,12 +4731,12 @@ C \gamma^4 q^{- 1 / 2} (1 + \gamma q^{- 1} \|y\|_2^2)
       \leqslant 8 \| \pi_s y\|_4^4 + 32 r_s^2 \| \xi \|_2^2\), and the
       exponent is at most a deterministic term plus \(\int \kappa_s w_s
       \hspace{0.17em} \mathrm{d} s\), with \(w = \| \xi \|_2^2\) and
-      \(\kappa_s = C \gamma^4 s^{- 2}\). By Lemma <a href="#d-lem:pm">32.8</a>,
+      \(\kappa_s = C \lambda^4 s^{- 2}\). By Lemma <a href="#d-lem:pm">32.8</a>,
       \(\text{diag} (H^{\pm})^2 \leqslant Cs^{- 1 / 2}\) and \(\|H^{\pm} \|
       \leqslant (1 + \varepsilon_s) / s\):
     </p>
     <center>
-      \(\displaystyle \hspace{0.17em} \mathrm{d} w \leqslant (C \gamma s^{- 3
+      \(\displaystyle \hspace{0.17em} \mathrm{d} w \leqslant (C \lambda s^{- 3
       / 2} (w +\|y\|_2^2) +
 Cs^{- 1 / 2}) \hspace{0.17em} \mathrm{d} s +
       \hspace{0.17em} \mathrm{d} M,
@@ -4739,20 +4745,20 @@ Cs^{- 1 / 2}) \hspace{0.17em} \mathrm{d} s +
 \hspace{0.17em} \mathrm{d} s.\)
     </center>
     <p style="margin-bottom: 1em">
-      Let \(\theta_s = 4 C \gamma^4 / s\). For \(s\) large, \(\theta' + C
-      \gamma s^{- 3 / 2} \theta + \frac{5}{2} s^{- 2} \theta^2 +
+      Let \(\theta_s = 4 C \lambda^4 / s\). For \(s\) large, \(\theta' + C
+      \lambda s^{- 3 / 2} \theta + \frac{5}{2} s^{- 2} \theta^2 +
       \kappa
 \leqslant 0\), because \(\theta' = - 4 \kappa\) dominates. Then
       \(\exp \left( \theta_s w_s + \int_q^s \kappa w - \int_q^s a \right)\),
-      with \(a_s = \theta_s (C \gamma s^{- 3 / 2} \|y\|_2^2 + Cs^{- 1 / 2})\),
-      is a local supermartingale by It&ocirc;'s formula. It starts from \(1\)
-      as \(w_q = 0\), and \(\theta w \geqslant 0\). Fatou gives
+      with \(a_s = \theta_s (C \lambda s^{- 3 / 2} \|y\|_2^2 + Cs^{- 1 /
+      2})\), is a local supermartingale by It&ocirc;'s formula. It starts from
+      \(1\) as \(w_q = 0\), and \(\theta w \geqslant 0\). Fatou gives
       \(\bar{\mathbb{E}} \exp \left( \int_q^{\infty} \kappa w \right)
       \leqslant \exp
 \int_q^{\infty} a\), and \(\int_q^{\infty} a \leqslant C
-      \gamma^5 q^{- 3 / 2} \|y\|_2^2 + C \gamma^4 q^{-
-1 / 2}\). The
-      deterministic term is at most \(C \gamma^5 \int_q^{\infty} s^{- 3}
+      \lambda^5 q^{- 3 / 2} \|y\|_2^2 + C \lambda^4
+q^{- 1 / 2}\). The
+      deterministic term is at most \(C \lambda^5 \int_q^{\infty} s^{- 3}
       \|y\|_4^4 \hspace{0.17em} \mathrm{d} s\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div class="theorem">
@@ -4768,9 +4774,9 @@ Cs^{- 1 / 2}) \hspace{0.17em} \mathrm{d} s +
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="d-eq:comp"></a>\(\displaystyle |V_{q, N} (x) -
-            \bar{V}_{q, N} (x) -\mathcal{C}_N (q) | \leqslant C \gamma^5
+            \bar{V}_{q, N} (x) -\mathcal{C}_N (q) | \leqslant C \lambda^5
 q^{-
-            2} \|y\|_4^4 + C \gamma^4 q^{- 1 / 2} (1 + \gamma q^{- 1}
+            2} \|y\|_4^4 + C \lambda^4 q^{- 1 / 2} (1 + \lambda q^{- 1}
             \|y\|_2^2) . \)</td>
             <td align="right">(32.10)</td>
           </tr>
@@ -4884,13 +4890,13 @@ e^{\pm} (Y_s)
     </p>
     <p>
       <strong>Step 1: the good set.</strong> By (12.5), \(\Phi_q = Y_q +
-      \varrho_q (Y_q) + \frac{\gamma}{3} C_q Y_q^3\), so \(\| \Phi_q
-      \|_{\infty} \leqslant 2 \|Y_q \|_{\infty} + \frac{\gamma}{3 q}
-      \|Y_q
-\|_{\infty}^3\). Proposition <a href="cqft_lecture_6.html#prop:sup">14.4</a>, whose constant
-      involves \(\|C_{q_0} \|_{2 \to \infty}\), finite with \(a_2 (q_0)
-      \leqslant q_0^{- 2} + C\) uniformly in \(N\), with Lemma <a href="cqft_lecture_6.html#lem:noise-sup">14.5</a>
-      and Theorem <a href="cqft_lecture_6.html#thm:uv">16.2</a> gives Lemma <a href="cqft_lecture_6.html#lem:sup">17.1</a>: \(\|Y_q
+      \varrho_q (Y_q) + \frac{\lambda}{3} C_q Y_q^3\), so \(\| \Phi_q
+      \|_{\infty} \leqslant 2 \|Y_q \|_{\infty} + \frac{\lambda}{3 q}
+\|Y_q
+      \|_{\infty}^3\). Proposition <a href="cqft_lecture_6.html#prop:sup">14.4</a>, whose constant involves
+      \(\|C_{q_0} \|_{2 \to \infty}\), finite with \(a_2 (q_0) \leqslant
+      q_0^{- 2} + C\) uniformly in \(N\), with Lemma <a href="cqft_lecture_6.html#lem:noise-sup">14.5</a> and
+      Theorem <a href="cqft_lecture_6.html#thm:uv">16.2</a> gives Lemma <a href="cqft_lecture_6.html#lem:sup">17.1</a>: \(\|Y_q
       \|_{\infty} \leqslant \mathcal{Y}q^{5 / 12} \log^{1 / 6} (2 + q)\) for
       \(q \geqslant q_{\ast}\), with \(\mathcal{Y}\) having moments uniformly
       in \(N\). Therefore \(p_q : = \sup_N \mathbb{P} (\| \Phi^N_q \|_{\infty}
@@ -4899,7 +4905,7 @@ e^{\pm} (Y_s)
     <p>
       <strong>Step 2: the error.</strong> If \(\|x\|_{\infty} \leqslant
       \rho_q\) then \(\|y_q (x)\|_{\infty} \leqslant 3 \rho_q\). Indeed with
-      \(u = y + \varrho_q (y)\), \(K_q (u - x) + \frac{\gamma}{3} y^3 = 0\).
+      \(u = y + \varrho_q (y)\), \(K_q (u - x) + \frac{\lambda}{3} y^3 = 0\).
       At a positive maximum of \(u - x\), \(K_q (u - x) > 0\), so \(y < 0\)
       there, and \(u - x \leqslant \| \varrho_q (y)\|_{\infty} +
       \|x\|_{\infty}\); similarly at a negative minimum. So \(\|u\|_{\infty}
@@ -4945,8 +4951,8 @@ e^{\pm} (Y_s)
       Gaussians. The multiplier \((q - q_0) ((q_0 + \lambda_k) (q +
       \lambda_k))^{- 1} \lesssim (1 + |k|)^{- 4}\) gives, by the Kolmogorov
       criterion, \(\iota_N x_N \to x\) in probability in \(L^{\infty}\). Let
-      \(y = y_q (x)\) and \(w = y - x = - \varrho_q (y) - \frac{\gamma}{3} C_q
-      y^3\). Then
+      \(y = y_q (x)\) and \(w = y - x = - \varrho_q (y) - \frac{\lambda}{3}
+      C_q y^3\). Then
     </p>
     <center>
       \(\displaystyle \bar{V}_q (x) = U (y) + \frac{\mu_q}{2} \|y\|_2^2 +
@@ -4973,7 +4979,7 @@ e^{\pm} (Y_s)
     <p>
       all bounded on the support except the second chaos \(\langle x, \Theta_q
       x \rangle\). Its operator \(T = Q_q^{1 / 2} \Theta_q Q_q^{1 / 2}\) has
-      multiplier at most \(\operatorname{Cmin} (|k|^{- 3}, \gamma^2 q^{- 1 /
+      multiplier at most \(\operatorname{Cmin} (|k|^{- 3}, \lambda^2 q^{- 1 /
       2} q_0^{- 1 / 2})\), so it is Hilbert&ndash;Schmidt, with
       \(\|T\|_{\text{op}} \leqslant \frac{1}{4}\) for \(q\) large. Therefore
       the centred form converges in \(L^2\) by Proposition <a href="#prop:limits">22.1</a>
@@ -4989,7 +4995,7 @@ e^{\pm} (Y_s)
       With this, \(L^2\) compactness of \(w_N\) from the \(H^1\) bound passes
       the coordinate equation to the limit. Its solution is unique among
       bounded fields \(y\) with \(y - x \in H^1\): if \(d\) is the difference
-      of two solutions \(y\), \(y'\), test \(K_q d + \frac{\gamma}{3} (y^3 -
+      of two solutions \(y\), \(y'\), test \(K_q d + \frac{\lambda}{3} (y^3 -
       (y')^3) + M_q d + D \tilde{h}_q (y) - D
 \tilde{h}_q (y') = 0\) with
       \(d\), and use \(\langle d, M_q d \rangle \geqslant - \varepsilon_q
@@ -5001,7 +5007,7 @@ e^{\pm} (Y_s)
 \hspace{0.17em}
       \mathrm{d} t\) converge; so do the cross terms, pairing strong \(x_N\)
       with weak \(\Theta^N w_N\). So \(\chi_q \mathrm{e}^{- \bar{V}_{q, N} +
-      \text{const}_N}\) converges in probability and in \(L^1 (\gamma)\). The
+      \text{const}_N}\) converges in probability and in \(L^1 (\lambda)\). The
       normalisers are bounded below: since \(\bar{V}_q (x) \leqslant
       \bar{\Gamma}_q (x)\) by taking \(y' = x\) in the infimum, the density is
       bounded below on the intersection of a small uniform ball with the event
@@ -5119,9 +5125,9 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
         <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="d-eq:e-bound"></a>\(\displaystyle |e_s (y) | \leqslant
-            C \gamma^5 s^{- 3} \| \pi_s y\|_4^4 + C \gamma^3 s^{- 5 /
-2} \|t_s
-            (y)\|_6^6 . \)</td>
+            C \lambda^5 s^{- 3} \| \pi_s y\|_4^4 + C \lambda^3 s^{- 5
+/ 2}
+            \|t_s (y)\|_6^6 . \)</td>
             <td align="right">(32.14)</td>
           </tr>
         </table></i>
@@ -5129,7 +5135,7 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>On the ball \(e_s = e_s^{\text{o}}\), so
-      \(|e_s (\pi_s y) | \leqslant C \gamma^5 s^{- 3} \| \pi_s y\|_4^4\) by
+      \(|e_s (\pi_s y) | \leqslant C \lambda^5 s^{- 3} \| \pi_s y\|_4^4\) by
       the zero jets and (11.12). With \(z_{\theta} = \pi_s y + \theta (y -
       \pi_s y)\), \(e_s (y) - e_s (\pi_s y) = \int_0^1 \langle De_s
       (z_{\theta}), y - \pi_s y
@@ -5138,11 +5144,11 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
       > r_s\), with norm at most \(\|t_s \|_2\). Write \(De = D \kappa
       De^{\text{o}} \circ \kappa +\mathfrak{D}\). Then \(|De^{\text{o}} |
       \leqslant \textsf{S}_4 (e^{\text{o}}) (2 r_s)^3 \leqslant C
-\gamma^{7 /
+\lambda^{7 /
       2} s^{- 3 / 2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s
-      \|_2\), so the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s
-      \|_2^2\). By (<a href="#a-eq-frakD">21.11</a>), which bounds \(\mathfrak{D}\) before
-      multiplication by \(H\) (the bound stated for \(b^{\text{l}} = -
+      \|_2\), so the first term contributes at most \(C \lambda^4 s^{- 2}
+      \|t_s \|_2^2\). By (<a href="#a-eq-frakD">21.11</a>), which bounds \(\mathfrak{D}\)
+      before multiplication by \(H\) (the bound stated for \(b^{\text{l}} = -
       H\mathfrak{D}\) would not suffice, as \(H^{- 1}\) is unbounded),
       \(\|\mathfrak{D}_s (z)\|_2 \leqslant Cg_s (\|t_s (z)\|_2 + r_s^{- 1}
       \|z^2
@@ -5152,7 +5158,7 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
       \|_4^2 \|t_s \|_2)\). On the support of \(t_s\) we have \(|t_s |
       \geqslant r_s\), so \(\|t_s \|_2 \leqslant r_s^{- 2} \|t_s \|_6^3\) and
       \(\|t_s \|_4^2 \leqslant r_s^{- 1} \|t_s \|_6^3\). All these are at most
-      \(Cg_s r_s^{- 4} \|t_s \|_6^6 = C \gamma^3 s^{- 5 / 2} \|t_s
+      \(Cg_s r_s^{- 4} \|t_s \|_6^6 = C \lambda^3 s^{- 5 / 2} \|t_s
       \|_6^6\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -5173,9 +5179,10 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
         independent of \(N\), with \(\| \mu_{N, q} - \hat{\nu}_{N, q}
         \|_{\text{TV}} \leqslant d_q\). Precisely, with \(p_q = \sup_N
         \mathbb{P} (\| \Phi_q^N \|_{\infty} > \rho_q / 2)\) and \(\sigma_q =
-        \gamma^5 q^{- 2} \rho_q^4 + \gamma^4 q^{- 1 / 2} + \gamma^2 q^{- 1}\),
-        one has \(d_q \leqslant C (p_q + \sigma_q^{1 / 2})\), and \(p_q \to
-        0\) by Step 1 of Theorem <a href="#d-thm:unique">32.13</a>.</i>
+        \lambda^5 q^{- 2} \rho_q^4 + \lambda^4 q^{- 1 / 2} + \lambda^2
+        q^{-
+1}\), one has \(d_q \leqslant C (p_q + \sigma_q^{1 / 2})\), and
+        \(p_q \to 0\) by Step 1 of Theorem <a href="#d-thm:unique">32.13</a>.</i>
       </p>
     </div>
     <p style="margin-top: 1em">
@@ -5242,7 +5249,7 @@ s + \text{const}\), with \(\Delta_T = V_T -
       \(\Phi_T = J_T \Phi_{\infty} + C_T B_{T - q_0}\); under \(\mathbb{R}\)
       by the Ito computation below with \(\int^{\infty} a_2 \hspace{0.17em}
       \mathrm{d} s < \infty\) at fixed \(N\), and \(x = Y + \varrho_T (Y) +
-      \frac{\gamma}{3} C_T Y^3\). So \(\mathbb{E}^{\mathbb{P}} \Delta_T,
+      \frac{\lambda}{3} C_T Y^3\). So \(\mathbb{E}^{\mathbb{P}} \Delta_T,
       \mathbb{E}^{\mathbb{R}} \Delta_T \to 0\). With the bounds below, \(\log
       \hspace{0.17em} \mathrm{d} \mathbb{P}/ \hspace{0.17em}
       \mathrm{d}
@@ -5254,9 +5261,9 @@ s + \text{const}\), with \(\Delta_T = V_T -
       \(2 p_q\). It remains to bound these expectations, by (<a href="#d-eq:e-bound">32.14</a>).
     </p>
     <p>
-      <strong>Under the exact law.</strong> \(\int_q^{\infty} \gamma^3 s^{- 5
-      / 2} \|t_s \|_6^6 \hspace{0.17em} \mathrm{d} s
-\leqslant \gamma^2 q^{-
+      <strong>Under the exact law.</strong> \(\int_q^{\infty} \lambda^3 s^{- 5
+      / 2} \|t_s \|_6^6 \hspace{0.17em} \mathrm{d}
+s \leqslant \lambda^2 q^{-
       1} J_{\infty}\). Further \(\| \pi_s Y_s \|_4^4 \leqslant r_s^2 \|Y_s
       \|_2^2\), and \(\mathbb{E} \|Y_s \|_2^2 \leqslant C (1 + s^{1 / 2})\) by
       It&ocirc;'s formula for \(\|Y_s \|_2^2\) along the forward equation of
@@ -5264,15 +5271,15 @@ s + \text{const}\), with \(\Delta_T = V_T -
       \(Y_{q_{\ast}}\) and \(\mathbb{E} \|Z_u \|_2^2 \leqslant Cu^{- 5 / 2}\)
       of Theorem <a href="cqft_lecture_6.html#thm:uv">16.2</a>, \(\|H\| \leqslant C / u\), the linear
       bound on \(b\) and \(\text{Tr} H^2 \leqslant Cu^{- 1 / 2}\). So
-      \(\gamma^5 \int_q^{\infty} s^{- 3} \mathbb{E} \| \pi_s Y_s
+      \(\lambda^5 \int_q^{\infty} s^{- 3} \mathbb{E} \| \pi_s Y_s
       \|_4^4
-\hspace{0.17em} \mathrm{d} s \leqslant C \gamma^4 q^{- 1 / 2}\).
+\hspace{0.17em} \mathrm{d} s \leqslant C \lambda^4 q^{- 1 / 2}\).
       The conditioning costs at most a factor \(2\).
     </p>
     <p style="margin-bottom: 1em">
       <strong>Under the explicit law.</strong> Here \(Y_q = y\) with
       \(\|y\|_{\infty} \leqslant 3 \rho_q\) by the maximum principle: with \(u
-      = y + \varrho_q (y)\), \(K_q (u - x) + \frac{\gamma}{3} y^3 = 0\), and
+      = y + \varrho_q (y)\), \(K_q (u - x) + \frac{\lambda}{3} y^3 = 0\), and
       at a positive maximum of \(u - x\) we have \(y < 0\), so \(u - x
       \leqslant \| \varrho_q (y)\|_{\infty} + \|x\|_{\infty}\); similarly at a
       negative minimum. Thus \(\|u\|_{\infty} \leqslant 2 \|x\|_{\infty} +
@@ -5280,17 +5287,17 @@ s + \text{const}\), with \(\Delta_T = V_T -
       constant of (12.5), and \(\|y\|_{\infty} \leqslant 3 \|x\|_{\infty}\)
       for \(q\) large. Let \(\xi_s = Y_s - y\), which is a different \(\xi\)
       from the free flow. By the global linear bound of Proposition 12.2,
-      \(\|b (Y)\|_p \leqslant C \gamma s^{- 3 / 2} \|Y\|_p\) for every \(p\)
+      \(\|b (Y)\|_p \leqslant C \lambda s^{- 3 / 2} \|Y\|_p\) for every \(p\)
       (it follows from the exact gradient of \(e\), without the ledger), and
       \(\text{diag} H^2 \leqslant Cs^{- 1 / 2}\), It&ocirc;'s formula gives,
       for \(p = 2\) and \(p = 12\), \(\mathbb{E} \| \xi_s \|_p^p \leqslant C
       (s^{p / 4} + (g_q \rho_q)^p)\). So, as \(\| \pi_s Y\|_4^4 \leqslant 8
       \|y\|_4^4 + 32 r_s^2 \| \xi \|_2^2\), the first term of (<a href="#d-eq:e-bound">32.14</a>)
-      integrates to at most \(C \gamma^5 q^{- 2} \rho_q^4 + C \gamma^4 q^{- 1
-      / 2}\). For large \(q\), \(r_s \geqslant r_q \geqslant 6 \rho_q\), so
+      integrates to at most \(C \lambda^5 q^{- 2} \rho_q^4 + C \lambda^4 q^{-
+      1 / 2}\). For large \(q\), \(r_s \geqslant r_q \geqslant 6 \rho_q\), so
       where \(|Y| > r_s\) we have \(| \xi | > r_s / 2\) and \(|Y| \leqslant 2
       | \xi |\). Thus \(\|t_s \|_6^6 \leqslant Cr_s^{- 6} \| \xi_s
-      \|_{12}^{12}\), and the second term integrates to at most \(C \gamma^6
+      \|_{12}^{12}\), and the second term integrates to at most \(C \lambda^6
       q^{- 3 / 2}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>

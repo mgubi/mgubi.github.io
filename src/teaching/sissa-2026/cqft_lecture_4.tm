@@ -376,12 +376,10 @@
   below. Our main example is
 
   <\equation>
-    <label|eq:phi4-VT>V<rsub|T><around|(|\<varphi\>|)>=<big|int><rsub|\<bbb-T\><rsup|d><rsub|L>><around*|[|\<lambda\>*H<rsub|4>*<around|(|\<varphi\><around|(|x|)>;c<rsub|T>|)>+\<gamma\><rsub|T>*<space|0.17em>H<rsub|2>*<around|(|\<varphi\><around|(|x|)>;c<rsub|T>|)>|]>\<mathd\>x,
+    <label|eq:phi4-VT>V<rsub|T><around|(|\<varphi\>|)>=<big|int><rsub|\<bbb-T\><rsup|d><rsub|L>><around*|[|<frac|\<lambda\>|12>*H<rsub|4>*<around|(|\<varphi\><around|(|x|)>;c<rsub|T>|)>+\<gamma\><rsub|T>*<space|0.17em>H<rsub|2>*<around|(|\<varphi\><around|(|x|)>;c<rsub|T>|)>|]>\<mathd\>x,
   </equation>
 
-  with a mass counterterm <math|\<gamma\><rsub|T>> to be fixed in
-  Appendix<nbsp><reference|sec:pert> (<math|\<gamma\><rsub|T>=0> for
-  <math|d=2>). The interacting measure at cutoff <math|T> is
+  with a mass counterterm <math|\<gamma\><rsub|T>> to be fixed in Appendix<nbsp><reference|sec:pert> (<math|\<gamma\><rsub|T>=0> for <math|d=2>). The coupling is normalised by <math|\<lambda\>/12> so that the curvature of the quartic term is <math|\<lambda\>*\<varphi\><rsup|2>>, as in Lectures<nbsp>5\U6. The interacting measure at cutoff <math|T> is
 
   <\equation>
     <label|eq:nuT>\<nu\><rsub|T><around|(|\<mathd\>\<varphi\>|)>=Z<rsub|T><rsup|-1>\<mathe\><rsup|-V<rsub|T><around|(|\<varphi\>|)>>\<mu\><rsup|Q<rsub|T>><around|(|\<mathd\>\<varphi\>|)>.
@@ -554,7 +552,7 @@
   <math|F<rsub|t>=\<bbb-E\><rsub|t>*<around|[|-\<mathD\>V<rsub|T><around|(|\<Phi\><rsub|T>|)>|]>>
   for the <math|\<Phi\><rsup|4>> interaction, determined backward from the
   terminal interaction. It is shown to first order in <math|\<lambda\>>,
-  where it is the Wick cube <math|-4*\<lambda\>*H<rsub|3>*<around|(|\<Phi\><rsub|t>;c<rsub|t>|)>>,
+  where it is the Wick cube <math|-<frac|\<lambda\>|3>*H<rsub|3>*<around|(|\<Phi\><rsub|t>;c<rsub|t>|)>>,
   and each panel is in its own units.>
 
   <subsection|Optimal control: the Polchinski equation><label|sec:control>
@@ -681,9 +679,9 @@
   <math|f> in a rich class, give tightness, moment bounds and the
   identification of limits. For <math|\<Phi\><rsup|4><rsub|3>> the naive
   problem does not have uniform bounds: the leading-order optimal drift
-  <math|u<rsub|s>\<approx\>-4*\<lambda\>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>>:
+  <math|u<rsub|s>\<approx\>-<frac|\<lambda\>|3>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>>:
   has a divergent cost. One renormalises by the change of variables
-  <math|u=-4*\<lambda\>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>. After it,
+  <math|u=-<frac|\<lambda\>|3>*<wide|Q|\<dot\>><rsup|1/2>:X<rsup|3>:+r>. After it,
   and after further paracontrolled changes of variables, the singular terms
   are explicit polynomials in the Wick powers of <math|X>, cancelled by
   <em|the counterterms>, and the residual functional is coercive. Its control
@@ -1265,11 +1263,11 @@
   </exercise>
 
   <\exercise>
-    <dueto|Cost of the leading drift>For <math|V<rsub|T>=\<lambda\>*<big|int>:\<varphi\><rsup|4>:<rsub|T>>
+    <dueto|Cost of the leading drift>For <math|V<rsub|T>=<frac|\<lambda\>|12>*<big|int>:\<varphi\><rsup|4>:<rsub|T>>
     on <math|\<bbb-T\><rsup|3><rsub|L>>, show that
 
     <\equation*>
-      <frac|1|2>*\<bbb-E\>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|4*\<lambda\>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>:|\<\|\|\>><rsup|2>\<mathd\>s=12*\<lambda\><rsup|2>*L<rsup|3>*<big|int>Q<rsub|T><around|(|z|)><rsup|4><space|0.17em>\<mathd\>z,
+      <frac|1|2>*\<bbb-E\>*<big|int><rsub|0><rsup|T><around|\<\|\|\>|<frac|\<lambda\>|3>*<wide|Q|\<dot\>><rsub|s><rsup|1/2>:X<rsub|s><rsup|3>:|\<\|\|\>><rsup|2>\<mathd\>s=<frac|\<lambda\><rsup|2>|12>*L<rsup|3>*<big|int>Q<rsub|T><around|(|z|)><rsup|4><space|0.17em>\<mathd\>z,
     </equation*>
 
     which diverges linearly in <math|T>. Relate this to the <math|k=4> term
@@ -1741,7 +1739,7 @@
     <item>For <math|\<Phi\><rsup|4><rsub|3>> convexity is already lost
     through the Wick ordering: <math|H<rsub|4>*<around|(|\<varphi\>;c<rsub|T>|)>=\<varphi\><rsup|4>-6*c<rsub|T>*\<varphi\><rsup|2>+3*c<rsub|T><rsup|2>>,
     so<nbsp><eqref|eq:phi4-VT> has curvature
-    <math|-12*\<lambda\>*c<rsub|T>+2*\<gamma\><rsub|T>> at
+    <math|-\<lambda\>*c<rsub|T>+2*\<gamma\><rsub|T>> at
     <math|\<varphi\>=0>, which diverges as <math|T\<to\>\<infty\>> (this
     happens already for <math|\<Phi\><rsup|4><rsub|2>>). The upper bound is
     lost, and at low resolution the conditional law may spread over several
@@ -2548,7 +2546,7 @@
   the Wick ordering from the cutoff to the resolution:
 
   <\equation*>
-    K*\<psi\><rsub|t>+4*\<lambda\>*H<rsub|3>*<around|(|\<psi\><rsub|t>;c<rsub|t>|)>+<around|(|<text|mass
+    K*\<psi\><rsub|t>+<frac|\<lambda\>|3>*H<rsub|3>*<around|(|\<psi\><rsub|t>;c<rsub|t>|)>+<around|(|<text|mass
     counterterm and higher orders>|)>=\<eta\><rsub|t>.
   </equation*>
 
@@ -2556,7 +2554,7 @@
   <math|\<psi\><rsub|t>> gives
 
   <\equation*>
-    <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+4*\<lambda\>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>,
+    <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+<frac|\<lambda\>|3>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<eta\><rsub|t>|\<rangle\>>+\<ldots\>,
   </equation*>
 
   where <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>
@@ -2626,10 +2624,10 @@
   <\remark>
     <dueto|Closed versus local>At finite <math|T> the force is a closed
     observable, <math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|F<rsub|T>|]>>. For
-    <math|\<Phi\><rsup|4>>, <math|F<rsub|T><around|(|x|)>=-4*\<lambda\>*H<rsub|3>*<around|(|\<Phi\><rsub|T><around|(|x|)>;c<rsub|T>|)>-2*\<gamma\><rsub|T>*H<rsub|1>*<around|(|\<Phi\><rsub|T><around|(|x|)>;c<rsub|T>|)>>
+    <math|\<Phi\><rsup|4>>, <math|F<rsub|T><around|(|x|)>=-<frac|\<lambda\>|3>*H<rsub|3>*<around|(|\<Phi\><rsub|T><around|(|x|)>;c<rsub|T>|)>-2*\<gamma\><rsub|T>*H<rsub|1>*<around|(|\<Phi\><rsub|T><around|(|x|)>;c<rsub|T>|)>>
     is local. As <math|T\<to\>\<infty\>> one expects the force to converge as
     an observable. In <math|d=2> the limit is closed,
-    <math|F<rsub|\<infty\>>=-4*\<lambda\>:\<Phi\><rsub|\<infty\>><rsup|3>>:.
+    <math|F<rsub|\<infty\>>=-<frac|\<lambda\>|3>:\<Phi\><rsub|\<infty\>><rsup|3>>:.
     In <math|d=3> it is expected not to be. If it were,
     <math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|F<rsub|\<infty\>>|]>> with
     <math|F<rsub|\<infty\>>\<in\>L<rsup|1>>, the DS equation of
@@ -3151,7 +3149,7 @@
   Wick ordering>: since <math|Q<rsub|T,t>*<around|(|x,x|)>=c<rsub|T>-c<rsub|t>>,
 
   <\equation>
-    <label|eq:first-order>V<rsub|t><around|(|\<phi\>|)>=<big|int><around*|[|\<lambda\>*H<rsub|4>*<around|(|\<phi\><around|(|x|)>;c<rsub|t>|)>+\<gamma\><rsub|T>*H<rsub|2>*<around|(|\<phi\><around|(|x|)>;c<rsub|t>|)>|]>\<mathd\>x+O<around|(|\<lambda\><rsup|2>|)>.
+    <label|eq:first-order>V<rsub|t><around|(|\<phi\>|)>=<big|int><around*|[|<frac|\<lambda\>|12>*H<rsub|4>*<around|(|\<phi\><around|(|x|)>;c<rsub|t>|)>+\<gamma\><rsub|T>*H<rsub|2>*<around|(|\<phi\><around|(|x|)>;c<rsub|t>|)>|]>\<mathd\>x+O<around|(|\<lambda\><rsup|2>|)>.
   </equation>
 
   Here <math|\<gamma\><rsub|T>=O<around|(|\<lambda\><rsup|2>|)>> is kept for
@@ -3168,7 +3166,7 @@
     Then
 
     <\equation>
-      <label|eq:second-order>V<rsub|t><around|(|\<phi\>|)>=<big|int><around*|[|\<lambda\>:\<phi\><rsup|4>:<rsub|t>+\<gamma\><rsub|T>:\<phi\><rsup|2>:<rsub|t>|]>-<frac|\<lambda\><rsup|2>|2>*<big|sum><rsub|k=1><rsup|4><binom|4|k><rsup|2>k!<big|iint>S*<around|(|x,y|)><rsup|k><space|0.17em>:\<phi\><rsup|4-k>:<rsub|t><around|(|x|)><space|0.17em>:\<phi\><rsup|4-k>:<rsub|t><around|(|y|)><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>y,
+      <label|eq:second-order>V<rsub|t><around|(|\<phi\>|)>=<big|int><around*|[|<frac|\<lambda\>|12>:\<phi\><rsup|4>:<rsub|t>+\<gamma\><rsub|T>:\<phi\><rsup|2>:<rsub|t>|]>-<frac|\<lambda\><rsup|2>|288>*<big|sum><rsub|k=1><rsup|4><binom|4|k><rsup|2>k!<big|iint>S*<around|(|x,y|)><rsup|k><space|0.17em>:\<phi\><rsup|4-k>:<rsub|t><around|(|x|)><space|0.17em>:\<phi\><rsup|4-k>:<rsub|t><around|(|y|)><space|0.17em>\<mathd\>x<space|0.17em>\<mathd\>y,
     </equation>
 
     up to <math|O<around|(|\<lambda\><rsup|3>|)>>.
@@ -3321,7 +3319,7 @@
     up to a field-independent constant the divergent part is local:
 
     <\equation*>
-      -48*\<lambda\><rsup|2><around*|(|<big|int>S<rsup|3>|)>*<big|int>:\<phi\><rsup|2>:<rsub|t>+<text|
+      -<frac|\<lambda\><rsup|2>|3><around*|(|<big|int>S<rsup|3>|)>*<big|int>:\<phi\><rsup|2>:<rsub|t>+<text|
       (finite)>,
     </equation*>
 
@@ -3329,15 +3327,14 @@
     is cancelled by
 
     <\equation>
-      <label|eq:gammaT>\<gamma\><rsub|T>\<assign\>48*\<lambda\><rsup|2>*<big|int><rsub|\<bbb-T\><rsup|3><rsub|L>>Q<rsub|T><around|(|z|)><rsup|3><space|0.17em>\<mathd\>z=<frac|3*\<lambda\><rsup|2>|\<pi\><rsup|2>>*log
-      T+O<around|(|1|)>,
+      <label|eq:gammaT>\<gamma\><rsub|T>\<assign\><frac|\<lambda\><rsup|2>|3>*<big|int><rsub|\<bbb-T\><rsup|3><rsub|L>>Q<rsub|T><around|(|z|)><rsup|3><space|0.17em>\<mathd\>z=<frac|\<lambda\><rsup|2>|48*\<pi\><rsup|2>>*log T+O<around|(|1|)>,
     </equation>
 
-    since <math|\<gamma\><rsub|T>-48*\<lambda\><rsup|2>*<big|int>S<rsup|3>>
+    since <math|\<gamma\><rsub|T>-<frac|\<lambda\><rsup|2>|3>*<big|int>S<rsup|3>>
     converges (Exercise<nbsp><reference|ex:sunset>).
 
     <item><math|k=4>: a divergent constant
-    <math|-12*\<lambda\><rsup|2>*L<rsup|3>*<big|int>S<rsup|4>\<sim\>T>, the
+    <math|-<frac|\<lambda\><rsup|2>|12>*L<rsup|3>*<big|int>S<rsup|4>\<sim\>T>, the
     vacuum energy. It cancels in <math|\<nu\><rsub|T>> but not in the free
     energy.
   </itemize>
