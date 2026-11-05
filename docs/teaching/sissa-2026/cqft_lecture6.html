@@ -1600,9 +1600,8 @@ p} q^{- 1 / 2}
       <div class="theorem">
         <p style="margin-top: 1em">
           <strong class="enunciation-name">Theorem <class style="font-style: normal">16.2</class>.
-          </strong><i><class style="font-style: normal"><strong>(UV stability [<a href="#bib-FBSDE26">FBSDE26</a>])
-          </strong></class><a id="thm:uv"></a> For \(q_{\ast}\) large enough,
-          depending on \(\gamma\),</i>
+          </strong><i><class style="font-style: normal"><strong>(UV stability) </strong></class><a
+          id="thm:uv"></a> For \(q_{\ast}\) large enough, depending on \(\gamma\),</i>
         </p>
         <i><table width="100%">
           <tr>
@@ -2454,19 +2453,19 @@ s + C_s
       2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so
       the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2\).
       By the term-by-term bounds behind Proposition <a href="cqft_lecture5.html#prop:source">12.2</a> (the
-      four groups of Section 12.3 of Lecture 5, [<a href="#bib-FBSDE26">FBSDE26</a>]), which
-      bound \(\mathfrak{D}\) before multiplication by \(H\) (the bound stated
-      for \(b^{\text{l}} = - H\mathfrak{D}\) would not suffice, as \(H^{- 1}\)
-      is unbounded), \(\|\mathfrak{D}_s (z)\|_2 \leqslant Cg_s (\|t_s (z)\|_2
-      + r_s^{- 1} \|z^2
-\chi_s (z)\|_2)\); since \(|z_{\theta} | \leqslant
-      |y|\) and \(z_{\theta}\) has size above \(r_s\) only on \(\mathcal{A}\),
-      the second term contributes at most \(Cg_s (\|t_s \|_2^2 + r_s^{- 1}
-      \|t_s \|_4^2 \|t_s \|_2)\). On the support of \(t_s\) we have \(|t_s |
-      \geqslant r_s\), so \(\|t_s \|_2 \leqslant r_s^{- 2} \|t_s \|_6^3\) and
-      \(\|t_s \|_4^2 \leqslant r_s^{- 1} \|t_s \|_6^3\). All these are at most
-      \(Cg_s r_s^{- 4} \|t_s \|_6^6 = C \gamma^3 s^{- 5 / 2} \|t_s
-      \|_6^6\).<span style="margin-left: 1em"></span>\(\Box\)
+      four groups of Section 12.3 of Lecture 5, proved in Section <a href="cqft_supplement.html#a-sec-defect">21.3</a>
+      of the Supplement), which bound \(\mathfrak{D}\) before multiplication
+      by \(H\) (the bound stated for \(b^{\text{l}} = - H\mathfrak{D}\) would
+      not suffice, as \(H^{- 1}\) is unbounded), \(\|\mathfrak{D}_s (z)\|_2
+      \leqslant Cg_s (\|t_s (z)\|_2 + r_s^{- 1} \|z^2
+\chi_s (z)\|_2)\); since
+      \(|z_{\theta} | \leqslant |y|\) and \(z_{\theta}\) has size above
+      \(r_s\) only on \(\mathcal{A}\), the second term contributes at most
+      \(Cg_s (\|t_s \|_2^2 + r_s^{- 1} \|t_s \|_4^2 \|t_s \|_2)\). On the
+      support of \(t_s\) we have \(|t_s | \geqslant r_s\), so \(\|t_s \|_2
+      \leqslant r_s^{- 2} \|t_s \|_6^3\) and \(\|t_s \|_4^2 \leqslant r_s^{-
+      1} \|t_s \|_6^3\). All these are at most \(Cg_s r_s^{- 4} \|t_s \|_6^6 =
+      C \gamma^3 s^{- 5 / 2} \|t_s \|_6^6\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       With \(\Delta = V - \bar{V}\) (\(\Delta\) is not the Laplacian in this
@@ -2702,19 +2701,21 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
       (0) = 0\), so \(e_s (y) = \int_0^1 \langle \mathcal{D}_s (ty), y \rangle
       \hspace{0.17em}
 \mathrm{d} t\). By the consistency of the coefficients
-      [<a href="#bib-FBSDE26">FBSDE26</a>], \(\mathcal{D}^N_s (\phi_N)\) converges weakly in
-      \(L^2\) at each \(s\) for smooth bounded \(\phi\), and uniformly in
-      \(N\), \(\|\mathcal{D}^N_s (y) -\mathcal{D}^N_s (z)\|_2 \leqslant C (1
-      +\|z\|_{\infty})
-(\|y - z\|_2 +\|y^2 - z^2 \|_2)\). A three-term
-      approximation extends the weak convergence to uniformly convergent
-      fields, and dominated convergence in \(t\) gives the claim. Moreover
-      \(|e^N_s (y) | \leqslant Cg_s \|y\|_2^2\) by the global linear bound on
-      \(\mathcal{D}\) behind Proposition <a href="cqft_lecture5.html#prop:source">12.2</a> [<a href="#bib-FBSDE26">FBSDE26</a>],
-      which dominates on \([q, T]\). For \(s < q_{\ast}\) the same applies to
-      \(\mathcal{U}\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>, and \(\|y\|_2^2\) is
-      continuous; for \(y_s\) use <a href="cqft_lecture5.html#eq:freeze-y">(12.18)</a> and the convergence of
-      the kernel of \(C_{q_{\ast}}\) in \(L^1\).<span style="margin-left: 1em"></span>\(\Box\)
+      (Theorem <a href="cqft_supplement.html#c-pathcons">28.3</a> of the Supplement), \(\mathcal{D}^N_s
+      (\phi_N)\) converges weakly in \(L^2\) at each \(s\) for smooth bounded
+      \(\phi\), and uniformly in \(N\), \(\|\mathcal{D}^N_s (y)
+      -\mathcal{D}^N_s (z)\|_2 \leqslant C (1 +\|z\|_{\infty})
+(\|y - z\|_2
+      +\|y^2 - z^2 \|_2)\). A three-term approximation extends the weak
+      convergence to uniformly convergent fields, and dominated convergence in
+      \(t\) gives the claim. Moreover \(|e^N_s (y) | \leqslant Cg_s
+      \|y\|_2^2\) by the global linear bound on \(\mathcal{D}\) behind
+      Proposition <a href="cqft_lecture5.html#prop:source">12.2</a> (Lemma <a href="cqft_supplement.html#a-lem-source">21.2</a> of the
+      Supplement), which dominates on \([q, T]\). For \(s < q_{\ast}\) the
+      same applies to \(\mathcal{U}\) in <a href="cqft_lecture5.html#eq:e-low">(12.19)</a>, and
+      \(\|y\|_2^2\) is continuous; for \(y_s\) use <a href="cqft_lecture5.html#eq:freeze-y">(12.18)</a> and
+      the convergence of the kernel of \(C_{q_{\ast}}\) in \(L^1\).<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       By Lemma <a href="#lem:lip">16.3</a>, \(x = \xi + v\) with \(\xi_t = x_q +
@@ -2873,11 +2874,11 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
       <div class="theorem">
         <p style="margin-top: 1em">
           <strong class="enunciation-name">Theorem <class style="font-style: normal">18.6</class>.
-          </strong><i><class style="font-style: normal"><strong>(Construction of \(\Phi^4_3\) [<a
-          href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="thm:limit"></a>Let \(\lambda, q_0 >
-          0\), \(r \in \mathbb{R}\), with the counterterm of Theorem <a href="cqft_lecture5.html#thm:counter">11.2</a>
-          (or \(q_{\ast}\) large and \(b_N \to b\), \(|b_N | \leqslant B
-          \gamma q_{\ast}^{1 / 2}\)). Under \(\mathbb{P}\):</i>
+          </strong><i><class style="font-style: normal"><strong>(Construction of \(\Phi^4_3\))
+          </strong></class><a id="thm:limit"></a>Let \(\lambda, q_0 > 0\), \(r \in
+          \mathbb{R}\), with the counterterm of Theorem <a href="cqft_lecture5.html#thm:counter">11.2</a> (or
+          \(q_{\ast}\) large and \(b_N \to b\), \(|b_N | \leqslant B \gamma
+          q_{\ast}^{1 / 2}\)). Under \(\mathbb{P}\):</i>
         </p>
         <div style="margin-bottom: 1em">
           <i><div class="enum-alpha">
@@ -3140,11 +3141,11 @@ W^{\mathbb{R}} - Z
       to \(\frac{3}{2}\). A limiting FBSDE obtained by compactness could in
       this way have an extra martingale, orthogonal to the driving noise. A
       compactness proof must exclude this by strong compactness of
-      \(\text{Cov}^N\), for which [<a href="#bib-FBSDE26">FBSDE26</a>] uses the Riccati
-      equation of the posterior covariance (Exercise <a href="#ex:riccati">18.3</a>). Here
-      the density does it: the filtration is Brownian under the reference.
-      What remains open is whether \(\mathcal{F}\) is generated by \(W\)
-      (Section <a href="#sec:open">18.7</a>).
+      \(\text{Cov}^N\), for which the compactness route of Section <a href="cqft_supplement.html#d-sec:noise">32.2</a>
+      of the Supplement uses the Riccati equation of the conditional
+      covariance (Exercise <a href="#ex:riccati">18.3</a>). Here the density does it: the
+      filtration is Brownian under the reference. What remains open is whether
+      \(\mathcal{F}\) is generated by \(W\) (Section <a href="#sec:open">18.7</a>).
     </p>
     <h3 id="auto-36">18.5<span style="margin-left: 1em"></span>The renormalised field equation<span
     style="margin-left: 1em"></span></h3>
@@ -3667,7 +3668,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
           the &ldquo;noise from infinity&rdquo; (together with local
           compactness of the blocks of the derivative of the force) is the
           main additional step needed to retain the full FBSDE without an
-          orthogonal martingale [<a href="#bib-FBSDE26">FBSDE26</a>].
+          orthogonal martingale.
         </p>
       </li>
     </ul>
@@ -3835,17 +3836,6 @@ s\). Deduce
           <p>
             <a id="bib-BG20"></a>N. Barashkov, M. Gubinelli. A variational method for
             \(\Phi^4_3\). <em>Duke Math. J.</em> 169 (2020), 3339&ndash;3415.
-          </p>
-        </dd>
-      </p>
-      <p>
-        <dt>
-          <strong>[FBSDE26]  </strong>
-        </dt>
-        <dd>
-          <p>
-            <a id="bib-FBSDE26"></a>M. Gubinelli. The massive \(\Phi^4_3\) field through
-            forward&ndash;backward equations. Course notes, October 2026.
           </p>
         </dd>
       </p>

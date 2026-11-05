@@ -3774,7 +3774,7 @@
   supremum bound of Lemma<nbsp><hlink|17.1|cqft_lecture6.tm#lem:sup> upgrades
   <math|L<rsup|2>> compactness to every <math|L<rsup|p>>.
 
-  <subsection|The limit by compactness: the noise>
+  <subsection|The limit by compactness: the noise><label|d-sec:noise>
 
   The delicate point is the backward martingale. Fields converging in law do
   not imply that the stochastic integrals converge to stochastic integrals of
@@ -3857,8 +3857,7 @@
   and of the covariations with <math|W>, and then:
 
   <\proposition>
-    <dueto|Identification of the martingales
-    <cite|FBSDE26>><label|d-prop:martingales>Along a subsequence, on a common
+    <dueto|Identification of the martingales><label|d-prop:martingales>Along a subsequence, on a common
     filtered probability space, the limit of the forecast satisfies
     <math|\<psi\><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q><math-up|Cov><rsub|s><space|0.17em>\<mathd\>
     W<rsub|s>> with <math|W> a cylindrical Brownian motion for the joint
@@ -3890,8 +3889,7 @@
   <subsection|The limit by compactness: the result>
 
   <\theorem>
-    <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>
-    <cite|FBSDE26>><label|d-thm:limit>Let
+    <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>><label|d-thm:limit>Let
     <math|\<lambda\>,q<rsub|0>\<gtr\>0>, <math|r\<in\>\<bbb-R\>>, with the
     counterterm of Theorem<nbsp><hlink|11.2|cqft_lecture5.tm#thm:counter> (or
     <math|q<rsub|\<ast\>>> large and <math|b<rsub|N>\<to\> b>,
@@ -3949,8 +3947,7 @@
     </enumerate-alpha>
   </theorem>
 
-  <strong|Below the auxiliary scale.> Above <math|q<rsub|\<ast\>>> the proof
-  is as in <cite|FBSDE26>, with the moments of <math|Y<rsub|q<rsub|\<ast\>>>>
+  <strong|Below the auxiliary scale.> Above <math|q<rsub|\<ast\>>> the proof is that of Section<nbsp><reference|d-sec:noise>, Propositions<nbsp><reference|d-prop:forward-compact> and<nbsp><reference|d-prop:martingales>, with the moments of <math|Y<rsub|q<rsub|\<ast\>>>>
   from Section<nbsp><hlink|17|cqft_lecture6.tm#sec:compactness>, and spatial
   compactness at <math|q<rsub|\<ast\>>> by one-sided averaging on
   <math|<around|[|q<rsub|\<ast\>>,q<rsub|\<ast\>>+\<delta\>|]>>. The
@@ -4902,11 +4899,7 @@
 
   <section*|References>
 
-  <\bib-list|FBSDE26>
-    <bibitem*|FBSDE26><label|bib-FBSDE26>M.<nbsp>Gubinelli. The massive
-    <math|\<Phi\><rsup|4><rsub|3>> field through forward\Ubackward equations.
-    Course notes, October 2026.
-
+  <\bib-list|GM24>
     <bibitem*|GM24><label|bib-GM24>M.<nbsp>Gubinelli, S.-J.<nbsp>Meyer. The
     FBSDE approach to sine\UGordon up to <math|6\<pi\>>. Preprint,
     arXiv:2401.13648, 2024.
@@ -5012,7 +5005,6 @@
     <associate|auto-7|<tuple|20.4|9>>
     <associate|auto-8|<tuple|21|12>>
     <associate|auto-9|<tuple|21.1|12>>
-    <associate|bib-FBSDE26|<tuple|FBSDE26|44>>
     <associate|bib-GM24|<tuple|GM24|44>>
     <associate|c-L2continuity|<tuple|30.2|29>>
     <associate|c-Upsilon|<tuple|30.3|30>>
@@ -5118,11 +5110,6 @@
 <\auxiliary>
   <\collection>
     <\associate|bib>
-      FBSDE26
-
-      FBSDE26
-
-      FBSDE26
 
       GM24
 

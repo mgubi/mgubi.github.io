@@ -4089,8 +4089,8 @@ Y\|_2\), so
       supremum bound of Lemma <a href="cqft_lecture6.html#lem:sup">17.1</a> upgrades \(L^2\) compactness
       to every \(L^p\).
     </p>
-    <h3 id="auto-24">32.2<span style="margin-left: 1em"></span>The limit by compactness: the noise<span
-    style="margin-left: 1em"></span></h3>
+    <h3 id="auto-24"><a id="d-sec:noise"></a>32.2<span style="margin-left: 1em"></span>The limit by compactness: the
+    noise<span style="margin-left: 1em"></span></h3>
     <p>
       The delicate point is the backward martingale. Fields converging in law
       do not imply that the stochastic integrals converge to stochastic
@@ -4192,14 +4192,14 @@ Y\|_2\), so
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">32.4</class>.
-        </strong><i><class style="font-style: normal"><strong>(Identification of the martingales
-        [<a href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="d-prop:martingales"></a>Along a
-        subsequence, on a common filtered probability space, the limit of the
-        forecast satisfies \(\psi_q = \int_{q_0}^q \text{Cov}_s
-        \hspace{0.17em} \mathrm{d} W_s\) with \(W\) a cylindrical Brownian
-        motion for the joint filtration, \(X_q = \int_{q_0}^q C_s
-        \hspace{0.17em} \mathrm{d} W_s\), and for \(q \geqslant q_0\) (for \(q
-        < q_{\ast}\) see the paragraph after Theorem <a href="#d-thm:limit">32.5</a>)</i>
+        </strong><i><class style="font-style: normal"><strong>(Identification of the martingales)
+        </strong></class><a id="d-prop:martingales"></a>Along a subsequence, on a common filtered
+        probability space, the limit of the forecast satisfies \(\psi_q =
+        \int_{q_0}^q \text{Cov}_s \hspace{0.17em} \mathrm{d} W_s\) with \(W\)
+        a cylindrical Brownian motion for the joint filtration, \(X_q =
+        \int_{q_0}^q C_s \hspace{0.17em} \mathrm{d} W_s\), and for \(q
+        \geqslant q_0\) (for \(q < q_{\ast}\) see the paragraph after Theorem
+        <a href="#d-thm:limit">32.5</a>)</i>
       </p>
       <div style="margin-bottom: 1em">
         <i><table width="100%">
@@ -4235,12 +4235,11 @@ Y\|_2\), so
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Theorem <class style="font-style: normal">32.5</class>. </strong><i><class
-        style="font-style: normal"><strong>(Construction of \(\Phi^4_3\) [<a href="#bib-FBSDE26">FBSDE26</a>])
-        </strong></class><a id="d-thm:limit"></a>Let \(\lambda, q_0 > 0\), \(r \in
-        \mathbb{R}\), with the counterterm of Theorem <a href="cqft_lecture5.html#thm:counter">11.2</a> (or
-        \(q_{\ast}\) large and \(b_N \to b\), \(|b_N | \leqslant B \gamma
-        q_{\ast}^{1 / 2}\)). Along a subsequence of lattices (the whole
-        sequence, by Theorem <a href="cqft_lecture6.html#thm:limit">18.6</a>):</i>
+        style="font-style: normal"><strong>(Construction of \(\Phi^4_3\)) </strong></class><a id="d-thm:limit"></a>Let
+        \(\lambda, q_0 > 0\), \(r \in \mathbb{R}\), with the counterterm of
+        Theorem <a href="cqft_lecture5.html#thm:counter">11.2</a> (or \(q_{\ast}\) large and \(b_N \to b\),
+        \(|b_N | \leqslant B \gamma q_{\ast}^{1 / 2}\)). Along a subsequence
+        of lattices (the whole sequence, by Theorem <a href="cqft_lecture6.html#thm:limit">18.6</a>):</i>
       </p>
       <div style="margin-bottom: 1em">
         <i><div class="enum-alpha">
@@ -4312,13 +4311,14 @@ Y\|_2\), so
     </div>
     <p>
       <strong>Below the auxiliary scale.</strong> Above \(q_{\ast}\) the proof
-      is as in [<a href="#bib-FBSDE26">FBSDE26</a>], with the moments of \(Y_{q_{\ast}}\)
-      from Section <a href="cqft_lecture6.html#sec:compactness">17</a>, and spatial compactness at \(q_{\ast}\) by
-      one-sided averaging on \([q_{\ast}, q_{\ast} + \delta]\). The processes
-      \(\psi, W, \text{Cov}\) never involve \(Y\): for \(q \leqslant Q\),
-      \(\psi_q =\mathbb{E}_q \psi_Q\) gives their moments, and the Riccati
-      argument starts at \(q_0\) from the deterministic \(\text{Var}_{\nu_N}
-      \langle \Phi^N_{\infty}, j_N f \rangle\). On \(I = [q_0, q_{\ast}]\),
+      is that of Section <a href="#d-sec:noise">?</a>, Propositions <a href="#d-prop:forward-compact">32.1</a> and <a
+      href="#d-prop:martingales">32.4</a>, with the moments of \(Y_{q_{\ast}}\) from Section <a
+      href="cqft_lecture6.html#sec:compactness">17</a>, and spatial compactness at \(q_{\ast}\) by one-sided
+      averaging on \([q_{\ast}, q_{\ast} + \delta]\). The processes \(\psi, W,
+      \text{Cov}\) never involve \(Y\): for \(q \leqslant Q\), \(\psi_q
+      =\mathbb{E}_q \psi_Q\) gives their moments, and the Riccati argument
+      starts at \(q_0\) from the deterministic \(\text{Var}_{\nu_N} \langle
+      \Phi^N_{\infty}, j_N f \rangle\). On \(I = [q_0, q_{\ast}]\),
       \(C_{q_{\ast}} K_s \Phi^N_s = C_{q_{\ast}} W^N_s + \int_{q_0}^s
       C_{q_{\ast}}
 \psi^N_u \hspace{0.17em} \mathrm{d} u\) is tight in \(C (I
@@ -5321,17 +5321,6 @@ s \leqslant Cq^{- 3 / 2}\), hence total variation \(\leqslant
     </p>
     <h2 id="auto-30">References<span style="margin-left: 1em"></span></h2>
     <dl>
-      <p>
-        <dt>
-          <strong>[FBSDE26]  </strong>
-        </dt>
-        <dd>
-          <p>
-            <a id="bib-FBSDE26"></a>M. Gubinelli. The massive \(\Phi^4_3\) field through
-            forward&ndash;backward equations. Course notes, October 2026.
-          </p>
-        </dd>
-      </p>
       <p>
         <dt>
           <strong>[GM24]  </strong>

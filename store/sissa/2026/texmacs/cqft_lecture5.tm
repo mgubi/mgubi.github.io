@@ -920,11 +920,21 @@
 
   is the sum of one-loop diagrams with <math|2j> external legs, one of them
   the output <math|x>. The leading term is the bubble
-  <math|-\<gamma\><rsup|2>y<around|(|x|)><big|int>
-  C<rsub|q><around|(|x,z|)><rsup|2>y<around|(|z|)><rsup|2><space|0.17em>\<mathd\>
-  z>, with <math|s<around|(|D<rsup|3>\<ell\><rsub|q><around|(|0|)>|)>=6\<gamma\><rsup|2>a<rsub|2><around|(|q|)>\<leqslant\>
-  C*g<rsub|q>q*r<rsub|q><rsup|-2>>, as predicted by
-  (<reference|eq:power-counting>).
+
+  <\equation*>
+    -\<gamma\><rsup|2>y<around|(|x|)><big|int>
+    C<rsub|q><around|(|x,z|)><rsup|2>y<around|(|z|)><rsup|2><space|0.17em>\<mathd\>
+    z,
+  </equation*>
+
+  with
+
+  <\equation*>
+    s<around|(|D<rsup|3>\<ell\><rsub|q><around|(|0|)>|)>=6\<gamma\><rsup|2>a<rsub|2><around|(|q|)>\<leqslant\>
+    C*g<rsub|q>q*r<rsub|q><rsup|-2>,
+  </equation*>
+
+  as predicted by<nbsp>(<reference|eq:power-counting>).
 
   <big-figure|<with|par-mode|center|<\script-output|tikz|default>
     \\documentclass[tikz]{standalone}
@@ -1047,7 +1057,12 @@
     s,<space|1em> j=0,1,<label|eq:iteration>
   </equation>
 
-  so that <math|\<partial\><rsub|q>\<ell\><rsup|<around|[|j+1|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M,\<ell\><rsup|<around|[|j|]>>|]>>:
+  so that
+
+  <\equation*>
+    \<partial\><rsub|q>\<ell\><rsup|<around|[|j+1|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M,\<ell\><rsup|<around|[|j|]>>|]>:
+  </equation*>
+
   each step inserts the previous approximation into the loop. The integrals
   run from <math|\<infty\>>: the nonlinear part is fixed by the requirement
   that it vanishes at infinite resolution, where <math|\<cal-F\><rsub|q>>
@@ -1217,7 +1232,7 @@
   an input.
 
   <\proposition>
-    <dueto|The coefficient construction<nbsp><cite|FBSDE26>><label|prop:coeff>
+    <dueto|The coefficient construction><label|prop:coeff>
     For <math|q<rsub|\<ast\>>> large enough (depending on <math|\<gamma\>>,
     not on <math|N>), the system<nbsp><eqref|eq:iteration>\U<eqref|eq:mass>
     has a unique solution in a ball, with
@@ -1257,7 +1272,7 @@
     as <math|q\<to\>\<infty\>>.
   </proposition>
 
-  <\render-proof|Idea of the proof>
+  <\render-proof|Idea of the proof (complete proof: Proposition<nbsp><hlink|20.6|cqft_supplement.tm#a-prop-coeff> of the Supplement)>
     (a) <em|Loop Lipschitz estimate.> If two corrections
     <math|\<ell\>,<wide|\<ell\>|^>> obey the individual
     bounds<nbsp><eqref|eq:power-counting> up to order <math|k+2> and their
@@ -1298,7 +1313,7 @@
   the estimate <math|<around|\<\|\|\>|\<delta\><rsub|z><rsup|2>*C<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<lesssim\>d<around|(|0,z|)><rsup|2>>,
   which a second moment would require, fails by a logarithm, and one uses
   <math|<around|\<\|\|\>|\<delta\><rsub|z><rsup|2>*C<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<lesssim\>q<rsup|-1/2>*d<around|(|0,z|)>>
-  instead<nbsp><cite|FBSDE26>. This is also why <math|\<cal-N\><rsub|k>>
+  instead (Lemma<nbsp><hlink|19.3|cqft_supplement.tm#a-lem-center> of the Supplement). This is also why <math|\<cal-N\><rsub|k>>
   contains a spatial moment at <math|y=0>.
 
   <subsection|Two mass renormalisations>
@@ -1807,7 +1822,7 @@
   the field restricted to the large-field set.
 
   <\proposition>
-    <dueto|Complete source bounds<nbsp><cite|FBSDE26>><label|prop:source> For
+    <dueto|Complete source bounds><label|prop:source> For
     <math|q\<geqslant\>q<rsub|\<ast\>>>, uniformly in
     <math|y\<in\>H<rsub|N>>, <math|N> and
     <math|p\<in\><around|[|1,\<infty\>|]>>,
@@ -1819,7 +1834,7 @@
     Moreover <math|<around|\<\|\|\>|b<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>C*\<gamma\>*q<rsup|-3/2><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>.
   </proposition>
 
-  The first bound is<nbsp><eqref|eq:Z-heuristic> with <math|n=2>: on the ball
+  The complete proof is Lemma<nbsp><hlink|21.2|cqft_supplement.tm#a-lem-source> of the Supplement. The first bound is<nbsp><eqref|eq:Z-heuristic> with <math|n=2>: on the ball
   <math|<around|\||\<cal-D\><rsup|<math-up|o>>|\|>\<leqslant\><math-ss|S><rsub|4><around|(|\<cal-D\><rsup|<math-up|o>>|)>*<around|(|2*r|)><rsup|3>/6>,
   and <math|q<rsup|-1>*\<gamma\><rsup|5>*q<rsup|-3>*r<rsub|q><rsup|3>=\<gamma\><rsup|7/2>*q<rsup|-5/2>>.
   The large-field part is as large as the bound
@@ -1862,9 +1877,7 @@
 
   Each group vanishes if <math|<around|\<\|\|\>|y|\<\|\|\>><rsub|\<infty\>>\<leqslant\>r<rsub|q>>,
   and each is bounded by <math|g<rsub|q>> times <math|<around|\||t|\|>> or
-  <math|r<rsup|-1>*y<rsup|2>*\<chi\>>, in <math|L<rsup|p>>, by the same loop
-  estimates (<cite|FBSDE26>; Exercise<nbsp><reference|ex:clip-scalar> for the
-  one-site version). There is no cancellation to exploit: the clipping error
+  <math|r<rsup|-1>*y<rsup|2>*\<chi\>>, in <math|L<rsup|p>>, by the same loop estimates (Section<nbsp><hlink|21.3|cqft_supplement.tm#a-sec-defect> of the Supplement; Exercise<nbsp><reference|ex:clip-scalar> for the one-site version). There is no cancellation to exploit: the clipping error
   is genuinely of the size <math|<around|(|g<rsub|q>/q|)><around|\||y|\|>> of
   the whole drift on the large-field set. What saves us is that this set is
   rarely visited, and its occupation is controlled by the coercivity of the
@@ -2551,7 +2564,7 @@
   <math|<around|\<\|\|\>|\<cal-U\><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>
   C*g<rsub|q<rsub|\<ast\>>><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>, which is
   part of the proof of the global linear bound of
-  Proposition<nbsp><reference|prop:source> <cite|FBSDE26>. Uniformly in
+  Proposition<nbsp><reference|prop:source> (Lemma<nbsp><hlink|21.2|cqft_supplement.tm#a-lem-source> of the Supplement). Uniformly in
   <math|N>, for <math|s\<less\>*q<rsub|\<ast\>>>,
 
   <\equation>
@@ -2653,7 +2666,7 @@
 
   <section*|References>
 
-  <\bib-list|FBSDE26>
+  <\bib-list|BCG26>
     <bibitem*|BCG26><label|bib-BCG26>I.<nbsp>Bailleul, I.<nbsp>Chevyrev,
     M.<nbsp>Gubinelli. Stochastic observables and Wilson\UItô diffusions. In
     preparation.
@@ -2667,10 +2680,6 @@
     <bibitem*|BG20><label|bib-BG20>N.<nbsp>Barashkov, M.<nbsp>Gubinelli. A
     variational method for <math|\<Phi\><rsup|4><rsub|3>>. <em|Duke Math. J.>
     169 (2020), 3339\U3415.
-
-    <bibitem*|FBSDE26><label|bib-FBSDE26>M.<nbsp>Gubinelli. The massive
-    <math|\<Phi\><rsup|4><rsub|3>> field through forward\Ubackward equations.
-    Course notes, October 2026.
 
     <bibitem*|FO76><label|bib-FO76>J.<nbsp>Feldman, K.<nbsp>Osterwalder. The
     Wightman axioms and the mass gap for weakly coupled
@@ -2748,7 +2757,6 @@
     <associate|bib-BCG26|<tuple|BCG26|20>>
     <associate|bib-BFS83|<tuple|BFS83|20>>
     <associate|bib-BG20|<tuple|BG20|21>>
-    <associate|bib-FBSDE26|<tuple|FBSDE26|21>>
     <associate|bib-FO76|<tuple|FO76|21>>
     <associate|bib-GH21|<tuple|GH21|21>>
     <associate|bib-GJ73|<tuple|GJ73|21>>
@@ -2855,15 +2863,6 @@
 
       GH21
 
-      FBSDE26
-
-      FBSDE26
-
-      FBSDE26
-
-      FBSDE26
-
-      FBSDE26
     </associate>
     <\associate|figure>
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.1>||The structure of

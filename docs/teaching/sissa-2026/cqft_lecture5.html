@@ -1092,10 +1092,21 @@ y^2 C_q)^{j - 1}] (x, x),\)
     </center>
     <p>
       is the sum of one-loop diagrams with \(2 j\) external legs, one of them
-      the output \(x\). The leading term is the bubble \(- \gamma^2 y (x) \int
-      C_q (x, z)^2 y (z)^2 \hspace{0.17em} \mathrm{d} z\), with \(s (D^3
-      \ell_q (0)) = 6 \gamma^2 a_2 (q) \leqslant Cg_q qr_q^{- 2}\), as
-      predicted by (<a href="#eq:power-counting">11.2</a>).
+      the output \(x\). The leading term is the bubble
+    </p>
+    <center>
+      \(\displaystyle - \gamma^2 y (x) \int C_q (x, z)^2 y (z)^2
+      \hspace{0.17em} \mathrm{d} z,\)
+    </center>
+    <p>
+      with
+    </p>
+    <center>
+      \(\displaystyle s (D^3 \ell_q (0)) = 6 \gamma^2 a_2 (q) \leqslant Cg_q
+      qr_q^{- 2},\)
+    </center>
+    <p>
+      as predicted by (<a href="#eq:power-counting">11.2</a>).
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
       <table style="width: 100%">
@@ -1175,10 +1186,16 @@ s, \quad j
       </tr>
     </table>
     <p>
-      so that \(\partial_q \ell^{[j + 1]} = \Pi \mathcal{T}_q [M,
-      \ell^{[j]}]\): each step inserts the previous approximation into the
-      loop. The integrals run from \(\infty\): the nonlinear part is fixed by
-      the requirement that it vanishes at infinite resolution, where
+      so that
+    </p>
+    <center>
+      \(\displaystyle \partial_q \ell^{[j + 1]} = \Pi \mathcal{T}_q [M,
+      \ell^{[j]}] :\)
+    </center>
+    <p>
+      each step inserts the previous approximation into the loop. The
+      integrals run from \(\infty\): the nonlinear part is fixed by the
+      requirement that it vanishes at infinite resolution, where
       \(\mathcal{F}_q\) must become the bare force (Theorem <a href="cqft_lecture4.html#thm:transformed">8.2</a>).
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
@@ -1259,11 +1276,11 @@ s, \quad j
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">11.1</class>.
-        </strong><i><class style="font-style: normal"><strong>(The coefficient construction [<a
-        href="#bib-FBSDE26">FBSDE26</a>]) </strong></class><a id="prop:coeff"></a> For \(q_{\ast}\)
-        large enough (depending on \(\gamma\), not on \(N\)), the system
-        <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class>&ndash;<class style="font-style: normal">(<a
-        href="#eq:mass">11.8</a>)</class> has a unique solution in a ball, with</i>
+        </strong><i><class style="font-style: normal"><strong>(The coefficient construction)
+        </strong></class><a id="prop:coeff"></a> For \(q_{\ast}\) large enough (depending
+        on \(\gamma\), not on \(N\)), the system <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class>&ndash;<class
+        style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class> has a unique solution in a ball,
+        with</i>
       </p>
       <i><table width="100%">
         <tr>
@@ -1324,33 +1341,34 @@ s, \quad j
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Idea of the proof. </strong>(a) <em>Loop Lipschitz
-      estimate.</em> If two corrections \(\ell, \hat{\ell}\) obey the
-      individual bounds <class style="font-style: normal">(<a href="#eq:power-counting">11.2</a>)</class> up to order
-      \(k + 2\) and their difference obeys them with \(g_q\) replaced by
-      \(\varepsilon_q\), then \(\mathcal{N}_k  (\mathcal{T}[M, \ell]
-      -\mathcal{T}[M, \hat{\ell}]) \leqslant C
-\varepsilon_q q^{1 / 2} r_q^{-
-      k}\). Expand \(D^{k - 1}\) of the loop force into loops; in each,
-      telescope the difference onto one marked vertex or propagator and apply
-      <class style="font-style: normal">(<a href="#eq:loop">11.3</a>)</class>. (b) <em>Integration.</em>
-      Each step gains one \(g\); the integrand of <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class>
-      is \(O (\gamma^{1 + k / 2} s^{- k / 2})\) in the \(k\)-leg vertex, and
-      that of the increment \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\gamma^{1
-      + k / 2} s^{- k / 2} g_s^j)\), integrable at \(s = \infty\) for \(k
-      \geqslant 4\). The low jets have been removed, so the lower derivatives
-      are controlled by Taylor's formula from the four-leg vertex. (c)
-      <em>Mass path.</em> Given \(M\) in the ball, the right side of <class
-      style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class> is computed from the corrections, and
-      the map \(M \mapsto (\mu, \Theta)\) is a contraction for large
-      \(q_{\ast}\): differences gain a factor \(g_{q_{\ast}}\) (for \(\mu\)
-      after integrating from \(q_{\ast}\), using \(\sup_x \log x / \sqrt{x} <
-      \infty\)). (d) <em>Defect.</em> The mass equation supplies exactly the
-      linear jet of the flow, and \(\partial_q \ell^{[2]} = \Pi \mathcal{T}
-      [M, \ell^{[1]}]\), so the defect is the loop difference between the last
-      two approximations, of order \(g^3\): by (a) with \(\varepsilon_q =
-      g_q^3\), \(\textsf{S}_4 (\mathcal{D}^{\text{o}}) \leqslant Cg_q^3 q^{1 /
-      2} r_q^{- 4} = C
+      <strong class="enunciation-name">Idea of the proof (complete proof: Proposition <a href="cqft_supplement.html#a-prop-coeff">20.6</a>
+      of the Supplement). </strong>(a) <em>Loop Lipschitz estimate.</em> If
+      two corrections \(\ell, \hat{\ell}\) obey the individual bounds <class
+      style="font-style: normal">(<a href="#eq:power-counting">11.2</a>)</class> up to order \(k + 2\) and their
+      difference obeys them with \(g_q\) replaced by \(\varepsilon_q\), then
+      \(\mathcal{N}_k  (\mathcal{T}[M, \ell] -\mathcal{T}[M, \hat{\ell}])
+      \leqslant C
+\varepsilon_q q^{1 / 2} r_q^{- k}\). Expand \(D^{k - 1}\) of
+      the loop force into loops; in each, telescope the difference onto one
+      marked vertex or propagator and apply <class style="font-style: normal">(<a href="#eq:loop">11.3</a>)</class>.
+      (b) <em>Integration.</em> Each step gains one \(g\); the integrand of
+      <class style="font-style: normal">(<a href="#eq:iteration">11.7</a>)</class> is \(O (\gamma^{1 + k / 2}
+      s^{- k / 2})\) in the \(k\)-leg vertex, and that of the increment
+      \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\gamma^{1 + k / 2} s^{- k / 2}
+      g_s^j)\), integrable at \(s = \infty\) for \(k \geqslant 4\). The low
+      jets have been removed, so the lower derivatives are controlled by
+      Taylor's formula from the four-leg vertex. (c) <em>Mass path.</em> Given
+      \(M\) in the ball, the right side of <class style="font-style: normal">(<a href="#eq:mass">11.8</a>)</class>
+      is computed from the corrections, and the map \(M \mapsto (\mu,
+      \Theta)\) is a contraction for large \(q_{\ast}\): differences gain a
+      factor \(g_{q_{\ast}}\) (for \(\mu\) after integrating from
+      \(q_{\ast}\), using \(\sup_x \log x / \sqrt{x} < \infty\)). (d)
+      <em>Defect.</em> The mass equation supplies exactly the linear jet of
+      the flow, and \(\partial_q \ell^{[2]} = \Pi \mathcal{T} [M,
+      \ell^{[1]}]\), so the defect is the loop difference between the last two
+      approximations, of order \(g^3\): by (a) with \(\varepsilon_q = g_q^3\),
+      \(\textsf{S}_4 (\mathcal{D}^{\text{o}}) \leqslant Cg_q^3 q^{1 / 2}
+      r_q^{- 4} = C
 \gamma^5 q^{- 3}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -1364,8 +1382,8 @@ s, \quad j
       \(\| \delta_z^2 C_q \|_{\text{row}} \lesssim d (0, z)^2\), which a
       second moment would require, fails by a logarithm, and one uses \(\|
       \delta_z^2 C_q \|_{\text{row}} \lesssim q^{- 1 / 2} d (0, z)\) instead
-      [<a href="#bib-FBSDE26">FBSDE26</a>]. This is also why \(\mathcal{N}_k\) contains a
-      spatial moment at \(y = 0\).
+      (Lemma <a href="cqft_supplement.html#a-lem-center">19.3</a> of the Supplement). This is also why
+      \(\mathcal{N}_k\) contains a spatial moment at \(y = 0\).
     </p>
     <h3 id="auto-20">11.4<span style="margin-left: 1em"></span>Two mass renormalisations<span style="margin-left: 1em"></span></h3>
     <p>
@@ -1865,7 +1883,7 @@ U\prime
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">12.2</class>.
-        </strong><i><class style="font-style: normal"><strong>(Complete source bounds [<a href="#bib-FBSDE26">FBSDE26</a>])
+        </strong><i><class style="font-style: normal"><strong>(Complete source bounds)
         </strong></class><a id="prop:source"></a> For \(q \geqslant q_{\ast}\), uniformly
         in \(y \in H_N\), \(N\) and \(p \in [1, \infty]\),</i>
       </p>
@@ -1891,7 +1909,8 @@ U\prime
       </p>
     </div>
     <p>
-      The first bound is <class style="font-style: normal">(<a href="#eq:Z-heuristic">11.13</a>)</class> with \(n =
+      The complete proof is Lemma <a href="cqft_supplement.html#a-lem-source">21.2</a> of the Supplement. The
+      first bound is <class style="font-style: normal">(<a href="#eq:Z-heuristic">11.13</a>)</class> with \(n =
       2\): on the ball \(|\mathcal{D}^{\text{o}} | \leqslant \textsf{S}_4
       (\mathcal{D}^{\text{o}})  (2
 r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
@@ -1953,13 +1972,13 @@ r)^3 / 6\), and \(q^{- 1} \gamma^5 q^{- 3}
     <p>
       Each group vanishes if \(\|y\|_{\infty} \leqslant r_q\), and each is
       bounded by \(g_q\) times \(|t|\) or \(r^{- 1} y^2 \chi\), in \(L^p\), by
-      the same loop estimates ([<a href="#bib-FBSDE26">FBSDE26</a>]; Exercise <a href="#ex:clip-scalar">12.2</a>
-      for the one-site version). There is no cancellation to exploit: the
-      clipping error is genuinely of the size \((g_q / q) |y|\) of the whole
-      drift on the large-field set. What saves us is that this set is rarely
-      visited, and its occupation is controlled by the coercivity of the
-      actual dynamics. Lecture 6 controls it through the large-field action <a
-      href="cqft_lecture6.html#eq:energies">(13.6)</a>.
+      the same loop estimates (Section <a href="cqft_supplement.html#a-sec-defect">21.3</a> of the Supplement;
+      Exercise <a href="#ex:clip-scalar">12.2</a> for the one-site version). There is no
+      cancellation to exploit: the clipping error is genuinely of the size
+      \((g_q / q) |y|\) of the whole drift on the large-field set. What saves
+      us is that this set is rarely visited, and its occupation is controlled
+      by the coercivity of the actual dynamics. Lecture 6 controls it through
+      the large-field action <a href="cqft_lecture6.html#eq:energies">(13.6)</a>.
     </p>
     <p>
       <div style="display: inline">
@@ -2570,7 +2589,8 @@ C_{q_{\ast}} K_q =
       Here \(\mathcal{U}\) is the loop part of \(\mathcal{D}_{q_{\ast}}\); it
       obeys \(\|\mathcal{U}(y)\|_p \leqslant Cg_{q_{\ast}} \|y\|_p\), which is
       part of the proof of the global linear bound of Proposition <a href="#prop:source">12.2</a>
-      [<a href="#bib-FBSDE26">FBSDE26</a>]. Uniformly in \(N\), for \(s < q_{\ast}\),
+      (Lemma <a href="cqft_supplement.html#a-lem-source">21.2</a> of the Supplement). Uniformly in \(N\), for \(s
+      < q_{\ast}\),
     </p>
     <table width="100%">
       <tr>
@@ -2711,17 +2731,6 @@ C_{q_{\ast}} K_q =
           <p>
             <a id="bib-BG20"></a>N. Barashkov, M. Gubinelli. A variational method for
             \(\Phi^4_3\). <em>Duke Math. J.</em> 169 (2020), 3339&ndash;3415.
-          </p>
-        </dd>
-      </p>
-      <p>
-        <dt>
-          <strong>[FBSDE26]  </strong>
-        </dt>
-        <dd>
-          <p>
-            <a id="bib-FBSDE26"></a>M. Gubinelli. The massive \(\Phi^4_3\) field through
-            forward&ndash;backward equations. Course notes, October 2026.
           </p>
         </dd>
       </p>
