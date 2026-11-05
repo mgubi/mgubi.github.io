@@ -55,6 +55,12 @@ class PublicationsTests(unittest.TestCase):
         text = " ".join(self.entries[f"bib-preprints-{key}"]["text"].split())
         self.assertIn(self.database_field(key, "note"), text)
 
+    def test_modulated_kdv_acceptance_note_matches_database(self):
+        key = "choukNonlinearPDEsModulated2024"
+        text = " ".join(self.entries[f"bib-preprints-{key}"]["text"].split())
+        self.assertIn(self.database_field(key, "note"), text)
+        self.assertNotIn("choukNonlinearPDEsModulated2014", self.database)
+
     def test_encyclopedia_edition_matches_database(self):
         key = "gubinelliStochasticQuantisation2025"
         text = " ".join(self.entries[f"bib-papers-{key}"]["text"].split())

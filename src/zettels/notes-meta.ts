@@ -7,6 +7,8 @@
 
   <assign|notes-meta-name|writings>
 
+  <assign|notes-comments|true>
+
   <assign|notes-header-links|<macro|[<hlink|main|<merge|<notes-main-dir>|/main.tm>>]
   [<hlink|writings|./writings.tm>]>>
 

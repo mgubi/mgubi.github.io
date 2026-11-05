@@ -4,7 +4,7 @@
 
 <\body>
   <\hide-preamble>
-    \;
+    <assign|notes-comments|false>
   </hide-preamble>
 
   <notes-header>

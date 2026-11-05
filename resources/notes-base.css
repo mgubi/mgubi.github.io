@@ -218,6 +218,36 @@ table {
     text-align: left;
 }
 
+.mg-whats-new {
+    border-left: 0.3em solid var(--color-title);
+    padding: 0.4em 0.9em;
+    font-family: var(--title-family);
+}
+
+.mg-whats-new p {
+    margin: 0;
+}
+
+.whats-new-item {
+    margin: 1.2em 0;
+    padding-left: 0.9em;
+    border-left: 2px solid var(--color-muted);
+}
+
+.whats-new-item p {
+    margin: 0.25em 0;
+}
+
+.notes-comments {
+    display: none;
+}
+
+.notes-comments-section {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid var(--color-muted);
+}
+
 .block-italic {
     font-style: italic;
 }

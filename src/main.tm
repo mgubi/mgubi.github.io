@@ -39,6 +39,13 @@
   editing platform. Some time ago I wrote a <notes-link|short
   novel|marella.tm> in Italian.<vspace|1em>
 
+  <\html-div-class|mg-whats-new>
+    <with|font-series|bold|<notes-link|What's new|whats-new.tm>> \<cdot\> the
+    latest lecture notes, writings, talks and papers on these pages
+  </html-div-class>
+
+  <vspace|1em>
+
   <hlink|google scholar|https://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
   \<cdot\> <hlink|arXiv|https://arxiv.org/a/gubinelli_m_1> \<cdot\>
   <hlink|ORCID|https://orcid.org/0000-0002-4014-2949>
@@ -50,6 +57,7 @@
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
+  <notes-link|what's new|whats-new.tm> \<cdot\>
   <notes-link|vita|curriculum-vitae.tm> \<cdot\>
   <notes-link|research|research/research.tm> \<cdot\>
   <notes-link|teaching|teaching/teaching.tm> \<cdot\>

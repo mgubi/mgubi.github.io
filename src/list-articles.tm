@@ -12,6 +12,19 @@
 
   <hrule>
 
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|05 Nov 2026>
+
+  <notes-entry|whats-new.tm|What's new|New and updated content on these
+  pages, most recent first: writings, lecture notes, talks and papers.|05 Nov
+  2026>
+
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated October 2026.|05 Nov 2026>
+
+  <notes-entry|research/presentations.tm|Presentations|The things I have said
+  in various places.|05 Nov 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--9 November 2026, as part of the Probability and
@@ -33,9 +46,6 @@
 
   <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
   October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>
-
-  <notes-entry|research/presentations.tm|Presentations|The things I have said
-  in various places.|27 Oct 2026>
 
   <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
   we talk about unbounded self-adjoint operators?>
@@ -59,12 +69,6 @@
     arguments follow the spectral construction because their proofs use it;
     the final section identifies the equivalent tests for convergence.
   </notes-entry|23 Oct 2026>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated October 2026.|23 Oct 2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|23 Oct 2026>
 
   <notes-entry|zettels/literate-programming.tm|On Literate Programming|How
   literate documents can explain the relationships between programming

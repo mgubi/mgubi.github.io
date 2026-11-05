@@ -182,11 +182,13 @@
     </wide-tabular>
   </macro>>
 
+  <assign|notes-comments|false>
+
   <assign|notes-header|<macro|<notes-header-table|<notes-header-links>>>>
 
   <assign|tmhtml-notes-header-table|<\macro|body>
     <\html-div-class|notes-header>
-      <arg|body><html-class|notes-header-name|<em|<notes-header-name>>>
+      <arg|body><html-class|notes-header-name|<em|<notes-header-name>>><if|<equal|<value|notes-comments>|true>|<html-class|notes-comments|comments>>
     </html-div-class>
   </macro>>
 

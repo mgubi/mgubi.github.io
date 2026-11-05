@@ -303,7 +303,8 @@
     <bibitem*|6><label|bib-preprints-choukNonlinearPDEsModulated2024>K.<nbsp>Chouk,
     M.<nbsp>Gubinelli, G.<nbsp>Li, J.<nbsp>Li<localize|, and >T.<nbsp>Oh.
     <newblock>Nonlinear PDEs with modulated dispersion II: Korteweg--de Vries
-    equation. <newblock>oct 2024.<newblock>
+    equation. <newblock>oct 2024. <newblock>Accepted for publication in
+    Memoirs of the European Mathematical Society.<newblock>
     <newblock><hlink|10.48550/arXiv.1406.7675|https://doi.org/10.48550/arXiv.1406.7675>
 
     <bibitem*|7><bib-year-section|2023><label|bib-preprints-bailleulWilsonItDiffusions2023>I.<nbsp>Bailleul,
@@ -8275,6 +8276,9 @@
         <db-field|primaryclass|math.AP>
 
         <db-field|publisher|arXiv>
+
+        <db-field|note|Accepted for publication in Memoirs of the European
+        Mathematical Society>
 
         <db-field|doi|10.48550/arXiv.1406.7675>
 

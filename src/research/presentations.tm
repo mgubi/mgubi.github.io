@@ -76,7 +76,7 @@
   Trieste, September 28--October 2, 2026
   (<notes-store|slides (PDF)|talk-stochastic-observables-2026.pdf>)
 
-  Stochastic observables and Wilson\UItô diffusions \U Sussex, 2026
+  Stochastic observables and Wilson\UItô diffusions \U 13th International Conference on the Exact Renormalization Group (ERG2026), University of Sussex, Brighton, September 2, 2026
   (<notes-store|slides (PDF)|stochastic-observables-wilson-ito-sussex-beamer.pdf>)\ 
 
   Equations for Euclidean fields \U York, March 11, 2026

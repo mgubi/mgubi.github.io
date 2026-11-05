@@ -140,6 +140,40 @@ TeXmacs may cache style environments. After changing a `.ts` package outside
 TeXmacs, use **Tools → Update → Styles** and reopen the affected document.
 The website build clears its isolated style cache automatically.
 
+## The "What's new" page
+
+`src/whats-new.tm` advertises new content and is linked prominently from
+`src/main.tm`. Keep it current whenever substantial new material is
+published: a blog post (with its companion), a new lecture course or new
+lecture materials, slides of a new talk, or a new paper or preprint added
+to the publication list. Each entry is one `whats-new-item` block with a
+date, a kind (writing, lectures, talk, paper, preprint), a linked title and
+one or two sentences of description. Keep entries in reverse chronological
+order.
+
+Do not add entries for small changes such as corrections, revisions or
+reformatting. When a page that already has an entry gets a notable update
+(for example a newly delivered lecture), move its entry to the top, change
+its date, and record the update in its final italic line ("Course page
+added 21 October 2026; updated 5 November 2026."). Do not create a second
+entry for it. Let the oldest entries fall off once the page grows long; the
+section pages remain the full archive. The main-page link is generic and
+does not need to change.
+
+## Comments on blog posts
+
+Pages in the Writings branch take comments through giscus (GitHub
+Discussions of `mgubi/mgubi.github.io`). `src/zettels/notes-meta.ts` sets
+`notes-comments` to `true`; the HTML rendering of `notes-header` in
+`plugins/notes/styles/notes.ts` then emits a hidden `notes-comments`
+marker, and `resources/notes-base.js` appends the comment section at the
+end of the page. New posts get comments automatically; do not add comment
+markup to individual documents. A page in the branch opts out with
+`<assign|notes-comments|false>` in its hide-preamble, as `writings.tm`
+does. The giscus repository and category settings live in
+`notes-base.js`. Comments are keyed by the page path, so moving a post
+detaches its existing discussion.
+
 ## Links, assets, and bibliography
 
 - Use `notes-link` for internal TeXmacs-page links and keep paths relative to

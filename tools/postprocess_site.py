@@ -167,7 +167,7 @@ def modernize_head(text: str, relative: str, title: str) -> str:
     text = re.sub(r'\s*<script\b[^>]*src="/resources/theme\.js"[^>]*></script>', "", text)
     text = text.replace('<head>', '<head>\n    <script src="/resources/theme.js"></script>', 1)
     text = re.sub(r'href="/resources/notes-base\.css(?:\?[^\"]*)?"',
-                  'href="/resources/notes-base.css?v=20261027"', text)
+                  'href="/resources/notes-base.css"', text)
     return text
 
 
@@ -453,7 +453,7 @@ def not_found_page() -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
     <title>Page not found — Massimiliano Gubinelli</title>
-    <link rel="stylesheet" href="/resources/notes-base.css?v=20261027">
+    <link rel="stylesheet" href="/resources/notes-base.css">
     <link rel="icon" href="/resources/favicon-32x32.png">
   </head>
   <body>
