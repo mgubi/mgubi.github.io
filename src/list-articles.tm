@@ -12,18 +12,18 @@
 
   <hrule>
 
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|05 Nov 2026>
-
   <notes-entry|whats-new.tm|What's new|New and updated content on these
   pages, most recent first: writings, lecture notes, talks and papers.|05 Nov
   2026>
 
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated October 2026.|05 Nov 2026>
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|05 Nov 2026>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|05 Nov 2026>
+
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated October 2026.|05 Nov 2026>
 
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
