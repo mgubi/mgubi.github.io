@@ -46,12 +46,12 @@
     of energy and continuation to imaginary time; the Feynman--Kac
     representation, lattice spin systems and the Osterwalder--Schrader
     axioms.
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L1.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_notes_L1.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_notes_L1.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L1.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L1.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L1.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_1.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_1.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_1.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_1.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_1.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_1.tm>].
     Revised 3 November 2026.
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
@@ -59,12 +59,12 @@
     positivity and the free relativistic field; Nelson's Markov property
     and Symanzik's Brownian-path representation; Wick products; Gaussian
     integration by parts and the Dyson--Schwinger equation.
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L2.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_notes_L2.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_notes_L2.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L2.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L2.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L2.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_2.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_2.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_2.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_2.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_2.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_2.tm>].
     Revised 3 November 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
@@ -73,21 +73,21 @@
     field by resolution; stochastic observables, with examples from Brownian
     motion and the free field; Wick powers in every dimension, products of
     observables and the operator product expansion.
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L3.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture3.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture3.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L3.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L3.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L3.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_3.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_3.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_3.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_3.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_3.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_3.tm>].
     Revised 3 November 2026.
 
     <item><with|font-series|bold|Lecture 4> (4 November 2026): Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L4.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture4.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture4.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L4.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L4.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L4.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_4.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_4.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_4.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_4.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_4.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_4.tm>].
     Revised 4 November 2026.
   </itemize>
 
@@ -100,30 +100,30 @@
 
   <\itemize>
     <item><with|font-series|bold|Lecture 5>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L5.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture5.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture5.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L5.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L5.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L5.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_5.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_5.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_5.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_5.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_5.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_5.tm>].
 
     <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_L6.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_lecture6.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture6.tm>].
-    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_L6.pdf>]
-    [<notes-link|HTML|sissa-2026/cqft_slides_L6.tm>]
-    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_L6.tm>].
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_6.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_6.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_6.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_6.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_6.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_6.tm>].
 
     <item><with|font-series|bold|Supplement to Lectures 5--6>: Detailed proofs of what the lectures cite or condense: the coefficient construction, the large-field ledger, consistency of the coefficients, and older routes.
 
-    Notes: [<notes-store|PDF|sissa/2026/cqft_notes_supplement.pdf>]
+    Notes: [<notes-store|PDF|sissa/2026/cqft_supplement.pdf>]
 
     [<notes-link|HTML|sissa-2026/cqft_supplement.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_supplement.tm>].
   </itemize>
 
-  Materials revised 4 November 2026. The TeXmacs sources of all notes
+  Materials revised 5 November 2026. The TeXmacs sources of all notes
   and slides, together with the style packages they use, are also
   available as one archive [<notes-store|zip|sissa/2026/cqft_texmacs_sources.zip>]. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.

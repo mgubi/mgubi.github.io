@@ -24,9 +24,9 @@ class SissaMaterialsTests(unittest.TestCase):
 
     def test_complete_notes_and_slide_exports(self):
         # Slide counts from the author's supplied HTML and PDF exports.
-        for number, slides in enumerate((31, 32, 35, 65, 30, 43), 1):
-            notes = f'cqft_notes_L{number}' if number < 3 else f'cqft_lecture{number}'
-            for name in (notes, f'cqft_slides_L{number}'):
+        for number, slides in enumerate((31, 32, 35, 65, 30, 44), 1):
+            notes = f'cqft_lecture_{number}'
+            for name in (notes, f'cqft_slides_{number}'):
                 with self.subTest(page=name):
                     page = MATERIALS / f'{name}.html'
                     text = page.read_text()
@@ -43,19 +43,19 @@ class SissaMaterialsTests(unittest.TestCase):
                         target = local_target(page, href)
                         if target:
                             self.assertTrue(target[0].is_file(), href)
-            for kind in ('notes', 'slides'):
-                self.assertTrue((ROOT / f'store/sissa/2026/cqft_{kind}_L{number}.pdf').read_bytes().startswith(b'%PDF-'))
+            for kind in ('lecture', 'slides'):
+                self.assertTrue((ROOT / f'store/sissa/2026/cqft_{kind}_{number}.pdf').read_bytes().startswith(b'%PDF-'))
 
     def test_course_links_all_four_formats_for_each_lecture(self):
         parser = PageParser()
         parser.feed((ROOT / 'docs/teaching/lectures-constructive-qft-sissa-2026.html').read_text())
         hrefs = {item.get('href') for item in parser.anchor_links}
         for number in range(1, 7):
-            notes = f'cqft_notes_L{number}' if number < 3 else f'cqft_lecture{number}'
-            for name in (notes, f'cqft_slides_L{number}'):
+            notes = f'cqft_lecture_{number}'
+            for name in (notes, f'cqft_slides_{number}'):
                 self.assertIn(f'sissa-2026/{name}.html', hrefs)
-            for kind in ('notes', 'slides'):
-                self.assertIn(f'../../store/sissa/2026/cqft_{kind}_L{number}.pdf', hrefs)
+            for kind in ('lecture', 'slides'):
+                self.assertIn(f'../../store/sissa/2026/cqft_{kind}_{number}.pdf', hrefs)
 
     def test_supplement_is_published(self):
         page = MATERIALS / 'cqft_supplement.html'
@@ -63,7 +63,7 @@ class SissaMaterialsTests(unittest.TestCase):
         self.assertIn('mathjax@3', text)
         self.assertNotIn('/Users/', text)
         self.assertIn('class="max-toc"', text)
-        self.assertTrue((ROOT / 'store/sissa/2026/cqft_notes_supplement.pdf').read_bytes().startswith(b'%PDF-'))
+        self.assertTrue((ROOT / 'store/sissa/2026/cqft_supplement.pdf').read_bytes().startswith(b'%PDF-'))
         course = (ROOT / 'docs/teaching/lectures-constructive-qft-sissa-2026.html').read_text()
         self.assertIn('sissa-2026/cqft_supplement.html', course)
 

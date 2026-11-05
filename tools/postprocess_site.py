@@ -311,9 +311,9 @@ def restore_course_equation_anchors(text: str, source: Path) -> str:
 
 def course_material(relative: str) -> tuple[str, str, str] | None:
     """Title, course page and link label of a standalone course document."""
-    material = re.fullmatch(r'teaching/sissa-2026/cqft_(notes_L|slides_L|lecture)([1-6])\.html', relative)
+    material = re.fullmatch(r'teaching/sissa-2026/cqft_(lecture|slides)_([1-6])\.html', relative)
     if material:
-        kind = 'slides' if material[1] == 'slides_L' else 'notes'
+        kind = 'slides' if material[1] == 'slides' else 'notes'
         return (f'Constructive quantum field theory — Lecture {material[2]} ({kind})',
                 '../lectures-constructive-qft-sissa-2026.html#auto-3', 'SISSA lectures')
     if relative == 'teaching/sissa-2026/cqft_supplement.html':

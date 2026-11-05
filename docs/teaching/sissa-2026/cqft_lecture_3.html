@@ -1,0 +1,1974 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Constructive quantum field theory — Lecture 3 (notes) — Massimiliano Gubinelli</title>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } .underline { text-decoration: underline; }
+      .overline { text-decoration: overline; } .strike-through {
+      text-decoration: line-through; } del { text-decoration: line-through
+      wavy red; } .fill-out { text-decoration: underline dotted; }
+    </style>
+    <link href="cqft-icon.svg" rel="icon">
+    <link href="max-html.css" type="text/css" rel="stylesheet">
+    <link href="/resources/course-materials.css" type="text/css" rel="stylesheet">
+    <script src="max-html.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Constructive quantum field theory — Lecture 3 (notes), on the personal website of Massimiliano Gubinelli.">
+    <link rel="canonical" href="https://mgubi.github.io/docs/teaching/sissa-2026/cqft_lecture_3.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+  </head>
+  <body>
+    <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 3 (notes)</h1>
+    <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
+          <tr>
+            <td><span style="color: #707070"><span style="font-size: 135.0%"><strong>A Constructive Introduction
+            to Quantum Field Theory</strong></span></span></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><span style="color: #800000"><span style="font-size: 175.0%"><strong>Lecture 3: Stochastic
+            quantisation and stochastic
+            observables</strong></span></span></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
+          <table class="title-block">
+            <tr>
+              <td><div style="text-indent: 0em" align="left">
+                <p>
+                  <span style="font-variant: small-caps">M. Gubinelli</span>
+                </p>
+              </div><div style="text-indent: 0em" align="left">
+                <p>
+                  Mathematical Institute, University of Oxford
+                </p>
+              </div></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i>SISSA, October 2026</i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <div style="margin-top: 2em; margin-bottom: 0.5em; margin-left: 60px; margin-right: 60px">
+      <p style="margin-bottom: 0.5em">
+        <span style="font-size: 84.1%"><strong>Abstract</strong></span>
+      </p>
+    </div>
+    <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
+      <p>
+        <span style="font-size: 84.1%">We first show that the Gaussian free field is the
+        stationary one-time (resp. one-point) marginal of the parabolic (resp.
+        elliptic) stochastic quantisation equation. We then decompose it along
+        a scale parameter and take as primary objects the <em>stochastic
+        observables</em>: martingales in the filtration of finite-resolution
+        measurements. As examples we study Wick powers as observables in every
+        dimension, and their products (operator product expansion).
+        Interactions are introduced in Lecture 4. Exercises are collected at
+        the end of each section. These notes follow the slides of Lecture
+        3.</span>
+      </p>
+    </div>
+    <div class="max-toc">
+      <div class="max-toc-title">
+        Contents
+      </div>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>Introduction</b> <span style="margin-left: 5mm"></span> <a href="#auto-1">2</a>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Structure <span style="margin-left: 5mm"></span> <a href="#auto-2">2</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Conventions <span style="margin-left: 5mm"></span> <a href="#auto-3">2</a></span>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>4<span style="margin-left: 1em"></span>Stochastic quantisation</b> <span style="margin-left: 5mm"></span>
+        <a href="#auto-4">2</a>
+      </p>
+      <p>
+        4.1<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
+        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-5">2</a>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Langevin dynamics <span style="margin-left: 5mm"></span> <a href="#auto-6">2</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">History <span style="margin-left: 5mm"></span> <a href="#auto-7">2</a></span>
+      </p>
+      <p>
+        4.2<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
+        stochastic quantisation <span style="margin-left: 5mm"></span> <a href="#auto-9">4</a>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-10">5</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>5<span style="margin-left: 1em"></span>Setting: covariance profiles and
+        observables</b> <span style="margin-left: 5mm"></span> <a href="#auto-11">6</a>
+      </p>
+      <p>
+        5.1<span style="margin-left: 1em"></span>Covariance profiles <span style="margin-left: 5mm"></span> <a
+        href="#auto-12">6</a>
+      </p>
+      <p>
+        5.2<span style="margin-left: 1em"></span>Stochastic observables <span style="margin-left: 5mm"></span> <a
+        href="#auto-14">7</a>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Observables as equivalence classes <span style="margin-left: 5mm"></span>
+        <a href="#auto-15">7</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Random variables as observables <span style="margin-left: 5mm"></span> <a
+        href="#auto-16">7</a></span>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-17">8</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>6<span style="margin-left: 1em"></span>Observables of the Gaussian free field and
+        their products</b> <span style="margin-left: 5mm"></span> <a href="#auto-18">9</a>
+      </p>
+      <p>
+        6.1<span style="margin-left: 1em"></span>Wick powers and exponentials <span style="margin-left: 5mm"></span>
+        <a href="#auto-19">9</a>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Point evaluations <span style="margin-left: 5mm"></span> <a href="#auto-20">9</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Wick powers <span style="margin-left: 5mm"></span> <a href="#auto-21">9</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Exponentials <span style="margin-left: 5mm"></span> <a href="#auto-22">9</a></span>
+      </p>
+      <p>
+        6.2<span style="margin-left: 1em"></span>Products of observables <span style="margin-left: 5mm"></span> <a
+        href="#auto-23">9</a>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Brownian deltas <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Products of point evaluations <span style="margin-left: 5mm"></span> <a
+        href="#auto-25">10</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Operator product expansion <span style="margin-left: 5mm"></span> <a href="#auto-26">10</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Higher orders <span style="margin-left: 5mm"></span> <a href="#auto-27">11</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Locality and factorisation <span style="margin-left: 5mm"></span> <a href="#auto-28">11</a></span>
+      </p>
+      <p>
+        <span style="font-size: 92.0%">Outlook <span style="margin-left: 5mm"></span> <a href="#auto-30">12</a></span>
+      </p>
+      <p>
+        Exercises <span style="margin-left: 5mm"></span> <a href="#auto-31">12</a>
+      </p>
+      <p style="margin-top: 1em; margin-bottom: 0.5em">
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-32">12</a>
+      </p>
+    </div>
+    <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
+    <p>
+      We start from stochastic quantisation (Section <a href="#sec:sq">4</a>): the GFF
+      is the stationary marginal of a Langevin dynamics in an auxiliary time,
+      and the one-point marginal of an elliptic equation in two additional
+      dimensions. This is a first way to describe a Euclidean field by an
+      equation for the field itself.
+    </p>
+    <p>
+      We then change the point of view (Section <a href="#sec:obs">5</a>): instead of a
+      single random distribution, we look at the field observed at every
+      finite resolution, and take as primary objects the stochastic
+      observables of [<a href="#bib-BCG26">BCG26</a>]: martingales in the filtration of
+      finite-resolution measurements.
+    </p>
+    <p>
+      Sections, equations and exercises keep the numbering of the whole
+      course: references to Sections 1&ndash;3 are to the notes of Lectures
+      1&ndash;2.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-2"></a>
+      </div>
+      <h5>Structure.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Section <a href="#sec:sq">4</a> treats the stochastic quantisation of the GFF.
+        Section <a href="#sec:obs">5</a> introduces covariance profiles, the field at
+        resolution \(t\) and stochastic observables, and Section <a href="#sec:gff-obs">6</a>
+        studies the observables of the GFF and their products. Interactions,
+        the Polchinski equation, the forward&ndash;backward equations and the
+        Wetterich equation are the subject of Lecture 4.
+      </div>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-3"></a>
+      </div>
+      <h5>Conventions.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        As in Lectures 1&ndash;2: \(\mathcal{M}=\mathbb{T}^d_L\) or
+        \(\mathbb{R}^d\), \(A = m^2 - \Delta\), \(C = A^{- 1}\) with kernel
+        \(G\), \(\mu_m\) the GFF, \(\langle f, g \rangle = \int fg\) for real
+        functions. For a functional \(F\) on smooth fields, \(DF (\varphi) \in
+        \mathcal{S}' (\mathcal{M})\) and \(D^2 F (\varphi)\) are its first and
+        second derivatives, \(D_h F = \langle DF, h \rangle\). \(H_n  (a ;
+        c)\) are the Hermite polynomials of variance \(c\), and \(\mu^Q\) is
+        the centred Gaussian measure with covariance \(Q\).
+      </div>
+    </p>
+    <h2 id="auto-4"><a id="sec:sq"></a>4<span style="margin-left: 1em"></span>Stochastic quantisation<span
+    style="margin-left: 1em"></span></h2>
+    <p>
+      Stochastic quantisation describes a Euclidean field as the marginal of a
+      stochastic dynamics. For the GFF the dynamics are linear and everything
+      can be computed explicitly; we give two versions, parabolic and
+      elliptic.
+    </p>
+    <h3 id="auto-5">4.1<span style="margin-left: 1em"></span>The GFF as stationary marginal of parabolic
+    stochastic quantisation<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-6"></a>
+      </div>
+      <h5>Langevin dynamics.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        If \(S : \mathbb{R}^N \to \mathbb{R}\) is smooth with \(\mathrm{e}^{-
+        S} \in L^1\), the diffusion \(\mathrm{d} X_t = - \nabla S (X_t)
+        \mathrm{d} t + \sqrt{2} \hspace{0.17em}
+\mathrm{d} B_t\) has generator
+        \(\mathcal{L}= \Delta - \nabla S \cdot \nabla\), and
+        \(\mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot (\nabla
+        \mathrm{e}^{- S} +
+\mathrm{e}^{- S} \nabla S) = 0\): the Gibbs measure
+        \(\mathrm{e}^{- S (x)} \mathrm{d} x / Z\) is invariant. Parisi and Wu
+        [<a href="#bib-PW81">PW81</a>] proposed to apply this to the Euclidean action,
+        introducing a fictitious &ldquo;stochastic time&rdquo; \(t\):
+      </div>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:SQE"></a>\(\displaystyle \partial_t \Phi = - (m^2
+        - \Delta) \Phi - V' (\Phi) + \sqrt{2}
+\hspace{0.17em} \xi \qquad
+        \text{on } \mathbb{R}_+ \times \mathcal{M},\)</td>
+        <td align="right">(4.1)</td>
+      </tr>
+    </table>
+    <p>
+      with \(\xi\) space-time white noise. This is <em>(parabolic) stochastic
+      quantisation</em>. For \(V = 0\) it is the stochastic heat equation, an
+      infinite-dimensional Ornstein&ndash;Uhlenbeck process.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-7"></a>
+      </div>
+      <h5>History.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Parisi and Wu [<a href="#bib-PW81">PW81</a>] introduced stochastic quantisation
+        to do perturbation theory for gauge theories without gauge fixing. The
+        physics literature of the 1980s is reviewed by Damgaard and
+        H&uuml;ffel [<a href="#bib-DH87">DH87</a>], whose reprint volume [<a href="#bib-DH88">DH88</a>]
+        collects the original papers. Jona-Lasinio and Mitter [<a href="#bib-JLM85">JLM85</a>]
+        gave the first mathematical construction of the dynamics for \(P
+        (\varphi)_2\) on the torus, where the Wick-ordered interaction makes
+        <span style="font-style: normal">(<a href="#eq:SQE">4.1</a>)</span> a singular SPDE. They used
+        Girsanov's theorem for a variant of <span style="font-style: normal">(<a href="#eq:SQE">4.1</a>)</span>
+        in which the drift is smoothed by \((1 - \Delta)^{- \varepsilon}\) and
+        the noise has covariance \((1 - \Delta)^{- \varepsilon}\) (a slightly
+        coloured noise), which still has the \(P (\varphi)_2\) measure as
+        invariant measure. A recent review of the mathematical theory is [<a
+        href="#bib-Gub25">Gub25</a>].
+      </div>
+    </p>
+    <p>
+      Space-time white noise on \(\mathbb{R} \times \mathcal{M}\) is a centred
+      Gaussian family \((\xi (u))_{u \in L^2  (\mathbb{R} \times
+      \mathcal{M})}\) with \(\mathbb{E} [\xi (u) \xi (v)] = \langle u, v
+      \rangle\), formally \(\mathbb{E} [\xi (t, x) \xi (s, y)] = \delta (t -
+      s) \delta (x - y)\). Let \(W_t (h) = \xi (\mathbb{1}_{[0, t]} \otimes
+      h)\), \(t \geqslant 0\), a cylindrical Brownian motion. For a (weak)
+      solution \(\Phi\) of <span style="font-style: normal">(<a href="#eq:SQE">4.1</a>)</span> with \(V =
+      0\) and \(F = g (\varphi (f_1), \ldots, \varphi (f_n)) \in
+      \mathcal{F}C^{\infty}_b\), It&ocirc;'s formula shows that \(F (\Phi_t) -
+      \int_0^t \mathcal{L}F (\Phi_r) \mathrm{d} r\) is a martingale, with
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:generator"></a>\(\displaystyle \mathcal{L}F (\varphi) =
+        \sum_{i, j} \langle f_i, f_j \rangle
+\hspace{0.17em} \partial_{ij} g
+        (\ldots) - \sum_i \varphi (Af_i)
+\hspace{0.17em} \partial_i g
+        (\ldots) .\)</td>
+        <td align="right">(4.2)</td>
+      </tr>
+    </table>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <span style="font-style: normal">4.1</span>.
+        </strong><i><span style="font-style: normal"><strong>(DS \(\Rightarrow\) invariance)
+        </strong></span><a id="prop:inf-inv"></a> For \(F, G \in \mathcal{F}C^{\infty}_b\):
+        \(\mathbb{E}_{\mu_m}  [G \hspace{0.17em} \mathcal{L}F] =
+        -\mathbb{E}_{\mu_m}
+[\langle DG, DF \rangle_{L^2 (\mathcal{M})}]\). In
+        particular \(\mathbb{E}_{\mu_m}  [\mathcal{L}F] = 0\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>We may assume \(F = g (\varphi (f_1),
+      \ldots)\) and \(G = k (\varphi (f_1), \ldots)\) with the same \(f_i\).
+      Apply <a href="cqft_lecture_2.html#eq:DS">(3.10)</a> of Lecture 2 to the cylinder function \(k
+      \hspace{0.17em} \partial_i g\) with \(h = f_i\) and sum over \(i\):
+      \(\sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g \hspace{0.17em}
+      \varphi
+(Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle \mathbb{E}
+      [\partial_j k
+\hspace{0.17em} \partial_i g + k \hspace{0.17em}
+      \partial_{ij} g]\). Insert this into \(\mathbb{E}
+      [G\mathcal{L}F]\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      So the static characterisation (DS) and the dynamic one (invariance
+      under the Langevin flow) are two faces of the same integration by parts
+      formula.
+    </p>
+    <div class="key-result">
+      <div class="theorem">
+        <p style="margin-top: 1em">
+          <strong class="enunciation-name">Theorem <span style="font-style: normal">4.2</span>. </strong><i><span
+          style="font-style: normal"><strong>(Parabolic stochastic quantisation of the GFF)
+          </strong></span><a id="thm:parabolic"></a> Let \(\xi\) be space-time white noise
+          on \(\mathbb{R} \times \mathcal{M}\). For \(t \in \mathbb{R}\) and
+          \(f \in \mathcal{S} (\mathcal{M})\) define</i>
+        </p>
+        <div class="block-italic"><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:stat-sol"></a>\(\displaystyle \Phi_t (f) :=
+            \sqrt{2}  \hspace{0.17em} \xi (K_{t, f}), \qquad K_{t, f} (r,
+x)
+            := \mathbb{1}_{\{r < t\}} (\mathrm{e}^{- (t - r) A} f) (x)
+            .\)</td>
+            <td align="right">(4.3)</td>
+          </tr>
+        </table></div>
+        <div style="margin-bottom: 1em">
+          <div class="block-italic"><div class="enum-alpha">
+            <ol>
+              <li>
+                <p>
+                  \(\Phi\) is a centred Gaussian process with \(\mathbb{E}
+                  [\Phi_t (f) \Phi_s (g)] = \langle f, \mathrm{e}^{- |t - s|A}
+                  Cg
+\rangle\). In particular \((\Phi_t)_{t \in \mathbb{R}}\)
+                  is stationary and, for every \(t\), \(\Phi_t\) has a version
+                  with values in \(\mathcal{S}' (\mathcal{M})\) whose law is
+                  \(\mu_m\).
+                </p>
+              </li>
+              <li>
+                <p>
+                  \(\Phi\) is a mild and weak solution of <span style="font-style: normal">(<a
+                  href="#eq:SQE">4.1</a>)</span> with \(V = 0\): for \(s < t\) and \(h
+                  \in \mathcal{S} (\mathcal{M})\),
+                </p>
+                <div class="center">
+                  \(\displaystyle \begin{array}{c}
+  \Phi_t (h) = \Phi_s
+                  (\mathrm{e}^{- (t - s) A} h) + \sqrt{2}  \hspace{0.17em}
+
+                  \xi \left( \mathbb{1}_{(s, t)} (r) \hspace{0.17em}
+                  \mathrm{e}^{- (t - r) A}
+  h \right),\\
+  \Phi_t (h) =
+                  \Phi_s (h) - \int_s^t \Phi_r  (Ah) \hspace{0.17em}
+                  \mathrm{d} r
+  + \sqrt{2}  \hspace{0.17em} \xi
+                  (\mathbb{1}_{(s, t)} \otimes h) .
+\end{array}\)
+                </div>
+              </li>
+              <li>
+                <p>
+                  Let \(\Psi_0\) be an \(\mathcal{S}' (\mathcal{M})\)-valued
+                  random variable independent of \(\xi\), and let \(\Psi\) be
+                  the mild solution started from \(\Psi_0\),
+                </p>
+                <div class="center">
+                  \(\displaystyle \Psi_t (f) = \Psi_0 (\mathrm{e}^{- tA} f) +
+                  \sqrt{2}  \hspace{0.17em} \xi
+\left( \mathbb{1}_{(0, t)} (r)
+                  \hspace{0.17em} \mathrm{e}^{- (t - r) A} f
+\right), \qquad t
+                  \geqslant 0.\)
+                </div>
+                <p>
+                  Then \(\mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}] \to
+                  \mathrm{e}^{- \frac{1}{2}
+\langle f, Cf \rangle}\) as \(t
+                  \to \infty\) for every \(f \in \mathcal{S} (\mathcal{M})\).
+                  Moreover \(\mu_m\) is invariant (\(\Psi_0 \sim \mu_m\)
+                  implies \(\Psi_t \sim \mu_m\) for all \(t\)), and it is the
+                  unique invariant probability measure of the dynamics.
+                </p>
+              </li>
+            </ol>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>(a) Since \(A\) is self-adjoint and
+      commutes with \(\mathrm{e}^{- uA}\),
+    </p>
+    <div class="center">
+      \(\displaystyle \langle K_{t, f}, K_{s, g} \rangle = \int_{- \infty}^{t
+      \wedge s} \langle f,
+\mathrm{e}^{- (t + s - 2 r) A} g \rangle \mathrm{d}
+      r = \langle f,
+\mathrm{e}^{- |t - s|A} (2 A)^{- 1} g \rangle .\)
+    </div>
+    <p>
+      In particular \(K_{t, f} \in L^2  (\mathbb{R} \times \mathcal{M})\), and
+      multiplying by \(2\) gives the covariance. Stationarity follows. For
+      fixed \(t\), \(f \mapsto \Phi_t (f)\) is linear and \(\mathbb{E} [\Phi_t
+      (f)^2] = \langle f, Cf \rangle \leqslant m^{- 2}
+\|f\|_{L^2}^2\), so it
+      is continuous from \(\mathcal{S} (\mathcal{M})\) to \(L^2
+      (\mathbb{P})\). By the regularisation theorem for random linear
+      functionals on nuclear spaces (It&ocirc;&ndash;Nawata, Mitoma) it has an
+      \(\mathcal{S}' (\mathcal{M})\)-valued version, which is centred Gaussian
+      with covariance \(C\), i.e. has law \(\mu_m\). On the torus one can see
+      this directly: the coordinates \(\Phi_t (e_n)\) are independent
+      stationary OU processes \(\mathrm{d} X = - \lambda_n X \mathrm{d} t +
+      \sqrt{2} \mathrm{d} B\) with variance \(\lambda_n^{- 1}\), and <a href="cqft_lecture_2.html#eq:series">(3.3)</a>
+      of Lecture 2 applies.
+    </p>
+    <p>
+      (b) The mild formula is the identity \(K_{t, h} = K_{s, \mathrm{e}^{- (t
+      - s) A} h} + \mathbb{1}_{(s, t)} (r)
+\mathrm{e}^{- (t - r) A} h\)
+      together with the linearity of \(\xi\). The weak formulation follows
+      from the mild one by a stochastic Fubini argument (Exercise <a href="#ex:weak">4.3</a>).
+    </p>
+    <p>
+      (c) Since \(\Psi_0\) is independent of \(\xi\),
+    </p>
+    <div class="center">
+      \(\displaystyle \mathbb{E} [\mathrm{e}^{\mathrm{i} \Psi_t (f)}]
+      =\mathbb{E}
+[\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{- tA} f)}]
+      \hspace{0.17em}
+\mathrm{e}^{- \frac{1}{2}  \langle f, (1 - \mathrm{e}^{-
+      2 tA}) Cf \rangle} .\)
+    </div>
+    <p style="margin-bottom: 1em">
+      For \(m > 0\), \(\mathrm{e}^{- tA} f \to 0\) in \(\mathcal{S}
+      (\mathcal{M})\) as \(t \to \infty\), so \(\Psi_0 (\mathrm{e}^{- tA} f)
+      \to 0\) a.s. because \(\Psi_0 \in \mathcal{S}' (\mathcal{M})\). By
+      dominated convergence the first factor tends to \(1\), while the second
+      tends to \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\). If
+      \(\Psi_0 \sim \mu_m\), the first factor equals \(\mathrm{e}^{-
+      \frac{1}{2}  \langle f, \mathrm{e}^{- 2 tA} Cf \rangle}\) and the
+      product is exactly \(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf
+      \rangle}\), which proves invariance. If \(\nu\) is invariant, start from
+      \(\Psi_0 \sim \nu\): then \(\text{Law} (\Psi_t) = \nu\) for all \(t\),
+      so the characteristic functional of \(\nu\) equals that of \(\mu_m\),
+      and \(\nu = \mu_m\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><div class="center">
+            <img src="cqft_lecture_3-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.1999779614325em" alt="Figure from Cqft_Lecture_3" decoding="async" loading="lazy"><a id="fig:she"></a>
+          </div></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <div style="font-size: 84.1%"><p>
+              <b>Figure 4.1. </b><a id="auto-8"></a>Parabolic stochastic quantisation
+              of the GFF on a circle of length \(8\), \(m = 1\), started from
+              \(\Phi_0 = 0\). Left: a sample of the solution. Right: each
+              Fourier mode is an Ornstein&ndash;Uhlenbeck process, whose
+              variance relaxes to \(\lambda_k^{- 1}\) at rate \(2 \lambda_k\)
+              (Theorem <a href="#thm:parabolic">4.2</a>(c)). Dots: Monte Carlo estimates with
+              \(4000\) samples.
+            </p></div>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Remark <span style="font-style: normal">4.3</span>. </strong>As a Gaussian
+      field on \(\mathbb{R} \times \mathcal{M}\), the stationary solution has
+      covariance \(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
+      \partial_t^2 +
+A^2)^{- 1}\), and its equal-time slice has covariance \(2
+      \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}  \frac{\mathrm{d} \theta}{2
+      \pi} =
+A^{- 1}\). The stochastic time \(t\) is unrelated to the
+      Euclidean time \(\tau\). For interacting theories, <span style="font-style: normal">(<a
+      href="#eq:SQE">4.1</a>)</span> is a singular SPDE. It was solved by Da Prato and
+      Debussche for \(\Phi^4_2\) [<a href="#bib-DPD03">DPD03</a>] (see also [<a href="#bib-JLM85">JLM85</a>,
+      <a href="#bib-AR91">AR91</a>]), and for \(\Phi^4_3\) using regularity structures
+      and paracontrolled calculus [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a
+      href="#bib-CC18">CC18</a>]. Global-in-time bounds [<a href="#bib-MW17">MW17</a>, <a href="#bib-GH19">GH19</a>]
+      then allow constructing the Euclidean \(\Phi^4_3\) theory as the
+      invariant measure of the dynamics [<a href="#bib-GH21">GH21</a>].
+    </p>
+    <h3 id="auto-9">4.2<span style="margin-left: 1em"></span>The GFF as one-point marginal of elliptic
+    stochastic quantisation<span style="margin-left: 1em"></span></h3>
+    <p>
+      Parisi and Sourlas [<a href="#bib-PS79">PS79</a>] discovered that the elliptic SPDE
+      in \(d + 2\) dimensions
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:ESQ"></a>\(\displaystyle (m^2 -
+        \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi + V' (\Psi) =
+        \zeta,
+\qquad \zeta \text{white noise on } \mathbb{R}^2 \times
+        \mathcal{M},\)</td>
+        <td align="right">(4.4)</td>
+      </tr>
+    </table>
+    <p>
+      is related to the \(d\)-dimensional Gibbs measure: formally, the law of
+      \(\Psi (z, \cdot)\), \(z \in \mathbb{R}^2\), is \(\propto \exp \left( -
+      4 \pi \left[ \tfrac{1}{2} \langle \varphi, A \varphi
+\rangle + \int V
+      (\varphi) \right] \right) \mathcal{D} \varphi\) (<em>dimensional
+      reduction</em>). The underlying mechanism is a hidden supersymmetry [<a
+      href="#bib-PS79">PS79</a>, <a href="#bib-KLP84">KLP84</a>]. In [<a href="#bib-KLP84">KLP84</a>] the
+      dimensional reduction of the supersymmetric representation is proved
+      rigorously, but not the supersymmetric representation of the solution of
+      the SPDE; the full nonlinear statement was proved for \(d = 0\) in [<a
+      href="#bib-ADG20">ADG20</a>] and for some two-dimensional models (polynomial
+      interactions on \(\mathbb{T}^2\), exponential interactions on
+      \(\mathbb{R}^2\)) in [<a href="#bib-ADG21">ADG21</a>]; elliptic \(\Phi^4\) equations
+      in \(4\) and \(5\) dimensions are solved in [<a href="#bib-GH19">GH19</a>]. For \(V
+      = 0\) the statement is elementary, and it explains the factor \(4 \pi\).
+      We normalise the noise so that the slice is exactly \(\mu_m\).
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Theorem <span style="font-style: normal">4.4</span>. </strong><i><span
+        style="font-style: normal"><strong>(Elliptic stochastic quantisation of the GFF)
+        </strong></span><a id="thm:elliptic"></a> Let \(\zeta\) be white noise on
+        \(\mathbb{R}^2 \times \mathcal{M}\) (an \(\mathcal{S}'  (\mathbb{R}^2
+        \times \mathcal{M})\)-valued Gaussian variable with \(\mathbb{E}
+        [\zeta (u) \zeta (v)] = \langle u, v \rangle\)) and \(\textsf{L} :=
+        m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}} =
+        -
+\Delta_{\mathbb{R}^2} + A\).</i>
+      </p>
+      <div style="margin-bottom: 1em">
+        <div class="block-italic"><div class="enum-alpha">
+          <ol>
+            <li>
+              <p>
+                The equation \(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
+                \zeta\) has a unique \(\mathcal{S}'  (\mathbb{R}^2 \times
+                \mathcal{M})\)-valued solution, \(\Psi (u) = \sqrt{4 \pi}
+                \hspace{0.17em} \zeta (\textsf{L}^{- 1} u)\).
+              </p>
+            </li>
+            <li>
+              <p>
+                For \(z \in \mathbb{R}^2\) and \(f \in \mathcal{S}
+                (\mathcal{M})\) the function \(K_{z, f} := \textsf{L}^{- 1}
+                (\delta_z \otimes f)\) lies in \(L^2  (\mathbb{R}^2 \times
+                \mathcal{M})\), and \(z \mapsto K_{z, f}\) is continuous. The
+                Wiener integrals \(\Psi (z, f) := \sqrt{4 \pi}
+                \hspace{0.17em} \zeta (K_{z, f})\) satisfy \(\Psi (v \otimes
+                f) = \int_{\mathbb{R}^2} v (z) \Psi (z, f)
+                \hspace{0.17em}
+\mathrm{d} z\) a.s. for \(v \in \mathcal{S}
+                (\mathbb{R}^2)\).
+              </p>
+            </li>
+            <li>
+              <p>
+                For all \(z \in \mathbb{R}^2\) and \(f, g \in \mathcal{S}
+                (\mathcal{M})\), \(\mathbb{E} [\Psi (z, f) \Psi (z, g)] =
+                \langle f, Cg \rangle\). Hence \(\Psi (z, \cdot)\) has an
+                \(\mathcal{S}' (\mathcal{M})\)-valued version with law
+                \(\mu_m\), and the field \((\Psi (z, \cdot))_{z \in
+                \mathbb{R}^2}\) is stationary and isotropic in \(z\).
+              </p>
+            </li>
+          </ol>
+        </div></div>
+      </div>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>(a) \(\textsf{L}\) is a continuous
+      bijection of \(\mathcal{S} (\mathbb{R}^2 \times \mathcal{M})\), so
+      \(\Psi (u) := \sqrt{4 \pi} \zeta (\textsf{L}^{- 1} u)\) defines an
+      \(\mathcal{S}'\)-valued variable with \(\Psi (\textsf{L} u) = \sqrt{4
+      \pi} \zeta (u)\). If \(D \in \mathcal{S}'\) satisfies \(D (\textsf{L} u)
+      = 0\) for all \(u \in \mathcal{S}\), then \(D = 0\) since \(\textsf{L}\)
+      is onto: the solution is unique.
+    </p>
+    <p>
+      (b), (c) Take the Fourier transform in \(z\) only, with measure
+      \(\mathrm{d} q / (2 \pi)^2\). The transform of \(K_{z, f}\) is the \(L^2
+      (\mathcal{M})\)-valued function \(q \mapsto \mathrm{e}^{- \mathrm{i} q
+      \cdot z} (|q|^2 + A)^{- 1} f\). By Plancherel, the spectral theorem for
+      \(A\) and Tonelli,
+    </p>
+    <div class="center">
+      \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \int_{\mathbb{R}^2}
+      \langle f, (|q|^2 +
+A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2 \pi)^2} =
+      \left\langle f, \left[
+\int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2
+      \pi)^2} (|q|^2 + A)^{- 2} \right] g
+\right\rangle = \frac{1}{4 \pi}
+      \langle f, A^{- 1} g \rangle,\)
+    </div>
+    <p>
+      using the scalar identity
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:4pi"></a>\(\displaystyle \int_{\mathbb{R}^2}
+        \frac{\mathrm{d} q}{(2 \pi)^2}  \frac{1}{(|q|^2 + a)^2} =
+\frac{1}{2
+        \pi}  \int_0^{\infty} \frac{r \hspace{0.17em} \mathrm{d} r}{(r^2
+        +
+a)^2} = \frac{1}{4 \pi a}, \qquad a > 0.\)</td>
+        <td align="right">(4.5)</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 1em">
+      In particular \(K_{z, f} \in L^2\), and its continuity in \(z\) follows
+      by dominated convergence. Since the transform of \(\int v (z) K_{z, f}
+      \mathrm{d} z\) is \(\hat{v} (q)  (|q|^2 + A)^{- 1} f\), the Bochner
+      integral \(\int v (z) K_{z, f} \mathrm{d} z\) equals \(\textsf{L}^{- 1}
+      (v \otimes f)\). The Wiener integral \(\zeta\) is an isometry \(L^2 \to
+      L^2 (\mathbb{P})\) and commutes with Bochner integrals, which gives (b).
+      Multiplying by \(4 \pi\) gives the covariance in (c). The \(\mathcal{S}'
+      (\mathcal{M})\)-valued version is obtained as in Theorem <a href="#thm:parabolic">4.2</a>.
+      Stationarity and isotropy hold because \(\mathbb{E} [\Psi (z, f) \Psi
+      (z', g)] = 4 \pi \int \mathrm{e}^{\mathrm{i} q
+\cdot (z - z')} \langle
+      f, (|q|^2 + A)^{- 2} g \rangle \frac{\mathrm{d} q}{(2
+\pi)^2}\) depends
+      only on \(|z - z' |\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Remark <span style="font-style: normal">4.5</span>. </strong><span style="font-style: normal"><strong>(Slices
+      of Gaussian fields) </strong></span>Both stochastic quantisations
+      exhibit the GFF as a <em>slice</em> of a Gaussian field in higher
+      dimension. For the field on \(\mathbb{R}^k \times \mathcal{M}\) with
+      covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\), the slice \(\{0\}
+      \times \mathcal{M}\) has covariance \(c_{k, p} A^{k / 2 - p}\) with
+      \(c_{k, p} = \Gamma (p - \frac{k}{2}) / ((4 \pi)^{k / 2} \Gamma (p))\)
+      (Exercise <a href="#ex:slices">4.4</a>). The GFF arises iff \(p = 1 + k / 2\): \((k,
+      p) = (2, 2)\) is elliptic SQ, while \((k, p) = (1, 1)\) gives instead
+      the time-zero field \((2 \omega)^{- 1}\) of Proposition <a href="cqft_lecture_2.html#prop:RP">3.4</a>
+      of Lecture 2. When \(\mathcal{M}=\mathbb{R}^d\), the elliptic field
+      \(\Psi\) is Euclidean invariant in \(\mathbb{R}^{d + 2}\), and its
+      restriction to <em>every</em> codimension-two affine subspace is a GFF.
+    </p>
+    <h3 id="auto-10">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">4.1</span>.
+        </strong><span style="font-style: normal"><strong>(Infinitesimal invariance characterises
+        \(\mu_m\)) </strong></span><a id="ex:invariance"></a>On \(\mathbb{T}^d_L\), let
+        \(\nu\) be a probability measure on \(\mathcal{S}' (\mathbb{T}^d_L)\)
+        with \(\varphi (f) \in L^1 (\nu)\) and \(\mathbb{E}_{\nu}
+        [\mathcal{L}F] = 0\) for all \(F \in \mathcal{F}C^{\infty}_b\). Show
+        that \(\nu = \mu_m\). <em>Hint:</em> for \(f = \sum_{n \leqslant N}
+        a_n e_n\) and \(\psi (a) =\mathbb{E}_{\nu} \mathrm{e}^{\mathrm{i}
+        \varphi (f)}\), show \(\sum_n \lambda_n a_n \partial_{a_n} \psi = -
+        |a|^2 \psi\), and differentiate \(s \mapsto \psi (\mathrm{e}^{sD} a)
+        \exp (\frac{1}{2}  \sum_n a_n^2
+\mathrm{e}^{2 \lambda_n s} /
+        \lambda_n)\), where \(D = \text{diag} (\lambda_n)\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">4.2</span>.
+        </strong><span style="font-style: normal"><strong>(Reversibility) </strong></span>Use
+        Proposition <a href="#prop:inf-inv">4.1</a> to show that \(\mathcal{L}\) is symmetric
+        in \(L^2 (\mu_m)\). Deduce, and check directly from the covariance in
+        Theorem <a href="#thm:parabolic">4.2</a>(a), that the stationary solution is time
+        reversible: \((\Phi_{- t})_{t \in \mathbb{R}}\) and \((\Phi_t)_{t \in
+        \mathbb{R}}\) have the same law.</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">4.3</span>.
+        </strong><span style="font-style: normal"><strong>(Mild implies weak) </strong></span><a
+        id="ex:weak"></a> Prove the weak formulation in Theorem <a href="#thm:parabolic">4.2</a>(b).
+        Show that, as a random distribution on \(\mathbb{R} \times
+        \mathcal{M}\), the stationary solution has covariance operator \(2 (-
+        \partial_t^2 + A^2)^{- 1}\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">4.4</span>.
+        </strong><span style="font-style: normal"><strong>(Slices of Gaussian fields)
+        </strong></span><a id="ex:slices"></a> Let \(k \geqslant 1\), \(p > k / 2\), and
+        let \(\Psi\) be the centred Gaussian field on \(\mathbb{R}^k \times
+        \mathcal{M}\) with covariance \((- \Delta_{\mathbb{R}^k} + A)^{- p}\).
+        (a) Show that \(\Psi (0, \cdot)\) is well defined with covariance
+        \(c_{k, p} A^{k / 2 - p}\), \(c_{k, p} = \Gamma (p - \frac{k}{2}) /
+        ((4 \pi)^{k / 2} \Gamma (p))\). (b) For \((k, p) = (1, 1)\) and
+        \(\mathcal{M}= N\), show that the time-zero field of the GFF on
+        \(\mathbb{R} \times N\) is the ground state measure \(\Omega_0
+        (\varphi)^2 \mathcal{D} \varphi\) of the free Hamiltonian, i.e.
+        Gaussian with covariance \((2 \omega)^{- 1}\) (compare Exercise <a
+        href="cqft_lecture_1.html#ex:OU">2.2</a>). (c) Show that the restriction of the elliptic field of
+        Theorem <a href="#thm:elliptic">4.4</a> to a codimension-<em>one</em> slice
+        \(\mathbb{R} \times \mathcal{M}\) has covariance proportional to \((-
+        \partial^2 + A)^{- 3 / 2}\), so it is not a GFF. (d) Show that
+        \(\mathbb{E} [\Psi (z, f) \Psi (0, g)] = \langle f, |z|A^{- 1 / 2} K_1
+        (|z|A^{1
+/ 2}) g \rangle\) in Theorem <a href="#thm:elliptic">4.4</a>, and recover
+        \(\langle f, Cg \rangle\) as \(z \to 0\).</span>
+      </p>
+    </div>
+    <h2 id="auto-11"><a id="sec:obs"></a>5<span style="margin-left: 1em"></span>Setting: covariance profiles and
+    observables<span style="margin-left: 1em"></span></h2>
+    <p>
+      In Lectures 1&ndash;2 a Euclidean field was a probability measure on
+      \(\mathcal{S}' (\mathcal{M})\), i.e. a random distribution \(\varphi\),
+      and local operators were functions of \(\varphi\). This viewpoint hides
+      the scale-by-scale organisation of the Wilson&ndash;Kadanoff picture [<a
+      href="#bib-WK74">WK74</a>], and forces us to work with singular objects from the
+      start. Already for the GFF, the Wick power \(: \varphi^n\): is not a
+      random distribution when \(n (d - 2) \geqslant d\), since its
+      regularisations are not even tight (Proposition <a href="cqft_lecture_2.html#prop:no-wick">3.11</a> of
+      Lecture 2).
+    </p>
+    <p>
+      From now on we index everything by a <em>resolution</em> \(t \in [0,
+      \infty)\). The field observed at resolution \(t\) is a smooth function
+      \(\varphi_t\), and the information available at resolution \(t\) is the
+      \(\sigma\)-algebra \(\mathcal{F}_t\) generated by \((\varphi_s)_{s
+      \leqslant t}\). A physical quantity is then not a single random variable
+      but a <em>consistent family</em> of finite-resolution estimates of it,
+      i.e. a martingale. This is the notion of stochastic observable of [<a
+      href="#bib-BCG26">BCG26</a>], on which this lecture is based; see also [<a href="#bib-Pol84">Pol84</a>,
+      <a href="#bib-BK87">BK87</a>, <a href="#bib-Sal99">Sal99</a>, <a href="#bib-BBD24">BBD24</a>] for the
+      renormalisation group side and [<a href="#bib-BG20">BG20</a>, <a href="#bib-BG23">BG23</a>]
+      for the variational side.
+    </p>
+    <p>
+      In Section <a href="#sec:sq">4</a> the variable \(t\) was the auxiliary time of a
+      stochastic dynamics; from now on \(t\) is a resolution.
+    </p>
+    <h3 id="auto-12">5.1<span style="margin-left: 1em"></span>Covariance profiles<span style="margin-left: 1em"></span></h3>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Definition <span style="font-style: normal">5.1</span>. </strong><i><a
+        id="def:profile"></a>A <em>covariance profile</em> is a family \((Q_t)_{t \in [0,
+        \infty)}\) of bounded, symmetric, translation invariant operators on
+        \(L^2 (\mathcal{M})\) with \(Q_0 = 0\), \(t \mapsto Q_t\) smooth,
+        \(\dot{Q}_t := \partial_t Q_t \geqslant 0\), \(Q_t \to C\) as \(t \to
+        \infty\), and such that \(\dot{Q}_t\) and \(Q_t\) have smooth kernels
+        for every \(t < \infty\).</i>
+      </p>
+    </div>
+    <p>
+      Our standard example is the <em>heat profile</em>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:heat-profile"></a>\(\displaystyle Q_t := C \hspace{0.17em}
+        \mathrm{e}^{- A / t^2}, \qquad \dot{Q}_t =
+\frac{2}{t^3}
+        \hspace{0.17em} \mathrm{e}^{- A / t^2},\)</td>
+        <td align="right">(5.1)</td>
+      </tr>
+    </table>
+    <p>
+      which smooths the Green function with the heat kernel at time \(t^{-
+      2}\). On \(\mathbb{R}^d\) the kernels are explicit,
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:heat-kernel"></a>\(\displaystyle \dot{Q}_t  (x - y) =
+        \frac{2 t^{d - 3} \mathrm{e}^{- m^2 / t^2}}{(4 \pi)^{d /
+2}}
+        \hspace{0.17em} \mathrm{e}^{- t^2  |x - y|^2 / 4},\)</td>
+        <td align="right">(5.2)</td>
+      </tr>
+    </table>
+    <p>
+      so \(\dot{Q}_t\) is concentrated on distances \(\lesssim 1 / t\), and in
+      Fourier space \(Q_t\) retains the modes \(|k| \lesssim t\): \(t\) is a
+      <em>momentum scale</em>, or resolution. Other profiles are useful, even
+      when they violate some smoothness requirement of Definition <a href="#def:profile">5.1</a>.
+      A sharp Fourier cutoff is \(\hat{Q}_t (k) = \mathbb{1}_{|k| \leqslant t}
+      (|k|^2 + m^2)^{- 1}\), which is not smooth in \(t\). In a <em>finite
+      range decomposition</em>, \(\dot{Q}_t  (x, y) = 0\) for \(|x - y|
+      \geqslant 1 / t\) (Remark <a href="#rem:finite-range">6.4</a>). We write
+    </p>
+    <div class="center">
+      \(\displaystyle c_t := Q_t  (x, x), \qquad Q_{T, t} := Q_T - Q_t  \quad
+      (t \leqslant T) .\)
+    </div>
+    <p>
+      For \(d \geqslant 2\), \(c_t \to \infty\) as \(t \to \infty\) (Exercise
+      <a href="#ex:ct">5.2</a>).
+    </p>
+    <p>
+      Let \((W_t)_{t \geqslant 0}\) be a cylindrical Brownian motion on \(L^2
+      (\mathcal{M})\), \(\mathbb{E} [W_t (x) W_s (y)] = (t \wedge s) \delta (x
+      - y)\), and
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:scale-GFF"></a>\(\displaystyle X_t := \int_0^t
+        \dot{Q}_s^{1 / 2} \hspace{0.17em} \mathrm{d} W_s .\)</td>
+        <td align="right">(5.3)</td>
+      </tr>
+    </table>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Proposition <span style="font-style: normal">5.2</span>. </strong><i><a
+        id="prop:scale-GFF"></a>For every \(t < \infty\), \(X_t\) is a smooth Gaussian field
+        with law \(\mu^{Q_t}\), and \((X_t (x))_{t \geqslant 0}\) is a
+        continuous martingale with \(\mathrm{d} \langle X (x), X (y) \rangle_t
+        = \dot{Q}_t  (x, y) \hspace{0.17em}
+\mathrm{d} t\). As \(t \to
+        \infty\), \(X_t \to X_{\infty}\) in \(H^{- s}_{\text{loc}}\) for \(s >
+        \frac{d}{2} - 1\), and \(\text{Law} (X_{\infty}) = \mu_m\). The
+        increments \(X_T - X_t\) are independent of \(\mathcal{F}_t := \sigma
+        (X_s : s \leqslant t)\), with law \(\mu^{Q_{T, t}}\).</i>
+      </p>
+    </div>
+    <p>
+      So the GFF is the terminal value of a Gaussian martingale of smooth
+      fields: the <em>field at resolution \(t\)</em> (Figure <a href="#fig:multiscale">5.1</a>).
+      The proof is a variant of Theorem <a href="cqft_lecture_2.html#thm:existence">3.2</a> of Lecture 2 and is
+      left as Exercise <a href="#ex:scale-GFF">5.1</a>.
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><div class="center">
+            <img class="image" src="cqft_lecture_3-2.png" width="100%" alt="Figure from Cqft_Lecture_3" decoding="async" loading="lazy"><a id="fig:multiscale"></a>
+          </div></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <div style="font-size: 84.1%"><p>
+              <b>Figure 5.1. </b><a id="auto-13"></a>The field at resolution \(t\),
+              \(X_t\), for the heat profile on \(\mathbb{T}^2\) (\(m = 4\),
+              mean subtracted for display), at \(t = 8, 32, 128\) and at the
+              lattice cutoff, all built from the same white noise. The
+              martingale \(X_t\) reveals finer and finer details, while the
+              large scales are fixed at low resolution.
+            </p></div>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <h3 id="auto-14">5.2<span style="margin-left: 1em"></span>Stochastic observables<span style="margin-left: 1em"></span></h3>
+    <p>
+      Fix a filtration \((\mathcal{F}_t)_{t \geqslant 0}\), for the moment
+      that of \(X\), and write \(\mathbb{E}_t := \mathbb{E} [\hspace{0.17em}
+      \cdot \hspace{0.17em}
+|\mathcal{F}_t]\).
+    </p>
+    <div class="key-result">
+      <div class="theorem">
+        <p style="margin-top: 1em; margin-bottom: 1em">
+          <strong class="enunciation-name">Definition <span style="font-style: normal">5.3</span>.
+          </strong><i><span style="font-style: normal"><strong>([<a href="#bib-BCG26">BCG26</a>])
+          </strong></span><a id="def:obs"></a> An <em>observable</em> is a real or
+          complex \((\mathcal{F}_t)\)-martingale \(O = (O_t)_{t \geqslant
+          0}\): \(O_s =\mathbb{E}_s [O_t]\) for \(s \leqslant t\). Its
+          <em>expectation</em> is \(\langle O \rangle := \mathbb{E} [O_t]\),
+          which is independent of \(t\). An <em>observable field</em> is a
+          family \((O (x))_{x \in \mathcal{M}}\) of observables.</i>
+        </p>
+      </div>
+    </div>
+    <p>
+      Every integrable \(\mathcal{F}_{\infty}\)-measurable random variable
+      \(Y\) gives a <em>closed</em> observable \(O_t =\mathbb{E}_t [Y]\), with
+      \(O_t \to Y\). The point of the definition is that interesting
+      observables need <em>not</em> be closed: a martingale may diverge as \(t
+      \to \infty\) (for instance \(X_t (x)\) for \(d \geqslant 2\)), and still
+      carry a perfectly meaningful family of finite-resolution estimates. The
+      next lemma is elementary but basic.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Lemma <span style="font-style: normal">5.4</span>. </strong><i><span
+        style="font-style: normal"><strong>(Asymptotic uniqueness) </strong></span><a id="lem:uniq"></a>
+        (a) If \(O^1, O^2\) are observables with \(\|O^1_t - O^2_t \|_{L^1}
+        \to 0\), then \(O^1 = O^2\). (b) If \((N_t)\) is any adapted process
+        and \(O\) an observable with \(\|N_t - O_t \|_{L^1} \to 0\), then
+        \(O_s = \lim_{t \to \infty} \mathbb{E}_s [N_t]\) in \(L^1\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>(a) \(O^1_s - O^2_s =\mathbb{E}_s  [O^1_t
+      - O^2_t]\) for every \(t \geqslant s\), and conditional expectation is
+      an \(L^1\) contraction. (b) Likewise, \(\|O_s -\mathbb{E}_s N_t \|_{L^1}
+      \leqslant \|O_t - N_t \|_{L^1}\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-15"></a>
+      </div>
+      <h5>Observables as equivalence classes.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Call two integrable adapted processes \(N\) and \(N'\)
+        <em>asymptotically equivalent</em>, \(N \sim N'\), if \(\|N_t - N'_t
+        \|_{L^1} \to 0\) as \(t \to \infty\). By Lemma <a href="#lem:uniq">5.4</a>(a)
+        each equivalence class contains at most one martingale, and by Lemma
+        <a href="#lem:uniq">5.4</a>(b) this martingale, when it exists, is recovered from
+        any member \(N\) of the class by looking back: \(O_s = \lim_{t \to
+        \infty} \mathbb{E}_s N_t\) in \(L^1\). So an observable is the same
+        thing as an equivalence class of asymptotically equivalent processes
+        that contains a martingale: every member of the class is a
+        <em>description</em> of the observable, and the martingale is its
+        canonical representative. Proposition <a href="#prop:repair">5.6</a> below finds the
+        martingale from a semimartingale description.
+      </div>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-16"></a>
+      </div>
+      <h5>Random variables as observables.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The map \(Y \mapsto (\mathbb{E}_t Y)_{t \geqslant 0}\) sends \(L^1
+        (\mathcal{F}_{\infty})\) into the observables. It is injective, since
+        \(\mathbb{E}_t Y \to Y\) in \(L^1\) (L&eacute;vy's upward theorem),
+        and its image is exactly the set of closed observables, i.e. of the
+        uniformly integrable martingales. So the space of observables, a
+        vector space on which \(O \mapsto \langle O \rangle\) is a linear
+        form, generalises \(L^1 (\mathcal{F}_{\infty})\): dropping uniform
+        integrability enlarges it, and the new elements are exactly the
+        non-closed observables, those with no terminal value in \(L^1\). For
+        them an almost sure limit, when it exists, does not determine the
+        observable (see Example <a href="#exa:brownian">5.5</a>).
+      </div>
+    </p>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Example <span style="font-style: normal">5.5</span>. </strong><span style="font-style: normal"><strong>(Brownian
+      observables) </strong></span><a id="exa:brownian"></a>Let \(B\) be a standard
+      Brownian motion and \((\mathcal{F}_t)\) its filtration. With \(H_n (a ;
+      c)\) the Hermite polynomials of variance \(c\), the martingales
+    </p>
+    <div class="center">
+      \(\displaystyle B_t, \qquad B_t^2 - t, \qquad B_t^3 - 3 tB_t, \qquad
+      \ldots, \qquad H_n (B_t ;
+t)\)
+    </div>
+    <p>
+      are observables without a terminal value, and they are not even bounded
+      in \(L^1\): \(\mathbb{E} |B_t^2 - t| = t\mathbb{E} |Z^2 - 1| \to
+      \infty\), \(Z \sim N (0, 1)\). They are the prototypes of the Wick
+      powers of Section <a href="#sec:gff-obs">6</a>: at a fixed point, \(X_t (x)\) is a
+      continuous Gaussian martingale with quadratic variation \(c_t\), i.e. a
+      Brownian motion run with the clock \(c_t\). The exponential martingale
+    </p>
+    <div class="center">
+      \(\displaystyle Z_t = \exp \left( \lambda B_t - \frac{\lambda^2}{2} t
+      \right) = \sum_{n
+\geqslant 0} \frac{\lambda^n}{n!} H_n (B_t ; t),
+      \qquad \lambda \in
+\mathbb{R}, \lambda \neq 0,\)
+    </div>
+    <p style="margin-bottom: 1em">
+      makes the loss of terminal information explicit: \(Z_t \to 0\) almost
+      surely, while \(\mathbb{E}Z_t = 1\) for every \(t\). The almost sure
+      limit is zero, the observable is not: the mass escapes to rarer and
+      rarer paths, and the limit forgets all the finite-resolution
+      expectations.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <span style="font-style: normal">5.6</span>.
+        </strong><i><span style="font-style: normal"><strong>(Repair by the future drift)
+        </strong></span><a id="prop:repair"></a>Let \(N_t = N_0 + \int_0^t \beta_s
+        \mathrm{d} s + M_t\), with \(N_0 \in L^1\), \(M\) a martingale and
+        \(\mathbb{E} \int_0^{\infty} | \beta_s | \mathrm{d} s < \infty\).
+        Then</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle O_t := N_t +\mathbb{E}_t \left[ \int_t^{\infty}
+          \beta_s \mathrm{d} s \right]\)
+        </div></div>
+      </p>
+      <p style="margin-bottom: 1em">
+        <i>is an observable, and it is the only observable with \(\|N_t - O_t
+        \|_{L^1} \to 0\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>\(O_t = N_0 + M_t +\mathbb{E}_t \left[
+      \int_0^{\infty} \beta_s \mathrm{d} s
+\right]\) is a sum of martingales,
+      and \(\|O_t - N_t \|_{L^1} \leqslant \mathbb{E} \int_t^{\infty} |
+      \beta_s |
+\mathrm{d} s \to 0\). Uniqueness is Lemma <a href="#lem:uniq">5.4</a>(a).<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The correction is the expected drift still to come. For instance, for
+      \(N_t = B_t + \mathrm{e}^{- t} \sin B_t\) It&ocirc;'s formula gives
+      \(\beta_t = - \frac{3}{2} \mathrm{e}^{- t} \sin B_t\), and since
+      \(\mathbb{E}_t \sin B_s = \mathrm{e}^{- (s - t) / 2} \sin B_t\),
+    </p>
+    <div class="center">
+      \(\displaystyle \mathbb{E}_t \left[ \int_t^{\infty} \beta_s \mathrm{d} s
+      \right] = -
+\frac{3}{2} \sin B_t  \int_t^{\infty} \mathrm{e}^{- s - (s -
+      t) / 2}
+\mathrm{d} s = - \mathrm{e}^{- t} \sin B_t,\)
+    </div>
+    <p>
+      so the observable in the class of \(N\) is \(O_t = B_t\). This
+      correction is the germ of the forward&ndash;backward equations of
+      Lecture 4: there the forecast is obtained from the field in the same
+      way, by adding the expected drift still to come.
+    </p>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Example <span style="font-style: normal">5.7</span>. </strong><span style="font-style: normal"><strong>(A
+      delta at a Brownian endpoint) </strong></span><a id="exa:delta"></a>Fix \(T > 0\),
+      \(y \in \mathbb{R}\), let \(p_s (w) = (2 \pi s)^{- 1 / 2} \mathrm{e}^{-
+      w^2 / 2 s}\) be the heat kernel, and
+    </p>
+    <div class="center">
+      \(\displaystyle \Pi^y_t := p_{T - t} (B_t - y), \qquad 0 \leqslant t <
+      T.\)
+    </div>
+    <p style="margin-bottom: 1em">
+      Here the resolution runs over \([0, T)\) (reparametrise by \((T - t)^{-
+      1}\) to get \([T^{- 1}, \infty)\)). The heat semigroup gives
+      \(\mathbb{E}_s \Pi^y_t = \Pi^y_s\), and \(\int g (y) \Pi^y_t \mathrm{d}
+      y =\mathbb{E}_t g (B_T)\) for bounded \(g\). At fixed \(y\), \(\Pi^y_t
+      \to 0\) almost surely as \(t \uparrow T\), but \(\mathbb{E} \Pi^y_t =
+      p_T (y) > 0\). So \(\delta (B_T - y)\) is not a random variable, but it
+      is an observable: the family of its conditional densities. The same
+      construction works for any Markov process with a transition density.
+    </p>
+    <p>
+      So an observable is determined by its asymptotic behaviour. A
+      <em>germ</em> for \(O\) is a family of functionals \(\mathring{O}_t\) on
+      smooth fields such that \(\|O_t - \mathring{O}_t (X_t)\|_{L^1} \to 0\).
+      The observable field \(O (x)\) is <em>local</em> if it admits germs of
+      the form
+    </p>
+    <div class="center">
+      \(\displaystyle \mathring{O}_t (X_t) (x) = \mathring{\mathcal{O}}_t (X_t
+      (x), \nabla X_t (x),
+\ldots, \nabla^k X_t (x)) .\)
+    </div>
+    <p>
+      Germs are not unique, and this freedom reflects the freedom of choosing
+      counterterms. By Lemma <a href="#lem:uniq">5.4</a>(b), a germ determines the
+      observable.
+    </p>
+    <h3 id="auto-17">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">5.1</span>.
+        </strong><span style="font-style: normal"><strong>(The field at resolution \(t\))
+        </strong></span><a id="ex:scale-GFF"></a> (a) Prove Proposition <a href="#prop:scale-GFF">5.2</a>.
+        <em>Hint:</em> on the torus, write \(X_t = \sum_n (\int_0^t \dot{q}_n
+        (s)^{1 / 2} \mathrm{d} B^n_s) e_n\). (b) For the heat profile, check
+        \(\int_0^{\infty} \dot{Q}_s \hspace{0.17em} \mathrm{d} s = C\) and
+        \(Q_t = C \mathrm{e}^{- A / t^2}\), and derive <span style="font-style: normal">(<a href="#eq:heat-kernel">5.2</a>)</span>.
+        (c) Show that \(x \mapsto X_t (x)\) is a.s. real analytic for the heat
+        profile.</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">5.2</span>.
+        </strong><span style="font-style: normal"><strong>(Divergence of \(c_t\))
+        </strong></span><a id="ex:ct"></a> For the heat profile on \(\mathbb{R}^d\),
+        show that \(c_t = \frac{1}{4 \pi} E_1  (m^2 / t^2) = \frac{1}{2 \pi}
+        \log \frac{t}{m} + O
+(1)\) for \(d = 2\), where \(E_1\) is the
+        exponential integral, and that \(c_t \asymp t^{d - 2}\) for \(d
+        \geqslant 3\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">5.3</span>.
+        </strong><span style="font-style: normal"><strong>(Brownian observables)
+        </strong></span><a id="ex:brownian-obs"></a>(a) Show that \(H_n (B_t ; t)\) is a
+        martingale and that \(\mathbb{E} |H_n (B_t ; t) | = t^{n / 2}
+        \mathbb{E} |H_n (Z ; 1) |\). (b) Show that the exponential martingale
+        of Example <a href="#exa:brownian">5.5</a> converges to \(0\) almost surely and is
+        not uniformly integrable. Which observables of Brownian motion are
+        closed? (c) Check the computation of the repaired observable for \(N_t
+        = B_t + \mathrm{e}^{- t} \sin B_t\), and find the observable in the
+        class of \(N_t = B_t + \mathrm{e}^{- t} B_t^2\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">5.4</span>.
+        </strong><span style="font-style: normal"><strong>(Brownian deltas) </strong></span><a
+        id="ex:brownian-delta"></a>(a) Prove the properties of \(\Pi^y\) stated in Example <a
+        href="#exa:delta">5.7</a>. (b) Show that \(y \mapsto \Pi^y_t\) is a probability
+        density for every \(t < T\): the family \((\Pi^y)_y\) is a
+        measure-valued observable of total mass one, although each \(\Pi^y_t\)
+        tends to zero. (c) Show that \(\partial_y^k \Pi^y\) is an observable,
+        with \(\int g (y) \partial_y^k \Pi^y_t \mathrm{d} y = (- 1)^k
+        \mathbb{E}_t g^{(k)}
+(B_T)\) for smooth bounded \(g\): the observable
+        of \(\partial_y^k \delta (B_T - y)\).</span>
+      </p>
+    </div>
+    <h2 id="auto-18"><a id="sec:gff-obs"></a>6<span style="margin-left: 1em"></span>Observables of the Gaussian free
+    field and their products<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-19">6.1<span style="margin-left: 1em"></span>Wick powers and exponentials<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-20"></a>
+      </div>
+      <h5>Point evaluations.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        For every \(x\) and every \(d\), \(\textbf{X} (x) := (X_t (x))_{t
+        \geqslant 0}\) is a local observable. For \(d \geqslant 2\) it is not
+        closed: \(\mathbb{E}X_t (x)^2 = c_t \to \infty\).
+      </div>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-21"></a>
+      </div>
+      <h5>Wick powers.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Recall that \(\partial_c H_n  (a ; c) = - \frac{1}{2} \partial_a^2
+        H_n  (a ; c)\) and \(\partial_a H_n = nH_{n - 1}\) (differentiate the
+        generating function \(\mathrm{e}^{\tau a - c \tau^2 / 2}\)).
+      </div>
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em">
+        <strong class="enunciation-name">Proposition <span style="font-style: normal">6.1</span>.
+        </strong><i><span style="font-style: normal"><strong>(Wick observables)
+        </strong></span><a id="prop:wick-obs"></a> For every \(d \geqslant 1\), \(n
+        \geqslant 1\) and \(x \in \mathcal{M}\),</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle : X^n_t : (x) := H_n  (X_t (x) ; c_t)\)
+        </div></div>
+      </p>
+      <p>
+        <i>is a continuous martingale, with \(\mathrm{d} \hspace{0.17em} :
+        X^n_t : (x) = n \hspace{0.17em} : X^{n - 1}_t :
+(x) \hspace{0.17em}
+        \mathrm{d} X_t (x)\) and</i>
+      </p>
+      <div class="block-italic"><table width="100%">
+        <tr>
+          <td width="100%" align="center"><a id="eq:wick-obs-cov"></a>\(\displaystyle \mathbb{E} \left[ :
+          X^n_t : (x) \hspace{0.17em} : X^k_t : (y) \right] =
+\delta_{nk}
+          \hspace{0.17em} n! \hspace{0.17em} Q_t  (x, y)^n .\)</td>
+          <td align="right">(6.1)</td>
+        </tr>
+      </table></div>
+      <p style="margin-bottom: 1em">
+        <i>In particular, for \(x \neq y\), \(\lim_t \mathbb{E} [: X^n_t : (x)
+        : X^n_t : (y)] = n! \hspace{0.17em} G (x -
+y)^n\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong class="enunciation-name">Proof. </strong>By It&ocirc;'s formula, using
+      \(\mathrm{d} \langle X (x), X (x) \rangle_t = \dot{c}_t
+      \hspace{0.17em}
+\mathrm{d} t\),
+    </p>
+    <div class="center">
+      \(\displaystyle \mathrm{d} H_n  (X_t (x) ; c_t) = \partial_a H_n
+      \hspace{0.17em} \mathrm{d}
+X_t (x) + \left( \tfrac{1}{2} \partial_a^2
+      H_n + \partial_c H_n \right)
+\dot{c}_t \hspace{0.17em} \mathrm{d} t =
+      nH_{n - 1}  (X_t (x) ; c_t)
+\hspace{0.17em} \mathrm{d} X_t (x) .\)
+    </div>
+    <p style="margin-bottom: 1em">
+      The covariance is Lemma <a href="cqft_lecture_2.html#lem:hermite">3.8</a> of Lecture 2, applied to the
+      Gaussian vector \((X_t (x), X_t (y))\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      Compare with Theorem <a href="cqft_lecture_2.html#thm:wick">3.9</a> of Lecture 2: there \(:
+      \varphi^n\): existed as a random distribution only for \(n (d - 2) <
+      d\), and by Proposition <a href="cqft_lecture_2.html#prop:no-wick">3.11</a> not at all otherwise. As
+      observables, Wick powers exist in <em>every</em> dimension and need no
+      smearing. When \(n (d - 2) \geqslant d\) and \(0 \leqslant f
+      \mathrel{\not\equiv} 0\), the smeared martingale \(t \mapsto : X_t^n :
+      (f)\) is unbounded in \(L^2\) and, by the Paley&ndash;Zygmund argument
+      of Lecture 2, not even tight as \(t \to \infty\): it has no terminal
+      value, and the observable is the whole family, not a limit. The
+      singularity has not disappeared. It has moved from the observables
+      themselves to their <em>products</em> at coincident points, as we now
+      see.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-22"></a>
+      </div>
+      <h5>Exponentials.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        For \(\beta \in \mathbb{C}\), \(: \mathrm{e}^{\beta X_t} : (x) :=
+        \exp (\beta X_t (x) - \frac{\beta^2}{2} c_t)\) is the stochastic
+        exponential of \(\beta X (x)\), hence a martingale, and \(\mathbb{E}
+        [: \mathrm{e}^{\beta_1 X_t} : (x) : \mathrm{e}^{\beta_2 X_t} : (y)]
+=
+        \mathrm{e}^{\beta_1 \beta_2 Q_t  (x, y)}\).
+      </div>
+    </p>
+    <h3 id="auto-23"><a id="sec:product"></a>6.2<span style="margin-left: 1em"></span>Products of observables<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      The pointwise product of two martingales is not a martingale. The
+      natural definition of the product keeps the asymptotics.
+    </p>
+    <div class="theorem">
+      <p style="margin-top: 1em; margin-bottom: 1em">
+        <strong class="enunciation-name">Definition <span style="font-style: normal">6.2</span>. </strong><i><a
+        id="def:product"></a>Two observables \(O^1, O^2\) <em>admit a product</em> if
+        \(O^1_t O^2_t \in L^1\) for all \(t\) and there is an observable \(O^1
+        \star O^2\) with \(\|(O^1 \star O^2)_t - O^1_t O^2_t \|_{L^1} \to 0\).
+        By Lemma <a href="#lem:uniq">5.4</a> it is unique, and \((O^1 \star O^2)_s =
+        \lim_t \mathbb{E}_s [O^1_t O^2_t]\).</i>
+      </p>
+    </div>
+    <div class="key-result">
+      <div class="theorem">
+        <p style="margin-top: 1em">
+          <strong class="enunciation-name">Proposition <span style="font-style: normal">6.3</span>. </strong><i><a
+          id="prop:product"></a>Let \(O^1, O^2\) be continuous observables, square
+          integrable on bounded intervals, with</i>
+        </p>
+        <div class="block-italic"><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:prod-cond"></a>\(\displaystyle \mathbb{E}
+            \int_0^{\infty} | \mathrm{d} \langle O^1, O^2 \rangle_s | <
+            \infty
+.\)</td>
+            <td align="right">(6.2)</td>
+          </tr>
+        </table></div>
+        <p>
+          <i>Then \(O^1 \star O^2\) exists and</i>
+        </p>
+        <div class="block-italic"><table width="100%">
+          <tr>
+            <td width="100%" align="center"><a id="eq:prod-formula"></a>\(\displaystyle (O^1 \star O^2)_t =
+            O^1_t O^2_t +\mathbb{E}_t \left[ \int_t^{\infty}
+\mathrm{d}
+            \langle O^1, O^2 \rangle_s \right] .\)</td>
+            <td align="right">(6.3)</td>
+          </tr>
+        </table></div>
+        <p style="margin-bottom: 1em">
+          <i>In particular \(\langle O^1 \star O^2 \rangle =\mathbb{E} [O^1_0
+          O^2_0] +\mathbb{E} \langle
+O^1, O^2 \rangle_{\infty}\).</i>
+        </p>
+      </div>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Proof. </strong>\(P_t := O^1_t O^2_t - \langle O^1, O^2
+      \rangle_t\) is a martingale on bounded intervals, and \(N_t :=
+      \mathbb{E}_t  \langle O^1, O^2 \rangle_{\infty}\) is a closed martingale
+      by <span style="font-style: normal">(<a href="#eq:prod-cond">6.2</a>)</span>. So \(P + N\) is a
+      martingale and equals the right-hand side of <span style="font-style: normal">(<a href="#eq:prod-formula">6.3</a>)</span>.
+      Its distance from \(O^1_t O^2_t\) in \(L^1\) is at most \(\mathbb{E}
+      \int_t^{\infty} | \mathrm{d} \langle O^1, O^2 \rangle | \to 0\).<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-24"></a>
+      </div>
+      <h5>Brownian deltas.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The observables \(\Pi^y\) of Example <a href="#exa:delta">5.7</a> show the
+        mechanism of the operator product expansion in its simplest form.
+        Write \(\kappa_s = (4 \pi s)^{- 1 / 2}\). Completing the square,
+        \((B_t - y)^2 + (B_t - z)^2 = 2 (B_t - \bar{y})^2 + (y - z)^2 / 2\)
+        with \(\bar{y} = (y + z) / 2\), gives the exact identity
+      </div>
+    </p>
+    <div class="center">
+      \(\displaystyle \Pi^y_t \Pi^z_t = \kappa_{T - t} \mathrm{e}^{- (y - z)^2
+      / 4 (T - t)} p_{(T -
+t) / 2} (B_t - \bar{y}), \qquad t < T.\)
+    </div>
+    <p>
+      Since \(B_t \sim N (0, t)\), \(\mathbb{E}p_{(T - t) / 2} (B_t - \bar{y})
+      = p_{(T + t) / 2} (\bar{y})\), and, the product being nonnegative, its
+      expectation is its \(L^1\) norm: for \(y \neq z\)
+    </p>
+    <div class="center">
+      \(\displaystyle \| \Pi^y_t \Pi^z_t \|_{L^1} = \kappa_{T - t}
+      \mathrm{e}^{- (y - z)^2 / 4 (T -
+t)} p_{(T + t) / 2} (\bar{y})
+      \longrightarrow 0 \qquad (t \uparrow T) :\)
+    </div>
+    <p>
+      so \(\Pi^y_t \Pi^z_t\) is asymptotically equivalent to the zero
+      observable, and by Definition <a href="#def:product">6.2</a> the product exists and
+      \(\Pi^y \star \Pi^z = 0\). At \(y = z\) the exponential suppression is
+      lost, and \(\mathbb{E} (\Pi^y_t)^2 = \kappa_{T - t} p_{(T + t) / 2} (y)
+      \to \infty\): the square does not exist, since a martingale \(O\) with
+      \(\|O_t - (\Pi^y_t)^2 \|_{L^1} \to 0\) would force \(\mathbb{E}
+      (\Pi^y_t)^2 \to \mathbb{E}O_0 < \infty\). The square can, however, be
+      resolved at a fixed coarser resolution. Let \(u = T - \varepsilon\) be a
+      fine resolution and \(s < u\) a coarser one. Since \(p_{\varepsilon}
+      (w)^2 = \kappa_{\varepsilon} p_{\varepsilon / 2} (w)\),
+    </p>
+    <div class="center">
+      \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
+      \kappa_{\varepsilon} p_{T - s -
+\varepsilon / 2} (B_s - y) =
+      \kappa_{\varepsilon} \Pi^y_s -
+      \frac{\varepsilon
+\kappa_{\varepsilon}}{4} \partial_y^2 \Pi^y_s +
+      \frac{\varepsilon^2
+\kappa_{\varepsilon}}{32} \partial_y^4 \Pi^y_s +
+      O_{L^1} (\varepsilon^{5 /
+2}),\)
+    </div>
+    <p>
+      by Taylor expansion in the time variable and \(\partial_{\tau} p_{\tau}
+      = \frac{1}{2} \partial_y^2 p_{\tau}\). This is an operator product
+      expansion: singular coefficients (\(\kappa_{\varepsilon} \to \infty\),
+      while \(\varepsilon \kappa_{\varepsilon}, \varepsilon^2
+      \kappa_{\varepsilon} \to 0\)) times the observables \(\Pi^y\),
+      \(\partial_y^2 \Pi^y\), \(\ldots\). The order of the limits matters: the
+      remainder is small only after conditioning at a fixed resolution \(s\).
+      Without conditioning, \((\Pi^y_{T - \varepsilon})^2 -
+      \kappa_{\varepsilon} \Pi^y_{T - \varepsilon} =
+\kappa_{\varepsilon}
+      [p_{\varepsilon / 2} - p_{\varepsilon}] (B_{T -
+\varepsilon} - y)\) has
+      \(L^1\) norm of order \(\varepsilon^{- 1 / 2}\).
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-25"></a>
+      </div>
+      <h5>Products of point evaluations.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Here \(\langle \textbf{X} (x), \textbf{X} (y) \rangle_t = Q_t  (x -
+        y)\) is deterministic and <span style="font-style: normal">(<a href="#eq:prod-cond">6.2</a>)</span>
+        reads \(\int_0^{\infty} | \dot{Q}_s (x - y) | \mathrm{d} s < \infty\).
+        For the heat profile and \(d \geqslant 2\) this holds iff \(x \neq
+        y\), and then \(\dot{Q}_s \geqslant 0\) and the integral is \(G (x -
+        y)\). Hence
+      </div>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:XX"></a>\(\displaystyle (\textbf{X} (x) \star
+        \textbf{X} (y))_t = X_t (x) X_t (y) + G (x - y) - Q_t
+(x - y), \qquad
+        \langle \textbf{X} (x) \star \textbf{X} (y) \rangle = G (x
+        -
+y),\)</td>
+        <td align="right">(6.4)</td>
+      </tr>
+    </table>
+    <p>
+      which is the correct two-point function. We never had to discuss the
+      regularity of \(X_{\infty}\). For \(x = y\) and \(d \geqslant 2\) the
+      product does not exist: its expectation would be \(\lim_t \mathbb{E}X_t
+      (x)^2 = \lim_t c_t = \infty\).
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-26"></a>
+      </div>
+      <h5>Operator product expansion.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Formula <span style="font-style: normal">(<a href="#eq:XX">6.4</a>)</span> has an exact
+        short-distance expansion at every resolution: for fixed \(t\), as \(y
+        \to x\),
+      </div>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:OPE"></a>\(\displaystyle (\textbf{X} (x) \star
+        \textbf{X} (y))_t - G (x - y) \hspace{0.27em}
+\longrightarrow
+        \hspace{0.27em} X_t (x)^2 - c_t = : X^2_t : (x) .\)</td>
+        <td align="right">(6.5)</td>
+      </tr>
+    </table>
+    <p>
+      Since both sides are martingales, this reads \(\textbf{X} (x) \star
+      \textbf{X} (y) = G (x - y)  \mathbb{1} + : \textbf{X}^2 :
+(x) + o (1)\),
+      the remainder tending to zero at each fixed resolution \(t\): the Wick
+      square is the regular part of the product, and \(G (x - y)\) is its
+      singular coefficient. More generally (Exercise <a href="#ex:wick-product">6.2</a>), for
+      \(x \neq y\),
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:wick-product"></a>\(\displaystyle : \textbf{X}^n : (x)
+        \star : \textbf{X}^k : (y) = \sum_{j \leqslant n \wedge
+k} j!
+        \binom{n}{j} \binom{k}{j} \hspace{0.17em} G (x - y)^j \hspace{0.17em}
+        :
+\textbf{X}^{n - j} (x) \textbf{X}^{k - j} (y) :,\)</td>
+        <td align="right">(6.6)</td>
+      </tr>
+    </table>
+    <p>
+      where \(: \textbf{X}^p (x) \textbf{X}^q (y) :_t := H_p  (X_t (x) ; c_t)
+      H_q  (X_t (y)
+; c_t)\) minus its contractions at scales \(\leqslant t\).
+      This is Wick's theorem written at the level of observables. The
+      coefficients \(G (x - y)^j\) carry all the singularities, and the
+      observables on the right have regular limits as \(y \to x\).
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-27"></a>
+      </div>
+      <h5>Higher orders.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The expansion <span style="font-style: normal">(<a href="#eq:OPE">6.5</a>)</span> continues at
+        every fixed resolution. With \(x_{\pm} = x \pm \rho e / 2\), \(|e| =
+        1\), \(\partial = e \cdot \nabla\) and \(\mathcal{W}_t (U, V) := U_t
+        V_t -\mathbb{E} [U_t V_t]\),
+      </div>
+    </p>
+    <div class="center">
+      \(\displaystyle (X (x_-) \star X (x_+))_t = G (\rho e) + : X_t^2 : (x) +
+      \rho^2 C_{2, t} (x) +
+\rho^4 C_{4, t} (x) + O_{L^1} (\rho^6),\)
+    </div>
+    <div class="center">
+      \(\displaystyle C_2 = \frac{1}{4}  (\mathcal{W}(X, \partial^2 X)
+      -\mathcal{W}(\partial X,
+\partial X)), \qquad C_4 = \frac{1}{192}
+      (\mathcal{W}(X, \partial^4 X) -
+4\mathcal{W}(\partial X, \partial^3 X) +
+      3\mathcal{W}(\partial^2 X, \partial^2
+X)) .\)
+    </div>
+    <p>
+      Subtracting \(G\) leaves the bilocal Wick product \(X_t (x_-) X_t (x_+)
+      - Q_t (x_-, x_+)\), which is smooth in \(\rho\) at fixed \(t\), and the
+      symmetry \(\rho \mapsto - \rho\) kills the odd orders. Each coefficient
+      is a finite sum of Wick bilinears, hence an observable. The constant in
+      the remainder depends on \(t\); the limit \(t \to \infty\) is a separate
+      question. A systematic study of the operator product expansion in this
+      framework is due to P. Paulovics (in preparation).
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-28"></a>
+      </div>
+      <h5>Locality and factorisation.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Let \(O^1, O^2\) be observables with germs supported in \(U^1_{1 /
+        t}\) and \(U^2_{1 / t}\), where \(U^i\) are sets at positive distance
+        and \(U_r\) is the \(r\)-neighbourhood of \(U\). The covariation
+        \(\mathrm{d} \langle O^1, O^2 \rangle_t = \langle DO^1_t, \dot{Q}_t
+
+\hspace{0.17em} DO^2_t \rangle \mathrm{d} t\), with D acting on the
+        germs, involves \(\dot{Q}_t\) only between the two supports. For a
+        finite range decomposition it vanishes for large \(t\), so the product
+        exists and is asymptotically the pointwise product. For the heat
+        profile it is exponentially small, by <span style="font-style: normal">(<a href="#eq:heat-kernel">5.2</a>)</span>.
+        Thus, under integrability conditions on the drifts of the germs,
+        observables supported on disjoint regions can be multiplied, while the
+        products of observables at the same point require renormalisation
+        (Figure <a href="#fig:locality">6.1</a>). This is the structure of a
+        <em>factorisation algebra</em> of observables; the precise axioms are
+        not discussed here; see [<a href="#bib-BCG26">BCG26</a>].
+      </div>
+    </p>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><div class="center">
+            <img class="image" src="cqft_lecture_3-3.png" width="100%" alt="Figure from Cqft_Lecture_3" decoding="async" loading="lazy"><a id="fig:locality"></a>
+          </div></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <div style="font-size: 84.1%"><p>
+              <b>Figure 6.1. </b><a id="auto-29"></a>Covariation of point observables,
+              heat profile in \(d = 2\). Left: the kernels of \(\dot{Q}_s^{1 /
+              2}\) centred at \(x\) (navy) and at \(y\) (teal) at three
+              resolutions, with their overlap (gold). The integral of the
+              product of the two kernels is the covariation density
+              \(\dot{Q}_s  (x - y)\). Right: \(s \mapsto \dot{Q}_s  (x - y)\)
+              for three distances (\(m = 1\)). Its integral is \(G (x - y)\),
+              and it is negligible for \(s \gg 1 / |x - y|\). As \(y \to x\)
+              the mass moves to \(s \to \infty\), which is the divergence of
+              the product at coincident points.
+            </p></div>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong class="enunciation-name">Remark <span style="font-style: normal">6.4</span>. </strong><a id="rem:finite-range"></a>A
+      finite range decomposition makes these statements exact: if \(\dot{Q}_t
+      (x, y) = 0\) for \(|x - y| \geqslant 1 / t\), then \(X_T - X_t\)
+      restricted to regions at distance \(\geqslant 1 / t\) are independent.
+      Such decompositions of \((m^2 - \Delta)^{- 1}\) exist and are a basic
+      tool of the rigorous renormalisation group [<a href="#bib-BBS19">BBS19</a>].
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-30"></a>
+      </div>
+      <h5>Outlook.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Interactions are introduced in Lecture 4. The effective potentials
+        solve the Polchinski equation, and the interacting field seen at
+        increasing resolution solves a forward&ndash;backward stochastic
+        differential equation whose force is itself an observable. Products,
+        the operator product expansion and the locality of observables, which
+        we met here for the GFF, are the tools to describe it.
+      </div>
+    </p>
+    <h3 id="auto-31">Exercises<span style="margin-left: 1em"></span></h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">6.1</span>.
+        </strong><span style="font-style: normal"><strong>(Hermite calculus along the flow)
+        </strong></span><a id="ex:hermite-flow"></a> (a) Show that \(\int H_n  (a + b ; c)
+        \hspace{0.17em} \mu^s (\mathrm{d} b) = H_n  (a ; c - s)\) for \(0
+        \leqslant s \leqslant c\), where \(\mu^s = N (0, s)\). (b) Deduce
+        again that \(H_n  (X_t (x) ; c_t)\) is a martingale, using only the
+        independence of the increments.</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">6.2</span>.
+        </strong><span style="font-style: normal"><strong>(Products of Wick observables)
+        </strong></span><a id="ex:wick-product"></a> (a) Show that <span style="font-style: normal">(<a href="#eq:prod-cond">6.2</a>)</span>
+        holds for \(: \textbf{X}^n : (x)\) and \(: \textbf{X}^k : (y)\) when
+        \(x \neq y\) and \(Q\) is the heat profile. <em>Hint:</em> \(c_s\)
+        grows at most polynomially while \(\dot{Q}_s  (x - y)\) decays like
+        \(\mathrm{e}^{- s^2  |x - y|^2 / 4}\). (b) Show that \(\langle :
+        \textbf{X}^n : (x) \star : \textbf{X}^n : (y) \rangle = n^2
+
+\int_0^{\infty} (n - 1) ! \hspace{0.17em} Q_s^{n - 1}
+        \dot{Q}_s
+\hspace{0.17em} \mathrm{d} s = n! \hspace{0.17em} G (x -
+        y)^n\). (c) Prove <span style="font-style: normal">(<a href="#eq:wick-product">6.6</a>)</span>.</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">6.3</span>.
+        </strong><span style="font-style: normal"><strong>(Exponential observables)
+        </strong></span>For \(\beta = \mathrm{i} b\), \(b \in \mathbb{R}\),
+        and the heat profile, show that condition <span style="font-style: normal">(<a href="#eq:prod-cond">6.2</a>)</span>
+        for \(: \mathrm{e}^{\mathrm{i} b \textbf{X}} : (x) \star
+        \overline{:
+\mathrm{e}^{\mathrm{i} b \textbf{X}} : (y)}\) reads
+        \(\int^{\infty} \mathrm{e}^{b^2 c_s} \dot{Q}_s  (x - y) \mathrm{d} s <
+        \infty\). Deduce that the product exists for all \(x \neq y\) if \(d
+        \leqslant 3\), for \(|x - y| > |b| / 2 \pi\) but not for \(|x - y| <
+        |b| / 2 \pi\) if \(d = 4\), and not at all if \(d \geqslant 5\). For
+        \(d \leqslant 3\) show that its expectation is \(\mathrm{e}^{b^2 G (x
+        - y)}\), and decide for which \(b\) it is locally integrable in \(y\):
+        all \(b\) in \(d = 1\), \(b^2 < 4 \pi\) in \(d = 2\) (the \(L^2\)
+        threshold of Lecture 2), only \(b = 0\) in \(d = 3\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">6.4</span>.
+        </strong><span style="font-style: normal"><strong>(The Brownian OPE) </strong></span><a
+        id="ex:brownian-ope"></a>(a) Prove the product identity for \(p_{\varepsilon} (B - y)
+        p_{\varepsilon} (B - z)\) and deduce \(\Pi^y \star \Pi^z = 0\) for \(y
+        \neq z\). (b) Derive the expansion of \(\mathbb{E}_s [(\Pi^y_{T -
+        \varepsilon})^2]\) to all orders in \(\varepsilon\), and bound the
+        remainder in \(L^1\) at fixed \(s\). (c) Show that the unconditioned
+        remainder has \(L^1\) norm \(\sim \kappa_{\varepsilon} p_T (y)  \int
+        |p_{1 / 2} - p_1 |\).</span>
+      </p>
+    </div>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
+      <p>
+        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">6.5</span>.
+        </strong><span style="font-style: normal"><strong>(Point splitting) </strong></span><a
+        id="ex:point-splitting"></a>(a) Derive the coefficients \(C_2\) and \(C_4\) above by
+        Taylor expanding \(X_t (x \pm \rho e / 2)\). (b) Show that
+        \(\mathbb{E}C_{2, t} = 0\) and compute \(\mathbb{E} [C_{2, t} (x)^2]\)
+        for the heat profile. How does it grow as \(t \to \infty\)?</span>
+      </p>
+    </div>
+    <h2 id="auto-32">References<span style="margin-left: 1em"></span></h2>
+    <dl>
+      <p>
+        <dt>
+          <strong>[ADG20]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-ADG20"></a>S. Albeverio, F.<span style="margin-left: 0.17em"></span>C. De Vecchi, M.
+            Gubinelli. Elliptic stochastic quantization. <em>Ann. Probab.</em>
+            48 (2020), 1693&ndash;1741.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[ADG21]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-ADG21"></a>S. Albeverio, F.<span style="margin-left: 0.17em"></span>C. De Vecchi, M.
+            Gubinelli. The elliptic stochastic quantization of some two
+            dimensional Euclidean QFTs. <em>Ann. Inst. Henri Poincar&eacute;
+            Probab. Stat.</em> 57 (2021), 2372&ndash;2414.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[AR91]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-AR91"></a>S. Albeverio, M. R&ouml;ckner. Stochastic differential
+            equations in infinite dimensions: solutions via Dirichlet forms.
+            <em>Probab. Theory Related Fields</em> 89 (1991), 347&ndash;386.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BBD24]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BBD24"></a>R. Bauerschmidt, T. Bodineau, B. Dagallier. Stochastic
+            dynamics and the Polchinski equation: an introduction. <em>Probab.
+            Surveys</em> 21 (2024), 200&ndash;290.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BBS19]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BBS19"></a>R. Bauerschmidt, D.<span style="margin-left: 0.17em"></span>C. Brydges, G.
+            Slade. <em>Introduction to a Renormalisation Group Method</em>.
+            Lecture Notes in Math. 2242, Springer, 2019.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BCG26]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BCG26"></a>I. Bailleul, I. Chevyrev, M. Gubinelli. Stochastic
+            observables and Wilson&ndash;It&ocirc; diffusions. In preparation.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BG20]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BG20"></a>N. Barashkov, M. Gubinelli. A variational method for
+            \(\Phi^4_3\). <em>Duke Math. J.</em> 169 (2020), 3339&ndash;3415.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BG23]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BG23"></a>N. Barashkov, M. Gubinelli. On the variational method
+            for Euclidean quantum fields in infinite volume. <em>Probab. Math.
+            Phys.</em> 4 (2023), 761&ndash;801.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[BK87]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-BK87"></a>D.<span style="margin-left: 0.17em"></span>C. Brydges, T. Kennedy. Mayer
+            expansions and the Hamilton&ndash;Jacobi equation. <em>J. Stat.
+            Phys.</em> 48 (1987), 19&ndash;49.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[CC18]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-CC18"></a>R. Catellier, K. Chouk. Paracontrolled distributions
+            and the 3-dimensional stochastic quantization equation. <em>Ann.
+            Probab.</em> 46 (2018), 2621&ndash;2679.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DH87]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DH87"></a>P.<span style="margin-left: 0.17em"></span>H. Damgaard, H. H&uuml;ffel.
+            Stochastic quantization. <em>Phys. Rep.</em> 152 (1987),
+            227&ndash;398.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DH88]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DH88"></a>P.<span style="margin-left: 0.17em"></span>H. Damgaard, H. H&uuml;ffel
+            (eds.). <em>Stochastic Quantization</em>. World Scientific, 1988.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[DPD03]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-DPD03"></a>G. Da Prato, A. Debussche. Strong solutions to the
+            stochastic quantization equations. <em>Ann. Probab.</em> 31
+            (2003), 1900&ndash;1916.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GH19]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GH19"></a>M. Gubinelli, M. Hofmanov&aacute;. Global solutions to
+            elliptic and parabolic \(\Phi^4\) models in Euclidean space.
+            <em>Comm. Math. Phys.</em> 368 (2019), 1201&ndash;1266.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GH21]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GH21"></a>M. Gubinelli, M. Hofmanov&aacute;. A PDE construction
+            of the Euclidean \(\Phi^4_3\) quantum field theory. <em>Comm.
+            Math. Phys.</em> 384 (2021), 1&ndash;75.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[GIP15]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-GIP15"></a>M. Gubinelli, P. Imkeller, N. Perkowski. Paracontrolled
+            distributions and singular PDEs. <em>Forum Math. Pi</em> 3 (2015),
+            e6.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Gub25]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Gub25"></a>M. Gubinelli. Stochastic quantisation. In
+            <em>Encyclopedia of Mathematical Physics</em>, 2nd ed., Academic
+            Press, 2025, 648&ndash;667.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Hai14]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Hai14"></a>M. Hairer. A theory of regularity structures.
+            <em>Invent. Math.</em> 198 (2014), 269&ndash;504.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[JLM85]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-JLM85"></a>G. Jona-Lasinio, P.<span style="margin-left: 0.17em"></span>K. Mitter. On
+            the stochastic quantization of field theory. <em>Comm. Math.
+            Phys.</em> 101 (1985), 409&ndash;436.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[KLP84]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-KLP84"></a>A. Klein, L.<span style="margin-left: 0.17em"></span>J. Landau, J.<span
+            style="margin-left: 0.17em"></span>F. Perez. Supersymmetry and the Parisi&ndash;Sourlas
+            dimensional reduction: a rigorous proof. <em>Comm. Math.
+            Phys.</em> 94 (1984), 459&ndash;482.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[MW17]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-MW17"></a>J.-C. Mourrat, H. Weber. The dynamic \(\Phi^4_3\) model
+            comes down from infinity. <em>Comm. Math. Phys.</em> 356 (2017),
+            673&ndash;753.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Pol84]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Pol84"></a>J. Polchinski. Renormalization and effective
+            Lagrangians. <em>Nuclear Phys. B</em> 231 (1984), 269&ndash;295.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PS79]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PS79"></a>G. Parisi, N. Sourlas. Random magnetic fields,
+            supersymmetry, and negative dimensions. <em>Phys. Rev. Lett.</em>
+            43 (1979), 744&ndash;745.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[PW81]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-PW81"></a>G. Parisi, Y.-S. Wu. Perturbation theory without gauge
+            fixing. <em>Sci. Sinica</em> 24 (1981), 483&ndash;496.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[Sal99]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-Sal99"></a>M. Salmhofer. <em>Renormalization: An
+            Introduction</em>. Springer, 1999.
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          <strong>[WK74]  </strong>
+        </dt>
+        <dd>
+          <p>
+            <a id="bib-WK74"></a>K.<span style="margin-left: 0.17em"></span>G. Wilson, J. Kogut. The
+            renormalization group and the \(\epsilon\) expansion. <em>Phys.
+            Rep.</em> 12 (1974), 75&ndash;199.
+          </p>
+        </dd>
+      </p>
+    </dl>
+  </body>
+</html>

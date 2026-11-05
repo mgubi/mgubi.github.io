@@ -15,7 +15,7 @@
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--6 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|04 Nov 2026>
+  Stochastic Analysis Trimester Programme.|05 Nov 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
   Oct 2026>

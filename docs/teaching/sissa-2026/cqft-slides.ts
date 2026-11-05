@@ -90,13 +90,65 @@
     </src-comment>
   </active*>
 
-  <assign|cqft-course-title|<macro|body|<with|font-size|1.7|font-series|bold|color|dark
+  <assign|cqft-course-name|<macro|A Constructive Introduction to Quantum Field Theory>>
+
+  <assign|cqft-author|<macro|Massimiliano Gubinelli \| University of Oxford>>
+
+  <assign|cqft-course-title|<macro|body|<with|font-size|1.25|font-series|bold|color|dark
   red|<arg|body>>>>
 
-  <assign|cqft-lecture-title|<macro|body|<with|font-size|1.3|<arg|body>>>>
+  <assign|cqft-lecture-title|<macro|body|<with|font-size|1.15|<arg|body>>>>
+
+  <\active*>
+    <\src-comment>
+      The title slide of each lecture: cqft-title-slide|lecture title|credit
+      line (may be empty)|information line. The course name (on one line)
+      and the author are cqft-course-name and cqft-author; the spacing is
+      set here.
+    </src-comment>
+  </active*>
+
+  <assign|cqft-title-slide|<\macro|title|credit|info>
+    <\with|par-mode|left>
+      <vspace*|1.2cm>
+
+      <cqft-course-title|<cqft-course-name>>
+
+      <vspace|0.3cm>
+
+      <cqft-lecture-title|<arg|title>>
+
+      <vspace|1.2cm>
+
+      <small|<cqft-author>>
+
+      <small|<if|<unequal|<arg|credit>|>|<arg|credit><next-line>><with|color|dark
+      grey|<arg|info>>>
+    </with>
+  </macro>>
 
   <assign|cqft-part-title|<macro|body|<with|font-size|1.35|font-series|bold|color|dark
   red|<arg|body>>>>
+
+  <\active*>
+    <\src-comment>
+      Text tables: data-table (natural width) and wide-data-table (full
+      width) take a tformat whose table has a header row; rules above and
+      below the header and below the last row, cells centred vertically,
+      padding data-table-hsep and data-table-vsep, rule width
+      data-table-rule. Extra cwith's in the argument are kept.
+    </src-comment>
+  </active*>
+
+  <assign|data-table-hsep|0.6em>
+
+  <assign|data-table-vsep|0.25fn>
+
+  <assign|data-table-rule|1ln>
+
+  <assign|data-table|<macro|body|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|-1|1|-1|cell-lsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-rsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-tsep|<value|data-table-vsep>>|<cwith|1|-1|1|-1|cell-bsep|<value|data-table-vsep>>|<cwith|1|1|1|-1|cell-tborder|<value|data-table-rule>>|<cwith|1|1|1|-1|cell-bborder|<value|data-table-rule>>|<cwith|-1|-1|1|-1|cell-bborder|<value|data-table-rule>>|<arg|body>>>>>
+
+  <assign|wide-data-table|<macro|body|<wide-tabular|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|-1|1|-1|cell-lsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-rsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-tsep|<value|data-table-vsep>>|<cwith|1|-1|1|-1|cell-bsep|<value|data-table-vsep>>|<cwith|1|1|1|-1|cell-tborder|<value|data-table-rule>>|<cwith|1|1|1|-1|cell-bborder|<value|data-table-rule>>|<cwith|-1|-1|1|-1|cell-bborder|<value|data-table-rule>>|<arg|body>>>>>
 
   <\active*>
     <\src-comment>

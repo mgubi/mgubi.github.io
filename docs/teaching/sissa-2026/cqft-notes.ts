@@ -86,13 +86,42 @@
 
   <\active*>
     <\src-comment>
-      Title block: the course title (doc-title) smaller, the lecture title
+      Text tables (dictionaries, weights, counts): data-table takes a tformat
+      whose table has a header row; it draws rules above and below the
+      header and below the last row, centres the cells vertically, and uses
+      the padding data-table-hsep, data-table-vsep, the rule width
+      data-table-rule and the relative font size data-table-size. Extra
+      cwith's in the argument (e.g. column widths) are kept.
+    </src-comment>
+  </active*>
+
+  <assign|data-table-hsep|0.6em>
+
+  <assign|data-table-vsep|0.45fn>
+
+  <assign|data-table-rule|1ln>
+
+  <assign|data-table-size|0.84>
+
+  <assign|data-table|<macro|body|<with|font-size|<value|data-table-size>|<tabular*|<tformat|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|-1|1|-1|cell-lsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-rsep|<value|data-table-hsep>>|<cwith|1|-1|1|-1|cell-tsep|<value|data-table-vsep>>|<cwith|1|-1|1|-1|cell-bsep|<value|data-table-vsep>>|<cwith|1|1|1|-1|cell-tborder|<value|data-table-rule>>|<cwith|1|1|1|-1|cell-bborder|<value|data-table-rule>>|<cwith|-1|-1|1|-1|cell-bborder|<value|data-table-rule>>|<arg|body>>>>>>
+
+  <\active*>
+    <\src-comment>
+      Title block. Every lecture uses the header
+      <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|...>|<doc-author|<cqft-author-data>>|<doc-date|...>>:
+      the course name and the author are defined once here. The course title (doc-title) smaller, the lecture title
       (doc-subtitle) more prominent, both left aligned together with the
       author, the affiliation and the date. The abstract keeps the standard
       centred and justified layout. The sizes are magnifications relative to
       the normal font.
     </src-comment>
   </active*>
+
+  <assign|cqft-course-name|<macro|A Constructive Introduction to Quantum Field Theory>>
+
+  <assign|cqft-author-data|<macro|<author-data|<author-name|M.
+  Gubinelli>|<author-affiliation|Mathematical Institute, University of
+  Oxford>>>>
 
   <assign|cqft-course-title-size|1.35>
 

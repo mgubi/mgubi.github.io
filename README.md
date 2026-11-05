@@ -84,10 +84,11 @@ build after changing either style package; incremental export tracks document
 timestamps, not style dependencies. Do not copy hand-exported HTML over the
 generated pages. The author's standalone exports can be used for comparison.
 
-PDFs are supplied exports, stored as `store/sissa/2026/cqft_notes_LN.pdf`,
-`cqft_notes_supplement.pdf` and `cqft_slides_LN.pdf`; the website build does not regenerate them. For lectures
-3–6 the native notes are named `cqft_lectureN.tm`, and the supplied slide PDFs
-have the suffix `-print.pdf`. Keep the course page links and revision dates in
+PDFs are supplied exports, stored as `store/sissa/2026/cqft_lecture_N.pdf`,
+`cqft_supplement.pdf` and `cqft_slides_N.pdf`; the website build does not
+regenerate them. The native files are named `cqft_lecture_N.tm`,
+`cqft_supplement.tm` and `cqft_slides_N.tm` (renamed on 5 November 2026), and
+the supplied slide PDFs have the suffix `-print.pdf`. Keep the course page links and revision dates in
 sync. The individual supplements are discoverable through the course page and
 sitemap; only the course page is listed in the article index and Atom feed.
 
