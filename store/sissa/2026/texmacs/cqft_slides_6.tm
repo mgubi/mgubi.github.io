@@ -71,7 +71,7 @@
     <strong|Guiding principle.> Do not estimate <math|\<Phi\>> and <math|F>.
     Estimate the error of an explicit approximate forecast.
 
-    The results of Lectures<nbsp>6\U7 are new: joint work with S.-J. Meyer +
+    The results of Lectures<nbsp>5\U7 are new: joint work with S.-J. Meyer +
     AI.
   </hidden>|<\hidden>
     <vspace*|2.5cm>

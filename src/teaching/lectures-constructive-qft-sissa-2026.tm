@@ -11,7 +11,7 @@
 
   <chapter*|A constructive introduction to quantum field theory>
 
-  <notes-abstract|Lectures at SISSA, Trieste, 20 October--6 November 2026,
+  <notes-abstract|Lectures at SISSA, Trieste, 20 October--9 November 2026,
   as part of the Probability and Stochastic Analysis Trimester Programme.>
 
   <with|font-series|bold|Lecturer.> Massimiliano Gubinelli (University of
@@ -19,7 +19,7 @@
 
   <with|font-series|bold|Joint work.> The results presented in Lectures
   4--7 are joint work with Sarah-Jean Meyer, obtained recently with the use
-  of AI; those of Lectures 6--7 are new.
+  of AI; those of Lectures 5--7 are new.
 
   <with|font-series|bold|Acknowledgements.> M. Gubinelli is partly
   supported by UK Research and Innovation via the grant ``StochFields''
@@ -151,6 +151,8 @@
     <item>5 November, 11:00--13:00, Room 136.
 
     <item>6 November, 14:00--16:00, Room 136.
+
+    <item>9 November (Monday), additional lecture: time and room to be announced.
   </itemize>
 </body>
 
