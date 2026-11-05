@@ -1028,9 +1028,9 @@ code {
     width: 85px;
     margin-right: 8px!important;
     margin-inline-start: -100px;
-    padding-top: 0.2em;
+    padding-top: 0.1em;
     text-align: right;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: var(--title-family);
 } 
 

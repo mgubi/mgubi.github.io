@@ -208,6 +208,34 @@
 
   <assign|tmhtml-notes-theorem|<macro|body|<html-div-class|notes-theorem|<arg|body>>>>
 
+  <assign|notes-highlight|<\macro|body>
+    <\padded>
+      <\with|color|<value|notes-title-color>>
+        <\wide-tabular>
+          <tformat|<twith|table-width|1par>|<twith|table-hyphen|y>|<cwith|1|1|1|1|cell-hyphen|t>|<cwith|1|1|1|1|cell-lborder|3ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lsep|1em>|<cwith|1|1|1|1|cell-rsep|0em>|<cwith|1|1|1|1|cell-tsep|0.3em>|<cwith|1|1|1|1|cell-bsep|0.3em>|<table|<row|<\cell>
+            <with|color|<value|notes-text-color>|<with|font-family|ss|<arg|body>>>
+          </cell>>>>
+        </wide-tabular>
+      </with>
+    </padded>
+  </macro>>
+
+  <assign|tmhtml-notes-highlight|<macro|body|<html-div-class|mg-whats-new|<arg|body>>>>
+
+  <assign|notes-news-item|<\macro|body>
+    <\padded>
+      <\with|color|grey>
+        <\wide-tabular>
+          <tformat|<twith|table-width|1par>|<twith|table-hyphen|y>|<cwith|1|1|1|1|cell-hyphen|t>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lsep|1em>|<cwith|1|1|1|1|cell-rsep|0em>|<cwith|1|1|1|1|cell-tsep|0.3em>|<cwith|1|1|1|1|cell-bsep|0.3em>|<table|<row|<\cell>
+            <with|color|<value|notes-text-color>|<arg|body>>
+          </cell>>>>
+        </wide-tabular>
+      </with>
+    </padded>
+  </macro>>
+
+  <assign|tmhtml-notes-news-item|<macro|body|<html-div-class|whats-new-item|<arg|body>>>>
+
   <assign|render-theorem|<\macro|which|body>
     <\notes-theorem>
       <surround|<theorem-name|<arg|which><theorem-sep>>|<yes-indent*>|<with|font-shape|italic|<arg|body>>>

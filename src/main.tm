@@ -48,36 +48,33 @@
 
   \;
 
-  <\html-div-class|mg-whats-new>
+  <\notes-highlight>
     <with|font-series|bold|<notes-link|What's new|whats-new.tm>> \<cdot\> the
     latest lecture notes, writings, talks and papers on these pages
-  </html-div-class>
+  </notes-highlight>
 
-  <vspace|5em><I>'m a mathematician, currently the Wallis Professor of
-  mathematics at the University of Oxford and fellow of St.<nbsp>Anne's
-  College. Previously <value|I><nbsp>held positions in Pisa, Paris and Bonn.
-  <value|I><nbsp>work in the field of stochastic analysis. My interests lie
-  at the intersection of analysis, probability and mathematical physics.
-  <value|I><nbsp>like to think about the random functions which appear in
-  many physical theories, including quantum mechanics and quantum field
-  theory. <value|I><nbsp>have a PhD in theoretical physics and at some point
-  <value|I> worked in an experimental laboratory. <value|I><nbsp>run. I
-  contribute actively to the development of
-  <notes-link|TeXmacs|programming.tm>, a free scientific editing platform.
-  Some time ago I wrote a <notes-link|short novel|marella.tm> in
-  Italian.<vspace|1em>
+  <I>'m a mathematician, currently the Wallis Professor of mathematics at the
+  University of Oxford and fellow of St.<nbsp>Anne's College. Previously
+  <value|I><nbsp>held positions in Pisa, Paris and Bonn. <value|I><nbsp>work
+  in the field of stochastic analysis. My interests lie at the intersection
+  of analysis, probability and mathematical physics. <value|I><nbsp>like to
+  think about the random functions which appear in many physical theories,
+  including quantum mechanics and quantum field theory. <value|I><nbsp>have a
+  PhD in theoretical physics and at some point <value|I> worked in an
+  experimental laboratory. <value|I><nbsp>run. I contribute actively to the
+  development of <notes-link|TeXmacs|programming.tm>, a free scientific
+  editing platform. Some time ago I wrote a <notes-link|short
+  novel|marella.tm> in Italian.
 
-  <\wide-tabular>
-    <tformat|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|0ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<table|<row|<\cell>
-      <notes-link|what's new|whats-new.tm> \<cdot\>
-      <notes-link|vita|curriculum-vitae.tm> \<cdot\>
-      <notes-link|research|research/research.tm> \<cdot\>
-      <notes-link|teaching|teaching/teaching.tm> \<cdot\>
-      <notes-link|programming|programming.tm> \<cdot\>
-      <notes-link|writings|zettels/writings.tm> \<cdot\>
-      <notes-link|marella|marella.tm>\ 
-    </cell>>>>
-  </wide-tabular>
+  \;
+
+  <notes-link|what's new|whats-new.tm> \<cdot\>
+  <notes-link|vita|curriculum-vitae.tm> \<cdot\>
+  <notes-link|research|research/research.tm> \<cdot\>
+  <notes-link|teaching|teaching/teaching.tm> \<cdot\>
+  <notes-link|programming|programming.tm> \<cdot\>
+  <notes-link|writings|zettels/writings.tm> \<cdot\>
+  <notes-link|marella|marella.tm>\ 
 
   <hlink|my institutional page|https://www.maths.ox.ac.uk/people/massimiliano.gubinelli>
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
