@@ -18,8 +18,8 @@
   Oxford).
 
   <with|font-series|bold|Joint work.> The results presented in Lectures
-  4--6 are joint work with Sarah-Jean Meyer, obtained recently with the use
-  of AI; those of Lectures 5--6 are new.
+  4--7 are joint work with Sarah-Jean Meyer, obtained recently with the use
+  of AI; those of Lectures 6--7 are new.
 
   <with|font-series|bold|Acknowledgements.> M. Gubinelli is partly
   supported by UK Research and Innovation via the grant ``StochFields''
@@ -81,33 +81,34 @@
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_3.tm>].
     Revised 3 November 2026.
 
-    <item><with|font-series|bold|Lecture 4> (4 November 2026): Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation; observables, the field equation at every resolution and its sub-Gaussian noise.
+    <item><with|font-series|bold|Lecture 4> (4 November 2026): Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_4.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_4.tm>].
-    Revised 4 November 2026.
-  </itemize>
+    Revised 5 November 2026.
 
-  <subsection*|Provisional materials for Lectures 5--6>
-
-  Lectures 5--6 give an FBSDE construction of
-  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
-  adjusted as the course progresses. Sections 16--18 of Lecture 6 will not
-  be delivered in class.
-
-  <\itemize>
-    <item><with|font-series|bold|Lecture 5>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
+    <item><with|font-series|bold|Lecture 5> (5 November 2026): Observables and field equations. Observables of the interacting theory; from the Minkowski to the Euclidean field equation, and Nelson's Euclidean noise; the field equation at every resolution, with a sub-Gaussian noise; Dyson--Schwinger equations, also in pathwise form; infinite volume.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_5.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_5.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_5.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_5.tm>].
+    Revised 5 November 2026.
+  </itemize>
 
-    <item><with|font-series|bold|Lecture 6>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
+  <subsection*|Provisional materials for Lectures 6--7>
+
+  Lectures 6--7 give an FBSDE construction of
+  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
+  adjusted as the course progresses. Sections 16--18 of Lecture 7 will not
+  be delivered in class.
+
+  <\itemize>
+    <item><with|font-series|bold|Lecture 6>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_6.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_6.tm>].
@@ -115,10 +116,16 @@
     [<notes-link|HTML|sissa-2026/cqft_slides_6.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_6.tm>].
 
-    <item><with|font-series|bold|Supplement to Lectures 5--6>: Detailed proofs of what the lectures cite or condense: the coefficient construction, the large-field ledger, consistency of the coefficients, and older routes.
+    <item><with|font-series|bold|Lecture 7>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
+    Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_7.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_lecture_7.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_7.tm>].
+    Slides: [<notes-store|PDF|sissa/2026/cqft_slides_7.pdf>]
+    [<notes-link|HTML|sissa-2026/cqft_slides_7.tm>]
+    [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_7.tm>].
 
+    <item><with|font-series|bold|Supplement to Lectures 6--7>: Detailed proofs of what the lectures cite or condense: the coefficient construction, the large-field ledger, consistency of the coefficients, and older routes.
     Notes: [<notes-store|PDF|sissa/2026/cqft_supplement.pdf>]
-
     [<notes-link|HTML|sissa-2026/cqft_supplement.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_supplement.tm>].
   </itemize>

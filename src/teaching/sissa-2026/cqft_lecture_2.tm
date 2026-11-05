@@ -3,8 +3,9 @@
 <style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
-  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>2: The Gaussian free
-  field>|<doc-author|<cqft-author-data>>|<doc-date|SISSA, October 2026>>
+  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>2: The
+  Gaussian free field>|<doc-author|<cqft-author-data>>|<doc-date|SISSA,
+  October 2026>>
 
   <abstract-data|<\abstract>
     We study the first example of a Euclidean field theory: the Gaussian free
@@ -19,13 +20,13 @@
   </abstract>>
 
   <\table-of-contents|toc>
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Introduction>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Introduction>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-1><vspace|0.5fn>
+    <no-break><pageref|auto-1><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|3<space|2spc>The
     Gaussian free field> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2><vspace|0.5fn>
+    <no-break><pageref|auto-2><vspace|0.2fn>
 
     <with|par-left|1tab|3.1<space|2spc>Definition and construction
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -35,22 +36,21 @@
     field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Example: two masses
+    <with|par-left|2tab|Example: two masses
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-7>>>
+    <no-break><pageref|auto-7>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Physical meaning of the nonlocal
-    theory <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8>>>
+    <with|par-left|2tab|Physical meaning of the nonlocal theory
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-8>>
 
     <with|par-left|1tab|3.3<space|2spc>Local operators: Wick products
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-9>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Beyond
-    <with|mode|math|L<rsup|2>>: no random distribution
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-10>>>
+    <with|par-left|2tab|Beyond <with|mode|math|L<rsup|2>>: no random
+    distribution <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-10>>
 
     <with|par-left|1tab|3.4<space|2spc>Gaussian integration by parts and the
     Dyson\USchwinger equation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -63,13 +63,12 @@
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-13>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|References and
-    further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14><vspace|0.5fn>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|References
+    and further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-14><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Guide
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15>>>
+    <with|par-left|2tab|Guide <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-15>>
   </table-of-contents>
 
   <section*|Introduction>
@@ -572,8 +571,8 @@
   </equation*>
 
   with <math|\<varphi\><rsub|m>> the free field
-  <hlink|(1.2)|cqft_lecture_1.tm#eq:free-field> of mass <math|m>. The Wightman
-  functions are given by Wick's theorem with
+  <hlink|(1.2)|cqft_lecture_1.tm#eq:free-field> of mass <math|m>. The
+  Wightman functions are given by Wick's theorem with
   <math|W<rsub|2>=c<rsub|1><rsup|2>*W<rsub|2><rsup|<around|(|m<rsub|1>|)>>+c<rsub|2><rsup|2>*W<rsub|2><rsup|<around|(|m<rsub|2>|)>>>,
   and all truncated functions of order <math|\<geqslant\>3> vanish.
   Physically, these are <em|two species of free scalar particles>, of masses
@@ -1669,20 +1668,20 @@
     <associate|auto-13|<tuple|3.5|12>>
     <associate|auto-14|<tuple|3.12|13>>
     <associate|auto-15|<tuple|1|13>>
-    <associate|auto-2|<tuple|3|2>>
-    <associate|auto-3|<tuple|3.1|2>>
+    <associate|auto-2|<tuple|3|1>>
+    <associate|auto-3|<tuple|3.1|1>>
     <associate|auto-4|<tuple|3.1|2>>
     <associate|auto-5|<tuple|3.2|3>>
-    <associate|auto-6|<tuple|3.2|4>>
+    <associate|auto-6|<tuple|3.2|3>>
     <associate|auto-7|<tuple|1|6>>
     <associate|auto-8|<tuple|2|7>>
-    <associate|auto-9|<tuple|3.3|8>>
+    <associate|auto-9|<tuple|3.3|7>>
     <associate|bib-ADG20|<tuple|ADG20|13>>
-    <associate|bib-ADG21|<tuple|ADG21|14>>
-    <associate|bib-AL07|<tuple|AL07|14>>
-    <associate|bib-ALZ06|<tuple|ALZ06|14>>
-    <associate|bib-AR91|<tuple|AR91|14>>
-    <associate|bib-AZ96|<tuple|AZ96|14>>
+    <associate|bib-ADG21|<tuple|ADG21|13>>
+    <associate|bib-AL07|<tuple|AL07|13>>
+    <associate|bib-ALZ06|<tuple|ALZ06|13>>
+    <associate|bib-AR91|<tuple|AR91|13>>
+    <associate|bib-AZ96|<tuple|AZ96|13>>
     <associate|bib-BFS82|<tuple|BFS82|14>>
     <associate|bib-BG20|<tuple|BG20|14>>
     <associate|bib-BP25|<tuple|BP25|14>>
@@ -1703,14 +1702,14 @@
     <associate|bib-GIP15|<tuple|GIP15|14>>
     <associate|bib-GJ87|<tuple|GJ87|14>>
     <associate|bib-GRS75|<tuple|GRS75|14>>
-    <associate|bib-GV64|<tuple|GV64|15>>
+    <associate|bib-GV64|<tuple|GV64|14>>
     <associate|bib-Gub25|<tuple|Gub25|14>>
-    <associate|bib-Gue06|<tuple|Gue06|15>>
-    <associate|bib-HK12|<tuple|HK12|15>>
-    <associate|bib-HRW12|<tuple|HRW12|15>>
-    <associate|bib-HSw65|<tuple|HSw65|15>>
-    <associate|bib-Haa96|<tuple|Haa96|15>>
-    <associate|bib-Hai14|<tuple|Hai14|15>>
+    <associate|bib-Gue06|<tuple|Gue06|14>>
+    <associate|bib-HK12|<tuple|HK12|14>>
+    <associate|bib-HRW12|<tuple|HRW12|14>>
+    <associate|bib-HSw65|<tuple|HSw65|14>>
+    <associate|bib-Haa96|<tuple|Haa96|14>>
+    <associate|bib-Hai14|<tuple|Hai14|14>>
     <associate|bib-JLM85|<tuple|JLM85|15>>
     <associate|bib-Jan97|<tuple|Jan97|15>>
     <associate|bib-KLP84|<tuple|KLP84|15>>
@@ -1733,34 +1732,34 @@
     <associate|bib-Roz82|<tuple|Roz82|15>>
     <associate|bib-Sch74|<tuple|Sch74|15>>
     <associate|bib-She07|<tuple|She07|15>>
-    <associate|bib-Sim74|<tuple|Sim74|16>>
-    <associate|bib-Sym66|<tuple|Sym66|16>>
-    <associate|bib-Sym69|<tuple|Sym69|16>>
-    <associate|bib-WP21|<tuple|WP21|16>>
-    <associate|bib-Wer16|<tuple|Wer16|16>>
-    <associate|bib-Wil69|<tuple|Wil69|16>>
+    <associate|bib-Sim74|<tuple|Sim74|15>>
+    <associate|bib-Sym66|<tuple|Sym66|15>>
+    <associate|bib-Sym69|<tuple|Sym69|15>>
+    <associate|bib-WP21|<tuple|WP21|15>>
+    <associate|bib-Wer16|<tuple|Wer16|15>>
+    <associate|bib-Wil69|<tuple|Wil69|15>>
     <associate|bib-Zim73|<tuple|Zim73|16>>
-    <associate|def:gff|<tuple|3.1|2>>
+    <associate|def:gff|<tuple|3.1|1>>
     <associate|eq:DS|<tuple|3.10|10>>
-    <associate|eq:DS-V|<tuple|3.12|11>>
+    <associate|eq:DS-V|<tuple|3.12|10>>
     <associate|eq:DS-hierarchy|<tuple|3.11|10>>
     <associate|eq:DS-nu|<tuple|3.13|11>>
     <associate|eq:KL-euclid|<tuple|3.5|5>>
     <associate|eq:RP|<tuple|3.4|3>>
-    <associate|eq:gff-cov|<tuple|3.2|2>>
-    <associate|eq:hermite|<tuple|3.6|8>>
-    <associate|eq:series|<tuple|3.3|3>>
+    <associate|eq:gff-cov|<tuple|3.2|1>>
+    <associate|eq:hermite|<tuple|3.6|7>>
+    <associate|eq:series|<tuple|3.3|2>>
     <associate|eq:wick-cov|<tuple|3.8|8>>
-    <associate|ex:DS-finite|<tuple|3.8|13>>
+    <associate|ex:DS-finite|<tuple|3.8|12>>
     <associate|ex:KL-euclid|<tuple|3.2|12>>
     <associate|ex:green|<tuple|3.1|12>>
     <associate|ex:lattice-gff|<tuple|3.10|13>>
     <associate|ex:massless|<tuple|3.9|13>>
     <associate|ex:regularity|<tuple|3.3|12>>
     <associate|ex:two-masses|<tuple|3.12|13>>
-    <associate|ex:wick-thm|<tuple|3.7|13>>
-    <associate|ex:wickexp|<tuple|3.6|13>>
-    <associate|fig:RP|<tuple|3.2|4>>
+    <associate|ex:wick-thm|<tuple|3.7|12>>
+    <associate|ex:wickexp|<tuple|3.6|12>>
+    <associate|fig:RP|<tuple|3.2|3>>
     <associate|fig:gff|<tuple|3.1|2>>
     <associate|lem:gibp|<tuple|3.13|10>>
     <associate|lem:hermite|<tuple|3.8|8>>
@@ -1769,13 +1768,13 @@
     <associate|prop:no-wick|<tuple|3.11|9>>
     <associate|rem:DS|<tuple|3.15|10>>
     <associate|rem:KL-euclid|<tuple|3.7|5>>
-    <associate|rem:chaos-norms|<tuple|3.12|10>>
-    <associate|rem:markov|<tuple|3.5|4>>
-    <associate|rem:symanzik|<tuple|3.6|5>>
-    <associate|sec:gff|<tuple|3|2>>
-    <associate|sec:wick|<tuple|3.3|8>>
+    <associate|rem:chaos-norms|<tuple|3.12|9>>
+    <associate|rem:markov|<tuple|3.5|3>>
+    <associate|rem:symanzik|<tuple|3.6|4>>
+    <associate|sec:gff|<tuple|3|1>>
+    <associate|sec:wick|<tuple|3.3|7>>
     <associate|thm:DS-unique|<tuple|3.16|11>>
-    <associate|thm:existence|<tuple|3.2|3>>
+    <associate|thm:existence|<tuple|3.2|2>>
     <associate|thm:wick|<tuple|3.9|8>>
   </collection>
 </references>

@@ -3,22 +3,23 @@
 <style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
-  <doc-data|<doc-title|Supplement to Lectures 5\U6: detailed
+  <doc-data|<doc-title|Supplement to Lectures 6\U7: detailed
   proofs>|<doc-subtitle|<math|\<Phi\><rsup|4><rsub|3>> on the torus:
-  coefficients, consistency, and older routes>|<doc-author|<cqft-author-data>>|<doc-date|November 2026 <emdash> <em|provisional>>>
+  coefficients, consistency, and older routes>|<doc-author|<cqft-author-data>>|<doc-date|November
+  2026 <emdash> <em|provisional>>>
 
   <\table-of-contents|toc>
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|19<space|2spc>Elementary
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|19<space|2spc>Elementary
     kernels> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-1><vspace|0.5fn>
+    <no-break><pageref|auto-1><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Forces and their primitives
+    <with|par-left|2tab|Forces and their primitives
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2>>>
+    <no-break><pageref|auto-2>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|20<space|2spc>Renormalisation
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|20<space|2spc>Renormalisation
     with two correction steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3><vspace|0.5fn>
+    <no-break><pageref|auto-3><vspace|0.2fn>
 
     <with|par-left|1tab|20.1<space|2spc>Tensors and the iteration
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -36,10 +37,10 @@
     value <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|21<space|2spc>Global
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|21<space|2spc>Global
     coercivity and the complete large-field error>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8><vspace|0.5fn>
+    <no-break><pageref|auto-8><vspace|0.2fn>
 
     <with|par-left|1tab|21.1<space|2spc>Clipping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -53,54 +54,54 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-11>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|22<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|22<space|2spc>The
     bare mass and its limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-12><vspace|0.5fn>
+    <no-break><pageref|auto-12><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|23<space|2spc>Identifying
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|23<space|2spc>Identifying
     the deterministic coefficients: conventions>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-13><vspace|0.5fn>
+    <no-break><pageref|auto-13><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|24<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|24<space|2spc>The
     topology of the centred quadratic kernel>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14><vspace|0.5fn>
+    <no-break><pageref|auto-14><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|25<space|2spc>Physical
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|25<space|2spc>Physical
     vertex measures and their derivatives>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15><vspace|0.5fn>
+    <no-break><pageref|auto-15><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|26<space|2spc>Compact
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|26<space|2spc>Compact
     resolvents receive weak Hessians> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16><vspace|0.5fn>
+    <no-break><pageref|auto-16><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|27<space|2spc>Convergence
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|27<space|2spc>Convergence
     of the seed and the two trace steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17><vspace|0.5fn>
+    <no-break><pageref|auto-17><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|28<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|28<space|2spc>The
     mixed boundary fixed point converges>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18><vspace|0.5fn>
+    <no-break><pageref|auto-18><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|29<space|2spc>Clipping
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|29<space|2spc>Clipping
     and the complete drift> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19><vspace|0.5fn>
+    <no-break><pageref|auto-19><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|30<space|2spc>Random
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|30<space|2spc>Random
     inputs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20><vspace|0.5fn>
+    <no-break><pageref|auto-20><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|31<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|31<space|2spc>The
     coordinate, high modes and stochastic integrals>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21><vspace|0.5fn>
+    <no-break><pageref|auto-21><vspace|0.2fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|32<space|2spc>Complements
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|32<space|2spc>Complements
     not used in the lectures> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22><vspace|0.5fn>
+    <no-break><pageref|auto-22><vspace|0.2fn>
 
     <with|par-left|1tab|32.1<space|2spc>Regularity in space and scale
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -130,12 +131,12 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-29>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30><vspace|0.5fn>
+    <no-break><pageref|auto-30><vspace|0.2fn>
   </table-of-contents>
 
-  This supplement contains the detailed proofs which Lectures<nbsp>5\U6 cite
+  This supplement contains the detailed proofs which Lectures<nbsp>6\U7 cite
   or condense. It is reference material: the lectures can be read without it.
   The results are recent, joint work with S.-J. Meyer + AI. Unless stated
   otherwise, notation is that of the lectures.
@@ -143,31 +144,31 @@
   <strong|Where each result is proved.>
 
   <\itemize>
-    <item>Free resolvents, Lemma<nbsp><hlink|10.1|cqft_lecture_5.tm#lem:free>:
+    <item>Free resolvents, Lemma<nbsp><hlink|10.1|cqft_lecture_6.tm#lem:free>:
     Lemma<nbsp><reference|a-lem-free>.
 
-    <item>The coefficient construction, Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff>:
+    <item>The coefficient construction, Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>:
     Section<nbsp><reference|a-sec-recursion>, in particular
     Proposition<nbsp><reference|a-prop-coeff>, with the rooted calculus and
     the trace comparison. The dependence on the boundary value is
     Proposition<nbsp><reference|a-prop-response>.
 
-    <item>The explicit counterterm, Theorem<nbsp><hlink|11.2|cqft_lecture_5.tm#thm:counter>:
+    <item>The explicit counterterm, Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>:
     Section<nbsp><reference|m-sec>.
 
     <item>Global coercivity and the source bounds,
-    Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent> and
-    Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source>, with the
+    Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and
+    Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source>, with the
     term-by-term ledger: Section<nbsp><reference|a-sec-clipping>.
 
-    <item>The facts of (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>),
-    (<hlink|12.19|cqft_lecture_5.tm#eq:e-low>)\U(<hlink|12.20|cqft_lecture_5.tm#eq:low>)
+    <item>The facts of (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>),
+    (<hlink|12.19|cqft_lecture_6.tm#eq:e-low>)\U(<hlink|12.20|cqft_lecture_6.tm#eq:low>)
     and the bound on <math|\<frak-D\>> used in
-    Lemma<nbsp><hlink|18.1|cqft_lecture_6.tm#lem:e-bound>:
+    Lemma<nbsp><hlink|18.1|cqft_lecture_7.tm#lem:e-bound>:
     Lemma<nbsp><reference|a-lem-source>.
 
     <item>Consistency of the coefficients, Section<nbsp>18.1 of
-    Lecture<nbsp>6, and Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons>:
+    Lecture<nbsp>7, and Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons>:
     Sections<nbsp><reference|c-conv>\U<reference|c-cons-sec>.
 
     <item>Results removed from the lectures, which are not needed there:
@@ -179,36 +180,40 @@
   The auxiliary scale <math|q<rsub|\<ast\>>> is as in the lectures. In
   Sections<nbsp><reference|a-sec-kernels>\U<reference|c-cons-sec> it is the
   lowest scale of the action; below it the action is frozen
-  (Section<nbsp><hlink|12.5|cqft_lecture_5.tm#sec:low-action> of
-  Lecture<nbsp>5).
+  (Section<nbsp><hlink|12.5|cqft_lecture_6.tm#sec:low-action> of
+  Lecture<nbsp>6).
 
   <assign|section-nr|18>
 
   <section|Elementary kernels><label|a-sec-kernels>
 
-  We use the notation of Lecture<nbsp>5: <math|K<rsub|q>=q-\<Delta\><rsub|N>>,
+  We use the notation of Lecture<nbsp>6: <math|K<rsub|q>=q-\<Delta\><rsub|N>>,
   <math|C<rsub|q>=K<rsub|q><rsup|-1>>, <math|G<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+\<lambda\>
   y<rsup|2>|)><rsup|-1>>, <math|H> for the inverses of
   <math|K<rsub|q>+D<rsup|2>\<Gamma\>>, <math|M<rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsub|q>>
   for the quadratic path, <math|\<kappa\><rsub|q>> for the clip,
   <math|\<varrho\><rsub|q>> for the coordinate correction, and
-  <math|<math-up|Ctr><rsub|E>T> for contraction. Recall <math|g<rsub|q>=\<lambda\> q<rsup|-1/2>> and
+  <math|<math-up|Ctr><rsub|E>T> for contraction. Recall
+  <math|g<rsub|q>=\<lambda\> q<rsup|-1/2>> and
   <math|r<rsub|q>=<around|(|q/\<lambda\>|)><rsup|1/2>>, so that
   <math|\<lambda\> r<rsub|q><rsup|2>=q>. Generic convolution kernels are
   denoted <math|E,E<rprime|'>>, and the letters <math|L,L<rprime|'>> denote
   arbitrary kernels. Distance <math|d> is torus distance.
 
-  <paragraph|Forces and their primitives> Lecture<nbsp>5 is written in terms
+  <paragraph|Forces and their primitives> Lecture<nbsp>6 is written in terms
   of forces. The proofs below expand the trace, so they are written for the
-  primitives of those forces: <math|h<rsup|<around|[|j|]>>> with <math|D*h<rsup|<around|[|j|]>>=\<ell\><rsup|<around|[|j|]>>> for the corrections (11.7), <math|\<cal-L\>> with <math|D\<cal-L\>=\<ell\>> for the seed (11.4),
-  <math|<wide|\<Gamma\>|\<bar\>>> with <math|D<wide|\<Gamma\>|\<bar\>>=<wide|\<cal-F\>|\<bar\>>>,
-  <math|e> with <math|D*e=\<cal-D\>>, and the trace map
+  primitives of those forces: <math|h<rsup|<around|[|j|]>>> with
+  <math|D*h<rsup|<around|[|j|]>>=\<ell\><rsup|<around|[|j|]>>> for the
+  corrections (11.7), <math|\<cal-L\>> with <math|D\<cal-L\>=\<ell\>> for the
+  seed (11.4), <math|<wide|\<Gamma\>|\<bar\>>> with
+  <math|D<wide|\<Gamma\>|\<bar\>>=<wide|\<cal-F\>|\<bar\>>>, <math|e> with
+  <math|D*e=\<cal-D\>>, and the trace map
   <math|<frac|1|2><math-up|Tr><around|[|<around|(|K+M+D<rsup|2><around|(|U+h|)>|)><rsup|-1>-<around|(|K+M|)><rsup|-1>|]>>,
-  whose derivative is the loop force <math|\<cal-T\>> of Lecture<nbsp>5. A
+  whose derivative is the loop force <math|\<cal-T\>> of Lecture<nbsp>6. A
   vertex with <math|k> legs is <math|D<rsup|k>> of the primitive and
-  <math|D<rsup|k-1>> of the force, so the norms <math|<math-ss|S><rsub|k>> and
-  <math|\<cal-N\><rsub|k>> agree. No additive constant of a primitive enters
-  any estimate.
+  <math|D<rsup|k-1>> of the force, so the norms <math|<math-ss|S><rsub|k>>
+  and <math|\<cal-N\><rsub|k>> agree. No additive constant of a primitive
+  enters any estimate.
 
   There are two scales, which must not be confused. The <strong|reference
   mass> <math|q<rsub|0>\<gtr\>0> has arbitrary size; it fixes the covariance
@@ -221,14 +226,16 @@
   <math|q\<geqslant\> q<rsub|\<ast\>>> and do not involve <math|q<rsub|0>>.
   So from Lemma<nbsp><reference|a-lem-center> on we assume
   <math|q\<geqslant\>1>. Constants may depend on the coupling and on finitely
-  many derivative orders, but not on <math|N> or on the scale interval.
-  For a kernel, <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|<math-up|row>>=sup<rsub|x><big|int><around|\||C*<around|(|x,z|)>|\|>\<mathd\>z>
-  is the row norm (Section<nbsp><hlink|10.1|cqft_lecture_5.tm#sec:notation>
-  of Lecture<nbsp>5); it bounds <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|p\<to\>p>>
+  many derivative orders, but not on <math|N> or on the scale interval. For a
+  kernel, <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|<math-up|row>>=sup<rsub|x><big|int><around|\||C*<around|(|x,z|)>|\|>\<mathd\>z>
+  is the row norm (Section<nbsp><hlink|10.1|cqft_lecture_6.tm#sec:notation>
+  of Lecture<nbsp>6); it bounds <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|p\<to\>p>>
   for every <math|p> when <math|C> is symmetric.
 
   <\lemma>
-    <dueto|Free and killed resolvents><label|a-lem-free>This is Lemma<nbsp><hlink|10.1|cqft_lecture_5.tm#lem:free> of Lecture<nbsp>5, with further items. For <math|q\<geqslant\> q<rsub|0>>, uniformly in
+    <dueto|Free and killed resolvents><label|a-lem-free>This is
+    Lemma<nbsp><hlink|10.1|cqft_lecture_6.tm#lem:free> of Lecture<nbsp>6,
+    with further items. For <math|q\<geqslant\> q<rsub|0>>, uniformly in
     <math|N>, with constants that depend on <math|q<rsub|0>> only through
     scales <math|q\<less\>1>: the kernel of <math|C<rsub|q>> is nonnegative,
     <math|C<rsub|q>1=q<rsup|-1>1>, <math|<around|\<\|\|\>|C<rsub|q>|\<\|\|\>><rsub|p\<to\>
@@ -257,7 +264,8 @@
     t> proves positivity, the row mass and the operator norms. Killing the
     lattice random walk at rate <math|\<lambda\> y<rsup|2>> proves the first
     part of (<reference|a-eq-killing>). The second part is
-    <math|<around|(|K<rsub|q>+\<lambda\> y<rsup|2>|)>1=q+\<lambda\> y<rsup|2>>.
+    <math|<around|(|K<rsub|q>+\<lambda\> y<rsup|2>|)>1=q+\<lambda\>
+    y<rsup|2>>.
 
     The symbol of <math|-\<Delta\><rsub|N>> is
     <math|4N<rsup|2><big|sum><rsub|i><math-up|sin><rsup|2><around|(|\<pi\>
@@ -435,8 +443,8 @@
   <section|Renormalisation with two correction steps><label|a-sec-recursion>
 
   This deterministic section assumes no interacting field estimates. It
-  contains the proof of Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff>
-  of Lecture<nbsp>5.
+  contains the proof of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>
+  of Lecture<nbsp>6.
 
   <subsection|Tensors and the iteration><label|a-sec-tensors>
 
@@ -476,12 +484,12 @@
     <math-ss|S><rsub|k><around|(|f|)>=sup<rsub|y\<in\>\<cal-B\><rsub|q>>s<around|(|D<rsup|k>f<around|(|y|)>|)>,<space|1em>\<cal-N\><rsub|k,q><around|(|f|)>=<math-ss|S><rsub|k><around|(|f|)>+<sqrt|q>v<rsub|1><around|(|D<rsup|k>f<around|(|0|)>|)>.
   </equation*>
 
-  Thus <math|<math-ss|S><rsub|k>> controls the derivative everywhere in the field ball,
-  whereas the spatial moment is required only at the zero field. The scalar
-  bound <math|<math-ss|S><rsub|k><around|(|f|)>> is distinct from the posterior
-  covariance <math|S<rsub|q>> of (10.2). For a symmetric <math|k>-tensor
-  <math|T>, contraction of two slots against a kernel <math|E> means the
-  physical integral
+  Thus <math|<math-ss|S><rsub|k>> controls the derivative everywhere in the
+  field ball, whereas the spatial moment is required only at the zero field.
+  The scalar bound <math|<math-ss|S><rsub|k><around|(|f|)>> is distinct from
+  the posterior covariance <math|S<rsub|q>> of (10.2). For a symmetric
+  <math|k>-tensor <math|T>, contraction of two slots against a kernel
+  <math|E> means the physical integral
 
   <\equation*>
     <around|(|<math-up|Ctr><rsub|E>T|)><around|(|x<rsub|1>,\<ldots\>,x<rsub|k-2>|)>=<big|int>
@@ -493,7 +501,7 @@
   remaining slots. Slots joined to inverse kernels in such a product are
   called operator slots; the remaining ones are external slots. The seed is
   the mass-subtracted logarithmic determinant,
-  (<hlink|11.4|cqft_lecture_5.tm#eq:seed>) of Lecture<nbsp>5,
+  (<hlink|11.4|cqft_lecture_6.tm#eq:seed>) of Lecture<nbsp>6,
 
   <\equation>
     \<cal-L\><rsub|q><around|(|y|)>=<frac|1|2><math-up|Tr><around|[|log<around|(|I+C<rsub|q><rsup|1/2>\<lambda\>
@@ -515,14 +523,16 @@
   this removes the constant and quadratic Taylor coefficients, also called
   its low jets. For one prescribed quadratic path
   <math|M<rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsub|q>>, whenever the displayed
-  inverses exist, define as in (<hlink|11.5|cqft_lecture_5.tm#eq:trace-map>)
+  inverses exist, define the primitive of the trace map
+  (<hlink|11.5|cqft_lecture_6.tm#eq:trace-map>) of Lecture<nbsp>6 (its field
+  gradient is that map with <math|\<ell\>=D*h>)
 
   <\equation>
     \<cal-T\><rsub|q><around|[|M,h|]><around|(|y|)>=<frac|1|2><math-up|Tr><around|[|<around|(|K<rsub|q>+M<rsub|q>+D<rsup|2><around|(|U+h|)><around|(|y|)>|)><rsup|-1>-<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>|]><label|a-eq-trace-map>
   </equation>
 
   and just three nonlinear functions, as in
-  (<hlink|11.7|cqft_lecture_5.tm#eq:iteration>):
+  (<hlink|11.7|cqft_lecture_6.tm#eq:iteration>):
 
   <\equation>
     h<rsup|<around|[|0|]>>=\<cal-L\>,<space|1em>
@@ -564,13 +574,13 @@
 
   <\lemma>
     <dueto|A rooted closed cycle><label|a-lem-rooted-cycle>This is
-    (<hlink|11.3|cqft_lecture_5.tm#eq:loop>) of Lecture<nbsp>5 with its proof.
-    Let <math|T<rsub|1>,\<ldots\>,T<rsub|p>> be symmetric physical vertices,
-    each with at least one external slot. Close their two operator slots into
-    a cycle with <math|p+1> symmetric inverse factors <math|H>; two
-    consecutive inverse factors may be combined into <math|H<rsup|2>>. Denote
-    the resulting external tensor by <math|\<cal-Z\>>. Then the absolute
-    rooted norm of <math|\<cal-Z\>> is at most
+    (<hlink|11.3|cqft_lecture_6.tm#eq:loop>) of Lecture<nbsp>6 with its
+    proof. Let <math|T<rsub|1>,\<ldots\>,T<rsub|p>> be symmetric physical
+    vertices, each with at least one external slot. Close their two operator
+    slots into a cycle with <math|p+1> symmetric inverse factors <math|H>;
+    two consecutive inverse factors may be combined into <math|H<rsup|2>>.
+    Denote the resulting external tensor by <math|\<cal-Z\>>. Then the
+    absolute rooted norm of <math|\<cal-Z\>> is at most
 
     <\equation>
       \<frak-l\><around|(|H|)><rsup|2>m<around|(|H|)><rsup|p-1><big|prod><rsub|i=1><rsup|p>s<around|(|T<rsub|i>|)>.<label|a-eq-rooted-cycle>
@@ -714,8 +724,8 @@
 
   <\lemma>
     <dueto|Finite trace calculus><label|a-lem-trace>This is step (a) of the
-    proof of Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff> of
-    Lecture<nbsp>5. For <math|4\<leqslant\> k\<leqslant\>10>,
+    proof of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> of
+    Lecture<nbsp>6. For <math|4\<leqslant\> k\<leqslant\>10>,
     <math|\<cal-N\><rsub|k,q><around|(|\<cal-L\>|)>\<leqslant\>
     C<rsub|k>g<rsub|q>q*r<rsub|q><rsup|2-k>>. For the trace comparison fix
     <math|k\<geqslant\>4>. Assume that <math|h,<wide|h|^>> are translation
@@ -752,12 +762,13 @@
     and <math|<wide|H|^>> the same with <math|<wide|h|^>>. Taylor's formula,
     evenness, and the zero quadratic jet give
     <math|<math-ss|S><rsub|2><around|(|h|)>\<leqslant\> C*g<rsub|q>q> and
-    <math|<math-ss|S><rsub|3><around|(|h|)>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>; the
-    same holds for <math|<wide|h|^>>, and for their difference with
-    <math|g<rsub|q>> replaced by <math|\<varepsilon\><rsub|q>>. Thus the
-    hypotheses control every Hessian vertex used in differentiating the
-    inverse, including those with zero or one field derivative. Together with
-    the local quartic they give <math|s<around|(|D<rsup|j+2><around|(|U+h|)>|)>\<leqslant\>
+    <math|<math-ss|S><rsub|3><around|(|h|)>\<leqslant\>
+    C*g<rsub|q>q/r<rsub|q>>; the same holds for <math|<wide|h|^>>, and for
+    their difference with <math|g<rsub|q>> replaced by
+    <math|\<varepsilon\><rsub|q>>. Thus the hypotheses control every Hessian
+    vertex used in differentiating the inverse, including those with zero or
+    one field derivative. Together with the local quartic they give
+    <math|s<around|(|D<rsup|j+2><around|(|U+h|)>|)>\<leqslant\>
     C<rsub|j>q*r<rsub|q><rsup|-j>> for <math|0\<leqslant\> j\<leqslant\> k>.
 
     More explicitly, <math|D<rsup|k>H<around|[|u<rsub|1>,\<ldots\>,u<rsub|k>|]>>
@@ -783,9 +794,9 @@
     costs <math|C/q>. Symmetry gives both Schur bounds for every collapsed
     vertex, also at nonconstant fields. The row Neumann series preserves the
     row and row-<math|L<rsup|2>> bounds: use (<reference|a-eq-receive>) for
-    <math|M>, and the just proved <math|<math-ss|S><rsub|2>> bound for the nonlinear
-    Hessian. All constants depend on the finite list of individual derivative
-    bounds above.
+    <math|M>, and the just proved <math|<math-ss|S><rsub|2>> bound for the
+    nonlinear Hessian. All constants depend on the finite list of individual
+    derivative bounds above.
 
     Telescope the two partition sums. A changed vertex contributes
     <math|\<varepsilon\><rsub|q>> by the difference budgets. A changed
@@ -838,8 +849,8 @@
     term is <math|<around|(|-1|)><rsup|j+1><math-up|Tr><around|(|C<rsub|q>\<lambda\>
     y<rsup|2>|)><rsup|j>/<around|(|2j|)>>; the same two-chain argument proves
     its spatial bound. Taylor gives <math|<math-ss|S><rsub|2>\<leqslant\>
-    C*g<rsub|q>q>, <math|<math-ss|S><rsub|3>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>.
-    Finally (<reference|a-eq-seedder>) says that
+    C*g<rsub|q>q>, <math|<math-ss|S><rsub|3>\<leqslant\>
+    C*g<rsub|q>q/r<rsub|q>>. Finally (<reference|a-eq-seedder>) says that
     <math|\<cal-T\><rsub|q><around|[|0,0|]>-\<partial\><rsub|q>\<cal-L\><rsub|q>>
     is purely quadratic. Consequently
 
@@ -856,7 +867,7 @@
   <\remark>
     <dueto|Small Hessians alone do not suffice><label|a-rem-trace-hypotheses>The
     higher individual bounds in this lemma are necessary (compare
-    Exercise<nbsp>11.3 of Lecture<nbsp>5). On the one-site lattice take
+    Exercise<nbsp>11.3 of Lecture<nbsp>6). On the one-site lattice take
     <math|q=\<lambda\>=1>, <math|M=0>, and fixed small
     <math|\<alpha\>,\<delta\>\<gtr\>0>. Put
 
@@ -891,7 +902,7 @@
 
   Retain the entire quadratic jet and set, with
   <math|R<rsub|0,q>=<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>>, as in
-  (<hlink|11.8|cqft_lecture_5.tm#eq:mass>),
+  (<hlink|11.8|cqft_lecture_6.tm#eq:mass>),
 
   <\equation>
     B<rsub|q><around|[|M|]>=-\<lambda\><math-up|Tr><around|(|R<rsub|0,q><rsup|2>|)>I-<frac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|4>h<rsub|q><rsup|<around|[|2|]>><around|(|0|)>,<space|1em>
@@ -920,7 +931,7 @@
   <math|v<rsub|1><around|(|\<Theta\><rsub|q>|)>\<to\>0> as
   <math|q\<to\>\<infty\>>. The bare mass is
   <math|\<mu\><rsub|N>=<math-up|lim><rsub|q\<to\>\<infty\>>\<mu\><rsub|q>>,
-  as in (<hlink|11.9|cqft_lecture_5.tm#eq:bare-mass>), whose existence is a
+  as in (<hlink|11.9|cqft_lecture_6.tm#eq:bare-mass>), whose existence is a
   fixed-lattice assertion proved below. Note that <math|q<rsub|0>> does not
   occur in (<reference|a-eq-iteration>), (<reference|a-eq-mass>) or
   (<reference|a-eq-bdry>): these operators are built from <math|K<rsub|q>>
@@ -934,8 +945,8 @@
 
   <\proposition>
     <dueto|The coefficient construction closes><label|a-prop-coeff>This is
-    Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff> of
-    Lecture<nbsp>5, with the dependence on <math|b> made explicit; the bare
+    Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> of
+    Lecture<nbsp>6, with the dependence on <math|b> made explicit; the bare
     mass is treated in Lemma<nbsp><reference|a-lem-bare-mass>. There is a
     universal constant <math|C<rsub|\<ast\>>\<geqslant\>1> and, for each
     <math|B\<less\>\<infty\>>, a scale <math|<wide|q|^>=<wide|q|^><around|(|\<lambda\>,B|)>>
@@ -946,7 +957,7 @@
     (<reference|a-eq-mass>)\U(<reference|a-eq-bdry>) on
     <math|<around|[|q<rsub|\<ast\>>,\<infty\>|)>> have a unique solution in
     the ball <math|<around|\<\|\|\>|M|\<\|\|\>><rsub|\<ast\>>\<leqslant\> R>,
-    with, as in (<hlink|11.10|cqft_lecture_5.tm#eq:coeff>),
+    with, as in (<hlink|11.10|cqft_lecture_6.tm#eq:coeff>),
 
     <\equation>
       <around|\||\<mu\><rsub|q>|\|>\<leqslant\>
@@ -956,7 +967,7 @@
     </equation>
 
     Starting with ten derivatives leaves six at the final depth, and, as in
-    (<hlink|11.11|cqft_lecture_5.tm#eq:increments>),
+    (<hlink|11.11|cqft_lecture_6.tm#eq:increments>),
 
     <\equation>
       \<cal-N\><rsub|k,q><around|(|h<rsup|<around|[|j|]>>-h<rsup|<around|[|j-1|]>>|)>\<leqslant\>
@@ -966,7 +977,7 @@
 
     The complete defect of <math|\<Gamma\><rsub|q><rsup|<math-up|o>>=U+<frac|1|2><around|\<langle\>|y,M<rsub|q>y|\<rangle\>>+h<rsub|q><rsup|<around|[|2|]>>>
     on <math|\<cal-B\><rsub|q>> is, as in
-    (<hlink|11.12|cqft_lecture_5.tm#eq:defect-bound>),
+    (<hlink|11.12|cqft_lecture_6.tm#eq:defect-bound>),
 
     <\equation>
       e<rsub|q><rsup|<math-up|o>>=\<Pi\><around|(|\<cal-T\><rsub|q><around|[|M,h<rsup|<around|[|1|]>>|]>-\<cal-T\><rsub|q><around|[|M,h<rsup|<around|[|2|]>>|]>|)>,<space|1em>
@@ -1033,10 +1044,11 @@
     integrands have zero constant and quadratic jets and are even. Taylor's
     formula therefore bounds their derivatives of order zero through three,
     on each fixed bounded field set, by the integrable fourth-order bound
-    <math|C<rsub|R>\<lambda\><rsup|3>s<rsup|-2>> times the corresponding field
-    powers. Thus differentiation under the improper integral is justified
-    through order eight at depth one and six at depth two. No unknown
-    terminal jets or interacting moments are being imposed at infinity.
+    <math|C<rsub|R>\<lambda\><rsup|3>s<rsup|-2>> times the corresponding
+    field powers. Thus differentiation under the improper integral is
+    justified through order eight at depth one and six at depth two. No
+    unknown terminal jets or interacting moments are being imposed at
+    infinity.
 
     For fixed <math|q> and any compact subset of <math|\<cal-B\><rsub|q>>,
     the same bounds hold in a common neighbourhood in field and scale, since
@@ -1143,8 +1155,8 @@
 
   <\lemma>
     <dueto|The bare mass exists at each lattice><label|a-lem-bare-mass>This
-    is the last assertion of Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff>
-    of Lecture<nbsp>5. For each fixed <math|N>, the preceding infinite-scale
+    is the last assertion of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>
+    of Lecture<nbsp>6. For each fixed <math|N>, the preceding infinite-scale
     construction satisfies
 
     <\equation>
@@ -1189,8 +1201,9 @@
   </proof>
 
   The leading <math|N>-dependent part of <math|\<mu\><rsub|N>> is
-  <math|-\<lambda\><math-up|Tr> C<rsub|q<rsub|\<ast\>>>>, and it differs from <math|-\<lambda\><math-up|Tr> C> by a quantity bounded in <math|N>.
-  The next quadratic contraction contains the logarithmic two-loop mass
+  <math|-\<lambda\><math-up|Tr> C<rsub|q<rsub|\<ast\>>>>, and it differs from
+  <math|-\<lambda\><math-up|Tr> C> by a quantity bounded in <math|N>. The
+  next quadratic contraction contains the logarithmic two-loop mass
   divergence. Keeping its full running kernel avoids an incorrect local
   replacement. There is no quartic or kinetic counterterm in the bare
   potential. The number <math|\<mu\><rsub|N>> generally diverges as
@@ -1202,8 +1215,8 @@
 
   <\proposition>
     <dueto|Dependence on the boundary value><label|a-prop-response>This is
-    the step Response of the proof of Theorem<nbsp><hlink|11.2|cqft_lecture_5.tm#thm:counter>
-    of Lecture<nbsp>5. For <math|q<rsub|\<ast\>>> large depending on
+    the step Response of the proof of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
+    of Lecture<nbsp>6. For <math|q<rsub|\<ast\>>> large depending on
     <math|\<lambda\>,B>, let <math|b<rsub|1>,b<rsub|2>\<in\>\<cal-B\>> with
     paths <math|M<rsup|1>,M<rsup|2>>, and <math|\<delta\>
     b=b<rsub|1>-b<rsub|2>>. Then at every fixed <math|N>,
@@ -1283,10 +1296,10 @@
   <section|Global coercivity and the complete large-field
   error><label|a-sec-clipping>
 
-  This section proves (<hlink|12.2|cqft_lecture_5.tm#eq:global-h>),
-  Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent> and
-  Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source> of
-  Lecture<nbsp>5.
+  This section proves (<hlink|12.2|cqft_lecture_6.tm#eq:global-h>),
+  Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and
+  Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source> of
+  Lecture<nbsp>6.
 
   <subsection|Clipping><label|a-sec-clip>
 
@@ -1294,14 +1307,14 @@
   <math|<around|[|-1,1|]>>, constant outside <math|<around|[|-2,2|]>>, with
   <math|0\<leqslant\>\<tau\><rprime|'>\<leqslant\>1> and
   <math|<around|\||\<tau\>|\|>\<less\>2>. Define pointwise, as in
-  (<hlink|12.1|cqft_lecture_5.tm#eq:clipping>),
+  (<hlink|12.1|cqft_lecture_6.tm#eq:clipping>),
 
   <\equation>
     \<kappa\><rsub|q><around|(|y|)><around|(|x|)>=r<rsub|q>\<tau\><around|(|y<around|(|x|)>/r<rsub|q>|)>,<space|1em><wide|h|~><rsub|q>=h<rsub|q><rsup|<around|[|2|]>>\<circ\>\<kappa\><rsub|q>,<space|1em><wide|\<Gamma\>|\<bar\>><rsub|q>=U+<frac|1|2><around|\<langle\>|y,M<rsub|q>y|\<rangle\>>+<wide|h|~><rsub|q>.<label|a-eq-clipping>
   </equation>
 
   The quartic and quadratic terms are not clipped. The finite chain rule
-  gives globally, as in (<hlink|12.2|cqft_lecture_5.tm#eq:global-h>),
+  gives globally, as in (<hlink|12.2|cqft_lecture_6.tm#eq:global-h>),
 
   <\equation>
     s<around|(|D<rsup|j><wide|h|~><rsub|q>|)>\<leqslant\>
@@ -1365,15 +1378,15 @@
   <subsection|Global coercivity><label|a-sec-coercive>
 
   Write <math|H<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+D<rsup|2><wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>|)><rsup|-1>>,
-  as in (<hlink|10.10|cqft_lecture_5.tm#eq:defect>).
+  as in (<hlink|10.10|cqft_lecture_6.tm#eq:defect>).
 
   <\lemma>
     <dueto|Uniform resolvent bounds><label|a-lem-resolvent>This is
-    Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent> of Lecture<nbsp>5,
-    with one further bound. For large <math|q<rsub|\<ast\>>> the inverse
-    exists globally, and as in (<hlink|12.3|cqft_lecture_5.tm#eq:resolvent>),
-    for all <math|y\<in\> H<rsub|N>> and <math|q\<geqslant\>
-    q<rsub|\<ast\>>>,
+    Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> of
+    Lecture<nbsp>6, with one further bound. For large <math|q<rsub|\<ast\>>>
+    the inverse exists globally, and as in
+    (<hlink|12.3|cqft_lecture_6.tm#eq:resolvent>), for all <math|y\<in\>
+    H<rsub|N>> and <math|q\<geqslant\> q<rsub|\<ast\>>>,
 
     <\equation>
       c<around|(|K<rsub|q>+\<lambda\> y<rsup|2>|)>\<leqslant\>
@@ -1409,7 +1422,7 @@
 
   The defect is <math|e<rsub|q><around|(|y|)>=\<partial\><rsub|q><wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>-<frac|1|2><math-up|Tr><around|[|H<rsub|q><around|(|y|)>-H<rsub|q><around|(|0|)>|]>>
   and the drift is <math|b<rsub|q><around|(|y|)>=-H<rsub|q><around|(|y|)>D*e<rsub|q><around|(|y|)>>,
-  as in (<hlink|10.10|cqft_lecture_5.tm#eq:defect>). Put
+  as in (<hlink|10.10|cqft_lecture_6.tm#eq:defect>). Put
   <math|\<chi\><rsub|q><around|(|y|)>=1<rsub|<around|\||y|\|>\<gtr\>*r<rsub|q>>>,
   pointwise, and split the drift as
 
@@ -1420,9 +1433,9 @@
 
   <\lemma>
     <dueto|The complete source bounds><label|a-lem-source>This is
-    Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source> of
-    Lecture<nbsp>5, with the correction bound of
-    (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>). For
+    Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source> of
+    Lecture<nbsp>6, with the correction bound of
+    (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>). For
     <math|t=t<rsub|q><around|(|y|)>=y\<chi\><rsub|q><around|(|y|)>>,
     uniformly in <math|y\<in\> H<rsub|N>>, <math|N>, <math|q\<geqslant\>
     q<rsub|\<ast\>>> and <math|p\<in\><around|[|1,\<infty\>|]>>,
@@ -1445,7 +1458,8 @@
     Moreover <math|<around|\<\|\|\>|b<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>
     C\<lambda\> q<rsup|-3/2><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>,
     <math|<around|\<\|\|\>|D*e<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>
-    C*g<rsub|q><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>; the trace part (the loop part <math|\<cal-U\>> of (12.19) of Lecture<nbsp>5)
+    C*g<rsub|q><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>; the trace part (the
+    loop part <math|\<cal-U\>> of (12.19) of Lecture<nbsp>6)
     <math|D\<Upsilon\><rsub|q><around|(|y|)>=\<lambda\>
     y<math-up|diag>H<rsub|q><around|(|y|)><rsup|2>+<frac|1|2><math-up|Ctr><rsub|H<rsub|q><around|(|y|)><rsup|2>>D<rsup|3><wide|h|~><rsub|q><around|(|y|)>>
     obeys <math|<around|\<\|\|\>|D\<Upsilon\><rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>
@@ -1514,7 +1528,7 @@
       +<frac|1|2><math-up|Ctr><rsub|H<rsup|2>><around|[|D<rsup|3><around|(|h\<circ\>\<kappa\><rsub|q>|)>-J*f<rsub|3>|]>+<frac|1|2>J<math-up|Ctr><rsub|H<rsup|2>-<around|(|H<rsup|<math-up|o>>|)><rsup|2>>f<rsub|3>.
     </equation*>
 
-    These are the groups of Section<nbsp>12.3 of Lecture<nbsp>5. Here
+    These are the groups of Section<nbsp>12.3 of Lecture<nbsp>6. Here
     <math|J> in the last line acts on the open slot,
     <math|\<kappa\><rsub|q><rprime|''>> denotes the pointwise second
     derivative of the scalar clipping function, and products such as
@@ -1574,9 +1588,10 @@
     insertion use Lemma<nbsp><reference|a-lem-inserted-receiver>. In an
     insertion <math|<around|(|J-I|)>f<rsub|2>J> or
     <math|f<rsub|2><around|(|J-I|)>>, absorb <math|f<rsub|2>,J> into the
-    adjacent chain; this costs at most <math|\<sigma\><rsub|2>> in its <math|\<ell\>>
-    norm. Finally <math|<around|\||f<rsub|1>\<kappa\><rprime|''>|\|>\<leqslant\>
-    C*\<sigma\><rsub|1>\<chi\>/r>. The lemma therefore gives, for all <math|p>,
+    adjacent chain; this costs at most <math|\<sigma\><rsub|2>> in its
+    <math|\<ell\>> norm. Finally <math|<around|\||f<rsub|1>\<kappa\><rprime|''>|\|>\<leqslant\>
+    C*\<sigma\><rsub|1>\<chi\>/r>. The lemma therefore gives, for all
+    <math|p>,
 
     <\equation>
       <around|\<\|\|\>|<math-up|diag>\<cal-D\><rsub|2>|\<\|\|\>><rsub|p>\<leqslant\>
@@ -1586,12 +1601,13 @@
 
     <\equation*>
       <around|\<\|\|\>|<math-up|Ctr><rsub|\<cal-D\><rsub|2>>f<rsub|3>|\<\|\|\>><rsub|p>\<leqslant\>
-      C*\<sigma\><rsub|3><frac|\<lambda\> a<rsub|2>|q><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>.
+      C*\<sigma\><rsub|3><frac|\<lambda\>
+      a<rsub|2>|q><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>.
     </equation*>
 
     In the last inequality use <math|\<sigma\><rsub|2>+\<sigma\><rsub|1>/r\<leqslant\>
-    C*g*q>, <math|\<chi\>\<leqslant\>\<lambda\> y<rsup|2>\<chi\>/q>, and small
-    <math|g>. This argument controls the column mass of the nonlocal
+    C*g*q>, <math|\<chi\>\<leqslant\>\<lambda\> y<rsup|2>\<chi\>/q>, and
+    small <math|g>. This argument controls the column mass of the nonlocal
     contraction as well as its row mass.
 
     <em|Receive the third-order chain rule.> In its first term, after
@@ -1604,8 +1620,8 @@
     Of the three second-derivative terms, one identifies the two contracted
     slots and the other two identify the open slot with a contracted slot.
     Their majorant kernels have Schur masses at most
-    <math|C*a<rsub|2>\<sigma\><rsub|2>/r>. The last term identifies all three slots
-    and costs <math|C*a<rsub|2>\<sigma\><rsub|1>/r<rsup|2>>. Write
+    <math|C*a<rsub|2>\<sigma\><rsub|2>/r>. The last term identifies all three
+    slots and costs <math|C*a<rsub|2>\<sigma\><rsub|1>/r<rsup|2>>. Write
     <math|\<cal-E\><rsub|3>=D<rsup|3><around|(|h\<circ\>\<kappa\><rsub|q>|)>-J*f<rsub|3>>.
     Consequently
 
@@ -1658,8 +1674,8 @@
     first part uses <math|m<around|(|M<rprime|'>|)>\<leqslant\> C*g>; the
     second uses <math|<around|\<\|\|\>|M<rprime|'>z|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
     C*g*r> and <math|\<chi\>\<leqslant\><around|\||t|\|>/r>. The second row
-    uses the <math|w,D*w> bounds and <math|\<sigma\><rsub|1>,\<sigma\><rsub|2>>. For the
-    fourth row note <math|\<lambda\><rsup|2>r*a<rsub|2>/q=\<lambda\>
+    uses the <math|w,D*w> bounds and <math|\<sigma\><rsub|1>,\<sigma\><rsub|2>>.
+    For the fourth row note <math|\<lambda\><rsup|2>r*a<rsub|2>/q=\<lambda\>
     a<rsub|2>/r\<leqslant\> C*g/r>; for the sixth use
     <math|\<sigma\><rsub|3>\<lambda\> a<rsub|2>/q\<leqslant\> C*g<rsup|2>/r>.
 
@@ -1672,9 +1688,9 @@
       C*g<rsub|q><around|(|<around|\<\|\|\>|t<rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>+r<rsub|q><rsup|-1><around|\<\|\|\>|y<rsup|2>\<chi\><rsub|q><around|(|y|)>|\<\|\|\>><rsub|p>|)>.<label|a-eq-frakD>
     </equation>
 
-    This is the bound used in Lemma<nbsp><hlink|18.1|cqft_lecture_6.tm#lem:e-bound>
-    of Lecture<nbsp>6; rows one, two, three\Ufour and five\Usix are the four
-    groups of Section<nbsp>12.3 of Lecture<nbsp>5. Since
+    This is the bound used in Lemma<nbsp><hlink|18.1|cqft_lecture_7.tm#lem:e-bound>
+    of Lecture<nbsp>7; rows one, two, three\Ufour and five\Usix are the four
+    groups of Section<nbsp>12.3 of Lecture<nbsp>6. Since
     <math|b<rsup|<math-up|l>>=-H\<frak-D\>>, using
     <math|<around|\<\|\|\>|H|\<\|\|\>><rsub|p\<to\> p>\<leqslant\> C/q>
     proves
@@ -1706,8 +1722,8 @@
     C*g*q<rsup|-1><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>. In particular, at
     <math|q=q<rsub|\<ast\>>>, the last two terms of
     (<reference|a-eq-gradient>), which form <math|D\<Upsilon\>> in (12.19) of
-    Section<nbsp><hlink|12.5|cqft_lecture_5.tm#sec:low-action> of
-    Lecture<nbsp>5, are bounded by <math|C*g<rsub|q<rsub|\<ast\>>><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>.
+    Section<nbsp><hlink|12.5|cqft_lecture_6.tm#sec:low-action> of
+    Lecture<nbsp>6, are bounded by <math|C*g<rsub|q<rsub|\<ast\>>><around|\<\|\|\>|y|\<\|\|\>><rsub|p>>.
     Finally <math|D\<varrho\>=C<rsub|q>M+C<rsub|q>D<rsup|2><wide|h|~>>. The
     centred convolution estimate bounds the first summand by
     <math|C<around|(|<around|\||\<mu\>|\|>/q+\<eta\><rsub|q><around|(|\<Theta\>|)>|)>>
@@ -1717,14 +1733,14 @@
     <math|\<varrho\><rsub|q><around|(|0|)>=0> by evenness and
     <math|D*U=<frac|\<lambda\>|3>y<rsup|3>>, the equation
     <math|K<rsub|q>y+D<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>=K<rsub|q>x>
-    is (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>) of Lecture<nbsp>5.
+    is (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>) of Lecture<nbsp>6.
   </proof>
 
   <section|The bare mass and its limit><label|m-sec>
 
   This section gives the consistency of the mass path with a moving boundary
   value and the proof of the explicit counterterm,
-  Theorem<nbsp><hlink|11.2|cqft_lecture_5.tm#thm:counter> of Lecture<nbsp>5.
+  Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter> of Lecture<nbsp>6.
   All constants may depend on <math|\<lambda\>,q<rsub|0>,B>, but not on
   <math|N> or on the boundary value.
 
@@ -1744,14 +1760,16 @@
   </proposition>
 
   <\proof>
-    This is Theorem<nbsp><reference|c-pathcons>, whose proof does not use this section.
+    This is Theorem<nbsp><reference|c-pathcons>, whose proof does not use
+    this section.
   </proof>
 
   <\theorem>
     <dueto|The mass and its explicit counterterm><label|thm:mass>Write
     <math|a<rsub|2>=<math-up|Tr> C<rsub|q><rsup|2>>,
     <math|C<rsub|q><rsup|<around|(|2|)>>> for the kernel of
-    <math|C<rsub|q><rsup|2>>, and <math|f<rsub|N><around|(|b|)>=\<mu\><rsub|N><around|(|b|)>+\<lambda\><math-up|Tr> C-<frac|2|3>\<lambda\><rsup|2><big|int> C<rsup|3>>. Then
+    <math|C<rsub|q><rsup|2>>, and <math|f<rsub|N><around|(|b|)>=\<mu\><rsub|N><around|(|b|)>+\<lambda\><math-up|Tr>
+    C-<frac|2|3>\<lambda\><rsup|2><big|int> C<rsup|3>>. Then
     <math|\<beta\><rsub|q>=-\<lambda\> a<rsub|2>-\<lambda\>\<mu\><rsub|q>a<rsub|2><rprime|'>+\<lambda\><rsup|2>a<rsub|2><rsup|2>+2\<lambda\><rsup|2><big|int>
     C<rsub|q><rsup|2>C<rsub|q><rsup|<around|(|2|)>>+\<cal-R\><rsub|q>> with
     <math|<around|\||\<cal-R\><rsub|q>|\|>\<leqslant\>
@@ -1767,12 +1785,14 @@
     As <math|N\<to\>\<infty\>>, <math|f<rsub|N>> converges to a limit
     <math|f> pointwise on <math|\<cal-B\>>, and for <math|B> larger than a
     universal constant, each <math|r\<in\>\<bbb-R\>> and
-    <math|q<rsub|\<ast\>>> large depending on <math|\<lambda\>,q<rsub|0>,B,r>, there is a unique
+    <math|q<rsub|\<ast\>>> large depending on
+    <math|\<lambda\>,q<rsub|0>,B,r>, there is a unique
     <math|b<rsub|N>\<in\>\<cal-B\>> with <math|f<rsub|N><around|(|b<rsub|N>|)>=r>,
     that is,
 
     <\equation>
-      \<mu\><rsub|N>=r-\<lambda\><math-up|Tr> C+<frac|2|3>\<lambda\><rsup|2><big|int> C<rsup|3>,<label|eq:explicit>
+      \<mu\><rsub|N>=r-\<lambda\><math-up|Tr>
+      C+<frac|2|3>\<lambda\><rsup|2><big|int> C<rsup|3>,<label|eq:explicit>
     </equation>
 
     and <math|b<rsub|N>\<to\> f<rsup|-1><around|(|r|)>> along the whole
@@ -1795,8 +1815,8 @@
     The increments have fourth rooted norm at most
     <math|C*g<rsub|q><rsup|2>\<lambda\>>, and contracted with
     <math|R<rsub|0><rsup|2>>, whose supremum is <math|C*q<rsup|-1/2>>, they
-    give <math|O<around|(|\<lambda\><rsup|3>q<rsup|-3/2>|)>>. The quartic part
-    of the seed is <math|L<around|(|y|)>=-<frac|\<lambda\><rsup|2>|4><big|int><big|int>
+    give <math|O<around|(|\<lambda\><rsup|3>q<rsup|-3/2>|)>>. The quartic
+    part of the seed is <math|L<around|(|y|)>=-<frac|\<lambda\><rsup|2>|4><big|int><big|int>
     C<around|(|x,z|)><rsup|2>y<around|(|x|)><rsup|2>y<around|(|z|)><rsup|2>>.
     So
 
@@ -1828,7 +1848,8 @@
     integrating <math|\<beta\>> over <math|<around|[|q<rsub|\<ast\>>,\<infty\>|)>>
     gives <math|\<mu\><rsub|N>=b<around|(|1+\<lambda\>
     a<rsub|2><around|(|q<rsub|\<ast\>>|)>|)>-\<lambda\><math-up|Tr>
-    C<rsub|q<rsub|\<ast\>>>+<frac|2|3>\<lambda\><rsup|2><big|int> C<rsub|q<rsub|\<ast\>>><rsup|3>+<big|int><around|(|\<cal-R\>+\<lambda\><around|(|\<beta\>+\<lambda\>
+    C<rsub|q<rsub|\<ast\>>>+<frac|2|3>\<lambda\><rsup|2><big|int>
+    C<rsub|q<rsub|\<ast\>>><rsup|3>+<big|int><around|(|\<cal-R\>+\<lambda\><around|(|\<beta\>+\<lambda\>
     a<rsub|2>|)>a<rsub|2>|)>>, which is (<reference|eq:fN>). The last
     integrand is <math|O<around|(|\<lambda\><rsup|3>q<rsup|-3/2>|)>>, because
     <math|\<beta\>+\<lambda\> a<rsub|2>=O<around|(|\<lambda\><rsup|2>/q|)>>:
@@ -1836,10 +1857,9 @@
     q<rsup|1/2>q<rsup|-3/2>|)>>.
 
     <strong|Limit.> The multiplier of <math|<math-up|Tr> C-<math-up|Tr>
-    C<rsub|q<rsub|\<ast\>>>> is <math|<around|(|q<rsub|\<ast\>>-q<rsub|0>|)><around|(|<around|(|q<rsub|0>+\<lambda\><rsub|k>|)><around|(|q<rsub|\<ast\>>+\<lambda\><rsub|k>|)>|)><rsup|-1>\<lesssim\><around|(|1+<around|\||k|\|>|)><rsup|-4>>,
-    summable, with <math|\<lambda\><rsub|k>\<geqslant\>
-    c<around|\||k|\|><rsup|2>>, so this sum converges. Next
-    <math|C<rsup|3>-C<rsub|q<rsub|\<ast\>>><rsup|3>=<around|(|C-C<rsub|q<rsub|\<ast\>>>|)><around|(|C<rsup|2>+C*C<rsub|q<rsub|\<ast\>>>+C<rsub|q<rsub|\<ast\>>><rsup|2>|)>>,
+    C<rsub|q<rsub|\<ast\>>>> is <math|<around|(|q<rsub|\<ast\>>-q<rsub|0>|)><around|(|<around|(|q<rsub|0>+c<rsub|k>|)><around|(|q<rsub|\<ast\>>+c<rsub|k>|)>|)><rsup|-1>\<lesssim\><around|(|1+<around|\||k|\|>|)><rsup|-4>>,
+    summable, with <math|c<rsub|k>\<geqslant\> c<around|\||k|\|><rsup|2>>, so
+    this sum converges. Next <math|C<rsup|3>-C<rsub|q<rsub|\<ast\>>><rsup|3>=<around|(|C-C<rsub|q<rsub|\<ast\>>>|)><around|(|C<rsup|2>+C*C<rsub|q<rsub|\<ast\>>>+C<rsub|q<rsub|\<ast\>>><rsup|2>|)>>,
     where <math|C-C<rsub|q<rsub|\<ast\>>>> converges uniformly, by the same
     summability, and the second factor converges in <math|L<rsup|1>>. At
     fixed <math|q>, <math|\<beta\><rsub|q><rsup|N>>,
@@ -1862,7 +1882,8 @@
     uniformly in <math|N> (the continuum value of the coefficient is
     <math|<frac|1|4\<pi\>>\<less\><frac|1|10>>, and the lattice sum is
     bounded by <math|<frac|1|10>> uniformly in <math|N>). So for <math|B>
-    above a universal constant and then <math|q<rsub|\<ast\>>> large depending on <math|\<lambda\>,q<rsub|0>,B,r>,
+    above a universal constant and then <math|q<rsub|\<ast\>>> large
+    depending on <math|\<lambda\>,q<rsub|0>,B,r>,
     <math|f<rsub|N><around|(|\<cal-B\>|)>> contains <math|r> for all
     <math|N>. Monotonicity and pointwise convergence give
     <math|b<rsub|N>\<to\> f<rsup|-1><around|(|r|)>>.
@@ -1875,16 +1896,16 @@
   <section|Identifying the deterministic coefficients:
   conventions><label|c-conv>
 
-  This part proves the statements of Section<nbsp>18.1 of Lecture<nbsp>6 and Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons>: the convergence of
-  the coefficients along fields, which enter
-  Theorems<nbsp><hlink|18.4|cqft_lecture_6.tm#thm:limit-kernel> and
-  <hlink|18.6|cqft_lecture_6.tm#thm:limit>. The estimates of
-  Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff> do not by
+  This part proves the statements of Section<nbsp>18.1 of Lecture<nbsp>7 and
+  Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons>: the convergence of the
+  coefficients along fields, which enter Theorems<nbsp><hlink|18.4|cqft_lecture_7.tm#thm:limit-kernel>
+  and <hlink|18.6|cqft_lecture_7.tm#thm:limit>. The estimates of
+  Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> do not by
   themselves identify the coefficients of a limit: a weakly converging vertex
   cannot automatically be contracted against a varying covariance. That
   additional assertion is proved here.
 
-  <strong|Notation.> We use that of Lectures<nbsp>5\U6:
+  <strong|Notation.> We use that of Lectures<nbsp>6\U7:
   <math|K<rsub|q>=q-\<Delta\><rsub|N>>, <math|C<rsub|q>=K<rsub|q><rsup|-1>>,
   <math|g<rsub|q>=\<lambda\> q<rsup|-1/2>>,
   <math|r<rsub|q>=<around|(|q/\<lambda\>|)><rsup|1/2>>,
@@ -1894,15 +1915,15 @@
   <math|G<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+\<lambda\>
   y<rsup|2>|)><rsup|-1>>, the seed <math|\<cal-L\><rsub|q>>, the corrections
   <math|h<rsup|<around|[|j|]>><rsub|q>> of
-  <hlink|(11.7)|cqft_lecture_5.tm#eq:iteration>, the source
-  <math|B<rsub|q><around|[|M|]>> of <hlink|(11.8)|cqft_lecture_5.tm#eq:mass>
+  <hlink|(11.7)|cqft_lecture_6.tm#eq:iteration>, the source
+  <math|B<rsub|q><around|[|M|]>> of <hlink|(11.8)|cqft_lecture_6.tm#eq:mass>
   with <math|B<rsub|q>1=\<beta\><rsub|q>1>, the clip
   <math|\<kappa\><rsub|q>>, <math|<wide|h|~><rsub|q>=h<rsup|<around|[|2|]>><rsub|q>\<circ\>\<kappa\><rsub|q>>,
   the action <math|<wide|\<Gamma\>|\<bar\>><rsub|q>>, the response
   <math|H<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+D<rsup|2><wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>|)><rsup|-1>>,
   the defect <math|e<rsub|q>>, the drift <math|b<rsub|q>=-H<rsub|q>D*e<rsub|q>>,
   and the coordinate correction <math|\<varrho\><rsub|q><around|(|y|)>=C<rsub|q><around|(|M<rsub|q>y+D<wide|h|~><rsub|q><around|(|y|)>|)>>
-  of (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>).
+  of (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>).
   <math|<math-up|Ctr><rsub|R>T> contracts two slots of the tensor <math|T>
   with the kernel <math|R>. The letter <math|H> without a scale index is the
   space <math|L<rsup|2><around|(|\<bbb-T\><rsup|3>|)>>; the response always
@@ -1916,14 +1937,14 @@
   q<rsub|\<ast\>>>> is a running mass path, while <math|\<mu\><rsub|N>> is
   reserved for the single bare mass. <math|k\<in\>\<bbb-Z\><rsup|3>> and
   <math|e<rsub|k><around|(|x|)>=\<mathe\><rsup|2\<pi\> i*k\<cdot\> x>> (the
-  <math|k> of Lecture<nbsp>5 is <math|2\<pi\>> times this one);
+  <math|k> of Lecture<nbsp>6 is <math|2\<pi\>> times this one);
   <math|e<rsup|N><rsub|k>> is the restriction of <math|e<rsub|k>> to
   <math|\<Lambda\><rsub|N>>, and <math|\<Lambda\><rsup|\<ast\>><rsub|N>> is
   the centred cube of <math|N<rsup|3>> frequencies. On
   <math|\<Lambda\><rsup|\<ast\>><rsub|N>> the symbol
-  <math|\<lambda\><rsub|N><around|(|k|)>=4N<rsup|2><big|sum><rsub|i><math-up|sin><rsup|2><around|(|\<pi\>
+  <math|c<rsub|k>=4N<rsup|2><big|sum><rsub|i><math-up|sin><rsup|2><around|(|\<pi\>
   k<rsub|i>/N|)>> of <math|-\<Delta\><rsub|N>> satisfies
-  <math|c<around|\||k|\|><rsup|2>\<leqslant\>\<lambda\><rsub|N><around|(|k|)>\<leqslant\>4\<pi\><rsup|2><around|\||k|\|><rsup|2>>.
+  <math|c<around|\||k|\|><rsup|2>\<leqslant\>c<rsub|k>\<leqslant\>4\<pi\><rsup|2><around|\||k|\|><rsup|2>>.
 
   <strong|Identifications.> Fields are embedded by the cell function
   <math|\<iota\><rsub|N>>, operators by <math|\<iota\><rsub|N>\<cdot\>
@@ -1943,7 +1964,7 @@
   q<rsub|\<ast\>><rsup|1/2>|]>>, fix <math|b<rsub|N>\<to\> b> in
   <math|\<cal-B\>>, and take <math|q<rsub|\<ast\>>> large depending on
   <math|\<lambda\>,B>. Throughout, the lattice coefficients are those of the
-  system <hlink|(11.7)|cqft_lecture_5.tm#eq:iteration>\U(11.8) with
+  system <hlink|(11.7)|cqft_lecture_6.tm#eq:iteration>\U(11.8) with
   <math|\<mu\><rsup|N><rsub|q<rsub|\<ast\>>>=b<rsub|N>> and
   <math|v<rsub|1><around|(|\<Theta\><rsup|N><rsub|q>|)>\<to\>0> as
   <math|q\<to\>\<infty\>>; by Proposition<nbsp><reference|a-prop-coeff> they
@@ -1960,10 +1981,10 @@
   Constants may depend on <math|\<lambda\>,B> and on the compact scale
   interval <math|I\<subset\><around|[|q<rsub|\<ast\>>,\<infty\>|)>> when so
   indicated, and never on <math|N>. The bounds of
-  Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff>, of
-  <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>, of
-  Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent> and of
-  Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source> hold in this
+  Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>, of
+  <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>, of
+  Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and of
+  Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source> hold in this
   ball.
 
   <strong|Measures.> We use signed Radon measures, that is, signed measures
@@ -2169,8 +2190,9 @@
 
   <section|Compact resolvents receive weak Hessians><label|c-compact>
 
-  The four lemmas of this section (compact sandwich, and contraction against a moving covariance) are the second and third tools listed in
-  Section<nbsp>18.1 of Lecture<nbsp>6.
+  The four lemmas of this section (compact sandwich, and contraction against
+  a moving covariance) are the second and third tools listed in
+  Section<nbsp>18.1 of Lecture<nbsp>7.
 
   <\lemma>
     <dueto|Free and quadratic background consistency><label|c-freecons>For
@@ -2384,7 +2406,7 @@
     <math|<around|\<langle\>|D\<cal-L\><rsub|q><around|(|t\<phi\>|)>,\<phi\>|\<rangle\>>>
     over <math|t\<in\><around|[|0,1|]>> to identify the scalar action, with
     value zero at the origin. The ten derivative bounds of
-    Proposition<nbsp><hlink|11.1|cqft_lecture_5.tm#prop:coeff> and
+    Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> and
     Lemma<nbsp><reference|c-findiff> give the nine tested derivatives. All
     estimates are uniform on compact profile families and scale intervals. In
     particular neither <math|<math-up|diag>C<rsub|q>> nor
@@ -2395,14 +2417,14 @@
     <dueto|Consistency of the finite nonlinear
     recursion><label|c-finitecons>For prescribed quadratic paths converging
     in the weak path topology, the functions <math|h<rsup|<around|[|j|]>,N>>
-    of <hlink|(11.7)|cqft_lecture_5.tm#eq:iteration> converge on smooth
+    of <hlink|(11.7)|cqft_lecture_6.tm#eq:iteration> converge on smooth
     profiles inside their field balls. Tested derivatives converge through
     orders <math|9,7,5> at depths <math|j=0,1,2>, respectively. All
     convergences are uniform on compact scale and admissible parameter sets.
     Corresponding inverse operators converge in Hilbert\USchmidt norm,
     including all interpolated inverses used below. This is the passage of
     the trace steps to the limit announced in Section<nbsp>18.1 of
-    Lecture<nbsp>6.
+    Lecture<nbsp>7.
   </proposition>
 
   <\proof>
@@ -2432,7 +2454,7 @@
     at zero, so its projection by <math|\<Pi\>> converges.
 
     It remains to pass the improper scale integral in
-    <hlink|(11.7)|cqft_lecture_5.tm#eq:iteration>. A fixed profile admissible
+    <hlink|(11.7)|cqft_lecture_6.tm#eq:iteration>. A fixed profile admissible
     at scale <math|q> remains admissible at all later scales. The initial
     trace comparison (Lemma<nbsp><reference|a-lem-trace>), the common
     coefficient ball, and Taylor's formula to fourth order give
@@ -2595,7 +2617,7 @@
   <\theorem>
     <dueto|Consistency of the quadratic path><label|c-pathcons>The paths
     <math|<around|(|\<mu\><rsup|N>,\<Theta\><rsup|N>|)>> selected by
-    <hlink|(11.8)|cqft_lecture_5.tm#eq:mass> with boundary values
+    <hlink|(11.8)|cqft_lecture_6.tm#eq:mass> with boundary values
     <math|b<rsub|N>\<to\> b> in <math|\<cal-B\>> converge in the weak path
     topology to the unique path in the ball
     <math|<around|\<\|\|\>|M|\<\|\|\>><rsub|\<ast\>>\<leqslant\> R> solving
@@ -2616,7 +2638,7 @@
     locally uniformly, and <math|<wide|\<Theta\>|^><rsup|N><rsub|q><around|(|k|)>\<to\><wide|\<Theta\>|^><rsub|q><around|(|k|)>>
     for each fixed <math|k>. Uniqueness here concerns deterministic
     coefficients, not a limiting Gibbs law or stochastic equation. This is
-    the first tool of Section<nbsp>18.1 of Lecture<nbsp>6, and it is the
+    the first tool of Section<nbsp>18.1 of Lecture<nbsp>7, and it is the
     convergence used in Theorem<nbsp><reference|thm:mass>.
   </theorem>
 
@@ -2635,7 +2657,7 @@
     tests below are Lipschitz in <math|d<rsub|\<ast\>>>, and the assertions
     on the corrections follow from Proposition<nbsp><reference|c-finitecons>,
     which only requires weak path convergence of its input. We write
-    <math|\<cal-F\><rsub|N>> for the map <hlink|(11.8)|cqft_lecture_5.tm#eq:mass>
+    <math|\<cal-F\><rsub|N>> for the map <hlink|(11.8)|cqft_lecture_6.tm#eq:mass>
     with boundary value <math|b>, <math|\<cal-F\><rsub|N><around|(|M|)>=<around*|(|b+<big|int><rsub|q<rsub|\<ast\>>><rsup|\<cdot\>>\<beta\><rsub|s><around|[|M|]><space|0.17em>\<mathd\>
     s,-<big|int><rsub|\<cdot\>><rsup|\<infty\>><around|(|B<rsub|s><around|[|M|]>-\<beta\><rsub|s><around|[|M|]>I|)><space|0.17em>\<mathd\>
     s|)>>.
@@ -2789,7 +2811,7 @@
 
   with <math|D\<Upsilon\><rsub|q>=D<around*|(|-<frac|1|2><math-up|Tr><around|[|H<rsub|q>-H<rsub|q><around|(|0|)>|]>|)>>
   the trace part. Write <math|\<Upsilon\>=\<Upsilon\><rsub|q<rsub|\<ast\>>>>.
-  Following Section<nbsp><hlink|12.5|cqft_lecture_5.tm#sec:low-action>, for
+  Following Section<nbsp><hlink|12.5|cqft_lecture_6.tm#sec:low-action>, for
   <math|0\<less\>*q\<less\>*q<rsub|\<ast\>>> the coefficients are frozen:
 
   <\equation>
@@ -2838,7 +2860,7 @@
     <math|L<rsup|2><around|(|I;H|)>>. These limits include all quadratic,
     covariance and scale-clipping terms in the exact formulas, and this is
     the consistency of the coefficients quoted in the proof of
-    Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons>. The same holds for
+    Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons>. The same holds for
     <math|0\<less\>*q\<less\>*q<rsub|\<ast\>>> with the frozen coefficients
     (<reference|c-frozen>).
   </proposition>
@@ -2888,8 +2910,8 @@
     The bounds <math|<around|\<\|\|\>|H<rsup|N><rsub|q><around|(|y|)>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>\<leqslant\>
     C*a<rsub|2><around|(|q|)>> and <math|<around|\<\|\|\>|b<rsup|N><rsub|q><around|(|y|)>|\<\|\|\>><rsub|2>\<leqslant\>
     C\<lambda\> q<rsup|-3/2><around|\<\|\|\>|y|\<\|\|\>><rsub|2>>, of
-    Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent> and
-    Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source>, and
+    Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and
+    Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source>, and
     <math|<around|\<\|\|\>|\<varrho\><rsup|N><rsub|q><around|(|y|)>|\<\|\|\>><rsub|2>\<leqslant\>\<varepsilon\><rsub|q><around|\<\|\|\>|y|\<\|\|\>><rsub|2>>
     are uniform. So for a space\Uscale profile we integrate the convergence
     at each scale over <math|I> by dominated convergence.
@@ -2901,7 +2923,7 @@
     strongly convergent <math|\<phi\><rsub|N>> and applying the same compact
     argument gives <math|b<rsup|N><rsub|q><around|(|\<phi\><rsub|N>|)>\<to\>
     H<rsub|q<rsub|\<ast\>>><around|(|\<phi\>|)><around|(|\<phi\>-D\<Upsilon\><around|(|\<phi\>|)>|)>>.
-    The domination is (<hlink|12.20|cqft_lecture_5.tm#eq:low>).
+    The domination is (<hlink|12.20|cqft_lecture_6.tm#eq:low>).
   </proof>
 
   The proof gives the convergence at every fixed scale, not only in
@@ -2931,7 +2953,7 @@
 
     The constants are uniform in <math|N>, and only <math|z> is assumed
     bounded in (<reference|c-continuity2>); this is the estimate quoted in
-    the proof of Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons>. The
+    the proof of Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons>. The
     estimate (<reference|c-continuity2>) also holds for the trace part
     <math|D\<Upsilon\><rsub|q>>, and so, at <math|q=q<rsub|\<ast\>>>, for the
     frozen drift of (<reference|c-frozen>) at every
@@ -2952,7 +2974,7 @@
     </equation*>
 
     Every row of <math|H<rsub|z>> has bounded <math|L<rsup|2>> norm on
-    <math|I>, by the diagonal bound <hlink|(12.3)|cqft_lecture_5.tm#eq:resolvent>,
+    <math|I>, by the diagonal bound <hlink|(12.3)|cqft_lecture_6.tm#eq:resolvent>,
     so <math|<around|\<\|\|\>|M<rsub|a>H<rsub|z>|\<\|\|\>><rsub|<math-up|HS>>\<leqslant\>
     C<rsub|I><around|\<\|\|\>|a|\<\|\|\>><rsub|2>>. Also
 
@@ -2972,8 +2994,8 @@
       <math-ss|S><rsub|3><around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>,<label|c-collapse>
     </equation>
 
-    where <math|<math-ss|S><rsub|3>=sup s<around|(|D<rsup|3><wide|h|~><rsub|q>|)>> is
-    finite by <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>. With
+    where <math|<math-ss|S><rsub|3>=sup s<around|(|D<rsup|3><wide|h|~><rsub|q>|)>>
+    is finite by <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>. With
     <math|<around|\<\|\|\>|H<rsub|y>|\<\|\|\>>\<leqslant\> C/q> this proves
     (<reference|c-continuity1>).
 
@@ -2997,7 +3019,7 @@
     <math|D\<partial\><rsub|q><wide|h|~><rsub|q>> are linear, respectively
     Lipschitz, with constant <math|C*g<rsub|q>>, by
     <math|<around|\<\|\|\>|B<rsub|q>|\<\|\|\>><rsub|<math-up|TV>>\<leqslant\>
-    C*g<rsub|q>> and <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>. These give
+    C*g<rsub|q>> and <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>. These give
 
     <\equation*>
       <around|\<\|\|\>|D*e<rsub|q><around|(|y|)>-D*e<rsub|q><around|(|z|)>|\<\|\|\>><rsub|2>+<around|\<\|\|\>|D\<Upsilon\><rsub|q><around|(|y|)>-D\<Upsilon\><rsub|q><around|(|z|)>|\<\|\|\>><rsub|2>\<leqslant\>
@@ -3011,19 +3033,19 @@
       M<rsub|a>+<math-ss|D><rsub|y>-<math-ss|D><rsub|z>|]>H<rsub|z>D*e<rsub|q><around|(|z|)>.
     </equation*>
 
-    The global linear bound of Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source>
+    The global linear bound of Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source>
     gives <math|<around|\<\|\|\>|H<rsub|z>D*e<rsub|q><around|(|z|)>|\<\|\|\>><rsub|\<infty\>>=<around|\<\|\|\>|b<rsub|q><around|(|z|)>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
     C<rsub|I><around|\<\|\|\>|z|\<\|\|\>><rsub|\<infty\>>>, and the second
     bound of (<reference|c-collapse>) handles the remaining Hessian term. The
     coordinate estimate is the bound on <math|D\<varrho\><rsub|q>> in
-    (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>).
+    (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>).
 
     For the frozen drift, <math|b<around|(|y|)>-b<around|(|z|)>=H<rsub|y><around|(|y-z-D\<Upsilon\><around|(|y|)>+D\<Upsilon\><around|(|z|)>|)>-H<rsub|y><around|[|\<lambda\>
     M<rsub|a>+<math-ss|D><rsub|y>-<math-ss|D><rsub|z>|]>b<around|(|z|)>>,
     with <math|H<rsub|y>,<math-ss|D><rsub|y>> at scale <math|q<rsub|\<ast\>>>
     and <math|<around|\<\|\|\>|b<around|(|z|)>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
     C<around|\<\|\|\>|z|\<\|\|\>><rsub|\<infty\>>> by
-    (<hlink|12.20|cqft_lecture_5.tm#eq:low>). The same bounds apply.
+    (<hlink|12.20|cqft_lecture_6.tm#eq:low>). The same bounds apply.
   </proof>
 
   <\proposition>
@@ -3093,7 +3115,7 @@
     <math|<around|\<\|\|\>|D<wide|h|~><rsup|N><rsub|q><around|(|y|)>-D<wide|h|~><rsup|N><rsub|q><around|(|z|)>|\<\|\|\>><rsub|2>\<leqslant\>
     s<around|(|D<rsup|2><wide|h|~><rsub|q>|)><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>\<leqslant\>
     C*g<rsub|q>q<around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>> and
-    <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>, passed to the weak limit,
+    <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>, passed to the weak limit,
     together with the fact that the multiplier
     <math|<around|(|q+4\<pi\><rsup|2><around|\||k|\|><rsup|2>|)><rsup|-1><around|(|\<mu\><rsub|q>+<wide|\<Theta\>|^><rsub|q><around|(|k|)>|)>>
     is bounded.
@@ -3116,8 +3138,8 @@
   <section|Random inputs><label|c-random-sec>
 
   The conclusion below is the statement of Section<nbsp>18.1 of
-  Lecture<nbsp>6, used in the proofs of Theorems<nbsp><hlink|18.4|cqft_lecture_6.tm#thm:limit-kernel>
-  and <hlink|18.6|cqft_lecture_6.tm#thm:limit>. We work on one probability
+  Lecture<nbsp>7, used in the proofs of Theorems<nbsp><hlink|18.4|cqft_lecture_7.tm#thm:limit-kernel>
+  and <hlink|18.6|cqft_lecture_7.tm#thm:limit>. We work on one probability
   space. All fields <math|Y<rsup|N>> are measurable functions on
   <math|\<Omega\>\<times\> I> with values in <math|H<rsub|N>>, and <math|Y>
   is a random element of <math|L<rsup|2><around|(|I\<times\>\<bbb-T\><rsup|3>|)>>;
@@ -3191,7 +3213,8 @@
     arbitrary, <math|Y> is almost surely bounded. The law of the single
     random element <math|Y> of the Polish space
     <math|L<rsup|2><around|(|I\<times\>\<bbb-T\><rsup|3>|)>> is tight, so
-    there is a compact <math|\<cal-S\>\<subset\> S<rsub|L>> with <math|\<bbb-P\><around|(|Y\<notin\>\<cal-S\>|)>\<leqslant\>2\<varepsilon\>>.
+    there is a compact <math|\<cal-S\>\<subset\> S<rsub|L>> with
+    <math|\<bbb-P\><around|(|Y\<notin\>\<cal-S\>|)>\<leqslant\>2\<varepsilon\>>.
 
     Given <math|\<eta\>\<gtr\>0>, choose finitely many smooth space\Uscale
     profiles <math|\<phi\><rsup|1>,\<ldots\>,\<phi\><rsup|m>>, bounded by
@@ -3267,26 +3290,26 @@
     Theorem<nbsp><reference|c-cons> below. <math|D\<Upsilon\>> is the trace
     part in the gradient (<reference|c-gradient>) of
     <math|e<rsub|q<rsub|\<ast\>>>>, as in
-    (<hlink|12.19|cqft_lecture_5.tm#eq:e-low>).
+    (<hlink|12.19|cqft_lecture_6.tm#eq:e-low>).
   </proof>
 
   <\remark>
     <dueto|Which hypotheses are used><label|c-rem-hyp>The theorem needs less
-    than Section<nbsp>18.1 of Lecture<nbsp>6 assumes: uniform convergence in
+    than Section<nbsp>18.1 of Lecture<nbsp>7 assumes: uniform convergence in
     space is not used, only strong <math|L<rsup|2><around|(|I\<times\>\<bbb-T\><rsup|3>|)>>
     convergence, and the sup bound need only be tight, with no moments. The
     estimate (<reference|c-continuity3>) requires no bound at all, and
     (<reference|c-continuity1>) requires only the <math|L<rsup|4>>
     convergence of the field, but we do not use this. Moments of the sup norm
-    such as those of Lemma<nbsp><hlink|17.1|cqft_lecture_6.tm#lem:sup> are one
-    way of obtaining the tightness.
+    such as those of Lemma<nbsp><hlink|17.1|cqft_lecture_7.tm#lem:sup> are
+    one way of obtaining the tightness.
   </remark>
 
   <section|The coordinate, high modes and stochastic
   integrals><label|c-cons-sec>
 
-  We now prove Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons> and the
-  statement on stochastic integrals in Section<nbsp>18.1 of Lecture<nbsp>6.
+  We now prove Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons> and the
+  statement on stochastic integrals in Section<nbsp>18.1 of Lecture<nbsp>7.
   Let <math|\<tau\><rsub|a>> denote the lattice translation by
   <math|a\<in\>\<Lambda\><rsub|N>>.
 
@@ -3324,7 +3347,7 @@
 
   <strong|The continuum coordinate.> Applying <math|C<rsub|s>>, the
   coordinate equation <math|K<rsub|s>y+D<wide|\<Gamma\>|\<bar\>><rsub|s><around|(|y|)>=K<rsub|s>x>
-  reads, by (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>),
+  reads, by (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>),
 
   <\equation>
     y+\<varrho\><rsub|s><around|(|y|)>+<frac|\<lambda\>|3>C<rsub|s>y<rsup|3>=x<space|1em><around|(|s\<geqslant\>
@@ -3335,7 +3358,7 @@
   Proposition<nbsp><reference|c-fieldlimit>, as the continuum coordinate
   equation, for <math|y\<in\> L<rsup|\<infty\>>>. For
   <math|s\<less\>*q<rsub|\<ast\>>> we use
-  (<hlink|12.18|cqft_lecture_5.tm#eq:freeze-y>), that is
+  (<hlink|12.18|cqft_lecture_6.tm#eq:freeze-y>), that is
   <math|y<rsub|s><around|(|x|)>=y<rsub|q<rsub|\<ast\>>><around|(|x-<around|(|q<rsub|\<ast\>>-s|)>C<rsub|q<rsub|\<ast\>>>x|)>>.
 
   The continuum defect is defined on <math|L<rsup|\<infty\>>> by
@@ -3351,7 +3374,7 @@
 
   <\theorem>
     <dueto|Consistency><label|c-cons>This is
-    Lemma<nbsp><hlink|18.3|cqft_lecture_6.tm#lem:cons> of Lecture<nbsp>6. Let
+    Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons> of Lecture<nbsp>7. Let
     <math|s\<gtr\>0>, <math|x<rsub|N>\<in\> H<rsub|N>>, let <math|x> be
     continuous on <math|\<bbb-T\><rsup|3>>, and suppose
     <math|\<iota\><rsub|N>x<rsub|N>\<to\> x> uniformly. Then:
@@ -3413,7 +3436,7 @@
     <strong|Convergence.> Put <math|y<rsub|N>=y<rsup|N><rsub|s><around|(|x<rsub|N>|)>>.
     As <math|<wide|\<Gamma\>|\<bar\>><rsup|N><rsub|s>> is even,
     <math|y<rsup|N><rsub|s><around|(|0|)>=0>, so
-    Lemma<nbsp><hlink|16.3|cqft_lecture_6.tm#lem:lip> gives
+    Lemma<nbsp><hlink|16.3|cqft_lecture_7.tm#lem:lip> gives
     <math|<around|\<\|\|\>|y<rsub|N>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>3<around|\<\|\|\>|x<rsub|N>|\<\|\|\>><rsub|\<infty\>>>,
     which is bounded. As <math|<wide|\<Gamma\>|\<bar\>><rsup|N><rsub|s>> is
     translation invariant, the uniqueness of the coordinate gives
@@ -3463,17 +3486,17 @@
     <math|z<rsub|N>=y<rsup|N><rsub|s><around|(|x<rsub|N>|)>> admissible.
 
     <strong|The bound (c).> The proof of the global linear bound of
-    Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source>
+    Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source>
     (Lemma<nbsp><reference|a-lem-source>) gives
     <math|<around|\<\|\|\>|D*e<rsup|N><rsub|s><around|(|y|)>|\<\|\|\>><rsub|p>\<leqslant\>
     C*g<rsub|s><around|\<\|\|\>|y|\<\|\|\>><rsub|p>> for all <math|y>, and so
     <math|<around|\||e<rsup|N><rsub|s><around|(|y|)>|\|>\<leqslant\>
     C*g<rsub|s><around|\<\|\|\>|y|\<\|\|\>><rsub|2><rsup|2>>. For
     <math|s\<less\>*q<rsub|\<ast\>>> this is
-    (<hlink|12.20|cqft_lecture_5.tm#eq:low>).
+    (<hlink|12.20|cqft_lecture_6.tm#eq:low>).
 
     <strong|The frozen case> <math|s\<less\>*q<rsub|\<ast\>>>. By
-    (<hlink|12.18|cqft_lecture_5.tm#eq:freeze-y>),
+    (<hlink|12.18|cqft_lecture_6.tm#eq:freeze-y>),
     <math|y<rsup|N><rsub|s><around|(|x<rsub|N>|)>=y<rsup|N><rsub|q<rsub|\<ast\>>><around|(|x<rsub|N><rprime|'>|)>>
     with <math|x<rsub|N><rprime|'>=x<rsub|N>-<around|(|q<rsub|\<ast\>>-s|)>C<rsup|N><rsub|q<rsub|\<ast\>>>x<rsub|N>>.
     The operator <math|C<rsup|N><rsub|q<rsub|\<ast\>>>> has norm
@@ -3495,7 +3518,7 @@
   </proof>
 
   The following gives the second claim of Section<nbsp>18.1 of
-  Lecture<nbsp>6: the identity <math|H<rsup|N>=<around|(|I-H<rsup|N>D<rsup|2><wide|\<Gamma\>|\<bar\>><rsup|N>|)>C<rsup|N>>
+  Lecture<nbsp>7: the identity <math|H<rsup|N>=<around|(|I-H<rsup|N>D<rsup|2><wide|\<Gamma\>|\<bar\>><rsup|N>|)>C<rsup|N>>
   and its consequence on high modes. Let <math|F<rsup|N><rsub|\<gtr\>*m>> be
   the Fourier projection on <math|H<rsub|N>> onto the modes
   <math|k\<in\>\<Lambda\><rsup|\<ast\>><rsub|N>> with
@@ -3527,20 +3550,20 @@
 
   <\proof>
     The identity is <math|H<rsup|N><around|(|K<rsub|q>+D<rsup|2><wide|\<Gamma\>|\<bar\>><rsup|N>|)>=I>.
-    By <hlink|(12.1)|cqft_lecture_5.tm#eq:clipping>,
+    By <hlink|(12.1)|cqft_lecture_6.tm#eq:clipping>,
     <math|D<rsup|2><wide|\<Gamma\>|\<bar\>><rsup|N>=\<lambda\>
     y<rsup|2>+\<mu\><rsub|q>+\<Theta\><rsub|q>+D<rsup|2><wide|h|~><rsub|q><around|(|y|)>>.
-    By Lemma<nbsp><hlink|12.1|cqft_lecture_5.tm#lem:resolvent>,
+    By Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent>,
     <math|<around|\<\|\|\>|H<rsup|N>|\<\|\|\>><rsub|2\<to\>2>\<leqslant\>
     C/q>. So <math|H<rsup|N><around|(|\<lambda\>
     y<rsup|2>+\<mu\><rsub|q>+D<rsup|2><wide|h|~><rsub|q>|)>> has norm at most
     <math|C<around|(|\<lambda\> L<rsup|2>/q+g<rsub|q>|)>>, by
-    <hlink|(11.10)|cqft_lecture_5.tm#eq:coeff> and
-    <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>. The kernel
+    <hlink|(11.10)|cqft_lecture_6.tm#eq:coeff> and
+    <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>. The kernel
     <math|\<Theta\><rsub|q>> is not bounded on <math|L<rsup|2>> uniformly in
     <math|N>, and we argue by the other resolvent identity. By
     Lemma<nbsp><reference|c-qtopology>, <math|\<Theta\><rsub|q>C<rsub|q>> has
-    the multiplier <math|<wide|\<Theta\>|^><rsub|q><around|(|k|)><around|(|q+\<lambda\><rsub|N><around|(|k|)>|)><rsup|-1>>,
+    the multiplier <math|<wide|\<Theta\>|^><rsub|q><around|(|k|)><around|(|q+c<rsub|k>|)><rsup|-1>>,
     of size at most <math|C*v<rsub|1><around|(|\<Theta\><rsub|q>|)>q<rsup|-1/2>\<leqslant\>
     C*R\<lambda\><rsup|2>q<rsup|-1>\<leqslant\><frac|1|2>>. From
     <math|H<rsup|N>=C<rsub|q>-C<rsub|q>D<rsup|2><wide|\<Gamma\>|\<bar\>><rsup|N>H<rsup|N>>,
@@ -3556,7 +3579,7 @@
     (<reference|c-resid>). Next
 
     <\equation*>
-      <around|\<\|\|\>|C<rsup|N><rsub|q>F<rsup|N><rsub|\<gtr\>*m>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>=<big|sum><rsub|k\<in\>\<Lambda\><rsup|\<ast\>><rsub|N>,<around|\||k|\|>\<gtr\>*m><around|(|q+\<lambda\><rsub|N><around|(|k|)>|)><rsup|-2>\<leqslant\>
+      <around|\<\|\|\>|C<rsup|N><rsub|q>F<rsup|N><rsub|\<gtr\>*m>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>=<big|sum><rsub|k\<in\>\<Lambda\><rsup|\<ast\>><rsub|N>,<around|\||k|\|>\<gtr\>*m><around|(|q+c<rsub|k>|)><rsup|-2>\<leqslant\>
       C<big|sum><rsub|<around|\||k|\|>\<gtr\>*m><around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-2>\<leqslant\>
       C/m,
     </equation*>
@@ -3567,7 +3590,7 @@
   </proof>
 
   <strong|The projected noise.> Let <math|W> be a cylindrical Brownian motion
-  on <math|H>. As in Section<nbsp>18.3 of Lecture<nbsp>6, its <strong|Fourier
+  on <math|H>. As in Section<nbsp>18.3 of Lecture<nbsp>7, its <strong|Fourier
   projection> is <math|W<rsup|N>=E<rsub|N>W>, where
 
   <\equation*>
@@ -3607,12 +3630,13 @@
   <\proof>
     Let <math|E<rsup|\<sharp\>><rsub|N>> be either <math|E<rsub|N>> or
     <math|j<rsub|N>>. Then <math|<big|int>\<iota\><rsub|N>H<rsup|N><around|(|Y<rsup|N>|)><space|0.17em>\<mathd\>
-    W<rsup|N>=<big|int>\<cal-J\><rsup|N><space|0.17em>\<mathd\> W>, with the integrand <math|\<cal-J\><rsup|N><rsub|q>=\<iota\><rsub|N>H<rsup|N><rsub|q><around|(|Y<rsup|N><rsub|q>|)>E<rsup|\<sharp\>><rsub|N>>,
+    W<rsup|N>=<big|int>\<cal-J\><rsup|N><space|0.17em>\<mathd\> W>, with the
+    integrand <math|\<cal-J\><rsup|N><rsub|q>=\<iota\><rsub|N>H<rsup|N><rsub|q><around|(|Y<rsup|N><rsub|q>|)>E<rsup|\<sharp\>><rsub|N>>,
     which is progressively measurable. So by Doob's inequality and the Itô
     isometry the left side of (<reference|c-stochconv>) is at most
     <math|4\<bbb-E\><big|int><rsub|I><around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>-H<rsub|q><around|(|Y<rsub|q>|)>|\<\|\|\>><rsub|<math-up|HS>><rsup|2><space|0.17em>\<mathd\>
-    q>. By <hlink|(12.3)|cqft_lecture_5.tm#eq:resolvent> and
-    (<hlink|12.20|cqft_lecture_5.tm#eq:low>),
+    q>. By <hlink|(12.3)|cqft_lecture_6.tm#eq:resolvent> and
+    (<hlink|12.20|cqft_lecture_6.tm#eq:low>),
     <math|<around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>|\<\|\|\>><rsub|<math-up|HS>><rsup|2>\<leqslant\><math-up|Tr>
     H<rsup|N><rsub|q><around|(|Y<rsup|N><rsub|q>|)><rsup|2>\<leqslant\>
     C<rsub|I>> deterministically, and the same bound holds for the limit by
@@ -3671,7 +3695,7 @@
     <dueto|Across the auxiliary scale><label|c-rem-qstar><math|<wide|\<Gamma\>|\<bar\>><rsub|q>>
     is continuous in <math|q> at <math|q<rsub|\<ast\>>>, and
     <math|y<rsub|q<rsub|\<ast\>>->=y<rsub|q<rsub|\<ast\>>>> by
-    (<hlink|12.18|cqft_lecture_5.tm#eq:freeze-y>), as
+    (<hlink|12.18|cqft_lecture_6.tm#eq:freeze-y>), as
     <math|C<rsub|q<rsub|\<ast\>>>K<rsub|q<rsub|\<ast\>>>=I>. So
     <math|Y<rsub|q>=y<rsub|q><around|(|x<rsub|q>|)>> is continuous across
     <math|q<rsub|\<ast\>>>, though <math|b<rsub|q>> jumps there. Its forward
@@ -3679,7 +3703,7 @@
     <math|b> does not matter for convergence in
     <math|L<rsup|2><around|(|I;H|)>>. The adaptedness of <math|Y<rsup|N>> and
     <math|Y> in Theorem<nbsp><reference|c-stoch> is a genuine hypothesis, not
-    implied by the convergence. In Section<nbsp>18.3 of Lecture<nbsp>6 it
+    implied by the convergence. In Section<nbsp>18.3 of Lecture<nbsp>7 it
     holds since the explicit flow is a strong solution, adapted to <math|W>.
   </remark>
 
@@ -3692,10 +3716,10 @@
   stronger one of <math|C<around|(|I;H|)>> and strong
   <math|L<rsup|2><around|(|I;<math-up|HS>|)>>, which the lectures do not
   claim. These routes predate the density of Section<nbsp>18 of
-  Lecture<nbsp>6; where they differ from it, the lectures are authoritative.
+  Lecture<nbsp>7; where they differ from it, the lectures are authoritative.
 
   In this section <math|V<rsub|q>> without argument is the field
-  (<hlink|13.4|cqft_lecture_6.tm#eq:Vsharp>), and
+  (<hlink|13.4|cqft_lecture_7.tm#eq:Vsharp>), and
   <math|V<rsub|q><around|(|x|)>> the potential;
   <math|\<chi\><rsub|q><around|(|y|)>> is the pointwise large-field
   indicator, while <math|\<chi\><rsub|q><around|(|x|)>> in the uniqueness
@@ -3709,7 +3733,7 @@
   <subsection|Regularity in space and scale>
 
   On a finite scale interval <math|I=<around|[|q<rsub|\<ast\>>,Q|]>> write
-  the field equation <hlink|(13.5)|cqft_lecture_6.tm#eq:field> as the linear
+  the field equation <hlink|(13.5)|cqft_lecture_7.tm#eq:field> as the linear
   elliptic equation
 
   <\equation>
@@ -3730,7 +3754,7 @@
   So the part <math|V> of the approximate forecast is in <math|H<rsup|1>>,
   and <math|Y=V+\<zeta\>-\<varrho\><around|(|Y|)>> inherits the regularity of
   the noise <math|\<zeta\>>. This is that of the free field, whatever the
-  interaction: by Lemma<nbsp><hlink|13.2|cqft_lecture_6.tm#lem:noise>,
+  interaction: by Lemma<nbsp><hlink|13.2|cqft_lecture_7.tm#lem:noise>,
   <math|\<bbb-E\><around|\<\|\|\>|\<zeta\><rsub|q>|\<\|\|\>><rsub|H<rsup|\<sigma\>>><rsup|2>\<leqslant\>C*<around|(|q-q<rsub|0>|)><big|sum><rsub|k><around|(|1+<around|\||k|\|><rsup|2>|)><rsup|\<sigma\>>*<around|(|q+c<around|\||k|\|><rsup|2>|)><rsup|-2>>,
   finite uniformly in <math|N> for <math|\<sigma\>\<less\><frac|1|2>>.
 
@@ -3759,15 +3783,15 @@
   (<math|\<sigma\>\<less\><frac|1|2>>, for which the cell embedding is
   uniformly bounded), and the contraction property of <math|\<varrho\>>:
   since <math|\<varrho\>> commutes with lattice translations
-  <math|\<tau\><rsub|a>>, <hlink|(12.5)|cqft_lecture_5.tm#eq:coordinate> gives
-  <math|<around|\<\|\|\>|\<tau\><rsub|a>*\<varrho\><around|(|Y|)>-\<varrho\><around|(|Y|)>|\<\|\|\>><rsub|2>\<leqslant\>\<varepsilon\><rsub|q><around|\<\|\|\>|\<tau\><rsub|a>*Y-Y|\<\|\|\>><rsub|2>>,
+  <math|\<tau\><rsub|a>>, <hlink|(12.5)|cqft_lecture_6.tm#eq:coordinate>
+  gives <math|<around|\<\|\|\>|\<tau\><rsub|a>*\<varrho\><around|(|Y|)>-\<varrho\><around|(|Y|)>|\<\|\|\>><rsub|2>\<leqslant\>\<varepsilon\><rsub|q><around|\<\|\|\>|\<tau\><rsub|a>*Y-Y|\<\|\|\>><rsub|2>>,
   so the increments of <math|Y> are controlled by those of <math|V+\<zeta\>>;
   the scale regularity uses the forward equation, whose drift
   <math|b<around|(|Y|)>+H<around|(|Y|)>*Z> has bounded integrated square by
-  Proposition<nbsp><hlink|12.2|cqft_lecture_5.tm#prop:source> and the
+  Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source> and the
   energies, and whose martingale part has bounded bracket density. The
-  supremum bound of Lemma<nbsp><hlink|17.1|cqft_lecture_6.tm#lem:sup> upgrades
-  <math|L<rsup|2>> compactness to every <math|L<rsup|p>>.
+  supremum bound of Lemma<nbsp><hlink|17.1|cqft_lecture_7.tm#lem:sup>
+  upgrades <math|L<rsup|2>> compactness to every <math|L<rsup|p>>.
 
   <subsection|The limit by compactness: the noise><label|d-sec:noise>
 
@@ -3797,28 +3821,42 @@
 
   <\lemma>
     <dueto|Riccati equation of the posterior covariance><label|d-lem:riccati>
-    At each <math|N>, the conditional covariance <math|<math-up|Cov><rsub|q>\<gtr\>0> satisfies
+    At each <math|N>, the conditional covariance
+    <math|<math-up|Cov><rsub|q>\<gtr\>0> satisfies
 
     <\equation>
       <label|d-eq:riccati><math-up|dCov><rsub|q>=-<math-up|Cov><rsub|q><rsup|2><space|0.17em>\<mathd\>q+\<frak-k\><rsub|q><around|[|\<mathd\>W<rsub|q>|]>,
     </equation>
 
-    where <math|\<frak-k\><rsub|q>> is the third conditional cumulant of <math|\<Phi\><rsub|\<infty\>>> given <math|\<cal-F\><rsub|q>>.
+    where <math|\<frak-k\><rsub|q>> is the third conditional cumulant of
+    <math|\<Phi\><rsub|\<infty\>>> given <math|\<cal-F\><rsub|q>>.
   </lemma>
 
   <\proof>
-    The conditional law is an exponential family in <math|p=K<rsub|q>\<Phi\><rsub|q>> (proof of Proposition<nbsp><hlink|10.4|cqft_lecture_5.tm#prop:posterior> of Lecture<nbsp>5), with log-partition function <math|\<cal-K\><rsub|q><around|(|p|)>=log<big|int>\<mathe\><rsup|<around|\<langle\>|p,\<varphi\>|\<rangle\>>-<frac|q-q<rsub|0>|2><around|\<\|\|\>|\<varphi\>|\<\|\|\>><rsub|2><rsup|2>>\<nu\><rsub|N><around|(|\<mathd\>\<varphi\>|)>>, so <math|<math-up|Cov><rsub|q>=D<rsup|2>\<cal-K\><rsub|q><around|(|p|)>> and <math|\<frak-k\><rsub|q>=D<rsup|3>\<cal-K\><rsub|q><around|(|p|)>>. Differentiating, <math|\<partial\><rsub|q>\<cal-K\>+<frac|1|2><math-up|Tr>D<rsup|2>\<cal-K\>+<frac|1|2><around|\<\|\|\>|D\<cal-K\>|\<\|\|\>><rsub|2><rsup|2>=0>; differentiate this twice in <math|p>: <math|<around|(|\<partial\><rsub|q>+<frac|1|2>*\<Delta\><rsub|p>+D*\<cal-K\>\<cdot\>D<rsub|p>|)>*D<rsup|2>*\<cal-K\>=-<around|(|D<rsup|2>*\<cal-K\>|)><rsup|2>>,
-    and apply Itô's formula along <math|\<mathd\>p=D*\<cal-K\><around|(|p|)>\<mathd\>q+\<mathd\>W>, which follows from (<hlink|10.5|cqft_lecture_5.tm#eq:polchinski-fbsde>), <math|\<partial\><rsub|q>K<rsub|q>=I> and <math|\<psi\><rsub|q>=\<Phi\><rsub|q>+C<rsub|q>F<rsub|q>>.
+    The conditional law is an exponential family in
+    <math|p=K<rsub|q>\<Phi\><rsub|q>> (proof of
+    Proposition<nbsp><hlink|10.4|cqft_lecture_6.tm#prop:posterior> of
+    Lecture<nbsp>6), with log-partition function
+    <math|\<cal-K\><rsub|q><around|(|p|)>=log<big|int>\<mathe\><rsup|<around|\<langle\>|p,\<varphi\>|\<rangle\>>-<frac|q-q<rsub|0>|2><around|\<\|\|\>|\<varphi\>|\<\|\|\>><rsub|2><rsup|2>>\<nu\><rsub|N><around|(|\<mathd\>\<varphi\>|)>>,
+    so <math|<math-up|Cov><rsub|q>=D<rsup|2>\<cal-K\><rsub|q><around|(|p|)>>
+    and <math|\<frak-k\><rsub|q>=D<rsup|3>\<cal-K\><rsub|q><around|(|p|)>>.
+    Differentiating, <math|\<partial\><rsub|q>\<cal-K\>+<frac|1|2><math-up|Tr>D<rsup|2>\<cal-K\>+<frac|1|2><around|\<\|\|\>|D\<cal-K\>|\<\|\|\>><rsub|2><rsup|2>=0>;
+    differentiate this twice in <math|p>:
+    <math|<around|(|\<partial\><rsub|q>+<frac|1|2>*\<Delta\><rsub|p>+D*\<cal-K\>\<cdot\>D<rsub|p>|)>*D<rsup|2>*\<cal-K\>=-<around|(|D<rsup|2>*\<cal-K\>|)><rsup|2>>,
+    and apply Itô's formula along <math|\<mathd\>p=D*\<cal-K\><around|(|p|)>\<mathd\>q+\<mathd\>W>,
+    which follows from (<hlink|10.5|cqft_lecture_6.tm#eq:polchinski-fbsde>),
+    <math|\<partial\><rsub|q>K<rsub|q>=I> and
+    <math|\<psi\><rsub|q>=\<Phi\><rsub|q>+C<rsub|q>F<rsub|q>>.
   </proof>
 
-  This is <hlink|(8.9)|cqft_lecture_4.tm#eq:cov-dynamics> of Lecture<nbsp>4 for
-  <math|\<partial\><rsub|q>\<cal-R\>=1>: conditional variance is resolved at
-  the rate <math|<math-up|Cov><rsup|2>>. For a smooth test <math|f>, the
+  This is <hlink|(8.9)|cqft_lecture_4.tm#eq:cov-dynamics> of Lecture<nbsp>4
+  for <math|\<partial\><rsub|q>\<cal-R\>=1>: conditional variance is resolved
+  at the rate <math|<math-up|Cov><rsup|2>>. For a smooth test <math|f>, the
   process <math|<around|\<langle\>|f,<math-up|Cov><rsub|q>f|\<rangle\>>\<geqslant\>0>
   is a nonnegative supermartingale, with drift
   <math|-<around|\<\|\|\>|<math-up|Cov><rsub|q>f|\<\|\|\>><rsup|2>>, and
   initial value <math|<math-up|Var><rsub|\<nu\><rsub|N>><around|\<langle\>|\<Phi\><rsub|\<infty\>>,f|\<rangle\>>>,
-  bounded uniformly in <math|N> by Corollary<nbsp><hlink|17.2|cqft_lecture_6.tm#cor:tight>.
+  bounded uniformly in <math|N> by Corollary<nbsp><hlink|17.2|cqft_lecture_7.tm#cor:tight>.
   A nonnegative supermartingale has controlled oscillations: after stopping
   at the first time it exceeds a level <math|K> (an event of probability at
   most <math|C<rsub|f>/K>), its decreasing part <math|A> and the bracket of
@@ -3852,9 +3890,9 @@
   and of the covariations with <math|W>, and then:
 
   <\proposition>
-    <dueto|Identification of the martingales><label|d-prop:martingales>Along a subsequence, on a common
-    filtered probability space, the limit of the forecast satisfies
-    <math|\<psi\><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q><math-up|Cov><rsub|s><space|0.17em>\<mathd\>
+    <dueto|Identification of the martingales><label|d-prop:martingales>Along
+    a subsequence, on a common filtered probability space, the limit of the
+    forecast satisfies <math|\<psi\><rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q><math-up|Cov><rsub|s><space|0.17em>\<mathd\>
     W<rsub|s>> with <math|W> a cylindrical Brownian motion for the joint
     filtration, <math|X<rsub|q>=<big|int><rsub|q<rsub|0>><rsup|q>C<rsub|s><space|0.17em>\<mathd\>
     W<rsub|s>>, and for <math|q\<geqslant\> q<rsub|0>> (for
@@ -3884,12 +3922,13 @@
   <subsection|The limit by compactness: the result>
 
   <\theorem>
-    <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>><label|d-thm:limit>Let <math|\<lambda\>,q<rsub|0>\<gtr\>0>, <math|r\<in\>\<bbb-R\>>, with the
-    counterterm of Theorem<nbsp><hlink|11.2|cqft_lecture_5.tm#thm:counter> (or
-    <math|q<rsub|\<ast\>>> large and <math|b<rsub|N>\<to\> b>,
+    <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>><label|d-thm:limit>Let
+    <math|\<lambda\>,q<rsub|0>\<gtr\>0>, <math|r\<in\>\<bbb-R\>>, with the
+    counterterm of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
+    (or <math|q<rsub|\<ast\>>> large and <math|b<rsub|N>\<to\> b>,
     <math|<around|\||b<rsub|N>|\|>\<leqslant\> B\<lambda\>
     q<rsub|\<ast\>><rsup|1/2>>). Along a subsequence of lattices (the whole
-    sequence, by Theorem<nbsp><hlink|18.6|cqft_lecture_6.tm#thm:limit>):
+    sequence, by Theorem<nbsp><hlink|18.6|cqft_lecture_7.tm#thm:limit>):
 
     <\enumerate-alpha>
       <item>the embedded processes <math|<around|(|\<psi\><rsup|N>,X<rsup|N>,Y<rsup|N>,Z<rsup|N>|)>>,
@@ -3907,7 +3946,7 @@
       <item>the limit solves the FBSDE (<reference|d-eq:limit-equations>) on
       <math|<around|[|q<rsub|0>,\<infty\>|)>>,
       <math|Y<rsub|q<rsub|0>>=Z<rsub|q<rsub|0>>=0>, with the deterministic
-      continuum coefficients <math|b,H>, limits of those of Lecture<nbsp>5
+      continuum coefficients <math|b,H>, limits of those of Lecture<nbsp>6
       and unique in their ball, an <math|H>-cylindrical Brownian motion
       <math|W> for the joint filtration, obtained as the limit of the lattice
       innovations, a symmetric nonnegative integrand
@@ -3929,7 +3968,7 @@
 
       <item>the limiting thresholded energies
       <math|E<rsub|\<infty\>>,J<rsub|\<infty\>>> satisfy the bounds of
-      Theorem<nbsp><hlink|16.2|cqft_lecture_6.tm#thm:uv>. Indeed, the lattice
+      Theorem<nbsp><hlink|16.2|cqft_lecture_7.tm#thm:uv>. Indeed, the lattice
       identities <math|V<rsub|q>=C<rsub|q><around*|[|<around|(|q-q<rsub|0>|)>\<psi\><rsub|q>-<frac|\<lambda\>|3>Y<rsub|q><rsup|3>|]>>
       and <math|\<zeta\><rsub|q>=X<rsub|q>+C<rsub|q><big|int><rsub|q<rsub|0>><rsup|q><around|(|\<psi\><rsub|s>-X<rsub|s>|)><space|0.17em>\<mathd\>
       s-<around|(|q-q<rsub|0>|)>C<rsub|q>\<psi\><rsub|q>> need neither
@@ -3941,9 +3980,12 @@
     </enumerate-alpha>
   </theorem>
 
-  <strong|Below the auxiliary scale.> Above <math|q<rsub|\<ast\>>> the proof is that of Section<nbsp><reference|d-sec:noise>, Propositions<nbsp><reference|d-prop:forward-compact> and<nbsp><reference|d-prop:martingales>, with the moments of <math|Y<rsub|q<rsub|\<ast\>>>>
-  from Section<nbsp><hlink|17|cqft_lecture_6.tm#sec:compactness>, and spatial
-  compactness at <math|q<rsub|\<ast\>>> by one-sided averaging on
+  <strong|Below the auxiliary scale.> Above <math|q<rsub|\<ast\>>> the proof
+  is that of Section<nbsp><reference|d-sec:noise>,
+  Propositions<nbsp><reference|d-prop:forward-compact>
+  and<nbsp><reference|d-prop:martingales>, with the moments of
+  <math|Y<rsub|q<rsub|\<ast\>>>> from Section<nbsp><hlink|17|cqft_lecture_7.tm#sec:compactness>,
+  and spatial compactness at <math|q<rsub|\<ast\>>> by one-sided averaging on
   <math|<around|[|q<rsub|\<ast\>>,q<rsub|\<ast\>>+\<delta\>|]>>. The
   processes <math|\<psi\>,W,<math-up|Cov>> never involve <math|Y>: for
   <math|q\<leqslant\> Q>, <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>\<psi\><rsub|Q>>
@@ -3954,9 +3996,9 @@
   u> is tight in <math|C<around|(|I;L<rsup|\<infty\>>|)>>: the first term by
   Kolmogorov, the second as <math|C<rsub|q<rsub|\<ast\>>>:L<rsup|2>\<to\>
   C<rsup|1/2>> and <math|\<psi\><rsup|N>> converges in
-  <math|C<around|(|I;H|)>>. By <hlink|(12.18)|cqft_lecture_5.tm#eq:freeze-y>
-  and Lemmas<nbsp><hlink|16.3|cqft_lecture_6.tm#lem:lip>,
-  <hlink|18.3|cqft_lecture_6.tm#lem:cons>,
+  <math|C<around|(|I;H|)>>. By <hlink|(12.18)|cqft_lecture_6.tm#eq:freeze-y>
+  and Lemmas<nbsp><hlink|16.3|cqft_lecture_7.tm#lem:lip>,
+  <hlink|18.3|cqft_lecture_7.tm#lem:cons>,
   <math|Y<rsup|N><rsub|s>=y<rsup|N><rsub|q<rsub|\<ast\>>><around|(|C<rsub|q<rsub|\<ast\>>>K<rsub|s>\<Phi\><rsup|N><rsub|s>|)>\<to\>
   Y> uniformly on <math|I\<times\>\<bbb-T\><rsup|3>>, so
   <math|Z<rsup|N>\<to\> Z> in <math|C<around|(|I;H|)>>. The convergence
@@ -3965,7 +4007,9 @@
   H<around|(|Y|)>> in <math|L<rsup|2><around|(|I;<math-up|HS>|)>> and
   <math|b<around|(|Y<rsup|N>|)>\<to\> b<around|(|Y|)>> in
   <math|L<rsup|2><around|(|I;H|)>>, so <math|\<Xi\><rsup|N>\<to\>\<Xi\>> and
-  the limit solves the system on <math|I>. At <math|q<rsub|0>>, <math|\<Phi\><rsub|q<rsub|0>>=0>: so <math|Y<rsub|q<rsub|0>>=0> since <math|<wide|\<cal-F\>|\<bar\>>> is odd, and
+  the limit solves the system on <math|I>. At <math|q<rsub|0>>,
+  <math|\<Phi\><rsub|q<rsub|0>>=0>: so <math|Y<rsub|q<rsub|0>>=0> since
+  <math|<wide|\<cal-F\>|\<bar\>>> is odd, and
   <math|Z<rsub|q<rsub|0>>=\<psi\><rsub|q<rsub|0>>=\<bbb-E\><rsub|\<nu\>>\<Phi\>=0>.
 
   So the posterior structure survives the continuum limit: <math|\<psi\>=Y+Z>
@@ -4021,8 +4065,8 @@
     <math|<wide|V|\<bar\>><rsub|q><around|(|x|)>=min<rsub|y><around*|[|<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>+<frac|1|2><around|\<langle\>|x-y,K<rsub|q><around|(|x-y|)>|\<rangle\>>|]>>,
     the functional being strictly convex for <math|q\<geqslant\>
     q<rsub|\<ast\>>>. As <math|U+<frac|1|2>\<mu\><rsub|q>y<rsup|2>+<wide|h|~><rsub|q>\<geqslant\>-C<rsub|q>>
-    (the quartic dominates, as <math|<math-ss|S><rsub|4><around|(|h<rsub|q>|)>> is
-    small, and <math|<around|\||<wide|h|~><rsub|q><around|(|y|)>|\|>\<leqslant\>
+    (the quartic dominates, as <math|<math-ss|S><rsub|4><around|(|h<rsub|q>|)>>
+    is small, and <math|<around|\||<wide|h|~><rsub|q><around|(|y|)>|\|>\<leqslant\>
     C*<math-ss|S><rsub|4><around|(|h<rsub|q>|)><around|\<\|\|\>|y|\<\|\|\>><rsub|4><rsup|4>>),
     <math|<wide|V|\<bar\>><rsub|q><around|(|x|)>\<geqslant\>-C<rsub|q>+<frac|1|2><around|\<langle\>|x,\<Theta\><rsub|q><rprime|'>x|\<rangle\>>>,
     with <math|\<Theta\><rsub|q><rprime|'>=K<rsub|q><around|(|K<rsub|q>+\<Theta\><rsub|q>|)><rsup|-1>\<Theta\><rsub|q>>.
@@ -4042,7 +4086,7 @@
     by the definition of <math|A<rsub|N>>. For <math|\<chi\><rsub|R>> a
     continuous cut-off of <math|<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>>>,
     on its support <math|A<rsub|N>> is bounded and continuously convergent
-    (Theorem<nbsp><hlink|18.4|cqft_lecture_6.tm#thm:limit-kernel>), and
+    (Theorem<nbsp><hlink|18.4|cqft_lecture_7.tm#thm:limit-kernel>), and
     <math|\<iota\><rsub|N>x<rsub|N>\<to\> x> uniformly in probability; with
     the <math|L<rsup|p>> bound,
 
@@ -4054,8 +4098,8 @@
     with <math|I<around|(|R|)>\<gtr\>0>, and the same with a bounded
     continuous function under the integral. By Step<nbsp>1 of the proof of
     Theorem<nbsp><reference|d-thm:unique>, that is
-    (<hlink|12.5|cqft_lecture_5.tm#eq:coordinate>) and
-    Lemma<nbsp><hlink|17.1|cqft_lecture_6.tm#lem:sup>,
+    (<hlink|12.5|cqft_lecture_6.tm#eq:coordinate>) and
+    Lemma<nbsp><hlink|17.1|cqft_lecture_7.tm#lem:sup>,
     <math|sup<rsub|N>\<bbb-P\><around|(|<around|\<\|\|\>|\<Phi\><rsup|N><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<gtr\>*R/2|)>\<to\>0>
     as <math|R\<to\>\<infty\>>. So for <math|R> large,
     <math|I<rsub|N><around|(|R|)>/Z<rsub|N>\<geqslant\><frac|1|2>>, where
@@ -4068,12 +4112,12 @@
 
     <strong|The formula.> The kernel form follows by disintegrating
     <math|\<nu\><rsub|N>> at scale <math|q>, and using
-    (<hlink|18.12|cqft_lecture_6.tm#eq:kernel>) with the uniform convergence
+    (<hlink|18.12|cqft_lecture_7.tm#eq:kernel>) with the uniform convergence
     in probability: the cylinder function
     <math|\<Pi\><rsup|N><rsub|q>O<around|(|x<rsub|N>|)>> is bounded, and
     converges for continuously convergent arguments. So <math|<big|int>
     O<space|0.17em>\<mathd\>\<nu\>=<big|int>\<Pi\><rsub|q>O<space|0.17em>\<mathd\>\<rho\><rsub|q>/\<rho\><rsub|q><around|(|1|)>>,
-    which by (<hlink|18.12|cqft_lecture_6.tm#eq:kernel>) and
+    which by (<hlink|18.12|cqft_lecture_7.tm#eq:kernel>) and
     (<reference|d-eq:rho>) is (<reference|d-eq:GM>), the factor
     <math|\<mathe\><rsup|A>> cancelling.
   </proof>
@@ -4118,8 +4162,8 @@
 
   <math|F<rsub|q>> is even and <math|C<rsup|4>>, vanishes on
   <math|<around|\||u|\|>\<leqslant\><frac|15|16>r<rsub|q>>, and the <math|s>
-  integral runs up to <math|s<rsub|u>=<frac|256|225>\<lambda\> u<rsup|2>>. Let
-  <math|v=<around|\||u|\|>/r<rsub|q>-<frac|15|16>>. Then for
+  integral runs up to <math|s<rsub|u>=<frac|256|225>\<lambda\> u<rsup|2>>.
+  Let <math|v=<around|\||u|\|>/r<rsub|q>-<frac|15|16>>. Then for
   <math|v\<gtr\>0>, with constants independent of <math|A> and <math|q>,
 
   <\equation>
@@ -4326,7 +4370,8 @@
     </equation*>
 
     Let <math|\<theta\><rsub|s>=4C\<lambda\><rsup|4>/s>. For <math|s> large,
-    <math|\<theta\><rprime|'>+C\<lambda\> s<rsup|-3/2>\<theta\>+<frac|5|2>s<rsup|-2>\<theta\><rsup|2>+\<kappa\>\<leqslant\>0>,
+    <math|\<theta\><rprime|'>+C\<lambda\>
+    s<rsup|-3/2>\<theta\>+<frac|5|2>s<rsup|-2>\<theta\><rsup|2>+\<kappa\>\<leqslant\>0>,
     because <math|\<theta\><rprime|'>=-4\<kappa\>> dominates. Then
     <math|exp<around*|(|\<theta\><rsub|s>w<rsub|s>+<big|int><rsub|q><rsup|s>\<kappa\>
     w-<big|int><rsub|q><rsup|s>a|)>>, with
@@ -4446,7 +4491,8 @@
     explicit counterterm (<reference|eq:explicit>). Then the whole sequence
     <math|\<iota\><rsub|N>\<nu\><rsub|N>> converges weakly in
     <math|H<rsup|-s>>, <math|s\<gtr\><frac|1|2>>, to a measure <math|\<nu\>>.
-    The joint law of <math|\<Phi\>> and of the Polchinski process <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>,
+    The joint law of <math|\<Phi\>> and of the Polchinski process
+    <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>,
     <math|B> independent of <math|\<Phi\>>, is unique. The dynamics are not
     used.
   </theorem>
@@ -4462,13 +4508,13 @@
     <strong|Step 1: the good set.> By (12.5),
     <math|\<Phi\><rsub|q>=Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+<frac|\<lambda\>|3>C<rsub|q>Y<rsub|q><rsup|3>>,
     so <math|<around|\<\|\|\>|\<Phi\><rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>2<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>+<frac|\<lambda\>|3q><around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>><rsup|3>>.
-    Proposition<nbsp><hlink|14.4|cqft_lecture_6.tm#prop:sup>, whose constant
+    Proposition<nbsp><hlink|14.4|cqft_lecture_7.tm#prop:sup>, whose constant
     involves <math|<around|\<\|\|\>|C<rsub|q<rsub|0>>|\<\|\|\>><rsub|2\<to\>\<infty\>>>,
     finite with <math|a<rsub|2><around|(|q<rsub|0>|)>\<leqslant\>
     q<rsub|0><rsup|-2>+C> uniformly in <math|N>, with
-    Lemma<nbsp><hlink|14.5|cqft_lecture_6.tm#lem:noise-sup> and
-    Theorem<nbsp><hlink|16.2|cqft_lecture_6.tm#thm:uv> gives
-    Lemma<nbsp><hlink|17.1|cqft_lecture_6.tm#lem:sup>:
+    Lemma<nbsp><hlink|14.5|cqft_lecture_7.tm#lem:noise-sup> and
+    Theorem<nbsp><hlink|16.2|cqft_lecture_7.tm#thm:uv> gives
+    Lemma<nbsp><hlink|17.1|cqft_lecture_7.tm#lem:sup>:
     <math|<around|\<\|\|\>|Y<rsub|q>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>\<cal-Y\>*q<rsup|5/12>log<rsup|1/6><around|(|2+q|)>>
     for <math|q\<geqslant\> q<rsub|\<ast\>>>, with <math|\<cal-Y\>> having
     moments uniformly in <math|N>. Therefore
@@ -4515,7 +4561,7 @@
     <strong|Step 4: the reference law converges at fixed> <math|q>. Let
     <math|x<rsub|N>\<sim\>\<gamma\><rsub|Q<rsub|q,N>>> be coupled through
     common Fourier Gaussians. The multiplier
-    <math|<around|(|q-q<rsub|0>|)><around|(|<around|(|q<rsub|0>+\<lambda\><rsub|k>|)><around|(|q+\<lambda\><rsub|k>|)>|)><rsup|-1>\<lesssim\><around|(|1+<around|\||k|\|>|)><rsup|-4>>
+    <math|<around|(|q-q<rsub|0>|)><around|(|<around|(|q<rsub|0>+c<rsub|k>|)><around|(|q+c<rsub|k>|)>|)><rsup|-1>\<lesssim\><around|(|1+<around|\||k|\|>|)><rsup|-4>>
     gives, by the Kolmogorov criterion, <math|\<iota\><rsub|N>x<rsub|N>\<to\>
     x> in probability in <math|L<rsup|\<infty\>>>. Let
     <math|y=y<rsub|q><around|(|x|)>> and <math|w=y-x=-\<varrho\><rsub|q><around|(|y|)>-<frac|\<lambda\>|3>C<rsub|q>y<rsup|3>>.
@@ -4557,14 +4603,14 @@
     this is in Proposition<nbsp><reference|c-completecons>, the finite
     recursion being uniform on compact sets of scales; it extends to strongly
     convergent bounded fields by the Lipschitz constant
-    <math|<math-ss|S><rsub|2>\<leqslant\> C*g<rsub|q>q> on <math|L<rsup|2>>. The same
-    holds for the term <math|M<rsub|q>y> by the fixed <math|k> convergence of
-    Proposition<nbsp><reference|prop:limits>. With this, <math|L<rsup|2>>
-    compactness of <math|w<rsub|N>> from the <math|H<rsup|1>> bound passes
-    the coordinate equation to the limit. Its solution is unique among
-    bounded fields <math|y> with <math|y-x\<in\> H<rsup|1>>: if <math|d> is
-    the difference of two solutions <math|y>, <math|y<rprime|'>>, test
-    <math|K<rsub|q>d+<frac|\<lambda\>|3><around|(|y<rsup|3>-<around|(|y<rprime|'>|)><rsup|3>|)>+M<rsub|q>d+D<wide|h|~><rsub|q><around|(|y|)>-D<wide|h|~><rsub|q><around|(|y<rprime|'>|)>=0>
+    <math|<math-ss|S><rsub|2>\<leqslant\> C*g<rsub|q>q> on <math|L<rsup|2>>.
+    The same holds for the term <math|M<rsub|q>y> by the fixed <math|k>
+    convergence of Proposition<nbsp><reference|prop:limits>. With this,
+    <math|L<rsup|2>> compactness of <math|w<rsub|N>> from the
+    <math|H<rsup|1>> bound passes the coordinate equation to the limit. Its
+    solution is unique among bounded fields <math|y> with <math|y-x\<in\>
+    H<rsup|1>>: if <math|d> is the difference of two solutions <math|y>,
+    <math|y<rprime|'>>, test <math|K<rsub|q>d+<frac|\<lambda\>|3><around|(|y<rsup|3>-<around|(|y<rprime|'>|)><rsup|3>|)>+M<rsub|q>d+D<wide|h|~><rsub|q><around|(|y|)>-D<wide|h|~><rsub|q><around|(|y<rprime|'>|)>=0>
     with <math|d>, and use <math|<around|\<langle\>|d,M<rsub|q>d|\<rangle\>>\<geqslant\>-\<varepsilon\><rsub|q><around|\<langle\>|d,K<rsub|q>d|\<rangle\>>>
     and <math|<around|\<\|\|\>|D<wide|h|~><rsub|q><around|(|y|)>-D<wide|h|~><rsub|q><around|(|y<rprime|'>|)>|\<\|\|\>><rsub|2>\<leqslant\>
     C*g<rsub|q>q<around|\<\|\|\>|d|\<\|\|\>><rsub|2>>, both of which pass
@@ -4594,8 +4640,8 @@
       <around|\<langle\>|\<iota\><rsub|N><around|(|\<Phi\><rsub|\<infty\>>-\<Phi\><rsub|q>|)>,h|\<rangle\>>=<around|\<langle\>|\<Phi\><rsub|\<infty\>>,C<rsub|q>K<rsub|q<rsub|0>>j<rsub|N>h|\<rangle\>>-<around|\<langle\>|C<rsub|q>B<rsub|q-q<rsub|0>>,j<rsub|N>h|\<rangle\>>.
     </equation*>
 
-    By (<hlink|17.6|cqft_lecture_6.tm#eq:tested>), the first has mean absolute
-    value at most <math|C<around|\<\|\|\>|C<rsub|q>K<rsub|q<rsub|0>>j<rsub|N>h|\<\|\|\>><rsub|\<ast\>>\<leqslant\>
+    By (<hlink|17.6|cqft_lecture_7.tm#eq:tested>), the first has mean
+    absolute value at most <math|C<around|\<\|\|\>|C<rsub|q>K<rsub|q<rsub|0>>j<rsub|N>h|\<\|\|\>><rsub|\<ast\>>\<leqslant\>
     C*q<rsup|-1><around|\<\|\|\>|h|\<\|\|\>><rsub|C<rsup|2>>>, as
     <math|C<rsub|q>> has norm <math|q<rsup|-1>> on each <math|L<rsup|p>>. The
     second has variance at most <math|<around|\<\|\|\>|h|\<\|\|\>><rsub|2><rsup|2>/q>.
@@ -4607,17 +4653,21 @@
     </equation*>
 
     Let <math|q\<to\>\<infty\>>. Cylinder functions separate measures on
-    <math|H<rsup|-s>> and Theorem<nbsp><hlink|17.5|cqft_lecture_6.tm#thm:hs-gauss>
+    <math|H<rsup|-s>> and Theorem<nbsp><hlink|17.5|cqft_lecture_7.tm#thm:hs-gauss>
     gives tightness, so the whole sequence converges. Since <math|B<rsup|N>>
     is a Brownian motion independent of <math|\<Phi\><rsup|N><rsub|\<infty\>>>,
-    independence passes to the limit, with <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>.
+    independence passes to the limit, with
+    <math|\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>.
   </proof>
 
-  <strong|What this proof does not give.> This argument identifies only the joint law of <math|\<Phi\>> and the Polchinski process. It does not by itself give uniqueness
-  for the system of Theorem<nbsp><reference|d-thm:limit>(b) as an equation,
-  nor that <math|\<psi\><rsub|q>> is measurable for the filtration of the Polchinski process; these follow from the density in Lecture<nbsp>6,
-  Theorem<nbsp><hlink|18.6|cqft_lecture_6.tm#thm:limit>(b) and
-  Theorem<nbsp><hlink|18.11|cqft_lecture_6.tm#thm:unique-law>. It does not
+  <strong|What this proof does not give.> This argument identifies only the
+  joint law of <math|\<Phi\>> and the Polchinski process. It does not by
+  itself give uniqueness for the system of
+  Theorem<nbsp><reference|d-thm:limit>(b) as an equation, nor that
+  <math|\<psi\><rsub|q>> is measurable for the filtration of the Polchinski
+  process; these follow from the density in Lecture<nbsp>7,
+  Theorem<nbsp><hlink|18.6|cqft_lecture_7.tm#thm:limit>(b) and
+  Theorem<nbsp><hlink|18.11|cqft_lecture_7.tm#thm:unique-law>. It does not
   cover <math|H<rsup|-s>> with <math|s> near <math|<frac|1|2>> for quartic
   moments.
 
@@ -4633,7 +4683,7 @@
   field <cite|GM24>, Proposition<nbsp>3.13, there is a spatial cut-off, and
   the flow starts from zero. Here the defect is unbounded, and this older
   route uses the action only above <math|q<rsub|\<ast\>>>, without the frozen
-  extension of Section<nbsp><hlink|12.5|cqft_lecture_5.tm#sec:low-action>, so
+  extension of Section<nbsp><hlink|12.5|cqft_lecture_6.tm#sec:low-action>, so
   we use the symmetrised entropy at a fixed scale, which needs only
   expectations of the defect, and let the scale tend to infinity at the end.
   In particular neither the penalty, nor the sub- and supersolutions, nor the
@@ -4810,10 +4860,10 @@
     and <math|\<bbb-E\><around|\<\|\|\>|Y<rsub|s>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>
     C<around|(|1+s<rsup|1/2>|)>> by Itô's formula for
     <math|<around|\<\|\|\>|Y<rsub|s>|\<\|\|\>><rsub|2><rsup|2>> along the
-    forward equation of Theorem<nbsp><hlink|10.6|cqft_lecture_5.tm#thm:YZ>,
+    forward equation of Theorem<nbsp><hlink|10.6|cqft_lecture_6.tm#thm:YZ>,
     from <math|q<rsub|\<ast\>>>, with the moments of
     <math|Y<rsub|q<rsub|\<ast\>>>> and <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|u>|\<\|\|\>><rsub|2><rsup|2>\<leqslant\>
-    C*u<rsup|-5/2>> of Theorem<nbsp><hlink|16.2|cqft_lecture_6.tm#thm:uv>,
+    C*u<rsup|-5/2>> of Theorem<nbsp><hlink|16.2|cqft_lecture_7.tm#thm:uv>,
     <math|<around|\<\|\|\>|H|\<\|\|\>>\<leqslant\> C/u>, the linear bound on
     <math|b> and <math|<math-up|Tr> H<rsup|2>\<leqslant\> C*u<rsup|-1/2>>. So
     <math|\<lambda\><rsup|5><big|int><rsub|q><rsup|\<infty\>>s<rsup|-3>\<bbb-E\><around|\<\|\|\>|\<pi\><rsub|s>Y<rsub|s>|\<\|\|\>><rsub|4><rsup|4><space|0.17em>\<mathd\>
@@ -4855,7 +4905,7 @@
 
   The bound on <math|\<bbb-E\><rsup|\<bbb-P\>>> is where UV stability enters.
   So the backward equation is used only through
-  Theorem<nbsp><hlink|16.2|cqft_lecture_6.tm#thm:uv>, for
+  Theorem<nbsp><hlink|16.2|cqft_lecture_7.tm#thm:uv>, for
   <math|J<rsub|\<infty\>>> and <math|\<bbb-E\><around|\<\|\|\>|Z<rsub|s>|\<\|\|\>><rsub|2><rsup|2>>;
   under <math|\<bbb-R\>> the comparison has no <math|Z>, no conditional
   expectation and no exponential moment. What is lost is the pointwise bound
@@ -4864,8 +4914,9 @@
   scale, and that is all the theorem needs.
 
   <\remark>
-    <dueto|The backward error alone><label|d-rem:Z>The drifts differ by <math|C<rsub|s><rsup|2><around|(|F<rsub|s>-<wide|f|\<bar\>><rsub|s>|)>> with
-    <math|<wide|f|\<bar\>>=-D<wide|V|\<bar\>>>, and
+    <dueto|The backward error alone><label|d-rem:Z>The drifts differ by
+    <math|C<rsub|s><rsup|2><around|(|F<rsub|s>-<wide|f|\<bar\>><rsub|s>|)>>
+    with <math|<wide|f|\<bar\>>=-D<wide|V|\<bar\>>>, and
     <math|C<rsub|s><around|(|F<rsub|s>-<wide|f|\<bar\>><rsub|s>|)>=Z<rsub|s>>.
     So, from the same initial law at scale <math|q>, Girsanov's theorem gives
     directly that the relative entropy of the exact path law with respect to
@@ -4875,18 +4926,18 @@
     but it does not identify the limit: it reduces the terminal law to the
     law at scale <math|q>, which is the unknown, since the flow does not
     forget the low modes. In<nbsp><cite|GM24> this does not arise, as the
-    flow starts from a deterministic point; the same holds in Lecture<nbsp>6,
+    flow starts from a deterministic point; the same holds in Lecture<nbsp>7,
     where the frozen action starts the flow at <math|q<rsub|0>> from zero
-    (Theorem<nbsp><hlink|18.5|cqft_lecture_6.tm#thm:nu>). The symmetrised
+    (Theorem<nbsp><hlink|18.5|cqft_lecture_7.tm#thm:nu>). The symmetrised
     entropy above compares the laws at scale <math|q> as well, through the
     cancellation of the factors at <math|\<xi\><rsub|q>>.
   </remark>
 
   With Proposition<nbsp><reference|d-prop:gir>, Steps<nbsp>1, 4 and<nbsp>5 of
   Theorem<nbsp><reference|d-thm:unique> conclude the proof as before: it uses
-  Theorem<nbsp><hlink|16.2|cqft_lecture_6.tm#thm:uv>,
-  Proposition<nbsp><hlink|14.4|cqft_lecture_6.tm#prop:sup>,
-  Lemma<nbsp><hlink|14.5|cqft_lecture_6.tm#lem:noise-sup>, (11.12),
+  Theorem<nbsp><hlink|16.2|cqft_lecture_7.tm#thm:uv>,
+  Proposition<nbsp><hlink|14.4|cqft_lecture_7.tm#prop:sup>,
+  Lemma<nbsp><hlink|14.5|cqft_lecture_7.tm#lem:noise-sup>, (11.12),
   Lemma<nbsp>12.1, and Proposition<nbsp>12.2 with its ledger. On this route
   the condition <math|q<rsub|\<ast\>>\<geqslant\> q<rsub|A>> of
   Theorem<nbsp><reference|d-thm:unique> is not needed.
@@ -4920,183 +4971,184 @@
   <\collection>
     <associate|a-eq-bare-mass|<tuple|20.13|11>>
     <associate|a-eq-bdry|<tuple|20.9|9>>
-    <associate|a-eq-center|<tuple|19.4|4>>
+    <associate|a-eq-center|<tuple|19.4|3>>
     <associate|a-eq-clipping|<tuple|21.1|12>>
     <associate|a-eq-clipping-marks|<tuple|21.7|14>>
     <associate|a-eq-coeffbounds|<tuple|20.10|9>>
-    <associate|a-eq-coordinate-small|<tuple|21.5|14>>
-    <associate|a-eq-covariance-marked|<tuple|21.8|15>>
+    <associate|a-eq-coordinate-small|<tuple|21.5|13>>
+    <associate|a-eq-covariance-marked|<tuple|21.8|14>>
     <associate|a-eq-frakD|<tuple|21.11|15>>
     <associate|a-eq-free|<tuple|19.1|2>>
     <associate|a-eq-globalh|<tuple|21.2|12>>
-    <associate|a-eq-gradient|<tuple|21.6|14>>
+    <associate|a-eq-gradient|<tuple|21.6|13>>
     <associate|a-eq-increments|<tuple|20.11|9>>
     <associate|a-eq-iteration|<tuple|20.4|5>>
-    <associate|a-eq-killing|<tuple|19.2|3>>
+    <associate|a-eq-killing|<tuple|19.2|2>>
     <associate|a-eq-ledger|<tuple|21.10|15>>
-    <associate|a-eq-mass|<tuple|20.8|9>>
+    <associate|a-eq-mass|<tuple|20.8|8>>
     <associate|a-eq-module|<tuple|19.3|3>>
-    <associate|a-eq-receive|<tuple|19.5|4>>
+    <associate|a-eq-receive|<tuple|19.5|3>>
     <associate|a-eq-resolvent|<tuple|21.3|13>>
-    <associate|a-eq-response|<tuple|20.14|12>>
-    <associate|a-eq-rooted-cycle|<tuple|20.5|6>>
+    <associate|a-eq-response|<tuple|20.14|11>>
+    <associate|a-eq-rooted-cycle|<tuple|20.5|5>>
     <associate|a-eq-seed|<tuple|20.1|5>>
     <associate|a-eq-seedder|<tuple|20.2|5>>
     <associate|a-eq-smallerror|<tuple|20.12|9>>
-    <associate|a-eq-source|<tuple|21.4|14>>
-    <associate|a-eq-third-chain-marked|<tuple|21.9|15>>
+    <associate|a-eq-source|<tuple|21.4|13>>
+    <associate|a-eq-third-chain-marked|<tuple|21.9|14>>
     <associate|a-eq-trace-map|<tuple|20.3|5>>
     <associate|a-eq-tracegain|<tuple|20.7|7>>
     <associate|a-eq-weighted-cycle|<tuple|20.6|6>>
     <associate|a-lem-bare-mass|<tuple|20.7|11>>
-    <associate|a-lem-center|<tuple|19.3|4>>
+    <associate|a-lem-center|<tuple|19.3|3>>
     <associate|a-lem-free|<tuple|19.1|2>>
-    <associate|a-lem-inserted-receiver|<tuple|20.3|7>>
+    <associate|a-lem-inserted-receiver|<tuple|20.3|6>>
     <associate|a-lem-resolvent|<tuple|21.1|13>>
-    <associate|a-lem-rooted-cycle|<tuple|20.1|6>>
-    <associate|a-lem-source|<tuple|21.2|14>>
+    <associate|a-lem-rooted-cycle|<tuple|20.1|5>>
+    <associate|a-lem-source|<tuple|21.2|13>>
     <associate|a-lem-trace|<tuple|20.4|7>>
     <associate|a-prop-coeff|<tuple|20.6|9>>
-    <associate|a-prop-response|<tuple|20.8|12>>
+    <associate|a-prop-response|<tuple|20.8|11>>
     <associate|a-rem-trace-hypotheses|<tuple|20.5|8>>
     <associate|a-sec-budgets|<tuple|20.3|7>>
     <associate|a-sec-clip|<tuple|21.1|12>>
     <associate|a-sec-clipping|<tuple|21|12>>
-    <associate|a-sec-coeff|<tuple|20.4|9>>
-    <associate|a-sec-coercive|<tuple|21.2|13>>
+    <associate|a-sec-coeff|<tuple|20.4|8>>
+    <associate|a-sec-coercive|<tuple|21.2|12>>
     <associate|a-sec-defect|<tuple|21.3|13>>
     <associate|a-sec-kernels|<tuple|19|2>>
     <associate|a-sec-receiving|<tuple|20.2|5>>
     <associate|a-sec-recursion|<tuple|20|4>>
     <associate|a-sec-tensors|<tuple|20.1|4>>
     <associate|auto-1|<tuple|19|2>>
-    <associate|auto-10|<tuple|21.2|13>>
+    <associate|auto-10|<tuple|21.2|12>>
     <associate|auto-11|<tuple|21.3|13>>
-    <associate|auto-12|<tuple|22|16>>
+    <associate|auto-12|<tuple|22|15>>
     <associate|auto-13|<tuple|23|17>>
-    <associate|auto-14|<tuple|24|18>>
-    <associate|auto-15|<tuple|25|19>>
-    <associate|auto-16|<tuple|26|20>>
-    <associate|auto-17|<tuple|27|22>>
-    <associate|auto-18|<tuple|28|23>>
-    <associate|auto-19|<tuple|29|26>>
+    <associate|auto-14|<tuple|24|17>>
+    <associate|auto-15|<tuple|25|18>>
+    <associate|auto-16|<tuple|26|19>>
+    <associate|auto-17|<tuple|27|21>>
+    <associate|auto-18|<tuple|28|22>>
+    <associate|auto-19|<tuple|29|25>>
     <associate|auto-2|<tuple|1|2>>
-    <associate|auto-20|<tuple|30|29>>
-    <associate|auto-21|<tuple|31|30>>
-    <associate|auto-22|<tuple|32|33>>
-    <associate|auto-23|<tuple|32.1|34>>
-    <associate|auto-24|<tuple|32.2|34>>
+    <associate|auto-20|<tuple|30|28>>
+    <associate|auto-21|<tuple|31|29>>
+    <associate|auto-22|<tuple|32|32>>
+    <associate|auto-23|<tuple|32.1|33>>
+    <associate|auto-24|<tuple|32.2|33>>
     <associate|auto-25|<tuple|32.3|35>>
-    <associate|auto-26|<tuple|32.4|36>>
-    <associate|auto-27|<tuple|32.5|37>>
-    <associate|auto-28|<tuple|32.6|40>>
+    <associate|auto-26|<tuple|32.4|35>>
+    <associate|auto-27|<tuple|32.5|36>>
+    <associate|auto-28|<tuple|32.6|39>>
     <associate|auto-29|<tuple|32.7|41>>
     <associate|auto-3|<tuple|20|4>>
-    <associate|auto-30|<tuple|32.16|44>>
+    <associate|auto-30|<tuple|32.16|43>>
     <associate|auto-4|<tuple|20.1|4>>
     <associate|auto-5|<tuple|20.2|5>>
     <associate|auto-6|<tuple|20.3|7>>
-    <associate|auto-7|<tuple|20.4|9>>
+    <associate|auto-7|<tuple|20.4|8>>
     <associate|auto-8|<tuple|21|12>>
     <associate|auto-9|<tuple|21.1|12>>
-    <associate|bib-GM24|<tuple|GM24|44>>
-    <associate|c-L2continuity|<tuple|30.2|29>>
-    <associate|c-Upsilon|<tuple|30.3|30>>
-    <associate|c-ascoli|<tuple|31.1|30>>
-    <associate|c-bvp|<tuple|28.3|24>>
-    <associate|c-collapse|<tuple|29.6|28>>
-    <associate|c-compact|<tuple|26|20>>
-    <associate|c-compensated|<tuple|24.1|18>>
-    <associate|c-complete|<tuple|29|26>>
-    <associate|c-completecons|<tuple|29.1|26>>
-    <associate|c-cons|<tuple|31.2|31>>
-    <associate|c-cons-sec|<tuple|31|30>>
-    <associate|c-continuity1|<tuple|29.3|27>>
-    <associate|c-continuity2|<tuple|29.4|27>>
-    <associate|c-continuity3|<tuple|29.5|27>>
+    <associate|bib-GM24|<tuple|GM24|43>>
+    <associate|c-L2continuity|<tuple|30.2|28>>
+    <associate|c-Upsilon|<tuple|30.3|29>>
+    <associate|c-ascoli|<tuple|31.1|29>>
+    <associate|c-bvp|<tuple|28.3|23>>
+    <associate|c-collapse|<tuple|29.6|27>>
+    <associate|c-compact|<tuple|26|19>>
+    <associate|c-compensated|<tuple|24.1|17>>
+    <associate|c-complete|<tuple|29|25>>
+    <associate|c-completecons|<tuple|29.1|25>>
+    <associate|c-cons|<tuple|31.2|30>>
+    <associate|c-cons-sec|<tuple|31|29>>
+    <associate|c-continuity1|<tuple|29.3|26>>
+    <associate|c-continuity2|<tuple|29.4|26>>
+    <associate|c-continuity3|<tuple|29.5|26>>
     <associate|c-conv|<tuple|23|17>>
-    <associate|c-coordinate|<tuple|31.1|31>>
-    <associate|c-covcont|<tuple|26.3|21>>
-    <associate|c-defect-def|<tuple|31.2|31>>
-    <associate|c-fieldcont|<tuple|29.2|27>>
-    <associate|c-fieldconv|<tuple|29.7|28>>
-    <associate|c-fieldlimit|<tuple|29.3|28>>
-    <associate|c-findiff|<tuple|25.2|20>>
-    <associate|c-finitecons|<tuple|27.2|22>>
-    <associate|c-fixed|<tuple|28|23>>
-    <associate|c-freecons|<tuple|26.1|20>>
-    <associate|c-frozen|<tuple|29.2|26>>
-    <associate|c-gradient|<tuple|29.1|26>>
-    <associate|c-hessianTaylor|<tuple|25.1|20>>
-    <associate|c-highbound|<tuple|31.4|32>>
-    <associate|c-highmodes|<tuple|31.3|32>>
-    <associate|c-moveboundary|<tuple|28.4|25>>
-    <associate|c-pathcons|<tuple|28.3|24>>
-    <associate|c-pathmetric|<tuple|23.1|18>>
+    <associate|c-coordinate|<tuple|31.1|30>>
+    <associate|c-covcont|<tuple|26.3|20>>
+    <associate|c-defect-def|<tuple|31.2|30>>
+    <associate|c-fieldcont|<tuple|29.2|26>>
+    <associate|c-fieldconv|<tuple|29.7|27>>
+    <associate|c-fieldlimit|<tuple|29.3|27>>
+    <associate|c-findiff|<tuple|25.2|19>>
+    <associate|c-finitecons|<tuple|27.2|21>>
+    <associate|c-fixed|<tuple|28|22>>
+    <associate|c-freecons|<tuple|26.1|19>>
+    <associate|c-frozen|<tuple|29.2|25>>
+    <associate|c-gradient|<tuple|29.1|25>>
+    <associate|c-hessianTaylor|<tuple|25.1|19>>
+    <associate|c-highbound|<tuple|31.4|31>>
+    <associate|c-highmodes|<tuple|31.3|31>>
+    <associate|c-moveboundary|<tuple|28.4|24>>
+    <associate|c-pathcons|<tuple|28.3|23>>
+    <associate|c-pathmetric|<tuple|23.1|17>>
     <associate|c-qtopology|<tuple|24.1|18>>
-    <associate|c-random|<tuple|30.1|29>>
-    <associate|c-random-sec|<tuple|30|29>>
-    <associate|c-randomcoef|<tuple|30.1|29>>
-    <associate|c-recursiontail|<tuple|27.3|23>>
-    <associate|c-rem-hyp|<tuple|30.2|30>>
-    <associate|c-rem-noderiv|<tuple|28.2|24>>
-    <associate|c-rem-qstar|<tuple|31.5|33>>
-    <associate|c-resid|<tuple|31.3|32>>
-    <associate|c-rowmodulus|<tuple|26.1|21>>
-    <associate|c-sandwich|<tuple|26.2|21>>
-    <associate|c-seed|<tuple|27|22>>
-    <associate|c-seedcons|<tuple|27.1|22>>
-    <associate|c-seedforce|<tuple|27.1|22>>
-    <associate|c-stoch|<tuple|31.4|33>>
-    <associate|c-stochconv|<tuple|31.5|33>>
-    <associate|c-strongmass|<tuple|28.2|23>>
-    <associate|c-topology|<tuple|24|18>>
-    <associate|c-tracedecomp|<tuple|27.2|23>>
-    <associate|c-vertex|<tuple|25|19>>
-    <associate|c-vertexweak|<tuple|25.1|19>>
-    <associate|c-weakcontr|<tuple|26.4|22>>
-    <associate|c-weakintegral|<tuple|28.1|23>>
-    <associate|c-weaksource|<tuple|28.1|23>>
+    <associate|c-random|<tuple|30.1|28>>
+    <associate|c-random-sec|<tuple|30|28>>
+    <associate|c-randomcoef|<tuple|30.1|28>>
+    <associate|c-recursiontail|<tuple|27.3|22>>
+    <associate|c-rem-hyp|<tuple|30.2|29>>
+    <associate|c-rem-noderiv|<tuple|28.2|23>>
+    <associate|c-rem-qstar|<tuple|31.5|32>>
+    <associate|c-resid|<tuple|31.3|31>>
+    <associate|c-rowmodulus|<tuple|26.1|20>>
+    <associate|c-sandwich|<tuple|26.2|20>>
+    <associate|c-seed|<tuple|27|21>>
+    <associate|c-seedcons|<tuple|27.1|21>>
+    <associate|c-seedforce|<tuple|27.1|21>>
+    <associate|c-stoch|<tuple|31.4|32>>
+    <associate|c-stochconv|<tuple|31.5|32>>
+    <associate|c-strongmass|<tuple|28.2|22>>
+    <associate|c-topology|<tuple|24|17>>
+    <associate|c-tracedecomp|<tuple|27.2|22>>
+    <associate|c-vertex|<tuple|25|18>>
+    <associate|c-vertexweak|<tuple|25.1|18>>
+    <associate|c-weakcontr|<tuple|26.4|21>>
+    <associate|c-weakintegral|<tuple|28.1|22>>
+    <associate|c-weaksource|<tuple|28.1|22>>
     <associate|d-cor:rho|<tuple|32.6|36>>
-    <associate|d-density|<tuple|32.4|36>>
+    <associate|d-density|<tuple|32.4|35>>
     <associate|d-eq:F|<tuple|32.7|37>>
     <associate|d-eq:FKT|<tuple|32.11|39>>
     <associate|d-eq:GM|<tuple|32.6|36>>
-    <associate|d-eq:HJ2|<tuple|32.13|42>>
-    <associate|d-eq:closed-forecast|<tuple|32.4|36>>
-    <associate|d-eq:comp|<tuple|32.10|39>>
-    <associate|d-eq:e-bound|<tuple|32.14|42>>
-    <associate|d-eq:eps|<tuple|32.12|40>>
-    <associate|d-eq:exp-riccati|<tuple|32.9|39>>
-    <associate|d-eq:limit-equations|<tuple|32.3|35>>
-    <associate|d-eq:linear|<tuple|32.1|34>>
+    <associate|d-eq:HJ2|<tuple|32.13|41>>
+    <associate|d-eq:closed-forecast|<tuple|32.4|35>>
+    <associate|d-eq:comp|<tuple|32.10|38>>
+    <associate|d-eq:e-bound|<tuple|32.14|41>>
+    <associate|d-eq:eps|<tuple|32.12|39>>
+    <associate|d-eq:exp-riccati|<tuple|32.9|38>>
+    <associate|d-eq:limit-equations|<tuple|32.3|34>>
+    <associate|d-eq:linear|<tuple|32.1|33>>
     <associate|d-eq:rho|<tuple|32.5|36>>
-    <associate|d-eq:riccati|<tuple|32.2|35>>
+    <associate|d-eq:riccati|<tuple|32.2|34>>
     <associate|d-eq:sub|<tuple|32.8|38>>
     <associate|d-eq:sym|<tuple|32.15|42>>
-    <associate|d-lem:HJ|<tuple|32.7|37>>
-    <associate|d-lem:e-bound|<tuple|32.14|42>>
-    <associate|d-lem:exp-riccati|<tuple|32.11|39>>
-    <associate|d-lem:input|<tuple|32.9|38>>
-    <associate|d-lem:pm|<tuple|32.8|38>>
-    <associate|d-lem:riccati|<tuple|32.3|35>>
+    <associate|d-lem:HJ|<tuple|32.7|36>>
+    <associate|d-lem:e-bound|<tuple|32.14|41>>
+    <associate|d-lem:exp-riccati|<tuple|32.11|38>>
+    <associate|d-lem:input|<tuple|32.9|37>>
+    <associate|d-lem:pm|<tuple|32.8|37>>
+    <associate|d-lem:riccati|<tuple|32.3|34>>
     <associate|d-lem:sub|<tuple|32.10|38>>
-    <associate|d-prop:comp|<tuple|32.12|39>>
-    <associate|d-prop:forward-compact|<tuple|32.1|34>>
-    <associate|d-prop:gir|<tuple|32.15|42>>
-    <associate|d-prop:martingales|<tuple|32.4|35>>
+    <associate|d-prop:comp|<tuple|32.12|38>>
+    <associate|d-prop:forward-compact|<tuple|32.1|33>>
+    <associate|d-prop:gir|<tuple|32.15|41>>
+    <associate|d-prop:martingales|<tuple|32.4|34>>
     <associate|d-rem:Z|<tuple|32.16|43>>
-    <associate|d-rem:hidden|<tuple|32.2|34>>
-    <associate|d-sec|<tuple|32|33>>
-    <associate|d-sec:FK|<tuple|32.5|37>>
+    <associate|d-rem:hidden|<tuple|32.2|33>>
+    <associate|d-sec|<tuple|32|32>>
+    <associate|d-sec:FK|<tuple|32.5|36>>
     <associate|d-sec:gir|<tuple|32.7|41>>
-    <associate|d-sec:uniq|<tuple|32.6|40>>
+    <associate|d-sec:noise|<tuple|32.2|33>>
+    <associate|d-sec:uniq|<tuple|32.6|39>>
     <associate|d-thm:limit|<tuple|32.5|35>>
-    <associate|d-thm:unique|<tuple|32.13|40>>
+    <associate|d-thm:unique|<tuple|32.13|39>>
     <associate|eq:explicit|<tuple|22.2|16>>
     <associate|eq:fN|<tuple|22.1|16>>
-    <associate|m-sec|<tuple|22|16>>
-    <associate|prop:limits|<tuple|22.1|16>>
+    <associate|m-sec|<tuple|22|15>>
+    <associate|prop:limits|<tuple|22.1|15>>
     <associate|thm:mass|<tuple|22.2|16>>
   </collection>
 </references>
@@ -5104,7 +5156,6 @@
 <\auxiliary>
   <\collection>
     <\associate|bib>
-
       GM24
 
       GM24
@@ -5112,17 +5163,17 @@
       GM24
     </associate>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Elementary
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Elementary
       kernels> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-1><vspace|0.5fn>
+      <no-break><pageref|auto-1><vspace|0.2fn>
 
-      <with|par-left|<quote|3tab>|<with|font-size|<quote|0.92>|Forces and
-      their primitives <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2>>>
+      <with|par-left|<quote|2tab>|Forces and their primitives
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|20<space|2spc>Renormalisation
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|20<space|2spc>Renormalisation
       with two correction steps> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.5fn>
+      <no-break><pageref|auto-3><vspace|0.2fn>
 
       <with|par-left|<quote|1tab>|20.1<space|2spc>Tensors and the iteration
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -5140,10 +5191,10 @@
       boundary value <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|21<space|2spc>Global
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|21<space|2spc>Global
       coercivity and the complete large-field error>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8><vspace|0.5fn>
+      <no-break><pageref|auto-8><vspace|0.2fn>
 
       <with|par-left|<quote|1tab>|21.1<space|2spc>Clipping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -5157,55 +5208,55 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-11>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|22<space|2spc>The
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|22<space|2spc>The
       bare mass and its limit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-12><vspace|0.5fn>
+      <no-break><pageref|auto-12><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|23<space|2spc>Identifying
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|23<space|2spc>Identifying
       the deterministic coefficients: conventions>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-13><vspace|0.5fn>
+      <no-break><pageref|auto-13><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|24<space|2spc>The
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|24<space|2spc>The
       topology of the centred quadratic kernel>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-14><vspace|0.5fn>
+      <no-break><pageref|auto-14><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|25<space|2spc>Physical
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|25<space|2spc>Physical
       vertex measures and their derivatives>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15><vspace|0.5fn>
+      <no-break><pageref|auto-15><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|26<space|2spc>Compact
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|26<space|2spc>Compact
       resolvents receive weak Hessians> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-16><vspace|0.5fn>
+      <no-break><pageref|auto-16><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|27<space|2spc>Convergence
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|27<space|2spc>Convergence
       of the seed and the two trace steps>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17><vspace|0.5fn>
+      <no-break><pageref|auto-17><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|28<space|2spc>The
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|28<space|2spc>The
       mixed boundary fixed point converges>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18><vspace|0.5fn>
+      <no-break><pageref|auto-18><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|29<space|2spc>Clipping
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|29<space|2spc>Clipping
       and the complete drift> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19><vspace|0.5fn>
+      <no-break><pageref|auto-19><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|30<space|2spc>Random
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|30<space|2spc>Random
       inputs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20><vspace|0.5fn>
+      <no-break><pageref|auto-20><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|31<space|2spc>The
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|31<space|2spc>The
       coordinate, high modes and stochastic integrals>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21><vspace|0.5fn>
+      <no-break><pageref|auto-21><vspace|0.2fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|32<space|2spc>Complements
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|32<space|2spc>Complements
       not used in the lectures> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22><vspace|0.5fn>
+      <no-break><pageref|auto-22><vspace|0.2fn>
 
       <with|par-left|<quote|1tab>|32.1<space|2spc>Regularity in space and
       scale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -5235,9 +5286,9 @@
       comparison <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-29>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
+      <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30><vspace|0.5fn>
+      <no-break><pageref|auto-30><vspace|0.2fn>
     </associate>
   </collection>
 </auxiliary>

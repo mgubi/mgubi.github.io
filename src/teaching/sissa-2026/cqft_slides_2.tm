@@ -791,10 +791,12 @@
       <item>Lecture<nbsp>3: stochastic quantisation; the GFF along a scale
       parameter; stochastic observables, products and OPE.
 
-      <item>Lecture<nbsp>4: Polchinski equation and its FBSDE; Wetterich
-      equation; variational structure.
+      <item>Lecture<nbsp>4: Polchinski equation and its FBSDE; Wetterich equation; variational structure.
 
-      <item>Lectures<nbsp>5\U6: a construction of
+      <item>Lecture<nbsp>5: observables; the field equation at every
+      resolution and its sub-Gaussian noise.
+
+      <item>Lectures<nbsp>6\U7: a construction of
       <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE.
     </itemize>
 

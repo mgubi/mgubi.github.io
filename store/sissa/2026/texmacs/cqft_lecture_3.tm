@@ -3,8 +3,9 @@
 <style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
-  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>3: Stochastic quantisation and
-  stochastic observables>|<doc-author|<cqft-author-data>>|<doc-date|SISSA, October 2026>>
+  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>3:
+  Stochastic quantisation and stochastic observables>|<doc-author|<cqft-author-data>>|<doc-date|SISSA,
+  October 2026>>
 
   <abstract-data|<\abstract>
     We first show that the Gaussian free field is the stationary one-time
@@ -19,33 +20,30 @@
   </abstract>>
 
   <\table-of-contents|toc>
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Introduction>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Introduction>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-1><vspace|0.5fn>
+    <no-break><pageref|auto-1><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Structure
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2>>>
+    <with|par-left|2tab|Structure <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-2>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Conventions
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3>>>
+    <with|par-left|2tab|Conventions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-3>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|4<space|2spc>Stochastic
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|4<space|2spc>Stochastic
     quantisation> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-4><vspace|0.5fn>
+    <no-break><pageref|auto-4><vspace|0.2fn>
 
     <with|par-left|1tab|4.1<space|2spc>The GFF as stationary marginal of
     parabolic stochastic quantisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Langevin dynamics
+    <with|par-left|2tab|Langevin dynamics
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-6>>>
+    <no-break><pageref|auto-6>>
 
-    <with|par-left|3tab|<with|font-size|0.92|History
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-7>>>
+    <with|par-left|2tab|History <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-7>>
 
     <with|par-left|1tab|4.2<space|2spc>The GFF as one-point marginal of
     elliptic stochastic quantisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -54,9 +52,9 @@
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Setting:
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Setting:
     covariance profiles and observables> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-11><vspace|0.5fn>
+    <no-break><pageref|auto-11><vspace|0.2fn>
 
     <with|par-left|1tab|5.1<space|2spc>Covariance profiles
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -66,72 +64,67 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-14>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Observables as equivalence
-    classes <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15>>>
-
-    <with|par-left|3tab|<with|font-size|0.92|Random variables as observables
+    <with|par-left|2tab|Observables as equivalence classes
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16>>>
+    <no-break><pageref|auto-15>>
+
+    <with|par-left|2tab|Random variables as observables
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-16>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-17>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Observables
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Observables
     of the Gaussian free field and their products>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18><vspace|0.5fn>
+    <no-break><pageref|auto-18><vspace|0.2fn>
 
     <with|par-left|1tab|6.1<space|2spc>Wick powers and exponentials
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-19>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Point evaluations
+    <with|par-left|2tab|Point evaluations
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20>>>
+    <no-break><pageref|auto-20>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Wick powers
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21>>>
+    <with|par-left|2tab|Wick powers <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-21>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Exponentials
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>>
+    <with|par-left|2tab|Exponentials <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-22>>
 
     <with|par-left|1tab|6.2<space|2spc>Products of observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-23>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Brownian deltas
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>>
+    <with|par-left|2tab|Brownian deltas <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-24>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Products of point evaluations
+    <with|par-left|2tab|Products of point evaluations
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-25>>>
+    <no-break><pageref|auto-25>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Operator product expansion
+    <with|par-left|2tab|Operator product expansion
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>>
+    <no-break><pageref|auto-26>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Higher orders
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-27>>>
+    <with|par-left|2tab|Higher orders <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-27>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Locality and factorisation
+    <with|par-left|2tab|Locality and factorisation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28>>>
+    <no-break><pageref|auto-28>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Outlook
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>>
+    <with|par-left|2tab|Outlook <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-30>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-31>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|References>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32><vspace|0.5fn>
+    <no-break><pageref|auto-32><vspace|0.2fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -1347,7 +1340,7 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|2>>
+    <associate|auto-1|<tuple|?|1>>
     <associate|auto-10|<tuple|4.5|5>>
     <associate|auto-11|<tuple|5|6>>
     <associate|auto-12|<tuple|5.1|6>>
@@ -1413,7 +1406,7 @@
     <associate|eq:OPE|<tuple|6.5|10>>
     <associate|eq:SQE|<tuple|4.1|2>>
     <associate|eq:XX|<tuple|6.4|10>>
-    <associate|eq:generator|<tuple|4.2|3>>
+    <associate|eq:generator|<tuple|4.2|2>>
     <associate|eq:heat-kernel|<tuple|5.2|6>>
     <associate|eq:heat-profile|<tuple|5.1|6>>
     <associate|eq:prod-cond|<tuple|6.2|10>>
@@ -1439,7 +1432,7 @@
     <associate|fig:multiscale|<tuple|5.1|7>>
     <associate|fig:she|<tuple|4.1|4>>
     <associate|lem:uniq|<tuple|5.4|7>>
-    <associate|prop:inf-inv|<tuple|4.1|3>>
+    <associate|prop:inf-inv|<tuple|4.1|2>>
     <associate|prop:product|<tuple|6.3|10>>
     <associate|prop:repair|<tuple|5.6|8>>
     <associate|prop:scale-GFF|<tuple|5.2|6>>

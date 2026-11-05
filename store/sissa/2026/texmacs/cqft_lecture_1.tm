@@ -3,8 +3,9 @@
 <style|<tuple|article|number-long-article|british|cqft-notes|preview-ref>>
 
 <\body>
-  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>1: Relativistic quantum fields and
-  imaginary time>|<doc-author|<cqft-author-data>>|<doc-date|SISSA, October 2026>>
+  <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|Lecture<nbsp>1:
+  Relativistic quantum fields and imaginary
+  time>|<doc-author|<cqft-author-data>>|<doc-date|SISSA, October 2026>>
 
   <abstract-data|<\abstract>
     We recall the Wightman axioms for a relativistic scalar field, explain
@@ -21,21 +22,19 @@
   </abstract>>
 
   <\table-of-contents|toc>
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Introduction>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Introduction>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-1><vspace|0.5fn>
+    <no-break><pageref|auto-1><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Plan
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2>>>
+    <with|par-left|2tab|Plan <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-2>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Conventions
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3>>>
+    <with|par-left|2tab|Conventions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-3>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Relativistic
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Relativistic
     quantum fields in Minkowski space> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-4><vspace|0.5fn>
+    <no-break><pageref|auto-4><vspace|0.2fn>
 
     <with|par-left|1tab|1.1<space|2spc>Kinematics
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -49,9 +48,8 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-8>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The free field
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-9>>>
+    <with|par-left|2tab|The free field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-9>>
 
     <with|par-left|1tab|1.4<space|2spc>The two-point function: the
     Källén\ULehmann representation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -61,20 +59,19 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-12>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Free field on a spatial circle
+    <with|par-left|2tab|Free field on a spatial circle
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-13>>>
+    <no-break><pageref|auto-13>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Interactions
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14>>>
+    <with|par-left|2tab|Interactions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-14>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-15>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>From
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|2<space|2spc>From
     real to imaginary time> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16><vspace|0.5fn>
+    <no-break><pageref|auto-16><vspace|0.2fn>
 
     <with|par-left|1tab|2.1<space|2spc>A lattice Hamiltonian on the circle
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -96,63 +93,59 @@
     Osterwalder\USchrader axioms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-25>>
 
-    <with|par-left|3tab|<with|font-size|0.92|The Euclidean strategy
+    <with|par-left|2tab|The Euclidean strategy
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26>>>
+    <no-break><pageref|auto-26>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-27>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>The
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|3<space|2spc>The
     course> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28><vspace|0.5fn>
+    <no-break><pageref|auto-28><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Prerequisites
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>>
+    <with|par-left|2tab|Prerequisites <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-29>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Approach
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>>
+    <with|par-left|2tab|Approach <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-30>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Lecture
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>1.
+    <with|par-left|2tab|Lecture <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>1.
     Relativistic quantum fields and imaginary time
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>>
+    <no-break><pageref|auto-32>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Lecture
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>2.
+    <with|par-left|2tab|Lecture <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>2.
     The Gaussian free field <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33>>>
+    <no-break><pageref|auto-33>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Lecture
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>3.
+    <with|par-left|2tab|Lecture <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>3.
     Stochastic quantisation and stochastic observables
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34>>>
+    <no-break><pageref|auto-34>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Lecture
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>4.
+    <with|par-left|2tab|Lecture <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>4.
     Forward\Ubackward equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>>
+    <no-break><pageref|auto-35>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Lectures
-    <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>5\U6
+    <with|par-left|2tab|Lecture <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>5.
+    Observables and field equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-36>>
+
+    <with|par-left|2tab|Lectures <no-break><specific|screen|<resize|<move|<with|color|#A0A0FF|->|-0.3em|>|0em||0em|>>6\U7
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36>>>
+    <no-break><pageref|auto-37>>
 
-    <with|par-left|3tab|<with|font-size|0.92|Homework and projects
+    <with|par-left|2tab|Homework and projects
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37>>>
+    <no-break><pageref|auto-38>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|References and
-    further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-38><vspace|0.5fn>
+    <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|References
+    and further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-39><vspace|0.2fn>
 
-    <with|par-left|3tab|<with|font-size|0.92|Guide
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-39>>>
+    <with|par-left|2tab|Guide <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-40>>
   </table-of-contents>
 
   <section*|Introduction>
@@ -185,7 +178,7 @@
   Osterwalder\USchrader axioms. Lecture<nbsp>2
   (Section<nbsp><hlink|3|cqft_lecture_2.tm#sec:gff> of its notes) studies the
   first example, the Gaussian free field. Section<nbsp><reference|app:plan>
-  outlines the plan of the course (six lectures).
+  outlines the plan of the course (seven lectures).
 
   <paragraph|Conventions> <math|\<hbar\>=c=1>. Spacetime dimension is
   <math|d=1+s>, <math|s\<geqslant\>1> the number of space dimensions. Inner
@@ -1652,14 +1645,14 @@
 
   <section|The course><label|app:plan>
 
-  These notes cover the first of six two-hour lectures given at SISSA,
-  Trieste, in October\UNovember 2026, for graduate students in analysis,
-  probability or mathematical physics. Each lecture has its own notes.
-  Lectures<nbsp>1\U4 develop the general framework; Lectures<nbsp>5\U6 give a
-  construction of <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE
-  of Lecture<nbsp>4. Lectures<nbsp>1\U3 were delivered in October 2026;
-  Lectures<nbsp>4\U6 are provisional, and Sections<nbsp>16\U18 of
-  Lecture<nbsp>6 will not be delivered in class.
+  These notes cover the first of seven lectures given at SISSA, Trieste, in
+  October\UNovember 2026, for graduate students in analysis, probability or
+  mathematical physics. Each lecture has its own notes. Lectures<nbsp>1\U5
+  develop the general framework; Lectures<nbsp>6\U7 give a construction of
+  <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE of
+  Lecture<nbsp>4. Lectures<nbsp>1\U3 were delivered in October 2026;
+  Lectures<nbsp>4\U7 are provisional, and Sections<nbsp>16\U18 of
+  Lecture<nbsp>7 will not be delivered in class.
 
   <paragraph|Prerequisites> Measure-theoretic probability and Itô calculus;
   the spectral theorem for self-adjoint operators; distributions and Fourier
@@ -1727,17 +1720,23 @@
   an FBSDE whose force is a martingale; the FBSDE in force coordinates, where
   the transport term is integrated exactly, and the Wetterich equation for
   the effective average action; the Boué\UDupuis formula, with the Polchinski
-  equation as its Hamilton\UJacobi\UBellman equation, in finite and infinite
-  volume. Additional material: perturbation theory and counterterms;
-  Dyson\USchwinger equations at every scale.
+  equation as its Hamilton\UJacobi\UBellman equation.
   <em|Reading:><nbsp><cite|Pol84|BBD24|BD98|BG20>.
 
-  <paragraph|Lectures<nbsp>5\U6> Construction of
+  <paragraph|Lecture<nbsp>5. Observables and field equations> Separate notes:
+  observables of the interacting theory; the Euclidean field equation and
+  Nelson's Euclidean noise; the field equation at every resolution, with a
+  sub-Gaussian noise; Dyson\USchwinger equations at every scale, also in
+  pathwise form; infinite volume. Additional material: the algebra of the
+  Polchinski flow, perturbation theory and counterterms, and functional
+  inequalities from the stochastic localisation.
+
+  <paragraph|Lectures<nbsp>6\U7> Construction of
   <math|\<Phi\><rsup|4><rsub|3>> on the torus (separate notes). The Wetterich
-  FBSDE, two renormalisations and the large-field problem (Lecture<nbsp>5); a
-  priori estimates for the forward\Ubackward system (Lecture<nbsp>6,
+  FBSDE, two renormalisations and the large-field problem (Lecture<nbsp>6); a
+  priori estimates for the forward\Ubackward system (Lecture<nbsp>7,
   Sections<nbsp>13\U15); UV stability, compactness and the limiting FBSDE
-  (Lecture<nbsp>6, Sections<nbsp>16\U18, not delivered in class).
+  (Lecture<nbsp>7, Sections<nbsp>16\U18, not delivered in class).
   <em|Reading:><nbsp><cite|BG20|BCG26>.
 
   <paragraph|Homework and projects> Problem sets can be drawn from the
@@ -1984,29 +1983,29 @@
 
 <\references>
   <\collection>
-    <associate|app:plan|<tuple|3|15>>
-    <associate|auto-1|<tuple|?|2>>
+    <associate|app:plan|<tuple|3|16>>
+    <associate|auto-1|<tuple|?|1>>
     <associate|auto-10|<tuple|1.4|6>>
     <associate|auto-11|<tuple|1.2|7>>
     <associate|auto-12|<tuple|1.5|7>>
-    <associate|auto-13|<tuple|1|8>>
+    <associate|auto-13|<tuple|1|7>>
     <associate|auto-14|<tuple|2|8>>
     <associate|auto-15|<tuple|iii|8>>
     <associate|auto-16|<tuple|2|9>>
     <associate|auto-17|<tuple|2.1|9>>
-    <associate|auto-18|<tuple|2.2|9>>
+    <associate|auto-18|<tuple|2.2|10>>
     <associate|auto-19|<tuple|2.1|10>>
     <associate|auto-2|<tuple|1|2>>
     <associate|auto-20|<tuple|2.3|10>>
-    <associate|auto-21|<tuple|2.2|11>>
+    <associate|auto-21|<tuple|2.2|12>>
     <associate|auto-22|<tuple|2.4|12>>
     <associate|auto-23|<tuple|2.3|12>>
-    <associate|auto-24|<tuple|2.1|12>>
+    <associate|auto-24|<tuple|2.1|13>>
     <associate|auto-25|<tuple|2.5|13>>
-    <associate|auto-26|<tuple|1|14>>
-    <associate|auto-27|<tuple|1|14>>
-    <associate|auto-28|<tuple|3|15>>
-    <associate|auto-29|<tuple|1|15>>
+    <associate|auto-26|<tuple|1|15>>
+    <associate|auto-27|<tuple|1|15>>
+    <associate|auto-28|<tuple|3|16>>
+    <associate|auto-29|<tuple|1|16>>
     <associate|auto-3|<tuple|2|2>>
     <associate|auto-30|<tuple|2|16>>
     <associate|auto-31|<tuple|3.1|16>>
@@ -2014,11 +2013,12 @@
     <associate|auto-33|<tuple|4|16>>
     <associate|auto-34|<tuple|5|16>>
     <associate|auto-35|<tuple|6|16>>
-    <associate|auto-36|<tuple|7|16>>
-    <associate|auto-37|<tuple|8|16>>
-    <associate|auto-38|<tuple|8|17>>
+    <associate|auto-36|<tuple|7|17>>
+    <associate|auto-37|<tuple|8|17>>
+    <associate|auto-38|<tuple|9|17>>
     <associate|auto-39|<tuple|9|17>>
     <associate|auto-4|<tuple|1|2>>
+    <associate|auto-40|<tuple|10|17>>
     <associate|auto-5|<tuple|1.1|2>>
     <associate|auto-6|<tuple|1.1|2>>
     <associate|auto-7|<tuple|1.2|3>>
@@ -2035,16 +2035,16 @@
     <associate|bib-BG20|<tuple|BG20|17>>
     <associate|bib-BSZ92|<tuple|BSZ92|17>>
     <associate|bib-Bry09|<tuple|Bry09|17>>
-    <associate|bib-DPZ14|<tuple|DPZ14|17>>
-    <associate|bib-FH81|<tuple|FH81|17>>
-    <associate|bib-FO76|<tuple|FO76|17>>
-    <associate|bib-GJ68|<tuple|GJ68|17>>
-    <associate|bib-GJ73|<tuple|GJ73|17>>
-    <associate|bib-GJ87|<tuple|GJ87|17>>
-    <associate|bib-GJS74|<tuple|GJS74|17>>
-    <associate|bib-GJS75|<tuple|GJS75|17>>
-    <associate|bib-GRS75|<tuple|GRS75|17>>
-    <associate|bib-GS73|<tuple|GS73|17>>
+    <associate|bib-DPZ14|<tuple|DPZ14|18>>
+    <associate|bib-FH81|<tuple|FH81|18>>
+    <associate|bib-FO76|<tuple|FO76|18>>
+    <associate|bib-GJ68|<tuple|GJ68|18>>
+    <associate|bib-GJ73|<tuple|GJ73|18>>
+    <associate|bib-GJ87|<tuple|GJ87|18>>
+    <associate|bib-GJS74|<tuple|GJS74|18>>
+    <associate|bib-GJS75|<tuple|GJS75|18>>
+    <associate|bib-GRS75|<tuple|GRS75|18>>
+    <associate|bib-GS73|<tuple|GS73|18>>
     <associate|bib-HK64|<tuple|HK64|18>>
     <associate|bib-Haa96|<tuple|Haa96|18>>
     <associate|bib-Jaf00|<tuple|Jaf00|18>>
@@ -2062,16 +2062,16 @@
     <associate|bib-RS80|<tuple|RS80|18>>
     <associate|bib-Rad96|<tuple|Rad96|18>>
     <associate|bib-Rue62|<tuple|Rue62|18>>
-    <associate|bib-SW64|<tuple|SW64|18>>
-    <associate|bib-Seg70|<tuple|Seg70|18>>
-    <associate|bib-She07|<tuple|She07|18>>
-    <associate|bib-Sim74|<tuple|Sim74|18>>
-    <associate|bib-Sim79|<tuple|Sim79|18>>
-    <associate|bib-Sum12|<tuple|Sum12|18>>
-    <associate|bib-Sym69|<tuple|Sym69|18>>
-    <associate|bib-WK74|<tuple|WK74|18>>
-    <associate|bib-Wal94|<tuple|Wal94|18>>
-    <associate|bib-Wig64|<tuple|Wig64|18>>
+    <associate|bib-SW64|<tuple|SW64|19>>
+    <associate|bib-Seg70|<tuple|Seg70|19>>
+    <associate|bib-She07|<tuple|She07|19>>
+    <associate|bib-Sim74|<tuple|Sim74|19>>
+    <associate|bib-Sim79|<tuple|Sim79|19>>
+    <associate|bib-Sum12|<tuple|Sum12|19>>
+    <associate|bib-Sym69|<tuple|Sym69|19>>
+    <associate|bib-WK74|<tuple|WK74|19>>
+    <associate|bib-Wal94|<tuple|Wal94|19>>
+    <associate|bib-Wig64|<tuple|Wig64|19>>
     <associate|def:wightman|<tuple|1.1|3>>
     <associate|eq:CCR|<tuple|1.6|7>>
     <associate|eq:FK|<tuple|2.11|11>>
@@ -2081,25 +2081,25 @@
     <associate|eq:KL|<tuple|1.4|6>>
     <associate|eq:NLKG|<tuple|1.9|8>>
     <associate|eq:W2|<tuple|1.3|5>>
-    <associate|eq:Wlat|<tuple|2.4|9>>
+    <associate|eq:Wlat|<tuple|2.4|10>>
     <associate|eq:free-field|<tuple|1.2|5>>
     <associate|eq:lattice-action|<tuple|2.8|11>>
     <associate|eq:lattice-measure|<tuple|2.9|11>>
     <associate|eq:latticewave|<tuple|2.2|9>>
     <associate|eq:logdiv|<tuple|1.8|8>>
-    <associate|eq:modes|<tuple|1.7|8>>
+    <associate|eq:modes|<tuple|1.7|7>>
     <associate|eq:path-integral|<tuple|2.13|13>>
     <associate|eq:schwinger|<tuple|2.5|10>>
     <associate|eq:spin-system|<tuple|2.12|12>>
-    <associate|eq:transfer|<tuple|2.6|10>>
-    <associate|ex:OU|<tuple|2.2|14>>
+    <associate|eq:transfer|<tuple|2.6|11>>
+    <associate|ex:OU|<tuple|2.2|15>>
     <associate|ex:RP-lattice|<tuple|2.5|15>>
     <associate|ex:W2|<tuple|1.1|8>>
     <associate|ex:analytic|<tuple|1.4|9>>
     <associate|ex:clustering|<tuple|2.8|15>>
     <associate|ex:corrlength|<tuple|2.4|15>>
     <associate|ex:gen-free|<tuple|1.6|9>>
-    <associate|ex:heisenberg|<tuple|2.1|14>>
+    <associate|ex:heisenberg|<tuple|2.1|15>>
     <associate|ex:lattice-action|<tuple|2.3|15>>
     <associate|ex:restrictions|<tuple|1.3|8>>
     <associate|ex:sum-rule|<tuple|1.5|9>>
@@ -2108,15 +2108,15 @@
     <associate|fig:KL|<tuple|1.2|7>>
     <associate|fig:cone|<tuple|1.1|2>>
     <associate|fig:lattice|<tuple|2.3|12>>
-    <associate|fig:ou|<tuple|2.2|11>>
+    <associate|fig:ou|<tuple|2.2|12>>
     <associate|fig:wick-rotation|<tuple|2.1|10>>
-    <associate|lem:finite-inv|<tuple|1.7|6>>
+    <associate|lem:finite-inv|<tuple|1.7|5>>
     <associate|prop:FK|<tuple|2.3|11>>
-    <associate|prop:nopoint|<tuple|1.6|6>>
+    <associate|prop:nopoint|<tuple|1.6|5>>
     <associate|prop:wick-rot|<tuple|2.1|10>>
     <associate|rem:KL|<tuple|1.10|7>>
-    <associate|rem:clustering|<tuple|2.7|13>>
-    <associate|rem:hadamard|<tuple|1.5|5>>
+    <associate|rem:clustering|<tuple|2.7|14>>
+    <associate|rem:hadamard|<tuple|1.5|4>>
     <associate|rem:minimal|<tuple|1.3|4>>
     <associate|rem:nets|<tuple|1.4|4>>
     <associate|sec:KL|<tuple|1.4|6>>
@@ -2125,7 +2125,7 @@
     <associate|sec:qwe|<tuple|1.5|7>>
     <associate|sec:wightman|<tuple|1|2>>
     <associate|tab:course|<tuple|3.1|16>>
-    <associate|tab:dictionary|<tuple|2.1|12>>
+    <associate|tab:dictionary|<tuple|2.1|13>>
     <associate|thm:KL|<tuple|1.9|6>>
   </collection>
 </references>
@@ -2512,21 +2512,26 @@
       Forward\Ubackward equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-35>>
 
-      <with|par-left|<quote|2tab>|Lectures
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>5\U6
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|2tab>|Lecture
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>5.
+      Observables and field equations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-36>>
 
-      <with|par-left|<quote|2tab>|Homework and projects
+      <with|par-left|<quote|2tab>|Lectures
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>6\U7
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-37>>
 
+      <with|par-left|<quote|2tab>|Homework and projects
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-38>>
+
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References
       and further reading> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38><vspace|0.2fn>
+      <no-break><pageref|auto-39><vspace|0.2fn>
 
       <with|par-left|<quote|2tab>|Guide <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39>>
+      <no-break><pageref|auto-40>>
     </associate>
   </collection>
 </auxiliary>

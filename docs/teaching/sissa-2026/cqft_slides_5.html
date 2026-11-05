@@ -60,8 +60,7 @@
 
         </p>
         <p>
-          <font style="font-size: 115.0%"><font color="#620000">\(\Phi^4_3\)</font> on the torus I:<br
-          />the FBSDE in force coordinates and renormalisation</font>
+          <font style="font-size: 115.0%">Observables and field equations</font>
         </p>
         <p style="margin-bottom: 1.2cm">
 
@@ -71,8 +70,8 @@
         </p>
         <p>
           <font style="font-size: 84.1%">Joint work with Sarah-Jean Meyer, with the use of AI<br
-          /><font color="#707070">SISSA lectures, Lecture 5 (provisional) &mdash;
-          notes: Lecture 5, &sect;&sect;10&ndash;12</font></font>
+          /><font color="#707070">SISSA lectures, Lecture 5 &mdash; notes: Lecture 5,
+          &sect;9, Appendices A&ndash;B</font></font>
         </p>
       </div>
     </div>
@@ -84,100 +83,53 @@
 
       </p>
       <p>
-        <b>Lecture 4.</b> Interacting field at resolution <font color="#620000">\(t\)</font>
-        = solution of the FBSDE
+        <b>Lecture 4.</b> The interacting field at resolution <font color="#620000">\(t\)</font>
+        solves the FBSDE
       </p>
       <center>
-        \(\displaystyle \Phi_t = \int_0^t \dot{Q}_s F_s \hspace{0.17em}
-        \mathrm{d} s + \int_0^t
-\dot{Q}_s^{1 / 2} \mathrm{d} W_s, \qquad F_t
-        =\mathbb{E}_t  [- DV_T (\Phi_T)]
-.\)
+        \(\displaystyle \mathrm{d} \Phi_t = \dot{Q}_t F_t \mathrm{d} t +
+        \dot{Q}_t^{1 / 2} \mathrm{d}
+W_t, \qquad F_t = - \mathrm{D} V_t
+        (\Phi_t) =\mathbb{E}_t [- \mathrm{D} V_T
+(\Phi_T)],\)
       </center>
       <p>
-        In the <strong>forecast coordinate</strong> <font color="#620000">\(\psi_t
-        =\mathbb{E}_t \Phi_T\)</font> the forward equation has no drift and
-        the trees are integrated exactly; the backward half is the
-        <strong>force equation</strong>.
+        <font color="#620000">\(\Phi_t \sim \nu_t \propto \mathrm{e}^{- V_t}
+        \mu^{Q_t}\)</font>. Filtering: <font color="#620000">\(\Phi_t = J_t \Phi_T +
+        \zeta_t\)</font>, <font color="#620000">\(J_t = KQ_t\)</font>, <font color="#620000">\(K
+        = Q_T^{- 1}\)</font>; forecast <font color="#620000">\(\psi_t =\mathbb{E}_t
+        \Phi_T = \Phi_t + S_t F_t\)</font>; regulator <font color="#620000">\(\mathcal{R}_t
+        = S_t^{- 1} - K\)</font>; effective average action <font color="#620000">\(\Gamma_t\)</font>.
       </p>
       <p>
-        <b>Lectures 5&ndash;6.</b> Construct <font color="#620000">\(\Phi^4_3\)</font>
-        on <font color="#620000">\(\mathbb{T}^3\)</font> with this FBSDE:
+        <b>Today.</b>
       </p>
       <ol>
         <li>
           <p>
-            <strong>deterministic renormalisation</strong>: an explicit
-            approximate force <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> and
-            its defect (today);
+            From Minkowski to Euclidean: the field equation and
+            <strong>Nelson's Euclidean noise</strong>.
           </p>
         </li>
         <li>
           <p>
-            <strong>a priori estimates</strong> for the exact FBSDE in the
-            coordinates of <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>,
-            uniform in the lattice (Lecture 6);
+            The <strong>field equation at every resolution</strong>; DS
+            equations, also pathwise.
           </p>
         </li>
         <li>
           <p>
-            <strong>removing the cutoffs</strong> and identifying the limit
-            (Lecture 6).
+            The noise is <strong>sub-Gaussian</strong>, whatever the
+            interaction.
+          </p>
+        </li>
+        <li>
+          <p>
+            Infinite volume; appendices: algebra of the flow, counterterms,
+            localisation.
           </p>
         </li>
       </ol>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">Notes: Lectures 5&ndash;6 and the
-        Supplement; Bailleul&ndash;Chevyrev&ndash;G. (in prep.)</font></font>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        What is proved
-      </div>
-      <p>
-
-      </p>
-      <p>
-        For every coupling <font color="#620000">\(\lambda > 0\)</font>, every
-        reference mass <font color="#620000">\(q_0 > 0\)</font> and every finite part
-        <font color="#620000">\(r\)</font> of the counterterm, on a fixed torus, with
-        no smallness, and an explicit counterterm with arbitrary finite part:
-      </p>
-      <ul>
-        <li>
-          <p>
-            the whole lattice sequence converges to a measure <font color="#620000">\(\nu\)</font>,
-            an explicit density over an explicit SDE;
-          </p>
-        </li>
-        <li>
-          <p>
-            the forecasts converge to the solution of an FBSDE from <font
-            color="#620000">\(Y_{q_0} = 0\)</font>, driven by the limit of the lattice
-            innovations, and <font color="#620000">\(\psi_q = m_q (\Phi_q)\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            uniqueness in law for its scalar form, a variational formula with
-            no infinite constant, quartic tails, integration by parts.
-          </p>
-        </li>
-      </ul>
-      <p>
-        <strong>Not proved:</strong> the vector FBSDE alone, strong solutions,
-        OS axioms in full, infinite volume.
-      </p>
-      <p>
-        <strong>Guiding principle.</strong> Do not estimate <font color="#620000">\(\Phi\)</font>
-        and <font color="#620000">\(F\)</font>. Estimate the error of an explicit
-        approximate forecast.
-      </p>
-      <p>
-        The results of Lectures 5&ndash;6 are new: joint work with S.-J. Meyer
-        + AI.
-      </p>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
@@ -187,8 +139,8 @@
 
       </p>
       <p>
-        <font style="font-size: 135.0%"><b><font color="#800000">The problem and the exact
-        FBSDE</font></b></font>
+        <font style="font-size: 135.0%"><b><font color="#800000">Observables and field
+        equations</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
 
@@ -202,1105 +154,1305 @@
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Lattice and the mass-regulator profile
+        Observables of the interacting theory
       </div>
       <p>
 
       </p>
       <p>
-        <font color="#620000">\(\Lambda_N = (N^{- 1} \mathbb{Z}/\mathbb{Z})^3\)</font>,
-        <font color="#620000">\(\int f = N^{- 3}  \sum_x f (x)\)</font>, <font color="#620000">\(\Delta
-        = \Delta_N\)</font> nearest neighbour. Resolution parameter <font
-        color="#620000">\(q = q_0 + t^2 \in [q_0, \infty)\)</font>:
+        For <font color="#620000">\(G\)</font> a functional of the terminal field,
+        <font color="#620000">\(O_t =\mathbb{E}^{\mathbb{P}}_t [G (\Phi_T)] = G_t
+        (\Phi_t)\)</font>, <font color="#620000">\(G_t (\phi) = \mu_t^{\phi}
+        (G)\)</font>, and
       </p>
       <center>
-        \(\displaystyle K_q = q - \Delta, \qquad C_q = K_q^{- 1}, \qquad C =
-        C_{q_0} = (m^2 -
-\Delta)^{- 1} .\)
+        \(\displaystyle \partial_t G_t + \tfrac{1}{2} \text{Tr} (\dot{Q}_t
+        \mathrm{D}^2 G_t) - \langle
+\dot{Q}_t \mathrm{D} V_t, \mathrm{D} G_t
+        \rangle = 0, \qquad G_T = G :\)
       </center>
       <p>
-        In Lecture 3 notation (<font color="#620000">\(T = \infty\)</font>, and <font
-        color="#620000">\(\dot{Q} = \partial_q Q_q\)</font>):
+        the backward Kolmogorov equation, a Doob transform of the Gaussian
+        heat equation. Any solution gives an observable, closed at finite
+        <font color="#620000">\(T\)</font>, not necessarily as <font color="#620000">\(T \to
+        \infty\)</font>. The force is <font color="#620000">\(G = - \mathrm{D}
+        V_T\)</font>.
+      </p>
+      <p>
+        <b>Tangent observables.</b> <font color="#620000">\(V_T^{\theta}\)</font>
+        depending on a coupling, <font color="#620000">\(U_t = \partial_{\theta}
+        V_t^{\theta}\)</font>:
       </p>
       <center>
-        \(\displaystyle Q_q = C - C_q, \quad \dot{Q} = C_q^2, \quad \dot{Q}^{1
-        / 2} = C_q, \quad S_q =
-C_q, \quad \mathcal{R}_q = q - q_0 .\)
-      </center>
-      <div class="slide-block">
-        <p>
-          <strong>Free resolvents (uniform in <font color="#620000">\(N\)</font>)</strong>
-        </p>
-        <p>
-          <font color="#620000">\(C_q \geqslant 0\)</font> as a kernel, <font color="#620000">\(C_q
-          \mathbb{1} = q^{- 1}  \mathbb{1}\)</font>, <font color="#620000">\(\|C_q
-          \|_{p \to p} = q^{- 1}\)</font>,
-        </p>
-        <center>
-          \(\displaystyle a_2 (q) = (C_q^2) (x, x) \lesssim q^{- 1 / 2} \wedge
-          N^3 q^{- 2}, \qquad
-\text{Tr} C \asymp N.\)
-        </center>
-      </div>
-      <p>
-        The <strong>bubble</strong> <font color="#620000">\(a_2 (q)\)</font> is the
-        coincident-point variance of the shell at resolution <font color="#620000">\(q\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: block">
-      <div class="slide-title">
-        The cutoff measure
-      </div>
-      <center>
-        <font color="#620000">\(U (\varphi) = \frac{\lambda}{12} \int
-        \varphi^4\)</font>, <font color="#620000">\(V_N = U + \frac{\mu_N}{2} \int
-        \varphi^2\)</font>, <font color="#620000">\(\nu_N (\hspace{0.17em} \mathrm{d}
-        \varphi) =\mathcal{Z}_N^{- 1} \mathrm{e}^{-
-V_N (\varphi)} \mu^C
-        (\hspace{0.17em} \mathrm{d} \varphi)\)</font>.
+        \(\displaystyle U_t (\Phi_t) =\mathbb{E}^{\theta}_t
+        [\partial_{\theta} V_T^{\theta}
+(\Phi_T)], \qquad \partial_{\theta}
+        \mathbb{E}^{\nu^{\theta}_T} [G] = -
+\text{Cov}^{\nu_T^{\theta}} (G,
+        \partial_{\theta} V^{\theta}_T) .\)
       </center>
       <p>
-        So <font color="#620000">\(D^2 U (y) = \lambda y^2\)</font>: the coupling is
-        the curvature, the same <font color="#620000">\(\lambda\)</font> as in Lecture
-        4.
-      </p>
-      <p>
-        The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
-      </p>
-      <p>
-        <strong>Reference mass</strong> <font color="#620000">\(q_0 > 0\)</font>
-        (constants <font color="#620000">\(\in \ker \Delta\)</font> on the torus; <font
-        color="#620000">\(r\)</font> may be negative). Only <font color="#620000">\(q_0 +
-        \mu_N\)</font> matters: fix <font color="#620000">\(q_0\)</font>, vary <font
-        color="#620000">\(r\)</font>.
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>Main result, informal.</strong> Let
-        </p>
-        <center>
-          \(\displaystyle \mu_N = r - \lambda \text{Tr} C + \frac{2}{3}
-          \lambda^2 \int C^3 .\)
-        </center>
-        <p>
-          Then (a) <font color="#620000">\(\nu_N \to \nu\)</font> in <font color="#620000">\(H^{-
-          s}\)</font>, <font color="#620000">\(s > \frac{1}{2}\)</font>, along the
-          whole sequence; (b) the forecasts converge in law to a solution of a
-          limiting FBSDE; (c) <font color="#620000">\(\nu\)</font> has a variational
-          formula, an integration by parts formula and quartic tails.
-        </p>
-      </div>
-      <p>
-        These come from bounds on the error <font color="#620000">\(Z\)</font> of an
-        approximate forecast, uniform in <font color="#620000">\(N\)</font>: <strong>UV
-        stability</strong>.
+        E.g. the running <font color="#620000">\(: \varphi^4\)</font>: for <font color="#620000">\(\theta
+        = \lambda\)</font>: observables <strong>conjugate to the coordinates
+        of theory space</strong>.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The Polchinski process as a filter
-      </div>
-      <p>
-        By Lecture 4, in the profile <font color="#620000">\(S_q = C_q\)</font>, <font
-        color="#620000">\(\mathcal{R}_q = q - q_0\)</font>; at fixed <font color="#620000">\(N\)</font>
-        everything is a theorem.<span style="margin-left: 1em"></span>The Polchinski process
-        solves
-      </p>
-      <center>
-        \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
-        \mathrm{d} q + C_q
-\hspace{0.17em} \mathrm{d} W_q, \quad F_q
-        =\mathbb{E}_q [- DV_N
-(\Phi_{\infty})], \quad \Phi_{q_0} = 0,\)
-      </center>
-      <p>
-        and <font color="#620000">\(\Phi_q \to \Phi_{\infty} \sim \nu_N\)</font>.
-      </p>
-      <ul>
-        <li>
-          <p>
-            a noisy observation of its endpoint, <font color="#620000">\(\Phi_q = (q -
-            q_0) C_q \Phi_{\infty} + C_q B_{q - q_0}\)</font>, with <font
-            color="#620000">\(B\)</font> independent of <font color="#620000">\(\Phi_{\infty}\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            forecast
-          </p>
-          <center>
-            \(\displaystyle \psi_q =\mathbb{E}_q \Phi_{\infty} = \Phi_q + C_q
-            F_q = m_q (\Phi_q),\)
-          </center>
-          <p>
-            covariance <font color="#620000">\(\text{Cov}_q > 0\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            <font color="#620000">\(W\)</font> is the innovation: <font color="#620000">\(\mathrm{d}
-            \psi_q = \text{Cov}_q \hspace{0.17em} \mathrm{d} W_q\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            noise: <font color="#620000">\(\eta_q = K_q \Phi_q - (q - q_0) \psi_q
-            =\mathbb{E}_q B_{q - q_0}\)</font>, sub-Gaussian whatever the
-            interaction (L4).
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        One site
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <img src="cqft_slides_5-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 20.4453575757576em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </p>
-      <p>
-        One site, <font color="#620000">\(\nu \propto \mathrm{e}^{- \lambda \varphi^4 /
-        12} \mu^{1 / q_0}\)</font>, <font color="#620000">\(\lambda = 6\)</font>, <font
-        color="#620000">\(q_0 = 1\)</font>. Left: one path of the observation <font
-        color="#620000">\(\Phi_q\)</font> and of the forecast <font color="#620000">\(\psi_q\)</font>,
-        both converging to the hidden <font color="#620000">\(\Phi_{\infty}\)</font>.
-        Right, over 200 paths: the forecast error <font color="#620000">\(\sim q^{- 1 /
-        2}\)</font>, the force term <font color="#620000">\(\psi_q - \Phi_q = C_q F_q
-        \sim q^{- 1}\)</font>, and the error <font color="#620000">\(Z_q\)</font> of
-        the approximate forecast from <font color="#620000">\(\bar{\mathcal{F}} =
-        \frac{\lambda}{3} y^3\)</font>, below the bound <font color="#620000">\(2
-        C_{\ast} (\lambda / 3)^{1 / 2} q^{- 3 / 2}\)</font> of Theorem 12.8.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The exact force in the forecast coordinate
-      </div>
-      <p>
-        Since <font color="#620000">\(\Phi_q \mapsto \psi_q\)</font> is invertible,
-        define <font color="#620000">\(\mathcal{F}_q\)</font> by
-      </p>
-      <center>
-        \(\displaystyle \Phi_q = \psi_q + C_q \mathcal{F}_q (\psi_q)\)
-      </center>
-      <p>
-        and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q + D\mathcal{F}_q (y))^{-
-        1}\)</font>. It is the <font color="#620000">\(\mathcal{F}\)</font> of Lecture
-        4 (<font color="#620000">\(x = \psi + S\mathcal{F} (\psi)\)</font>), and <font
-        color="#620000">\(F_q = -\mathcal{F}_q (\psi_q)\)</font>.
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>The force equation with a mass regulator</strong>
-        </p>
-        <center>
-          \(\displaystyle \partial_q \mathcal{F}_q + \frac{1}{2}
-          \text{Ctr}_{(H^{\text{ex}}_q)^2} D^2
-\mathcal{F}_q = 0, \quad
-          \text{Cov}_q = H^{\text{ex}}_q (\psi_q) .\)
-        </center>
-      </div>
-      <p>
-
-      </p>
-      <p>
-        It&ocirc; on <font color="#620000">\(\Phi = \psi + C\mathcal{F}
-        (\psi)\)</font>. Its integrated form is Wetterich's equation, which we
-        do not need. An identity about the unknown <font color="#620000">\(\nu_N\)</font>,
-        not a construction.
-      </p>
-      <p>
-        <b>Strategy:</b> an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
-        gives approximate forecast coordinates; the error should be driven by
-        the failure of <font color="#620000">\(\bar{\mathcal{F}}\)</font> to solve this
-        equation.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Approximate forecast and error
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> odd, <font color="#620000">\(D
-        \bar{\mathcal{F}}_q\)</font> symmetric, <font color="#620000">\(K_q + D
-        \bar{\mathcal{F}}_q \geqslant \bar{c}_q\)</font>.
-      </p>
-      <center>
-        \(\displaystyle H_q = (K_q + D \bar{\mathcal{F}}_q)^{- 1}, \quad
-        \mathcal{D}_q = \partial_q
-\bar{\mathcal{F}}_q + \frac{1}{2}
-        \text{Ctr}_{H_q^2} D^2 \bar{\mathcal{F}}_q,
-\quad b_q = - H_q
-        \mathcal{D}_q .\)
-      </center>
-      <center>
-        \(\displaystyle Y_q + C_q \bar{\mathcal{F}}_q (Y_q) = \Phi_q, \quad
-        Z_q = \psi_q - Y_q, \quad
-\Xi_q = \text{Cov}_q - H_q (Y_q) .\)
-      </center>
-      <div class="slide-block">
-        <p>
-          <strong>Exact, at fixed</strong> <font color="#620000">\(N\)</font>
-        </p>
-        <center>
-          \(\displaystyle \hspace{0.17em} \mathrm{d} Y_q = [b_q (Y_q) + H_q
-          (Y_q) Z_q] \hspace{0.17em}
-\mathrm{d} q + H_q (Y_q) \hspace{0.17em}
-          \mathrm{d} W_q,\)
-        </center>
-        <center>
-          \(\displaystyle \hspace{0.17em} \mathrm{d} Z_q = - [b_q (Y_q) + H_q
-          (Y_q) Z_q] \hspace{0.17em}
-\mathrm{d} q + \Xi_q \hspace{0.17em}
-          \mathrm{d} W_q, \quad Y_{q_0} = Z_{q_0} =
-0.\)
-        </center>
-      </div>
-      <p>
-        Proof: It&ocirc; on the coordinate equation, with the Polchinski
-        process and <font color="#620000">\(\mathrm{d} C_q = - C_q^2 \mathrm{d}
-        q\)</font>: the martingale part gives <font color="#620000">\(H\)</font>, the
-        drift gives <font color="#620000">\(HZ + b\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Reading the system
-      </div>
-      <p>
-
-      </p>
-      <ul>
-        <li>
-          <p>
-            <font color="#620000">\(Y\)</font>: forward and explicit once <font color="#620000">\(Z\)</font>
-            is known; coefficients <font color="#620000">\(b, H\)</font> built from
-            <font color="#620000">\(\bar{\mathcal{F}}\)</font>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <font color="#620000">\(Z\)</font>: backward. The terminal condition <font
-            color="#620000">\(qZ_q \to 0\)</font> is <strong>proved</strong> at fixed
-            <font color="#620000">\(N\)</font> (Lecture 6), because <font color="#620000">\(\bar{\mathcal{F}}_q
-            \to\)</font> bare force.
-          </p>
-        </li>
-        <li>
-          <p>
-            The only source of <font color="#620000">\(Z\)</font> is the drift <font
-            color="#620000">\(b\)</font>, the force defect, transported by <font color="#620000">\(\exp
-            \int H\)</font>.
-          </p>
-        </li>
-      </ul>
-      <p>
-
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>UV stability</strong>
-        </p>
-        <p>
-          The explicit force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
-          computes the forecast up to an error <font color="#620000">\(Z\)</font> which
-          is small uniformly in <font color="#620000">\(N\)</font>.
-        </p>
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Needed: (i) a defect integrable against the backward propagator
-        (<strong>renormalisation</strong>); (ii) global coercivity of <font
-        color="#620000">\(\bar{\mathcal{F}}\)</font> (<strong>large fields</strong>);
-        (iii) a priori estimates (Lecture 6).
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The structure of the construction
-      </div>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <center>
-        <img src="cqft_slides_5-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 23.723296969697em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </center>
-    </div>
-    <div class="toggle" style="display: none">
-      <p style="margin-top: 2.5cm">
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <font style="font-size: 135.0%"><b><font color="#800000">Renormalisation: why two of
-        them</font></b></font>
-      </p>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
-      <p>
-        <font color="#707070">Lecture 5</font>
-      </p>
-      <p>
-
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Scales and power counting
-      </div>
-      <p>
-
-      </p>
-      <center>
-        \(\displaystyle g_q = \lambda q^{- 1 / 2} (\text{dimensionless
-        coupling}),\)
-      </center>
-      <center>
-        \(\displaystyle r_q = (q / \lambda)^{1 / 2} (\lambda r_q^2 = q :
-        \text{nonlinearity} \approx
-\text{regulator}) .\)
-      </center>
-      <p>
-        Free field at resolution <font color="#620000">\(q\)</font>: <font color="#620000">\(\text{Var}
-        X_q (x) \lesssim q^{1 / 2}\)</font>, typical size <font color="#620000">\(q^{1
-        / 4} = g_q^{1 / 2} r_q \ll r_q\)</font>.
-      </p>
-      <p>
-        Rooted norm of a vertex <font color="#620000">\(T (x_1, \ldots, x_k)\)</font>
-        and field ball:
-      </p>
-      <center>
-        \(\displaystyle s (T) = \max_i \sup_{x_i}  \int |T|  \prod_{j \ne i}
-        \mathrm{d} x_j, \qquad
-\textsf{S}_k (g) = \sup_{\mathcal{B}_q} s (D^{k
-        - 1} g), \qquad \mathcal{B}_q
-= \{\|y\|_{\infty} < 2 r_q \} .\)
-      </center>
-      <p>
-        Natural size of the <font color="#620000">\(k\)</font>th vertex of the
-        <strong>loop corrections</strong>:
-      </p>
-      <center>
-        \(\displaystyle \textsf{S}_k \lesssim g_q  \hspace{0.17em} q
-        \hspace{0.17em} r_q^{2 - k}
-\qquad (k = 4 : \lambda g_q) .\)
-      </center>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The loop estimate
-      </div>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>Loop estimate</strong>
-        </p>
-        <p>
-          A closed loop with <font color="#620000">\(p\)</font> vertices: <font color="#620000">\(s
-          (\text{loop}) \leqslant Ca_2 (q)  \hspace{0.17em} q^{- (p - 1)}
-          \prod_i s
-(T_i)\)</font> (two propagators in <font color="#620000">\(L^2\)</font>,
-          the others in operator norm). After the <font color="#620000">\(q\)</font>
-          integration a one-loop term is of size <font color="#620000">\(g_q qr_q^{2 -
-          k}\)</font>; every further loop gains a factor <font color="#620000">\(g_q\)</font>.
-        </p>
-      </div>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The seed and the corrections
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <strong>Seed</strong> (one loop): replace <font color="#620000">\(D\mathcal{F}\)</font>
-        by <font color="#620000">\(\lambda y^2\)</font> and integrate from <font color="#620000">\(q
-        = \infty\)</font>, with the linear part subtracted,
-      </p>
-      <center>
-        \(\displaystyle \ell_q (y) (x) = \lambda y (x) [G_q (y) (x, x) - C_q
-        (x, x)], \quad G_q (y) =
-(K_q + \lambda y^2)^{- 1} .\)
-      </center>
-      <p>
-        Leading term = bubble, <font color="#620000">\(s (D^3 \ell_q (0)) = 6 \lambda^2
-        a_2 (q)\)</font>.
-      </p>
-      <p>
-        <strong>Corrections.</strong> <font color="#620000">\(\Pi\)</font> removes the
-        linear jet, <font color="#620000">\(M_q = \mu_q + \Theta_q\)</font> a linear
-        path, <font color="#620000">\(U\prime = \frac{\lambda}{3} y^3\)</font>,
-      </p>
-      <center>
-        \(\displaystyle \mathcal{T}_q [M, \ell] = - \frac{1}{2}
-        \text{Ctr}_{R^2} D^2 (U\prime + \ell),
-\quad R = (K_q + M_q + D
-        (U\prime + \ell))^{- 1},\)
-      </center>
-      <center>
-        \(\displaystyle \ell^{[0]} = \ell, \quad \ell^{[j + 1]}_q = \ell_q -
-        \int_q^{\infty} \Pi
-(\mathcal{T}_s [M, \ell^{[j]}] - \partial_s
-        \ell_s) \hspace{0.17em} \mathrm{d}
-s, \quad j = 0, 1,\)
-      </center>
-      <center>
-        \(\displaystyle \mathcal{F}^o_q = U\prime + M_q y + \ell^{[2]}_q \quad
-        \text{on the ball.}\)
-      </center>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Where the iteration comes from
-      </div>
-      <p>
-        Force equation for <font color="#620000">\(\mathcal{F}_q = U\prime + M_q y +
-        \ell_q\)</font>, <font color="#620000">\(\Pi \ell_q = \ell_q\)</font>:
-      </p>
-      <center>
-        \(\displaystyle (\partial_q M_q) y + \partial_q \ell_q =\mathcal{T}_q
-        [M, \ell_q] (y) .\)
-      </center>
-      <p>
-        <font color="#620000">\(\Pi\)</font> and <font color="#620000">\(1 - \Pi\)</font> split
-        it:
-      </p>
-      <ul>
-        <li>
-          <p>
-            <strong>nonlinear part</strong>, integrable at <font color="#620000">\(q =
-            \infty\)</font> (<font color="#620000">\(k \geqslant 4\)</font> legs), with
-            <font color="#620000">\(\ell_{\infty} = 0\)</font>: a fixed point, <font
-            color="#620000">\(\ell_q = - \int_q^{\infty} \Pi \mathcal{T}_s [M, \ell_s]
-            \hspace{0.17em}
-\mathrm{d} s\)</font>; approximated by
-            <strong>Picard steps</strong>, the seed being the first;
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>linear part</strong>, divergent (tadpole, sunset): solved
-            exactly by the mass equation; gives the counterterm.
-          </p>
-        </li>
-      </ul>
-      <div class="slide-block">
-        <p>
-          Each step gains one loop, one <font color="#620000">\(g_q\)</font>. The
-          defect of <font color="#620000">\(\mathcal{F}^o\)</font> is the loop
-          difference of the last two steps:
-        </p>
-        <center>
-          \(\displaystyle \partial_q \mathcal{F}^o_q -\mathcal{T}_q [M,
-          \ell^{[2]}] = \Pi (\mathcal{T}_q
-[M, \ell^{[1]}] -\mathcal{T}_q [M,
-          \ell^{[2]}]) = O (g_q^3) .\)
-        </center>
-      </div>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Seed and corrections in graphs
-      </div>
-      <p>
-
-      </p>
-      <center>
-        <img src="cqft_slides_5-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.40210909090909em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </center>
-      <center>
-        <img src="cqft_slides_5-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.6225696969697em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </center>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">Each step inserts the previous correction
-        into the loop: one more loop, one more <font color="#620000">\(g_q\)</font>.
-        Two steps give a defect of order <font color="#620000">\(g_q^3\)</font>.</font></font>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The mass
-      </div>
-      <p>
-
-      </p>
-      <p>
-        The linear jet is not iterated: it is solved exactly by <font color="#620000">\(M\)</font>,
-      </p>
-      <center>
-        \(\displaystyle \partial_q M_q = - \lambda \text{Tr} (R_{0, q}^2) I -
-        \frac{1}{2}
-\text{Ctr}_{R_{0, q}^2} D^3 \ell^{[2]}_q (0), \quad R_{0,
-        q} = (K_q + M_q)^{-
-1},\)
-      </center>
-      <p>
-        with <font color="#620000">\(\mu_{q_{\ast}} = b\)</font>, <font color="#620000">\(|b|
-        \leqslant B \lambda q_{\ast}^{1 / 2}\)</font>, at an <strong>auxiliary
-        scale</strong> <font color="#620000">\(q_{\ast}\)</font>, and <font color="#620000">\(\Theta_q
-        \to 0\)</font> as <font color="#620000">\(q \to \infty\)</font>. Bare mass
-        <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>: an
-        output of the flow.
-      </p>
-      <p>
-        <strong>For</strong> <font color="#620000">\(q_{\ast}\)</font> <strong>large,
-        uniformly in</strong> <font color="#620000">\(N\)</font><strong>.</strong>
-        Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C
-        \lambda q^{1 / 2}\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C
-        \lambda^2 q^{- 1 / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k
-        (\ell^{[j]} - \ell^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2
--
-        k}\)</font>; and the defect of <font color="#620000">\(\mathcal{F}^{\text{o}}\)</font>:
-        <font color="#620000">\(S_4 (\mathcal{D}^{\text{o}}_q) \leqslant C \lambda^5
-        q^{- 3}\)</font>.
-      </p>
-      <p>
-        <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r -
-        \lambda \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3\)</font> is
-        admissible: the measure does not depend on <font color="#620000">\(q_{\ast}\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Two mass renormalisations
-      </div>
-      <p>
-
-      </p>
-      <p>
-        The two divergent self-energies of Appendix A.2 of Lecture 4:
-      </p>
-      <ul>
-        <li>
-          <p>
-            <strong>Tadpole</strong>: <font color="#620000">\(- \lambda
-            \int_{q_{\ast}}^{\infty} \text{Tr} R_{0, q}^2
-            \hspace{0.17em}
-\mathrm{d} q \approx - \lambda \text{Tr} C \sim -
-            N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{12}
-            \varphi^4 - \frac{1}{2} \lambda c \varphi^2 =
-\frac{\lambda}{12}
-            H_4  (\varphi ; c) +\)</font>const.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Sunset</strong>: contracting the bubble in <font color="#620000">\(D^3
-            \ell (0)\)</font> with <font color="#620000">\(R_0^2\)</font> and
-            integrating gives the two-loop self-energy,
-          </p>
-          <center>
-            \(\displaystyle \frac{2}{3} \lambda^2  \int C^3 \approx
-            \frac{\lambda^2}{24 \pi^2} \log N
-\quad (= 2 \gamma_T  \text{ of
-            Lecture 4}) .\)
-          </center>
-        </li>
-      </ul>
-      <p>
-        Power counting: nothing else. In the flow: the integrals from <font
-        color="#620000">\(q = \infty\)</font> of all vertices with <font color="#620000">\(k
-        \geqslant 4\)</font> legs converge; only the linear jet needs a
-        boundary condition.
-      </p>
-      <p>
-        <font color="#620000">\(\mu_q\)</font> at fixed <font color="#620000">\(q\)</font> has a
-        limit as <font color="#620000">\(N \to \infty\)</font>; <font color="#620000">\(\mu_N\)</font>
-        does not. <strong>Never interchange the two limits.</strong>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The two mass renormalisations in graphs
-      </div>
-      <p>
-
-      </p>
-      <center>
-        <img src="cqft_slides_5-5.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 27.7320242424242em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </center>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">The cross is <font color="#620000">\(R_{0,
-        q}^2\)</font>. The bubble in <font color="#620000">\(D^3 \ell^{[2]}
-        (0)\)</font> produces the sunset.</font></font>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Two correction steps
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Backward propagator <font color="#620000">\(\approx s / q\)</font>, so <font
-        color="#620000">\(Z_q \approx \int_q^{\infty} \frac{s}{q} b_s \mathrm{d}
-        s\)</font>, and on the ball <font color="#620000">\(|b_s | \lesssim s^{- 1}
-        \textsf{S}_4 (\mathcal{D}_s) r_s^3\)</font>. After <font color="#620000">\(n\)</font>
-        steps, <font color="#620000">\(\textsf{S}_4 (\mathcal{D}_s) \lesssim g_s^{n +
-        1} s^{1 / 2} r_s^{- 4}\)</font>:
-      </p>
-      <p>
-
-      </p>
-      <center>
-        <table style="display: inline-table; vertical-align: middle">
-          <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">steps <font color="#620000">\(n\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\textsf{S}_4
-            (\mathcal{D}_s)\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(|b_s |\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\int_q^{\infty} \frac{s}{q} |b_s |
-            \mathrm{d} s\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(0\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^3 s^{- 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{3 / 2} s^{- 3 /
-            2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (power)</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(1\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^4 s^{- 5 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{5 / 2} s^{- 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (log)</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^5 s^{- 3}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^{7 / 2} s^{- 5 /
-            2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2 \lambda^{7 / 2} q^{- 3 /
-            2}\)</font></td>
-          </tr></tbody>
-        </table>
-      </center>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <strong>Two steps are the minimum, and suffice.</strong> The defect of
-        one step is borderline in the backward equation, as the sunset is
-        borderline in the mass. (Heuristic threshold for <font color="#620000">\(\Phi^4_3\)</font>:
-        <font color="#620000">\(n > 1\)</font>; the general theory's sufficient
-        criterion is <font color="#620000">\((n + 2) \varkappa > (3 + \varkappa) /
-        2\)</font>, <font color="#620000">\(\varkappa = \frac{1}{2}\)</font>, met by
-        <font color="#620000">\(n = 2\)</font>.)
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <p style="margin-top: 2.5cm">
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <font style="font-size: 135.0%"><b><font color="#800000">The flow at large
-        fields</font></b></font>
-      </p>
-      <p style="margin-bottom: 0.3cm">
-
-      </p>
-      <p>
-        <font color="#707070">Lecture 5</font>
-      </p>
-      <p>
-
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The large-field problem
-      </div>
-      <p>
-
-      </p>
-      <p>
-        All bounds hold on <font color="#620000">\(\mathcal{B}_q\)</font> only. The
-        free field exceeds <font color="#620000">\(r_q\)</font> with small, nonzero
-        probability, and nothing a priori controls the interacting forecast.
-        We need <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> defined and
-        uniformly coercive for all fields.
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>Scalar model</strong>
-        </p>
-        <center>
-          \(\displaystyle \ell_q (y) = \lambda y [(q + \lambda y^2)^{- 1} -
-          q^{- 1}]\)
-        </center>
-        <p>
-          : power series of radius exactly <font color="#620000">\(r_q\)</font>
-          (singularities at <font color="#620000">\(\pm \mathrm{i} r_q\)</font>). Half
-          of the truncations destroy monotonicity. The exact function is
-          harmless, <font color="#620000">\(| \ell_q \prime | \leqslant \frac{9}{8}
-          \lambda / q\)</font>.
-        </p>
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Perturbative control for <font color="#620000">\(|y| \lesssim r_q\)</font>;
-        outside, a non-perturbative replacement that keeps the structure the
-        estimates use: coercivity, carried by the bare cube.
-      </p>
-      <p>
-        One site: <font color="#620000">\(qy + \frac{\lambda}{3} y^3 = q
-        \Phi_q\)</font>, noise coefficient <font color="#620000">\(H_q (y) = (q +
-        \lambda y^2)^{- 1} \leqslant q^{- 1} \wedge (\lambda y^2)^{-
-        1}\)</font>. Large fields are more elliptic and less noisy.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Clipping
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <font color="#620000">\(\tau\)</font> smooth odd, <font color="#620000">\(\tau (u) =
-        u\)</font> on <font color="#620000">\([- 1, 1]\)</font>, constant outside <font
-        color="#620000">\([- 2, 2]\)</font>, <font color="#620000">\(0 \leqslant \tau \prime
-        \leqslant 1\)</font>;
-      </p>
-      <center>
-        \(\displaystyle \kappa_q (y) = r_q \tau (y / r_q), \quad
-        \tilde{\ell}_q = D \kappa_q \cdot
-\ell^{[2]}_q \circ \kappa_q, \quad
-        \bar{\mathcal{F}}_q = U\prime + M_q y +
-\tilde{\ell}_q .\)
-      </center>
-      <p>
-        The cubic and linear parts are not clipped, and <font color="#620000">\(D
-        \kappa_q\)</font> keeps the force a gradient. Globally: <font color="#620000">\(s
-        (D^{j - 1} \tilde{\ell}_q) \leqslant Cg_q qr_q^{2 - j}\)</font> (<font
-        color="#620000">\(j = 2, 3, 4\)</font>), <font color="#620000">\(s (D \partial_q
-        \tilde{\ell}_q) \leqslant Cg_q\)</font>.
-      </p>
-      <div class="slide-block">
-        <p>
-          <strong>Global coercivity</strong>
-        </p>
-        <p>
-          For all <font color="#620000">\(y\)</font>: <font color="#620000">\(c (K_q + \lambda
-          y^2) \leqslant H_q (y)^{- 1} \leqslant C (K_q + \lambda
-          y^2)\)</font>,
-        </p>
-        <center>
-          \(\displaystyle \|H_q (y)\|_{p \to p} \leqslant \frac{1 + C (g_q +
-          g_q^2)}{q}, \quad
-\text{diag} H_q (y)^2 \leqslant Ca_2 (q) .\)
-        </center>
-      </div>
-      <p>
-        Neumann series for <font color="#620000">\(H = (I + G (M + D \tilde{\ell}))^{-
-        1} G\)</font>, <font color="#620000">\(G = (K_q + \lambda y^2)^{- 1} \leqslant
-        C_q\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The complete defect
+        Field equations: Minkowski and Euclidean
       </div>
       <font style="font-size: 90.0%"><p>
-
-      </p><p>
-        <font color="#620000">\(b = b^{\text{b}} + b^{\text{l}}\)</font>, <font color="#620000">\(b^{\text{b}}
-        = - H \hspace{0.17em} D \kappa \hspace{0.17em}
-\mathcal{D}^{\text{o}}
-        (\kappa y)\)</font>, <font color="#620000">\(t_q (y) = y \mathbb{1}_{|y| >
-        r_q}\)</font>.
-      </p><div class="slide-box">
-        <p style="margin-top: 1em">
-          <font color="#800000"><font color="#800000"><strong>Proposition.
-          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(uniformly
-          in <font color="#620000">\(y\)</font>, <font color="#620000">\(N\)</font>, <font
-          color="#620000">\(p\)</font>) </strong></font></font></class></i>
-        </p>
+        Minkowski (Lecture 1): <font color="#620000">\((\Box + m^2) \varphi + V'
+        (\varphi) = 0\)</font> as an <strong>operator</strong> equation, with
+        the CCR. On time-ordered functions <font color="#620000">\(\partial_t^2\)</font>
+        also hits the step functions:
+      </p><center>
+        \(\displaystyle (\Box_x + m^2) \tau (x, x_1, \ldots) = - \tau (V'
+        (\varphi) (x), x_1, \ldots)
+- \mathrm{i} \sum_j \delta (x - x_j) \tau
+        (\ldots, \hat{x}_j, \ldots) .\)
+      </center><p>
+        Contact terms: the canonical commutator, a derivative, <font color="#620000">\(\mathrm{i}
+        [\partial_t \varphi (\textbf{x}), \cdot] = \delta / \delta
+        \varphi
+(\textbf{x})\)</font>. Rotate, <font color="#620000">\(t = - \mathrm{i}
+        \tau\)</font>: <font color="#620000">\(\Box + m^2 \to A\)</font>, <font color="#620000">\(-
+        \mathrm{i} \delta (t) \to \delta (\tau)\)</font>, and we get the DS
+        equation of Lecture 2:
+      </p><center>
+        \(\displaystyle \mathbb{E}^{\nu}  [G \hspace{0.17em} \langle h, \eta
+        \rangle]
+=\mathbb{E}^{\nu}  [\mathrm{D}_h G], \qquad \eta := A \varphi
+        + V' (\varphi)
+\neq 0.\)
+      </center><div class="slide-block">
         <p>
-          <i><center>
-            \(\displaystyle \|b^{\text{b}}_q \|_p \leqslant C \lambda^{7 / 2}
-            q^{- 5 / 2}, \qquad
-\|b^{\text{l}}_q \|_p \leqslant C \lambda q^{-
-            3 / 2} (\|t_q \|_p + r_q^{- 1}
-\|y^2  \mathbb{1}_{|y| > r_q}
-            \|_p),\)
-          </center></i>
-        </p>
-        <p style="margin-bottom: 1em">
-          <i><center>
-            \(\displaystyle \|b^{\text{l}}_q \|_2^2 \leqslant C \lambda^4 q^{-
-            5} \|t_q \|_6^6 .\)
-          </center></i>
-        </p>
-      </div><p>
-        Sources of <font color="#620000">\(b^{\text{l}}\)</font> (four groups): the
-        mass term <font color="#620000">\(M' y - JM' \kappa y\)</font> (<font color="#620000">\(J
-        = D \kappa\)</font>, <font color="#620000">\(M' = \partial_q M\)</font>; linear
-        part unclipped, flow computed at <font color="#620000">\(\kappa y\)</font>);
-        the motion of the clip; cubic vertex at <font color="#620000">\(y\)</font> vs
-        correction at <font color="#620000">\(\kappa y\)</font>; chain-rule terms with
-        <font color="#620000">\(\kappa'', \kappa'''\)</font>. All vanish if <font
-        color="#620000">\(\|y\|_{\infty} \leqslant r_q\)</font>.
-      </p><div class="slide-block">
-        <p>
-          <strong>The point</strong>
-        </p>
-        <p>
-          <font color="#620000">\(b^{\text{l}}\)</font> is as large as the whole drift,
-          but <strong>supported on large fields</strong>. It is controlled by
-          how often the actual dynamics visits them: <font color="#620000">\(\int q^{-
-          3 / 2} \lambda \|t_q (Y_q)\|_6^6 \hspace{0.17em} \mathrm{d}
-          q\)</font> (Lecture 6).
+          <strong>The noise is the transpose of the derivative:</strong> <font
+          color="#620000">\(\mathrm{D}_h^{\top} = - \mathrm{D}_h + \langle h, \eta
+          \rangle\)</font>, so <font color="#620000">\(\langle h, \eta \rangle =
+          \mathrm{D}_h^{\top} 1\)</font>, minus the score of <font color="#620000">\(\nu\)</font>.
+          Not an independent input: a functional of the field, fixed by its
+          law. Free field: <font color="#620000">\(\eta = A^{1 / 2} \xi\)</font>, one
+          derivative of white noise.
         </p>
       </div></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The coordinate equation
+        Characterising the noise: two attempts
+      </div>
+      <font style="font-size: 90.0%"><p>
+        <strong>Nelson (1975): condition in real space.</strong> On the
+        lattice, <font color="#620000">\(\omega := A \varphi + V' (\varphi)\)</font>.
+        By the Markov property <font color="#620000">\(\varepsilon^d \omega
+        (x)\)</font> is minus the score of the law of <font color="#620000">\(\varphi
+        (x)\)</font> given its neighbours:
+      </p><center>
+        \(\displaystyle \mathbb{E} [\omega (x) | \varphi (y), y \neq x] = 0,
+        \qquad \mathbb{E} [\omega
+(x) \omega (y)] = (- \Delta + m^2
+        +\mathbb{E}V'' (\varphi)) \delta (x - y),\)
+      </center><p>
+        not Gaussian. A random variable iff <font color="#620000">\(\mathbb{E}V''
+        (\varphi) < \infty\)</font> in the limit (heuristically): unlikely in
+        <font color="#620000">\(d = 3\)</font> (cf.
+        Albeverio&ndash;Liang&ndash;Zegarlinski 2006). <font color="#620000">\(\omega =
+        \eta\)</font>: <strong>Nelson's Euclidean noise</strong>; as far as we
+        know, not studied since as a noise.
+      </p><p>
+        <strong>Albeverio&ndash;Yoshida (2002): prescribe a Gaussian
+        noise.</strong> Solve <font color="#620000">\(A \psi + V' (\psi) = A^{1 / 2}
+        \xi\)</font>: <font color="#620000">\(\psi + A^{- 1} V' (\psi)\)</font> is a
+        free field, and formally
+      </p><center>
+        \(\displaystyle \text{Law} (\psi) \propto | \det (1 + A^{- 1} V'') |
+        \mathrm{e}^{- \langle
+\psi, V' \rangle - \frac{1}{2} \langle V', A^{-
+        1} V' \rangle} \mu^{A^{- 1}}
+\neq \mathrm{e}^{- V} \mu^{A^{- 1}} :\)
+      </center><p>
+        nonlocal, not Markov, <strong>no reflection positivity</strong> (only
+        on functionals of the free field).
+      </p><div class="slide-block">
+        <p>
+          <strong>Here: condition on the scales.</strong> The noise at
+          resolution <font color="#620000">\(t\)</font> is the conditional expectation
+          of <font color="#620000">\(\eta\)</font> given the coarse field: not
+          Gaussian, but a genuine random variable at each resolution, with
+          Gaussian tails.
+        </p>
+      </div></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Dyson&ndash;Schwinger equations at every scale
       </div>
       <p>
 
       </p>
       <p>
-        With <font color="#620000">\(DU = \frac{\lambda}{3} y^3\)</font>:
+        All operators are functions of <font color="#620000">\(A\)</font> (so they
+        commute); <font color="#620000">\(K = Q_T^{- 1}\)</font>, <font color="#620000">\(J_t =
+        KQ_t\)</font> (heat profile: a heat semigroup, <font color="#620000">\(\to
+        \mathrm{e}^{- A / t^2}\)</font>).
       </p>
       <p>
-        <strong>Up to a small Lipschitz perturbation, the forecast solves the
-        cubic elliptic equation</strong>
+        The noise observable is the <strong>filtered bridge noise</strong>:
+        with <font color="#620000">\(\Phi_t = J_t \Phi_T + \zeta_t\)</font>, <font
+        color="#620000">\(\eta_t = K \Phi_t - J_t F_t = S_t^{- 1} \mathbb{E}_t
+        \zeta_t\)</font>.
       </p>
-      <center>
-        \(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q (Y_q)) +
-        \frac{\lambda}{3} Y_q^3, \qquad
-\varrho_q (y) = C_q  (M_q y +
-        \tilde{\ell}_q (y)), \quad \|D \varrho_q \|_{p
-\to p} \leqslant C (g_q
-        + g_q^2) .\)
-      </center>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal">(formal)</class> The
+          <strong>noise observable</strong> <font color="#620000">\(\eta_t = K \Phi_t -
+          J_t F_t\)</font> is a centred martingale, <font color="#620000">\(\mathrm{d}
+          \eta_t = K \dot{Q}_t^{1 / 2} \mathrm{d} W^{\mathbb{P}}_t -
+          J_t
+\hspace{0.17em} \mathrm{d} F_t\)</font>, and</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \mathbb{E}^{\mathbb{P}}  [\mathrm{D}_{J_t h} G
+            (\Phi_t)]
+=\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t)
+            \hspace{0.17em} \langle h, K \Phi_t
+- J_t F_t \rangle \right] .\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>At <font color="#620000">\(t = T\)</font>: the DS equation <font color="#620000">\(\mathbb{E}^{\nu_T}
+          [\mathrm{D}_h G] =\mathbb{E}^{\nu_T} [G \langle h, K
+\varphi +
+          \mathrm{D} V_T \rangle]\)</font>.</i>
+        </p>
+      </div>
       <p>
-        driven by the field at resolution <font color="#620000">\(q\)</font>.
+        <b>Proof.</b> <font color="#620000">\(\dot{J}_t = K \dot{Q}_t\)</font>: drifts
+        cancel. IBP for <font color="#620000">\(\mu^{Q_t}\)</font> in direction <font
+        color="#620000">\(J_t h\)</font>, using <font color="#620000">\(\Phi_t \sim
+        \nu_t\)</font>.
       </p>
       <p>
-        <b>Summary of today</b>, at every lattice:
-      </p>
-      <ul>
-        <li>
-          <p>
-            <font color="#620000">\(\mu_N\)</font>, <font color="#620000">\(M_q\)</font> and a
-            globally coercive <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>, all
-            deterministic;
-          </p>
-        </li>
-        <li>
-          <p>
-            the exact FBSDE for <font color="#620000">\((Y, Z)\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            a source whose bounded-field part is integrable (two steps), and
-            whose large-field part is controlled by sixth powers of <font
-            color="#620000">\(Y\)</font> on large fields.
-          </p>
-        </li>
-      </ul>
-      <p>
-        <b>Next:</b> estimates on <font color="#620000">\((Y, Z)\)</font> uniform in
-        <font color="#620000">\(N\)</font>.
+        At <font color="#620000">\(t = T\)</font>: <font color="#620000">\(\eta_T = K \Phi_T +
+        \mathrm{D} V_T (\Phi_T)\)</font>, the Euclidean noise, and <font
+        color="#620000">\(\eta_t =\mathbb{E}_t [\eta_T]\)</font>: <strong>what an
+        observer at resolution <font color="#620000">\(t\)</font> knows of it</strong>.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The force below the auxiliary scale
+        Dyson&ndash;Schwinger, pathwise
       </div>
       <p>
 
       </p>
       <p>
-        The expansion needs <font color="#620000">\(g_q\)</font> small, so <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>
-        is built for <font color="#620000">\(q \geqslant q_{\ast}\)</font>. Below <font
-        color="#620000">\(q_{\ast}\)</font> nothing needs constructing: freeze it,
+        <font color="#620000">\(G\)</font> a terminal functional, <font color="#620000">\(G_t
+        (\Phi_t) =\mathbb{E}_t [G (\Phi_T)]\)</font> its observable. Then
       </p>
       <center>
-        \(\displaystyle \bar{\mathcal{F}}_q (y) = \bar{\mathcal{F}}_{q_{\ast}}
-        (y) + (q_{\ast} - q) y.\)
-      </center>
-      <p>
-        Then <font color="#620000">\(K_q + D \bar{\mathcal{F}}_q = K_{q_{\ast}} + D
-        \bar{\mathcal{F}}_{q_{\ast}}\)</font>: coercivity is automatic, <font
-        color="#620000">\(H_q = H_{q_{\ast}}\)</font>, and <font color="#620000">\(y_q (x) =
-        y_{q_{\ast}} (C_{q_{\ast}} K_q x)\)</font>.
-      </p>
-      <p>
-        The defect is explicit: <font color="#620000">\(\mathcal{D}_s (y) = - y +
-        \frac{1}{2} \text{Ctr}_{H_{q_{\ast}}^2}
-        D^2
-\bar{\mathcal{F}}_{q_{\ast}} (y)\)</font>, with <font color="#620000">\(\|\mathcal{D}_s
-        (y)\|_p \leqslant C \|y\|_p\)</font>.
-      </p>
-      <p>
-        So the system holds on <font color="#620000">\([q_0, \infty)\)</font> with
-        <font color="#620000">\(Y_{q_0} = 0\)</font>: the initial value is
-        deterministic, with no large mass. <font color="#620000">\(q_{\ast}\)</font>
-        stays only in the proofs, where the expansion and the closure of the
-        loop need <font color="#620000">\(g_q\)</font> small.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Why not Polchinski with a frozen cube?
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <strong>Programme:</strong> keep <font color="#620000">\(- \frac{\lambda}{3}
-        \varphi^3\)</font> unclipped, clip the higher orders, pay in the
-        source of <font color="#620000">\(R = F - f\)</font>. Test it on one site:
-        <font color="#620000">\(K_q = q\)</font>, <font color="#620000">\(S = 1 / q\)</font>.
-      </p>
-      <center>
-        \(\displaystyle F_q (x) = - \frac{\lambda}{3} \mathbb{E}_x Y^3 = q
-        (m_q (x) - x), \quad |m_q
-(x) | \leqslant 2 (\lambda / 3)^{- 1 / 4} +
-        2 (3 q|x| / \lambda)^{1 / 3} .\)
-      </center>
-      <center>
-        <img src="cqft_slides_5-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.6768em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
-      </center>
-      <p>
-        So <font color="#620000">\(3 R / (\lambda x^3) \to 1\)</font>: the remainder
-        <strong>cancels the cube</strong>. Field equation: <font color="#620000">\(qx =
-        (q - q_0) m_q + \eta_q\)</font>, only linear confinement.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The price of clipping
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <font color="#620000">\(f^c = f_1 +\mathcal{C}f_2\)</font>, with <font color="#620000">\(f_1
-        = - \frac{\lambda}{3} (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font>
-        the first tree, <font color="#620000">\(\mathcal{C}f_2 = \kappa_q \prime \cdot
-        f_2 \circ \kappa_q\)</font>. For <font color="#620000">\(|x| \geqslant 2
-        r_q\)</font>, the Burgers defect is exactly
-      </p>
-      <center>
-        \(\displaystyle E_q = S^2 f_1 f_1 \prime \approx \frac{\lambda^2}{3}
-        S^2 x^5,\)
-      </center>
-      <p>
-        of size <font color="#620000">\((3 q / \lambda)^{1 / 2}\)</font> at the edge of
-        the clip: not integrable in <font color="#620000">\(q\)</font>.
-      </p>
-      <center>
-        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [E_q + S^2
-        (f^c)\prime R_q] \hspace{0.17em}
-\mathrm{d} q + \Xi^R_q
-        \hspace{0.17em} \mathrm{d} W_q, \quad \text{bracket}
-\approx
-        \frac{\lambda^2}{3} S^2 x^5 - \lambda S^2 x^2 R.\)
-      </center>
-      <p>
-        The source and the dissipation cancel for the true <font color="#620000">\(R
-        \sim \frac{\lambda}{3} x^3\)</font>: separate estimates give nothing.
-      </p>
-      <p>
-        Tails independent of <font color="#620000">\(R\)</font>: on one site from the
-        posterior moment, but not uniform on the lattice (negative bare mass).
-      </p>
-      <p>
-        More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
-        r_q\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Integrating the cube
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Solve the transport part of the flow exactly:
-      </p>
-      <center>
-        \(\displaystyle \partial_q f + S^2 ff' = 0, \quad f_{\infty} = -
-        \frac{\lambda}{3} x^3 \quad
-\Rightarrow \quad f_q (x) = -
-        \frac{\lambda}{3} y^3, \quad qy +
-\frac{\lambda}{3} y^3 = qx.\)
-      </center>
-      <center>
-        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \leqslant 2 C_{\ast}
-        (\frac{\lambda}{3 q})^{1 /
-2}, \quad C_{\ast} < \frac{1}{2} .\)
+        \(\displaystyle N_t := \mathrm{D}_{J_t h} G_t (\Phi_t) - G_t (\Phi_t)
+        \hspace{0.17em} \langle
+h, \eta_t \rangle \quad \text{is a martingale,
+        } N_0 = 0.\)
       </center>
       <ul>
         <li>
           <p>
-            <font color="#620000">\(y_q (\Phi_q) = Y_q\)</font>: <strong>this is the
-            forecast coordinate</strong>. <font color="#620000">\(F_q - f_q = K_q
-            Z_q\)</font>, and <font color="#620000">\(Z\)</font> is the posterior mean
-            minus the mode.
+            <strong>It&ocirc;</strong>: the drift of <font color="#620000">\(\mathrm{D}_{J_t
+            h} G_t\)</font> is <font color="#620000">\(\langle \mathrm{D} G_t,
+            \dot{Q}_t (K - \mathrm{D} F_t J_t) h \rangle
+\mathrm{d}
+            t\)</font>, exactly the covariation of the two martingales <font
+            color="#620000">\(G_t (\Phi_t)\)</font> and <font color="#620000">\(\langle h,
+            \eta_t \rangle\)</font> (<font color="#620000">\(\mathrm{D} F_t\)</font>
+            symmetric). <font color="#620000">\(N_0 = 0\)</font> since <font color="#620000">\(J_0
+            = 0\)</font>, <font color="#620000">\(\eta_0 = 0\)</font>.
           </p>
         </li>
         <li>
           <p>
-            The defect is <font color="#620000">\(qb_q (y)\)</font>: bounded for all
-            fields. The trees are in <font color="#620000">\(x \mapsto y\)</font>; the
-            cube does not flow in <font color="#620000">\(y\)</font>, so only loops are
-            clipped.
+            <font color="#620000">\(N\)</font> is the <strong>observable of the DS
+            defect</strong> <font color="#620000">\(\mathrm{D}_h G - G \langle h,
+            \eta_T \rangle\)</font>; <font color="#620000">\(\mathbb{E}N_t = 0\)</font>
+            is DS at resolution <font color="#620000">\(t\)</font>, and at <font color="#620000">\(T\)</font>
+            the DS equation of <font color="#620000">\(\nu_T\)</font>.
           </p>
         </li>
         <li>
           <p>
-            The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
-            + \frac{\lambda}{3} y^3 = q \Phi_q\)</font>.
+            <font color="#620000">\(N_t\)</font> uses only resolution-<font color="#620000">\(t\)</font>
+            objects: <font color="#620000">\(G_t\)</font>, its derivative along <font
+            color="#620000">\(J_t h\)</font>, <font color="#620000">\(\eta_t\)</font>. No
+            terminal value needed.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          For <font color="#620000">\(\Phi^4_3\)</font>, <font color="#620000">\(\eta_T\)</font>
+          has no limit, but DS survives as an <strong>identity between
+          observables</strong>: <font color="#620000">\(N\)</font> is a martingale null
+          at <font color="#620000">\(0\)</font>, for every <font color="#620000">\(G\)</font>,
+          <font color="#620000">\(h\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The field equation at resolution <font color="#620000">\(t\)</font>
+      </div>
+      <p>
+
+      </p>
+      <p>
+        As <font color="#620000">\(T \to \infty\)</font>, <font color="#620000">\(K \to
+        A\)</font>, and <font color="#620000">\(\eta_t := K \Phi_t - J_t F_t\)</font>
+        becomes
+      </p>
+      <center>
+        \(\displaystyle A \Phi_t = AQ_t  \hspace{0.17em} F_t + \eta_t  \qquad
+        (AQ_t = \mathrm{e}^{- A
+/ t^2} \text{ for the heat profile}) :\)
+      </center>
+      <p>
+        the Euclidean field equation <font color="#620000">\(A \varphi = - V' (\varphi)
+        +\)</font>noise, <strong>seen at resolution <font color="#620000">\(t\)</font></strong>.
+        No products of distributions: the nonlinearity enters only through the
+        force <strong>observable</strong>, smeared at scale <font color="#620000">\(1 /
+        t\)</font>. For <font color="#620000">\(\Phi^4_3\)</font>, with <font color="#620000">\(F_t\)</font>
+        in the role of the renormalised cube, <font color="#620000">\(t \to
+        \infty\)</font> corresponds to the renormalised DS equation
+        (Gubinelli&ndash;Hofmanov&aacute; 2021).
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>Compare: stochastic quantisation (Lecture 3)</strong>
+        </p>
+        <p>
+          There the field equation is imposed in an <strong>auxiliary
+          time</strong>; here it holds at <strong>each resolution</strong>,
+          and the auxiliary parameter is the resolution itself.
+        </p>
+      </div>
+      <p>
+        Conditioning an SPDE solution on a scale filtration gives identities
+        of the same shape but with a different noise: the martingale <font
+        color="#620000">\(J_t \hspace{0.17em} \mathrm{d} F_t\)</font> in <font color="#620000">\(\mathrm{d}
+        \eta_t\)</font> is essential.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The field equation for the forecast
+      </div>
+      <font style="font-size: 90.0%"><p>
+        Substitute <font color="#620000">\(\Phi_t = \psi_t - S_t F_t\)</font>; since
+        <font color="#620000">\(KS_t = 1 - J_t\)</font>, the smoothing disappears:
+        <font color="#620000">\(K \psi_t = F_t + \eta_t\)</font>. As <font color="#620000">\(T
+        \to \infty\)</font>, with <font color="#620000">\(F_t = - \mathrm{D} \Gamma_t
+        (\psi_t) = - \mathrm{D} V_t (\Phi_t)\)</font>:
+      </p><center>
+        \(\displaystyle \underbrace{A \Phi_t + \mathrm{e}^{- A / t^2}
+        \mathrm{D} V_t (\Phi_t) =
+\eta_t}_{\text{Polchinski process}}
+        \hspace{3em} \underbrace{A \psi_t +
+\mathrm{D} \Gamma_t (\psi_t) =
+        \eta_t}_{\text{forecast}}\)
+      </center><ul>
+        <li>
+          <p>
+            For the forecast the force acts on the same variable, with no
+            smoothing: the Euler&ndash;Lagrange equation of <font color="#620000">\(\frac{1}{2}
+            \langle \psi, A \psi \rangle + \Gamma_t (\psi)\)</font>, forced by
+            <font color="#620000">\(\eta_t\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\Phi^4\)</font>, one loop: <font color="#620000">\(\Gamma_t
+            \approx V_T + \frac{1}{2} \text{Tr} (S_t \mathrm{D}^2
+            V_T)\)</font> moves the Wick ordering to <font color="#620000">\(c_t\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \langle \psi_t, K \psi_t \rangle +
+            \frac{\lambda}{3}  \int (\psi_t^4 - 3 c_t
+\psi_t^2) = \langle
+            \psi_t, \eta_t \rangle + \ldots,\)
+          </center>
+          <p>
+            and <font color="#620000">\(4 a^4 - 12 c_t a^2 \geqslant - 9
+            c_t^2\)</font>: the <strong>coercivity of the cube</strong> is
+            visible (heuristically; in <font color="#620000">\(d = 3\)</font> the mass
+            counterterm still diverges). For <font color="#620000">\(\Phi_t\)</font> it
+            is hidden behind <font color="#620000">\(\mathrm{e}^{- A / t^2}\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            IBP: <font color="#620000">\(\mathbb{E} [G (\psi_t) \langle h, K \psi_t -
+            F_t \rangle] =\mathbb{E}
+[\mathrm{D}_{\text{Cov}_t \mathcal{R}_t
+            h} G (\psi_t)]\)</font>.
+          </p>
+        </li>
+      </ul></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The noise is sub-Gaussian
+      </div>
+      <font style="font-size: 90.0%"><p>
+        <font color="#620000">\(\eta_t\)</font> is, through <font color="#620000">\(J_t\)</font>,
+        the score of the law of <font color="#620000">\(\Phi_t\)</font>: <font color="#620000">\(\eta_t
+        = - J_t \mathrm{D} \log p_t (\Phi_t)\)</font>. Given <font color="#620000">\(\Phi_T\)</font>,
+        the interacting field is still the Gaussian bridge:
+      </p><center>
+        \(\displaystyle \Phi_t = J_t \Phi_T + \zeta_t, \quad \zeta_t \sim N
+        (0, Q_t (1 - J_t)) \quad
+\Rightarrow \quad \eta_t =\mathbb{E} [S_t^{-
+        1} \zeta_t | \Phi_t] .\)
+      </center><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><font color="#620000">\(\eta_t\)</font> is
+          dominated in convex order by <font color="#620000">\(N (0,
+          \mathcal{R}_t)\)</font>, with <font color="#620000">\(\mathcal{R}_t = S_t^{-
+          1} - Q_T^{- 1}\)</font> the <strong>Wetterich regulator</strong>; in
+          particular</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \mathbb{E} \mathrm{e}^{u \langle h, \eta_t
+            \rangle} \leqslant \exp \left(
+\frac{u^2}{2} \langle h,
+            \mathcal{R}_t h \rangle \right),\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>uniformly in the interaction, with no convexity (conditional
+          Jensen).</i>
+        </p>
+      </div><font style="font-size: 84.1%"><ul>
+        <li>
+          <p>
+            Heat profile, <font color="#620000">\(T = \infty\)</font> (finite spatial
+            cutoff): <font color="#620000">\(\mathcal{R}_t = A / (\mathrm{e}^{A / t^2}
+            - 1) \leqslant t^2\)</font>; <font color="#620000">\(\mathcal{R}_t
+            \leqslant \frac{4}{3} t^2\)</font> for <font color="#620000">\(T \geqslant
+            2 t\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            With <font color="#620000">\(\mathrm{d} F = \Upsilon \mathrm{d} W\)</font>
+            and It&ocirc;: <font color="#620000">\(\mathbb{E} \int_0^t \|
+            \Upsilon_s^{\ast} J_s h\|^2 \mathrm{d} s \leqslant 2 (1
++
+            \mathrm{e}^{- 1}) t^2 \|h\|^2\)</font>: a smoothed derivative of
+            the force, without the terminal force.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\Phi^4_3\)</font>: the noise in <font color="#620000">\(A
+            \Phi_t = AQ_t F_t + \eta_t\)</font> is controlled a priori; what
+            remains is coercivity of the renormalised force.
+          </p>
+        </li>
+      </ul></font></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The noise as a posterior mean
+      </div>
+      <font style="font-size: 85.0%"><p>
+        One mode, <font color="#620000">\(Q_t = t\)</font>. Known endpoint <font color="#620000">\(y\)</font>:
+        a Brownian bridge, <font color="#620000">\(\Phi_t = \frac{t}{T} y +
+        \zeta_t\)</font> and <font color="#620000">\(\eta_t = \zeta_t / (T - t) \sim N
+        (0, \mathcal{R}_t)\)</font>. Random endpoint <font color="#620000">\(\Phi_T
+        \sim \nu_T\)</font>: <font color="#620000">\(\eta_t =\mathbb{E} [(\Phi_t -
+        \frac{t}{T} \Phi_T) / (T - t) | \Phi_t]\)</font>.
+      </p><center>
+        <p>
+          <img src="cqft_slides_5-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 21.4760242424242em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+        </p>
+      </center><p>
+        <font color="#620000">\(\text{Cov} (\eta_t) =\mathcal{R}_t - S_t^{- 1} J_t
+        \mathbb{E} [\text{Cov}_t]
+J_t S_t^{- 1} = KJ_t + J_t \mathbb{E}
+        [\mathrm{D}^2 V_t (\Phi_t)] J_t\)</font>: the free bridge noise
+        <strong>minus what the observer cannot resolve</strong>; Nelson's mass
+        <font color="#620000">\(m^2 +\mathbb{E}V''\)</font>, at resolution <font color="#620000">\(t\)</font>,
+        and finite.
+      </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        How rough is the noise?
+      </div>
+      <p>
+        Spectral densities, heat profile, <font color="#620000">\(T = \infty\)</font>,
+        <font color="#620000">\(A = |k|^2 + m^2\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \begin{array}{cccc}
+  \text{white noise} & \text{GFF}
+        & \text{free noise } AX_t & \text{bound }
+  \mathcal{R}_t\\
+  1 & A^{-
+        1} & A \mathrm{e}^{- A / t^2} & \frac{A}{\mathrm{e}^{A / t^2} -
+        1}
+\end{array}\)
+      </center>
+      <font style="font-size: 84.1%"><ul>
+        <li>
+          <p>
+            <font color="#620000">\(\mathcal{R}_t \leqslant t^2 \mathrm{e}^{- A / 2
+            t^2}\)</font>: at resolution <font color="#620000">\(t\)</font>, <font
+            color="#620000">\(\eta_t \lesssim t \times\)</font> white noise smoothed at
+            scale <font color="#620000">\(1 / t\)</font>, so <font color="#620000">\(\eta_t (x)
+            = O (t^{1 + d / 2})\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At scale <font color="#620000">\(1 / t\)</font> this is the size of
+            regularity <font color="#620000">\(- 1 - d / 2\)</font> (<font color="#620000">\(- 5
+            / 2\)</font> in <font color="#620000">\(d = 3\)</font>): one derivative
+            rougher than white noise, like the free noise <font color="#620000">\(A^{1
+            / 2} \xi\)</font>, <strong>whatever the interaction</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Not a limit distribution: on a fixed <font color="#620000">\(h\)</font>
+            only <font color="#620000">\(\langle h, \eta_t \rangle = O (t)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Larger than the free noise by <font color="#620000">\(t^2 / A\)</font>
+            below <font color="#620000">\(t\)</font>, but saturated by a pinning
+            potential.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Pathwise</strong> (convex domination of the norm, Doob):
+            a.s. for <font color="#620000">\(t \geqslant 1\)</font>, at finite spatial
+            cutoff,
+          </p>
+          <center>
+            \(\displaystyle \sup_x (1 + |x|)^{- \varepsilon} | \eta_t (x) |
+            \leqslant C (\omega) t^{1 + d
+/ 2} \sqrt{\log (2 + t)} .\)
+          </center>
+        </li>
+      </ul></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The noise as a stochastic observable
+      </div>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\((\eta_t)_{t \leqslant T}\)</font> is a
+            <strong>martingale</strong>, with terminal value Nelson's
+            Euclidean noise <font color="#620000">\(K \Phi_T + \mathrm{D} V_T
+            (\Phi_T)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At each resolution a <strong>smooth random field</strong>; every
+            <font color="#620000">\(\langle h, \eta_t \rangle\)</font> is
+            <strong>sub-Gaussian</strong> with variance <font color="#620000">\(\leqslant
+            \langle h, \mathcal{R}_t h \rangle\)</font>, uniformly in the
+            interaction and the cutoff.
+          </p>
+        </li>
+        <li>
+          <p>
+            Paired with functionals of the coarse field it is the
+            <strong>transpose of the smoothed derivative</strong> <font color="#620000">\(\mathrm{D}_{J_t
+            h}\)</font> (DS at every scale).
+          </p>
+        </li>
+        <li>
+          <p>
+            Expected <strong>local</strong> in the sense of Lecture 3: germs
+            <font color="#620000">\(A \Phi_t (x) + w_t (\Phi_t (x))\)</font>,
+            renormalised cube; local iff the force is. For <font color="#620000">\(\Phi^4_3\)</font>:
+            local but not closed.
+          </p>
+        </li>
+        <li>
+          <p>
+            At its own resolution it has the size of <font color="#620000">\(A^{1 / 2}
+            \xi\)</font>: formally <strong>one derivative of white
+            noise</strong>, whatever the interaction.
+          </p>
+        </li>
+        <li>
+          <p>
+            For <font color="#620000">\(\Phi^4_3\)</font>, <font color="#620000">\(A \varphi +
+            V' (\varphi)\)</font> is not expected to be a random variable
+            (Nelson; Albeverio&ndash;Liang&ndash;Zegarlinski), but its
+            conditional expectations are, consistently: <font color="#620000">\(\eta_s
+            =\mathbb{E}_s \eta_t\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          The Euclidean field equation of <font color="#620000">\(\Phi^4_3\)</font> has
+          a well-defined sub-Gaussian noise: an <strong>observable without a
+          terminal representative</strong>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: block">
+      <div class="slide-title">
+        Infinite volume
+      </div>
+      <p>
+
+      </p>
+      <p>
+        On <font color="#620000">\(\mathbb{T}^d_L\)</font>, <font color="#620000">\(V_0
+        (0)\)</font> and <font color="#620000">\(V_t\)</font> are
+        <strong>extensive</strong> (<font color="#620000">\(\sim L^d\)</font>). Three
+        <strong>intensive</strong> objects survive:
+      </p>
+      <ol>
+        <li>
+          <p>
+            <b>the force.</b> For <font color="#620000">\(V_T = \int v_T
+            (\varphi)\)</font>, on <font color="#620000">\(\mathbb{R}^d\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \Phi_t = \int_0^t \dot{Q}_s F_s \hspace{0.17em}
+            \mathrm{d} s + \int_0^t
+\dot{Q}_s^{1 / 2} \mathrm{d} W_s, \qquad
+            F_t (x) = -\mathbb{E}_t [v_T' (\Phi_T
+(x))] .\)
+          </center>
+          <p>
+            Everything is local; infinite-volume limits should solve this.
+            Uniqueness of solutions <font color="#620000">\(\leftrightarrow\)</font>
+            uniqueness of the theory; non-uniqueness expected at phase
+            transitions (<font color="#620000">\(\Phi^4_2\)</font>, deep double well).
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>the Burgers flow</b> of the force;
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>differences of free energies</b> <font color="#620000">\(\mathcal{W}_T^{(L)}
+            (f)\)</font>, <font color="#620000">\(f\)</font> local: bounded as <font
+            color="#620000">\(L \to \infty\)</font>; basis of the infinite-volume
+            analysis of <font color="#620000">\(\Phi^4_2\)</font> and <font color="#620000">\(\exp
+            (\Phi)_2\)</font>.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Estimates must be <strong>local</strong> (weighted norms,
+        volume-independent constants): the analogue of &ldquo;coming down from
+        infinity&rdquo;. <font style="font-size: 84.1%"><font color="#707070">Barashkov&ndash;Gubinelli,
+        PMP 2023; Glimm&ndash;Jaffe&ndash;Spencer 1975</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Differences of free energies
+      </div>
+      <p>
+        Perturb the optimal drift: <font color="#620000">\(u = u^{\ast} + w\)</font>,
+        <font color="#620000">\(X^u = \Phi + I (w)\)</font>, <font color="#620000">\(I_t (w) =
+        \int_0^t \dot{Q}^{1 / 2} w\)</font>. Euler&ndash;Lagrange gives the
+        cross term
+      </p>
+      <center>
+        \(\displaystyle \mathbb{E} \int \langle u^{\ast}, w \rangle =
+        -\mathbb{E} \langle \mathrm{D}
+V_T (\Phi_T), I_T (w) \rangle .\)
+      </center>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal">(formal)</class> The two
+          extensive infima cancel exactly:</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle - \log \int \mathrm{e}^{- f} \mathrm{d} \nu_T =
+            \inf_w \mathbb{E} \left[ f
+(\Phi_T + I_T (w)) + B_{V_T} (\Phi_T,
+            I_T (w)) + \frac{1}{2}  \int_0^T \|w\|^2
+\right],\)
+          </center></i>
+        </p>
+      </div>
+      <p>
+        <font color="#620000">\(B_V (\phi, h) = V (\phi + h) - V (\phi) - \langle
+        \mathrm{D} V (\phi), h
+\rangle\)</font>: the <strong>first-order
+        Taylor remainder</strong>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Minimiser: <font color="#620000">\(\Phi^f = \Phi + I (w)\)</font> solves
+            the FBSDE with terminal potential <font color="#620000">\(V_T + f\)</font>,
+            a perturbation of <font color="#620000">\(\Phi\)</font>:
+          </p>
+          <center>
+            \(\displaystyle F^f_s - F_s = -\mathbb{E}_s [\mathrm{D} f
+            (\Phi^f_T) + \mathrm{D} V_T
+(\Phi^f_T) - \mathrm{D} V_T (\Phi_T)]
+            .\)
+          </center>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Infinite-volume measures
+      </div>
+      <p>
+        Local interaction <font color="#620000">\(V_T = \int v_T (\varphi (x))
+        \mathrm{d} x\)</font>:
+      </p>
+      <center>
+        \(\displaystyle B_{V_T} (\phi, h) = \int b_T (\phi (x), h (x))
+        \mathrm{d} x, \qquad b_T (a, h)
+= v_T (a + h) - v_T (a) - v_T' (a)
+        h.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(b_T (a, 0) = 0\)</font>: only the region where the
+            perturbation acts counts. Every term is
+            <strong>intensive</strong>: no free energy, only <font color="#620000">\(\Phi\)</font>
+            and its perturbation.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(f\)</font> local <font color="#620000">\(\Rightarrow\)</font>
+            the optimal <font color="#620000">\(w\)</font> should decay away from its
+            support, at the rate of decay of correlations.
+          </p>
+        </li>
+        <li>
+          <p>
+            Several solutions of the FBSDE (phase transitions) <font color="#620000">\(\Rightarrow\)</font>
+            several measures, each with its own principle.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\Phi^4_3\)</font>: the remainder term carries the
+            counterterms; the change of variables of Barashkov&ndash;Gubinelli
+            is still needed.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>Formal statement.</strong> An infinite-volume measure is the
+          law of <font color="#620000">\(\Phi_T\)</font> for a solution of the
+          infinite-volume FBSDE satisfying the relative variational principle
+          for all local <font color="#620000">\(f\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <p style="margin-top: 2.5cm">
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        <font style="font-size: 135.0%"><b><font color="#800000">Appendices: additional
+        material</font></b></font>
+      </p>
+      <p style="margin-bottom: 0.3cm">
+
+      </p>
+      <p>
+        <font color="#707070">Lecture 5</font>
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        A semigroup of renormalisation maps
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(\mathcal{R}_S (V) = - \log (\mu^S \ast \mathrm{e}^{-
+        V})\)</font>. Since <font color="#620000">\(\mu^S \ast \mu^{S'} = \mu^{S +
+        S'}\)</font>,
+      </p>
+      <center>
+        \(\displaystyle \mathcal{R}_S \circ \mathcal{R}_{S'} =\mathcal{R}_{S +
+        S'} =\mathcal{R}_{S'}
+\circ \mathcal{R}_S, \qquad V_t
+        =\mathcal{R}_{Q_{T, t}} (V_T) :\)
+      </center>
+      <p>
+        an orbit of an <strong>abelian</strong> semigroup indexed by the cone
+        of positive covariances, nonlinear on <font color="#620000">\(V\)</font>,
+        linear on <font color="#620000">\(\mathrm{e}^{- V}\)</font>. Generators:
+      </p>
+      <center>
+        \(\displaystyle \mathcal{P}_B (V) = \tfrac{1}{2} \text{Tr} (B
+        \mathrm{D}^2 V) - \tfrac{1}{2}
+\langle \mathrm{D} V, B \mathrm{D} V
+        \rangle, \qquad \partial_t V_t =
+-\mathcal{P}_{\dot{Q}_t} (V_t) .\)
+      </center>
+      <div class="slide-box">
+        <p style="margin-top: 1em; margin-bottom: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Flatness)
+          </strong></font></font></class><class style="font-style: normal">(formal)</class> <font
+          color="#620000">\([\mathcal{P}_B, \mathcal{P}_{B'}] = 0\)</font>. <font
+          color="#620000">\(V_t\)</font> depends on the profile only through <font
+          color="#620000">\(Q_{T, t}\)</font>; <font color="#620000">\(V_0 (0)\)</font> and
+          <font color="#620000">\(\nu_T\)</font> only through <font color="#620000">\(Q_T\)</font>.</i>
+        </p>
+      </div>
+      <p>
+        Different profiles with the same endpoints are different
+        <strong>coordinate systems</strong> on the same RG trajectory: they
+        change <font color="#620000">\(\Phi\)</font> and intermediate observables, not
+        the terminal theory. <strong>No holonomy.</strong>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Perturbation theory and counterterms
+      </div>
+      <font style="font-size: 90.0%"><p>
+
+      </p><p>
+        Gaussian convolution <strong>lowers the Wick ordering</strong>: <font
+        color="#620000">\(V_t = \int [\frac{\lambda}{12} : \phi^4 :_t + \gamma_T :
+        \phi^2 :_t] + O
+(\lambda^2)\)</font>, the dual of <font color="#620000">\(\int
+        H_4  (X_t ; c_t)\)</font> being an observable. At second order, <font
+        color="#620000">\(S = Q_{T, t}\)</font>:
+      </p><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><class style="font-style: normal">(formal)</class> To second
+          order in <font color="#620000">\(\lambda\)</font>:</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle V_t = \int \left[ \frac{\lambda}{12} : \phi^4 :_t
+            + \gamma_T : \phi^2 :_t
+\right] - \frac{\lambda^2}{288}  \sum_{k =
+            1}^4 \binom{4}{k}^2 k! \iint S (x,
+y)^k \hspace{0.17em} : \phi^{4
+            - k} :_t (x) \hspace{0.17em} : \phi^{4 - k} :_t
+(y) + O
+            (\lambda^3) .\)
+          </center></i>
+        </p>
+      </div><p>
+        <font color="#620000">\(T \to \infty\)</font> at fixed <font color="#620000">\(t\)</font>,
+        <font color="#620000">\(d = 3\)</font>, <font color="#620000">\(G (z) \sim (4 \pi
+        |z|)^{- 1}\)</font>:
+      </p><ul>
+        <li>
+          <p>
+            <font color="#620000">\(k = 1, 2\)</font>: finite, nonlocal.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(k = 3\)</font> (<strong>sunset</strong>): <font
+            color="#620000">\(S^3 \sim |z|^{- 3}\)</font>; local divergence <font
+            color="#620000">\(- \frac{\lambda^2}{3} (\int S^3)  \int : \phi^2
+            :_t\)</font> (+ finite), cancelled by <font color="#620000">\(\gamma_T =
+            \frac{\lambda^2}{3}  \int Q_T^3 = \frac{\lambda^2}{48 \pi^2} \log
+            T
++ O (1)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(k = 4\)</font>: vacuum energy <font color="#620000">\(\sim
+            T\)</font>; cancels in <font color="#620000">\(\nu_T\)</font>.
+          </p>
+        </li>
+      </ul><p>
+        Renormalisation <font color="#620000">\(=\)</font> choosing <font color="#620000">\(V_T\)</font>
+        so that <font color="#620000">\(V_t\)</font> at <strong>fixed</strong>
+        resolution converges. <font color="#620000">\(\nu_t \ll \mu^{Q_t}\)</font>
+        expected for <font color="#620000">\(t < \infty\)</font>; the terminal <font
+        color="#620000">\(\Phi^4_3\)</font> is singular w.r.t. the GFF.
+      </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Second order in graphs
+      </div>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+      <center>
+        <img src="cqft_slides_5-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 11.2701333333333em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070"><font color="#620000">\(k\)</font> lines <font color="#620000">\(S\)</font>
+        between two Wick-ordered vertices. Only the sunset needs a further
+        counterterm, <font color="#620000">\(\gamma_T\)</font>.</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Stochastic localisation: what and why
+      </div>
+      <p>
+        Eldan 2013: write a measure as a mixture of simpler ones, by a
+        measure-valued martingale. Here
+      </p>
+      <center>
+        \(\displaystyle \mu_t^{\phi} (\mathrm{d} y) \propto
+        \mathrm{e}^{\langle S_t^{- 1} \phi, y
+\rangle - \frac{1}{2} \langle y,
+        \mathcal{R}_t y \rangle} \nu_T (\mathrm{d}
+y), \qquad \Phi_t = J_t
+        \Phi_T + \zeta_t :\)
+      </center>
+      <p>
+        <font color="#620000">\(\Phi_t\)</font> is a noisy <strong>observation</strong>
+        of <font color="#620000">\(\Phi_T\)</font>, with precision <font color="#620000">\(\mathcal{R}_t\)</font>
+        gained, and <font color="#620000">\(\mu_t\)</font> the
+        <strong>posterior</strong>. Basic (identity-control) case: <font
+        color="#620000">\(\mathcal{R}_t = t\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>Martingale:</strong> It&ocirc; splits variance and entropy
+            into revealed and hidden parts.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Simpler pieces:</strong> <font color="#620000">\(\nu_T\)</font>
+            log-concave <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\(\mu_t\)</font>
+            is <font color="#620000">\(\mathcal{R}_t\)</font>-uniformly log-concave.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>One quantity:</strong> the loss is governed by <font
+            color="#620000">\(\operatorname{Cov}_t\)</font>, with explicit dynamics. An
+            inequality reduces to: <em>the localisation is not too fast</em>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Algorithms:</strong> sampling (El
+            Alaoui&ndash;Montanari&ndash;Sellke), denoising diffusions
+            (Montanari); <font color="#620000">\(\eta_t\)</font> is minus the score,
+            seen through <font color="#620000">\(J_t\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Entropy along the localisation
+      </div>
+      <font style="font-size: 90.0%"><p>
+        <font color="#620000">\(\rho \geqslant 0\)</font>, <font color="#620000">\(\mathbb{E}_{\nu_T}
+        \rho = 1\)</font>, <font color="#620000">\(M_t =\mathbb{E}_t \rho (\Phi_T) =
+        G_t (\Phi_t)\)</font>, <font color="#620000">\(G_t (\phi) = \int \rho
+        \mathrm{d} \mu_t^{\phi}\)</font>.
+      </p><ul>
+        <li>
+          <p>
+            <font color="#620000">\(M_0 = 1\)</font>, <font color="#620000">\(M_T = \rho
+            (\Phi_T)\)</font>, and <font color="#620000">\(\mathrm{d} M_t = \langle
+            \mathrm{D} G_t (\Phi_t), \dot{Q}_t^{1 / 2} \mathrm{d}
+W_t
+            \rangle\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            It&ocirc; for <font color="#620000">\(M \log M\)</font>:
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) = \frac{1}{2}
+            \mathbb{E} \int_0^T
+\frac{\mathrm{d} \langle M \rangle_t}{M_t} =
+            2\mathbb{E} \int_0^T \left\|
+\dot{Q}_t^{1 / 2} D \sqrt{G_t}
+            (\Phi_t) \right\|^2 \mathrm{d} t.\)
+          </center>
+        </li>
+        <li>
+          <p>
+            Stopping at <font color="#620000">\(t\)</font>: <strong>revealed +
+            hidden</strong> entropy,
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho)
+            =\operatorname{Ent}
+            (M_t)
++\mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (\rho) .\)
+          </center>
+        </li>
+        <li>
+          <p>
+            The increments see the conditional law: <font color="#620000">\(\mathrm{D}
+            G_t (\phi) = S_t^{- 1} \operatorname{Cov}_{\mu_t^{\phi}} (\rho,
+            y)\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Entropic stability</strong> (Chen&ndash;Eldan): if <font
+            color="#620000">\(\dot{\mathcal{R}}_r \operatorname{Cov}_{\mu_r^{\phi}}
+            \dot{\mathcal{R}}_r
+\leqslant \alpha_r
+            \dot{\mathcal{R}}_r\)</font> for all <font color="#620000">\(\phi\)</font>
+            and <font color="#620000">\(r \leqslant t\)</font>, then <font color="#620000">\(\operatorname{Ent}_{\nu_T}
+            (\rho) \leqslant \mathrm{e}^{\int_0^t \alpha_r
+\mathrm{d} r}
+            \mathbb{E}\operatorname{Ent}_{\mu_t^{\Phi_t}} (\rho)\)</font>: the
+            low resolutions must not hide too much.
+          </p>
+        </li>
+      </ul><p>
+        <font style="font-size: 84.1%"><font color="#707070">Bauerschmidt&ndash;Bodineau&ndash;Dagallier,
+        Probab. Surveys 2024: their fluctuation measure is our stochastic
+        localisation (scale reversed).</font></font>
+      </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Multiscale Bakry&ndash;&Eacute;mery
+      </div>
+      <font style="font-size: 90.0%"><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Bauerschmidt&ndash;Bodineau)
+          </strong></font></font></class><class style="font-style: normal">(formal)</class> If for
+          all <font color="#620000">\(t, \phi\)</font>, with <font color="#620000">\(\kappa_t
+          \in \mathbb{R}\)</font> (possibly negative),</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \dot{Q}_t \mathrm{D}^2 V_t (\phi)  \dot{Q}_t +
+            \frac{1}{2}  \ddot{Q}_t
+\geqslant \kappa_t  \dot{Q}_t,\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>then <font color="#620000">\(\operatorname{Ent}_{\nu_T} (\rho) \leqslant
+          \frac{2}{\gamma}
+\mathbb{E}_{\nu_T} \| \dot{Q}_T^{1 / 2} D
+          \sqrt{\rho} \|^2\)</font>, <font color="#620000">\(\frac{1}{\gamma} =
+          \int_0^T \mathrm{e}^{- 2 \int_t^T \kappa_r \mathrm{d} r}
+\mathrm{d}
+          t\)</font>.</i>
+        </p>
+      </div><ul>
+        <li>
+          <p>
+            Gradient bound at each scale + entropy formula. Gaussian check:
+            <font color="#620000">\(V_T = 0\)</font>, <font color="#620000">\(Q_t = tQ_T /
+            T\)</font>, <font color="#620000">\(\kappa = 0\)</font> <font color="#620000">\(\Rightarrow\)</font>
+            Gaussian LSI.
+          </p>
+        </li>
+        <li>
+          <p>
+            Convexity of the <strong>effective</strong> potentials, not of
+            <font color="#620000">\(V_T\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            By <font color="#620000">\(\mathrm{D}^2 V_t = S_t^{- 1} - S_t^{- 1}
+            \operatorname{Cov}_t S_t^{- 1}\)</font>, for <font color="#620000">\(\dot{Q}_t\)</font>
+            invertible the hypothesis is equivalent to the bound, uniform in
+            <font color="#620000">\(\phi\)</font>,
+          </p>
+          <center>
+            \(\displaystyle \operatorname{Cov}_t \leqslant S_t - S_t
+            \dot{Q}_t^{- 1}  \left( \kappa_t
+\dot{Q}_t - \frac{1}{2}
+            \ddot{Q}_t \right)  \dot{Q}_t^{- 1} S_t :\)
+          </center>
+          <p>
+            at most <font color="#620000">\(S_t\)</font> iff <font color="#620000">\(\kappa_t
+            \dot{Q}_t \geqslant \frac{1}{2}  \ddot{Q}_t\)</font> (linear
+            profile: <font color="#620000">\(\kappa_t \geqslant 0\)</font>).
+          </p>
+        </li>
+      </ul></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Poincar&eacute; from the localisation
+      </div>
+      <div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>If <font color="#620000">\(\dot{\mathcal{R}}_r
+          \operatorname{Cov}_{\mu_r^{\phi}}  \dot{\mathcal{R}}_r
+\leqslant
+          \alpha_r  \dot{\mathcal{R}}_r\)</font> for all <font color="#620000">\(\phi\)</font>,
+          <font color="#620000">\(r \leqslant t\)</font>, then</i>
+        </p>
+        <p>
+          <i><center>
+            \(\displaystyle \operatorname{Var}_{\nu_T} (f) \leqslant
+            \mathrm{e}^{\int_0^t \alpha}
+\mathbb{E}\operatorname{Var}_{\mu_t}
+            (f),\)
+          </center></i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i>and, for <font color="#620000">\(\nu_T\)</font> log-concave, <font color="#620000">\(\operatorname{Var}_{\nu_T}
+          (f) \leqslant \mathrm{e}^{\int_0^t \alpha}
+\mathbb{E} \langle
+          \mathrm{D} f, \mathcal{R}_t^{- 1} \mathrm{D} f \rangle\)</font>.</i>
+        </p>
+      </div>
+      <p>
+        <strong>Proof.</strong> <font color="#620000">\(v (r)
+        =\mathbb{E}\operatorname{Var}_{\mu_r} (f)\)</font> has <font color="#620000">\(v'
+        = -\mathbb{E} \langle \chi, \dot{\mathcal{R}} \chi \rangle\)</font>,
+        <font color="#620000">\(\chi =\operatorname{Cov} (f, y)\)</font>;
+        Cauchy&ndash;Schwarz gives <font color="#620000">\(\langle \chi,
+        \dot{\mathcal{R}} \chi \rangle \leqslant \alpha
+\operatorname{Var}
+        (f)\)</font>. Then Brascamp&ndash;Lieb for <font color="#620000">\(\mu_t\)</font>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Gaussian, one mode: <font color="#620000">\(\mathrm{e}^{\int \alpha} = Q_T
+            / S_t\)</font>; equality for linear <font color="#620000">\(f\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>KLS conjecture</strong>: isotropic log-concave on <font
+            color="#620000">\(\mathbb{R}^n\)</font>, <font color="#620000">\(\mathcal{R}_t =
+            t\)</font>: <font color="#620000">\(\operatorname{Var} (f) \leqslant t^{-
+            1} \mathrm{e}^{\int \alpha} \mathbb{E} |
+\mathrm{D} f|^2\)</font>.
+            Keep <font color="#620000">\(\|\operatorname{Cov}_r \|\)</font> bounded as
+            long as possible (only with high probability). Eldan 2013, Chen
+            2021, Klartag&ndash;Lehec 2022, Klartag 2023: Poincar&eacute;
+            constant <font color="#620000">\(O (\log n)\)</font>.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Two views of one martingale
+      </div>
+      <font style="font-size: 90.0%"><center>
+        <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <font style="font-size: 90.0%"><table style="display: inline-table; vertical-align: middle">
+            <tbody><tr>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">these notes</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">Bauerschmidt&ndash;Bodineau</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">localisation</td>
+            </tr><tr>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\nu_t\)</font></td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">renormalised measure</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">law of the tilt</td>
+            </tr><tr>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\mu_t^{\phi}\)</font></td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">fluctuation measure</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">tilted measure</td>
+            </tr><tr>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(G_t\)</font></td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">Polchinski semigroup</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">martingale <font color="#620000">\(\int \rho \mathrm{d}
+              \mu_t\)</font></td>
+            </tr><tr>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\mathrm{D}^2 V_t\)</font></td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid">Hessian of the potential</td>
+              <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid">covariance of the tilt</td>
+            </tr></tbody>
+          </table></font>
+        </p>
+      </center><ul>
+        <li>
+          <p>
+            <strong>Bridge:</strong> <font color="#620000">\(\mathrm{D}^2 V_t = S_t^{-
+            1} - S_t^{- 1} \operatorname{Cov}_t S_t^{- 1}\)</font>: convex
+            potentials <font color="#620000">\(=\)</font> bounded conditional
+            covariance.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Bauerschmidt&ndash;Bodineau:</strong>
+            Bakry&ndash;&Eacute;mery for the Kolmogorov equation, curvature
+            <font color="#620000">\(\dot{Q} \mathrm{D}^2 V_t  \dot{Q} + \frac{1}{2}
+            \ddot{Q}\)</font>: gradient bound at each scale, LSI at the
+            terminal scale, far from log-concavity. Uniform in <font color="#620000">\(\phi\)</font>:
+            suits the RG (sine-Gordon, <font color="#620000">\(\beta < 6 \pi\)</font>).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Localisation:</strong> bound what is lost on <font color="#620000">\([0,
+            t]\)</font>, then use a known inequality for <font color="#620000">\(\mu_t\)</font>.
+            Moments of the conditional law, possibly only with high
+            probability (KLS).
+          </p>
+        </li>
+      </ul><p>
+        <font style="font-size: 84.1%"><font color="#707070">Bauerschmidt&ndash;Bodineau, CPAM 2021;
+        Bauerschmidt&ndash;Bodineau&ndash;Dagallier, Probab. Surveys 2024;
+        Eldan, GAFA 2013; Chen&ndash;Eldan, FOCS 2022.</font></font>
+      </p></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Summary
+      </div>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          <p>
+            The <strong>Euclidean field equation</strong> <font color="#620000">\(A
+            \varphi + V' (\varphi) = \eta\)</font>: Nelson's Euclidean noise
+            is the transpose of the derivative, fixed by the law of the field,
+            not Gaussian.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Field equation</strong> at every resolution: its noise is
+            a conditional expectation of Nelson's noise and a filtered
+            Gaussian noise, hence sub-Gaussian whatever the interaction; for
+            the forecast the force enters without smoothing.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>DS, pathwise</strong>: an identity between stochastic
+            observables, with no terminal representative needed.
           </p>
         </li>
       </ul>
       <p>
-        <font style="font-size: 84.1%">Not a no-go theorem: it rules out only estimating <font
-        color="#620000">\(R\)</font> as a small perturbation of the frozen cube.
-        Integrating the cube in the original field is possible, but on the
-        lattice its loop defect must still be renormalised; that route is not
-        proved here.</font>
+
       </p>
+      <div class="slide-block">
+        <p>
+          <strong>Next</strong>
+        </p>
+        <p>
+          Lectures 6&ndash;7: a construction of <font color="#620000">\(\Phi^4_3\)</font>
+          on the torus via the FBSDE.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Exercises and reading
+      </div>
+      <font style="font-size: 90.0%"><p>
+
+      </p><table style="width: 100%">
+        <tbody><tr>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-left: 0em"><p>
+            <b>Exercises</b> (numbering of the notes)
+          </p><ul>
+            <li>
+              <p>
+                9.1 Doob transform; 9.2 relative variational principle; 9.3 DS
+                from the dynamics; 9.5 sub-Gaussian noise; 9.6 the noise of a
+                two-point endpoint; 9.7 contact terms.
+              </p>
+            </li>
+            <li>
+              <p>
+                A.2 The sunset; A.3 power counting.
+              </p>
+            </li>
+            <li>
+              <p>
+                B.1 Entropy along the localisation; B.2 Poincar&eacute; from
+                the localisation.
+              </p>
+            </li>
+          </ul></td>
+          <td style="width: 50%; vertical-align: top; padding-left: 0em; padding-right: 1em; padding-right: 0em"><p>
+            <b>Reading</b>
+          </p><ul>
+            <li>
+              <p>
+                Nelson, <em>Remarks on Markov field equations</em>, 1975.
+              </p>
+            </li>
+            <li>
+              <p>
+                Albeverio&ndash;Yoshida, J. Funct. Anal. 2002;
+                Albeverio&ndash;Liang&ndash;Zegarlinski 2006.
+              </p>
+            </li>
+            <li>
+              <p>
+                Gubinelli&ndash;Hofmanov&aacute;, <em>A PDE construction of
+                the Euclidean <font color="#620000">\(\Phi^4_3\)</font> quantum field
+                theory</em>, CMP 2021.
+              </p>
+            </li>
+            <li>
+              <p>
+                Bauerschmidt&ndash;Bodineau, log-Sobolev via the Polchinski
+                flow, 2021; Eldan, GAFA 2013.
+              </p>
+            </li>
+            <li>
+              <p>
+                Barashkov&ndash;Gubinelli, Duke 2020 and 2023 (infinite
+                volume).
+              </p>
+            </li>
+          </ul></td>
+        </tr></tbody>
+      </table></font>
     </div>
   </body>
 </html>

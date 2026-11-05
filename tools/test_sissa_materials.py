@@ -24,7 +24,7 @@ class SissaMaterialsTests(unittest.TestCase):
 
     def test_complete_notes_and_slide_exports(self):
         # Slide counts from the author's supplied HTML and PDF exports.
-        for number, slides in enumerate((31, 32, 35, 65, 31, 44), 1):
+        for number, slides in enumerate((31, 32, 35, 47, 28, 31, 44), 1):
             notes = f'cqft_lecture_{number}'
             for name in (notes, f'cqft_slides_{number}'):
                 with self.subTest(page=name):
@@ -50,7 +50,7 @@ class SissaMaterialsTests(unittest.TestCase):
         parser = PageParser()
         parser.feed((ROOT / 'docs/teaching/lectures-constructive-qft-sissa-2026.html').read_text())
         hrefs = {item.get('href') for item in parser.anchor_links}
-        for number in range(1, 7):
+        for number in range(1, 8):
             notes = f'cqft_lecture_{number}'
             for name in (notes, f'cqft_slides_{number}'):
                 self.assertIn(f'sissa-2026/{name}.html', hrefs)

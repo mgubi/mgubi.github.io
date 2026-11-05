@@ -34,7 +34,7 @@
     </style>
     <link href="cqft-icon.svg" rel="icon">
     <link href="max-html-slides.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&amp;display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" type="text/css" rel="stylesheet">
     <link href="cqft-slides.css" type="text/css" rel="stylesheet">
     <link href="/resources/course-materials.css" type="text/css" rel="stylesheet">
     <script src="max-html-slides.js" defer></script>
@@ -53,25 +53,25 @@
 
         </p>
         <p>
-          <span style="font-size: 125.0%"><b><span style="color: #800000">A Constructive Introduction to Quantum
-          Field Theory</span></b></span>
+          <font style="font-size: 125.0%"><b><font color="#800000">A Constructive Introduction to Quantum
+          Field Theory</font></b></font>
         </p>
         <p style="margin-bottom: 0.3cm">
 
         </p>
         <p>
-          <span style="font-size: 115.0%">Stochastic quantisation and stochastic
-          observables</span>
+          <font style="font-size: 115.0%">Stochastic quantisation and stochastic
+          observables</font>
         </p>
         <p style="margin-bottom: 1.2cm">
 
         </p>
         <p>
-          <span style="font-size: 84.1%">Massimiliano Gubinelli | University of Oxford</span>
+          <font style="font-size: 84.1%">Massimiliano Gubinelli | University of Oxford</font>
         </p>
         <p>
-          <span style="font-size: 84.1%"><span style="color: #707070">SISSA lectures, Lecture 3 &mdash; notes:
-          Lecture 3, &sect;&sect;4&ndash;6</span></span>
+          <font style="font-size: 84.1%"><font color="#707070">SISSA lectures, Lecture 3 &mdash; notes:
+          Lecture 3, &sect;&sect;4&ndash;6</font></font>
         </p>
       </div>
     </div>
@@ -83,16 +83,16 @@
 
       </p>
       <p>
-        <b>So far.</b> A Euclidean field is a measure on <span style="color: #620000">\(\mathcal{S}'
-        (\mathcal{M})\)</span>; the GFF <span style="color: #620000">\(\mu_m\)</span> is its
-        Gaussian part; local operators are functions of <span style="color: #620000">\(\varphi\)</span>.
-        Wick powers <span style="color: #620000">\(: \varphi^n\)</span>: are random
-        distributions iff <span style="color: #620000">\(n (d - 2) < d\)</span>, and
+        <b>So far.</b> A Euclidean field is a measure on <font color="#620000">\(\mathcal{S}'
+        (\mathcal{M})\)</font>; the GFF <font color="#620000">\(\mu_m\)</font> is its
+        Gaussian part; local operators are functions of <font color="#620000">\(\varphi\)</font>.
+        Wick powers <font color="#620000">\(: \varphi^n\)</font>: are random
+        distributions iff <font color="#620000">\(n (d - 2) < d\)</font>, and
         <strong>not even tight</strong> otherwise.
       </p>
       <p>
         <b>Today.</b> The GFF as an equilibrium; then index everything by a
-        <strong>resolution</strong> <span style="color: #620000">\(t \in [0, \infty)\)</span>.
+        <strong>resolution</strong> <font color="#620000">\(t \in [0, \infty)\)</font>.
       </p>
       <ol>
         <li>
@@ -105,7 +105,7 @@
         <li>
           <p>
             The GFF as the terminal value of a martingale of smooth fields;
-            <strong>observables</strong> <span style="color: #620000">\(=\)</span>
+            <strong>observables</strong> <font color="#620000">\(=\)</font>
             martingales.
           </p>
         </li>
@@ -125,14 +125,14 @@
 
       </p>
       <p>
-        <span style="font-size: 135.0%"><b><span style="color: #800000">Parabolic stochastic
-        quantisation</span></b></span>
+        <font style="font-size: 135.0%"><b><font color="#800000">Parabolic stochastic
+        quantisation</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
 
       </p>
       <p>
-        <span style="color: #707070">Lecture 3</span>
+        <font color="#707070">Lecture 3</font>
       </p>
       <p>
 
@@ -146,83 +146,84 @@
 
       </p>
       <p>
-        Finite dimensions: <span style="color: #620000">\(\mathrm{d} X_t = - \nabla S (X_t)
+        Finite dimensions: <font color="#620000">\(\mathrm{d} X_t = - \nabla S (X_t)
         \mathrm{d} t + \sqrt{2} \hspace{0.17em}
-\mathrm{d} B_t\)</span> has
-        generator <span style="color: #620000">\(\mathcal{L}= \Delta - \nabla S \cdot
-        \nabla\)</span> and
+\mathrm{d} B_t\)</font> has
+        generator <font color="#620000">\(\mathcal{L}= \Delta - \nabla S \cdot
+        \nabla\)</font> and
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathcal{L}^{\ast} \mathrm{e}^{- S} = \nabla \cdot
         (\nabla \mathrm{e}^{- S} +
 \mathrm{e}^{- S} \nabla S) = 0 :\)
-      </div>
+      </center>
       <p>
-        the Gibbs measure <span style="color: #620000">\(\mathrm{e}^{- S} \mathrm{d} x /
-        Z\)</span> is invariant.
+        the Gibbs measure <font color="#620000">\(\mathrm{e}^{- S} \mathrm{d} x /
+        Z\)</font> is invariant.
       </p>
       <p>
         Apply this to the Euclidean action, with a fictitious
-        <strong>stochastic time</strong> <span style="color: #620000">\(t\)</span>:
+        <strong>stochastic time</strong> <font color="#620000">\(t\)</font>:
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \partial_t \Phi = - (m^2 - \Delta) \Phi - V' (\Phi) +
         \sqrt{2}
 \hspace{0.17em} \xi \qquad \text{on } \mathbb{R}  \times
         \mathcal{M},\)
-      </div>
+      </center>
       <p>
-        <span style="color: #620000">\(\xi\)</span> space-time white noise: <span style="color: #620000">\(\mathbb{E}
+        <font color="#620000">\(\xi\)</font> space-time white noise: <font color="#620000">\(\mathbb{E}
         [\xi (u) \xi (v)] = \langle u, v \rangle_{L^2  (\mathbb{R}
         \times
-\mathcal{M})}\)</span>. (stationary solutions)
+\mathcal{M})}\)</font>. (stationary solutions)
       </p>
       <p>
-        For <span style="color: #620000">\(V = 0\)</span>: the stochastic heat equation
+        For <font color="#620000">\(V = 0\)</font>: the stochastic heat equation
         (infinite-dimensional OU process).
       </p>
       <p>
         History: Parisi&ndash;Wu 1981 (gauge theories without gauge fixing);
         physics review Damgaard&ndash;H&uuml;ffel 1987&ndash;88; first
-        mathematical construction for <span style="color: #620000">\(P (\varphi)_2\)</span> on
-        <span style="color: #620000">\(\mathbb{T}^2\)</span>: Jona-Lasinio&ndash;Mitter 1985.
+        mathematical construction for <font color="#620000">\(P (\varphi)_2\)</font> on
+        <font color="#620000">\(\mathbb{T}^2\)</font>: Jona-Lasinio&ndash;Mitter 1985.
         Review: Gubinelli, <em>Encyclopedia of Mathematical Physics</em> 2025.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        DS <span style="color: #620000">\(\Rightarrow\)</span> invariance
+        DS <font color="#620000">\(\Rightarrow\)</font> invariance
       </div>
       <p>
 
       </p>
       <p>
-        It&ocirc;'s formula: for <span style="color: #620000">\(F = g (\varphi (f_1), \ldots,
-        \varphi (f_n))\)</span> the generator is
+        It&ocirc;'s formula: for <font color="#620000">\(F = g (\varphi (f_1), \ldots,
+        \varphi (f_n))\)</font> the generator is
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathcal{L}F (\varphi) = \sum_{i, j} \langle f_i, f_j
         \rangle  \hspace{0.17em}
 \partial_{ij} g (\ldots) - \sum_i \varphi
         (Af_i)  \hspace{0.17em} \partial_i g
 (\ldots) .\)
-      </div>
+      </center>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Proposition.
-          </strong></span></span><i><span style="color: #620000">\(\mathbb{E}_{\mu_m}  [G
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><font color="#620000">\(\mathbb{E}_{\mu_m}  [G
           \hspace{0.17em} \mathcal{L}F] = -\mathbb{E}_{\mu_m}
 [\langle DG, DF
-          \rangle_{L^2 (\mathcal{M})}]\)</span> for <span style="color: #620000">\(F, G \in
-          \mathcal{F}C^{\infty}_b\)</span>; in particular <span style="color: #620000">\(\mathbb{E}_{\mu_m}
-          [\mathcal{L}F] = 0\)</span>.</i>
+          \rangle_{L^2 (\mathcal{M})}]\)</font> for <font color="#620000">\(F, G \in
+          \mathcal{F}C^{\infty}_b\)</font>; in particular <font color="#620000">\(\mathbb{E}_{\mu_m}
+          [\mathcal{L}F] = 0\)</font>.</i>
         </p>
       </div>
       <p>
-        <b>Proof.</b> Apply DS to <span style="color: #620000">\(k \hspace{0.17em} \partial_i
-        g\)</span> with <span style="color: #620000">\(h = f_i\)</span> and sum over <span style="color: #620000">\(i\)</span>:
+        <b>Proof.</b> Apply DS to <font color="#620000">\(k \hspace{0.17em} \partial_i
+        g\)</font> with <font color="#620000">\(h = f_i\)</font> and sum over <font
+        color="#620000">\(i\)</font>:
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \sum_i \mathbb{E} [k \hspace{0.17em} \partial_i g
         \hspace{0.17em} \varphi
 (Af_i)] = \sum_{i, j} \langle f_i, f_j \rangle
@@ -230,7 +231,7 @@
 \hspace{0.17em} \partial_i g + k
         \hspace{0.17em} \partial_{ij} g \right] .
 \qquad\)
-      </div>
+      </center>
       <p>
         <strong>Static (DS) and dynamic (Langevin) characterisations are two
         faces of the same integration by parts.</strong>
@@ -245,55 +246,56 @@
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Theorem.
-          </strong></span></span><i>For <span style="color: #620000">\(t \in
-          \mathbb{R}\)</span>, <span style="color: #620000">\(f \in \mathcal{S}
-          (\mathcal{M})\)</span> let <span style="color: #620000">\(\Phi_t (f) = \sqrt{2}
-          \hspace{0.17em} \xi (K_{t, f})\)</span>,  <span style="color: #620000">\(K_{t, f}
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i>For <font color="#620000">\(t \in
+          \mathbb{R}\)</font>, <font color="#620000">\(f \in \mathcal{S}
+          (\mathcal{M})\)</font> let <font color="#620000">\(\Phi_t (f) = \sqrt{2}
+          \hspace{0.17em} \xi (K_{t, f})\)</font>,  <font color="#620000">\(K_{t, f}
           (r, x) = \mathbb{1}_{r < t} (\mathrm{e}^{- (t - r) A} f)
-          (x)\)</span>.</i>
+          (x)\)</font>.</i>
         </p>
         <div style="margin-bottom: 1em">
-          <div class="block-italic"><ol>
+          <i><ol>
             <li>
               <p>
-                <span style="color: #620000">\(\mathbb{E} [\Phi_t (f) \Phi_s (g)] = \langle f,
+                <font color="#620000">\(\mathbb{E} [\Phi_t (f) \Phi_s (g)] = \langle f,
                 \mathrm{e}^{- |t - s|A} Cg
-\rangle\)</span>: stationary, and
-                <span style="color: #620000">\(\text{Law} (\Phi_t) = \mu_m\)</span> for every
-                <span style="color: #620000">\(t\)</span>.
+\rangle\)</font>: stationary, and
+                <font color="#620000">\(\text{Law} (\Phi_t) = \mu_m\)</font> for every
+                <font color="#620000">\(t\)</font>.
               </p>
             </li>
             <li>
               <p>
-                <span style="color: #620000">\(\Phi\)</span> is a mild and weak solution: for
-                <span style="color: #620000">\(s < t\)</span>, <span style="color: #620000">\(\Phi_t (h) =
+                <font color="#620000">\(\Phi\)</font> is a mild and weak solution: for
+                <font color="#620000">\(s < t\)</font>, <font color="#620000">\(\Phi_t (h) =
                 \Phi_s (h) - \int_s^t \Phi_r  (Ah) \mathrm{d} r + \sqrt{2}
 
-\hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)\)</span>.
+\hspace{0.17em} \xi (\mathbb{1}_{(s, t)} \otimes h)\)</font>.
               </p>
             </li>
             <li>
               <p>
-                From any initial datum <span style="color: #620000">\(\Psi_0 \in \mathcal{S}'
-                (\mathcal{M})\)</span> independent of <span style="color: #620000">\(\xi\)</span>:
-                <span style="color: #620000">\(\mathbb{E} \hspace{0.17em}
+                From any initial datum <font color="#620000">\(\Psi_0 \in \mathcal{S}'
+                (\mathcal{M})\)</font> independent of <font color="#620000">\(\xi\)</font>:
+                <font color="#620000">\(\mathbb{E} \hspace{0.17em}
                 \mathrm{e}^{\mathrm{i} \Psi_t (f)} \to
 \mathrm{e}^{-
-                \frac{1}{2}  \langle f, Cf \rangle}\)</span>. Hence <span style="color: #620000">\(\mu_m\)</span> is the <strong>unique invariant
+                \frac{1}{2}  \langle f, Cf \rangle}\)</font>. Hence <font
+                color="#620000">\(\mu_m\)</font> is the <strong>unique invariant
                 measure</strong>.
               </p>
             </li>
-          </ol></div>
+          </ol></i>
         </div>
       </div>
       <p>
-        <b>Proof of (a).</b> <span style="color: #620000">\(\langle K_{t, f}, K_{s, g} \rangle
+        <b>Proof of (a).</b> <font color="#620000">\(\langle K_{t, f}, K_{s, g} \rangle
         = \int_{- \infty}^{t \wedge s} \langle f,
 \mathrm{e}^{- (t + s - 2 r)
         A} g \rangle \mathrm{d} r = \langle f,
 \mathrm{e}^{- |t - s|A} (2
-        A)^{- 1} g \rangle\)</span>; an <span style="color: #620000">\(\mathcal{S}'\)</span>-valued
+        A)^{- 1} g \rangle\)</font>; an <font color="#620000">\(\mathcal{S}'\)</font>-valued
         version exists by It&ocirc;&ndash;Nawata/Mitoma regularisation.
       </p>
     </div>
@@ -305,35 +307,37 @@
 
       </p>
       <p>
-        <b>(a), on <span style="color: #620000">\(\mathbb{T}^d\)</span>.</b> The modes <span style="color: #620000">\(\Phi_t (e_n)\)</span> are independent stationary OU processes
-        <span style="color: #620000">\(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
-        \mathrm{d} B\)</span> with variance <span style="color: #620000">\(\lambda_n^{-
-        1}\)</span>.
+        <b>(a), on <font color="#620000">\(\mathbb{T}^d\)</font>.</b> The modes <font
+        color="#620000">\(\Phi_t (e_n)\)</font> are independent stationary OU processes
+        <font color="#620000">\(\mathrm{d} X = - \lambda_n X \mathrm{d} t + \sqrt{2}
+        \mathrm{d} B\)</font> with variance <font color="#620000">\(\lambda_n^{-
+        1}\)</font>.
       </p>
       <p>
-        <b>(b)</b> Mild form from the semigroup identity <span style="color: #620000">\(K_{t,
+        <b>(b)</b> Mild form from the semigroup identity <font color="#620000">\(K_{t,
         h} = K_{s, \mathrm{e}^{- (t - s) A} h} + \mathbb{1}_{(s,
         t)}
-\mathrm{e}^{- (t - \cdot) A} h\)</span>; weak form by stochastic
+\mathrm{e}^{- (t - \cdot) A} h\)</font>; weak form by stochastic
         Fubini (Exercise 4.3).
       </p>
       <p>
         <b>(c)</b> By independence,
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathbb{E} \hspace{0.17em} \mathrm{e}^{\mathrm{i}
         \Psi_t (f)} =\mathbb{E}
 [\mathrm{e}^{\mathrm{i} \Psi_0 (\mathrm{e}^{-
         tA} f)}] \hspace{0.17em}
 \mathrm{e}^{- \frac{1}{2}  \langle f, (1 -
         \mathrm{e}^{- 2 tA}) Cf \rangle} .\)
-      </div>
+      </center>
       <p>
-        For <span style="color: #620000">\(m > 0\)</span>, <span style="color: #620000">\(\mathrm{e}^{- tA} f
-        \to 0\)</span> in <span style="color: #620000">\(\mathcal{S} (\mathcal{M})\)</span>,
-        so <span style="color: #620000">\(\Psi_0 (\mathrm{e}^{- tA} f) \to 0\)</span> a.s. If
-        <span style="color: #620000">\(\Psi_0 \sim \mu_m\)</span> the product is exactly <span style="color: #620000">\(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\)</span>
-        (invariance); an invariant <span style="color: #620000">\(\nu\)</span> must have the
+        For <font color="#620000">\(m > 0\)</font>, <font color="#620000">\(\mathrm{e}^{- tA} f
+        \to 0\)</font> in <font color="#620000">\(\mathcal{S} (\mathcal{M})\)</font>,
+        so <font color="#620000">\(\Psi_0 (\mathrm{e}^{- tA} f) \to 0\)</font> a.s. If
+        <font color="#620000">\(\Psi_0 \sim \mu_m\)</font> the product is exactly <font
+        color="#620000">\(\mathrm{e}^{- \frac{1}{2}  \langle f, Cf \rangle}\)</font>
+        (invariance); an invariant <font color="#620000">\(\nu\)</font> must have the
         same characteristic functional.
       </p>
     </div>
@@ -347,18 +351,20 @@
       <ul>
         <li>
           <p>
-            As a field on <span style="color: #620000">\(\mathbb{R} \times
-            \mathcal{M}\)</span>, the stationary solution has covariance <span style="color: #620000">\(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
+            As a field on <font color="#620000">\(\mathbb{R} \times
+            \mathcal{M}\)</font>, the stationary solution has covariance <font
+            color="#620000">\(2 (\partial_t + A)^{- 1}  (- \partial_t + A)^{- 1} = 2 (-
             \partial_t^2 +
-A^2)^{- 1}\)</span>; its equal-time slice is <span style="color: #620000">\(2 \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}
+A^2)^{- 1}\)</font>; its equal-time slice is <font
+            color="#620000">\(2 \int_{\mathbb{R}} (\theta^2 + A^2)^{- 1}
             \frac{\mathrm{d} \theta}{2 \pi} =
-A^{- 1}\)</span>.
+A^{- 1}\)</font>.
           </p>
         </li>
         <li>
           <p>
-            The stochastic time <span style="color: #620000">\(t\)</span> has nothing to do
-            with the Euclidean time <span style="color: #620000">\(\tau\)</span>.
+            The stochastic time <font color="#620000">\(t\)</font> has nothing to do
+            with the Euclidean time <font color="#620000">\(\tau\)</font>.
           </p>
         </li>
         <li>
@@ -368,14 +374,14 @@ A^{- 1}\)</span>.
           <ul>
             <li>
               <p>
-                <span style="color: #620000">\(\Phi^4_2\)</span>: Da Prato&ndash;Debussche
+                <font color="#620000">\(\Phi^4_2\)</font>: Da Prato&ndash;Debussche
                 2003 (also Jona-Lasinio&ndash;Mitter,
                 Albeverio&ndash;R&ouml;ckner).
               </p>
             </li>
             <li>
               <p>
-                <span style="color: #620000">\(\Phi^4_3\)</span>: Hairer 2014;
+                <font color="#620000">\(\Phi^4_3\)</font>: Hairer 2014;
                 Gubinelli&ndash;Imkeller&ndash;Perkowski 2015;
                 Catellier&ndash;Chouk 2018.
               </p>
@@ -384,7 +390,7 @@ A^{- 1}\)</span>.
               <p>
                 Global bounds: Mourrat&ndash;Weber 2017;
                 Gubinelli&ndash;Hofmanov&aacute; 2019; construction of
-                Euclidean <span style="color: #620000">\(\Phi^4_3\)</span> via the dynamics:
+                Euclidean <font color="#620000">\(\Phi^4_3\)</font> via the dynamics:
                 Gubinelli&ndash;Hofmanov&aacute; 2021.
               </p>
             </li>
@@ -400,14 +406,14 @@ A^{- 1}\)</span>.
 
       </p>
       <p>
-        <span style="font-size: 135.0%"><b><span style="color: #800000">Elliptic stochastic
-        quantisation</span></b></span>
+        <font style="font-size: 135.0%"><b><font color="#800000">Elliptic stochastic
+        quantisation</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
 
       </p>
       <p>
-        <span style="color: #707070">Lecture 3</span>
+        <font color="#707070">Lecture 3</font>
       </p>
       <p>
 
@@ -421,25 +427,25 @@ A^{- 1}\)</span>.
 
       </p>
       <p>
-        The elliptic SPDE in <span style="color: #620000">\(d + 2\)</span> dimensions
+        The elliptic SPDE in <font color="#620000">\(d + 2\)</font> dimensions
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle (m^2 - \Delta_{\mathbb{R}^2 \times \mathcal{M}}) \Psi
         + V' (\Psi) = \zeta,
 \qquad \zeta \text{white noise on } \mathbb{R}^2
         \times \mathcal{M},\)
-      </div>
+      </center>
       <p>
-        is related to the <span style="color: #620000">\(d\)</span>-dimensional Gibbs measure:
+        is related to the <font color="#620000">\(d\)</font>-dimensional Gibbs measure:
         formally
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \text{Law} (\Psi (z, \cdot)) \propto \exp \left( - 4
         \pi \left[ \tfrac{1}{2}
 \langle \varphi, A \varphi \rangle + \int V
         (\varphi) \right] \right)
 \mathcal{D} \varphi .\)
-      </div>
+      </center>
       <ul>
         <li>
           <p>
@@ -449,16 +455,17 @@ A^{- 1}\)</span>.
         </li>
         <li>
           <p>
-            Rigorous nonlinear results: <span style="color: #620000">\(d = 0\)</span>
+            Rigorous nonlinear results: <font color="#620000">\(d = 0\)</font>
             (Albeverio&ndash;De Vecchi&ndash;Gubinelli 2020); polynomial on
-            <span style="color: #620000">\(\mathbb{T}^2\)</span> and exponential on <span style="color: #620000">\(\mathbb{R}^2\)</span> (ADG 2021); elliptic <span style="color: #620000">\(\Phi^4\)</span>
+            <font color="#620000">\(\mathbb{T}^2\)</font> and exponential on <font
+            color="#620000">\(\mathbb{R}^2\)</font> (ADG 2021); elliptic <font color="#620000">\(\Phi^4\)</font>
             in 4 and 5 dimensions (Gubinelli&ndash;Hofmanov&aacute; 2019).
           </p>
         </li>
         <li>
           <p>
-            For <span style="color: #620000">\(V = 0\)</span> it is elementary, and it
-            explains the <span style="color: #620000">\(4 \pi\)</span>.
+            For <font color="#620000">\(V = 0\)</font> it is elementary, and it
+            explains the <font color="#620000">\(4 \pi\)</font>.
           </p>
         </li>
       </ul>
@@ -472,86 +479,88 @@ A^{- 1}\)</span>.
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Theorem.
-          </strong></span></span><i>Let <span style="color: #620000">\(\textsf{L} = m^2 -
+          <font color="#800000"><font color="#800000"><strong>Theorem.
+          </strong></font></font><i>Let <font color="#620000">\(\textsf{L} = m^2 -
           \Delta_{\mathbb{R}^2 \times \mathcal{M}} = -
 \Delta_{\mathbb{R}^2} +
-          A\)</span> and <span style="color: #620000">\(\zeta\)</span> white noise on <span style="color: #620000">\(\mathbb{R}^2 \times \mathcal{M}\)</span>.</i>
+          A\)</font> and <font color="#620000">\(\zeta\)</font> white noise on <font
+          color="#620000">\(\mathbb{R}^2 \times \mathcal{M}\)</font>.</i>
         </p>
         <div style="margin-bottom: 1em">
-          <div class="block-italic"><ol>
+          <i><ol>
             <li>
               <p>
-                <span style="color: #620000">\(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
-                \zeta\)</span> has a unique tempered solution <span style="color: #620000">\(\Psi
+                <font color="#620000">\(\textsf{L} \Psi = \sqrt{4 \pi}  \hspace{0.17em}
+                \zeta\)</font> has a unique tempered solution <font color="#620000">\(\Psi
                 (u) = \sqrt{4 \pi}  \hspace{0.17em} \zeta (\textsf{L}^{- 1}
-                u)\)</span>.
+                u)\)</font>.
               </p>
             </li>
             <li>
               <p>
-                <span style="color: #620000">\(K_{z, f} = \textsf{L}^{- 1} (\delta_z \otimes
-                f) \in L^2\)</span>, continuous in <span style="color: #620000">\(z\)</span>;
-                <span style="color: #620000">\(\Psi (z, f) = \sqrt{4 \pi}  \hspace{0.17em}
-                \zeta (K_{z, f})\)</span> is the section of <span style="color: #620000">\(\Psi\)</span>
-                at <span style="color: #620000">\(z\)</span>.
+                <font color="#620000">\(K_{z, f} = \textsf{L}^{- 1} (\delta_z \otimes
+                f) \in L^2\)</font>, continuous in <font color="#620000">\(z\)</font>;
+                <font color="#620000">\(\Psi (z, f) = \sqrt{4 \pi}  \hspace{0.17em}
+                \zeta (K_{z, f})\)</font> is the section of <font color="#620000">\(\Psi\)</font>
+                at <font color="#620000">\(z\)</font>.
               </p>
             </li>
             <li>
               <p>
-                <span style="color: #620000">\(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle
-                f, Cg \rangle\)</span>: every section has law <span style="color: #620000">\(\mu_m\)</span>,
-                and <span style="color: #620000">\((\Psi (z, \cdot))_{z \in
-                \mathbb{R}^2}\)</span> is stationary and isotropic.
+                <font color="#620000">\(\mathbb{E} [\Psi (z, f) \Psi (z, g)] = \langle
+                f, Cg \rangle\)</font>: every section has law <font color="#620000">\(\mu_m\)</font>,
+                and <font color="#620000">\((\Psi (z, \cdot))_{z \in
+                \mathbb{R}^2}\)</font> is stationary and isotropic.
               </p>
             </li>
-          </ol></div>
+          </ol></i>
         </div>
       </div>
       <p>
-        <b>Uniqueness:</b> <span style="color: #620000">\(\textsf{L}\)</span> maps <span style="color: #620000">\(\mathcal{S}\)</span> onto <span style="color: #620000">\(\mathcal{S}\)</span>,
-        so <span style="color: #620000">\(D (\textsf{L} u) = 0\)</span> <span style="color: #620000">\(\forall
-        u\)</span> forces <span style="color: #620000">\(D = 0\)</span>.
+        <b>Uniqueness:</b> <font color="#620000">\(\textsf{L}\)</font> maps <font
+        color="#620000">\(\mathcal{S}\)</font> onto <font color="#620000">\(\mathcal{S}\)</font>,
+        so <font color="#620000">\(D (\textsf{L} u) = 0\)</font> <font color="#620000">\(\forall
+        u\)</font> forces <font color="#620000">\(D = 0\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Proof: where <span style="color: #620000">\(4 \pi\)</span> comes from
+        Proof: where <font color="#620000">\(4 \pi\)</font> comes from
       </div>
       <p>
 
       </p>
       <p>
-        Fourier transform in <span style="color: #620000">\(z\)</span> only: <span style="color: #620000">\(\widehat{K_{z,
+        Fourier transform in <font color="#620000">\(z\)</font> only: <font color="#620000">\(\widehat{K_{z,
         f}} (q) = \mathrm{e}^{- \mathrm{i} q \cdot z} (|q|^2 + A)^{-
         1}
-f\)</span>. By Plancherel and the spectral theorem,
+f\)</font>. By Plancherel and the spectral theorem,
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \langle K_{z, f}, K_{z, g} \rangle = \left\langle f,
         \left[
 \int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2} (|q|^2 +
         A)^{- 2} \right] g
 \right\rangle = \frac{1}{4 \pi}  \langle f, A^{- 1}
         g \rangle,\)
-      </div>
+      </center>
       <p>
         since
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \int_{\mathbb{R}^2} \frac{\mathrm{d} q}{(2 \pi)^2}
         \frac{1}{(|q|^2 + a)^2} =
 \frac{1}{2 \pi}  \int_0^{\infty} \frac{r
         \hspace{0.17em} \mathrm{d} r}{(r^2 +
 a)^2} = \frac{1}{4 \pi a} .\)
-      </div>
+      </center>
       <p>
-        Multiply by <span style="color: #620000">\(4 \pi\)</span>. Stationarity and isotropy:
-        the covariance <span style="color: #620000">\(4 \pi \int \mathrm{e}^{\mathrm{i} q
+        Multiply by <font color="#620000">\(4 \pi\)</font>. Stationarity and isotropy:
+        the covariance <font color="#620000">\(4 \pi \int \mathrm{e}^{\mathrm{i} q
         \cdot (z - z')} \langle f, (|q|^2 + A)^{-
 2} g \rangle
-        \frac{\mathrm{d} q}{(2 \pi)^2}\)</span> depends only on <span style="color: #620000">\(|z
-        - z' |\)</span>.
+        \frac{\mathrm{d} q}{(2 \pi)^2}\)</font> depends only on <font color="#620000">\(|z
+        - z' |\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -562,46 +571,46 @@ a)^2} = \frac{1}{4 \pi a} .\)
 
       </p>
       <p>
-        Field on <span style="color: #620000">\(\mathbb{R}^k \times \mathcal{M}\)</span> with
-        covariance <span style="color: #620000">\((- \Delta_{\mathbb{R}^k} + A)^{-
-        p}\)</span>; its slice <span style="color: #620000">\(\{0\} \times
-        \mathcal{M}\)</span> has covariance
+        Field on <font color="#620000">\(\mathbb{R}^k \times \mathcal{M}\)</font> with
+        covariance <font color="#620000">\((- \Delta_{\mathbb{R}^k} + A)^{-
+        p}\)</font>; its slice <font color="#620000">\(\{0\} \times
+        \mathcal{M}\)</font> has covariance
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle c_{k, p}  \hspace{0.17em} A^{k / 2 - p}, \qquad c_{k,
         p} = \frac{\Gamma (p -
 \frac{k}{2})}{(4 \pi)^{k / 2} \Gamma (p)} .\)
-      </div>
+      </center>
       <p>
         <table style="display: inline-table; vertical-align: middle">
           <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><span style="color: #620000">\((k, p)\)</span></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\((k, p)\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">slice covariance</td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">interpretation</td>
           </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\((1, 1)\)</span></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\(\frac{1}{2} A^{- 1 / 2}\)</span></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">time-zero field, <span style="color: #620000">\((2 \omega)^{-
-            1}\)</span></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\((1, 1)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\frac{1}{2} A^{- 1 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">time-zero field, <font color="#620000">\((2 \omega)^{-
+            1}\)</font></td>
           </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\((2, 2)\)</span></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\((4 \pi)^{- 1} A^{- 1}\)</span></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\((2, 2)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\((4 \pi)^{- 1} A^{- 1}\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">elliptic stochastic quantisation</td>
           </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\((1, 1), A \to A^2\)</span></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><span style="color: #620000">\(2 (- \partial_t^2 + A^2)^{- 1} \to A^{-
-            1}\)</span></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\((1, 1), A \to A^2\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(2 (- \partial_t^2 + A^2)^{- 1} \to A^{-
+            1}\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">Langevin dynamics</td>
           </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><span style="color: #620000">\((1, 2)\)</span></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><span style="color: #620000">\(\propto A^{- 3 / 2}\)</span></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\((1, 2)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\propto A^{- 3 / 2}\)</font></td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid">not a GFF</td>
           </tr></tbody>
         </table>
       </p>
       <p>
-        The GFF arises iff <span style="color: #620000">\(p = 1 + \frac{k}{2}\)</span>. For
-        <span style="color: #620000">\(\mathcal{M}=\mathbb{R}^d\)</span>, every
+        The GFF arises iff <font color="#620000">\(p = 1 + \frac{k}{2}\)</font>. For
+        <font color="#620000">\(\mathcal{M}=\mathbb{R}^d\)</font>, every
         codimension-two slice of the elliptic field is a GFF.
       </p>
     </div>
@@ -616,16 +625,16 @@ a)^2} = \frac{1}{4 \pi a} .\)
         <li>
           <p>
             Wilson&ndash;Kadanoff: physics is organised <strong>scale by
-            scale</strong>. The measure-on-<span style="color: #620000">\(\mathcal{S}'\)</span>
+            scale</strong>. The measure-on-<font color="#620000">\(\mathcal{S}'\)</font>
             picture hides this, and forces singular objects from the start.
           </p>
         </li>
         <li>
           <p>
-            Observe the field at resolution <span style="color: #620000">\(t\)</span>: a
-            <strong>smooth</strong> function <span style="color: #620000">\(\varphi_t\)</span>.
-            Information at resolution <span style="color: #620000">\(t\)</span>: <span style="color: #620000">\(\mathcal{F}_t
-            = \sigma (\varphi_s : s \leqslant t)\)</span>.
+            Observe the field at resolution <font color="#620000">\(t\)</font>: a
+            <strong>smooth</strong> function <font color="#620000">\(\varphi_t\)</font>.
+            Information at resolution <font color="#620000">\(t\)</font>: <font color="#620000">\(\mathcal{F}_t
+            = \sigma (\varphi_s : s \leqslant t)\)</font>.
           </p>
         </li>
         <li>
@@ -654,14 +663,14 @@ a)^2} = \frac{1}{4 \pi a} .\)
 
       </p>
       <p>
-        <span style="font-size: 135.0%"><b><span style="color: #800000">Setting: covariance profiles and
-        observables</span></b></span>
+        <font style="font-size: 135.0%"><b><font color="#800000">Setting: covariance profiles and
+        observables</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
 
       </p>
       <p>
-        <span style="color: #707070">Lecture 3</span>
+        <font color="#707070">Lecture 3</font>
       </p>
       <p>
 
@@ -676,20 +685,20 @@ a)^2} = \frac{1}{4 \pi a} .\)
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Definition.
-          </strong></span></span><i>A <strong>covariance profile</strong> is a
-          family <span style="color: #620000">\((Q_t)_{t \geqslant 0}\)</span> of symmetric,
-          translation invariant operators with <span style="color: #620000">\(Q_0 =
-          0\)</span>, <span style="color: #620000">\(\dot{Q}_t := \partial_t Q_t \geqslant
-          0\)</span>, <span style="color: #620000">\(Q_t \to C = (m^2 - \Delta)^{- 1} = A^{-
-          1}\)</span>, and smooth kernels for <span style="color: #620000">\(t <
-          \infty\)</span>.</i>
+          <font color="#800000"><font color="#800000"><strong>Definition.
+          </strong></font></font><i>A <strong>covariance profile</strong> is a
+          family <font color="#620000">\((Q_t)_{t \geqslant 0}\)</font> of symmetric,
+          translation invariant operators with <font color="#620000">\(Q_0 =
+          0\)</font>, <font color="#620000">\(\dot{Q}_t := \partial_t Q_t \geqslant
+          0\)</font>, <font color="#620000">\(Q_t \to C = (m^2 - \Delta)^{- 1} = A^{-
+          1}\)</font>, and smooth kernels for <font color="#620000">\(t <
+          \infty\)</font>.</i>
         </p>
       </div>
       <p>
         <b>Heat profile:</b>
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle Q_t = C \hspace{0.17em} \mathrm{e}^{- A / t^2}, \qquad
         \dot{Q}_t =
 \frac{2}{t^3} \mathrm{e}^{- A / t^2}, \qquad \dot{Q}_t  (x
@@ -698,55 +707,57 @@ a)^2} = \frac{1}{4 \pi a} .\)
         \hspace{0.17em} \mathrm{e}^{-
 t^2  |x - y|^2 / 4} \text{on }
         \mathbb{R}^d .\)
-      </div>
+      </center>
       <p>
-        <span style="color: #620000">\(\dot{Q}_t\)</span> lives on distances <span style="color: #620000">\(\lesssim
-        1 / t\)</span>; <span style="color: #620000">\(Q_t\)</span> keeps the modes <span style="color: #620000">\(|k| \lesssim t\)</span>: <span style="color: #620000">\(t\)</span> is a
+        <font color="#620000">\(\dot{Q}_t\)</font> lives on distances <font color="#620000">\(\lesssim
+        1 / t\)</font>; <font color="#620000">\(Q_t\)</font> keeps the modes <font
+        color="#620000">\(|k| \lesssim t\)</font>: <font color="#620000">\(t\)</font> is a
         <strong>momentum scale</strong>.
       </p>
       <p>
-        Others: sharp Fourier cutoff <span style="color: #620000">\(\mathbb{1}_{|k| \leqslant
-        t}  (|k|^2 + m^2)^{- 1}\)</span>; <strong>finite range</strong>
-        decompositions, <span style="color: #620000">\(\dot{Q}_t  (x, y) = 0\)</span> for
-        <span style="color: #620000">\(|x - y| \geqslant 1 / t\)</span>.
+        Others: sharp Fourier cutoff <font color="#620000">\(\mathbb{1}_{|k| \leqslant
+        t}  (|k|^2 + m^2)^{- 1}\)</font>; <strong>finite range</strong>
+        decompositions, <font color="#620000">\(\dot{Q}_t  (x, y) = 0\)</font> for
+        <font color="#620000">\(|x - y| \geqslant 1 / t\)</font>.
       </p>
       <p>
-        Notation: <span style="color: #620000">\(c_t = Q_t  (x, x)\)</span>, <span style="color: #620000">\(Q_{T,
-        t} = Q_T - Q_t\)</span>. For <span style="color: #620000">\(d \geqslant 2\)</span>,
-        <span style="color: #620000">\(c_t \to \infty\)</span> (<span style="color: #620000">\(\frac{1}{2 \pi}
-        \log t\)</span> in <span style="color: #620000">\(d = 2\)</span>, <span style="color: #620000">\(\asymp
-        t^{d - 2}\)</span> in <span style="color: #620000">\(d \geqslant 3\)</span>).
+        Notation: <font color="#620000">\(c_t = Q_t  (x, x)\)</font>, <font color="#620000">\(Q_{T,
+        t} = Q_T - Q_t\)</font>. For <font color="#620000">\(d \geqslant 2\)</font>,
+        <font color="#620000">\(c_t \to \infty\)</font> (<font color="#620000">\(\frac{1}{2 \pi}
+        \log t\)</font> in <font color="#620000">\(d = 2\)</font>, <font color="#620000">\(\asymp
+        t^{d - 2}\)</font> in <font color="#620000">\(d \geqslant 3\)</font>).
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The field at resolution <span style="color: #620000">\(t\)</span>
+        The field at resolution <font color="#620000">\(t\)</font>
       </div>
       <p>
 
       </p>
       <p>
-        <span style="color: #620000">\(W\)</span> cylindrical Brownian motion on <span style="color: #620000">\(L^2
-        (\mathcal{M})\)</span>,
+        <font color="#620000">\(W\)</font> cylindrical Brownian motion on <font color="#620000">\(L^2
+        (\mathcal{M})\)</font>,
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle X_t := \int_0^t \dot{Q}_s^{1 / 2} \hspace{0.17em}
         \mathrm{d} W_s .\)
-      </div>
+      </center>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Proposition.
-          </strong></span></span><i><span style="color: #620000">\(X_t\)</span> is a smooth
-          Gaussian field, <span style="color: #620000">\(\text{Law} (X_t) =
-          \mu^{Q_t}\)</span>; <span style="color: #620000">\((X_t (x))_t\)</span> is a
-          continuous martingale with <span style="color: #620000">\(\mathrm{d} \langle X (x),
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i><font color="#620000">\(X_t\)</font> is a smooth
+          Gaussian field, <font color="#620000">\(\text{Law} (X_t) =
+          \mu^{Q_t}\)</font>; <font color="#620000">\((X_t (x))_t\)</font> is a
+          continuous martingale with <font color="#620000">\(\mathrm{d} \langle X (x),
           X (y) \rangle_t = \dot{Q}_t  (x, y) \hspace{0.17em}
 \mathrm{d}
-          t\)</span>; <span style="color: #620000">\(X_t \to X_{\infty}\)</span> in <span style="color: #620000">\(H^{- s}_{\text{loc}}\)</span>, <span style="color: #620000">\(s >
-          \frac{d}{2} - 1\)</span>, with <span style="color: #620000">\(\text{Law}
-          (X_{\infty}) = \mu_m\)</span>; <span style="color: #620000">\(X_T - X_t \perp
-          \mathcal{F}_t\)</span>, with law <span style="color: #620000">\(\mu^{Q_{T,
-          t}}\)</span>.</i>
+          t\)</font>; <font color="#620000">\(X_t \to X_{\infty}\)</font> in <font
+          color="#620000">\(H^{- s}_{\text{loc}}\)</font>, <font color="#620000">\(s >
+          \frac{d}{2} - 1\)</font>, with <font color="#620000">\(\text{Law}
+          (X_{\infty}) = \mu_m\)</font>; <font color="#620000">\(X_T - X_t \perp
+          \mathcal{F}_t\)</font>, with law <font color="#620000">\(\mu^{Q_{T,
+          t}}\)</font>.</i>
         </p>
       </div>
       <p>
@@ -754,23 +765,23 @@ t^2  |x - y|^2 / 4} \text{on }
         smooth fields</strong>.
       </p>
       <p>
-        <b>Proof</b> (torus). <span style="color: #620000">\(X_t = \sum_n \left( \int_0^t
+        <b>Proof</b> (torus). <font color="#620000">\(X_t = \sum_n \left( \int_0^t
         \dot{q}_n (s)^{1 / 2} \mathrm{d} B^n_s \right)
-e_n\)</span>:
-        independent Gaussian martingales, variance <span style="color: #620000">\(q_n (t)
-        \uparrow q_n (\infty)\)</span>; then as in Lecture 2.
+e_n\)</font>:
+        independent Gaussian martingales, variance <font color="#620000">\(q_n (t)
+        \uparrow q_n (\infty)\)</font>; then as in Lecture 2.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The field at resolution <span style="color: #620000">\(t\)</span>: a picture
+        The field at resolution <font color="#620000">\(t\)</font>: a picture
       </div>
       <p>
 
       </p>
       <p style="margin-top: 1em">
-        <img class="image" src="cqft_slides_3-1.png" width="95%" alt="Figure from Cqft_Slides_3" decoding="async" loading="lazy"><br />Heat profile on <span style="color: #620000">\(\mathbb{T}^2\)</span>,
-        <span style="color: #620000">\(m = 4\)</span>: <span style="color: #620000">\(t = 8, 32, 128\)</span>
+        <img class="image" src="cqft_slides_3-1.png" width="95%" alt="Figure from Constructive quantum field theory — Lecture 3 (slides)" decoding="async" loading="lazy"><br />Heat profile on <font color="#620000">\(\mathbb{T}^2\)</font>,
+        <font color="#620000">\(m = 4\)</font>: <font color="#620000">\(t = 8, 32, 128\)</font>
         and the lattice cutoff, same white noise.
       </p>
       <p>
@@ -786,49 +797,50 @@ e_n\)</span>:
 
       </p>
       <p>
-        <span style="color: #620000">\(\mathbb{E}_t =\mathbb{E} [\hspace{0.17em} \cdot
+        <font color="#620000">\(\mathbb{E}_t =\mathbb{E} [\hspace{0.17em} \cdot
         \hspace{0.17em}
-|\mathcal{F}_t]\)</span>.
+|\mathcal{F}_t]\)</font>.
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Definition.
-          </strong></span></span><i><span style="font-style: normal"><span style="color: #800000"><span style="color: #800000"><strong>(Bailleul&ndash;Chevyrev&ndash;G.)
-          </strong></span></span></span>An <strong>observable</strong> is an
-          <span style="color: #620000">\((\mathcal{F}_t)\)</span>-martingale <span style="color: #620000">\(O
-          = (O_t)_{t \geqslant 0}\)</span>. Its expectation is <span style="color: #620000">\(\langle
-          O \rangle =\mathbb{E}O_t\)</span>. An observable field is a family
-          <span style="color: #620000">\((O (x))_{x \in \mathcal{M}}\)</span>.</i>
+          <font color="#800000"><font color="#800000"><strong>Definition.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Bailleul&ndash;Chevyrev&ndash;G.)
+          </strong></font></font></class>An <strong>observable</strong> is an
+          <font color="#620000">\((\mathcal{F}_t)\)</font>-martingale <font color="#620000">\(O
+          = (O_t)_{t \geqslant 0}\)</font>. Its expectation is <font color="#620000">\(\langle
+          O \rangle =\mathbb{E}O_t\)</font>. An observable field is a family
+          <font color="#620000">\((O (x))_{x \in \mathcal{M}}\)</font>.</i>
         </p>
       </div>
       <ul>
         <li>
           <p>
-            <span style="color: #620000">\(Y \in L^1 (\mathcal{F}_{\infty})\)</span> gives a
-            <strong>closed</strong> observable <span style="color: #620000">\(O_t
-            =\mathbb{E}_t Y\)</span>.
+            <font color="#620000">\(Y \in L^1 (\mathcal{F}_{\infty})\)</font> gives a
+            <strong>closed</strong> observable <font color="#620000">\(O_t
+            =\mathbb{E}_t Y\)</font>.
           </p>
         </li>
         <li>
           <p>
-            The point: observables need <strong>not</strong> be closed. <span style="color: #620000">\(X_t (x)\)</span>, <span style="color: #620000">\(d \geqslant 2\)</span>,
+            The point: observables need <strong>not</strong> be closed. <font
+            color="#620000">\(X_t (x)\)</font>, <font color="#620000">\(d \geqslant 2\)</font>,
             diverges, yet is a perfectly good family of estimates.
           </p>
         </li>
       </ul>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Lemma.
-          </strong></span></span><i><span style="font-style: normal"><span style="color: #800000"><span style="color: #800000"><strong>(Asymptotic
-          uniqueness) </strong></span></span></span>(a) <span style="color: #620000">\(\|O^1_t
-          - O^2_t \|_{L^1} \to 0 \Rightarrow O^1 = O^2\)</span>.<span style="margin-left: 1em"></span>(b)
-          <span style="color: #620000">\(N\)</span> adapted, <span style="color: #620000">\(\|N_t - O_t
+          <font color="#800000"><font color="#800000"><strong>Lemma.
+          </strong></font></font><i><class style="font-style: normal"><font color="#800000"><font color="#800000"><strong>(Asymptotic
+          uniqueness) </strong></font></font></class>(a) <font color="#620000">\(\|O^1_t
+          - O^2_t \|_{L^1} \to 0 \Rightarrow O^1 = O^2\)</font>.<span style="margin-left: 1em"></span>(b)
+          <font color="#620000">\(N\)</font> adapted, <font color="#620000">\(\|N_t - O_t
           \|_{L^1} \to 0 \Rightarrow O_s = \lim_t \mathbb{E}_s
-          N_t\)</span>.</i>
+          N_t\)</font>.</i>
         </p>
       </div>
       <p>
-        <b>Proof.</b> <span style="color: #620000">\(\mathbb{E}_s\)</span> is an <span style="color: #620000">\(L^1\)</span>
+        <b>Proof.</b> <font color="#620000">\(\mathbb{E}_s\)</font> is an <font color="#620000">\(L^1\)</font>
         contraction.
       </p>
     </div>
@@ -836,96 +848,98 @@ e_n\)</span>:
       <div class="slide-title">
         Observables as equivalence classes
       </div>
-      <div style="font-size: 90.0%"><p>
+      <font style="font-size: 90.0%"><p>
         Two integrable adapted processes are <strong>asymptotically
         equivalent</strong> if
-      </p><div class="center">
+      </p><center>
         \(\displaystyle N \sim N' \quad \Longleftrightarrow \quad \|N_t - N'_t
         \|_{L^1}
 \longrightarrow 0 \quad (t \to \infty) .\)
-      </div><ul>
+      </center><ul>
         <li>
           <p>
-            A class contains <strong>at most one martingale</strong>: if <div style="color: #620000">\(O \sim O'\)</div> are martingales, then <span style="color: #620000">\(\|O_s
-            - O'_s \|_{L^1} \leqslant \|O_t - O'_t \|_{L^1} \to 0\)</span>.
+            A class contains <strong>at most one martingale</strong>: if <font
+            color="#620000">\(O \sim O'\)</font> are martingales, then <font color="#620000">\(\|O_s
+            - O'_s \|_{L^1} \leqslant \|O_t - O'_t \|_{L^1} \to 0\)</font>.
           </p>
         </li>
         <li>
           <p>
-            When it exists, it is recovered by looking back: <span style="color: #620000">\(O_s
-            = \lim_{t \to \infty} \mathbb{E}_s N_t\)</span> in <span style="color: #620000">\(L^1\)</span>,
-            for any <span style="color: #620000">\(N\)</span> in the class.
+            When it exists, it is recovered by looking back: <font color="#620000">\(O_s
+            = \lim_{t \to \infty} \mathbb{E}_s N_t\)</font> in <font color="#620000">\(L^1\)</font>,
+            for any <font color="#620000">\(N\)</font> in the class.
           </p>
         </li>
         <li>
           <p>
-            An <strong>observable</strong> <span style="color: #620000">\(=\)</span> a class
+            An <strong>observable</strong> <font color="#620000">\(=\)</font> a class
             containing a martingale; its members are <em>descriptions</em>,
             the martingale is the canonical representative.
           </p>
         </li>
       </ul><p>
-        <strong>Random variables sit inside.</strong> For <span style="color: #620000">\(Y \in
-        L^1 (\mathcal{F}_{\infty})\)</span>,
-      </p><div class="center">
+        <strong>Random variables sit inside.</strong> For <font color="#620000">\(Y \in
+        L^1 (\mathcal{F}_{\infty})\)</font>,
+      </p><center>
         \(\displaystyle Y \quad \longmapsto \quad (\mathbb{E}_t Y)_{t
         \geqslant 0}\)
-      </div><p>
-        is injective (<span style="color: #620000">\(\mathbb{E}_t Y \to Y\)</span> in <span style="color: #620000">\(L^1\)</span>), with image the uniformly integrable
+      </center><p>
+        is injective (<font color="#620000">\(\mathbb{E}_t Y \to Y\)</font> in <font
+        color="#620000">\(L^1\)</font>), with image the uniformly integrable
         martingales: the closed observables.
       </p><div class="slide-block">
         <p>
-          <strong>Observables generalise <span style="color: #620000">\(L^1\)</span> random
+          <strong>Observables generalise <font color="#620000">\(L^1\)</font> random
           variables.</strong> Removing uniform integrability enlarges the
           space; an almost sure limit alone need not determine the observable.
         </p>
-      </div></div>
+      </div></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Brownian observables
       </div>
       <p>
-        For a standard Brownian motion <span style="color: #620000">\(B\)</span> and the
-        Hermite polynomials <span style="color: #620000">\(H_n (a ; c)\)</span> of variance
-        <span style="color: #620000">\(c\)</span>, the martingales
+        For a standard Brownian motion <font color="#620000">\(B\)</font> and the
+        Hermite polynomials <font color="#620000">\(H_n (a ; c)\)</font> of variance
+        <font color="#620000">\(c\)</font>, the martingales
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle B_t, \qquad B_t^2 - t, \qquad B_t^3 - 3 tB_t, \qquad
         \ldots, \qquad H_n (B_t ;
 t)\)
-      </div>
+      </center>
       <p>
         are observables without a terminal value, and not even bounded in
-        <span style="color: #620000">\(L^1\)</span>:
+        <font color="#620000">\(L^1\)</font>:
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathbb{E} |B_t^2 - t| = t\mathbb{E} |Z^2 - 1|
         \longrightarrow \infty, \qquad
 Z \sim N (0, 1) .\)
-      </div>
+      </center>
       <p>
-        They sum up to the exponential martingale (<span style="color: #620000">\(\lambda \in
-        \mathbb{R}, \lambda \neq 0\)</span>):
+        They sum up to the exponential martingale (<font color="#620000">\(\lambda \in
+        \mathbb{R}, \lambda \neq 0\)</font>):
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle Z_t = \mathrm{e}^{\lambda B_t - \lambda^2 t / 2} =
         \sum_{n \geqslant 0}
 \frac{\lambda^n}{n!} H_n (B_t ; t), \qquad Z_t
         \to 0 \text{ a.s.}, \qquad
 \mathbb{E}Z_t = 1,\)
-      </div>
+      </center>
       <p>
-        since <span style="color: #620000">\(\lambda B_t - \lambda^2 t / 2 \sim - \lambda^2 t
-        / 2 \to - \infty\)</span>. The mass escapes to rarer and rarer paths.
+        since <font color="#620000">\(\lambda B_t - \lambda^2 t / 2 \sim - \lambda^2 t
+        / 2 \to - \infty\)</font>. The mass escapes to rarer and rarer paths.
       </p>
       <div class="slide-block">
         <p>
           <strong>The limiting random variable is zero; the observable is
-          not.</strong> A point value <span style="color: #620000">\(X_t (x)\)</span> of the
-          GFF is a Brownian motion run with the clock <span style="color: #620000">\(c_t\)</span>:
-          these are the prototypes of the Wick powers <span style="color: #620000">\(H_n (X_t
-          (x) ; c_t)\)</span>.
+          not.</strong> A point value <font color="#620000">\(X_t (x)\)</font> of the
+          GFF is a Brownian motion run with the clock <font color="#620000">\(c_t\)</font>:
+          these are the prototypes of the Wick powers <font color="#620000">\(H_n (X_t
+          (x) ; c_t)\)</font>.
         </p>
       </div>
     </div>
@@ -935,47 +949,48 @@ Z \sim N (0, 1) .\)
       </div>
       <div class="slide-box">
         <p style="margin-top: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Proposition.
-          </strong></span></span><i>Let <span style="color: #620000">\(N_t = N_0 + \int_0^t
-          \beta_s \mathrm{d} s + M_t\)</span>, with <span style="color: #620000">\(N_0 \in
-          L^1\)</span>, <span style="color: #620000">\(M\)</span> a martingale and <span style="color: #620000">\(\mathbb{E} \int_0^{\infty} | \beta_s | \mathrm{d} s <
-          \infty\)</span>. The only observable with <span style="color: #620000">\(\|N_t - O_t
-          \|_{L^1} \to 0\)</span> is</i>
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>Let <font color="#620000">\(N_t = N_0 + \int_0^t
+          \beta_s \mathrm{d} s + M_t\)</font>, with <font color="#620000">\(N_0 \in
+          L^1\)</font>, <font color="#620000">\(M\)</font> a martingale and <font
+          color="#620000">\(\mathbb{E} \int_0^{\infty} | \beta_s | \mathrm{d} s <
+          \infty\)</font>. The only observable with <font color="#620000">\(\|N_t - O_t
+          \|_{L^1} \to 0\)</font> is</i>
         </p>
         <p style="margin-bottom: 1em">
-          <div class="block-italic"><div class="center">
+          <i><center>
             \(\displaystyle O_t = N_t +\mathbb{E}_t \left[ \int_t^{\infty}
             \beta_s \mathrm{d} s \right]
 \qquad \text{(the expected drift
             still to come).}\)
-          </div></div>
+          </center></i>
         </p>
       </div>
       <p>
-        <strong>Proof.</strong> <span style="color: #620000">\(O_t = N_0 + M_t +\mathbb{E}_t
-        \int_0^{\infty} \beta_s \mathrm{d} s\)</span> is a martingale, and
-        <span style="color: #620000">\(\|O_t - N_t \|_{L^1} \leqslant \mathbb{E}
+        <strong>Proof.</strong> <font color="#620000">\(O_t = N_0 + M_t +\mathbb{E}_t
+        \int_0^{\infty} \beta_s \mathrm{d} s\)</font> is a martingale, and
+        <font color="#620000">\(\|O_t - N_t \|_{L^1} \leqslant \mathbb{E}
         \int_t^{\infty} | \beta_s |
-\mathrm{d} s \to 0\)</span>; uniqueness is
+\mathrm{d} s \to 0\)</font>; uniqueness is
         asymptotic uniqueness.
       </p>
       <p>
-        <strong>Example.</strong> <span style="color: #620000">\(N_t = B_t + \mathrm{e}^{- t}
-        \sin B_t\)</span>. It&ocirc;: <span style="color: #620000">\(\beta_t = - \frac{3}{2}
-        \mathrm{e}^{- t} \sin B_t\)</span>, and <span style="color: #620000">\(\mathbb{E}_t
-        \sin B_s = \mathrm{e}^{- (s - t) / 2} \sin B_t\)</span>, so
+        <strong>Example.</strong> <font color="#620000">\(N_t = B_t + \mathrm{e}^{- t}
+        \sin B_t\)</font>. It&ocirc;: <font color="#620000">\(\beta_t = - \frac{3}{2}
+        \mathrm{e}^{- t} \sin B_t\)</font>, and <font color="#620000">\(\mathbb{E}_t
+        \sin B_s = \mathrm{e}^{- (s - t) / 2} \sin B_t\)</font>, so
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathbb{E}_t \int_t^{\infty} \beta_s \mathrm{d} s = -
         \frac{3}{2} \sin B_t
 \int_t^{\infty} \mathrm{e}^{- s - (s - t) / 2}
         \mathrm{d} s = - \mathrm{e}^{-
 t} \sin B_t, \qquad O_t = B_t .\)
-      </div>
+      </center>
       <div class="slide-block">
         <p>
           This is the germ of the forward&ndash;backward equations: in Lecture
-          4 the forecast <span style="color: #620000">\(\psi_t =\mathbb{E}_t \Phi_T\)</span>
+          4 the forecast <font color="#620000">\(\psi_t =\mathbb{E}_t \Phi_T\)</font>
           is the field plus the expected drift still to come.
         </p>
       </div>
@@ -985,61 +1000,63 @@ t} \sin B_t, \qquad O_t = B_t .\)
         A delta at a Brownian endpoint
       </div>
       <p>
-        Fix <span style="color: #620000">\(T > 0\)</span>, <span style="color: #620000">\(y \in
-        \mathbb{R}\)</span>, the heat kernel <span style="color: #620000">\(p_s (w) = (2 \pi
-        s)^{- 1 / 2} \mathrm{e}^{- w^2 / 2 s}\)</span>, and
+        Fix <font color="#620000">\(T > 0\)</font>, <font color="#620000">\(y \in
+        \mathbb{R}\)</font>, the heat kernel <font color="#620000">\(p_s (w) = (2 \pi
+        s)^{- 1 / 2} \mathrm{e}^{- w^2 / 2 s}\)</font>, and
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \Pi^y_t := p_{T - t} (B_t - y), \qquad 0 \leqslant t <
         T.\)
-      </div>
+      </center>
       <ul>
         <li>
           <p>
-            <strong>Martingale:</strong> <span style="color: #620000">\(\mathbb{E}_s \Pi^y_t =
-            \Pi^y_s\)</span> for <span style="color: #620000">\(s \leqslant t\)</span>, by
-            Chapman&ndash;Kolmogorov <span style="color: #620000">\(p_{t - s} \ast p_{T - t} =
-            p_{T - s}\)</span>.
+            <strong>Martingale:</strong> <font color="#620000">\(\mathbb{E}_s \Pi^y_t =
+            \Pi^y_s\)</font> for <font color="#620000">\(s \leqslant t\)</font>, by
+            Chapman&ndash;Kolmogorov <font color="#620000">\(p_{t - s} \ast p_{T - t} =
+            p_{T - s}\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <strong>Density of <span style="color: #620000">\(B_T\)</span>:</strong> <span style="color: #620000">\(\int g (y) \Pi^y_t \mathrm{d} y =\mathbb{E}_t g
-            (B_T)\)</span> for bounded <span style="color: #620000">\(g\)</span>, by the
+            <strong>Density of <font color="#620000">\(B_T\)</font>:</strong> <font
+            color="#620000">\(\int g (y) \Pi^y_t \mathrm{d} y =\mathbb{E}_t g
+            (B_T)\)</font> for bounded <font color="#620000">\(g\)</font>, by the
             Markov property.
           </p>
         </li>
         <li>
           <p>
-            <strong>Singular:</strong> at fixed <span style="color: #620000">\(y\)</span>,
-            <span style="color: #620000">\(\Pi^y_t \to 0\)</span> almost surely as <span style="color: #620000">\(t \uparrow T\)</span>, since <span style="color: #620000">\(B_T \neq
-            y\)</span> a.s.; but <span style="color: #620000">\(\mathbb{E} \Pi^y_t = p_T (y) >
-            0\)</span>.
+            <strong>Singular:</strong> at fixed <font color="#620000">\(y\)</font>,
+            <font color="#620000">\(\Pi^y_t \to 0\)</font> almost surely as <font
+            color="#620000">\(t \uparrow T\)</font>, since <font color="#620000">\(B_T \neq
+            y\)</font> a.s.; but <font color="#620000">\(\mathbb{E} \Pi^y_t = p_T (y) >
+            0\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <strong>Mass one:</strong> <span style="color: #620000">\(y \mapsto
-            \Pi^y_t\)</span> is a probability density for every <span style="color: #620000">\(t
-            < T\)</span>, so <span style="color: #620000">\((\Pi^y)_y\)</span> is a
-            measure-valued observable, although each <span style="color: #620000">\(\Pi^y_t\)</span>
+            <strong>Mass one:</strong> <font color="#620000">\(y \mapsto
+            \Pi^y_t\)</font> is a probability density for every <font color="#620000">\(t
+            < T\)</font>, so <font color="#620000">\((\Pi^y)_y\)</font> is a
+            measure-valued observable, although each <font color="#620000">\(\Pi^y_t\)</font>
             tends to zero.
           </p>
         </li>
       </ul>
       <div class="slide-block">
         <p>
-          <strong><span style="color: #620000">\(\delta (B_T - y)\)</span> is not a random
+          <strong><font color="#620000">\(\delta (B_T - y)\)</font> is not a random
           variable, but it is an observable:</strong> the family of its
-          conditional densities. Its derivatives <span style="color: #620000">\(\partial_y^k
-          \Pi^y\)</span> are observables too.
+          conditional densities. Its derivatives <font color="#620000">\(\partial_y^k
+          \Pi^y\)</font> are observables too.
         </p>
       </div>
       <p>
-        <span style="font-size: 84.1%"><span style="color: #707070">High resolution means <span style="color: #620000">\(t
-        \uparrow T\)</span>; reparametrise by <span style="color: #620000">\((T - t)^{-
-        1}\)</span> to get <span style="color: #620000">\([T^{- 1}, \infty)\)</span>. The same
-        works for any Markov process with a transition density.</span></span>
+        <font style="font-size: 84.1%"><font color="#707070">High resolution means <font color="#620000">\(t
+        \uparrow T\)</font>; reparametrise by <font color="#620000">\((T - t)^{-
+        1}\)</font> to get <font color="#620000">\([T^{- 1}, \infty)\)</font>. The same
+        works for any Markov process with a transition density.</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1055,22 +1072,23 @@ t} \sin B_t, \qquad O_t = B_t .\)
       <ul>
         <li>
           <p>
-            A <strong>germ</strong> of <span style="color: #620000">\(O\)</span>: functionals
-            <span style="color: #620000">\(\mathring{O}_t\)</span> of smooth fields with <span style="color: #620000">\(\|O_t - \mathring{O}_t (X_t)\|_{L^1} \to 0\)</span>. A
-            germ determines <span style="color: #620000">\(O\)</span>.
+            A <strong>germ</strong> of <font color="#620000">\(O\)</font>: functionals
+            <font color="#620000">\(\mathring{O}_t\)</font> of smooth fields with <font
+            color="#620000">\(\|O_t - \mathring{O}_t (X_t)\|_{L^1} \to 0\)</font>. A
+            germ determines <font color="#620000">\(O\)</font>.
           </p>
         </li>
         <li>
           <p>
-            <span style="color: #620000">\(O (x)\)</span> is <strong>local</strong> if it has
+            <font color="#620000">\(O (x)\)</font> is <strong>local</strong> if it has
             germs
           </p>
-          <div class="center">
+          <center>
             \(\displaystyle \mathring{O}_t (X_t) (x) =
             \mathring{\mathcal{O}}_t (X_t (x), \nabla X_t (x),
 \ldots,
             \nabla^k X_t (x)) .\)
-          </div>
+          </center>
         </li>
         <li>
           <p>
@@ -1080,9 +1098,11 @@ t} \sin B_t, \qquad O_t = B_t .\)
         </li>
       </ul>
       <p>
-        <b>Example.</b> <span style="color: #620000">\(: X^n_t : (x) = H_n  (X_t (x) ;
-        c_t)\)</span> is a local observable in <strong>every</strong> <span style="color: #620000">\(d\)</span> (more later), although <span style="color: #620000">\(:
-        \varphi^n\)</span>: does not exist as a random distribution when <span style="color: #620000">\(n (d - 2) \geqslant d\)</span>.
+        <b>Example.</b> <font color="#620000">\(: X^n_t : (x) = H_n  (X_t (x) ;
+        c_t)\)</font> is a local observable in <strong>every</strong> <font
+        color="#620000">\(d\)</font> (more later), although <font color="#620000">\(:
+        \varphi^n\)</font>: does not exist as a random distribution when <font
+        color="#620000">\(n (d - 2) \geqslant d\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1093,14 +1113,14 @@ t} \sin B_t, \qquad O_t = B_t .\)
 
       </p>
       <p>
-        <span style="font-size: 135.0%"><b><span style="color: #800000">Observables and their
-        products</span></b></span>
+        <font style="font-size: 135.0%"><b><font color="#800000">Observables and their
+        products</font></b></font>
       </p>
       <p style="margin-bottom: 0.3cm">
 
       </p>
       <p>
-        <span style="color: #707070">Lecture 3</span>
+        <font color="#707070">Lecture 3</font>
       </p>
       <p>
 
@@ -1114,22 +1134,23 @@ t} \sin B_t, \qquad O_t = B_t .\)
 
       </p>
       <p>
-        Recall <span style="color: #620000">\(\partial_c H_n  (a ; c) = - \frac{1}{2}
-        \partial_a^2 H_n\)</span>, <span style="color: #620000">\(\partial_a H_n = nH_{n -
-        1}\)</span>.
+        Recall <font color="#620000">\(\partial_c H_n  (a ; c) = - \frac{1}{2}
+        \partial_a^2 H_n\)</font>, <font color="#620000">\(\partial_a H_n = nH_{n -
+        1}\)</font>.
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Proposition.
-          </strong></span></span><i>For every <span style="color: #620000">\(d\)</span>, <span style="color: #620000">\(n\)</span>, <span style="color: #620000">\(x\)</span>: <span style="color: #620000">\(:
-          X^n_t : (x) := H_n  (X_t (x) ; c_t)\)</span> is a continuous
-          martingale, <span style="color: #620000">\(\mathrm{d} \hspace{0.17em} : X^n_t : (x)
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>For every <font color="#620000">\(d\)</font>, <font
+          color="#620000">\(n\)</font>, <font color="#620000">\(x\)</font>: <font color="#620000">\(:
+          X^n_t : (x) := H_n  (X_t (x) ; c_t)\)</font> is a continuous
+          martingale, <font color="#620000">\(\mathrm{d} \hspace{0.17em} : X^n_t : (x)
           = n \hspace{0.17em} : X^{n - 1}_t :
 (x) \hspace{0.17em} \mathrm{d}
-          X_t (x)\)</span>, and</i>
+          X_t (x)\)</font>, and</i>
         </p>
         <p style="margin-bottom: 1em">
-          <div class="block-italic"><div class="center">
+          <i><center>
             \(\displaystyle \mathbb{E} \left[ : X^n_t : (x) \hspace{0.17em} :
             X^k_t : (y) \right] =
 \delta_{nk}  \hspace{0.17em} n!
@@ -1138,26 +1159,27 @@ t} \sin B_t, \qquad O_t = B_t .\)
             \delta_{nk}  \hspace{0.17em} n! \hspace{0.17em} G (x - y)^n
             \quad
 (x \neq y) .\)
-          </div></div>
+          </center></i>
         </p>
       </div>
       <p>
-        <b>Proof.</b> It&ocirc;: the drift is <span style="color: #620000">\((\frac{1}{2}
+        <b>Proof.</b> It&ocirc;: the drift is <font color="#620000">\((\frac{1}{2}
         \partial_a^2 + \partial_c) H_n  \hspace{0.17em} \dot{c}_t =
-        0\)</span>.
+        0\)</font>.
       </p>
       <ul>
         <li>
           <p>
-            Lecture 2: <span style="color: #620000">\(: \varphi^n\)</span>: exists iff <span style="color: #620000">\(n (d - 2) < d\)</span>. As <strong>observables</strong>,
-            Wick powers exist in every <span style="color: #620000">\(d\)</span>, unsmeared.
+            Lecture 2: <font color="#620000">\(: \varphi^n\)</font>: exists iff <font
+            color="#620000">\(n (d - 2) < d\)</font>. As <strong>observables</strong>,
+            Wick powers exist in every <font color="#620000">\(d\)</font>, unsmeared.
           </p>
         </li>
         <li>
           <p>
-            For <span style="color: #620000">\(n (d - 2) \geqslant d\)</span>, <span style="color: #620000">\(0
-            \leqslant f \mathrel{\not\equiv} 0\)</span>, <span style="color: #620000">\(:
-            X^n_t : (f)\)</span> is unbounded in <span style="color: #620000">\(L^2\)</span>
+            For <font color="#620000">\(n (d - 2) \geqslant d\)</font>, <font color="#620000">\(0
+            \leqslant f \mathrel{\not\equiv} 0\)</font>, <font color="#620000">\(:
+            X^n_t : (f)\)</font> is unbounded in <font color="#620000">\(L^2\)</font>
             and (Paley&ndash;Zygmund) not tight: <strong>no terminal
             value</strong>; the observable is the whole family.
           </p>
@@ -1179,68 +1201,68 @@ t} \sin B_t, \qquad O_t = B_t .\)
       </p>
       <div class="slide-box">
         <p style="margin-top: 1em; margin-bottom: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Definition.
-          </strong></span></span><i><span style="color: #620000">\(O^1 \star O^2\)</span> is
-          the observable with <span style="color: #620000">\(\|(O^1 \star O^2)_t - O^1_t O^2_t
-          \|_{L^1} \to 0\)</span>; unique, and <span style="color: #620000">\((O^1 \star
-          O^2)_s = \lim_t \mathbb{E}_s [O^1_t O^2_t]\)</span>.</i>
+          <font color="#800000"><font color="#800000"><strong>Definition.
+          </strong></font></font><i><font color="#620000">\(O^1 \star O^2\)</font> is
+          the observable with <font color="#620000">\(\|(O^1 \star O^2)_t - O^1_t O^2_t
+          \|_{L^1} \to 0\)</font>; unique, and <font color="#620000">\((O^1 \star
+          O^2)_s = \lim_t \mathbb{E}_s [O^1_t O^2_t]\)</font>.</i>
         </p>
       </div>
       <div class="slide-box">
         <p style="margin-top: 1em">
-          <span style="color: #800000"><span style="color: #800000"><strong>Proposition.
-          </strong></span></span><i>If <span style="color: #620000">\(O^1, O^2\)</span> are
-          continuous, square integrable on bounded intervals, and <span style="color: #620000">\(\mathbb{E}
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>If <font color="#620000">\(O^1, O^2\)</font> are
+          continuous, square integrable on bounded intervals, and <font color="#620000">\(\mathbb{E}
           \int_0^{\infty} | \mathrm{d} \langle O^1, O^2 \rangle_s | <
-          \infty\)</span>, then</i>
+          \infty\)</font>, then</i>
         </p>
         <p style="margin-bottom: 1em">
-          <div class="block-italic"><div class="center">
+          <i><center>
             \(\displaystyle (O^1 \star O^2)_t = O^1_t O^2_t +\mathbb{E}_t
             \left[ \int_t^{\infty}
 \mathrm{d} \langle O^1, O^2 \rangle_s
             \right] .\)
-          </div></div>
+          </center></i>
         </p>
       </div>
       <p>
-        <b>Proof.</b> <span style="color: #620000">\(O^1 O^2 - \langle O^1, O^2
-        \rangle\)</span> and <span style="color: #620000">\(\mathbb{E}_t  \langle O^1, O^2
-        \rangle_{\infty}\)</span> are martingales.
+        <b>Proof.</b> <font color="#620000">\(O^1 O^2 - \langle O^1, O^2
+        \rangle\)</font> and <font color="#620000">\(\mathbb{E}_t  \langle O^1, O^2
+        \rangle_{\infty}\)</font> are martingales.
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Brownian deltas at different targets
       </div>
-      <div style="font-size: 90.0%"><p>
-        For <div style="color: #620000">\(y \neq z\)</div>, <span style="color: #620000">\(t < T\)</span>,
-        <span style="color: #620000">\(\bar{y} = \frac{y + z}{2}\)</span> and <span style="color: #620000">\(\kappa_s
-        = (4 \pi s)^{- 1 / 2}\)</span>, the product is exact:
-      </p><div class="center">
+      <font style="font-size: 90.0%"><p>
+        For <font color="#620000">\(y \neq z\)</font>, <font color="#620000">\(t < T\)</font>,
+        <font color="#620000">\(\bar{y} = \frac{y + z}{2}\)</font> and <font color="#620000">\(\kappa_s
+        = (4 \pi s)^{- 1 / 2}\)</font>, the product is exact:
+      </p><center>
         \(\displaystyle \Pi^y_t \Pi^z_t = \kappa_{T - t} \mathrm{e}^{- (y -
         z)^2 / 4 (T - t)} p_{(T -
 t) / 2} (B_t - \bar{y}) .\)
-      </div><p>
-        <strong>Proof.</strong> Complete the square: <span style="color: #620000">\((B_t -
+      </center><p>
+        <strong>Proof.</strong> Complete the square: <font color="#620000">\((B_t -
         y)^2 + (B_t - z)^2 = 2 (B_t - \bar{y})^2 + \frac{(y -
-        z)^2}{2}\)</span>, and use <span style="color: #620000">\((2 \pi (T - t))^{- 1} =
-        \kappa_{T - t}  (\pi (T - t))^{- 1 / 2}\)</span>.
+        z)^2}{2}\)</font>, and use <font color="#620000">\((2 \pi (T - t))^{- 1} =
+        \kappa_{T - t}  (\pi (T - t))^{- 1 / 2}\)</font>.
       </p><p>
-        The product is <span style="color: #620000">\(\geqslant 0\)</span>, so its expectation
-        is its <span style="color: #620000">\(L^1\)</span> norm (<span style="color: #620000">\(B_t \sim N (0,
-        t)\)</span>):
-      </p><div class="center">
+        The product is <font color="#620000">\(\geqslant 0\)</font>, so its expectation
+        is its <font color="#620000">\(L^1\)</font> norm (<font color="#620000">\(B_t \sim N (0,
+        t)\)</font>):
+      </p><center>
         \(\displaystyle \| \Pi^y_t \Pi^z_t \|_{L^1} = \kappa_{T - t}
         \mathrm{e}^{- (y - z)^2 / 4 (T -
 t)} p_{(T + t) / 2} (\bar{y})
         \longrightarrow 0 \quad (t \uparrow T) .\)
-      </div><p>
-        So <span style="color: #620000">\(\Pi^y_t \Pi^z_t \sim 0\)</span>: the zero observable
-        is the martingale in its class, hence <span style="color: #620000">\(\Pi^y \star \Pi^z
-        = 0\)</span> for <span style="color: #620000">\(y \neq z\)</span>. At <span style="color: #620000">\(y
-        = z\)</span> the exponential suppression disappears, <span style="color: #620000">\(\mathbb{E}
-        (\Pi^y_t)^2 = \kappa_{T - t} p_{(T + t) / 2} (y) \to \infty\)</span>,
+      </center><p>
+        So <font color="#620000">\(\Pi^y_t \Pi^z_t \sim 0\)</font>: the zero observable
+        is the martingale in its class, hence <font color="#620000">\(\Pi^y \star \Pi^z
+        = 0\)</font> for <font color="#620000">\(y \neq z\)</font>. At <font color="#620000">\(y
+        = z\)</font> the exponential suppression disappears, <font color="#620000">\(\mathbb{E}
+        (\Pi^y_t)^2 = \kappa_{T - t} p_{(T + t) / 2} (y) \to \infty\)</font>,
         and no martingale is in the class: its constant expectation would have
         to be this divergent limit.
       </p><div class="slide-block">
@@ -1249,29 +1271,29 @@ t)} p_{(T + t) / 2} (\bar{y})
           meet: separated supports multiply to zero, coincident ones call for
           renormalisation.
         </p>
-      </div></div>
+      </div></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Brownian OPE: resolve the delta square
       </div>
       <p>
-        Fine resolution <span style="color: #620000">\(u = T - \varepsilon\)</span>, coarse
-        resolution <span style="color: #620000">\(s < u\)</span>, <span style="color: #620000">\(\kappa_{\varepsilon}
-        = (4 \pi \varepsilon)^{- 1 / 2}\)</span>. Since <span style="color: #620000">\(p_{\varepsilon}
-        (w)^2 = \kappa_{\varepsilon} p_{\varepsilon / 2} (w)\)</span>,
+        Fine resolution <font color="#620000">\(u = T - \varepsilon\)</font>, coarse
+        resolution <font color="#620000">\(s < u\)</font>, <font color="#620000">\(\kappa_{\varepsilon}
+        = (4 \pi \varepsilon)^{- 1 / 2}\)</font>. Since <font color="#620000">\(p_{\varepsilon}
+        (w)^2 = \kappa_{\varepsilon} p_{\varepsilon / 2} (w)\)</font>,
         Chapman&ndash;Kolmogorov gives the exact identity
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
         \kappa_{\varepsilon} p_{T - s -
 \varepsilon / 2} (B_s - y) .\)
-      </div>
+      </center>
       <p>
-        Taylor expand in the time variable, with <span style="color: #620000">\(\partial_{\tau}
-        p_{\tau} = \frac{1}{2} \partial_y^2 p_{\tau}\)</span>:
+        Taylor expand in the time variable, with <font color="#620000">\(\partial_{\tau}
+        p_{\tau} = \frac{1}{2} \partial_y^2 p_{\tau}\)</font>:
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle \mathbb{E}_s [(\Pi^y_{T - \varepsilon})^2] =
         \kappa_{\varepsilon} \Pi^y_s -
 \frac{\varepsilon
@@ -1280,25 +1302,25 @@ t)} p_{(T + t) / 2} (\bar{y})
         \kappa_{\varepsilon}}{32} \partial_y^4 \Pi^y_s + O_{L^1,
 s}
         (\varepsilon^{5 / 2}) .\)
-      </div>
+      </center>
       <ul>
         <li>
           <p>
-            Singular coefficients (<span style="color: #620000">\(\kappa_{\varepsilon} \to
-            \infty\)</span>; <span style="color: #620000">\(\varepsilon \kappa_{\varepsilon},
-            \varepsilon^2 \kappa_{\varepsilon} \to 0\)</span>) times
-            observables <span style="color: #620000">\(\Pi^y, \partial_y^2 \Pi^y,
-            \ldots\)</span>: an <strong>operator product expansion</strong>.
+            Singular coefficients (<font color="#620000">\(\kappa_{\varepsilon} \to
+            \infty\)</font>; <font color="#620000">\(\varepsilon \kappa_{\varepsilon},
+            \varepsilon^2 \kappa_{\varepsilon} \to 0\)</font>) times
+            observables <font color="#620000">\(\Pi^y, \partial_y^2 \Pi^y,
+            \ldots\)</font>: an <strong>operator product expansion</strong>.
           </p>
         </li>
         <li>
           <p>
-            The order of limits matters: fixed coarse resolution <span style="color: #620000">\(s\)</span>,
-            then <span style="color: #620000">\(\varepsilon \downarrow 0\)</span>. Without
-            conditioning, <span style="color: #620000">\(\|(\Pi^y_{T - \varepsilon})^2 -
+            The order of limits matters: fixed coarse resolution <font color="#620000">\(s\)</font>,
+            then <font color="#620000">\(\varepsilon \downarrow 0\)</font>. Without
+            conditioning, <font color="#620000">\(\|(\Pi^y_{T - \varepsilon})^2 -
             \kappa_{\varepsilon} \Pi^y_{T - \varepsilon}
 \|_{L^1} \asymp
-            \varepsilon^{- 1 / 2}\)</span>.
+            \varepsilon^{- 1 / 2}\)</font>.
           </p>
         </li>
       </ul>
@@ -1311,36 +1333,37 @@ s}
 
       </p>
       <p>
-        <span style="color: #620000">\(\langle \textbf{X} (x), \textbf{X} (y) \rangle_t = Q_t
-        (x - y)\)</span> is deterministic. Heat profile, <span style="color: #620000">\(d
-        \geqslant 2\)</span>: the condition holds iff <span style="color: #620000">\(x \neq
-        y\)</span>, and then
+        <font color="#620000">\(\langle \textbf{X} (x), \textbf{X} (y) \rangle_t = Q_t
+        (x - y)\)</font> is deterministic. Heat profile, <font color="#620000">\(d
+        \geqslant 2\)</font>: the condition holds iff <font color="#620000">\(x \neq
+        y\)</font>, and then
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle (\textbf{X} (x) \star \textbf{X} (y))_t = X_t (x) X_t
         (y) + G (x - y) - Q_t
 (x - y), \qquad \langle \textbf{X} (x) \star
         \textbf{X} (y) \rangle = G (x -
 y) .\)
-      </div>
+      </center>
       <p>
         The correct two-point function, <strong>without ever discussing the
-        regularity of <span style="color: #620000">\(X_{\infty}\)</span></strong>. For <span style="color: #620000">\(x = y\)</span>: no product, since <span style="color: #620000">\(c_t \to
-        \infty\)</span>.
+        regularity of <font color="#620000">\(X_{\infty}\)</font></strong>. For <font
+        color="#620000">\(x = y\)</font>: no product, since <font color="#620000">\(c_t \to
+        \infty\)</font>.
       </p>
       <p>
-        <b>OPE.</b> At every fixed resolution, as <span style="color: #620000">\(y \to
-        x\)</span>,
+        <b>OPE.</b> At every fixed resolution, as <font color="#620000">\(y \to
+        x\)</font>,
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle (\textbf{X} (x) \star \textbf{X} (y))_t - G (x - y)
         \longrightarrow X_t (x)^2
 - c_t = : X^2_t : (x),\)
-      </div>
+      </center>
       <p>
-        i.e. <span style="color: #620000">\(\textbf{X} (x) \star \textbf{X} (y) = G (x - y)
+        i.e. <font color="#620000">\(\textbf{X} (x) \star \textbf{X} (y) = G (x - y)
         \mathbb{1} + : \textbf{X}^2 :
-(x) + o (1)\)</span>: the Wick square is
+(x) + o (1)\)</font>: the Wick square is
         the regular part of the product.
       </p>
     </div>
@@ -1352,16 +1375,16 @@ y) .\)
 
       </p>
       <p>
-        For <span style="color: #620000">\(x \neq y\)</span>,
+        For <font color="#620000">\(x \neq y\)</font>,
       </p>
-      <div class="center">
+      <center>
         \(\displaystyle : \textbf{X}^n : (x) \star : \textbf{X}^k : (y) =
         \sum_{j \leqslant n \wedge
 k} j! \binom{n}{j} \binom{k}{j}
         \hspace{0.17em} G (x - y)^j \hspace{0.17em} :
 \textbf{X}^{n - j} (x)
         \textbf{X}^{k - j} (y) : .\)
-      </div>
+      </center>
       <ul>
         <li>
           <p>
@@ -1370,9 +1393,9 @@ k} j! \binom{n}{j} \binom{k}{j}
         </li>
         <li>
           <p>
-            The <strong>coefficients</strong> <span style="color: #620000">\(G (x -
-            y)^j\)</span> carry all singularities; the observables on the
-            right have regular limits as <span style="color: #620000">\(y \to x\)</span>.
+            The <strong>coefficients</strong> <font color="#620000">\(G (x -
+            y)^j\)</font> carry all singularities; the observables on the
+            right have regular limits as <font color="#620000">\(y \to x\)</font>.
           </p>
         </li>
       </ul>
@@ -1387,15 +1410,17 @@ k} j! \binom{n}{j} \binom{k}{j}
       <ul>
         <li>
           <p>
-            <span style="color: #620000">\(O^1, O^2\)</span> with germs supported in <span style="color: #620000">\(U^1_{1 / t}\)</span>, <span style="color: #620000">\(U^2_{1 /
-            t}\)</span>, <span style="color: #620000">\(\text{dist} (U^1, U^2) > 0\)</span>:
-            the covariation <span style="color: #620000">\(\langle DO^1_t, \dot{Q}_t
-            \hspace{0.17em} DO^2_t \rangle \mathrm{d} t\)</span> sees <span style="color: #620000">\(\dot{Q}_t\)</span> only between the supports.
+            <font color="#620000">\(O^1, O^2\)</font> with germs supported in <font
+            color="#620000">\(U^1_{1 / t}\)</font>, <font color="#620000">\(U^2_{1 /
+            t}\)</font>, <font color="#620000">\(\text{dist} (U^1, U^2) > 0\)</font>:
+            the covariation <font color="#620000">\(\langle DO^1_t, \dot{Q}_t
+            \hspace{0.17em} DO^2_t \rangle \mathrm{d} t\)</font> sees <font
+            color="#620000">\(\dot{Q}_t\)</font> only between the supports.
           </p>
         </li>
         <li>
           <p>
-            Finite range decomposition: it vanishes for large <span style="color: #620000">\(t\)</span>,
+            Finite range decomposition: it vanishes for large <font color="#620000">\(t\)</font>,
             so the product exists and is asymptotically the pointwise product.
             Heat profile: exponentially small.
           </p>
@@ -1417,25 +1442,27 @@ k} j! \binom{n}{j} \binom{k}{j}
         </p>
       </div>
       <p>
-        <span style="font-size: 84.1%"><span style="color: #707070">Bauerschmidt&ndash;Brydges&ndash;Slade, LNM
-        2242 (finite range decompositions)</span></span>
+        <font style="font-size: 84.1%"><font color="#707070">Bauerschmidt&ndash;Brydges&ndash;Slade, LNM
+        2242 (finite range decompositions)</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
         Locality: a picture
       </div>
-      <div style="font-size: 90.0%"><p>
+      <font style="font-size: 90.0%"><p>
 
       </p><p style="margin-top: 4pt">
-        <img class="image" src="cqft_slides_3-2.png" height="66%" width="100%" alt="Figure from Cqft_Slides_3" decoding="async" loading="lazy"><br /> Left: kernels of <span style="color: #620000">\(\dot{Q}_s^{1 / 2}\)</div> at <span style="color: #620000">\(x\)</span> and
-        <span style="color: #620000">\(y\)</span>; their overlap integrates to <span style="color: #620000">\(\dot{Q}_s
+        <img class="image" src="cqft_slides_3-2.png" height="66%" width="100%" alt="Figure from Constructive quantum field theory — Lecture 3 (slides)" decoding="async" loading="lazy"><br /> Left: kernels of <font
+        color="#620000">\(\dot{Q}_s^{1 / 2}\)</font> at <font color="#620000">\(x\)</font> and
+        <font color="#620000">\(y\)</font>; their overlap integrates to <font color="#620000">\(\dot{Q}_s
         (x - y) = \mathrm{d} \langle \textbf{X} (x), \textbf{X} (y)
 \rangle_s
-        / \mathrm{d} s\)</span>. Right: negligible for <span style="color: #620000">\(s \gg 1
-        / |x - y|\)</span>; total <span style="color: #620000">\(G (x - y)\)</span>. As <span style="color: #620000">\(y \to x\)</span> the mass escapes to <span style="color: #620000">\(s \to
-        \infty\)</span>.
-      </p></span>
+        / \mathrm{d} s\)</font>. Right: negligible for <font color="#620000">\(s \gg 1
+        / |x - y|\)</font>; total <font color="#620000">\(G (x - y)\)</font>. As <font
+        color="#620000">\(y \to x\)</font> the mass escapes to <font color="#620000">\(s \to
+        \infty\)</font>.
+      </p></font>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -1454,7 +1481,7 @@ k} j! \binom{n}{j} \binom{k}{j}
         </li>
         <li>
           <p>
-            The GFF is the terminal value of a martingale <span style="color: #620000">\(X_t\)</span>
+            The GFF is the terminal value of a martingale <font color="#620000">\(X_t\)</font>
             of smooth fields; <strong>observables are martingales</strong>,
             possibly without terminal value.
           </p>
@@ -1490,7 +1517,7 @@ k} j! \binom{n}{j} \binom{k}{j}
           </p><ul>
             <li>
               <p>
-                4.1 Infinitesimal invariance characterises <span style="color: #620000">\(\mu_m\)</span>.
+                4.1 Infinitesimal invariance characterises <font color="#620000">\(\mu_m\)</font>.
               </p>
             </li>
             <li>
@@ -1500,8 +1527,8 @@ k} j! \binom{n}{j} \binom{k}{j}
             </li>
             <li>
               <p>
-                5.1 The field at resolution <span style="color: #620000">\(t\)</span>; 5.2
-                divergence of <span style="color: #620000">\(c_t\)</span>.
+                5.1 The field at resolution <font color="#620000">\(t\)</font>; 5.2
+                divergence of <font color="#620000">\(c_t\)</font>.
               </p>
             </li>
             <li>
