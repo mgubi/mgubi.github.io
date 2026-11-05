@@ -207,7 +207,7 @@
   <math|<frac|1|2><math-up|Tr><around|[|<around|(|K+M+D<rsup|2><around|(|U+h|)>|)><rsup|-1>-<around|(|K+M|)><rsup|-1>|]>>,
   whose derivative is the loop force <math|\<cal-T\>> of Lecture<nbsp>5. A
   vertex with <math|k> legs is <math|D<rsup|k>> of the primitive and
-  <math|D<rsup|k-1>> of the force, so the norms <math|S<rsub|k>> and
+  <math|D<rsup|k-1>> of the force, so the norms <math|<math-ss|S><rsub|k>> and
   <math|\<cal-N\><rsub|k>> agree. No additive constant of a primitive enters
   any estimate.
 
@@ -223,6 +223,10 @@
   So from Lemma<nbsp><reference|a-lem-center> on we assume
   <math|q\<geqslant\>1>. Constants may depend on the coupling and on finitely
   many derivative orders, but not on <math|N> or on the scale interval.
+  For a kernel, <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|<math-up|row>>=sup<rsub|x><big|int><around|\||C*<around|(|x,z|)>|\|>\<mathd\>z>
+  is the row norm (Section<nbsp><hlink|10.1|cqft_lecture_5.tm#sec:notation>
+  of Lecture<nbsp>5); it bounds <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|p\<to\>p>>
+  for every <math|p> when <math|C> is symmetric.
 
   <\lemma>
     <dueto|Free and killed resolvents><label|a-lem-free>This is Lemma<nbsp><hlink|10.1|cqft_lecture_5.tm#lem:free> of Lecture<nbsp>5, with further items. For <math|q\<geqslant\> q<rsub|0>>, uniformly in
@@ -470,12 +474,12 @@
   put
 
   <\equation*>
-    S<rsub|k><around|(|f|)>=sup<rsub|y\<in\>\<cal-B\><rsub|q>>s<around|(|D<rsup|k>f<around|(|y|)>|)>,<space|1em>\<cal-N\><rsub|k,q><around|(|f|)>=S<rsub|k><around|(|f|)>+<sqrt|q>v<rsub|1><around|(|D<rsup|k>f<around|(|0|)>|)>.
+    <math-ss|S><rsub|k><around|(|f|)>=sup<rsub|y\<in\>\<cal-B\><rsub|q>>s<around|(|D<rsup|k>f<around|(|y|)>|)>,<space|1em>\<cal-N\><rsub|k,q><around|(|f|)>=<math-ss|S><rsub|k><around|(|f|)>+<sqrt|q>v<rsub|1><around|(|D<rsup|k>f<around|(|0|)>|)>.
   </equation*>
 
-  Thus <math|S<rsub|k>> controls the derivative everywhere in the field ball,
+  Thus <math|<math-ss|S><rsub|k>> controls the derivative everywhere in the field ball,
   whereas the spatial moment is required only at the zero field. The scalar
-  bound <math|S<rsub|k><around|(|f|)>> is distinct from the posterior
+  bound <math|<math-ss|S><rsub|k><around|(|f|)>> is distinct from the posterior
   covariance <math|S<rsub|q>> of (10.2). For a symmetric <math|k>-tensor
   <math|T>, contraction of two slots against a kernel <math|E> means the
   physical integral
@@ -748,8 +752,8 @@
     Let <math|H=<around|(|K<rsub|q>+M<rsub|q>+D<rsup|2><around|(|U+h|)><around|(|y|)>|)><rsup|-1>>,
     and <math|<wide|H|^>> the same with <math|<wide|h|^>>. Taylor's formula,
     evenness, and the zero quadratic jet give
-    <math|S<rsub|2><around|(|h|)>\<leqslant\> C*g<rsub|q>q> and
-    <math|S<rsub|3><around|(|h|)>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>; the
+    <math|<math-ss|S><rsub|2><around|(|h|)>\<leqslant\> C*g<rsub|q>q> and
+    <math|<math-ss|S><rsub|3><around|(|h|)>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>; the
     same holds for <math|<wide|h|^>>, and for their difference with
     <math|g<rsub|q>> replaced by <math|\<varepsilon\><rsub|q>>. Thus the
     hypotheses control every Hessian vertex used in differentiating the
@@ -780,7 +784,7 @@
     costs <math|C/q>. Symmetry gives both Schur bounds for every collapsed
     vertex, also at nonconstant fields. The row Neumann series preserves the
     row and row-<math|L<rsup|2>> bounds: use (<reference|a-eq-receive>) for
-    <math|M>, and the just proved <math|S<rsub|2>> bound for the nonlinear
+    <math|M>, and the just proved <math|<math-ss|S><rsub|2>> bound for the nonlinear
     Hessian. All constants depend on the finite list of individual derivative
     bounds above.
 
@@ -834,8 +838,8 @@
     C<rsub|k>g<rsub|q>q*r<rsub|q><rsup|2-k>>. At zero its degree <math|2j>
     term is <math|<around|(|-1|)><rsup|j+1><math-up|Tr><around|(|C<rsub|q>\<gamma\>
     y<rsup|2>|)><rsup|j>/<around|(|2j|)>>; the same two-chain argument proves
-    its spatial bound. Taylor gives <math|S<rsub|2>\<leqslant\>
-    C*g<rsub|q>q>, <math|S<rsub|3>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>.
+    its spatial bound. Taylor gives <math|<math-ss|S><rsub|2>\<leqslant\>
+    C*g<rsub|q>q>, <math|<math-ss|S><rsub|3>\<leqslant\> C*g<rsub|q>q/r<rsub|q>>.
     Finally (<reference|a-eq-seedder>) says that
     <math|\<cal-T\><rsub|q><around|[|0,0|]>-\<partial\><rsub|q>\<cal-L\><rsub|q>>
     is purely quadratic. Consequently
@@ -967,7 +971,7 @@
 
     <\equation>
       e<rsub|q><rsup|<math-up|o>>=\<Pi\><around|(|\<cal-T\><rsub|q><around|[|M,h<rsup|<around|[|1|]>>|]>-\<cal-T\><rsub|q><around|[|M,h<rsup|<around|[|2|]>>|]>|)>,<space|1em>
-      S<rsub|4><around|(|e<rsub|q><rsup|<math-up|o>>|)>\<leqslant\>
+      <math-ss|S><rsub|4><around|(|e<rsub|q><rsup|<math-up|o>>|)>\<leqslant\>
       C\<gamma\><rsup|5>q<rsup|-3>.<label|a-eq-smallerror>
     </equation>
 
@@ -1046,7 +1050,7 @@
       \<partial\><rsub|q>h<rsup|<around|[|j+1|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M,h<rsup|<around|[|j|]>>|]>.
     </equation*>
 
-    Moreover <math|S<rsub|4><around|(|h<rsup|<around|[|j|]>>|)>\<leqslant\>
+    Moreover <math|<math-ss|S><rsub|4><around|(|h<rsup|<around|[|j|]>>|)>\<leqslant\>
     C\<gamma\><rsup|2>q<rsup|-1/2>> and the zero low jets show that each
     <math|h<rsub|q><rsup|<around|[|j|]>>> and its first three field
     derivatives vanish as <math|q\<to\>\<infty\>> on any fixed bounded field
@@ -1166,7 +1170,7 @@
   <\proof>
     Keep the sharp finite-lattice bubble in the unweighted trace bounds:
     <math|<around|\<\|\|\>|R<rsub|0,q><rsup|2>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
-    C*a<rsub|2><around|(|q|)>> and <math|S<rsub|4><around|(|h<rsub|q><rsup|<around|[|2|]>>|)>\<leqslant\>
+    C*a<rsub|2><around|(|q|)>> and <math|<math-ss|S><rsub|4><around|(|h<rsub|q><rsup|<around|[|2|]>>|)>\<leqslant\>
     C\<gamma\><rsup|2>q<rsup|-1/2>=C\<gamma\> g<rsub|q>>. Contracting the
     fourth tensor in (<reference|a-eq-mass>) therefore gives the first
     inequality, including both Schur masses. Since
@@ -1340,7 +1344,7 @@
     Lemma<nbsp><reference|a-lem-rooted-cycle> bounds both rooted kernels by
     <math|C*a<rsub|2><around|(|q|)>q*r<rsub|q><rsup|-2>\<leqslant\>
     C*g<rsub|q>>. Subtracting the quadratic jet at zero preserves this bound.
-    Hence <math|S<rsub|2><around|(|\<partial\><rsub|q>h<rsup|<around|[|2|]>>|)>\<leqslant\>
+    Hence <math|<math-ss|S><rsub|2><around|(|\<partial\><rsub|q>h<rsup|<around|[|2|]>>|)>\<leqslant\>
     C*g<rsub|q>> and <math|<around|\<\|\|\>|D\<partial\><rsub|q>h<rsup|<around|[|2|]>>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
     C*g<rsub|q>r<rsub|q>> on the ball. Write <math|z=\<kappa\><rsub|q>y> and
     <math|w=\<partial\><rsub|q>\<kappa\><rsub|q>y>. Globally,
@@ -1469,7 +1473,7 @@
     <math|M<rprime|'>=\<partial\><rsub|q>M<rsub|q>>. Evenness and the zero
     quadratic jet of <math|e<rsup|<math-up|o>>> give
     <math|<around|\<\|\|\>|D*e<rsup|<math-up|o>><around|(|z|)>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
-    S<rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|q>|)><rsup|3>/6>.
+    <math-ss|S><rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|q>|)><rsup|3>/6>.
     Multiplication by <math|J> and the <math|C/q> inverse bound therefore
     give the bounded-field estimate in (<reference|a-eq-source>). Here are
     the identities for the large-field calculation. Put
@@ -1530,9 +1534,9 @@
     <math|\<chi\>=\<chi\><rsub|q><around|(|y|)>> and <math|t=y\<chi\>>. Let
 
     <\equation*>
-      S<rsub|1>=<around|\<\|\|\>|f<rsub|1>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
-      C*g*q*r,<space|1em> S<rsub|2>=m<around|(|f<rsub|2>|)>\<leqslant\>
-      C*g*q,<space|1em> S<rsub|3>=s<around|(|f<rsub|3>|)>\<leqslant\>
+      \<sigma\><rsub|1>=<around|\<\|\|\>|f<rsub|1>|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
+      C*g*q*r,<space|1em> \<sigma\><rsub|2>=m<around|(|f<rsub|2>|)>\<leqslant\>
+      C*g*q,<space|1em> \<sigma\><rsub|3>=s<around|(|f<rsub|3>|)>\<leqslant\>
       C*g*q/r.
     </equation*>
 
@@ -1572,22 +1576,22 @@
     insertion use Lemma<nbsp><reference|a-lem-inserted-receiver>. In an
     insertion <math|<around|(|J-I|)>f<rsub|2>J> or
     <math|f<rsub|2><around|(|J-I|)>>, absorb <math|f<rsub|2>,J> into the
-    adjacent chain; this costs at most <math|S<rsub|2>> in its <math|\<ell\>>
+    adjacent chain; this costs at most <math|\<sigma\><rsub|2>> in its <math|\<ell\>>
     norm. Finally <math|<around|\||f<rsub|1>\<kappa\><rprime|''>|\|>\<leqslant\>
-    C*S<rsub|1>\<chi\>/r>. The lemma therefore gives, for all <math|p>,
+    C*\<sigma\><rsub|1>\<chi\>/r>. The lemma therefore gives, for all <math|p>,
 
     <\equation>
       <around|\<\|\|\>|<math-up|diag>\<cal-D\><rsub|2>|\<\|\|\>><rsub|p>\<leqslant\>
-      C<frac|a<rsub|2>|q><around|[|\<gamma\><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>+<around|(|S<rsub|2>+S<rsub|1>/r|)><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>|]>\<leqslant\>
+      C<frac|a<rsub|2>|q><around|[|\<gamma\><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>+<around|(|\<sigma\><rsub|2>+\<sigma\><rsub|1>/r|)><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>|]>\<leqslant\>
       C<frac|\<gamma\> a<rsub|2>|q><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>,<label|a-eq-covariance-marked>
     </equation>
 
     <\equation*>
       <around|\<\|\|\>|<math-up|Ctr><rsub|\<cal-D\><rsub|2>>f<rsub|3>|\<\|\|\>><rsub|p>\<leqslant\>
-      C*S<rsub|3><frac|\<gamma\> a<rsub|2>|q><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>.
+      C*\<sigma\><rsub|3><frac|\<gamma\> a<rsub|2>|q><around|\<\|\|\>|y<rsup|2>\<chi\>|\<\|\|\>><rsub|p>.
     </equation*>
 
-    In the last inequality use <math|S<rsub|2>+S<rsub|1>/r\<leqslant\>
+    In the last inequality use <math|\<sigma\><rsub|2>+\<sigma\><rsub|1>/r\<leqslant\>
     C*g*q>, <math|\<chi\>\<leqslant\>\<gamma\> y<rsup|2>\<chi\>/q>, and small
     <math|g>. This argument controls the column mass of the nonlocal
     contraction as well as its row mass.
@@ -1598,18 +1602,18 @@
     <math|\<chi\><around|(|u|)>+\<chi\><around|(|v|)>>. The last assertion of
     Lemma<nbsp><reference|a-lem-inserted-receiver>, with
     <math|sup<rsub|x,u><around|\||H<rsup|2><around|(|x,u|)>|\|>\<leqslant\>
-    C*a<rsub|2>>, gives <math|C*a<rsub|2>S<rsub|3><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>>.
+    C*a<rsub|2>>, gives <math|C*a<rsub|2>\<sigma\><rsub|3><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>>.
     Of the three second-derivative terms, one identifies the two contracted
     slots and the other two identify the open slot with a contracted slot.
     Their majorant kernels have Schur masses at most
-    <math|C*a<rsub|2>S<rsub|2>/r>. The last term identifies all three slots
-    and costs <math|C*a<rsub|2>S<rsub|1>/r<rsup|2>>. Write
+    <math|C*a<rsub|2>\<sigma\><rsub|2>/r>. The last term identifies all three slots
+    and costs <math|C*a<rsub|2>\<sigma\><rsub|1>/r<rsup|2>>. Write
     <math|\<cal-E\><rsub|3>=D<rsup|3><around|(|h\<circ\>\<kappa\><rsub|q>|)>-J*f<rsub|3>>.
     Consequently
 
     <\equation>
       <around|\<\|\|\>|<math-up|Ctr><rsub|H<rsup|2>>\<cal-E\><rsub|3>|\<\|\|\>><rsub|p>\<leqslant\>
-      C*a<rsub|2><around|(|S<rsub|3>+S<rsub|2>/r+S<rsub|1>/r<rsup|2>|)><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>\<leqslant\>
+      C*a<rsub|2><around|(|\<sigma\><rsub|3>+\<sigma\><rsub|2>/r+\<sigma\><rsub|1>/r<rsup|2>|)><around|\<\|\|\>|\<chi\>|\<\|\|\>><rsub|p>\<leqslant\>
       C*g<rsup|2><around|\<\|\|\>|t|\<\|\|\>><rsub|p>.<label|a-eq-third-chain-marked>
     </equation>
 
@@ -1656,10 +1660,10 @@
     first part uses <math|m<around|(|M<rprime|'>|)>\<leqslant\> C*g>; the
     second uses <math|<around|\<\|\|\>|M<rprime|'>z|\<\|\|\>><rsub|\<infty\>>\<leqslant\>
     C*g*r> and <math|\<chi\>\<leqslant\><around|\||t|\|>/r>. The second row
-    uses the <math|w,D*w> bounds and <math|S<rsub|1>,S<rsub|2>>. For the
+    uses the <math|w,D*w> bounds and <math|\<sigma\><rsub|1>,\<sigma\><rsub|2>>. For the
     fourth row note <math|\<gamma\><rsup|2>r*a<rsub|2>/q=\<gamma\>
     a<rsub|2>/r\<leqslant\> C*g/r>; for the sixth use
-    <math|S<rsub|3>\<gamma\> a<rsub|2>/q\<leqslant\> C*g<rsup|2>/r>.
+    <math|\<sigma\><rsub|3>\<gamma\> a<rsub|2>/q\<leqslant\> C*g<rsup|2>/r>.
 
     Put <math|\<frak-D\><rsub|q><around|(|y|)>=D*e<rsub|q><around|(|y|)>-D\<kappa\><rsub|q><around|(|y|)>D*e<rsub|q><rsup|<math-up|o>><around|(|\<kappa\><rsub|q>y|)>>.
     Summing the ledger gives, before multiplication by <math|H>, for all
@@ -2971,11 +2975,11 @@
 
     <\equation>
       <around|\<\|\|\>|<around|(|<math-ss|D><rsub|y>-<math-ss|D><rsub|z>|)>H<rsub|z>|\<\|\|\>><rsub|<math-up|HS>>\<leqslant\>
-      C<rsub|I>S<rsub|3><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>,<space|1em><around|\<\|\|\>|<around|(|<math-ss|D><rsub|y>-<math-ss|D><rsub|z>|)>f|\<\|\|\>><rsub|2>\<leqslant\>
-      S<rsub|3><around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>,<label|c-collapse>
+      C<rsub|I><math-ss|S><rsub|3><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>,<space|1em><around|\<\|\|\>|<around|(|<math-ss|D><rsub|y>-<math-ss|D><rsub|z>|)>f|\<\|\|\>><rsub|2>\<leqslant\>
+      <math-ss|S><rsub|3><around|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>><around|\<\|\|\>|y-z|\<\|\|\>><rsub|2>,<label|c-collapse>
     </equation>
 
-    where <math|S<rsub|3>=sup s<around|(|D<rsup|3><wide|h|~><rsub|q>|)>> is
+    where <math|<math-ss|S><rsub|3>=sup s<around|(|D<rsup|3><wide|h|~><rsub|q>|)>> is
     finite by <hlink|(12.2)|cqft_lecture_5.tm#eq:global-h>. With
     <math|<around|\<\|\|\>|H<rsub|y>|\<\|\|\>>\<leqslant\> C/q> this proves
     (<reference|c-continuity1>).
@@ -4025,9 +4029,9 @@
     <math|<wide|V|\<bar\>><rsub|q><around|(|x|)>=min<rsub|y><around*|[|<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>+<frac|1|2><around|\<langle\>|x-y,K<rsub|q><around|(|x-y|)>|\<rangle\>>|]>>,
     the functional being strictly convex for <math|q\<geqslant\>
     q<rsub|\<ast\>>>. As <math|U+<frac|1|2>\<mu\><rsub|q>y<rsup|2>+<wide|h|~><rsub|q>\<geqslant\>-C<rsub|q>>
-    (the quartic dominates, as <math|S<rsub|4><around|(|h<rsub|q>|)>> is
+    (the quartic dominates, as <math|<math-ss|S><rsub|4><around|(|h<rsub|q>|)>> is
     small, and <math|<around|\||<wide|h|~><rsub|q><around|(|y|)>|\|>\<leqslant\>
-    C*S<rsub|4><around|(|h<rsub|q>|)><around|\<\|\|\>|y|\<\|\|\>><rsub|4><rsup|4>>),
+    C*<math-ss|S><rsub|4><around|(|h<rsub|q>|)><around|\<\|\|\>|y|\<\|\|\>><rsub|4><rsup|4>>),
     <math|<wide|V|\<bar\>><rsub|q><around|(|x|)>\<geqslant\>-C<rsub|q>+<frac|1|2><around|\<langle\>|x,\<Theta\><rsub|q><rprime|'>x|\<rangle\>>>,
     with <math|\<Theta\><rsub|q><rprime|'>=K<rsub|q><around|(|K<rsub|q>+\<Theta\><rsub|q>|)><rsup|-1>\<Theta\><rsub|q>>.
     With <math|c<rsub|N>=<frac|1|2><math-up|Tr><around|(|Q<rsub|q>\<Theta\><rprime|'><rsub|q>|)>>,
@@ -4253,7 +4257,7 @@
     <math|<around|\<\|\|\>|t<rsub|s><around|(|z<rsub|\<theta\>>|)>|\<\|\|\>><rsub|2>\<leqslant\><around|\<\|\|\>|t<rsub|s><around|(|y|)>|\<\|\|\>><rsub|2>>.
     The first term of <math|D*e> is bounded pointwise by
     <math|sup<around|\||D*e<rsup|<math-up|o>>|\|>\<leqslant\>
-    S<rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
+    <math-ss|S><rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
     C\<gamma\><rsup|7/2>s<rsup|-3/2>>, and
     <math|<around|\||\<cal-A\>|\|><rsup|1/2>\<leqslant\>
     r<rsub|s><rsup|-1><around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|2>>, so it
@@ -4415,7 +4419,7 @@
     claim <math|sup<rsub|\<cal-G\><rsub|T>><around|\||\<Delta\><rsup|-><rsub|T>|\|>\<to\>0>.
     Indeed at fixed <math|N>: <math|<around|\||\<mu\><rsub|T>-\<mu\><rsub|N>|\|>=O<rsub|N><around|(|T<rsup|-1>|)>>;
     <math|<around|\<\|\|\>|\<Theta\><rsub|T>|\<\|\|\>><rsub|<math-up|row>>=O<rsub|N><around|(|T<rsup|-1/2>|)>>;
-    <math|S<rsub|4><around|(|h<rsub|T>|)>=O<rsub|N><around|(|T<rsup|-2>|)>>,
+    <math|<math-ss|S><rsub|4><around|(|h<rsub|T>|)>=O<rsub|N><around|(|T<rsup|-2>|)>>,
     by the integrated bound using <math|a<rsub|2><around|(|T|)>=O<rsub|N><around|(|T<rsup|-2>|)>>;
     and <math|<around|\||y-x|\|>\<leqslant\>
     C<rsub|N>T<rsup|-1><around|(|<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>>+<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>><rsup|3>|)>>.
@@ -4561,7 +4565,7 @@
     this is in Proposition<nbsp><reference|c-completecons>, the finite
     recursion being uniform on compact sets of scales; it extends to strongly
     convergent bounded fields by the Lipschitz constant
-    <math|S<rsub|2>\<leqslant\> C*g<rsub|q>q> on <math|L<rsup|2>>. The same
+    <math|<math-ss|S><rsub|2>\<leqslant\> C*g<rsub|q>q> on <math|L<rsup|2>>. The same
     holds for the term <math|M<rsub|q>y> by the fixed <math|k> convergence of
     Proposition<nbsp><reference|prop:limits>. With this, <math|L<rsup|2>>
     compactness of <math|w<rsub|N>> from the <math|H<rsup|1>> bound passes
@@ -4693,7 +4697,7 @@
     <math|<around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|2>>. Write
     <math|D*e=D\<kappa\> D*e<rsup|<math-up|o>>\<circ\>\<kappa\>+\<frak-D\>>.
     Then <math|<around|\||D*e<rsup|<math-up|o>>|\|>\<leqslant\>
-    S<rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
+    <math-ss|S><rsub|4><around|(|e<rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
     C\<gamma\><rsup|7/2>s<rsup|-3/2>> and
     <math|<around|\||\<cal-A\>|\|><rsup|1/2>\<leqslant\>
     r<rsub|s><rsup|-1><around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|2>>, so the
@@ -4777,7 +4781,7 @@
 
     At fixed <math|N>: <math|<around|\||\<mu\><rsub|T>-\<mu\><rsub|N>|\|>=O<rsub|N><around|(|T<rsup|-1>|)>>,
     <math|<around|\<\|\|\>|\<Theta\><rsub|T>|\<\|\|\>><rsub|<math-up|row>>=O<rsub|N><around|(|T<rsup|-1/2>|)>>,
-    <math|S<rsub|4><around|(|h<rsub|T>|)>=O<rsub|N><around|(|T<rsup|-2>|)>>
+    <math|<math-ss|S><rsub|4><around|(|h<rsub|T>|)>=O<rsub|N><around|(|T<rsup|-2>|)>>
     and <math|<around|\||y-x|\|>\<leqslant\>
     C<rsub|N>T<rsup|-1><around|(|<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>>+<around|\<\|\|\>|x|\<\|\|\>><rsub|\<infty\>><rsup|3>|)>>
     give <math|<around|\||<wide|V|\<bar\>><rsub|T>-V<rsub|N>|\|>=O<rsub|N><around|(|T<rsup|-1/4>|)>>

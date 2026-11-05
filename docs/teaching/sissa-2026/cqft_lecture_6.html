@@ -49,23 +49,23 @@
       <tr>
         <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
           <tr>
-            <td><span style="color: #707070"><span style="font-size: 135.0%"><strong>A Constructive Introduction
-            to Quantum Field Theory</strong></span></span></td>
+            <td><font color="#707070"><font style="font-size: 135.0%"><strong>A Constructive Introduction
+            to Quantum Field Theory</strong></font></font></td>
           </tr>
         </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
           <tr>
-            <td><div style="color: #800000"><div style="font-size: 175.0%"><strong><p>
+            <td><font color="#800000"><font style="font-size: 175.0%"><strong><p>
               Lecture 6: \(\Phi^4_3\) on the torus
             </p><p>
               II. A priori estimates, UV stability and the limiting FBSDE
-            </p></strong></div></div></td>
+            </p></strong></font></font></td>
           </tr>
         </table><div class="compact-block" style="margin-top: 0.5em; margin-bottom: 0.25em">
           <table class="title-block">
             <tr>
               <td><div style="text-indent: 0em" align="left">
                 <p>
-                  <span style="font-variant: small-caps">M. Gubinelli</span>
+                  <class style="font-variant: small-caps">M. Gubinelli</class>
                 </p>
               </div><div style="text-indent: 0em" align="left">
                 <p>
@@ -76,7 +76,7 @@
           </table>
         </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
           <tr>
-            <td><i>November 2026 <span style="font-family: Times New Roman">&mdash;</span>
+            <td><i>November 2026 <class style="font-family: Times New Roman">&mdash;</class>
             <em>provisional</em></i></td>
           </tr>
         </table></td>
@@ -84,12 +84,12 @@
     </table>
     <div style="margin-top: 2em; margin-bottom: 0.5em; margin-left: 60px; margin-right: 60px">
       <p style="margin-bottom: 0.5em">
-        <span style="font-size: 84.1%"><strong>Abstract</strong></span>
+        <font style="font-size: 84.1%"><strong>Abstract</strong></font>
       </p>
     </div>
     <div style="margin-left: 60px; margin-right: 60px">
       <p>
-        <span style="font-size: 84.1%">We prove the central estimate of the construction:
+        <font style="font-size: 84.1%">We prove the central estimate of the construction:
         bounds, uniform in the lattice, on the error \(Z\) of the approximate
         forecast and on the time the forecast spends at large fields. The two
         halves of the FBSDE give two inequalities which close only together,
@@ -101,14 +101,14 @@
         lattice sequence, and it gives the FBSDE on the continuum torus, the
         field equation at every resolution, uniqueness in law for the scalar
         form of the FBSDE, a renormalised variational formula with no infinite
-        constant, and quartic exponential tails.</span>
+        constant, and quartic exponential tails.</font>
       </p>
     </div>
     <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
       <p>
-        <span style="font-size: 84.1%">The results presented in Lectures 4&ndash;6 were obtained
+        <font style="font-size: 84.1%">The results presented in Lectures 4&ndash;6 were obtained
         recently, with the use of AI, in collaboration with Sarah-Jean
-        Meyer.</span>
+        Meyer.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -145,7 +145,7 @@
         14.1<span style="margin-left: 1em"></span>The scalar model <span style="margin-left: 5mm"></span> <a href="#auto-8">5</a>
       </p>
       <p>
-        <span style="font-size: 92.0%">What the scalar lemma says <span style="margin-left: 5mm"></span> <a href="#auto-9">6</a></span>
+        <font style="font-size: 92.0%">What the scalar lemma says <span style="margin-left: 5mm"></span> <a href="#auto-9">6</a></font>
       </p>
       <p>
         14.2<span style="margin-left: 1em"></span>The lattice version <span style="margin-left: 5mm"></span> <a
@@ -254,7 +254,7 @@
         style="margin-left: 5mm"></span> <a href="#auto-38">26</a>
       </p>
       <p>
-        <span style="font-size: 92.0%">Summary of the course <span style="margin-left: 5mm"></span> <a href="#auto-39">26</a></span>
+        <font style="font-size: 92.0%">Summary of the course <span style="margin-left: 5mm"></span> <a href="#auto-39">26</a></font>
       </p>
       <p>
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-40">27</a>
@@ -267,7 +267,7 @@
     <p>
       <strong>Notation from Lecture 5.</strong> We recall the symbols used
       throughout; the definitions are in Sections <a href="cqft_lecture_5.html#sec:notation">10.1</a>&ndash;<a
-      href="cqft_lecture_5.html#sec:YZ">10.5</a> and <a href="cqft_lecture_5.html#eq:g-r">11.1</a> of Lecture 5.
+      href="cqft_lecture_5.html#sec:YZ">10.5</a>, 11 and 12 of Lecture 5.
     </p>
     <ul>
       <li>
@@ -275,21 +275,26 @@
           <em>Lattice.</em> \(\Lambda_N\) is the periodic lattice of mesh
           \(N^{- 1}\) in the unit torus, \(H_N =\mathbb{R}^{\Lambda_N}\),
           \(\int f = N^{- 3}  \sum_x f (x)\), \(\langle u, v \rangle = \int
-          uv\), and \(\| \cdot \|_p\) is the \(L^p\) norm for \(\int\).
-          \(\Delta = \Delta_N\) is the nearest-neighbour Laplacian.
+          uv\), and \(\| \cdot \|_p\) is the \(L^p\) norm for \(\int\). For a
+          kernel, \(\|C\|_{\text{row}} = \sup_x \int |C (x, z) | \mathrm{d}
+          z\) is the row norm, which bounds \(\|C\|_{p \to p}\) for every
+          \(p\) when \(C\) is symmetric. \(\Delta = \Delta_N\) is the
+          nearest-neighbour Laplacian.
         </p>
       </li>
       <li>
         <p>
           <em>Resolution and free operators</em> <a href="cqft_lecture_5.html#eq:K-C">(10.1)</a>&ndash;<a
           href="cqft_lecture_5.html#eq:dictionary-profile">(10.2)</a>. The resolution \(q \in [q_0, \infty)\) is the
-          squared mass of the regulator, and \(q_0 > 0\) is the mass of the
-          Gaussian reference. \(K_q = q - \Delta\) is the precision and \(C_q
-          = K_q^{- 1}\) the covariance of the scales not yet resolved at
+          squared mass of the regulator, and \(q_0 > 0\) is the squared mass
+          of the Gaussian reference. \(K_q = q - \Delta\) is the precision and
+          \(C_q = K_q^{- 1}\) the covariance of the scales not yet resolved at
           resolution \(q\); \(\|C_q \|_{p \to p} = q^{- 1}\). In particular
           \(C = C_{q_0}\) is the covariance of the Gaussian reference and
           \(K_{q_0} = q_0 - \Delta\) the free field operator. The resolved
-          covariance is \(Q_q = C - C_q\), with \(\partial_q Q_q = C_q^2\).
+          covariance is \(Q_q = C - C_q\), with \(\partial_q Q_q = C_q^2\),
+          and the bubble \(a_2 (q) = (C_q^2) (x, x) \lesssim q^{- 1 / 2}\) is
+          the variance of the shell at resolution \(q\), by <a href="cqft_lecture_5.html#eq:a2">(10.3)</a>.
         </p>
       </li>
       <li>
@@ -311,7 +316,12 @@
           \(\mathbb{E}_q\) the conditional expectation given the past of
           \(\Phi\). The forecast is \(\psi_q =\mathbb{E}_q \Phi_{\infty}\),
           and \(\text{Cov}_q\) is the conditional covariance of
-          \(\Phi_{\infty}\).
+          \(\Phi_{\infty}\). The filtration is \(\mathcal{F}_q = \sigma
+          (\Phi_s : s \leqslant q)\) (the same letter as the exact force, as
+          in Lecture 5; the meaning is always clear from the context). The
+          forecast is a function of the field, \(\psi_q = m_q (\Phi_q)\), and
+          so is the approximate forecast, \(Y_q = y_q (\Phi_q)\), where \(y =
+          y_q (x)\) solves \(K_q y + \bar{\mathcal{F}}_q (y) = K_q x\).
         </p>
       </li>
       <li>
@@ -340,10 +350,10 @@
       <tr>
         <td width="100%" align="center"><a id="eq:YZ"></a>\(\displaystyle \begin{array}{rl}
 
-        \mathrm{d} Y_q &amp; = [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q
+        \mathrm{d} Y_q & = [b_q (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + H_q
         (Y_q)
   \hspace{0.17em} \mathrm{d} W_q,\\
-  \mathrm{d} Z_q &amp; = - [b_q
+  \mathrm{d} Z_q & = - [b_q
         (Y_q) + H_q (Y_q) Z_q] \mathrm{d} q + \Xi_q
   \hspace{0.17em}
         \mathrm{d} W_q, \qquad q \geqslant q_0,
@@ -364,10 +374,10 @@
             <em>Global coercivity</em> (Lemma <a href="cqft_lecture_5.html#lem:resolvent">12.1</a>): \(H_q (y)\)
             is comparable to \((K_q + \gamma y^2)^{- 1}\) and
           </p>
-          <div class="center">
+          <center>
             \(\displaystyle \|H_q (y)\|_{p \to p} \leqslant (1 +
             \varepsilon_q) / q,\)
-          </div>
+          </center>
           <p>
             \(\varepsilon_q = C (g_q + g_q^2)\).
           </p>
@@ -378,10 +388,10 @@
             b^{\text{b}} + b^{\text{l}}\) with \(\|b^{\text{b}}_q \|_{\infty}
             \leqslant C \gamma^{7 / 2} q^{- 5 / 2}\) and
           </p>
-          <div class="center">
+          <center>
             \(\displaystyle \|b^{\text{l}}_q (y)\|_2^2 \leqslant C \gamma^4
             q^{- 5} \|t_q (y)\|_6^6,\)
-          </div>
+          </center>
           <p>
             where \(t_q (y) = y \mathbb{1}_{|y| > r_q}\).
           </p>
@@ -390,10 +400,10 @@
           <p>
             <em>The coordinate equation</em> <a href="cqft_lecture_5.html#eq:coordinate">(12.5)</a>:
           </p>
-          <div class="center">
+          <center>
             \(\displaystyle K_q  (Y_q + \varrho_q (Y_q)) + \frac{\gamma}{3}
             Y_q^3 = K_q \Phi_q,\)
-          </div>
+          </center>
           <p>
             with a small Lipschitz correction, \(\|D \varrho_q \|_{p \to p}
             \leqslant \varepsilon_q\).
@@ -464,11 +474,12 @@
       </li>
       <li>
         <p>
-          <em>Backward representation</em> (Proposition <a href="#prop:backward">15.2</a>):
-          \(Z\) is the transported defect, as the equation is linear in it.
-          Its energy is bounded by the bounded-field source, a boundary term,
-          and \(C \gamma^2 / q_{\ast}\) times the large-field action. This
-          factor is the only smallness that closes the loop.
+          <em>Backward representation</em> (Lemma <a href="#lem:representation">15.1</a>,
+          Proposition <a href="#prop:backward">15.2</a>): \(Z\) is the transported defect, as
+          the equation is linear in it. Its energy is bounded by the
+          bounded-field source, a boundary term, and \(C \gamma^2 / q_{\ast}\)
+          times the large-field action. This factor is the only smallness that
+          closes the loop.
         </p>
       </li>
       <li>
@@ -567,8 +578,8 @@
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">13.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(Preliminary moments) </strong></span><a id="lem:pre"></a> At
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">13.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Preliminary moments) </strong></class><a id="lem:pre"></a> At
         fixed \(N\) and \(T\), the maxima over \([q_{\ast}, T]\) of \(\Phi, Y,
         \psi, Z\) have all moments, and so does \(\int_{q_{\ast}}^T (\|
         \text{Cov}_q \|_{\text{HS}}^2 +\| \Xi_q
@@ -619,17 +630,17 @@
     <p>
       the second form by the bridge (<a href="cqft_lecture_5.html#eq:observation">10.6</a>),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle K_q \Phi_q = (q - q_0) \Phi_{\infty} + B_{q - q_0} .\)
-    </div>
+    </center>
     <p>
       Since \(F_q = K_q (\psi_q - \Phi_q) = -\mathcal{F}_q (\psi_q)\) and
       \(K_q = K_{q_0} + q - q_0\), the field equation for the forecast <a
       href="cqft_lecture_4.html#eq:field-eq-forecast">(9.8)</a> of Lecture 4 reads
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle K_{q_0} \psi_q +\mathcal{F}_q (\psi_q) = \eta_q :\)
-    </div>
+    </center>
     <p>
       an elliptic equation for the forecast at resolution \(q\), in which the
       exact force \(\mathcal{F}_q\) acts with no smoothing operator, and whose
@@ -638,14 +649,14 @@
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">13.2</span>. </strong><i><span
-        style="font-style: normal"><strong>(The noise) </strong></span><a id="lem:noise"></a>For every
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">13.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(The noise) </strong></class><a id="lem:noise"></a>For every
         convex \(\Psi\) on \(H_N\), \(\mathbb{E} \Psi (\eta_q) \leqslant
         \mathbb{E} \Psi (B_{q - q_0})\), whatever the interaction. In
         particular \(\zeta_q := C_q \eta_q\) satisfies, for all \(x\) and \(u
         \in \mathbb{R}\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:zeta-tail"></a>\(\displaystyle \mathbb{E}
           \mathrm{e}^{u \zeta_q (x)} \leqslant \exp \left( \frac{u^2}{2} (q
@@ -654,14 +665,14 @@ q_0) a^2 (q) \right), \qquad (q - q_0) a^2 (q) \leqslant C
           \sqrt{q}, \)</td>
           <td align="right">(13.2)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>uniformly in \(N\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>Conditional Jensen in <span style="font-style: normal">(<a
-      href="#eq:eta-filter">13.1</a>)</span>, with \(\Psi (f) = \mathrm{e}^{u \langle C_q
+      <strong class="enunciation-name">Proof. </strong>Conditional Jensen in <class style="font-style: normal">(<a
+      href="#eq:eta-filter">13.1</a>)</class>, with \(\Psi (f) = \mathrm{e}^{u \langle C_q
       \delta_x, f \rangle}\), and <a href="cqft_lecture_5.html#eq:a2">(10.3)</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -674,14 +685,14 @@ q_0) a^2 (q) \right), \qquad (q - q_0) a^2 (q) \leqslant C
         coercivity. We replace it by the explicit force of <a href="cqft_lecture_5.html#eq:coordinate">(12.5)</a>,
       </div>
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \bar{\mathcal{F}}_q (y) = K_q \varrho_q (y) +
       \frac{\gamma}{3} y^3,\)
-    </div>
+    </center>
     <p>
       and the forecast by the approximate forecast, \(\psi_q = Y_q + Z_q\).
       The coordinate equation \(K_q Y_q + \bar{\mathcal{F}}_q (Y_q) = K_q
-      \Phi_q\) and <span style="font-style: normal">(<a href="#eq:eta-filter">13.1</a>)</span> give the exact
+      \Phi_q\) and <class style="font-style: normal">(<a href="#eq:eta-filter">13.1</a>)</class> give the exact
       identity
     </p>
     <table width="100%">
@@ -730,12 +741,12 @@ q_0) a^2 (q) \right), \qquad (q - q_0) a^2 (q) \leqslant C
         \(B_{q - q_0}\), a white noise; pointwise estimates need a noise which
         is a function. So we use \(\zeta_q = C_q \eta_q =\mathbb{E}_q [C_q
         B_{q - q_0}]\), the filtered version of the Gaussian bridge noise
-        \(\zeta_t\) of Section <a href="cqft_lecture_4.html#sec:DS">9.2</a> of Lecture 4, which by <span
-        style="font-style: normal">(<a href="#eq:zeta-tail">13.2</a>)</span> has the tails of the free field at
+        \(\zeta_t\) of Section <a href="cqft_lecture_4.html#sec:DS">9.2</a> of Lecture 4, which by <class
+        style="font-style: normal">(<a href="#eq:zeta-tail">13.2</a>)</class> has the tails of the free field at
         resolution \(q\). It is not Gaussian, and it depends on the
         interaction through \(\psi\), but its bounds do not. Since \(K_{q_0}
-        \zeta_q = \eta_q - (q - q_0) \zeta_q\), subtracting it from <span
-        style="font-style: normal">(<a href="#eq:field-Y">13.3</a>)</span> and writing
+        \zeta_q = \eta_q - (q - q_0) \zeta_q\), subtracting it from <class
+        style="font-style: normal">(<a href="#eq:field-Y">13.3</a>)</class> and writing
       </div>
     </p>
     <table width="100%">
@@ -749,7 +760,7 @@ q_0) a^2 (q) \right), \qquad (q - q_0) a^2 (q) \leqslant C
       (\(V_q\) is not to be confused with the potentials \(V_t (x)\), \(V_N\)
       of Lectures 4&ndash;5 and of Sections <a href="#sec:restart">16.3</a> and 18.2; the
       potentials are functions of a field, \(V_q\) here is a random field) we
-      obtain <span style="font-style: normal">(<a href="#eq:field-Y">13.3</a>)</span> in the form in which it
+      obtain <class style="font-style: normal">(<a href="#eq:field-Y">13.3</a>)</class> in the form in which it
       is estimated,
     </p>
     <table width="100%">
@@ -762,7 +773,7 @@ Z_q),
       </tr>
     </table>
     <p>
-      The mass of <span style="font-style: normal">(<a href="#eq:field">13.5</a>)</span> is only \(q_0\),
+      The mass of <class style="font-style: normal">(<a href="#eq:field">13.5</a>)</class> is only \(q_0\),
       so at large resolution all the coercivity must come from the cube. The
       next section shows that it does.
     </p>
@@ -790,17 +801,17 @@ t_q = Y_q
       <tr>
         <td width="100%" align="center"><a id="eq:energies"></a>\(\displaystyle \begin{array}{rll}
   E_T
-        &amp; = \frac{1}{\gamma}  \int_{q_{\ast}}^T q^{1 / 2} \|Z_q \|_2^2
+        & = \frac{1}{\gamma}  \int_{q_{\ast}}^T q^{1 / 2} \|Z_q \|_2^2
 
-        \hspace{0.17em} \mathrm{d} q &amp; \text{(backward energy)},\\
-  J_T &amp; =
+        \hspace{0.17em} \mathrm{d} q & \text{(backward energy)},\\
+  J_T & =
         \int_{q_{\ast}}^T q^{- 3 / 2}  [q\|w_q \|_4^4 + \gamma \|w_q \|_6^6
 
-        + \gamma \|t_q \|_6^6] \mathrm{d} q &amp; \text{(large-field action)},\\
+        + \gamma \|t_q \|_6^6] \mathrm{d} q & \text{(large-field action)},\\
 
-        G_T &amp; = \int_{q_{\ast}}^T [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3
+        G_T & = \int_{q_{\ast}}^T [q^{- 1 / 2} \| \xi_q \|_4^4 + \gamma q^{- 3
         / 2}
-  \| \xi_q \|_6^6] \mathrm{d} q &amp; \text{(noise tails)}
+  \| \xi_q \|_6^6] \mathrm{d} q & \text{(noise tails)}
         .
 \end{array} \)</td>
         <td align="right">(13.7)</td>
@@ -813,9 +824,9 @@ t_q = Y_q
       uniformly in \(N\). The weights are matched to each other and to the
       source bounds:
     </p>
-    <div class="center">
+    <center>
       <p style="margin-top: 0.5em; margin-bottom: 0.5em">
-        <div style="font-size: 84.0%"><table style="display: inline-table; vertical-align: middle">
+        <font style="font-size: 84.0%"><table style="display: inline-table; vertical-align: middle">
           <tbody><tr>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-top: 1px solid; border-bottom: 1px solid">quantity</td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-top: 1px solid; border-bottom: 1px solid">weight</td>
@@ -837,67 +848,67 @@ t_q = Y_q
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">backward propagator \(s / q\) and \(\int_q^{\infty}
             s^{- 3 / 2} \mathrm{d} s = 2 q^{- 1 / 2}\)</td>
           </tr></tbody>
-        </table></div>
+        </table></font>
       </p>
-    </div>
+    </center>
     <h3 id="auto-9">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">13.1</span>.
-        </strong><span style="font-style: normal"><strong>(Matched weights)
-        </strong></span>Check the three weights in the table. Show from
-        <span style="font-style: normal">(<a href="#eq:field">13.5</a>)</span> that the forward estimate,
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">13.1</class>.
+        </strong><class style="font-style: normal"><strong>(Matched weights)
+        </strong></class>Check the three weights in the table. Show from
+        <class style="font-style: normal">(<a href="#eq:field">13.5</a>)</class> that the forward estimate,
         with the weight \(q^{- 3 / 2}\) on the large-field action, needs the
         weight \(q^{1 / 2}\) on \(\|Z\|_2^2\). Show that the backward estimate
         of Section <a href="#sec:backward">15</a> also holds with weight \(q^{1 / 2 +
         \sigma}\) for \(0 < \sigma < \frac{1}{2}\). Which term breaks at
         \(\sigma = \frac{1}{2}\), and how does the feedback coefficient depend
-        on \(\sigma\)?</span>
+        on \(\sigma\)?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">13.2</span>.
-        </strong><span style="font-style: normal"><strong>(Moments of the noise)
-        </strong></span>Show from Lemma <a href="#lem:noise">13.2</a> that \(\mathbb{E}
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">13.2</class>.
+        </strong><class style="font-style: normal"><strong>(Moments of the noise)
+        </strong></class>Show from Lemma <a href="#lem:noise">13.2</a> that \(\mathbb{E}
         \| \zeta_q \|_6^6 \leqslant 15 ((q - q_0) a^2 (q))^3 \leqslant
 Cq^{3 /
         2}\) and \(\mathbb{E} \| \xi_q \|_6^6 \leqslant Cq^{3 / 2} \exp (- c
         \sqrt{q} / \gamma)\). For \(V_N = 0\), compute the covariance of
         \(\zeta_q\) and compare it with the bound. On which modes is the bound
-        sharp?</span>
+        sharp?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">13.3</span>.
-        </strong><span style="font-style: normal"><strong>(The memory form) </strong></span><a
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">13.3</class>.
+        </strong><class style="font-style: normal"><strong>(The memory form) </strong></class><a
         id="ex:memory"></a>Let \(X_q = \int_{q_0}^q C_s \hspace{0.17em} \mathrm{d} W_s\),
         so that \(K_q X_q = W_q + \int_{q_0}^q X_s \hspace{0.17em} \mathrm{d}
         s\), and \(V'_q = Y_q + \varrho_q (Y_q) - X_q\). Using \(K_q \Phi_q =
         W_q + \int_{q_0}^q \psi_s \hspace{0.17em} \mathrm{d} s\), derive the
-        equation with memory</span>
+        equation with memory</font>
       </p>
     </div>
     <div style="margin-left: 38.660688007188px">
       <p>
-        <div style="font-size: 84.1%"><div class="center">
+        <font style="font-size: 84.1%"><center>
           \(\displaystyle K_q V'_q + \frac{\gamma}{3} Y_q^3 = \int_{q_0}^q
           (V'_s - \varrho_s (Y_s) +
 Z_s) \mathrm{d} s.\)
-        </div></div>
+        </center></font>
       </p>
     </div>
     <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%">Below the auxiliary scale \(\varrho\) comes from the
+        <font style="font-size: 84.1%">Below the auxiliary scale \(\varrho\) comes from the
         frozen force, and is not small. Here the noise is exactly Gaussian,
         but the memory has the size of the mass term. Why would testing it
         with \(w^3\) need the Hardy inequality \(\|q^{- 1} \int_0^q f\|_{L^4
         (q^{- 1 / 2} \mathrm{d} q)} \leqslant \frac{8}{7}
 \|f\|_{L^4 (q^{- 1 /
         2} \mathrm{d} q)}\), and where would the margin come from? What does
-        <span style="font-style: normal">(<a href="#eq:field">13.5</a>)</span> trade to avoid this?</span>
+        <class style="font-style: normal">(<a href="#eq:field">13.5</a>)</class> trade to avoid this?</font>
       </p>
     </div>
     <h2 id="auto-10"><a id="sec:forward"></a>14<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
@@ -905,29 +916,29 @@ Z_s) \mathrm{d} s.\)
     <p>
       On one site the Laplacian disappears. We also drop the small Lipschitz
       correction \(\varrho\) (restored in Proposition <a href="#prop:forward">14.3</a>) and
-      treat the noise and the error as given numbers. Then <span style="font-style: normal">(<a
-      href="#eq:field">13.5</a>)</span> is a scalar equation at each \(q\), and all the
+      treat the noise and the error as given numbers. Then <class style="font-style: normal">(<a
+      href="#eq:field">13.5</a>)</class> is a scalar equation at each \(q\), and all the
       constants can be checked by hand.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">14.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(Scalar forward coercivity) </strong></span><a id="lem:scalar-forward"></a>Let
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Scalar forward coercivity) </strong></class><a id="lem:scalar-forward"></a>Let
         \(\gamma, q > 0\), \(a \geqslant 0\), \(0 \leqslant p \leqslant q\)
         and \(v, g, z \in \mathbb{R}\) with</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:scalar"></a>\(\displaystyle av + \frac{\gamma}{3}
           (v + g)^3 = p (g + z) . \)</td>
           <td align="right">(14.1)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>Let \(r = (q / \gamma)^{1 / 2}\), \(w =\operatorname{sgn} (v)  (|v|
         - \frac{3}{4} r)_+\), \(\xi = g \mathbb{1}_{|g| > r / 32}\). Then</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:scalar-bound"></a>\(\displaystyle \frac{q}{8} w^4 +
           \frac{\gamma}{16} w^6 \leqslant 54 q \xi^4 + \frac{4225}{6}
@@ -935,28 +946,28 @@ Z_s) \mathrm{d} s.\)
           \xi^6 + \frac{12}{\gamma} q^2 z^2 . \)</td>
           <td align="right">(14.2)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>Moreover \(t = (v + g)  \mathbb{1}_{|v + g| > r}\) satisfies \(|t|
         \leqslant \frac{32}{7}  (|w| + | \xi |)\).</i>
       </p>
     </div>
     <p style="margin-top: 1em">
-      <strong class="enunciation-name">Proof. </strong>Multiply <span style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</span>
+      <strong class="enunciation-name">Proof. </strong>Multiply <class style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</class>
       by \(w^3\), where \(w \neq 0\); there \(|v| = |w| + \frac{3}{4} r\) and
       \(v, w\) have the same sign, so \(avw^3 \geqslant 0\). Since \(|g|
       \leqslant \frac{r}{32} + | \xi |\), \(\operatorname{sgn} (w)  (v + g)
       \geqslant |w| + \frac{11}{16} r - | \xi |\) (we give up \(\frac{1}{32}
       r\) to leave room, on the lattice, for \(\varrho\)). The cube being
-      increasing, <span style="font-style: normal">(<a href="#eq:elementary">14.3</a>)</span> and \(\gamma r^2 =
+      increasing, <class style="font-style: normal">(<a href="#eq:elementary">14.3</a>)</class> and \(\gamma r^2 =
       q\) give
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \frac{\gamma}{3} w^3  (v + g)^3 \geqslant
       \frac{\gamma}{12} w^6 + \frac{q}{4}
 w^4 + \frac{qr}{13} |w|^3 -
       \frac{4225}{6} \gamma \xi^6 .\)
-    </div>
+    </center>
     <p style="margin-bottom: 1em">
       This is the large-field coercivity: above the threshold the cube
       provides a sixth power, a quartic term of the size of a mass \(q\), and
@@ -964,8 +975,8 @@ w^4 + \frac{qr}{13} |w|^3 -
       side, \(pgw^3 \leqslant \frac{qr}{32} |w|^3 + q | \xi | |w|^3\), and the
       first term is absorbed. By Young's inequality, \(q | \xi | |w|^3
       \leqslant \frac{q}{8} w^4 + 54 q \xi^4\) and \(q |z| |w|^3 \leqslant
-      \frac{\gamma}{48} w^6 + \frac{12}{\gamma} q^2 z^2\). This gives <span
-      style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</span>. For the last claim, \(|v + g|
+      \frac{\gamma}{48} w^6 + \frac{12}{\gamma} q^2 z^2\). This gives <class
+      style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</class>. For the last claim, \(|v + g|
       \leqslant |w| + \frac{3}{4} r + \frac{r}{32} + | \xi |\), so on \(\{|v +
       g| > r\}\) we have \(\frac{7}{32} |v + g| \leqslant |v + g| -
       \frac{25}{32} r \leqslant |w| + | \xi
@@ -973,13 +984,13 @@ w^4 + \frac{qr}{13} |w|^3 -
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">14.2</span>. </strong><i><span
-        style="font-style: normal"><strong>(Two elementary inequalities) </strong></span>For \(x,
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Two elementary inequalities) </strong></class>For \(x,
         \rho \geqslant 0\), \((x - \rho)^3 \geqslant \frac{3}{4} x^3 - 65
         \rho^3\). For \(u, \rho, r \geqslant 0\),</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:elementary"></a>\(\displaystyle \frac{1}{3} u^3
             \left( u + \frac{11}{16} r - \rho \right)^3 \geqslant
@@ -989,7 +1000,7 @@ w^4 + \frac{qr}{13} |w|^3 -
 \rho^6 . \)</td>
             <td align="right">(14.3)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -1025,13 +1036,13 @@ w^4 + \frac{qr}{13} |w|^3 -
     <h3 id="auto-13">14.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Proposition <span style="font-style: normal">14.3</span>.
-        </strong><i><span style="font-style: normal"><strong>(Forward coercivity)
-        </strong></span><a id="prop:forward"></a>For \(q_{\ast}\) large (depending on
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">14.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(Forward coercivity)
+        </strong></class><a id="prop:forward"></a>For \(q_{\ast}\) large (depending on
         \(\gamma\)), at every cutoff \(N\), pathwise and for every \(q
         \geqslant q_{\ast}\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:forward-q"></a>\(\displaystyle q \|w_q \|_4^4 + \gamma
           \|w_q \|_6^6 + \gamma \|t_q \|_6^6 \leqslant C (q\|
@@ -1039,11 +1050,11 @@ w^4 + \frac{qr}{13} |w|^3 -
           \gamma \| \xi_q \|_6^6 + \gamma^{- 1} q^2 \|Z_q \|_2^2) . \)</td>
           <td align="right">(14.4)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>Consequently, for every \(T\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:forward"></a>\(\displaystyle J_T \leqslant C (G_T +
           E_T), \qquad \|G_T \|_{L^p (\mathbb{P})} \leqslant C
@@ -1051,14 +1062,14 @@ w^4 + \frac{qr}{13} |w|^3 -
           \quad (p \geqslant 1), \)</td>
           <td align="right">(14.5)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
       </p>
     </div>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof: the changes from the scalar case. </strong>Test
-      <span style="font-style: normal">(<a href="#eq:field">13.5</a>)</span> with \(w_q^3\) in \(L^2
+      <class style="font-style: normal">(<a href="#eq:field">13.5</a>)</class> with \(w_q^3\) in \(L^2
       (\Lambda_N)\) and proceed as in Lemma <a href="#lem:scalar-forward">14.1</a>, with
       H&ouml;lder's inequality in space. Three new terms appear.
     </p>
@@ -1068,12 +1079,12 @@ w^4 + \frac{qr}{13} |w|^3 -
       \frac{1}{4}  (|v| - \frac{3}{4} r)_+^4\), \(Vw^3 \geqslant 0\), and for
       any nondecreasing \(\phi'\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \langle \phi' (V), - \Delta_N V \rangle = N^{- 1}
       \sum_{x \sim x'} (\phi' (V
 (x)) - \phi' (V (x')))  (V (x) - V (x'))
       \geqslant 0,\)
-    </div>
+    </center>
     <p>
       summing over unordered nearest-neighbour pairs. So the elliptic term
       only helps.
@@ -1089,16 +1100,16 @@ w^4 + \frac{qr}{13} |w|^3 -
       this gives \(\frac{3}{16} |Y| \leqslant |w| + | \xi | + | \varrho^1 |\),
       so for small \(\varepsilon\)
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \|t_q \|_j \leqslant C (\|w_q \|_j +\| \xi_q \|_j),
       \qquad \| \varrho_q^1 \|_j
 \leqslant C \varepsilon_q  (\|w_q \|_j +\|
       \xi_q \|_j) .\)
-    </div>
+    </center>
     <p>
-      This also supplies the \(t\) part of <span style="font-style: normal">(<a href="#eq:forward-q">14.4</a>)</span>.
+      This also supplies the \(t\) part of <class style="font-style: normal">(<a href="#eq:forward-q">14.4</a>)</class>.
       These are operator bounds: \(\varrho\) is nonlocal, but small in every
-      \(L^p\). In the cube and on the right side of <span style="font-style: normal">(<a href="#eq:field">13.5</a>)</span>
+      \(L^p\). In the cube and on the right side of <class style="font-style: normal">(<a href="#eq:field">13.5</a>)</class>
       the error is \(\rho = | \xi | + | \varrho^1 |\). The bounded parts on
       the right cost \(\frac{qr}{16} \|w\|_3^3\), which is absorbed by
       \(\frac{qr}{13} \|w\|_3^3\) from the cube. The cube error is at most \(C
@@ -1112,24 +1123,24 @@ w^4 + \frac{qr}{13} |w|^3 -
       <em>The error.</em> \(| \langle w^3, (q - q_0) Z \rangle | \leqslant
       \frac{\gamma}{48} \|w\|_6^6 +
 \frac{12}{\gamma} q^2 \|Z\|_2^2\).
-      Multiplying <span style="font-style: normal">(<a href="#eq:forward-q">14.4</a>)</span> by \(q^{- 3 / 2}\)
+      Multiplying <class style="font-style: normal">(<a href="#eq:forward-q">14.4</a>)</class> by \(q^{- 3 / 2}\)
       and integrating gives \(J_T \leqslant C (G_T + E_T)\).
     </p>
     <p>
       <em>Tails of the noise.</em> By Minkowski's inequality in \(x\), for \(j
       = 4, 6\), \(\|\| \xi_q \|_j^j \|_{L^p (\mathbb{P})} \leqslant \sup_x \||
       \xi_q (x) |^j
-\|_{L^p (\mathbb{P})}\), and by H&ouml;lder and <span
-      style="font-style: normal">(<a href="#eq:zeta-tail">13.2</a>)</span>, with threshold \(r_q / 32 =
+\|_{L^p (\mathbb{P})}\), and by H&ouml;lder and <class
+      style="font-style: normal">(<a href="#eq:zeta-tail">13.2</a>)</class>, with threshold \(r_q / 32 =
       \frac{1}{32}  (q / \gamma)^{1 / 2}\), this is at most
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle (\mathbb{E}| \zeta_q (x) |^{2 jp})^{\frac{1}{2 p}}
       \mathbb{P} (| \zeta_q (x) |
 > r_q / 32)^{\frac{1}{2 p}} \leqslant C_j
       p^{j / 2} q^{j / 4} \mathrm{e}^{- c
 \sqrt{q} / (p \gamma)},\)
-    </div>
+    </center>
     <p style="margin-bottom: 1em">
       and integrating in \(q\) with \(u = \sqrt{q} / (p \gamma)\) gives
       \(\|G_T \|_p \leqslant C \gamma^3 p^5\).<span style="margin-left: 1em"></span>\(\Box\)
@@ -1147,12 +1158,12 @@ w^4 + \frac{qr}{13} |w|^3 -
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Proposition <span style="font-style: normal">14.4</span>.
-        </strong><i><span style="font-style: normal"><strong>(\(L^{\infty}\) coercivity)
-        </strong></span><a id="prop:sup"></a>For \(q_{\ast}\) large, at every cutoff,
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">14.4</class>.
+        </strong><i><class style="font-style: normal"><strong>(\(L^{\infty}\) coercivity)
+        </strong></class><a id="prop:sup"></a>For \(q_{\ast}\) large, at every cutoff,
         pathwise and for every \(q \geqslant q_{\ast}\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:sup"></a>\(\displaystyle \|Y_q \|_{\infty}
           \leqslant C \left[ \left( \frac{q}{\gamma} \right)^{1 / 3}
@@ -1162,7 +1173,7 @@ w^4 + \frac{qr}{13} |w|^3 -
 \|_2 \right] . \)</td>
           <td align="right">(14.6)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>In particular there is \(c > 0\) such that \(t_q = 0\), i.e.
         \(\|Y_q \|_{\infty} \leqslant r_q\), whenever \(\| \zeta_q \|_{\infty}
@@ -1176,14 +1187,14 @@ w^4 + \frac{qr}{13} |w|^3 -
       Z_q\). Then \(\|\mathcal{H}\|_{\infty} \leqslant pa_2 (q_0)^{1 / 2}
       \|Z_q \|_2 \leqslant Cq
 \|Z_q \|_2\), since the kernel of \(C_{q_0}\) is
-      in \(L^2\) uniformly in \(N\) by <a href="cqft_lecture_5.html#eq:a2">(10.3)</a>. By <span style="font-style: normal">(<a
-      href="#eq:field">13.5</a>)</span>, \(W = V -\mathcal{H}\) and \(D =\mathcal{H}+
+      in \(L^2\) uniformly in \(N\) by <a href="cqft_lecture_5.html#eq:a2">(10.3)</a>. By <class style="font-style: normal">(<a
+      href="#eq:field">13.5</a>)</class>, \(W = V -\mathcal{H}\) and \(D =\mathcal{H}+
       d\) satisfy
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle K_{q_0} W + \frac{\gamma}{3}  (W + D)^3 = pd, \qquad Y_q
       = W + D.\)
-    </div>
+    </center>
     <p style="margin-bottom: 1em">
       At a positive maximum of \(W\), \(K_{q_0} W \geqslant 0\), so \(W + D
       \leqslant (3 p\|d\|_{\infty} / \gamma)^{1 / 3}\) there; similarly at a
@@ -1196,26 +1207,26 @@ w^4 + \frac{qr}{13} |w|^3 -
       \leqslant \frac{1}{4}
 \|Y_q \|_{\infty} + C (q \varepsilon_q /
       \gamma)^{1 / 2}\), where \(q \varepsilon_q / \gamma \leqslant C
-      \sqrt{q}\) since \(g_q = \gamma q^{- 1 / 2}\). This proves <span style="font-style: normal">(<a
-      href="#eq:sup">14.6</a>)</span>. For the last claim use \(q / \gamma = r_q^2\):
-      the terms of <span style="font-style: normal">(<a href="#eq:sup">14.6</a>)</span> are at most \(C
+      \sqrt{q}\) since \(g_q = \gamma q^{- 1 / 2}\). This proves <class style="font-style: normal">(<a
+      href="#eq:sup">14.6</a>)</class>. For the last claim use \(q / \gamma = r_q^2\):
+      the terms of <class style="font-style: normal">(<a href="#eq:sup">14.6</a>)</class> are at most \(C
       (c^{1 / 3} + c + g_q^{1 / 2}) r_q\), and \(g_q^{1 / 2} \leqslant
       g_{q_{\ast}}^{1 / 2}\) is small.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">14.5</span>. </strong><i><span
-        style="font-style: normal"><strong>(Supremum of the noise) </strong></span><a id="lem:noise-sup"></a>Uniformly
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">14.5</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum of the noise) </strong></class><a id="lem:noise-sup"></a>Uniformly
         in \(N\) and in the interaction,</i>
       </p>
       <p style="margin-bottom: 1em">
-        <div class="block-italic"><div class="center">
+        <i><center>
           \(\displaystyle \|\mathcal{N}\|_{L^p (\mathbb{P})} \leqslant C
           \sqrt{p}, \qquad \mathcal{N} :=
 \sup_{q \geqslant q_{\ast}} q^{- 1 /
           4}  (\log (2 + q))^{- 1 / 2} \| \zeta_q
 \|_{\infty} .\)
-        </div></div>
+        </center></i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -1245,44 +1256,44 @@ W_q\) by <a href="cqft_lecture_5.html#eq:polchinski-fbsde">(10.5)</a>
     <h3 id="auto-15">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">14.1</span>.
-        </strong><span style="font-style: normal"><strong>(Without the cube)
-        </strong></span>Replace \(\frac{\gamma}{3}  (v + g)^3\) by \(0\) in
-        <span style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</span>. Show that \(v = pa^{- 1}
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.1</class>.
+        </strong><class style="font-style: normal"><strong>(Without the cube)
+        </strong></class>Replace \(\frac{\gamma}{3}  (v + g)^3\) by \(0\) in
+        <class style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</class>. Show that \(v = pa^{- 1}
         (g + z)\), so that the estimate fails as \(q \to \infty\) at fixed
-        mass \(a\). Which term of <span style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</span>
+        mass \(a\). Which term of <class style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</class>
         replaces the missing mass, and how does the threshold \(r = (q /
-        \gamma)^{1 / 2}\) enter?</span>
+        \gamma)^{1 / 2}\) enter?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">14.2</span>.
-        </strong><span style="font-style: normal"><strong>(Discrete convexity)
-        </strong></span>Prove that \(\langle \phi' (u), - \Delta_N u \rangle
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.2</class>.
+        </strong><class style="font-style: normal"><strong>(Discrete convexity)
+        </strong></class>Prove that \(\langle \phi' (u), - \Delta_N u \rangle
         \geqslant 0\) for every convex \(\phi \in C^1\) and \(u \in H_N\), and
         that equality holds iff \(\phi' (u (x)) = \phi' (u (x'))\) on every
-        edge \(x \sim x'\) with \(u (x) \ne u (x')\).</span>
+        edge \(x \sim x'\) with \(u (x) \ne u (x')\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">14.3</span>.
-        </strong><span style="font-style: normal"><strong>(Numerical check)
-        </strong></span>Solve <span style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</span>
-        numerically for random \(\gamma, q, a, p, g, z\), and check <span
-        style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</span>. Take \(g\) Gaussian with variance
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.3</class>.
+        </strong><class style="font-style: normal"><strong>(Numerical check)
+        </strong></class>Solve <class style="font-style: normal">(<a href="#eq:scalar">14.1</a>)</class>
+        numerically for random \(\gamma, q, a, p, g, z\), and check <class
+        style="font-style: normal">(<a href="#eq:scalar-bound">14.2</a>)</class>. Take \(g\) Gaussian with variance
         \(\sqrt{q}\), \(z = 0\), \(\gamma = 1\), and compare \(|v + g|\) with
         \((q|g| / \gamma)^{1 / 3}\) and with \(r\). Is the exponent \(5 / 12\)
         of \((q|g|)^{1 / 3} \approx q^{5 / 12}\) attained on one site? What
-        should improve it on the lattice?</span>
+        should improve it on the lattice?</font>
       </p>
     </div>
     <h2 id="auto-16"><a id="sec:backward"></a>15<span style="margin-left: 1em"></span>Backward feedback and
     closure<span style="margin-left: 1em"></span></h2>
     <h3 id="auto-17">15.1<span style="margin-left: 1em"></span>The backward representation<span style="margin-left: 1em"></span></h3>
     <p>
-      The backward equation in <span style="font-style: normal">(<a href="#eq:YZ">1</a>)</span> is
+      The backward equation in <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class> is
       linear in \(Z\). Its propagator is the adapted operator solution of
     </p>
     <table width="100%">
@@ -1305,12 +1316,12 @@ W_q\) by <a href="cqft_lecture_5.html#eq:polchinski-fbsde">(10.5)</a>
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">15.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(Conditional representation) </strong></span><a id="lem:representation"></a>
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">15.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Conditional representation) </strong></class><a id="lem:representation"></a>
         For \(q_{\ast} \leqslant q \leqslant T\), at fixed \(N\),</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:representation"></a>\(\displaystyle Z_q =\mathbb{E}_q
             \left[ \mathcal{P}_{q, T} Z_T + \int_q^T \mathcal{P}_{q,
@@ -1319,12 +1330,12 @@ s}
             .\)</td>
             <td align="right">(15.2)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>By the product rule and <span style="font-style: normal">(<a
-      href="#eq:YZ">1</a>)</span>, \(\mathrm{d}_s (\mathcal{P}_{q, s} Z_s)
+      <strong class="enunciation-name">Proof. </strong>By the product rule and <class style="font-style: normal">(<a
+      href="#eq:YZ">1</a>)</class>, \(\mathrm{d}_s (\mathcal{P}_{q, s} Z_s)
       =\mathcal{P}_{q, s} H_s Z_s \mathrm{d} s
 -\mathcal{P}_{q, s}  (b_s + H_s
       Z_s) \mathrm{d} s +\mathcal{P}_{q, s} \Xi_s
@@ -1351,7 +1362,7 @@ s}
     <p>
       <em>Bounded fields.</em> By (B),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \|Z^{\text{b}}_q \|_2 \leqslant \int_q^{\infty} L_0
       \frac{s}{q}
 \hspace{0.17em} C \gamma^{7 / 2} s^{- 5 / 2}
@@ -1362,7 +1373,7 @@ L_0 C \gamma^{7 / 2} q^{- 3 / 2},
       \|Z^{\text{b}}_q \|_2^2 \hspace{0.17em}
 \mathrm{d} q \leqslant C
       \gamma^6 q_{\ast}^{- 3 / 2} .\)
-    </div>
+    </center>
     <p>
       This is where the two correction steps of Lecture 5 are used: with one
       step the source would be \(O (s^{- 2})\) and the first integral would
@@ -1374,7 +1385,7 @@ L_0 C \gamma^{7 / 2} q^{- 3 / 2},
 \|_2\), so, with \(\delta_{N, T, p}
       := \|TZ_T \|^2_{L^{2 p}  (\mathbb{P}; L^2)}\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \left| \frac{1}{\gamma}  \int_{q_{\ast}}^T q^{1 / 2}
       \|Z^{\text{t}}_q \|_2^2
 \mathrm{d} q \right|_{L^p (\mathbb{P})}
@@ -1384,7 +1395,7 @@ L_0 C \gamma^{7 / 2} q^{- 3 / 2},
 T, p} = \frac{2 L_0^2}{\gamma
       q_{\ast}^{1 / 2}}  \hspace{0.17em} \delta_{N, T,
 p} .\)
-    </div>
+    </center>
     <p>
       At fixed \(N\), \(\delta_{N, T, p} \to 0\) as \(T \to \infty\) (Lemma <a
       href="#lem:terminal">16.1</a>).
@@ -1397,7 +1408,7 @@ p} .\)
 \gamma^3 J_T\) by (B). By
       Cauchy&ndash;Schwarz in \(s\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \|Z^{\text{l}}_q \|_2 \leqslant \frac{L_0}{q}
       \hspace{0.17em} \mathbb{E}_q
 \int_q^T s \|b^{\text{l}}_s \|_2
@@ -1405,7 +1416,7 @@ p} .\)
 \int_q^{\infty} s^{- 3 / 2}
       \mathrm{d} s \right)^{1 / 2} \mathbb{E}_q
 [(A^{\text{l}})^{1 / 2}],\)
-    </div>
+    </center>
     <p>
       so that, by Jensen's inequality, \(\|Z^{\text{l}}_q \|_2^2 \leqslant 2
       L_0^2 q^{- 5 / 2}  \hspace{0.17em}
@@ -1413,7 +1424,7 @@ p} .\)
       Integrating, and using that \(\mathbb{E}_q\) is a contraction on \(L^p
       (\mathbb{P})\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \left| \frac{1}{\gamma}  \int_{q_{\ast}}^T q^{1 / 2}
       \|Z^{\text{l}}_q \|_2^2
 \mathrm{d} q \right|_{L^p} \leqslant \frac{2
@@ -1423,14 +1434,14 @@ p} .\)
 \|_{L^p} \leqslant \frac{C
       \gamma^2}{q_{\ast}} \hspace{0.17em} \|J_T \|_{L^p}
 .\)
-    </div>
+    </center>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Proposition <span style="font-style: normal">15.2</span>.
-        </strong><i><span style="font-style: normal"><strong>(Backward feedback)
-        </strong></span><a id="prop:backward"></a> At every cutoff,</i>
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">15.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Backward feedback)
+        </strong></class><a id="prop:backward"></a> At every cutoff,</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:backward"></a>\(\displaystyle \|E_T \|_{L^p}
           \leqslant C \gamma^6 q_{\ast}^{- 3 / 2} + C \gamma^{- 1}
@@ -1440,7 +1451,7 @@ q_{\ast}^{-
           \|J_T \|_{L^p},\)</td>
           <td align="right">(15.3)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>with \(C\) independent of \(N\), \(T\) and \(p\).</i>
       </p>
@@ -1455,14 +1466,14 @@ q_{\ast}^{-
     <div class="key-result">
       <div class="theorem">
         <p style="margin-top: 1em">
-          <strong class="enunciation-name">Theorem <span style="font-style: normal">15.3</span>.
-          </strong><i><span style="font-style: normal"><strong>(Cutoff-uniform energy estimate)
-          </strong></span><a id="thm:energy"></a> There is \(q_{\ast}\), depending on
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">15.3</class>.
+          </strong><i><class style="font-style: normal"><strong>(Cutoff-uniform energy estimate)
+          </strong></class><a id="thm:energy"></a> There is \(q_{\ast}\), depending on
           \(\gamma\), such that for every \(N\), \(T\) and \(p \geqslant
           1\),</i>
         </p>
         <div style="margin-bottom: 1em">
-          <div class="block-italic"><table width="100%">
+          <i><table width="100%">
             <tr>
               <td width="100%" align="center"><a id="eq:energy"></a>\(\displaystyle \|E_T \|_{L^p} +
               \|J_T \|_{L^p} \leqslant C_{\gamma}  (1 + p^5 + \delta_{N,
@@ -1470,7 +1481,7 @@ T,
               p}) .\)</td>
               <td align="right">(15.4)</td>
             </tr>
-          </table></div>
+          </table></i>
         </div>
       </div>
     </div>
@@ -1478,29 +1489,29 @@ T,
       <strong class="enunciation-name">Proof. </strong>Let \(x = \|E_T \|_p\) and \(y = \|J_T
       \|_p\). By Propositions <a href="#prop:forward">14.3</a> and <a href="#prop:backward">15.2</a>,
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle y \leqslant A_0  \hspace{0.17em} (C \gamma^3 p^5 + x),
       \qquad x \leqslant B_0
 + B_1 \delta_{N, T, p} + \theta \hspace{0.17em}
       y, \qquad \theta = \frac{C
 \gamma^2}{q_{\ast}},\)
-    </div>
+    </center>
     <p style="margin-bottom: 1em">
-      with \(A_0, B_0, B_1\) and the constant in \(\eta\) independent of \(N,
-      T, p\), and bounded for all \(q_{\ast}\) beyond the thresholds already
-      required. Choose \(q_{\ast}\) such that also \(A_0 \eta \leqslant
-      \frac{1}{2}\). Then \(y \leqslant A_0  (C \gamma^3 p^5 + B_0 + B_1
-      \delta_{N, T, p}) + \frac{1}{2} y\). Since \(y < \infty\) by Lemma <a
-      href="#lem:pre">13.1</a>, it can be absorbed, and \(x\) follows.<span style="margin-left: 1em"></span>\(\Box\)
+      with \(A_0, B_0, B_1\) and the constant in \(\theta\) independent of
+      \(N, T, p\), and bounded for all \(q_{\ast}\) beyond the thresholds
+      already required. Choose \(q_{\ast}\) such that also \(A_0 \theta
+      \leqslant \frac{1}{2}\). Then \(y \leqslant A_0  (C \gamma^3 p^5 + B_0 +
+      B_1 \delta_{N, T, p}) + \frac{1}{2} y\). Since \(y < \infty\) by Lemma
+      <a href="#lem:pre">13.1</a>, it can be absorbed, and \(x\) follows.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       The structure of the argument is the point:
     </p>
-    <div class="center">
+    <center>
       <p style="margin-top: 0.5em; margin-bottom: 0.5em">
-        <img src="cqft_lecture_6-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 4.79559228650138em" alt="Figure from Cqft_Lecture_6" decoding="async" loading="lazy">
+        <img src="cqft_lecture_6-1.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 4.79559228650138em" alt="Figure from Constructive quantum field theory — Lecture 6 (notes)" decoding="async" loading="lazy">
       </p>
-    </div>
+    </center>
     <p>
       The smallness is in the <em>feedback</em>, \(\gamma^2 / q_{\ast}\), not
       in the coupling of either equation, and it is independent of the moment
@@ -1559,46 +1570,46 @@ C_{\gamma}
     <h3 id="auto-21">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">15.1</span>.
-        </strong><span style="font-style: normal"><strong>(The scalar backward estimate)
-        </strong></span>On one site, with \(H_q (y) = (q + \gamma y^2)^{-
-        1}\), show that</span>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.1</class>.
+        </strong><class style="font-style: normal"><strong>(The scalar backward estimate)
+        </strong></class>On one site, with \(H_q (y) = (q + \gamma y^2)^{-
+        1}\), show that</font>
       </p>
     </div>
     <div style="margin-left: 38.660688007188px">
       <p>
-        <div style="font-size: 84.1%"><div class="center">
+        <font style="font-size: 84.1%"><center>
           \(\displaystyle \mathcal{P}_{q, s} = \frac{s}{q} \exp \left( -
           \int_q^s \frac{\gamma Y_u^2}{u
 (u + \gamma Y_u^2)} \mathrm{d} u
           \right) \leqslant \frac{s}{q} .\)
-        </div></div>
+        </center></font>
       </p>
     </div>
     <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%">In which sense do large fields make the backward equation
+        <font style="font-size: 84.1%">In which sense do large fields make the backward equation
         more contractive? Redo the three estimates of Section <a href="#sec:backward">15</a>
-        on one site.</span>
+        on one site.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">15.2</span>.
-        </strong><span style="font-style: normal"><strong>(Absorption needs finiteness)
-        </strong></span>Give an example of nonnegative numbers \(x, y\)
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.2</class>.
+        </strong><class style="font-style: normal"><strong>(Absorption needs finiteness)
+        </strong></class>Give an example of nonnegative numbers \(x, y\)
         (possibly infinite) with \(y \leqslant 1 + x\), \(x \leqslant 1 +
         \frac{1}{2} y\) and \(y = \infty\). Where is Lemma <a href="#lem:pre">13.1</a>
-        used in the proof of Theorem <a href="#thm:energy">15.3</a>?</span>
+        used in the proof of Theorem <a href="#thm:energy">15.3</a>?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">15.3</span>.
-        </strong><span style="font-style: normal"><strong>(Moment growth) </strong></span>From
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.3</class>.
+        </strong><class style="font-style: normal"><strong>(Moment growth) </strong></class>From
         \(\|E_{\infty} + J_{\infty} \|_p \leqslant C (1 + p^5)\) for all \(p
         \geqslant 1\), deduce \(\mathbb{E} \exp \{c (E_{\infty} +
-        J_{\infty})^{1 / 5} \} < \infty\) for small \(c\).</span>
+        J_{\infty})^{1 / 5} \} < \infty\) for small \(c\).</font>
       </p>
     </div>
     <h2 id="auto-22">Removing the cutoffs<span style="margin-left: 1em"></span></h2>
@@ -1645,11 +1656,11 @@ C_{\gamma}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">16.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(Boundary lemma) </strong></span><a id="lem:terminal"></a> At fixed
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">16.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Boundary lemma) </strong></class><a id="lem:terminal"></a> At fixed
         \(N\), for every \(p < \infty\), as \(q \to \infty\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:terminal"></a>\(\displaystyle \|Y_q - \Phi_{\infty}
           \|_{L^p (\mathbb{P}; H_N)} + \|qZ_q \|_{L^p
@@ -1659,7 +1670,7 @@ C_{\gamma}
           \qquad \delta_{N, T, p} \leqslant C_{N, p} T^{- 1} .\)</td>
           <td align="right">(16.1)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>The constants depend on \(N\); this is not a uniform estimate.</i>
       </p>
@@ -1722,8 +1733,8 @@ p} q^{- 1 / 2}
       \leqslant \|\mathbb{E}_q (G - G^0_q)\|_{L^p} +
 \|G^0_q - G\|_{L^p}
       \leqslant 2 \|G - G^0_q \|_{L^p} = O (q^{- 1 / 2})\), by the cubic
-      Lipschitz bound for \(DV_N\) and the first step. With <span style="font-style: normal">(<a
-      href="#eq:gradient-match">16.2</a>)</span> and \(\|qC_q \| \leqslant 1\) this proves the
+      Lipschitz bound for \(DV_N\) and the first step. With <class style="font-style: normal">(<a
+      href="#eq:gradient-match">16.2</a>)</class> and \(\|qC_q \| \leqslant 1\) this proves the
       claim.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -1739,7 +1750,7 @@ p} q^{- 1 / 2}
     </p>
     <h3 id="auto-25">16.2<span style="margin-left: 1em"></span>UV stability<span style="margin-left: 1em"></span></h3>
     <p>
-      Now let \(T \to \infty\) at fixed \(N\) in <span style="font-style: normal">(<a href="#eq:energy">15.4</a>)</span>:
+      Now let \(T \to \infty\) at fixed \(N\) in <class style="font-style: normal">(<a href="#eq:energy">15.4</a>)</class>:
       the paths and the law \(\nu_N\) do not depend on \(T\), \(E_T\) and
       \(J_T\) increase to \(E_{\infty}\) and \(J_{\infty}\), and \(\delta_{N,
       T, p} \to 0\) by Lemma <a href="#lem:terminal">16.1</a>. Only then take the supremum
@@ -1748,11 +1759,11 @@ p} q^{- 1 / 2}
     <div class="key-result">
       <div class="theorem">
         <p style="margin-top: 1em">
-          <strong class="enunciation-name">Theorem <span style="font-style: normal">16.2</span>.
-          </strong><i><span style="font-style: normal"><strong>(UV stability) </strong></span><a
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">16.2</class>.
+          </strong><i><class style="font-style: normal"><strong>(UV stability) </strong></class><a
           id="thm:uv"></a> For \(q_{\ast}\) large enough, depending on \(\gamma\),</i>
         </p>
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:uv"></a>\(\displaystyle \sup_N
             (\|E^N_{\infty} \|_{L^p} +\|J^N_{\infty} \|_{L^p})
@@ -1762,15 +1773,15 @@ C_{\gamma}  (1 + p^5), \qquad \sup_N \mathbb{E} \|Z^N_q
 C_{\gamma} q^{- 5 / 2},\)</td>
             <td align="right">(16.4)</td>
           </tr>
-        </table></div>
+        </table></i>
         <p>
           <i>and</i>
         </p>
         <p>
-          <div class="block-italic"><div class="center">
+          <i><center>
             \(\displaystyle \sup_N \mathbb{E} \exp \{c (E^N_{\infty} +
             J^N_{\infty})^{1 / 5} \} < \infty\)
-          </div></div>
+          </center></i>
         </p>
         <p style="margin-bottom: 1em">
           <i>for small \(c > 0\).</i>
@@ -1778,9 +1789,9 @@ C_{\gamma} q^{- 5 / 2},\)</td>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>Monotone convergence in <span style="font-style: normal">(<a
-      href="#eq:energy">15.4</a>)</span>, then the representation formula <span style="font-style: normal">(<a
-      href="#eq:representation">15.2</a>)</span> on \([q, \infty)\), whose terminal term vanishes
+      <strong class="enunciation-name">Proof. </strong>Monotone convergence in <class style="font-style: normal">(<a
+      href="#eq:energy">15.4</a>)</class>, then the representation formula <class style="font-style: normal">(<a
+      href="#eq:representation">15.2</a>)</class> on \([q, \infty)\), whose terminal term vanishes
       by Lemma <a href="#lem:terminal">16.1</a>. The exponential moment follows from the
       polynomial growth by Markov's inequality with \(p \asymp R^{1 /
       5}\).<span style="margin-left: 1em"></span>\(\Box\)
@@ -1792,8 +1803,8 @@ C_{\gamma} q^{- 5 / 2},\)</td>
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">16.3</span>. </strong><i><span
-        style="font-style: normal"><strong>(Lipschitz coordinate) </strong></span><a id="lem:lip"></a>Uniformly
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">16.3</class>. </strong><i><class
+        style="font-style: normal"><strong>(Lipschitz coordinate) </strong></class><a id="lem:lip"></a>Uniformly
         in \(N\), \(\|y_s (x) - y_s (x')\|_{\infty} \leqslant 3 \|x - x'
         \|_{\infty}\) for \(s \geqslant q_{\ast}\) and with the constant \(6\)
         for \(s < q_{\ast}\). So the drift in (<a href="#eq:flows">18.4</a>) is Lipschitz
@@ -1893,14 +1904,14 @@ z \rangle -
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Proposition <span style="font-style: normal">16.4</span>.
-        </strong><i><span style="font-style: normal"><strong>(Restarted UV stability)
-        </strong></span><a id="prop:restart"></a>Let \(q^{\vee} = \text{max} (q,
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">16.4</class>.
+        </strong><i><class style="font-style: normal"><strong>(Restarted UV stability)
+        </strong></class><a id="prop:restart"></a>Let \(q^{\vee} = \text{max} (q,
         q_{\ast})\). With energies on \([q^{\vee}, \infty)\) and \(E, J\) as
         in (<a href="#eq:energies">13.7</a>), for \(p \geqslant 1\), with \(C\) independent
         of \(N, q, x, p\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:restart"></a>\(\displaystyle \|E_{\infty} \|_{L^p
           (\mathbb{P}^{q, x})} + \|J_{\infty} \|_{L^p
@@ -1908,8 +1919,8 @@ z \rangle -
           \leqslant C (1 + p^5 + p^3 R^6), \)</td>
           <td align="right">(16.8)</td>
         </tr>
-      </table></div>
-      <div class="block-italic"><table width="100%">
+      </table></i>
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:restart2"></a>\(\displaystyle \mathbb{E}^{q, x} \|Z_s
           \|_2^2 \leqslant C (1 + R^6) s^{- 5 / 2}, \quad
@@ -1919,13 +1930,13 @@ s
           \geqslant q^{\vee} . \)</td>
           <td align="right">(16.9)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>Below the auxiliary scale, if \(q < q_{\ast}\), for \(p \geqslant
         1\),</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:restart-low"></a>\(\displaystyle \sup_{q \leqslant s
             \leqslant q_{\ast}} \mathbb{E}^{q, x} (\| \psi_s \|_2^{2
@@ -1933,7 +1944,7 @@ p} +\|Y_s
             \|_{\infty}^{2 p} +\|Z_s \|_2^{2 p}) \leqslant C_{p, R} . \)</td>
             <td align="right">(16.10)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em">
@@ -1954,12 +1965,12 @@ p} +\|Y_s
       \zeta^0_t \|_j^j \|_{L^p} \leqslant Cp^{j / 2} t^{j / 4}\). Then the
       part of \(G\) on \([q^{\vee}, q_R)\) has \(L^p\) norm at most
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle C \int_{q^{\vee}}^{q_R} (t^{- 1 / 2} (R^4 + p^2 t) +
       \gamma t^{- 3 / 2} (R^6 +
 p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       \leqslant Cp^3 (1 + R^6),\)
-    </div>
+    </center>
     <p>
       the constant depending on \(\gamma\). So \(\|G_T \|_p \leqslant C (p^5 +
       p^3 R^6)\).
@@ -2013,23 +2024,23 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
     <h3 id="auto-27">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">16.1</span>.
-        </strong><span style="font-style: normal"><strong>(The force at infinite resolution)
-        </strong></span><a id="ex:force-limit"></a> Show that, at fixed \(N\), \(F_q = K_q
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.1</class>.
+        </strong><class style="font-style: normal"><strong>(The force at infinite resolution)
+        </strong></class><a id="ex:force-limit"></a> Show that, at fixed \(N\), \(F_q = K_q
         (\psi_q - \Phi_q) \to - DV_N (\Phi_{\infty})\) in every \(L^p\), and
         that \(F_q = K_q Z_q - \bar{\mathcal{F}}_q (Y_q)\). Interpret the last
         identity: the force observable of Lecture 4 is the explicit force at
-        the approximate forecast, corrected by \(K_q Z_q\).</span>
+        the approximate forecast, corrected by \(K_q Z_q\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">16.2</span>.
-        </strong><span style="font-style: normal"><strong>(Why the stronger boundary)
-        </strong></span>Using the bound on the boundary term in the proof of
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.2</class>.
+        </strong><class style="font-style: normal"><strong>(Why the stronger boundary)
+        </strong></class>Using the bound on the boundary term in the proof of
         Proposition <a href="#prop:backward">15.2</a>, explain why \(Z_T \to 0\) alone would
         not make it vanish, and why the rate \(\|TZ_T \| = o (1)\) of Lemma <a
-        href="#lem:terminal">16.1</a> is what is needed.</span>
+        href="#lem:terminal">16.1</a> is what is needed.</font>
       </p>
     </div>
     <h2 id="auto-28"><a id="sec:compactness"></a>17<span style="margin-left: 1em"></span>Tightness and tails<span style="margin-left: 1em"></span></h2>
@@ -2039,11 +2050,11 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       \(\square_x\) of side \(N^{- 1}\) centred at \(x \in \Lambda_N\), and
       let
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle (\iota_N u) (z) = u (x)  (z \in \square_x), \qquad (j_N
       f) (x) = N^3
 \int_{\square_x} f, \qquad \textsf{P}_N = \iota_N j_N .\)
-    </div>
+    </center>
     <p>
       \(\iota_N : H_N \to H = L^2 (\mathbb{T}^3)\) is an isometry, \(j_N =
       \iota_N^{\ast}\), and \(\textsf{P}_N \to I\) strongly. Fields are
@@ -2061,15 +2072,15 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">17.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(Supremum after closure) </strong></span><a id="lem:sup"></a>Let
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">17.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(Supremum after closure) </strong></class><a id="lem:sup"></a>Let
         \(\mathcal{Y}= \sup_{q \geqslant q_{\ast}} q^{- 5 / 12}  (\log (2 +
         q))^{- 1 /
 6} \|Y_q \|_{\infty}\) and \(\mathcal{Z}= \sup_{q \geqslant
         q_{\ast}} q^{5 / 4} \|Z_q \|_2\). For \(q_{\ast}\) large, with
         \(\mathcal{N}\) the supremum of the noise of Lemma <a href="#lem:noise-sup">14.5</a>,</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:sup-closure"></a>\(\displaystyle \mathcal{Y} \leqslant
           C_{\gamma}  (1 +\mathcal{N}+\mathcal{Z}),
@@ -2079,7 +2090,7 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
 \leqslant C_{\gamma}  (1 + p^5), \)</td>
           <td align="right">(17.1)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>uniformly in \(N\).</i>
       </p>
@@ -2088,10 +2099,10 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       <strong class="enunciation-name">Proof. </strong>By the definitions, \(\| \zeta_q
       \|_{\infty} \leqslant q^{1 / 4}  (\log (2 + q))^{1 / 2} \mathcal{N}\)
       and \(q \|Z_q \|_2 \leqslant q^{- 1 / 4} \mathcal{Z}\). Inserting these
-      in <span style="font-style: normal">(<a href="#eq:sup">14.6</a>)</span>, the first term gives
+      in <class style="font-style: normal">(<a href="#eq:sup">14.6</a>)</class>, the first term gives
       \(\gamma^{- 1 / 3} q^{5 / 12}  (\log (2 + q))^{1 / 6} \mathcal{N}^{1 /
       3}\), and the others are of lower order. The bound on \(\mathcal{Z}\) is
-      <span style="font-style: normal">(<a href="#eq:Z-sup">15.6</a>)</span>, whose boundary term vanishes
+      <class style="font-style: normal">(<a href="#eq:Z-sup">15.6</a>)</class>, whose boundary term vanishes
       by Lemma <a href="#lem:terminal">16.1</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
@@ -2180,18 +2191,18 @@ C_s  \hspace{0.17em}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Corollary <span style="font-style: normal">17.2</span>.
-        </strong><i><span style="font-style: normal"><strong>(Tightness of the lattice measures)
-        </strong></span><a id="cor:tight"></a> For every \(s > \frac{1}{2}\) the
+        <strong class="enunciation-name">Corollary <class style="font-style: normal">17.2</class>.
+        </strong><i><class style="font-style: normal"><strong>(Tightness of the lattice measures)
+        </strong></class><a id="cor:tight"></a> For every \(s > \frac{1}{2}\) the
         embedded laws \(\nu_N \circ \iota_N^{- 1}\) are tight in \(H^{- s}
         (\mathbb{T}^3)\), and \(\sup_N \mathbb{E} \| \iota_N \Phi^N_{\infty}
         \|^p_{H^{- s}} < \infty\) for every \(p\).</i>
       </p>
     </div>
     <p>
-      For the moments: the drift integrals have all moments by <span style="font-style: normal">(<a
-      href="#eq:uv">16.4</a>)</span>, and the \(H^{- s}\) martingale has a
-      deterministic bracket bound by <span style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</span>
+      For the moments: the drift integrals have all moments by <class style="font-style: normal">(<a
+      href="#eq:uv">16.4</a>)</class>, and the \(H^{- s}\) martingale has a
+      deterministic bracket bound by <class style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</class>
       at \(Q = q_{\ast}\), the field at the lower scale has all moments by the
       paragraph above, so the Burkholder&ndash;Davis&ndash;Gundy inequality
       gives all moments.
@@ -2232,9 +2243,9 @@ C_s  \hspace{0.17em}
     </table>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Proposition <span style="font-style: normal">17.3</span>.
-        </strong><i><span style="font-style: normal"><strong>(The source changes the field
-        equation, not the system) </strong></span><a id="prop:source"></a>For \(q
+        <strong class="enunciation-name">Proposition <class style="font-style: normal">17.3</class>.
+        </strong><i><class style="font-style: normal"><strong>(The source changes the field
+        equation, not the system) </strong></class><a id="prop:source"></a>For \(q
         \geqslant q_{\ast}\): the pair \((Y, Z)\) solves (<a href="#eq:YZ">1</a>) with
         the same \(b, H\); \(TZ_T \to 0\) in every \(L^p\) at fixed \(N\); the
         field equation (<a href="#eq:field">13.5</a>) holds with the extra term \(hf\) on
@@ -2272,12 +2283,12 @@ C_s  \hspace{0.17em}
     </table>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">17.4</span>. </strong><i><span
-        style="font-style: normal"><strong>(Quartic tails) </strong></span><a id="thm:hs"></a>Let
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Quartic tails) </strong></class><a id="thm:hs"></a>Let
         \(\|f\|_{\ast} = \|f\|_1 + \|f\|_2 + \|f\|_{\infty}\). There are
         \(\beta, C\) independent of \(N\) and \(f\) such that</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:tested"></a>\(\displaystyle \mathbb{E} | \langle
           \Phi_{\infty}^N, f \rangle | \leqslant C \|f\|_{\ast},
@@ -2287,7 +2298,7 @@ C_s  \hspace{0.17em}
 /\|f\|_{\ast}^4) \leqslant C. \)</td>
           <td align="right">(17.6)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>Consequently, \(\sup_N \mathbb{E} \exp (\beta_{\rho} \| \iota_N
         \Phi_{\infty}^N \|_{H^{-
@@ -2301,12 +2312,12 @@ C_s  \hspace{0.17em}
       \langle \hat{\Phi}, f \rangle\). By (<a href="#eq:endpoint">17.5</a>), \(|Y| \leqslant
       r_q + |t_q |\) and \(q - q_0 \geqslant q / 2\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle |X| \leqslant r_q \|f\|_1 + \|t_q \|_6 \|f\|_{6 / 5} +
       \|Z_q \|_2 \|f\|_2 +
 \frac{2}{q} | \langle \eta_q - B_{q - q_0}, f
       \rangle | .\)
-    </div>
+    </center>
     <p>
       Average over \([q_h, 2 q_h]\). By Proposition <a href="#prop:source">17.3</a>,
       \(\hat{\mathbb{E}} J_{\infty} \leqslant C\) on \([q_h, \infty)\); since
@@ -2344,9 +2355,9 @@ C_s  \hspace{0.17em}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">17.5</span>. </strong><i><span
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">17.5</class>. </strong><i><class
         style="font-style: normal"><strong>(Gaussian tails at the free threshold)
-        </strong></span><a id="thm:hs-gauss"></a>For \(s > \frac{1}{2}\) there is \(\beta_s
+        </strong></class><a id="thm:hs-gauss"></a>For \(s > \frac{1}{2}\) there is \(\beta_s
         > 0\) with \(\sup_N \mathbb{E} \exp (\beta_s \| \iota_N
         \Phi_{\infty}^N \|_{H^{- s}}^2) <
 \infty\).</i>
@@ -2376,46 +2387,46 @@ C_s  \hspace{0.17em}
     <h3 id="auto-33">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">17.1</span>.
-        </strong><span style="font-style: normal"><strong>(One site: the sharp threshold)
-        </strong></span>On one site, with \(\nu \propto \exp \left( -
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.1</class>.
+        </strong><class style="font-style: normal"><strong>(One site: the sharp threshold)
+        </strong></class>On one site, with \(\nu \propto \exp \left( -
         \frac{\lambda}{4} x^4 - \frac{q_0}{2} x^2 \right)\), show that
         \(\mathbb{E} \exp \left( \frac{\beta}{4} x^4 \right)\) is finite if
         and only if \(\beta \leqslant \lambda\). Compute \(L (h)\)
-        asymptotically and compare with Theorem <a href="#thm:hs">17.4</a>.</span>
+        asymptotically and compare with Theorem <a href="#thm:hs">17.4</a>.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">17.2</span>.
-        </strong><span style="font-style: normal"><strong>(The shift) </strong></span>Show
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.2</class>.
+        </strong><class style="font-style: normal"><strong>(The shift) </strong></class>Show
         directly on one site that \(q (\hat{\psi}_q - y_q) \to h\) if \(y_q\)
         solves \(qy + \lambda y^3 = q \Phi_q\), and that \(qZ_q \to 0\) with
         (<a href="#eq:shift">17.4</a>). Why does a quartic tilt have no such shift, and
-        which power of the field does its boundary term produce?</span>
+        which power of the field does its boundary term produce?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">17.3</span>.
-        </strong><span style="font-style: normal"><strong>(Moment growth and determinacy)
-        </strong></span>Deduce Carleman's condition for \(\langle \Phi, f
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.3</class>.
+        </strong><class style="font-style: normal"><strong>(Moment growth and determinacy)
+        </strong></class>Deduce Carleman's condition for \(\langle \Phi, f
         \rangle\) from Theorem <a href="#thm:hs">17.4</a>. Why does the theorem exclude
-        a nondegenerate Gaussian law for \(\langle \Phi, f \rangle\)?</span>
+        a nondegenerate Gaussian law for \(\langle \Phi, f \rangle\)?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">17.4</span>.
-        </strong><span style="font-style: normal"><strong>(Regularity at finite resolution)
-        </strong></span><a id="ex:H1"></a>On \(I = [q_{\ast}, Q]\), test \(K_{q_0}
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.4</class>.
+        </strong><class style="font-style: normal"><strong>(Regularity at finite resolution)
+        </strong></class><a id="ex:H1"></a>On \(I = [q_{\ast}, Q]\), test \(K_{q_0}
         V_q = (q - q_0) (\zeta_q - \varrho_q (Y_q) + Z_q) -
         \frac{\gamma}{3}
 Y_q^3\) with \(V_q\), and show from the energy bounds
         that \(\sup_N \mathbb{E} \int_I \|V_q \|_{H^1}^2 \hspace{0.17em}
         \mathrm{d} q <
 \infty\). In which sense is the field at finite
-        resolution smoother than the free field?</span>
+        resolution smoother than the free field?</font>
       </p>
     </div>
     <h2 id="auto-34"><a id="sec:limit"></a>18<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
@@ -2577,13 +2588,13 @@ s + C_s
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">18.1</span>. </strong><i><span
-        style="font-style: normal"><strong>(The defect on all fields) </strong></span><a id="lem:e-bound"></a>Let
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">18.1</class>. </strong><i><class
+        style="font-style: normal"><strong>(The defect on all fields) </strong></class><a id="lem:e-bound"></a>Let
         \(\pi_s\) be the pointwise projection on \([- r_s, r_s]\). For all
         \(y\) and \(s \geqslant q_{\ast}\),</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:e-bound"></a>\(\displaystyle |e_s (y) | \leqslant
             C \gamma^5 s^{- 3} \| \pi_s y\|_4^4 + C \gamma^3 s^{- 5 /
@@ -2591,7 +2602,7 @@ s + C_s
             (y)\|_6^6 . \)</td>
             <td align="right">(18.5)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -2604,9 +2615,9 @@ s + C_s
       \hspace{0.17em} \mathrm{d} \theta\), and \(y - \pi_s y\) is supported on
       the set \(\mathcal{A}\) where \(|y| > r_s\), with norm at most \(\|t_s
       \|_2\). Write \(De = D \kappa \mathcal{D}^{\text{o}} \circ \kappa
-      +\mathfrak{D}\). Then \(|\mathcal{D}^{\text{o}} | \leqslant S_4
-      (\mathcal{D}^{\text{o}}) (2 r_s)^3
-\leqslant C \gamma^{7 / 2} s^{- 3 /
+      +\mathfrak{D}\). Then \(|\mathcal{D}^{\text{o}} | \leqslant \textsf{S}_4
+      (\mathcal{D}^{\text{o}}) (2
+r_s)^3 \leqslant C \gamma^{7 / 2} s^{- 3 /
       2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so
       the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2\).
       By the term-by-term bounds behind Proposition <a href="cqft_lecture_5.html#prop:source">12.2</a> (the
@@ -2655,12 +2666,12 @@ y_s +
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.2</span>. </strong><i><span
-        style="font-style: normal"><strong>(Density and sandwich) </strong></span><a id="thm:sandwich"></a>At
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.2</class>. </strong><i><class
+        style="font-style: normal"><strong>(Density and sandwich) </strong></class><a id="thm:sandwich"></a>At
         fixed \(N\), \(\mathbb{P}^{q, x}\) and \(\mathbb{R}^{q, x}\) are
         equivalent on the paths on \([q, \infty)\), and</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:density"></a>\(\displaystyle \frac{\hspace{0.17em}
           \mathrm{d} \mathbb{P}^{q, x}}{\hspace{0.17em}
@@ -2675,11 +2686,11 @@ y_s +
           \right) . \)</td>
           <td align="right">(18.7)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>Further,</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:entropy"></a>\(\displaystyle \text{Ent}
           (\mathbb{P}^{q, x} |\mathbb{R}^{q, x}) = \frac{1}{2}
@@ -2687,8 +2698,8 @@ y_s +
           \mathbb{E}^{q, x} \|Z_s \|_2^2 \hspace{0.17em} \mathrm{d} s, \)</td>
           <td align="right">(18.8)</td>
         </tr>
-      </table></div>
-      <div class="block-italic"><table width="100%">
+      </table></i>
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:Aid"></a>\(\displaystyle A_N (q, x) = \text{Ent}
           (\mathbb{P}^{q, x} |\mathbb{R}^{q, x})
@@ -2697,11 +2708,11 @@ y_s +
 \mathrm{d} s, \)</td>
           <td align="right">(18.9)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>and so</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:sandwich"></a>\(\displaystyle
           \mathbb{E}^{\mathbb{P}^{q, x}} \int_q^{\infty} e_s (Y_s)
@@ -2712,12 +2723,12 @@ y_s +
           \hspace{0.17em} \mathrm{d} s. \)</td>
           <td align="right">(18.10)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>Uniformly in \(N\), for \(\|x\|_{\infty} \leqslant R\) and \(T
         \geqslant q^{\vee}\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:tails"></a>\(\displaystyle
           \mathbb{E}^{\mathbb{P}^{q, x}} \int_T^{\infty} |e_s (Y_s) |
@@ -2728,7 +2739,7 @@ y_s +
           C_R T^{- 1 / 2} . \)</td>
           <td align="right">(18.11)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>The integrals over \([q, q_{\ast}]\), if \(q < q_{\ast}\), are at
         most \(C_R\). In particular \(|A_N (q, x) | \leqslant C_R\).</i>
@@ -2746,7 +2757,7 @@ y_s +
       \right)\); it is a true martingale since the drift is Lipschitz at fixed
       \(N\). So
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle M_T : = \left. \frac{\hspace{0.17em} \mathrm{d}
       \mathbb{P}^{q,
 x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
@@ -2754,7 +2765,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
 \left( \Delta_q (x) - \Delta_T (x_T) - \int_q^T
       (e_s (Y_s) + c (s))
 \hspace{0.17em} \mathrm{d} s \right) .\)
-    </div>
+    </center>
     <p>
       <strong>Entropy on</strong> \([q, T]\). Under \(\mathbb{P}^{q, x}\) the
       explicit flow has the extra drift \(C_s Z_s\), so \(\log M_T = \int_q^T
@@ -2843,8 +2854,8 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Lemma <span style="font-style: normal">18.3</span>. </strong><i><span
-        style="font-style: normal"><strong>(Consistency) </strong></span><a id="lem:cons"></a>If \(x_N \in
+        <strong class="enunciation-name">Lemma <class style="font-style: normal">18.3</class>. </strong><i><class
+        style="font-style: normal"><strong>(Consistency) </strong></class><a id="lem:cons"></a>If \(x_N \in
         H_N\), \(x\) is continuous, and the interpolations \(\iota_N x_N \to
         x\) uniformly, then for each \(s\), \(\iota_N y^N_s (x_N) \to y_s
         (x)\) uniformly, and \(e^N_s (y^N_s (x_N)) \to e_s (y_s (x))\).</i>
@@ -2858,7 +2869,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
       (0) = 0\), so \(e_s (y) = \int_0^1 \langle \mathcal{D}_s (ty), y \rangle
       \hspace{0.17em}
 \mathrm{d} t\). By the consistency of the coefficients
-      (Theorem <a href="cqft_supplement.html#c-pathcons">28.3</a> of the Supplement), \(\mathcal{D}^N_s
+      (Theorem <a href="cqft_supplement.html#c-cons">31.2</a> of the Supplement), \(\mathcal{D}^N_s
       (\phi_N)\) converges weakly in \(L^2\) at each \(s\) for smooth bounded
       \(\phi\), and uniformly in \(N\), \(\|\mathcal{D}^N_s (y)
       -\mathcal{D}^N_s (z)\|_2 \leqslant C (1 +\|z\|_{\infty})
@@ -2897,31 +2908,31 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.4</span>. </strong><i><span
-        style="font-style: normal"><strong>(Limit of the kernels) </strong></span><a id="thm:limit-kernel"></a>Let
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.4</class>. </strong><i><class
+        style="font-style: normal"><strong>(Limit of the kernels) </strong></class><a id="thm:limit-kernel"></a>Let
         \(\iota_N x_N \to x\) uniformly, \(x\) continuous. The densities (<a
         href="#eq:density">18.7</a>) converge in \(L^1\) along the coupling, \(A_N (q, x_N)
         \to A (q, x)\), and for bounded continuous cylinder functions \(O\) of
         the terminal field</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:kernel"></a>\(\displaystyle \begin{array}{rl}
 
           \mathbb{E}^{\mathbb{P}^{q, x_N}} O (\hat{\Phi}) \to \Pi_q O (x) : =
-          &amp;
+          &
   \mathrm{e}^{A (q, x)} \mathbb{E}^{\mathbb{R}^{q, x}} \left[ O
           (Y_{\infty})
   \exp (- \int_q^{\infty} e_s (Y_s) \hspace{0.17em}
           \mathrm{d} s) \right],\\
-  \mathrm{e}^{- A (q, x)} = &amp;
+  \mathrm{e}^{- A (q, x)} = &
           \mathbb{E}^{\mathbb{R}^{q, x}} \exp (-
   \int_q^{\infty} e_s (Y_s)
           \hspace{0.17em} \mathrm{d} s) .
 \end{array} \)</td>
           <td align="right">(18.12)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p style="margin-bottom: 1em">
         <i>The same holds for bounded functionals of the path \((x_s)_{s
         \leqslant T}\) and finitely many \(\langle \varphi, h_i \rangle\)
@@ -2966,15 +2977,15 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.5</span>. </strong><i><span
-        style="font-style: normal"><strong>(The measure) </strong></span><a id="thm:nu"></a>For bounded
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.5</class>. </strong><i><class
+        style="font-style: normal"><strong>(The measure) </strong></class><a id="thm:nu"></a>For bounded
         continuous cylinder \(O\), the whole sequence converges, and with
         \(\mathbb{R}\) the explicit flow \(\hspace{0.17em} \mathrm{d} Y = b
         (Y) \hspace{0.17em} \mathrm{d} s + H (Y)
 \hspace{0.17em} \mathrm{d}
         W\) on \([q_0, \infty)\), \(Y_{q_0} = 0\),</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:GM0"></a>\(\displaystyle \int O \hspace{0.17em}
           \mathrm{d} \nu = \frac{\mathbb{E}^{\mathbb{R}} \left[ O
@@ -2987,13 +2998,13 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
           \mathrm{d} s} \right]} . \)</td>
           <td align="right">(18.13)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>With \(V_N (0) = 0\) and \(\mu_C\) the Gaussian measure of
         covariance \(C_{q_0}\), the renormalised free energy converges:</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:free"></a>\(\displaystyle - \log \int
             \mathrm{e}^{- V_N} \hspace{0.17em} \mathrm{d} \mu_C
@@ -3004,7 +3015,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
             (Y_s) \hspace{0.17em} \mathrm{d} s} . \)</td>
             <td align="right">(18.14)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -3032,15 +3043,15 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
     <div class="key-result">
       <div class="theorem">
         <p style="margin-top: 1em">
-          <strong class="enunciation-name">Theorem <span style="font-style: normal">18.6</span>.
-          </strong><i><span style="font-style: normal"><strong>(Construction of \(\Phi^4_3\))
-          </strong></span><a id="thm:limit"></a>Let \(\lambda, q_0 > 0\), \(r \in
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">18.6</class>.
+          </strong><i><class style="font-style: normal"><strong>(Construction of \(\Phi^4_3\))
+          </strong></class><a id="thm:limit"></a>Let \(\lambda, q_0 > 0\), \(r \in
           \mathbb{R}\), with the counterterm of Theorem <a href="cqft_lecture_5.html#thm:counter">11.2</a> (or
           \(q_{\ast}\) large and \(b_N \to b\), \(|b_N | \leqslant B \gamma
           q_{\ast}^{1 / 2}\)). Under \(\mathbb{P}\):</i>
         </p>
         <div style="margin-bottom: 1em">
-          <div class="block-italic"><div class="enum-alpha">
+          <i><div class="enum-alpha">
             <ol>
               <li>
                 <p>
@@ -3081,11 +3092,11 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
                   <tr>
                     <td width="100%" align="center"><a id="eq:limit-equations"></a>\(\displaystyle
                     \begin{array}{rl}
-  Y_q = &amp; \int_{q_0}^q (b_s (Y_s) + H_s
+  Y_q = & \int_{q_0}^q (b_s (Y_s) + H_s
                     (Y_s) Z_s) \hspace{0.17em} \mathrm{d}
   s + \int_{q_0}^q
                     H_s (Y_s) \hspace{0.17em} \mathrm{d} W_s\\
-  Z_q = &amp; -
+  Z_q = & -
                     \int_{q_0}^q (b_s (Y_s) + H_s (Y_s) Z_s) \hspace{0.17em}
 
                     \mathrm{d} s + \int_{q_0}^q \Xi_s \hspace{0.17em}
@@ -3135,7 +3146,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
                 </p>
               </li>
             </ol>
-          </div></div>
+          </div></i>
         </div>
       </div>
     </div>
@@ -3294,8 +3305,8 @@ W^{\mathbb{R}} - Z
       variables, and Fatou's lemma applies.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <span style="font-style: normal">18.7</span>. </strong><span style="font-style: normal"><strong>(Hidden
-      noise) </strong></span><a id="rem:hidden"></a>Let \(B\) be a real Brownian motion
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.7</class>. </strong><class style="font-style: normal"><strong>(Hidden
+      noise) </strong></class><a id="rem:hidden"></a>Let \(B\) be a real Brownian motion
       and \(L^n_t = \int_0^t (1 + \text{sin} (ns)) \hspace{0.17em} \mathrm{d}
       B_s\). Then \((L^n, B)\) converges in law to \((B + 2^{- 1 / 2}
       \tilde{B}, B)\), with \(\tilde{B}\) an independent Brownian motion: the
@@ -3317,8 +3328,8 @@ W^{\mathbb{R}} - Z
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.8</span>. </strong><i><span
-        style="font-style: normal"><strong>(Integration by parts) </strong></span><a id="thm:DS"></a> Let
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.8</class>. </strong><i><class
+        style="font-style: normal"><strong>(Integration by parts) </strong></class><a id="thm:DS"></a> Let
         \(h, h_1, \ldots, h_k\) be smooth and \(G (\varphi) = g (\langle
         \varphi, h_1 \rangle, \ldots, \langle \varphi, h_k
 \rangle)\) with \(g
@@ -3329,7 +3340,7 @@ W^{\mathbb{R}} - Z
         \Delta_N)^{- 1}\) with \(m^2 = q_0\)),</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:DS"></a>\(\displaystyle \lim_N \mathbb{E}
             \left[ G (\iota_N \Phi^N_{\infty}) \hspace{0.17em} \langle
@@ -3341,7 +3352,7 @@ W^{\mathbb{R}} - Z
 \Delta) h \rangle] .\)</td>
             <td align="right">(18.19)</td>
           </tr>
-        </table></div>
+        </table></i>
       </div>
     </div>
     <p style="margin-top: 1em">
@@ -3350,13 +3361,13 @@ W^{\mathbb{R}} - Z
       K_{q_0} \varphi \rangle}\) gives, with \(x = \Phi^N_{\infty}\) and \(h_N
       = j_N h\),
     </p>
-    <div class="center">
+    <center>
       \(\displaystyle \mathbb{E} [G (\iota_N x) \langle \mu_N x + \lambda x^3,
       h_N \rangle]
 =\mathbb{E} [D_{h_N} (G \circ \iota_N) (x)] -\mathbb{E} [G
       (\iota_N x) \langle
 x, K_{q_0} h_N \rangle] .\)
-    </div>
+    </center>
     <p style="margin-bottom: 1em">
       Cell averaging commutes with lattice translations, so \(K_{q_0} j_N h =
       j_N  (q_0 - \Delta^{\text{tr}}_N) h\) with \(\Delta^{\text{tr}}_N\) the
@@ -3382,8 +3393,8 @@ x, K_{q_0} h_N \rangle] .\)
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.9</span>. </strong><i><span
-        style="font-style: normal"><strong>(The field equation in the limit) </strong></span><a
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.9</class>. </strong><i><class
+        style="font-style: normal"><strong>(The field equation in the limit) </strong></class><a
         id="thm:field-q"></a>For the limit of Theorem <a href="#thm:limit">18.6</a>, Theorem <a href="cqft_lecture_4.html#thm:DS-scale">9.1</a>
         and Corollary <a href="cqft_lecture_4.html#cor:DS-path">9.3</a> of Lecture 4 hold at every resolution,
         with \(F_q = K_q (\psi_q - \Phi_q)\), \(\eta_q = K_q \Phi_q - (q -
@@ -3391,14 +3402,14 @@ x, K_{q_0} h_N \rangle] .\)
         smooth \(h\) and cylinder \(G\), almost surely as distributions, and
         with no renormalisation constant,</i>
       </p>
-      <div class="block-italic"><table width="100%">
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:field-q"></a>\(\displaystyle K_{q_0} \Phi_q = J_q
           F_q + \eta_q, \)</td>
           <td align="right">(18.20)</td>
         </tr>
-      </table></div>
-      <div class="block-italic"><table width="100%">
+      </table></i>
+      <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:DS-q"></a>\(\displaystyle \mathbb{E}D_{J_q h} G
           (\Phi_q) =\mathbb{E} [G (\Phi_q) \langle \eta_q, h
@@ -3408,17 +3419,17 @@ x, K_{q_0} h_N \rangle] .\)
 F_q, J_q h \rangle)], \)</td>
           <td align="right">(18.21)</td>
         </tr>
-      </table></div>
+      </table></i>
       <p>
         <i>and \(\langle F, h \rangle, \langle \eta, h \rangle\) are centred
         martingales, with</i>
       </p>
       <p>
-        <div class="block-italic"><div class="center">
+        <i><center>
           \(\displaystyle \langle F_q, h \rangle = \int_{q_0}^q \langle
           (\text{Cov}_s K_s - I) h,
 \hspace{0.17em} \mathrm{d} W_s \rangle\)
-        </div></div>
+        </center></i>
       </p>
       <p>
         <i>and \(\mathbb{E} \mathrm{e}^{\langle \eta_q, h \rangle} \leqslant
@@ -3426,19 +3437,19 @@ F_q, J_q h \rangle)], \)</td>
 q_0) \|h\|_2^2 / 2}\). Moreover:</i>
       </p>
       <div style="margin-bottom: 1em">
-        <div class="block-italic"><div class="enum-alpha">
+        <i><div class="enum-alpha">
           <ol>
             <li>
               <p>
                 <strong>The renormalised cube as an observable.</strong> For
                 large \(q\), with the explicit force
               </p>
-              <div class="center">
+              <center>
                 \(\displaystyle \langle \bar{\mathcal{F}}_q (Y_q), h \rangle :
                 = \langle K_q \Phi_q, h \rangle
 - \langle Y_q, K_q h
                 \rangle,\)
-              </div>
+              </center>
               <table width="100%">
                 <tr>
                   <td width="100%" align="center"><a id="eq:germ"></a>\(\displaystyle \| \langle F_q,
@@ -3453,10 +3464,10 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
                 So \(\langle F, h \rangle\) is the unique martingale
                 asymptotically equivalent to the germ
               </p>
-              <div class="center">
+              <center>
                 \(\displaystyle - \langle \bar{\mathcal{F}}_q (Y_q), h
                 \rangle,\)
-              </div>
+              </center>
               <p>
                 in the sense of Lemma <a href="cqft_lecture_3.html#lem:uniq">5.4</a> of Lecture 3.
               </p>
@@ -3507,7 +3518,7 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
               </p>
             </li>
           </ol>
-        </div></div>
+        </div></i>
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -3563,8 +3574,8 @@ W^{\mathbb{R}} \rangle\),
     </table>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Definition <span style="font-style: normal">18.10</span>.
-        </strong><i><span style="font-style: normal"><strong>(Scalar FBSDE) </strong></span><a
+        <strong class="enunciation-name">Definition <class style="font-style: normal">18.10</class>.
+        </strong><i><class style="font-style: normal"><strong>(Scalar FBSDE) </strong></class><a
         id="def:scalar"></a>Fix \(q \geqslant q_0\) and a continuous \(x\). A
         <strong>solution</strong> is a filtered probability space, of law
         \(\mathbb{Q}\), with an \(\mathcal{F}_t\)-cylindrical Brownian motion
@@ -3596,8 +3607,8 @@ W_s\): the forward equation of
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
-        <strong class="enunciation-name">Theorem <span style="font-style: normal">18.11</span>. </strong><i><span
-        style="font-style: normal"><strong>(Uniqueness in law) </strong></span><a id="thm:unique-law"></a>For
+        <strong class="enunciation-name">Theorem <class style="font-style: normal">18.11</class>. </strong><i><class
+        style="font-style: normal"><strong>(Uniqueness in law) </strong></class><a id="thm:unique-law"></a>For
         every solution, the law of \(x\) on paths is the limit of
         \(\mathbb{P}^{q, x_N}\), \(A_q = A (q, x)\), and \(Z\) is the adapted
         functional of the path of \(x\) of the exact solution. So the terminal
@@ -3646,13 +3657,13 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
     <div class="key-result">
       <div class="theorem">
         <p style="margin-top: 1em">
-          <strong class="enunciation-name">Theorem <span style="font-style: normal">18.12</span>.
-          </strong><i><span style="font-style: normal"><strong>(Renormalised variational formula)
-          </strong></span><a id="thm:var"></a>For \(q \geqslant q_0\), \(x\)
+          <strong class="enunciation-name">Theorem <class style="font-style: normal">18.12</class>.
+          </strong><i><class style="font-style: normal"><strong>(Renormalised variational formula)
+          </strong></class><a id="thm:var"></a>For \(q \geqslant q_0\), \(x\)
           continuous, and \(O\) bounded measurable on paths, under the
           reference \(\mathbb{R}^{q, x}\),</i>
         </p>
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:var-x"></a>\(\displaystyle - \log
             \mathbb{E}^{\mathbb{R}^{q, x}} \mathrm{e}^{- O - \int_q^{\infty}
@@ -3667,7 +3678,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
             s \right] \right], \)</td>
             <td align="right">(18.26)</td>
           </tr>
-        </table></div>
+        </table></i>
         <p>
           <i>where, for \(\mathbb{Q}\) of finite entropy, \(u\) is the drift
           of \(W\) under \(\mathbb{Q}\) added to (<a href="#eq:flows">18.4</a>) as \(C_s
@@ -3682,7 +3693,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
           particular, at \((q, x) = (q_0, 0)\), for \(O\) a bounded continuous
           cylinder function of the terminal field,</i>
         </p>
-        <div class="block-italic"><table width="100%">
+        <i><table width="100%">
           <tr>
             <td width="100%" align="center"><a id="eq:var"></a>\(\displaystyle - \log \int
             \mathrm{e}^{- O} \hspace{0.17em} \mathrm{d} \nu =\mathcal{G}
@@ -3695,7 +3706,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
             \quad Y^u_{q_0} = 0, \)</td>
             <td align="right">(18.27)</td>
           </tr>
-        </table></div>
+        </table></i>
         <p style="margin-bottom: 1em">
           <i>the infimum being over the laws of finite entropy with respect to
           \(\mathbb{R}\), and \(\mathcal{G} (0) = A (q_0, 0)\) is the
@@ -3745,8 +3756,8 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <span style="font-style: normal">18.13</span>. </strong><span
-      style="font-style: normal"><strong>(Coercivity as a corollary) </strong></span><a id="rem:coerc"></a>(<a
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.13</class>. </strong><class
+      style="font-style: normal"><strong>(Coercivity as a corollary) </strong></class><a id="rem:coerc"></a>(<a
       href="#eq:var-x">18.26</a>) with \(O = 0\) reads, for every control, \(\mathbb{E}
       \int \left( e_s (Y^u_s) + \frac{1}{2} \|u_s \|^2 \right)
 \hspace{0.17em}
@@ -3761,8 +3772,8 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       \int e}\), \(p > 1\), which are not needed here.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <span style="font-style: normal">18.14</span>. </strong><span
-      style="font-style: normal"><strong>(Comparison) </strong></span><a id="rem:comp"></a>In the
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.14</class>. </strong><class
+      style="font-style: normal"><strong>(Comparison) </strong></class><a id="rem:comp"></a>In the
       Barashkov&ndash;Gubinelli functional the Lagrangian contains
       \(\frac{1}{2} \|u\|^2\) for a control singular at the cutoff, and
       renormalisation is a change of variables in the cost, subtracting the
@@ -3775,8 +3786,8 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       used pathwise, the remainder in expectation.
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Remark <span style="font-style: normal">18.15</span>. </strong><span
-      style="font-style: normal"><strong>(Comparison with sine&ndash;Gordon) </strong></span><a
+      <strong class="enunciation-name">Remark <class style="font-style: normal">18.15</class>. </strong><class
+      style="font-style: normal"><strong>(Comparison with sine&ndash;Gordon) </strong></class><a
       id="rem:GM"></a>In [<a href="#bib-GM24">GM24</a>] the smoothed force and the defect are
       bounded uniformly in the field, there is a spatial cut-off, and the same
       formula follows from boundedness; (<a href="#eq:scalar-A">18.25</a>) is the analogue
@@ -3876,9 +3887,9 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
     <h3 id="auto-43">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.1</span>.
-        </strong><span style="font-style: normal"><strong>(The force observable)
-        </strong></span><a id="ex:force-observable"></a> Show that \(\langle F^N_q, j_N h \rangle
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.1</class>.
+        </strong><class style="font-style: normal"><strong>(The force observable)
+        </strong></class><a id="ex:force-observable"></a> Show that \(\langle F^N_q, j_N h \rangle
         = \langle \psi^N_q, K_q j_N h \rangle - \langle
 W^N_q, j_N h \rangle -
         \int_{q_0}^q \langle \psi^N_s, j_N h \rangle \mathrm{d}
@@ -3891,22 +3902,22 @@ s\). Deduce
         0\), since \(\nu_N\) is even). (Cross-check: \(F_q = K_q Z_q -
         \bar{\mathcal{F}}_q (Y_q)\), with Theorem <a href="#thm:uv">16.2</a>, gives a
         uniform second-moment bound.) Why does this not give a terminal value
-        \(F_{\infty}\)?</span>
+        \(F_{\infty}\)?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.2</span>.
-        </strong><span style="font-style: normal"><strong>(Hidden noise) </strong></span><a id="ex:hidden"></a>Prove
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.2</class>.
+        </strong><class style="font-style: normal"><strong>(Hidden noise) </strong></class><a id="ex:hidden"></a>Prove
         the claim of Remark <a href="#rem:hidden">18.7</a>. In the proof of Theorem <a
-        href="#thm:limit">18.6</a>, which step excludes it?</span>
+        href="#thm:limit">18.6</a>, which step excludes it?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.3</span>.
-        </strong><span style="font-style: normal"><strong>(Riccati and positivity)
-        </strong></span><a id="ex:riccati"></a>At fixed \(N\), show that the conditional
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.3</class>.
+        </strong><class style="font-style: normal"><strong>(Riccati and positivity)
+        </strong></class><a id="ex:riccati"></a>At fixed \(N\), show that the conditional
         covariance \(\text{Cov}_q\) satisfies \(\mathrm{d} \text{Cov}_q = -
         \text{Cov}_q^2 \hspace{0.17em} \mathrm{d} q
 +\mathfrak{k}_q
@@ -3915,14 +3926,14 @@ s\). Deduce
         family, Proposition <a href="cqft_lecture_5.html#prop:posterior">10.4</a>(b) of Lecture 5). For a Gaussian
         \(\nu_N = \mu^C\), solve this and check that \(\text{Cov}_q = C_q\).
         For a general \(\nu_N\), show that \(\text{Tr} \text{Cov}_q\) is a
-        supermartingale, and compare with (<a href="#eq:Cov">18.17</a>).</span>
+        supermartingale, and compare with (<a href="#eq:Cov">18.17</a>).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.4</span>.
-        </strong><span style="font-style: normal"><strong>(Reflection positivity)
-        </strong></span><a id="ex:RP"></a> Show that \(\nu_N\) is reflection
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.4</class>.
+        </strong><class style="font-style: normal"><strong>(Reflection positivity)
+        </strong></class><a id="ex:RP"></a> Show that \(\nu_N\) is reflection
         positive for reflections in lattice and mid-lattice planes
         (nearest-neighbour Gaussian times a local potential). Deduce
         reflection positivity of \(\nu\) for every coordinate plane \(\{x_1 =
@@ -3934,38 +3945,38 @@ s\). Deduce
         side. Since lattice and mid-lattice reflections map cells to cells,
         \(\theta_{a_N} j_N f = j_N \theta_{a_N} f\), so the reflected tested
         variables are \(\langle \iota_N \Phi, \theta_{a_N} f \rangle\), with
-        \(\theta_{a_N} f \to \theta_a f\) in every \(H^s\).</span>
+        \(\theta_{a_N} f \to \theta_a f\) in every \(H^s\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.5</span>.
-        </strong><span style="font-style: normal"><strong>(Dyson&ndash;Schwinger by Gaussian
-        integration by parts) </strong></span>(a) At fixed \(N\), check that
-        <span style="font-style: normal">(<a href="#eq:DS-q">18.21</a>)</span> is Theorem <a href="cqft_lecture_4.html#thm:DS-scale">9.1</a>
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.5</class>.
+        </strong><class style="font-style: normal"><strong>(Dyson&ndash;Schwinger by Gaussian
+        integration by parts) </strong></class>(a) At fixed \(N\), check that
+        <class style="font-style: normal">(<a href="#eq:DS-q">18.21</a>)</class> is Theorem <a href="cqft_lecture_4.html#thm:DS-scale">9.1</a>
         of Lecture 4 in the profile of Lecture 5, and compare the proofs of
         Theorem <a href="cqft_lecture_4.html#thm:DS-scale">9.1</a> and of Corollary <a href="cqft_lecture_4.html#cor:DS-path">9.3</a> (\(k = 1\))
         of Lecture 4: score of the law of \(\Phi_q\) against the filtered
-        noise. (b) For \(V_N = 0\), write \(F = 0\) and check <span style="font-style: normal">(<a
-        href="#eq:field-q">18.20</a>)</span> directly. (c) Show that \(\langle F, h
+        noise. (b) For \(V_N = 0\), write \(F = 0\) and check <class style="font-style: normal">(<a
+        href="#eq:field-q">18.20</a>)</class> directly. (c) Show that \(\langle F, h
         \rangle\) has bracket \(\int \|(\operatorname{Cov}_s K_s - I) h\|_2^2
-        \mathrm{d} s\), and that <span style="font-style: normal">(<a href="#eq:germ">18.22</a>)</span>
-        does not bound it uniformly in \(q\). What would a bound imply?</span>
+        \mathrm{d} s\), and that <class style="font-style: normal">(<a href="#eq:germ">18.22</a>)</class>
+        does not bound it uniformly in \(q\). What would a bound imply?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.6</span>.
-        </strong><span style="font-style: normal"><strong>(Negative Sobolev threshold)
-        </strong></span>Verify <span style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</span>, and
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.6</class>.
+        </strong><class style="font-style: normal"><strong>(Negative Sobolev threshold)
+        </strong></class>Verify <class style="font-style: normal">(<a href="#eq:noise-tail">17.2</a>)</class>, and
         show that at \(s = \frac{3}{2}\) the bound becomes \(Q^{- 1} \log (2 +
-        Q)\).</span>
+        Q)\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.7</span>.
-        </strong><span style="font-style: normal"><strong>(One site) </strong></span><a id="ex:one-site"></a>On
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.7</class>.
+        </strong><class style="font-style: normal"><strong>(One site) </strong></class><a id="ex:one-site"></a>On
         one site take \(K_s = s\), \(\bar{\mathcal{F}} (y) = \frac{\gamma}{3}
         y^3 + ay\) independent of \(s\), with \(s + a > 0\) on the range
         considered, and \(DV_N = \bar{\mathcal{F}}\). Show that
@@ -3978,29 +3989,29 @@ s\). Deduce
         \hspace{0.17em}
 \mathrm{d} s + s^{- 1} \hspace{0.17em} \mathrm{d} W\),
         and check (<a href="#eq:density">18.7</a>) and (<a href="#eq:sandwich">18.10</a>) numerically.
-        How small is the entropy?</span>
+        How small is the entropy?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.8</span>.
-        </strong><span style="font-style: normal"><strong>(Freezing) </strong></span><a id="ex:freeze"></a>In
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.8</class>.
+        </strong><class style="font-style: normal"><strong>(Freezing) </strong></class><a id="ex:freeze"></a>In
         the setting of the previous exercise freeze the force below
         \(q_{\ast}\), and check (<a href="#eq:GM0">18.13</a>) and (<a href="#eq:free">18.14</a>)
         numerically for several \(q_{\ast}\). Which quantities change with
-        \(q_{\ast}\), and which do not?</span>
+        \(q_{\ast}\), and which do not?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
-        <span style="font-size: 84.1%"><strong>Exercise <span style="font-style: normal">18.9</span>.
-        </strong><span style="font-style: normal"><strong>(Gaussian case) </strong></span><a id="ex:gauss"></a>For
+        <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.9</class>.
+        </strong><class style="font-style: normal"><strong>(Gaussian case) </strong></class><a id="ex:gauss"></a>For
         \(V_N = \frac{\mu}{2} \| \varphi \|^2\) and \(\bar{\mathcal{F}}_q =
         \mu y\) for \(q \geqslant q_{\ast}\), show that \(\mathcal{D}= 0\)
         above \(q_{\ast}\) and \(\mathcal{D}= - y\) below, so \(e = -
         \frac{1}{2} \|y\|^2\). Compute the density (<a href="#eq:density">18.7</a>) mode by
         mode, and show that the constant diverging with \(N\) is carried by
-        \(\mathcal{C}_N\).</span>
+        \(\mathcal{C}_N\).</font>
       </p>
     </div>
     <h2 id="auto-44">References<span style="margin-left: 1em"></span></h2>

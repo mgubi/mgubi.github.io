@@ -191,8 +191,7 @@
   <section*|Introduction>
 
   <strong|Notation from Lecture<nbsp>5.> We recall the symbols used
-  throughout; the definitions are in Sections<nbsp><hlink|10.1|cqft_lecture_5.tm#sec:notation>\U<hlink|10.5|cqft_lecture_5.tm#sec:YZ>
-  and<nbsp><hlink|11.1|cqft_lecture_5.tm#eq:g-r> of Lecture<nbsp>5.
+  throughout; the definitions are in Sections<nbsp><hlink|10.1|cqft_lecture_5.tm#sec:notation>\U<hlink|10.5|cqft_lecture_5.tm#sec:YZ>, 11 and<nbsp>12 of Lecture<nbsp>5.
 
   <\itemize>
     <item><em|Lattice.> <math|\<Lambda\><rsub|N>> is the periodic lattice of
@@ -200,21 +199,25 @@
     <math|H<rsub|N>=\<bbb-R\><rsup|\<Lambda\><rsub|N>>>,
     <math|<big|int>f=N<rsup|-3>*<big|sum><rsub|x>f<around|(|x|)>>,
     <math|<around|\<langle\>|u,v|\<rangle\>>=<big|int>u*v>, and
-    <math|<around|\<\|\|\>|\<cdot\>|\<\|\|\>><rsub|p>> is the
-    <math|L<rsup|p>> norm for <math|<big|int>>.
+    <math|<around|\<\|\|\>|\<cdot\>|\<\|\|\>><rsub|p>> is the <math|L<rsup|p>> norm for <math|<big|int>>. For a kernel,
+    <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|<math-up|row>>=sup<rsub|x><big|int><around|\||C*<around|(|x,z|)>|\|>\<mathd\>z>
+    is the row norm, which bounds <math|<around|\<\|\|\>|C|\<\|\|\>><rsub|p\<to\>p>>
+    for every <math|p> when <math|C> is symmetric.
     <math|\<Delta\>=\<Delta\><rsub|N>> is the nearest-neighbour Laplacian.
 
     <item><em|Resolution and free operators>
     <hlink|(10.1)|cqft_lecture_5.tm#eq:K-C>\U<hlink|(10.2)|cqft_lecture_5.tm#eq:dictionary-profile>.
     The resolution <math|q\<in\><around|[|q<rsub|0>,\<infty\>|)>> is the
-    squared mass of the regulator, and <math|q<rsub|0>\<gtr\>0> is the mass
-    of the Gaussian reference. <math|K<rsub|q>=q-\<Delta\>> is the precision
+    squared mass of the regulator, and <math|q<rsub|0>\<gtr\>0> is the squared mass of the Gaussian reference. <math|K<rsub|q>=q-\<Delta\>> is the precision
     and <math|C<rsub|q>=K<rsub|q><rsup|-1>> the covariance of the scales not
     yet resolved at resolution <math|q>; <math|<around|\<\|\|\>|C<rsub|q>|\<\|\|\>><rsub|p\<to\>p>=q<rsup|-1>>.
     In particular <math|C=C<rsub|q<rsub|0>>> is the covariance of the
     Gaussian reference and <math|K<rsub|q<rsub|0>>=q<rsub|0>-\<Delta\>> the
     free field operator. The resolved covariance is
-    <math|Q<rsub|q>=C-C<rsub|q>>, with <math|\<partial\><rsub|q>Q<rsub|q>=C<rsub|q><rsup|2>>.
+    <math|Q<rsub|q>=C-C<rsub|q>>, with <math|\<partial\><rsub|q>Q<rsub|q>=C<rsub|q><rsup|2>>,
+    and the bubble <math|a<rsub|2><around|(|q|)>=<around|(|C<rsub|q><rsup|2>|)><around|(|x,x|)>\<lesssim\>q<rsup|-1/2>>
+    is the variance of the shell at resolution
+    <math|q>, by <hlink|(10.3)|cqft_lecture_5.tm#eq:a2>.
 
     <item><em|Couplings> <hlink|(11.1)|cqft_lecture_5.tm#eq:g-r>.
     <math|\<lambda\>> is the quartic coupling and
@@ -233,7 +236,14 @@
     and <math|\<bbb-E\><rsub|q>> the conditional expectation given the past
     of <math|\<Phi\>>. The forecast is <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>\<Phi\><rsub|\<infty\>>>,
     and <math|<math-up|Cov><rsub|q>> is the conditional covariance of
-    <math|\<Phi\><rsub|\<infty\>>>.
+    <math|\<Phi\><rsub|\<infty\>>>. The filtration is
+    <math|\<cal-F\><rsub|q>=\<sigma\><around|(|\<Phi\><rsub|s>:s\<leqslant\>q|)>>
+    (the same letter as the exact force, as in Lecture<nbsp>5; the meaning
+    is always clear from the context). The forecast is a function of the
+    field, <math|\<psi\><rsub|q>=m<rsub|q><around|(|\<Phi\><rsub|q>|)>>,
+    and so is the approximate forecast, <math|Y<rsub|q>=y<rsub|q><around|(|\<Phi\><rsub|q>|)>>,
+    where <math|y=y<rsub|q><around|(|x|)>> solves
+    <math|K<rsub|q>y+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|y|)>=K<rsub|q>x>.
 
     <item><em|Forces and coefficients> <hlink|(10.8)|cqft_lecture_5.tm#eq:coordinate-ex>\U<hlink|(10.11)|cqft_lecture_5.tm#eq:YZ>,
     <hlink|(12.5)|cqft_lecture_5.tm#eq:coordinate>. <math|\<cal-F\><rsub|q>>
@@ -344,7 +354,8 @@
     by the noise tails and <math|Z>. It controls where the explicit force is
     inaccurate.
 
-    <item><em|Backward representation> (Proposition<nbsp><reference|prop:backward>):
+    <item><em|Backward representation> (Lemma<nbsp><reference|lem:representation>,
+    Proposition<nbsp><reference|prop:backward>):
     <math|Z> is the transported defect, as the equation is linear in it. Its
     energy is bounded by the bounded-field source, a boundary term, and
     <math|C\<gamma\><rsup|2>/q<rsub|\<ast\>>> times the large-field action.
@@ -1067,11 +1078,10 @@
       y\<leqslant\>A<rsub|0>*<space|0.17em><around|(|C*\<gamma\><rsup|3>*p<rsup|5>+x|)>,<space|2em>x\<leqslant\>B<rsub|0>+B<rsub|1>*\<delta\><rsub|N,T,p>+\<theta\>*<space|0.17em>y,<space|2em>\<theta\>=<frac|C*\<gamma\><rsup|2>|q<rsub|\<ast\>>>,
     </equation*>
 
-    with <math|A<rsub|0>,B<rsub|0>,B<rsub|1>> and the constant in
-    <math|\<eta\>> independent of <math|N,T,p>, and bounded for all
+    with <math|A<rsub|0>,B<rsub|0>,B<rsub|1>> and the constant in <math|\<theta\>> independent of <math|N,T,p>, and bounded for all
     <math|q<rsub|\<ast\>>> beyond the thresholds already required. Choose
     <math|q<rsub|\<ast\>>> such that also
-    <math|A<rsub|0>*\<eta\>\<leqslant\><frac|1|2>>. Then
+    <math|A<rsub|0>*\<theta\>\<leqslant\><frac|1|2>>. Then
     <math|y\<leqslant\>A<rsub|0>*<around|(|C*\<gamma\><rsup|3>*p<rsup|5>+B<rsub|0>+B<rsub|1>*\<delta\><rsub|N,T,p>|)>+<frac|1|2>*y>.
     Since <math|y\<less\>\<infty\>> by Lemma<nbsp><reference|lem:pre>, it can
     be absorbed, and <math|x> follows.
@@ -2072,7 +2082,7 @@
     <math|<around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|2>>. Write
     <math|D*e=D\<kappa\> \<cal-D\><rsup|<math-up|o>>\<circ\>\<kappa\>+\<frak-D\>>.
     Then <math|<around|\||\<cal-D\><rsup|<math-up|o>>|\|>\<leqslant\>
-    S<rsub|4><around|(|\<cal-D\><rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
+    <math-ss|S><rsub|4><around|(|\<cal-D\><rsup|<math-up|o>>|)><around|(|2r<rsub|s>|)><rsup|3>\<leqslant\>
     C\<gamma\><rsup|7/2>s<rsup|-3/2>> and
     <math|<around|\||\<cal-A\>|\|><rsup|1/2>\<leqslant\>
     r<rsub|s><rsup|-1><around|\<\|\|\>|t<rsub|s>|\<\|\|\>><rsub|2>>, so the
@@ -2304,8 +2314,7 @@
     difference, as <math|y-x\<in\> H<rsup|1>>. For <math|e>:
     <math|e<rsub|s><around|(|0|)>=0>, so <math|e<rsub|s><around|(|y|)>=<big|int><rsub|0><rsup|1><around|\<langle\>|\<cal-D\><rsub|s><around|(|t*y|)>,y|\<rangle\>><space|0.17em>\<mathd\>
     t>. By the consistency of the coefficients
-    (Theorem<nbsp><hlink|28.3|cqft_supplement.tm#c-pathcons> of the
-    Supplement), <math|\<cal-D\><rsup|N><rsub|s><around|(|\<phi\><rsub|N>|)>>
+    (Theorem<nbsp><hlink|31.2|cqft_supplement.tm#c-cons> of the Supplement), <math|\<cal-D\><rsup|N><rsub|s><around|(|\<phi\><rsub|N>|)>>
     converges weakly in <math|L<rsup|2>> at each <math|s> for smooth bounded
     <math|\<phi\>>, and uniformly in <math|N>,
     <math|<around|\<\|\|\>|\<cal-D\><rsup|N><rsub|s><around|(|y|)>-\<cal-D\><rsup|N><rsub|s><around|(|z|)>|\<\|\|\>><rsub|2>\<leqslant\>

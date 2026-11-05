@@ -295,8 +295,8 @@
         [(K + M + D^2 (U + h))^{- 1} - (K + M)^{- 1}]\), whose derivative is
         the loop force \(\mathcal{T}\) of Lecture 5. A vertex with \(k\) legs
         is \(D^k\) of the primitive and \(D^{k - 1}\) of the force, so the
-        norms \(S_k\) and \(\mathcal{N}_k\) agree. No additive constant of a
-        primitive enters any estimate.
+        norms \(\textsf{S}_k\) and \(\mathcal{N}_k\) agree. No additive
+        constant of a primitive enters any estimate.
       </div>
     </p>
     <p>
@@ -310,7 +310,9 @@
       \geqslant q_{\ast}\) and do not involve \(q_0\). So from Lemma <a href="#a-lem-center">19.3</a>
       on we assume \(q \geqslant 1\). Constants may depend on the coupling and
       on finitely many derivative orders, but not on \(N\) or on the scale
-      interval.
+      interval. For a kernel, \(\|C\|_{\text{row}} = \sup_x \int |C (x, z) |
+      \mathrm{d} z\) is the row norm (Section <a href="cqft_lecture_5.html#sec:notation">10.1</a> of Lecture 5);
+      it bounds \(\|C\|_{p \to p}\) for every \(p\) when \(C\) is symmetric.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -588,16 +590,18 @@ x_k) | \prod_{j \neq i} \hspace{0.17em} \mathrm{d}
       \in H_N\) with \(\|y\|_{\infty} < 2 r_q\), put
     </p>
     <center>
-      \(\displaystyle S_k (f) = \sup_{y \in \mathcal{B}_q} s (D^k f (y)),
-      \quad \mathcal{N}_{k, q}
-(f) = S_k (f) + \sqrt{q} v_1 (D^k f (0)) .\)
+      \(\displaystyle \textsf{S}_k (f) = \sup_{y \in \mathcal{B}_q} s (D^k f
+      (y)), \quad
+\mathcal{N}_{k, q} (f) = \textsf{S}_k (f) + \sqrt{q} v_1
+      (D^k f (0)) .\)
     </center>
     <p>
-      Thus \(S_k\) controls the derivative everywhere in the field ball,
-      whereas the spatial moment is required only at the zero field. The
-      scalar bound \(S_k (f)\) is distinct from the posterior covariance
-      \(S_q\) of (10.2). For a symmetric \(k\)-tensor \(T\), contraction of
-      two slots against a kernel \(E\) means the physical integral
+      Thus \(\textsf{S}_k\) controls the derivative everywhere in the field
+      ball, whereas the spatial moment is required only at the zero field. The
+      scalar bound \(\textsf{S}_k (f)\) is distinct from the posterior
+      covariance \(S_q\) of (10.2). For a symmetric \(k\)-tensor \(T\),
+      contraction of two slots against a kernel \(E\) means the physical
+      integral
     </p>
     <center>
       \(\displaystyle (\text{Ctr}_E T) (x_1, \ldots, x_{k - 2}) = \int E (u,
@@ -913,13 +917,14 @@ u)\|_2) .\)
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Proof. </strong>Let \(H = (K_q + M_q + D^2 (U + h)
       (y))^{- 1}\), and \(\hat{H}\) the same with \(\hat{h}\). Taylor's
-      formula, evenness, and the zero quadratic jet give \(S_2 (h) \leqslant
-      Cg_q q\) and \(S_3 (h) \leqslant Cg_q q / r_q\); the same holds for
-      \(\hat{h}\), and for their difference with \(g_q\) replaced by
-      \(\varepsilon_q\). Thus the hypotheses control every Hessian vertex used
-      in differentiating the inverse, including those with zero or one field
-      derivative. Together with the local quartic they give \(s (D^{j + 2} (U
-      + h)) \leqslant C_j qr_q^{- j}\) for \(0 \leqslant j \leqslant k\).
+      formula, evenness, and the zero quadratic jet give \(\textsf{S}_2 (h)
+      \leqslant Cg_q q\) and \(\textsf{S}_3 (h) \leqslant Cg_q q / r_q\); the
+      same holds for \(\hat{h}\), and for their difference with \(g_q\)
+      replaced by \(\varepsilon_q\). Thus the hypotheses control every Hessian
+      vertex used in differentiating the inverse, including those with zero or
+      one field derivative. Together with the local quartic they give \(s
+      (D^{j + 2} (U + h)) \leqslant C_j qr_q^{- j}\) for \(0 \leqslant j
+      \leqslant k\).
     </p>
     <p>
       More explicitly, \(D^k H [u_1, \ldots, u_k]\) is the sum over ordered
@@ -944,9 +949,9 @@ u)\|_2) .\)
       of the other \(p - 1\) inverses costs \(C / q\). Symmetry gives both
       Schur bounds for every collapsed vertex, also at nonconstant fields. The
       row Neumann series preserves the row and row-\(L^2\) bounds: use (<a
-      href="#a-eq-receive">19.5</a>) for \(M\), and the just proved \(S_2\) bound for the
-      nonlinear Hessian. All constants depend on the finite list of individual
-      derivative bounds above.
+      href="#a-eq-receive">19.5</a>) for \(M\), and the just proved \(\textsf{S}_2\) bound
+      for the nonlinear Hessian. All constants depend on the finite list of
+      individual derivative bounds above.
     </p>
     <p>
       Telescope the two partition sums. A changed vertex contributes
@@ -994,9 +999,9 @@ u)\|_2) .\)
       gives \(C_k q^2 a_2 (q) r_q^{- k} \leqslant C_k g_q qr_q^{2 - k}\). At
       zero its degree \(2 j\) term is \((- 1)^{j + 1} \text{Tr} (C_q \gamma
       y^2)^j / (2 j)\); the same two-chain argument proves its spatial bound.
-      Taylor gives \(S_2 \leqslant Cg_q q\), \(S_3 \leqslant Cg_q q / r_q\).
-      Finally (<a href="#a-eq-seedder">20.2</a>) says that \(\mathcal{T}_q [0, 0] -
-      \partial_q \mathcal{L}_q\) is purely quadratic. Consequently
+      Taylor gives \(\textsf{S}_2 \leqslant Cg_q q\), \(\textsf{S}_3 \leqslant
+      Cg_q q / r_q\). Finally (<a href="#a-eq-seedder">20.2</a>) says that \(\mathcal{T}_q
+      [0, 0] - \partial_q \mathcal{L}_q\) is purely quadratic. Consequently
     </p>
     <center>
       \(\displaystyle \Pi (\mathcal{T}_q [M, \mathcal{L}] - \partial_q
@@ -1144,8 +1149,8 @@ k},
         <tr>
           <td width="100%" align="center"><a id="a-eq-smallerror"></a>\(\displaystyle e_q^{\text{o}} = \Pi
           (\mathcal{T}_q [M, h^{[1]}] -\mathcal{T}_q [M, h^{[2]}]),
-\quad S_4
-          (e_q^{\text{o}}) \leqslant C \gamma^5 q^{- 3} . \)</td>
+\quad
+          \textsf{S}_4 (e_q^{\text{o}}) \leqslant C \gamma^5 q^{- 3} . \)</td>
           <td align="right">(20.12)</td>
         </tr>
       </table></i>
@@ -1225,8 +1230,8 @@ C_k (1 + R) \gamma^{1 + k / 2} s^{- k / 2} .\)
       .\)
     </center>
     <p>
-      Moreover \(S_4 (h^{[j]}) \leqslant C \gamma^2 q^{- 1 / 2}\) and the zero
-      low jets show that each \(h_q^{[j]}\) and its first three field
+      Moreover \(\textsf{S}_4 (h^{[j]}) \leqslant C \gamma^2 q^{- 1 / 2}\) and
+      the zero low jets show that each \(h_q^{[j]}\) and its first three field
       derivatives vanish as \(q \to \infty\) on any fixed bounded field set.
       Path differences satisfy \(\mathcal{N}_k (\delta h^{[j]}) \leqslant
       Cg_q^2 qr_q^{2 - k} \| \delta
@@ -1347,9 +1352,9 @@ M\|_{\ast}\). Contracting fourth tensors
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>Keep the sharp finite-lattice bubble in
       the unweighted trace bounds: \(\|R_{0, q}^2 \|_{\infty} \leqslant Ca_2
-      (q)\) and \(S_4 (h_q^{[2]}) \leqslant C \gamma^2 q^{- 1 / 2} = C \gamma
-      g_q\). Contracting the fourth tensor in (<a href="#a-eq-mass">20.8</a>) therefore
-      gives the first inequality, including both Schur masses. Since
+      (q)\) and \(\textsf{S}_4 (h_q^{[2]}) \leqslant C \gamma^2 q^{- 1 / 2} =
+      C \gamma g_q\). Contracting the fourth tensor in (<a href="#a-eq-mass">20.8</a>)
+      therefore gives the first inequality, including both Schur masses. Since
       \(\int_{q_{\ast}}^{\infty} a_2 (s) \hspace{0.17em} \mathrm{d} s =
       \text{Tr}
 C_{q_{\ast}}\), its scalar integral is absolutely convergent,
@@ -1527,9 +1532,10 @@ Xq^{- 3}) .\)
     <p>
       Lemma <a href="#a-lem-rooted-cycle">20.1</a> bounds both rooted kernels by \(Ca_2 (q) qr_q^{-
       2} \leqslant Cg_q\). Subtracting the quadratic jet at zero preserves
-      this bound. Hence \(S_2 (\partial_q h^{[2]}) \leqslant Cg_q\) and \(\|D
-      \partial_q h^{[2]} \|_{\infty} \leqslant Cg_q r_q\) on the ball. Write
-      \(z = \kappa_q y\) and \(w = \partial_q \kappa_q y\). Globally,
+      this bound. Hence \(\textsf{S}_2 (\partial_q h^{[2]}) \leqslant Cg_q\)
+      and \(\|D \partial_q h^{[2]} \|_{\infty} \leqslant Cg_q r_q\) on the
+      ball. Write \(z = \kappa_q y\) and \(w = \partial_q \kappa_q y\).
+      Globally,
     </p>
     <center>
       \(\displaystyle |w| \leqslant Cr_q / q, \quad |Dw| \leqslant C / q,
@@ -1669,13 +1675,15 @@ Xq^{- 3}) .\)
       For this calculation let \(h = h_q^{[2]}\), \(z = \kappa_q y\), and \(J
       = D \kappa_q (y)\), the diagonal derivative of the clipping map, and
       write \(M' = \partial_q M_q\). Evenness and the zero quadratic jet of
-      \(e^{\text{o}}\) give \(\|De^{\text{o}} (z)\|_{\infty} \leqslant S_4
-      (e^{\text{o}}) (2 r_q)^3 / 6\). Multiplication by \(J\) and the \(C /
-      q\) inverse bound therefore give the bounded-field estimate in (<a href="#a-eq-source">21.4</a>).
-      Here are the identities for the large-field calculation. Put \(w =
-      \partial_q \kappa_q y\), \(f_1 = Dh (z)\), \(f_2 = D^2 h (z)\), and
-      \(f_3 = D^3 h (z)\). Here \(w\) is only the local abbreviation for the
-      scale derivative of the clip. The unclipped and clipped inverses are
+      \(e^{\text{o}}\) give \(\|De^{\text{o}} (z)\|_{\infty} \leqslant
+      \textsf{S}_4 (e^{\text{o}}) (2 r_q)^3
+/ 6\). Multiplication by \(J\) and
+      the \(C / q\) inverse bound therefore give the bounded-field estimate in
+      (<a href="#a-eq-source">21.4</a>). Here are the identities for the large-field
+      calculation. Put \(w = \partial_q \kappa_q y\), \(f_1 = Dh (z)\), \(f_2
+      = D^2 h (z)\), and \(f_3 = D^3 h (z)\). Here \(w\) is only the local
+      abbreviation for the scale derivative of the clip. The unclipped and
+      clipped inverses are
     </p>
     <center>
       \(\displaystyle H^{\text{o}} = (K_q + M_q + \gamma z^2 + D^2 h (z))^{-
@@ -1730,9 +1738,10 @@ h [\kappa'' uv, Jv'] + Dh [\kappa''' uvv'] .\)
       \(\chi = \chi_q (y)\) and \(t = y \chi\). Let
     </p>
     <center>
-      \(\displaystyle S_1 = \|f_1 \|_{\infty} \leqslant Cgqr, \quad S_2 = m
-      (f_2) \leqslant Cgq,
-\quad S_3 = s (f_3) \leqslant Cgq / r.\)
+      \(\displaystyle \sigma_1 = \|f_1 \|_{\infty} \leqslant Cgqr, \quad
+      \sigma_2 = m (f_2)
+\leqslant Cgq, \quad \sigma_3 = s (f_3) \leqslant Cgq
+      / r.\)
     </center>
     <p>
       Clipping obeys the following pointwise bounds, all uniform in \(y\):
@@ -1771,49 +1780,50 @@ y^2 \chi, \quad |w| \leqslant Cr \chi / q, \quad
       exact identity the two outer inverse chains have product of \(\ell\)
       norms at most \(Ca_2 / q\). For a local insertion use Lemma <a href="#a-lem-inserted-receiver">20.3</a>.
       In an insertion \((J - I) f_2 J\) or \(f_2 (J - I)\), absorb \(f_2, J\)
-      into the adjacent chain; this costs at most \(S_2\) in its \(\ell\)
-      norm. Finally \(|f_1 \kappa'' | \leqslant CS_1 \chi / r\). The lemma
-      therefore gives, for all \(p\),
+      into the adjacent chain; this costs at most \(\sigma_2\) in its \(\ell\)
+      norm. Finally \(|f_1 \kappa'' | \leqslant C \sigma_1 \chi / r\). The
+      lemma therefore gives, for all \(p\),
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="a-eq-covariance-marked"></a>\(\displaystyle \| \text{diag}
         \mathcal{D}_2 \|_p \leqslant C \frac{a_2}{q} [\gamma \|y^2 \chi
 \|_p +
-        (S_2 + S_1 / r)\| \chi \|_p] \leqslant C \frac{\gamma a_2}{q}
-        \|y^2
-\chi \|_p, \)</td>
+        (\sigma_2 + \sigma_1 / r)\| \chi \|_p] \leqslant C \frac{\gamma
+        a_2}{q}
+\|y^2 \chi \|_p, \)</td>
         <td align="right">(21.8)</td>
       </tr>
     </table>
     <center>
-      \(\displaystyle \| \text{Ctr}_{\mathcal{D}_2} f_3 \|_p \leqslant CS_3
-      \frac{\gamma a_2}{q}
-\|y^2 \chi \|_p .\)
+      \(\displaystyle \| \text{Ctr}_{\mathcal{D}_2} f_3 \|_p \leqslant C
+      \sigma_3 \frac{\gamma
+a_2}{q} \|y^2 \chi \|_p .\)
     </center>
     <p>
-      In the last inequality use \(S_2 + S_1 / r \leqslant Cgq\), \(\chi
-      \leqslant \gamma y^2 \chi / q\), and small \(g\). This argument controls
-      the column mass of the nonlocal contraction as well as its row mass.
+      In the last inequality use \(\sigma_2 + \sigma_1 / r \leqslant Cgq\),
+      \(\chi \leqslant \gamma y^2 \chi / q\), and small \(g\). This argument
+      controls the column mass of the nonlocal contraction as well as its row
+      mass.
     </p>
     <p>
       <em>Receive the third-order chain rule.</em> In its first term, after
       removing the open-slot \(J\), the difference of the two contracted-slot
       factors is bounded by \(\chi (u) + \chi (v)\). The last assertion of
       Lemma <a href="#a-lem-inserted-receiver">20.3</a>, with \(\sup_{x, u} |H^2 (x, u) | \leqslant
-      Ca_2\), gives \(Ca_2 S_3 \| \chi \|_p\). Of the three second-derivative
-      terms, one identifies the two contracted slots and the other two
-      identify the open slot with a contracted slot. Their majorant kernels
-      have Schur masses at most \(Ca_2 S_2 / r\). The last term identifies all
-      three slots and costs \(Ca_2 S_1 / r^2\). Write \(\mathcal{E}_3 = D^3 (h
-      \circ \kappa_q) - Jf_3\). Consequently
+      Ca_2\), gives \(Ca_2 \sigma_3 \| \chi \|_p\). Of the three
+      second-derivative terms, one identifies the two contracted slots and the
+      other two identify the open slot with a contracted slot. Their majorant
+      kernels have Schur masses at most \(Ca_2 \sigma_2 / r\). The last term
+      identifies all three slots and costs \(Ca_2 \sigma_1 / r^2\). Write
+      \(\mathcal{E}_3 = D^3 (h \circ \kappa_q) - Jf_3\). Consequently
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="a-eq-third-chain-marked"></a>\(\displaystyle \| \text{Ctr}_{H^2}
-        \mathcal{E}_3 \|_p \leqslant Ca_2 (S_3 + S_2 / r + S_1 /
-r^2) \| \chi
-        \|_p \leqslant Cg^2 \|t\|_p . \)</td>
+        \mathcal{E}_3 \|_p \leqslant Ca_2 (\sigma_3 + \sigma_2 / r
++ \sigma_1
+        / r^2) \| \chi \|_p \leqslant Cg^2 \|t\|_p . \)</td>
         <td align="right">(21.9)</td>
       </tr>
     </table>
@@ -1859,9 +1869,9 @@ r^2) \| \chi
       For the first row split the expression exactly as \(M' (y - z) + (I - J)
       M' z\). The first part uses \(m (M') \leqslant Cg\); the second uses
       \(\|M' z\|_{\infty} \leqslant Cgr\) and \(\chi \leqslant |t| / r\). The
-      second row uses the \(w, Dw\) bounds and \(S_1, S_2\). For the fourth
-      row note \(\gamma^2 ra_2 / q = \gamma a_2 / r \leqslant Cg / r\); for
-      the sixth use \(S_3 \gamma a_2 / q \leqslant Cg^2 / r\).
+      second row uses the \(w, Dw\) bounds and \(\sigma_1, \sigma_2\). For the
+      fourth row note \(\gamma^2 ra_2 / q = \gamma a_2 / r \leqslant Cg / r\);
+      for the sixth use \(\sigma_3 \gamma a_2 / q \leqslant Cg^2 / r\).
     </p>
     <p>
       Put \(\mathfrak{D}_q (y) = De_q (y) - D \kappa_q (y) De_q^{\text{o}}
@@ -3254,16 +3264,16 @@ H_{q_{\ast}} (y) (y -
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="c-collapse"></a>\(\displaystyle \|(\textsf{D}_y -
-        \textsf{D}_z) H_z \|_{\text{HS}} \leqslant C_I S_3 \|y -
-z\|_2, \quad
-        \|(\textsf{D}_y - \textsf{D}_z) f\|_2 \leqslant S_3
-\|f\|_{\infty} \|y
-        - z\|_2, \)</td>
+        \textsf{D}_z) H_z \|_{\text{HS}} \leqslant C_I \textsf{S}_3
+\|y -
+        z\|_2, \quad \|(\textsf{D}_y - \textsf{D}_z) f\|_2
+        \leqslant
+\textsf{S}_3 \|f\|_{\infty} \|y - z\|_2, \)</td>
         <td align="right">(29.6)</td>
       </tr>
     </table>
     <p>
-      where \(S_3 = \sup s (D^3 \tilde{h}_q)\) is finite by <a href="cqft_lecture_5.html#eq:global-h">(12.2)</a>.
+      where \(\textsf{S}_3 = \sup s (D^3 \tilde{h}_q)\) is finite by <a href="cqft_lecture_5.html#eq:global-h">(12.2)</a>.
       With \(\|H_y \| \leqslant C / q\) this proves (<a href="#c-continuity1">29.3</a>).
     </p>
     <p>
@@ -4410,13 +4420,13 @@ x) \mathbb{E}^{\mathbb{R}^{q, x}} \left[
 K_q (x - y) \rangle \right]\), the functional
       being strictly convex for \(q \geqslant q_{\ast}\). As \(U + \frac{1}{2}
       \mu_q y^2 + \tilde{h}_q \geqslant - C_q\) (the quartic dominates, as
-      \(S_4 (h_q)\) is small, and \(| \tilde{h}_q (y) | \leqslant CS_4 (h_q)
-      \|y\|_4^4\)), \(\bar{V}_q (x) \geqslant - C_q + \frac{1}{2} \langle x,
-      \Theta_q' x \rangle\), with \(\Theta_q' = K_q (K_q + \Theta_q)^{- 1}
-      \Theta_q\). With \(c_N = \frac{1}{2} \text{Tr} (Q_q \Theta'_q)\), the
-      determinant formula for the second chaos gives the \(L^p\) bound, since
-      the operator has norm \(\leqslant \frac{1}{2}\) and is
-      Hilbert&ndash;Schmidt, uniformly in \(N\); here the multiplier of
+      \(\textsf{S}_4 (h_q)\) is small, and \(| \tilde{h}_q (y) | \leqslant C
+      \textsf{S}_4 (h_q) \|y\|_4^4\)), \(\bar{V}_q (x) \geqslant - C_q +
+      \frac{1}{2} \langle x, \Theta_q' x \rangle\), with \(\Theta_q' = K_q
+      (K_q + \Theta_q)^{- 1} \Theta_q\). With \(c_N = \frac{1}{2} \text{Tr}
+      (Q_q \Theta'_q)\), the determinant formula for the second chaos gives
+      the \(L^p\) bound, since the operator has norm \(\leqslant \frac{1}{2}\)
+      and is Hilbert&ndash;Schmidt, uniformly in \(N\); here the multiplier of
       \(\Theta_q\) is at most \(C |k|\) and that of \(Q_q\) at most \(C |k|^{-
       4}\). Convergence in probability is Step 4 of the proof of Theorem <a
       href="#d-thm:unique">32.13</a>, without \(\chi_q\): the second chaos in \(L^2\), the
@@ -4641,9 +4651,9 @@ H^{\text{o}} (a, v)^2)^{1 / 2} .\)
       The vector \(y - \pi y\) is supported on the set \(\mathcal{A}\) where
       \(|y| > r_s\) and its norm is at most \(\|t_s (y)\|_2\); also \(\|t_s
       (z_{\theta})\|_2 \leqslant \|t_s (y)\|_2\). The first term of \(De\) is
-      bounded pointwise by \(\sup |De^{\text{o}} | \leqslant S_4
-      (e^{\text{o}}) (2 r_s)^3 \leqslant C
-\gamma^{7 / 2} s^{- 3 / 2}\), and
+      bounded pointwise by \(\sup |De^{\text{o}} | \leqslant \textsf{S}_4
+      (e^{\text{o}}) (2 r_s)^3
+\leqslant C \gamma^{7 / 2} s^{- 3 / 2}\), and
       \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so it
       contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2 \leqslant Cg_s
       \|t_s \|_2^2\). By Lemma <a href="#d-lem:input">32.9</a> so does the second. Since
@@ -4824,13 +4834,13 @@ e^{\pm} (Y_s)
       vanishes at the coordinate and \(\bar{V}^-_T = \bar{V}_T\). We claim
       \(\sup_{\mathcal{G}_T} | \Delta^-_T | \to 0\). Indeed at fixed \(N\):
       \(| \mu_T - \mu_N | = O_N (T^{- 1})\); \(\| \Theta_T \|_{\text{row}} =
-      O_N (T^{- 1 / 2})\); \(S_4 (h_T) = O_N (T^{- 2})\), by the integrated
-      bound using \(a_2 (T) = O_N (T^{- 2})\); and \(|y - x| \leqslant C_N
-      T^{- 1} (\|x\|_{\infty} +\|x\|_{\infty}^3)\). These give \(| \bar{V}_T
-      (x) - V_N (x) | = O_N (T^{- 1 / 4})\) for \(\|x\|_{\infty} \leqslant
-      T^{1 / 8}\). Further \(|V_T (x) - V_N (x) | = O_N (T^{- 1 / 8})\) on the
-      same set, by Gaussian integration, since the remaining variance per site
-      is \(O_N (T^{- 1})\). So
+      O_N (T^{- 1 / 2})\); \(\textsf{S}_4 (h_T) = O_N (T^{- 2})\), by the
+      integrated bound using \(a_2 (T) = O_N (T^{- 2})\); and \(|y - x|
+      \leqslant C_N T^{- 1} (\|x\|_{\infty} +\|x\|_{\infty}^3)\). These give
+      \(| \bar{V}_T (x) - V_N (x) | = O_N (T^{- 1 / 4})\) for \(\|x\|_{\infty}
+      \leqslant T^{1 / 8}\). Further \(|V_T (x) - V_N (x) | = O_N (T^{- 1 /
+      8})\) on the same set, by Gaussian integration, since the remaining
+      variance per site is \(O_N (T^{- 1})\). So
     </p>
     <center>
       \(\displaystyle \mathrm{e}^{- V_q (x)} \leqslant \mathrm{e}^{o (1)}
@@ -4973,24 +4983,24 @@ e^{\pm} (Y_s)
       converges weakly along strongly convergent bounded fields at fixed
       \(q\). For smooth bounded profiles this is in Proposition <a href="#c-completecons">29.1</a>,
       the finite recursion being uniform on compact sets of scales; it extends
-      to strongly convergent bounded fields by the Lipschitz constant \(S_2
-      \leqslant Cg_q q\) on \(L^2\). The same holds for the term \(M_q y\) by
-      the fixed \(k\) convergence of Proposition <a href="#prop:limits">22.1</a>. With this,
-      \(L^2\) compactness of \(w_N\) from the \(H^1\) bound passes the
-      coordinate equation to the limit. Its solution is unique among bounded
-      fields \(y\) with \(y - x \in H^1\): if \(d\) is the difference of two
-      solutions \(y\), \(y'\), test \(K_q d + \frac{\gamma}{3} (y^3 - (y')^3)
-      + M_q d + D \tilde{h}_q (y) - D
-\tilde{h}_q (y') = 0\) with \(d\), and
-      use \(\langle d, M_q d \rangle \geqslant - \varepsilon_q \langle d, K_q
-      d \rangle\) and \(\|D \tilde{h}_q (y) - D \tilde{h}_q (y')\|_2 \leqslant
-      Cg_q q \|d\|_2\), both of which pass from the lattice; so \(d = 0\).
-      Thus \(\iota_N y_N \to y\) in \(L^2\) and boundedly. Hence \(U (y_N)\),
-      \(\|y_N \|_2^2\) and \(\tilde{h}_q^N (y_N) = \int_0^1 \langle D
-      \tilde{h}^N_q (ty_N), y_N \rangle
-\hspace{0.17em} \mathrm{d} t\)
-      converge; so do the cross terms, pairing strong \(x_N\) with weak
-      \(\Theta^N w_N\). So \(\chi_q \mathrm{e}^{- \bar{V}_{q, N} +
+      to strongly convergent bounded fields by the Lipschitz constant
+      \(\textsf{S}_2 \leqslant Cg_q q\) on \(L^2\). The same holds for the
+      term \(M_q y\) by the fixed \(k\) convergence of Proposition <a href="#prop:limits">22.1</a>.
+      With this, \(L^2\) compactness of \(w_N\) from the \(H^1\) bound passes
+      the coordinate equation to the limit. Its solution is unique among
+      bounded fields \(y\) with \(y - x \in H^1\): if \(d\) is the difference
+      of two solutions \(y\), \(y'\), test \(K_q d + \frac{\gamma}{3} (y^3 -
+      (y')^3) + M_q d + D \tilde{h}_q (y) - D
+\tilde{h}_q (y') = 0\) with
+      \(d\), and use \(\langle d, M_q d \rangle \geqslant - \varepsilon_q
+      \langle d, K_q d \rangle\) and \(\|D \tilde{h}_q (y) - D \tilde{h}_q
+      (y')\|_2 \leqslant Cg_q q \|d\|_2\), both of which pass from the
+      lattice; so \(d = 0\). Thus \(\iota_N y_N \to y\) in \(L^2\) and
+      boundedly. Hence \(U (y_N)\), \(\|y_N \|_2^2\) and \(\tilde{h}_q^N (y_N)
+      = \int_0^1 \langle D \tilde{h}^N_q (ty_N), y_N \rangle
+\hspace{0.17em}
+      \mathrm{d} t\) converge; so do the cross terms, pairing strong \(x_N\)
+      with weak \(\Theta^N w_N\). So \(\chi_q \mathrm{e}^{- \bar{V}_{q, N} +
       \text{const}_N}\) converges in probability and in \(L^1 (\gamma)\). The
       normalisers are bounded below: since \(\bar{V}_q (x) \leqslant
       \bar{\Gamma}_q (x)\) by taking \(y' = x\) in the infimum, the density is
@@ -5127,11 +5137,11 @@ C_q K_{q_0} j_N h \rangle - \langle C_q B_{q -
       and \(y - \pi_s y\) is supported on the set \(\mathcal{A}\) where \(|y|
       > r_s\), with norm at most \(\|t_s \|_2\). Write \(De = D \kappa
       De^{\text{o}} \circ \kappa +\mathfrak{D}\). Then \(|De^{\text{o}} |
-      \leqslant S_4 (e^{\text{o}}) (2 r_s)^3 \leqslant C \gamma^{7
-/ 2} s^{- 3
-      / 2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s \|_2\), so
-      the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s \|_2^2\).
-      By (<a href="#a-eq-frakD">21.11</a>), which bounds \(\mathfrak{D}\) before
+      \leqslant \textsf{S}_4 (e^{\text{o}}) (2 r_s)^3 \leqslant C
+\gamma^{7 /
+      2} s^{- 3 / 2}\) and \(|\mathcal{A}|^{1 / 2} \leqslant r_s^{- 1} \|t_s
+      \|_2\), so the first term contributes at most \(C \gamma^4 s^{- 2} \|t_s
+      \|_2^2\). By (<a href="#a-eq-frakD">21.11</a>), which bounds \(\mathfrak{D}\) before
       multiplication by \(H\) (the bound stated for \(b^{\text{l}} = -
       H\mathfrak{D}\) would not suffice, as \(H^{- 1}\) is unbounded),
       \(\|\mathfrak{D}_s (z)\|_2 \leqslant Cg_s (\|t_s (z)\|_2 + r_s^{- 1}
@@ -5217,21 +5227,21 @@ s + \text{const}\), with \(\Delta_T = V_T -
     </table>
     <p>
       At fixed \(N\): \(| \mu_T - \mu_N | = O_N (T^{- 1})\), \(\| \Theta_T
-      \|_{\text{row}} = O_N (T^{- 1 / 2})\), \(S_4 (h_T) = O_N (T^{- 2})\) and
-      \(|y - x| \leqslant C_N T^{- 1} (\|x\|_{\infty} +\|x\|_{\infty}^3)\)
-      give \(| \bar{V}_T - V_N | = O_N (T^{- 1 / 4})\) on \(\|x\|_{\infty}
-      \leqslant T^{1 / 8}\), and Gaussian integration, the remaining variance
-      per site being \(O_N (T^{- 1})\), gives \(|V_T - V_N | = O_N (T^{- 1 /
-      8})\) there. For all \(x\), \(| \Delta_T (x) | \leqslant C_N (1
-      +\|x\|_{\infty}^4)\) uniformly in \(T\): \(\inf V_N \leqslant V_T (x)
-      \leqslant C_N (1 +\|x\|_{\infty}^4)\) by Jensen, and \(- C_N \leqslant
-      \bar{V}_T (x) \leqslant \bar{\Gamma}_T (x) \leqslant C_N
-      (1
-+\|x\|_{\infty}^4)\), as \(U\) dominates \(\tilde{h}_T\). The moments
-      of \(\xi_T\) are uniform in \(T\): under \(\mathbb{P}\) since \(\Phi_T =
-      J_T \Phi_{\infty} + C_T B_{T - q_0}\); under \(\mathbb{R}\) by the Ito
-      computation below with \(\int^{\infty} a_2 \hspace{0.17em} \mathrm{d} s
-      < \infty\) at fixed \(N\), and \(x = Y + \varrho_T (Y) +
+      \|_{\text{row}} = O_N (T^{- 1 / 2})\), \(\textsf{S}_4 (h_T) = O_N (T^{-
+      2})\) and \(|y - x| \leqslant C_N T^{- 1} (\|x\|_{\infty}
+      +\|x\|_{\infty}^3)\) give \(| \bar{V}_T - V_N | = O_N (T^{- 1 / 4})\) on
+      \(\|x\|_{\infty} \leqslant T^{1 / 8}\), and Gaussian integration, the
+      remaining variance per site being \(O_N (T^{- 1})\), gives \(|V_T - V_N
+      | = O_N (T^{- 1 / 8})\) there. For all \(x\), \(| \Delta_T (x) |
+      \leqslant C_N (1 +\|x\|_{\infty}^4)\) uniformly in \(T\): \(\inf V_N
+      \leqslant V_T (x) \leqslant C_N (1 +\|x\|_{\infty}^4)\) by Jensen, and
+      \(- C_N \leqslant \bar{V}_T (x) \leqslant \bar{\Gamma}_T (x) \leqslant
+      C_N (1
++\|x\|_{\infty}^4)\), as \(U\) dominates \(\tilde{h}_T\). The
+      moments of \(\xi_T\) are uniform in \(T\): under \(\mathbb{P}\) since
+      \(\Phi_T = J_T \Phi_{\infty} + C_T B_{T - q_0}\); under \(\mathbb{R}\)
+      by the Ito computation below with \(\int^{\infty} a_2 \hspace{0.17em}
+      \mathrm{d} s < \infty\) at fixed \(N\), and \(x = Y + \varrho_T (Y) +
       \frac{\gamma}{3} C_T Y^3\). So \(\mathbb{E}^{\mathbb{P}} \Delta_T,
       \mathbb{E}^{\mathbb{R}} \Delta_T \to 0\). With the bounds below, \(\log
       \hspace{0.17em} \mathrm{d} \mathbb{P}/ \hspace{0.17em}
