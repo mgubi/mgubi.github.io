@@ -214,13 +214,38 @@ table {
     margin-bottom: 0.15em;
     letter-spacing: -0.03em;
     font-family: var(--title-family);
-    font-size: 2rem;
+    font-size: 1.85rem;
     text-align: left;
+}
+
+.mg-portrait img {
+    width: 85%;
+    height: auto;
+}
+
+/* Caption flush with the left edge of the portrait (85% wide, centred). */
+.mg-hero .mg-caption {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Main page: picture beside the name, stacked on narrow screens. */
+@media screen and (max-width: 599px) {
+    .mg-hero table,
+    .mg-hero tbody,
+    .mg-hero tr,
+    .mg-hero td {
+        display: block;
+        width: 100% !important;
+        padding: 0 !important;
+    }
 }
 
 .mg-whats-new {
     border-left: 0.3em solid var(--color-title);
-    padding: 0.4em 0.9em;
+    padding: 0.6em 1em;
+    margin: 1.5em 0;
     font-family: var(--title-family);
 }
 
