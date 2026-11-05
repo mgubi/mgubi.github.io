@@ -3,13 +3,14 @@
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
-  <screens|<\shown>
+  <screens|<\hidden>
     <\with|par-mode|left>
       <vspace*|0.8cm>
 
       \;
 
-      <cqft-course-title|A Constructive Introduction to<next-line>Quantum Field Theory>
+      <cqft-course-title|A Constructive Introduction to<next-line>Quantum
+      Field Theory>
 
       <vspace|0.2cm>
 
@@ -29,10 +30,8 @@
 
       \;
     </with>
-  </shown>|<\hidden>
+  </hidden>|<\shown>
     <mytitle|Where we are>
-
-    \;
 
     At each lattice <math|N>, exactly (Lecture<nbsp>5):
 
@@ -64,7 +63,7 @@
       <math|Z> small and <math|Y> rarely at large fields, <strong|uniformly
       in <math|N>>. Neither equation can be estimated alone.
     </myframed>
-  </hidden>|<\hidden>
+  </shown>|<\hidden>
     <mytitle|How FBSDE estimates usually work, and why not here>
 
     \;
@@ -136,32 +135,32 @@
   </hidden>|<\hidden>
     <mytitle|The field equation>
 
-    Insert <math|K<rsub|q>\<Phi\><rsub|q>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*<around|(|Y<rsub|q>+Z<rsub|q>|)>>
-    into the coordinate equation (C), with
-    <math|K<rsub|q>=K<rsub|q<rsub|0>>+q-q<rsub|0>>. With
-    <math|V<rsub|q>=Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-\<zeta\><rsub|q>>:
+    Lecture<nbsp>4, forecast form, in this profile:
+    <math|K<rsub|q<rsub|0>>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>=\<eta\><rsub|q>>,
+    with the exact (unknown) force. Explicit force
+    <math|<wide|\<cal-F\>|\<bar\>><rsub|q>=K<rsub|q>\<varrho\><rsub|q>+<frac|\<gamma\>|3>y<rsup|3>>,
+    <math|\<psi\>=Y+Z>:
 
     <\equation*>
-      <frame|<space|0.27em>K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>,<space|2em>Y<rsub|q>=V<rsub|q>+\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>.<space|0.27em>>
+      <frame|<space|0.27em>K<rsub|q<rsub|0>>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*Z<rsub|q><space|0.27em>>
     </equation*>
 
     <\itemize>
-      <item>The field equation of Lecture<nbsp>4 in these coordinates:
-      elliptic at each <math|q>, with <strong|no memory>. The past enters
-      only through the noise.
+      <item>Elliptic at each <math|q>, <strong|no memory>, <strong|pathwise>;
+      coercivity from the explicit <strong|cube>.
 
       <item>The backward equation enters only through
-      <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>, at the same resolution.
+      <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>.
 
-      <item>The mass is only <math|q<rsub|0>>: at large <math|q> all the
-      coercivity must come from the <strong|cube>.
+      <item>Pointwise bounds need a smooth noise:
+      <math|\<zeta\>=C<rsub|q>\<eta\>>, <math|V=Y+\<varrho\><around|(|Y|)>-\<zeta\>>,
 
-      <item>The identity is <strong|pathwise>.
+      <\equation*>
+        K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>.
+      </equation*>
+
+      Mass only <math|q<rsub|0>>: all the coercivity comes from the cube.
     </itemize>
-
-    <small|<with|color|dark grey|Exercise<nbsp>13.3: subtracting the Gaussian
-    field <math|X=<big|int>C<space|0.17em>\<mathd\>W> instead gives an
-    equation with memory.>>
   </hidden>|<\hidden>
     <mytitle|Thresholds and energies>
 
@@ -333,8 +332,7 @@
 
     \;
 
-    <cqft-part-title|Backward feedback and
-    closure>
+    <cqft-part-title|Backward feedback and closure>
 
     <vspace|0.3cm>
 
@@ -554,8 +552,7 @@
 
     \;
 
-    <cqft-part-title|The boundary at
-    infinite resolution>
+    <cqft-part-title|The boundary at infinite resolution>
 
     <vspace|0.3cm>
 
@@ -773,8 +770,7 @@
 
     \;
 
-    <cqft-part-title|Identifying the
-    limit>
+    <cqft-part-title|Identifying the limit>
 
     <vspace|0.3cm>
 
@@ -911,8 +907,7 @@
     Under <math|\<bbb-P\>=f\<bbb-R\>>, with
     <math|f=\<mathe\><rsup|A<around|(|q<rsub|0>,0|)>>\<mathe\><rsup|-<big|int>
     e>>, <math|\<Phi\>=Y<rsub|\<infty\>>>,
-    <math|\<cal-F\><rsub|q>=\<sigma\><around|(|x<rsub|s>:s\<leqslant\>
-    q|)>>:
+    <math|\<cal-F\><rsub|q>=\<sigma\><around|(|x<rsub|s>:s\<leqslant\> q|)>>:
 
     <\itemize>
       <item><math|\<Phi\>\<sim\>\<nu\>>, <math|x<rsub|q>=<around|(|q-q<rsub|0>|)>C<rsub|q>\<Phi\>+C<rsub|q>B<rsub|q-q<rsub|0>>>
@@ -999,7 +994,8 @@
   </hidden>|<\hidden>
     <mytitle|The field equation at resolution <math|q>>
 
-    In the limit: <math|\<eta\><rsub|q>=K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>, <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>>,
+    In the limit: <math|\<eta\><rsub|q>=K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>,
+    <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>>,
     <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>\<to\>I>.
 
     <\theorem*>
@@ -1145,8 +1141,8 @@
       high-scale contraction with non-degeneracy. Only
       <math|L<rsup|2><around|(|<math-up|HS>|)>> control is available.
 
-      <item><strong|Strong solutions:> is the Polchinski process adapted to <math|W>? The
-      same bound. Allinger\UMitter does not apply, as
+      <item><strong|Strong solutions:> is the Polchinski process adapted to
+      <math|W>? The same bound. Allinger\UMitter does not apply, as
       <math|<around|\<\|\|\>|\<Phi\>|\<\|\|\>><rsub|2>=\<infty\>>.
 
       <item><strong|Tails:> the quartic moment at <math|s> near

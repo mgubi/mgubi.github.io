@@ -1882,7 +1882,7 @@
   the whole drift on the large-field set. What saves us is that this set is
   rarely visited, and its occupation is controlled by the coercivity of the
   actual dynamics. Lecture<nbsp>6 controls it through the large-field action
-  <hlink|(13.6)|cqft_lecture6.tm#eq:energies>.
+  <hlink|(13.7)|cqft_lecture6.tm#eq:energies>.
 
   <paragraph|The coordinate correction> Finally, write the approximate
   coordinate equation as
@@ -2004,8 +2004,7 @@
   <paragraph|The field equation does not see the cube> The field equation
   <hlink|(18.20)|cqft_lecture6.tm#eq:field-q> of Lecture<nbsp>6 on one site
   is <math|q<rsub|0>\<Phi\><rsub|q>=J<rsub|q>F<rsub|q><around|(|\<Phi\><rsub|q>|)>+\<eta\><rsub|q>>,
-  where <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>/q>. Its noise is the
-  filtered measurement noise, so <math|\<bbb-E\>exp<around|(|h\<eta\><rsub|q>|)>\<leqslant\>exp<around|(|<around|(|q-q<rsub|0>|)>h<rsup|2>/2|)>>
+  where <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>/q>. Its noise is the conditional expectation of the bridge noise, so <math|\<bbb-E\>exp<around|(|h\<eta\><rsub|q>|)>\<leqslant\>exp<around|(|<around|(|q-q<rsub|0>|)>h<rsup|2>/2|)>>
   whatever the interaction (Lemma<nbsp><hlink|13.2|cqft_lecture6.tm#lem:noise>
   of Lecture<nbsp>6). With the frozen cube <math|f=-\<lambda\> x<rsup|3>> the
   equation looks coercive:
@@ -2495,10 +2494,7 @@
   removes the frozen-cube problem specifically: the clipping error of
   Section<nbsp>12.3 is still there, and it is what Lecture<nbsp>6 pays for.
 
-  In the coordinate <math|y> the cube is genuine, <math|q*y+\<lambda\>
-  y<rsup|3>=q*\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>\<psi\><rsub|q>+\<eta\><rsub|q>>:
-  this is the equation <hlink|(13.4)|cqft_lecture6.tm#eq:field> of
-  Lecture<nbsp>6.
+  In the coordinate <math|y> the cube is genuine: <math|q*y+\<lambda\> y<rsup|3>=q*\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>\<psi\><rsub|q>+\<eta\><rsub|q>>, i.e. <math|q<rsub|0>y+\<lambda\>y<rsup|3>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)><around|(|\<psi\><rsub|q>-y|)>>. This is the forecast equation of Lecture<nbsp>4 with the explicit force in place of the exact one, the equation <hlink|(13.3)|cqft_lecture6.tm#eq:field-Y> of Lecture<nbsp>6 on one site.
 
   <strong|What the model points to.> The scalar model points to the
   integration of the cube. The force equation in the forecast coordinate and

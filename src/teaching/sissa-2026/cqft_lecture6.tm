@@ -378,20 +378,32 @@
 
   <subsection|The field equation><label|sec:field>
 
-  By (<hlink|10.6|cqft_lecture5.tm#eq:observation>) the noise of
-  Section<nbsp><hlink|9.2|cqft_lecture4.tm#sec:DS> of Lecture<nbsp>4 is here
-  the filtered measurement noise:
+  <paragraph|The forecast equation of Lecture<nbsp>4> In the profile
+  <hlink|(10.2)|cqft_lecture5.tm#eq:dictionary-profile>, where
+  <math|S<rsub|q>=C<rsub|q>> and the regulator is <math|q-q<rsub|0>>, the
+  noise observable of Theorem<nbsp><hlink|9.1|cqft_lecture4.tm#thm:DS-scale>
+  of Lecture<nbsp>4 is
 
   <\equation>
-    \<eta\><rsub|q>\<assign\>K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>.<label|eq:eta-filter>
+    \<eta\><rsub|q>\<assign\>K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>,<label|eq:eta-filter>
   </equation>
 
-  This is the noise observable of Theorem<nbsp><hlink|9.1|cqft_lecture4.tm#thm:DS-scale>
-  of Lecture<nbsp>4 in the profile <hlink|(10.2)|cqft_lecture5.tm#eq:dictionary-profile>,
-  where <math|S<rsub|q>=C<rsub|q>> and the regulator is <math|q-q<rsub|0>>.
-  Here <math|\<zeta\><rsub|q>\<assign\>C<rsub|q>\<eta\><rsub|q>=\<bbb-E\><rsub|q><around|[|C<rsub|q>B<rsub|q-q<rsub|0>>|]>> is the filtered version of the Gaussian bridge noise <math|\<zeta\><rsub|t>> of Section<nbsp><hlink|9.2|cqft_lecture4.tm#sec:DS> of Lecture<nbsp>4.
-  Its bound (Proposition<nbsp><hlink|9.5|cqft_lecture4.tm#prop:subgauss> of
-  Lecture<nbsp>4) is here one line.
+  the second form by the bridge (<hlink|10.6|cqft_lecture5.tm#eq:observation>),
+  <math|K<rsub|q>\<Phi\><rsub|q>=<around|(|q-q<rsub|0>|)>\<Phi\><rsub|\<infty\>>+B<rsub|q-q<rsub|0>>>.
+  Since <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>=-\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>>
+  and <math|K<rsub|q>=K<rsub|q<rsub|0>>+q-q<rsub|0>>, the field equation for
+  the forecast <hlink|(9.8)|cqft_lecture4.tm#eq:field-eq-forecast> of
+  Lecture<nbsp>4 reads
+
+  <\equation*>
+    K<rsub|q<rsub|0>>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>=\<eta\><rsub|q>:
+  </equation*>
+
+  an elliptic equation for the forecast at resolution <math|q>, in which the
+  exact force <math|\<cal-F\><rsub|q>> acts with no smoothing operator, and
+  whose noise is controlled whatever the interaction
+  (Proposition<nbsp><hlink|9.5|cqft_lecture4.tm#prop:subgauss> of
+  Lecture<nbsp>4, here in one line).
 
   <\lemma>
     <dueto|The noise><label|lem:noise>For every convex <math|\<Psi\>> on
@@ -414,37 +426,58 @@
     and <hlink|(10.3)|cqft_lecture5.tm#eq:a2>.
   </proof>
 
-  So <math|\<zeta\><rsub|q>> has the tails of the free field at resolution
-  <math|q>. It is not Gaussian, and it depends on the interaction through
-  <math|\<psi\>>, but its bounds do not. Insert
-  <math|K<rsub|q>\<Phi\><rsub|q>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*<around|(|Y<rsub|q>+Z<rsub|q>|)>>
-  into the coordinate equation (C), and use
-  <math|K<rsub|q>=K<rsub|q<rsub|0>>+q-q<rsub|0>>. With
+  <paragraph|The explicit force> The exact force <math|\<cal-F\><rsub|q>> is
+  unknown, and so is its coercivity. We replace it by the explicit force of
+  <hlink|(12.5)|cqft_lecture5.tm#eq:coordinate>,
+  <math|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|y|)>=K<rsub|q>\<varrho\><rsub|q><around|(|y|)>+<frac|\<gamma\>|3>y<rsup|3>>,
+  and the forecast by the approximate forecast,
+  <math|\<psi\><rsub|q>=Y<rsub|q>+Z<rsub|q>>. The coordinate equation
+  <math|K<rsub|q>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=K<rsub|q>\<Phi\><rsub|q>>
+  and <eqref|eq:eta-filter> give the exact identity
 
   <\equation>
-    V<rsub|q>\<assign\>Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-\<zeta\><rsub|q>,<label|eq:Vsharp>
+    K<rsub|q<rsub|0>>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*Z<rsub|q>.<label|eq:field-Y>
   </equation>
 
-  (<math|V<rsub|q>> is not to be confused with the potentials <math|V<rsub|t><around|(|x|)>>, <math|V<rsub|N>> of Lectures<nbsp>4\U5 and of Sections<nbsp><reference|sec:restart> and<nbsp>18.2; the potentials are functions of a field, <math|V<rsub|q>> here is a random field) we obtain the
-  <em|field equation>
-
-  <\equation>
-    K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>,<space|2em>Y<rsub|q>=V<rsub|q>+\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>.<label|eq:field>
-  </equation>
-
-  This is the equation we estimate: the field
-  equation<nbsp><hlink|(9.7)|cqft_lecture4.tm#eq:field-eq-scale> of
-  Lecture<nbsp>4 in these coordinates. Three remarks:
+  This is the forecast equation of Lecture<nbsp>4 with the explicit force in
+  place of the exact one, and it is the equation we estimate:
 
   <\itemize>
     <item>it is an elliptic equation at each resolution, with <em|no memory>:
     the past enters only through the noise <math|\<eta\><rsub|q>>;
 
-    <item>the only trace of the backward equation is
-    <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>, at the same resolution;
+    <item>the coercivity comes from the cube of
+    <math|<wide|\<cal-F\>|\<bar\>><rsub|q>>, which is explicit;
+
+    <item>the price of the replacement is the error
+    <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>, the only trace of the backward
+    equation, at the same resolution;
 
     <item>the identity is pathwise: no expectation has been taken.
   </itemize>
+
+  <paragraph|The smoothed noise> The noise <math|\<eta\><rsub|q>> is rough,
+  with covariance dominated by that of <math|B<rsub|q-q<rsub|0>>>, a white
+  noise; pointwise estimates need a noise which is a function. So we use
+  <math|\<zeta\><rsub|q>=C<rsub|q>\<eta\><rsub|q>=\<bbb-E\><rsub|q><around|[|C<rsub|q>B<rsub|q-q<rsub|0>>|]>>,
+  the filtered version of the Gaussian bridge noise <math|\<zeta\><rsub|t>>
+  of Section<nbsp><hlink|9.2|cqft_lecture4.tm#sec:DS> of Lecture<nbsp>4,
+  which by <eqref|eq:zeta-tail> has the tails of the free field at resolution
+  <math|q>. It is not Gaussian, and it depends on the interaction through
+  <math|\<psi\>>, but its bounds do not. Since
+  <math|K<rsub|q<rsub|0>>\<zeta\><rsub|q>=\<eta\><rsub|q>-<around|(|q-q<rsub|0>|)>\<zeta\><rsub|q>>,
+  subtracting it from <eqref|eq:field-Y> and writing
+
+  <\equation>
+    V<rsub|q>\<assign\>Y<rsub|q>+\<varrho\><rsub|q><around|(|Y<rsub|q>|)>-\<zeta\><rsub|q>,<label|eq:Vsharp>
+  </equation>
+
+  (<math|V<rsub|q>> is not to be confused with the potentials <math|V<rsub|t><around|(|x|)>>, <math|V<rsub|N>> of Lectures<nbsp>4\U5 and of Sections<nbsp><reference|sec:restart> and<nbsp>18.2; the potentials are functions of a field, <math|V<rsub|q>> here is a random field) we obtain
+  <eqref|eq:field-Y> in the form in which it is estimated,
+
+  <\equation>
+    K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<gamma\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>,<space|2em>Y<rsub|q>=V<rsub|q>+\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>.<label|eq:field>
+  </equation>
 
   The mass of <eqref|eq:field> is only <math|q<rsub|0>>, so at large
   resolution all the coercivity must come from the cube. The next section

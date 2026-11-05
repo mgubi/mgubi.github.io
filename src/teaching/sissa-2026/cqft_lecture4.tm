@@ -2885,9 +2885,7 @@
   <math|F<rsub|t>>, which converts the control of
   <math|A*\<Phi\><rsub|t>-A*Q<rsub|t>*F<rsub|t>> into control of
   <math|\<Phi\><rsub|t>>. This is the remaining analytic input, and it is
-  where the large-field problem of Lecture<nbsp>5 enters. Lecture<nbsp>6
-  carries this out: its forward estimate is this field equation, with the
-  bound of Proposition<nbsp><reference|prop:subgauss>.
+  where the large-field problem of Lecture<nbsp>5 enters. Lecture<nbsp>6 carries this out: its forward estimate is the forecast form<nbsp><eqref|eq:field-eq-forecast> of this field equation, with the explicit force of Lecture<nbsp>5 in place of the exact one, and with the bound of Proposition<nbsp><reference|prop:subgauss>.
 
   <subsection|Infinite volume><label|sec:infinite-volume>
 

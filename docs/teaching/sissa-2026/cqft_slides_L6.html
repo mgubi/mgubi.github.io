@@ -47,7 +47,7 @@
   <body>
     <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 6 (slides)</h1>
     <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
-    <div class="toggle" style="display: block">
+    <div class="toggle" style="display: none">
       <div align="left">
         <p style="margin-top: 0.8cm">
 
@@ -88,13 +88,10 @@
         </p>
       </div>
     </div>
-    <div class="toggle" style="display: none">
+    <div class="toggle" style="display: block">
       <div class="slide-title">
         Where we are
       </div>
-      <p>
-
-      </p>
       <p>
         At each lattice <font color="#620000">\(N\)</font>, exactly (Lecture 5):
       </p>
@@ -268,19 +265,18 @@ q_0) a^2 (q) \right), \qquad (q -
         The field equation
       </div>
       <p>
-        Insert <font color="#620000">\(K_q \Phi_q = \eta_q + (q - q_0)  (Y_q +
-        Z_q)\)</font> into the coordinate equation (C), with <font color="#620000">\(K_q
-        = K_{q_0} + q - q_0\)</font>. With <font color="#620000">\(V_q = Y_q +
-        \varrho_q (Y_q) - \zeta_q\)</font>:
+        Lecture 4, forecast form, in this profile: <font color="#620000">\(K_{q_0}
+        \psi_q +\mathcal{F}_q (\psi_q) = \eta_q\)</font>, with the exact
+        (unknown) force. Explicit force <font color="#620000">\(\bar{\mathcal{F}}_q =
+        K_q \varrho_q + \frac{\gamma}{3} y^3\)</font>, <font color="#620000">\(\psi = Y
+        + Z\)</font>:
       </p>
       <center>
         \(\displaystyle \begin{array}{|l|}
   \hline
   \hspace{0.27em} K_{q_0}
-        V_q + \frac{\gamma}{3} Y_q^3 = (q - q_0)  (\zeta_q -
-  \varrho_q (Y_q)
-        + Z_q), \qquad Y_q = V_q + \zeta_q - \varrho_q (Y_q) .
-
+        Y_q + \bar{\mathcal{F}}_q (Y_q) = \eta_q + (q - q_0)
+  Z_q
         \hspace{0.27em}\\
   \hline
 \end{array}\)
@@ -288,35 +284,34 @@ q_0) a^2 (q) \right), \qquad (q -
       <ul>
         <li>
           <p>
-            The field equation of Lecture 4 in these coordinates: elliptic at
-            each <font color="#620000">\(q\)</font>, with <strong>no memory</strong>.
-            The past enters only through the noise.
+            Elliptic at each <font color="#620000">\(q\)</font>, <strong>no
+            memory</strong>, <strong>pathwise</strong>; coercivity from the
+            explicit <strong>cube</strong>.
           </p>
         </li>
         <li>
           <p>
             The backward equation enters only through <font color="#620000">\((q - q_0)
-            Z_q\)</font>, at the same resolution.
+            Z_q\)</font>.
           </p>
         </li>
         <li>
           <p>
-            The mass is only <font color="#620000">\(q_0\)</font>: at large <font
-            color="#620000">\(q\)</font> all the coercivity must come from the
-            <strong>cube</strong>.
+            Pointwise bounds need a smooth noise: <font color="#620000">\(\zeta = C_q
+            \eta\)</font>, <font color="#620000">\(V = Y + \varrho (Y) -
+            \zeta\)</font>,
           </p>
-        </li>
-        <li>
+          <center>
+            \(\displaystyle K_{q_0} V_q + \frac{\gamma}{3} Y_q^3 = (q - q_0)
+            (\zeta_q - \varrho_q (Y_q) +
+Z_q) .\)
+          </center>
           <p>
-            The identity is <strong>pathwise</strong>.
+            Mass only <font color="#620000">\(q_0\)</font>: all the coercivity comes
+            from the cube.
           </p>
         </li>
       </ul>
-      <p>
-        <font style="font-size: 84.1%"><font color="#707070">Exercise 13.3: subtracting the Gaussian
-        field <font color="#620000">\(X = \int C \hspace{0.17em} \mathrm{d} W\)</font>
-        instead gives an equation with memory.</font></font>
-      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">

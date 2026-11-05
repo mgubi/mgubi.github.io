@@ -47,7 +47,7 @@
   <body>
     <h1 class="cqft-page-title">Constructive quantum field theory — Lecture 5 (slides)</h1>
     <nav class="cqft-course-nav" aria-label="Course"><a href="../lectures-constructive-qft-sissa-2026.html#auto-3">SISSA lectures</a></nav>
-    <div class="toggle" style="display: block">
+    <div class="toggle" style="display: none">
       <font style="font-size: 90.0%"><div align="left">
         <p style="margin-top: 0.8cm">
 
@@ -271,16 +271,32 @@ V_N (\varphi)} \mu^C
       <p>
         <font color="#620000">\(\gamma = 3 \lambda\)</font>, so <font color="#620000">\(D^2 U
         (y) = \gamma y^2\)</font> (not the counterterm <font color="#620000">\(\gamma_T\)</font>
-        of Lecture 4). The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
+        of Lecture 4).
       </p>
       <p>
-        <strong>Main result, informal.</strong> Let <font color="#620000">\(\mu_N = r -
-        3 \lambda \text{Tr} C + 6 \lambda^2 \int C^3\)</font>. Then (a) <font
-        color="#620000">\(\nu_N \to \nu\)</font> in <font color="#620000">\(H^{- s}\)</font>,
-        <font color="#620000">\(s > \frac{1}{2}\)</font>, along the whole sequence; (b)
-        the forecasts converge in law to a solution of a limiting FBSDE; (c)
-        <font color="#620000">\(\nu\)</font> has a variational formula, an integration
-        by parts formula and quartic tails.
+        The Wick ordering is now part of <font color="#620000">\(\mu_N\)</font>.
+      </p>
+      <p>
+
+      </p>
+      <div class="slide-block">
+        <p>
+          <strong>Main result, informal.</strong> Let
+        </p>
+        <center>
+          \(\displaystyle \mu_N = r - 3 \lambda \text{Tr} C + 6 \lambda^2 \int
+          C^3 .\)
+        </center>
+        <p>
+          Then (a) <font color="#620000">\(\nu_N \to \nu\)</font> in <font color="#620000">\(H^{-
+          s}\)</font>, <font color="#620000">\(s > \frac{1}{2}\)</font>, along the
+          whole sequence; (b) the forecasts converge in law to a solution of a
+          limiting FBSDE; (c) <font color="#620000">\(\nu\)</font> has a variational
+          formula, an integration by parts formula and quartic tails.
+        </p>
+      </div>
+      <p>
+
       </p>
       <p>
         These come from bounds on the error <font color="#620000">\(Z\)</font> of an
@@ -293,12 +309,10 @@ V_N (\varphi)} \mu^C
         The Polchinski process as a filter
       </div>
       <p>
-
-      </p>
-      <p>
         By Lecture 4, in the profile <font color="#620000">\(S_q = C_q\)</font>, <font
         color="#620000">\(\mathcal{R}_q = q - q_0\)</font>; at fixed <font color="#620000">\(N\)</font>
-        everything is a theorem. The Polchinski process solves
+        everything is a theorem.<span style="margin-left: 1em"></span>The Polchinski process
+        solves
       </p>
       <center>
         \(\displaystyle \mathrm{d} \Phi_q = C_q^2 F_q \hspace{0.17em}
@@ -313,16 +327,26 @@ V_N (\varphi)} \mu^C
       <ul>
         <li>
           <p>
-            a noisy observation of its endpoint: <font color="#620000">\(\Phi_q = (q -
-            q_0) C_q \Phi_{\infty} + C_q B_{q - q_0}\)</font>, <font color="#620000">\(B\)</font>
-            independent of <font color="#620000">\(\Phi_{\infty}\)</font>;
+            a noisy observation of its endpoint:
+          </p>
+          <center>
+            \(\displaystyle \Phi_q = (q - q_0) C_q \Phi_{\infty} + C_q B_{q -
+            q_0},\)
+          </center>
+          <p>
+            <font color="#620000">\(B\)</font> independent of <font color="#620000">\(\Phi_{\infty}\)</font>;
           </p>
         </li>
         <li>
           <p>
-            forecast <font color="#620000">\(\psi_q =\mathbb{E}_q \Phi_{\infty} =
-            \Phi_q + C_q F_q = m_q (\Phi_q)\)</font>, covariance <font color="#620000">\(\text{Cov}_q
-            > 0\)</font>;
+            forecast
+          </p>
+          <center>
+            \(\displaystyle \psi_q =\mathbb{E}_q \Phi_{\infty} = \Phi_q + C_q
+            F_q = m_q (\Phi_q),\)
+          </center>
+          <p>
+            covariance <font color="#620000">\(\text{Cov}_q > 0\)</font>;
           </p>
         </li>
         <li>
@@ -359,20 +383,17 @@ V_N (\varphi)} \mu^C
         The exact force in the forecast coordinate
       </div>
       <p>
-
-      </p>
-      <p>
         Since <font color="#620000">\(\Phi_q \mapsto \psi_q\)</font> is invertible,
-        define <font color="#620000">\(\mathcal{F}_q\)</font> by <font color="#620000">\(\Phi_q
-        = \psi_q + C_q \mathcal{F}_q (\psi_q)\)</font> (the field equation
-        <font color="#620000">\(K_q \Phi_q = K_q \psi_q +\mathcal{F}_q
-        (\psi_q)\)</font>), and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q +
-        D\mathcal{F}_q (y))^{- 1}\)</font>.
+        define <font color="#620000">\(\mathcal{F}_q\)</font> by
       </p>
+      <center>
+        \(\displaystyle \Phi_q = \psi_q + C_q \mathcal{F}_q (\psi_q)\)
+      </center>
       <p>
-        It is the <font color="#620000">\(\mathcal{F}\)</font> of Lecture 4 (<font
-        color="#620000">\(x = \psi + S\mathcal{F} (\psi)\)</font>), and <font color="#620000">\(F_q
-        = -\mathcal{F}_q (\psi_q)\)</font>.
+        and <font color="#620000">\(H^{\text{ex}}_q (y) = (K_q + D\mathcal{F}_q (y))^{-
+        1}\)</font>. It is the <font color="#620000">\(\mathcal{F}\)</font> of Lecture
+        4 (<font color="#620000">\(x = \psi + S\mathcal{F} (\psi)\)</font>), and <font
+        color="#620000">\(F_q = -\mathcal{F}_q (\psi_q)\)</font>.
       </p>
       <div class="slide-block">
         <p>
@@ -386,10 +407,16 @@ V_N (\varphi)} \mu^C
         </center>
       </div>
       <p>
+
+      </p>
+      <p>
         It&ocirc; on <font color="#620000">\(\Phi = \psi + C\mathcal{F}
         (\psi)\)</font>. Its integrated form is Wetterich's equation, which we
         do not need. An identity about the unknown <font color="#620000">\(\nu_N\)</font>,
-        not a construction. Strategy: an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
+        not a construction.
+      </p>
+      <p>
+        <b>Strategy:</b> an approximate force <font color="#620000">\(\bar{\mathcal{F}}\)</font>
         gives approximate forecast coordinates; the error should be driven by
         the failure of <font color="#620000">\(\bar{\mathcal{F}}\)</font> to solve this
         equation.
@@ -477,6 +504,9 @@ V_N (\varphi)} \mu^C
           </p>
         </li>
       </ul>
+      <p>
+
+      </p>
       <div class="slide-block">
         <p>
           <strong>UV stability</strong>
@@ -487,6 +517,9 @@ V_N (\varphi)} \mu^C
           is small uniformly in <font color="#620000">\(N\)</font>.
         </p>
       </div>
+      <p>
+
+      </p>
       <p>
         Needed: (i) a defect integrable against the backward propagator
         (<strong>renormalisation</strong>); (ii) global coercivity of <font
@@ -501,8 +534,11 @@ V_N (\varphi)} \mu^C
       <p>
 
       </p>
+      <p>
+
+      </p>
       <center>
-        <img src="cqft_slides_L5-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 14.6876606060606em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
+        <img src="cqft_slides_L5-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 23.723296969697em" alt="Figure from Constructive quantum field theory — Lecture 5 (slides)" decoding="async" loading="lazy">
       </center>
     </div>
     <div class="toggle" style="display: none">
@@ -572,6 +608,15 @@ V_N (\varphi)} \mu^C
       <div class="slide-title">
         The loop estimate
       </div>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
       <p>
 
       </p>
@@ -777,6 +822,9 @@ s, \quad j = 0, 1,\)
         1} s^{1 / 2} r_s^{- 4}\)</font>:
       </p>
       <p>
+
+      </p>
+      <center>
         <table style="display: inline-table; vertical-align: middle">
           <tbody><tr>
             <td style="text-align: center; vertical-align: middle; border-top: 1px solid; border-bottom: 1px solid">steps <font color="#620000">\(n\)</font></td>
@@ -803,6 +851,12 @@ s, \quad j = 0, 1,\)
             2}\)</font></td>
           </tr></tbody>
         </table>
+      </center>
+      <p>
+
+      </p>
+      <p>
+
       </p>
       <p>
         <strong>Two steps are the minimum, and suffice.</strong> The defect of
@@ -853,15 +907,21 @@ s, \quad j = 0, 1,\)
         <p>
           <strong>Scalar model</strong>
         </p>
+        <center>
+          \(\displaystyle \ell_q (y) = \gamma y [(q + \gamma y^2)^{- 1} - q^{-
+          1}]\)
+        </center>
         <p>
-          <font color="#620000">\(\ell_q (y) = \gamma y [(q + \gamma y^2)^{- 1} - q^{-
-          1}]\)</font>: power series of radius exactly <font color="#620000">\(r_q\)</font>
+          : power series of radius exactly <font color="#620000">\(r_q\)</font>
           (singularities at <font color="#620000">\(\pm \mathrm{i} r_q\)</font>). Half
           of the truncations destroy monotonicity. The exact function is
           harmless, <font color="#620000">\(| \ell_q \prime | \leqslant \frac{9}{8}
           \gamma / q\)</font>.
         </p>
       </div>
+      <p>
+
+      </p>
       <p>
         Perturbative control for <font color="#620000">\(|y| \lesssim r_q\)</font>;
         outside, a non-perturbative replacement that keeps the structure the
@@ -989,6 +1049,10 @@ s, \quad j = 0, 1,\)
       <p>
         With <font color="#620000">\(DU = \frac{\gamma}{3} y^3\)</font>:
       </p>
+      <p>
+        <strong>Up to a small Lipschitz perturbation, the forecast solves the
+        cubic elliptic equation</strong>
+      </p>
       <center>
         \(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q (Y_q)) +
         \frac{\gamma}{3} Y_q^3, \qquad
@@ -998,10 +1062,7 @@ s, \quad j = 0, 1,\)
         + g_q^2) .\)
       </center>
       <p>
-        <strong>Up to a small Lipschitz perturbation, the forecast solves the
-        cubic elliptic equation</strong> <font color="#620000">\(K_q  (Y + \varrho) +
-        \frac{\gamma}{3} Y^3 = K_q \Phi_q\)</font> driven by the field at
-        resolution <font color="#620000">\(q\)</font>.
+        driven by the field at resolution <font color="#620000">\(q\)</font>.
       </p>
       <p>
         <b>Summary of today</b>, at every lattice:
@@ -1140,7 +1201,7 @@ s, \quad j = 0, 1,\)
         r_q\)</font>.
       </p>
     </div>
-    <div class="toggle" style="display: none">
+    <div class="toggle" style="display: block">
       <div class="slide-title">
         Integrating the cube
       </div>
@@ -1186,10 +1247,11 @@ C_{\ast} < \frac{1}{2} .\)
         </li>
       </ul>
       <p>
-        Not a no-go theorem: it rules out only estimating <font color="#620000">\(R\)</font>
-        as a small perturbation of the frozen cube. Integrating the cube in
-        the original field is possible, but on the lattice its loop defect
-        must still be renormalised; that route is not proved here.
+        <font style="font-size: 84.1%">Not a no-go theorem: it rules out only estimating <font
+        color="#620000">\(R\)</font> as a small perturbation of the frozen cube.
+        Integrating the cube in the original field is possible, but on the
+        lattice its loop defect must still be renormalised; that route is not
+        proved here.</font>
       </p>
     </div>
   </body>

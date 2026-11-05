@@ -514,23 +514,37 @@
     </p>
     <h3 id="auto-4"><a id="sec:field"></a>13.2<span style="margin-left: 1em"></span>The field equation<span style="margin-left: 1em"></span></h3>
     <p>
-      By (<a href="cqft_lecture5.html#eq:observation">10.6</a>) the noise of Section <a href="cqft_lecture4.html#sec:DS">9.2</a> of Lecture
-      4 is here the filtered measurement noise:
+      <div style="display: inline">
+        <a id="auto-5"></a>
+      </div>
+      <h5>The forecast equation of Lecture 4.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        In the profile <a href="cqft_lecture5.html#eq:dictionary-profile">(10.2)</a>, where \(S_q = C_q\) and the
+        regulator is \(q - q_0\), the noise observable of Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a>
+        of Lecture 4 is
+      </div>
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:eta-filter"></a>\(\displaystyle \eta_q := K_q \Phi_q - (q
-        - q_0) \psi_q =\mathbb{E}_q [B_{q - q_0}] . \)</td>
+        - q_0) \psi_q =\mathbb{E}_q [B_{q - q_0}], \)</td>
         <td align="right">(13.1)</td>
       </tr>
     </table>
     <p>
-      This is the noise observable of Theorem <a href="cqft_lecture4.html#thm:DS-scale">9.1</a> of Lecture 4 in
-      the profile <a href="cqft_lecture5.html#eq:dictionary-profile">(10.2)</a>, where \(S_q = C_q\) and the regulator
-      is \(q - q_0\). Here \(\zeta_q := C_q \eta_q =\mathbb{E}_q [C_q B_{q -
-      q_0}]\) is the filtered version of the Gaussian bridge noise \(\zeta_t\)
-      of Section <a href="cqft_lecture4.html#sec:DS">9.2</a> of Lecture 4. Its bound (Proposition <a
-      href="cqft_lecture4.html#prop:subgauss">9.5</a> of Lecture 4) is here one line.
+      the second form by the bridge (<a href="cqft_lecture5.html#eq:observation">10.6</a>), \(K_q \Phi_q = (q -
+      q_0) \Phi_{\infty} + B_{q - q_0}\). Since \(F_q = K_q (\psi_q - \Phi_q)
+      = -\mathcal{F}_q (\psi_q)\) and \(K_q = K_{q_0} + q - q_0\), the field
+      equation for the forecast <a href="cqft_lecture4.html#eq:field-eq-forecast">(9.8)</a> of Lecture 4 reads
+    </p>
+    <center>
+      \(\displaystyle K_{q_0} \psi_q +\mathcal{F}_q (\psi_q) = \eta_q :\)
+    </center>
+    <p>
+      an elliptic equation for the forecast at resolution \(q\), in which the
+      exact force \(\mathcal{F}_q\) acts with no smoothing operator, and whose
+      noise is controlled whatever the interaction (Proposition <a href="cqft_lecture4.html#prop:subgauss">9.5</a>
+      of Lecture 4, here in one line).
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -561,37 +575,30 @@ q_0) a^2 (q) \right), \qquad (q - q_0) a^2 (q) \leqslant C
       \delta_x, f \rangle}\), and <a href="cqft_lecture5.html#eq:a2">(10.3)</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
-      So \(\zeta_q\) has the tails of the free field at resolution \(q\). It
-      is not Gaussian, and it depends on the interaction through \(\psi\), but
-      its bounds do not. Insert \(K_q \Phi_q = \eta_q + (q - q_0)  (Y_q +
-      Z_q)\) into the coordinate equation (C), and use \(K_q = K_{q_0} + q -
-      q_0\). With
+      <div style="display: inline">
+        <a id="auto-6"></a>
+      </div>
+      <h5>The explicit force.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The exact force \(\mathcal{F}_q\) is unknown, and so is its
+        coercivity. We replace it by the explicit force of <a href="cqft_lecture5.html#eq:coordinate">(12.5)</a>,
+        \(\bar{\mathcal{F}}_q (y) = K_q \varrho_q (y) + \frac{\gamma}{3}
+        y^3\), and the forecast by the approximate forecast, \(\psi_q = Y_q +
+        Z_q\). The coordinate equation \(K_q Y_q + \bar{\mathcal{F}}_q (Y_q) =
+        K_q \Phi_q\) and <class style="font-style: normal">(<a href="#eq:eta-filter">13.1</a>)</class> give the
+        exact identity
+      </div>
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:Vsharp"></a>\(\displaystyle V_q := Y_q + \varrho_q
-        (Y_q) - \zeta_q, \)</td>
+        <td width="100%" align="center"><a id="eq:field-Y"></a>\(\displaystyle K_{q_0} Y_q +
+        \bar{\mathcal{F}}_q (Y_q) = \eta_q + (q - q_0) Z_q . \)</td>
         <td align="right">(13.3)</td>
       </tr>
     </table>
     <p>
-      (\(V_q\) is not to be confused with the potentials \(V_t (x)\), \(V_N\)
-      of Lectures 4&ndash;5 and of Sections <a href="#sec:restart">16.3</a> and 18.2; the
-      potentials are functions of a field, \(V_q\) here is a random field) we
-      obtain the <em>field equation</em>
-    </p>
-    <table width="100%">
-      <tr>
-        <td width="100%" align="center"><a id="eq:field"></a>\(\displaystyle K_{q_0} V_q +
-        \frac{\gamma}{3} Y_q^3 = (q - q_0)  (\zeta_q - \varrho_q (Y_q) +
-Z_q),
-        \qquad Y_q = V_q + \zeta_q - \varrho_q (Y_q) . \)</td>
-        <td align="right">(13.4)</td>
-      </tr>
-    </table>
-    <p>
-      This is the equation we estimate: the field equation <a href="cqft_lecture4.html#eq:field-eq-scale">(9.7)</a>
-      of Lecture 4 in these coordinates. Three remarks:
+      This is the forecast equation of Lecture 4 with the explicit force in
+      place of the exact one, and it is the equation we estimate:
     </p>
     <ul>
       <li>
@@ -602,8 +609,14 @@ Z_q),
       </li>
       <li>
         <p>
-          the only trace of the backward equation is \((q - q_0) Z_q\), at the
-          same resolution;
+          the coercivity comes from the cube of \(\bar{\mathcal{F}}_q\), which
+          is explicit;
+        </p>
+      </li>
+      <li>
+        <p>
+          the price of the replacement is the error \((q - q_0) Z_q\), the
+          only trace of the backward equation, at the same resolution;
         </p>
       </li>
       <li>
@@ -613,11 +626,52 @@ Z_q),
       </li>
     </ul>
     <p>
+      <div style="display: inline">
+        <a id="auto-7"></a>
+      </div>
+      <h5>The smoothed noise.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        The noise \(\eta_q\) is rough, with covariance dominated by that of
+        \(B_{q - q_0}\), a white noise; pointwise estimates need a noise which
+        is a function. So we use \(\zeta_q = C_q \eta_q =\mathbb{E}_q [C_q
+        B_{q - q_0}]\), the filtered version of the Gaussian bridge noise
+        \(\zeta_t\) of Section <a href="cqft_lecture4.html#sec:DS">9.2</a> of Lecture 4, which by <class
+        style="font-style: normal">(<a href="#eq:zeta-tail">13.2</a>)</class> has the tails of the free field at
+        resolution \(q\). It is not Gaussian, and it depends on the
+        interaction through \(\psi\), but its bounds do not. Since \(K_{q_0}
+        \zeta_q = \eta_q - (q - q_0) \zeta_q\), subtracting it from <class
+        style="font-style: normal">(<a href="#eq:field-Y">?</a>)</class> and writing
+      </div>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:Vsharp"></a>\(\displaystyle V_q := Y_q + \varrho_q
+        (Y_q) - \zeta_q, \)</td>
+        <td align="right">(13.4)</td>
+      </tr>
+    </table>
+    <p>
+      (\(V_q\) is not to be confused with the potentials \(V_t (x)\), \(V_N\)
+      of Lectures 4&ndash;5 and of Sections <a href="#sec:restart">16.3</a> and 18.2; the
+      potentials are functions of a field, \(V_q\) here is a random field) we
+      obtain <class style="font-style: normal">(<a href="#eq:field-Y">?</a>)</class> in the form in which it is
+      estimated,
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><a id="eq:field"></a>\(\displaystyle K_{q_0} V_q +
+        \frac{\gamma}{3} Y_q^3 = (q - q_0)  (\zeta_q - \varrho_q (Y_q) +
+Z_q),
+        \qquad Y_q = V_q + \zeta_q - \varrho_q (Y_q) . \)</td>
+        <td align="right">(13.5)</td>
+      </tr>
+    </table>
+    <p>
       The mass of <class style="font-style: normal">(<a href="#eq:field">13.4</a>)</class> is only \(q_0\),
       so at large resolution all the coercivity must come from the cube. The
       next section shows that it does.
     </p>
-    <h3 id="auto-5">13.3<span style="margin-left: 1em"></span>Thresholds and energies<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-8">13.3<span style="margin-left: 1em"></span>Thresholds and energies<span style="margin-left: 1em"></span></h3>
     <p>
       Define the signed excess of \(V\) over three quarters of the threshold,
       the large-field part of \(Y\), and the large values of the noise,
@@ -630,7 +684,7 @@ t_q = Y_q
         \mathbb{1}_{|Y_q | > r_q}, \qquad \xi_q = \zeta_q
         \mathbb{1}_{|
 \zeta_q | > r_q / 32},\)</td>
-        <td align="right">(13.5)</td>
+        <td align="right">(13.6)</td>
       </tr>
     </table>
     <p>
@@ -654,7 +708,7 @@ t_q = Y_q
   \| \xi_q \|_6^6] \mathrm{d} q & \text{(noise tails)}
         .
 \end{array} \)</td>
-        <td align="right">(13.6)</td>
+        <td align="right">(13.7)</td>
       </tr>
     </table>
     <p>
@@ -691,7 +745,7 @@ t_q = Y_q
         </table></font>
       </p>
     </center>
-    <h3 id="auto-6">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-9">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">13.1</class>.
@@ -751,8 +805,8 @@ Z_s) \mathrm{d} s.\)
         <class style="font-style: normal">(<a href="#eq:field">13.4</a>)</class> trade to avoid this?</font>
       </p>
     </div>
-    <h2 id="auto-7"><a id="sec:forward"></a>14<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-8">14.1<span style="margin-left: 1em"></span>The scalar model<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-10"><a id="sec:forward"></a>14<span style="margin-left: 1em"></span>Forward coercivity<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-11">14.1<span style="margin-left: 1em"></span>The scalar model<span style="margin-left: 1em"></span></h3>
     <p>
       On one site the Laplacian disappears. We also drop the small Lipschitz
       correction \(\varrho\) (restored in Proposition <a href="#prop:forward">14.3</a>) and
@@ -860,7 +914,7 @@ w^4 + \frac{qr}{13} |w|^3 -
     </p>
     <p>
       <div style="display: inline">
-        <a id="auto-9"></a>
+        <a id="auto-12"></a>
       </div>
       <h5>What the scalar lemma says.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -873,7 +927,7 @@ w^4 + \frac{qr}{13} |w|^3 -
         \(q\).
       </div>
     </p>
-    <h3 id="auto-10">14.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-13">14.2<span style="margin-left: 1em"></span>The lattice version<span style="margin-left: 1em"></span></h3>
     <div class="theorem">
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">14.3</class>.
@@ -991,7 +1045,7 @@ w^4 + \frac{qr}{13} |w|^3 -
       \(\zeta\) are those of the free field whatever the interaction: this
       replaces the subtraction of a Gaussian field.
     </p>
-    <h3 id="auto-11"><a id="sec:sup"></a>14.3<span style="margin-left: 1em"></span>A pointwise bound<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-14"><a id="sec:sup"></a>14.3<span style="margin-left: 1em"></span>A pointwise bound<span style="margin-left: 1em"></span></h3>
     <p>
       The maximum principle gives more than the integrated estimate: a bound
       in \(L^{\infty}\) driven by the cube alone.
@@ -1093,7 +1147,7 @@ W_q\) by <a href="cqft_lecture5.html#eq:polchinski-fbsde">(10.5)</a>
       \lambda_0\). This is summable over dyadic \(Q\), and \(\|\mathcal{N}\|_p
       \leqslant C \sqrt{p}\) follows.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-12">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-15">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">14.1</class>.
@@ -1129,9 +1183,9 @@ W_q\) by <a href="cqft_lecture5.html#eq:polchinski-fbsde">(10.5)</a>
         should improve it on the lattice?</font>
       </p>
     </div>
-    <h2 id="auto-13"><a id="sec:backward"></a>15<span style="margin-left: 1em"></span>Backward feedback and
+    <h2 id="auto-16"><a id="sec:backward"></a>15<span style="margin-left: 1em"></span>Backward feedback and
     closure<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-14">15.1<span style="margin-left: 1em"></span>The backward representation<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-17">15.1<span style="margin-left: 1em"></span>The backward representation<span style="margin-left: 1em"></span></h3>
     <p>
       The backward equation in <class style="font-style: normal">(<a href="#eq:YZ">1</a>)</class> is
       linear in \(Z\). Its propagator is the adapted operator solution of
@@ -1193,7 +1247,7 @@ s}
       =\mathbb{E}_t [F_T]\) for the force (Theorem <a href="cqft_lecture4.html#thm:fbsde">7.3</a> of Lecture
       4); here the source is the defect.
     </p>
-    <h3 id="auto-15">15.2<span style="margin-left: 1em"></span>Three contributions<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-18">15.2<span style="margin-left: 1em"></span>Three contributions<span style="margin-left: 1em"></span></h3>
     <p>
       Split \(Z = Z^{\text{t}} + Z^{\text{b}} + Z^{\text{l}}\) according to
       the terminal term and the two parts of the source. We estimate each in
@@ -1302,7 +1356,7 @@ q_{\ast}^{-
 \|^2)\) and the three
       estimates above.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-16">15.3<span style="margin-left: 1em"></span>Closing the loop<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-19">15.3<span style="margin-left: 1em"></span>Closing the loop<span style="margin-left: 1em"></span></h3>
     <div class="key-result">
       <div class="theorem">
         <p style="margin-top: 1em">
@@ -1361,7 +1415,7 @@ T,
       (E_{\infty} + J_{\infty})^{1 / 5} \} < \infty\) once the boundary term
       is removed. Note that \(\gamma^2 / q_{\ast} = g_{q_{\ast}}^2\).
     </p>
-    <h3 id="auto-17">15.4<span style="margin-left: 1em"></span>Consequences<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-20">15.4<span style="margin-left: 1em"></span>Consequences<span style="margin-left: 1em"></span></h3>
     <p>
       The boundary term \(\delta_{N, T, p}\) is removed in Section <a href="#sec:terminal">16</a>,
       at each fixed \(N\), by letting \(T \to \infty\). Assuming this for the
@@ -1407,7 +1461,7 @@ C_{\gamma}
         <td align="right">(15.6)</td>
       </tr>
     </table>
-    <h3 id="auto-18">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-21">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">15.1</class>.
@@ -1452,7 +1506,7 @@ C_{\gamma}
         J_{\infty})^{1 / 5} \} < \infty\) for small \(c\).</font>
       </p>
     </div>
-    <h2 id="auto-19">Removing the cutoffs<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-22">Removing the cutoffs<span style="margin-left: 1em"></span></h2>
     <p>
       Sections <a href="#sec:energies">13</a>&ndash;<a href="#sec:backward">15</a> proved (<a href="#eq:energy">15.4</a>)
       at every lattice cutoff \(N\) and every upper scale \(T\). Three things
@@ -1482,9 +1536,9 @@ C_{\gamma}
         </li>
       </ol>
     </div>
-    <h2 id="auto-20"><a id="sec:terminal"></a>16<span style="margin-left: 1em"></span>The boundary at infinite
+    <h2 id="auto-23"><a id="sec:terminal"></a>16<span style="margin-left: 1em"></span>The boundary at infinite
     resolution<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-21">16.1<span style="margin-left: 1em"></span>The boundary lemma<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-24">16.1<span style="margin-left: 1em"></span>The boundary lemma<span style="margin-left: 1em"></span></h3>
     <p>
       At a fixed lattice, the terminal resolution is \(q = \infty\), and the
       field at resolution \(q\), \(\Phi_q\), converges to the terminal field
@@ -1588,7 +1642,7 @@ p} q^{- 1 / 2}
       (\Phi_{\infty})]\) by <a href="cqft_lecture5.html#eq:polchinski-fbsde">(10.5)</a>, so this is the
       conditional-expectation step of the proof).
     </p>
-    <h3 id="auto-22">16.2<span style="margin-left: 1em"></span>UV stability<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-25">16.2<span style="margin-left: 1em"></span>UV stability<span style="margin-left: 1em"></span></h3>
     <p>
       Now let \(T \to \infty\) at fixed \(N\) in <class style="font-style: normal">(<a href="#eq:energy">15.4</a>)</class>:
       the paths and the law \(\nu_N\) do not depend on \(T\), \(E_T\) and
@@ -1628,7 +1682,7 @@ C_{\gamma} q^{- 5 / 2},\)</td>
       polynomial growth by Markov's inequality with \(p \asymp R^{1 /
       5}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-23"><a id="sec:restart"></a>16.3<span style="margin-left: 1em"></span>Restarted laws<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-26"><a id="sec:restart"></a>16.3<span style="margin-left: 1em"></span>Restarted laws<span style="margin-left: 1em"></span></h3>
     <p>
       The coordinate is Lipschitz for the uniform norm, by the maximum
       principle.
@@ -1853,7 +1907,7 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       \|_{\infty}^{2 p}\). Then \(Z_s = \psi_s - Y_s\). This proves (<a href="#eq:restart-low">16.10</a>).<span
       style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-24">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-27">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">16.1</class>.
@@ -1875,8 +1929,8 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
         href="#lem:terminal">16.1</a> is what is needed.</font>
       </p>
     </div>
-    <h2 id="auto-25"><a id="sec:compactness"></a>17<span style="margin-left: 1em"></span>Tightness and tails<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-26">17.1<span style="margin-left: 1em"></span>One Hilbert space<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-28"><a id="sec:compactness"></a>17<span style="margin-left: 1em"></span>Tightness and tails<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-29">17.1<span style="margin-left: 1em"></span>One Hilbert space<span style="margin-left: 1em"></span></h3>
     <p>
       To compare lattices, partition \(\mathbb{T}^3\) into cubic cells
       \(\square_x\) of side \(N^{- 1}\) centred at \(x \in \Lambda_N\), and
@@ -1895,7 +1949,7 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       becomes a cylindrical Brownian motion on \(H\), obtained as the limit of
       the lattice innovations.
     </p>
-    <h3 id="auto-27">17.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum
+    <h3 id="auto-30">17.2<span style="margin-left: 1em"></span>Spatial suprema by a maximum
     principle<span style="margin-left: 1em"></span></h3>
     <p>
       The energy bounds control \(L^4\) and \(L^6\) norms of large fields.
@@ -1964,7 +2018,7 @@ p^3 t^{3 / 2})) \hspace{0.17em} \mathrm{d} t
       the form of Lemma <a href="#lem:lip">16.3</a>, gives the estimate below
       \(q_{\ast}\) in Proposition <a href="#prop:restart">16.4</a>.
     </p>
-    <h3 id="auto-28">17.3<span style="margin-left: 1em"></span>The terminal field<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-31">17.3<span style="margin-left: 1em"></span>The terminal field<span style="margin-left: 1em"></span></h3>
     <p>
       The approximate forecast converges at infinite resolution in negative
       Sobolev spaces, uniformly in \(N\) (to the same limit as the forecast
@@ -2044,7 +2098,7 @@ C_s  \hspace{0.17em}
       3\): the interacting field is no rougher than the Gaussian one. At every
       finite resolution its part \(V\) is smoother (\(H^1\)).
     </p>
-    <h3 id="auto-29"><a id="sec:hs-exp"></a>17.4<span style="margin-left: 1em"></span>Exponential moments<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-32"><a id="sec:hs-exp"></a>17.4<span style="margin-left: 1em"></span>Exponential moments<span style="margin-left: 1em"></span></h3>
     <p>
       Theorem <a href="#thm:uv">16.2</a> gives only stretched exponential moments of
       the energies. Hairer and Steele [<a href="#bib-HSt22">HSt22</a>] showed that the
@@ -2216,7 +2270,7 @@ C_s  \hspace{0.17em}
       \(\mathcal{Z}=\mathbb{E} \mathrm{e}^W \leqslant 2 \mathrm{e}^{\beta K^2
       / 2}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-30">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-33">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">17.1</class>.
@@ -2261,8 +2315,8 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
         resolution smoother than the free field?</font>
       </p>
     </div>
-    <h2 id="auto-31"><a id="sec:limit"></a>18<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
-    <h3 id="auto-32">18.1<span style="margin-left: 1em"></span>The deterministic coefficients<span style="margin-left: 1em"></span></h3>
+    <h2 id="auto-34"><a id="sec:limit"></a>18<span style="margin-left: 1em"></span>Identifying the limit<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-35">18.1<span style="margin-left: 1em"></span>The deterministic coefficients<span style="margin-left: 1em"></span></h3>
     <p>
       The coefficients \(M^N_q\), \(\ell^{[j], N}_q\), \(H^N_q (y)\), \(b^N_q
       (y)\) are constructed at each lattice. Their uniform bounds (Proposition
@@ -2323,7 +2377,7 @@ Y_q^3\) with \(V_q\), and show from the energy bounds
       is the loop part of the defect, and \(Y\) is continuous across
       \(q_{\ast}\) although \(b\) jumps.
     </p>
-    <h3 id="auto-33"><a id="sec:hs-uniq"></a>18.2<span style="margin-left: 1em"></span>The exact flow as a controlled
+    <h3 id="auto-36"><a id="sec:hs-uniq"></a>18.2<span style="margin-left: 1em"></span>The exact flow as a controlled
     explicit flow<span style="margin-left: 1em"></span></h3>
     <p>
       Compactness would give limit points, and nothing in the FBSDE selects
@@ -2677,7 +2731,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
       (g_q R)^6 T^{- 3 / 2} + \log_+ (q_R / T))\). Since \(\log_+ (q_R / T)
       \leqslant C_R T^{- 1 / 2}\), this is (<a href="#eq:tails">18.11</a>).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
-    <h3 id="auto-34"><a id="sec:limit-law"></a>18.3<span style="margin-left: 1em"></span>The limit law<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-37"><a id="sec:limit-law"></a>18.3<span style="margin-left: 1em"></span>The limit law<span style="margin-left: 1em"></span></h3>
     <p>
       Couple the lattices by common Fourier Gaussians, \(W^N\) being the
       projection of a cylindrical \(W\) on a fixed probability space. The
@@ -2861,7 +2915,7 @@ x}}{\hspace{0.17em} \mathrm{d} \mathbb{R}^{q, x}}
       (q_0)\) in (<a href="#eq:free">18.14</a>), and it does not enter (<a href="#eq:GM0">18.13</a>).
       Exercise <a href="#ex:gauss">18.9</a> computes it in the Gaussian case.
     </p>
-    <h3 id="auto-35"><a id="sec:filter"></a>18.4<span style="margin-left: 1em"></span>The filtering model and the
+    <h3 id="auto-38"><a id="sec:filter"></a>18.4<span style="margin-left: 1em"></span>The filtering model and the
     FBSDE<span style="margin-left: 1em"></span></h3>
     <p>
       We now read off the limit FBSDE from the density. Let
@@ -3147,7 +3201,7 @@ W^{\mathbb{R}} - Z
       filtration is Brownian under the reference. What remains open is whether
       \(\mathcal{F}\) is generated by \(W\) (Section <a href="#sec:open">18.7</a>).
     </p>
-    <h3 id="auto-36">18.5<span style="margin-left: 1em"></span>The renormalised field equation<span
+    <h3 id="auto-39">18.5<span style="margin-left: 1em"></span>The renormalised field equation<span
     style="margin-left: 1em"></span></h3>
     <p>
       The terminal law satisfies an integration by parts formula in which the
@@ -3363,7 +3417,7 @@ q_0) \|h\|_2^2 / 2}\). Moreover:</i>
       is that \(F\) is closed: (<a href="#eq:germ">18.22</a>) gives no bound on
       \(\langle F_q, h \rangle\) uniform in \(q\).
     </p>
-    <h3 id="auto-37"><a id="sec:law-var"></a>18.6<span style="margin-left: 1em"></span>Uniqueness in law and the
+    <h3 id="auto-40"><a id="sec:law-var"></a>18.6<span style="margin-left: 1em"></span>Uniqueness in law and the
     variational formula<span style="margin-left: 1em"></span></h3>
     <p>
       Along the exact flow the value \(A_t = A (t, x_t)\) solves a scalar
@@ -3616,7 +3670,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
       tails hold also at \(H^{- 1 / 2 - \vartheta}\) on the literature's
       lattices; we have not used this.
     </p>
-    <h3 id="auto-38"><a id="sec:open"></a>18.7<span style="margin-left: 1em"></span>What is not proved, and where
+    <h3 id="auto-41"><a id="sec:open"></a>18.7<span style="margin-left: 1em"></span>What is not proved, and where
     to go next<span style="margin-left: 1em"></span></h3>
     <ul>
       <li>
@@ -3674,7 +3728,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
     </ul>
     <p>
       <div style="display: inline">
-        <a id="auto-39"></a>
+        <a id="auto-42"></a>
       </div>
       <h5>Summary of the course.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
@@ -3696,7 +3750,7 @@ C_s \hspace{0.17em} \mathrm{d} W'\). By
         control.
       </div>
     </p>
-    <h3 id="auto-40">Exercises<span style="margin-left: 1em"></span></h3>
+    <h3 id="auto-43">Exercises<span style="margin-left: 1em"></span></h3>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">18.1</class>.
@@ -3826,7 +3880,7 @@ s\). Deduce
         \(\mathcal{C}_N\).</font>
       </p>
     </div>
-    <h2 id="auto-41">References<span style="margin-left: 1em"></span></h2>
+    <h2 id="auto-44">References<span style="margin-left: 1em"></span></h2>
     <dl>
       <p>
         <dt>

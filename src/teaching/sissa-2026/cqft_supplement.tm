@@ -3700,7 +3700,7 @@
   Lecture<nbsp>6; where they differ from it, the lectures are authoritative.
 
   In this section <math|V<rsub|q>> without argument is the field
-  (<hlink|13.3|cqft_lecture6.tm#eq:Vsharp>), and
+  (<hlink|13.4|cqft_lecture6.tm#eq:Vsharp>), and
   <math|V<rsub|q><around|(|x|)>> the potential;
   <math|\<chi\><rsub|q><around|(|y|)>> is the pointwise large-field
   indicator, while <math|\<chi\><rsub|q><around|(|x|)>> in the uniqueness
@@ -3714,7 +3714,7 @@
   <subsection|Regularity in space and scale>
 
   On a finite scale interval <math|I=<around|[|q<rsub|\<ast\>>,Q|]>> write
-  the field equation <hlink|(13.4)|cqft_lecture6.tm#eq:field> as the linear
+  the field equation <hlink|(13.5)|cqft_lecture6.tm#eq:field> as the linear
   elliptic equation
 
   <\equation>
