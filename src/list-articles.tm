@@ -12,6 +12,11 @@
 
   <hrule>
 
+  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
+  constructive introduction to quantum field theory|Lectures at SISSA,
+  Trieste, 20 October--9 November 2026, as part of the Probability and
+  Stochastic Analysis Trimester Programme.|06 Nov 2026>
+
   <notes-entry|whats-new.tm|What's new|New and updated content on these
   pages, most recent first: writings, lecture notes, talks and papers.|05 Nov
   2026>
@@ -24,11 +29,6 @@
 
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated October 2026.|05 Nov 2026>
-
-  <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
-  constructive introduction to quantum field theory|Lectures at SISSA,
-  Trieste, 20 October--9 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|05 Nov 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
   Oct 2026>

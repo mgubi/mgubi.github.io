@@ -56,8 +56,10 @@ The launcher looks for TeXmacs in this order:
 `TEXMACS_PATH` may be supplied alongside `TEXMACS_BIN` when TeXmacs' shared
 resource directory is elsewhere.
 
-The process runs with `TEXMACS_HOME_PATH` set to the repository root. This is
-what makes `plugins/notes/` available without installing it in the user's normal
+The process runs with `TEXMACS_HOME_PATH` set to `texmacs_home/`, keeping
+TeXmacs' writable profile and caches out of the repository root. The launcher
+links that profile's `plugins/` directory to the repository's `plugins/`, so
+local packages remain available without installing them in the user's normal
 TeXmacs profile. TeXmacs' style cache is cleared before the export so changes to
 local packages take effect. A temporary completion marker lets the launcher
 distinguish a successful build from an early TeXmacs exit.

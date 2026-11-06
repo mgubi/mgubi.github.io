@@ -150,7 +150,7 @@
 
     <item>5 November, 11:00--13:00, Room 136.
 
-    <item>6 November, 14:00--16:00, Room 136.
+    <item>6 November, 11:00--13:00, Room 133.
 
     <item>9 November (Monday), additional lecture: time and room to be announced.
   </itemize>

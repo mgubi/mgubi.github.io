@@ -7,6 +7,18 @@ set -eu
 repo_root=${0:A:h}
 cd "$repo_root"
 
+# Keep TeXmacs' writable profile out of the website source tree.  The local
+# plugins remain in the repository and are exposed through this profile link.
+tm_home="$repo_root/texmacs_home"
+mkdir -p "$tm_home"
+if [[ ! -e "$tm_home/plugins" && ! -L "$tm_home/plugins" ]]; then
+    ln -s ../plugins "$tm_home/plugins"
+fi
+if [[ ! -d "$tm_home/plugins" ]]; then
+    echo "TeXmacs plugin path is missing: $tm_home/plugins" >&2
+    exit 1
+fi
+
 op=${1:-update}
 case "$op" in
     build|update) ;;
@@ -48,7 +60,7 @@ trap 'rm -f "$build_marker"' EXIT HUP INT TERM
 
 set +e
 LC_ALL=C.UTF-8 \
-TEXMACS_HOME_PATH="$repo_root" \
+TEXMACS_HOME_PATH="$tm_home" \
 TEXMACS_PATH="$tm_path" \
 NOTES_BUILD_MARKER="$build_marker" \
 "$tm_bin" -x "$cmd" -q
