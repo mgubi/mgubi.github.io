@@ -215,7 +215,7 @@
       </p>
       <center>
         \(\displaystyle K_q = q - \Delta, \qquad C_q = K_q^{- 1}, \qquad C =
-        C_{q_0} = (m^2 -
+        C_{q_0} = (q_0 -
 \Delta)^{- 1} .\)
       </center>
       <p>
@@ -247,7 +247,7 @@ C_q, \quad \mathcal{R}_q = q - q_0 .\)
         coincident-point variance of the shell at resolution <font color="#620000">\(q\)</font>.
       </p>
     </div>
-    <div class="toggle" style="display: block">
+    <div class="toggle" style="display: none">
       <div class="slide-title">
         The cutoff measure
       </div>
@@ -344,7 +344,7 @@ V_N (\varphi)} \mu^C
         </li>
         <li>
           <p>
-            noise: <font color="#620000">\(\eta_q = K_q \Phi_q - (q - q_0) \psi_q
+            noise: <font color="#620000">\(\omega_q = K_q \Phi_q - (q - q_0) \psi_q
             =\mathbb{E}_q B_{q - q_0}\)</font>, sub-Gaussian whatever the
             interaction (L5).
           </p>
@@ -372,7 +372,8 @@ V_N (\varphi)} \mu^C
         \sim q^{- 1}\)</font>, and the error <font color="#620000">\(Z_q\)</font> of
         the approximate forecast from <font color="#620000">\(\bar{\mathcal{F}} =
         \frac{\lambda}{3} y^3\)</font>, below the bound <font color="#620000">\(2
-        C_{\ast} (\lambda / 3)^{1 / 2} q^{- 3 / 2}\)</font> of Theorem 12.8.
+        C_{\ast} (\lambda / 3)^{1 / 2} q^{- 3 / 2}\)</font> of Theorem 10.12
+        (see &quot;Integrating the cube&quot; below).
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -429,7 +430,10 @@ V_N (\varphi)} \mu^C
       <p>
         <font color="#620000">\(\bar{\mathcal{F}}_q\)</font> odd, <font color="#620000">\(D
         \bar{\mathcal{F}}_q\)</font> symmetric, <font color="#620000">\(K_q + D
-        \bar{\mathcal{F}}_q \geqslant \bar{c}_q\)</font>.
+        \bar{\mathcal{F}}_q \geqslant \bar{c}_q I\)</font>, <font color="#620000">\(\bar{c}_q
+        > 0\)</font>. Recall <font color="#620000">\(\psi_q =\mathbb{E}_q
+        [\Phi_{\infty}]\)</font>, <font color="#620000">\(\text{Cov}_q
+        =\operatorname{Var}_q (\Phi_{\infty})\)</font>
       </p>
       <center>
         \(\displaystyle H_q = (K_q + D \bar{\mathcal{F}}_q)^{- 1}, \quad
@@ -444,6 +448,9 @@ V_N (\varphi)} \mu^C
         Z_q = \psi_q - Y_q, \quad
 \Xi_q = \text{Cov}_q - H_q (Y_q) .\)
       </center>
+      <p>
+
+      </p>
       <div class="slide-block">
         <p>
           <strong>Exact, at fixed</strong> <font color="#620000">\(N\)</font>
@@ -452,16 +459,19 @@ V_N (\varphi)} \mu^C
           \(\displaystyle \hspace{0.17em} \mathrm{d} Y_q = [b_q (Y_q) + H_q
           (Y_q) Z_q] \hspace{0.17em}
 \mathrm{d} q + H_q (Y_q) \hspace{0.17em}
-          \mathrm{d} W_q,\)
+          \mathrm{d} W_q, \qquad Y_{q_0} = 0\)
         </center>
         <center>
           \(\displaystyle \hspace{0.17em} \mathrm{d} Z_q = - [b_q (Y_q) + H_q
           (Y_q) Z_q] \hspace{0.17em}
 \mathrm{d} q + \Xi_q \hspace{0.17em}
-          \mathrm{d} W_q, \quad Y_{q_0} = Z_{q_0} =
-0.\)
+          \mathrm{d} W_q, \quad Z_{\infty} =
+\Phi_{\infty} - Y_{\infty} .\)
         </center>
       </div>
+      <p>
+
+      </p>
       <p>
         Proof: It&ocirc; on the coordinate equation, with the Polchinski
         process and <font color="#620000">\(\mathrm{d} C_q = - C_q^2 \mathrm{d}
@@ -536,6 +546,142 @@ V_N (\varphi)} \mu^C
       <center>
         <img src="cqft_slides_6-2.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 23.723296969697em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
       </center>
+      <p>
+        <font style="font-size: 84.1%"><font color="#707070"><font color="#620000">\(J\)</font>: large-field
+        functional, <font color="#620000">\(E\)</font>: energy (both Lecture 7); <font
+        color="#620000">\(b^{\text{b}}, b^{\text{l}}\)</font>: bounded- and large-field
+        parts of the drift.</font></font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Why not Polchinski with a frozen cube?
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <strong>Programme:</strong> keep <font color="#620000">\(- \frac{\lambda}{3}
+        \varphi^3\)</font> unclipped, clip the higher orders (result: <font
+        color="#620000">\(f\)</font>), pay in the source of <font color="#620000">\(R = F -
+        f\)</font>. Test it on one site: <font color="#620000">\(K_q = q\)</font>,
+        <font color="#620000">\(S = 1 / q\)</font>.
+      </p>
+      <center>
+        \(\displaystyle F_q (x) = - \frac{\lambda}{3} \mathbb{E}_x
+        \Phi_{\infty}^3 = q (m_q (x) - x),
+\quad |m_q (x) | \leqslant 2
+        (\lambda / 3)^{- 1 / 4} + 2 (3 q|x| / \lambda)^{1
+/ 3} .\)
+      </center>
+      <center>
+        <img src="cqft_slides_6-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.6768em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        So <font color="#620000">\(3 R / (\lambda x^3) \to 1\)</font>: the remainder
+        <strong>cancels the cube</strong> (the dip: <font color="#620000">\(R\)</font>
+        changes sign, Wick term below, cube above). Field equation: <font
+        color="#620000">\(qx = (q - q_0) m_q + \omega_q\)</font>, only linear
+        confinement.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The price of clipping
+      </div>
+      <p>
+
+      </p>
+      <p>
+        <font color="#620000">\(f^c = f_1 +\mathcal{C}f_2\)</font>, with <font color="#620000">\(f_1
+        = - \frac{\lambda}{3} (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font>
+        the first tree, <font color="#620000">\(\kappa_q\)</font> a smooth clip at
+        <font color="#620000">\(|x| \sim r_q\)</font>, <font color="#620000">\(\mathcal{C}f_2 =
+        \kappa_q \prime \cdot f_2 \circ \kappa_q\)</font>. For <font color="#620000">\(|x|
+        \geqslant 2 r_q\)</font>, the Burgers defect is exactly
+      </p>
+      <center>
+        \(\displaystyle \mathcal{S}_q = S^2 f_1 f_1 \prime \approx
+        \frac{\lambda^2}{3} S^2 x^5,\)
+      </center>
+      <p>
+        of order <font color="#620000">\((q / \lambda)^{1 / 2}\)</font> at the edge of
+        the clip: not integrable in <font color="#620000">\(q\)</font>.
+      </p>
+      <center>
+        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [\mathcal{S}_q +
+        S^2 (f^c)\prime R_q]
+\hspace{0.17em} \mathrm{d} q + \Xi^R_q
+        \hspace{0.17em} \mathrm{d} W_q, \quad
+\text{bracket} \approx
+        \frac{\lambda^2}{3} S^2 x^5 - \lambda S^2 x^2 R.\)
+      </center>
+      <p>
+        The source and the dissipation cancel for the true <font color="#620000">\(R
+        \sim \frac{\lambda}{3} x^3\)</font>: separate estimates give nothing.
+      </p>
+      <p>
+        Tails independent of <font color="#620000">\(R\)</font>: on one site from the
+        posterior moment, but not uniform on the lattice (negative bare mass).
+      </p>
+      <p>
+        More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
+        r_q\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Integrating the cube
+      </div>
+      <p>
+
+      </p>
+      <p>
+        Solve the transport part of the flow exactly:
+      </p>
+      <center>
+        \(\displaystyle \partial_q f + S^2 ff' = 0, \quad f_{\infty} = -
+        \frac{\lambda}{3} x^3 \quad
+\Rightarrow \quad f_q (x) = -
+        \frac{\lambda}{3} y^3, \quad qy +
+\frac{\lambda}{3} y^3 = qx.\)
+      </center>
+      <center>
+        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \leqslant 2 C_{\ast}
+        (\frac{\lambda}{3 q})^{1 /
+2}, \quad C_{\ast} < \frac{1}{2} .\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(y_q (\Phi_q) = Y_q\)</font>: <strong>this is the
+            forecast coordinate</strong>. <font color="#620000">\(F_q - f_q = K_q
+            Z_q\)</font>, and <font color="#620000">\(Z\)</font> is the posterior mean
+            minus the mode.
+          </p>
+        </li>
+        <li>
+          <p>
+            The defect is <font color="#620000">\(qb_q (y)\)</font>: bounded for all
+            fields. The trees are in <font color="#620000">\(x \mapsto y\)</font>; the
+            cube does not flow in <font color="#620000">\(y\)</font>, so only loops are
+            clipped.
+          </p>
+        </li>
+        <li>
+          <p>
+            The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
+            + \frac{\lambda}{3} y^3 = q \Phi_q\)</font>.
+          </p>
+        </li>
+      </ul>
+      <p>
+        <font style="font-size: 84.1%">Not a no-go theorem: it rules out only estimating <font
+        color="#620000">\(R\)</font> as a small perturbation of the frozen cube.
+        Integrating the cube in the original field is possible, but on the
+        lattice its loop defect must still be renormalised; that route is not
+        proved here.</font>
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <p style="margin-top: 2.5cm">
@@ -560,6 +706,132 @@ V_N (\varphi)} \mu^C
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        Approximating the exact force
+      </div>
+      <p>
+        We seek an explicit force with a small <strong>defect</strong>, not
+        the full solution of the nonlinear flow.
+      </p>
+      <center>
+        \(\displaystyle \partial_q \mathcal{F}_q = - \frac{1}{2}
+        \text{Ctr}_{(H^{\text{ex}}_q)^2} D^2
+\mathcal{F}_q, \qquad
+        H^{\text{ex}}_q = (K_q + D\mathcal{F}_q)^{- 1} .\)
+      </center>
+      <p>
+        At infinite resolution: <font color="#620000">\(\mathcal{F}_{\infty} = U\prime
+        + \mu_N y\)</font>, with <font color="#620000">\(U\prime (y) =
+        \frac{\lambda}{3} y^3\)</font>.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Insert the bare cube into the response and the vertex: a
+            <strong>one-loop seed</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Feed each approximation back into the equation: <strong>two
+            correction steps</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Estimate the remaining defect in the backward equation for <font
+            color="#620000">\(Z\)</font>.
+          </p>
+        </li>
+      </ol>
+      <div class="slide-block">
+        <p>
+          First separate the linear flow: it produces the divergent mass
+          counterterm and cannot be treated as a small nonlinear error.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Why the linear term must be separated
+      </div>
+      <p>
+        Insert <font color="#620000">\(U\prime\)</font> into the loop, with <font
+        color="#620000">\(G_q (y) = (K_q + \lambda y^2)^{- 1}\)</font>:
+      </p>
+      <center>
+        \(\displaystyle - \frac{1}{2} \text{Ctr}_{G_q^2} D^2 U\prime (y) (x) =
+        - \lambda y (x) G_q
+(y)^2 (x, x) .\)
+      </center>
+      <p>
+        Its linear Taylor coefficient is
+      </p>
+      <center>
+        \(\displaystyle - \lambda a_2 (q) y (x), \qquad a_2 (q) = C_q^2 (x, x)
+        .\)
+      </center>
+      <p>
+        In three dimensions <font color="#620000">\(a_2 (q)\)</font> has continuum size
+        <font color="#620000">\(q^{- 1 / 2}\)</font>: its integral to infinity
+        diverges. At fixed lattice cutoff it is finite, but grows with <font
+        color="#620000">\(N\)</font>.
+      </p>
+      <div class="slide-block">
+        <p>
+          This is the <strong>tadpole</strong>. Further insertions also
+          produce the logarithmic <strong>sunset</strong>. Keep the linear
+          flow in a running mass; iterate only the nonlinear remainder.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The projections <font color="#620000">\(\Pi\)</font> and <font color="#620000">\(\Pi'\)</font>
+      </div>
+      <p>
+        For a smooth odd force <font color="#620000">\(f\)</font>, and a
+        translation-invariant operator <font color="#620000">\(L = \langle L \rangle I
+        + L^{\circ}\)</font> (constant mode plus centred part):
+      </p>
+      <center>
+        \(\displaystyle (\Pi f) (y) = f (y) -\operatorname{Df} (0) y, \qquad
+        (\Pi' f) (y) = f (y) -
+\langle \operatorname{Df}(0) \rangle y.\)
+      </center>
+      <ul>
+        <li>
+          <p>
+            <font color="#620000">\(\Pi f\)</font> starts at <strong>cubic
+            order</strong>; <font color="#620000">\(\Pi' f = \Pi f +
+            (\operatorname{Df}(0))^{\circ} y\)</font> removes only the
+            <strong>scalar</strong> part of the linear jet.
+          </p>
+        </li>
+        <li>
+          <p>
+            The divergences (tadpole, sunset) are <strong>constant
+            modes</strong>. The centred part of the linear flow is integrable
+            at infinity.
+          </p>
+        </li>
+      </ul>
+      <center>
+        \(\displaystyle \mathcal{F}_q = U\prime + M_q y + \ell_q, \qquad \Pi
+        \ell_q = \ell_q, \quad
+M_q = \mu_q I + \Theta_q .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          <font color="#620000">\(\ell\)</font> and the centred kernel <font color="#620000">\(\Theta\)</font>:
+          integrate from <font color="#620000">\(\infty\)</font>, by the same finite
+          iteration. Scalar mass <font color="#620000">\(\mu\)</font>: solve exactly,
+          fixed at an auxiliary large scale <font color="#620000">\(q_{\ast}\)</font>
+          (with <font color="#620000">\(g_{q_{\ast}}\)</font> small).
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         Scales and power counting
       </div>
       <p>
@@ -575,9 +847,10 @@ V_N (\varphi)} \mu^C
 \text{regulator}) .\)
       </center>
       <p>
-        Free field at resolution <font color="#620000">\(q\)</font>: <font color="#620000">\(\text{Var}
-        X_q (x) \lesssim q^{1 / 2}\)</font>, typical size <font color="#620000">\(q^{1
-        / 4} = g_q^{1 / 2} r_q \ll r_q\)</font>.
+        Free field at resolution <font color="#620000">\(q\)</font>: free field <font
+        color="#620000">\(X_q\)</font>, <font color="#620000">\(\text{Var} X_q (x) \lesssim q^{1
+        / 2}\)</font>, typical size <font color="#620000">\(q^{1 / 4} = g_q^{1 / 2} r_q
+        \ll r_q\)</font>.
       </p>
       <p>
         Rooted norm of a vertex <font color="#620000">\(T (x_1, \ldots, x_k)\)</font>
@@ -586,12 +859,12 @@ V_N (\varphi)} \mu^C
       <center>
         \(\displaystyle s (T) = \max_i \sup_{x_i}  \int |T|  \prod_{j \ne i}
         \mathrm{d} x_j, \qquad
-\textsf{S}_k (g) = \sup_{\mathcal{B}_q} s (D^{k
-        - 1} g), \qquad \mathcal{B}_q
-= \{\|y\|_{\infty} < 2 r_q \} .\)
+\textsf{S}_k (f) = \sup_{\mathcal{B}_q} s (D^{k
+        - 1} f), \qquad \mathcal{B}_q
+= \{ \|y\|_{\infty} < 2 r_q \} .\)
       </center>
       <p>
-        Natural size of the <font color="#620000">\(k\)</font>th vertex of the
+        Natural size of the <font color="#620000">\(k\)</font>-leg vertex of the
         <strong>loop corrections</strong>:
       </p>
       <center>
@@ -605,16 +878,10 @@ V_N (\varphi)} \mu^C
         The loop estimate
       </div>
       <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-
+        Root one leg of a closed loop and follow the loop: two of its
+        propagators are estimated in <font color="#620000">\(L^2\)</font> (this gives
+        the bubble <font color="#620000">\(a_2 (q)\)</font>), all the others in
+        operator norm (each <font color="#620000">\(q^{- 1}\)</font>).
       </p>
       <div class="slide-block">
         <p>
@@ -633,109 +900,653 @@ V_N (\varphi)} \mu^C
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The seed and the corrections
+        Computing the one-loop seed
       </div>
       <p>
-
-      </p>
-      <p>
-        <strong>Seed</strong> (one loop): replace <font color="#620000">\(D\mathcal{F}\)</font>
-        by <font color="#620000">\(\lambda y^2\)</font> and integrate from <font color="#620000">\(q
-        = \infty\)</font>, with the linear part subtracted,
+        Project the bare loop before integrating:
       </p>
       <center>
-        \(\displaystyle \ell_q (y) (x) = \lambda y (x) [G_q (y) (x, x) - C_q
-        (x, x)], \quad G_q (y) =
-(K_q + \lambda y^2)^{- 1} .\)
+        \(\displaystyle \Pi [- \lambda y (x) G_q (y)^2 (x, x)] = - \lambda y
+        (x) [G_q (y)^2 (x, x) -
+a_2 (q)] .\)
       </center>
       <p>
-        Leading term = bubble, <font color="#620000">\(s (D^3 \ell_q (0)) = 6 \lambda^2
-        a_2 (q)\)</font>.
+        Use <font color="#620000">\(\partial_q G_q = - G_q^2\)</font> and <font color="#620000">\(\partial_q
+        C_q = - C_q^2\)</font>. With zero boundary value at infinity:
       </p>
+      <div class="slide-block">
+        <center>
+          \(\displaystyle \ell^{[1]}_q (y) (x) = \lambda y (x) [G_q (y) (x, x)
+          - C_q (x, x)] .\)
+        </center>
+      </div>
       <p>
-        <strong>Corrections.</strong> <font color="#620000">\(\Pi\)</font> removes the
-        linear jet, <font color="#620000">\(M_q = \mu_q + \Theta_q\)</font> a linear
-        path, <font color="#620000">\(U\prime = \frac{\lambda}{3} y^3\)</font>,
+        The leading term is the bubble:
+      </p>
+      <center>
+        \(\displaystyle - \lambda^2 y (x) \int C_q (x, z)^2 y (z)^2 \mathrm{d}
+        z.\)
+      </center>
+      <p>
+        Four-leg size: <font color="#620000">\(\textsf{S}_4 (\ell^{[1]}_q) \lesssim
+        \lambda^2 q^{- 1 / 2} = \lambda g_q\)</font>. This is the seed <font
+        color="#620000">\(\ell^{[1]}\)</font>: the superscript counts loops.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The seed in graphs
+      </div>
+      <center>
+        <img src="cqft_slides_6-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.34974545454546em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+      </center>
+      <p>
+        The seed as one-loop graphs: lines <font color="#620000">\(C_q\)</font>, a
+        vertex <font color="#620000">\(\lambda y^2\)</font> with its two external
+        fields at each corner. The <font color="#620000">\(j\)</font>-th ring has <font
+        color="#620000">\(2 j\)</font> legs and coefficient <font color="#620000">\((- 1)^{j +
+        1} / (2 j)\)</font>; <font color="#620000">\(D\)</font> marks one leg, giving
+        the force. The series sums to a logarithm, with radius of convergence
+        <font color="#620000">\(r_q\)</font>. The quartic ring is the bubble.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Splitting the flow and deriving the iteration
+      </div>
+      <p>
+        For <font color="#620000">\(\mathcal{F}= U\prime + My + \ell\)</font>, the loop
+        map
       </p>
       <center>
         \(\displaystyle \mathcal{T}_q [M, \ell] = - \frac{1}{2}
         \text{Ctr}_{R^2} D^2 (U\prime + \ell),
 \quad R = (K_q + M_q + D
-        (U\prime + \ell))^{- 1},\)
+        (U\prime + \ell))^{- 1} .\)
       </center>
+      <p>
+        Three equations of different nature:
+      </p>
       <center>
-        \(\displaystyle \ell^{[0]} = \ell, \quad \ell^{[j + 1]}_q = \ell_q -
-        \int_q^{\infty} \Pi
-(\mathcal{T}_s [M, \ell^{[j]}] - \partial_s
-        \ell_s) \hspace{0.17em} \mathrm{d}
-s, \quad j = 0, 1,\)
+        \(\displaystyle \partial_q \ell = \Pi \mathcal{T} [M, \ell], \quad
+        \partial_q \Theta =
+(D\mathcal{T}[M, \ell] (0))^{\circ}, \quad
+        \partial_q \mu = \langle
+D\mathcal{T}[M, \ell] (0) \rangle .\)
       </center>
-      <center>
-        \(\displaystyle \mathcal{F}^o_q = U\prime + M_q y + \ell^{[2]}_q \quad
-        \text{on the ball.}\)
-      </center>
+      <p>
+        <strong>Fix a trial scalar path <font color="#620000">\(\mu\)</font></strong>
+        (determined at the end as a fixed point, &quot;Closing the mass
+        path&quot;). Level masses <font color="#620000">\(M^{[j]} = \mu I +
+        \Theta^{[j]}\)</font>, sources <font color="#620000">\(B^{[j]} = D\mathcal{T}
+        [M^{[j]}, \ell^{[j]}] (0)\)</font> (not the Brownian motion <font
+        color="#620000">\(B\)</font>), zero-field response <font color="#620000">\(R^{[j]}_{0,
+        q} = (K_q + M^{[j]}_q)^{- 1}\)</font>:
+      </p>
+      <div class="slide-block">
+        <center>
+          \(\displaystyle \ell^{[j + 1]}_q = - \int_q^{\infty} \Pi
+          \mathcal{T}_s [M^{[j]}, \ell^{[j]}]
+\mathrm{d} s, \quad \Theta^{[j +
+          1]}_q = - \int_q^{\infty} (B^{[j]}_s)^{\circ}
+\mathrm{d} s, \quad j
+          = 1, 2.\)
+        </center>
+      </div>
+      <p>
+        With <font color="#620000">\(\ell^{[0]} = 0\)</font>, <font color="#620000">\(M^{[0]} =
+        0\)</font>, the case <font color="#620000">\(j = 0\)</font> is the seed step
+        without mass, <font color="#620000">\(\partial_q \ell^{[1]} = \Pi \mathcal{T}
+        [0, 0]\)</font>, and <font color="#620000">\(\Theta^{[1]} = 0\)</font> (the
+        tadpole is local). Output: <font color="#620000">\((\ell^{[3]}, \Theta^{[3]})
+        [\mu]\)</font>.
+      </p>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Where the iteration comes from
+        Centre before taking absolute values
       </div>
       <p>
-        Force equation for <font color="#620000">\(\mathcal{F}_q = U\prime + M_q y +
-        \ell_q\)</font>, <font color="#620000">\(\Pi \ell_q = \ell_q\)</font>:
+        A centred kernel <font color="#620000">\(\Theta (z) = \Theta (0, z)\)</font> is
+        measured by its first moment <font color="#620000">\(v_1 (\Theta) = \int d (0,
+        z) | \Theta (z) | \mathrm{d} z\)</font>, <font color="#620000">\(d\)</font> the
+        torus distance. For an even kernel, <font color="#620000">\(\Theta \mathbb{1} =
+        0\)</font> means that the diagonal cancels the off-diagonal mass. With
+        <font color="#620000">\((\sigma_z f) (x) = f (x + z)\)</font>, <font color="#620000">\(\delta_z^2
+        = \sigma_z + \sigma_{- z} - 2 I\)</font>,
       </p>
       <center>
-        \(\displaystyle (\partial_q M_q) y + \partial_q \ell_q =\mathcal{T}_q
-        [M, \ell_q] (y) .\)
+        \(\displaystyle C_q \Theta = \frac{1}{2} \int \Theta (z) \delta_z^2
+        C_q \mathrm{d} z.\)
       </center>
       <p>
-        <font color="#620000">\(\Pi\)</font> and <font color="#620000">\(1 - \Pi\)</font> split
-        it:
+        <strong>The absolute row norm discards the cancellation.</strong> For
+        a lattice step <font color="#620000">\(h\)</font> in direction <font color="#620000">\(e\)</font>,
+        take
+      </p>
+      <center>
+        \(\displaystyle \Theta_h = \frac{a}{2 h} (\sigma_{\operatorname{he}}
+        +
+\sigma_{-\operatorname{he}} - 2 I), \qquad v_1 (\Theta_h) = a, \quad
+        \|
+\Theta_h \|_{\text{row}} = \frac{2 a}{h} .\)
+      </center>
+      <p>
+        The row norm diverges as <font color="#620000">\(h \to 0\)</font>; the first
+        moment stays bounded.
+      </p>
+      <div class="slide-block">
+        <p>
+          Estimate the signed product <font color="#620000">\(C_q \Theta\)</font>
+          first. The quantity needed by the loop is the kernel after resolvent
+          smoothing, not the absolute mass of <font color="#620000">\(\Theta\)</font>
+          itself.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Smoothing turns cancellation into a moment bound
+      </div>
+      <p>
+        The resolvent smooths on length scale <font color="#620000">\(q^{- 1 /
+        2}\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \| \delta_z^2 C_q \|_{\text{row}} \leqslant Cq^{- 1 /
+        2} d (0, z) .\)
+      </center>
+      <p>
+        Scale check: integrate the heat-kernel translation bound <font color="#620000">\(Cd
+        (0, z) t^{- 1 / 2}\)</font> against <font color="#620000">\(\mathrm{e}^{-\operatorname{qt}}
+        \mathrm{d} t\)</font>.
+      </p>
+      <div class="slide-block">
+        <center>
+          \(\displaystyle \|C_q \Theta \|_{\text{row}} \leqslant Cq^{- 1 / 2}
+          \int d (0, z) | \Theta (z)
+| \mathrm{d} z = Cq^{- 1 / 2} v_1
+          (\Theta) .\)
+        </center>
+      </div>
+      <p>
+        The iteration (next slides) supplies exactly the compensating moment:
+      </p>
+      <center>
+        \(\displaystyle v_1 (\Theta_q) \lesssim \lambda^2 q^{- 1 / 2} \quad
+        \Longrightarrow \quad q^{-
+1 / 2} v_1 (\Theta_q) \lesssim \lambda^2
+        q^{- 1} = g_q^2 .\)
+      </center>
+      <p>
+        <font style="font-size: 84.1%">A bound by <font color="#620000">\(d (0, z)^2\)</font> loses a
+        logarithm; one distance power, with <font color="#620000">\(q^{- 1 /
+        2}\)</font>, suffices (Lemma 19.3 of the Supplement).</font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The small factor in a resolvent comparison
+      </div>
+      <p>
+        The field-dependent response also receives this cancellation. With
+        <font color="#620000">\(V = \lambda y^2\)</font> and <font color="#620000">\(G = (K_q +
+        V)^{- 1}\)</font>,
+      </p>
+      <center>
+        \(\displaystyle G \Theta = (I -\operatorname{GV}) C_q \Theta, \qquad
+        \|I
+-\operatorname{GV}\|_{\infty \to \infty} \leqslant 2.\)
+      </center>
+      <p>
+        The bounded Neumann series for the full <font color="#620000">\(R\)</font> then
+        gives
+      </p>
+      <center>
+        \(\displaystyle \|R \delta M\|_{\infty \to \infty} \leqslant C \rho_q,
+        \quad \rho_q = \frac{|
+\delta \mu_q |}{q} + q^{- 1 / 2} v_1 (\delta
+        \Theta_q) .\)
+      </center>
+      <p>
+        Holding the nonlinear correction fixed, <font color="#620000">\(\delta R = - R
+        \delta M \hat{R}\)</font> (<font color="#620000">\(\hat{R}\)</font> the
+        response at mass <font color="#620000">\(M - \delta M\)</font>) has row norm
+        <font color="#620000">\(\lesssim \rho_q / q\)</font> and row <font color="#620000">\(L^2\)</font>
+        norm <font color="#620000">\(\sup_x \| \delta R (x, \cdot)\|_{L^2}\)</font>
+        <font color="#620000">\(\lesssim \rho_q \sqrt{a_2 (q)}\)</font>.
+      </p>
+      <div class="slide-block">
+        <p>
+          A marked propagator gains the relative factor <font color="#620000">\(\rho_q\)</font>:
+          for <font color="#620000">\(\Theta^{[2]}\)</font> in the second correction,
+          <font color="#620000">\(\rho_q \lesssim g_q^2\)</font>; for two scalar paths,
+          see &quot;Mass differences&quot; below.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Centring the source removes local terms
+      </div>
+      <p>
+        Separate the source at level <font color="#620000">\(j\)</font> into tadpole
+        and correction vertex:
+      </p>
+      <center>
+        \(\displaystyle B^{[j]}_q = - \lambda \text{Tr} ((R^{[j]}_{0, q})^2) I
+        + E_q, \quad E_q = -
+\frac{1}{2} \text{Ctr}_{(R^{[j]}_{0, q})^2}
+        T^{[j]}_q, \quad T^{[j]}_q = D^3
+\ell^{[j]}_q (0) .\)
+      </center>
+      <p>
+        Write <font color="#620000">\(E_q \mathbb{1} = e_q \mathbb{1}\)</font>. The
+        constant mode contains the whole local contribution:
+      </p>
+      <center>
+        \(\displaystyle \langle B^{[j]}_q \rangle = - \lambda \text{Tr}
+        ((R^{[j]}_{0, q})^2) + e_q,
+\qquad (B^{[j]}_q)^{\circ} = E_q - e_q
+        I.\)
+      </center>
+      <p>
+        The tadpole cancels; so does any term <font color="#620000">\(c_q I\)</font>.
+        Off-diagonal entries stay unchanged. Since <font color="#620000">\(d (0, 0) =
+        0\)</font>,
+      </p>
+      <center>
+        \(\displaystyle v_1 ((B^{[j]}_q)^{\circ}) = v_1 (E_q) .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          Centring removes the local obstruction. The remaining spatial
+          estimate must come from the first moment of the nonlinear vertex.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The iteration produces the first-moment bound
+      </div>
+      <font style="font-size: 90.0%"><p>
+        Four-leg vertex <font color="#620000">\(T^{[j]}_q\)</font> of <font color="#620000">\(\ell^{[j]}\)</font>,
+        proved below level by level (<font color="#620000">\(\Theta^{[2]}\)</font>
+        needs only the bubble <font color="#620000">\(T^{[1]}\)</font>, <font color="#620000">\(\Theta^{[3]}\)</font>
+        only <font color="#620000">\(T^{[2]}\)</font>, at <font color="#620000">\(M^{[1]} = \mu
+        I\)</font>):
+      </p><center>
+        \(\displaystyle s (T^{[j]}_q) + \sqrt{q} v_1 (T^{[j]}_q) \lesssim
+        \lambda^2 q^{- 1 / 2}, \quad
+\text{hence} \quad v_1 (T^{[j]}_q)
+        \lesssim \lambda^2 q^{- 1} .\)
+      </center><p>
+        Keep the distance between the uncontracted legs of <font color="#620000">\(T^{[j]}_q\)</font>;
+        since <font color="#620000">\(\sup_{u, v} | (R^{[j]}_{0, q})^2 (u, v) |
+        \lesssim q^{- 1 / 2}\)</font>,
+      </p><center>
+        \(\displaystyle v_1 ((B^{[j]}_q)^{\circ}) = v_1 (E_q) \lesssim q^{- 1
+        / 2} v_1 (T^{[j]}_q)
+\lesssim \lambda^2 q^{- 3 / 2} .\)
+      </center><p>
+        Integrate with zero boundary value at infinity:
+      </p><center>
+        \(\displaystyle v_1 (\Theta^{[j + 1]}_q) \leqslant \int_q^{\infty} v_1
+        ((B^{[j]}_s)^{\circ})
+\mathrm{d} s \leqslant C \lambda^2 q^{- 1 / 2}
+        .\)
+      </center><div class="slide-block">
+        <p>
+          Uniformly in <font color="#620000">\(N\)</font>: <font color="#620000">\(\eta_q
+          (\Theta^{[2]}) \lesssim g_q^2\)</font>, and one more <font color="#620000">\(g\)</font>
+          for the difference, <font color="#620000">\(\eta_q (\Theta^{[3]} -
+          \Theta^{[2]}) \lesssim g_q^3\)</font>, with <font color="#620000">\(\eta_q
+          (\Theta) = q^{- 1 / 2} v_1 (\Theta)\)</font>.
+        </p>
+      </div></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        First correction: insert the seed
+      </div>
+      <p>
+        Set <font color="#620000">\(R^{[j]} = (K + M^{[j]} +\operatorname{DU}\prime + D
+        \ell^{[j]})^{- 1}\)</font> and <font color="#620000">\(\delta^{[2]} =
+        \ell^{[2]} - \ell^{[1]}\)</font>. Subtract the bare loop from the loop
+        containing the seed:
+      </p>
+      <center>
+        \(\displaystyle \delta^{[2]}_q = \frac{1}{2} \int_q^{\infty} \Pi
+        [\text{Ctr}_{(R^{[1]})^2 -
+G^2} D^2 U\prime + \text{Ctr}_{(R^{[1]})^2}
+        D^2 \ell^{[1]}]_s \mathrm{d} s.\)
+      </center>
+      <p>
+        <strong>Two changes:</strong> the propagators and the vertex.
+      </p>
+      <center>
+        \(\displaystyle R^{[1]} - G = - R^{[1]} (\mu + D \ell^{[1]}) G, \qquad
+        M^{[1]} = \mu I.\)
+      </center>
+      <p>
+        The insertion <font color="#620000">\((\mu + D \ell^{[1]}) / q\)</font> is
+        <font color="#620000">\(O (g_q)\)</font>. One extra loop gives
+      </p>
+      <center>
+        \(\displaystyle \textsf{S}_4 (\delta^{[2]}_q) \lesssim \int_q^{\infty}
+        g_s s^{1 / 2} r_s^{- 4}
+\mathrm{d} s = \lambda^3 q^{- 1} = \lambda
+        g_q^2 .\)
+      </center>
+      <p>
+        All factors inside the integral are evaluated at scale <font color="#620000">\(s\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Second correction: insert the first correction
+      </div>
+      <p>
+        Put <font color="#620000">\(\delta^{[3]} = \ell^{[3]} - \ell^{[2]}\)</font>.
+        Subtract the first two Picard equations:
+      </p>
+      <center>
+        \(\displaystyle \delta^{[3]}_q = \frac{1}{2} \int_q^{\infty} \Pi
+        [\text{Ctr}_{(R^{[2]})^2 -
+(R^{[1]})^2} D^2 (U\prime + \ell^{[1]}) +
+        \text{Ctr}_{(R^{[2]})^2} D^2
+\delta^{[2]}]_s \mathrm{d} s.\)
+      </center>
+      <p>
+        The marked insertion is now the first correction itself, nonlinear and
+        centred:
+      </p>
+      <center>
+        \(\displaystyle R^{[2]} - R^{[1]} = - R^{[2]} (\Theta^{[2]} + D
+        \delta^{[2]}) R^{[1]},\)
+      </center>
+      <p>
+        where <font color="#620000">\(\Theta^{[2]}\)</font> costs <font color="#620000">\(\eta_q
+        (\Theta^{[2]}) \lesssim g_q^2\)</font> (above).
+      </p>
+      <center>
+        \(\displaystyle \textsf{S}_4 (\delta^{[3]}_q) \lesssim \int_q^{\infty}
+        g_s^2 s^{1 / 2} r_s^{-
+4} \mathrm{d} s = \frac{2}{3} \lambda^4 q^{- 3
+        / 2} .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          Four-leg sizes: seed <font color="#620000">\(\lambda g_q\)</font>, first
+          correction <font color="#620000">\(\lambda g_q^2\)</font>, second correction
+          <font color="#620000">\(\lambda g_q^3\)</font>.
+        </p>
+      </div>
+      <p>
+        <font style="font-size: 84.1%">For squared propagators use <font color="#620000">\(A^2 - B^2 = A
+        (A - B) + (A - B) B\)</font>; no commutativity is assumed.</font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Following a spatial distance through a loop
+      </div>
+      <p>
+        At zero field, set <font color="#620000">\(W_q (T) = s (T) + \sqrt{q} v_1
+        (T)\)</font>. Mark two external legs and follow their distance around
+        the loop.
       </p>
       <ul>
         <li>
           <p>
-            <strong>nonlinear part</strong>, integrable at <font color="#620000">\(q =
-            \infty\)</font> (<font color="#620000">\(k \geqslant 4\)</font> legs), with
-            <font color="#620000">\(\ell_{\infty} = 0\)</font>: a fixed point, <font
-            color="#620000">\(\ell_q = - \int_q^{\infty} \Pi \mathcal{T}_s [M, \ell_s]
-            \hspace{0.17em}
-\mathrm{d} s\)</font>; approximated by
-            <strong>Picard steps</strong>, the seed being the first;
+            A displacement inside a vertex is controlled by that vertex's
+            first moment.
           </p>
         </li>
         <li>
           <p>
-            <strong>linear part</strong>, divergent (tadpole, sunset): solved
-            exactly by the mass equation; gives the counterterm.
+            A displacement along a propagator is controlled by its weighted
+            <font color="#620000">\(L^1\)</font> or <font color="#620000">\(L^2\)</font> bound.
+            The triangle inequality distributes the external distance over
+            these pieces.
           </p>
         </li>
       </ul>
+      <p>
+        For <font color="#620000">\(p\)</font> vertices and <font color="#620000">\(p\)</font>
+        propagators:
+      </p>
+      <center>
+        \(\displaystyle W_q (\text{loop}) \lesssim q^{- 1 / 2} q^{- (p - 1)}
+        \prod_{i = 1}^p W_q (T_i)
+.\)
+      </center>
       <div class="slide-block">
         <p>
-          Each step gains one loop, one <font color="#620000">\(g_q\)</font>. The
-          defect of <font color="#620000">\(\mathcal{F}^o\)</font> is the loop
-          difference of the last two steps:
+          The weight <font color="#620000">\(\sqrt{q}\)</font> makes a distance of
+          order <font color="#620000">\(q^{- 1 / 2}\)</font> dimensionless: the
+          weighted loop has the same scale powers as the unweighted loop.
+        </p>
+      </div>
+      <p>
+        <font style="font-size: 84.1%">Keep within-vertex moments: smoothing the propagators
+        cannot supply spatial localisation for an arbitrary nonlocal
+        vertex.</font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Integrating preserves the moment weight
+      </div>
+      <p>
+        A loop difference with relative size <font color="#620000">\(\varepsilon_s\)</font>
+        has a marked vertex or propagator. With <font color="#620000">\(\delta
+        \mathcal{T}_s =\mathcal{T}_s [M, \ell] -\mathcal{T}_s [M,
+        \hat{\ell}]\)</font>, the weighted comparison gives
+      </p>
+      <center>
+        \(\displaystyle W_s (\mathrm{D}^{k - 1} \delta \mathcal{T}_s (0))
+        \lesssim \varepsilon_s s^{1
+/ 2} r_s^{- k} .\)
+      </center>
+      <p>
+        For <font color="#620000">\(s \geqslant q\)</font>, <font color="#620000">\(\sqrt{q}
+        \leqslant \sqrt{s}\)</font>:
+      </p>
+      <center>
+        \(\displaystyle W_q \left( \int_q^{\infty} A_s \mathrm{d} s \right)
+        \leqslant \int_q^{\infty}
+(s (A_s) + \sqrt{q} v_1 (A_s)) \mathrm{d} s
+        \leqslant \int_q^{\infty} W_s
+(A_s) \mathrm{d} s.\)
+      </center>
+      <div class="slide-block">
+        <p>
+          First correction: <font color="#620000">\(\varepsilon_s \lesssim
+          g_s\)</font>. Second correction: <font color="#620000">\(\varepsilon_s
+          \lesssim g_s^2\)</font>.
+        </p>
+      </div>
+      <p>
+        <font color="#620000">\(\Pi\)</font> subtracts only a linear force, so it
+        leaves all <font color="#620000">\(k \geqslant 4\)</font> vertices unchanged.
+        The field supremum also propagates, since <font color="#620000">\(\mathcal{B}_q
+        \subseteq \mathcal{B}_s\)</font>.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The four-leg moment after two corrections
+      </div>
+      <p>
+        Write <font color="#620000">\(T^{[j]}_q = \mathrm{D}^3 \ell^{[j]}_q
+        (0)\)</font>. The seed is the bubble:
+      </p>
+      <center>
+        \(\displaystyle W_q (T^{[1]}_q) \lesssim \lambda^2 \int (1 + \sqrt{q}
+        d (0, z)) C_q (z)^2
+\mathrm{d} z \lesssim \lambda^2 q^{- 1 / 2} .\)
+      </center>
+      <p>
+        For the increments, integrate the weighted loop bounds:
+      </p>
+      <center>
+        \(\displaystyle W_q (T^{[2]}_q - T^{[1]}_q) \lesssim \lambda^3
+        \int_q^{\infty} s^{- 2}
+\mathrm{d} s = \lambda^3 q^{- 1},\)
+      </center>
+      <center>
+        \(\displaystyle W_q (T^{[3]}_q - T^{[2]}_q) \lesssim \lambda^4
+        \int_q^{\infty} s^{- 5 / 2}
+\mathrm{d} s = \frac{2}{3} \lambda^4 q^{-
+        3 / 2} .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          For <font color="#620000">\(j = 1, 2, 3\)</font>, <font color="#620000">\(s
+          (T^{[j]}_q) + \sqrt{q} v_1 (T^{[j]}_q) \lesssim \lambda^2 q^{- 1 /
+          2} (1 +
+g_q + g_q^2) \lesssim \lambda^2 q^{- 1 / 2}\)</font>.
+        </p>
+      </div>
+      <p>
+        <font style="font-size: 84.1%">The <font color="#620000">\(10 \to 8 \to 6\)</font> leg budget
+        supplies the higher vertices needed by both comparisons. Thus <font
+        color="#620000">\(v_1 (T^{[j]}_q) \lesssim \lambda^2 q^{- 1}\)</font>.</font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The mass
+      </div>
+      <p>
+        Impose the <strong>scalar</strong> part of the linear flow for the
+        final approximation <font color="#620000">\(M = M^{[3]} = \mu I +
+        \Theta^{[3]}\)</font>, with <font color="#620000">\(R^{[3]}_{0, q} = (K_q +
+        M_q)^{- 1}\)</font>:
+      </p>
+      <center>
+        \(\displaystyle \partial_q \mu_q = \beta_q = \langle B^{[3]}_q
+        \rangle, \quad B^{[3]}_q = -
+\lambda \text{Tr} ((R^{[3]}_{0, q})^2) I
+        - \frac{1}{2}
+\text{Ctr}_{(R^{[3]}_{0, q})^2} D^3 \ell^{[3]}_q (0),\)
+      </center>
+      <p>
+        with <font color="#620000">\(\mu_{q_{\ast}} = b_{\ast}\)</font>, <font color="#620000">\(|b_{\ast}
+        | \leqslant B_0 \lambda q_{\ast}^{1 / 2}\)</font>, at an
+        <strong>auxiliary scale</strong> <font color="#620000">\(q_{\ast}\)</font>. The
+        centred part of <font color="#620000">\(B^{[3]}\)</font> is not imposed. Bare
+        mass <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>:
+        an output of the flow. <font color="#620000">\(\beta\)</font> depends on the
+        whole path <font color="#620000">\(\mu\)</font> through <font color="#620000">\(\ell^{[3]}
+        [\mu]\)</font>: a fixed point (&quot;Closing the mass path&quot;).
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The defect after the second correction
+      </div>
+      <p>
+        The bounded-field approximation:
+      </p>
+      <center>
+        \(\displaystyle \mathcal{F}^o_q = U\prime + M_q y + \ell^{[3]}_q,
+        \qquad \partial_q \mu =
+\langle D\mathcal{T}_q [M, \ell^{[3]}] (0)
+        \rangle .\)
+      </center>
+      <p>
+        The approximations use the preceding level, <font color="#620000">\(\partial_q
+        \ell^{[3]} = \Pi \mathcal{T} [M^{[2]}, \ell^{[2]}]\)</font>, <font
+        color="#620000">\(\partial_q \Theta^{[3]} = (B^{[2]})^{\circ}\)</font>. Hence
+      </p>
+      <center>
+        \(\displaystyle \mathcal{D}^o_q = \Pi' (\mathcal{T}_q [M^{[2]},
+        \ell^{[2]}] -\mathcal{T}_q
+[M^{[3]}, \ell^{[3]}]) :\)
+      </center>
+      <p>
+        nonlinear part and a <strong>centred linear part</strong> <font color="#620000">\(\mathcal{E}^c_q
+        y\)</font>; the scalar part vanishes by the mass equation.
+      </p>
+      <div class="slide-block">
+        <p>
+          One loop with <font color="#620000">\(\delta^{[3]}\)</font> and <font color="#620000">\(\Theta^{[3]}
+          - \Theta^{[2]}\)</font> inserted, <strong>without a scale
+          integration</strong>:
         </p>
         <center>
-          \(\displaystyle \partial_q \mathcal{F}^o_q -\mathcal{T}_q [M,
-          \ell^{[2]}] = \Pi (\mathcal{T}_q
-[M, \ell^{[1]}] -\mathcal{T}_q [M,
-          \ell^{[2]}]) = O (g_q^3) .\)
+          \(\displaystyle \textsf{S}_4 (\mathcal{D}^o_q) \lesssim \lambda^5
+          q^{- 3}, \qquad
+\|\mathcal{E}^c_q \|_{\text{row}} \lesssim g_q^4 .\)
         </center>
       </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Seed and corrections in graphs
+        Why stop after two corrections?
       </div>
       <p>
-
+        The constant and scalar linear jets of the defect vanish, so on the
+        field ball
       </p>
       <center>
-        <img src="cqft_slides_6-3.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 8.40210909090909em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+        \(\displaystyle |b_s | \lesssim s^{- 1} (\textsf{S}_4 (\mathcal{D}_s)
+        r_s^3 +\|\mathcal{E}^c_s
+\|_{\text{row}} r_s), \qquad Z_q \approx
+        \int_q^{\infty} \frac{s}{q} b_s
+\mathrm{d} s.\)
       </center>
+      <p>
+        Both terms have the same size; <font color="#620000">\(s / q\)</font> is the
+        backward transport. The cubic source:
+      </p>
       <center>
-        <img src="cqft_slides_6-4.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 19.6225696969697em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">corrections</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\textsf{S}_4
+            (\mathcal{D}_s)\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">backward source integral</td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">0: seed</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^3 s^{- 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{3 / 2} q^{- 1} \int_q^{\infty}
+            s^{- 1 / 2} \mathrm{d} s = \infty\)</font></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em">1</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^4 s^{- 5 / 2}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{5 / 2} q^{- 1} \int_q^{\infty}
+            s^{- 1} \mathrm{d} s = \infty\)</font></td>
+          </tr><tr>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid">2</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^5 s^{- 3}\)</font></td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^{7 / 2} q^{- 1} \int_q^{\infty}
+            s^{- 3 / 2} \mathrm{d} s = 2
+\lambda^{7 / 2} q^{- 3 /
+            2}\)</font></td>
+          </tr></tbody>
+        </table>
+      </center>
+      <div class="slide-block">
+        <p>
+          One correction is logarithmically borderline. <strong>Two
+          corrections beyond the seed suffice</strong> for the bounded-field
+          source estimate.
+        </p>
+      </div>
+      <p>
+        <font style="font-size: 84.1%">Each step costs two field derivatives: keep the iteration
+        finite. Full estimates: Lecture 7.</font>
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        The corrections in graphs
+      </div>
+      <center>
+        <img src="cqft_slides_6-5.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 30.2320727272727em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
       </center>
       <p>
         <font style="font-size: 84.1%"><font color="#707070">Each step inserts the previous correction
@@ -745,46 +1556,245 @@ s, \quad j = 0, 1,\)
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        The mass
+        Closing the mass path
+      </div>
+      <p>
+        Given a trial <strong>scalar</strong> path <font color="#620000">\(\mu\)</font>,
+        compute the two steps of the iteration, corrections and centred
+        kernels, then
+      </p>
+      <center>
+        \(\displaystyle \beta_q [\mu] = \langle D\mathcal{T}_q [M^{[3]} [\mu],
+        \ell^{[3]} [\mu]] (0)
+\rangle, \qquad \mathcal{A} [\mu]_q = b_{\ast} +
+        \int_{q_{\ast}}^q \beta_s
+[\mu] \mathrm{d} s.\)
+      </center>
+      <div class="slide-block">
+        <p>
+          The mass is the <strong>fixed point</strong> <font color="#620000">\(\mu
+          =\mathcal{A} [\mu]\)</font>: a scalar function of <font color="#620000">\(q\)</font>,
+          not an operator-valued path. It is the only fixed point we solve;
+          the centred kernels are explicit outputs of two Picard steps.
+        </p>
+      </div>
+      <p>
+        This is an equation for the whole path: the corrections and centred
+        kernels at <font color="#620000">\(q\)</font> depend on <font color="#620000">\(\mu\)</font>
+        at later scales.
+      </p>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        What the fixed point gives
       </div>
       <p>
 
       </p>
       <p>
-        The linear jet is not iterated: it is solved exactly by <font color="#620000">\(M\)</font>,
+        For <font color="#620000">\(q_{\ast}\)</font> large, uniformly in <font color="#620000">\(N\)</font>:
+      </p>
+      <ul>
+        <li>
+          <p>
+            a unique scalar path in the ball <font color="#620000">\(\| \mu \|_{\ast}
+            \leqslant R\)</font> (norm on the next slide), so <font color="#620000">\(|
+            \mu_q | \lesssim \lambda q^{1 / 2}\)</font>;
+          </p>
+        </li>
+        <li>
+          <p>
+            centred kernels: <font color="#620000">\(v_1 (\Theta^{[j]}_q) \lesssim
+            \lambda^2 q^{- 1 / 2}\)</font>;
+          </p>
+        </li>
+        <li>
+          <p>
+            increments: <font color="#620000">\(\mathcal{N}_{k, q} (\ell^{[j]} -
+            \ell^{[j - 1]}) \lesssim g_q^j qr_q^{2 - k}\)</font>, <font color="#620000">\(j
+            = 1, 2, 3\)</font>, <font color="#620000">\(4 \leqslant k \leqslant 12 - 2
+            j\)</font>, where
+          </p>
+          <center>
+            \(\displaystyle \mathcal{N}_{k, q} (f) = \textsf{S}_k (f) +
+            \sqrt{q} v_1 (D^{k - 1} f (0)) ;\)
+          </center>
+        </li>
+        <li>
+          <p>
+            defect: <font color="#620000">\(\textsf{S}_4 (\mathcal{D}^o_q) \lesssim
+            \lambda^5 q^{- 3}\)</font>, <font color="#620000">\(\|\mathcal{E}^c_q
+            \|_{\text{row}} \lesssim g_q^4\)</font>.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r -
+          \lambda \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3\)</font> is
+          reached by a unique boundary value <font color="#620000">\(b_{\ast,
+          N}\)</font>, and <font color="#620000">\(b_{\ast, N}\)</font> converges as
+          <font color="#620000">\(N \to \infty\)</font>. The measure does not depend on
+          <font color="#620000">\(q_{\ast}\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Two distinct iterations
+      </div>
+      <p>
+        <strong>Inner recursion:</strong> for each trial scalar path <font
+        color="#620000">\(\mu\)</font>, start from the seed and compute exactly two
+        steps.
       </p>
       <center>
-        \(\displaystyle \partial_q M_q = - \lambda \text{Tr} (R_{0, q}^2) I -
-        \frac{1}{2}
-\text{Ctr}_{R_{0, q}^2} D^3 \ell^{[2]}_q (0), \quad R_{0,
-        q} = (K_q + M_q)^{-
-1},\)
+        \(\displaystyle \mu \longmapsto (\ell^{[2]}, \Theta^{[2]}) [\mu]
+        \longmapsto (\ell^{[3]},
+\Theta^{[3]}) [\mu] \longmapsto \beta [\mu]
+        \longmapsto \mathcal{A} [\mu] .\)
       </center>
       <p>
-        with <font color="#620000">\(\mu_{q_{\ast}} = b\)</font>, <font color="#620000">\(|b|
-        \leqslant B \lambda q_{\ast}^{1 / 2}\)</font>, at an <strong>auxiliary
-        scale</strong> <font color="#620000">\(q_{\ast}\)</font>, and <font color="#620000">\(\Theta_q
-        \to 0\)</font> as <font color="#620000">\(q \to \infty\)</font>. Bare mass
-        <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>: an
-        output of the flow.
+        <strong>Outer contraction:</strong> start at <font color="#620000">\(\mu^{(0)}_q
+        = b_{\ast}\)</font>; iterate <font color="#620000">\(\mu^{(n + 1)} =\mathcal{A}
+        [\mu^{(n)}]\)</font>, in the norm <font color="#620000">\(\| \mu \|_{\ast} =
+        \sup_{q \geqslant q_{\ast}} | \mu_q | / (\lambda \sqrt{q})\)</font>:
       </p>
+      <center>
+        \(\displaystyle \|\mathcal{A}[\mu] -\mathcal{A}[\hat{\mu}]\|_{\ast}
+        \leqslant Cg_{q_{\ast}} \|
+\mu - \hat{\mu} \|_{\ast} .\)
+      </center>
+      <div class="slide-block">
+        <p>
+          Every outer step recomputes the same two-level force. Its depth
+          stays <font color="#620000">\(2\)</font>, so no additional field derivatives
+          are consumed. At the fixed point the scalar linear flow is exact;
+          the defect, nonlinear and centred linear, remains.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Mass differences gain a small insertion
+      </div>
       <p>
-        <strong>For</strong> <font color="#620000">\(q_{\ast}\)</font> <strong>large,
-        uniformly in</strong> <font color="#620000">\(N\)</font><strong>.</strong>
-        Unique solution in a ball, <font color="#620000">\(| \mu_q | \leqslant C
-        \lambda q^{1 / 2}\)</font>, <font color="#620000">\(v_1 (\Theta_q) \leqslant C
-        \lambda^2 q^{- 1 / 2}\)</font>; increments <font color="#620000">\(\mathcal{N}_k
-        (\ell^{[j]} - \ell^{[j - 1]}) \leqslant C_k g_q^{j + 1} qr_q^{2
--
-        k}\)</font>; and the defect of <font color="#620000">\(\mathcal{F}^{\text{o}}\)</font>:
-        <font color="#620000">\(S_4 (\mathcal{D}^{\text{o}}_q) \leqslant C \lambda^5
-        q^{- 3}\)</font>.
+        Compare two scalar paths with the same <font color="#620000">\(b_{\ast}\)</font>,
+        <font color="#620000">\(d = \| \mu - \hat{\mu} \|_{\ast}\)</font>; <font color="#620000">\(\delta\)</font>
+        denotes output differences, <font color="#620000">\(\delta M^{[j]} = \delta \mu
+        I + \delta \Theta^{[j]}\)</font>.
       </p>
+      <center>
+        \(\displaystyle R^{[j]} - \hat{R}^{[j]} = - R^{[j]} (\delta M^{[j]} +
+        D \delta \ell^{[j]})
+\hat{R}^{[j]} .\)
+      </center>
       <p>
-        <strong>Explicit counterterm.</strong> <font color="#620000">\(\mu_N = r -
-        \lambda \text{Tr} C + \frac{2}{3} \lambda^2 \int C^3\)</font> is
-        admissible: the measure does not depend on <font color="#620000">\(q_{\ast}\)</font>.
+        The relative scalar and centred insertions obey
       </p>
+      <center>
+        \(\displaystyle \frac{| \delta \mu_q |}{q} \leqslant g_q d, \qquad
+        \eta_q (\delta
+\Theta^{[j]}) \lesssim g_q^3 d,\)
+      </center>
+      <p>
+        the latter by integrating the differences of the centred sources from
+        infinity. Loop comparisons through the two levels give <font color="#620000">\(\mathcal{N}_{k,
+        q} (\delta \ell^{[j]}) \lesssim g_q^2 qr_q^{2 - k} d\)</font>, <font
+        color="#620000">\(j = 2, 3\)</font>, <font color="#620000">\(4 \leqslant k \leqslant 12
+        - 2 j\)</font> (the seed does not depend on <font color="#620000">\(\mu\)</font>).
+      </p>
+      <div class="slide-block">
+        <p>
+          The resulting source differences are
+        </p>
+        <center>
+          \(\displaystyle | \delta \beta_q | \lesssim \lambda^2 q^{- 1} d,
+          \qquad v_1 (\delta
+(B^{[j]}_q)^{\circ}) \lesssim \lambda^3 q^{- 2}
+          d.\)
+        </center>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Integration leaves the factor <font color="#620000">\(g_{q_{\ast}}\)</font>
+      </div>
+      <p>
+        <strong>Scalar update:</strong> the common boundary value <font color="#620000">\(b_{\ast}\)</font>
+        cancels. With <font color="#620000">\(x = q / q_{\ast} \geqslant 1\)</font>,
+      </p>
+      <center>
+        \(\displaystyle | \delta \mathcal{A}[\mu]_q | \leqslant C \lambda^2 d
+        \int_{q_{\ast}}^q
+\frac{\mathrm{d} s}{s} = C \lambda^2 \log xd,\)
+      </center>
+      <center>
+        \(\displaystyle \frac{| \delta \mathcal{A}[\mu]_q |}{\lambda \sqrt{q}}
+        \leqslant Cg_{q_{\ast}}
+\frac{\log x}{\sqrt{x}} d \leqslant \frac{2
+        C}{\mathrm{e}} g_{q_{\ast}} d.\)
+      </center>
+      <p>
+        The centred kernels are not part of the unknown: their variation is
+        already contained in <font color="#620000">\(\delta \beta\)</font>.
+      </p>
+      <div class="slide-block">
+        <p>
+          Contraction constant <font color="#620000">\(Cg_{q_{\ast}}\)</font>. Fix an
+          invariant ball, then choose <font color="#620000">\(q_{\ast}\)</font> so that
+          <font color="#620000">\(Cg_{q_{\ast}} < 1 / 2\)</font>, uniformly in <font
+          color="#620000">\(N\)</font>.
+        </p>
+      </div>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
+        Why the derivative budget stays fixed
+      </div>
+      <p>
+        A loop needs <font color="#620000">\(k + 2\)</font> legs to control a <font
+        color="#620000">\(k\)</font>-leg vertex. Every evaluation of <font color="#620000">\(\mathcal{A}\)</font>
+        uses the same budget:
+      </p>
+      <center>
+        \(\displaystyle \ell^{[1]} \text{: } 10 \longrightarrow \ell^{[2]}
+        \text{: } 8 \longrightarrow
+\ell^{[3]} \text{: } 6 \longrightarrow
+        \text{defect: } 4.\)
+      </center>
+      <p>
+        <font style="font-size: 84.1%">A <font color="#620000">\(k\)</font>-leg force vertex has <font
+        color="#620000">\(k - 1\)</font> field derivatives. The mass source uses only
+        the four-leg vertex of <font color="#620000">\(\ell^{[3]}\)</font>, the centred
+        sources those of <font color="#620000">\(\ell^{[1]}\)</font>, <font color="#620000">\(\ell^{[2]}\)</font>.</font>
+      </p>
+      <ul>
+        <li>
+          <p>
+            A path difference inserts <font color="#620000">\(\delta M^{[j]}\)</font>
+            in a resolvent. It is field-independent: <font color="#620000">\(D_y \delta
+            M^{[j]} = 0\)</font>. The comparison uses the same
+            field-derivative ranges as the construction.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\mathcal{A}\)</font> returns a <strong>scalar
+            path</strong>. At the next outer step, restart from the original
+            seed and perform the same two steps. We do not use the previous
+            <font color="#620000">\(\ell^{[3]}\)</font> as a new seed.
+          </p>
+        </li>
+      </ul>
+      <div class="slide-block">
+        <p>
+          The outer iteration contracts in one fixed space of scalar paths.
+          The finite Lipschitz estimates transfer convergence to the
+          corrections; their derivative budget does not shrink with the outer
+          index.
+        </p>
+      </div>
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
@@ -803,7 +1813,7 @@ s, \quad j = 0, 1,\)
             \int_{q_{\ast}}^{\infty} \text{Tr} R_{0, q}^2
             \hspace{0.17em}
 \mathrm{d} q \approx - \lambda \text{Tr} C \sim -
-            N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{12}
+            \lambda N\)</font>. Wick ordering: <font color="#620000">\(\frac{\lambda}{12}
             \varphi^4 - \frac{1}{2} \lambda c \varphi^2 =
 \frac{\lambda}{12}
             H_4  (\varphi ; c) +\)</font>const.
@@ -812,7 +1822,7 @@ s, \quad j = 0, 1,\)
         <li>
           <p>
             <strong>Sunset</strong>: contracting the bubble in <font color="#620000">\(D^3
-            \ell (0)\)</font> with <font color="#620000">\(R_0^2\)</font> and
+            \ell^{[3]} (0)\)</font> with <font color="#620000">\(R_0^2\)</font> and
             integrating gives the two-loop self-energy,
           </p>
           <center>
@@ -826,8 +1836,8 @@ s, \quad j = 0, 1,\)
       <p>
         Power counting: nothing else. In the flow: the integrals from <font
         color="#620000">\(q = \infty\)</font> of all vertices with <font color="#620000">\(k
-        \geqslant 4\)</font> legs converge; only the linear jet needs a
-        boundary condition.
+        \geqslant 4\)</font> legs converge; only the constant mode of the
+        linear jet needs a boundary condition at a finite scale.
       </p>
       <p>
         <font color="#620000">\(\mu_q\)</font> at fixed <font color="#620000">\(q\)</font> has a
@@ -843,76 +1853,13 @@ s, \quad j = 0, 1,\)
 
       </p>
       <center>
-        <img src="cqft_slides_6-5.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 27.7320242424242em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
+        <img src="cqft_slides_6-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 28.2845090909091em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
       </center>
       <p>
-        <font style="font-size: 84.1%"><font color="#707070">The cross is <font color="#620000">\(R_{0,
-        q}^2\)</font>. The bubble in <font color="#620000">\(D^3 \ell^{[2]}
-        (0)\)</font> produces the sunset.</font></font>
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Two correction steps
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Backward propagator <font color="#620000">\(\approx s / q\)</font>, so <font
-        color="#620000">\(Z_q \approx \int_q^{\infty} \frac{s}{q} b_s \mathrm{d}
-        s\)</font>, and on the ball <font color="#620000">\(|b_s | \lesssim s^{- 1}
-        \textsf{S}_4 (\mathcal{D}_s) r_s^3\)</font>. After <font color="#620000">\(n\)</font>
-        steps, <font color="#620000">\(\textsf{S}_4 (\mathcal{D}_s) \lesssim g_s^{n +
-        1} s^{1 / 2} r_s^{- 4}\)</font>:
-      </p>
-      <p>
-
-      </p>
-      <center>
-        <table style="display: inline-table; vertical-align: middle">
-          <tbody><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid">steps <font color="#620000">\(n\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\textsf{S}_4
-            (\mathcal{D}_s)\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(|b_s |\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 1px solid; border-bottom: 1px solid"><font color="#620000">\(\int_q^{\infty} \frac{s}{q} |b_s |
-            \mathrm{d} s\)</font></td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(0\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^3 s^{- 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{3 / 2} s^{- 3 /
-            2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (power)</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(1\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^4 s^{- 5 / 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\lambda^{5 / 2} s^{- 2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em"><font color="#620000">\(\infty\)</font> (log)</td>
-          </tr><tr>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^5 s^{- 3}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(\lambda^{7 / 2} s^{- 5 /
-            2}\)</font></td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.25em; padding-bottom: 0.25em; border-bottom: 1px solid"><font color="#620000">\(2 \lambda^{7 / 2} q^{- 3 /
-            2}\)</font></td>
-          </tr></tbody>
-        </table>
-      </center>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <p>
-        <strong>Two steps are the minimum, and suffice.</strong> The defect of
-        one step is borderline in the backward equation, as the sunset is
-        borderline in the mass. (Heuristic threshold for <font color="#620000">\(\Phi^4_3\)</font>:
-        <font color="#620000">\(n > 1\)</font>; the general theory's sufficient
-        criterion is <font color="#620000">\((n + 2) \varkappa > (3 + \varkappa) /
-        2\)</font>, <font color="#620000">\(\varkappa = \frac{1}{2}\)</font>, met by
-        <font color="#620000">\(n = 2\)</font>.)
+        <font style="font-size: 84.1%"><font color="#707070">The cross is <font color="#620000">\(\partial_q K_q =
+        1\)</font>, as before; with the two lines through it, it gives <font
+        color="#620000">\((R^{[3]}_{0, q})^2\)</font>. The bubble in <font color="#620000">\(D^3
+        \ell^{[3]} (0)\)</font> produces the sunset.</font></font>
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -955,14 +1902,14 @@ s, \quad j = 0, 1,\)
           <strong>Scalar model</strong>
         </p>
         <center>
-          \(\displaystyle \ell_q (y) = \lambda y [(q + \lambda y^2)^{- 1} -
-          q^{- 1}]\)
+          \(\displaystyle \ell^{[1]}_q (y) = \lambda y [(q + \lambda y^2)^{-
+          1} - q^{- 1}]\)
         </center>
         <p>
-          : power series of radius exactly <font color="#620000">\(r_q\)</font>
+          Its power series has radius exactly <font color="#620000">\(r_q\)</font>
           (singularities at <font color="#620000">\(\pm \mathrm{i} r_q\)</font>). Half
           of the truncations destroy monotonicity. The exact function is
-          harmless, <font color="#620000">\(| \ell_q \prime | \leqslant \frac{9}{8}
+          harmless, <font color="#620000">\({| \ell^{[1]}_q}' | \leqslant \frac{9}{8}
           \lambda / q\)</font>.
         </p>
       </div>
@@ -997,7 +1944,7 @@ s, \quad j = 0, 1,\)
       <center>
         \(\displaystyle \kappa_q (y) = r_q \tau (y / r_q), \quad
         \tilde{\ell}_q = D \kappa_q \cdot
-\ell^{[2]}_q \circ \kappa_q, \quad
+\ell^{[3]}_q \circ \kappa_q, \quad
         \bar{\mathcal{F}}_q = U\prime + M_q y +
 \tilde{\ell}_q .\)
       </center>
@@ -1094,53 +2041,21 @@ s, \quad j = 0, 1,\)
 
       </p>
       <p>
-        With <font color="#620000">\(DU = \frac{\lambda}{3} y^3\)</font>:
-      </p>
-      <p>
-        <strong>Up to a small Lipschitz perturbation, the forecast solves the
-        cubic elliptic equation</strong>
+        With <font color="#620000">\(U' = \frac{\lambda}{3} y^3\)</font>, <strong>up to
+        a small Lipschitz perturbation, the forecast solves the cubic elliptic
+        equation driven by the field at resolution <font color="#620000">\(q\)</font></strong>:
       </p>
       <center>
         \(\displaystyle K_q \Phi_q = K_q  (Y_q + \varrho_q (Y_q)) +
-        \frac{\lambda}{3} Y_q^3, \qquad
-\varrho_q (y) = C_q  (M_q y +
-        \tilde{\ell}_q (y)), \quad \|D \varrho_q \|_{p
-\to p} \leqslant C (g_q
-        + g_q^2) .\)
+        \frac{\lambda}{3} Y_q^3,\)
       </center>
-      <p>
-        driven by the field at resolution <font color="#620000">\(q\)</font>.
-      </p>
-      <p>
-        <b>Summary of today</b>, at every lattice:
-      </p>
-      <ul>
-        <li>
-          <p>
-            <font color="#620000">\(\mu_N\)</font>, <font color="#620000">\(M_q\)</font> and a
-            globally coercive <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>, all
-            deterministic;
-          </p>
-        </li>
-        <li>
-          <p>
-            the exact FBSDE for <font color="#620000">\((Y, Z)\)</font>;
-          </p>
-        </li>
-        <li>
-          <p>
-            a source whose bounded-field part is integrable (two steps), and
-            whose large-field part is controlled by sixth powers of <font
-            color="#620000">\(Y\)</font> on large fields.
-          </p>
-        </li>
-      </ul>
-      <p>
-        <b>Next:</b> estimates on <font color="#620000">\((Y, Z)\)</font> uniform in
-        <font color="#620000">\(N\)</font>.
-      </p>
+      <center>
+        \(\displaystyle \varrho_q (y) = C_q  (M_q y + \tilde{\ell}_q (y)),
+        \quad \|D \varrho_q \|_{p
+\to p} \leqslant C (g_q + g_q^2) .\)
+      </center>
     </div>
-    <div class="toggle" style="display: none">
+    <div class="toggle" style="display: block">
       <div class="slide-title">
         The force below the auxiliary scale
       </div>
@@ -1179,127 +2094,38 @@ s, \quad j = 0, 1,\)
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
-        Why not Polchinski with a frozen cube?
+        Summary of today
       </div>
       <p>
 
       </p>
       <p>
-        <strong>Programme:</strong> keep <font color="#620000">\(- \frac{\lambda}{3}
-        \varphi^3\)</font> unclipped, clip the higher orders, pay in the
-        source of <font color="#620000">\(R = F - f\)</font>. Test it on one site:
-        <font color="#620000">\(K_q = q\)</font>, <font color="#620000">\(S = 1 / q\)</font>.
+        At every lattice:
       </p>
-      <center>
-        \(\displaystyle F_q (x) = - \frac{\lambda}{3} \mathbb{E}_x Y^3 = q
-        (m_q (x) - x), \quad |m_q
-(x) | \leqslant 2 (\lambda / 3)^{- 1 / 4} +
-        2 (3 q|x| / \lambda)^{1 / 3} .\)
-      </center>
-      <center>
-        <img src="cqft_slides_6-6.png" style="margin-left: 0em; margin-bottom: 0em; margin-right: 0em; margin-top: 0em; vertical-align: 0em; height: 15.6768em" alt="Figure from Constructive quantum field theory — Lecture 6 (slides)" decoding="async" loading="lazy">
-      </center>
-      <p>
-        So <font color="#620000">\(3 R / (\lambda x^3) \to 1\)</font>: the remainder
-        <strong>cancels the cube</strong>. Field equation: <font color="#620000">\(qx =
-        (q - q_0) m_q + \eta_q\)</font>, only linear confinement.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        The price of clipping
-      </div>
-      <p>
-
-      </p>
-      <p>
-        <font color="#620000">\(f^c = f_1 +\mathcal{C}f_2\)</font>, with <font color="#620000">\(f_1
-        = - \frac{\lambda}{3} (x^3 + 3 Sx)\)</font>, <font color="#620000">\(f_2\)</font>
-        the first tree, <font color="#620000">\(\mathcal{C}f_2 = \kappa_q \prime \cdot
-        f_2 \circ \kappa_q\)</font>. For <font color="#620000">\(|x| \geqslant 2
-        r_q\)</font>, the Burgers defect is exactly
-      </p>
-      <center>
-        \(\displaystyle E_q = S^2 f_1 f_1 \prime \approx \frac{\lambda^2}{3}
-        S^2 x^5,\)
-      </center>
-      <p>
-        of order <font color="#620000">\((q / \lambda)^{1 / 2}\)</font> at the edge of
-        the clip: not integrable in <font color="#620000">\(q\)</font>.
-      </p>
-      <center>
-        \(\displaystyle \hspace{0.17em} \mathrm{d} R_q = - [E_q + S^2
-        (f^c)\prime R_q] \hspace{0.17em}
-\mathrm{d} q + \Xi^R_q
-        \hspace{0.17em} \mathrm{d} W_q, \quad \text{bracket}
-\approx
-        \frac{\lambda^2}{3} S^2 x^5 - \lambda S^2 x^2 R.\)
-      </center>
-      <p>
-        The source and the dissipation cancel for the true <font color="#620000">\(R
-        \sim \frac{\lambda}{3} x^3\)</font>: separate estimates give nothing.
-      </p>
-      <p>
-        Tails independent of <font color="#620000">\(R\)</font>: on one site from the
-        posterior moment, but not uniform on the lattice (negative bare mass).
-      </p>
-      <p>
-        More orders do not help: the tree series has radius <font color="#620000">\(\frac{2}{3}
-        r_q\)</font>.
-      </p>
-    </div>
-    <div class="toggle" style="display: none">
-      <div class="slide-title">
-        Integrating the cube
-      </div>
-      <p>
-
-      </p>
-      <p>
-        Solve the transport part of the flow exactly:
-      </p>
-      <center>
-        \(\displaystyle \partial_q f + S^2 ff' = 0, \quad f_{\infty} = -
-        \frac{\lambda}{3} x^3 \quad
-\Rightarrow \quad f_q (x) = -
-        \frac{\lambda}{3} y^3, \quad qy +
-\frac{\lambda}{3} y^3 = qx.\)
-      </center>
-      <center>
-        \(\displaystyle \sup_x |F_q (x) - f_q (x) | \leqslant 2 C_{\ast}
-        (\frac{\lambda}{3 q})^{1 /
-2}, \quad C_{\ast} < \frac{1}{2} .\)
-      </center>
       <ul>
         <li>
           <p>
-            <font color="#620000">\(y_q (\Phi_q) = Y_q\)</font>: <strong>this is the
-            forecast coordinate</strong>. <font color="#620000">\(F_q - f_q = K_q
-            Z_q\)</font>, and <font color="#620000">\(Z\)</font> is the posterior mean
-            minus the mode.
+            <font color="#620000">\(\mu_N\)</font>, <font color="#620000">\(M_q\)</font> and a
+            globally coercive <font color="#620000">\(\bar{\mathcal{F}}_q\)</font>, all
+            deterministic;
           </p>
         </li>
         <li>
           <p>
-            The defect is <font color="#620000">\(qb_q (y)\)</font>: bounded for all
-            fields. The trees are in <font color="#620000">\(x \mapsto y\)</font>; the
-            cube does not flow in <font color="#620000">\(y\)</font>, so only loops are
-            clipped.
+            the exact FBSDE for <font color="#620000">\((Y, Z)\)</font>;
           </p>
         </li>
         <li>
           <p>
-            The cube is coercive in <font color="#620000">\(y\)</font>: <font color="#620000">\(qy
-            + \frac{\lambda}{3} y^3 = q \Phi_q\)</font>.
+            a source whose bounded-field part is integrable (two steps), and
+            whose large-field part is controlled by sixth powers of <font
+            color="#620000">\(Y\)</font> on large fields.
           </p>
         </li>
       </ul>
       <p>
-        <font style="font-size: 84.1%">Not a no-go theorem: it rules out only estimating <font
-        color="#620000">\(R\)</font> as a small perturbation of the frozen cube.
-        Integrating the cube in the original field is possible, but on the
-        lattice its loop defect must still be renormalised; that route is not
-        proved here.</font>
+        <b>Next:</b> estimates on <font color="#620000">\((Y, Z)\)</font> uniform in
+        <font color="#620000">\(N\)</font>.
       </p>
     </div>
   </body>

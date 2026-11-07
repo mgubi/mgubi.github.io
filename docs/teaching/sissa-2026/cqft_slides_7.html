@@ -269,8 +269,8 @@
         =\mathbb{E}_q \Phi_{\infty}\)</font>,
       </p>
       <center>
-        \(\displaystyle \eta_q := K_q \Phi_q - (q - q_0) \psi_q =\mathbb{E}_q
-        [B_{q - q_0}] :\)
+        \(\displaystyle \omega_q := K_q \Phi_q - (q - q_0) \psi_q
+        =\mathbb{E}_q [B_{q - q_0}] :\)
       </center>
       <p>
         the noise observable of Lecture 5 is the <strong>filtered measurement
@@ -280,9 +280,9 @@
         <p style="margin-top: 1em">
           <font color="#800000"><font color="#800000"><strong>Lemma.
           </strong></font></font><i>For convex <font color="#620000">\(\Psi\)</font>,
-          <font color="#620000">\(\mathbb{E} \Psi (\eta_q) \leqslant \mathbb{E} \Psi
+          <font color="#620000">\(\mathbb{E} \Psi (\omega_q) \leqslant \mathbb{E} \Psi
           (B_{q - q_0})\)</font>, whatever the interaction. So <font color="#620000">\(\zeta_q
-          = C_q \eta_q\)</font> has</i>
+          = C_q \omega_q\)</font> has</i>
         </p>
         <p style="margin-bottom: 1em">
           <i><center>
@@ -314,7 +314,7 @@ q_0) a^2 (q) \right), \qquad (q -
       </div>
       <p>
         Lecture 5, forecast form, in this profile: <font color="#620000">\(K_{q_0}
-        \psi_q +\mathcal{F}_q (\psi_q) = \eta_q\)</font>, with the exact
+        \psi_q +\mathcal{F}_q (\psi_q) = \omega_q\)</font>, with the exact
         (unknown) force. Explicit force <font color="#620000">\(\bar{\mathcal{F}}_q =
         K_q \varrho_q + \frac{\lambda}{3} y^3\)</font>, <font color="#620000">\(\psi =
         Y + Z\)</font>:
@@ -323,8 +323,8 @@ q_0) a^2 (q) \right), \qquad (q -
         \(\displaystyle \begin{array}{|l|}
   \hline
   \hspace{0.27em} K_{q_0}
-        Y_q + \bar{\mathcal{F}}_q (Y_q) = \eta_q + (q - q_0)
-  Z_q
+        Y_q + \bar{\mathcal{F}}_q (Y_q) = \omega_q + (q -
+  q_0) Z_q
         \hspace{0.27em}\\
   \hline
 \end{array}\)
@@ -346,7 +346,7 @@ q_0) a^2 (q) \right), \qquad (q -
         <li>
           <p>
             Pointwise bounds need a smooth noise: <font color="#620000">\(\zeta = C_q
-            \eta\)</font>, <font color="#620000">\(V = Y + \varrho (Y) -
+            \omega\)</font>, <font color="#620000">\(V = Y + \varrho (Y) -
             \zeta\)</font>,
           </p>
           <center>
@@ -1472,11 +1472,12 @@ s + C_s
       </center>
       <p>
         The defect on all fields: <font color="#620000">\(|e_s (y) | \leqslant C
-        \lambda^5 s^{- 3} \| \pi_s y\|_4^4 + C \lambda^3 s^{- 5
-/ 2} \|t_s
-        (y)\|_6^6\)</font>. So both sides are bounded uniformly in <font
-        color="#620000">\(N\)</font>, by the energies under <font color="#620000">\(\mathbb{P}\)</font>
-        and by It&ocirc; under <font color="#620000">\(\mathbb{R}\)</font>.
+        \lambda^5 s^{- 3} \| \pi_s y\|_4^4 + C \lambda^4 s^{-
+2} \| \pi_s
+        y\|_2^2 + C \lambda^3 s^{- 5 / 2} \|t_s (y)\|_6^6\)</font>. So both
+        sides are bounded uniformly in <font color="#620000">\(N\)</font>, by the
+        energies under <font color="#620000">\(\mathbb{P}\)</font> and by It&ocirc;
+        under <font color="#620000">\(\mathbb{R}\)</font>.
       </p>
       <p>
         <strong>No penalty, no sub- or supersolutions, no exponential moment
@@ -1700,7 +1701,7 @@ W \rangle\)</font>.
         The field equation at resolution <font color="#620000">\(q\)</font>
       </div>
       <p>
-        In the limit: <font color="#620000">\(\eta_q = K_q \Phi_q - (q - q_0)
+        In the limit: <font color="#620000">\(\omega_q = K_q \Phi_q - (q - q_0)
         \psi_q\)</font>, <font color="#620000">\(F_q = K_q (\psi_q - \Phi_q)\)</font>,
         <font color="#620000">\(J_q = (q - q_0) C_q \to I\)</font>.
       </p>
@@ -1712,15 +1713,15 @@ W \rangle\)</font>.
         </p>
         <p>
           <i><center>
-            \(\displaystyle K_{q_0} \Phi_q = J_q F_q + \eta_q, \qquad
+            \(\displaystyle K_{q_0} \Phi_q = J_q F_q + \omega_q, \qquad
             \mathbb{E}D_{J_q h} G (\Phi_q)
 =\mathbb{E} [G (\Phi_q) \langle
-            \eta_q, h \rangle] .\)
+            \omega_q, h \rangle] .\)
           </center></i>
         </p>
         <p style="margin-bottom: 1em">
           <i><font color="#620000">\(\langle F, h \rangle\)</font>, <font color="#620000">\(\langle
-          \eta, h \rangle\)</font> are martingales, and <font color="#620000">\(\|
+          \omega, h \rangle\)</font> are martingales, and <font color="#620000">\(\|
           \langle F_q + \bar{\mathcal{F}}_q (Y_q), h \rangle \|_{L^2}
           \lesssim
 \|h\|_{H^2} q^{- 1 / 4}\)</font>.</i>
@@ -1729,10 +1730,10 @@ W \rangle\)</font>.
       <ul>
         <li>
           <p>
-            <strong>Proof of DS:</strong> <font color="#620000">\(\eta_q =\mathbb{E}_q
-            B_{q - q_0}\)</font> and <font color="#620000">\(\Phi_q = J_q \Phi_{\infty}
-            + C_q B_{q - q_0}\)</font>: Gaussian integration by parts in <font
-            color="#620000">\(B\)</font>.
+            <strong>Proof of DS:</strong> <font color="#620000">\(\omega_q
+            =\mathbb{E}_q B_{q - q_0}\)</font> and <font color="#620000">\(\Phi_q = J_q
+            \Phi_{\infty} + C_q B_{q - q_0}\)</font>: Gaussian integration by
+            parts in <font color="#620000">\(B\)</font>.
           </p>
         </li>
         <li>
@@ -1787,7 +1788,7 @@ W \rangle\)</font>.
       </p>
       <p>
         An exact identity, with no cube and no derivative: <font color="#620000">\(\hat{\Phi}
-        = Y_q + Z_q + (\eta_q - B_{q - q_0}) / (q - q_0)\)</font>.
+        = Y_q + Z_q + (\omega_q - B_{q - q_0}) / (q - q_0)\)</font>.
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1850,9 +1851,9 @@ W \rangle\)</font>.
       <center>
         \(\displaystyle \mathbb{E} \sum_i \partial_i g \langle J_{q_i} h, h_i
         \rangle =\mathbb{E} [G
-\langle \eta_q, h \rangle] =\mathbb{E} [G
-        (\langle \Phi_q, K_{q_0} h \rangle +
-\langle \bar{\mathcal{F}}_q
+\langle \omega_q, h \rangle] =\mathbb{E} [G
+        (\langle \Phi_q, K_{q_0} h \rangle
++ \langle \bar{\mathcal{F}}_q
         (Y_q), J_q h \rangle)] + O (q^{- 1 / 4}) .\)
       </center>
       <p>

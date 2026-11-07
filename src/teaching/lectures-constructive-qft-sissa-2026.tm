@@ -52,7 +52,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_1.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_1.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_1.tm>].
-    Revised 3 November 2026.
+    Revised 7 November 2026.
 
     <item><with|font-series|bold|Lecture 2> (22 October 2026): The Gaussian
     free field. Construction on the torus and Euclidean space; reflection
@@ -65,7 +65,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_2.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_2.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_2.tm>].
-    Revised 3 November 2026.
+    Revised 7 November 2026.
 
     <item><with|font-series|bold|Lecture 3> (30 October 2026): Stochastic
     quantisation and stochastic observables. Parabolic and elliptic
@@ -79,7 +79,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_3.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_3.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_3.tm>].
-    Revised 3 November 2026.
+    Revised 7 November 2026.
 
     <item><with|font-series|bold|Lecture 4> (4 November 2026): Forward--backward equations. Renormalisation, optimal control and filtering as three ways to generate the interacting measure; force coordinates; the value function as a generator, the Legendre transform and the Wetterich equation.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_4.pdf>]
@@ -88,7 +88,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_4.tm>].
-    Revised 5 November 2026.
+    Revised 7 November 2026.
 
     <item><with|font-series|bold|Lecture 5> (5 November 2026): Observables and field equations. Observables of the interacting theory; from the Minkowski to the Euclidean field equation, and Nelson's Euclidean noise; the field equation at every resolution, with a sub-Gaussian noise; Dyson--Schwinger equations, also in pathwise form; infinite volume.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_5.pdf>]
@@ -97,7 +97,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_5.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_5.tm>].
-    Revised 5 November 2026.
+    Revised 7 November 2026.
   </itemize>
 
   <subsection*|Provisional materials for Lectures 6--7>
@@ -130,7 +130,7 @@
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_supplement.tm>].
   </itemize>
 
-  Materials revised 5 November 2026. The TeXmacs sources of all notes
+  Materials revised 7 November 2026. The TeXmacs sources of all notes
   and slides, together with the style packages they use, are also
   available as one archive [<notes-store|zip|sissa/2026/cqft_texmacs_sources.zip>]. In the HTML slides, use the arrow
   keys or click to navigate; press <verbatim|o> for an overview.

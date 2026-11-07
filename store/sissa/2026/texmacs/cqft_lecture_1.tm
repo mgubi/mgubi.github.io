@@ -175,7 +175,7 @@
   Section<nbsp><reference|sec:euclid> explains the passage to imaginary time
   on a lattice regularisation of the field on a circle, the Feynman\UKac
   formula, the statistical mechanics interpretation and the
-  Osterwalder\USchrader axioms. Lecture<nbsp>2
+  Osterwalder\USchrader axioms. Lecture<nbsp><hlink|2|cqft_lecture_2.tm>
   (Section<nbsp><hlink|3|cqft_lecture_2.tm#sec:gff> of its notes) studies the
   first example, the Gaussian free field. Section<nbsp><reference|app:plan>
   outlines the plan of the course (seven lectures).
@@ -489,8 +489,8 @@
     version (Remark<nbsp><hlink|3.7|cqft_lecture_2.tm#rem:KL-euclid>) show
     that in flat space every theory is at least as singular as the free
     field. The Hadamard condition prescribes exactly the free singularity,
-    and the Wick ordering of Lecture<nbsp>2 is the flat-space version of the
-    subtraction of the Hadamard parametrix.
+    and the Wick ordering of Lecture<nbsp><hlink|2|cqft_lecture_2.tm> is the
+    flat-space version of the subtraction of the Hadamard parametrix.
   </remark>
 
   <subsection|Why operator-valued distributions?><label|sec:distrib>
@@ -1647,12 +1647,15 @@
 
   These notes cover the first of seven lectures given at SISSA, Trieste, in
   October\UNovember 2026, for graduate students in analysis, probability or
-  mathematical physics. Each lecture has its own notes. Lectures<nbsp>1\U5
-  develop the general framework; Lectures<nbsp>6\U7 give a construction of
-  <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE of
-  Lecture<nbsp>4. Lectures<nbsp>1\U3 were delivered in October 2026;
-  Lectures<nbsp>4\U7 are provisional, and Sections<nbsp>16\U18 of
-  Lecture<nbsp>7 will not be delivered in class.
+  mathematical physics. Each lecture has its own notes.
+  Lectures<nbsp>1\U<hlink|5|cqft_lecture_5.tm> develop the general framework;
+  Lectures<nbsp><hlink|6|cqft_lecture_6.tm>\U<hlink|7|cqft_lecture_7.tm> give
+  a construction of <math|\<Phi\><rsup|4><rsub|3>> on the torus via the FBSDE
+  of Lecture<nbsp><hlink|4|cqft_lecture_4.tm>.
+  Lectures<nbsp>1\U<hlink|3|cqft_lecture_3.tm> were delivered in October
+  2026; Lectures<nbsp><hlink|4|cqft_lecture_4.tm>\U<hlink|7|cqft_lecture_7.tm>
+  are provisional, and Sections<nbsp><hlink|16|cqft_lecture_7.tm#sec:terminal>\U<hlink|18|cqft_lecture_7.tm#sec:limit>
+  of Lecture<nbsp><hlink|7|cqft_lecture_7.tm> will not be delivered in class.
 
   <paragraph|Prerequisites> Measure-theoretic probability and Itô calculus;
   the spectral theorem for self-adjoint operators; distributions and Fourier
@@ -1664,9 +1667,9 @@
   field: the Polchinski equation, its probabilistic form as a
   forward\Ubackward stochastic differential equation (FBSDE) for the field at
   increasing resolution, and the associated variational problem. Stochastic
-  quantisation (Lecture<nbsp>3) gives a first dynamical description of the
-  free field; cluster expansions and correlation inequalities appear as
-  complementary approaches.
+  quantisation (Lecture<nbsp><hlink|3|cqft_lecture_3.tm>) gives a first
+  dynamical description of the free field; cluster expansions and correlation
+  inequalities appear as complementary approaches.
 
   <big-table|<with|par-mode|center|<data-table|<tformat|<cwith|1|-1|2|2|cell-width|0.3par>|<cwith|1|-1|2|2|cell-hmode|exact>|<cwith|1|-1|2|2|cell-hyphen|t>|<cwith|1|-1|3|3|cell-width|0.55par>|<cwith|1|-1|3|3|cell-hmode|exact>|<cwith|1|-1|3|3|cell-hyphen|t>|<table|<row|<cell|>|<cell|Lecture>|<cell|Main
   results>>|<row|<cell|1>|<cell|Relativistic quantum fields and imaginary
@@ -1678,7 +1681,7 @@
   decomposition; stochastic observables; products and
   OPE>>|<row|<cell|4>|<cell|Forward\Ubackward equations>|<cell|Polchinski
   equation and FBSDE; force coordinates and the Wetterich equation;
-  Boué\UDupuis formula>>>>><label|tab:course>>|Lectures<nbsp>1\U4.>
+  Boué\UDupuis formula>>>>><label|tab:course>>|Lectures<nbsp>1\U<hlink|4|cqft_lecture_4.tm>.>
 
   <paragraph|Lecture<nbsp>1. Relativistic quantum fields and imaginary time>
   Sections<nbsp><reference|sec:wightman> and<nbsp><reference|sec:euclid>:
@@ -1733,19 +1736,22 @@
 
   <paragraph|Lectures<nbsp>6\U7> Construction of
   <math|\<Phi\><rsup|4><rsub|3>> on the torus (separate notes). The Wetterich
-  FBSDE, two renormalisations and the large-field problem (Lecture<nbsp>6); a
-  priori estimates for the forward\Ubackward system (Lecture<nbsp>7,
-  Sections<nbsp>13\U15); UV stability, compactness and the limiting FBSDE
-  (Lecture<nbsp>7, Sections<nbsp>16\U18, not delivered in class).
-  <em|Reading:><nbsp><cite|BG20|BCG26>.
+  FBSDE, two renormalisations and the large-field problem
+  (Lecture<nbsp><hlink|6|cqft_lecture_6.tm>); a priori estimates for the
+  forward\Ubackward system (Lecture<nbsp><hlink|7|cqft_lecture_7.tm>,
+  Sections<nbsp><hlink|13|cqft_lecture_7.tm#sec:energies>\U<hlink|15|cqft_lecture_7.tm#sec:backward>);
+  UV stability, compactness and the limiting FBSDE
+  (Lecture<nbsp><hlink|7|cqft_lecture_7.tm>,
+  Sections<nbsp><hlink|16|cqft_lecture_7.tm#sec:terminal>\U<hlink|18|cqft_lecture_7.tm#sec:limit>,
+  not delivered in class). <em|Reading:><nbsp><cite|BG20|BCG26>.
 
   <paragraph|Homework and projects> Problem sets can be drawn from the
   exercises at the end of each section. The computer experiments of
   Section<nbsp><hlink|3|cqft_lecture_2.tm#sec:gff> (lattice GFF, lattice
   stochastic quantisation) and the zero-dimensional Polchinski process of
-  Lecture<nbsp>4 can be extended to interacting models and are suitable as
-  small projects. Possible reading projects: the Griffiths\USimon
-  construction<nbsp><cite|GS73>; dimensional
+  Lecture<nbsp><hlink|4|cqft_lecture_4.tm> can be extended to interacting
+  models and are suitable as small projects. Possible reading projects: the
+  Griffiths\USimon construction<nbsp><cite|GS73>; dimensional
   reduction<nbsp><cite|KLP84|ADG20>; the Euclidean approach to the particle
   structure of <math|P<around|(|\<varphi\>|)><rsub|2>><nbsp><cite|GJS74>.
 
@@ -2392,7 +2398,7 @@
       between the three pictures.>|<pageref|auto-24>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|3.1>||Lectures
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>1\U4.>|<pageref|auto-31>>
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>>1\U<locus|<id|%13AF0CA40-6BC11E0>|<link|hyperlink|<id|%13AF0CA40-6BC11E0>|<url|cqft_lecture_4.tm>>|4>.>|<pageref|auto-31>>
     </associate>
     <\associate|toc>
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>

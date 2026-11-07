@@ -92,9 +92,9 @@
         K&auml;ll&eacute;n&ndash;Lehmann representation, and define its local
         (Wick) operators. We prove that the Dyson&ndash;Schwinger equation
         characterises the GFF among probability measures on distributions.
-        Stochastic quantisation is treated in Lecture 3. Exercises are
-        collected at the end. These notes follow the slides of Lecture
-        2.</font>
+        Stochastic quantisation is treated in Lecture <a href="cqft_lecture_3.html">3</a>.
+        Exercises are collected at the end. These notes follow the slides of
+        Lecture 2.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -148,16 +148,16 @@
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
     <p>
-      In Lecture 1 we saw that, after the passage to imaginary time, a
-      relativistic quantum field is encoded in a probability measure on
-      distributions satisfying the Osterwalder&ndash;Schrader axioms, formally
-      \(\mu (\mathrm{d} \varphi) \propto \exp (- \int [\frac{1}{2} | \nabla
-      \varphi
-|^2 + \frac{1}{2} m^2 \varphi^2 + V (\varphi)]) \mathcal{D}
-      \varphi\) (Eq. <a href="cqft_lecture_1.html#eq:path-integral">(2.13)</a>). In this lecture we treat its
-      Gaussian part rigorously. Conventions are those of Lecture 1. Sections,
-      equations and exercises keep the numbering of the notes, so that
-      &sect;1&ndash;2 refer to the notes of Lecture 1.
+      In Lecture <a href="cqft_lecture_1.html">1</a> we saw that, after the passage to imaginary
+      time, a relativistic quantum field is encoded in a probability measure
+      on distributions satisfying the Osterwalder&ndash;Schrader axioms,
+      formally \(\mu (\mathrm{d} \varphi) \propto \exp (- \int [\frac{1}{2} |
+      \nabla \varphi
+|^2 + \frac{1}{2} m^2 \varphi^2 + V (\varphi)])
+      \mathcal{D} \varphi\) (Eq. <a href="cqft_lecture_1.html#eq:path-integral">(2.13)</a>). In this lecture we
+      treat its Gaussian part rigorously. Conventions are those of Lecture <a
+      href="cqft_lecture_1.html">1</a>. Sections, equations and exercises keep the numbering of the
+      notes, so that &sect;1&ndash;2 refer to the notes of Lecture <a href="cqft_lecture_1.html">1</a>.
     </p>
     <h2 id="auto-2"><a id="sec:gff"></a>3<span style="margin-left: 1em"></span>The Gaussian free field<span
     style="margin-left: 1em"></span></h2>
@@ -421,9 +421,10 @@ x
       <a href="#bib-Nel73b">Nel73b</a>]). The time-zero restriction of the GFF is Gaussian
       with covariance \((2 \omega)^{- 1}\), the ground state measure of the
       free Hamiltonian in the Schr&ouml;dinger representation (Exercise <a
-      href="cqft_lecture_3.html#ex:slices">4.4</a> of Lecture 3). The GFF is also the continuum limit of the
-      lattice model <a href="cqft_lecture_1.html#eq:spin-system">(2.12)</a> with \(V = 0\) (for \(d = 2\); in
-      general \(d\) see Exercise <a href="cqft_lecture_1.html#ex:lattice-action">2.3</a> and Exercise <a href="#ex:lattice-gff">3.10</a>).
+      href="cqft_lecture_3.html#ex:slices">4.4</a> of Lecture <a href="cqft_lecture_3.html">3</a>). The GFF is also the continuum
+      limit of the lattice model <a href="cqft_lecture_1.html#eq:spin-system">(2.12)</a> with \(V = 0\) (for \(d =
+      2\); in general \(d\) see Exercise <a href="cqft_lecture_1.html#ex:lattice-action">2.3</a> and Exercise <a
+      href="#ex:lattice-gff">3.10</a>).
     </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">3.5</class>. </strong><class style="font-style: normal"><strong>(Nelson's
@@ -641,18 +642,19 @@ x
       with \(p = 2\), and reflection positivity follows from Proposition <a
       href="#prop:RP">3.4</a> for each mass \(M > 0\) and \(\rho \geqslant 0\). (If only
       the first condition holds, the measure may still exist and satisfy the
-      other axioms, but (OS1) in the form of Lecture 1 can fail: for the
-      massless field in \(d \geqslant 3\), \(f = \mathrm{i} g\) with \(g
-      \geqslant 0\) supported in a ball of radius \(R\) gives \(| \hat{\mu}
-      (f) | = \mathrm{e}^{\frac{1}{2}  \langle g, Cg \rangle}\) with \(\langle
-      g, Cg \rangle \sim R^{d + 2}\).) It reconstructs the generalised free
-      field of Exercise <a href="cqft_lecture_1.html#ex:gen-free">1.6</a>. Its Dyson&ndash;Schwinger equation
-      \(\mathbb{E} [D_h F] =\mathbb{E} [F \varphi (C_{\rho}^{- 1} h)]\) still
-      characterises it: under mild conditions on \(\rho\) (e.g. \(\rho\)
-      finite with a mass gap), \(C_{\rho}\) is a bijection of \(\mathcal{S}
-      (\mathbb{R}^d)\), which is all the proof of Theorem <a href="#thm:DS-unique">3.16</a>
-      uses. However \(C_{\rho}^{- 1}\) is <em>nonlocal</em> unless \(\rho\) is
-      a single atom, as the following example shows.
+      other axioms, but (OS1) in the form of Lecture <a href="cqft_lecture_1.html">1</a> can fail:
+      for the massless field in \(d \geqslant 3\), \(f = \mathrm{i} g\) with
+      \(g \geqslant 0\) supported in a ball of radius \(R\) gives \(|
+      \hat{\mu} (f) | = \mathrm{e}^{\frac{1}{2}  \langle g, Cg \rangle}\) with
+      \(\langle g, Cg \rangle \sim R^{d + 2}\).) It reconstructs the
+      generalised free field of Exercise <a href="cqft_lecture_1.html#ex:gen-free">1.6</a>. Its
+      Dyson&ndash;Schwinger equation \(\mathbb{E} [D_h F] =\mathbb{E} [F
+      \varphi (C_{\rho}^{- 1} h)]\) still characterises it: under mild
+      conditions on \(\rho\) (e.g. \(\rho\) finite with a mass gap),
+      \(C_{\rho}\) is a bijection of \(\mathcal{S} (\mathbb{R}^d)\), which is
+      all the proof of Theorem <a href="#thm:DS-unique">3.16</a> uses. However \(C_{\rho}^{-
+      1}\) is <em>nonlocal</em> unless \(\rho\) is a single atom, as the
+      following example shows.
     </p>
     <p>
       <div style="display: inline">
@@ -1318,9 +1320,9 @@ x_j)
       \(P (\varphi)_2\) were obtained by point splitting by Schrader [<a href="#bib-Sch74">Sch74</a>];
       the renormalised cube of [<a href="#bib-GH21">GH21</a>] is approximated in the
       spirit of the OPE; convergence of the OPE in perturbation theory is
-      proved in [<a href="#bib-HK12">HK12</a>]. Lecture 3 describes the OPE at the level
-      of stochastic observables, where the singular coefficients are explicit
-      at every scale.
+      proved in [<a href="#bib-HK12">HK12</a>]. Lecture <a href="cqft_lecture_3.html">3</a> describes the OPE
+      at the level of stochastic observables, where the singular coefficients
+      are explicit at every scale.
     </p>
     <p>
       The DS equation is not only satisfied by the GFF; it characterises it.
@@ -1398,12 +1400,12 @@ x_j)
     </p>
     <h3 id="auto-12">3.5<span style="margin-left: 1em"></span>Outlook<span style="margin-left: 1em"></span></h3>
     <p>
-      In Lecture 3 we obtain the GFF as the stationary marginal of the
-      parabolic and elliptic stochastic quantisation equations, and we
+      In Lecture <a href="cqft_lecture_3.html">3</a> we obtain the GFF as the stationary marginal
+      of the parabolic and elliptic stochastic quantisation equations, and we
       decompose it along a scale parameter: the field at resolution \(t\) is a
-      Gaussian martingale, whose terminal value is the GFF. In Lecture 4
-      interactions are introduced through the Polchinski equation for the
-      effective potential, and through its probabilistic form, a
+      Gaussian martingale, whose terminal value is the GFF. In Lecture <a
+      href="cqft_lecture_4.html">4</a> interactions are introduced through the Polchinski equation
+      for the effective potential, and through its probabilistic form, a
       forward&ndash;backward stochastic differential equation for the field at
       increasing resolution. These tools can be used to construct \(\Phi^4_2\)
       and \(\Phi^4_3\). On \(\mathbb{T}^2\) the Wick-ordered interaction
@@ -1622,15 +1624,15 @@ P} G (x_i - x_j)\).</font>
         by FFT, for \(N = 64, 256, 1024\), and check that the empirical
         variance of \(\varphi_u\) grows like \(\frac{1}{2 \pi} \log N\). (b)
         Implement an explicit Euler scheme for the lattice version of <a href="cqft_lecture_3.html#eq:SQE">(4.1)</a>
-        in Lecture 3 with \(V = 0\) (mind the stability constraint \(\Delta t
-        \lesssim \varepsilon^2\)), and check that the variance of the \(k\)-th
-        Fourier mode relaxes to \(\lambda_k^{- 1}\) at rate \(2 \lambda_k\),
-        with \(\lambda_k\) the eigenvalues of \(m^2 - \Delta_{\varepsilon}\).
-        (c) Add \(V' (\varphi) = 4 \lambda (\varphi^3 - 3 c_{\varepsilon}
-        \varphi)\), i.e. \(V = \lambda : \varphi^4\):, and observe that the
-        solutions have a nontrivial limit as \(N \to \infty\), while without
-        the counterterm \(- 12 \lambda c_{\varepsilon} \varphi\) they converge
-        to zero [<a href="#bib-HRW12">HRW12</a>].</font>
+        in Lecture <a href="cqft_lecture_3.html">3</a> with \(V = 0\) (mind the stability
+        constraint \(\Delta t \lesssim \varepsilon^2\)), and check that the
+        variance of the \(k\)-th Fourier mode relaxes to \(\lambda_k^{- 1}\)
+        at rate \(2 \lambda_k\), with \(\lambda_k\) the eigenvalues of \(m^2 -
+        \Delta_{\varepsilon}\). (c) Add \(V' (\varphi) = 4 \lambda (\varphi^3
+        - 3 c_{\varepsilon} \varphi)\), i.e. \(V = \lambda : \varphi^4\):, and
+        observe that the solutions have a nontrivial limit as \(N \to
+        \infty\), while without the counterterm \(- 12 \lambda c_{\varepsilon}
+        \varphi\) they converge to zero [<a href="#bib-HRW12">HRW12</a>].</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1682,20 +1684,20 @@ P} G (x_i - x_j)\).</font>
         representations:</em> [<a href="#bib-Sym69">Sym69</a>, <a href="#bib-BFS82">BFS82</a>, <a
         href="#bib-Dyn84">Dyn84</a>, <a href="#bib-LW04">LW04</a>, <a href="#bib-LJ10">LJ10</a>, <a href="#bib-LJ11">LJ11</a>,
         <a href="#bib-Lup16">Lup16</a>, <a href="#bib-Wer16">Wer16</a>, <a href="#bib-QW19">QW19</a>, <a href="#bib-WP21">WP21</a>].
-        <em>Stochastic quantisation (Lecture 3):</em> reviews [<a href="#bib-DH87">DH87</a>,
-        <a href="#bib-DH88">DH88</a>, <a href="#bib-Gub25">Gub25</a>]; parabolic [<a href="#bib-PW81">PW81</a>,
-        <a href="#bib-JLM85">JLM85</a>, <a href="#bib-AR91">AR91</a>, <a href="#bib-DPD03">DPD03</a>, <a href="#bib-DPZ14">DPZ14</a>];
-        singular SPDEs [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>, <a href="#bib-CC18">CC18</a>,
-        <a href="#bib-MW17">MW17</a>, <a href="#bib-HRW12">HRW12</a>]; construction of \(\Phi^4_3\)
-        via dynamics and variational methods [<a href="#bib-GH21">GH21</a>, <a href="#bib-BG20">BG20</a>];
-        Euclidean field equations and DS equations for \(P (\varphi)_2\) [<a
-        href="#bib-DG74">DG74</a>, <a href="#bib-AR91">AR91</a>], for \(\Phi^4_3\) [<a href="#bib-FR77">FR77</a>,
-        <a href="#bib-ALZ06">ALZ06</a>, <a href="#bib-GH21">GH21</a>], and for the exponential model
-        in \(d = 2\) [<a href="#bib-DGT22">DGT22</a>]; operator product expansion and
-        composite operators [<a href="#bib-Wil69">Wil69</a>, <a href="#bib-Zim73">Zim73</a>, <a href="#bib-Sch74">Sch74</a>,
-        <a href="#bib-HK12">HK12</a>]; elliptic stochastic quantisation and dimensional
-        reduction [<a href="#bib-PS79">PS79</a>, <a href="#bib-KLP84">KLP84</a>, <a href="#bib-ADG20">ADG20</a>,
-        <a href="#bib-ADG21">ADG21</a>, <a href="#bib-GH19">GH19</a>].
+        <em>Stochastic quantisation (Lecture <a href="cqft_lecture_3.html">3</a>):</em> reviews [<a
+        href="#bib-DH87">DH87</a>, <a href="#bib-DH88">DH88</a>, <a href="#bib-Gub25">Gub25</a>]; parabolic [<a
+        href="#bib-PW81">PW81</a>, <a href="#bib-JLM85">JLM85</a>, <a href="#bib-AR91">AR91</a>, <a href="#bib-DPD03">DPD03</a>,
+        <a href="#bib-DPZ14">DPZ14</a>]; singular SPDEs [<a href="#bib-Hai14">Hai14</a>, <a href="#bib-GIP15">GIP15</a>,
+        <a href="#bib-CC18">CC18</a>, <a href="#bib-MW17">MW17</a>, <a href="#bib-HRW12">HRW12</a>];
+        construction of \(\Phi^4_3\) via dynamics and variational methods [<a
+        href="#bib-GH21">GH21</a>, <a href="#bib-BG20">BG20</a>]; Euclidean field equations and DS
+        equations for \(P (\varphi)_2\) [<a href="#bib-DG74">DG74</a>, <a href="#bib-AR91">AR91</a>],
+        for \(\Phi^4_3\) [<a href="#bib-FR77">FR77</a>, <a href="#bib-ALZ06">ALZ06</a>, <a href="#bib-GH21">GH21</a>],
+        and for the exponential model in \(d = 2\) [<a href="#bib-DGT22">DGT22</a>];
+        operator product expansion and composite operators [<a href="#bib-Wil69">Wil69</a>,
+        <a href="#bib-Zim73">Zim73</a>, <a href="#bib-Sch74">Sch74</a>, <a href="#bib-HK12">HK12</a>]; elliptic
+        stochastic quantisation and dimensional reduction [<a href="#bib-PS79">PS79</a>,
+        <a href="#bib-KLP84">KLP84</a>, <a href="#bib-ADG20">ADG20</a>, <a href="#bib-ADG21">ADG21</a>, <a href="#bib-GH19">GH19</a>].
       </div>
     </p>
     <p>

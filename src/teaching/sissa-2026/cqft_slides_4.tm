@@ -3,11 +3,11 @@
 <style|<tuple|beamer|fira-font|british|triangle-list|cqft-slides|preview-ref>>
 
 <\body>
-  <screens|<\hidden>
+  <screens|<\shown>
     <cqft-title-slide|Forward\Ubackward equations|Joint work with Sarah-Jean
     Meyer, with the use of AI|SISSA lectures, Lecture<nbsp>4 \V notes:
     Lecture<nbsp>4, ŸŸ7\U8>
-  </hidden>|<\hidden>
+  </shown>|<\hidden>
     <mytitle|Where we are>
 
     \;
@@ -27,7 +27,8 @@
       <item>They meet in one system for a <strong|field> and a
       <strong|force>: the <strong|force coordinates>.
 
-      <item>Potentials: the value function generates them; Legendre; <strong|Wetterich>.
+      <item>Potentials: the value function generates them; Legendre;
+      <strong|Wetterich>.
     </enumerate>
 
     <with|font-series|bold|Next time> (Lecture<nbsp>5): observables, and the
@@ -710,27 +711,28 @@
 
     <\with|font-size|0.9>
       <\itemize>
-      <item><math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends only
-      on the <em|starting point> <math|X<rsub|T>>: the transition kernels are
-      those of the Gaussian reference, only the initial law changes. A linear
-      process with Gaussian transitions, not a Gaussian process.
+        <item><math|\<mathd\>\<bbb-P\>/\<mathd\>\<bbb-P\><rsub|0>> depends
+        only on the <em|starting point> <math|X<rsub|T>>: the transition
+        kernels are those of the Gaussian reference, only the initial law
+        changes. A linear process with Gaussian transitions, not a Gaussian
+        process.
 
-      <item><strong|Backward>: blur the interacting field with Gaussian
-      noise, <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>;
-      this does not know the interaction. <strong|Forward>: Polchinski undoes
-      the blurring, all the interaction is in the drift.
+        <item><strong|Backward>: blur the interacting field with Gaussian
+        noise, <math|\<Phi\><rsub|t>=J<rsub|t>\<Phi\><rsub|T>+\<zeta\><rsub|t>>;
+        this does not know the interaction. <strong|Forward>: Polchinski
+        undoes the blurring, all the interaction is in the drift.
 
-      <item>Time reversal (<math|t\<gtr\>0>, finite cutoff): forward drift
-      <math|b<rsub|t>=<wide|Q|\<dot\>><rsub|t>F<rsub|t>>, backward drift
-      <math|\<beta\><rsub|t>=-<wide|Q|\<dot\>><rsub|t>Q<rsub|t><rsup|-1>x>,
-      and <math|b<rsub|t>+\<beta\><rsub|t>=<wide|Q|\<dot\>><rsub|t>\<mathD\>log
-      p<rsub|t>>: reversal <strong|compensates the drift up to the score> of
-      the density at that scale (Nelson's osmotic velocity). So <math|F> is
-      the score of <math|\<nu\><rsub|t>> relative to
-      <math|\<mu\><rsup|Q<rsub|t>>>, <math|\<psi\><rsub|t>> is the denoiser
-      (Tweedie), and the noise is
-      <math|\<eta\><rsub|t>=-J<rsub|t>\<mathD\>log p<rsub|t><around|(|\<Phi\><rsub|t>|)>>.
-    </itemize>
+        <item>Time reversal (<math|t\<gtr\>0>, finite cutoff): forward drift
+        <math|b<rsub|t>=<wide|Q|\<dot\>><rsub|t>F<rsub|t>>, backward drift
+        <math|\<beta\><rsub|t>=-<wide|Q|\<dot\>><rsub|t>Q<rsub|t><rsup|-1>x>,
+        and <math|b<rsub|t>+\<beta\><rsub|t>=<wide|Q|\<dot\>><rsub|t>\<mathD\>log
+        p<rsub|t>>: reversal <strong|compensates the drift up to the score>
+        of the density at that scale (Nelson's osmotic velocity). So <math|F>
+        is the score of <math|\<nu\><rsub|t>> relative to
+        <math|\<mu\><rsup|Q<rsub|t>>>, <math|\<psi\><rsub|t>> is the denoiser
+        (Tweedie), and the noise is <math|\<omega\><rsub|t>=-J<rsub|t>\<mathD\>log
+        p<rsub|t><around|(|\<Phi\><rsub|t>|)>>.
+      </itemize>
     </with>
 
     \;
@@ -1158,12 +1160,12 @@
     with the symplectic form
 
     <\equation*>
-      \<omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>.
+      \<Omega\>=<big|sum><rsub|i>\<mathd\>x<rsub|i>\<wedge\>\<mathd\>p<rsub|i>.
     </equation*>
 
     <\itemize>
       <item><math|L> (dimension <math|n>) is <strong|Lagrangian> if
-      <math|\<omega\><mid|\|><rsub|L>=0>.
+      <math|\<Omega\><mid|\|><rsub|L>=0>.
 
       <item>A graph <math|p=F<around|(|x|)>> is Lagrangian
       <math|\<Leftrightarrow\>> <math|\<mathD\>F> symmetric
@@ -1173,7 +1175,7 @@
       <item>Symplectic maps send Lagrangian submanifolds to Lagrangian ones.
       The shear <math|\<Sigma\><rsub|t><around|(|x,p|)>=<around|(|x+S<rsub|t>*p,p|)>>
       is symplectic since <math|S<rsub|t>> is symmetric:
-      <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<omega\>=\<omega\>+<big|sum>S<rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<omega\>>.
+      <math|\<Sigma\><rsub|t><rsup|\<ast\>>*\<Omega\>=\<Omega\>+<big|sum>S<rsub|i*j>*\<mathd\>p<rsub|j>\<wedge\>\<mathd\>p<rsub|i>=\<Omega\>>.
     </itemize>
 
     \;
@@ -1589,8 +1591,8 @@
     <\myframed>
       <strong|Next>
 
-      Lecture<nbsp>5: observables, the field equation at every resolution
-      and its sub-Gaussian noise.
+      Lecture<nbsp>5: observables, the field equation at every resolution and
+      its sub-Gaussian noise.
     </myframed>
   </hidden>|<\hidden>
     <mytitle|Exercises and reading>

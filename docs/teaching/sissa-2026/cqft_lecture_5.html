@@ -85,16 +85,16 @@
     </div>
     <div style="margin-left: 60px; margin-right: 60px">
       <p>
-        <font style="font-size: 84.1%">We continue Lecture 4 with the observables of the
-        interacting theory. Rotating the Minkowski field equation to Euclidean
-        space gives the Dyson&ndash;Schwinger equation, whose noise,
+        <font style="font-size: 84.1%">We continue Lecture <a href="cqft_lecture_4.html">4</a> with the observables
+        of the interacting theory. Rotating the Minkowski field equation to
+        Euclidean space gives the Dyson&ndash;Schwinger equation, whose noise,
         <em>Nelson's Euclidean noise</em>, is the transpose of the functional
         derivative and is fixed by the law of the field. Conditioning on the
         scales rather than on the neighbours, the field equation holds at
         every resolution, with a noise which is a conditional expectation of
         Nelson's noise. This noise is sub-Gaussian whatever the interaction
         (an observation which, as far as we know, is new, and which is the key
-        input of the a priori estimates of Lecture 7), and the
+        input of the a priori estimates of Lecture <a href="cqft_lecture_7.html">7</a>), and the
         Dyson&ndash;Schwinger equation takes a pathwise form, an identity
         between stochastic observables. We then discuss the passage to
         infinite volume. The appendices contain the algebra of the flow,
@@ -106,9 +106,9 @@
     </div>
     <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
       <p>
-        <font style="font-size: 84.1%">The results presented in Lectures 4&ndash;7 were obtained
-        recently, with the use of AI, in collaboration with Sarah-Jean
-        Meyer.</font>
+        <font style="font-size: 84.1%">The results presented in Lectures <a href="cqft_lecture_4.html">4</a>&ndash;<a
+        href="cqft_lecture_7.html">7</a> were obtained recently, with the use of AI, in
+        collaboration with Sarah-Jean Meyer.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -139,7 +139,7 @@
       </p>
       <p>
         9.1<span style="margin-left: 1em"></span>Observables of the interacting theory <span
-        style="margin-left: 5mm"></span> <a href="#auto-8">3</a>
+        style="margin-left: 5mm"></span> <a href="#auto-8">2</a>
       </p>
       <p>
         Tangent observables <span style="margin-left: 5mm"></span> <a href="#auto-9">3</a>
@@ -192,7 +192,7 @@
         What the observer cannot resolve <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a>
       </p>
       <p>
-        A new observation <span style="margin-left: 5mm"></span> <a href="#auto-25">10</a>
+        A new observation <span style="margin-left: 5mm"></span> <a href="#auto-25">11</a>
       </p>
       <p>
         The roughness of the noise <span style="margin-left: 5mm"></span> <a href="#auto-26">11</a>
@@ -248,10 +248,10 @@
         Entropy as quadratic variation <span style="margin-left: 5mm"></span> <a href="#auto-42">17</a>
       </p>
       <p>
-        In terms of the conditional covariance <span style="margin-left: 5mm"></span> <a href="#auto-43">17</a>
+        In terms of the conditional covariance <span style="margin-left: 5mm"></span> <a href="#auto-43">18</a>
       </p>
       <p>
-        An application: the KLS conjecture <span style="margin-left: 5mm"></span> <a href="#auto-44">18</a>
+        An application: the KLS conjecture <span style="margin-left: 5mm"></span> <a href="#auto-44">19</a>
       </p>
       <p>
         The connection with Bauerschmidt&ndash;Bodineau <span style="margin-left: 5mm"></span>
@@ -261,17 +261,17 @@
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-46">19</a>
       </p>
       <p style="margin-top: 0.6em; margin-bottom: 0.2em">
-        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-47">19</a>
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-47">20</a>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
     <p>
-      Lecture 4 generated the interacting measure in three ways,
+      Lecture <a href="cqft_lecture_4.html">4</a> generated the interacting measure in three ways,
       renormalisation, optimal control and filtering, and found that they
       produce the same forward&ndash;backward system <a href="cqft_lecture_4.html#eq:fbsde-system">(7.7)</a> for
       the field \(\Phi\) and the force \(F\). In this lecture we study the
       observables of the interacting theory and its field equation. We use the
-      notation of Lecture 4 throughout: the interaction <a href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a>
+      notation of Lecture <a href="cqft_lecture_4.html">4</a> throughout: the interaction <a href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a>
       with its counterterm \(\gamma_T\), the effective potential \(V_t\) <a
       href="cqft_lecture_4.html#eq:Vt">(7.3)</a> and the force \(F_t = - \mathrm{D} V_t (\Phi_t)\), the
       effective average action \(\Gamma_t\) of Section <a href="cqft_lecture_4.html#sec:legendre">8.6</a> and
@@ -279,8 +279,8 @@
       t}\), \(K = Q_T^{- 1}\), \(J_t = KQ_t\), the regulator \(\mathcal{R}_t =
       S_t^{- 1} - K\), the bridge representation <a href="cqft_lecture_4.html#eq:bridge">(7.14)</a>, the
       forecast \(\psi_t =\mathbb{E}_t [\Phi_T]\) and the conditional
-      covariance \(\text{Cov}_t\). Sections 7 and 8 are in Lecture 4, and
-      references to them point there.
+      covariance \(\text{Cov}_t\). Sections <a href="cqft_lecture_4.html#sec:polchinski">7</a> and <a href="cqft_lecture_4.html#sec:wetterich">8</a>
+      are in Lecture <a href="cqft_lecture_4.html">4</a>, and references to them point there.
     </p>
     <p>
       <div style="display: inline">
@@ -318,15 +318,16 @@
       </div>
       <h5>Conventions.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        As in Lectures 1&ndash;3: \(\mathcal{M}=\mathbb{T}^d_L\) or
-        \(\mathbb{R}^d\), \(A = m^2 - \Delta\), \(C = A^{- 1}\) with kernel
-        \(G\), \(\mu_m\) the GFF, \(\langle f, g \rangle = \int fg\) for real
-        functions. For a functional \(F\) on smooth fields, \(\mathrm{D} F
-        (\varphi) \in \mathcal{S}' (\mathcal{M})\) and \(\mathrm{D}^2 F
-        (\varphi)\) are its first and second derivatives, \(\mathrm{D}_h F =
-        \langle \mathrm{D} F, h \rangle\). \(H_n  (a ; c)\) are the Hermite
-        polynomials of variance \(c\), and \(\mu^Q\) is the centred Gaussian
-        measure with covariance \(Q\).
+        As in Lectures <a href="cqft_lecture_1.html">1</a>&ndash;<a href="cqft_lecture_3.html">3</a>:
+        \(\mathcal{M}=\mathbb{T}^d_L\) or \(\mathbb{R}^d\), \(A = m^2 -
+        \Delta\), \(C = A^{- 1}\) with kernel \(G\), \(\mu_m\) the GFF,
+        \(\langle f, g \rangle = \int fg\) for real functions. For a
+        functional \(F\) on smooth fields, \(\mathrm{D} F (\varphi) \in
+        \mathcal{S}' (\mathcal{M})\) and \(\mathrm{D}^2 F (\varphi)\) are its
+        first and second derivatives, \(\mathrm{D}_h F = \langle \mathrm{D} F,
+        h \rangle\). \(H_n  (a ; c)\) are the Hermite polynomials of variance
+        \(c\), and \(\mu^Q\) is the centred Gaussian measure with covariance
+        \(Q\).
       </div>
     </p>
     <p>
@@ -338,27 +339,27 @@
       </div>
       <h5>Acknowledgements.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        The results presented in Lectures 4&ndash;7 are joint work with
-        Sarah-Jean Meyer, obtained recently with the use of AI. M. Gubinelli
-        is partly supported by UK Research and Innovation via the grant
-        &ldquo;StochFields&rdquo; EP/Z534328/1 and by the Simons Collaboration
-        on Probabilistic Paths to QFT. S.-J. Meyer is supported by the grant
-        &ldquo;StochFields&rdquo; EP/Z534328/1.
+        The results presented in Lectures <a href="cqft_lecture_4.html">4</a>&ndash;<a href="cqft_lecture_7.html">7</a>
+        are joint work with Sarah-Jean Meyer, obtained recently with the use
+        of AI. M. Gubinelli is partly supported by UK Research and Innovation
+        via the grant &ldquo;StochFields&rdquo; EP/Z534328/1 and by the Simons
+        Collaboration on Probabilistic Paths to QFT. S.-J. Meyer is supported
+        by the grant &ldquo;StochFields&rdquo; EP/Z534328/1.
       </div>
     </p>
     <h2 id="auto-6">Main lecture<span style="margin-left: 1em"></span></h2>
     <h2 id="auto-7"><a id="sec:observables"></a>9<span style="margin-left: 1em"></span>Observables and field
     equations<span style="margin-left: 1em"></span></h2>
     <p>
-      In Lecture 3 the primary objects were the stochastic observables,
-      martingales in the filtration of finite-resolution measurements [<a
-      href="#bib-BCG26">BCG26</a>]. The filtering point of view makes this natural: an
-      observable is a posterior mean \(\mathbb{E}_t [G (\Phi_T)]\). We have
-      already met the force \(F_t\) and the forecast \(\psi_t\), and the field
-      \(\Phi_t\) is not one of them. This section develops the language for
-      the interacting theory, and then draws the main consequence of the
-      filter: a field equation at every resolution, with a noise whose moments
-      are controlled a priori.
+      In Lecture <a href="cqft_lecture_3.html">3</a> the primary objects were the stochastic
+      observables, martingales in the filtration of finite-resolution
+      measurements [<a href="#bib-BCG26">BCG26</a>]. The filtering point of view makes
+      this natural: an observable is a posterior mean \(\mathbb{E}_t [G
+      (\Phi_T)]\). We have already met the force \(F_t\) and the forecast
+      \(\psi_t\), and the field \(\Phi_t\) is not one of them. This section
+      develops the language for the interacting theory, and then draws the
+      main consequence of the filter: a field equation at every resolution,
+      with a noise whose moments are controlled a priori.
     </p>
     <h3 id="auto-8">9.1<span style="margin-left: 1em"></span>Observables of the interacting theory<span
     style="margin-left: 1em"></span></h3>
@@ -436,10 +437,10 @@
       </div>
       <h5>The Minkowski field equation.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        In Lecture 1 the quantum \(\Phi^4\) theory was introduced through the
-        operator field equation <a href="cqft_lecture_1.html#eq:NLKG">(1.9)</a> together with the canonical
-        commutation relations <a href="cqft_lecture_1.html#eq:CCR">(1.6)</a>. In the normalisation <a
-        href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a> it reads
+        In Lecture <a href="cqft_lecture_1.html">1</a> the quantum \(\Phi^4\) theory was
+        introduced through the operator field equation <a href="cqft_lecture_1.html#eq:NLKG">(1.9)</a>
+        together with the canonical commutation relations <a href="cqft_lecture_1.html#eq:CCR">(1.6)</a>.
+        In the normalisation <a href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a> it reads
       </div>
     </p>
     <center>
@@ -498,12 +499,17 @@
       <div style="display: inline">
         Under \(t = - \mathrm{i} \tau\) the time-ordered functions continue
         to the Schwinger functions \(S (x, x_1, \ldots, x_n)\), the moments of
-        the Euclidean field (Lecture 1). Since \(\partial_t^2 = -
+        the Euclidean field (Lecture <a href="cqft_lecture_1.html">1</a>). Since \(\partial_t^2 = -
         \partial_{\tau}^2\), the operator \(\Box + m^2\) becomes \(A = m^2 -
         \Delta\), with \(\Delta\) the Laplacian in all \(d\) variables.
-        Formally \(\delta (t - t_j) = \mathrm{i} \delta (\tau - \tau_j)\), so
-        the factor \(- \mathrm{i}\) of the contact terms becomes \(+ 1\):
+        Formally
       </div>
+    </p>
+    <center>
+      \(\displaystyle \delta (t - t_j) = \mathrm{i} \delta (\tau - \tau_j),\)
+    </center>
+    <p>
+      so the factor \(- \mathrm{i}\) of the contact terms becomes \(+ 1\):
     </p>
     <center>
       \(\displaystyle A_x S (x, x_1, \ldots, x_n) = - S (V' (\varphi) (x),
@@ -512,17 +518,18 @@
       \hat{x}_j, \ldots, x_n) .\)
     </center>
     <p>
-      This is the Dyson&ndash;Schwinger hierarchy of Lecture 2 (Remark <a
-      href="cqft_lecture_2.html#rem:DS">3.15</a>). For a random field \(\varphi\) with law \(\nu\),
-      passing from products \(G = \varphi (x_1) \cdots \varphi (x_n)\) to
-      cylinder functionals by linearity and density, it reads
+      This is the Dyson&ndash;Schwinger hierarchy of Lecture <a href="cqft_lecture_2.html">2</a>
+      (Remark <a href="cqft_lecture_2.html#rem:DS">3.15</a>). For a random field \(\varphi\) with law
+      \(\nu\), passing from products \(G = \varphi (x_1) \cdots \varphi
+      (x_n)\) to cylinder functionals by linearity and density, it reads
     </p>
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:DS-euclid"></a>\(\displaystyle \mathbb{E}^{\nu}  [G
-        \hspace{0.17em} \langle h, \eta \rangle]
+        \hspace{0.17em} \langle h, \omega \rangle]
 =\mathbb{E}^{\nu}
-        [\mathrm{D}_h G], \qquad \eta := A \varphi + V' (\varphi) .\)</td>
+        [\mathrm{D}_h G], \qquad \omega := A \varphi + V' (\varphi)
+.\)</td>
         <td align="right">(9.5)</td>
       </tr>
     </table>
@@ -535,12 +542,12 @@
         The Euclidean field does <em>not</em> solve \(A \varphi + V'
         (\varphi) = 0\). Already for the free field, if it did, elliptic
         regularity would make \(\varphi\) real analytic, which it is not, as
-        Nelson observed [<a href="#bib-Nel75">Nel75</a>]. The defect \(\eta\) is the
+        Nelson observed [<a href="#bib-Nel75">Nel75</a>]. The defect \(\omega\) is the
         <em>noise</em> of the Euclidean field equation
       </div>
     </p>
     <center>
-      \(\displaystyle A \varphi + V' (\varphi) = \eta,\)
+      \(\displaystyle A \varphi + V' (\varphi) = \omega,\)
     </center>
     <p>
       and <class style="font-style: normal">(<a href="#eq:DS-euclid">9.5</a>)</class> says what it is. Let
@@ -550,8 +557,8 @@
     </p>
     <center>
       \(\displaystyle \mathrm{D}_h^{\top} G = - \mathrm{D}_h G + \langle h,
-      \eta \rangle G, \qquad
-\langle h, \eta \rangle = \mathrm{D}_h^{\top}
+      \omega \rangle G, \qquad
+\langle h, \omega \rangle = \mathrm{D}_h^{\top}
       1.\)
     </center>
     <p>
@@ -565,8 +572,9 @@
       \varphi\)
     </center>
     <p>
-      in finitely many dimensions, \(\eta = - \mathrm{D} \hspace{0.17em} \log
-      (\mathrm{d} \nu / \mathrm{d} \varphi)\). This is how the canonical
+      in finitely many dimensions, \(\omega = - \mathrm{D} \hspace{0.17em}
+      \log (\mathrm{d} \nu / \mathrm{d}
+\varphi)\). This is how the canonical
       commutator survives the rotation. In Minkowski space the contact terms
       come from a commutator, which acts as a derivative, and the field
       equation holds exactly. In Euclidean space they come from integration by
@@ -576,10 +584,10 @@
       law. For the free field
     </p>
     <center>
-      \(\displaystyle \eta = A \varphi\)
+      \(\displaystyle \omega = A \varphi\)
     </center>
     <p>
-      is the Gaussian field with covariance \(A\), i.e. \(\eta = A^{1 / 2}
+      is the Gaussian field with covariance \(A\), i.e. \(\omega = A^{1 / 2}
       \xi\) for a white noise \(\xi\): one derivative of white noise. For an
       interacting field it is not Gaussian.
     </p>
@@ -591,16 +599,16 @@
       <div style="display: inline">
         Nelson [<a href="#bib-Nel75">Nel75</a>] proposed to take the Euclidean field
         equation, with \(V' (\varphi) = g \varphi^3 - \alpha \varphi\) and
-        \(\alpha\) a counterterm, as the <em>definition</em> of the noise
-        \(\omega := A \varphi + V' (\varphi)\), and to characterise it by
-        conditioning in real space. On the lattice \(\varepsilon
-        \mathbb{Z}^d\), with the nearest-neighbour Laplacian, the conditional
-        law of \(\varphi (x)\) given the field at all other sites depends only
-        on the nearest neighbours: this is the Markov property. An integration
-        by parts in this one-site conditional law shows that \(\omega (x)\) is
-        conditionally centred, \(\mathbb{E} [\omega (x) | \varphi (y), y \neq
-        x] = 0\), that it satisfies the Dyson&ndash;Schwinger hierarchy, and
-        that its covariance is
+        \(\alpha\) a counterterm, as the <em>definition</em> of its noise,
+        which he called \(\omega\): \(\omega := A \varphi + V' (\varphi)\),
+        and to characterise it by conditioning in real space. On the lattice
+        \(\varepsilon \mathbb{Z}^d\), with the nearest-neighbour Laplacian,
+        the conditional law of \(\varphi (x)\) given the field at all other
+        sites depends only on the nearest neighbours: this is the Markov
+        property. An integration by parts in this one-site conditional law
+        shows that \(\omega (x)\) is conditionally centred, \(\mathbb{E}
+        [\omega (x) | \varphi (y), y \neq x] = 0\), that it satisfies the
+        Dyson&ndash;Schwinger hierarchy, and that its covariance is
       </div>
     </p>
     <center>
@@ -619,15 +627,15 @@
       with respect to the interacting vacuum, and he judged this unlikely in
       \(d = 3\). This agrees with Remark <a href="#rem:closed-local">9.5</a>: the regularised
       logarithmic derivatives of \(\Phi^4_3\) do not converge in \(L^2\) [<a
-      href="#bib-ALZ06">ALZ06</a>]. Nelson's \(\omega\) is exactly the noise \(\eta\) of
-      <class style="font-style: normal">(<a href="#eq:DS-euclid">9.5</a>)</class>, and we call \(\eta\)
-      <em>Nelson's Euclidean noise</em>. As far as we know, apart from
+      href="#bib-ALZ06">ALZ06</a>]. The noise of <class style="font-style: normal">(<a href="#eq:DS-euclid">9.5</a>)</class>
+      is exactly Nelson's noise, which is why we use his letter \(\omega\) and
+      call it <em>Nelson's Euclidean noise</em>. As far as we know, apart from
       Nelson's original work these notes are the first place where this noise
       is studied as the noise of a field equation. Its pairings \(\langle h,
-      \eta \rangle\) are, up to sign, the logarithmic derivatives of the
+      \omega \rangle\) are, up to sign, the logarithmic derivatives of the
       measure, which appear in the integration by parts formulae for
       \(\Phi^4_3\) [<a href="#bib-ALZ06">ALZ06</a>]; what is new here is the noise at
-      every resolution, \(\eta_t\), and its sub-Gaussian bound (Section <a
+      every resolution, \(\omega_t\), and its sub-Gaussian bound (Section <a
       href="#sec:noise-bounds">9.4</a>).
     </p>
     <p>
@@ -681,7 +689,7 @@
         The filter gives a third way. Instead of conditioning on the
         neighbours, condition on the coarse scales. The field equation then
         holds at every resolution, with a noise which is the conditional
-        expectation of Nelson's Euclidean noise \(\eta\). This noise is not
+        expectation of Nelson's Euclidean noise \(\omega\). This noise is not
         Gaussian, but at each resolution it is a genuine random variable, with
         Gaussian tails uniform in the interaction and in the cutoff (Section
         <a href="#sec:noise-bounds">9.4</a>).
@@ -695,7 +703,7 @@
       \(\zeta_t\) is not observed, but its posterior mean is, \(\mathbb{E}_t
       \zeta_t = \Phi_t - J_t \psi_t\). Since \(\psi_t = \Phi_t + S_t F_t\) and
       \(1 - J_t = KS_t\), its rescaling \(S_t^{- 1} \mathbb{E}_t \zeta_t = K
-      \Phi_t - J_t F_t\) is the <strong>noise observable</strong> \(\eta_t\)
+      \Phi_t - J_t F_t\) is the <strong>noise observable</strong> \(\omega_t\)
       below. This gives a field equation at every resolution.
     </p>
     <div class="key-result">
@@ -708,8 +716,8 @@
         </p>
         <i><table width="100%">
           <tr>
-            <td width="100%" align="center"><a id="eq:eta"></a>\(\displaystyle \eta_t := K \Phi_t -
-            J_t F_t\)</td>
+            <td width="100%" align="center"><a id="eq:eta"></a>\(\displaystyle \omega_t := K \Phi_t
+            - J_t F_t\)</td>
             <td align="right">(9.6)</td>
           </tr>
         </table></i>
@@ -718,8 +726,8 @@
         </p>
         <p>
           <i><center>
-            \(\displaystyle \mathrm{d} \eta_t = K \dot{Q}_t^{1 / 2} \mathrm{d}
-            W_t - J_t \hspace{0.17em}
+            \(\displaystyle \mathrm{d} \omega_t = K \dot{Q}_t^{1 / 2}
+            \mathrm{d} W_t - J_t \hspace{0.17em}
 \mathrm{d} F_t .\)
           </center></i>
         </p>
@@ -733,7 +741,7 @@
             \mathbb{E}^{\mathbb{P}}  [\mathrm{D}_{J_t h} G
             (\Phi_t)]
 =\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t)
-            \hspace{0.17em} \langle h, \eta_t
+            \hspace{0.17em} \langle h, \omega_t
 \rangle \right]
             =\mathbb{E}^{\mathbb{P}} \left[ G (\Phi_t) \hspace{0.17em}
 \langle
@@ -765,14 +773,14 @@
       K \dot{Q}_t\),
     </p>
     <center>
-      \(\displaystyle \mathrm{d} \eta_t = K (\dot{Q}_t F_t \mathrm{d} t +
+      \(\displaystyle \mathrm{d} \omega_t = K (\dot{Q}_t F_t \mathrm{d} t +
       \dot{Q}_t^{1 / 2}
 \mathrm{d} W_t) - K \dot{Q}_t F_t \mathrm{d} t - J_t
       \mathrm{d} F_t .\)
     </center>
     <p>
-      The drift cancels, \(F\) is a martingale and \(\eta_0 = 0\). For <class
-      style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class> use Proposition <a href="cqft_lecture_4.html#prop:marginals">7.2</a>:
+      The drift cancels, \(F\) is a martingale and \(\omega_0 = 0\). For
+      <class style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class> use Proposition <a href="cqft_lecture_4.html#prop:marginals">7.2</a>:
       \(\Phi_t \sim \nu_t \propto \mathrm{e}^{- V_t} \mu^{Q_t}\). Gaussian
       integration by parts for \(\mu^{Q_t}\) in the direction \(Q_t k\) gives
     </p>
@@ -790,16 +798,16 @@
       At \(t = T\), \(J_T = 1\) and \(F_T = - \mathrm{D} V_T (\Phi_T)\), so
     </p>
     <center>
-      \(\displaystyle \eta_T = K \Phi_T + \mathrm{D} V_T (\Phi_T)\)
+      \(\displaystyle \omega_T = K \Phi_T + \mathrm{D} V_T (\Phi_T)\)
     </center>
     <p>
       is Nelson's Euclidean noise <class style="font-style: normal">(<a href="#eq:DS-euclid">9.5</a>)</class> of
       \(\nu_T\), the transpose of the derivative applied to \(1\). Since
-      \(\eta\) is a martingale,
+      \(\omega\) is a martingale,
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:eta-projection"></a>\(\displaystyle \eta_t =\mathbb{E}_t [K
+        <td width="100%" align="center"><a id="eq:eta-projection"></a>\(\displaystyle \omega_t =\mathbb{E}_t [K
         \Phi_T + \mathrm{D} V_T (\Phi_T)] :\)</td>
         <td align="right">(9.9)</td>
       </tr>
@@ -807,8 +815,8 @@
     <p>
       the noise at resolution \(t\) is what an observer at resolution \(t\)
       can know of the Euclidean noise. Nelson's \(\omega (x)\) is centred
-      given the field at the neighbouring sites; here \(\eta_T - \eta_t\) is
-      centred given the field at the coarser scales.
+      given the field at the neighbouring sites; here \(\omega_T - \omega_t\)
+      is centred given the field at the coarser scales.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -823,7 +831,7 @@
         <tr>
           <td width="100%" align="center"><a id="eq:DS-pathwise"></a>\(\displaystyle N_t := \mathrm{D}_{J_t
           h} G_t (\Phi_t) - G_t (\Phi_t) \hspace{0.17em} \langle
-h, \eta_t
+h, \omega_t
           \rangle\)</td>
           <td align="right">(9.10)</td>
         </tr>
@@ -832,12 +840,12 @@ h, \eta_t
         <i>is a \(\mathbb{P}\)-martingale on \([0, T]\) with \(N_0 = 0\).
         Equivalently, \(N_t =\mathbb{E}_t \left[ \mathrm{D}_h G (\Phi_T) - G
         (\Phi_T) \hspace{0.17em}
-\langle h, \eta_T \rangle \right]\).</i>
+\langle h, \omega_T \rangle \right]\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>\(N_0 = 0\) because \(J_0 = 0\) and
-      \(\eta_0 = 0\). Differentiate <class style="font-style: normal">(<a href="#eq:kolmogorov">9.2</a>)</class>
+      \(\omega_0 = 0\). Differentiate <class style="font-style: normal">(<a href="#eq:kolmogorov">9.2</a>)</class>
       in \(\phi\) and apply It&ocirc;'s formula: since \(F_t = - \mathrm{D}
       V_t\), the drift of \(\mathrm{D} G_t (\Phi_t)\) is \(- \mathrm{D} F_t
       \dot{Q}_t \mathrm{D} G_t\), and with \(\dot{J}_t = K \dot{Q}_t\) the
@@ -848,9 +856,9 @@ h, \eta_t
       \mathrm{d}
 W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
       \(\mathrm{d} F_t = \mathrm{D} F_t  \dot{Q}_t^{1 / 2} \mathrm{d} W_t\),
-      the covariation of \(G_t (\Phi_t)\) and \(\langle h, \eta_t \rangle\)
+      the covariation of \(G_t (\Phi_t)\) and \(\langle h, \omega_t \rangle\)
       has the same density \(\langle \mathrm{D} G_t, \dot{Q}_t (K - \mathrm{D}
-      F_t J_t) h \rangle\). Both \(G_t (\Phi_t)\) and \(\eta_t\) are
+      F_t J_t) h \rangle\). Both \(G_t (\Phi_t)\) and \(\omega_t\) are
       martingales, so by the product rule the drift of their product is this
       covariation, and the drift of \(N\) vanishes. At \(t = T\), \(G_T = G\)
       and \(J_T = 1\).<span style="margin-left: 1em"></span>\(\Box\)
@@ -865,24 +873,25 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
         style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class> for the function \(G_t\), and at \(t
         = T\) the DS equation <class style="font-style: normal">(<a href="#eq:DS-terminal">9.8</a>)</class>.
         Proposition <a href="#prop:DS-pathwise">9.2</a> says more, and fits the framework of
-        stochastic observables of Lecture 3. \(N\) is the observable of the
-        terminal random variable \(\mathrm{D}_h G - G \langle h, \eta_T
-        \rangle\), the defect of the DS equation, and the DS equation is the
-        statement that this observable starts at \(0\). At resolution \(t\),
-        however, \(N_t\) is computed from objects at resolution \(t\) only:
-        the observable \(G_t (\Phi_t)\) of \(G\), its derivative in the
-        smoothed direction \(J_t h\), and the noise \(\eta_t\). The terminal
-        value is not needed. This matters as \(T \to \infty\): for
-        \(\Phi^4_3\) the terminal noise \(\eta_T\) is not expected to converge
-        to a random variable, so the terminal defect has no limit, while every
-        \(N_t\) can. The Dyson&ndash;Schwinger equation of the limit is then
-        the statement that, for every terminal functional \(G\) and every
-        \(h\), the process \(N\) is a martingale null at \(0\): an identity
-        between observables, with no terminal representative needed. Pathwise,
-        it says that the product \(G_t (\Phi_t) \langle h, \eta_t \rangle\) of
-        two martingales differs from a martingale by \(\mathrm{D}_{J_t h} G_t
-        (\Phi_t)\), just as the contact terms of <class style="font-style: normal">(<a href="#eq:SD-mink">9.4</a>)</class>
-        come from the derivative.
+        stochastic observables of Lecture <a href="cqft_lecture_3.html">3</a>. \(N\) is the
+        observable of the terminal random variable \(\mathrm{D}_h G - G
+        \langle h, \omega_T \rangle\), the defect of the DS equation, and the
+        DS equation is the statement that this observable starts at \(0\). At
+        resolution \(t\), however, \(N_t\) is computed from objects at
+        resolution \(t\) only: the observable \(G_t (\Phi_t)\) of \(G\), its
+        derivative in the smoothed direction \(J_t h\), and the noise
+        \(\omega_t\). The terminal value is not needed. This matters as \(T
+        \to \infty\): for \(\Phi^4_3\) the terminal noise \(\omega_T\) is not
+        expected to converge to a random variable, so the terminal defect has
+        no limit, while every \(N_t\) can. The Dyson&ndash;Schwinger equation
+        of the limit is then the statement that, for every terminal functional
+        \(G\) and every \(h\), the process \(N\) is a martingale null at
+        \(0\): an identity between observables, with no terminal
+        representative needed. Pathwise, it says that the product \(G_t
+        (\Phi_t) \langle h, \omega_t \rangle\) of two martingales differs from
+        a martingale by \(\mathrm{D}_{J_t h} G_t (\Phi_t)\), just as the
+        contact terms of <class style="font-style: normal">(<a href="#eq:SD-mink">9.4</a>)</class> come from
+        the derivative.
       </div>
     </p>
     <p>
@@ -893,22 +902,23 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:field-eq-scale"></a>\(\displaystyle A \Phi_t = AQ_t
-        \hspace{0.17em} F_t + \eta_t,\)</td>
+        \hspace{0.17em} F_t + \omega_t,\)</td>
         <td align="right">(9.11)</td>
       </tr>
     </table>
     <p>
       with \(AQ_t = \mathrm{e}^{- A / t^2}\) for the heat profile. This is the
       Euclidean field equation \(A \varphi = - V' (\varphi) +\)noise of
-      Lectures 1&ndash;2, seen at resolution \(t\). It needs no products of
-      distributions: the nonlinearity enters only through the force
-      <em>observable</em> \(F_t\), smeared at scale \(1 / t\). For the GFF
-      (\(F = 0\)), <class style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class> is Gaussian
-      integration by parts for \(\mu^{Q_t}\). For \(\Phi^4_3\), where \(F_t\)
-      plays the role of the renormalised cube, the limit \(t \to \infty\) of
-      <class style="font-style: normal">(<a href="#eq:field-eq-scale">9.11</a>)</class> corresponds to the
-      renormalised DS equation of [<a href="#bib-GH21">GH21</a>]. Lecture 7 proves the
-      field equation at every resolution for the limit (Theorem <a href="cqft_lecture_7.html#thm:field-q">18.9</a>).
+      Lectures <a href="cqft_lecture_1.html">1</a>&ndash;<a href="cqft_lecture_2.html">2</a>, seen at resolution \(t\).
+      It needs no products of distributions: the nonlinearity enters only
+      through the force <em>observable</em> \(F_t\), smeared at scale \(1 /
+      t\). For the GFF (\(F = 0\)), <class style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class>
+      is Gaussian integration by parts for \(\mu^{Q_t}\). For \(\Phi^4_3\),
+      where \(F_t\) plays the role of the renormalised cube, the limit \(t \to
+      \infty\) of <class style="font-style: normal">(<a href="#eq:field-eq-scale">9.11</a>)</class> corresponds to the
+      renormalised DS equation of [<a href="#bib-GH21">GH21</a>]. Lecture <a href="cqft_lecture_7.html">7</a>
+      proves the field equation at every resolution for the limit (Theorem <a
+      href="cqft_lecture_7.html#thm:field-q">18.9</a>).
     </p>
     <p>
       <div style="display: inline">
@@ -924,10 +934,10 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:field-eq-forecast"></a>\(\displaystyle K \psi_t = F_t + \eta_t,
-        \qquad F_t = - \mathrm{D} \Gamma_t (\psi_t) = -
-\mathrm{D} V_t
-        (\Phi_t) .\)</td>
+        <td width="100%" align="center"><a id="eq:field-eq-forecast"></a>\(\displaystyle K \psi_t = F_t +
+        \omega_t, \qquad F_t = - \mathrm{D} \Gamma_t (\psi_t) = -
+\mathrm{D}
+        V_t (\Phi_t) .\)</td>
         <td align="right">(9.12)</td>
       </tr>
     </table>
@@ -937,10 +947,10 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
     </p>
     <center>
       \(\displaystyle A \Phi_t + \mathrm{e}^{- A / t^2} \mathrm{D} V_t
-      (\Phi_t) = \eta_t \quad
+      (\Phi_t) = \omega_t \quad
 \text{(Polchinski process),} \hspace{3em} A
       \psi_t + \mathrm{D} \Gamma_t
-(\psi_t) = \eta_t \quad
+(\psi_t) = \omega_t \quad
       \text{(forecast).}\)
     </center>
     <p>
@@ -954,7 +964,7 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
       (\psi)\)
     </center>
     <p>
-      forced by the noise \(\eta_t\). For \(\Phi^4\), at finite \(T\) and to
+      forced by the noise \(\omega_t\). For \(\Phi^4\), at finite \(T\) and to
       first order in \(\lambda\), the Wetterich equation <a href="cqft_lecture_4.html#eq:wetterich-Gamma">(8.13)</a>
       gives
     </p>
@@ -969,7 +979,7 @@ W_t \rangle\) and, by Theorem <a href="#thm:DS-scale">9.1</a> with
     <center>
       \(\displaystyle K \psi_t + \frac{\lambda}{3} H_3  (\psi_t ; c_t) +
       (\text{mass counterterm and
-higher orders}) = \eta_t .\)
+higher orders}) = \omega_t .\)
     </center>
     <p>
       The cube acts directly on the forecast, and pairing with \(\psi_t\)
@@ -978,7 +988,7 @@ higher orders}) = \eta_t .\)
     <center>
       \(\displaystyle \langle \psi_t, K \psi_t \rangle + \frac{\lambda}{3}
       \int (\psi_t^4 - 3 c_t
-\psi_t^2) = \langle \psi_t, \eta_t \rangle +
+\psi_t^2) = \langle \psi_t, \omega_t \rangle +
       \ldots,\)
     </center>
     <p>
@@ -1010,14 +1020,14 @@ higher orders}) = \eta_t .\)
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">9.3</class>. </strong><class style="font-style: normal"><strong>(Comparison
       with stochastic quantisation) </strong></class>In parabolic or elliptic
-      stochastic quantisation (Lecture 3, &sect;4) the field equation is
-      imposed in an auxiliary time, and the field at fixed time has the right
-      law. Here the field equation <class style="font-style: normal">(<a href="#eq:field-eq-scale">9.11</a>)</class>
+      stochastic quantisation (Lecture <a href="cqft_lecture_3.html">3</a>, &sect;4) the field
+      equation is imposed in an auxiliary time, and the field at fixed time
+      has the right law. Here the field equation <class style="font-style: normal">(<a href="#eq:field-eq-scale">9.11</a>)</class>
       holds at each resolution, and the auxiliary parameter is the resolution
       itself. Taking conditional expectations of an SPDE solution with respect
       to a scale filtration gives identities of the same shape, but with a
       different noise covariance: the martingale \(J_t \hspace{0.17em}
-      \mathrm{d} F_t\) in \(\mathrm{d} \eta_t\) is essential [<a href="#bib-BCG26">BCG26</a>].
+      \mathrm{d} F_t\) in \(\mathrm{d} \omega_t\) is essential [<a href="#bib-BCG26">BCG26</a>].
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -1032,7 +1042,7 @@ higher orders}) = \eta_t .\)
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:DS-path"></a>\(\displaystyle \mathbb{E} [G \langle
-          \eta_t, h \rangle] =\mathbb{E} \sum_{i = 1}^k
+          \omega_t, h \rangle] =\mathbb{E} \sum_{i = 1}^k
 (\partial_i g)
           (\cdots) \langle J_{t_i} h, h_i \rangle, \)</td>
           <td align="right">(9.13)</td>
@@ -1041,21 +1051,21 @@ higher orders}) = \eta_t .\)
       <p style="margin-bottom: 1em">
         <i>that is, the derivative of \(G\) in the direction which shifts the
         field at each scale \(s\) by \(J_s h\). The increments are consistent:
-        \(\mathbb{E} [G \langle \eta_t - \eta_s, h \rangle] = 0\) for \(t_k
-        \leqslant s \leqslant t\).</i>
+        \(\mathbb{E} [G \langle \omega_t - \omega_s, h \rangle] = 0\) for
+        \(t_k \leqslant s \leqslant t\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Proof. </strong>\(G\) is \(\mathcal{F}_t\)-measurable, so
-      \(\mathbb{E} [G \langle \eta_t, h \rangle] =\mathbb{E} [G \langle S_t^{-
-      1}
-\zeta_t, h \rangle]\). By <a href="cqft_lecture_4.html#eq:bridge">(7.14)</a>, \(\Phi_s = J_s \Phi_T
-      + \zeta_s\), the bridge covariance is \(\mathbb{E} [\zeta_s \otimes
-      \zeta_t] = Q_s KS_t\) for \(s \leqslant t\), so the covariance of
-      \(\langle S_t^{- 1} \zeta_t, h \rangle\) and \(\langle \zeta_s, k
+      \(\mathbb{E} [G \langle \omega_t, h \rangle] =\mathbb{E} [G \langle
+      S_t^{- 1}
+\zeta_t, h \rangle]\). By <a href="cqft_lecture_4.html#eq:bridge">(7.14)</a>, \(\Phi_s = J_s
+      \Phi_T + \zeta_s\), the bridge covariance is \(\mathbb{E} [\zeta_s
+      \otimes \zeta_t] = Q_s KS_t\) for \(s \leqslant t\), so the covariance
+      of \(\langle S_t^{- 1} \zeta_t, h \rangle\) and \(\langle \zeta_s, k
       \rangle\) is \(\langle J_s h, k \rangle\). Apply Gaussian integration by
       parts in \(\zeta\), given \(\Phi_T\). The last claim is the martingale
-      property of \(\eta\).<span style="margin-left: 1em"></span>\(\Box\)
+      property of \(\omega\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em; margin-bottom: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">9.5</class>. </strong><class style="font-style: normal"><strong>(Closed
@@ -1083,16 +1093,16 @@ higher orders}) = \eta_t .\)
     <h3 id="auto-20"><a id="sec:noise-bounds"></a>9.4<span style="margin-left: 1em"></span>Gaussian bounds for the
     noise<span style="margin-left: 1em"></span></h3>
     <p>
-      The noise observable \(\eta_t\) is not Gaussian: it depends on the
+      The noise observable \(\omega_t\) is not Gaussian: it depends on the
       unknown law of the interacting field. It is a conditional expectation in
       two ways. In <class style="font-style: normal">(<a href="#eq:eta-projection">9.9</a>)</class> it is the
-      projection of the terminal noise \(\eta_T\), whose law depends on the
+      projection of the terminal noise \(\omega_T\), whose law depends on the
       interaction and which, for \(\Phi^4_3\), is not expected to have a limit
       as a random variable when \(T \to \infty\). The filter gives a second
       representation, as the projection of a Gaussian whose law does not
       depend on the interaction. Conditioning can only reduce the spread, so
-      the moments of \(\eta_t\) are bounded by those of an explicit Gaussian,
-      uniformly in the interaction.
+      the moments of \(\omega_t\) are bounded by those of an explicit
+      Gaussian, uniformly in the interaction.
     </p>
     <p>
       <div style="display: inline">
@@ -1129,15 +1139,15 @@ t)}{T} \right) .\)
       deviation,
     </p>
     <center>
-      \(\displaystyle \eta_t =\mathbb{E} \left[ \frac{\Phi_t - \frac{t}{T}
+      \(\displaystyle \omega_t =\mathbb{E} \left[ \frac{\Phi_t - \frac{t}{T}
       \Phi_T}{T - t} | \Phi_t
 \right],\)
     </center>
     <p>
       an average of Gaussian deviations, weighted by the posterior law of the
       endpoint (Figure <a href="#fig:bridge-noise">9.1</a>, Exercise <a href="#ex:bridge-noise">9.6</a>).
-      Equivalently \(J_t F_t = K \Phi_t - \eta_t\), i.e. \(F_t = \Phi_t / t -
-      (T / t) \eta_t\). The dictionary with the field is:
+      Equivalently \(J_t F_t = K \Phi_t - \omega_t\), i.e. \(F_t = \Phi_t / t
+      - (T / t) \omega_t\). The dictionary with the field is:
     </p>
     <center>
       <p style="margin-top: 0.5em; margin-bottom: 0.5em">
@@ -1179,7 +1189,7 @@ t)}{T} \right) .\)
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">noise</td>
             <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\mathbb{E}_t [(\Phi_t - \frac{t}{T} \Phi_T) / (T -
             t)]\)</td>
-            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\eta_t =\mathbb{E}_t [S_t^{- 1} \zeta_t]\)</td>
+            <td style="text-align: center; vertical-align: middle; padding-left: 0.6em; padding-right: 0.6em; padding-top: 0.45em; padding-bottom: 0.45em; border-bottom: 1px solid">\(\omega_t =\mathbb{E}_t [S_t^{- 1} \zeta_t]\)</td>
           </tr></tbody>
         </table></font>
       </p>
@@ -1205,15 +1215,15 @@ y)\)
               the bridge follows the straight line \(s \mapsto sy_{\pm} / T\)
               (green), and \(\Phi_t\) deviates from it by a Gaussian amount.
               The observer weighs the endpoints by their posterior law given
-              \(\Phi_t\) (violet), and \((T - t) \eta_t\) is the posterior
-              mean of the deviation (thick arrow). (b) The law of \(\eta_t\)
+              \(\Phi_t\) (violet), and \((T - t) \omega_t\) is the posterior
+              mean of the deviation (thick arrow). (b) The law of \(\omega_t\)
               (solid) has thinner tails than the Gaussian \(N (0,
               \mathcal{R}_t)\) of the deviation with a known endpoint
               (dashed): averaging thins the tails. The peak at \(0\) comes
               from the fields between the wells, where a small change of
               \(\Phi_t\) moves the posterior from one well to the other and
-              \(\eta_t\) hardly changes: a fold of the map \(\Phi_t \mapsto
-              \eta_t\) (Exercise <a href="#ex:bridge-noise">9.6</a>(c)).
+              \(\omega_t\) hardly changes: a fold of the map \(\Phi_t \mapsto
+              \omega_t\) (Exercise <a href="#ex:bridge-noise">9.6</a>(c)).
             </p></font>
           </div></td>
         </tr></tbody>
@@ -1237,8 +1247,8 @@ y)\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:noise-score"></a>\(\displaystyle \eta_t = - J_t \mathrm{D}
-        \log p_t (\Phi_t) . \)</td>
+        <td width="100%" align="center"><a id="eq:noise-score"></a>\(\displaystyle \omega_t = - J_t
+        \mathrm{D} \log p_t (\Phi_t) . \)</td>
         <td align="right">(9.14)</td>
       </tr>
     </table>
@@ -1268,16 +1278,16 @@ y)\)
       </p>
       <p>
         <i><center>
-          \(\displaystyle \eta_t =\mathbb{E} [S_t^{- 1} \zeta_t | \Phi_t],\)
+          \(\displaystyle \omega_t =\mathbb{E} [S_t^{- 1} \zeta_t | \Phi_t],\)
         </center></i>
       </p>
       <p>
-        <i>and \(\eta_t\) is dominated in the convex order by \(N (0,
+        <i>and \(\omega_t\) is dominated in the convex order by \(N (0,
         \mathcal{R}_t)\):</i>
       </p>
       <p>
         <i><center>
-          \(\displaystyle \mathbb{E} \Psi (\eta_t) \leqslant \mathbb{E} \Psi
+          \(\displaystyle \mathbb{E} \Psi (\omega_t) \leqslant \mathbb{E} \Psi
           (\Xi),\)
         </center></i>
       </p>
@@ -1289,7 +1299,7 @@ y)\)
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="eq:noise-mgf"></a>\(\displaystyle \mathbb{E}
-          \mathrm{e}^{u \langle h, \eta_t \rangle} \leqslant \exp
+          \mathrm{e}^{u \langle h, \omega_t \rangle} \leqslant \exp
           \left(
 \frac{u^2}{2} \langle h, \mathcal{R}_t h \rangle \right) :
           \)</td>
@@ -1322,7 +1332,7 @@ y)\)
       conditional Jensen,
     </p>
     <center>
-      \(\displaystyle \Psi (\eta_t) \leqslant \mathbb{E} [\Psi (S_t^{- 1}
+      \(\displaystyle \Psi (\omega_t) \leqslant \mathbb{E} [\Psi (S_t^{- 1}
       \zeta_t) | \Phi_t],\)
     </center>
     <p style="margin-bottom: 1em">
@@ -1349,9 +1359,9 @@ y)\)
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:noise-cov"></a>\(\displaystyle \text{Cov} (\eta_t)
-        =\mathcal{R}_t - S_t^{- 1} J_t \mathbb{E} [\text{Cov}_t]
-J_t S_t^{-
+        <td width="100%" align="center"><a id="eq:noise-cov"></a>\(\displaystyle \text{Cov} (\omega_t)
+        =\mathcal{R}_t - S_t^{- 1} J_t \mathbb{E}
+[\text{Cov}_t] J_t S_t^{-
         1},\)</td>
         <td align="right">(9.17)</td>
       </tr>
@@ -1367,8 +1377,9 @@ J_t S_t^{-
       S_t\), so that
     </p>
     <center>
-      \(\displaystyle \text{Cov} (\eta_t) = KJ_t + J_t \mathbb{E}
-      [\mathrm{D}^2 V_t (\Phi_t)] J_t :\)
+      \(\displaystyle \text{Cov} (\omega_t) = KJ_t + J_t \mathbb{E}
+      [\mathrm{D}^2 V_t (\Phi_t)] J_t
+:\)
     </center>
     <p>
       the free value, corrected by the mean curvature of the effective
@@ -1412,8 +1423,8 @@ J_t S_t^{-
         interaction enters the noise only through the conditioning, and
         conditioning cannot make Gaussian tails worse. This is what makes the
         field equation usable beyond perturbation theory, and it will be
-        crucial for the a priori estimates of the FBSDE in Lecture 7: there
-        the large fields of the forward equation are controlled by the
+        crucial for the a priori estimates of the FBSDE in Lecture <a href="cqft_lecture_7.html">7</a>:
+        there the large fields of the forward equation are controlled by the
         coercivity of the cube against a noise whose tails are known in
         advance.
       </div>
@@ -1426,7 +1437,7 @@ J_t S_t^{-
       <div style="display: inline">
         Compare spectral densities for the heat profile with \(T = \infty\)
         and \(A = |k|^2 + m^2\): white noise \(\xi\) has density \(1\), the
-        GFF has \(A^{- 1}\), the GFF noise \(\eta_t = AX_t\) has \(A
+        GFF has \(A^{- 1}\), the GFF noise \(\omega_t = AX_t\) has \(A
         \mathrm{e}^{- A / t^2}\), and the bound of Proposition <a href="#prop:subgauss">9.6</a>
         is
       </div>
@@ -1444,28 +1455,28 @@ J_t S_t^{-
       Since \(x / (\mathrm{e}^x - 1) \leqslant \mathrm{e}^{- x / 2}\),
       \(\mathcal{R}_t \leqslant t^2 \mathrm{e}^{- A / 2 t^2}\): at resolution
       \(t\) the noise is no larger than \(t\) times a white noise smoothed at
-      scale \(1 / t\). Pointwise, \(\operatorname{Var} \hspace{0.17em} \eta_t
-      (x) \leqslant \mathcal{R}_t (x, x)
-\lesssim t^{d + 2}\), i.e. \(\eta_t
-      (x) = O (t^{1 + d / 2})\). This is the size at scale \(1 / t\) of a
-      distribution of regularity \(- 1 - d / 2\) (\(- 5 / 2\) in \(d = 3\)):
-      seen at its own resolution, the noise is one derivative rougher than
-      white noise (\(- d / 2\)) and two rougher than the GFF (\(1 - d / 2\)),
-      the same as the GFF noise \(A \varphi = A^{1 / 2} \xi\) of the
+      scale \(1 / t\). Pointwise, \(\operatorname{Var} \hspace{0.17em}
+      \omega_t (x) \leqslant \mathcal{R}_t (x, x)
+\lesssim t^{d + 2}\), i.e.
+      \(\omega_t (x) = O (t^{1 + d / 2})\). This is the size at scale \(1 /
+      t\) of a distribution of regularity \(- 1 - d / 2\) (\(- 5 / 2\) in \(d
+      = 3\)): seen at its own resolution, the noise is one derivative rougher
+      than white noise (\(- d / 2\)) and two rougher than the GFF (\(1 - d /
+      2\)), the same as the GFF noise \(A \varphi = A^{1 / 2} \xi\) of the
       Dyson&ndash;Schwinger equation, whatever the interaction. It is not a
-      bound on a limit distribution: \(\eta_t\) is a martingale in \(t\), not
-      the smoothing of a fixed distribution, and on a fixed test function
-      <class style="font-style: normal">(<a href="#eq:noise-mgf">9.16</a>)</class> only gives \(\langle h, \eta_t
-      \rangle = O (t)\), while the free noise stays bounded. For \(\Phi^4_3\)
-      no \(L^2\) limit of the logarithmic derivative is expected [<a href="#bib-ALZ06">ALZ06</a>].
-      Compared with the free noise, the bound is sharp at and above the
-      resolution, where \(\mathcal{R}_t / (A \mathrm{e}^{- A / t^2}) = (1 -
-      \mathrm{e}^{- A / t^2})^{-
-1} \to 1\), and larger by the factor \(t^2 /
-      A\) on the resolved modes. Uniformly in the interaction it cannot be
-      improved: for a pinning potential \(V_T = \frac{\kappa}{2} \| \varphi
-      \|^2\), the covariance of \(\eta_t\) tends to \(\mathcal{R}_t\) as
-      \(\kappa \to \infty\) (Exercise <a href="#ex:subgauss">9.5</a>).
+      bound on a limit distribution: \(\omega_t\) is a martingale in \(t\),
+      not the smoothing of a fixed distribution, and on a fixed test function
+      <class style="font-style: normal">(<a href="#eq:noise-mgf">9.16</a>)</class> only gives \(\langle h,
+      \omega_t \rangle = O (t)\), while the free noise stays bounded. For
+      \(\Phi^4_3\) no \(L^2\) limit of the logarithmic derivative is expected
+      [<a href="#bib-ALZ06">ALZ06</a>]. Compared with the free noise, the bound is sharp
+      at and above the resolution, where \(\mathcal{R}_t / (A \mathrm{e}^{- A
+      / t^2}) = (1 - \mathrm{e}^{- A / t^2})^{-
+1} \to 1\), and larger by the
+      factor \(t^2 / A\) on the resolved modes. Uniformly in the interaction
+      it cannot be improved: for a pinning potential \(V_T = \frac{\kappa}{2}
+      \| \varphi \|^2\), the covariance of \(\omega_t\) tends to
+      \(\mathcal{R}_t\) as \(\kappa \to \infty\) (Exercise <a href="#ex:subgauss">9.5</a>).
     </p>
     <p>
       <div style="display: inline">
@@ -1473,31 +1484,32 @@ J_t S_t^{-
       </div>
       <h5>The noise as a stochastic observable.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        In the language of Lecture 3, the results of this section say the
-        following. The family \((\eta_t)_{t \leqslant T}\) is an observable: a
-        martingale in the filtration of the measurements, whose terminal value
-        is Nelson's Euclidean noise \(\eta_T = K \Phi_T + \mathrm{D} V_T
-        (\Phi_T)\) of <class style="font-style: normal">(<a href="#eq:eta-projection">9.9</a>)</class>. It is expected
-        to be a <em>local</em> observable in the sense of Lecture 3 (Section
-        5.2). Formally, as \(T \to \infty\), \(K \to A\) and the terminal
-        value becomes \((A \varphi) (x) + v' (\varphi (x))\), a function of
-        the field and of its second derivatives at \(x\); one expects germs of
-        the same form, \(A \Phi_t (x) + w_t (\Phi_t (x))\) with a renormalised
-        local nonlinearity \(w_t\) (the Wick cube \(\frac{\lambda}{3} H_3
-        (\cdot ; c_t)\) and a mass counterterm). Since \(\eta_t + J_t F_t = K
-        \Phi_t\), whose limit \(A \Phi_t\) is local and linear, the noise is
-        local exactly when the force is, and for \(\Phi^4_3\) this is the crux
-        of the construction (Remark <a href="#rem:closed-local">9.5</a>). At finite \(T\), and
-        for \(\Phi^4_2\), the noise is also closed; for \(\Phi^4_3\) it is
+        In the language of Lecture <a href="cqft_lecture_3.html">3</a>, the results of this
+        section say the following. The family \((\omega_t)_{t \leqslant T}\)
+        is an observable: a martingale in the filtration of the measurements,
+        whose terminal value is Nelson's Euclidean noise \(\omega_T = K \Phi_T
+        + \mathrm{D} V_T (\Phi_T)\) of <class style="font-style: normal">(<a href="#eq:eta-projection">9.9</a>)</class>.
+        It is expected to be a <em>local</em> observable in the sense of
+        Lecture <a href="cqft_lecture_3.html">3</a> (Section <a href="cqft_lecture_3.html#sec:stoch-observables">5.2</a>). Formally, as \(T
+        \to \infty\), \(K \to A\) and the terminal value becomes \((A \varphi)
+        (x) + v' (\varphi (x))\), a function of the field and of its second
+        derivatives at \(x\); one expects germs of the same form, \(A \Phi_t
+        (x) + w_t (\Phi_t (x))\) with a renormalised local nonlinearity
+        \(w_t\) (the Wick cube \(\frac{\lambda}{3} H_3 (\cdot ; c_t)\) and a
+        mass counterterm). Since \(\omega_t + J_t F_t = K \Phi_t\), whose
+        limit \(A \Phi_t\) is local and linear, the noise is local exactly
+        when the force is, and for \(\Phi^4_3\) this is the crux of the
+        construction (Remark <a href="#rem:closed-local">9.5</a>). At finite \(T\), and for
+        \(\Phi^4_2\), the noise is also closed; for \(\Phi^4_3\) it is
         expected to be local but not closed, like the point evaluations of the
-        free field in Lecture 3. At each resolution it is a random variable,
-        indeed a smooth random field, and every smeared \(\langle h, \eta_t
-        \rangle\) is centred and sub-Gaussian, with variance at most \(\langle
-        h, \mathcal{R}_t h \rangle\), uniformly in the interaction and in the
-        cutoff <class style="font-style: normal">(<a href="#eq:noise-mgf">9.16</a>)</class>. Paired with
-        functionals of the field up to resolution \(t\), it acts as the
-        transpose of the smoothed derivative, \(\langle h, \eta_t \rangle =
-        (\mathrm{D}_{J_t h})^{\top} 1\) in \(L^2 (\nu_t)\) (<a href="#eq:DS-scale">9.7</a>,
+        free field in Lecture <a href="cqft_lecture_3.html">3</a>. At each resolution it is a
+        random variable, indeed a smooth random field, and every smeared
+        \(\langle h, \omega_t \rangle\) is centred and sub-Gaussian, with
+        variance at most \(\langle h, \mathcal{R}_t h \rangle\), uniformly in
+        the interaction and in the cutoff <class style="font-style: normal">(<a href="#eq:noise-mgf">9.16</a>)</class>.
+        Paired with functionals of the field up to resolution \(t\), it acts
+        as the transpose of the smoothed derivative, \(\langle h, \omega_t
+        \rangle = (\mathrm{D}_{J_t h})^{\top} 1\) in \(L^2 (\nu_t)\) (<a href="#eq:DS-scale">9.7</a>,
         <a href="#eq:DS-path">9.13</a>). At its own resolution it has the size of \(A^{1 /
         2} \xi\): formally it behaves like one derivative of white noise,
         <i>whatever the interaction</i>. What may be lost as \(T \to \infty\)
@@ -1505,8 +1517,8 @@ J_t S_t^{-
         \varphi + V' (\varphi)\) is not expected to be a random variable, as
         Nelson anticipated [<a href="#bib-Nel75">Nel75</a>, <a href="#bib-ALZ06">ALZ06</a>]; but its
         conditional expectations at every finite resolution are, and they form
-        a consistent family, \(\eta_s =\mathbb{E}_s \eta_t\) for \(s \leqslant
-        t\).
+        a consistent family, \(\omega_s =\mathbb{E}_s \omega_t\) for \(s
+        \leqslant t\).
       </div>
     </p>
     <p>
@@ -1529,7 +1541,7 @@ J_t S_t^{-
       |f (x) |\)
     </center>
     <p>
-      is convex, so Proposition <a href="#prop:subgauss">9.6</a> dominates \(\| \eta_t
+      is convex, so Proposition <a href="#prop:subgauss">9.6</a> dominates \(\| \omega_t
       \|_{\varepsilon}\) by \(\| \Xi \|_{\varepsilon}\), with \(\Xi \sim N (0,
       \mathcal{R}_t)\). For this Gaussian field, \(\mathcal{R}_t (x, x)
       \lesssim t^{d + 2}\) and
@@ -1542,14 +1554,14 @@ J_t S_t^{-
     <p>
       so Dudley's bound and Gaussian concentration give Gaussian tails for
       \(\| \Xi \|_{\varepsilon}\) at the level \(t^{1 + d / 2} \sqrt{\log (2 +
-      t)}\), uniformly in \(L\). Since \(\eta\) is a martingale, \(\| \eta_s
-      \|_{\varepsilon}\) is a submartingale, and Doob's inequality extends the
-      tails to \(\sup_{s \leqslant t}\). Summing over dyadic \(t\), almost
-      surely
+      t)}\), uniformly in \(L\). Since \(\omega\) is a martingale, \(\|
+      \omega_s \|_{\varepsilon}\) is a submartingale, and Doob's inequality
+      extends the tails to \(\sup_{s \leqslant t}\). Summing over dyadic
+      \(t\), almost surely, with a random constant \(\tilde{C}\),
     </p>
     <center>
-      \(\displaystyle \| \eta_t \|_{\varepsilon} \leqslant C (\omega) t^{1 + d
-      / 2} \sqrt{\log (2 +
+      \(\displaystyle \| \omega_t \|_{\varepsilon} \leqslant \tilde{C} t^{1 +
+      d / 2} \sqrt{\log (2 +
 t)} \qquad \text{for all } t \geqslant 1 \quad (1
       \leqslant t \leqslant T / 2
 \text{ if } T < \infty),\)
@@ -1570,7 +1582,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
       </div>
     </p>
     <center>
-      \(\displaystyle \mathrm{d} \eta_s = (K \dot{Q}_s^{1 / 2} - J_s
+      \(\displaystyle \mathrm{d} \omega_s = (K \dot{Q}_s^{1 / 2} - J_s
       \Upsilon_s) \mathrm{d} W_s,\)
     </center>
     <p>
@@ -1579,7 +1591,7 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
     <center>
       \(\displaystyle \int_0^t J_s \Upsilon_s \mathrm{d} W_s = K \int_0^t
       \dot{Q}_s^{1 / 2}
-\mathrm{d} W_s - \eta_t .\)
+\mathrm{d} W_s - \omega_t .\)
     </center>
     <p>
       It&ocirc;'s isometry, \((a + b)^2 \leqslant 2 a^2 + 2 b^2\) and <class
@@ -1614,10 +1626,10 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
         renormalised effective force \(F_t\), which converts the control of
         \(A \Phi_t - AQ_t F_t\) into control of \(\Phi_t\). This is the
         remaining analytic input, and it is where the large-field problem of
-        Lecture 6 enters. Lecture 7 carries this out: its forward estimate is
-        the forecast form <class style="font-style: normal">(<a href="#eq:field-eq-forecast">9.12</a>)</class> of this
-        field equation, with the explicit force of Lecture 6 in place of the
-        exact one, and with the bound of Proposition <a href="#prop:subgauss">9.6</a>.
+        Lecture <a href="cqft_lecture_6.html">6</a> enters. Lecture <a href="cqft_lecture_7.html">7</a> carries this
+        out: its forward estimate is the forecast form <class style="font-style: normal">(<a href="#eq:field-eq-forecast">9.12</a>)</class>
+        of this field equation, with the explicit force of Lecture <a href="cqft_lecture_6.html">6</a>
+        in place of the exact one, and with the bound of Proposition <a href="#prop:subgauss">9.6</a>.
       </div>
     </p>
     <h3 id="auto-30"><a id="sec:infinite-volume"></a>9.5<span style="margin-left: 1em"></span>Infinite volume<span style="margin-left: 1em"></span></h3>
@@ -1856,7 +1868,7 @@ g, m \rangle - \frac{1}{2}  \langle g,
         to \(\mathbb{E} [\mathrm{D}_{Q_t Kh} G (X_t)] =\mathbb{E} [G (X_t)
         \langle Kh, X_t
 \rangle]\), and compare with the DS characterisation
-        of the GFF in Lecture 2.</font>
+        of the GFF in Lecture <a href="cqft_lecture_2.html">2</a>.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -1868,7 +1880,7 @@ g, m \rangle - \frac{1}{2}  \langle g,
         depends only on \(X_T\). (b) Compute \(\mathcal{R}_t\) for the heat
         profile, and show that \(\mathcal{R}_t \leqslant \frac{4}{3} t^2\) for
         \(T \geqslant 2 t\) and \(\mathcal{R}_t \leqslant t^2\) for \(T =
-        \infty\). (c) Compute the law of \(\eta_t\) for \(V_T = 0\) and for
+        \infty\). (c) Compute the law of \(\omega_t\) for \(V_T = 0\) and for
         \(V_T = \frac{\kappa}{2} \| \varphi \|^2\), and show that its
         covariance tends to \(\mathcal{R}_t\) as \(\kappa \to \infty\). In
         what sense is <class style="font-style: normal">(<a href="#eq:noise-mgf">9.16</a>)</class> sharp? (d)
@@ -1884,9 +1896,9 @@ g, m \rangle - \frac{1}{2}  \langle g,
         the endpoint have the law \(\nu_T = \frac{1}{2}  (\delta_a + \delta_{-
         a})\) (a limit of deep double wells). (a) Show that \(\mathbb{E}
         [\Phi_T | \Phi_t = x] = a \tanh (ax / (T - t))\) and compute
-        \(\eta_t\) as a function of \(\Phi_t\). (b) Check <class style="font-style: normal">(<a
-        href="#eq:noise-cov">9.17</a>)</class>, and that \(\text{Var} (\eta_t) \leqslant
-        \mathcal{R}_t\). (c) Show that \(\eta_t\) is not monotone in
+        \(\omega_t\) as a function of \(\Phi_t\). (b) Check <class style="font-style: normal">(<a
+        href="#eq:noise-cov">9.17</a>)</class>, and that \(\text{Var} (\omega_t) \leqslant
+        \mathcal{R}_t\). (c) Show that \(\omega_t\) is not monotone in
         \(\Phi_t\) when \(ta^2 > T (T - t)\), and relate this to the peak in
         Figure <a href="#fig:bridge-noise">9.1</a>.</font>
       </p>
@@ -1910,9 +1922,9 @@ g, m \rangle - \frac{1}{2}  \langle g,
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:RG-map"></a>\(\displaystyle \mathcal{R}_S (V) := -
-        \log (\mu^S \ast \mathrm{e}^{- V}), \qquad (\mu^S \ast
-u) (\phi) =
+        <td width="100%" align="center"><a id="eq:RG-map"></a>\(\displaystyle \mathfrak{R}_S (V) := -
+        \log (\mu^S \ast \mathrm{e}^{- V}), \qquad (\mu^S
+\ast u) (\phi) =
         \int u (\phi + \zeta) \mu^S (\mathrm{d} \zeta) .\)</td>
         <td align="right">(A.1)</td>
       </tr>
@@ -1922,10 +1934,11 @@ u) (\phi) =
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="eq:semigroup"></a>\(\displaystyle \mathcal{R}_S \circ
-        \mathcal{R}_{S'} =\mathcal{R}_{S + S'} =\mathcal{R}_{S'}
-\circ
-        \mathcal{R}_S, \qquad V_t =\mathcal{R}_{Q_{T, t}} (V_T) .\)</td>
+        <td width="100%" align="center"><a id="eq:semigroup"></a>\(\displaystyle \mathfrak{R}_S \circ
+        \mathfrak{R}_{S'} =\mathfrak{R}_{S + S'}
+=\mathfrak{R}_{S'} \circ
+        \mathfrak{R}_S, \qquad V_t =\mathfrak{R}_{Q_{T, t}}
+(V_T) .\)</td>
         <td align="right">(A.2)</td>
       </tr>
     </table>
@@ -1978,7 +1991,7 @@ u) (\phi) =
     <h3 id="auto-36"><a id="sec:pert"></a>A.2<span style="margin-left: 1em"></span>Perturbation theory and
     counterterms<span style="margin-left: 1em"></span></h3>
     <p>
-      Expanding \(V_t =\mathcal{R}_{Q_{T, t}} (V_T)\) in cumulants of the
+      Expanding \(V_t =\mathfrak{R}_{Q_{T, t}} (V_T)\) in cumulants of the
       Gaussian increment \(\zeta \sim \mu^{Q_{T, t}}\) gives
     </p>
     <table width="100%">
@@ -1991,9 +2004,9 @@ u) (\phi) =
       </tr>
     </table>
     <p>
-      For <a href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a>, Exercise <a href="cqft_lecture_3.html#ex:hermite-flow">6.1</a> of Lecture 3 shows
-      that Gaussian convolution simply <em>lowers the Wick ordering</em>:
-      since \(Q_{T, t}  (x, x) = c_T - c_t\),
+      For <a href="cqft_lecture_4.html#eq:phi4-VT">(7.1)</a>, Exercise <a href="cqft_lecture_3.html#ex:hermite-flow">6.1</a> of Lecture <a href="cqft_lecture_3.html">3</a>
+      shows that Gaussian convolution simply <em>lowers the Wick
+      ordering</em>: since \(Q_{T, t}  (x, x) = c_T - c_t\),
     </p>
     <table width="100%">
       <tr>
@@ -2008,7 +2021,7 @@ H_2 (\phi (x) ;
       Here \(\gamma_T = O (\lambda^2)\) is kept for later use. At first order
       the effective potential is the Wick-ordered potential at the current
       resolution. This is the dual statement of Proposition <a href="cqft_lecture_3.html#prop:wick-obs">6.1</a>
-      of Lecture 3: \(\int H_4  (X_t ; c_t)\) is an observable.
+      of Lecture <a href="cqft_lecture_3.html">3</a>: \(\int H_4  (X_t ; c_t)\) is an observable.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">
@@ -2047,7 +2060,7 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
     </center>
     <p style="margin-bottom: 1em">
       Then compute the variance in <class style="font-style: normal">(<a href="#eq:cumulants">A.4</a>)</class>
-      with Lemma <a href="cqft_lecture_2.html#lem:hermite">3.8</a> of Lecture 2.<span style="margin-left: 1em"></span>\(\Box\)
+      with Lemma <a href="cqft_lecture_2.html#lem:hermite">3.8</a> of Lecture <a href="cqft_lecture_2.html">2</a>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
       <table style="width: 100%">
@@ -2168,9 +2181,9 @@ H_{4 - k}  (\phi ; c_t), \qquad s = S (x,
         </strong><class style="font-style: normal"><strong>(Power counting) </strong></class><a
         id="ex:power-counting"></a> Show that the superficial degree of divergence of a connected
         graph of \(\Phi^4_d\) with \(n\) vertices and \(E\) external legs is
-        \(\omega = d - \frac{d - 2}{2} E + (d - 4) n\). Deduce that in \(d =
-        3\) the only divergent graphs with loops are the two-point graphs with
-        \(n \leqslant 2\) (the tadpole and double tadpole, removed by Wick
+        \(D_G = d - \frac{d - 2}{2} E + (d - 4) n\). Deduce that in \(d = 3\)
+        the only divergent graphs with loops are the two-point graphs with \(n
+        \leqslant 2\) (the tadpole and double tadpole, removed by Wick
         ordering, and the sunset) and vacuum graphs with \(n \leqslant
         3\).</font>
       </p>
@@ -2409,11 +2422,11 @@ W_t \rangle\). It&ocirc;'s
       the total entropy is controlled by the entropy that is still hidden at
       resolution \(t\). The low-resolution part of the localisation is where
       the measure may be multimodal, and the condition says that it does not
-      hide too much. With the Brascamp&ndash;Lieb bounds of Section 8.4 the
-      conditional covariance is controlled by the Hessian of \(V_T\) when this
-      is convex; for \(\Phi^4_3\) it is not, and the condition is a statement
-      about the effective potentials, i.e. about the renormalisation group
-      flow itself.
+      hide too much. With the Brascamp&ndash;Lieb bounds of Section <a href="cqft_lecture_4.html#sec:moments">8.4</a>
+      the conditional covariance is controlled by the Hessian of \(V_T\) when
+      this is convex; for \(\Phi^4_3\) it is not, and the condition is a
+      statement about the effective potentials, i.e. about the renormalisation
+      group flow itself.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em">

@@ -125,15 +125,15 @@
     a noisy measurement. Since <math|\<psi\><rsub|q>=\<bbb-E\><rsub|q>*\<Phi\><rsub|\<infty\>>>,
 
     <\equation*>
-      \<eta\><rsub|q>\<assign\>K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>:
+      \<omega\><rsub|q>\<assign\>K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>=\<bbb-E\><rsub|q><around|[|B<rsub|q-q<rsub|0>>|]>:
     </equation*>
 
     the noise observable of Lecture<nbsp>5 is the <strong|filtered
     measurement noise>.
 
     <\lemma*>
-      For convex <math|\<Psi\>>, <math|\<bbb-E\>*\<Psi\><around|(|\<eta\><rsub|q>|)>\<leqslant\>\<bbb-E\>*\<Psi\><around|(|B<rsub|q-q<rsub|0>>|)>>,
-      whatever the interaction. So <math|\<zeta\><rsub|q>=C<rsub|q>*\<eta\><rsub|q>>
+      For convex <math|\<Psi\>>, <math|\<bbb-E\>*\<Psi\><around|(|\<omega\><rsub|q>|)>\<leqslant\>\<bbb-E\>*\<Psi\><around|(|B<rsub|q-q<rsub|0>>|)>>,
+      whatever the interaction. So <math|\<zeta\><rsub|q>=C<rsub|q>*\<omega\><rsub|q>>
       has
 
       <\equation*>
@@ -152,13 +152,13 @@
     <mytitle|The field equation>
 
     Lecture<nbsp>5, forecast form, in this profile:
-    <math|K<rsub|q<rsub|0>>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>=\<eta\><rsub|q>>,
+    <math|K<rsub|q<rsub|0>>\<psi\><rsub|q>+\<cal-F\><rsub|q><around|(|\<psi\><rsub|q>|)>=\<omega\><rsub|q>>,
     with the exact (unknown) force. Explicit force
     <math|<wide|\<cal-F\>|\<bar\>><rsub|q>=K<rsub|q>\<varrho\><rsub|q>+<frac|\<lambda\>|3>y<rsup|3>>,
     <math|\<psi\>=Y+Z>:
 
     <\equation*>
-      <frame|<space|0.27em>K<rsub|q<rsub|0>>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=\<eta\><rsub|q>+<around|(|q-q<rsub|0>|)>*Z<rsub|q><space|0.27em>>
+      <frame|<space|0.27em>K<rsub|q<rsub|0>>Y<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>=\<omega\><rsub|q>+<around|(|q-q<rsub|0>|)>*Z<rsub|q><space|0.27em>>
     </equation*>
 
     <\itemize>
@@ -169,7 +169,7 @@
       <math|<around|(|q-q<rsub|0>|)>*Z<rsub|q>>.
 
       <item>Pointwise bounds need a smooth noise:
-      <math|\<zeta\>=C<rsub|q>\<eta\>>, <math|V=Y+\<varrho\><around|(|Y|)>-\<zeta\>>,
+      <math|\<zeta\>=C<rsub|q>\<omega\>>, <math|V=Y+\<varrho\><around|(|Y|)>-\<zeta\>>,
 
       <\equation*>
         K<rsub|q<rsub|0>>*V<rsub|q>+<frac|\<lambda\>|3>*Y<rsub|q><rsup|3>=<around|(|q-q<rsub|0>|)>*<around|(|\<zeta\><rsub|q>-\<varrho\><rsub|q><around|(|Y<rsub|q>|)>+Z<rsub|q>|)>.
@@ -869,7 +869,7 @@
     </equation*>
 
     The defect on all fields: <math|<around|\||e<rsub|s><around|(|y|)>|\|>\<leqslant\>
-    C\<lambda\><rsup|5>s<rsup|-3><around|\<\|\|\>|\<pi\><rsub|s>y|\<\|\|\>><rsub|4><rsup|4>+C\<lambda\><rsup|3>s<rsup|-5/2><around|\<\|\|\>|t<rsub|s><around|(|y|)>|\<\|\|\>><rsub|6><rsup|6>>.
+    C\<lambda\><rsup|5>s<rsup|-3><around|\<\|\|\>|\<pi\><rsub|s>y|\<\|\|\>><rsub|4><rsup|4>+C\<lambda\><rsup|4>s<rsup|-2><around|\<\|\|\>|\<pi\><rsub|s>y|\<\|\|\>><rsub|2><rsup|2>+C\<lambda\><rsup|3>s<rsup|-5/2><around|\<\|\|\>|t<rsub|s><around|(|y|)>|\<\|\|\>><rsub|6><rsup|6>>.
     So both sides are bounded uniformly in <math|N>, by the energies under
     <math|\<bbb-P\>> and by Itô under <math|\<bbb-R\>>.
 
@@ -999,7 +999,7 @@
   </hidden>|<\hidden>
     <mytitle|The field equation at resolution <math|q>>
 
-    In the limit: <math|\<eta\><rsub|q>=K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>,
+    In the limit: <math|\<omega\><rsub|q>=K<rsub|q>\<Phi\><rsub|q>-<around|(|q-q<rsub|0>|)>*\<psi\><rsub|q>>,
     <math|F<rsub|q>=K<rsub|q><around|(|\<psi\><rsub|q>-\<Phi\><rsub|q>|)>>,
     <math|J<rsub|q>=<around|(|q-q<rsub|0>|)>*C<rsub|q>\<to\>I>.
 
@@ -1008,16 +1008,16 @@
       distributions,
 
       <\equation*>
-        K<rsub|q<rsub|0>>*\<Phi\><rsub|q>=J<rsub|q>*F<rsub|q>+\<eta\><rsub|q>,<space|2em>\<bbb-E\>*D<rsub|J<rsub|q>*h>*G<around|(|\<Phi\><rsub|q>|)>=\<bbb-E\><around|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>|]>.
+        K<rsub|q<rsub|0>>*\<Phi\><rsub|q>=J<rsub|q>*F<rsub|q>+\<omega\><rsub|q>,<space|2em>\<bbb-E\>*D<rsub|J<rsub|q>*h>*G<around|(|\<Phi\><rsub|q>|)>=\<bbb-E\><around|[|G<around|(|\<Phi\><rsub|q>|)><around|\<langle\>|\<omega\><rsub|q>,h|\<rangle\>>|]>.
       </equation*>
 
       <math|<around|\<langle\>|F,h|\<rangle\>>>,
-      <math|<around|\<langle\>|\<eta\>,h|\<rangle\>>> are martingales, and
+      <math|<around|\<langle\>|\<omega\>,h|\<rangle\>>> are martingales, and
       <math|<around|\<\|\|\>|<around|\<langle\>|F<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,h|\<rangle\>>|\<\|\|\>><rsub|L<rsup|2>>\<lesssim\><around|\<\|\|\>|h|\<\|\|\>><rsub|H<rsup|2>>*q<rsup|-1/4>>.
     </theorem*>
 
     <\itemize>
-      <item><strong|Proof of DS:> <math|\<eta\><rsub|q>=\<bbb-E\><rsub|q>*B<rsub|q-q<rsub|0>>>
+      <item><strong|Proof of DS:> <math|\<omega\><rsub|q>=\<bbb-E\><rsub|q>*B<rsub|q-q<rsub|0>>>
       and <math|\<Phi\><rsub|q>=J<rsub|q>*\<Phi\><rsub|\<infty\>>+C<rsub|q>*B<rsub|q-q<rsub|0>>>:
       Gaussian integration by parts in <math|B>.
 
@@ -1056,7 +1056,7 @@
     source.
 
     An exact identity, with no cube and no derivative:
-    <math|<wide|\<Phi\>|^>=Y<rsub|q>+Z<rsub|q>+<around|(|\<eta\><rsub|q>-B<rsub|q-q<rsub|0>>|)>/<around|(|q-q<rsub|0>|)>>.
+    <math|<wide|\<Phi\>|^>=Y<rsub|q>+Z<rsub|q>+<around|(|\<omega\><rsub|q>-B<rsub|q-q<rsub|0>>|)>/<around|(|q-q<rsub|0>|)>>.
   </hidden>|<\hidden>
     <mytitle|Quartic tails: closing>
 
@@ -1097,7 +1097,7 @@
     <math|q<rsub|i>\<leqslant\> q>:
 
     <\equation*>
-      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\><around|[|G<around|\<langle\>|\<eta\><rsub|q>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|(|<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,J<rsub|q>h|\<rangle\>>|)>|]>+O<around|(|q<rsup|-1/4>|)>.
+      \<bbb-E\><big|sum><rsub|i>\<partial\><rsub|i>g<around|\<langle\>|J<rsub|q<rsub|i>>h,h<rsub|i>|\<rangle\>>=\<bbb-E\><around|[|G<around|\<langle\>|\<omega\><rsub|q>,h|\<rangle\>>|]>=\<bbb-E\><around|[|G<around|(|<around|\<langle\>|\<Phi\><rsub|q>,K<rsub|q<rsub|0>>h|\<rangle\>>+<around|\<langle\>|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>,J<rsub|q>h|\<rangle\>>|)>|]>+O<around|(|q<rsup|-1/4>|)>.
     </equation*>
 
     So the explicit force <math|<wide|\<cal-F\>|\<bar\>><rsub|q><around|(|Y<rsub|q>|)>>

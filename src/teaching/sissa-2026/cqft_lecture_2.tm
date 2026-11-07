@@ -15,8 +15,8 @@
     Källén\ULehmann representation, and define its local (Wick) operators. We
     prove that the Dyson\USchwinger equation characterises the GFF among
     probability measures on distributions. Stochastic quantisation is treated
-    in Lecture<nbsp>3. Exercises are collected at the end. These notes follow
-    the slides of Lecture<nbsp>2.
+    in Lecture<nbsp><hlink|3|cqft_lecture_3.tm>. Exercises are collected at
+    the end. These notes follow the slides of Lecture<nbsp>2.
   </abstract>>
 
   <\table-of-contents|toc>
@@ -73,15 +73,16 @@
 
   <section*|Introduction>
 
-  In Lecture<nbsp>1 we saw that, after the passage to imaginary time, a
-  relativistic quantum field is encoded in a probability measure on
-  distributions satisfying the Osterwalder\USchrader axioms, formally
-  <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>\<propto\>exp
+  In Lecture<nbsp><hlink|1|cqft_lecture_1.tm> we saw that, after the passage
+  to imaginary time, a relativistic quantum field is encoded in a probability
+  measure on distributions satisfying the Osterwalder\USchrader axioms,
+  formally <math|\<mu\><around|(|\<mathd\>\<varphi\>|)>\<propto\>exp
   <around|(|-<big|int><around|[|<frac|1|2><around|\||\<nabla\>*\<varphi\>|\|><rsup|2>+<frac|1|2>*m<rsup|2>*\<varphi\><rsup|2>+V<around|(|\<varphi\>|)>|]>|)>*\<cal-D\>*\<varphi\>>
   (Eq.<nbsp><hlink|(2.13)|cqft_lecture_1.tm#eq:path-integral>). In this
   lecture we treat its Gaussian part rigorously. Conventions are those of
-  Lecture<nbsp>1. Sections, equations and exercises keep the numbering of the
-  notes, so that Ÿ1\U2 refer to the notes of Lecture<nbsp>1.
+  Lecture<nbsp><hlink|1|cqft_lecture_1.tm>. Sections, equations and exercises
+  keep the numbering of the notes, so that Ÿ1\U2 refer to the notes of
+  Lecture<nbsp><hlink|1|cqft_lecture_1.tm>.
 
   <assign|section-nr|2><section|The Gaussian free field><label|sec:gff>
 
@@ -320,11 +321,12 @@
   restriction of the GFF is Gaussian with covariance
   <math|<around|(|2*\<omega\>|)><rsup|-1>>, the ground state measure of the
   free Hamiltonian in the Schrödinger representation
-  (Exercise<nbsp><hlink|4.4|cqft_lecture_3.tm#ex:slices> of Lecture<nbsp>3).
-  The GFF is also the continuum limit of the lattice model
-  <hlink|(2.12)|cqft_lecture_1.tm#eq:spin-system> with <math|V=0> (for
-  <math|d=2>; in general <math|d> see Exercise<nbsp><hlink|2.3|cqft_lecture_1.tm#ex:lattice-action>
-  and Exercise<nbsp><reference|ex:lattice-gff>).
+  (Exercise<nbsp><hlink|4.4|cqft_lecture_3.tm#ex:slices> of
+  Lecture<nbsp><hlink|3|cqft_lecture_3.tm>). The GFF is also the continuum
+  limit of the lattice model <hlink|(2.12)|cqft_lecture_1.tm#eq:spin-system>
+  with <math|V=0> (for <math|d=2>; in general <math|d> see
+  Exercise<nbsp><hlink|2.3|cqft_lecture_1.tm#ex:lattice-action> and
+  Exercise<nbsp><reference|ex:lattice-gff>).
 
   <\remark>
     <dueto|Nelson's Markov property><label|rem:markov> For
@@ -523,10 +525,10 @@
     follows from Proposition<nbsp><reference|prop:RP> for each mass
     <math|M\<gtr\>0> and <math|\<rho\>\<geqslant\>0>. (If only the first
     condition holds, the measure may still exist and satisfy the other
-    axioms, but (OS1) in the form of Lecture<nbsp>1 can fail: for the
-    massless field in <math|d\<geqslant\>3>, <math|f=\<mathi\>g> with
-    <math|g\<geqslant\>0> supported in a ball of radius <math|R> gives
-    <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|g,C*g|\<rangle\>>>>
+    axioms, but (OS1) in the form of Lecture<nbsp><hlink|1|cqft_lecture_1.tm>
+    can fail: for the massless field in <math|d\<geqslant\>3>,
+    <math|f=\<mathi\>g> with <math|g\<geqslant\>0> supported in a ball of
+    radius <math|R> gives <math|<around|\||<wide|\<mu\>|^><around|(|f|)>|\|>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|g,C*g|\<rangle\>>>>
     with <math|<around|\<langle\>|g,C*g|\<rangle\>>\<sim\>R<rsup|d+2>>.) It
     reconstructs the generalised free field of
     Exercise<nbsp><hlink|1.6|cqft_lecture_1.tm#ex:gen-free>. Its
@@ -1070,9 +1072,10 @@
     <math|P<around|(|\<varphi\>|)><rsub|2>> were obtained by point splitting
     by Schrader<nbsp><cite|Sch74>; the renormalised cube of<nbsp><cite|GH21>
     is approximated in the spirit of the OPE; convergence of the OPE in
-    perturbation theory is proved in<nbsp><cite|HK12>. Lecture<nbsp>3
-    describes the OPE at the level of stochastic observables, where the
-    singular coefficients are explicit at every scale.
+    perturbation theory is proved in<nbsp><cite|HK12>.
+    Lecture<nbsp><hlink|3|cqft_lecture_3.tm> describes the OPE at the level
+    of stochastic observables, where the singular coefficients are explicit
+    at every scale.
   </remark>
 
   The DS equation is not only satisfied by the GFF; it characterises it.
@@ -1138,14 +1141,15 @@
 
   <subsection|Outlook>
 
-  In Lecture<nbsp>3 we obtain the GFF as the stationary marginal of the
-  parabolic and elliptic stochastic quantisation equations, and we decompose
-  it along a scale parameter: the field at resolution <math|t> is a Gaussian
-  martingale, whose terminal value is the GFF. In Lecture<nbsp>4 interactions
-  are introduced through the Polchinski equation for the effective potential,
-  and through its probabilistic form, a forward\Ubackward stochastic
-  differential equation for the field at increasing resolution. These tools
-  can be used to construct <math|\<Phi\><rsup|4><rsub|2>> and
+  In Lecture<nbsp><hlink|3|cqft_lecture_3.tm> we obtain the GFF as the
+  stationary marginal of the parabolic and elliptic stochastic quantisation
+  equations, and we decompose it along a scale parameter: the field at
+  resolution <math|t> is a Gaussian martingale, whose terminal value is the
+  GFF. In Lecture<nbsp><hlink|4|cqft_lecture_4.tm> interactions are
+  introduced through the Polchinski equation for the effective potential, and
+  through its probabilistic form, a forward\Ubackward stochastic differential
+  equation for the field at increasing resolution. These tools can be used to
+  construct <math|\<Phi\><rsup|4><rsub|2>> and
   <math|\<Phi\><rsup|4><rsub|3>>. On <math|\<bbb-T\><rsup|2>> the
   Wick-ordered interaction <math|\<lambda\>*<big|int>:\<varphi\><rsup|4>:\<mathd\>x>
   suffices, and the measure satisfies the renormalised DS
@@ -1318,9 +1322,9 @@
     and check that the empirical variance of <math|\<varphi\><rsub|u>> grows
     like <math|<frac|1|2*\<pi\>>*log N>. (b) Implement an explicit Euler
     scheme for the lattice version of <hlink|(4.1)|cqft_lecture_3.tm#eq:SQE>
-    in Lecture<nbsp>3 with <math|V=0> (mind the stability constraint
-    <math|\<Delta\>*t\<lesssim\>\<varepsilon\><rsup|2>>), and check that the
-    variance of the <math|k>-th Fourier mode relaxes to
+    in Lecture<nbsp><hlink|3|cqft_lecture_3.tm> with <math|V=0> (mind the
+    stability constraint <math|\<Delta\>*t\<lesssim\>\<varepsilon\><rsup|2>>),
+    and check that the variance of the <math|k>-th Fourier mode relaxes to
     <math|\<lambda\><rsub|k><rsup|-1>> at rate <math|2*\<lambda\><rsub|k>>,
     with <math|\<lambda\><rsub|k>> the eigenvalues of
     <math|m<rsup|2>-\<Delta\><rsub|\<varepsilon\>>>. (c) Add
@@ -1370,7 +1374,7 @@
   inequalities:><nbsp><cite|AL07|PZ32|CW01|NP05|AZ96>. <em|Euclidean free
   field and Markov property:><nbsp><cite|Sym66|Sym69|Nel73a|Nel73b|GRS75|GJ87|Sim74|Gue06>.
   <em|Path and loop representations:><nbsp><cite|Sym69|BFS82|Dyn84|LW04|LJ10|LJ11|Lup16|Wer16|QW19|WP21>.
-  <em|Stochastic quantisation (Lecture<nbsp>3):>
+  <em|Stochastic quantisation (Lecture<nbsp><hlink|3|cqft_lecture_3.tm>):>
   reviews<nbsp><cite|DH87|DH88|Gub25>; parabolic<nbsp><cite|PW81|JLM85|AR91|DPD03|DPZ14>;
   singular SPDEs<nbsp><cite|Hai14|GIP15|CC18|MW17|HRW12>; construction of
   <math|\<Phi\><rsup|4><rsub|3>> via dynamics and variational

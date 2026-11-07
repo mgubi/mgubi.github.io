@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|source>
 
@@ -8,8 +8,8 @@
       <src-package|cqft-notes|2.0>
 
       <src-purpose|HTML export settings for the SISSA lecture notes
-      <em|A constructive introduction to quantum field theory>, on top of the
-      package max-html of the max-html plugin.>
+      <with|font-shape|italic|"A constructive introduction to quantum field
+      theory">, on top of the package max-html of the max-html plugin.>
 
       <src-copyright|2026|Massimiliano Gubinelli>
     </src-title>
@@ -19,10 +19,10 @@
 
   <\active*>
     <\src-comment>
-      Stylesheets and scripts next to the HTML pages: those of max-html
-      (from the plugin's resources folder). On the website, the course
-      stylesheet sets the website's fonts; on their own, the pages use the
-      default font of max-html.css.
+      Stylesheets and scripts next to the HTML pages: those of max-html (from
+      the plugin's resources folder). On the website, the course stylesheet
+      sets the website's fonts; on their own, the pages use the default font
+      of max-html.css.
     </src-comment>
   </active*>
 
@@ -44,10 +44,10 @@
 
   <\active*>
     <\src-comment>
-      Key results: the most important statements of each lecture are
-      wrapped in key-result, a frame with a coloured rule on the left and a
-      tinted background. It may break across pages. Tune its look with the
-      variables below; on export it becomes a block of class key-result.
+      Key results: the most important statements of each lecture are wrapped
+      in key-result, a frame with a coloured rule on the left and a tinted
+      background. It may break across pages. Tune its look with the variables
+      below; on export it becomes a block of class key-result.
     </src-comment>
   </active*>
 
@@ -87,9 +87,9 @@
   <\active*>
     <\src-comment>
       Text tables (dictionaries, weights, counts): data-table takes a tformat
-      whose table has a header row; it draws rules above and below the
-      header and below the last row, centres the cells vertically, and uses
-      the padding data-table-hsep, data-table-vsep, the rule width
+      whose table has a header row; it draws rules above and below the header
+      and below the last row, centres the cells vertically, and uses the
+      padding data-table-hsep, data-table-vsep, the rule width
       data-table-rule and the relative font size data-table-size. Extra
       cwith's in the argument (e.g. column widths) are kept.
     </src-comment>
@@ -109,15 +109,16 @@
     <\src-comment>
       Title block. Every lecture uses the header
       <doc-data|<doc-title|<cqft-course-name>>|<doc-subtitle|...>|<doc-author|<cqft-author-data>>|<doc-date|...>>:
-      the course name and the author are defined once here. The course title (doc-title) smaller, the lecture title
-      (doc-subtitle) more prominent, both left aligned together with the
-      author, the affiliation and the date. The abstract keeps the standard
-      centred and justified layout. The sizes are magnifications relative to
-      the normal font.
+      the course name and the author are defined once here. The course title
+      (doc-title) smaller, the lecture title (doc-subtitle) more prominent,
+      both left aligned together with the author, the affiliation and the
+      date. The abstract keeps the standard centred and justified layout. The
+      sizes are magnifications relative to the normal font.
     </src-comment>
   </active*>
 
-  <assign|cqft-course-name|<macro|A Constructive Introduction to Quantum Field Theory>>
+  <assign|cqft-course-name|<macro|A Constructive Introduction to Quantum
+  Field Theory>>
 
   <assign|cqft-author-data|<macro|<author-data|<author-name|M.
   Gubinelli>|<author-affiliation|Mathematical Institute, University of

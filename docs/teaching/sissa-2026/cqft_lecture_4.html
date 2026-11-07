@@ -86,15 +86,15 @@
     <div style="margin-left: 60px; margin-right: 60px">
       <p>
         <font style="font-size: 84.1%">Building on the scale decomposition and the stochastic
-        observables of Lecture 3, we introduce interactions. The interacting
-        measure can be generated in three ways: as a renormalisation group
-        decomposition of the covariance, as an optimal control problem, whose
-        dynamic programming equation is the Polchinski equation, and as a
-        filtering problem: the field at resolution \(t\) is a noisy
-        observation of the terminal field, the Polchinski process is this
-        observation written in its own filtration, and backward in resolution
-        its dynamics is linear, with Gaussian transitions, started from the
-        interacting measure. The three views meet in one
+        observables of Lecture <a href="cqft_lecture_3.html">3</a>, we introduce interactions. The
+        interacting measure can be generated in three ways: as a
+        renormalisation group decomposition of the covariance, as an optimal
+        control problem, whose dynamic programming equation is the Polchinski
+        equation, and as a filtering problem: the field at resolution \(t\) is
+        a noisy observation of the terminal field, the Polchinski process is
+        this observation written in its own filtration, and backward in
+        resolution its dynamics is linear, with Gaussian transitions, started
+        from the interacting measure. The three views meet in one
         forward&ndash;backward system for a field and a force, and its natural
         coordinates are the force coordinates: the forward equation loses its
         drift, and the conditional covariance becomes the propagator. All this
@@ -103,19 +103,19 @@
         function generates the canonical transformation to force coordinates,
         the Legendre transform of the log-partition function of the filter
         gives the effective average action, and its flow is the Wetterich
-        equation. Lecture 5 continues with the observables of the interacting
-        theory, the Euclidean field equation and Nelson's Euclidean noise, the
-        field equation at every resolution with its sub-Gaussian noise, and
-        infinite volume, and contains the appendices. The treatment is formal:
-        we compute as if all objects were smooth and integrable, and we
-        indicate where the real difficulties lie.</font>
+        equation. Lecture <a href="cqft_lecture_5.html">5</a> continues with the observables of the
+        interacting theory, the Euclidean field equation and Nelson's
+        Euclidean noise, the field equation at every resolution with its
+        sub-Gaussian noise, and infinite volume, and contains the appendices.
+        The treatment is formal: we compute as if all objects were smooth and
+        integrable, and we indicate where the real difficulties lie.</font>
       </p>
     </div>
     <div style="margin-bottom: 1em; margin-left: 60px; margin-right: 60px">
       <p>
-        <font style="font-size: 84.1%">The results presented in Lectures 4&ndash;7 were obtained
-        recently, with the use of AI, in collaboration with Sarah-Jean
-        Meyer.</font>
+        <font style="font-size: 84.1%">The results presented in Lectures 4&ndash;<a href="cqft_lecture_7.html">7</a>
+        were obtained recently, with the use of AI, in collaboration with
+        Sarah-Jean Meyer.</font>
       </p>
     </div>
     <div class="max-toc">
@@ -271,14 +271,15 @@
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
     <p>
-      In Lecture 3 we decomposed the Gaussian free field along a resolution
-      parameter and took as primary objects the stochastic observables:
-      martingales in the filtration of finite-resolution measurements [<a
-      href="#bib-BCG26">BCG26</a>]. In this lecture we introduce interactions, and we tell
-      one story from three points of view: renormalisation, optimal control
-      and filtering. See also [<a href="#bib-Pol84">Pol84</a>, <a href="#bib-BK87">BK87</a>, <a href="#bib-Sal99">Sal99</a>,
-      <a href="#bib-BBD24">BBD24</a>] for the renormalisation group side and [<a href="#bib-BG20">BG20</a>,
-      <a href="#bib-BG23">BG23</a>] for the variational side.
+      In Lecture <a href="cqft_lecture_3.html">3</a> we decomposed the Gaussian free field along a
+      resolution parameter and took as primary objects the stochastic
+      observables: martingales in the filtration of finite-resolution
+      measurements [<a href="#bib-BCG26">BCG26</a>]. In this lecture we introduce
+      interactions, and we tell one story from three points of view:
+      renormalisation, optimal control and filtering. See also [<a href="#bib-Pol84">Pol84</a>,
+      <a href="#bib-BK87">BK87</a>, <a href="#bib-Sal99">Sal99</a>, <a href="#bib-BBD24">BBD24</a>] for the
+      renormalisation group side and [<a href="#bib-BG20">BG20</a>, <a href="#bib-BG23">BG23</a>]
+      for the variational side.
     </p>
     <p>
       <div style="display: inline">
@@ -291,12 +292,12 @@
         Section <a href="#sec:wetterich">8</a> finds the natural coordinates, first in terms
         of forces, propagators and covariances, then in terms of potentials,
         where the value function generates the canonical transformation and
-        the Legendre transform leads to the Wetterich equation. Lecture 5
-        continues with observables, the Euclidean field equation and Nelson's
-        Euclidean noise, the field equation at every resolution with its
-        sub-Gaussian noise, the Dyson&ndash;Schwinger equations, also in
-        pathwise form, and infinite volume, and contains the appendices: the
-        algebra of the flow, perturbation theory and counterterms, and the
+        the Legendre transform leads to the Wetterich equation. Lecture <a
+        href="cqft_lecture_5.html">5</a> continues with observables, the Euclidean field equation
+        and Nelson's Euclidean noise, the field equation at every resolution
+        with its sub-Gaussian noise, the Dyson&ndash;Schwinger equations, also
+        in pathwise form, and infinite volume, and contains the appendices:
+        the algebra of the flow, perturbation theory and counterterms, and the
         functional inequalities that follow from the localisation.
       </div>
     </p>
@@ -323,15 +324,16 @@
       </div>
       <h5>Conventions.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        As in Lectures 1&ndash;3: \(\mathcal{M}=\mathbb{T}^d_L\) or
-        \(\mathbb{R}^d\), \(A = m^2 - \Delta\), \(C = A^{- 1}\) with kernel
-        \(G\), \(\mu_m\) the GFF, \(\langle f, g \rangle = \int fg\) for real
-        functions. For a functional \(F\) on smooth fields, \(\mathrm{D} F
-        (\varphi) \in \mathcal{S}' (\mathcal{M})\) and \(\mathrm{D}^2 F
-        (\varphi)\) are its first and second derivatives, \(\mathrm{D}_h F =
-        \langle \mathrm{D} F, h \rangle\). \(H_n  (a ; c)\) are the Hermite
-        polynomials of variance \(c\), and \(\mu^Q\) is the centred Gaussian
-        measure with covariance \(Q\).
+        As in Lectures <a href="cqft_lecture_1.html">1</a>&ndash;<a href="cqft_lecture_3.html">3</a>:
+        \(\mathcal{M}=\mathbb{T}^d_L\) or \(\mathbb{R}^d\), \(A = m^2 -
+        \Delta\), \(C = A^{- 1}\) with kernel \(G\), \(\mu_m\) the GFF,
+        \(\langle f, g \rangle = \int fg\) for real functions. For a
+        functional \(F\) on smooth fields, \(\mathrm{D} F (\varphi) \in
+        \mathcal{S}' (\mathcal{M})\) and \(\mathrm{D}^2 F (\varphi)\) are its
+        first and second derivatives, \(\mathrm{D}_h F = \langle \mathrm{D} F,
+        h \rangle\). \(H_n  (a ; c)\) are the Hermite polynomials of variance
+        \(c\), and \(\mu^Q\) is the centred Gaussian measure with covariance
+        \(Q\).
       </div>
     </p>
     <p>
@@ -343,12 +345,12 @@
       </div>
       <h5>Acknowledgements.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
-        The results presented in Lectures 4&ndash;7 are joint work with
-        Sarah-Jean Meyer, obtained recently with the use of AI. M. Gubinelli
-        is partly supported by UK Research and Innovation via the grant
-        &ldquo;StochFields&rdquo; EP/Z534328/1 and by the Simons Collaboration
-        on Probabilistic Paths to QFT. S.-J. Meyer is supported by the grant
-        &ldquo;StochFields&rdquo; EP/Z534328/1.
+        The results presented in Lectures 4&ndash;<a href="cqft_lecture_7.html">7</a> are joint
+        work with Sarah-Jean Meyer, obtained recently with the use of AI. M.
+        Gubinelli is partly supported by UK Research and Innovation via the
+        grant &ldquo;StochFields&rdquo; EP/Z534328/1 and by the Simons
+        Collaboration on Probabilistic Paths to QFT. S.-J. Meyer is supported
+        by the grant &ldquo;StochFields&rdquo; EP/Z534328/1.
       </div>
     </p>
     <h2 id="auto-6">Main lecture<span style="margin-left: 1em"></span></h2>
@@ -374,10 +376,10 @@
     </table>
     <p>
       with a mass counterterm \(\gamma_T\) to be fixed in Appendix <a href="cqft_lecture_5.html#sec:pert">A.2</a>
-      of Lecture 5 (\(\gamma_T = 0\) for \(d = 2\)). The coupling is
-      normalised by \(\lambda / 12\) so that the curvature of the quartic term
-      is \(\lambda \varphi^2\), as in Lectures 6&ndash;7. The interacting
-      measure at cutoff \(T\) is
+      of Lecture <a href="cqft_lecture_5.html">5</a> (\(\gamma_T = 0\) for \(d = 2\)). The coupling
+      is normalised by \(\lambda / 12\) so that the curvature of the quartic
+      term is \(\lambda \varphi^2\), as in Lectures <a href="cqft_lecture_6.html">6</a>&ndash;<a
+      href="cqft_lecture_7.html">7</a>. The interacting measure at cutoff \(T\) is
     </p>
     <table width="100%">
       <tr>
@@ -389,8 +391,8 @@
       </tr>
     </table>
     <p>
-      How does the Gaussian scale decomposition of Lecture 3 generate
-      \(\nu_T\)? There are three answers.
+      How does the Gaussian scale decomposition of Lecture <a href="cqft_lecture_3.html">3</a>
+      generate \(\nu_T\)? There are three answers.
     </p>
     <ul>
       <li>
@@ -434,8 +436,8 @@
     <h3 id="auto-8"><a id="sec:rg"></a>7.1<span style="margin-left: 1em"></span>Renormalisation: decomposing the
     covariance<span style="margin-left: 1em"></span></h3>
     <p>
-      Decompose the covariance as in Lecture 3: \(Q_T = Q_t + S_t\), and
-      correspondingly
+      Decompose the covariance as in Lecture <a href="cqft_lecture_3.html">3</a>: \(Q_T = Q_t +
+      S_t\), and correspondingly
     </p>
     <center>
       \(\displaystyle X_T = X_t + (X_T - X_t)\)
@@ -594,8 +596,8 @@ t +
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">7.4</class>. </strong><class style="font-style: normal"><strong>(A
       Doob \(h\)-transform) </strong></class><a id="rem:doob-h"></a> Under
-      \(\mathbb{P}_0\), \(X\) is the GFF martingale of Lecture 3, \(X_t
-      =\mathbb{E}_0 [X_T |\mathcal{F}_t]\), a Gaussian process with
+      \(\mathbb{P}_0\), \(X\) is the GFF martingale of Lecture <a href="cqft_lecture_3.html">3</a>,
+      \(X_t =\mathbb{E}_0 [X_T |\mathcal{F}_t]\), a Gaussian process with
       independent increments and generator \(L_t = \frac{1}{2} \text{Tr}
       (\dot{Q}_t \mathrm{D}^2)\). The function
     </p>
@@ -627,7 +629,7 @@ t +
       href="#eq:observation">7.15</a>)</class>. The interacting field is a GFF martingale
       conditioned, in the sense of Doob, to end with the law \(\nu_T\). The
       same transform acts on the backward Kolmogorov equation <a href="cqft_lecture_5.html#eq:kolmogorov">(9.2)</a>
-      of Lecture 5 (Exercise <a href="cqft_lecture_5.html#ex:doob">9.1</a> there).
+      of Lecture <a href="cqft_lecture_5.html">5</a> (Exercise <a href="cqft_lecture_5.html#ex:doob">9.1</a> there).
     </p>
     <p>
       Read as an equation for an unknown pair \((\Phi, F)\), <class style="font-style: normal">(<a
@@ -740,7 +742,7 @@ t +
       covariance of the shell \([t, t + \mathrm{d} t]\) (loops). The
       substitution \(u = \mathrm{e}^{- V}\), which linearises the equation, is
       a Cole&ndash;Hopf transform: we come back to this in Section <a href="#sec:burgers">8.1</a>,
-      and in Appendix <a href="cqft_lecture_5.html#sec:algebra">A</a> of Lecture 5.
+      and in Appendix <a href="cqft_lecture_5.html#sec:algebra">A</a> of Lecture <a href="cqft_lecture_5.html">5</a>.
     </p>
     <p>
       <div style="display: inline">
@@ -1374,11 +1376,12 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
       - \beta\), and the half difference \(\frac{1}{2}  (b - b_{\ast}) =
       \frac{1}{2}  \dot{Q}_t \mathrm{D} \log p_t\) is the <em>osmotic
       velocity</em>. The same score is the noise of the field equation of
-      Lecture 5, the observable \(\eta_t = K \Phi_t - J_t F_t\) of Section <a
-      href="cqft_lecture_5.html#sec:DS">9.3</a> there: by <a href="cqft_lecture_5.html#eq:noise-score">(9.14)</a> of Lecture 5,
+      Lecture <a href="cqft_lecture_5.html">5</a>, the observable \(\omega_t = K \Phi_t - J_t F_t\)
+      of Section <a href="cqft_lecture_5.html#sec:DS">9.3</a> there: by <a href="cqft_lecture_5.html#eq:noise-score">(9.14)</a> of Lecture <a
+      href="cqft_lecture_5.html">5</a>,
     </p>
     <center>
-      \(\displaystyle \eta_t = - J_t \mathrm{D} \log p_t (\Phi_t) = - J_t
+      \(\displaystyle \omega_t = - J_t \mathrm{D} \log p_t (\Phi_t) = - J_t
       \dot{Q}_t^{- 1}  (b_t +
 \beta_t) (\Phi_t),\)
     </center>
@@ -1460,8 +1463,8 @@ y \rangle\) and \(\text{Tr} (\dot{\mathcal{R}}
       resolution is then \(t = \infty\), and \(Q_T\) is the cutoff
       covariance), where \(\mathcal{R}_t = t\) and \(j_t = t \Phi_T + N_t\)
       with \(N\) a Brownian motion; Eldan's original construction [<a href="#bib-Eld13">Eld13</a>]
-      uses an adapted control matrix. This is the profile of Lectures
-      6&ndash;7.
+      uses an adapted control matrix. This is the profile of Lectures <a href="cqft_lecture_6.html">6</a>&ndash;<a
+      href="cqft_lecture_7.html">7</a>.
     </p>
     <p>
       <div style="display: inline">
@@ -1748,7 +1751,7 @@ X_s^3 : \|^2 \mathrm{d} s =
     <div style="margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%">which diverges linearly in \(T\). Relate this to the \(k
-        = 4\) term of <a href="cqft_lecture_5.html#eq:second-order">(A.6)</a> of Lecture 5.</font>
+        = 4\) term of <a href="cqft_lecture_5.html#eq:second-order">(A.6)</a> of Lecture <a href="cqft_lecture_5.html">5</a>.</font>
       </p>
     </div>
     <h2 id="auto-27"><a id="sec:wetterich"></a>8<span style="margin-left: 1em"></span>Force coordinates and
@@ -1828,7 +1831,7 @@ X_s^3 : \|^2 \mathrm{d} s =
             it uses only the force, which is a local quantity
             (<em>intensive</em>), while \(V_t\) is <em>extensive</em>, of
             order of the volume. This matters in infinite volume (Section <a
-            href="cqft_lecture_5.html#sec:infinite-volume">9.5</a> of Lecture 5);
+            href="cqft_lecture_5.html#sec:infinite-volume">9.5</a> of Lecture <a href="cqft_lecture_5.html">5</a>);
           </p>
         </li>
         <li>
@@ -2262,9 +2265,9 @@ y)^2 / 2 s) / 2 \varepsilon} \mathrm{d} y,\)
           \(T \to \infty\) (this happens already for \(\Phi^4_2\)). The upper
           bound is lost, and at low resolution the conditional law may spread
           over several wells (Figure <a href="#fig:localisation">8.2</a>). This is the
-          large-field problem. In Lecture 6 it is handled by a clipped
-          approximate force, whose global coercivity (Lemma 12.1 there) is a
-          bound of Brascamp&ndash;Lieb type on the response.
+          large-field problem. In Lecture <a href="cqft_lecture_6.html">6</a> it is handled by a
+          clipped approximate force, whose global coercivity (Lemma <a href="cqft_lecture_6.html#lem:resolvent">12.1</a>
+          there) is a bound of Brascamp&ndash;Lieb type on the response.
         </p>
       </li>
     </ul>
@@ -2314,18 +2317,18 @@ y)^2 / 2 s) / 2 \varepsilon} \mathrm{d} y,\)
       <div style="display: inline">
         Pairs \((x, p)\) of a field and a value of the force form the phase
         space \(\mathbb{R}^n \times \mathbb{R}^n\), with the symplectic form
-        \(\omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d} p_i\). A
+        \(\Omega = \sum_i \mathrm{d} x_i \wedge \mathrm{d} p_i\). A
         submanifold \(L\) of dimension \(n\) is <em>Lagrangian</em> if
-        \(\omega\) vanishes on it. The graph \(L = \{(x, F (x))\}\) of a force
+        \(\Omega\) vanishes on it. The graph \(L = \{(x, F (x))\}\) of a force
         field is Lagrangian if and only if \(\sum_{i, j} \partial_j F_i
         \mathrm{d} x_i \wedge \mathrm{d} x_j = 0\), i.e. \(\mathrm{D} F\) is
         symmetric, i.e. \(F\) is (locally) a gradient: the gradient sector is
-        the sector of Lagrangian graphs. A map that preserves \(\omega\) (a
+        the sector of Lagrangian graphs. A map that preserves \(\Omega\) (a
         <em>symplectic</em> map) sends Lagrangian submanifolds to Lagrangian
         submanifolds. The shear <class style="font-style: normal">(<a href="#eq:shear">7.13</a>)</class> is
-        symplectic, since \(\Sigma_t^{\ast} \omega = \omega + \sum_{i, j}
+        symplectic, since \(\Sigma_t^{\ast} \Omega = \Omega + \sum_{i, j}
         (S_t)_{ij} \mathrm{d} p_j \wedge
-\mathrm{d} p_i = \omega\) for \(S_t\)
+\mathrm{d} p_i = \Omega\) for \(S_t\)
         symmetric. So it maps the graph of a gradient to a Lagrangian
         submanifold; if the image is again a graph over the new base variable,
         it is the graph of a gradient.
@@ -2975,7 +2978,7 @@ S_t^{- 1} (y - x)
         \mathrm{D}
 \Gamma_t \rangle + O (\lambda^3)\) for the \(\Phi^4\)
         interaction <class style="font-style: normal">(<a href="#eq:phi4-VT">7.1</a>)</class>. Deduce from
-        Proposition <a href="cqft_lecture_5.html#prop:second-order">A.2</a> of Lecture 5 that, to order
+        Proposition <a href="cqft_lecture_5.html#prop:second-order">A.2</a> of Lecture <a href="cqft_lecture_5.html">5</a> that, to order
         \(\lambda^2\), \(\Gamma_t\) is obtained from \(V_t\) by removing
         exactly the term \(k = 1\), the one-particle-reducible tree; the
         bubble (\(k = 2\)), the sunset (\(k = 3\)) and the vacuum term (\(k =
