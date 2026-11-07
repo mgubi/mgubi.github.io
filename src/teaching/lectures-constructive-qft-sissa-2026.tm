@@ -98,25 +98,26 @@
     [<notes-link|HTML|sissa-2026/cqft_slides_5.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_5.tm>].
     Revised 7 November 2026.
-  </itemize>
 
-  <subsection*|Provisional materials for Lectures 6--7>
-
-  Lectures 6--7 give an FBSDE construction of
-  <math|\<phi\><rsup|4><rsub|3>> on the torus. These materials may be
-  adjusted as the course progresses. Sections 16--18 of Lecture 7 will not
-  be delivered in class.
-
-  <\itemize>
-    <item><with|font-series|bold|Lecture 6>: The FBSDE in force coordinates, two renormalisations and the large-field problem.
+    <item><with|font-series|bold|Lecture 6> (6 November 2026): The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_6.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_6.tm>].
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_6.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_6.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_6.tm>].
+    Revised 7 November 2026.
+  </itemize>
 
-    <item><with|font-series|bold|Lecture 7>: A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
+  <subsection*|Provisional materials for Lecture 7>
+
+  Lectures 6--7 give an FBSDE construction of
+  <math|\<phi\><rsup|4><rsub|3>> on the torus. The materials for Lecture 7
+  may be adjusted as the course progresses. Sections 16--18 of Lecture 7 will not
+  be delivered in class.
+
+  <\itemize>
+    <item><with|font-series|bold|Lecture 7> (9 November 2026): A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_7.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_7.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_7.tm>].
