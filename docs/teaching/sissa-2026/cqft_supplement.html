@@ -309,7 +309,7 @@
       \(C = C_{q_0}\) of the measure, and it is the lower end of the range of
       Lemma <a href="#a-lem-free">19.1</a>. The <strong>auxiliary scale</strong> \(q_{\ast}
       \geqslant \text{max} (1, q_0)\) is large, depending on \(\lambda\) and
-      on the bound \(B\) below; all the operators of Sections <a href="#a-sec-kernels">19</a>&ndash;<a
+      on the bound \(B_0\) below; all the operators of Sections <a href="#a-sec-kernels">19</a>&ndash;<a
       href="#a-sec-clipping">21</a> after Lemma <a href="#a-lem-free">19.1</a> are used at scales \(q
       \geqslant q_{\ast}\) and do not involve \(q_0\). So from Lemma <a href="#a-lem-center">19.3</a>
       on we assume \(q \geqslant 1\). Constants may depend on the coupling and
@@ -1109,9 +1109,9 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
       from infinity; only the scalar of the final level is imposed, from
       \(q_{\ast}\). The linear force is \(M_q := M^{[3]}_q = \mu_q I +
       \Theta^{[3]}_q\), so that \(\partial_q M = \beta I + B_q [M^{[2]},
-      h^{[2]}]^{\circ}\), \(\mu_{q_{\ast}} = b\) and \(v_1 (\Theta_q) \to 0\)
-      as \(q \to \infty\). The bare mass is \(\mu_N = \text{lim}_{q \to
-      \infty} \mu_q\), as in (<a href="cqft_lecture_6.html#eq:bare-mass">11.11</a>), whose existence is a
+      h^{[2]}]^{\circ}\), \(\mu_{q_{\ast}} = b_{\ast}\) and \(v_1 (\Theta_q)
+      \to 0\) as \(q \to \infty\). The bare mass is \(\mu_N = \text{lim}_{q
+      \to \infty} \mu_q\), as in (<a href="cqft_lecture_6.html#eq:bare-mass">11.11</a>), whose existence is a
       fixed-lattice assertion proved below. Note that \(q_0\) does not occur
       in (<a href="#a-eq-iteration">20.4</a>), (<a href="#a-eq-mass">20.8</a>) or (<a href="#a-eq-bdry">20.9</a>):
       these operators are built from \(K_q\) and the level masses alone.
@@ -1188,7 +1188,7 @@ Cg_q^4 . \)</td>
       </table></i>
       <p style="margin-bottom: 1em">
         <i>The constants in (<a href="#a-eq-coeffbounds">20.10</a>)&ndash;(<a href="#a-eq-smallerror">20.12</a>)
-        may depend on \(B\), but not on \(N\) or on \(b_{\ast} \in
+        may depend on \(B_0\), but not on \(N\) or on \(b_{\ast} \in
         \mathcal{B}\).</i>
       </p>
     </div>
@@ -1196,12 +1196,12 @@ Cg_q^4 . \)</td>
       <strong class="enunciation-name">Proof. </strong>Here every \(\Theta\) is even and
       centred. At each fixed \(N\) the norm \(\| \cdot \|_{\ast}\) defines a
       complete weighted supremum space of continuous scalar paths; restrict to
-      the closed subset \(\mu_{q_{\ast}} = b\). It meets the ball of radius
-      \(R\), since \(|b_{\ast} | / \left( \lambda \sqrt{q} \right) \leqslant
-      B_0 (q_{\ast} / q)^{1
-/ 2} \leqslant B\) for \(q \geqslant q_{\ast}\).
-      Work provisionally with radius \(R \geqslant 1\) and \(Rg_{q_{\ast}}\)
-      smaller than a fixed constant.
+      the closed subset \(\mu_{q_{\ast}} = b_{\ast}\). It meets the ball of
+      radius \(R\), since \(|b_{\ast} | / \left( \lambda \sqrt{q} \right)
+      \leqslant B_0 (q_{\ast} / q)^{1
+/ 2} \leqslant B_0\) for \(q \geqslant
+      q_{\ast}\). Work provisionally with radius \(R \geqslant 1\) and
+      \(Rg_{q_{\ast}}\) smaller than a fixed constant.
     </p>
     <p>
       <em>The recursion on a given scalar path.</em> Apply the trace lemma by
@@ -1321,12 +1321,13 @@ g_{q_{\ast}}) .\)
       seed, the individual derivative budgets have constants independent of
       \(R\) in this regime. Thus the source bounds above have a fixed
       constant, and the output bound reads \(B_0 + C_{\ast}\), with \(C_{\ast}
-      \geqslant 1\) independent of \(R\) and of \(B\). Enlarging \(C_{\ast}\)
-      if necessary, the centred outputs obey \(v_1 (\Theta^{[j]}_q) \leqslant
-      C_{\ast} \lambda^2 q^{- 1 / 2}\) with the same constant, so every level
-      mass lies in the ball \(\|M^{[j]} \|_{\ast} \leqslant R\) of (<a href="#c-pathmetric">23.1</a>).
-      Now put \(R = B_0 + C_{\ast}\) and then choose \(q_{\ast}\) to satisfy
-      the provisional smallness requirement.
+      \geqslant 1\) independent of \(R\) and of \(B_0\). Enlarging
+      \(C_{\ast}\) if necessary, the centred outputs obey \(v_1
+      (\Theta^{[j]}_q) \leqslant C_{\ast} \lambda^2 q^{- 1 / 2}\) with the
+      same constant, so every level mass lies in the ball \(\|M^{[j]}
+      \|_{\ast} \leqslant R\) of (<a href="#c-pathmetric">23.1</a>). Now put \(R = B_0 +
+      C_{\ast}\) and then choose \(q_{\ast}\) to satisfy the provisional
+      smallness requirement.
     </p>
     <p>
       For two scalar paths \(\mu, \hat{\mu}\) in the ball with the same
@@ -1351,7 +1352,7 @@ g_{q_{\ast}}) .\)
       the whole half-line, with no prescribed bound on the bare mass.
       Increasing \(q_{\ast}\) once more makes it less than \(d / 2\). The
       closed ball is complete, so Banach's theorem gives the solution. Every
-      choice here depends on the coupling, on \(B\) and on the finite
+      choice here depends on the coupling, on \(B_0\) and on the finite
       derivative budget, not on \(N\) or on a probability moment order.
     </p>
     <p style="margin-bottom: 1em">
@@ -1381,7 +1382,7 @@ g_{q_{\ast}}) .\)
     </p>
     <p>
       From now on \(q \geqslant q_{\ast}\) whenever \(\bar{\Gamma}_q\) occurs,
-      and all constants may depend on \(\lambda, B\) but not on \(N\) or on
+      and all constants may depend on \(\lambda, B_0\) but not on \(N\) or on
       \(b_{\ast} \in \mathcal{B}\).
     </p>
     <div class="theorem">
@@ -1426,12 +1427,12 @@ g_{q_{\ast}}) .\)
       \(\int_{q_{\ast}}^{\infty} a_2 (s) \hspace{0.17em} \mathrm{d} s =
       \text{Tr}
 C_{q_{\ast}}\), its scalar integral is absolutely convergent,
-      and (<a href="#a-eq-bdry">20.9</a>) gives the bound on \(\mu_N - b\). The Fourier
-      symbol bound gives \(\text{Tr} C_{q_{\ast}} \leqslant C \sum_{|k|
-      \leqslant CN} (1 + |k|^2)^{- 1}
-\leqslant CN\). For the upper tail use
-      \(a_2 (s) \leqslant N^3 s^{- 2}\). Finally every nonzero lattice
-      displacement has distance at least \(N^{- 1}\). The absolute
+      and (<a href="#a-eq-bdry">20.9</a>) gives the bound on \(\mu_N - b_{\ast}\). The
+      Fourier symbol bound gives \(\text{Tr} C_{q_{\ast}} \leqslant C
+      \sum_{|k| \leqslant CN} (1 + |k|^2)^{- 1}
+\leqslant CN\). For the upper
+      tail use \(a_2 (s) \leqslant N^3 s^{- 2}\). Finally every nonzero
+      lattice displacement has distance at least \(N^{- 1}\). The absolute
       off-diagonal row mass of \(\Theta\) is at most \(Nv_1 (\Theta)\);
       centring bounds the diagonal by that same mass. This proves the last
       estimate. For the one-site lattice \(\Theta = 0\).<span style="margin-left: 1em"></span>\(\Box\)
@@ -1454,8 +1455,8 @@ C_{q_{\ast}}\), its scalar integral is absolutely convergent,
         </strong><i><class style="font-style: normal"><strong>(Dependence on the boundary value)
         </strong></class><a id="a-prop-response"></a>This is the step Response of the proof of
         Theorem <a href="cqft_lecture_6.html#thm:counter">11.2</a> of Lecture <a href="cqft_lecture_6.html">6</a>. For \(q_{\ast}\)
-        large depending on \(\lambda, B\), let \(b_{\ast, 1}, b_{\ast, 2} \in
-        \mathcal{B}\) with scalar paths \(\mu^{(1)}, \mu^{(2)}\) and level
+        large depending on \(\lambda, B_0\), let \(b_{\ast, 1}, b_{\ast, 2}
+        \in \mathcal{B}\) with scalar paths \(\mu^{(1)}, \mu^{(2)}\) and level
         masses \(M^{[j], (1)}, M^{[j], (2)}\), and \(\delta b = b_{\ast, 1} -
         b_{\ast, 2}\). Then at every fixed \(N\),</i>
       </p>
@@ -2012,7 +2013,7 @@ u\). Collapsing the covariance slots gives a
       This section gives the consistency of the mass path with a moving
       boundary value and the proof of the explicit counterterm, Theorem <a
       href="cqft_lecture_6.html#thm:counter">11.2</a> of Lecture <a href="cqft_lecture_6.html">6</a>. All constants may depend on
-      \(\lambda, q_0, B\), but not on \(N\) or on the boundary value.
+      \(\lambda, q_0, B_0\), but not on \(N\) or on the boundary value.
     </p>
     <div class="theorem">
       <p style="margin-top: 1em; margin-bottom: 1em">
@@ -2062,7 +2063,7 @@ a_2) \hspace{0.17em} \mathrm{d} q. \)</td>
       </table></i>
       <p>
         <i>As \(N \to \infty\), \(f_N\) converges to a limit \(f\) pointwise
-        on \(\mathcal{B}\), and for \(B\) larger than a universal constant,
+        on \(\mathcal{B}\), and for \(B_0\) larger than a universal constant,
         each \(r \in \mathbb{R}\) and \(q_{\ast}\) large depending on
         \(\lambda, q_0, B_0, r\), there is a unique \(b_{\ast, N} \in
         \mathcal{B}\) with \(f_N (b_{\ast, N}) = r\), that is,</i>
@@ -2156,7 +2157,7 @@ Cg_{q_{\ast}} | \delta b_{\ast} |\), and the same
       \text{Tr} C_{q_{\ast}} \leqslant C (q_0) + q_{\ast}^{1 / 2} / 10\)
       uniformly in \(N\) (the continuum value of the coefficient is
       \(\frac{1}{4 \pi} < \frac{1}{10}\), and the lattice sum is bounded by
-      \(\frac{1}{10}\) uniformly in \(N\)). So for \(B\) above a universal
+      \(\frac{1}{10}\) uniformly in \(N\)). So for \(B_0\) above a universal
       constant and then \(q_{\ast}\) large depending on \(\lambda, q_0, B_0,
       r\), \(f_N (\mathcal{B})\) contains \(r\) for all \(N\). Monotonicity
       and pointwise convergence give \(b_{\ast, N} \to f^{- 1} (r)\).<span
@@ -2225,12 +2226,12 @@ Cg_{q_{\ast}} | \delta b_{\ast} |\), and the same
       <strong>Boundary value.</strong> Fix \(B_0 < \infty\), let
       \(\mathcal{B}= [- B_0 \lambda q_{\ast}^{1 / 2}, B_0 \lambda q_{\ast}^{1
       / 2}]\), fix \(b_{\ast, N} \to b_{\ast}\) in \(\mathcal{B}\), and take
-      \(q_{\ast}\) large depending on \(\lambda, B\). Throughout, the lattice
-      coefficients are those of the system <a href="cqft_lecture_6.html#eq:iteration">(11.8)</a>&ndash;<a href="cqft_lecture_6.html#eq:mass">(11.9)</a>
-      with \(\mu^N_{q_{\ast}} = b_{\ast, N}\), the centred kernels integrated
-      from infinity; by Proposition <a href="#a-prop-coeff">20.6</a> the level masses \(M =
-      \mu I + \Theta^{[j]}\) lie in the ball \(\|M\|_{\ast} \leqslant R = B_0
-      + C_{\ast}\), where
+      \(q_{\ast}\) large depending on \(\lambda, B_0\). Throughout, the
+      lattice coefficients are those of the system <a href="cqft_lecture_6.html#eq:iteration">(11.8)</a>&ndash;<a
+      href="cqft_lecture_6.html#eq:mass">(11.9)</a> with \(\mu^N_{q_{\ast}} = b_{\ast, N}\), the centred
+      kernels integrated from infinity; by Proposition <a href="#a-prop-coeff">20.6</a> the
+      level masses \(M = \mu I + \Theta^{[j]}\) lie in the ball \(\|M\|_{\ast}
+      \leqslant R = B_0 + C_{\ast}\), where
     </p>
     <table width="100%">
       <tr>
@@ -2245,10 +2246,10 @@ Cg_{q_{\ast}} | \delta b_{\ast} |\), and the same
       </tr>
     </table>
     <p>
-      Constants may depend on \(\lambda, B\) and on the compact scale interval
-      \(I \subset [q_{\ast}, \infty)\) when so indicated, and never on \(N\).
-      The bounds of Proposition <a href="cqft_lecture_6.html#prop:coeff">11.1</a>, of <a href="cqft_lecture_6.html#eq:global-h">(12.2)</a>, of
-      Lemma <a href="cqft_lecture_6.html#lem:resolvent">12.1</a> and of Proposition <a href="cqft_lecture_6.html#prop:source">12.2</a> hold in
+      Constants may depend on \(\lambda, B_0\) and on the compact scale
+      interval \(I \subset [q_{\ast}, \infty)\) when so indicated, and never
+      on \(N\). The bounds of Proposition <a href="cqft_lecture_6.html#prop:coeff">11.1</a>, of <a href="cqft_lecture_6.html#eq:global-h">(12.2)</a>,
+      of Lemma <a href="cqft_lecture_6.html#lem:resolvent">12.1</a> and of Proposition <a href="cqft_lecture_6.html#prop:source">12.2</a> hold in
       this ball.
     </p>
     <p>
@@ -3081,8 +3082,8 @@ b_{\ast} | . \)</td>
       <strong>Step 3: iteration.</strong> Iterate \(\mathcal{A}_N\) from the
       constant path \(\mu \equiv b_{\ast}\), which lies in the ball as
       \(b_{\ast} \in \mathcal{B}\), and denote the \(r\)th iterate by
-      \(\mu_N^{(r)}\). Write \(\mu_N = \mu^{N, b}\). For each fixed \(r\),
-      induction using Step 2 proves convergence to a continuum iterate
+      \(\mu_N^{(r)}\). Write \(\mu_N = \mu^{N, b_{\ast}}\). For each fixed
+      \(r\), induction using Step 2 proves convergence to a continuum iterate
       \(\mu^{(r)}\). The contraction estimate has a single \(\theta < 1\),
       independent of \(N\), and gives
     </p>

@@ -228,8 +228,8 @@
   <math|C=C<rsub|q<rsub|0>>> of the measure, and it is the lower end of the
   range of Lemma<nbsp><reference|a-lem-free>. The <strong|auxiliary scale>
   <math|q<rsub|\<ast\>>\<geqslant\><math-up|max><around|(|1,q<rsub|0>|)>> is
-  large, depending on <math|\<lambda\>> and on the bound <math|B> below; all
-  the operators of Sections<nbsp><reference|a-sec-kernels>\U<reference|a-sec-clipping>
+  large, depending on <math|\<lambda\>> and on the bound <math|B<rsub|0>>
+  below; all the operators of Sections<nbsp><reference|a-sec-kernels>\U<reference|a-sec-clipping>
   after Lemma<nbsp><reference|a-lem-free> are used at scales
   <math|q\<geqslant\> q<rsub|\<ast\>>> and do not involve <math|q<rsub|0>>.
   So from Lemma<nbsp><reference|a-lem-center> on we assume
@@ -955,7 +955,7 @@
   from <math|q<rsub|\<ast\>>>. The linear force is
   <math|M<rsub|q>\<assign\>M<rsup|<around|[|3|]>><rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsup|<around|[|3|]>><rsub|q>>,
   so that <math|\<partial\><rsub|q>M=\<beta\>I+B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>,
-  <math|\<mu\><rsub|q<rsub|\<ast\>>>=b> and
+  <math|\<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>> and
   <math|v<rsub|1><around|(|\<Theta\><rsub|q>|)>\<to\>0> as
   <math|q\<to\>\<infty\>>. The bare mass is
   <math|\<mu\><rsub|N>=<math-up|lim><rsub|q\<to\>\<infty\>>\<mu\><rsub|q>>,
@@ -1019,7 +1019,7 @@
     </equation>
 
     The constants in (<reference|a-eq-coeffbounds>)\U(<reference|a-eq-smallerror>)
-    may depend on <math|B>, but not on <math|N> or on
+    may depend on <math|B<rsub|0>>, but not on <math|N> or on
     <math|b<rsub|\<ast\>>\<in\>\<cal-B\>>.
   </proposition>
 
@@ -1027,10 +1027,11 @@
     Here every <math|\<Theta\>> is even and centred. At each fixed <math|N>
     the norm <math|<around|\<\|\|\>|\<cdot\>|\<\|\|\>><rsub|\<ast\>>> defines
     a complete weighted supremum space of continuous scalar paths; restrict
-    to the closed subset <math|\<mu\><rsub|q<rsub|\<ast\>>>=b>. It meets the
-    ball of radius <math|R>, since <math|<around|\||b<rsub|\<ast\>>|\|>/<around*|(|\<lambda\><sqrt|q>|)>\<leqslant\>
-    B<rsub|0><around|(|q<rsub|\<ast\>>/q|)><rsup|1/2>\<leqslant\> B> for
-    <math|q\<geqslant\> q<rsub|\<ast\>>>. Work provisionally with radius
+    to the closed subset <math|\<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>>.
+    It meets the ball of radius <math|R>, since
+    <math|<around|\||b<rsub|\<ast\>>|\|>/<around*|(|\<lambda\><sqrt|q>|)>\<leqslant\>
+    B<rsub|0><around|(|q<rsub|\<ast\>>/q|)><rsup|1/2>\<leqslant\> B<rsub|0>>
+    for <math|q\<geqslant\> q<rsub|\<ast\>>>. Work provisionally with radius
     <math|R\<geqslant\>1> and <math|R*g<rsub|q<rsub|\<ast\>>>> smaller than a
     fixed constant.
 
@@ -1158,8 +1159,8 @@
     Thus the source bounds above have a fixed constant, and the output bound
     reads <math|B<rsub|0>+C<rsub|\<ast\>>>, with
     <math|C<rsub|\<ast\>>\<geqslant\>1> independent of <math|R> and of
-    <math|B>. Enlarging <math|C<rsub|\<ast\>>> if necessary, the centred
-    outputs obey <math|v<rsub|1><around|(|\<Theta\><rsup|<around|[|j|]>><rsub|q>|)>\<leqslant\>C<rsub|\<ast\>>\<lambda\><rsup|2>q<rsup|-1/2>>
+    <math|B<rsub|0>>. Enlarging <math|C<rsub|\<ast\>>> if necessary, the
+    centred outputs obey <math|v<rsub|1><around|(|\<Theta\><rsup|<around|[|j|]>><rsub|q>|)>\<leqslant\>C<rsub|\<ast\>>\<lambda\><rsup|2>q<rsup|-1/2>>
     with the same constant, so every level mass lies in the ball
     <math|<around|\<\|\|\>|M<rsup|<around|[|j|]>>|\<\|\|\>><rsub|\<ast\>>\<leqslant\>R>
     of (<reference|c-pathmetric>). Now put <math|R=B<rsub|0>+C<rsub|\<ast\>>>
@@ -1192,9 +1193,9 @@
     estimate on the whole half-line, with no prescribed bound on the bare
     mass. Increasing <math|q<rsub|\<ast\>>> once more makes it less than
     <math|d/2>. The closed ball is complete, so Banach's theorem gives the
-    solution. Every choice here depends on the coupling, on <math|B> and on
-    the finite derivative budget, not on <math|N> or on a probability moment
-    order.
+    solution. Every choice here depends on the coupling, on <math|B<rsub|0>>
+    and on the finite derivative budget, not on <math|N> or on a probability
+    moment order.
 
     <em|The defect.> Evenness gives <math|D<rsup|2><around*|(|<frac|1|2><math-up|Tr>
     H|)><around|(|0|)>=-<frac|1|2><math-up|Ctr><rsub|R<rsub|0><rsup|2>>D<rsup|4>\<Gamma\><rsup|<math-up|o>><around|(|0|)>>.
@@ -1220,7 +1221,7 @@
 
   From now on <math|q\<geqslant\> q<rsub|\<ast\>>> whenever
   <math|<wide|\<Gamma\>|\<bar\>><rsub|q>> occurs, and all constants may
-  depend on <math|\<lambda\>,B> but not on <math|N> or on
+  depend on <math|\<lambda\>,B<rsub|0>> but not on <math|N> or on
   <math|b<rsub|\<ast\>>\<in\>\<cal-B\>>.
 
   <\lemma>
@@ -1258,7 +1259,7 @@
     <math|<big|int><rsub|q<rsub|\<ast\>>><rsup|\<infty\>>a<rsub|2><around|(|s|)><space|0.17em>\<mathd\>
     s=<math-up|Tr> C<rsub|q<rsub|\<ast\>>>>, its scalar integral is
     absolutely convergent, and (<reference|a-eq-bdry>) gives the bound on
-    <math|\<mu\><rsub|N>-b>. The Fourier symbol bound gives
+    <math|\<mu\><rsub|N>-b<rsub|\<ast\>>>. The Fourier symbol bound gives
     <math|<math-up|Tr> C<rsub|q<rsub|\<ast\>>>\<leqslant\>
     C<big|sum><rsub|<around|\||k|\|>\<leqslant\>
     C*N><around|(|1+<around|\||k|\|><rsup|2>|)><rsup|-1>\<leqslant\> C*N>.
@@ -1287,7 +1288,7 @@
     <dueto|Dependence on the boundary value><label|a-prop-response>This is
     the step Response of the proof of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
     of Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. For <math|q<rsub|\<ast\>>>
-    large depending on <math|\<lambda\>,B>, let
+    large depending on <math|\<lambda\>,B<rsub|0>>, let
     <math|b<rsub|\<ast\>,1>,b<rsub|\<ast\>,2>\<in\>\<cal-B\>> with scalar
     paths <math|\<mu\><rsup|<around|(|1|)>>,\<mu\><rsup|<around|(|2|)>>> and
     level masses <math|M<rsup|<around|[|j|]>,<around|(|1|)>>,M<rsup|<around|[|j|]>,<around|(|2|)>>>,
@@ -1824,8 +1825,8 @@
   value and the proof of the explicit counterterm,
   Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter> of
   Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. All constants may depend on
-  <math|\<lambda\>,q<rsub|0>,B>, but not on <math|N> or on the boundary
-  value.
+  <math|\<lambda\>,q<rsub|0>,B<rsub|0>>, but not on <math|N> or on the
+  boundary value.
 
   <\proposition>
     <dueto|Limits with a moving boundary><label|prop:limits>If
@@ -1868,8 +1869,8 @@
     </equation>
 
     As <math|N\<to\>\<infty\>>, <math|f<rsub|N>> converges to a limit
-    <math|f> pointwise on <math|\<cal-B\>>, and for <math|B> larger than a
-    universal constant, each <math|r\<in\>\<bbb-R\>> and
+    <math|f> pointwise on <math|\<cal-B\>>, and for <math|B<rsub|0>> larger
+    than a universal constant, each <math|r\<in\>\<bbb-R\>> and
     <math|q<rsub|\<ast\>>> large depending on
     <math|\<lambda\>,q<rsub|0>,B<rsub|0>,r>, there is a unique
     <math|b<rsub|\<ast\>,N>\<in\>\<cal-B\>> with
@@ -1966,9 +1967,10 @@
     C<rsub|q<rsub|\<ast\>>>\<leqslant\> C<around|(|q<rsub|0>|)>+q<rsub|\<ast\>><rsup|1/2>/10>
     uniformly in <math|N> (the continuum value of the coefficient is
     <math|<frac|1|4\<pi\>>\<less\><frac|1|10>>, and the lattice sum is
-    bounded by <math|<frac|1|10>> uniformly in <math|N>). So for <math|B>
-    above a universal constant and then <math|q<rsub|\<ast\>>> large
-    depending on <math|\<lambda\>,q<rsub|0>,B<rsub|0>,r>,
+    bounded by <math|<frac|1|10>> uniformly in <math|N>). So for
+    <math|B<rsub|0>> above a universal constant and then
+    <math|q<rsub|\<ast\>>> large depending on
+    <math|\<lambda\>,q<rsub|0>,B<rsub|0>,r>,
     <math|f<rsub|N><around|(|\<cal-B\>|)>> contains <math|r> for all
     <math|N>. Monotonicity and pointwise convergence give
     <math|b<rsub|\<ast\>,N>\<to\> f<rsup|-1><around|(|r|)>>.
@@ -2052,8 +2054,8 @@
   q<rsub|\<ast\>><rsup|1/2>,B<rsub|0>\<lambda\>
   q<rsub|\<ast\>><rsup|1/2>|]>>, fix <math|b<rsub|\<ast\>,N>\<to\>
   b<rsub|\<ast\>>> in <math|\<cal-B\>>, and take <math|q<rsub|\<ast\>>> large
-  depending on <math|\<lambda\>,B>. Throughout, the lattice coefficients are
-  those of the system <hlink|(11.8)|cqft_lecture_6.tm#eq:iteration>\U<hlink|(11.9)|cqft_lecture_6.tm#eq:mass>
+  depending on <math|\<lambda\>,B<rsub|0>>. Throughout, the lattice
+  coefficients are those of the system <hlink|(11.8)|cqft_lecture_6.tm#eq:iteration>\U<hlink|(11.9)|cqft_lecture_6.tm#eq:mass>
   with <math|\<mu\><rsup|N><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>,N>>, the
   centred kernels integrated from infinity; by
   Proposition<nbsp><reference|a-prop-coeff> the level masses
@@ -2068,9 +2070,9 @@
     d<rsub|\<ast\>><around|(|M,<wide|M|^>|)>=<around|\<\|\|\>|M-<wide|M|^>|\<\|\|\>><rsub|\<ast\>>.<label|c-pathmetric>
   </equation>
 
-  Constants may depend on <math|\<lambda\>,B> and on the compact scale
-  interval <math|I\<subset\><around|[|q<rsub|\<ast\>>,\<infty\>|)>> when so
-  indicated, and never on <math|N>. The bounds of
+  Constants may depend on <math|\<lambda\>,B<rsub|0>> and on the compact
+  scale interval <math|I\<subset\><around|[|q<rsub|\<ast\>>,\<infty\>|)>>
+  when so indicated, and never on <math|N>. The bounds of
   Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>, of
   <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>, of
   Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and of
@@ -2840,10 +2842,10 @@
     constant path <math|\<mu\>\<equiv\> b<rsub|\<ast\>>>, which lies in the
     ball as <math|b<rsub|\<ast\>>\<in\>\<cal-B\>>, and denote the <math|r>th
     iterate by <math|\<mu\><rsub|N><rsup|<around|(|r|)>>>. Write
-    <math|\<mu\><rsub|N>=\<mu\><rsup|N,b>>. For each fixed <math|r>,
-    induction using Step<nbsp>2 proves convergence to a continuum iterate
-    <math|\<mu\><rsup|<around|(|r|)>>>. The contraction estimate has a single
-    <math|\<theta\>\<less\>1>, independent of <math|N>, and gives
+    <math|\<mu\><rsub|N>=\<mu\><rsup|N,b<rsub|\<ast\>>>>. For each fixed
+    <math|r>, induction using Step<nbsp>2 proves convergence to a continuum
+    iterate <math|\<mu\><rsup|<around|(|r|)>>>. The contraction estimate has
+    a single <math|\<theta\>\<less\>1>, independent of <math|N>, and gives
 
     <\equation*>
       <around|\<\|\|\>|\<mu\><rsub|N>-\<mu\><rsub|N><rsup|<around|(|r|)>>|\<\|\|\>><rsub|\<ast\>>\<leqslant\>

@@ -153,7 +153,7 @@
 
     <item>6 November, 11:00--13:00, Room 133.
 
-    <item>9 November (Monday), additional lecture: time and room to be announced.
+    <item>9 November, 11:00--13:00, Room 133.
   </itemize>
 </body>
 

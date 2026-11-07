@@ -8,8 +8,7 @@
 
     I. The FBSDE in force coordinates, two renormalisations and the
     large-field problem
-  </doc-subtitle>|<doc-author|<cqft-author-data>>|<doc-date|November 2026
-  <emdash> <em|provisional>>>
+  </doc-subtitle>|<doc-author|<cqft-author-data>>|<doc-date|November 2026>>
 
   <abstract-data|<\abstract>
     The last two lectures construct the massive
@@ -2929,17 +2928,17 @@
 
   The desired mass solves <math|\<mu\>=\<cal-A\><around|[|\<mu\>|]>>. At a
   fixed point, <math|\<partial\><rsub|q>\<mu\><rsub|q>=\<beta\><rsub|q><around|[|\<mu\>|]>>
-  and <math|\<mu\><rsub|q<rsub|\<ast\>>>=b>. This is a fixed point on scalar
-  paths over <math|<around|[|q<rsub|\<ast\>>,\<infty\>|)>>, rather than an
-  ordinary initial-value equation: the corrections and the centred kernels at
-  <math|q> use the trial path at later scales. It is the only fixed point we
-  actually solve: the exact equations for <math|\<ell\>> and <math|\<Theta\>>
-  are replaced by two Picard steps, and the centred kernels are explicit
-  outputs of them. The unknown of the fixed point is a scalar function of
-  <math|q>, not an operator-valued path.
+  and <math|\<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>>. This is a fixed
+  point on scalar paths over <math|<around|[|q<rsub|\<ast\>>,\<infty\>|)>>,
+  rather than an ordinary initial-value equation: the corrections and the
+  centred kernels at <math|q> use the trial path at later scales. It is the
+  only fixed point we actually solve: the exact equations for <math|\<ell\>>
+  and <math|\<Theta\>> are replaced by two Picard steps, and the centred
+  kernels are explicit outputs of them. The unknown of the fixed point is a
+  scalar function of <math|q>, not an operator-valued path.
 
   <paragraph|Two nonlinear steps, one scalar fixed point> For example, start
-  with <math|\<mu\><rsup|<around|(|0|)>><rsub|q>=b> and repeat
+  with <math|\<mu\><rsup|<around|(|0|)>><rsub|q>=b<rsub|\<ast\>>> and repeat
 
   <\equation*>
     \<mu\><rsup|<around|(|n|)>>\<longmapsto\><around|(|\<ell\><rsup|<around|[|2|]>>,\<Theta\><rsup|<around|[|2|]>>|)><around|[|\<mu\><rsup|<around|(|n|)>>|]>\<longmapsto\><around|(|\<ell\><rsup|<around|[|3|]>>,\<Theta\><rsup|<around|[|3|]>>|)><around|[|\<mu\><rsup|<around|(|n|)>>|]>\<longmapsto\>\<beta\><around|[|\<mu\><rsup|<around|(|n|)>>|]>\<longmapsto\>\<mu\><rsup|<around|(|n+1|)>>=\<cal-A\><around|[|\<mu\><rsup|<around|(|n|)>>|]>.
@@ -3533,8 +3532,9 @@
     (<reference|eq:fN>).
 
     <strong|Response.> For two boundary values with difference
-    <math|\<delta\> b>, put <math|D=sup<rsub|q><around|\||\<delta\>\<mu\><rsub|q>|\|>>
-    and <math|X=sup<rsub|q,j>q<rsup|3/2>v<rsub|1><around|(|\<delta\>\<Theta\><rsup|<around|[|j|]>><rsub|q>|)>>,
+    <math|\<delta\> b<rsub|\<ast\>>>, put
+    <math|D=sup<rsub|q><around|\||\<delta\>\<mu\><rsub|q>|\|>> and
+    <math|X=sup<rsub|q,j>q<rsup|3/2>v<rsub|1><around|(|\<delta\>\<Theta\><rsup|<around|[|j|]>><rsub|q>|)>>,
     which are finite at fixed <math|N>. The loop comparison gives
     <math|<around|\||\<delta\>\<beta\><rsub|q>|\|>\<leqslant\>
     C\<lambda\><around|(|D*q<rsup|-3/2>+X*q<rsup|-5/2>|)>> and the centred
@@ -4156,9 +4156,9 @@
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.1>||The structure of
       the construction (<with|mode|<quote|math>|E>,
       <with|mode|<quote|math>|J>: the energies of Lecture
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1262327F0-55F5240>|<link|hyperlink|<id|%1262327F0-55F5240>|<url|cqft_lecture_7.tm>>|7>).
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%128F4BA20-8296A00>|<link|hyperlink|<id|%128F4BA20-8296A00>|<url|cqft_lecture_7.tm>>|7>).
       The two arrows between the forward and backward estimates form the
-      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1262327F0-55F5300>|<link|hyperlink|<id|%1262327F0-55F5300>|<url|cqft_lecture_7.tm>>|7>:
+      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%128F4BA20-82965A0>|<link|hyperlink|<id|%128F4BA20-82965A0>|<url|cqft_lecture_7.tm>>|7>:
       neither estimate closes on its own.>|<pageref|auto-10>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.2>||The force on one

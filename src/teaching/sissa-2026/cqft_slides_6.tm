@@ -7,7 +7,7 @@
     <cqft-title-slide|<math|\<Phi\><rsup|4><rsub|3>> on the torus
     I:<next-line>the FBSDE in force coordinates and renormalisation|Joint
     work with Sarah-Jean Meyer, with the use of AI|SISSA lectures,
-    Lecture<nbsp>6 (provisional) \V notes: Lecture<nbsp>6, ŸŸ10\U12>
+    Lecture<nbsp>6 \V notes: Lecture<nbsp>6, ŸŸ10\U12>
   </hidden>|<\hidden>
     <mytitle|Where we are>
 
