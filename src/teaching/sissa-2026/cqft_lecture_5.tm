@@ -123,87 +123,91 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-25>>
 
-    <with|par-left|2tab|The roughness of the noise
+    <with|par-left|2tab|Tails of the force
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-26>>
 
-    <with|par-left|2tab|The noise as a stochastic observable
+    <with|par-left|2tab|The roughness of the noise
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-27>>
 
-    <with|par-left|2tab|Control of the force
+    <with|par-left|2tab|The noise as a stochastic observable
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-28>>
 
-    <with|par-left|2tab|Consequence for <with|mode|math|\<Phi\><rsup|4><rsub|3>>
+    <with|par-left|2tab|Control of the force
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-29>>
 
-    <with|par-left|1tab|9.5<space|2spc>Infinite volume
+    <with|par-left|2tab|Consequence for <with|mode|math|\<Phi\><rsup|4><rsub|3>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-30>>
 
-    <with|par-left|2tab|Differences of free energies
+    <with|par-left|1tab|9.5<space|2spc>Infinite volume
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-31>>
 
-    <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <with|par-left|2tab|Differences of free energies
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-32>>
+
+    <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-33>>
 
     <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Appendices:
     additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33><vspace|0.2fn>
+    <no-break><pageref|auto-34><vspace|0.2fn>
 
     <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Appendix
     A<space|2spc>Algebraic structure of the Polchinski flow>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34><vspace|0.2fn>
+    <no-break><pageref|auto-35><vspace|0.2fn>
 
     <with|par-left|1tab|A.1<space|2spc>A semigroup of renormalisation maps
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>
+    <no-break><pageref|auto-36>>
 
     <with|par-left|1tab|A.2<space|2spc>Perturbation theory and counterterms
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36>>
+    <no-break><pageref|auto-37>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-38>>
+    <no-break><pageref|auto-39>>
 
     <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|Appendix
     B<space|2spc>Stochastic localisation>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-39><vspace|0.2fn>
+    <no-break><pageref|auto-40><vspace|0.2fn>
 
     <with|par-left|2tab|Why it is useful <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-40>>
+    <no-break><pageref|auto-41>>
 
     <with|par-left|1tab|B.1<space|2spc>Log-Sobolev inequalities along the
     localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-41>>
+    <no-break><pageref|auto-42>>
 
     <with|par-left|2tab|Entropy as quadratic variation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42>>
+    <no-break><pageref|auto-43>>
 
     <with|par-left|2tab|In terms of the conditional covariance
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-43>>
+    <no-break><pageref|auto-44>>
 
     <with|par-left|2tab|An application: the KLS conjecture
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44>>
+    <no-break><pageref|auto-45>>
 
     <with|par-left|2tab|The connection with Bauerschmidt\UBodineau
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45>>
+    <no-break><pageref|auto-46>>
 
     <with|par-left|1tab|Exercises <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>
+    <no-break><pageref|auto-47>>
 
     <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|References>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47><vspace|0.2fn>
+    <no-break><pageref|auto-48><vspace|0.2fn>
   </table-of-contents>
 
   <section*|Introduction>
@@ -1475,6 +1479,135 @@
   forward equation are controlled by the coercivity of the cube against a
   noise whose tails are known in advance.
 
+  <paragraph|Tails of the force> The noise is the score of the law of
+  <math|\<Phi\><rsub|t>>. The force <math|F<rsub|t>=-\<mathD\>V<rsub|t><around|(|\<Phi\><rsub|t>|)>=-\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\><rsub|t>|)>>
+  of<nbsp><eqref|eq:field-eq-forecast> is the gradient of the effective
+  potential, and its tails can be read directly from the measure at
+  resolution <math|t>, <math|\<nu\><rsub|t>\<propto\>\<mathe\><rsup|-V<rsub|t>>\<mu\><rsup|Q<rsub|t>>>
+  (Proposition<nbsp><hlink|7.2|cqft_lecture_4.tm#prop:marginals>), when
+  <math|\<Gamma\><rsub|t>> is convex.
+
+  <\proposition>
+    <dueto|Sub-Gaussian force><label|prop:force-subgauss>At finite cutoff,
+    let <math|0\<less\>t\<less\>T>, let <math|V<rsub|T>> be even, and assume
+    that <math|\<Gamma\><rsub|t>> is convex. Then for every <math|h> and
+    <math|u\<in\>\<bbb-R\>>,
+
+    <\equation>
+      \<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t>|\<rangle\>>>\<leqslant\>exp
+      <around*|(|<frac|u<rsup|2>|2>*<around|\<langle\>|h,S<rsub|t><rsup|-1>*h|\<rangle\>>|)>.<label|eq:force-mgf>
+    </equation>
+  </proposition>
+
+  <\proof>
+    Two properties of <math|V<rsub|t>> are used. (a) <em|Semiconcavity.> By
+    Proposition<nbsp><hlink|8.3|cqft_lecture_4.tm#prop:H-cov>,
+    <math|\<mathD\><rsup|2>V<rsub|t>=S<rsub|t><rsup|-1>-S<rsub|t><rsup|-1><math-up|Cov><rsub|t>S<rsub|t><rsup|-1>\<leqslant\>S<rsub|t><rsup|-1>>
+    for every interaction, so
+
+    <\equation*>
+      V<rsub|t><around|(|x+a|)>\<leqslant\>V<rsub|t><around|(|x|)>+<around|\<langle\>|\<mathD\>V<rsub|t><around|(|x|)>,a|\<rangle\>>+<frac|1|2>*<around|\<langle\>|a,S<rsub|t><rsup|-1>*a|\<rangle\>>.
+    </equation*>
+
+    (b) <em|Convexity.> By<nbsp><hlink|(8.12)|cqft_lecture_4.tm#eq:moreau>,
+    <math|V<rsub|t>> is the infimal convolution of <math|\<Gamma\><rsub|t>>
+    with the convex quadratic <math|<frac|1|2>*<around|\<langle\>|\<cdummy\>,S<rsub|t><rsup|-1>\<cdummy\>|\<rangle\>>>,
+    hence convex. It is even, since <math|V<rsub|T>> is and the Polchinski
+    semigroup commutes with <math|x\<mapsto\>-x>.
+
+    <em|Step 1.> By (a) with <math|a=u*h>,
+
+    <\equation*>
+      \<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t><around|(|x|)>|\<rangle\>>-V<rsub|t><around|(|x|)>>\<leqslant\>\<mathe\><rsup|<frac|u<rsup|2>|2>*<around|\<langle\>|h,S<rsub|t><rsup|-1>*h|\<rangle\>>-V<rsub|t><around|(|x+u*h|)>>.
+    </equation*>
+
+    Integrate against <math|\<mu\><rsup|Q<rsub|t>>> and shift by the
+    Cameron\UMartin formula, <math|<big|int>G<around|(|x+a|)>*\<mu\><rsup|Q<rsub|t>><around|(|\<mathd\>x|)>=\<mathe\><rsup|-<frac|1|2>*<around|\<langle\>|a,Q<rsub|t><rsup|-1>*a|\<rangle\>>><big|int>G<around|(|y|)>*\<mathe\><rsup|<around|\<langle\>|Q<rsub|t><rsup|-1>*a,y|\<rangle\>>>\<mu\><rsup|Q<rsub|t>><around|(|\<mathd\>y|)>>:
+
+    <\equation>
+      \<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t>|\<rangle\>>>\<leqslant\>\<mathe\><rsup|<frac|u<rsup|2>|2>*<around|\<langle\>|h,<around|(|S<rsub|t><rsup|-1>-Q<rsub|t><rsup|-1>|)>*h|\<rangle\>>>*<space|0.17em>\<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|Q<rsub|t><rsup|-1>*h,\<Phi\><rsub|t>|\<rangle\>>>.<label|eq:force-step>
+    </equation>
+
+    <em|Step 2.> For every <math|k> the same shift gives
+    <math|\<bbb-E\>*\<mathe\><rsup|<around|\<langle\>|k,\<Phi\><rsub|t>|\<rangle\>>>=\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|k,Q<rsub|t>*k|\<rangle\>>>m<around|(|Q<rsub|t>*k|)>/m<around|(|0|)>>,
+    with <math|m<around|(|a|)>=<big|int>\<mathe\><rsup|-V<rsub|t><around|(|x+a|)>>\<mu\><rsup|Q<rsub|t>><around|(|\<mathd\>x|)>>.
+    By (b) and Prékopa's theorem <math|m> is log-concave: it is the marginal
+    of the log-concave function <math|<around|(|x,a|)>\<mapsto\>\<mathe\><rsup|-V<rsub|t><around|(|x+a|)>-<frac|1|2>*<around|\<langle\>|x,Q<rsub|t><rsup|-1>*x|\<rangle\>>>>.
+    It is also even, so <math|log m<around|(|0|)>\<geqslant\><frac|1|2>*log
+    m<around|(|a|)>+<frac|1|2>*log m<around|(|-a|)>=log m<around|(|a|)>>.
+    Hence <math|\<bbb-E\>*\<mathe\><rsup|<around|\<langle\>|k,\<Phi\><rsub|t>|\<rangle\>>>\<leqslant\>\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|k,Q<rsub|t>*k|\<rangle\>>>>:
+    the field at resolution <math|t> is no wider than the free field
+    <math|X<rsub|t>>. With <math|k=u*Q<rsub|t><rsup|-1>*h>
+    in<nbsp><eqref|eq:force-step> the two terms with
+    <math|Q<rsub|t><rsup|-1>> cancel.
+  </proof>
+
+  <\remark>
+    <dueto|Where convexity enters><label|rem:force-convexity>Step<nbsp>1 uses
+    only <math|\<mathD\><rsup|2>V<rsub|t>\<leqslant\>S<rsub|t><rsup|-1>>,
+    which holds for every interaction. Convexity of <math|\<Gamma\><rsub|t>>
+    enters only in Step<nbsp>2, to compare <math|\<Phi\><rsub|t>> with the
+    free field. It is equivalent to <math|<math-up|Cov><rsub|t>\<leqslant\>S<rsub|t>>
+    (Section<nbsp><hlink|8.5|cqft_lecture_4.tm#sec:generator>): it holds at
+    every <math|t> when <math|V<rsub|T>> is convex, but for a double well,
+    and for the Wick-ordered <math|\<Phi\><rsup|4>> interaction, it can fail
+    at low resolution, where the law of <math|\<Phi\><rsub|t>> is wider than
+    <math|\<mu\><rsup|Q<rsub|t>>>. Without convexity, use the
+    bridge<nbsp><hlink|(7.14)|cqft_lecture_4.tm#eq:bridge> instead,
+    <math|\<Phi\><rsub|t>=J<rsub|t>*\<Phi\><rsub|T>+\<zeta\><rsub|t>> with
+    <math|\<zeta\><rsub|t>\<sim\>N<around|(|0,\<Sigma\><rsub|t>|)>>
+    independent of <math|\<Phi\><rsub|T>>. Since
+    <math|J<rsub|t>*Q<rsub|t><rsup|-1>=K> and
+    <math|Q<rsub|t><rsup|-1>\<Sigma\><rsub|t>*Q<rsub|t><rsup|-1>=Q<rsub|t><rsup|-1>-K>,
+    <eqref|eq:force-step> becomes
+
+    <\equation*>
+      \<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t>|\<rangle\>>>\<leqslant\>exp
+      <around*|(|<frac|u<rsup|2>|2>*<around|\<langle\>|h,\<cal-R\><rsub|t>*h|\<rangle\>>|)>*<space|0.17em>\<bbb-E\><rsub|\<nu\><rsub|T>>\<mathe\><rsup|u<around|\<langle\>|K*h,\<Phi\><rsub|T>|\<rangle\>>>,
+    </equation*>
+
+    which also follows from <math|F<rsub|t>=\<bbb-E\><around|[|K*\<Phi\><rsub|T>-S<rsub|t><rsup|-1>*\<zeta\><rsub|t><mid|\|>\<Phi\><rsub|t>|]>>
+    (by<nbsp><eqref|eq:field-eq-forecast> and
+    Proposition<nbsp><reference|prop:subgauss>) and conditional Jensen. The
+    force is the noise plus the terminal field seen through <math|K>: unlike
+    the noise, it is sub-Gaussian uniformly in the interaction only when the
+    terminal field is. For convex even <math|V<rsub|T>>, Step<nbsp>2 at
+    <math|t=T> bounds the last factor by <math|\<mathe\><rsup|<frac|u<rsup|2>|2>*<around|\<langle\>|h,K*h|\<rangle\>>>>,
+    and since <math|\<cal-R\><rsub|t>+K=S<rsub|t><rsup|-1>> this
+    recovers<nbsp><eqref|eq:force-mgf>. For one mode with
+    <math|V<rsub|T><around|(|y|)>=\<kappa\>*y<rsup|2>/2>,
+    <math|F<rsub|t>=-\<kappa\><rsub|t>*\<Phi\><rsub|t>> with
+    <math|\<kappa\><rsub|t>=\<kappa\>/<around|(|1+\<kappa\>*S<rsub|t>|)>>,
+    and <math|<math-up|Var>F<rsub|t>=\<kappa\><rsub|t><rsup|2>/<around|(|Q<rsub|t><rsup|-1>+\<kappa\><rsub|t>|)>>
+    increases to <math|\<cal-R\><rsub|t>> as <math|\<kappa\>\<to\>\<infty\>>:
+    the bound <math|S<rsub|t><rsup|-1>=\<cal-R\><rsub|t>+K> is attained up to
+    the term <math|K>.
+
+    Convexity of the effective average action
+    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t>=\<Gamma\><rsub|t>+<frac|1|2>*<around|\<langle\>|\<cdummy\>,K\<cdummy\>|\<rangle\>>>
+    (Section<nbsp><hlink|8.6|cqft_lecture_4.tm#sec:legendre>) is not enough.
+    Its gradient at the forecast is the noise,
+    <math|\<mathD\>\<Gamma\><rsup|<math-up|EAA>><rsub|t><around|(|\<psi\><rsub|t>|)>=K*\<psi\><rsub|t>-F<rsub|t>=\<omega\><rsub|t>>
+    by<nbsp><eqref|eq:field-eq-forecast>, which is sub-Gaussian with no
+    assumption at all (Proposition<nbsp><reference|prop:subgauss>); the force
+    differs from it by <math|K*\<psi\><rsub|t>>. Since
+    <math|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>=<math-up|Cov><rsub|t><rsup|-1>-\<cal-R\><rsub|t>>
+    and <math|\<cal-R\><rsub|t>=S<rsub|t><rsup|-1>J<rsub|t>>,
+    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t>> is convex if and only if
+    <math|<math-up|Cov><rsub|t>\<leqslant\>J<rsub|t><rsup|-1>S<rsub|t>>, i.e.
+    <math|\<mathD\><rsup|2>V<rsub|t>\<geqslant\>-Q<rsub|t><rsup|-1>>: the law
+    of <math|\<Phi\><rsub|t>> is log-concave. This holds at <math|t=0>, where
+    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>> is a Legendre transform, but
+    a log-concave law may be much wider than <math|\<mu\><rsup|Q<rsub|t>>>,
+    and Step<nbsp>2 needs <math|\<mathD\><rsup|2>V<rsub|t>\<geqslant\>0>. For
+    one mode with <math|Q<rsub|T>=1>, <math|Q<rsub|t>=q> and the negative
+    mass <math|V<rsub|T><around|(|y|)>=-<around|(|1-\<varepsilon\>|)>*y<rsup|2>/2>,
+    every <math|\<nu\><rsub|t>> is Gaussian, so
+    <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t>> is convex, but
+    <math|<math-up|Var>F<rsub|t>=<around|(|1-\<varepsilon\>|)><rsup|2>*q/<around|(|\<varepsilon\>*<around|(|\<varepsilon\>+q-q*\<varepsilon\>|)>|)>\<sim\>1/\<varepsilon\>>
+    while <math|S<rsub|t><rsup|-1>=1/<around|(|1-q|)>>.
+  </remark>
+
   <paragraph|The roughness of the noise> Compare spectral densities for the
   heat profile with <math|T=\<infty\>> and
   <math|A=<around|\||k|\|><rsup|2>+m<rsup|2>>: white noise <math|\<xi\>> has
@@ -2625,55 +2758,56 @@
     <associate|auto-24|<tuple|3|10>>
     <associate|auto-25|<tuple|4|10>>
     <associate|auto-26|<tuple|5|11>>
-    <associate|auto-27|<tuple|6|11>>
+    <associate|auto-27|<tuple|6|12>>
     <associate|auto-28|<tuple|7|12>>
-    <associate|auto-29|<tuple|8|12>>
+    <associate|auto-29|<tuple|8|13>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-30|<tuple|9.5|12>>
-    <associate|auto-31|<tuple|1|13>>
-    <associate|auto-32|<tuple|9.20|14>>
-    <associate|auto-33|<tuple|9.7|14>>
-    <associate|auto-34|<tuple|A|14>>
-    <associate|auto-35|<tuple|A.1|14>>
-    <associate|auto-36|<tuple|A.2|15>>
-    <associate|auto-37|<tuple|A.1|15>>
-    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<bullet\>>|16>>
-    <associate|auto-39|<tuple|B|16>>
+    <associate|auto-30|<tuple|9|13>>
+    <associate|auto-31|<tuple|9.5|13>>
+    <associate|auto-32|<tuple|1|14>>
+    <associate|auto-33|<tuple|9.22|15>>
+    <associate|auto-34|<tuple|9.7|15>>
+    <associate|auto-35|<tuple|A|15>>
+    <associate|auto-36|<tuple|A.1|15>>
+    <associate|auto-37|<tuple|A.2|16>>
+    <associate|auto-38|<tuple|A.1|16>>
+    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<bullet\>>|17>>
     <associate|auto-4|<tuple|3|2>>
-    <associate|auto-40|<tuple|1|16>>
-    <associate|auto-41|<tuple|B.1|17>>
-    <associate|auto-42|<tuple|1|17>>
-    <associate|auto-43|<tuple|2|17>>
-    <associate|auto-44|<tuple|3|18>>
-    <associate|auto-45|<tuple|4|19>>
-    <associate|auto-46|<tuple|<with|mode|<quote|math>|\<bullet\>>|19>>
-    <associate|auto-47|<tuple|B.2|19>>
+    <associate|auto-40|<tuple|B|17>>
+    <associate|auto-41|<tuple|1|17>>
+    <associate|auto-42|<tuple|B.1|18>>
+    <associate|auto-43|<tuple|1|18>>
+    <associate|auto-44|<tuple|2|19>>
+    <associate|auto-45|<tuple|3|20>>
+    <associate|auto-46|<tuple|4|20>>
+    <associate|auto-47|<tuple|<with|mode|<quote|math>|\<bullet\>>|20>>
+    <associate|auto-48|<tuple|B.2|21>>
     <associate|auto-5|<tuple|4|2>>
     <associate|auto-6|<tuple|4|2>>
     <associate|auto-7|<tuple|9|2>>
     <associate|auto-8|<tuple|9.1|2>>
     <associate|auto-9|<tuple|1|3>>
-    <associate|bib-ALZ06|<tuple|ALZ06|19>>
-    <associate|bib-AY02|<tuple|AY02|20>>
-    <associate|bib-BB19|<tuple|BB19|20>>
-    <associate|bib-BB21|<tuple|BB21|20>>
-    <associate|bib-BBD24|<tuple|BBD24|20>>
-    <associate|bib-BCG26|<tuple|BCG26|20>>
-    <associate|bib-BG20|<tuple|BG20|20>>
-    <associate|bib-BG21|<tuple|BG21|20>>
-    <associate|bib-BG23|<tuple|BG23|20>>
-    <associate|bib-CE22|<tuple|CE22|20>>
-    <associate|bib-Che21|<tuple|Che21|20>>
-    <associate|bib-EMS22|<tuple|EMS22|20>>
-    <associate|bib-Eld13|<tuple|Eld13|20>>
-    <associate|bib-Eld23|<tuple|Eld23|20>>
-    <associate|bib-GH21|<tuple|GH21|20>>
-    <associate|bib-GJS75|<tuple|GJS75|20>>
-    <associate|bib-KL22|<tuple|KL22|20>>
-    <associate|bib-KL24|<tuple|KL24|20>>
-    <associate|bib-Kla23|<tuple|Kla23|20>>
-    <associate|bib-Mon23|<tuple|Mon23|20>>
-    <associate|bib-Nel75|<tuple|Nel75|20>>
+    <associate|bib-ALZ06|<tuple|ALZ06|21>>
+    <associate|bib-AY02|<tuple|AY02|21>>
+    <associate|bib-BB19|<tuple|BB19|21>>
+    <associate|bib-BB21|<tuple|BB21|21>>
+    <associate|bib-BBD24|<tuple|BBD24|21>>
+    <associate|bib-BCG26|<tuple|BCG26|21>>
+    <associate|bib-BG20|<tuple|BG20|21>>
+    <associate|bib-BG21|<tuple|BG21|21>>
+    <associate|bib-BG23|<tuple|BG23|21>>
+    <associate|bib-CE22|<tuple|CE22|21>>
+    <associate|bib-Che21|<tuple|Che21|21>>
+    <associate|bib-EMS22|<tuple|EMS22|21>>
+    <associate|bib-Eld13|<tuple|Eld13|21>>
+    <associate|bib-Eld23|<tuple|Eld23|21>>
+    <associate|bib-GH21|<tuple|GH21|21>>
+    <associate|bib-GJS75|<tuple|GJS75|21>>
+    <associate|bib-KL22|<tuple|KL22|21>>
+    <associate|bib-KL24|<tuple|KL24|21>>
+    <associate|bib-Kla23|<tuple|Kla23|21>>
+    <associate|bib-Mon23|<tuple|Mon23|22>>
+    <associate|bib-Nel75|<tuple|Nel75|22>>
     <associate|cor:DS-path|<tuple|9.4|7>>
     <associate|eq:DS-euclid|<tuple|9.5|4>>
     <associate|eq:DS-path|<tuple|9.13|7>>
@@ -2682,58 +2816,62 @@
     <associate|eq:DS-terminal|<tuple|9.8|5>>
     <associate|eq:Gt|<tuple|9.1|2>>
     <associate|eq:Lambda|<tuple|9.15|9>>
-    <associate|eq:PB|<tuple|A.3|14>>
-    <associate|eq:RG-map|<tuple|A.1|14>>
+    <associate|eq:PB|<tuple|A.3|16>>
+    <associate|eq:RG-map|<tuple|A.1|15>>
     <associate|eq:SD-mink|<tuple|9.4|3>>
-    <associate|eq:cumulants|<tuple|A.4|15>>
+    <associate|eq:cumulants|<tuple|A.4|16>>
     <associate|eq:eta|<tuple|9.6|5>>
     <associate|eq:eta-projection|<tuple|9.9|6>>
-    <associate|eq:fbsde-inf|<tuple|9.19|12>>
+    <associate|eq:fbsde-inf|<tuple|9.21|13>>
     <associate|eq:field-eq-forecast|<tuple|9.12|7>>
     <associate|eq:field-eq-scale|<tuple|9.11|6>>
-    <associate|eq:first-order|<tuple|A.5|15>>
-    <associate|eq:force-integrand|<tuple|9.18|12>>
-    <associate|eq:gammaT|<tuple|A.7|16>>
+    <associate|eq:first-order|<tuple|A.5|16>>
+    <associate|eq:force-integrand|<tuple|9.20|13>>
+    <associate|eq:force-mgf|<tuple|9.18|11>>
+    <associate|eq:force-step|<tuple|9.19|11>>
+    <associate|eq:gammaT|<tuple|A.7|17>>
     <associate|eq:kolmogorov|<tuple|9.2|3>>
-    <associate|eq:lsi-cov|<tuple|B.1|17>>
+    <associate|eq:lsi-cov|<tuple|B.1|19>>
     <associate|eq:noise-cov|<tuple|9.17|10>>
     <associate|eq:noise-mgf|<tuple|9.16|10>>
     <associate|eq:noise-score|<tuple|9.14|9>>
-    <associate|eq:relative-vp|<tuple|9.20|13>>
-    <associate|eq:second-order|<tuple|A.6|15>>
-    <associate|eq:semigroup|<tuple|A.2|14>>
+    <associate|eq:relative-vp|<tuple|9.22|14>>
+    <associate|eq:second-order|<tuple|A.6|16>>
+    <associate|eq:semigroup|<tuple|A.2|15>>
     <associate|eq:tangent|<tuple|9.3|3>>
-    <associate|ex:bridge-noise|<tuple|9.6|14>>
-    <associate|ex:commutator|<tuple|A.1|16>>
-    <associate|ex:contact|<tuple|9.7|14>>
-    <associate|ex:doob|<tuple|9.1|14>>
-    <associate|ex:loc-poincare|<tuple|B.2|19>>
-    <associate|ex:lsi|<tuple|B.1|19>>
-    <associate|ex:power-counting|<tuple|A.3|16>>
-    <associate|ex:relative-vp|<tuple|9.2|14>>
-    <associate|ex:subgauss|<tuple|9.5|14>>
-    <associate|ex:sunset|<tuple|A.2|16>>
+    <associate|ex:bridge-noise|<tuple|9.6|15>>
+    <associate|ex:commutator|<tuple|A.1|17>>
+    <associate|ex:contact|<tuple|9.7|15>>
+    <associate|ex:doob|<tuple|9.1|15>>
+    <associate|ex:loc-poincare|<tuple|B.2|21>>
+    <associate|ex:lsi|<tuple|B.1|20>>
+    <associate|ex:power-counting|<tuple|A.3|17>>
+    <associate|ex:relative-vp|<tuple|9.2|15>>
+    <associate|ex:subgauss|<tuple|9.5|15>>
+    <associate|ex:sunset|<tuple|A.2|17>>
     <associate|fig:bridge-noise|<tuple|9.1|9>>
-    <associate|fig:second-order|<tuple|A.1|15>>
+    <associate|fig:second-order|<tuple|A.1|16>>
     <associate|prop:DS-pathwise|<tuple|9.2|6>>
-    <associate|prop:flat|<tuple|A.1|14>>
-    <associate|prop:loc-poincare|<tuple|B.2|18>>
-    <associate|prop:relative-vp|<tuple|9.8|13>>
-    <associate|prop:second-order|<tuple|A.2|15>>
+    <associate|prop:flat|<tuple|A.1|16>>
+    <associate|prop:force-subgauss|<tuple|9.7|11>>
+    <associate|prop:loc-poincare|<tuple|B.2|19>>
+    <associate|prop:relative-vp|<tuple|9.10|14>>
+    <associate|prop:second-order|<tuple|A.2|16>>
     <associate|prop:subgauss|<tuple|9.6|9>>
     <associate|rem:closed-local|<tuple|9.5|8>>
-    <associate|rem:noise-pathwise|<tuple|9.7|11>>
+    <associate|rem:force-convexity|<tuple|9.8|11>>
+    <associate|rem:noise-pathwise|<tuple|9.9|13>>
     <associate|sec:DS|<tuple|9.3|5>>
-    <associate|sec:algebra|<tuple|A|14>>
+    <associate|sec:algebra|<tuple|A|15>>
     <associate|sec:field-eq-mink|<tuple|9.2|3>>
-    <associate|sec:infinite-volume|<tuple|9.5|12>>
-    <associate|sec:localisation|<tuple|B|16>>
-    <associate|sec:lsi|<tuple|B.1|17>>
+    <associate|sec:infinite-volume|<tuple|9.5|13>>
+    <associate|sec:localisation|<tuple|B|17>>
+    <associate|sec:lsi|<tuple|B.1|18>>
     <associate|sec:noise-bounds|<tuple|9.4|8>>
     <associate|sec:observables|<tuple|9|2>>
-    <associate|sec:pert|<tuple|A.2|15>>
+    <associate|sec:pert|<tuple|A.2|16>>
     <associate|thm:DS-scale|<tuple|9.1|5>>
-    <associate|thm:lsi|<tuple|B.1|17>>
+    <associate|thm:lsi|<tuple|B.1|18>>
   </collection>
 </references>
 
@@ -2857,7 +2995,7 @@
       in <with|mode|<quote|math>|d=3>, only the sunset,
       <with|mode|<quote|math>|k=3>, is a non-integrable divergence for the
       <with|mode|<quote|math>|:\<varphi\><rsup|2>:> term; it is cancelled by
-      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-37>>
+      <with|mode|<quote|math>|\<gamma\><rsub|T>>.>|<pageref|auto-38>>
     </associate>
     <\associate|toc>
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Introduction>
@@ -2956,92 +3094,96 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-25>>
 
-      <with|par-left|<quote|2tab>|The roughness of the noise
+      <with|par-left|<quote|2tab>|Tails of the force
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-26>>
 
-      <with|par-left|<quote|2tab>|The noise as a stochastic observable
+      <with|par-left|<quote|2tab>|The roughness of the noise
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-27>>
 
-      <with|par-left|<quote|2tab>|Control of the force
+      <with|par-left|<quote|2tab>|The noise as a stochastic observable
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-28>>
+
+      <with|par-left|<quote|2tab>|Control of the force
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-29>>
 
       <with|par-left|<quote|2tab>|Consequence for
       <with|mode|<quote|math>|\<Phi\><rsup|4><rsub|3>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-30>>
 
       <with|par-left|<quote|1tab>|9.5<space|2spc>Infinite volume
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>
+      <no-break><pageref|auto-31>>
 
       <with|par-left|<quote|2tab>|Differences of free energies
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-32>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>
+      <no-break><pageref|auto-33>>
 
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendices:
       additional material> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-33><vspace|0.2fn>
+      <no-break><pageref|auto-34><vspace|0.2fn>
 
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       A<space|2spc>Algebraic structure of the Polchinski flow>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34><vspace|0.2fn>
+      <no-break><pageref|auto-35><vspace|0.2fn>
 
       <with|par-left|<quote|1tab>|A.1<space|2spc>A semigroup of
       renormalisation maps <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35>>
+      <no-break><pageref|auto-36>>
 
       <with|par-left|<quote|1tab>|A.2<space|2spc>Perturbation theory and
       counterterms <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36>>
+      <no-break><pageref|auto-37>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38>>
+      <no-break><pageref|auto-39>>
 
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       B<space|2spc>Stochastic localisation>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39><vspace|0.2fn>
+      <no-break><pageref|auto-40><vspace|0.2fn>
 
       <with|par-left|<quote|2tab>|Why it is useful
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40>>
+      <no-break><pageref|auto-41>>
 
       <with|par-left|<quote|1tab>|B.1<space|2spc>Log-Sobolev inequalities
       along the localisation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-41>>
+      <no-break><pageref|auto-42>>
 
       <with|par-left|<quote|2tab>|Entropy as quadratic variation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>>
+      <no-break><pageref|auto-43>>
 
       <with|par-left|<quote|2tab>|In terms of the conditional covariance
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-44>>
 
       <with|par-left|<quote|2tab>|An application: the KLS conjecture
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44>>
+      <no-break><pageref|auto-45>>
 
       <with|par-left|<quote|2tab>|The connection with Bauerschmidt\UBodineau
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45>>
+      <no-break><pageref|auto-46>>
 
       <with|par-left|<quote|1tab>|Exercises
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>
+      <no-break><pageref|auto-47>>
 
       <vspace*|0.6fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|References>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47><vspace|0.2fn>
+      <no-break><pageref|auto-48><vspace|0.2fn>
     </associate>
   </collection>
 </auxiliary>

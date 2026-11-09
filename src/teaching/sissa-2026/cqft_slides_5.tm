@@ -805,6 +805,49 @@
       </small>
     </with>
   </hidden>|<\hidden>
+    <mytitle|And the force?>
+
+    <\with|font-size|0.9>
+      <math|F<rsub|t>=-\<mathD\>V<rsub|t><around|(|\<Phi\><rsub|t>|)>=-\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\><rsub|t>|)>>.
+      Read it from the measure at resolution <math|t>,
+      <math|\<nu\><rsub|t>\<propto\>\<mathe\><rsup|-V<rsub|t>>\<mu\><rsup|Q<rsub|t>>>.
+
+      <\proposition*>
+        If <math|V<rsub|T>> is even and <math|\<Gamma\><rsub|t>> is convex,
+
+        <\equation*>
+          \<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t>|\<rangle\>>>\<leqslant\>exp
+          <around*|(|<frac|u<rsup|2>|2>*<around|\<langle\>|h,S<rsub|t><rsup|-1>*h|\<rangle\>>|)>.
+        </equation*>
+      </proposition*>
+
+      <\enumerate>
+        <item><strong|Always:> <math|\<mathD\><rsup|2>V<rsub|t>\<leqslant\>S<rsub|t><rsup|-1>>
+        (<math|<math-up|Cov><rsub|t>\<geqslant\>0>), then Cameron\UMartin:
+
+        <\equation*>
+          \<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|h,F<rsub|t>|\<rangle\>>>\<leqslant\>\<mathe\><rsup|<frac|u<rsup|2>|2>*<around|\<langle\>|h,<around|(|S<rsub|t><rsup|-1>-Q<rsub|t><rsup|-1>|)>*h|\<rangle\>>>*<space|0.17em>\<bbb-E\>*\<mathe\><rsup|u<around|\<langle\>|Q<rsub|t><rsup|-1>*h,\<Phi\><rsub|t>|\<rangle\>>>.
+        </equation*>
+
+        <item><strong|Convexity:> <math|\<Gamma\><rsub|t>> convex
+        <math|\<Rightarrow\>> <math|V<rsub|t>> convex
+        <math|\<Rightarrow\>> (Prékopa) <math|\<Phi\><rsub|t>> no wider than
+        the free field: <math|\<bbb-E\>*\<mathe\><rsup|<around|\<langle\>|k,\<Phi\><rsub|t>|\<rangle\>>>\<leqslant\>\<mathe\><rsup|<frac|1|2>*<around|\<langle\>|k,Q<rsub|t>*k|\<rangle\>>>>.
+      </enumerate>
+
+      <\small>
+        <\itemize>
+          <item>Without convexity: <math|\<mathe\><rsup|<frac|u<rsup|2>|2>*<around|\<langle\>|h,\<cal-R\><rsub|t>*h|\<rangle\>>>*\<bbb-E\><rsub|\<nu\><rsub|T>>\<mathe\><rsup|u<around|\<langle\>|K*h,\<Phi\><rsub|T>|\<rangle\>>>>:
+          the noise plus the terminal field seen through <math|K>.
+
+          <item><math|\<mathD\>\<Gamma\><rsup|<math-up|EAA>><rsub|t><around|(|\<psi\><rsub|t>|)>=\<omega\><rsub|t>>,
+          sub-Gaussian for free. <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t>>
+          convex <math|\<Leftrightarrow\>> <math|\<nu\><rsub|t>> log-concave:
+          not enough (negative mass: <math|<math-up|Var>F<rsub|t>\<sim\>1/\<varepsilon\>>).
+        </itemize>
+      </small>
+    </with>
+  </hidden>|<\hidden>
     <mytitle|How rough is the noise?>
 
     Spectral densities, heat profile, <math|T=\<infty\>> (<math|X<rsub|t>>: the free field, <math|V=0>),

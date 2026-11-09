@@ -615,6 +615,78 @@ J_t S_t^{- 1} = KJ_t + J_t
     </div>
     <div class="toggle" style="display: none">
       <div class="slide-title">
+        And the force?
+      </div>
+      <font style="font-size: 90.0%"><p>
+        <font color="#620000">\(F_t = - \mathrm{D} V_t (\Phi_t) = - \mathrm{D} \Gamma_t
+        (\psi_t)\)</font>. Read it from the measure at resolution <font color="#620000">\(t\)</font>,
+        <font color="#620000">\(\nu_t \propto \mathrm{e}^{- V_t} \mu^{Q_t}\)</font>.
+      </p><div class="slide-box">
+        <p style="margin-top: 1em">
+          <font color="#800000"><font color="#800000"><strong>Proposition.
+          </strong></font></font><i>If <font color="#620000">\(V_T\)</font> is even and
+          <font color="#620000">\(\Gamma_t\)</font> is convex,</i>
+        </p>
+        <p style="margin-bottom: 1em">
+          <i><center>
+            \(\displaystyle \mathbb{E} \mathrm{e}^{u \langle h, F_t \rangle}
+            \leqslant \exp \left(
+\frac{u^2}{2} \langle h, S_t^{- 1} h \rangle
+            \right) .\)
+          </center></i>
+        </p>
+      </div><ol>
+        <li>
+          <p>
+            <strong>Always:</strong> <font color="#620000">\(\mathrm{D}^2 V_t \leqslant
+            S_t^{- 1}\)</font> (<font color="#620000">\(\text{Cov}_t \geqslant
+            0\)</font>), then Cameron&ndash;Martin:
+          </p>
+          <center>
+            \(\displaystyle \mathbb{E} \mathrm{e}^{u \langle h, F_t \rangle}
+            \leqslant
+\mathrm{e}^{\frac{u^2}{2}  \langle h, (S_t^{- 1} -
+            Q_t^{- 1}) h \rangle}
+\hspace{0.17em} \mathbb{E} \mathrm{e}^{u
+            \langle Q_t^{- 1} h, \Phi_t \rangle}
+.\)
+          </center>
+        </li>
+        <li>
+          <p>
+            <strong>Convexity:</strong> <font color="#620000">\(\Gamma_t\)</font>
+            convex <font color="#620000">\(\Rightarrow\)</font> <font color="#620000">\(V_t\)</font>
+            convex <font color="#620000">\(\Rightarrow\)</font> (Pr&eacute;kopa) <font
+            color="#620000">\(\Phi_t\)</font> no wider than the free field: <font
+            color="#620000">\(\mathbb{E} \mathrm{e}^{\langle k, \Phi_t \rangle}
+            \leqslant
+\mathrm{e}^{\frac{1}{2}  \langle k, Q_t k
+            \rangle}\)</font>.
+          </p>
+        </li>
+      </ol><font style="font-size: 84.1%"><ul>
+        <li>
+          <p>
+            Without convexity: <font color="#620000">\(\mathrm{e}^{\frac{u^2}{2}
+            \langle h, \mathcal{R}_t h \rangle}
+\mathbb{E}_{\nu_T}
+            \mathrm{e}^{u \langle Kh, \Phi_T \rangle}\)</font>: the noise plus
+            the terminal field seen through <font color="#620000">\(K\)</font>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <font color="#620000">\(\mathrm{D} \Gamma^{\text{EAA}}_t (\psi_t) =
+            \omega_t\)</font>, sub-Gaussian for free. <font color="#620000">\(\Gamma^{\text{EAA}}_t\)</font>
+            convex <font color="#620000">\(\Leftrightarrow\)</font> <font color="#620000">\(\nu_t\)</font>
+            log-concave: not enough (negative mass: <font color="#620000">\(\text{Var}
+            F_t \sim 1 / \varepsilon\)</font>).
+          </p>
+        </li>
+      </ul></font></font>
+    </div>
+    <div class="toggle" style="display: none">
+      <div class="slide-title">
         How rough is the noise?
       </div>
       <p>
