@@ -7,8 +7,7 @@
     Lecture<nbsp>7: <math|\<Phi\><rsup|4><rsub|3>> on the torus\ 
 
     II. A priori estimates, UV stability and the limiting FBSDE
-  </doc-subtitle>|<doc-author|<cqft-author-data>>|<doc-date|November 2026
-  <emdash> <em|provisional>>>
+  </doc-subtitle>|<doc-author|<cqft-author-data>>|<doc-date|November 2026>>
 
   <abstract-data|<\abstract>
     We prove the central estimate of the construction: bounds, uniform in the

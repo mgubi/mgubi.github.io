@@ -6,7 +6,7 @@
   <doc-data|<doc-title|Supplement to Lectures 6\U7: detailed
   proofs>|<doc-subtitle|<math|\<Phi\><rsup|4><rsub|3>> on the torus:
   coefficients, consistency, and older routes>|<doc-author|<cqft-author-data>>|<doc-date|November
-  2026 <emdash> <em|provisional>>>
+  2026>>
 
   <\table-of-contents|toc>
     <vspace*|0.6fn><with|font-series|bold|math-font-series|bold|19<space|2spc>Elementary

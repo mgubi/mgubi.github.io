@@ -4,7 +4,7 @@
 
 <\body>
   <screens|<\hidden>
-    <cqft-title-slide|<math|\<Phi\><rsup|4><rsub|3>> on the torus II: a priori estimates and the limit|Joint work with Sarah-Jean Meyer, with the use of AI|SISSA lectures, Lecture<nbsp>7 (provisional) \V notes: Lecture<nbsp>7, ŸŸ13\U18>
+    <cqft-title-slide|<math|\<Phi\><rsup|4><rsub|3>> on the torus II: a priori estimates and the limit|Joint work with Sarah-Jean Meyer, with the use of AI|SISSA lectures, Lecture<nbsp>7 \V notes: Lecture<nbsp>7, ŸŸ13\U18>
   </hidden>|<\hidden>
     <mytitle|Notation from Lecture<nbsp>6>
 
