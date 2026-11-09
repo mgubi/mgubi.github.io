@@ -215,8 +215,8 @@
 
     <\lemma*>
       <dueto|scalar forward coercivity>If <math|a\<geqslant\>0>,
-      <math|0\<leqslant\>p\<leqslant\>q> and
-      <math|a*v+<frac|\<lambda\>|3>*<around|(|v+g|)><rsup|3>=p*<around|(|g+z|)>>,
+      <math|0\<leqslant\>\<varpi\>\<leqslant\>q> and
+      <math|a*v+<frac|\<lambda\>|3>*<around|(|v+g|)><rsup|3>=\<varpi\>*<around|(|g+z|)>>,
       then, with <math|r=<around|(|q/\<lambda\>|)><rsup|1/2>>,
 
       <\equation*>
@@ -249,7 +249,7 @@
         <frac|\<lambda\>|3>*w<rsup|3>*<around|(|v+g|)><rsup|3>\<geqslant\><frac|\<lambda\>|12>*w<rsup|6>+<frac|q|4>*w<rsup|4>+<frac|q*r|13><around|\||w|\|><rsup|3>-<frac|4225|6>*\<lambda\>*\<xi\><rsup|6>.
       </equation*>
 
-      <item><strong|Noise.> <math|p*g*w<rsup|3>\<leqslant\><frac|q*r|32><around|\||w|\|><rsup|3>+q<around|\||\<xi\>|\|><around|\||w|\|><rsup|3>>:
+      <item><strong|Noise.> <math|\<varpi\>*g*w<rsup|3>\<leqslant\><frac|q*r|32><around|\||w|\|><rsup|3>+q<around|\||\<xi\>|\|><around|\||w|\|><rsup|3>>:
       the first term is absorbed by the cube, and
       <math|q<around|\||\<xi\>|\|><around|\||w|\|><rsup|3>\<leqslant\><frac|q|8>*w<rsup|4>+54*q*\<xi\><rsup|4>>.
 

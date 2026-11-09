@@ -274,7 +274,7 @@
       <strong|loops>.
     </cell>>>>>
 
-    A backward Hamilton\UJacobi equation; <math|u=\<mathe\><rsup|-V>> is a
+    A backward Hamilton\UJacobi equation; <math|h\<propto\>\<mathe\><rsup|-V>> is a
     Cole\UHopf transform.
   </hidden>|<\hidden>
     <mytitle|The Polchinski equation in graphs>
@@ -527,7 +527,7 @@
     <strong|Hamiltonian:>
 
     <\equation*>
-      H<around|(|x,p,u|)>=<around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>.
+      \<cal-H\><around|(|x,p,u|)>=<around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>.
     </equation*>
 
     <\theorem*>
@@ -535,8 +535,8 @@
       <math|p> with
 
       <\equation*>
-        <wide|x|\<dot\>>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u\<in\>arg
-        max H<around|(|x,p,\<cdummy\>|)>.
+        <wide|x|\<dot\>>=\<partial\><rsub|p>*\<cal-H\>,<space|2em><wide|p|\<dot\>>=-\<partial\><rsub|x>*\<cal-H\>,<space|2em>p<rsub|T>=-D*g<around|(|x<rsub|T>|)>,<space|2em>u\<in\>arg
+        max \<cal-H\><around|(|x,p,\<cdummy\>|)>.
       </equation*>
     </theorem*>
 
@@ -566,7 +566,7 @@
         <wide|\<xi\>|\<dot\>>=\<partial\><rsub|x>*b*\<xi\>+\<partial\><rsub|u>*b*v,<space|2em>\<xi\><rsub|t>=0.
       </equation*>
 
-      The costate equation <math|<wide|p|\<dot\>>=-\<partial\><rsub|x>*H> is
+      The costate equation <math|<wide|p|\<dot\>>=-\<partial\><rsub|x>*\<cal-H\>> is
       exactly what makes
 
       <\equation*>
@@ -576,18 +576,18 @@
       Integrating, with <math|p<rsub|T>=-D*g<around|(|x<rsub|T>|)>>:
 
       <\equation*>
-        <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*H<around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
+        <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*\<cal-H\><around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
       </equation*>
 
       <strong|HJB.> Dynamic programming over
       <math|<around|[|t,t+\<mathd\>t|]>>:
 
       <\equation*>
-        V<around|(|t,x|)>=min<rsub|u><around*|[|\<ell\>*\<mathd\>t+V<around|(|t+\<mathd\>t,x+b*\<mathd\>t|)>|]><space|1em>\<Longrightarrow\><space|1em>\<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-\<mathD\>V|)>,<space|1em>H<rsub|\<ast\>>=max<rsub|u>
-        H.
+        V<around|(|t,x|)>=min<rsub|u><around*|[|\<ell\>*\<mathd\>t+V<around|(|t+\<mathd\>t,x+b*\<mathd\>t|)>|]><space|1em>\<Longrightarrow\><space|1em>\<partial\><rsub|t>*V=\<cal-H\><rsub|\<ast\>><around|(|x,-\<mathD\>V|)>,<space|1em>\<cal-H\><rsub|\<ast\>>=max<rsub|u>
+        \<cal-H\>.
       </equation*>
 
-      Hamilton's equations for <math|H<rsub|\<ast\>>> are its
+      Hamilton's equations for <math|\<cal-H\><rsub|\<ast\>>> are its
       characteristics, and along them <math|p<rsub|s>=-\<mathD\>V<around|(|s,x<rsub|s>|)>>:
       the costate is the force the future exerts on the present.
     </with>
@@ -597,11 +597,11 @@
     <\with|font-size|0.9>
       State <math|=> field, <math|b=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u>,
       <math|\<ell\>=<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>,
-      <math|g=V<rsub|T>>. <math|H> is maximised at
+      <math|g=V<rsub|T>>. <math|\<cal-H\>> is maximised at
       <math|u=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*p>:
 
       <\equation*>
-        H<rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>:
+        \<cal-H\><rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>:
       </equation*>
 
       a free particle with mass matrix <math|<wide|Q|\<dot\>><rsub|s><rsup|-1>>,
@@ -620,11 +620,11 @@
         solves a BSDE
 
         <\equation*>
-          \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*H<space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,
+          \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*\<cal-H\><space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,
         </equation*>
 
         with <math|\<Upsilon\>*\<mathd\>W> the price of adaptedness. Here
-        <math|\<partial\><rsub|x>*H=0>: the costate is a <strong|martingale>,
+        <math|\<partial\><rsub|x>*\<cal-H\>=0>: the costate is a <strong|martingale>,
         <math|p<rsub|t>=-\<mathD\>V<rsub|t><around|(|X<rsub|t>|)>=F<rsub|t>>.
 
         <item>The Itô term turns HJB into <strong|Polchinski>: quadratic part
@@ -919,8 +919,8 @@
     </equation*>
 
     <\itemize>
-      <item>Cole\UHopf <math|F=\<mathD\>log u> linearises it
-      (<math|u=\<mathe\><rsup|-V>> solves a heat equation).
+      <item>Cole\UHopf <math|F=\<mathD\>log h> linearises it
+      (<math|h\<propto\>\<mathe\><rsup|-V>> solves a heat equation).
 
       <item>Uses only the force: <strong|intensive>, while <math|V<rsub|t>>
       is extensive (<math|\<sim\>> volume). Matters in infinite volume.

@@ -381,7 +381,8 @@
   <paragraph|Euclidean rotation> Under <math|t=-\<mathi\>*\<tau\>> the
   time-ordered functions continue to the Schwinger functions
   <math|S<around|(|x,x<rsub|1>,\<ldots\>,x<rsub|n>|)>>, the moments of the
-  Euclidean field (Lecture<nbsp><hlink|1|cqft_lecture_1.tm>). Since
+  Euclidean field (Lecture<nbsp><hlink|1|cqft_lecture_1.tm>; not to be
+  confused with the covariances <math|S<rsub|t>> below). Since
   <math|\<partial\><rsub|t><rsup|2>=-\<partial\><rsub|\<tau\>><rsup|2>>, the
   operator <math|\<Box\>+m<rsup|2>> becomes <math|A=m<rsup|2>-\<Delta\>>,
   with <math|\<Delta\>> the Laplacian in all <math|d> variables. Formally
@@ -755,7 +756,7 @@
     <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+<frac|\<lambda\>|3>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<omega\><rsub|t>|\<rangle\>>+\<ldots\>,
   </equation*>
 
-  where <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>
+  where <math|a<rsup|4>-3*c<rsub|t>*a<rsup|2>\<geqslant\><frac|1|2>*a<rsup|4>-<frac|9|2>*c<rsub|t><rsup|2>>
   and <math|c<rsub|t>> is finite at fixed <math|t>: heuristically, a coercive
   bound up to a volume constant, driven by the sub-Gaussian noise of
   Section<nbsp><reference|sec:noise-bounds>. With the bare Wick ordering
@@ -830,14 +831,14 @@
     <math|F<rsub|\<infty\>>=-<frac|\<lambda\>|3>:\<Phi\><rsub|\<infty\>><rsup|3>>:.
     In <math|d=3> it is expected not to be. If it were,
     <math|F<rsub|t>=\<bbb-E\><rsub|t><around|[|F<rsub|\<infty\>>|]>> with
-    <math|F<rsub|\<infty\>>\<in\>L<rsup|1>>, the DS equation of
+    <math|F<rsub|\<infty\>><around|(|h|)>\<in\>L<rsup|2>>, the DS equation of
     Theorem<nbsp><reference|thm:DS-scale> would pass to the limit
     (<math|T\<to\>\<infty\>>, then <math|t\<to\>\<infty\>>), with
     <math|F<rsub|\<infty\>>> paired only with functionals of
     <math|\<Phi\><rsub|\<infty\>>>. Conditioning on
     <math|\<sigma\><around|(|\<Phi\><rsub|\<infty\>>|)>> would then give a
     logarithmic derivative of the <math|\<Phi\><rsup|4><rsub|3>> measure that
-    is an integrable function of the field,
+    is a square-integrable function of the field,
     <math|-<around|\<langle\>|A*h,\<Phi\><rsub|\<infty\>>|\<rangle\>>+\<bbb-E\><around|[|F<rsub|\<infty\>><around|(|h|)>\|\<Phi\><rsub|\<infty\>>|]>>.
     This is not expected: the regularised logarithmic derivatives do not
     converge in <math|L<rsup|2>><nbsp><cite|ALZ06>. The limiting force would
@@ -1318,7 +1319,8 @@
   endpoint (dashed): averaging thins the tails. The peak at <math|0> comes
   from the fields between the wells, where a small change of
   <math|\<Phi\><rsub|t>> moves the posterior from one well to the other and
-  <math|\<omega\><rsub|t>> hardly changes: a fold of the map
+  <math|\<omega\><rsub|t>> hardly changes, since the jump of the posterior
+  mean compensates the motion of <math|\<Phi\><rsub|t>>: a fold of the map
   <math|\<Phi\><rsub|t>\<mapsto\>\<omega\><rsub|t>>
   (Exercise<nbsp><reference|ex:bridge-noise>(c)).>
 
@@ -1597,9 +1599,9 @@
       if >T\<less\>\<infty\>|)>,
     </equation*>
 
-    with <math|C> having Gaussian tails uniformly in the interaction and in
-    the spatial cutoff. This is a pathwise bound at each resolution, in the
-    sense above.
+    with <math|<wide|C|~>> having Gaussian tails uniformly in the interaction
+    and in the spatial cutoff. This is a pathwise bound at each resolution,
+    in the sense above.
   </remark>
 
   <paragraph|Control of the force> Write <math|\<mathd\>F<rsub|s>=\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>>
@@ -1707,7 +1709,11 @@
     Polchinski process, i.e. the solution of the
     FBSDE<nbsp><hlink|(7.7)|cqft_lecture_4.tm#eq:fbsde-system> driven by the
     Brownian motion <math|W>, and <math|\<nu\><rsub|T>> the law of
-    <math|\<Phi\><rsub|T>>. For every <math|f> bounded from below,
+    <math|\<Phi\><rsub|T>>. For every <math|f> with
+    <math|\<mathe\><rsup|-f>\<in\>L<rsup|1><around|(|\<nu\><rsub|T>|)>> and
+    <math|f<around|(|\<Phi\><rsub|T>+I<rsub|T><around|(|w|)>|)>> integrable
+    for the admissible <math|w> below (for instance <math|f> bounded from
+    below, or linear),
 
     <\equation>
       <label|eq:relative-vp>-log <big|int>\<mathe\><rsup|-f>*\<mathd\>\<nu\><rsub|T>=inf<rsub|w>
@@ -1894,7 +1900,7 @@
   Its infinitesimal generators are the vector fields
 
   <\equation>
-    <label|eq:PB>\<cal-P\><rsub|B><around|(|V|)>\<assign\><tfrac|1|2><math-up|Tr><around|(|B*\<mathD\><rsup|2>V|)>-<tfrac|1|2><around|\<langle\>|\<mathD\>V,B*\<mathD\>V|\<rangle\>>,<space|2em><around*|.|<tfrac|\<mathd\>|\<mathd\>s>\<cal-R\><rsub|s*B><around|(|V|)>|\|><rsub|s=0>=\<cal-P\><rsub|B><around|(|V|)>,
+    <label|eq:PB>\<cal-P\><rsub|B><around|(|V|)>\<assign\><tfrac|1|2><math-up|Tr><around|(|B*\<mathD\><rsup|2>V|)>-<tfrac|1|2><around|\<langle\>|\<mathD\>V,B*\<mathD\>V|\<rangle\>>,<space|2em><around*|.|<tfrac|\<mathd\>|\<mathd\>s>\<frak-R\><rsub|s*B><around|(|V|)>|\|><rsub|s=0>=\<cal-P\><rsub|B><around|(|V|)>,
   </equation>
 
   and<nbsp><hlink|(7.8)|cqft_lecture_4.tm#eq:polchinski> reads
@@ -1910,7 +1916,7 @@
   </proposition>
 
   <\proof>
-    (a) Differentiate <math|\<cal-R\><rsub|s*B>*\<cal-R\><rsub|r*B<rprime|'>>=\<cal-R\><rsub|r*B<rprime|'>>*\<cal-R\><rsub|s*B>>
+    (a) Differentiate <math|\<frak-R\><rsub|s*B>*\<frak-R\><rsub|r*B<rprime|'>>=\<frak-R\><rsub|r*B<rprime|'>>*\<frak-R\><rsub|s*B>>
     at <math|s=r=0>, or compute directly (Exercise<nbsp><reference|ex:commutator>).
     (b) is<nbsp><eqref|eq:semigroup>.
   </proof>
@@ -2264,7 +2270,7 @@
     Then <math|\<nu\><rsub|T>> satisfies the log-Sobolev inequality
 
     <\equation*>
-      Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leqslant\><frac|2|\<gamma\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around*|[|<around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|\<rho\>>|\<\|\|\>><rsup|2>|]>,<space|2em><frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>exp
+      Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leqslant\><frac|2|\<varrho\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around*|[|<around*|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*D<sqrt|\<rho\>>|\<\|\|\>><rsup|2>|]>,<space|2em><frac|1|\<varrho\>>=<big|int><rsub|0><rsup|T>exp
       <around*|(|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r|)>*\<mathd\>t.
     </equation*>
   </theorem>
@@ -2277,14 +2283,14 @@
 
   inserted in the entropy formula it gives the theorem<nbsp><cite|BBD24>. For
   <math|V<rsub|T>=0> and a linear profile <math|Q<rsub|t>=t*Q<rsub|T>/T> one
-  may take <math|\<kappa\>=0>, so <math|1/\<gamma\>=T> and the theorem is the
-  Gaussian log-Sobolev inequality <math|Ent<around|(|\<rho\>|)>\<leqslant\>2*\<bbb-E\><around|\<langle\>|D<sqrt|\<rho\>>,Q<rsub|T>*D<sqrt|\<rho\>>|\<rangle\>>>.
+  may take <math|\<kappa\>=0>, so <math|1/\<varrho\>=T> and the theorem is
+  the Gaussian log-Sobolev inequality <math|Ent<around|(|\<rho\>|)>\<leqslant\>2*\<bbb-E\><around|\<langle\>|D<sqrt|\<rho\>>,Q<rsub|T>*D<sqrt|\<rho\>>|\<rangle\>>>.
   The hypothesis is a convexity condition on the effective potentials at
   every scale, not on <math|V<rsub|T>>, corrected by the scale dependence
   <math|<wide|Q|\<ddot\>><rsub|t>> of the decomposition;
   <math|\<kappa\><rsub|t>> may be negative at some scales: only the weights
   <math|\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r>>
-  enter <math|\<gamma\>>.
+  enter <math|\<varrho\>>.
 
   <paragraph|In terms of the conditional covariance> By
   Proposition<nbsp><hlink|8.3|cqft_lecture_4.tm#prop:H-cov>,
@@ -2476,7 +2482,8 @@
 
   <\exercise>
     <dueto|Poincaré from the localisation><label|ex:loc-poincare>(a) Check
-    that <math|N<rsub|t>=S<rsub|t><rsup|-1>*\<zeta\><rsub|t>> has covariance
+    that the measurement noise <math|S<rsub|t><rsup|-1>*\<zeta\><rsub|t>>
+    of<nbsp><hlink|(7.18)|cqft_lecture_4.tm#eq:measurement> has covariance
     <math|\<cal-R\><rsub|s\<wedge\>t>>. (b) For <math|V<rsub|T>=0> and one
     mode, compute <math|\<alpha\><rsub|r>> and verify the Gaussian check
     above. (c) In zero dimensions, with <math|\<cal-R\><rsub|r>=r> and
@@ -2616,7 +2623,7 @@
     <associate|auto-22|<tuple|9.1|9>>
     <associate|auto-23|<tuple|2|9>>
     <associate|auto-24|<tuple|3|10>>
-    <associate|auto-25|<tuple|4|11>>
+    <associate|auto-25|<tuple|4|10>>
     <associate|auto-26|<tuple|5|11>>
     <associate|auto-27|<tuple|6|11>>
     <associate|auto-28|<tuple|7|12>>
@@ -2636,17 +2643,17 @@
     <associate|auto-40|<tuple|1|16>>
     <associate|auto-41|<tuple|B.1|17>>
     <associate|auto-42|<tuple|1|17>>
-    <associate|auto-43|<tuple|2|18>>
-    <associate|auto-44|<tuple|3|19>>
+    <associate|auto-43|<tuple|2|17>>
+    <associate|auto-44|<tuple|3|18>>
     <associate|auto-45|<tuple|4|19>>
     <associate|auto-46|<tuple|<with|mode|<quote|math>|\<bullet\>>|19>>
-    <associate|auto-47|<tuple|B.2|20>>
+    <associate|auto-47|<tuple|B.2|19>>
     <associate|auto-5|<tuple|4|2>>
     <associate|auto-6|<tuple|4|2>>
     <associate|auto-7|<tuple|9|2>>
     <associate|auto-8|<tuple|9.1|2>>
     <associate|auto-9|<tuple|1|3>>
-    <associate|bib-ALZ06|<tuple|ALZ06|20>>
+    <associate|bib-ALZ06|<tuple|ALZ06|19>>
     <associate|bib-AY02|<tuple|AY02|20>>
     <associate|bib-BB19|<tuple|BB19|20>>
     <associate|bib-BB21|<tuple|BB21|20>>
@@ -2675,7 +2682,7 @@
     <associate|eq:DS-terminal|<tuple|9.8|5>>
     <associate|eq:Gt|<tuple|9.1|2>>
     <associate|eq:Lambda|<tuple|9.15|9>>
-    <associate|eq:PB|<tuple|A.3|15>>
+    <associate|eq:PB|<tuple|A.3|14>>
     <associate|eq:RG-map|<tuple|A.1|14>>
     <associate|eq:SD-mink|<tuple|9.4|3>>
     <associate|eq:cumulants|<tuple|A.4|15>>
@@ -2688,7 +2695,7 @@
     <associate|eq:force-integrand|<tuple|9.18|12>>
     <associate|eq:gammaT|<tuple|A.7|16>>
     <associate|eq:kolmogorov|<tuple|9.2|3>>
-    <associate|eq:lsi-cov|<tuple|B.1|18>>
+    <associate|eq:lsi-cov|<tuple|B.1|17>>
     <associate|eq:noise-cov|<tuple|9.17|10>>
     <associate|eq:noise-mgf|<tuple|9.16|10>>
     <associate|eq:noise-score|<tuple|9.14|9>>
@@ -2709,13 +2716,13 @@
     <associate|fig:bridge-noise|<tuple|9.1|9>>
     <associate|fig:second-order|<tuple|A.1|15>>
     <associate|prop:DS-pathwise|<tuple|9.2|6>>
-    <associate|prop:flat|<tuple|A.1|15>>
+    <associate|prop:flat|<tuple|A.1|14>>
     <associate|prop:loc-poincare|<tuple|B.2|18>>
     <associate|prop:relative-vp|<tuple|9.8|13>>
     <associate|prop:second-order|<tuple|A.2|15>>
     <associate|prop:subgauss|<tuple|9.6|9>>
     <associate|rem:closed-local|<tuple|9.5|8>>
-    <associate|rem:noise-pathwise|<tuple|9.7|12>>
+    <associate|rem:noise-pathwise|<tuple|9.7|11>>
     <associate|sec:DS|<tuple|9.3|5>>
     <associate|sec:algebra|<tuple|A|14>>
     <associate|sec:field-eq-mink|<tuple|9.2|3>>
@@ -2836,7 +2843,9 @@
       between the wells, where a small change of
       <with|mode|<quote|math>|\<Phi\><rsub|t>> moves the posterior from one
       well to the other and <with|mode|<quote|math>|\<omega\><rsub|t>> hardly
-      changes: a fold of the map <with|mode|<quote|math>|\<Phi\><rsub|t>\<mapsto\>\<omega\><rsub|t>>
+      changes, since the jump of the posterior mean compensates the motion of
+      <with|mode|<quote|math>|\<Phi\><rsub|t>>: a fold of the map
+      <with|mode|<quote|math>|\<Phi\><rsub|t>\<mapsto\>\<omega\><rsub|t>>
       (Exercise <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><reference|ex:bridge-noise>(c)).>|<pageref|auto-22>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|A.1>||The terms

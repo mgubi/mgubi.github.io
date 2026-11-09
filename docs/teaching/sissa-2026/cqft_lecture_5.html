@@ -192,7 +192,7 @@
         What the observer cannot resolve <span style="margin-left: 5mm"></span> <a href="#auto-24">10</a>
       </p>
       <p>
-        A new observation <span style="margin-left: 5mm"></span> <a href="#auto-25">11</a>
+        A new observation <span style="margin-left: 5mm"></span> <a href="#auto-25">10</a>
       </p>
       <p>
         The roughness of the noise <span style="margin-left: 5mm"></span> <a href="#auto-26">11</a>
@@ -248,10 +248,10 @@
         Entropy as quadratic variation <span style="margin-left: 5mm"></span> <a href="#auto-42">17</a>
       </p>
       <p>
-        In terms of the conditional covariance <span style="margin-left: 5mm"></span> <a href="#auto-43">18</a>
+        In terms of the conditional covariance <span style="margin-left: 5mm"></span> <a href="#auto-43">17</a>
       </p>
       <p>
-        An application: the KLS conjecture <span style="margin-left: 5mm"></span> <a href="#auto-44">19</a>
+        An application: the KLS conjecture <span style="margin-left: 5mm"></span> <a href="#auto-44">18</a>
       </p>
       <p>
         The connection with Bauerschmidt&ndash;Bodineau <span style="margin-left: 5mm"></span>
@@ -261,7 +261,7 @@
         Exercises <span style="margin-left: 5mm"></span> <a href="#auto-46">19</a>
       </p>
       <p style="margin-top: 0.6em; margin-bottom: 0.2em">
-        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-47">20</a>
+        <b>References</b> <span style="margin-left: 5mm"></span> <a href="#auto-47">19</a>
       </p>
     </div>
     <h2 id="auto-1">Introduction<span style="margin-left: 1em"></span></h2>
@@ -499,7 +499,8 @@
       <div style="display: inline">
         Under \(t = - \mathrm{i} \tau\) the time-ordered functions continue
         to the Schwinger functions \(S (x, x_1, \ldots, x_n)\), the moments of
-        the Euclidean field (Lecture <a href="cqft_lecture_1.html">1</a>). Since \(\partial_t^2 = -
+        the Euclidean field (Lecture <a href="cqft_lecture_1.html">1</a>; not to be confused with
+        the covariances \(S_t\) below). Since \(\partial_t^2 = -
         \partial_{\tau}^2\), the operator \(\Box + m^2\) becomes \(A = m^2 -
         \Delta\), with \(\Delta\) the Laplacian in all \(d\) variables.
         Formally
@@ -992,13 +993,13 @@ higher orders}) = \omega_t .\)
       \ldots,\)
     </center>
     <p>
-      where \(4 a^4 - 12 c_t a^2 \geqslant - 9 c_t^2\) and \(c_t\) is finite
-      at fixed \(t\): heuristically, a coercive bound up to a volume constant,
-      driven by the sub-Gaussian noise of Section <a href="#sec:noise-bounds">9.4</a>. With the
-      bare Wick ordering \(c_T\) the quadratic term would diverge; in \(d =
-      3\) only the mass counterterm \(\gamma_T\), of order \(\lambda^2\),
-      still does. In the form for \(\Phi_t\) the same positivity is hidden
-      behind \(\mathrm{e}^{- A / t^2}\).
+      where \(a^4 - 3 c_t a^2 \geqslant \frac{1}{2} a^4 - \frac{9}{2} c_t^2\)
+      and \(c_t\) is finite at fixed \(t\): heuristically, a coercive bound up
+      to a volume constant, driven by the sub-Gaussian noise of Section <a
+      href="#sec:noise-bounds">9.4</a>. With the bare Wick ordering \(c_T\) the quadratic term
+      would diverge; in \(d = 3\) only the mass counterterm \(\gamma_T\), of
+      order \(\lambda^2\), still does. In the form for \(\Phi_t\) the same
+      positivity is hidden behind \(\mathrm{e}^{- A / t^2}\).
     </p>
     <p>
       The integration by parts formula <class style="font-style: normal">(<a href="#eq:DS-scale">9.7</a>)</class>
@@ -1077,15 +1078,15 @@ higher orders}) = \omega_t .\)
       force to converge as an observable. In \(d = 2\) the limit is closed,
       \(F_{\infty} = - \frac{\lambda}{3} : \Phi_{\infty}^3\):. In \(d = 3\) it
       is expected not to be. If it were, \(F_t =\mathbb{E}_t [F_{\infty}]\)
-      with \(F_{\infty} \in L^1\), the DS equation of Theorem <a href="#thm:DS-scale">9.1</a>
+      with \(F_{\infty} (h) \in L^2\), the DS equation of Theorem <a href="#thm:DS-scale">9.1</a>
       would pass to the limit (\(T \to \infty\), then \(t \to \infty\)), with
       \(F_{\infty}\) paired only with functionals of \(\Phi_{\infty}\).
       Conditioning on \(\sigma (\Phi_{\infty})\) would then give a logarithmic
-      derivative of the \(\Phi^4_3\) measure that is an integrable function of
-      the field, \(- \langle Ah, \Phi_{\infty} \rangle +\mathbb{E} [F_{\infty}
-      (h) |
-\Phi_{\infty}]\). This is not expected: the regularised
-      logarithmic derivatives do not converge in \(L^2\) [<a href="#bib-ALZ06">ALZ06</a>].
+      derivative of the \(\Phi^4_3\) measure that is a square-integrable
+      function of the field, \(- \langle Ah, \Phi_{\infty} \rangle +\mathbb{E}
+      [F_{\infty} (h) |
+\Phi_{\infty}]\). This is not expected: the
+      regularised logarithmic derivatives do not converge in \(L^2\) [<a href="#bib-ALZ06">ALZ06</a>].
       The limiting force would then be an observable in the proper sense, a
       compatible family with no terminal representative. Locality of the
       limiting force is the crux of the construction [<a href="#bib-BCG26">BCG26</a>].
@@ -1222,8 +1223,9 @@ y)\)
               (dashed): averaging thins the tails. The peak at \(0\) comes
               from the fields between the wells, where a small change of
               \(\Phi_t\) moves the posterior from one well to the other and
-              \(\omega_t\) hardly changes: a fold of the map \(\Phi_t \mapsto
-              \omega_t\) (Exercise <a href="#ex:bridge-noise">9.6</a>(c)).
+              \(\omega_t\) hardly changes, since the jump of the posterior
+              mean compensates the motion of \(\Phi_t\): a fold of the map
+              \(\Phi_t \mapsto \omega_t\) (Exercise <a href="#ex:bridge-noise">9.6</a>(c)).
             </p></font>
           </div></td>
         </tr></tbody>
@@ -1567,9 +1569,9 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
 \text{ if } T < \infty),\)
     </center>
     <p style="margin-bottom: 1em">
-      with \(C\) having Gaussian tails uniformly in the interaction and in the
-      spatial cutoff. This is a pathwise bound at each resolution, in the
-      sense above.
+      with \(\tilde{C}\) having Gaussian tails uniformly in the interaction
+      and in the spatial cutoff. This is a pathwise bound at each resolution,
+      in the sense above.
     </p>
     <p>
       <div style="display: inline">
@@ -1716,7 +1718,9 @@ t)} \qquad \text{for all } t \geqslant 1 \quad (1
         the FBSDE) </strong></class><a id="prop:relative-vp"></a>(formal) Let \(\Phi\) be the
         Polchinski process, i.e. the solution of the FBSDE <a href="cqft_lecture_4.html#eq:fbsde-system">(7.7)</a>
         driven by the Brownian motion \(W\), and \(\nu_T\) the law of
-        \(\Phi_T\). For every \(f\) bounded from below,</i>
+        \(\Phi_T\). For every \(f\) with \(\mathrm{e}^{- f} \in L^1 (\nu_T)\)
+        and \(f (\Phi_T + I_T (w))\) integrable for the admissible \(w\) below
+        (for instance \(f\) bounded from below, or linear),</i>
       </p>
       <i><table width="100%">
         <tr>
@@ -1955,7 +1959,7 @@ g, m \rangle - \frac{1}{2}  \langle g,
 \langle
         \mathrm{D} V, B \mathrm{D} V \rangle, \qquad
         \left.
-\tfrac{\mathrm{d}}{\mathrm{d} s} \mathcal{R}_{sB} (V)
+\tfrac{\mathrm{d}}{\mathrm{d} s} \mathfrak{R}_{sB} (V)
         \right|_{s = 0}
 =\mathcal{P}_B (V),\)</td>
         <td align="right">(A.3)</td>
@@ -1977,8 +1981,8 @@ g, m \rangle - \frac{1}{2}  \langle g,
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>(a) Differentiate \(\mathcal{R}_{sB}
-      \mathcal{R}_{rB'} =\mathcal{R}_{rB'} \mathcal{R}_{sB}\) at \(s = r =
+      <strong class="enunciation-name">Proof. </strong>(a) Differentiate \(\mathfrak{R}_{sB}
+      \mathfrak{R}_{rB'} =\mathfrak{R}_{rB'} \mathfrak{R}_{sB}\) at \(s = r =
       0\), or compute directly (Exercise <a href="#ex:commutator">A.1</a>). (b) is <class
       style="font-style: normal">(<a href="#eq:semigroup">A.2</a>)</class>.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -2317,13 +2321,13 @@ W_t \rangle\). It&ocirc;'s
       <p style="margin-bottom: 1em">
         <i><center>
           \(\displaystyle \operatorname{Ent}_{\nu_T} (\rho) \leqslant
-          \frac{2}{\gamma}
-\mathbb{E}_{\nu_T} \left[ \left\| \dot{Q}_T^{1 / 2}
-          D \sqrt{\rho} \right\|^2
-\right], \qquad \frac{1}{\gamma} = \int_0^T
-          \exp \left( - 2 \int_t^T \kappa_r
-\mathrm{d} r \right) \mathrm{d}
-          t.\)
+          \frac{2}{\varrho}
+\mathbb{E}_{\nu_T} \left[ \left\| \dot{Q}_T^{1 /
+          2} D \sqrt{\rho} \right\|^2
+\right], \qquad \frac{1}{\varrho} =
+          \int_0^T \exp \left( - 2 \int_t^T \kappa_r
+\mathrm{d} r \right)
+          \mathrm{d} t.\)
         </center></i>
       </p>
     </div>
@@ -2340,7 +2344,7 @@ W_t \rangle\). It&ocirc;'s
     <p>
       inserted in the entropy formula it gives the theorem [<a href="#bib-BBD24">BBD24</a>].
       For \(V_T = 0\) and a linear profile \(Q_t = tQ_T / T\) one may take
-      \(\kappa = 0\), so \(1 / \gamma = T\) and the theorem is the Gaussian
+      \(\kappa = 0\), so \(1 / \varrho = T\) and the theorem is the Gaussian
       log-Sobolev inequality \(\operatorname{Ent} (\rho) \leqslant 2\mathbb{E}
       \langle D \sqrt{\rho}, Q_T D
 \sqrt{\rho} \rangle\). The hypothesis is a
@@ -2348,7 +2352,7 @@ W_t \rangle\). It&ocirc;'s
       \(V_T\), corrected by the scale dependence \(\ddot{Q}_t\) of the
       decomposition; \(\kappa_t\) may be negative at some scales: only the
       weights \(\mathrm{e}^{- 2 \int_t^T \kappa_r \mathrm{d} r}\) enter
-      \(\gamma\).
+      \(\varrho\).
     </p>
     <p>
       <div style="display: inline">
@@ -2618,11 +2622,12 @@ W_t \rangle\). It&ocirc;'s
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">B.2</class>.
         </strong><class style="font-style: normal"><strong>(Poincar&eacute; from the localisation)
-        </strong></class><a id="ex:loc-poincare"></a>(a) Check that \(N_t = S_t^{- 1} \zeta_t\)
-        has covariance \(\mathcal{R}_{s \wedge t}\). (b) For \(V_T = 0\) and
-        one mode, compute \(\alpha_r\) and verify the Gaussian check above.
-        (c) In zero dimensions, with \(\mathcal{R}_r = r\) and \(\nu =
-        \frac{1}{2} N (a, \sigma^2) + \frac{1}{2} N (- a, \sigma^2)\), compute
+        </strong></class><a id="ex:loc-poincare"></a>(a) Check that the measurement noise
+        \(S_t^{- 1} \zeta_t\) of <a href="cqft_lecture_4.html#eq:measurement">(7.18)</a> has covariance
+        \(\mathcal{R}_{s \wedge t}\). (b) For \(V_T = 0\) and one mode,
+        compute \(\alpha_r\) and verify the Gaussian check above. (c) In zero
+        dimensions, with \(\mathcal{R}_r = r\) and \(\nu = \frac{1}{2} N (a,
+        \sigma^2) + \frac{1}{2} N (- a, \sigma^2)\), compute
         \(\operatorname{Cov}_{\mu_r^{\phi}}\) and its supremum over \(\phi\).
         Using the first bound as \(t \to \infty\), deduce the Poincar&eacute;
         constant \(\leqslant \sigma^2 \mathrm{e}^{a^2 / \sigma^2}\). Compare

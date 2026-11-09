@@ -88,7 +88,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_4.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_4.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_4.tm>].
-    Revised 7 November 2026.
+    Revised 9 November 2026.
 
     <item><with|font-series|bold|Lecture 5> (5 November 2026): Observables and field equations. Observables of the interacting theory; from the Minkowski to the Euclidean field equation, and Nelson's Euclidean noise; the field equation at every resolution, with a sub-Gaussian noise; Dyson--Schwinger equations, also in pathwise form; infinite volume.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_5.pdf>]
@@ -97,7 +97,7 @@
     Slides: [<notes-store|PDF|sissa/2026/cqft_slides_5.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_slides_5.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_5.tm>].
-    Revised 7 November 2026.
+    Revised 9 November 2026.
 
     <item><with|font-series|bold|Lecture 6> (6 November 2026): The FBSDE in force coordinates, two renormalisations and the large-field problem.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_6.pdf>]

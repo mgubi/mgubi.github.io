@@ -664,13 +664,13 @@ C_q^{1 / 2})
     </table>
     <p>
       Its quadratic jet at zero is, by evenness, the operator \(D^2
-      \mathcal{T}_q [M, h] (0) = B_q [M, h]\) of (<a href="#a-eq-mass">20.8</a>) below.
-      For a translation-invariant operator \(L\) write \(L = \langle L \rangle
-      I + L^{\circ}\), with \(\langle L \rangle\) its constant-mode eigenvalue
-      and \(L^{\circ}\) centred. Given a scalar path \(\mu\), the recursion
-      has three nonlinear functions and two centred kernels, as in (<a href="cqft_lecture_6.html#eq:iteration">11.8</a>):
-      with the level masses \(M^{[j]} = \mu I + \Theta^{[j]}\) and
-      \(\Theta^{[1]} = 0\),
+      \mathcal{T}_q [M, h] (0) =\mathfrak{S}_q [M, h]\) of (<a href="#a-eq-mass">20.8</a>)
+      below. For a translation-invariant operator \(L\) write \(L = \langle L
+      \rangle I + L^{\circ}\), with \(\langle L \rangle\) its constant-mode
+      eigenvalue and \(L^{\circ}\) centred. Given a scalar path \(\mu\), the
+      recursion has three nonlinear functions and two centred kernels, as in
+      (<a href="cqft_lecture_6.html#eq:iteration">11.8</a>): with the level masses \(M^{[j]} = \mu I +
+      \Theta^{[j]}\) and \(\Theta^{[1]} = 0\),
     </p>
     <table width="100%">
       <tr>
@@ -680,9 +680,9 @@ C_q^{1 / 2})
 (\mathcal{T}_s [M^{[j]}, h^{[j]}] - \partial_s \mathcal{L}_s)
         \hspace{0.17em}
 \mathrm{d} s, \quad \Theta^{[j + 1]}_q = -
-        \int_q^{\infty} B_s [M^{[j]},
-h^{[j]}]^{\circ} \mathrm{d} s, \quad j =
-        1, 2. \)</td>
+        \int_q^{\infty} \mathfrak{S}_s
+[M^{[j]}, h^{[j]}]^{\circ} \mathrm{d}
+        s, \quad j = 1, 2. \)</td>
         <td align="right">(20.4)</td>
       </tr>
     </table>
@@ -1073,12 +1073,12 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><a id="a-eq-mass"></a>\(\displaystyle B_q [M, h] = - \lambda
-        \text{Tr} (R_{0, q}^2) I - \frac{1}{2}
-\text{Ctr}_{R_{0, q}^2} D^4 h
-        (0), \quad B_q 1 = \beta_q 1, \quad B_q := B_q
-[M^{[3]}, h^{[3]}] .
-        \)</td>
+        <td width="100%" align="center"><a id="a-eq-mass"></a>\(\displaystyle \mathfrak{S}_q [M, h] = -
+        \lambda \text{Tr} (R_{0, q}^2) I - \frac{1}{2}
+\text{Ctr}_{R_{0, q}^2}
+        D^4 h (0), \quad \mathfrak{S}_q 1 = \beta_q 1, \quad
+\mathfrak{S}_q :=
+        \mathfrak{S}_q [M^{[3]}, h^{[3]}] . \)</td>
         <td align="right">(20.8)</td>
       </tr>
     </table>
@@ -1093,27 +1093,27 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
         <td width="100%" align="center"><a id="a-eq-bdry"></a>\(\displaystyle \mu_q = b_{\ast} +
         \int_{q_{\ast}}^q \beta_s \hspace{0.17em} \mathrm{d} s,
 \quad \beta_s
-        = \langle B_s [M^{[3]}, h^{[3]}] \rangle . \)</td>
+        = \langle \mathfrak{S}_s [M^{[3]}, h^{[3]}] \rangle . \)</td>
         <td align="right">(20.9)</td>
       </tr>
     </table>
     <p>
-      Here \(B_q [M, h]\) is a deterministic operator-valued source, the
-      linear coefficient of the loop force at zero field, and \(\beta_q\) is
-      the constant-mode eigenvalue of the final one. It is distinct from the
-      sampling Brownian motion. The identity operator is written \(I\) when
-      its space is clear. Translation invariance makes the constant mode a
-      scalar. The centred parts of the sources at the first two levels define
-      \(\Theta^{[2]}\), \(\Theta^{[3]}\) in (<a href="#a-eq-iteration">20.4</a>), integrated
-      from infinity; only the scalar of the final level is imposed, from
-      \(q_{\ast}\). The linear force is \(M_q := M^{[3]}_q = \mu_q I +
-      \Theta^{[3]}_q\), so that \(\partial_q M = \beta I + B_q [M^{[2]},
-      h^{[2]}]^{\circ}\), \(\mu_{q_{\ast}} = b_{\ast}\) and \(v_1 (\Theta_q)
-      \to 0\) as \(q \to \infty\). The bare mass is \(\mu_N = \text{lim}_{q
-      \to \infty} \mu_q\), as in (<a href="cqft_lecture_6.html#eq:bare-mass">11.11</a>), whose existence is a
-      fixed-lattice assertion proved below. Note that \(q_0\) does not occur
-      in (<a href="#a-eq-iteration">20.4</a>), (<a href="#a-eq-mass">20.8</a>) or (<a href="#a-eq-bdry">20.9</a>):
-      these operators are built from \(K_q\) and the level masses alone.
+      Here \(\mathfrak{S}_q [M, h]\) is a deterministic operator-valued
+      source, the linear coefficient of the loop force at zero field, and
+      \(\beta_q\) is the constant-mode eigenvalue of the final one. The
+      identity operator is written \(I\) when its space is clear. Translation
+      invariance makes the constant mode a scalar. The centred parts of the
+      sources at the first two levels define \(\Theta^{[2]}\),
+      \(\Theta^{[3]}\) in (<a href="#a-eq-iteration">20.4</a>), integrated from infinity; only
+      the scalar of the final level is imposed, from \(q_{\ast}\). The linear
+      force is \(M_q := M^{[3]}_q = \mu_q I + \Theta^{[3]}_q\), so that
+      \(\partial_q M = \beta I +\mathfrak{S}_q [M^{[2]}, h^{[2]}]^{\circ}\),
+      \(\mu_{q_{\ast}} = b_{\ast}\) and \(v_1 (\Theta_q) \to 0\) as \(q \to
+      \infty\). The bare mass is \(\mu_N = \text{lim}_{q \to \infty} \mu_q\),
+      as in (<a href="cqft_lecture_6.html#eq:bare-mass">11.11</a>), whose existence is a fixed-lattice assertion
+      proved below. Note that \(q_0\) does not occur in (<a href="#a-eq-iteration">20.4</a>),
+      (<a href="#a-eq-mass">20.8</a>) or (<a href="#a-eq-bdry">20.9</a>): these operators are built
+      from \(K_q\) and the level masses alone.
     </p>
     <p>
       Give scalar paths on \([q_{\ast}, \infty)\) the norm
@@ -1170,9 +1170,9 @@ y^2}{2} \right), \quad h_n (y) = \hat{h}_n (y) +
         h^{[2]}] -\mathcal{T}_q
 [M^{[3]}, h^{[3]}]) + \frac{1}{2} \langle y,
         \mathcal{E}^c_q y \rangle\), with the centred kernel \(\mathcal{E}^c_q
-        = B_q [M^{[2]}, h^{[2]}]^{\circ} - B_q [M^{[3]},
-h^{[3]}]^{\circ}\),
-        and</i>
+        =\mathfrak{S}_q [M^{[2]}, h^{[2]}]^{\circ} -\mathfrak{S}_q
+[M^{[3]},
+        h^{[3]}]^{\circ}\), and</i>
       </p>
       <i><table width="100%">
         <tr>
@@ -1211,12 +1211,12 @@ Cg_q^4 . \)</td>
       Lemma <a href="#a-lem-trace">20.4</a> with \(\varepsilon_q = C (g_q + | \mu_q | / q)
       \leqslant CRg_q\); it constructs \(h^{[2]} - h^{[1]}\) through order
       eight, and adding the seed gives the individual bounds for \(h^{[2]}\)
-      at these orders. The centred source of the first level, \(B_q [M^{[1]},
-      \mathcal{L}]^{\circ}\), contracts the fourth seed vertex with \(R_{0,
-      q}^2\), whose supremum is \(Cq^{- 1 / 2}\); the distance stays in the
-      vertex, so its first moment is at most \(C \lambda^2 q^{- 3 / 2}\) and
-      \(v_1 (\Theta^{[2]}_q) \leqslant 2 C \lambda^2 q^{- 1 / 2}\), that is
-      \(\eta_q (\Theta^{[2]}) \leqslant Cg_q^2\). The local quartic
+      at these orders. The centred source of the first level, \(\mathfrak{S}_q
+      [M^{[1]}, \mathcal{L}]^{\circ}\), contracts the fourth seed vertex with
+      \(R_{0, q}^2\), whose supremum is \(Cq^{- 1 / 2}\); the distance stays
+      in the vertex, so its first moment is at most \(C \lambda^2 q^{- 3 /
+      2}\) and \(v_1 (\Theta^{[2]}_q) \leqslant 2 C \lambda^2 q^{- 1 / 2}\),
+      that is \(\eta_q (\Theta^{[2]}) \leqslant Cg_q^2\). The local quartic
       contributes only to the scalar. The second comparison, \(\mathcal{T}
       [M^{[2]}, h^{[2]}] -\mathcal{T} [M^{[1]}, h^{[1]}]\), changes the vertex
       by \(h^{[2]} - h^{[1]}\) and the mass by the centred kernel
@@ -1293,12 +1293,14 @@ C_k (1 + R) \lambda^{1 + k / 2} s^{- k / 2} .\)
     <p>
       <em>The scalar fixed point.</em> Contracting fourth tensors with the
       kernel \(R_0^2\), whose supremum is \(Cq^{- 1 / 2}\), gives for the
-      source \(B_q = B_q [M^{[j]}, h^{[j]}]\) at every level \(j\)
+      source \(\mathfrak{S}_q =\mathfrak{S}_q [M^{[j]}, h^{[j]}]\) at every
+      level \(j\)
     </p>
     <center>
-      \(\displaystyle | \beta_q | + \|B_q \|_{\text{row}} \leqslant C (g_q +
-      g_q^2), \quad v_1
-(B_q^{\circ}) \leqslant C \lambda^2 q^{- 3 / 2} .\)
+      \(\displaystyle | \beta_q | + \|\mathfrak{S}_q \|_{\text{row}} \leqslant
+      C (g_q + g_q^2),
+\quad v_1 (\mathfrak{S}_q^{\circ}) \leqslant C
+      \lambda^2 q^{- 3 / 2} .\)
     </center>
     <p>
       In the centred part the distance stays in the fourth tensor. These
@@ -1360,13 +1362,13 @@ g_{q_{\ast}}) .\)
 \text{Ctr}_{R_0^2} D^4 \Gamma^{\text{o}}
       (0)\). The scalar mass equation supplies exactly the constant mode of
       this quadratic jet, while \(\partial_q h^{[3]} = \Pi \mathcal{T}_q
-      [M^{[2]}, h^{[2]}]\) and \(\partial_q \Theta^{[3]} = B_q [M^{[2]},
-      h^{[2]}]^{\circ}\). This proves the defect identity. Apply the trace
-      bound to the last increment to obtain the fourth-derivative estimate,
-      with \(\varepsilon_q \leqslant Cg_q^3\) from (<a href="#a-eq-increments">20.11</a>) and
-      \(\eta_q (\Theta^{[3]} - \Theta^{[2]}) \leqslant Cg_q^3\). The centred
-      kernel \(\mathcal{E}^c_q\) has no tadpole contribution, since the local
-      term is a multiple of the identity; it is the centred part of
+      [M^{[2]}, h^{[2]}]\) and \(\partial_q \Theta^{[3]} =\mathfrak{S}_q
+      [M^{[2]}, h^{[2]}]^{\circ}\). This proves the defect identity. Apply the
+      trace bound to the last increment to obtain the fourth-derivative
+      estimate, with \(\varepsilon_q \leqslant Cg_q^3\) from (<a href="#a-eq-increments">20.11</a>)
+      and \(\eta_q (\Theta^{[3]} - \Theta^{[2]}) \leqslant Cg_q^3\). The
+      centred kernel \(\mathcal{E}^c_q\) has no tadpole contribution, since
+      the local term is a multiple of the identity; it is the centred part of
       \(\text{Ctr}_{\delta (R_0^2)} D^4 h^{[3]} (0) + \text{Ctr}_{R_0^2} D^4
       (h^{[3]}
 - h^{[2]}) (0)\), up to the factor \(- \frac{1}{2}\). The row
@@ -1394,12 +1396,12 @@ g_{q_{\ast}}) .\)
       </p>
       <i><table width="100%">
         <tr>
-          <td width="100%" align="center"><a id="a-eq-bare-mass"></a>\(\displaystyle \|B_q \|_{\text{row}} +
-          | \beta_q | \leqslant C \lambda (1 + g_q) a_2 (q),
-\quad | \mu_N -
-          b| \leqslant C \lambda \text{Tr} C_{q_{\ast}} \leqslant C
-\lambda N,
-          \)</td>
+          <td width="100%" align="center"><a id="a-eq-bare-mass"></a>\(\displaystyle \|\mathfrak{S}_q
+          \|_{\text{row}} + | \beta_q | \leqslant C \lambda (1 + g_q)
+a_2 (q),
+          \quad | \mu_N - b| \leqslant C \lambda \text{Tr}
+          C_{q_{\ast}}
+\leqslant C \lambda N, \)</td>
           <td align="right">(20.13)</td>
         </tr>
       </table></i>
@@ -1515,9 +1517,9 @@ Xq^{- 3}) .\)
     <center>
       \(\displaystyle | \delta \beta_q | \leqslant C \lambda (Dq^{- 3 / 2} +
       Xq^{- 5 / 2}), \quad
-v_1 (\delta B_q - \delta \beta_q I) \leqslant C
-      \lambda^2 (Dq^{- 5 / 2} +
-Xq^{- 7 / 2}) .\)
+v_1 (\delta \mathfrak{S}_q - \delta \beta_q I)
+      \leqslant C \lambda^2 (Dq^{- 5
+/ 2} + Xq^{- 7 / 2}) .\)
     </center>
     <p>
       The same bounds hold for the centred sources of the iteration at each
@@ -2184,19 +2186,19 @@ Cg_{q_{\ast}} | \delta b_{\ast} |\), and the same
       \text{Tr} C_q^2\), the quadratic path \(M_q = \mu_q I + \Theta_q\),
       \(R_{0, q} = (K_q + M_q)^{- 1}\), \(G_q (y) = (K_q + \lambda y^2)^{-
       1}\), the seed \(\mathcal{L}_q\), the corrections \(h^{[j]}_q\) of <a
-      href="cqft_lecture_6.html#eq:iteration">(11.8)</a>, the sources \(B_q [M, h]\) of (<a href="#a-eq-mass">20.8</a>),
-      with \(B_q 1 = \beta_q 1\) at the final level and centred parts
-      \(B_q^{\circ}\), the centred kernels \(\Theta^{[j]}_q\) with \(\Theta_q
-      = \Theta^{[3]}_q\), the clip \(\kappa_q\), \(\tilde{h}_q = h^{[3]}_q
-      \circ \kappa_q\), the action \(\bar{\Gamma}_q\), the response \(H_q (y)
-      = (K_q + D^2 \bar{\Gamma}_q (y))^{- 1}\), the defect \(e_q\), the drift
-      \(b_q = - H_q De_q\), and the coordinate correction \(\varrho_q (y) =
-      C_q (M_q y + D \tilde{h}_q (y))\) of (<a href="cqft_lecture_6.html#eq:coordinate">12.5</a>). \(\text{Ctr}_R
-      T\) contracts two slots of the tensor \(T\) with the kernel \(R\). The
-      letter \(H\) without a scale index is the space \(L^2 (\mathbb{T}^3)\);
-      the response always carries a scale index or a field. \(\text{HS}\) is
-      the Hilbert&ndash;Schmidt class on \(H\). The boundary value (below) is
-      \(b_{\ast}\); \(b_q (y)\) is the drift.
+      href="cqft_lecture_6.html#eq:iteration">(11.8)</a>, the sources \(\mathfrak{S}_q [M, h]\) of (<a href="#a-eq-mass">20.8</a>),
+      with \(\mathfrak{S}_q 1 = \beta_q 1\) at the final level and centred
+      parts \(\mathfrak{S}_q^{\circ}\), the centred kernels \(\Theta^{[j]}_q\)
+      with \(\Theta_q = \Theta^{[3]}_q\), the clip \(\kappa_q\), \(\tilde{h}_q
+      = h^{[3]}_q \circ \kappa_q\), the action \(\bar{\Gamma}_q\), the
+      response \(H_q (y) = (K_q + D^2 \bar{\Gamma}_q (y))^{- 1}\), the defect
+      \(e_q\), the drift \(b_q = - H_q De_q\), and the coordinate correction
+      \(\varrho_q (y) = C_q (M_q y + D \tilde{h}_q (y))\) of (<a href="cqft_lecture_6.html#eq:coordinate">12.5</a>).
+      \(\text{Ctr}_R T\) contracts two slots of the tensor \(T\) with the
+      kernel \(R\). The letter \(H\) without a scale index is the space \(L^2
+      (\mathbb{T}^3)\); the response always carries a scale index or a field.
+      \(\text{HS}\) is the Hilbert&ndash;Schmidt class on \(H\). The boundary
+      value (below) is \(b_{\ast}\); \(b_q (y)\) is the drift.
     </p>
     <p>
       Superscripts or subscripts \(N\) distinguish the cutoffs: \(\mu^N =
@@ -2847,34 +2849,35 @@ G_q (\phi) (z, x)
         \to \Theta\) in the weak path topology.</i>
       </p>
       <p>
-        <i>Suppose in addition that \(B_s\) are even finite signed measures on
-        the whole torus, weakly continuous in scale and locally bounded in
-        total variation, that \(\mathfrak{C}_s\) are their restrictions off
-        zero, with the centring supplied as in (<a href="#c-compensated">24.1</a>), so that
-        \(B_s^{\circ}\) is the centred convolution they define, and let
-        \(\beta_s\) be any continuous scalar function. If \(\mu_q = b_{\ast} +
-        \int_{q_{\ast}}^q \beta_s \hspace{0.17em} \mathrm{d} s\) and \(M_q =
-        \mu_q I + \Theta_q\), then for smooth \(u\),</i>
+        <i>Suppose in addition that \(\mathfrak{S}_s\) are even finite signed
+        measures on the whole torus, weakly continuous in scale and locally
+        bounded in total variation, that \(\mathfrak{C}_s\) are their
+        restrictions off zero, with the centring supplied as in (<a href="#c-compensated">24.1</a>),
+        so that \(\mathfrak{S}_s^{\circ}\) is the centred convolution they
+        define, and let \(\beta_s\) be any continuous scalar function. If
+        \(\mu_q = b_{\ast} + \int_{q_{\ast}}^q \beta_s \hspace{0.17em}
+        \mathrm{d} s\) and \(M_q = \mu_q I + \Theta_q\), then for smooth
+        \(u\),</i>
       </p>
       <i><table width="100%">
         <tr>
           <td width="100%" align="center"><a id="c-strongmass"></a>\(\displaystyle (M_t - M_q) u =
-          \int_q^t (\beta_s u + B_s^{\circ} u) \hspace{0.17em}
-\mathrm{d} s
-          \quad \text{in } H, \quad
+          \int_q^t (\beta_s u +\mathfrak{S}_s^{\circ} u)
+          \hspace{0.17em}
+\mathrm{d} s \quad \text{in } H, \quad
           \frac{\hspace{0.17em}
 \mathrm{d}}{\hspace{0.17em} \mathrm{d} q} (M_q
-          u) = \beta_q u + B_q^{\circ} u
-\quad \text{in } H. \)</td>
+          u) = \beta_q u
++\mathfrak{S}_q^{\circ} u \quad \text{in } H. \)</td>
           <td align="right">(28.2)</td>
         </tr>
       </table></i>
       <p style="margin-bottom: 1em">
-        <i>The scalar \(\beta\) need not be the constant mode of \(B\); in the
-        scheme of (<a href="#a-eq-iteration">20.4</a>) it comes from the final level and \(B\)
-        from the previous one. Here \(B_s^{\circ} u\) means convolution. This
-        does not assert differentiability of the measure path in total
-        variation.</i>
+        <i>The scalar \(\beta\) need not be the constant mode of
+        \(\mathfrak{S}\); in the scheme of (<a href="#a-eq-iteration">20.4</a>) it comes from
+        the final level and \(\mathfrak{S}\) from the previous one. Here
+        \(\mathfrak{S}_s^{\circ} u\) means convolution. This does not assert
+        differentiability of the measure path in total variation.</i>
       </p>
     </div>
     <p style="margin-top: 1em">
@@ -2912,27 +2915,30 @@ G_q (\phi) (z, x)
     </p>
     <center>
       \(\displaystyle \frac{1}{2} \int \delta_z^2 u\mathfrak{C}_s
-      (\hspace{0.17em} \mathrm{d} z) =
-B_s u - \langle B_s \rangle u =
-      B_s^{\circ} u,\)
+      (\hspace{0.17em} \mathrm{d} z)
+=\mathfrak{S}_s u - \langle
+      \mathfrak{S}_s \rangle u =\mathfrak{S}_s^{\circ}
+u,\)
     </center>
     <p style="margin-bottom: 1em">
-      where \(\langle B_s \rangle = B_s (\mathbb{T}^3)\); the scalar
-      \(\beta_s\) enters only the scalar part. This integral is legitimate
-      even for an infinite first moment measure: \(\| \delta_z^2 u\|_2
-      \leqslant C_u d (z)^2\). The preceding weak integral and Fubini, with
-      the integrable first moment bound, give the first identity in (<a href="#c-strongmass">28.2</a>),
-      initially against smooth tests. The constant \(b_{\ast}\) cancels in the
-      difference. To justify the strong \(H\) form, convolution by \(B_s\) has
-      norm at most \(\|B_s \|_{\text{TV}}\). For a finite Fourier sum, \(B_s
-      u\) is continuous in \(H\) by weak continuity of \(B_s\). Approximation
-      by Fourier sums and the locally uniform total variation bound give this
-      continuity for every \(u \in H\). Thus the right side is the integral of
-      a continuous \(H\)-valued function, and its fundamental theorem of
-      calculus proves the derivative assertion. On each compact scale interval
-      \(M_t - M_q\) consequently extends to a bounded operator on \(H\), even
-      when the individual \(M_q\) are only defined on a dense domain. No
-      Banach space differentiability theorem for measures is used.<span style="margin-left: 1em"></span>\(\Box\)
+      where \(\langle \mathfrak{S}_s \rangle =\mathfrak{S}_s (\mathbb{T}^3)\);
+      the scalar \(\beta_s\) enters only the scalar part. This integral is
+      legitimate even for an infinite first moment measure: \(\| \delta_z^2
+      u\|_2 \leqslant C_u d (z)^2\). The preceding weak integral and Fubini,
+      with the integrable first moment bound, give the first identity in (<a
+      href="#c-strongmass">28.2</a>), initially against smooth tests. The constant
+      \(b_{\ast}\) cancels in the difference. To justify the strong \(H\)
+      form, convolution by \(\mathfrak{S}_s\) has norm at most
+      \(\|\mathfrak{S}_s \|_{\text{TV}}\). For a finite Fourier sum,
+      \(\mathfrak{S}_s u\) is continuous in \(H\) by weak continuity of
+      \(\mathfrak{S}_s\). Approximation by Fourier sums and the locally
+      uniform total variation bound give this continuity for every \(u \in
+      H\). Thus the right side is the integral of a continuous \(H\)-valued
+      function, and its fundamental theorem of calculus proves the derivative
+      assertion. On each compact scale interval \(M_t - M_q\) consequently
+      extends to a bounded operator on \(H\), even when the individual \(M_q\)
+      are only defined on a dense domain. No Banach space differentiability
+      theorem for measures is used.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">28.2</class>. </strong><class style="font-style: normal"><strong>(Norm
@@ -2971,7 +2977,7 @@ h < c - t) .\)
           <td width="100%" align="center"><a id="c-bvp"></a>\(\displaystyle \mu_q = b_{\ast} +
           \int_{q_{\ast}}^q \beta_s \hspace{0.17em} \mathrm{d} s,
 \quad
-          \beta_s = \langle B_s [M^{[3]}, h^{[3]}] \rangle, \)</td>
+          \beta_s = \langle \mathfrak{S}_s [M^{[3]}, h^{[3]}] \rangle, \)</td>
           <td align="right">(28.3)</td>
         </tr>
       </table></i>
@@ -2980,15 +2986,15 @@ h < c - t) .\)
         corrections \(h^{[j]}\) are those of the continuum recursion (<a href="#a-eq-iteration">20.4</a>)
         on this path. The centred kernels \(\Theta^{[j], N}\) converge in the
         weak path topology to \(\Theta^{[j]}\), and the corrections as in
-        Proposition <a href="#c-finitecons">27.2</a>. The sources \(B_q [M^{[j], N}, h^{[j],
-        N}]\) converge weakly as measures on the relative variable, locally
-        uniformly in \(q\), to \(B_q [M^{[j]}, h^{[j]}]\); so \(\beta^N_q \to
-        \beta_q\) locally uniformly, and \(\hat{\Theta}^{[j], N}_q (k) \to
-        \hat{\Theta}^{[j]}_q (k)\) for each fixed \(k\). Uniqueness here
-        concerns deterministic coefficients, not a limiting Gibbs law or
-        stochastic equation. This is the first tool of Section <a href="cqft_lecture_7.html#sec:coefficients">18.1</a>
-        of Lecture <a href="cqft_lecture_7.html">7</a>, and it is the convergence used in Theorem
-        <a href="#thm:mass">22.2</a>.</i>
+        Proposition <a href="#c-finitecons">27.2</a>. The sources \(\mathfrak{S}_q [M^{[j],
+        N}, h^{[j], N}]\) converge weakly as measures on the relative
+        variable, locally uniformly in \(q\), to \(\mathfrak{S}_q [M^{[j]},
+        h^{[j]}]\); so \(\beta^N_q \to \beta_q\) locally uniformly, and
+        \(\hat{\Theta}^{[j], N}_q (k) \to \hat{\Theta}^{[j]}_q (k)\) for each
+        fixed \(k\). Uniqueness here concerns deterministic coefficients, not
+        a limiting Gibbs law or stochastic equation. This is the first tool of
+        Section <a href="cqft_lecture_7.html#sec:coefficients">18.1</a> of Lecture <a href="cqft_lecture_7.html">7</a>, and it is the
+        convergence used in Theorem <a href="#thm:mass">22.2</a>.</i>
       </p>
     </div>
     <p style="margin-top: 1em">
@@ -3039,21 +3045,22 @@ b_{\ast} | . \)</td>
       the fourth zero-field vertex. Its contraction with \(R_0^2\) converges
       by Lemma <a href="#c-weakcontr">26.4</a>; the local contribution \(- \lambda \text{Tr}
       R_0^2\) converges by Hilbert&ndash;Schmidt convergence. It follows that
-      \(B_q [M^{[j], N}, h^{[j], N}]\) converges weakly as a two-slot measure,
-      locally uniformly in scale. The limit is invariant under every torus
-      shift: approximate that shift by lattice shifts in each continuous test.
-      It is therefore also a convolution measure on the relative spatial
-      variable. Its uniform row bound gives the limiting total variation bound
-      \(\|B_q \|_{\text{TV}} \leqslant C (g_q + g_q^2)\). The uniform weak
-      convergence and finite cutoff continuity give weak continuity of this
-      source.
+      \(\mathfrak{S}_q [M^{[j], N}, h^{[j], N}]\) converges weakly as a
+      two-slot measure, locally uniformly in scale. The limit is invariant
+      under every torus shift: approximate that shift by lattice shifts in
+      each continuous test. It is therefore also a convolution measure on the
+      relative spatial variable. Its uniform row bound gives the limiting
+      total variation bound \(\|\mathfrak{S}_q \|_{\text{TV}} \leqslant C (g_q
+      + g_q^2)\). The uniform weak convergence and finite cutoff continuity
+      give weak continuity of this source.
     </p>
     <p>
       For the centred integral toward infinity, the bound of Proposition <a
       href="#a-prop-coeff">20.6</a> is
     </p>
     <center>
-      \(\displaystyle v_1 (B_s^{\circ}) \leqslant C \lambda^2 s^{- 3 / 2} .\)
+      \(\displaystyle v_1 (\mathfrak{S}_s^{\circ}) \leqslant C \lambda^2 s^{-
+      3 / 2} .\)
     </center>
     <p>
       Its upper tail in the first moment norm is at most \(2 C \lambda^2 L^{-
@@ -3069,13 +3076,14 @@ b_{\ast} | . \)</td>
       a fixed \(q\) converges, and the value \(b_{\ast}\) at \(q_{\ast}\)
       passes through unchanged. Lemma <a href="#c-weaksource">28.1</a> gives local Lipschitz
       continuity of the centred kernels in the first moment norm; the scalar
-      source gives it for \(\mu\). The identity \(M' = \beta I + B_q [M^{[2]},
-      h^{[2]}]^{\circ}\) in the continuum has the strong vector meaning (<a
-      href="#c-strongmass">28.2</a>). In particular the term \(M' y\) in the complete
-      gradient (<a href="#c-gradient">29.1</a>) below means a bounded convolution, also on
-      nonsmooth \(H\) inputs. No derivative in total variation norm is needed
-      to define the drift. Lower semicontinuity keeps the limits in the same
-      balls. There is no infinite upper scale integral for the scalar mass.
+      source gives it for \(\mu\). The identity \(M' = \beta I +\mathfrak{S}_q
+      [M^{[2]}, h^{[2]}]^{\circ}\) in the continuum has the strong vector
+      meaning (<a href="#c-strongmass">28.2</a>). In particular the term \(M' y\) in the
+      complete gradient (<a href="#c-gradient">29.1</a>) below means a bounded convolution,
+      also on nonsmooth \(H\) inputs. No derivative in total variation norm is
+      needed to define the drift. Lower semicontinuity keeps the limits in the
+      same balls. There is no infinite upper scale integral for the scalar
+      mass.
     </p>
     <p>
       <strong>Step 3: iteration.</strong> Iterate \(\mathcal{A}_N\) from the
@@ -3223,13 +3231,13 @@ H_{q_{\ast}} (y) (y -
     <p>
       The first term and its tested derivatives converge by the trace argument
       of Proposition <a href="#c-finitecons">27.2</a>; the second by the finite chain rule.
-      The mass derivative \(M' = \beta_q I + B_q [M^{[2]}, h^{[2]}]^{\circ}\)
-      is identified in Theorem <a href="#c-pathcons">28.3</a>. In the complete gradient (<a
-      href="#c-gradient">29.1</a>), both covariance terms converge weakly after testing the
-      open slot, by Lemma <a href="#c-weakcontr">26.4</a>. All terms are bounded in
-      \(L^{\infty}\) on this fixed bounded profile. Thus \(De^N_q (\phi_N)\)
-      and its trace part converge weakly in \(L^2\) at each scale, which is
-      (b).
+      The mass derivative \(M' = \beta_q I +\mathfrak{S}_q [M^{[2]},
+      h^{[2]}]^{\circ}\) is identified in Theorem <a href="#c-pathcons">28.3</a>. In the
+      complete gradient (<a href="#c-gradient">29.1</a>), both covariance terms converge
+      weakly after testing the open slot, by Lemma <a href="#c-weakcontr">26.4</a>. All
+      terms are bounded in \(L^{\infty}\) on this fixed bounded profile. Thus
+      \(De^N_q (\phi_N)\) and its trace part converge weakly in \(L^2\) at
+      each scale, which is (b).
     </p>
     <p>
       The inverse turns this into a strong drift limit. If \(f_N\) is bounded
@@ -3359,8 +3367,8 @@ H_z^2) (u, v) | \leqslant C_I (d (u) + d (v)) .\)
       \tilde{h}_q [y - z]\), and the covariance difference is bounded using
       the last display and the rooted third tensor. The terms \(M'_q y\) and
       \(D \partial_q \tilde{h}_q\) are linear, respectively Lipschitz, with
-      constant \(Cg_q\), by \(\|B_q \|_{\text{TV}} \leqslant Cg_q\) and <a
-      href="cqft_lecture_6.html#eq:global-h">(12.2)</a>. These give
+      constant \(Cg_q\), by \(\|\mathfrak{S}_q \|_{\text{TV}} \leqslant Cg_q\)
+      and <a href="cqft_lecture_6.html#eq:global-h">(12.2)</a>. These give
     </p>
     <center>
       \(\displaystyle \|De_q (y) - De_q (z)\|_2 + \|D \Upsilon_q (y) - D

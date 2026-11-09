@@ -545,7 +545,7 @@
   </equation>
 
   Its quadratic jet at zero is, by evenness, the operator
-  <math|D<rsup|2>\<cal-T\><rsub|q><around|[|M,h|]><around|(|0|)>=B<rsub|q><around|[|M,h|]>>
+  <math|D<rsup|2>\<cal-T\><rsub|q><around|[|M,h|]><around|(|0|)>=\<frak-S\><rsub|q><around|[|M,h|]>>
   of (<reference|a-eq-mass>) below. For a translation-invariant operator
   <math|L> write <math|L=<around|\<langle\>|L|\<rangle\>>I+L<rsup|\<circ\>>>,
   with <math|<around|\<langle\>|L|\<rangle\>>> its constant-mode eigenvalue
@@ -558,7 +558,7 @@
   <\equation>
     h<rsup|<around|[|1|]>>=\<cal-L\>,<space|1em>
     h<rsub|q><rsup|<around|[|j+1|]>>=\<cal-L\><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\><around|(|\<cal-T\><rsub|s><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>\<cal-L\><rsub|s>|)><space|0.17em>\<mathd\>
-    s,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>>B<rsub|s><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]><rsup|\<circ\>>\<mathd\>s,<space|1em>
+    s,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>>\<frak-S\><rsub|s><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]><rsup|\<circ\>>\<mathd\>s,<space|1em>
     j=1,2.<label|a-eq-iteration>
   </equation>
 
@@ -928,8 +928,8 @@
   as in (<hlink|11.9|cqft_lecture_6.tm#eq:mass>),
 
   <\equation>
-    B<rsub|q><around|[|M,h|]>=-\<lambda\><math-up|Tr><around|(|R<rsub|0,q><rsup|2>|)>I-<frac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|4>h<around|(|0|)>,<space|1em>
-    B<rsub|q>1=\<beta\><rsub|q>1,<space|1em>B<rsub|q>\<assign\>B<rsub|q><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>.<label|a-eq-mass>
+    \<frak-S\><rsub|q><around|[|M,h|]>=-\<lambda\><math-up|Tr><around|(|R<rsub|0,q><rsup|2>|)>I-<frac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|4>h<around|(|0|)>,<space|1em>
+    \<frak-S\><rsub|q>1=\<beta\><rsub|q>1,<space|1em>\<frak-S\><rsub|q>\<assign\>\<frak-S\><rsub|q><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>.<label|a-eq-mass>
   </equation>
 
   Let <math|\<cal-B\>=<around|[|-B<rsub|0>\<lambda\>
@@ -940,21 +940,20 @@
 
   <\equation>
     \<mu\><rsub|q>=b<rsub|\<ast\>>+<big|int><rsub|q<rsub|\<ast\>>><rsup|q>\<beta\><rsub|s><space|0.17em>\<mathd\>
-    s,<space|1em>\<beta\><rsub|s>=<around|\<langle\>|B<rsub|s><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>|\<rangle\>>.<label|a-eq-bdry>
+    s,<space|1em>\<beta\><rsub|s>=<around|\<langle\>|\<frak-S\><rsub|s><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>|\<rangle\>>.<label|a-eq-bdry>
   </equation>
 
-  Here <math|B<rsub|q><around|[|M,h|]>> is a deterministic operator-valued
-  source, the linear coefficient of the loop force at zero field, and
-  <math|\<beta\><rsub|q>> is the constant-mode eigenvalue of the final one.
-  It is distinct from the sampling Brownian motion. The identity operator is
-  written <math|I> when its space is clear. Translation invariance makes the
-  constant mode a scalar. The centred parts of the sources at the first two
-  levels define <math|\<Theta\><rsup|<around|[|2|]>>>,
-  <math|\<Theta\><rsup|<around|[|3|]>>> in (<reference|a-eq-iteration>),
-  integrated from infinity; only the scalar of the final level is imposed,
-  from <math|q<rsub|\<ast\>>>. The linear force is
-  <math|M<rsub|q>\<assign\>M<rsup|<around|[|3|]>><rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsup|<around|[|3|]>><rsub|q>>,
-  so that <math|\<partial\><rsub|q>M=\<beta\>I+B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>,
+  Here <math|\<frak-S\><rsub|q><around|[|M,h|]>> is a deterministic
+  operator-valued source, the linear coefficient of the loop force at zero
+  field, and <math|\<beta\><rsub|q>> is the constant-mode eigenvalue of the
+  final one. The identity operator is written <math|I> when its space is
+  clear. Translation invariance makes the constant mode a scalar. The centred
+  parts of the sources at the first two levels define
+  <math|\<Theta\><rsup|<around|[|2|]>>>, <math|\<Theta\><rsup|<around|[|3|]>>>
+  in (<reference|a-eq-iteration>), integrated from infinity; only the scalar
+  of the final level is imposed, from <math|q<rsub|\<ast\>>>. The linear
+  force is <math|M<rsub|q>\<assign\>M<rsup|<around|[|3|]>><rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsup|<around|[|3|]>><rsub|q>>,
+  so that <math|\<partial\><rsub|q>M=\<beta\>I+\<frak-S\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>,
   <math|\<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>> and
   <math|v<rsub|1><around|(|\<Theta\><rsub|q>|)>\<to\>0> as
   <math|q\<to\>\<infty\>>. The bare mass is
@@ -1010,7 +1009,7 @@
     on <math|\<cal-B\><rsub|q>> is, as in
     (<hlink|11.14|cqft_lecture_6.tm#eq:defect-bound>),
     <math|e<rsub|q><rsup|<math-up|o>>=\<Pi\><around|(|\<cal-T\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]>-\<cal-T\><rsub|q><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>|)>+<frac|1|2><around|\<langle\>|y,\<cal-E\><rsup|c><rsub|q>y|\<rangle\>>>,
-    with the centred kernel <math|\<cal-E\><rsup|c><rsub|q>=B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>-B<rsub|q><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]><rsup|\<circ\>>>,
+    with the centred kernel <math|\<cal-E\><rsup|c><rsub|q>=\<frak-S\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>-\<frak-S\><rsub|q><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]><rsup|\<circ\>>>,
     and
 
     <\equation>
@@ -1045,7 +1044,7 @@
     it constructs <math|h<rsup|<around|[|2|]>>-h<rsup|<around|[|1|]>>>
     through order eight, and adding the seed gives the individual bounds for
     <math|h<rsup|<around|[|2|]>>> at these orders. The centred source of the
-    first level, <math|B<rsub|q><around|[|M<rsup|<around|[|1|]>>,\<cal-L\>|]><rsup|\<circ\>>>,
+    first level, <math|\<frak-S\><rsub|q><around|[|M<rsup|<around|[|1|]>>,\<cal-L\>|]><rsup|\<circ\>>>,
     contracts the fourth seed vertex with <math|R<rsub|0,q><rsup|2>>, whose
     supremum is <math|C*q<rsup|-1/2>>; the distance stays in the vertex, so
     its first moment is at most <math|C\<lambda\><rsup|2>q<rsup|-3/2>> and
@@ -1130,13 +1129,13 @@
 
     <em|The scalar fixed point.> Contracting fourth tensors with the kernel
     <math|R<rsub|0><rsup|2>>, whose supremum is <math|C*q<rsup|-1/2>>, gives
-    for the source <math|B<rsub|q>=B<rsub|q><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]>>
+    for the source <math|\<frak-S\><rsub|q>=\<frak-S\><rsub|q><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]>>
     at every level <math|j>
 
     <\equation*>
-      <around|\||\<beta\><rsub|q>|\|>+<around|\<\|\|\>|B<rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<leqslant\>
+      <around|\||\<beta\><rsub|q>|\|>+<around|\<\|\|\>|\<frak-S\><rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<leqslant\>
       C<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>,<space|1em>
-      v<rsub|1><around|(|B<rsub|q><rsup|\<circ\>>|)>\<leqslant\>
+      v<rsub|1><around|(|\<frak-S\><rsub|q><rsup|\<circ\>>|)>\<leqslant\>
       C\<lambda\><rsup|2>q<rsup|-3/2>.
     </equation*>
 
@@ -1201,7 +1200,7 @@
     H|)><around|(|0|)>=-<frac|1|2><math-up|Ctr><rsub|R<rsub|0><rsup|2>>D<rsup|4>\<Gamma\><rsup|<math-up|o>><around|(|0|)>>.
     The scalar mass equation supplies exactly the constant mode of this
     quadratic jet, while <math|\<partial\><rsub|q>h<rsup|<around|[|3|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]>>
-    and <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>.
+    and <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=\<frak-S\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>.
     This proves the defect identity. Apply the trace bound to the last
     increment to obtain the fourth-derivative estimate, with
     <math|\<varepsilon\><rsub|q>\<leqslant\>C*g<rsub|q><rsup|3>> from
@@ -1231,7 +1230,7 @@
     preceding infinite-scale construction satisfies
 
     <\equation>
-      <around|\<\|\|\>|B<rsub|q>|\<\|\|\>><rsub|<math-up|row>>+<around|\||\<beta\><rsub|q>|\|>\<leqslant\>
+      <around|\<\|\|\>|\<frak-S\><rsub|q>|\<\|\|\>><rsub|<math-up|row>>+<around|\||\<beta\><rsub|q>|\|>\<leqslant\>
       C\<lambda\><around|(|1+g<rsub|q>|)>a<rsub|2><around|(|q|)>,<space|1em><around|\||\<mu\><rsub|N>-b|\|>\<leqslant\>
       C\<lambda\><math-up|Tr> C<rsub|q<rsub|\<ast\>>>\<leqslant\> C\<lambda\>
       N,<label|a-eq-bare-mass>
@@ -1349,7 +1348,7 @@
     <\equation*>
       <around|\||\<delta\>\<beta\><rsub|q>|\|>\<leqslant\>
       C\<lambda\><around|(|D*q<rsup|-3/2>+X*q<rsup|-5/2>|)>,<space|1em>
-      v<rsub|1><around|(|\<delta\> B<rsub|q>-\<delta\>\<beta\><rsub|q>I|)>\<leqslant\>
+      v<rsub|1><around|(|\<delta\> \<frak-S\><rsub|q>-\<delta\>\<beta\><rsub|q>I|)>\<leqslant\>
       C\<lambda\><rsup|2><around|(|D*q<rsup|-5/2>+X*q<rsup|-7/2>|)>.
     </equation*>
 
@@ -2004,9 +2003,9 @@
   y<rsup|2>|)><rsup|-1>>, the seed <math|\<cal-L\><rsub|q>>, the corrections
   <math|h<rsup|<around|[|j|]>><rsub|q>> of
   <hlink|(11.8)|cqft_lecture_6.tm#eq:iteration>, the sources
-  <math|B<rsub|q><around|[|M,h|]>> of (<reference|a-eq-mass>), with
-  <math|B<rsub|q>1=\<beta\><rsub|q>1> at the final level and centred parts
-  <math|B<rsub|q><rsup|\<circ\>>>, the centred kernels
+  <math|\<frak-S\><rsub|q><around|[|M,h|]>> of (<reference|a-eq-mass>), with
+  <math|\<frak-S\><rsub|q>1=\<beta\><rsub|q>1> at the final level and centred
+  parts <math|\<frak-S\><rsub|q><rsup|\<circ\>>>, the centred kernels
   <math|\<Theta\><rsup|<around|[|j|]>><rsub|q>> with
   <math|\<Theta\><rsub|q>=\<Theta\><rsup|<around|[|3|]>><rsub|q>>, the clip
   <math|\<kappa\><rsub|q>>, <math|<wide|h|~><rsub|q>=h<rsup|<around|[|3|]>><rsub|q>\<circ\>\<kappa\><rsub|q>>,
@@ -2607,28 +2606,29 @@
     uniformly in scale against annular tests, with the same integrable bound,
     then <math|\<Theta\><rsup|N>\<to\>\<Theta\>> in the weak path topology.
 
-    Suppose in addition that <math|B<rsub|s>> are even finite signed measures
-    on the whole torus, weakly continuous in scale and locally bounded in
-    total variation, that <math|\<frak-C\><rsub|s>> are their restrictions
-    off zero, with the centring supplied as in (<reference|c-compensated>),
-    so that <math|B<rsub|s><rsup|\<circ\>>> is the centred convolution they
-    define, and let <math|\<beta\><rsub|s>> be any continuous scalar
-    function. If <math|\<mu\><rsub|q>=b<rsub|\<ast\>>+<big|int><rsub|q<rsub|\<ast\>>><rsup|q>\<beta\><rsub|s><space|0.17em>\<mathd\>
+    Suppose in addition that <math|\<frak-S\><rsub|s>> are even finite signed
+    measures on the whole torus, weakly continuous in scale and locally
+    bounded in total variation, that <math|\<frak-C\><rsub|s>> are their
+    restrictions off zero, with the centring supplied as in
+    (<reference|c-compensated>), so that <math|\<frak-S\><rsub|s><rsup|\<circ\>>>
+    is the centred convolution they define, and let <math|\<beta\><rsub|s>>
+    be any continuous scalar function. If
+    <math|\<mu\><rsub|q>=b<rsub|\<ast\>>+<big|int><rsub|q<rsub|\<ast\>>><rsup|q>\<beta\><rsub|s><space|0.17em>\<mathd\>
     s> and <math|M<rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsub|q>>, then for
     smooth <math|u>,
 
     <\equation>
-      <around|(|M<rsub|t>-M<rsub|q>|)>u=<big|int><rsub|q><rsup|t><around|(|\<beta\><rsub|s>u+B<rsub|s><rsup|\<circ\>>u|)><space|0.17em>\<mathd\>
+      <around|(|M<rsub|t>-M<rsub|q>|)>u=<big|int><rsub|q><rsup|t><around|(|\<beta\><rsub|s>u+\<frak-S\><rsub|s><rsup|\<circ\>>u|)><space|0.17em>\<mathd\>
       s<space|1em><text|in >H,<space|1em><frac|<space|0.17em>\<mathd\>|<space|0.17em>\<mathd\>
-      q><around|(|M<rsub|q>u|)>=\<beta\><rsub|q>u+B<rsub|q><rsup|\<circ\>>u<space|1em><text|in
+      q><around|(|M<rsub|q>u|)>=\<beta\><rsub|q>u+\<frak-S\><rsub|q><rsup|\<circ\>>u<space|1em><text|in
       >H.<label|c-strongmass>
     </equation>
 
-    The scalar <math|\<beta\>> need not be the constant mode of <math|B>; in
-    the scheme of (<reference|a-eq-iteration>) it comes from the final level
-    and <math|B> from the previous one. Here <math|B<rsub|s><rsup|\<circ\>>u>
-    means convolution. This does not assert differentiability of the measure
-    path in total variation.
+    The scalar <math|\<beta\>> need not be the constant mode of
+    <math|\<frak-S\>>; in the scheme of (<reference|a-eq-iteration>) it comes
+    from the final level and <math|\<frak-S\>> from the previous one. Here
+    <math|\<frak-S\><rsub|s><rsup|\<circ\>>u> means convolution. This does
+    not assert differentiability of the measure path in total variation.
   </lemma>
 
   <\proof>
@@ -2667,10 +2667,10 @@
 
     <\equation*>
       <frac|1|2><big|int>\<delta\><rsub|z><rsup|2>u\<frak-C\><rsub|s><around|(|<space|0.17em>\<mathd\>
-      z|)>=B<rsub|s>u-<around|\<langle\>|B<rsub|s>|\<rangle\>>u=B<rsub|s><rsup|\<circ\>>u,
+      z|)>=\<frak-S\><rsub|s>u-<around|\<langle\>|\<frak-S\><rsub|s>|\<rangle\>>u=\<frak-S\><rsub|s><rsup|\<circ\>>u,
     </equation*>
 
-    where <math|<around|\<langle\>|B<rsub|s>|\<rangle\>>=B<rsub|s><around|(|\<bbb-T\><rsup|3>|)>>;
+    where <math|<around|\<langle\>|\<frak-S\><rsub|s>|\<rangle\>>=\<frak-S\><rsub|s><around|(|\<bbb-T\><rsup|3>|)>>;
     the scalar <math|\<beta\><rsub|s>> enters only the scalar part. This
     integral is legitimate even for an infinite first moment measure:
     <math|<around|\<\|\|\>|\<delta\><rsub|z><rsup|2>u|\<\|\|\>><rsub|2>\<leqslant\>
@@ -2678,18 +2678,18 @@
     Fubini, with the integrable first moment bound, give the first identity
     in (<reference|c-strongmass>), initially against smooth tests. The
     constant <math|b<rsub|\<ast\>>> cancels in the difference. To justify the
-    strong <math|H> form, convolution by <math|B<rsub|s>> has norm at most
-    <math|<around|\<\|\|\>|B<rsub|s>|\<\|\|\>><rsub|<math-up|TV>>>. For a
-    finite Fourier sum, <math|B<rsub|s>u> is continuous in <math|H> by weak
-    continuity of <math|B<rsub|s>>. Approximation by Fourier sums and the
-    locally uniform total variation bound give this continuity for every
-    <math|u\<in\> H>. Thus the right side is the integral of a continuous
-    <math|H>-valued function, and its fundamental theorem of calculus proves
-    the derivative assertion. On each compact scale interval
-    <math|M<rsub|t>-M<rsub|q>> consequently extends to a bounded operator on
-    <math|H>, even when the individual <math|M<rsub|q>> are only defined on a
-    dense domain. No Banach space differentiability theorem for measures is
-    used.
+    strong <math|H> form, convolution by <math|\<frak-S\><rsub|s>> has norm
+    at most <math|<around|\<\|\|\>|\<frak-S\><rsub|s>|\<\|\|\>><rsub|<math-up|TV>>>.
+    For a finite Fourier sum, <math|\<frak-S\><rsub|s>u> is continuous in
+    <math|H> by weak continuity of <math|\<frak-S\><rsub|s>>. Approximation
+    by Fourier sums and the locally uniform total variation bound give this
+    continuity for every <math|u\<in\> H>. Thus the right side is the
+    integral of a continuous <math|H>-valued function, and its fundamental
+    theorem of calculus proves the derivative assertion. On each compact
+    scale interval <math|M<rsub|t>-M<rsub|q>> consequently extends to a
+    bounded operator on <math|H>, even when the individual <math|M<rsub|q>>
+    are only defined on a dense domain. No Banach space differentiability
+    theorem for measures is used.
   </proof>
 
   <\remark>
@@ -2726,7 +2726,7 @@
 
     <\equation>
       \<mu\><rsub|q>=b<rsub|\<ast\>>+<big|int><rsub|q<rsub|\<ast\>>><rsup|q>\<beta\><rsub|s><space|0.17em>\<mathd\>
-      s,<space|1em>\<beta\><rsub|s>=<around|\<langle\>|B<rsub|s><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>|\<rangle\>>,<label|c-bvp>
+      s,<space|1em>\<beta\><rsub|s>=<around|\<langle\>|\<frak-S\><rsub|s><around|[|M<rsup|<around|[|3|]>>,h<rsup|<around|[|3|]>>|]>|\<rangle\>>,<label|c-bvp>
     </equation>
 
     where the level masses <math|M<rsup|<around|[|j|]>>=\<mu\>I+\<Theta\><rsup|<around|[|j|]>>>
@@ -2735,9 +2735,9 @@
     centred kernels <math|\<Theta\><rsup|<around|[|j|]>,N>> converge in the
     weak path topology to <math|\<Theta\><rsup|<around|[|j|]>>>, and the
     corrections as in Proposition<nbsp><reference|c-finitecons>. The sources
-    <math|B<rsub|q><around|[|M<rsup|<around|[|j|]>,N>,h<rsup|<around|[|j|]>,N>|]>>
+    <math|\<frak-S\><rsub|q><around|[|M<rsup|<around|[|j|]>,N>,h<rsup|<around|[|j|]>,N>|]>>
     converge weakly as measures on the relative variable, locally uniformly
-    in <math|q>, to <math|B<rsub|q><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]>>;
+    in <math|q>, to <math|\<frak-S\><rsub|q><around|[|M<rsup|<around|[|j|]>>,h<rsup|<around|[|j|]>>|]>>;
     so <math|\<beta\><rsup|N><rsub|q>\<to\>\<beta\><rsub|q>> locally
     uniformly, and <math|<wide|\<Theta\>|^><rsup|<around|[|j|]>,N><rsub|q><around|(|k|)>\<to\><wide|\<Theta\>|^><rsup|<around|[|j|]>><rsub|q><around|(|k|)>>
     for each fixed <math|k>. Uniqueness here concerns deterministic
@@ -2795,13 +2795,13 @@
     converges by Lemma<nbsp><reference|c-weakcontr>; the local contribution
     <math|-\<lambda\><math-up|Tr> R<rsub|0><rsup|2>> converges by
     Hilbert\USchmidt convergence. It follows that
-    <math|B<rsub|q><around|[|M<rsup|<around|[|j|]>,N>,h<rsup|<around|[|j|]>,N>|]>>
+    <math|\<frak-S\><rsub|q><around|[|M<rsup|<around|[|j|]>,N>,h<rsup|<around|[|j|]>,N>|]>>
     converges weakly as a two-slot measure, locally uniformly in scale. The
     limit is invariant under every torus shift: approximate that shift by
     lattice shifts in each continuous test. It is therefore also a
     convolution measure on the relative spatial variable. Its uniform row
     bound gives the limiting total variation bound
-    <math|<around|\<\|\|\>|B<rsub|q>|\<\|\|\>><rsub|<math-up|TV>>\<leqslant\>
+    <math|<around|\<\|\|\>|\<frak-S\><rsub|q>|\<\|\|\>><rsub|<math-up|TV>>\<leqslant\>
     C<around|(|g<rsub|q>+g<rsub|q><rsup|2>|)>>. The uniform weak convergence
     and finite cutoff continuity give weak continuity of this source.
 
@@ -2809,7 +2809,7 @@
     Proposition<nbsp><reference|a-prop-coeff> is
 
     <\equation*>
-      v<rsub|1><around|(|B<rsub|s><rsup|\<circ\>>|)>\<leqslant\>
+      v<rsub|1><around|(|\<frak-S\><rsub|s><rsup|\<circ\>>|)>\<leqslant\>
       C\<lambda\><rsup|2>s<rsup|-3/2>.
     </equation*>
 
@@ -2829,7 +2829,7 @@
     passes through unchanged. Lemma<nbsp><reference|c-weaksource> gives local
     Lipschitz continuity of the centred kernels in the first moment norm; the
     scalar source gives it for <math|\<mu\>>. The identity
-    <math|M<rprime|'>=\<beta\>I+B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>
+    <math|M<rprime|'>=\<beta\>I+\<frak-S\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>
     in the continuum has the strong vector meaning
     (<reference|c-strongmass>). In particular the term <math|M<rprime|'>y> in
     the complete gradient (<reference|c-gradient>) below means a bounded
@@ -2965,7 +2965,7 @@
 
     The first term and its tested derivatives converge by the trace argument
     of Proposition<nbsp><reference|c-finitecons>; the second by the finite
-    chain rule. The mass derivative <math|M<rprime|'>=\<beta\><rsub|q>I+B<rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>
+    chain rule. The mass derivative <math|M<rprime|'>=\<beta\><rsub|q>I+\<frak-S\><rsub|q><around|[|M<rsup|<around|[|2|]>>,h<rsup|<around|[|2|]>>|]><rsup|\<circ\>>>
     is identified in Theorem<nbsp><reference|c-pathcons>. In the complete
     gradient (<reference|c-gradient>), both covariance terms converge weakly
     after testing the open slot, by Lemma<nbsp><reference|c-weakcontr>. All
@@ -3094,7 +3094,7 @@
     The terms <math|M<rprime|'><rsub|q>y> and
     <math|D\<partial\><rsub|q><wide|h|~><rsub|q>> are linear, respectively
     Lipschitz, with constant <math|C*g<rsub|q>>, by
-    <math|<around|\<\|\|\>|B<rsub|q>|\<\|\|\>><rsub|<math-up|TV>>\<leqslant\>
+    <math|<around|\<\|\|\>|\<frak-S\><rsub|q>|\<\|\|\>><rsub|<math-up|TV>>\<leqslant\>
     C*g<rsub|q>> and <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>. These give
 
     <\equation*>

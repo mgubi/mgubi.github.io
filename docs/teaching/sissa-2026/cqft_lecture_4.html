@@ -728,21 +728,24 @@ t +
       </div>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
-      <strong class="enunciation-name">Proof. </strong>\(u_t := \mathrm{e}^{- V_t} =
-      \mathrm{e}^{\frac{1}{2} \Delta_{Q_{T, t}}} u_T\) is a Gaussian
-      convolution, where \(\Delta_Q := \text{Tr} (Q \mathrm{D}^2)\). Since
-      \(\partial_t Q_{T, t} = - \dot{Q}_t\), it solves the backward heat
-      equation \(\partial_t u_t = - \frac{1}{2} \text{Tr} (\dot{Q}_t
-      \mathrm{D}^2 u_t)\). Insert \(\mathrm{D}^2 u = (\mathrm{D} V \otimes
-      \mathrm{D} V - \mathrm{D}^2 V) u\) and divide by \(- u\).<span style="margin-left: 1em"></span>\(\Box\)
+      <strong class="enunciation-name">Proof. </strong>\(h_t = Z_T^{- 1} \mathrm{e}^{- V_t} =
+      \mathrm{e}^{\frac{1}{2} \Delta_{Q_{T,
+t}}} h_T\) (Remark <a href="#rem:doob-h">7.4</a>)
+      is a Gaussian convolution, where \(\Delta_Q := \text{Tr} (Q
+      \mathrm{D}^2)\). Since \(\partial_t Q_{T, t} = - \dot{Q}_t\), it solves
+      the backward heat equation \(\partial_t h_t = - \frac{1}{2} \text{Tr}
+      (\dot{Q}_t \mathrm{D}^2 h_t)\). Insert \(\mathrm{D}^2 h = (\mathrm{D} V
+      \otimes \mathrm{D} V - \mathrm{D}^2 V) h\) and divide by \(- h\).<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       The nonlinear term generates new, generally nonlocal, interactions
       (trees), and the trace term contracts pairs of fields with the
       covariance of the shell \([t, t + \mathrm{d} t]\) (loops). The
-      substitution \(u = \mathrm{e}^{- V}\), which linearises the equation, is
-      a Cole&ndash;Hopf transform: we come back to this in Section <a href="#sec:burgers">8.1</a>,
-      and in Appendix <a href="cqft_lecture_5.html#sec:algebra">A</a> of Lecture <a href="cqft_lecture_5.html">5</a>.
+      substitution \(h \propto \mathrm{e}^{- V}\), which linearises the
+      equation, is a Cole&ndash;Hopf transform: we come back to this in
+      Section <a href="#sec:burgers">8.1</a>, and in Appendix <a href="cqft_lecture_5.html#sec:algebra">A</a> of Lecture <a
+      href="cqft_lecture_5.html">5</a>.
     </p>
     <p>
       <div style="display: inline">
@@ -927,18 +930,19 @@ V_T (X^u_T)], v_s \rangle
       </div>
     </p>
     <center>
-      \(\displaystyle H (x, p, u) := \langle p, b (x, u) \rangle - \ell (x,
-      u),\)
+      \(\displaystyle \mathcal{H} (x, p, u) := \langle p, b (x, u) \rangle -
+      \ell (x, u),\)
     </center>
     <p>
       Pontryagin's principle [<a href="#bib-PBGM62">PBGM62</a>] says that along an optimal
       pair \((x, u)\) there is a <em>costate</em> \(p\) such that
     </p>
     <center>
-      \(\displaystyle \dot{x}_s = \partial_p H, \qquad \dot{p}_s = -
-      \partial_x H, \qquad p_T = -
-\mathrm{D} g (x_T), \qquad u_s \in \arg
-      \max_v H (x_s, p_s, v) .\)
+      \(\displaystyle \dot{x}_s = \partial_p \mathcal{H}, \qquad \dot{p}_s = -
+      \partial_x
+\mathcal{H}, \qquad p_T = - \mathrm{D} g (x_T), \qquad u_s
+      \in \arg \max_v
+\mathcal{H} (x_s, p_s, v) .\)
     </center>
     <p>
       The state runs forward from its initial value, the costate backward from
@@ -955,9 +959,9 @@ V_T (X^u_T)], v_s \rangle
     <center>
       \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} \varepsilon} J (u +
       \varepsilon v) |_{\varepsilon
-= 0} = - \int_t^T \langle \partial_u H
-      (x_s, p_s, u_s), v_s \rangle \mathrm{d}
-s.\)
+= 0} = - \int_t^T \langle \partial_u
+      \mathcal{H}(x_s, p_s, u_s), v_s \rangle
+\mathrm{d} s.\)
     </center>
     <p>
       So the costate is the Lagrange multiplier of the constraint \(\dot{x} =
@@ -975,15 +979,17 @@ s.\)
       </div>
     </p>
     <center>
-      \(\displaystyle \partial_t V = H_{\ast} (x, - \mathrm{D} V), \qquad
-      H_{\ast} (x, p) := \max_u
-H (x, p, u), \qquad V (T, \cdot) = g.\)
+      \(\displaystyle \partial_t V =\mathcal{H}_{\ast} (x, - \mathrm{D} V),
+      \qquad
+\mathcal{H}_{\ast} (x, p) := \max_u \mathcal{H} (x, p, u), \qquad
+      V (T, \cdot)
+= g.\)
     </center>
     <p>
-      Its characteristics are Hamilton's equations for \(H_{\ast}\), and along
-      them \(p_s = - \mathrm{D} V (s, x_s)\): the costate is the sensitivity
-      of the optimal cost to a displacement of the state, i.e. the force that
-      the future exerts on the present.
+      Its characteristics are Hamilton's equations for \(\mathcal{H}_{\ast}\),
+      and along them \(p_s = - \mathrm{D} V (s, x_s)\): the costate is the
+      sensitivity of the optimal cost to a displacement of the state, i.e. the
+      force that the future exerts on the present.
     </p>
     <p>
       <div style="display: inline">
@@ -993,13 +999,15 @@ H (x, p, u), \qquad V (T, \cdot) = g.\)
       <div style="display: inline">
         In the problem of Theorem <a href="#thm:BD">7.6</a> the state is the field,
         \(b (x, u) = \dot{Q}_s^{1 / 2} u\), \(\ell = \frac{1}{2} \|u\|^2\) and
-        \(g = V_T\). Then \(H (p, u) = \langle p, \dot{Q}_s^{1 / 2} u \rangle
-        - \frac{1}{2} \|u\|^2\) is maximal at \(u = \dot{Q}_s^{1 / 2} p\), and
+        \(g = V_T\). Then \(\mathcal{H} (p, u) = \langle p, \dot{Q}_s^{1 / 2}
+        u \rangle - \frac{1}{2}
+\|u\|^2\) is maximal at \(u = \dot{Q}_s^{1 /
+        2} p\), and
       </div>
     </p>
     <center>
-      \(\displaystyle H_{\ast} (p) = \frac{1}{2} \langle p, \dot{Q}_s p
-      \rangle\)
+      \(\displaystyle \mathcal{H}_{\ast} (p) = \frac{1}{2} \langle p,
+      \dot{Q}_s p \rangle\)
     </center>
     <p>
       is the Hamiltonian of a free particle with mass matrix \(\dot{Q}_s^{-
@@ -1040,15 +1048,15 @@ H (x, p, u), \qquad V (T, \cdot) = g.\)
       </div>
     </p>
     <center>
-      \(\displaystyle \mathrm{d} p_s = - \partial_x H \hspace{0.17em}
-      \mathrm{d} s + \Upsilon_s
-\hspace{0.17em} \mathrm{d} W_s, \qquad p_T = -
-      \mathrm{D} g (X_T) .\)
+      \(\displaystyle \mathrm{d} p_s = - \partial_x \mathcal{H}
+      \hspace{0.17em} \mathrm{d} s +
+\Upsilon_s \hspace{0.17em} \mathrm{d}
+      W_s, \qquad p_T = - \mathrm{D} g (X_T) .\)
     </center>
     <p>
       The martingale term \(\Upsilon \mathrm{d} W\) is the price of
       adaptedness: the costate may not anticipate the noise. For the field
-      \(\partial_x H = 0\), so the costate is a martingale, \(p_t
+      \(\partial_x \mathcal{H}= 0\), so the costate is a martingale, \(p_t
       =\mathbb{E}_t [- \mathrm{D} V_T (X_T)]\), and since the value function
       is the effective potential (Theorem <a href="#thm:BD">7.6</a>), \(p_t = -
       \mathrm{D} V_t (X_t)\). The noise adds the It&ocirc; term to the
@@ -1353,17 +1361,21 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
     <p style="margin-top: 1em">
       <strong class="enunciation-name">Remark <class style="font-style: normal">7.9</class>. </strong><class style="font-style: normal"><strong>(Time
       reversal compensates the drift up to the score) </strong></class><a id="rem:reversal-score"></a>
-      Write both dynamics in the direction of increasing resolution. Forward,
-      \(\Phi\) has drift \(b_t = \dot{Q}_t F_t\), which contains the whole
-      interaction. Backward, by <class style="font-style: normal">(<a href="#eq:reversal">7.17</a>)</class>, the
-      reversed process has at \(s = T - t\) the drift \(\beta_t (x) = -
-      \dot{Q}_t Q_t^{- 1} x\), which does not see the interaction at all. The
-      two drifts do not cancel, and the time-reversal formula [<a href="#bib-And82">And82</a>,
-      <a href="#bib-HP86">HP86</a>] says what is left:
+      Forward, in the direction of increasing resolution, \(\Phi\) has drift
+      \(b_t = \dot{Q}_t F_t\), which contains the whole interaction. Backward,
+      by <class style="font-style: normal">(<a href="#eq:reversal">7.17</a>)</class>, the reversed process runs
+      in the direction of decreasing resolution and has at \(s = T - t\) the
+      drift \(\beta_t (x) = - \dot{Q}_t Q_t^{- 1} x\), which does not see the
+      interaction at all. Written as a velocity in the direction of increasing
+      resolution, the backward drift is \(b_{\ast} = - \beta\). The two
+      velocities \(b\) and \(b_{\ast}\) do not agree, and the time-reversal
+      formula [<a href="#bib-And82">And82</a>, <a href="#bib-HP86">HP86</a>] says what separates
+      them:
     </p>
     <center>
-      \(\displaystyle b_t (x) + \beta_t (x) = \dot{Q}_t \mathrm{D} \log p_t
-      (x),\)
+      \(\displaystyle b_t (x) - b_{\ast} (x) = b_t (x) + \beta_t (x) =
+      \dot{Q}_t \mathrm{D} \log p_t
+(x),\)
     </center>
     <p>
       \(\dot{Q}_t\) times the score of the density \(p_t\) of the field at
@@ -1372,13 +1384,12 @@ W)\) and the optimal control is \(u_t = \dot{Q}_t^{1 / 2}
       \log p_t (x) = - Q_t^{- 1} x\), so the whole backward drift is the
       Gaussian score; with an interaction, the score carries everything that
       the backward dynamics ignores. In Nelson's stochastic mechanics [<a
-      href="#bib-Nel67">Nel67</a>] the backward drift, seen as a velocity, is \(b_{\ast} =
-      - \beta\), and the half difference \(\frac{1}{2}  (b - b_{\ast}) =
-      \frac{1}{2}  \dot{Q}_t \mathrm{D} \log p_t\) is the <em>osmotic
-      velocity</em>. The same score is the noise of the field equation of
-      Lecture <a href="cqft_lecture_5.html">5</a>, the observable \(\omega_t = K \Phi_t - J_t F_t\)
-      of Section <a href="cqft_lecture_5.html#sec:DS">9.3</a> there: by <a href="cqft_lecture_5.html#eq:noise-score">(9.14)</a> of Lecture <a
-      href="cqft_lecture_5.html">5</a>,
+      href="#bib-Nel67">Nel67</a>] \(b_{\ast}\) is the backward velocity, and the half
+      difference \(\frac{1}{2}  (b - b_{\ast}) = \frac{1}{2}  \dot{Q}_t
+      \mathrm{D} \log p_t\) is the <em>osmotic velocity</em>. The same score
+      is the noise of the field equation of Lecture <a href="cqft_lecture_5.html">5</a>, the
+      observable \(\omega_t = K \Phi_t - J_t F_t\) of Section <a href="cqft_lecture_5.html#sec:DS">9.3</a>
+      there: by <a href="cqft_lecture_5.html#eq:noise-score">(9.14)</a> of Lecture <a href="cqft_lecture_5.html">5</a>,
     </p>
     <center>
       \(\displaystyle \omega_t = - J_t \mathrm{D} \log p_t (\Phi_t) = - J_t
@@ -1463,8 +1474,10 @@ y \rangle\) and \(\text{Tr} (\dot{\mathcal{R}}
       resolution is then \(t = \infty\), and \(Q_T\) is the cutoff
       covariance), where \(\mathcal{R}_t = t\) and \(j_t = t \Phi_T + N_t\)
       with \(N\) a Brownian motion; Eldan's original construction [<a href="#bib-Eld13">Eld13</a>]
-      uses an adapted control matrix. This is the profile of Lectures <a href="cqft_lecture_6.html">6</a>&ndash;<a
-      href="cqft_lecture_7.html">7</a>.
+      uses an adapted control matrix. After the change of variable \(q = q_0 +
+      t^2\), and with \(Q_T\) replaced by the full covariance \(C\), this is
+      the mass-regulator profile of Exercise <a href="#ex:regulators">8.8</a>, used in
+      Lectures <a href="cqft_lecture_6.html">6</a>&ndash;<a href="cqft_lecture_7.html">7</a>.
     </p>
     <p>
       <div style="display: inline">
@@ -1707,24 +1720,26 @@ y \rangle\) and \(\text{Tr} (\dot{\mathcal{R}}
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">7.3</class>.
         </strong><class style="font-style: normal"><strong>(Stochastic maximum principle)
-        </strong></class><a id="ex:pontryagin"></a> (a) For the control problem <class style="font-style: normal">(<a
-        href="#eq:BD">7.9</a>)</class>, perturb an optimal control \(u \to u +
-        \varepsilon v\) and show that \(p_t := \mathbb{E}_t  [- \mathrm{D} V_T
-        (X^u_T)]\) satisfies \(u_t = \dot{Q}_t^{1 / 2} p_t\). Identify \(p\)
-        with the force \(F\) of <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class>. (b)
-        Show that \(\Upsilon_t = \mathrm{D} F_t (\Phi_t)  \dot{Q}_t^{1 /
-        2}\).</font>
+        </strong></class><a id="ex:pontryagin"></a> (a) For an optimal control \(u\) of
+        <class style="font-style: normal">(<a href="#eq:BD">7.9</a>)</class>, put \(p_t := \mathbb{E}_t
+        [- \mathrm{D} V_T (X^u_T)]\), so that \(u_t = \dot{Q}_t^{1 / 2} p_t\)
+        by <class style="font-style: normal">(<a href="#eq:EL">7.11</a>)</class>. Use the martingale
+        representation theorem to show that \(p\) solves the backward equation
+        \(\mathrm{d} p_t = \Upsilon_t \mathrm{d} W_t\), \(p_T = - \mathrm{D}
+        V_T (X^u_T)\), for an adapted \(\Upsilon\), coupled to the forward
+        equation of \(X^u\), and identify \((X^u, p)\) with \((\Phi, F)\) in
+        <class style="font-style: normal">(<a href="#eq:fbsde">7.6</a>)</class>. (b) Show that \(\Upsilon_t =
+        \mathrm{D} F_t (\Phi_t)  \dot{Q}_t^{1 / 2}\).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">7.4</class>.
         </strong><class style="font-style: normal"><strong>(Optimal drift) </strong></class>(a)
-        Derive <class style="font-style: normal">(<a href="#eq:EL">7.11</a>)</class> from <class style="font-style: normal">(<a
-        href="#eq:BD">7.9</a>)</class>, and check that the optimal \(u\) is a
-        martingale up to the factor \(\dot{Q}^{1 / 2}\). (b) For the quadratic
-        interaction of Exercise <a href="#ex:quadratic">7.1</a>, compute the optimal drift
-        and the value <class style="font-style: normal">(<a href="#eq:BD">7.9</a>)</class>
+        Check from <class style="font-style: normal">(<a href="#eq:EL">7.11</a>)</class> that the optimal
+        \(u\) is a martingale up to the factor \(\dot{Q}^{1 / 2}\). (b) For
+        the quadratic interaction of Exercise <a href="#ex:quadratic">7.1</a>, compute the
+        optimal drift and the value <class style="font-style: normal">(<a href="#eq:BD">7.9</a>)</class>
         explicitly.</font>
       </p>
     </div>
@@ -1795,8 +1810,8 @@ X_s^3 : \|^2 \mathrm{d} s =
     </table>
     <p>
       an infinite-dimensional, backward, viscous <em>Burgers equation</em>.
-      The Cole&ndash;Hopf transform \(F = \mathrm{D} \log u\) linearises it,
-      which is the statement that \(u = \mathrm{e}^{- V}\) solves a heat
+      The Cole&ndash;Hopf transform \(F = \mathrm{D} \log h\) linearises it,
+      which is the statement that \(h \propto \mathrm{e}^{- V}\) solves a heat
       equation. Two remarks on <class style="font-style: normal">(<a href="#eq:burgers">8.1</a>)</class>:
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
@@ -1836,11 +1851,14 @@ X_s^3 : \|^2 \mathrm{d} s =
         </li>
         <li>
           <p>
-            the Burgers flows for different covariances commute, and the
-            curvature vanishes, when \(\mathrm{D} F_t\) is symmetric, i.e.
-            when \(F_t\) is a gradient [<a href="#bib-BCG26">BCG26</a>]. For a
-            non-gradient force, as for the general Wilson&ndash;It&ocirc;
-            diffusions of [<a href="#bib-BCG26">BCG26</a>], the flows do not commute.
+            the Burgers flows for different covariances commute when
+            \(\mathrm{D} F_t\) is symmetric, i.e. when \(F_t\) is a gradient
+            [<a href="#bib-BCG26">BCG26</a>]: then \(F_t = - \mathrm{D} V_t\), the flows
+            are gradients of Polchinski flows, i.e. of Gaussian convolutions
+            after the Cole&ndash;Hopf transform, and Gaussian convolutions
+            commute. For a non-gradient force, as for the general
+            Wilson&ndash;It&ocirc; diffusions of [<a href="#bib-BCG26">BCG26</a>], the
+            flows do not commute.
           </p>
         </li>
       </ol>
@@ -2382,7 +2400,8 @@ y)^2 / 2 s) / 2 \varepsilon} \mathrm{d} y,\)
       for every \(\psi\) it solves the noiseless Polchinski equation, so it is
       a complete integral of that equation, with parameter \(\psi\). Jacobi's
       theorem then says that in the new coordinates the Hamiltonian
-      \(H_{\ast}\) vanishes: \(\psi\) and \(p\) are constants of motion.
+      \(\mathcal{H}_{\ast}\) vanishes: \(\psi\) and \(p\) are constants of
+      motion.
     </p>
     <p>
       This is what force coordinates are:
@@ -2597,7 +2616,7 @@ V_T (\psi)\)
       \hspace{0.17em} \mathrm{D}^2 \mathcal{F}_t
 \right) [v] .\)
     </center>
-    <p style="margin-bottom: 1em">
+    <p>
       Hence <class style="font-style: normal">(<a href="#eq:transformed-flow">8.8</a>)</class> reads \(\mathrm{D} \left(
       \partial_t \Gamma_t - \frac{1}{2} \text{Tr}
 (\dot{\mathcal{R}}_t H_t)
@@ -2609,11 +2628,25 @@ V_T (\psi)\)
       href="#eq:wetterich">8.14</a>)</class>, note that \(\mathrm{D}^2 \Gamma^{\text{EAA}}_t
       +\mathcal{R}_t = \mathrm{D}^2 \Gamma_t +
 S_t^{- 1}\). For the endpoints:
-      \(S_T = 0\); and at \(t = 0\), \(S_0 = Q_T\), so <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class>
-      identifies \(\frac{1}{2}  \langle x, Q_T^{- 1} x \rangle - V_0 (x)\), up
-      to a constant, with the cumulant generating function of \(\nu_T\) at
-      \(Q_T^{- 1} x\), whose Legendre transform is \(\Gamma^{\text{EAA}}_0\)
-      (Exercise <a href="#ex:1PI">8.6</a>).<span style="margin-left: 1em"></span>\(\Box\)
+      \(S_T = 0\); and at \(t = 0\), \(S_0 = Q_T\), so the formula for
+      \(\mathcal{K}_0\) in Remark <a href="#rem:measurement">7.10</a> (the Cameron&ndash;Martin
+      formula) identifies \(\frac{1}{2}  \langle x, Q_T^{- 1} x \rangle - V_0
+      (x) + V_0 (0)\) with the cumulant generating function of \(\nu_T\) at
+      \(Q_T^{- 1} x\). By <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class>, its
+      Legendre transform is \(\Gamma^{\text{EAA}}_0 - V_0 (0)\) (Exercise <a
+      href="#ex:1PI">8.6</a>).
+    </p>
+    <p style="margin-bottom: 1em">
+      Near \(t = T\) the two traces \(\text{Tr} (\dot{\mathcal{R}}_t (S_t^{-
+      1} + \mathrm{D}^2 \Gamma_t)^{- 1})\) and \(\text{Tr}
+      (\dot{\mathcal{R}}_t S_t) = \text{Tr} (S_t^{- 1} \dot{Q}_t)\) in <class
+      style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class> diverge separately (like \(n / (T -
+      t)\) for \(Q_t = t\) in dimension \(n\)); only their difference, which
+      is \(- \text{Tr} (\dot{Q}_t \mathrm{D}^2 V_t)\) by Exercise <a href="#ex:envelope">8.4</a>,
+      is integrable. For the same reason the field-independent term dropped in
+      <class style="font-style: normal">(<a href="#eq:wetterich">8.14</a>)</class> is not integrable up to \(T\):
+      \(\Gamma^{\text{EAA}}_t\) is defined up to an infinite constant.<span
+      style="margin-left: 1em"></span>\(\Box\)
     </p>
     <div style="margin-top: 1em; margin-bottom: 1em">
       <table style="width: 100%">
@@ -2858,7 +2891,19 @@ S_t^{- 1} \psi \rangle =
       \(\frac{1}{2}  \langle \psi, Q_T^{- 1} \psi \rangle\), is the free
       energy of the unresolved shell constrained to the forecast \(\psi\), and
       <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class> is the minimisation over the
-      forecast. In the language of Theorem <a href="#thm:BD">7.6</a>: \(V_t\) is the
+      forecast. Strictly, the Gibbs principle gives only <class style="font-style: normal">(<a
+      href="#eq:moreau">8.12</a>)</class> with \(\Gamma_t\) replaced by the right-hand
+      side \(\tilde{\Gamma}_t\) of <class style="font-style: normal">(<a href="#eq:constrained">8.16</a>)</class>.
+      Since the mean is \(\psi\), \(\tilde{\Gamma}_t (\psi) + \frac{1}{2}
+      \langle \psi, S_t^{- 1} \psi \rangle =
+\inf \{ \int V_T \mathrm{d} \nu +
+      \text{Ent} (\nu | \mu^{S_t}) :
+\hspace{0.17em} \text{mean } \psi\}\), an
+      infimum of a convex functional under a linear constraint, hence convex
+      in \(\psi\); so is \(\Gamma_t + \frac{1}{2} \langle \psi, S_t^{- 1} \psi
+      \rangle\) (Proposition <a href="#prop:legendre">8.5</a>). Both are recovered from the
+      same \(V_t\) by Legendre duality, and therefore \(\tilde{\Gamma}_t =
+      \Gamma_t\). In the language of Theorem <a href="#thm:BD">7.6</a>: \(V_t\) is the
       value function of the control problem, and \(\Gamma_t\) is its Moreau
       transform, i.e. the value function expressed in the forecast coordinate,
       the interaction picture of the classical part of the dynamics.
@@ -2937,9 +2982,12 @@ S_t^{- 1} (y - x)
         </strong><class style="font-style: normal"><strong>(The constant) </strong></class><a id="ex:envelope"></a>
         Differentiate <class style="font-style: normal">(<a href="#eq:moreau">8.12</a>)</class> in \(t\) at
         fixed \(x\) (envelope theorem), and use <class style="font-style: normal">(<a href="#eq:polchinski">7.8</a>)</class>
-        to show that the quadratic terms cancel and \(\partial_t \Gamma_t = -
-        \frac{1}{2} \text{Tr} (\dot{Q}_t \mathrm{D}^2 V_t)\). Deduce <class
-        style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class> with the stated constant.</font>
+        to show that the quadratic terms cancel and \(\partial_t \Gamma_t
+        (\psi) = - \frac{1}{2} \text{Tr} (\dot{Q}_t \mathrm{D}^2
+V_t (x))\),
+        where \(x = \psi + S_t \mathrm{D} \Gamma_t (\psi)\) is the field whose
+        forecast is \(\psi\). Deduce <class style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class>
+        with the stated constant.</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -2956,16 +3004,20 @@ S_t^{- 1} (y - x)
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">8.6</class>.
         </strong><class style="font-style: normal"><strong>(1PI effective action)
-        </strong></class><a id="ex:1PI"></a> (a) Let \(\mathcal{K} (j) = \log \int
-        \mathrm{e}^{\langle j, \varphi \rangle}
-\mathrm{e}^{- V_T (\varphi)}
-        \mu^{Q_T} (\mathrm{d} \varphi)\). Show that \(\Gamma^{\text{EAA}}_0
-        =\mathcal{K}^{\ast}\), and that \(\mathrm{D}^2 \Gamma^{\text{EAA}}_0
-        (\psi)\) is the inverse covariance of the tilted measure with mean
-        \(\psi\). (b) Integrate <class style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class> with
-        \(\mathrm{D}^2 \Gamma_t\) replaced by \(\mathrm{D}^2 V_T\), and obtain
-        the one-loop formula \(\Gamma_t \approx V_T + \frac{1}{2} \text{Tr}
-        \log (\mathbb{1} + S_t
+        </strong></class><a id="ex:1PI"></a> (a) Let \(\tilde{\mathcal{K}} (j) = \log
+        \int \mathrm{e}^{\langle j, \varphi \rangle}
+\mathrm{e}^{- V_T
+        (\varphi)} \mu^{Q_T} (\mathrm{d} \varphi)\), the unnormalised
+        log-Laplace transform, so that \(\tilde{\mathcal{K}} =\mathcal{K}_0 +
+        \log Z_T\) with \(\mathcal{K}_0\) as in Remark <a href="#rem:measurement">7.10</a>. Show
+        that \(\Gamma^{\text{EAA}}_0 = \tilde{\mathcal{K}}^{\ast}\), in
+        agreement with \(\Gamma^{\text{EAA}}_0 =\mathcal{K}_0^{\ast} + V_0
+        (0)\) after Proposition <a href="#prop:legendre">8.5</a>, and that \(\mathrm{D}^2
+        \Gamma^{\text{EAA}}_0 (\psi)\) is the inverse covariance of the tilted
+        measure with mean \(\psi\). (b) Integrate <class style="font-style: normal">(<a href="#eq:wetterich-Gamma">8.13</a>)</class>
+        with \(\mathrm{D}^2 \Gamma_t\) replaced by \(\mathrm{D}^2 V_T\), and
+        obtain the one-loop formula \(\Gamma_t \approx V_T + \frac{1}{2}
+        \text{Tr} \log (\mathbb{1} + S_t
 \mathrm{D}^2 V_T)\).</font>
       </p>
     </div>
@@ -3020,7 +3072,8 @@ S_t^{- 1} (y - x)
         zero dimensions, with \(S_t = S\) and \(V_T (y) = \lambda y^4\),
         compute both bounds numerically and compare with the conditional
         variance; repeat for the double well \(V_T (y) = \frac{1}{2} y^4 -
-        \frac{3}{2} y^2\).</font>
+        \frac{3}{2} y^2\) with \(S < 1 / 3\), so that \(\mathcal{U}\) stays
+        convex. What goes wrong for \(S \geqslant 1 / 3\)?</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">

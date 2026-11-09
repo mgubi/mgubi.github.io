@@ -972,21 +972,21 @@ D^2 \mathcal{F}_q (y) = 0, \quad \text{Cov}_q =
       \bar{\Gamma}_q\). Set
     </p>
     <center>
-      \(\displaystyle B_q (y) = \frac{1}{2} \langle y, K_q y \rangle +
-      \bar{\Gamma}_q (y), \qquad
-j_q = K_q \Phi_q .\)
+      \(\displaystyle \mathcal{W}_q (y) = \frac{1}{2} \langle y, K_q y \rangle
+      + \bar{\Gamma}_q (y),
+\qquad j_q = K_q \Phi_q .\)
     </center>
     <p>
-      Coercivity makes \(B_q\) strictly convex, and the coordinate equation is
-      \(j_q =\operatorname{DB}_q (Y_q)\), or \(Y_q =\operatorname{DB}_q^{\ast}
-      (j_q)\), where \(B_q^{\ast}\) is the Legendre transform. At fixed \(q\),
-      regard \(j, \psi\) as conjugate variables and put \(P = H_q (Y)^{- 1}
-      Z\). Then
+      Coercivity makes \(\mathcal{W}_q\) strictly convex, and the coordinate
+      equation is \(j_q = D\mathcal{W}_q (Y_q)\), or \(Y_q =
+      D\mathcal{W}_q^{\ast} (j_q)\), where \(\mathcal{W}_q^{\ast}\) is the
+      Legendre transform. At fixed \(q\), regard \(j, \psi\) as conjugate
+      variables and put \(P = H_q (Y)^{- 1} Z\). Then
     </p>
     <center>
       \(\displaystyle \langle \psi, \mathrm{d} j \rangle = \langle P,
       \mathrm{d} Y \rangle +
-\mathrm{d} (B_q^{\ast} (j)) .\)
+\mathrm{d} (\mathcal{W}_q^{\ast} (j)) .\)
     </center>
     <p>
       Here the differentials are in phase space, with the scale held fixed.
@@ -994,10 +994,10 @@ j_q = K_q \Phi_q .\)
       function is
     </p>
     <center>
-      \(\displaystyle S_q (j, P) = B_q^{\ast} (j) + \langle
-      \operatorname{DB}_q^{\ast} (j), P
-\rangle, \qquad \psi = D_j S_q, \quad
-      Y = D_P S_q .\)
+      \(\displaystyle S_q (j, P) =\mathcal{W}_q^{\ast} (j) + \langle
+      D\mathcal{W}_q^{\ast} (j), P
+\rangle, \qquad \psi = D_j S_q, \quad Y =
+      D_P S_q .\)
     </center>
     <p>
       The primitive of \(\bar{\mathcal{F}}\), together with the Gaussian
@@ -1592,22 +1592,23 @@ x^2)) . \)</td>
       The zeroth-order coefficient has the good sign, as \(- f' \geqslant 0\).
       With \(z = (\lambda S / 3)^{1 / 2} y\), the source obeys \(\frac{1}{2}
       |f'' | \leqslant C_{\ast} (\frac{\lambda}{3 S})^{1 / 2}\), which is
-      integrable at \(S = 0\), so \(\beta (S) = 2 C_{\ast} (\lambda S / 3)^{1
-      / 2}\) satisfies \(\mathfrak{L} \beta \geqslant \frac{1}{2} |f'' |\). To
-      apply the maximum principle on the line, take \(\chi = \mathrm{e}^{3 S}
-      (1 + x^4)\). Then \(\mathfrak{L} \chi \geqslant 0\), since \(6 x^2
-      \leqslant 3 (1 + x^4)\) and \(xF (x) \leqslant 0\); the last holds
-      because \(F = - \frac{\lambda}{3} \mathbb{E}_x Y^3\), and \(\mathbb{E}_x
-      Y^3\) has the sign of \(x\), the density being an even density tilted by
-      \(\mathrm{e}^{qxy}\). Both \(F\) and \(f\) grow at most cubically,
-      uniformly for bounded \(S\): \(|f| \leqslant \frac{\lambda}{3} |x|^3\)
-      since \(|y| \leqslant |x|\), and \(\frac{\lambda}{3} \mathbb{E}_x Y^6 +
-      q\mathbb{E}_x Y^4 - qx\mathbb{E}_x Y^3 =
-3\mathbb{E}_x Y^2\) gives
-      \(\mathbb{E}_x Y^4 \leqslant (|x| + (3 S)^{1 / 2})^4\), up to constants,
-      hence \(|F| \leqslant C \lambda (|x|^3 + S^{3 / 2})\). Also \(\hat{R}\)
-      is continuous at \(S = 0\), since the posterior concentrates at \(x\).
-      So \(\pm \hat{R} - \beta - \varepsilon \chi\) is negative on the
+      integrable at \(S = 0\), so \(\vartheta (S) = 2 C_{\ast} (\lambda S /
+      3)^{1 / 2}\) satisfies \(\mathfrak{L} \vartheta \geqslant \frac{1}{2}
+      |f'' |\). To apply the maximum principle on the line, take \(\chi =
+      \mathrm{e}^{3 S} (1 + x^4)\). Then \(\mathfrak{L} \chi \geqslant 0\),
+      since \(6 x^2 \leqslant 3 (1 + x^4)\) and \(xF (x) \leqslant 0\); the
+      last holds because \(F = - \frac{\lambda}{3} \mathbb{E}_x Y^3\), and
+      \(\mathbb{E}_x Y^3\) has the sign of \(x\), the density being an even
+      density tilted by \(\mathrm{e}^{qxy}\). Both \(F\) and \(f\) grow at
+      most cubically, uniformly for bounded \(S\): \(|f| \leqslant
+      \frac{\lambda}{3} |x|^3\) since \(|y| \leqslant |x|\), and
+      \(\frac{\lambda}{3} \mathbb{E}_x Y^6 + q\mathbb{E}_x Y^4 -
+      qx\mathbb{E}_x Y^3 =
+3\mathbb{E}_x Y^2\) gives \(\mathbb{E}_x Y^4
+      \leqslant (|x| + (3 S)^{1 / 2})^4\), up to constants, hence \(|F|
+      \leqslant C \lambda (|x|^3 + S^{3 / 2})\). Also \(\hat{R}\) is
+      continuous at \(S = 0\), since the posterior concentrates at \(x\). So
+      \(\pm \hat{R} - \vartheta - \varepsilon \chi\) is negative on the
       boundary of a large cylinder, hence inside it. Let the cylinder grow and
       then \(\varepsilon \to 0\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -2272,11 +2273,11 @@ D\mathcal{T}_q [M, \ell_q] (0) \rangle
       + M^{[j]}_q)^{- 1}\) for its zero-field response, and
     </p>
     <center>
-      \(\displaystyle B^{[j]}_q := D\mathcal{T}_q [M^{[j]}, \ell^{[j]}] (0) =
-      - \lambda \text{Tr}
-((R^{[j]}_{0, q})^2) I - \tfrac{1}{2}
-      \text{Ctr}_{(R^{[j]}_{0, q})^2} D^3
-\ell^{[j]}_q (0)\)
+      \(\displaystyle \mathfrak{S}^{[j]}_q := D\mathcal{T}_q [M^{[j]},
+      \ell^{[j]}] (0) = - \lambda
+\text{Tr} ((R^{[j]}_{0, q})^2) I -
+      \tfrac{1}{2} \text{Ctr}_{(R^{[j]}_{0,
+q})^2} D^3 \ell^{[j]}_q (0)\)
     </center>
     <p>
       for the linear coefficient of the loop map at zero field, the
@@ -2298,7 +2299,8 @@ D\mathcal{T}_q [M, \ell_q] (0) \rangle
 
         \Theta^{[1]} = 0, \quad \Theta^{[j + 1]}_q = - \int_q^{\infty}
 
-        (B^{[j]}_s)^{\circ} \mathrm{d} s, \qquad j = 1, 2,
+        (\mathfrak{S}^{[j]}_s)^{\circ} \mathrm{d} s, \qquad j = 1,
+        2,
 \end{array} \)</td>
         <td align="right">(11.8)</td>
       </tr>
@@ -2309,8 +2311,8 @@ D\mathcal{T}_q [M, \ell_q] (0) \rangle
     <center>
       \(\displaystyle \partial_q \ell^{[j + 1]} = \Pi \mathcal{T}_q [M^{[j]},
       \ell^{[j]}], \qquad
-\partial_q \Theta^{[j + 1]} = (B^{[j]}_q)^{\circ}
-      :\)
+\partial_q \Theta^{[j + 1]} =
+      (\mathfrak{S}^{[j]}_q)^{\circ} :\)
     </center>
     <p>
       each step inserts the previous approximation, nonlinear correction and
@@ -2452,27 +2454,28 @@ D\mathcal{T}_q [M, \ell_q] (0) \rangle
       <h5>Why the centred source is integrable.<span style="margin-left: 1em"></span></h5>
       <div style="display: inline">
         The first-moment bound on \(\Theta^{[j + 1]}\) is an output of the
-        iteration. To see it, separate its source \(B^{[j]}_q\) into the local
-        tadpole and the correction vertex:
+        iteration. To see it, separate its source \(\mathfrak{S}^{[j]}_q\)
+        into the local tadpole and the correction vertex:
       </div>
     </p>
     <center>
-      \(\displaystyle B^{[j]}_q = - \lambda \text{Tr} ((R^{[j]}_{0, q})^2) I +
-      E_q, \qquad E_q = -
-\frac{1}{2} \text{Ctr}_{(R^{[j]}_{0, q})^2} T_q,
-      \quad T_q = D^3 \ell^{[j]}_q
-(0) .\)
+      \(\displaystyle \mathfrak{S}^{[j]}_q = - \lambda \text{Tr} ((R^{[j]}_{0,
+      q})^2) I + E_q,
+\qquad E_q = - \frac{1}{2} \text{Ctr}_{(R^{[j]}_{0,
+      q})^2} T_q, \quad T_q =
+D^3 \ell^{[j]}_q (0) .\)
     </center>
     <p>
       Here \(T_q\) is a four-leg tensor; \(E_q\) and \(T_q\) depend on the
       level, which we do not write. Since all kernels at zero field are
       translation invariant, write \(E_q \mathbb{1} = e_q \mathbb{1}\). The
-      constant mode is \(\langle B^{[j]}_q \rangle = - \lambda \text{Tr}
-      ((R^{[j]}_{0, q})^2) + e_q\), so the source of the centred kernel is
-      exactly
+      constant mode is \(\langle \mathfrak{S}^{[j]}_q \rangle = - \lambda
+      \text{Tr} ((R^{[j]}_{0,
+q})^2) + e_q\), so the source of the centred
+      kernel is exactly
     </p>
     <center>
-      \(\displaystyle (B^{[j]}_q)^{\circ} = E_q - e_q I.\)
+      \(\displaystyle (\mathfrak{S}^{[j]}_q)^{\circ} = E_q - e_q I.\)
     </center>
     <p>
       The tadpole cancels completely. More generally, any local term \(c_q I\)
@@ -2483,8 +2486,8 @@ D\mathcal{T}_q [M, \ell_q] (0) \rangle
       sum is zero. Since the distance vanishes on the diagonal,
     </p>
     <center>
-      \(\displaystyle v_1 ((B^{[j]}_q)^{\circ}) = v_1 (E_q - e_q I) = v_1
-      (E_q) .\)
+      \(\displaystyle v_1 ((\mathfrak{S}^{[j]}_q)^{\circ}) = v_1 (E_q - e_q I)
+      = v_1 (E_q) .\)
     </center>
     <p>
       Thus centring removes the local obstruction, but does not itself create
@@ -2547,11 +2550,12 @@ u \mathrm{d} v.\)
       </div>
     </p>
     <center>
-      \(\displaystyle v_1 (\Theta^{[j + 1]}_q) \leqslant \int_q^{\infty} v_1
-      ((B^{[j]}_s)^{\circ})
-\mathrm{d} s \leqslant C \lambda^2 \int_q^{\infty}
-      s^{- 3 / 2} \mathrm{d} s =
-2 C \lambda^2 q^{- 1 / 2} .\)
+      \(\displaystyle v_1 (\Theta^{[j + 1]}_q) \leqslant \int_q^{\infty}
+      v_1
+((\mathfrak{S}^{[j]}_s)^{\circ}) \mathrm{d} s \leqslant C
+      \lambda^2
+\int_q^{\infty} s^{- 3 / 2} \mathrm{d} s = 2 C \lambda^2 q^{-
+      1 / 2} .\)
     </center>
     <p>
       This proves convergence of the integral in first moment and \(v_1
@@ -2563,10 +2567,11 @@ u \mathrm{d} v.\)
       \Theta^{[2]}) \leqslant Cg_q^3\). This convergence concerns the centred
       kernel in first moment; it does not assert a cutoff-uniform bound on its
       absolute row norm or on the bare scalar mass. The source
-      \((B^{[j]})^{\circ}\) itself, by contrast, does have a cutoff-uniform
-      row norm: it is a contraction of a four-leg vertex, bounded in a rooted
-      norm, against the bounded kernel \((R^{[j]}_{0, q})^2\). This is what
-      makes the linear defect below small in the row norm.
+      \((\mathfrak{S}^{[j]})^{\circ}\) itself, by contrast, does have a
+      cutoff-uniform row norm: it is a contraction of a four-leg vertex,
+      bounded in a rooted norm, against the bounded kernel \((R^{[j]}_{0,
+      q})^2\). This is what makes the linear defect below small in the row
+      norm.
     </p>
     <p>
       <div style="display: inline">
@@ -2636,20 +2641,21 @@ s.\)
       lines frozen at \(G_s\), the defect would keep the leading term
       \(\frac{1}{2} \Pi \text{Ctr}_{(R^{[3]})^2 - G^2} D^2 U\prime\). By the
       resolvent identity \(R^{[3]} - G = - R^{[3]} (M^{[3]} + D \ell^{[3]})
-      G\), and since both insertions are \(O (g_q)\) relative to \(q\) on the
-      ball, this term is as large as the integrand of \(\delta^{[2]}\): its
-      four-leg coefficient is of order \(\lambda^3 q^{- 2}\), instead of
-      \(\lambda^5 q^{- 3}\) in (<a href="#eq:defect-bound">11.14</a>). The defect would never
-      improve beyond one power of \(g\) over the seed. In graphs (Figure <a
-      href="#fig:iteration">11.2</a>), a correction inserted into a line (a self-energy) and
-      one inserted as a vertex give loops with the same number of loops and
-      the same power counting, and an expansion correct to a given order must
-      contain both. Finally, the lines are resummed rather than expanded:
-      \(\operatorname{DU}\prime = \lambda y^2\) stays in \(G_q (y) = (K_q +
-      \lambda y^2)^{- 1} \leqslant C_q\), which makes the loop estimates
-      uniform in the field, and the mass \(M\) resums the tadpoles. Adding \(D
-      \ell\), which is small on the ball, preserves the coercivity of \(K_q +
-      D\mathcal{F}\) and costs nothing.
+      G\), and since \(\mu / q\) and \(D \ell^{[3]} / q\) are \(O (g_q)\) on
+      the ball, while \(\Theta^{[3]}\) is smaller still once it passes through
+      a resolvent (\(\eta_q (\Theta^{[3]}) \lesssim g_q^2\)), this term is as
+      large as the integrand of \(\delta^{[2]}\): its four-leg coefficient is
+      of order \(\lambda^3 q^{- 2}\), instead of \(\lambda^5 q^{- 3}\) in (<a
+      href="#eq:defect-bound">11.14</a>). The defect would never improve beyond one power of
+      \(g\) over the seed. In graphs (Figure <a href="#fig:iteration">11.2</a>), a correction
+      inserted into a line (a self-energy) and one inserted as a vertex give
+      loops with the same number of loops and the same power counting, and an
+      expansion correct to a given order must contain both. Finally, the lines
+      are resummed rather than expanded: \(\operatorname{DU}\prime = \lambda
+      y^2\) stays in \(G_q (y) = (K_q + \lambda y^2)^{- 1} \leqslant C_q\),
+      which makes the loop estimates uniform in the field, and the mass \(M\)
+      resums the tadpoles. Adding \(D \ell\), which is small on the ball,
+      preserves the coercivity of \(K_q + D\mathcal{F}\) and costs nothing.
     </p>
     <p>
       <div style="display: inline">
@@ -2877,17 +2883,16 @@ r_s^{- 4} \mathrm{d} s = \frac{2}{3}
     <table width="100%">
       <tr>
         <td width="100%" align="center"><a id="eq:mass"></a>\(\displaystyle \partial_q \mu_q =
-        \beta_q := \langle B^{[3]}_q \rangle, \qquad B^{[3]}_q = -
-\lambda
-        \text{Tr} (R_{0, q}^2) I - \tfrac{1}{2} \text{Ctr}_{R_{0, q}^2}
-        D^3
-\ell^{[3]}_q (0),\)</td>
+        \beta_q := \langle \mathfrak{S}^{[3]}_q \rangle,
+        \qquad
+\mathfrak{S}^{[3]}_q = - \lambda \text{Tr} (R_{0, q}^2) I -
+        \tfrac{1}{2}
+\text{Ctr}_{R_{0, q}^2} D^3 \ell^{[3]}_q (0),\)</td>
         <td align="right">(11.9)</td>
       </tr>
     </table>
     <p>
-      (the source \(B\) is not the sampling Brownian motion \(B\)), with the
-      boundary condition
+      with the boundary condition
     </p>
     <center>
       \(\displaystyle \mu_{q_{\ast}} = b_{\ast} .\)
@@ -2895,8 +2900,8 @@ r_s^{- 4} \mathrm{d} s = \frac{2}{3}
     <p>
       The running mass is pinned at the auxiliary scale \(q_{\ast}\), at a
       value \(b_{\ast}\) with \(|b_{\ast} | \leqslant B_0 \lambda q_{\ast}^{1
-      / 2}\). The centred part of \(B^{[3]}\) is not imposed: the kernel
-      \(\Theta\) of the final approximation is the one produced by the
+      / 2}\). The centred part of \(\mathfrak{S}^{[3]}\) is not imposed: the
+      kernel \(\Theta\) of the final approximation is the one produced by the
       iteration, from the source of the previous level.
     </p>
     <p>
@@ -2925,8 +2930,8 @@ M^{[3]}_q =
       Choose the scalar mass to solve the scalar part of the linear flow for
       this final approximation, as in (<a href="#eq:mass">11.9</a>). Since \(\partial_q
       \ell^{[3]} = \Pi \mathcal{T}_q [M^{[2]}, \ell^{[2]}]\) and \(\partial_q
-      \Theta^{[3]} = (B^{[2]}_q)^{\circ}\), and since \(\Pi' f = \Pi f +
-      (\operatorname{Df}(0))^{\circ} y\), its defect is exactly
+      \Theta^{[3]} = (\mathfrak{S}^{[2]}_q)^{\circ}\), and since \(\Pi' f =
+      \Pi f + (\operatorname{Df}(0))^{\circ} y\), its defect is exactly
     </p>
     <center>
       \(\displaystyle \mathcal{D}^o_q = \Pi' (\mathcal{T}_q [M^{[2]},
@@ -2951,19 +2956,21 @@ q^{- 3}, \qquad \|\mathcal{E}^c_q \|_{\text{row}}
 (\mathcal{E}^c_q) \lesssim g_q^4,\)
     </center>
     <p>
-      where \(\mathcal{E}^c_q = D\mathcal{D}^o_q (0) = (B^{[2]}_q -
-      B^{[3]}_q)^{\circ}\) is the centred linear part. The tadpoles, being
-      local, cancel in the centred part. What remains contracts the four-leg
-      vertex of \(\delta^{[3]}\) with \(R_{0, q}^2\), and the four-leg vertex
-      of \(\ell^{[2]}\) with the difference of the squared responses caused by
-      \(\Theta^{[3]} - \Theta^{[2]}\). Both are contractions of rooted tensors
-      against bounded kernels, so their row norm is controlled, as for the
-      centred source above; the first moment stays in the vertex. The backward
-      equation uses only the row norm, as an \(L^{\infty}\) operator bound;
-      the first moment is needed only for the continuum limit. In short:
-      \(\Theta\) is not the exact centred flow, so the final force has a
-      linear defect of relative size \(g_q^4\), and it is harmless because on
-      the ball it has the same size as the cubic defect.
+      where \(\mathcal{E}^c_q = D\mathcal{D}^o_q (0) =
+      (\mathfrak{S}^{[2]}_q
+-\mathfrak{S}^{[3]}_q)^{\circ}\) is the centred
+      linear part. The tadpoles, being local, cancel in the centred part. What
+      remains contracts the four-leg vertex of \(\delta^{[3]}\) with \(R_{0,
+      q}^2\), and the four-leg vertex of \(\ell^{[2]}\) with the difference of
+      the squared responses caused by \(\Theta^{[3]} - \Theta^{[2]}\). Both
+      are contractions of rooted tensors against bounded kernels, so their row
+      norm is controlled, as for the centred source above; the first moment
+      stays in the vertex. The backward equation uses only the row norm, as an
+      \(L^{\infty}\) operator bound; the first moment is needed only for the
+      continuum limit. In short: \(\Theta\) is not the exact centred flow, so
+      the final force has a linear defect of relative size \(g_q^4\), and it
+      is harmless because on the ball it has the same size as the cubic
+      defect.
     </p>
     <p>
       To understand why this is enough, use the backward power count from
@@ -3140,8 +3147,8 @@ j = 2, 3, \quad 4 \leqslant k \leqslant 12 - 2
     <center>
       \(\displaystyle | \delta \beta_q | \leqslant Cg_q^2 d = C \lambda^2 q^{-
       1} d, \qquad v_1
-(\delta (B^{[j]}_q)^{\circ}) \leqslant C \lambda^3 q^{-
-      2} d.\)
+(\delta (\mathfrak{S}^{[j]}_q)^{\circ}) \leqslant C
+      \lambda^3 q^{- 2} d.\)
     </center>
     <p>
       For the scalar bound, a one-loop source of size \(g_q\) gains the
@@ -3259,11 +3266,12 @@ j = 2, 3, \quad 4 \leqslant k \leqslant 12 - 2
       <p style="margin-top: 1em">
         <strong class="enunciation-name">Proposition <class style="font-style: normal">11.2</class>.
         </strong><i><class style="font-style: normal"><strong>(The coefficient construction)
-        </strong></class><a id="prop:coeff"></a> For \(q_{\ast}\) large enough (depending
-        on \(\lambda\), not on \(N\)), the system <class style="font-style: normal">(<a href="#eq:iteration">11.8</a>)</class>&ndash;<class
-        style="font-style: normal">(<a href="#eq:mass">11.9</a>)</class> has a unique scalar mass path in a
-        ball, and, with \(M_q = \mu_q I + \Theta^{[3]}_q\) as in <class style="font-style: normal">(<a
-        href="#eq:Gamma-o">11.10</a>)</class>,</i>
+        </strong></class><a id="prop:coeff"></a> For \(q_{\ast} \geqslant \text{max} (1,
+        q_0)\) large enough, depending on \(\lambda\) and \(B_0\) but not on
+        \(N\), and \(|b_{\ast} | \leqslant B_0 \lambda q_{\ast}^{1 / 2}\), the
+        system <class style="font-style: normal">(<a href="#eq:iteration">11.8</a>)</class>&ndash;<class style="font-style: normal">(<a
+        href="#eq:mass">11.9</a>)</class> has a unique scalar mass path in a ball, and,
+        with \(M_q = \mu_q I + \Theta^{[3]}_q\) as in <class style="font-style: normal">(<a href="#eq:Gamma-o">11.10</a>)</class>,</i>
       </p>
       <i><table width="100%">
         <tr>
@@ -3333,10 +3341,11 @@ Cg_q^4,\)</td>
       <p style="margin-bottom: 1em">
         <i>where \(\mathcal{E}^c_q = D\mathcal{D}^{\text{o}}_q (0)\) is the
         linear part of the defect, a centred kernel. At fixed \(N\) the bare
-        mass exists, \(| \mu_N - b| \lesssim \lambda \text{Tr} C_{q_{\ast}}
-        \lesssim \lambda N\), and \(| \mu_N - \mu_q | \leqslant C \lambda N^3
-        / q\), \(\| \Theta^{[3]}_q \|_{\text{row}} \leqslant CN \lambda^2 q^{-
-        1 / 2} \to 0\) as \(q \to \infty\).</i>
+        mass exists, \(| \mu_N - b_{\ast} | \lesssim \lambda \text{Tr}
+        C_{q_{\ast}} \lesssim \lambda
+N\), and \(| \mu_N - \mu_q | \leqslant C
+        \lambda N^3 / q\), \(\| \Theta^{[3]}_q \|_{\text{row}} \leqslant CN
+        \lambda^2 q^{- 1 / 2} \to 0\) as \(q \to \infty\).</i>
       </p>
     </div>
     <p style="margin-top: 1em; margin-bottom: 1em">
@@ -3351,32 +3360,33 @@ Cg_q^4,\)</td>
       the loop force into loops; in each, telescope the difference onto one
       marked vertex or propagator and apply <class style="font-style: normal">(<a href="#eq:loop">11.5</a>)</class>.
       (b) <em>Integration.</em> Each step gains one \(g\); the integrand of
-      <class style="font-style: normal">(<a href="#eq:iteration">11.8</a>)</class> is \(O (\lambda^{1 + k / 2}
-      s^{- k / 2})\) in the \(k\)-leg vertex, and that of the increment
-      \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\lambda^{1 + k / 2} s^{- k / 2}
-      g_s^{j - 1})\), \(j \geqslant 1\), integrable at \(s = \infty\) for \(k
-      \geqslant 4\). The low jets have been removed, so the lower derivatives
-      are controlled by Taylor's formula from the four-leg vertex. (c)
-      <em>Scalar mass path.</em> Given \(\mu\) in the ball, the right side of
-      <class style="font-style: normal">(<a href="#eq:mass">11.9</a>)</class> is computed from the two steps
-      \((\ell^{[2]}, \Theta^{[2]}) [\mu]\) and \((\ell^{[3]}, \Theta^{[3]})
-      [\mu]\). The boundary-integrated map \(\mathcal{A}\) defined above is a
-      contraction for large \(q_{\ast}\): differences gain a factor
-      \(g_{q_{\ast}}\) (for \(\mu\) after integrating from \(q_{\ast}\), using
-      \(\sup_x \log x / \sqrt{x} < \infty\)). (d) <em>Defect.</em> The mass
-      equation supplies exactly the scalar linear jet of the flow, and
-      \(\partial_q \ell^{[3]} = \Pi \mathcal{T} [M^{[2]}, \ell^{[2]}]\),
-      \(\partial_q \Theta^{[3]} = (D\mathcal{T}[M^{[2]}, \ell^{[2]}]
-      (0))^{\circ}\), so the defect is the loop difference between the last
-      two approximations, of order \(g^3\): by (a) with \(\varepsilon_q =
-      g_q^3\), \(\textsf{S}_4 (\mathcal{D}^{\text{o}}) \leqslant Cg_q^3 q^{1 /
-      2} r_q^{- 4} = C
-\lambda^5 q^{- 3}\). Its centred linear part has no
-      tadpole contribution, the tadpole being local; it contracts the four-leg
-      vertex of \(\delta^{[3]}\) with \(R_{0, q}^2\), whose supremum is
-      \(Cq^{- 1 / 2}\), and the four-leg vertex of \(\ell^{[2]}\) with the
-      change of \(R_{0, q}^2\) caused by \(\Theta^{[3]} - \Theta^{[2]}\): both
-      are \(O (g_q^4)\) in the row norm.<span style="margin-left: 1em"></span>\(\Box\)
+      <class style="font-style: normal">(<a href="#eq:iteration">11.8</a>)</class>, after subtracting the seed,
+      is \(O (\lambda^{1 + k / 2} s^{- k / 2})\) in the \(k\)-leg vertex, and
+      that of the increment \(\ell^{[j + 1]} - \ell^{[j]}\) is \(O (\lambda^{1
+      + k / 2} s^{- k / 2} g_s^{j - 1})\), \(j \geqslant 1\), integrable at
+      \(s = \infty\) for \(k \geqslant 4\). The low jets have been removed, so
+      the lower derivatives are controlled by Taylor's formula from the
+      four-leg vertex. (c) <em>Scalar mass path.</em> Given \(\mu\) in the
+      ball, the right side of <class style="font-style: normal">(<a href="#eq:mass">11.9</a>)</class> is
+      computed from the two steps \((\ell^{[2]}, \Theta^{[2]}) [\mu]\) and
+      \((\ell^{[3]}, \Theta^{[3]}) [\mu]\). The boundary-integrated map
+      \(\mathcal{A}\) defined above is a contraction for large \(q_{\ast}\):
+      differences gain a factor \(g_{q_{\ast}}\) (for \(\mu\) after
+      integrating from \(q_{\ast}\), using \(\sup_x \log x / \sqrt{x} <
+      \infty\)). (d) <em>Defect.</em> The mass equation supplies exactly the
+      scalar linear jet of the flow, and \(\partial_q \ell^{[3]} = \Pi
+      \mathcal{T} [M^{[2]}, \ell^{[2]}]\), \(\partial_q \Theta^{[3]} =
+      (D\mathcal{T}[M^{[2]}, \ell^{[2]}] (0))^{\circ}\), so the defect is the
+      loop difference between the last two approximations, of order \(g^3\):
+      by (a) with \(\varepsilon_q = g_q^3\), \(\textsf{S}_4
+      (\mathcal{D}^{\text{o}}) \leqslant Cg_q^3 q^{1 / 2} r_q^{- 4} =
+      C
+\lambda^5 q^{- 3}\). Its centred linear part has no tadpole
+      contribution, the tadpole being local; it contracts the four-leg vertex
+      of \(\delta^{[3]}\) with \(R_{0, q}^2\), whose supremum is \(Cq^{- 1 /
+      2}\), and the four-leg vertex of \(\ell^{[2]}\) with the change of
+      \(R_{0, q}^2\) caused by \(\Theta^{[3]} - \Theta^{[2]}\): both are \(O
+      (g_q^4)\) in the row norm.<span style="margin-left: 1em"></span>\(\Box\)
     </p>
     <p>
       Two technical points are hidden in this sketch. First, the loop estimate
@@ -3654,7 +3664,7 @@ s^{- (n + 3) / 2},\)
           - b_{\ast, 2}) |
 \leqslant Cg_{q_{\ast}} |b_{\ast, 1} - b_{\ast, 2}
           |\), and \(f_N \to f\) pointwise along the whole sequence.
-          Consequently, for \(B\) above a universal constant, every \(r \in
+          Consequently, for \(B_0\) above a universal constant, every \(r \in
           \mathbb{R}\) and \(q_{\ast}\) large depending on \(\lambda, q_0,
           B_0, r\), there is a unique \(b_{\ast, N}\) with</i>
         </p>
@@ -3677,12 +3687,14 @@ s^{- (n + 3) / 2},\)
       \lambda \mu a_2' + 2 \lambda \text{Tr} (C^3 \Theta)\), up to \(O
       (\lambda a_2 g_q^2)\), and \(| \text{Tr} (C^3 \Theta) | \leqslant Cq^{-
       1} v_1 (\Theta)\) because \(| \hat{\Theta} (k) | \leqslant 2 |k| v_1\).
-      The corrections in \(\ell^{[3]}\) give \(O (\lambda^3 q^{- 3 / 2})\)
-      after contraction, by (<a href="#eq:increments">11.13</a>). The cubic part of the seed
-      is \(- \lambda^2 y (x) \int C^2 (x, z) y (z)^2\), and contracting its
-      third derivative at zero with \(R_0^2\) gives the operator \(\lambda^2
-      a_2 \text{diag} (R_0^2) + 2 \lambda^2 C^2 \cdot R_0^2\), where \(\cdot\)
-      is the pointwise product of kernels. Its constant-mode eigenvalue, with
+      By <class style="font-style: normal">(<a href="#eq:coeff">11.12</a>)</class> this term is \(O
+      (\lambda^3 q^{- 3 / 2})\) and goes into \(\mathcal{R}_q\). The
+      corrections in \(\ell^{[3]}\) give \(O (\lambda^3 q^{- 3 / 2})\) after
+      contraction, by (<a href="#eq:increments">11.13</a>). The cubic part of the seed is \(-
+      \lambda^2 y (x) \int C^2 (x, z) y (z)^2\), and contracting its third
+      derivative at zero with \(R_0^2\) gives the operator \(\lambda^2 a_2
+      \text{diag} (R_0^2) + 2 \lambda^2 C^2 \cdot R_0^2\), where \(\cdot\) is
+      the pointwise product of kernels. Its constant-mode eigenvalue, with
       \(R_0^2\) replaced by \(C^2\) at a relative cost \(g_q\), gives the
       remaining two terms.
     </p>
@@ -3717,7 +3729,7 @@ q_{\ast}^{- 3 / 2} X\). Hence \(D
       at fixed \(q\) by consistency of the coefficients, dominated by \(C
       \lambda^3 q^{- 3 / 2}\). As \(\text{Tr} C - \text{Tr} C_{q_{\ast}}
       \leqslant C + q_{\ast}^{1 / 2} / 10\) uniformly in \(N\), the range of
-      \(f_N\) contains \(r\) for \(B\) above a universal constant and
+      \(f_N\) contains \(r\) for \(B_0\) above a universal constant and
       \(q_{\ast}\) large. Monotonicity and pointwise convergence give the
       convergence of \(b_{\ast, N}\).<span style="margin-left: 1em"></span>\(\Box\)
     </p>
@@ -3739,8 +3751,8 @@ q_{\ast}^{- 3 / 2} X\). Hence \(D
         r_q^{- k}\). (b) Show that \(q \cdot q^{1 / 2} r_q^{- k} = g_q qr_q^{2
         - k}\). (c) If one vertex is replaced by a vertex of size
         \(\varepsilon qr_q^{- j}\), show that the loop gains the factor
-        \(\varepsilon\). Deduce the sizes \(g^{j + 1}\) of the increments in
-        (<a href="#eq:increments">11.13</a>).</font>
+        \(\varepsilon\). Deduce the sizes \(g^j\) of the increments
+        \(\ell^{[j]} - \ell^{[j - 1]}\) in (<a href="#eq:increments">11.13</a>).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">
@@ -3759,9 +3771,9 @@ q_{\ast}^{- 3 / 2} X\). Hence \(D
         </strong></class><a id="ex:small-derivatives"></a>On one site take \(q = \lambda = 1\), \(M
         = 0\), fixed small \(\alpha, \delta > 0\), \(\hat{\ell}_n (y) = \alpha
         n^{- 1} (ny - \text{sin} (ny))\), and \(\ell_n = \hat{\ell}_n +
-        \frac{\delta}{3} y^3\). Show that both have small derivatives on \(|y|
-        < 2\), that \(\ell_n - \hat{\ell}_n\) has bounded derivatives, but
-        \(D^3 (\mathcal{T}[\ell_n] -\mathcal{T}[\hat{\ell}_n]) (0) = 12 (2
+        \frac{\delta}{3} y^3\). Show that both have small first derivatives on
+        \(|y| < 2\), that \(\ell_n - \hat{\ell}_n\) has bounded derivatives,
+        but \(D^3 (\mathcal{T}[\ell_n] -\mathcal{T}[\hat{\ell}_n]) (0) = 12 (2
         \delta +
 \alpha \delta n^2 + \delta^2)\) is unbounded in \(n\).
         Conclude that the loop estimate needs the individual higher derivative
@@ -4160,21 +4172,21 @@ C_{q_{\ast}} K_q =
       <p>
         <font style="font-size: 84.1%"><strong>Exercise <class style="font-style: normal">12.2</class>.
         </strong><class style="font-style: normal"><strong>(The scalar clipping error)
-        </strong></class><a id="ex:clip-scalar"></a>On one site, let \(\ell (y) = - \beta
-        \lambda^2 q^{- 2} y^3\) (a cubic correction, \(\beta\) a fixed number)
-        and \(\bar{\mathcal{F}}_q = \frac{\lambda}{3} y^3 + \kappa_q \prime
-        (y) \ell
-(\kappa_q (y))\). (a) Show that \(K_q + \bar{\mathcal{F}}_q
-        \prime \geqslant q / 2\) for all \(y\) if \(\beta \lambda \leqslant
-        cq^2\). (b) Show that \(b_q = b^b_q\) for \(|y| \leqslant r_q\). For
-        \(|y| > 2 r_q\) show that \(\kappa_q\) is locally constant, \(b^b_q
-        (y) = 0\), and \(b_q (y) = - \lambda y (q + \lambda y^2)^{- 3}\), the
-        drift of the pure cube. (c) Conclude that on the large-field set the
-        error is the whole drift of the loop term: it is comparable, for \(|y|
-        \approx 2 r_q\), to the one-site bound \(\lambda q^{- 3} |y|\) on the
-        whole drift (the analogue of \((g_q / q) |y|\), with \(a_2 (q) = q^{-
-        2}\) in place of \(q^{- 1 / 2}\)), but it vanishes on the ball.
-        Compare with (<a href="#eq:source">12.4</a>).</font>
+        </strong></class><a id="ex:clip-scalar"></a>On one site, let \(\ell (y) = - \sigma
+        \lambda^2 q^{- 2} y^3\) (a cubic correction, \(\sigma\) a fixed
+        number) and \(\bar{\mathcal{F}}_q = \frac{\lambda}{3} y^3 + \kappa_q
+        \prime (y) \ell
+(\kappa_q (y))\). (a) Show that \(K_q +
+        \bar{\mathcal{F}}_q \prime \geqslant q / 2\) for all \(y\) if \(\sigma
+        \lambda \leqslant cq^2\). (b) Show that \(b_q = b^b_q\) for \(|y|
+        \leqslant r_q\). For \(|y| > 2 r_q\) show that \(\kappa_q\) is locally
+        constant, \(b^b_q (y) = 0\), and \(b_q (y) = - \lambda y (q + \lambda
+        y^2)^{- 3}\), the drift of the pure cube. (c) Conclude that on the
+        large-field set the error is the whole drift of the loop term: it is
+        of the same form, for \(|y| \approx 2 r_q\), as the one-site bound
+        \(\lambda q^{- 3} |y|\) on the whole drift (the analogue of \((g_q /
+        q) |y|\), with \(a_2 (q) = q^{- 2}\) in place of \(q^{- 1 / 2}\)), but
+        it vanishes on the ball. Compare with (<a href="#eq:source">12.4</a>).</font>
       </p>
     </div>
     <div style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 38.660688007188px">

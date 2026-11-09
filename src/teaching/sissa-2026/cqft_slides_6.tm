@@ -1019,13 +1019,13 @@
     <strong|Fix a trial scalar path <math|\<mu\>>> (determined at the end as
     a fixed point, "Closing the mass path"). Level masses
     <math|M<rsup|<around|[|j|]>>=\<mu\>I+\<Theta\><rsup|<around|[|j|]>>>,
-    sources <math|B<rsup|<around|[|j|]>>=D\<cal-T\><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]><around|(|0|)>>
-    (not the Brownian motion <math|B>), zero-field response
+    sources <math|\<frak-S\><rsup|<around|[|j|]>>=D\<cal-T\><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]><around|(|0|)>>,
+    zero-field response
     <math|R<rsup|<around|[|j|]>><rsub|0,q>=<around|(|K<rsub|q>+M<rsup|<around|[|j|]>><rsub|q>|)><rsup|-1>>:
 
     <\myframed>
       <\equation*>
-        \<ell\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>\<cal-T\><rsub|s><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>\<mathd\>s,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>><around|(|B<rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>\<mathd\>s,<space|1em>j=1,2.
+        \<ell\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>>\<Pi\>\<cal-T\><rsub|s><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>\<mathd\>s,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>><around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>\<mathd\>s,<space|1em>j=1,2.
       </equation*>
     </myframed>
 
@@ -1130,21 +1130,21 @@
     Separate the source at level <math|j> into tadpole and correction vertex:
 
     <\equation*>
-      B<rsup|<around|[|j|]>><rsub|q>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I+E<rsub|q>,<space|1em>E<rsub|q>=-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>T<rsup|<around|[|j|]>><rsub|q>,<space|1em>T<rsup|<around|[|j|]>><rsub|q>=D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>.
+      \<frak-S\><rsup|<around|[|j|]>><rsub|q>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I+E<rsub|q>,<space|1em>E<rsub|q>=-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>T<rsup|<around|[|j|]>><rsub|q>,<space|1em>T<rsup|<around|[|j|]>><rsub|q>=D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>.
     </equation*>
 
     Write <math|E<rsub|q><with|math-font|Bbb|1>=e<rsub|q><with|math-font|Bbb|1>>.
     The constant mode contains the whole local contribution:
 
     <\equation*>
-      <around|\<langle\>|B<rsup|<around|[|j|]>><rsub|q>|\<rangle\>>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>+e<rsub|q>,<space|2em><around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>=E<rsub|q>-e<rsub|q>I.
+      <around|\<langle\>|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|\<rangle\>>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>+e<rsub|q>,<space|2em><around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>=E<rsub|q>-e<rsub|q>I.
     </equation*>
 
     The tadpole cancels; so does any term <math|c<rsub|q>I>. Off-diagonal
     entries stay unchanged. Since <math|d<around|(|0,0|)>=0>,
 
     <\equation*>
-      v<rsub|1><around|(|<around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>|)>.
+      v<rsub|1><around|(|<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>|)>.
     </equation*>
 
     <\myframed>
@@ -1171,13 +1171,13 @@
       <math|sup<rsub|u,v><around|\||<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2><around|(|u,v|)>|\|>\<lesssim\>q<rsup|-1/2>>,
 
       <\equation*>
-        v<rsub|1><around|(|<around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>|)>\<lesssim\>q<rsup|-1/2>v<rsub|1><around|(|T<rsup|<around|[|j|]>><rsub|q>|)>\<lesssim\>\<lambda\><rsup|2>q<rsup|-3/2>.
+        v<rsub|1><around|(|<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>|)>\<lesssim\>q<rsup|-1/2>v<rsub|1><around|(|T<rsup|<around|[|j|]>><rsub|q>|)>\<lesssim\>\<lambda\><rsup|2>q<rsup|-3/2>.
       </equation*>
 
       Integrate with zero boundary value at infinity:
 
       <\equation*>
-        v<rsub|1><around|(|\<Theta\><rsup|<around|[|j+1|]>><rsub|q>|)>\<leqslant\><big|int><rsub|q><rsup|\<infty\>>v<rsub|1><around|(|<around|(|B<rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>|)>\<mathd\>s\<leqslant\>C\<lambda\><rsup|2>q<rsup|-1/2>.
+        v<rsub|1><around|(|\<Theta\><rsup|<around|[|j+1|]>><rsub|q>|)>\<leqslant\><big|int><rsub|q><rsup|\<infty\>>v<rsub|1><around|(|<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>|)>\<mathd\>s\<leqslant\>C\<lambda\><rsup|2>q<rsup|-1/2>.
       </equation*>
 
       <\myframed>
@@ -1340,13 +1340,13 @@
     with <math|R<rsup|<around|[|3|]>><rsub|0,q>=<around|(|K<rsub|q>+M<rsub|q>|)><rsup|-1>>:
 
     <\equation*>
-      \<partial\><rsub|q>\<mu\><rsub|q>=\<beta\><rsub|q>=<around|\<langle\>|B<rsup|<around|[|3|]>><rsub|q>|\<rangle\>>,<space|1em>B<rsup|<around|[|3|]>><rsub|q>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|3|]>><rsub|0,q>|)><rsup|2>|)>I-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|3|]>><rsub|0,q>|)><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|3|]>><rsub|q><around|(|0|)>,
+      \<partial\><rsub|q>\<mu\><rsub|q>=\<beta\><rsub|q>=<around|\<langle\>|\<frak-S\><rsup|<around|[|3|]>><rsub|q>|\<rangle\>>,<space|1em>\<frak-S\><rsup|<around|[|3|]>><rsub|q>=-\<lambda\><math-up|Tr><around|(|<around|(|R<rsup|<around|[|3|]>><rsub|0,q>|)><rsup|2>|)>I-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|3|]>><rsub|0,q>|)><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|3|]>><rsub|q><around|(|0|)>,
     </equation*>
 
     with <math|\<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>>,
     <math|<around|\||b<rsub|\<ast\>>|\|>\<leqslant\> B<rsub|0>\<lambda\>
     q<rsub|\<ast\>><rsup|1/2>>, at an <strong|auxiliary scale>
-    <math|q<rsub|\<ast\>>>. The centred part of <math|B<rsup|<around|[|3|]>>>
+    <math|q<rsub|\<ast\>>>. The centred part of <math|\<frak-S\><rsup|<around|[|3|]>>>
     is not imposed. Bare mass <math|\<mu\><rsub|N>=<math-up|lim><rsub|q\<to\>\<infty\>>\<mu\><rsub|q>>:
     an output of the flow. <math|\<beta\>> depends on the whole path
     <math|\<mu\>> through <math|\<ell\><rsup|<around|[|3|]>><around|[|\<mu\>|]>>:
@@ -1362,7 +1362,7 @@
 
     The approximations use the preceding level,
     <math|\<partial\><rsub|q>\<ell\><rsup|<around|[|3|]>>=\<Pi\>\<cal-T\><around|[|M<rsup|<around|[|2|]>>,\<ell\><rsup|<around|[|2|]>>|]>>,
-    <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=<around|(|B<rsup|<around|[|2|]>>|)><rsup|\<circ\>>>.
+    <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=<around|(|\<frak-S\><rsup|<around|[|2|]>>|)><rsup|\<circ\>>>.
     Hence
 
     <\equation*>
@@ -1703,7 +1703,7 @@
       The resulting source differences are
 
       <\equation*>
-        <around|\||\<delta\>\<beta\><rsub|q>|\|>\<lesssim\>\<lambda\><rsup|2>q<rsup|-1>d,<space|2em>v<rsub|1><around|(|\<delta\><around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>\<lesssim\>\<lambda\><rsup|3>q<rsup|-2>d.
+        <around|\||\<delta\>\<beta\><rsub|q>|\|>\<lesssim\>\<lambda\><rsup|2>q<rsup|-1>d,<space|2em>v<rsub|1><around|(|\<delta\><around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>\<lesssim\>\<lambda\><rsup|3>q<rsup|-2>d.
       </equation*>
     </myframed>
   </hidden>|<\hidden>

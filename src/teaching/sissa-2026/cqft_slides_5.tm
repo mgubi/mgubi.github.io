@@ -292,8 +292,8 @@
           <around|\<langle\>|\<psi\><rsub|t>,K*\<psi\><rsub|t>|\<rangle\>>+<frac|\<lambda\>|3>*<big|int><around|(|\<psi\><rsub|t><rsup|4>-3*c<rsub|t>*\<psi\><rsub|t><rsup|2>|)>=<around|\<langle\>|\<psi\><rsub|t>,\<omega\><rsub|t>|\<rangle\>>+\<ldots\>,
         </equation*>
 
-        and <math|4*a<rsup|4>-12*c<rsub|t>*a<rsup|2>\<geqslant\>-9*c<rsub|t><rsup|2>>
-        (since <math|<around|(|2*a<rsup|2>-3*c<rsub|t>|)><rsup|2>\<geqslant\>0>):
+        and <math|a<rsup|4>-3*c<rsub|t>*a<rsup|2>\<geqslant\><frac|1|2>*a<rsup|4>-<frac|9|2>*c<rsub|t><rsup|2>>
+        (since <math|<around|(|a<rsup|2>-3*c<rsub|t>|)><rsup|2>\<geqslant\>0>):
         the <strong|coercivity of the cube> is visible (heuristically; in
         <math|d=3> the mass counterterm still diverges). For
         <math|\<Phi\><rsub|t>> it is hidden behind
@@ -1282,8 +1282,8 @@
           <wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>*V<rsub|t><around|(|\<phi\>|)>*<wide|Q|\<dot\>><rsub|t>+<frac|1|2>*<wide|Q|\<ddot\>><rsub|t>\<geqslant\>\<kappa\><rsub|t>*<wide|Q|\<dot\>><rsub|t>,
         </equation*>
 
-        then <math|Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leqslant\><frac|2|\<gamma\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*\<mathD\><sqrt|\<rho\>>|\<\|\|\>><rsup|2>>,
-        <math|<frac|1|\<gamma\>>=<big|int><rsub|0><rsup|T>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r>*\<mathd\>t>.
+        then <math|Ent<rsub|\<nu\><rsub|T>><around|(|\<rho\>|)>\<leqslant\><frac|2|\<varrho\>>*\<bbb-E\><rsub|\<nu\><rsub|T>><around|\<\|\|\>|<wide|Q|\<dot\>><rsub|T><rsup|1/2>*\<mathD\><sqrt|\<rho\>>|\<\|\|\>><rsup|2>>,
+        <math|<frac|1|\<varrho\>>=<big|int><rsub|0><rsup|T>\<mathe\><rsup|-2*<big|int><rsub|t><rsup|T>\<kappa\><rsub|r>*\<mathd\>r>*\<mathd\>t>.
       </theorem*>
 
       <\itemize>

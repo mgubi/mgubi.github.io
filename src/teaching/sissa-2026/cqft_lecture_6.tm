@@ -787,18 +787,18 @@
     Set
 
     <\equation*>
-      B<rsub|q><around|(|y|)>=<frac|1|2><around|\<langle\>|y,K<rsub|q>y|\<rangle\>>+<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>,<space|2em>j<rsub|q>=K<rsub|q>\<Phi\><rsub|q>.
+      \<cal-W\><rsub|q><around|(|y|)>=<frac|1|2><around|\<langle\>|y,K<rsub|q>y|\<rangle\>>+<wide|\<Gamma\>|\<bar\>><rsub|q><around|(|y|)>,<space|2em>j<rsub|q>=K<rsub|q>\<Phi\><rsub|q>.
     </equation*>
 
-    Coercivity makes <math|B<rsub|q>> strictly convex, and the coordinate
-    equation is <math|j<rsub|q>=DB<rsub|q><around|(|Y<rsub|q>|)>>, or
-    <math|Y<rsub|q>=DB<rsub|q><rsup|\<ast\>><around|(|j<rsub|q>|)>>, where
-    <math|B<rsub|q><rsup|\<ast\>>> is the Legendre transform. At fixed
-    <math|q>, regard <math|j,\<psi\>> as conjugate variables and put
+    Coercivity makes <math|\<cal-W\><rsub|q>> strictly convex, and the
+    coordinate equation is <math|j<rsub|q>=D\<cal-W\><rsub|q><around|(|Y<rsub|q>|)>>,
+    or <math|Y<rsub|q>=D\<cal-W\><rsub|q><rsup|\<ast\>><around|(|j<rsub|q>|)>>,
+    where <math|\<cal-W\><rsub|q><rsup|\<ast\>>> is the Legendre transform.
+    At fixed <math|q>, regard <math|j,\<psi\>> as conjugate variables and put
     <math|P=H<rsub|q><around|(|Y|)><rsup|-1>Z>. Then
 
     <\equation*>
-      <around|\<langle\>|\<psi\>,\<mathd\>j|\<rangle\>>=<around|\<langle\>|P,\<mathd\>Y|\<rangle\>>+\<mathd\><around|(|B<rsub|q><rsup|\<ast\>><around|(|j|)>|)>.
+      <around|\<langle\>|\<psi\>,\<mathd\>j|\<rangle\>>=<around|\<langle\>|P,\<mathd\>Y|\<rangle\>>+\<mathd\><around|(|\<cal-W\><rsub|q><rsup|\<ast\>><around|(|j|)>|)>.
     </equation*>
 
     Here the differentials are in phase space, with the scale held fixed.
@@ -806,7 +806,7 @@
     canonical; its type-two generating function is
 
     <\equation*>
-      S<rsub|q><around|(|j,P|)>=B<rsub|q><rsup|\<ast\>><around|(|j|)>+<around|\<langle\>|DB<rsub|q><rsup|\<ast\>><around|(|j|)>,P|\<rangle\>>,<space|2em>\<psi\>=D<rsub|j>S<rsub|q>,<space|1em>Y=D<rsub|P>S<rsub|q>.
+      S<rsub|q><around|(|j,P|)>=\<cal-W\><rsub|q><rsup|\<ast\>><around|(|j|)>+<around|\<langle\>|D\<cal-W\><rsub|q><rsup|\<ast\>><around|(|j|)>,P|\<rangle\>>,<space|2em>\<psi\>=D<rsub|j>S<rsub|q>,<space|1em>Y=D<rsub|P>S<rsub|q>.
     </equation*>
 
     The primitive of <math|<wide|\<cal-F\>|\<bar\>>>, together with the
@@ -1330,8 +1330,8 @@
     <math|-f<rprime|'>\<geqslant\>0>. With <math|z=<around|(|\<lambda\>
     S/3|)><rsup|1/2>y>, the source obeys <math|<frac|1|2><around|\||f<rprime|''>|\|>\<leqslant\>
     C<rsub|\<ast\>><around|(|<frac|\<lambda\>|3S>|)><rsup|1/2>>, which is
-    integrable at <math|S=0>, so <math|\<beta\><around|(|S|)>=2C<rsub|\<ast\>><around|(|\<lambda\>
-    S/3|)><rsup|1/2>> satisfies <math|\<frak-L\>\<beta\>\<geqslant\><frac|1|2><around|\||f<rprime|''>|\|>>.
+    integrable at <math|S=0>, so <math|\<vartheta\><around|(|S|)>=2C<rsub|\<ast\>><around|(|\<lambda\>
+    S/3|)><rsup|1/2>> satisfies <math|\<frak-L\>\<vartheta\>\<geqslant\><frac|1|2><around|\||f<rprime|''>|\|>>.
     To apply the maximum principle on the line, take
     <math|\<chi\>=\<mathe\><rsup|3S><around|(|1+x<rsup|4>|)>>. Then
     <math|\<frak-L\>\<chi\>\<geqslant\>0>, since
@@ -1348,7 +1348,7 @@
     up to constants, hence <math|<around|\||F|\|>\<leqslant\>
     C\<lambda\><around|(|<around|\||x|\|><rsup|3>+S<rsup|3/2>|)>>. Also
     <math|<wide|R|^>> is continuous at <math|S=0>, since the posterior
-    concentrates at <math|x>. So <math|\<pm\><wide|R|^>-\<beta\>-\<varepsilon\>\<chi\>>
+    concentrates at <math|x>. So <math|\<pm\><wide|R|^>-\<vartheta\>-\<varepsilon\>\<chi\>>
     is negative on the boundary of a large cylinder, hence inside it. Let the
     cylinder grow and then <math|\<varepsilon\>\<to\>0>.
   </proof>
@@ -2209,7 +2209,7 @@
   for its zero-field response, and
 
   <\equation*>
-    B<rsup|<around|[|j|]>><rsub|q>\<assign\>D\<cal-T\><rsub|q><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]><around|(|0|)>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I-<tfrac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>
+    \<frak-S\><rsup|<around|[|j|]>><rsub|q>\<assign\>D\<cal-T\><rsub|q><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]><around|(|0|)>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I-<tfrac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>
   </equation*>
 
   for the linear coefficient of the loop map at zero field, the <em|source>
@@ -2220,13 +2220,13 @@
   gives the equivalent, more useful form
 
   <\equation>
-    <eq-table|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<table|<row|<cell|\<ell\><rsup|<around|[|0|]>>=0,<space|1em>\<ell\><rsup|<around|[|j+1|]>><rsub|q>=\<ell\><rsup|<around|[|1|]>><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\><around|(|\<cal-T\><rsub|s><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>\<ell\><rsup|<around|[|1|]>><rsub|s>|)><space|0.17em>\<mathd\>s,>>|<row|<cell|\<Theta\><rsup|<around|[|1|]>>=0,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>><around|(|B<rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>\<mathd\>s,<space|2em>j=1,2,>>>>><label|eq:iteration>
+    <eq-table|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<table|<row|<cell|\<ell\><rsup|<around|[|0|]>>=0,<space|1em>\<ell\><rsup|<around|[|j+1|]>><rsub|q>=\<ell\><rsup|<around|[|1|]>><rsub|q>-<big|int><rsub|q><rsup|\<infty\>>\<Pi\><around|(|\<cal-T\><rsub|s><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>-\<partial\><rsub|s>\<ell\><rsup|<around|[|1|]>><rsub|s>|)><space|0.17em>\<mathd\>s,>>|<row|<cell|\<Theta\><rsup|<around|[|1|]>>=0,<space|1em>\<Theta\><rsup|<around|[|j+1|]>><rsub|q>=-<big|int><rsub|q><rsup|\<infty\>><around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>\<mathd\>s,<space|2em>j=1,2,>>>>><label|eq:iteration>
   </equation>
 
   so that
 
   <\equation*>
-    \<partial\><rsub|q>\<ell\><rsup|<around|[|j+1|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>,<space|2em>\<partial\><rsub|q>\<Theta\><rsup|<around|[|j+1|]>>=<around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>:
+    \<partial\><rsub|q>\<ell\><rsup|<around|[|j+1|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M<rsup|<around|[|j|]>>,\<ell\><rsup|<around|[|j|]>>|]>,<space|2em>\<partial\><rsub|q>\<Theta\><rsup|<around|[|j+1|]>>=<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>:
   </equation*>
 
   each step inserts the previous approximation, nonlinear correction and
@@ -2333,22 +2333,22 @@
 
   <paragraph|Why the centred source is integrable> The first-moment bound on
   <math|\<Theta\><rsup|<around|[|j+1|]>>> is an output of the iteration. To
-  see it, separate its source <math|B<rsup|<around|[|j|]>><rsub|q>> into the
-  local tadpole and the correction vertex:
+  see it, separate its source <math|\<frak-S\><rsup|<around|[|j|]>><rsub|q>>
+  into the local tadpole and the correction vertex:
 
   <\equation*>
-    B<rsup|<around|[|j|]>><rsub|q>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I+E<rsub|q>,<space|2em>E<rsub|q>=-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>T<rsub|q>,<space|1em>T<rsub|q>=D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>.
+    \<frak-S\><rsup|<around|[|j|]>><rsub|q>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>I+E<rsub|q>,<space|2em>E<rsub|q>=-<frac|1|2><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>T<rsub|q>,<space|1em>T<rsub|q>=D<rsup|3>\<ell\><rsup|<around|[|j|]>><rsub|q><around|(|0|)>.
   </equation*>
 
   Here <math|T<rsub|q>> is a four-leg tensor; <math|E<rsub|q>> and
   <math|T<rsub|q>> depend on the level, which we do not write. Since all
   kernels at zero field are translation invariant, write
   <math|E<rsub|q><with|math-font|Bbb|1>=e<rsub|q><with|math-font|Bbb|1>>. The
-  constant mode is <math|<around|\<langle\>|B<rsup|<around|[|j|]>><rsub|q>|\<rangle\>>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>+e<rsub|q>>,
+  constant mode is <math|<around|\<langle\>|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|\<rangle\>>=-\<lambda\><math-up|Tr><around*|(|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>|)>+e<rsub|q>>,
   so the source of the centred kernel is exactly
 
   <\equation*>
-    <around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>=E<rsub|q>-e<rsub|q>I.
+    <around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>=E<rsub|q>-e<rsub|q>I.
   </equation*>
 
   The tadpole cancels completely. More generally, any local term
@@ -2360,7 +2360,7 @@
   diagonal,
 
   <\equation*>
-    v<rsub|1><around|(|<around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>-e<rsub|q>I|)>=v<rsub|1><around|(|E<rsub|q>|)>.
+    v<rsub|1><around|(|<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>=v<rsub|1><around|(|E<rsub|q>-e<rsub|q>I|)>=v<rsub|1><around|(|E<rsub|q>|)>.
   </equation*>
 
   Thus centring removes the local obstruction, but does not itself create
@@ -2408,7 +2408,7 @@
   therefore satisfies
 
   <\equation*>
-    v<rsub|1><around|(|\<Theta\><rsup|<around|[|j+1|]>><rsub|q>|)>\<leqslant\><big|int><rsub|q><rsup|\<infty\>>v<rsub|1><around|(|<around|(|B<rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>|)>\<mathd\>s\<leqslant\>C*\<lambda\><rsup|2><big|int><rsub|q><rsup|\<infty\>>s<rsup|-3/2>\<mathd\>s=2C*\<lambda\><rsup|2>q<rsup|-1/2>.
+    v<rsub|1><around|(|\<Theta\><rsup|<around|[|j+1|]>><rsub|q>|)>\<leqslant\><big|int><rsub|q><rsup|\<infty\>>v<rsub|1><around|(|<around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|s>|)><rsup|\<circ\>>|)>\<mathd\>s\<leqslant\>C*\<lambda\><rsup|2><big|int><rsub|q><rsup|\<infty\>>s<rsup|-3/2>\<mathd\>s=2C*\<lambda\><rsup|2>q<rsup|-1/2>.
   </equation*>
 
   This proves convergence of the integral in first moment and
@@ -2421,7 +2421,7 @@
   <math|g>: <math|\<eta\><rsub|q><around|(|\<Theta\><rsup|<around|[|3|]>>-\<Theta\><rsup|<around|[|2|]>>|)>\<leqslant\>C*g<rsub|q><rsup|3>>.
   This convergence concerns the centred kernel in first moment; it does not
   assert a cutoff-uniform bound on its absolute row norm or on the bare
-  scalar mass. The source <math|<around|(|B<rsup|<around|[|j|]>>|)><rsup|\<circ\>>>
+  scalar mass. The source <math|<around|(|\<frak-S\><rsup|<around|[|j|]>>|)><rsup|\<circ\>>>
   itself, by contrast, does have a cutoff-uniform row norm: it is a
   contraction of a four-leg vertex, bounded in a rooted norm, against the
   bounded kernel <math|<around|(|R<rsup|<around|[|j|]>><rsub|0,q>|)><rsup|2>>.
@@ -2479,8 +2479,11 @@
     with the lines frozen at <math|G<rsub|s>>, the defect would keep the
     leading term <math|<frac|1|2>\<Pi\><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|3|]>>|)><rsup|2>-G<rsup|2>>D<rsup|2>U'>.
     By the resolvent identity <math|R<rsup|<around|[|3|]>>-G=-R<rsup|<around|[|3|]>><around|(|M<rsup|<around|[|3|]>>+D\<ell\><rsup|<around|[|3|]>>|)>G>,
-    and since both insertions are <math|O<around|(|g<rsub|q>|)>> relative to
-    <math|q> on the ball, this term is as large as the integrand of
+    and since <math|\<mu\>/q> and <math|D\<ell\><rsup|<around|[|3|]>>/q> are
+    <math|O<around|(|g<rsub|q>|)>> on the ball, while
+    <math|\<Theta\><rsup|<around|[|3|]>>> is smaller still once it passes
+    through a resolvent (<math|\<eta\><rsub|q><around|(|\<Theta\><rsup|<around|[|3|]>>|)>\<lesssim\>g<rsub|q><rsup|2>>),
+    this term is as large as the integrand of
     <math|\<delta\><rsup|<around|[|2|]>>>: its four-leg coefficient is of
     order <math|\<lambda\><rsup|3>q<rsup|-2>>, instead of
     <math|\<lambda\><rsup|5>q<rsup|-3>> in<nbsp>(<reference|eq:defect-bound>).
@@ -2658,11 +2661,10 @@
   gives the mass equation
 
   <\equation>
-    <label|eq:mass>\<partial\><rsub|q>*\<mu\><rsub|q>=\<beta\><rsub|q>\<assign\><around|\<langle\>|B<rsup|<around|[|3|]>><rsub|q>|\<rangle\>>,<space|2em>B<rsup|<around|[|3|]>><rsub|q>=-\<lambda\><math-up|Tr><around*|(|R<rsub|0,q><rsup|2>|)>*I-<tfrac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|3|]>><rsub|q><around|(|0|)>,
+    <label|eq:mass>\<partial\><rsub|q>*\<mu\><rsub|q>=\<beta\><rsub|q>\<assign\><around|\<langle\>|\<frak-S\><rsup|<around|[|3|]>><rsub|q>|\<rangle\>>,<space|2em>\<frak-S\><rsup|<around|[|3|]>><rsub|q>=-\<lambda\><math-up|Tr><around*|(|R<rsub|0,q><rsup|2>|)>*I-<tfrac|1|2><math-up|Ctr><rsub|R<rsub|0,q><rsup|2>>D<rsup|3>\<ell\><rsup|<around|[|3|]>><rsub|q><around|(|0|)>,
   </equation>
 
-  (the source <math|B> is not the sampling Brownian motion <math|B>), with
-  the boundary condition
+  with the boundary condition
 
   <\equation*>
     \<mu\><rsub|q<rsub|\<ast\>>>=b<rsub|\<ast\>>.
@@ -2671,9 +2673,9 @@
   The running mass is pinned at the auxiliary scale <math|q<rsub|\<ast\>>>,
   at a value <math|b<rsub|\<ast\>>> with <math|<around|\||b<rsub|\<ast\>>|\|>\<leqslant\>
   B<rsub|0>\<lambda\> q<rsub|\<ast\>><rsup|1/2>>. The centred part of
-  <math|B<rsup|<around|[|3|]>>> is not imposed: the kernel <math|\<Theta\>>
-  of the final approximation is the one produced by the iteration, from the
-  source of the previous level.
+  <math|\<frak-S\><rsup|<around|[|3|]>>> is not imposed: the kernel
+  <math|\<Theta\>> of the final approximation is the one produced by the
+  iteration, from the source of the previous level.
 
   <paragraph|Why we stop at the second correction> Define the bounded-field
   approximation by
@@ -2689,7 +2691,7 @@
   Choose the scalar mass to solve the scalar part of the linear flow for this
   final approximation, as in (<reference|eq:mass>). Since
   <math|\<partial\><rsub|q>\<ell\><rsup|<around|[|3|]>>=\<Pi\>\<cal-T\><rsub|q><around|[|M<rsup|<around|[|2|]>>,\<ell\><rsup|<around|[|2|]>>|]>>
-  and <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=<around|(|B<rsup|<around|[|2|]>><rsub|q>|)><rsup|\<circ\>>>,
+  and <math|\<partial\><rsub|q>\<Theta\><rsup|<around|[|3|]>>=<around|(|\<frak-S\><rsup|<around|[|2|]>><rsub|q>|)><rsup|\<circ\>>>,
   and since <math|\<Pi\><rprime|'>f=\<Pi\>f+<around|(|Df<around|(|0|)>|)><rsup|\<circ\>>y>,
   its defect is exactly
 
@@ -2712,7 +2714,7 @@
     <math-ss|S><rsub|4><around|(|\<cal-D\><rsup|o><rsub|q>|)>\<lesssim\>g<rsub|q><rsup|3>q<rsup|1/2>r<rsub|q><rsup|-4>=\<lambda\><rsup|5>q<rsup|-3>,<space|2em><around|\<\|\|\>|\<cal-E\><rsup|c><rsub|q>|\<\|\|\>><rsub|<math-up|row>>+q<rsup|1/2>v<rsub|1><around|(|\<cal-E\><rsup|c><rsub|q>|)>\<lesssim\>g<rsub|q><rsup|4>,
   </equation*>
 
-  where <math|\<cal-E\><rsup|c><rsub|q>=D\<cal-D\><rsup|o><rsub|q><around|(|0|)>=<around|(|B<rsup|<around|[|2|]>><rsub|q>-B<rsup|<around|[|3|]>><rsub|q>|)><rsup|\<circ\>>>
+  where <math|\<cal-E\><rsup|c><rsub|q>=D\<cal-D\><rsup|o><rsub|q><around|(|0|)>=<around|(|\<frak-S\><rsup|<around|[|2|]>><rsub|q>-\<frak-S\><rsup|<around|[|3|]>><rsub|q>|)><rsup|\<circ\>>>
   is the centred linear part. The tadpoles, being local, cancel in the
   centred part. What remains contracts the four-leg vertex of
   <math|\<delta\><rsup|<around|[|3|]>>> with <math|R<rsub|0,q><rsup|2>>, and
@@ -3026,7 +3028,7 @@
   mass equation, and for the centred sources of the iteration,
 
   <\equation*>
-    <around|\||\<delta\>\<beta\><rsub|q>|\|>\<leqslant\>C*g<rsub|q><rsup|2>d=C*\<lambda\><rsup|2>q<rsup|-1>d,<space|2em>v<rsub|1><around|(|\<delta\><around|(|B<rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>\<leqslant\>C*\<lambda\><rsup|3>q<rsup|-2>d.
+    <around|\||\<delta\>\<beta\><rsub|q>|\|>\<leqslant\>C*g<rsub|q><rsup|2>d=C*\<lambda\><rsup|2>q<rsup|-1>d,<space|2em>v<rsub|1><around|(|\<delta\><around|(|\<frak-S\><rsup|<around|[|j|]>><rsub|q>|)><rsup|\<circ\>>|)>\<leqslant\>C*\<lambda\><rsup|3>q<rsup|-2>d.
   </equation*>
 
   For the scalar bound, a one-loop source of size <math|g<rsub|q>> gains the
@@ -3116,10 +3118,11 @@
 
   <\proposition>
     <dueto|The coefficient construction><label|prop:coeff> For
-    <math|q<rsub|\<ast\>>> large enough (depending on <math|\<lambda\>>, not
-    on <math|N>), the system<nbsp><eqref|eq:iteration>\U<eqref|eq:mass> has a
-    unique scalar mass path in a ball, and, with
-    <math|M<rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsup|<around|[|3|]>><rsub|q>>
+    <math|q<rsub|\<ast\>>\<geqslant\><math-up|max><around|(|1,q<rsub|0>|)>>
+    large enough, depending on <math|\<lambda\>> and <math|B<rsub|0>> but not
+    on <math|N>, and <math|<around|\||b<rsub|\<ast\>>|\|>\<leqslant\>B<rsub|0>\<lambda\>q<rsub|\<ast\>><rsup|1/2>>,
+    the system<nbsp><eqref|eq:iteration>\U<eqref|eq:mass> has a unique scalar
+    mass path in a ball, and, with <math|M<rsub|q>=\<mu\><rsub|q>I+\<Theta\><rsup|<around|[|3|]>><rsub|q>>
     as in<nbsp><eqref|eq:Gamma-o>,
 
     <\equation>
@@ -3158,7 +3161,7 @@
 
     where <math|\<cal-E\><rsup|c><rsub|q>=D\<cal-D\><rsup|<math-up|o>><rsub|q><around|(|0|)>>
     is the linear part of the defect, a centred kernel. At fixed <math|N> the
-    bare mass exists, <math|<around|\||\<mu\><rsub|N>-b|\|>\<lesssim\>\<lambda\><math-up|Tr>C<rsub|q<rsub|\<ast\>>>\<lesssim\>\<lambda\>N>,
+    bare mass exists, <math|<around|\||\<mu\><rsub|N>-b<rsub|\<ast\>>|\|>\<lesssim\>\<lambda\><math-up|Tr>C<rsub|q<rsub|\<ast\>>>\<lesssim\>\<lambda\>N>,
     and <math|<around|\||\<mu\><rsub|N>-\<mu\><rsub|q>|\|>\<leqslant\>C*\<lambda\>*N<rsup|3>/q>,
     <math|<around|\<\|\|\>|\<Theta\><rsup|<around|[|3|]>><rsub|q>|\<\|\|\>><rsub|<math-up|row>>\<leqslant\>C*N*\<lambda\><rsup|2>*q<rsup|-1/2>\<to\>0>
     as <math|q\<to\>\<infty\>>.
@@ -3175,9 +3178,9 @@
     Expand <math|D<rsup|k-1>> of the loop force into loops; in each,
     telescope the difference onto one marked vertex or propagator and
     apply<nbsp><eqref|eq:loop>. (b) <em|Integration.> Each step gains one
-    <math|g>; the integrand of<nbsp><eqref|eq:iteration> is
-    <math|O<around|(|\<lambda\><rsup|1+k/2>*s<rsup|-k/2>|)>> in the
-    <math|k>-leg vertex, and that of the increment
+    <math|g>; the integrand of<nbsp><eqref|eq:iteration>, after subtracting
+    the seed, is <math|O<around|(|\<lambda\><rsup|1+k/2>*s<rsup|-k/2>|)>> in
+    the <math|k>-leg vertex, and that of the increment
     <math|\<ell\><rsup|<around|[|j+1|]>>-\<ell\><rsup|<around|[|j|]>>> is
     <math|O<around|(|\<lambda\><rsup|1+k/2>*s<rsup|-k/2>*g<rsub|s><rsup|j-1>|)>>,
     <math|j\<geqslant\>1>, integrable at <math|s=\<infty\>> for
@@ -3519,7 +3522,7 @@
       Moreover <math|<around|\||f<rsub|N><around|(|b<rsub|\<ast\>,1>|)>-f<rsub|N><around|(|b<rsub|\<ast\>,2>|)>-<around|(|b<rsub|\<ast\>,1>-b<rsub|\<ast\>,2>|)>|\|>\<leqslant\>
       C*g<rsub|q<rsub|\<ast\>>><around|\||b<rsub|\<ast\>,1>-b<rsub|\<ast\>,2>|\|>>,
       and <math|f<rsub|N>\<to\> f> pointwise along the whole sequence.
-      Consequently, for <math|B> above a universal constant, every
+      Consequently, for <math|B<rsub|0>> above a universal constant, every
       <math|r\<in\>\<bbb-R\>> and <math|q<rsub|\<ast\>>> large depending on
       <math|\<lambda\>,q<rsub|0>,B<rsub|0>,r>, there is a unique
       <math|b<rsub|\<ast\>,N>> with
@@ -3542,7 +3545,10 @@
     <math|<around|\||<math-up|Tr><around|(|C<rsup|3>\<Theta\>|)>|\|>\<leqslant\>
     C*q<rsup|-1>v<rsub|1><around|(|\<Theta\>|)>> because
     <math|<around|\||<wide|\<Theta\>|^><around|(|k|)>|\|>\<leqslant\>2<around|\||k|\|>v<rsub|1>>.
-    The corrections in <math|\<ell\><rsup|<around|[|3|]>>> give
+    By<nbsp><eqref|eq:coeff> this term is
+    <math|O<around|(|\<lambda\><rsup|3>q<rsup|-3/2>|)>> and goes into
+    <math|\<cal-R\><rsub|q>>. The corrections in
+    <math|\<ell\><rsup|<around|[|3|]>>> give
     <math|O<around|(|\<lambda\><rsup|3>q<rsup|-3/2>|)>> after contraction, by
     (<reference|eq:increments>). The cubic part of the seed is
     <math|-\<lambda\><rsup|2>y<around|(|x|)><big|int>
@@ -3589,7 +3595,7 @@
     <math|C\<lambda\><rsup|3>q<rsup|-3/2>>. As <math|<math-up|Tr>
     C-<math-up|Tr> C<rsub|q<rsub|\<ast\>>>\<leqslant\>
     C+q<rsub|\<ast\>><rsup|1/2>/10> uniformly in <math|N>, the range of
-    <math|f<rsub|N>> contains <math|r> for <math|B> above a universal
+    <math|f<rsub|N>> contains <math|r> for <math|B<rsub|0>> above a universal
     constant and <math|q<rsub|\<ast\>>> large. Monotonicity and pointwise
     convergence give the convergence of <math|b<rsub|\<ast\>,N>>.
   </proof>
@@ -3614,8 +3620,9 @@
     q<rsup|1/2>r<rsub|q><rsup|-k>=g<rsub|q>q*r<rsub|q><rsup|2-k>>. (c) If one
     vertex is replaced by a vertex of size <math|\<varepsilon\>
     q*r<rsub|q><rsup|-j>>, show that the loop gains the factor
-    <math|\<varepsilon\>>. Deduce the sizes <math|g<rsup|j+1>> of the
-    increments in (<reference|eq:increments>).
+    <math|\<varepsilon\>>. Deduce the sizes <math|g<rsup|j>> of the
+    increments <math|\<ell\><rsup|<around|[|j|]>>-\<ell\><rsup|<around|[|j-1|]>>>
+    in (<reference|eq:increments>).
   </exercise>
 
   <\exercise>
@@ -3630,7 +3637,7 @@
     <math|\<alpha\>,\<delta\>\<gtr\>0>, <math|<wide|\<ell\>|^><rsub|n><around|(|y|)>=\<alpha\>
     n<rsup|-1><around|(|n*y-<math-up|sin><around|(|n*y|)>|)>>, and
     <math|\<ell\><rsub|n>=<wide|\<ell\>|^><rsub|n>+<frac|\<delta\>|3>y<rsup|3>>.
-    Show that both have small derivatives on
+    Show that both have small first derivatives on
     <math|<around|\||y|\|>\<less\>2>, that
     <math|\<ell\><rsub|n>-<wide|\<ell\>|^><rsub|n>> has bounded derivatives,
     but <math|D<rsup|3><around|(|\<cal-T\><around|[|\<ell\><rsub|n>|]>-\<cal-T\><around|[|<wide|\<ell\>|^><rsub|n>|]>|)><around|(|0|)>=12<around|(|2\<delta\>+\<alpha\>\<delta\>
@@ -3922,12 +3929,12 @@
 
   <\exercise>
     <dueto|The scalar clipping error><label|ex:clip-scalar>On one site, let
-    <math|\<ell\><around|(|y|)>=-\<beta\>\<lambda\><rsup|2>q<rsup|-2>y<rsup|3>>
-    (a cubic correction, <math|\<beta\>> a fixed number) and
+    <math|\<ell\><around|(|y|)>=-\<sigma\>\<lambda\><rsup|2>q<rsup|-2>y<rsup|3>>
+    (a cubic correction, <math|\<sigma\>> a fixed number) and
     <math|<wide|\<cal-F\>|\<bar\>><rsub|q>=<frac|\<lambda\>|3>
     y<rsup|3>+\<kappa\><rsub|q>'<around|(|y|)>\<ell\><around|(|\<kappa\><rsub|q><around|(|y|)>|)>>.
     (a) Show that <math|K<rsub|q>+<wide|\<cal-F\>|\<bar\>><rsub|q>'\<geqslant\>
-    q/2> for all <math|y> if <math|\<beta\>\<lambda\>\<leqslant\>
+    q/2> for all <math|y> if <math|\<sigma\>\<lambda\>\<leqslant\>
     c*q<rsup|2>>. (b) Show that <math|b<rsub|q>=b<rsup|b><rsub|q>> for
     <math|<around|\||y|\|>\<leqslant\> r<rsub|q>>. For
     <math|<around|\||y|\|>\<gtr\>2r<rsub|q>> show that
@@ -3936,7 +3943,7 @@
     <math|b<rsub|q><around|(|y|)>=-\<lambda\> y<around|(|q+\<lambda\>
     y<rsup|2>|)><rsup|-3>>, the drift of the pure cube. (c) Conclude that on
     the large-field set the error is the whole drift of the loop term: it is
-    comparable, for <math|<around|\||y|\|>\<approx\>2r<rsub|q>>, to the
+    of the same form, for <math|<around|\||y|\|>\<approx\>2r<rsub|q>>, as the
     one-site bound <math|\<lambda\> q<rsup|-3><around|\||y|\|>> on the whole
     drift (the analogue of <math|<around|(|g<rsub|q>/q|)><around|\||y|\|>>,
     with <math|a<rsub|2><around|(|q|)>=q<rsup|-2>> in place of
@@ -4190,9 +4197,9 @@
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.1>||The structure of
       the construction (<with|mode|<quote|math>|E>,
       <with|mode|<quote|math>|J>: the energies of Lecture
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1588A0CB0-BEC73A0>|<link|hyperlink|<id|%1588A0CB0-BEC73A0>|<url|cqft_lecture_7.tm>>|7>).
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1366175B0-81EBC40>|<link|hyperlink|<id|%1366175B0-81EBC40>|<url|cqft_lecture_7.tm>>|7>).
       The two arrows between the forward and backward estimates form the
-      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1588A0CB0-BEC7460>|<link|hyperlink|<id|%1588A0CB0-BEC7460>|<url|cqft_lecture_7.tm>>|7>:
+      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1366175B0-81EBD00>|<link|hyperlink|<id|%1366175B0-81EBD00>|<url|cqft_lecture_7.tm>>|7>:
       neither estimate closes on its own.>|<pageref|auto-10>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.2>||The force on one

@@ -1004,19 +1004,18 @@ D\mathcal{T}[M, \ell] (0) \rangle .\)
         <strong>Fix a trial scalar path <font color="#620000">\(\mu\)</font></strong>
         (determined at the end as a fixed point, &quot;Closing the mass
         path&quot;). Level masses <font color="#620000">\(M^{[j]} = \mu I +
-        \Theta^{[j]}\)</font>, sources <font color="#620000">\(B^{[j]} = D\mathcal{T}
-        [M^{[j]}, \ell^{[j]}] (0)\)</font> (not the Brownian motion <font
-        color="#620000">\(B\)</font>), zero-field response <font color="#620000">\(R^{[j]}_{0,
-        q} = (K_q + M^{[j]}_q)^{- 1}\)</font>:
+        \Theta^{[j]}\)</font>, sources <font color="#620000">\(\mathfrak{S}^{[j]} =
+        D\mathcal{T} [M^{[j]}, \ell^{[j]}] (0)\)</font>, zero-field response
+        <font color="#620000">\(R^{[j]}_{0, q} = (K_q + M^{[j]}_q)^{- 1}\)</font>:
       </p>
       <div class="slide-block">
         <center>
           \(\displaystyle \ell^{[j + 1]}_q = - \int_q^{\infty} \Pi
           \mathcal{T}_s [M^{[j]}, \ell^{[j]}]
 \mathrm{d} s, \quad \Theta^{[j +
-          1]}_q = - \int_q^{\infty} (B^{[j]}_s)^{\circ}
-\mathrm{d} s, \quad j
-          = 1, 2.\)
+          1]}_q = - \int_q^{\infty}
+(\mathfrak{S}^{[j]}_s)^{\circ} \mathrm{d}
+          s, \quad j = 1, 2.\)
         </center>
       </div>
       <p>
@@ -1166,21 +1165,22 @@ D\mathcal{T}[M, \ell] (0) \rangle .\)
         and correction vertex:
       </p>
       <center>
-        \(\displaystyle B^{[j]}_q = - \lambda \text{Tr} ((R^{[j]}_{0, q})^2) I
-        + E_q, \quad E_q = -
-\frac{1}{2} \text{Ctr}_{(R^{[j]}_{0, q})^2}
-        T^{[j]}_q, \quad T^{[j]}_q = D^3
-\ell^{[j]}_q (0) .\)
+        \(\displaystyle \mathfrak{S}^{[j]}_q = - \lambda \text{Tr}
+        ((R^{[j]}_{0, q})^2) I + E_q, \quad
+E_q = - \frac{1}{2}
+        \text{Ctr}_{(R^{[j]}_{0, q})^2} T^{[j]}_q, \quad T^{[j]}_q
+= D^3
+        \ell^{[j]}_q (0) .\)
       </center>
       <p>
         Write <font color="#620000">\(E_q \mathbb{1} = e_q \mathbb{1}\)</font>. The
         constant mode contains the whole local contribution:
       </p>
       <center>
-        \(\displaystyle \langle B^{[j]}_q \rangle = - \lambda \text{Tr}
-        ((R^{[j]}_{0, q})^2) + e_q,
-\qquad (B^{[j]}_q)^{\circ} = E_q - e_q
-        I.\)
+        \(\displaystyle \langle \mathfrak{S}^{[j]}_q \rangle = - \lambda
+        \text{Tr} ((R^{[j]}_{0,
+q})^2) + e_q, \qquad
+        (\mathfrak{S}^{[j]}_q)^{\circ} = E_q - e_q I.\)
       </center>
       <p>
         The tadpole cancels; so does any term <font color="#620000">\(c_q I\)</font>.
@@ -1188,7 +1188,7 @@ D\mathcal{T}[M, \ell] (0) \rangle .\)
         0\)</font>,
       </p>
       <center>
-        \(\displaystyle v_1 ((B^{[j]}_q)^{\circ}) = v_1 (E_q) .\)
+        \(\displaystyle v_1 ((\mathfrak{S}^{[j]}_q)^{\circ}) = v_1 (E_q) .\)
       </center>
       <div class="slide-block">
         <p>
@@ -1217,16 +1217,18 @@ D\mathcal{T}[M, \ell] (0) \rangle .\)
         since <font color="#620000">\(\sup_{u, v} | (R^{[j]}_{0, q})^2 (u, v) |
         \lesssim q^{- 1 / 2}\)</font>,
       </p><center>
-        \(\displaystyle v_1 ((B^{[j]}_q)^{\circ}) = v_1 (E_q) \lesssim q^{- 1
-        / 2} v_1 (T^{[j]}_q)
-\lesssim \lambda^2 q^{- 3 / 2} .\)
+        \(\displaystyle v_1 ((\mathfrak{S}^{[j]}_q)^{\circ}) = v_1 (E_q)
+        \lesssim q^{- 1 / 2} v_1
+(T^{[j]}_q) \lesssim \lambda^2 q^{- 3 / 2}
+        .\)
       </center><p>
         Integrate with zero boundary value at infinity:
       </p><center>
-        \(\displaystyle v_1 (\Theta^{[j + 1]}_q) \leqslant \int_q^{\infty} v_1
-        ((B^{[j]}_s)^{\circ})
-\mathrm{d} s \leqslant C \lambda^2 q^{- 1 / 2}
-        .\)
+        \(\displaystyle v_1 (\Theta^{[j + 1]}_q) \leqslant \int_q^{\infty}
+        v_1
+((\mathfrak{S}^{[j]}_s)^{\circ}) \mathrm{d} s \leqslant C
+        \lambda^2 q^{- 1 /
+2} .\)
       </center><div class="slide-block">
         <p>
           Uniformly in <font color="#620000">\(N\)</font>: <font color="#620000">\(\eta_q
@@ -1467,21 +1469,23 @@ g_q + g_q^2) \lesssim \lambda^2 q^{- 1 / 2}\)</font>.
         M_q)^{- 1}\)</font>:
       </p>
       <center>
-        \(\displaystyle \partial_q \mu_q = \beta_q = \langle B^{[3]}_q
-        \rangle, \quad B^{[3]}_q = -
-\lambda \text{Tr} ((R^{[3]}_{0, q})^2) I
-        - \frac{1}{2}
-\text{Ctr}_{(R^{[3]}_{0, q})^2} D^3 \ell^{[3]}_q (0),\)
+        \(\displaystyle \partial_q \mu_q = \beta_q = \langle
+        \mathfrak{S}^{[3]}_q \rangle, \quad
+\mathfrak{S}^{[3]}_q = - \lambda
+        \text{Tr} ((R^{[3]}_{0, q})^2) I -
+\frac{1}{2}
+        \text{Ctr}_{(R^{[3]}_{0, q})^2} D^3 \ell^{[3]}_q (0),\)
       </center>
       <p>
         with <font color="#620000">\(\mu_{q_{\ast}} = b_{\ast}\)</font>, <font color="#620000">\(|b_{\ast}
         | \leqslant B_0 \lambda q_{\ast}^{1 / 2}\)</font>, at an
         <strong>auxiliary scale</strong> <font color="#620000">\(q_{\ast}\)</font>. The
-        centred part of <font color="#620000">\(B^{[3]}\)</font> is not imposed. Bare
-        mass <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty} \mu_q\)</font>:
-        an output of the flow. <font color="#620000">\(\beta\)</font> depends on the
-        whole path <font color="#620000">\(\mu\)</font> through <font color="#620000">\(\ell^{[3]}
-        [\mu]\)</font>: a fixed point (&quot;Closing the mass path&quot;).
+        centred part of <font color="#620000">\(\mathfrak{S}^{[3]}\)</font> is not
+        imposed. Bare mass <font color="#620000">\(\mu_N = \text{lim}_{q \to \infty}
+        \mu_q\)</font>: an output of the flow. <font color="#620000">\(\beta\)</font>
+        depends on the whole path <font color="#620000">\(\mu\)</font> through <font
+        color="#620000">\(\ell^{[3]} [\mu]\)</font>: a fixed point (&quot;Closing the
+        mass path&quot;).
       </p>
     </div>
     <div class="toggle" style="display: none">
@@ -1500,7 +1504,8 @@ g_q + g_q^2) \lesssim \lambda^2 q^{- 1 / 2}\)</font>.
       <p>
         The approximations use the preceding level, <font color="#620000">\(\partial_q
         \ell^{[3]} = \Pi \mathcal{T} [M^{[2]}, \ell^{[2]}]\)</font>, <font
-        color="#620000">\(\partial_q \Theta^{[3]} = (B^{[2]})^{\circ}\)</font>. Hence
+        color="#620000">\(\partial_q \Theta^{[3]} =
+        (\mathfrak{S}^{[2]})^{\circ}\)</font>. Hence
       </p>
       <center>
         \(\displaystyle \mathcal{D}^o_q = \Pi' (\mathcal{T}_q [M^{[2]},
@@ -1773,8 +1778,8 @@ g_q + g_q^2) \lesssim \lambda^2 q^{- 1 / 2}\)</font>.
         <center>
           \(\displaystyle | \delta \beta_q | \lesssim \lambda^2 q^{- 1} d,
           \qquad v_1 (\delta
-(B^{[j]}_q)^{\circ}) \lesssim \lambda^3 q^{- 2}
-          d.\)
+(\mathfrak{S}^{[j]}_q)^{\circ}) \lesssim
+          \lambda^3 q^{- 2} d.\)
         </center>
       </div>
     </div>

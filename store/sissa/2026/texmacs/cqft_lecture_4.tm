@@ -524,20 +524,22 @@
   </key-result>
 
   <\proof>
-    <math|u<rsub|t>\<assign\>\<mathe\><rsup|-V<rsub|t>>=\<mathe\><rsup|<frac|1|2>*\<Delta\><rsub|Q<rsub|T,t>>>u<rsub|T>>
-    is a Gaussian convolution, where <math|\<Delta\><rsub|Q>\<assign\><math-up|Tr><around|(|Q*\<mathD\><rsup|2>|)>>.
+    <math|h<rsub|t>=Z<rsub|T><rsup|-1>\<mathe\><rsup|-V<rsub|t>>=\<mathe\><rsup|<frac|1|2>*\<Delta\><rsub|Q<rsub|T,t>>>h<rsub|T>>
+    (Remark<nbsp><reference|rem:doob-h>) is a Gaussian convolution, where
+    <math|\<Delta\><rsub|Q>\<assign\><math-up|Tr><around|(|Q*\<mathD\><rsup|2>|)>>.
     Since <math|\<partial\><rsub|t>*Q<rsub|T,t>=-<wide|Q|\<dot\>><rsub|t>>,
-    it solves the backward heat equation <math|\<partial\><rsub|t>*u<rsub|t>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>u<rsub|t>|)>>.
-    Insert <math|\<mathD\><rsup|2>u=<around|(|\<mathD\>V\<otimes\>\<mathD\>V-\<mathD\><rsup|2>V|)>*u>
-    and divide by <math|-u>.
+    it solves the backward heat equation <math|\<partial\><rsub|t>*h<rsub|t>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>h<rsub|t>|)>>.
+    Insert <math|\<mathD\><rsup|2>h=<around|(|\<mathD\>V\<otimes\>\<mathD\>V-\<mathD\><rsup|2>V|)>*h>
+    and divide by <math|-h>.
   </proof>
 
   The nonlinear term generates new, generally nonlocal, interactions (trees),
   and the trace term contracts pairs of fields with the covariance of the
   shell <math|<around|[|t,t+\<mathd\>t|]>> (loops). The substitution
-  <math|u=\<mathe\><rsup|-V>>, which linearises the equation, is a Cole\UHopf
-  transform: we come back to this in Section<nbsp><reference|sec:burgers>,
-  and in Appendix<nbsp><hlink|A|cqft_lecture_5.tm#sec:algebra> of
+  <math|h\<propto\>\<mathe\><rsup|-V>>, which linearises the equation, is a
+  Cole\UHopf transform: we come back to this in
+  Section<nbsp><reference|sec:burgers>, and in
+  Appendix<nbsp><hlink|A|cqft_lecture_5.tm#sec:algebra> of
   Lecture<nbsp><hlink|5|cqft_lecture_5.tm>.
 
   <paragraph|The control problem> Let <math|\<bbb-H\><rsub|a>> be the set of
@@ -643,15 +645,15 @@
   <math|x<rsub|t>=x>. With the <em|Hamiltonian>
 
   <\equation*>
-    H<around|(|x,p,u|)>\<assign\><around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>,
+    \<cal-H\><around|(|x,p,u|)>\<assign\><around|\<langle\>|p,b<around|(|x,u|)>|\<rangle\>>-\<ell\><around|(|x,u|)>,
   </equation*>
 
   Pontryagin's principle<nbsp><cite|PBGM62> says that along an optimal pair
   <math|<around|(|x,u|)>> there is a <em|costate> <math|p> such that
 
   <\equation*>
-    <wide|x|\<dot\>><rsub|s>=\<partial\><rsub|p>*H,<space|2em><wide|p|\<dot\>><rsub|s>=-\<partial\><rsub|x>*H,<space|2em>p<rsub|T>=-\<mathD\>g<around|(|x<rsub|T>|)>,<space|2em>u<rsub|s>\<in\>arg
-    max<rsub|v> H<around|(|x<rsub|s>,p<rsub|s>,v|)>.
+    <wide|x|\<dot\>><rsub|s>=\<partial\><rsub|p>*\<cal-H\>,<space|2em><wide|p|\<dot\>><rsub|s>=-\<partial\><rsub|x>*\<cal-H\>,<space|2em>p<rsub|T>=-\<mathD\>g<around|(|x<rsub|T>|)>,<space|2em>u<rsub|s>\<in\>arg
+    max<rsub|v> \<cal-H\><around|(|x<rsub|s>,p<rsub|s>,v|)>.
   </equation*>
 
   The state runs forward from its initial value, the costate backward from
@@ -665,7 +667,7 @@
   Integrating over <math|<around|[|t,T|]>> and using the terminal condition,
 
   <\equation*>
-    <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*H<around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
+    <frac|\<mathd\>|\<mathd\>\<varepsilon\>>J<around|(|u+\<varepsilon\>*v|)><mid|\|><rsub|\<varepsilon\>=0>=-<big|int><rsub|t><rsup|T><around|\<langle\>|\<partial\><rsub|u>*\<cal-H\><around|(|x<rsub|s>,p<rsub|s>,u<rsub|s>|)>,v<rsub|s>|\<rangle\>>*\<mathd\>s.
   </equation*>
 
   So the costate is the Lagrange multiplier of the constraint
@@ -679,24 +681,25 @@
   Hamilton\UJacobi\UBellman equation
 
   <\equation*>
-    \<partial\><rsub|t>*V=H<rsub|\<ast\>><around|(|x,-\<mathD\>V|)>,<space|2em>H<rsub|\<ast\>><around|(|x,p|)>\<assign\>max<rsub|u>
-    H<around|(|x,p,u|)>,<space|2em>V<around|(|T,\<cdummy\>|)>=g.
+    \<partial\><rsub|t>*V=\<cal-H\><rsub|\<ast\>><around|(|x,-\<mathD\>V|)>,<space|2em>\<cal-H\><rsub|\<ast\>><around|(|x,p|)>\<assign\>max<rsub|u>
+    \<cal-H\><around|(|x,p,u|)>,<space|2em>V<around|(|T,\<cdummy\>|)>=g.
   </equation*>
 
-  Its characteristics are Hamilton's equations for <math|H<rsub|\<ast\>>>,
-  and along them <math|p<rsub|s>=-\<mathD\>V<around|(|s,x<rsub|s>|)>>: the
-  costate is the sensitivity of the optimal cost to a displacement of the
-  state, i.e. the force that the future exerts on the present.
+  Its characteristics are Hamilton's equations for
+  <math|\<cal-H\><rsub|\<ast\>>>, and along them
+  <math|p<rsub|s>=-\<mathD\>V<around|(|s,x<rsub|s>|)>>: the costate is the
+  sensitivity of the optimal cost to a displacement of the state, i.e. the
+  force that the future exerts on the present.
 
   <paragraph|The Hamiltonian of the field> In the problem of
   Theorem<nbsp><reference|thm:BD> the state is the field,
   <math|b<around|(|x,u|)>=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u>,
   <math|\<ell\>=<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>> and
-  <math|g=V<rsub|T>>. Then <math|H<around|(|p,u|)>=<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u|\<rangle\>>-<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>
+  <math|g=V<rsub|T>>. Then <math|\<cal-H\><around|(|p,u|)>=<around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s><rsup|1/2>*u|\<rangle\>>-<frac|1|2><around|\<\|\|\>|u|\<\|\|\>><rsup|2>>
   is maximal at <math|u=<wide|Q|\<dot\>><rsub|s><rsup|1/2>*p>, and
 
   <\equation*>
-    H<rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>
+    \<cal-H\><rsub|\<ast\>><around|(|p|)>=<frac|1|2><around|\<langle\>|p,<wide|Q|\<dot\>><rsub|s>*p|\<rangle\>>
   </equation*>
 
   is the Hamiltonian of a free particle with mass matrix
@@ -726,12 +729,12 @@
   <em|backward> stochastic differential equation,
 
   <\equation*>
-    \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*H*<space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>p<rsub|T>=-\<mathD\>g<around|(|X<rsub|T>|)>.
+    \<mathd\>p<rsub|s>=-\<partial\><rsub|x>*\<cal-H\>*<space|0.17em>\<mathd\>s+\<Upsilon\><rsub|s><space|0.17em>\<mathd\>W<rsub|s>,<space|2em>p<rsub|T>=-\<mathD\>g<around|(|X<rsub|T>|)>.
   </equation*>
 
   The martingale term <math|\<Upsilon\>*\<mathd\>W> is the price of
   adaptedness: the costate may not anticipate the noise. For the field
-  <math|\<partial\><rsub|x>*H=0>, so the costate is a martingale,
+  <math|\<partial\><rsub|x>*\<cal-H\>=0>, so the costate is a martingale,
   <math|p<rsub|t>=\<bbb-E\><rsub|t><around|[|-\<mathD\>V<rsub|T><around|(|X<rsub|T>|)>|]>>,
   and since the value function is the effective potential
   (Theorem<nbsp><reference|thm:BD>), <math|p<rsub|t>=-\<mathD\>V<rsub|t><around|(|X<rsub|t>|)>>.
@@ -974,17 +977,20 @@
 
   <\remark>
     <dueto|Time reversal compensates the drift up to the
-    score><label|rem:reversal-score> Write both dynamics in the direction of
-    increasing resolution. Forward, <math|\<Phi\>> has drift
-    <math|b<rsub|t>=<wide|Q|\<dot\>><rsub|t>*F<rsub|t>>, which contains the
-    whole interaction. Backward, by<nbsp><eqref|eq:reversal>, the reversed
-    process has at <math|s=T-t> the drift
+    score><label|rem:reversal-score> Forward, in the direction of increasing
+    resolution, <math|\<Phi\>> has drift <math|b<rsub|t>=<wide|Q|\<dot\>><rsub|t>*F<rsub|t>>,
+    which contains the whole interaction. Backward,
+    by<nbsp><eqref|eq:reversal>, the reversed process runs in the direction
+    of decreasing resolution and has at <math|s=T-t> the drift
     <math|\<beta\><rsub|t><around|(|x|)>=-<wide|Q|\<dot\>><rsub|t>*Q<rsub|t><rsup|-1>*x>,
-    which does not see the interaction at all. The two drifts do not cancel,
-    and the time-reversal formula<nbsp><cite|And82|HP86> says what is left:
+    which does not see the interaction at all. Written as a velocity in the
+    direction of increasing resolution, the backward drift is
+    <math|b<rsub|\<ast\>>=-\<beta\>>. The two velocities <math|b> and
+    <math|b<rsub|\<ast\>>> do not agree, and the time-reversal
+    formula<nbsp><cite|And82|HP86> says what separates them:
 
     <\equation*>
-      b<rsub|t><around|(|x|)>+\<beta\><rsub|t><around|(|x|)>=<wide|Q|\<dot\>><rsub|t>*\<mathD\>log
+      b<rsub|t><around|(|x|)>-b<rsub|\<ast\>><around|(|x|)>=b<rsub|t><around|(|x|)>+\<beta\><rsub|t><around|(|x|)>=<wide|Q|\<dot\>><rsub|t>*\<mathD\>log
       p<rsub|t><around|(|x|)>,
     </equation*>
 
@@ -995,9 +1001,8 @@
     p<rsub|t><around|(|x|)>=-Q<rsub|t><rsup|-1>*x>, so the whole backward
     drift is the Gaussian score; with an interaction, the score carries
     everything that the backward dynamics ignores. In Nelson's stochastic
-    mechanics<nbsp><cite|Nel67> the backward drift, seen as a velocity, is
-    <math|b<rsub|\<ast\>>=-\<beta\>>, and the half difference
-    <math|<frac|1|2>*<around|(|b-b<rsub|\<ast\>>|)>=<frac|1|2>*<wide|Q|\<dot\>><rsub|t>*\<mathD\>log
+    mechanics<nbsp><cite|Nel67> <math|b<rsub|\<ast\>>> is the backward
+    velocity, and the half difference <math|<frac|1|2>*<around|(|b-b<rsub|\<ast\>>|)>=<frac|1|2>*<wide|Q|\<dot\>><rsub|t>*\<mathD\>log
     p<rsub|t>> is the <em|osmotic velocity>. The same score is the noise of
     the field equation of Lecture<nbsp><hlink|5|cqft_lecture_5.tm>, the
     observable <math|\<omega\><rsub|t>=K*\<Phi\><rsub|t>-J<rsub|t>*F<rsub|t>>
@@ -1064,8 +1069,11 @@
     <math|t=\<infty\>>, and <math|Q<rsub|T>> is the cutoff covariance), where
     <math|\<cal-R\><rsub|t>=t> and <math|j<rsub|t>=t\<Phi\><rsub|T>+N<rsub|t>>
     with <math|N> a Brownian motion; Eldan's original
-    construction<nbsp><cite|Eld13> uses an adapted control matrix. This is
-    the profile of Lectures<nbsp><hlink|6|cqft_lecture_6.tm>\U<hlink|7|cqft_lecture_7.tm>.
+    construction<nbsp><cite|Eld13> uses an adapted control matrix. After the
+    change of variable <math|q=q<rsub|0>+t<rsup|2>>, and with
+    <math|Q<rsub|T>> replaced by the full covariance <math|C>, this is the
+    mass-regulator profile of Exercise<nbsp><reference|ex:regulators>, used
+    in Lectures<nbsp><hlink|6|cqft_lecture_6.tm>\U<hlink|7|cqft_lecture_7.tm>.
   </remark>
 
   <paragraph|Literature: Polchinski, Eldan and diffusion models> The objects
@@ -1235,21 +1243,26 @@
   </exercise>
 
   <\exercise>
-    <dueto|Stochastic maximum principle><label|ex:pontryagin> (a) For the
-    control problem<nbsp><eqref|eq:BD>, perturb an optimal control
-    <math|u\<to\>u+\<varepsilon\>*v> and show that
-    <math|p<rsub|t>\<assign\>\<bbb-E\><rsub|t>*<around|[|-\<mathD\>V<rsub|T><around|(|X<rsup|u><rsub|T>|)>|]>>
-    satisfies <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>.
-    Identify <math|p> with the force <math|F> of<nbsp><eqref|eq:fbsde>. (b)
-    Show that <math|\<Upsilon\><rsub|t>=\<mathD\>F<rsub|t><around|(|\<Phi\><rsub|t>|)>*<wide|Q|\<dot\>><rsub|t><rsup|1/2>>.
+    <dueto|Stochastic maximum principle><label|ex:pontryagin> (a) For an
+    optimal control <math|u> of<nbsp><eqref|eq:BD>, put
+    <math|p<rsub|t>\<assign\>\<bbb-E\><rsub|t>*<around|[|-\<mathD\>V<rsub|T><around|(|X<rsup|u><rsub|T>|)>|]>>,
+    so that <math|u<rsub|t>=<wide|Q|\<dot\>><rsub|t><rsup|1/2>*p<rsub|t>>
+    by<nbsp><eqref|eq:EL>. Use the martingale representation theorem to show
+    that <math|p> solves the backward equation
+    <math|\<mathd\>p<rsub|t>=\<Upsilon\><rsub|t>\<mathd\>W<rsub|t>>,
+    <math|p<rsub|T>=-\<mathD\>V<rsub|T><around|(|X<rsup|u><rsub|T>|)>>, for
+    an adapted <math|\<Upsilon\>>, coupled to the forward equation of
+    <math|X<rsup|u>>, and identify <math|<around|(|X<rsup|u>,p|)>> with
+    <math|<around|(|\<Phi\>,F|)>> in<nbsp><eqref|eq:fbsde>. (b) Show that
+    <math|\<Upsilon\><rsub|t>=\<mathD\>F<rsub|t><around|(|\<Phi\><rsub|t>|)>*<wide|Q|\<dot\>><rsub|t><rsup|1/2>>.
   </exercise>
 
   <\exercise>
-    <dueto|Optimal drift>(a) Derive<nbsp><eqref|eq:EL>
-    from<nbsp><eqref|eq:BD>, and check that the optimal <math|u> is a
-    martingale up to the factor <math|<wide|Q|\<dot\>><rsup|1/2>>. (b) For
-    the quadratic interaction of Exercise<nbsp><reference|ex:quadratic>,
-    compute the optimal drift and the value<nbsp><eqref|eq:BD> explicitly.
+    <dueto|Optimal drift>(a) Check from<nbsp><eqref|eq:EL> that the optimal
+    <math|u> is a martingale up to the factor
+    <math|<wide|Q|\<dot\>><rsup|1/2>>. (b) For the quadratic interaction of
+    Exercise<nbsp><reference|ex:quadratic>, compute the optimal drift and the
+    value<nbsp><eqref|eq:BD> explicitly.
   </exercise>
 
   <\exercise>
@@ -1299,9 +1312,9 @@
   </equation>
 
   an infinite-dimensional, backward, viscous <em|Burgers equation>. The
-  Cole\UHopf transform <math|F=\<mathD\>log u> linearises it, which is the
-  statement that <math|u=\<mathe\><rsup|-V>> solves a heat equation. Two
-  remarks on<nbsp><eqref|eq:burgers>:
+  Cole\UHopf transform <math|F=\<mathD\>log h> linearises it, which is the
+  statement that <math|h\<propto\>\<mathe\><rsup|-V>> solves a heat equation.
+  Two remarks on<nbsp><eqref|eq:burgers>:
 
   <big-figure|<with|par-mode|center|<\script-output|tikz|default>
     \\documentclass[tikz]{standalone}
@@ -1417,11 +1430,13 @@
     matters in infinite volume (Section<nbsp><hlink|9.5|cqft_lecture_5.tm#sec:infinite-volume>
     of Lecture<nbsp><hlink|5|cqft_lecture_5.tm>);
 
-    <item>the Burgers flows for different covariances commute, and the
-    curvature vanishes, when <math|\<mathD\>F<rsub|t>> is symmetric, i.e.
-    when <math|F<rsub|t>> is a gradient<nbsp><cite|BCG26>. For a non-gradient
-    force, as for the general Wilson\UItô diffusions of<nbsp><cite|BCG26>,
-    the flows do not commute.
+    <item>the Burgers flows for different covariances commute when
+    <math|\<mathD\>F<rsub|t>> is symmetric, i.e. when <math|F<rsub|t>> is a
+    gradient<nbsp><cite|BCG26>: then <math|F<rsub|t>=-\<mathD\>V<rsub|t>>,
+    the flows are gradients of Polchinski flows, i.e. of Gaussian
+    convolutions after the Cole\UHopf transform, and Gaussian convolutions
+    commute. For a non-gradient force, as for the general Wilson\UItô
+    diffusions of<nbsp><cite|BCG26>, the flows do not commute.
   </enumerate-roman>
 
   The function <math|F<rsub|t><around|(|\<cdummy\>|)>> with
@@ -1816,8 +1831,8 @@
   for every <math|\<psi\>> it solves the noiseless Polchinski equation, so it
   is a complete integral of that equation, with parameter <math|\<psi\>>.
   Jacobi's theorem then says that in the new coordinates the Hamiltonian
-  <math|H<rsub|\<ast\>>> vanishes: <math|\<psi\>> and <math|p> are constants
-  of motion.
+  <math|\<cal-H\><rsub|\<ast\>>> vanishes: <math|\<psi\>> and <math|p> are
+  constants of motion.
 
   This is what force coordinates are:
 
@@ -1967,12 +1982,23 @@
     For<nbsp><eqref|eq:wetterich>, note that
     <math|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|t>+\<cal-R\><rsub|t>=\<mathD\><rsup|2>\<Gamma\><rsub|t>+S<rsub|t><rsup|-1>>.
     For the endpoints: <math|S<rsub|T>=0>; and at <math|t=0>,
-    <math|S<rsub|0>=Q<rsub|T>>, so<nbsp><eqref|eq:moreau> identifies
-    <math|<frac|1|2>*<around|\<langle\>|x,Q<rsub|T><rsup|-1>*x|\<rangle\>>-V<rsub|0><around|(|x|)>>,
-    up to a constant, with the cumulant generating function of
-    <math|\<nu\><rsub|T>> at <math|Q<rsub|T><rsup|-1>*x>, whose Legendre
-    transform is <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>>
+    <math|S<rsub|0>=Q<rsub|T>>, so the formula for <math|\<cal-K\><rsub|0>>
+    in Remark<nbsp><reference|rem:measurement> (the Cameron\UMartin formula)
+    identifies <math|<frac|1|2>*<around|\<langle\>|x,Q<rsub|T><rsup|-1>*x|\<rangle\>>-V<rsub|0><around|(|x|)>+V<rsub|0><around|(|0|)>>
+    with the cumulant generating function of <math|\<nu\><rsub|T>> at
+    <math|Q<rsub|T><rsup|-1>*x>. By<nbsp><eqref|eq:moreau>, its Legendre
+    transform is <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>-V<rsub|0><around|(|0|)>>
     (Exercise<nbsp><reference|ex:1PI>).
+
+    Near <math|t=T> the two traces <math|<math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>><rsub|t><around|(|S<rsub|t><rsup|-1>+\<mathD\><rsup|2>\<Gamma\><rsub|t>|)><rsup|-1>|)>>
+    and <math|<math-up|Tr><around|(|<wide|\<cal-R\>|\<dot\>><rsub|t>S<rsub|t>|)>=<math-up|Tr><around|(|S<rsub|t><rsup|-1><wide|Q|\<dot\>><rsub|t>|)>>
+    in<nbsp><eqref|eq:wetterich-Gamma> diverge separately (like
+    <math|n/<around|(|T-t|)>> for <math|Q<rsub|t>=t> in dimension <math|n>);
+    only their difference, which is <math|-<math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>\<mathD\><rsup|2>V<rsub|t>|)>>
+    by Exercise<nbsp><reference|ex:envelope>, is integrable. For the same
+    reason the field-independent term dropped in<nbsp><eqref|eq:wetterich> is
+    not integrable up to <math|T>: <math|\<Gamma\><rsup|<math-up|EAA>><rsub|t>>
+    is defined up to an infinite constant.
   </proof>
 
   <big-figure|<with|par-mode|center|<\script-output|tikz|default>
@@ -2241,11 +2267,19 @@
   quadratic term <math|<frac|1|2>*<around|\<langle\>|\<psi\>,Q<rsub|T><rsup|-1>*\<psi\>|\<rangle\>>>,
   is the free energy of the unresolved shell constrained to the forecast
   <math|\<psi\>>, and<nbsp><eqref|eq:moreau> is the minimisation over the
-  forecast. In the language of Theorem<nbsp><reference|thm:BD>:
-  <math|V<rsub|t>> is the value function of the control problem, and
-  <math|\<Gamma\><rsub|t>> is its Moreau transform, i.e. the value function
-  expressed in the forecast coordinate, the interaction picture of the
-  classical part of the dynamics.
+  forecast. Strictly, the Gibbs principle gives only<nbsp><eqref|eq:moreau>
+  with <math|\<Gamma\><rsub|t>> replaced by the right-hand side
+  <math|<wide|\<Gamma\>|~><rsub|t>> of<nbsp><eqref|eq:constrained>. Since the
+  mean is <math|\<psi\>>, <math|<wide|\<Gamma\>|~><rsub|t><around|(|\<psi\>|)>+<frac|1|2><around|\<langle\>|\<psi\>,S<rsub|t><rsup|-1>\<psi\>|\<rangle\>>=inf<around|{|<big|int>V<rsub|T>\<mathd\>\<nu\>+<math-up|Ent><around|(|\<nu\>\|\<mu\><rsup|S<rsub|t>>|)>:<space|0.17em><text|mean
+  >\<psi\>|}>>, an infimum of a convex functional under a linear constraint,
+  hence convex in <math|\<psi\>>; so is <math|\<Gamma\><rsub|t>+<frac|1|2><around|\<langle\>|\<psi\>,S<rsub|t><rsup|-1>\<psi\>|\<rangle\>>>
+  (Proposition<nbsp><reference|prop:legendre>). Both are recovered from the
+  same <math|V<rsub|t>> by Legendre duality, and therefore
+  <math|<wide|\<Gamma\>|~><rsub|t>=\<Gamma\><rsub|t>>. In the language of
+  Theorem<nbsp><reference|thm:BD>: <math|V<rsub|t>> is the value function of
+  the control problem, and <math|\<Gamma\><rsub|t>> is its Moreau transform,
+  i.e. the value function expressed in the forecast coordinate, the
+  interaction picture of the classical part of the dynamics.
 
   <paragraph|The tree level> Dropping the Itô term
   in<nbsp><eqref|eq:transformed-flow> gives
@@ -2300,7 +2334,9 @@
     <dueto|The constant><label|ex:envelope>
     Differentiate<nbsp><eqref|eq:moreau> in <math|t> at fixed <math|x>
     (envelope theorem), and use<nbsp><eqref|eq:polchinski> to show that the
-    quadratic terms cancel and <math|\<partial\><rsub|t>*\<Gamma\><rsub|t>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>V<rsub|t>|)>>.
+    quadratic terms cancel and <math|\<partial\><rsub|t>*\<Gamma\><rsub|t><around|(|\<psi\>|)>=-<frac|1|2><math-up|Tr><around|(|<wide|Q|\<dot\>><rsub|t>*\<mathD\><rsup|2>V<rsub|t><around|(|x|)>|)>>,
+    where <math|x=\<psi\>+S<rsub|t>\<mathD\>\<Gamma\><rsub|t><around|(|\<psi\>|)>>
+    is the field whose forecast is <math|\<psi\>>.
     Deduce<nbsp><eqref|eq:wetterich-Gamma> with the stated constant.
   </exercise>
 
@@ -2313,9 +2349,15 @@
 
   <\exercise>
     <dueto|1PI effective action><label|ex:1PI> (a) Let
-    <math|\<cal-K\><around|(|j|)>=log <big|int>\<mathe\><rsup|<around|\<langle\>|j,\<varphi\>|\<rangle\>>>\<mathe\><rsup|-V<rsub|T><around|(|\<varphi\>|)>>\<mu\><rsup|Q<rsub|T>><around|(|\<mathd\>\<varphi\>|)>>.
-    Show that <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>=\<cal-K\><rsup|\<ast\>>>,
-    and that <math|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|0><around|(|\<psi\>|)>>
+    <math|<wide|\<cal-K\>|~><around|(|j|)>=log
+    <big|int>\<mathe\><rsup|<around|\<langle\>|j,\<varphi\>|\<rangle\>>>\<mathe\><rsup|-V<rsub|T><around|(|\<varphi\>|)>>\<mu\><rsup|Q<rsub|T>><around|(|\<mathd\>\<varphi\>|)>>,
+    the unnormalised log-Laplace transform, so that
+    <math|<wide|\<cal-K\>|~>=\<cal-K\><rsub|0>+log Z<rsub|T>> with
+    <math|\<cal-K\><rsub|0>> as in Remark<nbsp><reference|rem:measurement>.
+    Show that <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>=<wide|\<cal-K\>|~><rsup|\<ast\>>>,
+    in agreement with <math|\<Gamma\><rsup|<math-up|EAA>><rsub|0>=\<cal-K\><rsub|0><rsup|\<ast\>>+V<rsub|0><around|(|0|)>>
+    after Proposition<nbsp><reference|prop:legendre>, and that
+    <math|\<mathD\><rsup|2>\<Gamma\><rsup|<math-up|EAA>><rsub|0><around|(|\<psi\>|)>>
     is the inverse covariance of the tilted measure with mean <math|\<psi\>>.
     (b) Integrate<nbsp><eqref|eq:wetterich-Gamma> with
     <math|\<mathD\><rsup|2>\<Gamma\><rsub|t>> replaced by
@@ -2361,7 +2403,9 @@
     (c) In zero dimensions, with <math|S<rsub|t>=S> and
     <math|V<rsub|T><around|(|y|)>=\<lambda\>*y<rsup|4>>, compute both bounds
     numerically and compare with the conditional variance; repeat for the
-    double well <math|V<rsub|T><around|(|y|)>=<frac|1|2>*y<rsup|4>-<frac|3|2>*y<rsup|2>>.
+    double well <math|V<rsub|T><around|(|y|)>=<frac|1|2>*y<rsup|4>-<frac|3|2>*y<rsup|2>>
+    with <math|S\<less\>1/3>, so that <math|\<cal-U\>> stays convex. What
+    goes wrong for <math|S\<geqslant\>1/3>?
   </exercise>
 
   <\exercise>
@@ -2616,10 +2660,10 @@
     <associate|bib-Efr11|<tuple|Efr11|23>>
     <associate|bib-Eld13|<tuple|Eld13|23>>
     <associate|bib-Eld23|<tuple|Eld23|23>>
-    <associate|bib-FS06|<tuple|FS06|23>>
-    <associate|bib-HJA20|<tuple|HJA20|23>>
-    <associate|bib-HP86|<tuple|HP86|23>>
-    <associate|bib-JL01|<tuple|JL01|23>>
+    <associate|bib-FS06|<tuple|FS06|24>>
+    <associate|bib-HJA20|<tuple|HJA20|24>>
+    <associate|bib-HP86|<tuple|HP86|24>>
+    <associate|bib-JL01|<tuple|JL01|24>>
     <associate|bib-JL64|<tuple|JL64|24>>
     <associate|bib-JL75|<tuple|JL75|24>>
     <associate|bib-MY99|<tuple|MY99|24>>
@@ -2665,16 +2709,16 @@
     <associate|eq:response|<tuple|8.6|14>>
     <associate|eq:reversal|<tuple|7.17|9>>
     <associate|eq:shear|<tuple|7.13|7>>
-    <associate|eq:transformed-fbsde|<tuple|8.7|14>>
+    <associate|eq:transformed-fbsde|<tuple|8.7|15>>
     <associate|eq:transformed-flow|<tuple|8.8|15>>
     <associate|eq:verification|<tuple|7.10|6>>
     <associate|eq:wetterich|<tuple|8.14|19>>
     <associate|eq:wetterich-Gamma|<tuple|8.13|19>>
     <associate|ex:1PI|<tuple|8.6|22>>
-    <associate|ex:brascamp-lieb|<tuple|8.9|22>>
+    <associate|ex:brascamp-lieb|<tuple|8.9|23>>
     <associate|ex:characteristics|<tuple|8.1|22>>
     <associate|ex:envelope|<tuple|8.4|22>>
-    <associate|ex:free-action|<tuple|8.10|22>>
+    <associate|ex:free-action|<tuple|8.10|23>>
     <associate|ex:pontryagin|<tuple|7.3|12>>
     <associate|ex:quadratic|<tuple|7.1|12>>
     <associate|ex:regulators|<tuple|8.8|22>>
@@ -2709,7 +2753,7 @@
     <associate|thm:BD|<tuple|7.6|6>>
     <associate|thm:fbsde|<tuple|7.3|4>>
     <associate|thm:polchinski|<tuple|7.5|5>>
-    <associate|thm:transformed|<tuple|8.2|14>>
+    <associate|thm:transformed|<tuple|8.2|15>>
     <associate|thm:wetterich|<tuple|8.4|19>>
   </collection>
 </references>

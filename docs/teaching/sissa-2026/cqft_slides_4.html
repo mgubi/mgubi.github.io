@@ -507,7 +507,7 @@ V_t (\Phi_t)
         </tr></tbody>
       </table>
       <p>
-        A backward Hamilton&ndash;Jacobi equation; <font color="#620000">\(u =
+        A backward Hamilton&ndash;Jacobi equation; <font color="#620000">\(h \propto
         \mathrm{e}^{- V}\)</font> is a Cole&ndash;Hopf transform.
       </p>
     </div>
@@ -670,8 +670,8 @@ X_s^3 : \|^2 \mathrm{d} s = \frac{\lambda^2}{12}
         = x\)</font>. <strong>Hamiltonian:</strong>
       </p>
       <center>
-        \(\displaystyle H (x, p, u) = \langle p, b (x, u) \rangle - \ell (x,
-        u) .\)
+        \(\displaystyle \mathcal{H} (x, p, u) = \langle p, b (x, u) \rangle -
+        \ell (x, u) .\)
       </center>
       <div class="slide-box">
         <p style="margin-top: 1em">
@@ -682,10 +682,10 @@ X_s^3 : \|^2 \mathrm{d} s = \frac{\lambda^2}{12}
         </p>
         <p style="margin-bottom: 1em">
           <i><center>
-            \(\displaystyle \dot{x} = \partial_p H, \qquad \dot{p} = -
-            \partial_x H, \qquad p_T = - Dg
-(x_T), \qquad u \in \arg \max H
-            (x, p, \cdot) .\)
+            \(\displaystyle \dot{x} = \partial_p \mathcal{H}, \qquad \dot{p} =
+            - \partial_x \mathcal{H},
+\qquad p_T = - Dg (x_T), \qquad u \in
+            \arg \max \mathcal{H} (x, p, \cdot) .\)
           </center></i>
         </p>
       </div>
@@ -725,8 +725,8 @@ X_s^3 : \|^2 \mathrm{d} s = \frac{\lambda^2}{12}
         \(\displaystyle \dot{\xi} = \partial_x b \xi + \partial_u bv, \qquad
         \xi_t = 0.\)
       </center><p>
-        The costate equation <font color="#620000">\(\dot{p} = - \partial_x H\)</font>
-        is exactly what makes
+        The costate equation <font color="#620000">\(\dot{p} = - \partial_x
+        \mathcal{H}\)</font> is exactly what makes
       </p><center>
         \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} s} \langle p, \xi \rangle
         = \langle \partial_x
@@ -737,9 +737,9 @@ X_s^3 : \|^2 \mathrm{d} s = \frac{\lambda^2}{12}
       </p><center>
         \(\displaystyle \frac{\mathrm{d}}{\mathrm{d} \varepsilon} J (u +
         \varepsilon v) |_{\varepsilon
-= 0} = - \int_t^T \langle \partial_u H
-        (x_s, p_s, u_s), v_s \rangle \mathrm{d}
-s.\)
+= 0} = - \int_t^T \langle \partial_u
+        \mathcal{H}(x_s, p_s, u_s), v_s \rangle
+\mathrm{d} s.\)
       </center><p>
         <strong>HJB.</strong> Dynamic programming over <font color="#620000">\([t, t +
         \mathrm{d} t]\)</font>:
@@ -747,14 +747,14 @@ s.\)
         \(\displaystyle V (t, x) = \min_u [\ell \mathrm{d} t + V (t +
         \mathrm{d} t, x + b \mathrm{d}
 t)] \quad \Longrightarrow \quad
-        \partial_t V = H_{\ast} (x, - \mathrm{D} V),
-\quad H_{\ast} = \max_u
-        H.\)
+        \partial_t V =\mathcal{H}_{\ast} (x, -
+\mathrm{D} V), \quad
+        \mathcal{H}_{\ast} = \max_u \mathcal{H}.\)
       </center><p>
-        Hamilton's equations for <font color="#620000">\(H_{\ast}\)</font> are its
-        characteristics, and along them <font color="#620000">\(p_s = - \mathrm{D} V
-        (s, x_s)\)</font>: the costate is the force the future exerts on the
-        present.
+        Hamilton's equations for <font color="#620000">\(\mathcal{H}_{\ast}\)</font>
+        are its characteristics, and along them <font color="#620000">\(p_s = -
+        \mathrm{D} V (s, x_s)\)</font>: the costate is the force the future
+        exerts on the present.
       </p></font>
     </div>
     <div class="toggle" style="display: none">
@@ -764,11 +764,11 @@ t)] \quad \Longrightarrow \quad
       <font style="font-size: 90.0%"><p>
         State <font color="#620000">\(=\)</font> field, <font color="#620000">\(b = \dot{Q}_s^{1
         / 2} u\)</font>, <font color="#620000">\(\ell = \frac{1}{2} \|u\|^2\)</font>,
-        <font color="#620000">\(g = V_T\)</font>. <font color="#620000">\(H\)</font> is
-        maximised at <font color="#620000">\(u = \dot{Q}_s^{1 / 2} p\)</font>:
+        <font color="#620000">\(g = V_T\)</font>. <font color="#620000">\(\mathcal{H}\)</font>
+        is maximised at <font color="#620000">\(u = \dot{Q}_s^{1 / 2} p\)</font>:
       </p><center>
-        \(\displaystyle H_{\ast} (p) = \frac{1}{2} \langle p, \dot{Q}_s p
-        \rangle :\)
+        \(\displaystyle \mathcal{H}_{\ast} (p) = \frac{1}{2} \langle p,
+        \dot{Q}_s p \rangle :\)
       </center><p>
         a free particle with mass matrix <font color="#620000">\(\dot{Q}_s^{-
         1}\)</font>, and no dependence on the state <font color="#620000">\(x\)</font>.
@@ -791,15 +791,16 @@ t)] \quad \Longrightarrow \quad
             solves a BSDE
           </p>
           <center>
-            \(\displaystyle \mathrm{d} p_s = - \partial_x H \hspace{0.17em}
-            \mathrm{d} s + \Upsilon_s
-\hspace{0.17em} \mathrm{d} W_s,\)
+            \(\displaystyle \mathrm{d} p_s = - \partial_x \mathcal{H}
+            \hspace{0.17em} \mathrm{d} s +
+\Upsilon_s \hspace{0.17em}
+            \mathrm{d} W_s,\)
           </center>
           <p>
             with <font color="#620000">\(\Upsilon \mathrm{d} W\)</font> the price of
-            adaptedness. Here <font color="#620000">\(\partial_x H = 0\)</font>: the
-            costate is a <strong>martingale</strong>, <font color="#620000">\(p_t = -
-            \mathrm{D} V_t (X_t) = F_t\)</font>.
+            adaptedness. Here <font color="#620000">\(\partial_x \mathcal{H}=
+            0\)</font>: the costate is a <strong>martingale</strong>, <font
+            color="#620000">\(p_t = - \mathrm{D} V_t (X_t) = F_t\)</font>.
           </p>
         </li>
         <li>
@@ -1275,9 +1276,9 @@ S_t^{- 1}
       <ul>
         <li>
           <p>
-            Cole&ndash;Hopf <font color="#620000">\(F = \mathrm{D} \log u\)</font>
-            linearises it (<font color="#620000">\(u = \mathrm{e}^{- V}\)</font> solves
-            a heat equation).
+            Cole&ndash;Hopf <font color="#620000">\(F = \mathrm{D} \log h\)</font>
+            linearises it (<font color="#620000">\(h \propto \mathrm{e}^{- V}\)</font>
+            solves a heat equation).
           </p>
         </li>
         <li>
