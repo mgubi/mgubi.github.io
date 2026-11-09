@@ -2463,6 +2463,40 @@
   contains the seed of size <math|\<lambda\>g<rsub|q>> and a first correction
   of size <math|\<lambda\>g<rsub|q><rsup|2>> in this vertex.
 
+  <\remark>
+    <dueto|Why the corrections also enter the propagators>The loop
+    map<nbsp>(<reference|eq:trace-map>) is the right-hand side of the exact
+    force equation, whose propagator is the response
+    <math|<around|(|K<rsub|q>+D\<cal-F\>|)><rsup|-1>> of the force itself. So
+    <math|\<ell\>> enters <math|\<cal-T\><rsub|q><around|[|M,\<ell\>|]>>
+    twice, in the vertex <math|D<rsup|2>\<ell\>> and in the lines through
+    <math|D\<ell\>>, and the iteration<nbsp>(<reference|eq:iteration>)
+    consists of Picard steps for this equation, with both evaluated at the
+    previous approximation. This cannot be dropped. The defect of the final
+    force (Proposition<nbsp><reference|prop:coeff>) measures the force
+    equation at the approximate force, so its loop has the lines of
+    <math|\<ell\><rsup|<around|[|3|]>>>. Had the corrections been computed
+    with the lines frozen at <math|G<rsub|s>>, the defect would keep the
+    leading term <math|<frac|1|2>\<Pi\><math-up|Ctr><rsub|<around|(|R<rsup|<around|[|3|]>>|)><rsup|2>-G<rsup|2>>D<rsup|2>U'>.
+    By the resolvent identity <math|R<rsup|<around|[|3|]>>-G=-R<rsup|<around|[|3|]>><around|(|M<rsup|<around|[|3|]>>+D\<ell\><rsup|<around|[|3|]>>|)>G>,
+    and since both insertions are <math|O<around|(|g<rsub|q>|)>> relative to
+    <math|q> on the ball, this term is as large as the integrand of
+    <math|\<delta\><rsup|<around|[|2|]>>>: its four-leg coefficient is of
+    order <math|\<lambda\><rsup|3>q<rsup|-2>>, instead of
+    <math|\<lambda\><rsup|5>q<rsup|-3>> in<nbsp>(<reference|eq:defect-bound>).
+    The defect would never improve beyond one power of <math|g> over the
+    seed. In graphs (Figure<nbsp><reference|fig:iteration>), a correction
+    inserted into a line (a self-energy) and one inserted as a vertex give
+    loops with the same number of loops and the same power counting, and an
+    expansion correct to a given order must contain both. Finally, the lines
+    are resummed rather than expanded: <math|DU'=\<lambda\>y<rsup|2>> stays
+    in <math|G<rsub|q><around|(|y|)>=<around|(|K<rsub|q>+\<lambda\>y<rsup|2>|)><rsup|-1>\<leqslant\>C<rsub|q>>,
+    which makes the loop estimates uniform in the field, and the mass
+    <math|M> resums the tadpoles. Adding <math|D\<ell\>>, which is small on
+    the ball, preserves the coercivity of <math|K<rsub|q>+D\<cal-F\>> and
+    costs nothing.
+  </remark>
+
   <paragraph|Computing the second correction> Subtract the first two Picard
   equations, keeping the same scalar mass path. This yields
 
@@ -3973,167 +4007,167 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|?|2>>
-    <associate|auto-10|<tuple|10.1|7>>
+    <associate|auto-10|<tuple|10.1|8>>
     <associate|auto-11|<tuple|10.6|8>>
-    <associate|auto-12|<tuple|1|8>>
-    <associate|auto-13|<tuple|2|9>>
+    <associate|auto-12|<tuple|1|9>>
+    <associate|auto-13|<tuple|2|10>>
     <associate|auto-14|<tuple|3|10>>
-    <associate|auto-15|<tuple|4|10>>
+    <associate|auto-15|<tuple|4|11>>
     <associate|auto-16|<tuple|10.2|12>>
     <associate|auto-17|<tuple|10.2|13>>
-    <associate|auto-18|<tuple|11|13>>
-    <associate|auto-19|<tuple|1|13>>
+    <associate|auto-18|<tuple|11|14>>
+    <associate|auto-19|<tuple|1|14>>
     <associate|auto-2|<tuple|10|3>>
-    <associate|auto-20|<tuple|2|13>>
-    <associate|auto-21|<tuple|11.1|14>>
+    <associate|auto-20|<tuple|2|14>>
+    <associate|auto-21|<tuple|11.1|15>>
     <associate|auto-22|<tuple|1|15>>
-    <associate|auto-23|<tuple|11.2|15>>
-    <associate|auto-24|<tuple|11.1|16>>
-    <associate|auto-25|<tuple|11.3|16>>
-    <associate|auto-26|<tuple|1|16>>
-    <associate|auto-27|<tuple|2|17>>
+    <associate|auto-23|<tuple|11.2|16>>
+    <associate|auto-24|<tuple|11.1|17>>
+    <associate|auto-25|<tuple|11.3|17>>
+    <associate|auto-26|<tuple|1|17>>
+    <associate|auto-27|<tuple|2|18>>
     <associate|auto-28|<tuple|3|18>>
-    <associate|auto-29|<tuple|4|18>>
+    <associate|auto-29|<tuple|4|19>>
     <associate|auto-3|<tuple|10.1|3>>
-    <associate|auto-30|<tuple|5|18>>
+    <associate|auto-30|<tuple|5|19>>
     <associate|auto-31|<tuple|6|19>>
-    <associate|auto-32|<tuple|7|19>>
-    <associate|auto-33|<tuple|8|19>>
+    <associate|auto-32|<tuple|7|20>>
+    <associate|auto-33|<tuple|8|20>>
     <associate|auto-34|<tuple|9|20>>
-    <associate|auto-35|<tuple|10|20>>
-    <associate|auto-36|<tuple|11|20>>
-    <associate|auto-37|<tuple|12|21>>
-    <associate|auto-38|<tuple|13|21>>
-    <associate|auto-39|<tuple|14|22>>
+    <associate|auto-35|<tuple|10|21>>
+    <associate|auto-36|<tuple|11|21>>
+    <associate|auto-37|<tuple|12|22>>
+    <associate|auto-38|<tuple|13|22>>
+    <associate|auto-39|<tuple|14|23>>
     <associate|auto-4|<tuple|1|3>>
-    <associate|auto-40|<tuple|15|22>>
-    <associate|auto-41|<tuple|11.2|23>>
-    <associate|auto-42|<tuple|16|23>>
+    <associate|auto-40|<tuple|15|23>>
+    <associate|auto-41|<tuple|11.2|24>>
+    <associate|auto-42|<tuple|16|24>>
     <associate|auto-43|<tuple|17|24>>
-    <associate|auto-44|<tuple|18|24>>
-    <associate|auto-45|<tuple|19|24>>
-    <associate|auto-46|<tuple|20|25>>
-    <associate|auto-47|<tuple|11.4|26>>
-    <associate|auto-48|<tuple|11.3|27>>
-    <associate|auto-49|<tuple|11.5|27>>
+    <associate|auto-44|<tuple|18|25>>
+    <associate|auto-45|<tuple|19|25>>
+    <associate|auto-46|<tuple|20|26>>
+    <associate|auto-47|<tuple|11.4|27>>
+    <associate|auto-48|<tuple|11.3|28>>
+    <associate|auto-49|<tuple|11.5|28>>
     <associate|auto-5|<tuple|10.2|4>>
-    <associate|auto-50|<tuple|11.6|28>>
-    <associate|auto-51|<tuple|11.18|29>>
-    <associate|auto-52|<tuple|12|29>>
-    <associate|auto-53|<tuple|12.1|29>>
+    <associate|auto-50|<tuple|11.6|29>>
+    <associate|auto-51|<tuple|11.18|30>>
+    <associate|auto-52|<tuple|12|30>>
+    <associate|auto-53|<tuple|12.1|30>>
     <associate|auto-54|<tuple|1|30>>
-    <associate|auto-55|<tuple|12.2|30>>
-    <associate|auto-56|<tuple|12.3|30>>
-    <associate|auto-57|<tuple|1|31>>
-    <associate|auto-58|<tuple|2|31>>
-    <associate|auto-59|<tuple|12.4|31>>
+    <associate|auto-55|<tuple|12.2|31>>
+    <associate|auto-56|<tuple|12.3|31>>
+    <associate|auto-57|<tuple|1|32>>
+    <associate|auto-58|<tuple|2|32>>
+    <associate|auto-59|<tuple|12.4|32>>
     <associate|auto-6|<tuple|10.3|5>>
-    <associate|auto-60|<tuple|12.9|32>>
-    <associate|auto-61|<tuple|12.3|32>>
-    <associate|auto-7|<tuple|10.4|5>>
+    <associate|auto-60|<tuple|12.9|33>>
+    <associate|auto-61|<tuple|12.3|33>>
+    <associate|auto-7|<tuple|10.4|6>>
     <associate|auto-8|<tuple|10.5|6>>
-    <associate|auto-9|<tuple|1|7>>
-    <associate|bib-BCG26|<tuple|BCG26|32>>
-    <associate|bib-BFS83|<tuple|BFS83|32>>
-    <associate|bib-BG20|<tuple|BG20|32>>
-    <associate|bib-FO76|<tuple|FO76|32>>
-    <associate|bib-GH21|<tuple|GH21|32>>
-    <associate|bib-GJ73|<tuple|GJ73|32>>
-    <associate|eq:Gamma-o|<tuple|11.10|22>>
+    <associate|auto-9|<tuple|1|8>>
+    <associate|bib-BCG26|<tuple|BCG26|33>>
+    <associate|bib-BFS83|<tuple|BFS83|33>>
+    <associate|bib-BG20|<tuple|BG20|33>>
+    <associate|bib-FO76|<tuple|FO76|33>>
+    <associate|bib-GH21|<tuple|GH21|33>>
+    <associate|bib-GJ73|<tuple|GJ73|33>>
+    <associate|eq:Gamma-o|<tuple|11.10|23>>
     <associate|eq:K-C|<tuple|10.1|3>>
     <associate|eq:YZ|<tuple|10.12|6>>
-    <associate|eq:YZ-fbsde|<tuple|10.13|6>>
-    <associate|eq:Z-heuristic|<tuple|11.15|27>>
-    <associate|eq:a2|<tuple|10.4|3>>
-    <associate|eq:bare-mass|<tuple|11.11|25>>
-    <associate|eq:beta-exp|<tuple|11.16|28>>
-    <associate|eq:clipping|<tuple|12.1|30>>
-    <associate|eq:coeff|<tuple|11.12|25>>
-    <associate|eq:coordinate|<tuple|12.5|31>>
-    <associate|eq:coordinate-ex|<tuple|10.9|5>>
+    <associate|eq:YZ-fbsde|<tuple|10.13|7>>
+    <associate|eq:Z-heuristic|<tuple|11.15|28>>
+    <associate|eq:a2|<tuple|10.4|4>>
+    <associate|eq:bare-mass|<tuple|11.11|26>>
+    <associate|eq:beta-exp|<tuple|11.16|29>>
+    <associate|eq:clipping|<tuple|12.1|31>>
+    <associate|eq:coeff|<tuple|11.12|26>>
+    <associate|eq:coordinate|<tuple|12.5|32>>
+    <associate|eq:coordinate-ex|<tuple|10.9|6>>
     <associate|eq:defect|<tuple|10.11|6>>
     <associate|eq:defect-bound|<tuple|11.14|26>>
     <associate|eq:dictionary-profile|<tuple|10.2|3>>
     <associate|eq:dpsi|<tuple|10.8|5>>
     <associate|eq:e-low|<tuple|12.8|32>>
-    <associate|eq:explicit|<tuple|11.18|28>>
-    <associate|eq:fN|<tuple|11.17|28>>
-    <associate|eq:force-norms|<tuple|11.3|14>>
-    <associate|eq:freeze|<tuple|12.6|31>>
+    <associate|eq:explicit|<tuple|11.18|29>>
+    <associate|eq:fN|<tuple|11.17|29>>
+    <associate|eq:force-norms|<tuple|11.3|15>>
+    <associate|eq:freeze|<tuple|12.6|32>>
     <associate|eq:freeze-y|<tuple|12.7|32>>
-    <associate|eq:g-r|<tuple|11.1|14>>
-    <associate|eq:global-h|<tuple|12.2|30>>
-    <associate|eq:increments|<tuple|11.13|25>>
-    <associate|eq:iteration|<tuple|11.8|17>>
-    <associate|eq:kern-norm|<tuple|11.2|14>>
-    <associate|eq:loop|<tuple|11.5|15>>
+    <associate|eq:g-r|<tuple|11.1|15>>
+    <associate|eq:global-h|<tuple|12.2|31>>
+    <associate|eq:increments|<tuple|11.13|26>>
+    <associate|eq:iteration|<tuple|11.8|18>>
+    <associate|eq:kern-norm|<tuple|11.2|15>>
+    <associate|eq:loop|<tuple|11.5|16>>
     <associate|eq:low|<tuple|12.9|32>>
-    <associate|eq:mass|<tuple|11.9|22>>
+    <associate|eq:mass|<tuple|11.9|23>>
     <associate|eq:nuN|<tuple|10.5|4>>
     <associate|eq:observation|<tuple|10.7|5>>
-    <associate|eq:pl-burgers|<tuple|10.14|8>>
+    <associate|eq:pl-burgers|<tuple|10.14|9>>
     <associate|eq:pl-clip-defect|<tuple|10.18|10>>
     <associate|eq:pl-defect|<tuple|10.23|11>>
-    <associate|eq:pl-global|<tuple|10.24|11>>
+    <associate|eq:pl-global|<tuple|10.24|12>>
     <associate|eq:pl-integrated|<tuple|10.22|11>>
-    <associate|eq:pl-inviscid|<tuple|10.21|10>>
-    <associate|eq:pl-linear|<tuple|10.17|9>>
-    <associate|eq:pl-quintic|<tuple|10.19|10>>
-    <associate|eq:pl-remainder|<tuple|10.20|10>>
-    <associate|eq:pl-tweedie|<tuple|10.15|8>>
-    <associate|eq:pl-two-limits|<tuple|10.16|8>>
+    <associate|eq:pl-inviscid|<tuple|10.21|11>>
+    <associate|eq:pl-linear|<tuple|10.17|10>>
+    <associate|eq:pl-quintic|<tuple|10.19|11>>
+    <associate|eq:pl-remainder|<tuple|10.20|11>>
+    <associate|eq:pl-tweedie|<tuple|10.15|9>>
+    <associate|eq:pl-two-limits|<tuple|10.16|9>>
     <associate|eq:polchinski-fbsde|<tuple|10.6|5>>
     <associate|eq:power-counting|<tuple|11.4|15>>
-    <associate|eq:prop-lp|<tuple|10.3|3>>
-    <associate|eq:resolvent|<tuple|12.3|30>>
+    <associate|eq:prop-lp|<tuple|10.3|4>>
+    <associate|eq:resolvent|<tuple|12.3|31>>
     <associate|eq:seed|<tuple|11.6|16>>
     <associate|eq:source|<tuple|12.4|31>>
-    <associate|eq:trace-map|<tuple|11.7|16>>
-    <associate|eq:wetterich|<tuple|10.10|5>>
-    <associate|ex:clip-scalar|<tuple|12.2|32>>
-    <associate|ex:loop-count|<tuple|11.1|29>>
+    <associate|eq:trace-map|<tuple|11.7|17>>
+    <associate|eq:wetterich|<tuple|10.10|6>>
+    <associate|ex:clip-scalar|<tuple|12.2|33>>
+    <associate|ex:loop-count|<tuple|11.1|30>>
     <associate|ex:one-site|<tuple|10.4|13>>
-    <associate|ex:pl-depth|<tuple|10.6|13>>
-    <associate|ex:pl-negative|<tuple|10.7|13>>
-    <associate|ex:receive|<tuple|12.1|32>>
+    <associate|ex:pl-depth|<tuple|10.6|14>>
+    <associate|ex:pl-negative|<tuple|10.7|14>>
+    <associate|ex:receive|<tuple|12.1|33>>
     <associate|ex:same-Gamma|<tuple|10.1|13>>
-    <associate|ex:small-derivatives|<tuple|11.3|29>>
-    <associate|fig:iteration|<tuple|11.2|23>>
-    <associate|fig:mass-graphs|<tuple|11.3|27>>
+    <associate|ex:small-derivatives|<tuple|11.3|30>>
+    <associate|fig:iteration|<tuple|11.2|24>>
+    <associate|fig:mass-graphs|<tuple|11.3|28>>
     <associate|fig:scalar-force|<tuple|10.2|12>>
-    <associate|fig:seed-rings|<tuple|11.1|16>>
-    <associate|fig:strategy|<tuple|10.1|7>>
-    <associate|lem:free|<tuple|10.1|3>>
-    <associate|lem:pl-posterior|<tuple|10.7|8>>
-    <associate|lem:resolvent|<tuple|12.1|30>>
-    <associate|prop:coeff|<tuple|11.1|25>>
+    <associate|fig:seed-rings|<tuple|11.1|17>>
+    <associate|fig:strategy|<tuple|10.1|8>>
+    <associate|lem:free|<tuple|10.1|4>>
+    <associate|lem:pl-posterior|<tuple|10.7|9>>
+    <associate|lem:resolvent|<tuple|12.1|31>>
+    <associate|prop:coeff|<tuple|11.2|26>>
     <associate|prop:pl-frozen|<tuple|10.8|9>>
     <associate|prop:pl-integrated|<tuple|10.11|11>>
-    <associate|prop:pl-tails|<tuple|10.9|9>>
+    <associate|prop:pl-tails|<tuple|10.9|10>>
     <associate|prop:polchinski|<tuple|10.3|5>>
     <associate|prop:posterior|<tuple|10.4|5>>
     <associate|prop:source|<tuple|12.2|31>>
-    <associate|prop:wetterich|<tuple|10.5|5>>
+    <associate|prop:wetterich|<tuple|10.5|6>>
     <associate|sec:YZ|<tuple|10.5|6>>
-    <associate|sec:clipping|<tuple|12.2|30>>
-    <associate|sec:complete-defect|<tuple|12.3|30>>
-    <associate|sec:corrections|<tuple|11.3|16>>
-    <associate|sec:counter|<tuple|11.6|28>>
-    <associate|sec:large-field-problem|<tuple|12.1|29>>
-    <associate|sec:large-fields|<tuple|12|29>>
-    <associate|sec:low-action|<tuple|12.4|31>>
+    <associate|sec:clipping|<tuple|12.2|31>>
+    <associate|sec:complete-defect|<tuple|12.3|31>>
+    <associate|sec:corrections|<tuple|11.3|17>>
+    <associate|sec:counter|<tuple|11.6|29>>
+    <associate|sec:large-field-problem|<tuple|12.1|30>>
+    <associate|sec:large-fields|<tuple|12|30>>
+    <associate|sec:low-action|<tuple|12.4|32>>
     <associate|sec:notation|<tuple|10.1|3>>
     <associate|sec:polchinski-large|<tuple|10.6|8>>
     <associate|sec:posterior|<tuple|10.3|5>>
     <associate|sec:problem|<tuple|10|3>>
-    <associate|sec:renormalisation|<tuple|11|13>>
-    <associate|sec:two-masses|<tuple|11.4|26>>
-    <associate|sec:two-steps|<tuple|11.5|27>>
-    <associate|sec:wetterich|<tuple|10.4|5>>
-    <associate|thm:YZ|<tuple|10.6|6>>
-    <associate|thm:counter|<tuple|11.2|28>>
-    <associate|thm:main|<tuple|10.2|4>>
-    <associate|thm:pl-global|<tuple|10.12|11>>
+    <associate|sec:renormalisation|<tuple|11|14>>
+    <associate|sec:two-masses|<tuple|11.4|27>>
+    <associate|sec:two-steps|<tuple|11.5|28>>
+    <associate|sec:wetterich|<tuple|10.4|6>>
+    <associate|thm:YZ|<tuple|10.6|7>>
+    <associate|thm:counter|<tuple|11.3|29>>
+    <associate|thm:main|<tuple|10.2|5>>
+    <associate|thm:pl-global|<tuple|10.12|12>>
   </collection>
 </references>
 
@@ -4156,9 +4190,9 @@
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.1>||The structure of
       the construction (<with|mode|<quote|math>|E>,
       <with|mode|<quote|math>|J>: the energies of Lecture
-      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%128F4BA20-8296A00>|<link|hyperlink|<id|%128F4BA20-8296A00>|<url|cqft_lecture_7.tm>>|7>).
+      <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1588A0CB0-BEC73A0>|<link|hyperlink|<id|%1588A0CB0-BEC73A0>|<url|cqft_lecture_7.tm>>|7>).
       The two arrows between the forward and backward estimates form the
-      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%128F4BA20-82965A0>|<link|hyperlink|<id|%128F4BA20-82965A0>|<url|cqft_lecture_7.tm>>|7>:
+      closed loop of Lecture <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><locus|<id|%1588A0CB0-BEC7460>|<link|hyperlink|<id|%1588A0CB0-BEC7460>|<url|cqft_lecture_7.tm>>|7>:
       neither estimate closes on its own.>|<pageref|auto-10>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|10.2>||The force on one

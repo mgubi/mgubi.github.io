@@ -147,13 +147,13 @@
     <item>Free resolvents, Lemma<nbsp><hlink|10.1|cqft_lecture_6.tm#lem:free>:
     Lemma<nbsp><reference|a-lem-free>.
 
-    <item>The coefficient construction, Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>:
+    <item>The coefficient construction, Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff>:
     Section<nbsp><reference|a-sec-recursion>, in particular
     Proposition<nbsp><reference|a-prop-coeff>, with the rooted calculus and
     the trace comparison. The dependence on the boundary value is
     Proposition<nbsp><reference|a-prop-response>.
 
-    <item>The explicit counterterm, Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>:
+    <item>The explicit counterterm, Theorem<nbsp><hlink|11.3|cqft_lecture_6.tm#thm:counter>:
     Section<nbsp><reference|m-sec>.
 
     <item>Global coercivity and the source bounds,
@@ -453,7 +453,7 @@
   <section|Renormalisation with two correction steps><label|a-sec-recursion>
 
   This deterministic section assumes no interacting field estimates. It
-  contains the proof of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>
+  contains the proof of Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff>
   of Lecture<nbsp><hlink|6|cqft_lecture_6.tm>.
 
   <subsection|Tensors and the iteration><label|a-sec-tensors>
@@ -747,7 +747,7 @@
 
   <\lemma>
     <dueto|Finite trace calculus><label|a-lem-trace>This is step (a) of the
-    proof of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> of
+    proof of Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff> of
     Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. For <math|4\<leqslant\>
     k\<leqslant\>10>, <math|\<cal-N\><rsub|k,q><around|(|\<cal-L\>|)>\<leqslant\>
     C<rsub|k>g<rsub|q>q*r<rsub|q><rsup|2-k>>. For the trace comparison fix
@@ -973,7 +973,7 @@
 
   <\proposition>
     <dueto|The coefficient construction closes><label|a-prop-coeff>This is
-    Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> of
+    Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff> of
     Lecture<nbsp><hlink|6|cqft_lecture_6.tm>, with the dependence on
     <math|b<rsub|\<ast\>>> made explicit; the bare mass is treated in
     Lemma<nbsp><reference|a-lem-bare-mass>. There is a universal constant
@@ -1226,7 +1226,7 @@
 
   <\lemma>
     <dueto|The bare mass exists at each lattice><label|a-lem-bare-mass>This
-    is the last assertion of Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>
+    is the last assertion of Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff>
     of Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. For each fixed <math|N>, the
     preceding infinite-scale construction satisfies
 
@@ -1286,7 +1286,7 @@
 
   <\proposition>
     <dueto|Dependence on the boundary value><label|a-prop-response>This is
-    the step Response of the proof of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
+    the step Response of the proof of Theorem<nbsp><hlink|11.3|cqft_lecture_6.tm#thm:counter>
     of Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. For <math|q<rsub|\<ast\>>>
     large depending on <math|\<lambda\>,B<rsub|0>>, let
     <math|b<rsub|\<ast\>,1>,b<rsub|\<ast\>,2>\<in\>\<cal-B\>> with scalar
@@ -1823,7 +1823,7 @@
 
   This section gives the consistency of the mass path with a moving boundary
   value and the proof of the explicit counterterm,
-  Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter> of
+  Theorem<nbsp><hlink|11.3|cqft_lecture_6.tm#thm:counter> of
   Lecture<nbsp><hlink|6|cqft_lecture_6.tm>. All constants may depend on
   <math|\<lambda\>,q<rsub|0>,B<rsub|0>>, but not on <math|N> or on the
   boundary value.
@@ -1988,7 +1988,7 @@
   Lemma<nbsp><hlink|18.3|cqft_lecture_7.tm#lem:cons>: the convergence of the
   coefficients along fields, which enter Theorems<nbsp><hlink|18.4|cqft_lecture_7.tm#thm:limit-kernel>
   and <hlink|18.6|cqft_lecture_7.tm#thm:limit>. The estimates of
-  Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> do not by
+  Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff> do not by
   themselves identify the coefficients of a limit: a weakly converging vertex
   cannot automatically be contracted against a varying covariance. That
   additional assertion is proved here.
@@ -2073,7 +2073,7 @@
   Constants may depend on <math|\<lambda\>,B<rsub|0>> and on the compact
   scale interval <math|I\<subset\><around|[|q<rsub|\<ast\>>,\<infty\>|)>>
   when so indicated, and never on <math|N>. The bounds of
-  Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>, of
+  Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff>, of
   <hlink|(12.2)|cqft_lecture_6.tm#eq:global-h>, of
   Lemma<nbsp><hlink|12.1|cqft_lecture_6.tm#lem:resolvent> and of
   Proposition<nbsp><hlink|12.2|cqft_lecture_6.tm#prop:source> hold in this
@@ -2500,7 +2500,7 @@
     <math|<around|\<langle\>|D\<cal-L\><rsub|q><around|(|t\<phi\>|)>,\<phi\>|\<rangle\>>>
     over <math|t\<in\><around|[|0,1|]>> to identify the scalar action, with
     value zero at the origin. The ten derivative bounds of
-    Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff> and
+    Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff> and
     Lemma<nbsp><reference|c-findiff> give the nine tested derivatives. All
     estimates are uniform on compact profile families and scale intervals. In
     particular neither <math|<math-up|diag>C<rsub|q>> nor
@@ -4011,7 +4011,7 @@
   <\theorem>
     <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>><label|d-thm:limit>Let
     <math|\<lambda\>,q<rsub|0>\<gtr\>0>, <math|r\<in\>\<bbb-R\>>, with the
-    counterterm of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
+    counterterm of Theorem<nbsp><hlink|11.3|cqft_lecture_6.tm#thm:counter>
     (or <math|q<rsub|\<ast\>>> large and <math|b<rsub|\<ast\>,N>\<to\>
     b<rsub|\<ast\>>>, <math|<around|\||b<rsub|\<ast\>,N>|\|>\<leqslant\>
     B<rsub|0>\<lambda\> q<rsub|\<ast\>><rsup|1/2>>). Along a subsequence of

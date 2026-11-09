@@ -1960,7 +1960,7 @@
   <math|\<ell\><rsup|<around|[|j|]>,N><rsub|q>>,
   <math|H<rsup|N><rsub|q><around|(|y|)>>,
   <math|b<rsup|N><rsub|q><around|(|y|)>> are constructed at each lattice.
-  Their uniform bounds (Proposition<nbsp><hlink|11.1|cqft_lecture_6.tm#prop:coeff>)
+  Their uniform bounds (Proposition<nbsp><hlink|11.2|cqft_lecture_6.tm#prop:coeff>)
   do not by themselves identify a limit: a weakly convergent vertex cannot in
   general be contracted against a varying covariance. The three tools are:
 
@@ -2516,7 +2516,7 @@
     <\theorem>
       <dueto|Construction of <math|\<Phi\><rsup|4><rsub|3>>><label|thm:limit>Let
       <math|\<lambda\>,q<rsub|0>\<gtr\>0>, <math|r\<in\>\<bbb-R\>>, with the
-      counterterm of Theorem<nbsp><hlink|11.2|cqft_lecture_6.tm#thm:counter>
+      counterterm of Theorem<nbsp><hlink|11.3|cqft_lecture_6.tm#thm:counter>
       (or <math|q<rsub|\<ast\>>> large and <math|b<rsub|\<ast\>,N>\<to\>
       b<rsub|\<ast\>>>, <math|<around|\||b<rsub|\<ast\>,N>|\|>\<leqslant\>
       B<rsub|0>\<lambda\> q<rsub|\<ast\>><rsup|1/2>>). Under
