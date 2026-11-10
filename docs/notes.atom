@@ -3,7 +3,7 @@
   <title>Massimiliano Gubinelli - updates</title>
   <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-11-09T16:02:00Z</updated>
+  <updated>2026-11-10T16:20:09Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
     <uri>https://mgubi.github.io/</uri>
@@ -11,30 +11,91 @@
   <id>https://mgubi.github.io/docs/notes.atom</id>
   <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
   <entry>
-    <title>A constructive introduction to quantum field theory</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
-    <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
-    <updated>2026-11-09T16:02:00Z</updated>
-    <published>2026-10-21T15:27:44Z</published>
-    <summary>Lectures at SISSA, Trieste, 20 October--9 November 2026, as part
-    of the Probability and Stochastic Analysis Trimester Programme.</summary>
-  </entry>
-  <entry>
     <title>What's new</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/whats-new.html"/>
     <id>tag:mgubi.github.io,2023:whats-new.tm</id>
-    <updated>2026-11-05T21:58:43Z</updated>
+    <updated>2026-11-10T16:20:09Z</updated>
     <published>2026-11-05T20:08:18Z</published>
     <summary>New and updated content on these pages, most recent first:
     writings, lecture notes, talks and papers.</summary>
   </entry>
   <entry>
+    <title>Proofs and complements: the basic idea</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-proofs.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-proofs.tm</id>
+    <updated>2026-11-10T16:20:09Z</updated>
+    <published>2026-10-23T00:03:46Z</published>
+    <summary>This companion proves the foundations used in the post: spectral
+    reconstruction, domains, cores, resolvents, scalar inversion, unitary
+    groups, Cayley transforms and convergence of observables. The pullback
+    arguments follow the spectral construction because their proofs use it;
+    the final section identifies the equivalent tests for
+    convergence.</summary>
+  </entry>
+  <entry>
     <title>Writings</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/writings.html"/>
     <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
-    <updated>2026-11-05T20:08:18Z</updated>
+    <updated>2026-11-10T16:20:09Z</updated>
     <published>2023-05-04T22:12:59Z</published>
     <summary>This page gathers some writings.</summary>
+  </entry>
+  <entry>
+    <title>What do we talk about when we talk about unbounded self-adjoint
+    operators?</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators.tm</id>
+    <updated>2026-11-10T16:20:09Z</updated>
+    <published>2026-10-23T00:03:46Z</published>
+    <summary>This post begins a series in which I collect several results
+    around the notion of an observable, using it as an organizing principle
+    for the theory of unbounded self-adjoint operators. An observable can be
+    understood through the bounded functions applied to it. Starting with
+    Hermitian matrices and random variables, I develop this viewpoint through
+    spectral measures, resolvents and unitary groups, and see why strong
+    resolvent convergence is a natural way to compare observables. The results
+    are standard. The post is mostly an invitation to functional analysis for
+    those who, like me, have struggled with the usual presentations of this
+    subject.</summary>
+  </entry>
+  <entry>
+    <title>Observables beyond the real line</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-extensions.tm</id>
+    <updated>2026-11-10T16:20:09Z</updated>
+    <published>2026-11-09T18:14:34Z</published>
+    <summary>What changes when an observable takes values in the complex
+    plane, on a sphere, or on a manifold? We start with compatible real
+    coordinates and construct their joint observable. This gives a concrete
+    route from self-adjoint operators to more general outcome spaces. We then
+    explain how states supply probability laws, and what additional data are
+    needed to describe geometry and quantization.</summary>
+  </entry>
+  <entry>
+    <title>Proofs and complements: beyond the real line</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions-proofs.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-extensions-proofs.tm</id>
+    <updated>2026-11-10T16:20:09Z</updated>
+    <published>2026-11-09T18:14:34Z</published>
+    <summary>This companion follows Part II through strongly commuting
+    families and the construction of their joint spectral measure, then normal
+    operators, manifold-valued spectral measures, other outcome spaces, normal
+    states and geometric commutators. The final two sections justify the
+    post's further perspectives on distance and quantization. It uses the
+    spectral calculus proved in the Part I companion. The normal spectral
+    theorem uses a short closed-graph argument given below for its positive
+    square-root reduction. Mackey's full classification and the exploratory
+    geometric questions are cited background, not further theorems proved
+    here.</summary>
+  </entry>
+  <entry>
+    <title>A constructive introduction to quantum field theory</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
+    <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
+    <updated>2026-11-10T16:18:47Z</updated>
+    <published>2026-10-21T15:27:44Z</published>
+    <summary>Lectures at SISSA, Trieste, 20 October--9 November 2026, as part
+    of the Probability and Stochastic Analysis Trimester Programme.</summary>
   </entry>
   <entry>
     <title>Presentations</title>
@@ -93,37 +154,6 @@
     <updated>2026-10-30T07:37:15Z</updated>
     <published>2023-05-11T21:05:30Z</published>
     <summary>Notes from a talk in the SRQ series.</summary>
-  </entry>
-  <entry>
-    <title>What do we talk about when we talk about unbounded self-adjoint
-    operators?</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators.html"/>
-    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators.tm</id>
-    <updated>2026-10-24T08:38:40Z</updated>
-    <published>2026-10-23T00:03:46Z</published>
-    <summary>This post begins a series in which I collect several results
-    around the notion of an observable, using it as an organizing principle
-    for the theory of unbounded self-adjoint operators. An observable can be
-    understood through the bounded functions applied to it. Starting with
-    Hermitian matrices and random variables, I develop this viewpoint through
-    spectral measures, resolvents and unitary groups, and see why strong
-    resolvent convergence is a natural way to compare observables. The results
-    are standard. The post is mostly an invitation to functional analysis for
-    those who, like me, have struggled with the usual presentations of this
-    subject.</summary>
-  </entry>
-  <entry>
-    <title>Proofs and complements: the basic idea</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-proofs.html"/>
-    <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-proofs.tm</id>
-    <updated>2026-10-23T10:53:18Z</updated>
-    <published>2026-10-23T00:03:46Z</published>
-    <summary>This companion proves the foundations used in the post: spectral
-    reconstruction, domains, cores, resolvents, scalar inversion, unitary
-    groups, Cayley transforms and convergence of observables. The pullback
-    arguments follow the spectral construction because their proofs use it;
-    the final section identifies the equivalent tests for
-    convergence.</summary>
   </entry>
   <entry>
     <title>On Literate Programming</title>

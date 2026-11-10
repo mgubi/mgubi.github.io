@@ -12,17 +12,61 @@
 
   <hrule>
 
+  <notes-entry|whats-new.tm|What's new|New and updated content on these
+  pages, most recent first: writings, lecture notes, talks and papers.|10 Nov
+  2026>
+
+  <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
+  complements: the basic idea>
+    This companion proves the foundations used in the post: spectral
+    reconstruction, domains, cores, resolvents, scalar inversion, unitary
+    groups, Cayley transforms and convergence of observables. The pullback
+    arguments follow the spectral construction because their proofs use it;
+    the final section identifies the equivalent tests for convergence.
+  </notes-entry|10 Nov 2026>
+
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|10 Nov 2026>
+
+  <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
+  we talk about unbounded self-adjoint operators?>
+    This post begins a series in which I collect several results around the
+    notion of an observable, using it as an organizing principle for the
+    theory of unbounded self-adjoint operators. An observable can be
+    understood through the bounded functions applied to it. Starting with
+    Hermitian matrices and random variables, I develop this viewpoint through
+    spectral measures, resolvents and unitary groups, and see why strong
+    resolvent convergence is a natural way to compare observables. The
+    results are standard. The post is mostly an invitation to functional
+    analysis for those who, like me, have struggled with the usual
+    presentations of this subject.
+  </notes-entry|10 Nov 2026>
+
+  <notes-entry|zettels/self-adjoint-operators-extensions.tm|Observables
+  beyond the real line|What changes when an observable takes values in the
+  complex plane, on a sphere, or on a manifold? We start with compatible real
+  coordinates and construct their joint observable. This gives a concrete
+  route from self-adjoint operators to more general outcome spaces. We then
+  explain how states supply probability laws, and what additional data are
+  needed to describe geometry and quantization.|10 Nov 2026>
+
+  <\notes-entry|zettels/self-adjoint-operators-extensions-proofs.tm|Proofs
+  and complements: beyond the real line>
+    This companion follows Part II through strongly commuting families and
+    the construction of their joint spectral measure, then normal operators,
+    manifold-valued spectral measures, other outcome spaces, normal states
+    and geometric commutators. The final two sections justify the post's
+    further perspectives on distance and quantization. It uses the spectral
+    calculus proved in the Part I companion. The normal spectral theorem uses
+    a short closed-graph argument given below for its positive square-root
+    reduction. Mackey's full classification and the exploratory geometric
+    questions are cited background, not further theorems proved here.
+  </notes-entry|10 Nov 2026>
+
   <notes-entry|teaching/lectures-constructive-qft-sissa-2026.tm|A
   constructive introduction to quantum field theory|Lectures at SISSA,
   Trieste, 20 October--9 November 2026, as part of the Probability and
-  Stochastic Analysis Trimester Programme.|09 Nov 2026>
-
-  <notes-entry|whats-new.tm|What's new|New and updated content on these
-  pages, most recent first: writings, lecture notes, talks and papers.|05 Nov
-  2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|05 Nov 2026>
+  Stochastic Analysis Trimester Programme.|10 Nov 2026>
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|05 Nov 2026>
@@ -46,29 +90,6 @@
 
   <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
   October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>
-
-  <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
-  we talk about unbounded self-adjoint operators?>
-    This post begins a series in which I collect several results around the
-    notion of an observable, using it as an organizing principle for the
-    theory of unbounded self-adjoint operators. An observable can be
-    understood through the bounded functions applied to it. Starting with
-    Hermitian matrices and random variables, I develop this viewpoint through
-    spectral measures, resolvents and unitary groups, and see why strong
-    resolvent convergence is a natural way to compare observables. The
-    results are standard. The post is mostly an invitation to functional
-    analysis for those who, like me, have struggled with the usual
-    presentations of this subject.
-  </notes-entry|24 Oct 2026>
-
-  <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
-  complements: the basic idea>
-    This companion proves the foundations used in the post: spectral
-    reconstruction, domains, cores, resolvents, scalar inversion, unitary
-    groups, Cayley transforms and convergence of observables. The pullback
-    arguments follow the spectral construction because their proofs use it;
-    the final section identifies the equivalent tests for convergence.
-  </notes-entry|23 Oct 2026>
 
   <notes-entry|zettels/literate-programming.tm|On Literate Programming|How
   literate documents can explain the relationships between programming

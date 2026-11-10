@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Observables beyond the real line — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="What changes when an observable takes values in the complex plane, on a sphere, or on a manifold? We start with compatible real coordinates and construct their joint observable. This gives a concrete route from self-adjoint operators to more general outcome spaces. We then explain how states supply ">
+    <link rel="canonical" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./writings.html">writings</a>]<em class="notes-header-name">mg|pages</em><span class="notes-comments">comments</span>
+      </p>
+    </div>
+    <h1 id="auto-1">Observables beyond the real line<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      What changes when an observable takes values in the complex plane, on a
+      sphere, or on a manifold? We start with compatible real coordinates and
+      construct their joint observable. This gives a concrete route from
+      self-adjoint operators to more general outcome spaces. We then explain
+      how states supply probability laws, and what additional data are needed
+      to describe geometry and quantization.
+    </div>
+    <p>
+      <i>Observables \(\cdot\) Part II. November 10, 2026.</i>
+    </p>
+    <p>
+      <b>Earlier in this series.</b> <a href="self-adjoint-operators.html">I. The basic idea</a>.
+    </p>
+    <p>
+      <a href="self-adjoint-operators-extensions-proofs.html">Detailed proofs for Part II</a>.
+    </p>
+    <p>
+      Part I described a real observable through its bounded tests, recovered
+      its self-adjoint coordinate operator, and identified a natural notion of
+      convergence. But a single real number is rarely all one measures. The
+      position of a particle in space has three coordinates, the
+      multiplication operators \(X_1, X_2, X_3\) on \(L^2 (\mathbb{R}^3)\).
+      Each is an unbounded self-adjoint operator of the kind studied in Part
+      I, and none has a single eigenvector. Yet physicists speak without
+      hesitation of <em>the</em> position, a point of \(\mathbb{R}^3\) whose
+      probability law in a unit vector \(u\) is \(| u (x) |^2 \mathrm{d} x\).
+      What does it mean to measure three unbounded operators together, and
+      when is it possible at all? The same question returns when the outcome
+      is a complex number, a direction on a sphere, or a point of a manifold.
+    </p>
+    <p>
+      This part answers it in the language of Part I. Section 1 constructs
+      joint observables from compatible coordinates; Sections 2&ndash;3 extend
+      the outcome space to the complex plane and to manifolds. Section 4 adds
+      probability laws by choosing a state, and shows what remains when
+      observables are not compatible. Sections 5&ndash;6 are an outlook on
+      distances and quantization; they assume more background than the rest.
+      The optional subsections can be skipped on a first reading.
+    </p>
+    <p>
+      We continue to work with <em>sharp</em> observables: each yes-or-no
+      question about the outcome is represented by an orthogonal projection,
+      and the calculus preserves products. Functions of one observable
+      therefore always commute with one another. Two different observables
+      need not, and this is where the new questions begin. The proofs are
+      collected in this part's companion and use the foundational results in
+      Part I.
+    </p>
+    <p>
+      <b>Contents.</b>
+    </p>
+    <ol>
+      <li>
+        <p>
+          <a href="#sec:joint">From compatible coordinates to a joint observable</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:normal">From real to complex observables: normal operators</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:manifolds">Manifolds and other outcome spaces</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:probability">Observables on a non-commutative probability space</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:geometry">Further perspective: how a Dirac operator encodes
+          distance</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:geometric-outlook">Further perspective: geometry and quantization</a>
+        </p>
+      </li>
+    </ol>
+    <h2 id="auto-2"><a id="sec:joint"></a>1. From compatible coordinates to a joint
+    observable<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3">Two pairs of matrices<span style="margin-left: 1em"></span></h3>
+    <p>
+      Consider two diagonal Hermitian matrices on \(\mathbb{C}^2\). Let \(P_1,
+      P_2\) be the projections onto the two coordinate axes, and write
+    </p>
+    <div class="center">
+      \(\displaystyle A = P_1 - P_2, \qquad B = 2 P_1 + 3 P_2 .\)
+    </div>
+    <p>
+      On the first axis the two values are \((1, 2)\); on the second they are
+      \((- 1, 3)\). A joint test is therefore
+    </p>
+    <div class="center">
+      \(\displaystyle f (A, B) = f (1, 2) P_1 + f (- 1, 3) P_2 .\)
+    </div>
+    <p>
+      This is one observable with two possible outcomes in the plane. Its
+      spectral measure assigns the projections \(P_1\) and \(P_2\) to those
+      two points. For general commuting Hermitian matrices, simultaneous
+      diagonalization gives the same construction: each common eigenvector
+      carries a tuple of eigenvalues.
+    </p>
+    <p>
+      Compare the Pauli matrices
+    </p>
+    <div class="center">
+      \(\displaystyle \sigma_1 = \left( \begin{array}{cc}
+  0 &amp; 1\\
+  1 &amp;
+      0
+\end{array} \right), \qquad \sigma_2 = \left( \begin{array}{cc}
+  0 &amp;
+      - i\\
+  i &amp; 0
+\end{array} \right) .\)
+    </div>
+    <p>
+      Each is Hermitian with eigenvalues \(\pm 1\), so each is a perfectly
+      good observable with two outcomes. But the eigenvectors of \(\sigma_1\)
+      are \((1, \pm 1) / \sqrt{2}\) and those of \(\sigma_2\) are \((1, \pm i)
+      / \sqrt{2}\): no vector is an eigenvector of both, so there is no list
+      of joint outcomes. Nor is there a consistent joint calculus: it would
+      make \(\sigma_1\) and \(\sigma_2\) functions of one observable, hence
+      commuting, whereas \(\sigma_1 \sigma_2 = - \sigma_2 \sigma_1 \neq 0\).
+      Already for \(f (x, y) = xy\) the candidates \(\sigma_1 \sigma_2\),
+      \(\sigma_2 \sigma_1\) and their average are three different matrices;
+      the average is zero. The first pair commutes and the second does not,
+      and this is the property to be formulated for unbounded operators. The
+      Pauli matrices return in <a href="#sec:probability">Section 4</a>, where a state still
+      assigns them ordered expectations.
+    </p>
+    <p>
+      We want to keep this picture when the coordinates are unbounded and
+      there may be no common eigenvectors. Suppose that self-adjoint operators
+      \(A_1, \ldots, A_d\) on one Hilbert space have one-dimensional spectral
+      measures \(E_j\). We seek an observable with outcomes in
+      \(\mathbb{R}^d\) whose spectral measure combines their individual
+      spectral events consistently.
+    </p>
+    <h3 id="auto-4">Compatibility means strong commutation<span style="margin-left: 1em"></span></h3>
+    <p>
+      For bounded self-adjoint operators, \(AB = BA\) implies that all their
+      spectral projections commute. In finite dimensions this is simultaneous
+      diagonalization. For unbounded operators the identity \(AB = BA\) is no
+      longer a usable test: \(AB\) is defined only on the vectors \(u \in D
+      (B)\) with \(Bu \in D (A)\), and this set, or its counterpart for
+      \(BA\), can be very small. We therefore formulate compatibility directly
+      through the bounded spectral projections.
+    </p>
+    <p>
+      <em>Strong commutation</em> is the statement about the full observables:
+      \(E_A (\Delta)\) commutes with \(E_B (\Gamma)\) for every pair of Borel
+      sets. Equivalently, any bounded Borel function of \(A\) commutes with
+      any bounded Borel function of \(B\). The meaning is operational: two
+      commuting projections \(P, Q\) are yes-or-no questions that can be asked
+      together, since \(PQ\) is again a projection, the event that both
+      answers are yes. Strong commutation can also be tested on their
+      resolvents \(R_A (z) = (A - z)^{- 1}\) or on their unitary groups:
+    </p>
+    <div class="center">
+      \(\displaystyle R_A (z) R_B (w) = R_B (w) R_A (z), \quad z, w \in
+      \mathbb{C} \setminus
+\mathbb{R},\)
+    </div>
+    <p>
+      or, equivalently,
+    </p>
+    <div class="center">
+      \(\displaystyle e^{isA} e^{itB} = e^{itB} e^{isA}, \qquad s, t \in
+      \mathbb{R}.\)
+    </div>
+    <p>
+      All the operators in these tests are bounded. The equivalences follow
+      because the resolvents generate the continuous calculus and bounded
+      spectral approximation gives the projections; the unitary groups
+      determine the same spectral measures by uniqueness of Fourier
+      transforms. The <a href="self-adjoint-operators-extensions-proofs.html#sec:commutation">companion proves these implications</a>.
+    </p>
+    <p>
+      For a finite family, we require this strong commutation for every pair.
+      No further compatibility hypothesis is needed: pairwise commuting
+      spectral projections can be multiplied to impose all coordinate
+      conditions simultaneously.
+    </p>
+    <h3 id="auto-5">Constructing the joint spectral measure<span style="margin-left: 1em"></span></h3>
+    <p>
+      Assume the finite family is pairwise strongly commuting. If \(R =
+      \Delta_1 \times \cdots \times \Delta_d\) is a Borel rectangle, the only
+      possible joint projection is
+    </p>
+    <div class="center">
+      \(\displaystyle P (R) = E_1 (\Delta_1) \cdots E_d (\Delta_d) .\)
+    </div>
+    <p>
+      Commutation makes this product an orthogonal projection. Its range is
+      the intersection of the ranges of the factors: it imposes all coordinate
+      conditions at once. Projections belonging to disjoint rectangles are
+      orthogonal. Refining a finite rectangular grid therefore gives
+      consistent sums of these projections.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <b>Joint spectral theorem for a finite family.</b> Pairwise strongly
+        commuting self-adjoint operators \(A_1, \ldots, A_d\) determine a
+        unique normalized projection-valued measure (PVM) \(E\) on
+        \(\mathbb{R}^d\) satisfying \(E (R) = P (R)\) on rectangles. Its
+        coordinate marginals are the \(E_j\). Conversely, the coordinate
+        operators \(\int x_j \mathrm{d} E (x)\) of any normalized PVM \(E\) on
+        \(\mathbb{R}^d\) are pairwise strongly commuting.
+      </p>
+    </div>
+    <p>
+      A coordinate marginal simply ignores all the other coordinates. If
+      \(\pi_j (x) = x_j\), the marginal identity is
+    </p>
+    <div class="center">
+      \(\displaystyle E_j (\Delta) = E (\pi_j^{- 1} (\Delta)) .\)
+    </div>
+    <p>
+      Thus asking whether the outcome's \(j\)-th coordinate lies in \(\Delta\)
+      reproduces the original one-dimensional spectral event.
+    </p>
+    <p>
+      <em>How to pass from rectangles to all outcomes (a sketch).</em>
+      Approximate a compactly supported continuous \(f\) by a step function
+      \(s = \sum_{\alpha} c_{\alpha} 1_{R_{\alpha}}\) on a finite rectangular
+      grid, and set \(J (s) = \sum_{\alpha} c_{\alpha} P (R_{\alpha})\).
+      Orthogonality gives \(\| J (s) \| \leqslant \| s \|_{\infty}\).
+      Refinement makes the definition independent of the grid, so uniform
+      approximation defines a contractive homomorphism
+    </p>
+    <div class="center">
+      \(\displaystyle J : C_0 (\mathbb{R}^d) \rightarrow B (H), \quad J (f_1
+      \otimes \cdots \otimes
+f_d) = f_1 (A_1) \cdots f_d (A_d) .\)
+    </div>
+    <p>
+      It preserves adjoints and is nondegenerate: taking larger cutoffs in
+      every coordinate makes their product converge strongly to \(I\). In
+      other words, these bounded tests collectively see the whole Hilbert
+      space. This is the nondegeneracy condition from Part I.
+      Riesz&ndash;Markov now turns \(f \mapsto \langle u, J (f) u \rangle\)
+      into a finite Radon measure. Polarization and multiplicativity recover
+      the PVM, exactly as in Part I. Its marginals identify the rectangle
+      projections above, and rectangles determine the measure uniquely. The <a
+      href="self-adjoint-operators-extensions-proofs.html#thm:joint">companion proves each step</a>.
+    </p>
+    <p>
+      This constructs a multidimensional observable from its compatible
+      one-dimensional coordinates. Every real Borel function \(h\) of the
+      outcomes then gives a self-adjoint operator, with the domain supplied by
+      the same joint measure:
+    </p>
+    <div class="center">
+      \(\displaystyle h (A_1, \ldots, A_d) = \int h (x) \mathrm{d} E (x),
+      \quad D (h (A)) = \left\{
+u : \int | h (x) |^2 \mathrm{d} \mu_u (x) <
+      \infty \right\},\)
+    </div>
+    <p>
+      where \(\mu_u (F) = \langle u, E (F) u \rangle\). Here and below \(h\)
+      is finite at every point; an almost-everywhere version requires
+      specifying the spectral null sets. Bounded joint tests act on all of
+      \(H\), even when the coordinate operators have different domains. Their
+      common domain consists of the vectors for which \(\int | x |^2
+      \mathrm{d} \mu_u (x) < \infty\).
+    </p>
+    <h3 id="auto-6">Examples: compatibility is not independence<span style="margin-left: 1em"></span></h3>
+    <p>
+      On \(L^2 (\mathbb{R}^d, \mathrm{d} x)\), take the coordinate
+      multiplication operators \((X_j u) (x) = x_j u (x)\) on their maximal
+      domains. Their spectral projections multiply by coordinate indicators,
+      so the construction gives \(E (F) u = 1_F u\). For \(d = 3\) this is the
+      position observable of the introduction. A unit vector has joint outcome
+      law \(| u (x) |^2 \mathrm{d} x\). This law need not factor into its
+      coordinate marginals: strong commutation permits a joint sharp
+      measurement, while independence is a further property of that law in the
+      chosen state.
+    </p>
+    <p>
+      An even simpler example is the pair \((A, A)\). It is strongly
+      commuting, but its joint measure is concentrated on the diagonal \(\{
+      (x, x) : x \in \mathbb{R} \}\): it is the pushforward of \(E_A\) under
+      \(x \mapsto (x, x)\). The two outcomes agree exactly. Thus the rectangle
+      formula is a product of <em>projections</em>, not a claim that the
+      scalar joint probabilities are products.
+    </p>
+    <p>
+      More generally a Borel map \(F : \mathbb{R}^d \rightarrow X\) transports
+      the constructed observable by \(E_F (B) = E (F^{- 1} (B))\). Taking \(F
+      (x, y) = x + iy\) will produce the normal operators in Section 2. Taking
+      coordinates constrained to a sphere or an embedded manifold leads to
+      Section 3. The geometry of the outcome space now enters through a
+      concrete joint measure.
+    </p>
+    <h3 id="auto-7"><a id="sec:strong-sums"></a>Addition inside the joint calculus<span style="margin-left: 1em"></span></h3>
+    <p>
+      We can now add two compatible observables by applying an ordinary scalar
+      function to their joint outcome. For \(d = 2\), write the coordinates as
+      \(A, B\) and take \(h (x, y) = x + y\). The result is
+    </p>
+    <div class="center">
+      \(\displaystyle C = \int_{\mathbb{R}^2} (x + y) \mathrm{d} E (x, y),
+      \quad D (C) = \left\{ u :
+\int (x + y)^2 \mathrm{d} \mu_u (x, y) <
+      \infty \right\} .\)
+    </div>
+    <p>
+      This operator agrees with \(A + B\) on \(D (A) \cap D (B)\), but its
+      domain may be larger. For instance, with \(B = - A\) the algebraic sum
+      is zero on \(D (A)\), while \(C\) is the zero operator on all of \(H\):
+      the joint measure lives on the line \(y = - x\).
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <b>Sum of compatible observables.</b> If \(A\) and \(B\) strongly
+        commute, the algebraic sum \(A + B\), defined on \(D (A) \cap D (B)\),
+        is essentially self-adjoint, and its graph closure is the joint
+        spectral integral:
+      </p>
+      <div class="center">
+        \(\displaystyle C = \overline{A + B} .\)
+      </div>
+    </div>
+    <p>
+      To see why its closure is all of \(C\), take \(u \in D (C)\) and set
+      \(u_n = E ([- n, n]^2) u\). These vectors lie in both coordinate
+      domains. Moreover
+    </p>
+    <div class="center">
+      \(\displaystyle \| u - u_n \|^2 + \| C (u - u_n) \|^2 =
+      \int_{\mathbb{R}^2 \setminus [- n,
+n]^2}  (1 + | x + y |^2) \mathrm{d}
+      \mu_u (x, y) \rightarrow 0.\)
+    </div>
+    <p>
+      Thus the intersection is a core for \(C\). The joint measure supplies
+      both the value of the sum and the domain of its self-adjoint closure.
+      The <a href="self-adjoint-operators-extensions-proofs.html#sec:strong-sums">companion gives the full argument</a>.
+    </p>
+    <p>
+      When strong commutation is unavailable, no joint spectral integral
+      supplies the sum. A separate domain or form construction is needed.
+    </p>
+    <h3 id="auto-8">The same family through a multidimensional unitary group<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      The joint measure can also be identified by its bounded Fourier tests:
+    </p>
+    <div class="center">
+      \(\displaystyle U (t) = \int e^{it \cdot x} \mathrm{d} E (x) = \prod_{j
+      = 1}^d e^{it_j A_j},
+\qquad t \in \mathbb{R}^d .\)
+    </div>
+    <p>
+      Strong commutation makes this a strongly continuous unitary
+      representation of the additive group \(\mathbb{R}^d\). Conversely, a
+      strongly continuous unitary representation of that group gives commuting
+      strongly continuous one-parameter unitary groups on the coordinate axes.
+      Stone's theorem recovers their self-adjoint generators and the joint
+      construction applies. Fourier uniqueness identifies the joint spectral
+      measure. One may therefore construct the coordinate operators first, or
+      construct their compatible bounded evolutions first: both routes lead to
+      the same multidimensional observable.
+    </p>
+    <h3 id="auto-9"><a id="sec:commutation-caution"></a>Optional caution: commutation on a test domain<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+
+    </p>
+    <p>
+      The joint construction uses the full spectral projections. We end this
+      section by explaining why a formal commutator on convenient test vectors
+      cannot replace that hypothesis. This caution can be read independently
+      of the construction.
+    </p>
+    <p>
+      <em>Commutation on a test domain</em> means \(ABu = BAu\) for \(u\) in a
+      specified common domain on which both products exist, often a dense
+      subspace invariant under both operators. It is an assertion about those
+      restrictions. A weaker, <em>form version</em> on a specified subspace
+      \(\mathcal{D} \subseteq D (A) \cap D (B)\) is
+    </p>
+    <div class="center">
+      \(\displaystyle \langle Au, Bv \rangle = \langle Bu, Av \rangle, \qquad
+      u, v \in \mathcal{D}.\)
+    </div>
+    <p>
+      This makes sense without applying either operator twice. On a common
+      invariant domain, symmetry and algebraic commutation imply this
+      identity. Neither assertion on an arbitrary dense test space determines
+      how the full self-adjoint observables interact.
+    </p>
+    <p>
+      The distinction is visible in momentum on \(L^2 (0, 1)\). The
+      realizations of \(- i \frac{\mathrm{d}}{\mathrm{d} x}\) with periodic
+      boundary condition \(u (1) = u (0)\) and antiperiodic condition \(u (1)
+      = - u (0)\) both act on \(C_c^{\infty} (0, 1)\) by the same formula;
+      there they are the same operator, so they commute trivially.
+      Nevertheless, their spectral projections onto the constant function
+      \(1\) and \(e^{i \pi x}\) do not commute: these normalized
+      eigenfunctions are neither parallel nor orthogonal. The test space is
+      not an operator core for either realization; it does not retain their
+      boundary conditions. A formal commutator on this space cannot even tell
+      the two boundary conditions apart.
+    </p>
+    <p>
+      Being a common invariant core would not, by itself, make algebraic
+      commutation a sufficient criterion either. A core determines each closed
+      operator separately; strong commutation concerns their interaction
+      through all bounded spectral tests. Nelson's <a href="https://doi.org/10.2307/1970331">Analytic vectors
+      (1959)</a> gives a counterexample even with essentially self-adjoint
+      restrictions on a common invariant domain. We therefore use the
+      resolvent or unitary-group identities as the criteria.
+    </p>
+    <h2 id="auto-10"><a id="sec:normal"></a>2. From real to complex observables: normal
+    operators<span style="margin-left: 1em"></span></h2>
+    <p>
+      The real line entered because a Hermitian matrix has real eigenvalues. A
+      normal matrix can have complex eigenvalues, but it still has an
+      orthonormal eigenbasis. Its calculus applies a function to each of those
+      eigenvalues, now using functions on \(\mathbb{C}\). The same change of
+      outcome space works for unbounded operators.
+    </p>
+    <p>
+      A densely defined closed operator \(N\) is <em>normal</em> when
+      \(N^{\ast} N = NN^{\ast}\), including equality of the product domains.
+      Equivalently, \(D (N) = D (N^{\ast})\) and \(\| Nu \| = \| N^{\ast} u
+      \|\) on this domain. Self-adjoint operators are the case in which the
+      spectral values lie on the real axis.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <b>Spectral theorem for normal operators.</b> Normal operators on
+        \(H\) correspond bijectively to nondegenerate \(\ast\)-homomorphisms
+      </p>
+      <div class="center">
+        \(\displaystyle \Phi_N : C_0 (\mathbb{C}) \rightarrow B (H) .\)
+      </div>
+      <p>
+        Equivalently, they correspond to projection-valued measures \(E\) on
+        \(\mathbb{C}\) with \(E (\mathbb{C}) = I\). Writing \(\mu_u (\Delta) =
+        \langle u, E (\Delta) u \rangle\), the coordinate and its domain are
+      </p>
+      <div class="center">
+        \(\displaystyle N = \int_{\mathbb{C}} z \mathrm{d} E (z), \qquad D (N)
+        = \left\{ u :
+\int_{\mathbb{C}} | z |^2 \mathrm{d} \mu_u (z) < \infty
+        \right\} .\)
+      </div>
+    </div>
+    <p>
+      The adjoint is the integral of \(\bar{z}\) on the same domain.
+      Riesz&ndash;Markov and polarization work exactly as before; the spectral
+      integral is built by cutting off large \(| z |\). See <a href="https://doi.org/10.1017/9781009232487.012">van
+      Neerven, Chapter 10</a> and the <a href="self-adjoint-operators-extensions-proofs.html#thm:normal">proof companion</a>.
+    </p>
+    <h3 id="auto-11">Two compatible real observables<span style="margin-left: 1em"></span></h3>
+    <p>
+      The real and imaginary coordinate functions give self-adjoint operators
+    </p>
+    <div class="center">
+      \(\displaystyle A = \int \Re z \mathrm{d} E (z), \qquad B = \int \Im z
+      \mathrm{d} E (z) .\)
+    </div>
+    <div class="notes-theorem">
+      <p>
+        <b>Complex observables are compatible pairs.</b> The real and
+        imaginary parts \(A, B\) of a normal operator \(N\) strongly commute,
+        and \(N = A + iB\) on \(D (N) = D (A) \cap D (B)\). Conversely, every
+        strongly commuting pair of self-adjoint operators arises in this way
+        from exactly one normal operator.
+      </p>
+    </div>
+    <p>
+      Thus a complex observable is a pair of compatible real observables, with
+      a joint calculus. The first half holds because the spectral projections
+      of \(A\) and \(B\) are spectral projections of \(N\). The converse
+      follows from Section 1: construct the joint PVM of \(A, B\) on
+      \(\mathbb{R}^2\) and push it forward by \((x, y) \mapsto x + iy\). The
+      identity \(| x + iy |^2 = x^2 + y^2\) gives precisely the stated domain.
+      The <a href="self-adjoint-operators-extensions-proofs.html#prop:normal-pair">companion gives the details</a>.
+    </p>
+    <p>
+      There is a small domain point worth retaining. The algebraic expression
+      \((N + N^{\ast}) / 2\) is initially defined only on \(D (N)\); its
+      closure is \(A\), whose domain can be larger. For instance, if \(N =
+      iB\) with \(B\) unbounded and self-adjoint, this expression is zero on
+      \(D (B)\), while its closure is zero on all of \(H\). Even the words
+      <em>real part</em> deserve a domain convention.
+    </p>
+    <p>
+      The Fourier description now uses two real parameters:
+    </p>
+    <div class="center">
+      \(\displaystyle U (s, t) = \int e^{i (s \Re z + t \Im z)} \mathrm{d} E
+      (z) = e^{isA} e^{itB} .\)
+    </div>
+    <p>
+      This is a strongly continuous unitary representation of \(\mathbb{R}^2\)
+      and determines \(E\) by Fourier uniqueness. Conversely, its two
+      commuting one-parameter subgroups recover \(A\) and \(B\) by Stone's
+      theorem. The expression \(e^{itN}\) generally has neither boundedness
+      nor unitarity: at \(z = x + iy\) its modulus is \(e^{- ty}\). The
+      correct bounded tests are the characters of the additive plane.
+    </p>
+    <h3 id="auto-12"><a id="sec:normal-transform"></a>Optional: encoding a normal observable by a bounded
+    operator<span style="margin-left: 1em"></span></h3>
+    <p>
+
+    </p>
+    <p>
+      The compatible-pair description already gives the complex observable.
+      There is also a useful bounded encoding of it. The purpose of this
+      optional construction is the same as that of the Cayley transform in
+      Part I: to retain the entire observable, including its domain, inside a
+      bounded operator. The complex plane requires a different scalar map.
+    </p>
+    <p>
+      A normal operator can have spectrum equal to all of \(\mathbb{C}\).
+      Multiplication by \(z\) on \(L^2 (\mathbb{C}, \mathrm{d}^2 z)\) is an
+      example. Every small disc around a proposed resolvent point supplies
+      unit vectors on which \(N - z_0\) is arbitrarily small. Thus there need
+      not be even one bounded resolvent, and the Cayley transform of <a href="self-adjoint-operators.html#sec:cayley">Part
+      I, Section 7</a> cannot be copied unchanged.
+    </p>
+    <p>
+      Instead use the homeomorphism from the plane to the open unit disc
+    </p>
+    <div class="center">
+      \(\displaystyle b (z) = \frac{z}{\sqrt{1 + | z |^2}}, \qquad b^{- 1} (w)
+      = \frac{w}{\sqrt{1 -
+| w |^2}} .\)
+    </div>
+    <p>
+      Its calculus gives a bounded normal contraction \(T = N (I + N^{\ast}
+      N)^{- 1 / 2}\). It satisfies \(\ker (I - T^{\ast} T) = \{ 0 \}\),
+      meaning that its spectral measure puts no mass on the boundary circle.
+      The boundary may still belong to its spectrum. Conversely, every normal
+      contraction with this kernel condition gives a unique normal operator by
+    </p>
+    <div class="center">
+      \(\displaystyle D (N) = \text{Ran} ((I - T^{\ast} T)^{1 / 2}), \qquad N
+      = T (I - T^{\ast}
+T)^{- 1 / 2} .\)
+    </div>
+    <p>
+      This also suggests a proof of the normal spectral theorem: construct
+      \(T\) using the polar decomposition of \(N\), apply the bounded normal
+      spectral theorem to \(T\), and transport its measure back from the disc
+      to the plane. The <a href="self-adjoint-operators-extensions-proofs.html#thm:normal">companion checks the domains and
+      uniqueness</a>. Bounded functions still carry the full observable, even
+      when the particular bounded functions called resolvents are unavailable.
+    </p>
+    <h2 id="auto-13"><a id="sec:manifolds"></a>3. Manifolds and other outcome spaces<span style="margin-left: 1em"></span></h2>
+    <p>
+      The passage from \(\mathbb{R}\) to \(\mathbb{C}\) suggests a further
+      question: why should the outcomes of an observable live in a vector
+      space at all? A particle may have a position on a sphere, an
+      orientation, or a phase on a circle. The pullback description of random
+      variables already supplied the appropriate language in <a href="self-adjoint-operators.html#sec:probability">Part I,
+      Section 3</a>. We now develop that construction and ask which parts of
+      the outcome space's structure it retains.
+    </p>
+    <h3 id="auto-14">A spectral measure on the outcome space<span style="margin-left: 1em"></span></h3>
+    <p>
+      Let \(M\) be a second-countable Hausdorff manifold. A <em>sharp
+      observable with outcomes in \(M\)</em> is a projection-valued measure
+      \(E\) on its Borel sets, normalized by \(E (M) = I\).
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <b>Outcome-space dictionary.</b> Normalized PVMs on \(M\) correspond
+        bijectively to nondegenerate representations
+      </p>
+      <div class="center">
+        \(\displaystyle j : C_0 (M) \rightarrow B (H), \qquad j (f) = \int_M f
+        (m) \mathrm{d} E (m) .\)
+      </div>
+    </div>
+    <p>
+      The proof is the Riesz&ndash;Markov and polarization argument of <a
+      href="self-adjoint-operators.html#sec:spectral">Part I, Section 4</a> on a different locally compact space; see
+      the <a href="self-adjoint-operators-extensions-proofs.html#prop:manifold-pvm">companion</a>. There is no distinguished coordinate
+      function whose integral should be called <em>the</em> operator. The
+      observable is the whole calculus. Each real Borel function \(h : M
+      \rightarrow \mathbb{R}\) yields a self-adjoint observable \(h (E)\) with
+      its own domain
+    </p>
+    <div class="center">
+      \(\displaystyle D (h (E)) = \left\{ u : \int_M | h (m) |^2 \mathrm{d}
+      \mu_u (m) < \infty
+\right\} .\)
+    </div>
+    <p>
+      A measurable map \(F : M \rightarrow L\) transports the observable by
+      \(E_F (B) = E (F^{- 1} (B))\). Its bounded tests are \(g (F (E)) = (g
+      \circ F) (E)\). For a continuous map that is not proper, the pullback of
+      a \(C_0 (L)\) function need only be in \(C_b (M)\); the bounded
+      extension of the calculus supplies exactly what is needed. Changes of
+      coordinates therefore have a precise meaning without manipulating
+      unbounded expressions by hand.
+    </p>
+    <h3 id="auto-15">Position on a manifold<span style="margin-left: 1em"></span></h3>
+    <p>
+      A useful model is position on \(M\). Choose a Radon measure \(\nu\) and
+      take \(H = L^2 (M, \nu)\). Then \(j (f) u = fu\) and \(E (B) u = 1_B
+      u\). A unit vector \(u\) has position law \(| u (m) |^2 \nu (\mathrm{d}
+      m)\). This is the manifold version of the multiplication example in Part
+      I: bounded tests act by multiplication, without a choice of global
+      coordinates.
+    </p>
+    <p>
+      The same model works for square-integrable sections of a Hermitian
+      vector bundle, replacing \(| u (m) |^2\) by the squared norm in its
+      fibre. This allows internal degrees of freedom without changing the
+      position outcome space. A connection or a Hamiltonian supplies further
+      information about how those degrees of freedom evolve.
+    </p>
+    <h3 id="auto-16">The circle and the sphere: coordinates give the observable<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      On the circle this is the spectral theorem for a unitary. On the sphere
+      \(S^2 \subset \mathbb{R}^3\), it is equivalent to three commuting
+      bounded self-adjoint operators satisfying
+    </p>
+    <div class="center">
+      \(\displaystyle X_1^2 + X_2^2 + X_3^2 = I.\)
+    </div>
+    <p>
+      Section 1 constructs their joint measure on \(\mathbb{R}^3\). The
+      displayed relation forces it to be concentrated on the sphere: the joint
+      integral of \((x_1^2 + x_2^2 + x_3^2 - 1)^2\) is zero, so the scalar
+      measures give no mass where this function is positive. Restricting the
+      measure to \(S^2\) constructs the desired observable. Coordinate
+      polynomials are dense in \(C (S^2)\), giving another way to see its
+      uniqueness. The <a href="self-adjoint-operators-extensions-proofs.html#prop:manifold-coordinates">companion</a> proves both statements.
+    </p>
+    <h3 id="auto-17">Other outcome spaces: discrete sets and groups<span style="margin-left: 1em"></span></h3>
+    <p>
+      Smoothness was not used to construct the spectral measure. Any
+      second-countable locally compact Hausdorff space \(X\) admits the same
+      dictionary between nondegenerate representations of \(C_0 (X)\) and
+      normalized PVMs; <a href="https://doi.org/10.1073/pnas.97.2.547">Kustermans and Vaes</a> explain this locally
+      compact dictionary in operator-algebraic language. This includes spaces
+      with singularities, as well as manifolds.
+    </p>
+    <p>
+      For a countable discrete space, an observable is simply a family of
+      mutually orthogonal projections \(P_x\) with \(\sum_x P_x = I\)
+      strongly, and \(j (f) = \sum_x f (x) P_x\). A graph-valued observable
+      has this description when its outcomes are vertices. Adjacency or a
+      graph Laplacian is additional structure; neither is determined by that
+      collection of projections.
+    </p>
+    <p>
+      For a second-countable locally compact group \(G\), the group law
+      suggests how to combine outcomes. Two \(G\)-valued sharp observables can
+      be combined by multiplication if their spectral projections commute:
+      they then have a joint PVM on \(G \times G\), which can be pushed
+      forward by \((g, h) \mapsto gh\); see the <a href="self-adjoint-operators-extensions-proofs.html#prop:joint-outcomes">companion</a>. The
+      order matters for a nonabelian group. Compatibility of the two calculi
+      is what makes this an operation on jointly observed outcomes. For
+      example, two commuting unitaries admit a joint calculus on the torus
+      \(S^1 \times S^1\), and their product is its pushforward under \((z, w)
+      \mapsto zw\). The product of two noncommuting unitaries is still a
+      unitary, but it is an ordered operator construction, not the pushforward
+      of a joint sharp law. A representation \(G \rightarrow U (H)\), which
+      implements symmetries, should also be distinguished from a PVM with
+      outcomes in \(G\).
+    </p>
+    <h3 id="auto-18">Topology is only part of the geometry<span style="margin-left: 1em"></span></h3>
+    <p>
+      A metric, smooth structure or symplectic form is extra data. The algebra
+      \(C_0 (M)\) describes the topology of \(M\); multiplication by its
+      elements does not by itself distinguish two Riemannian metrics or two
+      symplectic forms on the same manifold. One must specify how the calculus
+      interacts with the additional structure. Covariance is one such
+      requirement.
+    </p>
+    <h3 id="auto-19">Optional: symmetry and Mackey covariance<span style="margin-left: 1em"></span></h3>
+    <p>
+      Symmetry provides an established way to relate an observable to
+      geometry. A particularly natural formulation is Mackey's <em>system of
+      imprimitivity</em>: a group \(G\) acting on \(M\), a strongly continuous
+      unitary representation \(U\), and a PVM satisfying
+    </p>
+    <div class="center">
+      \(\displaystyle U (g) E (B) U (g)^{\ast} = E (gB) .\)
+    </div>
+    <p>
+      For a unit vector \(u\), the covariance identity implies \(\langle U (g)
+      u, E (gB) U (g) u \rangle = \langle u, E (B) u \rangle\): transforming
+      both the state and the outcome region leaves the probability unchanged.
+      This is extra information relating the group action to the observable;
+      the representation of \(C_0 (M)\) alone does not supply it.
+    </p>
+    <p>
+      The basic example is position on the line. Take \(M = G =\mathbb{R}\)
+      acting by translation, \(H = L^2 (\mathbb{R})\), the position PVM \(E
+      (B) u = 1_B u\), and \((U (a) u) (x) = u (x - a)\). Then \(U (a) E (B) U
+      (a)^{\ast} = E (B + a)\). By Stone's theorem \(U (a) = e^{- iaP}\),
+      where \(P\) is the momentum \(- i \frac{\mathrm{d}}{\mathrm{d} x}\), so
+      this covariance is the Weyl form of the canonical commutation relation
+      between position and momentum. In this case Mackey's theorem reduces to
+      the Stone&ndash;von Neumann uniqueness theorem: on a separable Hilbert
+      space, every such covariant pair is a direct sum of copies of this one.
+    </p>
+    <p>
+      On homogeneous spaces, Mackey's theory relates such covariant position
+      observables to induced representations; see his <a href="https://doi.org/10.1073/pnas.35.9.537">1949 paper</a>.
+      Thus the question has been studied, though usually under the names
+      <em>spectral measures</em>, <em>observables on an outcome space</em>,
+      and <em>systems of imprimitivity</em> rather than manifold-valued
+      operators.
+    </p>
+    <h3 id="auto-20">Optional: constructing a manifold observable from an
+    embedding<span style="margin-left: 1em"></span></h3>
+    <p>
+      The sphere construction generalizes. Fix a proper embedding \(\iota : M
+      \rightarrow \mathbb{R}^k\). Start with a strongly commuting self-adjoint
+      tuple, construct its joint PVM, and check that it is concentrated on
+      \(\iota (M)\). Transporting this measure back by \(\iota^{- 1}\)
+      produces the manifold-valued observable. The support condition is
+      additional geometric information, not a consequence of commutation.
+      Conversely every sharp observable on \(M\) supplies such a tuple by
+      integrating the embedded coordinates. The individual coordinates can be
+      unbounded; their domains are supplied by the joint measure.
+    </p>
+    <h3 id="auto-21">Optional: measurable outcomes and infinite-dimensional
+    targets<span style="margin-left: 1em"></span></h3>
+    <p>
+      For a standard Borel outcome space without a chosen locally compact
+      topology, the PVM formulation remains available. Equivalently, one can
+      use a unital homomorphism on bounded Borel functions with the bounded
+      pointwise continuity of <a href="self-adjoint-operators.html#sec:continuity">Part I, Section 5</a>. A particular
+      continuous calculus and Radon regularity require a topology.
+      Infinite-dimensional targets require this distinction: on an
+      infinite-dimensional Hilbert space with its norm topology, \(C_0 (X) =
+      \{ 0 \}\). Here vanishing at infinity means that each set \(\{ x : | f
+      (x) | \geqslant \varepsilon \}\) is compact for \(\varepsilon > 0\);
+      decay as the norm of \(x\) grows is a weaker condition. A nonzero
+      function with compact superlevel sets would provide a compact
+      neighbourhood, which that space does not have. Thus the measurable
+      formulation can remain useful even when the locally compact \(C_0\)
+      formulation cannot be copied.
+    </p>
+    <h2 id="auto-22"><a id="sec:probability"></a>4. Observables on a non-commutative probability
+    space<span style="margin-left: 1em"></span></h2>
+    <p>
+      So far we have extended the outcome space of a single observable. We now
+      place several observables in one algebra and specify how their
+      expectations are taken. In the matrix example of Part I, choosing a unit
+      vector \(u\) turns an operator \(T\) into its expectation \(\langle u,
+      Tu \rangle\). More generally, a <em>state</em> \(\omega\) on a unital
+      algebra of bounded operators is a positive linear functional with
+      \(\omega (I) = 1\). It plays the role of expectation.
+    </p>
+    <p>
+      The setting is a pair \((\mathcal{M}, \omega)\), where \(\mathcal{M}
+      \subseteq B (H)\) is a von Neumann algebra and \(\omega\) is a normal
+      state; such a pair is called a <em>non-commutative probability
+      space</em>. A von Neumann algebra is a unital \(\ast\)-subalgebra of \(B
+      (H)\) closed in the weak operator topology; normality means that the
+      state preserves suprema of increasing bounded nets of positive
+      operators.
+    </p>
+    <p>
+      Two examples explain this choice. The classical case is \(\mathcal{M}=
+      L^{\infty} (\Omega, \mathbb{P})\), acting by multiplication on \(L^2
+      (\Omega, \mathbb{P})\), with \(\omega (f) = \int f \mathrm{d}
+      \mathbb{P}\). This is ordinary probability, and normality of \(\omega\)
+      is the monotone convergence theorem. In the other direction,
+      \(\mathcal{M}\) can be smaller than \(B (H)\). For a composite system
+      \(H = H_1 \otimes H_2\), the observables of the first part form
+      \(\mathcal{M}= B (H_1) \otimes I\). A unit vector of \(H\) then gives
+      \(\omega (T \otimes I) = \text{Tr} (\rho T)\) with a density matrix
+      \(\rho\) on \(H_1\), which for an entangled vector is not a vector state
+      of \(H_1\). Vector and density-matrix states are normal. Normality is
+      what lets probability pass through the monotone limits used below: it
+      makes spectral probabilities countably additive.
+    </p>
+    <p>
+      A real observable is now a nondegenerate homomorphism \(j : C_0
+      (\mathbb{R}) \rightarrow \mathcal{M}\). Its expectation functional
+      \(\omega \circ j\) gives its law. The Riesz&ndash;Markov construction of
+      <a href="self-adjoint-operators.html#sec:spectral">Part I, Section 4</a> gives a unique Radon probability measure
+      \(\mu\), of total mass one because \(\omega\) is normal and \(j\)
+      nondegenerate (see below), such that
+    </p>
+    <div class="center">
+      \(\displaystyle \omega (j (f)) = \int_{\mathbb{R}} f (x) \mu (\mathrm{d}
+      x), \qquad f \in C_0
+(\mathbb{R}) .\)
+    </div>
+    <p>
+      The spectral description makes this law explicit. If the calculus \(j\)
+      takes values in \(\mathcal{M}\), its spectral projections \(E (\Delta)\)
+      lie there as well. For the normal state \(\omega\),
+    </p>
+    <div class="center">
+      \(\displaystyle \mu_{\omega} (\Delta) = \omega (E (\Delta)), \qquad
+      \omega (j (f)) = \int f
+\mathrm{d} \mu_{\omega} .\)
+    </div>
+    <p>
+      Normality gives countable additivity, and the second identity now holds
+      for every bounded Borel function.
+    </p>
+    <p>
+      Thus each individual observable has an ordinary probability law. Its
+      image algebra is commutative because its scalar test functions commute.
+      The quantum feature appears in comparisons between different
+      observables: the images of two homomorphisms \(j_1\) and \(j_2\) need
+      not commute with one another. The matrix example below will make this
+      difference explicit.
+    </p>
+    <p>
+      Knowing the two separate laws does not determine mixed expectations. A
+      <em>joint non-commutative distribution</em> records all finite products
+      of bounded tests, keeping track of their order:
+    </p>
+    <div class="center">
+      \(\displaystyle \omega (j_{k_1} (f_1) \cdots j_{k_m} (f_m)), \quad m
+      \geqslant 1, \quad f_r
+\in B_b (\mathbb{R}) .\)
+    </div>
+    <p>
+      Here each index \(k_r\) selects one of the observables, and the
+      homomorphisms have been extended to their bounded Borel calculi. All
+      these products are bounded operators, so their expectations make sense
+      before any moment or domain assumptions.
+    </p>
+    <p>
+      The Pauli matrices of <a href="#sec:joint">Section 1</a> show what the individual
+      laws leave out. We add a unit vector:
+    </p>
+    <div class="center">
+      \(\displaystyle \sigma_1 = \left( \begin{array}{cc}
+  0 &amp; 1\\
+  1 &amp;
+      0
+\end{array} \right), \qquad \sigma_2 = \left( \begin{array}{cc}
+  0 &amp;
+      - i\\
+  i &amp; 0
+\end{array} \right), \qquad u = \binom{1}{0} .\)
+    </div>
+    <p>
+      In the vector state \(\omega (T) = \langle u, Tu \rangle\), both
+      observables have law \((\delta_{- 1} + \delta_1) / 2\). Nevertheless
+      \(\omega (\sigma_1 \sigma_2) = i\) and \(\omega (\sigma_2 \sigma_1) = -
+      i\). Replacing \(\sigma_2\) by \(- \sigma_2\) leaves the two individual
+      laws unchanged and reverses the mixed expectation. Thus marginal laws do
+      not determine even these simplest ordered tests. For real tests,
+      reversing two factors gives the complex conjugate expectation; the order
+      still carries information absent from the marginals.
+    </p>
+    <p>
+      No classical pair of random variables reproduces these numbers: for real
+      random variables \(X, Y\) the expectation \(\mathbb{E} [XY]\) is real,
+      while \(\omega (\sigma_1 \sigma_2) = i\). The symmetrized product,
+      \(\omega ((\sigma_1 \sigma_2 + \sigma_2 \sigma_1) / 2) = 0\), is what
+      two independent fair signs would give; the obstruction lies in the
+      order. The <a href="self-adjoint-operators-extensions-proofs.html#prop:ordered-tests">companion verifies the example</a>.
+    </p>
+    <p>
+      A joint sharp measurement of two real observables would be a PVM on
+      \(\mathbb{R}^2\), and by the converse half of the <a href="#sec:joint">joint
+      spectral theorem</a> its marginals strongly commute. Noncommuting
+      observables therefore cannot be marginals of such a joint sharp
+      measurement, although their ordered mixed expectations still make sense.
+      This is a compatibility condition on two observables, not an additional
+      restriction on either one alone.
+    </p>
+    <p>
+      The same construction describes an \(M\)-valued quantum observable by a
+      nondegenerate representation \(j : C_0 (M) \rightarrow \mathcal{M}\) on
+      \(H\). The normal state \(\omega\) gives its Radon probability law
+      through \(\omega \circ j\). The same distinction between a single
+      observable and a family applies. The outcome-space constructions of <a
+      href="#sec:manifolds">Section 3</a> therefore fit this same probability language.
+    </p>
+    <h3 id="auto-23">The geometric interpretation: observables as pullbacks<span style="margin-left: 1em"></span></h3>
+    <p>
+      Recall the pullback \(f \mapsto f \circ X\) for random variables in <a
+      href="self-adjoint-operators.html#sec:probability">Part I, Section 3</a>. It suggests a geometric interpretation: a
+      map of spaces acts on functions in the opposite direction.
+      Non-commutative geometry retains this algebraic description when
+      multiplication in the target algebra no longer commutes. A represented
+      algebra plays the role of the functions on a space; a homomorphism
+      describes a map in the opposite direction. Thus \(j\) is naturally read
+      as the pullback \(f \mapsto f \circ X\) along a real-valued observable
+      \(X\) on that non-commutative space, although \(X\) exists only through
+      \(j\). A state supplies integration, and \(\omega \circ j\) is its
+      pushforward law. This interpretation uses the nondegeneracy of <a href="self-adjoint-operators.html#sec:calculus">Part
+      I, Section 2</a>.
+    </p>
+    <p>
+      For an early algebraic formulation of quantum mechanics, see <a href="https://www.jstor.org/stable/1969387">I.
+      E. Segal's Postulates for General Quantum Mechanics (1947)</a>. It is
+      useful historical background for the language of observables, algebras
+      and states.
+    </p>
+    <h3 id="auto-24"><a id="sec:state-regularity"></a>Optional: why the regularity of the state matters<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+
+    </p>
+    <p>
+      The normal-state setting above is enough for the main argument. The
+      following qualification explains what can fail without it. Normality is
+      a substantive assumption. Vector states and density-matrix states are
+      normal, and give countably additive laws through the spectral
+      projections. For a general state there are two different questions.
+    </p>
+    <p>
+      First, restricting \(\omega\) to the continuous calculus gives a
+      positive functional on \(C_0 (\mathbb{R})\). Riesz&ndash;Markov always
+      gives a finite measure, but it is a probability measure only when that
+      functional has norm one. Equivalently, the state must give full mass to
+      the cutoffs \(\chi_n\) of <a href="self-adjoint-operators.html#sec:calculus">Part I, Section 2</a>: \(\omega (j
+      (\chi_n)) \rightarrow 1\). Normality and nondegeneracy ensure this
+      condition.
+    </p>
+    <p>
+      Second, does this Riesz measure agree with \(\Delta \mapsto \omega (E
+      (\Delta))\) on every Borel set? Normality ensures this too, by
+      preserving spectral limits. Full mass on the continuous calculus alone
+      does not.
+    </p>
+    <p>
+      For a concrete warning, let \(A\) multiply by \(t\) on \(L^2 (0, 1)\).
+      The <a href="self-adjoint-operators-extensions-proofs.html#prop:nonnormal-law">companion constructs a state</a> that evaluates every
+      continuous spectral test at 0, so its Riesz law is \(\delta_0\). Yet
+      \(E_A (\{ 0 \}) = 0\), since the singleton has Lebesgue measure zero.
+      Hence \(\omega (E_A (\{ 0 \})) = 0\) while the Riesz law assigns that
+      set mass one. This state is not normal. The example separates having a
+      probability law for continuous tests from evaluating all spectral events
+      by that same law.
+    </p>
+    <p>
+      <a href="self-adjoint-operators-extensions-proofs.html#sec:probability">The Part II companion</a> proves the relation between the
+      algebra, its spectral projections and the law in a normal state, and
+      proves the counterexample above.
+    </p>
+    <h2 id="auto-25"><a id="sec:geometry"></a>5. Further perspective: how a Dirac operator encodes
+    distance<span style="margin-left: 1em"></span></h2>
+    <p>
+      An outcome space tells us where measurements take their values. What
+      additional data describe distances, symmetries or Hamiltonian dynamics?
+      Symmetry has already appeared through covariance. This section turns to
+      distance; Section 6 considers Hamiltonian structure. These two
+      perspectives use data beyond the spectral measure.
+    </p>
+    <p>
+      The algebra \(C (M)\) remembers the topology of a compact manifold.
+      Smooth and metric structure require further data. In Connes's compact
+      <em>spectral triple</em> \((\mathcal{A}, H, D)\), a unital
+      \(\ast\)-algebra \(\mathcal{A} \subseteq B (H)\) is accompanied by a
+      self-adjoint \(D\) with compact resolvent. Each \(a \in \mathcal{A}\)
+      preserves the domain \(\text{Dom} D\), and \([D, a]\) on that domain
+      extends to a bounded operator. This domain requirement is part of the
+      geometry.
+    </p>
+    <p>
+      The circle shows the idea with nothing beyond Section 1. Take \(M
+      =\mathbb{R}/ 2 \pi \mathbb{Z}\), \(H = L^2 (M)\), the algebra
+      \(\mathcal{A}= C^{\infty} (M)\) acting by multiplication, and the
+      periodic momentum \(D = - i \frac{\mathrm{d}}{\mathrm{d} \theta}\). Its
+      eigenvalues are the integers, with eigenfunctions \(e^{ik \theta}\), so
+      its resolvent is compact. For smooth \(f\), the Leibniz rule gives \([D,
+      f] u = - if' u\), hence \(\| [D, f] \| = \sup | f' |\). A function with
+      \(| f' | \leqslant 1\) changes by at most the length of the shorter arc
+      between two points, and the distance to a fixed point, suitably
+      smoothed, nearly attains this bound. Thus the supremum of \(| f (p) - f
+      (q) |\) over such \(f\) is the arc-length distance from \(p\) to \(q\).
+    </p>
+    <p>
+      The same holds in higher dimensions. On a compact connected Riemannian
+      spin manifold without boundary, take \(\mathcal{A}= C^{\infty} (M)\),
+      the Hilbert space of square-integrable spinors, and the self-adjoint
+      Dirac operator \(D\). For real \(f\), the commutator \([D, f]\) is
+      Clifford multiplication by \(\mathrm{d} f\), up to the conventional
+      factor of \(i\). Its norm is the supremum norm of the gradient. A bound
+      on the commutator is therefore a bound on how rapidly a function can
+      change along the manifold. Taking the largest possible change between
+      two points under that bound recovers their distance:
+    </p>
+    <div class="center">
+      \(\displaystyle d (p, q) = \sup \left\{ | f (p) - f (q) | : f \in
+      C^{\infty} (M, \mathbb{R}),
+\hspace{0.3em} \| [D, f] \| \leqslant 1
+      \right\} .\)
+    </div>
+    <p>
+      Integrating the gradient along paths proves one inequality; smooth
+      approximation of distance functions gives the reverse; the <a href="self-adjoint-operators-extensions-proofs.html#sec:geometry">companion</a>
+      gives the argument. See <a href="https://alainconnes.org/wp-content/uploads/reality.pdf">Connes, Definition 1 and Proposition
+      2</a>.
+    </p>
+    <p>
+      The present viewpoint describes \(D\) by its bounded calculus, including
+      its resolvents and unitary group; compact resolvent implies \(f (D)\) is
+      compact for \(f \in C_0 (\mathbb{R})\). Geometry also uses how \(D\)
+      interacts with the represented coordinate algebra. Knowing its calculus
+      alone does not specify that algebra or those commutators. Indeed,
+      spectral data alone do not fix the geometry: <a href="https://doi.org/10.1073/pnas.51.4.542">Milnor (1964)</a>
+      exhibited two flat 16-dimensional tori that are not isometric although
+      their Laplacians have the same eigenvalues with the same multiplicities.
+      As observables, the two Laplacians are therefore unitarily equivalent;
+      the difference between the manifolds is visible only through the
+      represented functions. Allowing \(\mathcal{A}\) to be noncommutative
+      extends this geometric framework beyond ordinary manifolds, while
+      retaining the same care with self-adjointness and domains.
+    </p>
+    <h2 id="auto-26"><a id="sec:geometric-outlook"></a>6. Further perspective: geometry and quantization<span
+    style="margin-left: 1em"></span></h2>
+    <p>
+
+    </p>
+    <p>
+      The convergence notion in <a href="self-adjoint-operators.html#sec:convergence">Part I, Section 8</a> extends
+      directly to observables with outcomes in \(M\): on a fixed Hilbert
+      space, require \(j_n (f) u \rightarrow j (f) u\) for every \(f \in C_0
+      (M)\) and every \(u\). There need not be a distinguished resolvent on
+      \(M\); the bounded tests still define the convergence of the
+      observables.
+    </p>
+    <p>
+      One can also ask whether such convergence retains a specified metric,
+      symmetry, or Poisson structure. Which additional estimates express that
+      structure? Convergence of the bounded tests alone does not control
+      derivatives or unbounded coordinate functions.
+    </p>
+    <p>
+      A symplectic manifold provides a useful test of what this means. Its
+      symplectic form determines a <em>Poisson bracket</em> \(\{ f, g \}\) on
+      smooth functions, expressing Hamiltonian dynamics. For bounded smooth
+      tests, a sharp observable on this manifold still has \([j (f), j (g)] =
+      0\): all its scalar tests belong to a commutative algebra. Thus
+      specifying a phase-space outcome does not by itself turn its Poisson
+      bracket into a quantum commutator.
+    </p>
+    <p>
+      Quantization asks for different data. Choose an algebra \(\mathcal{A}\)
+      of smooth functions in \(C_0 (M)\), closed under products, conjugation
+      and Poisson brackets; \(C_c^{\infty} (M)\) is a natural choice. A family
+      of linear maps
+    </p>
+    <div class="center">
+      \(\displaystyle Q_{\hbar} : \mathcal{A} \rightarrow B (H_{\hbar}), \quad
+      Q_{\hbar} (\bar{f}) =
+Q_{\hbar} (f)^{\ast},\)
+    </div>
+    <p>
+      assigns bounded operators to these tests. Here \(\hbar > 0\) is the
+      parameter tending to zero in the classical limit. A <em>positive</em>
+      quantization map additionally sends nonnegative tests to positive
+      operators. Positivity alone does not make it a homomorphism.
+    </p>
+    <p>
+      First, multiplying two quantized tests should approach quantizing their
+      product. For fixed \(f, g \in \mathcal{A}\), this asks for
+    </p>
+    <div class="center">
+      \(\displaystyle \| Q_{\hbar} (fg) - Q_{\hbar} (f) Q_{\hbar} (g) \|
+      \rightarrow 0.\)
+    </div>
+    <p>
+      Second, the commutator, rescaled by the classical-limit parameter,
+      should approach the quantization of the Poisson bracket. This is the
+      <em>Dirac condition</em>:
+    </p>
+    <div class="center">
+      \(\displaystyle \left\| \frac{1}{i \hbar} [Q_{\hbar} (f), Q_{\hbar} (g)]
+      - Q_{\hbar} (\{ f, g
+\}) \right\| \rightarrow 0.\)
+    </div>
+    <p>
+      These conditions recover multiplication and relate quantum commutators
+      to Hamiltonian dynamics. We use \([X, Y] = XY - YX\) and the Poisson
+      convention \(\{ q_j, p_k \} = \delta_{jk}\) in canonical coordinates.
+      One also asks for \(\| Q_{\hbar} (f) \| \rightarrow \| f \|_{\infty}\),
+      so the classical information is retained. These are standard ingredients
+      of strict quantization, whose full formulation also specifies how the
+      algebras at different \(\hbar\) fit together. They are not an existence
+      theorem for arbitrary manifolds or arbitrary positive maps. See <a href="https://arxiv.org/abs/math-ph/9807027">Landsman's
+      strict quantization of coadjoint orbits</a> for a concrete construction
+      with positive maps. For a finite-dimensional family, the fuzzy sphere is
+      the basic example: spin-\(j\) matrices rescaled by \(1 / \sqrt{j (j +
+      1)}\) satisfy \(X_1^2 + X_2^2 + X_3^2 = I\), like the sphere coordinates
+      of Section 3, but their commutators are of order \(\hbar_j = 1 / \sqrt{j
+      (j + 1)}\) instead of zero. For \(j = 1 / 2\) they are the Pauli
+      matrices of Section 1 divided by \(\sqrt{3}\).
+    </p>
+    <p>
+      This explains a limit of the sharp-observable picture. If every
+      \(Q_{\hbar}\) were an exact homomorphism, all its commutators would
+      vanish. The Dirac condition and the norm limit would then force \(\{ f,
+      g \} = 0\) for every pair of tests. A nontrivial Poisson structure
+      therefore calls for a different notion of quantization, rather than an
+      additional identity imposed on a single sharp calculus. The <a href="self-adjoint-operators-extensions-proofs.html#sec:quantization">companion
+      proves this elementary obstruction</a>.
+    </p>
+    <p>
+      I would like to understand how quantitative control of these defects
+      relates to convergence of states, outcome laws and dynamics. That is a
+      direction for further exploration; the spectral-triple discussion in <a
+      href="#sec:geometry">Section 5</a> supplies an established way to retain metric
+      information.
+    </p>
+    <p>
+      For applications it helps to specify three things: the outcome space,
+      the bounded tests describing the observable, and the extra structure
+      those tests are required to respect. For a real sharp observable one
+      coordinate encodes the whole observable. On a manifold, and especially
+      in the symplectic setting, keeping those three choices explicit prevents
+      several quite different constructions from being conflated.
+    </p>
+    <p>
+      <a href="self-adjoint-operators-extensions-proofs.html">Proofs and complements for this part</a>.
+    </p>
+    <h2 id="auto-27"><a id="sec:references"></a>References<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          M. Reed and B. Simon, <em>Methods of Modern Mathematical Physics, I:
+          Functional Analysis</em>, revised and enlarged edition, Academic
+          Press, 1980, especially Chapters VII&ndash;VIII. <a href="https://www.sciencedirect.com/book/9780125850018/methods-of-modern-mathematical-physics">Publisher</a>.
+          A systematic account of spectral theory and unbounded operators.
+        </p>
+      </li>
+      <li>
+        <p>
+          G. Teschl, <em>Mathematical Methods in Quantum Mechanics: With
+          Applications to Schr&ouml;dinger Operators</em>, second edition,
+          Graduate Studies in Mathematics 157, AMS, 2014. Chapters 2&ndash;3
+          cover domains, adjoints and the spectral theorem. Section 4.2
+          explains commutation through the bounded functional calculus. <a
+          href="https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/">Author's book page and freely available text</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          E. Nelson, <em>Analytic vectors</em>, Annals of Mathematics (2)
+          <b>70</b> (1959), 572&ndash;615. <a href="https://doi.org/10.2307/1970331">doi:10.2307/1970331</a>.
+          Analytic vectors, integration of infinitesimal representations and
+          the distinction between algebraic and strong commutation.
+        </p>
+      </li>
+      <li>
+        <p>
+          J. van Neerven, <em>Functional Analysis</em>, Cambridge University
+          Press, 2022. Chapters 9&ndash;10 treat bounded and unbounded normal
+          operators; Chapter 15 connects states and observables. <a href="https://doi.org/10.1017/9781009232487.012">Chapter
+          10</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          G. W. Mackey, <em>Imprimitivity for Representations of Locally
+          Compact Groups I</em>, Proceedings of the National Academy of
+          Sciences <b>35</b> (1949), 537&ndash;545. <a href="https://doi.org/10.1073/pnas.35.9.537">doi:10.1073/pnas.35.9.537</a>.
+          Covariant spectral measures on homogeneous outcome spaces and their
+          relation to induced representations.
+        </p>
+      </li>
+      <li>
+        <p>
+          N. P. Landsman, <em>Strict quantization of coadjoint orbits</em>
+          (1998), <a href="https://arxiv.org/abs/math-ph/9807027">arXiv:math-ph/9807027</a>. Definition 2,
+          Proposition 1 and Theorem 2 give the classical-limit conditions and
+          a construction using positive quantization maps on integral
+          coadjoint orbits of compact connected Lie groups.
+        </p>
+      </li>
+      <li>
+        <p>
+          A. Connes, <em>Noncommutative Geometry</em>, Academic Press, 1994.
+          <a href="https://alainconnes.org/wp-content/uploads/book94bigpdf.pdf">Author's freely available book</a>. Chapter II.1 develops
+          the algebra&ndash;space dictionary. See also <em>Noncommutative
+          geometry and reality</em>, Journal of Mathematical Physics <b>36</b>
+          (1995), 6194&ndash;6231, <a href="https://alainconnes.org/wp-content/uploads/reality.pdf">author's text</a>: Definition 1
+          and Proposition 2 introduce spectral triples and recover geodesic
+          distance from the Dirac commutator.
+        </p>
+      </li>
+      <li>
+        <p>
+          J. Kustermans and S. Vaes, <em>The operator algebra approach to
+          quantum groups</em>, Proceedings of the National Academy of Sciences
+          <b>97</b> (2000), 547&ndash;552. <a href="https://doi.org/10.1073/pnas.97.2.547">doi:10.1073/pnas.97.2.547</a>.
+          Section 1 explains the locally compact dictionary and morphisms into
+          multiplier algebras.
+        </p>
+      </li>
+      <li>
+        <p>
+          J. Milnor, <em>Eigenvalues of the Laplace operator on certain
+          manifolds</em>, Proceedings of the National Academy of Sciences
+          <b>51</b> (1964), 542. <a href="https://doi.org/10.1073/pnas.51.4.542">doi:10.1073/pnas.51.4.542</a>. Two
+          non-isometric flat tori with the same Laplace spectrum.
+        </p>
+      </li>
+      <li>
+        <p>
+          I. E. Segal, <em>Postulates for General Quantum Mechanics</em>,
+          Annals of Mathematics (2) <b>48</b> (1947), 930&ndash;948. <a href="https://www.jstor.org/stable/1969387">Original
+          paper</a>. An early algebraic formulation of quantum mechanics.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>

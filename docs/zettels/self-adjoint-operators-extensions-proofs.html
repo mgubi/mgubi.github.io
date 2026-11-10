@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>Proofs and complements: beyond the real line — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This companion follows Part II through strongly commuting families and the construction of their joint spectral measure, then normal operators, manifold-valued spectral measures, other outcome spaces, normal states and geometric commutators. The final two sections justify the post's further perspect">
+    <link rel="canonical" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions-proofs.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.github.io/docs/notes.atom">
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./writings.html">writings</a>]<em class="notes-header-name">mg|pages</em><span class="notes-comments">comments</span>
+      </p>
+    </div>
+    <h1 id="auto-1">Proofs and complements: beyond the real line<span style="margin-left: 1em"></span></h1>
+    <p>
+      <i>Observables \(\cdot\) Companion II. November 10, 2026.</i>
+    </p>
+    <p>
+      Companion to <a href="self-adjoint-operators-extensions.html">Observables beyond the real line</a>.
+    </p>
+    <p>
+      <b>Earlier proof companions.</b> <a href="self-adjoint-operators-proofs.html">I. The basic idea</a>.
+    </p>
+    <div class="notes-abstract">
+      <p>
+        This companion follows Part II through strongly commuting families and
+        the construction of their joint spectral measure, then normal
+        operators, manifold-valued spectral measures, other outcome spaces,
+        normal states and geometric commutators. The final two sections
+        justify the post's further perspectives on distance and quantization.
+        It uses the spectral calculus proved in the Part I companion. The
+        normal spectral theorem uses a short closed-graph argument given below
+        for its positive square-root reduction. Mackey's full classification
+        and the exploratory geometric questions are cited background, not
+        further theorems proved here.
+      </p>
+    </div>
+    <p>
+      Each operator includes its domain. Inner products are conjugate-linear
+      in the first argument and linear in the second. Section and theorem
+      numbers are local to this companion; references to another companion
+      name its part explicitly.
+    </p>
+    <p>
+      <b>Contents.</b>
+    </p>
+    <ol>
+      <li>
+        <p>
+          <a href="#sec:joint">Strongly commuting families and their joint spectral
+          measure</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:normal">Normal operators and the complex plane</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:manifolds">Manifold-valued observables and other outcome spaces</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:probability">Observables, normal states and probability laws</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:geometry">The geometric commutator and the distance formula</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#sec:quantization">Sharp observables and Poisson brackets</a>
+        </p>
+      </li>
+    </ol>
+    <h2 id="auto-2"><a id="sec:joint"></a>1<span style="margin-left: 1em"></span>Strongly commuting families and
+    their joint spectral measure<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3"><a id="sec:commutation"></a>Commutation of full observables<span style="margin-left: 1em"></span></h3>
+    <p>
+      The diagonal example at the start of the post is the atomic case of the
+      theorem below. There the coordinate-axis projections satisfy \(P_1 P_2 =
+      0\) and \(P_1 + P_2 = I\). Assigning them to \((1, 2)\) and \((- 1, 3)\)
+      defines a normalized PVM with two atoms. Its coordinate integrals are
+      the displayed matrices, and multiplying finite spectral sums gives the
+      displayed joint calculus. Its marginals are obtained by inverse image
+      under the coordinate maps. The theorem below proves the same assertions
+      without an atomic assumption.
+    </p>
+    <p>
+      Let \(A, B\) be self-adjoint. We first justify the equivalences used in
+      the post. Strong commutation means \(E_A (\Delta) E_B (\Gamma) = E_B
+      (\Gamma) E_A (\Delta)\) for all Borel sets. Simple spectral integrals
+      and bounded convergence show that this implies commutation of \(f (A)\)
+      and \(g (B)\) for every bounded Borel \(f, g\). In particular all
+      nonreal resolvents, and all members of the two unitary groups, commute.
+    </p>
+    <p>
+      Conversely suppose all nonreal resolvents commute. The algebra generated
+      by \((x - i)^{- 1}\) and \((x + i)^{- 1}\) is uniformly dense in \(C_0
+      (\mathbb{R})\), by Stone&ndash;Weierstrass. Thus the two continuous
+      calculi commute. Adjoin constants and fix a bounded operator commuting
+      with one calculus. The bounded Borel functions whose spectral integrals
+      commute with it are closed under uniformly bounded pointwise limits,
+      because such spectral integrals converge strongly. The functional
+      monotone-class theorem therefore gives all bounded Borel functions.
+      Applying this argument successively to the two calculi gives commuting
+      spectral projections.
+    </p>
+    <p>
+      For the unitary criterion, use a bounded operator \(T\) commuting with
+      \(e^{itA}\) for every real \(t\). For \(h, k \in H\), the finite complex
+      measures \(\langle h, TE_A (\cdot) k \rangle\) and \(\langle h, E_A
+      (\cdot) Tk \rangle\) have equal Fourier transforms. Uniqueness of the
+      Fourier transform of finite measures makes them equal, so \(T\) commutes
+      with every spectral projection of \(A\). First take \(T = e^{isB}\),
+      then repeat the argument for \(B\) with \(T = E_A (\Delta)\). This
+      proves strong commutation from the unitary-group criterion.
+    </p>
+    <p>
+      These conditions imply the weak form identity on the full intersection
+      \(D (A) \cap D (B)\). For example, the joint cutoffs in the proof below
+      approximate each vector together with its \(A\)- and \(B\)-images; the
+      identity holds on each bounded joint spectral subspace and passes to the
+      limit. In contrast, the periodic/antiperiodic momentum example satisfies
+      both algebraic and form commutation on \(C_c^{\infty} (0, 1)\) without
+      strongly commuting. The graph norm of either momentum is the \(H^1\)
+      norm. The closure of that test space is \(H_0^1 (0, 1)\), whose
+      functions vanish at both endpoints, a proper subspace of either
+      self-adjoint boundary domain. Thus the test space is not an operator
+      core.
+    </p>
+    <p>
+      For completeness, let \(S_{\theta} = - id / dx\) on \(D (S_{\theta}) =
+      \{ u \in H^1 (0, 1) : u (1) = e^{i \theta} u (0) \}\). Integration by
+      parts shows that a vector in the adjoint domain has a weak derivative in
+      \(L^2\), hence lies in \(H^1\); the boundary term vanishes for every \(u
+      \in D (S_{\theta})\) exactly when the same boundary condition holds for
+      the adjoint vector. Thus \(S_{\theta}\) is self-adjoint. Multiplication
+      by \(e^{i \theta x}\) carries the Fourier basis \(e^{2 \pi ikx}\) to a
+      complete eigenbasis, which verifies the stated periodic and antiperiodic
+      spectral projections directly.
+    </p>
+    <p>
+      The failure of this particular test space to be a core is not a general
+      converse criterion. Algebraic commutation on a common invariant core
+      need not imply the bounded commutation identities proved above; Nelson's
+      <a href="https://doi.org/10.2307/1970331">Analytic vectors</a> contains the classical counterexample.
+      That construction is cited as a further warning; the criteria proved
+      here are commutation of resolvents, spectral projections or full unitary
+      groups.
+    </p>
+    <h3 id="auto-4">Constructing the measure from the coordinate projections<span
+    style="margin-left: 1em"></span></h3>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">1</span>. </strong><i>[Joint spectral
+        measure of a finite family]<a id="thm:joint"></a> Let \(A_1, \ldots, A_d\) be
+        pairwise strongly commuting self-adjoint operators, with spectral
+        measures \(E_j\). There is a unique normalized PVM \(E\) on
+        \(\mathbb{R}^d\) such that</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle E (\Delta_1 \times \cdots \times \Delta_d) = E_1
+          (\Delta_1) \cdots E_d
+(\Delta_d)\)
+        </div></div>
+      </p>
+      <p>
+        <i>for all Borel sets \(\Delta_j\). It gives a nondegenerate
+        representation \(J : C_0 (\mathbb{R}^d) \rightarrow B (H)\)
+        satisfying</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle J (f_1 \otimes \cdots \otimes f_d) = f_1 (A_1)
+          \cdots f_d (A_d) .\)
+        </div></div>
+      </p>
+      <p>
+        <i>The coordinate integrals are exactly the given operators, including
+        domains. Every real-valued Borel function \(h\), finite at every
+        point, defines a self-adjoint joint spectral integral with domain
+        \(\left\{ u : \int | h |^2 d \mu_u < \infty \right\}\), where \(\mu_u
+        (F) = \langle u, E (F) u \rangle\). Conversely, the coordinate
+        operators of a normalized PVM on \(\mathbb{R}^d\) are pairwise
+        strongly commuting.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>For a rectangle \(R = \Delta_1 \times \cdots
+      \times \Delta_d\), put \(P (R) = \prod_{j = 1}^d E_j (\Delta_j)\).
+      Commutation makes this product self-adjoint and idempotent, hence an
+      orthogonal projection. Its range is the intersection of the coordinate
+      ranges: the product fixes every vector in that intersection, and each
+      factor fixes the product's range. Also \(P (R) P (S) = P (R \cap S)\).
+      In particular disjoint rectangles give orthogonal projections.
+    </p>
+    <p>
+      Partition each real coordinate into finitely many disjoint Borel sets,
+      including the complement of any bounded region being considered. The
+      resulting grid partitions \(\mathbb{R}^d\) into finitely many rectangles
+      \(R_{\alpha}\). Their projections are orthogonal and sum to \(I\), by
+      distributivity and normalization of the \(E_j\). For a function constant
+      on these cells define
+    </p>
+    <div class="center">
+      \(\displaystyle J_0 (s) = \sum_{\alpha} c_{\alpha} P (R_{\alpha}), \quad
+      s = \sum_{\alpha}
+c_{\alpha} 1_{R_{\alpha}} .\)
+    </div>
+    <p>
+      Refining a coordinate partition subdivides its spectral projection into
+      the corresponding finite sum. Two grids have a common refinement, so
+      this definition is independent of the representation of \(s\).
+      Refinement also proves linearity, multiplication and preservation of
+      complex conjugation. Orthogonality gives, for every \(u \in H\),
+    </p>
+    <div class="center">
+      \(\displaystyle \| J_0 (s) u \|^2 = \sum_{\alpha} | c_{\alpha} |^2  \| P
+      (R_{\alpha}) u \|^2
+\leqslant \| s \|_{\infty}^2  \| u \|^2 .\)
+    </div>
+    <p>
+      Compactly supported continuous functions can be approximated uniformly
+      by such step functions: enclose the support in a larger box, divide the
+      box into sufficiently small half-open rectangular cells, sample the
+      function on each cell, and put zero outside. Uniform continuity controls
+      the error, including the cells near the support's boundary. Continuous
+      functions vanishing at infinity are then approximated by first cutting
+      them off. The norm estimate defines a unique contractive map \(J : C_0
+      (\mathbb{R}^d) \rightarrow B (H)\). Taking uniform limits in the
+      identities for \(J_0\) shows that \(J\) is a \(\ast\)-homomorphism.
+      Applying the same approximation to each one-variable factor proves the
+      tensor-product formula in the statement.
+    </p>
+    <p>
+      Choose continuous compactly supported functions \(0 \leqslant \chi_n
+      \leqslant 1\) on \(\mathbb{R}\) tending pointwise to one. The
+      one-dimensional calculus gives \(\chi_n (A_j) \rightarrow I\) strongly.
+      Their finite products also tend strongly to \(I\): expand the difference
+      of the products as a telescoping sum and use that every factor has norm
+      at most one. Thus \(J\) is nondegenerate.
+    </p>
+    <p>
+      Apply the representation&ndash;PVM theorem of <a href="self-adjoint-operators-proofs.html#thm:pvm">the Part I
+      companion</a> to the locally compact, second-countable space
+      \(\mathbb{R}^d\). Specifically, Riesz&ndash;Markov represents each
+      positive functional \(f \mapsto \langle u, J (f) u \rangle\) by a finite
+      Radon measure. Polarization produces its operator-valued measure;
+      multiplicativity, extended from continuous functions by bounded monotone
+      approximation, makes its values projections. Nondegeneracy supplies
+      total projection \(I\). This gives a PVM \(E\) with \(J (f) = \int
+      fdE\). No joint measure was used in constructing \(J\).
+    </p>
+    <p>
+      To identify its marginals, fix \(j\) and \(h \in C_0 (\mathbb{R})\).
+      Apply the tensor formula to \(h (x_j)  \prod_{k \neq j} \chi_n (x_k)\).
+      The operator side tends strongly to \(h (A_j)\). Bounded convergence for
+      the PVM integral makes the other side tend strongly to \(\int h (x_j) dE
+      (x)\). Equality for all such \(h\), scalar measure uniqueness and
+      polarization identify the marginal with \(E_j\). A rectangle is the
+      intersection of its coordinate cylinders; multiplication of the
+      corresponding spectral projections now gives exactly the asserted
+      rectangle formula.
+    </p>
+    <p style="margin-bottom: 1em">
+      For uniqueness, two candidate PVMs give finite scalar measures \(\langle
+      u, E (\cdot) u \rangle\) agreeing on every Borel rectangle. Rectangles
+      form a generating pi-system containing the whole space. The pi-lambda
+      theorem makes these scalar measures equal on all Borel sets, and
+      polarization makes the PVMs equal. The marginal identity recovers each
+      \(A_j\) with its original spectral domain. Integrating a real Borel
+      \(h\) that is finite at every point uses the real spectral-integral
+      theorem of Part I, or its proof with cutoffs \(1_{| h | \leqslant n}\);
+      it gives exactly the stated domain and self-adjointness. Finally,
+      starting with any joint PVM, its coordinate projections are the
+      projections of cylinders. They commute because all values of a PVM do.
+      This proves the converse.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The examples in the post follow directly from uniqueness. Coordinate
+      multiplication on \(L^2 (\mathbb{R}^d, dx)\) has \(E (F) u = 1_F u\),
+      because this PVM has the required rectangle projections. Its scalar law
+      is \(| u |^2 dx\). For the pair \((A, A)\), push \(E_A\) forward by \(x
+      \mapsto (x, x)\); on a rectangle it gives \(E_A (\Delta \cap \Gamma)\),
+      which is the required product. Thus the joint law is concentrated on the
+      diagonal, and compatibility alone does not imply independence. Likewise
+      the pushforward under a Borel map \(F\) is a PVM since inverse images
+      preserve intersections, complements and countable disjoint unions; the
+      spectral substitution rule follows first for indicators, then bounded
+      simple functions, and finally by spectral truncation.
+    </p>
+    <p>
+      The common coordinate domain is described by \(\int | x |^2 d \mu_u (x)
+      < \infty\), because \(| x |^2 = \sum_{j = 1}^d x_j^2\). The subspaces
+      \(E ([- n, n]^d) H\) lie in every coordinate domain and have dense
+      union. For a vector in the common domain, these cutoffs converge
+      together with every coordinate image, by dominated convergence. This
+      justifies the joint-cutoff argument in the commutation discussion.
+    </p>
+    <h3 id="auto-5"><a id="sec:strong-sums"></a>Addition in the joint calculus<span style="margin-left: 1em"></span></h3>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">2</span>. </strong><i>[Strongly
+        commuting sums]<a id="thm:strong-sums"></a> If all spectral projections of \(A =
+        A^{\ast}\) commute with all those of \(B = B^{\ast}\), the algebraic
+        sum on \(D (A) \cap D (B)\) is essentially self-adjoint. Its closure
+        is the joint spectral integral of \(x + y\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Theorem&nbsp;<a href="#thm:joint">1</a> constructs the joint
+      PVM \(E\) from the spectral projections of \(A, B\). Integrating the
+      real function \(x + y\) against it gives a self-adjoint operator \(C\).
+      On \(D (A) \cap D (B)\), joint truncation and the inequality \(|x + y|^2
+      \le 2 x^2 + 2 y^2\) prove \(Cu = Au + Bu\).
+    </p>
+    <p style="margin-bottom: 1em">
+      For \(u \in D (C)\), let \(u_n = E ([- n, n]^2) u\). Then \(u_n \in D
+      (A) \cap D (B)\), and both \(u_n \to u\) and \(Cu_n \to Cu\) by
+      dominated convergence with \(1 + |x + y|^2\). The restricted sum is
+      therefore a core restriction of \(C\). This proves the claim and also
+      explains why the closure may have a larger domain than the original
+      intersection. For any bounded Borel \(f\), uniqueness of the spectral
+      calculus gives \(f (C) = \int f (x + y) dE (x, y)\). Taking \(f (s) =
+      e^{its}\) and multiplying bounded joint spectral integrals gives
+      \(e^{itC} = e^{itA} e^{itB}\). For \(B = - A\), the spectral sum is the
+      everywhere-defined zero operator; this verifies the example \(B = - A\)
+      in the post.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-6">The unitary representation of the additive group<span style="margin-left: 1em"></span></h3>
+    <p>
+      For the PVM just constructed define
+    </p>
+    <div class="center">
+      \(\displaystyle U (t) = \int e^{it \cdot x} dE (x) = \prod_{j = 1}^d
+      e^{it_j A_j} .\)
+    </div>
+    <p>
+      The equality follows by multiplication in the bounded Borel calculus.
+      That multiplication also gives \(U (s + t) = U (s) U (t)\) and \(U
+      (t)^{\ast} = U (- t)\). For every vector \(u\),
+    </p>
+    <div class="center">
+      \(\displaystyle \| (U (t) - U (s)) u \|^2 = \int | e^{it \cdot x} -
+      e^{is \cdot x} |^2 d \mu_u
+(x) \rightarrow 0 \quad (t \rightarrow s)\)
+    </div>
+    <p>
+      by dominated convergence, with dominating constant four. Thus this is a
+      strongly continuous unitary representation of \(\mathbb{R}^d\).
+      Conversely, let \(U\) be such a representation. Its restrictions to the
+      coordinate axes are strongly continuous unitary groups, so Stone's
+      theorem gives self-adjoint generators \(A_j\). These groups commute by
+      the group law. The equivalence proved above shows that their generators
+      are pairwise strongly commuting. Theorem&nbsp;<a href="#thm:joint">1</a> constructs
+      their joint PVM, whose representation agrees with \(U\) because every
+      group element is a sum of coordinate-axis elements. Uniqueness follows
+      from Stone's theorem and uniqueness of the joint PVM.
+    </p>
+    <p>
+      One can also recover the measure directly from the scalar Fourier tests
+      \(\langle u, U (t) u \rangle\). For completeness, if a finite complex
+      measure \(\nu\) on \(\mathbb{R}^d\) has zero Fourier transform, convolve
+      it with a centered Gaussian density \(g_{\varepsilon}\) of covariance
+      \(\varepsilon I\). The Gaussian Fourier inversion formula and Fubini
+      apply since the Gaussian Fourier transform is integrable and \(\nu\) has
+      finite total variation. They give \(g_{\varepsilon} \ast \nu = 0\).
+      Hence for \(f \in C_c (\mathbb{R}^d)\), \(\int (f \ast g_{\varepsilon})
+      d \nu = 0\). The Gaussian approximate identity converges uniformly on
+      such \(f\), so \(\int fd \nu = 0\). Riesz&ndash;Markov uniqueness gives
+      \(\nu = 0\). Apply this to the difference of two scalar spectral
+      measures and polarize. This proves the Fourier characterization used in
+      the post without presupposing its coordinate operators.
+    </p>
+    <h2 id="auto-7"><a id="sec:normal"></a>2<span style="margin-left: 1em"></span>Normal operators and the complex
+    plane<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Lemma <span style="font-style: normal">3</span>. </strong><i>[Closed-graph
+        square-root lemma] If \(S\) is closed and densely defined, then \(T =
+        S^{\ast} S\) is positive self-adjoint, \(D (T^{1 / 2}) = D (S)\), and
+        \(\| T^{1 / 2} u \| = \| S u \|\) on this domain.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The graph of \(S\) is closed in \(H \oplus H\),
+      and its orthogonal complement consists of \((- S^{\ast} v, v)\) with \(v
+      \in D (S^{\ast})\). Decompose \((y, 0)\) along these two closed
+      subspaces. The second component gives \(v = - S u\); hence \(u \in D
+      (S^{\ast} S)\) and \((I + S^{\ast} S) u = y\). Thus \(I + T\) is onto.
+      It is injective and its inverse has norm at most one, since \(\langle u,
+      (I + T) u \rangle \geqslant \| u \|^2\). That everywhere-defined inverse
+      is symmetric, hence self-adjoint; its injectivity and dense range imply
+      that \(T\) is self-adjoint.
+    </p>
+    <p style="margin-bottom: 1em">
+      Set \(Q_n = n (n + T)^{- 1}\). The spectral theorem gives \(Q_n
+      \rightarrow I\) strongly and \(Q_n H \subseteq D (T)\). Applying the
+      preceding argument to \(S^{\ast}\) also makes \(SS^{\ast}\) positive
+      self-adjoint. For \(u \in D (S)\) the resolvent equation, applied to \(w
+      = (n + T)^{- 1} u\), gives \(S Q_n u = n (n + SS^{\ast})^{- 1} S u\).
+      The right side tends to \(S u\) by the spectral theorem. On \(D (T)\)
+      the identity is \(\| S v \|^2 = \langle v, T v \rangle = \| T^{1 / 2} v
+      \|^2\). Therefore \(T^{1 / 2} Q_n u\) is Cauchy when \(u \in D (S)\);
+      closedness of \(T^{1 / 2}\) gives \(u \in D (T^{1 / 2})\) and the
+      asserted norm identity. Conversely, if \(u \in D (T^{1 / 2})\), the same
+      bounded functions of \(T\) converge in the graph norm of \(T^{1 / 2}\).
+      The norm identity on \(D (T)\) makes \(S Q_n u\) Cauchy, and closedness
+      of \(S\) gives \(u \in D (S)\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">4</span>. </strong><i>[The normal
+        spectral theorem and bounded transform]<a id="thm:normal"></a> Let \(N\) be
+        densely defined and closed. The following conditions are equivalent:
+        \(N^{\ast} N = NN^{\ast}\), including domains; and \(D (N) = D
+        (N^{\ast})\) with \(\|Nu\| = \|N^{\ast} u\|\) there. Under these
+        conditions there is a unique PVM \(E\) on \(\mathbb{C}\), with \(E
+        (\mathbb{C}) = I\), such that</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle D (N) = \left\{ u : \int_{\mathbb{C}} |z|^2
+          \hspace{0.17em} d \langle u, E
+(z) u \rangle < \infty \right\},
+          \qquad N = \int_{\mathbb{C}} z
+\hspace{0.17em} dE (z) .\)
+        </div></div>
+      </p>
+      <p>
+        <i>Conversely every such PVM defines a normal operator. These objects
+        also correspond to nondegenerate representations of \(C_0
+        (\mathbb{C})\) and to bounded normal contractions \(T\) with \(\ker (I
+        - T^{\ast} T) = \{0\}\). The last correspondence is</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle T = N (I + N^{\ast} N)^{- 1 / 2} .\)
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle D (N) = \text{Ran} (I - T^{\ast} T)^{1 / 2} .\)
+        </div></div>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle N = T (I - T^{\ast} T)^{- 1 / 2} .\)
+        </div></div>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The preceding closed-graph lemma applied to
+      \(N\) gives \(P = (N^{\ast} N)^{1 / 2}\) with \(D (P) = D (N)\) and \(\|
+      P u \| = \| N u \|\) there. Applied to \(N^{\ast}\), it shows that the
+      two conditions in the theorem are equivalent: equal positive operators
+      have the same square-root domains and norms; conversely equality of the
+      two domains and squared norms gives equality of their closed quadratic
+      forms by polarization. An operator \(S^{\ast} S\) is recovered from that
+      form: \(u \in D (S^{\ast} S)\) exactly when \(v \mapsto \langle S u, S v
+      \rangle\) on \(D (S)\) is represented by a vector of \(H\), namely
+      \(S^{\ast} S u\). Thus the positive operators agree.
+    </p>
+    <p>
+      Define \(V (Pu) = Nu\) on \(\text{Ran} P\). This is well-defined and
+      isometric by the norm identity. It extends to an isometry from \((\ker
+      N)^{\perp}\) onto \(\overline{\text{Ran} N} = (\ker N^{\ast})^{\perp}\).
+      Normality gives \(\ker N = \ker N^{\ast}\), so extending this isometry
+      by the identity on \(\ker N\) yields a unitary \(V\) on \(H\). Thus \(N
+      = VP\) on \(D (P)\), and \(N^{\ast} = PV^{\ast}\) with its natural
+      domain. In particular \(NN^{\ast} = VP^2 V^{\ast}\). Normality says
+      \(VP^2 V^{\ast} = P^2\). The uniqueness of the nonnegative self-adjoint
+      square root gives \(VPV^{\ast} = P\). It also follows that \(V\)
+      commutes with the bounded calculus of \(P\): it commutes with its
+      resolvents, hence with the continuous calculus and, by bounded pointwise
+      limits, with its spectral projections.
+    </p>
+    <p>
+      Put \(Q = (I + P^2)^{- 1 / 2}\) and \(T = VPQ\). The positive calculus
+      of \(P\) shows that \(PQ\) is bounded by one, that \(Q\) is injective,
+      and that \(\text{Ran} Q = D (P)\). For the last equality, \(Qv \in D
+      (P)\) because \(t^2 / (1 + t^2) \leq 1\); conversely \(u \in D (P)\) has
+      \(v = (I + P^2)^{1 / 2} u \in H\) and \(Qv = u\). Commutation with \(V\)
+      gives
+    </p>
+    <div class="center">
+      \(\displaystyle T^{\ast} T = TT^{\ast} = P^2  (I + P^2)^{- 1}, \qquad I
+      - T^{\ast} T = Q^2 .\)
+    </div>
+    <p>
+      Consequently \(T\) is a normal contraction and \(\ker (I - T^{\ast} T) =
+      \{0\}\).
+    </p>
+    <p>
+      Let \(F\) be its bounded spectral measure on the closed unit disc. The
+      spectral projection \(F (\{|w| = 1\})\) is the kernel projection of \(I
+      - T^{\ast} T\), hence is zero. The map \(g (w) = w / \sqrt{1 - |w|^2}\)
+      is a homeomorphism from the open disc to \(\mathbb{C}\). Define \(E (B)
+      = F (g^{- 1} (B))\); the discarded boundary has zero projection, so \(E
+      (\mathbb{C}) = I\). Its scalar quadratic measures are finite Radon
+      measures, as all finite Borel measures on these second-countable locally
+      compact spaces are Radon.
+    </p>
+    <p>
+      We record the domain argument for complex spectral integrals. Given any
+      PVM on \(\mathbb{C}\), let \(E_R = E (\{|z| \leq R\})\) and \(N_R = \int
+      z 1_{\{|z| \leq R\}}  \hspace{0.17em} dE\). Orthogonality and the
+      bounded calculus give \(\|N_R u\|^2 = \int_{|z| \leq R} |z|^2
+      \hspace{0.17em} d \mu_u\). Thus \(N_R u\) converges exactly on the
+      asserted domain, which is dense since \(E_R \to I\) strongly. Its limit
+      defines \(N\) there. If \(u_n \to u\) and \(Nu_n \to v\), then \(N_R u =
+      E_R v\) for every \(R\). Hence \(\int_{|z| \leq R} |z|^2
+      \hspace{0.17em} d \mu_u \leq \|v\|^2\); monotone convergence gives \(u
+      \in D (N)\) and \(Nu = v\). This proves closedness.
+    </p>
+    <p>
+      Let \(\bar{N}\) denote the integral of \(\bar{z}\) in this paragraph
+      only. Bounded truncation and convergence give \(\langle Nu, v \rangle =
+      \langle u, \bar{N} v \rangle\) on the common domain, so \(\bar{N}
+      \subset N^{\ast}\). If \(v \in D (N^{\ast})\) and \(N^{\ast} v = w\),
+      testing against \(E_R u\) gives \(\left( \int \bar{z} 1_{|z| \leq R}
+      \hspace{0.17em} dE \right) v = E_R w\). The same norm estimate forces
+      \(v \in D (\bar{N})\), proving equality. The scalar measure of \(Nu\) is
+      \(|z|^2 \mu_u\) (test first on bounded sets and pass to the limit). It
+      follows that
+    </p>
+    <div class="center">
+      \(\displaystyle D (N^{\ast} N) = D (NN^{\ast}) = \left\{ u : \int |z|^4
+      \hspace{0.17em} d
+\mu_u < \infty \right\}, \qquad N^{\ast} N = NN^{\ast}
+      = \int |z|^2
+\hspace{0.17em} dE.\)
+    </div>
+    <p>
+      The fourth-moment condition implies the second-moment condition since
+      \(|z|^2 \leq 1 + |z|^4\). Thus every complex spectral integral is
+      normal.
+    </p>
+    <p>
+      Apply this construction to the pushforward of \(F\). For its resulting
+      operator \(N_0 = g (T)\), write \(S = (I - T^{\ast} T)^{1 / 2}\). The
+      domain condition for \(g (T)\) is equivalent to integrability of \((1 -
+      |w|^2)^{- 1}\), because \(|g (w) |^2 = (1 - |w|^2)^{- 1} - 1\). The
+      bounded spectral calculus therefore gives \(D (N_0) = \text{Ran} S\) and
+      \(N_0 S = T\): one direction follows by applying \(S\) to any vector,
+      and the other by applying the spectral integral of \((1 - |w|^2)^{- 1 /
+      2}\) to a vector in \(D (N_0)\). In the construction from \(N\), \(S =
+      Q\) and \(NQ = T\), so the domains and actions of \(N_0\) and \(N\)
+      coincide.
+    </p>
+    <p style="margin-bottom: 1em">
+      Conversely the same argument starts from any normal contraction with the
+      stated kernel condition and constructs \(N\). The identity \((I + |g (w)
+      |^2)^{- 1 / 2} = \sqrt{1 - |w|^2}\) proves that its bounded transform is
+      precisely \(T\). If another PVM represented the same \(N\), the already
+      proved product formula would make its integral of \(z / \sqrt{1 +
+      |z|^2}\) the same \(T\). Uniqueness of the bounded normal spectral
+      measure and injectivity of this scalar map force the two PVMs to agree.
+      Finally the representation&ndash;PVM theorem in <a href="self-adjoint-operators-proofs.html#thm:pvm">the Part I
+      companion</a>, whose proof applies to any second-countable locally
+      compact space, identifies these measures with the nondegenerate
+      representations of \(C_0 (\mathbb{C})\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">5</span>. </strong><i>[Real and
+        imaginary parts and two-parameter evolution]<a id="prop:normal-pair"></a> For the
+        preceding \(N\), the spectral integrals \(A = \int \text{Re} z
+        \hspace{0.17em} dE\) and \(B = \int \text{Im} z \hspace{0.17em} dE\)
+        are strongly commuting self-adjoint operators, \(D (N) = D (A) \cap D
+        (B)\), and \(N = A + iB\) on that domain. Moreover \(D (N)\) is a core
+        for both \(A\) and \(B\); consequently the closures of \((N +
+        N^{\ast}) / 2\) and \((N - N^{\ast}) / (2 i)\) are \(A\) and \(B\).
+        Conversely every strongly commuting self-adjoint pair arises this way.
+        The corresponding strongly continuous unitary representation is</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle U (s, t) = \int e^{i (s \text{Re} z + t \text{Im}
+          z)}  \hspace{0.17em} dE (z)
+= e^{isA} e^{itB} .\)
+        </div></div>
+      </p>
+      <p>
+        <i>Every strongly continuous unitary representation of
+        \(\mathbb{R}^2\) is obtained uniquely in this manner.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The real spectral-integral theorem makes \(A,
+      B\) self-adjoint. Their projections are \(E (\{z : \text{Re} z \in
+      C\})\) and \(E (\{z : \text{Im} z \in D\})\), so they commute. The
+      domain identity follows from \(|z|^2 = (\text{Re} z)^2 + (\text{Im}
+      z)^2\); truncation then gives the asserted sum. If \(u \in D (A)\), put
+      \(u_R = E_R u\). These vectors belong to \(D (N)\), converge to \(u\),
+      and \(Au_R \to Au\) by dominated convergence of the squared real
+      coordinate. This proves the core assertion for \(A\); the proof for
+      \(B\) uses the imaginary coordinate.
+    </p>
+    <p>
+      Conversely, Theorem&nbsp;<a href="#thm:joint">1</a> constructs the joint PVM of any
+      strongly commuting self-adjoint pair \(A, B\). Push this measure forward
+      by \((x, y) \mapsto x + iy\) and apply Theorem&nbsp;<a href="#thm:normal">4</a>. Its
+      coordinate integrals and their domains agree with \(A, B\); the identity
+      \(| x + iy |^2 = x^2 + y^2\) proves that the normal integral is \(A +
+      iB\) on precisely their domain intersection.
+    </p>
+    <p style="margin-bottom: 1em">
+      The assertion about unitary representations is the case \(d = 2\) of the
+      result proved in Section&nbsp;<a href="#sec:joint">1</a>. Under the same
+      identification of the plane, its characters are \(e^{i (s \Re z + t \Im
+      z)}\). Thus the joint Fourier integral gives the displayed formula, and
+      the converse and uniqueness follow from the coordinate-axis Stone
+      generators, as proved there.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      On \(L^2 (\mathbb{C}, d^2 z)\) multiplication by \(z\) has the PVM of
+      multiplication by set indicators, so it is normal. For any \(z_0\) and
+      \(r > 0\), the normalized indicator of the disc \(|z - z_0 | < r\)
+      belongs to its domain and satisfies \(\|(N - z_0) u_r \| \leq r\). A
+      bounded inverse would imply \(1 \leq \|(N - z_0)^{- 1} \| r\),
+      impossible as \(r \downarrow 0\). Hence its spectrum is all of
+      \(\mathbb{C}\). For \(t \ne 0\) the multiplier \(e^{itz}\) has modulus
+      \(e^{- t \text{Im} z}\) and is unbounded; unit vectors supported in
+      discs tending in the appropriate imaginary direction show this directly.
+      These examples justify the two limitations on resolvents and
+      one-parameter exponentials stated in Section 2 of the post.
+    </p>
+    <h2 id="auto-8"><a id="sec:manifolds"></a>3<span style="margin-left: 1em"></span>Manifold-valued observables and
+    other outcome spaces<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">6</span>. </strong><i>[Changing the
+        outcome space]<a id="prop:manifold-pvm"></a> Let \(M\) be a second-countable Hausdorff
+        manifold. Normalized PVMs on \(M\) correspond bijectively to
+        nondegenerate representations of \(C_0 (M)\). For such a PVM, every
+        real-valued Borel function \(h\) defines a self-adjoint spectral
+        integral with domain \(\{u : \int |h|^2  \hspace{0.17em} d \mu_u <
+        \infty\}\). A Borel map \(F : M \to L\), where \(L\) is another such
+        manifold, gives a PVM \(E_F (B) = E (F^{- 1} (B))\) and the
+        substitution rule \(g (E_F) = (g \circ F) (E)\), including equality of
+        the maximal domains for unbounded real Borel \(g\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>A second-countable manifold is locally compact
+      and admits an increasing sequence of compactly supported continuous
+      cutoffs tending to one. Continuous functions separate points and
+      generate its Borel sigma-algebra. These are precisely the ingredients
+      used in the representation&ndash;PVM proof in <a href="self-adjoint-operators-proofs.html#thm:pvm">the Part I
+      companion</a>: Riesz&ndash;Markov produces finite regular scalar
+      measures, polarization produces the operator measures, multiplication
+      follows by the functional monotone-class theorem, and nondegeneracy
+      gives total mass \(I\). This proves the first assertion with the same
+      construction and uniqueness, without a coordinate choice.
+    </p>
+    <p>
+      Inverse images preserve complements and disjoint countable unions, so
+      \(E_F\) is a normalized PVM. The substitution formula holds for
+      indicator functions, then simple functions, and then bounded Borel
+      functions by uniform simple approximation. For unbounded real \(g\), the
+      scalar pushforward identity gives \(\int |g|^2  \hspace{0.17em} d
+      \mu^F_u = \int |g \circ F|^2  \hspace{0.17em} d
+\mu_u\), so the domains
+      coincide. Apply the bounded identity to \(g 1_{|g| \leq n}\) and pass to
+      the defining spectral-integral limit. Taking \(L =\mathbb{R}\) and \(F =
+      h\) gives the self-adjoint assertion.
+    </p>
+    <p style="margin-bottom: 1em">
+      If \(F\) is continuous, \(g \circ F\) is bounded continuous for \(g \in
+      C_0 (L)\), but need not vanish at infinity. Its integral is already
+      available in the bounded Borel extension. For example the constant map
+      from a noncompact \(M\) pulls a function nonzero at its image point back
+      to a nonzero constant. If \(F\) is proper, the sets \(\{|g \circ F| \geq
+      \varepsilon\}\) are compact, proving that the pullback then lies in
+      \(C_0 (M)\). Thus no properness hypothesis is silently needed for the
+      substitution rule.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">7</span>. </strong><i>[Coordinates
+        on the circle, sphere and an embedded manifold]<a id="prop:manifold-coordinates"></a> A PVM on
+        \(S^1\) is equivalently a unitary operator. A PVM on \(S^2\) is
+        equivalently a commuting triple of bounded self-adjoint operators
+        \(X_1, X_2, X_3\) with \(\sum_a X_a^2 = I\). Given a proper embedding
+        \(\iota : M \to \mathbb{R}^k\), a PVM on \(M\) is equivalently a
+        strongly commuting self-adjoint \(k\)-tuple whose joint PVM is
+        concentrated on \(\iota (M)\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>On the circle, integration of \(z\) gives a
+      unitary since \(\bar{z} z = 1\); the bounded spectral theorem recovers
+      its PVM, and density of polynomials in \(z, \bar{z}\) gives uniqueness.
+      On the sphere the three coordinate integrals commute, are bounded and
+      self-adjoint, and satisfy the stated relation. Conversely, a commuting
+      triple of bounded self-adjoint operators is strongly commuting.
+      Theorem&nbsp;<a href="#thm:joint">1</a> gives its joint PVM \(E\). Its coordinate
+      marginals are supported in bounded intervals, so \(E\) is concentrated
+      in a bounded box. Let \(p (x) = x_1^2 + x_2^2 + x_3^2 - 1\). The assumed
+      relation and multiplication in the bounded calculus on that box give \(p
+      (E) = 0\). Thus \(\int | p (x) |^2 d \mu_u (x) = \| p (E) u \|^2 = 0\)
+      for every \(u\). Positivity gives zero scalar mass to \(| p | \geqslant
+      1 / n\) for every positive integer \(n\), hence to the complement of the
+      sphere. Polarization gives the same assertion for \(E\). Restrict this
+      measure to \(S^2\). Its coordinate integrals are exactly the given
+      operators. Coordinate polynomials separate points on \(S^2\) and are
+      closed under conjugation, so Stone&ndash;Weierstrass and scalar measure
+      uniqueness prove uniqueness.
+    </p>
+    <p style="margin-bottom: 1em">
+      For the last assertion, push the PVM forward by \(\iota\) and integrate
+      the real coordinate functions. Their spectral projections commute
+      because they all belong to the same PVM. Conversely a finite strongly
+      commuting tuple has the joint PVM constructed in Theorem&nbsp;<a href="#thm:joint">1</a>.
+      The embedding is a homeomorphism onto its image, which is closed by
+      properness. A joint PVM concentrated there can therefore be transported
+      back by \(\iota^{- 1}\). This reverses both constructions.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-9"><a id="sec:structured"></a>Other outcome spaces and joint observables<span style="margin-left: 1em"></span></h3>
+    <p>
+      The representation&ndash;PVM theorem applies without change to every
+      second-countable locally compact Hausdorff space: the proof uses
+      Riesz&ndash;Markov, a compact exhaustion and continuous functions
+      generating the Borel sets, not smooth coordinates. The multiplication
+      model on \(L^2 (M, \nu)\) is immediate: multiplication by \(1_B\) gives
+      its projections, and \(\langle u, E (B) u \rangle = \int_B |u|^2 d
+      \nu\). For a Hermitian vector bundle use the fibre inner product in the
+      same formula; multiplication by a scalar function still has norm at most
+      its supremum norm.
+    </p>
+    <p>
+      For a countable discrete space, \(P_x = E (\{x\})\) are orthogonal and
+      sum strongly to \(I\). Conversely such a family defines \(E (B) =
+      \sum_{x \in B} P_x\): orthogonality gives norm convergence on each
+      vector since \(\sum_x \|P_x u\|^2 = \|u\|^2\). The same identity proves
+      strong convergence of \(\sum_x f (x) P_x\) for bounded \(f\),
+      multiplicativity, and the asserted bounded calculus. On an arbitrary
+      measurable outcome space, a normalized PVM gives a unital bounded Borel
+      calculus by simple approximation. Conversely a unital homomorphism with
+      bounded pointwise weak continuity gives \(E (B) = j (1_B)\);
+      orthogonality and continuity of indicators of increasing unions give a
+      PVM, as in <a href="self-adjoint-operators-proofs.html#sec:bounded">the Part I construction</a>.
+    </p>
+    <p>
+      Here is the local-compactness point for an infinite-dimensional Hilbert
+      space \(X\). If a continuous function \(f\) vanishing at infinity were
+      nonzero at \(x\), the compact set \(\{|f| \geq |f (x) | / 2\}\) would
+      contain an open neighbourhood of \(x\). It would therefore contain a
+      closed ball of positive radius, which would be compact. But if \((e_n)\)
+      is an orthonormal sequence, the points \(x + re_n\) of such a ball have
+      mutual distance \(r \sqrt{2}\), so admit no convergent subsequence. This
+      contradiction proves \(C_0 (X) = 0\). No analogous argument prevents
+      normalized PVMs on its Borel sets.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">8</span>. </strong><i>[Joint sharp
+        observables and operations on outcomes]<a id="prop:joint-outcomes"></a> Let \(E_1, E_2\) be
+        normalized PVMs on second-countable locally compact Hausdorff spaces
+        \(X, Y\), acting on the same Hilbert space. They are marginals of a
+        joint PVM on \(X \times Y\) if and only if \(E_1 (B) E_2 (C) = E_2 (C)
+        E_1 (B)\) for all Borel sets \(B, C\). The joint PVM is unique and
+        satisfies \(E (B \times C) = E_1 (B) E_2 (C)\). A Borel map from \(X
+        \times Y\) to another such space can then be applied by pushforward.
+        This includes group multiplication when \(X = Y = G\) is a
+        second-countable locally compact group.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>For a joint PVM, multiply the projections of the
+      cylinder sets \(B \times Y\) and \(X \times C\). Their intersection is
+      \(B \times C\), which proves necessity and the rectangle formula. Scalar
+      measure uniqueness on the sigma-algebra generated by rectangles proves
+      uniqueness.
+    </p>
+    <p>
+      For sufficiency the two bounded calculi commute, first for simple
+      functions and then by strong limits. Let \(\mathcal{A}\) be the
+      commutative unital \(C^{\ast}\)-algebra generated by \(I\) and their
+      \(C_0\) calculi in \(B (H)\). It is \(C (K)\) for its compact character
+      space \(K\), with a spectral measure \(P\) on \(K\). A character
+      restricted to either \(C_0\) calculus is either zero or evaluation at a
+      point of the corresponding outcome space: this follows from the locally
+      compact Gelfand theorem, even if that calculus is not faithful. Write
+      the zero restriction as the extra point \(\infty\) of \(X^+\) or
+      \(Y^+\); for a compact space use an extra isolated point. The resulting
+      maps \(a : K \to X^+\) and \(b : K \to Y^+\) are continuous, since all
+      their pulled-back continuous functions are Gelfand transforms of the
+      generating elements.
+    </p>
+    <p style="margin-bottom: 1em">
+      Push \(P\) forward under \((a, b)\). Its marginal on \(X^+\) integrates
+      every \(f \in C_0 (X)\) to the first calculus. If \(\chi_n \uparrow 1\)
+      are continuous compactly supported cutoffs on \(X\), nondegeneracy and
+      bounded convergence give \(P (a^{- 1} (X)) = \lim_n j_1 (\chi_n) = I\)
+      strongly. Thus the marginal has zero mass at \(\infty\); similarly for
+      \(Y\). The measure is concentrated on \(X \times Y\) and has the
+      required marginals by uniqueness of the scalar representing measures.
+      This constructs the joint PVM. The already proved substitution rule
+      gives the pushforward statement, with no properness assumption on the
+      Borel map.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-10"><a id="sec:probability"></a>4<span style="margin-left: 1em"></span>Observables, normal states and
+    probability laws<span style="margin-left: 1em"></span></h2>
+    <p>
+      This section supplies the operator-algebra argument for Section 4 of <a
+      href="self-adjoint-operators-extensions.html#sec:probability">Part II</a>. Here the von Neumann algebra contains the bounded
+      tests of each observable, while the normal state turns its spectral
+      projections into probabilities.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">9</span>. </strong><i>[Affiliated
+        self-adjoint observables and laws]<a id="prop:affiliated"></a> For \(A = A^{\ast}\) and
+        a von Neumann algebra \(\mathcal{M} \subset B (H)\), the following are
+        equivalent: \(A\) commutes, with domain invariance, with all unitaries
+        of \(\mathcal{M}'\); its spectral projections lie in \(\mathcal{M}\);
+        its bounded Borel calculus lies in \(\mathcal{M}\); its resolvents lie
+        in \(\mathcal{M}\). In a normal state \(\omega\), \(\omega (E_A
+        (\cdot))\) is a probability measure and \(\omega (f (A)) = \int f
+        \hspace{0.17em} d \mu\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>Domain commutation passes to bounded inverses
+      \(R_A (z)\), and the bicommutant theorem places these inverses in
+      \(\mathcal{M}\). Resolvent generation and strong closure place the
+      \(C_0\) calculus and then the Borel calculus in \(\mathcal{M}\).
+      Conversely spectral projections in \(\mathcal{M}\) commute with
+      \(\mathcal{M}'\); their truncations show that commuting unitaries
+      preserve the spectral domain and commute with \(A\). The projections and
+      bounded calculus implications are immediate from integration. Normality
+      of the state applied to increasing sums of disjoint projections gives
+      countable additivity and total mass one. The integral identity holds
+      first for simple functions and then by bounded convergence. For a single
+      observable the law is classical; a joint projection-valued measure for
+      two observables would make their marginal projections commute.
+      Noncommuting marginal projections therefore preclude such a joint
+      measure.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-11">Ordered tests are not determined by marginal laws<span style="margin-left: 1em"></span></h3>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">10</span>. </strong><i>[A matrix
+        example of ordered expectations]<a id="prop:ordered-tests"></a> Let</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle A = \sigma_1 = \left( \begin{array}{cc}
+  0 &amp; 1\\
+
+          1 &amp; 0
+\end{array} \right), \qquad B = \sigma_2 = \left(
+          \begin{array}{cc}
+  0 &amp; - i\\
+  i &amp; 0
+\end{array} \right), \qquad u
+          = \binom{1}{0} .\)
+        </div></div>
+      </p>
+      <p>
+        <i>In the state \(\omega (T) = \langle u, T u \rangle\), both spectral
+        laws equal \((\delta_{- 1} + \delta_1) / 2\), whereas \(\omega (AB) =
+        i\) and \(\omega (BA) = - i\). The pair \((A, - B)\) has the same two
+        marginal laws and a different mixed expectation.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Direct multiplication gives \(A^2 = B^2 = I\)
+      and \(A = A^{\ast}, B = B^{\ast}\). Thus their spectral projections for
+      the values \(\pm 1\) are \((I \pm A) / 2\) and \((I \pm B) / 2\). The
+      diagonal matrix entries \(\langle u, A u \rangle\) and \(\langle u, B u
+      \rangle\) are zero, so each projection has probability one half. Also
+      \(AB = i \text{diag} (1, - 1)\) and \(BA = - i \text{diag} (1, - 1)\),
+      giving the asserted expectations. Negating \(B\) interchanges its two
+      equally weighted spectral projections and changes the sign of \(AB\).
+      This proves that the marginal laws do not determine the ordered
+      expectation.
+    </p>
+    <p style="margin-bottom: 1em">
+      For any state, positivity implies \(\omega (T^{\ast}) = \overline{\omega
+      (T)}\). For completeness, the expectation of a bounded self-adjoint
+      operator is real, since after adding a sufficiently large multiple of
+      \(I\) it becomes positive. Decompose an arbitrary \(T\) into its real
+      and imaginary self-adjoint parts to obtain the identity. Thus for real
+      bounded tests \(f, g\), the expectations of \(j_1 (f) j_2 (g)\) and
+      \(j_2 (g) j_1 (f)\) are complex conjugates. All finite ordered words are
+      well-defined bounded operators, since \(\| j_{k_1} (f_1) \cdots j_{k_m}
+      (f_m) \| \leqslant \prod_{r = 1}^m \| f_r
+\|_{\infty}\). Their state
+      expectations constitute the joint bounded-test distribution.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h3 id="auto-12">Continuous-test laws and spectral-event probabilities<span style="margin-left: 1em"></span></h3>
+    <p>
+      Let \(j : C_0 (\mathbb{R}) \rightarrow \mathcal{M}\) be a nondegenerate
+      representation and \(\omega\) any state. The positive functional \(\ell
+      = \omega \circ j\) has norm at most one. Riesz&ndash;Markov gives a
+      finite positive measure \(\mu\) with \(\mu (\mathbb{R}) = \| \ell \|\).
+      For increasing compactly supported cutoffs \(\chi_n \uparrow 1\),
+      monotone convergence of this measure gives
+    </p>
+    <div class="center">
+      \(\displaystyle \mu (\mathbb{R}) = \lim_n \omega (j (\chi_n)) .\)
+    </div>
+    <p>
+      Hence full mass is exactly the cutoff condition stated in the post. If
+      the state is normal, \(j (\chi_n) \uparrow I\) strongly and normality
+      makes the limit one. The preceding proposition then identifies this
+      measure with \(B \mapsto \omega (E (B))\). The following example shows
+      why full mass alone does not give that identification.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">11</span>. </strong><i>[Full mass
+        does not imply spectral normality]<a id="prop:nonnormal-law"></a> On \(H = L^2 (0, 1)\)
+        let \(A\) multiply by \(t\). There is a state \(\omega\) on \(B (H)\)
+        such that \(\omega (f (A)) = f (0)\) for every bounded continuous
+        real-line test \(f\), although \(\omega (E_A (\{ 0 \})) = 0\). Its
+        restriction to \(C_0 (\mathbb{R})\) has norm one and Riesz law
+        \(\delta_0\), but the state is not normal.</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>Put \(u_n = \sqrt{n} 1_{(0, 1 / n)}\). These are
+      unit vectors. Fix a free ultrafilter \(\mathcal{U}\) on the positive
+      integers, and define
+    </p>
+    <div class="center">
+      \(\displaystyle \omega (T) = \lim_{n \rightarrow \mathcal{U}}  \langle
+      u_n, T u_n \rangle .\)
+    </div>
+    <p>
+      Each bounded complex sequence has a unique ultrafilter limit in a
+      compact disc; such limits preserve addition, scalar multiplication and
+      nonnegativity, as follows by intersecting the sets on which each
+      sequence lies near its limit. Thus \(\omega\) is linear and positive,
+      \(\omega (I) = 1\), and \(| \omega (T) | \leqslant \| T \|\). It is a
+      state. If \(f\) is bounded and continuous, then
+    </p>
+    <div class="center">
+      \(\displaystyle \langle u_n, f (A) u_n \rangle = n \int_0^{1 / n} f (t)
+      \mathrm{d} t
+\rightarrow f (0) .\)
+    </div>
+    <p>
+      Indeed the difference is bounded by \(\sup_{0 \leqslant t \leqslant 1 /
+      n} | f (t) - f (0) |\). The ultrafilter limit agrees with the ordinary
+      limit. A continuous compactly supported cutoff equal to one on \([0,
+      1]\) satisfies \(f (A) = I\); thus the restriction has norm one.
+      Uniqueness in Riesz&ndash;Markov identifies its law as \(\delta_0\).
+    </p>
+    <p style="margin-bottom: 1em">
+      The spectral projections of \(A\) multiply by indicators of Borel
+      subsets of \((0, 1)\), so \(E_A (\{ 0 \}) = 0\). To see failure of
+      normality directly, let \(P_k = E_A ((0, 1 / k))\). These projections
+      decrease strongly to zero by dominated convergence, but \(\omega (P_k) =
+      1\) for every \(k\), since \(P_k u_n = u_n\) whenever \(n \geqslant k\).
+      Equivalently \(I - P_k \uparrow I\) while all their expectations are
+      zero. This contradicts normality.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-13"><a id="sec:geometry"></a>5<span style="margin-left: 1em"></span>The geometric commutator and the
+    distance formula<span style="margin-left: 1em"></span></h2>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">12</span>. </strong><i>[Compact
+        resolvent and vanishing-at-infinity functions] For self-adjoint \(D\),
+        compactness of one nonreal resolvent is equivalent to compactness of
+        every \(f (D)\), \(f \in C_0 (\mathbb{R})\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>One compact resolvent and its adjoint generate
+      only compact operators under sums, products and norm limits without a
+      constant term. Resolvent density therefore gives all \(C_0\)
+      multipliers. The converse follows by choosing \(f (x) = (x - i)^{-
+      1}\).<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Theorem <span style="font-style: normal">13</span>. </strong><i>[The commutative
+        spectral distance] On a compact connected Riemannian spin manifold
+        without boundary, let \(D\) be its Dirac operator on square-integrable
+        spinors. For real smooth \(f\), \([D, f]\) is bounded with norm \(\sup
+        |df|\), and</i>
+      </p>
+      <p>
+        <div class="block-italic"><div class="center">
+          \(\displaystyle d (p, q) = \sup \{|f (p) - f (q) | : f \in
+          C^{\infty} (M, \mathbb{R}), \|[D,
+f]\| \le 1\} .\)
+        </div></div>
+      </p>
+    </div>
+    <p style="margin-top: 1em">
+      <strong>Proof. </strong>The geometric input is the local expression \(D
+      = - i \sum_j c (e^j) \nabla_{e_j}\) for an orthonormal coframe, with
+      Clifford multiplication satisfying \(c (\xi)^{\ast} c (\xi) = | \xi |^2
+      I\) for real covectors (the factor \(i\) moves with conventions). The
+      Leibniz rule gives \([D, f] = - ic (df)\). Its pointwise operator norm
+      is \(|df|\); the norm of this multiplication operator on \(L^2\) is its
+      essential supremum, equal to its supremum by continuity. Multiplication
+      by smooth \(f\) preserves the \(H^1\) domain.
+    </p>
+    <p>
+      For clarity, that is indeed the self-adjoint domain. Integration by
+      parts on a boundaryless manifold makes \(D\) symmetric. The elliptic
+      energy estimate \(\|u\|_{H^1} \le C (\|Du\|_2 +\|u\|_2)\) follows by
+      integrating the identity \(D^2 = \nabla^{\ast} \nabla + \text{Scal} /
+      4\) and using bounded curvature on the compact manifold. If \(u \in D
+      (D^{\ast})\), then distributionally \(Du \in L^2\). Local smoothing and
+      a partition of unity give smooth \(u_{\varepsilon} \to u\) with
+      \(Du_{\varepsilon}\) bounded in \(L^2\): the commutator of a
+      smooth-coefficient first-order operator with convolution is uniformly
+      \(L^2\) bounded, as its kernel contains \((a (x) - a (y)) \partial
+      \eta_{\varepsilon}  (x - y)\) and bounded coefficient-derivative terms,
+      whose integral bounds are uniform by \(|a (x) - a (y) | \le C |x - y|\).
+      The energy estimate bounds \(u_{\varepsilon}\) in \(H^1\); weak
+      compactness gives \(u \in H^1\). Conversely every \(H^1\) spinor is in
+      the adjoint domain by smooth approximation. Thus \(D = D^{\ast}\) on
+      \(H^1\). The compact embedding \(H^1 \hookrightarrow L^2\) makes its
+      resolvent compact.
+    </p>
+    <p>
+      If \(\sup |df| \le 1\), integration along any piecewise smooth path from
+      \(p\) to \(q\) gives \(|f (p) - f (q) | \le\) its length. Infimizing
+      proves one inequality. For the reverse, let \(g (x) = d (x, q)\), a
+      one-Lipschitz function. We detail the smoothing step. Cover \(M\) by
+      finitely many sufficiently small coordinate balls on which metric norms
+      differ from fixed Euclidean norms by a factor at most \(1 + \eta\), and
+      choose a subordinate smooth partition \(\chi_j\). Mollify \(g\) on
+      slightly larger balls, obtaining \(g_j\) uniformly within \(\delta\) of
+      \(g\) and with \(|dg_j | \le (1 + \eta)^2\). For \(g_{\delta} = \sum
+      \chi_j g_j\),
+    </p>
+    <div class="center">
+      \(\displaystyle dg_{\delta} = \sum \chi_j dg_j + \sum (g_j - g) d
+      \chi_j,\)
+    </div>
+    <p style="margin-bottom: 1em">
+      because \(\sum d \chi_j = 0\). Thus \(|dg_{\delta} | \le (1 + \eta)^2 +
+      \delta \sum \|d \chi_j \|_{\infty}\). Choose first \(\eta\), then
+      \(\delta\), to make this at most \(1 + \varepsilon\), while
+      \(\|g_{\delta} - g\|_{\infty} \to 0\). The admissible functions
+      \(g_{\delta} / (1 + \varepsilon)\) have differences tending to \(d (p,
+      q)\), proving equality. This proof also identifies the geometric
+      information absent from the calculus of \(D\) alone: its commutators use
+      the separately specified multiplication algebra.<span style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <h2 id="auto-14"><a id="sec:quantization"></a>6<span style="margin-left: 1em"></span>Sharp observables and Poisson
+    brackets<span style="margin-left: 1em"></span></h2>
+    <p>
+      This section justifies the obstruction in the final section of the post.
+      Let \(\mathcal{A} \subseteq C_0 (M)\) be a complex algebra of smooth
+      tests, stable under conjugation and the Poisson bracket. For \(\hbar >
+      0\) tending to zero, consider linear maps \(Q_{\hbar} : \mathcal{A}
+      \rightarrow B (H_{\hbar})\) that respect adjoints. The operator norms of
+      the multiplication and Dirac defects in the post are well-defined, even
+      if the Hilbert spaces vary. The norm correspondence \(\| Q_{\hbar} (f)
+      \| \rightarrow \| f \|_{\infty}\) prevents the classical limit from
+      losing a nonzero test. These conditions describe requirements on a
+      proposed family, not an assertion that one exists on every symplectic
+      manifold.
+    </p>
+    <div class="notes-theorem">
+      <p>
+        <strong>Proposition <span style="font-style: normal">14</span>. </strong><i>[An exact
+        sharp calculus cannot quantize a nonzero bracket] Suppose all the
+        \(Q_{\hbar}\) are \(\ast\)-homomorphisms, and assume both norm
+        correspondence for every test and the Dirac condition for every pair.
+        Then \(\{ f, g \} = 0\) for all \(f, g \in \mathcal{A}\).</i>
+      </p>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Proof. </strong>Pointwise products in \(\mathcal{A}\) commute,
+      so \([Q_{\hbar} (f), Q_{\hbar} (g)] = Q_{\hbar} (fg - gf) = 0\). The
+      Dirac condition therefore says \(\| Q_{\hbar} (\{ f, g \}) \|
+      \rightarrow 0\). Since \(\{ f, g \} \in \mathcal{A}\), norm
+      correspondence gives the same limit as \(\| \{ f, g \} \|_{\infty}\).
+      Hence the bracket is zero. In fact this proof requires only that the
+      image of each \(Q_{\hbar}\) commute, not its full multiplicativity.<span
+      style="margin-left: 1em"></span>\(\Box\)
+    </p>
+    <p>
+      The obstruction applies to the full compactly supported smooth test
+      algebra on a positive-dimensional symplectic manifold. In a Darboux
+      chart centred at \(p\), choose canonical coordinates \(q_1, p_1\) with
+      \(\{ q_1, p_1 \} = 1\). Multiply each by a smooth cutoff compactly
+      supported in the chart and equal to one near \(p\), then extend them by
+      zero. The resulting \(f, g \in C_c^{\infty} (M)\) have \(\{ f, g \} (p)
+      = 1\), because the cutoff derivatives vanish there. Thus their bracket
+      is nonzero, and the proposition rules out a family of sharp calculi with
+      those classical-limit properties.
+    </p>
+    <p>
+      Positivity of a quantization map is a different condition: it says
+      \(Q_{\hbar} (f) \geqslant 0\) for nonnegative tests, and does not force
+      commuting images. Actual constructions, and the continuous-field
+      structure used in strict quantization, require further work; see the
+      Landsman references below. No additional existence theorem is used here.
+    </p>
+    <h2 id="auto-15"><a id="sec:references"></a>7<span style="margin-left: 1em"></span>References and further
+    reading<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          M. Reed and B. Simon, <i>Methods of Modern Mathematical Physics, I:
+          Functional Analysis</i>, revised edition, Academic Press, 1980; and
+          <i>II: Fourier Analysis, Self-Adjointness</i>, 1975. Volume I
+          develops spectral theory and convergence; Volume II, Theorems
+          X.37&ndash;X.38, treats Nelson and Faris&ndash;Lavine. <a href="https://www.sciencedirect.com/book/9780125850018/methods-of-modern-mathematical-physics">Volume
+          I</a>; <a href="https://scholars.duke.edu/publication/1163833">Volume II bibliographic record</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          G. Teschl, <i>Mathematical Methods in Quantum Mechanics</i>, second
+          edition, AMS, 2014. A complementary textbook treatment of domains,
+          spectral measures, extensions and perturbations; Section 4.2
+          develops the commutation criteria used above. <a href="https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/">Author's text
+          and book page</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          E. Nelson, <em>Analytic vectors</em>, Annals of Mathematics (2)
+          <b>70</b> (1959), 572&ndash;615. <a href="https://doi.org/10.2307/1970331">doi:10.2307/1970331</a>.
+          Analytic vectors, integration of infinitesimal representations and
+          the distinction between algebraic and strong commutation.
+        </p>
+      </li>
+      <li>
+        <p>
+          J. van Neerven, <em>Functional Analysis</em>, Cambridge University
+          Press, 2022. Chapters 9&ndash;10 treat bounded and unbounded normal
+          operators; Chapter 15 connects states and observables. <a href="https://doi.org/10.1017/9781009232487.012">Chapter
+          10</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          G. W. Mackey, <em>Imprimitivity for Representations of Locally
+          Compact Groups I</em>, Proceedings of the National Academy of
+          Sciences <b>35</b> (1949), 537&ndash;545. <a href="https://doi.org/10.1073/pnas.35.9.537">doi:10.1073/pnas.35.9.537</a>.
+          Covariant spectral measures on homogeneous outcome spaces and their
+          relation to induced representations.
+        </p>
+      </li>
+      <li>
+        <p>
+          N. P. Landsman, <em>Strict quantization of coadjoint orbits</em>
+          (1998), <a href="https://arxiv.org/abs/math-ph/9807027">arXiv:math-ph/9807027</a>. Positive quantization
+          maps for integral coadjoint orbits of compact connected Lie groups.
+          See also <em>Foundations of Quantum Theory: From Classical Concepts
+          to Operator Algebras</em>, Springer, 2017, <a href="https://doi.org/10.1007/978-3-319-51777-3">open-access
+          book</a>, for the relation between classical structures, states and
+          quantum operator algebras.
+        </p>
+      </li>
+      <li>
+        <p>
+          A. Connes, <i>Noncommutative Geometry</i>, Academic Press, 1994, <a
+          href="https://alainconnes.org/wp-content/uploads/book94bigpdf.pdf">author's book</a>; and &ldquo;Noncommutative geometry and
+          reality&rdquo;, <i>Journal of Mathematical Physics</i> 36 (1995),
+          6194&ndash;6231, <a href="https://alainconnes.org/wp-content/uploads/reality.pdf">author's text</a>. For the
+          algebra&ndash;space correspondence and the role of the Dirac
+          commutator in metric geometry.
+        </p>
+      </li>
+      <li>
+        <p>
+          I. E. Segal, <em>Postulates for General Quantum Mechanics</em>,
+          Annals of Mathematics (2) <b>48</b> (1947), 930&ndash;948. <a href="https://www.jstor.org/stable/1969387">Original
+          paper</a>. An early algebraic formulation of quantum mechanics.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Return to <a href="self-adjoint-operators-extensions.html">Observables II: Beyond the real line</a>.
+    </p>
+    <p>
+      <b>Earlier proof companions.</b> <a href="self-adjoint-operators-proofs.html">I. The basic idea</a>.
+    </p>
+  </body>
+</html>
