@@ -1543,11 +1543,13 @@
   </proof>
 
   <\remark>
-    <dueto|Where convexity enters><label|rem:force-convexity>Step<nbsp>1 uses
-    only <math|\<mathD\><rsup|2>V<rsub|t>\<leqslant\>S<rsub|t><rsup|-1>>,
-    which holds for every interaction. Convexity of <math|\<Gamma\><rsub|t>>
-    enters only in Step<nbsp>2, to compare <math|\<Phi\><rsub|t>> with the
-    free field. It is equivalent to <math|<math-up|Cov><rsub|t>\<leqslant\>S<rsub|t>>
+    <dueto|Where convexity enters><label|rem:force-convexity>That convexity
+    of <math|\<Gamma\><rsub|t>> makes the force sub-Gaussian was remarked by
+    Marcello Porta during the lectures. Step<nbsp>1 uses only
+    <math|\<mathD\><rsup|2>V<rsub|t>\<leqslant\>S<rsub|t><rsup|-1>>, which
+    holds for every interaction. Convexity of <math|\<Gamma\><rsub|t>> enters
+    only in Step<nbsp>2, to compare <math|\<Phi\><rsub|t>> with the free
+    field. It is equivalent to <math|<math-up|Cov><rsub|t>\<leqslant\>S<rsub|t>>
     (Section<nbsp><hlink|8.5|cqft_lecture_4.tm#sec:generator>): it holds at
     every <math|t> when <math|V<rsub|T>> is convex, but for a double well,
     and for the Wick-ordered <math|\<Phi\><rsup|4>> interaction, it can fail
