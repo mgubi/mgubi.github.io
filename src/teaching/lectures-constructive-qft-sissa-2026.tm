@@ -18,8 +18,8 @@
   Oxford).
 
   <with|font-series|bold|Joint work.> The results presented in Lectures
-  4--7 are joint work with Sarah-Jean Meyer, obtained recently with the use
-  of AI; those of Lectures 6--7 are new.
+  6--7 are joint work with Sarah-Jean Meyer, obtained recently with the use
+  of AI.
 
   <with|font-series|bold|Acknowledgements.> M. Gubinelli is partly
   supported by UK Research and Innovation via the grant ``StochFields''
@@ -108,7 +108,7 @@
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_slides_6.tm>].
     Revised 9 November 2026.
 
-    <item><with|font-series|bold|Lecture 7> (9 November 2026): A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula (Sections 16--18 not delivered in class).
+    <item><with|font-series|bold|Lecture 7> (9 November 2026): A priori estimates, UV stability and the limiting FBSDE: an explicit density for the measure and a renormalised variational formula.
     Notes: [<notes-store|PDF|sissa/2026/cqft_lecture_7.pdf>]
     [<notes-link|HTML|sissa-2026/cqft_lecture_7.tm>]
     [<notes-store|TeXmacs|sissa/2026/texmacs/cqft_lecture_7.tm>].
