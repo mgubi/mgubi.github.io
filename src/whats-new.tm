@@ -14,6 +14,12 @@
   <notes-abstract|New and updated content on these pages, most recent first: writings, lecture notes, talks and papers.>
 
   <\notes-news-item>
+    <with|font-series|bold|10 November 2026> \<cdot\> <with|font-shape|italic|writing><next-line><with|font-series|bold|<notes-link|Observables beyond the real line|zettels/self-adjoint-operators-extensions.tm>>
+
+    The second post of the series on observables and self-adjoint operators: joint observables of commuting operators, normal operators and observables with values in manifolds, states as sources of probability laws, and what extra structure geometry and quantization require. A companion page gives the <notes-link|proofs and complements|zettels/self-adjoint-operators-extensions-proofs.tm>.
+  </notes-news-item>
+
+  <\notes-news-item>
     <with|font-series|bold|5 November 2026> \<cdot\> <with|font-shape|italic|paper><next-line><with|font-series|bold|Nonlinear PDEs with modulated dispersion II: Korteweg\Ude Vries equation>
 
     With K.<nbsp>Chouk, G.<nbsp>Li, J.<nbsp>Li and T.<nbsp>Oh, accepted for publication in the Memoirs of the European Mathematical Society (<hlink|arXiv:1406.7675|https://arxiv.org/abs/1406.7675>). See the <notes-link|publications|research/publications.tm> page.

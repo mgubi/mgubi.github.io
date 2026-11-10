@@ -11,6 +11,8 @@
 
   Companion to <notes-link|the introductory post|self-adjoint-operators.tm>.
 
+  <with|font-series|bold|Next companion.> <notes-link|II. Beyond the real line|self-adjoint-operators-extensions-proofs.tm>.
+
   <\notes-abstract>
   This companion proves the foundations used in the post: spectral
   reconstruction, domains, cores, resolvents, scalar inversion, unitary
@@ -802,7 +804,7 @@
     <math|w=A<rsub|X><rsup|\<ast\>>v>. Testing the adjoint identity on
     arbitrary functions supported where <math|<around|\||X|\|>\<leqslant\>n>
     yields <math|1<rsub|<around|\||X|\|>\<leqslant\>n>*w=X*1<rsub|<around|\||X|\|>\<leqslant\>n>*v>.
-    As <math|n\<to\>\<infty\>>, these equalities imply <math|w=Xv> almost
+    As <math|n\<to\>\<infty\>>, these equalities imply <math|w=X*v> almost
     everywhere. Since <math|w\<in\>H>, the maximal domain condition holds for
     <math|v>, so <math|D*<around|(|A<rsub|X><rsup|\<ast\>>|)>\<subseteq\>D*<around|(|A<rsub|X>|)>>.
     Symmetry gives the reverse inclusion.
@@ -1051,7 +1053,7 @@
     notes|https://sites.math.rutgers.edu/~carlen/502S17/Analysis2017.pdf>.
 
     <item>J. van Neerven, <em|Functional Analysis>, Cambridge University
-    Press, 2022. Chapters 9--10 treat bounded and unbounded normal operators;
+    Press, 2022. Chapters 9\U10 treat bounded and unbounded normal operators;
     Chapter 15 connects states and observables. <hlink|Chapter
     10|https://doi.org/10.1017/9781009232487.012>.
 

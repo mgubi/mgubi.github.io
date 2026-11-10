@@ -23,6 +23,11 @@
     <em|Se una notte d'inverno un viaggiatore>
   </quotation>
 
+  <notes-link|Observables beyond the real line|self-adjoint-operators-extensions.tm>
+  (November 10, 2026)
+
+  <notes-link|Proofs and complements|self-adjoint-operators-extensions-proofs.tm>.
+
   <notes-link|What do we talk about when we talk about unbounded self-adjoint
   operators?|self-adjoint-operators.tm> (October 23, 2026)
 

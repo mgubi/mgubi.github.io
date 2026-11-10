@@ -25,6 +25,8 @@
 
   <notes-link|Detailed proofs and complements|self-adjoint-operators-proofs.tm>.
 
+  <with|font-series|bold|Next in this series.> <notes-link|II. Observables beyond the real line|self-adjoint-operators-extensions.tm>.
+
   \;
 
   When I was a student, I was scared of the theory of unbounded self-adjoint
@@ -646,7 +648,7 @@
   calculus determines both the action and its domain.
 
   For the reverse direction, starting with a self-adjoint operator, one can
-  form the bounded unitary <math|V=I-2i<around*|(|A+iI|)><rsup|-1>>. The
+  form the bounded unitary <math|V=I-2i<around*|(|A+i*I|)><rsup|-1>>. The
   resolvent identities verify unitarity, and injectivity of the resolvent
   gives <math|ker<around*|(|I-V|)>=<around*|{|0|}>>. The bounded normal
   spectral theorem gives its circle-valued spectral measure; pulling it back
@@ -733,7 +735,7 @@
 
   The assumption <math|u\<in\>D<around*|(|A|)>> is essential: it makes the
   displayed second moment finite. For an arbitrary vector in <math|H>, the
-  same cutoffs approximate the vector in norm, but no limit <math|Au> is
+  same cutoffs approximate the vector in norm, but no limit <math|A*u> is
   asserted.
 
   Spectral truncation therefore controls the vector and the action at once.
@@ -1355,6 +1357,10 @@
     page|https://www.i2m.univ-amu.fr/perso/charles.bordenave/teaching>.
     Cauchy\UStieltjes inversion, recovery of atoms, and weak convergence.
   </itemize>
+
+  <with|font-shape|italic|Updated 10 November 2026: corrected the typesetting
+  of two formulas in Section 4 of this post, and of one formula and
+  one reference in the companion. The content is unchanged.>
 </body>
 
 <\initial>
