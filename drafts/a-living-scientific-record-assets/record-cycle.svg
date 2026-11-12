@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="610" viewBox="0 0 1020 610" role="img" aria-labelledby="title desc">
+<title id="title">The cycle of a living scientific record</title>
+<desc id="desc">Content-addressed artifacts and exact versions lead to reviews, explanations, replications and status notices. Both feed independent discovery indexes, which feed curated collections and reading paths, which serve readers, researchers, teachers and students, whose further inquiry and contributions return as new artifacts. Preservation institutions and community governance support the artifacts, the indexes and the collections.</desc>
+<rect width="1020" height="610" fill="#ffffff"/>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4d5b63"/></marker>
+</defs>
+<g font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="18" fill="#26323a" text-anchor="middle">
+<g stroke="#b5c2c8" stroke-width="1.5" fill="#e9eef0">
+<rect x="160" y="50" width="320" height="80" rx="8"/>
+<rect x="540" y="50" width="380" height="80" rx="8"/>
+<rect x="300" y="190" width="400" height="60" rx="8"/>
+<rect x="300" y="300" width="400" height="60" rx="8"/>
+<rect x="300" y="410" width="400" height="60" rx="8"/>
+<rect x="300" y="520" width="400" height="60" rx="8"/>
+</g>
+<rect x="20" y="220" width="220" height="140" rx="8" fill="#f3ede2" stroke="#d6c8ad" stroke-width="1.5"/>
+<text x="320" y="84">Content-addressed artifacts</text>
+<text x="320" y="110">and exact versions</text>
+<text x="730" y="84">Reviews, explanations, replications</text>
+<text x="730" y="110">and status notices</text>
+<text x="500" y="227">Independent discovery indexes</text>
+<text x="500" y="337">Curated collections and reading paths</text>
+<text x="500" y="447">Readers, researchers, teachers, students</text>
+<text x="500" y="557">Further inquiry and contributions</text>
+<text x="130" y="270">Preservation</text>
+<text x="130" y="296">institutions and</text>
+<text x="130" y="322">community governance</text>
+</g>
+<g fill="none" stroke="#4d5b63" stroke-width="2">
+<path d="M480,90 L532,90" marker-end="url(#arrow)"/>
+<path d="M320,130 L320,160 L730,160 L730,130"/>
+<path d="M500,160 L500,182" marker-end="url(#arrow)"/>
+<path d="M500,250 L500,292" marker-end="url(#arrow)"/>
+<path d="M500,360 L500,402" marker-end="url(#arrow)"/>
+<path d="M500,470 L500,512" marker-end="url(#arrow)"/>
+<path d="M700,550 L990,550 L990,20 L320,20 L320,42" marker-end="url(#arrow)"/>
+</g>
+<g fill="none" stroke="#4d5b63" stroke-width="2" stroke-dasharray="7 6">
+<path d="M130,220 L130,90 L152,90" marker-end="url(#arrow)"/>
+<path d="M240,235 L292,235" marker-end="url(#arrow)"/>
+<path d="M240,330 L292,330" marker-end="url(#arrow)"/>
+</g>
+</svg>
