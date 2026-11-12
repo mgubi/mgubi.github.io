@@ -14,6 +14,12 @@
   <notes-abstract|New and updated content on these pages, most recent first: writings, lecture notes, talks and papers.>
 
   <\notes-news-item>
+    <with|font-series|bold|10 November 2026> \<cdot\> <with|font-shape|italic|preprint><next-line><with|font-series|bold|Composite local observables of sine-Gordon via stochastic analysis>
+
+    With P.<nbsp>Paulovics (<hlink|arXiv:2611.14296|https://arxiv.org/abs/2611.14296>). A nonperturbative construction of local composite observables of the sine-Gordon model on the full plane up to <math|\<beta\><rsup|2>\<less\>6*\<pi\>>, including vertex fields in the optimal Wick regime and derivatives of any order, combining renormalisation group ideas with stochastic analysis.
+  </notes-news-item>
+
+  <\notes-news-item>
     <with|font-series|bold|10 November 2026> \<cdot\> <with|font-shape|italic|writing><next-line><with|font-series|bold|<notes-link|Observables beyond the real line|zettels/self-adjoint-operators-extensions.tm>>
 
     The second post of the series on observables and self-adjoint operators: joint observables of commuting operators, normal operators and observables with values in manifolds, states as sources of probability laws, and what extra structure geometry and quantization require. A companion page gives the <notes-link|proofs and complements|zettels/self-adjoint-operators-extensions-proofs.tm>.

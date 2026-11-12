@@ -12,8 +12,11 @@
 
   <hrule>
 
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated November 2026.|12 Nov 2026>
+
   <notes-entry|whats-new.tm|What's new|New and updated content on these
-  pages, most recent first: writings, lecture notes, talks and papers.|10 Nov
+  pages, most recent first: writings, lecture notes, talks and papers.|12 Nov
   2026>
 
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
@@ -70,9 +73,6 @@
 
   <notes-entry|research/presentations.tm|Presentations|The things I have said
   in various places.|05 Nov 2026>
-
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated October 2026.|05 Nov 2026>
 
   <notes-entry|teaching/teaching.tm|Teaching|Things I teach & have taught.|30
   Oct 2026>

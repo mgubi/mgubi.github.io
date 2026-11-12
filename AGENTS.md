@@ -190,7 +190,9 @@ detaches its existing discussion.
 - The publication database is `resources/publications-20230508.bib`, and the
   publication page is `src/research/publications.tm`. Follow the existing
   TeXmacs-native `<cite>` and `<nocite>` conventions and preserve stable DOI
-  or arXiv identifiers.
+  or arXiv identifiers. Add a publication with
+  `tools/import-publications.sh`, following "Adding a publication" in
+  `INFRASTRUCTURE.md`; never edit the generated lists by hand.
 - Many numbered PNGs under `docs/` are intentional exported mathematics or
   page assets in this older site. Do not apply StochFields' rule that removes
   all numbered PNGs.
