@@ -13,6 +13,13 @@ A TeXmacs plugin for the HTML export of articles and presentations.
     (mgubi/texmacs#607).
   - `aligned` inside an equation is written `\begin{aligned}`, not
     `\begin{equationsbase}` (mgubi/texmacs#611).
+- **Folders left alone:** `progs/max-html/noconvert.scm`, also loaded at
+  startup, makes TeXmacs' website converter (Tools → Web → Create web
+  site, `tmweb-convert-dir`, `tmweb-update-dir`) skip every folder that
+  holds a file named `.texmacs-noconvert`, with its subfolders: no `.tm`
+  file there is converted and no other file is copied. Use it for folders
+  that carry their own HTML, such as the deposited papers of the
+  `papers` repository.
 - **`max-html` package, for articles:**
   - framed theorems, propositions, lemmas, corollaries and definitions,
     after Joris van der Hoeven's web articles;

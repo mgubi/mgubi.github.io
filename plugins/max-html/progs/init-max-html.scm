@@ -18,3 +18,7 @@
   (:require #t))
 
 (use-modules (max-html fixes))
+
+;; Folders with a .texmacs-noconvert file are left alone by the website
+;; converter (see noconvert.scm).
+(use-modules (max-html noconvert))

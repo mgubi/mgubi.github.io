@@ -12,12 +12,12 @@
 
   <hrule>
 
-  <notes-entry|research/publications.tm|Publications|Papers I have
-  co-authored \ \U last updated November 2026.|12 Nov 2026>
-
   <notes-entry|whats-new.tm|What's new|New and updated content on these
   pages, most recent first: writings, lecture notes, talks and papers.|12 Nov
   2026>
+
+  <notes-entry|research/publications.tm|Publications|Papers I have
+  co-authored \ \U last updated November 2026.|12 Nov 2026>
 
   <\notes-entry|zettels/self-adjoint-operators-proofs.tm|Proofs and
   complements: the basic idea>

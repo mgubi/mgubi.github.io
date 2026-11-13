@@ -21,6 +21,9 @@
 ;; not execute the plugin's initialisation, so load them explicitly.
 (use-modules (max-html fixes))
 
+;; Folders holding a .texmacs-noconvert file are not converted or copied.
+(use-modules (max-html noconvert))
+
 ;; Course materials (SISSA 2026, Saint-Flour 2025) have their own reading/
 ;; presentation styles and use MathJax, like the author's standalone exports.
 ;; Keep this choice local to these documents instead of changing the export
@@ -137,7 +140,8 @@
   (filter 
     (lambda (furl)
         (let ((fname (url->string (url-delta (url-append dir "./") furl)))) 
-          (not (or (equal? fname "main.tm") 
+          (not (or (tmweb-noconvert? furl dir)
+                   (equal? fname "main.tm") 
                    (equal? fname "list-articles.tm")
                    ;; Course supplements are linked from their course page.
                    (string-starts? fname "teaching/sissa-2026/")
