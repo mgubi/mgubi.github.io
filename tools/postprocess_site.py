@@ -33,9 +33,20 @@ LANGUAGES = {
     "marella.html": "it",
     "teaching/lectures-intro-probability-ws20-21.html": "de",
 }
+# Descriptions of pages without an abstract, for search engines and previews.
+DESCRIPTIONS = {
+    "main.html": (
+        "Wallis Professor of Mathematics at the University of Oxford: "
+        "stochastic analysis and mathematical physics. Papers, lecture notes, "
+        "teaching and TeXmacs."
+    ),
+}
 ALT_TEXT = {
     "main-1.png": "",
-    "main-2.jpeg": "Drawing of a mathematician at a blackboard",
+    "main-2.jpeg": (
+        "Drawing of a mathematician scratching his head before a blackboard "
+        "full of formulas; his shirt reads “I don't understand?”"
+    ),
     "marella-1.jpg": "Front cover of Marella",
     "marella-2.png": "Back cover of Marella",
     "marella-3.png": "Excerpt from Marella",
@@ -93,7 +104,9 @@ def page_title(text: str, relative: str) -> str:
     return Path(relative).stem.replace("-", " ").title()
 
 
-def description(text: str, title: str) -> str:
+def description(text: str, title: str, relative: str = "") -> str:
+    if relative in DESCRIPTIONS:
+        return DESCRIPTIONS[relative]
     match = ABSTRACT.search(text)
     if match:
         value = plain_text(match.group(1))
@@ -156,7 +169,7 @@ def modernize_head(text: str, relative: str, title: str) -> str:
     )
     metadata = (
         '    <meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        f'    <meta name="description" content="{escape_attribute(description(text, title))}">\n'
+        f'    <meta name="description" content="{escape_attribute(description(text, title, relative))}">\n'
         f'    <link rel="canonical" href="{canonical_url(relative)}">\n'
         f'    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="{SITE_URL}/docs/notes.atom">\n'
     )

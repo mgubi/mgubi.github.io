@@ -24,15 +24,15 @@
 
         \;
 
-        <hlink|google scholar|https://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
+        <hlink|Google Scholar|https://scholar.google.ca/citations?hl=en&user=D4PR4LYAAAAJ&view_op=list_works&pagesize=100>
         \<cdot\> <hlink|arXiv|https://arxiv.org/a/gubinelli_m_1> \<cdot\>
         <hlink|ORCID|https://orcid.org/0000-0002-4014-2949>
 
-        <hlink|@maxgubi@twitter|https://twitter.com/maxgubi>\ 
+        <hlink|X (@maxgubi)|https://x.com/maxgubi>\ 
 
         <hlink|@maxgubi@mathstodon.xyz|https://mathstodon.xyz/@maxgubi>\ 
 
-        <hlink|linkedin|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/>
+        <hlink|LinkedIn|https://www.linkedin.com/in/massimiliano-gubinelli-39bb8467/>
 
         \;
       </cell>>>>
@@ -46,8 +46,8 @@
     latest lecture notes, writings, talks and papers on these pages
   </notes-highlight>
 
-  <I>'m a mathematician, currently the Wallis Professor of mathematics at the
-  University of Oxford and fellow of St.<nbsp>Anne's College. Previously
+  <I>'m a mathematician, currently the Wallis Professor of Mathematics at the
+  University of Oxford and Professorial Fellow of St.<nbsp>Anne's College. Previously
   <value|I><nbsp>held positions in Pisa, Paris and Bonn. <value|I><nbsp>work
   in the field of stochastic analysis. My interests lie at the intersection
   of analysis, probability and mathematical physics. <value|I><nbsp>like to
@@ -74,12 +74,11 @@
   at the <hlink|Mathematical Institute|https://www.maths.ox.ac.uk>
 
   <\small>
-    a <notes-link|list|list-articles.tm> of all the articles \<cdot\> an
-    <notes-link|Atom|notes.atom> feed \<cdot\> a
-    <notes-link|template|template.tm> for new pages
+    a <notes-link|list|list-articles.tm> of all the pages \<cdot\> an
+    <notes-link|Atom|notes.atom> feed
 
-    these pages have been created with <hlink|<TeXmacs>|http://www.texmacs.org>
-    and are hosted at <hlink|github|https://github.com/mgubi/mgubi.github.io>
+    these pages have been created with <hlink|<TeXmacs>|https://www.texmacs.org>
+    and are hosted at <hlink|GitHub|https://github.com/mgubi/mgubi.github.io>
   </small>
 
   <vspace|2em>
