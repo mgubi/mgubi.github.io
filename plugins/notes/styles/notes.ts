@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|2.1.5>
 
 <style|source>
 
@@ -24,13 +24,16 @@
 
   <\active*>
     <\src-comment>
-      Website fonts. TeXmacs uses Source Pro as the shared master for Source
-      Serif Pro (roman) and Source Sans Pro (sans serif).
+      Fonts in TeXmacs: Linux Libertine for the text (from the package
+      libertine-font), because Source Pro has no good italic in TeXmacs;
+      Source Code Pro for code; TeX Gyre Pagella for large operators. The
+      web pages keep the Source fonts of the site's stylesheets; headings use
+      Source Pro sans serif (notes-heading).
     </src-comment>
   </active*>
 
-  <assign|font|mathlarge=TeX Gyre Pagella,typewriter=Source Code Pro,Source
-  Pro>
+  <assign|font|mathlarge=TeX Gyre Pagella,typewriter=Source Code Pro,Linux
+  Libertine>
 
   <\active*>
     <\src-comment>
@@ -85,12 +88,18 @@
 
   <\active*>
     <\src-comment>
-      MathJax lacks some macros produced by the LaTeX conversion of
-      formulas: define them before MathJax loads.
+      MathJax lacks some macros produced by the LaTeX conversion of formulas:
+      define them before MathJax loads.
     </src-comment>
   </active*>
 
-  <assign|html-extra-javascript|<tuple|var bs = String.fromCharCode(92), sp = String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs + 'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1], llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs + 'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox: [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*' + sp + '#2))}{#3}', 3, '']}}};>>
+  <assign|html-extra-javascript|<tuple|var bs = String.fromCharCode(92), sp =
+  String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+  'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+  llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+  'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+  [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*' +
+  sp + '#2))}{#3}', 3, '']}}};>>
 
   <\active*>
     <\src-comment>
