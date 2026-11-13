@@ -17,7 +17,7 @@
 
   This document describes a technical profile for a scientific record in which papers, reviews, explanations and corrections remain connected and can move from one institution or platform to another. The essay <notes-link|A living scientific record|a-living-scientific-record.tm> explains why such a record is worth building; the present text can be read on its own.
 
-  The profile is built on <hlink|OpenSheaf|https://opensheaf.org/>, an open format for archives of scholarly documents. An OpenSheaf archive is a set of plain files served as a static website. Documents are stored with their sources in the Oxford Common File Layout (OCFL), described with DataCite metadata and fixed by content hashes, and a discovery document lists the objects of the archive. Depositing with a DOI service such as Zenodo and keeping the files in Git are optional. OpenSheaf specifies documents and collections of them. This document adds what a living record needs beyond these: statements with a stated meaning, reviews and comments, status notices, selections with assessments, and rules of authority. An earlier draft of this profile defined its own content identifiers and binary encoding; plain JSON files in versioned objects do the same work with formats and tools that already exist.
+  The profile is built on <hlink|OpenSheaf|https://opensheaf.org/>, an open format for archives of scholarly documents. An OpenSheaf archive is a set of plain files served as a static website. Documents are stored with their sources in the Oxford Common File Layout (OCFL), described with DataCite metadata and fixed by content hashes, and a discovery document lists the objects of the archive. Depositing with a DOI service such as Zenodo and keeping the files in Git are optional. OpenSheaf specifies documents and collections of them. This document adds what a living record needs beyond these: statements with a stated meaning, reviews and comments, status notices, selections with assessments, and rules of authority.
 
   This is a design proposal, not an implemented interoperability standard, and OpenSheaf itself is a draft (version 0.1, 13 November 2026). The records below illustrate relationships; they are not complete schemas or executable test vectors. The text distinguishes candidate choices from the questions that still require specification and testing, which are collected in the <hlink|last section|#sec:open>.
 
@@ -111,7 +111,7 @@
   </cell>>|<row|<\cell>
     Pin
   </cell>|<\cell>
-    A reference to one exact version of an object: archive identifier and address, object identifier, version number and the digest of that version's inventory; optionally the path and digest of one file. Every statement about a work uses a pin.
+    A reference to one exact version of an object: its kind, archive identifier and address, object identifier, version number and the digest of that version's inventory; optionally the path and digest of one file. Every statement about a work uses a pin.
   </cell>>|<row|<\cell>
     Authority file
   </cell>|<\cell>
@@ -150,10 +150,12 @@
 
   The identity of a file is the hash of its bytes as deposited. Nothing is re-encoded before hashing, so no canonical form of JSON is needed: two archives agree on a file when they hold the same bytes. Metadata files are JSON in UTF-8, written once by the depositing tool and never edited in place.
 
-  Following OCFL, the digest is SHA-512; inventories may also record SHA-256 and MD5 in their fixity block. The inventory of a version lists the digest of every file in it, so the digest of that inventory fixes the version. A pin therefore has five fields, those of a member of an OpenSheaf collection:
+  Following OCFL, the digest is SHA-512; inventories may also record SHA-256 and MD5 in their fixity block. The inventory of a version lists the digest of every file in it, so the digest of that inventory fixes the version. A pin therefore has six fields, the required fields of a member of an OpenSheaf collection:
 
   <\verbatim>
     {
+
+    \ \ "kind": "document",
 
     \ \ "archive": "tag:example.org,2026:authors",
 
@@ -163,12 +165,12 @@
 
     \ \ "version": "v1",
 
-    \ \ "inventorySha512": "\<less\\<gtr\>digest of v1/inventory.json\<gtr\>"
+    \ \ "inventorySha512": "\<less\>digest of v1/inventory.json\<gtr\>"
 
     }
   </verbatim>
 
-  To name one file inside the version, a pin adds its <verbatim|path> and <verbatim|sha512>. The archive identifier names the archive wherever it is served, the address says where it was when the pin was made, and the digest says what must be found. A copy held anywhere else (a mirror, a DOI deposit, a software archive snapshot) with the same inventory digest is the same version. A claim about a work pins a version, never the object as a whole, whose current inventory changes with every new version.
+  To name one file inside the version, the profile's own files, such as <verbatim|targets.json> or a notice, give its <verbatim|path> and <verbatim|sha512> beside the pin; the members of a collection admit no such fields. The archive identifier names the archive wherever it is served, the address says where it was when the pin was made, and the digest says what must be found. A copy held anywhere else (a mirror, a DOI deposit, a software archive snapshot) with the same inventory digest is the same version. A claim about a work pins a version, never the object as a whole, whose current inventory changes with every new version.
 
   A shared profile must still fix timestamp syntax, the treatment of absent fields and the required extensions. Contribution kinds, claim types and assessment scopes name versioned vocabularies. Where DataCite has a term, the profile uses it: a referee report is a <verbatim|PeerReview> that <verbatim|Reviews> its target, and a new version <verbatim|IsNewVersionOf> the old one. The <verbatim|sr:> terms cover what DataCite leaves out. Clients should preserve and display unfamiliar terms. They must not grant permissions or endorse claims whose meaning they cannot interpret; an unknown extension required for validation prevents successful validation. This leaves room for new forms of contribution without treating every unfamiliar claim as authoritative.
 
@@ -203,11 +205,11 @@
 
     \ \ "format": "sr-statement/0.1",
 
-    \ \ "subject": "\<less\\<gtr\>corrected-version-pin\<gtr\>",
+    \ \ "subject": "\<less\>corrected-version-pin\<gtr\>",
 
-    \ \ "issuer": "\<less\\<gtr\>author-identity\<gtr\>",
+    \ \ "issuer": "\<less\>author-identity\<gtr\>",
 
-    \ \ "key": "\<less\\<gtr\>author-key-reference\<gtr\>",
+    \ \ "key": "\<less\>author-key-reference\<gtr\>",
 
     \ \ "claim": "sr:author_approval",
 
@@ -239,7 +241,7 @@
 
     \ \ "release_policy": {
 
-    \ \ \ \ "signers": ["\<less\\<gtr\>key-A\<gtr\>", "\<less\\<gtr\>key-B\<gtr\>", "\<less\\<gtr\>key-C\<gtr\>"],
+    \ \ \ \ "signers": ["\<less\>key-A\<gtr\>", "\<less\>key-B\<gtr\>", "\<less\>key-C\<gtr\>"],
 
     \ \ \ \ "threshold": 2
 
@@ -247,13 +249,13 @@
 
     \ \ "recovery_policy": {
 
-    \ \ \ \ "signers": ["\<less\\<gtr\>recovery-1\<gtr\>", "\<less\\<gtr\>recovery-2\<gtr\>", "\<less\\<gtr\>recovery-3\<gtr\>"],
+    \ \ \ \ "signers": ["\<less\>recovery-1\<gtr\>", "\<less\>recovery-2\<gtr\>", "\<less\>recovery-3\<gtr\>"],
 
     \ \ \ \ "threshold": 2
 
     \ \ },
 
-    \ \ "witnesses": ["\<less\\<gtr\>timestamp-service\<gtr\>", "\<less\\<gtr\>doi-deposit\<gtr\>", "\<less\\<gtr\>mirror\<gtr\>"],
+    \ \ "witnesses": ["\<less\>timestamp-service\<gtr\>", "\<less\>doi-deposit\<gtr\>", "\<less\>mirror\<gtr\>"],
 
     \ \ "witness_threshold": 2
 
@@ -267,11 +269,11 @@
 
     \ \ "format": "sr-authority-change/0.1",
 
-    \ \ "previous": "\<less\\<gtr\>previous-version-pin\<gtr\>",
+    \ \ "previous": "\<less\>previous-version-pin\<gtr\>",
 
-    \ \ "remove": ["\<less\\<gtr\>key-B\<gtr\>"],
+    \ \ "remove": ["\<less\>key-B\<gtr\>"],
 
-    \ \ "add": ["\<less\\<gtr\>key-D\<gtr\>"],
+    \ \ "add": ["\<less\>key-D\<gtr\>"],
 
     \ \ "reason": "sr:key_rotation"
 
@@ -284,7 +286,7 @@
 
   Suppose an attacker obtains a signing key after it has been revoked. They can still sign a release naming an old policy and an earlier date. The date inside a signature cannot establish when it was made, and neither can the date of a Git commit.
 
-  Order has to come from outside the archive. OpenSheaf already provides for such witnesses: <hlink|OpenTimestamps|https://opentimestamps.org/> proofs of an inventory checksum, the publication date of an external deposit such as a Zenodo record, and software archive snapshots. Each shows that a version existed by a certain time. The authority file names which witnesses count for a work and how many must agree, so that a client cannot choose the ordering most favorable to a release. This is a dependency of each work, not a global ledger.
+  Order has to come from outside the archive. OpenSheaf already provides for such witnesses: <hlink|OpenTimestamps|https://opentimestamps.org/> proofs of an inventory checksum, the publication date of an external deposit such as a Zenodo record, and software archive snapshots. Each shows that a version existed by a certain time. OpenSheaf counts signatures among its witnesses as well; below, the word means these dating witnesses only. The authority file names which witnesses count for a work and how many must agree, so that a client cannot choose the ordering most favorable to a release. This is a dependency of each work, not a global ledger.
 
   Where several parties must be able to detect a rewritten history, a stricter profile can add an append-only log with independent witnesses, borrowing inclusion and consistency proofs from <hlink|Certificate Transparency|https://www.rfc-editor.org/rfc/rfc9162.html>. The following rules apply in either case:
 
@@ -327,11 +329,11 @@
 
     \ \ \ \ {
 
-    \ \ \ \ \ \ "version": "\<less\\<gtr\>original-version-pin\<gtr\>",
+    \ \ \ \ \ \ "version": "\<less\>original-version-pin\<gtr\>",
 
     \ \ \ \ \ \ "path": "compactness-theorem.tm",
 
-    \ \ \ \ \ \ "sha512": "\<less\\<gtr\>digest of that file\<gtr\>",
+    \ \ \ \ \ \ "sha512": "\<less\>digest of that file\<gtr\>",
 
     \ \ \ \ \ \ "representation": "source/texmacs",
 
@@ -379,9 +381,9 @@
 
     \ \ "kind": "sr:correction",
 
-    \ \ "subject": "\<less\\<gtr\>original-version-pin\<gtr\>",
+    \ \ "subject": "\<less\>original-version-pin\<gtr\>",
 
-    \ \ "superseded_by": "\<less\\<gtr\>corrected-version-pin\<gtr\>",
+    \ \ "superseded_by": "\<less\>corrected-version-pin\<gtr\>",
 
     \ \ "affected": [
 
@@ -389,7 +391,7 @@
 
     \ \ \ \ \ \ "path": "compactness-theorem.tm",
 
-    \ \ \ \ \ \ "sha512": "\<less\\<gtr\>digest of that file\<gtr\>",
+    \ \ \ \ \ \ "sha512": "\<less\>digest of that file\<gtr\>",
 
     \ \ \ \ \ \ "representation": "source/texmacs",
 
@@ -405,7 +407,7 @@
 
     \ \ ],
 
-    \ \ "responds_to": ["\<less\\<gtr\>objection-pin\<gtr\>", "\<less\\<gtr\>counterexample-pin\<gtr\>"],
+    \ \ "responds_to": ["\<less\>objection-pin\<gtr\>", "\<less\>counterexample-pin\<gtr\>"],
 
     \ \ "reasons": "explanation.md",
 
@@ -429,17 +431,17 @@
 
     \ \ \ \ {
 
-    \ \ \ \ \ \ "member": "\<less\\<gtr\>corrected-version-pin\<gtr\>",
+    \ \ \ \ \ \ "member": "\<less\>corrected-version-pin\<gtr\>",
 
     \ \ \ \ \ \ "assessment": "sr:accepted",
 
     \ \ \ \ \ \ "scope": "statement_and_proof",
 
-    \ \ \ \ \ \ "accepted_version": "\<less\\<gtr\>original-version-pin\<gtr\>",
+    \ \ \ \ \ \ "accepted_version": "\<less\>original-version-pin\<gtr\>",
 
-    \ \ \ \ \ \ "reviews": ["\<less\\<gtr\>referee-report-1-pin\<gtr\>", "\<less\\<gtr\>referee-report-2-pin\<gtr\>"],
+    \ \ \ \ \ \ "reviews": ["\<less\>referee-report-1-pin\<gtr\>", "\<less\>referee-report-2-pin\<gtr\>"],
 
-    \ \ \ \ \ \ "notices": ["\<less\\<gtr\>correction-notice-pin\<gtr\>"]
+    \ \ \ \ \ \ "notices": ["\<less\>correction-notice-pin\<gtr\>"]
 
     \ \ \ \ }
 
@@ -486,7 +488,7 @@
 
   <section*|Publishing one version><label|sec:publishing>
 
-  The interface can offer familiar scholarly actions while the client performs the following steps:
+  Behind the action \Ppublish this version\Q, the client performs the following steps:
 
   <\enumerate>
     <item>Deposit the version in the authors' archive: sources, renditions, description and provenance, with contributors, limitations, licenses and access conditions, and update the discovery document. If the archive uses a DOI service, reserve the DOI first and publish the record with the same files. The pin is now fixed.
@@ -500,7 +502,7 @@
     <item>Apply editorial selection separately. Reviews, responses and corrections are further objects in their authors' archives; the steward discovers and indexes later contributions within the preservation agreement.
   </enumerate>
 
-  Retrieval, technical validation, authority and scholarly assessment are independent states. A failure in one should not be disguised by success in another. A reader should see them as four separate answers: can this version be retrieved, do its records pass the technical checks, what evidence supports its release authority, and what assessments has it received.
+  Retrieval, technical validation, authority and scholarly assessment are independent states, the four questions of the <hlink|previous section|#sec:assessments>. A failure in one should not be disguised by success in another.
 
   <section*|Synchronizing without pretending to know everything><label|sec:synchronization>
 
@@ -612,27 +614,27 @@
 
     \ \ "members": [
 
-    \ \ \ \ "\<less\\<gtr\>original-version-pin\<gtr\>",
+    \ \ \ \ "\<less\>original-version-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>corrected-version-pin\<gtr\>",
+    \ \ \ \ "\<less\>corrected-version-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>referee-report-1-pin\<gtr\>",
+    \ \ \ \ "\<less\>referee-report-1-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>referee-report-2-pin\<gtr\>",
+    \ \ \ \ "\<less\>referee-report-2-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>objection-pin\<gtr\>",
+    \ \ \ \ "\<less\>objection-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>correction-notice-pin\<gtr\>",
+    \ \ \ \ "\<less\>correction-notice-pin\<gtr\>",
 
-    \ \ \ \ "\<less\\<gtr\>journal-selection-pin\<gtr\>"
+    \ \ \ \ "\<less\>journal-selection-pin\<gtr\>"
 
     \ \ ],
 
-    \ \ "evidence": ["\<less\\<gtr\>timestamp-proofs\<gtr\>", "\<less\\<gtr\>doi-deposits\<gtr\>"],
+    \ \ "evidence": ["\<less\>timestamp-proofs\<gtr\>", "\<less\>doi-deposits\<gtr\>"],
 
     \ \ "discovery": {
 
-    \ \ \ \ "sources": ["\<less\\<gtr\>index-A\<gtr\>", "\<less\\<gtr\>index-B\<gtr\>"],
+    \ \ \ \ "sources": ["\<less\>index-A\<gtr\>", "\<less\>index-B\<gtr\>"],
 
     \ \ \ \ "checked_through": "2026-11-01T00:00:00Z"
 
@@ -652,9 +654,9 @@
 
     \ \ "format": "sr-receipt/0.1",
 
-    \ \ "collection": "\<less\\<gtr\>preservation-collection-pin\<gtr\>",
+    \ \ "collection": "\<less\>preservation-collection-pin\<gtr\>",
 
-    \ \ "operator": "\<less\\<gtr\>repository-identity\<gtr\>",
+    \ \ "operator": "\<less\>repository-identity\<gtr\>",
 
     \ \ "retain_until": "2036-12-31",
 
@@ -774,7 +776,7 @@
   The main choices that remain open are:
 
   <\itemize>
-    <item>whether statements, contributions and notices should become part of OpenSheaf or remain a profile above it, and the fields this profile adds to collection members;
+    <item>whether statements, contributions and notices should become part of OpenSheaf or remain a profile above it;
 
     <item>an extension point in OpenSheaf for profiles such as this one: its schema admits no additional fields in a collection member, which is why assessments sit in a separate file;
 
@@ -791,9 +793,9 @@
     <item>the cost of preservation, and who pays for stewardship of later discussion.
   </itemize>
 
-  <section*|Sources and remaining choices><label|sec:sources>
+  <section*|Sources><label|sec:sources>
 
-  The linked specifications supply building blocks. Storage, description, discovery, signatures and withdrawal follow <hlink|OpenSheaf|https://opensheaf.org/>, and through it OCFL 1.1 and the DataCite schema. The meaning of statements, the work-specific authority policy, complete-history proofs, witness assumptions and preservation agreements remain this proposal's responsibility.
+  The linked specifications supply building blocks. Storage, description, discovery, signatures and withdrawal follow <hlink|OpenSheaf|https://opensheaf.org/>, and through it OCFL 1.1 and the DataCite schema.
 
   None of the technical choices removes the need for the people, funding and editorial practice that keep a record useful.
 </body>

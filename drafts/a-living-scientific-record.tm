@@ -23,8 +23,8 @@
   Scientific journals were created to circulate results and to keep a record
   of who found what. Over time they have come to carry much more: editorial
   judgment, peer review, selection, preservation, and the prestige on which
-  careers and funding depend. These functions require people and money, and
-  any alternative has to keep them going. The trouble is that all of them
+  careers and funding depend. All of this requires people and money, and
+  any alternative has to keep these functions going. The trouble is that they all
   hang on a single event, the publication of a paper. Making work public,
   reviewing it, recommending it and assigning credit become hard to tell
   apart, and where a result appeared starts to stand in for what it
@@ -74,7 +74,7 @@
 
   <section*|Mathematics as distillation><label|sec:distillation>
 
-  In mathematics this is especially clear, and the name already says so. The
+  In mathematics the primacy of shared meaning is written into the name. The
   Greek <em|mathemata> are the things that can be learned: what passes from
   one person to another in a form both can understand. Mathematics in this
   original sense is a conceptual patrimony, which exists only in being shared
@@ -150,12 +150,9 @@
   use. Both require time and conditions in which people can participate,
   including newcomers and critics in precarious positions.
 
-  That is why distillations, rereadings and explanations belong in the
-  record: an explanation can change what a reader is able to see, and even a
-  failed approach can clarify the question.
-
-  Three authors have shaped how I think about this. None of them wrote about
-  scholarly infrastructure; the application is mine.
+  Three authors have shaped how I think about this. None of them had
+  scientific publishing in mind. Yet what they say bears on scientific
+  discourse as a whole, and never more than now.
 
   <subsection*|Ingold: learning to attend><label|sec:ingold>
 
@@ -254,7 +251,7 @@
 
   <section*|A simple technical shape><label|sec:implementation>
 
-  For researchers, little needs to change. Authoring tools can offer
+  In daily practice, little needs to change for researchers. Authoring tools can offer
   familiar actions, such as publishing a version, responding to a review or
   correcting a passage, and do the rest underneath. What lies underneath is
   built from well-tested pieces.
@@ -262,7 +259,7 @@
   The first is the cryptographic hash. A hash function such as SHA-512 turns
   any file into a short fingerprint; changing a single byte changes the
   fingerprint completely, and finding two files with the same fingerprint is
-  practically impossible. Using the fingerprint as the identifier gives a
+  practically impossible. Putting the fingerprint into a reference gives a
   link that cannot silently point to different content. Anyone can recompute
   it, any copy found anywhere can be checked against it, and no central
   registry is needed to issue it.
@@ -293,7 +290,7 @@
   <hlink|PubPeer|https://pubpeer.com/> collects comments on
   published papers; a Lean <hlink|blueprint|https://github.com/patrickmassot/leanblueprint>
   links an informal argument to its formal counterpart. Each solves part of
-  the problem within one service. What is missing is a way for the pieces to
+  the problem in its own setting. What is missing is a way for the pieces to
   survive together.
 
   <hlink|OpenSheaf|https://opensheaf.org/> is my attempt at a first layer. It
@@ -349,7 +346,7 @@
   protect work that is rarely read today: present popularity tells us little
   about what another generation will need.
 
-  <strong|Attention is the scarce resource.> Open participation cannot
+  Attention is the scarce resource. Open participation cannot
   promise unlimited reviewing time, least of all when generated submissions
   and replies cost almost nothing. Counting endorsements is no remedy, since
   endorsements can be automated, traded or coordinated. Newcomers need routes
@@ -364,7 +361,7 @@
   us return to an argument and continue it. They cannot supply the
   understanding that makes the return worthwhile. However much of the text is
   produced by machines, that remains the work of people who notice a
-  difficulty, develop an explanation and <strong|take responsibility> for
+  difficulty, develop an explanation and <em|take responsibility> for
   what they pass on. In this the record is like mathematics itself, made of
   <em|mathemata>, things learned from one another, where understanding
   something and answering for it go together.
