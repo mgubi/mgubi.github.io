@@ -12,6 +12,9 @@
 
   <hrule>
 
+  <notes-entry|programming.tm|Programming|Content related to computer
+  languages, programming, <TeXmacs>.|13 Nov 2026>
+
   <notes-entry|whats-new.tm|What's new|New and updated content on these
   pages, most recent first: writings, lecture notes, talks and papers.|12 Nov
   2026>
@@ -84,9 +87,6 @@
 
   <notes-entry|research/events.tm|Events|I travel around to meet other
   mathematicians.|30 Oct 2026>
-
-  <notes-entry|programming.tm|Programming|Content related to computer
-  languages, programming, <TeXmacs>.|30 Oct 2026>
 
   <notes-entry|research/srq/srq-seminar-20181017-giuliani.tm|SRQ seminar \U
   October 17th, 2018|Notes from a talk in the SRQ series.|30 Oct 2026>

@@ -19,7 +19,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-SITE_URL = "https://mgubi.github.io"
+SITE_URL = "https://mgubi.org"
 STALE_OUTPUTS = {
     DOCS / "research.html",
     DOCS / "publications.html",

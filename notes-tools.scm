@@ -71,7 +71,11 @@
 ;; TODO:
 ;; * improve conversion of strings (spurious <concat> elements in atom output)
 
-(define notes-url "https://mgubi.github.io/")
+(define notes-url "https://mgubi.org/")
+
+;; Atom identifiers must never change, also when the site moves: the feed
+;; keeps the identifier it had at its first address (entries use tag: URIs).
+(define notes-feed-id "https://mgubi.github.io/docs/notes.atom")
 
 (if (not (getenv "NOTES")) 
   (setenv "NOTES" (getenv "PWD")))
@@ -237,7 +241,7 @@
                 (author (!document
                     (name "Massimiliano Gubinelli")
                     (uri ,notes-url)))
-                (id ,(string-append notes-url "docs/notes.atom"))
+                (id ,notes-feed-id)
                 (icon ,(string-append notes-url "resources/favicon-32x32.png"))
                 ,@(map (lambda (entry) (apply make-atom-entry entry)) articles))))))
         (string-append dest-dir "/notes.atom"))))

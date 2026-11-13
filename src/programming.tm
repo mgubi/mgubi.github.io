@@ -68,7 +68,7 @@
   <subsection*|TeXmacs Upsilon>
 
   My current development work comes together in <hlink|TeXmacs
-  Upsilon|https://mgubi.github.io/texmacs/>, an experimental version of GNU
+  Upsilon|https://mgubi.org/texmacs/>, an experimental version of GNU
   <TeXmacs> combining new features with the upstream code. It supersedes
   the earlier TeXmacs Vue project; Vue continues as one of its graphical
   interfaces, alongside Qt and the native Cocoa interface for macOS.
@@ -78,24 +78,24 @@
   code editing with tree-sitter and language servers, and AI sessions.
   The same codebase also runs in the browser through WebAssembly.
 
-  The <hlink|project website|https://mgubi.github.io/texmacs/> offers
+  The <hlink|project website|https://mgubi.org/texmacs/> offers
   experimental builds for macOS, Linux and Windows, a
-  <hlink|browser application|https://mgubi.github.io/texmacs/texmacs.html>,
-  a <hlink|feature tour|https://mgubi.github.io/texmacs/features.html> and
-  <hlink|recent changes|https://mgubi.github.io/texmacs/changes.html>.
+  <hlink|browser application|https://mgubi.org/texmacs/texmacs.html>,
+  a <hlink|feature tour|https://mgubi.org/texmacs/features.html> and
+  <hlink|recent changes|https://mgubi.org/texmacs/changes.html>.
   These are continuously tested development builds. The sources are on
   <hlink|upsilon_texmacs|https://github.com/mgubi/texmacs/tree/upsilon_texmacs>;
   problems can be reported in the <hlink|project issue
   tracker|https://github.com/mgubi/texmacs/issues>.
 
   <\center>
-    <hlink|<image|../resources/texmacs-upsilon.png|0.9par|||>|https://mgubi.github.io/texmacs/features.html>
+    <hlink|<image|../resources/texmacs-upsilon.png|0.9par|||>|https://mgubi.org/texmacs/features.html>
   </center>
 
   <\with|par-mode|center>
     <small|TeXmacs Upsilon: OpenType mathematics in Libertinus Math,
     using the Vue interface. <hlink|More
-    screenshots|https://mgubi.github.io/texmacs/features.html>.>
+    screenshots|https://mgubi.org/texmacs/features.html>.>
   </with>
 
   <subsection*|Ongoing <TeXmacs> subprojects>
@@ -110,8 +110,8 @@
     native Cocoa and Vue interfaces, GPU rendering, themes and icon sets.
 
     <item><hlink|OpenType mathematics|https://github.com/mgubi/texmacs/tree/wip_opentype>,
-    <hlink|additional fonts|https://mgubi.github.io/texmacs/features.html#font-design>
-    and <hlink|font design|https://mgubi.github.io/texmacs/features.html#font-design>:
+    <hlink|additional fonts|https://mgubi.org/texmacs/features.html#font-design>
+    and <hlink|font design|https://mgubi.org/texmacs/features.html#font-design>:
     mathematical font layout, matching text families and font selection.
 
     <item><hlink|s7|https://github.com/mgubi/texmacs/tree/upsilon_texmacs/src/docs/s7> and

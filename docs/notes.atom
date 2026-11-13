@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Massimiliano Gubinelli - updates</title>
-  <link rel="alternate" type="text/html" href="https://mgubi.github.io/"/>
-  <link rel="self" type="application/atom+xml" href="https://mgubi.github.io/docs/notes.atom"/>
-  <updated>2026-11-12T10:32:24Z</updated>
+  <link rel="alternate" type="text/html" href="https://mgubi.org/"/>
+  <link rel="self" type="application/atom+xml" href="https://mgubi.org/docs/notes.atom"/>
+  <updated>2026-11-13T00:46:03Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
-    <uri>https://mgubi.github.io/</uri>
+    <uri>https://mgubi.org/</uri>
   </author>
   <id>https://mgubi.github.io/docs/notes.atom</id>
-  <icon>https://mgubi.github.io/resources/favicon-32x32.png</icon>
+  <icon>https://mgubi.org/resources/favicon-32x32.png</icon>
+  <entry>
+    <title>Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/programming.html"/>
+    <id>tag:mgubi.github.io,2023:programming.tm</id>
+    <updated>2026-11-13T00:46:03Z</updated>
+    <published>2023-04-22T00:04:30Z</published>
+    <summary>Content related to computer languages, programming,
+    TeXmacs.</summary>
+  </entry>
   <entry>
     <title>What's new</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/whats-new.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/whats-new.html"/>
     <id>tag:mgubi.github.io,2023:whats-new.tm</id>
     <updated>2026-11-12T10:32:24Z</updated>
     <published>2026-11-05T20:08:18Z</published>
@@ -21,7 +30,7 @@
   </entry>
   <entry>
     <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/publications.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/publications.html"/>
     <id>tag:mgubi.github.io,2023:research/publications.tm</id>
     <updated>2026-11-12T10:32:24Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -29,7 +38,7 @@
   </entry>
   <entry>
     <title>Proofs and complements: the basic idea</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-proofs.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/self-adjoint-operators-proofs.html"/>
     <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-proofs.tm</id>
     <updated>2026-11-10T16:20:09Z</updated>
     <published>2026-10-23T00:03:46Z</published>
@@ -42,7 +51,7 @@
   </entry>
   <entry>
     <title>Writings</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/writings.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/writings.html"/>
     <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
     <updated>2026-11-10T16:20:09Z</updated>
     <published>2023-05-04T22:12:59Z</published>
@@ -51,7 +60,7 @@
   <entry>
     <title>What do we talk about when we talk about unbounded self-adjoint
     operators?</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/self-adjoint-operators.html"/>
     <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators.tm</id>
     <updated>2026-11-10T16:20:09Z</updated>
     <published>2026-10-23T00:03:46Z</published>
@@ -68,7 +77,7 @@
   </entry>
   <entry>
     <title>Observables beyond the real line</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/self-adjoint-operators-extensions.html"/>
     <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-extensions.tm</id>
     <updated>2026-11-10T16:20:09Z</updated>
     <published>2026-11-09T18:14:34Z</published>
@@ -81,7 +90,7 @@
   </entry>
   <entry>
     <title>Proofs and complements: beyond the real line</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/self-adjoint-operators-extensions-proofs.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/self-adjoint-operators-extensions-proofs.html"/>
     <id>tag:mgubi.github.io,2023:zettels/self-adjoint-operators-extensions-proofs.tm</id>
     <updated>2026-11-10T16:20:09Z</updated>
     <published>2026-11-09T18:14:34Z</published>
@@ -98,7 +107,7 @@
   </entry>
   <entry>
     <title>A constructive introduction to quantum field theory</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-constructive-qft-sissa-2026.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-constructive-qft-sissa-2026.tm</id>
     <updated>2026-11-10T16:18:47Z</updated>
     <published>2026-10-21T15:27:44Z</published>
@@ -107,7 +116,7 @@
   </entry>
   <entry>
     <title>Presentations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/presentations.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/presentations.html"/>
     <id>tag:mgubi.github.io,2023:research/presentations.tm</id>
     <updated>2026-11-05T20:08:18Z</updated>
     <published>2023-04-30T16:57:37Z</published>
@@ -115,7 +124,7 @@
   </entry>
   <entry>
     <title>Teaching</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/teaching.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/teaching.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching.tm</id>
     <updated>2026-10-30T14:23:03Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -123,7 +132,7 @@
   </entry>
   <entry>
     <title>A stochastic analysis perspective on Euclidean fields</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-euclidean-fields-st-flour-2025.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-euclidean-fields-st-flour-2025.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-euclidean-fields-st-flour-2025.tm</id>
     <updated>2026-10-30T14:23:03Z</updated>
     <published>2026-10-30T14:23:03Z</published>
@@ -132,24 +141,15 @@
   </entry>
   <entry>
     <title>Events</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/events.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/events.html"/>
     <id>tag:mgubi.github.io,2023:research/events.tm</id>
     <updated>2026-10-30T14:23:03Z</updated>
     <published>2023-04-22T21:39:59Z</published>
     <summary>I travel around to meet other mathematicians.</summary>
   </entry>
   <entry>
-    <title>Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/programming.html"/>
-    <id>tag:mgubi.github.io,2023:programming.tm</id>
-    <updated>2026-10-30T07:37:15Z</updated>
-    <published>2023-04-22T00:04:30Z</published>
-    <summary>Content related to computer languages, programming,
-    TeXmacs.</summary>
-  </entry>
-  <entry>
     <title>SRQ seminar – October 17th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181017-giuliani.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181017-giuliani.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181017-giuliani.tm</id>
     <updated>2026-10-30T07:37:15Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -157,7 +157,7 @@
   </entry>
   <entry>
     <title>On Literate Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/literate-programming.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/literate-programming.html"/>
     <id>tag:mgubi.github.io,2023:zettels/literate-programming.tm</id>
     <updated>2026-10-21T23:44:55Z</updated>
     <published>2024-11-04T22:54:53Z</published>
@@ -167,7 +167,7 @@
   </entry>
   <entry>
     <title>Vita</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/curriculum-vitae.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/curriculum-vitae.html"/>
     <id>tag:mgubi.github.io,2023:curriculum-vitae.tm</id>
     <updated>2026-09-19T00:19:04Z</updated>
     <published>2023-04-21T15:36:12Z</published>
@@ -176,7 +176,7 @@
   </entry>
   <entry>
     <title>Research</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/research.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/research.html"/>
     <id>tag:mgubi.github.io,2023:research/research.tm</id>
     <updated>2026-09-19T00:19:04Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -184,7 +184,7 @@
   </entry>
   <entry>
     <title>Seminar on rough paths</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-rough-paths-ss22.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/seminar-rough-paths-ss22.html"/>
     <id>tag:mgubi.github.io,2023:teaching/seminar-rough-paths-ss22.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -193,7 +193,7 @@
   </entry>
   <entry>
     <title>Enseignements 2011/2012</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-11-12.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-11-12.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-11-12.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -202,7 +202,7 @@
   </entry>
   <entry>
     <title>Enseignements 2012/2013</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-12-13.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-12-13.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-12-13.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -211,7 +211,7 @@
   </entry>
   <entry>
     <title xml:space="preserve"> Statistical mechanics of lattice systems</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-statistical-mechanics-ss21.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/seminar-statistical-mechanics-ss21.html"/>
     <id>tag:mgubi.github.io,2023:teaching/seminar-statistical-mechanics-ss21.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -220,7 +220,7 @@
   </entry>
   <entry>
     <title>Enseignements 2008/2009</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-08-09.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-08-09.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-08-09.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -229,7 +229,7 @@
   </entry>
   <entry>
     <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss20.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-analysis-ss20.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss20.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -239,7 +239,7 @@
   </entry>
   <entry>
     <title>Seminar: Nonperturbative Renormalization</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-renormalization-group-ws20-21.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/seminar-renormalization-group-ws20-21.html"/>
     <id>tag:mgubi.github.io,2023:teaching/seminar-renormalization-group-ws20-21.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -248,7 +248,7 @@
   </entry>
   <entry>
     <title>Enseignements 2010/2011</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-10-11.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-10-11.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-10-11.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -257,7 +257,7 @@
   </entry>
   <entry>
     <title>Enseignements 2014/2015</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-14-15.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-14-15.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-14-15.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -266,7 +266,7 @@
   </entry>
   <entry>
     <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss22.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-analysis-ss22.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss22.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -276,7 +276,7 @@
   </entry>
   <entry>
     <title>Enseignements 2009/2010</title>
-    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.github.io/docs/teaching/teaching-dauphine-09-10.html"/>
+    <link rel="alternate" type="text/html" hreflang="fr" href="https://mgubi.org/docs/teaching/teaching-dauphine-09-10.html"/>
     <id>tag:mgubi.github.io,2023:teaching/teaching-dauphine-09-10.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-05T17:37:55Z</published>
@@ -285,7 +285,7 @@
   </entry>
   <entry>
     <title>Stochastic Processes</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-processes-ss21.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-processes-ss21.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-processes-ss21.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -294,7 +294,7 @@
   </entry>
   <entry>
     <title>Introduction to probability</title>
-    <link rel="alternate" type="text/html" hreflang="de" href="https://mgubi.github.io/docs/teaching/lectures-intro-probability-ws20-21.html"/>
+    <link rel="alternate" type="text/html" hreflang="de" href="https://mgubi.org/docs/teaching/lectures-intro-probability-ws20-21.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-intro-probability-ws20-21.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -303,7 +303,7 @@
   </entry>
   <entry>
     <title>SRQ – Scaling limits, rough paths, quantum field theory</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-intro.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-intro.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-intro.tm</id>
     <updated>2026-09-18T23:12:07Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -315,7 +315,7 @@
   </entry>
   <entry>
     <title>People</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/people.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/people.html"/>
     <id>tag:mgubi.github.io,2023:research/people.tm</id>
     <updated>2026-07-06T16:54:07Z</updated>
     <published>2023-04-22T15:15:45Z</published>
@@ -324,7 +324,7 @@
   </entry>
   <entry>
     <title>Marella</title>
-    <link rel="alternate" type="text/html" hreflang="it" href="https://mgubi.github.io/docs/marella.html"/>
+    <link rel="alternate" type="text/html" hreflang="it" href="https://mgubi.org/docs/marella.html"/>
     <id>tag:mgubi.github.io,2023:marella.tm</id>
     <updated>2025-08-04T10:17:39Z</updated>
     <published>2025-08-04T10:17:39Z</published>
@@ -334,7 +334,7 @@
   </entry>
   <entry>
     <title>Maurelli - Regularisation by noise</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-maurelli.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/bernoulli/bernoulli-w2-lectures-maurelli.html"/>
     <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-maurelli.tm</id>
     <updated>2024-07-26T10:45:05Z</updated>
     <published>2024-07-26T00:25:09Z</published>
@@ -342,7 +342,7 @@
   </entry>
   <entry>
     <title>Zygouras - Critical SPDEs</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-zygouras.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/bernoulli/bernoulli-w2-lectures-zygouras.html"/>
     <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-zygouras.tm</id>
     <updated>2024-07-26T10:45:05Z</updated>
     <published>2023-05-06T16:17:49Z</published>
@@ -352,7 +352,7 @@
   </entry>
   <entry>
     <title>Shen - Stochastic quantisation</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-shen.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/bernoulli/bernoulli-w2-lectures-shen.html"/>
     <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-shen.tm</id>
     <updated>2024-07-26T00:25:09Z</updated>
     <published>2024-07-26T00:25:09Z</published>
@@ -361,7 +361,7 @@
   <entry>
     <title>New developments and challenges inStochastic Partial Differential
     Equations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-intro.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/bernoulli/bernoulli-intro.html"/>
     <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-intro.tm</id>
     <updated>2024-07-26T00:25:09Z</updated>
     <published>2024-07-26T00:25:09Z</published>
@@ -370,7 +370,7 @@
   </entry>
   <entry>
     <title>Otto - A continuity argument in regularity structures</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/bernoulli/bernoulli-w2-lectures-otto.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/bernoulli/bernoulli-w2-lectures-otto.html"/>
     <id>tag:mgubi.github.io,2023:research/bernoulli/bernoulli-w2-lectures-otto.tm</id>
     <updated>2024-07-26T00:25:09Z</updated>
     <published>2024-07-26T00:25:09Z</published>
@@ -378,7 +378,7 @@
   </entry>
   <entry>
     <title>Elements of Mathematical Quantum Mechanics</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-tcc-emqm-tt24.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-tcc-emqm-tt24.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-tcc-emqm-tt24.tm</id>
     <updated>2024-06-26T11:58:16Z</updated>
     <published>2024-04-11T11:08:36Z</published>
@@ -387,7 +387,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 24th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180924-chandra.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180924-chandra.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180924-chandra.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -395,7 +395,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – December 3rd, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181203-helmut.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181203-helmut.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181203-helmut.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -403,7 +403,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – December 7th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181207-kotecky.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181207-kotecky.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181207-kotecky.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -411,7 +411,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 23th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181123-chevyrev.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181123-chevyrev.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181123-chevyrev.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -419,7 +419,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 10th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180910-brydges.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180910-brydges.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180910-brydges.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -427,7 +427,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 8th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181010-toninelli.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181010-toninelli.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181010-toninelli.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -435,7 +435,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 21th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181121-levy.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181121-levy.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181121-levy.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -443,7 +443,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 16th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181116-mitter-partial.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181116-mitter-partial.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181116-mitter-partial.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -451,7 +451,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 5st, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181005-weber.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181005-weber.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181005-weber.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -459,7 +459,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 2nd, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181102-jona.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181102-jona.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181102-jona.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -467,7 +467,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 8th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181008-toninelli.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181008-toninelli.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181008-toninelli.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -475,7 +475,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 9th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181109-brydges.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181109-brydges.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181109-brydges.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -483,7 +483,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 9th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/prob-seminar-20181009-toth.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/prob-seminar-20181009-toth.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/prob-seminar-20181009-toth.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -492,7 +492,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 17th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180917-weber.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180917-weber.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180917-weber.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -500,7 +500,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 3rd, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181003-levy.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181003-levy.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181003-levy.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -508,7 +508,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 14th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180914-brydges.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180914-brydges.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180914-brydges.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -516,7 +516,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – November 12th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181112-mitter.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181112-mitter.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181112-mitter.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -524,7 +524,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 12th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181012-toninelli.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181012-toninelli.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181012-toninelli.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -532,7 +532,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 1st, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181001-levy.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181001-levy.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181001-levy.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -540,7 +540,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – December 5th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181205-chandra.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181205-chandra.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181205-chandra.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -548,7 +548,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 15th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181015-giuliani.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181015-giuliani.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181015-giuliani.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -556,7 +556,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 29th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181029-jara.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181029-jara.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181029-jara.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -564,7 +564,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 28th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180928-hara.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180928-hara.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180928-hara.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -572,7 +572,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – October 19th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20181019-giuliani.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20181019-giuliani.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20181019-giuliani.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -580,7 +580,7 @@
   </entry>
   <entry>
     <title>SRQ seminar – September 27th, 2018</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/research/srq/srq-seminar-20180927-friz.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/research/srq/srq-seminar-20180927-friz.html"/>
     <id>tag:mgubi.github.io,2023:research/srq/srq-seminar-20180927-friz.tm</id>
     <updated>2024-05-31T09:25:16Z</updated>
     <published>2023-05-11T21:05:30Z</published>
@@ -588,7 +588,7 @@
   </entry>
   <entry>
     <title>Functional Integration and Quantum Mechanics</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-qmfi-ss20.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-qmfi-ss20.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-qmfi-ss20.tm</id>
     <updated>2024-04-11T11:08:36Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -598,7 +598,7 @@
   </entry>
   <entry>
     <title>Quantum probability and quantum stochastic calculus</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-quantum-probability-ss18.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-quantum-probability-ss18.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-quantum-probability-ss18.tm</id>
     <updated>2024-04-11T11:08:36Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -608,7 +608,7 @@
   </entry>
   <entry>
     <title>When a local martingale is a martingale?</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/local-martingales.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/local-martingales.html"/>
     <id>tag:mgubi.github.io,2023:zettels/local-martingales.tm</id>
     <updated>2023-05-16T20:24:05Z</updated>
     <published>2023-05-15T23:08:08Z</published>
@@ -619,7 +619,7 @@
   </entry>
   <entry>
     <title>Scripting webpages</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/zettels/scripting-webpages.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/scripting-webpages.html"/>
     <id>tag:mgubi.github.io,2023:zettels/scripting-webpages.tm</id>
     <updated>2023-05-16T20:24:05Z</updated>
     <published>2023-05-13T17:05:11Z</published>
@@ -629,7 +629,7 @@
   </entry>
   <entry>
     <title>Publications</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/old-publications.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/old-publications.html"/>
     <id>tag:mgubi.github.io,2023:old-publications.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -638,7 +638,7 @@
   </entry>
   <entry>
     <title>Stochastic Processes</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-processes-ss19.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-processes-ss19.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-processes-ss19.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -649,7 +649,7 @@
   </entry>
   <entry>
     <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss17.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-analysis-ss17.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss17.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -659,7 +659,7 @@
   </entry>
   <entry>
     <title>Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-stochastic-analysis-ss16.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-stochastic-analysis-ss16.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-stochastic-analysis-ss16.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -667,7 +667,7 @@
   </entry>
   <entry>
     <title>Markov Processes</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-markov-processes-ws17-18.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-markov-processes-ws17-18.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-markov-processes-ws17-18.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -677,7 +677,7 @@
   <entry>
     <title>Stochastic quantization of the Euclidean Φ^4_3 quantum field
     theory</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-sq-ws20-21.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-sq-ws20-21.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-sq-ws20-21.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -687,7 +687,7 @@
   </entry>
   <entry>
     <title>Foundations in Stochastic Analysis</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-foundations-stochastic-analysis-ws19-20.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-foundations-stochastic-analysis-ws19-20.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-foundations-stochastic-analysis-ws19-20.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -696,7 +696,7 @@
   </entry>
   <entry>
     <title>Large Deviations</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-large-deviations-ws19-20.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/seminar-large-deviations-ws19-20.html"/>
     <id>tag:mgubi.github.io,2023:teaching/seminar-large-deviations-ws19-20.tm</id>
     <updated>2023-05-13T17:05:11Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -705,7 +705,7 @@
   </entry>
   <entry>
     <title>The mathematics ofFeynman path integrals</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/seminar-feynman-integrals-ss20.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/seminar-feynman-integrals-ss20.html"/>
     <id>tag:mgubi.github.io,2023:teaching/seminar-feynman-integrals-ss20.tm</id>
     <updated>2023-05-11T21:57:07Z</updated>
     <published>2023-04-22T15:37:16Z</published>
@@ -714,7 +714,7 @@
   </entry>
   <entry>
     <title>Rough paths and controlled paths</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/teaching/lectures-rough-paths-ws15-16.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/teaching/lectures-rough-paths-ws15-16.html"/>
     <id>tag:mgubi.github.io,2023:teaching/lectures-rough-paths-ws15-16.tm</id>
     <updated>2023-05-11T21:57:07Z</updated>
     <published>2023-04-22T14:22:19Z</published>
@@ -724,7 +724,7 @@
   </entry>
   <entry>
     <title>Template article</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.github.io/docs/template.html"/>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/template.html"/>
     <id>tag:mgubi.github.io,2023:template.tm</id>
     <updated>2023-04-22T00:04:30Z</updated>
     <published>2023-04-21T15:36:12Z</published>
