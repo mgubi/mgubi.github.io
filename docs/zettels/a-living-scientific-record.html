@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/resources/theme.js"></script>
+    <meta charset="utf-8">
+    <meta name="generator" content="TeXmacs">
+    <title>A living scientific record — Massimiliano Gubinelli</title>
+    <link href="/resources/notes-base.css" type="text/css" rel="stylesheet">
+    <link href="/resources/favicon-32x32.png" rel="icon">
+    <script src="/resources/highlight.pack.js" defer></script>
+    <script src="/resources/notes-base.js" defer></script>
+    <script defer>var bs = String.fromCharCode(92), sp =
+    String.fromCharCode(32); window.MathJax = {tex: {macros: {xequal: [bs +
+    'xlongequal[#1]{#2}', 2, ''], marked: [bs + 'class{tm-marked}{#1}', 1],
+    llbracket: bs + 'mathopen{' + bs + 'unicode{x27E6}}', rrbracket: bs +
+    'mathclose{' + bs + 'unicode{x27E7}}', hyperref: ['#2', 2, ''], rotatebox:
+    [bs + 'style{display:inline-block;transform:rotate(calc(-1deg' + sp + '*'
+    + sp + '#2))}{#3}', 3, '']}}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The journal system was built to circulate and certify papers. It is strained by its own incentives, and now by machines that produce plausible text at almost no cost. This essay argues for recentering scholarly communication on the sharing of meaning: a record in which original results, reviews, com">
+    <link rel="canonical" href="https://mgubi.org/docs/zettels/a-living-scientific-record.html">
+    <link rel="alternate" type="application/atom+xml" title="Massimiliano Gubinelli — updates" href="https://mgubi.org/docs/notes.atom">
+  </head>
+  <body>
+    <div class="notes-header">
+      <p>
+        [<a href="../main.html">main</a>] [<a href="./writings.html">writings</a>]<em class="notes-header-name">mg|pages</em><span class="notes-comments">comments</span>
+      </p>
+    </div>
+    <h1 id="auto-1">A living scientific record<span style="margin-left: 1em"></span></h1>
+    <div class="notes-abstract">
+      The journal system was built to circulate and certify papers. It is
+      strained by its own incentives, and now by machines that produce
+      plausible text at almost no cost. This essay argues for recentering
+      scholarly communication on the sharing of meaning: a record in which
+      original results, reviews, comments, comparisons and distillations
+      remain connected, and in which journals are one way among several of
+      selecting and consolidating them. Its guiding values are attention, care
+      and responsibility: noticing what matters, looking after it, and
+      answering for it. In mathematics especially, the important work is
+      moving from establishing facts to distilling them into concepts that can
+      be understood and shared.
+    </div>
+    <p>
+      <i>November 13, 2026.</i>
+    </p>
+    <div style="margin-top: 0.5em; margin-left: 77.321376014376px; margin-right: 77.321376014376px">
+      <div style="text-indent: 0em">
+        <p>
+          <em>Le storie che possiamo raccontare sono contrassegnate da una
+          parte dal senso dell'ignoto e dall'altra da un bisogno di
+          costruzione, di linee tracciate con esattezza, d'armonia e
+          geometria.</em>
+        </p>
+      </div>
+    </div>
+    <div style="margin-left: 77.321376014376px; margin-right: 77.321376014376px; text-indent: 0em">
+      <p>
+        The stories we can tell are marked on one side by the sense of the
+        unknown and on the other by a need for construction, for lines drawn
+        with exactness, for harmony and geometry.
+      </p>
+    </div>
+    <div style="margin-bottom: 0.5em; margin-left: 77.321376014376px; margin-right: 77.321376014376px">
+      <div style="text-indent: 0em">
+        <p>
+          Italo Calvino, <em>Saggi 1945&ndash;1985</em>, vol. 2, p. 1867
+        </p>
+      </div>
+    </div>
+    <h2 id="auto-2"><a id="sec:crisis"></a>A system under strain<span style="margin-left: 1em"></span></h2>
+    <p>
+      Scientific journals were created to circulate results and to keep a
+      record of who found what. Over time they have come to carry much more:
+      editorial judgment, peer review, selection, preservation, and the
+      prestige on which careers and funding depend. All of this requires
+      people and money, and any alternative has to keep these functions going.
+      The trouble is that they all hang on a single event, the publication of
+      a paper. Making work public, reviewing it, recommending it and assigning
+      credit become hard to tell apart, and where a result appeared starts to
+      stand in for what it establishes. <a href="https://sfdora.org/read/">DORA's declaration</a> is one
+      well-known objection to this substitution.
+    </p>
+    <p>
+      The strain was visible before the recent advances in artificial
+      intelligence: more papers than anyone can read, reviewers asked too
+      often, corrections that reach only some of the readers of the original.
+      Language models change the scale of the problem. A plausible paper, a
+      plausible referee report or a plausible reply can now be produced at
+      almost no cost, while checking a reference, finding a hidden assumption
+      or understanding what a result is good for takes as long as it ever did.
+      A system that counts papers and citations rewards the cheap part. The
+      exchange of article, report and reply can then run its course without
+      anyone checking that the words match the work.
+    </p>
+    <p>
+      The question is not whether a text was written with machine assistance.
+      A model can help produce a useful conjecture, a translation or a checked
+      proof; on the other hand, human writing is sometimes just empty.
+      Disclosure helps us interpret a contribution, but cannot measure the
+      attention it receives. What matters is what someone has answered for:
+      <em>responsibility</em>, <em>care</em> and <em>attention</em> are the
+      keywords. The record should show who examined what, and on what
+      evidence.
+    </p>
+    <h2 id="auto-3"><a id="sec:meaning"></a>Recentering on meaning<span style="margin-left: 1em"></span></h2>
+    <p>
+      The crisis is also an occasion to ask what a scientific record is for.
+      By <em>record</em> I mean the scholarly record in the usual sense, made
+      of papers, computations, simulations and experiments; the question is
+      less what it stores than what it lets us carry on. A result matters
+      through what it allows others to <em>understand</em>: the problems it
+      resolves, the examples that illuminate it, the questions it leaves open,
+      the way it changes how a field sees itself. Science is a collective work
+      of communication, of sharing meaning between people who do not see the
+      same things, across disciplines and generations. What it produces is
+      less a pile of papers than an intellectual heritage, coherent enough to
+      be learned and built upon, and varied enough to hold different points of
+      view.
+    </p>
+    <p>
+      I find it helpful to think of this heritage as a <em>web of
+      stories</em>, an image I owe to the anthropologist Tim Ingold. The same
+      theorem appears in the paper that proved it, in the textbook that made
+      it standard, in the lecture that explained why it is true, in the survey
+      that placed it beside its competitors, and in the counterexample that
+      showed where it stops. Each tells it differently, for a different
+      reader, and none of them is the theorem itself. Understanding a subject
+      means being able to move between these stories. A record that keeps only
+      the first of them, the original paper, loses much of what makes the
+      result usable and meaningful in the wider conversation of science.
+    </p>
+    <h2 id="auto-4"><a id="sec:distillation"></a>Mathematics as distillation<span style="margin-left: 1em"></span></h2>
+    <p>
+      In mathematics the primacy of shared meaning is written into the name.
+      The Greek <em>mathemata</em> are the things that can be learned: what
+      passes from one person to another in a form both can understand.
+      Mathematics in this original sense is a conceptual patrimony, the
+      collection of our shared fundamental concepts and their relations, which
+      exists only in being shared intelligibly. Yet much of its system of
+      credit rewards establishing facts: proving that a statement holds,
+      computing a constant, classifying the cases. Such facts now accumulate
+      faster than anyone can absorb them, and machines will produce many more:
+      endless computations, gigantic formal proofs, conjectures tested on
+      millions of examples. A raw mathematical fact, however certain, is not
+      yet human understanding. The work that increasingly matters is
+      <em>distillation</em>: letting results sediment and mature, finding the
+      idea that makes them natural, and extracting what Rabelais called the
+      <em>substantifique moelle</em>, the marrow inside the bone.
+    </p>
+    <p>
+      <em>Distilling</em> does not mean simplifying. It shapes an idea in
+      precise and airtight language, so that it can be checked, and at the
+      same time in a form that can be understood and passed on. Precision and
+      clarity are often treated as competing demands; in a good definition or
+      a good proof they turn out to be the same thing, and that is what lets a
+      result be shared.
+    </p>
+    <p>
+      In a world that grows more complex, and in which more of its description
+      is produced by machines, understanding cannot remain the private
+      achievement of a few specialists, and neither can
+      <em>responsibility</em> for what is claimed. A record of mathematics
+      should therefore make room for the slow work through which facts become
+      concepts, and recognize it as research.
+    </p>
+    <h2 id="auto-5"><a id="sec:kinds"></a>Many kinds of contribution<span style="margin-left: 1em"></span></h2>
+    <p>
+      To hold this web of stories, the record has to make room for the
+      different contributions it is made of:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <em>original contributions</em>: new results, methods, constructions
+          and data;
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>reviews</em>: assessments by someone who has examined a
+          contribution, with the scope of what they checked;
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>comments</em>: objections, questions, requests for
+          clarification, remarks that a step does not follow, accounts of
+          approaches that failed;
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>comparisons</em>: several results, methods or proofs placed side
+          by side, showing what each achieves and where they differ;
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>rereadings</em>: returns to an older work with new questions or
+          new tools, which can change what it is taken to show;
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>distillations and expositions</em>: accounts that rework a
+          result or a body of results until its central ideas are clear, often
+          shorter and simpler than any of the sources.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Only the first kind is fully recognized today. The others exist, in
+      confidential referee reports, in correspondence, in lecture notes, in
+      blog posts and in the introductions of later papers, but they are
+      scattered, hard to find and rarely credited. Yet a good distillation can
+      do more for a field than several new results, and a careful rereading
+      can change what a classic is understood to prove. Nor is the list fixed:
+      inquiry often changes the categories it starts with, and the record
+      should let its own categories change too.
+    </p>
+    <h2 id="auto-6"><a id="sec:attention"></a>Attention, care and responsibility<span style="margin-left: 1em"></span></h2>
+    <p>
+      Keeping these contributions together takes more than storage. The record
+      should help people reconstruct an argument, see its limits, find
+      connections and carry an inquiry further. Three words name what this
+      asks of us: <em>attention</em>, <em>care</em> and
+      <em>responsibility</em>.
+    </p>
+    <p>
+      I take <em>attention</em> to mean the work of noticing what matters: an
+      underappreciated hypothesis, an unexpected observation, a question
+      concealed by familiar terminology. <em>Care</em> lets this attention
+      have consequences: checking the reference, maintaining the data,
+      answering the objection, or developing an explanation another person can
+      use. <em>Responsibility</em> is answering for what one passes on. All
+      three require time and conditions in which people can participate,
+      including newcomers and critics in precarious positions.
+    </p>
+    <p>
+      Three authors have shaped how I think about this. None of them had
+      scientific publishing in mind, yet what they say bears on scientific
+      discourse as a whole, and now more than ever.
+    </p>
+    <h3 id="auto-7"><a id="sec:ingold"></a>Ingold: learning to attend<span style="margin-left: 1em"></span></h3>
+    <p>
+      Tim Ingold's <a href="https://lchc.ucsd.edu/mca/Paper/ingold/ingold1.htm">education of attention</a>, a phrase he takes from
+      James J. Gibson, describes learning as guided engagement rather than the
+      transfer of content. A student can possess every paper in a field and
+      still struggle to recognize its important questions. Working through a
+      proof with someone who knows where the difficulty lies can change what
+      the student notices on the next reading.
+    </p>
+    <p>
+      Ingold's later account of <a href="https://doi.org/10.1111/1467-9655.12541">correspondence</a> emphasizes
+      attention and response in activities that develop together. I read this
+      as an invitation to keep multiple ways into a problem: worked examples,
+      reading paths, questions and explanations of failed approaches. An
+      annotation cannot replace apprenticeship, but it can let a reader pick
+      up where another left off: a handoff, a collaboration at a distance.
+    </p>
+    <p>
+      In <em>Being Alive</em>, Ingold contrasts knowledge integrated along the
+      paths of stories with knowledge assembled by fitting particulars into
+      classes. The web of stories in which a theorem lives is meant in this
+      sense: its versions are not instances of one master text, but lines
+      along which understanding has traveled and can travel again.
+    </p>
+    <h3 id="auto-8"><a id="sec:girard"></a>Girard: the limits of transparency<span style="margin-left: 1em"></span></h3>
+    <p>
+      In <a href="https://girard.perso.math.cnrs.fr/transparence.pdf"><em>Le fant&ocirc;me de la transparence</em></a>, the
+      logician Jean-Yves Girard criticizes the fantasy of a completely
+      explicit order whose discovery would remove the need to keep asking
+      questions. I see a related temptation in scholarly infrastructure: to
+      suppose that encoding, linking and ranking all results would make their
+      significance evident.
+    </p>
+    <p>
+      Formal verification is a good example. Checking a proof can establish a
+      conclusion within a specified formal environment. We still have to ask
+      whether the formalization captures the intended problem, whether its
+      assumptions are useful, and, above all, what the result helps us
+      understand.
+    </p>
+    <h3 id="auto-9"><a id="sec:lolli"></a>Lolli: the movement of an argument<span style="margin-left: 1em"></span></h3>
+    <p>
+      The mathematician Gabriele Lolli begins <em>Matematica come
+      narrazione</em> (in English, <em>The Meaning of Proofs</em>) by
+      proposing that a proof can be constructed and understood as a narrative.
+      His concern is mathematical content, rather than the lives of
+      mathematicians or a summary of established results (see the <a href="https://www.tecalibri.info/L/LOLLI_narrazione.htm">excerpts
+      from the preface</a>).
+    </p>
+    <p>
+      Consider the proof that there are infinitely many primes. Multiply any
+      finite list of primes and add one: the result has a prime divisor
+      outside the list. Understanding the strategy means seeing how the
+      proposed list supplies the means of escaping it. An exposition makes
+      that movement visible and helps the reader recognize it elsewhere. A
+      dependency list alone may leave the decisive idea obscure; a narrative
+      keeps it, and different narratives can make it visible to different
+      readers.
+    </p>
+    <h2 id="auto-10"><a id="sec:structure"></a>A glimpse of a possible structure<span style="margin-left: 1em"></span></h2>
+    <p>
+      To review something, we must know exactly what it is. A paper is one
+      piece of work, but not the only one: a piece of code, a dataset, a
+      formal proof, a set of lecture notes or a single lemma with its proof
+      can each be examined, used and cited on its own, and so can a review, a
+      comment or a distillation. If each is identified exactly, version by
+      version, refereeing becomes a statement about a particular piece of
+      work, made by a particular person or community with a stated scope,
+      rather than a property acquired once and for all by appearing in a
+      journal.
+    </p>
+    <p>
+      A journal then appears as a selection: a community's reasoned choice of
+      the work it considers worth reading, together with the reviews that
+      justify it. Separated from the deposit of the work, selection can be
+      practiced by a journal, a society, a seminar or a single teacher, each
+      explaining its criteria and standing behind its choices. Different
+      communities can select the same work differently. Selection is also the
+      first step of consolidation. Over time, results are gathered into
+      narratives of how a problem came to be understood, into corpora for a
+      field, and into theories that make a body of knowledge coherent. This is
+      how scattered results become an understanding of the world, physical and
+      mathematical. That work, too, should be identifiable and open to review
+      and revision.
+    </p>
+    <p>
+      A result then lives as a small web: the version that was refereed and
+      the reports on it, the objection that found a gap and the correction it
+      prompted, the later proof that went further, the comparison of the two,
+      the notes that made it teachable. Today a reader of the original has no
+      reliable way to find them. The aim is to keep them connected, each
+      identified exactly and each attributable to someone who answers for it.
+    </p>
+    <p>
+      Others imagine a more unified object. In <a href="https://proofsandprompts.com/2026/11/09/the-shape-of-mathematical-knowledge/"><em>The shape of
+      mathematical knowledge</em></a>, Antonio Lerario proposes to reorganize
+      mathematics around a shared and persistent structure, &ldquo;a
+      branching, enriched and layered hypergraph&rdquo;, with a verified core
+      and layers of interpretation and explanation around it. Nonetheless, I
+      see the record described here as the ground such a structure would have
+      to stand on.
+    </p>
+    <p>
+      This website is a small experiment in keeping a work and its discussion
+      together. Each post of the series on <a href="self-adjoint-operators.html">observables</a> has a
+      companion with the proofs, a comment section, and dated notes when
+      something is corrected; the sources of all pages are public, with their
+      full history. What such a personal arrangement cannot do is keep these
+      pieces connected beyond one author's care: the objection in a comment,
+      the correction note and the version it corrected all live on one host.
+    </p>
+    <p>
+      I would like to explore a scientific record in which these contributions
+      stay together and can be carried from one institution or platform to
+      another. Its technical core can be surprisingly simple.
+    </p>
+    <h2 id="auto-11"><a id="sec:implementation"></a>A simple technical shape<span style="margin-left: 1em"></span></h2>
+    <p>
+      In daily practice, little needs to change for researchers. Authoring
+      tools can offer familiar actions, such as publishing a version,
+      responding to a review or correcting a passage, and do the rest
+      underneath. What lies underneath is built from well-tested pieces.
+    </p>
+    <p>
+      The first is the cryptographic hash. A hash function such as SHA-512
+      turns any file into a short fingerprint; changing a single byte changes
+      the fingerprint completely, and finding two files with the same
+      fingerprint is practically impossible. Putting the fingerprint into a
+      reference gives a link that cannot silently point to different content.
+      Anyone can recompute it, any copy found anywhere can be checked against
+      it, and no central registry is needed to issue it.
+    </p>
+    <p>
+      The second is the versioned log, of the kind Git has made familiar to
+      most software and many mathematical projects. Each version of a work is
+      recorded by a small file that lists, by their hashes, the files it
+      contains, together with an author, a date and a message. The hash of the
+      latest record fixes all the versions before it, and a change to the past
+      cannot go unnoticed. Research libraries have a published standard for
+      exactly this, the <a href="https://ocfl.io/1.1/spec/">Oxford Common File Layout</a>. Releases,
+      approvals and corrections can be recorded as further entries, and
+      signed.
+    </p>
+    <p>
+      Everything else can be stored as small structured documents in an open
+      format such as JSON, each following a published schema: the metadata of
+      a work, a review with its scope, an annotation naming a passage, a
+      status notice, a selection with its entries. The contributions
+      themselves stay in their own open formats: TeX, TeXmacs, Markdown, Lean,
+      CSV or any other. Such files can be read by people and by programs,
+      compared line by line, copied with ordinary tools and still understood
+      when today's services are gone.
+    </p>
+    <p>
+      Parts of this already exist. Software Heritage archives public source
+      code under content-derived identifiers, standardized in 2025 as <a href="https://www.iso.org/standard/89985.html">ISO/IEC
+      18670</a>; arXiv keeps every version of a preprint; the <a href="https://schema.datacite.org/">DataCite</a>
+      metadata behind DOIs has relations for versions, reviews and
+      collections; <a href="https://pubpeer.com/">PubPeer</a> collects comments on published papers;
+      a Lean <a href="https://github.com/patrickmassot/leanblueprint">blueprint</a> links an informal argument to its formal
+      counterpart. Each solves part of the problem in its own setting. What is
+      missing is a way for the pieces to survive together.
+    </p>
+    <p>
+      <a href="https://opensheaf.org/">OpenSheaf</a> is my attempt at a first layer based on open
+      standards. It is a format in which anyone can keep an archive of
+      documents as plain files on a static website, with their sources, each
+      version fixed by hashes. Its collections reach into other archives: an
+      archive keeps documents whole, while a selection, such as a journal or a
+      reading list, names the exact versions it has vetted. Reviews, signed
+      judgments with their scope, and the reasons behind a selection remain to
+      be built on top of it.
+    </p>
+    <p>
+      Hashes and logs settle integrity and history, and nothing more. They say
+      nothing about who is entitled to release a version, a log kept by one
+      host does not keep the files available, and a work cannot point to the
+      reviews written after it. Signatures, independent copies and indexes
+      that collect later contributions are still needed, and so are the
+      institutions that run them. The point of a simple backbone is that these
+      services can change, or disappear, while the record remains checkable.
+      Nothing here requires a token or a global blockchain: objects can travel
+      through ordinary web services, offline exports or networks such as the
+      InterPlanetary File System (<a href="https://docs.ipfs.tech/concepts/persistence/">IPFS</a>).
+    </p>
+    <p>
+      Such a record should start small: one scholarly community, two
+      independently operated repositories, and the history of a few results,
+      together with their reviews and corrections, kept usable after one
+      repository disappears. It should be judged by whether participants
+      understand more, not by how much it holds or how fast it moves. It is
+      meant for &ldquo;<a href="https://www.youtube.com/@RiccardoGiannitrapani">guerrilla mathematics</a>&rdquo;, as Riccardo
+      Giannitrapani would put it.
+    </p>
+    <h2 id="auto-12"><a id="sec:limits"></a>What technique cannot provide<span style="margin-left: 1em"></span></h2>
+    <p>
+      Being checkable does not make a record trustworthy, available or
+      understood, and much of the remaining work consists in keeping these
+      questions apart.
+    </p>
+    <p>
+      A signature shows that a statement was made with a certain key.
+      Connecting the key to a person, and the person to the authority to
+      release a version, needs further evidence, and none of it establishes
+      expertise or truth. A widely mirrored, correctly signed paper can be
+      wrong; an important historical manuscript can have no digital signature
+      at all. Assessments, in turn, need scope: &ldquo;I checked Proposition
+      2&rdquo; and &ldquo;I recommend this introduction&rdquo; say different
+      things, and a critic's objection does not carry the authority of an
+      editor's withdrawal. Compressing all this into a single
+      &ldquo;verified&rdquo; badge would be Girard's phantom of transparency
+      again, and would recreate the substitution of venue for content.
+    </p>
+    <p>
+      Nor does any of this make truth depend on approval: a counterexample can
+      defeat a claim endorsed by an entire community. The record should
+      preserve the reasons for a judgment and the opportunity to challenge it.
+      The coherence of a story, institutional prestige and agreement cannot
+      replace evidence or proof.
+    </p>
+    <p>
+      Keeping files is not preserving a record. Someone must collect what is
+      written later, keep copies, check them and hand them on when an
+      institution closes. Preservation remains an institutional commitment,
+      and it should protect work that is rarely read today: present popularity
+      tells us little about what another generation will need.
+    </p>
+    <p>
+      <em>Attention</em> is the scarce resource. Open participation cannot
+      promise unlimited reviewing time, least of all when generated
+      submissions and replies cost almost nothing. Counting endorsements is no
+      remedy, since endorsements can be automated, traded or coordinated.
+      Newcomers need routes to attention that do not depend on insider
+      sponsorship, and the editing, preservation and teaching on which all
+      this rests need to be paid and recognized. A numerical &ldquo;care
+      score&rdquo; would merely create another activity to optimize.
+    </p>
+    <h2 id="auto-13"><a id="sec:continuing"></a>Continuing the inquiry<span style="margin-left: 1em"></span></h2>
+    <p>
+      Stable references, attributable judgments and portable collections can
+      help us return to an argument and continue it. They cannot supply the
+      understanding that makes the return worthwhile. However much of the text
+      is produced by machines, that remains the work of people who notice a
+      difficulty, develop an explanation and <em>take responsibility</em> for
+      what they pass on. In this the record is like mathematics itself, made
+      of <em>mathemata</em>, things learned from one another, where
+      understanding something and answering for it go together.
+    </p>
+    <p>
+      This is the sense in which I want the scientific record to be alive.
+    </p>
+    <h2 id="auto-14"><a id="sec:reading-notes"></a>Reading notes<span style="margin-left: 1em"></span></h2>
+    <p>
+      Most of the texts below are available online.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Fran&ccedil;ois Rabelais, <em>Gargantua</em>, prologue: the reader
+          is invited to &ldquo;rompre l'os et sucer la substantifique
+          moelle&rdquo; of the book (modernized spelling).
+        </p>
+      </li>
+      <li>
+        <p>
+          Tim Ingold, <em>From the Transmission of Representations to the
+          Education of Attention</em>, in <em>The Debated Mind</em> (2001),
+          and <em>On Human Correspondence</em>, <em>JRAI</em> 23(1) (2017),
+          9&ndash;27. <em>Being Alive</em> (2011), in particular the chapter
+          &ldquo;Stories against classification&rdquo;, and <em>The Life of
+          Lines</em> (2015) develop related images of paths, relations and
+          their continuation; the web of stories of this essay draws on them.
+        </p>
+      </li>
+      <li>
+        <p>
+          Jean-Yves Girard, <em>Le fant&ocirc;me de la transparence</em>,
+          essay dated 6 September 2010, later expanded in the <a href="https://girard.perso.math.cnrs.fr/Transparence.html">2016
+          book</a> of the same title (Allia). Girard presents the book in two
+          radio interviews published by &Eacute;ditions Allia, for <a href="https://www.youtube.com/watch?v=fFEHUcRFDHc">France
+          Culture</a> and <a href="https://www.youtube.com/watch?v=D-hxSy7BFBk">Radio Campus Orl&eacute;ans</a>. His CIRM
+          lecture <a href="https://www.youtube.com/watch?v=KoPkIChIs54"><em>Deux ou trois choses que je sais d'elle : la
+          logique</em></a> (2022) gives his broader view of logic, and his
+          Roma Tre seminar <a href="https://www.youtube.com/watch?v=k1caYYWsfy4"><em>La logique
+          d&eacute;confin&eacute;e</em></a> (2020) a more technical account of
+          the same views.
+        </p>
+      </li>
+      <li>
+        <p>
+          Gabriele Lolli, <em>Matematica come narrazione</em> (il Mulino,
+          2018), <em>Premessa</em>, p. 7 onward; English translation <em>The
+          Meaning of Proofs: Mathematics as Storytelling</em> (MIT Press,
+          2022). A detailed review by Miglena Asenova and Bruno D'Amore
+          appeared in <em>La matematica e la sua didattica</em> 26(2) (2018),
+          311&ndash;316 (<a href="https://site.unibo.it/rsddm-dm/it/pubblicazioni/recensione-960-asenova-d-amore-recensione-a-lolli-2018-1.pdf/@@download/file/Recensione-960-Asenova-D-Amore-Recensione-a-Lolli-2018%5B1%5D.pdf">PDF</a>). His later article <a href="https://doi.org/10.33683/ddm.24.16.2"><em>Matematica
+          e letteratura</em></a>, <em>Didattica della matematica</em> 16
+          (2024), 36&ndash;60 (open access under CC BY 4.0; <a href="a-living-scientific-record-assets/lolli-matematica-e-letteratura.pdf">PDF</a>,
+          also on <a href="https://www.researchgate.net/publication/386105200_Matematica_e_letteratura">ResearchGate</a>), uses the example of Italo
+          Calvino to argue that mathematics is narrative and that narrative
+          can follow paths opened by mathematics, and draws consequences for
+          teaching. The prime-number example above is my illustration of the
+          connection.
+        </p>
+      </li>
+      <li>
+        <p>
+          Italo Calvino, <em>Lezioni americane. Sei proposte per il prossimo
+          millennio</em> (Garzanti, 1988); in English, <em>Six Memos for the
+          Next Millennium</em>, translated by Patrick Creagh (Harvard
+          University Press, 1988). These are the Charles Eliot Norton Lectures
+          that Calvino prepared for 1985&ndash;86 and did not live to deliver.
+          Each defends one quality of writing that he wished to hand on to the
+          next millennium: lightness, quickness, exactitude, visibility and
+          multiplicity. The sixth, on consistency, was never written. They are
+          the Calvino of Lolli's article, and the lecture on exactitude is
+          close to what is said above about distillation. The sentence at the
+          head of this essay is quoted by Lolli from Calvino's <em>Saggi
+          1945&ndash;1985</em>, edited by Mario Barenghi (Mondadori, 1995),
+          vol. 2, p. 1867; the translation is mine.
+        </p>
+      </li>
+      <li>
+        <p>
+          Antonio Lerario, <a href="https://proofsandprompts.com/2026/11/09/the-shape-of-mathematical-knowledge/"><em>The shape of mathematical
+          knowledge</em></a>, <em>Proofs and Prompts</em>, 9 November 2026: a
+          proposal to reorganize mathematical knowledge into a shared, layered
+          object with a formal core, and to rethink research programs,
+          education, credit and refereeing around it. It starts from the same
+          strain as this essay and gives more weight to formalization and to
+          what machines may contribute.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://opensheaf.org/opensheaf-specification-0.1.html"><em>OpenSheaf: an open format for document archives and
+          collections</em></a>, specification, version 0.1 (draft), 13
+          November 2026, with a list of frequent questions and of use cases at
+          <a href="https://opensheaf.org/">opensheaf.org</a>. It builds on the Oxford Common File
+          Layout and the DataCite metadata schema; the first archive in this
+          format is <a href="https://mgubi.org/papers/">mgubi.org/papers</a>.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>

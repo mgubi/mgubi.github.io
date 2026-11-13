@@ -14,6 +14,12 @@
   <notes-abstract|New and updated content on these pages, most recent first: writings, lecture notes, talks and papers.>
 
   <\notes-news-item>
+    <with|font-series|bold|13 November 2026> \<cdot\> <with|font-shape|italic|writing><next-line><with|font-series|bold|<notes-link|A living scientific record|zettels/a-living-scientific-record.tm>>
+
+    An essay on recentering scholarly communication on the sharing of meaning: a record in which results, reviews, comments, comparisons and distillations stay connected, guided by attention, care and responsibility, with journals as one way among several of selecting and consolidating them.
+  </notes-news-item>
+
+  <\notes-news-item>
     <with|font-series|bold|10 November 2026> \<cdot\> <with|font-shape|italic|preprint><next-line><with|font-series|bold|Composite local observables of sine-Gordon via stochastic analysis>
 
     With P.<nbsp>Paulovics (<hlink|arXiv:2611.14296|https://arxiv.org/abs/2611.14296>). A nonperturbative construction of local composite observables of the sine-Gordon model on the full plane up to <math|\<beta\><rsup|2>\<less\>6*\<pi\>>, including vertex fields in the optimal Wick regime and derivatives of any order, combining renormalisation group ideas with stochastic analysis.

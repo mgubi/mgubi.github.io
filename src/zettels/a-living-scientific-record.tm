@@ -13,18 +13,33 @@
   scholarly communication on the sharing of meaning: a record in which
   original results, reviews, comments, comparisons and distillations remain
   connected, and in which journals are one way among several of selecting and
-  consolidating them. Its guiding values are attention and care: noticing
-  what matters, and taking responsibility for it. In mathematics especially,
+  consolidating them. Its guiding values are attention, care and
+  responsibility: noticing what matters, looking after it, and answering for
+  it. In mathematics especially,
   the important work is moving from establishing facts to distilling them
   into concepts that can be understood and shared.>
+
+  <with|font-shape|italic|November 13, 2026.>
+
+  <\quote-env>
+    <em|Le storie che possiamo raccontare sono contrassegnate da una parte
+    dal senso dell'ignoto e dall'altra da un bisogno di costruzione, di linee
+    tracciate con esattezza, d'armonia e geometria.>
+
+    The stories we can tell are marked on one side by the sense of the
+    unknown and on the other by a need for construction, for lines drawn with
+    exactness, for harmony and geometry.
+
+    <right-aligned|Italo Calvino, <em|Saggi 1945\U1985>, vol. 2, p. 1867>
+  </quote-env>
 
   <section*|A system under strain><label|sec:crisis>
 
   Scientific journals were created to circulate results and to keep a record
   of who found what. Over time they have come to carry much more: editorial
   judgment, peer review, selection, preservation, and the prestige on which
-  careers and funding depend. All of this requires people and money, and
-  any alternative has to keep these functions going. The trouble is that they all
+  careers and funding depend. All of this requires people and money, and any
+  alternative has to keep these functions going. The trouble is that they all
   hang on a single event, the publication of a paper. Making work public,
   reviewing it, recommending it and assigning credit become hard to tell
   apart, and where a result appeared starts to stand in for what it
@@ -44,61 +59,70 @@
 
   The question is not whether a text was written with machine assistance. A
   model can help produce a useful conjecture, a translation or a checked
-  proof; human writing can be empty. Disclosure helps us interpret a
-  contribution, but cannot measure the attention it received. What matters is
-  what someone has answered for. The record should show who examined what,
-  and on what evidence.
+  proof; on the other hand, human writing is sometimes just empty.
+  Disclosure helps us interpret a contribution, but cannot measure the
+  attention it receives. What matters is what someone has answered for:
+  <em|responsibility>, <em|care> and
+  <em|attention> are the keywords. The record should show
+  who examined what, and on what evidence.
 
   <section*|Recentering on meaning><label|sec:meaning>
 
-  The crisis is also an occasion to ask what the scientific record is for. By
-  <em|record> I mean the scholarly record in the usual sense; the question is
-  less what it stores than what it lets us carry on. A result matters through
-  what it allows others to understand: the problems it resolves, the examples
-  that illuminate it, the questions it leaves open, the way it changes how a
-  field sees itself. Science is a collective work of communication, of
-  sharing meaning between people who do not see the same things, across
-  disciplines and generations. What it produces is less a pile of papers than
-  an intellectual heritage, coherent enough to be learned and built upon, and
-  varied enough to hold different points of view.
+  The crisis is also an occasion to ask what a scientific record is for. By
+  <em|record> I mean the scholarly record in the usual sense, made of papers,
+  computations, simulations and experiments; the question is less what it
+  stores than what it lets us carry on. A result matters through what it
+  allows others to <em|understand>: the problems it
+  resolves, the examples that illuminate it, the questions it leaves open,
+  the way it changes how a field sees itself. Science is a collective work of
+  communication, of sharing meaning between people who do not see the same
+  things, across disciplines and generations. What it produces is less a pile
+  of papers than an intellectual heritage, coherent enough to be learned and
+  built upon, and varied enough to hold different points of view.
 
-  I find it helpful to think of this heritage as a web of stories, an image I
-  owe to Tim Ingold. The same theorem appears in the paper that proved it, in
-  the textbook that made it standard, in the lecture that explained why it is
-  true, in the survey that placed it beside its competitors, and in the
-  counterexample that showed where it stops. Each tells it differently, for a
-  different reader, and none of them is the theorem itself. Understanding a
-  subject means being able to move between these stories. A record that keeps
-  only the first of them, the original paper, loses much of what makes the
-  result usable.
+  I find it helpful to think of this heritage as a
+  <em|web of stories>, an image I owe to the
+  anthropologist Tim Ingold. The same theorem appears in the paper that
+  proved it, in the textbook that made it standard, in the lecture that
+  explained why it is true, in the survey that placed it beside its
+  competitors, and in the counterexample that showed where it stops. Each
+  tells it differently, for a different reader, and none of them is the
+  theorem itself. Understanding a subject means being able to move between
+  these stories. A record that keeps only the first of them, the original
+  paper, loses much of what makes the result usable and meaningful in the
+  wider conversation of science.
 
   <section*|Mathematics as distillation><label|sec:distillation>
 
   In mathematics the primacy of shared meaning is written into the name. The
   Greek <em|mathemata> are the things that can be learned: what passes from
   one person to another in a form both can understand. Mathematics in this
-  original sense is a conceptual patrimony, which exists only in being shared
-  intelligibly. Yet much of its system of credit rewards establishing facts:
+  original sense is a conceptual patrimony, the collection of our shared
+  fundamental concepts and their relations, which exists only in being
+  shared intelligibly. Yet much of its system of credit rewards establishing facts:
   proving that a statement holds, computing a constant, classifying the
   cases. Such facts now accumulate faster than anyone can absorb them, and
-  machines will produce many more: computations, formal proofs, conjectures
-  tested on millions of examples. A raw mathematical fact, however certain,
-  is not yet understanding. The work that increasingly matters is
-  distillation: letting results sediment and mature, finding the idea that
-  makes them natural, and extracting what Rabelais called the
-  <em|substantifique moelle>, the marrow inside the bone.
+  machines will produce many more: endless computations, gigantic formal
+  proofs, conjectures tested on millions of examples. A raw mathematical
+  fact, however certain, is not yet human understanding. The work that
+  increasingly matters is <em|distillation>: letting
+  results sediment and mature, finding the idea that makes them natural, and
+  extracting what Rabelais called the <em|substantifique moelle>, the marrow
+  inside the bone.
 
-  Distilling does not mean simplifying. It shapes an idea in precise and
-  airtight language, so that it can be checked, and at the same time in a
-  form that can be understood and passed on. Precision and clarity are often
-  treated as competing demands; in a good definition or a good proof they
-  turn out to be the same thing, and that is what lets a result be shared.
+  <em|Distilling> does not mean simplifying. It shapes an
+  idea in precise and airtight language, so that it can be checked, and at
+  the same time in a form that can be understood and passed on. Precision and
+  clarity are often treated as competing demands; in a good definition or a
+  good proof they turn out to be the same thing, and that is what lets a
+  result be shared.
 
   In a world that grows more complex, and in which more of its description is
   produced by machines, understanding cannot remain the private achievement
-  of a few specialists, and neither can responsibility for what is claimed. A
-  record of mathematics should therefore make room for the slow work through
-  which facts become concepts, and recognize it as research.
+  of a few specialists, and neither can <em|responsibility>
+  for what is claimed. A record of mathematics should therefore make room for
+  the slow work through which facts become concepts, and recognize it as
+  research.
 
   <section*|Many kinds of contribution><label|sec:kinds>
 
@@ -135,24 +159,24 @@
   changes the categories it starts with, and the record should let its own
   categories change too.
 
-  <section*|Attention and care><label|sec:attention>
+  <section*|Attention, care and responsibility><label|sec:attention>
 
   Keeping these contributions together takes more than storage. The record
   should help people reconstruct an argument, see its limits, find
-  connections and carry an inquiry further. Two words name what this asks of
-  us.
+  connections and carry an inquiry further. Three words name what this asks of
+  us: <em|attention>, <em|care> and <em|responsibility>.
 
   I take <em|attention> to mean the work of noticing what matters: an
-  unstated hypothesis, an unexpected observation, a question concealed by
-  familiar terminology. <em|Care> is the responsibility that lets this
-  attention have consequences: checking the reference, maintaining the data,
-  answering the objection, or developing an explanation another person can
-  use. Both require time and conditions in which people can participate,
-  including newcomers and critics in precarious positions.
+  underappreciated hypothesis, an unexpected observation, a question
+  concealed by familiar terminology. <em|Care> lets this attention have
+  consequences: checking the reference, maintaining the data, answering the
+  objection, or developing an explanation another person can use.
+  <em|Responsibility> is answering for what one passes on. All three require time and conditions in which people can
+  participate, including newcomers and critics in precarious positions.
 
   Three authors have shaped how I think about this. None of them had
-  scientific publishing in mind. Yet what they say bears on scientific
-  discourse as a whole, and never more than now.
+  scientific publishing in mind, yet what they say bears on scientific
+  discourse as a whole, and now more than ever.
 
   <subsection*|Ingold: learning to attend><label|sec:ingold>
 
@@ -165,10 +189,10 @@
 
   Ingold's later account of <hlink|correspondence|https://doi.org/10.1111/1467-9655.12541>
   emphasizes attention and response in activities that develop together. I
-  read this as an invitation to keep the ways into a problem: worked
+  read this as an invitation to keep multiple ways into a problem: worked
   examples, reading paths, questions and explanations of failed approaches.
-  An annotation cannot replace apprenticeship, but it can let another reader
-  pick up where the encounter left off.
+  An annotation cannot replace apprenticeship, but it can let a reader pick up
+  where another left off: a handoff, a collaboration at a distance.
 
   In <em|Being Alive>, Ingold contrasts knowledge integrated along the paths
   of stories with knowledge assembled by fitting particulars into classes.
@@ -179,25 +203,26 @@
   <subsection*|Girard: the limits of transparency><label|sec:girard>
 
   In <hlink|<em|Le fantôme de la transparence>|https://girard.perso.math.cnrs.fr/transparence.pdf>,
-  Jean-Yves Girard criticizes the fantasy of a completely explicit order
-  whose discovery would remove the need to keep asking questions. I see a
-  related temptation in scholarly infrastructure: to suppose that encoding,
-  linking and ranking all results would make their significance evident.
+  the logician Jean-Yves Girard criticizes the fantasy of a completely
+  explicit order whose discovery would remove the need to keep asking
+  questions. I see a related temptation in scholarly infrastructure: to
+  suppose that encoding, linking and ranking all results would make their
+  significance evident.
 
   Formal verification is a good example. Checking a proof can establish a
   conclusion within a specified formal environment. We still have to ask
   whether the formalization captures the intended problem, whether its
-  assumptions are useful, and what the result helps us understand. A proof
-  can pass the checker while the paper announces a more general theorem than
-  the one checked; someone still has to compare the two.
+  assumptions are useful, and, above all, what the result helps us
+  understand.
 
   <subsection*|Lolli: the movement of an argument><label|sec:lolli>
 
-  Gabriele Lolli begins <em|Matematica come narrazione> (in English, <em|The
-  Meaning of Proofs>) by proposing that a proof can be constructed and
-  understood as a narrative. His concern is mathematical content, rather than
-  the lives of mathematicians or a summary of established results (see the
-  <hlink|excerpts from the preface|https://www.tecalibri.info/L/LOLLI_narrazione.htm>).
+  The mathematician Gabriele Lolli begins <em|Matematica come narrazione> (in
+  English, <em|The Meaning of Proofs>) by proposing that a proof can be
+  constructed and understood as a narrative. His concern is mathematical
+  content, rather than the lives of mathematicians or a summary of
+  established results (see the <hlink|excerpts from the
+  preface|https://www.tecalibri.info/L/LOLLI_narrazione.htm>).
 
   Consider the proof that there are infinitely many primes. Multiply any
   finite list of primes and add one: the result has a prime divisor outside
@@ -237,6 +262,14 @@
   reliable way to find them. The aim is to keep them connected, each
   identified exactly and each attributable to someone who answers for it.
 
+  Others imagine a more unified object. In <hlink|<em|The shape of
+  mathematical knowledge>|https://proofsandprompts.com/2026/11/09/the-shape-of-mathematical-knowledge/>,
+  Antonio Lerario proposes to reorganize mathematics around a shared and
+  persistent structure, \Pa branching, enriched and layered hypergraph\Q,
+  with a verified core and layers of interpretation and explanation around
+  it. Nonetheless, I see the record described here as the ground such a
+  structure would have to stand on.
+
   This website is a small experiment in keeping a work and its discussion
   together. Each post of the series on <notes-link|observables|self-adjoint-operators.tm>
   has a companion with the proofs, a comment section, and dated notes when
@@ -251,10 +284,10 @@
 
   <section*|A simple technical shape><label|sec:implementation>
 
-  In daily practice, little needs to change for researchers. Authoring tools can offer
-  familiar actions, such as publishing a version, responding to a review or
-  correcting a passage, and do the rest underneath. What lies underneath is
-  built from well-tested pieces.
+  In daily practice, little needs to change for researchers. Authoring tools
+  can offer familiar actions, such as publishing a version, responding to a
+  review or correcting a passage, and do the rest underneath. What lies
+  underneath is built from well-tested pieces.
 
   The first is the cryptographic hash. A hash function such as SHA-512 turns
   any file into a short fingerprint; changing a single byte changes the
@@ -264,41 +297,42 @@
   it, any copy found anywhere can be checked against it, and no central
   registry is needed to issue it.
 
-  The second is the versioned log, of the kind Git has made familiar to
-  most software and many mathematical projects. Each version of a work is
-  recorded by a small file that lists, by their hashes, the files it
-  contains, together with an author, a date and a message. The hash of the
-  latest record fixes all the versions before it, and a change to the past
-  cannot go unnoticed. Research libraries have a published standard for
-  exactly this, the <hlink|Oxford Common File Layout|https://ocfl.io/1.1/spec/>.
-  Releases, approvals and corrections can be recorded as further entries,
-  and signed.
+  The second is the versioned log, of the kind Git has made familiar to most
+  software and many mathematical projects. Each version of a work is recorded
+  by a small file that lists, by their hashes, the files it contains,
+  together with an author, a date and a message. The hash of the latest
+  record fixes all the versions before it, and a change to the past cannot go
+  unnoticed. Research libraries have a published standard for exactly this,
+  the <hlink|Oxford Common File Layout|https://ocfl.io/1.1/spec/>. Releases,
+  approvals and corrections can be recorded as further entries, and signed.
 
   Everything else can be stored as small structured documents in an open
   format such as JSON, each following a published schema: the metadata of a
   work, a review with its scope, an annotation naming a passage, a status
   notice, a selection with its entries. The contributions themselves stay in
-  their own open formats: TeX, TeXmacs, Markdown, Lean, CSV. Such files can
-  be read by people and by programs, compared line by line, copied with
-  ordinary tools and still understood when today's services are gone.
+  their own open formats: TeX, TeXmacs, Markdown, Lean, CSV or any other. Such
+  files can be read by people and by programs, compared line by line, copied
+  with ordinary tools and still understood when today's services are gone.
 
   Parts of this already exist. Software Heritage archives public source code
   under content-derived identifiers, standardized in 2025 as <hlink|ISO/IEC
   18670|https://www.iso.org/standard/89985.html>; arXiv keeps every version
   of a preprint; the <hlink|DataCite|https://schema.datacite.org/> metadata
   behind DOIs has relations for versions, reviews and collections;
-  <hlink|PubPeer|https://pubpeer.com/> collects comments on
-  published papers; a Lean <hlink|blueprint|https://github.com/patrickmassot/leanblueprint>
+  <hlink|PubPeer|https://pubpeer.com/> collects comments on published papers;
+  a Lean <hlink|blueprint|https://github.com/patrickmassot/leanblueprint>
   links an informal argument to its formal counterpart. Each solves part of
   the problem in its own setting. What is missing is a way for the pieces to
   survive together.
 
-  <hlink|OpenSheaf|https://opensheaf.org/> is my attempt at a first layer. It
-  is a format in which anyone can keep an archive of documents as plain files
-  on a static website, with their sources, each version fixed by hashes, and
-  with collections that name exact versions of documents in other archives.
-  Reviews, notices and selections with their reasons remain to be built on
-  top of it.
+  <hlink|OpenSheaf|https://opensheaf.org/> is my attempt at a first layer
+  based on open standards. It is a format in which anyone can keep an archive
+  of documents as plain files on a static website, with their sources, each
+  version fixed by hashes. Its collections reach into other archives: an
+  archive keeps documents whole, while a selection, such as a journal or a
+  reading list, names the exact versions it has vetted. Reviews, signed
+  judgments with their scope, and the reasons behind a selection remain to be
+  built on top of it.
 
   Hashes and logs settle integrity and history, and nothing more. They say
   nothing about who is entitled to release a version, a log kept by one host
@@ -308,14 +342,16 @@
   them. The point of a simple backbone is that these services can change, or
   disappear, while the record remains checkable. Nothing here requires a
   token or a global blockchain: objects can travel through ordinary web
-  services, offline exports or networks such as
-  <hlink|IPFS|https://docs.ipfs.tech/concepts/persistence/>.
+  services, offline exports or networks such as the InterPlanetary File
+  System (<hlink|IPFS|https://docs.ipfs.tech/concepts/persistence/>).
 
   Such a record should start small: one scholarly community, two
   independently operated repositories, and the history of a few results,
   together with their reviews and corrections, kept usable after one
   repository disappears. It should be judged by whether participants
-  understand more, not by how much it holds or how fast it moves.
+  understand more, not by how much it holds or how fast it moves. It is
+  meant for \P<hlink|guerrilla mathematics|https://www.youtube.com/@RiccardoGiannitrapani>\Q,
+  as Riccardo Giannitrapani would put it.
 
   <section*|What technique cannot provide><label|sec:limits>
 
@@ -346,14 +382,14 @@
   protect work that is rarely read today: present popularity tells us little
   about what another generation will need.
 
-  Attention is the scarce resource. Open participation cannot
-  promise unlimited reviewing time, least of all when generated submissions
-  and replies cost almost nothing. Counting endorsements is no remedy, since
-  endorsements can be automated, traded or coordinated. Newcomers need routes
-  to attention that do not depend on insider sponsorship, and the editing,
-  preservation and teaching on which all this rests need to be paid and
-  recognized. A numerical \Pcare score\Q would merely create another activity
-  to optimize.
+  <em|Attention> is the scarce resource. Open
+  participation cannot promise unlimited reviewing time, least of all when
+  generated submissions and replies cost almost nothing. Counting
+  endorsements is no remedy, since endorsements can be automated, traded or
+  coordinated. Newcomers need routes to attention that do not depend on
+  insider sponsorship, and the editing, preservation and teaching on which
+  all this rests need to be paid and recognized. A numerical \Pcare score\Q
+  would merely create another activity to optimize.
 
   <section*|Continuing the inquiry><label|sec:continuing>
 
@@ -361,8 +397,8 @@
   us return to an argument and continue it. They cannot supply the
   understanding that makes the return worthwhile. However much of the text is
   produced by machines, that remains the work of people who notice a
-  difficulty, develop an explanation and <em|take responsibility> for
-  what they pass on. In this the record is like mathematics itself, made of
+  difficulty, develop an explanation and <em|take responsibility> for what
+  they pass on. In this the record is like mathematics itself, made of
   <em|mathemata>, things learned from one another, where understanding
   something and answering for it go together.
 
@@ -411,11 +447,41 @@
     and that narrative can follow paths opened by mathematics, and draws
     consequences for teaching. The prime-number example above is my
     illustration of the connection.
+
+    <item>Italo Calvino, <em|Lezioni americane. Sei proposte per il prossimo
+    millennio> (Garzanti, 1988); in English, <em|Six Memos for the Next
+    Millennium>, translated by Patrick Creagh (Harvard University Press,
+    1988). These are the Charles Eliot Norton Lectures that Calvino prepared
+    for 1985\U86 and did not live to deliver. Each defends one quality of
+    writing that he wished to hand on to the next millennium: lightness,
+    quickness, exactitude, visibility and multiplicity. The sixth, on
+    consistency, was never written. They
+    are the Calvino of Lolli's article, and the lecture on exactitude is
+    close to what is said above about distillation. The sentence at the head
+    of this essay is quoted by Lolli from Calvino's <em|Saggi 1945\U1985>,
+    edited by Mario Barenghi (Mondadori, 1995), vol. 2, p. 1867; the
+    translation is mine.
+
+    <item>Antonio Lerario, <hlink|<em|The shape of mathematical
+    knowledge>|https://proofsandprompts.com/2026/11/09/the-shape-of-mathematical-knowledge/>,
+    <em|Proofs and Prompts>, 9 November 2026: a proposal to reorganize
+    mathematical knowledge into a shared, layered object with a formal core,
+    and to rethink research programs, education, credit and refereeing around
+    it. It starts from the same strain as this essay and gives more weight to
+    formalization and to what machines may contribute.
+
+    <item><hlink|<em|OpenSheaf: an open format for document archives and
+    collections>|https://opensheaf.org/opensheaf-specification-0.1.html>,
+    specification, version 0.1 (draft), 13 November 2026, with a list of
+    frequent questions and of use cases at <hlink|opensheaf.org|https://opensheaf.org/>.
+    It builds on the Oxford Common File Layout and the DataCite metadata
+    schema; the first archive in this format is <hlink|mgubi.org/papers|https://mgubi.org/papers/>.
   </itemize>
 </body>
 
 <\initial>
   <\collection>
+    <associate|info-flag|none>
     <associate|language|english>
     <associate|page-medium|papyrus>
     <associate|preamble|false>

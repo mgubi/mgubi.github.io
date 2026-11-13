@@ -23,6 +23,9 @@
     <em|Se una notte d'inverno un viaggiatore>
   </quotation>
 
+  <notes-link|A living scientific record|a-living-scientific-record.tm>
+  (November 13, 2026)
+
   <notes-link|Observables beyond the real line|self-adjoint-operators-extensions.tm>
   (November 10, 2026)
 

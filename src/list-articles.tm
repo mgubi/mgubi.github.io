@@ -12,12 +12,28 @@
 
   <hrule>
 
+  <notes-entry|whats-new.tm|What's new|New and updated content on these
+  pages, most recent first: writings, lecture notes, talks and papers.|13 Nov
+  2026>
+
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|13 Nov 2026>
+
+  <notes-entry|zettels/a-living-scientific-record.tm|A living scientific
+  record|The journal system was built to circulate and certify papers. It is
+  strained by its own incentives, and now by machines that produce plausible
+  text at almost no cost. This essay argues for recentering scholarly
+  communication on the sharing of meaning: a record in which original
+  results, reviews, comments, comparisons and distillations remain connected,
+  and in which journals are one way among several of selecting and
+  consolidating them. Its guiding values are attention, care and
+  responsibility: noticing what matters, looking after it, and answering for
+  it. In mathematics especially, the important work is moving from
+  establishing facts to distilling them into concepts that can be understood
+  and shared.|13 Nov 2026>
+
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|13 Nov 2026>
-
-  <notes-entry|whats-new.tm|What's new|New and updated content on these
-  pages, most recent first: writings, lecture notes, talks and papers.|12 Nov
-  2026>
 
   <notes-entry|research/publications.tm|Publications|Papers I have
   co-authored \ \U last updated November 2026.|12 Nov 2026>
@@ -30,9 +46,6 @@
     arguments follow the spectral construction because their proofs use it;
     the final section identifies the equivalent tests for convergence.
   </notes-entry|10 Nov 2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|10 Nov 2026>
 
   <\notes-entry|zettels/self-adjoint-operators.tm|What do we talk about when
   we talk about unbounded self-adjoint operators?>

@@ -3,7 +3,7 @@
   <title>Massimiliano Gubinelli - updates</title>
   <link rel="alternate" type="text/html" href="https://mgubi.org/"/>
   <link rel="self" type="application/atom+xml" href="https://mgubi.org/docs/notes.atom"/>
-  <updated>2026-11-13T00:46:03Z</updated>
+  <updated>2026-11-13T21:05:34Z</updated>
   <author>
     <name>Massimiliano Gubinelli</name>
     <uri>https://mgubi.org/</uri>
@@ -11,22 +11,48 @@
   <id>https://mgubi.github.io/docs/notes.atom</id>
   <icon>https://mgubi.org/resources/favicon-32x32.png</icon>
   <entry>
-    <title>Programming</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/programming.html"/>
-    <id>tag:mgubi.github.io,2023:programming.tm</id>
-    <updated>2026-11-13T00:46:03Z</updated>
-    <published>2023-04-22T00:04:30Z</published>
-    <summary>Content related to computer languages, programming,
-    TeXmacs.</summary>
-  </entry>
-  <entry>
     <title>What's new</title>
     <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/whats-new.html"/>
     <id>tag:mgubi.github.io,2023:whats-new.tm</id>
-    <updated>2026-11-12T10:32:24Z</updated>
+    <updated>2026-11-13T21:05:34Z</updated>
     <published>2026-11-05T20:08:18Z</published>
     <summary>New and updated content on these pages, most recent first:
     writings, lecture notes, talks and papers.</summary>
+  </entry>
+  <entry>
+    <title>Writings</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/writings.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
+    <updated>2026-11-13T21:05:34Z</updated>
+    <published>2023-05-04T22:12:59Z</published>
+    <summary>This page gathers some writings.</summary>
+  </entry>
+  <entry>
+    <title>A living scientific record</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/a-living-scientific-record.html"/>
+    <id>tag:mgubi.github.io,2023:zettels/a-living-scientific-record.tm</id>
+    <updated>2026-11-13T21:04:58Z</updated>
+    <published>2026-11-13T21:04:58Z</published>
+    <summary>The journal system was built to circulate and certify papers. It
+    is strained by its own incentives, and now by machines that produce
+    plausible text at almost no cost. This essay argues for recentering
+    scholarly communication on the sharing of meaning: a record in which
+    original results, reviews, comments, comparisons and distillations remain
+    connected, and in which journals are one way among several of selecting
+    and consolidating them. Its guiding values are attention, care and
+    responsibility: noticing what matters, looking after it, and answering for
+    it. In mathematics especially, the important work is moving from
+    establishing facts to distilling them into concepts that can be understood
+    and shared.</summary>
+  </entry>
+  <entry>
+    <title>Programming</title>
+    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/programming.html"/>
+    <id>tag:mgubi.github.io,2023:programming.tm</id>
+    <updated>2026-11-13T00:49:04Z</updated>
+    <published>2023-04-22T00:04:30Z</published>
+    <summary>Content related to computer languages, programming,
+    TeXmacs.</summary>
   </entry>
   <entry>
     <title>Publications</title>
@@ -48,14 +74,6 @@
     arguments follow the spectral construction because their proofs use it;
     the final section identifies the equivalent tests for
     convergence.</summary>
-  </entry>
-  <entry>
-    <title>Writings</title>
-    <link rel="alternate" type="text/html" hreflang="en" href="https://mgubi.org/docs/zettels/writings.html"/>
-    <id>tag:mgubi.github.io,2023:zettels/writings.tm</id>
-    <updated>2026-11-10T16:20:09Z</updated>
-    <published>2023-05-04T22:12:59Z</published>
-    <summary>This page gathers some writings.</summary>
   </entry>
   <entry>
     <title>What do we talk about when we talk about unbounded self-adjoint
