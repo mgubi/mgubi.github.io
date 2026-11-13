@@ -92,3 +92,76 @@
               (== (cadr (car x)) "equations-base"))
          `((!begin "aligned") ,@(map latex-mathjax (cdr x))))
         (else (former x))))
+
+;; The <title> of the page. TeXmacs expands the document before the export
+;; (exec_html in edit_typeset.cpp), so tmhtml-find-title finds no doc-title
+;; in the body; the title comes from the html-doc-title the C++ side puts in
+;; front of it, the unexpanded doc-title. tmhtml-file reads that value with
+;; tmhtml-force-string, which gives a plain Cork string unchanged but turns
+;; markup into UTF-8 text (texmacs->code), and then writes it as Cork
+;; (cork->html): a title with mathematics or a dash next to markup came out
+;; as UTF-8 bytes read as Cork ("Îę^4_2" for Φ^4_2, "âĂŞ" for an en dash),
+;; and a next-line between two words was dropped ("formulafor"). The
+;; branch for a doc-title found in the body converts back with utf8->cork,
+;; this one does not. Replace html-doc-title and html-title by plain text in
+;; Cork: line breaks become spaces, scripts made of digits Unicode
+;; superscripts and subscripts (Φ⁴₂), other mathematics LaTeX-like text.
+
+(define title-superscripts
+  '((#\0 . "<#2070>") (#\1 . "<#B9>") (#\2 . "<#B2>") (#\3 . "<#B3>")
+    (#\4 . "<#2074>") (#\5 . "<#2075>") (#\6 . "<#2076>") (#\7 . "<#2077>")
+    (#\8 . "<#2078>") (#\9 . "<#2079>") (#\+ . "<#207A>") (#\- . "<#207B>")))
+
+(define title-subscripts
+  '((#\0 . "<#2080>") (#\1 . "<#2081>") (#\2 . "<#2082>") (#\3 . "<#2083>")
+    (#\4 . "<#2084>") (#\5 . "<#2085>") (#\6 . "<#2086>") (#\7 . "<#2087>")
+    (#\8 . "<#2088>") (#\9 . "<#2089>") (#\+ . "<#208A>") (#\- . "<#208B>")))
+
+(define (title-script s table)
+  ;; S in Unicode scripts, or #f if a character has none
+  (and (string? s) (> (string-length s) 0)
+       (let ((l (map (lambda (c) (assoc c table)) (string->list s))))
+         (and (not (memq #f l)) (apply string-append (map cdr l))))))
+
+(define (title-plain x)
+  (cond ((string? x) x)
+        ((or (func? x 'next-line) (func? x 'new-line) (func? x 'line-break)
+             (func? x 'nbsp) (func? x 'space))
+         " ")
+        ((and (func? x 'rsup 1) (title-script (cadr x) title-superscripts))
+         => identity)
+        ((and (func? x 'rsub 1) (title-script (cadr x) title-subscripts))
+         => identity)
+        ((pair? x) (cons (car x) (map title-plain (cdr x))))
+        (else x)))
+
+(define (title-squeeze s)
+  ;; collapse runs of white space and trim
+  (let loop ((l (string->list s)) (acc '()) (space? #t))
+    (cond ((null? l)
+           (list->string (reverse (if (and (pair? acc) (== (car acc) #\space))
+                                      (cdr acc) acc))))
+          ((char-whitespace? (car l))
+           (loop (cdr l) (if space? acc (cons #\space acc)) #t))
+          (else (loop (cdr l) (cons (car l) acc) #f)))))
+
+(define (title-text t)
+  (with t (if (func? t 'quote 1) (cadr t) t)
+    (title-squeeze (utf8->cork (texmacs->code (title-plain t) "utf-8")))))
+
+(define (fix-title-with w)
+  ;; (with var val ... body): html-doc-title and html-title as plain text
+  (if (not (func? w 'with)) w
+      (let loop ((l (cdr w)) (acc '()))
+        (if (or (null? l) (null? (cdr l)))
+            (cons 'with (append (reverse acc) l))
+            (let ((var (car l)) (val (cadr l)))
+              (loop (cddr l)
+                    (cons (if (in? var '("html-doc-title" "html-title"))
+                              (title-text val) val)
+                          (cons var acc))))))))
+
+(tm-define (texmacs->html x opts)
+  (if (and (func? x '!file) (pair? (cdr x)))
+      (former `(!file ,(fix-title-with (cadr x)) ,@(cddr x)) opts)
+      (former x opts)))

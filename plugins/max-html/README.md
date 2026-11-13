@@ -13,6 +13,10 @@ A TeXmacs plugin for the HTML export of articles and presentations.
     (mgubi/texmacs#607).
   - `aligned` inside an equation is written `\begin{aligned}`, not
     `\begin{equationsbase}` (mgubi/texmacs#611).
+  - The page `<title>` is plain UTF-8 text when the title has markup:
+    mathematics as text (Φ⁴₂ for `\<Phi\><rsup|4><rsub|2>`), dashes
+    right, line breaks as spaces. TeXmacs wrote such titles as UTF-8 read
+    back as Cork (`Îę^4_2`, `âĂŞ`) and dropped line breaks.
 - **Folders left alone:** `progs/max-html/noconvert.scm`, also loaded at
   startup, makes TeXmacs' website converter (Tools → Web → Create web
   site, `tmweb-convert-dir`, `tmweb-update-dir`) skip every folder that
@@ -27,6 +31,10 @@ A TeXmacs plugin for the HTML export of articles and presentations.
     and `enumerate-roman`;
   - the table of contents as a fixed side panel. It highlights the section
     being read, through `max-html.js`.
+  - subject classification codes (`abstract-msc`) link to the zbMATH
+    Open classification (`https://zbmath.org/classification/?q=cc:CODE`)
+    instead of the MathSciNet browser, which no longer answers; this
+    redefinition of `msc-ref` also applies to the PDF.
 - **`max-html-slides` package, for presentations:**
   - each screen becomes a 16:10 slide of a small viewer: arrows, space or
     click to move, `o` for an overview, `#n` addresses slide *n*, and
@@ -35,8 +43,9 @@ A TeXmacs plugin for the HTML export of articles and presentations.
     `myframed-2`, when these are defined in a style package.
 
 Only the `tmhtml-` renderings are used on export. The PDF is unchanged,
-except for one thing: `max-html` sets table-of-contents entries below
-subsections at 92% size, because that marks them for the side panel.
+except for two things: `max-html` sets table-of-contents entries below
+subsections at 92% size, because that marks them for the side panel, and
+it changes the target of the MSC links.
 
 ## Installation
 

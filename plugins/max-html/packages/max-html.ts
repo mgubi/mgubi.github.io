@@ -106,6 +106,17 @@
   <assign|toc-5|<macro|left|right|<with|par-left|4tab|<with|font-size|0.92|<arg|left><toc-dots><no-break><arg|right>>>>>
 
   <assign|tmhtml-table-of-contents|<macro|aux|body|<html-div-class|max-toc|<html-div-class|max-toc-title|<localize|Contents>><arg|body>>>>
+
+  <\active*>
+    <\src-comment>
+      Subject classification codes (abstract-msc) link to the open zbMATH
+      classification instead of the MathSciNet browser of title-base.ts,
+      which no longer answers. In the PDF of a document using this package
+      too.
+    </src-comment>
+  </active*>
+
+  <assign|msc-ref|<macro|msc-id|<style-with|src-compact|none|<hlink|<arg|msc-id>|<style-with|src-compact|none|<merge|https://zbmath.org/classification/?q=cc:|<arg|msc-id>>>>>>>
 </body>
 
 <\initial>
