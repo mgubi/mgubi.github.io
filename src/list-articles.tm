@@ -12,13 +12,6 @@
 
   <hrule>
 
-  <notes-entry|whats-new.tm|What's new|New and updated content on these
-  pages, most recent first: writings, lecture notes, talks and papers.|13 Nov
-  2026>
-
-  <notes-entry|zettels/writings.tm|Writings|This page gathers some
-  writings.|13 Nov 2026>
-
   <notes-entry|zettels/a-living-scientific-record.tm|A living scientific
   record|The journal system was built to circulate and certify papers. It is
   strained by its own incentives, and now by machines that produce plausible
@@ -30,7 +23,14 @@
   responsibility: noticing what matters, looking after it, and answering for
   it. In mathematics especially, the important work is moving from
   establishing facts to distilling them into concepts that can be understood
-  and shared.|13 Nov 2026>
+  and shared.|14 Nov 2026>
+
+  <notes-entry|whats-new.tm|What's new|New and updated content on these
+  pages, most recent first: writings, lecture notes, talks and papers.|13 Nov
+  2026>
+
+  <notes-entry|zettels/writings.tm|Writings|This page gathers some
+  writings.|13 Nov 2026>
 
   <notes-entry|programming.tm|Programming|Content related to computer
   languages, programming, <TeXmacs>.|13 Nov 2026>

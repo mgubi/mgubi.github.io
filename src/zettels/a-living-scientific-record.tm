@@ -38,13 +38,7 @@
   Scientific journals were created to circulate results and to keep a record
   of who found what. Over time they have come to carry much more: editorial
   judgment, peer review, selection, preservation, and the prestige on which
-  careers and funding depend. All of this requires people and money, and any
-  alternative has to keep these functions going. The trouble is that they all
-  hang on a single event, the publication of a paper. Making work public,
-  reviewing it, recommending it and assigning credit become hard to tell
-  apart, and where a result appeared starts to stand in for what it
-  establishes. <hlink|DORA's declaration|https://sfdora.org/read/> is one
-  well-known objection to this substitution.
+  careers and funding depend.
 
   The strain was visible before the recent advances in artificial
   intelligence: more papers than anyone can read, reviewers asked too often,
