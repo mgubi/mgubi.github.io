@@ -151,6 +151,23 @@ class SiteQualityTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             self.assertIsNone(re.search(r"<(?:font|class|tt)\b", text, re.I), path.as_posix())
 
+    def test_scripts_load_only_where_needed(self) -> None:
+        for path in self.pages:
+            relative = path.relative_to(ROOT).as_posix()
+            text = path.read_text(encoding="utf-8")
+            start = text.find("<body")
+            body = re.sub(r"<script\b.*?</script>", "", text[start:], flags=re.I | re.S)
+            mathjax = re.findall(r'<script\b[^>]*src="[^"]*mathjax@[^"]*"[^>]*>', text, re.I)
+            if re.search(r"\\\(|\\\[", body):
+                self.assertEqual(len(mathjax), 1, relative)
+                self.assertIn("mathjax@3.2.2/", mathjax[0], relative)
+                self.assertIn(" defer", mathjax[0], relative)
+            else:
+                self.assertEqual(mathjax, [], relative)
+                self.assertNotIn("window.MathJax", text, relative)
+            highlight = "highlight.pack.js" in text
+            self.assertEqual(highlight, "tmweb-code" in body, relative)
+
     def test_postprocessing_is_idempotent(self) -> None:
         completed = subprocess.run(
             ["python3", str(ROOT / "tools" / "postprocess_site.py"), "--check"],

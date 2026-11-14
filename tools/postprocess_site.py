@@ -181,6 +181,49 @@ def modernize_head(text: str, relative: str, title: str) -> str:
     text = text.replace('<head>', '<head>\n    <script src="/resources/theme.js"></script>', 1)
     text = re.sub(r'href="/resources/notes-base\.css(?:\?[^\"]*)?"',
                   'href="/resources/notes-base.css"', text)
+    return needed_scripts(text)
+
+
+# MathJax and highlight.js are added by the exporter to every page; keep them
+# only on pages that need them. MathJax is pinned to an exact version and
+# deferred, so that it no longer blocks the display of the page (its inline
+# configuration runs first, as an inline script, while the page is parsed).
+MATHJAX_SRC = "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+MATHJAX_SCRIPT = re.compile(
+    r'\s*<script\b[^>]*\bsrc="https://cdn\.jsdelivr\.net/npm/mathjax@[^"]*"[^>]*>\s*</script>', re.I)
+MATHJAX_CONFIG = re.compile(
+    r'\s*<script\b[^>]*>(?:(?!</script>).)*?\bwindow\.MathJax\b(?:(?!</script>).)*</script>',
+    re.I | re.S)
+HIGHLIGHT_SCRIPT = re.compile(
+    r'\s*<script\b[^>]*\bsrc="[^"]*/highlight\.pack\.js"[^>]*>\s*</script>', re.I)
+
+
+def page_body(text: str) -> str:
+    """The body of a page without its scripts: what readers see."""
+    start = text.find("<body")
+    body = text[start:] if start >= 0 else text
+    return re.sub(r"<script\b.*?</script>", "", body, flags=re.I | re.S)
+
+
+def needs_mathjax(text: str) -> bool:
+    # TeXmacs writes formulas for MathJax between \( \) and \[ \].
+    return bool(re.search(r"\\\(|\\\[", page_body(text)))
+
+
+def needs_highlight(text: str) -> bool:
+    # notes-base.js highlights the code blocks TeXmacs exports.
+    return "tmweb-code" in page_body(text)
+
+
+def needed_scripts(text: str) -> str:
+    if needs_mathjax(text):
+        text = MATHJAX_SCRIPT.sub(
+            lambda m: f'\n    <script src="{MATHJAX_SRC}" defer></script>', text, count=1)
+    else:
+        text = MATHJAX_CONFIG.sub("", text)
+        text = MATHJAX_SCRIPT.sub("", text)
+    if not needs_highlight(text):
+        text = HIGHLIGHT_SCRIPT.sub("", text)
     return text
 
 
