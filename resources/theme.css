@@ -6,14 +6,14 @@
    1.4.3), in both themes. */
 :root {
     color-scheme: light;
-    --color-background: #fbf9f5;
+    --color-background: #f4f1e9;
     --color-text: #24211e;
     --color-title: #76332d;
-    --color-link: #527292;
+    --color-link: #506f8f;
     --color-muted: #5d6770;
     --color-secondary: #3a4a50;
-    --color-border: #ddd8cf;
-    --color-surface: #f1eee8;
+    --color-border: #d7d1c6;
+    --color-surface: #ebe7df;
     --image-background: transparent;
     --code-comment: #686850;
     --code-number: #0b6e6e;
@@ -26,21 +26,21 @@
     --code-builtin: #006b8f;
     --code-deletion: #fdd;
     --code-addition: #dfd;
-    --code-background: #f2efe8;
-    --code-border: #ddd7cb;
+    --code-background: #ebe7de;
+    --code-border: #d7d1c6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --color-background: #1a1c20;
-    --color-text: #eeece8;
+    --color-background: #131417;
+    --color-text: #e2dfd8;
     --color-title: #dba49f;
-    --color-link: #6889aa;
+    --color-link: #5782ac;
     --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
-    --color-border: #3a3f46;
-    --color-surface: #24272c;
+    --color-border: #34373d;
+    --color-surface: #1f2125;
     --image-background: #fff;
     --code-comment: #adb6a1;
     --code-number: #8ed6cf;
@@ -53,21 +53,21 @@
     --code-builtin: #8ed6ee;
     --code-deletion: #542c35;
     --code-addition: #254630;
-    --code-background: #23262b;
-    --code-border: #383d45;
+    --code-background: #1e2024;
+    --code-border: #33363c;
 }
 }
 
 :root[data-theme="dark"] {
     color-scheme: dark;
-    --color-background: #1a1c20;
-    --color-text: #eeece8;
+    --color-background: #131417;
+    --color-text: #e2dfd8;
     --color-title: #dba49f;
-    --color-link: #6889aa;
+    --color-link: #5782ac;
     --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
-    --color-border: #3a3f46;
-    --color-surface: #24272c;
+    --color-border: #34373d;
+    --color-surface: #1f2125;
     --image-background: #fff;
     --code-comment: #adb6a1;
     --code-number: #8ed6cf;
@@ -80,8 +80,8 @@
     --code-builtin: #8ed6ee;
     --code-deletion: #542c35;
     --code-addition: #254630;
-    --code-background: #23262b;
-    --code-border: #383d45;
+    --code-background: #1e2024;
+    --code-border: #33363c;
 }
 
 /* The theme button (resources/theme.js): a half-lit circle, floating at the
