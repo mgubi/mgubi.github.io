@@ -1,5 +1,6 @@
 /* Shared colour palettes. System preference also works without JavaScript. */
-/* Palette: warm paper and ink, brick-red titles, petrol-blue links. Links
+/* Palette: warm paper and ink; titles in a muted red, the site's accent;
+   links in a quiet slate blue. Links
    are not underlined, so they stand apart from the text by contrast alone:
    at least 3:1 against the text and 4.5:1 against the page (WCAG 1.4.1 and
    1.4.3), in both themes. */
@@ -7,16 +8,16 @@
     color-scheme: light;
     --color-background: #fbf9f5;
     --color-text: #24211e;
-    --color-title: #8b2620;
-    --color-link: #2d769b;
+    --color-title: #76332d;
+    --color-link: #527292;
     --color-muted: #5d6770;
     --color-secondary: #3a4a50;
     --color-border: #ddd8cf;
     --color-surface: #f1eee8;
     --image-background: transparent;
     --code-comment: #686850;
-    --code-number: #008080;
-    --code-string: #d14;
+    --code-number: #0b6e6e;
+    --code-string: #b5183f;
     --code-title: #900;
     --code-type: #458;
     --code-blue: #000080;
@@ -25,6 +26,8 @@
     --code-builtin: #006b8f;
     --code-deletion: #fdd;
     --code-addition: #dfd;
+    --code-background: #f2efe8;
+    --code-border: #ddd7cb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,8 +35,8 @@
     color-scheme: dark;
     --color-background: #1a1c20;
     --color-text: #eeece8;
-    --color-title: #ef9b90;
-    --color-link: #368eba;
+    --color-title: #dba49f;
+    --color-link: #6889aa;
     --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
     --color-border: #3a3f46;
@@ -50,15 +53,17 @@
     --code-builtin: #8ed6ee;
     --code-deletion: #542c35;
     --code-addition: #254630;
-  }
+    --code-background: #23262b;
+    --code-border: #383d45;
+}
 }
 
 :root[data-theme="dark"] {
     color-scheme: dark;
     --color-background: #1a1c20;
     --color-text: #eeece8;
-    --color-title: #ef9b90;
-    --color-link: #368eba;
+    --color-title: #dba49f;
+    --color-link: #6889aa;
     --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
     --color-border: #3a3f46;
@@ -75,6 +80,8 @@
     --code-builtin: #8ed6ee;
     --code-deletion: #542c35;
     --code-addition: #254630;
+    --code-background: #23262b;
+    --code-border: #383d45;
 }
 
 /* The theme button (resources/theme.js): a half-lit circle, floating at the

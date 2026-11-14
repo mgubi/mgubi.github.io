@@ -875,8 +875,16 @@ code {
     font-family: var(--tt-family);
 }
 
-.tmweb-code {
+.tmweb-code, .tmweb-code.hljs {
     font-size: 90%;
+    /* Code stands apart from the text on a slightly darker paper with a
+       thin rule; the syntax colours of theme.css are at least 4.5:1 on it. */
+    background-color: var(--code-background);
+    border: 1px solid var(--code-border);
+    border-radius: 4px;
+    padding: 0.6em 0.9em;
+    margin: 0.6em 0;
+    overflow-x: auto;
 }
 .tmweb-code-xx {
     font-size: 90%;
