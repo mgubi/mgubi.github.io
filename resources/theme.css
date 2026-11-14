@@ -1,14 +1,18 @@
 /* Shared colour palettes. System preference also works without JavaScript. */
+/* Palette: warm paper and ink, brick-red titles, petrol-blue links. Links
+   are not underlined, so they stand apart from the text by contrast alone:
+   at least 3:1 against the text and 4.5:1 against the page (WCAG 1.4.1 and
+   1.4.3), in both themes. */
 :root {
     color-scheme: light;
-    --color-background: #f9f9f9;
-    --color-text: #292222;
-    --color-title: #9a2727;
-    --color-link: #5b7077;
-    --color-muted: #5f6e73;
-    --color-secondary: #2f4f4f;
-    --color-border: #cbd1d3;
-    --color-surface: #eee;
+    --color-background: #fbf9f5;
+    --color-text: #24211e;
+    --color-title: #8b2620;
+    --color-link: #2d769b;
+    --color-muted: #5d6770;
+    --color-secondary: #3a4a50;
+    --color-border: #ddd8cf;
+    --color-surface: #f1eee8;
     --image-background: transparent;
     --code-comment: #686850;
     --code-number: #008080;
@@ -26,14 +30,14 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --color-background: #191b1e;
-    --color-text: #e6e2df;
-    --color-title: #ed9992;
-    --color-link: #a5c9d6;
-    --color-muted: #a7afb4;
+    --color-background: #1a1c20;
+    --color-text: #eeece8;
+    --color-title: #ef9b90;
+    --color-link: #368eba;
+    --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
-    --color-border: #454b51;
-    --color-surface: #292d32;
+    --color-border: #3a3f46;
+    --color-surface: #24272c;
     --image-background: #fff;
     --code-comment: #adb6a1;
     --code-number: #8ed6cf;
@@ -51,14 +55,14 @@
 
 :root[data-theme="dark"] {
     color-scheme: dark;
-    --color-background: #191b1e;
-    --color-text: #e6e2df;
-    --color-title: #ed9992;
-    --color-link: #a5c9d6;
-    --color-muted: #a7afb4;
+    --color-background: #1a1c20;
+    --color-text: #eeece8;
+    --color-title: #ef9b90;
+    --color-link: #368eba;
+    --color-muted: #a4abb3;
     --color-secondary: #c0c8ca;
-    --color-border: #454b51;
-    --color-surface: #292d32;
+    --color-border: #3a3f46;
+    --color-surface: #24272c;
     --image-background: #fff;
     --code-comment: #adb6a1;
     --code-number: #8ed6cf;
