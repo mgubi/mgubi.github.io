@@ -17,6 +17,23 @@
   /* An earlier version kept the choice for good: forget it. */
   try { localStorage.removeItem(key); } catch (_) { /* storage blocked */ }
 
+  /* The typography tuner (type-tuner.js), a working tool, off by default:
+     ?tune turns it on for the rest of the tab's session, ?tune=off turns
+     it off again. */
+  try {
+    var tune = /[?&]tune(=([^&]*))?/.exec(location.search);
+    if (tune) {
+      if (/^(off|0)$/.test(tune[2] || '')) sessionStorage.removeItem('mg-type-tuner-on');
+      else sessionStorage.setItem('mg-type-tuner-on', '1');
+    }
+    if (sessionStorage.getItem('mg-type-tuner-on')) {
+      var tuner = document.createElement('script');
+      var self = document.currentScript && document.currentScript.src;
+      tuner.src = self ? new URL('type-tuner.js', self).href : '/resources/type-tuner.js';
+      document.head.appendChild(tuner);
+    }
+  } catch (_) { /* no tuner */ }
+
   function current() {
     var set = root.getAttribute('data-theme');
     if (set === 'light' || set === 'dark') return set;
