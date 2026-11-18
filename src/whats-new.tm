@@ -14,6 +14,12 @@
   <notes-abstract|New and updated content on these pages, most recent first: writings, lecture notes, talks and papers.>
 
   <\notes-news-item>
+    <with|font-series|bold|18 November 2026> \<cdot\> <with|font-shape|italic|talk><next-line><with|font-series|bold|Stochastic observables and Wilson\UItô diffusions>
+
+    Colloquium at Queen Mary University of London (<notes-store|slides|talk-qmul-wide-2026.pdf>). A Euclidean field observed through a noisy channel becomes a diffusion in the resolution, whose drift, the force, carries the whole interaction. Joint work with I.<nbsp>Bailleul and I.<nbsp>Chevyrev.
+  </notes-news-item>
+
+  <\notes-news-item>
     <with|font-series|bold|13 November 2026> \<cdot\> <with|font-shape|italic|writing><next-line><with|font-series|bold|<notes-link|A living scientific record|zettels/a-living-scientific-record.tm>>
 
     An essay on recentering scholarly communication on the sharing of meaning: a record in which results, reviews, comments, comparisons and distillations stay connected, guided by attention, care and responsibility, with journals as one way among several of selecting and consolidating them.

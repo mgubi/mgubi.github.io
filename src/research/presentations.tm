@@ -64,6 +64,10 @@
 
   <subsection*|2026>
 
+  Stochastic observables and Wilson\UItô diffusions \U Colloquium, Queen
+  Mary University of London, November 18, 2026
+  (<notes-store|slides (PDF)|talk-qmul-wide-2026.pdf>)
+
   Stochastic observables and the forward\Ubackward flow of a Euclidean
   field \U <hlink|Deterministic and Stochastic Evolution
   Equations|https://indico.sns.it/event/149/>, Scuola Normale Superiore,
